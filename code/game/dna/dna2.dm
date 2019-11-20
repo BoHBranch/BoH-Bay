@@ -97,6 +97,13 @@ var/global/list/datum/dna/gene/dna_genes[0]
 	var/b_type = "A+"  // Should probably change to an integer => string map but I'm lazy.
 	var/real_name          // Stores the real name of the person who originally got this dna datum. Used primarily for changelings,
 
+	// BastionStation CUSTOM SPECIES
+	var/custom_species
+	var/base_species = "Custom Human"
+	var/list/species_traits = list()
+	var/blood_color = "#A10808"
+	// BastionStation CUSTOM SPECIES END
+
 	// New stuff
 	var/species = SPECIES_HUMAN
 	var/s_base = ""
