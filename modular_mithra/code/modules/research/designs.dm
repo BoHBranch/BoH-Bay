@@ -1,4 +1,4 @@
-/datum/design/circuit/scan_console
+/*/datum/design/circuit/scan_console
 	name = "DNA machine"
 	id = "scan_console"
 	build_path = /obj/item/weapon/circuitboard/scan_consolenew
@@ -23,4 +23,4 @@
 	id = "clonescanner"
 	req_tech = list(TECH_DATA = 3, TECH_BIO = 3)
 	build_path = /obj/item/weapon/circuitboard/clonescanner
-	sort_string = "FAGAG"
+	sort_string = "FAGAG"*/

@@ -54,7 +54,7 @@
 #define DNA_UI_WING_B 		35 // end snippet
 #define DNA_UI_LENGTH      35 // Updated for all those custom species
 
-#define DNA_SE_LENGTH 27
+#define DNA_SE_LENGTH 46
 // For later:
 //#define DNA_SE_LENGTH 50 // Was STRUCDNASIZE, size 27. 15 new blocks added = 42, plus room to grow.
 
