@@ -59,7 +59,7 @@ var/list/limb_icon_cache = list()
 	for(var/M in markings)
 		var/datum/sprite_accessory/marking/mark_style = markings[M]["datum"]
 		var/icon/mark_s = new/icon("icon" = mark_style.icon, "icon_state" = "[mark_style.icon_state]-[organ_tag]")
-		mark_s.Blend(markings[M]["color"], mark_style.blend)
+		mark_s.Blend(markings[M]["color"], mark_style.color_blend_mode) // BastionStation edit
 		overlays |= mark_s //So when it's not on your body, it has icons
 		mob_icon.Blend(mark_s, mark_style.layer_blend) //So when it's on your body, it has icons
 		icon_cache_key += "[M][markings[M]["color"]]"
@@ -78,7 +78,14 @@ var/list/limb_icon_cache = list()
 	if(species.base_skin_colours && !isnull(species.base_skin_colours[s_base]))
 		icon_state += species.base_skin_colours[s_base]
 
-	icon_cache_key = "[icon_state]_[species ? species.name : SPECIES_HUMAN]"
+	//BastionStation edit - START
+
+	if(species.selects_bodytype)
+		icon_cache_key = "[icon_state]_[custom_species_override]"
+	else
+		icon_cache_key = "[icon_state]_[species ? species.name : SPECIES_HUMAN]"
+
+	//BastionStation edit - END
 
 	if(force_icon)
 		icon = force_icon
@@ -99,7 +106,7 @@ var/list/limb_icon_cache = list()
 	for(var/M in markings)
 		var/datum/sprite_accessory/marking/mark_style = markings[M]["datum"]
 		var/icon/mark_s = new/icon("icon" = mark_style.icon, "icon_state" = "[mark_style.icon_state]-[organ_tag]")
-		mark_s.Blend(markings[M]["color"], ICON_ADD)
+		mark_s.Blend(markings[M]["color"], mark_style.color_blend_mode) // BastionStation edit
 		overlays |= mark_s //So when it's not on your body, it has icons
 		mob_icon.Blend(mark_s, ICON_OVERLAY) //So when it's on your body, it has icons
 		icon_cache_key += "[M][markings[M]["color"]]"
@@ -108,12 +115,32 @@ var/list/limb_icon_cache = list()
 		var/cache_key = "[body_hair]-[icon_name]-[h_col[1]][h_col[2]][h_col[3]]"
 		if(!limb_icon_cache[cache_key])
 			var/icon/I = icon(species.get_icobase(owner), "[icon_name]_[body_hair]")
-			I.Blend(rgb(h_col[1],h_col[2],h_col[3]), ICON_ADD)
+			I.Blend(rgb(h_col[1],h_col[2],h_col[3]), ICON_MULTIPLY) //BastionStation edit
 			limb_icon_cache[cache_key] = I
 		mob_icon.Blend(limb_icon_cache[cache_key], ICON_OVERLAY)
 
 	if(model)
 		icon_cache_key += "_model_[model]"
+		/*
+		// BastionStation edit to enable markings on synths -Dunno why it's disabled ATM
+		if(owner && owner.synth_markings)
+			for(var/M in markings)
+				var/datum/sprite_accessory/marking/mark_style = markings[M]["datum"]
+				var/icon/mark_s = new/icon("icon" = mark_style.icon, "icon_state" = "[mark_style.icon_state]-[organ_tag]")
+				mark_s.Blend(markings[M]["color"], mark_style.color_blend_mode) // VOREStation edit
+				overlays |= mark_s //So when it's not on your body, it has icons
+				mob_icon.Blend(mark_s, ICON_OVERLAY) //So when it's on your body, it has icons
+				icon_cache_key += "[M][markings[M]["color"]]"
+
+		if(body_hair && islist(h_col) && h_col.len >= 3)
+			var/cache_key = "[body_hair]-[icon_name]-[h_col[1]][h_col[2]][h_col[3]]"
+			if(!limb_icon_cache[cache_key])
+				var/icon/I = icon(species.get_icobase(owner), "[icon_name]_[body_hair]")
+				I.Blend(rgb(h_col[1],h_col[2],h_col[3]), ICON_MULTIPLY) //VOREStation edit
+				limb_icon_cache[cache_key] = I
+			mob_icon.Blend(limb_icon_cache[cache_key], ICON_OVERLAY)
+		// BastionStation edit ends here
+		*/
 	dir = EAST
 	icon = mob_icon
 
@@ -189,7 +216,7 @@ var/list/robot_hud_colours = list("#ffffff","#cccccc","#aaaaaa","#888888","#6666
 	return applying
 
 /obj/item/organ/external/proc/bandage_level()
-	if(damage_state_text() == "00") 
+	if(damage_state_text() == "00")
 		return 0
 	if(!is_bandaged())
 		return 0
