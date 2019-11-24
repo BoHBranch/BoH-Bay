@@ -111,6 +111,6 @@
 	req_access = list(access_expedition_shuttle_helm)
 
 /obj/machinery/computer/shuttle_control/explore/guppy
-	name = "guppy control console"
+	name = "Garuda control console"
 	shuttle_tag = "NTRP Garuda"
 	req_access = list(access_guppy_helm)
