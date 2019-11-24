@@ -1,6 +1,6 @@
 /datum/job/captain
 	title = "Commanding Officer"
-	supervisors = "the Sol Central Government and the Sol Code of Military Justice"
+	supervisors = "Central Command and the Sol Code of Military Justice"
 	minimal_player_age = 14
 	economic_power = 15
 	minimum_character_age = list(SPECIES_HUMAN = 40)
@@ -399,4 +399,4 @@
 							 /datum/computer_file/program/deck_management)
 
 /datum/job/bridgeofficer/get_description_blurb()
-	return "You are a Bridge Officer. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take the Torch's helm and pilot the Aquila if needed. You monitor bridge computer programs and communications and report relevant information to command."
+	return "You are a Bridge Officer. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take the Dagon's helm and pilot the Byakhee if needed. You monitor bridge computer programs and communications and report relevant information to command."
