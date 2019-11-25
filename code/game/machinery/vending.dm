@@ -456,7 +456,8 @@
 			src.visible_message("<span class='notice'>\The [src] makes an odd grinding noise before coming to a halt as \a [S.name] slurmps out from the receptacle.</span>")
 		else //Just a normal vend, then
 			R.get_product(get_turf(src))
-			src.visible_message("\The [src] whirs as it vends \the [R.item_name].")
+			src.visible_message("\The [src] clunks as it vends \the [R.item_name].")
+			playsound(src, 'sound/machines/vending_machine.ogg', 25, 1)
 			if(prob(1)) //The vending gods look favorably upon you
 				sleep(3)
 				if(R.get_product(get_turf(src)))
@@ -820,7 +821,7 @@
 					/obj/item/weapon/storage/fancy/cigarettes/cigarello/mint = 2,
 					/obj/item/weapon/storage/fancy/cigarettes/cigarello/variety = 2,
 					/obj/item/weapon/storage/box/matches = 10,
-					/obj/item/weapon/flame/lighter = 4,
+					/obj/item/weapon/flame/lighter/random = 4,
 					/obj/item/weapon/storage/chewables/tobacco = 2,
 					/obj/item/weapon/storage/chewables/tobacco2 = 2,
 					/obj/item/weapon/storage/chewables/tobacco3 = 2,
@@ -860,7 +861,7 @@
 					/obj/item/weapon/storage/fancy/cigarettes/cigarello/mint = 85,
 					/obj/item/weapon/storage/fancy/cigarettes/cigarello/variety = 85,
 					/obj/item/weapon/storage/box/matches = 2,
-					/obj/item/weapon/flame/lighter = 5,
+					/obj/item/weapon/flame/lighter/random = 5,
 					/obj/item/clothing/mask/smokable/ecig/simple = 50,
 					/obj/item/clothing/mask/smokable/ecig/util = 100,
 					/obj/item/clothing/mask/smokable/ecig/deluxe = 250,
@@ -1112,7 +1113,7 @@
 	base_type = /obj/machinery/vending/tool
 	products = list(/obj/item/stack/cable_coil/random = 10,/obj/item/weapon/crowbar = 5,/obj/item/weapon/weldingtool = 3,/obj/item/weapon/wirecutters = 5,
 					/obj/item/weapon/wrench = 5,/obj/item/device/scanner/gas = 5,/obj/item/device/t_scanner = 5,/obj/item/weapon/screwdriver = 5,
-					/obj/item/device/flashlight/flare/glowstick = 3, /obj/item/device/flashlight/flare/glowstick/red = 3)
+					/obj/item/device/flashlight/flare/glowstick = 3, /obj/item/device/flashlight/flare/glowstick/red = 3, /obj/item/weapon/tape_roll = 8)
 	contraband = list(/obj/item/weapon/weldingtool/hugetank = 2,/obj/item/clothing/gloves/insulated/cheap = 2)
 	premium = list(/obj/item/clothing/gloves/insulated = 1)
 

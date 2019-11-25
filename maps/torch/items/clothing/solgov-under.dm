@@ -16,7 +16,7 @@
 
 /obj/item/clothing/under/solgov/pt/expeditionary
 	name = "expeditionary pt uniform"
-	desc = "A baggy shirt bearing the seal of the SCG Expeditionary Corps and some dorky looking blue shorts."
+	desc = "A baggy shirt bearing the seal of the NT Surveyor Corps and some dorky looking blue shorts."
 	icon_state = "expeditionpt"
 	worn_state = "expeditionpt"
 	sprite_sheets = list(
@@ -54,7 +54,7 @@
 
 /obj/item/clothing/under/solgov/utility/expeditionary
 	name = "expeditionary uniform"
-	desc = "The utility uniform of the SCG Expeditionary Corps, made from biohazard resistant material. This one has silver trim."
+	desc = "The utility uniform of the NT Surveyor Corps, made from biohazard resistant material. This one has silver trim."
 	icon_state = "blackutility_crew"
 	worn_state = "blackutility_crew"
 	sprite_sheets = list(
@@ -63,7 +63,7 @@
 
 /obj/item/clothing/under/solgov/utility/expeditionary_skirt
 	name = "expeditionary skirt"
-	desc = "A black turtleneck and skirt, the elusive ladies' uniform of the Expeditionary Corps."
+	desc = "A black turtleneck and skirt, the elusive ladies' uniform of the NT Surveyor Corps."
 	icon_state = "blackservicefem"
 	worn_state = "blackservicefem"
 	sprite_sheets = list(
@@ -72,7 +72,7 @@
 
 /obj/item/clothing/under/solgov/utility/expeditionary_skirt/officer
 	name = "expeditionary officer skirt"
-	desc = "A black turtleneck and skirt, the elusive ladies' uniform of the Expeditionary Corps. This one has gold trim."
+	desc = "A black turtleneck and skirt, the elusive ladies' uniform of the NT Surveyor Corps. This one has gold trim."
 	icon_state = "blackservicefem_com"
 	worn_state = "blackservicefem_com"
 
@@ -102,7 +102,7 @@
 
 /obj/item/clothing/under/solgov/utility/expeditionary/officer
 	name = "expeditionary officer's uniform"
-	desc = "The utility uniform of the SCG Expeditionary Corps, made from biohazard resistant material. This one has gold trim."
+	desc = "The utility uniform of the NT Surveyor Corps, made from biohazard resistant material. This one has gold trim."
 	icon_state = "blackutility_com"
 	worn_state = "blackutility_com"
 
@@ -132,7 +132,7 @@
 
 /obj/item/clothing/under/solgov/utility/fleet
 	name = "fleet coveralls"
-	desc = "The utility uniform of the SCG Fleet, made from an insulated material."
+	desc = "The utility uniform of NT's Private Fleet, made from an insulated material."
 	icon_state = "navyutility"
 	item_state = "jensensuit"
 	worn_state = "navyutility"
@@ -163,7 +163,7 @@
 
 /obj/item/clothing/under/solgov/utility/fleet/combat
 	name = "fleet fatigues"
-	desc = "Alternative utility uniform of the SCG Fleet, for when coveralls are impractical."
+	desc = "Alternative utility uniform of NT's Private Fleet, for when coveralls are impractical."
 	icon_state = "navycombat"
 	worn_state = "navycombat"
 
@@ -181,7 +181,7 @@
 
 /obj/item/clothing/under/solgov/utility/fleet/officer
 	name = "fleet officer's coveralls"
-	desc = "Alternative utility uniform of the SCG Fleet, for officers."
+	desc = "Alternative utility uniform of NT's Private Fleet, for officers."
 	icon_state = "navyutilityoff"
 	worn_state = "navyutilityoff"
 
@@ -253,7 +253,7 @@
 
 /obj/item/clothing/under/solgov/service/expeditionary
 	name = "expeditionary service uniform"
-	desc = "The service uniform of the SCG Expeditionary Corps in silver trim."
+	desc = "The service uniform of the NT Surveyor Corps in silver trim."
 	icon_state = "greydress"
 	worn_state = "greydress"
 	sprite_sheets = list(
@@ -286,7 +286,7 @@
 
 /obj/item/clothing/under/solgov/service/expeditionary/skirt
 	name = "expeditionary service skirt"
-	desc = "A feminine version of the SCG Expeditionary Corps service uniform in silver trim."
+	desc = "A feminine version of the NT Surveyor Corps service uniform in silver trim."
 	icon_state = "greydressfem"
 	worn_state = "greydressfem"
 
@@ -316,7 +316,7 @@
 
 /obj/item/clothing/under/solgov/service/expeditionary/command
 	name = "expeditionary officer's service uniform"
-	desc = "The service uniform of the SCG Expeditionary Corps in gold trim."
+	desc = "The service uniform of the NT Surveyor Corps in gold trim."
 	icon_state = "greydress_com"
 	worn_state = "greydress_com"
 
@@ -346,7 +346,7 @@
 
 /obj/item/clothing/under/solgov/service/expeditionary/command/skirt
 	name = "expeditionary officer's service skirt"
-	desc = "A feminine version of the SCG Expeditionary Corps service uniform in gold trim."
+	desc = "A feminine version of the NT Surveyor Corps service uniform in gold trim."
 	icon_state = "greydressfem_com"
 	worn_state = "greydressfem_com"
 
@@ -376,7 +376,7 @@
 
 /obj/item/clothing/under/solgov/service/fleet
 	name = "fleet service uniform"
-	desc = "The service uniform of the SCG Fleet, made from immaculate white fabric."
+	desc = "The service uniform of NT's Private Fleet, made from immaculate white fabric."
 	icon_state = "whiteservice"
 	item_state = "nursesuit"
 	worn_state = "whiteservice"
@@ -384,7 +384,7 @@
 
 /obj/item/clothing/under/solgov/service/fleet/skirt
 	name = "fleet service skirt"
-	desc = "The service uniform skirt of the SCG Fleet, made from immaculate white fabric."
+	desc = "The service uniform skirt of NT's Private Fleet, made from immaculate white fabric."
 	icon_state = "whiteservicefem"
 	worn_state = "whiteservicefem"
 

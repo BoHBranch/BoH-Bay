@@ -15,7 +15,11 @@
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp, /datum/unarmed_attack/claws)
 
-	description = "Cats! This is just a placeholder description!"
+	description = "The Tajaran are a mammalian species resembling roughly felines, hailing from Meralar in the Rarkajar system. \
+	While reaching to the stars independently from outside influences, the humans engaged them in peaceful trade contact \
+	and have accelerated the fledgling culture into the interstellar age. Their history is full of war and highly fractious \
+	governments, something that permeates even to today's times. They prefer colder, tundra-like climates, much like their \
+	home worlds and speak a variety of languages, especially Siik and Akhani."
 
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR

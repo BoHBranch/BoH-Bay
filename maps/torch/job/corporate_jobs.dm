@@ -4,7 +4,7 @@
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Corporate Regulations, the Union Charter, and the Expeditionary Corps Organisation"
+	supervisors = "Corporate Regulations, the Union Charter, and the Surveyor Corps Organisation"
 	selection_color = "#2f2f7f"
 	economic_power = 15
 	minimal_player_age = 0
@@ -28,7 +28,7 @@
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
 /datum/job/liaison/get_description_blurb()
-	return "You are the Workplace Liaison. You are a civilian employee of EXO, the Expeditionary Corps Organisation, the government-owned corporate conglomerate that partially funds the Torch. You are on board the vessel to promote corporate interests and protect the rights of the contractors on board as their union leader. You are not internal affairs. You advise command on corporate and union matters and contractors on their rights and obligations. Maximise profit. Be the shady corporate shill you always wanted to be."
+	return "You are the Workplace Liaison. You are a civilian employee of NT, specifically the Surveyor Corps branch. You are on board the vessel to promote corporate interests and protect the rights of the contractors on board as their union leader. You are not internal affairs. You advise command on corporate and union matters and contractors on their rights and obligations. Maximise profit. Be the shady corporate shill you always wanted to be."
 
 /datum/job/liaison/post_equip_rank(var/mob/person, var/alt_title)
 	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Loss Prevention Associate")]"]"
@@ -81,7 +81,7 @@
 	return FALSE
 
 /datum/job/bodyguard/get_description_blurb()
-	return "You are the Loss Prevention Associate. You are an employee of one of the corporations that make up the Expeditionary Corps Organisation, and your job is to prevent the loss of the Liason's life - even at the cost of your own. Good luck."
+	return "You are the Loss Prevention Associate. You are an employee of NT, specifically the Surveyor Corps branch, and your job is to prevent the loss of the Liason's life - even at the cost of your own. Good luck."
 
 /datum/job/bodyguard/post_equip_rank(var/mob/person, var/alt_title)
 	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Loss Prevention Associate")]"]"

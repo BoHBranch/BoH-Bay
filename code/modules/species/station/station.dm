@@ -131,7 +131,7 @@
 	darksight_range = 4
 	darksight_tint = DARKTINT_MODERATE
 
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED
+	spawn_flags = SPECIES_CAN_JOIN// | SPECIES_IS_WHITELISTED
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR
 
 	flesh_color = "#8cd7a3"
@@ -183,7 +183,7 @@
 			FACTION_SKRELL_QERRVOAL,
 			FACTION_SKRELL_QALAOA,
 			FACTION_SKRELL_YIITALANA,
-			FACTION_SKRELL_KRIGLI,
+			FACTION_SKRELL_KRRIGLI,
 			FACTION_SKRELL_QONPRRI,
 			FACTION_OTHER
 		),
@@ -290,7 +290,7 @@
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_IS_PLANT | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_SLIP
 	appearance_flags = 0
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN// | SPECIES_IS_WHITELISTED
 
 	blood_color = "#004400"
 	flesh_color = "#907e4a"
@@ -353,7 +353,7 @@
 		if(101 to 200)	. = 12 // age bracket before this is 46 to 100 . = 8 making this +4
 		if(201 to 300)	. = 16 // + 8
 		else			. = ..()
-		
+
 // Dionaea spawned by hand or by joining will not have any
 // nymphs passed to them. This should take care of that.
 /datum/species/diona/handle_post_spawn(var/mob/living/carbon/human/H)
