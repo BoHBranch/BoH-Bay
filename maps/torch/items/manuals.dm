@@ -45,7 +45,7 @@
 
 /obj/item/weapon/book/manual/sol_sop
 	name = "Standard Operating Procedure"
-	desc = "SOP aboard the SEV Torch."
+	desc = "SOP aboard the NTSS Dagon."
 	icon_state = "booksolregs"
 	author = "The Sol Central Government"
 	title = "Standard Operating Procedure"
