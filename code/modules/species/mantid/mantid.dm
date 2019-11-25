@@ -36,8 +36,8 @@
 	radiation_mod =         0.5 // Not as biologically fragile as meatboys.
 	flash_mod =               2 // Highly photosensitive.
 
-	min_age =                 1
-	max_age =                20
+	min_age =                18
+	max_age =                38
 	slowdown =               -1
 	rarity_value =            3
 	gluttonous =              2
@@ -140,7 +140,7 @@
 	gluttonous =              3
 	slowdown =                2
 	rarity_value =           10
-	min_age =                 5
+	min_age =                18
 	max_age =               500
 	blood_volume =         1200
 	spawns_with_stack =       0

@@ -33,8 +33,8 @@ var/datum/species/shapeshifter/promethean/prometheans
 	gluttonous =          GLUT_TINY | GLUT_SMALLER | GLUT_ITEM_ANYTHING | GLUT_PROJECTILE_VOMIT
 	virus_immune =        1
 	blood_volume =        600
-	min_age =             1
-	max_age =             5
+	min_age =             18
+	max_age =             23
 	brute_mod =           0.5
 	burn_mod =            2
 	oxy_mod =             0

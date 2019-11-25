@@ -41,7 +41,7 @@
 	cold_level_2 = 50
 	cold_level_3 = 0
 
-	min_age = 1
+	min_age = 18
 	max_age = 100
 
 	gluttonous = GLUT_TINY|GLUT_ITEM_NORMAL
