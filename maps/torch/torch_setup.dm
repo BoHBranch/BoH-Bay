@@ -5,13 +5,18 @@
 
 /datum/map/torch/get_map_info()
 	. = list()
-	. +=  "You're aboard the <b>[station_name]</b>, an Expeditionary Corps starship. Its primary mission is looking for undiscovered sapient alien species, and general exploration along the way."
-	. +=  "The vessel is staffed with a mix of SCG government personnel and hired contractors."
-	. +=  "This area of space is uncharted, away from SCG territory. You might encounter remote outposts or drifting hulks, but no recognized government holds claim on this sector."
+	. +=  "You're aboard the <b>[station_name]</b>, a NanoTrasen vessel, specifically a Surveyor Corps Corvette. Its primary mission is looking for undiscovered sapient alien species, and general exploration along the way."
+	. +=  "This specific area of space is uncharted, away from SCG territory. You might encounter remote outposts or drifting hulks, but no recognized entity holds claim in this sector."
+	. +=  ""
+	. +=  "The vessel is staffed with a mix of NanoTrasen's private Security Fleet personnel and hired contractors. There may be those that don't work for NanoTrasen aboard, such as the odd Sol official."
+	. +=  "The Dagon itself, however, was built in coordination with the Sol Central Government. As such, it may feature insignias and materials relevant to SCG operations, even this deep in space."
+	. +=  ""
+	. +=  "While not a proper military, one could argue that NanoTrasen has more than enough power to act as one."
+	. +=  "As such, NT's Surveyor Corps and Private Fleet makes use of old Terran military titles for ease of Command."
 	return jointext(., "<br>")
 
 /datum/map/torch/send_welcome()
-	var/welcome_text = "<center><img src = sollogo.png /><br /><font size = 3><b>SEV Torch</b> Sensor Readings:</font><br>"
+	var/welcome_text = "<center><img src = bluentlogo.png /><br /><font size = 3><b>NTSS Dagon</b> Sensor Readings:</font><br>"
 	welcome_text += "Report generated on [stationdate2text()] at [stationtime2text()]</center><br /><br />"
 	welcome_text += "<hr>Current system:<br /><b>[system_name()]</b><br /><br>"
 
@@ -23,7 +28,7 @@
 	welcome_text += "Travel time to Sol:<br /><b>[rand(15,45)] days</b><br /><br>"
 	welcome_text += "Time since last port visit:<br /><b>[rand(60,180)] days</b><br /><hr>"
 	welcome_text += "Scan results show the following points of interest:<br />"
-	
+
 	for(var/zlevel in map_sectors)
 		var/obj/effect/overmap/visitable/O = map_sectors[zlevel]
 		if(O.name == torch.name)
@@ -50,5 +55,5 @@
 		welcome_text += "<br>No distress calls logged.<br />"
 	welcome_text += "<hr>"
 
-	post_comm_message("SEV Torch Sensor Readings", welcome_text)
+	post_comm_message("NTSS Dagon Sensor Readings", welcome_text)
 	minor_announcement.Announce(message = "New [GLOB.using_map.company_name] Update available at all communication consoles.")

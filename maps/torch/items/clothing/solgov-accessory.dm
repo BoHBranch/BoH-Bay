@@ -172,22 +172,22 @@ ribbons
 
 /obj/item/clothing/accessory/ribbon/solgov/marksman
 	name = "marksmanship ribbon"
-	desc = "A military decoration awarded to members of the SCG for good marksmanship scores in training. Common in the days of energy weapons."
+	desc = "A military decoration awarded to members of the NTF for good marksmanship scores in training. Common in the days of energy weapons."
 	icon_state = "ribbon_marksman"
 
 /obj/item/clothing/accessory/ribbon/solgov/peace
 	name = "peacekeeping ribbon"
-	desc = "A military decoration awarded to members of the SCG for service during a peacekeeping operation."
+	desc = "A military decoration awarded to members of the NTF for service during a peacekeeping operation."
 	icon_state = "ribbon_peace"
 
 /obj/item/clothing/accessory/ribbon/solgov/frontier
 	name = "frontier ribbon"
-	desc = "A military decoration awarded to members of the SCG for service along the frontier."
+	desc = "A military decoration awarded to members of the NTF for service along the frontier."
 	icon_state = "ribbon_frontier"
 
 /obj/item/clothing/accessory/ribbon/solgov/instructor
 	name = "instructor ribbon"
-	desc = "A military decoration awarded to members of the SCG for service as an instructor."
+	desc = "A military decoration awarded to members of the NTF for service as an instructor."
 	icon_state = "ribbon_instructor"
 
 /*************
@@ -260,14 +260,14 @@ badges
 	desc = "A silver law enforcement badge. Stamped with the words 'Master at Arms'."
 	icon_state = "silverbadge"
 	slot_flags = SLOT_TIE
-	badge_string = "Sol Central Government"
+	badge_string = "NTF"
 
 /obj/item/clothing/accessory/badge/solgov/tags
 	name = "dog tags"
 	desc = "Plain identification tags made from a durable metal. They are stamped with a variety of informational details."
 	gender = PLURAL
 	icon_state = "tags"
-	badge_string = "Sol Central Government"
+	badge_string = "NTF"
 	slot_flags = SLOT_MASK | SLOT_TIE
 	var/owner_rank
 	var/owner_name
@@ -337,8 +337,8 @@ armour attachments
 	slot = ACCESSORY_SLOT_ARMOR_M
 
 /obj/item/clothing/accessory/armor/tag/solgov/ec
-	name = "\improper Expeditionary Corps crest"
-	desc = "An emblem depicting the crest of the SCG Expeditionary Corps."
+	name = "\improper Surveyor Corps crest"
+	desc = "An emblem depicting the crest of the NT Surveyor Corps."
 	icon_state = "ecflag"
 
 /obj/item/clothing/accessory/armor/tag/solgov/sec
@@ -357,8 +357,8 @@ armour attachments
 	icon_state = "agenttag"
 
 /obj/item/clothing/accessory/armor/tag/solgov/com
-	name = "\improper SCG tag"
-	desc = "An armor tag with the words SOL CENTRAL GOVERNMENT printed in gold lettering on it."
+	name = "\improper NTFS tag"
+	desc = "An armor tag with the words NTF SECURITY printed in gold lettering on it."
 	icon_state = "comtag"
 
 /obj/item/clothing/accessory/armor/tag/solgov/com/sec
@@ -367,7 +367,7 @@ armour attachments
 
 /obj/item/clothing/accessory/armor/helmcover/blue/sol
 	name = "peacekeeper helmet cover"
-	desc = "A fabric cover for armored helmets. This one is in SCG peacekeeper colors."
+	desc = "A fabric cover for armored helmets. This one is in NTF peacekeeper colors."
 
 /**************
 department tags
@@ -385,7 +385,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/command
 	name = "command insignia"
-	desc = "Insignia denoting assignment to the command department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the command department. These fit Surveyor Corps uniforms."
 	color = "#e5ea4f"
 
 /obj/item/clothing/accessory/solgov/department/command/service
@@ -407,7 +407,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/engineering
 	name = "engineering insignia"
-	desc = "Insignia denoting assignment to the engineering department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the engineering department. These fit Surveyor Corps uniforms."
 	color = "#ff7f00"
 
 /obj/item/clothing/accessory/solgov/department/engineering/service
@@ -428,7 +428,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/security
 	name = "security insignia"
-	desc = "Insignia denoting assignment to the security department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the security department. These fit Surveyor Corps uniforms."
 	color = "#bf0000"
 
 /obj/item/clothing/accessory/solgov/department/security/service
@@ -450,7 +450,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/medical
 	name = "medical insignia"
-	desc = "Insignia denoting assignment to the medical department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the medical department. These fit Surveyor Corps uniforms."
 	color = "#4c9ce4"
 
 /obj/item/clothing/accessory/solgov/department/medical/service
@@ -473,7 +473,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/supply
 	name = "supply insignia"
-	desc = "Insignia denoting assignment to the supply department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the supply department. These fit Surveyor Corps uniforms."
 	color = "#bb9042"
 
 /obj/item/clothing/accessory/solgov/department/supply/service
@@ -495,7 +495,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/service
 	name = "service insignia"
-	desc = "Insignia denoting assignment to the service department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the service department. These fit Surveyor Corps uniforms."
 	color = "#6eaa2c"
 
 /obj/item/clothing/accessory/solgov/department/service/service
@@ -517,7 +517,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/exploration
 	name = "exploration insignia"
-	desc = "Insignia denoting assignment to the exploration department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the exploration department. These fit Surveyor Corps uniforms."
 	color = "#68099e"
 
 /obj/item/clothing/accessory/solgov/department/exploration/service
@@ -538,7 +538,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/research
 	name = "research insignia"
-	desc = "Insignia denoting assignment to the research department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the research department. These fit Surveyor Corps uniforms."
 	color = COLOR_RESEARCH
 
 /obj/item/clothing/accessory/solgov/department/research/service

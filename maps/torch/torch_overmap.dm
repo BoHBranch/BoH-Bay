@@ -1,15 +1,15 @@
 /obj/effect/overmap/visitable/ship/torch
-	name = "SEV Torch"
-	desc = "A bluespace-capable corvette bearing markings of the SCG Expeditionary Corps."
+	name = "NTSS Dagon"
+	desc = "A bluespace-capable corvette bearing markings of the NanoTrasen Surveyor Corps."
 	fore_dir = WEST
 	vessel_mass = 100000
 	burn_delay = 2 SECONDS
 	base = TRUE
 
 	initial_restricted_waypoints = list(
-		"Charon" = list("nav_hangar_calypso"), 	//can't have random shuttles popping inside the ship
-		"Guppy" = list("nav_hangar_guppy"),
-		"Aquila" = list("nav_hangar_aquila")
+		"NTEV Gaunt" = list("nav_hangar_calypso"), 	//can't have random shuttles popping inside the ship
+		"NTRP Garuda" = list("nav_hangar_guppy"),
+		"NTSC Byakhee" = list("nav_hangar_aquila")
 	)
 
 	initial_generic_waypoints = list(
@@ -69,9 +69,9 @@
 	)
 
 /obj/effect/overmap/visitable/ship/landable/exploration_shuttle
-	name = "Charon"
-	desc = "A medium-sized long-range shuttle. It bears markings of the SCG Expeditionary Corps."
-	shuttle = "Charon"
+	name = "NTEV Gaunt"
+	desc = "A medium-sized long-range shuttle. It bears markings of the NanoTrasen Surveyor Corps."
+	shuttle = "NTEV Gaunt"
 	max_speed = 1/(2 SECONDS)
 	burn_delay = 1 SECONDS
 	vessel_mass = 5000
@@ -80,9 +80,9 @@
 	vessel_size = SHIP_SIZE_SMALL
 
 /obj/effect/overmap/visitable/ship/landable/aquila
-	name = "Aquila"
-	desc = "A vessel escort gunship. It bears markings of the SCG Fleet."
-	shuttle = "Aquila"
+	name = "NTSC Byakhee"
+	desc = "A vessel escort gunship. It bears markings of the NanoTrasen Surveyor Corps."
+	shuttle = "NTSC Byakhee"
 	vessel_mass = 20000
 	max_speed = 1/(1 SECONDS)
 	burn_delay = 0.5 SECONDS //spammable, but expensive
@@ -90,9 +90,9 @@
 	vessel_size = SHIP_SIZE_SMALL
 
 /obj/effect/overmap/visitable/ship/landable/guppy
-	name = "Guppy"
-	desc = "A small general utility pod. It's capable of limited independant space travel. It's marked as TORCH GUP #1"
-	shuttle = "Guppy"
+	name = "NTRP Garuda"
+	desc = "A small recovery pod. It's capable of limited independant space travel. It's marked as 'NTRP Garuda'."
+	shuttle = "NTRP Garuda"
 	max_speed = 1/(3 SECONDS)
 	burn_delay = 2 SECONDS
 	vessel_mass = 3000 //very inefficient pod
@@ -101,16 +101,16 @@
 	vessel_size = SHIP_SIZE_TINY
 
 /obj/machinery/computer/shuttle_control/explore/aquila
-	name = "aquila control console"
-	shuttle_tag = "Aquila"
+	name = "Byakhee control console"
+	shuttle_tag = "NTSC Byakhee"
 	req_access = list(access_aquila_helm)
 
 /obj/machinery/computer/shuttle_control/explore/exploration_shuttle
 	name = "shuttle control console"
-	shuttle_tag = "Charon"
+	shuttle_tag = "NTEV Gaunt"
 	req_access = list(access_expedition_shuttle_helm)
 
 /obj/machinery/computer/shuttle_control/explore/guppy
-	name = "guppy control console"
-	shuttle_tag = "Guppy"
+	name = "Garuda control console"
+	shuttle_tag = "NTRP Garuda"
 	req_access = list(access_guppy_helm)
