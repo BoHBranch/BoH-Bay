@@ -15,7 +15,7 @@
 	rarity_value = 2
 	strength = STR_HIGH
 
-	min_age = 1
+	min_age = 18
 	max_age = 90
 
 	warning_low_pressure = 50

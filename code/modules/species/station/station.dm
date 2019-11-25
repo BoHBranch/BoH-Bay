@@ -9,7 +9,7 @@
 	interests, rampant cyber and bio-augmentation and secretive factions make life on most human \
 	worlds tumultous at best."
 	assisted_langs = list(LANGUAGE_NABBER)
-	min_age = 17
+	min_age = 18
 	max_age = 100
 	hidden_from_codex = FALSE
 	bandages_icon = 'icons/mob/bandage.dmi'
@@ -233,7 +233,7 @@
 	hunger_factor = 3
 	thirst_factor = 0.01
 
-	min_age = 1
+	min_age = 18
 	max_age = 300
 
 	description = "Commonly referred to (erroneously) as 'plant people', the Dionaea are a strange space-dwelling collective \
@@ -353,7 +353,7 @@
 		if(101 to 200)	. = 12 // age bracket before this is 46 to 100 . = 8 making this +4
 		if(201 to 300)	. = 16 // + 8
 		else			. = ..()
-		
+
 // Dionaea spawned by hand or by joining will not have any
 // nymphs passed to them. This should take care of that.
 /datum/species/diona/handle_post_spawn(var/mob/living/carbon/human/H)
