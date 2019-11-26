@@ -15,7 +15,7 @@
 
 /datum/computer_file/report/recipient/docked/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "SEV Torch Supply and Hangar Management Department")
+	add_field(/datum/report_field/text_label/header, "NTSS Dagon Supply and Hangar Management Department")
 	add_field(/datum/report_field/text_label/header, "General Info")
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/simple_text, "Vessel Name")

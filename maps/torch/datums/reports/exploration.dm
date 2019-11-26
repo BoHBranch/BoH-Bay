@@ -8,7 +8,7 @@
 
 /datum/computer_file/report/recipient/exp/fauna/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "SEV Torch Expeditions")
+	add_field(/datum/report_field/text_label/header, "NTSS Dagon Expeditions")
 	add_field(/datum/report_field/text_label/instruction, "The following is to be filled out by members of a Expedition team after discovery and study of new alien life forms.")
 
 	add_field(/datum/report_field/date, "Date")
@@ -32,7 +32,7 @@
 
 /datum/computer_file/report/recipient/exp/planet/generate_fields()
 	..()
-	add_field(/datum/report_field/text_label/header, "SEV Torch Expeditions")
+	add_field(/datum/report_field/text_label/header, "NTSS Dagon Expeditions")
 	add_field(/datum/report_field/text_label/instruction, "The following is to be filled out by members of a Expedition team after an Expedition to an uncharted Exoplanet.")
 
 	add_field(/datum/report_field/date, "Date")

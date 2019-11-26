@@ -7,7 +7,7 @@
 /datum/computer_file/report/recipient/borging/generate_fields()
 	..()
 	var/list/xo_fields = list()
-	add_field(/datum/report_field/text_label/header, "SEV Torch - Office of the Executive Officer")
+	add_field(/datum/report_field/text_label/header, "NTSS Dagon - Office of the Executive Officer")
 	add_field(/datum/report_field/people/from_manifest, "Name (XO)")
 	add_field(/datum/report_field/people/from_manifest, "Name (subject)", required = 1)
 	add_field(/datum/report_field/date, "Date filed")

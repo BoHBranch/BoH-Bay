@@ -36,11 +36,11 @@
 	return
 
 /client/verb/forum()
-	set name = "Forum"
-	set desc = "Visit the forum."
+	set name = "Discord"
+	set desc = "Visit the Discord."
 	set hidden = 1
 	if( config.forumurl )
-		if(alert("This will open the forum in your browser. Are you sure?",,"Yes","No")=="No")
+		if(alert("This will open the Discord invite link in your browser. Are you sure?",,"Yes","No")=="No")
 			return
 		send_link(src, config.forumurl)
 	else
