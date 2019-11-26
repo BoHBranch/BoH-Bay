@@ -20,8 +20,8 @@
 	gluttonous = GLUT_TINY
 	breath_pressure = 19
 	slowdown = 0.75
-	brute_mod = 1.15
-	flash_mod = 1.15
+	brute_mod = 1.20
+	flash_mod = 1.20
 	blood_volume = 500
 
 	health_hud_intensity = 2

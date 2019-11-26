@@ -186,10 +186,13 @@
 
 // Sergal culture
 #define CULTURE_SERGAL "The Sergals"
+
 #define HOME_SYSTEM_TAL "Tal"
+
 #define FACTION_SERGAL_SHIGU "Home of the Northern sergals"
 #define FACTION_SERGAL_GOLD_RING "Home of the Southern sergals"
 #define FACTION_SERGAL_REONO "Home of the Eastern sergals"
+
 #define RELIGION_SERGAL_ANIMISM "The religions of the northern sergals"
 #define RELIGION_SERGAL_GOLD_RING "The big religion of the southern sergals"
 #define RELIGION_SERGAL_JUDDA "The religion of the nevreans followed by sergals as well"

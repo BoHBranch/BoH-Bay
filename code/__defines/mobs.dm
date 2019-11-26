@@ -294,6 +294,8 @@
 #define SPECIES_IPC         "Machine"
 #define SPECIES_UNATHI      "Unathi"
 #define SPECIES_SERGAL      "Sergal"
+#define SPECIES_NORTHERN    "Northern Sergal"
+#define SPECIES_EASTERN     "Eastern Sergal"
 #define SPECIES_SKRELL      "Skrell"
 #define SPECIES_PROMETHEAN  "Promethean"
 #define SPECIES_ALIEN       "Humanoid"
