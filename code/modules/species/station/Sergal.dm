@@ -1,4 +1,4 @@
-/datum/species/sergal
+/datum/species/SERGAL
 	name = SPECIES_SERGAL
 	name_plural = SPECIES_SERGAL
 	icon_template = 'icons/mob/human_races/species/template.dmi'
@@ -40,7 +40,7 @@
 	heat_level_2 = 410 //Default 400
 	heat_level_3 = 1010 //Default 1000
 
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_NO_ROBOTIC_INTERNAL_ORGANS
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_NO_ROBOTIC_INTERNAL_ORGANS
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	flesh_color = "#34af10"
