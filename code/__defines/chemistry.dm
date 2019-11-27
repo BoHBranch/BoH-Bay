@@ -25,7 +25,6 @@
 #define IS_SLIME   5
 #define IS_NABBER  6
 #define IS_MANTID  7
-#define IS_SERGAL  8
 
 #define CE_STABLE        "stable"       // Inaprovaline
 #define CE_ANTIBIOTIC    "antibiotic"   // Spaceacilin
