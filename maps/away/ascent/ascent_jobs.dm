@@ -153,12 +153,12 @@
 	info = "You are an Alate of an independent Ascent vessel. Your Gyne has directed you to this remote sector full of crawling primitives. Follow her instructions and bring prosperity to your nest-lineage."
 	set_species_on_join = SPECIES_MANTID_ALATE
 	outfit_type = /decl/hierarchy/outfit/job/ascent/tech
-	requires_supervisor = "Ascent Gyne"
+//	requires_supervisor = "Ascent Gyne"
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_HAULING = SKILL_ADEPT,
 					SKILL_COMBAT = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT,
-					SKILL_MEDICAL = SKILL_BASIC)	
+					SKILL_MEDICAL = SKILL_BASIC)
 
 /datum/job/submap/ascent/drone
 	title = "Ascent Drone"
@@ -166,7 +166,7 @@
 	total_positions = 2
 	info = "You are a Machine Intelligence of an independent Ascent vessel. The Gyne you assist, and her children, have wandered into this sector full of primitive bioforms. Try to keep them alive, and assist where you can."
 	set_species_on_join = /mob/living/silicon/robot/flying/ascent
-	requires_supervisor = "Ascent Gyne"
+//	requires_supervisor = "Ascent Gyne"
 
 /*
 /datum/job/submap/ascent/msw

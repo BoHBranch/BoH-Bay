@@ -232,7 +232,7 @@
 				if (O.client)	O.show_message(text("<span class='danger'>\The [] casually lines up a shot with []'s head, pulls the trigger, then realizes they are out of ammo and drops to the floor in search of some!</span>", user, M), 1, "<span class='warning'>You hear someone fall</span>", 2)
 			user.Weaken(5)
 		return
-		
+
 /obj/item/toy/crossbow/examine(mob/user, distance)
 	. = ..()
 	if(distance <= 2 && bullets)
@@ -830,8 +830,8 @@
 							"<span class='warning'>You frantically wave \the [src] above your head!</span>")
 
 /obj/item/toy/torchmodel
-	name = "table-top SEV Torch model"
-	desc = "This is a replica of the SEV Torch, in 1:250th scale, on a handsome wooden stand. Small lights blink on the hull and at the engine exhaust."
+	name = "table-top NTSS Dagon model"
+	desc = "This is a replica of the NTSS Dagon, in 1:250th scale, on a handsome wooden stand. Small lights blink on the hull and at the engine exhaust."
 	icon = 'icons/obj/toy.dmi'
 	icon_state = "torch_model_figure"
 
