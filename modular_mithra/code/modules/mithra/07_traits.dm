@@ -5,7 +5,7 @@
 /datum/preferences
 	var/custom_species	// Custom species name, can't be changed due to it having been used in savefiles already.
 	var/custom_base		// What to base the custom species on
-	var/blood_color = "#A10808"
+	var/blood_color = "#f5e400"
 
 	var/list/pos_traits	= list()	// What traits they've selected for their custom species
 	var/list/neu_traits = list()
@@ -48,7 +48,7 @@
 	if(!pref.neu_traits) pref.neu_traits = list()
 	if(!pref.neg_traits) pref.neg_traits = list()
 
-	pref.blood_color = sanitize_hexcolor(pref.blood_color, default="#A10808")
+	pref.blood_color = sanitize_hexcolor(pref.blood_color, default="#f5e400")
 
 	if(!pref.traits_cheating)
 		pref.starting_trait_points = STARTING_SPECIES_POINTS
@@ -181,13 +181,13 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 	else if(href_list["blood_color"])
 		var/color_choice = input("Pick a blood color (does not apply to synths)","Blood Color",pref.blood_color) as color
 		if(color_choice)
-			pref.blood_color = sanitize_hexcolor(color_choice, default="#A10808")
+			pref.blood_color = sanitize_hexcolor(color_choice, default="#f5e400")
 		return TOPIC_REFRESH
 
 	else if(href_list["blood_reset"])
 		var/choice = alert("Reset blood color to human default (#A10808)?","Reset Blood Color","Reset","Cancel")
 		if(choice == "Reset")
-			pref.blood_color = "#A10808"
+			pref.blood_color = "#f5e400"
 		return TOPIC_REFRESH
 
 	else if(href_list["clicked_pos_trait"])
