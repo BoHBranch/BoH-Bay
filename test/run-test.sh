@@ -213,6 +213,7 @@ function run_code_tests {
     run_test "check punctuation" "python3 tools/PunctuationChecker/punctuation-checker.py ."
     run_test "check icon state limit" "python3 tools/dmitool/check_icon_state_limit.py ."
     #run_test_ci "check changelog builds" "python3 tools/GenerateChangelog/ss13_genchangelog.py html/changelog.html html/changelogs" - Because nobody bothered to keep changelog up to date.
+#TODO- Add Yaml so changelog can gen.
 }
 
 function run_byond_tests {
