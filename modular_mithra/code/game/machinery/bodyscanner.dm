@@ -16,16 +16,16 @@
 		switch(h_ratio)
 			if(1.000)
 				icon_state = "scanner_green"
-				set_light(l_range = 1.5, l_power = 2, l_color = COLOR_LIME)
+				set_light(0.5, 0.5, 1, l_color = COLOR_LIME)
 			if(0.001 to 0.999)
 				icon_state = "scanner_yellow"
-				set_light(l_range = 1.5, l_power = 2, l_color = COLOR_YELLOW)
+				set_light(0.5, 0.5, 1, l_color = COLOR_YELLOW)
 			if(-0.999 to 0.000)
 				icon_state = "scanner_red"
-				set_light(l_range = 1.5, l_power = 2, l_color = COLOR_RED)
+				set_light(0.5, 0.5, 1, l_color = COLOR_RED)
 			else
 				icon_state = "scanner_death"
-				set_light(l_range = 1.5, l_power = 2, l_color = COLOR_RED)
+				set_light(0.5, 0.5, 1, l_color = COLOR_RED)
 
 	else
 		icon_state = "scanner_open"
@@ -49,16 +49,16 @@
 				switch(h_ratio)
 					if(1.000)
 						icon_state = "scanner_terminal_green"
-						set_light(l_range = 1.5, l_power = 2, l_color = COLOR_LIME)
+						set_light(0.5, 0.5, 1, l_color = COLOR_LIME)
 					if(-0.999 to 0.000)
 						icon_state = "scanner_terminal_red"
-						set_light(l_range = 1.5, l_power = 2, l_color = COLOR_RED)
+						set_light(0.5, 0.5, 1, l_color = COLOR_RED)
 					else
 						icon_state = "scanner_terminal_dead"
-						set_light(l_range = 1.5, l_power = 2, l_color = COLOR_RED)
+						set_light(0.5, 0.5, 1, l_color = COLOR_RED)
 			else
 				icon_state = "scanner_terminal_blue"
-				set_light(l_range = 1.5, l_power = 2, l_color = COLOR_BLUE)
+				set_light(0.5, 0.5, 1, l_color = COLOR_BLUE)
 		else
 			icon_state = "scanner_terminal_off"
 			set_light(0)
