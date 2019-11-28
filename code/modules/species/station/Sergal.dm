@@ -8,7 +8,6 @@
 	preview_icon = 'icons/mob/human_races/species/sergal/preview.dmi'
 	bandages_icon = 'icons/mob/bandage.dmi'
 	tail = "sergtail"
-//	tail_animation = 'icons/mob/species/sergal/sergal_tail.dmi'
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
 	hidden_from_codex = FALSE
@@ -48,7 +47,6 @@
 	reagent_tag = IS_SERGAL
 	base_color = "#066000"
 	blood_color = "#660000"
-//	organs_icon = 'icons/mob/human_races/species/sergal/organs.dmi'
 
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/claw
 
