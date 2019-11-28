@@ -21,7 +21,7 @@
 	breath_pressure = 19
 	slowdown = 0.75
 	brute_mod = 1.20
-	flash_mod = 1.20
+	burn_mod = 1.20
 	blood_volume = 500
 
 	health_hud_intensity = 2

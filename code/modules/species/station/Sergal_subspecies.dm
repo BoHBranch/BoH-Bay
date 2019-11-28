@@ -11,7 +11,7 @@
 	breath_pressure = 19
 	slowdown = 0.75
 	brute_mod = 1.15
-	flash_mod = 1.15
+	burn_mod = 1.15
 	blood_volume = 500
 	description = "WIP"
 
@@ -42,7 +42,7 @@
 	breath_pressure = 19
 	slowdown = 1
 	brute_mod = 1
-	flash_mod = 1
+	burn_mod = 1
 	blood_volume = 500
 	description = "WIP"
 
