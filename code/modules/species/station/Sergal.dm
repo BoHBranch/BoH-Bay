@@ -67,7 +67,6 @@
 		)
 	breathing_sound = 'sound/voice/monkey.ogg'
 
-
 	descriptors = list(
 		/datum/mob_descriptor/height = 1,
 		/datum/mob_descriptor/build = 1
