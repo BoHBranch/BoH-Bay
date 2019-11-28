@@ -67,11 +67,10 @@
 		)
 	breathing_sound = 'sound/voice/monkey.ogg'
 
-	prone_overlay_offset = list(-4, -4)
 
 	descriptors = list(
-		/datum/mob_descriptor/height = 2,
-		/datum/mob_descriptor/build = 2
+		/datum/mob_descriptor/height = 1,
+		/datum/mob_descriptor/build = 1
 		)
 
 	available_cultural_info = list(

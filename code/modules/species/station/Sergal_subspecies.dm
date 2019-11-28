@@ -16,6 +16,10 @@
 	description = "WIP"
 
 
+	descriptors = list(
+		/datum/mob_descriptor/height = 1.5,
+		/datum/mob_descriptor/build = 1.5
+		)
 
 	additional_available_cultural_info = list(
 		TAG_FACTION = list(
@@ -43,6 +47,10 @@
 	blood_volume = 500
 	description = "WIP"
 
+	descriptors = list(
+		/datum/mob_descriptor/height = 2,
+		/datum/mob_descriptor/build = 2
+		)
 
 	additional_available_cultural_info = list(
 		TAG_FACTION = list(
