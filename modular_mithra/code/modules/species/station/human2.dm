@@ -4,7 +4,7 @@
 	icobase = 'modular_mithra/icons/mob/human_races/species/custom_human/body.dmi'
 	deform = 'modular_mithra/icons/mob/human_races/species/custom_human/deformed_body.dmi'
 	husk_icon = 'modular_mithra/icons/mob/human_races/species/custom_human/husk.dmi'
-//	preview_icon = 'modular_mithra/icons/mob/human_races/species/custom_human/preview.dmi' No preview icon yet. I dunno if this breaks things
+//	preview_icon = 'modular_mithra/icons/mob/human_races/species/custom_human/preview.dmi' No preview icon yet. I dunno if this breaks things - YES IT DOES.
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
 	hidden_from_codex = TRUE
