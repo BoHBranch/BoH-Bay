@@ -187,12 +187,9 @@
 
 // Sergal culture
 #define CULTURE_SERGAL "The Sergals"
-
 #define HOME_SYSTEM_SERGALTAL "Tal"
-
 #define FACTION_SERGAL_SHIGU "Shigu Dukedom"
 #define FACTION_SERGAL_GOLD_RING "Gold ring megalopolis"
 #define FACTION_SERGAL_REONO "Reono lands"
-
 #define RELIGION_SERGAL_ANIMISM "northern religions"
 #define RELIGION_SERGAL_GOLD_RING "religion of Gold ring"
