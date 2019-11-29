@@ -2532,9 +2532,16 @@
 	maximum_temperature = 200 CELSIUS
 	result_amount = 3
 
+// Biomass, for cloning and bioprinters
+/datum/chemical_reaction/biomass
+	name = "Biomass"
+	result = /datum/reagent/nutriment/biomass
+	required_reagents = list(/datum/reagent/nutriment/protein = 1, /datum/reagent/sugar = 1, /datum/reagent/toxin/phoron = 1)
+	result_amount = 1	// Roughly 20u per phoron sheet
 
 /datum/chemical_reaction/immunobooster
 	result = /datum/reagent/immunobooster
 	required_reagents = list(/datum/reagent/cryptobiolin = 1, /datum/reagent/dylovene = 1)
 	minimum_temperature = 40 CELSIUS
 	result_amount = 2
+

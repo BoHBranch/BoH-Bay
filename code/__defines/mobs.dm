@@ -351,3 +351,11 @@
 #define RADIO_INTERRUPT_DEFAULT 30
 
 #define MOB_FLAG_HOLY_BAD                0x001  // If this mob is allergic to holiness
+
+
+//ADDITION FOR GENETICS
+#define MODIFIER_STACK_FORBID	1	// Disallows stacking entirely.
+#define MODIFIER_STACK_EXTEND	2	// Disallows a second instance, but will extend the first instance if possible.
+#define MODIFIER_STACK_ALLOWED	3	// Multiple instances are allowed.
+
+#define MODIFIER_GENETIC	1	// Modifiers with this flag will be copied to mobs who get cloned.
