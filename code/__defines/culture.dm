@@ -103,8 +103,9 @@
 #define FACTION_SKRELL_QERRVOAL "Qerr'voal"
 #define FACTION_SKRELL_QALAOA "Qala'oa"
 #define FACTION_SKRELL_YIITALANA "Yii'talana"
-#define FACTION_SKRELL_KRRIGLI "Krri'gli"
+#define FACTION_SKRELL_KRIGLI "Kri'gli"
 #define FACTION_SKRELL_QONPRRI "Qon'prri"
+#define FACTION_SKRELL_KRRIGLI "Krri'gli"
 
 // Adherent cultures.
 #define CULTURE_ADHERENT             "The Vigil"
@@ -183,3 +184,12 @@
 #define FACTION_ASCENT_ALATE     "Ascent Alate"
 #define FACTION_ASCENT_SERPENTID "Ascent Serpentid"
 #define RELIGION_KHARMAANI       "Nest-Lineage Veneration"
+
+// Sergal culture
+#define CULTURE_SERGAL "The Sergals"
+#define HOME_SYSTEM_SERGALTAL "Tal"
+#define FACTION_SERGAL_SHIGU "Shigu Dukedom"
+#define FACTION_SERGAL_GOLD_RING "Gold ring megalopolis"
+#define FACTION_SERGAL_REONO "Reono lands"
+#define RELIGION_SERGAL_ANIMISM "northern religions"
+#define RELIGION_SERGAL_GOLD_RING "religion of Gold ring"
