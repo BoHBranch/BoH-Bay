@@ -19,12 +19,12 @@
 		/datum/species/sergal = list(HUMAN_ONLY_JOBS),
 		/datum/species/sergal/northern = list(HUMAN_ONLY_JOBS),
 		/datum/species/sergal/eastern = list(HUMAN_ONLY_JOBS),
-		/datum/species/sergal/akula = list(HUMAN_ONLY_JOBS),
-		/datum/species/sergal/custom= list(HUMAN_ONLY_JOBS),
-		/datum/species/sergal/humanathi= list(HUMAN_ONLY_JOBS),
-		/datum/species/sergal/tajaran= list(HUMAN_ONLY_JOBS),
-		/datum/species/sergal/vasilissan= list(HUMAN_ONLY_JOBS),
-		/datum/species/sergal/vulpkanin= list(HUMAN_ONLY_JOBS),
+		/datum/species/akula = list(HUMAN_ONLY_JOBS),
+		/datum/species/custom= list(HUMAN_ONLY_JOBS),
+		/datum/species/humanathi= list(HUMAN_ONLY_JOBS),
+		/datum/species/tajaran= list(HUMAN_ONLY_JOBS),
+		/datum/species/vasilissan= list(HUMAN_ONLY_JOBS),
+		/datum/species/vulpkanin= list(HUMAN_ONLY_JOBS),
 	)
 #undef HUMAN_ONLY_JOBS
 
