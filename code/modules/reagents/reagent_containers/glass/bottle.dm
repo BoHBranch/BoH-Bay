@@ -251,3 +251,14 @@
 	..()
 	reagents.add_reagent(/datum/reagent/frostoil, 60)
 	update_icon()
+
+/obj/item/weapon/reagent_containers/glass/bottle/biomass
+	name = "biomass bottle"
+	desc = "A bottle of raw biomass! Gross!"
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-3"
+
+/obj/item/weapon/reagent_containers/glass/bottle/biomass/New()
+	..()
+	reagents.add_reagent(/datum/reagent/nutriment/biomass, 60)
+	update_icon()
