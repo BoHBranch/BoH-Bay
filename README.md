@@ -1,6 +1,8 @@
-# baystation12
+# Bastion of Hestia
 
-[Website](http://baystation12.net/) - [Code](http://github.com/Baystation12/Baystation12/) - [Discord](https://discord.gg/DrtRFxs) - [IRC](irc://irc.sorcery.net/#codershuttle)
+[Website]() - [Code](https://github.com/BoHBranch/BoH-Bay) - [Discord]() - [IRC]()
+
+This is a fork of Baystation12's code for BYOND on Space Station 13.
 
 ---
 

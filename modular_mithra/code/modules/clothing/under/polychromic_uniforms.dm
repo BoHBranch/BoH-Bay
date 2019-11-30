@@ -23,8 +23,8 @@
 	hasprimary = TRUE
 	hassecondary = TRUE
 	hastertiary = TRUE
-	primary_color = "#FFFFFF" //RGB in hexcode
-	secondary_color = "#FFFFFF"
+	primary_color = "#f5e400" //RGB in hexcode
+	secondary_color = "#f5e400"
 	tertiary_color = "#808080"
 	rolled_down = -1 //0 = unrolled, 1 = rolled, -1 = cannot be toggled
 	rolled_sleeves = -1 //0 = unrolled, 1 = rolled, -1 = cannot be toggled
@@ -61,7 +61,7 @@
 	icon_state = "polysuit"
 	item_color = "polysuit"
 	item_state = "sl_suit"
-	primary_color = "#FFFFFF" //RGB in hexcode
+	primary_color = "#f5e400" //RGB in hexcode - Edited color to prevent Travis from throwing a fit. Same thing for alll other #FFFFF
 	secondary_color = "#353535"
 	tertiary_color = "#353535"
 
@@ -71,8 +71,8 @@
 	icon_state = "polykilt"
 	item_color = "polykilt"
 	item_state = "kilt"
-	primary_color = "#FFFFFF" //RGB in hexcode
-	secondary_color = "#F08080"
+	primary_color = "#f5e400" //RGB in hexcode
+	secondary_color = "#f5e400"
 	hastertiary = FALSE // so it doesn't futz with digilegs
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
@@ -82,8 +82,8 @@
 	icon_state = "polyskirt"
 	item_color = "polyskirt"
 	item_state = "rainbow"
-	primary_color = "#FFFFFF" //RGB in hexcode
-	secondary_color = "#F08080"
+	primary_color = "#f5e400" //RGB in hexcode
+	secondary_color = "#f5e400"
 	tertiary_color = "#808080"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
@@ -104,9 +104,9 @@
 	icon_state = "polyjump"
 	item_color = "polyjump"
 	item_state = "rainbow"
-	primary_color = "#FFFFFF" //RGB in hexcode
+	primary_color = "#f5e400" //RGB in hexcode
 	secondary_color = "#808080"
-	tertiary_color = "#FF3535"
+	tertiary_color = "#f5e400"
 
 /obj/item/clothing/under/polychromic/shortpants
 	name = "polychromic athletic shorts"
@@ -115,8 +115,8 @@
 	item_color = "polyshortpants"
 	item_state = "rainbow"
 	hastertiary = FALSE
-	primary_color = "#FFFFFF" //RGB in hexcode
-	secondary_color = "#F08080"
+	primary_color = "#f5e400" //RGB in hexcode
+	secondary_color = "#f5e400"
 	gender = PLURAL	//Because shortS
 	body_parts_covered = LOWER_TORSO	//Because there's no shirt included
 
@@ -126,9 +126,9 @@
 	icon_state = "polypleat"
 	item_color = "polypleat"
 	item_state = "rainbow"
-	primary_color = "#8CC6FF" //RGB in hexcode
+	primary_color = "#f5e400" //RGB in hexcode
 	secondary_color = "#808080"
-	tertiary_color = "#FF3535"
+	tertiary_color = "#f5e400"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/under/polychromic/femtank
@@ -139,7 +139,7 @@
 	item_state = "rainbow"
 	hastertiary = FALSE
 	primary_color = "#808080" //RGB in hexcode
-	secondary_color = "#FF3535"
+	secondary_color = "#f5e400"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/under/polychromic/shortpants/pantsu
@@ -149,8 +149,8 @@
 	item_color = "polypantsu"
 	item_state = "rainbow"
 	hastertiary = FALSE
-	primary_color = "#FFFFFF" //RGB in hexcode
-	secondary_color = "#8CC6FF"
+	primary_color = "#f5e400" //RGB in hexcode
+	secondary_color = "#f5e400"
 	body_parts_covered = LOWER_TORSO
 
 /obj/item/clothing/under/polychromic/bottomless
@@ -161,7 +161,7 @@
 	item_state = "rainbow"
 	hastertiary = FALSE
 	primary_color = "#808080" //RGB in hexcode
-	secondary_color = "#FF3535"
+	secondary_color = "#f5e400"
 	body_parts_covered = UPPER_TORSO|ARMS	//Because there's no bottom included
 
 /obj/item/clothing/under/polychromic/shimatank
@@ -171,6 +171,6 @@
 	item_color = "polyshimatank"
 	item_state = "rainbow"
 	primary_color = "#808080" //RGB in hexcode
-	secondary_color = "#FFFFFF"
-	tertiary_color = "#8CC6FF"
+	secondary_color = "#f5e400"
+	tertiary_color = "#f5e400"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO

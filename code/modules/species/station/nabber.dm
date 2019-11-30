@@ -13,8 +13,8 @@
 	antaghud_offset_y = 8
 
 	assisted_langs = list(LANGUAGE_GUTTER, LANGUAGE_UNATHI_SINTA, LANGUAGE_SKRELLIAN, LANGUAGE_HUMAN_EURO, LANGUAGE_EAL, LANGUAGE_HUMAN_RUSSIAN)
-	min_age = 8
-	max_age = 40
+	min_age = 18
+	max_age = 58
 
 	skin_material = MATERIAL_SKIN_CHITIN
 	bone_material = null

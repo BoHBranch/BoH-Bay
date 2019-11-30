@@ -34,8 +34,8 @@
 	var/hasprimary = FALSE	//These vars allow you to choose which overlays a clothing has
 	var/hassecondary = FALSE
 	var/hastertiary = FALSE
-	var/primary_color = "#FFFFFF" //RGB in hexcode
-	var/secondary_color = "#FFFFFF"
+	var/primary_color = "#0df2f9" //RGB in hexcode
+	var/secondary_color = "#0df2f9"
 	var/tertiary_color = "#808080"
 	var/item_color
 
