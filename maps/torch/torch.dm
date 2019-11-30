@@ -83,7 +83,6 @@
 	#include "job/misc_jobs.dm"
 	#include "job/research_jobs.dm"
 	#include "job/security_jobs.dm"
-	#include "job/security_jobs_boh.dm"
 	#include "job/service_jobs.dm"
 	#include "job/supply_jobs.dm"
 
@@ -133,6 +132,11 @@
 	#include "loadout/loadout_uniform.dm"
 	#include "loadout/loadout_xeno.dm"
 	#include "loadout/~defines.dm"
+
+// BoH Addons for easier search. Please, sort it by: Root - Datums - Game - Items - Job - Language - Machinery - Robot - Structures - Loadout.
+	#include "torch_ranks_boh.dm"
+	#include "job/security_jobs_boh.dm"
+// BoH Addons end here.
 
 	#include "torch1_deck5.dmm"
 	#include "torch2_deck4.dmm"
