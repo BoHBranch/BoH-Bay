@@ -63,7 +63,7 @@
 /*
 /obj/item/weapon/disk/limb/dsi_lizard
 	company = "DSI - Lizard"
-
+*/
 /datum/robolimb/dsi_sergal
 	company = "DSI - Sergal"
 	desc = "This limb feels soft and fluffy, realistic design and toned muscle. By Darkside Incorperated."
@@ -74,7 +74,7 @@
 	includes_tail = 1
 	skintone = 1
 	//suggested_species = "Sergal"
-
+/*
 /obj/item/weapon/disk/limb/dsi_sergal
 	company = "DSI - Sergal"
 
