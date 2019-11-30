@@ -83,6 +83,7 @@
 	#include "job/misc_jobs.dm"
 	#include "job/research_jobs.dm"
 	#include "job/security_jobs.dm"
+	#include "job/security_jobs_boh.dm"
 	#include "job/service_jobs.dm"
 	#include "job/supply_jobs.dm"
 
