@@ -14,7 +14,7 @@
 	The historical fluctuation is very large, it can be briefly divided into three stages; the period of the primitive and traditional lifestyle before the war, the period of the Shigu Kingdom from the unification by General Rain to the beginning and the end of the world war, and the postwar period of Shigu Dukedom in the modern era.\
 	In the past, it was an unexplored area covered with the primeval forest of the Talyxian biomes. Except that primitive Northern sergal tribes were scattered and living, was not having adequate Eltus technology and civilized lifestyle. Until Rain's emergence as a leader and her efforts to unify the Northern tribes, there was no even the name of the country as well.\
 	Since the year of the Rain-Calendar 20, it was unified as the name of the Kingdom and Rain Silves' clan, formed from a conglomerate of unified tribes under one flag.\
-	The 'Shigu Kingdom' collapsed during the late stage of world war. And after the end of the war, it reconstructed as the "Shigu Dukedom", developed as a large city of Northern Tal."
+	The 'Shigu Kingdom' collapsed during the late stage of world war. And after the end of the war, it reconstructed as the 'Shigu Dukedom', developed as a large city of Northern Tal."
 
 /decl/cultural_info/faction/sergal/reono
 	name = FACTION_SERGAL_REONO
