@@ -53,7 +53,7 @@
 			)
 		)
 	)
-
+/*
 	species_to_rank_whitelist = list(
 		/datum/species/machine = list(
 			/datum/mil_branch/expeditionary_corps = list(
@@ -93,7 +93,7 @@
 			)
 		)
 	)
-
+*/
 /*
  *  Branches
  *  ========

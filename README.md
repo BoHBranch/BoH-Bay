@@ -8,9 +8,17 @@ This is a fork of Baystation12's code for BYOND on Space Station 13.
 
 ### CONTRIBUTING GUIDELINES
 
-**Please refrain from making non code related comments in pull requests on GitHub.** See the Code of Conduct on where you may provide feedback to users.
+**Please refrain from making non code related comments in pull requests on GitHub.** 
+-Basically:
+Don't be a dick.
+Make a logical argument.
+Maintainer has final say on code issues.
+Lore head has final say on lore issues.
+Make sure you read: https://github.com/Baystation12/Baystation12/wiki/Automatic-changelog-generation and https://github.com/Baystation12/Baystation12/wiki/Changelog-rules-and-guidelines for Changelog rules.
 
-All users are expected to review [/docs/CODE_OF_CONDUCT.md](/docs/CODE_OF_CONDUCT.md) before interacting with the repository or other users.
+
+Maintainers have the right to punish you for breaking these rules.
+
 
 ---
 
