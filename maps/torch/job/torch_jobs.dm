@@ -16,7 +16,7 @@
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),
 		/datum/species/machine = list(HUMAN_ONLY_JOBS),
 		/datum/species/diona   = list(HUMAN_ONLY_JOBS),
-		/datum/species/sergal = list(HUMAN_ONLY_JOBS),
+		/datum/species/sergal  = list(HUMAN_ONLY_JOBS),
 		/datum/species/sergal/northern = list(HUMAN_ONLY_JOBS),
 		/datum/species/sergal/eastern = list(HUMAN_ONLY_JOBS),
 		/datum/species/akula =  list(HUMAN_ONLY_JOBS),
