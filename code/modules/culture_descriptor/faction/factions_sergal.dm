@@ -16,7 +16,6 @@
 	Since the year of the Rain-Calendar 20, it was unified as the name of the Kingdom and Rain Silves' clan, formed from a conglomerate of unified tribes under one flag.\
 	The 'Shigu Kingdom' collapsed during the late stage of world war. And after the end of the war, it reconstructed as the "Shigu Dukedom", developed as a large city of Northern Tal."
 
-
 /decl/cultural_info/faction/sergal/reono
 	name = FACTION_SERGAL_REONO
 	description = "Reono is a region that spans from the Eastern to the Middle area of the Eltus region on planet Tal.\
