@@ -7,3 +7,7 @@
 	whitelisted_species = list(SPECIES_VOX_ARMALIS)
 	blacklisted_species = null
 	is_semi_antagonist = TRUE
+
+
+/obj/effect/submap_landmark/spawnpoint/voxarm_crew
+	name = "Shoal Armalis"
