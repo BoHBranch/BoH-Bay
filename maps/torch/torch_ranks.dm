@@ -44,7 +44,7 @@
 		/datum/species/unathi     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/adherent   = list(/datum/mil_branch/civilian),
 		/datum/species/vox        = list(/datum/mil_branch/alien)
-		/datum/species/sergal     = list(/datum/mil_branch/civilian),
+		/datum/species/sergal      = list(/datum/mil_branch/civilian),
 		/datum/species/sergal/northern      = list(/datum/mil_branch/civilian),
 		/datum/species/sergal/eastern      = list(/datum/mil_branch/civilian),
 		/datum/species/akula     = list(/datum/mil_branch/civilian),
