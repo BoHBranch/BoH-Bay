@@ -43,7 +43,6 @@
 		/datum/species/skrell     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/skrell_fleet),
 		/datum/species/unathi     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/adherent   = list(/datum/mil_branch/civilian),
-		/datum/species/vox        = list(/datum/mil_branch/alien)
 		/datum/species/sergal      = list(/datum/mil_branch/civilian),
 		/datum/species/sergal/northern      = list(/datum/mil_branch/civilian),
 		/datum/species/sergal/eastern      = list(/datum/mil_branch/civilian),
@@ -54,6 +53,8 @@
 		/datum/species/vasilissan      = list(/datum/mil_branch/civilian),
 		/datum/species/vulpkanin      = list(/datum/mil_branch/civilian),
 		/datum/species/customhuman      = list(/datum/mil_branch/civilian),
+		/datum/species/vox        = list(/datum/mil_branch/alien)
+		/datum/species/vox/armalis        = list(/datum/mil_branch/alien)
 	)
 
 	species_to_rank_blacklist = list(
