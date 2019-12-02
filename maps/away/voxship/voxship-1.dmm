@@ -3,7 +3,7 @@
 "ac" = (/turf/simulated/mineral/random/high_chance,/area/space)
 "ad" = (/turf/simulated/wall/r_wall/hull,/area/voxship/base)
 "ae" = (/turf/simulated/mineral/random,/area/space)
-"af" = (/turf/simulated/floor/airless,/area/space)
+"af" = (/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "ag" = (/obj/random/junk,/obj/random/glasses,/obj/random/tank,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "ah" = (/obj/random/junk,/obj/random/glasses,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "ai" = (/turf/simulated/floor/plating/vox,/area/voxship/base)
@@ -67,8 +67,9 @@
 "bo" = (/obj/structure/cable/blue{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/blue{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "bp" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 1; external_pressure_bound = 0; external_pressure_bound_default = 0; frequency = 2002; icon_state = "map_vent_in"; id_tag = "vox_ship_out"; initialize_directions = 1; internal_pressure_bound = 4000; internal_pressure_bound_default = 4000; pressure_checks = 2; pressure_checks_default = 2; pump_direction = 0; use_power = 1},/turf/simulated/floor/airless,/area/voxship/ship)
 "bq" = (/turf/simulated/floor/airless,/area/voxship/ship)
-"br" = (/obj/structure/girder,/turf/space,/area/space)
+"br" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 5},/obj/structure/catwalk,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "bs" = (/obj/structure/girder,/turf/simulated/floor/asteroid,/area/space)
+"bt" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/catwalk,/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "bu" = (/obj/machinery/atmospherics/binary/circulator{anchored = 1; dir = 1; icon_state = "circ-off"},/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "bv" = (/obj/machinery/power/generator{anchored = 1; dir = 4; icon_state = "teg"},/obj/structure/cable/blue{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "bw" = (/obj/machinery/atmospherics/binary/circulator{anchored = 1},/turf/simulated/floor/plating/vox,/area/voxship/ship)
@@ -91,7 +92,7 @@
 "bN" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0},/obj/structure/inflatable/door,/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "bO" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/turf/simulated/wall/ocp_wall,/area/voxship/ship)
 "bP" = (/obj/machinery/portable_atmospherics/canister/nitrogen,/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
-"bQ" = (/obj/item/weapon/reagent_containers/glass/bottle/cyanide,/turf/simulated/floor/airless,/area/space)
+"bQ" = (/obj/machinery/atmospherics/unary/engine,/turf/simulated/wall/r_wall/hull,/area/voxship/base)
 "bR" = (/obj/random/toolbox,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "bS" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 9},/obj/machinery/light{dir = 4},/obj/structure/catwalk,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "bT" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/catwalk,/turf/simulated/floor/plating/vox,/area/voxship/base)
@@ -111,14 +112,14 @@
 "ch" = (/obj/machinery/atmospherics/pipe/simple/visible/black,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/floor_decal/borderfloor/full,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "ci" = (/obj/item/weapon/storage/firstaid/surgery,/obj/item/weapon/scalpel/manager,/obj/machinery/light/small{icon_state = "bulb1"; dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "cj" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/light/small{icon_state = "bulb1"; dir = 4},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
-"ck" = (/obj/machinery/light/small{dir = 1},/obj/structure/mech_wreckage/powerloader,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"ck" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 6},/turf/simulated/wall/r_wall/hull,/area/voxship/base)
 "cl" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{icon_state = "intact"; dir = 5},/turf/simulated/floor/airless,/area/voxship/ship)
 "cm" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{icon_state = "intact"; dir = 8},/turf/simulated/wall/r_wall/hull,/area/voxship/ship)
 "cn" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/inflatable/door,/obj/effect/floor_decal/borderfloor/full,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "co" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0},/obj/machinery/light{dir = 1},/obj/effect/floor_decal/industrial/hatch/orange,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "cp" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0},/obj/effect/floor_decal/industrial/loading{icon_state = "loadingarea"; dir = 8},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "cq" = (/obj/machinery/atmospherics/pipe/simple/visible/black,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/effect/floor_decal/borderfloor/full,/obj/machinery/power/port_gen/pacman/mrs,/obj/structure/cable/blue{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/plating/vox,/area/voxship/ship)
-"cr" = (/obj/item/weapon/reagent_containers/food/snacks/clownburger,/turf/simulated/floor/airless,/area/space)
+"cr" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{icon_state = "intact"; dir = 4},/turf/space,/area/space)
 "cs" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/machinery/light{dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "ct" = (/obj/effect/submap_landmark/joinable_submap/voxship,/turf/space,/area/space)
 "cu" = (/turf/simulated/floor/reinforced/nitrogen,/area/voxship/base)
@@ -144,36 +145,36 @@
 "cO" = (/obj/structure/window/reinforced{dir = 1; health = 1e+006},/obj/structure/window/reinforced{dir = 2; health = 1e+007},/obj/structure/inflatable/door,/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "cP" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/submap_landmark/spawnpoint/voxship_crew,/obj/structure/catwalk,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "cQ" = (/obj/machinery/mineral/processing_unit{input_turf = 2; output_turf = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
-"cR" = (/obj/structure/girder,/obj/structure/girder,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"cR" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{icon_state = "intact"; dir = 4},/turf/space,/area/space)
 "cS" = (/obj/item/stack/material/rods,/obj/structure/closet/secure_closet/freezer/meat,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "cT" = (/obj/item/weapon/reagent_containers/food/snacks/meat/monkey,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "cU" = (/obj/machinery/atmospherics/unary/vent_pump/on,/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -24; req_access = newlist()},/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/structure/cable/yellow,/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "cV" = (/turf/simulated/floor/plating/vox{icon_state = "dmg1"},/area/voxship/base)
 "cW" = (/obj/item/stack/material/rods,/obj/item/weapon/reagent_containers/food/snacks/meat/monkey,/obj/item/weapon/reagent_containers/food/snacks/meat/goat,/obj/item/weapon/reagent_containers/food/snacks/meat/corgi,/obj/item/weapon/reagent_containers/food/snacks/bearmeat,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "cX" = (/obj/machinery/mineral/unloading_machine{input_turf = 2; output_turf = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
-"cY" = (/obj/item/stack/material/rods,/obj/structure/inflatable/wall,/turf/simulated/floor/plating/vox,/area/voxship/base)
-"cZ" = (/obj/item/weapon/reagent_containers/food/snacks/meat/monkey,/obj/item/weapon/reagent_containers/food/snacks/meat/goat,/obj/item/weapon/reagent_containers/food/snacks/fish/carp,/obj/item/weapon/reagent_containers/food/snacks/fish/carp,/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
-"da" = (/obj/machinery/space_heater,/turf/simulated/floor/plating/vox{icon_state = "dmg1"},/area/voxship/base)
+"cY" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{icon_state = "intact"; dir = 10},/turf/space,/area/space)
+"cZ" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/airless,/area/voxship/base)
+"da" = (/turf/simulated/floor/airless,/area/voxship/base)
 "db" = (/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
-"dc" = (/obj/item/stack/material/rods,/obj/item/weapon/reagent_containers/food/snacks/meat/corgi,/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
+"dc" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 6},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "dd" = (/obj/item/stack/material/rods,/turf/simulated/floor/plating/vox,/area/voxship/base)
-"de" = (/obj/item/weapon/reagent_containers/food/snacks/meat/goat,/obj/item/weapon/reagent_containers/food/snacks/meat/corgi,/obj/item/weapon/reagent_containers/food/snacks/organ,/obj/item/weapon/reagent_containers/food/snacks/bearmeat,/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
-"df" = (/obj/item/stack/material/rods,/obj/item/weapon/reagent_containers/food/snacks/bearmeat,/obj/item/weapon/reagent_containers/food/snacks/canned/caviar,/obj/item/weapon/reagent_containers/food/snacks/canned/caviar,/obj/item/weapon/reagent_containers/food/snacks/canned/caviar,/obj/item/weapon/reagent_containers/food/snacks/canned/caviar,/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
-"dg" = (/obj/machinery/atmospherics/unary/engine,/turf/simulated/wall/r_wall/hull,/area/space)
-"dh" = (/obj/item/weapon/reagent_containers/food/snacks/bearmeat,/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
-"di" = (/turf/simulated/floor/asteroid,/area/voxship/base)
-"dj" = (/obj/item/stack/material/steel,/obj/item/stack/material/rods,/obj/structure/inflatable/wall,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"de" = (/obj/machinery/atmospherics/binary/pump/high_power{dir = 4},/turf/simulated/floor/airless,/area/voxship/base)
+"df" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/turf/simulated/floor/airless,/area/voxship/base)
+"dg" = (/obj/machinery/atmospherics/pipe/simple/visible/black{icon_state = "intact"; dir = 9},/turf/simulated/wall/r_wall/hull,/area/voxship/base)
+"dh" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{icon_state = "intact"; dir = 6},/turf/space,/area/space)
+"di" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{icon_state = "intact"; dir = 9},/turf/space,/area/space)
+"dj" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "dk" = (/obj/effect/floor_decal/borderfloor/cee,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "dl" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "dm" = (/obj/item/stack/material/rods,/turf/simulated/floor/plating/vox{icon_state = "dmg1"},/area/voxship/base)
 "dn" = (/obj/machinery/portable_atmospherics/canister/nitrogen,/obj/machinery/light/small{dir = 8},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
-"do" = (/obj/structure/inflatable/door,/turf/simulated/floor/asteroid,/area/voxship/base)
-"dp" = (/obj/item/weapon/pickaxe/silver,/obj/structure/inflatable/wall,/turf/simulated/floor/asteroid,/area/voxship/base)
-"dq" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
+"do" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 6},/turf/simulated/floor/airless,/area/voxship/base)
+"dp" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 4},/turf/simulated/floor/airless,/area/voxship/base)
+"dq" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 4},/obj/machinery/atmospherics/pipe/simple/visible/black,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "dr" = (/turf/simulated/mineral/random/high_chance,/area/voxship/base)
 "ds" = (/obj/structure/inflatable/door,/obj/effect/catwalk_plated/dark,/turf/simulated/floor/plating/vox,/area/voxship/base)
-"dt" = (/obj/effect/floor_decal/asteroid,/turf/simulated/floor/asteroid,/area/voxship/base)
-"du" = (/obj/item/weapon/storage/ore,/turf/simulated/floor/asteroid,/area/voxship/base)
+"dt" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"du" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 4},/turf/simulated/wall/ocp_wall,/area/voxship/base)
 "dv" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 2; icon_state = "intact-supply"},/obj/structure/catwalk,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "dw" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/submap_landmark/spawnpoint/voxship_crew,/obj/machinery/portable_atmospherics/canister/oxygen,/obj/structure/catwalk,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "dx" = (/obj/machinery/power/terminal{icon_state = "term"; dir = 4},/obj/structure/cable/cyan{d2 = 2; icon_state = "0-2"},/obj/effect/floor_decal/borderfloor/full,/obj/item/stack/material/tritium/ten,/obj/item/stack/material/tritium/ten,/obj/item/stack/material/tritium/ten,/obj/structure/closet/cabinet,/turf/simulated/floor/plating/vox,/area/voxship/ship)
@@ -182,6 +183,7 @@
 "dA" = (/obj/machinery/atmospherics/unary/tank/oxygen{dir = 1; icon_state = "o2"},/obj/effect/floor_decal/borderfloor/full,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "dB" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/floor_decal/steeldecal/steel_decals_central7,/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "dC" = (/obj/machinery/computer/mining{req_access = newlist()},/turf/simulated/wall/iron,/area/voxship/base)
+"dD" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 10},/turf/simulated/wall/ocp_wall,/area/voxship/base)
 "dE" = (/obj/effect/shuttle_landmark/vox_base/hangar/vox_shuttle,/obj/effect/floor_decal/borderfloor/full,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "dF" = (/obj/machinery/atmospherics/pipe/simple/visible/black,/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/effect/floor_decal/borderfloor/full,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "dG" = (/obj/machinery/computer/ship/sensors{icon_state = "computer"; dir = 1},/obj/machinery/light/small{icon_state = "bulb1"; dir = 4},/turf/simulated/floor/reinforced/vox,/area/voxship/ship)
@@ -217,8 +219,8 @@
 "ek" = (/obj/machinery/space_heater,/obj/machinery/light/small{icon_state = "bulb1"; dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "el" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/obj/effect/floor_decal/borderfloor/full,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "em" = (/obj/effect/floor_decal/steeldecal/steel_decals6,/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
-"en" = (/obj/item/weapon/shovel,/obj/effect/floor_decal/asteroid,/turf/simulated/floor/asteroid,/area/voxship/base)
-"eo" = (/obj/item/stack/material/steel,/obj/item/stack/material/rods,/obj/item/stack/material/rods,/obj/effect/decal/cleanable/blood/oil/streak,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"en" = (/turf/simulated/wall/ocp_wall,/area/voxship/base)
+"eo" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{icon_state = "intact"; dir = 5},/turf/space,/area/space)
 "ep" = (/obj/machinery/fabricator,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "eq" = (/obj/machinery/vending/engivend{req_access = list()},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "er" = (/obj/machinery/vending/engineering{req_access = list()},/turf/simulated/floor/plating/vox,/area/voxship/base)
@@ -233,7 +235,7 @@
 "eA" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "eB" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "eC" = (/obj/machinery/atmospherics/pipe/vent/high_volume{icon_state = "intact"; dir = 8},/turf/space,/area/space)
-"eD" = (/obj/item/weapon/pickaxe/jackhammer,/obj/effect/floor_decal/asteroid,/turf/simulated/floor/asteroid,/area/voxship/base)
+"eD" = (/obj/machinery/light/small{dir = 8},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "eE" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "eF" = (/obj/machinery/mineral/stacking_machine{input_turf = 2; output_turf = 1},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "eG" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{icon_state = "intact-supply"; dir = 9},/obj/structure/catwalk,/turf/simulated/floor/plating/vox,/area/voxship/base)
@@ -253,7 +255,7 @@
 "eU" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/submap_landmark/spawnpoint/voxship_crew,/obj/item/weapon/tank/oxygen,/obj/item/weapon/tank/oxygen,/obj/item/weapon/tank/oxygen,/obj/structure/catwalk,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "eV" = (/obj/effect/floor_decal/industrial/loading{icon_state = "loadingarea"; dir = 8},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "eW" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/plating/vox,/area/voxship/base)
-"eX" = (/obj/item/stack/material/steel,/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
+"eX" = (/obj/machinery/atmospherics/binary/circulator{anchored = 1; dir = 1; icon_state = "circ-off"},/turf/simulated/floor/airless,/area/voxship/base)
 "eY" = (/obj/effect/overmap/visitable/sector/vox_base,/turf/space,/area/space)
 "eZ" = (/obj/effect/overmap/visitable/ship/landable/vox,/turf/space,/area/space)
 "fa" = (/obj/machinery/portable_atmospherics/canister/empty/nitrogen,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/structure/catwalk,/turf/simulated/floor/plating/vox,/area/voxship/base)
@@ -274,7 +276,7 @@
 "fp" = (/obj/effect/floor_decal/borderfloorwhite/cee{icon_state = "borderfloorcee_white"; dir = 8},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "fq" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/floor_decal/industrial/warning/fulltile,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "fr" = (/obj/structure/closet/secure_closet/freezer/meat,/obj/effect/floor_decal/borderfloorwhite/cee{icon_state = "borderfloorcee_white"; dir = 8},/turf/simulated/floor/plating/vox,/area/voxship/base)
-"fs" = (/obj/item/stack/material/steel,/obj/item/stack/material/rods,/obj/effect/floor_decal/industrial/warning/dust,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"fs" = (/obj/structure/cable/cyan{d2 = 2; icon_state = "0-2"},/obj/machinery/power/generator{anchored = 1; dir = 4; icon_state = "teg"},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "ft" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/structure/catwalk,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "fu" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/computer/mining,/obj/structure/catwalk,/turf/simulated/wall/iron,/area/voxship/base)
 "fv" = (/obj/item/weapon/storage/toolbox/syndicate,/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
@@ -282,27 +284,82 @@
 "fx" = (/obj/effect/floor_decal/steeldecal/steel_decals_central1,/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "fy" = (/obj/machinery/light/small{dir = 8},/obj/effect/floor_decal/borderfloor/full,/obj/structure/bed/chair{dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "fz" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4; level = 2},/obj/effect/floor_decal/borderfloor/cee,/obj/structure/bed/chair,/turf/simulated/floor/plating/vox,/area/voxship/ship)
-"fA" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
+"fA" = (/obj/machinery/atmospherics/binary/circulator{anchored = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "fB" = (/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "fC" = (/obj/effect/floor_decal/borderfloorwhite/cee{icon_state = "borderfloorcee_white"; dir = 8},/obj/structure/reagent_dispensers/watertank,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "fD" = (/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
-"fE" = (/obj/machinery/light/small{dir = 8},/obj/structure/firedoor_assembly,/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
+"fE" = (/obj/machinery/atmospherics/unary/outlet_injector{dir = 1; frequency = 2020; icon_state = "map_injector"; id = "vox_base_in"; use_power = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "fF" = (/obj/item/stack/material/rods,/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1; level = 2},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "fG" = (/obj/item/stack/material/rods,/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1; level = 2},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "fH" = (/obj/structure/foamedmetal,/turf/simulated/floor/plating/vox,/area/voxship/base)
-"fI" = (/obj/item/stack/material/steel,/obj/item/stack/material/steel,/obj/item/stack/material/rods,/obj/structure/foamedmetal,/turf/simulated/floor/plating/vox,/area/voxship/base)
-"fJ" = (/obj/item/stack/material/steel,/obj/item/stack/material/steel,/obj/item/stack/material/rods,/obj/structure/grille,/turf/simulated/floor/plating/vox,/area/voxship/base)
-"fK" = (/obj/effect/floor_decal/asteroid,/obj/structure/foamedmetal,/turf/simulated/floor/asteroid,/area/voxship/base)
+"fI" = (/obj/machinery/atmospherics/pipe/simple/visible/red,/turf/simulated/floor/airless,/area/voxship/base)
+"fJ" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"fK" = (/obj/machinery/atmospherics/pipe/simple/visible/black,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "fL" = (/obj/item/stack/material/rods,/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
 "fM" = (/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
 "fN" = (/obj/effect/decal/cleanable/blood/gibs/robot,/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
-"fO" = (/obj/machinery/light/small{dir = 8},/obj/effect/decal/cleanable/ash,/turf/simulated/floor/asteroid,/area/voxship/base)
-"fP" = (/obj/item/stack/material/steel,/obj/item/stack/material/rods,/obj/effect/decal/cleanable/blood/oil/streak,/turf/simulated/floor/plating/vox,/area/voxship/base)
-"fQ" = (/obj/item/stack/material/rods,/obj/effect/decal/cleanable/ash,/obj/effect/decal/cleanable/blood/oil,/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
-"fR" = (/obj/item/stack/material/steel,/obj/structure/barricade,/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
-"fS" = (/obj/item/stack/material/rods,/obj/effect/decal/cleanable/blood/gibs/robot,/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
-"fT" = (/obj/item/stack/material/steel,/obj/item/stack/material/rods,/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
-"fU" = (/obj/item/stack/material/steel,/obj/item/stack/material/rods,/obj/structure/barricade,/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
+"fO" = (/obj/machinery/sparker{id_tag = "voxship"; pixel_x = -20},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"fP" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/cyan{d2 = 2; icon_state = "0-2"},/obj/machinery/power/generator{anchored = 1; dir = 4; icon_state = "teg"},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"fQ" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"fR" = (/obj/machinery/atmospherics/unary/outlet_injector{dir = 2; frequency = 2020; icon_state = "map_injector"; id = "vox_base_in"; injecting = 0; use_power = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"fS" = (/obj/machinery/air_sensor{id_tag = "vox_base_sensor"},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"fT" = (/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 5},/turf/simulated/floor/airless,/area/voxship/base)
+"fU" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/visible/red{icon_state = "intact"; dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"fV" = (/obj/machinery/atmospherics/binary/pump/high_power{dir = 8},/turf/simulated/floor/plating/vox{icon_state = "dmg1"},/area/voxship/base)
+"fW" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan,/obj/machinery/atmospherics/unary/vent_pump{dir = 8; external_pressure_bound = 0; external_pressure_bound_default = 0; frequency = 2020; icon_state = "map_vent_in"; id_tag = "vox_base_out"; initialize_directions = 1; internal_pressure_bound = 4000; internal_pressure_bound_default = 4000; pressure_checks = 2; pressure_checks_default = 2; pump_direction = 0; use_power = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"fX" = (/obj/machinery/computer/air_control{dir = 4; frequency = 2020; input_tag = "vox_base_in"; name = "Base Juice Control"; output_tag = "vox_base_out"; sensor_tag = "vox_base_sensor"},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"fY" = (/obj/machinery/atmospherics/pipe/simple/visible/cyan,/turf/simulated/wall/ocp_wall,/area/voxship/base)
+"fZ" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 6},/turf/simulated/wall/ocp_wall,/area/voxship/base)
+"ga" = (/obj/item/weapon/reagent_containers/food/snacks/meat/monkey,/obj/item/weapon/reagent_containers/food/snacks/meat/goat,/obj/item/weapon/reagent_containers/food/snacks/fish/carp,/obj/item/weapon/reagent_containers/food/snacks/fish/carp,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gb" = (/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gc" = (/obj/machinery/atmospherics/unary/tank/nitrogen{dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gd" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/binary/pump{dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"ge" = (/obj/machinery/atmospherics/pipe/manifold/hidden/black,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gf" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/obj/item/stack/material/rods,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gg" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gh" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/obj/machinery/atmospherics/binary/pump{dir = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gi" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/obj/machinery/atmospherics/binary/pump{dir = 1},/obj/machinery/light/small{icon_state = "bulb1"; dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gj" = (/obj/item/stack/material/rods,/obj/item/weapon/reagent_containers/food/snacks/meat/corgi,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gk" = (/obj/item/weapon/reagent_containers/food/snacks/meat/goat,/obj/item/weapon/reagent_containers/food/snacks/meat/corgi,/obj/item/weapon/reagent_containers/food/snacks/organ,/obj/item/weapon/reagent_containers/food/snacks/bearmeat,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gl" = (/obj/item/stack/material/rods,/obj/item/weapon/reagent_containers/food/snacks/bearmeat,/obj/item/weapon/reagent_containers/food/snacks/canned/caviar,/obj/item/weapon/reagent_containers/food/snacks/canned/caviar,/obj/item/weapon/reagent_containers/food/snacks/canned/caviar,/obj/item/weapon/reagent_containers/food/snacks/canned/caviar,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gm" = (/obj/item/weapon/reagent_containers/food/snacks/bearmeat,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gn" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"go" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating/vox{icon_state = "dmg1"},/area/voxship/base)
+"gp" = (/obj/effect/submap_landmark/spawnpoint/voxship_crew,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gq" = (/obj/machinery/atmospherics/unary/tank/hydrogen{dir = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gr" = (/obj/machinery/atmospherics/unary/tank/oxygen{dir = 1; icon_state = "o2"},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gs" = (/obj/machinery/door/airlock,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gt" = (/obj/item/stack/material/rods,/obj/item/stack/material/steel,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gu" = (/obj/machinery/light{dir = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gv" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
+"gw" = (/obj/machinery/cryopod,/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
+"gx" = (/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gy" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gz" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
+"gA" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating/vox{icon_state = "dmg1"},/area/voxship/base)
+"gB" = (/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
+"gC" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor/plating/vox{icon_state = "dmg1"},/area/voxship/base)
+"gD" = (/obj/effect/decal/cleanable/blood/gibs/robot,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gE" = (/obj/machinery/light/small,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gF" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
+"gG" = (/obj/structure/barricade,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gH" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/floor/plating/vox{icon_state = "dmg1"},/area/voxship/base)
+"gI" = (/obj/item/stack/material/steel,/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
+"gJ" = (/obj/effect/decal/cleanable/blood/oil,/obj/item/stack/material/steel,/turf/simulated/floor/plating/vox{icon_state = "dmg1"},/area/voxship/base)
+"gK" = (/obj/machinery/light{icon_state = "tube1"; dir = 1},/turf/simulated/floor/plating/vox{icon_state = "dmg1"},/area/voxship/base)
+"gL" = (/obj/structure/bed,/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
+"gM" = (/obj/structure/barricade,/obj/item/stack/material/steel,/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
+"gN" = (/turf/simulated/wall/iron,/area/space)
+"gO" = (/obj/structure/barricade,/turf/simulated/floor/plating/vox{icon_state = "dmg1"},/area/voxship/base)
+"gP" = (/obj/effect/decal/cleanable/blood/gibs/robot,/obj/item/stack/material/rods,/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
+"gQ" = (/obj/structure/grille,/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
+"gR" = (/obj/structure/foamedmetal,/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
+"gS" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/asteroid,/area/space)
+"gT" = (/obj/structure/barricade,/turf/simulated/floor/asteroid,/area/space)
+"gU" = (/obj/structure/grille,/obj/structure/barricade,/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
+"gV" = (/obj/item/weapon/storage/ore,/turf/simulated/floor/asteroid,/area/space)
+"gW" = (/obj/effect/decal/cleanable/blood/oil,/turf/simulated/floor/plating/vox{icon_state = "dmg2"},/area/voxship/base)
+"gX" = (/obj/item/weapon/pickaxe/jackhammer,/turf/simulated/floor/asteroid,/area/space)
 "va" = (/obj/machinery/atmospherics/pipe/simple/visible/black,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/floor_decal/borderfloor/full,/obj/machinery/power/port_gen/pacman/mrs,/obj/structure/cable/blue{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "ve" = (/obj/machinery/atmospherics/pipe/simple/visible/black{icon_state = "intact"; dir = 9},/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "Cj" = (/obj/machinery/atmospherics/pipe/manifold/visible/black,/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor/plating/vox,/area/voxship/ship)
@@ -342,27 +399,27 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaauaDcIcKdkbHvadxdyaD
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaauaDdzdAaZdEdFdQdVaDaaaaaaadezeAeEcedwcaetetetcadObGeveQbzdPexeCaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaclcmdWeTeleleHeIeJaDaaaaaaadfgaVeEbGejcacucucucafeeyevfveAaVadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafbeOfweKeLbHbHbHeMaDbEadadadaVfxeEeGeUcacacacacaaVaVaVaVaVekadaaaaabaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabqaDfybHbHeRbHbHfdcycOdseSeVaVaVaVaVeybVfabcaVaVaVaVaVaVaVcxadaaaaabdgdgdgdgdgdgdgabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaDePffdkfzfhfiaDaDbEadadadaQaQaQaQaQaVbTaVaVcAaQaQaQaQaQaQadaaaaabafbQacafafafafabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacBaDaDcCcDdGaDaDaaaaaaaaadfjfkflfmaQaVbTaVecaicGcHcHepckeqadabaaabafafacacacafafabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaDaDaDaDaDaaaaaaaaaaadfjfnfofpaQfAbTeQfBfqeBeBeBeBeBeBexeCaaabafacacacacacafabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaaaaadfrfnfnfCaQaVbTdCeFaiaiaiaiaiaiegadaaaaabcracacacacacacabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacaaaaadfrfnaifpaQaVbTfDaicNeraiaiaiaiaiadaaaaabafacacacacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacadfraiaiegaQeeftfucQcResaiaiaiaqaiadacacacafacacacacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacadcScTcVaiaQfEfFfGaiaQeWaiaqaIaqaiadacacacacacacacacacaabraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacadcZcWdacVaQaVaidbcXaQcYaqaqaIaqaqadacacacacacacacacacacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacaddcdedfdhaQdmcVdbdqaQfseoaqaIcYddadacacacacacacacacacacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacacacacacaceXfLfMdbfNdbfLaQfOfPaqaIdjacacacacacacacacacacacacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacacacacacfHfIfJfQfRfSfTacacfKdtaqdodpacacacacacacacacacacacacacacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacaeaeaeaeacacacacacacacacacacacfUacacdrdtendidiacacacacacacacacacacacacacacacacacaaaaaaaaaaaaaaacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacaeaeaeaeacacacacacacacacacacacacacacdrdtdteDduacacacacacacacacacacacacacacacacacacaaaaaaaaaaaaaaacacaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacaeaeaeaeacacacacacacacacacacacacacacacaTaTacacacacacacacacacacacacacacacacacacacacacacacaaaaaaaaaaacaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacaeaeaeaeacacacacacacacacacacacacacacacaTaTacacacacacacacacacacacacacacacacaeaeaeaeacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacaeaeaeaeacacacacacacacacacacacacacacacaTaTaTacacacacacacacacacacacacacacacaeaeaeaeacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaeaeaeaeaeaeaeaeaeaeaeaeaeacacacacacacacacacaTaTaTaTacacacacacacacacacacacacacacacaeaeaeaeacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacaeaeaeaeaeaeaeaeaeaeaeaeaeacacacacacacacacacaTaTaTbsacacacacacacacacacacacacacacacaeaeaeaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacaeaeaeaeaeaeaeaeaeaeaeaeaeacacacacacacacacacaTfcaTaTacacacacacacacacacacacacacacacaeaeaeaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacaeaeaeaeaeaeaeaeaeaeaeaeaeacacacacacacacacaTaTaTaTaTacacacacacacacacacacacacacacacaeacaaaaaaaaaaaaaaaaaaaaacacacaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabqaDfybHbHeRbHbHfdcycOdseSeVaVaVaVafbrbtfabcaVaVaVaVaVaVaVcxadaaaaadbQbQbQbQbQbQbQckcrcRcRcYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaDePffdkfzfhfiaDaDbEadadadaQaQaQaQaQcfbTaVaVcAaQaQaQaQaQaQadaaaaadcZdadcdedfdfdfdgdhcRcRdiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacBaDaDcCcDdGaDaDaaaaaaaaadfjfkflfmaQcfbTaVecaicGcHcHepdjeqadabaaaddodpdqdtdudDeneneocRcRcYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaDaDaDaDaDaaaaaaaaaaadfjfnfofpaQeDbTeQfBfqeBeBeBeBeBeBexeCaaadeXfsfAaienfEaiendhcRcRdiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaaaaadfrfnfnfCaQcfbTdCeFaQaiaiaiaiaiegadaaaaadfIfJfKaienfOaieneocRcRcYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacaaaaadfrfnaifpaQcfbTfDaiaQeraiaiaiaiaiadaaaaadeXfPfAfQenfRfSendhcRcRdiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacadfraiaiegaQcfftfucQaQesaiaiaiaiaiadacacadfTfUdqfVdufWfReneocRcRcYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacadcScTaiaiaQeDfFfGaiaQeWaiaiaiaiaiadacacadfXfJfKcVenfYfYfZcrcRcRdiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacadgacWcxaiaQcfaigbcXaQaifMaiaiaiegaddrdradgcgdgegfggghgidgacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacadgjgkglgmaQfJaiaignaQaiaifMfMaiaiaddrdradeWgocVcVgpgqgrcNacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacacacaQaQaQgsaQaQfJaiaiddaQeWaiaifMaiaicNgtaigucVgvfMfNfLcNcNacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacacacaQddaiaigwaQgxgygygygzgzgzgzgzgzgygAgAgAgAgAgBcNcNcNacacacacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacaeaeaeaeacacacaQeWdbaiaiaQgCdbcVcVcVcVcVgDgEdbgFcNfNfLfMfMfNdrdracacacacacacacacaaaaaaaaaaaaaaacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacaeaeaeaeacacacaQcVgGfMaidbdmcVdbgHfMaQgsgsaQfHgIcNdrdrdrdrdrdracacacacacacacacacacaaaaaaaaaaaaaaacacaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacaeaeaeaeacacacaQaQaQcVaQaQcVfNdbaQaQaQgFaiaQaQaQdracacacacacacacacacacacacacacacacacacacaaaaaaaaaaacaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacaeaeaeaeacacaccNgJgKcVgLcNdmdbgMacaTgNgIfMaQaTacacacacacacacacacacacacacacaeaeaeaeacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacaeaeaeaeacacaccNgOdbgPgLcNgFdbgQacbsgNgsgsaQaTacacacacacacacacacacacacacacaeaeaeaeacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaeaeaeaeaeaeaeaeaeaeaecNgFfMdbgLaQfMgRacacbsgSaTaTgTaTacacacacacacacacacacacacacacaeaeaeaeacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacaeaeaeaeaeaeaeaeaeaeaecNdbgPfMdbgUgQacacacacaTaTgVbsacacacacacacacacacacacacacacacaeaeaeaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacaeaeaeaeaeaeaeaeaeaeaeaegQfMgWgRacacacacacacaTfcgXaTacacacacacacacacacacacacacacacaeaeaeaeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacaeaeaeaeaeaeaeaeaeaeaeaeaegQacacacacacacacaTaTaTaTaTacacacacacacacacacacacacacacacaeacaaaaaaaaaaaaaaaaaaaaacacacaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacaeaeaeaeaeaeaeaeaeaeaeaeaeacacacacacacacacaTaTacacacacacacacacacacacacacacacacacacaeacaaaaaaaaaaaaaaaaacacacacaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaeaeaeaeaeaeaeaeaeaeaeaeaeacacacacacacacaTaTaTacacacacacacacacacacacacacacacacacacacacaaaaaaaaaaaaaaaaacacacacacaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaeaeaeaeaeaeacacacacacacacacacacacacacacaTaTfcacacacacacacacacacacacacacacacacacacaaaaaaaaaaaaaaaaaaaaaaacacacacaaaaaaaaaaaaaaaaaaaaaaaa
