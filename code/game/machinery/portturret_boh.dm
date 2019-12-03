@@ -22,10 +22,6 @@
 	ailock = 1
 	lethal = 1
 
-/obj/machinery/porta_turret/exterior/New()
-	..()
-	req_access = list(access_solgov_crew)
-
 /////////
 // Firearm
 /////////
