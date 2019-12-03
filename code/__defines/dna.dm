@@ -12,7 +12,11 @@
 #define MUTATION_LASER           7  // Harm intent - click anywhere to shoot lasers from eyes.
 #define MUTATION_HEAL            8 // Healing people with hands.
 #define MUTATION_SPACERES        9 // Can't be harmed via pressure damage.
-#define MUTATION_SKELETON        10
+#define MUTATION_NOCLONE        10
+
+//#define MUTATION_       28
+#define MUTATION_SKELETON      29
+#define MUTATION_PLANT         30
 
 // Other Mutations:
 #define mNobreath      100 // No need to breathe.

@@ -17,6 +17,7 @@
 	can_be_printed = FALSE
 
 	var/can_use_mmi = TRUE
+	var/clone_source = FALSE
 	var/mob/living/carbon/brain/brainmob = null
 	var/const/damage_threshold_count = 10
 	var/damage_threshold_value

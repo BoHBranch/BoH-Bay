@@ -42,6 +42,8 @@
 #define HIDEJUMPSUIT    0x4
 #define HIDESHOES       0x8
 #define HIDETAIL        0x10
+#define HIDETIE         0x20
+#define HIDEHOLSTER     0x40 //Some clothing hides holsters, but not all accessories
 
 // WARNING: The following flags apply only to the helmets and masks!
 #define HIDEMASK 0x1
@@ -170,8 +172,8 @@
 #define  FIRESUIT_MAX_PRESSURE 		100 * ONE_ATMOSPHERE   // Firesuis and atmos voidsuits
 #define  RIG_MAX_PRESSURE 			50 * ONE_ATMOSPHERE   // Rigs
 #define  LIGHT_RIG_MAX_PRESSURE 	25 * ONE_ATMOSPHERE   // Rigs
-#define  ENG_VOIDSUIT_MAX_PRESSURE 	50 * ONE_ATMOSPHERE 
-#define  VOIDSUIT_MAX_PRESSURE 		25 * ONE_ATMOSPHERE 
+#define  ENG_VOIDSUIT_MAX_PRESSURE 	50 * ONE_ATMOSPHERE
+#define  VOIDSUIT_MAX_PRESSURE 		25 * ONE_ATMOSPHERE
 #define  SPACE_SUIT_MAX_PRESSURE 	5 * ONE_ATMOSPHERE
 
 // Fire.

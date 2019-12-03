@@ -20,7 +20,6 @@
 		/datum/species/sergal/northern = list(HUMAN_ONLY_JOBS),
 		/datum/species/sergal/eastern = list(HUMAN_ONLY_JOBS),
 		/datum/species/akula = list(HUMAN_ONLY_JOBS),
-		/datum/species/custom= list(HUMAN_ONLY_JOBS),
 		/datum/species/humanathi= list(HUMAN_ONLY_JOBS),
 		/datum/species/tajaran= list(HUMAN_ONLY_JOBS),
 		/datum/species/vasilissan= list(HUMAN_ONLY_JOBS),
