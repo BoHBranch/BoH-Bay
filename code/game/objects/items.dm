@@ -11,6 +11,7 @@
 	var/burn_point = null
 	var/burning = null
 	var/hitsound = null
+	var/usesound = null // Like hitsound, but for when used properly and not to kill someone.
 	var/slot_flags = 0		//This is used to determine on which slots an item can fit.
 	var/no_attack_log = 0			//If it's an item we don't want to log attack_logs with, set this to 1
 	pass_flags = PASS_FLAG_TABLE
@@ -852,3 +853,6 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 		set_icon_state(citem.item_icon_state)
 		item_state = null
 		icon_override = CUSTOM_ITEM_MOB
+
+/obj/item/proc/suicide_act(mob/user)
+	return
