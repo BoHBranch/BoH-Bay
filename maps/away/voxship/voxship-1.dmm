@@ -153,10 +153,10 @@
 "cW" = (/obj/item/stack/material/rods,/obj/item/weapon/reagent_containers/food/snacks/meat/monkey,/obj/item/weapon/reagent_containers/food/snacks/meat/goat,/obj/item/weapon/reagent_containers/food/snacks/meat/corgi,/obj/item/weapon/reagent_containers/food/snacks/bearmeat,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "cX" = (/obj/machinery/mineral/unloading_machine{input_turf = 2; output_turf = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "cY" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{icon_state = "intact"; dir = 10},/turf/space,/area/space)
-"cZ" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/airless,/area/voxship/base)
-"da" = (/turf/simulated/floor/airless,/area/voxship/base)
+"cZ" = (/obj/machinery/light{dir = 8},/obj/machinery/atmospherics/unary/tank/nitrogen{dir = 4},/turf/simulated/floor/airless,/area/voxship/base)
+"da" = (/obj/machinery/atmospherics/binary/pump{dir = 4},/turf/simulated/floor/airless,/area/voxship/base)
 "db" = (/turf/simulated/floor/plating/vox{icon_state = "dmg4"},/area/voxship/base)
-"dc" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 6},/turf/simulated/floor/plating/vox,/area/voxship/base)
+"dc" = (/obj/machinery/atmospherics/pipe/manifold/visible/black{dir = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "dd" = (/obj/item/stack/material/rods,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "de" = (/obj/machinery/atmospherics/binary/pump/high_power{dir = 4},/turf/simulated/floor/airless,/area/voxship/base)
 "df" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/turf/simulated/floor/airless,/area/voxship/base)
@@ -312,9 +312,7 @@
 "fZ" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 6},/turf/simulated/wall/ocp_wall,/area/voxship/base)
 "ga" = (/obj/item/weapon/reagent_containers/food/snacks/meat/monkey,/obj/item/weapon/reagent_containers/food/snacks/meat/goat,/obj/item/weapon/reagent_containers/food/snacks/fish/carp,/obj/item/weapon/reagent_containers/food/snacks/fish/carp,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "gb" = (/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
-"gc" = (/obj/machinery/atmospherics/unary/tank/nitrogen{dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
-"gd" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/binary/pump{dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
-"ge" = (/obj/machinery/atmospherics/pipe/manifold/hidden/black,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"gc" = (/obj/machinery/atmospherics/pipe/simple/visible/black{icon_state = "intact"; dir = 5},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "gf" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/obj/item/stack/material/rods,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "gg" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "gh" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/obj/machinery/atmospherics/binary/pump{dir = 1},/turf/simulated/floor/plating/vox,/area/voxship/base)
@@ -407,7 +405,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacaaaaadfrfnaifpaQcfbTfDaiaQeraiaiaiaiaiadaaaaadeXfPfAfQenfRfSendhcRcRdiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacadfraiaiegaQcfftfucQaQesaiaiaiaiaiadacacadfTfUdqfVdufWfReneocRcRcYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacadcScTaiaiaQeDfFfGaiaQeWaiaiaiaiaiadacacadfXfJfKcVenfYfYfZcrcRcRdiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacadgacWcxaiaQcfaigbcXaQaifMaiaiaiegaddrdradgcgdgegfggghgidgacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacadgacWcxaiaQcfaigbcXaQaifMaiaiaiegaddrdradaifJgcgfggghgidgacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacadgjgkglgmaQfJaiaignaQaiaifMfMaiaiaddrdradeWgocVcVgpgqgrcNacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacacacaQaQaQgsaQaQfJaiaiddaQeWaiaifMaiaicNgtaigucVgvfMfNfLcNcNacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacacacaQddaiaigwaQgxgygygygzgzgzgzgzgzgygAgAgAgAgAgBcNcNcNacacacacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
