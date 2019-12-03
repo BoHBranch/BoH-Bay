@@ -13,6 +13,7 @@
 	#include "torch_presets.dm"
 	#include "torch_procs.dm"
 	#include "torch_ranks.dm"
+	#include "torch_ranks_boh.dm"
 	#include "torch_security_state.dm"
 	#include "torch_setup.dm"
 	#include "torch_shuttles.dm"
@@ -70,6 +71,7 @@
 	#include "items/clothing/terran-head.dm"
 	#include "items/clothing/terran-suit.dm"
 	#include "items/clothing/terran-under.dm"
+	#include "items/clothing/boh_accessory.dm"
 
 	#include "items/weapon/storage/wallets.dm"
 
@@ -85,6 +87,7 @@
 	#include "job/security_jobs.dm"
 	#include "job/service_jobs.dm"
 	#include "job/supply_jobs.dm"
+	#include "job/torch_jobs_boh.dm"
 
 	#include "job/outfits/torch_outfits.dm"
 	#include "job/outfits/command_outfits.dm"
@@ -123,6 +126,7 @@
 
 	#include "loadout/_defines.dm"
 	#include "loadout/loadout_accessories.dm"
+	#include "loadout/loadout_accessories_boh.dm"
 	#include "loadout/loadout_ec_skillbadges.dm"
 	#include "loadout/loadout_eyes.dm"
 	#include "loadout/loadout_gloves.dm"
@@ -132,11 +136,6 @@
 	#include "loadout/loadout_uniform.dm"
 	#include "loadout/loadout_xeno.dm"
 	#include "loadout/~defines.dm"
-
-// BoH Addons for easier search. Please, sort it by: Root - Datums - Game - Items - Job - Language - Machinery - Robot - Structures - Loadout.
-	#include "torch_ranks_boh.dm"
-	#include "job/security_jobs_boh.dm"
-// BoH Addons end here.
 
 	#include "torch1_deck5.dmm"
 	#include "torch2_deck4.dmm"

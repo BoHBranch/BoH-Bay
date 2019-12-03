@@ -104,7 +104,7 @@
 /datum/gear/tactical/pcarrier/misc
 	display_name = "miscellaneous plate carrier selection"
 	allowed_roles = ARMORED_ROLES
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
 
 /datum/gear/tactical/pcarrier/misc/New()
 	..()
