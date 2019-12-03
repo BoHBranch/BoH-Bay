@@ -509,3 +509,11 @@
 	description = "Ammonia Nitrate Fuel Oil, with aluminium powder, an explosive compound known for centuries. Safe to handle, can be set off with a small explosion."
 	color = "#ffe8e8"
 	boompower = 2
+
+/datum/reagent/nutriment/biomass
+	name = "Biomass"
+	id = "biomass"
+	description = "A slurry of compounds that contains the basic requirements for life."
+	taste_description = "salty meat"
+	reagent_state = LIQUID
+	color = "#DF9FBF"
