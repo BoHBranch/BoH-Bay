@@ -138,6 +138,23 @@
 	)
 /***/
 
+// Exploration
+/datum/job/explorer
+	allowed_branches = list(
+		/datum/mil_branch/expeditionary_corps,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/exploration/explorer/marine
+	)
+
+	allowed_ranks = list(
+		/datum/mil_rank/ec/e3,
+		/datum/mil_rank/ec/e5,
+		/datum/mil_rank/marine_corps/e3,
+		/datum/mil_rank/marine_corps/e4,
+		/datum/mil_rank/marine_corps/e5,
+		/datum/mil_rank/marine_corps/e6
+	)
+
+
 // Medical
 /datum/job/senior_doctor
 	allowed_branches = list(

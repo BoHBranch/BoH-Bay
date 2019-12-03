@@ -31,6 +31,12 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 /***/
 
+// Exploration
+/decl/hierarchy/outfit/job/torch/crew/exploration/explorer/marine
+	name = OUTFIT_JOB_NAME("Explorer - Marine Corps")
+	uniform = /obj/item/clothing/under/solgov/utility/army/exploration
+	shoes = /obj/item/clothing/shoes/dutyboots
+
 // Medical
 /decl/hierarchy/outfit/job/torch/crew/medical/senior/marine
 	name = OUTFIT_JOB_NAME("Physician - Marine Corps")
