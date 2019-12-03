@@ -100,6 +100,7 @@
 	#include "job/outfits/security_outfits.dm"
 	#include "job/outfits/service_outfits.dm"
 	#include "job/outfits/supply_outfits.dm"
+	#include "job/outfits/boh_outfits.dm"
 	#include "job/outfits/unused_outfits.dm"
 
 	#include "language/human/euro.dm"
