@@ -143,6 +143,7 @@ var/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 			FACTION_DAIS,
 			FACTION_EXPEDITIONARY,
 			FACTION_FLEET,
+			FACTION_MARINES,
 			FACTION_PCRC,
 			FACTION_OTHER
 		),
@@ -374,7 +375,7 @@ var/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 
 /datum/map/proc/show_titlescreen(client/C)
 	winset(C, "lobbybrowser", "is-disabled=false;is-visible=true")
-	
+
 	show_browser(C, current_lobby_screen, "file=titlescreen.png;display=0")
 	show_browser(C, file('html/lobby_titlescreen.html'), "window=lobbybrowser")
 

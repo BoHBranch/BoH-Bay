@@ -190,3 +190,7 @@
 	key ="hiss_"
 	emote_message_3p_target = "USER hisses softly at TARGET."
 	emote_message_3p = "USER hisses softly."
+
+/decl/emote/audible/oorah
+	key = "oorah"
+	emote_message_3p= "USER oorahs!"

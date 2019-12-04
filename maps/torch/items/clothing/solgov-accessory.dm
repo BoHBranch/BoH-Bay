@@ -732,11 +732,11 @@ ranks - fleet
 	desc = "Insignia denoting the rank of Fleet Admiral."
 
 /**************
-ranks - marines
+ranks - army
 **************/
 /obj/item/clothing/accessory/solgov/rank/army
 	name = "army ranks"
-	desc = "Insignia denoting marine rank of some kind. These appear blank."
+	desc = "Insignia denoting army rank of some kind. These appear blank."
 	icon_state = "armyrank_enlisted"
 	on_rolled = list("down" = "none")
 
