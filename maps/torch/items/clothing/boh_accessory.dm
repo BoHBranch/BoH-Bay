@@ -45,16 +45,12 @@
 	desc = "Insignia denoting the rank of First Sergeant."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9
-	name = "ranks (E-9 sergeant major)"
-	desc = "Insignia denoting the rank of Sergeant Major."
-
-/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt1
 	name = "ranks (E-9 master gunnery sergeant sergeant)"
 	desc = "Insignia denoting the rank of Master Gunnery Sergeant."
 
-/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt2
-	name = "ranks (E-9 sergeant major of the Marine Corps)"
-	desc = "Insignia denoting the rank of Sergeant Major of the Marine Corps."
+/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt
+	name = "ranks (E-9 sergeant major)"
+	desc = "Insignia denoting the rank of Sergeant Major."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer
 	name = "ranks (O-1 second lieutenant)"
@@ -70,8 +66,8 @@
 	desc = "Insignia denoting the rank of Captain."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o3_alt
-	name = "ranks (O-3 captain of the Marine Corps)"
-	desc = "Insignia denoting the rank of Captain of the Marine Corps."
+	name = "ranks (O-3 Marine captain)"
+	desc = "Insignia denoting the rank of Marine Captain."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o4
 	name = "ranks (O-4 major)"
@@ -96,12 +92,8 @@
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o9
 	name = "ranks (O-9 lieutenant general)"
-	desc = "Insignia denoting the rank of lieutenant general."
+	desc = "Insignia denoting the rank of Lieutenant General."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o10
 	name = "ranks (O-10 general)"
 	desc = "Insignia denoting the rank of General."
-
-/obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o10_alt
-	name = "ranks (O-10 general of the Marine Corps)"
-	desc = "Insignia denoting the rank of General of the Marine Corps."

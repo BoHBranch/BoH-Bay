@@ -1,6 +1,10 @@
 // Modular additions, for now.
 // Command
-// XO uses service-officer of unused_outfits.dm
+/decl/hierarchy/outfit/job/torch/crew/command/XO/marine
+	name = OUTFIT_JOB_NAME("Executive Officer - Marine Corps")
+	uniform = /obj/item/clothing/under/solgov/utility/army/command
+	shoes = /obj/item/clothing/shoes/dutyboots
+
 /decl/hierarchy/outfit/job/torch/crew/command/cmo/marine
 	name = OUTFIT_JOB_NAME("Chief Medical Officer - Marine Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/army/medical
@@ -16,7 +20,10 @@
 	uniform = /obj/item/clothing/under/solgov/utility/army/security
 	shoes = /obj/item/clothing/shoes/dutyboots
 
-// Bridge Officer uses service of unused_outfits.dm
+/decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/marine
+	name = OUTFIT_JOB_NAME("Bridge Officer - Marine Corps")
+	uniform = /obj/item/clothing/under/solgov/utility/army/command
+	shoes = /obj/item/clothing/shoes/dutyboots
 /***/
 
 // Engineering
@@ -36,6 +43,7 @@
 	name = OUTFIT_JOB_NAME("Explorer - Marine Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/army/exploration
 	shoes = /obj/item/clothing/shoes/dutyboots
+/***/
 
 // Medical
 /decl/hierarchy/outfit/job/torch/crew/medical/senior/marine
