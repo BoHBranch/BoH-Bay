@@ -2,6 +2,7 @@
 
 #include "voxship_areas.dm"
 #include "voxship_jobs.dm"
+#include "voxship_jobs_boh.dm"
 
 /datum/map_template/ruin/away_site/voxship
 	name = "Vox Base"
@@ -71,9 +72,10 @@
 	descriptor = "Shoal forward base"
 	map = "Vox Base"
 	crew_jobs = list(
-		/datum/job/submap/voxship_vox
+		/datum/job/submap/voxship_vox,
+		/datum/job/submap/voxship_arm
 	)
-	whitelisted_species = list(SPECIES_VOX)
+	whitelisted_species = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
 	blacklisted_species = null
 	call_webhook = WEBHOOK_SUBMAP_LOADED_VOX
 
