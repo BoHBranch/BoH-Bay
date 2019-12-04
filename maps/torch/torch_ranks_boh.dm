@@ -34,7 +34,7 @@
 	)
 
 /datum/mil_branch/marine_corps
-	name = "Marine Corps"
+	name = "Solar Marine Corps"
 	name_short = "SMC"
 	email_domain = "oorah.mil"
 
@@ -50,8 +50,7 @@
 		/datum/mil_rank/marine_corps/e8,
 		/datum/mil_rank/marine_corps/e8_alt,
 		/datum/mil_rank/marine_corps/e9,
-		/datum/mil_rank/marine_corps/e9_alt1,
-		/datum/mil_rank/marine_corps/e9_alt2,
+		/datum/mil_rank/marine_corps/e9_alt,
 		/datum/mil_rank/marine_corps/o1,
 		/datum/mil_rank/marine_corps/o2,
 		/datum/mil_rank/marine_corps/o3,
@@ -62,8 +61,7 @@
 		/datum/mil_rank/marine_corps/o7,
 		/datum/mil_rank/marine_corps/o8,
 		/datum/mil_rank/marine_corps/o9,
-		/datum/mil_rank/marine_corps/o10,
-		/datum/mil_rank/marine_corps/o10_alt
+		/datum/mil_rank/marine_corps/o10
 	)
 
 	spawn_rank_types = list(
@@ -75,9 +73,7 @@
 		/datum/mil_rank/marine_corps/e6,
 		/datum/mil_rank/marine_corps/e7,
 		/datum/mil_rank/marine_corps/e8,
-		/datum/mil_rank/marine_corps/e8_alt,
 		/datum/mil_rank/marine_corps/e9,
-		/datum/mil_rank/marine_corps/e9_alt1,
 		/datum/mil_rank/marine_corps/o1,
 		/datum/mil_rank/marine_corps/o2,
 		/datum/mil_rank/marine_corps/o3_alt,
@@ -156,16 +152,10 @@
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9)
 	sort_order = 9
 
-/datum/mil_rank/marine_corps/e9_alt1
+/datum/mil_rank/marine_corps/e9_alt
 	name = "Sergeant Major"
 	name_short = "SgtMaj"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt1)
-	sort_order = 9
-
-/datum/mil_rank/marine_corps/e9_alt2
-	name = "Sergeant Major of the Marine Corps"
-	name_short = "SgtMajMC"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt2)
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt)
 	sort_order = 9
 
 /datum/mil_rank/marine_corps/o1
@@ -188,8 +178,8 @@
 
 // Specially, to avoid two "Capt" on-board.
 /datum/mil_rank/marine_corps/o3_alt
-	name = "Captain of the Marine Corps"
-	name_short = "CPTMC"
+	name = "Marine Captain"
+	name_short = "M-CPT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o3_alt)
 	sort_order = 13
 
@@ -233,10 +223,4 @@
 	name = "General"
 	name_short = "Gen"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o10)
-	sort_order = 20
-
-/datum/mil_rank/marine_corps/o10_alt
-	name = "General of the Marine Corps"
-	name_short = "GenMC"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o10_alt)
 	sort_order = 20
