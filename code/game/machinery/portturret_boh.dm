@@ -11,7 +11,7 @@
 	controllock = 1
 	icon_state = "gun_turret" // for mapping. No difference in game.
 
-	installation = /obj/item/weapon/gun/energy/gun
+	installation = /obj/item/weapon/gun/energy/pulse_rifle/carbine/exteriorturret
 
 	check_arrest = 1
 	check_records = 1
@@ -23,7 +23,7 @@
 	lethal = 1
 
 /////////
-// Firearm
+// Firearms
 /////////
 
 /obj/item/weapon/gun/projectile/shotgun/pump/combat/exteriorturret
@@ -33,6 +33,16 @@
 	item_state = "cshotgun"
 	wielded_item_state = "cshotgun-wielded"
 	max_shells = 3 // 4, given the one in the chamber. Lower count due to being 'integrated'.
+
+// - -
+
+/obj/item/weapon/gun/energy/pulse_rifle/carbine/exteriorturret
+	name = "energy carbine"
+	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts."
+	force = 2
+	projectile_type = /obj/item/projectile/beam/sniper/turret
+	max_shots = 12
+	w_class = ITEM_SIZE_LARGE
 
 /////////
 // Projectiles
@@ -46,6 +56,14 @@
 	range_step = 6
 	spread_step = 2
 
+// - -
+
+/obj/item/projectile/beam/sniper/turret
+	damage = 15
+	armor_penetration = 10
+//	agony = 25
+	damage_type = BURN
+
 /////////
 // Area
 /////////
@@ -57,3 +75,4 @@
 	requires_power = 1
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_ION_SHIELDED
+
