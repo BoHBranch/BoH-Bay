@@ -11,14 +11,14 @@
 	controllock = 1
 	icon_state = "gun_turret" // for mapping. No difference in game.
 
-	installation = /obj/item/weapon/gun/energy/gun/nuclear
+	installation = /obj/item/weapon/gun/energy/gun
 
 	check_arrest = 1
 	check_records = 1
 	check_weapons = 0
-	check_access = 1
+	check_access = 0
 	check_anomalies = 1
-	check_synth	 = 0
+	check_synth = 0
 	ailock = 1
 	lethal = 1
 
