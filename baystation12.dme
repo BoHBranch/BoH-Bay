@@ -1655,6 +1655,7 @@
 #include "code\modules\culture_descriptor\faction\factions_ascent.dm"
 #include "code\modules\culture_descriptor\faction\factions_hidden.dm"
 #include "code\modules\culture_descriptor\faction\factions_human.dm"
+#include "code\modules\culture_descriptor\faction\factions_human_boh.dm"
 #include "code\modules\culture_descriptor\faction\factions_ipc.dm"
 #include "code\modules\culture_descriptor\faction\factions_sergal.dm"
 #include "code\modules\culture_descriptor\faction\factions_skrell.dm"
