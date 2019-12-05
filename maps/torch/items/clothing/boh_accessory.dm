@@ -1,11 +1,19 @@
-// ranks - proper marines
+// marine patch
+/obj/item/clothing/accessory/solgov/smc_patch
+	name = "\improper Marine Corps patch"
+	desc = "A robust shoulder patch, carrying the symbol of the Solar Marine Corps, or SMC for short."
+	icon = 'maps/torch/icons/obj/obj_accessories_boh.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi')
+	icon_state = "smcpatch"
+	on_rolled = list("down" = "none")
+	slot = ACCESSORY_SLOT_INSIGNIA
+	check_codex_val = FACTION_MARINES
 
+// ranks - proper marines
 /obj/item/clothing/accessory/solgov/rank/marine_corps
 	name = "marine ranks"
 	desc = "Insignia denoting marine rank of some kind. These appear blank."
-/*
 	icon_state = "armyrank_enlisted"
-*/
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted
 	name = "ranks (E-1 private)"

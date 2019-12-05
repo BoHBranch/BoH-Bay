@@ -98,7 +98,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/service/chaplain/marine
 	name = OUTFIT_JOB_NAME("Chaplain - Marine Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/army
+	uniform = /obj/item/clothing/under/solgov/utility/army/service
 	shoes = /obj/item/clothing/shoes/dutyboots
 /***/
 
