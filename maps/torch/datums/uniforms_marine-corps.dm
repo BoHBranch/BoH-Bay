@@ -43,7 +43,7 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/head/beret/solgov)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov)
 
 /decl/hierarchy/mil_uniform/marine_corps/com/seniorofficer
 	name = "Marine Corps senior command"
@@ -87,7 +87,7 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/head/beret/solgov)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov)
 
 /decl/hierarchy/mil_uniform/marine_corps/eng/officer/com //Can only be officers
 	name = "Marine Corps engineering command"
@@ -135,7 +135,7 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/head/beret/solgov)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov)
 
 /decl/hierarchy/mil_uniform/marine_corps/sec/officer/com //Can only be officers
 	name = "Marine Corps security command"
@@ -182,7 +182,7 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/head/beret/solgov)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov)
 
 /decl/hierarchy/mil_uniform/marine_corps/med/officer/com //Can only be officers
 	name = "Marine Corps medical command"
@@ -230,7 +230,7 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/head/beret/solgov)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov)
 
 /decl/hierarchy/mil_uniform/marine_corps/sup/seniorofficer
 	name = "Marine Corps supply senior command"
@@ -245,7 +245,7 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/head/beret/solgov)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov)
 
 /decl/hierarchy/mil_uniform/marine_corps/srv
 	name = "Marine Corps service"
@@ -282,7 +282,7 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/head/beret/solgov)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov)
 
 /decl/hierarchy/mil_uniform/marine_corps/exp
 	name = "Marine Corps exploration"
@@ -319,7 +319,7 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/head/beret/solgov)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov)
 
 /decl/hierarchy/mil_uniform/marine_corps/spt
 	name = "Marine Corps command support"
@@ -348,7 +348,7 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/head/beret/solgov)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov)
 
 /decl/hierarchy/mil_uniform/marine_corps/spt/seniorofficer
 	name = "Marine Corps senior command support"
@@ -366,4 +366,4 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/head/beret/solgov)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov)
