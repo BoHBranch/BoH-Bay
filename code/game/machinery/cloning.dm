@@ -220,16 +220,15 @@
 	if(isnull(occupant))
 
 		if(!istype(W, /obj/item/weapon/screwdriver))
+			playsound(src, W.usesound, 50, 1)
+			panel_open = !panel_open
+			to_chat(user, "<span class='notice'>You [panel_open ? "open" : "close"] the maintenance hatch of [src].</span>")
+			update_icon()
 			return
-		playsound(src, W.usesound, 50, 1)
-		panel_open = !panel_open
-		to_chat(user, "<span class='notice'>You [panel_open ? "open" : "close"] the maintenance hatch of [src].</span>")
-		update_icon()
-		return
 
 		if(!istype(W, /obj/item/weapon/storage/part_replacer))
 			display_parts(user)
-		return
+			return
 /*test
 		if(!component_parts)
 			return
@@ -257,7 +256,7 @@
 			to_chat(user, "<span class='notice'>Following parts detected in the machine:</span>")
 			for(var/var/obj/item/C in component_parts) //var/var/obj/item/C?
 				to_chat(user, "<span class='notice'>    [C.name]</span>")
-		return
+			return
 */
 
 	if(istype(W, /obj/item/weapon/card/id)||istype(W, /obj/item/modular_computer/pda))
