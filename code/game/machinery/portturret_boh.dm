@@ -25,15 +25,6 @@
 /////////
 // Firearms
 /////////
-
-/obj/item/weapon/gun/projectile/shotgun/pump/combat/exteriorturret
-	name = "integrated shotgun"
-	desc = "A Hephaestus Industries KS-40, though given an open feed tube and obviously not meant to be fired without some sort of larger mechanism."
-	icon_state = "cshotgun"
-	item_state = "cshotgun"
-	wielded_item_state = "cshotgun-wielded"
-	max_shells = 3 // 4, given the one in the chamber. Lower count due to being 'integrated'.
-
 // - -
 
 /obj/item/weapon/gun/energy/pulse_rifle/carbine/exteriorturret
@@ -47,16 +38,6 @@
 /////////
 // Projectiles
 /////////
-
-/obj/item/projectile/bullet/pellet/shotgun/exteriorturret
-	name = "shrapnel"
-	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
-	damage = 30
-	pellets = 24
-	range_step = 6
-	spread_step = 2
-
-// - -
 
 /obj/item/projectile/beam/sniper/turret
 	damage = 15
