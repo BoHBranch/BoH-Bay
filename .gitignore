@@ -48,4 +48,3 @@ lib/*.so
 # python
 *.pyc
 __pycache__
-code/game/machinery/cloning.dm
