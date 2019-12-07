@@ -220,11 +220,10 @@
 	if(isnull(occupant))
 
 		if(!istype(W, /obj/item/weapon/screwdriver))
-			return
-		playsound(src, W.usesound, 50, 1)
-		panel_open = !panel_open
-		to_chat(user, "<span class='notice'>You [panel_open ? "open" : "close"] the maintenance hatch of [src].</span>")
-		update_icon()
+			playsound(src, W.usesound, 50, 1)
+			panel_open = !panel_open
+			to_chat(user, "<span class='notice'>You [panel_open ? "open" : "close"] the maintenance hatch of [src].</span>")
+			update_icon()
 			return
 
 		if(!istype(W, /obj/item/weapon/storage/part_replacer))
