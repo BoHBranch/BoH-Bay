@@ -144,7 +144,7 @@
 	strength = STR_HIGH
 
 	speech_sounds = list('sound/voice/shriek1.ogg')
-	speech_chance = 25
+	speech_chance = 20
 
 	override_organ_types = list(BP_EYES = /obj/item/organ/internal/eyes/vox/armalis)
 
