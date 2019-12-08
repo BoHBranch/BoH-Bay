@@ -21,6 +21,13 @@
 	var/buffer_name
 	var/atom/buffer_object
 
+//VORE stuff
+	var/obj/machinery/telecomms/buffer // simple machine buffer for device linkage
+	var/obj/machinery/clonepod/connecting //same for cryopod linkage
+	var/obj/machinery/connectable	//Used to connect machinery.
+	var/weakref_wiring //Used to store weak references for integrated circuitry. This is now the Omnitool.
+//edvorestuff
+
 /obj/item/device/multitool/Destroy()
 	unregister_buffer(buffer_object)
 	return ..()

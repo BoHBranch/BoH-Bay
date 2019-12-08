@@ -9,13 +9,23 @@
 		/datum/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant)
 	)
 
-#define HUMAN_ONLY_JOBS /datum/job/captain, /datum/job/hop, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/representative, /datum/job/sea, /datum/job/pathfinder
+#define HUMAN_ONLY_JOBS /datum/job/captain, /datum/job/hop, /datum/job/representative, /datum/job/sea
 	species_to_job_blacklist = list(
-		/datum/species/unathi  = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/warden), //Other jobs unavailable via branch restrictions,
-		/datum/species/unathi/yeosa = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/warden),
+		/datum/species/unathi  = list(HUMAN_ONLY_JOBS), //Other jobs unavailable via branch restrictions,
+		/datum/species/unathi/yeosa = list(HUMAN_ONLY_JOBS),
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),
-		/datum/species/machine = list(HUMAN_ONLY_JOBS, /datum/job/liaison),
-		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/bodyguard, /datum/job/rd, /datum/job/liaison, /datum/job/warden),	//Other jobs unavailable via branch restrictions,
+		/datum/species/machine = list(HUMAN_ONLY_JOBS),
+		/datum/species/diona   = list(HUMAN_ONLY_JOBS),
+		/datum/species/sergal = list(HUMAN_ONLY_JOBS),
+		/datum/species/sergal/northern = list(HUMAN_ONLY_JOBS),
+		/datum/species/sergal/eastern = list(HUMAN_ONLY_JOBS),
+		/datum/species/akula = list(HUMAN_ONLY_JOBS),
+		/datum/species/humanathi= list(HUMAN_ONLY_JOBS),
+		/datum/species/tajaran= list(HUMAN_ONLY_JOBS),
+		/datum/species/vasilissan= list(HUMAN_ONLY_JOBS),
+		/datum/species/vulpkanin= list(HUMAN_ONLY_JOBS),
+		/datum/species/customhuman= list(HUMAN_ONLY_JOBS),
+		//datum/species/tesh= list(HUMAN_ONLY_JOBS),
 	)
 #undef HUMAN_ONLY_JOBS
 
