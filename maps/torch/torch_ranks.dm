@@ -39,7 +39,7 @@
 
 	species_to_branch_whitelist = list(
 		/datum/species/diona      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/nabber     = list(/datum/mil_branch/civilian),
+		/datum/species/nabber     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/skrell     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/skrell_fleet),
 		/datum/species/unathi     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/adherent   = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
@@ -53,7 +53,7 @@
 		/datum/species/vasilissan      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/vulpkanin      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/customhuman      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		//datum/species/tesh/  list(/datum/mil_branch/civilian),
+		//datum/species/tesh/  list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/vox        = list(/datum/mil_branch/alien),
 		/datum/species/vox/armalis        = list(/datum/mil_branch/alien)
 	)

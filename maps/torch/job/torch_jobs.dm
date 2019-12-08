@@ -25,6 +25,7 @@
 		/datum/species/vasilissan= list(HUMAN_ONLY_JOBS),
 		/datum/species/vulpkanin= list(HUMAN_ONLY_JOBS),
 		/datum/species/customhuman= list(HUMAN_ONLY_JOBS),
+		//datum/species/tesh= list(HUMAN_ONLY_JOBS),
 	)
 #undef HUMAN_ONLY_JOBS
 
