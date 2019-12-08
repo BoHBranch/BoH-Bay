@@ -5,11 +5,11 @@
 
 /datum/map/torch/get_map_info()
 	. = list()
-	. +=  "You're aboard the <b>[station_name]</b>, a NanoTrasen vessel, specifically a Surveyor Corps Corvette. Its primary mission is looking for undiscovered sapient alien species, and general exploration along the way."
-	. +=  "This specific area of space is uncharted, away from SCG territory. You might encounter remote outposts or drifting hulks, but no recognized entity holds claim in this sector."
+	. +=  "Congratulations on your employment aboard the NTSS (NanoTrasen Solarian Ship) Dagon."
+	. +=  "It is an Epsilon Class Vessel outfitted with state of the art medical, research, and security facilities for all your needs!"
 	. +=  ""
-	. +=  "The vessel is primarily staffed with a mix of NanoTrasen's private Security Fleet personnel and hired contractors. There may be those that don't work for NanoTrasen aboard, such as Marines garrisoned within the vessel on SCG business."
-	. +=  "The Dagon itself, however, was built in coordination with the Sol Central Government. As such, it may feature insignias and materials relevant to SCG operations, even this deep in space."
+	. +=  "It is a re-commissioned science vessel revamped to be closer to a military vessel."
+	. += "Capable of responding both to deal with most minor insurrectionist threats in a rapid fashion as well as explore any ‘forgotten’ planets in these sectors."
 	return jointext(., "<br>")
 
 /datum/map/torch/send_welcome()
