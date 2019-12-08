@@ -56,22 +56,6 @@
 /obj/machinery/clonepod/proc/growclone(var/datum/dna2/record/R)
 	if(mess || attempting)
 		return 0
-	var/datum/mind/clonemind = locate(R.mind)
-
-	if(!istype(clonemind, /datum/mind))	//not a mind
-		return 0
-	if(clonemind.current && clonemind.current.stat != DEAD)	//mind is associated with a non-dead body
-		return 0
-	if(clonemind.active)	//somebody is using that mind
-		if(ckey(clonemind.key) != R.ckey)
-			return 0
-	else
-		for(var/mob/observer/ghost/G in GLOB.player_list)
-			if(G.ckey == R.ckey)
-				if(G.can_reenter_corpse)
-					break
-				else
-					return 0
 /*no modifiers in bay yet
 	for(var/modifier_type in R.genetic_modifiers)	//Can't be cloned, even if they had a previous scan
 		if(istype(modifier_type, /datum/modifier/no_clone))
@@ -97,20 +81,11 @@
 	H.descriptors = R.body_descriptors
 
 	//Get the clone body ready
-	H.adjustCloneLoss(150) // New damage var so you can't eject a clone early then stab them to abuse the current damage system --NeoFite
+	H.adjustCloneLoss(H.maxHealth/2) // We want to put them exactly at the crit level, so we deal this much clone damage
 	H.Paralyse(4)
 
 	//Here let's calculate their health so the pod doesn't immediately eject them!!!
 	H.updatehealth()
-
-	clonemind.transfer_to(H)
-	H.ckey = R.ckey
-	to_chat(H, "<span class='warning'><b>Consciousness slowly creeps over you as your body regenerates.</b><br><b><font size='3'>Your recent memories are fuzzy, and it's hard to remember anything from today...</font></b></span><br><span class='notice'><i>So this is what cloning feels like?</i></span>")
-
-	// -- Mode/mind specific stuff goes here
-	callHook("clone", list(H))
-	update_antag_icons(H.mind)
-	// -- End mode specific stuff
 
 	if(!R.dna)
 		H.dna = new /datum/dna()
@@ -154,6 +129,16 @@
 	attempting = 0
 	return 1
 
+/obj/machinery/clonepod/proc/GetCloneReadiness()
+	if(!occupant)
+		return 1
+
+
+	if(occupant.getCloneLoss() < 45 ) // still going to need some finishing
+		return 1
+
+	else
+		return 0
 //Grow clones to maturity then kick them out.  FREELOADERS
 /obj/machinery/clonepod/Process()
 	if(stat & NOPOWER) //Autoeject if power is lost
@@ -163,39 +148,32 @@
 		return
 
 	if((occupant) && (occupant.loc == src))
-		if((occupant.stat == DEAD) || (occupant.suiciding) || !occupant.key)  //Autoeject corpses and suiciding dudes.
-			locked = 0
-			go_out()
-			connected_message("Clone Rejected: Deceased.")
-			return
 
-		else if(occupant.health < heal_level && occupant.getCloneLoss() > 0)
-			occupant.Paralyse(4)
-
-			 //Slowly get that clone healed and finished.
-			occupant.adjustCloneLoss(-2 * heal_rate)
-
-			//Premature clones may have brain damage.
-			occupant.adjustBrainLoss(-(CEILING(0.5*heal_rate, 1)))
-
-			//So clones don't die of oxyloss in a running pod.
-			if(occupant.reagents.get_reagent_amount("inaprovaline") < 30)
-				occupant.reagents.add_reagent("inaprovaline", 60)
-			occupant.Sleeping(30)
-			//Also heal some oxyloss ourselves because inaprovaline is so bad at preventing it!!
-			occupant.adjustOxyLoss(-4)
-
-			use_power_oneoff(7500) //This might need tweaking.
-			return
-
-		else if((occupant.health >= heal_level || occupant.health == occupant.getMaxHealth()) && (!eject_wait))
+		if(GetCloneReadiness() && !eject_wait)
 			playsound(src.loc, 'sound/machines/ding.ogg', 50, 1)
-			audible_message("\The [src] signals that the cloning process is complete.")
+			src.audible_message("\The [src] signals that the cloning process is complete.")
 			connected_message("Cloning Process Complete.")
 			locked = 0
 			go_out()
 			return
 
+		occupant.Paralyse(4)
+
+		//Slowly get that clone healed and finished.
+		occupant.adjustCloneLoss(-2 * heal_rate)
+
+		//Premature clones may have brain damage.
+		occupant.adjustBrainLoss(-(ceil(0.5*heal_rate)))
+
+		//So clones don't die of oxyloss in a running pod.
+		if(occupant.reagents.get_reagent_amount(/datum/reagent/inaprovaline) < 30)
+			occupant.reagents.add_reagent(/datum/reagent/inaprovaline, 60)
+		occupant.Sleeping(30)
+		//Also heal some oxyloss ourselves because inaprovaline is so bad at preventing it!!
+		occupant.adjustOxyLoss(-4)
+
+		use_power_oneoff(7500) //This might need tweaking.
+		return
 	else if((!occupant) || (occupant.loc != src))
 		occupant = null
 		if(locked)
