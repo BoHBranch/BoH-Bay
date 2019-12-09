@@ -1188,7 +1188,8 @@
 	// Rebuild the HUD and visual elements.
 	if(client)
 		Login()
-
+	if(config && config.use_cortical_stacks && client && client.prefs.has_cortical_stack)
+		create_stack()
 	full_prosthetic = null
 
 	var/update_lang

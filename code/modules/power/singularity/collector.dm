@@ -22,11 +22,7 @@ var/global/list/rad_collectors = list()
 	var/drainratio = 1
 
 	var/last_rads
-	var/max_rads = 250 // rad collector will reach max power output at this value, and break at twice this value
-	var/max_power = 5e5
-	var/pulse_coeff = 20
-	var/end_time = 0
-	var/alert_delay = 10 SECONDS
+	var/max_rads = 2000 // rad collector will reach max power output at this value, and break at twice this value // nah.
 
 /obj/machinery/power/rad_collector/New()
 	..()
@@ -45,6 +41,14 @@ var/global/list/rad_collectors = list()
 		var/rads = SSradiation.get_rads_at_turf(get_turf(src))
 		if(rads)
 			receive_pulse(rads * 5) //Maths is hard
+
+	if(P)
+		if(P.air_contents.gas["phoron"] == 0)
+			investigate_log("<font color='red'>out of fuel</font>.","singulo")
+			eject()
+		else
+			P.air_contents.adjust_gas("phoron", -0.001*drainratio)
+	return
 
 	if(P)
 		if(P.air_contents.gas["phoron"] == 0)
@@ -170,7 +174,7 @@ var/global/list/rad_collectors = list()
 /obj/machinery/power/rad_collector/proc/receive_pulse(var/pulse_strength)
 	if(P && active)
 		var/power_produced = 0
-		power_produced = P.air_contents.gas["phoron"]*pulse_strength*20
+		power_produced = P.air_contents.gas[GAS_PHORON]*pulse_strength*20
 		add_avail(power_produced)
 		last_power_new = power_produced
 		return
