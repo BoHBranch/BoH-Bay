@@ -128,7 +128,7 @@
 		data["records"] = null
 
 	if(active_record)
-		data["activeRecord"] = list("ckey" = active_record.ckey, "real_name" = active_record.dna.real_name, \
+		data["activeRecord"] = list("name" = active_record.name, "real_name" = active_record.dna.real_name, \
 									"ui" = active_record.dna.uni_identity, "se" = active_record.dna.struc_enzymes)
 	else
 		data["activeRecord"] = null
@@ -183,11 +183,7 @@
 	else if (href_list["view_rec"])
 		active_record = find_record(href_list["view_rec"])
 		if(istype(active_record,/datum/dna2/record))
-			if ((isnull(active_record.ckey)))
-				qdel(active_record)
-				temp = "ERROR: Record Corrupt"
-			else
-				menu = 3
+			menu = 3
 		else
 			active_record = null
 			temp = "Record missing."
@@ -262,18 +258,7 @@
 					records.Remove(C)
 					qdel(C)
 					menu = 1
-				else
 
-					var/mob/selected = find_dead_player("[C.ckey]")
-					selected << 'sound/machines/chime.ogg'	//probably not the best sound but I think it's reasonable
-					var/answer = alert(selected,"Do you want to return to life?","Cloning","Yes","No")
-					if(answer != "No" && pod.growclone(C))
-						temp = "Initiating cloning cycle..."
-						records.Remove(C)
-						qdel(C)
-						menu = 1
-					else
-						temp = "Initiating cloning cycle...<br>Error: Post-initialisation failed. Cloning cycle aborted."
 
 		else
 			temp = "Error: Data corruption."
@@ -308,14 +293,11 @@
 	if (subject.suiciding)
 		scantemp = "Error: Subject's brain is not responding to scanning stimuli."
 		return
-	if ((!subject.ckey) || (!subject.client))
-		scantemp = "Error: Mental interface failure."
-		return
 	if (MUTATION_NOCLONE in subject.mutations)
-		scantemp = "Error: Mental interface failure."
+		scantemp = "Error: Genetic sequence too unstable for cloning.."
 		return
 	if (subject.species && subject.species.species_flags & SPECIES_FLAG_NO_SCAN && !brain_skip)
-		scantemp = "Error: Mental interface failure."
+		scantemp = "Error: Unspecific Mental interface failure."
 		return
 /*no modifiers in bay yet
 	for(var/modifier_type in subject.modifiers)	//Can't be cloned, even if they had a previous scan
@@ -323,7 +305,7 @@
 			scantemp = "Error: Mental interface failure."
 			return
 */
-	if (!isnull(find_record(subject.ckey)))
+	if (!isnull(find_record(subject.name)))
 		scantemp = "Subject already in database."
 		return
 
@@ -331,7 +313,6 @@
 
 	var/datum/dna2/record/R = new /datum/dna2/record()
 	R.dna = subject.dna
-	R.ckey = subject.ckey
 	R.id = copytext(md5(subject.real_name), 2, 6)
 	R.name = R.dna.real_name
 	R.types = DNA2_BUF_UI|DNA2_BUF_UE|DNA2_BUF_SE
@@ -367,7 +348,7 @@
 /obj/machinery/computer/cloning/proc/find_record(var/find_key)
 	var/selected_record = null
 	for(var/datum/dna2/record/R in records)
-		if (R.ckey == find_key)
+		if (R.name == find_key)
 			selected_record = R
 			break
 	return selected_record
