@@ -37,37 +37,22 @@ var/global/list/rad_collectors = list()
 	. = ..()
 
 /obj/machinery/power/rad_collector/Process()
-	if((stat & BROKEN) || melted)
-		return
-	var/turf/T = get_turf(src)
-	if(T)
-		var/datum/gas_mixture/our_turfs_air = T.return_air()
-		if(our_turfs_air.temperature > max_safe_temp)
-			health -= ((our_turfs_air.temperature - max_safe_temp) / 10)
-			if(health <= 0)
-				collector_break()
-
 	//so that we don't zero out the meter if the SM is processed first.
 	last_power = last_power_new
 	last_power_new = 0
-	last_rads = SSradiation.get_rads_at_turf(get_turf(src))
+
 	if(P && active)
-		if(last_rads > max_rads*2)
-			collector_break()
-		if(last_rads)
-			if(last_rads > max_rads)
-				if(world.time > end_time)
-					end_time = world.time + alert_delay
-					visible_message("\icon[src] \the [src] beeps loudly as the radiation reaches dangerous levels, indicating imminent damage.")
-					playsound(src, 'sound/effects/screech.ogg', 100, 1, 1)
-			receive_pulse(12.5*(last_rads/max_rads)/(0.3+(last_rads/max_rads)))
+		var/rads = SSradiation.get_rads_at_turf(get_turf(src))
+		if(rads)
+			receive_pulse(rads * 5) //Maths is hard
 
 	if(P)
-		if(P.air_contents.gas[GAS_PHORON] == 0)
+		if(P.air_contents.gas["phoron"] == 0)
 			investigate_log("<font color='red'>out of fuel</font>.","singulo")
 			eject()
 		else
-			P.air_adjust_gas(GAS_PHORON, -0.01*drainratio*min(last_rads,max_rads)/max_rads) //fuel cost increases linearly with incoming radiation
+			P.air_contents.adjust_gas("phoron", -0.001*drainratio)
+	return
 
 /obj/machinery/power/rad_collector/CanUseTopic(mob/user)
 	if(!anchored)
@@ -185,10 +170,12 @@ var/global/list/rad_collectors = list()
 /obj/machinery/power/rad_collector/proc/receive_pulse(var/pulse_strength)
 	if(P && active)
 		var/power_produced = 0
-		power_produced = min(100*P.air_contents.gas[GAS_PHORON]*pulse_strength*pulse_coeff,max_power)
+		power_produced = P.air_contents.gas["phoron"]*pulse_strength*20
 		add_avail(power_produced)
 		last_power_new = power_produced
 		return
+	return
+
 	return
 
 
