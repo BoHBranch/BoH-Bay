@@ -499,9 +499,9 @@
 		// Set defer to 1 if you add more crap here so it only recalculates struc_enzymes once. - N3X
 		new_character.dna.SetSEState(GLOB.GLASSESBLOCK,1,0)
 		new_character.disabilities |= NEARSIGHTED
+
 	if(config && config.use_cortical_stacks && client && client.prefs.has_cortical_stack /*&& new_character.should_have_organ(BP_BRAIN)*/)
 		new_character.create_stack()
-
 
 	// Do the initial caching of the player's body icons.
 	new_character.force_update_limbs()
@@ -509,6 +509,7 @@
 	new_character.regenerate_icons()
 
 	new_character.key = key		//Manually transfer the key to log them in
+
 	return new_character
 
 /mob/new_player/proc/ViewManifest()
