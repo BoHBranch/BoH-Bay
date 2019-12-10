@@ -60,6 +60,8 @@ GLOBAL_LIST_EMPTY(skills)
 /decl/hierarchy/skill/security
 	name = "Security"
 	ID	 = "security"
+	difficulty = SKILL_HARD
+	default_max = SKILL_EXPERT
 
 /decl/hierarchy/skill/engineering
 	name = "Engineering"
