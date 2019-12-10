@@ -71,3 +71,27 @@
 	desc = "You have less muscle mass than normal, giving you inferior strength."
 	cost = -1
 	var_changes = list("strength" = STR_LOW)
+
+/////////////////////
+// BoH Materials
+/////////////////////
+
+/* // Disabled for the moment. No functionality, considering the variables are missing to my knowledge. - C
+/datum/trait/toxification_junky
+	name = "Recovering Addict"
+	desc = "Your body isn't quite used to being clean as of yet, and relapse very well might kill you. Be sure to notify Doctors not to overdose you!"
+	cost = -3
+	var_changes = list("chemOD_mod" = 5.0)
+
+/datum/trait/hemophilia
+	name = "Hemophilia"
+	desc = "Your body doesn't quite stop bleeding once it starts. You need immediate treatment for anything, even minor wounds, or it might turn out real bad for you."
+	cost = -4
+	var_changes = list("bloodloss_rate" = 2.0, "blood_volume" = 480)
+*/
+
+/datum/trait/stick_human
+	name = "Incredibly Frail"
+	desc = "Your bones, skin and general state of mind is rather fragile. Try not to get smacked, or you may have to visit the ER."
+	cost = -4
+	var_changes = list("brute_mod" = 5.25)
