@@ -8,6 +8,7 @@
 	cost = 4
 	var_changes = list("slowdown" = -0.5)
 
+/* //Fairly certain this does nothing other than /lower/ your health, given that standard is 200. Will probably raise it later, but for now it's whatever. - C
 /datum/trait/endurance_high
 	name = "Tough"
 	desc = "Your body is more resilliant to damage than the average joe."
@@ -17,6 +18,7 @@
 	apply(var/datum/species/S,var/mob/living/carbon/human/H)
 		..(S,H)
 		H.setMaxHealth(S.total_health)
+*/
 
 /datum/trait/darksight
 	name = "Tapeta Lucida"
@@ -80,5 +82,32 @@
 /datum/trait/mussel
 	name = "Muscular Hypertrophy"
 	desc = "You have higher muscle mass than normal, giving you greater strength."
-	cost = 1
+	cost = 4
 	var_changes = list("strength" = STR_HIGH)
+
+/////////////////////
+// BoH Materials
+/////////////////////
+
+/* // Disabled for the moment. No functionality, considering the variables are missing to my knowledge. - C
+/datum/trait/toxification_junky_posi
+	name = "Addict"
+	desc = "Your body had adjusted to frequent, if not habitual use of substances. When you overdose, it affects you much less than it would someone not quite as 'experienced' as you."
+	cost = 2
+	var_changes = list("chemOD_mod" = -2.0)
+
+
+/datum/trait/hypercoag_posi
+	name = "Inhuman Coagulation"
+	desc = "You're either non-Human, or suffer some lesser form of hypercoagulation. When cut, or otherwise bleeding, your body is rather quick to react. You bleed out much slower than the average individual."
+	cost = 3
+	var_changes = list("bloodloss_rate" = 0.2)
+*/
+
+/datum/trait/commune
+	name = "Telepathy"
+	desc = "Quite simply, you've the ability to project thoughts into the minds of others. How you've come across this within the frontier of space will probably forever be a mystery. Especially so, given you're probably not a Psyker."
+	cost = 8
+/datum/trait/commune/apply(var/datum/species/S,var/mob/living/carbon/human/H)
+	..(S,H)
+	H.verbs |= /mob/living/carbon/human/proc/commune
