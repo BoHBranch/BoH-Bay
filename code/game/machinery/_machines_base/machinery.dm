@@ -256,9 +256,6 @@ Class Procs:
 /obj/machinery/CouldNotUseTopic(var/mob/user)
 	user.unset_machine()
 
-/obj/machinery/blob_act()
-	qdel(src)
-
 /obj/machinery/Topic(href, href_list, datum/topic_state/state)
 	if(href_list["mechanics_text"] && construct_state) // This is an OOC examine thing handled via Topic; specifically bypass all checks, but do nothing other than message to chat.
 		var/list/info = construct_state.mechanics_info()
@@ -286,7 +283,7 @@ Class Procs:
 /obj/machinery/attack_ghost(mob/user)
 	interface_interact(user)
 
-// If you don't call parent in this proc, you must make all appropriate checks yourself.
+// If you don't call parent in this proc, you must make all appropriate checks yourself. 
 // If you do, you must respect the return value.
 /obj/machinery/attack_hand(mob/user)
 	if((. = ..())) // Buckling, climbers; unlikely to return true.

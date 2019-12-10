@@ -288,6 +288,3 @@
 
 /turf/simulated/wall/is_wall()
 	return TRUE
-
-/turf/simulated/blob_act()
-	ex_act(2)

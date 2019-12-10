@@ -137,8 +137,6 @@
 		return
 	if(forceLeft)
 		B.pulse(forceLeft - 1, dirs)
-	animate(src, color = "#FF0000", time=1)
-	animate(color = "#FFFFFF", time=4, easing=ELASTIC_EASING)
 
 /obj/effect/blob/proc/attack_living(var/mob/living/L)
 	if(!L)
@@ -223,7 +221,7 @@ the master core becomes more vulnereable to damage as it weakens,
 but it also becomes more aggressive, and channels more of its energy into regenerating rather than spreading
 regen() will cover update_icon() for this proc
 */
-/obj/effect/blob/core/proc/process_core_health()
+/obj/effect/blob/core/proc/process_core_health() 
 	switch(get_health_percent())
 		if(75 to INFINITY)
 			brute_resist = 3.5

@@ -6,6 +6,7 @@
 
 //Checks if all high bits in req_mask are set in bitfield
 #define BIT_TEST_ALL(bitfield, req_mask) ((~(bitfield) & (req_mask)) == 0)
+
 //Inverts the colour of an HTML string
 /proc/invertHTML(HTMLstring)
 
@@ -449,8 +450,6 @@ Turf and target are seperate in case you want to teleport some distance from a t
 	for(var/mob/living/carbon/slime/M in sortmob)
 		moblist.Add(M)
 	for(var/mob/living/simple_animal/M in sortmob)
-		moblist.Add(M)
-	for(var/mob/observer/blob/M in sortmob)
 		moblist.Add(M)
 //	for(var/mob/living/silicon/hivebot/M in world)
 //		mob_list.Add(M)
@@ -1128,23 +1127,3 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 		M.start_pulling(t)
 	else
 		step(user.pulling, get_dir(user.pulling.loc, A))
-
-//ultra range (no limitations on distance, faster than range for distances > 8); including areas drastically decreases performance
-/proc/urange(dist=0, atom/center=usr, orange=0, areas=0)
-	if(!dist)
-		if(!orange)
-			return list(center)
-		else
-			return list()
-
-	var/list/turfs = RANGE_TURFS(center, dist)
-	if(orange)
-		turfs -= get_turf(center)
-	. = list()
-	for(var/V in turfs)
-		var/turf/T = V
-		. += T
-		. += T.contents
-		if(areas)
-			. |= T.loc
-

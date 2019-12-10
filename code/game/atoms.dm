@@ -569,6 +569,3 @@ its easier to just keep the beam vertical.
 
 /atom/proc/get_cell()
 	return
-
-/atom/proc/blob_act()
-	return

@@ -59,8 +59,6 @@
 	if(. && !CanFluidPass())
 		fluid_update()
 
-/obj/structure/blob_act()
-	ex_act(2)
 
 /obj/structure/attack_hand(mob/user)
 	..()

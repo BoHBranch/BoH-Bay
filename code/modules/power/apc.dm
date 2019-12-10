@@ -1167,12 +1167,6 @@ obj/machinery/power/apc/proc/autoset(var/cur_state, var/on)
 		INVOKE_ASYNC(L, /obj/machinery/light.proc/set_mode, lightmode)
 		CHECK_TICK
 
-/obj/machinery/power/apc/blob_act()
-	if(!wires.IsAllCut())
-		wiresexposed = TRUE
-		wires.CutAll()
-		update_icon()
-
 /obj/item/weapon/module/power_control
 	name = "power control module"
 	desc = "Heavy-duty switching circuits for power control."
