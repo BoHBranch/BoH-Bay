@@ -28,10 +28,6 @@
 	QDEL_NULL(holding)
 	. = ..()
 
-
-/obj/machinery/portable_atmospherics/blob_act()
-	qdel(src)
-
 /obj/machinery/portable_atmospherics/Initialize()
 	..()
 	return INITIALIZE_HINT_LATELOAD

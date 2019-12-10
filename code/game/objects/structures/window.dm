@@ -115,10 +115,6 @@
 			playsound(loc, "glasscrack", 100, 1)
 	return
 
-
-/obj/structure/window/blob_act()
-	take_damage(50)
-
 /obj/structure/window/proc/shatter(var/display_message = 1)
 	playsound(src, "shatter", 70, 1)
 	if(display_message)

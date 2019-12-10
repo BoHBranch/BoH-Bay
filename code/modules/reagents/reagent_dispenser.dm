@@ -113,12 +113,6 @@
 		// Artificially increased flow - a 1:1 rate doesn't result in very much water at all.
 		T.add_fluid(W * 100, /datum/reagent/water)
 
-obj/structure/reagent_dispensers/blob_act()
-	qdel(src)
-
-/obj/structure/reagent_dispensers/fueltank/blob_act()
-	explode()
-
 /obj/structure/reagent_dispensers/watertank/examine(mob/user)
 	. = ..()
 

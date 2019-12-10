@@ -14,9 +14,6 @@
 	set_extension(src, /datum/extension/penetration/simple, 100)
 	. = ..()
 
-/obj/structure/girder/blob_act()
-	dismantle()
-
 /obj/structure/girder/displaced
 	icon_state = "displaced"
 	anchored = 0

@@ -330,9 +330,6 @@
 	lightbulb = null
 	update_icon()
 
-/obj/machinery/light/blob_act()
-	broken()
-
 /obj/machinery/light/attackby(obj/item/W, mob/user)
 
 	// attempt to insert light
