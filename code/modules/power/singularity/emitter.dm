@@ -147,6 +147,9 @@
 		A.damage = round(power_per_shot/EMITTER_DAMAGE_POWER_TRANSFER)
 		A.launch( get_step(src.loc, src.dir) )
 
+/obj/machinery/power/emitter/blob_act()
+	qdel(src)
+
 /obj/machinery/power/emitter/attackby(obj/item/W, mob/user)
 
 	if(isWrench(W))

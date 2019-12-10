@@ -124,6 +124,14 @@
 		return 0
 	return 1
 
+/obj/machinery/door/blob_act()
+	if(density) // If it's closed.
+		if(stat & BROKEN)
+			spawn(0)
+				open(1)
+		else
+			take_damage(100)
+
 /obj/machinery/door/Bumped(atom/AM)
 	if(p_open || operating) return
 	if(ismob(AM))

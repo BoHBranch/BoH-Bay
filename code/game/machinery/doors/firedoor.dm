@@ -360,7 +360,8 @@
 		else
 			use_power_oneoff(360)
 	else
-		log_and_message_admins("has forced open an emergency shutter.")
+		if(usr && usr.ckey)
+			log_and_message_admins("has forced open an emergency shutter.")
 	latetoggle()
 	return ..()
 

@@ -756,3 +756,12 @@ proc/dd_sortedTextList(list/incoming)
 		var/atom/A = key
 		if(A.type == T)
 			return A
+
+/proc/shuffle_inplace(list/L)
+	if(!L)
+		return
+
+	for(var/i=1, i<L.len, ++i)
+		L.Swap(i,rand(i,L.len))
+
+

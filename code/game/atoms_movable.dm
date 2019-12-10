@@ -20,6 +20,8 @@
 	var/mob/pulledby = null
 	var/item_state = null // Used to specify the item state for the on-mob overlays.
 	var/does_spin = TRUE // Does the atom spin when thrown (of course it does :P)
+	var/old_x = 0
+	var/old_y = 0
 
 /atom/movable/Destroy()
 	. = ..()
