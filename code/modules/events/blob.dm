@@ -1,7 +1,7 @@
 /datum/event/blob
 	announceWhen	= 12
 
-	var/obj/effect/blob/core/Blob
+	var/obj/structure/blob/core/Blob
 
 /datum/event/blob/announce()
 	level_seven_announcement()
@@ -14,7 +14,7 @@
 		return
 
 	log_and_message_admins("Blob spawned in \the [get_area(T)]", location = T)
-	Blob = new /obj/effect/blob/core(T)
+	Blob = new /obj/structure/blob/core/random_medium(T)
 	for(var/i = 1; i < rand(3, 4), i++)
 		Blob.Process()
 
@@ -23,5 +23,3 @@
 		Blob = null
 		kill()
 		return
-	if(IsMultiple(activeFor, 3))
-		Blob.Process()

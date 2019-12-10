@@ -454,3 +454,8 @@
 	wires.CutAll()
 	wires.MendAll()
 	update_coverage()
+
+/obj/machinery/camera/blob_act()
+	if((stat & BROKEN) || invuln)
+		return
+	destroy()

@@ -5,7 +5,7 @@
 
 /datum/wires/apc
 	holder_type = /obj/machinery/power/apc
-	wire_count = 4	
+	wire_count = 4
 	descriptions = list(
 		new /datum/wire_description(APC_WIRE_IDSCAN, "This wire is connected to the ID scanning panel.", SKILL_EXPERT),
 		new /datum/wire_description(APC_WIRE_MAIN_POWER1, "This wire seems to be carrying a heavy current."),
@@ -61,12 +61,14 @@
 		if(APC_WIRE_MAIN_POWER1, APC_WIRE_MAIN_POWER2)
 
 			if(!mended)
-				A.shock(usr, 50)
+				if(istype(usr, /mob/living))
+					A.shock(usr, 50)
 				A.shorted = 1
 
 			else if(!IsIndexCut(APC_WIRE_MAIN_POWER1) && !IsIndexCut(APC_WIRE_MAIN_POWER2))
+				if(istype(usr, /mob/living))
+					A.shock(usr, 50)
 				A.shorted = 0
-				A.shock(usr, 50)
 
 		if(APC_WIRE_AI_CONTROL)
 

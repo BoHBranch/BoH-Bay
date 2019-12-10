@@ -22,6 +22,8 @@
 		R.health = inflatable_health
 	qdel(src)
 
+/obj/structure/inflatable/blob_act()
+	deflate(1)
 
 /obj/item/inflatable/wall
 	name = "inflatable wall"

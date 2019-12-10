@@ -23,10 +23,14 @@ avoid code duplication. This includes items that may sometimes act as a standard
 /obj/item/proc/attack_self(mob/user)
 	return
 
+/obj/item/proc/pre_attack(atom/a, mob/user)
+	return
+
 //I would prefer to rename this to attack(), but that would involve touching hundreds of files.
 /obj/item/proc/resolve_attackby(atom/A, mob/user, var/click_params)
 	if(!(item_flags & ITEM_FLAG_NO_PRINT))
 		add_fingerprint(user)
+	pre_attack(A, user)
 	return A.attackby(src, user, click_params)
 
 // No comment
