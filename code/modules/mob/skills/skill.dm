@@ -60,7 +60,6 @@ GLOBAL_LIST_EMPTY(skills)
 /decl/hierarchy/skill/security
 	name = "Security"
 	ID	 = "security"
-	difficulty = SKILL_HARD
 	default_max = SKILL_EXPERT
 
 /decl/hierarchy/skill/engineering
@@ -191,6 +190,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You have had close-combat training, and can easily defeat unskilled opponents. Close combat may not be your specialty, and you don't engage in it more than needed, but you know how to handle yourself in a fight.<br>- You can parry with weapons. This increases with level.<br>- You can do grab maneuvers (pinning, dislocating).<br>- You can grab targets when leaping at them and not fall over, if your species is able to do so.",
 						"Experienced"		= "You're good at hand-to-hand combat. You've trained explicitly in a martial art or as a close combatant as part of a military or police unit. You can use weaponry competently and you can think strategically and quickly in a melee. You're in good shape and you spend time training.",
 						"Master"		= "You specialize in hand-to-hand combat. You're well-trained in a practical martial art, and in good shape. You spend a lot of time practicing. You can take on just about anyone, use just about any weapon, and usually come out on top. You may be a professional athlete or special forces member.")
+	default_max = SKILL_EXPERT
 
 /decl/hierarchy/skill/security/combat/get_cost(var/level)
 	switch(level)
