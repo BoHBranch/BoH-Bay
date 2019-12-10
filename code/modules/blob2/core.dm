@@ -32,6 +32,17 @@ var/list/blob_cores = list()
 /obj/structure/blob/core/random_hard
 	difficulty_threshold = BLOB_DIFFICULTY_HARD
 
+/obj/structure/blob/core/player/random_easy
+	difficulty_threshold = BLOB_DIFFICULTY_EASY
+
+/obj/structure/blob/core/player/random_medium
+	difficulty_threshold = BLOB_DIFFICULTY_MEDIUM
+
+/obj/structure/blob/core/player/random_hard
+	difficulty_threshold = BLOB_DIFFICULTY_HARD
+
+/obj/structure/blob/core/player/grey_goo
+	desired_blob_type = /datum/blob_type/grey_goo
 // Spawn these if you want a specific blob.
 /obj/structure/blob/core/blazing_oil
 	desired_blob_type = /datum/blob_type/blazing_oil
