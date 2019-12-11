@@ -15,7 +15,7 @@
 		/datum/species/unathi/yeosa = list(HUMAN_ONLY_JOBS),
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),
 		/datum/species/machine = list(HUMAN_ONLY_JOBS),
-		/datum/species/diona   = list(HUMAN_ONLY_JOBS),
+		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/captain),
 		/datum/species/sergal = list(HUMAN_ONLY_JOBS),
 		/datum/species/sergal/northern = list(HUMAN_ONLY_JOBS),
 		/datum/species/sergal/eastern = list(HUMAN_ONLY_JOBS),
@@ -25,6 +25,7 @@
 		/datum/species/vasilissan= list(HUMAN_ONLY_JOBS),
 		/datum/species/vulpkanin= list(HUMAN_ONLY_JOBS),
 		/datum/species/customhuman= list(HUMAN_ONLY_JOBS),
+		/datum/species/custom= list(HUMAN_ONLY_JOBS, /datum/job/captain, /datum/job/representative, /datum/job/sea),
 		//datum/species/tesh= list(HUMAN_ONLY_JOBS),
 	)
 #undef HUMAN_ONLY_JOBS
