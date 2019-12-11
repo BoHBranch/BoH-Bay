@@ -14,7 +14,7 @@
 		/datum/species/unathi  = list(HUMAN_ONLY_JOBS), //Other jobs unavailable via branch restrictions,
 		/datum/species/unathi/yeosa = list(HUMAN_ONLY_JOBS),
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),
-		/datum/species/machine = list(HUMAN_ONLY_JOBS),
+		/datum/species/machine = list(HUMAN_ONLY_JOBS, /datum/job/captain),
 		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/captain),
 		/datum/species/sergal = list(HUMAN_ONLY_JOBS),
 		/datum/species/sergal/northern = list(HUMAN_ONLY_JOBS),
