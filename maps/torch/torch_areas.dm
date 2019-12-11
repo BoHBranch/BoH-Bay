@@ -772,10 +772,6 @@
 	name = "\improper Requisitions Office"
 	icon_state = "quart"
 
-/area/vacant/brig
-	name = "\improper Permanent Brig"
-	icon_state = "brig"
-
 /area/vacant/bar
 	name = "\improper Hidden Bar"
 	icon_state = "bar"
@@ -1059,6 +1055,16 @@
 /area/security/oldopscheck
 	name = "\improper Deactivated Security Checkpoint"
 	icon_state = "checkpoint"
+
+/area/security/brig
+	name = "\improper Permanent Brig"
+	icon_state = "brig"
+	req_access = list(access_brig)
+
+/area/security/brig/chamber
+	name = "\improper Permanent Brig Executions"
+	icon_state = "toxstorage"
+	req_access = list(access_brig)
 
 // AI
 /area/turret_protected/ai_foyer
