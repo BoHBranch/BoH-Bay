@@ -15,7 +15,7 @@
 		/datum/species/unathi/yeosa = list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/machine = list(HUMAN_ONLY_JOBS, /datum/job/sea, /datum/job/representative),
-		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/captain, /datum/job/hop, /datum/job/hos),
+		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden, /datum/job/detective),
 		/datum/species/sergal = list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/sea),
 		/datum/species/sergal/northern = list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/sea),
 		/datum/species/sergal/eastern = list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/sea),
