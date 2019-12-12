@@ -1429,6 +1429,7 @@
 #include "code\modules\awaymissions\trigger.dm"
 #include "code\modules\awaymissions\zlevel.dm"
 #include "code\modules\blob\blob.dm"
+#include "code\modules\boh\antiboarding\tur_id.dm"
 #include "code\modules\boh_misc\badges.dm"
 #include "code\modules\boh_misc\boxes.dm"
 #include "code\modules\boh_misc\firearms.dm"
