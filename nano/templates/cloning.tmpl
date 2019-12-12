@@ -66,7 +66,7 @@
 	{{:helper.link('Back', 'arrowreturn-1-w', {'menu' : 1})}}
 	<div class='item'>
 		{{for data.records}}
-			{{:helper.link(value.name, 'document', {'view_rec' : value.ckey})}}
+			{{:helper.link(value.name, 'document', {'view_rec' : value.name})}}
 		{{/for}}
 	</div>
 
@@ -90,7 +90,7 @@
 			{{:helper.link('SE', 'disk', {'save_disk' : 'se'}, data.disk ? null : 'linkOff')}}
 		</div>
 
-		{{:helper.link('Clone', 'play', {'clone' : data.activeRecord.ckey}, data.podsLen ? null : 'linkOff')}}
+		{{:helper.link('Clone', 'play', {'clone' : data.activeRecord.name}, data.podsLen ? null : 'linkOff')}}
 		
 	{{else}}
 		<div class='item bad'>ERROR: Record not found.</div>

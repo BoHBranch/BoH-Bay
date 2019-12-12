@@ -36,6 +36,7 @@
 
 	overlay_alarm = "alarm_green"
 	overlay_status_display = "status_display_green"
+	security_level_lightmode = "reset"
 
 	var/static/datum/announcement/priority/security/security_announcement_green = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/misc/notice2.ogg'))
 
@@ -56,6 +57,7 @@
 
 	overlay_alarm = "alarm_violet"
 	overlay_status_display = "status_display_violet"
+	security_level_lightmode = "violet"
 
 	up_description = "A major medical emergency has developed. Medical personnel are required to report to their supervisor for orders, and non-medical personnel are required to obey all relevant instructions from medical staff."
 	down_description = "Code violet procedures are now in effect; Medical personnel are required to report to their supervisor for orders, and non-medical personnel are required to obey relevant instructions from medical staff."
@@ -70,6 +72,7 @@
 	light_color_status_display = COLOR_ORANGE
 	overlay_alarm = "alarm_orange"
 	overlay_status_display = "status_display_orange"
+	security_level_lightmode = "orange"
 
 	psionic_control_level = PSI_IMPLANT_LOG
 
@@ -88,6 +91,7 @@
 	light_color_status_display = COLOR_BLUE
 	overlay_alarm = "alarm_blue"
 	overlay_status_display = "status_display_blue"
+	security_level_lightmode = "blue"
 
 	psionic_control_level = PSI_IMPLANT_LOG
 
@@ -105,6 +109,7 @@
 	light_color_status_display = COLOR_RED
 	overlay_alarm = "alarm_red"
 	overlay_status_display = "status_display_red"
+	security_level_lightmode = "red"
 
 	up_description = "A severe emergency has occurred. All staff are to report to their supervisor for orders. All crew should obey orders from relevant emergency personnel. Security personnel are permitted to search staff and facilities, and may have weapons unholstered at any time. Saferooms have been unbolted."
 	psionic_control_level = PSI_IMPLANT_DISABLED
@@ -131,6 +136,7 @@
 
 	overlay_alarm = "alarm_delta"
 	overlay_status_display = "status_display_delta"
+	security_level_lightmode = "delta"
 
 	var/static/datum/announcement/priority/security/security_announcement_delta = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/effects/siren.ogg'))
 

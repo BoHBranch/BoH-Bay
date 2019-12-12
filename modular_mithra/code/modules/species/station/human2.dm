@@ -46,3 +46,6 @@
 			CULTURE_UNATHI,
 		)
 	)
+
+/datum/species/customhuman/get_bodytype(var/mob/living/carbon/human/H)
+	return SPECIES_HUMAN

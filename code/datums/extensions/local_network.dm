@@ -46,7 +46,7 @@
 
 /datum/extension/local_network_member/proc/get_new_tag(var/mob/user)
 	var/new_ident = input(user, "Enter a new ident tag.", "[holder]", id_tag) as null|text
-	if(new_ident && holder && user.Adjacent(holder) && CanPhysicallyInteract(user))
+	if(new_ident && holder && CanPhysicallyInteractWith(user, holder))
 		return set_tag(user, new_ident)
 
 //

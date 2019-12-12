@@ -159,3 +159,6 @@
 		H.internals.icon_state = "internal1"
 	*/
 	return ..()
+
+/datum/species/custom/get_bodytype(var/mob/living/carbon/human/H)
+	return SPECIES_HUMAN
