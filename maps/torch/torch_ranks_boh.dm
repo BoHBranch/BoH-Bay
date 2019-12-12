@@ -33,12 +33,45 @@
 		)
 	)
 
-/datum/mil_branch/marine_corps
-	name = "Solar Marine Corps"
-	name_short = "SMC"
-	email_domain = "oorah.mil"
+	species_to_branch_whitelist = list(
+		/datum/species/diona      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
+		/datum/species/nabber     = list(/datum/mil_branch/civilian),
+		/datum/species/skrell     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/skrell_fleet),
+		/datum/species/unathi     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
+		/datum/species/adherent   = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
+		/datum/species/sergal     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
+		/datum/species/sergal/northern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
+		/datum/species/sergal/eastern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
+		/datum/species/akula     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
+		/datum/species/custom      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
+		/datum/species/humanathi      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
+		/datum/species/tajaran      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
+		/datum/species/vasilissan      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
+		/datum/species/vulpkanin      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
+		/datum/species/customhuman      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
+		//datum/species/tesh/  list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
+		/datum/species/vox        = list(/datum/mil_branch/alien),
+		/datum/species/vox/armalis        = list(/datum/mil_branch/alien)
+	)
 
-// Uses SCG Army's uniforms, at least for now.
+	species_to_rank_whitelist = list(
+		/datum/species/nabber = list(
+			/datum/mil_branch/marine_corps = list(
+				/datum/mil_rank/marine_corps/e1,
+				/datum/mil_rank/marine_corps/e2,
+				/datum/mil_rank/marine_corps/e3,
+				/datum/mil_rank/marine_corps/e4,
+				/datum/mil_rank/marine_corps/e5
+			)
+		)
+	)
+
+/datum/mil_branch/marine_corps
+	name = "Universal Marine Corps"
+	name_short = "UMCO"
+	email_domain = "dagon.oorah.mil"
+
+// Uses SCG Army/Marine uniforms for now.
 	rank_types = list(
 		/datum/mil_rank/marine_corps/e1,
 		/datum/mil_rank/marine_corps/e2,
