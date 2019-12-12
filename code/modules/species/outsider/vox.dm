@@ -32,7 +32,7 @@
 
 	taste_sensitivity = TASTE_DULL
 	speech_sounds = list('sound/voice/shriek1.ogg')
-	speech_chance = 20
+	speech_chance = 25
 
 	warning_low_pressure = 50
 	hazard_low_pressure = 0
@@ -144,7 +144,7 @@
 	strength = STR_HIGH
 
 	speech_sounds = list('sound/voice/shriek1.ogg')
-	speech_chance = 20
+	speech_chance = 25
 
 	override_organ_types = list(BP_EYES = /obj/item/organ/internal/eyes/vox/armalis)
 
