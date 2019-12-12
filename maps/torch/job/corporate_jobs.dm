@@ -20,7 +20,7 @@
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_BUREAUCRACY	= SKILL_EXPERT,
 	                    SKILL_FINANCE		= SKILL_BASIC)
-	skill_points = 20
+	skill_points = 30
 	access = list(access_liaison, access_security, access_medical,
 						access_engine, access_research, access_bridge,
 						access_cargo, access_solgov_crew, access_hangar,
@@ -65,7 +65,7 @@
 		"Executive Assistant",
 		"Asset Protection Agent"
 	)
-	skill_points = 20
+	skill_points = 30
 	access = list(access_liaison, access_security, access_medical,
 						access_engine, access_research, access_bridge,
 						access_cargo, access_solgov_crew, access_hangar,

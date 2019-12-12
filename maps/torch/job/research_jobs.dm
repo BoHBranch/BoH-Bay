@@ -37,7 +37,7 @@
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
-	skill_points = 20
+	skill_points = 30
 
 /datum/job/scientist
 	title = "Scientist"
@@ -81,7 +81,7 @@
 						access_xenoarch, access_nanotrasen, access_expedition_shuttle, access_guppy, access_hangar,
 						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_robotics, access_robotics_engineering)
 	minimal_access = list()
-	skill_points = 20
+	skill_points = 30
 
 /datum/job/scientist_assistant
 	title = "Research Assistant"
