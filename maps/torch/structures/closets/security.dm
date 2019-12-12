@@ -49,6 +49,8 @@
 		/obj/item/taperoll/police,
 		/obj/item/device/hailer,
 		/obj/item/clothing/accessory/storage/black_vest,
+//		/obj/item/weapon/gun/energy/gun/small/secure,
+//		/obj/item/weapon/gun/energy/gun/secure, //replaced with sidearm box
 		/obj/item/gunbox,
 		/obj/item/device/megaphone,
 		/obj/item/clothing/gloves/thick,
@@ -115,8 +117,7 @@
 		/obj/item/weapon/storage/belt/holster/security,
 		/obj/item/weapon/reagent_containers/spray/pepper,
 		/obj/item/weapon/melee/baton/loaded,
-//		/obj/item/weapon/gun/energy/gun/small/secure,
-//		/obj/item/weapon/gun/energy/gun/secure, //replaced with sidearm box
+//		/obj/item/weapon/gun/energy/gun/secure,
 		/obj/item/gunbox,
 		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/weapon/handcuffs,
