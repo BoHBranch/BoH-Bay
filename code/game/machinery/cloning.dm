@@ -36,8 +36,8 @@
 	return attack_hand(user)
 
 /obj/machinery/clonepod/Initialize()
-	. = ..()
 	..()
+	return INITIALIZE_HINT_LATELOAD
 
 //Start growing a human clone in the pod!
 /obj/machinery/clonepod/proc/growclone(var/datum/dna2/record/R)
