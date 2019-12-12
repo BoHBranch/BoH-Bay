@@ -164,7 +164,8 @@
 		/decl/emote/visible/rshoulder,
 		/decl/emote/visible/squint,
 		/decl/emote/visible/tfist,
-		/decl/emote/visible/tilt
+		/decl/emote/visible/tilt,
+		/decl/emote/visible/attention
 	)
 
 /mob/living/silicon/robot
