@@ -343,7 +343,7 @@
 "gE" = (/obj/random/storage,/obj/structure/railing/mapped,/turf/simulated/floor/plating,/area/maintenance/bridge/aftstarboard)
 "gF" = (/obj/machinery/atmospherics/binary/pump/on{dir = 1; target_pressure = 200},/obj/structure/railing/mapped,/obj/structure/railing/mapped{dir = 4; icon_state = "railing0-1"; tag = "icon-railing0 (EAST)"},/turf/simulated/floor/plating,/area/maintenance/bridge/aftstarboard)
 "gG" = (/obj/structure/railing/mapped,/turf/simulated/floor/plating,/area/maintenance/bridge/aftstarboard)
-"gH" = (/obj/machinery/porta_turret/exterior,/turf/simulated/floor/airless,/area/defturrets)
+"gH" = (/obj/machinery/porta_turret/exterior/dagon,/turf/simulated/floor/airless,/area/space)
 "gI" = (/obj/structure/lattice,/obj/structure/catwalk,/obj/machinery/light/navigation/delay2,/turf/space,/area/space)
 "gJ" = (/obj/structure/disposalpipe/segment{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/catwalk_plated,/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/turf/simulated/floor/plating,/area/hallway/primary/bridge/fore)
 "gK" = (/obj/machinery/camera/network/command{c_tag = "Bridge Exterior"; dir = 8},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/space)

@@ -2,7 +2,7 @@
 "aab" = (/obj/effect/shuttle_landmark/torch/deck4/aquila,/turf/space,/area/space)
 "aac" = (/obj/effect/shuttle_landmark/merc/deck1,/turf/space,/area/space)
 "aad" = (/obj/effect/shuttle_landmark/torch/deck4/exploration_shuttle,/turf/space,/area/space)
-"aae" = (/obj/machinery/porta_turret/exterior,/turf/simulated/floor/airless,/area/defturrets)
+"aae" = (/obj/machinery/porta_turret/exterior/dagon,/turf/simulated/floor/airless,/area/space)
 "aaf" = (/turf/simulated/wall/r_wall/hull,/area/medical/virology)
 "aag" = (/obj/machinery/smartfridge/secure/virology{req_access = list(list("ACCESS_VIRO","ACCESS_SURGERY"))},/obj/machinery/requests_console{department = "Virology"; name = "Virology Requests Console"; pixel_x = -32},/obj/item/weapon/storage/secure/safe{pixel_x = 5; pixel_y = 29},/turf/simulated/floor/tiled/white/monotile,/area/medical/virology)
 "aah" = (/obj/machinery/alarm{dir = 1; pixel_y = -25},/obj/machinery/atmospherics/valve/shutoff{dir = 4},/obj/machinery/light,/obj/effect/floor_decal/industrial/shutoff{dir = 4},/obj/effect/floor_decal/corner/green/half,/turf/simulated/floor/tiled/monotile,/area/hallway/primary/firstdeck/center)

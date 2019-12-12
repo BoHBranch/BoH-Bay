@@ -1,5 +1,5 @@
 "aa" = (/turf/space,/area/space)
-"ab" = (/obj/machinery/porta_turret/exterior,/turf/simulated/floor/airless,/area/defturrets)
+"ab" = (/obj/machinery/porta_turret/exterior/dagon,/turf/simulated/floor/airless,/area/space)
 "ac" = (/obj/effect/shuttle_landmark/skipjack/deck4,/turf/space,/area/space)
 "ad" = (/obj/effect/shuttle_landmark/torch/deck1/guppy,/turf/space,/area/space)
 "ae" = (/obj/effect/shuttle_landmark/merc/deck4,/turf/space,/area/space)
