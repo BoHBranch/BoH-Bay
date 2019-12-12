@@ -32,7 +32,7 @@
 
 	taste_sensitivity = TASTE_DULL
 	speech_sounds = list('sound/voice/shriek1.ogg')
-	speech_chance = 15
+	speech_chance = 20
 
 	warning_low_pressure = 50
 	hazard_low_pressure = 0
