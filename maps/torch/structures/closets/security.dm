@@ -48,9 +48,9 @@
 		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
 		/obj/item/taperoll/police,
 		/obj/item/device/hailer,
-		/obj/item/clothing/accessory/storage/black_vest,/*
-		/obj/item/weapon/gun/energy/gun/small/secure,
-		/obj/item/weapon/gun/energy/gun/secure, //replaced with sidearm box*/
+		/obj/item/clothing/accessory/storage/black_vest,
+		//obj/item/weapon/gun/energy/gun/small/secure,
+		//obj/item/weapon/gun/energy/gun/secure, //replaced with sidearm box
 		/obj/item/gunbox,
 		/obj/item/device/megaphone,
 		/obj/item/clothing/gloves/thick,
