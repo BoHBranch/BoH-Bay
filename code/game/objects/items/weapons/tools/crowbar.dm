@@ -47,9 +47,11 @@
 	desc = "This is an emergency forcing tool, made of steel bar with a wedge on one end, and a hatchet on the other end. It has a blue plastic grip"
 	icon_state = "emergency_forcing_tool"
 	item_state = "emergency_forcing_tool"
-	force = 10
-	throwforce = 6
-	throw_range = 5
+	force = 16
+	throwforce = 8
+	throw_range = 4
+	sharp = TRUE
+	edge = TRUE
 	w_class = ITEM_SIZE_SMALL
 	matter = list(MATERIAL_STEEL = 150)
-	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked", "attacked", "slashed", "torn", "ripped", "cut")
+	attack_verb = list("bludgeoned", "whacked", "slashed", "torn", "ripped", "cut", "stabbed", "sliced", "ripped", "diced")
