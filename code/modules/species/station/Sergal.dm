@@ -21,7 +21,7 @@
 	slowdown = 0.75
 	brute_mod = 1.20
 	burn_mod = 1.20
-	blood_volume = 500
+	blood_volume = 560
 
 	health_hud_intensity = 2
 	hunger_factor = DEFAULT_HUNGER_FACTOR * 2

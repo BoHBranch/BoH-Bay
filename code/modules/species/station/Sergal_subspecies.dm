@@ -9,7 +9,7 @@
 	slowdown = 0.75
 	brute_mod = 1.15
 	burn_mod = 1.15
-	blood_volume = 500
+	blood_volume = 560
 	description = "WIP"
 
 	descriptors = list(
@@ -36,7 +36,7 @@
 	slowdown = 1
 	brute_mod = 1
 	burn_mod = 1
-	blood_volume = 500
+	blood_volume = 560
 	description = "WIP"
 
 	descriptors = list(
