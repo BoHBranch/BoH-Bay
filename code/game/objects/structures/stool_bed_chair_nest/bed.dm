@@ -335,3 +335,21 @@
 	name = "dirty mattress"
 	icon_state = "dirty_mattress"
 	desc = "A dirty, smelly mattress covered in body fluids. You wouldn't want to touch this."
+
+/////////
+// Double / Couch - BoH
+/////////
+
+/obj/structure/bed/double
+	name = "double bed"
+	icon_state = "doublebed"
+	base_icon = "doublebed"
+
+/obj/structure/bed/double/padded/New(var/newloc)
+	..(newloc,"wood","cotton")
+
+/obj/structure/bed/double/post_buckle_mob(mob/living/M as mob)
+	if(M.buckled == src)
+		M.pixel_y = 13
+	else
+		M.pixel_y = 0
