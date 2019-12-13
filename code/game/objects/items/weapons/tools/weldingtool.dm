@@ -402,3 +402,131 @@
 		var/gen_amount = ((world.time-last_gen)/25)
 		reagents.add_reagent(/datum/reagent/fuel, gen_amount)
 		last_gen = world.time
+// TOOL
+/obj/item/weapon/weldingtool/packmounted
+	name = "tube-fed oxy-acetlyene welding tool"
+	desc = "Can't be tight if it's a liquid."
+	w_class = ITEM_SIZE_HUGE
+	slot_flags = null
+	tank = /obj/item/weapon/welder_tank/pack_mounted
+	var/obj/item/weapon/weldpack/bigwelder/weldpack
+
+/obj/item/weapon/weldingtool/packmounted/Process()
+	transfer_fuel()
+	..()
+
+/obj/item/weapon/weldingtool/packmounted/Destroy()
+	QDEL_NULL(weldpack)
+	. = ..()
+
+/obj/item/weapon/weldingtool/packmounted/proc/transfer_fuel()
+	if(isnull(weldpack)) //just in case this is somehow null?
+		return
+	//figure out if we even need to proceed
+	if(isnull(tank))
+		return //don't transfer if we don't even have a tank.
+	if(tank.reagents.total_volume == tank.reagents.maximum_volume) //this is assuming we only have welding fuel, considering that it's a closed system, that's not an awful assumption.
+		return
+	else
+		weldpack.reagents.trans_to_obj(tank, tank.max_fuel)
+
+/obj/item/weapon/weldingtool/packmounted/attackby(obj/item/W as obj, mob/user as mob) //We can't be modified because we have special properties.
+	return
+
+/obj/item/weapon/weldingtool/packmounted/attack_hand(mob/user as mob) //Tank is not removable.
+	return
+
+
+/obj/item/weapon/weldingtool/packmounted/afterattack(var/obj/O, var/mob/user, proximity) //can't be directly refueled - refuel the welding pack.
+	if(!proximity)
+		return
+
+	if(welding)
+		remove_fuel(1)
+		var/turf/location = get_turf(user)
+		if(isliving(O))
+			var/mob/living/L = O
+			L.IgniteMob()
+		else if(istype(O))
+			O.HandleObjectHeating(src, user, 700)
+		if (istype(location, /turf))
+			location.hotspot_expose(700, 50, 1)
+	return
+
+/obj/item/weapon/weldingtoolpackmounted/attack(obj/M)
+	if(istype(M, /obj/effect/blob/)) //deal increased damage.
+		var/obj/effect/blob/B = M
+		B.take_damage(force * 4)
+	return ..()
+
+// TANK
+
+/obj/item/weapon/welder_tank/pack_mounted
+	max_fuel = 40
+	can_refuel = 0 //not directly removable, anyway...
+	lit_force = 20
+	size_in_use = ITEM_SIZE_HUGE
+
+// WELDING PACK
+/obj/item/weapon/weldpack/bigwelder
+	name = "oxy-acetylene welding kit"
+	desc = "A set of tanks containing oxygen and acetlyene gas."
+	var/obj/item/weapon/weldingtool/packmounted/weldtool
+
+/obj/item/weapon/weldpack/bigwelder/Initialize()
+	weldtool = new /obj/item/weapon/weldingtool/packmounted
+	weldtool.weldpack = src
+	START_PROCESSING(SSobj, src)
+	. = ..()
+
+/obj/item/weapon/weldpack/bigwelder/Destroy()
+	qdel(weldtool)
+	STOP_PROCESSING(SSobj, src)
+	. = ..()
+
+/obj/item/weapon/weldpack/bigwelder/Process()
+	check_adjacency()
+
+/obj/item/weapon/weldpack/bigwelder/proc/check_adjacency()
+	if(!isnull(weldtool))
+		if(get_dist(src, weldtool) > 1)
+			reattach_welder()
+
+
+/obj/item/weapon/weldpack/bigwelder/proc/reattach_welder()
+	if(!weldtool) return
+
+	if(weldtool.welding == 1)
+		weldtool.setWelding(0)
+
+	if(ismob(weldtool.loc))
+		var/mob/M = weldtool.loc
+		if(M.drop_from_inventory(weldtool, src))
+			weldtool.forceMove(src)
+	else
+		weldtool.forceMove(src)
+
+	update_icon()
+
+/obj/item/weapon/weldpack/bigwelder/proc/dispense_welder(mob/user)
+	if(isnull(weldtool))
+		return
+	if(isnull(weldtool.loc) || weldtool.loc == src)
+		var/turf/A = get_turf(user)
+		weldtool.forceMove(A)
+		user.put_in_hands(weldtool)
+	else
+		to_chat(user, SPAN_WARNING("[weldtool] is already deployed."))
+
+/obj/item/weapon/weldpack/bigwelder/AltClick(mob/user)
+	dispense_welder(user)
+
+/obj/item/weapon/weldpack/bigwelder/attackby(obj/item/W as obj, mob/user as mob)
+	if(isWelder(W))
+		var/obj/item/weapon/weldingtool/T = W
+		if(T == weldtool)
+			reattach_welder(user)
+		else
+			to_chat(user, SPAN_NOTICE("This welder is totally incompatiable with [src]."))
+			return
+	return
