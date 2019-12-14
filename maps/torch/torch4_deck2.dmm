@@ -4508,7 +4508,6 @@
 	icon_state = "map_on";
 	dir = 8
 	},
-/obj/machinery/light,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
 "iz" = (
@@ -6611,6 +6610,13 @@
 	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/visible/green,
+/turf/simulated/floor/tiled/techfloor,
+/area/engineering/engine_room)
+"my" = (
+/obj/machinery/atmospherics/pipe/simple/visible/black{
+	dir = 4
+	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
 "mz" = (
@@ -45256,7 +45262,7 @@ if
 Qn
 hY
 iy
-jG
+my
 dp
 wU
 wU
