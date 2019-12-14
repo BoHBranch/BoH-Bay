@@ -34,6 +34,9 @@
 	desc = "Does NOT leave much to the imagination."
 	icon_state = "armypt"
 	worn_state = "armypt"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		)
 
 
 //Utility
@@ -203,6 +206,9 @@
 	icon_state = "greenutility"
 	item_state = "jensensuit"
 	worn_state = "greenutility"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		)
 
 /obj/item/clothing/under/solgov/utility/army/command
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/command/army)
@@ -395,12 +401,18 @@
 	item_state = "johnny"
 	worn_state = "greenservice"
 	starting_accessories = list(/obj/item/clothing/accessory/brown)
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		)
 
 /obj/item/clothing/under/solgov/service/army/skirt
 	name = "army service skirt"
 	desc = "The service uniform skirt of the SCG Army. Slimming."
 	icon_state = "greenservicefem"
 	worn_state = "greenservicefem"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		)
 
 /obj/item/clothing/under/solgov/service/army/command
 	name = "marine officer's service uniform"
@@ -429,12 +441,18 @@
 	desc = "The dress uniform of the SCG Army, class given form."
 	icon_state = "blackdress"
 	worn_state = "blackdress"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		)
 
 /obj/item/clothing/under/solgov/mildress/army/skirt
 	name = "army dress skirt"
 	desc = "A  feminine version of the SCG Army dress uniform, class given form."
 	icon_state = "blackdressfem"
 	worn_state = "blackdressfem"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		)
 
 /obj/item/clothing/under/solgov/mildress/army/command
 	name = "army officer's dress uniform"

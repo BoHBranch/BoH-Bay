@@ -9,6 +9,11 @@
 	slot = ACCESSORY_SLOT_INSIGNIA
 	check_codex_val = FACTION_MARINES
 
+/obj/item/clothing/accessory/solgov/smc_patch/xeno
+	name = "\improper 13th Marine Platoon patch"
+	desc = "A robust shoulder patch, carrying the symbol-mascot of 13th platoon, yellow-eyed hellhound."
+	icon_state = "smcpatch13"
+
 // ranks - proper marines
 /obj/item/clothing/accessory/solgov/rank/marine_corps
 	name = "marine ranks"
@@ -76,6 +81,10 @@
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o3_alt
 	name = "ranks (O-3 Marine captain)"
 	desc = "Insignia denoting the rank of Marine Captain."
+
+/obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o3_alt2
+	name = "ranks (O-3 specialist captain)"
+	desc = "Insignia denoting the rank of Specialist Captain."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o4
 	name = "ranks (O-4 major)"
