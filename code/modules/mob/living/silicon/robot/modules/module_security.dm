@@ -6,7 +6,7 @@
 		NETWORK_SECURITY
 	)
 	subsystems = list(
-		/datum/nano_module/crew_monitor, 
+		/datum/nano_module/crew_monitor,
 		/datum/nano_module/digitalwarrant
 	)
 	can_be_pushed = FALSE
@@ -36,7 +36,7 @@
 /obj/item/weapon/robot_module/security/general
 	name = "security robot module"
 	display_name = "Security"
-	crisis_locked = TRUE
+	crisis_locked = FALSE
 	sprites = list(
 		"Basic" = "secborg",
 		"Red Knight" = "Security",
