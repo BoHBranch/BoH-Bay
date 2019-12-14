@@ -3175,9 +3175,16 @@
 	},
 /obj/structure/cable,
 /obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
+	dir = 8;
+	icon_state = "railing0-1";
+	tag = "icon-railing0 (EAST)"
 	},
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1";
+	tag = "icon-railing0 (EAST)"
+	},
+/obj/structure/ladder/up,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
 "fY" = (
@@ -3192,11 +3199,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/thruster/d3starboard)
-"fZ" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/ladder/up,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/thirddeck/aftstarboard)
 "ga" = (
 /obj/machinery/telecomms/hub/preset,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -48053,7 +48055,7 @@ NZ
 RG
 JT
 Dq
-EE
+Fo
 EE
 Gr
 EE
@@ -48429,7 +48431,7 @@ aT
 dn
 ef
 SH
-fZ
+dn
 dn
 Fa
 ES
@@ -48457,7 +48459,7 @@ TE
 TE
 JT
 EE
-Fo
+EE
 hN
 zt
 EE
