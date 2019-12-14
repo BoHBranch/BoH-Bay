@@ -8,3 +8,9 @@
 	display_name = "Marine Corps patch"
 	path = /obj/item/clothing/accessory/solgov/smc_patch
 	allowed_branches = list(/datum/mil_branch/marine_corps)
+	whitelisted = list(SPECIES_HUMAN, SPECIES_IPC)
+
+/datum/gear/accessory/smc_patch_xenos
+	display_name = "Marine Corps patch (13th platoon)"
+	path = /obj/item/clothing/accessory/solgov/smc_patch/xeno
+	allowed_branches = list(/datum/mil_branch/marine_corps)

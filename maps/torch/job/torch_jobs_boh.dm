@@ -26,6 +26,7 @@
 		/datum/mil_rank/fleet/o4,
 		/datum/mil_rank/ec/o3,
 		/datum/mil_rank/marine_corps/o3_alt,
+		/datum/mil_rank/marine_corps/o3_alt2,
 		/datum/mil_rank/marine_corps/o4
 	)
 
@@ -40,7 +41,8 @@
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3,
 		/datum/mil_rank/marine_corps/o2,
-		/datum/mil_rank/marine_corps/o3_alt
+		/datum/mil_rank/marine_corps/o3_alt,
+		/datum/mil_rank/marine_corps/o3_alt2
 	)
 
 /datum/job/hos
@@ -54,7 +56,8 @@
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3,
 		/datum/mil_rank/marine_corps/o2,
-		/datum/mil_rank/marine_corps/o3_alt
+		/datum/mil_rank/marine_corps/o3_alt,
+		/datum/mil_rank/marine_corps/o3_alt2
 	)
 
 /datum/job/bridgeofficer
