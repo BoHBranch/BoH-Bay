@@ -1433,6 +1433,7 @@
 #include "code\modules\boh_misc\areas.dm"
 #include "code\modules\boh_misc\badges.dm"
 #include "code\modules\boh_misc\boxes.dm"
+#include "code\modules\boh_misc\clothing.dm"
 #include "code\modules\boh_misc\firearms.dm"
 #include "code\modules\boh_misc\vending.dm"
 #include "code\modules\butchery\butchery.dm"
