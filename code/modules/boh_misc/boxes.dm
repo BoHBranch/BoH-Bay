@@ -11,10 +11,19 @@
 	desc = "It has a picture of a gun and several warning symbols on the front."
 	startswith = list(/obj/item/ammo_magazine/pistol/double = 3)
 
+/obj/item/weapon/storage/box/ammo/solar/full
+	name = "box of handgun magazines"
+	desc = "It has a picture of a gun and several warning symbols on the front."
+	startswith = list(/obj/item/ammo_magazine/pistol/double = 7)
+
 /obj/item/weapon/storage/box/ammo/solar/rubber
 	name = "box of handgun 'rubber' magazines"
 	desc = "It has a picture of a gun and several warning symbols on the front."
 	startswith = list(/obj/item/ammo_magazine/pistol/double/rubber = 7)
+
+/obj/item/weapon/storage/box/ammo/shotgunammo/full
+	name = "heavy box of shotgun slugs"
+	startswith = list(/obj/item/ammo_magazine/shotholder = 7)
 
 /////////
 // Officer Lockbox
