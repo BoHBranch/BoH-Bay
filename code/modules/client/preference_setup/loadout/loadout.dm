@@ -351,6 +351,8 @@ var/list/gear_datums = list()
 	var/flags              //Special tweaks in new
 	var/category
 	var/list/gear_tweaks = list() //List of datums which will alter the item after it has been spawned.
+	var/implanted = FALSE //is this item implanted? Used for augments / Implants.
+	var/doubleup = FALSE //Do we have two? Used for muscule augments right now, but should work for anything assuming the augment does onInstall()
 
 /datum/gear/New()
 	if(FLAGS_EQUALS(flags, GEAR_HAS_TYPE_SELECTION|GEAR_HAS_SUBTYPE_SELECTION))
@@ -396,6 +398,9 @@ var/list/gear_datums = list()
 	var/obj/item/item = spawn_item(H, metadata)
 	item.add_fingerprint(H)
 
+	if(implanted)
+		implant_into_mob(H, item)
+		return //avoids weird stuff.
 	var/atom/placed_in = H.equip_to_storage(item)
 	if(placed_in)
 		to_chat(H, "<span class='notice'>Placing \the [item] in your [placed_in.name]!</span>")
@@ -405,3 +410,24 @@ var/list/gear_datums = list()
 		to_chat(H, "<span class='notice'>Placing \the [item] in your hands!</span>")
 	else
 		to_chat(H, "<span class='danger'>Dropping \the [item] on the ground!</span>")
+
+/datum/gear/proc/implant_into_mob(var/mob/living/carbon/human/H, obj/item/I)
+	var/obj/item/organ/external/organ_to_implant_into = H.get_organ(BP_CHEST)
+
+	if(istype(I, /obj/item/organ/internal/augment)) //We are an augment, figure out the parent organ we go into.
+		var/obj/item/organ/internal/augment/A = I
+		//check if the implant requires a robotic limb.
+		var/implantloc = A.parent_organ
+		organ_to_implant_into = H.get_organ(implantloc)
+		if(A.augment_flags == AUGMENTATION_MECHANIC)
+			if(!BP_IS_ROBOTIC(organ_to_implant_into))
+				to_chat(H, SPAN_WARNING("Your [organ_to_implant_into.name] is not robotic, and therefore the [A] can not be installed!"))
+				return
+		A.replaced(H, organ_to_implant_into)
+		to_chat(H, SPAN_NOTICE("Implanting you with [A] in your [organ_to_implant_into.name]!"))
+
+	if(istype(I, /obj/item/weapon/implant))
+		var/obj/item/weapon/implant/IM = I
+		IM.forceMove(organ_to_implant_into)
+		IM.implanted(H) //just in case
+		to_chat(H, SPAN_NOTICE("Implanting you with [IM] in your [organ_to_implant_into.name]!"))
