@@ -15,6 +15,7 @@ LEGACY_RECORD_STRUCTURE(virus_records, virus_record)
 
 /datum/disease2/disease/New()
 	uniqueID = rand(0,10000)
+	qdel(src)
 	..()
 
 /datum/disease2/disease/proc/makerandom(var/severity=2)
