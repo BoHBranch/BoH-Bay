@@ -107,7 +107,7 @@
 
 	if((occupant) && (occupant.loc == src))
 
-		if(occupant.getCloneLoss() == heal_level && !eject_wait)
+		if(occupant.getCloneLoss() <= heal_level && !eject_wait)
 			playsound(src.loc, 'sound/machines/ding.ogg', 50, 1)
 			src.audible_message("\The [src] signals that the cloning process is complete.")
 			connected_message("Cloning Process Complete.")
