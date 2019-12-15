@@ -167,7 +167,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	. += "<br>"
 	if(config.use_cortical_stacks)
 		. += "Neural lace: "
-		if(mob_species.spawn_flags & SPECIES_NO_LACE || SPECIES_NO_ROBOTIC_INTERNAL_ORGANS)
+		if(mob_species.spawn_flags & SPECIES_NO_LACE)
 			. += "incompatible."
 		else
 			. += pref.has_cortical_stack ? "present." : "<b>not present.</b>"
