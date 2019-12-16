@@ -38,3 +38,12 @@
 /area/psych_ward_boh/main/ent
 	name = "\improper Ward Entrance"
 	icon_state = "psychent"
+
+/////////
+// Sec Triage
+/////////
+
+/area/security/triage
+	name = "\improper Security Wing"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "triage"
