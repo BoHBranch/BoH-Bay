@@ -16,6 +16,7 @@
 	action_button_name = "Toggle Nanomachines"
 	var/obj/aura/nanoaura/aura = null
 	var/charges = 4
+	var/list/memesounds = list('sound/effects/nanomachines/nanomachinesson.ogg', 'sound/effects/nanomachines/physicaltrauma.ogg')
 
 
 /obj/item/organ/internal/augment/active/nanounit/onInstall()
@@ -63,6 +64,9 @@
 		user.visible_message(SPAN_WARNING("The nanomachines harden as a response to physical trauma!"))
 		playsound(user,'sound/effects/basscannon.ogg',35,1)
 		unit.charges -= 1
+		if(prob(1))
+			var/memesound = pick(unit.memesounds)
+			playsound(user, memesound, 35, 1)
 		if(unit.charges <= 0)
 			to_chat(user, SPAN_DANGER("Warning: Critical damage treshold passed. Shut down unit to avoid further damage"))
 		return AURA_FALSE|AURA_CANCEL
