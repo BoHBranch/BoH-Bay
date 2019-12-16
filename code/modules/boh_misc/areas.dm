@@ -23,3 +23,17 @@
 /area/crew_quarters_boh/cabin_main/janitorial
 	name = "\improper Cabin Janitorial"
 	icon_state = "janitor"
+
+/////////
+// Viro 2.0
+/////////
+
+/area/psych_quarters_boh/cabin_main
+	name = "\improper Cabin Primary"
+	icon_state = "crew_quarters"
+	area_flags = AREA_FLAG_RAD_SHIELDED
+	sound_env = MEDIUM_SOFTFLOOR
+
+/area/psych_quarters_boh/cabin_main/c1
+	name = "\improper Cabin One"
+	icon_state = "Sleep"
