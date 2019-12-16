@@ -9,9 +9,10 @@
 	slot = ACCESSORY_SLOT_INSIGNIA
 	check_codex_val = FACTION_MARINES
 
+// working title before supervisors finally decide on proper one
 /obj/item/clothing/accessory/solgov/smc_patch/xeno
-	name = "\improper 13th Marine Platoon patch"
-	desc = "A robust shoulder patch, carrying the symbol-mascot of 13th platoon, yellow-eyed hellhound."
+	name = "\improper Xenoic division of Marine Corps patch"
+	desc = "A robust shoulder patch, carrying the symbol-mascot of Xenoic division, yellow-eyed devil dog."
 	icon_state = "smcpatch13"
 
 // ranks - proper marines
