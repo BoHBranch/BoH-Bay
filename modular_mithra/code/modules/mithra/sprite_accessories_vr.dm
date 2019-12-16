@@ -606,6 +606,7 @@
 	desc = ""
 	icon_state = "drago_wing"
 	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "drago_wing_2"
 
 /*
