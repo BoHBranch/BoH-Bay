@@ -16,8 +16,26 @@
 	action_button_name = "Toggle Nanomachines"
 	var/obj/aura/nanoaura/aura = null
 	var/charges = 4
+	var/max_charges = 4
 	var/list/memesounds = list('sound/effects/nanomachines/nanomachinesson.ogg', 'sound/effects/nanomachines/physicaltrauma.ogg')
+	var/next_regen_time
+	var/regen_delay = 5 MINUTES
+	var/regen_amount = 1
 
+/obj/item/organ/internal/augment/active/nanounit/Initialize()
+	. = ..()
+	next_regen_time = world.time + regen_delay
+	START_PROCESSING(SSobj, src)
+
+/obj/item/organ/internal/augment/active/nanounit/Destroy()
+	STOP_PROCESSING(SSobj, src)
+
+/obj/item/organ/internal/augment/active/nanounit/Process()
+	if(next_regen_time < world.time && (charges != max_charges))
+		charges += regen_amount
+		to_chat(owner, SPAN_NOTICE("Nanite MCU: Nanomaterial reprocessing complete - charge added. Current charges: [charges]."))
+		next_regen_time = world.time + regen_delay
+	..()
 
 /obj/item/organ/internal/augment/active/nanounit/onInstall()
 	aura = new /obj/aura/nanoaura(owner, src)
