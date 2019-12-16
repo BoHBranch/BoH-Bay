@@ -28,12 +28,13 @@
 // Viro 2.0
 /////////
 
-/area/psych_quarters_boh/cabin_main
-	name = "\improper Cabin Primary"
-	icon_state = "crew_quarters"
+/area/psych_ward_boh/main
+	name = "\improper Psychiatric Ward"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "psych"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	sound_env = MEDIUM_SOFTFLOOR
 
-/area/psych_quarters_boh/cabin_main/c1
-	name = "\improper Cabin One"
-	icon_state = "Sleep"
+/area/psych_ward_boh/main/ent
+	name = "\improper Ward Entrance"
+	icon_state = "psychent"
