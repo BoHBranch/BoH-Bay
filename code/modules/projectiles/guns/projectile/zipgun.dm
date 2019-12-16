@@ -10,6 +10,7 @@
 	max_shells = 1 //literally just a barrel
 	has_safety = FALSE
 	w_class = ITEM_SIZE_NORMAL
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 1, TECH_ESOTERIC = 2)
 
 	var/global/list/ammo_types = list(
 		/obj/item/ammo_casing/pistol,
