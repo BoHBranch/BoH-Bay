@@ -75,7 +75,6 @@
 		if(6) user << "It has a secured reciever in place."
 		if(7) user << "It has an unfinished pipe bolt in place."
 		if(8) user << "It has a finished unsecured pipe bolt in place."
-		if(9) user << "It has a finished secured bolt in place."
 
 /obj/item/weapon/imprifleframe/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/pipe))
