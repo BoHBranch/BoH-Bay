@@ -111,7 +111,7 @@
 /datum/mil_branch/marine_corps
 	name = "Solar Marine Corps"
 	name_short = "SMC"
-	email_domain = "oorah.mil"
+	email_domain = "dagon.oorah.mil"
 
 // Uses SCG Army's uniforms, at least for now.
 	rank_types = list(
