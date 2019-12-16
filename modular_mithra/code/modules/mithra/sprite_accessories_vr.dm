@@ -1215,6 +1215,25 @@
 	icon_state = "cyberdoe_s"
 	do_colouration = 0
 
+
+/datum/sprite_accessory/wing/moth_full
+	name = "moth antenna and wings"
+	desc = ""
+	icon_state = "moth_full"
+
+/datum/sprite_accessory/wing/Moth_royal
+	name = "moth royal"
+	desc = ""
+	icon_state = "Moth_royal"
+
+
+/datum/sprite_accessory/wing/Moth_royal_colorable
+	name = "moth royal, colorable"
+	desc = ""
+	icon_state = "Moth_royal_colorable"
+	do_colouration = 1
+	blend = ICON_MULTIPLY
+
 //Taurs moved to a separate file due to extra code around them
 
 //Buggo Abdomens!
