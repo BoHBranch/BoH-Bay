@@ -3,14 +3,15 @@
 	supervisors = "Central Command and the Sol Code of Military Justice"
 	minimal_player_age = 14
 	economic_power = 15
-	minimum_character_age = list(SPECIES_HUMAN = 40)
+	minimum_character_age = list(SPECIES_HUMAN = 40,SPECIES_UNATHI = 40,SPECIES_SERGAL = 40, SPECIES_NORTHERN = 40, SPECIES_EASTERN = 40, SPECIES_SKRELL = 40, SPECIES_PROMETHEAN = 40, SPECIES_YEOSA = 40)
 	ideal_character_age = 50
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/CO
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o6
+		/datum/mil_rank/ec/o6,
+		/datum/mil_rank/fleet/o6
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
@@ -40,7 +41,7 @@
 	department_flag = COM
 	minimal_player_age = 14
 	economic_power = 10
-	minimum_character_age = list(SPECIES_HUMAN = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_NORTHERN = 35, SPECIES_EASTERN = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35)
 	ideal_character_age = 45
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/XO
 	allowed_branches = list(
@@ -98,7 +99,7 @@
 	supervisors = "the Commanding Officer"
 	economic_power = 20
 	minimal_player_age = 14
-	minimum_character_age = list(SPECIES_HUMAN = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_NORTHERN = 35, SPECIES_EASTERN = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35)
 	ideal_character_age = 60
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/cso
 	allowed_branches = list(
@@ -145,7 +146,7 @@
 	supervisors = "the Commanding Officer and the Executive Officer"
 	economic_power = 10
 	minimal_player_age = 14
-	minimum_character_age = list(SPECIES_HUMAN = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_NORTHERN = 35, SPECIES_EASTERN = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35)
 	ideal_character_age = 48
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cmo
 	allowed_branches = list(
@@ -187,7 +188,7 @@
 	title = "Chief Engineer"
 	supervisors = "the Commanding Officer and the Executive Officer"
 	economic_power = 9
-	minimum_character_age = list(SPECIES_HUMAN = 27)
+	minimum_character_age = list(SPECIES_HUMAN = 27,SPECIES_UNATHI = 27,SPECIES_SERGAL = 27, SPECIES_NORTHERN = 27, SPECIES_EASTERN = 27, SPECIES_SKRELL = 27, SPECIES_PROMETHEAN = 27, SPECIES_YEOSA = 27)
 	ideal_character_age = 40
 	minimal_player_age = 14
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer
@@ -244,7 +245,7 @@
 	supervisors = "the Commanding Officer and the Executive Officer"
 	economic_power = 8
 	minimal_player_age = 14
-	minimum_character_age = list(SPECIES_HUMAN = 25)
+	minimum_character_age = list(SPECIES_HUMAN = 25,SPECIES_UNATHI = 25,SPECIES_SERGAL = 25, SPECIES_NORTHERN = 25, SPECIES_EASTERN = 25, SPECIES_SKRELL = 25, SPECIES_PROMETHEAN = 25, SPECIES_YEOSA = 25)
 	ideal_character_age = 35
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cos
 	allowed_branches = list(
@@ -318,7 +319,7 @@
 	selection_color = "#2f2f7f"
 	minimal_player_age = 14
 	economic_power = 8
-	minimum_character_age = list(SPECIES_HUMAN = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_NORTHERN = 35, SPECIES_EASTERN = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35)
 	ideal_character_age = 45
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	allowed_branches = list(
@@ -364,7 +365,7 @@
 	selection_color = "#2f2f7f"
 	minimal_player_age = 0
 	economic_power = 7
-	minimum_character_age = list(SPECIES_HUMAN = 22)
+	minimum_character_age = list(SPECIES_HUMAN = 22,SPECIES_UNATHI = 22,SPECIES_SERGAL = 22, SPECIES_NORTHERN = 22, SPECIES_EASTERN = 22, SPECIES_SKRELL = 22, SPECIES_PROMETHEAN = 22, SPECIES_YEOSA = 22)
 	ideal_character_age = 24
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	allowed_branches = list(
