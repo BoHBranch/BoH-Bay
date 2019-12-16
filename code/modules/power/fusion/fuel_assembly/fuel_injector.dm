@@ -7,6 +7,10 @@
 	req_access = list(access_engine)
 	idle_power_usage = 10
 	active_power_usage = 500
+	construct_state = /decl/machine_construction/default/panel_closed
+	uncreated_component_parts = null
+	stat_immune = 0
+	base_type = /obj/machinery/fusion_fuel_injector
 
 	var/fuel_usage = 0.001
 	var/initial_id_tag
