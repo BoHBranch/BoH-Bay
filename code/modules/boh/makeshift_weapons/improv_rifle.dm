@@ -154,7 +154,7 @@
 			qdel(src)
 		return
 	else if(istype(W,/obj/item/weapon/circular_saw))
-		if(buildstate == 8)
+		if(buildstate == 7)
 			user << "<span class='notice'>You saw the barrel on the unfinished improvised rifle down.</span>"
 			new /obj/item/weapon/imprifleframe/imprifleframesawn(get_turf(src))
 			playsound(src.loc, 'sound/weapons/circsawhit.ogg', 100, 1)
