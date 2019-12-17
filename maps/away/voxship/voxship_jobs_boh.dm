@@ -7,7 +7,10 @@
 	whitelisted_species = list(SPECIES_VOX_ARMALIS)
 	blacklisted_species = null
 	is_semi_antagonist = TRUE
-
+	min_skill = list(   SKILL_EVA         = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_ADEPT,
+	                    SKILL_WEAPONS     = SKILL_BASIC)
+	skill_points = 20
 
 /obj/effect/submap_landmark/spawnpoint/voxarm_crew
 	name = "Shoal Armalis"
