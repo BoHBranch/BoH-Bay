@@ -271,6 +271,7 @@ steam.start() -- spawns the effect
 
 /obj/effect/effect/smoke/mustard
 	name = "mustard gas"
+	icon = 'icons/effects/effects.dmi'
 	icon_state = "mustard"
 
 /obj/effect/effect/smoke/mustard/Move()

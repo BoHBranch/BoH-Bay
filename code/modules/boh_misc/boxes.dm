@@ -46,3 +46,12 @@
 			if(istype(AM, /obj/item/weapon/gun/))
 				to_chat(user, "You have chosen \the [AM]. This is probably worth more than what your paycheck can be used for.")
 		qdel(src)
+
+/////////
+// Illum Box
+/////////
+
+/obj/item/weapon/storage/box/illumnades
+	name = "box of illumination grenades"
+	desc = "Designed to illuminate an area without the use of a flame or electronics, regardless of the atmosphere."
+	startswith = list(/obj/item/weapon/grenade/light = 6)
