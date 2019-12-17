@@ -54,4 +54,5 @@
 /obj/item/weapon/storage/box/illumnades
 	name = "box of illumination grenades"
 	desc = "Designed to illuminate an area without the use of a flame or electronics, regardless of the atmosphere."
+	icon_state = "flashbang"
 	startswith = list(/obj/item/weapon/grenade/light = 6)
