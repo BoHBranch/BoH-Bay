@@ -25,6 +25,10 @@
 	name = "heavy box of shotgun slugs"
 	startswith = list(/obj/item/ammo_magazine/shotholder = 7)
 
+/obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full
+	name = "heavy box of rubbershot"
+	startswith = list(/obj/item/ammo_magazine/shotholder/birdshot = 7)
+
 /////////
 // Officer Lockbox
 /////////
@@ -46,3 +50,13 @@
 			if(istype(AM, /obj/item/weapon/gun/))
 				to_chat(user, "You have chosen \the [AM]. This is probably worth more than what your paycheck can be used for.")
 		qdel(src)
+
+/////////
+// Illum Box
+/////////
+
+/obj/item/weapon/storage/box/illumnades
+	name = "box of illumination grenades"
+	desc = "Designed to illuminate an area without the use of a flame or electronics, regardless of the atmosphere."
+	icon_state = "flashbang"
+	startswith = list(/obj/item/weapon/grenade/light = 6)
