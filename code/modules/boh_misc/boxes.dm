@@ -25,6 +25,10 @@
 	name = "heavy box of shotgun slugs"
 	startswith = list(/obj/item/ammo_magazine/shotholder = 7)
 
+/obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full
+	name = "heavy box of rubbershot"
+	startswith = list(/obj/item/ammo_magazine/shotholder/birdshot = 7)
+
 /////////
 // Officer Lockbox
 /////////
