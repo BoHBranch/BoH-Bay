@@ -309,7 +309,7 @@
 	return "You are the Sol Gov Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and corporate interests on board. Send faxes back to Sol on mission progress and important events."
 
 /datum/job/sea
-	title = "Senior Enlisted Advisor"
+	title = "Senior Enlisted Advisor of Fleet"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1

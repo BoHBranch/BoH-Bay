@@ -20,6 +20,14 @@
 	uniform = /obj/item/clothing/under/solgov/utility/army/security
 	shoes = /obj/item/clothing/shoes/dutyboots
 
+/decl/hierarchy/outfit/job/torch/crew/command/sea/marine
+	name = OUTFIT_JOB_NAME("Senior Enlisted Advisor - Marine Corps")
+	uniform = /obj/item/clothing/under/solgov/utility/army/command
+	shoes = /obj/item/clothing/shoes/dutyboots
+	l_ear = /obj/item/device/radio/headset/sea
+	id_type = /obj/item/weapon/card/id/torch/crew/sea
+	pda_type = /obj/item/modular_computer/pda/heads
+
 /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/marine
 	name = OUTFIT_JOB_NAME("Bridge Officer - Marine Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/army/command
