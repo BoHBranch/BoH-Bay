@@ -72,10 +72,9 @@
 	descriptor = "Shoal forward base"
 	map = "Vox Base"
 	crew_jobs = list(
-		/datum/job/submap/voxship_vox,
-		/datum/job/submap/voxship_arm
+		/datum/job/submap/voxship_vox
 	)
-	whitelisted_species = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
+	whitelisted_species = list(SPECIES_VOX)
 	blacklisted_species = null
 	call_webhook = WEBHOOK_SUBMAP_LOADED_VOX
 
