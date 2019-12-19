@@ -60,3 +60,11 @@
 	desc = "Designed to illuminate an area without the use of a flame or electronics, regardless of the atmosphere."
 	icon_state = "flashbang"
 	startswith = list(/obj/item/weapon/grenade/light = 6)
+
+/////////
+// Explosive Duffle
+/////////
+// LOTS O' C4
+/obj/item/weapon/storage/backpack/dufflebag/syndie/c4
+	name = "hefty bag"
+	startswith = list(/obj/item/weapon/plastique = 19)
