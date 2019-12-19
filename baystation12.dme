@@ -1438,6 +1438,7 @@
 #include "code\modules\boh_misc\areas.dm"
 #include "code\modules\boh_misc\badges.dm"
 #include "code\modules\boh_misc\boxes.dm"
+#include "code\modules\boh_misc\cards.dm"
 #include "code\modules\boh_misc\clothing.dm"
 #include "code\modules\boh_misc\firearms.dm"
 #include "code\modules\boh_misc\munitions.dm"
