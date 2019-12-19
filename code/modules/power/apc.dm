@@ -44,6 +44,13 @@
 GLOBAL_LIST_INIT(global_apc_list,list())
 
 // Various APC types
+/obj/machinery/power/apc/inactive
+	lighting = 0
+	equipment = 0
+	environ = 0
+	locked = 0
+	coverlocked = 0
+
 /obj/machinery/power/apc/critical
 	is_critical = 1
 

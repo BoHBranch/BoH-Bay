@@ -194,3 +194,4 @@
 /decl/emote/audible/oorah
 	key = "oorah"
 	emote_message_3p= "USER oorahs!"
+	emote_message_3p_target= "USER oorahs at TARGET!"

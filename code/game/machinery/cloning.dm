@@ -36,8 +36,8 @@
 	return attack_hand(user)
 
 /obj/machinery/clonepod/Initialize()
-	. = ..()
 	..()
+	return INITIALIZE_HINT_LATELOAD
 
 //Start growing a human clone in the pod!
 /obj/machinery/clonepod/proc/growclone(var/datum/dna2/record/R)
@@ -107,7 +107,7 @@
 
 	if((occupant) && (occupant.loc == src))
 
-		if(occupant.getCloneLoss() == heal_level && !eject_wait)
+		if(occupant.getCloneLoss() <= heal_level && !eject_wait)
 			playsound(src.loc, 'sound/machines/ding.ogg', 50, 1)
 			src.audible_message("\The [src] signals that the cloning process is complete.")
 			connected_message("Cloning Process Complete.")

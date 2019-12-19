@@ -5,7 +5,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "maintenance_jack"
-	force = 17.5 //It has a hammer head, should probably do some more damage. - Cirra
+	force = 24 //It has a hammer head, should probably do some more damage. - Cirra
 	attack_cooldown = 2.5*DEFAULT_WEAPON_COOLDOWN
 	melee_accuracy_bonus = -25
 

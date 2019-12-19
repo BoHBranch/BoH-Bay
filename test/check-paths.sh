@@ -31,13 +31,12 @@ exactly 10 "/obj text paths" '"/obj'
 exactly 8 "/turf text paths" '"/turf'
 exactly 1 "world<< uses" 'world<<|world[[:space:]]<<'
 exactly 43 "world.log<< uses" 'world.log<<|world.log[[:space:]]<<'
-exactly 485 "<< uses" '(?<!<)<<(?!<)' -P
-exactly 1 "incorrect indentations" '^( {4,})' -P
-#When I find that last indention in the 600 some odd mirtha files. For now we set to ignore since I don't see any major runtimes from it.
-exactly 27 "text2path uses" 'text2path'
+exactly 476 "<< uses" '(?<!<)<<(?!<)' -P
+exactly 0 "incorrect indentations" '^( {4,})' -P
+exactly 24 "text2path uses" 'text2path'
 exactly 3 "update_icon() override" '/update_icon\((.*)\)'  -P
-exactly 0 "goto uses" 'goto '
-exactly 526 "spawn uses" 'spawn\s*\(\s*(-\s*)?\d*\s*\)' -P
+exactly 1 "goto uses" 'goto '
+exactly 511 "spawn uses" 'spawn\s*\(\s*(-\s*)?\d*\s*\)' -P
 # With the potential exception of << if you increase any of these numbers you're probably doing it wrong
 
 broken_files=0

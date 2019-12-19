@@ -12,6 +12,12 @@
 		/obj/item/weapon/wirecutters/finger,
 		/obj/item/device/multitool/finger
 	)
+//This is a hack, but i'm too fucking lazy to deal with it.
+/obj/item/organ/internal/augment/active/polytool/engineer/left
+	allowed_organs = list(BP_AUGMENT_L_ARM)
+
+/obj/item/organ/internal/augment/active/polytool/engineer/right
+	allowed_organs = list(BP_AUGMENT_R_ARM)
 
 /obj/item/weapon/weldingtool/finger
 	name = "digital welder"

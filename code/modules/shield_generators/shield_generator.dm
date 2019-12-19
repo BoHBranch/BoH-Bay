@@ -38,6 +38,7 @@
 	var/idle_valid_values = list(1, 2, 5, 10)
 	var/spinup_delay      = 20
 	var/spinup_counter    = 0
+	var/inefficency_counter = 0 //increases power usage by this amount. increases by .005 per tick when shield is deployed.
 
 /obj/machinery/power/shield_generator/on_update_icon()
 	if(running)
@@ -154,8 +155,11 @@
 	mitigation_physical = between(0, mitigation_physical - MITIGATION_LOSS_PASSIVE, mitigation_max)
 
 	if(running == SHIELD_RUNNING)
-		upkeep_power_usage = round((field_segments.len - damaged_segments.len) * ENERGY_UPKEEP_PER_TILE * upkeep_multiplier)
+		inefficency_counter += 0.005
+		upkeep_power_usage = round((field_segments.len - damaged_segments.len) * ENERGY_UPKEEP_PER_TILE * (upkeep_multiplier * (1 + inefficency_counter)))
 	else if(running > SHIELD_RUNNING)
+		if(inefficency_counter > 0)
+			inefficency_counter -= 0.01
 		upkeep_power_usage = round(ENERGY_UPKEEP_IDLE * idle_multiplier * (field_radius * 8) * upkeep_multiplier) // Approximates number of turfs.
 
 	if(powernet && (running >= SHIELD_RUNNING) && !input_cut)
@@ -231,6 +235,7 @@
 	data["running"] = running
 	data["modes"] = get_flag_descriptions()
 	data["overloaded"] = overloaded
+	data["inefficency"] = round(inefficency_counter, 0.1)
 	data["mitigation_max"] = mitigation_max
 	data["mitigation_physical"] = round(mitigation_physical, 0.1)
 	data["mitigation_em"] = round(mitigation_em, 0.1)
@@ -308,7 +313,7 @@
 		var/old_energy = current_energy
 		shutdown_field()
 		log_and_message_admins("has triggered \the [src]'s emergency shutdown!", user)
-		spawn()	
+		spawn()
 			empulse(src, old_energy / 60000000, old_energy / 32000000, 1) // If shields are charged at 450 MJ, the EMP will be 7.5, 14.0625. 90 MJ, 1.5, 2.8125
 		old_energy = 0
 

@@ -24,13 +24,13 @@
 	name = "Tapeta Lucida"
 	desc = "Your eyes have a marginally retroreflective layer within their strucuture, allowing you to see slightly better in the dark."
 	cost = 1
-	var_changes = list("darksight_range" = 3, "darksight_tint" = DARKTINT_MODERATE)
+	var_changes = list("darksight_range" = 3)
 
 /datum/trait/darksight_plus
 	name = "Tapeta Lucida Majoris"
 	desc = "Your eyes have a retroreflective layer within their strucuture, allowing you to see much better in the dark."
 	cost = 2
-	var_changes = list("darksight_range" = 6, "darksight_tint" = DARKTINT_GOOD)
+	var_changes = list("darksight_range" = 6)
 
 /datum/trait/nonconductive
 	name = "Resistive Skin"

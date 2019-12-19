@@ -179,3 +179,12 @@ var/last_chew = 0
 	breakouttime = 200
 	cuff_type = "duct tape"
 	health = 50
+
+/////////
+// Fuzzy Cuffs. Kill me.
+/////////
+
+/obj/item/weapon/handcuffs/fuzzy
+	name = "fuzzy cuffs"
+	icon_state = "fuzzycuff"
+	desc = "Use this to keep... 'prisoners' in line."

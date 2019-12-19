@@ -26,6 +26,7 @@
 		/datum/mil_rank/fleet/o4,
 		/datum/mil_rank/ec/o3,
 		/datum/mil_rank/marine_corps/o3_alt,
+		/datum/mil_rank/marine_corps/o3_alt2,
 		/datum/mil_rank/marine_corps/o4
 	)
 
@@ -40,7 +41,8 @@
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3,
 		/datum/mil_rank/marine_corps/o2,
-		/datum/mil_rank/marine_corps/o3_alt
+		/datum/mil_rank/marine_corps/o3_alt,
+		/datum/mil_rank/marine_corps/o3_alt2
 	)
 
 /datum/job/hos
@@ -54,10 +56,28 @@
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3,
 		/datum/mil_rank/marine_corps/o2,
-		/datum/mil_rank/marine_corps/o3_alt
+		/datum/mil_rank/marine_corps/o3_alt,
+		/datum/mil_rank/marine_corps/o3_alt2
+	)
+
+/datum/job/sea/marine
+	title = "Senior Enlisted Advisor of Marine Corps"
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/marine
+	allowed_branches = list(
+		/datum/mil_branch/marine_corps
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/marine_corps/e8_alt,
+		/datum/mil_rank/marine_corps/e9,
+		/datum/mil_rank/marine_corps/e9_alt
 	)
 
 /datum/job/bridgeofficer
+	alt_titles = list(
+		"Helmsman",
+		"Tactical Officer",
+		"Sensor Operator"
+	)
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet,
@@ -228,8 +248,8 @@
 	alt_titles = list(
 		"Master at Arms",
 		"Enforcer",
-		"Military Police")
-
+		"Military Police"
+	)
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/maa/fleet,
