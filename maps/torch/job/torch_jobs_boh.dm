@@ -73,6 +73,11 @@
 	)
 
 /datum/job/bridgeofficer
+	alt_titles = list(
+		"Helmsman",
+		"Tactical Officer",
+		"Sensor Operator"
+	)
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/fleet,
@@ -243,8 +248,8 @@
 	alt_titles = list(
 		"Master at Arms",
 		"Enforcer",
-		"Military Police")
-
+		"Military Police"
+	)
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/maa/fleet,
