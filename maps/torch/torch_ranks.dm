@@ -186,7 +186,8 @@
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3,
 		/datum/mil_rank/fleet/o4,
-		/datum/mil_rank/fleet/o5
+		/datum/mil_rank/fleet/o5,
+		/datum/mil_rank/fleet/o6
 	)
 
 	assistant_job = /datum/job/crew

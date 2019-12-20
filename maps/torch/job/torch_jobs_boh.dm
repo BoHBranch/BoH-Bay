@@ -1,6 +1,17 @@
 // Consist of modular changes, for now.
 
 // Command
+/// Captain is basically a modular fix.
+/datum/job/captain
+	allowed_branches = list(
+		/datum/mil_branch/expeditionary_corps,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/CO/fleet
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/ec/o6,
+		/datum/mil_rank/fleet/o6
+	)
+
 /datum/job/hop
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
