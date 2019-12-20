@@ -11,6 +11,6 @@
 	whitelisted = list(SPECIES_HUMAN, SPECIES_IPC)
 
 /datum/gear/accessory/smc_patch_xenos
-	display_name = "Marine Corps patch (13th platoon)"
+	display_name = "Marine Corps patch (xenoic division)"
 	path = /obj/item/clothing/accessory/solgov/smc_patch/xeno
 	allowed_branches = list(/datum/mil_branch/marine_corps)

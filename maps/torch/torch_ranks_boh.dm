@@ -88,6 +88,9 @@
 				/datum/mil_rank/marine_corps/e5,
 				/datum/mil_rank/marine_corps/e6,
 				/datum/mil_rank/marine_corps/e7,
+				/datum/mil_rank/marine_corps/e8_alt,
+				/datum/mil_rank/marine_corps/e9,
+				/datum/mil_rank/marine_corps/e9_alt,
 				/datum/mil_rank/marine_corps/o1,
 				/datum/mil_rank/marine_corps/o2,
 				/datum/mil_rank/marine_corps/o3_alt2
@@ -102,6 +105,9 @@
 				/datum/mil_rank/marine_corps/e5,
 				/datum/mil_rank/marine_corps/e6,
 				/datum/mil_rank/marine_corps/e7,
+				/datum/mil_rank/marine_corps/e8_alt,
+				/datum/mil_rank/marine_corps/e9,
+				/datum/mil_rank/marine_corps/e9_alt,
 				/datum/mil_rank/marine_corps/o1,
 				/datum/mil_rank/marine_corps/o2,
 				/datum/mil_rank/marine_corps/o3_alt2
@@ -111,7 +117,7 @@
 /datum/mil_branch/marine_corps
 	name = "Solar Marine Corps"
 	name_short = "SMC"
-	email_domain = "oorah.mil"
+	email_domain = "dagon.oorah.mil"
 
 // Uses SCG Army's uniforms, at least for now.
 	rank_types = list(
@@ -149,6 +155,9 @@
 		/datum/mil_rank/marine_corps/e6,
 		/datum/mil_rank/marine_corps/e7,
 		/datum/mil_rank/marine_corps/e8,
+		/datum/mil_rank/marine_corps/e8_alt,
+		/datum/mil_rank/marine_corps/e9,
+		/datum/mil_rank/marine_corps/e9_alt,
 		/datum/mil_rank/marine_corps/o1,
 		/datum/mil_rank/marine_corps/o2,
 		/datum/mil_rank/marine_corps/o3_alt,

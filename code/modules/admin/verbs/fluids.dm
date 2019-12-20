@@ -6,6 +6,8 @@
 	if(!check_rights(R_SPAWN)) return
 	var/mob/user = usr
 	if(istype(user) && user.client)
+		log_admin("[key_name(usr)] has spawned water.")
+		message_admins("[usr.key] has spawned water!")
 		for(var/thing in trange(1, get_turf(user)))
 			var/turf/T = thing
 			T.add_fluid(2000, /datum/reagent/water)

@@ -24,14 +24,14 @@
 		/datum/species/tajaran= list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/sea),
 		/datum/species/vasilissan= list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/sea),
 		/datum/species/vulpkanin= list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/sea),
-		/datum/species/customhuman= list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/sea),
-		/datum/species/custom= list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/sea),
+		/datum/species/customhuman= list(HUMAN_ONLY_JOBS, /datum/job/representative),
+		/datum/species/custom= list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		//datum/species/tesh= list(HUMAN_ONLY_JOBS),
 	)
 #undef HUMAN_ONLY_JOBS
 
 	allowed_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos,
-						/datum/job/liaison, /datum/job/bodyguard, /datum/job/representative, /datum/job/sea,
+						/datum/job/liaison, /datum/job/bodyguard, /datum/job/representative, /datum/job/sea, /datum/job/sea/marine,
 						/datum/job/bridgeofficer, /datum/job/pathfinder, /datum/job/nt_pilot, /datum/job/explorer,
 						/datum/job/senior_engineer, /datum/job/engineer, /datum/job/roboticist, /datum/job/engineer_trainee,
 						/datum/job/officer, /datum/job/warden, /datum/job/detective,
