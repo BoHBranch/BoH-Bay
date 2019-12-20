@@ -1441,6 +1441,7 @@
 #include "code\modules\boh_misc\cards.dm"
 #include "code\modules\boh_misc\clothing.dm"
 #include "code\modules\boh_misc\firearms.dm"
+#include "code\modules\boh_misc\machinery.dm"
 #include "code\modules\boh_misc\munitions.dm"
 #include "code\modules\boh_misc\rig_modules.dm"
 #include "code\modules\boh_misc\rigs.dm"
