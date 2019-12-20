@@ -1,6 +1,6 @@
 /datum/sprite_accessory/hair/sergal
 	name = "sergal medicore"
-	icon = 'icons/mob/human_races/species/vox/hair.dmi'
+	icon = 'icons/mob/human_races/species/sergal/hair.dmi'
 	icon_state = "serg_medicore"
 	species_allowed = list(SPECIES_SERGAL)
 
