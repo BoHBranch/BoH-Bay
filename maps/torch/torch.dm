@@ -136,6 +136,7 @@
 	#include "loadout/loadout_shoes.dm"
 	#include "loadout/loadout_suit.dm"
 	#include "loadout/loadout_uniform.dm"
+	#include "loadout/loadout_uniform_boh.dm"
 	#include "loadout/loadout_xeno.dm"
 	#include "loadout/loadout_augments.dm"
 	#include "loadout/~defines.dm"

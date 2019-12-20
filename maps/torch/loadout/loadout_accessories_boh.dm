@@ -14,3 +14,54 @@
 	display_name = "Marine Corps patch (xenoic division)"
 	path = /obj/item/clothing/accessory/solgov/smc_patch/xeno
 	allowed_branches = list(/datum/mil_branch/marine_corps)
+
+/// Limb guards
+// Arms
+/datum/gear/tactical/arm_guards
+	display_name = "black arm guards"
+	path = /obj/item/clothing/accessory/armguards
+	cost = 2
+	allowed_roles = ARMORED_ROLES
+
+/datum/gear/tactical/arm_guards/navy
+	display_name = "navy arm guards"
+	path = /obj/item/clothing/accessory/armguards/navy
+	allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/civilian)
+
+/datum/gear/tactical/arm_guards/misc
+	display_name = "miscellaneous arm guards selection"
+	path = /obj/item/clothing/accessory/armguards
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
+
+/datum/gear/tactical/arm_guards/misc/New()
+	..()
+	var/arm_guards = list()
+	arm_guards["blue arm guards"] = /obj/item/clothing/accessory/armguards/blue
+	arm_guards["green arm guards"] = /obj/item/clothing/accessory/armguards/green
+	arm_guards["tan arm guards"] = /obj/item/clothing/accessory/armguards/tan
+	gear_tweaks += new/datum/gear_tweak/path(arm_guards)
+
+// Legs
+/datum/gear/tactical/leg_guards
+	display_name = "black leg guards"
+	path = /obj/item/clothing/accessory/legguards
+	cost = 2
+	allowed_roles = ARMORED_ROLES
+
+/datum/gear/tactical/leg_guards/navy
+	display_name = "navy leg guards"
+	path = /obj/item/clothing/accessory/legguards/navy
+	allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/civilian)
+
+/datum/gear/tactical/leg_guards/misc
+	display_name = "miscellaneous leg guards selection"
+	path = /obj/item/clothing/accessory/legguards
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
+
+/datum/gear/tactical/leg_guards/misc/New()
+	..()
+	var/leg_guards = list()
+	leg_guards["blue leg guards"] = /obj/item/clothing/accessory/legguards/blue
+	leg_guards["green leg guards"] = /obj/item/clothing/accessory/legguards/green
+	leg_guards["tan leg guards"] = /obj/item/clothing/accessory/legguards/tan
+	gear_tweaks += new/datum/gear_tweak/path(leg_guards)
