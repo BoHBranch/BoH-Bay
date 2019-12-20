@@ -3001,6 +3001,7 @@
 #include "code\modules\sprite_accessories\_accessory_skin.dm"
 #include "code\modules\sprite_accessories\accessory_booster.dm"
 #include "code\modules\sprite_accessories\accessory_ipc.dm"
+#include "code\modules\sprite_accessories\accessory_sergal.dm"
 #include "code\modules\sprite_accessories\accessory_skrell.dm"
 #include "code\modules\sprite_accessories\accessory_unathi.dm"
 #include "code\modules\sprite_accessories\accessory_vox.dm"
