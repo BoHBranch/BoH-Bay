@@ -1,5 +1,6 @@
 /datum/gear/uniform/misc_military
 	display_name = "military fatigue selection"
+	description = "A selection of military uniforms."
 	path = /obj/item/clothing/under
 	allowed_branches = MILITARY_BRANCHES
 
