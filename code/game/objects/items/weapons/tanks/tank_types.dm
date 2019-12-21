@@ -132,3 +132,12 @@
 	distribute_pressure = ONE_ATMOSPHERE*O2STANDARD
 	starting_pressure = list(GAS_NITROGEN = 10*ONE_ATMOSPHERE)
 	volume = 180
+
+ /*
+ * Extended Oxygen Tank
+ */
+/obj/item/weapon/tank/oxygen/exploration_oxygen
+    name = "extended oxygen tank"
+    desc = "A tank of oxygen meant for long hauls in space."
+    starting_pressure = list(GAS_OXYGEN = 6*ONE_ATMOSPHERE)
+    volume = 380 //extended for exploration use
