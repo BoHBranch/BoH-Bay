@@ -1,5 +1,5 @@
 "aa" = (/turf/space,/area/space)
-"ab" = (/obj/machinery/power/terminal{icon_state = "term"; dir = 1},/obj/structure/cable{icon_state = "0-4"; d2 = 4},/obj/machinery/telecomms/allinone/skrellscoutship,/obj/machinery/alarm/server{dir = 4; pixel_x = -22; pixel_y = 0; req_access = list("ACCESS_SKRELLSCOUT")},/obj/machinery/power/apc/debug/skrell{dir = 1; pixel_z = 24},/turf/simulated/floor/plating,/area/ship/skrellscoutship/maintenance/power)
+"ab" = (/obj/machinery/power/terminal{icon_state = "term"; dir = 1},/obj/structure/cable{icon_state = "0-4"; d2 = 4},/obj/machinery/telecomms/allinone/skrellscoutship,/obj/machinery/alarm/server{dir = 4; pixel_x = -22; pixel_y = 0; req_access = list("ACCESS_SKRELLSCOUT")},/obj/machinery/power/apc/debug/skrell{dir = 1; pixel_z = 0},/turf/simulated/floor/plating,/area/ship/skrellscoutship/maintenance/power)
 "ac" = (/turf/simulated/floor/reinforced/airless,/area/ship/skrellscoutship/solars)
 "ae" = (/obj/machinery/door/firedoor/autoset,/obj/machinery/door/airlock/glass{name = "Exercise Room"},/turf/simulated/floor/tiled/skrell,/area/ship/skrellscoutship/crew/fit)
 "ag" = (/obj/machinery/power/solar/improved,/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/reinforced/airless,/area/ship/skrellscoutship/solars)
