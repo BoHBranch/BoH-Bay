@@ -346,7 +346,7 @@
 	base_icon = "doublebed"
 
 /obj/structure/bed/double/padded/New(var/newloc)
-	..(newloc,"wood","cotton")
+	..(newloc, MATERIAL_WOOD, MATERIAL_CLOTH)
 
 /obj/structure/bed/double/post_buckle_mob(mob/living/M as mob)
 	if(M.buckled == src)
