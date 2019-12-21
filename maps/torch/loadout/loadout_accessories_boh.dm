@@ -20,7 +20,7 @@
 /datum/gear/tactical/arm_guards
 	display_name = "black arm guards"
 	path = /obj/item/clothing/accessory/armguards
-	cost = 2
+	cost = 1
 	allowed_roles = ARMORED_ROLES
 
 /datum/gear/tactical/arm_guards/navy
@@ -46,7 +46,7 @@
 /datum/gear/tactical/leg_guards
 	display_name = "black leg guards"
 	path = /obj/item/clothing/accessory/legguards
-	cost = 2
+	cost = 1
 	allowed_roles = ARMORED_ROLES
 
 /datum/gear/tactical/leg_guards/navy
