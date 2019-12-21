@@ -55,7 +55,8 @@
 			O.unwield()
 	return	unwield()
 
-/obj/item/weapon/oldtwohanded/update_icon()
+/obj/item/weapon/oldtwohanded/on_update_icon()
+	..()
 	icon_state = "[base_icon][wielded]"
 	item_state = icon_state
 
@@ -108,7 +109,7 @@
 	wield()
 		qdel(src)
 
-/obj/item/weapon/oldtwohanded/offhand/update_icon()
+/obj/item/weapon/oldtwohanded/offhand/on_update_icon()
 	return
 
 //spears, bay edition

@@ -582,7 +582,7 @@
 			var/mob/M = loc
 			M.update_inv_back()
 		ambulance_state = FALSE
-		set_light(2, 1, "#FF0000")
+		set_light(2, 1, "#ff0000")
 		while(ambulance)
 			playsound(src.loc, 'sound/items/amulanceweeoo.ogg', ambulance_volume, 0)
 			sleep(20)
@@ -600,9 +600,9 @@
 		return
 	if(world.time - ambulance_last_switch > 15)
 		ambulance_state = !(ambulance_state)
-		var/newlight = "#FF0000"
+		var/newlight = "#ff0000"
 		if(ambulance_state)
-			newlight = "#0000FF"
+			newlight = "#0000ff"
 		if (ismob(loc))
 			var/mob/M = loc
 			M.update_inv_back()
@@ -913,7 +913,7 @@
 	desc = "It's a large teshari egg."
 	icon = 'icons/vore/custom_items_vr.dmi'
 	icon_state = "tesh_egg"
-	filling_color = "#FDFFD1"
+	filling_color = "#fdffd1"
 	volume = 12
 
 /obj/item/weapon/reagent_containers/food/snacks/egg/teshari/New()
@@ -1016,7 +1016,7 @@
 	desc = "It's a large lizard egg."
 	icon = 'icons/vore/custom_items_vr.dmi'
 	icon_state = "egg_roiz"
-	filling_color = "#FDFFD1"
+	filling_color = "#fdffd1"
 	volume = 12
 
 /obj/item/weapon/reagent_containers/food/snacks/egg/roiz/New()
@@ -1071,7 +1071,7 @@
 	desc = "Such huge, sweet, fattening food. You feel gluttonous just looking at it."
 	icon = 'icons/vore/custom_items_vr.dmi'
 	icon_state = "chocolateegg_roiz"
-	filling_color = "#7D5F46"
+	filling_color = "#7d5f46"
 	nutriment_amt = 3
 	nutriment_desc = list("chocolate" = 5)
 	volume = 18
@@ -1231,7 +1231,7 @@
 	QDEL_NULL(spk)
 	return ..()
 
-/obj/item/device/perfect_tele/update_icon()
+/obj/item/device/perfect_tele/on_update_icon()
 	if(!power_source)
 		icon_state = "[initial(icon_state)]_o"
 	else if(ready && (power_source.check_charge(charge_cost) || power_source.fully_charged()))
@@ -1768,7 +1768,7 @@
 	w_class = ITEMSIZE_HUGE
 	origin_tech = list(TECH_COMBAT = 2)
 	attack_verb = list("beaten")
-	lightcolor = "#CC33FF"
+	lightcolor = "#cc33ff"
 
 	//Two Handed
 	var/wielded = 0
@@ -1801,7 +1801,8 @@
 		return 1
 	return 0
 
-/obj/item/weapon/melee/baton/fluff/stunstaff/update_icon()
+/obj/item/weapon/melee/baton/fluff/stunstaff/on_update_icon()
+	..()
 	icon_state = "[base_icon][wielded][status]"
 	item_state = icon_state
 	if(status==1)

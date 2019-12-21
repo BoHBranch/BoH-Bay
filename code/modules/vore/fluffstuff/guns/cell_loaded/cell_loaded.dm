@@ -110,7 +110,7 @@
 	chambered = null
 	return ..()
 
-/obj/item/weapon/gun/projectile/cell_loaded/update_icon()
+/obj/item/weapon/gun/projectile/cell_loaded/on_update_icon()
 	update_charge()
 
 	cut_overlays()
@@ -174,7 +174,7 @@
 	playsound(user.loc, 'sound/weapons/flipblade.ogg', 50, 1)
 	update_icon()
 
-/obj/item/ammo_magazine/cell_mag/update_icon()
+/obj/item/ammo_magazine/cell_mag/on_update_icon()
 	cut_overlays()
 	if(!stored_ammo.len)
 		return //Why bother
@@ -190,7 +190,7 @@
 		if(batt.shots_left)
 			var/ratio = CEILING(((batt.shots_left / initial(batt.shots_left)) * 4), 1) //4 is how many lights we have a sprite for
 			var/image/charge = image(icon, icon_state = "[chargename]_charge-[ratio]")
-			charge.color = "#29EAF4" //Could use battery color but eh.
+			charge.color = "#29eaf4" //Could use battery color but eh.
 			charge.pixel_x = current * x_offset
 			add_overlay(charge)
 
@@ -228,7 +228,7 @@
 	pixel_y = rand(-10, 10)
 	update_icon()
 
-/obj/item/ammo_casing/microbattery/update_icon()
+/obj/item/ammo_casing/microbattery/on_update_icon()
 	cut_overlays()
 
 	var/image/ends = image(icon, icon_state = "[initial(icon_state)]_ends")

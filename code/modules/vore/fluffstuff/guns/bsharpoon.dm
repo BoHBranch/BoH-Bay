@@ -85,7 +85,7 @@
 	to_chat(user,"<span class = 'info'>You change \the [src]'s mode to [mode ? "transmiting" : "receiving"].</span>")
 	update_icon()
 
-/obj/item/weapon/bluespace_harpoon/update_icon()
+/obj/item/weapon/bluespace_harpoon/on_update_icon()
 	if(transforming)
 		switch(mode)
 			if(0)

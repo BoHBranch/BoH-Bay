@@ -12,7 +12,7 @@
 	nodamage = 1
 	damage = 0
 	check_armour = "laser"
-	light_color = "#80F5FF"
+	light_color = "#80f5ff"
 
 	combustion = FALSE
 
@@ -25,7 +25,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/brute
 	name = "\'ML-3\' nanite cell - BRUTE"
-	type_color = "#BF0000"
+	type_color = "#bf0000"
 	type_name = "<span style='color:#BF0000;font-weight:bold;'>BRUTE</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/brute
 
@@ -37,7 +37,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/burn
 	name = "\'ML-3\' nanite cell - BURN"
-	type_color = "#FF8000"
+	type_color = "#ff8000"
 	type_name = "<span style='color:#FF8000;font-weight:bold;'>BURN</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/burn
 
@@ -49,7 +49,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/stabilize
 	name = "\'ML-3\' nanite cell - STABILIZE" //Disinfects all open wounds, cures oxy damage
-	type_color = "#0080FF"
+	type_color = "#0080ff"
 	type_name = "<span style='color:#0080FF;font-weight:bold;'>STABILIZE</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/stabilize
 
@@ -77,7 +77,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/toxin
 	name = "\'ML-3\' nanite cell - TOXIN"
-	type_color = "#00A000"
+	type_color = "#00a000"
 	type_name = "<span style='color:#00A000;font-weight:bold;'>TOXIN</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/toxin
 
@@ -89,7 +89,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/omni
 	name = "\'ML-3\' nanite cell - OMNI"
-	type_color = "#8040FF"
+	type_color = "#8040ff"
 	type_name = "<span style='color:#8040FF;font-weight:bold;'>OMNI</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/omni
 
@@ -117,7 +117,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/brute2
 	name = "\'ML-3\' nanite cell - BRUTE-II"
-	type_color = "#BF0000"
+	type_color = "#bf0000"
 	type_name = "<span style='color:#BF0000;font-weight:bold;'>BRUTE-II</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/brute2
 
@@ -129,7 +129,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/burn2
 	name = "\'ML-3\' nanite cell - BURN-II"
-	type_color = "#FF8000"
+	type_color = "#ff8000"
 	type_name = "<span style='color:#FF8000;font-weight:bold;'>BURN-II</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/burn2
 
@@ -141,7 +141,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/stabilize2
 	name = "\'ML-3\' nanite cell - STABILIZE-II" //Disinfects and bandages all open wounds, cures all oxy damage
-	type_color = "#0080FF"
+	type_color = "#0080ff"
 	type_name = "<span style='color:#0080FF;font-weight:bold;'>STABILIZE-II</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/stabilize2
 
@@ -164,7 +164,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/omni2
 	name = "\'ML-3\' nanite cell - OMNI-II"
-	type_color = "#8040FF"
+	type_color = "#8040ff"
 	type_name = "<span style='color:#8040FF;font-weight:bold;'>OMNI-II</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/omni2
 
@@ -179,7 +179,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/toxin2
 	name = "\'ML-3\' nanite cell - TOXIN-II"
-	type_color = "#00A000"
+	type_color = "#00a000"
 	type_name = "<span style='color:#00A000;font-weight:bold;'>TOXIN-II</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/toxin2
 
@@ -191,7 +191,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/haste
 	name = "\'ML-3\' nanite cell - HASTE"
-	type_color = "#FF3300"
+	type_color = "#ff3300"
 	type_name = "<span style='color:#FF3300;font-weight:bold;'>HASTE</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/haste
 
@@ -247,7 +247,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/brute3
 	name = "\'ML-3\' nanite cell - BRUTE-III"
-	type_color = "#BF0000"
+	type_color = "#bf0000"
 	type_name = "<span style='color:#BF0000;font-weight:bold;'>BRUTE-III</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/brute3
 
@@ -259,7 +259,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/burn3
 	name = "\'ML-3\' nanite cell - BURN-III"
-	type_color = "#FF8000"
+	type_color = "#ff8000"
 	type_name = "<span style='color:#FF8000;font-weight:bold;'>BURN-III</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/burn3
 
@@ -271,7 +271,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/toxin3
 	name = "\'ML-3\' nanite cell - TOXIN-III"
-	type_color = "#00A000"
+	type_color = "#00a000"
 	type_name = "<span style='color:#00A000;font-weight:bold;'>TOXIN-III</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/toxin3
 
@@ -283,7 +283,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/omni3
 	name = "\'ML-3\' nanite cell - OMNI-III"
-	type_color = "#8040FF"
+	type_color = "#8040ff"
 	type_name = "<span style='color:#8040FF;font-weight:bold;'>OMNI-III</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/omni3
 
@@ -327,7 +327,7 @@
 
 /obj/item/ammo_casing/microbattery/medical/normalsize
 	name = "\'ML-3\' nanite cell - NORMALSIZE"
-	type_color = "#C70FEC"
+	type_color = "#c70fec"
 	type_name = "<span style='color:#C70FEC;font-weight:bold;'>NORMALSIZE</span>"
 	projectile_type = /obj/item/projectile/beam/medical_cell/normalsize
 

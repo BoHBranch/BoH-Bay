@@ -54,7 +54,7 @@
 	return TRUE
 
 //Update icons from /tg/, so fancy! Use this more!
-/obj/item/weapon/gun/energy/protector/update_icon()
+/obj/item/weapon/gun/energy/protector/on_update_icon()
 	overlays.Cut()
 	var/ratio = 0
 
@@ -103,7 +103,7 @@
 /obj/item/projectile/beam/stun/protector
 	name = "protector stun beam"
 	icon_state = "omnilaser" //A little more cyan
-	light_color = "#00C6FF"
+	light_color = "#00c6ff"
 	agony = 50 //Normal is 40 when this was set
 	muzzle_type = /obj/effect/projectile/muzzle/laser_omni
 	tracer_type = /obj/effect/projectile/tracer/laser_omni

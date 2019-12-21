@@ -95,7 +95,7 @@
 	nodamage = 1
 	agony = 5
 	damage_type = HALLOSS
-	light_color = "#00CC33"
+	light_color = "#00cc33"
 
 	muzzle_type = /obj/effect/projectile/muzzle/laser_omni
 	tracer_type = /obj/effect/projectile/tracer/laser_omni
