@@ -409,7 +409,7 @@
 
 /obj/item/weapon/fluff/squeezetoy
 	name = "Stress relief squeeze toy"
-	desc = "A toy squeezed to relieve stress, it’s squeaker appears to be broken from over use."
+	desc = "A toy squeezed to relieve stress, it's squeaker appears to be broken from over use."
 	w_class = 1.0
 	icon = 'icons/vore/custom_items_yw.dmi'
 	icon_state = "squeezetoy"

@@ -516,4 +516,4 @@
 	description = "A slurry of compounds that contains the basic requirements for life."
 	taste_description = "salty meat"
 	reagent_state = LIQUID
-	color = "#DF9FBF"
+	color = "#df9fbf"

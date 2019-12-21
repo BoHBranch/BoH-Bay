@@ -77,7 +77,7 @@ var/const/RESIZE_A_SMALLTINY = (RESIZE_SMALL + RESIZE_TINY) / 2
 		var/aura_grow_to = change > 0 ? 2 : 0.5
 		var/aura_anim_duration = 5
 		var/aura_offset = change > 0 ? 0 : 10
-		var/aura_color = size_multiplier > new_size ? "#FF2222" : "#2222FF"
+		var/aura_color = size_multiplier > new_size ? "#ff2222" : "#2222ff"
 		var/aura_loops = round((duration)/aura_anim_duration)
 
 		animate_aura(src, color = aura_color, offset = aura_offset, anim_duration = aura_anim_duration, loops = aura_loops, grow_to = aura_grow_to)

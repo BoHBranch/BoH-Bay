@@ -5,11 +5,11 @@
 
 /datum/map/torch/get_map_info()
 	. = list()
-	. +=  "Congratulations on your employment aboard the NTSS (NanoTrasen Solarian Ship) Dagon."
-	. +=  "It is an Epsilon Class Vessel outfitted with state of the art medical, research, and security facilities for all your needs!"
-	. +=  ""
-	. +=  "It is a re-commissioned science vessel revamped to be closer to a military vessel."
-	. += "Capable of responding both to deal with most minor insurrectionist threats in a rapid fashion as well as explore any ‘forgotten’ planets in these sectors."
+	. += "Congratulations on your employment aboard the NTSS (NanoTrasen Solarian Ship) Dagon."
+	. += "It is an Epsilon Class Vessel outfitted with state of the art medical, research, and security facilities for all your needs!"
+	. += ""
+	. += "It is a re-commissioned science vessel revamped to be closer to a military vessel."
+	. += "Capable of responding both to deal with most minor insurrectionist threats in a rapid fashion as well as explore any 'forgotten' planets in these sectors."
 	return jointext(., "<br>")
 
 /datum/map/torch/send_welcome()
