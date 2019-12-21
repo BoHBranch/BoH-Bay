@@ -543,44 +543,44 @@
 
 //mech projectile weps
 
-/datum/design/item/exosuit/weapon/smg
+/datum/design/item/mechfab/exosuit/weapon/smg
 	name = "mounted submachine gun"
 	id = "mech_smg"
 	req_tech = list(TECH_COMBAT = 2, TECH_MATERIALS = 2)
 	build_path = /obj/item/mech_equipment/mounted_system/projectile
 	materials = list(DEFAULT_WALL_MATERIAL = 15000, "glass" = 5000)
 
-/datum/design/item/exosuit/weapon/assaultrifle
+/datum/design/item/mechfab/exosuit/weapon/assaultrifle
 	name = "mounted assault rifle"
 	id = "mech_assaultrifle"
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIALS = 4)
 	build_path = /obj/item/mech_equipment/mounted_system/projectile/assault_rifle
 	materials = list(DEFAULT_WALL_MATERIAL = 30000, "glass" = 5000, "silver" = 1000)
 
-/datum/design/item/exosuit/weapon/smg
+/datum/design/item/mechfab/exosuit/weapon/smg
 	name = "mounted heavy assault rifle"
 	id = "mech_heavy_ar"
 	req_tech = list(TECH_COMBAT = 6, TECH_MATERIALS = 6)
 	build_path = /obj/item/mech_equipment/mounted_system/projectile/bullpup
 	materials = list(DEFAULT_WALL_MATERIAL = 30000, "glass" = 10000, "silver" = 5000, "titanium" = 10000)
 
-/datum/design/item/mech_ammo
+/datum/design/item/mechfab/mech_ammo
 	category = "Misc"
 
-/datum/design/item/mech_ammo/smg
-	name = "large 7mm ammo box"
+/datum/design/item/mechfab/mech_ammo/smg
+	name = "large 9mm ammo box"
 	id = "mech_smg_ammo"
 	build_path = /obj/item/ammo_magazine/mecha/smg_top
 	materials = list(MATERIAL_STEEL = 7000)
 
-/datum/design/item/mech_ammo/ar
-	name = "large 7mm ammo box"
+/datum/design/item/mechfab/mech_ammo/ar
+	name = "large 7mmR ammo box"
 	id = "mech_ar_ammo"
 	build_path = /obj/item/ammo_magazine/mech/rifle
 	materials = list(MATERIAL_STEEL = 9000)
 
-/datum/design/item/mech_ammo/har
-	name = "large 7mm ammo box"
+/datum/design/item/mechfab/mech_ammo/har
+	name = "large 5mm ammo box"
 	id = "mech_HAR_ammo"
 	build_path = /obj/item/ammo_magazine/mech/mil_rifle
 	materials = list(MATERIAL_STEEL = 9000)
