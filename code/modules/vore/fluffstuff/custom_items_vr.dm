@@ -1231,7 +1231,7 @@
 	QDEL_NULL(spk)
 	return ..()
 
-/obj/item/device/perfect_tele/update_icon()
+/obj/item/device/perfect_tele/on_update_icon()
 	if(!power_source)
 		icon_state = "[initial(icon_state)]_o"
 	else if(ready && (power_source.check_charge(charge_cost) || power_source.fully_charged()))
@@ -1801,7 +1801,8 @@
 		return 1
 	return 0
 
-/obj/item/weapon/melee/baton/fluff/stunstaff/update_icon()
+/obj/item/weapon/melee/baton/fluff/stunstaff/on_update_icon()
+	..()
 	icon_state = "[base_icon][wielded][status]"
 	item_state = icon_state
 	if(status==1)

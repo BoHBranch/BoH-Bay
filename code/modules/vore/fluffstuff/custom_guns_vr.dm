@@ -88,13 +88,14 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    burst_accuracy=list(0,-15,-30), dispersion=list(0.0, 0.6, 0.6))
 		)
 
-/obj/item/weapon/gun/projectile/automatic/pdw/update_icon(var/ignore_inhands)
+/obj/item/weapon/gun/projectile/automatic/pdw/on_update_icon(ignore_inhands)
 	..()
 	if(istype(ammo_magazine,/obj/item/ammo_magazine/m9mm))
 		icon_state = "pdw-short"
 	else
 		icon_state = (ammo_magazine)? "pdw" : "pdw-empty"
-	if(!ignore_inhands) update_held_icon()
+	if(!ignore_inhands)
+		update_held_icon()
 
 // For general use
 /obj/item/weapon/gun/energy/imperial
@@ -235,11 +236,12 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/mtg)
 	load_method = MAGAZINE
 
-/obj/item/weapon/gun/projectile/automatic/stg/update_icon(var/ignore_inhands)
+/obj/item/weapon/gun/projectile/automatic/stg/on_update_icon(ignore_inhands)
 	..()
 	icon_state = (ammo_magazine)? "stg60" : "stg60-empty"
 	item_state = (ammo_magazine)? "arifle" : "arifle-empty"
-	if(!ignore_inhands) update_held_icon()
+	if(!ignore_inhands)
+		update_held_icon()
 
 //-----------------------Tranq Gun----------------------------------
 /obj/item/weapon/gun/projectile/dartgun/tranq
@@ -258,7 +260,7 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/chemdart)
 	auto_eject = 0
 
-/obj/item/weapon/gun/projectile/dartgun/tranq/update_icon()
+/obj/item/weapon/gun/projectile/dartgun/tranq/on_update_icon()
 	if(!ammo_magazine)
 		icon_state = "tranqgun"
 		return 1
@@ -283,7 +285,7 @@
 	item_icons = null
 	pixel_x = -16
 
-/obj/item/weapon/gun/projectile/automatic/carbine/fluff/ufarc/update_icon(var/ignore_inhands)
+/obj/item/weapon/gun/projectile/automatic/carbine/fluff/ufarc/on_update_icon(ignore_inhands)
 	..()
 	// TODO - Fix this for spriting different size magazines
 	icon_state = (ammo_magazine)? "ufarc" : "ufarc-empty"
@@ -301,7 +303,7 @@
 	item_state = "bullpup"
 	pixel_x = -16
 
-/obj/item/weapon/gun/projectile/automatic/carbine/fluff/g44/update_icon(var/ignore_inhands)
+/obj/item/weapon/gun/projectile/automatic/carbine/fluff/g44/on_update_icon(ignore_inhands)
 	..()
 	// TODO - Fix this for spriting different size magazines
 	icon_state = (ammo_magazine)? "g44" : "g44-empty"
@@ -398,7 +400,7 @@
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 4)
 
-/obj/item/weapon/gun/projectile/lamia/update_icon()
+/obj/item/weapon/gun/projectile/lamia/on_update_icon()
 	overlays.Cut()
 	if(!ammo_magazine)
 		return
@@ -421,8 +423,8 @@
 	fire_sound = 'sound/weapons/gunshot_pathetic.ogg'
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 3)
 
-/obj/item/weapon/gun/projectile/giskard/update_icon()
-	..()
+/obj/item/weapon/gun/projectile/giskard/on_update_icon()
+	. = ..()
 	if(ammo_magazine && ammo_magazine.stored_ammo.len)
 		icon_state = "giskardcivil"
 	else
@@ -438,8 +440,8 @@
 		list(mode_name="2-round bursts", burst=2, fire_delay=0.2, move_delay=4,    burst_accuracy=list(0,-15),       dispersion=list(1.2, 1.8)),
 		)
 
-/obj/item/weapon/gun/projectile/giskard/olivaw/update_icon()
-	..()
+/obj/item/weapon/gun/projectile/giskard/olivaw/on_update_icon()
+	. = ..()
 	if(ammo_magazine && ammo_magazine.stored_ammo.len)
 		icon_state = "olivawcivil"
 	else
@@ -463,7 +465,7 @@
 	else
 		overlays += "inspector_on"
 
-/obj/item/weapon/gun/projectile/revolver/consul/update_icon()
+/obj/item/weapon/gun/projectile/revolver/consul/on_update_icon()
 	overlays.Cut()
 	update_charge()
 
@@ -497,7 +499,7 @@
 	ratio = round(ratio, 0.25) * 100
 	overlays += "smg_[ratio]"
 
-/obj/item/weapon/gun/projectile/automatic/sol/update_icon()
+/obj/item/weapon/gun/projectile/automatic/sol/on_update_icon()
 	icon_state = (ammo_magazine)? "SMG-IS" : "SMG-IS-empty"
 	overlays.Cut()
 	update_charge()
@@ -528,7 +530,7 @@
 		if("stun") add_overlay("taser_pdw")
 		if("lethal") add_overlay("lazer_pdw")
 
-/obj/item/weapon/gun/energy/gun/martin/update_icon()
+/obj/item/weapon/gun/energy/gun/martin/on_update_icon()
 	cut_overlays()
 	update_mode()
 
@@ -771,7 +773,7 @@
 	recharging = 0
 	update_icon()
 
-/obj/item/weapon/gun/energy/frontier/update_icon()
+/obj/item/weapon/gun/energy/frontier/on_update_icon()
 	if(recharging)
 		icon_state = "[initial(icon_state)]_pump"
 		update_held_icon()
@@ -829,7 +831,7 @@
 		list(mode_name="low-power", fire_delay=8, projectile_type=/obj/item/projectile/beam/weaklaser, modifystate="carbinestun", charge_cost = 60),
 	)
 
-/obj/item/weapon/gun/energy/frontier/locked/carbine/update_icon()
+/obj/item/weapon/gun/energy/frontier/locked/carbine/on_update_icon()
 	if(recharging)
 		icon_state = "[modifystate]_pump"
 		update_held_icon()

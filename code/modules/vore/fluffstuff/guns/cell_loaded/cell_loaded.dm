@@ -110,7 +110,7 @@
 	chambered = null
 	return ..()
 
-/obj/item/weapon/gun/projectile/cell_loaded/update_icon()
+/obj/item/weapon/gun/projectile/cell_loaded/on_update_icon()
 	update_charge()
 
 	cut_overlays()
@@ -174,7 +174,7 @@
 	playsound(user.loc, 'sound/weapons/flipblade.ogg', 50, 1)
 	update_icon()
 
-/obj/item/ammo_magazine/cell_mag/update_icon()
+/obj/item/ammo_magazine/cell_mag/on_update_icon()
 	cut_overlays()
 	if(!stored_ammo.len)
 		return //Why bother
@@ -228,7 +228,7 @@
 	pixel_y = rand(-10, 10)
 	update_icon()
 
-/obj/item/ammo_casing/microbattery/update_icon()
+/obj/item/ammo_casing/microbattery/on_update_icon()
 	cut_overlays()
 
 	var/image/ends = image(icon, icon_state = "[initial(icon_state)]_ends")

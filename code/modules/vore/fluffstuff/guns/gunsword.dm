@@ -123,5 +123,5 @@
 			"<span class='danger'>\The [user] is falling on \the [src]! It looks like [TU.he] [TU.is] trying to commit suicide.</span>"))
 		return (BRUTELOSS|FIRELOSS)
 
-/obj/item/weapon/cell/device/weapon/gunsword/update_icon()
+/obj/item/weapon/cell/device/weapon/gunsword/on_update_icon()
 	overlays.Cut()
