@@ -103,7 +103,7 @@
 /obj/item/projectile/beam/stun/protector
 	name = "protector stun beam"
 	icon_state = "omnilaser" //A little more cyan
-	light_color = "#00C6ff"
+	light_color = "#00c6ff"
 	agony = 50 //Normal is 40 when this was set
 	muzzle_type = /obj/effect/projectile/muzzle/laser_omni
 	tracer_type = /obj/effect/projectile/tracer/laser_omni
