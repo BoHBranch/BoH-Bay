@@ -4,7 +4,7 @@
 /obj/item/clothing/mask/gas/skrell
 	name = "tactical mask"
 	desc = "A close-fitting tactical mask that can be connected to an air supply. This one appears to be fitted with incredibly advanced filters. \
-	You'd probably be safe wagering that nothing but Oxygen will be permited inside."
+	You'd probably be safe wagering that nothing but breathable air will be permited inside."
 	icon_state = "swat"
 	item_state = "swat"
 	armor = list(
@@ -14,7 +14,6 @@
 		bio = ARMOR_BIO_STRONG
 		) //Worse armor in trade for immunity from gasses.
 	filtered_gases = list(
-		GAS_NITROGEN,
 		GAS_CO2,
 		GAS_METHYL_BROMIDE,
 		GAS_PHORON,
