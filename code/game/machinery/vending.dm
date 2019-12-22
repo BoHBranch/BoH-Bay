@@ -1290,8 +1290,7 @@
 					/obj/item/weapon/haircomb/random = 8,
 					/obj/item/weapon/haircomb/brush = 4,
 					/obj/item/weapon/towel/random = 6,
-					/obj/item/weapon/reagent_containers/spray/cleaner/deodorant = 5,
-					/obj/item/clothing/under/bathrobe = 6
+					/obj/item/weapon/reagent_containers/spray/cleaner/deodorant = 5
 					)
 	contraband = list(/obj/item/weapon/inflatable_duck = 1)
 	prices = list(/obj/item/weapon/soap = 20,
@@ -1299,8 +1298,7 @@
 				  /obj/item/weapon/haircomb/random = 40,
 				  /obj/item/weapon/haircomb/brush = 80,
 				  /obj/item/weapon/towel/random = 50,
-				  /obj/item/weapon/reagent_containers/spray/cleaner/deodorant = 30,
-				  /obj/item/clothing/under/bathrobe = 45
+				  /obj/item/weapon/reagent_containers/spray/cleaner/deodorant = 30
 					)
 
 //a food variant of the boda machine - It carries slavic themed foods.. Mostly beer snacks

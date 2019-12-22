@@ -23,6 +23,13 @@
 	'Executive Officer' is stenciled onto the grip."
 	starts_loaded = 0
 
+/obj/item/weapon/gun/projectile/pistol/holdout/cap
+	name = "Lumoco P3"
+	desc = "The Lumoco Arms P3 Whisper. A small, easily concealable gun. \
+	On the grip is bold stamped lettering, 'NTSS Dagon, Custom Order'."
+	fire_delay = 2
+	starts_loaded = 0
+
 /////////
 // display
 /////////
@@ -59,3 +66,22 @@
 	charge_cost= 80
 	self_recharge = 1
 	move_delay = 1
+
+/////////
+// Skrell Launcher
+/////////
+/obj/item/weapon/gun/energy/charge
+	name = "Charge Rifle"
+	desc = "The ZT-8B, is a modification of the railgun rarely seen by anyone other than those within Skrellian SDTF ranks. This modification flips the railgun on its head, and changes the projectile altogether to a lower velocity 'gas' charge. \
+	The rotary magazine has been replaced with a 'hot' chamber, and the barrel has been shortened to accommodate for the new projectile."
+	icon = 'icons/boh/items/launchers.dmi' //really shitty cut of the railgun until an actual sprite is slapped up.
+	icon_state = "skrell_launcher"
+	item_state = "skrell_launcher"
+	slot_flags = SLOT_BACK|SLOT_BELT
+	cell_type = /obj/item/weapon/cell
+	self_recharge = 1
+	move_delay = 4
+	projectile_type=/obj/item/projectile/hotgas/skrell
+	charge_cost=620
+	wielded_item_state = "skrell_rifle-wielded"
+

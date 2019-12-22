@@ -49,3 +49,13 @@
 /obj/item/ammo_magazine/magnum/rubber
 	name = "less-lethal magazine"
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/rubber
+
+/////////
+// Skrell Gas Charge
+/////////
+/obj/item/projectile/hotgas/skrell
+	name = "gas"
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "mustard"
+	fire_sound = 'sound/effects/stealthoff.ogg'
+	silenced = FALSE
