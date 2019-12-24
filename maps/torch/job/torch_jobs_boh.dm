@@ -332,11 +332,21 @@
 
 /datum/job/crew
 	allowed_branches = list(
+		/datum/mil_branch/hayden_corp,
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/service/crewman/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/service/crewman/marine
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/hayden_corp/e1,
+		/datum/mil_rank/hayden_corp/e1_alt1,
+		/datum/mil_rank/hayden_corp/e1_alt2,
+		/datum/mil_rank/hayden_corp/e3,
+		/datum/mil_rank/hayden_corp/e5,
+		/datum/mil_rank/hayden_corp/e7,
+		/datum/mil_rank/hayden_corp/o1,
+		/datum/mil_rank/hayden_corp/o5,
+		/datum/mil_rank/hayden_corp/o10,
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,

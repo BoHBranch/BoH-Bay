@@ -115,3 +115,35 @@
 /obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o10
 	name = "ranks (O-10 general)"
 	desc = "Insignia denoting the rank of General."
+
+// rank - hayden corp
+/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted
+	name = "ranks (freesh meet)"
+	desc = "courage honor semper fi join now oorah"
+	icon = 'maps/torch/icons/obj/obj_accessories_haycor.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_haycor.dmi')
+	icon_state = "haydencorp"
+	on_rolled = list("down" = "none")
+
+/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/alt1
+	name = "ranks (flaffy)"
+
+/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/alt2
+	name = "ranks (vary cute)"
+
+/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e3
+	name = "ranks (pmc)"
+
+/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e5
+
+/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e7
+
+/obj/item/clothing/accessory/solgov/rank/hayden_corp/officer
+	name = "ranks (pmc officer)"
+	desc = "courage honor semper fi join now oorah"
+	icon_state = "haydencorp_flag"
+
+/obj/item/clothing/accessory/solgov/rank/hayden_corp/officer/o5
+
+/obj/item/clothing/accessory/solgov/rank/hayden_corp/officer/o10
+	name = "ranks (big boss)"

@@ -3,6 +3,7 @@
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/marine_corps,
+		/datum/mil_branch/hayden_corp,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
 		/datum/mil_branch/army,
@@ -10,10 +11,12 @@
 		/datum/mil_branch/skrell_fleet
 	)
 
+// HayCor is here for testing purposes.
 	spawn_branch_types = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/marine_corps,
+		/datum/mil_branch/hayden_corp,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
 		/datum/mil_branch/alien,
@@ -40,18 +43,28 @@
 		/datum/species/unathi     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
 		/datum/species/adherent   = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/sergal     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/sergal/northern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/sergal/eastern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
+		/datum/species/sergal/northern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/hayden_corp),
+		/datum/species/sergal/eastern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/hayden_corp),
 		/datum/species/akula     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/custom      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
 		/datum/species/humanathi      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
-		/datum/species/tajaran      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
+		/datum/species/tajaran      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps, /datum/mil_branch/hayden_corp),
 		/datum/species/vasilissan      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/vulpkanin      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/customhuman      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
-		//datum/species/tesh/  list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
+		/datum/species/vulpkanin      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/hayden_corp),
+		/datum/species/customhuman      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps, /datum/mil_branch/hayden_corp),
+		//datum/species/tesh/  list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/hayden_corp),
 		/datum/species/vox        = list(/datum/mil_branch/alien),
 		/datum/species/vox/armalis        = list(/datum/mil_branch/alien)
+	)
+
+// ONLY FLAFFY AND VARY CUTE XENON!!1
+	species_to_rank_blacklist = list(
+		/datum/species/human = list(
+			/datum/mil_branch/hayden_corp = list(
+				/datum/mil_rank/hayden_corp/e1_alt1,
+				/datum/mil_rank/hayden_corp/e1_alt2
+			)
+		)
 	)
 
 	species_to_rank_whitelist = list(
@@ -114,6 +127,7 @@
 			)
 		)
 	)
+
 /datum/mil_branch/marine_corps
 	name = "Solar Marine Corps"
 	name_short = "SMC"
@@ -314,4 +328,98 @@
 	name = "General"
 	name_short = "Gen"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o10)
+	sort_order = 20
+
+// courage honor semper fi join now oorah
+/datum/mil_branch/hayden_corp
+	name = "Hayden Corp"
+	name_short = "3inch"
+	email_domain = "haydencorp.3inch.NT"
+
+	rank_types = list(
+		/datum/mil_rank/hayden_corp/e1,
+		/datum/mil_rank/hayden_corp/e1_alt1,
+		/datum/mil_rank/hayden_corp/e1_alt2,
+		/datum/mil_rank/hayden_corp/e3,
+		/datum/mil_rank/hayden_corp/e5,
+		/datum/mil_rank/hayden_corp/e7,
+		/datum/mil_rank/hayden_corp/o1,
+		/datum/mil_rank/hayden_corp/o5,
+		/datum/mil_rank/hayden_corp/o10
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/hayden_corp/e1,
+		/datum/mil_rank/hayden_corp/e1_alt1,
+		/datum/mil_rank/hayden_corp/e1_alt2,
+		/datum/mil_rank/hayden_corp/e3,
+		/datum/mil_rank/hayden_corp/e5,
+		/datum/mil_rank/hayden_corp/e7,
+		/datum/mil_rank/hayden_corp/o1,
+		/datum/mil_rank/hayden_corp/o5,
+		/datum/mil_rank/hayden_corp/o10
+	)
+
+	assistant_job = /datum/job/crew
+
+	min_skill = list()
+
+/datum/mil_rank/hayden_corp/e1
+	name = "Freesh Meet"
+	name_short = "FM"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted)
+	sort_order = 1
+
+/datum/mil_rank/hayden_corp/e1_alt1
+	name = "Flaffy"
+	name_short = "FLF"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/alt1)
+	sort_order = 1
+
+/datum/mil_rank/hayden_corp/e1_alt2
+	name = "Vary Cute"
+	name_short = "V-CUTE"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/alt2)
+	sort_order = 1
+
+/datum/mil_rank/hayden_corp/e3
+	name = "Private Militatry Combatent"
+	name_short = "PMC"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e3)
+	sort_order = 3
+
+/datum/mil_rank/hayden_corp/e5
+	name = "Senor Private Military Combatetn"
+	name_short = "SPMC"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e5)
+	sort_order = 5
+
+/datum/mil_rank/hayden_corp/e7
+	name = "Cheif Prviate Milatry Combatnt"
+	name_short = "CPMC"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e7)
+	sort_order = 7
+
+/datum/mil_rank/hayden_corp/o1
+	name = "Maester of Privat Milatry Cambetn"
+	name_short = "PMC Master"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/officer)
+	sort_order = 11
+
+/datum/mil_rank/hayden_corp/o5
+	name = "Privado Militaris Combata Commannder"
+	name_short = "PMC Commander"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/officer/o5)
+	sort_order = 15
+
+/datum/mil_rank/hayden_corp/o10
+	name = "Big Boss of Private Military Company"
+	name_short = "PMC Big Boss"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/officer/o10)
+	sort_order = 20
+
+/datum/mil_rank/hayden_corp/o10_alt
+	name = "Chief Executive Officer"
+	name_short = "PMC-CEO"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/officer/o10)
 	sort_order = 20
