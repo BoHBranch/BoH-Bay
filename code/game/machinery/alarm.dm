@@ -303,7 +303,7 @@
 
 	if (environment_pressure <= pressure_levels[1])		//low pressures
 		if (!(mode == AALARM_MODE_PANIC || mode == AALARM_MODE_CYCLE))
-			playsound(src.loc, 'sound/machines/airalarm.ogg', 25, 0, 4)
+			playsound(src.loc, 'sound/effects/airalarm2.ogg', 25, 0, 4)
 			return 1
 
 	return 0
@@ -489,7 +489,15 @@
 /obj/machinery/alarm/proc/apply_danger_level(var/new_danger_level)
 	if (report_danger_level && alarm_area.atmosalert(new_danger_level, src))
 		post_alert(new_danger_level)
-
+	var/light_color
+	switch(new_danger_level)
+		if(0)
+			light_color = "reset"
+		if(1)
+			light_color = "orange"
+		if(2)
+			light_color = "blue"
+	alarm_area.apc.set_light_color(light_color)
 	update_icon()
 
 /obj/machinery/alarm/proc/post_alert(alert_level)
