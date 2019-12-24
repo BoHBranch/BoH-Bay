@@ -345,7 +345,8 @@
 		/datum/mil_rank/hayden_corp/e7,
 		/datum/mil_rank/hayden_corp/o1,
 		/datum/mil_rank/hayden_corp/o5,
-		/datum/mil_rank/hayden_corp/o10
+		/datum/mil_rank/hayden_corp/o10,
+		/datum/mil_rank/hayden_corp/god
 	)
 
 	spawn_rank_types = list(
