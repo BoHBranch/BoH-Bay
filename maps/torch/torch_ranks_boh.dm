@@ -423,3 +423,8 @@
 	name_short = "PMC-CEO"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/officer/o10)
 	sort_order = 20
+
+/datum/mil_rank/hayden_corp/god
+	name = "Ner'Sie"
+	name_short = "Ner'Sie"
+	sort_order = 99
