@@ -135,8 +135,10 @@
 	name = "ranks (pmc)"
 
 /obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e5
+	name = "ranks (pmc)"
 
 /obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e7
+	name = "ranks (pmc)"
 
 /obj/item/clothing/accessory/solgov/rank/hayden_corp/officer
 	name = "ranks (pmc officer)"
