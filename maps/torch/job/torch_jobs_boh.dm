@@ -341,6 +341,7 @@
 		/datum/mil_rank/hayden_corp/e1,
 		/datum/mil_rank/hayden_corp/e1_alt1,
 		/datum/mil_rank/hayden_corp/e1_alt2,
+		/datum/mil_rank/hayden_corp/e1_alt3,
 		/datum/mil_rank/hayden_corp/e3,
 		/datum/mil_rank/hayden_corp/e5,
 		/datum/mil_rank/hayden_corp/e7,
