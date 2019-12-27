@@ -131,14 +131,17 @@
 /obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/alt2
 	name = "ranks (vary cute)"
 
+/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/alt3
+	name = "ranks (potato)"
+
 /obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e3
 	name = "ranks (pmc)"
 
 /obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e5
-	name = "ranks (pmc)"
+	name = "ranks (senor pmc)"
 
 /obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e7
-	name = "ranks (pmc)"
+	name = "ranks (cheif pmc)"
 
 /obj/item/clothing/accessory/solgov/rank/hayden_corp/officer
 	name = "ranks (pmc officer)"
@@ -146,6 +149,7 @@
 	icon_state = "haydencorp_flag"
 
 /obj/item/clothing/accessory/solgov/rank/hayden_corp/officer/o5
+	name = "ranks (pmc commannder)"
 
 /obj/item/clothing/accessory/solgov/rank/hayden_corp/officer/o10
 	name = "ranks (big boss)"

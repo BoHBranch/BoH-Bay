@@ -383,32 +383,38 @@
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/alt2)
 	sort_order = 1
 
+/datum/mil_rank/hayden_corp/e1_alt3
+	name = "Potato"
+	name_short = "Potato"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/alt3)
+	sort_order = 1
+
 /datum/mil_rank/hayden_corp/e3
-	name = "Private Militatry Combatent"
+	name = "Private Militatry Contracter"
 	name_short = "PMC"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e3)
 	sort_order = 3
 
 /datum/mil_rank/hayden_corp/e5
-	name = "Senor Private Military Combatetn"
+	name = "Senor Private Military Contarcter"
 	name_short = "SPMC"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e5)
 	sort_order = 5
 
 /datum/mil_rank/hayden_corp/e7
-	name = "Cheif Prviate Milatry Combatnt"
+	name = "Cheif Prviate Milatry Conttactecr"
 	name_short = "CPMC"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/enlisted/e7)
 	sort_order = 7
 
 /datum/mil_rank/hayden_corp/o1
-	name = "Maester of Privat Milatry Cambetn"
+	name = "Maester of Privat Milatry Contractet"
 	name_short = "PMC Master"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/officer)
 	sort_order = 11
 
 /datum/mil_rank/hayden_corp/o5
-	name = "Privado Militaris Combata Commannder"
+	name = "Privado Militaris Conteracta Commannder"
 	name_short = "PMC Commander"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/hayden_corp/officer/o5)
 	sort_order = 15
