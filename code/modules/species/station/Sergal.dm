@@ -18,7 +18,7 @@
 	darksight_tint = DARKTINT_MODERATE
 	gluttonous = GLUT_TINY
 	breath_pressure = 19
-	slowdown = 0.75
+	slowdown = -0.25
 	brute_mod = 1.20
 	burn_mod = 1.20
 	blood_volume = 560
