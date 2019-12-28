@@ -2,7 +2,7 @@
 	display_name = "military fatigue selection"
 	description = "A selection of military uniforms."
 	path = /obj/item/clothing/under
-	allowed_branches = MILITARY_BRANCHES
+	allowed_branches = list(/datum/mil_branch/marine_corps)
 
 /datum/gear/uniform/misc_military/New()
 	..()
