@@ -2,6 +2,7 @@
 	display_name = "military cover selection"
 	description = "A selection of military covers."
 	path = /obj/item/clothing/head
+	cost = 0
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 
 /datum/gear/uniform/misc_military_cover/New()
