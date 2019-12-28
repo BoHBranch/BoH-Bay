@@ -38,6 +38,7 @@
 	#include "datums/supplypacks/security.dm"
 	#include "datums/supplypacks/science.dm"
 	#include "datums/department_exploration.dm"
+	#include "datums/game_modes/torch_revolution.dm"
 
 	#include "game/antagonist/outsider/deathsquad.dm"
 	#include "game/antagonist/outsider/ert.dm"
