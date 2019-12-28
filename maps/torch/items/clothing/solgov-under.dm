@@ -202,7 +202,7 @@
 
 /obj/item/clothing/under/solgov/utility/army
 	name = "army fatigues"
-	desc = "The utility uniform of the SCG Army, made from durable material."
+	desc = "The utility uniform of the SCG Army and Marine Corps, made from durable material."
 	icon_state = "greenutility"
 	item_state = "jensensuit"
 	worn_state = "greenutility"
@@ -396,7 +396,7 @@
 
 /obj/item/clothing/under/solgov/service/army
 	name = "army service uniform"
-	desc = "The service uniform of the SCG Army. Slimming."
+	desc = "The service uniform of the SCG Army and Marine Corps. Slimming."
 	icon_state = "greenservice"
 	item_state = "johnny"
 	worn_state = "greenservice"
@@ -407,7 +407,7 @@
 
 /obj/item/clothing/under/solgov/service/army/skirt
 	name = "army service skirt"
-	desc = "The service uniform skirt of the SCG Army. Slimming."
+	desc = "The service uniform skirt of the SCG Army and Marine Corps. Slimming."
 	icon_state = "greenservicefem"
 	worn_state = "greenservicefem"
 	sprite_sheets = list(
@@ -416,7 +416,7 @@
 
 /obj/item/clothing/under/solgov/service/army/command
 	name = "marine officer's service uniform"
-	desc = "The service uniform of the SCG Army. Slimming and stylish."
+	desc = "The service uniform of the SCG Army and Marine Corps. Slimming and stylish."
 	icon_state = "greenservice_com"
 	item_state = "johnny"
 	worn_state = "greenservice_com"
@@ -424,7 +424,7 @@
 
 /obj/item/clothing/under/solgov/service/army/command/skirt
 	name = "marine officer's service skirt"
-	desc = "The service uniform skirt of the SCG Army. Slimming and stylish."
+	desc = "The service uniform skirt of the SCG Army and Marine Corps. Slimming and stylish."
 	icon_state = "greenservicefem_com"
 	worn_state = "greenservicefem_com"
 
@@ -438,7 +438,7 @@
 
 /obj/item/clothing/under/solgov/mildress/army
 	name = "army dress uniform"
-	desc = "The dress uniform of the SCG Army, class given form."
+	desc = "The dress uniform of the SCG Army and Marine Corps, class given form."
 	icon_state = "blackdress"
 	worn_state = "blackdress"
 	sprite_sheets = list(
@@ -447,7 +447,7 @@
 
 /obj/item/clothing/under/solgov/mildress/army/skirt
 	name = "army dress skirt"
-	desc = "A  feminine version of the SCG Army dress uniform, class given form."
+	desc = "A feminine version of the SCG Army dress uniform, class given form."
 	icon_state = "blackdressfem"
 	worn_state = "blackdressfem"
 	sprite_sheets = list(
@@ -456,7 +456,7 @@
 
 /obj/item/clothing/under/solgov/mildress/army/command
 	name = "army officer's dress uniform"
-	desc = "The dress uniform of the SCG Army, even classier in gold."
+	desc = "The dress uniform of the SCG Army and Marine Corps, even classier in gold."
 	icon_state = "blackdress"
 	worn_state = "blackdress_com"
 
