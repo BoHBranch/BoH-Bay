@@ -1,7 +1,7 @@
 /datum/game_mode/revolution
 	round_description = "Morale is shattered, and a mutiny is brewing! Use the 'Check Round Info' verb for more information!"
 	extended_round_description = "Time in space, away from home and loved ones, takes its toll on even the most grizzled space travellers. To make matters worse, the planned return trip to Sol \
-								for refitting, repairs and relaxation has been cancelled by the brass; instead, the SEV Torch is to, for the first time, enter a hibernative state. All crew will enter cryogenic stasis, \
+								for refitting, repairs and relaxation has been cancelled by the brass; instead, the NTSS Dagon is to, for the first time, enter a hibernative state. All crew will enter cryogenic stasis, \
 								and the shipbound AI system will complete a series of jumps that will take the ship lightyears further away from home. Outrage from friends and family of crew back \
 								on Mars, Luna and other various worlds has spawned primetime scandals that dominate the 24/7 news cycle. Videolink interviews with Torch crew reveal morale is at an \
 								all time low. Rumors are spreading of an impending mutiny."
@@ -36,7 +36,7 @@
 
 /datum/antagonist/loyalists/Initialize()
 	..()
-	welcome_text = "The SEV Torch, the most ambitious and prestigious human research project ever established, is now under threat from her very crew as a result of the Expeditionary Corps' brass decision \
+	welcome_text = "The NTSS Dagon, the most ambitious and prestigious human research project ever established, is now under threat from her very crew as a result of the Expeditionary Corps' brass decision \
 					to enter 'hibernation mode' (with crew in cryosleep, and the AI piloting the ship) instead of making the scheduled return to Sol. Crew morale is dangerously low. What the Torch needs now \
 					is a steady hand to guide her through what will likely be the greatest trial she will face."
 	faction_welcome = "Obey all instructions, follow the chain of command, and ensure the mission continues as ordered."
