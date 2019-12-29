@@ -156,8 +156,8 @@
 			eshot_sound = 'sound/weapons/Laser.ogg'
 			egun = 1
 
-		if(/obj/item/weapon/gun/energy/pulse_rifle/carbine/exteriorturret)
-			eprojectile = /obj/item/projectile/beam/sniper/turret
+		if(/obj/item/weapon/gun/energy/exteriorturret)
+			eprojectile = /obj/item/projectile/beam/turret
 			eshot_sound = 'sound/weapons/Laser.ogg'
 
 var/list/turret_icons
