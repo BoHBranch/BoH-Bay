@@ -13,8 +13,8 @@
 	description = "WIP"
 
 	descriptors = list(
-		/datum/mob_descriptor/height = 1.5,
-		/datum/mob_descriptor/build = 1.5
+		/datum/mob_descriptor/height = 1,
+		/datum/mob_descriptor/build = 1
 		)
 
 	additional_available_cultural_info = list(
