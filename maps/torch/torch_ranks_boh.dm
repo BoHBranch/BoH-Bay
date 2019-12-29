@@ -33,11 +33,12 @@
 		)
 	)
 
+// Yell at somebody to do fleet uniform sprites for Unathi. For time being, Humanathi can be part of fleet.
 	species_to_branch_whitelist = list(
 		/datum/species/diona      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/nabber     = list(/datum/mil_branch/civilian),
 		/datum/species/skrell     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/skrell_fleet),
-		/datum/species/unathi     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
+		/datum/species/unathi     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/adherent   = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/sergal     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
 		/datum/species/sergal/northern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
