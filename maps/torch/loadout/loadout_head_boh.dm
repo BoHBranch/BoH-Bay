@@ -3,7 +3,7 @@
 	description = "A selection of military covers."
 	path = /obj/item/clothing/head
 	cost = 0
-	allowed_branches = list(/datum/mil_branch/marine_corps)
+	allowed_branches = MILITARY_SOLGOV_BRANCHES
 
 /datum/gear/uniform/misc_military_cover/New()
 	..()

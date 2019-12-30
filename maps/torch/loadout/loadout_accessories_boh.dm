@@ -31,7 +31,7 @@
 	display_name = "miscellaneous arm guards selection"
 	description = "A selection of arm guards in various colors."
 	path = /obj/item/clothing/accessory/armguards
-	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps, /datum/mil_branch/foreign_legion)
 
 /datum/gear/tactical/arm_guards/misc/New()
 	..()
@@ -57,7 +57,7 @@
 	display_name = "miscellaneous leg guards selection"
 	description = "A selection of leg guards in various colors."
 	path = /obj/item/clothing/accessory/legguards
-	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps, /datum/mil_branch/foreign_legion)
 
 /datum/gear/tactical/leg_guards/misc/New()
 	..()

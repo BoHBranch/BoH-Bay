@@ -3,7 +3,7 @@
 	description = "A selection of military uniforms."
 	path = /obj/item/clothing/under
 	cost = 0
-	allowed_branches = list(/datum/mil_branch/marine_corps)
+	allowed_branches = MILITARY_SOLGOV_BRANCHES
 
 /datum/gear/uniform/misc_military/New()
 	..()
