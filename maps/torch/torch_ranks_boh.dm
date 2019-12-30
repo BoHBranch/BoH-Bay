@@ -220,6 +220,7 @@
 		/datum/mil_rank/foreign_legion/e9_alt,
 		/datum/mil_rank/foreign_legion/o1,
 		/datum/mil_rank/foreign_legion/o2,
+		/datum/mil_rank/foreign_legion/o3,
 		/datum/mil_rank/foreign_legion/o3_alt,
 		/datum/mil_rank/foreign_legion/o4,
 		/datum/mil_rank/foreign_legion/o5
@@ -380,37 +381,37 @@
  */
 /datum/mil_rank/foreign_legion/e1
 	name = "Legionnaire Second Class"
-	name_short = "LG2"
+	name_short = "2LG"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted)
 	sort_order = 1
 
 /datum/mil_rank/foreign_legion/e2
 	name = "Legionnaire First Class"
-	name_short = "LG1"
+	name_short = "1LG"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e2)
 	sort_order = 2
 
 /datum/mil_rank/foreign_legion/e3
-	name = "Corporal"
-	name_short = "CPL"
+	name = "Caporal"
+	name_short = "CPRL"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e3)
 	sort_order = 3
 
 /datum/mil_rank/foreign_legion/e4
-	name = "Senior Corporal"
-	name_short = "SCPL"
+	name = "Caporal Chef"
+	name_short = "CPRLC"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e4)
 	sort_order = 4
 
 /datum/mil_rank/foreign_legion/e5
-	name = "Sergeant"
-	name_short = "SGT"
+	name = "Sergent"
+	name_short = "SGNT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e5)
 	sort_order = 5
 
 /datum/mil_rank/foreign_legion/e6
-	name = "Senior Sergeant"
-	name_short = "SSGT"
+	name = "Sergent Chef"
+	name_short = "SGNTC"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e6)
 	sort_order = 6
 
@@ -421,7 +422,7 @@
 	sort_order = 8
 
 /datum/mil_rank/foreign_legion/e9
-	name = "Adjutant Chief"
+	name = "Adjutant Chef"
 	name_short = "ADJC"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e9)
 	sort_order = 9
@@ -433,27 +434,27 @@
 	sort_order = 9
 
 /datum/mil_rank/foreign_legion/o1
-	name = "Second Lieutenant"
-	name_short = "2LT"
+	name = "Sous-Lieutenant"
+	name_short = "SLT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/officer)
 	sort_order = 11
 
 /datum/mil_rank/foreign_legion/o2
-	name = "First Lieutenant"
-	name_short = "1LT"
+	name = "Lieutenant"
+	name_short = "LT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o2)
 	sort_order = 12
 
 /datum/mil_rank/foreign_legion/o3
-	name = "Captain"
-	name_short = "CPT"
+	name = "Capitaine"
+	name_short = "CPTE"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o3)
 	sort_order = 13
 
-// Specially, to avoid two "Capt" on-board.
+// Was specially to avoid two "Capt" on-board, but French gotta French. Damn frog eaters!
 /datum/mil_rank/foreign_legion/o3_alt
-	name = "Legion Captain"
-	name_short = "L-CPT"
+	name = "Legion Capitaine"
+	name_short = "L-CPTE"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o3_alt)
 	sort_order = 13
 
@@ -464,8 +465,8 @@
 	sort_order = 14
 
 /datum/mil_rank/foreign_legion/o5
-	name = "Lieutenant Colonel"
-	name_short = "LTC"
+	name = "Lieutenant-colonel"
+	name_short = "LT-C"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o5)
 	sort_order = 15
 
@@ -476,13 +477,13 @@
 	sort_order = 16
 
 /datum/mil_rank/foreign_legion/o7
-	name = "Brigadier General"
+	name = "General of the Brigade"
 	name_short = "BGEN"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/flag)
 	sort_order = 17
 
 /datum/mil_rank/foreign_legion/o8
-	name = "General of the Foreign Legion"
-	name_short = "GFL"
+	name = "Commandement of the Foreign Legion"
+	name_short = "COM-FL"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/flag/o8)
 	sort_order = 18

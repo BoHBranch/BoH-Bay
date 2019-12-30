@@ -145,67 +145,67 @@
 	desc = "Insignia denoting the rank of Legionnaire First Class."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e3
-	name = "ranks (E-3 corporal)"
-	desc = "Insignia denoting the rank of Corporal."
+	name = "ranks (E-3 caporal)"
+	desc = "Insignia denoting the rank of Caporal."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e4
-	name = "ranks (E-4 senior corporal)"
-	desc = "Insignia denoting the rank of Senior Corporal."
+	name = "ranks (E-4 caporal chef)"
+	desc = "Insignia denoting the rank of Caporal Chef."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e5
-	name = "ranks (E-5 sergeant)"
-	desc = "Insignia denoting the rank of Sergeant."
+	name = "ranks (E-5 sergent)"
+	desc = "Insignia denoting the rank of Sergent."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e6
-	name = "ranks (E-6 senior sergeant)"
-	desc = "Insignia denoting the rank of Senior Sergeant."
+	name = "ranks (E-6 sergent chef)"
+	desc = "Insignia denoting the rank of Sergent Chef."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e8
 	name = "ranks (E-8 adjutant)"
 	desc = "Insignia denoting the rank of Adjutant."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e9
-	name = "ranks (E-9 adjutant chief)"
-	desc = "Insignia denoting the rank of Adjutant Chief."
+	name = "ranks (E-9 adjutant chef)"
+	desc = "Insignia denoting the rank of Adjutant Chef."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e9_alt
 	name = "ranks (E-9 adjutant major)"
 	desc = "Insignia denoting the rank of Adjutant Major."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/officer
-	name = "ranks (O-1 second lieutenant)"
-	desc = "Insignia denoting the rank of Second Lieutenant."
+	name = "ranks (O-1 sous-lieutenant)"
+	desc = "Insignia denoting the rank of Sous-Lieutenant."
 	icon_state = "armyrank_officer"
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o2
-	name = "ranks (O-2 first lieutenant)"
-	desc = "Insignia denoting the rank of First Lieutenant."
+	name = "ranks (O-2 lieutenant)"
+	desc = "Insignia denoting the rank of Lieutenant."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o3
-	name = "ranks (O-3 captain)"
-	desc = "Insignia denoting the rank of Captain."
+	name = "ranks (O-3 capitaine)"
+	desc = "Insignia denoting the rank of Capitaine."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o3_alt
-	name = "ranks (O-3 Legion captain)"
-	desc = "Insignia denoting the rank of Legion Captain."
+	name = "ranks (O-3 Legion capitaine)"
+	desc = "Insignia denoting the rank of Legion Capitaine."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o4
 	name = "ranks (O-4 commandant)"
 	desc = "Insignia denoting the rank of Commandant."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o5
-	name = "ranks (O-5 lieutenant colonel)"
-	desc = "Insignia denoting the rank of Lieutenant Colonel."
+	name = "ranks (O-5 lieutenant-colonel)"
+	desc = "Insignia denoting the rank of Lieutenant-colonel."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o6
 	name = "ranks (O-6 colonel)"
 	desc = "Insignia denoting the rank of Colonel."
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/flag
-	name = "ranks (O-7 brigadier general)"
-	desc = "Insignia denoting the rank of Brigadier General."
+	name = "ranks (O-7 general of the brigade)"
+	desc = "Insignia denoting the rank of Général de brigade."
 	icon_state = "armyrank_command"
 
 /obj/item/clothing/accessory/solgov/rank/foreign_legion/flag/o8
-	name = "ranks (O-8 general of the foreign legion)"
-	desc = "Insignia denoting the rank of General de division."
+	name = "ranks (O-8 commandement of the foreign legion)"
+	desc = "Insignia denoting the rank of Général de division."
