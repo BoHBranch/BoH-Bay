@@ -23,10 +23,9 @@
 		/datum/species/humanathi= list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/sea),
 		/datum/species/tajaran= list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/sea),
 		/datum/species/vasilissan= list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/sea),
-		/datum/species/vulpkanin= list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/sea),
+		/datum/species/vulpkanin= list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/customhuman= list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		/datum/species/custom= list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		//datum/species/tesh= list(HUMAN_ONLY_JOBS),
+		/datum/species/custom= list(HUMAN_ONLY_JOBS, /datum/job/representative)
 	)
 #undef HUMAN_ONLY_JOBS
 
