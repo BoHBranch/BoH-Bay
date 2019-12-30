@@ -3,6 +3,7 @@
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/marine_corps,
+		/datum/mil_branch/foreign_legion,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
 		/datum/mil_branch/army,
@@ -14,6 +15,7 @@
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/marine_corps,
+		/datum/mil_branch/foreign_legion,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
 		/datum/mil_branch/alien,
@@ -27,6 +29,7 @@
 			/datum/mil_branch/expeditionary_corps,
 			/datum/mil_branch/fleet,
 			/datum/mil_branch/marine_corps,
+			/datum/mil_branch/foreign_legion,
 			/datum/mil_branch/civilian,
 			/datum/mil_branch/solgov,
 			/datum/mil_branch/skrell_fleet
@@ -36,23 +39,86 @@
 // Yell at somebody to do fleet uniform sprites for Unathi.
 // Lore Note: SMC allows humans with Vulpkanin and other (under "custom species") genemods.
 	species_to_branch_whitelist = list(
-		/datum/species/diona      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/nabber     = list(/datum/mil_branch/civilian),
-		/datum/species/skrell     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/skrell_fleet),
-		/datum/species/unathi     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/adherent   = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/sergal     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
-		/datum/species/sergal/northern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
-		/datum/species/sergal/eastern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
-		/datum/species/akula     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
-		/datum/species/custom      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/marine_corps),
-		/datum/species/humanathi      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
-		/datum/species/tajaran      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
-		/datum/species/vasilissan      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
-		/datum/species/vulpkanin      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/marine_corps),
-		/datum/species/customhuman      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/marine_corps),
-		/datum/species/vox        = list(/datum/mil_branch/alien),
-		/datum/species/vox/armalis        = list(/datum/mil_branch/alien)
+		/datum/species/diona	= list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
+		/datum/species/nabber	= list(/datum/mil_branch/civilian),
+		/datum/species/skrell	= list(
+			/datum/mil_branch/civilian,
+			/datum/mil_branch/expeditionary_corps,
+			/datum/mil_branch/fleet,
+			/datum/mil_branch/foreign_legion,
+			/datum/mil_branch/skrell_fleet
+		),
+		/datum/species/unathi	= list(
+			/datum/mil_branch/civilian,
+			/datum/mil_branch/expeditionary_corps,
+			/datum/mil_branch/foreign_legion
+		),
+		/datum/species/adherent	= list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
+		/datum/species/sergal	= list(
+			/datum/mil_branch/civilian,
+			/datum/mil_branch/expeditionary_corps,
+			/datum/mil_branch/fleet,
+			/datum/mil_branch/foreign_legion
+		),
+		/datum/species/sergal/northern	= list(
+			/datum/mil_branch/civilian,
+			/datum/mil_branch/expeditionary_corps,
+			/datum/mil_branch/fleet,
+			/datum/mil_branch/foreign_legion
+		),
+		/datum/species/sergal/eastern	= list(
+			/datum/mil_branch/civilian,
+			/datum/mil_branch/expeditionary_corps,
+			/datum/mil_branch/fleet,
+			/datum/mil_branch/foreign_legion
+		),
+		/datum/species/akula	= list(
+			/datum/mil_branch/civilian,
+			/datum/mil_branch/expeditionary_corps,
+			/datum/mil_branch/fleet,
+			/datum/mil_branch/foreign_legion
+		),
+		/datum/species/custom	= list(
+			/datum/mil_branch/civilian,
+			/datum/mil_branch/expeditionary_corps,
+			/datum/mil_branch/fleet,
+			/datum/mil_branch/marine_corps,
+			/datum/mil_branch/foreign_legion
+		),
+		/datum/species/humanathi	= list(
+			/datum/mil_branch/civilian,
+			/datum/mil_branch/expeditionary_corps,
+			/datum/mil_branch/fleet,
+			/datum/mil_branch/foreign_legion
+		),
+		/datum/species/tajaran	= list(
+			/datum/mil_branch/civilian,
+			/datum/mil_branch/expeditionary_corps,
+			/datum/mil_branch/fleet,
+			/datum/mil_branch/foreign_legion
+		),
+		/datum/species/vasilissan	= list(
+			/datum/mil_branch/civilian,
+			/datum/mil_branch/expeditionary_corps,
+			/datum/mil_branch/fleet,
+			/datum/mil_branch/foreign_legion
+		),
+		/datum/species/vulpkanin	= list(
+			/datum/mil_branch/civilian,
+			/datum/mil_branch/expeditionary_corps,
+			/datum/mil_branch/fleet,
+			/datum/mil_branch/marine_corps,
+			/datum/mil_branch/foreign_legion
+		),
+		/datum/species/customhuman	= list(
+			/datum/mil_branch/civilian,
+			/datum/mil_branch/expeditionary_corps,
+			/datum/mil_branch/fleet,
+			/datum/mil_branch/marine_corps,
+			/datum/mil_branch/foreign_legion
+		),
+		/datum/species/vox			= list(/datum/mil_branch/alien),
+		/datum/species/vox/armalis	= list(/datum/mil_branch/alien)
 	)
 
 /datum/mil_branch/marine_corps
@@ -113,6 +179,56 @@
 						SKILL_WEAPONS = SKILL_BASIC,
 						SKILL_COMBAT  = SKILL_BASIC,
 						SKILL_EVA     = SKILL_BASIC)
+
+
+/datum/mil_branch/foreign_legion
+	name = "Solar Foreign Legion"
+	name_short = "SFJ" // Move middle letter forward and replace it with "W". :funface:
+	email_domain = "dagon.legion.mil"
+
+// Also uses SCG Army uniform/Marine outfits for time being.
+	rank_types = list(
+		/datum/mil_rank/foreign_legion/e1,
+		/datum/mil_rank/foreign_legion/e2,
+		/datum/mil_rank/foreign_legion/e3,
+		/datum/mil_rank/foreign_legion/e4,
+		/datum/mil_rank/foreign_legion/e5,
+		/datum/mil_rank/foreign_legion/e6,
+		/datum/mil_rank/foreign_legion/e8,
+		/datum/mil_rank/foreign_legion/e9,
+		/datum/mil_rank/foreign_legion/e9_alt,
+		/datum/mil_rank/foreign_legion/o1,
+		/datum/mil_rank/foreign_legion/o2,
+		/datum/mil_rank/foreign_legion/o3,
+		/datum/mil_rank/foreign_legion/o3_alt,
+		/datum/mil_rank/foreign_legion/o4,
+		/datum/mil_rank/foreign_legion/o5,
+		/datum/mil_rank/foreign_legion/o6,
+		/datum/mil_rank/foreign_legion/o7,
+		/datum/mil_rank/foreign_legion/o8
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/foreign_legion/e1,
+		/datum/mil_rank/foreign_legion/e2,
+		/datum/mil_rank/foreign_legion/e3,
+		/datum/mil_rank/foreign_legion/e4,
+		/datum/mil_rank/foreign_legion/e5,
+		/datum/mil_rank/foreign_legion/e6,
+		/datum/mil_rank/foreign_legion/e8,
+		/datum/mil_rank/foreign_legion/e9,
+		/datum/mil_rank/foreign_legion/e9_alt,
+		/datum/mil_rank/foreign_legion/o1,
+		/datum/mil_rank/foreign_legion/o2,
+		/datum/mil_rank/foreign_legion/o3_alt,
+		/datum/mil_rank/foreign_legion/o4,
+		/datum/mil_rank/foreign_legion/o5
+	)
+
+	assistant_job = /datum/job/crew
+
+	min_skill = list(	SKILL_WEAPONS = SKILL_BASIC,
+	                    SKILL_COMBAT  = SKILL_BASIC)
 
 /*
  *  Marine Corps
@@ -256,3 +372,117 @@
 	name_short = "Gen"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o10)
 	sort_order = 20
+/// *** ///
+
+/*
+ *  Foreign Legion
+ *  ==============
+ */
+/datum/mil_rank/foreign_legion/e1
+	name = "Legionnaire Second Class"
+	name_short = "LG2"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted)
+	sort_order = 1
+
+/datum/mil_rank/foreign_legion/e2
+	name = "Legionnaire First Class"
+	name_short = "LG1"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e2)
+	sort_order = 2
+
+/datum/mil_rank/foreign_legion/e3
+	name = "Corporal"
+	name_short = "CPL"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e3)
+	sort_order = 3
+
+/datum/mil_rank/foreign_legion/e4
+	name = "Senior Corporal"
+	name_short = "SCPL"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e4)
+	sort_order = 4
+
+/datum/mil_rank/foreign_legion/e5
+	name = "Sergeant"
+	name_short = "SGT"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e5)
+	sort_order = 5
+
+/datum/mil_rank/foreign_legion/e6
+	name = "Senior Sergeant"
+	name_short = "SSGT"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e6)
+	sort_order = 6
+
+/datum/mil_rank/foreign_legion/e8
+	name = "Adjutant"
+	name_short = "ADJ"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e8)
+	sort_order = 8
+
+/datum/mil_rank/foreign_legion/e9
+	name = "Adjutant Chief"
+	name_short = "ADJC"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e9)
+	sort_order = 9
+
+/datum/mil_rank/foreign_legion/e9_alt
+	name = "Adjutant Major"
+	name_short = "ADJM"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/enlisted/e9_alt)
+	sort_order = 9
+
+/datum/mil_rank/foreign_legion/o1
+	name = "Second Lieutenant"
+	name_short = "2LT"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/officer)
+	sort_order = 11
+
+/datum/mil_rank/foreign_legion/o2
+	name = "First Lieutenant"
+	name_short = "1LT"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o2)
+	sort_order = 12
+
+/datum/mil_rank/foreign_legion/o3
+	name = "Captain"
+	name_short = "CPT"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o3)
+	sort_order = 13
+
+// Specially, to avoid two "Capt" on-board.
+/datum/mil_rank/foreign_legion/o3_alt
+	name = "Legion Captain"
+	name_short = "L-CPT"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o3_alt)
+	sort_order = 13
+
+/datum/mil_rank/foreign_legion/o4
+	name = "Commandant"
+	name_short = "CMDT"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o4)
+	sort_order = 14
+
+/datum/mil_rank/foreign_legion/o5
+	name = "Lieutenant Colonel"
+	name_short = "LTC"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o5)
+	sort_order = 15
+
+/datum/mil_rank/foreign_legion/o6
+	name = "Colonel"
+	name_short = "COL"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/officer/o6)
+	sort_order = 16
+
+/datum/mil_rank/foreign_legion/o7
+	name = "Brigadier General"
+	name_short = "BGEN"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/flag)
+	sort_order = 17
+
+/datum/mil_rank/foreign_legion/o8
+	name = "General of the Foreign Legion"
+	name_short = "GFL"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/foreign_legion/flag/o8)
+	sort_order = 18

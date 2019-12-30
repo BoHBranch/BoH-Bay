@@ -1,7 +1,7 @@
 /decl/hierarchy/mil_uniform/marine_corps
 	name = "Master marine corps outfit"
 	hierarchy_type = /decl/hierarchy/mil_uniform/marine_corps
-	branches = list(/datum/mil_branch/marine_corps)
+	branches = list(/datum/mil_branch/army, /datum/mil_branch/marine_corps, /datum/mil_branch/foreign_legion)
 
 	pt_under = /obj/item/clothing/under/solgov/pt/army
 	pt_shoes = /obj/item/clothing/shoes/black

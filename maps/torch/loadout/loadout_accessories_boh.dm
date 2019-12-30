@@ -8,7 +8,11 @@
 	display_name = "Marine Corps patch"
 	path = /obj/item/clothing/accessory/solgov/smc_patch
 	allowed_branches = list(/datum/mil_branch/marine_corps)
-	whitelisted = list(SPECIES_HUMAN, SPECIES_IPC)
+
+/datum/gear/accessory/sfl_patch
+	display_name = "Foreign Legion patch"
+	path = /obj/item/clothing/accessory/solgov/sfl_patch
+	allowed_branches = list(/datum/mil_branch/foreign_legion)
 
 /// Limb guards
 // Arms

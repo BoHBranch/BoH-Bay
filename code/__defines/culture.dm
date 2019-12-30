@@ -19,6 +19,7 @@
 #define FACTION_XYNERGY        "Xynergy"
 #define FACTION_FLEET          "SCG Fleet"
 #define FACTION_MARINES        "Solar Marine Corps" // BoH Addon
+#define FACTION_LEGION         "Solar Foreign Legion" // BoH Addon
 #define FACTION_EXPEDITIONARY  "Expeditionary Corps"
 #define FACTION_PCRC           "Proxima Centauri Risk Control"
 #define FACTION_CORPORATE       "Expeditionary Corps Organisation"
