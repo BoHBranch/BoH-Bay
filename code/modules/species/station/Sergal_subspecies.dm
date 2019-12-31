@@ -5,16 +5,16 @@
 	darksight_range = 3
 	darksight_tint = DARKTINT_MODERATE
 	gluttonous = GLUT_TINY
-	breath_pressure = 19
-	slowdown = 0.75
+	breath_pressure = 20
+	slowdown = -0.25
 	brute_mod = 1.15
 	burn_mod = 1.15
 	blood_volume = 560
 	description = "WIP"
 
 	descriptors = list(
-		/datum/mob_descriptor/height = 1.5,
-		/datum/mob_descriptor/build = 1.5
+		/datum/mob_descriptor/height = 1,
+		/datum/mob_descriptor/build = 1
 		)
 
 	additional_available_cultural_info = list(
@@ -32,8 +32,7 @@
 	darksight_range = 3
 	darksight_tint = DARKTINT_MODERATE
 	gluttonous = GLUT_TINY
-	breath_pressure = 19
-	slowdown = 1
+	breath_pressure = 20
 	brute_mod = 1
 	burn_mod = 1
 	blood_volume = 560
