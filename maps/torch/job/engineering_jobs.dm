@@ -96,7 +96,7 @@
 
 	access = list(access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
-			            access_solgov_crew, access_hangar)
+			            access_solgov_crew, access_hangar, access_tcomsat)
 	minimal_access = list()
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
