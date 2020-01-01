@@ -85,3 +85,28 @@
 	charge_cost=620
 	wielded_item_state = "skrell_rifle-wielded"
 
+/////////
+// Recoilless Rifle
+/////////
+/obj/item/weapon/gun/launcher/rocket/recoilless
+	name = "recoilless rifle"
+	desc = "A TVP-2 anti-armor recoilless rifle. Truly an anachronism of another time. \
+	This specific model was designed to fire incendiary charges. Said charges have a minor explosive charge, with an incredibly powerful, though small, incendiary powder of sorts. \
+	Hopefully it's still working after all this time, because, by god, this looks like an old relic. \
+	What doesn't look like a relic, however, is the rather large optic mounted atop the rifle."
+	icon = 'icons/boh/items/launchers.dmi'
+	icon_state = "recoilless"
+	item_state = "recoilless"
+	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5)
+	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
+
+/obj/item/weapon/gun/launcher/rocket/recoilless/attackby(obj/item/I as obj, mob/user as mob)
+	if(istype(I, /obj/item/ammo_casing/rocket/rcr))
+		if(rockets.len < max_rockets)
+			if(!user.unEquip(I, src))
+				return
+			rockets += I
+			to_chat(user, "<span class='notice'>you carefully slide the shell into the [src].</span>")
+			to_chat(user, "<span class='notice'>[rockets.len] / [max_rockets] shells.</span>")
+		else
+			to_chat(usr, "<span class='warning'>\The [src] cannot hold more than one shell, for obvious reasons.</span>")
