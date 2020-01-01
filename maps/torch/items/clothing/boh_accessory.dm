@@ -59,7 +59,7 @@
 	desc = "Insignia denoting the rank of First Sergeant."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9
-	name = "ranks (E-9 master gunnery sergeant sergeant)"
+	name = "ranks (E-9 master gunnery sergeant)"
 	desc = "Insignia denoting the rank of Master Gunnery Sergeant."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt
