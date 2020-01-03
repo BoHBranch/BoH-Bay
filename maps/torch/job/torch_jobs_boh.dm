@@ -260,6 +260,7 @@
 		/datum/mil_rank/marine_corps/o1,
 		/datum/mil_rank/foreign_legion/o1
 	)
+
 /***/
 
 // Security

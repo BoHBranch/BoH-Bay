@@ -32,6 +32,8 @@
 			continue
 		if(istype(O, /obj/effect/overmap/visitable/ship/landable)) //Don't show shuttles
 			continue
+		if (O.hide_from_reports)
+			continue
 		space_things |= O
 
 	var/list/distress_calls
