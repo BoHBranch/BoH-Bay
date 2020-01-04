@@ -1,11 +1,11 @@
-/datum/gear/uniform/misc_military_cover
+/datum/gear/head/misc_military_cover
 	display_name = "military cover selection"
 	description = "A selection of military covers."
 	path = /obj/item/clothing/head
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 
-/datum/gear/uniform/misc_military_cover/New()
+/datum/gear/head/misc_military_cover/New()
 	..()
 	var/milmisc_cover = list()
 	milmisc_cover += /obj/item/clothing/head/solgov/utility/army/urban
