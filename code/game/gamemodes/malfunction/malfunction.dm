@@ -9,6 +9,7 @@
 	auto_recall_shuttle = FALSE
 	antag_tags = list(MODE_MALFUNCTION)
 	disabled_jobs = list("AI")
+	votable = 0
 	cinematic_icon_states = list(
 		"intro_malf" = 76,
 		"summary_malf",
