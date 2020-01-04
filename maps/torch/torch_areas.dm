@@ -406,7 +406,7 @@
 	name = "\improper NTSC Byakhee - Medical"
 
 /area/aquila/head
-	name = "\improper NTSC Byakhee - Head"
+	name = "\improper NTSC Byakhee - Cannon"
 
 /area/aquila/airlock
 	name = "\improper NTSC Byakhee - Airlock Compartment"
