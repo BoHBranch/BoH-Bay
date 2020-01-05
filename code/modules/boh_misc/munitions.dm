@@ -84,3 +84,11 @@
 	on_hit(var/atom/target, var/blocked = 0)
 		explosion(target, -1, 0, 12)
 		return 1
+
+/////////
+// EPP Projectile
+/////////
+/obj/item/projectile/beam/pulse/epp
+	damage = 2
+	armor_penetration = 5
+	agony = 25

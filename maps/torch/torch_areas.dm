@@ -473,7 +473,7 @@
 	req_access = list(access_petrov_analysis)
 
 /area/shuttle/petrov/toxins
-	name = "\improper NTRL Polyp - Toxins Lab"
+	name = "\improper NTRL Polyp - Storage and Range"
 	icon_state = "toxstorage"
 	req_access = list(access_petrov_toxins)
 
@@ -482,11 +482,11 @@
 	icon_state = "devlab"
 
 /area/shuttle/petrov/isolation
-	name = "\improper SNTRL Polyp - Isolation Lab"
+	name = "\improper NTRL Polyp - Isolation Lab"
 	icon_state = "xeno_lab"
 
 /area/shuttle/petrov/phoron
-	name = "\improper NTRL Polyp - Sublimation Lab"
+	name = "\improper NTRL Polyp - Heavy Containment"
 	icon_state = "toxstorage"
 	req_access = list(access_petrov_phoron)
 
