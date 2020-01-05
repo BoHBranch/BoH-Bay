@@ -5,7 +5,7 @@
 	name = "Light Armor - Civilian"
 	contains = list(/obj/item/weapon/paper/warcrime_notice,
 					/obj/item/clothing/suit/armor/pcarrier/grey/light/civ = 4,
-					/obj/item/clothing/head/hardhat/white = 4)
+					/obj/item/clothing/head/hardhat/self_protection = 4)
 	cost = 30
 	containername = "civilian light armor crate"
 

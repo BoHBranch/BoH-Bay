@@ -269,7 +269,7 @@
 /decl/hierarchy/supply_pack/medical/medarmor
 	name = "Gear - Medical light armor"
 	contains = list(/obj/item/clothing/suit/armor/pcarrier/grey/light/med = 4,
-					/obj/item/clothing/head/hardhat/white = 4)
+					/obj/item/clothing/head/hardhat/EMS = 4)
 	cost = 30
 	containername = "medical light armor crate"
 	containertype = /obj/structure/closet/crate/secure

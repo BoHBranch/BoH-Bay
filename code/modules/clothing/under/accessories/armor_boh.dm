@@ -9,6 +9,9 @@
 /obj/item/clothing/accessory/storage/pouches/large/grey
 	name = "large storage pouches"
 	desc = "A collection of grey pouches that can be attached to a plate carrier. Carries up to four items."
+	icon_override = 'icons/boh/mob/onmob/onmob_modular_armor.dmi'
+	icon = 'icons/boh/obj/clothing/obj_modular_armor.dmi'
+	accessory_icons = list(slot_tie_str = 'icons/boh/mob/onmob/onmob_modular_armor.dmi', slot_wear_suit_str = 'icons/boh/mob/onmob/onmob_modular_armor.dmi')
 	icon_state = "lpouches_grey"
 
 // Light-plated
