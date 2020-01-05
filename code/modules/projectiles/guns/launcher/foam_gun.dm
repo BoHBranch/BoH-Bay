@@ -88,7 +88,7 @@
 /obj/item/foam_dart/Initialize()
 	mix_up()
 	. = ..()
-	
+
 /obj/item/foam_dart/proc/mix_up()
 	pixel_x = rand(-randpixel, randpixel)
 	pixel_y = rand(-randpixel, randpixel)
@@ -135,3 +135,13 @@
 	desc = "It's a Jorf brand Desperado, with fourteen Jorf brand darts!"
 	startswith = list(/obj/item/weapon/gun/launcher/foam/revolver/tampered,
 					  /obj/item/foam_dart/tampered = 14)
+
+//supply boxes
+/obj/item/weapon/storage/box/large/foam_gun/supply
+	startswith = list(/obj/item/weapon/gun/launcher/foam = 8)
+
+/obj/item/weapon/storage/box/large/foam_gun/burst/supply
+	startswith = list(/obj/item/weapon/gun/launcher/foam/burst = 4)
+
+/obj/item/weapon/storage/box/large/foam_gun/revolver/supply
+	startswith = list(/obj/item/weapon/gun/launcher/foam/revolver = 2)
