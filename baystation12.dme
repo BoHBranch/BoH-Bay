@@ -1440,6 +1440,7 @@
 #include "code\modules\boh_misc\badges.dm"
 #include "code\modules\boh_misc\boxes.dm"
 #include "code\modules\boh_misc\cards.dm"
+#include "code\modules\boh_misc\equipment.dm"
 #include "code\modules\boh_misc\firearms.dm"
 #include "code\modules\boh_misc\jetpacks.dm"
 #include "code\modules\boh_misc\machinery.dm"
