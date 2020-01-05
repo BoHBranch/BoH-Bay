@@ -57,7 +57,7 @@
 // Ah shit, here we break G-Convention again.
 /obj/item/clothing/accessory/armor/tag/civ
 	name = "\improper CIVILIAN tag"
-	desc = "A tag with the word CIVILIAN printed in grey lettering on it."
+	desc = "A tag with the word CIVILIAN printed in green lettering on it."
 	icon_state = "civtag"
 	icon_override = 'icons/boh/mob/onmob/onmob_modular_armor.dmi'
 	icon = 'icons/boh/obj/clothing/obj_modular_armor.dmi'
