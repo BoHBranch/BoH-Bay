@@ -89,6 +89,31 @@
 // EPP Projectile
 /////////
 /obj/item/projectile/beam/pulse/epp
-	damage = 2
-	armor_penetration = 5
+	damage = 12
+	damage_type = ELECTROCUTE
 	agony = 25
+
+/////////
+// .454
+/////////
+//casing
+/obj/item/ammo_casing/pistol/magnum/large
+	desc = "A high-power bullet casing."
+	caliber = CALIBER_PISTOL_MAGNUM_LARGE
+	projectile_type = /obj/item/projectile/bullet/pistol/large
+
+//projectile
+/obj/item/projectile/bullet/pistol/large
+	damage = 85
+	armor_penetration = 15
+	agony = 25
+
+//mag
+/obj/item/ammo_magazine/speedloader/large
+	name = "heavy speed loader"
+	icon_state = "spdloader_magnum"
+	caliber = CALIBER_PISTOL_MAGNUM_LARGE
+	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
+	matter = list(MATERIAL_STEEL = 50000) //Same as the RCD, retardedly high, for good reason.
+	max_ammo = 6
+	multiple_sprites = 1

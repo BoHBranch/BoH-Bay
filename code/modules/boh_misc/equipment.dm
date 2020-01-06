@@ -13,6 +13,8 @@
 		bio =  ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 		)
+	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
+	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/bio_hood/anomaly/strong
 	name = "Heavy anomaly hood"
@@ -26,6 +28,8 @@
 		bio =  ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 		)
+	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
+	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /////////
 // Documents

@@ -185,3 +185,19 @@
 	max_shots = 2
 	self_recharge = 1
 	burst = 1
+
+/////////
+// Casull
+/////////
+/obj/item/weapon/gun/projectile/revolver/medium/captain/large
+	name = "Ultimate Argument"
+	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Up-chambered for a .454 calibre round. This one has 'To the Captain of the NTSS Dagon' engraved on the grip."
+	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
+	caliber = CALIBER_PISTOL_MAGNUM_LARGE
+
+/////////
+// XO Revolver
+/////////
+/obj/item/weapon/gun/projectile/revolver/medium/captain/xo
+	name = "Final Argument"
+	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Executive of the NTSS Dagon' engraved on the grip."
