@@ -8,7 +8,7 @@ GLOBAL_LIST_EMPTY(adminfaxes)	//cache for faxes that have been sent to admins
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "fax"
 	insert_anim = "faxsend"
-	var/send_access = list(list(access_lawyer, access_bridge, access_armory, access_qm))
+	var/send_access = list(list(access_lawyer, access_solgov_crew))
 
 	idle_power_usage = 30
 	active_power_usage = 200
@@ -37,7 +37,7 @@ GLOBAL_LIST_EMPTY(adminfaxes)	//cache for faxes that have been sent to admins
 			return
 		scan = O
 		to_chat(user, "<span class='notice'>You insert \the [O] into \the [src].</span>")
-	else 
+	else
 		..()
 
 /obj/machinery/photocopier/faxmachine/interface_interact(mob/user)

@@ -67,7 +67,7 @@
 /obj/item/gunbox/officer
 /obj/item/gunbox/officer/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic - Custom Revolver"] = list(/obj/item/weapon/gun/projectile/revolver/medium/captain,/obj/item/weapon/storage/fancy/cigar,/obj/item/ammo_magazine/speedloader)
+	options["Ballistic - .454 Revolver"] = list(/obj/item/weapon/gun/projectile/revolver/medium/captain/large,/obj/item/weapon/storage/fancy/cigar,/obj/item/ammo_magazine/speedloader/large)
 	options["Ballistic - SA Lumoco P3"] = list(/obj/item/weapon/gun/projectile/pistol/holdout/cap,/obj/item/ammo_magazine/pistol/small,/obj/item/clothing/mask/smokable/ecig/deluxe)
 	options["Energy - EPP"] = list(/obj/item/weapon/gun/energy/pulse_rifle/pistol/epp,/obj/item/documents/epp)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
@@ -87,6 +87,7 @@
 /obj/item/gunbox/officertwo/attack_self(mob/living/user)
 	var/list/options = list()
 	options["Ballistic - Mk58"] = list(/obj/item/weapon/gun/projectile/pistol/sec/solar,/obj/item/ammo_magazine/pistol,/obj/item/weapon/storage/fancy/cigar)
+	options["Ballistic - Custom Revolver"] = list(/obj/item/weapon/gun/projectile/revolver/medium/captain/xo,/obj/item/weapon/storage/fancy/cigar,/obj/item/ammo_magazine/speedloader)
 	options["Energy - EPP"] = list(/obj/item/weapon/gun/energy/pulse_rifle/pistol/epp,/obj/item/documents/epp)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
