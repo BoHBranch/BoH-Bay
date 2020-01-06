@@ -209,7 +209,7 @@ var/global/list/all_objectives = list()
 // Nuclear Explosion //
 
 /datum/objective/nuclear
-	explanation_text = "Cause mass destruction with a nuclear device."
+	explanation_text = "Extract a ransom, or resources, from the NTSS Dagon with the threat of your nuclear device. Take hostages, make examples. Be creative."
 
 
 // Steal //
@@ -425,7 +425,7 @@ var/global/list/all_objectives = list()
 
 /datum/objective/borer_reproduce
 	explanation_text = "Reproduce at least once."
-	
+
 /datum/objective/ninja_highlander
    explanation_text = "You aspire to be a Grand Master of the Spider Clan. Kill all of your fellow acolytes."
 
