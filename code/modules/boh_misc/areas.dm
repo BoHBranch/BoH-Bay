@@ -47,3 +47,10 @@
 	name = "\improper Security Wing"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
+
+/////////
+// Gunship
+/////////
+
+/area/aquila/disperser
+	name = "\improper NTSC Byakhee - Cannon"

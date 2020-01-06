@@ -110,3 +110,94 @@
 			to_chat(user, "<span class='notice'>[rockets.len] / [max_rockets] shells.</span>")
 		else
 			to_chat(usr, "<span class='warning'>\The [src] cannot hold more than one shell, for obvious reasons.</span>")
+
+/////////
+// 'Broken' Carbine
+/////////
+/obj/item/weapon/gun/energy/laser/broken
+	name = "broken laser carbine"
+	desc = "An HI G40E, though this one appears to have a cracked projection lens."
+	icon_state = "lasersec"
+	projectile_type = /obj/item/projectile/beam/incendiary_laser
+
+/////////
+// Beanbag Launcher
+/////////
+/obj/item/weapon/gun/projectile/shotgun/pump/beanbag
+	name = "beanbag shotgun"
+	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders. \
+	This one appears to be modified to fire nothing but beanbags, and has an orange paintjob on the slide. Trying to fire lethals doesn't seem like a good idea."
+	icon = 'icons/boh/items/shotguns.dmi'
+	icon_state = "bshotgun"
+	item_state = "bshotgun"
+	wielded_item_state = "cshotgun-wielded"
+	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
+	max_shells = 7
+	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
+	one_hand_penalty = 8
+	var/explosion_chance = 100
+
+/obj/item/weapon/gun/projectile/shotgun/pump/beanbag/on_update_icon()
+	..()
+	if(length(loaded) > 3)
+		for(var/i = 0 to length(loaded) - 4)
+			var/image/I = image(icon, "bshell")
+			I.pixel_x = i * 2
+			overlays += I
+
+/obj/item/weapon/gun/projectile/shotgun/pump/beanbag/special_check()
+	if(chambered && chambered.BB && prob(explosion_chance))
+		var/damage = chambered.BB.get_structure_damage()
+		if(istype(chambered.BB, /obj/item/projectile/bullet/pellet))
+			var/obj/item/projectile/bullet/pellet/PP = chambered.BB
+			damage = PP.damage*PP.pellets
+		if(damage > 30)
+			var/mob/living/carbon/C = loc
+			if(istype(loc))
+				C.visible_message("<span class='danger'>[src] explodes in [C]'s hands!</span>", "<span class='danger'>[src] explodes in your face!</span>")
+				C.drop_from_inventory(src)
+				for(var/zone in list(BP_L_HAND, BP_R_HAND, BP_HEAD))
+					C.apply_damage(rand(10,20), def_zone=zone)
+			else
+				visible_message("<span class='danger'>[src] explodes!</span>")
+			explosion(get_turf(src), -1, -1, 1)
+			qdel(src)
+			return FALSE
+	return ..()
+
+/////////
+// Extended Taser Carbine
+/////////
+/obj/item/weapon/gun/energy/taser/carbine/ext
+	name = "modified electrolaser carbine"
+	desc = "The NT Mk44 NL is a high capacity gun used for non-lethal takedowns. It can switch between high and low intensity stun shots. \
+	This one has a larger capacity."
+	max_shots = 24
+
+/////////
+// EPP
+/////////
+/obj/item/weapon/gun/energy/pulse_rifle/pistol/epp
+	name = "experimental pulse pistol"
+	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. It's fitted with an incredibly tiny self-contained reactor. \
+	This provides the weapon, in theory, an infinite power source, but a horrible munition count in practice. Additionally, it cannot fire a concentrated beam, having been modified to be less-than-lethal."
+	projectile_type = /obj/item/projectile/beam/pulse/epp
+	max_shots = 2
+	self_recharge = 1
+	burst = 1
+
+/////////
+// Casull
+/////////
+/obj/item/weapon/gun/projectile/revolver/medium/captain/large
+	name = "Ultimate Argument"
+	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Up-chambered for a .454 calibre round. This one has 'To the Captain of the NTSS Dagon' engraved on the grip."
+	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
+	caliber = CALIBER_PISTOL_MAGNUM_LARGE
+
+/////////
+// XO Revolver
+/////////
+/obj/item/weapon/gun/projectile/revolver/medium/captain/xo
+	name = "Final Argument"
+	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Executive of the NTSS Dagon' engraved on the grip."

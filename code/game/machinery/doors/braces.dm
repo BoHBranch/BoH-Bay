@@ -2,7 +2,7 @@
 /obj/item/weapon/crowbar/brace_jack
 	name = "maintenance jack"
 	desc = "A special crowbar that can be used to safely remove airlock braces from airlocks."
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_LARGE
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "maintenance_jack"
 	force = 24 //It has a hammer head, should probably do some more damage. - Cirra
