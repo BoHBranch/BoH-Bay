@@ -241,6 +241,13 @@
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "kittyinner"
 
+/datum/sprite_accessory/ears/tajhc
+	name = "tajaran ears, colorable"
+	desc = ""
+	icon_state = "taj"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
 /datum/sprite_accessory/ears/bunnyhc
 	name = "bunny, colorable"
 	desc = ""
