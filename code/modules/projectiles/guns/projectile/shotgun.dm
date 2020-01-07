@@ -37,6 +37,12 @@
 		pump(user)
 		recentpump = world.time
 
+/obj/item/weapon/gun/projectile/shotgun/pump/handle_post_fire(mob/user, atom/target, var/pointblank=0, var/reflex=0)
+	..()
+	if(user && user.skill_check(SKILL_WEAPONS, SKILL_PROF))
+		to_chat(user, "<span class='notice'>You pump the shotgun with a reflexive motion, ejecting [chambered]!</span>")
+		pump()
+
 /obj/item/weapon/gun/projectile/shotgun/pump/proc/pump(mob/M as mob)
 	playsound(M, 'sound/weapons/shotgunpump.ogg', 60, 1)
 
