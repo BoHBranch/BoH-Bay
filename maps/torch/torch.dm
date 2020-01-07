@@ -38,6 +38,7 @@
 	#include "datums/supplypacks/security.dm"
 	#include "datums/supplypacks/science.dm"
 	#include "datums/department_exploration.dm"
+	#include "datums/game_modes/torch_revolution.dm"
 
 	#include "game/antagonist/outsider/deathsquad.dm"
 	#include "game/antagonist/outsider/ert.dm"
@@ -133,6 +134,7 @@
 	#include "loadout/loadout_eyes.dm"
 	#include "loadout/loadout_gloves.dm"
 	#include "loadout/loadout_head.dm"
+	#include "loadout/loadout_head_boh.dm"
 	#include "loadout/loadout_shoes.dm"
 	#include "loadout/loadout_suit.dm"
 	#include "loadout/loadout_uniform.dm"

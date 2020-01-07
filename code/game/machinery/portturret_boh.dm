@@ -4,14 +4,14 @@
 // Turret
 /////////
 /obj/machinery/porta_turret/exterior
-	health = 150
-	maxhealth = 150
+	health = 250
+	maxhealth = 250
 	auto_repair = 1
 	locked = 1
 	controllock = 1
 	icon_state = "gun_turret" // for mapping. No difference in game.
 
-	installation = /obj/item/weapon/gun/energy/pulse_rifle/carbine/exteriorturret
+	installation = /obj/item/weapon/gun/energy/exteriorturret
 
 	check_arrest = 1
 	check_records = 1
@@ -27,22 +27,22 @@
 /////////
 // - -
 
-/obj/item/weapon/gun/energy/pulse_rifle/carbine/exteriorturret
-	name = "energy carbine"
+/obj/item/weapon/gun/energy/exteriorturret
+	name = "energy gun"
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts."
 	force = 2
-	projectile_type = /obj/item/projectile/beam/sniper/turret
-	max_shots = 12
+	projectile_type = /obj/item/projectile/beam/turret
+	max_shots = 1
 	w_class = ITEM_SIZE_LARGE
 
 /////////
 // Projectiles
 /////////
 
-/obj/item/projectile/beam/sniper/turret
-	damage = 15
-	armor_penetration = 10
-//	agony = 25
+/obj/item/projectile/beam/turret
+	name = "anti-boarding salvo"
+	damage = 25
+	armor_penetration = 30
 	damage_type = BURN
 
 /////////
@@ -55,5 +55,5 @@
 	base_turf = /turf/simulated/floor/reinforced/airless
 	requires_power = 1
 	dynamic_lighting = 1
-	area_flags = AREA_FLAG_ION_SHIELDED
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 

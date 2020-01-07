@@ -110,3 +110,7 @@
 /datum/fabricator_recipe/arms_ammo/hidden/birdshot
 	name = "ammunition (rubbershot shell)"
 	path = /obj/item/ammo_casing/shotgun/birdshot
+
+/datum/fabricator_recipe/arms_ammo/hidden/casull
+	name = "ammunition (massive speedloader)"
+	path = /obj/item/ammo_magazine/speedloader/large

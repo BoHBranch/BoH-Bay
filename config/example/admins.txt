@@ -5,6 +5,4 @@
 # Ranks can be anything defined in admin_ranks.txt           ~Carn   #
 ######################################################################
 
-"N0B0DY-1MP0R7AN7" - Developer
-N0B0DY-1MP0R7AN7 - Developer
-N0B0DY_1MP0R7AN7 - Host
+#example - admin

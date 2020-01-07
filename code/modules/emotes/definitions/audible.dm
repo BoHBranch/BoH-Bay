@@ -56,7 +56,6 @@
 
 /decl/emote/audible/whistle
 	key = "whistle"
-	emote_message_1p = "You whistle."
 	emote_message_3p = "USER whistles."
 
 /decl/emote/audible/boop
@@ -101,6 +100,10 @@
 /decl/emote/audible/cry
 	key = "cry"
 	emote_message_3p = "USER cries."
+
+/decl/emote/audible/sob
+	key = "sob"
+	emote_message_3p = "USER sobs."
 
 /decl/emote/audible/sigh
 	key = "sigh"
@@ -148,6 +151,30 @@
 	emote_message_3p_target = "<span class='warning'>USER slaps TARGET across the face!</span>"
 	emote_message_3p = "USER slaps USER_SELF across the face!"
 	emote_sound = 'sound/effects/snap.ogg'
+
+/decl/emote/audible/fsnap
+	key = "fsnap"
+	emote_message_1p_target = "<span class='notice'>You snap at TARGET, trying to get TARGET_THEIR attention.</span>"
+	emote_message_1p = "You snap with fingers."
+	emote_message_3p_target = "<span class='notice'>USER snap at TARGET, trying to get TARGET_THEIR attention.</span>"
+	emote_message_3p = "USER snaps with fingers."
+	emote_sound = 'sound/misc/fsnap1.ogg'
+
+/decl/emote/audible/fsnap2
+	key = "fsnap2"
+	emote_message_1p_target = "<span class='notice'>You snap at TARGET twice, trying to get TARGET_THEIR attention.</span>"
+	emote_message_1p = "You snap with fingers twice."
+	emote_message_3p_target = "<span class='notice'>USER snap at TARGET twice, trying to get TARGET_THEIR attention.</span>"
+	emote_message_3p = "USER snaps with fingers twice."
+	emote_sound = 'sound/misc/fsnap2.ogg'
+
+/decl/emote/audible/fsnap3
+	key = "fsnap3"
+	emote_message_1p_target = "<span class='notice'>You snap at TARGET thrice, trying to get TARGET_THEIR attention.</span>"
+	emote_message_1p = "You snap with fingers thrice."
+	emote_message_3p_target = "<span class='notice'>USER snap at TARGET thrice, trying to get TARGET_THEIR attention.</span>"
+	emote_message_3p = "USER snaps with fingers thrice."
+	emote_sound = 'sound/misc/fsnap3.ogg'
 
 /decl/emote/audible/bug_hiss
 	key ="hiss"
