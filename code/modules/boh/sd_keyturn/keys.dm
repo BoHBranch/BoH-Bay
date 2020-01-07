@@ -3,6 +3,7 @@
 	desc = "For when the final duty must be performed."
 	icon = 'icons/boh/items/sd_keys.dmi'
 	icon_state = "key_base"
+	w_class = ITEM_SIZE_TINY
 	var/mob/living/carbon/human/owner
 	var/list/allowed_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos) //Who can imprint this key?
 	var/ownertag
