@@ -47,8 +47,8 @@
 "aU" = (/obj/random/energy,/obj/structure/table/rack,/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "aV" = (/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "aW" = (/obj/item/clothing/gloves/vox,/obj/item/clothing/gloves/vox,/obj/item/clothing/gloves/vox,/obj/item/clothing/gloves/vox,/obj/item/clothing/mask/gas/vox,/obj/item/clothing/mask/gas/vox,/obj/item/clothing/mask/gas/vox,/obj/structure/table/steel,/obj/item/weapon/gun/launcher/alien/slugsling,/obj/structure/reagent_dispensers/peppertank{pixel_y = 35},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
-"aX" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 6},/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor/plating/vox,/area/voxship/ship)
-"aY" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor/plating/vox,/area/voxship/ship)
+"aX" = (/obj/machinery/atmospherics/pipe/cap/visible{icon_state = "cap"; dir = 4},/obj/machinery/atmospherics/portables_connector,/obj/machinery/portable_atmospherics/canister/empty,/turf/simulated/floor/plating/vox,/area/voxship/ship)
+"aY" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 6},/obj/machinery/atmospherics/pipe/simple/visible/yellow{icon_state = "intact"; dir = 5},/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "aZ" = (/obj/machinery/computer/air_control{dir = 4; frequency = 2002; input_tag = "vox_ship_in"; name = "Ship Juice Control"; output_tag = "vox_ship_out"; sensor_tag = "vox_ship_sensor"},/obj/effect/floor_decal/borderfloor/full,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "ba" = (/obj/machinery/atmospherics/pipe/simple/visible/black{icon_state = "intact"; dir = 10},/obj/machinery/portable_atmospherics/canister/hydrogen,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "bb" = (/obj/random/junk,/obj/random/glasses,/obj/random/tank,/obj/machinery/light/small{dir = 8},/turf/simulated/floor/plating/vox,/area/voxship/base)
@@ -78,7 +78,7 @@
 "bz" = (/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,/obj/structure/catwalk,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "bA" = (/obj/item/weapon/reagent_containers/glass/bottle/chloralhydrate,/obj/item/weapon/reagent_containers/glass/bottle/chloralhydrate,/obj/structure/table/rack,/obj/item/weapon/gun/projectile/dartgun/vox/raider,/obj/item/ammo_magazine/chemdart,/obj/item/ammo_magazine/chemdart,/obj/item/ammo_magazine/chemdart,/obj/item/ammo_magazine/chemdart,/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "bB" = (/obj/machinery/atmospherics/unary/outlet_injector{dir = 4; frequency = 2002; icon_state = "map_injector"; id = "vox_ship_in"; use_power = 1},/turf/simulated/floor/airless,/area/voxship/ship)
-"bC" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/obj/effect/floor_decal/borderfloor/cee{icon_state = "borderfloorcee_white"; dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/ship)
+"bC" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/obj/effect/floor_decal/borderfloor/cee{icon_state = "borderfloorcee_white"; dir = 4},/obj/machinery/atmospherics/binary/pump/high_power/on/max_pressure{dir = 1; name = "Filter Pump"},/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "bD" = (/obj/machinery/atmospherics/pipe/simple/visible/black{icon_state = "intact"; dir = 10},/obj/effect/floor_decal/borderfloor/full,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "bE" = (/turf/space,/area/voxship/base)
 "bF" = (/obj/machinery/power/smes/buildable/preset/voxship/ship,/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
@@ -86,7 +86,7 @@
 "bH" = (/obj/effect/floor_decal/borderfloor/full,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "bI" = (/obj/machinery/atmospherics/binary/pump/high_power,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "bJ" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0},/obj/effect/catwalk_plated/dark,/obj/machinery/door/airlock/glass,/turf/simulated/floor/reinforced/vox,/area/voxship/ship)
-"bK" = (/obj/machinery/light/small{dir = 8},/obj/effect/floor_decal/borderfloor/cee{icon_state = "borderfloorcee_white"; dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/ship)
+"bK" = (/obj/machinery/light/small{dir = 8},/obj/effect/floor_decal/borderfloor/cee{icon_state = "borderfloorcee_white"; dir = 4},/obj/machinery/atmospherics/unary/vent_pump{dir = 1; external_pressure_bound = 0; external_pressure_bound_default = 0; frequency = 2002; icon_state = "map_vent_in"; id_tag = "filter_pump"; initialize_directions = 1; internal_pressure_bound = 4000; internal_pressure_bound_default = 4000; pressure_checks = 2; pressure_checks_default = 2; pump_direction = 0; use_power = 1},/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "bL" = (/obj/effect/floor_decal/sign/b,/turf/simulated/floor/tiled/techmaint/vox,/area/voxship/base)
 "bM" = (/obj/structure/window/reinforced{dir = 1; health = 1e+006},/obj/structure/inflatable/door,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0},/obj/effect/catwalk_plated/dark,/obj/structure/window/reinforced{dir = 2; health = 1e+007},/turf/simulated/floor/plating/vox,/area/voxship/base)
 "bN" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_x = 0},/obj/effect/catwalk_plated/dark,/obj/machinery/door/airlock/glass,/turf/simulated/floor/plating/vox,/area/voxship/base)
@@ -370,7 +370,7 @@
 "hf" = (/obj/item/weapon/weldpack/bigwelder,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "hg" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/item/weapon/shovel,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "hh" = (/obj/machinery/portable_atmospherics/canister/oxygen,/obj/machinery/atmospherics/pipe/cap/visible{dir = 8; icon_state = "cap"},/turf/simulated/floor/plating/vox,/area/voxship/ship)
-"hi" = (/obj/machinery/portable_atmospherics/canister/oxygen,/obj/machinery/atmospherics/pipe/cap/visible{icon_state = "cap"; dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/ship)
+"hi" = (/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/obj/machinery/atmospherics/omni/filter,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "hj" = (/obj/machinery/pointdefense/ramshackle,/obj/machinery/power/terminal{icon_state = "term"; dir = 1},/obj/structure/cable,/turf/simulated/floor/plating,/area/voxship/ship)
 "hk" = (/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "hl" = (/obj/effect/floor_decal/industrial/warning/corner{dir = 8},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/plating/vox,/area/voxship/ship)
@@ -421,10 +421,11 @@
 "ie" = (/obj/structure/table/rack/shelf/steel,/obj/item/rig_module/electrowarfare_suite,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "if" = (/obj/structure/table/rack/shelf/steel,/obj/item/rig_module/maneuvering_jets,/turf/simulated/floor/plating/vox,/area/voxship/base)
 "ig" = (/obj/structure/table/rack/shelf/steel,/obj/item/weapon/ore/hydrogen,/obj/item/weapon/ore/hydrogen,/obj/item/weapon/ore/hydrogen,/turf/simulated/floor/plating/vox,/area/voxship/base)
+"ih" = (/obj/machinery/atmospherics/portables_connector{dir = 1},/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/obj/machinery/atmospherics/pipe/simple/visible/yellow{dir = 10},/turf/simulated/floor/plating/vox,/area/voxship/ship)
+"ii" = (/obj/machinery/atmospherics/pipe/manifold/visible/black,/obj/machinery/atmospherics/unary/vent_pump/on{dir = 2; level = 2},/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "va" = (/obj/machinery/atmospherics/pipe/simple/visible/black,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/floor_decal/borderfloor/full,/obj/machinery/power/port_gen/pacman/mrs,/obj/structure/cable/blue{d2 = 2; icon_state = "0-2"},/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "Cj" = (/obj/machinery/atmospherics/pipe/manifold/visible/black,/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor/plating/vox,/area/voxship/ship)
 "Wm" = (/obj/machinery/atmospherics/pipe/manifold/visible/black,/turf/simulated/floor/plating/vox,/area/voxship/ship)
-"Zl" = (/obj/machinery/atmospherics/portables_connector{dir = 1},/obj/machinery/atmospherics/pipe/simple/visible/black{dir = 4},/turf/simulated/floor/plating/vox,/area/voxship/ship)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -447,8 +448,8 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaalamaaaaaaaaaaaaaaaaaaaaaaaaadadbbawaxayazeuaiaqaiaiaiciadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaauavaRaaaaaaaaaaaRaDaaaaaaadadaEaFaGaHhfaHcJaiaIaiaJaKaiaLadadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaauaBaDaCaCaCaCaCaDaDaaaaaaadaQaQaQaQaQaQcLbzcsaQaQaQaQaQaQaQadababhEhEhEhEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaauaBhiCjWmaSWmCjhhaDaaaaaaadaUaVaWbcaVbjbdbeblbkblblbmbnbnbogYbQgYgZaaaahEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaauaBaXaYbgZlbgbgbaaDaaaaaaadbxaVbyaVbAaQbFbLaVaQbPbPaVbRcfcjadababhaaaaahEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaauaBaXiiiiaSWmCjhhaDaaaaaaadaUaVaWbcaVbjbdbeblbkblblbmbnbnbogYbQgYgZaaaahEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaauaBaYhihiihbgbgbaaDaaaaaaadbxaVbyaVbAaQbFbLaVaQbPbPaVbRcfcjadababhaaaaahEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaubfbhbObObCbDbHbIaDaaaaaaadcvaVbiaVcMaQcUdldlaQdnbPaVcfdBcfadaaaahaaaaahEhEhEhEhEhEhEhEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaudHbpbqdHbKbubvbwaDaaaaaaaddJdKaVaVdLaQdMbGbSaQbPbPdNdRdRdRadaaaahvgZaaaaaaaaaaaaaaaahEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaudHaPbBbOhsbWbXbYaDbEadadadaQaQaQaQaQaQdSbTaVaQaQaQaQaQaQaQadabababhahwhwhwhwhwhwhxaahEaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
