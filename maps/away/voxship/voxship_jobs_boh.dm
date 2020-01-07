@@ -10,7 +10,7 @@
 	min_skill = list(   SKILL_EVA         = SKILL_MAX,
 	                    SKILL_COMBAT      = SKILL_MAX,
 	                    SKILL_PILOT     = SKILL_BASIC)
-	skill_points = 10
+	skill_points = 4
 
 /obj/effect/submap_landmark/spawnpoint/voxarm_crew
 	name = "Shoal Armalis"
