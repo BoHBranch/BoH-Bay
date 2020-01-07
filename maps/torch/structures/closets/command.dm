@@ -48,6 +48,7 @@
 		/obj/item/weapon/folder/blue,
 		/obj/item/weapon/material/knife/folding/swiss/officer,
 		/obj/item/gunbox/officer,
+		/obj/item/weapon/sd_key,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/captain, /obj/item/weapon/storage/backpack/satchel/cap)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/captain, /obj/item/weapon/storage/backpack/messenger/com))
 	)
@@ -75,6 +76,7 @@
 		/obj/item/device/holowarrant,
 		/obj/item/weapon/folder/blue,
 		/obj/item/weapon/material/knife/folding/swiss/officer,
+		/obj/item/weapon/sd_key,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/captain, /obj/item/weapon/storage/backpack/satchel/cap)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/captain, /obj/item/weapon/storage/backpack/messenger/com)),
 		/obj/item/weapon/storage/box/imprinting

@@ -4,6 +4,7 @@
 	icon_state = "bio_anom"
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	item_flags = ITEM_FLAG_AIRTIGHT
 
 /obj/item/clothing/head/bio_hood/anomaly
 	name = "Anomaly hood"
@@ -12,6 +13,7 @@
 	item_state = "bio_anom"
 	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
+	item_flags = ITEM_FLAG_AIRTIGHT
 
 /obj/item/clothing/suit/space/void/excavation
 	name = "excavation voidsuit"

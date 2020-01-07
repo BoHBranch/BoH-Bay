@@ -139,9 +139,10 @@
 	slowdown = 1
 	hidden_from_codex = TRUE
 	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED | SPECIES_NO_FBP_CONSTRUCTION
-	brute_mod = 0.7
-	burn_mod = 0.7
+	brute_mod = 0.5
+	burn_mod = 0.5
 	strength = STR_HIGH
+	mob_size = MOB_LARGE
 
 	speech_sounds = list('sound/voice/shriek1.ogg')
 	speech_chance = 25
@@ -162,3 +163,11 @@
 		slot_back_str =   list("[NORTH]" = list("x" = 0, "y" = 8), "[EAST]" = list("x" = -3, "y" = 8), "[SOUTH]" = list("x" = 0, "y" = 8), "[WEST]" = list("x" =  3, "y" = 8)),
 		slot_belt_str =   list("[NORTH]" = list("x" = 0, "y" = 8), "[EAST]" = list("x" = -4, "y" = 8), "[SOUTH]" = list("x" = 0, "y" = 8), "[WEST]" = list("x" =  4, "y" = 8))
 	)
+
+/datum/species/vox/armalis/attempt_grab(var/mob/living/carbon/human/grabber, var/mob/living/target)
+	if(grabber != target)
+		grabber.unEquip(grabber.l_hand)
+		grabber.unEquip(grabber.r_hand)
+		to_chat(grabber, SPAN_WARNING("You drop everything in a rage as you seize \the [target]!"))
+		playsound(grabber.loc, 'sound/weapons/pierce.ogg', 25, 1, -1)
+	. = ..(grabber, target, GRAB_NAB)

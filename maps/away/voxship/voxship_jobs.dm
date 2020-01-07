@@ -1,6 +1,6 @@
 /datum/job/submap/voxship_vox
 	title = "Shoal Scavenger"
-	total_positions = 4
+	total_positions = 12
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
 	supervisors = "apex and the arkship"
 	info = "Scrap is thin. Not much food is left, but thankfully the sector is quite rich, and it's time to get some more supplies. \
@@ -12,7 +12,7 @@
 	                    SKILL_COMBAT      = SKILL_BASIC,
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
 	                    SKILL_PILOT       = SKILL_BASIC)
-	skill_points = 15
+	skill_points = 12
 
 #define VOXSHIP_OUTFIT_JOB_NAME(job_name) ("Vox Asteroid Base - Job - " + job_name)
 /decl/hierarchy/outfit/job/voxship
