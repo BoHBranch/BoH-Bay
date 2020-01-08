@@ -5,8 +5,8 @@
 	minimal_player_age = 2
 	minimum_character_age = list(SPECIES_HUMAN = 29)
 	ideal_character_age = 45
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the Chief Medical Officer"
 	selection_color = "#013d3b"
 	economic_power = 8

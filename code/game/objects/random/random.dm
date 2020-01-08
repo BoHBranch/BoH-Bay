@@ -582,8 +582,6 @@ obj/random/obstruction/spawn_choices()
 				/obj/structure/grille,
 				/obj/structure/grille/broken,
 				/obj/structure/foamedmetal,
-				/obj/item/weapon/caution,
-				/obj/item/weapon/caution/cone,
 				/obj/structure/inflatable/wall,
 				/obj/structure/inflatable/door)
 
