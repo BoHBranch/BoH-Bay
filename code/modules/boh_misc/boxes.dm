@@ -115,3 +115,13 @@
 /obj/item/weapon/storage/backpack/dufflebag/syndie/c4
 	name = "hefty bag"
 	startswith = list(/obj/item/weapon/plastique = 19)
+
+/////////
+// Chemical Box
+/////////
+/obj/item/weapon/storage/lockbox/vials/random
+	name = "secure vial storage box"
+	desc = "A locked box for keeping things away from children."
+	w_class = ITEM_SIZE_NORMAL
+	req_access = list(access_research)
+	startswith = list(/obj/item/weapon/reagent_containers/glass/beaker/vial/projectsecret = 12)
