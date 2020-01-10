@@ -130,7 +130,7 @@ var/global/list/additional_antag_types = list()
 		usr.client.holder.show_game_mode(usr)
 
 /datum/game_mode/proc/announce() //to be called when round starts
-	if(config.annouce_gamemode)
+	if(config.announce_gamemode)
 		to_world("<B>The current game mode is [capitalize(name)]!</B>")
 		if(round_description) to_world("[round_description]")
 		if(round_autoantag) to_world("Antagonists will be added to the round automagically as needed.")
