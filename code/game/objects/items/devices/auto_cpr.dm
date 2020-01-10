@@ -10,13 +10,6 @@
 	var/skilled_setup
 
 /obj/item/auto_cpr/mob_can_equip(mob/living/carbon/human/H, slot, disable_warning = 0, force = 0)
-	. = ..()
-	if(force || !istype(H) || slot != slot_wear_suit)
-		return
-	if(H.species.get_bodytype() in list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_UNATHI, SPECIES_ALIEN)) //non-humanoids btfo
-		return
-	else
-		return FALSE
 
 /obj/item/auto_cpr/attack(mob/living/carbon/human/M, mob/living/user, var/target_zone)
 	if(istype(M) && user.a_intent == I_HELP)
@@ -27,7 +20,7 @@
 
 		if(!do_mob(user, M, 2 SECONDS))
 			return
-			
+
 		if(user.unEquip(src))
 			if(!M.equip_to_slot_if_possible(src, slot_wear_suit, del_on_fail=0, disable_warning=1, redraw_mob=1))
 				user.put_in_active_hand(src)
@@ -40,7 +33,7 @@
 	START_PROCESSING(SSobj,src)
 
 /obj/item/auto_cpr/attack_hand(mob/user)
-	skilled_setup = user.skill_check(SKILL_ANATOMY, SKILL_BASIC) && user.skill_check(SKILL_MEDICAL, SKILL_BASIC) 
+	skilled_setup = user.skill_check(SKILL_ANATOMY, SKILL_BASIC) && user.skill_check(SKILL_MEDICAL, SKILL_BASIC)
 	..()
 
 /obj/item/auto_cpr/dropped(mob/user)
@@ -61,7 +54,7 @@
 		if(!skilled_setup && prob(20))
 			var/obj/item/organ/external/E = H.get_organ(BP_CHEST)
 			E.add_pain(15)
-			to_chat(H, "<span class='danger'>Your [E] is compressed painfully!</span>")	
+			to_chat(H, "<span class='danger'>Your [E] is compressed painfully!</span>")
 			if(prob(5))
 				E.fracture()
 		else
