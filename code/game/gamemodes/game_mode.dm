@@ -130,25 +130,26 @@ var/global/list/additional_antag_types = list()
 		usr.client.holder.show_game_mode(usr)
 
 /datum/game_mode/proc/announce() //to be called when round starts
-	to_world("<B>The current game mode is [capitalize(name)]!</B>")
-	if(round_description) to_world("[round_description]")
-	if(round_autoantag) to_world("Antagonists will be added to the round automagically as needed.")
-	if(antag_templates && antag_templates.len)
-		var/antag_summary = "<b>Possible antagonist types:</b> "
-		var/i = 1
-		for(var/datum/antagonist/antag in antag_templates)
-			if(i > 1)
-				if(i == antag_templates.len)
-					antag_summary += " and "
-				else
-					antag_summary += ", "
-			antag_summary += "[antag.role_text_plural]"
-			i++
-		antag_summary += "."
-		if(antag_templates.len > 1 && SSticker.master_mode != "secret")
-			to_world("[antag_summary]")
-		else
-			message_admins("[antag_summary]")
+	if(config.annouce_gamemode)
+		to_world("<B>The current game mode is [capitalize(name)]!</B>")
+		if(round_description) to_world("[round_description]")
+		if(round_autoantag) to_world("Antagonists will be added to the round automagically as needed.")
+		if(antag_templates && antag_templates.len)
+			var/antag_summary = "<b>Possible antagonist types:</b> "
+			var/i = 1
+			for(var/datum/antagonist/antag in antag_templates)
+				if(i > 1)
+					if(i == antag_templates.len)
+						antag_summary += " and "
+					else
+						antag_summary += ", "
+				antag_summary += "[antag.role_text_plural]"
+				i++
+			antag_summary += "."
+			if(antag_templates.len > 1 && SSticker.master_mode != "secret")
+				to_world("[antag_summary]")
+			else
+				message_admins("[antag_summary]")
 
 // startRequirements()
 // Checks to see if the game can be setup and ran with the current number of players or whatnot.

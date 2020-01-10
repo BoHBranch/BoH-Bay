@@ -234,6 +234,8 @@ var/list/gamemode_cache = list()
 	var/max_acts_per_interval = 140 //Number of actions per interval permitted for spam protection.
 	var/act_interval = 0.1 SECONDS //Interval for spam prevention.
 
+	var/annouce_gamemode = FALSE //Do we annouce the game mode or not?
+
 /datum/configuration/New()
 	var/list/L = typesof(/datum/game_mode) - /datum/game_mode
 	for (var/T in L)
@@ -765,6 +767,9 @@ var/list/gamemode_cache = list()
 					config.max_acts_per_interval = text2num(value)
 				if ("act_interval")
 					config.act_interval = text2num(value) SECONDS
+
+				if ("annouce_gamemode")
+					config.annouce_gamemode = TRUE
 
 				else
 					log_misc("Unknown setting in configuration: '[name]'")
