@@ -10,6 +10,9 @@
 	var/skilled_setup
 
 /obj/item/auto_cpr/mob_can_equip(mob/living/carbon/human/H, slot, disable_warning = 0, force = 0)
+	. = ..()
+	if(force || !istype(H) || slot != slot_wear_suit)
+		return
 
 /obj/item/auto_cpr/attack(mob/living/carbon/human/M, mob/living/user, var/target_zone)
 	if(istype(M) && user.a_intent == I_HELP)
