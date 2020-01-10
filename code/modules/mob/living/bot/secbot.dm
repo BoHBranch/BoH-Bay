@@ -21,9 +21,9 @@
 	RequiresAccessToToggle = 1 // Haha no
 
 	var/idcheck = 0 // If true, arrests for having weapons without authorization.
-	var/check_records = 0 // If true, arrests people without a record.
+	var/check_records = 1 // If true, arrests people without a record.
 	var/check_arrest = 1 // If true, arrests people who are set to arrest.
-	var/declare_arrests = 0 // If true, announces arrests over sechuds.
+	var/declare_arrests = 1 // If true, announces arrests over sechuds.
 
 	var/is_ranged = 0
 	var/awaiting_surrender = 0
