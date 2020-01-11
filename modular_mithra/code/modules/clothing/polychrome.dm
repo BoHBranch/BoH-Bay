@@ -39,8 +39,8 @@
 	var/tertiary_color = "#808080"
 	var/item_color
 
-/obj/item/clothing/update_icon()	// picks the colored overlays from the ICON file
-	..()
+/obj/item/clothing/on_update_icon()	// picks the colored overlays from the ICON file
+	. = ..()
 	if(hasprimary)	//Checks if the overlay is enabled
 		var/mutable_appearance/primary_overlay = mutable_appearance(icon, "[item_color]-primary")	//Automagically picks overlays
 		primary_overlay.color = primary_color	//Colors the greyscaled overlay

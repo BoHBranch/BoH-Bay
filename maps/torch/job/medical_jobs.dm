@@ -5,14 +5,16 @@
 	minimal_player_age = 2
 	minimum_character_age = list(SPECIES_HUMAN = 29)
 	ideal_character_age = 45
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the Chief Medical Officer"
 	selection_color = "#013d3b"
 	economic_power = 8
 	alt_titles = list(
 		"Surgeon",
-		"Resident")
+		"Resident",
+		"Coroner"
+		)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/senior
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -37,7 +39,7 @@
 
 	access = list(access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
 			            access_crematorium, access_chemistry, access_surgery,
-			            access_medical_equip, access_solgov_crew, access_senmed)
+			            access_medical_equip, access_solgov_crew, access_senmed, access_hangar)
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
@@ -156,7 +158,7 @@
 	minimal_access = list()
 
 /datum/job/chemist/get_description_blurb()
-	return "You are a Laboratory Technician. You make medicine, and work in the virology lab. You are not a doctor or medic, but have surface level knowledge in those fields. You should not be treating patients, but rather providing the the medicine to do so. You are subordinate to Physicians and Medical Techncians."	
+	return "You are a Laboratory Technician. You make medicine, and work in the virology lab. You are not a doctor or medic, but have surface level knowledge in those fields. You should not be treating patients, but rather providing the the medicine to do so. You are subordinate to Physicians and Medical Techncians."
 
 /datum/job/psychiatrist
 	title = "Counselor"
@@ -187,7 +189,7 @@
 	max_skill = list(
 		SKILL_MEDICAL     = SKILL_MAX
 	)
-	access = list(access_medical, access_psychiatrist, access_solgov_crew, access_medical_equip)
+	access = list(access_medical, access_psychiatrist, access_solgov_crew, access_medical_equip, access_virology)
 	minimal_access = list()
 	software_on_spawn = list(
 		/datum/computer_file/program/suit_sensors,

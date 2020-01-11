@@ -25,6 +25,17 @@
 	siemens_coefficient = 0.7
 	w_class = ITEM_SIZE_NORMAL
 	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_ADHERENT)
+	var/allow_hair_covering = 1
+
+// Snowflakes gotta snowflake.
+/obj/item/clothing/head/helmet/verb/toggle_block_hair()
+	set name = "Toggle Helmet Hair Coverage"
+	set category = "Object"
+
+	if(allow_hair_covering)
+		flags_inv ^= BLOCKHEADHAIR
+		to_chat(usr, "<span class='notice'>[src] will now [flags_inv & BLOCKHEADHAIR ? "hide" : "show"] hair.</span>")
+	..()
 
 /obj/item/clothing/head/helmet/nt
 	name = "\improper corporate security helmet"

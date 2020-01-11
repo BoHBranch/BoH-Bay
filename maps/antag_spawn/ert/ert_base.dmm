@@ -396,7 +396,7 @@
 "hF" = (/turf/unsimulated/wall{desc = "A secure airlock. Doesn't look like you can get through easily."; icon = 'icons/obj/doors/centcomm/door.dmi'; icon_state = "closed"; name = "Delta Barracks"; dir = 4},/area/map_template/rescue_base/base)
 "hG" = (/obj/effect/floor_decal/borderfloorblack/full,/turf/unsimulated/floor{icon_state = "vault"; dir = 8},/area/map_template/rescue_base/base)
 "hH" = (/obj/effect/floor_decal/ntlogo{dir = 8},/turf/unsimulated/floor{icon_state = "vault"; dir = 8},/area/map_template/rescue_base/base)
-"hI" = (/obj/structure/table/rack/shelf/steel,/obj/item/weapon/storage/backpack/dufflebag/syndie/c4,/obj/effect/floor_decal/industrial/outline/grey,/turf/unsimulated/floor{icon = 'icons/turf/shuttle.dmi'; icon_state = "floor4"},/area/map_template/rescue_base/base)
+"hI" = (/obj/structure/table/rack/shelf/steel,/obj/effect/floor_decal/industrial/outline/grey,/obj/item/weapon/gun/launcher/rocket/recoilless,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/turf/unsimulated/floor{icon = 'icons/turf/shuttle.dmi'; icon_state = "floor4"},/area/map_template/rescue_base/base)
 "hJ" = (/obj/effect/floor_decal/ntlogo{dir = 4},/turf/unsimulated/floor{icon_state = "vault"; dir = 8},/area/map_template/rescue_base/base)
 "hK" = (/obj/vehicle/bike/electric{dir = 8},/obj/effect/floor_decal/ntlogo,/turf/unsimulated/floor{icon_state = "vault"; dir = 8},/area/map_template/rescue_base/base)
 "hL" = (/obj/structure/table/rack/dark,/obj/item/weapon/rig/military/deathsquad,/obj/item/weapon/rig/military/deathsquad,/obj/item/weapon/rig/military/deathsquad,/obj/item/weapon/rig/military/deathsquad,/obj/item/weapon/rig/military/deathsquad,/obj/item/weapon/rig/military/deathsquad,/obj/effect/floor_decal/industrial/outline/grey,/turf/unsimulated/floor{icon = 'icons/turf/shuttle.dmi'; icon_state = "floor4"},/area/map_template/rescue_base/base)
@@ -405,10 +405,23 @@
 "hO" = (/obj/structure/table/rack/dark,/obj/item/weapon/gun/energy/pulse_rifle/pistol,/obj/item/weapon/gun/energy/pulse_rifle/pistol,/obj/item/weapon/gun/energy/pulse_rifle/pistol,/obj/item/weapon/gun/energy/pulse_rifle/pistol,/obj/item/weapon/gun/energy/pulse_rifle/pistol,/obj/item/weapon/gun/energy/pulse_rifle/pistol,/obj/effect/floor_decal/industrial/outline/grey,/turf/unsimulated/floor{icon = 'icons/turf/shuttle.dmi'; icon_state = "floor4"},/area/map_template/rescue_base/base)
 "hP" = (/obj/structure/table/rack/dark,/obj/item/weapon/gun/energy/pulse_rifle/deathsquad,/obj/item/weapon/gun/energy/pulse_rifle/deathsquad,/obj/item/weapon/gun/energy/pulse_rifle/deathsquad,/obj/item/weapon/gun/energy/pulse_rifle/deathsquad,/obj/effect/floor_decal/industrial/outline/grey,/turf/unsimulated/floor{icon = 'icons/turf/shuttle.dmi'; icon_state = "floor4"},/area/map_template/rescue_base/base)
 "hQ" = (/obj/item/device/radio/intercom/specops{dir = 8; pixel_x = 22; pixel_y = 0},/turf/unsimulated/floor{icon_state = "vault"; dir = 8},/area/map_template/rescue_base/base)
+"hR" = (/obj/machinery/door/airlock/centcom{name = "Code Anvil Equipment"; opacity = 1},/turf/unsimulated/floor{icon_state = "vault"; dir = 8},/area/map_template/rescue_base/base)
+"hS" = (/obj/machinery/nuclearbomb,/obj/machinery/door/window/eastleft,/turf/unsimulated/floor{icon = 'icons/turf/shuttle.dmi'; icon_state = "floor4"},/area/map_template/rescue_base/base)
 "hT" = (/obj/effect/floor_decal/industrial/loading{icon_state = "loadingarea"; dir = 8},/turf/unsimulated/floor{icon_state = "vault"; dir = 1},/area/map_template/rescue_base/base)
 "hU" = (/obj/effect/landmark{name = "Commando"},/obj/effect/floor_decal/industrial/loading{dir = 4},/turf/unsimulated/floor{icon_state = "vault"; dir = 1},/area/map_template/rescue_base/base)
 "hV" = (/obj/effect/landmark{name = "Commando"},/obj/effect/floor_decal/industrial/loading{icon_state = "loadingarea"; dir = 8},/turf/unsimulated/floor{icon_state = "vault"; dir = 1},/area/map_template/rescue_base/base)
-"hW" = (/obj/effect/floor_decal/borderfloorblack/full,/obj/effect/floor_decal/industrial/shutoff,/turf/unsimulated/floor{icon_state = "vault"; dir = 8},/area/map_template/rescue_base/base)
+"hW" = (/obj/structure/stairs/north,/turf/unsimulated/floor{icon_state = "dark"},/area/map_template/rescue_base/base)
+"hX" = (/turf/unsimulated/floor{name = "plating"; icon_state = "cult"},/area/map_template/rescue_base/base)
+"hY" = (/obj/structure/table/rack/shelf/steel,/obj/item/weapon/storage/box/secret_project_disks,/obj/item/weapon/folder/envelope/nuke_instructions,/obj/effect/floor_decal/industrial/outline/grey,/turf/unsimulated/floor{icon_state = "plating"; name = "plating"},/area/map_template/rescue_base/base)
+"hZ" = (/obj/structure/decoy{density = 1; icon_state = "ai-text"; name = "Databank"},/turf/unsimulated/floor{icon_state = "plating"; name = "plating"},/area/map_template/rescue_base/base)
+"ia" = (/obj/structure/table/rack/shelf/steel,/obj/item/mech_equipment/mounted_system/projectile/bullpup,/obj/item/mech_equipment/mounted_system/projectile/bullpup,/obj/item/mech_equipment/mounted_system/projectile/bullpup,/obj/item/mech_equipment/mounted_system/projectile/bullpup,/obj/effect/floor_decal/industrial/outline/grey,/turf/unsimulated/floor{icon_state = "plating"; name = "plating"},/area/map_template/rescue_base/base)
+"ib" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/storage/box/cdeathalarm_kit,/turf/simulated/floor/tiled/dark,/area/map_template/rescue_base/start)
+"ic" = (/obj/machinery/nuclearbomb,/obj/machinery/door/window/westleft,/turf/unsimulated/floor{icon = 'icons/turf/shuttle.dmi'; icon_state = "floor4"},/area/map_template/rescue_base/base)
+"id" = (/obj/machinery/nuclearbomb,/obj/machinery/door/window/westright,/turf/unsimulated/floor{icon = 'icons/turf/shuttle.dmi'; icon_state = "floor4"},/area/map_template/rescue_base/base)
+"ie" = (/obj/machinery/nuclearbomb,/obj/machinery/door/window/eastright,/turf/unsimulated/floor{icon = 'icons/turf/shuttle.dmi'; icon_state = "floor4"},/area/map_template/rescue_base/base)
+"if" = (/obj/effect/wingrille_spawn/reinforced/crescent,/turf/unsimulated/floor{name = "plating"; icon_state = "cult"},/area/map_template/rescue_base/base)
+"ig" = (/obj/machinery/telecomms/allinone,/obj/machinery/door/window/brigdoor/westright{autoset_access = 0; dir = 8; name = "TCOMMS Unit"; req_access = list("ACCESS_CAPTAIN")},/obj/structure/window/reinforced{dir = 1},/obj/effect/floor_decal/industrial/outline/grey,/turf/simulated/floor/plating,/area/map_template/rescue_base/start)
+"ih" = (/obj/machinery/telecomms/allinone,/obj/effect/floor_decal/industrial/outline/grey,/turf/unsimulated/floor{icon_state = "plating"; name = "plating"},/area/map_template/rescue_base/base)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -434,20 +447,20 @@ aabAbzbBbzbfaqaqaqaqaqaqancKbfcLaqaqancMbfananaqaqaqaqcNbfananabanananananananan
 aaaabzbzbAbfaqcOcOcOaqaqancPabcQaqaqananabananaqcRcScTcUabananabanancVcWcXcYcZdaabdbdbabaaaaaaabdnaqhUhwhBhVaqabaaaaaaaaaaaaaaaaaa
 aabzdcbzbAbfaqcOcOcOaqaqanddabbfbfdedfdfabdgdgdhdidididiabananabdjdjabababababababananabababababdnaqhvhwhBhTaqabaaaaaaaaaaaaaaaaaa
 aabAbzbzbJbfaqaqaqaqaqaqanandkananananandlanananananananaTanananananananaTanandmananananananhQabbfhzbfbfbfabababaaaaaaaaaaaaaaaaaa
-aadobzbAbzabdpdqdrdsdtduanandkanandvananananananananananananandwananananananandmanananananananhyhAhWhGhGhGhFabaaaaaaaaaaaaaaaaaaaa
+aadobzbAbzabdpdqdrdsdtduanandkanandvananananananananananananandwananananananandmanananananananhyhAhGhGhGhGhFabaaaaaaaaaaaaaaaaaaaa
 aaaaaabJbzabababababbfbfdxbfabbfbfabdydyabdzdzdAbfbfbfabababababdBdBabananabababababababababababbfhCbfbfbfabaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaabzaaaaaaaaabaqaqanaqbfdCdDdEananabananaqdFdGdHdIdJdKdLabdMdMabananabaaaaaaaaaaaaaaaaaaabhDaqaqaqhEabaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaabaqdNananbfaqaqaqananbfananaqaqaqaqaqaqaqdObfdPdPabdQdQababababaaaaaaaaaaaaabhIaqhLaqhMabaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaabdRdSdTandUaqaqaqananbfanandVdWdWdWdWaqaqdXbfdYdZabeaanhnecedabaaaaaaaaaaaaabhNaqhOaqhPabaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaabeeefananabegeheiejekbfananelememememaqaqdXbfdYeneoananananbcabaaaaaaaaaaaaabababababababaaaaaaaaaaaaaaaaaaaaaa
-aaaaabababababaaaaabeqaqeresababbfbfbfbfabananaqaqaqaqaqaqaqetbfdYeneoanhuhHanepababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaabeuevewabaaaaababababababaabAbAbAbAabcgchexeyezeAeBeCeDeEabdYeneoanhKhJanepabeFhmabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaabeGeHeIabaaaaaaaaaaaaaaaaaabAbzbBbAababbfbfbfbfababababababdYeneoanananananeJanhlabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaabababababaaaaaaaaaaaaaaaaaabAbAbAbAbAbAbAbAbAbzbAbAdYdYdYdYdYeKabhrhshqhphoabaqebabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaabAbAaaaabAbAbzbAbzbAbAbzbAbAbBbAbAdYdYdYdYdYdYababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaabAbAbAbzbAbAbAbzbAbAbAbAdcbAbzbAbAbAbAdYdYbAbAbAbzbAbAbBbzbzbAbzbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaabzaaaabAeLeMeMeMeMeMeMeMeMeMeMeMeMeMeMeMeMeMdYdYeMeMeMeMeMeMeMeNbAbBbzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaabzbzbAbAbAeOePePePePePePePePePePePePePePePePePeQeQePePePePePePePeRbAbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaabeeefananabegeheiejekbfananelememememaqaqdXbfdYeneoananananbcabaaaaaaaaaaaaababababhRababaaaaaaaaaaaaaaaaaaaaaa
+aaaaabababababaaaaabeqaqeresababbfbfbfbfabananaqaqaqaqaqaqaqetbfdYeneoanhuhHanepababababaaaaaaaaaaaaabhWabaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaabeuevewabaaaaababababababaabAbAbAbAabcgchexeyezeAeBeCeDeEabdYeneoanhKhJanepabeFhmabaaaaaaababababaqababababaaaaaaaaaaaaaaaaaa
+aaaaabeGeHeIabaaaaaaaaaaaaaaaaaabAbzbBbAababbfbfbfbfababababababdYeneoanananananeJanhlabaaaaaaabhShXhXhXhXhXidabaaaaaaaaaaaaaaaaaa
+aaaaabababababaaaaaaaaaaaaaaaaaabAbAbAbAbAbAbAbAbAbzbAbAdYdYdYdYdYeKabhrhshqhphoabaqebabaaaaaaabifhXhYhZiahXifabaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaabAbAaaaabAbAbzbAbzbAbAbzbAbAbBbAbAdYdYdYdYdYdYababababababababababaaaaaaabiehXhXhXhXhXicabaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaabAbAbAbzbAbAbAbzbAbAbAbAdcbAbzbAbAbAbAdYdYbAbAbAbzbAbAbBbzbzbAbzbAaaaaaaaaaaababababbfababababaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaabzaaaabAeLeMeMeMeMeMeMeMeMeMeMeMeMeMeMeMeMeMdYdYeMeMeMeMeMeMeMeNbAbBbzaaaaaaaaaaaaaaaaaaabihabaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaabzbzbAbAbAeOePePePePePePePePePePePePePePePePePeQeQePePePePePePePeRbAbAaaaaaaaaaaaaaaaaaaaaabababaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaabzbzbzbAbAeOePeSePePePeTeUeUeUeUeTePePePePeTeTeVeWeTeTePePePeSePeRbAbzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaabzaabAbAeOePePePePePeTeXeYeZfaeTePePePePeTfbfcfcfdeTePePePePePeRbAbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaabAbAbAeOePePePePePeTfefffgfheTePePePePeTfifjfjfkeTePePePePePeRbAbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -457,7 +470,7 @@ aaaaaaaaaaaaaabAbzbAeOePePePePePeTfwfxfwfweTePePePePeTeTfyfzeTeTePePePePePeRbzbz
 aaaaaaaaaaaaaabAfAbAeOePePePePePfBfCfmfmfDeTePePePePeTfEfFfGfHfIePePePePePeRbAbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaabAbAeOePePePePePfBfJfmfmfKeTePePePePeTfLfmfmfMfIePePePePePeRbAbAbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaabAbAeOePePePePePfBfNfmfmfOeTeTeTeTeTeTfPfmfmfMfIePePePePePeRbAbzbAbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaabAeOePePePePePeTfCfQfmfReTfSfTfefUeTfVfmfWfXeTePePePePePeRbAbAbzbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaabAeOePePePePePeTfCfQfmfReTfSfTibfUeTfVfmfWfXeTePePePePePeRbAbAbzbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaabAeOePePePePePeTeTeTfYfweTfZgagagbeTfwgceTeTeTePePePePePeRbAbzbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaabAbAeOePePePePePePePeTfmfmgdfmfmfmfmgdfmfmeTePePePePePePePeRbAbzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaabAbAeOePeTeTeTeTeTePeTgefmfQfmfmfmfmfWfmgfeTePeTeTeTeTeTePeRbAbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -465,7 +478,7 @@ aaaaaaaaaaaaaaaabAbAeOePeTggghgieTePeTgcfweTeTgjgjeTeTfwgkeTePeTglgmgneTePeRbzbA
 aaaaaaaaaaaaaabAbzbAeOePeTgofmgpeTeTeTfmgqeTgrgsgsgteTgugveTeTeTgwgxgveTePeRbAbAbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaabAbBbAeOePeTfwgyfweTfmgdfmgqeTgzgsgsgteTgAgvgBgCgDgvgvgEeTePeRbAbAbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaabAbAbAeOePeTgFfmfmgGfmgHfWgIeTgsgsgsgJeTgKgLgMgvgvgvgvgNeTePeRbAfAbzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaabAbBbzeOePeTgFfmgOeTeTeTeTeTeTgPgPgsgseTeTeTeTeTeTgQgvgReTePeRbAbAbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaabAbBbzeOePeTgFfmgOeTeTeTeTeTeTgPgPgsigeTeTeTeTeTeTgQgvgReTePeRbAbAbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaabzgSbAbAbAbAbAeOePgTgUfmgVeTePePePePgWgXgXgXgXgWePePePePeTgYgvgZhaePeRbAbzbAaaaabzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaahbbzbzbAbzbAbzbAeOePeThcfmhdeTePePePePgWhehehehegWePePePePeThfhghheTePeRbAbAbAbAbAbzaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaabAbzbAfAbzbAeOePgWgXgXgXgWePePePePePePePePePePePePePePgWgXgXgXgWePeRbAbAbAbAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

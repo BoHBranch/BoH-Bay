@@ -95,6 +95,7 @@
 		/obj/item/device/taperecorder,
 		/obj/item/weapon/hand_labeler,
 		/obj/item/weapon/material/knife/folding/swiss/officer,
+		/obj/item/weapon/sd_key,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/security, /obj/item/weapon/storage/backpack/satchel/sec)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/sec, /obj/item/weapon/storage/backpack/messenger/sec))
 	)
@@ -144,7 +145,8 @@
 		/obj/item/device/radio/headset/headset_sec/alt,
 		/obj/item/clothing/head/helmet/solgov/security,
 		/obj/item/clothing/suit/armor/pcarrier/medium/security,
-		/obj/item/weapon/gun/energy/gun/small/secure,
+//		/obj/item/weapon/gun/energy/gun/small/secure,
+		/obj/item/gunbox,
 		/obj/item/device/flash,
 		/obj/item/weapon/melee/baton/loaded,
 		/obj/item/weapon/reagent_containers/spray/pepper,

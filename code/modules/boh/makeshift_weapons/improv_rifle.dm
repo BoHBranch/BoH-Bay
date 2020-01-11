@@ -61,7 +61,8 @@
 	item_state = "sawnshotgun"
 	var/buildstate = 0
 
-/obj/item/weapon/imprifleframe/update_icon()
+/obj/item/weapon/imprifleframe/on_update_icon()
+	. = ..()
 	icon_state = "308boltframe[buildstate]"
 
 /obj/item/weapon/imprifleframe/examine(mob/user)
