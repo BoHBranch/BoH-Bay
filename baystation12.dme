@@ -1449,6 +1449,7 @@
 #include "code\modules\boh_misc\machinery.dm"
 #include "code\modules\boh_misc\masks.dm"
 #include "code\modules\boh_misc\material.dm"
+#include "code\modules\boh_misc\misc_verbs.dm"
 #include "code\modules\boh_misc\munitions.dm"
 #include "code\modules\boh_misc\rig_modules.dm"
 #include "code\modules\boh_misc\rigs.dm"

@@ -104,7 +104,7 @@
 	var/gibbed_anim =   "gibbed-h"
 	var/dusted_anim =   "dust-h"
 
-	var/death_sound
+	var/death_sound = 'sound/effects/deathrattle.ogg'
 	var/death_message = "seizes up and falls limp, their eyes dead and lifeless..."
 	var/knockout_message = "collapses, having been knocked unconscious."
 	var/halloss_message = "slumps over, too weak to continue fighting..."
