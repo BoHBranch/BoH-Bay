@@ -15,6 +15,16 @@
 	path = /obj/item/clothing/accessory/solgov/smc_patch/xeno
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 
+/datum/gear/tactical/civ_tag
+	display_name = "Civilian tag"
+	path = /obj/item/clothing/accessory/armor/tag/civ
+	allowed_branches = CIVILIAN_BRANCHES
+
+/datum/gear/tactical/med_tag
+	display_name = "Medical tag"
+	path = /obj/item/clothing/accessory/armor/tag/civ/med
+	allowed_roles = MEDICAL_ROLES
+
 /// Limb guards
 // Arms
 /datum/gear/tactical/arm_guards
@@ -42,6 +52,11 @@
 	arm_guards["blue arm guards"] = /obj/item/clothing/accessory/armguards/blue
 	gear_tweaks += new/datum/gear_tweak/path(arm_guards)
 
+/datum/gear/tactical/arm_guards/grey
+	display_name = "grey arm guards"
+	path = /obj/item/clothing/accessory/armguards/grey
+	allowed_roles = null
+
 // Legs
 /datum/gear/tactical/leg_guards
 	display_name = "black leg guards"
@@ -67,3 +82,14 @@
 	leg_guards["tan leg guards"] = /obj/item/clothing/accessory/legguards/tan
 	leg_guards["blue leg guards"] = /obj/item/clothing/accessory/legguards/blue
 	gear_tweaks += new/datum/gear_tweak/path(leg_guards)
+
+/datum/gear/tactical/leg_guards/grey
+	display_name = "grey leg guards"
+	path = /obj/item/clothing/accessory/legguards/grey
+	allowed_roles = null
+
+// Grey carrier pouches. Only small ones to emulate standard suit/storage behavior.
+/datum/gear/tactical/armor_pouches/grey
+	display_name = "grey armor pouches"
+	path = /obj/item/clothing/accessory/storage/pouches/grey
+	allowed_roles = null

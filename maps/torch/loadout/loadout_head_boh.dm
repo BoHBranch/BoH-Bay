@@ -11,3 +11,9 @@
 	milmisc_cover += /obj/item/clothing/head/solgov/utility/army/urban
 	milmisc_cover += /obj/item/clothing/head/solgov/utility/army/tan
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(milmisc_cover)
+
+/datum/gear/head/self_protection_helmet
+	display_name = "Civilian Self-Protection helmet"
+	path = /obj/item/clothing/head/hardhat/self_protection
+	cost = 2
+	allowed_branches = CIVILIAN_BRANCHES

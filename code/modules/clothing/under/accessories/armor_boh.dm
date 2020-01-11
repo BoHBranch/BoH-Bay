@@ -62,9 +62,9 @@
 	icon_override = 'icons/boh/mob/onmob/onmob_modular_armor.dmi'
 	icon = 'icons/boh/obj/clothing/obj_modular_armor.dmi'
 	accessory_icons = list(slot_tie_str = 'icons/boh/mob/onmob/onmob_modular_armor.dmi', slot_wear_suit_str = 'icons/boh/mob/onmob/onmob_modular_armor.dmi')
+	slot_flags = SLOT_BELT
 
 /obj/item/clothing/accessory/armor/tag/civ/med
 	name = "\improper medical tag"
 	desc = "A tag with green cross printed on it."
 	icon_state = "medtag"
-	slot_flags = SLOT_BELT
