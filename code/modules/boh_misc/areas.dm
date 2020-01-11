@@ -28,16 +28,12 @@
 // Viro 2.0
 /////////
 
-/area/psych_ward_boh/main
-	name = "\improper Psychiatric Ward"
+/area/ward_boh/main
+	name = "\improper Ward Hallway"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "psych"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	sound_env = MEDIUM_SOFTFLOOR
-
-/area/psych_ward_boh/main/ent
-	name = "\improper Ward Entrance"
-	icon_state = "psychent"
 
 /////////
 // Sec Triage
