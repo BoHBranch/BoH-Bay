@@ -9,11 +9,19 @@
 	slot = ACCESSORY_SLOT_INSIGNIA
 	check_codex_val = FACTION_MARINES
 
-// working title before supervisors finally decide on proper one
 /obj/item/clothing/accessory/solgov/smc_patch/xeno
 	name = "\improper Xenoic division of Marine Corps patch"
 	desc = "A robust shoulder patch, carrying the symbol-mascot of Xenoic division, yellow-eyed devil dog."
 	icon_state = "smcpatch13"
+
+// Sixth Fleet Patch, as for bonus
+/obj/item/clothing/accessory/solgov/fleet_patch/sixth
+	name = "\improper Sixth Fleet patch"
+	desc = "A robust shoulder patch carrying insignia of Sixth Fleet."
+	icon = 'maps/torch/icons/obj/obj_accessories_boh.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi')
+	icon_state = "fleetpatch6"
+	on_rolled = list("down" = "none")
 
 // ranks - proper marines
 /obj/item/clothing/accessory/solgov/rank/marine_corps
