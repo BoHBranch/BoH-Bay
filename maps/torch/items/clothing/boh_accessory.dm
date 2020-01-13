@@ -23,6 +23,11 @@
 	icon_state = "fleetpatch6"
 	on_rolled = list("down" = "none")
 
+// Modular version for NT Patch
+/obj/item/clothing/accessory/armor/tag/nt/dagon
+	name = "\improper NANOTRASEN patch"
+	desc = "An armor tag with the words NANOTRASEN printed in bottle green lettering on it."
+
 // ranks - proper marines
 /obj/item/clothing/accessory/solgov/rank/marine_corps
 	name = "marine ranks"

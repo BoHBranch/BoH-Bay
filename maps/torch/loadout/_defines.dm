@@ -54,4 +54,6 @@
 
 #define SOLGOV_BRANCHES list(/datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
 
+#define NT_BRANCHES list(/datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet)
+
 #define MILITARY_BRANCHES list(/datum/mil_branch/fleet, /datum/mil_branch/marine_corps)

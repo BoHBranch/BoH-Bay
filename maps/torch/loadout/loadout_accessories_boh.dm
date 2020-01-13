@@ -22,8 +22,44 @@
 
 /datum/gear/tactical/med_tag
 	display_name = "Medical tag"
+	path = /obj/item/clothing/accessory/armor/tag/solgov/medic
+	allowed_skills = list(SKILL_MEDICAL = SKILL_BASIC)
+
+/datum/gear/tactical/med_tag/alt
+	display_name = "Medical tag, alt"
 	path = /obj/item/clothing/accessory/armor/tag/civ/med
-	allowed_roles = MEDICAL_ROLES
+
+// Separating main's certain armor customization items.
+/datum/gear/tactical/blood_patch
+	display_name = "blood patch selection"
+	description = "A selection of blood type patches. Attaches to plate carrier."
+	path = /obj/item/clothing/accessory/armor/tag/
+	cost = 0 // Life-saving.
+
+/datum/gear/tactical/blood_patch/New()
+	..()
+	var/blood_type = list()
+	blood_type["A+"] = /obj/item/clothing/accessory/armor/tag/apos
+	blood_type["A-"] = /obj/item/clothing/accessory/armor/tag/aneg
+	blood_type["B+"] = /obj/item/clothing/accessory/armor/tag/bpos
+	blood_type["B-"] = /obj/item/clothing/accessory/armor/tag/bneg
+	blood_type["AB+"] = /obj/item/clothing/accessory/armor/tag/abpos
+	blood_type["AB-"] = /obj/item/clothing/accessory/armor/tag/abneg
+	blood_type["O+"] = /obj/item/clothing/accessory/armor/tag/opos
+	blood_type["O-"] = /obj/item/clothing/accessory/armor/tag/oneg
+	gear_tweaks += new/datum/gear_tweak/path(blood_type)
+
+/datum/gear/tactical/solgov
+	display_name = "SCG Flag tag"
+	path = /obj/item/clothing/accessory/armor/tag/solgov
+	allowed_branches = list(/datum/mil_branch/marine_corps, /datum/mil_branch/solgov)
+	cost = 0 // Uniformed branches would require one.
+
+/datum/gear/tactical/nt
+	display_name = "NanoTrasen tag"
+	path = /obj/item/clothing/accessory/armor/tag/nt/dagon
+	allowed_branches = NT_BRANCHES
+	cost = 0 // Ditto.
 
 /// Limb guards
 // Arms
