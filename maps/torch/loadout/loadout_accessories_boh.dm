@@ -67,18 +67,18 @@
 	display_name = "black arm guards"
 	path = /obj/item/clothing/accessory/armguards
 	cost = 1
-	allowed_roles = ARMORED_ROLES
+	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/tactical/arm_guards/navy
-	display_name = "navy arm guards"
+	display_name = "nanotrasen arm guards"
 	path = /obj/item/clothing/accessory/armguards/navy
-	allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/civilian)
+	allowed_branches = NT_BRANCHES
 
 /datum/gear/tactical/arm_guards/misc
-	display_name = "miscellaneous arm guards selection"
+	display_name = "solgov arm guards selection"
 	description = "A selection of arm guards in various colors."
 	path = /obj/item/clothing/accessory/armguards
-	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
+	allowed_branches = SOLGOV_BRANCHES
 
 /datum/gear/tactical/arm_guards/misc/New()
 	..()
@@ -91,25 +91,25 @@
 /datum/gear/tactical/arm_guards/grey
 	display_name = "grey arm guards"
 	path = /obj/item/clothing/accessory/armguards/grey
-	allowed_roles = null
+	allowed_branches = null
 
 // Legs
 /datum/gear/tactical/leg_guards
 	display_name = "black leg guards"
 	path = /obj/item/clothing/accessory/legguards
 	cost = 1
-	allowed_roles = ARMORED_ROLES
+	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/tactical/leg_guards/navy
-	display_name = "navy leg guards"
+	display_name = "nanotrasen leg guards"
 	path = /obj/item/clothing/accessory/legguards/navy
-	allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/civilian)
+	allowed_branches = NT_BRANCHES
 
 /datum/gear/tactical/leg_guards/misc
-	display_name = "miscellaneous leg guards selection"
+	display_name = "solgov leg guards selection"
 	description = "A selection of leg guards in various colors."
 	path = /obj/item/clothing/accessory/legguards
-	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
+	allowed_branches = SOLGOV_BRANCHES
 
 /datum/gear/tactical/leg_guards/misc/New()
 	..()
@@ -122,10 +122,10 @@
 /datum/gear/tactical/leg_guards/grey
 	display_name = "grey leg guards"
 	path = /obj/item/clothing/accessory/legguards/grey
-	allowed_roles = null
+	allowed_branches = null
 
 // Grey carrier pouches. Only small ones to emulate standard suit/storage behavior.
 /datum/gear/tactical/armor_pouches/grey
 	display_name = "grey armor pouches"
 	path = /obj/item/clothing/accessory/storage/pouches/grey
-	allowed_roles = null
+	allowed_branches = null

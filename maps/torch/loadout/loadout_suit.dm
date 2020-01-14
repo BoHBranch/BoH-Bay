@@ -99,21 +99,21 @@
 	path = /obj/item/clothing/suit/armor/pcarrier
 	cost = 1
 	slot = slot_wear_suit
-	allowed_roles = ARMORED_ROLES
+	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/tactical/pcarrier/navy
-	display_name = "navy blue plate carrier"
+	display_name = "nanotrasen plate carrier"
 	path = /obj/item/clothing/suit/armor/pcarrier/navy
-	allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/civilian)
+	allowed_branches = NT_BRANCHES
 
 /datum/gear/tactical/pcarrier/misc
-	display_name = "miscellaneous plate carrier selection"
-	allowed_roles = ARMORED_ROLES
-	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
+	display_name = "solgov plate carrier selection"
+	allowed_branches = SOLGOV_BRANCHES
 
 /datum/gear/tactical/pcarrier/misc/New()
 	..()
 	var/armors = list()
+	armors["blue plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/blue
 	armors["green plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/green
 	armors["tan plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/tan
 	gear_tweaks += new/datum/gear_tweak/path(armors)
