@@ -81,9 +81,25 @@
 	arm_guards["tan arm guards"] = /obj/item/clothing/accessory/armguards/tan
 	gear_tweaks += new/datum/gear_tweak/path(arm_guards)
 
+/datum/gear/tactical/arm_guards_light
+	display_name = "arm pads selection"
+	description = "A selection of military arm pads. They're weaker than normal guards."
+	path = /obj/item/clothing/accessory/armguards/light
+	allowed_branches = TACTICOOL_BRANCHES
+
+/datum/gear/tactical/arm_guards_light/New()
+	..()
+	var/arm_guards = list()
+	arm_guards["black arm pads"] = /obj/item/clothing/accessory/armguards/light
+	arm_guards["navy arm pads"] = /obj/item/clothing/accessory/armguards/light/navy
+	arm_guards["blue arm pads"] = /obj/item/clothing/accessory/armguards/light/blue
+	arm_guards["green arm pads"] = /obj/item/clothing/accessory/armguards/light/green
+	arm_guards["tan arm pads"] = /obj/item/clothing/accessory/armguards/light/tan
+	gear_tweaks += new/datum/gear_tweak/path(arm_guards)
+
 /datum/gear/tactical/arm_guards_grey
-	display_name = "grey arm guards"
-	path = /obj/item/clothing/accessory/armguards/grey
+	display_name = "grey arm pads"
+	path = /obj/item/clothing/accessory/armguards/light/grey
 
 // Legs
 /datum/gear/tactical/leg_guards
@@ -104,9 +120,25 @@
 	leg_guards["tan leg guards"] = /obj/item/clothing/accessory/legguards/tan
 	gear_tweaks += new/datum/gear_tweak/path(leg_guards)
 
+/datum/gear/tactical/leg_guards_light
+	display_name = "leg pads selection"
+	description = "A selection of military leg pads. They're weaker than normal guards."
+	path = /obj/item/clothing/accessory/legguards/light
+	allowed_branches = TACTICOOL_BRANCHES
+
+/datum/gear/tactical/leg_guards_light/New()
+	..()
+	var/leg_guards = list()
+	leg_guards["black leg pads"] = /obj/item/clothing/accessory/legguards/light
+	leg_guards["navy leg pads"] = /obj/item/clothing/accessory/legguards/light/navy
+	leg_guards["blue leg pads"] = /obj/item/clothing/accessory/legguards/light/blue
+	leg_guards["green leg pads"] = /obj/item/clothing/accessory/legguards/light/green
+	leg_guards["tan leg pads"] = /obj/item/clothing/accessory/legguards/light/tan
+	gear_tweaks += new/datum/gear_tweak/path(leg_guards)
+
 /datum/gear/tactical/leg_guards_grey
-	display_name = "grey leg guards"
-	path = /obj/item/clothing/accessory/legguards/grey
+	display_name = "grey leg pads"
+	path = /obj/item/clothing/accessory/legguards/light/grey
 
 // Grey carrier pouches. Only small ones to emulate standard suit/storage behavior.
 /datum/gear/tactical/armor_pouches_grey

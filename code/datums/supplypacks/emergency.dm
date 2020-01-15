@@ -10,9 +10,9 @@
 	containername = "civilian light armor crate"
 
 /decl/hierarchy/supply_pack/emergency/greyguards
-	name = "Armor - Limb light-guards, grey"
-	contains = list(/obj/item/clothing/accessory/armguards/grey = 4,
-					/obj/item/clothing/accessory/legguards/grey = 4)
+	name = "Armor - Arm and leg pads, grey"
+	contains = list(/obj/item/clothing/accessory/armguards/light/grey = 4,
+					/obj/item/clothing/accessory/legguards/light/grey = 4)
 	cost = 25
 	containername = "limb guards crate"
 
