@@ -77,7 +77,7 @@
 	allowed_roles = TECHNICAL_ROLES
 
 /datum/gear/tactical/balaclava
-	allowed_branches = MILITARY_BRANCHES
+	allowed_roles = ARMORED_ROLES
 
 /datum/gear/head/fleetberet
 	display_name = "Fleet branch beret selection"
