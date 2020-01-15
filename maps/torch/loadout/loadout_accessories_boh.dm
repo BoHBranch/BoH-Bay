@@ -52,7 +52,7 @@
 /datum/gear/tactical/solgov
 	display_name = "SCG Flag tag"
 	path = /obj/item/clothing/accessory/armor/tag/solgov
-	allowed_branches = list(/datum/mil_branch/marine_corps, /datum/mil_branch/solgov)
+	allowed_branches = SOLGOV_BRANCHES
 	cost = 0 // Uniformed branches would require one.
 
 /datum/gear/tactical/nt
@@ -64,68 +64,52 @@
 /// Limb guards
 // Arms
 /datum/gear/tactical/arm_guards
-	display_name = "black arm guards"
+	display_name = "arm guards selection"
+	description = "A selection of military arm guards. Attaches to plate carrier."
 	path = /obj/item/clothing/accessory/armguards
 	cost = 1
+	allowed_roles = ARMORED_ROLES
 	allowed_branches = TACTICOOL_BRANCHES
 
-/datum/gear/tactical/arm_guards/navy
-	display_name = "nanotrasen arm guards"
-	path = /obj/item/clothing/accessory/armguards/navy
-	allowed_branches = NT_BRANCHES
-
-/datum/gear/tactical/arm_guards/misc
-	display_name = "solgov arm guards selection"
-	description = "A selection of arm guards in various colors."
-	path = /obj/item/clothing/accessory/armguards
-	allowed_branches = SOLGOV_BRANCHES
-
-/datum/gear/tactical/arm_guards/misc/New()
+/datum/gear/tactical/arm_guards/New()
 	..()
 	var/arm_guards = list()
+	arm_guards["black arm guards"] = /obj/item/clothing/accessory/armguards
+	arm_guards["navy arm guards"] = /obj/item/clothing/accessory/armguards/navy
+	arm_guards["blue arm guards"] = /obj/item/clothing/accessory/armguards/blue
 	arm_guards["green arm guards"] = /obj/item/clothing/accessory/armguards/green
 	arm_guards["tan arm guards"] = /obj/item/clothing/accessory/armguards/tan
-	arm_guards["blue arm guards"] = /obj/item/clothing/accessory/armguards/blue
 	gear_tweaks += new/datum/gear_tweak/path(arm_guards)
 
-/datum/gear/tactical/arm_guards/grey
+/datum/gear/tactical/arm_guards_grey
 	display_name = "grey arm guards"
 	path = /obj/item/clothing/accessory/armguards/grey
-	allowed_branches = null
 
 // Legs
 /datum/gear/tactical/leg_guards
-	display_name = "black leg guards"
+	display_name = "leg guards selection"
+	description = "A selection of military leg guards. Attaches to plate carrier."
 	path = /obj/item/clothing/accessory/legguards
 	cost = 1
+	allowed_roles = ARMORED_ROLES
 	allowed_branches = TACTICOOL_BRANCHES
 
-/datum/gear/tactical/leg_guards/navy
-	display_name = "nanotrasen leg guards"
-	path = /obj/item/clothing/accessory/legguards/navy
-	allowed_branches = NT_BRANCHES
-
-/datum/gear/tactical/leg_guards/misc
-	display_name = "solgov leg guards selection"
-	description = "A selection of leg guards in various colors."
-	path = /obj/item/clothing/accessory/legguards
-	allowed_branches = SOLGOV_BRANCHES
-
-/datum/gear/tactical/leg_guards/misc/New()
+/datum/gear/tactical/leg_guards/New()
 	..()
 	var/leg_guards = list()
+	leg_guards["black leg guards"] = /obj/item/clothing/accessory/legguards
+	leg_guards["navy leg guards"] = /obj/item/clothing/accessory/legguards/navy
+	leg_guards["blue leg guards"] = /obj/item/clothing/accessory/legguards/blue
 	leg_guards["green leg guards"] = /obj/item/clothing/accessory/legguards/green
 	leg_guards["tan leg guards"] = /obj/item/clothing/accessory/legguards/tan
-	leg_guards["blue leg guards"] = /obj/item/clothing/accessory/legguards/blue
 	gear_tweaks += new/datum/gear_tweak/path(leg_guards)
 
-/datum/gear/tactical/leg_guards/grey
+/datum/gear/tactical/leg_guards_grey
 	display_name = "grey leg guards"
 	path = /obj/item/clothing/accessory/legguards/grey
-	allowed_branches = null
 
 // Grey carrier pouches. Only small ones to emulate standard suit/storage behavior.
-/datum/gear/tactical/armor_pouches/grey
+/datum/gear/tactical/armor_pouches_grey
 	display_name = "grey armor pouches"
 	path = /obj/item/clothing/accessory/storage/pouches/grey
-	allowed_branches = null
+	cost = 1

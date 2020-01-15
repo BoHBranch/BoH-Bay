@@ -1,5 +1,4 @@
-
-/datum/gear/tactical/pcarrier/grey
+/datum/gear/tactical/pcarrier_grey
 	display_name = "grey plate carrier"
 	path = /obj/item/clothing/suit/armor/pcarrier/grey
-	allowed_branches = null
+	slot = slot_wear_suit

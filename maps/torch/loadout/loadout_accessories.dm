@@ -1,9 +1,9 @@
 /datum/gear/accessory/solawardmajor
-	display_name = "SolGov major award selection"
-	description = "A medal or ribbon awarded to SolGov personnel for significant accomplishments."
+	display_name = "major award selection"
+	description = "A medal or ribbon awarded to military and paramilitary personnel for significant accomplishments."
 	path = /obj/item/clothing/accessory
 	cost = 8
-	allowed_branches = SOLGOV_BRANCHES
+	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/accessory/solawardmajor/New()
 	..()
@@ -19,11 +19,11 @@
 	gear_tweaks += new/datum/gear_tweak/path(solmajors)
 
 /datum/gear/accessory/solawardminor
-	display_name = "SolGov minor award selection"
-	description = "A medal or ribbon awarded to SolGov personnel for minor accomplishments."
+	display_name = "minor award selection"
+	description = "A medal or ribbon awarded to military and paramilitary personnel for minor accomplishments."
 	path = /obj/item/clothing/accessory
 	cost = 5
-	allowed_branches = SOLGOV_BRANCHES
+	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/accessory/solawardminor/New()
 	..()
@@ -39,16 +39,16 @@
 	path = /obj/item/clothing/accessory/badge/solgov/tags
 
 /datum/gear/accessory/ec_scarf
-	display_name = "Expeditionary Corps scarf"
+	display_name = "Surveyor Corps scarf"
 	path = /obj/item/clothing/accessory/solgov/ec_scarf
-	description = "A section-specific scarf for Expeditionary Corps uniforms."
+	description = "A section-specific scarf for Survey Corps uniforms."
 	flags = GEAR_HAS_TYPE_SELECTION
 	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
 
 /datum/gear/accessory/ec_patch
-	display_name = "Expeditionary Corps patch"
+	display_name = "Surveyor Corps patch"
 	path = /obj/item/clothing/accessory/solgov/ec_patch
-	description = "A shoulder patch representing the Expeditionary Corps."
+	description = "A shoulder patch representing the Survey Corps."
 	flags = GEAR_HAS_TYPE_SELECTION
 	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
 
@@ -218,70 +218,49 @@
  tactical accessories
 *********************/
 /datum/gear/tactical/ubac
-	display_name = "black UBAC shirt"
+	display_name = "UBAC shirt selection"
+	description = "A selection of combat shirts."
 	path = /obj/item/clothing/accessory/ubac
 	allowed_branches = TACTICOOL_BRANCHES
 
-/datum/gear/tactical/ubac/blue
-	display_name = "nanotrasen UBAC shirt"
-	path = /obj/item/clothing/accessory/ubac/blue
-	allowed_branches = NT_BRANCHES
-
-/datum/gear/tactical/ubac/misc
-	display_name = "solgov UBAC shirt selection"
-	path = /obj/item/clothing/accessory/ubac
-	allowed_branches = SOLGOV_BRANCHES
-
-/datum/gear/tactical/ubac/misc/New()
+/datum/gear/tactical/ubac/New()
 	..()
 	var/shirts = list()
+	shirts["black UBAC shirt"] = /obj/item/clothing/accessory/ubac
+	shirts["blue UBAC shirt"] = /obj/item/clothing/accessory/ubac/blue
 	shirts["green UBAC shirt"] = /obj/item/clothing/accessory/ubac/green
 	shirts["tan UBAC shirt"] = /obj/item/clothing/accessory/ubac/tan
 	gear_tweaks += new/datum/gear_tweak/path(shirts)
 
 /datum/gear/tactical/armor_pouches
-	display_name = "black armor pouches"
+	display_name = "armor pouches selection"
+	description = "A selection of military armor pouches. Attaches to plate carrier."
 	path = /obj/item/clothing/accessory/storage/pouches
-	cost = 2
+	cost = 1
 	allowed_branches = TACTICOOL_BRANCHES
 
-/datum/gear/tactical/armor_pouches/navy
-	display_name = "nanotrasen armor pouches"
-	path = /obj/item/clothing/accessory/storage/pouches/navy
-	allowed_branches = NT_BRANCHES
-
-/datum/gear/tactical/armor_pouches/misc
-	display_name = "solgov armor pouches selection"
-	path = /obj/item/clothing/accessory/storage/pouches
-	allowed_branches = SOLGOV_BRANCHES
-
-/datum/gear/tactical/armor_pouches/misc/New()
+/datum/gear/tactical/armor_pouches/New()
 	..()
 	var/pouches = list()
+	pouches["black armor pouches"] = /obj/item/clothing/accessory/storage/pouches
+	pouches["navy armor pouches"] = /obj/item/clothing/accessory/storage/pouches/navy
 	pouches["blue armor pouches"] = /obj/item/clothing/accessory/storage/pouches/blue
 	pouches["green armor pouches"] = /obj/item/clothing/accessory/storage/pouches/green
 	pouches["tan armor pouches"] = /obj/item/clothing/accessory/storage/pouches/tan
 	gear_tweaks += new/datum/gear_tweak/path(pouches)
 
 /datum/gear/tactical/large_pouches
-	display_name = "black large armor pouches"
+	display_name = "large armor pouches selection"
+	description = "A selection of military large armor pouches. Attaches to plate carrier."
 	path = /obj/item/clothing/accessory/storage/pouches/large
-	cost = 5
+	cost = 3
 	allowed_branches = TACTICOOL_BRANCHES
 
-/datum/gear/tactical/large_pouches/navy
-	display_name = "nanotrasen large armor pouches"
-	path = /obj/item/clothing/accessory/storage/pouches/large/navy
-	allowed_branches = NT_BRANCHES
-
-/datum/gear/tactical/large_pouches/misc
-	display_name = "solgov large armor pouches selection"
-	path = /obj/item/clothing/accessory/storage/pouches/large
-	allowed_branches = SOLGOV_BRANCHES
-
-/datum/gear/tactical/large_pouches/misc/New()
+/datum/gear/tactical/large_pouches/New()
 	..()
 	var/pouches = list()
+	pouches["black large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large
+	pouches["navy large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/navy
 	pouches["blue large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/blue
 	pouches["green large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/green
 	pouches["tan large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/tan
@@ -289,7 +268,7 @@
 
 /datum/gear/accessory/collars
 	display_name = "collar seclection"
-	description = "A selection of collars, not the most practical, but some people are into that"
+	description = "A selection of collars. Not the most practical, but some people are into that"
 	path = /obj/item/clothing/accessory/collar/holo
 
 /datum/gear/accessory/collars/New()

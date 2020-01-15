@@ -167,3 +167,4 @@
 /datum/gear/tactical/balaclava
 	display_name = "balaclava"
 	path = /obj/item/clothing/mask/balaclava
+	slot = slot_wear_mask

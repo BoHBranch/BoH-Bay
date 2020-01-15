@@ -95,24 +95,18 @@
 	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/tactical/pcarrier
-	display_name = "black plate carrier"
+	display_name = "plate carrier selection"
+	description = "A selection of military plate carriers. They can be equipped with armor plates, but provides no protection of their own."
 	path = /obj/item/clothing/suit/armor/pcarrier
 	cost = 1
 	slot = slot_wear_suit
 	allowed_branches = TACTICOOL_BRANCHES
 
-/datum/gear/tactical/pcarrier/navy
-	display_name = "nanotrasen plate carrier"
-	path = /obj/item/clothing/suit/armor/pcarrier/navy
-	allowed_branches = NT_BRANCHES
-
-/datum/gear/tactical/pcarrier/misc
-	display_name = "solgov plate carrier selection"
-	allowed_branches = SOLGOV_BRANCHES
-
-/datum/gear/tactical/pcarrier/misc/New()
+/datum/gear/tactical/pcarrier/New()
 	..()
 	var/armors = list()
+	armors["black plate carrier"] = /obj/item/clothing/suit/armor/pcarrier
+	armors["navy plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/navy
 	armors["blue plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/blue
 	armors["green plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/green
 	armors["tan plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/tan
