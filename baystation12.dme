@@ -1433,6 +1433,8 @@
 #include "code\modules\awaymissions\zlevel.dm"
 #include "code\modules\blob\blob.dm"
 #include "code\modules\boh\antiboarding\tur_id.dm"
+#include "code\modules\boh\gunnery\areas.dm"
+#include "code\modules\boh\gunnery\structures.dm"
 #include "code\modules\boh\makeshift_weapons\improv_rifle.dm"
 #include "code\modules\boh\makeshift_weapons\manual_cycle.dm"
 #include "code\modules\boh\organs\disintegratable.dm"
