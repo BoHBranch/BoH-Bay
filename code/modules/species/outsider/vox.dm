@@ -136,7 +136,7 @@
 	damage_mask =     'icons/mob/human_races/species/vox/damage_mask_armalis.dmi'
 	blood_mask =      'icons/mob/human_races/species/vox/blood_mask_armalis.dmi'
 
-	slowdown = 1
+	slowdown = 1.5
 	hidden_from_codex = TRUE
 	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION
 	brute_mod = 0.5
