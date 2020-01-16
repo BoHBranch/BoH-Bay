@@ -5,6 +5,7 @@
 		/datum/mil_branch/marine_corps,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
+		/datum/mil_branch/private_security,
 		/datum/mil_branch/army,
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet
@@ -16,6 +17,7 @@
 		/datum/mil_branch/marine_corps,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
+		/datum/mil_branch/private_security,
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet
 	)
@@ -28,6 +30,7 @@
 			/datum/mil_branch/fleet,
 			/datum/mil_branch/marine_corps,
 			/datum/mil_branch/civilian,
+			/datum/mil_branch/private_security,
 			/datum/mil_branch/solgov,
 			/datum/mil_branch/skrell_fleet
 		)
@@ -332,4 +335,36 @@
 	name_short = "Gen"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o10)
 	sort_order = 20
+/*****/
+
+// Addon: Sec Contractors (only used for det and bodyguard)
+/datum/mil_branch/private_security
+	name = "Hired Security"
+	name_short = "Sec"
+	email_domain = "freemail.net"
+
+	rank_types = list(
+		/datum/mil_rank/private_security/pcrc,
+		/datum/mil_rank/private_security/pcrc_agt,
+		/datum/mil_rank/private_security/saare
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/private_security/pcrc,
+		/datum/mil_rank/private_security/pcrc_agt,
+		/datum/mil_rank/private_security/saare
+	)
+
+/datum/mil_rank/private_security/pcrc
+	name = "PCRC Contractor"
+	name_short = "PCRC"
+
+// Kind of hacky, to allow usage of PCRC suit via outfit.
+/datum/mil_rank/private_security/pcrc_agt
+	name = "PCRC Agent"
+	name_short = "PCRC-AGT"
+
+/datum/mil_rank/private_security/saare
+	name = "SAARE Contractor"
+	name_short = "SAARE"
 /*****/
