@@ -339,7 +339,7 @@
 
 // Addon: Sec Contractors (only used for det and bodyguard)
 /datum/mil_branch/private_security
-	name = "Hired Security"
+	name = "Security Company"
 	name_short = "Sec"
 	email_domain = "freemail.net"
 
