@@ -1,6 +1,5 @@
 /datum/gear/gloves/colored
-	allowed_roles = FORMAL_ROLES
-	allowed_branches = CIVILIAN_BRANCHES
+	display_name = "gloves, colored"
 
 /datum/gear/gloves/latex
 	allowed_roles = STERILE_ROLES
