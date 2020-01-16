@@ -68,7 +68,7 @@
 /datum/trait/commune
 	name = "Telepathy"
 	desc = "Quite simply, you've the ability to project thoughts into the minds of others. How you've come across this within the frontier of space will probably forever be a mystery. Especially so, given you're probably not a Psyker."
-	cost = 8
+	cost = 4
 /datum/trait/commune/apply(var/datum/species/S,var/mob/living/carbon/human/H)
 	..(S,H)
 	H.verbs |= /mob/living/carbon/human/proc/psychic_whisper
