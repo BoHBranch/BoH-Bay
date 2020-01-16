@@ -46,3 +46,40 @@
 		..()
 		reagents.add_reagent(/datum/reagent/toxin/hfc, 30)
 		update_icon()
+
+/////////
+// stable slime toxin
+/////////
+/datum/reagent/stableslimetoxin
+	name = "Thick Sludge"
+	description = "A thick viscous substance that probably wouldn't taste too great."
+	taste_description = "sludge"
+	reagent_state = LIQUID
+	color = "#1d633c"
+	metabolism = REM * 1
+	value = 5
+
+/datum/reagent/stableslimetoxin/affect_blood(var/mob/living/carbon/human/H, var/alien, var/removed)
+	if(ishuman(H))
+		to_chat(H, "<span class='danger'>Your flesh rapidly mutates!</span>")
+		H.set_species(SPECIES_PROMETHEAN)
+		H.shapeshifter_set_colour("#05ff9b")
+		H.verbs -= /mob/living/carbon/human/proc/shapeshifter_select_colour
+	H.update_body()
+
+/obj/item/weapon/reagent_containers/glass/beaker/vial/sludge
+	name = "sticky vial"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/stableslimetoxin, 1)
+		update_icon()
+
+/////////
+// Zombie Vial
+/////////
+/obj/item/weapon/reagent_containers/glass/beaker/vial/zombie
+	name = "odd vial"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/toxin/zombie, 30)
+		update_icon()
