@@ -124,7 +124,7 @@
 	incompatible = list(/datum/relation/lover, /datum/relation/ex)
 
 /datum/relation/xenolover/get_desc_string()
-	return "[holder] and [other.holder] seem to have a thing going, even if they look different."
+	return "[holder] and [other.holder] seem to have a thing going, though they look alien to each other."
 
 /datum/relation/xenolover/get_candidates()
 	var/list/xlovers = ..()
@@ -140,6 +140,14 @@
 			if(loverspecies && holderspecies && loverspecies == holderspecies)
 				xlovers -= xlover
 	return xlovers
+
+/datum/relation/xenolover/wholesome
+	name = "Alien Friend"
+	desc = "You have known the fellow for a while now, and differences only boost your friendship."
+	incompatible = list(/datum/relation/enemy)
+
+/datum/relation/xenolover/wholesome/get_desc_string()
+	return "[holder] and [other.holder] seem to be on good terms, even if they differ from each other."
 
 /datum/relation/so
 	name = "Significiant Other"
