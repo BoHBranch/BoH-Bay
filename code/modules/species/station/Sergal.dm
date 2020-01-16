@@ -61,7 +61,7 @@
 	cold_discomfort_strings = list(
 		"You feel chilly.",
 		"You feel cold and sluggish.",
-		"Your shiver against the cold."
+		"Your fur bristles against the cold."
 		)
 	breathing_sound = 'sound/voice/monkey.ogg'
 
