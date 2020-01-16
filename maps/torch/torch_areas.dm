@@ -1059,7 +1059,7 @@
 	name = "\improper Deactivated Security Checkpoint"
 	icon_state = "checkpoint"
 
-/area/security/brig
+/area/security/brig/perma
 	name = "\improper Permanent Brig"
 	icon_state = "brig"
 	req_access = list(access_brig)
