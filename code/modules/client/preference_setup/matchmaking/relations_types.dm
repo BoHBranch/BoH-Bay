@@ -55,6 +55,22 @@
 /datum/relation/was_crossed/get_desc_string()
 	return "Something has happened between [holder] and [other.holder] in the past, and [holder] is upset about it."
 
+/datum/relation/nope
+	name = "Avoiding"
+	desc = "You or they have done something in the past, and you avoid them because of it."
+	can_connect_to = list(/datum/relation/is_nope)
+
+/datum/relation/nope/get_desc_string()
+	return "[holder] avoids [other.holder], for some reason."
+
+/datum/relation/is_nope
+	name = "Had Unfortunate Experience"
+	desc = "You or they have done something in the past, and they avoid you because of it."
+	can_connect_to = list(/datum/relation/nope)
+
+/datum/relation/is_nope/get_desc_string()
+	return "[other.holder] avoids [holder], for some reason."
+
 /datum/relation/rival
 	name = "Rival"
 	desc = "You are engaged in a constant struggle to show who's number one."
