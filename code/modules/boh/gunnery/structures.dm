@@ -2,6 +2,7 @@
 // Blocker
 /////////
 /obj/blocker
+	name = null
 	density = 1
 	anchored = 1
 	unacidable = 1
@@ -45,9 +46,3 @@
 /obj/machinery/conveyor_switch/ammobelt
 	name = "munition belt switch"
 	id = "ammobelt1"
-
-/////////
-// Airlocks
-/////////
-/obj/machinery/door/airlock/external/bolted/ob
-	frequency = 1379

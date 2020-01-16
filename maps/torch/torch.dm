@@ -37,6 +37,7 @@
 	#include "datums/shackle_law_sets.dm"
 	#include "datums/supplypacks/security.dm"
 	#include "datums/supplypacks/science.dm"
+	#include "datums/supplypacks/emergency.dm"
 	#include "datums/department_exploration.dm"
 	#include "datums/game_modes/torch_revolution.dm"
 
@@ -137,6 +138,7 @@
 	#include "loadout/loadout_head_boh.dm"
 	#include "loadout/loadout_shoes.dm"
 	#include "loadout/loadout_suit.dm"
+	#include "loadout/loadout_suit_boh.dm"
 	#include "loadout/loadout_uniform.dm"
 	#include "loadout/loadout_uniform_boh.dm"
 	#include "loadout/loadout_xeno.dm"

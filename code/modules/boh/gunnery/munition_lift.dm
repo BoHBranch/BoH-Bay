@@ -10,13 +10,11 @@
 /datum/shuttle/autodock/ferry/ammo_lift
 	name = "Primary Munition Lift"
 	shuttle_area = /area/turbolift/ammo_lift
-	warmup_time = 3
-	waypoint_station = "nav_ammo_lift_top"
-	waypoint_offsite = "nav_ammo_lift_bottom"
+	waypoint_station = "nav_ammo_lift_bottom"
+	waypoint_offsite = "nav_ammo_lift_top"
 	sound_takeoff = 'sound/effects/lift_heavy_start.ogg'
 	sound_landing = 'sound/effects/lift_heavy_stop.ogg'
 	ceiling_type = null
-	knockdown = 0
 
 /obj/effect/shuttle_landmark/lift/ammo_top
 	name = "Top Deck"
