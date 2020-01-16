@@ -34,7 +34,7 @@
 	allowed_branches = list(/datum/mil_branch/fleet)
 
 /datum/gear/head/echat
-	display_name = "EC cap"
+	display_name = "SC cap"
 	path = /obj/item/clothing/head/soft/solgov/expedition
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
