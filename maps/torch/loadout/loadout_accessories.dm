@@ -258,13 +258,13 @@
 
 /datum/gear/tactical/large_pouches/New()
 	..()
-	var/pouches = list()
-	pouches["black large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large
-	pouches["navy large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/navy
-	pouches["blue large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/blue
-	pouches["green large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/green
-	pouches["tan large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/tan
-	gear_tweaks += new/datum/gear_tweak/path(pouches)
+	var/lpouches = list()
+	lpouches["black large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large
+	lpouches["navy large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/navy
+	lpouches["blue large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/blue
+	lpouches["green large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/green
+	lpouches["tan large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/tan
+	gear_tweaks += new/datum/gear_tweak/path(lpouches)
 
 /datum/gear/accessory/collars
 	display_name = "collar seclection"
