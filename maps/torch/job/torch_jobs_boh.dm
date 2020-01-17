@@ -1,7 +1,7 @@
 // Consist of modular changes, for now.
 
 // Command
-/// Captain is basically a modular fix.
+// Captain is basically a modular fix.
 /datum/job/captain
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -216,7 +216,6 @@
 		/datum/mil_rank/ec/o1,
 		/datum/mil_rank/marine_corps/o1
 	)
-
 /***/
 
 // Security
@@ -240,6 +239,7 @@
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/contractor,
+		/datum/mil_branch/private_security,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/marine,
 		/datum/mil_branch/solgov = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/agent
@@ -251,6 +251,9 @@
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/pcrc,
+		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/pcrc/agent,
+		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/saare,
 		/datum/mil_rank/sol/agent,
 		/datum/mil_rank/marine_corps/e4,
 		/datum/mil_rank/marine_corps/e5
@@ -385,4 +388,18 @@
 		/datum/mil_rank/marine_corps/e4,
 		/datum/mil_rank/civ/contractor
 	)
+/***/
+
+// Corporate
+/datum/job/bodyguard
+	allowed_branches = list(/datum/mil_branch/private_security, /datum/mil_branch/civilian)
+	allowed_ranks = list(
+		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc,
+		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc/agent,
+		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/saare,
+		/datum/mil_rank/civ/contractor
+	)
+
+/datum/job/bodyguard/get_description_blurb()
+	return "You are the Loss Prevention Associate. Your job is to prevent the loss of the Liason's life - even at the cost of your own. Good luck."
 /***/
