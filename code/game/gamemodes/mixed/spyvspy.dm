@@ -9,4 +9,4 @@
 	antag_tags = list(MODE_TRAITOR, MODE_RENEGADE)
 	require_all_templates = TRUE
 	antag_scaling_coeff = 5
-	latejoin_antag_tags = list(MODE_TRAITOR)
+	latejoin_antag_tags = list(MODE_TRAITOR, MODE_RENEGADE)

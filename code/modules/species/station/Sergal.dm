@@ -29,7 +29,7 @@
 	min_age = 18
 	max_age = 100
 
-	description = "Wip yell at Allakai for only doing cattos"
+	description = "Shark-dogs. Placeholder description."
 
 	cold_level_1 = 260 //Default 260 - Lower is better
 	cold_level_2 = 200 //Default 200

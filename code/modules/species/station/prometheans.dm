@@ -37,7 +37,7 @@ var/datum/species/shapeshifter/promethean/prometheans
 	brute_mod =           0.5
 	burn_mod =            2
 	oxy_mod =             0
-	total_health =        240
+	total_health =        640
 	siemens_coefficient = -1
 	rarity_value =        5
 	limbs_are_nonsolid =  TRUE
@@ -70,7 +70,7 @@ var/datum/species/shapeshifter/promethean/prometheans
 	valid_transform_species = list(SPECIES_HUMAN, SPECIES_UNATHI, SPECIES_SKRELL, SPECIES_DIONA, "Monkey")
 	monochromatic = 1
 
-	var/heal_rate = 5 // Temp. Regen per tick.
+	var/heal_rate = 15 // Temp. Regen per tick.
 
 /datum/species/shapeshifter/promethean/New()
 	..()

@@ -12,8 +12,8 @@ var/list/nuke_disks = list()
 		colony of sizable population and considerable wealth causes it to often be the target of various \
 		attempts of robbery, fraud and other malicious actions."
 	config_tag = "mercenary"
-	required_players = 6
-	required_enemies = 1
+	required_players = 12
+	required_enemies = 6
 	end_on_antag_death = FALSE
 	var/nuke_off_station = 0 //Used for tracking if the syndies actually haul the nuke to the station
 	var/syndies_didnt_escape = 0 //Used for tracking if the syndies got the shuttle off of the z-level

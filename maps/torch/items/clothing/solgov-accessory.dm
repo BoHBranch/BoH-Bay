@@ -15,57 +15,57 @@ medals
 
 /obj/item/clothing/accessory/medal/solgov/iron/star
 	name = "iron star medal"
-	desc = "An iron star awarded to members of the SCG for meritorious achievement or service in a combat zone."
+	desc = "An iron star, awarded for meritorious achievement or service in a combat zone."
 	icon_state = "iron_star"
 
 /obj/item/clothing/accessory/medal/solgov/iron/sol
-	name = "\improper Sol expeditionary medal"
-	desc = "An iron medal awarded to members of the SCG for service outside of the borders of the Sol Central Government."
+	name = "expeditionary medal"
+	desc = "An iron medal, awarded for service outside of the borders of the Sol Central Government."
 	icon_state = "iron_sol"
 
 /obj/item/clothing/accessory/medal/solgov/bronze/heart
 	name = "bronze heart medal"
-	desc = "A bronze heart awarded to members of the SCG for injury or death in the line of duty."
+	desc = "A bronze heart, awarded for injury or death in the line of duty."
 	icon_state = "bronze_heart"
 
 /obj/item/clothing/accessory/medal/solgov/bronze/sol
-	name = "\improper Sol defensive operations medal"
-	desc = "A bronze medal awarded for members of the SCG for service defending the border regions."
+	name = "defensive operations medal"
+	desc = "A bronze medal, awarded for service defending the border regions."
 	icon_state = "bronze_sol"
 
 /obj/item/clothing/accessory/medal/solgov/silver/sword
 	name = "combat action medal"
-	desc = "A silver medal awarded to members of the SCG for honorable service while under enemy fire."
+	desc = "A silver medal, awarded for honorable service while under enemy fire."
 	icon_state = "silver_sword"
 
 /obj/item/clothing/accessory/medal/solgov/silver/sol
-	name = "\improper Sol valor medal"
-	desc = "A silver medal awarded for members of the SCG for acts of exceptional valor."
+	name = "valor medal"
+	desc = "A silver medal, awarded for acts of exceptional valor."
 	icon_state = "silver_sol"
 
 /obj/item/clothing/accessory/medal/solgov/gold/star
 	name = "gold star medal"
-	desc = "A gold star awarded to members of the SCG for acts of heroism in a combat zone."
+	desc = "A gold star, awarded for acts of heroism in a combat zone."
 	icon_state = "gold_star"
 
 /obj/item/clothing/accessory/medal/solgov/gold/sun
 	name = "solar service medal"
-	desc = "A gold medal awarded to members of the SCG by the Secretary General for significant contributions to the Sol Central Government."
+	desc = "A gold medal, awarded to members of the SCG by the Secretary General for significant contributions to the Sol Central Government."
 	icon_state = "gold_sun"
 
 /obj/item/clothing/accessory/medal/solgov/gold/crest
 	name = "solar honor medal"
-	desc = "A gold medal awarded to members of the Defense Forces by the Secretary General for personal acts of valor and heroism above and beyond the call of duty."
+	desc = "A gold medal, awarded to members of the Defense Forces by the Secretary General for personal acts of valor and heroism above and beyond the call of duty."
 	icon_state = "gold_crest"
 
 /obj/item/clothing/accessory/medal/solgov/gold/sol
-	name = "\improper Sol sapientarian medal"
-	desc = "A gold medal awarded for members of the SCG for significant contributions to sapient rights."
+	name = "sapientarian medal"
+	desc = "A gold medal, awarded for significant contributions to sapient rights."
 	icon_state = "gold_sol"
 
 /obj/item/clothing/accessory/medal/solgov/heart
 	name = "medical medal"
-	desc = "A white heart emblazoned with a red cross awarded to members of the SCG for service as a medical professional in a combat zone."
+	desc = "A white heart emblazoned with a red cross, awarded for service as a medical professional in a combat zone."
 	icon_state = "white_heart"
 
 /obj/item/clothing/accessory/solgov
@@ -89,7 +89,7 @@ patches
 *****/
 /obj/item/clothing/accessory/solgov/ec_patch
 	name = "\improper Observatory patch"
-	desc = "A laminated shoulder patch, carrying the symbol of the Sol Central Government Expeditionary Corpss Observatory, or SCGEO for short, the eyes and ears of the Expeditionary Corps' missions."
+	desc = "A laminated shoulder patch, carrying the symbol of the NanoTrasen Surveyor Corps Observatory, or NTSCO for short, the eyes and ears of the Survey Corps' missions."
 	icon_state = "ecpatch1"
 	on_rolled = list("down" = "none")
 	slot = ACCESSORY_SLOT_INSIGNIA
@@ -97,12 +97,12 @@ patches
 
 /obj/item/clothing/accessory/solgov/ec_patch/fieldops
 	name = "\improper Field Operations patch"
-	desc = "A radiation-shielded shoulder patch, carrying the symbol of the Sol Central Government Expeditionary Corps Field Operations, or SCGECFO for short, the hands-on workers of every Expeditionary Corps mission."
+	desc = "A radiation-shielded shoulder patch, carrying the symbol of the NanoTrasen Surveyor Corps Field Operations, or NTSCFO for short, the hands-on workers of every Survey Corps mission."
 	icon_state = "ecpatch2"
 
 /obj/item/clothing/accessory/solgov/cultex_patch
 	name = "\improper Cultural Exchange patch"
-	desc = "A radiation-shielded shoulder patch, denoting service in the the Sol Central Government Expeditionary Corps Cultural Exchange program."
+	desc = "A radiation-shielded shoulder patch, denoting service in the the NanoTrasen Surveyor Corps Cultural Exchange program."
 	icon_state = "ecpatch3"
 	slot = ACCESSORY_SLOT_INSIGNIA
 	check_codex_val = FACTION_EXPEDITIONARY
@@ -138,8 +138,8 @@ patches
 scarves
 *****/
 /obj/item/clothing/accessory/solgov/ec_scarf
-	name = "expeditionary scarf"
-	desc = "An SCG blue silk scarf, meant to be worn with Expeditionary Corps uniforms."
+	name = "surveyor scarf"
+	desc = "A blue silk scarf, meant to be worn with Surveyor Corps uniforms."
 	icon = 'icons/obj/clothing/obj_accessories.dmi'
 	accessory_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_accessories.dmi', slot_wear_suit_str = 'icons/mob/onmob/onmob_accessories.dmi')
 	icon_state = "whitescarf"
@@ -149,12 +149,12 @@ scarves
 
 /obj/item/clothing/accessory/solgov/ec_scarf/observatory
 	name = "\improper Observatory scarf"
-	desc = "A silk scarf in Expeditionary Corps Observatory section colors, meant to be worn with Expeditionary Corps uniforms."
+	desc = "A silk scarf in Surveyor Corps Observatory section colors, meant to be worn with Surveyor Corps uniforms."
 	color = "#58bb59"
 
 /obj/item/clothing/accessory/solgov/ec_scarf/fieldops
 	name = "\improper Field Operations scarf"
-	desc = "A silk scarf in Expeditionary Corps Field Operations section colors, meant to be worn with Expeditionary Corps uniforms."
+	desc = "A silk scarf in Surveyor Corps Field Operations section colors, meant to be worn with Surveyor Corps uniforms."
 	color = "#9f84b3"
 
 /******
@@ -172,22 +172,22 @@ ribbons
 
 /obj/item/clothing/accessory/ribbon/solgov/marksman
 	name = "marksmanship ribbon"
-	desc = "A military decoration awarded to members of the NTF for good marksmanship scores in training. Common in the days of energy weapons."
+	desc = "A military decoration, awarded for good marksmanship scores in training. Common in the days of energy weapons."
 	icon_state = "ribbon_marksman"
 
 /obj/item/clothing/accessory/ribbon/solgov/peace
 	name = "peacekeeping ribbon"
-	desc = "A military decoration awarded to members of the NTF for service during a peacekeeping operation."
+	desc = "A military decoration, awarded for service during a peacekeeping operation."
 	icon_state = "ribbon_peace"
 
 /obj/item/clothing/accessory/ribbon/solgov/frontier
 	name = "frontier ribbon"
-	desc = "A military decoration awarded to members of the NTF for service along the frontier."
+	desc = "A military decoration, awarded for service along the frontier."
 	icon_state = "ribbon_frontier"
 
 /obj/item/clothing/accessory/ribbon/solgov/instructor
 	name = "instructor ribbon"
-	desc = "A military decoration awarded to members of the NTF for service as an instructor."
+	desc = "A military decoration, awarded for service as an instructor."
 	icon_state = "ribbon_instructor"
 
 /*************
@@ -267,7 +267,6 @@ badges
 	desc = "Plain identification tags made from a durable metal. They are stamped with a variety of informational details."
 	gender = PLURAL
 	icon_state = "tags"
-	badge_string = "NTF"
 	slot_flags = SLOT_MASK | SLOT_TIE
 	var/owner_rank
 	var/owner_name
@@ -367,7 +366,7 @@ armour attachments
 
 /obj/item/clothing/accessory/armor/helmcover/blue/sol
 	name = "peacekeeper helmet cover"
-	desc = "A fabric cover for armored helmets. This one is in NTF peacekeeper colors."
+	desc = "A fabric cover for armored helmets. This one is in peacekeeper colors."
 
 /**************
 department tags

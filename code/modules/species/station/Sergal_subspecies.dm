@@ -10,7 +10,7 @@
 	brute_mod = 1.15
 	burn_mod = 1.15
 	blood_volume = 560
-	description = "WIP"
+	description = "Shark-dog things. These are from the north! WIP."
 
 	descriptors = list(
 		/datum/mob_descriptor/height = 1,
@@ -36,7 +36,7 @@
 	brute_mod = 1
 	burn_mod = 1
 	blood_volume = 560
-	description = "WIP"
+	description = "Shark-dog things. These are from the east! WIP"
 
 	descriptors = list(
 		/datum/mob_descriptor/height = 2,
