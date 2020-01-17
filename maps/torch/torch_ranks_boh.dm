@@ -337,7 +337,7 @@
 	sort_order = 20
 /*****/
 
-// Addon: Sec Contractors (only used for det and bodyguard)
+// Addon: Sec Contractors
 /datum/mil_branch/private_security
 	name = "Security Company"
 	name_short = "Sec"
@@ -365,6 +365,6 @@
 	name_short = "PCRC-AGT"
 
 /datum/mil_rank/private_security/saare
-	name = "SAARE Contractor"
+	name = "SAARE Operative"
 	name_short = "SAARE"
 /*****/
