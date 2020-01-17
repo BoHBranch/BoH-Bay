@@ -1,8 +1,8 @@
 /obj/item/weapon/gun/projectile/manualcycle
 	var/bolt_open = 0
 
-/obj/item/weapon/gun/projectile/manualcycle/update_icon()
-	..()
+/obj/item/weapon/gun/projectile/manualcycle/on_update_icon()
+	. = ..()
 	if(bolt_open)
 		icon_state = "[initial(icon_state)]_alt"
 	else

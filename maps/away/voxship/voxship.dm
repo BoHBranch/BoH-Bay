@@ -18,8 +18,13 @@
 	desc = "Sensor array detects a large asteroid."
 	in_space = 1
 	icon_state = "meteor4"
+	hide_from_reports = TRUE
 	initial_generic_waypoints = list(
 		"nav_voxbase_1",
+	)
+
+	initial_restricted_waypoints = list(
+		"Vox Shuttle" = list("nav_hangar_vox"),
 	)
 
 /obj/effect/shuttle_landmark/nav_voxbase/nav1

@@ -1,6 +1,17 @@
 // Consist of modular changes, for now.
 
 // Command
+/// Captain is basically a modular fix.
+/datum/job/captain
+	allowed_branches = list(
+		/datum/mil_branch/expeditionary_corps,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/CO/fleet
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/ec/o6,
+		/datum/mil_rank/fleet/o6
+	)
+
 /datum/job/hop
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -194,14 +205,16 @@
 
 /datum/job/psychiatrist
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet,
-		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/marine
+		/datum/mil_branch/civilian,
+		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/ec,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/marine
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/marine_corps/e2
+		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/fleet/o1,
+		/datum/mil_rank/ec/o1,
+		/datum/mil_rank/marine_corps/o1
 	)
 
 /***/

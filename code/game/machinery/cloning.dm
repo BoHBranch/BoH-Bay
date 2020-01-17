@@ -311,8 +311,8 @@
 		else
 	return
 
-/obj/machinery/clonepod/update_icon()
-	..()
+/obj/machinery/clonepod/on_update_icon()
+	. = ..()
 	icon_state = "pod_0"
 	if(occupant && !(stat & NOPOWER))
 		icon_state = "pod_1"

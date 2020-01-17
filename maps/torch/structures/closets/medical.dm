@@ -55,6 +55,7 @@
 		/obj/item/weapon/storage/box/armband/med,
 		/obj/item/weapon/storage/belt/general,
 		/obj/item/weapon/material/knife/folding/swiss/officer,
+		/obj/item/weapon/sd_key,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/medic, /obj/item/weapon/storage/backpack/satchel/med)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/med, /obj/item/weapon/storage/backpack/messenger/med)),
 		RANDOM_SCRUBS

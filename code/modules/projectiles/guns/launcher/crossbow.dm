@@ -52,7 +52,7 @@
 	icon = 'icons/obj/guns/crossbow.dmi'
 	icon_state = "crossbow"
 	item_state = "crossbow-solid"
-	fire_sound = 'sound/weapons/punchmiss.ogg' // TODO: Decent THWOK noise.
+	fire_sound = 'sound/weapons/gunshot/xbow.ogg' // TODO: Decent THWOK noise.
 	fire_sound_text = "a solid thunk"
 	fire_delay = 25
 	slot_flags = SLOT_BACK
@@ -140,7 +140,7 @@
 
 
 /obj/item/weapon/gun/launcher/crossbow/attackby(obj/item/W, mob/user)
-	
+
 	if(istype(W, /obj/item/weapon/rcd))
 		var/obj/item/weapon/rcd/rcd = W
 		if(rcd.crafting && user.unEquip(rcd) && user.unEquip(src))
