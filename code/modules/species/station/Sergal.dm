@@ -52,16 +52,16 @@
 
 	heat_discomfort_level = 320
 	heat_discomfort_strings = list(
-		"You feel soothingly warm.",
+		"You feel warm.",
 		"You feel the heat sink into your bones.",
-		"You feel warm enough to take a nap."
+		"You feel your skin prickle in the heat."
 		)
 
 	cold_discomfort_level = 292
 	cold_discomfort_strings = list(
 		"You feel chilly.",
-		"You feel sluggish and cold.",
-		"Your fur bristle against the cold."
+		"You feel cold and sluggish.",
+		"Your fur bristles against the cold."
 		)
 	breathing_sound = 'sound/voice/monkey.ogg'
 
