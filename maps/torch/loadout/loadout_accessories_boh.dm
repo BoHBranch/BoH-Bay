@@ -145,3 +145,10 @@
 	display_name = "grey armor pouches"
 	path = /obj/item/clothing/accessory/storage/pouches/grey
 	cost = 1
+
+/datum/gear/tactical/combatknife
+	display_name = "combat knife"
+	path = /obj/item/weapon/material/knife/combat
+	cost = 3
+	allowed_roles = ARMORED_ROLES
+	allowed_branches = TACTICOOL_BRANCHES
