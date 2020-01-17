@@ -5,7 +5,7 @@
 	darksight_range = 3
 	darksight_tint = DARKTINT_MODERATE
 	gluttonous = GLUT_TINY
-	breath_pressure = 20
+	breath_pressure = 17
 	slowdown = -0.25
 	brute_mod = 1.15
 	burn_mod = 1.15
@@ -32,7 +32,7 @@
 	darksight_range = 3
 	darksight_tint = DARKTINT_MODERATE
 	gluttonous = GLUT_TINY
-	breath_pressure = 20
+	breath_pressure = 17
 	brute_mod = 1
 	burn_mod = 1
 	blood_volume = 560
@@ -40,7 +40,7 @@
 
 	descriptors = list(
 		/datum/mob_descriptor/height = 2,
-		/datum/mob_descriptor/build = 2
+		/datum/mob_descriptor/build = 1.5
 		)
 
 	additional_available_cultural_info = list(
