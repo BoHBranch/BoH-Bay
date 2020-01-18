@@ -251,9 +251,7 @@
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/pcrc,
-		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/pcrc/agent,
-		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/saare,
+		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/pcrc_agent,
 		/datum/mil_rank/sol/agent,
 		/datum/mil_rank/marine_corps/e4,
 		/datum/mil_rank/marine_corps/e5
@@ -269,7 +267,8 @@
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/maa/fleet,
-		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/maa/marine
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/maa/marine,
+		/datum/mil_branch/private_security
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/e3,
@@ -278,7 +277,9 @@
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3,
-		/datum/mil_rank/marine_corps/e4
+		/datum/mil_rank/marine_corps/e4,
+		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/crew/security/maa/pcrc,
+		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/crew/security/maa/saare
 	)
 /***/
 
