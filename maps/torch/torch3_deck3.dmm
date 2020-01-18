@@ -364,7 +364,7 @@
 "gZ" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/effect/catwalk_plated/dark,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/tcommsat/chamber)
 "ha" = (/obj/machinery/telecomms/server/presets/common,/obj/effect/floor_decal/industrial/outline/grey,/turf/simulated/floor/bluegrid,/area/tcommsat/chamber)
 "hb" = (/obj/machinery/telecomms/server/presets/command,/obj/effect/floor_decal/industrial/outline/grey,/turf/simulated/floor/bluegrid,/area/tcommsat/chamber)
-"hc" = (/obj/machinery/telecomms/server/presets/unused,/obj/effect/floor_decal/industrial/outline/grey,/turf/simulated/floor/bluegrid,/area/tcommsat/chamber)
+"hc" = (/obj/effect/floor_decal/industrial/outline/grey,/obj/machinery/telecomms/server/presets/infantry,/turf/simulated/floor/bluegrid,/area/tcommsat/chamber)
 "hd" = (/obj/effect/floor_decal/industrial/warning,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/camera/network/command{c_tag = "Telecommunications - Server Entry"; dir = 4},/turf/simulated/floor/tiled/dark,/area/tcommsat/computer)
 "he" = (/obj/effect/floor_decal/industrial/warning/corner{icon_state = "warningcorner"; dir = 8},/obj/structure/window/reinforced,/obj/structure/table/steel,/obj/machinery/cell_charger,/obj/item/weapon/storage/lunchbox/dais{pixel_x = 6; pixel_y = 6},/turf/simulated/floor/tiled/dark/monotile,/area/tcommsat/computer)
 "hf" = (/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/maintenance/thirddeck/forestarboard)

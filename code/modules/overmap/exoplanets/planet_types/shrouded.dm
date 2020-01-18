@@ -34,7 +34,13 @@
 	fauna_types = list(/mob/living/simple_animal/hostile/retaliate/royalcrab,
 					   /mob/living/simple_animal/hostile/retaliate/jelly/alt,
 					   /mob/living/simple_animal/hostile/retaliate/beast/shantak/alt,
-					   /mob/living/simple_animal/hostile/leech)
+					   /mob/living/simple_animal/hostile/leech,
+					   /mob/living/simple_animal/hostile/giant_spider/nurse,
+					   /mob/living/simple_animal/hostile/giant_spider/guard,
+					   /mob/living/simple_animal/hostile/giant_spider/hunter,
+					   /mob/living/simple_animal/hostile/giant_spider/spitter,
+					   /mob/living/simple_animal/hostile/giant_spider
+					   )
 	megafauna_types = list(/obj/structure/leech_spawner)
 
 /area/exoplanet/shrouded
