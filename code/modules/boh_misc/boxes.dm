@@ -152,3 +152,15 @@
 	w_class = ITEM_SIZE_NORMAL
 	req_access = list(access_research)
 	startswith = list(/obj/item/weapon/reagent_containers/glass/beaker/vial/projectsecret = 12)
+
+/////////
+// flares
+/////////
+// why this didn't exist already stuns me. or i'm just blind
+
+/obj/item/weapon/storage/box/flares
+	name = "box of flares"
+	desc = "Box o' flares. Not much else to say."
+	icon_state = "box"
+	startswith = list(/obj/item/device/flashlight/flare = 12)
+

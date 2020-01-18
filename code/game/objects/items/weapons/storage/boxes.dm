@@ -218,9 +218,9 @@
 
 /obj/item/weapon/storage/box/fragshells
 	name = "box of frag shells"
-	desc = "A box containing 5 military grade fragmentation shells.<br> WARNING: Live explosive munitions. Misuse may result in serious injury or death."
+	desc = "A box containing 12 military grade fragmentation shells.<br> WARNING: Live explosive munitions. Misuse may result in serious injury or death."
 	icon_state = "flashbang"
-	startswith = list(/obj/item/weapon/grenade/frag/shell = 5)
+	startswith = list(/obj/item/weapon/grenade/frag/shell = 12)
 
 /obj/item/weapon/storage/box/smokes
 	name = "box of smoke bombs"

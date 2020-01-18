@@ -114,3 +114,7 @@
 /datum/fabricator_recipe/arms_ammo/hidden/casull
 	name = "ammunition (massive speedloader)"
 	path = /obj/item/ammo_magazine/speedloader/large
+
+/datum/fabricator_recipe/arms_ammo/hidden/bullpupbad
+	name = "ammunition (bullpup magazine - low power)"
+	path = /obj/item/ammo_magazine/mil_rifle/sec
