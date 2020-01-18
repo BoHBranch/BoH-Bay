@@ -201,3 +201,22 @@
 /obj/item/weapon/gun/projectile/revolver/medium/captain/xo
 	name = "Final Argument"
 	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Executive of the NTSS Dagon' engraved on the grip."
+
+/////////
+// Sec Bullpup
+/////////
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec
+	name = "bullpup rifle"
+	desc = "The Hephaestus Industries Z9 Bulldog is a newer generation bullpup carbine. It appears to be heavily modified: forcing the feed of one round type, a permanent semi-auto setting and the removal of the auto-eject function. Lame. \
+	Still has the kickass grenade launcher, though!"
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
+	ammo_type = /obj/item/ammo_casing/rifle/military/low
+	magazine_type = /obj/item/ammo_magazine/mil_rifle/sec
+	allowed_magazines = /obj/item/ammo_magazine/mil_rifle/sec
+	auto_eject = 0
+	starts_loaded = 0
+	one_hand_penalty = 6 //lower power rounds
+	firemodes = list(
+		list(mode_name="semi auto",       burst=1,    fire_delay=null,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
+		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
+		)

@@ -104,8 +104,9 @@ Unique items
 	max_w_class = ITEM_SIZE_SMALL
 	max_storage_space = 4
 	startswith = list(
-			/obj/item/weapon/reagent_containers/pill/tox,
-			/obj/item/weapon/paper/liason_note
+			/obj/item/weapon/reagent_containers/pill/cyanide,
+			/obj/item/weapon/paper/liason_note,
+			/obj/item/weapon/gun/projectile/pistol/holdout/liaison
 	)
 
 /******
