@@ -83,3 +83,17 @@
 		..()
 		reagents.add_reagent(/datum/reagent/toxin/zombie, 30)
 		update_icon()
+
+/////////
+// Coffee OLD
+/////////
+/datum/reagent/drink/coffee/old
+	name = "old coffee"
+	description = "This smells funny."
+	taste_description = "something awful"
+	color = "#6e4525"
+	adj_temp = 85
+	overdose = 15
+
+	glass_name = "coffee"
+	glass_desc = "This smells funny, and seems incredibly hot."
