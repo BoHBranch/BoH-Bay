@@ -123,7 +123,7 @@
 
 /obj/structure/closet/secure_closet/guncabinet/sidearm
 	name = "sidearm cabinet"
-	req_access = list(list(access_armory,access_emergency_armory,access_hos,access_hop,access_ce,access_cmo,access_rd,access_senadv))
+	req_access = list(list(access_armory,access_emergency_armory,access_hos,access_hop,access_ce,access_cmo,access_rd,access_senadv,access_bridge))
 
 /obj/structure/closet/secure_closet/guncabinet/sidearm/WillContain()
 	return list(
@@ -148,12 +148,12 @@
 	)
 
 /obj/structure/closet/secure_closet/guncabinet/PPE
-	name = "Bridge PPE cabinet"
-	req_access = list(list(access_armory,access_emergency_armory,access_hos,access_hop,access_ce,access_cmo,access_rd,access_senadv))
+	name = "Bridge primary cabinet"
+	req_access = list(list(access_armory,access_emergency_armory,access_hos,access_hop,access_ce,access_cmo,access_rd,access_senadv,access_bridge))
 
 /obj/structure/closet/secure_closet/guncabinet/PPE/WillContain()
 	return list(
-		/obj/item/weapon/gun/energy/gun/small/secure = 3,
-		/obj/item/clothing/suit/armor/pcarrier/medium/command = 3,
-		/obj/item/clothing/head/helmet/solgov/command = 3
+		/obj/item/weapon/gun/energy/laser/secure = 4,
+		/obj/item/clothing/suit/armor/pcarrier/medium/command = 4,
+		/obj/item/clothing/head/helmet/solgov/command = 4
 	)

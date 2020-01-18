@@ -19,15 +19,24 @@
 
 /area/command/gunnery/ob
 	name = "\improper KOSMAG Exterior"
-	icon = 'icons/boh/area.dmi'
 	icon_state = "kosmag1"
 
 /area/command/gunnery/ob/inside
 	name = "\improper KOSMAG Interior"
-	icon = 'icons/boh/area.dmi'
 	icon_state = "kosmag2"
 
 /area/command/gunnery/ob/airlock
 	name = "\improper KOSMAG Airlock"
-	icon = 'icons/boh/area.dmi'
 	icon_state = "kosmagairlock"
+
+/////////
+// MIM Tac Room
+/////////
+
+/area/command/gunnery/mim
+	name = "\improper Tactical Operations Center"
+	icon_state = "guntemp"
+
+/area/command/gunnery/mim/door
+	name = "\improper Tactical Operations Center Door"
+	icon_state = "guntemp"
