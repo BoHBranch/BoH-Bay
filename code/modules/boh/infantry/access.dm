@@ -37,3 +37,8 @@
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
 	req_access = list(access_infcom)
+
+/area/security/infantry/shantak
+	name = "\improper SMAC Shantak"
+	icon_state = "syndie-elite"
+	req_access = list(access_infantry)
