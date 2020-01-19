@@ -389,8 +389,8 @@
 	sort_order = 11
 
 /datum/mil_rank/fleet/o2
-	name = "Sub-lieutenant"
-	name_short = "SLT"
+	name = "Lieutenant Junior-Grade"
+	name_short = "LTJG"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/officer/o2, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 12
 
@@ -483,11 +483,23 @@
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/officer)
 	sort_order = 11
 
+/datum/mil_rank/ec/o2
+	name = "Lieutenant Junior-Grade"
+	name_short = "LTJG"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/officer/o2)
+	sort_order = 12
+
 /datum/mil_rank/ec/o3
 	name = "Lieutenant"
 	name_short = "LT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/officer/o3)
 	sort_order = 13
+
+/datum/mil_rank/ec/o4
+	name = "Lieutenant Commander"
+	name_short = "LTCDR"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/officer/o4)
+	sort_order = 14
 
 /datum/mil_rank/ec/o5
 	name = "Commander"

@@ -597,10 +597,20 @@ ranks - ec
 	desc = "Insignia denoting the rank of Ensign."
 	icon_state = "ecrank_o1"
 
+/obj/item/clothing/accessory/solgov/rank/ec/officer/o2
+	name = "ranks (O-2 lieutenant junior-grade)"
+	desc = "Insignia denoting the rank of Lieutenant Junior-Grade."
+	icon_state = "ecrank_o3"
+
 /obj/item/clothing/accessory/solgov/rank/ec/officer/o3
 	name = "ranks (O-3 lieutenant)"
 	desc = "Insignia denoting the rank of Lieutenant."
 	icon_state = "ecrank_o3"
+
+/obj/item/clothing/accessory/solgov/rank/ec/officer/o4
+	name = "ranks (O-4 lieutenant commander)"
+	desc = "Insignia denoting the rank of Lieutenant Commander"
+	icon_state = "ecrank_05"
 
 /obj/item/clothing/accessory/solgov/rank/ec/officer/o5
 	name = "ranks (O-5 commander)"
@@ -689,8 +699,8 @@ ranks - fleet
 	desc = "Insignia denoting the mythical rank of Warrant Officer. Too bad it's obviously fake."
 
 /obj/item/clothing/accessory/solgov/rank/fleet/officer/o2
-	name = "ranks (O-2 sub-lieutenant)"
-	desc = "Insignia denoting the rank of Sub-lieutenant."
+	name = "ranks (O-2 lieutenant junior-grade)"
+	desc = "Insignia denoting the rank of Lieutenant Junior-Grade."
 
 /obj/item/clothing/accessory/solgov/rank/fleet/officer/o3
 	name = "ranks (O-3 lieutenant)"
