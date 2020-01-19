@@ -1394,7 +1394,7 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 				/obj/item/weapon/gun/projectile/automatic/machine_pistol/usi = 1,
 				/obj/item/weapon/gun/projectile/pistol/sec/MK = 4,
 				/obj/item/weapon/material/knife/combat = 12,
-				/obj/item/weapon/material/knife/table/unathi = 14,
+				/obj/item/weapon/material/knife/table/unathi = 12,
 				/obj/item/weapon/material/knife/kitchen/cleaver = 2,
 				/obj/item/weapon/material/knife/folding/combat/balisong = 1,
 				/obj/item/weapon/material/shard/nullglass = 1,

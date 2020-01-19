@@ -48,7 +48,7 @@
 	flora_prob = 1
 	large_flora_prob = 0
 	flora_diversity = 2
-	fauna_types = list(/mob/living/simple_animal/hostile/hivebot, /mob/living/simple_animal/hostile/hivebot/range, /mob/living/simple_animal/hostile/viscerator/hive)
+	fauna_types = list(/mob/living/simple_animal/hostile/hivebot, /mob/living/simple_animal/hostile/hivebot/range, /mob/living/simple_animal/hostile/viscerator/hive, /mob/living/simple_animal/hostile/syndicate/melee/space, /mob/living/simple_animal/hostile/syndicate/ranged/space)
 	fauna_prob = 4
 	megafauna_types = list(/mob/living/simple_animal/hostile/hivebot/mega)
 	var/fallout = 0
@@ -284,6 +284,6 @@
 			new/obj/structure/rubble/lab(T)
 		if(prob(20))
 			new/obj/item/remains/xeno/charred(T)
-	
+
 
 #undef TRANSLATE_COORD

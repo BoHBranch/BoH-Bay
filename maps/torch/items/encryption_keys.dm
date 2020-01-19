@@ -1,7 +1,7 @@
 /obj/item/device/encryptionkey/heads/torchexec
 	name = "executive encryption key"
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Security" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1)
+	channels = list("Command" = 1, "Infantry" = 1, "Security" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1)
 
 /obj/item/device/encryptionkey/headset_torchnt
 	name = "corporate radio encryption key"
@@ -31,7 +31,7 @@
 /obj/item/device/encryptionkey/bridgeofficer
 	name = "bridge officer's encryption key"
 	icon_state = "com_cypherkey"
-	channels = list("Command" = 1, "Engineering" = 1, "Exploration" = 1)
+	channels = list("Command" = 1, "Infantry" = 1, "Engineering" = 1, "Exploration" = 1)
 
 /obj/item/device/encryptionkey/heads/ai_integrated
 	name = "ai integrated encryption key"
