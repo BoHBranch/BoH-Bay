@@ -50,7 +50,6 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/o5,
-		/datum/mil_rank/fleet/o4,
 		/datum/mil_rank/fleet/o5
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
