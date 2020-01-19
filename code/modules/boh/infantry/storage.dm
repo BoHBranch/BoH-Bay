@@ -75,8 +75,8 @@
 
 /obj/item/gunbox/infantry/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/loaded,/obj/item/weapon/gun/projectile/pistol/military,/obj/item/weapon/grenade/frag)
-	options["Energy"] = list(/obj/item/weapon/gun/energy/laser/secure,/obj/item/weapon/gun/energy/gun/secure,/obj/item/weapon/grenade/frag/high_yield)
+	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/loaded,/obj/item/weapon/gun/energy/gun/secure,/obj/item/weapon/grenade/frag)
+	options["Energy"] = list(/obj/item/weapon/gun/energy/laser/secure,/obj/item/weapon/gun/projectile/pistol/military,/obj/item/weapon/grenade/frag/high_yield)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
@@ -91,8 +91,8 @@
 
 /obj/item/gunbox/infcom/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/automatic/merc_smg,/obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar)
-	options["Energy"] = list(/obj/item/weapon/gun/energy/taser/carbine/ext,/obj/item/weapon/gun/energy/revolver/secure)
+	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/automatic/merc_smg,/obj/item/weapon/gun/energy/revolver/secure,)
+	options["Energy"] = list(/obj/item/weapon/gun/energy/taser/carbine/ext,/obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
@@ -107,8 +107,8 @@
 
 /obj/item/gunbox/inftech/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic"] = list(/obj/item/weapon/gun/magnetic/railgun/flechette,/obj/item/weapon/gun/projectile/pistol/military,/obj/item/weapon/magnetic_ammo)
-	options["Energy"] = list(/obj/item/weapon/gun/energy/xray,/obj/item/weapon/gun/energy/xray/pistol)
+	options["Ballistic"] = list(/obj/item/weapon/gun/magnetic/railgun/flechette,/obj/item/weapon/magnetic_ammo,/obj/item/weapon/gun/energy/xray/pistol)
+	options["Energy"] = list(/obj/item/weapon/gun/energy/xray,/obj/item/weapon/gun/projectile/pistol/military)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]

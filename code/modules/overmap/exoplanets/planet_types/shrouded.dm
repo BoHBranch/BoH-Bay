@@ -39,7 +39,8 @@
 					   /mob/living/simple_animal/hostile/giant_spider/guard,
 					   /mob/living/simple_animal/hostile/giant_spider/hunter,
 					   /mob/living/simple_animal/hostile/giant_spider/spitter,
-					   /mob/living/simple_animal/hostile/giant_spider
+					   /mob/living/simple_animal/hostile/giant_spider,
+					   /mob/living/simple_animal/hostile/voxslug
 					   )
 	megafauna_types = list(/obj/structure/leech_spawner)
 

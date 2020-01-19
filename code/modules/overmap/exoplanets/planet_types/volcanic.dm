@@ -44,7 +44,7 @@
 	flora_prob = 3
 	large_flora_prob = 0
 	flora_diversity = 3
-	fauna_types = list(/mob/living/simple_animal/hostile/drake, /mob/living/simple_animal/thinbug, /mob/living/simple_animal/hostile/retaliate/beast/shantak/lava, /mob/living/simple_animal/hostile/retaliate/beast/charbaby)
+	fauna_types = list(/mob/living/simple_animal/hostile/drake, /mob/living/simple_animal/thinbug, /mob/living/simple_animal/hostile/retaliate/beast/shantak/lava, /mob/living/simple_animal/hostile/retaliate/beast/charbaby, /mob/living/simple_animal/hostile/syndicate/melee/space, /mob/living/simple_animal/hostile/syndicate/ranged/space)
 	megafauna_types = list(/mob/living/simple_animal/hostile/drake)
 
 //Squashing most of 1 tile lava puddles
