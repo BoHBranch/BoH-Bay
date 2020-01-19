@@ -132,7 +132,7 @@
 	req_access = list(access_inftech)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/warden
 
-/obj/structure/closet/secure_closet/inftech/WillContain()
+/obj/structure/closet/secure_closet/inftech/ammo/WillContain()
 	return list(
 		/obj/item/ammo_casing/rocket/rcr,
 		/obj/item/ammo_casing/rocket/rcr,
@@ -147,3 +147,4 @@
 		/obj/item/weapon/rcd_ammo/large,
 		/obj/item/weapon/storage/backpack/dufflebag/syndie/c4
 		)
+
