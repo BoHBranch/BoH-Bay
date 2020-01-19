@@ -9,7 +9,6 @@
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar
 	name = "high-powered handgun"
 	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo."
-	starts_loaded = 0
 
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar/loaded
 	name = "high-powered handgun"
