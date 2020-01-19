@@ -8,7 +8,8 @@
 		)
 	req_access = list(list(access_brig, access_bridge))
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
-	recharge_time = 5
+	max_shots = 3
+	recharge_time = 8
 	self_recharge = 1
 
 /obj/item/weapon/gun/energy/stunrevolver/secure
