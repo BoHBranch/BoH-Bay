@@ -57,7 +57,8 @@
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/e4,
-		/datum/mil_rank/marine_corps/e5
+		/datum/mil_rank/marine_corps/e5,
+		/datum/mil_rank/marine_corps/e6
 		)
 
 	access = list(access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -66,7 +67,8 @@
 			            access_inftech, access_brig, access_security, access_aquila)
 
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
-						SKILL_ELECTRICAL = SKILL_ADEPT)
+						SKILL_ELECTRICAL   = SKILL_ADEPT,
+						SKILL_MEDICAL      = SKILL_BASIC)
 
 /datum/job/combat_tech/get_description_blurb()
 	return "You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if no Squad Leader is present."
@@ -86,7 +88,9 @@
 	allowed_ranks = list(
 	/datum/mil_rank/marine_corps/e1,
 	/datum/mil_rank/marine_corps/e2,
-	/datum/mil_rank/marine_corps/e3
+	/datum/mil_rank/marine_corps/e3,
+	/datum/mil_rank/marine_corps/e4,
+	/datum/mil_rank/marine_corps/e5
 	)
 
 	access = list(access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -102,7 +106,8 @@
 //alts
 /datum/job/combat_tech
 	alt_titles = list(
-		"Combat Engineer")
+		"Combat Engineer",
+		"Combat Medic")
 
 /datum/job/grunt
 	alt_titles = list(

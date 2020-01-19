@@ -1438,6 +1438,7 @@
 #include "code\modules\boh\gunnery\structures.dm"
 #include "code\modules\boh\infantry\access.dm"
 #include "code\modules\boh\infantry\dagon_inf.dm"
+#include "code\modules\boh\infantry\firearms.dm"
 #include "code\modules\boh\infantry\outfits.dm"
 #include "code\modules\boh\infantry\storage.dm"
 #include "code\modules\boh\makeshift_weapons\improv_rifle.dm"
