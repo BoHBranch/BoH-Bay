@@ -39,7 +39,6 @@
 		/area/shuttle/escape_pod9/station = NO_SCRUBBER|NO_APC,
 		/area/shuttle/escape_pod10/station = NO_SCRUBBER|NO_APC,
 		/area/shuttle/escape_pod11/station = NO_SCRUBBER|NO_APC,
-		/area/security/oldopscheck = NO_APC,
 		/area/solar = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/storage = NO_SCRUBBER|NO_VENT,
 		/area/storage/auxillary/port = 0,
