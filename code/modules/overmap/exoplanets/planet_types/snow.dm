@@ -27,7 +27,7 @@
 	water_level_max = 3
 	land_type = /turf/simulated/floor/exoplanet/snow
 	water_type = /turf/simulated/floor/exoplanet/ice
-	fauna_types = list(/mob/living/simple_animal/hostile/retaliate/beast/samak, /mob/living/simple_animal/hostile/retaliate/beast/diyaab, /mob/living/simple_animal/hostile/retaliate/beast/shantak, /mob/living/simple_animal/hostile/voxslug)
+	fauna_types = list(/mob/living/simple_animal/hostile/retaliate/beast/samak, /mob/living/simple_animal/hostile/retaliate/beast/diyaab, /mob/living/simple_animal/hostile/retaliate/beast/shantak)
 	megafauna_types = list(/mob/living/simple_animal/hostile/retaliate/giant_crab)
 
 /area/exoplanet/snow
