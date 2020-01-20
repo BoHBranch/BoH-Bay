@@ -6,7 +6,7 @@
 /decl/hierarchy/outfit/job/torch/crew/command/CO
 	name = OUTFIT_JOB_NAME("Commanding Officer")
 	glasses = /obj/item/clothing/glasses/sunglasses
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition/co
@@ -18,6 +18,23 @@
 	backpack_overrides[/decl/backpack_outfit/backpack] = /obj/item/weapon/storage/backpack/captain
 	backpack_overrides[/decl/backpack_outfit/satchel] = /obj/item/weapon/storage/backpack/satchel/cap
 	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger/com
+
+/decl/hierarchy/outfit/job/torch/crew/command/CO/fleet
+	name = OUTFIT_JOB_NAME("Commanding Officer - Fleet")
+	glasses = /obj/item/clothing/glasses/sunglasses
+	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
+	l_ear = /obj/item/device/radio/headset/heads/torchexec
+	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/solgov/dress/fleet/command
+	id_type = /obj/item/weapon/card/id/torch/gold
+	pda_type = /obj/item/modular_computer/pda/captain
+
+/decl/hierarchy/outfit/job/torch/crew/command/CO/fleet/New()
+	..()
+	backpack_overrides[/decl/backpack_outfit/backpack] = /obj/item/weapon/storage/backpack/captain
+	backpack_overrides[/decl/backpack_outfit/satchel] = /obj/item/weapon/storage/backpack/satchel/cap
+	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/messenger/com
+	backpack_overrides[/decl/backpack_outfit/rucksack] = /obj/item/weapon/storage/backpack/rucksack/navy
 
 /decl/hierarchy/outfit/job/torch/crew/command/XO
 	name = OUTFIT_JOB_NAME("Executive Officer")

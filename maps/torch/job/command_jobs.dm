@@ -7,7 +7,8 @@
 	ideal_character_age = 50
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/CO
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps
+		/datum/mil_branch/expeditionary_corps,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/CO/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/o6,
