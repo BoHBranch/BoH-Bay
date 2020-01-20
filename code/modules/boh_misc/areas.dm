@@ -24,6 +24,11 @@
 	name = "\improper Cabin Janitorial"
 	icon_state = "janitor"
 
+//vip
+/area/crew_quarters_boh/cabin_main/vip
+	name = "\improper VIP Cabin"
+	icon_state = "Sleep"
+
 /////////
 // Viro 2.0
 /////////

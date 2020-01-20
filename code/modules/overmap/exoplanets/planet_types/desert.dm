@@ -45,7 +45,7 @@
 	flora_prob = 5
 	large_flora_prob = 0
 	flora_diversity = 4
-	fauna_types = list(/mob/living/simple_animal/thinbug, /mob/living/simple_animal/tindalos, /mob/living/simple_animal/hostile/voxslug, /mob/living/simple_animal/hostile/antlion, /mob/living/simple_animal/hostile/syndicate/melee/space, /mob/living/simple_animal/hostile/syndicate/ranged/space)
+	fauna_types = list(/mob/living/simple_animal/thinbug, /mob/living/simple_animal/tindalos, /mob/living/simple_animal/hostile/voxslug, /mob/living/simple_animal/hostile/antlion)
 	megafauna_types = list(/mob/living/simple_animal/hostile/antlion/mega)
 
 /datum/random_map/noise/exoplanet/desert/get_additional_spawns(var/value, var/turf/T)
