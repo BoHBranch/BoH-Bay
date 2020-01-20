@@ -3,7 +3,7 @@
 	icon_state = "tracker"
 	anchored = 1
 	density = 1
-	var/show_extended_information = 1	// Set to 0 to disable extra information on examining (for example, when used on admin events)
+	var/show_extended_information = 0	// Set to 1 to enable extra information on examining.
 
 /obj/machinery/power/debug_items/examine(mob/user)
 	. = ..()

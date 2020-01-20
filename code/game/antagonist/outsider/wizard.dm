@@ -23,7 +23,6 @@ GLOBAL_DATUM_INIT(wizards, /datum/antagonist/wizard, new)
 	if(!..())
 		return
 
-	var/kill
 	var/escape
 	var/steal
 	var/hijack
@@ -31,21 +30,14 @@ GLOBAL_DATUM_INIT(wizards, /datum/antagonist/wizard, new)
 	switch(rand(1,100))
 		if(1 to 30)
 			escape = 1
-			kill = 1
 		if(31 to 60)
 			escape = 1
 			steal = 1
 		if(61 to 99)
-			kill = 1
 			steal = 1
 		else
 			hijack = 1
 
-	if(kill)
-		var/datum/objective/assassinate/kill_objective = new
-		kill_objective.owner = wizard
-		kill_objective.find_target()
-		wizard.objectives |= kill_objective
 	if(steal)
 		var/datum/objective/steal/steal_objective = new
 		steal_objective.owner = wizard

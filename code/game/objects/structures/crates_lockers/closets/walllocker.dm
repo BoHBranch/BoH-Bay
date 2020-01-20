@@ -55,3 +55,10 @@
 /obj/structure/closet/walllocker/emerglocker/east
 	pixel_x = 32
 	dir = EAST
+
+///
+// boh
+///
+/obj/structure/closet/walllocker/empty/south
+	pixel_y = -32
+	dir = NORTH

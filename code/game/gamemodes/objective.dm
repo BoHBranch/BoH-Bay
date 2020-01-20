@@ -36,7 +36,7 @@ var/global/list/all_objectives = list()
 			target = possible_target
 			break
 
-
+/*
 // Assassinate //
 
 /datum/objective/assassinate/find_target()
@@ -72,7 +72,7 @@ var/global/list/all_objectives = list()
 	else
 		explanation_text = "Free Objective"
 	return target
-
+*/
 // Brig //
 
 /datum/objective/anti_revolution/brig
@@ -113,7 +113,7 @@ var/global/list/all_objectives = list()
 	return target
 
 // Debrain //
-
+/*
 /datum/objective/debrain/find_target()
 	..()
 	if(target && target.current)
@@ -129,7 +129,7 @@ var/global/list/all_objectives = list()
 	else
 		explanation_text = "Free Objective"
 	return target
-
+*/
 // Protection, The opposite of killing a dude. //
 
 /datum/objective/protect/find_target()
@@ -223,19 +223,12 @@ var/global/list/all_objectives = list()
 		"a bluespace rift generator" = /obj/item/integrated_circuit/manipulation/bluespace_rift,
 		"an RCD" = /obj/item/weapon/rcd,
 		"a jetpack" = /obj/item/weapon/tank/jetpack,
-		"a captain's jumpsuit" = /obj/item/clothing/under/rank/captain,
 		"a functional AI" = /obj/item/weapon/aicard,
 		"a pair of magboots" = /obj/item/clothing/shoes/magboots,
 		"the [station_name()] blueprints" = /obj/item/blueprints,
-		"a nasa voidsuit" = /obj/item/clothing/suit/space/void,
 		"28 moles of phoron (full tank)" = /obj/item/weapon/tank,
 		"a sample of slime extract" = /obj/item/slime_extract,
 		"a piece of corgi meat" = /obj/item/weapon/reagent_containers/food/snacks/meat/corgi,
-		"a chief science officer's jumpsuit" = /obj/item/clothing/under/rank/research_director,
-		"a chief engineer's jumpsuit" = /obj/item/clothing/under/rank/chief_engineer,
-		"a chief medical officer's jumpsuit" = /obj/item/clothing/under/rank/chief_medical_officer,
-		"a head of security's jumpsuit" = /obj/item/clothing/under/rank/head_of_security,
-		"a head of personnel's jumpsuit" = /obj/item/clothing/under/rank/head_of_personnel,
 		"the hypospray" = /obj/item/weapon/reagent_containers/hypospray,
 		"the captain's pinpointer" = /obj/item/weapon/pinpointer,
 		"an ablative armor vest" = /obj/item/clothing/suit/armor/laserproof,

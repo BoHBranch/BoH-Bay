@@ -47,3 +47,11 @@
 	origin_tech = list(TECH_BIO = 5)
 	learning_threshold = 10
 	max_languages = 3
+
+/////////
+// BoH
+/////////
+/obj/item/weapon/implant/translator/natural/ascent
+	origin_tech = list(TECH_BIO = 15)
+	learning_threshold = 1
+	max_languages = 25

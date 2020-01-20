@@ -71,6 +71,7 @@
 	It does mention something about being an incredibly localized explosive, however, and only to be used against non-organic targets. Whatever that means."
 	icon = 'icons/boh/ammo.dmi'
 	icon_state = "rcrshell"
+	matter = list(MATERIAL_STEEL = 50000) //Same as the RCD, retardedly high, for good reason.
 	projectile_type = /obj/item/projectile/bullet/rcr
 
 //projectile
@@ -117,3 +118,23 @@
 	matter = list(MATERIAL_STEEL = 50000) //Same as the RCD, retardedly high, for good reason.
 	max_ammo = 6
 	multiple_sprites = 1
+
+/////////
+// Sec Bullpup
+/////////
+//casing
+/obj/item/ammo_casing/rifle/military/low
+	desc = "A low-power bullet casing."
+	caliber = CALIBER_RIFLE_MILITARY
+	projectile_type = /obj/item/projectile/bullet/rifle/military/sec
+
+//projectile
+/obj/item/projectile/bullet/rifle/military/sec
+	damage = 35
+	armor_penetration = 5
+	penetration_modifier = 1
+
+//mag
+/obj/item/ammo_magazine/mil_rifle/sec
+	name = "low-power rifle magazine"
+	ammo_type = /obj/item/ammo_casing/rifle/military/low

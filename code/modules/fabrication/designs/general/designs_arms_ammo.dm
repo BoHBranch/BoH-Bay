@@ -114,3 +114,15 @@
 /datum/fabricator_recipe/arms_ammo/hidden/casull
 	name = "ammunition (massive speedloader)"
 	path = /obj/item/ammo_magazine/speedloader/large
+
+/datum/fabricator_recipe/arms_ammo/hidden/bullpupbad
+	name = "ammunition (bullpup magazine - low power)"
+	path = /obj/item/ammo_magazine/mil_rifle/sec
+
+/datum/fabricator_recipe/arms_ammo/hidden/lmg
+	name = "ammunition (box magazine - LMG)"
+	path = /obj/item/ammo_magazine/box/machinegun
+
+/datum/fabricator_recipe/arms_ammo/hidden/rcr
+	name = "ammunition (Recoilless Rifle Round)"
+	path = /obj/item/ammo_casing/rocket/rcr

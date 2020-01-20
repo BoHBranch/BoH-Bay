@@ -13,10 +13,6 @@
 	. = ..()
 	if(force || !istype(H) || slot != slot_wear_suit)
 		return
-	if(H.species.get_bodytype() in list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_UNATHI, SPECIES_ALIEN)) //non-humanoids btfo
-		return
-	else
-		return FALSE
 
 /obj/item/auto_cpr/attack(mob/living/carbon/human/M, mob/living/user, var/target_zone)
 	if(istype(M) && user.a_intent == I_HELP)

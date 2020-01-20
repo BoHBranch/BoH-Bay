@@ -34,7 +34,7 @@
 	allowed_branches = list(/datum/mil_branch/fleet)
 
 /datum/gear/head/echat
-	display_name = "EC cap"
+	display_name = "SC cap"
 	path = /obj/item/clothing/head/soft/solgov/expedition
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
@@ -46,29 +46,29 @@
 	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
 
 /datum/gear/mask/bandana
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/bandana
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/beanie
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/bow
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/cap
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/hairflower
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/hardhat
 	allowed_roles = TECHNICAL_ROLES
 
 /datum/gear/head/formalhat
 	allowed_roles = FORMAL_ROLES
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/informalhat
 	allowed_roles = SEMIFORMAL_ROLES

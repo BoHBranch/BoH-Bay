@@ -50,7 +50,6 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/o5,
-		/datum/mil_rank/fleet/o4,
 		/datum/mil_rank/fleet/o5
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
@@ -84,7 +83,7 @@
 						access_expedition_shuttle_helm, access_aquila, access_aquila_helm, access_solgov_crew, access_nanotrasen, access_robotics_engineering,
 						access_emergency_armory, access_sec_guard, access_gun, access_expedition_shuttle, access_guppy, access_seneng, access_senmed, access_senadv,
 						access_explorer, access_pathfinder, access_pilot, access_commissary, access_petrov, access_petrov_helm, access_petrov_analysis, access_petrov_phoron,
-						access_petrov_toxins, access_petrov_chemistry, access_petrov_security, access_petrov_maint, access_rd, access_petrov_rd)
+						access_petrov_toxins, access_petrov_chemistry, access_petrov_security, access_petrov_maint, access_rd, access_petrov_rd, access_gunnery)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/card_mod,
@@ -346,7 +345,7 @@
 	access = list(access_security, access_medical, access_engine, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_janitor,
 			            access_kitchen, access_cargo, access_RC_announce, access_keycard_auth, access_guppy_helm,
-			            access_solgov_crew, access_gun, access_expedition_shuttle, access_guppy, access_senadv, access_hangar, access_emergency_armory)
+			            access_solgov_crew, access_gun, access_expedition_shuttle, access_guppy, access_senadv, access_hangar, access_emergency_armory, access_gunnery)
 
 	software_on_spawn = list(/datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
@@ -373,7 +372,13 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/fleet/o1
+		/datum/mil_rank/ec/o2,
+		/datum/mil_rank/ec/o3,
+		/datum/mil_rank/ec/o4,
+		/datum/mil_rank/fleet/o1,
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/fleet/o3,
+		/datum/mil_rank/fleet/o4
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_PILOT       = SKILL_ADEPT)
@@ -385,7 +390,7 @@
 	access = list(access_security, access_medical, access_engine, access_maint_tunnels, access_emergency_storage,
 			            access_bridge, access_janitor, access_kitchen, access_cargo, access_mailsorting, access_RC_announce, access_keycard_auth,
 			            access_solgov_crew, access_aquila, access_aquila_helm, access_guppy, access_guppy_helm, access_external_airlocks,
-			            access_eva, access_hangar, access_cent_creed, access_explorer, access_expedition_shuttle, access_expedition_shuttle_helm)
+			            access_eva, access_hangar, access_cent_creed, access_explorer, access_expedition_shuttle, access_expedition_shuttle_helm, access_gunnery)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/suit_sensors,

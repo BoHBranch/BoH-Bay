@@ -5,6 +5,7 @@
 		/datum/mil_branch/marine_corps,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
+		/datum/mil_branch/private_security,
 		/datum/mil_branch/army,
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet
@@ -16,6 +17,7 @@
 		/datum/mil_branch/marine_corps,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
+		/datum/mil_branch/private_security,
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet
 	)
@@ -28,55 +30,73 @@
 			/datum/mil_branch/fleet,
 			/datum/mil_branch/marine_corps,
 			/datum/mil_branch/civilian,
+			/datum/mil_branch/private_security,
 			/datum/mil_branch/solgov,
 			/datum/mil_branch/skrell_fleet
 		)
 	)
 
+// Need fleet uniform sprites for Unathi. For now, use Humanathi or Custom Species.
 	species_to_branch_whitelist = list(
 		/datum/species/diona      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/nabber     = list(/datum/mil_branch/civilian),
-		/datum/species/skrell     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/skrell_fleet),
+		/datum/species/skrell     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/skrell_fleet),
 		/datum/species/unathi     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
 		/datum/species/adherent   = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/sergal     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/sergal/northern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/sergal/eastern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/akula     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/custom      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
-		/datum/species/humanathi      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
-		/datum/species/tajaran      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
-		/datum/species/vasilissan      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/vulpkanin      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/customhuman      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
+		/datum/species/sergal     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
+		/datum/species/sergal/northern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
+		/datum/species/sergal/eastern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
+		/datum/species/akula     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
+		/datum/species/custom      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps, /datum/mil_branch/fleet),
+		/datum/species/humanathi      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps, /datum/mil_branch/fleet),
+		/datum/species/tajaran      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps, /datum/mil_branch/fleet),
+		/datum/species/vasilissan      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
+		/datum/species/vulpkanin      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/marine_corps),
+		/datum/species/customhuman      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps, /datum/mil_branch/fleet),
 		//datum/species/tesh/  list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/vox        = list(/datum/mil_branch/alien),
 		/datum/species/vox/armalis        = list(/datum/mil_branch/alien)
 	)
 
+// Yell at loremasters for vulps and custom-species being "genemodded humans" and therefor being allowed in SMC almost unrestricted.
+// Unathis and Tajarans here are basically sanitized Foreign Legion - Xenoic Division troopers only.
 	species_to_rank_whitelist = list(
 		/datum/species/unathi = list(
 			/datum/mil_branch/marine_corps = list(
 				/datum/mil_rank/marine_corps/e1,
 				/datum/mil_rank/marine_corps/e2,
-				/datum/mil_rank/marine_corps/e3,
-				/datum/mil_rank/marine_corps/e4
+				/datum/mil_rank/marine_corps/e3
 			)
 		),
 		/datum/species/humanathi = list(
 			/datum/mil_branch/marine_corps = list(
 				/datum/mil_rank/marine_corps/e1,
 				/datum/mil_rank/marine_corps/e2,
-				/datum/mil_rank/marine_corps/e3,
-				/datum/mil_rank/marine_corps/e4
+				/datum/mil_rank/marine_corps/e3
 			)
 		),
 		/datum/species/tajaran = list(
 			/datum/mil_branch/marine_corps = list(
 				/datum/mil_rank/marine_corps/e1,
 				/datum/mil_rank/marine_corps/e2,
+				/datum/mil_rank/marine_corps/e3
+			)
+		),
+		/datum/species/vulpkanin = list(
+			/datum/mil_branch/marine_corps = list(
+				/datum/mil_rank/marine_corps/e1,
+				/datum/mil_rank/marine_corps/e2,
 				/datum/mil_rank/marine_corps/e3,
-				/datum/mil_rank/marine_corps/e4
+				/datum/mil_rank/marine_corps/e4,
+				/datum/mil_rank/marine_corps/e5,
+				/datum/mil_rank/marine_corps/e6,
+				/datum/mil_rank/marine_corps/e7,
+				/datum/mil_rank/marine_corps/e8_alt,
+				/datum/mil_rank/marine_corps/e9,
+				/datum/mil_rank/marine_corps/e9_alt,
+				/datum/mil_rank/marine_corps/o1,
+				/datum/mil_rank/marine_corps/o2,
+				/datum/mil_rank/marine_corps/o3_alt2
 			)
 		),
 		/datum/species/custom = list(
@@ -315,3 +335,36 @@
 	name_short = "Gen"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o10)
 	sort_order = 20
+/*****/
+
+// Addon: Sec Contractors
+/datum/mil_branch/private_security
+	name = "Security Company"
+	name_short = "Sec"
+	email_domain = "freemail.net"
+
+	rank_types = list(
+		/datum/mil_rank/private_security/pcrc,
+		/datum/mil_rank/private_security/pcrc_agt,
+		/datum/mil_rank/private_security/saare
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/private_security/pcrc,
+		/datum/mil_rank/private_security/pcrc_agt,
+		/datum/mil_rank/private_security/saare
+	)
+
+/datum/mil_rank/private_security/pcrc
+	name = "PCRC Contractor"
+	name_short = "PCRC"
+
+// Kind of hacky, to allow usage of PCRC suit via outfit.
+/datum/mil_rank/private_security/pcrc_agt
+	name = "PCRC Agent"
+	name_short = "PCRC-AGT"
+
+/datum/mil_rank/private_security/saare
+	name = "SAARE Operative"
+	name_short = "SAARE"
+/*****/

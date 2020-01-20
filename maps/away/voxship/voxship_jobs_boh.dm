@@ -11,7 +11,7 @@
 	                    SKILL_COMBAT      = SKILL_MAX,
 	                    SKILL_HAULING     = SKILL_MAX,
 	                    SKILL_PILOT       = SKILL_BASIC)
-	skill_points = 4
+	skill_points = 0 //hahaha no not when you get min skills bucko
 
 /obj/effect/submap_landmark/spawnpoint/voxarm_crew
 	name = "Shoal Armalis"

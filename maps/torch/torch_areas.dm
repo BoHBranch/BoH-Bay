@@ -689,8 +689,11 @@
 
 /area/crew_quarters/heads/office/sea
 	icon_state = "heads_sea"
-	name = "\improper Command - SEA's Office"
+	name = "\improper Command - Fleet SEA's Office"
 	req_access = list(access_senadv)
+
+/area/crew_quarters/heads/office/sea/marine
+	name = "\improper Command - Marine SEA's Office"
 
 // Engineering
 
@@ -1055,18 +1058,16 @@
 	name = "\improper Fourth Deck Security Checkpoint"
 	icon_state = "checkpoint"
 
-/area/security/oldopscheck
-	name = "\improper Deactivated Security Checkpoint"
-	icon_state = "checkpoint"
-
-/area/security/brig
+/area/security/brig/perma
 	name = "\improper Permanent Brig"
 	icon_state = "brig"
+	area_flags = AREA_FLAG_RAD_SHIELDED
 	req_access = list(access_brig)
 
 /area/security/brig/chamber
-	name = "\improper Permanent Brig Executions"
+	name = "\improper Permanent Brig Equipment"
 	icon_state = "toxstorage"
+	area_flags = AREA_FLAG_RAD_SHIELDED
 	req_access = list(access_brig)
 
 // AI

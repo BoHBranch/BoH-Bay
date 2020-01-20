@@ -8,8 +8,7 @@
 
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar
 	name = "high-powered handgun"
-	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo. This one has '...' engraved"
-	starts_loaded = 0
+	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo."
 
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar/loaded
 	name = "high-powered handgun"
@@ -98,7 +97,6 @@
 	icon_state = "recoilless"
 	item_state = "recoilless"
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5)
-	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
 
 /obj/item/weapon/gun/launcher/rocket/recoilless/attackby(obj/item/I as obj, mob/user as mob)
 	if(istype(I, /obj/item/ammo_casing/rocket/rcr))
