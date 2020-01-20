@@ -6,7 +6,7 @@
 /decl/hierarchy/outfit/job/torch/crew/command/CO
 	name = OUTFIT_JOB_NAME("Commanding Officer")
 	glasses = /obj/item/clothing/glasses/sunglasses
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
+	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/soft/solgov/expedition/co
@@ -22,7 +22,7 @@
 /decl/hierarchy/outfit/job/torch/crew/command/CO/fleet
 	name = OUTFIT_JOB_NAME("Commanding Officer - Fleet")
 	glasses = /obj/item/clothing/glasses/sunglasses
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/solgov/dress/fleet/command
