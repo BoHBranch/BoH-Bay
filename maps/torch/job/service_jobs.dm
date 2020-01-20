@@ -51,7 +51,7 @@
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_janitor, access_solgov_crew)
 	minimal_access = list()
-	
+
 /datum/job/chef
 	title = "Cook"
 	department = "Service"
