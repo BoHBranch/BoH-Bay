@@ -1434,6 +1434,7 @@
 #include "code\modules\awaymissions\zlevel.dm"
 #include "code\modules\blob\blob.dm"
 #include "code\modules\boh\antiboarding\tur_id.dm"
+#include "code\modules\boh\fabrication\weaponsfab.dm"
 #include "code\modules\boh\gunnery\areas.dm"
 #include "code\modules\boh\gunnery\munition_lift.dm"
 #include "code\modules\boh\gunnery\structures.dm"

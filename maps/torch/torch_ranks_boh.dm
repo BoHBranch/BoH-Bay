@@ -134,6 +134,7 @@
 			)
 		)
 	)
+
 /datum/mil_branch/marine_corps
 	name = "Solar Marine Corps"
 	name_short = "SMC"
@@ -192,6 +193,49 @@
 						SKILL_WEAPONS = SKILL_BASIC,
 						SKILL_COMBAT  = SKILL_BASIC,
 						SKILL_EVA     = SKILL_BASIC)
+
+// Modular Override for new SC/EC ranks
+/datum/mil_branch/expeditionary_corps
+	rank_types = list(
+		/datum/mil_rank/ec/e3,
+		/datum/mil_rank/ec/e5,
+		/datum/mil_rank/ec/e7,
+		/datum/mil_rank/ec/o1,
+		/datum/mil_rank/ec/o2,
+		/datum/mil_rank/ec/o3,
+		/datum/mil_rank/ec/o4,
+		/datum/mil_rank/ec/o5,
+		/datum/mil_rank/ec/o6
+	)
+
+	spawn_rank_types = list(
+		/datum/mil_rank/ec/e3,
+		/datum/mil_rank/ec/e5,
+		/datum/mil_rank/ec/e7,
+		/datum/mil_rank/ec/o1,
+		/datum/mil_rank/ec/o2,
+		/datum/mil_rank/ec/o3,
+		/datum/mil_rank/ec/o4,
+		/datum/mil_rank/ec/o5,
+		/datum/mil_rank/ec/o6
+	)
+
+/datum/mil_rank/ec/o2
+	name = "Lieutenant Junior-Grade"
+	name_short = "LTJG"
+	sort_order = 12
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/officer/o2)
+
+/datum/mil_rank/ec/o4
+	name = "Lieutenant Commander"
+	name_short = "LTCDR"
+	sort_order = 14
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/officer/o4)
+
+// Modular override to rename o2 fleet
+/datum/mil_rank/fleet/o2
+	name = "Lieutenant Junior-Grade"
+	name_short = "LTJG"
 
 /*
  *  Marine Corps
