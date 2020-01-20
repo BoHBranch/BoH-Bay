@@ -689,14 +689,12 @@
 
 /area/crew_quarters/heads/office/sea
 	icon_state = "heads_sea"
-	name = "\improper Command - SEA's Office"
+	name = "\improper Command - Fleet SEA's Office"
 	req_access = list(access_senadv)
 
-//boh
 /area/crew_quarters/heads/office/sea/marine
-	icon_state = "heads_sea"
-	name = "\improper Command - Senior Enlisted Marine's Office"
-	req_access = list(access_senadv)
+	name = "\improper Command - Marine SEA's Office"
+
 // Engineering
 
 /area/engineering/shieldbay
@@ -1058,10 +1056,6 @@
 
 /area/security/hangcheck
 	name = "\improper Fourth Deck Security Checkpoint"
-	icon_state = "checkpoint"
-
-/area/security/oldopscheck
-	name = "\improper Deactivated Security Checkpoint"
 	icon_state = "checkpoint"
 
 /area/security/brig/perma

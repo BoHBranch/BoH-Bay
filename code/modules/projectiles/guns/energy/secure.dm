@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/energy/gun/small/secure
 	name = "compact smartgun"
-	desc = "Combining the two LAEP90 variants, the secure and compact LAEP90-CS is the next best thing to keeping your security forces on a literal leash."
+	desc = "Combining the two LAEP90 variants, the secure and compact LAEP90-CS is the next best thing to keeping your security forces on a literal leash. It has an ability to recharge itself over time."
 	icon = 'icons/obj/guns/small_egun_secure.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
@@ -8,6 +8,9 @@
 		)
 	req_access = list(list(access_brig, access_bridge))
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
+	max_shots = 3
+	recharge_time = 8
+	self_recharge = 1
 
 /obj/item/weapon/gun/energy/stunrevolver/secure
 	name = "smart stun revolver"

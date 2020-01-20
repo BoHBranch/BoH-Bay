@@ -17,7 +17,7 @@
 	darksight_range = 3
 	darksight_tint = DARKTINT_MODERATE
 	gluttonous = GLUT_TINY
-	breath_pressure = 20
+	breath_pressure = 17
 	slowdown = -0.25
 	brute_mod = 1.20
 	burn_mod = 1.20
@@ -29,7 +29,7 @@
 	min_age = 18
 	max_age = 100
 
-	description = "Wip yell at Allakai for only doing cattos"
+	description = "Shark-dogs. Placeholder description."
 
 	cold_level_1 = 260 //Default 260 - Lower is better
 	cold_level_2 = 200 //Default 200
@@ -52,16 +52,16 @@
 
 	heat_discomfort_level = 320
 	heat_discomfort_strings = list(
-		"You feel soothingly warm.",
+		"You feel warm.",
 		"You feel the heat sink into your bones.",
-		"You feel warm enough to take a nap."
+		"You feel your skin prickle in the heat."
 		)
 
 	cold_discomfort_level = 292
 	cold_discomfort_strings = list(
 		"You feel chilly.",
-		"You feel sluggish and cold.",
-		"Your fur bristle against the cold."
+		"You feel cold and sluggish.",
+		"Your fur bristles against the cold."
 		)
 	breathing_sound = 'sound/voice/monkey.ogg'
 

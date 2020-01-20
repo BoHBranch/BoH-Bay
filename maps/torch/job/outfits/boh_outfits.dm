@@ -87,10 +87,28 @@
 	uniform = /obj/item/clothing/under/solgov/utility/army/security
 	shoes = /obj/item/clothing/shoes/dutyboots
 
+/decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/pcrc_agent
+	name = OUTFIT_JOB_NAME("Forensic Technician - PCRC Agent")
+	uniform = /obj/item/clothing/under/pcrcsuit
+	shoes = /obj/item/clothing/shoes/laceup
+	backpack_contents = list(/obj/item/clothing/accessory/armor/tag/pcrc = 1, /obj/item/clothing/accessory/armor/helmcover/pcrc = 1, /obj/item/clothing/accessory/badge = 1)
+
 /decl/hierarchy/outfit/job/torch/crew/security/maa/marine
 	name = OUTFIT_JOB_NAME("Master at Arms - Marine Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/army/security
 	shoes = /obj/item/clothing/shoes/dutyboots
+
+/decl/hierarchy/outfit/job/torch/crew/security/maa/pcrc
+	name = OUTFIT_JOB_NAME("Master at Arms - PCRC")
+	uniform = /obj/item/clothing/under/pcrc
+	shoes = /obj/item/clothing/shoes/dutyboots
+	backpack_contents = list(/obj/item/clothing/accessory/armor/tag/pcrc = 1, /obj/item/clothing/accessory/armor/helmcover/pcrc = 1)
+
+/decl/hierarchy/outfit/job/torch/crew/security/maa/saare
+	name = OUTFIT_JOB_NAME("Master at Arms - SAARE")
+	uniform = /obj/item/clothing/under/saare
+	shoes = /obj/item/clothing/shoes/dutyboots
+	backpack_contents = list(/obj/item/clothing/accessory/armor/tag/saare = 1, /obj/item/clothing/accessory/armor/helmcover/saare = 1)
 /***/
 
 // Service
@@ -125,4 +143,23 @@
 	name = OUTFIT_JOB_NAME("Deck Technician - Marine Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/army/supply
 	shoes = /obj/item/clothing/shoes/dutyboots
+/***/
+
+// Corporate
+/decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc
+	name = OUTFIT_JOB_NAME("Loss Prevention Associate - PCRC")
+	uniform = /obj/item/clothing/under/pcrc
+	shoes = /obj/item/clothing/shoes/dutyboots
+	backpack_contents = list(/obj/item/clothing/accessory/armor/tag/pcrc = 1, /obj/item/clothing/accessory/armor/helmcover/pcrc = 1)
+
+/decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc/agent
+	name = OUTFIT_JOB_NAME("Loss Prevention Associate - PCRC Agent")
+	uniform = /obj/item/clothing/under/pcrcsuit
+	shoes = /obj/item/clothing/shoes/laceup
+
+/decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/saare
+	name = OUTFIT_JOB_NAME("Loss Prevention Associate - SAARE")
+	uniform = /obj/item/clothing/under/saare
+	shoes = /obj/item/clothing/shoes/dutyboots
+	backpack_contents = list(/obj/item/clothing/accessory/armor/tag/saare = 1, /obj/item/clothing/accessory/armor/helmcover/saare = 1)
 /***/
