@@ -7,7 +7,7 @@
 /datum/uplink_item/item/medical/sinpockets
 	name = "Box of Sin-Pockets"
 	desc = "A box of filled dough pockets. Great for a quick meal when you're hiding from Security. Instructions included on the box."
-	item_cost = 8
+	item_cost = 4
 	path = /obj/item/weapon/storage/box/sinpockets
 
 /datum/uplink_item/item/medical/stabilisation
@@ -39,3 +39,9 @@
 	desc = "Contains most medicines you need to recover from injuries and illnesses, all in a convenient pill form. Splints for broken bones also included!"
 	item_cost = 38
 	path = /obj/item/weapon/storage/firstaid/combat
+
+/datum/uplink_item/item/medical/stimpack
+	name = "Stimpack"
+	desc = "An autoinjector containing multiple chems to keep someone alive. At least until combat is over, anyhow."
+	item_cost = 3
+	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/stim
