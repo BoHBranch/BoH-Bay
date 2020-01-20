@@ -23,6 +23,7 @@
 	name = OUTFIT_JOB_NAME("Commanding Officer - Fleet")
 	glasses = /obj/item/clothing/glasses/sunglasses
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
+	suit = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 	l_ear = /obj/item/device/radio/headset/heads/torchexec
 	shoes = /obj/item/clothing/shoes/dutyboots
 	head = /obj/item/clothing/head/solgov/dress/fleet/command
