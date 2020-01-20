@@ -37,5 +37,5 @@
 /datum/uplink_item/item/medical/combat
 	name = "Combat Medical Kit"
 	desc = "Contains most medicines you need to recover from injuries and illnesses, all in a convenient pill form. Splints for broken bones also included!"
-	item_cost = 48
+	item_cost = 38
 	path = /obj/item/weapon/storage/firstaid/combat

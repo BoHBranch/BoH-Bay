@@ -692,6 +692,11 @@
 	name = "\improper Command - SEA's Office"
 	req_access = list(access_senadv)
 
+//boh
+/area/crew_quarters/heads/office/sea/marine
+	icon_state = "heads_sea"
+	name = "\improper Command - Senior Enlisted Marine's Office"
+	req_access = list(access_senadv)
 // Engineering
 
 /area/engineering/shieldbay
