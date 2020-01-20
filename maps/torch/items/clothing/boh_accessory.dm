@@ -28,6 +28,18 @@
 	name = "\improper NANOTRASEN patch"
 	desc = "An armor tag with the words NANOTRASEN printed in bottle green lettering on it."
 
+// ranks and spec pin - expeditionary fleet
+/obj/item/clothing/accessory/solgov/specialty/enlisted/explorer
+	name = "explorer qualification pin"
+
+/obj/item/clothing/accessory/solgov/rank/ec/enlisted
+	name = "ranks (E-1 recruit explorer)"
+	desc = "Insignia denoting the rank of Recruit Explorer."
+
+/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e2
+	name = "ranks (E-2 junior explorer)"
+	desc = "Insignia denoting the rank of Junior Explorer."
+
 // ranks - proper marines
 /obj/item/clothing/accessory/solgov/rank/marine_corps
 	name = "marine ranks"
