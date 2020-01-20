@@ -28,6 +28,8 @@
 /area/crew_quarters_boh/cabin_main/vip
 	name = "\improper VIP Cabin"
 	icon_state = "Sleep"
+	req_access = list(access_captain)
+
 
 /////////
 // Viro 2.0
