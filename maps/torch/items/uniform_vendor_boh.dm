@@ -1,4 +1,5 @@
 // A modular rewrite to allow "alternative" uniform. Done for NTEF to allow both NTSC and NTF uniforms.
+// Some of those (shoes, gloves) are not really needed but hey - safe check.
 
 /obj/machinery/uniform_vendor/populate_uniforms(decl/hierarchy/mil_uniform/user_outfit)
 	var/list/res = list()
@@ -10,7 +11,6 @@
 		res["PT"] += list(user_outfit.pt_under_alt)
 	if (user_outfit.pt_shoes_alt)
 		res["PT"] += list(user_outfit.pt_shoes_alt)
-// That one wasn't really needed, but hey, safe check.
 
 	res["Utility"] = list(
 		user_outfit.utility_under,
