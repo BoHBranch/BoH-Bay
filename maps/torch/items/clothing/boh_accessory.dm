@@ -28,6 +28,21 @@
 	name = "\improper NANOTRASEN patch"
 	desc = "An armor tag with the words NANOTRASEN printed in bottle green lettering on it."
 
+// SC/EC ranks addition and NTF rank override
+/obj/item/clothing/accessory/solgov/rank/ec/officer/o2
+	name = "ranks (O-2 lieutenant junior-grade)"
+	desc = "Insignia denoting the rank of Lieutenant Junior-Grade."
+	icon_state = "ecrank_o3"
+
+/obj/item/clothing/accessory/solgov/rank/ec/officer/o4
+	name = "ranks (O-4 lieutenant commander)"
+	desc = "Insignia denoting the rank of Lieutenant Commander"
+	icon_state = "ecrank_o5"
+
+/obj/item/clothing/accessory/solgov/rank/fleet/officer/o2
+	name = "ranks (O-2 lieutenant junior-grade)"
+	desc = "Insignia denoting the rank of Lieutenant Junior-Grade."
+
 // ranks - proper marines
 /obj/item/clothing/accessory/solgov/rank/marine_corps
 	name = "marine ranks"
