@@ -30,6 +30,12 @@
 	icon_state = "Sleep"
 	req_access = list(access_captain)
 
+/area/crew_quarters_boh/cabin_main/officerbunk
+	name = "\improper Officer Quarters"
+	icon_state = "Sleep"
+	req_access = list(access_bridge)
+	sound_env = SMALL_SOFTFLOOR
+	area_flags = AREA_FLAG_RAD_SHIELDED
 
 /////////
 // Viro 2.0

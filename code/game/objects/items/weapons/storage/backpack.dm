@@ -154,6 +154,10 @@
 	w_class = ITEM_SIZE_HUGE
 	max_storage_space = DEFAULT_BACKPACK_STORAGE + 10
 
+/obj/item/weapon/storage/backpack/rucksack/New()
+	..()
+	slowdown_per_slot[slot_back] = 1
+
 /obj/item/weapon/storage/backpack/rucksack/blue
 	name = "blue rucksack"
 	icon_state = "rucksack_blue"
