@@ -26,6 +26,7 @@
 "az" = (/obj/machinery/computer/modular{dir = 4},/turf/simulated/floor/tiled,/area/icarus/open)
 "aA" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 8},/obj/effect/landmark/corpse/bridgeofficer,/turf/simulated/floor/tiled,/area/icarus/vessel)
 "aB" = (/obj/effect/decal/cleanable/dirt,/obj/effect/overmap/visitable/sector/icarus,/turf/simulated/floor/tiled,/area/icarus/vessel)
+"aC" = (/mob/living/simple_animal/hostile/viscerator,/turf/simulated/floor/tiled,/area/icarus/vessel)
 "aD" = (/obj/structure/bed/chair{dir = 4},/turf/simulated/floor/tiled,/area/icarus/vessel)
 "aE" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/storage/fancy/cigarettes/killthroat,/turf/simulated/floor/tiled,/area/icarus/vessel)
 "aF" = (/obj/effect/floor_decal/plaque,/turf/simulated/floor/tiled,/area/icarus/vessel)
@@ -91,6 +92,7 @@
 "bN" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/handcuffs,/turf/simulated/floor/plating,/area/icarus/vessel)
 "bO" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/material/harpoon,/turf/simulated/floor/plating,/area/icarus/vessel)
 "bP" = (/obj/machinery/suit_storage_unit/security/alt,/turf/simulated/floor/plating,/area/icarus/vessel)
+"bQ" = (/mob/living/simple_animal/hostile/viscerator,/turf/simulated/floor/plating,/area/icarus/vessel)
 "bR" = (/obj/structure/table/steel,/obj/random/tool,/obj/random/tool,/obj/random/tool,/turf/simulated/floor/tiled,/area/icarus/open)
 "bS" = (/obj/machinery/computer/modular,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/tiled,/area/icarus/vessel)
 "bT" = (/obj/structure/closet,/obj/item/weapon/storage/backpack/industrial,/obj/item/weapon/storage/toolbox/electrical,/turf/simulated/floor/tiled,/area/icarus/vessel)
@@ -256,7 +258,7 @@
 "eX" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor/shuttle/white,/area/icarus/vessel)
 "eY" = (/turf/simulated/shuttle/wall{icon_state = "swall_straight"; dir = 4},/area/icarus/open)
 "eZ" = (/turf/simulated/shuttle/wall{icon_state = "swall_t"; dir = 2},/area/icarus/open)
-"fa" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/plating,/area/icarus/vessel)
+"fa" = (/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/mob/living/simple_animal/hostile/viscerator,/turf/simulated/floor/plating,/area/icarus/vessel)
 "fb" = (/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating,/area/icarus/vessel)
 "fc" = (/obj/structure/shuttle/engine/propulsion{icon_state = "propulsion_l"; dir = 8},/turf/simulated/shuttle/wall,/area/icarus/open)
 "fd" = (/obj/effect/floor_decal/solarpanel,/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/machinery/power/solar,/turf/simulated/floor/reinforced,/area/icarus/open)
@@ -343,8 +345,8 @@ aaababababababababababababababababababababababababababababababababababababababab
 aaabababababababababababababababababababababababababababababababababababababababababababababababababacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacaoaMaNapaIakapaJakakakakakaOakakakakakaPapakaIapaQagaoacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacababababababababababababababababababababababababababababababababababababababababababababababaa
 aaababababababababababababababababababababababababababababababababababababababababababababababababacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacaoapaMaRapaSaTapaUakakakakakakakakakakakaVapaWaXapaYagapaoacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacabababababababababababababababababababababababababababababababababababababababababababababaa
 aaababababababababababababababababababababababababababababababababababababababababababababababababacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacaoapaZakakapbabbbcbdbeakbfbfbfakbfbfbfbfbgakbhakakapbiagbjapaoacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacabababababababababababababababababababababababababababababababababababababababababababababaa
-aaababababababababababababababababababababababababababababababababababababababababababababababacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacaoapbkblakbmapbnboapapapbhapapapbhapapapapapapapboboapbpagbqbrapaoacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacabababababababababababababababababababababababababababababababababababababababababababababaa
-aaababababababababababababababababababababababababababababababababababababababababababababababacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacaoapbsbtbtbubvbwbxbbbcbybzakapakakakakbAakbBbCbDbEakakapagagagagagapaoacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacaoapbkblaCbmapbnboapapapbhapapapbhapapapapapapapboboapbpbQbqbrapaoacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacabababababababababababababababababababababababababababababababababababababababababababababaa
+aaababababababababababababababababababababababababababababababababababababababababababababababacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacaoapbsbtbtbubvbwbxbbbcbybzakapakakakakbAakbBbCbDbEakakapagagagbQagapaoacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacababababababababababababababababababababababababababababababababababababababababababababaa
 aaababababababababababababababababababababababababababababababababababababababababababababababababacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacaoapapapapapapapapbFakapbGakbfapakbHbIbJbKakakakbLapakaiapagbMbNbOagbPapaoacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacababababababababababababababababababababababababababababababababababababababababababababaa
 aaabababababababababababababababababababababababababababababababababababababababababababababababacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacaybRajbSbTbUbVbWbXbYakapbZakcaapakbHbJbJbKakakaxcbbwbbccapcdapapapapapapapaoacacacacacacacacacacacacacacacacacacacacacacacacacacababababababababababababababababababababababababababababababababababababababababababababababababaa
 aaababababababababababababababababababababababababababababababababababababababababababababababababacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacacaocecfarakakcgchbwcicjapckakclapakbHbJcmbKakakakcnapcocpbccqcrcsctcuaRbAbfaoacacacacacacacacacacacacacacacacacacacacacacacacacacababababababababababababababababababababababababababababababababababababababababababababababababaa
