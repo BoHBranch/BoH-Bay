@@ -256,9 +256,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
-"aaI" = (
-/turf/space,
-/area/medical/equipstorage)
 "aaJ" = (
 /obj/machinery/light_switch{
 	pixel_x = 0;
@@ -52590,7 +52587,7 @@ aaa
 aaa
 aan
 aas
-aaI
+atb
 aaR
 ajM
 atb
