@@ -79,11 +79,13 @@
 	name ="incendiary shell"
 	icon_state= "rod"
 	damage_type = BURN
-	damage = 45
+	damage = 95
+	armor_penetration = 35
 	damage_flags = DAM_BULLET | DAM_SHARP | DAM_EDGE
 
 	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, 0, 12)
+		explosion(target, 1, 6, 12)
+		damage_type = BURN
 		return 1
 
 /////////
