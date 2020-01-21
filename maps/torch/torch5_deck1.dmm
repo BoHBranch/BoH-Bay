@@ -96,6 +96,11 @@
 	},
 /obj/item/weapon/cane,
 /obj/item/weapon/storage/box/rxglasses,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "aar" = (
@@ -193,6 +198,11 @@
 /area/space)
 "aaC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "aaD" = (
@@ -217,6 +227,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
 "aaG" = (
@@ -234,15 +249,15 @@
 	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "aaI" = (
-/obj/machinery/alarm{
-	dir = 8;
-	pixel_x = 25;
-	pixel_y = 0
-	},
-/turf/simulated/floor/tiled/white,
+/turf/space,
 /area/medical/equipstorage)
 "aaJ" = (
 /obj/machinery/light_switch{
@@ -4644,6 +4659,9 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/wardrobe/medic_torch,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
 "aiv" = (
@@ -5428,8 +5446,10 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/wardrobe/chemistry_white,
-/obj/machinery/light{
-	dir = 1
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
@@ -5631,6 +5651,11 @@
 "akc" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
@@ -6118,11 +6143,6 @@
 /obj/structure/table/glass,
 /obj/item/stack/package_wrap/twenty_five,
 /obj/item/weapon/hand_labeler,
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_x = 0;
-	pixel_y = -24
-	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "akV" = (
@@ -6203,6 +6223,11 @@
 /obj/structure/table/glass,
 /obj/machinery/cell_charger,
 /obj/item/weapon/defibrillator/compact/loaded,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -24
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "ald" = (
@@ -13620,19 +13645,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
-"aNk" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/medical_torch,
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_x = 0;
-	pixel_y = -24
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/locker)
 "aNy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -17407,6 +17419,20 @@
 /obj/structure/reagent_dispensers/watertank,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralport)
+"czU" = (
+/obj/machinery/pointdefense{
+	id_tag = null;
+	initial_id_tag = "dagon_primary_pd"
+	},
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/airless,
+/area/space)
 "cAh" = (
 /obj/effect/floor_decal/techfloor{
 	icon_state = "techfloor_edges";
@@ -18166,6 +18192,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
+"dDC" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/airless,
+/area/space)
 "dEb" = (
 /obj/machinery/power/apc{
 	dir = 8;
@@ -19484,6 +19518,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
+"fSy" = (
+/obj/structure/lattice,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/airless,
+/area/space)
 "fTU" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 6
@@ -22019,6 +22062,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1starboard)
+"jib" = (
+/obj/machinery/porta_turret/exterior/dagon,
+/turf/simulated/floor/airless,
+/area/space)
 "jiq" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 4
@@ -24268,6 +24315,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
+"mbo" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 6
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/secure_closet/medical_torchsenior,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/locker)
 "mbM" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -26930,6 +26989,16 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/locker)
+"psd" = (
+/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/plating,
+/area/medical/equipstorage)
+"psJ" = (
+/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/plating,
+/area/medical/locker)
 "ptb" = (
 /obj/structure/closet/emcloset,
 /obj/structure/extinguisher_cabinet{
@@ -27249,6 +27318,16 @@
 "pIA" = (
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
+"pID" = (
+/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/medical/equipstorage)
 "pIW" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/visible/blue,
@@ -27777,6 +27856,15 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/foreport)
+"qxz" = (
+/obj/structure/lattice,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/airless,
+/area/space)
 "qxQ" = (
 /obj/machinery/flasher{
 	id_tag = "permflash";
@@ -28886,6 +28974,14 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/freezer,
 /area/rnd/xenobiology/xenoflora)
+"rJV" = (
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/airless,
+/area/space)
 "rKb" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /obj/machinery/atmospherics/pipe/simple/visible,
@@ -30255,6 +30351,20 @@
 /mob/living/carbon/slime,
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology)
+"tdB" = (
+/obj/machinery/pointdefense{
+	id_tag = null;
+	initial_id_tag = "dagon_primary_pd"
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/airless,
+/area/space)
 "teb" = (
 /obj/structure/table/standard,
 /obj/machinery/button/blast_door{
@@ -31707,6 +31817,16 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
+"wyf" = (
+/obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/plating,
+/area/medical/locker)
 "wyA" = (
 /obj/item/weapon/storage/mirror{
 	pixel_y = 30
@@ -51458,12 +51578,12 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
+adA
+jib
 aan
+psd
 aan
-aan
-aan
+psd
 aan
 aaa
 aaa
@@ -51660,8 +51780,8 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
+adA
+adA
 aan
 aaD
 ajx
@@ -51861,8 +51981,8 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
+czU
+adA
 aan
 aan
 akk
@@ -52063,7 +52183,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+fSy
 aan
 aan
 aax
@@ -52265,8 +52385,8 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aan
+qxz
+pID
 aaq
 aaC
 aaH
@@ -52274,7 +52394,7 @@ ajA
 aaU
 akO
 akU
-aan
+psd
 aaa
 abP
 abP
@@ -53889,7 +54009,7 @@ abr
 akt
 akH
 akS
-aNk
+wHT
 aaM
 aaa
 mpy
@@ -54083,16 +54203,16 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaM
+rJV
+wyf
 ajN
 akc
 cVb
 aku
 aky
 akA
-wHT
-aaM
+rPw
+psJ
 aaa
 mpy
 mpy
@@ -54285,7 +54405,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+dDC
 aaM
 aaM
 akd
@@ -54487,8 +54607,8 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
+tdB
+adA
 aaM
 aaM
 aih
@@ -54690,11 +54810,11 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
+adA
+jib
 aaM
 akm
-akm
+mbo
 akm
 aaM
 aaa
@@ -54892,12 +55012,12 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
+adA
+adA
 aaM
+psJ
 aaM
-aaM
-aaM
+psJ
 aaM
 aaa
 aaa
