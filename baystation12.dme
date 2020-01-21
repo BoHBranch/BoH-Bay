@@ -1436,6 +1436,7 @@
 #include "code\modules\boh\antiboarding\tur_id.dm"
 #include "code\modules\boh\firing_pins\firing_pin.dm"
 #include "code\modules\boh\firing_pins\pins.dm"
+#include "code\modules\boh\fabrication\weaponsfab.dm"
 #include "code\modules\boh\gunnery\areas.dm"
 #include "code\modules\boh\gunnery\munition_lift.dm"
 #include "code\modules\boh\gunnery\structures.dm"

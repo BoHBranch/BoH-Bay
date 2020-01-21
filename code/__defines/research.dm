@@ -15,5 +15,6 @@
 #define PROTOLATHE	0x2	//New stuff. Uses glass/metal/chemicals
 #define MECHFAB		0x4	//Mechfab
 #define CHASSIS		0x8	//For protolathe, but differently
+#define WEAPONSFAB  0x10 //For weapons fabricators.
 
 #define T_BOARD(name)	"circuit board (" + (name) + ")"

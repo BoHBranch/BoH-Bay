@@ -253,7 +253,7 @@
 	display_name = "large armor pouches selection"
 	description = "A selection of military large armor pouches. Attaches to plate carrier."
 	path = /obj/item/clothing/accessory/storage/pouches/large
-	cost = 3
+	cost = 2
 	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/tactical/large_pouches/New()
