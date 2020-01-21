@@ -67,6 +67,9 @@
 		/datum/mil_rank/marine_corps/o3_alt2
 	)
 
+/datum/job/sea
+	title = "Senior Enlisted Advisor of Fleet"
+
 /datum/job/sea/marine
 	title = "Senior Enlisted Advisor of Marine Corps"
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/marine
