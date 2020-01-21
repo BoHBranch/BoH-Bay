@@ -41,7 +41,9 @@
 		/obj/item/weapon/storage/belt/utility,
 		/obj/item/weapon/weldpack/bigwelder,
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
-		/obj/item/weapon/storage/box/flares
+		/obj/item/weapon/storage/box/flares,
+		/obj/item/weapon/plastique,
+		/obj/item/weapon/plastique
 		)
 
 /obj/structure/closet/secure_closet/infantry
@@ -144,7 +146,6 @@
 		/obj/item/ammo_magazine/box/machinegun,
 		/obj/item/ammo_magazine/box/machinegun,
 		/obj/item/weapon/rcd_ammo/large,
-		/obj/item/weapon/rcd_ammo/large,
-		/obj/item/weapon/storage/backpack/dufflebag/syndie/c4
+		/obj/item/weapon/rcd_ammo/large
 		)
 

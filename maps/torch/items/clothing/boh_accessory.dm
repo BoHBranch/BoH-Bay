@@ -40,6 +40,10 @@
 	name = "ranks (E-2 junior explorer)"
 	desc = "Insignia denoting the rank of Junior Explorer."
 
+/obj/item/clothing/accessory/solgov/rank/fleet/officer/o2
+	name = "ranks (O-2 lieutenant junior-grade)"
+	desc = "Insignia denoting the rank of Lieutenant Junior-Grade."
+
 // ranks - proper marines
 /obj/item/clothing/accessory/solgov/rank/marine_corps
 	name = "marine ranks"
