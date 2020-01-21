@@ -160,7 +160,7 @@
 		/datum/mil_rank/fleet/o3,
 		/datum/mil_rank/fleet/o4,
 		/datum/mil_rank/ec/o3,
-		/datum/mil_rak/ec/o4
+		/datum/mil_rank/ec/o4
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
@@ -260,7 +260,7 @@
 		/datum/mil_rank/ec/o3,
 		/datum/mil_rank/ec/o4,
 		/datum/mil_rank/fleet/o3,
-		/datum/mil_rannk/fleet/o4,
+		/datum/mil_rank/fleet/o4,
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_BASIC,
