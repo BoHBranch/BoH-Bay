@@ -1443,6 +1443,7 @@
 #include "code\modules\boh\infantry\firearms.dm"
 #include "code\modules\boh\infantry\outfits.dm"
 #include "code\modules\boh\infantry\storage.dm"
+#include "code\modules\boh\infantry\vending.dm"
 #include "code\modules\boh\makeshift_weapons\improv_rifle.dm"
 #include "code\modules\boh\makeshift_weapons\manual_cycle.dm"
 #include "code\modules\boh\offsite\effects.dm"
