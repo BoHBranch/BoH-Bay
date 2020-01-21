@@ -165,6 +165,7 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
+		/datum/mil_rank/fleet/e5_exp,
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/fleet/e7,
 		/datum/mil_rank/fleet/e7_exp
@@ -437,6 +438,7 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
+		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e3_exp,
 		/datum/mil_rank/fleet/e4,
