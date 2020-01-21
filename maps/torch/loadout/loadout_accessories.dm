@@ -43,14 +43,14 @@
 	path = /obj/item/clothing/accessory/solgov/ec_scarf
 	description = "A section-specific scarf for Survey Corps uniforms."
 	flags = GEAR_HAS_TYPE_SELECTION
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_branches = NT_BRANCHES
 
 /datum/gear/accessory/ec_patch
 	display_name = "Surveyor Corps patch"
 	path = /obj/item/clothing/accessory/solgov/ec_patch
 	description = "A shoulder patch representing the Survey Corps."
 	flags = GEAR_HAS_TYPE_SELECTION
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_branches = NT_BRANCHES
 
 /datum/gear/accessory/torch_patch
 	display_name = "NTSS Dagon mission patch"
@@ -61,10 +61,7 @@
 	display_name = "pilot's qualification pin"
 	path = /obj/item/clothing/accessory/solgov/specialty/pilot
 	allowed_skills = list(SKILL_PILOT = SKILL_ADEPT)
-	allowed_branches = list(
-		/datum/mil_branch/fleet,
-		/datum/mil_branch/expeditionary_corps
-	)
+	allowed_branches = NT_BRANCHES
 
 /datum/gear/accessory/fleetpatch
 	display_name = "fleet patch"
