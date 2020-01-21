@@ -115,7 +115,7 @@ var/const/ENT_FREQ	= 1461 //entertainment frequency. This is not a diona exclusi
 // department channels
 var/const/PUB_FREQ = 1459
 var/const/SEC_FREQ = 1359
-var/const/INF_FREQ = 1360
+var/const/INF_FREQ = 1369
 var/const/ENG_FREQ = 1357
 var/const/MED_FREQ = 1355
 var/const/SCI_FREQ = 1351
@@ -181,7 +181,7 @@ var/list/CENT_FREQS = list(ERT_FREQ, DTH_FREQ)
 var/list/ANTAG_FREQS = list(SYND_FREQ, RAID_FREQ)
 
 //Department channels, arranged lexically
-var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, SEC_FREQ, INF_FREQ, SCI_FREQ, SRV_FREQ, SUP_FREQ, EXP_FREQ, ENT_FREQ)
+var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, INF_FREQ, MED_FREQ, SEC_FREQ, SCI_FREQ, SRV_FREQ, SUP_FREQ, EXP_FREQ, ENT_FREQ)
 
 #define TRANSMISSION_WIRE	0
 #define TRANSMISSION_RADIO	1
