@@ -176,6 +176,7 @@
 		/datum/mil_rank/fleet/e3_exp,
 		/datum/mil_rank/fleet/e5_exp
 	)
+	min_skill = list(SKILL_EVA = SKILL_BASIC, SKILL_SCIENCE = SKILL_BASIC) // To make up NTEF not having sci skill by default.
 /***/
 
 // Medical
