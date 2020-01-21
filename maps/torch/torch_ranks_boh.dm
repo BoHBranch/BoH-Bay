@@ -1,3 +1,25 @@
+// Branch-specific defines
+#define UNRESTRICTED /datum/mil_branch/civilian, /datum/mil_branch/fleet
+#define SEMIRESTRICTED /datum/mil_branch/marine_corps
+
+// Rank-specific defines
+#define SMC_TROOPERS_ONLY /datum/mil_branch/marine_corps = list(/datum/mil_rank/marine_corps/e1, /datum/mil_rank/marine_corps/e2, /datum/mil_rank/marine_corps/e3)
+#define SMC_LIMITED_RANKS /datum/mil_branch/marine_corps = list(\
+	/datum/mil_rank/marine_corps/e1,\
+	/datum/mil_rank/marine_corps/e2,\
+	/datum/mil_rank/marine_corps/e3,\
+	/datum/mil_rank/marine_corps/e4,\
+	/datum/mil_rank/marine_corps/e5,\
+	/datum/mil_rank/marine_corps/e6,\
+	/datum/mil_rank/marine_corps/e7,\
+	/datum/mil_rank/marine_corps/e8_alt,\
+	/datum/mil_rank/marine_corps/e9,\
+	/datum/mil_rank/marine_corps/e9_alt,\
+	/datum/mil_rank/marine_corps/o1,\
+	/datum/mil_rank/marine_corps/o2,\
+	/datum/mil_rank/marine_corps/o3_alt2\
+	)
+
 /datum/map/torch
 	branch_types = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -12,7 +34,6 @@
 	)
 
 	spawn_branch_types = list(
-		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/marine_corps,
 		/datum/mil_branch/civilian,
@@ -36,103 +57,32 @@
 		)
 	)
 
-// Need fleet uniform sprites for Unathi. For now, use Humanathi or Custom Species.
 	species_to_branch_whitelist = list(
-		/datum/species/diona      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/nabber     = list(/datum/mil_branch/civilian),
-		/datum/species/skrell     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/skrell_fleet),
-		/datum/species/unathi     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps),
-		/datum/species/adherent   = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/sergal     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
-		/datum/species/sergal/northern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
-		/datum/species/sergal/eastern      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
-		/datum/species/akula     = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
-		/datum/species/custom      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps, /datum/mil_branch/fleet),
-		/datum/species/humanathi      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps, /datum/mil_branch/fleet),
-		/datum/species/tajaran      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps, /datum/mil_branch/fleet),
-		/datum/species/vasilissan      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet),
-		/datum/species/vulpkanin      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/marine_corps),
-		/datum/species/customhuman      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/marine_corps, /datum/mil_branch/fleet),
-		//datum/species/tesh/  list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/vox        = list(/datum/mil_branch/alien),
-		/datum/species/vox/armalis        = list(/datum/mil_branch/alien)
+		/datum/species/diona		= list(UNRESTRICTED),
+		/datum/species/nabber		= list(/datum/mil_branch/civilian),
+		/datum/species/skrell		= list(UNRESTRICTED, /datum/mil_branch/skrell_fleet),
+		/datum/species/unathi		= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/adherent		= list(UNRESTRICTED),
+		/datum/species/sergal		= list(UNRESTRICTED),
+		/datum/species/akula		= list(UNRESTRICTED),
+		/datum/species/custom		= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/humanathi	= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/tajaran		= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/vasilissan	= list(UNRESTRICTED),
+		/datum/species/vulpkanin	= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/customhuman	= list(UNRESTRICTED, SEMIRESTRICTED),
+		//datum/species/tesh/		= list(UNRESTRICTED),
+		/datum/species/vox			= list(/datum/mil_branch/alien),
+		/datum/species/vox/armalis	= list(/datum/mil_branch/alien)
 	)
 
-// Yell at loremasters for vulps and custom-species being "genemodded humans" and therefor being allowed in SMC almost unrestricted.
-// Unathis and Tajarans here are basically sanitized Foreign Legion - Xenoic Division troopers only.
 	species_to_rank_whitelist = list(
-		/datum/species/unathi = list(
-			/datum/mil_branch/marine_corps = list(
-				/datum/mil_rank/marine_corps/e1,
-				/datum/mil_rank/marine_corps/e2,
-				/datum/mil_rank/marine_corps/e3
-			)
-		),
-		/datum/species/humanathi = list(
-			/datum/mil_branch/marine_corps = list(
-				/datum/mil_rank/marine_corps/e1,
-				/datum/mil_rank/marine_corps/e2,
-				/datum/mil_rank/marine_corps/e3
-			)
-		),
-		/datum/species/tajaran = list(
-			/datum/mil_branch/marine_corps = list(
-				/datum/mil_rank/marine_corps/e1,
-				/datum/mil_rank/marine_corps/e2,
-				/datum/mil_rank/marine_corps/e3
-			)
-		),
-		/datum/species/vulpkanin = list(
-			/datum/mil_branch/marine_corps = list(
-				/datum/mil_rank/marine_corps/e1,
-				/datum/mil_rank/marine_corps/e2,
-				/datum/mil_rank/marine_corps/e3,
-				/datum/mil_rank/marine_corps/e4,
-				/datum/mil_rank/marine_corps/e5,
-				/datum/mil_rank/marine_corps/e6,
-				/datum/mil_rank/marine_corps/e7,
-				/datum/mil_rank/marine_corps/e8_alt,
-				/datum/mil_rank/marine_corps/e9,
-				/datum/mil_rank/marine_corps/e9_alt,
-				/datum/mil_rank/marine_corps/o1,
-				/datum/mil_rank/marine_corps/o2,
-				/datum/mil_rank/marine_corps/o3_alt2
-			)
-		),
-		/datum/species/custom = list(
-			/datum/mil_branch/marine_corps = list(
-				/datum/mil_rank/marine_corps/e1,
-				/datum/mil_rank/marine_corps/e2,
-				/datum/mil_rank/marine_corps/e3,
-				/datum/mil_rank/marine_corps/e4,
-				/datum/mil_rank/marine_corps/e5,
-				/datum/mil_rank/marine_corps/e6,
-				/datum/mil_rank/marine_corps/e7,
-				/datum/mil_rank/marine_corps/e8_alt,
-				/datum/mil_rank/marine_corps/e9,
-				/datum/mil_rank/marine_corps/e9_alt,
-				/datum/mil_rank/marine_corps/o1,
-				/datum/mil_rank/marine_corps/o2,
-				/datum/mil_rank/marine_corps/o3_alt2
-			)
-		),
-		/datum/species/customhuman = list(
-			/datum/mil_branch/marine_corps = list(
-				/datum/mil_rank/marine_corps/e1,
-				/datum/mil_rank/marine_corps/e2,
-				/datum/mil_rank/marine_corps/e3,
-				/datum/mil_rank/marine_corps/e4,
-				/datum/mil_rank/marine_corps/e5,
-				/datum/mil_rank/marine_corps/e6,
-				/datum/mil_rank/marine_corps/e7,
-				/datum/mil_rank/marine_corps/e8_alt,
-				/datum/mil_rank/marine_corps/e9,
-				/datum/mil_rank/marine_corps/e9_alt,
-				/datum/mil_rank/marine_corps/o1,
-				/datum/mil_rank/marine_corps/o2,
-				/datum/mil_rank/marine_corps/o3_alt2
-			)
-		)
+		/datum/species/unathi		= list(SMC_TROOPERS_ONLY),
+		/datum/species/humanathi	= list(SMC_TROOPERS_ONLY),
+		/datum/species/tajaran		= list(SMC_TROOPERS_ONLY),
+		/datum/species/vulpkanin	= list(SMC_LIMITED_RANKS),
+		/datum/species/custom		= list(SMC_LIMITED_RANKS),
+		/datum/species/customhuman	= list(SMC_LIMITED_RANKS),
 	)
 
 /datum/mil_branch/fleet
@@ -243,7 +193,8 @@
 		/datum/mil_rank/marine_corps/o3_alt,
 		/datum/mil_rank/marine_corps/o3_alt2,
 		/datum/mil_rank/marine_corps/o4,
-		/datum/mil_rank/marine_corps/o5
+		/datum/mil_rank/marine_corps/o5,
+		/datum/mil_rank/marine_corps/o6
 	)
 
 	assistant_job = /datum/job/crew
@@ -652,3 +603,9 @@
 	name = "SAARE Operative"
 	name_short = "SAARE"
 /*****/
+
+// Ends of defines
+#undef UNRESTRICTED
+#undef SEMIRESTRICTED
+#undef SMC_TROOPERS_ONLY
+#undef SMC_LIMITED_RANKS
