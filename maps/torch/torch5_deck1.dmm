@@ -27550,7 +27550,6 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/effect/catwalk_plated,
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
@@ -27559,6 +27558,11 @@
 /obj/structure/disposalpipe/junction{
 	icon_state = "pipe-j2";
 	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/aft)
@@ -31716,6 +31720,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
+"wqY" = (
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "shutter0";
+	id_tag = "infirmaryquar";
+	name = "Infirmary Emergency Quarantine Shutters";
+	opacity = 0
+	},
+/obj/effect/wallframe_spawn/reinforced/no_grille,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating,
+/area/medical/lounge)
 "wro" = (
 /obj/structure/bed/chair/office/light,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -52577,7 +52594,7 @@ mwb
 hTT
 gub
 gJb
-gUb
+wqY
 jiq
 gxX
 dDc
