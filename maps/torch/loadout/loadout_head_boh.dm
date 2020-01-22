@@ -18,3 +18,9 @@
 	path = /obj/item/clothing/head/hardhat/self_protection
 	cost = 2
 	allowed_branches = CIVILIAN_BRANCHES
+
+/datum/gear/head/fleetcap
+	display_name = "fleet cap"
+	path = /obj/item/clothing/head/soft/solgov/fleet
+	cost = 0
+	allowed_branches = NT_BRANCHES

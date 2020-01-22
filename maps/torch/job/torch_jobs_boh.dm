@@ -67,6 +67,9 @@
 		/datum/mil_rank/marine_corps/o3_alt2
 	)
 
+/datum/job/sea
+	title = "Senior Enlisted Advisor of Fleet"
+
 /datum/job/sea/marine
 	title = "Senior Enlisted Advisor of Marine Corps"
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/marine
@@ -110,7 +113,6 @@
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/e7_exp,
 		/datum/mil_rank/fleet/e8,
 		/datum/mil_rank/marine_corps/e6,
 		/datum/mil_rank/marine_corps/e7,
@@ -125,12 +127,9 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e3_exp,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/fleet/e5_exp,
 		/datum/mil_rank/marine_corps/e3,
 		/datum/mil_rank/marine_corps/e4,
 		/datum/mil_rank/marine_corps/e5,
@@ -166,8 +165,6 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
 		/datum/mil_rank/fleet/e5_exp,
-		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/fleet/e7,
 		/datum/mil_rank/fleet/e7_exp
 	)
 
@@ -205,10 +202,8 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e3_exp,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/fleet/e5_exp,
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/marine_corps/e3,
 		/datum/mil_rank/marine_corps/e4,
@@ -290,7 +285,6 @@
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/e7_exp,
 		/datum/mil_rank/fleet/e8,
 		/datum/mil_rank/marine_corps/e6,
 		/datum/mil_rank/marine_corps/e7,
@@ -307,10 +301,8 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e3_exp,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/fleet/e5_exp,
 		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/pcrc_agent,
 		/datum/mil_rank/sol/agent,
@@ -332,9 +324,7 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e3_exp,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3,
@@ -370,7 +360,6 @@
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e3_exp,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/marine_corps/e1,
 		/datum/mil_rank/marine_corps/e2,
@@ -387,9 +376,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e3_exp,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3,
@@ -405,7 +392,6 @@
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e3_exp,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/marine_corps/e1,
 		/datum/mil_rank/marine_corps/e2,
@@ -423,7 +409,6 @@
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/fleet/e7,
-		/datum/mil_rank/fleet/e7_exp,
 		/datum/mil_rank/fleet/e8,
 		/datum/mil_rank/marine_corps/e6,
 		/datum/mil_rank/marine_corps/e7,
@@ -440,7 +425,6 @@
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e3_exp,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/marine_corps/e1,
 		/datum/mil_rank/marine_corps/e2,

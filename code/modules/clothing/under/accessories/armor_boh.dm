@@ -1,3 +1,10 @@
+// Requested slowdowns
+/obj/item/clothing/accessory/storage/pouches
+	slowdown = 0.15
+
+/obj/item/clothing/accessory/storage/pouches/large
+	slowdown = 0.25
+
 /obj/item/clothing/accessory/storage/pouches/grey
 	name = "storage pouches"
 	desc = "A collection of grey pouches that can be attached to a plate carrier. Carries up to two items."

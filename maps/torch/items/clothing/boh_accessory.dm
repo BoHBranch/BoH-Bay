@@ -28,6 +28,10 @@
 	name = "\improper NANOTRASEN patch"
 	desc = "An armor tag with the words NANOTRASEN printed in bottle green lettering on it."
 
+// Modular override of dog tags badge string
+/obj/item/clothing/accessory/badge/solgov/tags
+	badge_string = "Spaceman"
+
 // ranks and spec pin - expeditionary fleet
 /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer
 	name = "explorer qualification pin"

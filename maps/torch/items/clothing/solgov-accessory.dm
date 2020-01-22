@@ -267,6 +267,7 @@ badges
 	desc = "Plain identification tags made from a durable metal. They are stamped with a variety of informational details."
 	gender = PLURAL
 	icon_state = "tags"
+	badge_string = "NTF"
 	slot_flags = SLOT_MASK | SLOT_TIE
 	var/owner_rank
 	var/owner_name
