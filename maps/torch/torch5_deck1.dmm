@@ -9791,10 +9791,6 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 9
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4;
-	icon_state = "pipe-c"
-	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "aub" = (
@@ -10114,7 +10110,6 @@
 	icon_state = "corner_white";
 	dir = 5
 	},
-/obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -10349,6 +10344,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/medical/chemistry)
 "awA" = (
@@ -10594,27 +10590,6 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/firstdeck/aft)
-"axy" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4;
-	icon_state = "pipe-c"
-	},
-/turf/simulated/floor/tiled,
-/area/hallway/primary/firstdeck/aft)
-"axz" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
 "axA" = (
 /obj/machinery/door/firedoor,
@@ -18517,11 +18492,17 @@
 /turf/simulated/floor/tiled/monotile,
 /area/security/locker)
 "eik" = (
-/obj/structure/disposalpipe/trunk{
-	dir = 8
+/obj/structure/table/glass,
+/obj/machinery/reagent_temperature/cooler{
+	pixel_x = -8
 	},
-/obj/machinery/disposal,
-/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/reagent_temperature{
+	pixel_x = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "ejb" = (
@@ -20141,6 +20122,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "gSb" = (
@@ -23247,7 +23229,8 @@
 /area/assembly/robotics/surgery)
 "kFY" = (
 /obj/structure/disposalpipe/segment{
-	dir = 4
+	dir = 4;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -26079,19 +26062,12 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmreception)
 "omb" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
-	},
-/obj/structure/table/glass,
-/obj/machinery/reagent_temperature/cooler{
-	pixel_x = -8
-	},
-/obj/machinery/reagent_temperature{
-	pixel_x = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/disposal,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/disposalpipe/trunk,
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "onM" = (
@@ -54615,8 +54591,8 @@ lrG
 gEb
 avk
 gaA
-axy
-hib
+ivT
+hwY
 oAp
 haT
 hJb
@@ -54817,7 +54793,7 @@ ata
 aua
 avl
 quZ
-axz
+hcb
 ayy
 iXb
 acG
@@ -55019,8 +54995,8 @@ veF
 kFY
 gRb
 awt
-ivT
-hnN
+dUR
+hib
 gAU
 hyb
 llb
