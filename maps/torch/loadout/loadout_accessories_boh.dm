@@ -29,6 +29,20 @@
 	display_name = "Medical tag, alt"
 	path = /obj/item/clothing/accessory/armor/tag/civ/med
 
+/datum/gear/accessory/tags/marine
+	display_name = "dog tags, solar marine corps"
+	description = "Plain identification tags made from a durable metal. This one is issued to marines."
+	path = /obj/item/clothing/accessory/badge/solgov/tags/marine
+	allowed_branches = list(/datum/mil_branch/marine_corps)
+	cost = 0
+
+/datum/gear/accessory/tags/fleet
+	display_name = "dog tags, expeditionary fleet"
+	description = "Plain identification tags made from a durable metal. This one is issued to fleet."
+	path = /obj/item/clothing/accessory/badge/solgov/tags/fleet
+	allowed_branches = list(/datum/mil_branch/fleet)
+	cost = 0
+
 // Separating main's certain armor customization items.
 /datum/gear/tactical/blood_patch
 	display_name = "blood patch selection"
