@@ -8,11 +8,13 @@
 	display_name = "Marine Corps patch"
 	path = /obj/item/clothing/accessory/solgov/smc_patch
 	allowed_branches = list(/datum/mil_branch/marine_corps)
+	cost = 0
 	whitelisted = list(SPECIES_HUMAN, SPECIES_IPC)
 
 /datum/gear/accessory/smc_patch_xenos
 	display_name = "Marine Corps patch (xenoic division)"
 	path = /obj/item/clothing/accessory/solgov/smc_patch/xeno
+	cost = 0
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 
 /datum/gear/tactical/civ_tag

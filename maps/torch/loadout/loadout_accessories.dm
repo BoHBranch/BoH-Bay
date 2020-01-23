@@ -2,7 +2,7 @@
 	display_name = "major award selection"
 	description = "A medal or ribbon awarded to military and paramilitary personnel for significant accomplishments."
 	path = /obj/item/clothing/accessory
-	cost = 8
+	cost = 4
 	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/accessory/solawardmajor/New()
@@ -22,7 +22,7 @@
 	display_name = "minor award selection"
 	description = "A medal or ribbon awarded to military and paramilitary personnel for minor accomplishments."
 	path = /obj/item/clothing/accessory
-	cost = 5
+	cost = 2
 	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/accessory/solawardminor/New()
@@ -42,6 +42,7 @@
 	display_name = "Surveyor Corps scarf"
 	path = /obj/item/clothing/accessory/solgov/ec_scarf
 	description = "A section-specific scarf for Survey Corps uniforms."
+	cost = 0
 	flags = GEAR_HAS_TYPE_SELECTION
 	allowed_branches = NT_BRANCHES
 
@@ -49,6 +50,7 @@
 	display_name = "Surveyor Corps patch"
 	path = /obj/item/clothing/accessory/solgov/ec_patch
 	description = "A shoulder patch representing the Survey Corps."
+	cost = 0
 	flags = GEAR_HAS_TYPE_SELECTION
 	allowed_branches = NT_BRANCHES
 
@@ -67,6 +69,7 @@
 	display_name = "fleet patch"
 	path = /obj/item/clothing/accessory/solgov/fleet_patch
 	flags = GEAR_HAS_TYPE_SELECTION
+	cost = 0
 	allowed_branches = list(/datum/mil_branch/fleet)
 
 /datum/gear/accessory/armband_ma
