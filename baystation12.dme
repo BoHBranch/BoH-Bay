@@ -2036,6 +2036,7 @@
 #include "code\modules\mob\language\alien\diona.dm"
 #include "code\modules\mob\language\alien\mantid.dm"
 #include "code\modules\mob\language\alien\monkey.dm"
+#include "code\modules\mob\language\alien\sergal.dm"
 #include "code\modules\mob\language\alien\serpentid.dm"
 #include "code\modules\mob\language\alien\skrell.dm"
 #include "code\modules\mob\language\alien\unathi.dm"
