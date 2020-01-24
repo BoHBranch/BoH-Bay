@@ -1,3 +1,11 @@
+/////////
+// global lock
+/////////
+/obj/item/weapon/gun/projectile/free_fire()
+	var/my_z = get_z(src)
+	if(!GLOB.using_map.station_levels.Find(my_z))
+		return TRUE
+	return ..()
 
 /////////
 // Sec Bullpup
@@ -18,7 +26,7 @@
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
 		list(mode_name="semi auto",       burst=1,    fire_delay=null,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
-		list(mode_name="bump fire", burst=2, fire_delay=null, move_delay=1,    one_hand_penalty=8, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="bump fire", burst=2, fire_delay=null, move_delay=2,    one_hand_penalty=8, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
 		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
 		)
 
@@ -37,7 +45,7 @@
 	req_access = list(access_infantry)
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
-		list(mode_name="authorized", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null),
+		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null),
 		)
 
 /////////
@@ -77,7 +85,7 @@
 	req_access = list(access_infantry)
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
-		list(mode_name="authorized", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
+		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
 		)
 
 /////////
@@ -117,7 +125,7 @@
 	req_access = list(access_infantry)
 	authorized_modes = list(UNAUTHORIZED) //can't be registered, but that doesn't matter as this prevents firing regardless
 	firemodes = list(
-		list(mode_name="authorized", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=12, burst_accuracy=null, dispersion=null),
+		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=12, burst_accuracy=null, dispersion=null),
 		)
 
 /obj/item/weapon/gun/launcher/rocket/recoilless/sec/free_fire()
@@ -127,10 +135,23 @@
 	return ..()
 
 /////////
-// lock
+// SL Shotgun
 /////////
-/obj/item/weapon/gun/projectile/free_fire()
-	var/my_z = get_z(src)
-	if(!GLOB.using_map.station_levels.Find(my_z))
-		return TRUE
-	return ..()
+/obj/item/weapon/gun/projectile/shotgun/sabotgun
+	name = "GS-95 Tectonic"
+	desc = "Built for light anti-materiel use, the Hephaestus Industries GS-95 Teutonic is for frontline support infantry. \
+	It features a built in magazine, and must be loaded by hand."
+	icon = 'icons/boh/items/shotguns.dmi'
+	icon_state = "sexyshotgun"
+	item_state = "sexyshotgun"
+	wielded_item_state = "sexyshotgun-wielded"
+	load_method = SINGLE_CASING
+	handle_casings = EJECT_CASINGS
+	max_shells = 8
+	ammo_type = /obj/item/ammo_casing/sabot
+	caliber = CALIBER_SABOT
+	req_access = list(access_infantry)
+	authorized_modes = list(UNAUTHORIZED)
+	firemodes = list(
+		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
+		)

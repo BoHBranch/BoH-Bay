@@ -126,3 +126,7 @@
 /datum/fabricator_recipe/arms_ammo/hidden/rcr
 	name = "ammunition (Recoilless Rifle Round)"
 	path = /obj/item/ammo_casing/rocket/rcr
+
+/datum/fabricator_recipe/arms_ammo/hidden/sabot
+	name = "ammunition (12g Sabot)"
+	path = /obj/item/ammo_magazine/shotholder/sabot
