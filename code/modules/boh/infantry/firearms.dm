@@ -34,6 +34,7 @@
 	desc = "A Hephaestus Industries G40B carbine, designed to kill with concentrated energy blasts. Fitted with safety chips to make sure discharge aboard a 'safe zone' is impossible.\
 	Additionally, it features a higher capacity."
 	charge_cost = 10
+	max_shots = 20
 	req_access = list(access_infantry)
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
