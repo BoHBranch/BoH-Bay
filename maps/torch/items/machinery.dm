@@ -11,6 +11,15 @@
 	fabricator_tag = "SFV Arrow Maintenance"
 	drone_type = /mob/living/silicon/robot/drone/construction
 
+///ai cons
+/obj/machinery/drone_fabricator/dagon //not needed, but just as a base
+	fabricator_tag = "NTSS Dagon Maintenance"
+
+/obj/machinery/drone_fabricator/dagon/adv
+	name = "advanced drone fabricator"
+	fabricator_tag = "AI Data Room"
+	drone_type = /mob/living/silicon/robot/drone/construction
+
 //telecommunications gubbins for torch-specific networks
 
 /obj/machinery/telecomms/hub/preset

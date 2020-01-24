@@ -1079,7 +1079,13 @@
 
 /area/turret_protected/ai_outer_chamber
 	name = "\improper Outer AI Chamber"
-	icon_state = "ai_chamber"
+	icon_state = "checkpoint"
+	sound_env = SMALL_ENCLOSED
+	req_access = list(access_ai_upload)
+
+/area/turret_protected/ai_data_chamber
+	name = "\improper AI Data Chamber"
+	icon_state = "ai_foyer"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_ai_upload)
 
