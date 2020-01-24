@@ -1,6 +1,6 @@
 /decl/cultural_info/culture/sergal
 	name = CULTURE_SERGAL
-	description = "WIP ask Allakai to work on this"
+	description = "WIP ask the lore team to work on this some time"
 	economic_power = 1
 	name_language = LANGUAGE_SERGAL
 	secondary_langs = list(
