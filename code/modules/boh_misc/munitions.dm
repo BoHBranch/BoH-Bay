@@ -80,12 +80,11 @@
 	icon_state= "rod"
 	damage_type = BURN
 	damage = 95
-	armor_penetration = 35
-	damage_flags = DAM_BULLET | DAM_SHARP | DAM_EDGE
+	armor_penetration = 65 //not 100, because recoilless rifles don't have that high of a velocity
+	damage_flags = DAM_BULLET | DAM_SHARP | DAM_EDGE | DAM_DISPERSED | DAM_EXPLODE
 
 	on_hit(var/atom/target, var/blocked = 0)
 		explosion(target, 1, 6, 12)
-		damage_type = BURN
 		return 1
 
 /////////
@@ -126,17 +125,24 @@
 /////////
 //casing
 /obj/item/ammo_casing/rifle/military/low
-	desc = "A low-power bullet casing."
+	desc = "A frangible bullet casing."
 	caliber = CALIBER_RIFLE_MILITARY
 	projectile_type = /obj/item/projectile/bullet/rifle/military/sec
 
 //projectile
 /obj/item/projectile/bullet/rifle/military/sec
-	damage = 35
-	armor_penetration = 5
-	penetration_modifier = 1
+	damage = 60 //higher damage
+	armor_penetration = 5 //much worse pen - frangible bullets
+	penetration_modifier = 2 //higher post pen
 
 //mag
 /obj/item/ammo_magazine/mil_rifle/sec
-	name = "low-power rifle magazine"
+	name = "frangible munitions rifle magazine"
 	ammo_type = /obj/item/ammo_casing/rifle/military/low
+
+//bigger mag
+/obj/item/ammo_magazine/mil_rifle/sec/large
+	name = "high-cap frangible munitions rifle magazine"
+	icon_state = "assault_rifle"
+	ammo_type = /obj/item/ammo_casing/rifle/military/low
+	max_ammo = 35
