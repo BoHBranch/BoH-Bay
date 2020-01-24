@@ -30,10 +30,9 @@
 	                    SKILL_PILOT       = SKILL_BASIC)
 	skill_points = 22
 
-	access = list(access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-			            access_eva, access_sec_doors, access_solgov_crew, access_gun, access_petrov, access_petrov_security,
+	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
-			            access_infcom, access_inftech, access_brig, access_security, access_aquila)
+			            access_infcom, access_inftech, access_aquila)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
@@ -61,10 +60,9 @@
 		/datum/mil_rank/marine_corps/e6
 		)
 
-	access = list(access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-			            access_eva, access_sec_doors, access_solgov_crew, access_gun, access_petrov, access_petrov_security,
+	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
-			            access_inftech, access_brig, access_security, access_aquila)
+			            access_inftech, access_aquila)
 
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
 						SKILL_ELECTRICAL   = SKILL_ADEPT,
@@ -93,10 +91,9 @@
 	/datum/mil_rank/marine_corps/e5
 	)
 
-	access = list(access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-			            access_eva, access_sec_doors, access_solgov_crew, access_gun, access_petrov, access_petrov_security,
+	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
-			            access_brig, access_security, access_aquila)
+			            access_aquila)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
 
