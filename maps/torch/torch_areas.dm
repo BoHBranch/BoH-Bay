@@ -1136,6 +1136,15 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_crematorium)
 
+/area/medical/lounge
+	name = "\improper Staff Lounge"
+	icon_state = "locker"
+	req_access = list(access_medical_equip)
+
+/area/medical/reslab
+	name = "\improper Resuscitation Lab"
+	req_access = list(access_surgery)
+
 /area/medical/virology
 	name = "\improper Virology (decomissioned)"
 

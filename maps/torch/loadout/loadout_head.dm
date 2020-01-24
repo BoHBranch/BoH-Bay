@@ -28,7 +28,7 @@
 	allowed_branches = SOLGOV_BRANCHES
 
 /datum/gear/head/fleethat
-	display_name = "fleet cap"
+	display_name = "fleet hat"
 	path = /obj/item/clothing/head/solgov/utility/fleet
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/fleet)
@@ -37,7 +37,7 @@
 	display_name = "SC cap"
 	path = /obj/item/clothing/head/soft/solgov/expedition
 	cost = 0
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_branches = NT_BRANCHES
 
 /datum/gear/head/surgical
 	allowed_roles = STERILE_ROLES
@@ -96,10 +96,10 @@
 	gear_tweaks += new/datum/gear_tweak/path(berets)
 
 /datum/gear/head/ECberet
-	display_name = "EC sections beret selection"
-	description = "A beret denoting service in one of the branches within the SCG EC."
+	display_name = "NTSC sections beret selection"
+	description = "A beret denoting service in one of the branches within the NTSC."
 	path = /obj/item/clothing/head/beret/solgov/expedition/branch
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_branches = NT_BRANCHES
 
 /datum/gear/head/ECberet/New()
 	..()
