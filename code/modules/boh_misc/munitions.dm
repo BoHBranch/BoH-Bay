@@ -81,7 +81,7 @@
 	damage_type = BURN
 	damage = 95
 	armor_penetration = 65 //not 100, because recoilless rifles don't have that high of a velocity
-	damage_flags = DAM_BULLET | DAM_SHARP | DAM_EDGE | DAM_DISPERSED | DAM_EXPLODE
+	damage_flags = DAM_EDGE | DAM_DISPERSED | DAM_EXPLODE
 
 	on_hit(var/atom/target, var/blocked = 0)
 		explosion(target, 1, 6, 12)
@@ -146,3 +146,32 @@
 	icon_state = "assault_rifle"
 	ammo_type = /obj/item/ammo_casing/rifle/military/low
 	max_ammo = 35
+
+/////////
+// SL Shotty
+/////////
+//casing
+/obj/item/ammo_casing/sabot
+	name = "sabot shell"
+	desc = "APFSDS in a neat little package."
+	icon = 'icons/boh/ammo.dmi'
+	icon_state = "sabshell"
+	spent_icon = "sabshell-spent"
+	caliber = CALIBER_SABOT
+	projectile_type = /obj/item/projectile/bullet/sabot
+	matter = list(MATERIAL_STEEL = 420)
+
+//projectile
+/obj/item/projectile/bullet/sabot
+	name = "sabot"
+	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
+	damage = 45
+	armor_penetration = 85
+	damage_flags = DAM_EDGE
+
+//holder
+/obj/item/ammo_magazine/shotholder/sabot
+	name = "sabot shell holder"
+	ammo_type = /obj/item/ammo_casing/sabot
+	matter = list(MATERIAL_STEEL = 1240)
+	marking_color = COLOR_GUNMETAL

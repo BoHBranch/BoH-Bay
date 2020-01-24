@@ -59,7 +59,6 @@
 		)
 
 	initial_modules = list(
-	/obj/item/rig_module/power_sink,
 	/obj/item/rig_module/cooling_unit,
 	/obj/item/rig_module/maneuvering_jets
 	)
