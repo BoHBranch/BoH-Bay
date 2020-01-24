@@ -85,6 +85,37 @@
 		update_icon()
 
 /////////
+// Enfluroprobine
+/////////
+
+/datum/reagent/enfluroprobine
+	name = "Enfluroprobine"
+	description = "A light substance that probably wouldn't taste too great."
+	taste_description = "rage"
+	reagent_state = LIQUID
+	color = "#a62c2b"
+	metabolism = REM * 1
+	value = 2
+
+//vial
+/obj/item/weapon/reagent_containers/glass/beaker/vial/enfluroprobine
+	name = "odd vial"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/enfluroprobine, 30)
+		update_icon()
+
+/////////
+// VB Vial
+/////////
+/obj/item/weapon/reagent_containers/glass/beaker/vial/vecuronium_bromide
+	name = "odd vial"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/vecuronium_bromide, 30)
+		update_icon()
+
+/////////
 // Coffee OLD
 /////////
 /datum/reagent/drink/coffee/old

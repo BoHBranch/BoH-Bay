@@ -107,6 +107,12 @@ var/list/datum/power/changeling/powerinstances = list()
 	genomecost = 10
 	verbpath = /mob/proc/changeling_DEATHsting
 
+/datum/power/changeling/ParalyzedSting
+	name = "Paralyzed Sting"
+	desc = "We stealthily sting a target, filling them with potent chemicals. What follows is rapid downfall."
+	helptext = "Has immediate effects, bringing the target into an almost instant collapse."
+	genomecost = 15
+	verbpath = /mob/proc/changeling_paralyzedsting
 
 /datum/power/changeling/boost_range
 	name = "Boost Range"
@@ -129,15 +135,15 @@ var/list/datum/power/changeling/powerinstances = list()
 	genomecost = 4
 	isVerb = 0
 	verbpath = /mob/proc/changeling_fastchemical
-/*
+
 /datum/power/changeling/AdvChemicalSynth
 	name = "Advanced Chemical-Synthesis"
-	desc = "We evolve new pathways for producing our necessary chemicals, permitting us to naturally create them faster."
-	helptext = "Doubles the rate at which we naturally recharge chemicals."
+	desc = "We evolve many new pathways for producing our necessary chemicals, permitting us to naturally create them much faster."
+	helptext = "Quadruples the rate at which we naturally recharge chemicals."
 	genomecost = 8
 	isVerb = 0
-	verbpath = /mob/proc/changeling_fastchemical
-*/
+	verbpath = /mob/proc/changeling_fastestchemical
+
 /datum/power/changeling/EngorgedGlands
 	name = "Engorged Chemical Glands"
 	desc = "Our chemical glands swell, permitting us to store more chemicals inside of them."

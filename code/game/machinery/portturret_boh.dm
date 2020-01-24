@@ -44,6 +44,9 @@
 	damage = 25
 	armor_penetration = 30
 	damage_type = BURN
+	hitchance_mod = 100 //this and dispersion likely isn't needed, but, whatever
+	dispersion = 0
+	distance_falloff = 0
 
 /////////
 // Area
