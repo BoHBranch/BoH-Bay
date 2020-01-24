@@ -813,11 +813,22 @@
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/expedition/senior
 
+	service_hat_alt = /obj/item/clothing/head/solgov/dress/fleet
+	service_over_alt = /obj/item/clothing/suit/storage/solgov/service/fleet
+
+	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet
+
 /decl/hierarchy/mil_uniform/fleet/sci/chief
 	name = "NTEF science chief"
 	min_rank = 7
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/expedition/chief
+
+	service_hat_alt = /obj/item/clothing/head/solgov/dress/fleet
+	service_over_alt = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
+
+	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/sci/officer
 	name = "NTEF science CO"

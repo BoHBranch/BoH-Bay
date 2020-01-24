@@ -28,9 +28,15 @@
 	name = "\improper NANOTRASEN patch"
 	desc = "An armor tag with the words NANOTRASEN printed in bottle green lettering on it."
 
-// Modular override of dog tags badge string
+// Dog Tags badge string rename, plus added for SMC and NTEF.
 /obj/item/clothing/accessory/badge/solgov/tags
-	badge_string = "Spaceman"
+	badge_string = "NTSS Dagon"
+
+/obj/item/clothing/accessory/badge/solgov/tags/fleet
+	badge_string = "NTEF"
+
+/obj/item/clothing/accessory/badge/solgov/tags/marine
+	badge_string = "SMC"
 
 // ranks and spec pin - expeditionary fleet
 /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer
