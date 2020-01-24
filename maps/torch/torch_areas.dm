@@ -1079,7 +1079,13 @@
 
 /area/turret_protected/ai_outer_chamber
 	name = "\improper Outer AI Chamber"
-	icon_state = "ai_chamber"
+	icon_state = "checkpoint"
+	sound_env = SMALL_ENCLOSED
+	req_access = list(access_ai_upload)
+
+/area/turret_protected/ai_data_chamber
+	name = "\improper AI Data Chamber"
+	icon_state = "ai_foyer"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_ai_upload)
 
@@ -1129,6 +1135,15 @@
 	icon_state = "chapel"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_crematorium)
+
+/area/medical/lounge
+	name = "\improper Staff Lounge"
+	icon_state = "locker"
+	req_access = list(access_medical_equip)
+
+/area/medical/reslab
+	name = "\improper Resuscitation Lab"
+	req_access = list(access_surgery)
 
 /area/medical/virology
 	name = "\improper Virology (decomissioned)"

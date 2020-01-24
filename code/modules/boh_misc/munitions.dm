@@ -79,11 +79,12 @@
 	name ="incendiary shell"
 	icon_state= "rod"
 	damage_type = BURN
-	damage = 45
-	damage_flags = DAM_BULLET | DAM_SHARP | DAM_EDGE
+	damage = 95
+	armor_penetration = 65 //not 100, because recoilless rifles don't have that high of a velocity
+	damage_flags = DAM_EDGE | DAM_DISPERSED | DAM_EXPLODE
 
 	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, 0, 12)
+		explosion(target, 1, 6, 12)
 		return 1
 
 /////////
@@ -124,17 +125,53 @@
 /////////
 //casing
 /obj/item/ammo_casing/rifle/military/low
-	desc = "A low-power bullet casing."
+	desc = "A frangible bullet casing."
 	caliber = CALIBER_RIFLE_MILITARY
 	projectile_type = /obj/item/projectile/bullet/rifle/military/sec
 
 //projectile
 /obj/item/projectile/bullet/rifle/military/sec
-	damage = 35
-	armor_penetration = 5
-	penetration_modifier = 1
+	damage = 60 //higher damage
+	armor_penetration = 5 //much worse pen - frangible bullets
+	penetration_modifier = 2 //higher post pen
 
 //mag
 /obj/item/ammo_magazine/mil_rifle/sec
-	name = "low-power rifle magazine"
+	name = "frangible munitions rifle magazine"
 	ammo_type = /obj/item/ammo_casing/rifle/military/low
+
+//bigger mag
+/obj/item/ammo_magazine/mil_rifle/sec/large
+	name = "high-cap frangible munitions rifle magazine"
+	icon_state = "assault_rifle"
+	ammo_type = /obj/item/ammo_casing/rifle/military/low
+	max_ammo = 35
+
+/////////
+// SL Shotty
+/////////
+//casing
+/obj/item/ammo_casing/sabot
+	name = "sabot shell"
+	desc = "APFSDS in a neat little package."
+	icon = 'icons/boh/ammo.dmi'
+	icon_state = "sabshell"
+	spent_icon = "sabshell-spent"
+	caliber = CALIBER_SABOT
+	projectile_type = /obj/item/projectile/bullet/sabot
+	matter = list(MATERIAL_STEEL = 420)
+
+//projectile
+/obj/item/projectile/bullet/sabot
+	name = "sabot"
+	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
+	damage = 45
+	armor_penetration = 85
+	damage_flags = DAM_EDGE
+
+//holder
+/obj/item/ammo_magazine/shotholder/sabot
+	name = "sabot shell holder"
+	ammo_type = /obj/item/ammo_casing/sabot
+	matter = list(MATERIAL_STEEL = 1240)
+	marking_color = COLOR_GUNMETAL

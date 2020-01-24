@@ -28,16 +28,27 @@
 	name = "\improper NANOTRASEN patch"
 	desc = "An armor tag with the words NANOTRASEN printed in bottle green lettering on it."
 
-// SC/EC ranks addition and NTF rank override
-/obj/item/clothing/accessory/solgov/rank/ec/officer/o2
-	name = "ranks (O-2 lieutenant junior-grade)"
-	desc = "Insignia denoting the rank of Lieutenant Junior-Grade."
-	icon_state = "ecrank_o3"
+// Dog Tags badge string rename, plus added for SMC and NTEF.
+/obj/item/clothing/accessory/badge/solgov/tags
+	badge_string = "NTSS Dagon"
 
-/obj/item/clothing/accessory/solgov/rank/ec/officer/o4
-	name = "ranks (O-4 lieutenant commander)"
-	desc = "Insignia denoting the rank of Lieutenant Commander"
-	icon_state = "ecrank_o5"
+/obj/item/clothing/accessory/badge/solgov/tags/fleet
+	badge_string = "NTEF"
+
+/obj/item/clothing/accessory/badge/solgov/tags/marine
+	badge_string = "SMC"
+
+// ranks and spec pin - expeditionary fleet
+/obj/item/clothing/accessory/solgov/specialty/enlisted/explorer
+	name = "explorer qualification pin"
+
+/obj/item/clothing/accessory/solgov/rank/ec/enlisted
+	name = "ranks (E-1 recruit explorer)"
+	desc = "Insignia denoting the rank of Recruit Explorer."
+
+/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e2
+	name = "ranks (E-2 junior explorer)"
+	desc = "Insignia denoting the rank of Junior Explorer."
 
 /obj/item/clothing/accessory/solgov/rank/fleet/officer/o2
 	name = "ranks (O-2 lieutenant junior-grade)"

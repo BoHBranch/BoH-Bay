@@ -1,6 +1,6 @@
 /obj/item/weapon/sd_key
 	name = "self destruct key"
-	desc = "For when the final duty must be performed."
+	desc = "For when the final duty must be performed. The key can only be imprinted by a head of staff, premature activation is not required."
 	icon = 'icons/boh/items/sd_keys.dmi'
 	icon_state = "key_base"
 	w_class = ITEM_SIZE_TINY

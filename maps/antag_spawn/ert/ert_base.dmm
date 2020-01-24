@@ -410,7 +410,6 @@
 "hT" = (/obj/effect/floor_decal/industrial/loading{icon_state = "loadingarea"; dir = 8},/turf/unsimulated/floor{icon_state = "vault"; dir = 1},/area/map_template/rescue_base/base)
 "hU" = (/obj/effect/landmark{name = "Commando"},/obj/effect/floor_decal/industrial/loading{dir = 4},/turf/unsimulated/floor{icon_state = "vault"; dir = 1},/area/map_template/rescue_base/base)
 "hV" = (/obj/effect/landmark{name = "Commando"},/obj/effect/floor_decal/industrial/loading{icon_state = "loadingarea"; dir = 8},/turf/unsimulated/floor{icon_state = "vault"; dir = 1},/area/map_template/rescue_base/base)
-"hW" = (/obj/structure/stairs/north,/turf/unsimulated/floor{icon_state = "dark"},/area/map_template/rescue_base/base)
 "hX" = (/turf/unsimulated/floor{name = "plating"; icon_state = "cult"},/area/map_template/rescue_base/base)
 "hY" = (/obj/structure/table/rack/shelf/steel,/obj/item/weapon/storage/box/secret_project_disks,/obj/item/weapon/folder/envelope/nuke_instructions,/obj/effect/floor_decal/industrial/outline/grey,/turf/unsimulated/floor{icon_state = "plating"; name = "plating"},/area/map_template/rescue_base/base)
 "hZ" = (/obj/structure/decoy{density = 1; icon_state = "ai-text"; name = "Databank"},/turf/unsimulated/floor{icon_state = "plating"; name = "plating"},/area/map_template/rescue_base/base)
@@ -453,7 +452,7 @@ aaaaaaaabzaaaaaaaaabaqaqanaqbfdCdDdEananabananaqdFdGdHdIdJdKdLabdMdMabananabaaaa
 aaaaaaaaaaaaaaaaaaabaqdNananbfaqaqaqananbfananaqaqaqaqaqaqaqdObfdPdPabdQdQababababaaaaaaaaaaaaabhIaqhLaqhMabaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaabdRdSdTandUaqaqaqananbfanandVdWdWdWdWaqaqdXbfdYdZabeaanhnecedabaaaaaaaaaaaaabhNaqhOaqhPabaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaabeeefananabegeheiejekbfananelememememaqaqdXbfdYeneoananananbcabaaaaaaaaaaaaababababhRababaaaaaaaaaaaaaaaaaaaaaa
-aaaaabababababaaaaabeqaqeresababbfbfbfbfabananaqaqaqaqaqaqaqetbfdYeneoanhuhHanepababababaaaaaaaaaaaaabhWabaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaabababababaaaaabeqaqeresababbfbfbfbfabananaqaqaqaqaqaqaqetbfdYeneoanhuhHanepababababaaaaaaaaaaaaabaqabaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaabeuevewabaaaaababababababaabAbAbAbAabcgchexeyezeAeBeCeDeEabdYeneoanhKhJanepabeFhmabaaaaaaababababaqababababaaaaaaaaaaaaaaaaaa
 aaaaabeGeHeIabaaaaaaaaaaaaaaaaaabAbzbBbAababbfbfbfbfababababababdYeneoanananananeJanhlabaaaaaaabhShXhXhXhXhXidabaaaaaaaaaaaaaaaaaa
 aaaaabababababaaaaaaaaaaaaaaaaaabAbAbAbAbAbAbAbAbAbzbAbAdYdYdYdYdYeKabhrhshqhphoabaqebabaaaaaaabifhXhYhZiahXifabaaaaaaaaaaaaaaaaaa

@@ -33,6 +33,9 @@
 	id_type = /obj/item/weapon/card/id/torch/crew/sea
 	pda_type = /obj/item/modular_computer/pda/heads
 
+/decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
+	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
+
 /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/marine
 	name = OUTFIT_JOB_NAME("Bridge Officer - Marine Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/army/command
