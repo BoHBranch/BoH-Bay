@@ -172,6 +172,7 @@
 //holder
 /obj/item/ammo_magazine/shotholder/sabot
 	name = "sabot shell holder"
+	caliber = CALIBER_SABOT
 	ammo_type = /obj/item/ammo_casing/sabot
 	matter = list(MATERIAL_STEEL = 1240)
 	marking_color = COLOR_GUNMETAL
