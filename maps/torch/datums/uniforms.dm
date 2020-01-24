@@ -57,6 +57,8 @@
 
 	dress_extra = list(/obj/item/clothing/accessory/solgov/ec_scarf)
 
+// Commented out because it overrides modular's uniform system in some places.
+/*
 /decl/hierarchy/mil_uniform/fleet
 	name = "Master fleet outfit"
 	hierarchy_type = /decl/hierarchy/mil_uniform/fleet
@@ -84,6 +86,7 @@
 	dress_gloves = /obj/item/clothing/gloves/white
 
 	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
+*/
 
 /decl/hierarchy/mil_uniform/civilian
 	name = "Master civilian outfit"		//Basically just here for the rent-a-tux, ahem, I mean... dress uniform.
