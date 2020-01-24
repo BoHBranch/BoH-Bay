@@ -27535,11 +27535,7 @@
 	icon_state = "pipe-j2";
 	dir = 4
 	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/aft)
 "qcb" = (
