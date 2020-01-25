@@ -449,7 +449,7 @@
 /***/
 
 
-
+/*
 /////////
 // flag - boh
 /////////
@@ -492,3 +492,4 @@
 
 /datum/job/flag/is_position_available()
 	return FALSE
+*/
