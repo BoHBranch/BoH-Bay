@@ -447,3 +447,48 @@
 /datum/job/bodyguard/get_description_blurb()
 	return "You are the Loss Prevention Associate. Your job is to prevent the loss of the Liason's life - even at the cost of your own. Good luck."
 /***/
+
+
+
+/////////
+// flag - boh
+/////////
+/datum/job/flag
+	title = "Flag Officer"
+	department = "Support"
+	department_flag = SPT
+	total_positions = 1
+	spawn_positions = 1
+	latejoin_at_spawnpoints = 1
+	supervisors = "High Command"
+	selection_color = "#807c7c"
+	minimum_character_age = list(SPECIES_HUMAN = 52)
+	ideal_character_age = 60
+	skill_points = 24
+	economic_power = 16
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/CO
+	allowed_branches = list(
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/sea/marine,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/CO/fleet
+	)
+	allowed_ranks = list(
+	/datum/mil_rank/marine_corps/o7,
+	/datum/mil_rank/marine_corps/o8,
+	/datum/mil_rank/marine_corps/o9,
+	/datum/mil_rank/marine_corps/o10,
+	/datum/mil_rank/fleet/o7,
+	/datum/mil_rank/fleet/o8,
+	/datum/mil_rank/fleet/o9,
+	/datum/mil_rank/fleet/o10
+	)
+
+/datum/job/flag/get_access()
+	return get_all_station_access()
+
+/datum/job/flag/post_equip_rank(var/mob/person, var/alt_title)
+	var/sound/announce_sound = (GAME_STATE <= RUNLEVEL_SETUP)? null : sound('sound/misc/boatswain.ogg', volume=20)
+	captain_announcement.Announce("All hands, [alt_title || title] [person.real_name] on deck!", new_sound = announce_sound)
+	..()
+
+/datum/job/flag/is_position_available()
+	return FALSE

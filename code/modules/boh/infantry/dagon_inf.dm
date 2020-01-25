@@ -13,7 +13,7 @@
 	spawn_positions = 1
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
-	minimal_player_age = 1
+	minimal_player_age = 12
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
@@ -49,7 +49,7 @@
 	spawn_positions = 1
 	selection_color = "#557e38"
 	economic_power = 4
-	minimal_player_age = 0
+	minimal_player_age = 6
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
@@ -77,6 +77,7 @@
 	department_flag = INF
 	total_positions = 3
 	spawn_positions = 3
+	minimal_player_age = 3
 	supervisors = "the Combat Technician and Squad Leader"
 	selection_color = "#557e38"
 	minimum_character_age = list(SPECIES_HUMAN = 18)

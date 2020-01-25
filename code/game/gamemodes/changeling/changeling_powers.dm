@@ -517,6 +517,11 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 	src.mind.changeling.chem_recharge_rate *= 2
 	return 1
 
+//ditto x2
+/mob/proc/changeling_fastestchemical()
+	src.mind.changeling.chem_recharge_rate *= 4
+	return 1
+
 //Increases macimum chemical storage
 /mob/proc/changeling_engorgedglands()
 	src.mind.changeling.chem_storage += 25
@@ -795,6 +800,18 @@ var/list/datum/absorbed_dna/hivemind_bank = list()
 	T.make_jittery(400)
 	if(T.reagents)	T.reagents.add_reagent(/datum/reagent/lexorin, 40)
 	SSstatistics.add_field_details("changeling_powers","DTHS")
+	return 1
+
+/mob/proc/changeling_paralyzedsting()
+	set category = "Changeling"
+	set name = "Paralyze Sting (40)"
+	set desc = "Causes a forced period silence before forcing the victim to the ground."
+
+	var/mob/living/carbon/human/T = changeling_sting(35,/mob/proc/changeling_paralyzedsting)
+	if(!T)	return 0
+	to_chat(T, "<span class='danger'>You feel a small prick and your muscles start to go lax!</span>")
+	if(T.reagents)	T.reagents.add_reagent(/datum/reagent/vecuronium_bromide, 35)
+	SSstatistics.add_field_details("changeling_powers","PRAS")
 	return 1
 
 /mob/proc/changeling_extract_dna_sting()

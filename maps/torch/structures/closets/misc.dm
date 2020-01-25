@@ -127,7 +127,7 @@
 
 /obj/structure/closet/secure_closet/guncabinet/sidearm/WillContain()
 	return list(
-			/obj/item/clothing/accessory/storage/holster/thigh = 2,
+			/obj/item/clothing/accessory/storage/holster/thigh = 3,
 			/obj/item/weapon/gun/energy/gun/secure = 3,
 	)
 
@@ -143,8 +143,7 @@
 /obj/structure/closet/secure_closet/guncabinet/sidearm/combined/WillContain()
 	return list(
 		/obj/item/weapon/storage/belt/holster/general = 3,
-		/obj/item/weapon/gun/energy/gun/secure = 3,
-		/obj/item/weapon/gun/energy/gun/small/secure = 1,
+		/obj/item/weapon/gun/energy/gun/secure = 3
 	)
 
 /obj/structure/closet/secure_closet/guncabinet/PPE
