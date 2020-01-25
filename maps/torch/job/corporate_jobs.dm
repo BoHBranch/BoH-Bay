@@ -47,7 +47,7 @@
 	supervisors = "the Workplace Liaison"
 	selection_color = "#3d3d7f"
 	economic_power = 12
-	minimal_player_age = 7
+	minimal_player_age = 2
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard
 	allowed_branches = list(/datum/mil_branch/civilian)
