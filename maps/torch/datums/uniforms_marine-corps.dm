@@ -137,6 +137,7 @@
 /decl/hierarchy/mil_uniform/marine_corps/sec
 	name = "Marine Corps security"
 	departments = SEC
+
 	utility_under = /obj/item/clothing/under/solgov/utility/army/security
 	utility_under_urban = /obj/item/clothing/under/solgov/utility/army/urban/security
 	utility_under_tan = /obj/item/clothing/under/solgov/utility/army/tan/security
@@ -196,6 +197,7 @@
 /decl/hierarchy/mil_uniform/marine_corps/med
 	name = "Marine Corps medical"
 	departments = MED
+
 	utility_under = /obj/item/clothing/under/solgov/utility/army/medical
 	utility_under_urban = /obj/item/clothing/under/solgov/utility/army/urban/medical
 	utility_under_tan = /obj/item/clothing/under/solgov/utility/army/tan/medical
