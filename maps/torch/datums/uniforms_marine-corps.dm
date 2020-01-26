@@ -449,7 +449,8 @@
 		/obj/item/clothing/head/ushanka/solgov/army,
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
-		/obj/item/clothing/head/soft/solgov
+		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/gloves/thick/duty/solgov/cmd
 	)
 
 	utility_under = /obj/item/clothing/under/solgov/utility/army/command
@@ -474,10 +475,13 @@
 		/obj/item/clothing/head/ushanka/solgov/army,
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
-		/obj/item/clothing/head/soft/solgov
+		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/gloves/thick/duty/solgov/cmd
 	)
 
 	utility_under = /obj/item/clothing/under/solgov/utility/army/command
+	utility_under_urban = /obj/item/clothing/under/solgov/utility/army/urban/command
+	utility_under_tan = /obj/item/clothing/under/solgov/utility/army/tan/command
 
 	service_hat = /obj/item/clothing/head/solgov/service/army/command
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
