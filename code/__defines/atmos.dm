@@ -95,7 +95,8 @@
 #define ATMOSTANK_PHORON        25000
 #define ATMOSTANK_PHORON_FUEL	15000
 #define ATMOSTANK_HYDROGEN      50000
-#define ATMOSTANK_HYDROGEN_FUEL 25000
+#define ATMOSTANK_HYDROGEN_FUEL 90000 //ICCG primary propellant.
+#define ATMOSTANK_XENON         80000
 #define ATMOSTANK_NITROUSOXIDE  10000 // N2O doesn't have a real useful use, i guess it's on station just to allow refilling of sec's riot control canisters?
 
 #define MAX_PUMP_PRESSURE		15000	// Maximal pressure setting for pumps and vents

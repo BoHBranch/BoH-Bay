@@ -96,6 +96,7 @@
 	icon = 'icons/boh/items/launchers.dmi'
 	icon_state = "recoilless"
 	item_state = "recoilless"
+	wielded_item_state = "gun_wielded"
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5)
 
 /obj/item/weapon/gun/launcher/rocket/recoilless/attackby(obj/item/I as obj, mob/user as mob)
