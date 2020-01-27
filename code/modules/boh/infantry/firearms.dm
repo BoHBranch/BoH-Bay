@@ -37,7 +37,7 @@
 /////////
 // rifle 2
 /////////
-/obj/item/weapon/gun/energy/laser/secure/infantry
+/obj/item/weapon/gun/energy/laser/infantry
 	name = "G40B carbine"
 	desc = "A Hephaestus Industries G40B carbine, designed to kill with concentrated energy blasts. Fitted with safety chips to make sure discharge aboard a 'safe zone' is impossible.\
 	Additionally, it features a higher capacity."
@@ -47,6 +47,7 @@
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null),
+		list(mode_name="burst fire", burst=2, fire_delay=1, move_delay=1, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		)
 
 /////////

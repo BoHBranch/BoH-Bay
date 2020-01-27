@@ -63,3 +63,21 @@
 			/obj/item/weapon/reagent_containers/chem_disp_cartridge/coffee,
 			/obj/item/weapon/reagent_containers/chem_disp_cartridge/cream
 		)
+
+/////////
+// iccg
+/////////
+/obj/machinery/power/apc/hyper/iccg
+	req_access = list(access_iccg_shipyard)
+	emp_hardened = 1
+
+//pd
+/obj/machinery/pointdefense_control/iccg
+	name = "targeting matrix"
+	desc = "A specialized computer designed to synchronize a variety of weapon systems to fire at a singular target."
+	initial_id_tag = "iccgpd"
+
+/obj/machinery/pointdefense/iccg
+	name = "point defense battery"
+	desc = "A Kuiper pattern anti-meteor battery. Capable of destroying most threats in a single salvo."
+	initial_id_tag = "iccgpd"
