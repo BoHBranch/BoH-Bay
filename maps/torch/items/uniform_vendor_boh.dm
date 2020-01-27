@@ -1,4 +1,4 @@
-// A modular rewrite to allow "alternative" uniform. Done for NTEF to allow both NTSC and NTF uniforms.
+// A modular rewrite to allow "alternative" uniform. Done for NTEF to allow both NTSC and NTF uniforms, and to allow marines for camo selection.
 // Some of those (shoes, gloves) are not really needed but hey - safe check.
 
 /obj/machinery/uniform_vendor/populate_uniforms(decl/hierarchy/mil_uniform/user_outfit)
@@ -17,14 +17,27 @@
 		user_outfit.utility_shoes,
 		user_outfit.utility_hat
 		)
+	if (user_outfit.utility_under_urban || user_outfit.utility_hat_urban)
+		res["Urban Utility"] = list(
+			user_outfit.utility_under_urban,
+			user_outfit.utility_shoes,
+			user_outfit.utility_hat_urban
+			)
+	if (user_outfit.utility_under_tan || user_outfit.utility_hat_tan)
+		res["Tan Utility"] = list(
+			user_outfit.utility_under_tan,
+			user_outfit.utility_shoes,
+			user_outfit.utility_hat_tan
+			)
 	if (user_outfit.utility_extra)
 		res["Utility Extras"] = user_outfit.utility_extra
 
-	res["Alt Utility"] = list(
-		user_outfit.utility_under_alt,
-		user_outfit.utility_shoes_alt,
-		user_outfit.utility_hat_alt
-		)
+	if (user_outfit.utility_under_alt || user_outfit.utility_shoes_alt || user_outfit.utility_hat_alt)
+		res["Alt Utility"] = list(
+			user_outfit.utility_under_alt,
+			user_outfit.utility_shoes_alt,
+			user_outfit.utility_hat_alt
+			)
 	if (user_outfit.utility_extra_alt)
 		res["Alt Utility Extras"] = user_outfit.utility_extra_alt
 
@@ -39,14 +52,15 @@
 	if(user_outfit.service_extra)
 		res["Service Extras"] = user_outfit.service_extra
 
-	res["Alt Service"] = list(
-		user_outfit.service_under_alt,
-		user_outfit.service_skirt_alt,
-		user_outfit.service_over_alt,
-		user_outfit.service_shoes_alt,
-		user_outfit.service_hat_alt,
-		user_outfit.service_gloves_alt
-		)
+	if (user_outfit.service_under_alt || user_outfit.service_skirt_alt || user_outfit.service_over_alt || user_outfit.utility_shoes_alt || user_outfit.utility_hat_alt || user_outfit.service_gloves_alt)
+		res["Alt Service"] = list(
+			user_outfit.service_under_alt,
+			user_outfit.service_skirt_alt,
+			user_outfit.service_over_alt,
+			user_outfit.service_shoes_alt,
+			user_outfit.service_hat_alt,
+			user_outfit.service_gloves_alt
+			)
 	if(user_outfit.service_extra_alt)
 		res["Alt Service Extras"] = user_outfit.service_extra_alt
 
@@ -61,14 +75,15 @@
 	if(user_outfit.dress_extra)
 		res["Dress Extras"] = user_outfit.dress_extra
 
-	res["Alt Dress"] = list(
-		user_outfit.dress_under_alt,
-		user_outfit.dress_skirt_alt,
-		user_outfit.dress_over_alt,
-		user_outfit.dress_shoes_alt,
-		user_outfit.dress_hat_alt,
-		user_outfit.dress_gloves_alt
-		)
+	if (user_outfit.dress_under_alt || user_outfit.dress_skirt_alt || user_outfit.dress_over_alt || user_outfit.dress_shoes_alt || user_outfit.dress_hat_alt || user_outfit.dress_gloves_alt)
+		res["Alt Dress"] = list(
+			user_outfit.dress_under_alt,
+			user_outfit.dress_skirt_alt,
+			user_outfit.dress_over_alt,
+			user_outfit.dress_shoes_alt,
+			user_outfit.dress_hat_alt,
+			user_outfit.dress_gloves_alt
+			)
 	if(user_outfit.dress_extra_alt)
 		res["Alt Dress Extras"] = user_outfit.dress_extra_alt
 

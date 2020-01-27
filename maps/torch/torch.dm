@@ -76,6 +76,7 @@
 	#include "items/clothing/terran-head.dm"
 	#include "items/clothing/terran-suit.dm"
 	#include "items/clothing/terran-under.dm"
+	#include "items/clothing/boh_under.dm"
 	#include "items/clothing/boh_accessory.dm"
 
 	#include "items/weapon/storage/wallets.dm"
