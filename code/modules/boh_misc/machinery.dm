@@ -68,7 +68,6 @@
 // iccg
 /////////
 /obj/machinery/power/apc/hyper/iccg
-	req_access = list(access_iccg_shipyard)
 	emp_hardened = 1
 
 //pd
