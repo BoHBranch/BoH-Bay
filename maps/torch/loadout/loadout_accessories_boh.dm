@@ -168,36 +168,3 @@
 	cost = 3
 	allowed_roles = ARMORED_ROLES
 	allowed_branches = TACTICOOL_BRANCHES
-
-// Too lazy to adjust outfit
-/datum/gear/accessory/nt_blaze
-	display_name = "blaze, janitor"
-	path = /obj/item/clothing/accessory/solgov/specialty/janitor
-	allowed_branches = NT_BRANCHES
-	allowed_roles = list(/datum/job/janitor)
-	cost = 0
-
-/datum/gear/accessory/nt_blaze/brig
-	display_name = "blaze, brig chief"
-	path = /obj/item/clothing/accessory/solgov/specialty/brig
-	allowed_roles = list(/datum/job/warden)
-
-/datum/gear/accessory/nt_blaze/detective
-	display_name = "blaze, forenscics"
-	path = /obj/item/clothing/accessory/solgov/specialty/forensic
-	allowed_roles = list(/datum/job/detective)
-
-/datum/gear/accessory/nt_blaze/atmos
-	display_name = "blaze, atmospherics"
-	path = /obj/item/clothing/accessory/solgov/specialty/atmos
-	allowed_roles = ENGINEERING_ROLES
-
-/datum/gear/accessory/nt_blaze/chemist
-	display_name = "blaze, chemist"
-	path = /obj/item/clothing/accessory/solgov/specialty/chemist
-	allowed_roles = list(/datum/job/chemist)
-
-/datum/gear/accessory/nt_blaze/counselor
-	display_name = "blaze, counselor"
-	path = /obj/item/clothing/accessory/solgov/specialty/counselor
-	allowed_roles = list(/datum/job/psychiatrist)

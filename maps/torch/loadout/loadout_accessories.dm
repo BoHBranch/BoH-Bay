@@ -58,7 +58,6 @@
 	display_name = "NTSS Dagon mission patch"
 	path = /obj/item/clothing/accessory/solgov/torch_patch
 	description = "A shoulder patch representing the NTSS Dagon and its mission. Given to all the oddjobs pulled from various branches to work on the Dagon."
-	flags = GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/accessory/pilot_pin
 	display_name = "pilot's qualification pin"
@@ -268,7 +267,7 @@
 	gear_tweaks += new/datum/gear_tweak/path(lpouches)
 
 /datum/gear/accessory/collars
-	display_name = "collar selection"
+	display_name = "collar seclection"
 	description = "A selection of collars. Not the most practical, but some people are into that"
 	path = /obj/item/clothing/accessory/collar/holo
 
