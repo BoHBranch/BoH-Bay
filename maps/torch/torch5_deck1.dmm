@@ -805,7 +805,6 @@
 "aqz" = (/obj/effect/floor_decal/corner/blue/half,/obj/machinery/button/blast_door{id_tag = "sea_mc_shutters"; name = "SEA Office Shutters"; pixel_y = -25},/obj/structure/bed/chair/padded/red{icon_state = "chair_preview"; dir = 1},/obj/effect/landmark/start{name = "Senior Enlisted Advisor of Marine Corps"},/turf/simulated/floor/tiled/dark,/area/crew_quarters/heads/office/sea/marine)
 "aqA" = (/obj/machinery/alarm{dir = 1; pixel_y = -25},/obj/effect/floor_decal/corner/blue/half,/turf/simulated/floor/tiled/dark,/area/crew_quarters/heads/office/sea/marine)
 "aqB" = (/obj/machinery/recharger/wallcharger{dir = 1; icon_state = "wrecharger0"; pixel_y = -22},/obj/effect/floor_decal/corner/blue/half,/turf/simulated/floor/tiled/dark,/area/crew_quarters/heads/office/sea/marine)
-"aqC" = (/obj/machinery/light,/obj/effect/floor_decal/corner/blue/mono,/obj/structure/closet/secure_closet/sea,/obj/item/device/taperecorder{pixel_y = 0},/obj/item/weapon/stamp/sea,/obj/item/modular_computer/tablet/lease/preset/command,/turf/simulated/floor/tiled/dark/monotile,/area/crew_quarters/heads/office/sea/marine)
 "aqD" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/dark,/area/security/armoury)
 "aqE" = (/obj/machinery/fabricator/hacked,/obj/machinery/power/apc{dir = 2; name = "south bump"; pixel_y = -24},/obj/structure/cable/green,/turf/simulated/floor/tiled/dark,/area/security/armoury)
 "aqF" = (/obj/machinery/ai_status_display,/turf/simulated/wall/r_wall/prepainted,/area/crew_quarters/heads/office/sea/marine)
