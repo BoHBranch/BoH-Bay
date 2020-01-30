@@ -96,7 +96,7 @@
 	gear_tweaks += new/datum/gear_tweak/path(berets)
 
 /datum/gear/head/ECberet
-	display_name = "NTSC sections beret selection"
+	display_name = "SC sections beret selection"
 	description = "A beret denoting service in one of the branches within the NTSC."
 	path = /obj/item/clothing/head/beret/solgov/expedition/branch
 	allowed_branches = NT_BRANCHES
