@@ -390,15 +390,20 @@
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/service/crewman/marine
 	)
+	skill_points = 24
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/marine_corps/e1,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3,
-		/datum/mil_rank/marine_corps/e4
+		/datum/mil_rank/marine_corps/e4,
+		/datum/mil_rank/marine_corps/e5,
+		/datum/mil_rank/marine_corps/e6
 	)
 /***/
 
@@ -450,6 +455,9 @@
 	return "You are the Loss Prevention Associate. Your job is to prevent the loss of the Liason's life - even at the cost of your own. Good luck."
 /***/
 
+// Misc
+/datum/job/assistant
+	skill_points = 24
 
 /*
 /////////
