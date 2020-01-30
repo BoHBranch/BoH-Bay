@@ -40,7 +40,7 @@
 	department = "Command"
 	department_flag = COM
 	minimal_player_age = 8
-	economic_power = 10
+	economic_power = 12
 	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_NORTHERN = 35, SPECIES_EASTERN = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
 	ideal_character_age = 45
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/XO

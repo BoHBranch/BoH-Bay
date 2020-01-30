@@ -9,8 +9,8 @@
 	title = "Squad Lead"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
 	minimal_player_age = 12
@@ -45,8 +45,8 @@
 	supervisors = "the Squad Leader"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 6
@@ -75,8 +75,8 @@
 	title = "Rifleman"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 	minimal_player_age = 3
 	supervisors = "the Combat Technician and Squad Leader"
 	selection_color = "#557e38"

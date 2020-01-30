@@ -1458,6 +1458,7 @@
 #include "code\modules\boh\organs\disintegratable.dm"
 #include "code\modules\boh\sd_keyturn\keys.dm"
 #include "code\modules\boh\sd_keyturn\keyterminal.dm"
+#include "code\modules\boh\survival\aura.dm"
 #include "code\modules\boh_misc\areas.dm"
 #include "code\modules\boh_misc\badges.dm"
 #include "code\modules\boh_misc\boxes.dm"
