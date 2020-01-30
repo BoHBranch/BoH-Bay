@@ -3269,7 +3269,6 @@
 #include "maps\~mapsystem\maps_unit_testing.dm"
 #include "maps\~unit_tests\unit_testing.dm"
 #include "modular_mithra\code\__defines\misc.dm"
-#include "modular_mithra\code\__defines\mobs.dm"
 #include "modular_mithra\code\__defines\species.dm"
 #include "modular_mithra\code\_onclick\click.dm"
 #include "modular_mithra\code\datums\mutable_appearance.dm"
