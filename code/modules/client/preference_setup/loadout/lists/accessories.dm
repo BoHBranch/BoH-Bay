@@ -57,7 +57,7 @@
 	display_name = "corporate award selection"
 	description = "A medal or ribbon awarded to corporate personnel for significant accomplishments."
 	path = /obj/item/clothing/accessory/medal
-	cost = 8
+	cost = 4
 
 /datum/gear/accessory/ntaward/New()
 	..()
