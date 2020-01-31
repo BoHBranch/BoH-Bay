@@ -297,13 +297,15 @@
 /mob/living/carbon/human/proc/zombify()
 	ChangeToHusk()
 	mutations |= MUTATION_CLUMSY
-	src.visible_message("<span class='danger'>\The [src]'s skin decays before your very eyes!</span>", "<span class='danger'>Your entire body is ripe with pain as it is consumed down to flesh and bones. You ... hunger. Not only for flesh, but to spread this gift.</span>")
+	src.visible_message("<span class='danger'>\The [src]'s skin decays before your very eyes, yet they appear to be moving!</span>")
+	to_chat(usr, "<span class='danger'>Your entire body is ripe with pain as it is consumed down to flesh and bones. You ... hunger. Not only for flesh, but to spread this gift.</span>")
 	if (src.mind)
 		if (src.mind.special_role == "Zombie")
 			return
 		src.mind.special_role = "Zombie"
 	log_admin("[key_name(src)] has transformed into a zombie!")
 	Weaken(5)
+	seizure()
 	if (should_have_organ(BP_HEART))
 		vessel.add_reagent(/datum/reagent/blood, species.blood_volume - vessel.total_volume)
 	for (var/o in organs)

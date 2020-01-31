@@ -1,6 +1,7 @@
 #include "bearcat_areas.dm"
 #include "bearcat_jobs.dm"
 #include "bearcat_access.dm"
+//#include "bearcat_shuttles.dm"
 
 /obj/effect/submap_landmark/joinable_submap/bearcat
 	name = "FTV Bearcat"
@@ -20,6 +21,9 @@
 	vessel_mass = 60
 	max_speed = 1/(10 SECONDS)
 	burn_delay = 10 SECONDS
+	initial_restricted_waypoints = list(
+		"Glowbulb" = list("nav_glowbulb")
+		)
 
 /obj/effect/overmap/visitable/ship/bearcat/New()
 	name = "[pick("FTV","ITV","IEV")] [pick("Bearcat", "Firebug", "Defiant", "Unsinkable","Horizon","Vagrant")]"
@@ -84,12 +88,9 @@
 	base_turf = /turf/simulated/floor
 
 /obj/machinery/power/apc/derelict
-	cell_type = /obj/item/weapon/cell/crap/empty
-	lighting = 0
-	equipment = 0
-	environ = 0
-	locked = 0
-	coverlocked = 0
+	cell_type = /obj/item/weapon/cell/super
+	emp_hardened = 1
+	req_access = list(access_bearcat)
 
 /obj/machinery/door/airlock/autoname/command
 	door_color = COLOR_COMMAND_BLUE
@@ -97,17 +98,20 @@
 /obj/machinery/door/airlock/autoname/engineering
 	door_color = COLOR_AMBER
 
+/obj/machinery/door/airlock/hatch/autoname/engineering
+	stripe_color = COLOR_AMBER
+
 /turf/simulated/floor/usedup
-	initial_gas = list(GAS_CO2 = MOLES_O2STANDARD, GAS_NITROGEN = MOLES_N2STANDARD)
+//	initial_gas = list(GAS_CO2 = MOLES_O2STANDARD, GAS_NITROGEN = MOLES_N2STANDARD)
 
 /turf/simulated/floor/tiled/usedup
-	initial_gas = list(GAS_CO2 = MOLES_O2STANDARD, GAS_NITROGEN = MOLES_N2STANDARD)
+//	initial_gas = list(GAS_CO2 = MOLES_O2STANDARD, GAS_NITROGEN = MOLES_N2STANDARD)
 
 /turf/simulated/floor/tiled/dark/usedup
-	initial_gas = list(GAS_CO2 = MOLES_O2STANDARD, GAS_NITROGEN = MOLES_N2STANDARD)
+//	initial_gas = list(GAS_CO2 = MOLES_O2STANDARD, GAS_NITROGEN = MOLES_N2STANDARD)
 
 /turf/simulated/floor/tiled/white/usedup
-	initial_gas = list(GAS_CO2 = MOLES_O2STANDARD, GAS_NITROGEN = MOLES_N2STANDARD)
+//	initial_gas = list(GAS_CO2 = MOLES_O2STANDARD, GAS_NITROGEN = MOLES_N2STANDARD)
 
 /obj/effect/landmark/deadcap
 	name = "Dead Captain"
@@ -146,3 +150,35 @@
 			qdel(eyegore)
 	var/obj/item/weapon/cell/super/C = new()
 	H.put_in_any_hand_if_possible(C)
+
+
+//bearcat cabinets
+/obj/structure/closet/secure_closet/guncabinet/bearcat
+	name = "Primary cabinet"
+	req_access = list(access_bearcat_captain)
+
+/obj/structure/closet/secure_closet/guncabinet/bearcat/WillContain()
+	return list(
+		/obj/item/weapon/gun/energy/laser = 4,
+		/obj/item/weapon/storage/belt/holster/general = 4,
+		/obj/item/weapon/gun/energy/gun = 4
+	)
+
+/obj/structure/closet/secure_closet/freezer/money/bearcat
+	name = "secure locker"
+	icon = 'icons/obj/closets/fridge.dmi'
+	closet_appearance = null
+	req_access = list(access_bearcat_captain)
+
+/obj/structure/closet/secure_closet/freezer/money/bearcat/Initialize()
+	. = ..()
+	//let's make hold a substantial amount.
+	var/created_size = 0
+	for(var/i = 1 to 200) //sanity loop limit
+		var/obj/item/cash_type = pick(3; /obj/item/weapon/spacecash/bundle/c1000, 4; /obj/item/weapon/spacecash/bundle/c500, 5; /obj/item/weapon/spacecash/bundle/c200)
+		var/bundle_size = initial(cash_type.w_class) / 2
+		if(created_size + bundle_size <= storage_capacity)
+			created_size += bundle_size
+			new cash_type(src)
+		else
+			break
