@@ -1,6 +1,7 @@
 #include "bearcat_areas.dm"
 #include "bearcat_jobs.dm"
 #include "bearcat_access.dm"
+//#include "bearcat_shuttles.dm"
 
 /obj/effect/submap_landmark/joinable_submap/bearcat
 	name = "FTV Bearcat"
@@ -20,6 +21,9 @@
 	vessel_mass = 60
 	max_speed = 1/(10 SECONDS)
 	burn_delay = 10 SECONDS
+	initial_restricted_waypoints = list(
+		"Glowbulb" = list("nav_glowbulb")
+		)
 
 /obj/effect/overmap/visitable/ship/bearcat/New()
 	name = "[pick("FTV","ITV","IEV")] [pick("Bearcat", "Firebug", "Defiant", "Unsinkable","Horizon","Vagrant")]"
