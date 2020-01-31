@@ -3,18 +3,18 @@
 	total_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/captain
 	supervisors = "your bottom line"
-	info = "Your ship has suffered a catastrophic amount of damage, leaving it dark and crippled in the depths of \
-	unexplored space. The Captain is dead, leaving you, previously the First Mate in charge. Organize what's left of \
-	your crew, and maybe you'll be able to survive long enough to be rescued."
+	info = "Your ship has suffered a freak ion storm blowout, leaving it dark and crippled in the depths of \
+	unexplored space. Most of the crew jumped ship at the first sight of the storm. What good judgement you have for hiring, eh? \
+	Organize what's left of your crew, and continue with your trading efforts."
 
 /datum/job/submap/bearcat_crewman
 	title = "Independant Crewman"
 	supervisors = "the Captain"
-	total_positions = 3
+	total_positions = 6
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/crew
-	info = "Your ship has suffered a catastrophic amount of damage, leaving it dark and crippled in the depths of \
-	unexplored space. Work together with the Acting Captain and what's left of the crew, and maybe you'll be able \
-	to survive long enough to be rescued."
+	info = "Your ship has suffered a freak ion storm blowout, leaving it dark and crippled in the depths of \
+	unexplored space. Most of the crew jumped ship at the first sight of the storm. \
+	Work together with the Captain and what's left of the crew."
 
 #define BEARCAT_OUTFIT_JOB_NAME(job_name) ("Bearcat - Job - " + job_name)
 

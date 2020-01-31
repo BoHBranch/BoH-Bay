@@ -71,7 +71,8 @@
 	ambience = list('sound/ambience/ambigen3.ogg','sound/ambience/ambigen4.ogg','sound/ambience/ambigen5.ogg','sound/ambience/ambigen6.ogg','sound/ambience/ambimo1.ogg','sound/ambience/ambimo2.ogg')
 
 /area/ship/scrap/hidden
-	name = "Unknown" //shielded compartment
+	name = "Emergency Storage"
+	req_access = list(access_bearcat_captain)
 	icon_state = "auxstorage"
 
 /area/ship/scrap/escape_port
