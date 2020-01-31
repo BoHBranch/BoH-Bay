@@ -81,6 +81,20 @@
 	build_path = /obj/item/weapon/stock_parts/circuitboard/cryo_cell
 	sort_string = "FACAF"
 
+/datum/design/circuit/clonecomputer
+	name = "cloning control computer"
+	id = "clooner"
+	req_tech = list(TECH_BIO = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/cloning
+	sort_string = "FACAG"
+
+/datum/design/circuit/clonepod
+	name = "cloning pod"
+	id = "cloonepod"
+	req_tech = list(TECH_BIO = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/clonepod
+	sort_string = "FAGAM"
+
 /datum/design/circuit/crewconsole
 	name = "crew monitoring console"
 	id = "crewconsole"
@@ -794,4 +808,4 @@
 	id = "pc_motherboard"
 	req_tech = list(TECH_POWER = 1, TECH_ENGINEERING = 1)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/modular_computer
-	sort_string = "XAAAD"
+	sort_string = "XAAAE"

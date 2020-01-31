@@ -16,6 +16,7 @@
 	icon_state = "pod_0"
 	req_access = list(access_genetics) // For premature unlocking.
 	base_type = /obj/machinery/clonepod
+	construct_state = /decl/machine_construction/default/panel_closed
 	var/mob/living/occupant
 	var/heal_level = 20			// The clone is released once its health reaches this level.
 	var/heal_rate = 1

@@ -17,7 +17,7 @@
 	cost = 6
 
 /datum/gear/augmentation/implanted_surgical/left
-	display_name = "surgical polytool - left arm(ROBOTIC)"
+	display_name = "surgical polytool - left arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/polytool/surgical/left
 	cost = 4
 	allowed_roles = STERILE_ROLES
@@ -29,24 +29,24 @@
 	allowed_roles = STERILE_ROLES
 
 /datum/gear/augmentation/implanted_toolkit/left
-	display_name = "mechanical polytool - left arm(ROBOTIC)"
+	display_name = "mechanical polytool - left arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/polytool/engineer/left
 	cost = 4
 	allowed_roles = TECHNICAL_ROLES
 
 /datum/gear/augmentation/implanted_toolkit/right
-	display_name = "mechanical polytool - right arm(ROBOTIC)"
+	display_name = "mechanical polytool - right arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/polytool/engineer/right
 	cost = 4
 	allowed_roles = TECHNICAL_ROLES
 
 /datum/gear/augmentation/implanted_ciruitkit/left
-	display_name = "circuit augment (ROBOTIC)"
+	display_name = "circuit augment - left arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/simple/circuit/left
 	cost = 4
 
 /datum/gear/augmentation/implanted_ciruitkit/right
-	display_name = "circuit augment (ROBOTIC)"
+	display_name = "circuit augment - right arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/simple/circuit/right
 	cost = 4
 

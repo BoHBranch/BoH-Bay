@@ -66,6 +66,7 @@
 	name = "chief of security's locker"
 	req_access = list(access_hos)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/hos
+	storage_capacity = 45
 
 /obj/structure/closet/secure_closet/cos/WillContain()
 	return list(

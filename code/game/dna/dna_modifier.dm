@@ -50,6 +50,7 @@
 	idle_power_usage = 50
 	active_power_usage = 300
 	interact_offline = 1
+	construct_state = /decl/machine_construction/default/panel_closed
 	var/locked = 0
 	var/mob/living/carbon/occupant = null
 	var/obj/item/weapon/reagent_containers/glass/beaker = null
@@ -62,8 +63,6 @@
 	component_parts += new /obj/item/weapon/stock_parts/manipulator(src)
 	component_parts += new /obj/item/weapon/stock_parts/micro_laser(src)
 	component_parts += new /obj/item/weapon/stock_parts/console_screen(src)
-	component_parts += new /obj/item/stack/cable_coil(src)
-	component_parts += new /obj/item/stack/cable_coil(src)
 	RefreshParts()
 
 /obj/machinery/dna_scannernew/relaymove(mob/user as mob)

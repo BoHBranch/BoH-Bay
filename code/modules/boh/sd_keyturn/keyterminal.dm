@@ -16,6 +16,7 @@
 	var/recieved_signal = FALSE
 
 /obj/machinery/sd_keyterminal/Initialize() //Whichever terminal initializes first is the 'master', anything else is the 'slave'. The keyturn must be initiated from the 'master'.
+	. = ..()
 	update_stage(TRUE)
 	if(!slave)
 		for(var/obj/machinery/sd_keyterminal/SDK in world)

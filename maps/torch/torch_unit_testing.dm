@@ -20,10 +20,10 @@
 		/area/maintenance/auxsolarport = NO_SCRUBBER,
 		/area/maintenance/auxsolarstarboard = NO_SCRUBBER,
 		/area/maintenance/exterior = NO_SCRUBBER|NO_VENT|NO_APC,
-		/area/maintenance/firstdeck/foreport = NO_SCRUBBER,
+		/area/maintenance/firstdeck/foreport = NO_SCRUBBER|NO_VENT,
 		/area/maintenance/firstdeck/forestarboard = NO_SCRUBBER,
 		/area/maintenance/incinerator = NO_SCRUBBER,
-		/area/maintenance/seconddeck/aftport = NO_SCRUBBER|NO_VENT,
+		/area/maintenance/seconddeck/aftport = 0,
 		/area/maintenance/seconddeck/forestarboard = NO_SCRUBBER,
 		/area/maintenance/thirddeck/aftstarboard = NO_SCRUBBER|NO_VENT,
 		/area/maintenance/fifthdeck/aftstarboard = NO_SCRUBBER,
@@ -49,8 +49,7 @@
 		/area/supply = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/thruster = NO_SCRUBBER,
 		/area/turbolift = NO_SCRUBBER|NO_VENT|NO_APC,
-		/area/turret_protected/ai = NO_SCRUBBER|NO_VENT,
-		/area/turret_protected/ai_outer_chamber = NO_SCRUBBER|NO_VENT,
+		/area/turret_protected/ai_foyer = NO_SCRUBBER|NO_VENT,
 		/area/vacant/bar = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/vacant = NO_SCRUBBER|NO_VENT|NO_APC,
 //		/area/vacant/brig = NO_SCRUBBER|NO_VENT,
@@ -60,6 +59,8 @@
 		/area/vacant/infirmary = NO_SCRUBBER|NO_VENT,
 		/area/vacant/monitoring = NO_SCRUBBER|NO_VENT,
 		/area/vacant/mess = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/security/infantry = NO_APC,
+		/area/command/gunnery = NO_SCRUBBER|NO_VENT
 	)
 
 	area_coherency_test_exempt_areas = list(
@@ -98,10 +99,6 @@
 datum/unit_test/zas_area_test/supply_centcomm
 	name = "ZAS: Supply Shuttle (CentComm)"
 	area_path = /area/supply/dock
-
-datum/unit_test/zas_area_test/virology
-	name = "ZAS: Virology"
-	area_path = /area/medical/virology
 
 datum/unit_test/zas_area_test/xenobio
 	name = "ZAS: Xenobiology"
