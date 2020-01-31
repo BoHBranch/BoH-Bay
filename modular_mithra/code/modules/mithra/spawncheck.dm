@@ -38,8 +38,7 @@
 
 	//Final popup notice
 	if (!pass)
-		spawn()
-			alert(src,"There were problems with spawning your character. Check your message log for details.","Error","OK")
+		INVOKE_ASYNC(GLOBAL_PROC, alert, src,"There were problems with spawning your character. Check your message log for details.","Error","OK")
 	return pass
 
 /proc/attempt_vr(callon, procname, list/args=null)	//No clue what this actually does, but it's needed
