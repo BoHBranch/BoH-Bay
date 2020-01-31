@@ -397,7 +397,7 @@ var/datum/gear_tweak/custom_desc/gear_tweak_free_desc = new()
 /datum/gear_tweak/custom_desc/get_metadata(var/user, var/metadata)
 	if(valid_custom_desc)
 		return input(user, "Choose an item description.", "Character Preference", metadata) as null|anything in valid_custom_desc
-	return sanitize(input(user, "Choose the item's description. Leave it blank to use the default description. Avoid including anything related to backstory.", "Item Description", metadata) as message|null, extra = 0)
+	return sanitize(input(user, "Choose the item's description. Leave it blank to use the default description. Describe the item and only the item, avoid anything related to backstory that can't be figured out from it.", "Item Description", metadata) as message|null, extra = 0)
 
 /datum/gear_tweak/custom_desc/tweak_item(var/obj/item/I, var/metadata)
 	if(!metadata)
