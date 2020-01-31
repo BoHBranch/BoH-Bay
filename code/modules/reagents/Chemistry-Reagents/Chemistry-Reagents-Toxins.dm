@@ -883,8 +883,7 @@
 			H.zombify()
 		else if (true_dose > 1 && prob(20))
 			H.zombify()
-		else if (prob(10))
-			to_chat(H, "<span class='warning'>You feel terribly ill!</span>")
+			to_chat(H, "<span class='warning'>You feel as if you're going to di-... Oh...</span>")
 
 /datum/reagent/toxin/bromide
 	name = "Bromide"
