@@ -20,21 +20,21 @@
 		)
 
 	initial_modules = list(
-	/obj/item/rig_module/self_destruct,	//so this shit can't be stolen
-	/obj/item/rig_module/ai_container,
-	/obj/item/rig_module/maneuvering_jets,
-	/obj/item/rig_module/grenade_launcher/combat,
-	/obj/item/rig_module/mounted/lcannon,
-	/obj/item/rig_module/mounted/energy_blade,
-	/obj/item/rig_module/vision/multi,
-	/obj/item/rig_module/chem_dispenser/deathsquad,
-	/obj/item/rig_module/device/rcd,
-	/obj/item/rig_module/datajack,
-	/obj/item/rig_module/power_sink,
-	/obj/item/rig_module/cooling_unit,
-	/obj/item/rig_module/teleporter,
-	/obj/item/rig_module/electrowarfare_suite,
-	/obj/item/rig_module/maneuvering_jets
+		/obj/item/rig_module/self_destruct,	//so this shit can't be stolen
+		/obj/item/rig_module/ai_container,
+		/obj/item/rig_module/maneuvering_jets,
+		/obj/item/rig_module/grenade_launcher/combat,
+		/obj/item/rig_module/mounted/lcannon,
+		/obj/item/rig_module/mounted/energy_blade,
+		/obj/item/rig_module/vision/multi,
+		/obj/item/rig_module/chem_dispenser/deathsquad,
+		/obj/item/rig_module/device/rcd,
+		/obj/item/rig_module/datajack,
+		/obj/item/rig_module/power_sink,
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/teleporter,
+		/obj/item/rig_module/electrowarfare_suite,
+		/obj/item/rig_module/maneuvering_jets
 	)
 
 
