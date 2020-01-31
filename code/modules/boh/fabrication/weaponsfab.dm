@@ -149,7 +149,8 @@
 		if(stack && stack.can_use(1))
 			var/count = 0
 			overlays += "fab-load-metal"
-			addtimer(CALLBACK(overlays, Remove, "fab-load-metal"), 1 SECOND)
+			spawn(1 SECOND)
+				overlays -= "fab-load-metal"
 			while(materials[material] + amnt <= res_max_amount && stack.amount >= 1)
 				materials[material] += amnt
 				stack.use(1)
