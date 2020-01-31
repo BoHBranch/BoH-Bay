@@ -16,8 +16,6 @@ matrix:
       env: TEST=CODE
     - name: "Map - Torch"
       env: TEST=MAP MAP_PATH=torch
-    - name: "Map - Away Sites"
-      env: TEST=MAP MAP_PATH=away_sites_testing
 
 cache:
   directories:

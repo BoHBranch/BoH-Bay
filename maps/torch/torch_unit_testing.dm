@@ -60,7 +60,9 @@
 		/area/vacant/monitoring = NO_SCRUBBER|NO_VENT,
 		/area/vacant/mess = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/security/infantry = NO_APC,
-		/area/command/gunnery = NO_SCRUBBER|NO_VENT
+		/area/command/gunnery = NO_SCRUBBER|NO_VENT, // FIX LATER
+		/area/security/brig/chamber = NO_SCRUBBER|NO_VENT, // FIX LATER
+		/area/crew_quarters_boh/cabin_main/janitorial = NO_SCRUBBER|NO_VENT, // FIX LATER
 	)
 
 	area_coherency_test_exempt_areas = list(

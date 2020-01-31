@@ -6281,7 +6281,6 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/structure/wall_frame/standard,
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor/autoset,
 /turf/simulated/floor/plating,
@@ -6665,7 +6664,6 @@
 /turf/simulated/floor/reinforced/airless,
 /area/space)
 "mw" = (
-/obj/structure/wall_frame/standard,
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor/autoset,
 /obj/structure/cable/green{
@@ -6697,7 +6695,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/holocontrol)
 "mz" = (
-/obj/structure/wall_frame/standard,
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor/autoset,
 /obj/structure/cable/green{
