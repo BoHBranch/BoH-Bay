@@ -30,6 +30,15 @@
 		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
 		)
 
+//sec proper
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b
+	desc = "The Hephaestus Industries Z9b Bulldog is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use. \
+	Because of the limited fire-rate, and how the mechanism functions, it has a much higher jam rate."
+	jam_chance = 35
+	firemodes = list(
+		list(mode_name="semi auto",       burst=1,    fire_delay=null,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
+		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
+		)
 //loaded
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/loaded
 	starts_loaded = 1
@@ -152,7 +161,7 @@
 	max_shells = 8
 	ammo_type = /obj/item/ammo_casing/sabot
 	caliber = CALIBER_SABOT
-	req_access = list(access_infantry)
+	req_access = list(access_brig) //changed temp
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
