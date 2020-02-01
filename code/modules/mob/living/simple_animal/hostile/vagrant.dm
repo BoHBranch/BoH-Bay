@@ -46,6 +46,12 @@
 		turns_per_move = 3
 		MoveToTarget()
 
+/mob/living/simple_animal/hostile/vagrant/death()
+	..(null, "explodes in a shower of gore!")
+	new /obj/effect/gibspawner/generic(src.loc)
+	qdel(src)
+	return
+
 /mob/living/simple_animal/hostile/vagrant/death(gibbed)
 	. = ..()
 	if(. && !gibbed)
