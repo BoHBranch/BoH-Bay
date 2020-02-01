@@ -16,6 +16,7 @@
 	if(alien != IS_DIONA)
 		M.add_chemical_effect(CE_STABLE)
 		M.add_chemical_effect(CE_PAINKILLER, 10)
+		M.add_chemical_effect(CE_BLOODRESTORE, 1)
 
 /datum/reagent/inaprovaline/overdose(var/mob/living/carbon/M, var/alien)
 	M.add_chemical_effect(CE_SLOWDOWN, 1)

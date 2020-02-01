@@ -164,9 +164,10 @@
 //projectile
 /obj/item/projectile/bullet/sabot
 	name = "sabot"
+	icon_state= "rod"
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 	damage = 45
-	armor_penetration = 85
+	armor_penetration = 95
 	damage_flags = DAM_EDGE
 
 //holder

@@ -30,3 +30,10 @@
 	allowed_branches = NT_BRANCHES
 	whitelisted = list(SPECIES_SKRELL, SPECIES_UNATHI, SPECIES_IPC)
 	sort_category = "Xenowear"
+
+/datum/gear/accessory/nabber_gloves
+	display_name = "GAS Insuls"
+	path = /obj/item/clothing/gloves/nabber
+	description = "A set of insulated gloves meant for GAS."
+	whitelisted = list(SPECIES_NABBER)
+	sort_category = "Xenowear"

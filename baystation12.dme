@@ -1452,6 +1452,8 @@
 #include "code\modules\boh\infantry\vending.dm"
 #include "code\modules\boh\makeshift_weapons\improv_rifle.dm"
 #include "code\modules\boh\makeshift_weapons\manual_cycle.dm"
+#include "code\modules\boh\nullglass\implant.dm"
+#include "code\modules\boh\nullglass\weapons.dm"
 #include "code\modules\boh\offsite\effects.dm"
 #include "code\modules\boh\offsite\syndi.dm"
 #include "code\modules\boh\organs\disintegratable.dm"
