@@ -64,7 +64,7 @@
 	dress_hat_alt = /obj/item/clothing/head/solgov/dress/fleet
 	dress_gloves = /obj/item/clothing/gloves/white
 
-	dress_extra = list(/obj/item/clothing/accessory/solgov/ec_scarf, /obj/item/clothing/suit/cloak/dress)
+	dress_extra = list(/obj/item/clothing/accessory/solgov/ec_scarf, /obj/item/clothing/accessory/cloak/boh/dress)
 	dress_extra_alt = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/com //Can only be officers
@@ -96,10 +96,10 @@
 	dress_skirt = /obj/item/clothing/under/solgov/service/expeditionary/command/skirt/command
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/expedition/command
 	dress_hat = /obj/item/clothing/head/solgov/service/expedition/command
-	dress_extra = list(/obj/item/clothing/accessory/solgov/ec_scarf, /obj/item/clothing/suit/cloak/dress/command)
+	dress_extra = list(/obj/item/clothing/accessory/solgov/ec_scarf, /obj/item/clothing/accessory/cloak/boh/dress/command)
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	dress_hat_alt = /obj/item/clothing/head/solgov/dress/fleet/command
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/suit/cloak/command, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/command, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/com/seniorofficer
 	name = "NTEF senior command"
@@ -160,7 +160,7 @@
 
 	dress_under = /obj/item/clothing/under/solgov/service/expeditionary/engineering
 	dress_skirt = /obj/item/clothing/under/solgov/service/expeditionary/skirt/engineering
-	dress_extra_alt = list(/obj/item/clothing/suit/cloak/engineering, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/clothing/accessory/cloak/boh/engineering, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/eng/noncom
 	name = "NTEF engineering NCO"
@@ -183,7 +183,7 @@
 	service_over_alt = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/suit/cloak/engineering, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/engineering, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/eng/officer
 	name = "NTEF engineering CO"
@@ -215,7 +215,7 @@
 	dress_hat = /obj/item/clothing/head/solgov/service/expedition/command
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	dress_hat_alt = /obj/item/clothing/head/solgov/dress/fleet/command
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/suit/cloak/engineering, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/engineering, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/eng/officer/com //Can only be officers
 	name = "NTEF engineering command"
@@ -258,7 +258,7 @@
 						 /obj/item/clothing/gloves/thick/duty/solgov/sec,
 						 /obj/item/clothing/under/solgov/utility/fleet/security)
 	utility_under_alt = /obj/item/clothing/under/solgov/utility/fleet/combat/security
-	dress_extra_alt = list(/obj/item/clothing/suit/cloak/security, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/clothing/accessory/cloak/boh/security, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/sec/noncom
 	name = "NTEF security NCO"
@@ -281,7 +281,7 @@
 	service_over_alt = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/suit/cloak/security, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/security, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/sec/officer
 	name = "NTEF security CO"
@@ -313,7 +313,7 @@
 	dress_hat = /obj/item/clothing/head/solgov/service/expedition/command
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	dress_hat_alt = /obj/item/clothing/head/solgov/dress/fleet/command
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/suit/cloak/security, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/security, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/sec/officer/com //Can only be officers
 	name = "NTEF security command"
@@ -357,7 +357,7 @@
 	dress_skirt = /obj/item/clothing/under/solgov/service/expeditionary/skirt/medical
 
 	utility_under_alt = /obj/item/clothing/under/solgov/utility/fleet/medical
-	dress_extra_alt = list(/obj/item/clothing/suit/cloak/medical, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/clothing/accessory/cloak/boh/medical, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/med/noncom
 	name = "NTEF medical NCO"
@@ -380,7 +380,7 @@
 	service_over_alt = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/suit/cloak/medical, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/medical, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/med/officer
 	name = "NTEF medical CO"
@@ -412,7 +412,7 @@
 	dress_hat = /obj/item/clothing/head/solgov/service/expedition/command
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	dress_hat_alt = /obj/item/clothing/head/solgov/dress/fleet/command
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/suit/cloak/medical, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/medical, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/med/officer/com //Can only be officers
 	name = "NTEF medical command"
@@ -454,7 +454,7 @@
 
 	dress_under = /obj/item/clothing/under/solgov/service/expeditionary/supply
 	dress_skirt = /obj/item/clothing/under/solgov/service/expeditionary/skirt/supply
-	dress_extra_alt = list(/obj/item/clothing/suit/cloak/supply, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/clothing/accessory/cloak/boh/supply, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/sup/noncom
 	name = "NTEF supply NCO"
@@ -477,7 +477,7 @@
 	service_over_alt = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/suit/cloak/supply, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/supply, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/sup/officer
 	name = "NTEF supply CO"
@@ -508,7 +508,7 @@
 	dress_hat = /obj/item/clothing/head/solgov/service/expedition/command
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	dress_hat_alt = /obj/item/clothing/head/solgov/dress/fleet/command
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/suit/cloak/supply, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/supply, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/sup/seniorofficer
 	name = "NTEF supply senior command"
@@ -522,7 +522,7 @@
 
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 	dress_hat_alt = /obj/item/clothing/head/solgov/dress/fleet/command
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/suit/cloak/supply, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/supply, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/sup/flagofficer
 	name = "NTEF supply flag command"
@@ -536,7 +536,7 @@
 
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 	dress_hat_alt = /obj/item/clothing/head/solgov/dress/fleet/command
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/suit/cloak/supply, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/supply, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/srv
 	name = "NTEF service"
@@ -560,7 +560,7 @@
 
 	dress_under = /obj/item/clothing/under/solgov/service/expeditionary/service
 	dress_skirt = /obj/item/clothing/under/solgov/service/expeditionary/skirt/service
-	dress_extra_alt = list(/obj/item/clothing/suit/cloak/service, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/clothing/accessory/cloak/boh/service, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/srv/noncom
 	name = "NTEF service NCO"
@@ -583,7 +583,7 @@
 	service_over_alt = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/suit/cloak/service, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/service, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/srv/officer
 	name = "NTEF service CO"
@@ -615,7 +615,7 @@
 	dress_hat = /obj/item/clothing/head/solgov/service/expedition/command
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	dress_hat_alt = /obj/item/clothing/head/solgov/dress/fleet/command
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/suit/cloak/service, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/service, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/exp
 	name = "NTEF exploration"
@@ -640,7 +640,7 @@
 
 	dress_under = /obj/item/clothing/under/solgov/service/expeditionary/exploration
 	dress_skirt = /obj/item/clothing/under/solgov/service/expeditionary/skirt/exploration
-	dress_extra_alt = list(/obj/item/clothing/suit/cloak/explorer, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/clothing/accessory/cloak/boh/explorer, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/exp/noncom
 	name = "NTEF exploration NCO"
@@ -663,7 +663,7 @@
 	service_over_alt = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/suit/cloak/explorer, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/explorer, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/exp/officer
 	name = "NTEF exploration CO"
@@ -695,7 +695,7 @@
 	dress_hat = /obj/item/clothing/head/solgov/service/expedition/command
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	dress_hat_alt = /obj/item/clothing/head/solgov/dress/fleet/command
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/suit/cloak/explorer, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/explorer, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/spt
 	name = "NTEF command support"
@@ -716,7 +716,7 @@
 	dress_skirt = /obj/item/clothing/under/solgov/service/expeditionary/skirt/command
 
 	utility_under_alt = /obj/item/clothing/under/solgov/utility/fleet/command
-	dress_extra_alt = list(/obj/item/clothing/suit/cloak/command/support, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/clothing/accessory/cloak/boh/command/support, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/spt/noncom
 	name = "NTEF support NCO"
@@ -739,7 +739,7 @@
 	service_over_alt = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/suit/cloak/command/support, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/command/support, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/spt/officer
 	name = "NTEF command support CO"
@@ -761,7 +761,7 @@
 	dress_hat = /obj/item/clothing/head/solgov/service/expedition/command
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	dress_hat_alt = /obj/item/clothing/head/solgov/dress/fleet/command
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/suit/cloak/command/support, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/command/support, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/spt/seniorofficer
 	name = "NTEF senior command support"
@@ -779,7 +779,7 @@
 
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 	dress_hat_alt = /obj/item/clothing/head/solgov/dress/fleet/command
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/suit/cloak/command/support, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/command/support, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/spt/flagofficer
 	name = "NTEF flag command support"
@@ -797,7 +797,7 @@
 
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 	dress_hat_alt = /obj/item/clothing/head/solgov/dress/fleet/command
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/suit/cloak/command/support, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/command/support, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/sci
 	name = "NTEF science"
@@ -814,7 +814,7 @@
 
 	dress_under = /obj/item/clothing/under/solgov/service/expeditionary/research
 	dress_skirt = /obj/item/clothing/under/solgov/service/expeditionary/skirt/research
-	dress_extra_alt = list(/obj/item/clothing/suit/cloak/explorer, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/clothing/accessory/cloak/boh/explorer/science, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/sci/senior
 	name = "NTEF science senior"
@@ -837,7 +837,7 @@
 	service_over_alt = /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/suit/cloak/explorer, /obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword/pettyofficer, /obj/item/clothing/accessory/cloak/boh/explorer/science, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/sci/officer
 	name = "NTEF science CO"
@@ -858,7 +858,7 @@
 	dress_skirt = /obj/item/clothing/under/solgov/service/expeditionary/command/skirt/research
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/expedition/command
 	dress_hat = /obj/item/clothing/head/solgov/service/expedition/command
-	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/suit/cloak/explorer, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
+	dress_extra_alt = list(/obj/item/weapon/material/sword/replica/officersword, /obj/item/clothing/accessory/cloak/boh/explorer/science, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/sci/officer/com //Can only be officers
 	name = "NTEF science command"
