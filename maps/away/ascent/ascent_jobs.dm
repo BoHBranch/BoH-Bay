@@ -14,8 +14,8 @@
 		/datum/job/submap/ascent/alate,
 		/datum/job/submap/ascent/drone,
 		//datum/job/submap/ascent/control_mind,
-		//datum/job/submap/ascent/msq,
-		//datum/job/submap/ascent/msw,
+		/datum/job/submap/ascent/msq,
+		/datum/job/submap/ascent/msw,
 	)
 	call_webhook = WEBHOOK_SUBMAP_LOADED_ASCENT
 
@@ -81,7 +81,8 @@
 	title = "Ascent Gyne"
 	total_positions = 1
 	supervisors = "nobody but yourself"
-	info = "You are the Gyne of an independent Ascent vessel. Your hunting has brought you to this remote sector full of crawling primitives. Impose your will, found a new nest, and bring prosperity to your lineage."
+	info = "You are the Gyne of an independent Ascent vessel. Your hunting has brought you to this remote sector full of crawling primitives. Impose your will, found a new nest, and bring prosperity to your lineage. \
+	To come into contact with the unknown, even for a mighty Gyne such as yourself, would put your nest-lineage at risk."
 	outfit_type = /decl/hierarchy/outfit/job/ascent
 	blacklisted_species = null
 	whitelisted_species = null
@@ -168,14 +169,14 @@
 	set_species_on_join = /mob/living/silicon/robot/flying/ascent
 	requires_supervisor = "Ascent Gyne"
 
-/*
+
 /datum/job/submap/ascent/msw
 	title = "Serpentid Adjunct"
 	supervisors = "your Queen"
-	total_positions = 3
+	total_positions = 2
 	info = "You are a Monarch Serpentid Worker serving as an attendant to your Queen on this vessel. Serve her however she requires."
 	set_species_on_join = SPECIES_MONARCH_WORKER
-	outfit_type = /decl/hierarchy/outfit/job/ascent/soldier
+	outfit_type = /decl/hierarchy/outfit/job/monarch
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_HAULING = SKILL_ADEPT,
 					SKILL_COMBAT = SKILL_ADEPT,
@@ -185,16 +186,17 @@
 
 /datum/job/submap/ascent/msq
 	title = "Serpentid Queen"
-	supervisors = "your fellow Queens and the Gyne"
-	total_positions = 2
+	supervisors = "the Gyne"
+	total_positions = 1
 	info = "You are a Monarch Serpentid Queen living on an independant Ascent vessel. Assist the Gyne in her duties and tend to your Workers."
 	set_species_on_join = SPECIES_MONARCH_QUEEN
+	outfit_type = /decl/hierarchy/outfit/job/monarch
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_HAULING = SKILL_ADEPT,
 					SKILL_COMBAT = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_BASIC)
-*/
+
 
 // Spawn points.
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship
