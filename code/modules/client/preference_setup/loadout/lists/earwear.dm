@@ -14,6 +14,7 @@
 	display_name = "earrings"
 	path = /obj/item/clothing/ears/earring
 	sort_category = "Earwear"
+	flags = GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/earrings/New()
 	..()

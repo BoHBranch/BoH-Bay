@@ -48,3 +48,9 @@
 
 /obj/item/clothing/under/solgov/utility/army/tan/exploration
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/exploration/army)
+
+// Modular: PCRC Agent Unathi-wise sprite
+/obj/item/clothing/under/pcrcsuit
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		)

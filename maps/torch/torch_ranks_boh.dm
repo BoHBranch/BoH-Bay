@@ -1,6 +1,6 @@
 // Branch-specific defines
 #define UNRESTRICTED /datum/mil_branch/civilian, /datum/mil_branch/fleet
-#define SEMIRESTRICTED /datum/mil_branch/marine_corps
+#define SEMIRESTRICTED /datum/mil_branch/marine_corps, /datum/mil_branch/private_security
 
 // Rank-specific defines
 #define SMC_TROOPERS_ONLY /datum/mil_branch/marine_corps = list(/datum/mil_rank/marine_corps/e1, /datum/mil_rank/marine_corps/e2, /datum/mil_rank/marine_corps/e3)
@@ -63,8 +63,8 @@
 		/datum/species/skrell		= list(UNRESTRICTED, /datum/mil_branch/skrell_fleet),
 		/datum/species/unathi		= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/adherent		= list(UNRESTRICTED),
-		/datum/species/sergal		= list(UNRESTRICTED),
-		/datum/species/akula		= list(UNRESTRICTED),
+		/datum/species/sergal		= list(UNRESTRICTED, /datum/mil_branch/private_security),
+		/datum/species/akula		= list(UNRESTRICTED, /datum/mil_branch/private_security),
 		/datum/species/custom		= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/humanathi	= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/tajaran		= list(UNRESTRICTED, SEMIRESTRICTED),
