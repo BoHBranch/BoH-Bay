@@ -14,8 +14,8 @@
 		/datum/job/submap/ascent/alate,
 		/datum/job/submap/ascent/drone,
 		//datum/job/submap/ascent/control_mind,
-		/datum/job/submap/ascent/msq,
-		/datum/job/submap/ascent/msw,
+		//datum/job/submap/ascent/msq,
+		//datum/job/submap/ascent/msw,
 	)
 	call_webhook = WEBHOOK_SUBMAP_LOADED_ASCENT
 
@@ -149,7 +149,7 @@
 
 /datum/job/submap/ascent/alate
 	title = "Ascent Alate"
-	total_positions = 4
+	total_positions = 8
 	supervisors = "the Gyne"
 	info = "You are an Alate of an independent Ascent vessel. Your Gyne has directed you to this remote sector full of crawling primitives. Follow her instructions and bring prosperity to your nest-lineage."
 	set_species_on_join = SPECIES_MANTID_ALATE
@@ -169,7 +169,7 @@
 	set_species_on_join = /mob/living/silicon/robot/flying/ascent
 	requires_supervisor = "Ascent Gyne"
 
-
+/*
 /datum/job/submap/ascent/msw
 	title = "Serpentid Adjunct"
 	supervisors = "your Queen"
@@ -196,7 +196,7 @@
 					SKILL_COMBAT = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_BASIC)
-
+*/
 
 // Spawn points.
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship
