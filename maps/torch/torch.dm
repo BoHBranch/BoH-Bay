@@ -176,7 +176,6 @@
 	#include "../away/unishi/unishi.dm"
 	#include "../away/voxship/voxship.dm"
 	#include "../away/skrellscoutship/skrellscoutship.dm"
-	#include "../away/iccg_shipyard/iccg_shipyard.dm"
 
 	#include "../../code/datums/music_tracks/chasing_time.dm"
 
