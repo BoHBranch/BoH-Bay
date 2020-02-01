@@ -38,6 +38,15 @@
 /obj/item/clothing/accessory/badge/solgov/tags/marine
 	badge_string = "SMC"
 
+// custom ribbon for loadout
+/obj/item/clothing/accessory/ribbon/solgov/custom
+	icon_state = "ribbon_custom"
+	icon = 'maps/torch/icons/obj/obj_accessories_boh.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi')
+
+/obj/item/clothing/accessory/ribbon/solgov/custom/color
+	icon_state = "ribbon_custom_color"
+
 // ranks and spec pin - expeditionary fleet
 /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer
 	name = "explorer qualification pin"
