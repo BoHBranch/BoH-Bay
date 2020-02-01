@@ -40,12 +40,12 @@
 	cost = 4
 	allowed_roles = TECHNICAL_ROLES
 
-/datum/gear/augmentation/implanted_ciruitkit/left
+/datum/gear/augmentation/implanted_circuitkit/left
 	display_name = "circuit augment - left arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/simple/circuit/left
 	cost = 4
 
-/datum/gear/augmentation/implanted_ciruitkit/right
+/datum/gear/augmentation/implanted_circuitkit/right
 	display_name = "circuit augment - right arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/simple/circuit/right
 	cost = 4

@@ -60,10 +60,12 @@
 		/area/vacant/monitoring = NO_SCRUBBER|NO_VENT,
 		/area/vacant/mess = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/security/infantry = NO_APC,
-		/area/command/gunnery = NO_SCRUBBER|NO_VENT, // FIX LATER
-		/area/security/brig/chamber = NO_SCRUBBER|NO_VENT, // FIX LATER
-		/area/crew_quarters_boh/cabin_main/janitorial = NO_SCRUBBER|NO_VENT, // FIX LATER
-	)
+		/area/command/gunnery = NO_SCRUBBER|NO_VENT,
+		/area/command/gunnery/ob/airlock = NO_VENT,
+		/area/command/gunnery/mim = 0,
+		/area/security/brig/chamber = NO_SCRUBBER|NO_VENT,
+		/area/crew_quarters_boh/cabin_main/janitorial = NO_SCRUBBER|NO_VENT,
+	) // FIX THESE LAST 3 LATER
 
 	area_coherency_test_exempt_areas = list(
 		/area/aquila/airlock,

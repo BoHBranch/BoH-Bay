@@ -8688,7 +8688,7 @@
 	},
 /obj/machinery/door/airlock/security{
 	name = "KOSMAG Exterior";
-	req_access = list("ACCESS_SECURITY")
+	req_access = null
 	},
 /obj/machinery/door/firedoor/autoset,
 /turf/simulated/floor/plating,

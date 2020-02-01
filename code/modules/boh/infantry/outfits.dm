@@ -11,7 +11,7 @@
 	pda_type = /obj/item/modular_computer/pda/engineering
 	l_ear = /obj/item/device/radio/headset/inftech
 
-/decl/hierarchy/outfit/job/torch/infantry
+/decl/hierarchy/outfit/job/torch/crew/infantry
 	name = OUTFIT_JOB_NAME("Infantry Marine")
 	uniform = /obj/item/clothing/under/solgov/utility/army/exploration
 	shoes = /obj/item/clothing/shoes/dutyboots

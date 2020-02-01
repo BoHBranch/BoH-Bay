@@ -10962,7 +10962,7 @@
 /obj/item/weapon/gun/launcher/crossbow/rapidcrossbowdevice,
 /obj/item/weapon/reagent_containers/food/snacks/meat/syntiflesh,
 /obj/item/weapon/reagent_containers/food/snacks/mysterysoup,
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/tiled/monotile,
 /area/shuttle/petrov/custodial)
 "sP" = (
 /obj/structure/filingcabinet/chestdrawer,
@@ -11477,7 +11477,7 @@
 	level = 2
 	},
 /obj/item/weapon/reagent_containers/food/snacks/liquidfood,
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/tiled/monotile,
 /area/shuttle/petrov/custodial)
 "tN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -12406,6 +12406,25 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"wJ" = (
+/obj/effect/floor_decal/industrial/loading{
+	icon_state = "loadingarea";
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/warning/corner{
+	icon_state = "warningcorner";
+	dir = 2
+	},
+/obj/structure/disposalpipe/segment/bent{
+	icon_state = "pipe-c";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/shuttle/petrov/custodial)
 "wL" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -12647,6 +12666,13 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/shuttle/petrov/maint)
+"xV" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/petrov/equipment)
 "xX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -13210,6 +13236,9 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/equipment)
 "Al" = (
@@ -13409,6 +13438,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/rnd)
+"Bd" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/white,
+/area/shuttle/petrov/equipment)
 "Be" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -13779,9 +13812,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/disposalpipe/junction{
-	icon_state = "pipe-j2";
-	dir = 4
+/obj/structure/disposalpipe/segment/bent{
+	icon_state = "pipe-c";
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/hallwaya)
@@ -14148,6 +14181,11 @@
 /obj/effect/paint/red,
 /turf/simulated/wall/titanium,
 /area/shuttle/petrov/custodial)
+"DW" = (
+/obj/structure/mopbucket,
+/obj/item/weapon/mop,
+/turf/simulated/floor/tiled/monotile,
+/area/shuttle/petrov/custodial)
 "DX" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -14220,6 +14258,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/equipment)
 "Ep" = (
@@ -14661,6 +14700,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/eva)
 "GG" = (
@@ -15053,6 +15095,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/equipment)
 "Ia" = (
@@ -15112,6 +15157,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/eva)
 "Io" = (
@@ -15140,6 +15188,9 @@
 /area/quartermaster/expedition/eva)
 "Iv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
@@ -15374,11 +15425,20 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/equipment)
 "JA" = (
-/obj/structure/closet/crate/secure/biohazard,
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/machinery/door/window/northright,
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 1
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/monotile,
 /area/shuttle/petrov/custodial)
 "JB" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/blue{
@@ -15432,8 +15492,6 @@
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/isolation)
 "JK" = (
-/obj/structure/mopbucket,
-/obj/item/weapon/mop,
 /obj/structure/cable/cyan{
 	d2 = 8;
 	icon_state = "0-8"
@@ -15443,7 +15501,11 @@
 	name = "east bump";
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/structure/disposalpipe/segment/bent{
+	icon_state = "pipe-c";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/monotile,
 /area/shuttle/petrov/custodial)
 "JL" = (
 /obj/structure/cable/green{
@@ -15575,7 +15637,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/monotile,
 /area/shuttle/petrov/custodial)
 "Ko" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -16068,6 +16133,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/eva)
 "Mm" = (
@@ -16372,6 +16440,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/eva)
 "NC" = (
@@ -16385,6 +16456,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/eva)
@@ -16492,6 +16566,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/custodial)
 "Og" = (
@@ -16564,6 +16641,12 @@
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/storage)
+"Oz" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/shuttle/petrov/equipment)
 "OD" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
@@ -17466,9 +17549,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/hallwaya)
 "SU" = (
@@ -17510,9 +17590,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/disposalpipe/segment{
-	dir = 2;
-	icon_state = "pipe-c"
+/obj/structure/disposalpipe/junction/mirrored{
+	icon_state = "pipe-j2";
+	dir = 1
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/equipment)
@@ -17712,9 +17792,6 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/hallwaya)
@@ -18380,6 +18457,10 @@
 	dir = 4;
 	level = 2
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/equipment)
 "Xt" = (
@@ -18506,7 +18587,22 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"XV" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/effect/floor_decal/industrial/warning/cee{
+	icon_state = "stripecee";
+	dir = 4
+	},
+/obj/structure/disposaloutlet{
+	dir = 8
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/shuttle/petrov/custodial)
 "XW" = (
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/equipment)
 "Yb" = (
@@ -47598,8 +47694,8 @@ aa
 DX
 oP
 UF
-Fd
-Fd
+xV
+Bd
 XW
 Xs
 Fd
@@ -47800,7 +47896,7 @@ aa
 DX
 oP
 Bx
-Fd
+Oz
 Zx
 xs
 Iv
@@ -49817,11 +49913,11 @@ aa
 aa
 aa
 aa
-aa
 DQ
+wJ
 JA
 JK
-JA
+DW
 CS
 rV
 su
@@ -49838,8 +49934,8 @@ sy
 sy
 sy
 sy
+sy
 fF
-aa
 aa
 aa
 aa
@@ -50019,8 +50115,8 @@ aa
 aa
 aa
 aa
-aa
 DQ
+XV
 DQ
 DQ
 DQ
@@ -50041,7 +50137,7 @@ fF
 fF
 fF
 fF
-aa
+fF
 aa
 aa
 aa
@@ -50221,7 +50317,7 @@ aa
 aa
 aa
 aa
-aa
+DQ
 DQ
 BT
 BT
@@ -50243,7 +50339,7 @@ vt
 vt
 vt
 fF
-aa
+fF
 aa
 aa
 aa

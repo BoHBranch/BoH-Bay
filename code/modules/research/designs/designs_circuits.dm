@@ -88,33 +88,40 @@
 	build_path = /obj/item/weapon/stock_parts/circuitboard/cloning
 	sort_string = "FACAG"
 
+/datum/design/circuit/clonescanner
+	name = "cloning scanner"
+	id = "cloonescanner"
+	req_tech = list(TECH_BIO = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/clonescanner
+	sort_string = "FACAH"
+
 /datum/design/circuit/clonepod
 	name = "cloning pod"
 	id = "cloonepod"
 	req_tech = list(TECH_BIO = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/clonepod
-	sort_string = "FAGAM"
+	sort_string = "FAGAI"
 
 /datum/design/circuit/crewconsole
 	name = "crew monitoring console"
 	id = "crewconsole"
 	req_tech = list(TECH_DATA = 3, TECH_MAGNET = 2, TECH_BIO = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/crew
-	sort_string = "FAGAI"
+	sort_string = "FAGAJ"
 
 /datum/design/circuit/body_scan_display
 	name = "body scanner display"
 	id = "bodyscannerdisplay"
 	req_tech = list(TECH_BIO = 2, TECH_DATA = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/body_scanconsole/display
-	sort_string = "FACAJ"
+	sort_string = "FACAK"
 
 /datum/design/circuit/bioprinter
 	name = "bioprinter"
 	id = "bioprinter"
 	req_tech = list(TECH_ENGINEERING = 1, TECH_BIO = 3, TECH_DATA = 3)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/bioprinter
-	sort_string = "FAGAK"
+	sort_string = "FAGAL"
 
 /datum/design/circuit/roboprinter
 	name = "prosthetic organ fabricator"

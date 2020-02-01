@@ -5869,6 +5869,7 @@
 "jN" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/airlock/glass/security{
+	autoset_access = 0;
 	id_tag = "gunship_brig_door";
 	name = "Security Airlock";
 	req_access = "ACCESS_BRIG"
