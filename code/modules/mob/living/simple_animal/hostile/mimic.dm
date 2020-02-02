@@ -125,7 +125,7 @@ var/global/list/protected_objects = list(/obj/machinery,
 /mob/living/simple_animal/hostile/mimic/DestroySurroundings()
 	if(destroy_objects)
 		..()
-
+/*
 /mob/living/simple_animal/hostile/mimic/AttackingTarget()
 	. =..()
 	if(knockdown_people)
@@ -134,7 +134,7 @@ var/global/list/protected_objects = list(/obj/machinery,
 			if(prob(15))
 				L.Weaken(1)
 				L.visible_message("<span class='danger'>\the [src] knocks down \the [L]!</span>")
-
+*/
 /mob/living/simple_animal/hostile/mimic/Destroy()
 	copy_of = null
 	creator = null

@@ -130,3 +130,7 @@
 /datum/fabricator_recipe/arms_ammo/hidden/sabot
 	name = "ammunition (12g Sabot)"
 	path = /obj/item/ammo_magazine/shotholder/sabot
+
+/datum/fabricator_recipe/arms_ammo/hidden/magrub
+	name = "ammunition (L-L Magnum Magazine)"
+	path = /obj/item/ammo_magazine/magnum/rubber
