@@ -938,7 +938,7 @@ FIRE ALARM
 
 /obj/machinery/firealarm/Initialize()
 	. = ..()
-	update_icon()
+	INVOKE_ASYNC(src, .proc/update_icon) // to avoid weird travis bugs
 
 /obj/machinery/firealarm/proc/get_cached_overlay(state)
 	if(!LAZYACCESS(overlays_cache, state))
