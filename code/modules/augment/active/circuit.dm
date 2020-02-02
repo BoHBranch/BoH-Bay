@@ -1,7 +1,7 @@
 /obj/item/organ/internal/augment/active/simple/circuit
 	name = "integrated circuit frame"
 	action_button_name = "Activate Circuit"
-	icon_state = "multitool"
+	icon_state = "circuit"
 	allowed_organs = list(BP_AUGMENT_R_ARM, BP_AUGMENT_L_ARM)
 	holding_type = null //We must get the holding item externally
 	//Limited to robolimbs
