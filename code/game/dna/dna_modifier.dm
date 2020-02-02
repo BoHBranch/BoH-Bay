@@ -51,7 +51,6 @@
 	active_power_usage = 300
 	interact_offline = 1
 	construct_state = /decl/machine_construction/default/panel_closed
-	uncreated_component_parts = null
 	var/locked = 0
 	var/mob/living/carbon/occupant = null
 	var/obj/item/weapon/reagent_containers/glass/beaker = null

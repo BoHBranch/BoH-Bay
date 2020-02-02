@@ -317,6 +317,13 @@
 	build_path = /obj/item/weapon/stock_parts/circuitboard/mechfab
 	sort_string = "HABAE"
 
+/datum/design/circuit/wepfab
+	name = "weapons fabricator"
+	id = "wepbaf"
+	req_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 3)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/weaponsfab
+	sort_string = "HABAF"
+
 /datum/design/circuit/mech_recharger
 	name = "mech recharger"
 	id = "mech_recharger"
