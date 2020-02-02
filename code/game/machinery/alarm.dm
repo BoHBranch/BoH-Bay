@@ -1181,11 +1181,6 @@ FIRE ALARM
 		update_icon()
 		frame.transfer_fingerprints_to(src)
 
-/obj/machinery/firealarm/Initialize()
-	. = ..()
-	if(z in GLOB.using_map.contact_levels)
-		update_icon()
-
 /*
 FIRE ALARM CIRCUIT
 Just a object used in constructing fire alarms
