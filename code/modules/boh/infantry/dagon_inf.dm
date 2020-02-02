@@ -82,7 +82,7 @@
 	selection_color = "#557e38"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
-	outfit_type = /decl/hierarchy/outfit/job/torch/infantry
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
 	/datum/mil_rank/marine_corps/e1,
