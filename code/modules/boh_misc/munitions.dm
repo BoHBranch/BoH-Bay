@@ -153,7 +153,7 @@
 //casing
 /obj/item/ammo_casing/sabot
 	name = "sabot shell"
-	desc = "APFSDS in a neat little package."
+	desc = "APFSDS in a neat little package. It's prone to over penetrating, and as such does little damage to targets without armor." //even though it does little damage overall, being a niche round.
 	icon = 'icons/boh/ammo.dmi'
 	icon_state = "sabshell"
 	spent_icon = "sabshell-spent"
@@ -166,8 +166,10 @@
 	name = "sabot"
 	icon_state= "rod"
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
-	damage = 45
-	armor_penetration = 95
+	damage = 15
+	armor_penetration = 60
+	penetration_modifier = 0.1
+	penetrating = 1
 	damage_flags = DAM_EDGE
 
 //holder
