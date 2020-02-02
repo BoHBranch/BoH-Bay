@@ -1633,6 +1633,7 @@
 #include "code\modules\clothing\under\accessories\buddytag.dm"
 #include "code\modules\clothing\under\accessories\chaplaininsignia.dm"
 #include "code\modules\clothing\under\accessories\clothing.dm"
+#include "code\modules\clothing\under\accessories\clothing_boh.dm"
 #include "code\modules\clothing\under\accessories\collars.dm"
 #include "code\modules\clothing\under\accessories\holster.dm"
 #include "code\modules\clothing\under\accessories\lockets.dm"
@@ -3306,5 +3307,6 @@
 #include "modular_mithra\code\modules\species\station\vulpkanin.dm"
 #include "modular_mithra\code\modules\sprite_accessories\_accessory_hair.dm"
 #include "modular_mithra\code\modules\sprite_accessories\accessory_tajara.dm"
+#include "~code\clothing.dm"
 #include "~code\global_init.dm"
 // END_INCLUDE

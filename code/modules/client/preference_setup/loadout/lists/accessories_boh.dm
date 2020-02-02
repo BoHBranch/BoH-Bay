@@ -13,3 +13,9 @@
 	cmedals["silver"] = /obj/item/clothing/accessory/medal/silver
 	cmedals["gold"] = /obj/item/clothing/accessory/medal/gold
 	gear_tweaks += new/datum/gear_tweak/path(cmedals)
+
+/datum/gear/clothing/cloak
+	display_name = "cloak, colored"
+	path = /obj/item/clothing/accessory/cloak
+	slot = slot_wear_suit
+	flags = GEAR_HAS_COLOR_SELECTION | GEAR_HAS_CUSTOM_SELECTION

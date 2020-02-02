@@ -212,3 +212,8 @@
 	display_name = "blaze, counselor"
 	path = /obj/item/clothing/accessory/solgov/specialty/counselor
 	allowed_roles = list(/datum/job/psychiatrist)
+
+// Alternative cloak
+/datum/gear/clothing/cloak/alt
+	display_name = "cloak, colored (alt)"
+	path = /obj/item/clothing/accessory/cloak/boh
