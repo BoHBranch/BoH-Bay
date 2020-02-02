@@ -99,6 +99,8 @@
 	if(owner)
 		replaced(owner)
 		sync_colour_to_human(owner)
+		cavity_max_w_class = max(cavity_max_w_class + mob_size_difference(owner.mob_size, MOB_MEDIUM), 1) //smaller mobs have smaller organs.
+
 	get_icon()
 
 	slowdown = species.get_slowdown(owner)

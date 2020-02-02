@@ -149,7 +149,7 @@
 		if(stack && stack.can_use(1))
 			var/count = 0
 			overlays += "fab-load-metal"
-			spawn(10)
+			spawn(1 SECOND)
 				overlays -= "fab-load-metal"
 			while(materials[material] + amnt <= res_max_amount && stack.amount >= 1)
 				materials[material] += amnt
@@ -320,7 +320,7 @@
 	name = "Circuit board (Weapons Fabricator)"
 	build_path = /obj/machinery/weapons_fabricator
 	board_type = "machine"
-	origin_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 3)
+	origin_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 3)
 	req_components = list(
 		/obj/item/weapon/stock_parts/matter_bin = 2,
 		/obj/item/weapon/stock_parts/manipulator = 1,

@@ -1560,18 +1560,18 @@
 	extra_overlay = "ninekitsune-tips"
 
 /datum/sprite_accessory/tail/vulpkanin_alt_color
-    name = "Vulpkanin alt"
-    desc = ""
-    icon_state = "vulpkanin_alt_color"
-    do_colouration = 1
-    color_blend_mode = ICON_MULTIPLY
-    extra_overlay = "vulpkanin_alt_color_tips"
-    ani_state = "vulpkanin_alt_color_w"
-    extra_overlay_w = "vulpkanin_alt_color_tips_w"
+	name = "Vulpkanin alt"
+	desc = ""
+	icon_state = "vulpkanin_alt_color"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "vulpkanin_alt_color_tips"
+	ani_state = "vulpkanin_alt_color_w"
+	extra_overlay_w = "vulpkanin_alt_color_tips_w"
 
 /datum/sprite_accessory/tail/raccoon_tail
-    name = "Raccoon gray tail"
-    desc = ""
-    icon_state = "raccoon_tail"
-    do_colouration = 0
-    color_blend_mode = ICON_MULTIPLY
+	name = "Raccoon gray tail"
+	desc = ""
+	icon_state = "raccoon_tail"
+	do_colouration = 0
+	color_blend_mode = ICON_MULTIPLY
