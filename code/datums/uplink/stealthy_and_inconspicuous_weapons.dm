@@ -49,5 +49,5 @@
 	name = "Vial of Black Tar"
 	desc = "Supposedly, ingesting this would cause someone to become a little less alive, though still alive. How does it make sense? \
 	Well, it doesn't. That's the fun of it!"
-	item_cost = 120
+	item_cost = 220 //Needs two traitors collaborating, and even then, it burns a lot of your TCs. Zombies are overdone, mmkay?
 	path = /obj/item/weapon/reagent_containers/glass/beaker/vial/zombie
