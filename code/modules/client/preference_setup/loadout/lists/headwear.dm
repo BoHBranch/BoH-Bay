@@ -117,7 +117,7 @@
 /datum/gear/head/hijab
 	display_name = "hijab, colour select"
 	path = /obj/item/clothing/head/hijab
-	flags = GEAR_HAS_COLOR_SELECTION
+	flags = GEAR_HAS_COLOR_SELECTION | GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/head/kippa
 	display_name = "kippa, colour select"
