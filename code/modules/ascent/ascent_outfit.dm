@@ -40,6 +40,7 @@
 		SPECIES_MANTID_GYNE =  'icons/mob/species/mantid/onmob_mask_gyne.dmi',
 		SPECIES_MANTID_ALATE = 'icons/mob/species/mantid/onmob_mask_alate.dmi'
 	)
+	body_parts_covered = EYES //to get much of the same effect as the vox mask.
 	species_restricted = list(SPECIES_MANTID_ALATE, SPECIES_MANTID_GYNE)
 	filtered_gases = list(GAS_PHORON,GAS_N2O,GAS_CHLORINE,GAS_AMMONIA,GAS_CO,GAS_METHANE)
 	flags_inv = 0

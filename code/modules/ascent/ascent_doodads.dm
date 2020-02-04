@@ -27,6 +27,7 @@
 	name = "cryogenic stasis unit"
 	desc = "A bizarre alien stasis unit."
 	icon = 'icons/obj/ascent_doodads.dmi'
+	icon_state = "base"
 
 /obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent
 	name = "hydration cylinder"

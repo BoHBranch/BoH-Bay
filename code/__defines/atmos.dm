@@ -89,15 +89,16 @@
 #define ZONE_SLEEPING 0
 
 // Defines how much of certain gas do the Atmospherics tanks start with. Values are in kpa per tile (assuming 20C)
-#define ATMOSTANK_NITROGEN      90000 // A lot of N2 is needed to produce air mix, that's why we keep 90MPa of it
-#define ATMOSTANK_OXYGEN        90000 // Same as N2, though given less space map wise.
-#define ATMOSTANK_CO2           60000 // CO2 is used for the GUP, Charon, and Torch as the primary fuel propellant, and we need lots to stick around.
-#define ATMOSTANK_PHORON        25000
-#define ATMOSTANK_PHORON_FUEL	15000
-#define ATMOSTANK_HYDROGEN      50000
-#define ATMOSTANK_HYDROGEN_FUEL 90000 //ICCG primary propellant.
-#define ATMOSTANK_XENON         80000
-#define ATMOSTANK_NITROUSOXIDE  10000 // N2O doesn't have a real useful use, i guess it's on station just to allow refilling of sec's riot control canisters?
+#define ATMOSTANK_NITROGEN       90000 // A lot of N2 is needed to produce air mix, that's why we keep 90MPa of it
+#define ATMOSTANK_OXYGEN         90000 // Same as N2, though given less space map wise.
+#define ATMOSTANK_CO2            60000 // CO2 is used for the GUP, Charon, and Torch as the primary fuel propellant, and we need lots to stick around.
+#define ATMOSTANK_PHORON         25000
+#define ATMOSTANK_PHORON_FUEL    15000
+#define ATMOSTANK_HYDROGEN       50000
+#define ATMOSTANK_HYDROGEN_FUEL  90000 //ICCG primary propellant.
+#define ATMOSTANK_XENON          80000
+#define ATMOSTANK_NITROUSOXIDE   10000 // N2O doesn't have a real useful use, i guess it's on station just to allow refilling of sec's riot control canisters?
+#define ATMOSTANK_METHYL_BROMIDE 95000
 
 #define MAX_PUMP_PRESSURE		15000	// Maximal pressure setting for pumps and vents
 #define MAX_OMNI_PRESSURE		15000	// Maximal output(s) pressure for omni devices (filters/mixers)
