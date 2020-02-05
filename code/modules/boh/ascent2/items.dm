@@ -9,8 +9,8 @@
 
 /obj/item/ascentbox/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Support Alate"] = list(/obj/item/stack/medical/resin/large,/obj/item/weapon/gun/energy/particle/support,/obj/item/device/personal_shield)
-	options["Enforcering Alate"] = list(/obj/item/stack/medical/resin,/obj/item/weapon/gun/energy/particle/small)
+	options["Support Alate"] = list(/obj/item/stack/medical/resin/large,/obj/item/weapon/gun/energy/particle/support)
+	options["Enforcering Alate"] = list(/obj/item/weapon/gun/energy/particle/small,/obj/item/weapon/storage/med_pouch/ascent)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
@@ -100,3 +100,8 @@
 	This one appears oddly weighted."
 	color = "#3b88bf"
 	w_class = ITEM_SIZE_NORMAL
+
+//lamp
+/obj/item/device/flashlight/lamp/floodlamp/ascent
+	name = "odd lamp"
+	color = "#a33fbf" //Just makes it look really, really odd. But it's funny, so, y'know.

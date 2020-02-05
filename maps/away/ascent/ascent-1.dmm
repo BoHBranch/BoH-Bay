@@ -11,13 +11,13 @@
 "ak" = (/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
 "al" = (/turf/simulated/wall/ascent,/area/ship/ascent/subdeck_center)
 "am" = (/obj/effect/wallframe_spawn/phoron,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"an" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north_spike)
+"an" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/effect/catwalk_plated/ascent,/obj/machinery/alarm/ascent{dir = 1; pixel_y = -24},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north_spike)
 "ao" = (/obj/machinery/ion_engine{dir = 8},/obj/structure/window/phoronreinforced{dir = 8},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"ap" = (/obj/machinery/atmospherics/unary/vent_scrubber/on/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"ap" = (/obj/structure/table/rack/shelf/steel,/obj/item/weapon/cell/mantid,/obj/item/weapon/cell/mantid,/obj/item/weapon/cell/mantid,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
 "aq" = (/obj/machinery/light/ascent{dir = 1},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
 "ar" = (/obj/machinery/atmospherics/pipe/zpipe/up/supply{color = "#0000ff"; dir = 4},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north)
 "as" = (/obj/machinery/light/ascent,/obj/machinery/atmospherics/unary/vent_scrubber/on/ascent{dir = 1},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_south_spike)
-"at" = (/obj/machinery/light/ascent{dir = 8},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_south)
+"at" = (/obj/machinery/light/ascent{dir = 8},/obj/structure/window/phoronreinforced{dir = 4},/obj/structure/closet/crate/freezer/meat/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
 "au" = (/obj/machinery/atmospherics/unary/vent_pump/on/ascent{dir = 1; level = 2},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_south_spike)
 "av" = (/obj/machinery/light/ascent{dir = 1},/obj/structure/window/phoronreinforced,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north_spike)
 "aw" = (/obj/machinery/door/airlock/ascent,/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north)
@@ -25,10 +25,10 @@
 "ay" = (/obj/structure/window/phoronreinforced{dir = 8},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north_spike)
 "az" = (/obj/machinery/door/airlock/ascent,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
 "aA" = (/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north_spike)
-"aB" = (/obj/structure/stairs/east,/obj/structure/window/phoronreinforced,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north_spike)
+"aB" = (/obj/structure/window/phoronreinforced,/obj/structure/stairs/east,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north_spike)
 "aC" = (/obj/structure/window/phoronreinforced{dir = 8},/obj/structure/closet/crate/freezer/meat/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south_spike)
 "aD" = (/obj/machinery/light/ascent,/obj/structure/window/phoronreinforced{dir = 1},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south_spike)
-"aE" = (/obj/structure/stairs/east,/obj/structure/window/phoronreinforced{dir = 1},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south_spike)
+"aE" = (/obj/structure/window/phoronreinforced{dir = 1},/obj/structure/stairs/east,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south_spike)
 "aF" = (/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
 "aG" = (/turf/simulated/wall/ascent,/area/ship/ascent/subdeck_hospital)
 "aH" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
@@ -40,7 +40,7 @@
 "aN" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
 "aO" = (/obj/machinery/atmospherics/unary/vent_scrubber/on/ascent,/obj/machinery/access_button/airlock_interior{frequency = 1331; master_tag = "ascent_seedship_fore_dock_controller"; pixel_x = -4; pixel_y = 24},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
 "aP" = (/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north_spike)
-"aQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
+"aQ" = (/turf/simulated/wall/r_wall/ascent,/area/ship/ascent/subdeck_gyne_quarters)
 "aR" = (/turf/simulated/wall/r_wall/ascent,/area/ship/ascent/subdeck_atmos)
 "aS" = (/obj/machinery/atmospherics/pipe/zpipe/up/scrubbers{color = "#ff0000"; dir = 4},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
 "aT" = (/obj/structure/window/phoronreinforced{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/universal{dir = 4},/turf/simulated/floor/reinforced/airless,/area/ship/ascent/subdeck_atmos)
@@ -53,13 +53,13 @@
 "ba" = (/obj/structure/window/phoronreinforced{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4},/turf/simulated/floor/reinforced/bromide,/area/ship/ascent/subdeck_atmos)
 "bb" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
 "bc" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/light/ascent{dir = 1},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
-"bd" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
+"bd" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
 "be" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/computer/air_control{dir = 4; frequency = 1441; input_tag = "waste_tank"; name = "Waste Control"; output_tag = ""; sensor_name = "Waste Tank"; sensor_tag = "waste_tank"},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_atmos)
 "bf" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/machinery/meter{name = "waste line meter"; pixel_y = 0},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_atmos)
 "bg" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/light/ascent{dir = 4},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_atmos)
 "bh" = (/obj/machinery/light/ascent{dir = 1},/obj/machinery/atmospherics/unary/vent_scrubber/on/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north_spike)
 "bi" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1},/obj/structure/cable/cyan{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
-"bj" = (/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable/cyan{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
+"bj" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
 "bk" = (/obj/structure/window/phoronreinforced,/turf/simulated/floor/reinforced/airless,/area/ship/ascent/subdeck_atmos)
 "bl" = (/obj/structure/closet/crate/freezer/meat/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south_spike)
 "bm" = (/obj/machinery/door/airlock/ascent,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
@@ -74,28 +74,28 @@
 "bv" = (/obj/machinery/atmospherics/pipe/simple/hidden/universal{dir = 4},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_atmos)
 "bw" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
 "bx" = (/obj/structure/cable/cyan{icon_state = "0-8"},/obj/machinery/light/ascent{dir = 4},/obj/machinery/power/apc/hyper/ascent/east,/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"by" = (/obj/structure/window/phoronreinforced{dir = 4},/obj/structure/window/phoronreinforced,/obj/structure/window/phoronreinforced{dir = 8},/obj/structure/window/phoronreinforced{dir = 1},/obj/structure/cable/cyan{icon_state = "0-8"},/obj/structure/cable{d1 = 16; d2 = 0; icon_state = "16-0"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"bz" = (/obj/machinery/light/ascent{dir = 8},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"by" = (/turf/simulated/wall/ascent,/area/ship/ascent/subdeck_armory)
+"bz" = (/turf/simulated/wall/r_wall/ascent,/area/ship/ascent/subdeck_armory)
 "bA" = (/obj/machinery/atmospherics/unary/vent_pump/on/ascent{dir = 1; level = 2},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
 "bB" = (/obj/machinery/alarm/ascent{dir = 1; pixel_y = -24},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
 "bC" = (/obj/machinery/light/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
 "bD" = (/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable/cyan{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"bE" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated/ascent,/obj/machinery/alarm/ascent{dir = 1; pixel_y = -24},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
+"bE" = (/obj/structure/table/rack/dark,/obj/item/weapon/rig/mantid,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
 "bF" = (/obj/machinery/atmospherics/unary/vent_pump/on/ascent,/obj/structure/table/steel_reinforced,/obj/item/device/scanner/health,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_hospital)
 "bG" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
 "bH" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
 "bI" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
 "bJ" = (/obj/machinery/light/ascent{dir = 4},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
-"bK" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/light/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
+"bK" = (/obj/machinery/light/ascent{dir = 1},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
 "bL" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
 "bM" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
 "bN" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/machinery/alarm/ascent{dir = 8; pixel_x = 24},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
 "bO" = (/turf/simulated/wall/r_wall/ascent,/area/ship/ascent/subdeck_south)
 "bP" = (/obj/machinery/door/airlock/ascent,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
-"bQ" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/structure/cable/cyan{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"bR" = (/obj/machinery/light/ascent{dir = 8},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"bS" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"bT" = (/obj/structure/window/phoronreinforced,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
+"bQ" = (/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"bR" = (/obj/structure/table/rack/dark,/obj/item/ascentbox,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"bS" = (/obj/structure/table/rack/dark,/obj/item/clothing/mask/gas/ascent,/obj/item/weapon/tank/mantid/reactor,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"bT" = (/obj/structure/table/rack/dark,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
 "bU" = (/obj/structure/cable/cyan{d2 = 4; icon_state = "0-4"},/obj/machinery/power/apc/hyper/ascent/west,/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
 "bV" = (/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
 "bW" = (/obj/machinery/sleeper/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_hospital)
@@ -104,14 +104,14 @@
 "bZ" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
 "ca" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
 "cb" = (/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north)
-"cc" = (/obj/machinery/light/ascent{dir = 8},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"cc" = (/obj/machinery/light/ascent{dir = 8},/obj/item/weapon/reagent_containers/glass/bucket/ascent,/obj/item/weapon/mop/advanced/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
 "cd" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
 "ce" = (/obj/machinery/atmospherics/unary/cryo_cell,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_hospital)
 "cf" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
 "cg" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9; pixel_y = 0},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_hospital)
-"ch" = (/obj/structure/table/rack/dark,/obj/item/weapon/rig/mantid,/obj/structure/window/phoronreinforced,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
+"ch" = (/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_armory)
 "ci" = (/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_hospital)
-"cj" = (/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
+"cj" = (/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
 "ck" = (/obj/machinery/door/airlock/ascent,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north)
 "cl" = (/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north)
 "cm" = (/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north)
@@ -148,8 +148,8 @@
 "cR" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
 "cS" = (/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_south)
 "cT" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_atmos)
-"cU" = (/obj/machinery/atmospherics/unary/vent_scrubber/on/ascent{dir = 1},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
-"cV" = (/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_atmos)
+"cU" = (/obj/structure/window/phoronreinforced,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"cV" = (/obj/structure/bed/chair/padded/purple/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_atmos)
 "cW" = (/obj/machinery/light/ascent,/obj/machinery/atmospherics/pipe/simple/hidden/cyan{dir = 9; icon_state = "intact"},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_hospital)
 "cX" = (/obj/structure/cable/cyan{icon_state = "0-4"},/obj/effect/catwalk_plated/ascent,/obj/machinery/power/apc/hyper/ascent/south,/obj/machinery/light/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_atmos)
 "cY" = (/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_atmos)
@@ -158,7 +158,7 @@
 "db" = (/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south_spike)
 "dc" = (/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_south_spike)
 "dd" = (/obj/machinery/power/apc/hyper/ascent/north,/obj/structure/cable/cyan{d2 = 4; icon_state = "0-4"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south_spike)
-"de" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south_spike)
+"de" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated/ascent,/obj/machinery/alarm/ascent{pixel_y = 24},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south_spike)
 "df" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south_spike)
 "dg" = (/obj/machinery/atmospherics/portables_connector{dir = 1},/obj/machinery/portable_atmospherics/canister/oxygen/prechilled,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_hospital)
 "dh" = (/obj/structure/table/rack/dark,/obj/item/organ/internal/controller,/obj/item/organ/internal/controller,/obj/item/organ/internal/controller,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_hospital)
@@ -181,32 +181,107 @@
 "dy" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 4; external_pressure_bound = 0; external_pressure_bound_default = 0; frequency = 1441; icon_state = "map_vent_in"; id_tag = "bromide_tank"; initialize_directions = 1; internal_pressure_bound = 4000; internal_pressure_bound_default = 4000; pressure_checks = 2; pressure_checks_default = 2; pump_direction = 0; use_power = 1},/turf/simulated/floor/reinforced/bromide,/area/ship/ascent/subdeck_atmos)
 "dz" = (/obj/machinery/atmospherics/unary/outlet_injector{dir = 4; frequency = 1441; icon_state = "map_injector"; id = "waste_tank"; use_power = 1},/obj/machinery/light/ascent{dir = 8},/turf/simulated/floor/reinforced/airless,/area/ship/ascent/subdeck_atmos)
 "dA" = (/obj/machinery/atmospherics/binary/passive_gate/on{dir = 4; max_pressure_setting = 30000; name = "distro pressure regulator"; regulate_mode = 2; target_pressure = 250; use_power = 1},/turf/simulated/floor/reinforced/bromide,/area/ship/ascent/subdeck_atmos)
-"dB" = (/obj/machinery/light/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_south)
+"dB" = (/obj/structure/window/phoronreinforced{dir = 8},/obj/structure/table/steel_reinforced,/obj/item/weapon/material/knife/kitchen/cleaver/ascent,/obj/structure/window/phoronreinforced{dir = 1},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
 "dC" = (/obj/machinery/light/ascent{dir = 8},/turf/simulated/floor/reinforced/bromide,/area/ship/ascent/subdeck_atmos)
-"dD" = (/obj/machinery/light/ascent{dir = 1},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dE" = (/obj/machinery/light/ascent,/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dF" = (/obj/structure/table/rack/shelf/steel,/obj/item/weapon/tank/mantid/reactor/oxygen/captives,/obj/item/weapon/tank/mantid/reactor/oxygen/captives,/obj/item/clothing/mask/gas/half,/obj/item/clothing/mask/gas/half,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
-"dG" = (/obj/structure/table/rack/dark,/obj/item/weapon/rig/mantid/gyne,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dH" = (/obj/structure/table/rack/dark,/obj/item/weapon/gun/energy/particle,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dI" = (/obj/structure/table/rack/dark,/obj/item/weapon/tank/mantid/reactor,/obj/item/clothing/mask/gas/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dJ" = (/obj/structure/table/rack/dark,/obj/item/clothing/mask/gas/ascent,/obj/item/weapon/tank/mantid/reactor,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dK" = (/obj/machinery/atmospherics/unary/vent_pump/on/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
-"dL" = (/obj/structure/table/rack/shelf/steel,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
-"dM" = (/obj/structure/table/rack/dark,/obj/item/ascentbox,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dN" = (/obj/structure/table/rack/shelf/steel,/obj/item/weapon/storage/box/ascentimplants,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
-"dO" = (/obj/structure/table/rack/dark,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dP" = (/obj/structure/window/phoronreinforced{dir = 8},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dQ" = (/obj/structure/window/phoronreinforced{dir = 8},/obj/structure/table/rack/dark,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dR" = (/obj/structure/window/phoronreinforced{dir = 1},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dS" = (/obj/machinery/light/ascent{dir = 4},/obj/structure/window/phoronreinforced,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dT" = (/obj/structure/table/rack/dark,/obj/item/weapon/rig/mantid,/obj/structure/window/phoronreinforced{dir = 1},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dU" = (/obj/structure/table/rack/dark,/obj/item/weapon/rig/mantid,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dV" = (/obj/structure/window/phoronreinforced{dir = 1},/obj/machinery/light/ascent{dir = 4},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
-"dW" = (/obj/structure/window/phoronreinforced{dir = 8},/obj/structure/table/rack/dark,/obj/item/weapon/storage/toolbox/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
+"dD" = (/obj/machinery/light/ascent{dir = 4},/obj/structure/window/phoronreinforced,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"dE" = (/obj/machinery/light/ascent{dir = 8},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_armory)
+"dF" = (/obj/structure/table/rack/shelf/steel,/obj/item/weapon/tank/mantid/reactor/oxygen/captives,/obj/item/weapon/tank/mantid/reactor/oxygen/captives,/obj/item/clothing/mask/gas/half,/obj/item/clothing/mask/gas/half,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_armory)
+"dG" = (/turf/simulated/wall/ascent,/area/ship/ascent/subdeck_gyne_quarters)
+"dH" = (/obj/structure/table/rack/shelf/steel,/obj/item/weapon/storage/box/ascentimplants,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_armory)
+"dI" = (/obj/structure/table/rack/shelf/steel,/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain,/obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_armory)
+"dJ" = (/obj/structure/window/phoronreinforced{dir = 8},/obj/structure/table/rack/dark,/obj/item/weapon/storage/toolbox/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"dK" = (/obj/machinery/door/airlock/ascent,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"dL" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"dM" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"dN" = (/obj/machinery/atmospherics/unary/vent_pump/on/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_armory)
+"dO" = (/obj/structure/table/rack/dark,/obj/item/weapon/rig/mantid,/obj/structure/window/phoronreinforced,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"dP" = (/obj/structure/window/phoronreinforced{dir = 8},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"dQ" = (/obj/structure/table/rack/dark,/obj/item/weapon/gun/energy/particle,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"dR" = (/obj/machinery/light/ascent{dir = 8},/obj/machinery/alarm/ascent{dir = 4; pixel_x = -24},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"dS" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/structure/cable/cyan{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"dT" = (/obj/machinery/door/blast/regular{id_tag = "waste_exterior"},/turf/simulated/floor/reinforced/airless,/area/ship/ascent/subdeck_atmos)
+"dU" = (/obj/structure/window/phoronreinforced{dir = 4},/obj/structure/window/phoronreinforced,/obj/structure/window/phoronreinforced{dir = 8},/obj/structure/window/phoronreinforced{dir = 1},/obj/structure/cable/cyan{icon_state = "0-8"},/obj/structure/cable{d1 = 16; d2 = 0; icon_state = "16-0"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"dV" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"dW" = (/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
 "dX" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north)
 "dY" = (/obj/machinery/atmospherics/valve/shutoff,/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north)
 "dZ" = (/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north)
 "ea" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_north)
+"eb" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"ec" = (/obj/structure/window/phoronreinforced{dir = 8},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"ed" = (/obj/machinery/light/ascent,/obj/structure/window/phoronreinforced{dir = 8},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"ee" = (/obj/structure/bed/chair/padded/purple/ascent/gyne,/obj/machinery/light/ascent{dir = 8},/obj/effect/submap_landmark/spawnpoint/ascent_seedship,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_gyne_quarters)
+"ef" = (/obj/structure/table/steel_reinforced,/obj/random/tank,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eg" = (/obj/structure/morgue/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_south)
+"eh" = (/obj/structure/morgue/ascent{dir = 8},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_south)
+"ei" = (/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
+"ej" = (/obj/structure/window/phoronreinforced{dir = 4},/obj/structure/closet/crate/freezer/meat/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
+"ek" = (/obj/structure/morgue/ascent,/obj/structure/window/phoronreinforced{dir = 1},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_south)
+"el" = (/obj/structure/morgue/ascent{dir = 8},/obj/structure/window/phoronreinforced{dir = 1},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_south)
+"em" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/reagent_containers/chem_disp_cartridge/sterilizine,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_south)
+"en" = (/obj/structure/table/steel_reinforced,/obj/random/advdevice,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eo" = (/obj/structure/table/steel_reinforced,/obj/random/firstaid,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"ep" = (/obj/structure/table/steel_reinforced,/obj/random/handgun,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eq" = (/obj/structure/table/steel_reinforced,/obj/random/powercell,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"er" = (/obj/random/vendor,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"es" = (/obj/structure/closet/crate/secure/biohazard/ascent/blanks,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"et" = (/obj/machinery/light/ascent,/obj/structure/window/phoronreinforced{dir = 8},/obj/structure/kitchenspike,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
+"eu" = (/obj/structure/table/steel_reinforced,/obj/structure/window/phoronreinforced{dir = 1},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
+"ev" = (/obj/structure/kitchenspike,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
+"ew" = (/obj/structure/window/phoronreinforced{dir = 8},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_south)
+"ex" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/spike,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_south)
+"ey" = (/obj/machinery/light/ascent{dir = 8},/obj/machinery/fabricator/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"ez" = (/obj/machinery/atmospherics/unary/vent_pump/on/ascent{dir = 1; level = 2},/obj/structure/table/rack/shelf/steel,/obj/item/weapon/cell/mantid,/obj/item/weapon/cell/mantid,/obj/item/weapon/cell/mantid,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"eA" = (/obj/machinery/alarm/ascent{dir = 1; pixel_y = -24},/obj/structure/table/rack/shelf/steel,/obj/item/device/gps,/obj/item/device/gps,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"eB" = (/obj/machinery/atmospherics/unary/vent_scrubber/on/ascent,/obj/structure/table/rack/shelf/steel,/obj/item/device/dociler,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"eC" = (/obj/structure/table/rack/shelf/steel,/obj/item/device/flashlight/lamp/floodlamp/ascent,/obj/item/device/flashlight/lamp/floodlamp/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"eD" = (/obj/structure/table/rack/shelf/steel,/obj/item/device/radio/electropack,/obj/item/device/radio/electropack,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"eE" = (/obj/structure/table/rack/shelf/steel,/obj/item/device/assembly/signaler,/obj/item/device/assembly/signaler,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"eF" = (/obj/structure/table/rack/shelf/steel,/obj/item/device/geiger,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"eG" = (/obj/machinery/mining/drill,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"eH" = (/obj/structure/window/phoronreinforced{dir = 4},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"eI" = (/obj/machinery/mining/brace{dir = 4},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"eJ" = (/obj/structure/table/steel_reinforced,/obj/machinery/button/blast_door{id_tag = "waste_exterior"; name = "waste dump"},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_atmos)
+"eK" = (/obj/structure/window/phoronreinforced{dir = 4},/obj/structure/stairs/south,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"eL" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/handcuffs,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eM" = (/obj/machinery/clamp,/obj/machinery/clamp,/obj/machinery/clamp,/obj/machinery/clamp,/obj/structure/table/steel_reinforced,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eN" = (/obj/structure/window/phoronreinforced{dir = 8},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
+"eO" = (/obj/machinery/gibber{emagged = 1; name = "flesh mincing device"; req_access = list("ACCESS_ASCENT")},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
+"eP" = (/obj/structure/closet/crate/freezer/meat/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_south)
+"eQ" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/inflatable_dispenser,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eR" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/storage/briefcase/inflatable,/obj/item/weapon/storage/briefcase/inflatable,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eS" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/material/shard/phoron,/obj/item/weapon/material/shard/phoron,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eT" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/rpd,/obj/item/weapon/rpd,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eU" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/rcd,/obj/item/weapon/rcd,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eV" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/rcd_ammo/large,/obj/item/weapon/rcd_ammo/large,/obj/item/weapon/rcd_ammo/large,/obj/item/weapon/rcd_ammo/large,/obj/item/weapon/rcd_ammo/large,/obj/item/weapon/rcd_ammo/large,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eW" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/implantpad,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eX" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/disk/astrodata,/obj/item/weapon/disk/astrodata,/obj/item/weapon/disk/astrodata,/obj/item/weapon/disk/astrodata,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eY" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/reagent_containers/chem_disp_cartridge/tricord,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"eZ" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/reagent_containers/chem_disp_cartridge/bicaridine,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"fa" = (/obj/structure/table/steel_reinforced,/obj/item/weapon/reagent_containers/chem_disp_cartridge/kelotane,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"fb" = (/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_gyne_quarters)
+"fc" = (/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable/cyan{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/effect/catwalk_plated/ascent,/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
+"fd" = (/obj/structure/table/rack/dark,/obj/item/weapon/rig/mantid/gyne,/obj/machinery/power/apc/hyper/ascent/east,/obj/structure/cable/cyan{icon_state = "0-8"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"fe" = (/obj/machinery/atmospherics/unary/vent_scrubber/on/ascent,/obj/machinery/power/apc/hyper/ascent/east,/obj/structure/cable/cyan{icon_state = "0-2"},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_gyne_quarters)
+"ff" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"fg" = (/obj/machinery/mining/brace{dir = 8},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"fh" = (/obj/structure/window/phoronreinforced{dir = 4},/obj/structure/stairs/north,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_center)
+"fi" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/catwalk_plated/ascent,/obj/structure/window/phoronreinforced,/obj/structure/window/phoronreinforced{dir = 1},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_center)
+"fk" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_gyne_quarters)
+"fl" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/airlock/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_gyne_quarters)
+"fn" = (/obj/machinery/atmospherics/unary/vent_scrubber/on/ascent{dir = 1},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_armory)
+"fo" = (/obj/structure/table/rack/dark,/obj/item/weapon/rig/mantid,/obj/structure/window/phoronreinforced{dir = 1},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"fp" = (/obj/structure/table/rack/dark,/obj/item/weapon/tank/mantid/reactor,/obj/item/clothing/mask/gas/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"fq" = (/obj/structure/window/phoronreinforced{dir = 8},/obj/structure/table/rack/dark,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"fr" = (/obj/structure/window/phoronreinforced{dir = 1},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"fs" = (/obj/structure/window/phoronreinforced{dir = 1},/obj/machinery/light/ascent{dir = 4},/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"ft" = (/obj/machinery/light/ascent,/obj/effect/catwalk_plated/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"fu" = (/obj/effect/catwalk_plated/ascent,/obj/machinery/light/ascent,/turf/simulated/floor/ascent,/area/ship/ascent/subdeck_armory)
+"fw" = (/obj/machinery/atmospherics/unary/vent_pump/on/ascent{dir = 1; level = 2},/obj/machinery/alarm/ascent{dir = 8; pixel_x = 24},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_gyne_quarters)
+"fx" = (/obj/structure/bed/chair/padded/purple/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_north)
+"fy" = (/obj/structure/table/rack/dark,/obj/structure/window/phoronreinforced,/obj/machinery/door/window/brigdoor{color = "PURPLE"; dir = 4; name = "trophy case"},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_gyne_quarters)
+"fz" = (/obj/structure/table/rack/dark,/obj/structure/window/phoronreinforced{dir = 1},/obj/machinery/door/window/brigdoor{color = "PURPLE"; dir = 4; name = "trophy case"},/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_gyne_quarters)
+"fA" = (/obj/structure/bed/chair/padded/purple/ascent,/turf/simulated/floor/tiled/ascent,/area/ship/ascent/subdeck_gyne_quarters)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -260,30 +335,30 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaRaRaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaRaUaUaRaRaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaRaWaWaWaRaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaRaUaUaRaZaZaWaRaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaRdTdTaRaZaZaWaRaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaRdzaLaTbebfbgaRaRaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaRbkbkaYcVbobqbraRaRaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaRbkbkaYeJbobqbraRaRaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaRaRdydAbabvcOcPcQcTaRaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxahahahahahaRaRdCbsaVbncVcXcYcZaRaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaxaFaFaFaFaFaxaxbubububububuawbubububububuaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacacaxaFaFaFaFaFaFaFaFaFaFaFaFaFaFcbdXaFaFaFaFbuaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacaAavaBayaAaPaPbhcpaxccaFaFaFaFaFaFaFaFaFdodmdpaFdZdYaFaFaFaFbuaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaAaAaAaAaAaPaPaPaPaPagancBckclaFaFaFaFaFaFaFaFcmdrdudxcncoeacqaFaFaFalalalalalalalaialalalaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacacacacacacaxajcLclaFaFaFaFcqctcxczaFcqaFaFaFalalalalalakalalaldUdDbVdDdUalalalaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaxaxcAcCaFaFaFbucDcEaFaFalalamalalakakakaqakaldMdJdOakbVakdOdJdMalaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaharcIcJcKcLcLcMbubucNbubualakakakakakakakakalalcjcjcjakbVakbTbTdSalalaiaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaiaiaialalalazalakaHakalaqaJaKaKaMaKaKaNakalbzakdFdNdLbVakdMdJdOdWalaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaiaiaialaObVaHaqakaHakalakaHakakbAbBakbDaKbmaKbEaKaNakbVdKakakchdPdHaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaiaiaialbdaQbjaKaKbpaKbmaKbwbxalalalbzbbbJalalalbRbQaKbybSbVbVbVcjdGaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaiaiaialbAbBaHbCakaHakalakaHakakapakakbDaKbmaKaKaKbIakbVcUakakdTdPdIaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaiaiaialalalazalakaHakalbCbGaKaKbHaKaKbIakalbzakdFdNdLbVakdMdJdOdQalaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaSaXbcbibLbMbNbtbtbPbtbtalakakakakakakakakalalcjcjcjakbVakdRdRdValalaiaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabObObOcycRcScScSbtbUcacSaGaGaGaIaGaGakakakbCakaldMdJdOakbVakdOdJdMalaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeaeaeaebOcydqcRcScScScSdsdtcddvaGbFbWbXceaGaGaGaGaGakalalaldUdEbVbKdUalalalaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaedbdbdbdbdbdcdcdcdcdcdddedfdwcRcScScScScScScScSbZcfdncgcicicrcscucvcwaGalalalalalalaialalalaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaedbaDaEaCbldcdcasaubOatcScScScScScScScScSbYaGcFcGcHcWciciciciaGaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaebOcScScScScSdBcScScScScSaGdadgdhaGdidjdkdlaGaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabObOcScScScSbObOafbtbtbtaGaGaGaGaGaGaGaGaGaGaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaxeXaFeReQeMaxaxbubububububuawbubububububuaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacacaxeSaFaFaFaFeLaFaFaFaFaFaFaFaFcbdXecereneobuaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacaAavaBayaAaPaPbhcpaxccaFeTfxaFaFaFeZaFaFdodmdpaFdZdYaFaFfxepbuaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaAaAaAaAaAaPaPaPaPaPagancBckclaFeUeVeWaFeYfaaFcmdrdudxcncoeaedesefeqalalbybybybybybzbybybybzbzbzbzaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacacacacacacacacacacacacacaxajcLclaFaFaFaFcqctcxczaFcqaFaFaFalalalalalakbybybybEbKbQbKbEbybybybzbzaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaxaxcAcCaFaFaFbucDcEaFbualalamalalakakakaqakbybRbSbTchbQchbTbSbRbybzbzaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaharcIcJcKcLcLcMbubucNbubuaqakakakakakakakakbybycjcjcjchbQchcUcUdDbybybzaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaQaQaQaQdGalalazalakaHakaleHaJaKaKaMaKaKaNakbydEchdFdHdIbQchbRbSbTdJbybzaiaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaQfyfAfedGaObVaHaqakaHakaleKaHakapezeAeCbDaKdKdLdLdLdMchbQdNchchdOdPdQbzaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaQeefbfkflbdbjfcaKaKbpaKbmfibwbxalalaleybbbJbybybydRdSdLdUdVdWdWdWebfdbzaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaQfzfAfwdGbAbBaHbCakaHakalfhaHakeFeBeEeDbDaKdKdLdLdLffchbQfnchchfodPfpbzaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaQaQaQaQdGalalazalakaHakaleHbGaKaKbHaKaKbIakbydEchdFdHdIbQchbRbSbTfqbybzaiaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaSaXbcbibLbMbNbtbtbPbtbtbCakeIfgeGakakakakbybycjcjcjchbQchfrfrfsbybybzaiaiaiaiaiaiaiaiaiaiaiaiaiadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabObObOcycRcScScSbtbUcacSaGaGaGaIaGaGakakakbCakbybRbSbTchbQchbTbSbRbybzbzaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaeaeaeaeaebOcydqcRcScScScSdsdtcddvaGbFbWbXceaGaGaGaGaGakbybybybEftbQfubEbybybybzbzaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaedbdbdbdbdbdcdcdcdcdcdddedfdwcRcScScScScScScScSbZcfdncgcicicrcscucvcwaGalbybybybybybzbybybybzbzbzbzaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaedbaDaEaCbldcdcasaubOatekcScSeldBcSeuewcSbYaGcFcGcHcWciciciciaGaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeaeaeaeaeaeaeaeaeaebOejemcScSexeteieveNeOePaGdadgdhaGdidjdkdlaGaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabObOegcScSehbObOafbtbtbtaGaGaGaGaGaGaGaGaGaGaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabOafafafafbOaaaaaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaoaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

@@ -96,3 +96,11 @@
 /area/ship/ascent/subdeck_hospital
 	name = "\improper Ascent Seedship - Hospital Chamber"
 	icon_state = "entry_1"
+
+/area/ship/ascent/subdeck_armory
+	name = "\improper Ascent Seedship - Subdeck Armory"
+	icon_state = "entry_1"
+
+/area/ship/ascent/subdeck_gyne_quarters
+	name = "\improper Ascent Seedship - Gyne's Quarters"
+	icon_state = "ai"
