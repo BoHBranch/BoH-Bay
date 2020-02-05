@@ -165,7 +165,7 @@
 		/datum/mob_descriptor/pariah_stink = 0
 	)
 
-	spawn_flags = SPECIES_IS_WHITELISTED | SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION
 	appearance_flags = HAS_EYE_COLOR | HAS_HAIR_COLOR
 
 /datum/species/vox/pariah/get_bodytype(var/mob/living/carbon/human/H)

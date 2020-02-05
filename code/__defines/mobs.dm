@@ -291,7 +291,7 @@
 #define SPECIES_DIONA       "Diona"
 #define SPECIES_VOX         "Vox"
 #define SPECIES_VOX_ARMALIS "Vox Armalis"
-#define SPECIES_VOXPARIAH "Vox Pariah"
+#define SPECIES_VOXPARIAH 	"Vox Pariah"
 #define SPECIES_IPC         "Machine"
 #define SPECIES_UNATHI      "Unathi"
 #define SPECIES_SERGAL      "Sergal"
