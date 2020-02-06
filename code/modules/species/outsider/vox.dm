@@ -134,6 +134,13 @@
 	rarity_value = 0.1
 	speech_chance = 60        // No volume control.
 	siemens_coefficient = 0.5 // Ragged scaleless patches.
+	unarmed_types = list(
+		/datum/unarmed_attack/stomp,
+		/datum/unarmed_attack/kick,
+		/datum/unarmed_attack/claws/,
+		/datum/unarmed_attack/punch,
+		/datum/unarmed_attack/bite/
+	)
 
 	oxy_mod = 1.4
 	brute_mod = 1.3

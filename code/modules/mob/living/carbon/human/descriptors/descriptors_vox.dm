@@ -39,16 +39,16 @@ datum/mob_descriptor/pariah_stink
 	chargen_label = "smell (rank)"
 	skip_species_mention = TRUE
 	standalone_value_descriptors = list(
-		"musky",
-		"smelly",
+		"strong-smelling",
 		"malodorous",
+		"fetid",
 		"reeking",
 		"disgusting"
 		)
 	chargen_value_descriptors = list(
-		"musky"  =      1,
-		"smelly" =      2,
-		"malodorous" =  3,
+		"strong-smelling"  =      1,
+		"malodorous" =      2,
+		"fetid" =  3,
 		"reeking" =     4,
 		"disgusting" =  5
 		)
