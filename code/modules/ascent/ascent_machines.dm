@@ -182,7 +182,7 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 	icon_state = "core1"
 	color = COLOR_PURPLE
 	var/on = TRUE
-	var/output_power = 1 GIGAWATTS //it's the future, and this is a god darn fusion reactor. Why would it produce measly kilowatts?
+	var/output_power = 45 MEGAWATTS //it's the future, and this is a god darn fusion reactor. Why would it produce measly kilowatts?
 	var/image/field_image
 
 /obj/machinery/power/ascent_reactor/attack_hand(mob/user)

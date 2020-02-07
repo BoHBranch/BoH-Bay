@@ -1441,7 +1441,6 @@
 #include "code\modules\boh\ascent2\projectiles.dm"
 #include "code\modules\boh\ascent2\structures.dm"
 #include "code\modules\boh\ascent2\turf.dm"
-#include "code\modules\boh\cbrn\equipment.dm"
 #include "code\modules\boh\culture_descriptor\culture\cultures_sergal.dm"
 #include "code\modules\boh\culture_descriptor\faction\factions_human_boh.dm"
 #include "code\modules\boh\culture_descriptor\faction\factions_sergal.dm"

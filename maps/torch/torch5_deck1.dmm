@@ -8256,10 +8256,7 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
-/obj/item/clothing/mask/gas/cbrn,
-/obj/item/clothing/mask/gas/cbrn,
-/obj/item/clothing/suit/bio_suit/cbrn,
-/obj/item/clothing/suit/bio_suit/cbrn,
+/obj/item/clothing/accessory/armorplate/shock,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
 "anu" = (
