@@ -127,3 +127,4 @@
 #define GAS_STEAM				"water"
 #define GAS_PHORON				"phoron"
 #define GAS_HFC					"heptafluoropropane"
+#define GAS_SF4					"sulfur_tetrafluoride"

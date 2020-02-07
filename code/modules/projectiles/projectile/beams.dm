@@ -273,9 +273,9 @@
 
 /obj/item/projectile/beam/particle/small
 	name = "particle beam"
-	damage = 20
-	armor_penetration = 20
-	penetration_modifier = 0.3
+	damage = 25
+	armor_penetration = 30
+	penetration_modifier = 0.4
 
 /obj/item/projectile/beam/darkmatter
 	name = "dark matter bolt"

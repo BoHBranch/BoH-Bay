@@ -4,7 +4,7 @@
 
 /datum/reagent/cryobromide
 	name = "Hydrocarthime-Bromine"
-	description = "A golden, near magical looking fluid designed to manipulate inhuman organs. Trying this on a Human probably isn't a good idea."
+	description = "A golden, near magical looking fluid designed to manipulate inhuman organs."
 	taste_description = "paint chips"
 	reagent_state = LIQUID
 	color = "#e6d819"
@@ -17,17 +17,12 @@
 	value = 12
 
 /datum/reagent/cryobromide/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
-	if(alien != IS_MANTID)
-		M.make_jittery(3)
-		M.make_dizzy(3)
-		M.seizure()
-	else
-		M.add_chemical_effect(CE_CRYO, 1)
-		if(M.bodytemperature < 170)
-			M.adjustCloneLoss(-100 * removed)
-			M.add_chemical_effect(CE_OXYGENATED, 2)
-			M.heal_organ_damage(85 * removed, 85 * removed)
-			M.add_chemical_effect(CE_PULSE, -2)
+	M.add_chemical_effect(CE_CRYO, 1)
+	if(M.bodytemperature < 170)
+		M.adjustCloneLoss(-100 * removed)
+		M.add_chemical_effect(CE_OXYGENATED, 2)
+		M.heal_organ_damage(85 * removed, 85 * removed)
+		M.add_chemical_effect(CE_PULSE, -2)
 
 //beaker
 /obj/item/weapon/reagent_containers/glass/beaker/cryobromide
@@ -41,7 +36,7 @@
 /////////
 /datum/reagent/crystaltram
 	name = "Crystal Brothime"
-	description = "A golden, near magical looking bit of crystal designed to manipulate inhuman organs. Trying this on a Human probably isn't a good idea."
+	description = "A golden, near magical looking bit of crystal designed to manipulate inhuman organs."
 	taste_description = "paint chips"
 	reagent_state = LIQUID
 	color = "#e6d819"
@@ -53,16 +48,9 @@
 	value = 6
 
 /datum/reagent/cryobromide/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
-	if(alien != IS_MANTID)
-		M.make_jittery(1)
-		M.make_dizzy(1)
-		M.seizure()
-	else
-		M.add_chemical_effect(CE_STABLE)
-		M.add_chemical_effect(CE_PAINKILLER, 5)
-		M.add_chemical_effect(CE_OXYGENATED, 2)
-		M.add_chemical_effect(CE_BLOODRESTORE, 1)
-		M.heal_organ_damage(5 * removed, 5 * removed)
+	if(alien != IS_DIONA)
+		M.heal_organ_damage(24 * removed, 24 * removed)
+		M.add_chemical_effect(CE_PAINKILLER, 45)
 
 //hypo
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent
@@ -81,7 +69,8 @@
 	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,
 	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,
 	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,
-	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent
+	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,
+	/obj/item/stack/medical/resin/large
 		)
 	instructions = {"
 	1) Tear open the emergency medical pack using the easy open tab at the top.\n\
