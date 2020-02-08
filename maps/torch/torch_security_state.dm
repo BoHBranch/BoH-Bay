@@ -84,7 +84,7 @@
 	name = "code blue"
 	icon = 'icons/misc/security_state.dmi'
 
-	light_max_bright = 0.5
+	light_max_bright = 0.25
 	light_inner_range = 1
 	light_outer_range = 2
 	light_color_alarm = COLOR_BLUE
@@ -111,10 +111,10 @@
 	overlay_status_display = "status_display_red"
 	security_level_lightmode = "red"
 
-	up_description = "A severe emergency has occurred. All staff are to report to their supervisor for orders. All crew should obey orders from relevant emergency personnel. Security personnel are permitted to search staff and facilities, and may have weapons unholstered at any time. Saferooms have been unbolted."
+	up_description = "General quarters! General quarters! All hands are to report to their stations. All crew should obey orders from relevant emergency personnel. Security personnel are permitted to search staff and facilities, and may have weapons unholstered at any time. Saferooms have been unbolted."
 	psionic_control_level = PSI_IMPLANT_DISABLED
 
-	var/static/datum/announcement/priority/security/security_announcement_red = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/misc/redalert1.ogg'))
+	var/static/datum/announcement/priority/security/security_announcement_red = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/misc/gq.ogg'))
 
 /decl/security_level/default/torchdept/code_red/switching_up_to()
 	security_announcement_red.Announce(up_description, "Attention! Code red alert procedures now in effect!")
