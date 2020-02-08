@@ -311,7 +311,7 @@
 #define SPECIES_BOOSTER     "Booster"
 
 #define SPECIES_AKULA       "Akula"
-#define SPECIES_CUSTOM      "Custom Species"
+#define SPECIES_CUSTOM      "Genemodder"
 #define SPECIES_VULP        "Vulpkanin"
 #define SPECIES_VASS        "Vasilissan"
 #define SPECIES_TAJ         "Tajaran"
