@@ -17,12 +17,17 @@
 	value = 12
 
 /datum/reagent/cryobromide/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
-	M.add_chemical_effect(CE_CRYO, 1)
-	if(M.bodytemperature < 170)
-		M.adjustCloneLoss(-100 * removed)
-		M.add_chemical_effect(CE_OXYGENATED, 2)
-		M.heal_organ_damage(85 * removed, 85 * removed)
-		M.add_chemical_effect(CE_PULSE, -2)
+	if(alien != IS_MANTID)
+		M.make_jittery(3)
+		M.make_dizzy(3)
+		M.seizure()
+	else
+		M.add_chemical_effect(CE_CRYO, 1)
+		if(M.bodytemperature < 170)
+			M.adjustCloneLoss(-100 * removed)
+			M.add_chemical_effect(CE_OXYGENATED, 2)
+			M.heal_organ_damage(85 * removed)
+			M.add_chemical_effect(CE_PULSE, -2)
 
 //beaker
 /obj/item/weapon/reagent_containers/glass/beaker/cryobromide
@@ -47,10 +52,17 @@
 	heating_message = "violently explodes!"
 	value = 6
 
-/datum/reagent/cryobromide/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
-	if(alien != IS_DIONA)
-		M.heal_organ_damage(24 * removed, 24 * removed)
-		M.add_chemical_effect(CE_PAINKILLER, 45)
+/datum/reagent/crystaltram/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien != IS_MANTID)
+		M.make_jittery(1)
+		M.make_dizzy(1)
+		M.seizure()
+	else
+		M.add_chemical_effect(CE_STABLE)
+		M.add_chemical_effect(CE_PAINKILLER, 5)
+		M.add_chemical_effect(CE_OXYGENATED, 2)
+		M.add_chemical_effect(CE_BLOODRESTORE, 1)
+		M.heal_organ_damage(5 * removed)
 
 //hypo
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent
@@ -69,8 +81,7 @@
 	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,
 	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,
 	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,
-	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent,
-	/obj/item/stack/medical/resin/large
+	/obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent
 		)
 	instructions = {"
 	1) Tear open the emergency medical pack using the easy open tab at the top.\n\
