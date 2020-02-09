@@ -120,15 +120,12 @@
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_south_spike)
 "at" = (
-/obj/machinery/light/ascent{
+/obj/structure/window/phoronreinforced{
 	dir = 8
 	},
-/obj/structure/window/phoronreinforced{
-	dir = 4
-	},
-/obj/structure/closet/crate/freezer/meat/ascent,
+/obj/structure/closet/ascentproper,
 /turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_south)
+/area/ship/ascent/subdeck_south_spike)
 "au" = (
 /obj/machinery/atmospherics/unary/vent_pump/on/ascent{
 	dir = 1;
@@ -185,10 +182,7 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_north_spike)
 "aC" = (
-/obj/structure/window/phoronreinforced{
-	dir = 8
-	},
-/obj/structure/closet/crate/freezer/meat/ascent,
+/obj/structure/closet/ascentproper,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_south_spike)
 "aD" = (
@@ -478,9 +472,15 @@
 /turf/simulated/floor/reinforced/airless,
 /area/ship/ascent/subdeck_atmos)
 "bl" = (
-/obj/structure/closet/crate/freezer/meat/ascent,
+/obj/machinery/light/ascent{
+	dir = 8
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
+/obj/structure/closet/ascentproper,
 /turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_south_spike)
+/area/ship/ascent/subdeck_south)
 "bm" = (
 /obj/machinery/door/airlock/ascent,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -831,8 +831,13 @@
 /area/ship/ascent/subdeck_hospital)
 "bX" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/weapon/reagent_containers/glass/beaker/cryobromide,
-/obj/item/weapon/reagent_containers/glass/beaker/cryobromide,
+/obj/item/weapon/reagent_containers/glass/beaker/cryobromide{
+	item_state = "beaker";
+	name = "cryo beaker"
+	},
+/obj/item/weapon/reagent_containers/glass/beaker/cryobromide{
+	name = "cryo beaker"
+	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
 "bY" = (
@@ -1653,6 +1658,13 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_south)
+"dC" = (
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
+/obj/structure/closet/ascentproper,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_south)
 "dD" = (
 /obj/machinery/light/ascent{
 	dir = 4
@@ -1895,6 +1907,7 @@
 /obj/structure/window/phoronreinforced{
 	dir = 8
 	},
+/obj/structure/closet/crate/solar,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_north)
 "ed" = (
@@ -1931,10 +1944,7 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_south)
 "ej" = (
-/obj/structure/window/phoronreinforced{
-	dir = 4
-	},
-/obj/structure/closet/crate/freezer/meat/ascent,
+/obj/structure/closet/ascentproper,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_south)
 "ek" = (
@@ -2129,10 +2139,6 @@
 	name = "flesh mincing device";
 	req_access = list("ACCESS_ASCENT")
 	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_south)
-"eP" = (
-/obj/structure/closet/crate/freezer/meat/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_south)
 "eQ" = (
@@ -6395,7 +6401,7 @@ aa
 aa
 ae
 dc
-aC
+at
 ae
 aa
 aa
@@ -6510,14 +6516,14 @@ aa
 aa
 aa
 aa
-aa
+aQ
 aa
 aa
 aa
 aa
 ae
 dc
-bl
+aC
 ae
 aa
 aa
@@ -6631,9 +6637,9 @@ ac
 aa
 aa
 aa
-aa
-aa
-aa
+aQ
+aQ
+aQ
 aa
 aa
 aa
@@ -6752,11 +6758,11 @@ ag
 ac
 aa
 aa
-aa
-aa
-aa
-aa
-aa
+aQ
+aQ
+aQ
+aQ
+aQ
 aa
 aa
 ae
@@ -6873,13 +6879,13 @@ bh
 an
 ac
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aQ
+aQ
+aQ
+aQ
+aQ
+aQ
+aQ
 aa
 ae
 de
@@ -6994,15 +7000,15 @@ ac
 cp
 cB
 ac
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aQ
+aQ
+aQ
+aQ
+aQ
+aQ
+aQ
+aQ
+aQ
 ae
 df
 au
@@ -7117,13 +7123,13 @@ ax
 ck
 ax
 ax
-ah
+ax
 aQ
 aQ
 aQ
 aQ
 aQ
-af
+bO
 bO
 bO
 dw
@@ -7249,8 +7255,8 @@ aS
 bO
 cy
 cR
-at
-ej
+bl
+dC
 bO
 bO
 aa
@@ -7983,7 +7989,7 @@ cS
 cS
 cS
 ei
-bO
+af
 aa
 aa
 aa
@@ -8470,7 +8476,7 @@ cS
 dv
 cf
 bY
-eP
+ej
 bt
 ai
 ai

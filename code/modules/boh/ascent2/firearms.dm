@@ -13,5 +13,5 @@
 	slot_flags = SLOT_DENYPOCKET | SLOT_HOLSTER
 	projectile_type = /obj/item/projectile/beam/particle/defence
 	firemodes = list(
-		list(mode_name="shock",   projectile_type = /obj/item/projectile/beam/particle/defence),
+		list(mode_name="primary",   projectile_type = /obj/item/projectile/beam/particle/defence),
 		)

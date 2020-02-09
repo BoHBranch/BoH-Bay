@@ -232,10 +232,6 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_starboard_prow)
-"aG" = (
-/obj/effect/wallframe_spawn/reinforced_phoron/hull,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_hallway)
 "aH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -247,7 +243,7 @@
 /obj/machinery/atmospherics/pipe/zpipe/down/supply{
 	dir = 4
 	},
-/turf/space,
+/turf/simulated/open/mantid,
 /area/ship/ascent/fore_starboard_prow)
 "aJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -3288,7 +3284,7 @@
 	color = "#ff0000";
 	dir = 4
 	},
-/turf/space,
+/turf/simulated/open/mantid,
 /area/ship/ascent/fore_port_prow)
 "gJ" = (
 /obj/structure/table/steel_reinforced,
@@ -3311,6 +3307,10 @@
 /obj/machinery/atmospherics/portables_connector,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/engineering)
+"gM" = (
+/obj/item/weapon/storage/bag/trash/purple/ascent,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_port_spike)
 "gN" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan,
@@ -4756,10 +4756,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
-"FN" = (
-/obj/item/weapon/storage/bag/trash/purple/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_port_spike)
 "FO" = (
 /obj/structure/bed/chair/padded/purple/ascent{
 	dir = 1
@@ -5050,10 +5046,6 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/shuttle_starboard)
-"Sv" = (
-/obj/structure/closet/crate/freezer/meat/ascent,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_spike)
 "TL" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -9346,7 +9338,7 @@ aa
 aa
 bz
 fR
-FN
+hs
 bz
 aa
 aa
@@ -9468,7 +9460,7 @@ aa
 aa
 bz
 fR
-Sv
+gM
 bz
 aa
 aa
@@ -9702,13 +9694,13 @@ bh
 cw
 av
 aa
+jT
 aa
 aa
 aa
 aa
 aa
-aa
-aa
+jT
 aa
 bz
 hB
@@ -9823,15 +9815,15 @@ av
 cp
 cB
 av
+jT
+jT
+jT
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+jT
+jT
+jT
 bz
 hC
 ib
@@ -9946,13 +9938,13 @@ ah
 cE
 ah
 ah
-aG
+jT
 jT
 jT
 dD
 jT
 jT
-aG
+jT
 cy
 cy
 hG

@@ -55,14 +55,16 @@
 /datum/reagent/crystaltram/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien != IS_MANTID)
 		M.make_jittery(1)
-		M.make_dizzy(1)
+		M.make_dizzy(3)
 		M.seizure()
 	else
 		M.add_chemical_effect(CE_STABLE)
 		M.add_chemical_effect(CE_PAINKILLER, 5)
 		M.add_chemical_effect(CE_OXYGENATED, 2)
 		M.add_chemical_effect(CE_BLOODRESTORE, 1)
-		M.heal_organ_damage(5 * removed)
+		M.heal_organ_damage(25 * removed)
+		M.make_dizzy(1)
+		M.Weaken(2)
 
 //hypo
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent
