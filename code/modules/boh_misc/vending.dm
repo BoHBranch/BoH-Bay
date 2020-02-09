@@ -33,5 +33,6 @@
 		/obj/item/clothing/accessory/storage/pouches/large = 4,
 		/obj/item/clothing/accessory/ubac = 24,
 		/obj/item/clothing/accessory/armorplate/medium = 6,
-		/obj/item/clothing/accessory/armorplate/tactical = 2)
+		/obj/item/clothing/accessory/armorplate/tactical = 2,
+		/obj/item/clothing/accessory/armorplate/shock = 2)
 	contraband = list(/obj/item/clothing/accessory/storage/bandolier = 2,/obj/item/clothing/accessory/storage/drop_pouches/black = 2)

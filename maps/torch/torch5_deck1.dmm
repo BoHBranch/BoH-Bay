@@ -1061,11 +1061,6 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/table/rack,
-/obj/structure/window/reinforced/tinted{
-	desc = "A window. This one appears to have 'Break in case of emergency!' stamped on a high visibility plate.";
-	dir = 4;
-	name = "heavy reinforced window"
-	},
 /obj/item/weapon/gun/projectile/shotgun/sabotgun,
 /obj/item/weapon/storage/box/ammo/sabotbox,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -1636,7 +1631,7 @@
 /obj/item/weapon/gun/energy/gun/secure,
 /obj/structure/table/rack,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/security/armoury)
+/area/maintenance/firstdeck/foreport)
 "acP" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -1906,13 +1901,8 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "adm" = (
-/obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
-	},
-/obj/structure/table/rack,
-/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b,
-/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/shieldwallgen,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "adn" = (
@@ -2286,14 +2276,11 @@
 	dir = 8;
 	health = 1e+006
 	},
-/obj/structure/window/reinforced,
-/obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/table/rack,
-/obj/item/weapon/storage/box/fragshells,
-/obj/item/weapon/storage/box/fragshells,
-/obj/item/weapon/gun/launcher/grenade,
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b,
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/security/armoury)
+/area/maintenance/firstdeck/foreport)
 "adR" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	icon_state = "intact";
@@ -5642,6 +5629,10 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/machinery/camera/network/security{
+	c_tag = "Psyker Holding";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/security/brig/psyker)
 "ajt" = (
@@ -7188,6 +7179,35 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/center)
+"alG" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/button/flasher{
+	id_tag = "perm2flash";
+	name = "Perma Flash Control";
+	pixel_x = -6;
+	pixel_y = 24;
+	req_access = list("ACCESS_BRIG")
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/camera/network/security{
+	c_tag = "Perma";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "alH" = (
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/gunnery/ammo)
@@ -8223,6 +8243,22 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
+"ant" = (
+/obj/structure/table/rack/shelf/steel,
+/obj/effect/floor_decal/techfloor{
+	icon_state = "techfloor_edges";
+	dir = 4
+	},
+/obj/effect/floor_decal/techfloor{
+	icon_state = "techfloor_edges";
+	dir = 8
+	},
+/obj/item/device/radio/intercom{
+	pixel_y = 23
+	},
+/obj/item/clothing/accessory/armorplate/shock,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/command/armoury/tactical)
 "anu" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -8245,6 +8281,22 @@
 "anw" = (
 /turf/simulated/wall/prepainted,
 /area/security/brig/chamber)
+"anx" = (
+/obj/structure/window/reinforced{
+	dir = 8;
+	health = 1e+006
+	},
+/obj/structure/window/reinforced,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/table/rack,
+/obj/item/weapon/storage/box/fragshells,
+/obj/item/weapon/storage/box/fragshells,
+/obj/item/weapon/gun/launcher/grenade,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/maintenance/firstdeck/foreport)
+"any" = (
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "anz" = (
 /obj/machinery/space_heater,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -8298,34 +8350,28 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "anF" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
-	},
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "east bump";
-	pixel_x = 24
-	},
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/machinery/button/flasher{
-	id_tag = "perm2flash";
-	name = "Perma Flash Control";
-	pixel_x = -6;
-	pixel_y = 24;
-	req_access = list("ACCESS_BRIG")
-	},
 /obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "anG" = (
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/security/brig/perma)
+"anH" = (
+/obj/machinery/fabricator/hacked,
+/obj/machinery/power/apc{
+	dir = 2;
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/structure/cable/green,
+/obj/effect/floor_decal/corner/red/mono,
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "anI" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/machinery/alarm{
@@ -9907,24 +9953,6 @@
 /obj/item/modular_computer/tablet/lease/preset/command,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/sea/marine)
-"aqD" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
-"aqE" = (
-/obj/machinery/fabricator/hacked,
-/obj/machinery/power/apc{
-	dir = 2;
-	name = "south bump";
-	pixel_y = -24
-	},
-/obj/structure/cable/green,
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "aqF" = (
 /obj/machinery/ai_status_display,
 /turf/simulated/wall/r_wall/prepainted,
@@ -13750,9 +13778,6 @@
 "aJS" = (
 /turf/simulated/wall/prepainted,
 /area/maintenance/firstdeck/centralport)
-"aKv" = (
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "aKA" = (
 /obj/machinery/door/airlock/multi_tile/glass/security{
 	name = "Brig Wing"
@@ -29128,20 +29153,6 @@
 "ryb" = (
 /turf/simulated/floor/reinforced,
 /area/rnd/misc_lab)
-"ryt" = (
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 4
-	},
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 8
-	},
-/obj/item/device/radio/intercom{
-	pixel_y = 23
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/command/armoury/tactical)
 "rzb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -40010,9 +40021,9 @@ tAS
 tAS
 tAS
 abH
-tAS
-tAS
-tAS
+acO
+adQ
+anx
 tAS
 tAS
 tAS
@@ -40212,9 +40223,9 @@ aLv
 aLv
 tiQ
 ano
-acO
-adm
-adQ
+aPu
+aPu
+aPu
 tAS
 tAS
 tAS
@@ -40414,8 +40425,8 @@ aLv
 abQ
 tiQ
 hLf
-aPu
-aPu
+adm
+adm
 aPu
 aed
 tAS
@@ -40618,7 +40629,7 @@ csy
 oLz
 adh
 adH
-aKv
+any
 aem
 tAS
 tAS
@@ -40820,8 +40831,8 @@ hzl
 oXv
 adj
 adL
-aqD
-aqE
+anF
+anH
 tAS
 tAS
 aaa
@@ -41022,7 +41033,7 @@ tiQ
 aOF
 adl
 adO
-aKv
+any
 aaA
 tAS
 tAS
@@ -43852,7 +43863,7 @@ aNH
 afD
 amI
 anw
-anF
+alG
 anG
 anT
 anQ
@@ -60792,8 +60803,8 @@ aaa
 acd
 acd
 dVw
-dVw
-ryt
+ant
+svH
 svH
 svH
 njm

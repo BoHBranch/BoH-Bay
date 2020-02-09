@@ -150,6 +150,7 @@
 "cT" = (/obj/machinery/chemical_dispenser/ert,/turf/simulated/floor/tiled/skrell/white,/area/ship/skrellscoutship/crew/medbay)
 "cU" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/skrell/orange,/area/ship/skrellscoutship/crew/kitchen)
 "cV" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/obj/structure/bed/chair/padded/red{icon_state = "chair_preview"; dir = 4},/turf/simulated/floor/tiled/skrell/orange,/area/ship/skrellscoutship/crew/quarters)
+"cW" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/turf/simulated/floor/tiled/skrell,/area/ship/skrellscoutship/crew/hallway/d2)
 "cX" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/obj/structure/table/glass,/turf/simulated/floor/tiled/skrell/orange,/area/ship/skrellscoutship/crew/kitchen)
 "cY" = (/obj/machinery/alarm/skrell{dir = 8; pixel_x = 24},/turf/simulated/floor/tiled/skrell/orange,/area/ship/skrellscoutship/crew/kitchen)
 "cZ" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/skrell,/area/ship/skrellscoutship/crew/hallway/d2)
@@ -183,7 +184,6 @@
 "dM" = (/obj/machinery/atmospherics/pipe/simple/visible/universal{dir = 4},/turf/simulated/floor/tiled/skrell/green,/area/ship/skrellscoutship/maintenance/atmos)
 "dN" = (/obj/machinery/atmospherics/pipe/manifold/visible/red{icon_state = "map"; dir = 1},/obj/machinery/portable_atmospherics/powered/scrubber,/turf/simulated/floor/tiled/skrell/green,/area/ship/skrellscoutship/maintenance/atmos)
 "dP" = (/obj/machinery/atmospherics/binary/pump{dir = 4},/turf/simulated/floor/tiled/skrell/green,/area/ship/skrellscoutship/maintenance/atmos)
-"dQ" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/turf/simulated/floor/tiled/skrell,/area/ship/skrellscoutship/crew/hallway/d2)
 "dR" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 1; frequency = 1292; id_tag = "xil_shuttle_pump"},/turf/simulated/floor/plating,/area/ship/skrellscoutshuttle)
 "dS" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8; level = 2},/turf/simulated/floor/reinforced/airless,/area/ship/skrellscoutship/maintenance/atmos)
 "dV" = (/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/skrell,/area/ship/skrellscoutship/crew/hallway/d2)
@@ -390,7 +390,7 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacrcv
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaIKIKrqfkfmfocyfxdVZEEjfcfyfzfAfBZEbcdIciePdKbALYckCJdNdPaKfGdSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaIKIKIKIKIKIKIKXjZEZEZEZEZEZEZEZEdZeweeRncEbJeiejdMekdpcKRnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaDjDjeoTEdBdHeLfpeBTEpteoTETEnceCcQdfdodvKpefSsSsSsdxefRnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaDjDjTETEepeqDjeMDjcdfgyXyXZryXdQdWTERndYeGMzeHeHeHeHeSRnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaDjDjTETEepeqDjeMDjcdfgyXyXZryXcWdWTERndYeGMzeHeHeHeHeSRnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaDjenTEeKJxbTbUDjXbXbXbcSXbcSXbdiXbRneWfrjCeleVPweVeVRnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaDjDjcdfgbYDjDjDjXbviacUQcmcpdwebegRnRnRnRnRnRnRnRnRnRnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaDjDjTETEcuVUTEXbeydAGFesdAdAevexXbXbfFaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
