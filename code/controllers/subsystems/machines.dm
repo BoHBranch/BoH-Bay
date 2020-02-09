@@ -54,9 +54,31 @@ SUBSYSTEM_DEF(machines)
 	var/list/processing  = list() // These are the machines which are processing.
 	var/list/current_run = list()
 
+	// Cooking stuff. Not substantial enough to get its own SS, so it's shoved in here.
+	var/list/recipe_datums = list()
+
+#define ADD_TO_RDATUMS(i,t) if (R.appliance & i) { LAZYADD(recipe_datums["[i]"], t); added++; }
+
+/datum/controller/subsystem/machines/proc/setup_recipes()
+	for (var/type in subtypesof(/datum/recipe))
+		var/datum/recipe/R = new type
+		var/added = 0
+		ADD_TO_RDATUMS(MICROWAVE, R)
+		ADD_TO_RDATUMS(FRYER, R)
+		ADD_TO_RDATUMS(OVEN, R)
+		ADD_TO_RDATUMS(CANDYMAKER, R)
+		ADD_TO_RDATUMS(CEREALMAKER, R)
+		ADD_TO_RDATUMS(PAN, R)
+		if (!added)
+			log_debug("SSmachines: warning: type '[type]' does not have a valid machine type.")
+			qdel(R)
+#undef ADD_TO_RDATUMS
+
+
 /datum/controller/subsystem/machines/Initialize(timeofday)
 	makepowernets()
 	setup_atmos_machinery(machinery)
+	setup_recipes()
 	fire()
 	..()
 

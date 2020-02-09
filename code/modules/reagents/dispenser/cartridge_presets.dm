@@ -38,7 +38,7 @@
 	vodka		spawn_reagent = /datum/reagent/ethanol/vodka
 	gin			spawn_reagent = /datum/reagent/ethanol/gin
 	rum			spawn_reagent = /datum/reagent/ethanol/rum
-	tequila		spawn_reagent = /datum/reagent/ethanol/tequilla
+	tequila		spawn_reagent = /datum/reagent/ethanol/tequila
 	vermouth	spawn_reagent = /datum/reagent/ethanol/vermouth
 	cognac		spawn_reagent = /datum/reagent/ethanol/cognac
 	ale			spawn_reagent = /datum/reagent/ethanol/ale

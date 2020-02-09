@@ -562,7 +562,7 @@ default behaviour is:
 	if(!can_pull())
 		stop_pulling()
 		return
-	
+
 	if (!isliving(pulling))
 		step(pulling, get_dir(pulling.loc, old_loc))
 	else
@@ -652,8 +652,8 @@ default behaviour is:
 		to_chat(src, "<span class='warning'>You extricate yourself from \the [holster].</span>")
 		H.forceMove(get_turf(H))
 	else if(istype(H.loc,/obj))
-		if(istype(H.loc, /obj/machinery/cooker))
-			var/obj/machinery/cooker/C = H.loc
+		if(istype(H.loc, /obj/machinery/appliance/cooker))
+			var/obj/machinery/appliance/cooker/C = H.loc
 			C.cooking_obj = null
 			C.check_cooking_obj()
 		to_chat(src, "<span class='warning'>You struggle free of \the [H.loc].</span>")

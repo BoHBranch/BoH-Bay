@@ -271,3 +271,18 @@
 #ifndef HTTP_POST_DLL_LOCATION
 #define HTTP_POST_DLL_LOCATION (world.system_type == MS_WINDOWS ? WINDOWS_HTTP_POST_DLL_LOCATION : UNIX_HTTP_POST_DLL_LOCATION)
 #endif
+
+//Recipe type defines. Used to determine what machine makes them
+#define MICROWAVE			0x1
+#define FRYER				0x2
+#define OVEN				0x4
+#define CANDYMAKER			0x8
+#define CEREALMAKER			0x10
+#define PAN					0x20
+
+// Span define, ported from Aurora
+#define span(class, text) ("<span class='[class]'>[text]</span>")
+
+// NULL_OR_EQUAL define, ported from Aurora
+#define NULL_OR_EQUAL(self,other) (!(self) || (self) == (other))
+

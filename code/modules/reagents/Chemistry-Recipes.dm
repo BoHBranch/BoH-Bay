@@ -1531,7 +1531,7 @@
 /datum/chemical_reaction/soydough
 	name = "Soy dough"
 	result = null
-	required_reagents = list(/datum/reagent/nutriment/softtofu = 3, /datum/reagent/nutriment/flour = 10, /datum/reagent/water = 10)
+	required_reagents = list(/datum/reagent/nutriment/protein/tofu = 3, /datum/reagent/nutriment/flour = 10, /datum/reagent/water = 10)
 	result_amount = 1
 	mix_message = "The solution folds and thickens into a large ball of dough."
 
@@ -1545,22 +1545,22 @@
 
 /datum/chemical_reaction/batter
 	name = "Batter"
-	result = /datum/reagent/nutriment/batter
-	required_reagents = list(/datum/reagent/nutriment/protein/egg = 3, /datum/reagent/nutriment/flour = 5, /datum/reagent/drink/milk = 5)
+	result = /datum/reagent/nutriment/coating/batter
+	required_reagents = list(/datum/reagent/nutriment/protein/egg = 3, /datum/reagent/nutriment/flour = 10, /datum/reagent/water = 5, /datum/reagent/sodiumchloride = 2)
 	result_amount = 10
 	mix_message = "The solution thickens into a glossy batter."
 
 /datum/chemical_reaction/cakebatter
 	name = "Cake Batter"
-	result = /datum/reagent/nutriment/batter/cakebatter
-	required_reagents = list(/datum/reagent/sugar = 1, /datum/reagent/nutriment/batter = 2)
+	result = /datum/reagent/nutriment/cakebatter
+	required_reagents = list(/datum/reagent/sugar = 1, /datum/reagent/nutriment/coating/batter = 2)
 	result_amount = 3
 	mix_message = "The sugar lightens the batter and gives it a sweet smell."
 
 /datum/chemical_reaction/soybatter
 	name = "Vegan Batter"
-	result = /datum/reagent/nutriment/batter
-	required_reagents = list(/datum/reagent/nutriment/softtofu = 3, /datum/reagent/nutriment/flour = 5, /datum/reagent/drink/milk = 5)
+	result = /datum/reagent/nutriment/coating/batter
+	required_reagents = list(/datum/reagent/nutriment/protein/tofu = 3, /datum/reagent/nutriment/flour = 10, /datum/reagent/water = 5, /datum/reagent/sodiumchloride = 2)
 	result_amount = 10
 	mix_message = "The solution thickens into a glossy batter."
 
@@ -1603,7 +1603,7 @@
 /datum/chemical_reaction/patron
 	name = "Patron"
 	result = /datum/reagent/ethanol/patron
-	required_reagents = list(/datum/reagent/ethanol/tequilla = 10, /datum/reagent/silver = 1)
+	required_reagents = list(/datum/reagent/ethanol/tequila = 10, /datum/reagent/silver = 1)
 	result_amount = 10
 	mix_message = "The silver flakes and settles in the tequila."
 
@@ -1812,13 +1812,13 @@
 /datum/chemical_reaction/brave_bull
 	name = "Brave Bull"
 	result = /datum/reagent/ethanol/coffee/brave_bull
-	required_reagents = list(/datum/reagent/ethanol/tequilla = 2, /datum/reagent/ethanol/coffee/kahlua = 1)
+	required_reagents = list(/datum/reagent/ethanol/tequila = 2, /datum/reagent/ethanol/coffee/kahlua = 1)
 	result_amount = 3
 
-/datum/chemical_reaction/tequilla_sunrise
-	name = "Tequilla Sunrise"
-	result = /datum/reagent/ethanol/tequilla_sunrise
-	required_reagents = list(/datum/reagent/ethanol/tequilla = 2, /datum/reagent/drink/juice/orange = 1)
+/datum/chemical_reaction/tequila_sunrise
+	name = "tequila Sunrise"
+	result = /datum/reagent/ethanol/tequila_sunrise
+	required_reagents = list(/datum/reagent/ethanol/tequila = 2, /datum/reagent/drink/juice/orange = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/phoron_special
@@ -1880,13 +1880,13 @@
 /datum/chemical_reaction/margarita
 	name = "Margarita"
 	result = /datum/reagent/ethanol/margarita
-	required_reagents = list(/datum/reagent/ethanol/tequilla = 2, /datum/reagent/drink/juice/lime = 1)
+	required_reagents = list(/datum/reagent/ethanol/tequila = 2, /datum/reagent/drink/juice/lime = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/longislandicedtea
 	name = "Long Island Iced Tea"
 	result = /datum/reagent/ethanol/longislandicedtea
-	required_reagents = list(/datum/reagent/ethanol/vodka = 1, /datum/reagent/ethanol/gin = 1, /datum/reagent/ethanol/tequilla = 1, /datum/reagent/ethanol/cuba_libre = 3)
+	required_reagents = list(/datum/reagent/ethanol/vodka = 1, /datum/reagent/ethanol/gin = 1, /datum/reagent/ethanol/tequila = 1, /datum/reagent/ethanol/cuba_libre = 3)
 	result_amount = 6
 
 /datum/chemical_reaction/threemileisland

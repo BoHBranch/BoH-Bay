@@ -68,8 +68,11 @@
 	name = "Animal Protein"
 	taste_description = "some sort of protein"
 	color = "#440000"
+	var/skrell_toxic = TRUE
 
 /datum/reagent/nutriment/protein/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
+	if(!skrell_toxic)
+		return ..()
 	switch(alien)
 		if(IS_SKRELL)
 			M.adjustToxLoss(0.5 * removed)
@@ -82,7 +85,7 @@
 	M.adjust_nutrition(nutriment_factor * removed)
 
 /datum/reagent/nutriment/protein/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
-	if(alien && alien == IS_SKRELL)
+	if(alien && alien == IS_SKRELL && skrell_toxic)
 		M.adjustToxLoss(2 * removed)
 		return
 	..()
@@ -92,13 +95,107 @@
 	taste_description = "egg"
 	color = "#ffffaa"
 
-//vegetamarian alternative that is safe for skrell to ingest//rewired it from its intended nutriment/protein/egg/softtofu because it would not actually work, going with plan B, more recipes.
+/datum/reagent/nutriment/protein/cheese // Also bad for skrell.
+	name = "cheese"
+	color = "#EDB91F"
+	taste_description = "cheese"
 
-/datum/reagent/nutriment/softtofu
-	name = "plant protein"
+/datum/reagent/nutriment/protein/seafood // Good for Skrell!
+	name = "seafood protein"
+	id = "seafood"
+	color = "#f5f4e9"
+	taste_description = "fish"
+	skrell_toxic = FALSE
+
+/datum/reagent/nutriment/protein/tofu
+	name = "tofu protein"
 	description = "A gooey pale bean paste."
 	taste_description = "healthy sadness"
 	color = "#ffffff"
+	skrell_toxic = FALSE
+
+//Fats
+//=========================
+/datum/reagent/nutriment/triglyceride
+	name = "triglyceride"
+	id = "triglyceride"
+	description = "More commonly known as fat, the third macronutrient, with over double the energy content of carbs and protein"
+
+	reagent_state = SOLID
+	nutriment_factor = 27//The caloric ratio of carb/protein/fat is 4:4:9
+	color = "#CCCCCC"
+	taste_description = "fat"
+
+/datum/reagent/nutriment/triglyceride/oil
+	//Having this base class incase we want to add more variants of oil
+	name = "Oil"
+	description = "Oils are liquid fats."
+	reagent_state = LIQUID
+	color = "#c79705"
+	touch_met = 1.5
+	var/lastburnmessage = 0
+	taste_description = "some sort of oil"
+	taste_mult = 0.1
+
+/datum/reagent/nutriment/triglyceride/oil/initialize_data(var/newdata) // Called when the reagent is created.
+	..()
+	if (!data)
+		data = list("temperature" = T20C)
+
+//Handles setting the temperature when oils are mixed
+/datum/reagent/nutriment/triglyceride/oil/mix_data(var/newdata, var/newamount)
+
+	if (!data)
+		data = list()
+
+	var/ouramount = volume - newamount
+	if (ouramount <= 0 || !data["temperature"] || !volume)
+		//If we get here, then this reagent has just been created, just copy the temperature exactly
+		data["temperature"] = newdata["temperature"]
+
+	else
+		//Our temperature is set to the mean of the two mixtures, taking volume into account
+		var/total = (data["temperature"] * ouramount) + (newdata["temperature"] * newamount)
+		data["temperature"] = total / volume
+
+	return ..()
+
+
+//Calculates a scaling factor for scalding damage, based on the temperature of the oil and creature's heat resistance
+/datum/reagent/nutriment/triglyceride/oil/proc/heatdamage(var/mob/living/carbon/M)
+	var/threshold = 360//Human heatdamage threshold
+	var/datum/species/S = M.get_species(1)
+	if (S && istype(S))
+		threshold = S.heat_level_1
+
+	//If temperature is too low to burn, return a factor of 0. no damage
+	if (data["temperature"] < threshold)
+		return 0
+
+	//Step = degrees above heat level 1 for 1.0 multiplier
+	var/step = 60
+	if (S && istype(S))
+		step = (S.heat_level_2 - S.heat_level_1)*1.5
+
+	. = data["temperature"] - threshold
+	. /= step
+	. = min(., 2.5)//Cap multiplier at 2.5
+
+/datum/reagent/nutriment/triglyceride/oil/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
+	var/dfactor = heatdamage(M)
+	if (dfactor)
+		M.take_organ_damage(0, removed * 1.5 * dfactor)
+		data["temperature"] -= (6 * removed) / (1 + volume*0.1)//Cools off as it burns you
+		if (lastburnmessage+100 < world.time	)
+			to_chat(M, SPAN_DANGER("Searing hot oil burns you, wash it off quickly!"))
+			lastburnmessage = world.time
+
+
+/datum/reagent/nutriment/triglyceride/oil/corn
+	name = "Corn Oil"
+	id = "cornoil"
+	description = "An oil derived from corn."
+	taste_description = "corn oil"
 
 /datum/reagent/nutriment/honey
 	name = "Honey"
@@ -130,23 +227,7 @@
 		else
 			T.wet = 0
 
-/datum/reagent/nutriment/batter
-	name = "Batter"
-	description = "A gooey mixture of eggs and flour, a base for turning wheat into food."
-	taste_description = "blandness"
-	reagent_state = LIQUID
-	nutriment_factor = 3
-	color = "#ffd592"
-
-/datum/reagent/nutriment/batter/touch_turf(var/turf/simulated/T)
-	if(!istype(T, /turf/space))
-		new /obj/effect/decal/cleanable/pie_smudge(T)
-		if(T.wet > 1)
-			T.wet = min(T.wet, 1)
-		else
-			T.wet = 0
-
-/datum/reagent/nutriment/batter/cakebatter
+/datum/reagent/nutriment/cakebatter
 	name = "Cake Batter"
 	description = "A gooey mixture of eggs, flour and sugar, a important precursor to cake!"
 	taste_description = "sweetness"
@@ -517,6 +598,111 @@
 	color = "#efede8"
 	taste_mult = 2
 
+/*
+	Coatings are used in cooking. Dipping food items in a reagent container with a coating in it
+	allows it to be covered in that, which will add a masked overlay to the sprite.
+
+	Coatings have both a raw and a cooked image. Raw coating is generally unhealthy
+	Generally coatings are intended for deep frying foods
+*/
+
+/datum/reagent/nutriment/coating
+	nutriment_factor = 6 //Less dense than the food itself, but coatings still add extra calories
+	var/messaged = 0
+	var/icon_raw
+	var/icon_cooked
+	var/coated_adj = "coated"
+	var/cooked_name = "coating"
+	taste_description = "some sort of frying coating"
+
+/datum/reagent/nutriment/coating/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
+
+	//We'll assume that the batter isnt going to be regurgitated and eaten by someone else. Only show this once
+	if (data["cooked"] != 1)
+		if (!messaged)
+			to_chat(M, "This raw [name] tastes disgusting!")
+			nutriment_factor *= 0.5
+			messaged = 1
+
+		//Raw coatings will sometimes cause vomiting
+		if (ishuman(M) && prob(1))
+			var/mob/living/carbon/human/H = M
+			H.vomit()
+	..()
+
+/datum/reagent/nutriment/coating/initialize_data(var/newdata) // Called when the reagent is created.
+	..()
+	if (!data)
+		data = list()
+	else
+		if (isnull(data["cooked"]))
+			data["cooked"] = 0
+		return
+	data["cooked"] = 0
+	if (holder && holder.my_atom && istype(holder.my_atom,/obj/item/weapon/reagent_containers/food/snacks))
+		data["cooked"] = 1
+		name = cooked_name
+
+		//Batter which is part of objects at compiletime spawns in a cooked state
+
+
+//Handles setting the temperature when oils are mixed
+/datum/reagent/nutriment/coating/mix_data(var/newdata, var/newamount)
+	if (!data)
+		data = list()
+
+	data["cooked"] = newdata["cooked"]
+
+
+/datum/reagent/nutriment/coating/batter
+	name = "batter mix"
+	cooked_name = "batter"
+	color = "#f5f4e9"
+	reagent_state = LIQUID
+	icon_raw = "batter_raw"
+	icon_cooked = "batter_cooked"
+	coated_adj = "battered"
+	taste_description = "batter"
+
+/datum/reagent/nutriment/coating/batter/touch_turf(var/turf/simulated/T)
+	if(!istype(T, /turf/space))
+		new /obj/effect/decal/cleanable/pie_smudge(T)
+		if(T.wet > 1)
+			T.wet = min(T.wet, 1)
+		else
+			T.wet = 0
+
+/datum/reagent/nutriment/coating/beerbatter
+	name = "beer batter mix"
+	cooked_name = "beer batter"
+	color = "#f5f4e9"
+	reagent_state = LIQUID
+	icon_raw = "batter_raw"
+	icon_cooked = "batter_cooked"
+	coated_adj = "beer-battered"
+	taste_description = "beer-batter"
+
+/datum/reagent/nutriment/coating/beerbatter/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
+	..()
+	M.add_chemical_effect(CE_ALCOHOL, removed*0.02) //Very slightly alcoholic
+
+// Synnono's Cooking Expansion
+
+/datum/reagent/spacespice
+	name = "Space Spice"
+	description = "An exotic blend of spices for cooking. It must flow."
+	reagent_state = SOLID
+	color = "#e08702"
+	taste_description = "spices"
+	taste_mult = 1.5
+
+/datum/reagent/browniemix
+	name = "Brownie Mix"
+	description = "A dry mix for making delicious brownies."
+	reagent_state = SOLID
+	color = "#441a03"
+	taste_description = "chocolate"
+
 /* Drinks */
 
 /datum/reagent/drink
@@ -734,6 +920,15 @@
 
 	glass_name = "pear juice"
 	glass_desc = "Delicious juice made from pears."
+
+/datum/reagent/drink/juice/pineapple
+	name = "Pineapple Juice"
+	description = "From freshly canned pineapples."
+	color = "#FFFF00"
+	taste_description = "pineapples"
+
+	glass_name = "pineapple juice"
+	glass_desc = "Delicious juice made from pineapples."
 
 // Everything else
 
@@ -1363,14 +1558,14 @@
 	glass_name = "sake"
 	glass_desc = "A glass of sake."
 
-/datum/reagent/ethanol/tequilla
+/datum/reagent/ethanol/tequila
 	name = "Tequila"
 	description = "A strong and mildly flavoured, mexican produced spirit. Feeling thirsty hombre?"
 	taste_description = "paint stripper"
 	color = "#ffff91"
 	strength = 25
 
-	glass_name = "Tequilla"
+	glass_name = "tequila"
 	glass_desc = "Now all that's missing is the weird colored shades!"
 
 /datum/reagent/ethanol/thirteenloko
@@ -1644,7 +1839,7 @@
 	strength = 15
 
 	glass_name = "Brave Bull"
-	glass_desc = "Tequilla and coffee liquor, brought together in a mouthwatering mixture. Drink up."
+	glass_desc = "tequila and coffee liquor, brought together in a mouthwatering mixture. Drink up."
 
 /datum/reagent/ethanol/changelingsting
 	name = "Changeling Sting"
@@ -2099,14 +2294,14 @@
 	glass_name = "Syndicate Bomb"
 	glass_desc = "Tastes like terrorism!"
 
-/datum/reagent/ethanol/tequilla_sunrise
+/datum/reagent/ethanol/tequila_sunrise
 	name = "Tequila Sunrise"
 	description = "Tequila and orange juice. Much like a Screwdriver, only Mexican~"
 	taste_description = "oranges"
 	color = "#ffe48c"
 	strength = 25
 
-	glass_name = "Tequilla Sunrise"
+	glass_name = "tequila Sunrise"
 	glass_desc = "Oh great, now you feel nostalgic about sunrises back on Terra..."
 
 /datum/reagent/ethanol/threemileisland

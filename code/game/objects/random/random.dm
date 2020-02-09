@@ -239,7 +239,7 @@
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/gin,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/specialwhiskey,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka,
-				/obj/item/weapon/reagent_containers/food/drinks/bottle/tequilla,
+				/obj/item/weapon/reagent_containers/food/drinks/bottle/tequila,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/absinthe,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/wine,
 				/obj/item/weapon/reagent_containers/food/drinks/bottle/cognac,
