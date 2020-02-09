@@ -169,6 +169,8 @@
 		)
 
 	descriptors = list(
+		/datum/mob_descriptor/height = -1,
+		/datum/mob_descriptor/build = 1,
 		/datum/mob_descriptor/pariah_stink = 0
 	)
 
