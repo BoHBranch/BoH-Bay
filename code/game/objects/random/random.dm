@@ -1363,6 +1363,7 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 
 */
 
+//50% Illegal
 /obj/random/illegal
 	name = "Random Illegal Item"
 	desc = "Hot Stuff."
@@ -1388,7 +1389,7 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 				/obj/item/weapon/storage/firstaid/combat = 4,
 				/obj/item/stack/telecrystal = 1,
 				/obj/item/clothing/under/syndicate = 2,
-				/obj/item/weapon/storage/mre/menu11 = 42,
+				/obj/item/weapon/storage/mre/menu11 = 24,
 				/obj/item/weapon/reagent_containers/pill/cyanide = 16,
 				/obj/item/weapon/reagent_containers/glass/bottle/cyanide = 12,
 				/obj/item/weapon/gun/projectile/automatic/machine_pistol/usi = 1,
@@ -1398,7 +1399,6 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 				/obj/item/weapon/material/knife/kitchen/cleaver = 2,
 				/obj/item/weapon/material/knife/folding/combat/balisong = 1,
 				/obj/item/weapon/material/shard/nullglass = 1,
-				/obj/item/weapon/material/stick = 24,
 				/obj/item/weapon/material/twohanded/baseballbat = 14,
 				/obj/item/weapon/material/twohanded/spear = 18,
 				/obj/item/weapon/material/harpoon/bomb = 1,
@@ -1408,3 +1408,24 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 				/obj/item/weapon/storage/toolbox/syndicate = 6,
 				/obj/item/weapon/gun/projectile/revolver/holdout = 2,
 				/obj/item/weapon/reagent_containers/food/snacks/egg/lizard = 1)
+
+//100% Illegal
+/obj/random/illegaltwo
+	name = "Incredibly Random Illegal Item"
+	desc = "Hot Stuff."
+	icon = 'icons/boh/structures/coffee.dmi' //shhhh
+	icon_state = "coffee_dispenser2db"
+
+/obj/random/illegaltwo/spawn_choices()
+	return list(/obj/item/weapon/gun/energy/retro = 1,
+				/obj/item/weapon/gun/magnetic = 1,
+				/obj/item/weapon/gun/projectile/automatic/machine_pistol/usi = 1,
+				/obj/item/weapon/gun/energy/xray = 1,
+				/obj/item/weapon/gun/energy/xray/pistol = 1,
+				/obj/item/weapon/gun/energy/charge = 1,
+				/obj/item/weapon/gun/energy/mindflayer = 1,
+				/obj/item/weapon/gun/energy/sniperrifle = 1,
+				/obj/item/weapon/gun/energy/incendiary_laser = 1,
+				/obj/item/weapon/gun/projectile/automatic/merc_smg/hacked = 1,
+				/obj/item/weapon/gun/projectile/shotgun/pump/combat = 1,
+				/obj/item/weapon/gun/projectile/heavysniper = 1)
