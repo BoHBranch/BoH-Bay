@@ -87,9 +87,9 @@
 	)
 
 /datum/mil_branch/fleet
-	name = "Expeditionary Fleet"
-	name_short = "NTEF"
-	email_domain = "dagon.nt.exp"
+	name = "Expeditionary and Defense Coalition Fleet"
+	name_short = "EDCF"
+	email_domain = "dagon.joint.exp"
 
 	rank_types = list(
 		/datum/mil_rank/fleet/e1,
