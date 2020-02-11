@@ -31,4 +31,4 @@
 	allowed_roles = SEMIANDFORMAL_ROLES
 
 /datum/gear/shoes/boots
-	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps, /datum/mil_branch/private_security)
