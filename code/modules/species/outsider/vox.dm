@@ -174,7 +174,8 @@
 		/datum/mob_descriptor/pariah_stink = 0
 	)
 
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION
+	species_flags = SPECIES_FLAG_NO_SCAN//shouldn't be needed, but in game happenings have shown otherwise. For some reason.
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_LACE
 	appearance_flags = HAS_EYE_COLOR | HAS_HAIR_COLOR
 
 /datum/species/vox/pariah/get_bodytype(var/mob/living/carbon/human/H)
