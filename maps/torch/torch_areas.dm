@@ -740,7 +740,7 @@
 	icon_state = "construction"
 
 /area/vacant/armory
-	name = "\improper Vacant Armory"
+	name = "\improper Auxiliary Armory"
 	icon_state = "Tactical"
 
 /area/vacant/cabin
@@ -772,7 +772,7 @@
 
 /area/vacant/prototype/engine
 	name = "\improper Prototype Fusion Reactor Chamber"
-	icon_state = "firingrange"
+	icon_state = "toxstorage"
 
 /area/vacant/cargo
 	name = "\improper Requisitions Office"
