@@ -61,7 +61,7 @@
 	light.pixel_y = light_y
 	overlays += light
 
-/obj/machinery/appliance/cooker/machinery_process()
+/obj/machinery/appliance/cooker/Process()
 	if (!stat)
 		heat_up()
 	else
@@ -111,7 +111,7 @@
 
 //Cookers do differently, they use containers
 /obj/machinery/appliance/cooker/has_space(var/obj/item/I)
-	if (istype(I, /obj/item/reagent_containers/cooking_container))
+	if (istype(I, /obj/item/weapon/reagent_containers/cooking_container))
 		//Containers can go into an empty slot
 		if (cooking_objs.len < max_contents)
 			return 1

@@ -60,11 +60,11 @@
 /obj/machinery/gibber/attackby(var/obj/item/W, var/mob/user)
 	if(istype(W, /obj/item/grab))
 		var/obj/item/grab/G = W
-		if(!G.current_grab.restrains)
-			to_chat(user, "<span class='danger'>You need a stronger grip to do that!</span>")
+		if(!G.force_danger())
+			to_chat(user, "<span class='danger'>You need a better grip to do that!</span>")
 			return
-		move_into_gibber(user,G.current_grab.affecting)
-		user.drop_from_inventory(G)
+		qdel(G)
+		move_into_gibber(user,G.affecting)
 
 	else if(istype(W, /obj/item/organ))
 		user.drop_from_inventory(W)
@@ -159,7 +159,11 @@
 
 	var/slab_count = 3
 	var/slab_type = /obj/item/weapon/reagent_containers/food/snacks/meat
-	var/slab_nutrition = src.occupant.nutrition / 15
+	var/slab_nutrition = 20
+
+	if(iscarbon(occupant))
+		var/mob/living/carbon/C = occupant
+		slab_nutrition = C.nutrition / 15
 
 	// Some mobs have specific meat item types.
 	if(istype(src.occupant,/mob/living/simple_animal))
@@ -178,15 +182,13 @@
 	slab_nutrition /= slab_count
 
 	for(var/i=1 to slab_count)
-		var/obj/item/reagent_containers/food/snacks/meat/new_meat = new slab_type(src, rand(3,8))
+		var/obj/item/weapon/reagent_containers/food/snacks/meat/new_meat = new slab_type(src, rand(3,8))
 		if(istype(new_meat))
 			new_meat.reagents.add_reagent("nutriment",slab_nutrition)
 			if(src.occupant.reagents)
 				src.occupant.reagents.trans_to_obj(new_meat, round(occupant.reagents.total_volume/slab_count,1))
 
-	src.occupant.attack_log += "\[[time_stamp()]\] Was gibbed by <b>[user]/[user.ckey]</b>" //One shall not simply gib a mob unnoticed!
-	user.attack_log += "\[[time_stamp()]\] Gibbed <b>[src.occupant]/[src.occupant.ckey]</b>"
-	msg_admin_attack("[key_name_admin(user)] gibbed [src.occupant] ([src.occupant.ckey]) (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[user.x];Y=[user.y];Z=[user.z]'>JMP</a>)",ckey=key_name(user),ckey_target=key_name(src.occupant))
+	admin_attack_log(user, occupant, "Gibbed the victim", "Was gibbed", "gibbed")
 
 	src.occupant.ghostize()
 

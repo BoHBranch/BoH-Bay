@@ -30,7 +30,7 @@ main ui datum.
 	// determines if ui state should be constantly be cheacked for updates
 	var/auto_update_content = FALSE
 	// list for storing ui sensitive data. this meant for object data tracking
-	var/list/metadata 
+	var/list/metadata
 
 /**
   * Creates a new ui
@@ -46,7 +46,7 @@ main ui datum.
   *
   * @return nothing
   */
-/datum/vueui/New(var/nuser, var/nobject, var/nactiveui = 0, var/nwidth = 0, var/nheight = 0, var/ntitle, var/list/ndata, var/datum/topic_state/nstate = default_state)
+/datum/vueui/New(var/nuser, var/nobject, var/nactiveui = 0, var/nwidth = 0, var/nheight = 0, var/ntitle, var/list/ndata, var/datum/topic_state/nstate = GLOB.default_state)
 	user = nuser
 	object = nobject
 	data = ndata
@@ -136,7 +136,7 @@ main ui datum.
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="vueui.css">
 	</head>
-	<body class="[get_theme_class()]">
+	<body class="theme-nano">
 		<div id="header">
 			<header-[header]></header-[header]>
 		</div>
@@ -186,7 +186,6 @@ main ui datum.
   * @return nothing
   */
 /datum/vueui/proc/send_resources_and_assets(var/client/cl)
-	send_theme_resources(cl)
 	for(var/asset_name in assets)
 		var/asset = assets[asset_name]
 		if (!QDELETED(asset["img"]))
@@ -304,7 +303,7 @@ main ui datum.
 				src.data = ret
 				return 2
 		else if (force)
-			if(!nopush) 
+			if(!nopush)
 				push_change(null)
 				return 1
 			else
@@ -332,7 +331,7 @@ main ui datum.
 		if(nstatus > STATUS_DISABLED)
 			return check_for_change(TRUE, !autopush) == 2 // Gather data and update it
 		else if (nstatus == STATUS_DISABLED && autopush)
-			if(autopush) 
+			if(autopush)
 				push_change(null) // Only update ui data
 			else
 				return 1
@@ -358,7 +357,7 @@ main ui datum.
   *
   * @return nothing
   */
-/datum/vueui/process()
+/datum/vueui/Process()
 	if (!object || !user || status < 0 || !user.client)
 		close()
 		return
@@ -367,16 +366,5 @@ main ui datum.
 	else
 		update_status()
 
-/**
-  * Returns actuve theme on varous conditions
-  *
-  * @return themes class - text
-  */
-/datum/vueui/proc/get_theme_class()
-	return SStheming.get_html_theme_class(user)
-
 /datum/vueui/modularcomputer
 	header = "modular-computer"
-
-/datum/vueui/modularcomputer/get_theme_class()
-	return "theme-nano dark-theme"

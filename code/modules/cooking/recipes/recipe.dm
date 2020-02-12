@@ -33,6 +33,7 @@
 
 
 /datum/recipe
+	var/display_name
 	var/list/reagents // example: = list("berryjuice" = 5) // do not list same reagent twice
 	var/list/items    // example: = list(/obj/item/crowbar, /obj/item/welder) // place /foo/bar before /foo
 	var/list/fruit    // example: = list("fruit" = 3)
@@ -44,6 +45,11 @@
 	var/result        // example: = /obj/item/weapon/reagent_containers/food/snacks/donut/normal
 	var/result_quantity = 1 //number of instances of result that are created.
 	var/time = 100    // 1/10 part of second
+
+	var/hidden_from_codex = FALSE
+	var/lore_text
+	var/mechanics_text
+	var/antag_text
 
 
 	#define RECIPE_REAGENT_REPLACE		0 //Reagents in the ingredients are discarded.
@@ -64,9 +70,25 @@
 		OVEN
 		CANDYMAKER
 		CEREALMAKER
+		PAN
 	*/
 	//This is a bitfield, more than one type can be used
-	//Grill is presently unused and not listed
+
+/datum/recipe/proc/get_appliance_names()
+	var/appliance_names
+	if(appliance & MICROWAVE)
+		LAZYADD(appliance_names, "a microwave")
+	if(appliance & FRYER)
+		LAZYADD(appliance_names, "a fryer")
+	if(appliance & OVEN)
+		LAZYADD(appliance_names, "an oven")
+	if(appliance & CANDYMAKER)
+		LAZYADD(appliance_names, "a candy maker")
+	if(appliance & CEREALMAKER)
+		LAZYADD(appliance_names, "a cereal maker")
+	if(appliance & PAN)
+		LAZYADD(appliance_names, "a pan")
+	return english_list(appliance_names, and_text = " or ")
 
 /datum/recipe/proc/check_reagents(var/datum/reagents/avail_reagents)
 	if (!reagents || !reagents.len)
@@ -208,9 +230,9 @@
 
 	//And lastly deduct necessary quantities of reagents
 	if (reagents && reagents.len)
-		for (var/r in reagents)
+		for (var/datum/reagent/r in reagents)
 			//Doesnt matter whether or not there's enough, we assume that check is done before
-			container.reagents.trans_id_to(buffer, r, reagents[r])
+			container.reagents.trans_type_to(buffer, r.type, reagents[r])
 
 	/*
 	Now we've removed all the ingredients that were used and we have the buffer containing the total of
@@ -256,7 +278,7 @@
 				var/rvol = holder.get_reagent_amount(R.id)
 				if (rvol < R.volume)
 					//Transfer the difference
-					buffer.trans_id_to(holder, R.id, R.volume-rvol)
+					buffer.trans_type_to(holder, R.type, R.volume-rvol)
 
 		if (RECIPE_REAGENT_MIN)
 			//Min is slightly more complex. We want the result to have the lowest from each side
@@ -264,7 +286,7 @@
 			for (var/datum/reagent/R in buffer.reagent_list)
 				var/rvol = holder.get_reagent_amount(R.id)
 				if (rvol == 0) //If the target has zero of this reagent
-					buffer.trans_id_to(holder, R.id, R.volume)
+					buffer.trans_type_to(holder, R.type, R.volume)
 					//Then transfer all of ours
 
 				else if (rvol > R.volume)

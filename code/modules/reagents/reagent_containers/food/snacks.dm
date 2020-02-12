@@ -13,6 +13,15 @@
 	var/dried_type = null
 	var/dry = 0
 	var/list/eat_sound = 'sound/items/eatfood.ogg'
+	var/datum/reagent/nutriment/coating/coating = null
+	var/icon/flat_icon = null //Used to cache a flat icon generated from dipping in batter. This is used again to make the cooked-batter-overlay
+	var/do_coating_prefix = TRUE
+	//If FALSE, we won't do "battered thing" or similar prefixes. Mainly for recipes that include batter but have a special name
+
+	var/cooked_icon = null
+	//Used for foods that are "cooked" without being made into a specific recipe or combination.
+	//Generally applied during modification cooking with oven/fryer
+	//Used to stop deepfried meat from looking like slightly tanned raw meat, and make it actually look cooked
 	center_of_mass = "x=16;y=16"
 	w_class = ITEM_SIZE_SMALL
 
@@ -195,6 +204,116 @@
 			something.dropInto(loc)
 	. = ..()
 
+//Code for dipping food in batter
+/obj/item/weapon/reagent_containers/food/snacks/afterattack(obj/O as obj, mob/user as mob, proximity)
+	if(O.is_open_container() && O.reagents && !(istype(O, /obj/item/weapon/reagent_containers/food)) && proximity)
+		for (var/r in O.reagents.reagent_list)
+
+			var/datum/reagent/R = r
+			if (istype(R, /datum/reagent/nutriment/coating))
+				if (apply_coating(R, user))
+					return 1
+
+	return ..()
+
+//This proc handles drawing coatings out of a container when this food is dipped into it
+/obj/item/weapon/reagent_containers/food/snacks/proc/apply_coating(var/datum/reagent/nutriment/coating/C, var/mob/user)
+	if (coating)
+		to_chat(user, "The [src] is already coated in [coating.name]!")
+		return 0
+
+	//Calculate the reagents of the coating needed
+	var/req = 0
+	for (var/r in reagents.reagent_list)
+		var/datum/reagent/R = r
+		if (istype(R, /datum/reagent/nutriment))
+			req += R.volume * 0.2
+		else
+			req += R.volume * 0.1
+
+	req += w_class*0.5
+
+	if (!req)
+		//the food has no reagents left, its probably getting deleted soon
+		return 0
+
+	if (C.volume < req)
+		to_chat(user, span("warning", "There's not enough [C.name] to coat the [src]!"))
+		return 0
+
+	var/id = C.id
+
+	//First make sure there's space for our batter
+	if (reagents.get_free_space() < req+5)
+		var/extra = req+5 - reagents.get_free_space()
+		reagents.maximum_volume += extra
+
+	//Suck the coating out of the holder
+	C.holder.trans_to_holder(reagents, req)
+
+	//We're done with C now, repurpose the var to hold a reference to our local instance of it
+	C = reagents.get_reagent(id)
+	if (!C)
+		return
+
+	coating = C
+	//Now we have to do the witchcraft with masking images
+	//var/icon/I = new /icon(icon, icon_state)
+
+	if (!flat_icon)
+		flat_icon = getFlatIcon(src)
+	var/icon/I = flat_icon
+	color = "#FFFFFF" //Some fruits use the color var. Reset this so it doesnt tint the batter
+	I.Blend(new /icon('icons/obj/food_custom.dmi', rgb(255,255,255)),ICON_ADD)
+	I.Blend(new /icon('icons/obj/food_custom.dmi', coating.icon_raw),ICON_MULTIPLY)
+	var/image/J = image(I)
+	J.alpha = 200
+	J.blend_mode = BLEND_OVERLAY
+	J.tag = "coating"
+	overlays += J
+
+	if (user)
+		user.visible_message(span("notice", "[user] dips \the [src] into \the [coating.name]"), span("notice", "You dip \the [src] into \the [coating.name]"))
+
+	return 1
+
+
+//Called by cooking machines. This is mainly intended to set properties on the food that differ between raw/cooked
+/obj/item/weapon/reagent_containers/food/snacks/proc/cook()
+	if (coating)
+		var/list/temp = overlays.Copy()
+		for (var/i in temp)
+			if (istype(i, /image))
+				var/image/I = i
+				if (I.tag == "coating")
+					temp.Remove(I)
+					break
+
+		overlays = temp
+		//Carefully removing the old raw-batter overlay
+
+		if (!flat_icon)
+			flat_icon = getFlatIcon(src)
+		var/icon/I = flat_icon
+		color = "#FFFFFF" //Some fruits use the color var
+		I.Blend(new /icon('icons/obj/food_custom.dmi', rgb(255,255,255)),ICON_ADD)
+		I.Blend(new /icon('icons/obj/food_custom.dmi', coating.icon_cooked),ICON_MULTIPLY)
+		var/image/J = image(I)
+		J.alpha = 200
+		J.tag = "coating"
+		overlays += J
+
+
+		if (do_coating_prefix == 1)
+			name = "[coating.coated_adj] [name]"
+
+	for (var/r in reagents.reagent_list)
+		var/datum/reagent/R = r
+		if (istype(R, /datum/reagent/nutriment/coating))
+			var/datum/reagent/nutriment/coating/C = R
+			C.data["cooked"] = 1
+			C.name = C.cooked_name
+
 ////////////////////////////////////////////////////////////////////////////////
 /// FOOD END
 ////////////////////////////////////////////////////////////////////////////////
@@ -364,7 +483,7 @@
 	desc = "We all love tofu."
 	filling_color = "#fffee0"
 	center_of_mass = "x=17;y=10"
-	reagents_to_add = list(/datum/reagent/nutriment/softtofu = 6)
+	reagents_to_add = list(/datum/reagent/nutriment/protein/tofu = 6)
 	reagent_data = list(/datum/reagent/nutriment = list("tofu" = 3, "gooeyness" = 3))
 	bitesize = 3
 
@@ -2606,26 +2725,47 @@
 //Items you can craft together. Like bomb making, but with food and less screwdrivers.
 
 /obj/item/weapon/reagent_containers/food/snacks/bun/attackby(obj/item/weapon/W as obj, mob/user as mob)
+	var/obj/item/weapon/reagent_containers/food/snacks/result
 	// bun + meatball = burger
 	if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/meatball))
-		new /obj/item/weapon/reagent_containers/food/snacks/plainburger(src)
-		to_chat(user, "You make a burger.")
-		qdel(W)
-		qdel(src)
+		result = new /obj/item/weapon/reagent_containers/food/snacks/plainburger(src)
 
 	// bun + cutlet = hamburger
 	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/cutlet))
-		new /obj/item/weapon/reagent_containers/food/snacks/hamburger(src)
-		to_chat(user, "You make a hamburger.")
-		qdel(W)
-		qdel(src)
+		result = new /obj/item/weapon/reagent_containers/food/snacks/hamburger(src)
 
 	// bun + sausage = hotdog
 	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/sausage))
-		new /obj/item/weapon/reagent_containers/food/snacks/hotdog(src)
-		to_chat(user, "You make a hotdog.")
+		result = new /obj/item/weapon/reagent_containers/food/snacks/hotdog(src)
+
+	// Bun + mouse = mouseburger
+	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/variable/mob))
+		var/obj/item/weapon/reagent_containers/food/snacks/variable/mob/MF = W
+
+		switch (MF.kitchen_tag)
+			if ("rodent")
+				result = new /obj/item/weapon/reagent_containers/food/snacks/mouseburger(src)
+
+		switch (MF.kitchen_tag)
+			if ("lizard")
+				result = new /obj/item/weapon/reagent_containers/food/snacks/mouseburger(src)
+
+	if (result)
+		if (W.reagents)
+			//Reagents of reuslt objects will be the sum total of both.  Except in special cases where nonfood items are used
+			//Eg robot head
+			result.reagents.clear_reagents()
+			W.reagents.trans_to(result, W.reagents.total_volume)
+			reagents.trans_to(result, reagents.total_volume)
+
+		//If the bun was in your hands, the result will be too
+		if (loc == user)
+			user.drop_from_inventory(src)
+			user.put_in_hands(result)
+
 		qdel(W)
 		qdel(src)
+		to_chat(user, SPAN_NOTICE("You make \a [result]!"))
 
 // burger + cheese wedge = cheeseburger
 /obj/item/weapon/reagent_containers/food/snacks/plainburger/attackby(obj/item/weapon/reagent_containers/food/snacks/cheesewedge/W as obj, mob/user as mob)

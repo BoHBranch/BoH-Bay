@@ -1,5 +1,3 @@
-var/datum/controller/subsystem/processing/vueui/SSvueui
-
 /*
 Byond Vue UI framework's management subsystem
 */

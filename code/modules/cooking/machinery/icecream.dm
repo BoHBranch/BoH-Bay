@@ -97,8 +97,8 @@
 	popup.open()
 
 /obj/machinery/icecream_vat/attackby(var/obj/item/O as obj, var/mob/user as mob)
-	if(istype(O, /obj/item/reagent_containers/food/snacks/icecream))
-		var/obj/item/reagent_containers/food/snacks/icecream/I = O
+	if(istype(O, /obj/item/weapon/reagent_containers/food/snacks/icecream))
+		var/obj/item/weapon/reagent_containers/food/snacks/icecream/I = O
 		if(!I.ice_creamed)
 			if(product_types[dispense_flavour] > 0)
 				src.visible_message("\icon[src] <span class='info'>[user] scoops delicious [flavour_name] icecream into [I].</span>")
@@ -151,7 +151,7 @@
 		var/cone_name = get_flavour_name(dispense_cone)
 		if(product_types[dispense_cone] >= 1)
 			product_types[dispense_cone] -= 1
-			var/obj/item/reagent_containers/food/snacks/icecream/I = new(src.loc)
+			var/obj/item/weapon/reagent_containers/food/snacks/icecream/I = new(src.loc)
 			I.cone_type = cone_name
 			I.icon_state = "icecream_cone_[cone_name]"
 			I.desc = "Delicious [cone_name] cone, but no ice cream."

@@ -18,22 +18,22 @@
 
 	light_x = 2
 	max_contents = 5
-	container_type = /obj/item/reagent_containers/cooking_container/oven
+	container_type = /obj/item/weapon/reagent_containers/cooking_container/oven
 
 	stat = POWEROFF	//Starts turned off
 
 	var/open = FALSE // Start closed so people don't heat up ovens with the door open
 
 	output_options = list(
-		"Pizza" = /obj/item/reagent_containers/food/snacks/variable/pizza,
-		"Bread" = /obj/item/reagent_containers/food/snacks/variable/bread,
-		"Pie" = /obj/item/reagent_containers/food/snacks/variable/pie,
-		"Cake" = /obj/item/reagent_containers/food/snacks/variable/cake,
-		"Hot Pocket" = /obj/item/reagent_containers/food/snacks/variable/pocket,
-		"Kebab" = /obj/item/reagent_containers/food/snacks/variable/kebab,
-		"Waffles" = /obj/item/reagent_containers/food/snacks/variable/waffles,
-		"Cookie" = /obj/item/reagent_containers/food/snacks/variable/cookie,
-		"Donut" = /obj/item/reagent_containers/food/snacks/variable/donut
+		"Pizza" = /obj/item/weapon/reagent_containers/food/snacks/variable/pizza,
+		"Bread" = /obj/item/weapon/reagent_containers/food/snacks/variable/bread,
+		"Pie" = /obj/item/weapon/reagent_containers/food/snacks/variable/pie,
+		"Cake" = /obj/item/weapon/reagent_containers/food/snacks/variable/cake,
+		"Hot Pocket" = /obj/item/weapon/reagent_containers/food/snacks/variable/pocket,
+		"Kebab" = /obj/item/weapon/reagent_containers/food/snacks/variable/kebab,
+		"Waffles" = /obj/item/weapon/reagent_containers/food/snacks/variable/waffles,
+		"Cookie" = /obj/item/weapon/reagent_containers/food/snacks/variable/cookie,
+		"Donut" = /obj/item/weapon/reagent_containers/food/snacks/variable/donut
 	)
 
 
@@ -81,16 +81,16 @@
 	playsound(src, 'sound/machines/hatch_open.ogg', 20, 1)
 	update_icon()
 
-/obj/machinery/appliance/cooker/oven/proc/manip(var/obj/item/I)
+/obj/machinery/appliance/cooker/oven/proc/manip(var/obj/item/I, var/mob/user)
 	// check if someone's trying to manipulate the machine
 
-	if(I.iscrowbar() || I.isscrewdriver() || istype(I, /obj/item/storage/part_replacer))
+	if((. = component_attackby(I, user)))
 		return TRUE
 	else
 		return FALSE
 
 /obj/machinery/appliance/cooker/oven/can_insert(var/obj/item/I, var/mob/user)
-	if (!open && !manip(I))
+	if (!open && !manip(I, user))
 		to_chat(user, "<span class='warning'>You can't put anything in while the door is closed!</span>")
 		return 0
 

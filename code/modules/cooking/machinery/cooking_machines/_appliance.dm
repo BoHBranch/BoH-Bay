@@ -170,7 +170,7 @@
 
 //Handles all validity checking and error messages for inserting things
 /obj/machinery/appliance/proc/can_insert(var/obj/item/I, var/mob/user)
-	if(!dropsafety(I))
+	if(istype(I.loc, /mob/living/silicon) || istype(I.loc, /obj/item/rig_module))
 		return 0
 
 	// We are trying to cook a grabbed mob.
@@ -227,11 +227,7 @@
 
 	var/result = can_insert(I, user)
 	if(!result)
-		if(default_deconstruction_screwdriver(user, I))
-			return
-		else if(default_part_replacement(user, I))
-			return
-		else if(default_deconstruction_crowbar(user, I))
+		if((. = component_attackby(I, user)))
 			return
 		else
 			return
@@ -326,8 +322,9 @@
 
 	else if(istype(I, /obj/item/weapon/holder))
 		var/obj/item/weapon/holder/H = I
-		if (H.contained)
-			work += (H.contained.mob_size * H.contained.mob_size * 2)+2
+		var/mob/living/contained = locate(/mob/living) in H
+		if (contained)
+			work += (contained.mob_size * contained.mob_size * 2)+2
 
 	CI.max_cookwork += work
 
@@ -351,13 +348,13 @@
 
 	// Gotta hurt.
 	for(var/obj/item/weapon/holder/H in CI.container.contents)
-		var/mob/living/M = H.contained
+		var/mob/living/M = locate() in H
 		if (M)
 			M.apply_damage(rand(1,3), mobdamagetype, BP_CHEST)
 
 	return TRUE
 
-/obj/machinery/appliance/machinery_process()
+/obj/machinery/appliance/Process()
 	if (cooking_power > 0 && cooking)
 		for (var/i in cooking_objs)
 			do_cooking_tick(i)
@@ -375,7 +372,7 @@
 		C = CI.container
 	else
 		C = src
-	recipe = select_recipe(RECIPE_LIST(appliancetype), C)
+	recipe = select_recipe(SScuisine[appliancetype], C)
 
 	if (recipe)
 		CI.result_type = 4//Recipe type, a specific recipe will transform the ingredients into a new food
@@ -387,7 +384,7 @@
 			AM.forceMove(temp)
 
 		//making multiple copies of a recipe from one container. For example, tons of fries
-		while (select_recipe(RECIPE_LIST(appliancetype), C) == recipe)
+		while (select_recipe(SScuisine[appliancetype], C) == recipe)
 			var/list/TR = list()
 			TR += recipe.make_food(C)
 			for (var/atom/movable/AM in TR) //Move results to buffer
@@ -438,7 +435,7 @@
 		if (!S)
 			continue
 
-		words |= dd_text2List(S.name," ")
+		words |= splittext(S.name," ")
 		cooktypes |= S.cooked
 
 		if (S.reagents && S.reagents.total_volume > 0)
@@ -467,7 +464,7 @@
 	//Filling overlay
 	var/image/I = image(result.icon, "[result.icon_state]_filling")
 	I.color = totalcolour
-	result.add_overlay(I)
+	result.overlays += I
 	result.filling_color = totalcolour
 
 	//Set the name.
@@ -588,18 +585,21 @@
 
 //This function creates a food item which represents a dead mob
 /obj/machinery/appliance/proc/create_mob_food(var/obj/item/weapon/holder/H, var/datum/cooking_item/CI)
-	if (!istype(H) || !H.contained)
+	var/mob/living/victim = locate() in H
+	if (!istype(H) || !victim)
 		qdel(H)
 		return null
-	var/mob/living/victim = H.contained
 	if (victim.stat != DEAD)
 		return null //Victim somehow survived the cooking, they do not become food
 
-	victim.calculate_composition()
-
 	var/obj/item/weapon/reagent_containers/food/snacks/variable/mob/result = new /obj/item/weapon/reagent_containers/food/snacks/variable/mob(CI.container)
 	result.w_class = victim.mob_size
-	result.reagents.add_reagent(victim.composition_reagent, victim.composition_reagent_quantity)
+	var/reagent_amount = victim.mob_size ** 2 * 3
+	if(istype(victim, /mob/living/simple_animal))
+		var/mob/living/simple_animal/SA = src
+		if (SA.meat_amount)
+			reagent_amount = SA.meat_amount*9 // at a rate of 9 protein per meat
+	result.reagents.add_reagent(victim.get_digestion_product(), reagent_amount)
 
 	if (victim.reagents)
 		victim.reagents.trans_to_holder(result.reagents, victim.reagents.total_volume)
@@ -616,7 +616,7 @@
 	result.transform = M
 
 	// all done, now delete the old objects
-	H.contained = null
+	victim.forceMove(null)
 	qdel(victim)
 	victim = null
 	qdel(H)

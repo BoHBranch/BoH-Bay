@@ -20,7 +20,7 @@
 	resistance = 60000	// Approx. 10 minutes.
 
 	max_contents = 2
-	container_type = /obj/item/reagent_containers/cooking_container/fryer
+	container_type = /obj/item/weapon/reagent_containers/cooking_container/fryer
 
 	stat = NOPOWER//Starts turned off
 
@@ -173,7 +173,7 @@
 		E = H.get_organ(user.zone_sel.selecting)
 		if(!E || !H.can_feel_pain())
 			nopain = 2
-		else if(E.robotic >= ORGAN_ROBOT)
+		else if(BP_IS_ROBOTIC(E))
 			nopain = 1
 
 	user.visible_message("<span class='danger'>\The [user] shoves \the [victim][E ? "'s [E.name]" : ""] into \the [src]!</span>")
@@ -182,12 +182,12 @@
 
 			if(E.children && E.children.len)
 				for(var/obj/item/organ/external/child in E.children)
-					if(nopain && nopain < 2 && !(child.robotic >= ORGAN_ROBOT))
+					if(nopain && nopain < 2 && !BP_IS_ROBOTIC(child))
 						nopain = 0
-					child.take_damage(0, damage)
+					child.take_external_damage(0, damage, used_weapon = "hot oil")
 					damage -= (damage*0.5)//IF someone's arm is plunged in, the hand should take most of it
 
-			E.take_damage(0, damage)
+			E.take_external_damage(0, damage, used_weapon = "hot oil")
 		else
 			victim.apply_damage(damage, BURN, user.zone_sel.selecting)
 
@@ -200,16 +200,13 @@
 			var/arrows_var2 = E ? E.name : "flesh"
 			to_chat(victim, "<span class='danger'>Searing hot oil scorches your [arrows_var2]!</span>")
 
-
-		user.attack_log += text("\[[time_stamp()]\] <font color='red'>Has [cook_type] \the [victim] ([victim.ckey]) in \a [src]</font>")
-		victim.attack_log += text("\[[time_stamp()]\] <font color='orange'>Has been [cook_type] in \a [src] by [user.name] ([user.ckey])</font>")
-		msg_admin_attack("[key_name_admin(user)] [cook_type] \the [victim] ([victim.ckey]) in \a [src]. (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[user.x];Y=[user.y];Z=[user.z]'>JMP</a>)",ckey=key_name(user),ckey_target=key_name(victim))
+		admin_attack_log(user, victim, "[cook_type]", "Was [cook_type]", cook_type)
 
 	//Coat the victim in some oil
 	oil.trans_to(victim, 40)
 
 /obj/machinery/appliance/cooker/fryer/attackby(var/obj/item/I, var/mob/user)
-	if(istype(I, /obj/item/reagent_containers/glass) && I.reagents)
+	if(istype(I, /obj/item/weapon/reagent_containers/glass) && I.reagents)
 		if (I.reagents.total_volume <= 0 && oil)
 			//Its empty, handle scooping some hot oil out of the fryer
 			oil.trans_to(I, I.reagents.maximum_volume)

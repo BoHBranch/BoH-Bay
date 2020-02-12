@@ -9,15 +9,15 @@
 	appliancetype = CEREALMAKER
 
 	output_options = list(
-		"Cereal" = /obj/item/reagent_containers/food/snacks/variable/cereal
+		"Cereal" = /obj/item/weapon/reagent_containers/food/snacks/variable/cereal
 	)
 
 /*
-/obj/machinery/appliance/cereal/change_product_strings(var/obj/item/reagent_containers/food/snacks/product, var/datum/cooking_item/CI)
+/obj/machinery/appliance/cereal/change_product_strings(var/obj/item/weapon/reagent_containers/food/snacks/product, var/datum/cooking_item/CI)
 	. = ..()
 	product.name = "box of [CI.object.name] cereal"
 
-/obj/machinery/appliance/cereal/change_product_appearance(var/obj/item/reagent_containers/food/snacks/product, var/datum/cooking_item/CI)
+/obj/machinery/appliance/cereal/change_product_appearance(var/obj/item/weapon/reagent_containers/food/snacks/product, var/datum/cooking_item/CI)
 	product.icon = 'icons/obj/food.dmi'
 	product.icon_state = "cereal_box"
 	product.filling_color = CI.object.color
@@ -35,13 +35,13 @@
 	var/list/images = list()
 	var/num = 0
 	for (var/obj/item/I in CI.container)
-		if (istype(I, /obj/item/reagent_containers/food/snacks/variable/cereal))
+		if (istype(I, /obj/item/weapon/reagent_containers/food/snacks/variable/cereal))
 			//Images of cereal boxes on cereal boxes is dumb
 			continue
 
 		var/image/food_image = image(I.icon, I.icon_state)
 		food_image.color = I.color
-		food_image.add_overlay(I.overlays)
+		food_image.overlays += I.overlays
 		food_image.transform *= 0.7 - (num * 0.05)
 		food_image.pixel_x = rand(-2,2)
 		food_image.pixel_y = rand(-3,5)
@@ -55,7 +55,7 @@
 			continue
 
 
-	var/obj/item/reagent_containers/food/snacks/result = ..()
+	var/obj/item/weapon/reagent_containers/food/snacks/result = ..()
 
 	result.color = result.filling_color
 	for (var/i in images)

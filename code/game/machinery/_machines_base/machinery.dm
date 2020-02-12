@@ -436,7 +436,7 @@ Class Procs:
 
 /obj/machinery/Move()
 	. = ..()
-	if(. && !CanFluidPass())
+	if(. && !CanPass())
 		fluid_update()
 
 /obj/machinery/get_cell()

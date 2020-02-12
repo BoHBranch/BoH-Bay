@@ -74,7 +74,7 @@
 	else
 		icon_state = off_icon
 
-/obj/machinery/appliance/grill/process()
+/obj/machinery/appliance/grill/Process()
 	if (!stat)
 		for (var/i in cooking_objs)
 			do_cooking_tick(i)

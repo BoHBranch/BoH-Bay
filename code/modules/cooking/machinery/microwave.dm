@@ -10,6 +10,8 @@
 	idle_power_usage = 5
 	active_power_usage = 2000
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER | ATOM_FLAG_NO_REACT
+	construct_state = /decl/machine_construction/default/panel_closed
+	uncreated_component_parts = null
 	var/operating = FALSE // Is it on?
 	var/dirty = 0 // = {0..100} Does it need cleaning?
 	var/broken = 0 // ={0,1,2} How broken is it???
@@ -36,8 +38,6 @@
 	var/end_time = 0
 	var/cooking_power = 1
 
-// see code/modules/food/recipes_microwave.dm for recipes
-
 /*******************
 *   Initialising
 ********************/
@@ -58,7 +58,7 @@
 	if (!LAZYLEN(acceptable_items))
 		acceptable_items = list()
 		acceptable_reagents = list()
-		for (var/datum/recipe/recipe in RECIPE_LIST(appliancetype))
+		for (var/datum/recipe/recipe in SScuisine[appliancetype])
 			for (var/item in recipe.items)
 				acceptable_items[item] = TRUE
 
@@ -89,7 +89,7 @@
 				"<span class='notice'>\The [user] starts to fix part of the microwave.</span>", \
 				"<span class='notice'>You start to fix part of the microwave.</span>" \
 			)
-			if (do_after(user,20/O.toolspeed))
+			if (do_after(user, 2 SECONDS))
 				user.visible_message( \
 					"<span class='notice'>\The [user] fixes part of the microwave.</span>", \
 					"<span class='notice'>You have fixed part of the microwave.</span>" \
@@ -100,7 +100,7 @@
 				"<span class='notice'>\The [user] starts to fix part of the microwave.</span>", \
 				"<span class='notice'>You start to fix part of the microwave.</span>" \
 			)
-			if (do_after(user,20/O.toolspeed))
+			if (do_after(user, 2 SECONDS))
 				user.visible_message( \
 					"<span class='notice'>\The [user] fixes the microwave.</span>", \
 					"<span class='notice'>You have fixed the microwave.</span>" \
@@ -108,17 +108,20 @@
 				icon_state = "mw"
 				broken = 0 // Fix it!
 				dirty = 0 // just to be sure
-				flags = ATOM_FLAG_OPEN_CONTAINER | ATOM_FLAG_NO_REACT
+				atom_flags |= ATOM_FLAG_OPEN_CONTAINER | ATOM_FLAG_NO_REACT
 		else
 			to_chat(user, "<span class='warning'>It's broken!</span>")
 			return 1
+	else if((. = component_attackby(O, user)))
+		eject(FALSE)
+		return
 	else if(dirty >= 100) // The microwave is all dirty so can't be used!
 		if(istype(O, /obj/item/weapon/reagent_containers/spray/cleaner) || istype(O, /obj/item/weapon/soap) || istype(O, /obj/item/weapon/reagent_containers/glass/rag)) // If they're trying to clean it then let them
 			user.visible_message( \
 				"<span class='notice'>\The [user] starts to clean the microwave.</span>", \
 				"<span class='notice'>You start to clean the microwave.</span>" \
 			)
-			if (do_after(user,20/O.toolspeed))
+			if (do_after(user, 2 SECONDS))
 				user.visible_message( \
 					"<span class='notice'>\The [user] has cleaned the microwave.</span>", \
 					"<span class='notice'>You have cleaned the microwave.</span>" \
@@ -126,7 +129,7 @@
 				dirty = 0 // It's clean!
 				broken = 0 // just to be sure
 				icon_state = "mw"
-				flags = ATOM_FLAG_OPEN_CONTAINER | ATOM_FLAG_NO_REACT
+				atom_flags |= ATOM_FLAG_OPEN_CONTAINER | ATOM_FLAG_NO_REACT
 		else //Otherwise bad luck!!
 			to_chat(user, "<span class='warning'>It's dirty!</span>")
 			return 1
@@ -142,33 +145,25 @@
 		var/obj/item/grab/G = O
 		to_chat(user, "<span class='warning'>This is ridiculous. You can not fit \the [G.affecting] in this [src].</span>")
 		return 1
-	else if(O.isscrewdriver())
-		default_deconstruction_screwdriver(user, O)
-		return
 	else if(O.iscrowbar())
-		if(default_deconstruction_crowbar(user, O))
-			return
-		else
+		user.visible_message( \
+			"<span class='notice'>\The [user] begins [src.anchored ? "unsecuring" : "securing"] the microwave.</span>", \
+			"<span class='notice'>You attempt to [src.anchored ? "unsecure" : "secure"] the microwave.</span>"
+			)
+		if (do_after(user, 2 SECONDS))
 			user.visible_message( \
-				"<span class='notice'>\The [user] begins [src.anchored ? "unsecuring" : "securing"] the microwave.</span>", \
-				"<span class='notice'>You attempt to [src.anchored ? "unsecure" : "secure"] the microwave.</span>"
-				)
-			if (do_after(user,20/O.toolspeed))
-				user.visible_message( \
-				"<span class='notice'>\The [user] [src.anchored ? "unsecures" : "secures"] the microwave.</span>", \
-				"<span class='notice'>You [src.anchored ? "unsecure" : "secure"] the microwave.</span>"
-				)
-				src.anchored = !src.anchored
-			else
-				to_chat(user, "<span class='notice'>You decide not to do that.</span>")
-	else if(default_part_replacement(user, O))
-		return
+			"<span class='notice'>\The [user] [src.anchored ? "unsecures" : "secures"] the microwave.</span>", \
+			"<span class='notice'>You [src.anchored ? "unsecure" : "secure"] the microwave.</span>"
+			)
+			src.anchored = !src.anchored
+		else
+			to_chat(user, "<span class='notice'>You decide not to do that.</span>")
 	else
 		if (contents.len>=max_n_of_items)
 			to_chat(user, "<span class='warning'>This [src] is full of ingredients, you can't fit any more!</span>")
 			return 1
-		if(istype(O, /obj/item/weapon/stack))
-			var/obj/item/weapon/stack/S = O
+		if(istype(O, /obj/item/stack))
+			var/obj/item/stack/S = O
 			if(S.get_amount() > 1)
 				new O.type (src)
 				S.use(1)
@@ -272,7 +267,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 		start()
 		return
 
-	recipe = select_recipe(RECIPE_LIST(appliancetype),src)
+	recipe = select_recipe(SScuisine[appliancetype],src)
 
 	if (reagents.reagent_list.len && prob(50)) // 50% chance a liquid recipe gets messy
 		dirty += Ceiling(reagents.total_volume / 10)
@@ -311,7 +306,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 			AM.forceMove(temp)
 
 		valid = FALSE
-		recipe = select_recipe(RECIPE_LIST(appliancetype),src)
+		recipe = select_recipe(SScuisine[appliancetype],src)
 		if (recipe && recipe.result == result)
 			sleep(2)
 			valid = TRUE
@@ -334,12 +329,12 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 
 	return
 
-/obj/machinery/microwave/process() // What you see here are the remains of proc/wzhzhzh, 2010 - 2019. RIP.
+/obj/machinery/microwave/Process() // What you see here are the remains of proc/wzhzhzh, 2010 - 2019. RIP.
 	if (stat & (NOPOWER|BROKEN))
 		stop()
 		return
 
-	use_power(active_power_usage)
+	use_power_oneoff(active_power_usage)
 
 	if(world.time > end_time)
 		stop()
@@ -387,13 +382,14 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 
 	operating = FALSE // Turn it off again aferwards
 	if(cook_dirty || cook_break)
-		flags = null //So you can't add condiments
+		atom_flags &= ~ATOM_FLAG_OPEN_CONTAINER //So you can't add condiments
 	if(cook_dirty)
 		visible_message(span("warning", "The insides of the microwave get covered in muck!"))
 		dirty = 100 // Make it dirty so it can't be used util cleaned
 		icon_state = "mwbloody" // Make it look dirty too
 	else if(cook_break)
-		spark(src, 2, alldirs)
+		var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread
+		s.set_up(2, GLOB.alldirs, src)
 		icon_state = "mwb" // Make it look all busted up and shit
 		visible_message(span("warning", "The microwave sprays out a shower of sparks - it's broken!")) //Let them know they're stupid
 		broken = 2 // Make it broken so it can't be used util
@@ -415,9 +411,9 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	for (var/obj/O in contents-ffuu)
 		amount++
 		if (O.reagents)
-			var/id = O.reagents.get_master_reagent_id()
-			if (id)
-				amount+=O.reagents.get_reagent_amount(id)
+			var/reagenttype = O.reagents.get_master_reagent_type()
+			if (reagenttype)
+				amount+=O.reagents.get_reagent_amount(reagenttype)
 		qdel(O)
 	reagents.clear_reagents()
 	SSvueui.check_uis_for_change(src)
@@ -491,7 +487,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	else
 		to_chat(user, "<span class='warning'>You need to be holding a valid container to empty [R.name]!</span>")
 
-/obj/machinery/microwave/proc/eject(var/message = 1, var/obj/EJ = null)
+/obj/machinery/microwave/proc/eject(var/message = TRUE, var/obj/EJ = null)
 	if (EJ)
 		EJ.forceMove(loc)
 	else
@@ -503,14 +499,6 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 		if (message)
 			to_chat(usr, "<span class='notice'>You dispose of the microwave contents.</span>")
 	SSvueui.check_uis_for_change(src)
-
-/obj/machinery/microwave/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)
-	if (!mover)
-		return 1
-	if(mover.checkpass(PASSTABLE))
-	//Animals can run under them, lots of empty space
-		return 1
-	return ..()
 
 /obj/machinery/microwave/proc/after_finish_loop()
 	set_light(0)

@@ -22,7 +22,7 @@
 	filling_color = "#58b76c"
 	reagents_to_add = list(
 		/datum/reagent/nutriment = 12,
-		/datum/reagent/nutriment/softtofu = 2,
+		/datum/reagent/nutriment/protein/tofu = 2,
 		/datum/reagent/capsaicin = 2
 	)
 	reagent_data = list(/datum/reagent/nutriment = list("rice" = 12))
@@ -261,7 +261,7 @@
 	icon_state = "ribplate"
 	trash = /obj/item/trash/plate
 	filling_color = "#7A3D11"
-	reagents_to_add = list(/datum/reagent/nutriment = 6, /datum/reagent/nutriment/protein = 6, /datum/reagent/nutriment/triglyceride = 2, /datmu/reagent/blackpepper = 1, /datum/reagent/nutriment/honey = 5)
+	reagents_to_add = list(/datum/reagent/nutriment = 6, /datum/reagent/nutriment/protein = 6, /datum/reagent/nutriment/triglyceride = 2, /datum/reagent/blackpepper = 1, /datum/reagent/nutriment/honey = 5)
 	reagent_data = list(/datum/reagent/nutriment = list("barbecue" = 6))
 	bitesize = 4
 
@@ -375,12 +375,12 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "batteredsausage"
 	filling_color = "#DB0000"
-	do_coating_prefix = 0
+	do_coating_prefix = FALSE
 	bitesize = 2
 	reagents_to_add = list(
 		/datum/reagent/nutriment/protein = 6,
-		/datum/reagent/batter = 1.7,
-		/datum/reagent/oil = 1.5
+		/datum/reagent/nutriment/coating/batter = 1.7,
+		/datum/reagent/nutriment/triglyceride/oil = 1.5
 	)
 
 /obj/item/weapon/reagent_containers/food/snacks/jalapeno_poppers
@@ -389,11 +389,11 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "popper"
 	filling_color = "#00AA00"
-	do_coating_prefix = 0
+	do_coating_prefix = FALSE
 	reagents_to_add = list(
 		/datum/reagent/nutriment = 2,
 		/datum/reagent/nutriment/coating/batter = 2,
-		/datum/reagent/oil = 2)
+		/datum/reagent/nutriment/triglyceride/oil = 2)
 	reagent_data = list(/datum/reagent/nutriment = list("chili pepper" = 2))
 	bitesize = 1
 
@@ -424,7 +424,7 @@
 	icon_state = "katsu"
 	trash = /obj/item/trash/plate
 	filling_color = "#E9ADFF"
-	do_coating_prefix = 0
+	do_coating_prefix = FALSE
 	bitesize = 1.5
 	reagents_to_add = list(
 		/datum/reagent/nutriment/protein = 6,
@@ -435,7 +435,7 @@
 /obj/item/weapon/reagent_containers/food/snacks/fries
 	reagents_to_add = list(
 		/datum/reagent/nutriment = 4,
-		/datum/reagent/oil = 1.2
+		/datum/reagent/nutriment/triglyceride/oil = 1.2
 	)
 	reagent_data = list(/datum/reagent/nutriment = list("fries" = 4))
 	bitesize = 2
@@ -472,8 +472,8 @@
 	slices_num = 6
 	reagents_to_add = list(
 		/datum/reagent/nutriment = 25,
-		/datum/reagent/batter = 6.5,
-		/datum/reagent/oil = 4
+		/datum/reagent/nutriment/coating/batter = 6.5,
+		/datum/reagent/nutriment/triglyceride/oil = 4
 	)
 	reagent_data = list(/datum/reagent/nutriment = list("fried pizza" = 25))
 	bitesize = 2
@@ -496,9 +496,9 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "funnelcake"
 	filling_color = "#Ef1479"
-	do_coating_prefix = 0
+	do_coating_prefix = FALSE
 	reagents_to_add = list(
-		/datum/reagent/batter = 10,
+		/datum/reagent/nutriment/coating/batter = 10,
 		/datum/reagent/sugar = 5
 	)
 	bitesize = 2
@@ -652,7 +652,7 @@
 		/datum/reagent/drink/coffee,
 		/datum/reagent/drink/milkshake
 	))
-	reagents_to_add += list(reagent_type = 4)
+	reagents_to_add[reagent_type] = 4
 	. = ..()
 
 /obj/item/weapon/reagent_containers/food/snacks/bacon_flatbread
@@ -723,7 +723,7 @@
 	reagent_data = list(/datum/reagent/nutriment = list("pizza crust" = 5, "tomato" = 5))
 	reagents_to_add = list(/datum/reagent/nutriment = 5)
 
-/obj/item/weapon/reagent_containers/food/snacks/burger/bacon
+/obj/item/weapon/reagent_containers/food/snacks/baconburger
 	name = "bacon burger"
 	desc = "The cornerstone of every nutritious breakfast, now with bacon!"
 	icon = 'icons/obj/food.dmi'
@@ -819,7 +819,7 @@
 	name = "bread"
 	icon_state = "Some plain old Earthen bread."
 	icon_state = "bread"
-	slice_path = /obj/item/reagent_containers/food/snacks/breadslice
+	slice_path = /obj/item/weapon/reagent_containers/food/snacks/breadslice
 	slices_num = 8
 	filling_color = "#FFE396"
 	center_of_mass = list("x"=16, "y"=9)
@@ -904,58 +904,8 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "honeybun"
 	reagent_data = list(/datum/reagent/nutriment = list("pastry" = 1))
-	reagents_to_add = list(/datum/reagent/nutriment = 3, /datum/reagent/honey = 3)
+	reagents_to_add = list(/datum/reagent/nutriment = 3, /datum/reagent/nutriment/honey = 3)
 	bitesize = 3
-
-// Moved /bun/attackby() from /code/modules/food/food/snacks.dm
-/obj/item/weapon/reagent_containers/food/snacks/bun/attackby(obj/item/weapon/W as obj, mob/user as mob)
-	var/obj/item/weapon/reagent_containers/food/snacks/result = null
-	// Bun + meatball = burger
-	if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/meatball))
-		result = new /obj/item/weapon/reagent_containers/food/snacks/monkeyburger(src)
-		to_chat(user, "You make a burger.")
-		qdel(W)
-		qdel(src)
-
-	// Bun + cutlet = hamburger
-	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/cutlet))
-		result = new /obj/item/weapon/reagent_containers/food/snacks/monkeyburger(src)
-		to_chat(user, "You make a burger.")
-		qdel(W)
-		qdel(src)
-
-	// Bun + sausage = hotdog
-	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/sausage))
-		result = new /obj/item/weapon/reagent_containers/food/snacks/hotdog(src)
-		to_chat(user, "You make a hotdog.")
-		qdel(W)
-		qdel(src)
-
-	// Bun + mouse = mouseburger
-	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/variable/mob))
-		var/obj/item/weapon/reagent_containers/food/snacks/variable/mob/MF = W
-
-		switch (MF.kitchen_tag)
-			if ("rodent")
-				result = new /obj/item/weapon/reagent_containers/food/snacks/mouseburger(src)
-				to_chat(user, "You make a mouse burger!")
-
-		switch (MF.kitchen_tag)
-			if ("lizard")
-				result = new /obj/item/weapon/reagent_containers/food/snacks/mouseburger(src)
-				to_chat(user, "You make a lizard burger!")
-	if (result)
-		if (W.reagents)
-			//Reagents of reuslt objects will be the sum total of both.  Except in special cases where nonfood items are used
-			//Eg robot head
-			result.reagents.clear_reagents()
-			W.reagents.trans_to(result, W.reagents.total_volume)
-			reagents.trans_to(result, reagents.total_volume)
-
-		//If the bun was in your hands, the result will be too
-		if (loc == user)
-			user.drop_from_inventory(src)
-			user.put_in_hands(result)
 
 // Chip update.
 /obj/item/weapon/reagent_containers/food/snacks/tortilla
@@ -978,7 +928,7 @@
 	reagent_data = list(/datum/reagent/nutriment = list("fried tortilla chips" = 2))
 	reagents_to_add = list(/datum/reagent/nutriment = 2)
 
-/obj/item/weapon/reagent_containers/food/snacks/chip/on_consume(mob/M as mob)
+/obj/item/weapon/reagent_containers/food/snacks/chip/On_Consume(mob/M as mob)
 	. = ..()
 	if(reagents && reagents.total_volume)
 		icon_state = bitten_state
@@ -1100,14 +1050,14 @@
 		item.reagents.trans_to_holder(returningitem.reagents, item.reagents.total_volume) //Old chip to new chip
 		if(item.icon_state == "chip_half")
 			returningitem.icon_state = "[returningitem.icon_state]_half"
-			returningitem.bitesize = CLAMP(returningitem.reagents.total_volume,1,10)
+			returningitem.bitesize = Clamp(returningitem.reagents.total_volume,1,10)
 		else if(prob(1))
 			memed = 1
 			user << "You scoop up some dip with the chip, but mid-scoop, the chip breaks off into the dreadful abyss of dip, never to be seen again..."
 			returningitem.icon_state = "[returningitem.icon_state]_half"
-			returningitem.bitesize = CLAMP(returningitem.reagents.total_volume,1,10)
+			returningitem.bitesize = Clamp(returningitem.reagents.total_volume,1,10)
 		else
-			returningitem.bitesize = CLAMP(returningitem.reagents.total_volume*0.5,1,10)
+			returningitem.bitesize = Clamp(returningitem.reagents.total_volume*0.5,1,10)
 		qdel(item)
 		reagents.trans_to_holder(returningitem.reagents, bitesize) //Dip to new chip
 		user.put_in_hands(returningitem)
@@ -1207,7 +1157,7 @@
 	reagents_to_add = list(
 		/datum/reagent/nutriment = 6,
 		/datum/reagent/nutriment/protein = 9,
-		/datum/reagent/condensedcapsaicin = 20
+		/datum/reagent/capsaicin/condensed = 20
 	)
 
 /obj/item/weapon/reagent_containers/food/snacks/burrito_mystery
@@ -1292,15 +1242,15 @@
 	icon_state = "grilled_carp_slice"
 	trash = /obj/item/trash/plate
 
-/obj/item/reagent_containers/food/snacks/sliceable/sushi_roll
+/obj/item/weapon/reagent_containers/food/snacks/sliceable/sushi_roll
 	name = "sushi roll"
 	desc = "A sushi roll wrapped in special grass that combines unathi and human cooking techniques. Can be sliced into proper serving sizes."
 	icon_state = "sushi_roll"
-	slice_path = /obj/item/reagent_containers/food/snacks/sushi
+	slice_path = /obj/item/weapon/reagent_containers/food/snacks/sushi
 	slices_num = 3
 	reagents_to_add = list(/datum/reagent/nutriment/protein/seafood = 6)
 
-/obj/item/reagent_containers/food/snacks/banana_split
+/obj/item/weapon/reagent_containers/food/snacks/banana_split
 	name = "banana split"
 	desc = "A dessert made with icecream and a banana."
 	icon_state = "banana_split"
@@ -1308,3 +1258,13 @@
 	trash = /obj/item/trash/snack_bowl
 	reagents_to_add = list(/datum/reagent/nutriment = 5, /datum/reagent/drink/juice/banana = 3)
 	reagent_data = list(/datum/reagent/nutriment = list("icecream" = 5))
+
+/obj/item/weapon/reagent_containers/food/snacks/lasagna
+	name = "lasagna"
+	desc = "Favorite of cats."
+	icon_state = "lasagna"
+	trash = /obj/item/trash/tray
+	center_of_mass = list("x"=16, "y"=17)
+	reagents_to_add = list(/datum/reagent/nutriment = 12, /datum/reagent/nutriment/protein = 12)
+	reagent_data = list(/datum/reagent/nutriment = list("pasta" = 4, "tomato" = 2))
+	bitesize = 6

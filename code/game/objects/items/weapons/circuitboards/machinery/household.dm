@@ -13,45 +13,45 @@
 		/obj/item/weapon/stock_parts/power/apc/buildable = 1
 	)
 
-/obj/item/weapon/stock_parts/cicruitboard/fryer
+/obj/item/weapon/stock_parts/circuitboard/fryer
 	name = T_BOARD("fryer")
 	build_path = /obj/machinery/appliance/cooker/fryer
 	board_type = "machine"
 	origin_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
 	req_components = list(
-			/obj/item/stock_parts/capacitor = 3,
-			/obj/item/stock_parts/scanning_module,
-			/obj/item/stock_parts/matter_bin = 2)
+		/obj/item/weapon/stock_parts/capacitor = 3,
+		/obj/item/weapon/stock_parts/scanning_module,
+		/obj/item/weapon/stock_parts/matter_bin = 2)
 	additional_spawn_components = list(
 		/obj/item/weapon/stock_parts/console_screen = 1,
 		/obj/item/weapon/stock_parts/keyboard = 1,
 		/obj/item/weapon/stock_parts/power/apc/buildable = 1
 	)
 
-/obj/item/weapon/stock_parts/cicruitboard/grill
+/obj/item/weapon/stock_parts/circuitboard/grill
 	name = T_BOARD("grill")
-	build_path = /obj/machinery/appliance/cooker/grill
+	build_path = /obj/machinery/appliance/grill
 	board_type = "machine"
 	origin_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
 	req_components = list(
-			/obj/item/stock_parts/capacitor = 3,
-			/obj/item/stock_parts/scanning_module,
-			/obj/item/stock_parts/matter_bin = 2)
+			/obj/item/weapon/stock_parts/capacitor = 3,
+			/obj/item/weapon/stock_parts/scanning_module,
+			/obj/item/weapon/stock_parts/matter_bin = 2)
 	additional_spawn_components = list(
 		/obj/item/weapon/stock_parts/console_screen = 1,
 		/obj/item/weapon/stock_parts/keyboard = 1,
 		/obj/item/weapon/stock_parts/power/apc/buildable = 1
 	)
 
-/obj/item/weapon/stock_parts/cicruitboard/oven
+/obj/item/weapon/stock_parts/circuitboard/oven
 	name = T_BOARD("oven")
 	build_path = /obj/machinery/appliance/cooker/oven
 	board_type = "machine"
 	origin_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
 	req_components = list(
-		/obj/item/stock_parts/capacitor = 3,
-		/obj/item/stock_parts/scanning_module,
-		/obj/item/stock_parts/matter_bin = 2
+		/obj/item/weapon/stock_parts/capacitor = 3,
+		/obj/item/weapon/stock_parts/scanning_module,
+		/obj/item/weapon/stock_parts/matter_bin = 2
 	)
 	additional_spawn_components = list(
 		/obj/item/weapon/stock_parts/console_screen = 1,

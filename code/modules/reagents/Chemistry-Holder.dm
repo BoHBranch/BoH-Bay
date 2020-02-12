@@ -254,6 +254,13 @@ GLOBAL_DATUM_INIT(temp_reagents_holder, /obj, new)
 			return current.volume
 	return 0
 
+/datum/reagents/proc/get_reagent(var/reagent_type) // Returns reference to reagent matching passed reagent type
+	for(var/datum/reagent/current in reagent_list)
+		if (current.type == reagent_type)
+			return current
+
+	return 0
+
 /datum/reagents/proc/get_data(var/reagent_type)
 	for(var/datum/reagent/current in reagent_list)
 		if(current.type == reagent_type)

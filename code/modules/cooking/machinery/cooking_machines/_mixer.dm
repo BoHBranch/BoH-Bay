@@ -22,7 +22,7 @@ fundamental differences
 
 /obj/machinery/appliance/mixer/Initialize()
 	. = ..()
-	cooking_objs += new /datum/cooking_item(new /obj/item/reagent_containers/cooking_container(src))
+	cooking_objs += new /datum/cooking_item(new /obj/item/weapon/reagent_containers/cooking_container(src))
 	cooking = 0
 	selected_option = pick(output_options)
 
@@ -137,7 +137,7 @@ fundamental differences
 		icon_state = off_icon
 
 
-/obj/machinery/appliance/mixer/machinery_process()
+/obj/machinery/appliance/mixer/Process()
 	if (!stat)
 		for (var/i in cooking_objs)
 			do_cooking_tick(i)
