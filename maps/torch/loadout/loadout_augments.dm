@@ -27,7 +27,6 @@
 	display_name = "mechanical polytool - left arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/polytool/engineer/left
 	cost = 4
-	allowed_roles = TECHNICAL_ROLES
 
 /datum/gear/augmentation/implanted_toolkit/right
 	display_name = "mechanical polytool - right arm (ROBOTIC)"
@@ -46,4 +45,4 @@
 	display_name = "nanite MCU"
 	path = /obj/item/organ/internal/augment/active/nanounit
 	cost = 10
-	allowed_roles = SECURITY_ROLES
+	allowed_roles = ARMORED_ROLES
