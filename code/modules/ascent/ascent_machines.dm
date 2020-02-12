@@ -182,7 +182,7 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 	icon_state = "core1"
 	color = COLOR_PURPLE
 	var/on = TRUE
-	var/output_power = 9000 KILOWATTS
+	var/output_power = 45 MEGAWATTS //it's the future, and this is a god darn fusion reactor. Why would it produce measly kilowatts?
 	var/image/field_image
 
 /obj/machinery/power/ascent_reactor/attack_hand(mob/user)
@@ -235,6 +235,6 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 /obj/machinery/power/smes/buildable/power_shuttle/ascent
 	name = "mantid battery"
 	desc = "Some kind of strange alien SMES technology."
-	icon = 'icons/obj/machines/power/mantid_smes.dmi'	
+	icon = 'icons/obj/machines/power/mantid_smes.dmi'
 	overlay_icon = 'icons/obj/machines/power/mantid_smes.dmi'
 	construct_state = /decl/machine_construction/default/no_deconstruct

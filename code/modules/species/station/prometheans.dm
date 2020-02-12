@@ -5,10 +5,10 @@ var/datum/species/shapeshifter/promethean/prometheans
 
 	name =             SPECIES_PROMETHEAN
 	name_plural =      "Prometheans"
-	description =            "What has Science done?"
+	description =      "What has Science done?"
 	show_ssd =         "totally quiescent"
-	death_message =    "rapidly loses cohesion, splattering across the ground..."
-	knockout_message = "collapses inwards, forming a disordered puddle of goo."
+	death_message =    "rapidly loses form, splattering across the ground in a congealed mess..."
+	knockout_message = "collapses inwards, forming a congealed mess of goo."
 	remains_type = /obj/effect/decal/cleanable/ash
 
 	meat_type = null
@@ -82,8 +82,10 @@ var/datum/species/shapeshifter/promethean/prometheans
 					"<span class='notice'>You glomps [target] to make [G.him] feel better!</span>")
 	H.apply_stored_shock_to(target)
 
+/* //No thanks.
 /datum/species/shapeshifter/promethean/handle_death(var/mob/living/carbon/human/H)
 	addtimer(CALLBACK(H, /mob/proc/gib),0)
+*/ //This is just a temp comment out.
 
 /datum/species/shapeshifter/promethean/handle_environment_special(var/mob/living/carbon/human/H)
 

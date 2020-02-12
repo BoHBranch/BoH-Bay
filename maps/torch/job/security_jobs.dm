@@ -27,7 +27,7 @@
 	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
 	                    SKILL_WEAPONS     = SKILL_MAX,
 	                    SKILL_FORENSICS   = SKILL_MAX)
-	skill_points = 20
+	skill_points = 34
 
 	access = list(access_security, access_brig, access_armory, access_forensics_lockers,
 			            access_maint_tunnels, access_external_airlocks, access_emergency_storage,
@@ -46,7 +46,7 @@
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
-	skill_points = 14
+	skill_points = 18
 	alt_titles = list(
 		"Criminal Investigator"
 	)
@@ -94,7 +94,7 @@
 	economic_power = 4
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 25
+	ideal_character_age = 29
 	alt_titles = list() // This is a hack. Overriding a list var with null does not actually override it due to the particulars of dm list init. Do not "clean up" without testing.
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
 	allowed_branches = list(

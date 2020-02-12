@@ -1,6 +1,7 @@
 /obj/item/weapon/gun/projectile/heavysniper
 	name = "anti-materiel rifle"
-	desc = "A portable anti-armour rifle fitted with a scope, the HI PTR-7 Rifle was originally designed to be used against armoured exosuits. It is capable of punching through windows and non-reinforced walls with ease."
+	desc = "A portable anti-armour rifle fitted with a scope, the HI PTR-7 Rifle was originally designed to be used against armoured exosuits. It is capable of punching through windows and non-reinforced walls with ease. \
+	Truly an anachronism from another time."
 	icon = 'icons/obj/guns/heavysniper.dmi'
 	icon_state = "heavysniper"
 	item_state = "heavysniper" //sort of placeholder

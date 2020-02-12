@@ -187,8 +187,8 @@
 /datum/unarmed_attack/punch/venom
 	attack_verb = list("mauled", "sank their claws into")
 	attack_sound = 'sound/weapons/bite.ogg'
-	damage = 5
-	delay = 120
+	damage = 2.5
+	delay = 60
 	attack_name = "venomous strike"
 
 /datum/unarmed_attack/bite/venom/get_damage_type()
