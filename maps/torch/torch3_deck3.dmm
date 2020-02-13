@@ -14163,10 +14163,34 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/thirddeck/aft)
 "zO" = (
+/obj/effect/floor_decal/techfloor{
+	icon_state = "techfloor_edges";
+	dir = 8
+	},
+/obj/item/device/radio/intercom/entertainment{
+	dir = 4;
+	pixel_x = -22
+	},
 /obj/structure/table/standard,
-/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/SCG,
-/obj/item/weapon/deck/cards,
+/obj/item/modular_computer/laptop,
+/turf/simulated/floor/tiled/techfloor,
+/area/crew_quarters/safe_room/thirddeck)
+"zP" = (
+/obj/structure/table/standard,
 /obj/item/device/geiger,
+/turf/simulated/floor/tiled/techfloor,
+/area/crew_quarters/safe_room/thirddeck)
+"zQ" = (
+/obj/machinery/newscaster{
+	pixel_x = -32
+	},
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/obj/effect/floor_decal/techfloor{
+	icon_state = "techfloor_edges";
+	dir = 10
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
 "zR" = (
@@ -14178,6 +14202,13 @@
 "zS" = (
 /turf/simulated/wall/prepainted,
 /area/maintenance/thirddeck/foreport)
+"zT" = (
+/obj/effect/floor_decal/techfloor,
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/crew_quarters/safe_room/thirddeck)
 "zU" = (
 /obj/structure/table/standard,
 /obj/machinery/alarm{
@@ -16443,19 +16474,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
 /area/storage/tools)
-"Hv" = (
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 8
-	},
-/obj/item/device/radio/intercom/entertainment{
-	dir = 4;
-	pixel_x = -22
-	},
-/obj/structure/table/standard,
-/obj/item/modular_computer/laptop/preset/custom_loadout/cheap,
-/turf/simulated/floor/tiled/techfloor,
-/area/crew_quarters/safe_room/thirddeck)
 "Hx" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -19394,13 +19412,6 @@
 /obj/structure/ladder/up,
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/thirddeck/aft)
-"Ps" = (
-/obj/effect/floor_decal/techfloor,
-/obj/structure/bed/chair{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/crew_quarters/safe_room/thirddeck)
 "Px" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -21402,19 +21413,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/gym)
-"VL" = (
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 10
-	},
-/obj/machinery/newscaster{
-	pixel_x = -32
-	},
-/obj/structure/bed/chair{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/crew_quarters/safe_room/thirddeck)
 "VM" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -35639,8 +35637,8 @@ jN
 jR
 lK
 PE
-Hv
-VL
+zO
+zQ
 Bm
 EO
 Fv
@@ -35841,8 +35839,8 @@ Lg
 xV
 NY
 tG
-zO
-Ps
+zP
+zT
 Bm
 EP
 Bm

@@ -164,6 +164,9 @@
 /turf/simulated/floor/reinforced/xenon
 	initial_gas = list(GAS_XENON = ATMOSTANK_NITROGEN)
 
+/turf/simulated/floor/reinforced/bromide
+	initial_gas = list(GAS_METHYL_BROMIDE = ATMOSTANK_METHYL_BROMIDE)
+
 /turf/simulated/floor/cult
 	name = "engraved floor"
 	icon = 'icons/turf/flooring/cult.dmi'

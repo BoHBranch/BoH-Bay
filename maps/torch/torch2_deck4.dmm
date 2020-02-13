@@ -223,20 +223,41 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/starboard)
 "aJ" = (
-/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/effect/floor_decal/corner/red/half{
+	icon_state = "bordercolorhalf";
+	dir = 8
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
-	dir = 4;
+	dir = 2;
 	display_name = "Starboard Dock C";
 	frequency = 1380;
 	id_tag = "admin_shuttle_dock_airlock";
-	pixel_x = -24;
+	pixel_x = 0;
+	pixel_y = 24;
 	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
 	tag_airpump = "admin_shuttle_dock_pump";
 	tag_chamber_sensor = "admin_shuttle_dock_sensor";
 	tag_exterior_door = "admin_shuttle_dock_outer";
 	tag_interior_door = "admin_shuttle_dock_inner"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
 "aK" = (
 /obj/machinery/door/airlock/external{
@@ -342,6 +363,7 @@
 /obj/structure/closet/crate,
 /obj/random/powercell,
 /obj/random/illegal,
+/obj/random/illegaltwo,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/auxillary/starboard)
 "aY" = (
@@ -351,6 +373,7 @@
 /obj/structure/closet/crate,
 /obj/random/junk,
 /obj/random/illegal,
+/obj/random/illegaltwo,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/auxillary/port)
 "ba" = (
@@ -455,29 +478,23 @@
 /turf/simulated/floor/plating,
 /area/security/infantry)
 "bk" = (
-/obj/effect/floor_decal/corner/red/half{
-	icon_state = "bordercolorhalf";
-	dir = 8
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+/obj/structure/table/steel_reinforced,
+/obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	dir = 2;
+	display_name = "Fore Dock";
+	frequency = 1331;
+	id_tag = "nuke_shuttle_dock_airlock";
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	tag_airpump = "nuke_shuttle_dock_pump";
+	tag_chamber_sensor = "nuke_shuttle_dock_sensor";
+	tag_exterior_door = "nuke_shuttle_dock_outer";
+	tag_interior_door = "nuke_shuttle_dock_inner"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/hallway/primary/fourthdeck/aft)
+/area/hallway/primary/fourthdeck/fore)
 "bl" = (
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
@@ -1242,6 +1259,7 @@
 	dir = 8;
 	health = 1e+006
 	},
+/obj/random/illegaltwo,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/gear)
 "cI" = (
@@ -2388,6 +2406,63 @@
 /obj/machinery/door/airlock/glass/civilian,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/aft)
+"eH" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 9
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 4;
+	frequency = 1331;
+	id_tag = "rescue_shuttle_dock_pump"
+	},
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	dir = 4;
+	display_name = "Port Dock C";
+	frequency = 1331;
+	id_tag = "rescue_shuttle_dock_airlock";
+	pixel_x = -24;
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	tag_airpump = "rescue_shuttle_dock_pump";
+	tag_chamber_sensor = "rescue_shuttle_dock_sensor";
+	tag_exterior_door = "rescue_shuttle_dock_outer";
+	tag_interior_door = "rescue_shuttle_dock_inner"
+	},
+/turf/simulated/floor/plating,
+/area/hallway/primary/fourthdeck/aft)
+"eI" = (
+/obj/effect/floor_decal/corner/red/half{
+	icon_state = "bordercolorhalf";
+	dir = 8
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	dir = 1;
+	display_name = "Port Dock C";
+	frequency = 1331;
+	id_tag = "rescue_shuttle_dock_airlock";
+	pixel_x = 0;
+	pixel_y = -24;
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	tag_airpump = "rescue_shuttle_dock_pump";
+	tag_chamber_sensor = "rescue_shuttle_dock_sensor";
+	tag_exterior_door = "rescue_shuttle_dock_outer";
+	tag_interior_door = "rescue_shuttle_dock_inner"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/hallway/primary/fourthdeck/aft)
 "eJ" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance{
@@ -2395,6 +2470,29 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/maintenance/fourthdeck/port)
+"eK" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 4;
+	frequency = 1380;
+	id_tag = "admin_shuttle_dock_pump"
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 10
+	},
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	dir = 4;
+	display_name = "Starboard Dock C";
+	frequency = 1380;
+	id_tag = "admin_shuttle_dock_airlock";
+	pixel_x = -24;
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	tag_airpump = "admin_shuttle_dock_pump";
+	tag_chamber_sensor = "admin_shuttle_dock_sensor";
+	tag_exterior_door = "admin_shuttle_dock_outer";
+	tag_interior_door = "admin_shuttle_dock_inner"
+	},
+/turf/simulated/floor/plating,
+/area/hallway/primary/fourthdeck/aft)
 "eL" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -2420,6 +2518,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
+"eM" = (
+/obj/structure/railing/mapped,
+/obj/random/trash,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/aft)
+"eN" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/aft)
 "eO" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor/tiled/monotile,
@@ -4364,22 +4474,6 @@
 	},
 /obj/item/device/radio/beacon,
 /turf/simulated/floor/tiled/monotile,
-/area/hallway/primary/fourthdeck/aft)
-"lQ" = (
-/obj/effect/wallframe_spawn/reinforced/hull,
-/obj/machinery/embedded_controller/radio/airlock/docking_port{
-	dir = 4;
-	display_name = "Port Dock C";
-	frequency = 1331;
-	id_tag = "rescue_shuttle_dock_airlock";
-	pixel_x = -24;
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
-	tag_airpump = "rescue_shuttle_dock_pump";
-	tag_chamber_sensor = "rescue_shuttle_dock_sensor";
-	tag_exterior_door = "rescue_shuttle_dock_outer";
-	tag_interior_door = "rescue_shuttle_dock_inner"
-	},
-/turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "lX" = (
 /obj/structure/disposalpipe/segment{
@@ -7876,23 +7970,6 @@
 	},
 /turf/space,
 /area/space)
-"wy" = (
-/obj/structure/table/steel_reinforced,
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
-	},
-/obj/machinery/embedded_controller/radio/airlock/docking_port{
-	display_name = "Fore Dock";
-	frequency = 1331;
-	id_tag = "nuke_shuttle_dock_airlock";
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
-	tag_airpump = "nuke_shuttle_dock_pump";
-	tag_chamber_sensor = "nuke_shuttle_dock_sensor";
-	tag_exterior_door = "nuke_shuttle_dock_outer";
-	tag_interior_door = "nuke_shuttle_dock_inner"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/hallway/primary/fourthdeck/fore)
 "wz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -9508,10 +9585,6 @@
 "Ds" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/quartermaster/storage/upper)
-"Dt" = (
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fourthdeck/aft)
 "Dw" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 9
@@ -11032,27 +11105,6 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/hallway/primary/fourthdeck/aft)
-"JP" = (
-/obj/effect/floor_decal/corner/red/half{
-	icon_state = "bordercolorhalf";
-	dir = 8
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
 "JQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
@@ -12932,17 +12984,6 @@
 "Pw" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/command/pathfinder)
-"Px" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 9
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
-	frequency = 1331;
-	id_tag = "rescue_shuttle_dock_pump"
-	},
-/turf/simulated/floor/plating,
-/area/hallway/primary/fourthdeck/aft)
 "Pz" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -13324,14 +13365,6 @@
 /obj/item/device/megaphone,
 /turf/simulated/floor/tiled,
 /area/quartermaster/deckchief)
-"Qy" = (
-/obj/structure/railing/mapped,
-/obj/random/trash,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/aft)
 "QA" = (
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/captainmess)
@@ -13802,17 +13835,6 @@
 "RQ" = (
 /turf/simulated/wall/r_wall/hull,
 /area/storage/auxillary/starboard)
-"RR" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
-	frequency = 1380;
-	id_tag = "admin_shuttle_dock_pump"
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 10
-	},
-/turf/simulated/floor/plating,
-/area/hallway/primary/fourthdeck/aft)
 "RS" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -26574,7 +26596,7 @@ qR
 sm
 tP
 tS
-wy
+bk
 xO
 zk
 WZ
@@ -41094,9 +41116,9 @@ aa
 aa
 Yj
 tG
-RR
+eK
+LA
 aJ
-bk
 Mx
 YR
 YR
@@ -41134,9 +41156,9 @@ uj
 uj
 uj
 Jx
-JP
-lQ
-Px
+eI
+LA
+eH
 Ms
 Yj
 aa
@@ -42105,7 +42127,7 @@ aa
 aa
 wX
 wp
-Qy
+eM
 Tf
 Ji
 nD
@@ -43121,7 +43143,7 @@ Vr
 Tj
 gy
 AM
-Dt
+eN
 fh
 lK
 gy

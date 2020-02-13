@@ -166,8 +166,8 @@
 	name = "sabot"
 	icon_state= "rod"
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
-	damage = 15
-	armor_penetration = 60
+	damage = 35
+	armor_penetration = 80
 	penetration_modifier = 0.1
 	penetrating = 1
 	damage_flags = DAM_EDGE

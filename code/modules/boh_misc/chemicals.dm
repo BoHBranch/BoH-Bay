@@ -128,3 +128,24 @@
 
 	glass_name = "coffee"
 	glass_desc = "This smells funny, and seems incredibly hot."
+
+/////////
+// SF4
+/////////
+/datum/reagent/acid/sf4
+	name = "Sulfur Tetrafluoride"
+	description = "A highly corrosive gas."
+	taste_description = "rotten eggs"
+	color = "#debd45"
+	touch_met = 100
+	power = 85
+	meltdose = 5 // How much is needed to melt
+	max_damage = 65
+
+//hf
+/datum/reagent/acid/hf
+	name = "Hydrofluoric acid"
+	description = "A highly corrosive acid."
+	taste_description = "acid"
+	reagent_state = LIQUID
+	color = "#619494"

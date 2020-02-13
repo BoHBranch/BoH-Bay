@@ -163,6 +163,7 @@
 	caliber = CALIBER_SABOT
 	req_access = list(access_brig) //changed temp
 	authorized_modes = list(UNAUTHORIZED)
+	jam_chance = 25 //big ol' gun. Purely for balance.
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		)

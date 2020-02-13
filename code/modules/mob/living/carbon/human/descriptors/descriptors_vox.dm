@@ -33,3 +33,34 @@
 
 /datum/mob_descriptor/vox_markings/get_third_person_message_start(var/datum/gender/my_gender)
 	. = "[my_gender.His] neck markings are"
+
+datum/mob_descriptor/pariah_stink
+	name = "stink"
+	chargen_label = "smell (rank)"
+	skip_species_mention = TRUE
+	standalone_value_descriptors = list(
+		"strong-smelling",
+		"malodorous",
+		"fetid",
+		"reeking",
+		"disgusting"
+		)
+	chargen_value_descriptors = list(
+		"strong-smelling"  =      1,
+		"malodorous" =      2,
+		"fetid" =  3,
+		"reeking" =     4,
+		"disgusting" =  5
+		)
+	comparative_value_descriptor_equivalent = "smells fine, like you."
+	comparative_value_descriptors_smaller = list(
+		"smells decent",
+		"smells good",
+		"smells great"
+		)
+	comparative_value_descriptors_larger = list(
+		"smells a bit",
+		"sort of stinks",
+		"smells bad"
+		)
+

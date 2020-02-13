@@ -90,6 +90,7 @@
 	is_semi_antagonist = TRUE
 	var/requires_supervisor = FALSE
 	var/set_species_on_join = SPECIES_MANTID_GYNE
+	skill_points = 34
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_PILOT = SKILL_ADEPT,
 					SKILL_HAULING = SKILL_ADEPT,
@@ -159,7 +160,7 @@
 					SKILL_HAULING = SKILL_ADEPT,
 					SKILL_COMBAT = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT,
-					SKILL_MEDICAL = SKILL_BASIC)
+					SKILL_MEDICAL = SKILL_ADEPT)
 
 /datum/job/submap/ascent/drone
 	title = "Ascent Drone"
