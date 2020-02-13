@@ -9,7 +9,7 @@
 	filling_color = "#ff1c1c"
 	center_of_mass = "x=16;y=14"
 	bitesize = 3
-	reagents_to_add = list(/datum/reagent/nutriment/protein, 9)
+	reagents_to_add = list(/datum/reagent/nutriment/protein = 9)
 	cooked_icon = "meatstake"
 
 

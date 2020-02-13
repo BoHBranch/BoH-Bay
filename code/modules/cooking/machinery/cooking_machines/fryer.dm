@@ -41,7 +41,7 @@
 	if (prob(20))
 		//Sometimes the fryer will start with much less than full oil, significantly impacting efficiency until filled
 		variance = rand()*0.5
-	oil.add_reagent("cornoil", optimal_oil*(1 - variance))
+	oil.add_reagent(/datum/reagent/nutriment/triglyceride/oil/cornoil, optimal_oil*(1 - variance))
 	fry_loop = new(list(src), FALSE)
 
 /obj/machinery/appliance/cooker/fryer/heat_up()

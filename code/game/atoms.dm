@@ -55,12 +55,15 @@
 		update_light()
 
 	if(LAZYLEN(reagents_to_add))
-		create_reagents(0)
-		for(var/v in reagents_to_add)
-			reagents.maximum_volume += reagents_to_add[v]
-			reagents.add_reagent(v, reagents_to_add[v], LAZYACCESS(reagent_data, v))
-		LAZYCLEARLIST(reagents_to_add)
-		LAZYCLEARLIST(reagent_data)
+		if(!reagents)
+			create_reagents(0)
+		if(reagents_to_add)
+			for(var/v in reagents_to_add)
+				reagents.maximum_volume += LAZYACCESS(reagents_to_add, v)
+				reagents.add_reagent(v, LAZYACCESS(reagents_to_add, v), LAZYACCESS(reagent_data, v))
+		//LAZYCLEARLIST(reagents_to_add)
+		//LAZYCLEARLIST(reagent_data)
+		//these two lines are for map persistence, which isn't a feature here but may be in the future
 
 	if(opacity)
 		updateVisibility(src)
