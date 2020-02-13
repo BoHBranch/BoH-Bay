@@ -263,7 +263,7 @@
 	if (!flat_icon)
 		flat_icon = getFlatIcon(src)
 	var/icon/I = flat_icon
-	color = "#FFFFFF" //Some fruits use the color var. Reset this so it doesnt tint the batter
+	color = "#ffffff" //Some fruits use the color var. Reset this so it doesnt tint the batter
 	I.Blend(new /icon('icons/obj/food_custom.dmi', rgb(255,255,255)),ICON_ADD)
 	I.Blend(new /icon('icons/obj/food_custom.dmi', coating.icon_raw),ICON_MULTIPLY)
 	var/image/J = image(I)
@@ -295,7 +295,7 @@
 		if (!flat_icon)
 			flat_icon = getFlatIcon(src)
 		var/icon/I = flat_icon
-		color = "#FFFFFF" //Some fruits use the color var
+		color = "#ffffff" //Some fruits use the color var
 		I.Blend(new /icon('icons/obj/food_custom.dmi', rgb(255,255,255)),ICON_ADD)
 		I.Blend(new /icon('icons/obj/food_custom.dmi', coating.icon_cooked),ICON_MULTIPLY)
 		var/image/J = image(I)

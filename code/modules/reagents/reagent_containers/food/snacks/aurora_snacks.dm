@@ -73,7 +73,7 @@
 	desc = "A thick, dark stew of bear meat and vegetables."
 	icon = 'icons/obj/food.dmi'
 	icon_state = "bearstew"
-	filling_color = "#9E673A"
+	filling_color = "#9e673a"
 	reagents_to_add = list(
 		/datum/reagent/nutriment = 6,
 		/datum/reagent/nutriment/protein = 4,
@@ -103,7 +103,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "lomein"
 	trash = /obj/item/trash/plate
-	filling_color = "#FCEE81"
+	filling_color = "#fcee81"
 	reagents_to_add = list(/datum/reagent/nutriment = 8, /datum/reagent/nutriment/protein = 2)
 	reagent_data = list(/datum/reagent/nutriment = list("noodles" = 6, "sesame sauce" = 2))
 	bitesize = 2
@@ -115,7 +115,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "friedrice"
 	trash = /obj/item/trash/snack_bowl
-	filling_color = "#FFFBDB"
+	filling_color = "#fffbdb"
 	reagents_to_add = list(/datum/reagent/nutriment = 7)
 	reagent_data = list(/datum/reagent/nutriment = list("rice" = 7))
 	bitesize = 2
@@ -125,7 +125,7 @@
 	desc = "Fried chicken, in sandwich format. Beauty is simplicity."
 	icon = 'icons/obj/food.dmi'
 	icon_state = "chickenfillet"
-	filling_color = "#E9ADFF"
+	filling_color = "#e9adff"
 	reagents_to_add = list(/datum/reagent/nutriment = 4, /datum/reagent/nutriment/protein = 8)
 	reagent_data = list(/datum/reagent/nutriment = list("breading" = 4))
 	bitesize = 3
@@ -137,7 +137,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "chilicheesefries"
 	trash = /obj/item/trash/plate
-	filling_color = "#EDDD00"
+	filling_color = "#eddd00"
 	reagents_to_add = list(/datum/reagent/nutriment = 8, /datum/reagent/nutriment/protein = 2, /datum/reagent/capsaicin = 2)
 	reagent_data = list(/datum/reagent/nutriment = list("hearty, cheesy fries" = 8))
 	bitesize = 4
@@ -147,7 +147,7 @@
 	desc = "A tender, beer-battered plump helmet, fried to crispy perfection."
 	icon = 'icons/obj/food.dmi'
 	icon_state = "friedmushroom"
-	filling_color = "#EDDD00"
+	filling_color = "#eddd00"
 	reagents_to_add = list(/datum/reagent/nutriment = 4, /datum/reagent/nutriment/protein = 2)
 	reagent_data = list(/datum/reagent/nutriment = list("alcoholic mushrooms" = 4))
 	bitesize = 5
@@ -238,7 +238,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "honeytoast"
 	trash = /obj/item/trash/plate
-	filling_color = "#EDE5AD"
+	filling_color = "#ede5ad"
 	reagents_to_add = list(/datum/reagent/nutriment = 1)
 	reagent_data = list(/datum/reagent/nutriment = list("sweet, crunchy bread" = 1))
 	bitesize = 4
@@ -249,7 +249,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "poachedegg"
 	trash = /obj/item/trash/plate
-	filling_color = "#FFDF78"
+	filling_color = "#ffdf78"
 	reagents_to_add = list(/datum/reagent/nutriment = 1, /datum/reagent/nutriment/protein = 3, /datum/reagent/blackpepper = 1)
 	reagent_data = list(/datum/reagent/nutriment = list("egg" = 1))
 	bitesize = 2
@@ -260,7 +260,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "ribplate"
 	trash = /obj/item/trash/plate
-	filling_color = "#7A3D11"
+	filling_color = "#7a3d11"
 	reagents_to_add = list(/datum/reagent/nutriment = 6, /datum/reagent/nutriment/protein = 6, /datum/reagent/nutriment/triglyceride = 2, /datum/reagent/blackpepper = 1, /datum/reagent/nutriment/honey = 5)
 	reagent_data = list(/datum/reagent/nutriment = list("barbecue" = 6))
 	bitesize = 4
@@ -274,7 +274,7 @@
 	icon_state = "keylimepie"
 	slice_path = /obj/item/weapon/reagent_containers/food/snacks/keylimepieslice
 	slices_num = 5
-	filling_color = "#F5B951"
+	filling_color = "#f5b951"
 	reagents_to_add = list(/datum/reagent/nutriment = 16, /datum/reagent/nutriment/protein = 4)
 	reagent_data = list(/datum/reagent/nutriment = list("lime" = 12, "graham crackers" = 4))
 
@@ -284,7 +284,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "keylimepieslice"
 	trash = /obj/item/trash/plate
-	filling_color = "#F5B951"
+	filling_color = "#f5b951"
 	bitesize = 3
 	reagent_data = list(/datum/reagent/nutriment = list("lime" = 1))
 
@@ -298,7 +298,7 @@
 	icon_state = "quiche"
 	slice_path = /obj/item/weapon/reagent_containers/food/snacks/quicheslice
 	slices_num = 5
-	filling_color = "#F5B951"
+	filling_color = "#f5b951"
 	reagents_to_add = list(/datum/reagent/nutriment = 10, /datum/reagent/nutriment/protein = 10)
 	reagent_data = list(/datum/reagent/nutriment = list("cheese" = 5, "egg" = 5))
 
@@ -308,7 +308,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "quicheslice"
 	trash = /obj/item/trash/plate
-	filling_color = "#F5B951"
+	filling_color = "#f5b951"
 	bitesize = 3
 	reagent_data = list(/datum/reagent/nutriment = list("cheesy eggs" = 1))
 
@@ -335,7 +335,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "browniesslice"
 	trash = /obj/item/trash/plate
-	filling_color = "#F5B951"
+	filling_color = "#f5b951"
 	bitesize = 2
 	reagent_data = list(/datum/reagent/nutriment = list("fudge" = 1))
 
@@ -362,7 +362,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "cosmicbrowniesslice"
 	trash = /obj/item/trash/plate
-	filling_color = "#F5B951"
+	filling_color = "#f5b951"
 	bitesize = 3
 	reagent_data = list(/datum/reagent/nutriment = list("fudge" = 1))
 
@@ -374,7 +374,7 @@
 	desc = "A piece of mixed, long meat, battered and then deepfried."
 	icon = 'icons/obj/food.dmi'
 	icon_state = "batteredsausage"
-	filling_color = "#DB0000"
+	filling_color = "#db0000"
 	do_coating_prefix = FALSE
 	bitesize = 2
 	reagents_to_add = list(
@@ -388,7 +388,7 @@
 	desc = "A battered, deep-fried chili pepper."
 	icon = 'icons/obj/food.dmi'
 	icon_state = "popper"
-	filling_color = "#00AA00"
+	filling_color = "#00aa00"
 	do_coating_prefix = FALSE
 	reagents_to_add = list(
 		/datum/reagent/nutriment = 2,
@@ -423,7 +423,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "katsu"
 	trash = /obj/item/trash/plate
-	filling_color = "#E9ADFF"
+	filling_color = "#e9adff"
 	do_coating_prefix = FALSE
 	bitesize = 1.5
 	reagents_to_add = list(
@@ -446,7 +446,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "microchips"
 	trash = /obj/item/trash/plate
-	filling_color = "#EDDD00"
+	filling_color = "#eddd00"
 	reagents_to_add = list(/datum/reagent/nutriment = 4)
 	reagent_data = list(/datum/reagent/nutriment = list("soggy fries" = 4))
 	bitesize = 2
@@ -457,7 +457,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "ovenchips"
 	trash = /obj/item/trash/plate
-	filling_color = "#EDDD00"
+	filling_color = "#eddd00"
 	reagents_to_add = list(/datum/reagent/nutriment = 4)
 	reagent_data = list(/datum/reagent/nutriment = list("crisp, dry fries" = 4))
 	bitesize = 2
@@ -487,7 +487,7 @@
 	desc = "A little piece of a heart attack. Its toppings are a mystery, hidden under batter."
 	icon = 'icons/obj/food.dmi'
 	icon_state = "pizzacrunchslice"
-	filling_color = "#BAA14C"
+	filling_color = "#baa14c"
 	bitesize = 2
 
 /obj/item/weapon/reagent_containers/food/snacks/funnelcake
@@ -716,7 +716,7 @@
 	desc = "A slice of contraband."
 	icon = 'icons/obj/food.dmi'
 	icon_state = "pineapple_pizza_slice"
-	filling_color = "#BAA14C"
+	filling_color = "#baa14c"
 	bitesize = 2
 
 /obj/item/weapon/reagent_containers/food/snacks/pineappleslice/filled
@@ -728,7 +728,7 @@
 	desc = "The cornerstone of every nutritious breakfast, now with bacon!"
 	icon = 'icons/obj/food.dmi'
 	icon_state = "baconburger"
-	filling_color = "#D63C3C"
+	filling_color = "#d63c3c"
 	reagent_data = list(/datum/reagent/nutriment = list("bun" = 2))
 	reagents_to_add = list(
 		/datum/reagent/nutriment/protein = 4,
@@ -741,7 +741,7 @@
 	desc = "Bacon, lettuce, tomatoes. The perfect lunch."
 	icon = 'icons/obj/food.dmi'
 	icon_state = "blt"
-	filling_color = "#D63C3C"
+	filling_color = "#d63c3c"
 	reagent_data = list(/datum/reagent/nutriment = list("bread" = 4))
 	reagents_to_add = list(
 		/datum/reagent/nutriment = 4,
@@ -765,7 +765,7 @@
 	desc = "A delicious and spongy little cake, with berries."
 	icon = 'icons/obj/food.dmi'
 	icon_state = "berrymuffin"
-	filling_color = "#E0CF9B"
+	filling_color = "#e0cf9b"
 	reagents_to_add = list(/datum/reagent/nutriment = 5)
 	reagent_data = list(/datum/reagent/nutriment = list("sweetness" = 1, "muffin" = 2, "berries" = 2))
 	bitesize = 2
@@ -776,7 +776,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "onionsoup"
 	trash = /obj/item/trash/snack_bowl
-	filling_color = "#E0C367"
+	filling_color = "#e0c367"
 	reagents_to_add = list(/datum/reagent/nutriment = 5)
 	reagent_data = list(/datum/reagent/nutriment = list("onion" = 2, "soup" = 2))
 	bitesize = 3
@@ -787,7 +787,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "porkbowl"
 	trash = /obj/item/trash/snack_bowl
-	filling_color = "#FFFBDB"
+	filling_color = "#fffbdb"
 	bitesize = 2
 	reagents_to_add = list(
 		/datum/reagent/nutriment/rice = 6,
@@ -800,7 +800,7 @@
 	icon = 'icons/obj/food.dmi'
 	icon_state = "mashedpotato"
 	trash = /obj/item/trash/plate
-	filling_color = "#EDDD00"
+	filling_color = "#eddd00"
 	reagents_to_add = list(/datum/reagent/nutriment = 4)
 	reagent_data = list(/datum/reagent/nutriment = list("mashed potatoes" = 4))
 	bitesize = 2
@@ -809,7 +809,7 @@
 	name = "croissant"
 	desc = "True french cuisine."
 	icon = 'icons/obj/food.dmi'
-	filling_color = "#E3D796"
+	filling_color = "#e3d796"
 	icon_state = "croissant"
 	reagents_to_add = list(/datum/reagent/nutriment = 4)
 	reagent_data = list(/datum/reagent/nutriment = list("french bread" = 4))
@@ -821,7 +821,7 @@
 	icon_state = "bread"
 	slice_path = /obj/item/weapon/reagent_containers/food/snacks/breadslice
 	slices_num = 8
-	filling_color = "#FFE396"
+	filling_color = "#ffe396"
 	center_of_mass = list("x"=16, "y"=9)
 	reagent_data = list(/datum/reagent/nutriment = list("bread" = 6))
 	reagents_to_add = list(
@@ -835,7 +835,7 @@
 	desc = "A slice of home."
 	icon_state = "breadslice"
 	trash = /obj/item/trash/plate
-	filling_color = "#D27332"
+	filling_color = "#d27332"
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=4)
 

@@ -50,7 +50,7 @@
 	name = "chicken meat"
 	icon_state = "chickenbreast"
 	cooked_icon = "chickenbreast_cooked"
-	filling_color = "#BBBBAA"
+	filling_color = "#bbbbaa"
 
 
 /obj/item/weapon/reagent_containers/food/snacks/meat/chicken/game

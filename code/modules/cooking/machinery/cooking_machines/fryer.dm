@@ -6,7 +6,7 @@
 	cook_type = "deep fried"
 	on_icon = "fryer_on"
 	off_icon = "fryer_off"
-	food_color = "#FFAD33"
+	food_color = "#ffad33"
 	appliancetype = FRYER
 	active_power_usage = 12 KILOWATTS
 	heating_power = 12000

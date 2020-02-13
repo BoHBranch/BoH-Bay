@@ -5,7 +5,7 @@
 	icon_state = "ovenopen"
 	cook_type = "baked"
 	appliancetype = OVEN
-	food_color = "#A34719"
+	food_color = "#a34719"
 	can_burn_food = 1
 	active_power_usage = 6 KILOWATTS
 	heating_power = 6000
