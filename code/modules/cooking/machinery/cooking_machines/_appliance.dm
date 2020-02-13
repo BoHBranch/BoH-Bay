@@ -93,7 +93,7 @@
 	else
 		return span("danger","It is burning!!")
 
-/obj/machinery/appliance/update_icon()
+/obj/machinery/appliance/on_update_icon()
 	if (!stat && cooking_objs.len)
 		icon_state = on_icon
 

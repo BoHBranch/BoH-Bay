@@ -21,7 +21,7 @@
 	else
 		create_reagents(size*8 + 10)
 
-/obj/item/weapon/reagent_containers/food/snacks/variable/update_icon()
+/obj/item/weapon/reagent_containers/food/snacks/variable/on_update_icon()
 	if (reagents && reagents.total_volume)
 		var/ratio = reagents.total_volume / size
 

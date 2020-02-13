@@ -22,7 +22,7 @@
 	. = ..()
 	overlays += "grjam"
 
-/obj/machinery/gibber/update_icon()
+/obj/machinery/gibber/on_update_icon()
 	overlays.Cut()
 	if (dirty)
 		overlays += "grbloody"

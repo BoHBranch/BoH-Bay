@@ -53,7 +53,7 @@
 			var/datum/cooking_item/CI = a
 			if (CI.container)
 				if (!CI.container.check_contents())
-					user << "There's nothing in the [src] you can remove!"
+					to_chat(user, "There's nothing in the [src] you can remove!")
 					return
 
 				for (var/obj/item/I in CI.container)
@@ -68,7 +68,7 @@
 		return 1
 	return 0
 
-/obj/machinery/appliance/grill/update_icon()
+/obj/machinery/appliance/grill/on_update_icon()
 	if (!stat)
 		icon_state = on_icon
 	else

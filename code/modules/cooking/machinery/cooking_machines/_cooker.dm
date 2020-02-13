@@ -50,7 +50,7 @@
 
 	queue_icon_update()
 
-/obj/machinery/appliance/cooker/update_icon()
+/obj/machinery/appliance/cooker/on_update_icon()
 	overlays.Cut()
 	var/image/light
 	if (use_power == 2 && !stat)
