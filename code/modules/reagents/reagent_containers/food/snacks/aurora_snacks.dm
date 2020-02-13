@@ -1063,7 +1063,7 @@
 		user.put_in_hands(returningitem)
 		
 		if(!memed)
-			to_chat(user, "You scoop up [(reagents && reagents.total_volume) ? "some" : "the remaining"] dip with \the [item]."
+			to_chat(user, "You scoop up [(reagents && reagents.total_volume) ? "some" : "the remaining"] dip with \the [item].")
 		if (!reagents || !reagents.total_volume)
 			var/obj/waste = new trash(loc)
 			if (loc == user)
