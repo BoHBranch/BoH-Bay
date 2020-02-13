@@ -992,7 +992,7 @@
 	name = "Saltpetre"
 	description = "Also known as potassium nitrate. Useful for increasing the potency of plants, however too much can poison it."
 	taste_description = "salty cleaner"
-	color = "#F2F2E1"
+	color = "#f2f2e1"
 	strength = 2
 
 /datum/reagent/toxin/saltpetre/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
