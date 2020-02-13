@@ -269,8 +269,8 @@
 
 /datum/gear/accessory/collars
 	display_name = "collar selection"
-	description = "A selection of collars. Not the most practical, but some people are into that"
-	path = /obj/item/clothing/accessory/collar/holo
+	description = "A selection of collars. Not the most practical, but some people are into that."
+	path = /obj/item/clothing/accessory/collar
 
 /datum/gear/accessory/collars/New()
 	..()

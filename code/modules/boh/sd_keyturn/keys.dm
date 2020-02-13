@@ -18,6 +18,7 @@
 
 
 /obj/item/weapon/sd_key/Initialize()
+	. = ..()
 	update_icon()
 
 /obj/item/weapon/sd_key/examine(mob/user)

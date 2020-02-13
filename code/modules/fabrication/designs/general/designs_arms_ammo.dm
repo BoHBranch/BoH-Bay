@@ -130,3 +130,15 @@
 /datum/fabricator_recipe/arms_ammo/hidden/sabot
 	name = "ammunition (12g Sabot)"
 	path = /obj/item/ammo_magazine/shotholder/sabot
+
+/datum/fabricator_recipe/arms_ammo/hidden/magrub
+	name = "ammunition (L-L Magnum Magazine)"
+	path = /obj/item/ammo_magazine/magnum/rubber
+
+/datum/fabricator_recipe/arms_ammo/hidden/atrifle
+	name = "ammunition (AT Rifle Shell)"
+	path = /obj/item/ammo_casing/shell
+
+/datum/fabricator_recipe/arms_ammo/hidden/atrifleapds
+	name = "ammunition (APDS Rifle Shell)"
+	path = /obj/item/ammo_casing/shell/apds

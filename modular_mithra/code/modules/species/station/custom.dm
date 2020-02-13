@@ -12,7 +12,7 @@
 
 /datum/species/custom
 	name = SPECIES_CUSTOM
-	name_plural = "Custom"
+	name_plural = SPECIES_CUSTOM
 	selects_bodytype = TRUE
 	base_species = SPECIES_HUMAN
 	limb_blend = ICON_MULTIPLY
@@ -20,9 +20,10 @@
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
 
-	description = "This is a custom species where you can assign various species traits to them as you wish, to \
-	create a (hopefully) balanced species. You will see the options to customize them on the Genemods tab once \
-	you select and set this species as your species. Please look at the Genemods tab if you select this species."
+	description = "This is a genemodded species - either human or some of established ones. It can also work as \
+	subspecies or hybrid of some sorts. Here you can assign various gene traits to them as you wish, to create \
+	a (hopefully) balanced genemodder. You will see the options to customize them on the Genemods tab once \
+	you select and set this species as your species, so please, look into here if you select this."
 
 	min_age = 18
 	max_age = 200

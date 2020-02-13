@@ -125,6 +125,66 @@
 /datum/species/vox/skills_from_age(age)
 	. = 8
 
+/datum/species/vox/pariah
+	name = SPECIES_VOXPARIAH
+	description = "Sickly biproducts of Vox society, these creatures are vilified by their own kind \
+	and taken advantage of by enterprising companies for cheap, disposable labor. \
+	They aren't very smart, smell worse than a vox, and vomit constantly, \
+	earning them the true title of 'shitbird'."
+	rarity_value = 0.1
+	speech_chance = 60        // No volume control.
+	siemens_coefficient = 0.5 // Ragged scaleless patches.
+	unarmed_types = list(
+		/datum/unarmed_attack/stomp,
+		/datum/unarmed_attack/kick,
+		/datum/unarmed_attack/claws/,
+		/datum/unarmed_attack/punch,
+		/datum/unarmed_attack/bite/
+	)
+
+	oxy_mod = 1.4
+	brute_mod = 1.3
+	burn_mod = 1.4
+	toxins_mod = 1.3
+
+	cold_level_1 = 130
+	cold_level_2 = 100
+	cold_level_3 = 60
+
+	warning_low_pressure = WARNING_LOW_PRESSURE
+	hazard_low_pressure = HAZARD_LOW_PRESSURE
+
+	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick,  /datum/unarmed_attack/claws, /datum/unarmed_attack/bite)
+
+	// Pariahs have no stack.
+	has_organ = list(
+		BP_STOMACH =    /obj/item/organ/internal/stomach/vox,
+		BP_HEART =      /obj/item/organ/internal/heart/vox,
+		BP_LUNGS =      /obj/item/organ/internal/lungs/vox,
+		BP_LIVER =      /obj/item/organ/internal/liver/vox,
+		BP_KIDNEYS =    /obj/item/organ/internal/kidneys/vox,
+		BP_BRAIN =      /obj/item/organ/internal/pariah_brain,
+		BP_EYES =       /obj/item/organ/internal/eyes/vox,
+		BP_HINDTONGUE = /obj/item/organ/internal/hindtongue
+		)
+
+	descriptors = list(
+		/datum/mob_descriptor/height = -1,
+		/datum/mob_descriptor/build = 1,
+		/datum/mob_descriptor/pariah_stink = 0
+	)
+
+	species_flags = SPECIES_FLAG_NO_SCAN//shouldn't be needed, but in game happenings have shown otherwise. For some reason.
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_LACE
+	appearance_flags = HAS_EYE_COLOR | HAS_HAIR_COLOR
+
+/datum/species/vox/pariah/get_bodytype(var/mob/living/carbon/human/H)
+	return SPECIES_VOX
+
+// No combat skills for you.
+/datum/species/vox/pariah/can_shred(var/mob/living/carbon/human/H, var/ignore_intent)
+	return 0
+
 /datum/species/vox/armalis
 	name = SPECIES_VOX_ARMALIS
 	name_plural = SPECIES_VOX_ARMALIS

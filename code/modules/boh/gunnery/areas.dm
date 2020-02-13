@@ -5,7 +5,7 @@
 /var/const/access_gunnery = "ACCESS_GUNNERY"
 /datum/access/gunnery
 	id = access_gunnery
-	desc = "Gunnery"
+	desc = "Gunnery Access"
 	region = ACCESS_REGION_SECURITY
 
 /area/command/gunnery

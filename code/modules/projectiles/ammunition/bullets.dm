@@ -144,6 +144,7 @@
 	name = "\improper APDS shell casing"
 	desc = "An Armour Piercing Discarding Sabot shell."
 	projectile_type = /obj/item/projectile/bullet/rifle/shell/apds
+	matter = list(MATERIAL_STEEL = 2450)
 
 /obj/item/ammo_casing/rifle/military
 	desc = "A military rifle bullet casing."

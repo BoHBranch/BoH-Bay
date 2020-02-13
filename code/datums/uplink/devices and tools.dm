@@ -14,7 +14,7 @@
 /*
 /datum/uplink_item/item/tools/ductape
 	name = "Duct Tape"
-	desc = "A roll of duct tape. changes \"HELP\" into sexy \"mmm\"."
+	desc = "A roll of duct tape. Changes \"HELP\" into sexy \"mmm\"."
 	item_cost = 2
 	path = /obj/item/weapon/tape_roll
 */
@@ -35,7 +35,7 @@
 
 /datum/uplink_item/item/tools/plastique
 	name = "C-4"
-	desc = "Set this on a wall to put a hole exactly where you need it."
+	desc = "Set this on a wall to put a hole exactly where you need it, without too much extra hole."
 	item_cost = 16
 	path = /obj/item/weapon/plastique
 

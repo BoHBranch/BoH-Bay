@@ -52,27 +52,27 @@
 // MIM
 /////////
 /obj/machinery/missile_interceptor_mainframe_broken
-    name = "missile interception mainframe"
-    desc = "A massive bank of computers and ammunition storages, intended to control and feed a point defense cannon array. This example appears to be nonfunctional and in a state of disrepair."
-    icon = 'icons/boh/structures/pointdefensemainframe.dmi'
-    icon_state = "pdc_mainframe"
-    anchored = 1
-    density = 1
+	name = "missile interception mainframe"
+	desc = "A massive bank of computers and ammunition storages, intended to control and feed a point defense cannon array. This example appears to be nonfunctional and in a state of disrepair."
+	icon = 'icons/boh/structures/pointdefensemainframe.dmi'
+	icon_state = "pdc_mainframe"
+	anchored = 1
+	density = 1
 
 /obj/structure/mim_ammo_broken
-    name = "pdc autoloader"
-    desc = "A huge hunk of machinery and circuitry designed to feed point defense cannons ammunition. Seems broken."
-    icon = 'icons/boh/structures/pointdefensemainframe.dmi'
-    density = 1
-    anchored = 1
-    var/direction //totally unrelated to 'dir'. Used for aesthetics.
+	name = "pdc autoloader"
+	desc = "A huge hunk of machinery and circuitry designed to feed point defense cannons ammunition. Seems broken."
+	icon = 'icons/boh/structures/pointdefensemainframe.dmi'
+	density = 1
+	anchored = 1
+	var/direction //totally unrelated to 'dir'. Used for aesthetics.
 
 /obj/structure/mim_ammo_broken/left
-    direction = "left"
+	direction = "left"
 
 /obj/structure/mim_ammo_broken/right
-    direction = "right"
+	direction = "right"
 
 /obj/structure/mim_ammo_broken/Initialize()
-    icon_state = "pdc_[direction]"
-    ..()
+	. = ..()
+	icon_state = "pdc_[direction]"

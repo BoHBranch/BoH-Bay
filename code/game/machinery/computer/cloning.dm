@@ -164,10 +164,7 @@
 
 		loading = 1
 
-		spawn(20)
-			scan_mob(scanner.occupant)
-
-			loading = 0
+		addtimer(CALLBACK(src, .proc/scan_mob, scanner.occupant), 2 SECONDS)
 
 		//No locking an open scanner.
 	else if ((href_list["lock"]) && (!isnull(scanner)))
@@ -343,6 +340,7 @@
 
 	records += R
 	scantemp = "Subject successfully scanned."
+	loading = 0
 
 //Find a specific record by key.
 /obj/machinery/computer/cloning/proc/find_record(var/find_key)
