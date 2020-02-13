@@ -1053,7 +1053,7 @@
 			returningitem.bitesize = Clamp(returningitem.reagents.total_volume,1,10)
 		else if(prob(1))
 			memed = 1
-			user << "You scoop up some dip with the chip, but mid-scoop, the chip breaks off into the dreadful abyss of dip, never to be seen again..."
+			to_chat(user, "You scoop up some dip with the chip, but mid-scoop, the chip breaks off into the dreadful abyss of dip, never to be seen again...")
 			returningitem.icon_state = "[returningitem.icon_state]_half"
 			returningitem.bitesize = Clamp(returningitem.reagents.total_volume,1,10)
 		else
@@ -1061,13 +1061,10 @@
 		qdel(item)
 		reagents.trans_to_holder(returningitem.reagents, bitesize) //Dip to new chip
 		user.put_in_hands(returningitem)
-
-		if (reagents && reagents.total_volume)
-			if(!memed)
-				user << "You scoop up some dip with the chip."
-		else
-			if(!memed)
-				user << "You scoop up the remaining dip with the chip."
+		
+		if(!memed)
+			to_chat(user, "You scoop up [(reagents && reagents.total_volume) ? "some" : "the remaining"] dip with \the [item]."
+		if (!reagents || !reagents.total_volume)
 			var/obj/waste = new trash(loc)
 			if (loc == user)
 				user.put_in_hands(waste)
