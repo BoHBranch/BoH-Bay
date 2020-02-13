@@ -97,7 +97,7 @@
 
 /datum/reagent/nutriment/protein/cheese // Also bad for skrell.
 	name = "cheese"
-	color = "#EDB91F"
+	color = "#edb91f"
 	taste_description = "cheese"
 
 /datum/reagent/nutriment/protein/seafood // Good for Skrell!
@@ -123,7 +123,7 @@
 
 	reagent_state = SOLID
 	nutriment_factor = 27//The caloric ratio of carb/protein/fat is 4:4:9
-	color = "#CCCCCC"
+	color = "#cccccc"
 	taste_description = "fat"
 
 /datum/reagent/nutriment/triglyceride/oil
@@ -924,7 +924,7 @@
 /datum/reagent/drink/juice/pineapple
 	name = "Pineapple Juice"
 	description = "From freshly canned pineapples."
-	color = "#FFFF00"
+	color = "#ffff00"
 	taste_description = "pineapples"
 
 	glass_name = "pineapple juice"

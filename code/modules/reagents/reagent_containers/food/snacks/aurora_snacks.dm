@@ -495,7 +495,7 @@
 	desc = "Funnel cakes rule!"
 	icon = 'icons/obj/food.dmi'
 	icon_state = "funnelcake"
-	filling_color = "#Ef1479"
+	filling_color = "#ef1479"
 	do_coating_prefix = FALSE
 	reagents_to_add = list(
 		/datum/reagent/nutriment/coating/batter = 10,
