@@ -417,7 +417,7 @@
 /datum/chemical_reaction/saltpetre
 	name = "Saltpetre"
 	result = /datum/reagent/toxin/saltpetre
-	required_reagents = list(/datum/reagent/toxin/potassium_chloride = 1, /datum/chemical_reaction/space_cleaner=1)
+	required_reagents = list(/datum/reagent/toxin/potassium_chloride = 1, /datum/reagent/space_cleaner=1)
 	result_amount = 2
 
 /datum/chemical_reaction/condensedcapsaicin

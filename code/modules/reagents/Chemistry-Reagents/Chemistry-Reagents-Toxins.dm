@@ -990,7 +990,7 @@
 
 /datum/reagent/toxin/saltpetre
 	name = "Saltpetre"
-	description = "Also known as potassium nitrate. Useful for increasing the potency of plants, however too much can poison it."
+	description = "Also known as potassium nitrate. Useful for increasing the potency of plants, however using too much can poison it."
 	taste_description = "salty cleaner"
 	color = "#f2f2e1"
 	strength = 2
