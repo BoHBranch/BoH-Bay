@@ -347,7 +347,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	playsound(src, 'sound/machines/click.ogg', 20, 1)
 
 	if(failed)
-		visible_message(span("warning", "\The [src] begins to leak an acrid smoke..."))
+		visible_message(SPAN_WARNING("\The [src] begins to leak an acrid smoke..."))
 
 /obj/machinery/microwave/proc/has_extra_item()
 	for (var/obj/O in contents)
@@ -365,7 +365,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 
 	START_PROCESSING(SSmachines, src)
 	addtimer(CALLBACK(src, .proc/half_time_process), cook_time / 2)
-	visible_message(SPAN_NOTICE("The microwave turns on.</span>", "<span class='notice'>You hear a microwave."))
+	visible_message(SPAN_NOTICE("The microwave turns on."), SPAN_NOTICE("You hear a microwave."))
 
 	if(cook_dirty)
 		playsound(loc, 'sound/effects/splat.ogg', 50, 1) // Play a splat sound
@@ -385,14 +385,14 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	if(cook_dirty || cook_break)
 		atom_flags &= ~ATOM_FLAG_OPEN_CONTAINER //So you can't add condiments
 	if(cook_dirty)
-		visible_message(span("warning", "The insides of the microwave get covered in muck!"))
+		visible_message(SPAN_WARNING("The insides of the microwave get covered in muck!"))
 		dirty = 100 // Make it dirty so it can't be used util cleaned
 		icon_state = "mwbloody" // Make it look dirty too
 	else if(cook_break)
 		var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread
 		s.set_up(2, GLOB.alldirs, src)
 		icon_state = "mwb" // Make it look all busted up and shit
-		visible_message(span("warning", "The microwave sprays out a shower of sparks - it's broken!")) //Let them know they're stupid
+		visible_message(SPAN_WARNING("The microwave sprays out a shower of sparks - it's broken!")) //Let them know they're stupid
 		broken = 2 // Make it broken so it can't be used util
 	else
 		icon_state = "mw"
