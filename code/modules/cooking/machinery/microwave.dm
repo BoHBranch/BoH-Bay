@@ -57,11 +57,11 @@
 	if (!LAZYLEN(acceptable_items))
 		acceptable_items = list()
 		acceptable_reagents = list()
-		for (var/datum/recipe/recipe in SScuisine[appliancetype])
-			for (var/item in recipe.items)
+		for (var/datum/recipe/R in SScuisine[appliancetype])
+			for (var/item in R.items)
 				acceptable_items[item] = TRUE
 
-			for (var/reagent in recipe.reagents)
+			for (var/reagent in R.reagents)
 				acceptable_reagents[reagent] = TRUE
 
 		// This will do until I can think of a fun recipe to use dionaea in -
