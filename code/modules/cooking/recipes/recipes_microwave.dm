@@ -79,8 +79,8 @@
 /datum/recipe/sandwich
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/meatsteak,
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
 		/obj/item/weapon/reagent_containers/food/snacks/cheesewedge
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sandwich
@@ -93,8 +93,8 @@
 
 /datum/recipe/grilledcheese
 	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
 		/obj/item/weapon/reagent_containers/food/snacks/cheesewedge
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/grilledcheese
@@ -102,14 +102,14 @@
 /datum/recipe/slimetoast
 	reagents = list(/datum/reagent/slimejelly = 5)
 	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/jelliedtoast/slime
 
 /datum/recipe/jelliedtoast
 	reagents = list(/datum/reagent/nutriment/cherryjelly = 5)
 	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/jelliedtoast/cherry
 
@@ -153,24 +153,24 @@
 /datum/recipe/twobread
 	reagents = list(/datum/reagent/ethanol/wine = 5)
 	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/twobread
 
 /datum/recipe/slimesandwich
 	reagents = list(/datum/reagent/slimejelly = 5)
 	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/jellysandwich/slime
 
 /datum/recipe/cherrysandwich
 	reagents = list(/datum/reagent/nutriment/cherryjelly = 5)
 	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/jellysandwich/cherry
 
@@ -255,7 +255,7 @@
 /datum/recipe/honeytoast
 	reagents = list(/datum/reagent/nutriment/honey = 5)
 	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread
 	)
 	reagent_mix = RECIPE_REAGENT_REPLACE //Simplify end product
 	result = /obj/item/weapon/reagent_containers/food/snacks/honeytoast
@@ -392,7 +392,7 @@
 /datum/recipe/cheese_cracker
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/spreads,
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
 		/obj/item/weapon/reagent_containers/food/snacks/cheesewedge
 	)
 	reagents = list(/datum/reagent/spacespice = 1)
@@ -428,8 +428,8 @@
 /datum/recipe/blt
 	fruit = list("tomato" = 1, "cabbage" = 1)
 	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
-		/obj/item/weapon/reagent_containers/food/snacks/breadslice,
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
 		/obj/item/weapon/reagent_containers/food/snacks/bacon,
 		/obj/item/weapon/reagent_containers/food/snacks/bacon
 	)
