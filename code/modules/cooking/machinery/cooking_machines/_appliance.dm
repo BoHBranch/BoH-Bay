@@ -40,6 +40,8 @@
 	var/container_type = null
 
 	var/combine_first = FALSE//If 1, this appliance will do combinaiton cooking before checking recipes
+	construct_state = /decl/machine_construction/default/panel_closed
+	uncreated_component_parts = null
 
 /obj/machinery/appliance/Initialize()
 	. = ..()

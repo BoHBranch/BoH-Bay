@@ -140,17 +140,3 @@
 		var/obj/machinery/vending/vendor = path
 		var/base_type = initial(vendor.base_type) || path
 		. |= base_type
-
-/obj/item/weapon/stock_parts/circuitboard/smartfridge
-	name = T_BOARD("smartfridge")
-	build_path = /obj/machinery/smartfridge
-	board_type = "machine"
-	origin_tech = list(TECH_ENGINEERING = 2)
-	req_components = list(
-		/obj/item/weapon/stock_parts/manipulator = 3
-	)
-	additional_spawn_components = list(
-		/obj/item/weapon/stock_parts/console_screen = 1,
-		/obj/item/weapon/stock_parts/keyboard = 1,
-		/obj/item/weapon/stock_parts/power/apc/buildable = 1
-	)

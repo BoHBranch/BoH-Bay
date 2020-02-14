@@ -361,7 +361,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	end_time = cook_time + start_time
 	operating = TRUE
 
-	START_PROCESSING(SSprocessing, src)
+	START_PROCESSING(SSmachines, src)
 	addtimer(CALLBACK(src, .proc/half_time_process), cook_time / 2)
 	visible_message("<span class='notice'>The microwave turns on.</span>", "<span class='notice'>You hear a microwave.</span>")
 
@@ -376,7 +376,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	SSvueui.check_uis_for_change(src)
 
 /obj/machinery/microwave/proc/stop()
-	STOP_PROCESSING(SSprocessing, src)
+	STOP_PROCESSING(SSmachines, src)
 	after_finish_loop()
 
 	operating = FALSE // Turn it off again aferwards
