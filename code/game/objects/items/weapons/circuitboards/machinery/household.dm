@@ -81,7 +81,7 @@
 	buildtype_select = TRUE
 	req_components = list(
 		/obj/item/weapon/stock_parts/matter_bin = 1,
-		/obj/item/weapon/stock_parts/manipulator = 1
+		/obj/item/weapon/stock_parts/manipulator = 1,
 		/obj/item/stack/cable_coil = 10)
 	additional_spawn_components = list(
 		/obj/item/weapon/stock_parts/console_screen = 1,
