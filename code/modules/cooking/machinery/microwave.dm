@@ -44,8 +44,7 @@
 
 /obj/machinery/microwave/Initialize(mapload)
 	. = ..(mapload, 0)
-	reagents = new/datum/reagents(100)
-	reagents.my_atom = src
+	create_reagents(100)
 	soundloop = new(list(src), FALSE)
 	if (mapload)
 		addtimer(CALLBACK(src, .proc/setup_recipes), 0)
