@@ -819,7 +819,7 @@
 	name = "bread"
 	icon_state = "Some plain old Earthen bread."
 	icon_state = "bread"
-	slice_path = /obj/item/weapon/reagent_containers/food/snacks/breadslice
+	slice_path = /obj/item/weapon/reagent_containers/food/snacks/slice/bread
 	slices_num = 8
 	filling_color = "#ffe396"
 	center_of_mass = list("x"=16, "y"=9)
@@ -830,7 +830,7 @@
 	)
 	bitesize = 2
 
-/obj/item/weapon/reagent_containers/food/snacks/breadslice
+/obj/item/weapon/reagent_containers/food/snacks/slice/bread
 	name = "bread slice"
 	desc = "A slice of home."
 	icon_state = "breadslice"
@@ -839,7 +839,7 @@
 	bitesize = 2
 	center_of_mass = list("x"=16, "y"=4)
 
-/obj/item/weapon/reagent_containers/food/snacks/breadslice/filled
+/obj/item/weapon/reagent_containers/food/snacks/slice/bread/filled
 	reagent_data = list(/datum/reagent/nutriment = list("bread" = 2))
 	reagents_to_add = list(/datum/reagent/nutriment = 1)
 

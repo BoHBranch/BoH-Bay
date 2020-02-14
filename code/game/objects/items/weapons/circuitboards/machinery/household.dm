@@ -80,9 +80,8 @@
 	origin_tech = list(TECH_BIO = 1, TECH_MATERIAL = 1)
 	buildtype_select = TRUE
 	req_components = list(
-		/obj/item/weapon/stock_parts/capacitor = 3,
-		/obj/item/weapon/stock_parts/scanning_module = 1,
-		/obj/item/weapon/stock_parts/matter_bin = 2,
+		/obj/item/weapon/stock_parts/matter_bin = 1,
+		/obj/item/weapon/stock_parts/manipulator = 1
 		/obj/item/stack/cable_coil = 10)
 	additional_spawn_components = list(
 		/obj/item/weapon/stock_parts/console_screen = 1,

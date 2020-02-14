@@ -17,6 +17,9 @@
 	use_power = 1
 	idle_power_usage = 2
 	active_power_usage = 500
+	
+	construct_state = /decl/machine_construction/default/panel_closed
+	uncreated_component_parts = null
 
 /obj/machinery/gibber/Initialize()
 	. = ..()
@@ -184,7 +187,7 @@
 	for(var/i=1 to slab_count)
 		var/obj/item/weapon/reagent_containers/food/snacks/meat/new_meat = new slab_type(src, rand(3,8))
 		if(istype(new_meat))
-			new_meat.reagents.add_reagent("nutriment",slab_nutrition)
+			new_meat.reagents.add_reagent(src.occupant.get_digestion_product(), slab_nutrition)
 			if(src.occupant.reagents)
 				src.occupant.reagents.trans_to_obj(new_meat, round(occupant.reagents.total_volume/slab_count,1))
 
