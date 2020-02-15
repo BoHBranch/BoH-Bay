@@ -34,7 +34,7 @@
 	toxins_mod =            0.4 // Not as biologically fragile as meatboys.
 	radiation_mod =         0.4 // Not as biologically fragile as meatboys.
 	flash_mod =               2 // Highly photosensitive.
-	brute_mod =             2.5 // Incredibly fragile.
+	brute_mod =             1.5 // Incredibly fragile.
 
 	min_age =                18
 	max_age =                38
