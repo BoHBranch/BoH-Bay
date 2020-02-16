@@ -1,5 +1,5 @@
 /datum/gear/suit/lab_xyn_machine
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/gloves/dress/modified
 	display_name = "modified gloves, dress"
@@ -14,7 +14,7 @@
 	whitelisted = list(SPECIES_UNATHI)
 
 /datum/gear/suit/unathi/savage_hunter
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/skrell_helmet
 	allowed_roles = ARMORED_ROLES
@@ -27,6 +27,13 @@
 	display_name = "Cultural Exchange patch"
 	path = /obj/item/clothing/accessory/solgov/cultex_patch
 	description = "A shoulder patch representing the Expeditionary Corps."
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_branches = NT_BRANCHES
 	whitelisted = list(SPECIES_SKRELL, SPECIES_UNATHI, SPECIES_IPC)
+	sort_category = "Xenowear"
+
+/datum/gear/accessory/nabber_gloves
+	display_name = "GAS Insuls"
+	path = /obj/item/clothing/gloves/nabber
+	description = "A set of insulated gloves meant for GAS."
+	whitelisted = list(SPECIES_NABBER)
 	sort_category = "Xenowear"

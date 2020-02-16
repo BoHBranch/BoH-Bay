@@ -12,8 +12,7 @@
 	var/list/possible_trading_items                             //List of all possible trading items. Structure is (type = mode)
 	var/list/trading_items = list()                             //What items they are currently trading away.
 	var/list/blacklisted_trade_items = list(/mob/living/carbon/human)
-	                                                            //Things they will automatically refuse
-
+																//Things they will automatically refuse
 	var/list/speech = list()                                    //The list of all their replies and messages. Structure is (id = talk)
 	/*SPEECH IDS:
 	hail_generic		When merchants hail a person

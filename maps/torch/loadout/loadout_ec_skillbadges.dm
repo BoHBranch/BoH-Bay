@@ -3,7 +3,7 @@
 	sort_category = "Skill Badges"
 	category = /datum/gear/skill
 	slot = slot_tie
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_branches = NT_BRANCHES
 
 /datum/gear/skill/botany
 	display_name = "Field Xenobotany Specialist badge"

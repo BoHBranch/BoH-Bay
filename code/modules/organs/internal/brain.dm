@@ -266,3 +266,12 @@
 
 /obj/item/organ/internal/brain/get_mechanical_assisted_descriptor()
 	return "machine-interface [name]"
+
+/obj/item/organ/internal/pariah_brain
+	name = "brain remnants"
+	desc = "Did someone tread on this? It looks useless for cloning or cyborgification."
+	organ_tag = BP_BRAIN
+	parent_organ = BP_HEAD
+	icon = 'icons/obj/alien.dmi'
+	icon_state = "chitin"
+	vital = 1

@@ -19,7 +19,7 @@
 	icon_state = "frggrenade"
 
 	var/list/fragment_types = list(/obj/item/projectile/bullet/pellet/fragment = 1)
-	var/num_fragments = 72  //total number of fragments produced by the grenade
+	var/num_fragments = 124//total number of fragments produced by the grenade
 	var/explosion_size = 2   //size of the center explosion
 
 	//The radius of the circle used to launch projectiles. Lower values mean less projectiles are used but if set too low gaps may appear in the spread pattern
@@ -75,7 +75,7 @@
 	desc = "A light fragmentation grenade, designed to be fired from a launcher. It can still be activated and thrown by hand if necessary."
 	icon_state = "fragshell"
 
-	num_fragments = 50 //less powerful than a regular frag grenade
+	num_fragments = 72//less powerful than a regular frag grenade
 
 /obj/item/weapon/grenade/frag/high_yield
 	name = "fragmentation bomb"
@@ -87,7 +87,7 @@
 	throw_range = 5 //heavy, can't be thrown as far
 
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment=1,/obj/item/projectile/bullet/pellet/fragment/strong=4)
-	num_fragments = 200  //total number of fragments produced by the grenade
+	num_fragments = 264  //total number of fragments produced by the grenade
 	explosion_size = 3
 
 /obj/item/weapon/grenade/frag/high_yield/on_explosion(var/turf/O)

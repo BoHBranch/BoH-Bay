@@ -22,7 +22,7 @@
 	ask_verb = "sings"
 	exclaim_verb = "sings"
 	colour = "alien"
-	key = "z"
+	key = "v"
 	flags = RESTRICTED | HIVEMIND
 	shorthand = "N/A"
 	hidden_from_codex = TRUE

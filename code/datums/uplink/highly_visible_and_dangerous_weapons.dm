@@ -12,7 +12,7 @@
 
 /datum/uplink_item/item/visible_weapons/smallenergy_gun
 	name = "Small Energy Gun"
-	desc = "A pocket-sized energy based sidearm with three different lethality settings."
+	desc = "A pocket-sized energy based sidearm with three different lethality settings, stun, shock, kill."
 	item_cost = 16
 	path = /obj/item/weapon/gun/energy/gun/small
 
@@ -57,7 +57,7 @@
 
 /datum/uplink_item/item/visible_weapons/energy_gun
 	name = "Energy Gun"
-	desc = "A energy based sidearm with three different lethality settings."
+	desc = "A energy based sidearm with three different lethality settings, stun, shock, kill."
 	item_cost = 32
 	path = /obj/item/weapon/gun/energy/gun
 
@@ -77,23 +77,26 @@
 	name = "Grenade Launcher"
 	desc = "A pump action grenade launcher loaded with a random assortment of grenades"
 	item_cost = 60
-	antag_roles = list(MODE_MERCENARY)
 	path = /obj/item/weapon/gun/launcher/grenade/loaded
 
 //These are for traitors (or other antags, perhaps) to have the option of purchasing some merc gear.
 /datum/uplink_item/item/visible_weapons/submachinegun
-	name = "Standard Submachine Gun"
-	desc = "A quick-firing weapon with three togglable fire modes."
-	item_cost = 52
+	name = "Black Market Submachine Gun"
+	desc = "A quick-firing weapon with three togglable fire modes. Much newer than the older C-20b, and featuring more advanced features."
+	item_cost = 76
 	path = /obj/item/weapon/gun/projectile/automatic/merc_smg
-	antag_roles = list(MODE_MERCENARY)
+
+/datum/uplink_item/item/visible_weapons/submachinegun/hacked
+	name = "Hacked SMG"
+	desc = "The Infantry's C-20b, hacked to fire aboard the vessel."
+	item_cost = 42
+	path = /obj/item/weapon/gun/projectile/automatic/merc_smg/hacked
 
 /datum/uplink_item/item/visible_weapons/assaultrifle
 	name = "Assault Rifle"
 	desc = "A common rifle with three togglable fire modes."
-	item_cost = 60
+	item_cost = 80
 	path = /obj/item/weapon/gun/projectile/automatic/assault_rifle
-	antag_roles = list(MODE_MERCENARY)
 
 /datum/uplink_item/item/visible_weapons/advanced_energy_gun
 	name = "Advanced Energy Gun"
@@ -104,17 +107,14 @@
 /datum/uplink_item/item/visible_weapons/heavysniper
 	name = "Anti-materiel Sniper Rifle"
 	desc = "A secure briefcase that contains an immensely powerful penetrating rifle, as well as seven extra sniper rounds."
-	item_cost = 68
+	item_cost = 90
 	path = /obj/item/weapon/storage/secure/briefcase/heavysniper
-	antag_roles = list(MODE_MERCENARY)
 
-/*
 /datum/uplink_item/item/visible_weapons/psi_amp
 	name = "Cerebroenergetic Psionic Amplifier"
 	item_cost = 50
 	path = /obj/item/clothing/head/helmet/space/psi_amp/lesser
-	desc = "A powerful, illegal psi-amp. Boosts latent psi-faculties to extremely high levels."
-*/
+	desc = "A powerful, illegal psi-amp. Boosts existing latent psi-faculties to extremely high levels."
 
 /datum/uplink_item/item/visible_weapons/machine_pistol
 	name = "Standard Machine Pistol"
@@ -124,10 +124,10 @@
 
 /datum/uplink_item/item/visible_weapons/combat_shotgun
 	name = "Combat Shotgun"
-	desc = "A high compacity, pump-action shotgun regularly used for repelling boarding parties in close range scenarios."
+	desc = "A high compacity, pump-action shotgun regularly used for repelling boarding parties in close range scenarios. \
+	For your use? Well, just pray you've enough shells, and don't stop firing."
 	item_cost = 52
 	path = /obj/item/weapon/gun/projectile/shotgun/pump/combat
-	antag_roles = list(MODE_MERCENARY)
 
 /datum/uplink_item/item/visible_weapons/sawnoff
 	name = "Sawnoff Shotgun"
@@ -198,6 +198,5 @@
 /datum/uplink_item/item/visible_weapons/boltaction
 	name = "Bolt Action Rifle"
 	desc = "For arming your comrades on the cheap!"
-	item_cost = 12
+	item_cost = 6
 	path = /obj/item/weapon/gun/projectile/heavysniper/boltaction
-	antag_roles = list(MODE_REVOLUTIONARY)

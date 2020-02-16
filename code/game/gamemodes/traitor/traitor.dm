@@ -14,6 +14,7 @@
 	required_players = 0
 	required_enemies = 1
 	antag_tags = list(MODE_TRAITOR)
+	votable = 1
 	antag_scaling_coeff = 5
 	end_on_antag_death = FALSE
 	latejoin_antag_tags = list(MODE_TRAITOR)

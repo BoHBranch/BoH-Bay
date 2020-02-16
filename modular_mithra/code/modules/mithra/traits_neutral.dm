@@ -16,7 +16,7 @@
 	name = "Ectothermy"
 	desc = "You have diminished means of internal thermoregulation, forcing you to rely on external heat to stay alive."
 	cost = 0
-	var_changes = list("body_temperature" = null, "cold_discomfort_level" = 292)
+	var_changes = list("body_temperature" = 285, "cold_discomfort_level" = 292)
 	excludes = list(/datum/trait/hot_blooded)
 
 /datum/trait/hot_blooded
@@ -34,9 +34,9 @@
 
 /datum/trait/fast_meta
 	name = "Faster Metabolism"
-	desc = "Your metabolism rate is absurdly high, causing you to get hungry and process chemicals at twice the normal rate."
+	desc = "Your metabolism rate is absurdly high, causing you to get hungry and process chemicals at roughly twice the normal rate."
 	cost = 0
-	var_changes = list("hunger_factor" = DEFAULT_HUNGER_FACTOR * 2, "metabolism_mod" = 2)
+	var_changes = list("hunger_factor" = DEFAULT_HUNGER_FACTOR * 2.5, "metabolism_mod" = 2.5)
 	excludes = list(/datum/trait/slow_meta)
 
 /datum/trait/slow_meta

@@ -15,7 +15,7 @@
 	breath_pressure = 18
 	radiation_mod = 0.5
 	brute_mod =     0.85
-	slowdown =      1
+	slowdown =      1.1
 	strength = STR_HIGH
 
 	descriptors = list(

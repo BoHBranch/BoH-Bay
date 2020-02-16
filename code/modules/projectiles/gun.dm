@@ -90,6 +90,9 @@
 	var/safety_state = 1
 	var/has_safety = TRUE
 	var/safety_icon 	   //overlay to apply to gun based on safety state, if any
+	var/has_firing_pin = FALSE
+	var/obj/item/firing_pin/pin //firing pin
+	var/firing_pin_type //what type is our firing pin, if has_firing_pin is true.
 
 /obj/item/weapon/gun/Initialize()
 	. = ..()
@@ -101,6 +104,11 @@
 
 	if(scope_zoom)
 		verbs += /obj/item/weapon/gun/proc/scope
+
+	if(has_firing_pin)
+		pin = new firing_pin_type(src)
+		pin.installed_in = src
+
 
 /obj/item/weapon/gun/update_twohanding()
 	if(one_hand_penalty)
@@ -193,6 +201,15 @@
 /obj/item/weapon/gun/proc/Fire(atom/target, mob/living/user, clickparams, pointblank=0, reflex=0)
 	if(!user || !target) return
 	if(target.z != user.z) return
+
+	if(has_firing_pin)
+		if(!pin)
+			user.visible_message("*click click*", "<span class='danger'>*click*</span>")
+			return
+		if(!pin.authorization_check(user))
+			user.visible_message("*click click*", "<span class='danger'>*click*</span>")
+			pin.on_auth_fail(user)
+			return
 
 	add_fingerprint(user)
 
@@ -503,6 +520,8 @@
 	if(has_safety)
 		to_chat(user, "The safety is [safety() ? "on" : "off"].")
 	last_safety_check = world.time
+	if(pin)
+		to_chat(user, SPAN_NOTICE("It has a [pin] installed."))
 
 /obj/item/weapon/gun/proc/switch_firemodes()
 
@@ -584,3 +603,29 @@
 			var/picked = pick(targets)
 			afterattack(picked, user)
 			return 1
+
+/obj/item/weapon/gun/attackby(var/obj/item/A as obj, mob/user as mob)
+	if(istype(A, /obj/item/firing_pin))
+		var/obj/item/firing_pin/newpin = A
+		if(!has_firing_pin)
+			to_chat(user, SPAN_WARNING("This weapon doesn't use a firing pin."))
+			return
+		if(!pin)
+			if(!user.unEquip(newpin, src))
+				return
+			newpin.forceMove(src)
+			pin = newpin
+			newpin.installed_in = src
+			to_chat(user, SPAN_NOTICE("You install [newpin] into [src]."))
+		if(pin)
+			to_chat(user, SPAN_WARNING("There's already a pin installed."))
+
+/obj/item/weapon/gun/AltClick(var/mob/user)
+	if(!pin)
+		to_chat(user, SPAN_WARNING("There's no firing pin installed in this weapon."))
+		return
+	if(pin)
+		to_chat(user, SPAN_NOTICE("You remove [pin] from [src]."))
+		pin.installed_in = null
+		pin.forceMove(get_turf(user))
+		pin = null

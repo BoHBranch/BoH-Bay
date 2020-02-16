@@ -582,8 +582,6 @@ obj/random/obstruction/spawn_choices()
 				/obj/structure/grille,
 				/obj/structure/grille/broken,
 				/obj/structure/foamedmetal,
-				/obj/item/weapon/caution,
-				/obj/item/weapon/caution/cone,
 				/obj/structure/inflatable/wall,
 				/obj/structure/inflatable/door)
 
@@ -1357,3 +1355,59 @@ var/list/random_useful_
 	icon = 'icons/obj/drinks.dmi'
 	icon_state = "cola"
 	spawn_object = /obj/item/weapon/reagent_containers/food/drinks/cans/cola
+
+/*
+
+Actual illegal stuff.
+Unlike what normally spawns, this material will be dangerous, or just outright blatantly illegal.
+
+*/
+
+//50% Illegal
+/obj/random/illegal
+	name = "Random Illegal Item"
+	desc = "Hot Stuff."
+	icon = 'icons/boh/structures/coffee.dmi' //shhhh
+	icon_state = "coffee_dispenser"
+
+/obj/random/illegal/spawn_choices()
+	return list(/obj/item/weapon/gun/projectile/manualcycle/imprifle/impriflesawn = 1,
+				/obj/item/weapon/gun/projectile/manualcycle/imprifle = 1,
+				/obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin = 14,
+				/obj/item/weapon/reagent_containers/glass/beaker/sulphuric = 14,
+				/obj/item/weapon/reagent_containers/glass/beaker/vial/hfc = 1,
+				/obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full = 3,
+				/obj/item/weapon/melee/baton/cattleprod = 6,
+				/obj/item/weapon/arrow = 16,
+				/obj/item/weapon/gun/magnetic = 1,
+				/obj/item/weapon/gun/projectile/pirate/unloaded = 14,
+				/obj/item/weapon/storage/firstaid/combat = 4,
+				/obj/item/stack/telecrystal = 1,
+				/obj/item/clothing/under/syndicate = 2,
+				/obj/item/weapon/storage/mre/menu11 = 24,
+				/obj/item/weapon/reagent_containers/pill/cyanide = 16,
+				/obj/item/weapon/reagent_containers/glass/bottle/cyanide = 12,
+				/obj/item/weapon/gun/projectile/pistol/sec/MK = 4,
+				/obj/item/weapon/material/knife/combat = 12,
+				/obj/item/weapon/material/knife/table/unathi = 12,
+				/obj/item/weapon/material/knife/kitchen/cleaver = 2,
+				/obj/item/weapon/material/shard/nullglass = 1,
+				/obj/item/weapon/material/twohanded/baseballbat = 14,
+				/obj/item/weapon/material/twohanded/spear = 18,
+				/obj/item/weapon/material/hatchet/machete/steel = 12,
+				/obj/item/weapon/reagent_containers/pill/three_eye = 1,
+				/obj/item/weapon/storage/lockbox/vials/random = 1,
+				/obj/item/weapon/storage/toolbox/syndicate = 6,
+				/obj/item/weapon/reagent_containers/food/snacks/egg/lizard = 1)
+
+//100% Illegal
+/obj/random/illegaltwo
+	name = "Incredibly Random Illegal Item"
+	desc = "Hot Stuff."
+	icon = 'icons/boh/structures/coffee.dmi' //shhhh
+	icon_state = "coffee_dispenser2db"
+
+/obj/random/illegaltwo/spawn_choices()
+	return list(/obj/item/weapon/gun/magnetic = 1,
+				/obj/item/weapon/gun/projectile/pirate/unloaded = 4,
+				/obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn/empty = 2)

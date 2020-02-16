@@ -938,7 +938,7 @@ FIRE ALARM
 
 /obj/machinery/firealarm/Initialize()
 	. = ..()
-	update_icon()
+	INVOKE_ASYNC(src, /atom/.proc/update_icon) // to avoid weird travis bugs
 
 /obj/machinery/firealarm/proc/get_cached_overlay(state)
 	if(!LAZYACCESS(overlays_cache, state))
@@ -1180,11 +1180,6 @@ FIRE ALARM
 		pixel_y = (dir & 3)? (dir ==1 ? -21 : 21) : 0
 		update_icon()
 		frame.transfer_fingerprints_to(src)
-
-/obj/machinery/firealarm/Initialize()
-	. = ..()
-	if(z in GLOB.using_map.contact_levels)
-		update_icon()
 
 /*
 FIRE ALARM CIRCUIT

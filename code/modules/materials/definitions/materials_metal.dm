@@ -212,7 +212,6 @@
 	name = MATERIAL_OSMIUM_CARBIDE_PLASTEEL
 	stack_type = /obj/item/stack/material/ocp
 	integrity = 200
-	flags = MATERIAL_UNMELTABLE //Primarily for off-site burn chambers.
 	icon_base = "solid"
 	icon_reinf = "reinf_over"
 	icon_colour = "#9bc6f2"
