@@ -441,6 +441,11 @@
 	icon_state = "hair_bun2"
 	flags = HAIR_TIEABLE
 
+/datum/sprite_accessory/hair/bun3
+	name = "Tied Bun"
+	icon_state = "hair_bun3"
+	flags = HAIR_TIEABLE
+
 /datum/sprite_accessory/hair/doublebun
 	name = "Double-Bun"
 	icon_state = "hair_doublebun"
@@ -652,4 +657,19 @@
 /datum/sprite_accessory/hair/trimrsidecut
 	name = "Trimmed Right Sidecut"
 	icon_state = "hair_rightside_trim"
+	flags = HAIR_TIEABLE
+
+/datum/sprite_accessory/hair/modern
+	name = "Modern"
+	icon_state = "hair_modern"
+	flags = HAIR_TIEABLE
+
+/datum/sprite_accessory/hair/nia
+	name = "Nia"
+	icon_state = "hair_nia"
+	flags = HAIR_TIEABLE
+
+/datum/sprite_accessory/hair/ziegler
+	name = "Zieglertail"
+	icon_state = "hair_ziegler"
 	flags = HAIR_TIEABLE
