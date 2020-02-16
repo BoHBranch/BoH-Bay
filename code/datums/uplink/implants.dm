@@ -7,7 +7,7 @@
 /datum/uplink_item/item/implants/imp_freedom
 	name = "Freedom Implant"
 	desc = "An implant with an emotive trigger that can break you free of restraints. Show Security who has the real upperhand!"
-	item_cost = 24
+	item_cost = 14
 	path = /obj/item/weapon/storage/box/syndie_kit/imp_freedom
 
 /datum/uplink_item/item/implants/imp_compress
@@ -37,6 +37,6 @@
 /datum/uplink_item/item/implants/imp_imprinting
 	name = "Neural Imprinting Implant"
 	desc = "An implant able to be used on someone who is under the influence of Mindbreaker Toxin to give them a \
-	set of law-like instructions to follow. This kit contains a dose of Mindbreaker Toxin."
-	item_cost = 20
+	set of law-like instructions to follow. This kit contains an autoinjector with a dose of Mindbreaker Toxin."
+	item_cost = 10
 	path = /obj/item/weapon/storage/box/syndie_kit/imp_imprinting

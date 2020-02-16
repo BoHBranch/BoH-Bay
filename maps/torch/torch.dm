@@ -23,7 +23,8 @@
 
 	#include "datums/uniforms.dm"
 	#include "datums/uniforms_expedition.dm"
-	#include "datums/uniforms_fleet.dm"
+	//#include "datums/uniforms_fleet.dm"
+	#include "datums/uniforms_exp_fleet.dm"
 	#include "datums/uniforms_marine-corps.dm"
 	#include "datums/reports/command.dm"
 	#include "datums/reports/corporate.dm"
@@ -37,6 +38,7 @@
 	#include "datums/shackle_law_sets.dm"
 	#include "datums/supplypacks/security.dm"
 	#include "datums/supplypacks/science.dm"
+	#include "datums/supplypacks/emergency.dm"
 	#include "datums/department_exploration.dm"
 	#include "datums/game_modes/torch_revolution.dm"
 
@@ -54,6 +56,7 @@
 	#include "items/manuals.dm"
 	#include "items/stamps.dm"
 	#include "items/uniform_vendor.dm"
+	#include "items/uniform_vendor_boh.dm"
 	#include "items/rigs.dm"
 	#include "items/solbanner.dm"
 	#include "items/explo_shotgun.dm"
@@ -73,7 +76,9 @@
 	#include "items/clothing/terran-head.dm"
 	#include "items/clothing/terran-suit.dm"
 	#include "items/clothing/terran-under.dm"
+	#include "items/clothing/boh_under.dm"
 	#include "items/clothing/boh_accessory.dm"
+	#include "items/clothing/boh_clothing.dm"
 
 	#include "items/weapon/storage/wallets.dm"
 
@@ -137,6 +142,7 @@
 	#include "loadout/loadout_head_boh.dm"
 	#include "loadout/loadout_shoes.dm"
 	#include "loadout/loadout_suit.dm"
+	#include "loadout/loadout_suit_boh.dm"
 	#include "loadout/loadout_uniform.dm"
 	#include "loadout/loadout_uniform_boh.dm"
 	#include "loadout/loadout_xeno.dm"

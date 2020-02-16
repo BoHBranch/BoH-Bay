@@ -12,7 +12,7 @@
 	                    SKILL_COMBAT      = SKILL_BASIC,
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
 	                    SKILL_PILOT       = SKILL_BASIC)
-	skill_points = 15
+	skill_points = 12
 
 #define VOXSHIP_OUTFIT_JOB_NAME(job_name) ("Vox Asteroid Base - Job - " + job_name)
 /decl/hierarchy/outfit/job/voxship

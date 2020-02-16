@@ -27,6 +27,7 @@
 	name = "cryogenic stasis unit"
 	desc = "A bizarre alien stasis unit."
 	icon = 'icons/obj/ascent_doodads.dmi'
+	icon_state = "base"
 
 /obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent
 	name = "hydration cylinder"
@@ -72,3 +73,22 @@
 
 /obj/structure/reagent_dispensers/water_cooler/ascent/RejectionMessage(var/mob/user)
 	return "\The [src]'s orb supply is empty. Notify a control mind."
+
+/////////
+// Cloest Appearance
+/////////
+/decl/closet_appearance/ascent
+	decals = null
+	extra_decals = null
+	base_icon =  'icons/obj/ascent_freezer.dmi'
+
+//actual closet
+/obj/structure/closet/ascentproper
+	name = "cryogenic stasis unit"
+	desc = "A bizarre alien stasis unit."
+	closet_appearance = /decl/closet_appearance/ascent
+
+/obj/structure/closet/ascentproper/WillContain()
+	return list(
+		/obj/item/weapon/reagent_containers/food/snacks/meat/syntiflesh = 12
+	)

@@ -16,6 +16,7 @@
 	if(alien != IS_DIONA)
 		M.add_chemical_effect(CE_STABLE)
 		M.add_chemical_effect(CE_PAINKILLER, 10)
+		M.add_chemical_effect(CE_BLOODRESTORE, 1)
 
 /datum/reagent/inaprovaline/overdose(var/mob/living/carbon/M, var/alien)
 	M.add_chemical_effect(CE_SLOWDOWN, 1)
@@ -896,7 +897,7 @@
 	color = "#c8a5dc"
 	scannable = 1
 	overdose = 20
-	metabolism = 0.1
+	metabolism = 0.05
 	value = 2
 
 /datum/reagent/adrenaline/affect_blood(var/mob/living/carbon/human/M, var/alien, var/removed)
@@ -910,7 +911,7 @@
 		M.add_chemical_effect(CE_PAINKILLER, min(10*volume, 20))
 	M.add_chemical_effect(CE_PULSE, 2)
 	if(M.chem_doses[type] > 10)
-		M.make_jittery(5)
+		M.make_jittery(1)
 	if(volume >= 5 && M.is_asystole())
 		remove_self(5)
 		if(M.resuscitate())

@@ -3,7 +3,7 @@
 
 /decl/hierarchy/supply_pack/security/lightarmorsol
 	name = "Armor - SCG light"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/light/sol = 4,
+	contains = list(/obj/item/clothing/suit/armor/pcarrier/blue/sol/light = 4,
 					/obj/item/clothing/head/helmet/solgov =4)
 	cost = 30
 	containertype = /obj/structure/closet/crate/secure
@@ -54,6 +54,14 @@
 	containertype = /obj/structure/closet/crate/secure
 	containername = "corporate light armor crate"
 	access = access_nanotrasen
+
+/decl/hierarchy/supply_pack/security/medium_plates
+	name = "Armor Plates - Medium"
+	contains = list(/obj/item/clothing/accessory/armorplate/medium = 4)
+	cost = 15
+	containertype = /obj/structure/closet/crate/secure
+	containername = "medium armor plates crate"
+	access = access_security
 
 /decl/hierarchy/supply_pack/security/pistol
 	name = "Weapons - Ballistic sidearms"
@@ -120,7 +128,7 @@
 
 /decl/hierarchy/supply_pack/security/pistolammo
 	name = "Ammunition - pistol magazines"
-	contains = list(/obj/item/ammo_magazine/pistol = 4)
+	contains = list(/obj/item/ammo_magazine/pistol/double = 4)
 	cost = 30
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "pistol ammunition crate"

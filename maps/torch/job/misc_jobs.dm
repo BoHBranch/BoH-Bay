@@ -6,13 +6,13 @@ Synthetic
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "your laws"
-	minimal_player_age = 3
+	minimal_player_age = 6
 	allowed_ranks = list(
 		/datum/mil_rank/civ/synthetic
 	)
 
 /datum/job/ai
-	minimal_player_age = 7
+	minimal_player_age = 8
 	allowed_ranks = list(
 		/datum/mil_rank/civ/synthetic
 	)
@@ -39,6 +39,7 @@ Civilian
 		"Entertainer",
 		"Independent Observer",
 		"Sociologist",
+		"Off-Duty" = /decl/hierarchy/outfit/job/torch/crew/service/crewman,
 		"Trainer")
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/passenger
 	allowed_branches = list(/datum/mil_branch/civilian)

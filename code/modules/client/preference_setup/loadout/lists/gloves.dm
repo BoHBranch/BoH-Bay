@@ -1,5 +1,5 @@
 /datum/gear/gloves
-	cost = 2
+	cost = 1
 	slot = slot_gloves
 	sort_category = "Gloves and Handwear"
 	category = /datum/gear/gloves
@@ -12,12 +12,12 @@
 /datum/gear/gloves/latex
 	display_name = "gloves, latex"
 	path = /obj/item/clothing/gloves/latex
-	cost = 3
+	cost = 2
 
 /datum/gear/gloves/nitrile
 	display_name = "gloves, nitrile"
 	path = /obj/item/clothing/gloves/latex/nitrile
-	cost = 3
+	cost = 2
 
 /datum/gear/gloves/rainbow
 	display_name = "gloves, rainbow"
@@ -32,6 +32,7 @@
 	display_name = "ring"
 	path = /obj/item/clothing/ring
 	cost = 2
+	flags = GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/ring/New()
 	..()
@@ -54,10 +55,10 @@
 /datum/gear/gloves/botany
 	display_name = "gloves, botany"
 	path = /obj/item/clothing/gloves/thick/botany
-	cost = 3
+	cost = 2
 	allowed_roles = list(/datum/job/rd, /datum/job/scientist, /datum/job/chef, /datum/job/bartender, /datum/job/assistant)
 
 /datum/gear/gloves/work
 	display_name = "gloves, work"
 	path = /obj/item/clothing/gloves/thick
-	cost = 3
+	cost = 2

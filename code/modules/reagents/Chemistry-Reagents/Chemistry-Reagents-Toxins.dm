@@ -73,7 +73,12 @@
 	reagent_state = LIQUID
 	color = "#003333"
 	target_organ = BP_BRAIN
-	strength = 10
+	strength = 15
+
+/datum/reagent/toxin/carpotoxin/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(prob(volume*2))
+		M.confused = max(M.confused, 3)
+	..()
 
 /datum/reagent/toxin/venom
 	name = "Spider Venom"
@@ -878,8 +883,7 @@
 			H.zombify()
 		else if (true_dose > 1 && prob(20))
 			H.zombify()
-		else if (prob(10))
-			to_chat(H, "<span class='warning'>You feel terribly ill!</span>")
+			to_chat(H, "<span class='warning'>You feel as if you're going to di-... Oh...</span>")
 
 /datum/reagent/toxin/bromide
 	name = "Bromide"

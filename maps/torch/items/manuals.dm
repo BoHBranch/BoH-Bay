@@ -75,7 +75,7 @@
 	"}
 
 /obj/item/weapon/folder/envelope/captain
-	desc = "A thick envelope. The NTF crest is stamped in the corner, along with 'TOP SECRET - DAGON UMBRA'."
+	desc = "A thick envelope. The NTF crest is stamped in the corner."
 
 /obj/item/weapon/folder/envelope/captain/Initialize()
 	..()
@@ -116,7 +116,7 @@
 	<i>This paper has been stamped with the stamp of NTF Command.</i>
 	"}
 	new/obj/item/weapon/paper(src, memo, "Standing Orders")
-	new/obj/item/weapon/paper/umbra(src)
+//	new/obj/item/weapon/paper/umbra(src)
 
 /obj/item/weapon/folder/envelope/rep
 	desc = "A thick envelope. The SCG crest is stamped in the corner, along with 'TOP SECRET - UMBRA'."

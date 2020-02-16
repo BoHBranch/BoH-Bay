@@ -41,11 +41,6 @@ GLOBAL_DATUM_INIT(changelings, /datum/antagonist/changeling, new)
 	absorb_objective.gen_amount_goal(2, 3)
 	changeling.objectives += absorb_objective
 
-	var/datum/objective/assassinate/kill_objective = new
-	kill_objective.owner = changeling
-	kill_objective.find_target()
-	changeling.objectives += kill_objective
-
 	var/datum/objective/steal/steal_objective = new
 	steal_objective.owner = changeling
 	steal_objective.find_target()

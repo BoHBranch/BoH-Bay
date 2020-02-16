@@ -1,6 +1,6 @@
 
 /datum/gear/uniform
-	allowed_branches = CIVILIAN_BRANCHES
+	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/uniform/utility
 	display_name = "Contractor Utility Uniform"

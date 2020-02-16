@@ -49,7 +49,7 @@
 		/obj/item/taperoll/police,
 		/obj/item/device/hailer,
 		/obj/item/clothing/accessory/storage/black_vest,
-		/obj/item/gunbox,
+		/obj/item/gunboxsmall,
 		/obj/item/device/megaphone,
 		/obj/item/clothing/gloves/thick,
 		/obj/item/clothing/gloves/thick/duty/solgov/sec,
@@ -66,6 +66,7 @@
 	name = "chief of security's locker"
 	req_access = list(access_hos)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/hos
+	storage_capacity = 45
 
 /obj/structure/closet/secure_closet/cos/WillContain()
 	return list(
@@ -116,7 +117,6 @@
 		/obj/item/weapon/storage/belt/holster/security,
 		/obj/item/weapon/reagent_containers/spray/pepper,
 		/obj/item/weapon/melee/baton/loaded,
-//		/obj/item/weapon/gun/energy/gun/secure,
 		/obj/item/gunbox,
 		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/weapon/handcuffs,
@@ -145,8 +145,7 @@
 		/obj/item/device/radio/headset/headset_sec/alt,
 		/obj/item/clothing/head/helmet/solgov/security,
 		/obj/item/clothing/suit/armor/pcarrier/medium/security,
-//		/obj/item/weapon/gun/energy/gun/small/secure,
-		/obj/item/gunbox,
+		/obj/item/gunboxsmall,
 		/obj/item/device/flash,
 		/obj/item/weapon/melee/baton/loaded,
 		/obj/item/weapon/reagent_containers/spray/pepper,

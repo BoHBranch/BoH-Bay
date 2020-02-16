@@ -17,5 +17,9 @@
 		/music_track/torn,
 		/music_track/nebula,
 		/music_track/epicintro2015,
-		/music_track/epicintro2017
+		/music_track/epicintro2017,
+		/music_track/astrometrics,
+		/music_track/astrometrics/a_place,
+		/music_track/astrometrics/engage,
+		/music_track/lonely_satellite
 	)

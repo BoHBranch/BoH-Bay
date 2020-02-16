@@ -2,11 +2,11 @@
 	title = "Physician"
 	department = "Medical"
 	department_flag = MED
-	minimal_player_age = 2
+	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 29)
 	ideal_character_age = 45
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the Chief Medical Officer"
 	selection_color = "#013d3b"
 	economic_power = 8
@@ -30,16 +30,17 @@
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
-	                    SKILL_CHEMISTRY   = SKILL_BASIC)
+	                    SKILL_CHEMISTRY   = SKILL_BASIC,
+	                    SKILL_DEVICES     = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
 	                    SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_CHEMISTRY   = SKILL_MAX)
-	skill_points = 20
+	skill_points = 25
 
 	access = list(access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
 			            access_crematorium, access_chemistry, access_surgery,
-			            access_medical_equip, access_solgov_crew, access_senmed)
+			            access_medical_equip, access_solgov_crew, access_senmed, access_hangar)
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
@@ -141,7 +142,7 @@
 	economic_power = 4
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 30
-	minimal_player_age = 7
+	minimal_player_age = 0
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/chemist
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
