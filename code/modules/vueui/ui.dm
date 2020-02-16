@@ -136,7 +136,7 @@ main ui datum.
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="vueui.css">
 	</head>
-	<body class="theme-nano">
+	<body class="theme-nano dark-theme">
 		<div id="header">
 			<header-[header]></header-[header]>
 		</div>
