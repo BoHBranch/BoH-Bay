@@ -234,7 +234,7 @@ var/list/gamemode_cache = list()
 	var/max_acts_per_interval = 140 //Number of actions per interval permitted for spam protection.
 	var/act_interval = 0.1 SECONDS //Interval for spam prevention.
 
-	var/panic_bunker = TRUE //is the panic bunker enabled?
+	var/panic_bunker = TRUE //is the panic bunker enabled? Should be TRUE
 	var/panic_bunker_message = "Sorry! The panic bunker is enabled. Please head to our discord to get yourself added to the panic bunker bypass."
 	var/delist_population = 50 //What population do we automatically take ourselves off to hub at?
 
