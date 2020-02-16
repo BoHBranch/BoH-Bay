@@ -233,8 +233,8 @@ var/list/gamemode_cache = list()
 	var/do_not_prevent_spam = FALSE //If this is true, skips spam prevention for user actions; inputs, verbs, macros, etc.
 	var/max_acts_per_interval = 140 //Number of actions per interval permitted for spam protection.
 	var/act_interval = 0.1 SECONDS //Interval for spam prevention.
-	
-  var/panic_bunker = TRUE //is the panic bunker enabled?
+
+	var/panic_bunker = TRUE //is the panic bunker enabled?
 	var/panic_bunker_message = "Sorry! The panic bunker is enabled. Please head to our discord to get yourself added to the panic bunker bypass."
 	var/delist_population = 50 //What population do we automatically take ourselves off to hub at?
 	var/announce_gamemode = FALSE //Do we annouce the game mode or not?
@@ -774,7 +774,7 @@ var/list/gamemode_cache = list()
 					config.delist_population = value
 				if ("announce_gamemode")
 					config.announce_gamemode = TRUE
-          
+
 				else
 					log_misc("Unknown setting in configuration: '[name]'")
 
