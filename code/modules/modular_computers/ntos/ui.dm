@@ -218,5 +218,5 @@
 /datum/extension/interactive/ntos/update_layout()
 	return TRUE
 
-/datum/extension/interactive/ntos/nano_host()
-	return holder.nano_host()
+/datum/extension/interactive/ntos/ui_host()
+	return holder.ui_host()

@@ -248,7 +248,7 @@ Class Procs:
 	if(stat & BROKEN)
 		return STATUS_CLOSE
 
-	return GLOB.physical_state.can_use_topic(nano_host(), user)
+	return GLOB.physical_state.can_use_topic(ui_host(), user)
 
 /obj/machinery/CouldUseTopic(var/mob/user)
 	..()

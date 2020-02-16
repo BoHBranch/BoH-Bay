@@ -37,6 +37,7 @@
 	var/start_time = 0
 	var/end_time = 0
 	var/cooking_power = 1
+	var/list/ingredients = list()
 
 /*******************
 *   Initialising
@@ -76,6 +77,7 @@
 
 /obj/machinery/microwave/proc/add_item(var/obj/item/weapon/W as obj, var/mob/user as mob)
 	user.drop_from_inventory(W, src)
+	LAZYADD(ingredients, W)
 	user.visible_message( \
 		SPAN_NOTICE("\The [user] has added one of [W] to \the [src]."), \
 		SPAN_NOTICE("You add one of [W] to \the [src]."))
@@ -158,7 +160,7 @@
 		else
 			to_chat(user, SPAN_NOTICE("You decide not to do that."))
 	else
-		if (contents.len>=max_n_of_items)
+		if (ingredients.len>=max_n_of_items)
 			to_chat(user, SPAN_WARNING("This [src] is full of ingredients, you can't fit any more!"))
 			return 1
 		if(istype(O, /obj/item/stack))
@@ -229,15 +231,15 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	LAZYINITLIST(data["cookingreas"])
 
 	// if BYOND lists are smaller than UI, then something (or everything) was removed - wipe the list
-	if(LAZYLEN(contents) < LAZYLEN(data["cookingobjs"]))
+	if(LAZYLEN(ingredients) < LAZYLEN(data["cookingobjs"]))
 		VUEUI_SET_CHECK(data["cookingobjs"], list(), ., data)
 	if(LAZYLEN(reagents.reagent_list) < LAZYLEN(data["cookingreas"]))
 		VUEUI_SET_CHECK(data["cookingreas"], list(), ., data)
 
 	// build the list of objs and reagents
-	if (LAZYLEN(contents))
+	if (LAZYLEN(ingredients))
 		var/list/cook_count = list()
-		for (var/obj/O in contents)
+		for (var/obj/O in ingredients)
 			cook_count[O.name]++
 		for (var/C in cook_count)
 			VUEUI_SET_CHECK(data["cookingobjs"][C], cook_count[C], ., data)
@@ -262,11 +264,11 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	if(stat & (NOPOWER|BROKEN))
 		return
 
-	if (!reagents.reagent_list.len && !(locate(/obj) in contents)) //dry run
+	if (!reagents.reagent_list.len && !(locate(/obj) in ingredients)) //dry run
 		start()
 		return
 
-	recipe = select_recipe(SScuisine[appliancetype],src)
+	recipe = select_recipe(SScuisine.recipe_datums[appliancetype],src)
 
 	if (reagents.reagent_list.len && prob(50)) // 50% chance a liquid recipe gets messy
 		dirty += Ceiling(reagents.total_volume / 10)
@@ -307,7 +309,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 			AM.forceMove(temp)
 
 		valid = FALSE
-		recipe = select_recipe(SScuisine[appliancetype],src)
+		recipe = select_recipe(SScuisine.recipe_datums[appliancetype],src)
 		if (recipe && recipe.result == result)
 			sleep(2)
 			valid = TRUE
@@ -323,7 +325,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	for (var/obj/item/weapon/reagent_containers/food/snacks/S in cooked_items)
 		reagents.trans_to_holder(S.reagents, total/cooked_items.len)
 
-	for (var/obj/item/weapon/reagent_containers/food/snacks/S in contents)
+	for (var/obj/item/weapon/reagent_containers/food/snacks/S in ingredients)
 		S.cook()
 
 	eject(0) //clear out anything left
@@ -350,7 +352,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 		visible_message(SPAN_WARNING("\The [src] begins to leak an acrid smoke..."))
 
 /obj/machinery/microwave/proc/has_extra_item()
-	for (var/obj/O in contents)
+	for (var/obj/O in ingredients)
 		if ( \
 				!istype(O,/obj/item/weapon/reagent_containers/food) && \
 				!istype(O, /obj/item/weapon/grown) \
@@ -409,7 +411,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 /obj/machinery/microwave/proc/fail()
 	var/obj/item/weapon/reagent_containers/food/snacks/badrecipe/ffuu = new(src)
 	var/amount = 0
-	for (var/obj/O in contents-ffuu)
+	for (var/obj/O in ingredients-ffuu)
 		amount++
 		if (O.reagents)
 			var/reagenttype = O.reagents.get_master_reagent_type()
@@ -463,7 +465,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 			if(R.name == href_list["eject"])
 				eject_reagent(R, usr)
 				break
-		for (var/obj/O in contents)
+		for (var/obj/O in ingredients)
 			if(O.name == href_list["eject"])
 				eject(0, O)
 				break
@@ -492,7 +494,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	if (EJ)
 		EJ.forceMove(loc)
 	else
-		for (var/atom/movable/A in contents)
+		for (var/atom/movable/A in ingredients)
 			A.forceMove(loc)
 		if (reagents.total_volume)
 			dirty += round(reagents.total_volume / 10)

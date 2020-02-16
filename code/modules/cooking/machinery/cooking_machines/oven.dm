@@ -1,7 +1,6 @@
 /obj/machinery/appliance/cooker/oven
 	name = "oven"
 	desc = "Cookies are ready, dear."
-	icon = 'icons/obj/cooking_machines.dmi'
 	icon_state = "ovenopen"
 	cook_type = "baked"
 	appliancetype = OVEN

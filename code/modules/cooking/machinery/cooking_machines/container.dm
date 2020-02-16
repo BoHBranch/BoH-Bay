@@ -3,7 +3,7 @@
 //which can be checked against recipe requirements in order to cook recipes that require several things
 
 /obj/item/weapon/reagent_containers/cooking_container
-	icon = 'icons/obj/cooking_machines.dmi'
+	icon = 'icons/obj/aurora/cooking_machines.dmi'
 	var/shortname
 	var/max_space = 20//Maximum sum of w-classes of foods in this container at once
 	var/max_reagents = 80//Maximum units of reagents
@@ -151,6 +151,24 @@
 	center_of_mass = list("x" = 16,"y" = 12)
 	max_space = 30
 	max_reagents = 120
+
+/obj/item/weapon/reagent_containers/cooking_container/pan
+	name = "pan"
+	shortname = "pan"
+	desc = "Chuck ingredients in this to fry something on the stove."
+	icon_state = "pan"
+	max_space = 30
+	max_reagents = 30
+	slot_flags = SLOT_HEAD
+	force = 15
+	hitsound = 'sound/weapons/smash.ogg'
+
+/obj/item/weapon/reagent_containers/cooking_container/pan/New(var/newloc, var/mat_key) // we use New instead of Initialize because, uh, material, i guess
+	..(newloc)
+	var/material/material = SSmaterials.get_material_by_name(mat_key ? mat_key : MATERIAL_STEEL)
+	if(material.name != MATERIAL_STEEL)
+		color = material.icon_colour
+	name = "[material.display_name] [initial(name)]"
 
 /obj/item/weapon/reagent_containers/cooking_container/fryer
 	name = "fryer basket"

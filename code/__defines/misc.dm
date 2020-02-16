@@ -280,6 +280,19 @@
 #define CEREALMAKER			0x10
 #define PAN					0x20
 
+// Used for creating soft references to objects. A manner of storing an item reference
+// as text so you don't necessarily fuck with an object's ability to be garbage collected.
+// Ported from Aurora.
+#if DM_VERSION < 513
+
+#define SOFTREF(A) "\ref[A]"
+
+#else
+
+#define SOFTREF(A) ref(A)
+
+#endif
+
 // Span define, ported from Aurora
 #define span(class, text) ("<span class='[class]'>[text]</span>")
 

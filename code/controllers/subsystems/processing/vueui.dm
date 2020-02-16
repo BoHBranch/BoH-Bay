@@ -5,20 +5,18 @@ PROCESSING_SUBSYSTEM_DEF(vueui)
 	name = "VueUI"
 	init_order = SS_INIT_MISC
 	priority = SS_PRIORITY_NANO
+	flags = 0
 
 	var/list/open_uis
 	var/list/var_monitor_map
 
-/datum/controller/subsystem/processing/vueui/New()
-	LAZYINITLIST(open_uis)
-	NEW_SS_GLOBAL(SSvueui)
-
 /datum/controller/subsystem/processing/vueui/Initialize(timeofday)
-	var_monitor_map = list()
+	LAZYINITLIST(open_uis)
+	LAZYINITLIST(var_monitor_map)
 	for (var/path in subtypesof(/datum/vueui_var_monitor))
 		var/datum/vueui_var_monitor/VM = new path()
 		var_monitor_map[VM.subject_type] = VM
-	..()
+	. = ..()
 
 /**
   * Gets a vueui_var_monitor associated with the given source type.
@@ -53,7 +51,7 @@ PROCESSING_SUBSYSTEM_DEF(vueui)
   * @return list of UI datums or null
   */
 /datum/controller/subsystem/processing/vueui/proc/get_open_uis(var/src_object)
-	var/src_object_key = weakref(src_object)
+	var/src_object_key = SOFTREF(src_object)
 	if (!LAZYLEN(open_uis[src_object_key]))
 		return null
 
@@ -105,7 +103,7 @@ PROCESSING_SUBSYSTEM_DEF(vueui)
   * @param ui - ui that got opened
   */
 /datum/controller/subsystem/processing/vueui/proc/ui_opened(var/datum/vueui/ui)
-	var/src_object_key = weakref(ui.object)
+	var/src_object_key = SOFTREF(ui.object)
 	LAZYINITLIST(open_uis[src_object_key])
 	LAZYINITLIST(ui.user.open_vueui_uis)
 	LAZYADD(ui.user.open_vueui_uis, ui)
@@ -120,7 +118,7 @@ PROCESSING_SUBSYSTEM_DEF(vueui)
   * @return 0 if failed, 1 if success
   */
 /datum/controller/subsystem/processing/vueui/proc/ui_closed(var/datum/vueui/ui)
-	var/src_object_key = weakref(ui.object)
+	var/src_object_key = SOFTREF(ui.object)
 
 	if (!LAZYLEN(open_uis[src_object_key]))
 		return 0	// Wasn't open.
@@ -177,8 +175,8 @@ PROCESSING_SUBSYSTEM_DEF(vueui)
   * @return list of transfered uis
   */
 /datum/controller/subsystem/processing/vueui/proc/transfer_uis(var/old_object, var/new_object, var/new_activeui = null, var/nwidth = 0, var/nheight = 0, var/new_title = null, var/new_data = null)
-	var/old_object_key = weakref(old_object)
-	var/new_object_key = weakref(new_object)
+	var/old_object_key = SOFTREF(old_object)
+	var/new_object_key = SOFTREF(new_object)
 	. = list()
 	LAZYINITLIST(open_uis[new_object_key])
 

@@ -8,7 +8,7 @@
 /obj/machinery/appliance
 	name = "cooker"
 	desc = "You shouldn't be seeing this!"
-	icon = 'icons/obj/cooking_machines.dmi'
+	icon = 'icons/obj/aurora/cooking_machines.dmi'
 	var/appliancetype = 0
 	density = 1
 	anchored = 1
@@ -39,7 +39,7 @@
 
 	var/container_type = null
 
-	var/combine_first = FALSE//If 1, this appliance will do combinaiton cooking before checking recipes
+	var/combine_first = FALSE//If 1, this appliance will do combination cooking before checking recipes
 	construct_state = /decl/machine_construction/default/panel_closed
 	uncreated_component_parts = null
 
@@ -89,11 +89,11 @@
 
 	var/half_overcook = (CI.overcook_mult - 1)*0.5
 	if (progress < 1+half_overcook)
-		return span("soghun","<b>It is done !</b>")
+		return span("soghun","<b>It is done!</b>")
 	if (progress < CI.overcook_mult)
 		return span("warning","It looks overcooked, get it out!")
 	else
-		return span("danger","It is burning!!")
+		return span("danger","It is burning!")
 
 /obj/machinery/appliance/on_update_icon()
 	if (!stat && cooking_objs.len)
