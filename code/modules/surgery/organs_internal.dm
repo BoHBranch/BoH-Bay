@@ -137,7 +137,7 @@
 	name = "Remove internal organ"
 	allowed_tools = list(
 		/obj/item/weapon/hemostat = 100,
-		/obj/item/weapon/material/hatchet = 75,
+		/obj/item/weapon/wirecutters = 75,
 		/obj/item/weapon/material/knife = 75,
 		/obj/item/weapon/material/kitchen/utensil/fork = 20
 	)
