@@ -217,6 +217,7 @@
 #include "code\controllers\subsystems\initialization\materials.dm"
 #include "code\controllers\subsystems\initialization\misc.dm"
 #include "code\controllers\subsystems\initialization\persistence.dm"
+#include "code\controllers\subsystems\initialization\persistent_configuration.dm"
 #include "code\controllers\subsystems\initialization\robots.dm"
 #include "code\controllers\subsystems\initialization\webhooks.dm"
 #include "code\controllers\subsystems\processing\airflow.dm"

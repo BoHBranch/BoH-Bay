@@ -13,7 +13,6 @@ SUBSYSTEM_DEF(persistent_configuration)
 	var/rounds_since_hard_restart = 0
 
 /datum/controller/subsystem/persistent_configuration/Initialize(timeofday)
-	SSpersist_config = src
 
 	load_from_file("data/persistent_config.json")
 
