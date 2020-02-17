@@ -82,10 +82,10 @@ GLOBAL_LIST_INIT(default_uplink_source_priority, list(
 
 /decl/uplink_source/unit
 	name = "Uplink Unit"
-	desc = "Teleports an uplink unit to your location. Has 30% more TC."
+	desc = "Teleports an uplink unit to your location. "
 
 /decl/uplink_source/unit/setup_uplink_source(var/mob/M, var/amount)
-	var/obj/item/device/radio/uplink/U = new(M, M.mind, round(amount * 1.3))
+	var/obj/item/device/radio/uplink/U = new(M, M.mind, round(amount * 1.0))
 	put_on_mob(M, U, "\A [U]")
 
 /decl/uplink_source/telecrystals
