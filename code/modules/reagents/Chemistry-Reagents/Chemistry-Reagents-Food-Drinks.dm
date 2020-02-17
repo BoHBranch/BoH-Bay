@@ -51,7 +51,7 @@
 /datum/reagent/nutriment/proc/adjust_nutrition(var/mob/living/carbon/M, var/alien, var/removed)
 	var/nut_removed = removed
 	var/hyd_removed = removed
-	if(alien == IS_ASHWALKER) //Literally nothing from nutriments
+	if(alien == IS_OLDUNATHI) //Literally nothing from nutriments
 		return
 	if(alien == IS_UNATHI)
 		removed *= 0.1 // Unathi get most of their nutrition from meat.
@@ -82,7 +82,7 @@
 /datum/reagent/nutriment/protein/adjust_nutrition(var/mob/living/carbon/M, var/alien, var/removed)
 	switch(alien)
 		if(IS_UNATHI) removed *= 2.25
-		if(IS_ASHWALKER) removed *= 3.5
+		if(IS_OLDUNATHI) removed *= 3.5
 	M.adjust_nutrition(nutriment_factor * removed)
 
 /datum/reagent/nutriment/protein/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
@@ -653,7 +653,7 @@
 	glass_desc = "A glass of deadly juice."
 
 /datum/reagent/toxin/poisonberryjuice/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
-	if(alien == IS_UNATHI || alien == IS_ASHWALKER)
+	if(alien == IS_UNATHI || alien == IS_OLDUNATHI)
 		return //unathi are immune!
 	return ..()
 
