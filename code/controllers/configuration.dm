@@ -237,6 +237,7 @@ var/list/gamemode_cache = list()
 	var/panic_bunker = TRUE //is the panic bunker enabled?
 	var/panic_bunker_message = "Sorry! The panic bunker is enabled. Please head to our discord to get yourself added to the panic bunker bypass."
 	var/delist_population = 50 //What population do we automatically take ourselves off to hub at?
+	var/pb_population = 70 //What population do we automatically engage the panic bunker at?
 	var/announce_gamemode = FALSE //Do we annouce the game mode or not?
 
 /datum/configuration/New()
@@ -772,6 +773,9 @@ var/list/gamemode_cache = list()
 					config.act_interval = text2num(value) SECONDS
 				if("delist_population")
 					config.delist_population = value
+				if("pb_population")
+					config.pb_population = value
+
 				if ("announce_gamemode")
 					config.announce_gamemode = TRUE
 

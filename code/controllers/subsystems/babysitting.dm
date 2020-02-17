@@ -4,10 +4,9 @@ SUBSYSTEM_DEF(babysit)
 	flags = SS_BACKGROUND
 	wait = 5 MINUTES
 	var/manual_delist = FALSE //Used when toggle_hub_visibility is used.
+	var/manual_pb = TRUE // is the panic bunker manually up or down?
 
 /datum/controller/subsystem/babysit/fire()
-	if(manual_delist)
-		return // Fail silently and return if the server has been manually taken off the HUB.
 	var/playercount
 	for(var/mob/new_player/player in GLOB.player_list)
 		playercount++
@@ -16,9 +15,17 @@ SUBSYSTEM_DEF(babysit)
 			if(GLOB.visibility_pref)
 				world.update_hub_visibility()
 				message_admins("NOTICE: Playercount above configuration defined limit - SSBabysit is delisting server from HUB. Playercount: [playercount] Config Limit: [config.delist_population]")
-			message_admins("NOTICE: Playercount above configuration defined limit, but server is off the hub. Doing nothing.")
 		if(playercount <= config.delist_population)
 			if(!GLOB.visibility_pref)
 				world.update_hub_visibility()
 				message_admins("NOTICE: Playercount below configuration defined limit after delist - SSBabysit is listing server on the HUB. Playercount: [playercount] Config Limit: [config.delist_population]")
-			message_admins("NOTICE: Playercount below configuration defined limit, but server is on the hub. Doing nothing.")
+
+	if(!manual_pb)
+		if(playercount >= config.pb_population)
+			if(config.panic_bunker)
+				config.panic_bunker = !config.panic_bunker
+				message_admins("NOTICE: Playercount above configuration defined limit - SSBabysit is engaging panic bunker! Playercount: [playercount] Config Limit: [config.pb_population]")
+		if(playercount <= config.pb_population)
+			if(!config.panic_bunker)
+				config.panic_bunker = !config.panic_bunker
+				message_admins("NOTICE: Playercount below configuration defined limit after delist - SSBabysit is disengaging panic bunker. Playercount: [playercount] Config Limit: [config.pb_population]")
