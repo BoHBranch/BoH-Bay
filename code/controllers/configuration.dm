@@ -99,6 +99,8 @@ var/list/gamemode_cache = list()
 	var/issuereporturl
 
 	var/forbid_singulo_possession = 0
+	
+	var/rounds_until_hard_restart = -1
 
 	//game_options.txt configs
 
@@ -770,6 +772,9 @@ var/list/gamemode_cache = list()
 
 				if ("announce_gamemode")
 					config.announce_gamemode = TRUE
+				
+				if("rounds_until_hard_restart")
+					config.rounds_until_hard_restart = text2num(value)
 
 				else
 					log_misc("Unknown setting in configuration: '[name]'")
