@@ -19,7 +19,7 @@
 	primitive_form = "Stok"
 	darksight_range = 3
 	darksight_tint = DARKTINT_MODERATE
-	gluttonous = GLUT_SMALLER | GLUT_ITEM_TINY | GLUT_PROJECTILE_VOMIT //Used to eating ash.
+	gluttonous = GLUT_TINY | GLUT_ITEM_TINY | GLUT_PROJECTILE_VOMIT //Used to eating ash.
 	strength = STR_HIGH
 	breath_pressure = 12 //Their lungs are strong.
 	slowdown = 0.5
@@ -43,8 +43,8 @@
 	pocket regions of their home planet, also known as \"Ash Plains.\" \
 	These regions usually contain dangerous and hostile fauna and megafauna, an atmosphere filled with a high concentration of ash particles, and little to no \
 	plant life to snack on. Most Veteris'Unathi have left the dangerous Ash Plains, however generations of exposure to this wasteland have adapted \
-	them to eat meat, bones, and bone marrow exclusively, with some Veteris'Unathi eating rocks to assist with digestion of bones. The usual lack of nutrition and slow metabolism, \
-	Veteris'Unathi are generally shorter than their cousins, however they are still excellent candidates for physical activity due to their resilient and efficient lungs."
+	them to eat meat, bones, and bone marrow exclusively, with some eating rocks to assist with digestion of bones. The usual lack of nutrition and slow metabolism, \
+	this subspecies of Unathi are generally shorter than their cousins, however they are still excellent candidates for physical activity due to their resilient and efficient lungs."
 
 	cold_level_1 = 280 //Default 260 - Lower is better
 	cold_level_2 = 220 //Default 200
@@ -96,8 +96,8 @@
 	)
 
 	descriptors = list(
-		/datum/mob_descriptor/height = 1,
-		/datum/mob_descriptor/build = 1
+		/datum/mob_descriptor/height = 0,
+		/datum/mob_descriptor/build = 2
 	)
 
 	available_cultural_info = list(
