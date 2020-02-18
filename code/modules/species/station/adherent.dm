@@ -147,9 +147,9 @@
 
 /datum/species/adherent/skills_from_age(age)
 	switch(age)
-		if(0 to 1000)    . = -4
-		if(1000 to 2000) . =  0
-		if(2000 to 8000) . =  4
+		if(0 to 1000)    . =  8
+		if(1000 to 2000) . =  8
+		if(2000 to 8000) . =  8
 		else             . =  8
 
 /datum/species/adherent/get_additional_examine_text(var/mob/living/carbon/human/H)
