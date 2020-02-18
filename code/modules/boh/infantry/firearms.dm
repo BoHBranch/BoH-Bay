@@ -21,7 +21,7 @@
 	auto_eject = 0
 	starts_loaded = 0
 	one_hand_penalty = 6 //lower power rounds
-	jam_chance = 5 //frangible rounds might shatter if they're chambered improperly.
+	jam_chance = 0 //frangible rounds might shatter if they're chambered improperly.
 	req_access = list(access_infantry)
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
