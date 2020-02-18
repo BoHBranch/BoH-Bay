@@ -63,7 +63,7 @@
 		)
 	)
 	
-		available_cultural_info_faction = list( //Same reason as above. Currently only human or other is chooseable
+	available_cultural_info_faction = list( //Same reason as above. Currently only human or other is chooseable
 		TAG_FACTION = list(
 			FACTION_SOL_CENTRAL,
 			FACTION_FLEET,
@@ -95,8 +95,8 @@
 		)
 	)
 	
-			available_cultural_info_religion = list( //Same reason as above. Currently only human or other is chooseable
-			TAG_RELIGION = list(
+	available_cultural_info_religion = list( //Same reason as above. Currently only human or other is chooseable
+		TAG_RELIGION = list(
 			RELIGION_OTHER,
 			RELIGION_JUDAISM,
 			RELIGION_HINDUISM,
@@ -122,8 +122,8 @@
 		)
 	)		
 	
-			available_cultural_info_location = list( //Same reason as above. Currently only human or other is chooseable
-			TAG_LOCATION = list(
+	available_cultural_info_location = list( //Same reason as above. Currently only human or other is chooseable
+		TAG_LOCATION = list(
 			HOME_SYSTEM_MARS,
 			HOME_SYSTEM_EARTH,
 			HOME_SYSTEM_LUNA,
