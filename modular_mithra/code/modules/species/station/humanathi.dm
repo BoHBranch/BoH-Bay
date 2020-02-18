@@ -129,5 +129,16 @@
 		list(/decl/emote/audible/grunt, /decl/emote/audible/groan, /decl/emote/audible/hiss) = 20,
 	)
 
+	autohiss_basic_map = list(
+			"s" = list("ss", "sss", "ssss")
+		)
+	autohiss_extra_map = list(
+			"x" = list("ks", "kss", "ksss")
+		)
+	autohiss_exempt = list(
+					LANGUAGE_UNATHI_SINTA,
+					LANGUAGE_UNATHI_YEOSA
+	)
+
 /datum/species/humanathi/get_bodytype(var/mob/living/carbon/human/H)
 	return SPECIES_OLDUNATHI
