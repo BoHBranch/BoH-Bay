@@ -60,10 +60,7 @@
 			CULTURE_SKRELL_TALUM,
 			CULTURE_SKRELL_RASKINTA,
 			CULTURE_UNATHI,
-		)
-	)
-	
-	available_cultural_info_faction = list( //Same reason as above. Currently only human or other is chooseable
+		),
 		TAG_FACTION = list(
 			FACTION_SOL_CENTRAL,
 			FACTION_FLEET,
@@ -92,10 +89,7 @@
 			FACTION_SERGAL_GOLD_RING,
 			FACTION_SERGAL_SHIGU,
 			FACTION_SERGAL_REONO
-		)
-	)
-	
-	available_cultural_info_religion = list( //Same reason as above. Currently only human or other is chooseable
+		),
 		TAG_RELIGION = list(
 			RELIGION_OTHER,
 			RELIGION_JUDAISM,
@@ -119,11 +113,8 @@
 			RELIGION_UNATHI_PRECURSOR,
 			RELIGION_UNATHI_STRATAGEM,
 			RELIGION_UNATHI_LIGHTS
-		)
-	)		
-	
-	available_cultural_info_location = list( //Same reason as above. Currently only human or other is chooseable
-		TAG_LOCATION = list(
+		),		
+		TAG_HOMEWORLD = list(
 			HOME_SYSTEM_MARS,
 			HOME_SYSTEM_EARTH,
 			HOME_SYSTEM_LUNA,
