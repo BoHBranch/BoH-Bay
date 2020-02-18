@@ -446,7 +446,7 @@
 
 // Misc
 /datum/job/assistant
-	skill_points = 16
+	skill_points = 18
 
 /*
 /////////
