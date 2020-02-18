@@ -1,6 +1,6 @@
 GLOBAL_LIST_EMPTY(PB_bypass)
 
-/client/proc/panicbunker()
+/datum/admins/proc/panicbunker()
 	set category = "Server"
 	set name = "Toggle Panic Bunker"
 
@@ -17,7 +17,7 @@ GLOBAL_LIST_EMPTY(PB_bypass)
 	if (config.panic_bunker && (!dbcon || !dbcon.IsConnected()))
 		message_admins("The Database is not connected! Panic bunker will not work until the connection is reestablished.")
 
-/client/proc/addbunkerbypass(ckeytobypass as text)
+/datum/admins/proc/addbunkerbypass(ckeytobypass as text)
 	set category = "Server"
 	set name = "Add PB Bypass"
 	set desc = "Allows a given ckey to connect despite the panic bunker for a given round."
@@ -30,7 +30,7 @@ GLOBAL_LIST_EMPTY(PB_bypass)
 	message_admins("[key_name_admin(usr)] has added [ckeytobypass] to the current round's bunker bypass list.")
 	send2irc("Panic Bunker", "[key_name(usr)] has added [ckeytobypass] to the current round's bunker bypass list.")
 
-/client/proc/revokebunkerbypass(ckeytobypass as text)
+/datum/admins/proc/revokebunkerbypass(ckeytobypass as text)
 	set category = "Server"
 	set name = "Revoke PB Bypass"
 	set desc = "Revoke's a ckey's permission to bypass the panic bunker for a given round."
