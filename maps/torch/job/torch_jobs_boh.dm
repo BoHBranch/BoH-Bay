@@ -387,8 +387,8 @@
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/service/crewman/marine
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/fleet/e1,
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/marine_corps/e1,
 		/datum/mil_rank/marine_corps/e2,
@@ -446,7 +446,7 @@
 
 // Misc
 /datum/job/assistant
-	skill_points = 24
+	skill_points = 16
 
 /*
 /////////
