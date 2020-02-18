@@ -17,11 +17,12 @@
 	display_name = "mechanical polytool - right arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/polytool/engineer/right
 
-/datum/gear/augmentation/implanted_circuitkit/
+/datum/gear/augmentation/implanted_circuitkit
 	display_name = "circuit augment - left arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/simple/circuit/left
+	cost = 4
 
 /datum/gear/augmentation/implanted_circuitkit/right
 	display_name = "circuit augment - right arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/simple/circuit/right
-	cost = 4
+	
