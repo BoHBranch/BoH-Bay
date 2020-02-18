@@ -42,7 +42,6 @@ Civilian
 		"Off-Duty" = /decl/hierarchy/outfit/job/torch/crew/service/crewman,
 		"Trainer")
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/passenger
-	skill_points = 16
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ,
