@@ -11,8 +11,12 @@
 	available_by_default = FALSE
 	allowed_ranks = null
 	allowed_branches = null
-	skill_points = 25
+	skill_points = 34
 	give_psionic_implant_on_join = FALSE
+	min_skill = list(   SKILL_EVA         = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_BASIC,
+	                    SKILL_HAULING     = SKILL_BASIC)
+						
 	max_skill = list(   SKILL_BUREAUCRACY = SKILL_MAX,
 	                    SKILL_FINANCE = SKILL_MAX,
 	                    SKILL_EVA = SKILL_MAX,
