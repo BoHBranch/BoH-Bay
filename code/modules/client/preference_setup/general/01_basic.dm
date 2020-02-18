@@ -41,7 +41,6 @@ datum/preferences
 			pref.real_name = check.sanitize_name(pref.real_name, pref.species)
 			if(!pref.real_name)
 				pref.real_name = "Urist Mc[capitalize(pick(GLOB.last_names))]"
-				world.log << "The name is: [pref.real_name]."
 
 /datum/category_item/player_setup_item/physical/basic/content()
 	. = list()
