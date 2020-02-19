@@ -17,12 +17,12 @@
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/skrell_helmet
-	allowed_branches = TACTICOOL_BRANCHES
-	whitelisted = list(SPECIES_UNATHI)
+	allowed_roles = ARMORED_ROLES
+	whitelisted = list(SPECIES_SKRELL)
 	
 /datum/gear/uniform/skrell_bodysuit
-	allowed_branches = TACTICOOL_BRANCHES
-	whitelisted = list(SPECIES_UNATHI)
+	allowed_roles = ARMORED_ROLES
+	whitelisted = list(SPECIES_SKRELL)
 
 /datum/gear/uniform/harness
 	allowed_branches = null
