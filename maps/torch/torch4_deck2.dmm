@@ -10074,8 +10074,8 @@
 	name = "Weapons locker"
 	},
 /obj/structure/window/reinforced,
-/obj/random/illegaltwo,
 /obj/effect/floor_decal/industrial/outline/red,
+/obj/random/ammo,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "so" = (
@@ -10101,8 +10101,8 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/random/illegaltwo,
 /obj/effect/floor_decal/industrial/outline/red,
+/obj/random/ammo,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "sq" = (
@@ -10248,7 +10248,7 @@
 /obj/structure/table/rack{
 	dir = 8
 	},
-/obj/random/illegaltwo,
+/obj/random/ammo,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/armory)
 "sI" = (
@@ -10351,9 +10351,6 @@
 /obj/structure/table/rack{
 	dir = 8
 	},
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
 /obj/random/ammo,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/techfloor,

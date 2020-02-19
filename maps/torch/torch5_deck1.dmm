@@ -8902,7 +8902,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/ammo)
 "aoG" = (
-/obj/random/illegaltwo,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/ammo)
 "aoH" = (
@@ -10004,7 +10003,6 @@
 "aqG" = (
 /obj/structure/closet/crate/solar,
 /obj/random/tech_supply,
-/obj/random/illegaltwo,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
 "aqJ" = (

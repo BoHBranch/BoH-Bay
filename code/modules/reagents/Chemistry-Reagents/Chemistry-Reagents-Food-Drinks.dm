@@ -42,14 +42,17 @@
 	affect_ingest(M, alien, removed)
 
 /datum/reagent/nutriment/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == SPECIES_OLDUNATHI)
+		return
 	M.heal_organ_damage(0.5 * removed, 0) //what
-
 	adjust_nutrition(M, alien, removed)
 	M.add_chemical_effect(CE_BLOODRESTORE, 4 * removed)
 
 /datum/reagent/nutriment/proc/adjust_nutrition(var/mob/living/carbon/M, var/alien, var/removed)
 	var/nut_removed = removed
 	var/hyd_removed = removed
+	if(alien == IS_OLDUNATHI) //Literally nothing from nutriments
+		return
 	if(alien == IS_UNATHI)
 		removed *= 0.1 // Unathi get most of their nutrition from meat.
 	if(nutriment_factor)
@@ -82,6 +85,7 @@
 /datum/reagent/nutriment/protein/adjust_nutrition(var/mob/living/carbon/M, var/alien, var/removed)
 	switch(alien)
 		if(IS_UNATHI) removed *= 2.25
+		if(IS_OLDUNATHI) removed *= 3.5
 	M.adjust_nutrition(nutriment_factor * removed)
 
 /datum/reagent/nutriment/protein/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
@@ -835,7 +839,7 @@
 	glass_desc = "A glass of deadly juice."
 
 /datum/reagent/toxin/poisonberryjuice/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
-	if(alien == IS_UNATHI)
+	if(alien == IS_UNATHI || alien == IS_OLDUNATHI)
 		return //unathi are immune!
 	return ..()
 
