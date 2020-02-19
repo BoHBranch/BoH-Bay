@@ -209,7 +209,7 @@ function run_code_tests {
     run_test "indentation check" "awk -f tools/indentation.awk **/*.dm"
     run_test "check changelog example unchanged" "md5sum -c - <<< '683a3e0d21b90581ae6e4c95052d461e *html/changelogs/example.yml'"
     run_test "check tags" "python3 tools/TagMatcher/tag-matcher.py ."
-    run_test "generate changelogs" "python tools/GenerateChangelog/ss13_genchangelog.py html/changelog.html html/changelogs --dry-run"
+    run_test "generate changelogs" "python3 tools/GenerateChangelog/ss13_genchangelog.py html/changelog.html html/changelogs --dry-run"
     run_test "mapmerge check" "python3 tools/mapmerge2/travis_mapcheck.py"
     run_test "check color hex" "python3 tools/ColorHexChecker/color-hex-checker.py ."
     run_test "check punctuation" "python3 tools/PunctuationChecker/punctuation-checker.py ."
