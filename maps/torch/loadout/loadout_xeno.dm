@@ -17,10 +17,10 @@
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/skrell_helmet
-	allowed_roles = ARMORED_ROLES
+	allowed_roles = TACTICOOL_BRANCHES
 	
 /datum/gear/uniform/skrell_bodysuit
-	allowed_roles = ARMORED_ROLES
+	allowed_roles = TACTICOOL_BRANCHES
 
 /datum/gear/uniform/harness
 	allowed_branches = null
