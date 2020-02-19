@@ -71,7 +71,7 @@ def map_check(map, name):
 
 if __name__ == '__main__':
     list_of_files = list()
-    for root, directories, filenames in os.walk("/home/travis/build/BoHBranch/BoH-Bay/maps/"):
+    for root, directories, filenames in os.walk("/home/travis/build/Aurorastation/Aurora.3/maps/"):
         for filename in [f for f in filenames if f.endswith(".dmm")]:
             list_of_files.append(str(pathlib.Path(root, filename)))
 
