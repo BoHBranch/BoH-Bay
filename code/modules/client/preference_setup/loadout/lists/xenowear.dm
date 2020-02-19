@@ -74,19 +74,16 @@
 	display_name = "Skrellian helmet"
 	path = /obj/item/clothing/head/helmet/skrell
 	sort_category = "Xenowear"
-	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/officer, /datum/job/detective)
 	
 /datum/gear/uniform/skrell_bodysuit
 	display_name = "Skrellian uniform"
 	path = /obj/item/clothing/under/skrelljumpsuit
 	sort_category = "Xenowear"
-	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/officer, /datum/job/detective)
 
 /datum/gear/accessory/skrell_badge
 	display_name = "skrellian SDTF badge"
 	path = /obj/item/clothing/accessory/badge/tags/skrell
 	sort_category = "Xenowear"
-	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/officer, /datum/job/detective)
 
 // IPC clothing
 /datum/gear/mask/ipc_monitor
