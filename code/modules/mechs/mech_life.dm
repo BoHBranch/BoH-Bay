@@ -70,13 +70,13 @@
 	var/obj/wreck = new wreckage_path(get_turf(src), src, gibbed)
 	wreck.name = "wreckage of \the [name]"
 	if(!gibbed)
-		if(arms.loc != src)
+		if(arms & (arms.loc != src))
 			arms = null
-		if(legs.loc != src)
+		if(legs & (legs.loc != src))
 			legs = null
-		if(head.loc != src)
+		if(head & (head.loc != src))
 			head = null
-		if(body.loc != src)
+		if(body & (body.loc != src))
 			body = null
 
 	// Eject the pilot.
