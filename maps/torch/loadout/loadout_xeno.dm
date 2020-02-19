@@ -18,9 +18,11 @@
 
 /datum/gear/head/skrell_helmet
 	allowed_branches = TACTICOOL_BRANCHES
+	whitelisted = list(SPECIES_UNATHI)
 	
 /datum/gear/uniform/skrell_bodysuit
 	allowed_branches = TACTICOOL_BRANCHES
+	whitelisted = list(SPECIES_UNATHI)
 
 /datum/gear/uniform/harness
 	allowed_branches = null
