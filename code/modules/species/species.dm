@@ -401,7 +401,13 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 		if(FEMALE)
 			t_him = "her"
 
-	H.visible_message("<span class='notice'>[H] hugs [target] to make [t_him] feel better!</span>", \
+	if(H.zone_sel.selecting == "head")
+		H.visible_message("<span class='notice'>[H] pats [target] on the head to make [t_him] feel better!</span>", \
+					"<span class='notice'>You pat [target] on the head to make [t_him] feel better!</span>")
+	else if(H.zone_sel.selecting == "r_hand" || H.zone_sel.selecting == "l_hand")
+		H.visible_message("<span class='notice'>[H] shakes [target]'s hand.</span>", \
+					"<span class='notice'>You shake [target]'s hand.</span>")
+	else H.visible_message("<span class='notice'>[H] hugs [target] to make [t_him] feel better!</span>", \
 					"<span class='notice'>You hug [target] to make [t_him] feel better!</span>")
 
 	if(H != target)
