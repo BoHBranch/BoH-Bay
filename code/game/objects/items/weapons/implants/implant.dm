@@ -45,11 +45,23 @@
 /obj/item/weapon/implant/proc/implanted(var/mob/source)
 	return TRUE
 
-/obj/item/weapon/implant/proc/can_implant(mob/M, mob/user, var/target_zone)
+/obj/item/weapon/implant/proc/can_implant(mob/M, mob/user, var/target_zone, var/obj/item/weapon/implant/I)
 	var/mob/living/carbon/human/H = M
-	if(istype(H) && !H.get_organ(target_zone))
-		to_chat(user, "<span class='warning'>\The [M] is missing that body part.</span>")
+	if(!istype(H))
+		to_chat(user, "<span class='warning'>You cannot implant \the [M]!</span>")
 		return FALSE
+
+	var/obj/item/organ/external/O = H.get_organ(target_zone)
+	if(!istype(O))
+		to_chat(user, "<span class='warning'>\The [H] is missing that organ!</span>")
+		return FALSE
+
+	for(var/obj/implanted_object in O.implants)
+		if(implanted_object.type != I.type)
+			continue
+		to_chat(user, "<span class='warning'>The implanter flashes red, indicating that there is already an implant of that type inside this limb!</span>")
+		return FALSE
+
 	return TRUE
 
 /obj/item/weapon/implant/proc/implant_in_mob(mob/M, var/target_zone)
