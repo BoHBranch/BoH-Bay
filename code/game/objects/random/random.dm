@@ -1088,8 +1088,7 @@ something, make sure it's not in one of the other lists.*/
 obj/random/hostile/spawn_choices()
 	return list(/mob/living/simple_animal/hostile/viscerator,
 				/mob/living/simple_animal/hostile/carp,
-				/mob/living/simple_animal/hostile/carp/pike,
-				/mob/living/simple_animal/hostile/vagrant/swarm
+				/mob/living/simple_animal/hostile/carp/pike
 			)
 
 
@@ -1107,8 +1106,7 @@ obj/random/hostile/spawn_choices()
 		/mob/living/simple_animal/hostile/retaliate/goose = 1,
 		/mob/living/simple_animal/hostile/retaliate/parrot = 1,
 		/mob/living/simple_animal/hostile/rogue_drone = 8,
-		/mob/living/simple_animal/hostile/scarybat = 4,
-		/mob/living/simple_animal/hostile/leech = 1
+		/mob/living/simple_animal/hostile/scarybat = 4
 	)
 
 
