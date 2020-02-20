@@ -26,6 +26,9 @@ Random item spawning
 	icon = 'icons/obj/items.dmi'
 	icon_state = "gift1"
 
+	spawn_attempts = 3
+	spawn_nothing_percentage = 20
+
 /obj/random/maintenance/solgov/spawn_choices()
 	return list(/obj/random/junk = 4,
 				/obj/random/trash = 4,
