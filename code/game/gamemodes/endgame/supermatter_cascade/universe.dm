@@ -60,18 +60,14 @@ var/global/universe_has_ended = 0
 	new /obj/singularity/narsie/large/exit(pick(endgame_exits))
 	spawn(rand(30,60) SECONDS)
 		var/txt = {"
-A galaxy-wide electromagnetic pulse has been detected. All systems across space are heavily damaged and many personnel have died or are dying. We are currently detecting increasing indications that the universe itself is beginning to unravel.
+Attention [station_name()]. Anomalous energy readings have been detected emanating from your vessel; long range scanners seem to be having some trouble getting an exact readout.
 
-[station_name()], the largest source of disturbances has been pinpointed directly to you. We estimate you have five minutes until a bluespace rift opens within your facilities.
-
-There is no known way to stop the formation of the rift, nor any way to escape it. You are entirely alone.
-
-God help your s\[\[###!!!-
+What the hell is going on over th#&$*!@$#*%%----
 
 AUTOMATED ALERT: Link to [command_name()] lost.
 
 "}
-		priority_announcement.Announce(txt,"SUPERMATTER CASCADE DETECTED")
+		priority_announcement.Announce(txt,"Long-Range Scanner Anomaly Alert")
 
 		spawn(5 MINUTES)
 			GLOB.cinematic.station_explosion_cinematic(0,null) // TODO: Custom cinematic
