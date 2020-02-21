@@ -34,4 +34,4 @@ delete-after: True
 # Also, all entries are changed into a single [] after a master changelog generation. Just remove the brackets when you add new entries.
 # Please surround your changes in  double quotes ("), as certain characters otherwise screws up compiling. The quotes will not show up in the changelog.
 changes: 
-  - rscadd: "Nerfed IPCS by giving them a 50% weakness to burn damage, a 10% weakness to brute damage, and a higher chance for their battery to get hit."
+  - rscadd: "Nerfed IPCS by giving them a 50% weakness to burn damage, a 10% weakness to brute damage, and a higher chance for their battery to get hit. Also upped the relative chance for the sensor array to get hit from 5% to 10%."
