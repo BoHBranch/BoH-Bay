@@ -35,7 +35,7 @@
 	taste_sensitivity = TASTE_SENSITIVE
 
 	min_age = 18
-	max_age = 110
+	max_age = 260
 
 	body_temperature = null // cold-blooded, implemented the same way nabbers do it
 
