@@ -1101,7 +1101,6 @@ obj/random/hostile/spawn_choices()
 
 /obj/random/hostile/maint/spawn_choices()
 	return list(
-		/mob/living/simple_animal/hostile/retaliate/malf_drone/hydro = 4,
 		/mob/living/simple_animal/hostile/retaliate/goat = 1,
 		/mob/living/simple_animal/hostile/retaliate/goose = 1,
 		/mob/living/simple_animal/hostile/retaliate/parrot = 1,
