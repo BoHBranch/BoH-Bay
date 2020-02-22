@@ -24,7 +24,7 @@
 	if (last_special > world.time)
 		to_chat(src, "<span class='warning'>You aren't ready to do that! Wait [round(last_special - world.time) / 10] seconds.</span>")
 		return
-	
+
 	if (incapacitated())
 		to_chat(src, "<span class='warning'>You can't do that while you're incapacitated!</span>")
 		return
@@ -34,8 +34,8 @@
 	var/turf/T = get_turf(src)
 	var/obj/effect/effect/water/chempuff/chem = new(T)
 	chem.create_reagents(10)
-	chem.reagents.add_reagent(/datum/reagent/toxin/zombie, 2)
-	chem.set_up(get_step(T, dir), 2, 10)
+	chem.reagents.add_reagent(/datum/reagent/toxin/zombie, 10)
+	chem.set_up(get_step(T, dir), 6, 10)
 	playsound(T, 'sound/hallucinations/wail.ogg', 20, 1)
 
 /mob/living/proc/consume()
@@ -46,7 +46,7 @@
 	if (last_special > world.time)
 		to_chat(src, "<span class='warning'>You aren't ready to do that! Wait [round(last_special - world.time) / 10] seconds.</span>")
 		return
-	
+
 	if (incapacitated())
 		to_chat(src, "<span class='warning'>You can't do that while you're incapacitated!</span>")
 		return

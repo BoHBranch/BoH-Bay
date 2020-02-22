@@ -28,24 +28,15 @@ GLOBAL_DATUM_INIT(ninjas, /datum/antagonist/ninja, new)
 	if(!..())
 		return
 
-	var/objective_list = list(1,2,3,4,5)
+	var/objective_list = list(1,2,3,4)
 	for(var/i=rand(2,4),i>0,i--)
 		switch(pick(objective_list))
-			if(1)//Kill
-				var/datum/objective/assassinate/ninja_objective = new
-				ninja_objective.owner = ninja
-				ninja_objective.target = ninja_objective.find_target()
-				if(ninja_objective.target != "Free Objective")
-					ninja.objectives += ninja_objective
-				else
-					i++
-				objective_list -= 1 // No more than one kill objective
-			if(2)//Steal
+			if(1)//Steal
 				var/datum/objective/steal/ninja_objective = new
 				ninja_objective.owner = ninja
 				ninja_objective.target = ninja_objective.find_target()
 				ninja.objectives += ninja_objective
-			if(3)//Protect
+			if(2)//Protect
 				var/datum/objective/protect/ninja_objective = new
 				ninja_objective.owner = ninja
 				ninja_objective.target = ninja_objective.find_target()
@@ -53,14 +44,14 @@ GLOBAL_DATUM_INIT(ninjas, /datum/antagonist/ninja, new)
 					ninja.objectives += ninja_objective
 				else
 					i++
-					objective_list -= 3
-			if(4)//Download
+					objective_list -= 2
+			if(3)//Download
 				var/datum/objective/download/ninja_objective = new
 				ninja_objective.owner = ninja
 				ninja_objective.gen_amount_goal()
 				ninja.objectives += ninja_objective
-				objective_list -= 4
-			if(5)//Harm
+				objective_list -= 3
+			if(4)//Harm
 				var/datum/objective/harm/ninja_objective = new
 				ninja_objective.owner = ninja
 				ninja_objective.target = ninja_objective.find_target()
@@ -68,7 +59,7 @@ GLOBAL_DATUM_INIT(ninjas, /datum/antagonist/ninja, new)
 					ninja.objectives += ninja_objective
 				else
 					i++
-					objective_list -= 5
+					objective_list -= 4
 
 	var/datum/objective/survive/ninja_objective = new
 	ninja_objective.owner = ninja

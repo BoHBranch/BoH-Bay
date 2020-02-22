@@ -110,6 +110,7 @@
 
 /obj/item/organ/internal/eyes/robot
 	name = "optical sensor"
+	relative_size = 10
 
 /obj/item/organ/internal/eyes/robot/New()
 	..()

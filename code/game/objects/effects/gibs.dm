@@ -2,6 +2,8 @@
 	new gibber_type(location,MobDNA,fleshcolor,bloodcolor)
 
 /obj/effect/gibspawner
+	icon = 'icons/mob/screen1.dmi'
+	icon_state = "x3"
 	var/sparks = 0 //whether sparks spread on Gib()
 	var/list/gibtypes = list()
 	var/list/gibamounts = list()

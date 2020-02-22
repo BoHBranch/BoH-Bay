@@ -6,7 +6,7 @@
 /datum/gear/head/beret
 	display_name = "beret, colour select"
 	path = /obj/item/clothing/head/beret/plaincolor
-	flags = GEAR_HAS_COLOR_SELECTION
+	flags = GEAR_HAS_COLOR_SELECTION | GEAR_HAS_CUSTOM_SELECTION
 	description = "A simple, solid color beret. This one has no emblems or insignia on it."
 
 /datum/gear/head/bandana
@@ -35,6 +35,7 @@
 /datum/gear/head/cap
 	display_name = "cap selection"
 	path = /obj/item/clothing/head
+	flags = GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/head/cap/New()
 	..()
@@ -116,7 +117,7 @@
 /datum/gear/head/hijab
 	display_name = "hijab, colour select"
 	path = /obj/item/clothing/head/hijab
-	flags = GEAR_HAS_COLOR_SELECTION
+	flags = GEAR_HAS_COLOR_SELECTION | GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/head/kippa
 	display_name = "kippa, colour select"
@@ -167,3 +168,4 @@
 /datum/gear/tactical/balaclava
 	display_name = "balaclava"
 	path = /obj/item/clothing/mask/balaclava
+	slot = slot_wear_mask

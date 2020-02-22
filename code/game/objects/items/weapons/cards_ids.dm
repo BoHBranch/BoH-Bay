@@ -105,7 +105,7 @@
 	icon_state = "emag"
 	item_state = "card-id"
 	origin_tech = list(TECH_MAGNET = 2, TECH_ESOTERIC = 2)
-	var/uses = 10
+	var/uses = 15
 
 	var/static/list/card_choices = list(
 							/obj/item/weapon/card/emag,

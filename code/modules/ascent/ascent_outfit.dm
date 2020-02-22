@@ -8,7 +8,7 @@
 	pda_type = null
 	pda_slot = 0
 	flags =    0
-	
+
 /decl/hierarchy/outfit/job/ascent/attendant
 	name = "Ascent - Attendant"
 	back = /obj/item/weapon/rig/mantid
@@ -16,6 +16,18 @@
 /decl/hierarchy/outfit/job/ascent/tech
 	name = "Ascent - Technician"
 	suit = /obj/item/clothing/suit/storage/ascent
+
+//monarchs
+/decl/hierarchy/outfit/job/monarch
+	name = "Ascent - Monarch"
+	mask =     /obj/item/clothing/mask/gas/ascent/monarch
+	uniform =  /obj/item/clothing/under/ascent
+	suit =     /obj/item/clothing/suit/storage/ascent
+	id_type =  /obj/item/weapon/card/id/ascent
+	l_ear =    null
+	pda_type = null
+	pda_slot = 0
+	flags =    0
 
 /obj/item/clothing/mask/gas/ascent
 	name = "mantid facemask"
@@ -28,6 +40,7 @@
 		SPECIES_MANTID_GYNE =  'icons/mob/species/mantid/onmob_mask_gyne.dmi',
 		SPECIES_MANTID_ALATE = 'icons/mob/species/mantid/onmob_mask_alate.dmi'
 	)
+	body_parts_covered = EYES //to get much of the same effect as the vox mask.
 	species_restricted = list(SPECIES_MANTID_ALATE, SPECIES_MANTID_GYNE)
 	filtered_gases = list(GAS_PHORON,GAS_N2O,GAS_CHLORINE,GAS_AMMONIA,GAS_CO,GAS_METHANE)
 	flags_inv = 0
@@ -76,9 +89,9 @@
 	. = ..()
 	for(var/tool in list(
 		/obj/item/weapon/gun/energy/particle/small,
-		/obj/item/device/multitool/mantid, 
-		/obj/item/clustertool, 
-		/obj/item/clustertool, 
+		/obj/item/device/multitool/mantid,
+		/obj/item/clustertool,
+		/obj/item/clustertool,
 		/obj/item/weapon/weldingtool/electric/mantid,
 		/obj/item/stack/medical/resin
 	))

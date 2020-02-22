@@ -91,6 +91,8 @@
 	if(byond_version < RECOMMENDED_VERSION)
 		world.log << "Your server's byond version does not meet the recommended requirements for this server. Please update BYOND"
 
+	world.TgsNew()
+	
 	callHook("startup")
 	//Emergency Fix
 	load_mods()
@@ -111,7 +113,14 @@ var/world_topic_spam_protect_time = world.timeofday
 
 /world/Topic(T, addr, master, key)
 	diary << "TOPIC: \"[T]\", from:[addr], master:[master], key:[key][log_end]"
+	
+	// TGS topic hook. Returns if successful, expects old-style serialization.
+	var/tgs_topic_return = TgsTopic(T)
 
+	if (tgs_topic_return)
+		log_debug("API - TGS3 Request.")
+		return tgs_topic_return
+	
 	if (T == "ping")
 		var/x = 1
 		for (var/client/C)
@@ -456,11 +465,27 @@ var/world_topic_spam_protect_time = world.timeofday
 		return GLOB.prometheus_metrics.collect()
 
 
-/world/Reboot(var/reason)
+/world/Reboot(var/reason, hard_reset = FALSE)
 	/*spawn(0)
 		sound_to(world, sound(pick('sound/AI/newroundsexy.ogg','sound/misc/apcdestroyed.ogg','sound/misc/bangindonk.ogg')))// random end sounds!! - LastyBatsy
 
 		*/
+
+	if (!hard_reset && world.TgsAvailable())
+		switch (config.rounds_until_hard_restart)
+			if (-1)
+				hard_reset = FALSE
+			if (0)
+				hard_reset = TRUE
+			else
+				if (SSpersistent_configuration.rounds_since_hard_restart >= config.rounds_until_hard_restart)
+					hard_reset = TRUE
+					SSpersistent_configuration.rounds_since_hard_restart = 0
+				else
+					hard_reset = FALSE
+					SSpersistent_configuration.rounds_since_hard_restart++
+	else if (!world.TgsAvailable() && hard_reset)
+		hard_reset = FALSE
 
 	Master.Shutdown()
 
@@ -472,6 +497,12 @@ var/world_topic_spam_protect_time = world.timeofday
 		text2file("foo", "reboot_called")
 		to_world("<span class=danger>World reboot waiting for external scripts. Please be patient.</span>")
 		return
+
+	world.TgsReboot()
+
+	if (hard_reset)
+		log_misc("World hard rebooted at [time_stamp()].")
+		world.TgsEndProcess()
 
 	..(reason)
 

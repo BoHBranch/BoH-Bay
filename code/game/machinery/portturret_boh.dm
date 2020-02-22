@@ -44,6 +44,9 @@
 	damage = 25
 	armor_penetration = 30
 	damage_type = BURN
+	hitchance_mod = 100 //this and dispersion likely isn't needed, but, whatever
+	dispersion = 0
+	distance_falloff = 0
 
 /////////
 // Area
@@ -55,5 +58,6 @@
 	base_turf = /turf/simulated/floor/reinforced/airless
 	requires_power = 1
 	dynamic_lighting = 1
+	req_access = list(access_brig)
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
