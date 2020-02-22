@@ -42,9 +42,10 @@ var/next_station_date_change = 1 DAY
 	return DS2TICKS( (GLOB.midnight_rollovers * (1 DAY)) + world.timeofday)
 
 #define duration2stationtime(time) time2text(station_time_in_ticks + time, "hh:mm")
-#define worldtime2stationtime(time) time2text(roundstart_hour HOURS + time, "hh:mm")
-#define round_duration_in_ticks (round_start_time ? () get_real_timeofday() - round_start_time : 0)
-#define station_time_in_ticks (roundstart_hour HOURS + round_duration_in_ticks)
+#define worldtime2stationtime(time) time2text( (roundstart_hour HOURS) + time, "hh:mm")
+#define round_duration_in_ticks (round_start_time ? get_real_timeofday() - round_start_time : 0)
+#define round_duration_in_ticks_lag (round_start_time ? world.time - round_start_time : 0)
+#define station_time_in_ticks ( (roundstart_hour HOURS) + round_duration_in_ticks_lag)
 
 /proc/stationtime2text()
 	return time2text(station_time_in_ticks, "hh:mm")
@@ -80,7 +81,7 @@ var/last_round_duration = 0
 var/round_start_time = 0
 
 /hook/roundstart/proc/start_timer()
-	round_start_time = world.time
+	round_start_time = get_real_timeofday()
 	return 1
 
 /proc/roundduration2text()
