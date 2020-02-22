@@ -1,6 +1,6 @@
 //This file was auto-corrected by findeclaration.exe on 25.5.2012 20:42:32
 
-proc/Intoxicated(phrase)
+proc/Intoxicated(phrase,var/strength=50) //Strength is 0 to 100
 	phrase = html_decode(phrase)
 	var/leng=lentext(phrase)
 	var/counter=lentext(phrase)
@@ -13,23 +13,21 @@ proc/Intoxicated(phrase)
 			if(lowertext(newletter)=="s")	newletter="ch"
 			if(lowertext(newletter)=="a")	newletter="ah"
 			if(lowertext(newletter)=="c")	newletter="k"
-		switch(rand(1,7))
-			if(1,3,5,8)	newletter="[lowertext(newletter)]"
-			if(2,4,6,15)	newletter="[uppertext(newletter)]"
-			if(7)	newletter+="'"
-			//if(9,10)	newletter="<b>[newletter]</b>"
-			//if(11,12)	newletter="<big>[newletter]</big>"
-			//if(13)	newletter="<small>[newletter]</small>"
+		if(prob(strength))
+			switch(rand(1,7))
+				if(1,3,5,8) newletter="[lowertext(newletter)]"
+				if(2,4,6,15) newletter="[uppertext(newletter)]"
+				if(7) newletter+="'"
 		newphrase+="[newletter]";counter-=1
 	return newphrase
 
-proc/NewStutter(phrase,stunned)
+proc/NewStutter(phrase,stunned,var/strength=50)
 	phrase = html_decode(phrase)
 
 	var/list/split_phrase = splittext(phrase," ") //Split it up into words.
 
 	var/list/unstuttered_words = split_phrase.Copy()
-	var/i = rand(1,3)
+	var/i = rand(1,round(strength/20))
 	if(stunned) i = split_phrase.len
 	for(,i > 0,i--) //Pick a few words to stutter on.
 
