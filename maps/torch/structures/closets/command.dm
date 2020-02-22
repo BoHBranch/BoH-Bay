@@ -93,6 +93,7 @@
 		/obj/item/device/radio/headset/sea,
 		/obj/item/device/radio/headset/sea/alt,
 		/obj/item/weapon/storage/belt/general,
+		/obj/item/weapon/storage/belt/holster,
 		/obj/item/weapon/melee/telebaton,
 		/obj/item/device/flash,
 		/obj/item/device/megaphone,
