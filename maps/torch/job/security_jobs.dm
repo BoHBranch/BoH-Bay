@@ -126,3 +126,89 @@
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
+
+/////////
+// Triage Man
+/////////
+/datum/job/triageman
+	title = "Security Corpsman"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Chief of Security"
+	economic_power = 2
+	minimal_player_age = 0
+	minimum_character_age = list(SPECIES_HUMAN = 18)
+	ideal_character_age = 29
+	selection_color = "#601c1c"
+	alt_titles = list()
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
+	allowed_branches = list(
+		/datum/mil_branch/fleet,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/maa/marine,
+		/datum/mil_branch/private_security
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/fleet/e3,
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6,
+		/datum/mil_rank/marine_corps/e3,
+		/datum/mil_rank/marine_corps/e4,
+		/datum/mil_rank/marine_corps/e5,
+		/datum/mil_rank/marine_corps/e6,
+		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/crew/security/maa/pcrc,
+		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/crew/security/maa/saare
+	)
+	min_skill = list(   SKILL_EVA         = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_BASIC,
+						SKILL_MEDICAL     = SKILL_ADEPT,
+	                    SKILL_ANATOMY     = SKILL_ADEPT,
+						SKILL_HAULING     = SKILL_ADEPT)
+
+	max_skill = list(   SKILL_COMBAT      = SKILL_ADEPT,
+	                    SKILL_WEAPONS     = SKILL_ADEPT,
+	                    SKILL_FORENSICS   = SKILL_ADEPT)
+	skill_points = 18
+
+	access = list(access_security, access_brig, access_maint_tunnels,
+						access_external_airlocks, access_emergency_storage,
+			            access_eva, access_sec_doors, access_solgov_crew, access_petrov, access_petrov_security, access_hangar,
+			            access_medical)
+	minimal_access = list()
+
+	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/suit_sensors)
+
+//closet
+/obj/structure/closet/secure_closet/triagesec
+	name = "triage locker"
+	req_access = list(access_brig)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
+
+/obj/structure/closet/secure_closet/triagesec/WillContain()
+	return list(
+		/obj/item/clothing/suit/armor/pcarrier/medium/security,
+		/obj/item/clothing/head/helmet/solgov/security,
+		/obj/item/device/radio/headset/headset_sec,
+		/obj/item/device/radio/headset/headset_sec/alt,
+		/obj/item/weapon/storage/belt/holster/security,
+		/obj/item/device/flash,
+		/obj/item/weapon/reagent_containers/spray/pepper,
+		/obj/item/device/hailer,
+		/obj/item/clothing/accessory/storage/black_vest,
+		/obj/item/gunboxsmall,
+		/obj/item/device/megaphone,
+		/obj/item/clothing/gloves/thick,
+		/obj/item/clothing/gloves/thick/duty/solgov/sec,
+		/obj/item/device/flashlight/maglight,
+		/obj/item/weapon/storage/belt/security,
+		/obj/item/weapon/material/knife/folding/swiss/sec,
+		/obj/item/weapon/storage/belt/medical/emt,
+		/obj/item/clothing/mask/gas/half,
+		/obj/item/weapon/storage/box/autoinjectors,
+		/obj/item/device/scanner/health,
+		/obj/item/clothing/glasses/hud/health,
+		/obj/item/weapon/storage/firstaid/adv,
+		/obj/item/clothing/accessory/storage/holster/waist
+	)
