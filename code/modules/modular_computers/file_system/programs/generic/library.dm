@@ -72,10 +72,10 @@ The answer was five and a half years -ZeroBits
 		current_book = null
 		return 1
 	if(href_list["connectscanner"])
-		if(!ui_host())
+		if(!nano_host())
 			return 1
 		for(var/d in GLOB.cardinal)
-			var/obj/machinery/libraryscanner/scn = locate(/obj/machinery/libraryscanner, get_step(ui_host(), d))
+			var/obj/machinery/libraryscanner/scn = locate(/obj/machinery/libraryscanner, get_step(nano_host(), d))
 			if(scn && scn.anchored)
 				scanner = scn
 				return 1
@@ -138,10 +138,10 @@ The answer was five and a half years -ZeroBits
 			return 1
 
 		//PRINT TO BINDER
-		if(!ui_host())
+		if(!nano_host())
 			return 1
 		for(var/d in GLOB.cardinal)
-			var/obj/machinery/bookbinder/bndr = locate(/obj/machinery/bookbinder, get_step(ui_host(), d))
+			var/obj/machinery/bookbinder/bndr = locate(/obj/machinery/bookbinder, get_step(nano_host(), d))
 			if(bndr && bndr.anchored)
 				var/obj/item/weapon/book/B = new(bndr.loc)
 				B.SetName(current_book["title"])
