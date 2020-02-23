@@ -612,6 +612,7 @@
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
+/obj/random/vendor,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "bz" = (
@@ -927,13 +928,11 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/forestarboard)
 "ca" = (
-/obj/machinery/firealarm{
-	dir = 2;
-	pixel_y = 24
-	},
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
+/obj/structure/table/marble,
+/obj/item/glass_jar,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "cb" = (
@@ -1308,15 +1307,6 @@
 /area/hydroponics)
 "cN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "east bump";
-	pixel_x = 24
-	},
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
@@ -1337,11 +1327,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
-	},
-/obj/machinery/alarm{
-	dir = 4;
-	pixel_x = -23;
-	pixel_y = 0
 	},
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
@@ -1690,6 +1675,7 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
+/obj/random/mre/dessert/vegan,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "dv" = (
@@ -1751,6 +1737,7 @@
 /obj/structure/window/reinforced/tinted/frosted{
 	dir = 4
 	},
+/obj/random/smokes,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "dB" = (
@@ -2658,11 +2645,6 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
 	},
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
@@ -15149,6 +15131,7 @@
 /obj/structure/window/reinforced/tinted/frosted{
 	dir = 4
 	},
+/obj/random/cash,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "BD" = (
@@ -15157,6 +15140,14 @@
 	},
 /obj/structure/table/marble,
 /obj/item/weapon/reagent_containers/food/condiment/vinegar,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
+"BE" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/structure/table/marble,
+/obj/item/weapon/tray,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "BF" = (
@@ -15189,6 +15180,14 @@
 /obj/item/weapon/material/hatchet,
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
+"BJ" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/structure/table/marble,
+/obj/item/weapon/wirecutters/clippers,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "BK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -15201,6 +15200,14 @@
 	},
 /turf/simulated/floor/tiled,
 /area/storage/tools)
+"BM" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/structure/table/marble,
+/obj/random/drinkbottle,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "BO" = (
 /obj/effect/floor_decal/spline/fancy/black{
 	icon_state = "spline_fancy";
@@ -38428,7 +38435,7 @@ cL
 cO
 iX
 fv
-du
+BE
 fp
 AX
 wC
@@ -38629,7 +38636,7 @@ bx
 fp
 cP
 ln
-du
+ca
 fp
 fp
 Bx
@@ -38831,7 +38838,7 @@ by
 fp
 cP
 mF
-du
+BJ
 fp
 ww
 fy
@@ -39029,12 +39036,12 @@ aa
 aj
 aj
 aj
-ca
+fp
 fp
 dA
 BC
-du
-du
+BM
+BM
 fp
 iW
 ii
