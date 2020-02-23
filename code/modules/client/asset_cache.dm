@@ -225,13 +225,22 @@ You can set verify to TRUE if you want send() to sleep until the client has the 
 	send_asset_list(client, common, TRUE)
 
 /*
+	VueUI Assets
+*/
+/datum/asset/simple/vueui
+	assets = list(
+		"vueui.js" = 'vueui/dist/app.js',
+		"vueui.css" = 'vueui/dist/app.css'
+	)
+
+/*
 	Asset cache
 */
 /decl/asset_cache
 	var/list/cache = list()
 
 /decl/asset_cache/proc/load()
-	for(var/type in typesof(/datum/asset) - list(/datum/asset, /datum/asset/simple))
+	for(var/type in subtypesof(/datum/asset) - /datum/asset/simple)
 		var/datum/asset/A = new type()
 		A.register()
 
