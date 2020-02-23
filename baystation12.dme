@@ -2593,7 +2593,6 @@
 #include "code\modules\overmap\exoplanets\theme.dm"
 #include "code\modules\overmap\exoplanets\turfs.dm"
 #include "code\modules\overmap\exoplanets\planet_types\barren.dm"
-#include "code\modules\overmap\exoplanets\planet_types\chlorine.dm"
 #include "code\modules\overmap\exoplanets\planet_types\desert.dm"
 #include "code\modules\overmap\exoplanets\planet_types\garbage.dm"
 #include "code\modules\overmap\exoplanets\planet_types\grass.dm"
