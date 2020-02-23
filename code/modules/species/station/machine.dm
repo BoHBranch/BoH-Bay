@@ -83,6 +83,9 @@
 		TAG_FACTION = FACTION_POSITRONICS
 	)
 
+	brute_mod =      1.1
+	burn_mod =       1.5
+
 /datum/species/machine/handle_death(var/mob/living/carbon/human/H)
 	..()
 	if(istype(H.wear_mask,/obj/item/clothing/mask/monitor))

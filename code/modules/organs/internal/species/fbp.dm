@@ -11,6 +11,11 @@
 	//at 0.8 completely depleted after 60ish minutes of constant walking or 130 minutes of standing still
 	var/servo_cost = 0.8
 
+	min_broken_damage = 5
+	max_damage = 30
+
+	relative_size = 70
+
 /obj/item/organ/internal/cell/New()
 	robotize()
 	if(ispath(cell))
@@ -39,7 +44,7 @@
 		return 0
 	return cell && cell.use(amount)
 
-/obj/item/organ/internal/cell/proc/get_power_drain()	
+/obj/item/organ/internal/cell/proc/get_power_drain()
 	var/damage_factor = 1 + 10 * damage/max_damage
 	return servo_cost * damage_factor
 
