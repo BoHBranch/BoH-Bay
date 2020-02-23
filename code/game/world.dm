@@ -76,7 +76,7 @@
 	var/date_string = time2text(world.realtime, "YYYY/MM/DD")
 	href_logfile = file("data/logs/[date_string] hrefs.htm")
 	diary = file("data/logs/[date_string].log")
-	diary << "[log_end]\n[log_end]\nStarting up. (ID: [game_id]) [time2text(world.timeofday, "hh:mm.ss")][log_end]\n---------------------[log_end]"
+	game_log("STARTUP","[log_end]\n[log_end]\nStarting up. (ID: [game_id]) [time2text(world.timeofday, "hh:mm.ss")][log_end]\n---------------------[log_end]")
 	changelog_hash = md5('html/changelog.html')					//used for telling if the changelog has changed recently
 
 	if(config && config.server_name != null && config.server_suffix && world.port > 0)
@@ -92,7 +92,7 @@
 		world.log << "Your server's byond version does not meet the recommended requirements for this server. Please update BYOND"
 
 	world.TgsNew()
-	
+
 	callHook("startup")
 	//Emergency Fix
 	load_mods()
@@ -112,15 +112,16 @@ var/world_topic_spam_protect_ip = "0.0.0.0"
 var/world_topic_spam_protect_time = world.timeofday
 
 /world/Topic(T, addr, master, key)
-	diary << "TOPIC: \"[T]\", from:[addr], master:[master], key:[key][log_end]"
-	
+
+	game_log("TOPIC", "\"[T]\", from:[addr], master:[master], key:[key][log_end]")
+
 	// TGS topic hook. Returns if successful, expects old-style serialization.
 	var/tgs_topic_return = TgsTopic(T)
 
 	if (tgs_topic_return)
 		log_debug("API - TGS3 Request.")
 		return tgs_topic_return
-	
+
 	if (T == "ping")
 		var/x = 1
 		for (var/client/C)
