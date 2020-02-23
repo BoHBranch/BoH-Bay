@@ -32,6 +32,11 @@
 		to_chat(usr, "<span class='notice'>The solution dissolves the ink on the book.</span>")
 	return
 
+/datum/reagent/acetone/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.toxins += removed*1
+	H.weedlevel -= removed*2
+	return
+
 /datum/reagent/aluminium
 	name = "Aluminium"
 	taste_description = "metal"
@@ -61,6 +66,11 @@
 /datum/reagent/ammonia/overdose(var/mob/living/carbon/M, var/alien)
 	if(alien != IS_VOX || volume > overdose*6)
 		..()
+
+/datum/reagent/ammonia/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.nutrilevel += removed*0.1
+	H.pestlevel -= removed*0.05
+	return
 
 /datum/reagent/carbon
 	name = "Carbon"
@@ -188,6 +198,13 @@
 		to_chat(usr, "<span class='notice'>The solution dissolves the ink on the book.</span>")
 	return
 
+/datum/reagent/ethanol/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.nutrilevel += removed*strength*0.1
+	H.toxins += removed*strength*0.1
+	H.weedlevel -= removed*1
+	H.pestlevel -= removed*strength*0.25
+	return
+
 /datum/reagent/hydrazine
 	name = "Hydrazine"
 	description = "A toxic, colorless, flammable liquid with a strong ammonia-like odor, in hydrate form."
@@ -208,6 +225,12 @@
 /datum/reagent/hydrazine/touch_turf(var/turf/T)
 	new /obj/effect/decal/cleanable/liquid_fuel(T, volume)
 	remove_self(volume)
+	return
+
+/datum/reagent/hydrazine/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.toxins += removed*2.5
+	H.weedlevel -= removed*2.5
+	H.weedlevel -= removed*1
 	return
 
 /datum/reagent/iron
@@ -261,6 +284,10 @@
 	color = "#832828"
 	value = DISPENSER_REAGENT_VALUE
 
+/datum/reagent/phosphorus/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.mutation_mod += removed*0.2
+	return
+
 /datum/reagent/potassium
 	name = "Potassium"
 	description = "A soft, low-melting solid that can easily be cut with a knife. Reacts violently with water."
@@ -293,6 +320,14 @@
 			if(!glow)
 				new /obj/effect/decal/cleanable/greenglow(T)
 			return
+
+/datum/reagent/radium/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.health *= rand(100- removed*10,100 + removed*5)*0.01
+	H.toxins += removed*2
+	H.yield_mod *= rand(100 - removed*10,100)*0.01
+	H.mutation_mod += removed*0.2
+	H.mutation_level += removed*8
+	return ..()
 
 /datum/reagent/acid
 	name = "Sulphuric acid"
@@ -426,6 +461,11 @@
 	if(alien == IS_UNATHI)
 		var/datum/species/unathi/S = M.species
 		S.handle_sugar(M,src)
+
+/datum/reagent/sugar/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.nutrilevel += removed*0.1
+	H.pestlevel += removed*0.5
+	return
 
 /datum/reagent/sulfur
 	name = "Sulfur"

@@ -206,6 +206,7 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 #else
 	world.sleep_offline = TRUE
 #endif
+	world.TgsInitializationComplete()
 	world.fps = config.fps
 	var/initialized_tod = REALTIMEOFDAY
 

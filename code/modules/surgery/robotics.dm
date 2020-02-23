@@ -180,7 +180,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	allowed_tools = list(
 		/obj/item/weapon/weldingtool = 100,
 		/obj/item/weapon/gun/energy/plasmacutter = 50,
-		/obj/item/psychic_power/psiblade/master = 100
+		/obj/item/psychic_power/psiblade/master = 100,
+		/obj/item/weapon/wrench = 35
 	)
 
 	min_duration = 50
@@ -208,6 +209,12 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 			var/obj/item/weapon/gun/energy/plasmacutter/cutter = tool
 			if(!cutter.slice(user))
 				return FALSE
+		if(istype(tool, /obj/item/weapon/wrench))
+			min_duration = 100
+			max_duration = 120
+		else
+			min_duration = 50
+			max_duration = 60
 		return TRUE
 	return FALSE
 
@@ -278,8 +285,10 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 /decl/surgery_step/robotics/repair_burn
 	name = "Repair burns on prosthetic"
 	allowed_tools = list(
-		/obj/item/stack/cable_coil = 100
+		/obj/item/stack/cable_coil = 100,
+		/obj/item/weapon/wirecutters = 35
 	)
+
 	min_duration = 50
 	max_duration = 60
 
@@ -290,21 +299,28 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		. += 10
 
 /decl/surgery_step/robotics/repair_burn/pre_surgery_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
-	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	if(affected)
-		if(!affected.burn_dam)
-			to_chat(user, SPAN_WARNING("There is no damage to repair."))
-			return FALSE
-		if(BP_IS_BRITTLE(affected))
-			to_chat(user, SPAN_WARNING("\The [target]'s [affected.name] is too brittle for this kind of repair."))
-		else
-			var/obj/item/stack/cable_coil/C = tool
-			if(istype(C))
-				if(!C.use(3))
-					to_chat(user, SPAN_WARNING("You need three or more cable pieces to repair this damage."))
-				else
-					return TRUE
-	return FALSE
+    var/obj/item/organ/external/affected = target.get_organ(target_zone)
+    if(affected)
+        if(!affected.burn_dam)
+            to_chat(user, SPAN_WARNING("There is no damage to repair."))
+            return FALSE
+        if(BP_IS_BRITTLE(affected))
+            to_chat(user, SPAN_WARNING("\The [target]'s [affected.name] is too brittle for this kind of repair."))
+        if(istype(tool, /obj/item/stack/cable_coil))
+            var/obj/item/stack/cable_coil/C = tool
+            if(istype(C))
+                if(!C.use(3))
+                    to_chat(user, SPAN_WARNING("You need three or more cable pieces to repair this damage."))
+                else
+                    return TRUE
+        if(istype(tool, /obj/item/weapon/wirecutters))
+            min_duration = 100
+            max_duration = 120
+        if(istype(tool, /obj/item/stack/cable_coil))
+            min_duration = 50
+            max_duration = 60
+        return TRUE
+    return FALSE
 
 /decl/surgery_step/robotics/repair_burn/assess_bodypart(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = ..()
@@ -346,9 +362,9 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 
 /decl/surgery_step/robotics/fix_organ_robotic/get_skill_reqs(mob/living/user, mob/living/carbon/human/target, obj/item/tool)
 	if(target.isSynthetic())
-		return SURGERY_SKILLS_ROBOTIC 
+		return SURGERY_SKILLS_ROBOTIC
 	else
-		return SURGERY_SKILLS_ROBOTIC_ON_MEAT 
+		return SURGERY_SKILLS_ROBOTIC_ON_MEAT
 
 /decl/surgery_step/robotics/fix_organ_robotic/assess_bodypart(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = ..()

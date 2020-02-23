@@ -97,30 +97,40 @@ proc/get_radio_key_from_channel(var/channel)
 //Returns 1 if a speech problem was applied, 0 otherwise
 /mob/living/proc/handle_speech_problems(var/list/message_data)
 	var/message = message_data[1]
-	var/verb = message_data[2]
+	var/initial_verb = message_data[2]
 
-	. = 0
+	. = FALSE
 
-	if((MUTATION_HULK in mutations) && health >= 25 && length(message))
-		message = "[uppertext(message)]!!!"
-		verb = pick("yells","roars","hollers")
-		message_data[3] = 0
-		. = 1
-	else if(slurring)
-		message = slur(message)
-		verb = pick("slobbers","slurs")
-		. = 1
-	else if(stuttering)
-		message = NewStutter(message)
-		verb = pick("stammers","stutters")
-		. = 1
-	else if(has_chem_effect(CE_SQUEAKY, 1))
-		message = "<font face = 'Comic Sans MS'>[message]</font>"
-		verb = "squeaks"
-		. = 1
+	var/list/final_verbs = list()
+
+	if(length(message))
+		if((MUTATION_HULK in mutations) && health >= 25)
+			message = "<b>[uppertext(message)]!!!</b>"
+			final_verbs += pick("yells","roars","hollers")
+			message_data[3] = 0
+			. = TRUE
+		if(stuttering)
+			message = NewStutter(message, FALSE, 10 + stuttering)
+			final_verbs += pick("stammers","stutters")
+			. = TRUE
+		if(slurring)
+			if(confused) //Slurring + Confused might as well be drunk af
+				message = Intoxicated(message,10 + slurring)
+				final_verbs += pick("garbles","jumbles","fumbles")
+				. = TRUE
+			else
+				message = slur(message,10 + slurring)
+				final_verbs += pick("slobbers","slurs")
+				. = TRUE
+		if(has_chem_effect(CE_SQUEAKY, 1))
+			message = "<font face = 'Comic Sans MS'>[message]</font>"
+			final_verbs += "squeaks"
+			. = TRUE
 
 	message_data[1] = message
-	message_data[2] = verb
+	message_data[2] = english_list(final_verbs,initial_verb)
+
+	return .
 
 /mob/living/proc/handle_message_mode(message_mode, message, verb, speaking, used_radios, alt_name)
 	if(message_mode == "intercom")
