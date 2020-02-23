@@ -512,6 +512,7 @@
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 29
+	selection_color = "#601c1c"
 	alt_titles = list()
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
 	allowed_branches = list(
@@ -559,7 +560,7 @@
 	req_access = list(access_triagesec)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
 
-/obj/structure/closet/secure_closet/medical_torch/WillContain()
+/obj/structure/closet/secure_closet/triagesec/WillContain()
 	return list(
 		/obj/item/clothing/suit/armor/pcarrier/medium/security,
 		/obj/item/clothing/head/helmet/solgov/security,
@@ -583,6 +584,7 @@
 		/obj/item/device/scanner/health,
 		/obj/item/clothing/glasses/hud/health,
 		/obj/item/weapon/storage/firstaid/adv,
+		/obj/item/clothing/accessory/storage/holster/waist,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/medic, /obj/item/weapon/storage/backpack/satchel/med)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/med, /obj/item/weapon/storage/backpack/messenger/med))
 	)
