@@ -919,6 +919,11 @@
 	sound_env = LARGE_SOFTFLOOR
 	req_access = list(access_bar)
 
+// Crew areas
+/area/crew_quarters/bar/storage
+	name = "\improper Service Storage"
+	req_access = list(access_bar, access_kitchen)
+
 /area/crew_quarters/cryolocker
 	name = "\improper Cryogenic Storage Wardrobe"
 	icon_state = "locker"
@@ -950,7 +955,7 @@
 
 /area/crew_quarters/galleybackroom
 	name = "\improper Galley Cold Storage"
-	icon_state = "kitchen"
+	icon_state = "locker"
 	req_access = list(access_kitchen)
 
 /area/crew_quarters/commissary
