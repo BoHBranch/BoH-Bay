@@ -149,6 +149,7 @@
 	QDEL_NULL(legs)
 	QDEL_NULL(head)
 	QDEL_NULL(body)
+	QDEL_NULL(radio)
 
 	for(var/hardpoint in hardpoint_hud_elements)
 		var/obj/screen/movable/exosuit/hardpoint/H = hardpoint_hud_elements[hardpoint]
