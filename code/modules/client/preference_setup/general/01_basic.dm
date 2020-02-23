@@ -41,7 +41,7 @@ datum/preferences
 			pref.real_name = check.sanitize_name(pref.real_name, pref.species)
 			if(!pref.real_name)
 				pref.real_name = "Urist Mc[capitalize(pick(GLOB.last_names))]"
-				if(S == all_species[SPECIES_HUMAN]
+				if(S == all_species[SPECIES_HUMAN])
 					pref.f_style = "Dwarf Beard"
 					pref.r_facial = 172
 					pref.g_facial = 86
