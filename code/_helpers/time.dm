@@ -43,10 +43,10 @@ var/next_station_date_change = 1 DAY
 #define round_duration_in_ticks (round_start_time ? world.time - round_start_time : 0)
 #define station_time_in_ticks (roundstart_hour HOURS + round_duration_in_ticks)
 
-/proc/stationtime2text()
+/proc/stationtime2text() //Gets the time
 	return time2text(station_time_in_ticks, "hh:mm")
 
-/proc/stationdate2text()
+/proc/stationdate2text() //Gets the date
 	var/update_time = FALSE
 	if(station_time_in_ticks > next_station_date_change)
 		next_station_date_change += 1 DAY
@@ -72,31 +72,36 @@ proc/isDay(var/month, var/day)
 		//else
 			//return 1
 
-var/next_duration_update = 0
-var/last_round_duration = 0
-var/round_start_time = 0
+/proc/get_clock_time(var/seconds) //Ported from Burgerstation
 
-/hook/roundstart/proc/start_timer()
-	round_start_time = world.time
-	return 1
+	var/minute_value = Floor(seconds/60)
+	var/second_value = seconds - minute_value*60
+
+	var/minute_text = "[minute_value]"
+	if(minute_value < 10)
+		minute_text = "0[minute_text]"
+
+	var/second_text = "[second_value]"
+	if(second_value < 10)
+		second_text = "0[second_value]"
+
+	return "[minute_text]:[second_text]"
+
+var/next_duration_update = 0
+var/round_start_time = 0
+var/round_start_time_real = 0
+
+/proc/get_real_round_duration() //RETURNS DECISECONDS
+	return ((GLOB.midnight_rollovers DAYS) + world.timeofday) - round_start_time_real
 
 /proc/roundduration2text()
-	if(!round_start_time)
-		return "00:00"
-	if(last_round_duration && world.time < next_duration_update)
-		return last_round_duration
+	return get_clock_time(round(get_real_round_duration()/600))
 
-	var/mills = round_duration_in_ticks // 1/10 of a second, not real milliseconds but whatever
-	//var/secs = ((mills % 36000) % 600) / 10 //Not really needed, but I'll leave it here for refrence.. or something
-	var/mins = round((mills % 36000) / 600)
-	var/hours = round(mills / 36000)
-
-	mins = mins < 10 ? add_zero(mins, 1) : mins
-	hours = hours < 10 ? add_zero(hours, 1) : hours
-
-	last_round_duration = "[hours]:[mins]"
-	next_duration_update = world.time + 1 MINUTES
-	return last_round_duration
+/hook/roundstart/proc/start_timer()
+	round_start_time_real = world.timeofday
+	round_start_time = world.time
+	world.log << "The real round duration is: [get_real_round_duration()]."
+	return 1
 
 /hook/startup/proc/set_roundstart_hour()
 	roundstart_hour = pick(2,7,12,17)
