@@ -28,5 +28,5 @@
 	var/pans = Clamp(LAZYLEN(cooking_objs), 1, 4)
 	if(!pans)
 		return
-	overlays += "pan[pans]" // 1 to 4
+	overlays += image(icon, src, "pan[pans]") // 1 to 4
 	..()

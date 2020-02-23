@@ -138,7 +138,7 @@
 		if (!O.reagents)
 			return 1
 		for (var/datum/reagent/R in O.reagents.reagent_list)
-			if (!(R.id in acceptable_reagents))
+			if (!(R.type in acceptable_reagents))
 				to_chat(user, SPAN_WARNING("Your [O] contains components unsuitable for cookery."))
 				return 1
 		return // Note to the future: reagents are added after this in the container's afterattack().
@@ -478,8 +478,8 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 		var/free_space = RC.reagents.get_free_space()
 		if(free_space > R.volume)
 			to_chat(user, SPAN_NOTICE("You empty [R.volume] units of [R.name] into your [RC.name]."))
-			RC.reagents.add_reagent(R.id, R.volume)
-			reagents.remove_reagent(R.id, R.volume)
+			RC.reagents.add_reagent(R.type, R.volume)
+			reagents.remove_reagent(R.type, R.volume)
 		else if(free_space <= 0)
 			to_chat(user, SPAN_WARNING("[RC.name] is full!"))
 		else

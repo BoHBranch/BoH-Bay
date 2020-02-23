@@ -1597,6 +1597,18 @@
 	result_amount = 6
 	mix_message = "The broth of the noodles takes on a hellish red gleam."
 
+/datum/chemical_reaction/butter
+	name = "Butter"
+	result = null
+	required_reagents = list(/datum/reagent/drink/milk/cream = 20, /datum/reagent/sodiumchloride = 1)
+	result_amount = 1
+
+/datum/chemical_reaction/butter/on_reaction(var/datum/reagents/holder, var/created_volume)
+	var/location = get_turf(holder.my_atom)
+	for(var/i = 1, i <= created_volume, i++)
+		new /obj/item/reagent_containers/food/snacks/spreads/butter(location)
+	return
+
 /* Alcohol */
 
 /datum/chemical_reaction/goldschlager

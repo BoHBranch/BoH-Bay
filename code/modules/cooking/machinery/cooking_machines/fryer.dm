@@ -85,7 +85,7 @@
 		fry_loop.start()
 	else
 		icon_state = off_icon
-		fry_loop.stop()
+		fry_loop.stop(src)
 	..()
 
 

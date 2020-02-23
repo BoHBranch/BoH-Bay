@@ -43,6 +43,21 @@
 		/obj/item/weapon/stock_parts/power/apc/buildable = 1
 	)
 
+/obj/item/weapon/stock_parts/circuitboard/stove
+	name = T_BOARD("stove")
+	build_path = /obj/machinery/appliance/cooker/stove
+	board_type = "machine"
+	origin_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
+	req_components = list(
+			/obj/item/weapon/stock_parts/capacitor = 3,
+			/obj/item/weapon/stock_parts/scanning_module,
+			/obj/item/weapon/stock_parts/matter_bin = 2)
+	additional_spawn_components = list(
+		/obj/item/weapon/stock_parts/console_screen = 1,
+		/obj/item/weapon/stock_parts/keyboard = 1,
+		/obj/item/weapon/stock_parts/power/apc/buildable = 1
+	)
+
 /obj/item/weapon/stock_parts/circuitboard/oven
 	name = T_BOARD("oven")
 	build_path = /obj/machinery/appliance/cooker/oven
