@@ -822,6 +822,7 @@ var/global/floorIsLava = 0
 	send2adminirc("[key_name(src)]" + long_message)
 	log_and_message_admins(long_message)
 	SSstatistics.add_field_details("admin_verb","THUB") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc
+	SSbabysit.manual_delist = !SSbabysit.manual_delist
 
 /datum/admins/proc/toggletraitorscaling()
 	set category = "Server"
@@ -1020,7 +1021,7 @@ var/global/floorIsLava = 0
 	set desc = "Spawn every possible custom closet. Do not do this on live."
 	set category = "Debug"
 
-	if(!check_rights(R_SPAWN))	
+	if(!check_rights(R_SPAWN))
 		return
 
 	if((input(usr, "Are you sure you want to spawn all these closets?", "So Many Closets") as null|anything in list("No", "Yes")) == "Yes")

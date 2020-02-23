@@ -3,7 +3,8 @@
 	desc = "This item type is used to spawn random objects at round-start."
 	icon = 'icons/misc/mark.dmi'
 	icon_state = "rup"
-	var/spawn_nothing_percentage = 0 // this variable determines the likelyhood that this random object will not spawn anything
+	var/spawn_nothing_percentage = 0 // this variable determines the likelyhood that this random object will not spawn anything for the attempted chance
+	var/spawn_attempts = 1 //How many times should we try to spawn this item?
 
 	var/spawn_method = /obj/random/proc/spawn_item
 
@@ -15,20 +16,25 @@
 
 // creates the random item
 /obj/random/proc/spawn_item()
-	if(prob(spawn_nothing_percentage))
-		return
 
 	if(isnull(loc))
 		return
 
-	var/build_path = pickweight(spawn_choices())
+	var/list/spawned_items = list()
 
-	var/atom/A = new build_path(src.loc)
-	if(pixel_x || pixel_y)
-		A.pixel_x = pixel_x
-		A.pixel_y = pixel_y
+	for(var/i=1,i<=spawn_attempts,i++)
+		if(prob(spawn_nothing_percentage))
+			continue
 
-	return A
+		var/build_path = pickweight(spawn_choices())
+
+		var/atom/A = new build_path(src.loc)
+		if(pixel_x || pixel_y)
+			A.pixel_x = pixel_x
+			A.pixel_y = pixel_y
+		spawned_items += A
+
+	return spawned_items
 
 // Returns an associative list in format path:weight
 /obj/random/proc/spawn_choices()
@@ -923,36 +929,44 @@ something, make sure it's not in one of the other lists.*/
 	icon_state = "gift2"
 
 /obj/random/maintenance/clean/spawn_choices()
-	return list(/obj/random/tech_supply = 100,
-				/obj/random/medical = 40,
-				/obj/random/medical/lite = 80,
-				/obj/random/firstaid = 20,
-				/obj/random/powercell = 50,
-				/obj/random/technology_scanner = 80,
-				/obj/random/bomb_supply = 80,
-				/obj/random/contraband = 1,
-				/obj/random/action_figure = 2,
-				/obj/random/plushie = 2,
-				/obj/random/material = 40,
-				/obj/random/coin = 5,
-				/obj/random/toy = 20,
-				/obj/random/tank = 20,
-				/obj/random/soap = 5,
-				/obj/random/drinkbottle = 5,
-				/obj/random/loot = 1,
-				/obj/random/advdevice = 50,
-				/obj/random/smokes = 30,
-				/obj/random/masks = 10,
-				/obj/random/snack = 60,
-				/obj/random/storage = 30,
-				/obj/random/shoes = 20,
-				/obj/random/gloves = 10,
-				/obj/random/glasses = 20,
-				/obj/random/hat = 10,
-				/obj/random/suit = 20,
-				/obj/random/clothing = 30,
-				/obj/random/accessory = 20,
-				/obj/random/cash = 10)
+	return list(
+		/obj/random/accessory = 20,
+		/obj/random/action_figure = 1, // 2 to 1
+		/obj/random/advdevice = 50,
+		/obj/random/bomb_supply = 80,
+		/obj/random/cash = 10,
+		/obj/random/clothing = 30,
+		/obj/random/coin = 5,
+		/obj/random/contraband = 1,
+		/obj/random/drinkbottle = 5,
+		/obj/random/firstaid = 20,
+		/obj/random/glasses = 10, //20 to 10
+		/obj/random/gloves = 10,
+		/obj/random/shoes = 10, // 20 to 10
+		/obj/random/hardsuit = 1, //Added
+		/obj/random/hat = 5, //10 to 5
+		/obj/random/hostile/maint = 20, //Added
+		/obj/random/illegal = 5, //Added
+		/obj/random/junk = 1, //Added
+		/obj/random/loot = 1,
+		/obj/random/masks = 10,
+		/obj/random/material = 40,
+		/obj/random/medical = 20, //40 to 20.
+		/obj/random/medical/lite = 80,
+		/obj/random/mre = 1, //Added
+		/obj/random/plushie = 1, //2 to 1.
+		/obj/random/shoes = 5, //Added
+		/obj/random/smokes = 20, //30 to 20
+		/obj/random/snack = 30, //60 to 30
+		/obj/random/soap = 5,
+		/obj/random/storage = 30,
+		/obj/random/suit = 20,
+		/obj/random/tank = 20,
+		/obj/random/tech_supply = 100,
+		/obj/random/technology_scanner = 80,
+		/obj/random/toolbox = 30, //Added
+		/obj/random/toy = 10
+	)
 
 /obj/random/loot /*Better loot for away missions and salvage */
 	name = "random loot"
@@ -1074,8 +1088,27 @@ something, make sure it's not in one of the other lists.*/
 obj/random/hostile/spawn_choices()
 	return list(/mob/living/simple_animal/hostile/viscerator,
 				/mob/living/simple_animal/hostile/carp,
-				/mob/living/simple_animal/hostile/carp/pike,
-				/mob/living/simple_animal/hostile/vagrant/swarm)
+				/mob/living/simple_animal/hostile/carp/pike
+			)
+
+
+/obj/random/hostile/maint
+	name = "Random Hostile Maint Mob"
+	desc = "This is a random hostile mob suitable to be found in maintenance."
+	icon = 'icons/mob/amorph.dmi'
+	icon_state = "standing"
+	spawn_nothing_percentage = 0
+
+/obj/random/hostile/maint/spawn_choices()
+	return list(
+		/mob/living/simple_animal/hostile/retaliate/goat = 1,
+		/mob/living/simple_animal/hostile/retaliate/goose = 1,
+		/mob/living/simple_animal/hostile/retaliate/parrot = 1,
+		/mob/living/simple_animal/hostile/rogue_drone = 8,
+		/mob/living/simple_animal/hostile/scarybat = 4
+	)
+
+
 
 /*
 	Selects one spawn point out of a group of points with the same ID and asks it to generate its items
@@ -1380,7 +1413,7 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 				/obj/item/weapon/melee/baton/cattleprod = 6,
 				/obj/item/weapon/arrow = 16,
 				/obj/item/weapon/gun/magnetic = 1,
-				/obj/item/weapon/gun/projectile/pirate/unloaded = 14,
+				/obj/item/weapon/gun/projectile/pirate/unloaded = 7, //Reduced
 				/obj/item/weapon/storage/firstaid/combat = 4,
 				/obj/item/stack/telecrystal = 1,
 				/obj/item/clothing/under/syndicate = 2,
@@ -1398,7 +1431,8 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 				/obj/item/weapon/reagent_containers/pill/three_eye = 1,
 				/obj/item/weapon/storage/lockbox/vials/random = 1,
 				/obj/item/weapon/storage/toolbox/syndicate = 6,
-				/obj/item/weapon/reagent_containers/food/snacks/egg/lizard = 1)
+				/obj/item/weapon/reagent_containers/food/snacks/egg/lizard = 1
+			)
 
 //100% Illegal
 /obj/random/illegaltwo

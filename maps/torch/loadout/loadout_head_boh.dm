@@ -24,3 +24,8 @@
 	path = /obj/item/clothing/head/soft/solgov/fleet
 	cost = 0
 	allowed_branches = NT_BRANCHES
+
+/datum/gear/head/corpsecberet
+	display_name = "corporate security beret"
+	path = /obj/item/clothing/head/beret/guard
+	allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/private_security)

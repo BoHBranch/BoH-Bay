@@ -9658,6 +9658,16 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
+"px" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/bridge)
 "py" = (
 /obj/structure/filingcabinet/chestdrawer{
 	dir = 1
@@ -28726,7 +28736,7 @@ hV
 eP
 jy
 hn
-HC
+px
 hn
 dW
 eP
