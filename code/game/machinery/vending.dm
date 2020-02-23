@@ -1079,8 +1079,8 @@
 	icon_deny = "dinnerware-deny"
 	base_type = /obj/machinery/vending/dinnerware
 	products = list(
-	/obj/item/weapon/reagent_containers/glass/beaker/bowl =2,
-	/obj/item/weapon/tray = 8,
+	/obj/item/weapon/reagent_containers/glass/beaker/bowl = 4,
+	/obj/item/weapon/tray = 12,
 	/obj/item/weapon/material/knife/kitchen = 3,
 	/obj/item/weapon/material/kitchen/rollingpin = 2,
 	/obj/item/weapon/reagent_containers/food/drinks/pitcher = 2,
@@ -1098,7 +1098,14 @@
 	/obj/item/weapon/storage/lunchbox/nymph = 3,
 	/obj/item/weapon/storage/lunchbox/syndicate = 3,
 	/obj/item/weapon/storage/lunchbox/dais = 3,
-	/obj/item/weapon/material/knife/kitchen/cleaver = 1)
+	/obj/item/weapon/material/knife/kitchen/cleaver = 2,
+	/obj/item/weapon/reagent_containers/cooking_container/oven = 5,
+	/obj/item/weapon/reagent_containers/cooking_container/fryer = 4,
+	/obj/item/weapon/reagent_containers/glass/rag = 8,
+	/obj/item/weapon/material/kitchen/utensil/fork = 12,
+	/obj/item/weapon/material/knife/table = 12,
+	/obj/item/weapon/material/kitchen/utensil/spoon = 12
+	)
 
 
 	contraband = list(/obj/item/weapon/material/knife/kitchen/cleaver/bronze = 1)

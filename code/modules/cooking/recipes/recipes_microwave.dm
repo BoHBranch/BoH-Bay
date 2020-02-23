@@ -349,7 +349,7 @@
 		/obj/item/weapon/reagent_containers/food/snacks/rawbacon
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/bacon
-	appliance = MICROWAVE | PAN
+	appliance = MICROWAVE
 
 /datum/recipe/stuffed_meatball
 	items = list(
