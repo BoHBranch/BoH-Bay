@@ -92,6 +92,8 @@ var/global/round_start_time = 0
 var/global/round_start_time_real = 0
 
 /proc/get_real_round_duration() //RETURNS DECISECONDS
+	if(!round_start_time_real)
+		return 0
 	return REALTIMEOFDAY - round_start_time_real
 
 /proc/roundduration2text()
