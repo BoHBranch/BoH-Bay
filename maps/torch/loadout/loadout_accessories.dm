@@ -266,19 +266,3 @@
 	lpouches["green large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/green
 	lpouches["tan large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/tan
 	gear_tweaks += new/datum/gear_tweak/path(lpouches)
-
-/datum/gear/accessory/collars
-	display_name = "collar selection"
-	description = "A selection of collars. Not the most practical, but some people are into that."
-	path = /obj/item/clothing/accessory/collar
-
-/datum/gear/accessory/collars/New()
-	..()
-	var/collars = list()
-	collars["silver tag collar"] = /obj/item/clothing/accessory/collar/silver
-	collars["gold tag collar"] = /obj/item/clothing/accessory/collar/gold
-	collars["bell collar"] = /obj/item/clothing/accessory/collar/bell
-	collars["spiked collar"] = /obj/item/clothing/accessory/collar/spike
-	collars["pink collar"] = /obj/item/clothing/accessory/collar/pink
-	collars["holo collar"] = /obj/item/clothing/accessory/collar/holo
-	gear_tweaks += new/datum/gear_tweak/path(collars)
