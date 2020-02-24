@@ -87,20 +87,21 @@ proc/isDay(var/month, var/day)
 
 	return "[minute_text]:[second_text]"
 
-var/next_duration_update = 0
-var/round_start_time = 0
-var/round_start_time_real = 0
+var/global/next_duration_update = 0
+var/global/round_start_time = 0
+var/global/round_start_time_real = 0
 
 /proc/get_real_round_duration() //RETURNS DECISECONDS
-	return ((GLOB.midnight_rollovers DAYS) + world.timeofday) - round_start_time_real
+	return REALTIMEOFDAY - round_start_time_real
 
 /proc/roundduration2text()
+	if(!round_start_time_real)
+		return "00:00"
 	return get_clock_time(round(get_real_round_duration()/600))
 
 /hook/roundstart/proc/start_timer()
-	round_start_time_real = world.timeofday
+	round_start_time_real = REALTIMEOFDAY
 	round_start_time = world.time
-	world.log << "The real round duration is: [get_real_round_duration()]."
 	return 1
 
 /hook/startup/proc/set_roundstart_hour()
