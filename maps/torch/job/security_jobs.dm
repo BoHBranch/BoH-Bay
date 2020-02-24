@@ -127,6 +127,7 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 
+/*
 /////////
 // Triage Man
 /////////
@@ -170,7 +171,7 @@
 	max_skill = list(   SKILL_COMBAT      = SKILL_ADEPT,
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
 	                    SKILL_FORENSICS   = SKILL_ADEPT)
-	skill_points = 22
+	skill_points = 16
 
 	access = list(access_security, access_brig, access_maint_tunnels,
 						access_external_airlocks, access_emergency_storage,
@@ -213,4 +214,4 @@
 		/obj/item/clothing/glasses/hud/health,
 		/obj/item/weapon/storage/firstaid/adv,
 		/obj/item/clothing/accessory/storage/holster/waist
-	)
+	)*/
