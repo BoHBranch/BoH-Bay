@@ -15,12 +15,13 @@
 	berets["health service beret"] = /obj/item/clothing/head/beret/solgov/health
 	berets["diplomatic security beret"] = /obj/item/clothing/head/beret/solgov/diplomatic
 	berets["border security beret"] = /obj/item/clothing/head/beret/solgov/borderguard
+	berets["orbital assault beret"] = /obj/item/clothing/head/beret/solgov/orbital
 	gear_tweaks += new/datum/gear_tweak/path(berets)
 
 /datum/gear/head/veteranhat
 	display_name = "veteran hat"
 	path = /obj/item/clothing/head/soft/solgov/veteranhat
-	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps, /datum/mil_branch/private_security)
 
 /datum/gear/head/solhat
 	display_name = "sol central government hat"
@@ -43,7 +44,7 @@
 	allowed_roles = STERILE_ROLES
 
 /datum/gear/head/beret
-	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/marine_corps, /datum/mil_branch/private_security)
 
 /datum/gear/mask/bandana
 	allowed_branches = CASUAL_BRANCHES

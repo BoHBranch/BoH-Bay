@@ -363,7 +363,6 @@
 /obj/structure/closet/crate,
 /obj/random/powercell,
 /obj/random/illegal,
-/obj/random/illegaltwo,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/auxillary/starboard)
 "aY" = (
@@ -373,7 +372,6 @@
 /obj/structure/closet/crate,
 /obj/random/junk,
 /obj/random/illegal,
-/obj/random/illegaltwo,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/auxillary/port)
 "ba" = (
@@ -1259,7 +1257,6 @@
 	dir = 8;
 	health = 1e+006
 	},
-/obj/random/illegaltwo,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/gear)
 "cI" = (
@@ -2407,25 +2404,13 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/aft)
 "eH" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 9
-	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
-	frequency = 1331;
-	id_tag = "rescue_shuttle_dock_pump"
+	frequency = 1380;
+	id_tag = "admin_shuttle_dock_pump"
 	},
-/obj/machinery/embedded_controller/radio/airlock/docking_port{
-	dir = 4;
-	display_name = "Port Dock C";
-	frequency = 1331;
-	id_tag = "rescue_shuttle_dock_airlock";
-	pixel_x = -24;
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
-	tag_airpump = "rescue_shuttle_dock_pump";
-	tag_chamber_sensor = "rescue_shuttle_dock_sensor";
-	tag_exterior_door = "rescue_shuttle_dock_outer";
-	tag_interior_door = "rescue_shuttle_dock_inner"
+/obj/effect/floor_decal/industrial/warning{
+	dir = 10
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
@@ -2471,25 +2456,13 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/maintenance/fourthdeck/port)
 "eK" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 9
+	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
-	frequency = 1380;
-	id_tag = "admin_shuttle_dock_pump"
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 10
-	},
-/obj/machinery/embedded_controller/radio/airlock/docking_port{
-	dir = 4;
-	display_name = "Starboard Dock C";
-	frequency = 1380;
-	id_tag = "admin_shuttle_dock_airlock";
-	pixel_x = -24;
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
-	tag_airpump = "admin_shuttle_dock_pump";
-	tag_chamber_sensor = "admin_shuttle_dock_sensor";
-	tag_exterior_door = "admin_shuttle_dock_outer";
-	tag_interior_door = "admin_shuttle_dock_inner"
+	frequency = 1331;
+	id_tag = "rescue_shuttle_dock_pump"
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
@@ -41116,7 +41089,7 @@ aa
 aa
 Yj
 tG
-eK
+eH
 LA
 aJ
 Mx
@@ -41158,7 +41131,7 @@ uj
 Jx
 eI
 LA
-eH
+eK
 Ms
 Yj
 aa

@@ -190,6 +190,9 @@
 				if(!BP_IS_ROBOTIC(I))
 					I.heal_damage(20*removed)
 
+/datum/reagent/cryoxadone/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.toxins -= removed*3
+	return
 
 /datum/reagent/clonexadone
 	name = "Clonexadone"
@@ -217,6 +220,11 @@
 			for(var/obj/item/organ/internal/I in H.internal_organs)
 				if(!BP_IS_ROBOTIC(I))
 					I.heal_damage(30*removed)
+
+/datum/reagent/clonexadone/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.toxins -= removed*5
+	H.mutation_level -= removed*3
+	return
 
 /datum/reagent/nanitefluid
 	name = "Nanite Fluid"
