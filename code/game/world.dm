@@ -71,6 +71,8 @@
 	//set window title
 	name = "[server_name] - [GLOB.using_map.full_name]"
 
+	GLOB.timezoneOffset = text2num(time2text(0,"hh")) * 36000
+
 	//logs
 	SetupLogs()
 	var/date_string = time2text(world.realtime, "YYYY/MM/DD")

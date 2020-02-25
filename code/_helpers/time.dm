@@ -18,6 +18,8 @@
 #define DS2TICKS(DS) ((DS)/world.tick_lag)
 #define TICKS2DS(T) ((T) TICKS)
 
+GLOBAL_VAR_INIT(timezoneOffset, 0) // The difference betwen midnight (of the host computer) and 0 world.ticks.
+
 /proc/get_game_time()
 	var/global/time_offset = 0
 	var/global/last_time = 0
@@ -72,21 +74,6 @@ proc/isDay(var/month, var/day)
 		//else
 			//return 1
 
-/proc/get_clock_time(var/seconds) //Ported from Burgerstation
-
-	var/minute_value = Floor(seconds/60)
-	var/second_value = seconds - minute_value*60
-
-	var/minute_text = "[minute_value]"
-	if(minute_value < 10)
-		minute_text = "0[minute_text]"
-
-	var/second_text = "[second_value]"
-	if(second_value < 10)
-		second_text = "0[second_value]"
-
-	return "[minute_text]:[second_text]"
-
 var/global/next_duration_update = 0
 var/global/round_start_time = 0
 var/global/round_start_time_real = 0
@@ -99,7 +86,7 @@ var/global/round_start_time_real = 0
 /proc/roundduration2text()
 	if(!round_start_time_real)
 		return "00:00"
-	return get_clock_time(round(get_real_round_duration()/600))
+	return time2text(get_real_round_duration() - GLOB.timezoneOffset,"hh:mm")
 
 /hook/roundstart/proc/start_timer()
 	round_start_time_real = REALTIMEOFDAY
@@ -114,7 +101,8 @@ GLOBAL_VAR_INIT(midnight_rollovers, 0)
 GLOBAL_VAR_INIT(rollovercheck_last_timeofday, 0)
 /proc/update_midnight_rollover()
 	if (world.timeofday < GLOB.rollovercheck_last_timeofday) //TIME IS GOING BACKWARDS!
-		return GLOB.midnight_rollovers++
+		GLOB.midnight_rollovers += 1
+	GLOB.rollovercheck_last_timeofday = world.timeofday
 	return GLOB.midnight_rollovers
 
 //Increases delay as the server gets more overloaded,
