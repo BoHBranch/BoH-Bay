@@ -1606,7 +1606,7 @@
 /datum/chemical_reaction/butter/on_reaction(var/datum/reagents/holder, var/created_volume)
 	var/location = get_turf(holder.my_atom)
 	for(var/i = 1, i <= created_volume, i++)
-		new /obj/item/reagent_containers/food/snacks/spreads/butter(location)
+		new /obj/item/weapon/reagent_containers/food/snacks/spreads/butter(location)
 	return
 
 /* Alcohol */

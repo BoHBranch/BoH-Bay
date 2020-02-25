@@ -4,7 +4,7 @@
 
 /datum/codex_category/recipes/Initialize()
 	for(var/search_by_appliance in SScuisine.recipe_datums)
-		for(var/datum/recipe in SScuisine.recipe_datums[search_by_appliance])
+		for(var/datum/recipe/recipe in SScuisine.recipe_datums[search_by_appliance])
 			if(recipe.hidden_from_codex || !recipe.result)
 				continue
 
