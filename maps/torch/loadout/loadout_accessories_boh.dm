@@ -22,9 +22,9 @@
 	cost = 0
 	whitelisted = list(SPECIES_HUMAN, SPECIES_IPC)
 
-/datum/gear/accessory/smc_patch_xenos
-	display_name = "Marine Corps patch (xenoic division)"
-	path = /obj/item/clothing/accessory/solgov/smc_patch/xeno
+/datum/gear/accessory/sfl_patch
+	display_name = "Foreign Legion patch"
+	path = /obj/item/clothing/accessory/solgov/sfl_patch
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 

@@ -32,7 +32,7 @@
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army
 	service_shoes = /obj/item/clothing/shoes/dress
 	service_hat = /obj/item/clothing/head/solgov/service/army
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison, /obj/item/clothing/head/solgov/service/kepi/legion)
 
 	dress_under = /obj/item/clothing/under/solgov/mildress/army
 	dress_skirt = /obj/item/clothing/under/solgov/mildress/army/skirt
@@ -61,7 +61,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army/command
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command, /obj/item/clothing/head/solgov/service/kepi/legion/command)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
@@ -117,7 +117,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army/command
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command, /obj/item/clothing/head/solgov/service/kepi/legion/command)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
@@ -156,7 +156,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison, /obj/item/clothing/head/solgov/service/army/campaign)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison, /obj/item/clothing/head/solgov/service/army/campaign, /obj/item/clothing/head/solgov/service/kepi/legion)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army
 	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword/army)
@@ -177,7 +177,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army/command
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command, /obj/item/clothing/head/solgov/service/kepi/legion/command)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
@@ -215,7 +215,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison, /obj/item/clothing/head/solgov/service/kepi/legion)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army
 	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword/army)
@@ -236,7 +236,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army/command
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command, /obj/item/clothing/head/solgov/service/kepi/legion/command)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
@@ -274,7 +274,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison, /obj/item/clothing/head/solgov/service/kepi/legion)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army
 	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword/army)
@@ -295,7 +295,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army/command
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command, /obj/item/clothing/head/solgov/service/kepi/legion/command)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
@@ -318,7 +318,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army/command
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command, /obj/item/clothing/head/solgov/service/kepi/legion/command)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
@@ -345,7 +345,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison, /obj/item/clothing/head/solgov/service/kepi/legion)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army
 	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword/army)
@@ -366,7 +366,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army/command
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command, /obj/item/clothing/head/solgov/service/kepi/legion/command)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
@@ -393,7 +393,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison, /obj/item/clothing/head/solgov/service/kepi/legion)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army
 	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword/army)
@@ -414,7 +414,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army/command
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command, /obj/item/clothing/head/solgov/service/kepi/legion/command)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
@@ -434,7 +434,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison, /obj/item/clothing/head/solgov/service/army/campaign)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison, /obj/item/clothing/head/solgov/service/army/campaign, /obj/item/clothing/head/solgov/service/kepi/legion)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army
 	dress_extra = list(/obj/item/weapon/material/sword/replica/officersword/army)
@@ -459,7 +459,7 @@
 
 	service_hat = /obj/item/clothing/head/solgov/service/army/command
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
-	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command)
+	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison/command, /obj/item/clothing/head/solgov/service/kepi/legion/command)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command

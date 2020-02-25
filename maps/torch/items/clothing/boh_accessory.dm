@@ -9,10 +9,12 @@
 	slot = ACCESSORY_SLOT_INSIGNIA
 	check_codex_val = FACTION_MARINES
 
-/obj/item/clothing/accessory/solgov/smc_patch/xeno
-	name = "\improper Xenoic Division of Marine Corps patch"
-	desc = "A robust shoulder patch, carrying the symbol-mascot of Xenoic division, yellow-eyed devil dog."
-	icon_state = "smcpatch13"
+// legion patch
+/obj/item/clothing/accessory/solgov/sfl_patch
+	name = "\improper Foreign Legion patch"
+	desc = "A robust shoulder patch, carrying the symbol of Solar Foreign Legion, or SFL for short."
+	icon_state = "sflpatch"
+	check_codex_val = FACTION_LEGION
 
 // Sixth Fleet Patch, as for bonus
 /obj/item/clothing/accessory/solgov/fleet_patch/sixth

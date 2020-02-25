@@ -147,6 +147,7 @@ var/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 			FACTION_EXPEDITIONARY,
 			FACTION_FLEET,
 			FACTION_MARINES,
+			FACTION_LEGION,
 			FACTION_PCRC,
 			FACTION_OTHER
 		),

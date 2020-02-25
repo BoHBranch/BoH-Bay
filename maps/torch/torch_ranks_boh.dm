@@ -3,7 +3,6 @@
 #define SEMIRESTRICTED /datum/mil_branch/marine_corps, /datum/mil_branch/private_security
 
 // Rank-specific defines
-#define SMC_TROOPERS_ONLY /datum/mil_branch/marine_corps = list(/datum/mil_rank/marine_corps/e1, /datum/mil_rank/marine_corps/e2, /datum/mil_rank/marine_corps/e3)
 #define SMC_LIMITED_RANKS /datum/mil_branch/marine_corps = list(\
 	/datum/mil_rank/marine_corps/e1,\
 	/datum/mil_rank/marine_corps/e2,\
@@ -61,11 +60,11 @@
 	species_to_branch_whitelist = list(
 		/datum/species/diona		= list(UNRESTRICTED),
 		/datum/species/nabber		= list(/datum/mil_branch/civilian),
-		/datum/species/skrell		= list(UNRESTRICTED, /datum/mil_branch/skrell_fleet),
+		/datum/species/skrell		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/skrell_fleet),
 		/datum/species/unathi		= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/adherent		= list(UNRESTRICTED),
-		/datum/species/sergal		= list(UNRESTRICTED, /datum/mil_branch/private_security),
-		/datum/species/akula		= list(UNRESTRICTED, /datum/mil_branch/private_security),
+		/datum/species/sergal		= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/akula		= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/custom		= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/humanathi	= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/tajaran		= list(UNRESTRICTED, SEMIRESTRICTED),
@@ -79,12 +78,15 @@
 	)
 
 	species_to_rank_whitelist = list(
-		/datum/species/unathi		= list(SMC_TROOPERS_ONLY),
-		/datum/species/humanathi	= list(SMC_TROOPERS_ONLY),
-		/datum/species/tajaran		= list(SMC_TROOPERS_ONLY),
+		/datum/species/skrell		= list(SMC_LIMITED_RANKS),
+		/datum/species/unathi		= list(SMC_LIMITED_RANKS),
+		/datum/species/sergal		= list(SMC_LIMITED_RANKS),
+		/datum/species/akula		= list(SMC_LIMITED_RANKS),
+		/datum/species/humanathi	= list(SMC_LIMITED_RANKS),
+		/datum/species/tajaran		= list(SMC_LIMITED_RANKS),
 		/datum/species/vulpkanin	= list(SMC_LIMITED_RANKS),
 		/datum/species/custom		= list(SMC_LIMITED_RANKS),
-		/datum/species/customhuman	= list(SMC_LIMITED_RANKS),
+		/datum/species/customhuman	= list(SMC_LIMITED_RANKS)
 	)
 
 /datum/mil_branch/fleet
@@ -564,5 +566,4 @@
 // Ends of defines
 #undef UNRESTRICTED
 #undef SEMIRESTRICTED
-#undef SMC_TROOPERS_ONLY
 #undef SMC_LIMITED_RANKS
