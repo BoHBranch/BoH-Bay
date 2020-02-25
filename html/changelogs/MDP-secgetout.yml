@@ -2,4 +2,4 @@ author: MoondancerPony
 delete-after: True
 
 changes: 
-  - tweak: "Security no longer has access to Medical."
+  - maptweak: "Security and Engineering no longer have direct access to Medical and must be allowed in."
