@@ -24,6 +24,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army,
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/head/soft/solgov
 	)
 
@@ -56,6 +57,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/cmd
 	)
 
@@ -87,6 +89,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/eng
 	)
 
@@ -112,6 +115,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/eng
 	)
 
@@ -148,6 +152,7 @@
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
 		/obj/item/clothing/gloves/thick/duty/solgov/sec,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/under/solgov/utility/army/security)
 
 /decl/hierarchy/mil_uniform/marine_corps/sec/noncom
@@ -172,6 +177,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/sec
 	)
 
@@ -206,6 +212,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/med
 	)
 
@@ -231,6 +238,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/med
 	)
 
@@ -265,6 +273,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/sup
 	)
 
@@ -290,6 +299,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/sup
 	)
 
@@ -311,6 +321,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army,
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/head/soft/solgov
 	)
 
@@ -336,6 +347,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/svc
 	)
 
@@ -361,6 +373,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/svc
 	)
 
@@ -384,6 +397,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/exp
 	)
 
@@ -409,6 +423,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/exp
 	)
 
@@ -450,6 +465,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/cmd
 	)
 
@@ -476,6 +492,7 @@
 		/obj/item/clothing/head/ushanka/solgov/army/green,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov/army,
 		/obj/item/clothing/head/soft/solgov,
+		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/clothing/gloves/thick/duty/solgov/cmd
 	)
 

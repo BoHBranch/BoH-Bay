@@ -83,10 +83,7 @@
 		/datum/species/sergal		= list(SMC_LIMITED_RANKS),
 		/datum/species/akula		= list(SMC_LIMITED_RANKS),
 		/datum/species/humanathi	= list(SMC_LIMITED_RANKS),
-		/datum/species/tajaran		= list(SMC_LIMITED_RANKS),
-		/datum/species/vulpkanin	= list(SMC_LIMITED_RANKS),
-		/datum/species/custom		= list(SMC_LIMITED_RANKS),
-		/datum/species/customhuman	= list(SMC_LIMITED_RANKS)
+		/datum/species/tajaran		= list(SMC_LIMITED_RANKS)
 	)
 
 /datum/mil_branch/fleet

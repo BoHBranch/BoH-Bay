@@ -16,14 +16,14 @@
 	allowed_roles = SECURITY_ROLES
 
 /datum/gear/accessory/smc_patch
-	display_name = "Marine Corps patch"
+	display_name = "SCG Marine Corps patch (Human, IPC, Genemodder)"
 	path = /obj/item/clothing/accessory/solgov/smc_patch
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	cost = 0
-	whitelisted = list(SPECIES_HUMAN, SPECIES_IPC)
+	whitelisted = list(SPECIES_HUMAN, SPECIES_IPC, SPECIES_CUSTOM, SPECIES_VULP)
 
 /datum/gear/accessory/sfl_patch
-	display_name = "Foreign Legion patch"
+	display_name = "SCG Foreign Legion patch"
 	path = /obj/item/clothing/accessory/solgov/sfl_patch
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/marine_corps)
@@ -43,9 +43,17 @@
 	path = /obj/item/clothing/accessory/armor/tag/civ/med
 
 /datum/gear/accessory/tags/marine
-	display_name = "dog tags, solar marine corps"
+	display_name = "dog tags, solar marine corps (Human, IPC, Genemodder)"
 	description = "Plain identification tags made from a durable metal. This one is issued to marines."
 	path = /obj/item/clothing/accessory/badge/solgov/tags/marine
+	allowed_branches = list(/datum/mil_branch/marine_corps)
+	cost = 0
+	whitelisted = list(SPECIES_HUMAN, SPECIES_IPC, SPECIES_CUSTOM, SPECIES_VULP)
+
+/datum/gear/accessory/tags/legion
+	display_name = "dog tags, solar foreign legion"
+	description = "Plain identification tags made from a durable metal. This one is issued to legionnaires."
+	path = /obj/item/clothing/accessory/badge/solgov/tags/legion
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	cost = 0
 

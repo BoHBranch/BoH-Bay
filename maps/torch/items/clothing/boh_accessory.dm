@@ -13,7 +13,14 @@
 /obj/item/clothing/accessory/solgov/sfl_patch
 	name = "\improper Foreign Legion patch"
 	desc = "A robust shoulder patch, carrying the symbol of Solar Foreign Legion, or SFL for short."
+	icon = 'maps/torch/icons/obj/obj_accessories_boh.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi')
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_accessories_boh_unathi.dmi'
+	)
 	icon_state = "sflpatch"
+	on_rolled = list("down" = "none")
+	slot = ACCESSORY_SLOT_INSIGNIA
 	check_codex_val = FACTION_LEGION
 
 // Sixth Fleet Patch, as for bonus
@@ -39,6 +46,9 @@
 
 /obj/item/clothing/accessory/badge/solgov/tags/marine
 	badge_string = "SMC"
+
+/obj/item/clothing/accessory/badge/solgov/tags/legion
+	badge_string = "SFL"
 
 // custom ribbon for loadout
 /obj/item/clothing/accessory/ribbon/solgov/custom
@@ -66,6 +76,9 @@
 	icon_state = "FE0"
 	overlay_state = "fleetrank_enlisted"
 	icon = 'maps/torch/icons/obj/obj_accessories_boh.dmi'
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_accessories_boh_unathi.dmi'
+	)
 
 /obj/item/clothing/accessory/solgov/rank/fleet/enlisted
 	icon_state = "FE1"
