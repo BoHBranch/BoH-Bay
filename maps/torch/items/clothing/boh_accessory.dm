@@ -153,6 +153,7 @@
 	icon_state = "ME0"
 	name = "marine ranks"
 	desc = "Insignia denoting marine rank of some kind. These appear blank."
+	overlay_state = "armyrank_enlisted"
 	icon = 'maps/torch/icons/obj/obj_accessories_boh.dmi'
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted
@@ -212,6 +213,7 @@
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer
 	icon_state = "MO1"
+	overlay_state = "armyrank_officer"
 	name = "ranks (O-1 second lieutenant)"
 	desc = "Insignia denoting the rank of Second Lieutenant."
 
@@ -252,6 +254,7 @@
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/flag
 	icon_state = "MO7"
+	overlay_state = "armyrank_command"
 	name = "ranks (O-7 brigadier general)"
 	desc = "Insignia denoting the rank of Brigadier General."
 	icon_state = "armyrank_command"
