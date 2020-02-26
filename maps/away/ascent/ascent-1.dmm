@@ -797,7 +797,7 @@
 /area/ship/ascent/subdeck_armory)
 "bR" = (
 /obj/structure/table/rack/dark,
-/obj/item/ascentbox,
+/obj/item/weapon/gun/energy/particle/ascent_flechette,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_armory)
 "bS" = (
@@ -2423,6 +2423,12 @@
 /obj/structure/bed/chair/padded/purple/ascent,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
+"VF" = (
+/obj/structure/table/rack/dark,
+/obj/item/weapon/gun/energy/particle/gyne,
+/obj/item/weapon/melee/energy/sword/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_armory)
 
 (1,1,1) = {"
 aa
@@ -10050,7 +10056,7 @@ ai
 ai
 by
 by
-bR
+dQ
 cj
 ch
 dL
@@ -10058,7 +10064,7 @@ by
 dL
 ch
 cj
-bR
+dQ
 by
 by
 ai
@@ -11026,7 +11032,7 @@ ai
 ai
 bz
 by
-bR
+dQ
 dD
 bT
 dO
@@ -11034,7 +11040,7 @@ dW
 fo
 bT
 fs
-bR
+dQ
 by
 bz
 ai
@@ -11273,7 +11279,7 @@ bz
 bz
 by
 by
-dQ
+VF
 fd
 fp
 by

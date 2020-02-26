@@ -264,18 +264,18 @@
 /obj/item/projectile/beam/particle
 	name = "particle lance"
 	icon_state = "particle"
-	damage = 35
-	armor_penetration = 50
+	damage = 40
+	armor_penetration = 15
 	muzzle_type = /obj/effect/projectile/laser_particle/muzzle
 	tracer_type = /obj/effect/projectile/laser_particle/tracer
 	impact_type = /obj/effect/projectile/laser_particle/impact
-	penetration_modifier = 0.5
+	penetration_modifier = 0.4
 
 /obj/item/projectile/beam/particle/small
 	name = "particle beam"
-	damage = 25
-	armor_penetration = 30
-	penetration_modifier = 0.4
+	damage = 35
+	armor_penetration = 10
+	penetration_modifier = 0.3
 
 /obj/item/projectile/beam/darkmatter
 	name = "dark matter bolt"

@@ -1,7 +1,7 @@
 // Rigs and gear themselves.
 /obj/item/weapon/rig/mantid
-	name = "alate support exosuit"
-	desc = "A powerful support exosuit with integrated power supply, weapon and atmosphere. It's closer to a mech than a rig."
+	name = "alate utility exosuit"
+	desc = "A powerful utility exosuit with an integrated power supply, internals system, toolset, plasmacutter, and maneuvering jets. It's closer to a mech than a rig."
 	icon_state = "kexosuit"
 	item_state = null
 	suit_type = "support exosuit"
@@ -15,7 +15,6 @@
 		rad = ARMOR_RAD_SHIELDED
 	)
 	armor_type = /datum/extension/armor/ablative
-	armor_degradation_speed = 0.05
 	online_slowdown = 0
 	offline_slowdown = 1
 	equipment_overlay_icon = null
@@ -47,35 +46,35 @@
 	req_access = list(access_ascent)
 	var/mantid_caste = SPECIES_MANTID_ALATE
 
-// Renamed blade.
-/obj/item/rig_module/mounted/energy_blade/mantid
+/obj/item/rig_module/mounted/flechette_rifle
+	name = "crystal flechette rifle"
+	desc = "A crystal flechette nanofabricator and launch system of Ascent design."
+	interface_name = "crystal flechette rifle"
+	interface_desc = "A crystal flechette nanofabricator and launch system of Ascent design."
+	icon = 'icons/obj/ascent.dmi'
+	icon_state = "rifle"
+	gun = /obj/item/weapon/gun/energy/particle/ascent_flechette
+
+/obj/item/rig_module/mounted/particle_rifle
+	name = "particle lance"
+	desc = "A mounted particle lance of Ascent design."
+	interface_name = "particle lance"
+	interface_desc = "A mounted particle lance of Ascent design."
+	icon = 'icons/obj/ascent.dmi'
+	icon_state = "rifle"
+	gun = /obj/item/weapon/gun/energy/particle
+
+/obj/item/rig_module/device/nanoblade
 	name = "nanoblade projector"
 	desc = "A fusion-powered blade nanofabricator of Ascent design."
 	interface_name = "nanoblade projector"
 	interface_desc = "A fusion-powered blade nanofabricator of Ascent design."
+	device = /obj/item/weapon/melee/energy/sword/ascent
 	icon = 'icons/obj/ascent.dmi'
 	icon_state = "blade"
 	interface_name = "nanoblade"
 	usable = FALSE
-	gun = null
-
-/obj/item/rig_module/mounted/flechette_rifle
-	name = "flechette rifle"
-	desc = "A flechette nanofabricator and launch system of Ascent design."
-	interface_name = "flechette rifle"
-	interface_desc = "A flechette nanofabricator and launch system of Ascent design."
-	icon = 'icons/obj/ascent.dmi'
-	icon_state = "rifle"
-	gun = /obj/item/weapon/gun/magnetic/railgun/flechette/ascent
-
-/obj/item/rig_module/mounted/particle_rifle
-	name = "particle rifle"
-	desc = "A mounted particle rifle of Ascent design."
-	interface_name = "particle rifle"
-	interface_desc = "A mounted particle rifle of Ascent design."
-	icon = 'icons/obj/ascent.dmi'
-	icon_state = "rifle"
-	gun = /obj/item/weapon/gun/energy/particle
+	selectable = TRUE
 
 /obj/item/rig_module/device/multitool
 	name = "mantid integrated multitool"
@@ -178,7 +177,6 @@
 /obj/item/weapon/tank/mantid/reactor
 	name = "mantid gas reactor"
 	desc = "A mantid gas processing plant that continuously synthesises 'breathable' atmosphere."
-	var/charge_cost = 12
 	var/refill_gas_type = GAS_METHYL_BROMIDE
 	var/gas_regen_amount = 0.05
 	var/gas_regen_cap = 50
@@ -194,8 +192,7 @@
 
 /obj/item/weapon/tank/mantid/reactor/Process()
 	..()
-	var/obj/item/weapon/rig/holder = loc
-	if(air_contents.total_moles < gas_regen_cap && istype(holder) && holder.cell && holder.cell.use(charge_cost))
+	if(air_contents.total_moles < gas_regen_cap)
 		air_contents.adjust_gas(refill_gas_type, gas_regen_amount)
 
 // Chem dispenser.
@@ -215,7 +212,9 @@
 
 // Rig definitions.
 /obj/item/weapon/rig/mantid/gyne
-	name = "gyne support exosuit"
+	name = "gyne utility exosuit"
+	desc = "A massive exosuit designed for a massive Kharmaani. Has all the features of a standard Alate exosuit, along with an integrated nanoblade, particle lance, \
+			and crystal flechette rifle."
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
@@ -232,7 +231,7 @@
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/chem_dispenser/mantid,
-		/obj/item/rig_module/mounted/energy_blade/mantid,
+		/obj/item/rig_module/device/nanoblade,
 		/obj/item/rig_module/mounted/flechette_rifle,
 		/obj/item/rig_module/mounted/particle_rifle,
 		/obj/item/rig_module/device/multitool,
@@ -262,7 +261,7 @@
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/chem_dispenser/mantid,
-		/obj/item/rig_module/mounted/energy_blade/mantid,
+		/obj/item/rig_module/device/nanoblade,
 		/obj/item/rig_module/mounted/flechette_rifle,
 		/obj/item/rig_module/mounted/particle_rifle,
 		/obj/item/rig_module/device/multitool,

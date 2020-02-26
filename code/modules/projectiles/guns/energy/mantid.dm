@@ -1,3 +1,6 @@
+/////////
+// Standard Heavy Duty Lance. Better than projector but must be carried and used in both hands.
+/////////
 /obj/item/weapon/gun/energy/particle
 	name = "particle lance"
 	desc = "A long, thick-bodied energy rifle of some kind, clad in a curious indigo polymer and lit from within by Cherenkov radiation. The grip is clearly not designed for human hands."
@@ -5,16 +8,16 @@
 	icon_state = "particle_rifle"
 	item_state = "particle_rifle"
 	slot_flags = SLOT_BACK
-	force = 25 // Heavy as Hell.
+	force = 18
 	projectile_type = /obj/item/projectile/beam/particle
-	max_shots = 18
+	max_shots = 8
 	self_recharge = 1
-	w_class = ITEM_SIZE_HUGE
-	one_hand_penalty = 6
+	w_class = ITEM_SIZE_NORMAL
+	one_hand_penalty = 4
 	multi_aim = 1
 	burst_delay = 3
-	burst = 3
-	move_delay = 4
+	burst = 2
+	move_delay = 3
 	accuracy = -1
 	wielded_item_state = "particle_rifle-wielded"
 	charge_meter = 0
@@ -26,17 +29,18 @@
 		)
 	var/charge_state = "pr"
 
+/////////
+// Basic and compact energy gun Alates spawn with, equivelant to a Skrellian Handgun
+/////////
 /obj/item/weapon/gun/energy/particle/small
 	name = "particle projector"
-	desc = "A smaller variant on the Ascent particle lance, usually carried by drones and alates."
+	desc = "A small, one-handed compact energy pistol lit from within by Cherenkov radiation. It is usually seen in the hands of Alates and Drones in use as a personal defense weapon."
 	icon_state = "particle_rifle_small"
 	force = 12
 	max_shots = 9
-	burst = 1
 	move_delay = 2
 	one_hand_penalty = 0
 	charge_state = "prsmall"
-	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_DENYPOCKET | SLOT_HOLSTER
 	projectile_type = /obj/item/projectile/beam/particle/small
 	firemodes = list(
@@ -74,25 +78,9 @@
 					return overlay_image('icons/mob/species/nabber/onmob_righthand_particle_rifle.dmi', item_state_slots[slot_r_hand_str], color, RESET_COLOR)
 	. = ..(user, slot)
 
-/obj/item/weapon/gun/magnetic/railgun/flechette/ascent
-	name = "mantid flechette rifle"
-	desc = "A viciously pronged rifle-like weapon."
-	has_safety = FALSE
-	one_hand_penalty = 6
-	var/charge_per_shot = 10
-
-/obj/item/weapon/gun/magnetic/railgun/flechette/ascent/get_cell()
-	if(isrobot(loc) || istype(loc, /obj/item/rig_module))
-		return loc.get_cell()
-
-/obj/item/weapon/gun/magnetic/railgun/flechette/ascent/show_ammo(var/mob/user)
-	var/obj/item/weapon/cell/cell = get_cell()
-	to_chat(user, "<span class='notice'>There are [cell ? Floor(cell.charge/charge_per_shot) : 0] shot\s remaining.</span>")
-
-/obj/item/weapon/gun/magnetic/railgun/flechette/ascent/check_ammo()
-	var/obj/item/weapon/cell/cell = get_cell()
-	return cell && cell.charge >= charge_per_shot
-
-/obj/item/weapon/gun/magnetic/railgun/flechette/ascent/use_ammo()
-	var/obj/item/weapon/cell/cell = get_cell()
-	if(cell) cell.use(charge_per_shot)
+/obj/item/weapon/gun/energy/particle/ascent_flechette
+	name = "crystal flechette rifle"
+	desc = "A viciously pronged rifle-like weapon chalk full of ever-growing lethal crystal shards. Nothing about this is designed for human hands."
+	projectile_type = /obj/item/projectile/bullet/magnetic/flechette/crystal
+	max_shots = 18
+	firemodes = /obj/item/projectile/bullet/magnetic/flechette/crystal

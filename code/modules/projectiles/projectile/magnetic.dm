@@ -23,3 +23,9 @@
 	armor_penetration = 100
 	fire_sound = 'sound/weapons/rapidslice.ogg'
 	distance_falloff = 0.5
+
+/obj/item/projectile/bullet/magnetic/flechette/crystal
+	name = "crystal flechette"
+	damage = 25
+	armor_penetration = 40
+	distance_falloff = 0.5

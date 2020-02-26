@@ -1,25 +1,3 @@
-/////////
-// Firearm Kit
-/////////
-/obj/item/ascentbox
-	name = "equipment kit"
-	desc = "A secure box containing equipment."
-	icon = 'icons/obj/ascent_doodads.dmi'
-	icon_state = "box" //temp
-
-/obj/item/ascentbox/attack_self(mob/living/user)
-	var/list/options = list()
-	options["Support Alate"] = list(/obj/item/stack/medical/resin/large,/obj/item/weapon/gun/energy/particle/support)
-	options["Enforcering Alate"] = list(/obj/item/weapon/gun/energy/particle/small,/obj/item/weapon/storage/med_pouch/ascent)
-	var/choice = input(user,"What type of equipment?") as null|anything in options
-	if(src && choice)
-		var/list/things_to_spawn = options[choice]
-		for(var/new_type in things_to_spawn)
-			var/atom/movable/AM = new new_type(get_turf(src))
-			if(istype(AM, /obj/item/weapon/gun/))
-				to_chat(user, "You have chosen \the [AM]. This is probably worth more than what your Gyne thinks of you.")
-		qdel(src)
-
 
 /////////
 // 'Tool' Kit
