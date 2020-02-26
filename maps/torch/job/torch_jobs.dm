@@ -10,23 +10,23 @@
 		/datum/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant)
 	)
 
-#define HUMAN_ONLY_JOBS /datum/job/representative
+#define HUMAN_ONLY_JOBS /datum/job/representative, /datum/job/sea/marine
 	species_to_job_blacklist = list(
-		/datum/species/unathi  = list(HUMAN_ONLY_JOBS, /datum/job/representative), //Other jobs unavailable via branch restrictions,
-		/datum/species/unathi/yeosa = list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		/datum/species/skrell  = list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		/datum/species/machine = list(HUMAN_ONLY_JOBS, /datum/job/representative),
+		/datum/species/unathi  = list(HUMAN_ONLY_JOBS),
+		/datum/species/unathi/yeosa = list(HUMAN_ONLY_JOBS),
+		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),
+		/datum/species/machine = list(HUMAN_ONLY_JOBS),
 		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden, /datum/job/detective),
-		/datum/species/sergal = list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		/datum/species/sergal/northern = list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		/datum/species/sergal/eastern = list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		/datum/species/akula = list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		/datum/species/humanathi= list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		/datum/species/tajaran= list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		/datum/species/vasilissan= list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		/datum/species/vulpkanin= list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		/datum/species/customhuman= list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		/datum/species/custom= list(HUMAN_ONLY_JOBS, /datum/job/representative),
+		/datum/species/sergal = list(HUMAN_ONLY_JOBS),
+		/datum/species/sergal/northern = list(HUMAN_ONLY_JOBS),
+		/datum/species/sergal/eastern = list(HUMAN_ONLY_JOBS),
+		/datum/species/akula = list(HUMAN_ONLY_JOBS),
+		/datum/species/humanathi= list(HUMAN_ONLY_JOBS),
+		/datum/species/tajaran= list(HUMAN_ONLY_JOBS),
+		/datum/species/vasilissan= list(HUMAN_ONLY_JOBS),
+		/datum/species/vulpkanin= list(/datum/job/representative),
+		/datum/species/customhuman= list(/datum/job/representative),
+		/datum/species/custom= list(/datum/job/representative),
 		//datum/species/tesh= list(HUMAN_ONLY_JOBS),
 	)
 #undef HUMAN_ONLY_JOBS

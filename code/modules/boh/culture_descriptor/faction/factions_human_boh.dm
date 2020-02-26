@@ -7,11 +7,10 @@
 
 /decl/cultural_info/faction/scg/foreign_legion
 	name = FACTION_LEGION
-	description = "The Solar Foreign Legion is a military branch from the SCG, usually tasked with \
-	colony and border security, as well as handling frontier military issues. As the name implies, \
-	Legion accepts not just SolGov citizens, but also a foreign recruits - whenever alien or human \
-	- to enlist and serve for the SCG. After some years of service, foreign soldiers may be granted \
-	for permanent residence on one of SolGov worlds, or at maximum - honorary citizenship. However, \
-	it is mostly seen by some as a shady version of Marine Corps by the fact, that Legion offers an \
-	optional identity change, though they check background of recruits thoroughly with help of \
-	Sol Federal Police to avoid criminal elements in their ranks."
+	description = "The Solar Foreign Legion is a military branch of the SMC, usually serving as \
+	military police, auxiliary expeditionary forces and pioneers. As the name implies, \
+	Legion accepts not just SolGov citizens, but also a foreign recruits - whenever alien \
+	or human - to enlist and serve for the SCG. After some years of service, foreign soldiers \
+	may be granted for permanent residence on one of SolGov worlds, or at maximum - honorary \
+	citizenship. However, it is mostly seen by some to be shady due the fact, \
+	that Legion offers an optional identity change."
