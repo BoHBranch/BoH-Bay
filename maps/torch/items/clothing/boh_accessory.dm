@@ -148,103 +148,125 @@
 /obj/item/clothing/accessory/solgov/rank/fleet/flag/o10_alt
 	icon_state = "FO10"
 
-// ranks - proper marines
+// ranks - proper marines and now with actual individal insignias
 /obj/item/clothing/accessory/solgov/rank/marine_corps
+	icon_state = "ME0"
 	name = "marine ranks"
 	desc = "Insignia denoting marine rank of some kind. These appear blank."
-	icon_state = "armyrank_enlisted"
+	icon = 'maps/torch/icons/obj/obj_accessories_boh.dmi'
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted
+	icon_state = "ME1"
 	name = "ranks (E-1 private)"
 	desc = "Insignia denoting the rank of Private."
-	icon_state = "armyrank_enlisted"
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e2
+	icon_state = "ME2"
 	name = "ranks (E-2 private first class)"
 	desc = "Insignia denoting the rank of Private First Class."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e3
+	icon_state = "ME3"
 	name = "ranks (E-3 lance corporal)"
 	desc = "Insignia denoting the rank of Lance Corporal."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e4
+	icon_state = "ME4"
 	name = "ranks (E-4 corporal)"
 	desc = "Insignia denoting the rank of Corporal."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e5
+	icon_state = "ME5"
 	name = "ranks (E-5 sergeant)"
 	desc = "Insignia denoting the rank of Sergeant."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e6
+	icon_state = "ME6"
 	name = "ranks (E-6 staff sergeant)"
 	desc = "Insignia denoting the rank of Staff Sergeant."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e7
+	icon_state = "ME7"
 	name = "ranks (E-7 gunnery sergeant)"
 	desc = "Insignia denoting the rank of Gunnery Sergeant."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e8
+	icon_state = "ME8"
 	name = "ranks (E-8 master sergeant)"
 	desc = "Insignia denoting the rank of Master Sergeant."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e8_alt
+	icon_state = "ME8A"
 	name = "ranks (E-8 first sergeant)"
 	desc = "Insignia denoting the rank of First Sergeant."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9
+	icon_state = "ME9"
 	name = "ranks (E-9 master gunnery sergeant)"
 	desc = "Insignia denoting the rank of Master Gunnery Sergeant."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt
+	icon_state = "ME9"
 	name = "ranks (E-9 sergeant major)"
 	desc = "Insignia denoting the rank of Sergeant Major."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer
+	icon_state = "MO1"
 	name = "ranks (O-1 second lieutenant)"
 	desc = "Insignia denoting the rank of Second Lieutenant."
-	icon_state = "armyrank_officer"
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o2
+	icon_state = "MO2"
 	name = "ranks (O-2 first lieutenant)"
 	desc = "Insignia denoting the rank of First Lieutenant."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o3
+	icon_state = "MO3"
 	name = "ranks (O-3 captain)"
 	desc = "Insignia denoting the rank of Captain."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o3_alt
+	icon_state = "MO3"
 	name = "ranks (O-3 Marine captain)"
 	desc = "Insignia denoting the rank of Marine Captain."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o3_alt2
+	icon_state = "MO3"
 	name = "ranks (O-3 specialist captain)"
 	desc = "Insignia denoting the rank of Specialist Captain."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o4
+	icon_state = "MO4"
 	name = "ranks (O-4 major)"
 	desc = "Insignia denoting the rank of Major."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o5
+	icon_state = "MO5"
 	name = "ranks (O-5 lieutenant colonel)"
 	desc = "Insignia denoting the rank of Lieutenant Colonel."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o6
+	icon_state = "MO6"
 	name = "ranks (O-6 colonel)"
 	desc = "Insignia denoting the rank of Colonel."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/flag
+	icon_state = "MO7"
 	name = "ranks (O-7 brigadier general)"
 	desc = "Insignia denoting the rank of Brigadier General."
 	icon_state = "armyrank_command"
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o8
+	icon_state = "MO8"
 	name = "ranks (O-8 major general)"
 	desc = "Insignia denoting the rank of Major General."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o9
+	icon_state = "MO9"
 	name = "ranks (O-9 lieutenant general)"
 	desc = "Insignia denoting the rank of Lieutenant General."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o10
+	icon_state = "MO10"
 	name = "ranks (O-10 general)"
 	desc = "Insignia denoting the rank of General."
