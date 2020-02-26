@@ -12,18 +12,18 @@ GLOBAL_LIST_EMPTY(skills)
 							"Trained"			= "Trained Description",
 							"Experienced"		= "Experienced Description",
 							"Master"		= "Professional Description")
-	var/difficulty = SKILL_AVERAGE         //Used to compute how expensive the skill is
+
 	var/default_max = SKILL_ADEPT          //Makes the skill capped at this value in selection unless overriden at job level.
 	var/prerequisites                      // A list of skill prerequisites, if needed.
 
+	var/list/skill_cost = list(1)
+
 /decl/hierarchy/skill/proc/get_cost(var/level)
-	switch(level)
-		if(SKILL_BASIC, SKILL_ADEPT)
-			return difficulty
-		if(SKILL_EXPERT, SKILL_PROF)
-			return 2*difficulty
-		else
-			return 0
+	if(level <= 1)
+		return 0
+	if(length(skill_cost) < level-1)
+		return skill_cost[length(skill_cost)]
+	return skill_cost[level-1]
 
 /decl/hierarchy/skill/proc/update_special_effects(mob/mob, level)
 
@@ -42,38 +42,37 @@ GLOBAL_LIST_EMPTY(skills)
 /decl/hierarchy/skill/organizational
 	name = "Organizational"
 	ID	 = "1"
-	difficulty = SKILL_EASY
 	default_max = SKILL_MAX
 
 /decl/hierarchy/skill/general
 	name = "General"
 	ID	 = "2"
-	difficulty = SKILL_EASY
 	default_max = SKILL_MAX
 
 /decl/hierarchy/skill/service
 	name = "Service"
 	ID	 = "service"
-	difficulty = SKILL_EASY
 	default_max = SKILL_MAX
 
 /decl/hierarchy/skill/security
 	name = "Security"
 	ID	 = "security"
-	default_max = SKILL_EXPERT
+	default_max = SKILL_ADEPT
 
 /decl/hierarchy/skill/engineering
 	name = "Engineering"
 	ID	 = "engineering"
+	default_max = SKILL_ADEPT
 
 /decl/hierarchy/skill/research
 	name = "Research"
 	ID	 = "research"
+	default_max = SKILL_ADEPT
 
 /decl/hierarchy/skill/medical
 	name = "Medical"
 	ID	 = "medical"
-	difficulty = SKILL_HARD
+	default_max = SKILL_ADEPT
 
 // ONLY SKILL DEFINITIONS BELOW THIS LINE
 // Category: Organizational
@@ -87,6 +86,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can navigate most paperwork thrown at you, even if you are unfamiliar with it. You have a good working understanding of the law and any regulations or procedures relevant to you.",
 						"Experienced"		= "With your experience, you can easily create paperwork for any eventuality, and write reports which are clear and understandable. You have an excellent knowledge of the law, possibly including formal legal training.<br>- You learn a unique language ",
 						"Master"		= "You can make paperwork dance to your bidding, and navigate the most byzantine bureaucratic structures with ease and familiarity. Your reports are works of literature. Your knowledge of the law is both broad and intimate, and you may be certified to practice law.")
+
+	skill_cost = list(1,2,3,3)
 
 /decl/hierarchy/skill/organizational/bureaucracy/update_special_effects(mob/mob, level)
 	mob.remove_language(LANGUAGE_LEGALESE)
@@ -103,6 +104,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "With your experience, you are familiar with any financial entities you may run across, and are a shrewd judge of value. More often than not, investments you make will pan out well.",
 						"Master"		= "You have an excellent knowledge of finance, will often make brilliant investments, and have an instinctive feel for interstellar economics. Financial instruments are weapons in your hands. You likely have professional experience in the finance industry.")
 
+	skill_cost = list(1,2,2,2)
+
 // Category: General
 
 /decl/hierarchy/skill/general/EVA
@@ -115,6 +118,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You can use all kinds of space suits, including specialized versions. Your years of experience in EVA keep you from being disoriented in space, and you have experience using a jetpack to move around. <br>- You cannot slip anymore.",
 						"Master"		= "You are just as much at home in a vacuum as in atmosphere. You probably do your job almost entirely EVA.<br>- You cannot get floored anymore.<br>- You get bonus speed in zero-G.")
 
+	skill_cost = list(1,2,3,3)
+
 /decl/hierarchy/skill/general/EVA/mech
 	ID = "exosuit"
 	name = "Exosuit Operation"
@@ -123,7 +128,8 @@ GLOBAL_LIST_EMPTY(skills)
 		"Trained" = "You are proficient in exosuit operation and safety, and can use them without penalties.")
 	prerequisites = list(SKILL_EVA = SKILL_ADEPT)
 	default_max = SKILL_BASIC
-	difficulty = SKILL_AVERAGE
+
+	skill_cost = list(3)
 
 /decl/hierarchy/skill/general/pilot
 	ID = "pilot"
@@ -134,8 +140,9 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You are a trained pilot, and can safely operate anything from a small craft to a corvette. You can spend extended periods of time piloting a spacecraft, and you're versed in the abilities of different ships, and what makes them function. You can do basic maintenance on smaller vessels, and perform most basic maneuvers. You can use armed spacecraft. You can make basic calculations relating to piloting. Skills of this level are typical for newer pilots. You have probably received formal piloting training.<br>- You can operate large ships without error.<br>- You can completely avoid meteors on slow speed using any shuttlecrafts.",
 						"Experienced"		= "You are an experienced pilot, and can safely take the helm of many types of craft. You could probably live in a spacecraft, and you're very well versed in essentially everything related to space-faring vessels. Not only can you fly a ship, but you can perform difficult maneuvers, and make most calculations related to piloting a spacecraft. You can maintain a ship. Skills of this level are typical for very experienced pilots. You have received formal piloting training.<br>- You can completely avoid meteors on normal speed while using tiny shuttlecrafts.",
 						"Master"		= "Not only are you an exceptional pilot, but you have mastered peripheral functions such as stellar navigation and bluespace jump plotting. You have experience performing complex maneuvers, managing squadrons of small craft, and operating in hostile environments.<br>- You can completely avoid meteors on normal speed using any shuttlecrafts.<br>- Less meteors will hit the ship while passing through meteor fields.")
-	difficulty = SKILL_AVERAGE
 	default_max = SKILL_ADEPT
+
+	skill_cost = list(2,2,3,4)
 
 /decl/hierarchy/skill/general/hauling
 	ID = "hauling"
@@ -147,6 +154,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You have experience with heavy work in trying physical conditions, and are in excellent shape. You visit the gym frequently.",
 						"Master"		= "In addition to your excellent strength and endurance, you have a lot of experience with the specific physical demands of your job. You may have competitive experience with some form of athletics.")
 
+	skill_cost = list(1,2,3,4)
+
 /decl/hierarchy/skill/general/computer
 	ID = "computer"
 	name = "Information Technology"
@@ -156,6 +165,9 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "At this level, you're probably working with computers on a daily basis. You understand and can repair the telecommunications network. Your understanding of AI programming and psychology lets you fix problems with the AIs or cyborgs--or create problems, if you so desire. You can program computers and AIs and change their laws effectively.<br>- You can fully operate the Network Monitor, E-mail Administration, and AI Management Programs.",
 						"Experienced"		= "You have years of experience with computer networks, AI systems, telecommunications, and sysadmin tasks. You know the systems used on a daily basis intimately, and can diagnose complex problems.<br>- The antagonist dos program gives extra fake attacking nodes to the system log.<br>- You can use the command line on modular computers (type \"man\" for a list).",
 						"Master"		= "People are probably starting to wonder whether you might be a computer yourself. Computer code is your first language; you relate to AIs as easily as (probably more easily than) organics. You could build a telecommunications network from the ground up.")
+
+
+	skill_cost = list(1,2,2,3)
 
 // Category: Service
 
@@ -169,6 +181,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You're a botanist or farmer, capable of running a facility's hydroponics farms or doing botanical research. You are adept at creating custom hybrids and modified strains.",
 						"Master"		= "You're a specialized botanist. You can care for even the most exotic, fragile, or dangerous plants. You can use gene manipulation machinery with precision, and are often able to avoid the degradation of samples.")
 
+	skill_cost = list(1,2,2,3)
+
 /decl/hierarchy/skill/service/cooking
 	ID = "cooking"
 	name = "Cooking"
@@ -178,6 +192,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can make most meals while following instructions, and they generally turn out well. You have some experience with hosting, catering, and/or bartending.<br>- You can fully operate the drink dispensers.",
 						"Experienced"		= "You can cook professionally, keeping an entire crew fed easily. Your food is tasty and you don't have a problem with tricky or complicated dishes. You can be depended on to make just about any commonly-served drink.",
 						"Master"		= "Not only are you good at cooking and mixing drinks, but you can manage a kitchen staff and cater for special events. You can safely prepare exotic foods and drinks that would be poisonous if prepared incorrectly.")
+
+	skill_cost = list(1,2,2,3)
 
 // Category: Security
 
@@ -192,16 +208,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Master"		= "You specialize in hand-to-hand combat. You're well-trained in a practical martial art, and in good shape. You spend a lot of time practicing. You can take on just about anyone, use just about any weapon, and usually come out on top. You may be a professional athlete or special forces member.")
 	default_max = SKILL_EXPERT
 
-/decl/hierarchy/skill/security/combat/get_cost(var/level)
-	switch(level)
-		if(SKILL_BASIC)
-			return difficulty
-		if(SKILL_ADEPT, SKILL_EXPERT)
-			return 2*difficulty
-		if(SKILL_PROF)
-			return 4*difficulty
-		else
-			return 0
+	skill_cost = list(2,4,6,8)
 
 /decl/hierarchy/skill/security/weapons
 	ID = "weapons"
@@ -213,16 +220,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You've used firearms and other ranged weapons in high-stress situations, and your skills have become automatic. Your aim is good.",
 						"Master"		= "You are an exceptional shot with a variety of weapons, from simple to exotic. You use a weapon as naturally as though it were a part of your own body. You may be a sniper or special forces operator of some kind.<br>- You get extra accuracy for sniper rifles.<br>- You automatically eject shells from bolt-action firearms and shotguns.")
 
-/decl/hierarchy/skill/security/weapons/get_cost(var/level)
-	switch(level)
-		if(SKILL_BASIC)
-			return difficulty
-		if(SKILL_ADEPT)
-			return 2*difficulty
-		if(SKILL_EXPERT, SKILL_PROF)
-			return 4*difficulty
-		else
-			return 0
+	skill_cost = list(3,5,7,9)
 
 /decl/hierarchy/skill/security/forensics
 	ID = "forensics"
@@ -234,15 +232,7 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You're a pathologist, or detective. You've seen your share of bizarre cases, and spent a lot of time putting pieces of forensic puzzle together, so you're faster now.<br>- You can notice additional details upon examining, such as fibers, partial prints, and gunshot residue.",
 						"Master"		= "You're a big name in forensic science. You might be an investigator who cracked a famous case, or you published papers on new methods of forensics. Either way, if there's a forensic trail, you will find it, period.<br>- You can notice traces of wiped off blood.")
 
-
-/decl/hierarchy/skill/security/forensics/get_cost(var/level)
-	switch(level)
-		if(SKILL_BASIC, SKILL_ADEPT, SKILL_EXPERT)
-			return difficulty * 2
-		if(SKILL_PROF)
-			return 3 * difficulty
-		else
-			return 0
+	skill_cost = list(3,4,5,6)
 
 // Category: Engineering
 
@@ -255,7 +245,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can build, repair, or dismantle most things, but will occasionally make mistakes and have things not come out the way you expected.<br>- You can construct items from Bronze, Gold, Osmium, Plasteel, Platinum, Reinforced Glass, Sandstone, Silver, Deuterium, Metallic Hydrogen, Phoron, Phoron Glass, Tritium, and Uranium.<br>- You can construct furnitures.<br>- You can construct simple objects such as light fixtures, crude weapons, and wall-mounted frames.<br>- You can safely use the plasmacutter to deconstruct structures.",
 						"Experienced"		= "You know how to seal a breach, rebuild broken piping, and repair major damage. You know the basics of structural engineering.<br>- You can construct items from Osmium-Carbide Plasteel, Titanium, Diamond and make complex objects such as machine and weapon frames.",
 						"Master"		= "You are a construction worker or engineer. You could pretty much rebuild the installation or ship from the ground up, given supplies, and you're efficient and skilled at repairing damage.")
-	difficulty = SKILL_EASY
+
+	skill_cost = list(1,2,3,4)
 
 /decl/hierarchy/skill/engineering/electrical
 	ID = "electrical"
@@ -267,6 +258,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You can repair, build, and diagnose any electrical devices with ease. You know your way around APCs, SMES units, and monitoring software, and take apart or hack most objects.<br>- You can safely place remote signaling devices.<br>- You can examine one or two wires on the hacking panel.",
 						"Master"		= "You are an electrical engineer or the equivalent. You can design, upgrade, and modify electrical equipment and you are good at maximizing the efficiency of your power network. You can hack anything on the installation you can deal with power outages and electrical problems easily and efficiently.<br>- You can examine most wires on the hacking panel.")
 
+	skill_cost = list(2,3,4,5)
+
 /decl/hierarchy/skill/engineering/atmos
 	ID = "atmos"
 	name = "Atmospherics"
@@ -277,6 +270,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "Your atmospherics experience lets you find, diagnose, and fix breaches efficiently. You can manage complex atmospherics systems without fear of making mistakes, and are proficient with all monitoring and pumping equipment at your disposal.<br>- You can dispense a larger selection of pipes from the RPD.",
 						"Master"		= "You are an atmospherics specialist. You monitor, modify, and optimize the installation atmospherics system, and you can quickly and easily deal with emergencies. You can modify atmospherics systems to do pretty much whatever you want them to. You can easily handle a fire or breach, and are proficient at securing an area and rescuing civilians, but you're equally likely to have simply prevented it from happening in the first place.")
 
+	skill_cost = list(2,3,4,5)
+
 /decl/hierarchy/skill/engineering/engines
 	ID = "engines"
 	name = "Engines"
@@ -286,7 +281,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can set up the engine, and you probably won't botch it up too badly. You know how to protect yourself from radiation in the engine room. You can read the engine monitors and keep the engine going. An engine malfunction may stump you, but you can probably work out how to fix it... let's just hope you do so quickly enough to prevent serious damage.",
 						"Experienced"		= "You have years of experience with engines, and can set them up quickly and reliably. You're familiar with engine types other than the one you work with.<br>- You can fully read the SM monitor readings.<br>- You can examine the SM directly for its integrity.",
 						"Master"		= "Your engine is your baby and you know every minute detail of its workings. You can optimize the engine and you probably have your own favorite custom setup. You could build an engine from the ground up. When things go wrong, you know exactly what has happened and how to fix the problem. You can safely handle singularities and supermatter.<br>- You can examine the SM directly for an approximate number of its EER.")
-	difficulty = SKILL_HARD
+
+	skill_cost = list(1,3,5,7)
 
 // Category: Research
 
@@ -300,6 +296,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You have years of experience building or reverse-engineering complex devices. Your use of the lathes and destructive analyzers is efficient and methodical. You can design contraptions to order, and likely sell those designs at a profit.",
 						"Master"		= "You are an inventor or researcher. You can design, build, and modify equipment that most people don't even know exists. You are at home in the lab and the workshop and you've never met a gadget you couldn't take apart, put back together, and replicate.")
 
+	skill_cost = list(3,4,5,6)
+
 /decl/hierarchy/skill/research/science
 	ID = "science"
 	name = "Science"
@@ -309,6 +307,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You are a scientist, perhaps a graduate student or post-graduate researcher. You can design an experiment, analyze your results, publish your data, and integrate what you've learned with the research of other scientists. Your laboratory skills are reliable, and you know how to find information you need when you research a new scientific topic. You can dissect exotic xenofauna without many issues.",
 						"Experienced"		= "You are a junior researcher. You can formulate your own questions, use the tools at hand to test your hypotheses, and investigate entirely new phenomena. You likely have a track record of success in publishing your conclusions and attracting funding.",
 						"Master"		= "You are a professional researcher, and you have made multiple new discoveries in your field. Your experiments are well-designed. You are known as an authority in your specialty and your papers often appear in prestigious journals. You may be coordinating the research efforts of a team of scientists, and likely know how to make your findings appealing to investors.")
+
+	skill_cost = list(3,3,4,4)
 
 // Category: Medical
 
@@ -322,6 +322,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You are a senior nurse or paramedic, or a practicing doctor. You know how to use all of the medical devices available to treat a patient. Your deep knowledge of the body and medications will let you diagnose and come up with a course of treatment for most ailments. You can perform a full-body scan thoroughly and find important information.<br>- You can fully operate Body Scanners. You can perform all surgery steps if you have Experienced Anatomy skill",
 						"Master"		= "You are an experienced doctor or an expert nurse or EMT. You've seen almost everything there is to see when it comes to injuries and illness and even when it comes to something you haven't seen, you can apply your wide knowledge base to put together a treatment. In a pinch, you can do just about any medicine-related task, but your specialty, whatever it may be, is where you really shine.")
 
+	skill_cost = list(4,5,6,7)
+
 /decl/hierarchy/skill/medical/anatomy
 	ID = "anatomy"
 	name = "Anatomy"
@@ -332,6 +334,8 @@ GLOBAL_LIST_EMPTY(skills)
 						"Experienced"		= "You're a surgical resident, or an experienced medical doctor. You can put together broken bones, fix a damaged lung, patch up a liver, or remove an appendix without problems. But tricky surgeries, with an unstable patient or delicate manipulation of vital organs like the heart and brain, are at the edge of your ability, and you prefer to leave them to specialized surgeons. You can recognize when someone's anatomy is noticeably unusual. You're trained in working with several species, but you're probably better at surgery on your own species.<br>- You can do all surgery steps safely, if you have Experienced Medicine skill too.",
 						"Master"		= "You are an experienced surgeon. You can handle anything that gets rolled, pushed, or dragged into the OR, and you can keep a patient alive and stable even if there's no one to assist you. You can handle severe trauma cases or multiple organ failure, repair brain damage, and perform heart surgery. By now, you've probably specialized in one field, where you may have made new contributions to surgical technique. You can detect even small variations in the anatomy of a patient--even a changeling probably wouldn't slip by your notice, provided you could get one on the operating table.<br>- The penalty from operating on improper operating surfaces is reduced.")
 
+	skill_cost = list(5,6,7,8)
+
 /decl/hierarchy/skill/medical/chemistry
 	ID = "chemistry"
 	name = "Chemistry"
@@ -341,3 +345,5 @@ GLOBAL_LIST_EMPTY(skills)
 						"Trained"			= "You can accurately measure out reagents, grind powders, and perform chemical reactions. You may still lose some product on occasion, but are unlikely to endanger yourself or those around you.<br>- You can fully operate the chem dispenser.",
 						"Experienced"		= "You work as a chemist, or else you are a doctor with training in chemistry. If you are a research chemist, you can create most useful chemicals; if you are a pharmacist, you can make most medications. At this stage, you're working mostly by-the-book. You can weaponize your chemicals by making grenades, smoke bombs, and similar devices.<br>- You can examine held containers for scannable reagents.",
 						"Master"		= "You specialized in chemistry or pharmaceuticals; you are either a medical researcher or professional chemist. You can create custom mixes and make even the trickiest of medications easily. You understand how your pharmaceuticals interact with the bodies of your patients. You are probably the originator of at least one new chemical innovation.<br>- You can examine held containers for all reagents.")
+
+	skill_cost = list(4,5,6,7)
