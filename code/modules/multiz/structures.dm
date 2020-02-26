@@ -28,7 +28,8 @@
 				target_down = L
 				L.target_up = src
 				var/turf/T = get_turf(src)
-				T.ReplaceWithLattice()
+				if(!locate(/obj/structure/lattice) in T)
+					T.ReplaceWithLattice()
 				return
 	update_icon()
 

@@ -115,7 +115,8 @@
 		/obj/item/solar_assembly = 14,
 		/obj/item/weapon/stock_parts/circuitboard/solar_control,
 		/obj/item/weapon/tracker_electronics,
-		/obj/item/weapon/paper/solar
+		/obj/item/weapon/paper/solar,
+		/obj/item/weapon/storage/toolbox/electrical
 	)
 
 /obj/structure/closet/crate/solar_assembly

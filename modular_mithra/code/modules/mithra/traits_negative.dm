@@ -6,13 +6,13 @@
 	name = "Sluggish"
 	desc = "You move slower than the average person."
 	cost = -2
-	var_changes = list("slowdown" = 0.5)
+	var_changes = list("slowdown" = 1.5)
 
 /datum/trait/endurance_low
 	name = "Fragile"
-	desc = "Your body is more fragile than the average joe."
+	desc = "Your body is much, much more fragile than the average joe."
 	cost = -2
-	var_changes = list("total_health" = 75)
+	var_changes = list("total_health" = 65)
 
 	apply(var/datum/species/S,var/mob/living/carbon/human/H)
 		..(S,H)
@@ -23,13 +23,13 @@
 	name = "Thin Skin"
 	desc = "Your skin is thinner than normal, making you slightly more susceptible to physical damage."
 	cost = -1
-	var_changes = list("brute_mod" = 1.15)
+	var_changes = list("brute_mod" = 1.50)
 
 /datum/trait/minor_burn_weak
 	name = "Inflammable Skin"
 	desc = "You skin is somehow inflammable, making you slightly more susceptible to burns."
 	cost = -1
-	var_changes = list("burn_mod" = 1.15)
+	var_changes = list("burn_mod" = 1.50)
 
 /datum/trait/conductive
 	name = "Conductive Skin"
@@ -58,13 +58,13 @@
 	name = "Haemoglobin Improbus"
 	desc = "You have a lower blood-oxygen saturation, meaning asphyxiation is a greater risk to you."
 	cost = -1
-	var_changes = list("oxy_mod" = 1.25)
+	var_changes = list("oxy_mod" = 1.50)
 
 /datum/trait/toxin_weak
 	name = "Paper Liver"
 	desc = "Your metabolism isn't very good at processing toxins, making poisons more effective against you."
 	cost = -1
-	var_changes = list("toxins_mod" = 1.15)
+	var_changes = list("toxins_mod" = 1.50)
 
 /datum/trait/noodlyarms
 	name = "Muscular Atrophy"
@@ -76,19 +76,17 @@
 // BoH Materials
 /////////////////////
 
-/* // Disabled for the moment. No functionality, considering the variables are missing to my knowledge. - C
 /datum/trait/toxification_junky
 	name = "Recovering Addict"
 	desc = "Your body isn't quite used to being clean as of yet, and relapse very well might kill you. Be sure to notify Doctors not to overdose you!"
 	cost = -3
-	var_changes = list("chemOD_mod" = 5.0)
+	var_changes = list("toxins_mod" = 5.0)
 
 /datum/trait/hemophilia
 	name = "Hemophilia"
 	desc = "Your body doesn't quite stop bleeding once it starts. You need immediate treatment for anything, even minor wounds, or it might turn out real bad for you."
 	cost = -4
-	var_changes = list("bloodloss_rate" = 2.0, "blood_volume" = 480)
-*/
+	var_changes = list("blood_volume" = 105) //The bare minimum before it becomes critical.
 
 /datum/trait/stick_human
 	name = "Incredibly Frail"

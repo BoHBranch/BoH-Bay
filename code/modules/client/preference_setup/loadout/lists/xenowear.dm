@@ -4,7 +4,6 @@
 /datum/gear/suit/unathi/
 	sort_category = "Xenowear"
 	category = /datum/gear/suit/unathi/
-	whitelisted = list(SPECIES_UNATHI, SPECIES_YEOSA)
 
 /datum/gear/suit/unathi/mantle
 	display_name = "hide mantle (Unathi)"
@@ -37,7 +36,6 @@
 /datum/gear/ears/skrell/
 	sort_category = "Xenowear"
 	category = /datum/gear/ears/skrell/
-	whitelisted = list(SPECIES_SKRELL)
 
 /datum/gear/ears/skrell/chains
 	display_name = "headtail chain selection (Skrell)"
@@ -75,14 +73,16 @@
 /datum/gear/head/skrell_helmet
 	display_name = "Skrellian helmet"
 	path = /obj/item/clothing/head/helmet/skrell
-	whitelisted = list(SPECIES_SKRELL)
 	sort_category = "Xenowear"
-	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/officer, /datum/job/detective)
+	
+/datum/gear/uniform/skrell_bodysuit
+	display_name = "Skrellian uniform"
+	path = /obj/item/clothing/under/skrelljumpsuit
+	sort_category = "Xenowear"
 
 /datum/gear/accessory/skrell_badge
 	display_name = "skrellian SDTF badge"
 	path = /obj/item/clothing/accessory/badge/tags/skrell
-	whitelisted = list(SPECIES_SKRELL)
 	sort_category = "Xenowear"
 
 // IPC clothing
@@ -105,7 +105,6 @@
 	display_name = "gear harness (Full Body Prosthetic, Diona, Giant Armoured Serpentid)"
 	path = /obj/item/clothing/under/harness
 	sort_category = "Xenowear"
-	whitelisted = list(SPECIES_IPC,SPECIES_DIONA, SPECIES_NABBER)
 
 /datum/gear/shoes/toeless
 	display_name = "toeless jackboots"
@@ -123,43 +122,36 @@
 	display_name = "modified gloves, colored"
 	path = /obj/item/clothing/gloves/color/modified
 	sort_category = "Xenowear"
-	whitelisted = list(SPECIES_UNATHI, SPECIES_YEOSA)
 
 /datum/gear/gloves/latex/modified
 	display_name = "modified gloves, latex"
 	path = /obj/item/clothing/gloves/latex/modified
 	sort_category = "Xenowear"
-	whitelisted = list(SPECIES_UNATHI, SPECIES_YEOSA)
 
 /datum/gear/gloves/nitrile/modified
 	display_name = "modified gloves, nitrile"
 	path = /obj/item/clothing/gloves/latex/nitrile/modified
 	sort_category = "Xenowear"
-	whitelisted = list(SPECIES_UNATHI, SPECIES_YEOSA)
 
 /datum/gear/gloves/rainbow/modified
 	display_name = "modified gloves, rainbow"
 	path = /obj/item/clothing/gloves/rainbow/modified
 	sort_category = "Xenowear"
-	whitelisted = list(SPECIES_UNATHI, SPECIES_YEOSA)
 
 /datum/gear/gloves/evening/modified
 	display_name = "modified gloves, evening"
 	path = /obj/item/clothing/gloves/color/evening/modified
 	sort_category = "Xenowear"
-	whitelisted = list(SPECIES_UNATHI, SPECIES_YEOSA)
 
 /datum/gear/gloves/botany/modified
 	display_name = "modified gloves, botany"
 	path = /obj/item/clothing/gloves/thick/botany/modified
 	sort_category = "Xenowear"
-	whitelisted = list(SPECIES_UNATHI, SPECIES_YEOSA)
 
 /datum/gear/gloves/work/modified
 	display_name = "modified gloves, work"
 	path = /obj/item/clothing/gloves/thick/modified
 	sort_category = "Xenowear"
-	whitelisted = list(SPECIES_UNATHI, SPECIES_YEOSA)
 
 // Vox clothing
 /datum/gear/mask/gas/vox

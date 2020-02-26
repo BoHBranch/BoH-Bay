@@ -14,7 +14,7 @@
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp, /datum/unarmed_attack/claws)
 
-	description = "Fox-wolf-dog-things! This is just a placeholder description!"
+	description = "Fox-wolf-dog-thing genemodders. This is just a placeholder description."
 
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
@@ -48,3 +48,14 @@
 			CULTURE_UNATHI,
 		)
 	)
+
+/datum/species/vulpkanin/proc/handle_coco(var/mob/living/carbon/human/M, var/datum/reagent/nutriment/coco, var/efficiency = 1)
+	var/effective_dose = efficiency * M.chem_doses[coco.type]
+	if(effective_dose < 5)
+		return
+	M.druggy = max(M.druggy, 10)
+	M.add_chemical_effect(CE_PULSE, -1)
+	if(effective_dose > 15 && prob(7))
+		M.emote(pick("twitch", "drool"))
+	if(effective_dose > 20 && prob(10))
+		M.SelfMove(pick(GLOB.cardinal))

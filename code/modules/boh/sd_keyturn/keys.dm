@@ -1,8 +1,9 @@
 /obj/item/weapon/sd_key
 	name = "self destruct key"
-	desc = "For when the final duty must be performed."
+	desc = "For when the final duty must be performed. The key can only be imprinted by a head of staff, premature activation is not required."
 	icon = 'icons/boh/items/sd_keys.dmi'
 	icon_state = "key_base"
+	w_class = ITEM_SIZE_TINY
 	var/mob/living/carbon/human/owner
 	var/list/allowed_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos) //Who can imprint this key?
 	var/ownertag
@@ -17,6 +18,7 @@
 
 
 /obj/item/weapon/sd_key/Initialize()
+	. = ..()
 	update_icon()
 
 /obj/item/weapon/sd_key/examine(mob/user)

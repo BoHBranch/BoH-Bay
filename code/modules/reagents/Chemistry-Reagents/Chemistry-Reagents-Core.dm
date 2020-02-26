@@ -106,6 +106,10 @@
 /datum/reagent/water/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
 	M.adjust_hydration(removed * 10)
 
+/datum/reagent/water/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.waterlevel += removed
+	return
+
 /datum/reagent/water/touch_turf(var/turf/simulated/T)
 	if(!istype(T))
 		return

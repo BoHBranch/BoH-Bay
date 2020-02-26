@@ -43,19 +43,10 @@ GLOBAL_DATUM_INIT(paramounts, /datum/antagonist/paramount, new)
 	if(!..())
 		return
 	// Copied from ninja for now.
-	var/objective_list = list(1,2,3)
+	var/objective_list = list(1,2)
 	for(var/i=rand(2,3),i>0,i--)
 		switch(pick(objective_list))
-			if(1)//Kill
-				var/datum/objective/assassinate/objective = new
-				objective.owner = player
-				objective.target = objective.find_target()
-				if(objective.target != "Free Objective")
-					player.objectives += objective
-				else
-					i++
-				objective_list -= 1 // No more than one kill objective
-			if(2)//Protect
+			if(1)//Protect
 				var/datum/objective/protect/objective = new
 				objective.owner = player
 				objective.target = objective.find_target()
@@ -64,7 +55,7 @@ GLOBAL_DATUM_INIT(paramounts, /datum/antagonist/paramount, new)
 				else
 					i++
 					objective_list -= 3
-			if(3)//Harm
+			if(2)//Harm
 				var/datum/objective/harm/objective = new
 				objective.owner = player
 				objective.target = objective.find_target()

@@ -67,3 +67,40 @@
 /area/ship/ascent/fore_starboard_spike
 	name = "\improper Ascent Seedship - Fore Starboard Spike"
 	icon_state = "ai"
+
+//boh
+/area/ship/ascent/subdeck_north
+	name = "\improper Ascent Seedship - Fore Starboard Subdeck"
+	icon_state = "armory"
+
+/area/ship/ascent/subdeck_north_spike
+	name = "\improper Ascent Seedship - Fore Starboard Spike"
+	icon_state = "purple"
+
+/area/ship/ascent/subdeck_center
+	name = "\improper Ascent Seedship - Subdeck Center"
+	icon_state = "green"
+
+/area/ship/ascent/subdeck_south
+	name = "\improper Ascent Seedship - Fore Port Subdeck"
+	icon_state = "cafeteria"
+
+/area/ship/ascent/subdeck_south_spike
+	name = "\improper Ascent Seedship - Fore Port Spike"
+	icon_state = "purple"
+
+/area/ship/ascent/subdeck_atmos
+	name = "\improper Ascent Seedship - Fore Starboard Atmos"
+	icon_state = "ai"
+
+/area/ship/ascent/subdeck_hospital
+	name = "\improper Ascent Seedship - Hospital Chamber"
+	icon_state = "entry_1"
+
+/area/ship/ascent/subdeck_armory
+	name = "\improper Ascent Seedship - Subdeck Armory"
+	icon_state = "entry_1"
+
+/area/ship/ascent/subdeck_gyne_quarters
+	name = "\improper Ascent Seedship - Gyne's Quarters"
+	icon_state = "ai"

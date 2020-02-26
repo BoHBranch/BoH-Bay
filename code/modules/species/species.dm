@@ -104,7 +104,7 @@
 	var/gibbed_anim =   "gibbed-h"
 	var/dusted_anim =   "dust-h"
 
-	var/death_sound
+	var/death_sound = 'sound/effects/deathrattle.ogg'
 	var/death_message = "seizes up and falls limp, their eyes dead and lifeless..."
 	var/knockout_message = "collapses, having been knocked unconscious."
 	var/halloss_message = "slumps over, too weak to continue fighting..."
@@ -536,7 +536,6 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 		return 1
 
 	H.set_fullscreen(H.eye_blind && !H.equipment_prescription, "blind", /obj/screen/fullscreen/blind)
-	H.set_fullscreen(H.stat == UNCONSCIOUS, "blackout", /obj/screen/fullscreen/blackout)
 
 	if(config.welder_vision)
 		H.set_fullscreen(H.equipment_tint_total, "welder", /obj/screen/fullscreen/impaired, H.equipment_tint_total)
@@ -784,9 +783,9 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 
 /datum/species/proc/skills_from_age(age)	//Converts an age into a skill point allocation modifier. Can be used to give skill point bonuses/penalities not depending on job.
 	switch(age)
-		if(0 to 22) 	. = -4
-		if(23 to 30) 	. = 0
-		if(31 to 45)	. = 4
+		if(0 to 22) 	. = 8
+		if(23 to 30) 	. = 8
+		if(31 to 45)	. = 8
 		else			. = 8
 
 /datum/species/proc/post_organ_rejuvenate(var/obj/item/organ/org, var/mob/living/carbon/human/H)

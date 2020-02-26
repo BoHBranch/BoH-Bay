@@ -189,11 +189,16 @@
 
 /datum/reagent/diethylamine
 	name = "Diethylamine"
-	description = "A secondary amine, mildly corrosive."
+	description = "A secondary amine, mildly corrosive. Primarily used for fertilizers."
 	taste_description = "iron"
 	reagent_state = LIQUID
 	color = "#604030"
 	value = 0.9
+
+/datum/reagent/diethylamine/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.nutrilevel += removed*2
+	H.pestlevel -= removed*2
+	return
 
 /datum/reagent/surfactant // Foam precursor
 	name = "Azosurfactant"

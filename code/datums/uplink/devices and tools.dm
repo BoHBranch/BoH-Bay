@@ -11,11 +11,13 @@
 	item_cost = 8
 	path = /obj/item/weapon/storage/toolbox/syndicate
 
+/*
 /datum/uplink_item/item/tools/ductape
 	name = "Duct Tape"
-	desc = "A roll of duct tape. changes \"HELP\" into sexy \"mmm\"."
+	desc = "A roll of duct tape. Changes \"HELP\" into sexy \"mmm\"."
 	item_cost = 2
 	path = /obj/item/weapon/tape_roll
+*/
 
 /datum/uplink_item/item/tools/money
 	name = "Operations Funding"
@@ -33,7 +35,7 @@
 
 /datum/uplink_item/item/tools/plastique
 	name = "C-4"
-	desc = "Set this on a wall to put a hole exactly where you need it."
+	desc = "Set this on a wall to put a hole exactly where you need it, without too much extra hole."
 	item_cost = 16
 	path = /obj/item/weapon/plastique
 
@@ -66,10 +68,10 @@
 
 /datum/uplink_item/item/tools/encryptionkey_binary
 	name = "Binary Translator Key"
-	desc = "This headset encryption key will allow you to both listen and speak on the binary channel that \
-	synthetics and AI have access to. Remember, non-synths don't normally have access to this channel, so talking in it will raise suspicion. \
+	desc = "This headset encryption key will allow you to listen in on the binary channel that \
+	synthetics and AI have access to. \
 	Use a screwdriver on your headset to exchange keys."
-	item_cost = 20
+	item_cost = 4
 	path = /obj/item/device/encryptionkey/binary
 
 /datum/uplink_item/item/tools/emag
@@ -83,7 +85,7 @@
 
 /datum/uplink_item/item/tools/hacking_tool
 	name = "Door Hacking Tool"
-	item_cost = 24
+	item_cost = 14
 	path = /obj/item/device/multitool/hacktool
 	desc = "Appears and functions as a standard multitool until a screwdriver is used to toggle it. \
 			While in hacking mode, this device will grant full access to any airlock in 20 to 40 seconds. \
@@ -92,7 +94,7 @@
 /datum/uplink_item/item/tools/space_suit
 	name = "Voidsuit and Tactical Mask"
 	desc = "A satchel containing a non-regulation voidsuit, voidsuit helmet, tactical mask, and oxygen tank. \
-	Conceal your identity, while also not dying in space."
+	Conceal your identity, while also not dying in space. This fits primarily humans, and might not work with others."
 	item_cost = 28
 	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/space
 
@@ -122,10 +124,6 @@
 	teleportation beacons. Requires a projector and teleporter hub nearby to work."
 	item_cost = 40
 	path = /obj/item/weapon/stock_parts/circuitboard/teleporter
-
-/datum/uplink_item/item/tools/teleporter/New()
-	..()
-	antag_roles = list(MODE_MERCENARY)
 
 /datum/uplink_item/item/tools/ai_module
 	name = "Hacked AI Upload Module"

@@ -93,7 +93,7 @@ var/const/FALLOFF_SOUNDS = 0.5
 
 	//sound volume falloff with pressure
 	var/pressure_factor = 1.0
-	
+
 	S.volume *= get_sound_volume_multiplier()
 
 	var/turf/T = get_turf(src)
@@ -189,3 +189,11 @@ var/const/FALLOFF_SOUNDS = 0.5
 			if ("chop") soundin = pick(GLOB.chop_sound)
 			if ("glasscrack") soundin = pick(GLOB.glasscrack_sound)
 	return soundin
+
+/client/verb/stop_sounds()
+	set name = "Stop All Sounds"
+	set desc = "Stop all sounds that are currently playing on your client."
+	set category = "OOC"
+
+	if(mob)
+		mob << sound(null)

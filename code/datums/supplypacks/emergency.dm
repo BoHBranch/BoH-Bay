@@ -1,8 +1,8 @@
 /decl/hierarchy/supply_pack/emergency
-	name = "Self-Protection"
+	name = "Civilian Protection"
 
 /decl/hierarchy/supply_pack/emergency/civarmor
-	name = "Light Armor - Civilian"
+	name = "Armor - Civilian"
 	contains = list(/obj/item/weapon/paper/warcrime_notice,
 					/obj/item/clothing/suit/armor/pcarrier/grey/light/civ = 4,
 					/obj/item/clothing/head/hardhat/self_protection = 4)
@@ -10,9 +10,9 @@
 	containername = "civilian light armor crate"
 
 /decl/hierarchy/supply_pack/emergency/greyguards
-	name = "Light Armor - Limb guards, grey"
-	contains = list(/obj/item/clothing/accessory/armguards/grey = 4,
-					/obj/item/clothing/accessory/legguards/grey = 4)
+	name = "Armor - Arm and leg pads, grey"
+	contains = list(/obj/item/clothing/accessory/armguards/light/grey = 4,
+					/obj/item/clothing/accessory/legguards/light/grey = 4)
 	cost = 25
 	containername = "limb guards crate"
 

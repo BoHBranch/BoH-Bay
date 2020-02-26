@@ -45,91 +45,6 @@
 	// Seed details/line data.
 	var/datum/seed/seed = null // The currently planted seed
 
-	// Reagent information for process(), consider moving this to a controller along
-	// with cycle information under 'mechanical concerns' at some point.
-	var/global/list/toxic_reagents = list(
-		/datum/reagent/dylovene =         -2,
-		/datum/reagent/toxin =             2,
-		/datum/reagent/hydrazine =         2.5,
-		/datum/reagent/acetone =	       1,
-		/datum/reagent/acid =              1.5,
-		/datum/reagent/acid/hydrochloric = 1.5,
-		/datum/reagent/acid/polyacid =     3,
-		/datum/reagent/toxin/plantbgone =  3,
-		/datum/reagent/cryoxadone =       -3,
-		/datum/reagent/radium =            2,
-		/datum/reagent/three_eye =         2
-		)
-	var/global/list/nutrient_reagents = list(
-		/datum/reagent/drink/milk =                     0.1,
-		/datum/reagent/ethanol/beer =                   0.25,
-		/datum/reagent/phosphorus =                     0.1,
-		/datum/reagent/sugar =                          0.1,
-		/datum/reagent/drink/sodawater =                0.1,
-		/datum/reagent/ammonia =                        1,
-		/datum/reagent/diethylamine =                   2,
-		/datum/reagent/nutriment =                      1,
-		/datum/reagent/adminordrazine =                 1,
-		/datum/reagent/toxin/fertilizer/eznutrient =    1,
-		/datum/reagent/toxin/fertilizer/robustharvest = 1,
-		/datum/reagent/toxin/fertilizer/left4zed =      1
-		)
-	var/global/list/weedkiller_reagents = list(
-		/datum/reagent/hydrazine =          -4,
-		/datum/reagent/phosphorus =         -2,
-		/datum/reagent/sugar =               2,
-		/datum/reagent/acid =               -2,
-		/datum/reagent/acid/hydrochloric =  -2,
-		/datum/reagent/acid/polyacid =      -4,
-		/datum/reagent/toxin/plantbgone =   -8,
-		/datum/reagent/adminordrazine =     -5
-		)
-	var/global/list/pestkiller_reagents = list(
-		/datum/reagent/sugar =                 2,
-		/datum/reagent/diethylamine =         -2,
-		/datum/reagent/toxin/bromide =        -2,
-		/datum/reagent/toxin/methyl_bromide = -4,
-		/datum/reagent/adminordrazine =       -5
-		)
-	var/global/list/water_reagents = list(
-		/datum/reagent/water =           1,
-		/datum/reagent/adminordrazine =  1,
-		/datum/reagent/drink/milk =      0.9,
-		/datum/reagent/ethanol/beer =    0.7,
-		/datum/reagent/hydrazine =      -2,
-		/datum/reagent/phosphorus =     -0.5,
-		/datum/reagent/water =           1,
-		/datum/reagent/drink/sodawater = 1,
-		)
-
-	// Beneficial reagents also have values for modifying yield_mod and mut_mod (in that order).
-	var/global/list/beneficial_reagents = list(
-		/datum/reagent/ethanol/beer =                    list( -0.05, 0,   0  ),
-		/datum/reagent/hydrazine =                       list( -2,    0,   0  ),
-		/datum/reagent/phosphorus =                      list( -0.75, 0,   0  ),
-		/datum/reagent/drink/sodawater =                 list(  0.1,  0,   0  ),
-		/datum/reagent/acid =                            list( -1,    0,   0  ),
-		/datum/reagent/acid/hydrochloric =               list( -1,    0,   0  ),
-		/datum/reagent/acid/polyacid =                   list( -2,    0,   0  ),
-		/datum/reagent/toxin/plantbgone =                list( -2,    0,   0.2),
-		/datum/reagent/cryoxadone =                      list(  3,    0,   0  ),
-		/datum/reagent/ammonia =                         list(  0.5,  0,   0  ),
-		/datum/reagent/diethylamine =                    list(  1,    0,   0  ),
-		/datum/reagent/nutriment =                       list(  0.5,  0.1, 0  ),
-		/datum/reagent/radium =                          list( -1.5,  0,   0.2),
-		/datum/reagent/adminordrazine =                  list(  1,    1,   1  ),
-		/datum/reagent/toxin/fertilizer/robustharvest =  list(  0,    0.2, 0  ),
-		/datum/reagent/toxin/fertilizer/left4zed =       list(  0,    0,   0.2),
-		/datum/reagent/three_eye =                       list(  -1  , 0,   0.5)
-		)
-
-	// Mutagen list specifies minimum value for the mutation to take place, rather
-	// than a bound as the lists above specify.
-	var/global/list/mutagenic_reagents = list(
-		/datum/reagent/radium =  8,
-		/datum/reagent/mutagen = 15,
-		/datum/reagent/toxin/fertilizer/left4zed = 30)
-
 /obj/machinery/portable_atmospherics/hydroponics/AltClick()
 	if(mechanical && !usr.incapacitated() && Adjacent(usr))
 		close_lid(usr)
@@ -225,42 +140,8 @@
 	reagents.trans_to_obj(temp_chem_holder, min(reagents.total_volume,rand(1,3)))
 
 	for(var/datum/reagent/R in temp_chem_holder.reagents.reagent_list)
-
 		var/reagent_total = temp_chem_holder.reagents.get_reagent_amount(R.type)
-
-		if(seed && !dead)
-			//Handle some general level adjustments.
-			if(toxic_reagents[R.type])
-				toxins += toxic_reagents[R.type]         * reagent_total
-			if(weedkiller_reagents[R.type])
-				weedlevel += weedkiller_reagents[R.type] * reagent_total
-			if(pestkiller_reagents[R.type])
-				pestlevel += pestkiller_reagents[R.type] * reagent_total
-
-			// Beneficial reagents have a few impacts along with health buffs.
-			if(beneficial_reagents[R.type])
-				health += beneficial_reagents[R.type][1]       * reagent_total
-				yield_mod += beneficial_reagents[R.type][2]    * reagent_total
-				mutation_mod += beneficial_reagents[R.type][3] * reagent_total
-
-			// Mutagen is distinct from the previous types and mostly has a chance of proccing a mutation.
-			if(mutagenic_reagents[R.type])
-				mutation_level += reagent_total*mutagenic_reagents[R.type]+mutation_mod
-
-		// Handle nutrient refilling.
-		if(nutrient_reagents[R.type])
-			nutrilevel += nutrient_reagents[R.type]  * reagent_total
-
-		// Handle water and water refilling.
-		var/water_added = 0
-		if(water_reagents[R.type])
-			var/water_input = water_reagents[R.type] * reagent_total
-			water_added += water_input
-			waterlevel += water_input
-
-		// Water dilutes toxin level.
-		if(water_added > 0)
-			toxins -= round(water_added/4)
+		R.affect_tray(src,seed,reagent_total)
 
 	temp_chem_holder.reagents.clear_reagents()
 	check_health()

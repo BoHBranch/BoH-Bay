@@ -288,7 +288,7 @@
 		var/datum/objective/new_objective = null
 
 		switch (new_obj_type)
-			if ("assassinate","protect","debrain", "harm", "brig")
+			if ("protect", "harm", "brig")
 				//To determine what to name the objective in explanation text.
 				var/objective_type_capital = uppertext(copytext(new_obj_type, 1,2))//Capitalize first letter.
 				var/objective_type_text = copytext(new_obj_type, 2)//Leave the rest of the text.
@@ -300,7 +300,7 @@
 						possible_targets += possible_target.current
 
 				var/mob/def_target = null
-				var/objective_list[] = list(/datum/objective/assassinate, /datum/objective/protect, /datum/objective/debrain)
+				var/objective_list[] = list(/datum/objective/protect)
 				if (objective&&(objective.type in objective_list) && objective:target)
 					def_target = objective:target.current
 

@@ -191,3 +191,9 @@
 	band_color = COLOR_WHITE
 	starts_with = list()
 	matter = list(MATERIAL_PLASTIC = 150, MATERIAL_GLASS = 50)
+
+//boh
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim
+	name = "autoinjector (stims)"
+	band_color = COLOR_DARK_GRAY
+	starts_with = list(/datum/reagent/tramadol/oxycodone = 10,/datum/reagent/inaprovaline = 5)

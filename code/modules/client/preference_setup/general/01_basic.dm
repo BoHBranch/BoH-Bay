@@ -30,7 +30,7 @@ datum/preferences
 	var/datum/species/S = all_species[pref.species ? pref.species : SPECIES_HUMAN]
 	if(!S) S = all_species[SPECIES_HUMAN]
 	pref.age                = sanitize_integer(pref.age, S.min_age, S.max_age, initial(pref.age))
-	pref.gender             = sanitize_inlist(pref.gender, S.genders, pick(S.genders))
+	pref.gender             = sanitize_inlist(pref.gender, S.genders, initial(pref.gender))
 	pref.spawnpoint         = sanitize_inlist(pref.spawnpoint, spawntypes(), initial(pref.spawnpoint))
 	pref.be_random_name     = sanitize_integer(pref.be_random_name, 0, 1, initial(pref.be_random_name))
 	// This is a bit noodly. If pref.cultural_info[TAG_CULTURE] is null, then we haven't finished loading/sanitizing, which means we might purge
@@ -40,7 +40,13 @@ datum/preferences
 		if(check)
 			pref.real_name = check.sanitize_name(pref.real_name, pref.species)
 			if(!pref.real_name)
-				pref.real_name = random_name(pref.gender, pref.species)
+				pref.real_name = "Urist Mc[capitalize(pick(GLOB.last_names))]"
+				if(S == all_species[SPECIES_HUMAN])
+					pref.f_style = "Dwarf Beard"
+					pref.r_facial = 172
+					pref.g_facial = 86
+					pref.r_hair = 172
+					pref.g_hair = 86
 
 /datum/category_item/player_setup_item/physical/basic/content()
 	. = list()

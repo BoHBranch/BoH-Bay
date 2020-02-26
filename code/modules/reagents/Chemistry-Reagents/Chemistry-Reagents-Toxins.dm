@@ -35,6 +35,12 @@
 		if(dam)
 			M.adjustToxLoss(target_organ ? (dam * 0.75) : dam)
 
+/datum/reagent/toxin/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.toxins += removed*strength*0.5
+	H.weedlevel -= removed*strength*1
+	H.pestlevel -= removed*strength*0.25
+	return
+
 /datum/reagent/toxin/denatured
 	name = "denatured toxin"
 	description = "Once toxic, now harmless."
@@ -73,7 +79,12 @@
 	reagent_state = LIQUID
 	color = "#003333"
 	target_organ = BP_BRAIN
-	strength = 10
+	strength = 15
+
+/datum/reagent/toxin/carpotoxin/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(prob(volume*2))
+		M.confused = max(M.confused, 3)
+	..()
 
 /datum/reagent/toxin/venom
 	name = "Spider Venom"
@@ -270,15 +281,32 @@
 	color = "#664330"
 	heating_point = null
 	heating_products = null
+	var/fertilizer_strength = 1
+
+/datum/reagent/toxin/fertilizer/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.nutrilevel += removed*fertilizer_strength
+	return
 
 /datum/reagent/toxin/fertilizer/eznutrient
 	name = "EZ Nutrient"
+	fertilizer_strength = 1
 
 /datum/reagent/toxin/fertilizer/left4zed
 	name = "Left-4-Zed"
+	fertilizer_strength = 0.75
+
+/datum/reagent/toxin/fertilizer/left4zed/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.yield_mod = 1
+	H.mutation_mod += 0.2 * removed
+	return ..()
 
 /datum/reagent/toxin/fertilizer/robustharvest
 	name = "Robust Harvest"
+	fertilizer_strength = 2
+
+/datum/reagent/toxin/fertilizer/robustharvest/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.yield_mod += removed * 0.1
+	return ..()
 
 /datum/reagent/toxin/plantbgone
 	name = "Plant-B-Gone"
@@ -296,6 +324,11 @@
 			for(var/obj/effect/overlay/wallrot/E in W)
 				qdel(E)
 			W.visible_message("<span class='notice'>The fungi are completely dissolved by the solution!</span>")
+
+/datum/reagent/toxin/plantbgone/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.toxins += removed*strength*2
+	H.weedlevel -= removed*strength*2
+	return
 
 /datum/reagent/toxin/plantbgone/touch_obj(var/obj/O, var/volume)
 	if(istype(O, /obj/effect/vine))
@@ -320,6 +353,10 @@
 	power = 10
 	meltdose = 4
 	max_damage = 60
+
+/datum/reagent/acid/polyacid/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.health -= removed*power
+	return
 
 /datum/reagent/acid/stomach
 	name = "stomach acid"
@@ -384,6 +421,10 @@
 			domutcheck(M, null)
 			M.UpdateAppearance()
 	M.apply_damage(10 * removed, IRRADIATE, armor_pen = 100)
+
+/datum/reagent/mutagen/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.mutation_level += removed*5
+	return ..()
 
 /datum/reagent/slimejelly
 	name = "Slime Jelly"
@@ -878,8 +919,7 @@
 			H.zombify()
 		else if (true_dose > 1 && prob(20))
 			H.zombify()
-		else if (prob(10))
-			to_chat(H, "<span class='warning'>You feel terribly ill!</span>")
+			to_chat(H, "<span class='warning'>You feel as if you're going to di-... Oh...</span>")
 
 /datum/reagent/toxin/bromide
 	name = "Bromide"
@@ -947,3 +987,16 @@
 	heating_products = list(/datum/reagent/acetone, /datum/reagent/carbon, /datum/reagent/ethanol)
 	heating_point = 145 CELSIUS
 	heating_message = "separates."
+
+/datum/reagent/toxin/saltpetre
+	name = "Saltpetre"
+	description = "Also known as potassium nitrate. Useful for increasing the potency of plants, however using too much can poison it."
+	taste_description = "salty cleaner"
+	color = "#f2f2e1"
+	strength = 2
+
+/datum/reagent/toxin/saltpetre/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.toxins += removed*strength*0.1
+	H.weedlevel += removed*strength*0.05
+	seed.set_trait(TRAIT_POTENCY, seed.get_trait(TRAIT_POTENCY) + removed*0.1, 200, 0)
+	return

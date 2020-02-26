@@ -10,3 +10,7 @@
 	spawner_type = /mob/living/simple_animal/hostile/carp/holodeck
 	deliveryamt = 4
 	newvars = list("faction" = null, "melee_damage_lower" = 0, "melee_damage_upper" = 0, "environment_smash" = 0, "destroy_surroundings" = 0)
+
+/obj/item/weapon/grenade/fake/desc
+	icon_state = "frggrenade"
+	desc = "A hand held grenade, with an adjustable timer. This one has some chalk on the side, marking it as a dud."

@@ -140,8 +140,8 @@
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
 	name = "rubber bullet"
 	damage_flags = 0
-	damage = 5
-	agony = 30
+	damage = 10
+	agony = 35
 	embed = 0
 
 /obj/item/projectile/bullet/pistol/rubber/holdout
