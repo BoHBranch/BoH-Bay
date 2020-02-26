@@ -212,7 +212,7 @@
 	desc = "Insignia denoting the rank of Sergeant Major."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer
-	icon_state = "MO1"
+	icon_state = "MO1A"
 	overlay_state = "armyrank_officer"
 	name = "ranks (O-1 second lieutenant)"
 	desc = "Insignia denoting the rank of Second Lieutenant."
