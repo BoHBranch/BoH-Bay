@@ -510,3 +510,8 @@
 			turfs.Add(T)
 
 	return turfs
+
+/obj/machinery/power/shield_generator/precharged/Initialize()
+	. = ..()
+	field_radius = 200
+	current_energy = max_energy
