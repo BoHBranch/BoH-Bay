@@ -19853,7 +19853,7 @@
 	autoset_access = 0;
 	id_tag = "MedbayFoyer";
 	name = "Infirmary";
-	req_access = list(list("ACCESS_MEDICAL","ACCESS_MORGUE","ACCESS_TORCH_CREW"))
+	req_access = list(list("ACCESS_MEDICAL","ACCESS_MORGUE"))
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/infirmreception)
