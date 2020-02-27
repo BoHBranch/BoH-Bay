@@ -406,13 +406,15 @@
 /turf/simulated/floor/tiled/dark,
 /area/medical/washroom)
 "aaK" = (
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
-/area/security/brig/chamber)
+/area/security/triage)
 "aaL" = (
 /obj/machinery/alarm{
 	pixel_y = 24
@@ -648,6 +650,26 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
+"abg" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated,
+/turf/simulated/floor/plating,
+/area/security/wing)
 "abh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/white,
@@ -973,11 +995,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/security/triage)
 "abB" = (
-/obj/machinery/flasher{
-	id_tag = "permflash";
-	name = "Floor mounted flash";
-	pixel_x = 0
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
@@ -991,11 +1008,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/effect/floor_decal/corner/red{
-	dir = 5
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/monotile,
+/obj/effect/catwalk_plated,
+/turf/simulated/floor/plating,
 /area/security/triage)
 "abC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -1903,13 +1917,13 @@
 /area/security/armoury)
 "adn" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/brig,
 /obj/machinery/alarm{
 	alarm_id = "petrov2";
 	dir = 8;
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
+/obj/structure/closet/secure_closet/brig,
 /turf/simulated/floor/tiled/monotile,
 /area/security/wing)
 "ado" = (
@@ -2073,12 +2087,14 @@
 /turf/space,
 /area/space)
 "adB" = (
-/obj/structure/table/rack,
-/obj/item/weapon/reagent_containers/syringe/steroid,
-/obj/item/weapon/reagent_containers/syringe/drugs,
-/obj/random/illegal,
-/turf/simulated/floor/tiled/techfloor,
-/area/security/brig/chamber)
+/obj/machinery/flasher{
+	id_tag = "permflash";
+	name = "Floor mounted flash";
+	pixel_x = 0
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/monotile,
+/area/security/triage)
 "adC" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 4
@@ -3644,8 +3660,8 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/security/brig/chamber)
 "agi" = (
-/turf/simulated/floor/plating,
-/area/security/brig/chamber)
+/turf/simulated/floor/tiled/monotile,
+/area/security/triage)
 "agj" = (
 /obj/item/weapon/storage/box/ammo/shotgunammo/full,
 /obj/structure/table/rack/shelf/steel,
@@ -4341,25 +4357,19 @@
 /turf/simulated/wall/prepainted,
 /area/security/triage)
 "ahq" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
+/obj/machinery/light,
+/obj/machinery/vending/wallmed1{
+	dir = 1;
+	icon_state = "wallmed";
+	name = "Emergency NanoMed";
+	pixel_x = 0;
+	pixel_y = -32
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+/obj/effect/floor_decal/corner/red{
+	dir = 10
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated,
-/turf/simulated/floor/plating,
-/area/security/wing)
+/turf/simulated/floor/tiled/monotile,
+/area/security/triage)
 "ahr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -4459,7 +4469,7 @@
 	dir = 5
 	},
 /obj/structure/table/standard,
-/obj/item/weapon/storage/firstaid/stab,
+/obj/item/weapon/storage/firstaid/adv,
 /turf/simulated/floor/tiled,
 /area/security/triage)
 "ahA" = (
@@ -4809,20 +4819,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
-"aib" = (
-/obj/machinery/light,
-/obj/machinery/vending/wallmed1{
-	dir = 1;
-	icon_state = "wallmed";
-	name = "Emergency NanoMed";
-	pixel_x = 0;
-	pixel_y = -32
-	},
-/obj/effect/floor_decal/corner/red{
-	dir = 10
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/security/triage)
 "aic" = (
 /obj/machinery/newscaster{
 	pixel_x = 0;
@@ -19857,7 +19853,7 @@
 	autoset_access = 0;
 	id_tag = "MedbayFoyer";
 	name = "Infirmary";
-	req_access = list(list("ACCESS_MEDICAL","ACCESS_MORGUE","ACCESS_TORCH_CREW"))
+	req_access = list(list("ACCESS_MEDICAL","ACCESS_MORGUE"))
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/infirmreception)
@@ -44066,7 +44062,7 @@ aIe
 qxQ
 wXc
 ahf
-ahq
+abg
 adn
 tkr
 adw
@@ -44271,7 +44267,7 @@ ahg
 ahr
 ahU
 ahU
-adB
+ahU
 amm
 amL
 anh
@@ -44471,9 +44467,9 @@ aJw
 aKJ
 ahh
 abx
+aaK
 abA
 ahU
-amm
 amm
 amP
 aaI
@@ -44673,9 +44669,9 @@ xCn
 eVQ
 ahi
 abB
-aib
+adB
+ahq
 ahU
-aaK
 abi
 abD
 agh
@@ -44875,9 +44871,9 @@ aJy
 aKL
 ahj
 ahz
+agi
 aic
 ahU
-agi
 abn
 abG
 anz
@@ -45079,7 +45075,7 @@ ahp
 ahH
 ahp
 ahU
-aGP
+ahU
 agB
 abG
 anA
