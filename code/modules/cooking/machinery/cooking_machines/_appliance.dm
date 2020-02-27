@@ -668,5 +668,5 @@
 	cap_rating = total_component_rating_of_type(/obj/item/weapon/stock_parts/capacitor)
 
 	active_power_usage = initial(active_power_usage) - scan_rating * 25
-	heating_power = initial(heating_power) + cap_rating * 25
+	heating_power = initial(heating_power) + cap_rating * 50
 	cooking_power = cooking_coeff * (1 + (scan_rating + cap_rating) / 20) // 100% eff. becomes 120%, 140%, 160% w/ better parts

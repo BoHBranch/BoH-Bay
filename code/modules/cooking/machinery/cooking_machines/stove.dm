@@ -6,7 +6,7 @@
 	appliancetype = PAN
 	food_color = "#a34719"
 	can_burn_food = TRUE
-	active_power_usage = 3 KILOWATTS // Half that of the oven
+	active_power_usage = 6 KILOWATTS
 	heating_power = 6000
 	on_icon = "stove_on"
 	off_icon = "stove_off"
@@ -14,6 +14,7 @@
 	resistance = 30000 // Approx. 12 minutes.
 	idle_power_usage = 1 KILOWATTS
 	//uses ~30% power to stay warm
+	optimal_temp = T0C + 170 // bit lower than the rest
 	optimal_power = 1.2
 
 	max_contents = 4
