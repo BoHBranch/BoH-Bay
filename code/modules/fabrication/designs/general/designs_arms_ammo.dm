@@ -134,7 +134,3 @@
 /datum/fabricator_recipe/arms_ammo/hidden/magrub
 	name = "ammunition (L-L Magnum Magazine)"
 	path = /obj/item/ammo_magazine/magnum/rubber
-
-/datum/fabricator_recipe/arms_ammo/hidden/pepper
-	name = "ammunition (Pepperball Magazine)"
-	path = /obj/item/ammo_magazine/pistol/double/pepperball

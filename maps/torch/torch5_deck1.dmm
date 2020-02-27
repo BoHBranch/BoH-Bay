@@ -985,11 +985,13 @@
 	dir = 1;
 	level = 2
 	},
+/obj/machinery/sleeper{
+	dir = 4
+	},
 /obj/effect/floor_decal/corner/red{
 	dir = 10
 	},
 /obj/structure/cable/green,
-/obj/item/weapon/material/knife/table/duel,
 /turf/simulated/floor/tiled/monotile,
 /area/security/triage)
 "abB" = (
@@ -1122,7 +1124,6 @@
 	},
 /obj/item/weapon/storage/box/ammo/beanbags/full,
 /obj/item/weapon/storage/box/ammo/beanbags/full,
-/obj/item/clothing/accessory/storage/bandolier,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
 "abL" = (
@@ -1677,6 +1678,9 @@
 	dir = 4;
 	pixel_x = 21
 	},
+/obj/item/weapon/storage/box/ammo/solar/rubber,
+/obj/item/weapon/storage/box/ammo/solar/rubber,
+/obj/item/weapon/storage/box/ammo/solar/rubber,
 /obj/structure/table/rack/shelf/steel,
 /obj/structure/window/reinforced{
 	dir = 1
@@ -1686,8 +1690,6 @@
 	},
 /obj/structure/window/reinforced,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/weapon/storage/box/ammo/pepperball/full,
-/obj/item/weapon/storage/box/ammo/pepperball/full,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
 "acV" = (
@@ -1835,6 +1837,10 @@
 /area/maintenance/firstdeck/forestarboard)
 "adh" = (
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/weapon/storage/box/ammo/solar/full,
+/obj/item/weapon/storage/box/ammo/solar/full,
+/obj/item/weapon/storage/box/ammo/solar/full,
+/obj/item/weapon/storage/box/ammo/solar/full,
 /obj/structure/table/rack/shelf/steel,
 /obj/structure/window/reinforced{
 	dir = 8;
@@ -1844,9 +1850,6 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/weapon/storage/box/ammo/solar/rubber,
-/obj/item/weapon/storage/box/ammo/solar/rubber,
-/obj/item/weapon/storage/box/ammo/solar/rubber,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "adi" = (
@@ -1877,10 +1880,10 @@
 	dir = 8;
 	health = 1e+006
 	},
-/obj/item/ammo_magazine/smg_top/rubber,
-/obj/item/ammo_magazine/smg_top/rubber,
-/obj/item/ammo_magazine/smg_top/rubber,
-/obj/item/ammo_magazine/smg_top/rubber,
+/obj/item/ammo_magazine/mil_rifle/sec,
+/obj/item/ammo_magazine/mil_rifle/sec,
+/obj/item/ammo_magazine/mil_rifle/sec,
+/obj/item/ammo_magazine/mil_rifle/sec,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "adk" = (
@@ -2286,8 +2289,8 @@
 	health = 1e+006
 	},
 /obj/structure/table/rack,
-/obj/item/weapon/gun/projectile/automatic/sec_smg,
-/obj/item/weapon/gun/projectile/automatic/sec_smg,
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b,
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/maintenance/firstdeck/foreport)
 "adR" = (
@@ -2985,6 +2988,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue/autopsy)
 "afd" = (
+/obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -2994,8 +2998,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/closet/crate/med_crate/trauma,
+/obj/machinery/vending/security/accessory,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
 "afe" = (
@@ -3657,7 +3660,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/security/brig/chamber)
 "agi" = (
-/obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/tiled/monotile,
 /area/security/triage)
 "agj" = (
@@ -4245,7 +4247,7 @@
 	},
 /obj/machinery/door/airlock/glass/security{
 	id_tag = "prisonentry";
-	name = "Communal Holding"
+	name = "Brig Entry"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/security/wing)
@@ -4382,7 +4384,7 @@
 	},
 /obj/machinery/door/airlock/glass/security{
 	id_tag = "prisonentry";
-	name = "The Cube"
+	name = "Triage"
 	},
 /turf/simulated/floor/tiled,
 /area/security/triage)
@@ -4466,7 +4468,8 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
-/obj/item/weapon/material/knife/table/duel,
+/obj/structure/table/standard,
+/obj/item/weapon/storage/firstaid/adv,
 /turf/simulated/floor/tiled,
 /area/security/triage)
 "ahA" = (
@@ -4816,18 +4819,13 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
-"aib" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "aic" = (
 /obj/machinery/newscaster{
 	pixel_x = 0;
 	pixel_y = -32
+	},
+/obj/machinery/optable{
+	name = "Triage Table"
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -8336,12 +8334,14 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "anF" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/vending/security/accessory{
-	dir = 1
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/maintenance/firstdeck/foreport)
+/mob/living/bot/secbot/beepsky,
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "anG" = (
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
@@ -9997,12 +9997,6 @@
 /obj/random/tech_supply,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
-"aqH" = (
-/obj/effect/floor_decal/corner/red/mono,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/security_torch/cadet,
-/turf/simulated/floor/tiled/monotile,
-/area/security/locker)
 "aqJ" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -40236,7 +40230,7 @@ ano
 aPu
 aPu
 aPu
-anF
+tAS
 tAS
 tAS
 aaa
@@ -40827,8 +40821,8 @@ oDg
 goa
 frA
 rnp
-aqH
-aqH
+afH
+afH
 dZx
 daB
 aMT
@@ -40841,7 +40835,7 @@ hzl
 oXv
 adj
 adL
-aib
+anF
 anH
 tAS
 tAS

@@ -980,9 +980,8 @@
 		/obj/item/device/flash = 5,
 		/obj/item/weapon/reagent_containers/food/snacks/donut/normal = 12,
 		/obj/item/weapon/storage/box/evidence = 6,
-		/obj/item/weapon/tape_roll = 2,
-		/obj/item/ammo_magazine/pistol/double/pepperball = 6)
-	contraband = list(/obj/item/clothing/glasses/sunglasses = 2,/obj/item/weapon/storage/box/donut = 2,/obj/item/ammo_magazine/pistol/double/rubber = 1)
+		/obj/item/weapon/tape_roll = 2)
+	contraband = list(/obj/item/clothing/glasses/sunglasses = 2,/obj/item/weapon/storage/box/donut = 2)
 
 /obj/machinery/vending/hydronutrients
 	name = "NutriMax"
