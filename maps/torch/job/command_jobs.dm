@@ -244,7 +244,7 @@
 	title = "Chief of Security"
 	supervisors = "the Commanding Officer and the Executive Officer"
 	economic_power = 8
-	minimal_player_age = 6
+	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 25,SPECIES_UNATHI = 25,SPECIES_SERGAL = 25, SPECIES_NORTHERN = 25, SPECIES_EASTERN = 25, SPECIES_SKRELL = 25, SPECIES_PROMETHEAN = 25, SPECIES_YEOSA = 25, SPECIES_VASS = 25, SPECIES_TAJ = 25, SPECIES_CUSTOM = 25, SPECIES_AKULA = 25)
 	ideal_character_age = 35
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cos
