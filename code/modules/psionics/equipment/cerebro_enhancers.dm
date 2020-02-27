@@ -9,6 +9,7 @@
 		slot_l_hand_str = "helmet",
 		slot_r_hand_str = "helmet"
 		)
+	unacidable = 1 
 
 	var/operating = FALSE
 	var/list/boosted_faculties
