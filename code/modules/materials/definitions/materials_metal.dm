@@ -215,6 +215,7 @@
 	icon_base = "solid"
 	icon_reinf = "reinf_over"
 	icon_colour = "#9bc6f2"
+	melting_point = 12000
 	brute_armor = 4
 	burn_armor = 20
 	weight = 27
