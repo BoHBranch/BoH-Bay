@@ -5,9 +5,9 @@
 /datum/codex_category/recipes/Initialize()
 	for(var/search_by_appliance in SScuisine.recipe_datums)
 		for(var/datum/recipe/recipe in SScuisine.recipe_datums[search_by_appliance])
-			if(recipe.hidden_from_codex || !recipe.result)
+			if(recipe.hidden_from_codex || recipe.added_to_codex || !recipe.result)
 				continue
-
+			recipe.added_to_codex = TRUE
 			var/mechanics_text = ""
 			if(recipe.mechanics_text)
 				mechanics_text = "[recipe.mechanics_text]<br><br>"
@@ -22,7 +22,7 @@
 				mechanics_text += "<li>[recipe.fruit[thing]] [thing]\s</li>"
 			mechanics_text += "</ul>"
 			var/atom/recipe_product = recipe.result
-			mechanics_text += "<br>This recipe takes [ceil(recipe.time/10)] second\s to cook in a [search_by_appliance] and creates \a [initial(recipe_product.name)]."
+			mechanics_text += "<br>This recipe takes [ceil(recipe.time/10)] second\s to cook in a [recipe.get_appliance_names()] and creates \a [initial(recipe_product.name)]."
 			var/lore_text = recipe.lore_text
 			if(!lore_text)
 				lore_text = initial(recipe_product.desc)

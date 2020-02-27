@@ -13,6 +13,7 @@
 	volume			(num)					Sound output volume
 	max_loops		(num)					The max amount of loops to run for.
 	direct			(bool)					If true plays directly to provided atoms instead of from them
+	ambient			(bool)					Is this sound able to be disabled via the play ambience pref?
 */
 
 /datum/looping_sound
@@ -26,6 +27,7 @@
 	var/volume = 100
 	var/max_loops
 	var/direct
+	var/ambient
 
 	var/timerid
 
@@ -81,7 +83,7 @@
 	//	if(direct)
 	//		SEND_SOUND(thing, S)
 	//	else
-		playsound(thing, S, volume)
+		playsound(thing, S, volume, is_ambiance = ambient)
 
 /datum/looping_sound/proc/get_sound(starttime, _mid_sounds)
 	. = _mid_sounds || mid_sounds

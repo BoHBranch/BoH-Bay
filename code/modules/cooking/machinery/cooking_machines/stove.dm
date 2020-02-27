@@ -8,6 +8,8 @@
 	can_burn_food = TRUE
 	active_power_usage = 3 KILOWATTS // Half that of the oven
 	heating_power = 6000
+	on_icon = "stove_on"
+	off_icon = "stove_off"
 
 	resistance = 30000 // Approx. 12 minutes.
 	idle_power_usage = 1 KILOWATTS
@@ -20,13 +22,9 @@
 	stat = POWEROFF	//Starts turned off
 
 /obj/machinery/appliance/cooker/stove/on_update_icon()
+	. = ..()
 	overlays.Cut()
-	if ((stat & POWEROFF) || (stat & NOPOWER))
-		icon_state = "stove_off"
-	else
-		icon_state = "stove_on"
-	var/pans = Clamp(LAZYLEN(cooking_objs), 1, 4)
+	var/pans = LAZYLEN(cooking_objs)
 	if(!pans)
 		return
-	overlays += image(icon, src, "pan[pans]") // 1 to 4
-	..()
+	overlays += image('icons/obj/aurora/cooking_machines.dmi', "pan[Clamp(pans, 1, 4)]") // 1 to 4

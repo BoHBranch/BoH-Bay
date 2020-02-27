@@ -374,6 +374,24 @@ GLOBAL_DATUM_INIT(temp_reagents_holder, /obj, new)
 
 	qdel(F)
 
+/datum/reagents/proc/trans_type_to_holder(var/datum/reagents/holder, var/type, var/amount = 1, var/multiplier = 1)
+	if (!holder)
+		return
+
+	amount = min(amount, get_reagent_amount(type))
+
+	if(!amount)
+		return
+
+	var/datum/reagents/F = new /datum/reagents(amount, GLOB.temp_reagents_holder)
+	var/tmpdata = get_data(type)
+	F.add_reagent(type, amount, tmpdata)
+	remove_reagent(type, amount)
+
+	. = F.trans_to_holder(holder, amount, multiplier) // Let this proc check the atom's type
+
+	qdel(F)
+
 // When applying reagents to an atom externally, touch() is called to trigger any on-touch effects of the reagent.
 // This does not handle transferring reagents to things.
 // For example, splashing someone with water will get them wet and extinguish them if they are on fire,

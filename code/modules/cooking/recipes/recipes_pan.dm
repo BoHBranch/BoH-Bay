@@ -341,6 +341,7 @@
 /////////////////////////////////////////////////////////////
 
 /datum/recipe/redcurry
+	appliance = PAN
 	reagents = list(/datum/reagent/drink/milk/cream = 5, /datum/reagent/spacespice = 2, /datum/reagent/nutriment/rice = 5)
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/cutlet,
@@ -350,6 +351,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/redcurry
 
 /datum/recipe/greencurry
+	appliance = PAN
 	reagents = list(/datum/reagent/drink/milk/cream = 5, /datum/reagent/spacespice = 2, /datum/reagent/nutriment/rice = 5)
 	fruit = list("chili" = 1)
 	items = list(
@@ -360,18 +362,21 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/greencurry
 
 /datum/recipe/yellowcurry
+	appliance = PAN
 	reagents = list(/datum/reagent/drink/milk/cream = 5, /datum/reagent/spacespice = 2, /datum/reagent/nutriment/rice = 5)
 	fruit = list("peanut" = 2, "potato" = 1)
 	reagent_mix = RECIPE_REAGENT_REPLACE //Simplify end product
 	result = /obj/item/weapon/reagent_containers/food/snacks/yellowcurry
 
 /datum/recipe/bearchili
+	appliance = PAN
 	fruit = list("chili" = 1, "tomato" = 1)
 	items = list(/obj/item/weapon/reagent_containers/food/snacks/bearmeat)
 	reagent_mix = RECIPE_REAGENT_REPLACE //Simplify end product
 	result = /obj/item/weapon/reagent_containers/food/snacks/bearchili
 
 /datum/recipe/bearstew
+	appliance = PAN
 	fruit = list("potato" = 1, "tomato" = 1, "carrot" = 1, "eggplant" = 1, "mushroom" = 1)
 	reagents = list(/datum/reagent/water = 10)
 	items = list(/obj/item/weapon/reagent_containers/food/snacks/bearmeat)
@@ -379,6 +384,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/bearstew
 
 /datum/recipe/bibimbap
+	appliance = PAN
 	fruit = list("carrot" = 1, "cabbage" = 1, "mushroom" = 1)
 	reagents = list(/datum/reagent/nutriment/rice = 5, /datum/reagent/spacespice = 2)
 	items = list(
@@ -389,12 +395,14 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/bibimbap
 
 /datum/recipe/friedrice
+	appliance = PAN
 	reagents = list(/datum/reagent/water = 5, /datum/reagent/nutriment/rice = 10, /datum/reagent/nutriment/soysauce = 5)
 	fruit = list("carrot" = 1, "cabbage" = 1)
 	reagent_mix = RECIPE_REAGENT_REPLACE //Simplify end product
 	result = /obj/item/weapon/reagent_containers/food/snacks/friedrice
 
 /datum/recipe/lomein
+	appliance = PAN
 	reagents = list(/datum/reagent/water = 5, /datum/reagent/nutriment/soysauce = 5)
 	fruit = list("carrot" = 1, "cabbage" = 1)
 	items = list(
@@ -404,6 +412,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/lomein
 
 /datum/recipe/chilicheesefries
+	appliance = PAN
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/fries,
 		/obj/item/weapon/reagent_containers/food/snacks/cheesewedge,
@@ -413,6 +422,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/chilicheesefries
 
 /datum/recipe/meatbun
+	appliance = PAN
 	reagents = list(/datum/reagent/spacespice = 1, /datum/reagent/water = 5)
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/doughslice,
@@ -422,6 +432,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/meatbun
 
 /datum/recipe/custardbun
+	appliance = PAN
 	reagents = list(/datum/reagent/spacespice = 1, /datum/reagent/water = 5, /datum/reagent/nutriment/protein/egg = 3)
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/doughslice
@@ -430,6 +441,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/custardbun
 
 /datum/recipe/chickenmomo
+	appliance = PAN
 	reagents = list(/datum/reagent/spacespice = 2, /datum/reagent/water = 5)
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/doughslice,
@@ -441,6 +453,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/chickenmomo
 
 /datum/recipe/veggiemomo
+	appliance = PAN
 	reagents = list(/datum/reagent/spacespice = 2, /datum/reagent/water = 5)
 	fruit = list("carrot" = 1, "cabbage" = 1)
 	items = list(
@@ -452,12 +465,14 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/veggiemomo
 
 /datum/recipe/risotto
+	appliance = PAN
 	reagents = list(/datum/reagent/ethanol/wine = 5, /datum/reagent/nutriment/rice = 10, /datum/reagent/spacespice = 1)
 	fruit = list("mushroom" = 1)
 	reagent_mix = RECIPE_REAGENT_REPLACE //Get that rice and wine outta here
 	result = /obj/item/weapon/reagent_containers/food/snacks/risotto
 
 /datum/recipe/poachedegg
+	appliance = PAN
 	reagents = list(/datum/reagent/spacespice = 1, /datum/reagent/sodiumchloride = 1, /datum/reagent/blackpepper = 1, /datum/reagent/water = 5)
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/egg
@@ -466,6 +481,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/poachedegg
 
 /datum/recipe/sashimi
+	appliance = PAN
 	reagents = list(/datum/reagent/nutriment/soysauce = 5)
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/fish/carp
@@ -474,6 +490,7 @@
 
 
 /datum/recipe/chilied_eggs
+	appliance = PAN
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/hotchili,
 		/obj/item/weapon/reagent_containers/food/snacks/boiledegg,
@@ -483,6 +500,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/chilied_eggs
 
 /datum/recipe/red_sun_special
+	appliance = PAN
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/sausage,
 		/obj/item/weapon/reagent_containers/food/snacks/cheesewedge
@@ -491,6 +509,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/red_sun_special
 
 /datum/recipe/hatchling_suprise
+	appliance = PAN
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/poachedegg,
 		/obj/item/weapon/reagent_containers/food/snacks/bacon,
@@ -501,6 +520,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/hatchling_suprise
 
 /datum/recipe/riztizkzi_sea
+	appliance = PAN
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/egg,
 		/obj/item/weapon/reagent_containers/food/snacks/egg,
@@ -510,6 +530,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/riztizkzi_sea
 
 /datum/recipe/father_breakfast
+	appliance = PAN
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/sausage,
 		/obj/item/weapon/reagent_containers/food/snacks/omelette,
@@ -518,6 +539,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/father_breakfast
 
 /datum/recipe/egg_pancake
+	appliance = PAN
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/meatball,
 		/obj/item/weapon/reagent_containers/food/snacks/meatball,
@@ -527,6 +549,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/egg_pancake
 
 /datum/recipe/bacon_and_eggs
+	appliance = PAN
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/bacon,
 		/obj/item/weapon/reagent_containers/food/snacks/friedegg
@@ -534,11 +557,13 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/bacon_and_eggs
 
 /datum/recipe/onionsoup
+	appliance = PAN
 	fruit = list("onion" = 1)
 	reagents = list(/datum/reagent/water = 10)
 	result = /obj/item/weapon/reagent_containers/food/snacks/onionsoup
 
 /datum/recipe/porkbowl
+	appliance = PAN
 	reagents = list(/datum/reagent/water = 5, /datum/reagent/nutriment/rice = 10)
 	reagent_mix = RECIPE_REAGENT_REPLACE
 	items = list(
@@ -547,10 +572,12 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/porkbowl
 
 /datum/recipe/mashedpotato
+	appliance = PAN
 	fruit = list("potato" = 1)
 	result = /obj/item/weapon/reagent_containers/food/snacks/mashedpotato
 
 /datum/recipe/crab_legs
+	appliance = PAN
 	reagents = list(/datum/reagent/water = 10, /datum/reagent/sodiumchloride = 1)
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/crabmeat,

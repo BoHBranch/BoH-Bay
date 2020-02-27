@@ -119,16 +119,6 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/donut/normal
 	result_quantity = 2
 
-/datum/recipe/chaosdonut
-	appliance = FRYER
-	reagents = list(/datum/reagent/capsaicin = 10, /datum/reagent/capsaicin = 10, /datum/reagent/sugar = 10)
-	reagent_mix = RECIPE_REAGENT_REPLACE //This creates its own reagents
-	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/dough
-	)
-	result = /obj/item/weapon/reagent_containers/food/snacks/donut/chaos
-	result_quantity = 2
-
 /datum/recipe/funnelcake
 	appliance = FRYER
 	reagents = list(/datum/reagent/sugar = 5, /datum/reagent/nutriment/coating/batter = 10)

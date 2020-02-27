@@ -58,7 +58,7 @@
 	if (!LAZYLEN(acceptable_items))
 		acceptable_items = list()
 		acceptable_reagents = list()
-		for (var/datum/recipe/R in SScuisine.recipe_datums[appliancetype])
+		for (var/datum/recipe/R in RECIPE_LIST(appliancetype))
 			for (var/item in R.items)
 				acceptable_items[item] = TRUE
 
@@ -268,7 +268,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 		start()
 		return
 
-	recipe = select_recipe(SScuisine.recipe_datums[appliancetype],src)
+	recipe = select_recipe(RECIPE_LIST(appliancetype),src)
 
 	if (reagents.reagent_list.len && prob(50)) // 50% chance a liquid recipe gets messy
 		dirty += Ceiling(reagents.total_volume / 10)
@@ -299,35 +299,21 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	var/result = recipe.result
 	var/valid = TRUE
 	var/list/cooked_items = list()
-	var/obj/temp = new /obj(src) //To prevent infinite loops, all results will be moved into a temporary location so they're not considered as inputs for other recipes
 	while(valid)
-		var/list/things = list()
-		things.Add(recipe.make_food(src))
-		cooked_items += things
-		//Move cooked things to the buffer so they're not considered as ingredients
-		for (var/atom/movable/AM in things)
-			AM.forceMove(temp)
-
+		cooked_items += recipe.make_food(src)
 		valid = FALSE
-		recipe = select_recipe(SScuisine.recipe_datums[appliancetype],src)
-		if (recipe && recipe.result == result)
+		recipe = select_recipe(RECIPE_LIST(appliancetype),src)
+		if (recipe && (recipe.result == result))
 			sleep(2)
 			valid = TRUE
-
-	for (var/r in cooked_items)
-		var/atom/movable/R = r
-		R.forceMove(src) //Move everything from the buffer back to the container
-
-	QDEL_NULL(temp)//Delete buffer object
 
 	//Any leftover reagents are divided amongst the foods
 	var/total = reagents.total_volume
 	for (var/obj/item/weapon/reagent_containers/food/snacks/S in cooked_items)
 		reagents.trans_to_holder(S.reagents, total/cooked_items.len)
-
-	for (var/obj/item/weapon/reagent_containers/food/snacks/S in ingredients)
 		S.cook()
-
+		S.forceMove(loc) // since eject only ejects ingredients!
+	
 	eject(0) //clear out anything left
 
 	return
@@ -375,7 +361,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	else
 		icon_state = "mw1"
 
-	set_light(1.5)
+	set_light(1, 1.5)
 	soundloop.start()
 	SSvueui.check_uis_for_change(src)
 
@@ -395,7 +381,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 		s.set_up(2, GLOB.alldirs, src)
 		icon_state = "mwb" // Make it look all busted up and shit
 		visible_message(SPAN_WARNING("The microwave sprays out a shower of sparks - it's broken!")) //Let them know they're stupid
-		broken = 2 // Make it broken so it can't be used util
+		broken = 2 // Make it broken so it can't be used until fixed
 	else
 		icon_state = "mw"
 
@@ -410,6 +396,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 
 /obj/machinery/microwave/proc/fail()
 	var/obj/item/weapon/reagent_containers/food/snacks/badrecipe/ffuu = new(src)
+	ingredients += ffuu
 	var/amount = 0
 	for (var/obj/O in ingredients-ffuu)
 		amount++
@@ -418,6 +405,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 			if (reagenttype)
 				amount+=O.reagents.get_reagent_amount(reagenttype)
 		qdel(O)
+		ingredients -= O
 	reagents.clear_reagents()
 	SSvueui.check_uis_for_change(src)
 	ffuu.reagents.add_reagent(/datum/reagent/carbon, amount)
@@ -493,9 +481,11 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 /obj/machinery/microwave/proc/eject(var/message = TRUE, var/obj/EJ = null)
 	if (EJ)
 		EJ.forceMove(loc)
+		ingredients -= EJ
 	else
 		for (var/atom/movable/A in ingredients)
 			A.forceMove(loc)
+			ingredients -= A
 		if (reagents.total_volume)
 			dirty += round(reagents.total_volume / 10)
 			reagents.clear_reagents()

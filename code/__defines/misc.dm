@@ -280,6 +280,9 @@
 #define CEREALMAKER			0x10
 #define PAN					0x20
 
+//Used to get recipes.
+#define RECIPE_LIST(T) (SScuisine.recipe_datums["[T]"])
+
 // Used for creating soft references to objects. A manner of storing an item reference
 // as text so you don't necessarily fuck with an object's ability to be garbage collected.
 // Ported from Aurora.
@@ -298,4 +301,5 @@
 
 // NULL_OR_EQUAL define, ported from Aurora
 #define NULL_OR_EQUAL(self,other) (!(self) || (self) == (other))
+
 

@@ -50,6 +50,7 @@
 	var/lore_text
 	var/mechanics_text
 	var/antag_text
+	var/added_to_codex = FALSE //to prevent duplicates
 
 
 	#define RECIPE_REAGENT_REPLACE		0 //Reagents in the ingredients are discarded.
@@ -201,8 +202,9 @@
 //We will not touch things which are not required for this recipe. They will be left behind for the caller
 //to decide what to do. They may be used again to make another recipe or discarded, or merged into the results,
 //thats no longer the concern of this proc
-	var/datum/reagents/buffer = new /datum/reagents(1000000000000, null)//
+	var/datum/reagents/buffer = new /datum/reagents(1000000000000, GLOB.temp_reagents_holder)//
 
+	var/obj/machinery/microwave/M = container
 
 	//Find items we need
 	if (items && items.len)
@@ -210,6 +212,8 @@
 			var/obj/item/I = locate(i) in container
 			if (I && I.reagents)
 				I.reagents.trans_to_holder(buffer,I.reagents.total_volume)
+				if(istype(M))
+					M.ingredients -= I
 				qdel(I)
 
 	//Find fruits
@@ -226,13 +230,15 @@
 				checklist[G.seed.kitchen_tag]--
 				if (G && G.reagents)
 					G.reagents.trans_to_holder(buffer,G.reagents.total_volume)
+				if(istype(M))
+					M.ingredients -= G
 				qdel(G)
 
 	//And lastly deduct necessary quantities of reagents
 	if (reagents && reagents.len)
 		for (var/datum/reagent/r in reagents)
 			//Doesnt matter whether or not there's enough, we assume that check is done before
-			container.reagents.trans_type_to(buffer, r.type, reagents[r])
+			container.reagents.trans_type_to_holder(buffer, r.type, reagents[r])
 
 	/*
 	Now we've removed all the ingredients that were used and we have the buffer containing the total of
@@ -247,7 +253,7 @@
 	If, as in the most common case, there is only a single result, then it will just be a reference to
 	the single-result's reagents
 	*/
-	var/datum/reagents/holder = new/datum/reagents(10000000000)
+	var/datum/reagents/holder = new/datum/reagents(10000000000, GLOB.temp_reagents_holder)
 	var/list/results = list()
 	while (tally < result_quantity)
 		var/obj/result_obj = new result(container)
@@ -255,13 +261,13 @@
 
 		if (!result_obj.reagents)//This shouldn't happen
 			//If the result somehow has no reagents defined, then create a new holder
-			result_obj.reagents = new /datum/reagents(buffer.total_volume*1.5, result_obj)
+			result_obj.create_reagents(buffer.total_volume*1.5)
 
 		if (result_quantity == 1)
 			qdel(holder)
 			holder = result_obj.reagents
 		else
-			result_obj.reagents.trans_to(holder, result_obj.reagents.total_volume)
+			result_obj.reagents.trans_to_holder(holder, result_obj.reagents.total_volume)
 		tally++
 
 
@@ -278,7 +284,7 @@
 				var/rvol = holder.get_reagent_amount(R.id)
 				if (rvol < R.volume)
 					//Transfer the difference
-					buffer.trans_type_to(holder, R.type, R.volume-rvol)
+					buffer.trans_type_to_holder(holder, R.type, R.volume-rvol)
 
 		if (RECIPE_REAGENT_MIN)
 			//Min is slightly more complex. We want the result to have the lowest from each side
@@ -286,7 +292,7 @@
 			for (var/datum/reagent/R in buffer.reagent_list)
 				var/rvol = holder.get_reagent_amount(R.id)
 				if (rvol == 0) //If the target has zero of this reagent
-					buffer.trans_type_to(holder, R.type, R.volume)
+					buffer.trans_type_to_holder(holder, R.type, R.volume)
 					//Then transfer all of ours
 
 				else if (rvol > R.volume)

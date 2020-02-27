@@ -98,7 +98,6 @@
 /obj/machinery/appliance/on_update_icon()
 	if (!stat && cooking_objs.len)
 		icon_state = on_icon
-
 	else
 		icon_state = off_icon
 
@@ -223,16 +222,16 @@
 	else return TRUE
 
 /obj/machinery/appliance/attackby(var/obj/item/I, var/mob/user)
-	if(!cook_type || (stat & (BROKEN)))
-		to_chat(user, "<span class='warning'>\The [src] is not working.</span>")
-		return
-
 	var/result = can_insert(I, user)
 	if(!result)
 		if((. = component_attackby(I, user)))
 			return
 		else
 			return
+	
+	if(!cook_type || (stat & (BROKEN)))
+		to_chat(user, "<span class='warning'>\The [src] is not working.</span>")
+		return
 
 	if(result == 2)
 		var/obj/item/grab/G = I
@@ -374,7 +373,7 @@
 		C = CI.container
 	else
 		C = src
-	recipe = select_recipe(SScuisine[appliancetype], C)
+	recipe = select_recipe(RECIPE_LIST(appliancetype), C)
 
 	if (recipe)
 		CI.result_type = 4//Recipe type, a specific recipe will transform the ingredients into a new food
@@ -386,7 +385,7 @@
 			AM.forceMove(temp)
 
 		//making multiple copies of a recipe from one container. For example, tons of fries
-		while (select_recipe(SScuisine[appliancetype], C) == recipe)
+		while (select_recipe(RECIPE_LIST(appliancetype), C) == recipe)
 			var/list/TR = list()
 			TR += recipe.make_food(C)
 			for (var/atom/movable/AM in TR) //Move results to buffer
@@ -604,7 +603,7 @@
 	result.reagents.add_reagent(victim.get_digestion_product(), reagent_amount)
 
 	if (victim.reagents)
-		victim.reagents.trans_to_holder(result.reagents, victim.reagents.total_volume)
+		victim.reagents.trans_to(result, victim.reagents.total_volume)
 
 	if (isanimal(victim))
 		var/mob/living/simple_animal/SA = victim

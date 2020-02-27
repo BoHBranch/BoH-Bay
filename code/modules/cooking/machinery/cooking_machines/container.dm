@@ -22,7 +22,7 @@
 
 
 /obj/item/weapon/reagent_containers/cooking_container/examine(var/mob/user)
-	..()
+	. = ..()
 	if (contents.len)
 		var/string = "It contains....</br>"
 		for (var/atom/movable/A in contents)
