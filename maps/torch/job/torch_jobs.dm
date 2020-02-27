@@ -15,7 +15,7 @@
 		/datum/species/unathi  = list(HUMAN_ONLY_JOBS),
 		/datum/species/unathi/yeosa = list(HUMAN_ONLY_JOBS),
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),
-		/datum/species/machine = list(HUMAN_ONLY_JOBS),
+		/datum/species/machine = list(/datum/job/representative),
 		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden),
 		/datum/species/sergal = list(HUMAN_ONLY_JOBS),
 		/datum/species/sergal/northern = list(HUMAN_ONLY_JOBS),
