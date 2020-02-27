@@ -199,7 +199,7 @@
 		ui_interact(user)
 
 /obj/machinery/microwave/examine(var/mob/user)
-	..()
+	. = ..()
 	if(broken > 0)
 		to_chat(user, "It's broken!")
 	else if(dirty >= 100)

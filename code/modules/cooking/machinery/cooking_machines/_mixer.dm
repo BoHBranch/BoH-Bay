@@ -17,7 +17,7 @@ fundamental differences
 	idle_power_usage = 50
 
 /obj/machinery/appliance/mixer/examine(var/mob/user)
-	..()
+	. = ..()
 	to_chat(user, span("notice", "It is currently set to make a [selected_option]"))
 
 /obj/machinery/appliance/mixer/Initialize()

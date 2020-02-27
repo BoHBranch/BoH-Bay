@@ -236,6 +236,10 @@
 
 /obj/structure/hygiene/shower/attack_hand(var/mob/M)
 	on = !on
+	if(on)
+		soundloop.start()
+	else
+		soundloop.stop(src)
 	update_icon()
 	if(on)
 		if (M.loc == loc)
@@ -267,7 +271,6 @@
 		mymist = null
 
 	if(on)
-		soundloop.start()
 		overlays += image('icons/obj/watercloset.dmi', src, "water", MOB_LAYER + 1, dir)
 		if(temperature_settings[watertemp] < T20C)
 			return //no mist for cold water
@@ -277,7 +280,6 @@
 					ismist = 1
 					mymist = new /obj/effect/mist(loc)
 		else
-			soundloop.stop()
 			ismist = 1
 			mymist = new /obj/effect/mist(loc)
 	else if(ismist)
