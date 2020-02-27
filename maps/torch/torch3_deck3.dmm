@@ -1781,7 +1781,8 @@
 "dH" = (
 /obj/structure/table/standard,
 /obj/item/weapon/reagent_containers/glass/beaker{
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_z = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -3967,7 +3968,9 @@
 "hD" = (
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/table/marble,
-/obj/machinery/reagentgrinder/juicer,
+/obj/machinery/reagentgrinder/juicer{
+	pixel_z = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
 "hE" = (
@@ -15020,7 +15023,9 @@
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
-/obj/machinery/fabricator/micro,
+/obj/machinery/fabricator/micro{
+	pixel_x = 3
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "Bu" = (
@@ -15117,9 +15122,13 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/item/weapon/reagent_containers/food/condiment/enzyme{
-	pixel_z = 5;
-	pixel_w = -8
+/obj/item/weapon/reagent_containers/food/drinks/bottle/cream{
+	pixel_z = 2;
+	pixel_w = 6
+	},
+/obj/item/weapon/reagent_containers/food/condiment/exoticspices{
+	pixel_z = 1;
+	pixel_w = -6
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
@@ -17277,7 +17286,7 @@
 	},
 /obj/structure/table/marble,
 /obj/machinery/microwave{
-	pixel_x = -3;
+	pixel_x = 0;
 	pixel_y = 6
 	},
 /turf/simulated/floor/tiled/white,
@@ -19326,9 +19335,12 @@
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
-/obj/machinery/reagentgrinder/juicer,
+/obj/machinery/reagentgrinder/juicer{
+	pixel_z = 8
+	},
 /obj/item/weapon/reagent_containers/glass/beaker{
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_z = 5
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
@@ -21599,14 +21611,6 @@
 "Vx" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/habcheck)
-"Vy" = (
-/obj/effect/floor_decal/corner/grey/diagonal{
-	dir = 4
-	},
-/obj/structure/table/marble,
-/obj/item/weapon/wirecutters/clippers,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/galley)
 "VA" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/structure/cable/green{
@@ -22517,9 +22521,12 @@
 /area/crew_quarters/bar)
 "Ym" = (
 /obj/structure/table/standard,
-/obj/machinery/reagentgrinder/juicer,
+/obj/machinery/reagentgrinder/juicer{
+	pixel_z = 8
+	},
 /obj/item/weapon/reagent_containers/glass/beaker{
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_z = 5
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
@@ -38851,7 +38858,7 @@ by
 fp
 cP
 mF
-Vy
+du
 fp
 ww
 fy

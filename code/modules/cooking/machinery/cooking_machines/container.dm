@@ -20,6 +20,24 @@
 	create_reagents(max_reagents)
 	atom_flags |= ATOM_FLAG_OPEN_CONTAINER
 
+/obj/item/weapon/reagent_containers/cooking_container/afterattack(var/obj/target, var/mob/user, var/proximity)
+	if(!is_open_container() || !proximity) //Is the container open & are they next to whatever they're clicking?
+		return 1 //If not, do nothing.
+	for(var/type in can_be_placed_into) //Is it something it can be placed into?
+		if(istype(target, type))
+			return 1
+	if(standard_dispenser_refill(user, target)) //Are they clicking a water tank/some dispenser?
+		return 1
+	if(standard_pour_into(user, target)) //Pouring into another beaker?
+		return
+	if(user.a_intent == I_HURT)
+		if(standard_splash_mob(user,target))
+			return 1
+		if(reagents && reagents.total_volume)
+			to_chat(user, "<span class='notice'>You splash the contents of \the [src] onto [target].</span>") //They are on harm intent, aka wanting to spill it.
+			reagents.splash(target, reagents.total_volume)
+			return 1
+	. = ..()
 
 /obj/item/weapon/reagent_containers/cooking_container/examine(var/mob/user)
 	. = ..()

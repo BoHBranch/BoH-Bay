@@ -299,7 +299,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	var/result = recipe.result
 	var/valid = TRUE
 	var/list/cooked_items = list()
-	while(valid)
+	while(valid && recipe)
 		cooked_items += recipe.make_food(src)
 		valid = FALSE
 		recipe = select_recipe(RECIPE_LIST(appliancetype),src)
@@ -351,7 +351,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	end_time = cook_time + start_time
 	operating = TRUE
 
-	START_PROCESSING(SSmachines, src)
+	START_PROCESSING_MACHINE(src, MACHINE_PROCESS_SELF)
 	addtimer(CALLBACK(src, .proc/half_time_process), cook_time / 2)
 	visible_message(SPAN_NOTICE("The microwave turns on."), SPAN_NOTICE("You hear a microwave."))
 
@@ -366,7 +366,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 	SSvueui.check_uis_for_change(src)
 
 /obj/machinery/microwave/proc/stop()
-	STOP_PROCESSING(SSmachines, src)
+	STOP_PROCESSING_MACHINE(src, MACHINE_PROCESS_SELF)
 	after_finish_loop()
 
 	operating = FALSE // Turn it off again aferwards
@@ -384,6 +384,9 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 		broken = 2 // Make it broken so it can't be used until fixed
 	else
 		icon_state = "mw"
+
+	cook_dirty = FALSE
+	cook_break = FALSE
 
 	if(failed)
 		fail()
@@ -404,8 +407,9 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 			var/reagenttype = O.reagents.get_master_reagent_type()
 			if (reagenttype)
 				amount+=O.reagents.get_reagent_amount(reagenttype)
-		qdel(O)
 		ingredients -= O
+		O.forceMove(null)
+		qdel(O)
 	reagents.clear_reagents()
 	SSvueui.check_uis_for_change(src)
 	ffuu.reagents.add_reagent(/datum/reagent/carbon, amount)
@@ -495,7 +499,7 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 
 /obj/machinery/microwave/proc/after_finish_loop()
 	set_light(0)
-	soundloop.stop()
+	soundloop.stop(src)
 	update_icon()
 
 /obj/machinery/microwave/RefreshParts()

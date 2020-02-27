@@ -214,6 +214,7 @@
 				I.reagents.trans_to_holder(buffer,I.reagents.total_volume)
 				if(istype(M))
 					M.ingredients -= I
+				I.forceMove(null)
 				qdel(I)
 
 	//Find fruits
@@ -232,6 +233,7 @@
 					G.reagents.trans_to_holder(buffer,G.reagents.total_volume)
 				if(istype(M))
 					M.ingredients -= G
+				G.forceMove(null)
 				qdel(G)
 
 	//And lastly deduct necessary quantities of reagents
