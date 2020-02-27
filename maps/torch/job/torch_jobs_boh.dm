@@ -71,10 +71,10 @@
 	)
 
 /datum/job/sea
-	title = "Senior Enlisted Advisor of Fleet"
+	title = "Fleet Senior Enlisted Advisor"
 
 /datum/job/sea/marine
-	title = "Senior Enlisted Advisor of Marine Corps"
+	title = "Marine Senior Enlisted Advisor"
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/marine
 	allowed_branches = list(
 		/datum/mil_branch/marine_corps
