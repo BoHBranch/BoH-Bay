@@ -28,7 +28,7 @@
 		/datum/reagent/sugar = /obj/item/weapon/reagent_containers/food/condiment/sugar,
 		/datum/reagent/nutriment/mayo = /obj/item/weapon/reagent_containers/food/condiment/mayo,
 		/datum/reagent/nutriment/vinegar = /obj/item/weapon/reagent_containers/food/condiment/vinegar,
-		/datum/reagent/spacespice = /obj/item/weapon/reagent_containers/food/condiment/spacespice
+		/datum/reagent/spacespice = /obj/item/weapon/reagent_containers/food/condiment/exoticspices
 		)
 
 /obj/item/weapon/reagent_containers/food/condiment/attackby(var/obj/item/weapon/W as obj, var/mob/user as mob)
