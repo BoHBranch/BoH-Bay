@@ -4431,6 +4431,8 @@
 	pixel_y = -3
 	},
 /obj/item/weapon/storage/box/cdeathalarm_kit,
+/obj/item/weapon/storage/lockbox/loyalty,
+/obj/item/weapon/storage/lockbox/loyalty,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "ahw" = (
@@ -8242,6 +8244,9 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
+/obj/item/clothing/accessory/armorplate/shock,
+/obj/item/clothing/accessory/armorplate/shock,
+/obj/item/clothing/accessory/armorplate/shock,
 /obj/item/clothing/accessory/armorplate/shock,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)

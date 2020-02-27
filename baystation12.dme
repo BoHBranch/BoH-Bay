@@ -1471,6 +1471,7 @@
 #include "code\modules\boh\organs\disintegratable.dm"
 #include "code\modules\boh\sd_keyturn\keys.dm"
 #include "code\modules\boh\sd_keyturn\keyterminal.dm"
+#include "code\modules\boh\security2\gear.dm"
 #include "code\modules\boh\security2\jobs.dm"
 #include "code\modules\boh\security2\pepperballs.dm"
 #include "code\modules\boh\security2\storage.dm"
