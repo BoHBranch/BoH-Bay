@@ -11,7 +11,7 @@
 	cover += /obj/item/clothing/head/solgov/utility/army
 	cover += /obj/item/clothing/head/solgov/utility/army/urban
 	cover += /obj/item/clothing/head/solgov/utility/army/tan
-	cover += /obj/item/clothing/head/solgov/utility/fleet
+	cover += /obj/item/clothing/head/solgov/utility/fleet/marine
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(cover)
 
 /datum/gear/head/self_protection_helmet
