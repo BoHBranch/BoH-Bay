@@ -23,9 +23,6 @@
 /obj/item/weapon/reagent_containers/cooking_container/afterattack(var/obj/target, var/mob/user, var/proximity)
 	if(!is_open_container() || !proximity) //Is the container open & are they next to whatever they're clicking?
 		return 1 //If not, do nothing.
-	for(var/type in can_be_placed_into) //Is it something it can be placed into?
-		if(istype(target, type))
-			return 1
 	if(standard_dispenser_refill(user, target)) //Are they clicking a water tank/some dispenser?
 		return 1
 	if(standard_pour_into(user, target)) //Pouring into another beaker?

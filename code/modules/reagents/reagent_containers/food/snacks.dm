@@ -382,7 +382,7 @@
 /obj/item/weapon/reagent_containers/food/snacks/egg/afterattack(obj/O as obj, mob/user as mob, proximity)
 	if(istype(O,/obj/machinery/microwave))
 		return ..()
-	if(istype(O, /obj/item/weapon/reagent_containers/container))
+	if(istype(O, /obj/item/weapon/reagent_containers/cooking_container))
 		return ..() // don't crack it into a container
 	if(!(proximity && O.is_open_container()))
 		return
