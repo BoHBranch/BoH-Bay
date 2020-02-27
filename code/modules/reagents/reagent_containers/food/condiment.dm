@@ -364,7 +364,7 @@
 	volume = 20
 	starting_reagents = list(/datum/reagent/nutriment/soysauce = 20)
 
-/obj/item/weapon/reagent_containers/food/condiment/spacespice
+/obj/item/weapon/reagent_containers/food/condiment/exoticspices
 	name = "bottle of exotic spices"
 	desc = "An exotic blend of spices for cooking. It must flow."
 	icon = 'icons/obj/aurora/food.dmi'
@@ -376,8 +376,8 @@
 /obj/item/weapon/reagent_containers/food/condiment/cream
 	name = "bottle of cream"
 	desc = "A bottle of cream. Probably safe for use in cooking."
-	icon = 'icons/obj/food.dmi'
-	icon_state = "mayo"
+	icon = 'icons/obj/aurora/food.dmi'
+	icon_state = "cream"
 	amount_per_transfer_from_this = 1
 	volume = 60
 	starting_reagents = list(/datum/reagent/drink/milk/cream = 60)

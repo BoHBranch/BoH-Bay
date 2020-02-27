@@ -702,7 +702,7 @@
 // Synnono's Cooking Expansion
 
 /datum/reagent/spacespice
-	name = "Space Spice"
+	name = "Exotic Spices"
 	description = "An exotic blend of spices for cooking. It must flow."
 	reagent_state = SOLID
 	color = "#e08702"

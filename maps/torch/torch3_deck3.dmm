@@ -612,6 +612,7 @@
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
+/obj/random/vendor,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "bz" = (
@@ -1308,15 +1309,6 @@
 /area/hydroponics)
 "cN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "east bump";
-	pixel_x = 24
-	},
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
@@ -1337,11 +1329,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
-	},
-/obj/machinery/alarm{
-	dir = 4;
-	pixel_x = -23;
-	pixel_y = 0
 	},
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
@@ -2154,8 +2141,14 @@
 "et" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/weapon/reagent_containers/food/condiment/enzyme,
-/obj/item/weapon/reagent_containers/food/condiment/enzyme,
+/obj/item/weapon/reagent_containers/food/condiment/enzyme{
+	pixel_z = 5;
+	pixel_w = -8
+	},
+/obj/item/weapon/reagent_containers/food/condiment/enzyme{
+	pixel_z = 5;
+	pixel_w = -8
+	},
 /obj/item/weapon/reagent_containers/food/condiment/barbecue,
 /obj/item/weapon/reagent_containers/food/condiment/barbecue,
 /turf/simulated/floor/tiled/freezer,
@@ -2635,11 +2628,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
@@ -2709,7 +2697,6 @@
 	pixel_y = 0
 	},
 /obj/structure/table/marble,
-/obj/item/weapon/book/manual/chef_recipes,
 /obj/item/sticky_pad/random,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
@@ -2744,13 +2731,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/table/marble,
-/obj/item/weapon/reagent_containers/food/condiment/small/peppermill{
-	pixel_x = 3
-	},
-/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker{
-	pixel_x = -3;
-	pixel_y = 0
-	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "fz" = (
@@ -4264,11 +4244,19 @@
 	name = "south bump";
 	pixel_y = -24
 	},
-/obj/structure/hygiene/sink/kitchen{
-	pixel_x = -32
-	},
 /obj/structure/table/marble,
-/obj/item/weapon/reagent_containers/food/condiment/soysauce,
+/obj/item/weapon/reagent_containers/food/condiment/mint{
+	pixel_z = 2;
+	pixel_w = -8
+	},
+/obj/item/weapon/reagent_containers/food/condiment/capsaicin{
+	pixel_z = 3;
+	pixel_w = -1
+	},
+/obj/item/weapon/reagent_containers/food/condiment/sugar{
+	pixel_z = 5;
+	pixel_w = 6
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "ih" = (
@@ -4321,11 +4309,15 @@
 	c_tag = "Mess Hall - Galley";
 	dir = 4
 	},
-/obj/machinery/microwave{
-	pixel_x = -3;
-	pixel_y = 6
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	pixel_y = 0
 	},
-/obj/structure/table/marble,
+/obj/machinery/chem_master/condimaster{
+	name = "CondiMaster Neo";
+	pixel_x = 0
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "il" = (
@@ -4758,10 +4750,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/machinery/chem_master/condimaster{
-	name = "CondiMaster Neo";
-	pixel_x = 0
-	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
 "iV" = (
@@ -4771,14 +4759,6 @@
 /obj/item/weapon/stool/wood,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
-"iW" = (
-/obj/structure/table/marble,
-/obj/effect/floor_decal/corner/grey/diagonal{
-	dir = 4
-	},
-/obj/item/weapon/reagent_containers/food/condiment/flour,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/galley)
 "iX" = (
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
@@ -6743,10 +6723,6 @@
 	},
 /obj/structure/table/marble,
 /obj/structure/window/reinforced/tinted/frosted,
-/obj/machinery/reagentgrinder/juicer,
-/obj/item/weapon/reagent_containers/glass/beaker{
-	pixel_x = 5
-	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "mG" = (
@@ -14410,6 +14386,11 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/mess)
 "Al" = (
@@ -14532,6 +14513,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/mess)
 "Aw" = (
@@ -14546,6 +14532,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/mess)
@@ -14563,6 +14554,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/mess)
 "Ay" = (
@@ -14574,6 +14570,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/mess)
@@ -14685,6 +14686,11 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters/bar/storage)
 "AI" = (
@@ -14748,6 +14754,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/bar/storage)
 "AP" = (
@@ -14801,6 +14808,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/bar/storage)
 "AT" = (
@@ -14839,7 +14851,12 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/item/weapon/reagent_containers/food/condiment/mint,
+/obj/item/weapon/reagent_containers/glass/beaker/bowl{
+	pixel_z = 12
+	},
+/obj/item/weapon/reagent_containers/glass/beaker/bowl{
+	pixel_z = 2
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "AY" = (
@@ -15035,14 +15052,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
-"Bx" = (
-/obj/effect/floor_decal/corner/grey/diagonal{
-	dir = 4
-	},
-/obj/structure/table/marble,
-/obj/item/weapon/reagent_containers/food/condiment/capsaicin,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/galley)
 "By" = (
 /obj/structure/hygiene/shower{
 	dir = 8;
@@ -15070,7 +15079,23 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/item/weapon/reagent_containers/food/condiment/sugar,
+/obj/item/weapon/reagent_containers/food/condiment/soysauce{
+	pixel_z = 2;
+	pixel_w = -7
+	},
+/obj/item/weapon/reagent_containers/food/condiment/vinegar{
+	pixel_z = 3
+	},
+/obj/item/weapon/reagent_containers/food/condiment/small/peppermill{
+	pixel_x = 3;
+	pixel_z = 11;
+	pixel_w = 5
+	},
+/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker{
+	pixel_x = -3;
+	pixel_y = 0;
+	pixel_w = 11
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "BC" = (
@@ -15092,7 +15117,10 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/item/weapon/reagent_containers/food/condiment/vinegar,
+/obj/item/weapon/reagent_containers/food/condiment/enzyme{
+	pixel_z = 5;
+	pixel_w = -8
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "BF" = (
@@ -15137,6 +15165,14 @@
 	},
 /turf/simulated/floor/tiled,
 /area/storage/tools)
+"BN" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/structure/table/marble,
+/obj/item/glass_jar,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "BO" = (
 /obj/effect/floor_decal/spline/fancy/black{
 	icon_state = "spline_fancy";
@@ -17240,7 +17276,10 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/item/weapon/reagent_containers/glass/beaker/bowl,
+/obj/machinery/microwave{
+	pixel_x = -3;
+	pixel_y = 6
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "IA" = (
@@ -19282,6 +19321,17 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/vacant/mess)
+"NS" = (
+/obj/structure/table/marble,
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/machinery/reagentgrinder/juicer,
+/obj/item/weapon/reagent_containers/glass/beaker{
+	pixel_x = 5
+	},
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "NV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
@@ -19369,7 +19419,7 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/item/weapon/reagent_containers/food/condiment/cream,
+/obj/random/drinkbottle,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "Om" = (
@@ -20729,6 +20779,16 @@
 	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main)
+"SX" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/structure/hygiene/sink/kitchen{
+	pixel_z = 28;
+	pixel_w = -1
+	},
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "SY" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/computer/modular/preset/engineering{
@@ -21539,6 +21599,14 @@
 "Vx" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/habcheck)
+"Vy" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/structure/table/marble,
+/obj/item/weapon/wirecutters/clippers,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "VA" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/structure/cable/green{
@@ -22783,14 +22851,6 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/aft)
-"Zw" = (
-/obj/effect/floor_decal/corner/grey/diagonal{
-	dir = 4
-	},
-/obj/structure/table/marble,
-/obj/item/weapon/reagent_containers/food/condiment/spacespice,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/galley)
 "Zz" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -37984,7 +38044,7 @@ cK
 bs
 Fy
 ev
-Bt
+NS
 ik
 AT
 rm
@@ -38186,7 +38246,7 @@ cd
 ev
 ev
 ev
-fp
+SX
 fp
 fp
 wC
@@ -38388,7 +38448,7 @@ cL
 cO
 iX
 fv
-du
+fp
 fp
 AX
 wC
@@ -38589,10 +38649,10 @@ bx
 fp
 cP
 ln
+BN
+fp
+fp
 du
-fp
-fp
-Bx
 il
 ZB
 Vi
@@ -38791,7 +38851,7 @@ by
 fp
 cP
 mF
-du
+Vy
 fp
 ww
 fy
@@ -38994,9 +39054,9 @@ fp
 cP
 BC
 Ol
-Zw
+Ol
 fp
-iW
+Bt
 ii
 ev
 kL
