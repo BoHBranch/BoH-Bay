@@ -4431,8 +4431,6 @@
 	pixel_y = -3
 	},
 /obj/item/weapon/storage/box/cdeathalarm_kit,
-/obj/item/weapon/storage/lockbox/loyalty,
-/obj/item/weapon/storage/lockbox/loyalty,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "ahw" = (
