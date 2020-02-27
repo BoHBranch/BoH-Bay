@@ -17,11 +17,6 @@
 	var/material_flags = USE_MATERIAL_COLOR|USE_MATERIAL_SINGULAR_NAME|USE_MATERIAL_PLURAL_NAME
 	var/matter_multiplier = 1
 
-/obj/item/stack/material/Destroy()
-	QDEL_NULL(material)
-	QDEL_NULL(reinf_material)
-	. = ..()
-
 /obj/item/stack/material/Initialize(mapload, var/amount, var/_material, var/_reinf_material)
 	. = ..()
 	if(_material)
