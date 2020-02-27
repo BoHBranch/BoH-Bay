@@ -1,4 +1,4 @@
-// DM Environment file for baystation12.dme.
+	// DM Environment file for baystation12.dme.
 // All manual changes should be made outside the BEGIN_ and END_ blocks.
  // New source code should be placed in .dm files: choose File/New --> Code File.
 // BEGIN_INTERNALS
@@ -1475,7 +1475,6 @@
 #include "code\modules\boh\security2\pepperballs.dm"
 #include "code\modules\boh\security2\storage.dm"
 #include "code\modules\boh\survival\aura.dm"
-#include "code\modules\boh\vox2\firearms.dm"
 #include "code\modules\boh_misc\areas.dm"
 #include "code\modules\boh_misc\badges.dm"
 #include "code\modules\boh_misc\boxes.dm"
