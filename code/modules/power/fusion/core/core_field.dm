@@ -1,4 +1,4 @@
-#define FUSION_ENERGY_PER_K        20
+#define FUSION_ENERGY_PER_K        120
 #define FUSION_INSTABILITY_DIVISOR 50000
 #define FUSION_RUPTURE_THRESHOLD   10000
 #define FUSION_REACTANT_CAP        10000
@@ -86,7 +86,7 @@
 	if(!owned_core || QDELETED(owned_core))
 		qdel(src)
 		return
-
+	radiation = 0
 	// Take some gas up from our environment.
 	var/added_particles = FALSE
 	var/datum/gas_mixture/uptake_gas = owned_core.loc.return_air()
@@ -144,7 +144,7 @@
 	check_instability()
 	Radiate()
 	if(radiation)
-		SSradiation.radiate(src, round(radiation*0.001))
+		SSradiation.radiate(src, radiation)
 	return 1
 
 /obj/effect/fusion_em_field/proc/check_instability()
@@ -306,16 +306,15 @@
 		var/datum/gas_mixture/environment = owned_core.loc.return_air()
 		if(environment && environment.temperature < (T0C+1000)) // Putting an upper bound on it to stop it being used in a TEG.
 			environment.add_thermal_energy(plasma_temperature*20000)
-	radiation = 0
 
 /obj/effect/fusion_em_field/proc/change_size(var/newsize = 1)
 	var/changed = 0
 	var/static/list/size_to_icon = list(
-			"3" = 'icons/effects/96x96.dmi', 
-			"5" = 'icons/effects/160x160.dmi', 
-			"7" = 'icons/effects/224x224.dmi', 
-			"9" = 'icons/effects/288x288.dmi', 
-			"11" = 'icons/effects/352x352.dmi', 
+			"3" = 'icons/effects/96x96.dmi',
+			"5" = 'icons/effects/160x160.dmi',
+			"7" = 'icons/effects/224x224.dmi',
+			"9" = 'icons/effects/288x288.dmi',
+			"11" = 'icons/effects/352x352.dmi',
 			"13" = 'icons/effects/416x416.dmi'
 			)
 

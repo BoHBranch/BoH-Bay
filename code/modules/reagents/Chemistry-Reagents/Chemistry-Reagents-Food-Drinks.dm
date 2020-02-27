@@ -60,6 +60,11 @@
 	if(hydration_factor)
 		M.adjust_hydration(hydration_factor * hyd_removed) // For thirst
 
+/datum/reagent/nutriment/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.nutrilevel += removed*nutriment_factor*0.025
+	H.pestlevel += removed*nutriment_factor*0.0125
+	return
+
 /datum/reagent/nutriment/glucose
 	name = "Glucose"
 	color = "#ffffff"
@@ -338,6 +343,10 @@
 	color = "#ffffff"
 	overdose = REAGENTS_OVERDOSE
 	value = 0.11
+
+/datum/reagent/sodiumchloride/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.waterlevel -= removed
+	return
 
 /datum/reagent/blackpepper
 	name = "Black Pepper"
@@ -974,6 +983,10 @@
 	glass_name = "soda water"
 	glass_desc = "Soda water. Why not make a scotch and soda?"
 	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/sodawater/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.nutrilevel += removed*0.1
+	return
 
 /datum/reagent/drink/grapesoda
 	name = "Grape Soda"

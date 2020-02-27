@@ -12,6 +12,7 @@
 	/datum/mil_rank/marine_corps/e5,\
 	/datum/mil_rank/marine_corps/e6,\
 	/datum/mil_rank/marine_corps/e7,\
+	/datum/mil_rank/marine_corps/e8,\
 	/datum/mil_rank/marine_corps/e8_alt,\
 	/datum/mil_rank/marine_corps/e9,\
 	/datum/mil_rank/marine_corps/e9_alt,\
