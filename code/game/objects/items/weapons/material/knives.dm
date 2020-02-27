@@ -52,6 +52,14 @@
 	applies_material_colour = FALSE
 	w_class = ITEM_SIZE_NORMAL
 
+/obj/item/weapon/material/knife/table/duel
+	name = "dueling knife"
+	desc = "A length of dull steel studded with razor-sharp teeth."
+	icon_state = "tacknife"
+	default_material = MATERIAL_WOOD
+	applies_material_colour = FALSE
+	w_class = ITEM_SIZE_NORMAL
+
 //kitchen knives
 /obj/item/weapon/material/knife/kitchen
 	name = "kitchen knife"
@@ -79,7 +87,7 @@
 	desc = "A blade with a saw-like pattern on the reverse edge and a heavy handle."
 	icon_state = "tacknife"
 	force_divisor = 0.2
-	w_class = ITEM_SIZE_SMALL //can be shoved into boots yet again
+	w_class = ITEM_SIZE_SMALL
 
 //random stuff
 /obj/item/weapon/material/knife/hook

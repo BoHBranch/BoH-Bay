@@ -489,3 +489,17 @@ update_flag
 	air_contents.adjust_gas(GAS_CHLORINE, MolesForPressure())
 	update_icon()
 // End debug tanks.
+
+/////////
+//BoH Gas
+/////////
+/obj/machinery/portable_atmospherics/canister/hfc
+	name = "\improper Canister \[HFC\]"
+	icon_state = "black"
+	canister_color = "black"
+	can_label = 0
+
+/obj/machinery/portable_atmospherics/canister/hfc/New()
+	..()
+	air_contents.adjust_gas(GAS_HFC, MolesForPressure())
+	update_icon()

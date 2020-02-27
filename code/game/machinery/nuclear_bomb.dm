@@ -399,7 +399,7 @@ var/bomb_set
 		/obj/item/weapon/pinpointer,
 		/obj/item/weapon/folder/envelope/nuke_instructions,
 		/obj/item/modular_computer/laptop/preset/custom_loadout/cheap/,
-		/obj/item/weapon/folder/envelope/captain
+		/obj/item/weapon/folder/envelope/rep
 	)
 
 /obj/item/weapon/storage/secure/briefcase/nukedisk/examine(mob/user)
@@ -458,6 +458,7 @@ var/bomb_set
 	var/announced = 0
 	var/time_to_explosion = 0
 	var/self_destruct_cutoff = 60 //Seconds
+	var/keyturn_recieved = FALSE
 
 /obj/machinery/nuclearbomb/station/Initialize()
 	. = ..()
@@ -495,6 +496,13 @@ var/bomb_set
 		if(!istype(sd) || !sd.armed)
 			to_chat(usr, "<span class='warning'>An inserter has not been armed or is damaged.</span>")
 			return
+	keyturn_recieved = FALSE //no pre-emptive keyturning. Must be done within the 8-second activation window.
+	visible_message(SPAN_DANGER("[src] beeps, 'Dual-authentication keyturn sequence required. Awaiting keyturn...'"))
+	sleep(8 SECONDS) //have a bit of a nap while we wait for the keyturn.
+	if(!keyturn_recieved)
+		visible_message(SPAN_DANGER("[src] beeps, 'Dual-authentication failure. Aborting countdown start.'"))
+		return
+	visible_message(SPAN_DANGER("[src] beeps, 'Dual-authentication accepted. Countdown sequence begun.'"))
 	visible_message("<span class='warning'>Warning. The self-destruct sequence override will be disabled [self_destruct_cutoff] seconds before detonation.</span>")
 	..()
 

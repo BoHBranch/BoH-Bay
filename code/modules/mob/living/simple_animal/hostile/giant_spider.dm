@@ -20,8 +20,8 @@
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"
-	maxHealth = 125
-	health = 125
+	maxHealth = 85
+	health = 85
 	melee_damage_lower = 10
 	melee_damage_upper = 15
 	melee_damage_flags = DAM_SHARP
@@ -61,8 +61,8 @@
 	icon_living = "brown"
 	icon_dead = "brown_dead"
 	meat_amount = 4
-	maxHealth = 200
-	health = 200
+	maxHealth = 100
+	health = 100
 	melee_damage_lower = 13
 	melee_damage_upper = 18
 	poison_per_bite = 5
@@ -108,8 +108,8 @@
 	icon_state = "black"
 	icon_living = "black"
 	icon_dead = "black_dead"
-	maxHealth = 150
-	health = 150
+	maxHealth = 95
+	health = 95
 	melee_damage_lower = 17
 	melee_damage_upper = 20
 	poison_per_bite = 10
@@ -371,7 +371,7 @@ Nurse caste procs
 
 						if(O.anchored)
 							continue
-						
+
 						if(is_type_in_list(O, cocoon_blacklist))
 							continue
 
@@ -444,7 +444,7 @@ Hunter caste procs
 	. = ..()
 	if(!isnull(first_stop_automation))
 		stop_automation = first_stop_automation
-	
+
 /mob/living/simple_animal/hostile/giant_spider/hunter/throw_impact(atom/hit_atom)
 	if(isliving(hit_atom))
 		var/mob/living/target = hit_atom

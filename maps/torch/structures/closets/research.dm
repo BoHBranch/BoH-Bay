@@ -43,6 +43,7 @@
 		/obj/item/weapon/storage/box/secret_project_disks/science,
 		/obj/item/weapon/storage/belt/general,
 		/obj/item/device/holowarrant,
+		/obj/item/weapon/sd_key,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/toxins, /obj/item/weapon/storage/backpack/satchel/tox)),
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger/tox, 50)
 	)

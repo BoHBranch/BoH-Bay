@@ -4,12 +4,12 @@
 	w_class = ITEM_SIZE_NORMAL
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/handcuffs,/obj/item/weapon/tank)
 	armor = list(
-		melee = ARMOR_MELEE_MAJOR, 
-		bullet = ARMOR_BALLISTIC_PISTOL, 
+		melee = ARMOR_MELEE_MAJOR,
+		bullet = ARMOR_BALLISTIC_PISTOL,
 		laser = ARMOR_LASER_HANDGUNS,
-		energy = ARMOR_ENERGY_MINOR, 
-		bomb = ARMOR_BOMB_PADDED, 
-		bio = ARMOR_BIO_SMALL, 
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_PADDED,
+		bio = ARMOR_BIO_SMALL,
 		rad = ARMOR_RAD_MINOR
 		)
 	siemens_coefficient = 0.6
@@ -23,12 +23,12 @@
 
 /obj/item/clothing/head/helmet/space/vox
 	armor = list(
-		melee = ARMOR_MELEE_MAJOR, 
-		bullet = ARMOR_BALLISTIC_PISTOL, 
+		melee = ARMOR_MELEE_MAJOR,
+		bullet = ARMOR_BALLISTIC_PISTOL,
 		laser = ARMOR_LASER_HANDGUNS,
-		energy = ARMOR_ENERGY_MINOR, 
-		bomb = ARMOR_BOMB_PADDED, 
-		bio = ARMOR_BIO_SMALL, 
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_PADDED,
+		bio = ARMOR_BIO_SMALL,
 		rad = ARMOR_RAD_MINOR
 		)
 	siemens_coefficient = 0.6
@@ -98,16 +98,17 @@
 	item_state = "vox-casual-2"
 
 /obj/item/clothing/gloves/vox
-	desc = "These bizarre gauntlets seem to be fitted for... bird claws?"
+	desc = "These bizarre gauntlets seem to be fitted for... bird claws? \
+	They appear to be made of some sort of dense composite."
 	name = "insulated gauntlets"
 	icon_state = "gloves-vox"
 	item_state = "gloves-vox"
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
+	force = 5 //They're gauntlets. Same force as 'tactical' gloves.
 	species_restricted = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
 
 /obj/item/clothing/shoes/magboots/vox
-
 	desc = "A pair of heavy, jagged armoured foot pieces, seemingly suitable for a velociraptor."
 	name = "vox magclaws"
 	item_state = "boots-vox"

@@ -9,6 +9,7 @@ var/const/SRV               =(1<<7)
 var/const/SUP               =(1<<8)
 var/const/SPT               =(1<<9)
 var/const/EXP               =(1<<10)
+var/const/INF               =(1<<11)
 
 SUBSYSTEM_DEF(jobs)
 	name = "Jobs"
@@ -509,7 +510,7 @@ SUBSYSTEM_DEF(jobs)
 		if(department_account)
 			remembered_info += "<b>Your department's account number is:</b> #[department_account.account_number]<br>"
 			remembered_info += "<b>Your department's account pin is:</b> [department_account.remote_access_pin]<br>"
-			remembered_info += "<b>Your department's account funds are:</b> T[department_account.money]<br>"
+			remembered_info += "<b>Your department's account funds are:</b> [GLOB.using_map.local_currency_name_short][department_account.money]<br>"
 
 		H.StoreMemory(remembered_info, /decl/memory_options/system)
 

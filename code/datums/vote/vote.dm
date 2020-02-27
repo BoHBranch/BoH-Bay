@@ -22,6 +22,8 @@
 	var/win_y = 740                // Vote window size.
 
 	var/manual_allowed = 1         // Whether humans can start it.
+	var/show_precentages = TRUE //Are precentages shown?
+	var/show_results = TRUE //Do we show vote results?
 
 //Expected to be run immediately after creation; a false return means that the vote could not be run and the datum will be deleted.
 /datum/vote/proc/setup(mob/creator, automatic)
@@ -79,22 +81,24 @@
 
 	var/text = get_result_announcement()
 	log_vote(text)
-	to_world("<font color='purple'>[text]</font>")	
+	to_world("<font color='purple'>[text]</font>")
 
 	if(!(result[result[1]] > 0))
 		return 1
 
 /datum/vote/proc/get_result_announcement()
 	var/list/text = list()
-	if(!(result[result[1]] > 0)) // No one voted.
-		text += "<b>Vote Result: Inconclusive - No Votes!</b>"
-	else
-		text += "<b>Vote Result: [display_choices[result[1]]]</b>"
-		if(length(result) >= 2)
-			text += "\nSecond place: [display_choices[result[2]]]"
-		if(length(result) >= 3)
-			text += ", third place: [display_choices[result[3]]]"
-
+	if(show_results)
+		if(!(result[result[1]] > 0)) // No one voted.
+			text += "<b>Vote Result: Inconclusive - No Votes!</b>"
+		else
+			text += "<b>Vote Result: [display_choices[result[1]]]</b>"
+			if(length(result) >= 2)
+				text += "\nSecond place: [display_choices[result[2]]]"
+			if(length(result) >= 3)
+				text += ", third place: [display_choices[result[3]]]"
+	if(!show_results)
+		text += "<b>Vote results obfuscated.</b>"
 	return JOINTEXT(text)
 
 // False return means vote was not changed for whatever reason.
@@ -153,7 +157,7 @@
 	else
 		. += "<h2>Vote: [capitalize(name)]</h2>"
 	. += "Time Left: [time_remaining] s<hr>"
-	. += "<table width = '100%'><tr><td align = 'center'><b>Choices</b></td><td colspan='3' align = 'center'><b>Votex</b></td><td align = 'center'><b>Votes</b></td>"
+	. += "<table width = '100%'><tr><td align = 'center'><b>Choices</b></td><td colspan='3' align = 'center'><b>Votex</b></td><td align = 'center'><b>[show_precentages ? "Votes" : " "]</b></td>"
 	. += additional_header
 
 	var/totalvotes = 0
@@ -178,7 +182,8 @@
 			else
 				. += "<a href='?src=\ref[src];choice=[j];priority=[i]'>[priorities[i]]</a>"
 			. += "</td>"
-		. += "</td><td align = 'center'>[votepercent]%</td>"
+		if(show_precentages)
+			. += "</td><td align = 'center'>[votepercent]%</td>"
 		if (additional_text[choice])
 			. += "[additional_text[choice]]" //Note lack of cell wrapper, to allow for dynamic formatting.
 		. += "</tr>"

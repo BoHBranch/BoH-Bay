@@ -42,20 +42,28 @@
 	affect_ingest(M, alien, removed)
 
 /datum/reagent/nutriment/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == SPECIES_OLDUNATHI)
+		return
 	M.heal_organ_damage(0.5 * removed, 0) //what
-
 	adjust_nutrition(M, alien, removed)
 	M.add_chemical_effect(CE_BLOODRESTORE, 4 * removed)
 
 /datum/reagent/nutriment/proc/adjust_nutrition(var/mob/living/carbon/M, var/alien, var/removed)
 	var/nut_removed = removed
 	var/hyd_removed = removed
+	if(alien == IS_OLDUNATHI) //Literally nothing from nutriments
+		return
 	if(alien == IS_UNATHI)
 		removed *= 0.1 // Unathi get most of their nutrition from meat.
 	if(nutriment_factor)
 		M.adjust_nutrition(nutriment_factor * nut_removed) // For hunger and fatness
 	if(hydration_factor)
 		M.adjust_hydration(hydration_factor * hyd_removed) // For thirst
+
+/datum/reagent/nutriment/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.nutrilevel += removed*nutriment_factor*0.025
+	H.pestlevel += removed*nutriment_factor*0.0125
+	return
 
 /datum/reagent/nutriment/glucose
 	name = "Glucose"
@@ -79,6 +87,7 @@
 /datum/reagent/nutriment/protein/adjust_nutrition(var/mob/living/carbon/M, var/alien, var/removed)
 	switch(alien)
 		if(IS_UNATHI) removed *= 2.25
+		if(IS_OLDUNATHI) removed *= 3.5
 	M.adjust_nutrition(nutriment_factor * removed)
 
 /datum/reagent/nutriment/protein/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
@@ -335,6 +344,10 @@
 	overdose = REAGENTS_OVERDOSE
 	value = 0.11
 
+/datum/reagent/sodiumchloride/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.waterlevel -= removed
+	return
+
 /datum/reagent/blackpepper
 	name = "Black Pepper"
 	description = "A powder ground from peppercorns. *AAAACHOOO*"
@@ -354,8 +367,8 @@
 	value = 0.2
 
 /datum/reagent/frostoil
-	name = "Frost Oil"
-	description = "A special oil that noticably chills the body. Extracted from Ice Peppers."
+	name = "Chilly Oil"
+	description = "An oil harvested from a mutant form of chili peppers, it has a chilling effect on the body."
 	taste_description = "arctic mint"
 	taste_mult = 1.5
 	reagent_state = LIQUID
@@ -649,7 +662,7 @@
 	glass_desc = "A glass of deadly juice."
 
 /datum/reagent/toxin/poisonberryjuice/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
-	if(alien == IS_UNATHI)
+	if(alien == IS_UNATHI || alien == IS_OLDUNATHI)
 		return //unathi are immune!
 	return ..()
 
@@ -970,6 +983,10 @@
 	glass_name = "soda water"
 	glass_desc = "Soda water. Why not make a scotch and soda?"
 	glass_special = list(DRINK_FIZZ)
+
+/datum/reagent/drink/sodawater/affect_tray(var/obj/machinery/portable_atmospherics/hydroponics/H, var/datum/seed/seed, var/removed)
+	H.nutrilevel += removed*0.1
+	return
 
 /datum/reagent/drink/grapesoda
 	name = "Grape Soda"

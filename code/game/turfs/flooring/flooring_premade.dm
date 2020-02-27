@@ -161,6 +161,11 @@
 /turf/simulated/floor/reinforced/n20
 	initial_gas = list(GAS_N2O = ATMOSTANK_NITROUSOXIDE)
 
+/turf/simulated/floor/reinforced/xenon
+	initial_gas = list(GAS_XENON = ATMOSTANK_NITROGEN)
+
+/turf/simulated/floor/reinforced/bromide
+	initial_gas = list(GAS_METHYL_BROMIDE = ATMOSTANK_METHYL_BROMIDE)
 
 /turf/simulated/floor/cult
 	name = "engraved floor"
@@ -273,7 +278,7 @@
 	name = "floor"
 	icon_state = "techfloor_grid"
 	initial_flooring = /decl/flooring/tiling/tech/grid
-	
+
 /turf/simulated/floor/tiled/skrell
 	icon = 'icons/turf/skrellturf.dmi'
 	icon_state = "skrellblack"

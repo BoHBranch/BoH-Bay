@@ -15,4 +15,5 @@
 	required_enemies = 1
 	end_on_antag_death = FALSE
 	antag_scaling_coeff = 10
+	votable = 0
 	antag_tags = list(MODE_CHANGELING)

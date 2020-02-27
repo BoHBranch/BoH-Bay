@@ -430,3 +430,9 @@ RADIATION_LOWER_LIMIT 0.15
 ## clients will still download from the server *too*. This will randomly select one URL if more than one is provided.
 ## Spaces are prohibited in each URL by spec, you must use encoded spaces.
 #RESOURCE_URLS URL URL2 URL3
+
+# If using TGS, counts how many regularly TGS hard restarts the server process.
+# -1 - never do this.
+# 0 - do this after every round.
+# n - do this every n rounds.
+#ROUNDS_UNTIL_HARD_RESTART 4

@@ -6,7 +6,7 @@
 	spawn_positions = 1
 	supervisors = "the Chief Science Officer"
 	selection_color = "#68099e"
-	minimal_player_age = 1
+	minimal_player_age = 4
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35

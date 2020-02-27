@@ -16,6 +16,7 @@
 	icon_state = "pod_0"
 	req_access = list(access_genetics) // For premature unlocking.
 	base_type = /obj/machinery/clonepod
+	construct_state = /decl/machine_construction/default/panel_closed
 	var/mob/living/occupant
 	var/heal_level = 20			// The clone is released once its health reaches this level.
 	var/heal_rate = 1
@@ -39,6 +40,9 @@
 	..()
 	return INITIALIZE_HINT_LATELOAD
 
+/obj/machinery/clonepod/proc/end_wait()
+	eject_wait = 0
+
 //Start growing a human clone in the pod!
 /obj/machinery/clonepod/proc/growclone(var/datum/dna2/record/R)
 	if(mess || attempting)
@@ -54,8 +58,7 @@
 	locked = 1
 
 	eject_wait = 1
-	spawn(30)
-		eject_wait = 0
+	addtimer(CALLBACK(src, .proc/end_wait), 3 SECONDS)
 
 	var/mob/living/carbon/human/H = new /mob/living/carbon/human(src, R.dna.species)
 	occupant = H
@@ -271,8 +274,7 @@
 		connected_message("Critical Error!")
 		mess = 1
 		update_icon()
-		spawn(5)
-			qdel(occupant)
+		QDEL_IN(occupant, 5)
 	return
 
 /obj/machinery/clonepod/relaymove(mob/user as mob)

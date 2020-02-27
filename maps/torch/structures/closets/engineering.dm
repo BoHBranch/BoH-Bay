@@ -34,6 +34,7 @@
 	name = "chief engineer's locker"
 	req_access = list(access_ce)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/engineering/ce
+	storage_capacity = 45
 
 /obj/structure/closet/secure_closet/engineering_chief_torch/WillContain()
 	return list(
@@ -65,6 +66,7 @@
 		/obj/item/weapon/storage/box/secret_project_disks,
 		/obj/item/weapon/material/knife/folding/swiss/officer,
 		/obj/item/clothing/head/hardhat/damage_control/White,
+		/obj/item/weapon/sd_key,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/industrial, /obj/item/weapon/storage/backpack/satchel/eng)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/eng, /obj/item/weapon/storage/backpack/messenger/engi))
 	)

@@ -66,15 +66,19 @@
 
 #define RECOMMENDED_VERSION 512
 /world/New()
+
+	enable_debugger()
 	//set window title
 	name = "[server_name] - [GLOB.using_map.full_name]"
+
+	GLOB.timezoneOffset = text2num(time2text(0,"hh")) * 36000
 
 	//logs
 	SetupLogs()
 	var/date_string = time2text(world.realtime, "YYYY/MM/DD")
 	href_logfile = file("data/logs/[date_string] hrefs.htm")
 	diary = file("data/logs/[date_string].log")
-	diary << "[log_end]\n[log_end]\nStarting up. (ID: [game_id]) [time2text(world.timeofday, "hh:mm.ss")][log_end]\n---------------------[log_end]"
+	game_log("STARTUP","[log_end]\n[log_end]\nStarting up. (ID: [game_id]) [time2text(world.timeofday, "hh:mm.ss")][log_end]\n---------------------[log_end]")
 	changelog_hash = md5('html/changelog.html')					//used for telling if the changelog has changed recently
 
 	if(config && config.server_name != null && config.server_suffix && world.port > 0)
@@ -88,6 +92,8 @@
 
 	if(byond_version < RECOMMENDED_VERSION)
 		world.log << "Your server's byond version does not meet the recommended requirements for this server. Please update BYOND"
+
+	world.TgsNew()
 
 	callHook("startup")
 	//Emergency Fix
@@ -108,7 +114,15 @@ var/world_topic_spam_protect_ip = "0.0.0.0"
 var/world_topic_spam_protect_time = world.timeofday
 
 /world/Topic(T, addr, master, key)
-	diary << "TOPIC: \"[T]\", from:[addr], master:[master], key:[key][log_end]"
+
+	game_log("TOPIC", "\"[T]\", from:[addr], master:[master], key:[key][log_end]")
+
+	// TGS topic hook. Returns if successful, expects old-style serialization.
+	var/tgs_topic_return = TgsTopic(T)
+
+	if (tgs_topic_return)
+		log_debug("API - TGS3 Request.")
+		return tgs_topic_return
 
 	if (T == "ping")
 		var/x = 1
@@ -454,11 +468,27 @@ var/world_topic_spam_protect_time = world.timeofday
 		return GLOB.prometheus_metrics.collect()
 
 
-/world/Reboot(var/reason)
+/world/Reboot(var/reason, hard_reset = FALSE)
 	/*spawn(0)
 		sound_to(world, sound(pick('sound/AI/newroundsexy.ogg','sound/misc/apcdestroyed.ogg','sound/misc/bangindonk.ogg')))// random end sounds!! - LastyBatsy
 
 		*/
+
+	if (!hard_reset && world.TgsAvailable())
+		switch (config.rounds_until_hard_restart)
+			if (-1)
+				hard_reset = FALSE
+			if (0)
+				hard_reset = TRUE
+			else
+				if (SSpersistent_configuration.rounds_since_hard_restart >= config.rounds_until_hard_restart)
+					hard_reset = TRUE
+					SSpersistent_configuration.rounds_since_hard_restart = 0
+				else
+					hard_reset = FALSE
+					SSpersistent_configuration.rounds_since_hard_restart++
+	else if (!world.TgsAvailable() && hard_reset)
+		hard_reset = FALSE
 
 	Master.Shutdown()
 
@@ -470,6 +500,12 @@ var/world_topic_spam_protect_time = world.timeofday
 		text2file("foo", "reboot_called")
 		to_world("<span class=danger>World reboot waiting for external scripts. Please be patient.</span>")
 		return
+
+	world.TgsReboot()
+
+	if (hard_reset)
+		log_misc("World hard rebooted at [time_stamp()].")
+		world.TgsEndProcess()
 
 	..(reason)
 
@@ -688,3 +724,8 @@ proc/establish_old_db_connection()
 		return 1
 
 #undef FAILED_DB_CONNECTION_CUTOFF
+
+/world/proc/enable_debugger()
+	var/dll = world.GetConfig("env", "EXTOOLS_DLL")
+	if (dll)
+		call(dll, "debug_initialize")()

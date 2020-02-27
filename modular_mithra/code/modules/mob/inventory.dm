@@ -10,7 +10,7 @@
 			return TRUE // self destroying objects (tk, grabs)
 
 		if(W.loc != target)
-			W.do_putdown_animation(target, src)
+			addtimer(CALLBACK(W, /atom/movable/.proc/do_putdown_animation, target, src), 0)
 			W.forceMove(target, drop_flag)
 		update_icons()
 		return TRUE

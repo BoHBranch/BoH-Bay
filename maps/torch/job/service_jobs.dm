@@ -51,18 +51,19 @@
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_janitor, access_solgov_crew)
 	minimal_access = list()
-	
+
 /datum/job/chef
 	title = "Cook"
 	department = "Service"
 	department_flag = SRV
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	supervisors = "the Executive Officer"
 	alt_titles = list(
 		"Chef",
-		"Culinary Specialist"
+		"Culinary Specialist",
+		"Apprentice Chef"
 		)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/cook
 	allowed_branches = list(
@@ -84,15 +85,22 @@
 	minimal_access = list()
 
 /datum/job/bartender
+	title = "Bartender"
 	department = "Service"
 	department_flag = SRV
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Executive Officer and the Corporate Liaison"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 30
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/bartender
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
-
+	alt_titles = list(
+		"Mixologist",
+		"Barista",
+		"Apprentice Bartender"
+		)
 	access = list(access_hydroponics, access_bar, access_solgov_crew, access_kitchen, access_commissary)
 	minimal_access = list()
 	min_skill = list(   SKILL_COOKING   = SKILL_BASIC,
@@ -103,8 +111,8 @@
 	title = "Crewman"
 	department = "Service"
 	department_flag = SRV
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 10
+	spawn_positions = 10
 	supervisors = "the Executive Officer and SolGov Personnel"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20

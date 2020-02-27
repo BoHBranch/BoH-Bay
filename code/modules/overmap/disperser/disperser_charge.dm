@@ -2,6 +2,7 @@
 	name = "unknown disperser charge"
 	desc = "A charge to power the obstruction field disperser with. It looks impossibly round and shiny. This charge does not have a defined purpose."
 	icon_state = "slug"
+	atom_flags =  ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CLIMBABLE
 	var/chargetype
 	var/chargedesc
 
@@ -32,3 +33,11 @@
 	desc = "A charge to power the obstruction field disperser with. It looks impossibly round and shiny. This charge is designed to explode on impact."
 	chargetype = OVERMAP_WEAKNESS_EXPLOSIVE
 	chargedesc = "INDARRA"
+
+//boh
+/obj/structure/ship_munition/disperser_charge/ascent
+	name = "glowing charge"
+	color = "#a33fbf"
+	desc = "A glowing, heavy orb. What could the purpose of such a thing be?"
+	chargetype = OVERMAP_WEAKNESS_FIRE | OVERMAP_WEAKNESS_EMP | OVERMAP_WEAKNESS_MINING | OVERMAP_WEAKNESS_EXPLOSIVE//doesn't need all of these, but whatever.
+	chargedesc = "ASCENT"
