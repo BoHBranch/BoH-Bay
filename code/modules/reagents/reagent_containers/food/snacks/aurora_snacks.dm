@@ -586,6 +586,7 @@
 /obj/item/weapon/reagent_containers/food/snacks/chilied_eggs
 	name = "chilied eggs"
 	desc = "Three deviled eggs floating in a bowl of meat chili. A popular lunchtime meal for Unathi in Ouerea."
+	icon = 'icons/obj/aurora/food.dmi'
 	icon_state = "chilied_eggs"
 	trash = /obj/item/trash/snack_bowl
 	reagents_to_add = list(
@@ -819,6 +820,7 @@
 	name = "bread"
 	icon_state = "Some plain old Earthen bread."
 	icon_state = "bread"
+	icon = 'icons/obj/aurora/food.dmi'
 	slice_path = /obj/item/weapon/reagent_containers/food/snacks/slice/bread
 	slices_num = 8
 	filling_color = "#ffe396"
@@ -834,6 +836,7 @@
 	name = "bread slice"
 	desc = "A slice of home."
 	icon_state = "breadslice"
+	icon = 'icons/obj/aurora/food.dmi'
 	trash = /obj/item/trash/plate
 	filling_color = "#d27332"
 	bitesize = 2
@@ -1243,6 +1246,7 @@
 	name = "sushi roll"
 	desc = "A sushi roll wrapped in special grass that combines unathi and human cooking techniques. Can be sliced into proper serving sizes."
 	icon_state = "sushi_roll"
+	icon = 'icons/obj/aurora/food.dmi'
 	slice_path = /obj/item/weapon/reagent_containers/food/snacks/sushi
 	slices_num = 3
 	reagents_to_add = list(/datum/reagent/nutriment/protein/seafood = 6)
@@ -1251,6 +1255,7 @@
 	name = "banana split"
 	desc = "A dessert made with icecream and a banana."
 	icon_state = "banana_split"
+	icon = 'icons/obj/aurora/food.dmi'
 	bitesize = 2
 	trash = /obj/item/trash/snack_bowl
 	reagents_to_add = list(/datum/reagent/nutriment = 5, /datum/reagent/drink/juice/banana = 3)
@@ -1260,6 +1265,7 @@
 	name = "lasagna"
 	desc = "Favorite of cats."
 	icon_state = "lasagna"
+	icon = 'icons/obj/aurora/food.dmi'
 	trash = /obj/item/trash/tray
 	center_of_mass = list("x"=16, "y"=17)
 	reagents_to_add = list(/datum/reagent/nutriment = 12, /datum/reagent/nutriment/protein = 12)

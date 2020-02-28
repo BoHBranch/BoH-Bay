@@ -12,8 +12,8 @@
 	..(newloc)
 
 	if(istype(topping))
-		var/list/flavor = topping.reagent_data[/datum/reagent/nutriment]
-		var/list/ourflavor = reagent_data[/datum/reagent/nutriment]
+		var/list/flavor = LAZYLEN(topping.reagent_data) ? topping.reagent_data[/datum/reagent/nutriment] : null
+		var/list/ourflavor = LAZYLEN(reagent_data) ? reagent_data[/datum/reagent/nutriment] : null
 		for(var/taste_thing in flavor)
 			if(!ourflavor[taste_thing]) ourflavor[taste_thing] = 0
 			ourflavor[taste_thing] += flavor[taste_thing]

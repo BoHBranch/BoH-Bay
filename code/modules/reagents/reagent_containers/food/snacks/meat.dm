@@ -48,6 +48,7 @@
 
 /obj/item/weapon/reagent_containers/food/snacks/meat/chicken
 	name = "chicken meat"
+	icon = 'icons/obj/aurora/food.dmi'
 	icon_state = "chickenbreast"
 	cooked_icon = "chickenbreast_cooked"
 	filling_color = "#bbbbaa"

@@ -126,11 +126,11 @@
 	w_class = ITEM_SIZE_TINY
 	var/band_color = COLOR_CYAN
 	var/time = 1 SECONDS // takes less time than a normal syringe
+	starts_with = list(/datum/reagent/inaprovaline = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/Initialize()
 	. = ..()
 	update_icon()
-	return
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/attack(mob/M as mob, mob/user as mob)
 	if(user != M && !M.incapacitated())
