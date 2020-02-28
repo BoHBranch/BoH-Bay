@@ -191,6 +191,8 @@
 
 	return result_obj
 
+#define TESTING
+
 // food-related
 //This proc is called under the assumption that the container has already been checked and found to contain the necessary ingredients
 /datum/recipe/proc/make_food(var/obj/container as obj)
@@ -207,18 +209,17 @@
 	var/obj/machinery/microwave/M = container
 
 	//Find items we need
-	if (items && items.len)
+	if (LAZYLEN(items))
 		for (var/i in items)
 			var/obj/item/I = locate(i) in container
 			if (I && I.reagents)
 				I.reagents.trans_to_holder(buffer,I.reagents.total_volume)
 				if(istype(M))
 					M.ingredients -= I
-				I.forceMove(null)
 				qdel(I)
 
 	//Find fruits
-	if (fruit && fruit.len)
+	if (LAZYLEN(fruit))
 		var/list/checklist = list()
 		checklist = fruit.Copy()
 
@@ -233,31 +234,24 @@
 					G.reagents.trans_to_holder(buffer,G.reagents.total_volume)
 				if(istype(M))
 					M.ingredients -= G
-				G.forceMove(null)
 				qdel(G)
 
 	//And lastly deduct necessary quantities of reagents
-	if (reagents && reagents.len)
-		for (var/datum/reagent/r in reagents)
+	if (LAZYLEN(reagents))
+		for (var/r in reagents)
 			//Doesnt matter whether or not there's enough, we assume that check is done before
-			container.reagents.trans_type_to_holder(buffer, r.type, reagents[r])
+			container.reagents.trans_type_to_holder(buffer, r, reagents[r])
 
 	/*
 	Now we've removed all the ingredients that were used and we have the buffer containing the total of
 	all their reagents.
-
-	Next up we create the result, and then handle the merging of reagents depending on the mix setting
-	*/
-	var/tally = 0
-
-	/*
 	If we have multiple results, holder will be used as a buffer to hold reagents for the result objects.
 	If, as in the most common case, there is only a single result, then it will just be a reference to
 	the single-result's reagents
 	*/
 	var/datum/reagents/holder = new/datum/reagents(10000000000, GLOB.temp_reagents_holder)
 	var/list/results = list()
-	while (tally < result_quantity)
+	for (var/_ in 1 to result_quantity)
 		var/obj/result_obj = new result(container)
 		results.Add(result_obj)
 
@@ -270,7 +264,6 @@
 			holder = result_obj.reagents
 		else
 			result_obj.reagents.trans_to_holder(holder, result_obj.reagents.total_volume)
-		tally++
 
 
 	switch(reagent_mix)
@@ -283,7 +276,7 @@
 			//We want the highest of each.
 			//Iterate through everything in buffer. If the target has less than the buffer, then top it up
 			for (var/datum/reagent/R in buffer.reagent_list)
-				var/rvol = holder.get_reagent_amount(R.id)
+				var/rvol = holder.get_reagent_amount(R.type)
 				if (rvol < R.volume)
 					//Transfer the difference
 					buffer.trans_type_to_holder(holder, R.type, R.volume-rvol)
@@ -292,7 +285,7 @@
 			//Min is slightly more complex. We want the result to have the lowest from each side
 			//But zero will not count. Where a side has zero its ignored and the side with a nonzero value is used
 			for (var/datum/reagent/R in buffer.reagent_list)
-				var/rvol = holder.get_reagent_amount(R.id)
+				var/rvol = holder.get_reagent_amount(R.type)
 				if (rvol == 0) //If the target has zero of this reagent
 					buffer.trans_type_to_holder(holder, R.type, R.volume)
 					//Then transfer all of ours
@@ -300,7 +293,7 @@
 				else if (rvol > R.volume)
 					//if the target has more than ours
 					//Remove the difference
-					holder.remove_reagent(R.id, rvol-R.volume)
+					holder.remove_reagent(R.type, rvol-R.volume)
 
 
 	if (results.len > 1)

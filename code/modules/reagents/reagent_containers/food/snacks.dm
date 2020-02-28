@@ -442,7 +442,7 @@
 	desc = "Large, slightly elongated egg with a thick shell."
 	icon_state = "lizard_egg"
 	w_class = ITEM_SIZE_SMALL
-	reagents_to_add = list("protein" = 5)
+	reagents_to_add = list(/datum/reagent/nutriment/protein = 5)
 
 /obj/item/weapon/reagent_containers/food/snacks/egg/lizard/Initialize()
 	if(prob(30))	//extra nutriment
@@ -476,8 +476,7 @@
 	bitesize = 3
 	reagents_to_add = list(/datum/reagent/toxin = 1, /datum/reagent/nutriment/protein = 3)
 /obj/item/weapon/reagent_containers/food/snacks/organ/Initialize()
-	reagents_to_add += list(/datum/reagent/nutriment/protein = rand(0, 2))
-	reagents_to_add += list(/datum/reagent/toxin = rand(1, 3))
+	reagents_to_add += list(/datum/reagent/nutriment/protein = rand(0, 2), /datum/reagent/toxin = rand(1, 3))
 	. = ..()
 
 

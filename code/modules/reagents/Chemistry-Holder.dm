@@ -374,21 +374,21 @@ GLOBAL_DATUM_INIT(temp_reagents_holder, /obj, new)
 
 	qdel(F)
 
-/datum/reagents/proc/trans_type_to_holder(var/datum/reagents/holder, var/type, var/amount = 1, var/multiplier = 1)
+/datum/reagents/proc/trans_type_to_holder(var/datum/reagents/holder, var/reagent_type, var/amount = 1, var/multiplier = 1)
 	if (!holder)
 		return
 
-	amount = min(amount, get_reagent_amount(type))
+	amount = min(amount, get_reagent_amount(reagent_type))
 
 	if(!amount)
 		return
 
 	var/datum/reagents/F = new /datum/reagents(amount, GLOB.temp_reagents_holder)
-	var/tmpdata = get_data(type)
-	F.add_reagent(type, amount, tmpdata)
-	remove_reagent(type, amount)
+	var/tmpdata = get_data(reagent_type)
+	F.add_reagent(reagent_type, amount, tmpdata)
+	remove_reagent(reagent_type, amount)
 
-	. = F.trans_to_holder(holder, amount, multiplier) // Let this proc check the atom's type
+	. = F.trans_to_holder(holder, amount, multiplier)
 
 	qdel(F)
 

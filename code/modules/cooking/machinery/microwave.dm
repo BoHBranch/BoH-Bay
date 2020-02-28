@@ -476,8 +476,8 @@ VUEUI_MONITOR_VARS(/obj/machinery/microwave, microwavemonitor)
 			to_chat(user, SPAN_WARNING("[RC.name] is full!"))
 		else
 			to_chat(user, SPAN_NOTICE("You empty [free_space] units of [R.name] into your [RC.name]."))
-			RC.reagents.add_reagent(R.id, free_space)
-			reagents.remove_reagent(R.id, free_space)
+			RC.reagents.add_reagent(R.type, free_space)
+			reagents.remove_reagent(R.type, free_space)
 		SSvueui.check_uis_for_change(src)
 	else
 		to_chat(user, SPAN_WARNING("You need to be holding a valid container to empty [R.name]!"))
