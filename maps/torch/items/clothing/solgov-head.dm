@@ -49,11 +49,6 @@
 	name = "fleet utility cover"
 	desc = "A navy blue utility cover bearing the crest of NT's Private Fleet."
 	icon_state = "navyutility"
-	
-/obj/item/clothing/head/solgov/utility/fleet/marine
-	name = "navy utility cover"
-	desc = "A navy blue utility cover bearing the crest of the SCG Army."
-	icon_state = "navyutility"
 
 /obj/item/clothing/head/solgov/utility/army
 	name = "army utility cover"

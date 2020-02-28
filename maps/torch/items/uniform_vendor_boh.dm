@@ -29,6 +29,12 @@
 			user_outfit.utility_shoes,
 			user_outfit.utility_hat_tan
 			)
+	if (user_outfit.utility_under_navy || user_outfit.utility_hat_navy)
+		res["Navy Utility"] = list(
+			user_outfit.utility_under_navy,
+			user_outfit.utility_shoes,
+			user_outfit.utility_hat_navy
+			)
 	if (user_outfit.utility_extra)
 		res["Utility Extras"] = user_outfit.utility_extra
 
