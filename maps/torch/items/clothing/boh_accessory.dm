@@ -207,7 +207,7 @@
 	desc = "Insignia denoting the rank of Master Gunnery Sergeant."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt
-	icon_state = "ME9"
+	icon_state = "ME9A"
 	name = "ranks (E-9 sergeant major)"
 	desc = "Insignia denoting the rank of Sergeant Major."
 
