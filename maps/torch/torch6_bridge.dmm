@@ -12891,12 +12891,12 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/turret_protected/ai_outer_chamber)
 "vd" = (
-/obj/machinery/power/shield_generator,
 /obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/power/shield_generator/precharged,
 /turf/simulated/floor/plating,
 /area/shield/bridge)
 "ve" = (

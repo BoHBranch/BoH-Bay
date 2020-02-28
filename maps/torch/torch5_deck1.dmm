@@ -8243,6 +8243,9 @@
 	pixel_y = 23
 	},
 /obj/item/clothing/accessory/armorplate/shock,
+/obj/item/clothing/accessory/armorplate/shock,
+/obj/item/clothing/accessory/armorplate/shock,
+/obj/item/clothing/accessory/armorplate/shock,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
 "anu" = (
