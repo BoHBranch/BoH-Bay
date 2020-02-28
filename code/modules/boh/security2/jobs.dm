@@ -13,7 +13,9 @@
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 19
 	selection_color = "#601c1c"
-	alt_titles = list()
+	alt_titles = list(
+		"Forensics Trainee"
+		)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
@@ -25,13 +27,13 @@
 		/datum/mil_rank/marine_corps/e1,
 		/datum/mil_rank/marine_corps/e2
 	)
-	min_skill = list(   SKILL_EVA         = SKILL_BASIC,
+	min_skill = list(   SKILL_EVA         = SKILL_ADEPT,
 	                    SKILL_COMBAT      = SKILL_BASIC)
 
-	max_skill = list(   SKILL_COMBAT      = SKILL_ADEPT,
-	                    SKILL_WEAPONS     = SKILL_BASIC,
-	                    SKILL_FORENSICS   = SKILL_BASIC)
-	skill_points = 12
+	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
+	                    SKILL_WEAPONS     = SKILL_MAX,
+	                    SKILL_FORENSICS   = SKILL_MAX)
+	skill_points = 16
 
 	access = list(access_security, access_brig, access_maint_tunnels,
 						access_external_airlocks, access_emergency_storage,
@@ -39,3 +41,6 @@
 	minimal_access = list()
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant)
+
+/datum/job/seccadetn/get_description_blurb()
+	return "You're either a new hire, or a new trainee aboard the [GLOB.using_map.full_name]. Everyone is your senior, and as such, you'd best listen to them."
