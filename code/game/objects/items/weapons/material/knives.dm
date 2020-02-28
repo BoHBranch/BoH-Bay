@@ -52,6 +52,14 @@
 	applies_material_colour = FALSE
 	w_class = ITEM_SIZE_NORMAL
 
+/obj/item/weapon/material/knife/table/duel
+	name = "dueling knife"
+	desc = "A length of dull steel studded with razor-sharp teeth."
+	icon_state = "tacknife"
+	default_material = MATERIAL_WOOD
+	applies_material_colour = FALSE
+	w_class = ITEM_SIZE_NORMAL
+
 //kitchen knives
 /obj/item/weapon/material/knife/kitchen
 	name = "kitchen knife"

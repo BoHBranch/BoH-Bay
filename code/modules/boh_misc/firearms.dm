@@ -4,7 +4,7 @@
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar
 	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps."
-	magazine_type = /obj/item/ammo_magazine/pistol/double/rubber
+	magazine_type = /obj/item/ammo_magazine/pistol/double/pepperball
 
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar
 	name = "high-powered handgun"

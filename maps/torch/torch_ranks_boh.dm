@@ -125,6 +125,8 @@
 	)
 
 	spawn_rank_types = list(
+		/datum/mil_rank/fleet/e1,
+		/datum/mil_rank/fleet/e1_exp,
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,

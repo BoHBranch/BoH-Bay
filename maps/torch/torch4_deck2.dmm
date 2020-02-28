@@ -10723,6 +10723,13 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/engine_monitoring)
+"tC" = (
+/obj/structure/cable/white{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/shield_generator/precharged,
+/turf/simulated/floor/plating,
+/area/engineering/shieldbay)
 "tE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black,
 /turf/simulated/floor/tiled/techfloor,
@@ -17457,13 +17464,6 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/engineering/bluespace)
-"PI" = (
-/obj/machinery/power/shield_generator,
-/obj/structure/cable/white{
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/plating,
-/area/engineering/shieldbay)
 "PK" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Auxilary Bays"
@@ -36433,7 +36433,7 @@ SX
 va
 Ym
 tH
-PI
+tC
 TJ
 zO
 zO
@@ -36837,7 +36837,7 @@ Yd
 va
 FK
 tH
-PI
+tC
 TJ
 Iz
 Iz
@@ -37443,7 +37443,7 @@ va
 QR
 tq
 tH
-PI
+tC
 TJ
 eg
 eg
@@ -37847,7 +37847,7 @@ rO
 sN
 tt
 tH
-PI
+tC
 Ua
 nV
 nX
