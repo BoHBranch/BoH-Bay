@@ -191,8 +191,6 @@
 
 	return result_obj
 
-#define TESTING
-
 // food-related
 //This proc is called under the assumption that the container has already been checked and found to contain the necessary ingredients
 /datum/recipe/proc/make_food(var/obj/container as obj)
