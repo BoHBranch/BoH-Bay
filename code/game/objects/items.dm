@@ -500,7 +500,7 @@ var/list/global/slot_flags_enumeration = list(
 /obj/item/proc/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	var/parry_chance = get_parry_chance(user)
 	if(attacker)
-		parry_chance = max(0, parry_chance - 0 * attacker.get_skill_difference(SKILL_COMBAT, user))
+		parry_chance = max(0, parry_chance - 0 * attacker.get_skill_difference(SKILL_COMBAT, user)) //skills have no effect when multiplier is 0
 	if(parry_chance)
 		if(default_parry_check(user, attacker, damage_source) && prob(parry_chance))
 			user.visible_message("<span class='danger'>\The [user] parries [attack_text] with \the [src]!</span>")
