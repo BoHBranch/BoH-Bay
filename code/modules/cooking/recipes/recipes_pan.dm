@@ -584,6 +584,7 @@
 	reagents = list(/datum/reagent/drink/milk/cream = 5)
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/spreads
+	)
 	result_quantity = 2
 	result = /obj/item/weapon/reagent_containers/food/snacks/mashedpotato
 
