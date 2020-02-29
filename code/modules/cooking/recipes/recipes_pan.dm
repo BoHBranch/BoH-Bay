@@ -580,7 +580,11 @@
 
 /datum/recipe/mashedpotato
 	appliance = PAN
-	fruit = list("potato" = 1)
+	fruit = list("potato" = 3)
+	reagents = list(/datum/reagent/drink/milk/cream = 5)
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/spreads
+	result_quantity = 2
 	result = /obj/item/weapon/reagent_containers/food/snacks/mashedpotato
 
 /datum/recipe/crab_legs
