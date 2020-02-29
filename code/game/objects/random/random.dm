@@ -931,7 +931,7 @@ something, make sure it's not in one of the other lists.*/
 /obj/random/maintenance/clean/spawn_choices()
 	return list(
 		/obj/random/accessory = 20,
-		/obj/random/action_figure = 1, // 2 to 1
+		/obj/random/action_figure = 1,
 		/obj/random/advdevice = 50,
 		/obj/random/bomb_supply = 80,
 		/obj/random/cash = 10,
@@ -940,31 +940,31 @@ something, make sure it's not in one of the other lists.*/
 		/obj/random/contraband = 1,
 		/obj/random/drinkbottle = 5,
 		/obj/random/firstaid = 20,
-		/obj/random/glasses = 10, //20 to 10
+		/obj/random/glasses = 10,
 		/obj/random/gloves = 10,
-		/obj/random/shoes = 10, // 20 to 10
-		/obj/random/hardsuit = 1, //Added
-		/obj/random/hat = 5, //10 to 5
-		/obj/random/hostile/maint = 20, //Added
-		/obj/random/illegal = 5, //Added
-		/obj/random/junk = 1, //Added
+		/obj/random/shoes = 10,
+		/obj/random/hardsuit = 1,
+		/obj/random/hat = 5,
+		/obj/random/hostile/maint = 20,
+		/obj/random/illegal = 5,
+		/obj/random/junk = 1,
 		/obj/random/loot = 1,
 		/obj/random/masks = 10,
 		/obj/random/material = 40,
-		/obj/random/medical = 20, //40 to 20.
+		/obj/random/medical = 20,
 		/obj/random/medical/lite = 80,
-		/obj/random/mre = 1, //Added
-		/obj/random/plushie = 1, //2 to 1.
-		/obj/random/shoes = 5, //Added
-		/obj/random/smokes = 20, //30 to 20
-		/obj/random/snack = 30, //60 to 30
+		/obj/random/mre = 1,
+		/obj/random/plushie = 1,
+		/obj/random/shoes = 5,
+		/obj/random/smokes = 20,
+		/obj/random/snack = 30,
 		/obj/random/soap = 5,
 		/obj/random/storage = 30,
 		/obj/random/suit = 20,
 		/obj/random/tank = 20,
 		/obj/random/tech_supply = 100,
 		/obj/random/technology_scanner = 80,
-		/obj/random/toolbox = 30, //Added
+		/obj/random/toolbox = 30,
 		/obj/random/toy = 10
 	)
 
@@ -1413,7 +1413,7 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 				/obj/item/weapon/melee/baton/cattleprod = 6,
 				/obj/item/weapon/arrow = 16,
 				/obj/item/weapon/gun/magnetic = 1,
-				/obj/item/weapon/gun/projectile/pirate/unloaded = 7, //Reduced
+				/obj/item/weapon/gun/projectile/pirate/unloaded = 7,
 				/obj/item/weapon/storage/firstaid/combat = 4,
 				/obj/item/stack/telecrystal = 1,
 				/obj/item/clothing/under/syndicate = 2,
