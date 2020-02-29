@@ -11,7 +11,7 @@
 	bitesize = 3
 	reagents_to_add = list(/datum/reagent/nutriment/protein = 9)
 	cooked_icon = "meatstake"
-	var/cooked_file = 'icons/obj/aurora/food.dmi'
+	var/cooked_file = 'icons/obj/aurora/food.dmi' // For if the cooked icon is in a different file.
 
 
 /obj/item/weapon/reagent_containers/food/snacks/meat/cook()
