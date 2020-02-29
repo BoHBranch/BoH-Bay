@@ -132,7 +132,7 @@
 	origin_tech = list(TECH_MAGNET = 3, TECH_ESOTERIC = 4)
 	sharp = 1
 	edge = 1
-	base_parry_chance = 40
+	base_parry_chance = 50
 	active_attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	var/blade_color
 
