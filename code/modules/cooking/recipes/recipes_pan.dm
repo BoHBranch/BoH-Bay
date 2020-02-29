@@ -31,11 +31,18 @@
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/chipplate
 
-/datum/recipe/friedegg
+/datum/recipe/easyegg
 	appliance = PAN
 	reagents = list(/datum/reagent/sodiumchloride = 1, /datum/reagent/blackpepper = 1)
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/egg
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/friedegg/overeasy
+
+/datum/recipe/friedegg
+	appliance = PAN
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/friedegg/overeasy
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/friedegg
 
@@ -600,3 +607,9 @@
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/bacon/pan
 	result_quantity = 6
+
+/datum/recipe/meatsteak
+	appliance = PAN
+	reagents = list(/datum/reagent/sodiumchloride = 1, /datum/reagent/blackpepper = 1)
+	items = list(/obj/item/weapon/reagent_containers/food/snacks/meat)
+	result = /obj/item/weapon/reagent_containers/food/snacks/meatsteak

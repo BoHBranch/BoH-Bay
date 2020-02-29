@@ -11,9 +11,13 @@
 	bitesize = 3
 	reagents_to_add = list(/datum/reagent/nutriment/protein = 9)
 	cooked_icon = "meatstake"
+	var/cooked_file = 'icons/obj/aurora/food.dmi'
 
 
 /obj/item/weapon/reagent_containers/food/snacks/meat/cook()
+	if (!isnull(cooked_file))
+		icon = cooked_file
+		flat_icon = null
 	if (!isnull(cooked_icon))
 		icon_state = cooked_icon
 		flat_icon = null //Force regenating the flat icon for coatings, since we've changed the icon of the thing being coated

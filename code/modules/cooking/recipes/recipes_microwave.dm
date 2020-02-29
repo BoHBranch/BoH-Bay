@@ -11,12 +11,7 @@
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/donkpocket
 	)
-	result = /obj/item/weapon/reagent_containers/food/snacks/donkpocket
-
-/datum/recipe/hotdiggitydonk/make_food(var/obj/container as obj)
-	. = ..(container)
-	for (var/obj/item/weapon/reagent_containers/food/snacks/donkpocket/being_cooked in .)
-		being_cooked.heat()
+	result = /obj/item/weapon/reagent_containers/food/snacks/donkpocket/warm
 
 /datum/recipe/meatkabob
 	items = list(
@@ -47,16 +42,6 @@
 		/obj/item/weapon/reagent_containers/food/snacks/cheesewedge
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/cheesyfries
-
-/datum/recipe/meatsteak
-	reagents = list(/datum/reagent/sodiumchloride = 1, /datum/reagent/blackpepper = 1)
-	items = list(/obj/item/weapon/reagent_containers/food/snacks/meat)
-	result = /obj/item/weapon/reagent_containers/food/snacks/meatsteak
-
-/datum/recipe/syntisteak
-	reagents = list(/datum/reagent/sodiumchloride = 1, /datum/reagent/blackpepper = 1)
-	items = list(/obj/item/weapon/reagent_containers/food/snacks/meat/syntiflesh)
-	result = /obj/item/weapon/reagent_containers/food/snacks/meatsteak
 
 /datum/recipe/bigbiteburger
 	items = list(

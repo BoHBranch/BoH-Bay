@@ -458,6 +458,19 @@
 	bitesize = 1
 	reagents_to_add = list(/datum/reagent/nutriment/protein = 3, /datum/reagent/sodiumchloride = 1, /datum/reagent/blackpepper = 1)
 
+/obj/item/weapon/reagent_containers/food/snacks/friedegg/overeasy
+	name = "over-easy fried egg"
+	desc = "A fried egg, with a touch of salt and pepper."
+	icon_state = "friedegg"
+	filling_color = "#ffdf78"
+	center_of_mass = "x=16;y=14"
+	bitesize = 1
+	reagents_to_add = list(/datum/reagent/nutriment/protein = 3, /datum/reagent/sodiumchloride = 1, /datum/reagent/blackpepper = 1)
+
+/obj/item/weapon/reagent_containers/food/snacks/friedegg/overeasy/Initialize()
+	reagent_data = list(/datum/reagent/nutriment/protein = list(pick("disgustingly runny egg yolk", "slimy egg yolk", "gooey eggs", "near-raw runny eggs") = 3))
+	. = ..()
+
 
 /obj/item/weapon/reagent_containers/food/snacks/boiledegg
 	name = "boiled egg"
@@ -615,25 +628,7 @@
 	user.visible_message("<span class='notice'>[user] crushes \the [src] package.</span>", "You crush \the [src] package and feel a comfortable heat build up.")
 	addtimer(CALLBACK(src, .proc/heat, weakref(user)), 20 SECONDS)
 
-/obj/item/weapon/reagent_containers/food/snacks/donkpocket/sinpocket/heat(weakref/message_to)
-	..()
-	if(message_to)
-		var/mob/user = message_to.resolve()
-		if(user)
-			to_chat(user, "You think \the [src] is ready to eat about now.")
-
-/obj/item/weapon/reagent_containers/food/snacks/donkpocket
-	name = "\improper Donk-pocket"
-	desc = "The food of choice for the seasoned traitor."
-	icon_state = "donkpocket"
-	filling_color = "#dedeab"
-	center_of_mass = "x=16;y=10"
-	reagent_data = list(/datum/reagent/nutriment = list("heartiness" = 1, "dough" = 2))
-	reagents_to_add = list(/datum/reagent/nutriment = 2, /datum/reagent/nutriment/protein = 2)
-	var/warm = 0
-	var/list/heated_reagents = list(/datum/reagent/tricordrazine = 5)
-
-/obj/item/weapon/reagent_containers/food/snacks/donkpocket/proc/heat()
+/obj/item/weapon/reagent_containers/food/snacks/donkpocket/sinpocket/proc/heat(weakref/message_to)
 	if(warm)
 		return
 	warm = 1
@@ -642,6 +637,32 @@
 	bitesize = 6
 	SetName("warm " + name)
 	addtimer(CALLBACK(src, .proc/cool), 7 MINUTES)
+	if(message_to)
+		var/mob/user = message_to.resolve()
+		if(user)
+			to_chat(user, "You think \the [src] is ready to eat about now.")
+
+/obj/item/weapon/reagent_containers/food/snacks/donkpocket
+	name = "\improper Donk-pocket"
+	desc = "The food of choice for the seasoned trader." // come on, don't straight up mention traitors...
+	icon_state = "donkpocket"
+	filling_color = "#dedeab"
+	center_of_mass = "x=16;y=10"
+	reagent_data = list(/datum/reagent/nutriment = list("heartiness" = 1, "dough" = 2))
+	reagents_to_add = list(/datum/reagent/nutriment = 2, /datum/reagent/nutriment/protein = 2)
+	var/warm = 0
+	var/list/heated_reagents = list(/datum/reagent/tricordrazine = 5)
+
+/obj/item/weapon/reagent_containers/food/snacks/donkpocket/warm
+	warm = 1
+	name = "\improper warm Donk-pocket"
+	desc = "A heated Donk pocket, great for vendors on the go."
+	reagents_to_add = list(/datum/reagent/nutriment = 2, /datum/reagent/nutriment/protein = 2, /datum/reagent/tricordrazine = 5)
+	bitesize = 6
+	
+/obj/item/weapon/reagent_containers/food/snacks/donkpocket/warm/Initialize()
+	. = ..()
+	addtimer(CALLBACK(src, .proc/cool), 7 MINUTES)
 
 /obj/item/weapon/reagent_containers/food/snacks/donkpocket/proc/cool()
 	if(!warm)
@@ -649,7 +670,7 @@
 	warm = 0
 	for(var/reagent in heated_reagents)
 		reagents.del_reagent(reagent)
-	SetName(initial(name))
+	SetName(istype(src, /obj/item/weapon/reagent_containers/food/snacks/donkpocket/warm) ? "\improper Donk-pocket" : initial(name))
 
 /obj/item/weapon/reagent_containers/food/snacks/brainburger
 	name = "brainburger"

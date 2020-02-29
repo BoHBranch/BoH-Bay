@@ -126,7 +126,7 @@
 	w_class = ITEM_SIZE_TINY
 	var/band_color = COLOR_CYAN
 	var/time = 1 SECONDS // takes less time than a normal syringe
-	starts_with = list(/datum/reagent/inaprovaline = 5)
+	reagents_to_add = list(/datum/reagent/inaprovaline = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/Initialize()
 	. = ..()
