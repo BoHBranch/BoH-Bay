@@ -166,6 +166,7 @@
 		/datum/mil_rank/marine_corps/e8_alt,
 		/datum/mil_rank/marine_corps/e9,
 		/datum/mil_rank/marine_corps/e9_alt,
+		/datum/mil_rank/marine_corps/e9_alt2,
 		/datum/mil_rank/marine_corps/o1,
 		/datum/mil_rank/marine_corps/o2,
 		/datum/mil_rank/marine_corps/o3,
@@ -455,6 +456,12 @@
 	name = "Sergeant Major"
 	name_short = "SgtMaj"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt)
+	sort_order = 9
+
+/datum/mil_rank/marine_corps/e9_alt2
+	name = "Sergeant Major of the Marine Corps"
+	name_short = "SMMC"
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt2)
 	sort_order = 9
 
 /datum/mil_rank/marine_corps/o1
