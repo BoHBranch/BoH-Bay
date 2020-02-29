@@ -516,7 +516,7 @@ var/list/global/slot_flags_enumeration = list(
 	. = base_parry_chance
 	if(user)
 		if(base_parry_chance || user.skill_check(SKILL_COMBAT, SKILL_ADEPT))
-			. += 0 * (user.get_skill_value(SKILL_COMBAT) - SKILL_BASIC)
+			. += 0 * (user.get_skill_value(SKILL_COMBAT) - SKILL_BASIC) //skills have no effect when multiplier is 0
 
 /obj/item/proc/on_disarm_attempt(mob/target, mob/living/attacker)
 	if(force < 1)
