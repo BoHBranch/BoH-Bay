@@ -395,51 +395,41 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/plaincake
 	reagent_mix = RECIPE_REAGENT_REPLACE
 
-/datum/recipe/carrotcake
-	appliance = OVEN
+/datum/recipe/cake/carrotcake
 	fruit = list("carrot" = 3)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/carrotcake
 
-/datum/recipe/cheesecake
-	appliance = OVEN
+/datum/recipe/cake/cheesecake
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/cheesewedge,
 		/obj/item/weapon/reagent_containers/food/snacks/cheesewedge
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/cheesecake
 
-/datum/recipe/orangecake
-	appliance = OVEN
-	fruit = list("orange" = 1)
-	reagents = list(/datum/reagent/drink/milk = 5, /datum/reagent/nutriment/flour = 15, /datum/reagent/nutriment/protein/egg = 9, /datum/reagent/drink/juice/orange = 3, /datum/reagent/sugar = 5)
+/datum/recipe/cake/orangecake
+	fruit = list("orange" = 3)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/orangecake
 
-/datum/recipe/limecake
-	appliance = OVEN
-	fruit = list("lime" = 1)
-	reagents = list(/datum/reagent/drink/milk = 5, /datum/reagent/nutriment/flour = 15, /datum/reagent/nutriment/protein/egg = 9, /datum/reagent/drink/juice/lime = 3, /datum/reagent/sugar = 5)
+/datum/recipe/cake/limecake
+	fruit = list("lime" = 3)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/limecake
 
-/datum/recipe/lemoncake
-	appliance = OVEN
-	fruit = list("lemon" = 1)
+/datum/recipe/cake/lemoncake
+	fruit = list("lemon" = 3)
 	reagents = list(/datum/reagent/drink/milk = 5, /datum/reagent/nutriment/flour = 15, /datum/reagent/nutriment/protein/egg = 9, /datum/reagent/drink/juice/lemon = 3, /datum/reagent/sugar = 5)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/lemoncake
 
-/datum/recipe/chocolatecake
-	appliance = OVEN
+/datum/recipe/cake/chocolatecake
 	items = list(/obj/item/weapon/reagent_containers/food/snacks/chocolatebar)
 	reagents = list(/datum/reagent/drink/milk = 5, /datum/reagent/nutriment/flour = 15, /datum/reagent/nutriment/protein/egg = 9, /datum/reagent/nutriment/coco = 4, /datum/reagent/sugar = 5)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/chocolatecake
 
-/datum/recipe/birthdaycake
-	appliance = OVEN
+/datum/recipe/cake/birthdaycake
 	items = list(/obj/item/weapon/flame/candle)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/birthdaycake
 
-/datum/recipe/applecake
-	appliance = OVEN
-	fruit = list("apple" = 2)
+/datum/recipe/cake/applecake
+	fruit = list("apple" = 3)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/applecake
 
 /datum/recipe/pancakes

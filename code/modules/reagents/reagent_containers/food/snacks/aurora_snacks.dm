@@ -840,7 +840,6 @@
 	trash = /obj/item/trash/plate
 	filling_color = "#d27332"
 	bitesize = 2
-	center_of_mass = list("x"=16, "y"=4)
 
 /obj/item/weapon/reagent_containers/food/snacks/slice/bread/filled
 	reagent_data = list(/datum/reagent/nutriment = list("bread" = 2))
