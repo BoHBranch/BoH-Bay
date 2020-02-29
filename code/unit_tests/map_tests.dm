@@ -12,6 +12,8 @@
 
 /datum/unit_test/apc_area_test
 	name = "MAP: Area Test APC / Scrubbers / Vents"
+	disabled = TRUE
+	why_disabled = "This just creates extra busywork for mappers."
 
 
 /datum/unit_test/apc_area_test/start_test()

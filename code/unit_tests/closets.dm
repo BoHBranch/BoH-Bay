@@ -1,5 +1,7 @@
 /datum/unit_test/closet_decal_test
 	name = "CLOSETS: All Closet Appearances Shall Have Sane Values"
+	disabled = TRUE
+	why_disabled = "This just throws an empty list of 'missing' icon states."
 	var/list/check_base_states = list("base", "lock", "light", "open", "interior", "welded", "sparks")
 	var/list/except_appearances = list()
 
