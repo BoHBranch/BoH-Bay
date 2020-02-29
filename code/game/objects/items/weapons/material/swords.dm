@@ -12,7 +12,7 @@
 	edge = 1
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
-	base_parry_chance = 50
+	base_parry_chance = 30
 	melee_accuracy_bonus = 10
 	worth_multiplier = 30
 
@@ -48,4 +48,3 @@
 /obj/item/weapon/material/sword/katana/vibro/equipped(mob/user, slot)
 	if(slot == slot_l_hand || slot == slot_r_hand)
 		playsound(src, 'sound/weapons/katana_out.wav', 50, 1, -5)
-	
