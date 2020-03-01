@@ -254,7 +254,7 @@
 	if(!(G && G.affecting == affecting)) //check that we still have a grab
 		return 0
 
-	var/damage_mod = 2
+	var/damage_mod = 1
 	var/damage_flags = W.damage_flags()
 	//presumably, if they are wearing a helmet that stops pressure effects, then it probably covers the throat as well
 	var/obj/item/clothing/head/helmet = affecting.get_equipped_item(slot_head)
@@ -267,6 +267,8 @@
 	for(var/i in 1 to 3)
 		var/damage = min(W.force*1.5, 20)*damage_mod
 		affecting.apply_damage(damage, W.damtype, BP_HEAD, damage_flags, armor_pen = 100, used_weapon=W)
+		affecting.losebreath += 25
+		affecting.adjustOxyLoss(25)
 		total_damage += damage
 
 

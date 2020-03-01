@@ -92,10 +92,10 @@ var/list/global/base_miss_chance = list(
 	BP_R_LEG = 50,
 	BP_L_ARM = 50,
 	BP_R_ARM = 50,
-	BP_L_HAND = 35,
-	BP_R_HAND = 35,
-	BP_L_FOOT = 35,
-	BP_R_FOOT = 35,
+	BP_L_HAND = 65,
+	BP_R_HAND = 65,
+	BP_L_FOOT = 65,
+	BP_R_FOOT = 65,
 )
 
 //Used to weight organs when an organ is hit randomly (i.e. not a directed, aimed attack).
@@ -173,11 +173,11 @@ var/list/global/organ_rel_size = list(
 	if (zone in base_miss_chance)
 		miss_chance = base_miss_chance[zone]
 	miss_chance = max(miss_chance + miss_chance_mod, 0)
-	scatter_chance = min(95, miss_chance + 10)
+	scatter_chance = min(95, miss_chance)
 	if(prob(miss_chance))
 		if(ranged_attack && prob(scatter_chance))
 			return null
-		else if(prob(40))
+		else if(prob(35))
 			return null
 		return (ran_zone())
 	return zone
