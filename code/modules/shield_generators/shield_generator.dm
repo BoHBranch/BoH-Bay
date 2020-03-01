@@ -132,6 +132,7 @@
 	upkeep_power_usage = 0
 	power_usage = 0
 
+	update_icon()
 	if(offline_for)
 		offline_for = max(0, offline_for - 1)
 	// We're turned off.
@@ -191,6 +192,7 @@
 	else if (field_integrity() > 25)
 		overloaded = 0
 
+
 /obj/machinery/power/shield_generator/components_are_accessible(path)
 	return !running && ..()
 
@@ -235,7 +237,7 @@
 	data["running"] = running
 	data["modes"] = get_flag_descriptions()
 	data["overloaded"] = overloaded
-	data["inefficency"] = round(inefficency_counter, 0.1)
+	data["inefficency"] = (inefficency_counter * 10)
 	data["mitigation_max"] = mitigation_max
 	data["mitigation_physical"] = round(mitigation_physical, 0.1)
 	data["mitigation_em"] = round(mitigation_em, 0.1)
@@ -519,3 +521,48 @@ For the purpose of precharged shield generators, we have the below.
     . = ..()
     field_radius = 200
     current_energy = max_energy
+
+/obj/machinery/power/shield_generator/new_icon/
+	icon = 'icons/boh/newshields_64x32.dmi'
+	icon_state = "shield_gen"
+	var/width = 2
+
+/obj/machinery/power/shield_generator/new_icon/Initialize()
+	. = ..()
+	SetBounds()
+
+/obj/machinery/power/shield_generator/new_icon/on_update_icon()
+	overlays.Cut()
+
+	overlays += image('icons/boh/newshields_64x32.dmi', "console_state")
+
+
+	if(!overloaded)
+		if(running == SHIELD_DISCHARGING)
+			overlays += image('icons/boh/newshields_64x32.dmi', "shield_discharging")
+		if(running == SHIELD_RUNNING)
+			overlays += image('icons/boh/newshields_64x32.dmi', "shield_running")
+		if(running == SHIELD_SPINNING_UP)
+			overlays += image('icons/boh/newshields_64x32.dmi', "shield_spinning_up")
+
+	if(overloaded)
+		overlays += image('icons/boh/newshields_64x32.dmi', "shield_overloaded")
+
+	if(current_energy >= max_energy)
+		overlays += image('icons/boh/newshields_64x32.dmi', "power_overlay_100")
+	if(current_energy >= (max_energy * 0.75))
+		overlays += image('icons/boh/newshields_64x32.dmi', "power_overlay_75")
+	if(current_energy >= (max_energy * 0.50))
+		overlays += image('icons/boh/newshields_64x32.dmi', "power_overlay_50")
+	if(current_energy <= (max_energy * 0.25))
+		overlays += image('icons/boh/newshields_64x32.dmi', "power_overlay_25")
+
+	if(powernet && (!input_cut && running > SHIELD_OFF))
+		overlays += image('icons/boh/newshields_64x32.dmi', "shield-charging")
+
+	if(running > SHIELD_OFF)
+		overlays += image('icons/boh/newshields_64x32.dmi', "shield_active")
+
+/obj/machinery/power/shield_generator/new_icon/proc/SetBounds()
+	bound_width = width * world.icon_size
+	bound_height = world.icon_size
