@@ -48,6 +48,8 @@
 	else
 		icon_state = "generator0"
 
+/obj/machinery/power/shield_generator/precharged
+	precharged = TRUE
 
 /obj/machinery/power/shield_generator/New()
 	..()
@@ -60,8 +62,8 @@
 
 /obj/machinery/power/shield_generator/Initialize()
 	. = ..()
-    if(precharged)
-		radius = 200
+	if(precharged)
+		target_radius = 200
 		field_radius = 200
 		current_energy = max_energy
 
