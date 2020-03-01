@@ -244,4 +244,5 @@
 	Though historically relatively isolationist, today Magnitka finds itself more and more closely associated with the Gilgamesh Colonial Confederation, in an effort to offset its economic decline."
 	capital = "Labortown"
 	economic_power = 0.8
+	secondary_langs = list(LANGUAGE_HUMAN_GAIAN)
 	ruling_body = "Magnitka"

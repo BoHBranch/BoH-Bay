@@ -18,6 +18,7 @@
 		"a",  "a",  "e",  "e",  "i",  "i",  "o",  "o",  "u",  "u",  "s",  "s"
 	)
 	shorthand = "UT"
+	max_partial_understanding = 50
 	partial_understanding = list(
 		LANGUAGE_HUMAN_EURO = 5,
 		LANGUAGE_SPACER = 5,
@@ -45,6 +46,7 @@
 		"a",  "a",  "e",  "e",  "i",  "i",  "o",  "o",  "u",  "u",  "s",  "s"
 	)
 	shorthand = "YU"
+	max_partial_understanding = 50
 	partial_understanding = list(
 		LANGUAGE_HUMAN_EURO = 5,
 		LANGUAGE_SPACER = 5,

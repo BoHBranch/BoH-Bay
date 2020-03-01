@@ -10,6 +10,7 @@
 	space_chance = 40
 	syllables = list("grr", "gah", "woof", "arf", "arra", "rah", "wor", "sarg")
 	shorthand = "SG"
+	max_partial_understanding = 5
 	partial_understanding = list(
 		LANGUAGE_HUMAN_EURO = 5,
 		LANGUAGE_SPACER = 5
