@@ -59,11 +59,11 @@
 		mode_list.Add(SM)
 
 /obj/machinery/power/shield_generator/Initialize()
-    . = ..()
+	. = ..()
     if(precharged)
-    	radius = 200
-    	field_radius = 200
-    	current_energy = max_energy
+		radius = 200
+		field_radius = 200
+		current_energy = max_energy
 
 /obj/machinery/power/shield_generator/Destroy()
 	shutdown_field()
