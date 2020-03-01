@@ -40,6 +40,8 @@
 	var/spinup_counter    = 0
 	var/inefficency_counter = 0 //increases power usage by this amount. increases by .005 per tick when shield is deployed.
 
+	var/precharged = FALSE
+
 /obj/machinery/power/shield_generator/on_update_icon()
 	if(running)
 		icon_state = "generator1"
@@ -56,6 +58,12 @@
 		var/datum/shield_mode/SM = new st()
 		mode_list.Add(SM)
 
+/obj/machinery/power/shield_generator/Initialize()
+    . = ..()
+    if(precharged)
+    	radius = 200
+    	field_radius = 200
+    	current_energy = max_energy
 
 /obj/machinery/power/shield_generator/Destroy()
 	shutdown_field()
@@ -517,15 +525,13 @@
 For the purpose of precharged shield generators, we have the below.
 */
 /////////
-/obj/machinery/power/shield_generator/precharged/Initialize()
-    . = ..()
-    field_radius = 200
-    current_energy = max_energy
 
 /obj/machinery/power/shield_generator/new_icon/
 	icon = 'icons/boh/newshields_64x32.dmi'
 	icon_state = "shield_gen"
+	precharged = TRUE
 	var/width = 2
+
 
 /obj/machinery/power/shield_generator/new_icon/Initialize()
 	. = ..()
