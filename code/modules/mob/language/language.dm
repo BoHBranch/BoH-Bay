@@ -59,8 +59,8 @@
 	for(var/datum/language/L in known_languages)
 		if(LAZYACCESS(partial_understanding, L.name))
 			understand_chance += partial_understanding[L.name]
-		if(understand_chance > max_partial_understanding[L.name])
-			understand_chance = max_partial_understanding[L.name]
+		if(understand_chance > max_partial_understanding)
+			understand_chance = max_partial_understanding
 
 	var/list/words = splittext(input, " ")
 	var/list/scrambled_text = list()
