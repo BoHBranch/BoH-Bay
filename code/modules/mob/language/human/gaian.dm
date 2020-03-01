@@ -29,7 +29,7 @@
 		"ve", "wa", "all", "and", "are", "but", "ent", "era", "ere", "eve", "for", "had", "hat", "hen", "her", "hin",
 		"ch", "de", "ge", "be", "ach", "abe", "ich", "ein", "die", "sch", "auf", "aus", "ber", "che", "ent", "que",
 		"ait", "les", "lle", "men", "ais", "ans", "ait", "ave", "con", "com", "des", "tre", "eta", "eur", "est",
-		"ing", "the", "ver", "was", "ith", "hin" "rus", "zem", "ave", "groz", "ski", "ska", "ven", "konst", "pol",
+		"ing", "the", "ver", "was", "ith", "hin", "rus", "zem", "ave", "groz", "ski", "ska", "ven", "konst", "pol",
 		"lin", "svy", "danya", "da", "mied", "zan", "das", "krem", "myka", "to", "st", "no", "na", "ni", "ko",
 		"ne", "en", "po", "ra", "li", "on", "byl", "cto", "eni", "ost", "ol", "ego", "ver", "stv", "pro"
 	)
