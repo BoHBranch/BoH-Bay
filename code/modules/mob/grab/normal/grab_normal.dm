@@ -44,7 +44,7 @@
 		if(do_mob(assailant, affecting, action_cooldown - 1))
 			G.attacking = 0
 			G.action_used()
-			affecting.Weaken(2)
+			affecting.Weaken(10)
 			affecting.visible_message("<span class='notice'>[assailant] pins [affecting] to the ground!</span>")
 
 			return 1
@@ -254,7 +254,7 @@
 	if(!(G && G.affecting == affecting)) //check that we still have a grab
 		return 0
 
-	var/damage_mod = 1
+	var/damage_mod = 2
 	var/damage_flags = W.damage_flags()
 	//presumably, if they are wearing a helmet that stops pressure effects, then it probably covers the throat as well
 	var/obj/item/clothing/head/helmet = affecting.get_equipped_item(slot_head)

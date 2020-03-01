@@ -86,32 +86,32 @@ proc/getsensorlevel(A)
 //The base miss chance for the different defence zones
 var/list/global/base_miss_chance = list(
 	BP_HEAD = 70,
-	BP_CHEST = 10,
-	BP_GROIN = 20,
-	BP_L_LEG = 60,
-	BP_R_LEG = 60,
-	BP_L_ARM = 30,
-	BP_R_ARM = 30,
-	BP_L_HAND = 50,
-	BP_R_HAND = 50,
-	BP_L_FOOT = 70,
-	BP_R_FOOT = 70,
+	BP_CHEST = 25,
+	BP_GROIN = 25,
+	BP_L_LEG = 50,
+	BP_R_LEG = 50,
+	BP_L_ARM = 50,
+	BP_R_ARM = 50,
+	BP_L_HAND = 35,
+	BP_R_HAND = 35,
+	BP_L_FOOT = 35,
+	BP_R_FOOT = 35,
 )
 
 //Used to weight organs when an organ is hit randomly (i.e. not a directed, aimed attack).
 //Also used to weight the protection value that armour provides for covering that body part when calculating protection from full-body effects.
 var/list/global/organ_rel_size = list(
-	BP_HEAD = 25,
-	BP_CHEST = 70,
-	BP_GROIN = 30,
-	BP_L_LEG = 25,
-	BP_R_LEG = 25,
-	BP_L_ARM = 25,
-	BP_R_ARM = 25,
-	BP_L_HAND = 10,
-	BP_R_HAND = 10,
-	BP_L_FOOT = 10,
-	BP_R_FOOT = 10,
+	BP_HEAD = 37,
+	BP_CHEST = 64,
+	BP_GROIN = 64,
+	BP_L_LEG = 58,
+	BP_R_LEG = 58,
+	BP_L_ARM = 37,
+	BP_R_ARM = 37,
+	BP_L_HAND = 16,
+	BP_R_HAND = 16,
+	BP_L_FOOT = 16,
+	BP_R_FOOT = 16,
 )
 
 /proc/check_zone(zone)
@@ -173,11 +173,11 @@ var/list/global/organ_rel_size = list(
 	if (zone in base_miss_chance)
 		miss_chance = base_miss_chance[zone]
 	miss_chance = max(miss_chance + miss_chance_mod, 0)
-	scatter_chance = min(95, miss_chance + 60)
+	scatter_chance = min(95, miss_chance + 10)
 	if(prob(miss_chance))
 		if(ranged_attack && prob(scatter_chance))
 			return null
-		else if(prob(70))
+		else if(prob(40))
 			return null
 		return (ran_zone())
 	return zone
