@@ -12,7 +12,7 @@
 	colour = "russian"
 	key = "8"
 	shorthand = "Gaian"
-    max_partial_understanding = 95
+	max_partial_understanding = 95
 	partial_understanding = list(
 		LANGUAGE_HUMAN_EURO = 50,
 		LANGUAGE_HUMAN_RUSSIAN = 50,
