@@ -1,5 +1,4 @@
 /obj/machinery/appliance/cooker
-	var/internal_temperature = T20C
 	var/min_temp = 80 + T0C	//Minimum temperature to do any cooking
 	var/optimal_temp = 200 + T0C	//Temperature at which we have 100% efficiency. efficiency is lowered on either side of this
 	var/optimal_power = 1.1//cooking power at 100%
@@ -16,11 +15,11 @@
 	. = ..()
 	if (.)	//no need to duplicate adjacency check
 		if (!stat)
-			if (internal_temperature < min_temp)
+			if (temperature < min_temp)
 				to_chat(user, span("warning", "\The [src] is still heating up and is too cold to cook anything yet."))
 			else
 				to_chat(user, span("notice", "It is running at [round(get_efficiency(), 0.1)]% efficiency!"))
-			to_chat(user, "Temperature: [round(internal_temperature - T0C, 0.1)]C / [round(optimal_temp - T0C, 0.1)]C")
+			to_chat(user, "Temperature: [round(temperature - T0C, 0.1)]C / [round(optimal_temp - T0C, 0.1)]C")
 		else
 			to_chat(user, span("warning", "It is switched off."))
 
@@ -65,10 +64,8 @@
 	if (!stat)
 		heat_up()
 	else
-		var/turf/T = get_turf(src)
-		if (internal_temperature > T.temperature)
-			equalize_temperature()
-	..()
+		QUEUE_TEMPERATURE_ATOMS(src) // cool every tick if we're not turned on
+	. = ..()
 
 /obj/machinery/appliance/cooker/power_change()
 	. = ..()
@@ -76,23 +73,22 @@
 
 /obj/machinery/appliance/cooker/proc/update_cooking_power()
 	var/temp_scale = 0
-	if(internal_temperature > min_temp)
-		if(internal_temperature >= optimal_temp)
+	if(temperature > min_temp)
+		if(temperature >= optimal_temp)
 			temp_scale = 1
 		else
-			temp_scale = (internal_temperature - 73.15) / (optimal_temp - 73.15)
+			temp_scale = (temperature - 73.15) / (optimal_temp - 73.15)
 		//If we're between min and optimal this will yield a value in the range 0.7 to 1
 
 	cooking_coeff = optimal_power * temp_scale
-	RefreshParts()
 
 /obj/machinery/appliance/cooker/proc/heat_up()
-	if (internal_temperature < optimal_temp)
-		if (use_power == 1 && ((optimal_temp - internal_temperature) > 5))
+	if (temperature < optimal_temp)
+		if (use_power == 1 && ((optimal_temp - temperature) > 5))
 			playsound(src, 'sound/machines/click.ogg', 20, 1)
 			use_power = 2.//If we're heating we use the active power
 			update_icon()
-		internal_temperature += heating_power / resistance
+		temperature += heating_power / resistance
 		update_cooking_power()
 		return 1
 	else
@@ -100,14 +96,18 @@
 			use_power = 1
 			playsound(src, 'sound/machines/click.ogg', 20, 1)
 			update_icon()
-		//We're holding steady. temperature falls more slowly
-		if (prob(25))
-			equalize_temperature()
-			return -1
+	QUEUE_TEMPERATURE_ATOMS(src)
 
-/obj/machinery/appliance/cooker/proc/equalize_temperature()
-	internal_temperature -= loss//Temperature will fall somewhat slowly
-	update_cooking_power()
+/obj/machinery/appliance/cooker/ProcessAtomTemperature()
+	if((!(stat & POWEROFF) && !(stat & NOPOWER)) || (temperature >= T20C)) // must be powered and turned on, or hot, to keep processing
+		update_cooking_power() // update!
+		if(!LAZYLEN(cooking_objs))
+			return TRUE
+		for(var/datum/cooking_item/CI in cooking_objs)
+			QUEUE_TEMPERATURE_ATOMS(CI.container)
+		return TRUE // Don't kill this processing loop unless we're not powered or we're cold.
+		// Also don't cool us.
+	. = ..()
 
 //Cookers do differently, they use containers
 /obj/machinery/appliance/cooker/has_space(var/obj/item/I)

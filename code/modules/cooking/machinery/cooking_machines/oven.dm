@@ -71,11 +71,11 @@
 
 	if (open)
 		open = FALSE
-		loss = (heating_power / resistance) * 0.5
+		temperature_coefficient = 1
 	else
 		open = TRUE
-		loss = (heating_power / resistance) * 1.5
-		//When the oven door is opened, oven slowly loses heat
+		temperature_coefficient = 10
+		//When the oven door is opened, oven loses heat faster
 
 	playsound(src, 'sound/machines/hatch_open.ogg', 20, 1)
 	update_icon()
@@ -95,16 +95,6 @@
 
 	else
 		return ..()
-
-
-//If an oven's door is open it will lose heat every proc, even if it also gained it
-//But dont call equalize twice in one stack. A return value of -1 from the parent indicates equalize was already called
-/obj/machinery/appliance/cooker/oven/heat_up()
-	.=..()
-	if (open && . != -1)
-		var/turf/T = get_turf(src)
-		if (internal_temperature > T.temperature)
-			equalize_temperature()
 
 /obj/machinery/appliance/cooker/oven/can_remove_items(var/mob/user)
 	if (!open)
