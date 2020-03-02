@@ -6,7 +6,7 @@
 
 /obj/structure/closet/secure_closet/security_torch/cadet/WillContain()
 	return list(
-		/obj/item/clothing/suit/armor/pcarrier/medium/security,
+		/obj/item/clothing/suit/armor/pcarrier/light/security,
 		/obj/item/clothing/head/helmet/solgov/security,
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/device/radio/headset/headset_sec/alt,
