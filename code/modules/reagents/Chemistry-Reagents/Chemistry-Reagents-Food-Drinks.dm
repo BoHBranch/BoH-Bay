@@ -2646,6 +2646,32 @@
 	glass_name = "pumpkin spice syrup"
 	glass_desc = "Thick spiced pumpkin syrup used to flavor drinks."
 
+/datum/reagent/drink/juice/pumpkinpulp
+	name = "Pumpkin Pulp"
+	description = "The essence of a pumpkin. Obtained from a band formed almost six centuries ago, apparently."
+	glass_name = "pumpkin pulp"
+	glass_desc = "Probably not the best idea to drink this..."
+
+/datum/reagent/drink/syrup_simple
+	name = "Simple Syrup"
+	description = "Thick, unflavored syrup used as a base for drinks or flavorings."
+	taste_description = "molasses"
+	color = "#ccccbb"
+	glass_name = "simple syrup"
+	glass_desc = "Thick, unflavored syrup used as a base for drinks or flavorings."
+
+/datum/reagent/nutriment/caramel
+	name = "Caramel Sugar"
+	reagent_state = SOLID
+	description = "Caramelised sugar, used in various recipes."
+	taste_description = "toasty sweetness"
+
+/datum/reagent/drink/caramel
+	name = "Caramel Sauce"
+	reagent_state = LIQUID
+	description = "A caramel-based sauce. Now you're caramel dancin'."
+	taste_description = "toasty sweet cream"
+
 // Alcohol Expansion
 
 /datum/reagent/ethanol/applecider

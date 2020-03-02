@@ -2323,6 +2323,53 @@
 	result_amount = 10
 	mix_message = "The solution thickens into a glossy, creamy substance."
 
+/datum/chemical_reaction/caramelisation
+	name = "Caramelised Sugar"
+	result = /datum/reagent/nutriment/caramel
+	required_reagents = list(/datum/reagent/sugar = 1)
+	result_amount = 1
+	minimum_temperature = T0C + 82
+	// no maximum! i mean technically it should burn at some point but ehh
+	mix_message = "The sugar melts into a sticky, brown liquid."
+
+/datum/chemical_reaction/caramelsauce
+	name = "Caramel Sauce"
+	result = /datum/reagent/drink/caramel
+	required_reagents = list(/datum/reagent/nutriment/caramel = 2, /datum/reagent/drink/milk/cream = 1, /datum/reagent/drink/syrup_simple = 2)
+	result_amount = 5
+	mix_message = "The solution thickens into a glossy, brown sauce."
+	maximum_temperature = T0C + 82 // You don't want the syrup to crystallise/caramelise; that'd just make more caramel...
+
+/datum/chemical_reaction/simplesyrup
+	name = "Simple Syrup"
+	result = /datum/reagent/drink/syrup_simple
+	required_reagents = list(/datum/reagent/sugar = 2, /datum/reagent/water = 1) // rich simple syrup, technically, but still
+	result_amount = 3
+	minimum_temperature = T20C + 10
+	maximum_temperature = T0C + 82 // Sugar caramelises after this point.
+	mix_message = "The sugar dissolves into the solution."
+
+/datum/chemical_reaction/caramelsyrup
+	name = "Caramel Syrup"
+	result = /datum/reagent/drink/syrup_caramel
+	required_reagents = list(/datum/reagent/nutriment/caramel = 2, /datum/reagent/drink/syrup_simple = 3)
+	result_amount = 5
+	mix_message = "The solution takes on a light brown hue and the aroma of caramel."
+
+/datum/chemical_reaction/chocosyrup
+	name = "Chocolate Syrup"
+	result = /datum/reagent/drink/syrup_chocolate
+	required_reagents = list(/datum/reagent/nutriment/coco = 2, /datum/reagent/drink/syrup_simple = 3)
+	result_amount = 5
+	mix_message = "The solution takes on a brown hue and the aroma of chocolate."
+
+/datum/chemical_reaction/pumpkinsyrup
+	name = "Pumpkin Spice Syrup"
+	result = /datum/reagent/drink/syrup_pumpkin
+	required_reagents = list(/datum/reagent/drink/juice/pumpkinpulp = 2, /datum/reagent/drink/syrup_simple = 3)
+	result_amount = 5
+	mix_message = "The solution takes on an orange hue and the aroma of pumpkin spice."
+
 /datum/chemical_reaction/anfo
 	name = "EZ-ANFO"
 	result = /datum/reagent/anfo

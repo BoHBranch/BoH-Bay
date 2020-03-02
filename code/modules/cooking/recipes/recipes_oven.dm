@@ -187,7 +187,7 @@
 
 /datum/recipe/pumpkinpie
 	appliance = OVEN
-	reagents = list(/datum/reagent/drink/milk = 5, /datum/reagent/sugar = 5, /datum/reagent/nutriment/protein/egg = 3, /datum/reagent/nutriment/flour = 10, "pumpkinpulp"= 5, "pumpkinspice"= 2)
+	reagents = list(/datum/reagent/drink/milk = 5, /datum/reagent/sugar = 5, /datum/reagent/nutriment/protein/egg = 3, /datum/reagent/nutriment/flour = 10, /datum/reagent/drink/juice/pumpkinpulp = 5, /datum/reagent/drink/syrup_pumpkin = 2)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/pumpkinpie
 	reagent_mix = RECIPE_REAGENT_REPLACE //We dont want raw egg in the result
 

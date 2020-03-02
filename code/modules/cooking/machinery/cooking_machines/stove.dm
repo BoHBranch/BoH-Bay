@@ -29,3 +29,18 @@
 	if(!pans)
 		return
 	overlays += image('icons/obj/aurora/cooking_machines.dmi', "pan[Clamp(pans, 1, 4)]") // 1 to 4
+
+/obj/machinery/appliance/cooker/stove/power_change()
+	. = ..()
+	if(!stat)
+		QUEUE_TEMPERATURE_ATOMS(src)
+
+/obj/machinery/appliance/cooker/stove/ProcessAtomTemperature()
+	if(!stat)
+		temperature = internal_temperature
+		if(!LAZYLEN(cooking_objs))
+			return TRUE
+		for(var/obj/item/weapon/reagent_containers/cooking_container/pan/P in cooking_objs)
+			QUEUE_TEMPERATURE_ATOMS(P)
+		return TRUE // Don't kill this processing loop unless we're not powered.
+	. = ..()
