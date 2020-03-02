@@ -42,7 +42,7 @@
 		/datum/mil_rank/marine_corps/o3,
 //		/datum/mil_rank/marine_corps/o3_alt,
 //		/datum/mil_rank/marine_corps/o3_alt2,
-		1/datum/mil_rank/marine_corps/o4
+		/datum/mil_rank/marine_corps/o4
 	)
 
 /datum/job/chief_engineer
