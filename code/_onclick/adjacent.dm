@@ -31,6 +31,7 @@
 	if(istype(neighbor, /atom/movable)) // incase our neighbor atom is a multitile atom
 		var/atom/movable/N = neighbor
 		Ts = N.locs
+		Ts |= get_turf(N.loc)
 
 	for(var/turf/T0 in Ts)
 		if(T0 == src)
