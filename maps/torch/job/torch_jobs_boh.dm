@@ -39,9 +39,10 @@
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/o3,
 		/datum/mil_rank/fleet/o4,
-		/datum/mil_rank/marine_corps/o3_alt,
-		/datum/mil_rank/marine_corps/o3_alt2,
-		/datum/mil_rank/marine_corps/o4
+		/datum/mil_rank/marine_corps/o3,
+//		/datum/mil_rank/marine_corps/o3_alt,
+//		/datum/mil_rank/marine_corps/o3_alt2,
+		1/datum/mil_rank/marine_corps/o4
 	)
 
 /datum/job/chief_engineer
@@ -53,8 +54,9 @@
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3,
 		/datum/mil_rank/marine_corps/o2,
-		/datum/mil_rank/marine_corps/o3_alt,
-		/datum/mil_rank/marine_corps/o3_alt2
+		/datum/mil_rank/marine_corps/o3,
+//		/datum/mil_rank/marine_corps/o3_alt,
+//		/datum/mil_rank/marine_corps/o3_alt2,
 	)
 
 /datum/job/hos
@@ -66,8 +68,9 @@
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3,
 		/datum/mil_rank/marine_corps/o2,
-		/datum/mil_rank/marine_corps/o3_alt,
-		/datum/mil_rank/marine_corps/o3_alt2
+		/datum/mil_rank/marine_corps/o3,
+//		/datum/mil_rank/marine_corps/o3_alt,
+//		/datum/mil_rank/marine_corps/o3_alt2,
 	)
 
 /datum/job/sea
