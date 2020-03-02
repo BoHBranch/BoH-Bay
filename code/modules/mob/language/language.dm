@@ -21,7 +21,7 @@
 	var/machine_understands = 1       // Whether machines can parse and understand this language
 	var/shorthand = "???"			  // Shorthand that shows up in chat for this language.
 	var/list/partial_understanding				  // List of languages that can /somehwat/ understand it, format is: name = chance of understanding a word
-	var/max_partial_understanding = 0 // The maximum percentage of the language that can be understood by non-speakers
+	var/max_partial_understanding = 95 // The maximum percentage of the language that can be understood by non-speakers
 	var/warning = ""
 	var/hidden_from_codex			  // If it should not show up in Codex
 	var/category = /datum/language    // Used to point at root language types that shouldn't be visible
