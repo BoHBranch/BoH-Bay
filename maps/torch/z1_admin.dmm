@@ -242,35 +242,35 @@
 /area/holodeck/source_emptycourt)
 "abw" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_s";
-	dir = 4
+	dir = 4;
+	icon_state = "swall_s"
 	},
 /area/centcom/evac)
 "abx" = (
 /obj/structure/shuttle/engine/propulsion{
-	icon_state = "propulsion_r";
-	dir = 1
+	dir = 1;
+	icon_state = "propulsion_r"
 	},
 /turf/space,
 /area/centcom/evac)
 "aby" = (
 /obj/structure/shuttle/engine/propulsion{
-	icon_state = "propulsion";
-	dir = 1
+	dir = 1;
+	icon_state = "propulsion"
 	},
 /turf/space,
 /area/centcom/evac)
 "abz" = (
 /obj/structure/shuttle/engine/propulsion{
-	icon_state = "propulsion_l";
-	dir = 1
+	dir = 1;
+	icon_state = "propulsion_l"
 	},
 /turf/space,
 /area/centcom/evac)
 "abA" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_s";
-	dir = 2
+	dir = 2;
+	icon_state = "swall_s"
 	},
 /area/centcom/evac)
 "abB" = (
@@ -378,28 +378,28 @@
 /area/holodeck/source_courtroom)
 "aca" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_straight";
-	dir = 1
+	dir = 1;
+	icon_state = "swall_straight"
 	},
 /area/centcom/evac)
 "acb" = (
 /obj/structure/window/reinforced/crescent,
 /obj/structure/shuttle/engine/heater{
-	icon_state = "heater";
-	dir = 1
+	dir = 1;
+	icon_state = "heater"
 	},
 /turf/simulated/floor/airless,
 /area/centcom/evac)
 "acc" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_t";
-	dir = 8
+	dir = 8;
+	icon_state = "swall_t"
 	},
 /area/centcom/evac)
 "acd" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_straight";
-	dir = 4
+	dir = 4;
+	icon_state = "swall_straight"
 	},
 /area/centcom/evac)
 "ace" = (
@@ -430,8 +430,8 @@
 /area/centcom/evac)
 "acg" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_t";
-	dir = 4
+	dir = 4;
+	icon_state = "swall_t"
 	},
 /area/centcom/evac)
 "ach" = (
@@ -628,8 +628,8 @@
 "acO" = (
 /turf/simulated/floor/plating,
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_c";
-	dir = 2
+	dir = 2;
+	icon_state = "swall_c"
 	},
 /area/centcom/evac)
 "acP" = (
@@ -700,8 +700,8 @@
 /area/centcom/evac)
 "adj" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall";
-	dir = 1
+	dir = 1;
+	icon_state = "swall"
 	},
 /area/centcom/evac)
 "adk" = (
@@ -779,25 +779,18 @@
 /area/holodeck/source_courtroom)
 "adJ" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_s";
-	dir = 1
+	dir = 1;
+	icon_state = "swall_s"
 	},
 /area/centcom/evac)
 "adK" = (
 /obj/machinery/door/airlock/hatch/maintenance,
 /turf/simulated/floor/plating,
 /area/centcom/evac)
-"adL" = (
-/turf/simulated/floor/plating,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_c";
-	dir = 4
-	},
-/area/centcom/evac)
 "adM" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_s";
-	dir = 8
+	dir = 8;
+	icon_state = "swall_s"
 	},
 /area/centcom/evac)
 "adN" = (
@@ -1292,20 +1285,20 @@
 /area/holodeck/source_basketball)
 "afr" = (
 /turf/simulated/floor/holofloor/beach/sand{
-	icon_state = "beach";
-	dir = 9
+	dir = 9;
+	icon_state = "beach"
 	},
 /area/holodeck/source_beach)
 "afs" = (
 /turf/simulated/floor/holofloor/beach/sand{
-	icon_state = "beach";
-	dir = 1
+	dir = 1;
+	icon_state = "beach"
 	},
 /area/holodeck/source_beach)
 "aft" = (
 /turf/simulated/floor/holofloor/beach/sand{
-	icon_state = "beach";
-	dir = 5
+	dir = 5;
+	icon_state = "beach"
 	},
 /area/holodeck/source_beach)
 "afu" = (
@@ -1329,8 +1322,8 @@
 /area/holodeck/source_boxingcourt)
 "afS" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall";
-	dir = 10
+	dir = 10;
+	icon_state = "swall"
 	},
 /area/centcom/evac)
 "afT" = (
@@ -1358,8 +1351,8 @@
 /area/holodeck/source_basketball)
 "afX" = (
 /turf/simulated/floor/holofloor/beach/sand{
-	icon_state = "beach";
-	dir = 8
+	dir = 8;
+	icon_state = "beach"
 	},
 /area/holodeck/source_beach)
 "afY" = (
@@ -1377,8 +1370,8 @@
 /area/holodeck/source_beach)
 "agb" = (
 /turf/simulated/floor/holofloor/beach/sand{
-	icon_state = "beach";
-	dir = 4
+	dir = 4;
+	icon_state = "beach"
 	},
 /area/holodeck/source_beach)
 "agc" = (
@@ -1401,6 +1394,14 @@
 /obj/structure/window/reinforced/holowindow,
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/holodeck/source_boxingcourt)
+"agn" = (
+/obj/structure/closet/crate/freezer,
+/obj/effect/decal/cleanable/dirt,
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/illegaltwo,
+/turf/simulated/floor/tiled,
+/area/merchant_station)
 "agp" = (
 /obj/structure/closet/secure_closet/personal/patient,
 /turf/unsimulated/floor{
@@ -1446,8 +1447,8 @@
 /area/holodeck/source_meetinghall)
 "agw" = (
 /turf/simulated/floor/holofloor/beach/sand{
-	icon_state = "beach";
-	dir = 10
+	dir = 10;
+	icon_state = "beach"
 	},
 /area/holodeck/source_beach)
 "agx" = (
@@ -1457,8 +1458,8 @@
 /area/holodeck/source_beach)
 "agy" = (
 /turf/simulated/floor/holofloor/beach/sand{
-	icon_state = "beach";
-	dir = 6
+	dir = 6;
+	icon_state = "beach"
 	},
 /area/holodeck/source_beach)
 "agz" = (
@@ -1641,8 +1642,8 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/black{
-	icon_state = "corner_white";
-	dir = 4
+	dir = 4;
+	icon_state = "corner_white"
 	},
 /turf/simulated/floor/holofloor/tiled,
 /area/holodeck/source_boxingcourt)
@@ -1697,8 +1698,8 @@
 /area/centcom/evac)
 "ahs" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
-	icon_state = "console";
-	dir = 8
+	dir = 8;
+	icon_state = "console"
 	},
 /turf/unsimulated/floor{
 	icon = 'icons/turf/shuttle.dmi';
@@ -1743,14 +1744,14 @@
 /area/holodeck/source_basketball)
 "ahz" = (
 /turf/simulated/floor/holofloor/beach/sand{
-	icon_state = "beachcorner";
-	dir = 8
+	dir = 8;
+	icon_state = "beachcorner"
 	},
 /area/holodeck/source_beach)
 "ahA" = (
 /turf/simulated/floor/holofloor/beach/sand{
-	icon_state = "beachcorner";
-	dir = 4
+	dir = 4;
+	icon_state = "beachcorner"
 	},
 /area/holodeck/source_beach)
 "ahB" = (
@@ -1786,8 +1787,8 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/black{
-	icon_state = "corner_white";
-	dir = 8
+	dir = 8;
+	icon_state = "corner_white"
 	},
 /turf/simulated/floor/holofloor/tiled,
 /area/holodeck/source_boxingcourt)
@@ -1955,14 +1956,14 @@
 /area/holodeck/source_boxingcourt)
 "aiH" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_t";
-	dir = 1
+	dir = 1;
+	icon_state = "swall_t"
 	},
 /area/centcom/evac)
 "aiI" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_t";
-	dir = 2
+	dir = 2;
+	icon_state = "swall_t"
 	},
 /area/centcom/evac)
 "aiJ" = (
@@ -2012,8 +2013,8 @@
 /area/holodeck/source_beach)
 "aiY" = (
 /obj/machinery/computer/crew{
-	icon_state = "computer";
-	dir = 4
+	dir = 4;
+	icon_state = "computer"
 	},
 /turf/unsimulated/floor{
 	icon = 'icons/turf/shuttle.dmi';
@@ -2122,8 +2123,8 @@
 /area/centcom/evac)
 "ajC" = (
 /obj/machinery/computer/shuttle{
-	icon_state = "computer";
-	dir = 1
+	dir = 1;
+	icon_state = "computer"
 	},
 /turf/unsimulated/floor{
 	icon = 'icons/turf/shuttle.dmi';
@@ -2423,21 +2424,21 @@
 "att" = (
 /obj/structure/table/standard,
 /turf/unsimulated/floor{
-	icon_state = "carpet";
-	dir = 2
+	dir = 2;
+	icon_state = "carpet"
 	},
 /area/centcom/living)
 "atu" = (
 /turf/unsimulated/floor{
-	icon_state = "carpet";
-	dir = 2
+	dir = 2;
+	icon_state = "carpet"
 	},
 /area/centcom/living)
 "atv" = (
 /obj/structure/closet/secure_closet/personal,
 /turf/unsimulated/floor{
-	icon_state = "carpet";
-	dir = 2
+	dir = 2;
+	icon_state = "carpet"
 	},
 /area/centcom/living)
 "atw" = (
@@ -2460,16 +2461,16 @@
 /area/prison/solitary)
 "atB" = (
 /obj/structure/shuttle/engine/propulsion{
-	icon_state = "propulsion_l";
-	dir = 8
+	dir = 8;
+	icon_state = "propulsion_l"
 	},
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
 /area/shuttle/administration/centcom)
 "atC" = (
 /obj/structure/shuttle/engine/heater{
-	icon_state = "heater";
-	dir = 8
+	dir = 8;
+	icon_state = "heater"
 	},
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
@@ -2495,8 +2496,8 @@
 /obj/structure/bed,
 /obj/item/weapon/bedsheet,
 /turf/unsimulated/floor{
-	icon_state = "carpet";
-	dir = 2
+	dir = 2;
+	icon_state = "carpet"
 	},
 /area/centcom/living)
 "atI" = (
@@ -2585,8 +2586,8 @@
 /area/centcom/suppy)
 "atU" = (
 /obj/structure/shuttle/engine/propulsion{
-	icon_state = "propulsion_r";
-	dir = 8
+	dir = 8;
+	icon_state = "propulsion_r"
 	},
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
@@ -2672,8 +2673,8 @@
 /area/shuttle/administration/centcom)
 "aul" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
-	icon_state = "console";
-	dir = 8
+	dir = 8;
+	icon_state = "console"
 	},
 /turf/simulated/floor/shuttle/red,
 /area/shuttle/administration/centcom)
@@ -2700,8 +2701,8 @@
 /area/supply/dock)
 "auq" = (
 /obj/structure/shuttle/engine/heater{
-	icon_state = "heater";
-	dir = 1
+	dir = 1;
+	icon_state = "heater"
 	},
 /obj/structure/window/reinforced,
 /obj/effect/paint/silver,
@@ -2719,8 +2720,8 @@
 /area/shuttle/administration/centcom)
 "auu" = (
 /obj/machinery/computer/modular/preset/security{
-	icon_state = "console";
-	dir = 8
+	dir = 8;
+	icon_state = "console"
 	},
 /turf/simulated/floor/shuttle/red,
 /area/shuttle/administration/centcom)
@@ -2804,21 +2805,21 @@
 "auN" = (
 /obj/structure/kitchenspike,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	dir = 2;
+	icon_state = "freezerfloor"
 	},
 /area/centcom/living)
 "auO" = (
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	dir = 2;
+	icon_state = "freezerfloor"
 	},
 /area/centcom/living)
 "auP" = (
 /obj/machinery/gibber,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	dir = 2;
+	icon_state = "freezerfloor"
 	},
 /area/centcom/living)
 "auQ" = (
@@ -2854,8 +2855,8 @@
 "auV" = (
 /obj/structure/closet/secure_closet/freezer/meat,
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	dir = 2;
+	icon_state = "freezerfloor"
 	},
 /area/centcom/living)
 "auW" = (
@@ -2864,8 +2865,8 @@
 	pixel_x = -5
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	dir = 2;
+	icon_state = "freezerfloor"
 	},
 /area/centcom/living)
 "auX" = (
@@ -2932,8 +2933,8 @@
 	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "freezerfloor";
-	dir = 2
+	dir = 2;
+	icon_state = "freezerfloor"
 	},
 /area/centcom/living)
 "avj" = (
@@ -3039,8 +3040,8 @@
 /area/centcom/living)
 "avy" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
-	icon_state = "console";
-	dir = 8
+	dir = 8;
+	icon_state = "console"
 	},
 /turf/unsimulated/floor{
 	dir = 8;
@@ -3229,8 +3230,8 @@
 /obj/item/ammo_magazine/box/machinegun,
 /obj/item/weapon/gun/projectile/automatic/l6_saw,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awh" = (
@@ -3242,8 +3243,8 @@
 /obj/item/weapon/plastique,
 /obj/item/weapon/plastique,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awi" = (
@@ -3267,16 +3268,16 @@
 /obj/item/weapon/gun/projectile/automatic/sec_smg,
 /obj/item/weapon/gun/projectile/automatic/sec_smg,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awj" = (
 /obj/structure/table/rack,
 /obj/item/weapon/gun/energy/ionrifle,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awk" = (
@@ -3285,8 +3286,8 @@
 /obj/item/weapon/gun/energy/gun/nuclear,
 /obj/item/weapon/gun/energy/gun/nuclear,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awl" = (
@@ -3300,8 +3301,8 @@
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle,
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awm" = (
@@ -3318,8 +3319,8 @@
 /obj/item/weapon/grenade/smokebomb,
 /obj/item/weapon/gun/launcher/grenade,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awn" = (
@@ -3333,8 +3334,8 @@
 /obj/item/weapon/aiModule/safeguard,
 /obj/structure/table/rack,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awo" = (
@@ -3343,41 +3344,41 @@
 	name = "Synthetics Modification Equipment"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awp" = (
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awq" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awr" = (
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aws" = (
 /obj/machinery/shieldgen,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awt" = (
 /obj/machinery/shieldwallgen,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awv" = (
@@ -3445,8 +3446,8 @@
 /area/centcom/control)
 "awD" = (
 /obj/machinery/computer/teleporter{
-	icon_state = "computer";
-	dir = 2
+	dir = 2;
+	icon_state = "computer"
 	},
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -3477,8 +3478,8 @@
 	p_open = 0
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awM" = (
@@ -3489,8 +3490,8 @@
 	pixel_y = -3
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awN" = (
@@ -3590,14 +3591,14 @@
 	pixel_y = 22
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awY" = (
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 9
+	dir = 9;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "awZ" = (
@@ -3608,15 +3609,15 @@
 	p_open = 0
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axa" = (
 /obj/machinery/vending/security,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axb" = (
@@ -3661,8 +3662,8 @@
 "axj" = (
 /obj/structure/table/reinforced,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axk" = (
@@ -3671,43 +3672,43 @@
 /obj/item/weapon/gun/energy/gun,
 /obj/item/weapon/gun/energy/gun,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axl" = (
 /obj/machinery/vending/assist,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axm" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axn" = (
 /obj/machinery/pipedispenser,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axo" = (
 /obj/machinery/pipedispenser/disposal,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axp" = (
 /obj/machinery/power/emitter,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axq" = (
@@ -3737,8 +3738,8 @@
 "axt" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axu" = (
@@ -3815,8 +3816,8 @@
 "axF" = (
 /obj/machinery/vending/tool,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axG" = (
@@ -3824,8 +3825,8 @@
 /obj/item/weapon/stock_parts/circuitboard/smes,
 /obj/item/weapon/stock_parts/circuitboard/smes,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axH" = (
@@ -3880,8 +3881,8 @@
 "axR" = (
 /obj/structure/table/steel_reinforced,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axS" = (
@@ -3900,8 +3901,8 @@
 /obj/item/weapon/storage/belt/holster/security/tactical,
 /obj/item/taperoll/police,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axT" = (
@@ -3928,8 +3929,8 @@
 /obj/item/clothing/glasses/tacgoggles,
 /obj/item/clothing/glasses/tacgoggles,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axU" = (
@@ -3947,8 +3948,8 @@
 /obj/item/weapon/storage/backpack/ert/security,
 /obj/item/weapon/storage/backpack/ert/security,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axV" = (
@@ -3956,8 +3957,8 @@
 /obj/item/weapon/rig/military/equipped,
 /obj/item/weapon/rig/military/equipped,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axW" = (
@@ -3973,8 +3974,8 @@
 /obj/item/clothing/head/helmet/swat,
 /obj/item/clothing/head/helmet/swat,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axX" = (
@@ -3987,15 +3988,15 @@
 /obj/item/clothing/accessory/storage/black_vest,
 /obj/item/clothing/accessory/storage/black_vest,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axY" = (
 /obj/machinery/vending/engivend,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "axZ" = (
@@ -4070,22 +4071,22 @@
 	},
 /obj/structure/table/steel_reinforced,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aya" = (
 /obj/machinery/portable_atmospherics/powered/pump/filled,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayb" = (
 /obj/machinery/porta_turret/crescent,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayc" = (
@@ -4104,8 +4105,8 @@
 /obj/item/weapon/cell/high,
 /obj/item/weapon/cell/high,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aye" = (
@@ -4113,16 +4114,16 @@
 /obj/item/weapon/crowbar,
 /obj/item/weapon/screwdriver,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayf" = (
 /obj/machinery/cell_charger,
 /obj/structure/table/reinforced,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayg" = (
@@ -4131,8 +4132,8 @@
 /obj/item/weapon/screwdriver,
 /obj/item/weapon/wrench,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayh" = (
@@ -4169,8 +4170,8 @@
 "ayo" = (
 /obj/machinery/vending/engineering,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayp" = (
@@ -4195,15 +4196,15 @@
 /obj/item/weapon/rcd_ammo,
 /obj/structure/table/steel_reinforced,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayq" = (
 /obj/machinery/recharge_station,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayr" = (
@@ -4250,8 +4251,8 @@
 /obj/item/weapon/pickaxe/diamonddrill,
 /obj/structure/table/steel_reinforced,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayO" = (
@@ -4264,8 +4265,8 @@
 /obj/item/weapon/gun/energy/stunrevolver,
 /obj/item/clothing/glasses/tacgoggles,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayP" = (
@@ -4274,8 +4275,8 @@
 /obj/item/weapon/storage/box/trackimp,
 /obj/item/weapon/storage/box/cdeathalarm_kit,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayQ" = (
@@ -4283,16 +4284,16 @@
 /obj/item/weapon/aicard,
 /obj/item/weapon/pinpointer/advpinpointer,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayR" = (
 /obj/structure/table/reinforced,
 /obj/item/modular_computer/pda/ert,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayS" = (
@@ -4300,8 +4301,8 @@
 /obj/item/weapon/gun/energy/gun/nuclear,
 /obj/prefab/hand_teleporter,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayT" = (
@@ -4327,8 +4328,8 @@
 /obj/item/clothing/glasses/welding/superior,
 /obj/structure/table/steel_reinforced,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayU" = (
@@ -4337,8 +4338,8 @@
 	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "ayV" = (
@@ -4382,8 +4383,8 @@
 /obj/structure/table/rack,
 /obj/item/weapon/rig/military/equipped,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "azp" = (
@@ -4391,8 +4392,8 @@
 /obj/item/clothing/suit/storage/vest/merc,
 /obj/item/clothing/head/helmet/swat,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "azq" = (
@@ -4408,22 +4409,22 @@
 /obj/item/clothing/accessory/storage/brown_vest,
 /obj/item/clothing/accessory/storage/brown_vest,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "azr" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "azs" = (
 /obj/effect/wingrille_spawn/reinforced/crescent,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "azt" = (
@@ -4484,8 +4485,8 @@
 /area/centcom/control)
 "azB" = (
 /obj/machinery/computer/crew{
-	icon_state = "computer";
-	dir = 8
+	dir = 8;
+	icon_state = "computer"
 	},
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -4525,8 +4526,8 @@
 /obj/item/rig_module/mounted/egun,
 /obj/item/rig_module/mounted/egun,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "azR" = (
@@ -4535,8 +4536,8 @@
 	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "azS" = (
@@ -4545,8 +4546,8 @@
 	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "azT" = (
@@ -4642,8 +4643,8 @@
 	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aAn" = (
@@ -4651,8 +4652,8 @@
 	pixel_y = 32
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aAo" = (
@@ -4660,8 +4661,8 @@
 	pixel_y = 32
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aAp" = (
@@ -4670,8 +4671,8 @@
 	pixel_y = 22
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aAq" = (
@@ -4680,8 +4681,8 @@
 	pixel_y = 32
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aAr" = (
@@ -4702,8 +4703,8 @@
 /obj/item/clothing/accessory/storage/holster/waist,
 /obj/item/clothing/accessory/storage/holster/waist,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aAs" = (
@@ -4721,8 +4722,8 @@
 /area/centcom/control)
 "aAu" = (
 /obj/machinery/computer/robotics{
-	icon_state = "computer";
-	dir = 4
+	dir = 4;
+	icon_state = "computer"
 	},
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -4730,8 +4731,8 @@
 /area/centcom/control)
 "aAv" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
-	icon_state = "console";
-	dir = 1
+	dir = 1;
+	icon_state = "console"
 	},
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -4753,8 +4754,8 @@
 	pixel_y = -32
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aAF" = (
@@ -4770,8 +4771,8 @@
 /obj/item/device/megaphone,
 /obj/item/device/megaphone,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aAH" = (
@@ -4863,15 +4864,15 @@
 	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBa" = (
 /obj/machinery/fabricator/hacked,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBb" = (
@@ -4905,8 +4906,8 @@
 /obj/item/modular_computer/pda/ert,
 /obj/item/modular_computer/pda/ert,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBf" = (
@@ -4918,8 +4919,8 @@
 /obj/item/device/lightreplacer,
 /obj/item/device/lightreplacer,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBh" = (
@@ -4931,8 +4932,8 @@
 /area/centcom/control)
 "aBj" = (
 /obj/machinery/computer/modular/preset/security{
-	icon_state = "console";
-	dir = 1
+	dir = 1;
+	icon_state = "console"
 	},
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -4951,8 +4952,8 @@
 /obj/item/weapon/reagent_containers/hypospray,
 /obj/item/weapon/storage/box/syringes,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBt" = (
@@ -4969,8 +4970,8 @@
 /obj/item/weapon/storage/box/syringes,
 /obj/item/weapon/reagent_containers/glass/beaker/large,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBu" = (
@@ -4987,23 +4988,23 @@
 /obj/item/bodybag/cryobag,
 /obj/item/weapon/defibrillator/compact/combat/loaded,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBv" = (
 /obj/machinery/chemical_dispenser/ert,
 /obj/item/weapon/reagent_containers/glass/beaker/large,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBw" = (
 /obj/machinery/chem_master,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBx" = (
@@ -5016,8 +5017,8 @@
 /obj/item/clothing/shoes/magboots,
 /obj/item/clothing/shoes/magboots,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBy" = (
@@ -5048,8 +5049,8 @@
 	name = "Commando"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBB" = (
@@ -5058,8 +5059,8 @@
 	},
 /obj/item/clothing/under/syndicate/combat,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBC" = (
@@ -5076,8 +5077,8 @@
 "aBI" = (
 /obj/structure/closet/crate,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBJ" = (
@@ -5118,16 +5119,16 @@
 /obj/item/weapon/grenade/chem_grenade/cleaner,
 /obj/item/weapon/grenade/chem_grenade/cleaner,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBL" = (
 /obj/item/weapon/mop,
 /obj/structure/mopbucket,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBM" = (
@@ -5136,8 +5137,8 @@
 	amount_per_transfer_from_this = 50
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aBN" = (
@@ -5168,8 +5169,8 @@
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aCa" = (
@@ -5211,8 +5212,8 @@
 /obj/item/weapon/storage/firstaid/toxin,
 /obj/item/weapon/storage/firstaid/fire,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aCk" = (
@@ -5228,15 +5229,15 @@
 /obj/item/roller,
 /obj/item/weapon/defibrillator/loaded,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aCl" = (
 /obj/structure/iv_drip,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aCm" = (
@@ -5269,8 +5270,8 @@
 /obj/item/clothing/mask/surgical,
 /obj/item/clothing/mask/surgical,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aCn" = (
@@ -5286,8 +5287,8 @@
 /obj/item/clothing/accessory/storage/white_vest,
 /obj/item/clothing/accessory/storage/white_vest,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aCo" = (
@@ -5300,8 +5301,8 @@
 /obj/item/clothing/head/helmet/swat,
 /obj/item/clothing/head/helmet/swat,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aCp" = (
@@ -5315,8 +5316,8 @@
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aCq" = (
@@ -5325,8 +5326,8 @@
 /obj/item/weapon/tank/emergency/oxygen/double,
 /obj/item/weapon/tank/emergency/oxygen/double,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 1
+	dir = 1;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aCr" = (
@@ -5340,30 +5341,30 @@
 /area/centcom/specops)
 "aCs" = (
 /turf/unsimulated/floor{
-	name = "plating";
-	icon_state = "cult"
+	icon_state = "cult";
+	name = "plating"
 	},
 /area/centcom/holding)
 "aCt" = (
 /obj/item/weapon/stool/padded,
 /obj/item/weapon/stool/padded,
 /turf/unsimulated/floor{
-	name = "plating";
-	icon_state = "cult"
+	icon_state = "cult";
+	name = "plating"
 	},
 /area/centcom/holding)
 "aCu" = (
 /obj/item/weapon/stool/padded,
 /turf/unsimulated/floor{
-	name = "plating";
-	icon_state = "cult"
+	icon_state = "cult";
+	name = "plating"
 	},
 /area/centcom/holding)
 "aCv" = (
 /obj/effect/wingrille_spawn/reinforced/crescent,
 /turf/unsimulated/floor{
-	name = "plating";
-	icon_state = "cult"
+	icon_state = "cult";
+	name = "plating"
 	},
 /area/centcom/holding)
 "aCx" = (
@@ -5408,8 +5409,8 @@
 "aCQ" = (
 /obj/structure/table/reinforced,
 /turf/unsimulated/floor{
-	name = "plating";
-	icon_state = "cult"
+	icon_state = "cult";
+	name = "plating"
 	},
 /area/centcom/holding)
 "aCR" = (
@@ -5493,24 +5494,24 @@
 /area/centcom/holding)
 "aDy" = (
 /obj/structure/shuttle/engine/propulsion{
-	icon_state = "propulsion_r";
-	dir = 1
+	dir = 1;
+	icon_state = "propulsion_r"
 	},
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
 /area/shuttle/specops/centcom)
 "aDz" = (
 /obj/structure/shuttle/engine/propulsion{
-	icon_state = "propulsion";
-	dir = 1
+	dir = 1;
+	icon_state = "propulsion"
 	},
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
 /area/shuttle/specops/centcom)
 "aDA" = (
 /obj/structure/shuttle/engine/propulsion{
-	icon_state = "propulsion_l";
-	dir = 1
+	dir = 1;
+	icon_state = "propulsion_l"
 	},
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
@@ -5521,8 +5522,8 @@
 	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 8
+	dir = 8;
+	icon_state = "vault"
 	},
 /area/centcom/specops)
 "aDC" = (
@@ -5531,8 +5532,8 @@
 	dir = 4
 	},
 /turf/unsimulated/floor{
-	name = "plating";
-	icon_state = "cult"
+	icon_state = "cult";
+	name = "plating"
 	},
 /area/centcom/holding)
 "aDD" = (
@@ -5574,8 +5575,8 @@
 /area/shuttle/specops/centcom)
 "aDR" = (
 /obj/structure/shuttle/engine/heater{
-	icon_state = "heater";
-	dir = 1
+	dir = 1;
+	icon_state = "heater"
 	},
 /obj/structure/window/reinforced/crescent,
 /obj/effect/paint/black,
@@ -5585,8 +5586,8 @@
 /obj/structure/bed,
 /obj/item/weapon/bedsheet/red,
 /turf/unsimulated/floor{
-	name = "plating";
-	icon_state = "cult"
+	icon_state = "cult";
+	name = "plating"
 	},
 /area/centcom/holding)
 "aDT" = (
@@ -5610,8 +5611,8 @@
 /area/centcom/holding)
 "aDV" = (
 /obj/machinery/computer/modular/preset/security{
-	icon_state = "console";
-	dir = 8
+	dir = 8;
+	icon_state = "console"
 	},
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -5619,8 +5620,8 @@
 /area/centcom/holding)
 "aEd" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
-	icon_state = "console";
-	dir = 4
+	dir = 4;
+	icon_state = "console"
 	},
 /turf/simulated/floor/shuttle/red,
 /area/shuttle/specops/centcom)
@@ -5763,8 +5764,8 @@
 "aEF" = (
 /obj/effect/wingrille_spawn/reinforced/crescent,
 /turf/unsimulated/floor{
-	name = "plating";
-	icon_state = "cult"
+	icon_state = "cult";
+	name = "plating"
 	},
 /area/centcom/ferry)
 "aEG" = (
@@ -5863,8 +5864,8 @@
 /area/centcom/holding)
 "aFo" = (
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 9
+	dir = 9;
+	icon_state = "vault"
 	},
 /area/centcom/ferry)
 "aFp" = (
@@ -6257,8 +6258,8 @@
 /area/centcom/holding)
 "aHg" = (
 /obj/structure/bed/chair/wood/wings{
-	icon_state = "wooden_chair_wings";
-	dir = 4
+	dir = 4;
+	icon_state = "wooden_chair_wings"
 	},
 /turf/unsimulated/floor{
 	icon_state = "wood"
@@ -6284,8 +6285,8 @@
 /area/centcom/holding)
 "aHj" = (
 /obj/structure/bed/chair/wood/wings{
-	icon_state = "wooden_chair_wings";
-	dir = 8
+	dir = 8;
+	icon_state = "wooden_chair_wings"
 	},
 /turf/unsimulated/floor{
 	icon_state = "wood"
@@ -6435,8 +6436,8 @@
 	name = "Transport Airlock"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/centcom/holding)
 "aHD" = (
@@ -6531,8 +6532,8 @@
 /area/shuttle/transport1/centcom)
 "aHQ" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_straight";
-	dir = 4
+	dir = 4;
+	icon_state = "swall_straight"
 	},
 /area/shuttle/transport1/centcom)
 "aHR" = (
@@ -6613,8 +6614,8 @@
 /area/centcom/holding)
 "aIc" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_straight";
-	dir = 1
+	dir = 1;
+	icon_state = "swall_straight"
 	},
 /area/shuttle/transport1/centcom)
 "aId" = (
@@ -6622,8 +6623,8 @@
 	dir = 4
 	},
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/blue,
 /area/shuttle/transport1/centcom)
@@ -6635,8 +6636,8 @@
 	dir = 8
 	},
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/blue,
 /area/shuttle/transport1/centcom)
@@ -6733,8 +6734,8 @@
 	dir = 1
 	},
 /turf/unsimulated/beach/sand{
-	icon_state = "beach";
-	dir = 6
+	dir = 6;
+	icon_state = "beach"
 	},
 /area/centcom/holding)
 "aIw" = (
@@ -6765,8 +6766,8 @@
 	name = "Thunderdome"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aIA" = (
@@ -6819,8 +6820,8 @@
 /area/shuttle/transport1/centcom)
 "aIF" = (
 /turf/unsimulated/beach/sand{
-	icon_state = "beach";
-	dir = 6
+	dir = 6;
+	icon_state = "beach"
 	},
 /area/centcom/holding)
 "aIG" = (
@@ -6831,14 +6832,14 @@
 "aIH" = (
 /obj/structure/table/standard,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aII" = (
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aIJ" = (
@@ -6878,15 +6879,15 @@
 	dir = 4
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aIS" = (
 /obj/structure/table/reinforced,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aIT" = (
@@ -6894,8 +6895,8 @@
 	dir = 8
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aIU" = (
@@ -6983,8 +6984,8 @@
 	dir = 9
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aJk" = (
@@ -6992,8 +6993,8 @@
 	dir = 6
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aJl" = (
@@ -7040,8 +7041,8 @@
 "aJs" = (
 /obj/effect/floor_decal/corner/red/three_quarters,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aJt" = (
@@ -7049,8 +7050,8 @@
 	dir = 10
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aJu" = (
@@ -7058,8 +7059,8 @@
 	dir = 10
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aJv" = (
@@ -7067,8 +7068,8 @@
 	dir = 4
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aJw" = (
@@ -7085,8 +7086,8 @@
 /area/centcom/holding)
 "aJx" = (
 /obj/machinery/computer/operating{
-	icon_state = "computer";
-	dir = 8
+	dir = 8;
+	icon_state = "computer"
 	},
 /turf/unsimulated/floor{
 	icon_state = "white"
@@ -7183,8 +7184,8 @@
 /area/centcom/holding)
 "aJF" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_t";
-	dir = 8
+	dir = 8;
+	icon_state = "swall_t"
 	},
 /area/shuttle/transport1/centcom)
 "aJG" = (
@@ -7193,8 +7194,8 @@
 /area/shuttle/transport1/centcom)
 "aJH" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_t";
-	dir = 4
+	dir = 4;
+	icon_state = "swall_t"
 	},
 /area/shuttle/transport1/centcom)
 "aJL" = (
@@ -7207,8 +7208,8 @@
 	name = "Thunderdome"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aJM" = (
@@ -7222,8 +7223,8 @@
 	shuttle_tag = "Centcom"
 	},
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/blue,
 /area/shuttle/transport1/centcom)
@@ -7232,8 +7233,8 @@
 	dir = 8
 	},
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/blue,
 /area/shuttle/transport1/centcom)
@@ -7243,8 +7244,8 @@
 	opacity = 1
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aJX" = (
@@ -7303,8 +7304,8 @@
 /area/shuttle/transport1/centcom)
 "aKf" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_f";
-	dir = 2
+	dir = 2;
+	icon_state = "swall_f"
 	},
 /area/shuttle/transport1/centcom)
 "aKg" = (
@@ -7314,8 +7315,8 @@
 /area/shuttle/transport1/centcom)
 "aKh" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "swall_f";
-	dir = 4
+	dir = 4;
+	icon_state = "swall_f"
 	},
 /area/shuttle/transport1/centcom)
 "aKi" = (
@@ -7772,8 +7773,8 @@
 /obj/item/clothing/shoes/brown,
 /obj/item/weapon/melee/energy/axe,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aLj" = (
@@ -7803,8 +7804,8 @@
 /obj/item/clothing/shoes/brown,
 /obj/item/weapon/melee/energy/axe,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aLm" = (
@@ -7833,8 +7834,8 @@
 	name = "Axe Supply"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aLq" = (
@@ -7866,8 +7867,8 @@
 /area/acting/stage)
 "aLv" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled,
 /area/acting/stage)
@@ -7887,8 +7888,8 @@
 /obj/item/weapon/melee/baton/loaded,
 /obj/item/weapon/melee/energy/sword/red,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aLy" = (
@@ -7897,8 +7898,8 @@
 	name = "General Supply"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aLz" = (
@@ -7906,8 +7907,8 @@
 	name = "tdome2"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome/tdome2)
 "aLA" = (
@@ -7916,8 +7917,8 @@
 	name = "Thunderdome Blast Door"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aLB" = (
@@ -7941,8 +7942,8 @@
 	name = "tdome1"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome/tdome1)
 "aLE" = (
@@ -7954,8 +7955,8 @@
 /obj/item/weapon/melee/baton/loaded,
 /obj/item/weapon/melee/energy/sword/green,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aLF" = (
@@ -7995,8 +7996,8 @@
 	name = "tdome2"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome/tdome2)
 "aLK" = (
@@ -8007,8 +8008,8 @@
 	name = "tdome1"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome/tdome1)
 "aLL" = (
@@ -8066,8 +8067,8 @@
 	invisibility = 101
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome/tdome2)
 "aLT" = (
@@ -8093,8 +8094,8 @@
 	invisibility = 101
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome/tdome1)
 "aLW" = (
@@ -8156,8 +8157,8 @@
 /area/acting/backstage)
 "aMp" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "intact";
-	dir = 5
+	dir = 5;
+	icon_state = "intact"
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -8173,8 +8174,8 @@
 /area/tdome)
 "aMr" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "intact";
-	dir = 9
+	dir = 9;
+	icon_state = "intact"
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -8299,8 +8300,8 @@
 	name = "Thunderdome Administration"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aMT" = (
@@ -8309,8 +8310,8 @@
 	name = "Heavy Supply"
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aMU" = (
@@ -8384,8 +8385,8 @@
 	dir = 8
 	},
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aNk" = (
@@ -8396,8 +8397,8 @@
 /obj/item/clothing/head/helmet/swat,
 /obj/item/weapon/gun/energy/laser,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aNl" = (
@@ -8427,15 +8428,15 @@
 /obj/item/clothing/head/helmet/swat,
 /obj/item/weapon/gun/energy/laser,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aNo" = (
 /obj/effect/floor_decal/corner/green,
 /turf/unsimulated/floor{
-	icon_state = "vault";
-	dir = 5
+	dir = 5;
+	icon_state = "vault"
 	},
 /area/tdome)
 "aNp" = (
@@ -8515,8 +8516,8 @@
 /area/merchant_station)
 "aNx" = (
 /obj/structure/hygiene/shower{
-	icon_state = "shower";
-	dir = 4
+	dir = 4;
+	icon_state = "shower"
 	},
 /obj/structure/curtain/open/shower,
 /obj/structure/window/reinforced,
@@ -8705,23 +8706,11 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
-"aOf" = (
-/obj/structure/closet/crate,
-/obj/effect/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/dark,
-/area/merchant_station)
 "aOg" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/spiderling_remains,
-/turf/simulated/floor/tiled/dark,
-/area/merchant_station)
-"aOh" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/largecrate,
-/obj/random/loot,
-/obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "aOr" = (
@@ -8892,20 +8881,8 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
-"aOL" = (
-/obj/structure/table/rack,
-/obj/random/contraband,
-/obj/random/loot,
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark,
-/area/merchant_station)
 "aOM" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled/dark,
-/area/merchant_station)
-"aON" = (
-/obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "aOY" = (
@@ -8948,8 +8925,8 @@
 "aPe" = (
 /obj/machinery/papershredder,
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /obj/effect/floor_decal/corner/blue{
 	dir = 4
@@ -8984,8 +8961,8 @@
 /obj/structure/table/woodentable,
 /obj/structure/reagent_dispensers/beerkeg,
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/wood,
 /area/merchant_station)
@@ -9100,10 +9077,10 @@
 /area/tdome/tdomeadmin)
 "aPJ" = (
 /obj/machinery/button/blast_door{
-	name = "Thunderdome Axe Supply";
-	icon_state = "computer";
 	dir = 1;
-	id_tag = "thunderdomeaxe"
+	icon_state = "computer";
+	id_tag = "thunderdomeaxe";
+	name = "Thunderdome Axe Supply"
 	},
 /turf/unsimulated/floor{
 	icon_state = "lino"
@@ -9179,8 +9156,8 @@
 	dir = 9
 	},
 /obj/machinery/computer/shuttle_control/merchant{
-	icon_state = "computer";
-	dir = 4
+	dir = 4;
+	icon_state = "computer"
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
@@ -9536,8 +9513,8 @@
 	pixel_x = 24
 	},
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
@@ -9573,8 +9550,8 @@
 /area/shuttle/merchant/home)
 "aRB" = (
 /obj/structure/shuttle/engine/heater{
-	icon_state = "heater";
-	dir = 4
+	dir = 4;
+	icon_state = "heater"
 	},
 /obj/effect/paint/silver,
 /turf/simulated/wall/r_titanium,
@@ -9687,8 +9664,8 @@
 /area/merchant_station)
 "aRZ" = (
 /obj/machinery/computer/modular/preset/merchant{
-	icon_state = "console";
-	dir = 8
+	dir = 8;
+	icon_state = "console"
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
@@ -9726,8 +9703,8 @@
 /obj/machinery/atmospherics/portables_connector,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /obj/machinery/door/window/brigdoor/southright,
 /obj/structure/window/reinforced{
@@ -9947,8 +9924,8 @@
 /area/merchant_station)
 "aTc" = (
 /obj/machinery/computer/shuttle_control/merchant{
-	icon_state = "computer";
-	dir = 4
+	dir = 4;
+	icon_state = "computer"
 	},
 /turf/simulated/floor/carpet/blue,
 /area/shuttle/merchant/home)
@@ -9960,9 +9937,9 @@
 	pixel_y = -28
 	},
 /obj/structure/bed/chair/shuttle{
-	tag = "icon-shuttle_chair_preview (WEST)";
+	dir = 8;
 	icon_state = "shuttle_chair_preview";
-	dir = 8
+	tag = "icon-shuttle_chair_preview (WEST)"
 	},
 /turf/simulated/floor/carpet/blue,
 /area/shuttle/merchant/home)
@@ -10136,9 +10113,9 @@
 /area/shuttle/merchant/home)
 "aTB" = (
 /obj/structure/bed/chair/office/comfy/black{
-	tag = "icon-comfyofficechair_preview (EAST)";
+	dir = 4;
 	icon_state = "comfyofficechair_preview";
-	dir = 4
+	tag = "icon-comfyofficechair_preview (EAST)"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/merchant/home)
@@ -10335,8 +10312,8 @@
 "aUe" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/warning{
-	icon_state = "warning";
-	dir = 4
+	dir = 4;
+	icon_state = "warning"
 	},
 /obj/item/stack/material/steel{
 	amount = 50
@@ -10387,8 +10364,8 @@
 /area/merchant_station)
 "aUk" = (
 /obj/effect/floor_decal/industrial/warning{
-	icon_state = "warning";
-	dir = 4
+	dir = 4;
+	icon_state = "warning"
 	},
 /obj/machinery/conveyor_switch{
 	id = "merchantbelt1"
@@ -10753,8 +10730,8 @@
 /area/merchant_station)
 "aVF" = (
 /obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /obj/machinery/power/solar,
 /obj/effect/floor_decal/solarpanel,
@@ -10859,11 +10836,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
-"aVP" = (
-/obj/structure/closet/crate,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
-/area/merchant_station)
 "aVQ" = (
 /obj/structure/table/rack,
 /obj/item/stack/material/glass{
@@ -10920,13 +10892,13 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/smes/buildable{
+	RCon_tag = null;
 	charge = 2.5e+006;
 	input_attempt = 1;
 	input_level = 250000;
 	inputting = 0;
 	output_attempt = 1;
-	output_level = 250000;
-	RCon_tag = null
+	output_level = 250000
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
@@ -10958,18 +10930,9 @@
 /obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/plating,
 /area/merchant_station)
-"aWm" = (
-/obj/structure/closet/crate/freezer,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
-/area/merchant_station)
 "aWn" = (
 /obj/structure/table/steel,
 /obj/machinery/light/small,
-/turf/simulated/floor/plating,
-/area/merchant_station)
-"aWo" = (
-/obj/structure/closet/crate,
 /turf/simulated/floor/plating,
 /area/merchant_station)
 "aWp" = (
@@ -10979,8 +10942,8 @@
 /area/merchant_station)
 "aWy" = (
 /obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /obj/machinery/power/tracker,
 /turf/simulated/floor/airless,
@@ -11018,8 +10981,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "intact";
-	dir = 5
+	dir = 5;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/airless,
 /area/merchant_station)
@@ -11053,8 +11016,8 @@
 /area/merchant_station)
 "aWE" = (
 /obj/machinery/power/terminal{
-	icon_state = "term";
-	dir = 1
+	dir = 1;
+	icon_state = "term"
 	},
 /obj/structure/cable{
 	d2 = 8;
@@ -11114,8 +11077,8 @@
 "aWK" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/simple/visible/red{
-	icon_state = "intact";
-	dir = 9
+	dir = 9;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/plating,
 /area/merchant_station)
@@ -11152,10 +11115,6 @@
 /obj/structure/cable,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
-"aWX" = (
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled,
-/area/merchant_station)
 "aWY" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 1
@@ -11165,8 +11124,8 @@
 /area/merchant_station)
 "aWZ" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "intact";
-	dir = 5
+	dir = 5;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/plating,
 /area/merchant_station)
@@ -11183,8 +11142,8 @@
 /area/merchant_station)
 "aXb" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "intact";
-	dir = 9
+	dir = 9;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/plating,
 /area/merchant_station)
@@ -11223,15 +11182,15 @@
 /area/merchant_station)
 "aXt" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan{
-	icon_state = "map";
-	dir = 1
+	dir = 1;
+	icon_state = "map"
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aXu" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan{
-	icon_state = "map";
-	dir = 1
+	dir = 1;
+	icon_state = "map"
 	},
 /turf/simulated/floor/plating,
 /area/merchant_station)
@@ -11256,8 +11215,8 @@
 /area/merchant_station)
 "aXJ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	icon_state = "intact";
-	dir = 9
+	dir = 9;
+	icon_state = "intact"
 	},
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /obj/item/weapon/tank/nitrogen,
@@ -11287,8 +11246,8 @@
 /area/merchant_station)
 "aZb" = (
 /obj/machinery/computer/modular/preset/civilian{
-	icon_state = "console";
-	dir = 4
+	dir = 4;
+	icon_state = "console"
 	},
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -11305,13 +11264,13 @@
 /area/syndicate_elite_squad)
 "bcS" = (
 /obj/structure/bed/chair/wood{
-	icon_state = "wooden_chair_preview";
 	dir = 8;
-	holographic = 1
+	holographic = 1;
+	icon_state = "wooden_chair_preview"
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 5
+	dir = 5;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
@@ -11423,15 +11382,15 @@
 	holographic = 1
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 1
+	dir = 1;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
 "bub" = (
 /obj/machinery/computer/modular/preset/security{
-	icon_state = "console";
-	dir = 8
+	dir = 8;
+	icon_state = "console"
 	},
 /turf/unsimulated/floor{
 	icon = 'icons/turf/shuttle.dmi';
@@ -11440,8 +11399,8 @@
 /area/centcom/evac)
 "bvb" = (
 /obj/machinery/computer/modular/preset/medical{
-	icon_state = "console";
-	dir = 8
+	dir = 8;
+	icon_state = "console"
 	},
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -11462,8 +11421,8 @@
 	dir = 8
 	},
 /obj/machinery/computer/modular/preset/security{
-	icon_state = "console";
-	dir = 8
+	dir = 8;
+	icon_state = "console"
 	},
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -11476,8 +11435,8 @@
 	},
 /obj/structure/window/reinforced/crescent,
 /obj/machinery/computer/modular/preset/cardslot/command{
-	icon_state = "console";
-	dir = 1
+	dir = 1;
+	icon_state = "console"
 	},
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -11485,8 +11444,8 @@
 /area/centcom/holding)
 "bBb" = (
 /obj/machinery/computer/modular/preset/library{
-	icon_state = "console";
-	dir = 8
+	dir = 8;
+	icon_state = "console"
 	},
 /turf/simulated/floor/shuttle/red,
 /area/shuttle/administration/centcom)
@@ -11565,16 +11524,16 @@
 /area/merchant_station)
 "bRY" = (
 /obj/effect/floor_decal/beach/corner{
-	icon_state = "beachbordercorner";
-	dir = 8
+	dir = 8;
+	icon_state = "beachbordercorner"
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
 "cay" = (
 /obj/structure/bed/chair/wood{
-	icon_state = "wooden_chair_preview";
 	dir = 8;
-	holographic = 1
+	holographic = 1;
+	icon_state = "wooden_chair_preview"
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
@@ -11589,8 +11548,8 @@
 "cqu" = (
 /obj/structure/holostool,
 /obj/effect/floor_decal/beach{
-	icon_state = "beachborder";
-	dir = 4
+	dir = 4;
+	icon_state = "beachborder"
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
@@ -11612,16 +11571,16 @@
 /area/syndicate_elite_squad)
 "cMe" = (
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 1
+	dir = 1;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
 "cMP" = (
 /obj/structure/flora/ausbushes/genericbush,
 /obj/effect/floor_decal/spline/plain/grey{
-	icon_state = "spline_plain";
-	dir = 9
+	dir = 9;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_cafe)
@@ -11651,15 +11610,15 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 9
+	dir = 9;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_plaza)
 "dBi" = (
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 9
+	dir = 9;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
@@ -11676,15 +11635,15 @@
 /area/holodeck/source_volleyball)
 "dMH" = (
 /obj/effect/floor_decal/spline/plain{
-	icon_state = "spline_plain";
-	dir = 10
+	dir = 10;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
 "dNG" = (
 /obj/effect/floor_decal/stoneborder{
-	icon_state = "stoneborder";
-	dir = 1
+	dir = 1;
+	icon_state = "stoneborder"
 	},
 /turf/simulated/floor/holofloor/beach/water,
 /area/holodeck/source_temple)
@@ -11697,12 +11656,12 @@
 /area/holodeck/source_cafe)
 "dZC" = (
 /obj/effect/floor_decal/spline/plain{
-	icon_state = "spline_plain";
-	dir = 4
+	dir = 4;
+	icon_state = "spline_plain"
 	},
 /obj/structure/holonet/end{
-	icon_state = "volleynet_end";
-	dir = 8
+	dir = 8;
+	icon_state = "volleynet_end"
 	},
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
@@ -11730,6 +11689,31 @@
 	},
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
+"eFw" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/largecrate,
+/obj/random/loot,
+/obj/effect/decal/cleanable/cobweb2,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "eRk" = (
 /obj/structure/table/rack/holorack,
 /turf/simulated/floor/holofloor/wood{
@@ -11739,8 +11723,8 @@
 "fcv" = (
 /obj/structure/holostool,
 /obj/effect/floor_decal/beach{
-	icon_state = "beachborder";
-	dir = 8
+	dir = 8;
+	icon_state = "beachborder"
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
@@ -11757,11 +11741,25 @@
 	icon_state = "wooden_chair_preview"
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 9
+	dir = 9;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"fAS" = (
+/obj/structure/closet/crate,
+/obj/effect/decal/cleanable/dirt,
+/obj/random/illegal,
+/obj/random/illegal,
+/obj/random/maintenance/clean,
+/obj/random/maintenance/clean,
+/obj/random/maintenance/clean,
+/obj/random/maintenance/clean,
+/obj/random/maintenance/clean,
+/obj/random/junk,
+/obj/random/junk,
+/turf/simulated/floor/tiled,
+/area/merchant_station)
 "fJf" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -11835,8 +11833,8 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 10
+	dir = 10;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_plaza)
@@ -11848,8 +11846,8 @@
 /area/holodeck/source_temple)
 "jed" = (
 /obj/effect/floor_decal/beach{
-	icon_state = "beachborder";
-	dir = 1
+	dir = 1;
+	icon_state = "beachborder"
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
@@ -11862,8 +11860,8 @@
 "jhl" = (
 /obj/structure/table/holo_woodentable,
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 1
+	dir = 1;
+	icon_state = "spline_fancy"
 	},
 /obj/item/weapon/flame/candle{
 	holographic = 1
@@ -11904,16 +11902,16 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 5
+	dir = 5;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_plaza)
 "jHQ" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/effect/floor_decal/spline/plain/grey{
-	icon_state = "spline_plain";
-	dir = 8
+	dir = 8;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_cafe)
@@ -11934,8 +11932,8 @@
 /area/holodeck/source_volleyball)
 "kfk" = (
 /obj/effect/floor_decal/spline/plain{
-	icon_state = "spline_plain";
-	dir = 5
+	dir = 5;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/holofloor/beach/sand{
 	icon_state = "desert4"
@@ -11947,15 +11945,29 @@
 	holographic = 1
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 10
+	dir = 10;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"kxl" = (
+/obj/structure/closet/crate,
+/obj/random/illegal,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/turf/simulated/floor/plating,
+/area/merchant_station)
 "kBT" = (
 /obj/effect/floor_decal/spline/plain{
-	icon_state = "spline_plain";
-	dir = 4
+	dir = 4;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
@@ -12002,8 +12014,8 @@
 	holographic = 1
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 1
+	dir = 1;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
@@ -12037,8 +12049,8 @@
 /area/holodeck/source_plaza)
 "mrn" = (
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 10
+	dir = 10;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
@@ -12061,16 +12073,16 @@
 	holographic = 1
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 9
+	dir = 9;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
 "mTy" = (
 /obj/structure/flora/ausbushes/genericbush,
 /obj/effect/floor_decal/spline/plain/grey{
-	icon_state = "spline_plain";
-	dir = 10
+	dir = 10;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_cafe)
@@ -12084,6 +12096,23 @@
 	icon_state = "lino"
 	},
 /area/tdome/tdomeadmin)
+"nag" = (
+/obj/structure/closet/crate,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/junk,
+/obj/random/medical,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "niJ" = (
 /obj/structure/bed/chair/wood{
 	dir = 4
@@ -12102,9 +12131,9 @@
 /area/holodeck/source_cafe)
 "nJl" = (
 /obj/structure/bed/chair/wood{
-	icon_state = "wooden_chair_preview";
 	dir = 8;
-	holographic = 1
+	holographic = 1;
+	icon_state = "wooden_chair_preview"
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
@@ -12125,15 +12154,15 @@
 /area/syndicate_elite_squad)
 "occ" = (
 /obj/effect/floor_decal/spline/plain{
-	icon_state = "spline_plain";
-	dir = 6
+	dir = 6;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
 "olJ" = (
 /obj/effect/floor_decal/beach{
-	icon_state = "beachborder";
-	dir = 4
+	dir = 4;
+	icon_state = "beachborder"
 	},
 /obj/structure/holostool,
 /turf/simulated/floor/holofloor/concrete,
@@ -12148,10 +12177,26 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"oCu" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/closet/crate,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "oFc" = (
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 1
+	dir = 1;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/lino,
 /area/holodeck/source_meetinghall)
@@ -12211,8 +12256,8 @@
 /area/holodeck/source_temple)
 "qoH" = (
 /obj/effect/floor_decal/spline/plain{
-	icon_state = "spline_plain";
-	dir = 8
+	dir = 8;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
@@ -12229,8 +12274,8 @@
 /area/holodeck/source_temple)
 "qMl" = (
 /obj/effect/floor_decal/stoneborder/corner{
-	icon_state = "stoneborder_c";
-	dir = 8
+	dir = 8;
+	icon_state = "stoneborder_c"
 	},
 /turf/simulated/floor/holofloor/beach/water,
 /area/holodeck/source_temple)
@@ -12262,8 +12307,8 @@
 /area/holodeck/source_cafe)
 "rms" = (
 /obj/effect/floor_decal/spline/plain{
-	icon_state = "spline_plain";
-	dir = 9
+	dir = 9;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/holofloor/beach/sand{
 	icon_state = "desert2"
@@ -12293,10 +12338,19 @@
 	icon_state = "desert2"
 	},
 /area/holodeck/source_temple)
+"rMI" = (
+/obj/structure/table/rack,
+/obj/random/contraband,
+/obj/random/loot,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/effect/decal/cleanable/dirt,
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "skD" = (
 /obj/effect/floor_decal/beach{
-	icon_state = "beachborder";
-	dir = 8
+	dir = 8;
+	icon_state = "beachborder"
 	},
 /obj/structure/holostool,
 /turf/simulated/floor/holofloor/concrete,
@@ -12318,8 +12372,8 @@
 /area/holodeck/source_temple)
 "sWJ" = (
 /obj/effect/floor_decal/beach{
-	icon_state = "beachborder";
-	dir = 8
+	dir = 8;
+	icon_state = "beachborder"
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
@@ -12335,44 +12389,44 @@
 "thM" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/effect/floor_decal/spline/plain/grey{
-	icon_state = "spline_plain";
-	dir = 8
+	dir = 8;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_cafe)
 "tsJ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 5
+	dir = 5;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
 "twU" = (
 /obj/effect/floor_decal/beach{
-	icon_state = "beachborder";
-	dir = 4
+	dir = 4;
+	icon_state = "beachborder"
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
 "tDw" = (
 /obj/effect/floor_decal/stoneborder{
-	icon_state = "stoneborder";
-	dir = 4
+	dir = 4;
+	icon_state = "stoneborder"
 	},
 /turf/simulated/floor/holofloor/beach/water,
 /area/holodeck/source_temple)
 "tGT" = (
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 1
+	dir = 1;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/holodeck/source_meetinghall)
 "tQu" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/floor_decal/spline/plain/grey{
-	icon_state = "spline_plain";
-	dir = 8
+	dir = 8;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_cafe)
@@ -12411,15 +12465,15 @@
 /area/shuttle/specops/centcom)
 "uIr" = (
 /obj/effect/floor_decal/stoneborder/corner{
-	icon_state = "stoneborder_c";
-	dir = 4
+	dir = 4;
+	icon_state = "stoneborder_c"
 	},
 /turf/simulated/floor/holofloor/tiled/stone,
 /area/holodeck/source_temple)
 "uJE" = (
 /obj/effect/floor_decal/stoneborder{
-	icon_state = "stoneborder";
-	dir = 8
+	dir = 8;
+	icon_state = "stoneborder"
 	},
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_temple)
@@ -12437,8 +12491,8 @@
 /area/holodeck/source_temple)
 "vOe" = (
 /obj/effect/floor_decal/stoneborder/corner{
-	icon_state = "stoneborder_c";
-	dir = 1
+	dir = 1;
+	icon_state = "stoneborder_c"
 	},
 /turf/simulated/floor/holofloor/tiled/stone,
 /area/holodeck/source_temple)
@@ -12453,8 +12507,8 @@
 /area/holodeck/source_plaza)
 "wjw" = (
 /obj/effect/floor_decal/stoneborder{
-	icon_state = "stoneborder";
-	dir = 8
+	dir = 8;
+	icon_state = "stoneborder"
 	},
 /turf/simulated/floor/holofloor/beach/sand{
 	icon_state = "desert2"
@@ -12479,20 +12533,41 @@
 "wDD" = (
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_temple)
+"wUP" = (
+/obj/structure/closet/crate,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "xqW" = (
 /obj/structure/bed/chair/wood{
 	holographic = 1
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	icon_state = "spline_fancy";
-	dir = 5
+	dir = 5;
+	icon_state = "spline_fancy"
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"xyT" = (
+/obj/machinery/light/small,
+/obj/structure/closet/toolcloset,
+/turf/simulated/floor/tiled,
+/area/merchant_station)
 "xHn" = (
 /obj/effect/floor_decal/spline/plain{
-	icon_state = "spline_plain";
-	dir = 8
+	dir = 8;
+	icon_state = "spline_plain"
 	},
 /obj/structure/holonet/end,
 /turf/simulated/floor/holofloor/beach/sand,
@@ -12506,8 +12581,8 @@
 /area/holodeck/source_cafe)
 "xTh" = (
 /obj/effect/floor_decal/spline/plain{
-	icon_state = "spline_plain";
-	dir = 4
+	dir = 4;
+	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/holofloor/beach/sand{
 	icon_state = "desert2"
@@ -20607,7 +20682,7 @@ abz
 acb
 acQ
 adi
-adL
+acF
 adM
 aab
 aeD
@@ -21258,7 +21333,7 @@ czt
 aVH
 aWh
 aWF
-aWX
+xyT
 aMf
 aMf
 aLW
@@ -24285,8 +24360,8 @@ aRY
 aUD
 aUW
 aVt
-aVP
-aWm
+fAS
+agn
 aMf
 aLW
 aLW
@@ -24471,7 +24546,7 @@ aMg
 aLW
 aNC
 aOe
-aOL
+rMI
 aPq
 aQo
 aNC
@@ -24672,8 +24747,8 @@ aLW
 aLW
 aLW
 aNC
-aOf
-aOf
+nag
+wUP
 aPq
 aQp
 aNC
@@ -24892,7 +24967,7 @@ aPc
 aUY
 aVv
 aVR
-aWo
+kxl
 aMf
 aLW
 aLW
@@ -25076,9 +25151,9 @@ aLW
 aLW
 aLW
 aNC
-aOh
-aON
-aON
+eFw
+oCu
+oCu
 aNC
 aNC
 aPc
