@@ -24,6 +24,7 @@
 
 /datum/grab/normal/kill/process_effect(var/obj/item/grab/G)
 	var/mob/living/carbon/human/affecting = G.affecting
+	var/mob/living/carbon/human/assailant = G.assailant
 
 	affecting.drop_l_hand()
 	affecting.drop_r_hand()
@@ -31,8 +32,18 @@
 	if(affecting.lying)
 		affecting.Weaken(4)
 
-	affecting.adjustOxyLoss(1)
+	affecting.adjustOxyLoss(3)
 
 	affecting.apply_effect(STUTTER, 5) //It will hamper your voice, being choked and all.
 	affecting.Weaken(5)	//Should keep you down unless you get help.
 	affecting.losebreath = max(affecting.losebreath + 2, 3)
+
+	if((!affecting.isSynthetic() && affecting.need_breathe() && affecting.stat == CONSCIOUS) && !G.in_progress)
+		G.in_progress = 1
+		if(do_after(assailant, 100, affecting))
+			affecting.visible_message(
+				"<span class='warning'>\ [assailant] chokes out [affecting]!</span>",
+				"<span class='notice'>\ You slip into darkness...</span>", range = 2
+				)
+			affecting.Paralyse(20)
+		G.in_progress = 0
