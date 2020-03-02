@@ -136,6 +136,8 @@
 			to_chat(user, "<span class='warning'>You waste some [name] and fail to build \the [recipe.display_name()]!</span>")
 			return
 		var/atom/O = recipe.spawn_result(user, user.loc, produced)
+		if(!O || QDELETED(O))
+			return // It was added to a stack or otherwise deleted.
 		O.add_fingerprint(user)
 
 		user.put_in_hands(O)
@@ -284,6 +286,7 @@
 
 /obj/item/stack/proc/add_to_stacks(mob/user, check_hands)
 	var/list/stacks = list()
+	var/list/useditems
 	if(check_hands)
 		if(isstack(user.l_hand))
 			stacks += user.l_hand
@@ -297,8 +300,11 @@
 		var/transfer = src.transfer_to(item)
 		if (transfer)
 			to_chat(user, "<span class='notice'>You add a new [item.singular_name] to the stack. It now contains [item.amount] [item.singular_name]\s.</span>")
+			LAZYADD(useditems, item)
 		if(!amount)
 			break
+	if(LAZYLEN(useditems))
+		return TRUE
 
 /obj/item/stack/get_storage_cost()	//Scales storage cost to stack size
 	. = ..()
