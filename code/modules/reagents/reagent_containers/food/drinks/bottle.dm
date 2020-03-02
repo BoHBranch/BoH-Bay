@@ -173,7 +173,7 @@
 	desc = "A premium single-malt whiskey, gently matured inside the tunnels of a nuclear shelter. TUNNEL WHISKEY RULES."
 	icon_state = "whiskeybottle"
 	center_of_mass = "x=16;y=3"
-	reagents_to_add = list(/datum/reagent/ethanol/ale = 100)
+	reagents_to_add = list(/datum/reagent/ethanol/whiskey = 100)
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/specialwhiskey
 	name = "Special Blend Whiskey"

@@ -134,7 +134,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/spacylibertyduff
 
 /datum/recipe/amanitajelly
-	appliance = OVEN
+	appliance = OVEN | PAN
 	reagents = list(/datum/reagent/water = 5, /datum/reagent/ethanol/vodka = 5, /datum/reagent/toxin/amatoxin = 5)
 	result = /obj/item/weapon/reagent_containers/food/snacks/amanitajelly
 	make_food(var/obj/container as obj)
@@ -618,3 +618,35 @@
 	reagents = list(/datum/reagent/sodiumchloride = 1, /datum/reagent/blackpepper = 1)
 	items = list(/obj/item/weapon/reagent_containers/food/snacks/meat)
 	result = /obj/item/weapon/reagent_containers/food/snacks/meatsteak
+
+/datum/recipe/toastedsandwich
+	appliance = PAN
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/sandwich
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/toastedsandwich
+
+/datum/recipe/grilledcheese
+	appliance = PAN
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
+		/obj/item/weapon/reagent_containers/food/snacks/cheesewedge
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/grilledcheese
+
+/datum/recipe/slimetoast
+	appliance = PAN
+	reagents = list(/datum/reagent/slimejelly = 5)
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/jelliedtoast/slime
+
+/datum/recipe/jelliedtoast
+	appliance = PAN
+	reagents = list(/datum/reagent/nutriment/cherryjelly = 5)
+	items = list(
+		/obj/item/weapon/reagent_containers/food/snacks/slice/bread
+	)
+	result = /obj/item/weapon/reagent_containers/food/snacks/jelliedtoast/cherry

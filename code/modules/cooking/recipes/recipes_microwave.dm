@@ -70,34 +70,6 @@
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sandwich
 
-/datum/recipe/toastedsandwich
-	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/sandwich
-	)
-	result = /obj/item/weapon/reagent_containers/food/snacks/toastedsandwich
-
-/datum/recipe/grilledcheese
-	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
-		/obj/item/weapon/reagent_containers/food/snacks/slice/bread,
-		/obj/item/weapon/reagent_containers/food/snacks/cheesewedge
-	)
-	result = /obj/item/weapon/reagent_containers/food/snacks/grilledcheese
-
-/datum/recipe/slimetoast
-	reagents = list(/datum/reagent/slimejelly = 5)
-	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/slice/bread
-	)
-	result = /obj/item/weapon/reagent_containers/food/snacks/jelliedtoast/slime
-
-/datum/recipe/jelliedtoast
-	reagents = list(/datum/reagent/nutriment/cherryjelly = 5)
-	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/slice/bread
-	)
-	result = /obj/item/weapon/reagent_containers/food/snacks/jelliedtoast/cherry
-
 /*/datum/recipe/spagetti We have the processor now
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/doughslice
