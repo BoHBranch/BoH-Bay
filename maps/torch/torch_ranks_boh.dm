@@ -94,9 +94,6 @@
 		/datum/species/unathi/yeosa	= list(SMC_TROOPERS_ONLY),
 		/datum/species/humanathi	= list(SMC_TROOPERS_ONLY),
 		/datum/species/tajaran		= list(SMC_TROOPERS_ONLY),
-		/datum/species/vulpkanin	= list(SMC_LIMITED_RANKS),
-		/datum/species/custom		= list(SMC_LIMITED_RANKS),
-		/datum/species/customhuman	= list(SMC_LIMITED_RANKS),
 	)
 
 /datum/mil_branch/fleet
