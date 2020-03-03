@@ -377,9 +377,11 @@
 		/datum/mil_rank/fleet/o1
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-	                    SKILL_PILOT       = SKILL_ADEPT)
+	                    SKILL_PILOT       = SKILL_ADEPT,
+						SKILL_SCIENCE     = SKILL_ADEPT)
 
-	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
+	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
+						SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 20
 
 
