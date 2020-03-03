@@ -3,7 +3,7 @@
 	desc = "A cryptic language used by interstellar bureaucrats and lawyers."
 	speech_verb = "states"
 	exclaim_verb = "objects"
-	ask_verb = "inquiries"
+	ask_verb = "inquires"
 	space_chance = 100
 	key = "u"
 	partial_understanding = list(
@@ -16,4 +16,5 @@
 		"exonerated", "effecuate", "accord", "caveat", "stipulation", "pledgee", "covenant", "rights",
 		"lawful", "suit of law", "sequestrator", "et al", "et", "ex", "quid", "bono",	"quo", "pro", "ad"
 	)
+	shorthand = "LG"
 	

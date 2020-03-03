@@ -181,6 +181,12 @@
 
 /obj/item/clothing/under/solgov/utility/fleet/combat/exploration
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/exploration/fleet)
+	
+/obj/item/clothing/under/solgov/utility/fleet/combat/marine
+	name = "navy fatigues"
+	desc = "Alternative Marine utility uniform, made for ship use."
+	icon_state = "navycombat"
+	worn_state = "navycombat"
 
 /obj/item/clothing/under/solgov/utility/fleet/officer
 	name = "fleet officer's coveralls"
