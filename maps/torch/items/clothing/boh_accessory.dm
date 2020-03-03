@@ -10,9 +10,14 @@
 	check_codex_val = FACTION_MARINES
 
 /obj/item/clothing/accessory/solgov/smc_patch/xeno
-	name = "\improper Xenoic Division of Marine Corps patch"
+	name = "\improper Marine Corps Xenoic Division patch"
 	desc = "A robust shoulder patch, carrying the symbol-mascot of Xenoic division, yellow-eyed devil dog."
 	icon_state = "smcpatch13"
+
+/obj/item/clothing/accessory/solgov/smc_patch/sfl
+	name = "\improper Marine Corps Foreign Legion patch"
+	desc = "A robust shoulder patch, carrying the symbol-mascot of Xenoic division, a yellow-eyed devil dog."
+	icon_state = "sflpatch"
 
 // Sixth Fleet Patch, as for bonus
 /obj/item/clothing/accessory/solgov/fleet_patch/sixth
