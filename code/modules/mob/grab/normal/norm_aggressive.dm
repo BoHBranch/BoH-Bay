@@ -28,9 +28,9 @@
 		affecting.drop_l_hand()
 		affecting.drop_r_hand()
 
-	// Keeps those who are on the ground down
-	if(affecting.lying)
-		affecting.Weaken(4)
+	// Keeps those who are on the ground down - mostly
+	if(affecting.lying && prob(50))
+		affecting.Weaken(2)
 
 /datum/grab/normal/aggressive/can_upgrade(var/obj/item/grab/G)
 	if(!(G.target_zone in list(BP_CHEST, BP_HEAD)))

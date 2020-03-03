@@ -2,6 +2,7 @@
 	name = "Ascent - Gyne"
 	mask =     /obj/item/clothing/mask/gas/ascent
 	uniform =  /obj/item/clothing/under/ascent
+	belt =     /obj/item/clothing/suit/storage/ascent
 	id_type =  /obj/item/weapon/card/id/ascent
 	shoes =    /obj/item/clothing/shoes/magboots/ascent
 	l_ear =    null
@@ -12,10 +13,6 @@
 /decl/hierarchy/outfit/job/ascent/attendant
 	name = "Ascent - Attendant"
 	back = /obj/item/weapon/rig/mantid
-
-/decl/hierarchy/outfit/job/ascent/tech
-	name = "Ascent - Technician"
-	suit = /obj/item/clothing/suit/storage/ascent
 
 //monarchs
 /decl/hierarchy/outfit/job/monarch
