@@ -210,6 +210,11 @@
 	icon_state = "ME9A"
 	name = "ranks (E-9 sergeant major)"
 	desc = "Insignia denoting the rank of Sergeant Major."
+	
+/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt2
+	icon_state = "ME9B"
+	name = "ranks (E-9 sergeant major of the marine Corps)"
+	desc = "Insignia denoting the rank of Sergeant Major of the Marine Corps."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer
 	icon_state = "MO1A"

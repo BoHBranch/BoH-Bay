@@ -144,7 +144,7 @@
 		var/dtype = O.damtype
 		var/throw_damage = O.throwforce*(TT.speed/THROWFORCE_SPEED_DIVISOR)
 
-		var/miss_chance = max(15*(TT.dist_travelled-2),0)
+		var/miss_chance = max(10*(TT.dist_travelled-2),0)
 
 		if (prob(miss_chance))
 			visible_message("<span class='notice'>\The [O] misses [src] narrowly!</span>")
