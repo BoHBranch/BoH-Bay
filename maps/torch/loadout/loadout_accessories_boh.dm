@@ -20,13 +20,19 @@
 	path = /obj/item/clothing/accessory/solgov/smc_patch
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	cost = 0
-	whitelisted = list(SPECIES_HUMAN, SPECIES_IPC)
+	whitelisted = list(SPECIES_HUMAN, SPECIES_CUSTOM, SPECIES_HUMAN2, SPECIES_VULP)
 
-/datum/gear/accessory/smc_patch_xenos
-	display_name = "Marine Corps patch (xenoic division)"
-	path = /obj/item/clothing/accessory/solgov/smc_patch/xeno
+/datum/gear/accessory/sfl_patch
+	display_name = "Marine Corps Foreign Legion patch"
+	path = /obj/item/clothing/accessory/solgov/smc_patch/sfl
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/marine_corps)
+
+///datum/gear/accessory/smc_patch_xenos
+//	display_name = "Marine Corps patch (xenoic division)"
+//	path = /obj/item/clothing/accessory/solgov/smc_patch/xeno
+//	cost = 0
+//	allowed_branches = list(/datum/mil_branch/marine_corps)
 
 /datum/gear/tactical/civ_tag
 	display_name = "Civilian tag"
