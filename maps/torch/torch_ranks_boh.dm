@@ -17,7 +17,9 @@
 	/datum/mil_rank/marine_corps/e9_alt,\
 	/datum/mil_rank/marine_corps/o1,\
 	/datum/mil_rank/marine_corps/o2,\
-	/datum/mil_rank/marine_corps/o3_alt2\
+	/datum/mil_rank/marine_corps/o3,\
+	/datum/mil_rank/marine_corps/o3_alt,\
+	/datum/mil_rank/marine_corps/o3_alt2,\
 	)
 
 /datum/map/torch
@@ -58,32 +60,39 @@
 	)
 
 	species_to_branch_whitelist = list(
-		/datum/species/diona		= list(UNRESTRICTED),
-		/datum/species/nabber		= list(/datum/mil_branch/civilian),
-		/datum/species/skrell		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/skrell_fleet),
-		/datum/species/unathi		= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/adherent		= list(UNRESTRICTED),
-		/datum/species/sergal		= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/akula		= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/custom		= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/humanathi	= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/tajaran		= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/vasilissan	= list(UNRESTRICTED),
-		/datum/species/vulpkanin	= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/customhuman	= list(UNRESTRICTED, SEMIRESTRICTED),
-		//datum/species/tesh/		= list(UNRESTRICTED),
-		/datum/species/vox			= list(/datum/mil_branch/alien),
-		/datum/species/vox/pariah	= list(/datum/mil_branch/civilian),
-		/datum/species/vox/armalis	= list(/datum/mil_branch/alien)
+		/datum/species/diona					= list(UNRESTRICTED),
+		/datum/species/nabber					= list(/datum/mil_branch/civilian),
+		/datum/species/skrell					= list(UNRESTRICTED, /datum/mil_branch/skrell_fleet),
+		/datum/species/unathi					= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/unathi/yeosa				= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/adherent					= list(UNRESTRICTED),
+		/datum/species/sergal					= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/sergal/northern			= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/sergal/eastern			= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/akula					= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/custom					= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/humanathi				= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/tajaran					= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/vasilissan				= list(UNRESTRICTED, /datum/mil_branch/private_security),
+		/datum/species/vulpkanin				= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/customhuman				= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/shapeshifter/promethean	= list(/datum/mil_branch/civilian),
+		//datum/species/tesh/					= list(UNRESTRICTED),
+		/datum/species/vox						= list(/datum/mil_branch/alien),
+		/datum/species/vox/pariah				= list(/datum/mil_branch/civilian),
+		/datum/species/vox/armalis				= list(/datum/mil_branch/alien)
 	)
 
 	species_to_rank_whitelist = list(
-		/datum/species/skrell		= list(SMC_LIMITED_RANKS),
-		/datum/species/unathi		= list(SMC_LIMITED_RANKS),
-		/datum/species/sergal		= list(SMC_LIMITED_RANKS),
-		/datum/species/akula		= list(SMC_LIMITED_RANKS),
-		/datum/species/humanathi	= list(SMC_LIMITED_RANKS),
-		/datum/species/tajaran		= list(SMC_LIMITED_RANKS)
+		/datum/species/skrell			= list(SMC_LIMITED_RANKS),
+		/datum/species/unathi			= list(SMC_LIMITED_RANKS),
+		/datum/species/unathi/yeosa		= list(SMC_LIMITED_RANKS),
+		/datum/species/sergal			= list(SMC_LIMITED_RANKS),
+		/datum/species/sergal/northern	= list(SMC_LIMITED_RANKS),
+		/datum/species/sergal/eastern	= list(SMC_LIMITED_RANKS),
+		/datum/species/akula			= list(SMC_LIMITED_RANKS),
+		/datum/species/humanathi		= list(SMC_LIMITED_RANKS),
+		/datum/species/tajaran			= list(SMC_LIMITED_RANKS)
 	)
 
 /datum/mil_branch/fleet
@@ -481,7 +490,6 @@
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o3)
 	sort_order = 13
 
-// Specially, to avoid two "Capt" on-board.
 /datum/mil_rank/marine_corps/o3_alt
 	name = "Marine Captain"
 	name_short = "M-CPT"
