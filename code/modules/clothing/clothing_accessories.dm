@@ -116,15 +116,15 @@
 	var/list/removables = list()
 	for(var/obj/item/clothing/accessory/ass in accessories)
 		if(ass.removable)
-			removables |= ass
+			removables[ass] = ass
 	if(accessories.len > 1)
-		A = input("Select an accessory to remove from [src]") as null|anything in removables
+		A = show_radial_menu(usr, src, removables)
 	else
-		A = accessories[1]
-	src.remove_accessory(usr,A)
+		A = accessories[accessories[1]]
+	remove_accessory(usr,A)
 	removables -= A
 	if(!removables.len)
-		src.verbs -= /obj/item/clothing/proc/removetie_verb
+		verbs -= /obj/item/clothing/proc/removetie_verb
 
 /obj/item/clothing/emp_act(severity)
 	if(accessories.len)

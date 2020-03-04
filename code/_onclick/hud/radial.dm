@@ -18,15 +18,19 @@ GLOBAL_LIST_EMPTY(radial_menus)
 	icon_state = "radial_slice"
 	var/choice
 	var/next_page = FALSE
-	var/tooltips = FALSE
+	var/tooltips = TRUE
 
 /obj/screen/radial/slice/MouseEntered(location, control, params)
 	. = ..()
 	icon_state = "radial_slice_focus"
+	if(tooltips)
+		openToolTip(usr, src, params, title = name)
 
 /obj/screen/radial/slice/MouseExited(location, control, params)
 	. = ..()
 	icon_state = "radial_slice"
+	if(tooltips)
+		closeToolTip(usr)
 
 /obj/screen/radial/slice/Click(location, control, params)
 	if(usr.client == parent.current_user)
@@ -288,7 +292,7 @@ GLOBAL_LIST_EMPTY(radial_menus)
 	Choices should be a list where list keys are movables or text used for element names and return value
 	and list values are movables/icons/images used for element icons
 */
-/proc/show_radial_menu(mob/user, atom/anchor, list/choices, uniqueid, radius, datum/callback/custom_check, require_near = FALSE, tooltips = FALSE)
+/proc/show_radial_menu(mob/user, atom/anchor, list/choices, uniqueid, radius, datum/callback/custom_check, require_near = FALSE, tooltips = TRUE)
 	if(!user || !anchor || !length(choices))
 		return
 	if(!uniqueid)
@@ -312,3 +316,5 @@ GLOBAL_LIST_EMPTY(radial_menus)
 	QDEL_NULL(menu)
 	GLOB.radial_menus -= uniqueid
 	return answer
+
+#define RADIAL_INPUT(user, choices) show_radial_menu(user, user, choices)

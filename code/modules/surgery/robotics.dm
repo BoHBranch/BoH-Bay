@@ -422,11 +422,11 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	for(var/organ in target.internal_organs_by_name)
 		var/obj/item/organ/I = target.internal_organs_by_name[organ]
 		if(I && !(I.status & ORGAN_CUT_AWAY) && !BP_IS_CRYSTAL(I) && I.parent_organ == target_zone)
-			LAZYADD(attached_organs, organ)
+			attached_organs[organ] = I
 	if(!LAZYLEN(attached_organs))
 		to_chat(user, SPAN_WARNING("There are no appropriate internal components to decouple."))
 		return FALSE
-	var/organ_to_remove = input(user, "Which organ do you want to prepare for removal?") as null|anything in attached_organs
+	var/organ_to_remove = show_radial_menu(user, target, attached_organs)
 	if(organ_to_remove)
 		return organ_to_remove
 
@@ -460,18 +460,18 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	surgery_candidate_flags = SURGERY_NO_CRYSTAL | SURGERY_NO_FLESH | SURGERY_NO_STUMP | SURGERY_NEEDS_ENCASEMENT
 
 /decl/surgery_step/robotics/attach_organ_robotic/pre_surgery_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
-	var/list/removable_organs = list()
+	var/list/attachable_organs = list()
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
 	for(var/obj/item/organ/I in affected.implants)
 		if ((I.status & ORGAN_CUT_AWAY) && BP_IS_ROBOTIC(I) && !BP_IS_CRYSTAL(I) && (I.parent_organ == target_zone))
-			removable_organs |= I.organ_tag
-	var/organ_to_replace = input(user, "Which organ do you want to reattach?") as null|anything in removable_organs
+			attachable_organs[I.organ_tag] = I
+	var/organ_to_replace = show_radial_menu(user, target, attachable_organs)
 	if(!organ_to_replace)
 		return FALSE
 	var/obj/item/organ/internal/augment/A = organ_to_replace
 	if(istype(A))
 		if(!(A.augment_flags & AUGMENTATION_MECHANIC))
-			to_chat(user, SPAN_WARNING("\the [A] cannot function within a robotic limb"))
+			to_chat(user, SPAN_WARNING("\The [A] cannot function within a robotic limb!"))
 			return FALSE
 	return organ_to_replace
 

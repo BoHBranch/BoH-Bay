@@ -28,29 +28,27 @@
 	var/choice	
 	if(user.a_intent != I_HELP && ((SWISSKNF_LBLADE in tools) || (SWISSKNF_SBLADE in tools)) && active_tool == SWISSKNF_CLOSED)
 		open = TRUE
-		if(SWISSKNF_LBLADE in tools)
-			choice = SWISSKNF_LBLADE
-		else
-			choice = SWISSKNF_SBLADE
+		choice = (SWISSKNF_LBLADE in tools) ? SWISSKNF_LBLADE : SWISSKNF_SBLADE
 	else
 		if(active_tool == SWISSKNF_CLOSED)
-			choice = input("Select a tool to open.","Knife") as null|anything in tools|SWISSKNF_CLOSED
+			var/list/options = list()
+			for(var/t in tools)
+				options[t] = t
+			choice = RADIAL_INPUT(user, options) || SWISSKNF_CLOSED
 		else
 			choice = SWISSKNF_CLOSED
 			open = FALSE
 	
-	if(!choice || !CanPhysicallyInteract(user))
+	if(!choice || (choice == active_tool) || !CanPhysicallyInteract(user))
 		return
 	if(choice == SWISSKNF_CLOSED)
 		open = FALSE
 		user.visible_message("<span class='notice'>\The [user] closes the [name].</span>")
 	else
 		open = TRUE
+		user.visible_message("<span class='[(choice in sharp_tools) ? "warning" : "notice"]'>\The [user] opens the [lowertext(choice)].</span>")
 		if(choice == SWISSKNF_LBLADE || choice == SWISSKNF_SBLADE)
-			user.visible_message("<span class='warning'>\The [user] opens the [lowertext(choice)].</span>")
 			playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
-		else
-			user.visible_message("<span class='notice'>\The [user] opens the [lowertext(choice)].</span>")
 			
 	active_tool = choice
 	update_force()

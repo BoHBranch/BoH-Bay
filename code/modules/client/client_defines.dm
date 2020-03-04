@@ -18,6 +18,8 @@
 	var/adminhelped = 0
 
 	var/staffwarn = null
+	
+	var/datum/tooltip/tooltips 	= null
 
 		///////////////
 		//SOUND STUFF//
