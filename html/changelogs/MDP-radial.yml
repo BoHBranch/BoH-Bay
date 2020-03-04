@@ -34,4 +34,6 @@ delete-after: True
 # Also, all entries are changed into a single [] after a master changelog generation. Just remove the brackets when you add new entries.
 # Please surround your changes in  double quotes ("), as certain characters otherwise screws up compiling. The quotes will not show up in the changelog.
 changes: 
-  - rscadd: "Ports Virgo's port of the radial menu from TG. Currently only used for polytools."
+  - rscadd: "Ports Virgo's port of the radial menu from TG."
+  - rscadd: "Ports tooltips, only used in radial menus."
+  - wip: "Many things use radial menus instead of selection menus. This will break A LOT OF THINGS."
