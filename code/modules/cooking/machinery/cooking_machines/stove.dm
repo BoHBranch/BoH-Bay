@@ -14,7 +14,7 @@
 	resistance = 30000 // Approx. 12 minutes.
 	idle_power_usage = 1 KILOWATTS
 	//uses ~30% power to stay warm
-	optimal_temp = T0C + 100 // can just barely boil water
+	optimal_temp = T0C + 99 // can't boil water!
 	optimal_power = 1.2
 
 	max_contents = 4
