@@ -1388,6 +1388,13 @@
 	result_amount = 5
 	mix_message = "The solution thickens into a creamy brown beverage."
 
+/datum/chemical_reaction/browniemix
+	name = "Brownie Mix"
+	id = "browniemix"
+	result = "browniemix"
+	required_reagents = list("flour" = 5, "coco" = 5, "sugar" = 5)
+	result_amount = 15
+
 /datum/chemical_reaction/coffee
 	name = "Coffee"
 	result = /datum/reagent/drink/coffee
