@@ -304,7 +304,7 @@ GLOBAL_LIST_EMPTY(skills)
 	ID = "science"
 	name = "Science"
 	desc = "Your experience and knowledge with scientific methods and processes. This also applies to sensors consoles and other scanning modules."
-	levels = list( "Unskilled"			= "You know what science is and probably have a vague idea of the scientific method from your high school science classes.",
+	levels = list( "Unskilled"			= "You know what science is and probably have a vague idea of the scientific method from your high school science classes.<br>- Increasing science skill allows more accurate readings of the sensor console.",
 						"Basic"				= "You keep up with scientific discoveries. You know a little about most fields of research. You've learned basic laboratory skills. You may read about science as a hobby; or you may be working in a field related to science and have learned about science that way. You could design a simple experiment.",
 						"Trained"			= "You are a scientist, perhaps a graduate student or post-graduate researcher. You can design an experiment, analyze your results, publish your data, and integrate what you've learned with the research of other scientists. Your laboratory skills are reliable, and you know how to find information you need when you research a new scientific topic. You can dissect exotic xenofauna without many issues.",
 						"Experienced"		= "You are a junior researcher. You can formulate your own questions, use the tools at hand to test your hypotheses, and investigate entirely new phenomena. You likely have a track record of success in publishing your conclusions and attracting funding.",

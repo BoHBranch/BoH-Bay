@@ -209,6 +209,10 @@ var/list/gamemode_cache = list()
 
 	var/ghosts_can_possess_animals = 0
 	var/delist_when_no_admins = FALSE
+	
+	//API Rate limiting
+	var/api_rate_limit = 50
+	var/list/api_rate_limit_whitelist = list()
 
 	var/allow_map_switching = 0 // Whether map switching is allowed
 	var/auto_map_vote = 0 // Automatically call a map vote at end of round and switch to the selected map
@@ -241,6 +245,13 @@ var/list/gamemode_cache = list()
 	var/delist_population = 50 //What population do we automatically take ourselves off to hub at?
 	var/pb_population = 70 //What population do we automatically engage the panic bunker at?
 	var/announce_gamemode = FALSE //Do we annouce the game mode or not?
+	
+	// fail2topic settings
+	var/fail2topic_rate_limit = 5 SECONDS
+	var/fail2topic_max_fails = 5
+	var/fail2topic_rule_name = "_DD_Fail2topic"
+	var/fail2topic_enabled = FALSE
+
 
 /datum/configuration/New()
 	var/list/L = typesof(/datum/game_mode) - /datum/game_mode
@@ -721,7 +732,13 @@ var/list/gamemode_cache = list()
 
 				if("delist_when_no_admins")
 					config.delist_when_no_admins = TRUE
+				
+				if("api_rate_limit")
+					config.api_rate_limit = text2num(value)
 
+				if("api_rate_limit_whitelist")
+					config.api_rate_limit_whitelist = splittext(value, ";")
+				
 				if("map_switching")
 					config.allow_map_switching = 1
 
@@ -783,6 +800,15 @@ var/list/gamemode_cache = list()
 				
 				if("rounds_until_hard_restart")
 					config.rounds_until_hard_restart = text2num(value)
+				
+				if ("fail2topic_rate_limit")
+					fail2topic_rate_limit = text2num(value) SECONDS
+				if ("fail2topic_max_fails")
+					fail2topic_max_fails = text2num(value)
+				if ("fail2topic_rule_name")
+					fail2topic_rule_name = value
+				if ("fail2topic_enabled")
+					fail2topic_enabled = text2num(value)
 
 				else
 					log_misc("Unknown setting in configuration: '[name]'")
