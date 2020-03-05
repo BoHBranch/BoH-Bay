@@ -22,7 +22,8 @@
 				mechanics_text += "<li>[recipe.fruit[thing]] [thing]\s</li>"
 			mechanics_text += "</ul>"
 			var/atom/recipe_product = recipe.result
-			mechanics_text += "<br>This recipe takes [ceil(recipe.time/10)] second\s to cook in a [recipe.get_appliance_names()] and creates \a [initial(recipe_product.name)]."
+			var/plural = recipe.result_quantity > 1
+			mechanics_text += "<br>This recipe takes [ceil(recipe.time/10)] second\s to cook in a [recipe.get_appliance_names()] and creates [plural ? recipe.result_quantity : "\a"] [initial(recipe_product.name)][plural ? "s" : ""]."
 			var/lore_text = recipe.lore_text
 			if(!lore_text)
 				lore_text = initial(recipe_product.desc)
