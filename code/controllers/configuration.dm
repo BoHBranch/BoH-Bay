@@ -241,6 +241,13 @@ var/list/gamemode_cache = list()
 	var/delist_population = 50 //What population do we automatically take ourselves off to hub at?
 	var/pb_population = 70 //What population do we automatically engage the panic bunker at?
 	var/announce_gamemode = FALSE //Do we annouce the game mode or not?
+	
+	// fail2topic settings
+	var/fail2topic_rate_limit = 5 SECONDS
+	var/fail2topic_max_fails = 5
+	var/fail2topic_rule_name = "_DD_Fail2topic"
+	var/fail2topic_enabled = FALSE
+
 
 /datum/configuration/New()
 	var/list/L = typesof(/datum/game_mode) - /datum/game_mode
@@ -783,6 +790,15 @@ var/list/gamemode_cache = list()
 				
 				if("rounds_until_hard_restart")
 					config.rounds_until_hard_restart = text2num(value)
+				
+				if ("fail2topic_rate_limit")
+					fail2topic_rate_limit = text2num(value) SECONDS
+				if ("fail2topic_max_fails")
+					fail2topic_max_fails = text2num(value)
+				if ("fail2topic_rule_name")
+					fail2topic_rule_name = value
+				if ("fail2topic_enabled")
+					fail2topic_enabled = text2num(value)
 
 				else
 					log_misc("Unknown setting in configuration: '[name]'")

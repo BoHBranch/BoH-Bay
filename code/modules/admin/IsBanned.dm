@@ -1,8 +1,11 @@
 //Blocks an attempt to connect before even creating our client datum thing.
 world/IsBanned(key,address,computer_id)
+	var/global/key_cache[]
 	if(ckey(key) in admin_datums)
 		return ..()
-
+	if((key in key_cache))
+		return list("reason"="concurrent connection attempts", "desc"="You are attempting to connect too fast. Try again.")
+	key_cache[key] = 1
 	//Guest Checking
 	if(!config.guests_allowed && IsGuestKey(key))
 		log_access("Failed Login: [key] - Guests not allowed")
@@ -16,6 +19,7 @@ world/IsBanned(key,address,computer_id)
 		if(.)
 			log_access("Failed Login: [key] [computer_id] [address] - Banned [.["reason"]]")
 			message_admins("<span class='notice'>Failed Login: [key] id:[computer_id] ip:[address] - Banned [.["reason"]]</span>")
+			key_cache[key] = 0
 			return .
 
 		return ..()	//default pager ban stuff
@@ -27,6 +31,7 @@ world/IsBanned(key,address,computer_id)
 		if(!establish_db_connection())
 			error("Ban database connection failure. Key [ckeytext] not checked")
 			log_misc("Ban database connection failure. Key [ckeytext] not checked")
+			key_cache[key] = 0
 			return
 
 		var/failedcid = 1
@@ -62,11 +67,12 @@ world/IsBanned(key,address,computer_id)
 				expires = " The ban is for [duration] minutes and expires on [expiration] (server time)."
 
 			var/desc = "\nReason: You, or another user of this computer or connection ([pckey]) is banned from playing here. The ban reason is:\n[reason]\nThis ban was applied by [ackey] on [bantime], [expires]"
-
+			key_cache[key] = 0
 			return list("reason"="[bantype]", "desc"="[desc]")
 
 		if (failedcid)
 			message_admins("[key] has logged in with a blank computer id in the ban check.")
 		if (failedip)
 			message_admins("[key] has logged in with a blank ip in the ban check.")
+		key_cache[key] = 0
 		return ..()	//default pager ban stuff
