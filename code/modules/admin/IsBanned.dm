@@ -13,7 +13,7 @@
 	if(admin_datums[ckeytext])
 		key_cache[key] = 0
 		return ..()
-	key_cache[key] = 1
+	
 	//Guest Checking
 	if(!config.guests_allowed && IsGuestKey(key))
 		log_access("Failed Login: [key] - Guests not allowed")
