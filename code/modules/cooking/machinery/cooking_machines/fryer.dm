@@ -17,7 +17,7 @@
 	//Power used to maintain temperature once it's heated.
 	//Going with 25% of the active power. This is a somewhat arbitrary value
 
-	resistance = 60000	// Approx. 10 minutes.
+	resistance = 30000	// Approx. 10 minutes.
 
 	max_contents = 2
 	container_type = /obj/item/weapon/reagent_containers/cooking_container/fryer
