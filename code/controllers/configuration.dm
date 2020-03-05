@@ -209,6 +209,10 @@ var/list/gamemode_cache = list()
 
 	var/ghosts_can_possess_animals = 0
 	var/delist_when_no_admins = FALSE
+	
+	//API Rate limiting
+	var/api_rate_limit = 50
+	var/list/api_rate_limit_whitelist = list()
 
 	var/allow_map_switching = 0 // Whether map switching is allowed
 	var/auto_map_vote = 0 // Automatically call a map vote at end of round and switch to the selected map
@@ -728,7 +732,13 @@ var/list/gamemode_cache = list()
 
 				if("delist_when_no_admins")
 					config.delist_when_no_admins = TRUE
+				
+				if("api_rate_limit")
+					config.api_rate_limit = text2num(value)
 
+				if("api_rate_limit_whitelist")
+					config.api_rate_limit_whitelist = splittext(value, ";")
+				
 				if("map_switching")
 					config.allow_map_switching = 1
 

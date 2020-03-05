@@ -437,6 +437,14 @@ RADIATION_LOWER_LIMIT 0.15
 # n - do this every n rounds.
 #ROUNDS_UNTIL_HARD_RESTART 4
 
+## API Rate Limit in ds
+API_RATE_LIMIT 50
+
+## API Rate Limit IP Whitelist
+## IPs that should not be throttled by the API RATE Limiter
+## IPs are separated by ;
+API_RATE_LIMIT_WHITELIST 127.0.0.1
+
 ### FAIL2TOPIC:
 ### fail2topic is a system for automating IP bans for abusers of the world/Topic API.
 ### Note that this subsystem respects the IPs listed in api_rate_limit_whitelist. They will not be considered for a ban.

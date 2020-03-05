@@ -1,9 +1,8 @@
-var/datum/controller/subsystem/fail2topic/SSfail2topic
-
-/datum/controller/subsystem/fail2topic
+SUBSYSTEM_DEF(fail2topic)
 	name = "Fail2Topic"
-	init_order = SS_INIT_MISC_FIRST
-	flags = SS_FIRE_IN_LOBBY | SS_BACKGROUND
+	init_order = SS_INIT_EARLY
+	flags = SS_BACKGROUND
+	runlevels = RUNLEVEL_LOBBY | RUNLEVELS_DEFAULT
 
 	var/list/rate_limiting = list()
 	var/list/fail_counts = list()
@@ -28,7 +27,7 @@ var/datum/controller/subsystem/fail2topic/SSfail2topic
 
 	if (world.system_type == UNIX && enabled)
 		enabled = FALSE
-		log_ss("fail2topic", "Subsystem disabled due to it not supporting UNIX.", log_world = FALSE, severity = SEVERITY_NOTICE)
+		log_ss("fail2topic", "Subsystem disabled due to it not supporting UNIX.", log_world = FALSE)
 
 	if (!enabled)
 		suspended = TRUE
@@ -92,11 +91,11 @@ var/datum/controller/subsystem/fail2topic/SSfail2topic
 	. = shell("netsh advfirewall firewall add rule name=\"[rule_name]\" dir=in interface=any action=block remoteip=[ip]")
 
 	if (.)
-		log_ss("fail2topic", "Failed to ban [ip]. Exit code: [.].", log_world = FALSE, severity = SEVERITY_ERROR)
+		log_ss("fail2topic", "Failed to ban [ip]. Exit code: [.].", log_world = FALSE)
 	else if (isnull(.))
-		log_ss("fail2topic", "Failed to invoke ban script.", log_world = FALSE, severity = SEVERITY_ERROR)
+		log_ss("fail2topic", "Failed to invoke ban script.", log_world = FALSE)
 	else
-		log_ss("fail2topic", "Banned [ip].", log_world = FALSE, severity = SEVERITY_NOTICE)
+		log_ss("fail2topic", "Banned [ip].", log_world = FALSE)
 
 /datum/controller/subsystem/fail2topic/proc/DropFirewallRule()
 	if (!enabled)
@@ -107,8 +106,8 @@ var/datum/controller/subsystem/fail2topic/SSfail2topic
 	. = shell("netsh advfirewall firewall delete rule name=\"[rule_name]\"")
 
 	if (.)
-		log_ss("fail2topic", "Failed to drop firewall rule. Exit code: [.].", log_world = FALSE, severity = SEVERITY_ERROR)
+		log_ss("fail2topic", "Failed to drop firewall rule. Exit code: [.].", log_world = FALSE)
 	else if (isnull(.))
-		log_ss("fail2topic", "Failed to invoke ban script.", log_world = FALSE, severity = SEVERITY_ERROR)
+		log_ss("fail2topic", "Failed to invoke ban script.", log_world = FALSE)
 	else
-		log_ss("fail2topic", "Firewall rule dropped.", log_world = FALSE, severity = SEVERITY_INFO)
+		log_ss("fail2topic", "Firewall rule dropped.", log_world = FALSE)
