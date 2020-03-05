@@ -120,7 +120,7 @@
 	if(accessories.len > 1)
 		A = show_radial_menu(usr, src, removables)
 	else
-		A = accessories[accessories[1]]
+		A = removables[removables[1]]
 	remove_accessory(usr,A)
 	removables -= A
 	if(!removables.len)
