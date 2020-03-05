@@ -16,6 +16,7 @@
 	S["flavor_texts_hands"]		>> pref.flavor_texts["hands"]
 	S["flavor_texts_legs"]		>> pref.flavor_texts["legs"]
 	S["flavor_texts_feet"]		>> pref.flavor_texts["feet"]
+	S["flavor_texts_NSFW/OOC"]	>> pref.flavor_texts["NSFW/OOC"]
 
 	//Flavour text for robots.
 	S["flavour_texts_robot_Default"] >> pref.flavour_texts_robot["Default"]
@@ -32,6 +33,7 @@
 	S["flavor_texts_hands"]		<< pref.flavor_texts["hands"]
 	S["flavor_texts_legs"]		<< pref.flavor_texts["legs"]
 	S["flavor_texts_feet"]		<< pref.flavor_texts["feet"]
+	S["flavor_texts_NSFW/OOC"]	<< pref.flavor_texts["NSFW/OOC"]
 
 	S["flavour_texts_robot_Default"] << pref.flavour_texts_robot["Default"]
 	for(var/module in SSrobots.all_module_names)
@@ -52,6 +54,10 @@
 			if("open")
 			if("general")
 				var/msg = sanitize(input(usr,"Give a general description of your character. This will be shown regardless of clothing. Do not include OOC information here.","Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
+				if(CanUseTopic(user))
+					pref.flavor_texts[href_list["flavor_text"]] = msg
+			if("NSFW/OOC")
+				var/msg = sanitize(input(usr,"Update your NSFW/OOC description.", "Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
 				if(CanUseTopic(user))
 					pref.flavor_texts[href_list["flavor_text"]] = msg
 			else
@@ -108,6 +114,9 @@
 	HTML += "<br>"
 	HTML += "<a href='?src=\ref[src];flavor_text=feet'>Feet:</a> "
 	HTML += TextPreview(pref.flavor_texts["feet"])
+	HTML += "<br>"
+	HTML += "<a href='?src=\ref[src];flavor_text=NSFW/OOC'>NSFW/OOC:</a> "
+	HTML += TextPreview(pref.flavor_texts["NSFW/OOC"])
 	HTML += "<br>"
 	HTML += "<hr />"
 	HTML += "<tt>"
