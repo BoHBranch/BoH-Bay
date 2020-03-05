@@ -1,10 +1,18 @@
 //Blocks an attempt to connect before even creating our client datum thing.
-world/IsBanned(key,address,computer_id)
-	var/global/key_cache[]
-	if(ckey(key) in admin_datums)
+/world/IsBanned(key, address, computer_id, type)
+	var/static/key_cache = list()
+	if(type == "world")
 		return ..()
-	if((key in key_cache))
+
+	if(key_cache[key] >= REALTIMEOFDAY)
 		return list("reason"="concurrent connection attempts", "desc"="You are attempting to connect too fast. Try again.")
+	key_cache[key] = REALTIMEOFDAY + 10 //This proc shouldn't be runtiming. But if it does, then the expiry time will cover it to ensure genuine connection attempts don't get trapped in limbo.
+
+	var/ckeytext = ckey(key)
+
+	if(admin_datums[ckeytext])
+		key_cache[key] = 0
+		return ..()
 	key_cache[key] = 1
 	//Guest Checking
 	if(!config.guests_allowed && IsGuestKey(key))
@@ -12,21 +20,25 @@ world/IsBanned(key,address,computer_id)
 		message_admins("<span class='notice'>Failed Login: [key] - Guests not allowed</span>")
 		return list("reason"="guest", "desc"="\nReason: Guests not allowed. Please sign in with a byond account.")
 
+	var/client/C = GLOB.ckey_directory[ckeytext]
+	//If this isn't here, then topic call spam will result in all clients getting kicked with a connecting too fast error.
+	if (C && ckeytext == C.ckey && address == C.address && computer_id == C.computer_id)
+		key_cache[key] = 0
+
 	if(config.ban_legacy_system)
 
 		//Ban Checking
-		. = CheckBan( ckey(key), computer_id, address )
+		. = CheckBan( ckeytext, computer_id, address )
 		if(.)
 			log_access("Failed Login: [key] [computer_id] [address] - Banned [.["reason"]]")
 			message_admins("<span class='notice'>Failed Login: [key] id:[computer_id] ip:[address] - Banned [.["reason"]]</span>")
 			key_cache[key] = 0
 			return .
 
+		key_cache[key] = 0
 		return ..()	//default pager ban stuff
 
 	else
-
-		var/ckeytext = ckey(key)
 
 		if(!establish_db_connection())
 			error("Ban database connection failure. Key [ckeytext] not checked")
