@@ -20,6 +20,7 @@
 	max_force = 10
 	edge = 0
 	sharp = 0
+	base_parry_chance = 40
 	force_divisor = 0.2
 	thrown_force_divisor = 0.2
 	worth_multiplier = 15
@@ -29,6 +30,7 @@
 	desc = "Woefully underpowered in D20. This one looks pretty sharp."
 	icon_state = "katana"
 	item_state = "katana"
+	base_parry_chance = 40
 	furniture_icon = "katana_handle"
 	slot_flags = SLOT_BELT | SLOT_BACK
 
@@ -36,6 +38,7 @@
 	max_force = 10
 	edge = 0
 	sharp = 0
+	base_parry_chance = 40
 	force_divisor = 0.2
 	thrown_force_divisor = 0.2
 
