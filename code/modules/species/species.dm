@@ -611,11 +611,11 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 
 	var/list/holding = list(target.get_active_hand() = 60, target.get_inactive_hand() = 30)
 
-	var/skill_mod = 10 * attacker.get_skill_difference(SKILL_COMBAT, target)
+	var/skill_mod = 5 * attacker.get_skill_difference(SKILL_COMBAT, target)
 	var/state_mod = attacker.melee_accuracy_mods() - target.melee_accuracy_mods()
-	var/push_mod = min(max(1 + attacker.get_skill_difference(SKILL_COMBAT, target), 1), 3)
+	var/push_mod = min(max(1 + attacker.get_skill_difference(SKILL_COMBAT, target), 1), 2)
 	if(target.a_intent == I_HELP)
-		state_mod -= 30
+		state_mod -= 15
 	//Handle unintended consequences
 	for(var/obj/item/I in holding)
 		var/hurt_prob = max(holding[I] - 2*skill_mod + state_mod, 0)

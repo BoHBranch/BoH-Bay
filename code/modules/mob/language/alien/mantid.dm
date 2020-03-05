@@ -11,12 +11,13 @@
 	flags = RESTRICTED
 	shorthand = "KV"
 	machine_understands = FALSE
-	var/list/correct_mouthbits = list(
+	var/list/can_speak_properly = list(
 		SPECIES_NABBER,
 		SPECIES_MANTID_ALATE,
 		SPECIES_MANTID_GYNE,
 		SPECIES_MONARCH_QUEEN,
-		SPECIES_MONARCH_WORKER
+		SPECIES_MONARCH_WORKER,
+		SPECIES_SKRELL
 	)
 
 /datum/language/mantid/can_be_spoken_properly_by(var/mob/speaker)
@@ -27,7 +28,7 @@
 		return TRUE
 	if(ishuman(speaker))
 		var/mob/living/carbon/human/H = speaker
-		if(H.species.name in correct_mouthbits)
+		if(H.species.name in can_speak_properly)
 			return TRUE
 	return FALSE
 
