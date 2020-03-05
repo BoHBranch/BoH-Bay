@@ -3,8 +3,7 @@
 	var/optimal_temp = 200 + T0C	//Temperature at which we have 100% efficiency. efficiency is lowered on either side of this
 	var/optimal_power = 1.1//cooking power at 100%
 
-	var/loss = 1	//Temp lost per proc when equalising
-	var/resistance = 320000	//Resistance to heating. combines with heating power to determine how long heating takes
+	var/resistance = 16000	//Resistance to heating. combines with heating power to determine how long heating takes
 
 	var/light_x = 0
 	var/light_y = 0
@@ -41,7 +40,6 @@
 
 /obj/machinery/appliance/cooker/Initialize()
 	. = ..()
-	loss = (active_power_usage / resistance)*0.5
 	cooking_objs = list()
 	for (var/i = 0, i < max_contents, i++)
 		cooking_objs.Add(new /datum/cooking_item/(new container_type(src)))
