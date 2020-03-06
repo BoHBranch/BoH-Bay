@@ -132,7 +132,7 @@
 		/datum/reagent/ethanol/vodka,
 		/datum/reagent/ethanol/gin,
 		/datum/reagent/ethanol/rum,
-		/datum/reagent/ethanol/tequilla,
+		/datum/reagent/ethanol/tequila,
 		/datum/reagent/ethanol/vermouth,
 		/datum/reagent/ethanol/cognac,
 		/datum/reagent/ethanol/ale,

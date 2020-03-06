@@ -166,11 +166,7 @@
 	desc = "A white coffee cup, prominently featuring a \"#1 monkey\" decal."
 	icon_state = "coffeecup_punitelli"
 	base_name = "#1 monkey cup"
-
-/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/punitelli/New()
-	..()
-	reagents.add_reagent(/datum/reagent/drink/juice/banana, 30)
-	update_icon()
+	reagents_to_add = list(/datum/reagent/drink/juice/banana = 30)
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/rainbow
 	name = "rainbow coffee cup"

@@ -10,7 +10,10 @@
 	var/germ_level = GERM_LEVEL_AMBIENT // The higher the germ level, the more germ on the atom.
 	var/simulated = 1 //filter for actions - used by lighting overlays
 	var/fluorescent // Shows up under a UV light.
-	var/datum/reagents/reagents // chemical contents.
+	///Chemistry.
+	var/tmp/datum/reagents/reagents = null
+	var/list/reagents_to_add
+	var/list/reagent_data
 	var/list/climbers
 	var/climb_speed_mult = 1
 
@@ -50,6 +53,17 @@
 
 	if(light_max_bright && light_outer_range)
 		update_light()
+
+	if(LAZYLEN(reagents_to_add))
+		if(!reagents)
+			create_reagents(0)
+		if(reagents_to_add)
+			for(var/v in reagents_to_add)
+				reagents.maximum_volume += LAZYACCESS(reagents_to_add, v)
+				reagents.add_reagent(v, LAZYACCESS(reagents_to_add, v), LAZYACCESS(reagent_data, v))
+		//LAZYCLEARLIST(reagents_to_add)
+		//LAZYCLEARLIST(reagent_data)
+		//these two lines are for map persistence, which isn't a feature here but may be in the future
 
 	if(opacity)
 		updateVisibility(src)

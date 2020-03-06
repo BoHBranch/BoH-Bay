@@ -151,7 +151,7 @@ nanoui is used to open and update nano browser uis
   * @return 1 if closed, null otherwise.
   */
 /datum/nanoui/proc/update_status(var/push_update = 0)
-	var/atom/host = src_object && src_object.nano_host()
+	var/atom/host = src_object && src_object.ui_host()
 	if(!host)
 		close()
 		return 1
