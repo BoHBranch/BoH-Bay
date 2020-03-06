@@ -99,26 +99,17 @@
 	name = "space cleaner"
 	desc = "BLAM!-brand non-foaming space cleaner!"
 	step_delay = 6
-
-/obj/item/weapon/reagent_containers/spray/cleaner/New()
-	..()
-	reagents.add_reagent(/datum/reagent/space_cleaner, volume)
+	reagents_to_add = list(/datum/reagent/space_cleaner = 250)
 
 /obj/item/weapon/reagent_containers/spray/sterilizine
 	name = "sterilizine"
 	desc = "Great for hiding incriminating bloodstains and sterilizing scalpels."
-
-/obj/item/weapon/reagent_containers/spray/sterilizine/New()
-	..()
-	reagents.add_reagent(/datum/reagent/sterilizine, volume)
+	reagents_to_add = list(/datum/reagent/sterilizine = 250)
 
 /obj/item/weapon/reagent_containers/spray/hair_remover
 	name = "hair remover"
 	desc = "Very effective at removing hair, feathers, spines and horns."
-
-/obj/item/weapon/reagent_containers/spray/hair_remover/New()
-	..()
-	reagents.add_reagent(/datum/reagent/toxin/hair_remover, volume)
+	reagents_to_add = list(/datum/reagent/toxin/hair_remover = 250)
 
 /obj/item/weapon/reagent_containers/spray/pepper
 	name = "pepperspray"
@@ -130,10 +121,7 @@
 	volume = 60
 	var/safety = 1
 	step_delay = 1
-
-/obj/item/weapon/reagent_containers/spray/pepper/New()
-	..()
-	reagents.add_reagent(/datum/reagent/capsaicin/condensed, 60)
+	reagents_to_add = list(/datum/reagent/capsaicin/condensed = 60)
 
 /obj/item/weapon/reagent_containers/spray/pepper/examine(mob/user, distance)
 	. = ..()
@@ -159,10 +147,7 @@
 	amount_per_transfer_from_this = 1
 	possible_transfer_amounts = null
 	volume = 10
-
-/obj/item/weapon/reagent_containers/spray/waterflower/New()
-	..()
-	reagents.add_reagent(/datum/reagent/water, 10)
+	reagents_to_add = list(/datum/reagent/water = 10)
 
 /obj/item/weapon/reagent_containers/spray/chemsprayer
 	name = "chem sprayer"
@@ -204,10 +189,7 @@
 	icon_state = "plantbgone"
 	item_state = "plantbgone"
 	volume = 100
-
-/obj/item/weapon/reagent_containers/spray/plantbgone/New()
-	..()
-	reagents.add_reagent(/datum/reagent/toxin/plantbgone, 100)
+	reagents_to_add = list(/datum/reagent/toxin/plantbgone = 100)
 
 /obj/item/weapon/reagent_containers/spray/plantbgone/afterattack(atom/A as mob|obj, mob/user as mob, proximity)
 	if(!proximity) return
@@ -225,3 +207,4 @@
 	icon = 'icons/obj/items.dmi'
 	icon_state = "deodorant"
 	item_state = "deodorant"
+	reagents_to_add = list(/datum/reagent/space_cleaner = 35)

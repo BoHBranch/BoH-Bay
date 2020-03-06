@@ -198,21 +198,21 @@ Single Use Emergency Pouches
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline
 	name = "emergency inaprovaline autoinjector"
-	starts_with = list(/datum/reagent/inaprovaline = 5)
+	reagents_to_add = list(/datum/reagent/inaprovaline = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/deletrathol
 	name = "emergency deletrathol autoinjector"
-	starts_with = list(/datum/reagent/deletrathol = 5)
+	reagents_to_add = list(/datum/reagent/deletrathol = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dylovene
 	name = "emergency dylovene autoinjector"
-	starts_with = list(/datum/reagent/dylovene = 5)
+	reagents_to_add = list(/datum/reagent/dylovene = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin
 	name = "emergency dexalin autoinjector"
-	starts_with = list(/datum/reagent/dexalin = 5)
+	reagents_to_add = list(/datum/reagent/dexalin = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/adrenaline
 	name = "emergency adrenaline autoinjector"
 	amount_per_transfer_from_this = 8
-	starts_with = list(/datum/reagent/adrenaline = 8)
+	reagents_to_add = list(/datum/reagent/adrenaline = 8)

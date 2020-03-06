@@ -28,6 +28,7 @@
 	var/list/products = list(
 		"Food" = list(
 			/obj/item/weapon/reagent_containers/food/drinks/milk/smallcarton = 30,
+			/obj/item/weapon/reagent_containers/food/snacks/spreads = 40,
 			/obj/item/weapon/reagent_containers/food/drinks/milk = 50,
 			/obj/item/weapon/reagent_containers/food/snacks/meat/syntiflesh = 50,
 			/obj/item/weapon/storage/fancy/egg_box = 300),
