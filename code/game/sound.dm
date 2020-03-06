@@ -59,7 +59,7 @@ GLOBAL_LIST_INIT(glasscrack_sound,list('sound/effects/glass_crack1.ogg','sound/e
 		crash_with("[source] is an area and is trying to make the sound: [soundin]")
 		return
 
-	var/sound/original_sound = playsound_get_sound(soundin, vol, falloff, 0, environment)
+	var/sound/original_sound = playsound_get_sound(soundin, vol, falloff, FALSE, environment)
 
 	if (!original_sound)
 		crash_with("Could not construct original sound.")

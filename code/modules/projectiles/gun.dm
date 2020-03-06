@@ -435,7 +435,7 @@
 	if(silenced)
 		playsound(user, shot_sound, 10, 1)
 	else
-		playsound(user, shot_sound, 50, 1)
+		playsound(user, shot_sound, 75, 1, 3, 0.5, 1)
 
 //Suicide handling.
 /obj/item/weapon/gun/var/mouthshoot = 0 //To stop people from suiciding twice... >.>
