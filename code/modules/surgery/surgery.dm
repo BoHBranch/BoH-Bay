@@ -187,7 +187,7 @@ GLOBAL_LIST_INIT(surgery_tool_exception_cache, new)
 	for(var/decl in all_surgeries)
 		var/decl/surgery_step/S = all_surgeries[decl]
 		if(S.name && S.tool_quality(src) && S.can_use(user, M, zone, src))
-			LAZYSET(possible_surgeries, S, TRUE)
+			LAZYSET(possible_surgeries, S, src)
 
 	// Which surgery, if any, do we actually want to do?
 	var/decl/surgery_step/S

@@ -117,10 +117,9 @@
 	for(var/obj/item/clothing/accessory/ass in accessories)
 		if(ass.removable)
 			removables[ass] = ass
-	if(accessories.len > 1)
+	A = removables[1]
+	if(removables.len > 1)
 		A = show_radial_menu(usr, src, removables)
-	else
-		A = removables[removables[1]]
 	remove_accessory(usr,A)
 	removables -= A
 	if(!removables.len)

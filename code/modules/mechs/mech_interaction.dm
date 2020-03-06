@@ -280,9 +280,11 @@
 
 		var/free_hardpoints = list()
 		for(var/hardpoint in hardpoints)
-			if(hardpoints[hardpoint] == null)
+			if((hardpoints[hardpoint] == null) && (hardpoint in realThing.restricted_hardpoints))
 				free_hardpoints[hardpoint] = hardpoint
-		var/to_place = show_radial_menu(user, src, (realThing.restricted_hardpoints & free_hardpoints))
+		var/to_place = free_hardpoints[1]
+		if(LAZYLEN(free_hardpoints) > 1)
+			to_place = show_radial_menu(user, src, free_hardpoints)
 		if(install_system(thing, to_place, user))
 			return
 		to_chat(user, SPAN_WARNING("\The [src] could not be installed in that hardpoint."))

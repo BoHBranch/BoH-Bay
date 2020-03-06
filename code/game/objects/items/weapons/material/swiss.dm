@@ -19,10 +19,16 @@
 	valid_colors = null
 	max_force = 10
 
+	var/list/tool_icons
 	var/active_tool = SWISSKNF_CLOSED
 	var/tools = list(SWISSKNF_LBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER)
 	var/can_use_tools = FALSE
 	var/sharp_tools = list(SWISSKNF_LBLADE, SWISSKNF_SBLADE, SWISSKNF_GBLADE, SWISSKNF_WBLADE)
+
+/obj/item/weapon/material/knife/folding/swiss/Initialize()
+	. = ..()
+	for(var/t in tools)
+		LAZYSET(tool_icons, t, overlay_image(icon, t, flags=RESET_COLOR))
 
 /obj/item/weapon/material/knife/folding/swiss/attack_self(mob/user)
 	var/choice	
@@ -33,7 +39,7 @@
 		if(active_tool == SWISSKNF_CLOSED)
 			var/list/options = list()
 			for(var/t in tools)
-				options[t] = t
+				options[t] = tool_icons[t]
 			choice = RADIAL_INPUT(user, options) || SWISSKNF_CLOSED
 		else
 			choice = SWISSKNF_CLOSED

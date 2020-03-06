@@ -103,7 +103,7 @@
 	if(!LAZYLEN(attached_organs))
 		to_chat(user, SPAN_WARNING("You can't find any organs to separate."))
 	else
-		var/obj/item/organ/organ_to_remove = attached_organs[attached_organs[1]]
+		var/obj/item/organ/organ_to_remove = attached_organs[1]
 		if(LAZYLEN(attached_organs) > 1)
 			organ_to_remove = show_radial_menu(user, target, attached_organs)
 		if(organ_to_remove)
@@ -154,7 +154,7 @@
 		if(!LAZYLEN(removable_organs))
 			to_chat(user, SPAN_WARNING("You can't find any removable organs."))
 		else
-			var/obj/item/organ/organ_to_remove = removable_organs[removable_organs[1]]
+			var/obj/item/organ/organ_to_remove = removable_organs[1]
 			if(LAZYLEN(removable_organs) > 1)
 				organ_to_remove = show_radial_menu(user, target, removable_organs)
 			if(organ_to_remove)
@@ -404,7 +404,7 @@
 			dead_organs[I] = I
 	if(!dead_organs.len)
 		return FALSE
-	var/obj/item/organ/internal/organ_to_fix = dead_organs[dead_organs[1]]
+	var/obj/item/organ/internal/organ_to_fix = dead_organs[1]
 	if(dead_organs.len > 1)
 		organ_to_fix = show_radial_menu(user, target, dead_organs)
 	if(!organ_to_fix)
