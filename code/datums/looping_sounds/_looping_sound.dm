@@ -83,6 +83,7 @@
 	//	if(direct)
 	//		SEND_SOUND(thing, S)
 	//	else
+		S.volume = volume
 		playsound(thing, S, volume, is_ambiance = ambient)
 
 /datum/looping_sound/proc/get_sound(starttime, _mid_sounds)
