@@ -53,6 +53,7 @@
 		/area/vacant/bar = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/vacant = NO_SCRUBBER|NO_VENT|NO_APC,
 //		/area/vacant/brig = NO_SCRUBBER|NO_VENT,
+		/area/vacant/armory = 0,
 		/area/vacant/prototype/control = 0,
 		/area/vacant/prototype/engine = 0,
 		/area/vacant/cargo = NO_SCRUBBER|NO_VENT,
@@ -65,7 +66,6 @@
 		/area/command/gunnery/ob/airlock = NO_SCRUBBER,
 		/area/command/gunnery/mim = 0,
 		/area/command/gunnery/mim/door = NO_SCRUBBER|NO_VENT,
-		/area/security/brig/chamber = NO_SCRUBBER|NO_VENT,
 		/area/crew_quarters_boh/cabin_main/janitorial = NO_SCRUBBER|NO_VENT,
 	) // FIX THESE LAST 3 LATER
 
