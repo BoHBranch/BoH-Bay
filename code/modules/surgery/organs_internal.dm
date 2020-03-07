@@ -102,13 +102,10 @@
 			LAZYSET(attached_organs, organ, I)
 	if(!LAZYLEN(attached_organs))
 		to_chat(user, SPAN_WARNING("You can't find any organs to separate."))
-	else
-		var/obj/item/organ/organ_to_remove = attached_organs[1]
-		if(LAZYLEN(attached_organs) > 1)
-			organ_to_remove = show_radial_menu(user, target, attached_organs)
-		if(organ_to_remove)
-			return organ_to_remove
-	return FALSE
+		return FALSE
+	organ_to_remove = show_radial_menu(user, target, attached_organs) // no default to allow cancel
+	if(organ_to_remove)
+		return organ_to_remove
 
 /decl/surgery_step/internal/detatch_organ/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	user.visible_message("[user] starts to separate [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] with \the [tool].", \
@@ -153,12 +150,10 @@
 				LAZYSET(removable_organs, I, I)
 		if(!LAZYLEN(removable_organs))
 			to_chat(user, SPAN_WARNING("You can't find any removable organs."))
-		else
-			var/obj/item/organ/organ_to_remove = removable_organs[1]
-			if(LAZYLEN(removable_organs) > 1)
-				organ_to_remove = show_radial_menu(user, target, removable_organs)
-			if(organ_to_remove)
-				return organ_to_remove
+			return FALSE
+		organ_to_remove = show_radial_menu(user, target, removable_organs) // There is no default here for easy cancelling.
+		if(organ_to_remove)
+			return organ_to_remove
 	return FALSE
 
 /decl/surgery_step/internal/remove_organ/get_skill_reqs(mob/living/user, mob/living/carbon/human/target, obj/item/tool)

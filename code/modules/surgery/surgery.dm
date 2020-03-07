@@ -191,13 +191,10 @@ GLOBAL_LIST_INIT(surgery_tool_exception_cache, new)
 
 	// Which surgery, if any, do we actually want to do?
 	var/decl/surgery_step/S
-	if(LAZYLEN(possible_surgeries) == 1)
-		S = possible_surgeries[1]
-	else if(LAZYLEN(possible_surgeries) >= 1)
-		if(user.client) // In case of future autodocs.
-			S = input(user, "Which surgery would you like to perform?", "Surgery") as null|anything in possible_surgeries
-		if(S && !user.skill_check_multiple(S.get_skill_reqs(user, M, src, zone)))
-			S = pick(possible_surgeries)
+	if(user.client) // In case of future autodocs.
+		S = show_radial_menu(user, src, possible_surgeries) // there is no default here so that surgeries can be gracefully cancelled
+	if(S && !user.skill_check_multiple(S.get_skill_reqs(user, M, src, zone)))
+		S = pick(possible_surgeries)
 
 	// We didn't find a surgery, or decided not to perform one.
 	if(!istype(S))

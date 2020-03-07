@@ -422,13 +422,11 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	for(var/organ in target.internal_organs_by_name)
 		var/obj/item/organ/I = target.internal_organs_by_name[organ]
 		if(I && !(I.status & ORGAN_CUT_AWAY) && !BP_IS_CRYSTAL(I) && I.parent_organ == target_zone)
-			attached_organs[organ] = I
+			LAZYSET(attached_organs, organ, I)
 	if(!LAZYLEN(attached_organs))
 		to_chat(user, SPAN_WARNING("There are no appropriate internal components to decouple."))
 		return FALSE
-	var/organ_to_remove = attached_organs[1]
-	if(LAZYLEN(attached_organs) > 1)
-		organ_to_remove = show_radial_menu(user, target, attached_organs)
+	organ_to_remove = show_radial_menu(user, target, attached_organs) // There is no default so that you can safely cancel operations.
 	if(organ_to_remove)
 		return organ_to_remove
 
@@ -466,11 +464,12 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
 	for(var/obj/item/organ/I in affected.implants)
 		if ((I.status & ORGAN_CUT_AWAY) && BP_IS_ROBOTIC(I) && !BP_IS_CRYSTAL(I) && (I.parent_organ == target_zone))
-			attachable_organs[I.organ_tag] = I
-	var/organ_to_replace = show_radial_menu(user, target, attachable_organs)
-	if(!organ_to_replace)
+			LAZYSET(attachable_organs, I.organ_tag, I)
+	if(!LAZYLEN(attachable_organs))
+		to_chat(user, SPAN_WARNING("There are no appropriate internal components to recouple."))
 		return FALSE
-	var/obj/item/organ/internal/augment/A = organ_to_replace
+	var/organ_to_replace = show_radial_menu(user, target, attachable_organs)
+	var/obj/item/organ/internal/augment/A = attachable_organs[organ_to_replace]
 	if(istype(A))
 		if(!(A.augment_flags & AUGMENTATION_MECHANIC))
 			to_chat(user, SPAN_WARNING("\The [A] cannot function within a robotic limb!"))
