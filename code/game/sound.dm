@@ -58,7 +58,6 @@ GLOBAL_LIST_INIT(glasscrack_sound,list('sound/effects/glass_crack1.ogg','sound/e
 	if (isarea(source))
 		crash_with("[source] is an area and is trying to make the sound: [soundin]")
 		return
-
 	var/sound/original_sound = playsound_get_sound(soundin, vol, falloff, 0, environment)
 
 	if (!original_sound)
@@ -128,7 +127,7 @@ GLOBAL_LIST_INIT(glasscrack_sound,list('sound/effects/glass_crack1.ogg','sound/e
 
 	return S.volume
 
-/proc/playsound_allinrange(atom/source, sound/S, extra_range = 0, is_global = FALSE, use_random_freq = FALSE, use_pressure = TRUE,  modify_environment = TRUE, is_ambiance = TRUE)
+/proc/playsound_allinrange(atom/source, sound/S, extra_range = 0, is_global = FALSE, use_random_freq = FALSE, use_pressure = TRUE,  modify_environment = TRUE, is_ambiance = FALSE)
 	var/turf/source_turf = get_turf(source)
 
 	for (var/MM in GLOB.player_list)
@@ -171,7 +170,7 @@ GLOBAL_LIST_INIT(glasscrack_sound,list('sound/effects/glass_crack1.ogg','sound/e
 	if (istext(soundin))
 		soundin = get_sfx(soundin)
 
-	var/sound/S = sound(soundin)
+	var/sound/S = istype(soundin, /sound) ? copy_sound(soundin) : sound(soundin)
 
 	S.wait = 0
 	S.channel = 0
