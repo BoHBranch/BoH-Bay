@@ -57,7 +57,7 @@
 /obj/item/weapon/gun/energy/particle/get_mob_overlay(var/mob/living/carbon/human/user, var/slot)
 	if(istype(user) && (slot == slot_l_hand_str || slot == slot_r_hand_str))
 		var/bodytype = user.species.get_bodytype(user)
-		if(bodytype in list(SPECIES_MANTID_ALATE, SPECIES_MANTID_GYNE, SPECIES_NABBER))
+		if(bodytype in list(SPECIES_MANTID_ALATE,SPECIES_MANTID_GYNE,SPECIES_NABBER))
 			if(slot == slot_l_hand_str)
 				if(bodytype == SPECIES_MANTID_ALATE)
 					return overlay_image('icons/mob/species/mantid/onmob_lefthand_particle_rifle_alate.dmi',  item_state_slots[slot_l_hand_str], color, RESET_COLOR)

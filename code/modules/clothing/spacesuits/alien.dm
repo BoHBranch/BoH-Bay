@@ -15,7 +15,7 @@
 	siemens_coefficient = 0.6
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	species_restricted = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
+	species_restricted = list(SPECIES_VOX,SPECIES_VOX_ARMALIS)
 
 /obj/item/clothing/suit/space/vox/New()
 	..()
@@ -34,7 +34,7 @@
 	siemens_coefficient = 0.6
 	item_flags = 0
 	flags_inv = 0
-	species_restricted = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
+	species_restricted = list(SPECIES_VOX,SPECIES_VOX_ARMALIS)
 
 /obj/item/clothing/head/helmet/space/vox/pressure
 	name = "alien helmet"
@@ -82,7 +82,7 @@
 
 /obj/item/clothing/under/vox
 	has_sensor = 0
-	species_restricted = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
+	species_restricted = list(SPECIES_VOX,SPECIES_VOX_ARMALIS)
 
 /obj/item/clothing/under/vox/vox_casual
 	name = "alien clothing"
@@ -106,14 +106,14 @@
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
 	force = 5 //They're gauntlets. Same force as 'tactical' gloves.
-	species_restricted = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
+	species_restricted = list(SPECIES_VOX,SPECIES_VOX_ARMALIS)
 
 /obj/item/clothing/shoes/magboots/vox
 	desc = "A pair of heavy, jagged armoured foot pieces, seemingly suitable for a velociraptor."
 	name = "vox magclaws"
 	item_state = "boots-vox"
 	icon_state = "boots-vox"
-	species_restricted = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
+	species_restricted = list(SPECIES_VOX,SPECIES_VOX_ARMALIS)
 
 	action_button_name = "Toggle the magclaws"
 
