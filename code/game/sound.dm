@@ -165,10 +165,7 @@ GLOBAL_LIST_INIT(glasscrack_sound,list('sound/effects/glass_crack1.ogg','sound/e
 	if (!client)
 		return FALSE
 
-	if(is_ambiance && src.get_preference_value(/datum/client_preference/play_ambiance) == GLOB.PREF_NO)
-		return FALSE
-
-	return TRUE
+	return !is_ambiance || src.get_preference_value(/datum/client_preference/play_ambiance) == GLOB.PREF_YES
 
 /proc/playsound_get_sound(soundin, volume, fall_off, frequency = 0, environment = -1)
 	if (istext(soundin))
