@@ -59,7 +59,7 @@ GLOBAL_LIST_INIT(glasscrack_sound,list('sound/effects/glass_crack1.ogg','sound/e
 		crash_with("[source] is an area and is trying to make the sound: [soundin]")
 		return
 
-	var/sound/original_sound = playsound_get_sound(soundin, vol, falloff, FALSE, environment)
+	var/sound/original_sound = playsound_get_sound(soundin, vol, falloff, 0, environment)
 
 	if (!original_sound)
 		crash_with("Could not construct original sound.")
@@ -76,8 +76,8 @@ GLOBAL_LIST_INIT(glasscrack_sound,list('sound/effects/glass_crack1.ogg','sound/e
 		)
 	else
 		playsound_lineofsight(source, original_sound,
-			use_pressure = usepressure,
 			use_random_freq = !!vary,
+			use_pressure = usepressure,
 			modify_environment = (environment != 0),
 			is_ambiance = is_ambiance
 		)
@@ -165,7 +165,7 @@ GLOBAL_LIST_INIT(glasscrack_sound,list('sound/effects/glass_crack1.ogg','sound/e
 	if (!client)
 		return FALSE
 
-	if(!(is_ambiance && src.get_preference_value(/datum/client_preference/play_ambiance) == GLOB.PREF_NO))
+	if(is_ambiance && src.get_preference_value(/datum/client_preference/play_ambiance) == GLOB.PREF_NO)
 		return FALSE
 
 	return TRUE
