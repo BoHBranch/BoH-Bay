@@ -426,7 +426,7 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	if(!LAZYLEN(attached_organs))
 		to_chat(user, SPAN_WARNING("There are no appropriate internal components to decouple."))
 		return FALSE
-	organ_to_remove = show_radial_menu(user, target, attached_organs) // There is no default so that you can safely cancel operations.
+	var/organ_to_remove = show_radial_menu(user, target, attached_organs) // There is no default so that you can safely cancel operations.
 	if(organ_to_remove)
 		return organ_to_remove
 

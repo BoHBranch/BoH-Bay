@@ -103,7 +103,7 @@
 	if(!LAZYLEN(attached_organs))
 		to_chat(user, SPAN_WARNING("You can't find any organs to separate."))
 		return FALSE
-	organ_to_remove = show_radial_menu(user, target, attached_organs) // no default to allow cancel
+	var/organ_to_remove = show_radial_menu(user, target, attached_organs) // no default to allow cancel
 	if(organ_to_remove)
 		return organ_to_remove
 
@@ -151,7 +151,7 @@
 		if(!LAZYLEN(removable_organs))
 			to_chat(user, SPAN_WARNING("You can't find any removable organs."))
 			return FALSE
-		organ_to_remove = show_radial_menu(user, target, removable_organs) // There is no default here for easy cancelling.
+		var/organ_to_remove = show_radial_menu(user, target, removable_organs) // There is no default here for easy cancelling.
 		if(organ_to_remove)
 			return organ_to_remove
 	return FALSE
