@@ -22,13 +22,13 @@
 /datum/trait/minor_brute_weak
 	name = "Thin Skin"
 	desc = "Your skin is thinner than normal, making you slightly more susceptible to physical damage."
-	cost = -1
+	cost = -2
 	var_changes = list("brute_mod" = 1.50)
 
 /datum/trait/minor_burn_weak
 	name = "Inflammable Skin"
 	desc = "You skin is somehow inflammable, making you slightly more susceptible to burns."
-	cost = -1
+	cost = -2
 	var_changes = list("burn_mod" = 1.50)
 
 /datum/trait/conductive
@@ -69,7 +69,7 @@
 /datum/trait/noodlyarms
 	name = "Muscular Atrophy"
 	desc = "You have less muscle mass than normal, giving you inferior strength."
-	cost = -1
+	cost = -2
 	var_changes = list("strength" = STR_LOW)
 
 /////////////////////
@@ -77,8 +77,8 @@
 /////////////////////
 
 /datum/trait/toxification_junky
-	name = "Recovering Addict"
-	desc = "Your body isn't quite used to being clean as of yet, and relapse very well might kill you. Be sure to notify Doctors not to overdose you!"
+	name = "Weak Immune System"
+	desc = "Your immune system is incredibly weak, and even the slightest ailment may kill you. Be sure to notify Doctors not to overdose you!"
 	cost = -3
 	var_changes = list("toxins_mod" = 5.0)
 
@@ -92,4 +92,4 @@
 	name = "Incredibly Frail"
 	desc = "Your bones, skin and general state of mind is rather fragile. Try not to get smacked, or you may have to visit the ER."
 	cost = -4
-	var_changes = list("brute_mod" = 5.25)
+	var_changes = list("brute_mod" =2.50)
