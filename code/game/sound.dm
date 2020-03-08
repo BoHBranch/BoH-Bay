@@ -172,6 +172,7 @@ GLOBAL_LIST_INIT(glasscrack_sound,list('sound/effects/glass_crack1.ogg','sound/e
 
 	var/sound/S = istype(soundin, /sound) ? copy_sound(soundin) : sound(soundin)
 
+	S.volume = volume
 	S.wait = 0
 	S.channel = 0
 	S.frequency = frequency
