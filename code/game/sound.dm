@@ -234,10 +234,8 @@ GLOBAL_LIST_INIT(glasscrack_sound,list('sound/effects/glass_crack1.ogg','sound/e
 	return soundin
 
 /proc/copy_sound(sound/original)
-	var/sound/S = sound(original.file, original.repeat, 0, 0, original.volume)
+	var/sound/S = sound(original.file, original.repeat, original.wait, original.channel, original.volume)
 
-	S.wait = original.wait
-	S.channel = original.channel
 	S.frequency = original.frequency
 	S.falloff = original.falloff
 	S.environment = original.environment
