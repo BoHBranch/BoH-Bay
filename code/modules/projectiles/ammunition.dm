@@ -58,7 +58,7 @@
 	if(A)
 		LAZYDISTINCTADD(A.gunshot_residue, caliber)
 
-/obj/item/ammo_casing/attackby(obj/item/weapon/W as obj, mob/user as mob)
+/obj/item/ammo_casing/attackby(obj/item/W as obj, mob/user as mob)
 	if(isScrewdriver(W))
 		if(!BB)
 			to_chat(user, "<span class='notice'>There is no bullet in the casing to inscribe anything into.</span>")
@@ -74,6 +74,16 @@
 		else
 			to_chat(user, "<span class='notice'>You inscribe \"[label_text]\" into \the [initial(BB.name)].</span>")
 			BB.SetName("[initial(BB.name)] (\"[label_text]\")")
+	if(istype(W, src.type))
+		var/obj/item/weapon/ammo_pile/AP = new (get_turf(user))
+		var/obj/item/ammo_casing/C = W
+		AP.name = "[src.name] ammo pile"
+		AP.ammo_type = type
+		AP.CreatePile(2)
+		to_chat(user, SPAN_NOTICE("You pile up some ammo to make [AP]."))
+		user.put_in_hands(AP)
+		qdel(src)
+		qdel(C)
 	else ..()
 
 /obj/item/ammo_casing/on_update_icon()

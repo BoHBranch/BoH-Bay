@@ -169,7 +169,21 @@
 		loaded.Insert(1, C) //add to the head of the list
 		user.visible_message("[user] inserts \a [C] into [src].", "<span class='notice'>You insert \a [C] into [src].</span>")
 		playsound(loc, load_sound, 50, 1)
-
+	else if(istype(A, /obj/item/weapon/ammo_pile))
+		. = TRUE
+		var/obj/item/weapon/ammo_pile/AP = A
+		var/obj/item/ammo_casing/C = AP.get_next_ammo(user)
+		if(!(load_method & SINGLE_CASING) || caliber != C.caliber)
+			return //incompatible
+		if(loaded.len >= max_shells)
+			to_chat(user, "<span class='warning'>[src] is full.</span>")
+			return
+		AP.ammo -= C
+		C.forceMove(src)
+		loaded.Insert(1, C)
+		user.visible_message("[user] inserts \a [C] into [src] from [AP].", "<span class='notice'>You insert \a [C] into [src].</span>")
+		playsound(loc, load_sound, 50, 1)
+		AP.check_ammo()
 	update_icon()
 
 //attempts to unload src. If allow_dump is set to 0, the speedloader unloading method will be disabled

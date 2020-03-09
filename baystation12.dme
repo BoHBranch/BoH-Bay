@@ -1457,6 +1457,7 @@
 #include "code\modules\boh\gunnery\areas.dm"
 #include "code\modules\boh\gunnery\munition_lift.dm"
 #include "code\modules\boh\gunnery\structures.dm"
+#include "code\modules\boh\guns\ammo_pile.dm"
 #include "code\modules\boh\infantry\access.dm"
 #include "code\modules\boh\infantry\dagon_inf.dm"
 #include "code\modules\boh\infantry\firearms.dm"
