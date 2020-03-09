@@ -67,6 +67,7 @@
 		/area/command/gunnery/mim = 0,
 		/area/command/gunnery/mim/door = NO_SCRUBBER|NO_VENT,
 		/area/crew_quarters_boh/cabin_main/janitorial = NO_SCRUBBER|NO_VENT,
+		/area/vacant/armory = NO_APC
 	) // FIX THESE LAST 3 LATER
 
 	area_coherency_test_exempt_areas = list(
