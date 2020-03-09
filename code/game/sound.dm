@@ -170,7 +170,7 @@ GLOBAL_LIST_INIT(glasscrack_sound,list('sound/effects/glass_crack1.ogg','sound/e
 	if (istext(soundin))
 		soundin = get_sfx(soundin)
 
-	var/sound/S = sound(soundin)
+	var/sound/S = istype(soundin, /sound) ? copy_sound(soundin) : sound(soundin)
 
 	S.wait = 0
 	S.channel = 0
