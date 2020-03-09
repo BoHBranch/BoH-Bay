@@ -683,7 +683,7 @@ GLOBAL_LIST_INIT(global_apc_list,list())
 				return 1
 
 /obj/machinery/power/apc/CanUseTopicPhysical(var/mob/user)
-	return GLOB.physical_state.can_use_topic(nano_host(), user)
+	return GLOB.physical_state.can_use_topic(ui_host(), user)
 
 /obj/machinery/power/apc/physical_attack_hand(mob/user)
 	//Human mob special interaction goes here.

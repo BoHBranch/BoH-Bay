@@ -52,7 +52,7 @@
 /datum/nano_module/records/proc/get_record_access(var/mob/user)
 	var/list/user_access = using_access || user.GetAccess()
 
-	var/obj/PC = nano_host()
+	var/obj/PC = ui_host()
 	var/datum/extension/interactive/ntos/os = get_extension(PC, /datum/extension/interactive/ntos)
 	if(os && os.emagged())
 		user_access = user_access.Copy()
@@ -68,7 +68,7 @@
 	if(!F)
 		return
 	if(!F.verify_access_edit(get_record_access(user)))
-		to_chat(user, "<span class='notice'>\The [nano_host()] flashes an \"Access Denied\" warning.</span>")
+		to_chat(user, "<span class='notice'>\The [ui_host()] flashes an \"Access Denied\" warning.</span>")
 		return
 	F.ask_value(user)
 

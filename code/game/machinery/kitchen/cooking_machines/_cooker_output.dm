@@ -3,7 +3,7 @@
 	name = "cooked food"
 	icon = 'icons/obj/food_custom.dmi'
 	desc = "If you can see this description then something is wrong. Please report the bug on the tracker."
-	nutriment_amt = 5
+	reagents_to_add = list(/datum/reagent/nutriment = 5)
 	bitesize = 2
 
 /obj/item/weapon/reagent_containers/food/snacks/variable/pizza

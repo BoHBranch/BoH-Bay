@@ -13,7 +13,8 @@
 		LANGUAGE_HUMAN_IBERIAN = 15,
 		LANGUAGE_HUMAN_RUSSIAN = 5,
 		LANGUAGE_LEGALESE = 15,
-		LANGUAGE_SPACER = 20
+		LANGUAGE_SPACER = 20,
+		LANGUAGE_GUTTER = 5
 	)
 	syllables = list(
 		"al", "an", "ar", "as", "at", "ed", "er", "ha", "he", "hi", "is", "le", "me", "on", "se", "ti",

@@ -70,7 +70,7 @@
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/ascent
 	name = "autoinjector (Crystal Brothime)"
 	band_color = COLOR_GOLD
-	starts_with = list(/datum/reagent/crystaltram = 5)
+	reagents_to_add = list(/datum/reagent/crystaltram = 5)
 
 //pouch
 /obj/item/weapon/storage/med_pouch/ascent

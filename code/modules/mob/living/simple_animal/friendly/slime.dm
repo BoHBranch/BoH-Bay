@@ -15,6 +15,9 @@
 	var/colour = "grey"
 	pass_flags = PASS_FLAG_TABLE
 
+/mob/living/simple_animal/slime/get_digestion_product()
+	return /datum/reagent/slimejelly
+
 /mob/living/simple_animal/slime/can_force_feed(var/feeder, var/food, var/feedback)
 	if(feedback)
 		to_chat(feeder, "Where do you intend to put \the [food]? \The [src] doesn't have a mouth!")
@@ -34,6 +37,9 @@
 	response_harm   = "stomps on"
 	emote_see = list("jiggles", "bounces in place")
 	var/colour = "grey"
+
+/mob/living/simple_animal/adultslime/get_digestion_product()
+	return /datum/reagent/slimejelly
 
 /mob/living/simple_animal/adultslime/New()
 	..()

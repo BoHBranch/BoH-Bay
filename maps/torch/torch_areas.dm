@@ -1069,26 +1069,12 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	req_access = list(access_brig)
 
-/area/security/brig/chamber
-	name = "\improper Permanent Brig Equipment"
-	icon_state = "toxstorage"
-	area_flags = AREA_FLAG_RAD_SHIELDED
-	req_access = list(access_brig)
-
-/area/security/brig/psyker
-	name = "\improper Nullglass Containment"
+/area/security/brig/psionic
+	name = "\improper Psionic Holding"
 	icon_state = "misclab"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	req_access = list(access_brig)
 	ambience = list('sound/ambience/spookyspace1.ogg')
-
-/area/security/brig/psyker/cell
-	name = "\improper Nullglass Cell"
-	icon_state = "brig"
-
-/area/security/brig/psyker/storage
-	name = "\improper Nullglass Storage"
-	icon_state = "toxstorage"
 
 // AI
 /area/turret_protected/ai_foyer
