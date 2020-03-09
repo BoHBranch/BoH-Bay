@@ -781,6 +781,9 @@ var/list/gamemode_cache = list()
 				if ("announce_gamemode")
 					config.announce_gamemode = TRUE
 
+				if ("panic_bunker")
+					config.panic_bunker = TRUE
+
 				if("rounds_until_hard_restart")
 					config.rounds_until_hard_restart = text2num(value)
 
