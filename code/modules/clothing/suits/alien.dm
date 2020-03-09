@@ -81,11 +81,11 @@
 	desc = "A hodgepodge of various pieces of metal scrapped together into a rudimentary vox-shaped piece of armor."
 	allowed = list(/obj/item/weapon/gun, /obj/item/weapon/tank)
 	armor = list(
-		melee = ARMOR_MELEE_VERY_HIGH, 
-		bullet = ARMOR_BALLISTIC_PISTOL, 
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_PISTOL,
 		laser = ARMOR_LASER_MINOR,
 		bomb = ARMOR_BOMB_PADDED) //Higher melee armor versus lower everything else.
 	icon_state = "vox-scrap"
 	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO|LEGS
-	species_restricted = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
+	species_restricted = list(SPECIES_VOX,SPECIES_VOX_ARMALIS)
 	siemens_coefficient = 1 //Its literally metal
