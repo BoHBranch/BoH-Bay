@@ -395,7 +395,7 @@
 	if (flavor_text && flavor_text != "")
 		var/msg = replacetext(flavor_text, "\n", " ")
 		if(NSFW == 1)
-			return "<a href='byond://?src=\ref[src];flavor_more=1'>Read Description (NSFW/OOC)...</a></span>"
+			return "<span><a href='byond://?src=\ref[src];flavor_more=1'>Read Description (NSFW/OOC)...</a></span>"
 		else if(length(msg) <= 40)
 			return "<span class='notice'>[msg]</span>"
 		else
