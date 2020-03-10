@@ -55,6 +55,8 @@
 		return
 	if(alien == IS_UNATHI)
 		removed *= 0.1 // Unathi get most of their nutrition from meat.
+	if(alien == IS_CARNIVORE)
+		removed *= 0.1 // Technically a copy of IS_UNATHI, and likely spaghetti code, but whatever.
 	if(nutriment_factor)
 		M.adjust_nutrition(nutriment_factor * nut_removed) // For hunger and fatness
 	if(hydration_factor)
@@ -90,11 +92,27 @@
 /datum/reagent/nutriment/protein/adjust_nutrition(var/mob/living/carbon/M, var/alien, var/removed)
 	switch(alien)
 		if(IS_UNATHI) removed *= 2.25
+		if(IS_CARNIVORE) removed *= 2.25
 		if(IS_OLDUNATHI) removed *= 3.5
 	M.adjust_nutrition(nutriment_factor * removed)
 
 /datum/reagent/nutriment/protein/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien && alien == IS_SKRELL && skrell_toxic)
+		M.adjustToxLoss(2 * removed)
+		return
+	..()
+
+/datum/reagent/nutriment/protein/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
+	if(!skrell_toxic)
+		return ..()
+	switch(alien)
+		if(IS_HERBIVORE)
+			M.adjustToxLoss(0.5 * removed)
+			return
+	..()
+
+/datum/reagent/nutriment/protein/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien && alien == IS_HERBIVORE && skrell_toxic)
 		M.adjustToxLoss(2 * removed)
 		return
 	..()
