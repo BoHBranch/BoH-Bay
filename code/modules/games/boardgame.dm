@@ -170,8 +170,8 @@ obj/item/weapon/board/attackby(obj/item/I as obj, mob/user as mob)
 	icon_state = "checker_black"
 	w_class = ITEM_SIZE_TINY
 	center_of_mass = "x=16;y=16"
-	nutriment_desc = list("a choking hazard" = 4)
-	nutriment_amt = 1
+	reagents_to_add = list(/datum/reagent/nutriment = 1)
+	reagent_data = list(/datum/reagent/nutriment = list("a choking hazard" = 4))
 	var/piece_color ="black"
 
 /obj/item/weapon/reagent_containers/food/snacks/checker/New()

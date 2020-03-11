@@ -74,6 +74,11 @@
 // Interaction procs
 //-------------------------------------------
 /obj/vehicle/train/relaymove(mob/user, direction)
+
+	if(direction & (UP|DOWN))
+		unload(user)
+		return
+
 	if(user.incapacitated())
 		return 0
 

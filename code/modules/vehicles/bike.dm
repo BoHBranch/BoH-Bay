@@ -133,6 +133,11 @@
 		to_chat(user, "You unbuckle yourself from \the [src]")
 
 /obj/vehicle/bike/relaymove(mob/user, direction)
+
+	if(direction & (UP|DOWN))
+		unload(user)
+		return
+
 	if(user != load || !on)
 		return
 	if(user.incapacitated())

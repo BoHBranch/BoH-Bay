@@ -1,5 +1,0 @@
-author: MoondancerPony
-delete-after: True
-
-changes: 
-  - maptweak: "Security and Engineering no longer have direct access to Medical and must be allowed in."

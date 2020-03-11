@@ -562,7 +562,7 @@ default behaviour is:
 	if(!can_pull())
 		stop_pulling()
 		return
-	
+
 	if (!isliving(pulling))
 		step(pulling, get_dir(pulling.loc, old_loc))
 	else
@@ -652,10 +652,6 @@ default behaviour is:
 		to_chat(src, "<span class='warning'>You extricate yourself from \the [holster].</span>")
 		H.forceMove(get_turf(H))
 	else if(istype(H.loc,/obj))
-		if(istype(H.loc, /obj/machinery/cooker))
-			var/obj/machinery/cooker/C = H.loc
-			C.cooking_obj = null
-			C.check_cooking_obj()
 		to_chat(src, "<span class='warning'>You struggle free of \the [H.loc].</span>")
 		H.forceMove(get_turf(H))
 
@@ -869,8 +865,10 @@ default behaviour is:
 		make_jittery(rand(150,200))
 		adjustHalLoss(rand(50,60))
 
-/mob/living/proc/get_digestion_product()
-	return null
-
 /mob/living/proc/eyecheck()
 	return FLASH_PROTECTION_NONE
+
+/mob/living/proc/get_digestion_product()
+	if (isSynthetic())
+		return /datum/reagent/iron
+	return /datum/reagent/nutriment/protein

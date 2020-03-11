@@ -42,6 +42,7 @@ Class Variables:
 	  Possible bit flags:
 		 BROKEN:1 -- Machine is broken
 		 NOPOWER:2 -- No power is being supplied to machine.
+		 POWEROFF:4 -- The machine is disabled.
 		 MAINT:8 -- machine is currently under going maintenance.
 		 EMPED:16 -- temporary broken by EMP pulse
 
@@ -247,7 +248,7 @@ Class Procs:
 	if(stat & BROKEN)
 		return STATUS_CLOSE
 
-	return GLOB.physical_state.can_use_topic(nano_host(), user)
+	return GLOB.physical_state.can_use_topic(ui_host(), user)
 
 /obj/machinery/CouldUseTopic(var/mob/user)
 	..()
@@ -436,7 +437,7 @@ Class Procs:
 
 /obj/machinery/Move()
 	. = ..()
-	if(. && !CanFluidPass())
+	if(. && !CanPass())
 		fluid_update()
 
 /obj/machinery/get_cell()
