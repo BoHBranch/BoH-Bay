@@ -419,7 +419,7 @@
 		if(V == "power cell") continue
 		var/datum/robot_component/C = components[V]
 		if(C.installed)
-			installed_components[V] = C
+			installed_components[V] = C.wrapped
 
 	var/datum/robot_component/toggle = show_radial_menu(usr, src, installed_components)
 	if(!istype(toggle))
