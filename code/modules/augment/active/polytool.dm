@@ -14,6 +14,13 @@
 		I.canremove = FALSE
 		items += I
 
+/obj/item/organ/internal/augment/active/polytool/proc/holding_dropped(var/obj/item/I)
+	//Stop caring
+	GLOB.item_unequipped_event.unregister(I, src)
+
+	if(I.loc != src) //something went wrong and is no longer attached/ it broke
+		I.canremove = TRUE
+
 /obj/item/organ/internal/augment/active/polytool/Destroy()
 	QDEL_NULL_LIST(items)
 	. = ..()
@@ -46,6 +53,7 @@
 	if(!istype(item) || !src.loc in owner.organs)
 		return
 	if(owner.equip_to_slot_if_possible(item, slot))
+		GLOB.item_unequipped_event.register(item, src, /obj/item/organ/internal/augment/active/polytool/proc/holding_dropped )
 		owner.visible_message(
 			SPAN_WARNING("[owner] extends \his [item.name] from \his [limb.name]."),
 			SPAN_NOTICE("You extend your [item.name] from your [limb.name].")
