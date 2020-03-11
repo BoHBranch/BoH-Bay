@@ -88,8 +88,8 @@ default behaviour is:
 					return
 
 			if(can_swap_with(tmob)) // mutual brohugs all around!
-				var/turf/oldloc = loc
-				forceMove(tmob.loc)
+				var/turf/oldloc = get_turf(src)
+				forceMove(get_turf(tmob))
 				tmob.forceMove(oldloc)
 				now_pushing = 0
 				for(var/mob/living/carbon/slime/slime in view(1,tmob))
