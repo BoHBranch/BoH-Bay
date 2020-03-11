@@ -551,6 +551,8 @@
 			return
 		if("general")
 			msg = sanitize(input(src,"Update the general description of your character. This will be shown regardless of clothing. Do not include OOC information here.","Flavor Text",html_decode(flavor_texts[key])) as message, extra = 0)
+		if("NSFW/OOC")
+			msg = sanitize(input(src,"Update your NSFW/OOC description.", "Flavor Text",html_decode(flavor_texts[key])) as message, extra = 0)
 		else
 			if(!(key in flavor_texts))
 				return
@@ -1373,7 +1375,11 @@
 	flavor_text = ""
 	for (var/T in flavor_texts)
 		if(flavor_texts[T] && flavor_texts[T] != "")
-			if((T == "general") || (T == "head" && head_exposed) || (T == "face" && face_exposed) || (T == "eyes" && eyes_exposed) || (T == "torso" && torso_exposed) || (T == "arms" && arms_exposed) || (T == "hands" && hands_exposed) || (T == "legs" && legs_exposed) || (T == "feet" && feet_exposed))
+			if((T == "general") || (T == "NSFW/OOC") || (T == "head" && head_exposed) || (T == "face" && face_exposed) || (T == "eyes" && eyes_exposed) || (T == "torso" && torso_exposed) || (T == "arms" && arms_exposed) || (T == "hands" && hands_exposed) || (T == "legs" && legs_exposed) || (T == "feet" && feet_exposed))
+				if(length(flavor_texts["NSFW/OOC"]) >= 1)
+					NSFW = 1
+				else
+					NSFW = 0 //make sure if text gets added/removed that we update.
 				flavor_text += flavor_texts[T]
 				flavor_text += "\n\n"
 	if(!shrink)

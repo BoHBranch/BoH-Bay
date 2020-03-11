@@ -24,10 +24,4 @@
 
 /obj/item/weapon/reagent_containers/food/drinks/glass2/fitnessflask/proteinshake
 	name = "protein shake"
-
-/obj/item/weapon/reagent_containers/food/drinks/glass2/fitnessflask/proteinshake/New()
-	..()
-	reagents.add_reagent(/datum/reagent/nutriment, 30)
-	reagents.add_reagent(/datum/reagent/iron, 10)
-	reagents.add_reagent(/datum/reagent/nutriment/protein, 15)
-	reagents.add_reagent(/datum/reagent/water, 45)
+	reagents_to_add = list(/datum/reagent/nutriment = 30, /datum/reagent/iron = 10, /datum/reagent/nutriment/protein = 15, /datum/reagent/water = 45)

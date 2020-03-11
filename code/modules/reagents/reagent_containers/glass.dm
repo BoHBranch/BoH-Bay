@@ -232,16 +232,10 @@
 	volume = 120
 
 /obj/item/weapon/reagent_containers/glass/beaker/cryoxadone
-	New()
-		..()
-		reagents.add_reagent(/datum/reagent/cryoxadone, 30)
-		update_icon()
+	reagents_to_add = list(/datum/reagent/cryoxadone = 30)
 
 /obj/item/weapon/reagent_containers/glass/beaker/sulphuric
-	New()
-		..()
-		reagents.add_reagent(/datum/reagent/acid, 60)
-		update_icon()
+	reagents_to_add = list(/datum/reagent/acid = 60)
 
 /obj/item/weapon/reagent_containers/glass/bucket
 	name = "bucket"

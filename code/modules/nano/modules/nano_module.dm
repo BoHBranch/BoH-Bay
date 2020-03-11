@@ -7,7 +7,7 @@
 
 /datum/nano_module/New(var/datum/host, var/topic_manager)
 	..()
-	src.host = host.nano_host()
+	src.host = host.ui_host()
 	src.topic_manager = topic_manager
 
 /datum/nano_module/Destroy()
@@ -15,7 +15,7 @@
 	QDEL_NULL(topic_manager)
 	. = ..()
 
-/datum/nano_module/nano_host()
+/datum/nano_module/ui_host()
 	return host ? host : src
 
 /datum/nano_module/proc/can_still_topic(var/datum/topic_state/state = GLOB.default_state)
@@ -47,10 +47,10 @@
 	. = ..()
 
 /datum/nano_module/proc/get_host_z()
-	return get_z(nano_host())
+	return get_z(ui_host())
 
 /datum/nano_module/proc/print_text(var/text, var/mob/user)
-	var/datum/extension/interactive/ntos/os = get_extension(nano_host(), /datum/extension/interactive/ntos)
+	var/datum/extension/interactive/ntos/os = get_extension(ui_host(), /datum/extension/interactive/ntos)
 	if(os)
 		os.print_paper(text)
 	else

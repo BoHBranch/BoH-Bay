@@ -5,15 +5,18 @@
 	icon_state = "sushi_rice"
 	bitesize = 1
 	var/fish_type = "fish"
+	reagent_data = list(/datum/reagent/nutriment = list())
 
 /obj/item/weapon/reagent_containers/food/snacks/sushi/New(var/newloc, var/obj/item/weapon/reagent_containers/food/snacks/rice, var/obj/item/weapon/reagent_containers/food/snacks/topping)
 
 	..(newloc)
 
 	if(istype(topping))
-		for(var/taste_thing in topping.nutriment_desc)
-			if(!nutriment_desc[taste_thing]) nutriment_desc[taste_thing] = 0
-			nutriment_desc[taste_thing] += topping.nutriment_desc[taste_thing]
+		var/list/flavor = LAZYLEN(topping.reagent_data) ? topping.reagent_data[/datum/reagent/nutriment] : null
+		var/list/ourflavor = LAZYLEN(reagent_data) ? reagent_data[/datum/reagent/nutriment] : null
+		for(var/taste_thing in flavor)
+			if(!ourflavor[taste_thing]) ourflavor[taste_thing] = 0
+			ourflavor[taste_thing] += flavor[taste_thing]
 		if(istype(topping, /obj/item/weapon/reagent_containers/food/snacks/sashimi))
 			var/obj/item/weapon/reagent_containers/food/snacks/sashimi/sashimi = topping
 			fish_type = sashimi.fish_type

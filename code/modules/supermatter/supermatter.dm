@@ -104,9 +104,16 @@
 	var/aw_delam = FALSE
 	var/aw_EPR = FALSE
 
-/obj/machinery/power/supermatter/New()
-	..()
+	var/datum/looping_sound/supermatter/soundloop
+
+/obj/machinery/power/supermatter/Initialize()
+	. = ..()
 	uid = gl_uid++
+	soundloop = new(list(src), TRUE)
+
+/obj/machinery/power/supermatter/Destroy()
+	QDEL_NULL(soundloop)
+	return ..()
 
 /obj/machinery/power/supermatter/proc/handle_admin_warnings()
 	if(disable_adminwarn)
@@ -316,6 +323,11 @@
 
 	if(!istype(L)) 	//We are in a crate or somewhere that isn't turf, if we return to turf resume processing but for now.
 		return  //Yeah just stop.
+
+	if(power)
+		soundloop.volume = min(100, (round(power/7)+1))
+	else
+		soundloop.volume = 0
 
 	if(damage > explosion_point)
 		if(!exploded)
