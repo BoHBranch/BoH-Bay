@@ -619,3 +619,25 @@
 
 /obj/item/weapon/storage/box/canned/tomato
 	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/canned/tomato = 6)
+
+
+//Box of clown gear
+/obj/item/weapon/storage/box/large/clown
+	name = "Clown Kit"
+	desc = "Just looking at this box gives you the urge to honk."
+	startswith = list(/obj/item/clothing/under/rank/clown = 1,
+					/obj/item/clothing/mask/gas/clown_hat = 1,
+					/obj/item/clothing/shoes/clown_shoes = 1,
+					/obj/item/weapon/bikehorn = 1)
+
+
+//Box of mime gear
+/obj/item/weapon/storage/box/large/mime
+	name = "Mime kit"
+	desc = "......"
+	startswith = list(/obj/item/clothing/mask/gas/mime = 1,
+						/obj/item/clothing/accessory/suspenders = 1,
+						/obj/item/clothing/shoes/mime = 1,
+						/obj/item/clothing/head/beret = 1,
+						/obj/item/clothing/under/mime = 1,
+						/obj/item/clothing/gloves/white = 1)

@@ -20,7 +20,7 @@
 	allowed_roles = ARMORED_ROLES
 	allowed_branches = TACTICOOL_BRANCHES
 	whitelisted = list(SPECIES_SKRELL)
-	
+
 /datum/gear/uniform/skrell_bodysuit
 	allowed_roles = ARMORED_ROLES
 	allowed_branches = TACTICOOL_BRANCHES
@@ -30,7 +30,7 @@
 	allowed_roles = ARMORED_ROLES
 	allowed_branches = TACTICOOL_BRANCHES
 	whitelisted = list(SPECIES_SKRELL)
-	
+
 /datum/gear/uniform/harness
 	allowed_branches = null
 
@@ -49,3 +49,23 @@
 	description = "A set of insulated gloves meant for GAS."
 	whitelisted = list(SPECIES_NABBER)
 	sort_category = "Xenowear"
+
+//Clown Stuff. I did it, sue me, we live in a society. Clowns are alien freaks, hence why they're in xenowear.
+
+/datum/gear/uniform/clown
+	display_name = "Clown Kit"
+	path = /obj/item/weapon/storage/box/large/clown
+	description = "HONK"
+	cost = 3
+	sort_category = "Xenowear"
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/private_security, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/marine_corps)
+
+//Mime stuff. These guys are definitely aliens too. The way they stare at you silently is..... creepy.
+
+/datum/gear/uniform/mime
+	display_name = "Mime Kit"
+	path = /obj/item/weapon/storage/box/large/mime
+	description = "Silence!"
+	cost = 3
+	sort_category = "Xenowear"
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/private_security, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/marine_corps)
