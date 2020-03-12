@@ -1,3 +1,5 @@
+#define TESTING
+#define GC_FAILURE_HARD_LOOKUP
 #define DEBUG
 // Turf-only flags.
 #define TURF_FLAG_NOJAUNT 1 // This is used in literally one place, turf.dm, to block ethereal jaunt.

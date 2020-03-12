@@ -17,6 +17,25 @@
 
 	usr << browse(dat, "window=qdeletedlog")
 
+/client/verb/purge_all_destroyed_objects()
+	set category = "Debug"
+	if(SSgarbage)
+		while(SSgarbage.queue.len)
+			var/datum/o = locate(SSgarbage.queue[1])
+			if(istype(o) && o.gcDestroyed)
+				del(o)
+				SSgarbage.totaldels++
+			SSgarbage.queue.Cut(1, 2)
+
+/datum/verb/qdel_then_find_references(datum/thing in world)
+	set category = "Debug"
+	set name = "qdel() then Find References"
+	set background = 1
+
+	qdel(thing)
+	if(!thing.running_find_references)
+		thing.find_references(TRUE)
+
 /datum/verb/find_refs()
 	set category = "Debug"
 	set name = "Find References"
@@ -68,22 +87,6 @@
 	//restart the garbage collector
 	SSgarbage.can_fire = 1
 	SSgarbage.next_fire = world.time + world.tick_lag
-
-/datum/verb/qdel_then_find_references()
-	set category = "Debug"
-	set name = "qdel() then Find References"
-	set src in world
-
-	qdel(src, TRUE)		//Force.
-	if(!running_find_references)
-		find_references(TRUE)
-
-/datum/verb/qdel_then_if_fail_find_references()
-	set category = "Debug"
-	set name = "qdel() then Find References if GC failure"
-	set src in world
-
-	qdel_and_find_ref_if_fail(src, TRUE)
 
 //Byond type ids
 #define TYPEID_NULL "0"
