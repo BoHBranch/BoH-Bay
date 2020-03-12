@@ -173,6 +173,8 @@
 	qdel(src)
 	return
 
+/obj/structure/window/reinforced/holowindow/disappearing
+
 /obj/machinery/door/window/holowindoor/attackby(obj/item/weapon/I as obj, mob/user as mob)
 
 	if (src.operating == 1)
