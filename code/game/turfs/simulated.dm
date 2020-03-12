@@ -170,3 +170,19 @@
 	if(GAME_STATE >= RUNLEVEL_GAME)
 		fluid_update()
 	. = ..()
+
+/turf/simulated/Destroy()
+	if (zone)
+		// Try to remove it gracefully first.
+		if (can_safely_remove_from_zone())
+			c_copy_air()
+			zone.remove(src)
+		else	// Can't remove it safely, just rebuild the entire thing.
+			zone.rebuild()
+
+	// Letting this timer continue to exist can cause runtimes, so we delete it.
+	if (unwet_timer)
+		// deltimer will no-op if the timer is already deleted, so we don't need to check the timer still exists.
+		deltimer(unwet_timer)
+
+	return ..()
