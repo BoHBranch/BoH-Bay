@@ -180,9 +180,4 @@
 		else	// Can't remove it safely, just rebuild the entire thing.
 			zone.rebuild()
 
-	// Letting this timer continue to exist can cause runtimes, so we delete it.
-	if (unwet_timer)
-		// deltimer will no-op if the timer is already deleted, so we don't need to check the timer still exists.
-		deltimer(unwet_timer)
-
 	return ..()

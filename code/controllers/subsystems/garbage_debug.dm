@@ -1,4 +1,3 @@
-#define TESTING
 #ifdef TESTING
 /client/verb/show_qdeleted()
 	set category = "Debug"

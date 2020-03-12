@@ -1,5 +1,5 @@
 /datum
-	var/tmp/gc_destroyed //Time when this object was destroyed.
+	var/tmp/gcDestroyed //Time when this object was destroyed.
 	var/tmp/is_processing = FALSE
 	var/list/active_timers  //for SStimer
 
@@ -10,7 +10,7 @@
 
 // The following vars cannot be edited by anyone
 /datum/VV_static()
-	return ..() + list("gc_destroyed", "is_processing")
+	return ..() + list("gcDestroyed", "is_processing")
 
 // Default implementation of clean-up code.
 // This should be overridden to remove all references pointing to the object being destroyed.
