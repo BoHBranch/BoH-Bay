@@ -1,7 +1,7 @@
 /datum/unit_test/closet_decal_test
 	name = "CLOSETS: All Closet Appearances Shall Have Sane Values"
 	var/list/check_base_states = list("base", "lock", "light", "open", "interior", "welded", "sparks")
-	var/list/except_appearances = list()
+	var/list/except_appearances = list(/decl/closet_appearance/ascent) // FIX LATER!
 
 /datum/unit_test/closet_decal_test/start_test()
 

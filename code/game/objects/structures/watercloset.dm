@@ -213,10 +213,16 @@
 	var/watertemp = "normal"	//freezing, normal, or boiling
 	var/is_washing = 0
 	var/list/temperature_settings = list("normal" = 310, "boiling" = T0C+100, "freezing" = T0C)
+	var/datum/looping_sound/showering/soundloop
 
-/obj/structure/hygiene/shower/New()
-	..()
+/obj/structure/hygiene/shower/Initialize()
+	. = ..()
 	create_reagents(50)
+	soundloop = new(list(src), FALSE)
+
+/obj/structure/hygiene/shower/Destroy()
+	QDEL_NULL(soundloop)
+	return ..()
 
 //add heat controls? when emagged, you can freeze to death in it?
 
@@ -230,6 +236,10 @@
 
 /obj/structure/hygiene/shower/attack_hand(var/mob/M)
 	on = !on
+	if(on)
+		soundloop.start()
+	else
+		soundloop.stop(src)
 	update_icon()
 	if(on)
 		if (M.loc == loc)

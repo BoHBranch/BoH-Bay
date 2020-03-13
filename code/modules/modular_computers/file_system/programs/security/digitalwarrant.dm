@@ -36,7 +36,7 @@ LEGACY_RECORD_STRUCTURE(all_warrants, warrant)
 		var/list/archivedwarrants = list()
 		for(var/datum/computer_file/data/warrant/W in GLOB.all_warrants)
 			var/charges = W.fields["charges"]
-			if(lentext(charges) > 50)
+			if(length(charges) > 50)
 				charges = copytext(charges, 1, 50) + "..."
 			var/warrant = list(
 			"warrantname" = W.fields["namewarrant"],
@@ -123,7 +123,7 @@ LEGACY_RECORD_STRUCTURE(all_warrants, warrant)
 		. = 1
 		if(!activewarrant)
 			return
-		broadcast_security_hud_message("\A [activewarrant.fields["arrestsearch"]] warrant for <b>[activewarrant.fields["namewarrant"]]</b> has been [(activewarrant in GLOB.all_warrants) ? "edited" : "uploaded"].", nano_host())
+		broadcast_security_hud_message("\A [activewarrant.fields["arrestsearch"]] warrant for <b>[activewarrant.fields["namewarrant"]]</b> has been [(activewarrant in GLOB.all_warrants) ? "edited" : "uploaded"].", ui_host())
 		GLOB.all_warrants |= activewarrant
 		activewarrant = null
 

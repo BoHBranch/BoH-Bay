@@ -167,3 +167,21 @@
 		TAG_FACTION =   FACTION_TEST_SUBJECTS
 	)
 
+/datum/species/monkey/oldunathi
+	name = "Stokquor"
+	name_plural = "Stokquor"
+	health_hud_intensity = 1.5
+
+	icobase = 'icons/mob/human_races/species/monkey/protostok_body.dmi'
+	deform = 'icons/mob/human_races/species/monkey/protostok_body.dmi'
+
+	tail = "stoktail"
+	greater_form = SPECIES_OLDUNATHI
+	flesh_color = "#34af10"
+	base_color = "#066000"
+	reagent_tag = IS_OLDUNATHI
+	force_cultural_info = list(
+		TAG_CULTURE =   CULTURE_STOK,
+		TAG_HOMEWORLD = HOME_SYSTEM_STATELESS,
+		TAG_FACTION =   FACTION_TEST_SUBJECTS
+	)

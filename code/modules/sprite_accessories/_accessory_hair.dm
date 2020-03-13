@@ -102,6 +102,16 @@
 	icon_state = "hair_ponytail6"
 	flags = HAIR_TIEABLE
 
+/datum/sprite_accessory/hair/ponytail7
+	name = "Ponytail 7"
+	icon_state = "hair_ponytail7"
+	flags = HAIR_TIEABLE
+
+/datum/sprite_accessory/hair/half_pati
+	name = "Half-Pati"
+	icon_state = "hair_halfpati"
+	flags = HAIR_TIEABLE
+
 /datum/sprite_accessory/hair/sideponytail
 	name = "Side Ponytail"
 	icon_state = "hair_stail"

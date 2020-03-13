@@ -595,7 +595,7 @@
 					/obj/item/weapon/reagent_containers/food/drinks/flask/vacuumflask = 5,
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/gin = 5,
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/whiskey = 5,
-					/obj/item/weapon/reagent_containers/food/drinks/bottle/tequilla = 5,
+					/obj/item/weapon/reagent_containers/food/drinks/bottle/tequila = 5,
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/vodka = 5,
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/vermouth = 5,
 					/obj/item/weapon/reagent_containers/food/drinks/bottle/rum = 5,
@@ -980,7 +980,9 @@
 		/obj/item/device/flash = 5,
 		/obj/item/weapon/reagent_containers/food/snacks/donut/normal = 12,
 		/obj/item/weapon/storage/box/evidence = 6,
-		/obj/item/weapon/tape_roll = 2)
+		/obj/item/weapon/tape_roll = 2,
+		/obj/item/ammo_magazine/pistol/double/pepperball = 6,
+		/obj/item/ammo_magazine/pistol/double/rubber = 2)
 	contraband = list(/obj/item/clothing/glasses/sunglasses = 2,/obj/item/weapon/storage/box/donut = 2)
 
 /obj/machinery/vending/hydronutrients
@@ -1079,8 +1081,8 @@
 	icon_deny = "dinnerware-deny"
 	base_type = /obj/machinery/vending/dinnerware
 	products = list(
-	/obj/item/weapon/reagent_containers/glass/beaker/bowl =2,
-	/obj/item/weapon/tray = 8,
+	/obj/item/weapon/reagent_containers/glass/beaker/bowl = 4,
+	/obj/item/weapon/tray = 12,
 	/obj/item/weapon/material/knife/kitchen = 3,
 	/obj/item/weapon/material/kitchen/rollingpin = 2,
 	/obj/item/weapon/reagent_containers/food/drinks/pitcher = 2,
@@ -1098,7 +1100,15 @@
 	/obj/item/weapon/storage/lunchbox/nymph = 3,
 	/obj/item/weapon/storage/lunchbox/syndicate = 3,
 	/obj/item/weapon/storage/lunchbox/dais = 3,
-	/obj/item/weapon/material/knife/kitchen/cleaver = 1)
+	/obj/item/weapon/material/knife/kitchen/cleaver = 2,
+	/obj/item/weapon/reagent_containers/cooking_container/oven = 7, // two spare
+	/obj/item/weapon/reagent_containers/cooking_container/fryer = 4, // two spare
+	/obj/item/weapon/reagent_containers/cooking_container/pan = 6, // two spare
+	/obj/item/weapon/reagent_containers/glass/rag = 8,
+	/obj/item/weapon/material/kitchen/utensil/fork = 12,
+	/obj/item/weapon/material/knife/table = 12,
+	/obj/item/weapon/material/kitchen/utensil/spoon = 12
+	)
 
 
 	contraband = list(/obj/item/weapon/material/knife/kitchen/cleaver/bronze = 1)

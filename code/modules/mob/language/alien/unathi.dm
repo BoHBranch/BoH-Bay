@@ -18,6 +18,11 @@
 		"a",  "a",  "e",  "e",  "i",  "i",  "o",  "o",  "u",  "u",  "s",  "s"
 	)
 	shorthand = "UT"
+	partial_understanding = list(
+		LANGUAGE_HUMAN_EURO = 5,
+		LANGUAGE_SPACER = 5,
+		LANGUAGE_UNATHI_YEOSA = 50
+	)
 
 /datum/language/yeosa
 	name = LANGUAGE_UNATHI_YEOSA
@@ -40,3 +45,8 @@
 		"a",  "a",  "e",  "e",  "i",  "i",  "o",  "o",  "u",  "u",  "s",  "s"
 	)
 	shorthand = "YU"
+	partial_understanding = list(
+		LANGUAGE_HUMAN_EURO = 5,
+		LANGUAGE_SPACER = 5,
+		LANGUAGE_UNATHI_SINTA = 50
+	)

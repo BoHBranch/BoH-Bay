@@ -2,6 +2,7 @@
 	name = "Ascent - Gyne"
 	mask =     /obj/item/clothing/mask/gas/ascent
 	uniform =  /obj/item/clothing/under/ascent
+	belt =     /obj/item/clothing/suit/storage/ascent
 	id_type =  /obj/item/weapon/card/id/ascent
 	shoes =    /obj/item/clothing/shoes/magboots/ascent
 	l_ear =    null
@@ -12,10 +13,6 @@
 /decl/hierarchy/outfit/job/ascent/attendant
 	name = "Ascent - Attendant"
 	back = /obj/item/weapon/rig/mantid
-
-/decl/hierarchy/outfit/job/ascent/tech
-	name = "Ascent - Technician"
-	suit = /obj/item/clothing/suit/storage/ascent
 
 //monarchs
 /decl/hierarchy/outfit/job/monarch
@@ -41,7 +38,7 @@
 		SPECIES_MANTID_ALATE = 'icons/mob/species/mantid/onmob_mask_alate.dmi'
 	)
 	body_parts_covered = EYES //to get much of the same effect as the vox mask.
-	species_restricted = list(SPECIES_MANTID_ALATE, SPECIES_MANTID_GYNE)
+	species_restricted = list(SPECIES_MANTID_ALATE,SPECIES_MANTID_GYNE)
 	filtered_gases = list(GAS_PHORON,GAS_N2O,GAS_CHLORINE,GAS_AMMONIA,GAS_CO,GAS_METHANE)
 	flags_inv = 0
 
@@ -49,14 +46,14 @@
 	name = "serpentid facemask"
 	desc = "An alien facemask with chunky gas filters and a breathing valve."
 	filtered_gases = list(GAS_PHORON,GAS_N2O,GAS_CHLORINE,GAS_AMMONIA,GAS_CO,GAS_METHYL_BROMIDE,GAS_METHANE)
-	species_restricted = list(SPECIES_NABBER, SPECIES_MONARCH_QUEEN)
+	species_restricted = list(SPECIES_NABBER,SPECIES_MONARCH_QUEEN)
 
 /obj/item/clothing/shoes/magboots/ascent
 	name = "mantid mag-claws"
 	desc = "A set of powerful gripping claws."
 	icon_state = "ascent_boots0"
 	icon_base = "ascent_boots"
-	species_restricted = list(SPECIES_MANTID_ALATE, SPECIES_MANTID_GYNE)
+	species_restricted = list(SPECIES_MANTID_ALATE,SPECIES_MANTID_GYNE)
 	sprite_sheets = list(
 		SPECIES_MANTID_GYNE =  'icons/mob/species/mantid/onmob_shoes_gyne.dmi',
 		SPECIES_MANTID_ALATE = 'icons/mob/species/mantid/onmob_shoes_alate.dmi'

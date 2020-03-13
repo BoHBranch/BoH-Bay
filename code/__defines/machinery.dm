@@ -26,6 +26,7 @@ var/global/defer_powernet_rebuild = 0      // True if net rebuild will be called
 // Bitflags for machine stat variable.
 #define BROKEN   0x1
 #define NOPOWER  0x2
+#define POWEROFF 0x4  // Machine is disabled but not unpowered.
 #define MAINT    0x8  // Under maintenance.
 #define EMPED    0x10 // Temporary broken by EMP pulse.
 #define NOSCREEN 0x20 // No UI shown via direct interaction
