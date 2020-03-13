@@ -54,6 +54,7 @@
 	var/give_psionic_implant_on_join = TRUE // If psionic, will be implanted for control.
 
 	var/required_language
+	var/is_whitelisted = FALSE
 
 /datum/job/New()
 
@@ -193,7 +194,7 @@
 /datum/job/proc/has_alt_title(var/mob/H, var/supplied_title, var/desired_title)
 	return (supplied_title == desired_title) || (H.mind && H.mind.role_alt_title == desired_title)
 
-/datum/job/proc/is_restricted(var/datum/preferences/prefs, var/feedback)
+/datum/job/proc/is_restricted(var/datum/preferences/prefs, var/caller, var/feedback)
 
 
 	if(!isnull(allowed_branches) && (!prefs.branches[title] || !is_branch_allowed(prefs.branches[title])))
@@ -216,12 +217,15 @@
 	if(!S.check_background(src, prefs))
 		to_chat(feedback, "<span class='boldannounce'>Incompatible background for [title].</span>")
 		return TRUE
+	if(!is_job_whitelisted(caller, src))
+		to_chat(feedback, "<span class='boldannounce'>[title] is whitelisted.</span>")
+		return TRUE
 
 	return FALSE
 
 /datum/job/proc/get_join_link(var/client/caller, var/href_string, var/show_invalid_jobs)
 	if(is_available(caller))
-		if(is_restricted(caller.prefs))
+		if(is_restricted(caller.prefs, caller))
 			if(show_invalid_jobs)
 				return "<tr><td><a style='text-decoration: line-through' href='[href_string]'>[title]</a></td><td>[current_positions]</td><td>(Active: [get_active_count()])</td></tr>"
 		else
@@ -354,6 +358,8 @@
 	var/list/reasons = list()
 	if(jobban_isbanned(caller, title))
 		reasons["You are jobbanned."] = TRUE
+	if(!is_job_whitelisted(caller, type))
+		reasons["You are not whitelisted for this job."] = TRUE
 	if(is_semi_antagonist && jobban_isbanned(caller, MODE_MISC_AGITATOR))
 		reasons["You are semi-antagonist banned."] = TRUE
 	if(!player_old_enough(caller))

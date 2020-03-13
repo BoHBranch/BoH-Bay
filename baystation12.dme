@@ -1431,6 +1431,7 @@
 #include "code\modules\blob\blob.dm"
 #include "code\modules\boh\admin\panicbunker.dm"
 #include "code\modules\boh\antiboarding\tur_id.dm"
+#include "code\modules\boh\job_whitelist\jobwl.dm"
 #include "code\modules\boh\ascent2\chemicals.dm"
 #include "code\modules\boh\ascent2\crates.dm"
 #include "code\modules\boh\ascent2\firearms.dm"
