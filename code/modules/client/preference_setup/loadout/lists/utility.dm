@@ -98,13 +98,13 @@ modular computers
 	path = /obj/item/modular_computer/laptop/preset/custom_loadout/advanced
 	cost = 6
 
-/datum/gear/accessory/solawardminor
+/datum/gear/utility/instrument
 	display_name = "Instrument Selection"
 	description = "An instrument to play beautiful music. Talent not included."
 	path = /obj/item/device/synthesized_instrument
 	cost = 2
 
-/datum/gear/accessory/instrument/New()
+/datum/gear/utility/instrument/New()
 	..()
 	var/instruments = list()
 	instruments["Guitar"] = /obj/item/device/synthesized_instrument/guitar
