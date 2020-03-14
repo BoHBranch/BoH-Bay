@@ -361,7 +361,7 @@
 	var/list/reasons = list()
 	if(jobban_isbanned(caller, title))
 		reasons["You are jobbanned."] = TRUE
-	if(!has_job_whitelist(caller, type)) //This is fine.
+	if(!has_job_whitelist(caller, src)) //This is fine.
 		reasons["You are not whitelisted for this job."] = TRUE
 	if(is_semi_antagonist && jobban_isbanned(caller, MODE_MISC_AGITATOR))
 		reasons["You are semi-antagonist banned."] = TRUE
