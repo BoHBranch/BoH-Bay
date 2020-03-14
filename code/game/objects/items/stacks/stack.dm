@@ -136,7 +136,7 @@
 			to_chat(user, "<span class='warning'>You waste some [name] and fail to build \the [recipe.display_name()]!</span>")
 			return
 		var/atom/O = recipe.spawn_result(user, user.loc, produced)
-		if(!O || QDELETED(O))
+		if(QDELETED(O))
 			return // It was added to a stack or otherwise deleted.
 		O.add_fingerprint(user)
 
