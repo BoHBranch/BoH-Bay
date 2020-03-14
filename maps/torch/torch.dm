@@ -20,7 +20,9 @@
 	#include "torch_submaps.dm"
 	#include "torch_turfs.dm"
 	#include "torch_unit_testing.dm"
+	#include "torch_misc_overrides.dm"
 
+	#include "datums/access.dm"
 	#include "datums/uniforms.dm"
 	#include "datums/uniforms_expedition.dm"
 	//#include "datums/uniforms_fleet.dm"
@@ -48,6 +50,11 @@
 	#include "game/antagonist/outsider/mercenary.dm"
 	#include "game/antagonist/outsider/raider.dm"
 
+	#include "infantry/firearms.dm"
+	#include "infantry/outfits.dm"
+	#include "infantry/storage.dm"
+	#include "infantry/vending.dm"
+
 	#include "items/cards_ids.dm"
 	#include "items/encryption_keys.dm"
 	#include "items/headsets.dm"
@@ -55,6 +62,7 @@
 	#include "items/machinery.dm"
 	#include "items/manuals.dm"
 	#include "items/stamps.dm"
+	#include "items/storage.dm"
 	#include "items/uniform_vendor.dm"
 	#include "items/uniform_vendor_boh.dm"
 	#include "items/rigs.dm"
@@ -82,6 +90,7 @@
 
 	#include "items/weapon/storage/wallets.dm"
 
+	#include "job/torch_departments.dm"
 	#include "job/torch_access.dm"
 	#include "job/torch_jobs.dm"
 	#include "job/command_jobs.dm"
@@ -95,6 +104,7 @@
 	#include "job/service_jobs.dm"
 	#include "job/supply_jobs.dm"
 	#include "job/torch_jobs_boh.dm"
+	#include "job/hestia_jobs.dm"
 
 	#include "job/outfits/torch_outfits.dm"
 	#include "job/outfits/command_outfits.dm"
@@ -109,6 +119,7 @@
 	#include "job/outfits/supply_outfits.dm"
 	#include "job/outfits/boh_outfits.dm"
 	#include "job/outfits/unused_outfits.dm"
+	#include "job/outfits/hestia_outfits.dm"
 
 	#include "language/human/euro.dm"
 	#include "language/human/misc/spacer.dm"

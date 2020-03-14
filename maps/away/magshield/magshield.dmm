@@ -280,7 +280,7 @@
 "ft" = (/obj/effect/shuttle_landmark/nav_magshield/nav5,/turf/space,/area/space)
 "fu" = (/turf/simulated/wall/r_wall,/area/magshield/west)
 "fv" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock,/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/floor/tiled,/area/magshield/west)
-"fw" = (/obj/machinery/access_button{pixel_x = -25; pixel_y = 25},/obj/effect/icarus/irradiate/mag,/turf/simulated/floor/airless,/area/magshield/north)
+"fw" = (/obj/machinery/access_button{pixel_x = -25; pixel_y = 25},/obj/effect/irradiate/mag,/turf/simulated/floor/airless,/area/magshield/north)
 "fx" = (/obj/machinery/atmospherics/unary/tank,/obj/machinery/atmospherics/portables_connector{dir = 4},/obj/machinery/light_construct{dir = 8},/turf/simulated/floor/airless,/area/magshield/east)
 "fy" = (/obj/machinery/atmospherics/pipe/manifold/visible/black{dir = 4},/turf/simulated/floor/airless,/area/magshield/east)
 "fz" = (/obj/machinery/light_construct{dir = 4},/turf/simulated/floor/airless,/area/magshield/east)

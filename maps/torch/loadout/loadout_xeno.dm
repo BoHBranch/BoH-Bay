@@ -34,6 +34,11 @@
 /datum/gear/uniform/harness
 	allowed_branches = null
 
+/datum/gear/uniform/skrell_bodysuit
+	display_name = "Skrellian uniform"
+	path = /obj/item/clothing/under/skrelljumpsuit
+	sort_category = "Xenowear"
+
 // Patches
 /datum/gear/accessory/cultex_patch
 	display_name = "Cultural Exchange patch"
@@ -49,3 +54,4 @@
 	description = "A set of insulated gloves meant for GAS."
 	whitelisted = list(SPECIES_NABBER)
 	sort_category = "Xenowear"
+
