@@ -119,9 +119,6 @@
 	if(config.log_world_output)
 		game_log("DD_OUTPUT", text)
 
-/proc/log_gc(text, type)
-	game_log("GC", text)
-
 //pretty print a direction bitflag, can be useful for debugging.
 /proc/dir_text(var/dir)
 	var/list/comps = list()

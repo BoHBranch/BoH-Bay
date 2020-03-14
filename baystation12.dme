@@ -188,7 +188,6 @@
 #include "code\controllers\subsystems\fail2topic.dm"
 #include "code\controllers\subsystems\fluids.dm"
 #include "code\controllers\subsystems\garbage.dm"
-#include "code\controllers\subsystems\garbage_debug.dm"
 #include "code\controllers\subsystems\ghost_images.dm"
 #include "code\controllers\subsystems\goals.dm"
 #include "code\controllers\subsystems\graphs.dm"
