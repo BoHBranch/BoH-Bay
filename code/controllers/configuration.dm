@@ -240,7 +240,6 @@ var/list/gamemode_cache = list()
 	var/max_acts_per_interval = 140 //Number of actions per interval permitted for spam protection.
 	var/act_interval = 0.1 SECONDS //Interval for spam prevention.
 
-	var/job_whitelist = TRUE //Do we use the job whitelist?
 	var/panic_bunker = FALSE //is the panic bunker enabled?
 	var/panic_bunker_message = "Sorry! The panic bunker is enabled. Please head to our discord to get yourself added to the panic bunker bypass."
 	var/delist_population = 50 //What population do we automatically take ourselves off to hub at?
@@ -813,9 +812,6 @@ var/list/gamemode_cache = list()
 					fail2topic_rule_name = value
 				if ("fail2topic_enabled")
 					fail2topic_enabled = text2num(value)
-
-				if ("job_whitelist")
-					config.job_whitelist = TRUE
 
 				else
 					log_misc("Unknown setting in configuration: '[name]'")

@@ -165,8 +165,6 @@
 					bad_message = "<b>\[SPECIES RESTRICTED]</b>"
 				else if(!S.check_background(job, user.client.prefs))
 					bad_message = "<b>\[BACKGROUND RESTRICTED]</b>"
-				else if(!is_job_whitelisted(user, job))
-					bad_message = "<b>\[JOB WHITELISTED]</b>"
 
 				var/current_level = JOB_LEVEL_NEVER
 				if(pref.job_high == job.title)
@@ -327,7 +325,7 @@
 				set_to = JOB_LEVEL_NEVER
 			else if(set_to > JOB_LEVEL_NEVER)
 				set_to = JOB_LEVEL_HIGH
-		if(SetJob(user, set_job, set_to))
+		if(SetJob(user, set_job, set_to)) 
 			return (pref.equip_preview_mob ? TOPIC_REFRESH_UPDATE_PREVIEW : TOPIC_REFRESH)
 
 	else if(href_list["char_branch"])
@@ -392,7 +390,7 @@
 		show_browser(user, jointext(HTML, null), "window=\ref[user]skillinfo")
 
 	else if(href_list["job_info"])
-
+		
 		var/rank = href_list["job_info"]
 		var/datum/job/job = SSjobs.get_by_title(rank)
 
@@ -440,7 +438,7 @@
 		pref.player_alt_titles[job.title] = new_title
 
 /datum/category_item/player_setup_item/occupation/proc/SetJob(mob/user, role, level)
-
+	
 	level = Clamp(level, JOB_LEVEL_HIGH, JOB_LEVEL_NEVER)
 	var/datum/job/job = SSjobs.get_by_title(role, TRUE)
 	if(!job)
