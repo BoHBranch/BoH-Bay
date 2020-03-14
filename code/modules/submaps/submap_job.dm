@@ -13,9 +13,9 @@
 	allowed_branches = null
 	skill_points = 36
 	give_psionic_implant_on_join = FALSE
-	min_skill = list(   SKILL_EVA         = SKILL_ADEPT,	       
+	min_skill = list(   SKILL_EVA         = SKILL_ADEPT,
 	                    SKILL_HAULING     = SKILL_ADEPT)
-						
+
 	max_skill = list(   SKILL_BUREAUCRACY = SKILL_MAX,
 	                    SKILL_FINANCE = SKILL_MAX,
 	                    SKILL_EVA = SKILL_MAX,
@@ -64,7 +64,7 @@
 			return FALSE
 	return TRUE
 
-/datum/job/submap/is_restricted(var/datum/preferences/prefs, var/feedback)
+/datum/job/submap/is_restricted(var/client/caller, var/datum/preferences/prefs, var/feedback) //Feedback can be anything that can recieve a message.
 	var/datum/species/S = all_species[prefs.species]
 	if(LAZYACCESS(minimum_character_age, S.get_bodytype()) && (prefs.age < minimum_character_age[S.get_bodytype()]))
 		to_chat(feedback, "<span class='boldannounce'>Not old enough. Minimum character age is [minimum_character_age[S.get_bodytype()]].</span>")

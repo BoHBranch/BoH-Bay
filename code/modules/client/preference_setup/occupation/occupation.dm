@@ -165,7 +165,7 @@
 					bad_message = "<b>\[SPECIES RESTRICTED]</b>"
 				else if(!S.check_background(job, user.client.prefs))
 					bad_message = "<b>\[BACKGROUND RESTRICTED]</b>"
-				else if(!is_job_whitelisted(user, job))
+				else if(!has_job_whitelist(user.client, job))
 					bad_message = "<b>\[JOB WHITELISTED]</b>"
 
 				var/current_level = JOB_LEVEL_NEVER
@@ -516,15 +516,15 @@
 		allowed_titles += job.title
 
 		if(job.title == pref.job_high)
-			if(job.is_restricted(pref))
+			if(job.is_restricted(null,pref))
 				pref.job_high = null
 
 		else if(job.title in pref.job_medium)
-			if(job.is_restricted(pref))
+			if(job.is_restricted(null,pref))
 				pref.job_medium.Remove(job.title)
 
 		else if(job.title in pref.job_low)
-			if(job.is_restricted(pref))
+			if(job.is_restricted(null,pref))
 				pref.job_low.Remove(job.title)
 
 	if(pref.job_high && !(pref.job_high in allowed_titles))

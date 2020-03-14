@@ -198,7 +198,7 @@ SUBSYSTEM_DEF(jobs)
 			return 0
 		if(!job.player_old_enough(player.client))
 			return 0
-		if(job.is_restricted(player.client.prefs))
+		if(job.is_restricted(player.client,player.client.prefs,player))
 			return 0
 		if(job.title in mode.disabled_jobs)
 			return 0
@@ -238,7 +238,7 @@ SUBSYSTEM_DEF(jobs)
 			continue
 		if(istype(job, get_by_title(GLOB.using_map.default_assistant_title))) // We don't want to give him assistant, that's boring!
 			continue
-		if(job.is_restricted(player.client.prefs))
+		if(job.is_restricted(player.client,player.client.prefs))
 			continue
 		if(job.title in titles_by_department(COM)) //If you want a command position, select it!
 			continue
