@@ -40,6 +40,11 @@
 	glass = -1
 	paintable = 0
 
+/obj/structure/door_assembly/door_assembly_keyp
+ 	base_name = "Keypad Airlock"
+ 	glass = -1
+ 	airlock_type = "/keypad"
+
 /obj/structure/door_assembly/door_assembly_ext
 	icon = 'icons/obj/doors/external/door.dmi'
 	fill_icon = 'icons/obj/doors/external/fill_steel.dmi'
@@ -183,7 +188,7 @@
 
 	else if(istype(W, /obj/item/stack/material) && !glass)
 		var/obj/item/stack/material/S = W
-		var/material_name = S.get_material_name()		
+		var/material_name = S.get_material_name()
 		if (S)
 			if (S.get_amount() >= 1)
 				if(material_name == MATERIAL_GLASS && S.reinf_material)

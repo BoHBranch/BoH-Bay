@@ -23,7 +23,7 @@
 			return
 		else
 			overlays += image(icon, "ammo_ok")
-	
+
 /obj/item/weapon/gun/projectile/pistol/military
 	name = "military pistol"
 	desc = "The Hephaestus Industries P20 - a mass produced kinetic sidearm in widespread service with the SCGDF."
@@ -58,6 +58,16 @@
 
 /obj/item/weapon/gun/projectile/pistol/sec/lethal
 	magazine_type = /obj/item/ammo_magazine/pistol
+
+/obj/item/weapon/gun/projectile/pistol/xm24
+	name = "XM-24 pistol"
+	desc = "The XM-24 is a cheap pistol, commonly used by private military companies."
+	icon = 'icons/obj/guns/xm_pistol.dmi'
+	icon_state = "xm24"
+	magazine_type = /obj/item/ammo_magazine/pistol
+	accuracy = -1
+	fire_delay = 4
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 1)
 
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol
 	name = "magnum pistol"
