@@ -120,6 +120,7 @@
 		/datum/unarmed_attack/punch,
 		/datum/unarmed_attack/bite/sharp
 	)
+	override_organ_types = list(BP_LUNGS = /obj/item/organ/internal/lungs/gills)
 
 	descriptors = list(
 		/datum/mob_descriptor/height,

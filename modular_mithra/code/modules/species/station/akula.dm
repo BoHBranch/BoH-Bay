@@ -47,3 +47,5 @@
 			CULTURE_UNATHI,
 		)
 	)
+	override_organ_types = list(BP_LUNGS = /obj/item/organ/internal/lungs/gills)
+	
