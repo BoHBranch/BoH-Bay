@@ -13,11 +13,13 @@
 	damtype = "brute"
 	STOP_PROCESSING(SSobj, src)
 
+/*
 /obj/item/weapon/flame/water_act(var/depth)
 	..()
 	if(!waterproof && lit)
 		if(submerged(depth))
 			extinguish(no_message = TRUE)
+*/
 
 /proc/isflamesource(var/atom/A)
 	if(!istype(A))
@@ -56,7 +58,7 @@
 		M.IgniteMob()
 	var/turf/location = get_turf(src)
 	smoketime--
-	if(submerged() || smoketime < 1)
+	if(/*submerged() || */smoketime < 1)
 		extinguish()
 		return
 	if(location)

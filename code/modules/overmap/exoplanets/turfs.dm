@@ -81,8 +81,10 @@
 /turf/simulated/floor/exoplanet/water/on_update_icon()
 	return
 
+/*
 /turf/simulated/floor/exoplanet/water/is_flooded(lying_mob, absolute)
 	. = absolute ? ..() : lying_mob
+*/
 
 /turf/simulated/floor/exoplanet/water/shallow
 	name = "shallow water"

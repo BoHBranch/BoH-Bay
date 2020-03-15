@@ -397,7 +397,7 @@
 		H.take_overall_damage(2,0)
 
 	if(H.hydration < 550 && H.loc)
-		var/is_in_water = FALSE
+		/*var/is_in_water = FALSE
 		if(H.loc.is_flooded(lying_mob = TRUE))
 			is_in_water = TRUE
 		else
@@ -407,3 +407,8 @@
 					break
 		if(is_in_water)
 			H.adjust_hydration(100)
+		*/
+		for(var/obj/structure/hygiene/shower/shower in H.loc)
+			if(shower.on)
+				H.adjust_hydration(100)
+				break

@@ -57,7 +57,7 @@
 
 /obj/item/clothing/mask/smokable/Process()
 	var/turf/location = get_turf(src)
-	if(submerged() || smoketime < 1)
+	if(/*submerged() || */smoketime < 1)
 		extinguish()
 		return
 	smoke(1)
@@ -77,19 +77,23 @@
 		M.update_inv_l_hand(0)
 		M.update_inv_r_hand(1)
 
+/*
 /obj/item/clothing/mask/smokable/water_act(var/depth)
 	..()
 	if(!waterproof && lit)
 		if(submerged(depth))
 			extinguish(no_message = TRUE)
+*/
 
 /obj/item/clothing/mask/smokable/proc/light(var/flavor_text = "[usr] lights the [name].")
 	if(QDELETED(src))
 		return
 	if(!lit)
+		/*
 		if(submerged())
 			to_chat(usr, "<span class='warning'>You cannot light \the [src] underwater.</span>")
 			return
+		*/
 		lit = 1
 		damtype = "fire"
 		if(reagents.get_reagent_amount(/datum/reagent/toxin/phoron)) // the phoron explodes when exposed to fire
@@ -457,9 +461,11 @@
 
 /obj/item/clothing/mask/smokable/pipe/light(var/flavor_text = "[usr] lights the [name].")
 	if(!lit && smoketime)
+		/*
 		if(submerged())
 			to_chat(usr, "<span class='warning'>You cannot light \the [src] underwater.</span>")
 			return
+		*/
 		lit = 1
 		damtype = "fire"
 		icon_state = icon_on

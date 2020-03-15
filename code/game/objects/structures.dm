@@ -37,8 +37,8 @@
 	if(T && parts)
 		new parts(T)
 	. = ..()
-	if(istype(T))
-		T.fluid_update()
+	//if(istype(T))
+	//	T.fluid_update()
 
 /obj/structure/Crossed(mob/living/M)
 	if(istype(M))
@@ -49,6 +49,7 @@
 	for(var/mob/living/M in loc)
 		M.on_structure_offset(0)
 
+/*
 /obj/structure/Initialize()
 	. = ..()
 	if(!CanFluidPass())
@@ -58,7 +59,7 @@
 	. = ..()
 	if(. && !CanFluidPass())
 		fluid_update()
-
+*/
 
 /obj/structure/attack_hand(mob/user)
 	..()

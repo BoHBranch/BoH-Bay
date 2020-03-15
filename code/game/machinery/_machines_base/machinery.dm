@@ -430,6 +430,7 @@ Class Procs:
 		to_chat(user, "\The [src] is missing [english_list(parts)], rendering it inoperable.")
 
 // This is really pretty crap and should be overridden for specific machines.
+/*
 /obj/machinery/water_act(var/depth)
 	..()
 	if(!(stat & (NOPOWER|BROKEN)) && !waterproof && (depth > FLUID_DEEP))
@@ -439,6 +440,7 @@ Class Procs:
 	. = ..()
 	if(. && !CanPass())
 		fluid_update()
+*/
 
 /obj/machinery/get_cell()
 	var/obj/item/weapon/stock_parts/power/battery/battery = get_component_of_type(/obj/item/weapon/stock_parts/power/battery)

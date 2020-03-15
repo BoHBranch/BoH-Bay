@@ -121,13 +121,15 @@
 	else
 		..()
 
+/*
 /obj/item/weapon/weldingtool/water_act()
 	if(welding && !waterproof)
 		setWelding(0)
+*/
 
 /obj/item/weapon/weldingtool/Process()
 	if(welding)
-		if((!waterproof && submerged()) || !remove_fuel(0.05))
+		if(/*(!waterproof && submerged()) || */!remove_fuel(0.05))
 			setWelding(0)
 
 /obj/item/weapon/weldingtool/afterattack(var/obj/O, var/mob/user, proximity)
@@ -236,10 +238,12 @@
 	if (!status)
 		return
 
+	/*
 	if(!welding && !waterproof && submerged())
 		if(M)
 			to_chat(M, SPAN_WARNING("You cannot light \the [src] underwater."))
 		return
+	*/
 
 	var/turf/T = get_turf(src)
 	//If we're turning it on

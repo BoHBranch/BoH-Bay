@@ -27,10 +27,10 @@
 
 	var/movement_delay
 
-	var/fluid_can_pass
-	var/obj/effect/flood/flood_object
-	var/fluid_blocked_dirs = 0
-	var/flooded // Whether or not this turf is absolutely flooded ie. a water source.
+	//var/fluid_can_pass
+	//var/obj/effect/flood/flood_object
+	//var/fluid_blocked_dirs = 0
+	//var/flooded // Whether or not this turf is absolutely flooded ie. a water source.
 	var/footstep_type
 
 	var/tmp/changing_turf
@@ -51,15 +51,17 @@
 		setup_zmimic(mapload)
 
 /turf/on_update_icon()
-	update_flood_overlay()
+	//update_flood_overlay()
 	queue_ao(FALSE)
 
+/*
 /turf/proc/update_flood_overlay()
 	if(is_flooded(absolute = TRUE))
 		if(!flood_object)
 			flood_object = new(src)
 	else if(flood_object)
 		QDEL_NULL(flood_object)
+*/
 
 /turf/Destroy()
 	if (!changing_turf)
@@ -68,8 +70,8 @@
 	changing_turf = FALSE
 
 	remove_cleanables()
-	fluid_update()
-	REMOVE_ACTIVE_FLUID_SOURCE(src)
+	//fluid_update()
+	//REMOVE_ACTIVE_FLUID_SOURCE(src)
 
 	if (ao_queued)
 		SSao.queue -= src

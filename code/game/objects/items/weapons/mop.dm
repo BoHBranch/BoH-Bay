@@ -28,6 +28,7 @@
 		return
 
 	var/moppable
+	/*
 	if(istype(A, /turf))
 		var/turf/T = A
 		var/obj/effect/fluid/F = locate() in T
@@ -45,7 +46,8 @@
 			return
 		moppable = TRUE
 
-	else if(is_type_in_list(A,moppable_types))
+	else */
+	if(is_type_in_list(A,moppable_types))
 		moppable = TRUE
 
 	if(moppable)

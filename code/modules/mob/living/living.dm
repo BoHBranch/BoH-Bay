@@ -829,6 +829,7 @@ default behaviour is:
 	if(MUTATION_CLUMSY in mutations)
 		. -= 3
 
+/*
 /mob/living/can_drown()
 	return TRUE
 
@@ -849,6 +850,7 @@ default behaviour is:
 		var/atom/movable/A = thing
 		if(A.simulated && !A.waterproof)
 			A.water_act(depth)
+*/
 
 /mob/living/proc/nervous_system_failure()
 	return FALSE

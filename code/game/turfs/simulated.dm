@@ -166,11 +166,12 @@
 		return
 	return ..()
 
+/*
 /turf/simulated/Initialize()
 	if(GAME_STATE >= RUNLEVEL_GAME)
 		fluid_update()
 	. = ..()
-
+*/
 /turf/simulated/Destroy()
 	if (zone)
 		// Try to remove it gracefully first.
@@ -181,3 +182,4 @@
 			zone.rebuild()
 
 	return ..()
+

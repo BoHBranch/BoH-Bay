@@ -12409,7 +12409,6 @@
 /turf/simulated/wall/prepainted,
 /area/maintenance/fourthdeck/starboard)
 "NM" = (
-/obj/effect/fluid_mapped,
 /turf/simulated/floor/reinforced,
 /area/maintenance/waterstore)
 "NN" = (

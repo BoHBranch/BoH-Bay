@@ -69,8 +69,6 @@
 			return global.SSfabrication;
 		if("SSfastprocess")
 			return global.SSfastprocess;
-		if("SSfluids")
-			return global.SSfluids;
 		if("SSgarbage")
 			return global.SSgarbage;
 		if("SSghost_images")
@@ -1010,8 +1008,6 @@
 			global.SSfabrication=newval;
 		if("SSfastprocess")
 			global.SSfastprocess=newval;
-		if("SSfluids")
-			global.SSfluids=newval;
 		if("SSgarbage")
 			global.SSgarbage=newval;
 		if("SSghost_images")
