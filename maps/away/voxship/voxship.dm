@@ -88,6 +88,7 @@
 	map = "Vox Ship"
 	crew_jobs = list(
 		/datum/job/submap/voxship_vox,
+		/datum/job/submap/voxship_vox/armalis,
 		/datum/job/submap/voxship_vox/doc,
 		/datum/job/submap/voxship_vox/engineer,
 		/datum/job/submap/voxship_vox/quill
