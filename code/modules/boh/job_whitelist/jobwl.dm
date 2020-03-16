@@ -1,42 +1,50 @@
 #define JOBWHITELISTFILE "config/jobwhitelist.txt"
 
-GLOBAL_LIST_EMPTY(job_whitelist)
+GLOBAL_LIST_EMPTY(job_whitelist_list)
 
 /hook/startup/proc/loadJobWhitelist()
 	if(config.job_whitelist)
 		load_job_whitelist()
-	return 1
+		if(!LAZYLEN(GLOB.job_whitelist_list))
+			config.job_whitelist = FALSE
+			error("The whitelist system could not find any whitelist entities. The whitelist system will now disable itself.")
+	else
+		warning("Whitelists are not enabled. They will not be loaded.")
+
+	return TRUE
 
 /proc/load_job_whitelist()
-	GLOB.job_whitelist = file2list(JOBWHITELISTFILE)
+	GLOB.job_whitelist_list = file2list(JOBWHITELISTFILE)
 
-/proc/is_job_whitelisted(var/client/M, var/job)
-	if(!M || !job)
-		return 0
+/proc/has_job_whitelist(var/client/C, var/datum/job/J)
+
+	if(!C || !istype(C))
+		error("has_job_whitelist() was called without a client. Please fix this.")
+		return FALSE
+
+	if(!J || !istype(J))
+		error("has_job_whitelist() was called without a job. Please fix this.")
+		return FALSE
 
 	if(!config.job_whitelist)
-		return 1
+		return TRUE
 
-	if(check_rights(R_ADMIN, 0, M))
-		return 1
+	if(!LAZYLEN(GLOB.job_whitelist_list)) //Its your fault if you turned the system on and didn't bother to setup whitelists.
+		return TRUE
 
-	if(istype(job, /datum/job/))
-		var/datum/job/J = job
-		if(!J.is_whitelisted)
-			return 1
-		return job_whitelist_lookup(J.title, M.ckey)
-	return 0
+	if(check_rights(R_ADMIN, 0, C))
+		return TRUE
 
-/proc/job_whitelist_lookup(var/item, var/ckey)
-	if(!LAZYLEN(GLOB.job_whitelist))
-		return 0
-
+	if(!J.is_whitelisted)
+		return TRUE
 	//Config File Whitelist
-	for(var/s in GLOB.job_whitelist)
-		if(findtext(s,"[ckey] - [item]"))
-			return 1
-		if(findtext(s,"[ckey] - All"))
-			return 1
-	return 0
+	//TODO: Make this a better fucking system that doesn't require having to go through every single fucking line like this. Holy fuck.
+	for(var/s in GLOB.job_whitelist_list) //Everything here is converted to lowertext so people don't fuck it up
+		if(lowertext(s) == lowertext("[C.ckey] - [J.title]"))
+			return TRUE
+		if(lowertext(s) == lowertext("[C.ckey] - All"))
+			return TRUE
+
+	return FALSE
 
 #undef JOBWHITELISTFILE
