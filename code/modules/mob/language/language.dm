@@ -21,6 +21,7 @@
 	var/machine_understands = 1       // Whether machines can parse and understand this language
 	var/shorthand = "???"			  // Shorthand that shows up in chat for this language.
 	var/list/partial_understanding				  // List of languages that can /somehwat/ understand it, format is: name = chance of understanding a word
+	var/max_partial_understanding = 95 // The maximum percentage of the language that can be understood by non-speakers
 	var/warning = ""
 	var/hidden_from_codex			  // If it should not show up in Codex
 	var/category = /datum/language    // Used to point at root language types that shouldn't be visible
@@ -58,6 +59,8 @@
 	for(var/datum/language/L in known_languages)
 		if(LAZYACCESS(partial_understanding, L.name))
 			understand_chance += partial_understanding[L.name]
+		if(understand_chance > max_partial_understanding)
+			understand_chance = max_partial_understanding
 
 	var/list/words = splittext(input, " ")
 	var/list/scrambled_text = list()
