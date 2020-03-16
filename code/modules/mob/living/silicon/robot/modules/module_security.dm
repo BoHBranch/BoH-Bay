@@ -38,12 +38,7 @@
 	display_name = "Security"
 	crisis_locked = FALSE
 	sprites = list(
-		"Basic" = "secborg",
-		"Red Knight" = "Security",
-		"Black Knight" = "securityrobot",
-		"Bloodhound" = "bloodhound",
-		"Bloodhound - Treaded" = "secborg+tread",
-		"Tridroid" = "orb-security"
+		"Default" = "securityrobot",
 	)
 	equipment = list(
 		/obj/item/device/flash,

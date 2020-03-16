@@ -19,10 +19,7 @@
 	name = "surgeon robot module"
 	display_name = "Surgeon"
 	sprites = list(
-		"Basic" = "Medbot",
-		"Standard" = "surgeon",
-		"Advanced Droid" = "droid-medical",
-		"Needles" = "medicalrobot"
+		"Default" = "medicalrobot"
 		)
 	equipment = list(
 		/obj/item/device/flash,
@@ -74,7 +71,7 @@
 
 /obj/item/weapon/robot_module/medical/surgeon/finalize_synths()
 	. = ..()
-	var/datum/matter_synth/medicine/medicine = locate() in synths 
+	var/datum/matter_synth/medicine/medicine = locate() in synths
 	for(var/thing in list(
 		 /obj/item/stack/nanopaste,
 		 /obj/item/stack/medical/advanced/bruise_pack
@@ -92,10 +89,7 @@
 	name = "crisis robot module"
 	display_name = "Crisis"
 	sprites = list(
-		"Basic" = "Medbot",
-		"Standard" = "surgeon",
-		"Advanced Droid" = "droid-medical",
-		"Needles" = "medicalrobot"
+		"Default" = "medicalrobot"
 	)
 	equipment = list(
 		/obj/item/weapon/crowbar,

@@ -2,9 +2,7 @@
 	name = "standard robot module"
 	display_name = "Standard"
 	sprites = list(
-		"Basic" = "robot_old",
-		"Android" = "droid",
-		"Default" = "robot"
+		"Basic" = "robot"
 	)
 	equipment = list(
 		/obj/item/device/flash,

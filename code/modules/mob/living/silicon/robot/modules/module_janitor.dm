@@ -5,9 +5,7 @@
 		"Service" = TRUE
 	)
 	sprites = list(
-		"Basic" = "JanBot2",
-		"Mopbot"  = "janitorrobot",
-		"Mop Gear Rex" = "mopgearrex"
+		"Default"  = "janitorrobot",
 	)
 	equipment = list(
 		/obj/item/device/flash,

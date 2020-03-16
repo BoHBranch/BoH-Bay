@@ -7,6 +7,7 @@
 	icon_state = "robot"
 	maxHealth = 300
 	health = 300
+	pixel_x = -16
 
 	mob_bump_flag = ROBOT
 	mob_swap_flags = ROBOT|MONKEY|SLIME|SIMPLE_ANIMAL

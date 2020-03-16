@@ -8,7 +8,7 @@
 		NETWORK_RESEARCH
 	)
 	sprites = list(
-		"Droid" = "droid-science"
+		"Default" = "robot"
 	)
 	equipment = list(
 		/obj/item/device/flash,

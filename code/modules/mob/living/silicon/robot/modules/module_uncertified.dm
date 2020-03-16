@@ -1,7 +1,7 @@
 /obj/item/weapon/robot_module/uncertified
 	name = "uncertified robot module"
 	sprites = list(
-		"Roller" = "omoikane"
+		"Default" = "robot"
 	)
 	upgrade_locked = TRUE
 	skills = list(

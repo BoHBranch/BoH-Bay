@@ -27,11 +27,7 @@
 	name = "service robot module"
 	display_name = "Service"
 	sprites = list(
-		"Waitress" = "Service",
-		"Kent" = "toiletbot",
-		"Bro" = "Brobot",
-		"Rich" = "maximillion",
-		"Default" = "Service2"
+		"Default" = "robot"
 	)
 	equipment = list(
 		/obj/item/device/flash,
