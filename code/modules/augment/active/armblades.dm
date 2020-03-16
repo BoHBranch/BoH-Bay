@@ -5,7 +5,7 @@
 	icon = 'icons/obj/augment.dmi'
 	applies_material_colour = 0
 	desc = "A handy utility blade for the discerning augmentee. Warranty void if used for cutting."
-	base_parry_chance = 0
+	base_parry_chance = 30
 	unbreakable = 1
 	force_divisor = 0.2
 	sharp = 1
