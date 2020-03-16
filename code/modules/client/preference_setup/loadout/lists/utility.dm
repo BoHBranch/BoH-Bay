@@ -102,7 +102,7 @@ modular computers
 	display_name = "Instrument Selection"
 	description = "An instrument to play beautiful music. Talent not included."
 	path = /obj/item/device/synthesized_instrument
-	cost = 2
+	cost = 4
 
 /datum/gear/utility/instrument/New()
 	..()
