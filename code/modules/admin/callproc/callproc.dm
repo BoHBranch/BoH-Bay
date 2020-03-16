@@ -20,7 +20,7 @@
 				if("Mob")
 					target = input("Select target:", "Target", usr) as null|mob in range(world.view)
 				if("Area")
-					target = input("Select target:", "Target", get_turf(usr).loc) as null|area in range(world.view)
+					target = input("Select target:", "Target", get_area(usr)) as null|area in range(world.view)
 				if("Turf")
 					target = input("Select target:", "Target", get_turf(usr)) as null|turf in range(world.view)
 				if("Client")
