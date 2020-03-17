@@ -55,3 +55,22 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway)
 
 	outfit_type = /decl/hierarchy/outfit/job/hop
+
+//Honk
+/datum/job/clown
+	title = "Clown"
+	department = "The Honkmother"
+	department_flag = COM
+	total_positions = 1
+	spawn_positions = 1
+	selection_color = "#FF00DC"
+	req_admin_notify = 1
+	supervisors = "no one lol"
+	access = list()
+	minimal_access = list()
+	alt_titles = list()
+	outfit_type = /decl/hierarchy/outfit/job/clown
+	minimal_player_age = 30 //JUST IN CASE
+
+/datum/job/clown/get_access()
+	return get_all_station_access()

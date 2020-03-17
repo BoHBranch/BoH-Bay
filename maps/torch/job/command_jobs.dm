@@ -403,3 +403,44 @@
 /datum/job/bridgeofficer/get_description_blurb()
 	return "You are a Bridge Officer. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take the Dagon's helm and pilot the Byakhee if needed. You monitor bridge computer programs and communications and report relevant information to command."
 
+
+/datum/job/clown
+	title = "Clown"
+	supervisors = "The Honkmother"
+	minimal_player_age = 30
+	economic_power = 15
+	minimum_character_age = list(SPECIES_HUMAN = 20)
+	ideal_character_age = 30
+	outfit_type = /decl/hierarchy/outfit/job/clown
+	allowed_branches = list(
+		/datum/mil_branch/civilian,
+		/datum/mil_branch/fleet,
+		/datum/mil_branch/marine_corps
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/fleet/e2,
+		/datum/mil_rank/fleet/e3,
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/marine_corps/e2,
+		/datum/mil_rank/marine_corps/e3,
+		/datum/mil_rank/marine_corps/e4
+	)
+	min_skill = list()
+
+	max_skill = list()
+
+	skill_points = 30
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/card_mod,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/reports)
+
+/datum/job/clown/get_description_blurb()
+	return "You are the Clown. You are the best clown the galaxy. You are an experienced professional clown in control of an entire ship's entertainment, and ultimately responsible for all the silly shit that happens onboard. Your job is to make sure [GLOB.using_map.full_name] fulfils its space exploration mission by entertaining crew. Delegate to your tricks, jokes, and your pranks to effectively manage the ship, and listen to and trust their expertise."
+
+/datum/job/clown/post_equip_rank(var/mob/person, var/alt_title)
+	var/sound/announce_sound = (GAME_STATE <= RUNLEVEL_SETUP)? null : sound('sound/items/bikehorn.ogg', volume=30)
+	captain_announcement.Announce("<font face='Comic Sans MS' color='pink'>All hands, [alt_title || title] [person.real_name] on deck!</font>", new_sound = announce_sound)
+	..()

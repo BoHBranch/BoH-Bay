@@ -63,3 +63,19 @@
 	l_hand = /obj/item/weapon/storage/bible
 	id_type = /obj/item/weapon/card/id/civilian/chaplain
 	pda_type = /obj/item/modular_computer/pda/medical
+
+
+
+/decl/hierarchy/outfit/job/clown
+	name = OUTFIT_JOB_NAME("Clown")
+	mask = /obj/item/clothing/mask/gas/clown_hat
+	shoes = /obj/item/clothing/shoes/clown_shoes
+	uniform = /obj/item/clothing/under/rank/clown
+	id_type = /obj/item/weapon/card/id/gold
+	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
+
+/decl/hierarchy/outfit/job/clown/New()
+	..()
+	backpack_overrides[/decl/backpack_outfit/backpack]      = /obj/item/weapon/storage/backpack/clown
+	backpack_overrides[/decl/backpack_outfit/satchel]       = /obj/item/weapon/storage/backpack/clown
+	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/weapon/storage/backpack/clown

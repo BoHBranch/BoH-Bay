@@ -496,3 +496,29 @@
 /datum/job/flag/is_position_available()
 	return FALSE
 */
+
+
+
+/datum/job/clown
+	allowed_branches = list(
+		/datum/mil_branch/civilian,
+		/datum/mil_branch/fleet,
+		/datum/mil_branch/marine_corps
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/fleet/e2,
+		/datum/mil_rank/fleet/e3,
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/marine_corps/e2,
+		/datum/mil_rank/marine_corps/e3,
+		/datum/mil_rank/marine_corps/e4
+	)
+
+/datum/job/clown/get_description_blurb()
+	return "You are the Clown. You are the best clown the galaxy. You are an experienced professional clown in control of an entire ship's entertainment, and ultimately responsible for all the silly shit that happens onboard. Your job is to make sure [GLOB.using_map.full_name] fulfils its space exploration mission by entertaining crew. Delegate to your tricks, jokes, and your pranks to effectively manage the ship, and listen to and trust their expertise."
+
+/datum/job/clown/post_equip_rank(var/mob/person, var/alt_title)
+	var/sound/announce_sound = (GAME_STATE <= RUNLEVEL_SETUP)? null : sound('sound/items/bikehorn.ogg', volume=30)
+	captain_announcement.Announce("All hands, [alt_title || title] [person.real_name] on deck!", new_sound = announce_sound)
+	..()
