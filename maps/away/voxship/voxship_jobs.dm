@@ -1,6 +1,6 @@
 /datum/job/submap/voxship_vox
 	title = "Shoal Scavenger"
-	total_positions = 4
+	total_positions = 2
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
 	supervisors = "quill, apex and the arkship"
 	info = "Scrap is thin. Not much food is left, but thankfully the sector is quite rich, and it's time to get some more supplies. \
@@ -29,7 +29,7 @@
 	                    SKILL_MEDICAL = SKILL_ADEPT,
 	                    SKILL_ANATOMY = SKILL_ADEPT,
 	                    SKILL_CHEMISTRY = SKILL_ADEPT)
-	skill_points = 20
+	skill_points = 30
 
 /datum/job/submap/voxship_vox/doc
 	title = "Shoal Biotechnician"
