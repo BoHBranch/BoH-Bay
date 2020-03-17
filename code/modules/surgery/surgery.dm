@@ -190,9 +190,9 @@ GLOBAL_LIST_INIT(surgery_tool_exception_cache, new)
 			LAZYSET(possible_surgeries, S, src)
 
 	// Which surgery, if any, do we actually want to do?
-	var/decl/surgery_step/S
-	if(user.client) // In case of future autodocs.
-		S = show_radial_menu(user, src, possible_surgeries) // there is no default here so that surgeries can be gracefully cancelled
+	var/decl/surgery_step/S = LAZYACCESS(possible_surgeries, 1) // Choose the first, and probably only, one.
+	if(user.client && LAZYLEN(possible_surgeries) > 1) // In case of future autodocs.
+		S = show_radial_menu(user, M, possible_surgeries)
 	if(S && !user.skill_check_multiple(S.get_skill_reqs(user, M, src, zone)))
 		S = pick(possible_surgeries)
 

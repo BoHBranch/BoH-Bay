@@ -464,13 +464,13 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
 	for(var/obj/item/organ/I in affected.implants)
 		if ((I.status & ORGAN_CUT_AWAY) && BP_IS_ROBOTIC(I) && !BP_IS_CRYSTAL(I) && (I.parent_organ == target_zone))
-			LAZYSET(attachable_organs, I.organ_tag, I)
+			LAZYSET(attachable_organs, I, I)
 	if(!LAZYLEN(attachable_organs))
 		to_chat(user, SPAN_WARNING("There are no appropriate internal components to recouple."))
 		return FALSE
-	var/organ_to_replace = show_radial_menu(user, target, attachable_organs)
-	var/obj/item/organ/internal/augment/A = attachable_organs[organ_to_replace]
-	if(istype(A))
+	var/obj/item/organ/organ_to_replace = show_radial_menu(user, target, attachable_organs)
+	if(istype(organ_to_replace, /obj/item/organ/internal/augment))
+		var/obj/item/organ/internal/augment/A = organ_to_replace
 		if(!(A.augment_flags & AUGMENTATION_MECHANIC))
 			to_chat(user, SPAN_WARNING("\The [A] cannot function within a robotic limb!"))
 			return FALSE
@@ -482,17 +482,16 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	..()
 
 /decl/surgery_step/robotics/attach_organ_robotic/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
+	var/obj/item/organ/I = LAZYACCESS(target.surgeries_in_progress, target_zone)
+
 	user.visible_message("<span class='notice'>[user] has reattached [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] with \the [tool].</span>" , \
 	"<span class='notice'>You have reattached [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] with \the [tool].</span>")
 
-	var/current_organ = LAZYACCESS(target.surgeries_in_progress, target_zone)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	for (var/obj/item/organ/I in affected.implants)
-		if (I.organ_tag == current_organ)
-			I.status &= ~ORGAN_CUT_AWAY
-			affected.implants -= I
-			I.replaced(target, affected)
-			break
+	if(istype(I) && I.parent_organ == target_zone && affected && (I in affected.implants))
+		I.status &= ~ORGAN_CUT_AWAY
+		affected.implants -= I
+		I.replaced(target, affected)
 
 /decl/surgery_step/robotics/attach_organ_robotic/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	user.visible_message("<span class='warning'>[user]'s hand slips, disconnecting \the [tool].</span>", \
