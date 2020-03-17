@@ -97,3 +97,19 @@ modular computers
 	display_name = "laptop computer, advanced"
 	path = /obj/item/modular_computer/laptop/preset/custom_loadout/advanced
 	cost = 6
+
+/datum/gear/utility/instrument
+	display_name = "Instrument Selection"
+	description = "An instrument to play beautiful music. Talent not included."
+	path = /obj/item/device/synthesized_instrument
+	cost = 4
+
+/datum/gear/utility/instrument/New()
+	..()
+	var/instruments = list()
+	instruments["Guitar"] = /obj/item/device/synthesized_instrument/guitar
+	instruments["Electric Guitar"] = /obj/item/device/synthesized_instrument/guitar/multi
+	instruments["Synthesizer"] = /obj/item/device/synthesized_instrument/synthesizer
+	instruments["Trumpet"] = /obj/item/device/synthesized_instrument/trumpet
+	instruments["Violin"] = /obj/item/device/synthesized_instrument/violin
+	gear_tweaks += new/datum/gear_tweak/path(instruments)

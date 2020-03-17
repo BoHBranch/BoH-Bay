@@ -13,6 +13,7 @@
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/vox_shuttle)
 	area_usage_test_exempted_root_areas = list(/area/voxship)
 
+
 /obj/effect/overmap/visitable/ship/voxship
 	name = "Abnormal Asteroid"
 	desc = "Sensors detect asteroid formation, rich in minerals. Non-geological formations present.\
@@ -20,6 +21,7 @@
 	vessel_mass = 15000 //Rather heavy due to all the rocks surrounding it, and the sheer size
 	fore_dir = WEST
 	burn_delay = 5 SECONDS //Not very manoeuvrable due to the large mass
+
 	icon_state = "meteor4"
 	hide_from_reports = TRUE
 	initial_generic_waypoints = list(

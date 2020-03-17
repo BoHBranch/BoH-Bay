@@ -272,6 +272,11 @@
 #define HTTP_POST_DLL_LOCATION (world.system_type == MS_WINDOWS ? WINDOWS_HTTP_POST_DLL_LOCATION : UNIX_HTTP_POST_DLL_LOCATION)
 #endif
 
+#define FALLOFF_SOUNDS 0.5
+#define SOUND_Z_FACTOR 100
+// Maximum number of Zs away you can be from a sound before it stops being audible.
+#define MAX_SOUND_Z_TRAVERSAL 2
+
 //Recipe type defines. Used to determine what machine makes them
 #define MICROWAVE			0x1
 #define FRYER				0x2
@@ -301,5 +306,3 @@
 
 // NULL_OR_EQUAL define, ported from Aurora
 #define NULL_OR_EQUAL(self,other) (!(self) || (self) == (other))
-
-

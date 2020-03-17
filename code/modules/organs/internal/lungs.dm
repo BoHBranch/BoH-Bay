@@ -81,7 +81,7 @@
 			owner.emote("cough")		//respitory tract infection
 
 	if(is_bruised() && !owner.is_asystole())
-		if(prob(2))
+		if(prob(3))
 			if(active_breathing)
 				owner.visible_message(
 					"<B>\The [owner]</B> coughs up blood!",
@@ -94,8 +94,8 @@
 					"blood drips from <B>\the [owner]'s</B> [parent.name]!",
 				)
 
-			owner.drip(1)
-		if(prob(4))
+			owner.drip(rand(1,3))
+		if(prob(3))
 			if(active_breathing)
 				owner.visible_message(
 					"<B>\The [owner]</B> gasps for air!",
@@ -105,7 +105,12 @@
 			else
 				to_chat(owner, "<span class='danger'>You're having trouble getting enough [breath_type]!</span>")
 
-			owner.losebreath += round(damage/2)
+			owner.losebreath = max(owner.losebreath, round(damage/4))
+
+/obj/item/organ/internal/lungs/take_internal_damage(var/damage, var/silent)
+	..()
+	if(damage >= 15) //things which meaningfully harm the lungs in a single go-round will make it harder to breathe for a bit
+		owner.losebreath += damage
 
 /obj/item/organ/internal/lungs/proc/rupture()
 	var/obj/item/organ/external/parent = owner.get_organ(parent_organ)
@@ -123,7 +128,7 @@
 	var/int_pressure_diff = abs(last_int_pressure - breath_pressure)
 	var/ext_pressure_diff = abs(last_ext_pressure - ext_pressure) * owner.get_pressure_weakness(ext_pressure)
 	if(int_pressure_diff > max_pressure_diff && ext_pressure_diff > max_pressure_diff)
-		var/lung_rupture_prob = BP_IS_ROBOTIC(src) ? prob(30) : prob(60) //Robotic lungs are less likely to rupture.
+		var/lung_rupture_prob = BP_IS_ROBOTIC(src) ? prob(30) : prob(50) //Robotic lungs are less likely to rupture.
 		if(!is_bruised() && lung_rupture_prob) //only rupture if NOT already ruptured
 			rupture()
 
@@ -149,7 +154,7 @@
 		return 1
 
 	var/safe_pressure_min = min_breath_pressure // Minimum safe partial pressure of breathable gas in kPa
-	// Lung damage increases the minimum safe pressure.
+	// Lung damage increases the minimum safe pressure
 	safe_pressure_min *= 1 + rand(1,4) * damage/max_damage
 
 	if(!forced && owner.chem_effects[CE_BREATHLOSS] && !owner.chem_effects[CE_STABLE]) //opiates are bad mmkay

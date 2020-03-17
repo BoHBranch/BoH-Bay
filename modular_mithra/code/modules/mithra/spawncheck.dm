@@ -74,8 +74,8 @@
 	if(!job || !job.is_available(client))
 		alert("[job.title] is not available. Please try another.")
 		return 0
-	if(job.is_restricted(client.prefs, src))
-		return
+	if(job.is_restricted(client,client.prefs, src))
+		return 0
 	if(!attempt_vr(src,"spawn_checks",list())) //Really the only thing changed here
 		return 0									// Ditto
 

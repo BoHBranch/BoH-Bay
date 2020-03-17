@@ -41,7 +41,7 @@
 	if(href_list["toggle_hide_unskilled"])
 		hide_unskilled = !hide_unskilled
 		return 1
-	
+
 /datum/nano_module/skill_ui/proc/get_data()
 	return list()
 
@@ -228,7 +228,7 @@ The generic antag version.
 Similar, but for station antags that have jobs.
 */
 /datum/nano_module/skill_ui/antag/station
-	max_choices = list(0, 0, 3, 1, 0)
+	max_choices = list(0, 0, 3, 1, 1)
 /*
 Similar, but for off-station jobs (Bearcat, Verne, survivor etc.).
 */

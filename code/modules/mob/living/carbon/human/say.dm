@@ -23,6 +23,20 @@
 	var/snowflake_speak = (speaking && (speaking.flags & (NONVERBAL|SIGNLANG))) || (vox && vox.is_usable() && vox.assists_languages[speaking])
 	if(!isSynthetic() && need_breathe() && failed_last_breath && !snowflake_speak)
 		var/obj/item/organ/internal/lungs/L = internal_organs_by_name[species.breathing_organ]
+		var/obj/item/organ/parent = get_organ(L.parent_organ)
+		if(L.is_bruised() && !src.is_asystole())
+			if(prob((L.damage/L.max_damage) * 100))
+				if(L.active_breathing)
+					src.visible_message(
+						"<B>\The [src]</B> coughs up blood!",
+						"<span class='warning'>You cough up blood as you try to speak!</span>",
+						"You hear someone coughing!",
+					)
+				else
+					src.visible_message(
+						"blood drips from <B>\the [src]'s</B> [parent.name]!",
+					)
+				src.drip(rand(1,3))
 		if(!L || L.breath_fail_ratio > 0.9)
 			if(L && world.time < L.last_successful_breath + 2 MINUTES) //if we're in grace suffocation period, give it up for last words
 				to_chat(src, "<span class='warning'>You use your remaining air to say something!</span>")
@@ -32,9 +46,32 @@
 			to_chat(src, "<span class='warning'>You don't have enough air[L ? " in [L]" : ""] to make a sound!</span>")
 			return
 		else if(L.breath_fail_ratio > 0.7)
-			whisper_say(length(message) > 5 ? stars(message) : message, speaking)
-		else if(L.breath_fail_ratio > 0.4 && length(message) > 10)
-			whisper_say(message, speaking)
+			if(length(message) < 15)
+				return ..(message, speaking = speaking)
+			else if(length(message) < 35)
+				return ..(message, speaking = speaking, whispering = TRUE)
+			else
+				src.visible_message(
+					"<B>\The [src]</B> violently struggles to speak!",
+					"<span class='warning'>You can't get out more than a few words like this!</span>",
+					"You hear someone gasping to speak!",
+				)
+				return
+		else if(L.breath_fail_ratio > 0.4)
+			if(length(message) < 35)
+				return ..(message, speaking = speaking)
+			else
+				src.visible_message(
+					"<B>\The [src]</B> coughs and strains to speak!",
+					"<span class='warning'>You try to speak at length and can't!</span>",
+					"You hear someone struggling to speak.",
+				)
+				return
+		else
+			if(prob(50))
+				return ..(message, speaking = speaking)
+			else
+				return ..(message, speaking = speaking, whispering = TRUE)
 	else
 		return ..(message, speaking = speaking, whispering = whispering)
 
