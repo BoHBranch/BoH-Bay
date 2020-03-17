@@ -25,8 +25,8 @@
 #define WARNING_DELAY 20			//seconds between warnings.
 
 /obj/machinery/power/supermatter
-	name = "Supermatter"
-	desc = "A strangely translucent and iridescent crystal. <span class='danger'>You get headaches just from looking at it.</span>"
+	name = "suppermatter"
+	desc = "A strangely translucent and iridescent- wait, what the fuck? <span class='danger'>You get hungry just from looking at it.</span>"
 	icon = 'icons/obj/engine.dmi'
 	icon_state = "darkmatter"
 	density = 1
@@ -55,13 +55,13 @@
 
 	var/damage = 0
 	var/damage_archived = 0
-	var/safe_alert = "Crystaline hyperstructure returning to safe operating levels."
+	var/safe_alert = "Platter hyperstructure returning to safe cooking levels."
 	var/safe_warned = 0
 	var/public_alert = 0 //Stick to Engineering frequency except for big warnings when integrity bad
 	var/warning_point = 100
-	var/warning_alert = "Danger! Crystal hyperstructure instability!"
+	var/warning_alert = "Danger! Platter hyperstructure instability!"
 	var/emergency_point = 700
-	var/emergency_alert = "CRYSTAL DELAMINATION IMMINENT."
+	var/emergency_alert = "PLATTER OVERCOOKING IMMINENT."
 	var/explosion_point = 1000
 
 	light_color = "#8a8a00"
@@ -104,15 +104,14 @@
 	var/aw_delam = FALSE
 	var/aw_EPR = FALSE
 
-	var/datum/looping_sound/supermatter/soundloop
+	var/datum/sound_token/sound_token
 
 /obj/machinery/power/supermatter/Initialize()
 	. = ..()
 	uid = gl_uid++
-	soundloop = new(list(src), TRUE)
 
 /obj/machinery/power/supermatter/Destroy()
-	QDEL_NULL(soundloop)
+	QDEL_NULL(sound_token)
 	return ..()
 
 /obj/machinery/power/supermatter/proc/handle_admin_warnings()
@@ -300,10 +299,10 @@
 	else
 		alert_msg = null
 	if(alert_msg)
-		GLOB.global_announcer.autosay(alert_msg, "Supermatter Monitor", "Engineering")
+		GLOB.global_announcer.autosay(alert_msg, "Suppermatter Monitor", "Engineering")
 		//Public alerts
 		if((damage > emergency_point) && !public_alert)
-			GLOB.global_announcer.autosay("WARNING: SUPERMATTER CRYSTAL DELAMINATION IMMINENT! SAFEROOMS UNBOLTED.", "Supermatter Monitor")
+			GLOB.global_announcer.autosay("WARNING: SUPPER PLATTER CRYSTAL DELAMINATION IMMINENT! SAFEROOMS UNBOLTED.", "Suppermatter Monitor")
 			public_alert = 1
 			GLOB.using_map.unbolt_saferooms() // torch
 			for(var/mob/M in GLOB.player_list)
@@ -325,9 +324,11 @@
 		return  //Yeah just stop.
 
 	if(power)
-		soundloop.volume = min(100, (round(power/7)+1))
-	else
-		soundloop.volume = 0
+		if(!sound_token)
+			sound_token = GLOB.sound_player.PlayLoopingSound(src, "suppermatter", 'sound/machines/sm/suppermatter.ogg', volume = 20, range = 14, falloff = 6, prefer_mute = TRUE)
+		sound_token.SetVolume(min(100, (round(power/7)+1)))
+	else if(sound_token)
+		sound_token.SetVolume(0)
 
 	if(damage > explosion_point)
 		if(!exploded)
@@ -451,7 +452,7 @@
 
 /obj/machinery/power/supermatter/attack_hand(mob/user as mob)
 	user.visible_message("<span class=\"warning\">\The [user] reaches out and touches \the [src], inducing a resonance... \his body starts to glow and bursts into flames before flashing into ash.</span>",\
-		"<span class=\"danger\">You reach out and touch \the [src]. Everything starts burning and all you can hear is ringing. Your last thought is \"That was not a wise decision.\"</span>",\
+		"<span class=\"danger\">You reach out and touch \the [src]. Everything starts burning and all you can hear is ringing. Your last thought is \"That's a spicy meatball!\"</span>",\
 		"<span class=\"warning\">You hear an uneartly ringing, then what sounds like a shrilling kettle as you are washed with a wave of heat.</span>")
 
 	Consume(user)
@@ -478,7 +479,7 @@
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
-		ui = new(user, src, ui_key, "supermatter_crystal.tmpl", "Supermatter Crystal", 500, 300)
+		ui = new(user, src, ui_key, "supermatter_crystal.tmpl", "Suppermatter Crystal", 500, 300)
 		ui.set_initial_data(data)
 		ui.open()
 		ui.set_auto_update(1)

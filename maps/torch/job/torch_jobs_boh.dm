@@ -46,6 +46,7 @@
 	)
 
 /datum/job/chief_engineer
+	title = "Chef Engineer"
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/marine

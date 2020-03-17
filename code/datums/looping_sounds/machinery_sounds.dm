@@ -9,9 +9,9 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /datum/looping_sound/supermatter
-	mid_sounds = list('sound/machines/sm/supermatter1.ogg'=1,'sound/machines/sm/supermatter2.ogg'=1,'sound/machines/sm/supermatter3.ogg'=1)
-	mid_length = 10
-	volume = 1 // WHY WON'T IT BE QUIETER
+	mid_sounds = list('sound/machines/sm/suppermatter.ogg'=1)
+	mid_length = 1800
+	volume = 20 // WHY WON'T IT BE QUIETER. Because the volume is fucking modified in the supermatter.dm file you fucking detard.
 	ambient = TRUE
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
