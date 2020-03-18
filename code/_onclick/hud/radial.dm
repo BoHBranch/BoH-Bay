@@ -54,6 +54,8 @@ GLOBAL_LIST_EMPTY(radial_menus)
 	icon_state = "radial_center"
 
 /obj/screen/radial/center/Click(location, control, params)
+	if(!usr || !usr.client)
+		return
 	if(usr.client == parent.current_user)
 		parent.finished = TRUE
 
@@ -177,6 +179,8 @@ GLOBAL_LIST_EMPTY(radial_menus)
 	E.next_page = FALSE
 
 /datum/radial_menu/proc/SetElement(obj/screen/radial/slice/E,choice_id,angle,anim,anim_order)
+	if(!istype(E))
+		return
 	//Position
 	var/py = round(cos(angle) * radius) + py_shift
 	var/px = round(sin(angle) * radius)
