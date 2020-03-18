@@ -20,7 +20,7 @@
 /datum/uplink_item/item/tools/handcuffs
 	name = "Handcuffs"
 	desc = "A pair of handcuffs, for restraining people."
-	item_cost = 2
+	item_cost = 1
 	path = /obj/item/weapon/handcuffs
 
 /datum/uplink_item/item/tools/money
