@@ -126,7 +126,7 @@
 	name = "Combat Shotgun"
 	desc = "A high compacity, pump-action shotgun regularly used for repelling boarding parties in close range scenarios. \
 	For your use? Well, just pray you've enough shells, and don't stop firing."
-	item_cost = 34
+	item_cost = 52
 	path = /obj/item/weapon/gun/projectile/shotgun/pump/combat
 
 /datum/uplink_item/item/visible_weapons/sawnoff
