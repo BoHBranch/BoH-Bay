@@ -36,14 +36,14 @@
 /datum/uplink_item/item/tools/plastique
 	name = "C-4"
 	desc = "Set this on a wall to put a hole exactly where you need it, without too much extra hole."
-	item_cost = 16
+	item_cost = 14
 	path = /obj/item/weapon/plastique
 
 /datum/uplink_item/item/tools/heavy_armor
 	name = "Heavy Armor Vest and Helmet"
 	desc = "This satchel holds a combat helmet and fully equipped plate carrier. \
 	Suit up, and strap in, things are about to get hectic."
-	item_cost = 16
+	item_cost = 10
 	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/armor
 
 /datum/uplink_item/item/tools/encryptionkey_radio
@@ -143,7 +143,7 @@
 /datum/uplink_item/item/tools/camera_mask
 	name = "Camera MIU"
 	desc = "Wearing this mask allows you to remotely view any cameras you currently have access to. Take the mask off to stop viewing."
-	item_cost = 60
+	item_cost = 55
 	antag_costs = list(MODE_MERCENARY = 30)
 	path = /obj/item/clothing/mask/ai
 
