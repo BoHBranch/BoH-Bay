@@ -19,9 +19,9 @@
 
 /datum/uplink_item/item/tools/handcuffs
 	name = "Handcuffs"
-	desc = "A pair of.... fuzzy cuffs? Don't ask."
+	desc = "A pair of handcuffs, for restraining people."
 	item_cost = 2
-	path = /obj/item/weapon/handcuffs/fuzzy
+	path = /obj/item/weapon/handcuffs
 
 /datum/uplink_item/item/tools/money
 	name = "Operations Funding"
