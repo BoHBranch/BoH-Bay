@@ -100,7 +100,7 @@
 
 /datum/hallucination/sound/start()
 	var/turf/T = locate(holder.x + rand(6,11), holder.y + rand(6,11), holder.z)
-	holder.playsound_local(T,pick(sounds),70)
+	holder.playsound_simple(T,pick(sounds),70)
 
 /datum/hallucination/sound/tools
 	sounds = list('sound/items/Ratchet.ogg','sound/items/Welder.ogg','sound/items/Crowbar.ogg','sound/items/Screwdriver.ogg')
@@ -127,10 +127,10 @@
 /datum/hallucination/gunfire/start()
 	gunshot = pick('sound/weapons/gunshot/gunshot_strong.ogg', 'sound/weapons/gunshot/gunshot2.ogg', 'sound/weapons/gunshot/shotgun.ogg', 'sound/weapons/gunshot/gunshot.ogg','sound/weapons/Taser.ogg')
 	origin = locate(holder.x + rand(4,8), holder.y + rand(4,8), holder.z)
-	holder.playsound_local(origin,gunshot,50)
+	holder.playsound_simple(origin,gunshot,50)
 
 /datum/hallucination/gunfire/end()
-	holder.playsound_local(origin,gunshot,50)
+	holder.playsound_simple(origin,gunshot,50)
 
 //Hearing someone talking to/about you.
 /datum/hallucination/talking/can_affect(var/mob/living/carbon/C)
@@ -294,7 +294,7 @@
 /datum/hallucination/fakeattack/start()
 	for(var/mob/living/M in oview(holder,1))
 		to_chat(holder, "<span class='danger'>[M] has punched [holder]!</span>")
-		holder.playsound_local(get_turf(holder),"punch",50)
+		holder.playsound_simple(get_turf(holder),"punch",50)
 
 //Fake injection
 /datum/hallucination/fakeattack/hypo

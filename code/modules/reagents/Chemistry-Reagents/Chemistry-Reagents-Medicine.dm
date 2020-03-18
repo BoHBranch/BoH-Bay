@@ -913,10 +913,10 @@
 		return
 
 	if(M.chem_doses[type] < 0.2)	//not that effective after initial rush
-		M.add_chemical_effect(CE_PAINKILLER, min(30*volume, 80))
+		M.add_chemical_effect(CE_PAINKILLER, min(30*volume, 60))
 		M.add_chemical_effect(CE_PULSE, 1)
 	else if(M.chem_doses[type] < 1)
-		M.add_chemical_effect(CE_PAINKILLER, min(10*volume, 20))
+		M.add_chemical_effect(CE_PAINKILLER, min(10*volume, 10))
 	M.add_chemical_effect(CE_PULSE, 2)
 	if(M.chem_doses[type] > 10)
 		M.make_jittery(1)

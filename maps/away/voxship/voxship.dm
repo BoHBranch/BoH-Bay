@@ -16,7 +16,7 @@
 /obj/effect/overmap/visitable/sector/vox_base
 	name = "large asteroid"
 	desc = "Sensor array detects a large asteroid."
-	in_space = 1
+	sector_flags = OVERMAP_SECTOR_IN_SPACE
 	icon_state = "meteor4"
 	hide_from_reports = TRUE
 	initial_generic_waypoints = list(

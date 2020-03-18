@@ -130,6 +130,7 @@
 	economic_power = 0.9
 	ruling_body = "Gilgamesh Colonial Confederation"
 	language = LANGUAGE_HUMAN_RUSSIAN
+	secondary_langs = list(LANGUAGE_HUMAN_GAIAN)
 
 /decl/cultural_info/location/human/tersten
 	name = HOME_SYSTEM_TERSTEN
@@ -231,6 +232,7 @@
 	once again.  They suffered hard twenty years prior, and fear they may suffer again."
 	capital = "New Venice"
 	economic_power = 1.0
+	secondary_langs = list(LANGUAGE_HUMAN_GAIAN)
 
 /decl/cultural_info/location/human/magnitka
 	name = HOME_SYSTEM_MAGNITKA
@@ -242,4 +244,5 @@
 	Though historically relatively isolationist, today Magnitka finds itself more and more closely associated with the Gilgamesh Colonial Confederation, in an effort to offset its economic decline."
 	capital = "Labortown"
 	economic_power = 0.8
+	secondary_langs = list(LANGUAGE_HUMAN_GAIAN)
 	ruling_body = "Magnitka"
