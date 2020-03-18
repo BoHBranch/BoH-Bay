@@ -83,8 +83,8 @@
 		TAG_FACTION = FACTION_POSITRONICS
 	)
 
-	brute_mod =      1.1
-	burn_mod =       1.5
+	brute_mod =      1.6
+	burn_mod =       2.0 //Yep, increased again. Machines are easier to damage by shooting than squishy, also IPCS are OP.
 
 /datum/species/machine/handle_death(var/mob/living/carbon/human/H)
 	..()
