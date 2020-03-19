@@ -1,4 +1,4 @@
-/datum/job/submap/voxship_vox
+/datum/job/submap/voxship_vox/scav
 	title = "Shoal Scavenger"
 	total_positions = 3
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
@@ -40,7 +40,7 @@
 						SKILL_EVA         = SKILL_EXPERT,
 						SKILL_MEDICAL     = SKILL_EXPERT,
 						SKILL_ANATOMY     = SKILL_EXPERT,
-						SKILL_CHEMISTRY   = SKILL_BASIC)
+						SKILL_CHEMISTRY   = SKILL_ADEPT)
 						
 	max_skill = list(   SKILL_BUREAUCRACY = SKILL_MAX,
 	                    SKILL_FINANCE = SKILL_MAX,
@@ -63,7 +63,7 @@
 	                    SKILL_MEDICAL = SKILL_MAX,
 	                    SKILL_ANATOMY = SKILL_MAX,
 	                    SKILL_CHEMISTRY = SKILL_MAX)
-	skill_points = 20
+	skill_points = 16
 	
 /datum/job/submap/voxship_vox/engineer
 	title = "Shoal Technician"
@@ -74,9 +74,9 @@
 						SKILL_COMPUTER     = SKILL_BASIC,
 	                    SKILL_EVA          = SKILL_EXPERT,
 	                    SKILL_CONSTRUCTION = SKILL_ADEPT,
-	                    SKILL_ELECTRICAL   = SKILL_BASIC,
-	                    SKILL_ATMOS        = SKILL_BASIC,
-	                    SKILL_ENGINES      = SKILL_BASIC)
+	                    SKILL_ELECTRICAL   = SKILL_ADEPT,
+	                    SKILL_ATMOS        = SKILL_ADEPT,
+	                    SKILL_ENGINES      = SKILL_ADEPT)
 						
 	max_skill = list(   SKILL_BUREAUCRACY = SKILL_MAX,
 	                    SKILL_FINANCE = SKILL_MAX,
@@ -99,7 +99,7 @@
 	                    SKILL_MEDICAL = SKILL_ADEPT,
 	                    SKILL_ANATOMY = SKILL_ADEPT,
 	                    SKILL_CHEMISTRY = SKILL_ADEPT)
-	skill_points = 20
+	skill_points = 16
 	
 /datum/job/submap/voxship_vox/quill
 	title = "Quill"
@@ -112,8 +112,8 @@
 						SKILL_EVA         = SKILL_EXPERT,
 						SKILL_SCIENCE     = SKILL_ADEPT,
 						SKILL_PILOT       = SKILL_ADEPT,
-						SKILL_COMBAT      = SKILL_ADEPT,
-						SKILL_WEAPONS     = SKILL_ADEPT)
+						SKILL_COMBAT      = SKILL_MAX,
+						SKILL_WEAPONS     = SKILL_MAX)
 					
 	max_skill = list(   SKILL_BUREAUCRACY = SKILL_MAX,
 	                    SKILL_FINANCE = SKILL_MAX,
@@ -153,7 +153,7 @@
 	r_pocket = /obj/item/device/radio
 	l_pocket = /obj/item/weapon/crowbar/prybar
 
-/obj/effect/submap_landmark/spawnpoint/voxship_crew
+/obj/effect/submap_landmark/spawnpoint/voxship_crew/scav
 	name = "Shoal Scavenger"
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/doc
