@@ -14,6 +14,7 @@ somewhere on that shuttle. Subtypes of these can be then used to perform ship ov
 		return
 	if(sector.check_ownership(src))
 		linked = sector
+		sector.linked_computers += src
 		return 1
 
 /obj/machinery/computer/ship/proc/sync_linked()
@@ -95,4 +96,8 @@ somewhere on that shuttle. Subtypes of these can be then used to perform ship ov
 			var/M = W.resolve()
 			if(M)
 				unlook(M)
+	. = ..()
+
+/obj/machinery/computer/ship/Destroy()
+	linked.linked_computers -= src
 	. = ..()
