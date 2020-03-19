@@ -13,5 +13,5 @@
 	                    SKILL_PILOT       = SKILL_BASIC)
 	skill_points = 4 //hahaha no not when you get min skills bucko
 
-/obj/effect/submap_landmark/spawnpoint/voxship_crew/armalis
+/obj/effect/submap_landmark/spawnpoint/voxship_crew
 	name = "Shoal Armalis"
