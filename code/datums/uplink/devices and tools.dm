@@ -40,7 +40,7 @@
 /datum/uplink_item/item/tools/plastique
 	name = "C-4"
 	desc = "Set this on a wall to put a hole exactly where you need it, without too much extra hole."
-	item_cost = 14
+	item_cost = 10
 	path = /obj/item/weapon/plastique
 
 /datum/uplink_item/item/tools/heavy_armor
