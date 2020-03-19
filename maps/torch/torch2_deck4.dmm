@@ -297,6 +297,9 @@
 	c_tag = "Supply Office - Deck Officer";
 	dir = 8
 	},
+/obj/machinery/photocopier/faxmachine{
+	department = "Deck Chief"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/deckchief)
 "aR" = (
@@ -306,9 +309,6 @@
 	},
 /obj/structure/table/standard{
 	name = "plastic table frame"
-	},
-/obj/machinery/photocopier/faxmachine{
-	department = "Cargo"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/office)
