@@ -4747,6 +4747,10 @@
 	dir = 8;
 	pixel_x = 21
 	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Locker Room Hallway 1";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "aim" = (
@@ -6037,6 +6041,10 @@
 "akr" = (
 /obj/structure/noticeboard{
 	pixel_y = 32
+	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Locker Room Hallway 2";
+	dir = 2
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -7749,7 +7757,7 @@
 /area/command/armoury/tactical)
 "anu" = (
 /obj/structure/closet/crate{
-	name = "Hydrophonics Supplies"
+	name = "Hydroponics Supplies"
 	},
 /obj/item/weapon/reagent_containers/glass/bucket,
 /obj/item/weapon/reagent_containers/glass/bucket,
@@ -25640,6 +25648,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/item/modular_computer/telescreen/preset/medical{
 	pixel_x = 32
+	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Emergency Treatment Center Starboard 2";
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
