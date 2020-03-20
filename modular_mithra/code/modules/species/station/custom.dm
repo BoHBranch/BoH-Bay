@@ -113,7 +113,7 @@
 			RELIGION_UNATHI_PRECURSOR,
 			RELIGION_UNATHI_STRATAGEM,
 			RELIGION_UNATHI_LIGHTS
-		),		
+		),
 		TAG_HOMEWORLD = list(
 			HOME_SYSTEM_MARS,
 			HOME_SYSTEM_EARTH,
@@ -140,8 +140,8 @@
 			HOME_SYSTEM_SKRELLSPACE,
 			HOME_SYSTEM_ROOT
 		)
-	)				
-	
+	)
+
 /datum/species/custom/get_bodytype()
 	var/datum/species/real = all_species[base_species]
 	return real.name
@@ -159,7 +159,8 @@
 	if(H && istype(E))
 		E.custom_species_override = H.species.base_species
 		E.species = H.species
-		E.force_icon = H.species.get_icobase()
+		if(!BP_IS_ROBOTIC(E))	//Check if the limb is robotic
+			E.force_icon = H.species.get_icobase()
 
 /datum/species/custom/proc/produceCopy(var/datum/species/to_copy,var/list/traits,var/mob/living/carbon/human/H)
 	ASSERT(to_copy)
