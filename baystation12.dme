@@ -2200,7 +2200,6 @@
 #include "code\modules\mob\living\deity\deity_pylon.dm"
 #include "code\modules\mob\living\deity\deity_sources.dm"
 #include "code\modules\mob\living\deity\deity_Stat.dm"
-#include "code\modules\mob\living\deity\deity_topic.dm"
 #include "code\modules\mob\living\deity\deity_tracking.dm"
 #include "code\modules\mob\living\deity\forms.dm"
 #include "code\modules\mob\living\deity\say.dm"

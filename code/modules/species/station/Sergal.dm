@@ -29,7 +29,7 @@
 	min_age = 18
 	max_age = 100
 
-	description = "Shark-dogs. Placeholder description."
+	description = "A species originating from the planet Tal, uplifted in the year 2405. As a point that is still rather a black spot, they were subjected to a rather brutal colonization period upon being discovered by the United Colonies of Gilgamesh. Still considered second-class citizens within GCC space, the majority of Sergals are either refugees, or descendents of such."
 
 	cold_level_1 = 260 //Default 260 - Lower is better
 	cold_level_2 = 200 //Default 200
