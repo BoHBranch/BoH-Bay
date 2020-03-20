@@ -23,7 +23,7 @@
 	name = "Reveal Hellscape"
 	desc = "Show a non-follower what awaits their souls after you are through with them."
 	cost = 40
-	cooldown = 450
+	cooldown = 240
 	flags = PHENOMENA_NONFOLLOWER
 	expected_type = /mob/living
 	var/static/list/creepy_notes = list("Your knees give out as an unnatural screaming rings your ears.",

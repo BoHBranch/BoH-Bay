@@ -1,7 +1,7 @@
 /datum/phenomena/herald
 	name = "Bestow Heraldry"
 	desc = "Turn one of your followers into a herald of your coming."
-	cost = 70
+	cost = 10
 	cooldown = 60 SECONDS
 	flags = PHENOMENA_FOLLOWER
 	expected_type = /mob/living/carbon/human
@@ -149,9 +149,9 @@
 /datum/phenomena/burning_glare
 	name = "Burning Glare"
 	desc = "Burn a victim. If they are burnt enough, you'll set them ablaze."
-	cost = 50
+	cost = 20
 	flags = PHENOMENA_NONFOLLOWER|PHENOMENA_NEAR_STRUCTURE
-	cooldown = 30 SECONDS
+	cooldown = 15 SECONDS
 	expected_type = /mob/living
 
 /datum/phenomena/burning_glare/activate(var/mob/living/L)
@@ -198,7 +198,7 @@
 	new /obj/aura/starborn(L)
 	L.status_flags |= GODMODE
 	GLOB.destroyed_event.register(L,src,.proc/fail_ritual)
-	addtimer(CALLBACK(src, .proc/succeed_ritual, L), 600 SECONDS) //6 minutes
+	addtimer(CALLBACK(src, .proc/succeed_ritual, L), 300 SECONDS) //5 minutes.
 	for(var/mob/living/player in GLOB.player_list)
 		sound_to(player, 'sound/effects/cascade.ogg')
 		if(player.mind && istype(player.mind.assigned_job, /datum/job/chaplain))
