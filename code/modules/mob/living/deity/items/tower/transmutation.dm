@@ -27,7 +27,7 @@
 /datum/deity_item/boon/single_charge/knock
 	name = "Knock"
 	desc = "Allows a follower to open nearby doors without the keys."
-	base_cost = 25
+	base_cost = 20
 	category = DEITY_TREE_TRANSMUTATION
 	boon_path = /spell/aoe_turf/knock/tower
 	requirements = list(DEITY_TREE_TRANSMUTATION = 2)
@@ -52,7 +52,7 @@
 /datum/deity_item/boon/single_charge/jaunt
 	name = "Ethereal Jaunt"
 	desc = "Allows a follower to liquify for a short duration, letting them pass through all dense objects."
-	base_cost = 25
+	base_cost = 20
 	category = DEITY_TREE_TRANSMUTATION
 	boon_path = /spell/targeted/ethereal_jaunt/tower
 	requirements = list(DEITY_TREE_TRANSMUTATION = 3)

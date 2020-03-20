@@ -7,7 +7,7 @@
 	<b>Drawbacks:</b><br>
 		<font color='red'>-Servant abilities require copious amounts of their blood.</font>
 	"}
-	desc = "A being made of a million nightmares, a billion deaths."
+	desc = "A being made of a billion deaths. The embodiment of the void and the unknown terror that it brings."
 	god_icon_state = "nar-sie"
 	pylon_icon_state = "shade"
 	faction = "cult"
