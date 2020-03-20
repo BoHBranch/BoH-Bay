@@ -6,16 +6,10 @@
 	icon_screen = "teleport"
 	light_color = "#77fff8"
 	extra_view = 4
-	var/list/objects_in_view = list()
-	var/list/temporary_contacts = list()
-	var/list/contact_datums = list()
-	var/list/hud_elements = list()
 	var/obj/machinery/shipsensors/sensors
-
 	var/working_sound = 'sound/machines/sensors/dradis.ogg'
 	var/datum/sound_token/sound_token
 	var/sound_id
-
 
 /obj/machinery/computer/ship/sensors/attempt_hook_up(obj/effect/overmap/visitable/ship/sector)
 	if(!(. = ..()))
@@ -124,130 +118,6 @@
 			playsound(loc, "sound/machines/dotprinter.ogg", 30, 1)
 			new/obj/item/weapon/paper/(get_turf(src), O.get_scan_data(user), "paper (Sensor Scan - [O])")
 		return TOPIC_HANDLED
-
-/obj/machinery/computer/ship/sensors/Process()
-	..()
-	update_sound()
-	if(!linked)
-		return
-	if(sensors && sensors.use_power && sensors.powered())
-		var/sensor_range = round(sensors.range*1.5) + 1
-		linked.set_light(1, sensor_range, sensor_range+1)
-		search_area(sensor_range)
-	else
-		linked.set_light(0)
-
-/obj/machinery/computer/ship/sensors/proc/search_area(var/rangeamt)
-	objects_in_view.Cut()
-	for(var/obj/effect/overmap/visitable/ship/contact in view(rangeamt, linked))
-		if(contact == linked)
-			continue
-		objects_in_view += contact
-		var/dist = get_dist(linked, contact)
-		var/time_delay = SENSOR_TIME_DELAY * dist
-		var/datum/ship_contact/record
-		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
-		if(GetContactData(contact))
-			record = GetContactData(contact)
-
-		if(!record)
-			var/datum/ship_contact/new_record = new(contact)
-			contact_datums += new_record
-			NotifyNewContact(bearing, new_record)
-
-		if(record)
-			HandleIdentification(bearing, record)
-			if(!CheckContact(contact))
-				GenerateContact(record)
-			UpdateContact(record, rangeamt)
-
-/obj/machinery/computer/ship/sensors/proc/NotifyNewContact(var/bearing, var/datum/ship_contact/C)
-	playsound(loc, "sound/machines/sensors/newcontact.ogg", 30, 1)
-	visible_message(SPAN_NOTICE("[src] states, 'New contact detected, temporary designation [C.temp_designation], bearing [bearing]. Identification in progress.'"))
-
-/obj/machinery/computer/ship/sensors/proc/NotifyIdentification(var/bearing, var/datum/ship_contact/C)
-	playsound(loc, "sound/machines/sensors/contact_identified.ogg", 30, 1)
-	visible_message(SPAN_NOTICE("[src] states, 'Contact [C.temp_designation] identified as [C.name], [C.class_long], bearing [bearing].'"))
-
-/obj/machinery/computer/ship/sensors/proc/CheckContact(var/obj/effect/overmap/visitable/ship/contact)
-	for(var/image/SC in hud_elements)
-		if(SC.tag == contact.name)
-			return SC
-	return FALSE
-
-/obj/machinery/computer/ship/sensors/proc/GenerateContact(var/datum/ship_contact/C)
-	var/new_name
-	var/image/I = image(C.effect, 'icons/obj/overmap.dmi', icon_state = "shuttle")
-	I.tag = C.effect.name
-	if(C.identified)
-		new_name = C.temp_designation
-	else
-		new_name = C.name
-	I.maptext = new_name
-	I.maptext_width = 128
-	I.maptext_y = 25
-	I.maptext_x = -15
-	hud_elements += I
-
-/obj/machinery/computer/ship/sensors/proc/UpdateContact(var/datum/ship_contact/C, var/range)
-	var/image/SC = CheckContact(C.effect)
-	if(!CheckContactRange(C.effect, range)) //If it's not even in range, grab the effect and just ... DELETE.
-		animate(SC, alpha=0, 1 SECONDS, 1, LINEAR_EASING)
-		RemoveFromViewers(SC)
-	if(C.identified)
-		SC.icon = C.effect.icon
-		SC.icon_state = C.effect.icon_state
-		SC.color = C.effect.color
-		SC.maptext = C.name
-	for(var/weakref/W in viewers)
-		var/mob/M = W.resolve()
-		if(istype(M))
-			M.client.images -= hud_elements
-			M.client.images |= hud_elements
-
-/obj/machinery/computer/ship/sensors/proc/CheckContactRange(var/obj/effect/overmap/visitable/ship/contact, var/range)
-	var/dist = get_dist(linked, contact)
-	if(dist > range)
-		return FALSE
-	else
-		return TRUE
-
-/obj/machinery/computer/ship/sensors/proc/GetContactData(var/obj/effect/overmap/visitable/ship/contact)
-	for(var/datum/ship_contact/C in contact_datums)
-		if(C.effect == contact)
-			return C
-	return FALSE
-
-/obj/machinery/computer/ship/sensors/proc/HandleIdentification(var/bearing, var/datum/ship_contact/C)
-	if(C.identified)
-		return //already identified.
-	if(C.identification_progress < C.identification_required)
-		C.identification_progress += 5
-	if(C.identification_progress == C.identification_required)
-		C.identified = TRUE
-		NotifyIdentification(bearing, C)
-
-/obj/machinery/computer/ship/sensors/proc/RemoveFromViewers(var/image/SC)
-	hud_elements -= SC
-	for(var/weakref/W in viewers)
-		var/mob/M = W.resolve()
-		if(istype(M))
-			M.client.images -= SC
-
-
-/obj/machinery/computer/ship/sensors/proc/RemoveAllEffectsFromViewer(var/mob/user)
-	user.client.images -= hud_elements
-
-/obj/machinery/computer/ship/sensors/proc/AddAllEffectsToViewer(var/mob/user)
-	user.client.images |= hud_elements
-
-/obj/machinery/computer/ship/sensors/look(var/mob/user)
-	. = ..()
-	AddAllEffectsToViewer(user)
-
-/obj/machinery/computer/ship/sensors/unlook(var/mob/user)
-	. = ..()
-	RemoveAllEffectsFromViewer(user)
 
 /obj/machinery/shipsensors
 	name = "sensors suite"
