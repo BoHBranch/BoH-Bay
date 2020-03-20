@@ -95,7 +95,7 @@
 /datum/uplink_item/item/visible_weapons/assaultrifle
 	name = "Assault Rifle"
 	desc = "A common rifle with three togglable fire modes."
-	item_cost = 68
+	item_cost = 72
 	path = /obj/item/weapon/gun/projectile/automatic/assault_rifle
 
 /datum/uplink_item/item/visible_weapons/advanced_energy_gun
