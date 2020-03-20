@@ -101,13 +101,6 @@
 	else
 		icon_state = off_icon
 
-/obj/machinery/appliance/verb/toggle_power()
-	set name = "Toggle Power"
-	set category  = "Object"
-	set src in view()
-
-	attempt_toggle_power(usr)
-
 /obj/machinery/appliance/proc/attempt_toggle_power(mob/user)
 	if (!isliving(user))
 		return
@@ -241,6 +234,28 @@
 
 	//From here we can start cooking food
 	add_content(I, user)
+	update_icon()
+
+/obj/machinery/appliance/cooker/attempt_toggle_power(mob/user)
+	if (!isliving(user))
+		return
+
+	if (!user.IsAdvancedToolUser())
+		to_chat(user, "You lack the dexterity to do that!")
+		return
+
+	if (user.stat || user.restrained() || user.incapacitated())
+		return
+
+	if (!Adjacent(user) && !issilicon(user))
+		to_chat(user, "You can't reach [src] from here.")
+		return
+
+	var/desired_temp
+
+	use_power = !!desired_temp
+	user.visible_message("[user] turns [src] [(stat & POWEROFF) ? "off" : "on"].", "You turn [(stat & POWEROFF) ? "off" : "on"] [src].")
+	playsound(src, 'sound/machines/click.ogg', 40, 1)
 	update_icon()
 
 //Override for container mechanics
@@ -520,6 +535,11 @@
 	smoke.attach(src)
 	smoke.set_up(10, 0, get_turf(src), 300)
 	smoke.start()
+
+/obj/machinery/appliance/CtrlClick(var/mob/user)
+	if(!anchored)
+		return ..()
+	attempt_toggle_power(user)
 
 /obj/machinery/appliance/attack_hand(var/mob/user)
 	if (cooking_objs.len)

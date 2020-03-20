@@ -2,6 +2,9 @@
 	var/min_temp = 80 + T0C	//Minimum temperature to do any cooking
 	var/optimal_temp = 200 + T0C	//Temperature at which we have 100% efficiency. efficiency is lowered on either side of this
 	var/optimal_power = 1.1//cooking power at 100%
+	var/set_temp = 200 + T0C
+	var/temp_settings = 4 // the number of temperature settings to have, including min and optimal
+	var/list/temp_options = list()
 
 	var/loss = 1	//Temp lost per proc when equalising
 	var/resistance = 320000	//Resistance to heating. combines with heating power to determine how long heating takes
@@ -41,6 +44,9 @@
 
 /obj/machinery/appliance/cooker/Initialize()
 	. = ..()
+	var/interval = (optimal_temp - min_temp)/temp_settings
+	for(var/i=0, i<temp_settings, i++)
+		temp_options += Clamp((LAZYACCESS(temp_options, i-1) || min_temp) + interval, min_temp, optimal_temp)
 	loss = (active_power_usage / resistance)*0.5
 	cooking_objs = list()
 	for (var/i = 0, i < max_contents, i++)
@@ -48,6 +54,32 @@
 	cooking = 0
 
 	queue_icon_update()
+
+/obj/machinery/appliance/cooker/attempt_toggle_power(mob/user)
+	if (!isliving(user))
+		return
+
+	if (!user.IsAdvancedToolUser())
+		to_chat(user, "You lack the dexterity to do that!")
+		return
+
+	if (user.stat || user.restrained() || user.incapacitated())
+		return
+
+	if (!Adjacent(user) && !issilicon(user))
+		to_chat(user, "You can't reach [src] from here.")
+		return
+
+	if (stat & POWEROFF)//Its turned off
+		stat &= ~POWEROFF
+
+	else //Its on, turn it off
+		stat |= POWEROFF
+
+	use_power = !(STAT & POWEROFF)
+	user.visible_message("[user] turns [src] [(stat & POWEROFF) ? "off" : "on"].", "You turn [(stat & POWEROFF) ? "off" : "on"] [src].")
+	playsound(src, 'sound/machines/click.ogg', 40, 1)
+	update_icon()
 
 /obj/machinery/appliance/cooker/on_update_icon()
 	overlays.Cut()
@@ -84,10 +116,10 @@
 	RefreshParts() // this is what actually updates the cooking power, for some reason.
 
 /obj/machinery/appliance/cooker/proc/heat_up()
-	if (temperature < optimal_temp)
-		if (use_power == 1 && ((optimal_temp - temperature) > 5))
+	if (temperature < set_temp)
+		if (use_power == 1 && ((set_temp - temperature) > 5))
 			playsound(src, 'sound/machines/click.ogg', 20, 1)
-			use_power = 2.//If we're heating we use the active power
+			use_power = 2 //If we're heating we use the active power
 			update_icon()
 		temperature += heating_power / resistance
 		update_cooking_power()
