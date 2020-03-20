@@ -72,6 +72,7 @@ var/list/wrapped_species_by_ref = list()
 	wrapped_species_by_ref["\ref[H]"] = default_form
 
 /datum/species/shapeshifter/handle_post_spawn(var/mob/living/carbon/human/H)
+
 	if(monochromatic)
 		H.r_hair =   H.r_skin
 		H.g_hair =   H.g_skin
@@ -101,12 +102,34 @@ var/list/wrapped_species_by_ref = list()
 
 	last_special = world.time + 10
 
+	var/list/valid_hairstyles = list()
+	var/list/valid_facialhairstyles = list()
+	for(var/hairstyle in GLOB.hair_styles_list)
+		var/datum/sprite_accessory/S = GLOB.hair_styles_list[hairstyle]
+		if(gender == MALE && S.gender == FEMALE)
+			continue
+		if(gender == FEMALE && S.gender == MALE)
+			continue
+		if(!(species.get_bodytype(src) in S.species_allowed))
+			continue
+		valid_hairstyles += hairstyle
+	for(var/facialhairstyle in GLOB.facial_hair_styles_list)
+		var/datum/sprite_accessory/S = GLOB.facial_hair_styles_list[facialhairstyle]
+		if(gender == MALE && S.gender == FEMALE)
+			continue
+		if(gender == FEMALE && S.gender == MALE)
+			continue
+		if(!(species.get_bodytype(src) in S.species_allowed))
+			continue
+		valid_facialhairstyles += facialhairstyle
+
+
 	visible_message("<span class='notice'>\The [src]'s form contorts subtly.</span>")
-	if(species.get_hair_styles())
-		var/new_hair = input("Select a hairstyle.", "Shapeshifter Hair") as null|anything in species.get_hair_styles()
+	if(valid_hairstyles.len)
+		var/new_hair = input("Select a hairstyle.", "Shapeshifter Hair") as null|anything in valid_hairstyles
 		change_hair(new_hair ? new_hair : "Bald")
-	if(species.get_facial_hair_styles(gender))
-		var/new_hair = input("Select a facial hair style.", "Shapeshifter Hair") as null|anything in species.get_facial_hair_styles(gender)
+	if(valid_facialhairstyles.len)
+		var/new_hair = input("Select a facial hair style.", "Shapeshifter Hair") as null|anything in valid_facialhairstyles
 		change_facial_hair(new_hair ? new_hair : "Shaved")
 
 /mob/living/carbon/human/proc/shapeshifter_select_gender()
@@ -178,3 +201,31 @@ var/list/wrapped_species_by_ref = list()
 		E.sync_colour_to_human(src)
 
 	regenerate_icons()
+
+
+/mob/living/carbon/human/proc/shapeshifter_select_hair_colors()
+
+	set name = "Select Hair Colors"
+	set category = "Abilities"
+
+	if(stat || world.time < last_special)
+		return
+
+	last_special = world.time + 50
+
+	var/new_hair = input("Please select a new hair color.", "Hair Colour") as color
+	if(!new_hair)
+		return
+	shapeshifter_set_hair_color(new_hair)
+	var/new_fhair = input("Please select a new facial hair color.", "Facial Hair Color") as color
+	if(!new_fhair)
+		return
+	shapeshifter_set_facial_color(new_fhair)
+
+/mob/living/carbon/human/proc/shapeshifter_set_hair_color(var/new_hair)
+
+	change_hair_color(hex2num(copytext(new_hair, 2, 4)), hex2num(copytext(new_hair, 4, 6)), hex2num(copytext(new_hair, 6, 8)))
+
+/mob/living/carbon/human/proc/shapeshifter_set_facial_color(var/new_fhair)
+
+	change_facial_hair_color(hex2num(copytext(new_fhair, 2, 4)), hex2num(copytext(new_fhair, 4, 6)), hex2num(copytext(new_fhair, 6, 8)))
