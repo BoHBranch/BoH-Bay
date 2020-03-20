@@ -47,7 +47,8 @@
 	var/drowsy = 0
 	var/agony = 0
 	var/embed = 0 // whether or not the projectile can embed itself in the mob
-	var/penetration_modifier = 0.2 //How much internal damage this projectile can deal, as a multiplier.
+	var/shrapnel_chance_multiplier = 0.2 // Multiplier for post-hit damage-based shrapnel depositing proc.
+	var/arterial_bleed_chance_multiplier = 0.2 // Multiplier for post-hit damage-based artery severing proc.
 
 	var/hitscan = 0		// whether the projectile should be hitscan
 	var/step_delay = 1	// the delay between iterations if not a hitscan projectile
@@ -494,13 +495,13 @@
 	if(!can_embed() || (organ.species.species_flags & SPECIES_FLAG_NO_EMBED))
 		return
 	//Embed or sever artery
-	var/damage_prob = 0.5 * wound.damage * penetration_modifier
-	if(prob(damage_prob))
+	var/damage_prob = 0.5 * wound.damage
+	if(prob(damage_prob * shrapnel_chance_multiplier))
 		var/obj/item/shrapnel = get_shrapnel()
 		if(shrapnel)
 			shrapnel.forceMove(organ)
 			organ.embed(shrapnel)
-	else if(prob(2 * damage_prob))
+	else if(prob(2 * damage_prob * arterial_bleed_chance_multiplier))
 		organ.sever_artery()
 
 	organ.owner.projectile_hit_bloody(src, wound.damage*5, null, organ)
