@@ -113,7 +113,7 @@
 
 /obj/machinery/alarm/vox/Initialize()
 	.=..()
-	TLV[GAS_OXYGEN] =	list(-1, -1, 0.1, 0.1) // Partial pressure, kpa
+	TLV[GAS_OXYGEN] =	list(-1, -1, 25, 50) // Partial pressure, kpa
 	TLV[GAS_NITROGEN] = list(16, 19, 135, 140) // Partial pressure, kpa
 
 /obj/machinery/power/smes/buildable/preset/voxship/ship

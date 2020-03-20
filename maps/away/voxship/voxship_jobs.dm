@@ -104,7 +104,7 @@
 /datum/job/submap/voxship_vox/quill
 	title = "Quill"
 	total_positions = 1
-	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
+	outfit_type = /decl/hierarchy/outfit/job/voxship/crew/captain
 	supervisors = "apex and the arkship"
 	info = "You're in charge. You fly the ship, and dictate what the crew does. Do not disappoint the Apex."
 	whitelisted_species = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
@@ -151,6 +151,15 @@
 	shoes = /obj/item/clothing/shoes/magboots/vox
 	belt = /obj/item/weapon/storage/belt/utility/full
 	r_pocket = /obj/item/device/radio
+	l_pocket = /obj/item/weapon/crowbar/prybar
+
+/decl/hierarchy/outfit/job/voxship/crew/captain
+	name = VOXSHIP_OUTFIT_JOB_NAME("Quill")
+	uniform = /obj/item/clothing/under/vox/vox_robes
+	r_pocket = /obj/item/device/radio
+	shoes = /obj/item/clothing/shoes/magboots/vox
+	belt = /obj/item/weapon/storage/belt/utility/full
+	id_type = /obj/item/weapon/card/id/gold
 	l_pocket = /obj/item/weapon/crowbar/prybar
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew
