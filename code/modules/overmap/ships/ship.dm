@@ -13,8 +13,8 @@
 	name = "generic ship"
 	desc = "Space faring vessel."
 	icon_state = "ship"
-	alpha = 0
 
+	var/contact_icon_state
 	var/class = "spacefaring vessel"
 	var/moving_state = "ship_moving"
 	var/transponder_active = TRUE //do we instantly identify ourselves to any ship?
@@ -43,6 +43,8 @@
 
 /obj/effect/overmap/visitable/ship/Initialize()
 	. = ..()
+	contact_icon_state = icon_state
+	icon_state = "blank"
 	min_speed = round(min_speed, SHIP_MOVE_RESOLUTION)
 	max_speed = round(max_speed, SHIP_MOVE_RESOLUTION)
 	SSshuttle.ships += src
@@ -51,6 +53,18 @@
 /obj/effect/overmap/visitable/ship/Destroy()
 	STOP_PROCESSING(SSobj, src)
 	SSshuttle.ships -= src
+
+	for(var/obj/machinery/computer/ship/console in linked_computers)
+		if(console.linked == src)
+			console.linked = null
+	linked_computers.Cut()
+
+	for(var/obj/machinery/computer/ship/sensors/console in SSmachines.machinery)
+		var/datum/ship_contact/record = console.contact_datums[src]
+		if(record)
+			console.contact_datums -= src
+			qdel(record)
+
 	. = ..()
 
 /obj/effect/overmap/visitable/ship/relaymove(mob/user, direction, accel_limit)

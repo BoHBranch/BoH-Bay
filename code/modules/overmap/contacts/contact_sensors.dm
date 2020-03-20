@@ -1,0 +1,92 @@
+/obj/machinery/computer/ship/sensors
+	var/list/objects_in_view = list()
+	var/list/contact_datums = list()
+
+/obj/machinery/computer/ship/sensors/Destroy()
+	objects_in_view.Cut()
+	for(var/key in contact_datums)
+		var/datum/ship_contact/record = contact_datums[key]
+		qdel(record)
+	contact_datums.Cut()
+	. = ..()
+
+/obj/machinery/computer/ship/sensors/attempt_hook_up(obj/effect/overmap/visitable/ship/sector)
+	. = ..()
+	if(. && linked && !contact_datums[linked])
+		var/datum/ship_contact/record = new(src, linked)
+		record.handle_being_identified()
+
+/obj/machinery/computer/ship/sensors/look(var/mob/user)
+	. = ..()
+	if(user && user.client)
+		for(var/key in contact_datums)
+			var/datum/ship_contact/record = contact_datums[key]
+			user.client.images |= record.marker
+
+/obj/machinery/computer/ship/sensors/unlook(var/mob/user)
+	. = ..()
+	if(user && user.client)
+		for(var/key in contact_datums)
+			var/datum/ship_contact/record = contact_datums[key]
+			user.client.images -= record.marker
+
+/obj/machinery/computer/ship/sensors/Process()
+	..()
+	update_sound()
+	if(!linked)
+		return
+
+	// Update our 'sensor range' (ie. overmap lighting)
+	if(!sensors || !sensors.use_power || !sensors.powered())
+		linked.set_light(0)
+		// TODO move to on_power_change()?
+		for(var/obj/effect/overmap/visitable/ship/contact in objects_in_view)
+			var/datum/ship_contact/record = contact_datums[contact]
+			if(record)
+				record.hide()
+		objects_in_view.Cut()
+		return
+
+	var/sensor_range = round(sensors.range*1.5) + 1
+	linked.set_light(1, sensor_range, sensor_range+1)
+
+	// What can we see?
+	var/list/new_objects_in_view = list()
+	var/list/objects_in_current_view = list()
+	for(var/obj/effect/overmap/visitable/ship/contact in view(sensor_range, linked)-linked)
+		objects_in_current_view[contact] = TRUE
+		if(!objects_in_view[contact])
+			new_objects_in_view[contact] = TRUE
+
+	// Fade out and remove anything that is out of range.
+	for(var/obj/effect/overmap/visitable/ship/contact in objects_in_view)
+		if(!QDELETED(contact) && objects_in_current_view[contact])
+			continue
+		objects_in_view -= contact
+		var/datum/ship_contact/record = contact_datums[contact]
+		if(record)
+			animate(record.marker, alpha=0, 1 SECOND, 1, LINEAR_EASING)
+			addtimer(CALLBACK(record, /datum/ship_contact/proc/hide), 1 SECOND)
+
+	// Refresh or update contacts and markers for anything new.
+	for(var/obj/effect/overmap/visitable/ship/contact in new_objects_in_view)
+		objects_in_view |= contact
+
+		// Have we seen this ship before?
+		var/datum/ship_contact/record = contact_datums[contact]
+		// Generate contact information for this overmap object.
+		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
+		if(!record)
+			var/datum/ship_contact/new_record = new(src, contact)
+			playsound(loc, "sound/machines/sensors/newcontact.ogg", 30, 1)
+			visible_message(SPAN_NOTICE("<b>\The [src]</b> states, \"New contact detected, temporary designation [new_record.temp_designation], bearing [bearing]. Identification in progress.\""))
+	
+		// Update identification information for this record.
+		if(!record.identified && prob(record.effect.sensor_visiblity))
+			if(record.identification_progress < record.effect.identification_difficulty)
+				record.identification_progress += 5
+			if(record.identification_progress == record.effect.identification_difficulty)
+				record.handle_being_identified()
+				playsound(loc, "sound/machines/sensors/contact_identified.ogg", 30, 1)
+				var/decl/ship_contact_class/class = decls_repository.get_decl(record.effect.contact_class)
+				visible_message(SPAN_NOTICE("[src] states, 'Contact [record.temp_designation] identified as [record.name], [class.class_long], bearing [bearing].'"))

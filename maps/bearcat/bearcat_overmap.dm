@@ -5,6 +5,7 @@
 	start_y = 4
 	base = 1
 	vessel_mass = 5000
+	contact_class = /decl/ship_contact_class/ship
 	max_speed = 1/(2 SECONDS)
 	burn_delay = 2 SECONDS
 
