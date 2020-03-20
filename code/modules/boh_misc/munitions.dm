@@ -133,7 +133,8 @@
 /obj/item/projectile/bullet/rifle/military/sec
 	damage = 60 //higher damage
 	armor_penetration = 5 //much worse pen - frangible bullets
-	penetration_modifier = 2 //higher post pen
+	shrapnel_chance_multiplier = 2
+	arterial_bleed_chance_multiplier = 2 //higher post pen
 
 //mag
 /obj/item/ammo_magazine/mil_rifle/sec
@@ -168,7 +169,8 @@
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 	damage = 35
 	armor_penetration = 80
-	penetration_modifier = 0.1
+	shrapnel_chance_multiplier = 0.1
+	arterial_bleed_chance_multiplier = 0.1
 	penetrating = 1
 	damage_flags = DAM_EDGE
 
