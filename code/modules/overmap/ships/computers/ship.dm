@@ -57,10 +57,9 @@ somewhere on that shuttle. Subtypes of these can be then used to perform ship ov
 		user.reset_view(linked)
 	if(user.client)
 		user.client.view = world.view + extra_view
-		if(linked)
-			for(var/obj/machinery/computer/ship/sensors/sensor in linked.linked_computers)
-				if(sensor != src)
-					sensor.look(user)
+	if(linked)
+		for(var/obj/machinery/computer/ship/sensors/sensor in linked.linked_computers)
+			sensor.reveal_contacts(user)
 
 	GLOB.moved_event.register(user, src, /obj/machinery/computer/ship/proc/unlook)
 	GLOB.stat_set_event.register(user, src, /obj/machinery/computer/ship/proc/unlook)
@@ -70,10 +69,9 @@ somewhere on that shuttle. Subtypes of these can be then used to perform ship ov
 	user.reset_view()
 	if(user.client)
 		user.client.view = world.view
-		if(linked)
-			for(var/obj/machinery/computer/ship/sensors/sensor in linked.linked_computers)
-				if(sensor != src)
-					sensor.unlook(user)
+	if(linked)
+		for(var/obj/machinery/computer/ship/sensors/sensor in linked.linked_computers)
+			sensor.hide_contacts(user)
 
 	GLOB.moved_event.unregister(user, src, /obj/machinery/computer/ship/proc/unlook)
 	GLOB.stat_set_event.unregister(user, src, /obj/machinery/computer/ship/proc/unlook)
