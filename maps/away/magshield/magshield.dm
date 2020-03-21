@@ -1,5 +1,10 @@
 #include "magshield_areas.dm"
 
+/obj/effect/irradiate/mag
+	radiation_power = 5
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "energynet"
+
 /obj/effect/overmap/visitable/sector/magshield
 	name = "orbital station"
 	desc = "Sensors detect an orbital station above the exoplanet. Sporadic magentic impulses are registred inside it. Planet landing is impossible due to lower orbits being cluttered with chaotically moving metal chunks."
