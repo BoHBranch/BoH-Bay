@@ -115,7 +115,7 @@
 	icon_state = "spdloader_magnum"
 	caliber = CALIBER_PISTOL_MAGNUM_LARGE
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
-	matter = list(MATERIAL_STEEL = 40000)
+	matter = list(MATERIAL_STEEL = 1240)
 	max_ammo = 6
 	multiple_sprites = 1
 
