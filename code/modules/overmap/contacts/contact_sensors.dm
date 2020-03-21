@@ -16,15 +16,13 @@
 		var/datum/ship_contact/record = new(src, linked)
 		record.handle_being_identified()
 
-/obj/machinery/computer/ship/sensors/look(var/mob/user)
-	. = ..()
+/obj/machinery/computer/ship/sensors/proc/reveal_contacts(var/mob/user)
 	if(user && user.client)
 		for(var/key in contact_datums)
 			var/datum/ship_contact/record = contact_datums[key]
 			user.client.images |= record.marker
 
-/obj/machinery/computer/ship/sensors/unlook(var/mob/user)
-	. = ..()
+/obj/machinery/computer/ship/sensors/proc/hide_contacts(var/mob/user)
 	if(user && user.client)
 		for(var/key in contact_datums)
 			var/datum/ship_contact/record = contact_datums[key]
@@ -77,10 +75,10 @@
 		// Generate contact information for this overmap object.
 		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
 		if(!record)
-			var/datum/ship_contact/new_record = new(src, contact)
+			record = new /datum/ship_contact(src, contact)
 			playsound(loc, "sound/machines/sensors/newcontact.ogg", 30, 1)
-			visible_message(SPAN_NOTICE("<b>\The [src]</b> states, \"New contact detected, temporary designation [new_record.temp_designation], bearing [bearing]. Identification in progress.\""))
-	
+			visible_message(SPAN_NOTICE("<b>\The [src]</b> states, \"New contact detected, temporary designation [record.temp_designation], bearing [bearing]. Identification in progress.\""))
+
 		// Update identification information for this record.
 		if(!record.identified && prob(record.effect.sensor_visiblity))
 			if(record.identification_progress < record.effect.identification_difficulty)
