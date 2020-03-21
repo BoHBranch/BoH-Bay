@@ -57,7 +57,7 @@
 	queue_icon_update()
 
 /obj/machinery/appliance/cooker/attempt_toggle_power(mob/user)
-	var/was_off = stat & POWEROFF
+	var/wasoff = stat & POWEROFF
 	if (!isliving(user))
 		return
 
@@ -78,7 +78,7 @@
 		stat |= POWEROFF
 	else 
 		set_temp = text2num(desired_temp)
-		to_chat(user, SPAN_NOTICE("You set [src] to [round(set_temp-T0C)]C."
+		to_chat(user, SPAN_NOTICE("You set [src] to [round(set_temp-T0C)]C."))
 		stat &= ~POWEROFF
 	use_power = !(stat & POWEROFF)
 	if(wasoff != (stat & POWEROFF))
