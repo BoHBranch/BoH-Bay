@@ -1296,7 +1296,7 @@
 /turf/simulated/floor/tiled,
 /area/icarus/open)
 "dZ" = (
-/obj/effect/icarus/irradiate,
+/obj/effect/irradiate,
 /turf/simulated/open,
 /area/icarus/open)
 "ea" = (

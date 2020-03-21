@@ -9,13 +9,13 @@ GLOBAL_LIST_EMPTY(job_whitelist_list)
 			config.job_whitelist = FALSE
 			error("The whitelist system could not find any whitelist entities. The whitelist system will now disable itself.")
 	else
-		warning("Whitelists are not enabled. They will not be loaded.")
+		to_world_log("Whitelists are not enabled. They will not be loaded.")
 
 	return TRUE
 
 /proc/load_job_whitelist()
-	GLOB.job_whitelist_list = file2list(JOBWHITELISTFILE)
-
+	if(fexists(JOBWHITELISTFILE))
+		GLOB.job_whitelist_list = file2list(JOBWHITELISTFILE)
 /proc/has_job_whitelist(var/client/C, var/datum/job/J)
 
 	if(!C || !istype(C))

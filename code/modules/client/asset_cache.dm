@@ -228,6 +228,7 @@ You can set verify to TRUE if you want send() to sleep until the client has the 
 	VueUI Assets
 */
 /datum/asset/simple/vueui
+	verify = TRUE
 	assets = list(
 		"vueui.js" = 'vueui/dist/app.js',
 		"vueui.css" = 'vueui/dist/app.css'

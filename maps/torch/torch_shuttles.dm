@@ -23,7 +23,7 @@
 	dock_target = "escape_pod_" + #NUMBER; \
 	arming_controller = "escape_pod_"+ #NUMBER +"_berth"; \
 	waypoint_station = "escape_pod_"+ #NUMBER +"_start"; \
-	landmark_transition = "escape_pod_"+ #NUMBER +"_internim"; \
+	landmark_transition = "escape_pod_"+ #NUMBER +"_transit"; \
 	waypoint_offsite = "escape_pod_"+ #NUMBER +"_out"; \
 } \
 /obj/effect/shuttle_landmark/escape_pod/start/pod##NUMBER { \
@@ -31,24 +31,23 @@
 	docking_controller = "escape_pod_"+ #NUMBER +"_berth"; \
 } \
 /obj/effect/shuttle_landmark/escape_pod/out/pod##NUMBER { \
-	landmark_tag = "escape_pod_"+ #NUMBER +"_internim"; \
+	landmark_tag = "escape_pod_"+ #NUMBER +"_out"; \
 } \
 /obj/effect/shuttle_landmark/escape_pod/transit/pod##NUMBER { \
-	landmark_tag = "escape_pod_"+ #NUMBER +"_out"; \
+	landmark_tag = "escape_pod_"+ #NUMBER +"_transit"; \
 }
 
+TORCH_ESCAPE_POD(1)
+TORCH_ESCAPE_POD(2)
+TORCH_ESCAPE_POD(3)
+TORCH_ESCAPE_POD(4)
+TORCH_ESCAPE_POD(5)
 TORCH_ESCAPE_POD(6)
 TORCH_ESCAPE_POD(7)
 TORCH_ESCAPE_POD(8)
 TORCH_ESCAPE_POD(9)
 TORCH_ESCAPE_POD(10)
 TORCH_ESCAPE_POD(11)
-TORCH_ESCAPE_POD(12)
-TORCH_ESCAPE_POD(13)
-TORCH_ESCAPE_POD(14)
-TORCH_ESCAPE_POD(15)
-//TORCH_ESCAPE_POD(16)
-TORCH_ESCAPE_POD(17)
 
 //Petrov
 
@@ -477,3 +476,47 @@ TORCH_ESCAPE_POD(17)
 //Makes the deck management program use hangar access
 /datum/nano_module/deck_management
 	default_access = list(access_hangar, access_cargo, access_heads)
+
+// Ammo dump elevators (BoH)
+/area/command/gunnery/ammo
+	name = "\improper Ammunition Dump"
+
+/area/command/gunnery/ob/inside
+	name = "\improper KOSMAG Interior"
+	icon_state = "kosmag2"
+
+/area/turbolift/ammo_lift
+	name = "\improper Munition Lift"
+	icon_state = "shuttle3"
+	base_turf = /turf/simulated/floor/plating
+
+/obj/machinery/computer/shuttle_control/lift/ammo
+	name = "munition lift controls"
+	shuttle_tag = "Primary Munition Lift"
+	ui_template = "shuttle_control_console_lift.tmpl"
+	icon_state = "tiny"
+	icon_keyboard = "tiny_keyboard"
+	icon_screen = "lift"
+	density = 0
+
+/datum/shuttle/autodock/ferry/ammo_lift
+	name = "Primary Munition Lift"
+	shuttle_area = /area/turbolift/ammo_lift
+	waypoint_station = "nav_ammo_lift_bottom"
+	waypoint_offsite = "nav_ammo_lift_top"
+	sound_takeoff = 'sound/effects/lift_heavy_start.ogg'
+	sound_landing = 'sound/effects/lift_heavy_stop.ogg'
+	ceiling_type = null
+
+/obj/effect/shuttle_landmark/lift/ammo_top
+	name = "Top Deck"
+	landmark_tag = "nav_ammo_lift_top"
+	base_area = /area/command/gunnery/ammo
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/lift/ammo_bottom
+	name = "Lower Deck"
+	landmark_tag = "nav_ammo_lift_bottom"
+	flags = SLANDMARK_FLAG_AUTOSET
+	base_area = /area/command/gunnery/ob/inside
+	base_turf = /turf/simulated/floor/plating

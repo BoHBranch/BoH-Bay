@@ -299,28 +299,28 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		. += 10
 
 /decl/surgery_step/robotics/repair_burn/pre_surgery_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
-    var/obj/item/organ/external/affected = target.get_organ(target_zone)
-    if(affected)
-        if(!affected.burn_dam)
-            to_chat(user, SPAN_WARNING("There is no damage to repair."))
-            return FALSE
-        if(BP_IS_BRITTLE(affected))
-            to_chat(user, SPAN_WARNING("\The [target]'s [affected.name] is too brittle for this kind of repair."))
-        if(istype(tool, /obj/item/stack/cable_coil))
-            var/obj/item/stack/cable_coil/C = tool
-            if(istype(C))
-                if(!C.use(3))
-                    to_chat(user, SPAN_WARNING("You need three or more cable pieces to repair this damage."))
-                else
-                    return TRUE
-        if(istype(tool, /obj/item/weapon/wirecutters))
-            min_duration = 100
-            max_duration = 120
-        if(istype(tool, /obj/item/stack/cable_coil))
-            min_duration = 50
-            max_duration = 60
-        return TRUE
-    return FALSE
+	var/obj/item/organ/external/affected = target.get_organ(target_zone)
+	if(affected)
+		if(!affected.burn_dam)
+			to_chat(user, SPAN_WARNING("There is no damage to repair."))
+			return FALSE
+		if(BP_IS_BRITTLE(affected))
+			to_chat(user, SPAN_WARNING("\The [target]'s [affected.name] is too brittle for this kind of repair."))
+		if(istype(tool, /obj/item/stack/cable_coil))
+			var/obj/item/stack/cable_coil/C = tool
+			if(istype(C))
+				if(!C.use(3))
+					to_chat(user, SPAN_WARNING("You need three or more cable pieces to repair this damage."))
+				else
+					return TRUE
+		if(istype(tool, /obj/item/weapon/wirecutters))
+			min_duration = 100
+			max_duration = 120
+		if(istype(tool, /obj/item/stack/cable_coil))
+			min_duration = 50
+			max_duration = 60
+		return TRUE
+	return FALSE
 
 /decl/surgery_step/robotics/repair_burn/assess_bodypart(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = ..()

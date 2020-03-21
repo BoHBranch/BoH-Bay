@@ -47,14 +47,6 @@
 /turf/simulated/floor/tiled/white/lowpressure
 	initial_gas = list(GAS_CO2 = MOLES_O2STANDARD)
 
-/obj/item/weapon/disk/astrodata
-	name = "astronomical data disk"
-	desc = "A disk with a wealth of astronomical data recorded. Astrophysicists at the SC Observatory would love to see this."
-	icon = 'icons/obj/cloning.dmi'
-	icon_state = "datadisk0"
-	item_state = "card-id"
-	w_class = ITEM_SIZE_SMALL
-
 /obj/item/weapon/ecletters
 	name = "bundle of letters"
 	icon = 'icons/obj/bureaucracy.dmi'
