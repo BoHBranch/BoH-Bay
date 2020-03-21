@@ -46,7 +46,8 @@
 	. = ..()
 	var/interval = (optimal_temp - min_temp)/temp_settings
 	for(var/i=0, i<temp_settings, i++)
-		temp_options += Clamp((LAZYACCESS(temp_options, i-1) || min_temp) + interval, min_temp, optimal_temp)
+		temp_options["[Clamp((LAZYACCESS(temp_options, i-1) || min_temp) + interval, min_temp, optimal_temp)]"] = "radial_temp"
+	temp_options["OFF"] = image('icons/misc/mark.dmi', "x3")
 	loss = (active_power_usage / resistance)*0.5
 	cooking_objs = list()
 	for (var/i = 0, i < max_contents, i++)
@@ -56,6 +57,7 @@
 	queue_icon_update()
 
 /obj/machinery/appliance/cooker/attempt_toggle_power(mob/user)
+	var/was_off = stat & POWEROFF
 	if (!isliving(user))
 		return
 
@@ -70,14 +72,17 @@
 		to_chat(user, "You can't reach [src] from here.")
 		return
 
-	if (stat & POWEROFF)//Its turned off
-		stat &= ~POWEROFF
-
-	else //Its on, turn it off
+	var/desired_temp = show_radial_menu(user, src, temp_options)
+	
+	if(desired_temp == "OFF")
 		stat |= POWEROFF
-
-	use_power = !(STAT & POWEROFF)
-	user.visible_message("[user] turns [src] [(stat & POWEROFF) ? "off" : "on"].", "You turn [(stat & POWEROFF) ? "off" : "on"] [src].")
+	else 
+		set_temp = text2num(desired_temp)
+		to_chat(user, SPAN_NOTICE("You set [src] to [round(set_temp-T0C)]C."
+		stat &= ~POWEROFF
+	use_power = !(stat & POWEROFF)
+	if(wasoff != (stat & POWEROFF))
+		user.visible_message("[user] turns [src] [use_power ? "on" : "off"].", "You turn [use_power ? "on" : "off"] [src].")
 	playsound(src, 'sound/machines/click.ogg', 40, 1)
 	update_icon()
 

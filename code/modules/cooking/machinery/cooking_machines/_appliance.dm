@@ -62,6 +62,9 @@
 		list_contents(user)
 		return TRUE
 
+/obj/machinery/appliance/get_mechanics_info()
+	 return "Control-click this to toggle its power."
+
 /obj/machinery/appliance/proc/list_contents(var/mob/user)
 	if (cooking_objs.len)
 		var/string = "Contains..."
@@ -116,16 +119,10 @@
 		to_chat(user, "You can't reach [src] from here.")
 		return
 
-	if (stat & POWEROFF)//Its turned off
-		stat &= ~POWEROFF
-		use_power = 1
-		user.visible_message("[user] turns [src] on.", "You turn on [src].")
-
-	else //Its on, turn it off
-		stat |= POWEROFF
-		use_power = 0
-		user.visible_message("[user] turns [src] off.", "You turn off [src].")
-
+	stat ^= POWEROFF // Toggles power
+	use_power = !(stat & POWEROFF) && POWER_USE_ACTIVE // If on, use active power, else use no power
+	if(user)
+		user.visible_message("[user] turns [src] [use_power ? "on" : "off"].", "You turn [use_power ? "on" : "off"] [src].")
 	playsound(src, 'sound/machines/click.ogg', 40, 1)
 	update_icon()
 
@@ -234,28 +231,6 @@
 
 	//From here we can start cooking food
 	add_content(I, user)
-	update_icon()
-
-/obj/machinery/appliance/cooker/attempt_toggle_power(mob/user)
-	if (!isliving(user))
-		return
-
-	if (!user.IsAdvancedToolUser())
-		to_chat(user, "You lack the dexterity to do that!")
-		return
-
-	if (user.stat || user.restrained() || user.incapacitated())
-		return
-
-	if (!Adjacent(user) && !issilicon(user))
-		to_chat(user, "You can't reach [src] from here.")
-		return
-
-	var/desired_temp
-
-	use_power = !!desired_temp
-	user.visible_message("[user] turns [src] [(stat & POWEROFF) ? "off" : "on"].", "You turn [(stat & POWEROFF) ? "off" : "on"] [src].")
-	playsound(src, 'sound/machines/click.ogg', 40, 1)
 	update_icon()
 
 //Override for container mechanics
