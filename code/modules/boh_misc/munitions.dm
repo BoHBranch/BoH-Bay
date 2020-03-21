@@ -93,7 +93,7 @@
 /obj/item/projectile/beam/pulse/epp
 	damage = 12
 	damage_type = ELECTROCUTE
-	agony = 25
+	agony = 35
 
 /////////
 // .454
@@ -106,9 +106,8 @@
 
 //projectile
 /obj/item/projectile/bullet/pistol/large
-	damage = 65
-	armor_penetration = 15
-	agony = 25
+	damage = 50
+	armor_penetration = 10
 
 //mag
 /obj/item/ammo_magazine/speedloader/large

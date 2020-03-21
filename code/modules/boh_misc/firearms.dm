@@ -181,7 +181,7 @@
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. It's fitted with an incredibly tiny self-contained reactor. \
 	This provides the weapon, in theory, an infinite power source, but a horrible munition count in practice. Additionally, it cannot fire a concentrated beam, having been modified to be less-than-lethal."
 	projectile_type = /obj/item/projectile/beam/pulse/epp
-	max_shots = 2
+	max_shots = 3
 	self_recharge = 1
 	burst = 1
 
@@ -193,8 +193,6 @@
 	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Up-chambered for a .454 calibre round. This one has 'To the Captain of the NTSS Dagon' engraved on the grip."
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
 	caliber = CALIBER_PISTOL_MAGNUM_LARGE
-	has_firing_pin = TRUE
-	firing_pin_type = /obj/item/firing_pin/id_locked/commanding_officer
 
 /////////
 // XO Revolver
