@@ -13,7 +13,7 @@
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick,/datum/unarmed_attack/tail, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp)
 
-	description = "A genemod, divergent from Tritonians by the addition of additional muscle mass and sharper teeth. Though both races emerged from the aquatic conditions of their home-planet, Koster-4, Tritonians have generally always been a more popular choice, due to an Akula's large dietary needs."
+	description = "A genemod, divergent from Tritonians by the addition of additional muscle mass and sharper teeth. Though both races are Human-based genemods that arose from the conditions of their aquatic colony-planet, Koster-4, Tritonians have generally always been a more popular choice of genemod, due to an Akula's large dietary needs."
 
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
