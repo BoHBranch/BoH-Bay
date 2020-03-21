@@ -106,7 +106,7 @@
 	total_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew/captain
 	supervisors = "apex and the arkship"
-	info = "You're in charge. You fly the ship, and dictate what the crew does. Do not disappoint the Apex."
+	info = "You're in charge. You fly the ship, and dictate what the crew does. You are in charge of keeping your subordinates in check, the Apex has given you authority to kill any that disobeys your orders. Do not disappoint the Apex."
 	whitelisted_species = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
 	min_skill = list(	SKILL_HAULING     = SKILL_BASIC,
 						SKILL_EVA         = SKILL_EXPERT,
@@ -159,7 +159,7 @@
 	r_pocket = /obj/item/device/radio
 	shoes = /obj/item/clothing/shoes/magboots/vox
 	belt = /obj/item/weapon/storage/belt/utility/full
-	id_type = /obj/item/weapon/card/id/gold
+	id_type = /obj/item/weapon/card/id/civilian/bartender
 	l_pocket = /obj/item/weapon/crowbar/prybar
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew
