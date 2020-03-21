@@ -2,7 +2,7 @@
 	title = "Shoal Scavenger"
 	total_positions = 3
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
-	supervisors = "quill, apex and the arkship"
+	supervisors = "Quill, The Apex and the arkship"
 	info = "Scrap is thin. Not much food is left, but thankfully the sector is quite rich, and it's time to get some more supplies. \
 	although staying on base is tempting. Plenty of nitrogen, and not much hazards to worry about."
 	whitelisted_species = list(SPECIES_VOX)
@@ -102,10 +102,10 @@
 	skill_points = 16
 
 /datum/job/submap/voxship_vox/quill
-	title = "Quill"
+	title = "Shoal Quill"
 	total_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew/captain
-	supervisors = "apex and the arkship"
+	supervisors = "The Apex and the arkship"
 	info = "You're in charge. You fly the ship, and dictate what the crew does. You are in charge of keeping your subordinates in check, the Apex has given you authority to kill any that disobeys your orders. Do not disappoint the Apex."
 	whitelisted_species = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
 	min_skill = list(	SKILL_HAULING     = SKILL_BASIC,
@@ -154,7 +154,7 @@
 	l_pocket = /obj/item/weapon/crowbar/prybar
 
 /decl/hierarchy/outfit/job/voxship/crew/captain
-	name = VOXSHIP_OUTFIT_JOB_NAME("Quill")
+	name = VOXSHIP_OUTFIT_JOB_NAME("Shoal Quill")
 	uniform = /obj/item/clothing/under/vox/vox_robes
 	r_pocket = /obj/item/device/radio
 	shoes = /obj/item/clothing/shoes/magboots/vox
@@ -172,6 +172,6 @@
 	name = "Shoal Technician"
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/quill
-	name = "Quill"
+	name = "Shoal Quill"
 
 #undef VOXSHIP_OUTFIT_JOB_NAME
