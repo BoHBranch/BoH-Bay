@@ -29,7 +29,7 @@
 	min_age = 18
 	max_age = 100
 
-	description = "A species originating from the planet Tal, uplifted in the year 2405. As a point that is still rather a black spot, they were subjected to a rather brutal colonization period upon being discovered by the United Colonies of Gilgamesh. Still considered second-class citizens within GCC space, the majority of Sergals are either refugees, or descendents of such."
+	description = "Sergals are the native race of a planet named Tal, a planet covered by spawling megacities and districts. Run by corporations and criminal cartels, the planet lies in a system that is now controlled by the Sol Central Government. Tal is a protectorate under the SCG, and while the Solarian authority and cartel families attempt to bring Tal in as a proper member world with full citizenship, corporate bodies both on and off-world intend to preserve the status quo of near-unrestricted capitalism."
 
 	cold_level_1 = 260 //Default 260 - Lower is better
 	cold_level_2 = 200 //Default 200
