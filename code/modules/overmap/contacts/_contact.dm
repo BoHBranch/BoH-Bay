@@ -20,7 +20,7 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 	var/obj/machinery/computer/ship/sensors/owner
 
 	// The actual overmap effect associated with this.
-	var/obj/effect/overmap/visitable/ship/effect 
+	var/obj/effect/overmap/visitable/ship/effect
 
 /datum/ship_contact/proc/handle_being_identified()
 	if(!identified)
@@ -31,7 +31,7 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 		marker.appearance_flags |= RESET_COLOR
 		marker.icon_state =        effect.contact_icon_state || "ship"
 		marker.color =             effect.color
-		//marker.maptext  =        name
+		marker.maptext  =          name
 		show()
 
 /datum/ship_contact/New(var/obj/machinery/computer/ship/sensors/creator, var/obj/effect/overmap/visitable/ship/source)
@@ -46,13 +46,19 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 	temp_designation = "[pick(global.phonetic_alphabet_prefix)]-[pick(global.phonetic_alphabet_suffix)]-[random_id(type, 1, 999)]"
 	marker = image(loc = source, icon = 'icons/obj/overmap.dmi', icon_state = "shuttle")
 
-	/*marker.maptext = new_name
+	var/new_name = temp_designation
+
+	marker.maptext = new_name
 	marker.maptext_width = 128
-	marker.maptext_y = 25
-	marker.maptext_x = -15*/
+	marker.maptext_y = 32
+	marker.maptext_x = -15
 
 	if(source.transponder_active)
 		handle_being_identified()
+
+/datum/ship_contact/proc/update_marker_icon()
+	if(identified)
+		marker.icon_state = effect.contact_icon_state
 
 /datum/ship_contact/proc/show()
 	for(var/weakref/W in owner?.viewers)

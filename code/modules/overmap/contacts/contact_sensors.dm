@@ -62,14 +62,31 @@
 			continue
 		objects_in_view -= contact
 		var/datum/ship_contact/record = contact_datums[contact]
+		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
 		if(record)
-			animate(record.marker, alpha=0, 1 SECOND, 1, LINEAR_EASING)
-			addtimer(CALLBACK(record, /datum/ship_contact/proc/hide), 1 SECOND)
-
+			animate(record.marker, alpha=0, 2 SECOND, 1, LINEAR_EASING)
+			addtimer(CALLBACK(record, /datum/ship_contact/proc/hide), 2 SECOND)
+			if(record.identified)
+				visible_message(SPAN_NOTICE("[src] states, 'Contact lost with [record.name], bearing [bearing].'"))
+			else
+				visible_message(SPAN_NOTICE("[src] states, 'Contact lost with [record.temp_designation], bearing [bearing].'"))
+			playsound(loc, "sound/machines/sensors/contact_lost.ogg", 30, 1)
 	// Refresh or update contacts and markers for anything new.
-	for(var/obj/effect/overmap/visitable/ship/contact in new_objects_in_view)
-		objects_in_view |= contact
+	objects_in_view |= new_objects_in_view
 
+	for(var/obj/effect/overmap/visitable/ship/contact in new_objects_in_view)
+		var/datum/ship_contact/record = contact_datums[contact]
+		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
+		if(record)
+			if(record.identified)
+				visible_message(SPAN_NOTICE("[src] states, 'Contact regained with [record.name], bearing [bearing].'"))
+			else
+				visible_message(SPAN_NOTICE("[src] states, 'Contact regained with [record.temp_designation], bearing [bearing].'"))
+			record.show()
+			animate(record.marker, alpha=255, 2 SECOND, 1, LINEAR_EASING)
+			playsound(loc, "sound/machines/sensors/contact_regained.ogg", 30, 1)
+
+	for(var/obj/effect/overmap/visitable/ship/contact in objects_in_view) //Update everything.
 		// Have we seen this ship before?
 		var/datum/ship_contact/record = contact_datums[contact]
 		// Generate contact information for this overmap object.
@@ -80,11 +97,17 @@
 			visible_message(SPAN_NOTICE("<b>\The [src]</b> states, \"New contact detected, temporary designation [record.temp_designation], bearing [bearing]. Identification in progress.\""))
 
 		// Update identification information for this record.
-		if(!record.identified && prob(record.effect.sensor_visiblity))
-			if(record.identification_progress < record.effect.identification_difficulty)
-				record.identification_progress += 5
-			if(record.identification_progress == record.effect.identification_difficulty)
-				record.handle_being_identified()
-				playsound(loc, "sound/machines/sensors/contact_identified.ogg", 30, 1)
-				var/decl/ship_contact_class/class = decls_repository.get_decl(record.effect.contact_class)
-				visible_message(SPAN_NOTICE("[src] states, 'Contact [record.temp_designation] identified as [record.name], [class.class_long], bearing [bearing].'"))
+		if(prob(record.effect.sensor_visiblity))
+			record.update_marker_icon()
+			if(!record.identified)
+				if(record.identification_progress < record.effect.identification_difficulty)
+					record.identification_progress += 5
+				if(record.identification_progress == record.effect.identification_difficulty)
+					record.handle_being_identified()
+					playsound(loc, "sound/machines/sensors/contact_identified.ogg", 30, 1)
+					var/decl/ship_contact_class/class = decls_repository.get_decl(record.effect.contact_class)
+					visible_message(SPAN_NOTICE("[src] states, 'Contact [record.temp_designation] identified as [record.name], [class.class_long], bearing [bearing].'"))
+
+	//Update our own marker icon.
+	var/datum/ship_contact/self_record = contact_datums[linked]
+	self_record.update_marker_icon()

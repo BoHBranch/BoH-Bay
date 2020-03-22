@@ -13,11 +13,12 @@
 	name = "generic ship"
 	desc = "Space faring vessel."
 	icon_state = "ship"
+	alpha = 255
 
 	var/contact_icon_state
 	var/class = "spacefaring vessel"
 	var/moving_state = "ship_moving"
-	var/transponder_active = TRUE //do we instantly identify ourselves to any ship?
+	var/transponder_active = FALSE //do we instantly identify ourselves to any ship?
 
 	var/sensor_visiblity = 100 //chance of showing up on sensors at all
 	var/identification_difficulty = 100 //How difficult are we to tick up identification on?
@@ -168,10 +169,10 @@
 
 /obj/effect/overmap/visitable/ship/on_update_icon()
 	if(!is_still())
-		icon_state = moving_state
+		contact_icon_state = moving_state
 		dir = get_heading()
 	else
-		icon_state = initial(icon_state)
+		contact_icon_state = initial(icon_state)
 
 /obj/effect/overmap/visitable/ship/proc/burn()
 	for(var/datum/ship_engine/E in engines)
