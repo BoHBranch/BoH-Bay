@@ -2443,10 +2443,6 @@
 	frequency = 1331;
 	id_tag = "rescue_shuttle_dock_pump"
 	},
-/obj/machinery/embedded_controller/radio/simple_docking_controller{
-	id_tag = "rescue_shuttle_dock_airlock";
-	pixel_y = 24
-	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "eL" = (
@@ -4643,6 +4639,9 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/warning/fulltile,
+/obj/machinery/newscaster{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fourthdeck/fore)
 "mo" = (
@@ -4660,9 +4659,6 @@
 	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/warning/fulltile,
-/obj/machinery/newscaster{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fourthdeck/fore)
 "mr" = (
@@ -6695,6 +6691,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
+/obj/machinery/hologram/holopad/longrange,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/flightcontrol)
 "sZ" = (
@@ -9570,6 +9568,10 @@
 "Ds" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/quartermaster/storage/upper)
+"Dv" = (
+/obj/effect/wallframe_spawn/reinforced/hull,
+/turf/simulated/floor/plating,
+/area/hallway/primary/fourthdeck/aft)
 "Dw" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 9
@@ -11111,6 +11113,19 @@
 /obj/structure/disposalpipe/segment{
 	dir = 8;
 	icon_state = "pipe-c"
+	},
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	dir = 1;
+	display_name = "Port Dock C";
+	frequency = 1331;
+	id_tag = "rescue_shuttle_dock_airlock";
+	pixel_x = 24;
+	pixel_y = -24;
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	tag_airpump = "rescue_shuttle_dock_pump";
+	tag_chamber_sensor = "rescue_shuttle_dock_sensor";
+	tag_exterior_door = "rescue_shuttle_dock_outer";
+	tag_interior_door = "rescue_shuttle_dock_inner"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
@@ -15019,6 +15034,19 @@
 	icon_state = "pipe-j2";
 	dir = 8
 	},
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	dir = 2;
+	display_name = "Starboard Dock C";
+	frequency = 1380;
+	id_tag = "admin_shuttle_dock_airlock";
+	pixel_x = 24;
+	pixel_y = 24;
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	tag_airpump = "admin_shuttle_dock_pump";
+	tag_chamber_sensor = "admin_shuttle_dock_sensor";
+	tag_exterior_door = "admin_shuttle_dock_outer";
+	tag_interior_door = "admin_shuttle_dock_inner"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
 "US" = (
@@ -15121,6 +15149,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/storage/upper)
+"Vc" = (
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/plating,
+/area/crew_quarters/commissary)
 "Vd" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/catwalk,
@@ -29815,7 +29847,7 @@ RZ
 Wc
 Ct
 Oh
-vF
+Vc
 mp
 qg
 oE
@@ -41114,7 +41146,7 @@ aa
 Yj
 tG
 eH
-LA
+Dv
 aJ
 Mx
 oZ
@@ -41154,7 +41186,7 @@ uj
 sc
 Jx
 eI
-LA
+Dv
 eK
 Ms
 Yj
