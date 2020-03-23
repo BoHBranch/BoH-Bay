@@ -15,8 +15,7 @@
 
 /datum/pipeline/Destroy()
 	STOP_PROCESSING(SSprocessing, src)
-	if(network)
-		QDEL_NULL(network)
+	QDEL_NULL(network)
 
 	if(air && air.volume)
 		temporarily_store_air()
