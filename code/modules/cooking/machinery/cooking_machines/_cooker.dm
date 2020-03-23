@@ -6,7 +6,6 @@
 	var/temp_settings = 4 // the number of temperature settings to have, including min and optimal
 	var/list/temp_options = list()
 
-	var/loss = 1	//Temp lost per proc when equalising
 	var/resistance = 320000	//Resistance to heating. combines with heating power to determine how long heating takes
 
 	var/light_x = 0
@@ -45,10 +44,12 @@
 /obj/machinery/appliance/cooker/Initialize()
 	. = ..()
 	var/interval = (optimal_temp - min_temp)/temp_settings
-	for(var/i=0, i<temp_settings, i++)
-		temp_options["[Clamp((LAZYACCESS(temp_options, i-1) || min_temp) + interval, min_temp, optimal_temp)]"] = "radial_temp"
+	for(var/newtemp = min_temp - interval, newtemp<optimal_temp, newtemp+=interval)
+		var/image/disp_image = image('icons/mob/radial.dmi', "radial_temp")
+		var/hue = RotateHue(hsv(0, 255, 255), 120 * (1 - (newtemp-min_temp)/(optimal_temp-min_temp)))
+		disp_image.color = HSVtoRGB(hue)
+		temp_options["[newtemp - T0C]"] = disp_image
 	temp_options["OFF"] = image('icons/misc/mark.dmi', "x3")
-	loss = (active_power_usage / resistance)*0.5
 	cooking_objs = list()
 	for (var/i = 0, i < max_contents, i++)
 		cooking_objs.Add(new /datum/cooking_item/(new container_type(src)))
@@ -72,12 +73,14 @@
 		to_chat(user, "You can't reach [src] from here.")
 		return
 
-	var/desired_temp = show_radial_menu(user, src, temp_options)
+	var/desired_temp = show_radial_menu(user, src, temp_options - (wasoff ? "OFF" : "[set_temp-T0C]"))
+	if(!desired_temp)
+		return
 	
 	if(desired_temp == "OFF")
 		stat |= POWEROFF
 	else 
-		set_temp = text2num(desired_temp)
+		set_temp = text2num(desired_temp) + T0C
 		to_chat(user, SPAN_NOTICE("You set [src] to [round(set_temp-T0C)]C."))
 		stat &= ~POWEROFF
 	use_power = !(stat & POWEROFF)
@@ -114,7 +117,7 @@
 		if(temperature >= optimal_temp)
 			temp_scale = 1
 		else
-			temp_scale = (temperature - 73.15) / (optimal_temp - 73.15)
+			temp_scale = temperature / optimal_temp
 		//If we're between min and optimal this will yield a value in the range 0.7 to 1
 
 	cooking_coeff = optimal_power * temp_scale

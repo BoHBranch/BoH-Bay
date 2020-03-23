@@ -659,8 +659,8 @@
 	var/scan_rating = 0
 	var/cap_rating = 0
 
-	scan_rating = total_component_rating_of_type(/obj/item/weapon/stock_parts/scanning_module)
-	cap_rating = total_component_rating_of_type(/obj/item/weapon/stock_parts/capacitor)
+	scan_rating = total_component_rating_of_type(/obj/item/weapon/stock_parts/scanning_module) - number_of_components(/obj/item/weapon/stock_parts/scanning_module)
+	cap_rating = total_component_rating_of_type(/obj/item/weapon/stock_parts/capacitor) - number_of_components(/obj/item/weapon/stock_parts/capacitor)
 
 	active_power_usage = initial(active_power_usage) - scan_rating * 25
 	heating_power = initial(heating_power) + cap_rating * 50
