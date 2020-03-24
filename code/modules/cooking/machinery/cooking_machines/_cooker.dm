@@ -105,6 +105,8 @@
 /obj/machinery/appliance/cooker/Process()
 	if (stat || use_power == 1)
 		QUEUE_TEMPERATURE_ATOMS(src) // cool every tick if we're not turned on or heating
+	else
+		heat_up()
 	. = ..()
 
 /obj/machinery/appliance/cooker/power_change()
@@ -148,6 +150,8 @@
 			QUEUE_TEMPERATURE_ATOMS(CI.container)
 		return TRUE // Don't kill this processing loop unless we're not powered or we're cold.
 		// Also don't cool us.
+	if(stat || temperature > set_temp)
+		temperature -= loss
 	. = ..()
 
 //Cookers do differently, they use containers
