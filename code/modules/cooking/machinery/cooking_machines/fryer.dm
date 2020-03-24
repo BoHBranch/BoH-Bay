@@ -137,7 +137,7 @@
 			for (var/obj/item/I in CI.container)
 				if (I.reagents && I.reagents.total_volume)
 					for (var/datum/reagent/R in I.reagents.reagent_list)
-						if (R.type == our_oil.type)
+						if (istype(R, /datum/reagent/nutriment/triglyceride/oil) && R.type == our_oil.type)
 							I.reagents.remove_reagent(R.type, R.volume*portion)
 
 

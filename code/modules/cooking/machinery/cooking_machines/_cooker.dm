@@ -6,6 +6,7 @@
 	var/temp_settings = 4 // the number of temperature settings to have, including min and optimal
 	var/list/temp_options = list()
 
+	var/loss = 1	//Temp lost per proc when equalising
 	var/resistance = 320000	//Resistance to heating. combines with heating power to determine how long heating takes
 
 	var/light_x = 0
@@ -44,12 +45,13 @@
 /obj/machinery/appliance/cooker/Initialize()
 	. = ..()
 	var/interval = (optimal_temp - min_temp)/temp_settings
-	for(var/newtemp = min_temp - interval, newtemp<optimal_temp, newtemp+=interval)
+	for(var/newtemp = min_temp - interval, newtemp<=optimal_temp, newtemp+=interval)
 		var/image/disp_image = image('icons/mob/radial.dmi', "radial_temp")
 		var/hue = RotateHue(hsv(0, 255, 255), 120 * (1 - (newtemp-min_temp)/(optimal_temp-min_temp)))
 		disp_image.color = HSVtoRGB(hue)
 		temp_options["[newtemp - T0C]"] = disp_image
 	temp_options["OFF"] = image('icons/misc/mark.dmi', "x3")
+	loss = (active_power_usage / resistance)*0.5
 	cooking_objs = list()
 	for (var/i = 0, i < max_contents, i++)
 		cooking_objs.Add(new /datum/cooking_item/(new container_type(src)))
@@ -101,10 +103,8 @@
 	overlays += light
 
 /obj/machinery/appliance/cooker/Process()
-	if (!stat)
-		heat_up()
-	else
-		QUEUE_TEMPERATURE_ATOMS(src) // cool every tick if we're not turned on
+	if (stat || use_power == 1)
+		QUEUE_TEMPERATURE_ATOMS(src) // cool every tick if we're not turned on or heating
 	. = ..()
 
 /obj/machinery/appliance/cooker/power_change()
