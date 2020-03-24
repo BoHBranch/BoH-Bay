@@ -116,6 +116,6 @@
 	invocation_type = SpI_EMOTE
 	invocation = " is enveloped in shadows, before /his form begins to shift rapidly"
 	armor_pieces = list(/obj/item/clothing/head/overseerhood = slot_head,
-						/obj/item/clothing/suit/straight_jacket/overseercloak = slot_wear_suit
+						/obj/item/clothing/suit/overseercloak = slot_wear_suit
 						)
 	hud_state = "overseer"
