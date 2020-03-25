@@ -93,16 +93,16 @@
  */
 
 /obj/item/weapon/card/emag_broken
-	desc = "It's a card with a magnetic strip attached to some circuitry. It looks too busted to be used for anything but salvage."
-	name = "broken cryptographic sequencer"
+	desc = "It's a card with a magnetic strip and shorted RFID circuitry. It looks too busted to be used for anything but salvage."
+	name = "broken ID card"
 	icon_state = "emag"
 	item_state = "card-id"
 	origin_tech = list(TECH_MAGNET = 2, TECH_ESOTERIC = 2)
 
 /obj/item/weapon/card/emag
-	desc = "It's a card with a magnetic strip attached to some circuitry."
-	name = "cryptographic sequencer"
-	icon_state = "emag"
+	desc = "It's a boring old ID card. It looks blank and broken."
+	name = "blank ID"
+	icon_state = "data_1"
 	item_state = "card-id"
 	origin_tech = list(TECH_MAGNET = 2, TECH_ESOTERIC = 2)
 	var/uses = 15
