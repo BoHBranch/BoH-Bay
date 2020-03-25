@@ -91,10 +91,8 @@
 		else
 			to_chat(user, "<span class='danger'>It looks heavily damaged.</span>")
 
-/*
 /obj/structure/window/CanFluidPass(var/coming_from)
 	return (!is_fulltile() && coming_from != dir)
-*/
 
 /obj/structure/window/take_damage(damage = 0,  var/sound_effect = 1)
 	var/initialhealth = health

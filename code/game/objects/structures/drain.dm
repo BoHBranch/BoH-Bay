@@ -8,7 +8,7 @@
 	anchored = 1
 	density = 0
 	layer = TURF_LAYER+0.1
-	//can_drain = 1
+	can_drain = 1
 	var/welded
 
 /obj/structure/hygiene/drain/attackby(var/obj/item/thing, var/mob/user)

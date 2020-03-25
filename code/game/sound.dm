@@ -185,12 +185,12 @@ GLOBAL_LIST_INIT(glasscrack_sound,list('sound/effects/glass_crack1.ogg','sound/e
 	return S
 
 /mob/proc/playsound_get_environment(pressure_factor = 1.0)
-	//var/turf/self_turf = get_turf(loc)
+	var/turf/self_turf = get_turf(loc)
 	if (druggy)
 		return DRUGGED
 	else if (drowsyness || confused)
 		return DIZZY
-	else if ((stat == UNCONSCIOUS)/* || (self_turf?.is_flooded(lying))*/)
+	else if ((stat == UNCONSCIOUS) || (self_turf?.is_flooded(lying)))
 		return UNDERWATER
 	else if (pressure_factor < 0.5)
 		return SPACE

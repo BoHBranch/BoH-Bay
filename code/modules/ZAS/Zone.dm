@@ -163,7 +163,6 @@ Class Procs:
 		if(E.sleeping)
 			E.recheck()
 
-	/*
 	// Handle condensation from the air.
 	for(var/g in air.gas)
 		var/product = gas_data.condensation_products[g]
@@ -177,7 +176,6 @@ Class Procs:
 					break
 				air.adjust_gas(g, -condense_amt)
 				flooding.add_fluid(condense_amt, product)
-	*/
 
 	// Update atom temperature.
 	if(abs(air.temperature - last_air_temperature) >= ATOM_TEMPERATURE_EQUILIBRIUM_THRESHOLD)

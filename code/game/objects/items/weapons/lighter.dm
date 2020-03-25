@@ -23,11 +23,9 @@
 	update_icon()
 
 /obj/item/weapon/flame/lighter/proc/light(mob/user)
-	/*
 	if(submerged())
 		to_chat(user, "<span class='warning'>You cannot light \the [src] underwater.</span>")
 		return
-	*/
 	lit = 1
 	update_icon()
 	light_effects(user)
@@ -93,7 +91,7 @@
 	..()
 
 /obj/item/weapon/flame/lighter/Process()
-	if(/*!submerged() && */reagents.has_reagent(/datum/reagent/fuel))
+	if(!submerged() && reagents.has_reagent(/datum/reagent/fuel))
 		if(ismob(loc) && prob(10) && reagents.get_reagent_amount(/datum/reagent/fuel) < 1)
 			to_chat(loc, "<span class='warning'>\The [src]'s flame flickers.</span>")
 			set_light(0)

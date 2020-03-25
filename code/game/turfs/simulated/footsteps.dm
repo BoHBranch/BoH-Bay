@@ -9,10 +9,8 @@
 		if(S.footstep_type)
 			return get_footstep(S.footstep_type, caller)
 
-	/*
 	if(check_fluid_depth(10) && !is_flooded(TRUE))
 		return get_footstep(/decl/footsteps/water, caller)
-	*/
 
 	if(footstep_type)
 		return get_footstep(footstep_type, caller)
