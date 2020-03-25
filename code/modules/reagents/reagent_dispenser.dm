@@ -85,12 +85,12 @@
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "watertank"
 	amount_per_transfer_from_this = 10
+	var/modded = 0
+	var/fill_level = FLUID_SHALLOW // Can be adminbussed for silly room-filling tanks.
 	possible_transfer_amounts = "10;25;50;100"
 	initial_capacity = 50000
 	initial_reagent_types = list(/datum/reagent/water = 1)
 	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_CLIMBABLE
-	var/modded = 0
-	var/fill_level = 200 //FLUID_SHALLOW // Can be adminbussed for silly room-filling tanks.
 
 /obj/structure/reagent_dispensers/watertank/proc/drain_water()
 	if(reagents.total_volume <= 0)
@@ -104,16 +104,14 @@
 	// cannot jettison water above the level of a grown adult's head!
 	var/turf/T = get_turf(src)
 
-	if(!T/* || T.get_fluid_depth() > fill_level*/)
+	if(!T || T.get_fluid_depth() > fill_level)
 		return
 
 	// For now, this cheats and only checks/leaks water, pending additions to the fluid system.
-	/*var/W = */reagents.remove_reagent(/datum/reagent/water, amount_per_transfer_from_this * 5)
-	/*
+	var/W = reagents.remove_reagent(/datum/reagent/water, amount_per_transfer_from_this * 5)
 	if(W > 0)
 		// Artificially increased flow - a 1:1 rate doesn't result in very much water at all.
 		T.add_fluid(W * 100, /datum/reagent/water)
-	*/
 
 /obj/structure/reagent_dispensers/watertank/examine(mob/user)
 	. = ..()

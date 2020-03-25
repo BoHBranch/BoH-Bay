@@ -1,5 +1,4 @@
 //todo: toothbrushes, and some sort of "toilet-filthinator" for the hos
-/*
 /obj/structure/hygiene
 	var/next_gurgle = 0
 	var/clogged = 0 // -1 = never clog
@@ -89,7 +88,6 @@
 	if(world.time > last_gurgle + 80)
 		last_gurgle = world.time
 		playsound(T, pick(SSfluids.gurgles), 50, 1)
-*/
 
 /obj/structure/hygiene/toilet
 	name = "toilet"
@@ -205,9 +203,9 @@
 	icon_state = "shower"
 	density = 0
 	anchored = 1
-	//clogged = -1
-	//can_drain = 1
-	//drainage = 0.2 			//showers are tiny, drain a little slower
+	clogged = -1
+	can_drain = 1
+	drainage = 0.2 			//showers are tiny, drain a little slower
 
 	var/on = 0
 	var/obj/effect/mist/mymist = null
@@ -408,10 +406,8 @@
 
 /obj/structure/hygiene/sink/attackby(obj/item/O as obj, var/mob/living/user)
 
-	/*
 	if(isPlunger(O) && clogged > 0)
 		return ..()
-	*/
 
 	if(busy)
 		to_chat(user, "<span class='warning'>Someone's already washing here.</span>")
@@ -477,7 +473,7 @@
 /obj/structure/hygiene/sink/puddle	//splishy splashy ^_^
 	name = "puddle"
 	icon_state = "puddle"
-	//clogged = -1 // how do you clog a puddle
+	clogged = -1 // how do you clog a puddle
 
 /obj/structure/hygiene/sink/puddle/attack_hand(var/mob/M)
 	icon_state = "puddle-splash"

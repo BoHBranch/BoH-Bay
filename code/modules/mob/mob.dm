@@ -1097,7 +1097,6 @@
 /mob/proc/get_sex()
 	return gender
 
-/*
 /mob/is_fluid_pushable(var/amt)
 	if(..() && !buckled && (lying || !Check_Shoegrip()) && (amt >= mob_size * (lying ? 5 : 10)))
 		if(!lying)
@@ -1106,7 +1105,6 @@
 				to_chat(src, "<span class='danger'>You are pushed down by the flood!</span>")
 		return TRUE
 	return FALSE
-*/
 
 /mob/proc/get_footstep(var/footstep_type)
 	return
