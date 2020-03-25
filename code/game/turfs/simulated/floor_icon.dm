@@ -2,7 +2,7 @@ var/list/flooring_cache = list()
 
 /turf/simulated/floor/on_update_icon(var/update_neighbors)
 
-	update_flood_overlay()
+	//update_flood_overlay()
 
 	if(lava)
 		if(permit_ao)

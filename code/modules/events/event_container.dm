@@ -144,7 +144,7 @@ var/global/list/severity_to_string = list(EVENT_LEVEL_MUNDANE = "Mundane", EVENT
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Vermin Infestation",			/datum/event/infestation, 			100,	list(ASSIGNMENT_JANITOR = 100)),
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Wallrot",						/datum/event/wallrot, 				0,		list(ASSIGNMENT_ENGINEER = 30, ASSIGNMENT_GARDENER = 50)),
 		new /datum/event_meta/no_overmap(EVENT_LEVEL_MUNDANE, "Electrical Storm",	/datum/event/electrical_storm, 		20,		list(ASSIGNMENT_ENGINEER = 20, ASSIGNMENT_JANITOR = 100)),
-		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Toilet Clog",					/datum/event/toilet_clog,			50, 	list(ASSIGNMENT_JANITOR = 20)),
+		//new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Toilet Clog",					/datum/event/toilet_clog,			50, 	list(ASSIGNMENT_JANITOR = 20)),
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Drone Malfunction",				/datum/event/rogue_maint_drones/,	10,		list(ASSIGNMENT_ENGINEER = 30)),
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Disposals Explosion",			/datum/event/disposals_explosion/,	50,		list(ASSIGNMENT_ENGINEER = 40)),
 		new /datum/event_meta(EVENT_LEVEL_MUNDANE, "Brain Expansion",				/datum/event/brain_expansion/,		20,		list(ASSIGNMENT_SCIENTIST = 20)),
@@ -173,7 +173,7 @@ var/global/list/severity_to_string = list(EVENT_LEVEL_MUNDANE = "Mundane", EVENT
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Spider Infestation",					/datum/event/spider_infestation, 		25,		list(ASSIGNMENT_SECURITY = 15), 1),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Virology Breach",						/datum/event/prison_break/virology,		0,		list(ASSIGNMENT_MEDICAL = 100)),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Xenobiology Breach",					/datum/event/prison_break/xenobiology,	0,		list(ASSIGNMENT_SCIENCE = 100)),
-		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Toilet Flooding",						/datum/event/toilet_clog/flood,			50, 	list(ASSIGNMENT_JANITOR = 20)),
+		//new /datum/event_meta(EVENT_LEVEL_MODERATE, "Toilet Flooding",						/datum/event/toilet_clog/flood,			50, 	list(ASSIGNMENT_JANITOR = 20)),
 		new /datum/event_meta(EVENT_LEVEL_MODERATE, "Drone Uprising",						/datum/event/rogue_maint_drones/,		25,		list(ASSIGNMENT_ENGINEER = 30))
 	)
 

@@ -1737,6 +1737,7 @@
 		return (!L || L.can_drown())
 	return FALSE
 
+/*
 /mob/living/carbon/human/get_breath_from_environment(var/volume_needed = STD_BREATH_VOLUME)
 	var/datum/gas_mixture/breath = ..(volume_needed)
 	var/turf/T = get_turf(src)
@@ -1758,6 +1759,7 @@
 /mob/living/carbon/human/water_act(var/depth)
 	species.water_act(src, depth)
 	..(depth)
+*/
 
 /mob/living/carbon/human/proc/set_cultural_value(var/token, var/decl/cultural_info/_culture, var/defer_language_update)
 	if(!istype(_culture))

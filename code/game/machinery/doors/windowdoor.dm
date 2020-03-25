@@ -172,8 +172,10 @@
 			open()
 	..()
 
+/*
 /obj/machinery/door/window/CanFluidPass(var/coming_from)
 	return ((dir in GLOB.cardinal) && coming_from != dir)
+*/
 
 /obj/machinery/door/window/attackby(obj/item/weapon/I as obj, mob/user as mob)
 

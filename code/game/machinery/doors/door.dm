@@ -538,8 +538,10 @@
 			dirs |= direction
 	connections = dirs
 
+/*
 /obj/machinery/door/CanFluidPass(var/coming_from)
 	return !density
+*/
 
 // Most doors will never be deconstructed over the course of a round,
 // so as an optimization defer the creation of electronics until
