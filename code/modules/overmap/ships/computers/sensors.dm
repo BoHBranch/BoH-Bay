@@ -1,4 +1,3 @@
-#define SENSOR_TIME_DELAY 0.2 SECONDS
 
 /obj/machinery/computer/ship/sensors
 	name = "sensors console"
@@ -32,7 +31,7 @@
 	if(linked && sensors.use_power ** sensors.powered())
 		var/volume = 10
 		if(!sound_token)
-			sound_token = GLOB.sound_player.PlayLoopingSound(src, sound_id, working_sound, volume = volume)
+			sound_token = GLOB.sound_player.PlayLoopingSound(src, sound_id, working_sound, volume = volume, range = 10)
 		sound_token.SetVolume(volume)
 	else if(sound_token)
 		QDEL_NULL(sound_token)

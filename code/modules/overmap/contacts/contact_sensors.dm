@@ -5,7 +5,7 @@
 /obj/machinery/computer/ship/sensors/Destroy()
 	objects_in_view.Cut()
 	for(var/key in contact_datums)
-		var/datum/ship_contact/record = contact_datums[key]
+		var/datum/overmap_contact/record = contact_datums[key]
 		qdel(record)
 	contact_datums.Cut()
 	. = ..()
@@ -13,19 +13,19 @@
 /obj/machinery/computer/ship/sensors/attempt_hook_up(obj/effect/overmap/visitable/ship/sector)
 	. = ..()
 	if(. && linked && !contact_datums[linked])
-		var/datum/ship_contact/record = new(src, linked)
+		var/datum/overmap_contact/record = new(src, linked)
 		record.handle_being_identified()
 
 /obj/machinery/computer/ship/sensors/proc/reveal_contacts(var/mob/user)
 	if(user && user.client)
 		for(var/key in contact_datums)
-			var/datum/ship_contact/record = contact_datums[key]
+			var/datum/overmap_contact/record = contact_datums[key]
 			user.client.images |= record.marker
 
 /obj/machinery/computer/ship/sensors/proc/hide_contacts(var/mob/user)
 	if(user && user.client)
 		for(var/key in contact_datums)
-			var/datum/ship_contact/record = contact_datums[key]
+			var/datum/overmap_contact/record = contact_datums[key]
 			user.client.images -= record.marker
 
 /obj/machinery/computer/ship/sensors/Process()
@@ -39,7 +39,7 @@
 		linked.set_light(0)
 		// TODO move to on_power_change()?
 		for(var/obj/effect/overmap/visitable/ship/contact in objects_in_view)
-			var/datum/ship_contact/record = contact_datums[contact]
+			var/datum/overmap_contact/record = contact_datums[contact]
 			if(record)
 				record.hide()
 		objects_in_view.Cut()
@@ -51,21 +51,21 @@
 	// What can we see?
 	var/list/new_objects_in_view = list()
 	var/list/objects_in_current_view = list()
-	for(var/obj/effect/overmap/visitable/ship/contact in view(sensor_range, linked)-linked)
+	for(var/obj/effect/overmap/contact in view(sensor_range, linked)-linked)
 		objects_in_current_view[contact] = TRUE
 		if(!objects_in_view[contact])
 			new_objects_in_view[contact] = TRUE
 
 	// Fade out and remove anything that is out of range.
-	for(var/obj/effect/overmap/visitable/ship/contact in objects_in_view)
+	for(var/obj/effect/overmap/contact in objects_in_view)
 		if(!QDELETED(contact) && objects_in_current_view[contact])
 			continue
 		objects_in_view -= contact
-		var/datum/ship_contact/record = contact_datums[contact]
+		var/datum/overmap_contact/record = contact_datums[contact]
 		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
-		if(record)
+		if(record && !record.is_overmap_event)
 			animate(record.marker, alpha=0, 2 SECOND, 1, LINEAR_EASING)
-			addtimer(CALLBACK(record, /datum/ship_contact/proc/hide), 2 SECOND)
+			addtimer(CALLBACK(record, /datum/overmap_contact/proc/hide), 2 SECOND)
 			if(record.identified)
 				visible_message(SPAN_NOTICE("[src] states, 'Contact lost with [record.name], bearing [bearing].'"))
 			else
@@ -75,7 +75,7 @@
 	objects_in_view |= new_objects_in_view
 
 	for(var/obj/effect/overmap/visitable/ship/contact in new_objects_in_view)
-		var/datum/ship_contact/record = contact_datums[contact]
+		var/datum/overmap_contact/record = contact_datums[contact]
 		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
 		if(record)
 			if(record.identified)
@@ -88,13 +88,17 @@
 
 	for(var/obj/effect/overmap/visitable/ship/contact in objects_in_view) //Update everything.
 		// Have we seen this ship before?
-		var/datum/ship_contact/record = contact_datums[contact]
+		var/datum/overmap_contact/record = contact_datums[contact]
 		// Generate contact information for this overmap object.
 		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
 		if(!record)
-			record = new /datum/ship_contact(src, contact)
-			playsound(loc, "sound/machines/sensors/newcontact.ogg", 30, 1)
-			visible_message(SPAN_NOTICE("<b>\The [src]</b> states, \"New contact detected, temporary designation [record.temp_designation], bearing [bearing]. Identification in progress.\""))
+			record = new /datum/overmap_contact(src, contact)
+			if(record.effect.type in linked.known_ships)
+				record.handle_being_identified()
+				visible_message(SPAN_NOTICE("<b>\The [src]</b> states, \"Known contact registered, [record.name].\""))
+			else
+				playsound(loc, "sound/machines/sensors/newcontact.ogg", 30, 1)
+				visible_message(SPAN_NOTICE("<b>\The [src]</b> states, \"New contact detected, temporary designation [record.temp_designation], bearing [bearing]. Identification in progress.\""))
 
 		// Update identification information for this record.
 		if(prob(record.effect.sensor_visiblity))
@@ -108,6 +112,14 @@
 					var/decl/ship_contact_class/class = decls_repository.get_decl(record.effect.contact_class)
 					visible_message(SPAN_NOTICE("[src] states, 'Contact [record.temp_designation] identified as [record.name], [class.class_long], bearing [bearing].'"))
 
+	for(var/obj/effect/overmap/event in objects_in_view)
+		var/datum/overmap_contact/record = contact_datums[event]
+		if(!record)
+			record = new /datum/overmap_contact(src, event, TRUE)
+		var/time_delay = (SENSOR_TIME_DELAY * get_dist(linked, event))
+		addtimer(CALLBACK(record, .proc/ping), time_delay)
+
+
 	//Update our own marker icon.
-	var/datum/ship_contact/self_record = contact_datums[linked]
+	var/datum/overmap_contact/self_record = contact_datums[linked]
 	self_record.update_marker_icon()
