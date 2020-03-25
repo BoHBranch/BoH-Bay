@@ -105,7 +105,7 @@
 /obj/machinery/appliance/cooker/Process()
 	if (stat || use_power == 1)
 		QUEUE_TEMPERATURE_ATOMS(src) // cool every tick if we're not turned on or heating
-	else
+	if(!stat)
 		heat_up()
 	. = ..()
 
