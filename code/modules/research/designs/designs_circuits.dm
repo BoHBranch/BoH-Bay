@@ -773,6 +773,13 @@
 	build_path = /obj/item/weapon/stock_parts/circuitboard/oven
 	sort_string = "WAAAW"
 
+/datum/design/circuit/stove
+	name = "kitchen appliance (stove)"
+	id = "stove"
+	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/stove
+	sort_string = "WAAAX"
+
 /datum/design/circuit/grill
 	name = "kitchen appliance (grill)"
 	id = "grill"

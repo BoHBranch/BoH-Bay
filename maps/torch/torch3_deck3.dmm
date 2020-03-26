@@ -18778,7 +18778,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/reinforced/airless,
-/area/space)
+/area/hydroponics)
 "LT" = (
 /obj/structure/cable/green{
 	d1 = 4;
