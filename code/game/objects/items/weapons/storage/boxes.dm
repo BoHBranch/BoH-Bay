@@ -342,6 +342,12 @@
 	icon_state = "handcuff"
 	startswith = list(/obj/item/weapon/handcuffs = 7)
 
+/obj/item/weapon/storage/box/zipties
+	name = "box of zipties"
+	desc = "A box full of zipties."
+	icon_state = "handcuff"
+	startswith = list(/obj/item/weapon/handcuffs/ziptie = 7)
+
 /obj/item/weapon/storage/box/mousetraps
 	name = "box of Pest-B-Gon mousetraps"
 	desc = "<B><FONT color='red'>WARNING:</FONT></B> <I>Keep out of reach of children</I>."
