@@ -77,6 +77,7 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 			marker.overlays += shield_image
 
 /datum/overmap_contact/proc/update_marker_maptext(var/text)
+	marker.maptext = null
 	marker.maptext = text
 
 /datum/overmap_contact/proc/ping()
@@ -88,10 +89,11 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 	addtimer(CALLBACK(src, .proc/fadeout), 1.5 SECOND)
 
 /datum/overmap_contact/proc/fadeout()
-	animate(marker, alpha=50, 2 SECOND, 1, LINEAR_EASING)
+	animate(marker, alpha=0, 2 SECOND, 1, LINEAR_EASING)
 	addtimer(CALLBACK(src, .proc/unping), 2 SECOND)
 
 /datum/overmap_contact/proc/unping()
+	hide()
 	pinged = FALSE
 
 /datum/overmap_contact/proc/show()
