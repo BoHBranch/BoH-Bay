@@ -43,7 +43,7 @@
 	var/obj/item/weapon/handcuffs/HC = handcuffed
 
 	//A default in case you are somehow handcuffed with something that isn't an obj/item/weapon/handcuffs type
-	var/breakouttime = istype(HC) ? HC.breakouttime : 2 MINUTES
+	var/breakouttime = istype(HC) ? HC.breakouttime : 1 MINUTE
 
 	var/mob/living/carbon/human/H = src
 	if(istype(H) && H.gloves && istype(H.gloves,/obj/item/clothing/gloves/rig))
@@ -141,9 +141,9 @@
 		..()
 	else
 		setClickCooldown(100)
-		unbuckle_time = 2 MINUTES
+		unbuckle_time = 1 MINUTE
 		if(psi && psi.can_use())
-			unbuckle_time = max(0, unbuckle_time - ((25 SECONDS) * psi.get_rank(PSI_PSYCHOKINESIS)))
+			unbuckle_time = max(0, unbuckle_time - ((12 SECONDS) * psi.get_rank(PSI_PSYCHOKINESIS)))
 
 		visible_message(
 			"<span class='danger'>[src] attempts to unbuckle themself!</span>",
