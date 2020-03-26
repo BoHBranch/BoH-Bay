@@ -53,7 +53,7 @@
 /obj/item/gunbox/attack_self(mob/living/user)
 	var/list/options = list()
 	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/pistol/military/alt/solar,/obj/item/ammo_magazine/pistol/double/rubber,/obj/item/weapon/gun/projectile/shotgun/pump/beanbag,/obj/item/weapon/storage/box/ammo/beanbags/eight,/obj/item/clothing/accessory/storage/bandolier)
-	options["Energy"] = list(/obj/item/weapon/gun/energy/gun/secure,/obj/item/weapon/grenade/empgrenade/low_yield,/obj/item/weapon/gun/energy/taser/carbine/ext,/obj/item/weapon/cell/device/high)
+	options["Energy"] = list(/obj/item/weapon/gun/energy/gun/secure,/obj/item/weapon/gun/energy/taser/carbine/ext,/obj/item/weapon/cell/device/high)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
@@ -76,7 +76,7 @@
 /obj/item/gunboxsmall/attack_self(mob/living/user)
 	var/list/options = list()
 	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/pistol/military/alt/solar,/obj/item/ammo_magazine/pistol/double/rubber)
-	options["Energy"] = list(/obj/item/weapon/gun/energy/gun/secure,/obj/item/weapon/grenade/empgrenade/low_yield)
+	options["Energy"] = list(/obj/item/weapon/gun/energy/gun/secure)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
