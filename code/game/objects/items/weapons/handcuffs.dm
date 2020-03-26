@@ -195,7 +195,7 @@ var/last_chew = 0
 	desc = " A sturdy and reliable plastic ziptie for binding the wrists."
 	icon = 'icons/obj/items.dmi'
 	icon_state = "ziptie"
-	breakouttime  = 600
+	breakouttime  = 300
 	cuff_sound = 'sound/weapons/cablecuff.ogg'
 	elastic = 1
 
