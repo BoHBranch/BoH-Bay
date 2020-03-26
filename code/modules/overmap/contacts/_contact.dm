@@ -63,6 +63,7 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 		var/obj/effect/overmap/event/source_event = source
 		marker = image(loc = source_event, icon = 'icons/obj/overmap.dmi', icon_state = source_event.overmap_effect_state)
 		marker.color = source_event.color
+		marker.filters = filter(type="drop_shadow", color = marker.color + "F0", size = 2, offset = 1,x = 0, y = 0)
 
 /datum/overmap_contact/proc/update_marker_icon()
 	if(identified)
@@ -84,12 +85,14 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 	show()
 	pinged = TRUE
 	animate(marker, alpha=255, 0.5 SECOND, 1, LINEAR_EASING)
-	addtimer(CALLBACK(src, .proc/fadeout), 1 SECOND)
+	addtimer(CALLBACK(src, .proc/fadeout), 1.5 SECOND)
 
 /datum/overmap_contact/proc/fadeout()
-	animate(marker, alpha=0, 2 SECOND, 1, LINEAR_EASING)
+	animate(marker, alpha=50, 2 SECOND, 1, LINEAR_EASING)
+	addtimer(CALLBACK(src, .proc/unping), 2 SECOND)
+
+/datum/overmap_contact/proc/unping()
 	pinged = FALSE
-	hide()
 
 /datum/overmap_contact/proc/show()
 	for(var/weakref/W in owner?.viewers)

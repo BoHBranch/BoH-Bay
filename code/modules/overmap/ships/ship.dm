@@ -47,7 +47,7 @@
 
 /obj/effect/overmap/visitable/ship/Initialize()
 	. = ..()
-	contact_icon_state = icon_state
+	contact_icon_state = "ship"
 	icon_state = "blank"
 	min_speed = round(min_speed, SHIP_MOVE_RESOLUTION)
 	max_speed = round(max_speed, SHIP_MOVE_RESOLUTION)

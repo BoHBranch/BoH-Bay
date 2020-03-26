@@ -173,7 +173,6 @@
 	var/weaknesses //if the BSA can destroy them and with what
 	var/list/victims //basically cached events on which Z level
 	var/list/colors = list() //Pick a color from this list on init
-	var/overmap_effect_state //Our overmap effect state.
 
 /obj/effect/overmap/event/Initialize()
 	. = ..()

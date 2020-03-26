@@ -116,7 +116,8 @@
 		var/datum/overmap_contact/record = contact_datums[event]
 		if(!record)
 			record = new /datum/overmap_contact(src, event, TRUE)
-		var/time_delay = (SENSOR_TIME_DELAY * get_dist(linked, event))
+			continue
+		var/time_delay = max((SENSOR_TIME_DELAY * get_dist(linked, event)),1)
 		addtimer(CALLBACK(record, .proc/ping), time_delay)
 
 
