@@ -8,7 +8,7 @@ GLOBAL_LIST_EMPTY(adminfaxes)	//cache for faxes that have been sent to admins
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "fax"
 	insert_anim = "faxsend"
-	var/send_access = list(list(access_lawyer, access_solgov_crew))
+	var/send_access = list(list(access_lawyer))
 
 	idle_power_usage = 30
 	active_power_usage = 200

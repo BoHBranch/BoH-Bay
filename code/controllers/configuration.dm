@@ -99,7 +99,7 @@ var/list/gamemode_cache = list()
 	var/issuereporturl
 
 	var/forbid_singulo_possession = 0
-	
+
 	var/rounds_until_hard_restart = -1
 
 	//game_options.txt configs
@@ -209,7 +209,7 @@ var/list/gamemode_cache = list()
 
 	var/ghosts_can_possess_animals = 0
 	var/delist_when_no_admins = FALSE
-	
+
 	//API Rate limiting
 	var/api_rate_limit = 50
 	var/list/api_rate_limit_whitelist = list()
@@ -240,12 +240,13 @@ var/list/gamemode_cache = list()
 	var/max_acts_per_interval = 140 //Number of actions per interval permitted for spam protection.
 	var/act_interval = 0.1 SECONDS //Interval for spam prevention.
 
-	var/panic_bunker = TRUE //is the panic bunker enabled?
+	var/job_whitelist = FALSE //Do we use the job whitelist? Set to false so devs don't have to set config options.
+	var/panic_bunker = FALSE //is the panic bunker enabled?
 	var/panic_bunker_message = "Sorry! The panic bunker is enabled. Please head to our discord to get yourself added to the panic bunker bypass."
 	var/delist_population = 50 //What population do we automatically take ourselves off to hub at?
 	var/pb_population = 70 //What population do we automatically engage the panic bunker at?
 	var/announce_gamemode = FALSE //Do we annouce the game mode or not?
-	
+
 	// fail2topic settings
 	var/fail2topic_rate_limit = 5 SECONDS
 	var/fail2topic_max_fails = 5
@@ -732,13 +733,13 @@ var/list/gamemode_cache = list()
 
 				if("delist_when_no_admins")
 					config.delist_when_no_admins = TRUE
-				
+
 				if("api_rate_limit")
 					config.api_rate_limit = text2num(value)
 
 				if("api_rate_limit_whitelist")
 					config.api_rate_limit_whitelist = splittext(value, ";")
-				
+
 				if("map_switching")
 					config.allow_map_switching = 1
 
@@ -797,10 +798,13 @@ var/list/gamemode_cache = list()
 
 				if ("announce_gamemode")
 					config.announce_gamemode = TRUE
-				
+
+				if ("panic_bunker")
+					config.panic_bunker = TRUE
+
 				if("rounds_until_hard_restart")
 					config.rounds_until_hard_restart = text2num(value)
-				
+
 				if ("fail2topic_rate_limit")
 					fail2topic_rate_limit = text2num(value) SECONDS
 				if ("fail2topic_max_fails")
@@ -809,6 +813,9 @@ var/list/gamemode_cache = list()
 					fail2topic_rule_name = value
 				if ("fail2topic_enabled")
 					fail2topic_enabled = text2num(value)
+
+				if ("job_whitelist")
+					config.job_whitelist = TRUE
 
 				else
 					log_misc("Unknown setting in configuration: '[name]'")

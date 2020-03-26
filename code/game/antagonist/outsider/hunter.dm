@@ -22,7 +22,7 @@ GLOBAL_DATUM_INIT(hunters, /datum/antagonist/hunter, new)
 	. = ..()
 	if(ishuman(player.current))
 		var/mob/living/carbon/human/H = player.current
-		if(!leader && is_species_whitelisted(player.current, SPECIES_MANTID_GYNE))
+		if(!leader && is_species_whitelisted(player.current,SPECIES_MANTID_GYNE))
 			leader = player
 			if(H.species.get_bodytype() != SPECIES_MANTID_GYNE)
 				H.set_species(SPECIES_MANTID_GYNE)

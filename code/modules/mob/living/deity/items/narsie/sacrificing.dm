@@ -2,7 +2,7 @@
 	name = DEITY_TREE_SACRIFICE
 	desc = "Unlocks the tools necessary to allow your followers to sacrifice in your name."
 	category = DEITY_TREE_SACRIFICE
-	base_cost = 50
+	base_cost = 30
 	max_level = 1
 
 /datum/deity_item/boon/sac_dagger
@@ -26,7 +26,7 @@
 	desc = "This axe can store the very souls of those it kills to be later transfered to you through an altar."
 	category = DEITY_TREE_SACRIFICE
 	requirements = list(DEITY_TREE_SACRIFICE = 1)
-	base_cost = 50
+	base_cost = 40
 	boon_path = /obj/item/weapon/material/twohanded/fireaxe/cult
 
 /datum/deity_item/blood_stone
@@ -34,7 +34,7 @@
 	desc = "Unlocks the blood stone building, which allows followers to increase your power through ritual and prayer."
 	category = DEITY_TREE_SACRIFICE
 	requirements = list(DEITY_TREE_SACRIFICE = 1)
-	base_cost = 50
+	base_cost = 40
 	max_level = 1
 
 /datum/deity_item/blood_stone/buy(var/mob/living/deity/user)

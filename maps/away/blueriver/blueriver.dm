@@ -3,8 +3,8 @@
 /obj/effect/overmap/visitable/sector/arcticplanet
 	name = "arctic planetoid"
 	desc = "Sensor array detects an arctic planet with a small vessle on the planet's surface. Scans further indicate strange energy levels below the planet's surface."
-	in_space = 0
 	icon_state = "globe"
+	sector_flags = OVERMAP_SECTOR_KNOWN
 	initial_generic_waypoints = list(
 		"nav_blueriv_1",
 		"nav_blueriv_2",

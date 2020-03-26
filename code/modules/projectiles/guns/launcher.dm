@@ -27,5 +27,5 @@
 	update_release_force(projectile)
 	projectile.dropInto(user.loc)
 	projectile.throw_at(target, throw_distance, release_force, user)
-	play_fire_sound(user,projectile)
+	play_fire_sound(src,projectile)
 	return 1

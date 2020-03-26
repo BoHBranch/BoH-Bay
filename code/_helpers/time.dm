@@ -18,7 +18,9 @@
 #define DS2TICKS(DS) ((DS)/world.tick_lag)
 #define TICKS2DS(T) ((T) TICKS)
 
-GLOBAL_VAR_INIT(timezoneOffset, 0) // The difference betwen midnight (of the host computer) and 0 world.ticks.
+#define FORMAT_HOUR 0x1
+#define FORMAT_MINUTE 0x2
+#define FORMAT_SECOND 0x4
 
 /proc/get_game_time()
 	var/global/time_offset = 0
@@ -85,8 +87,8 @@ var/global/round_start_time_real = 0
 
 /proc/roundduration2text()
 	if(!round_start_time_real)
-		return "00:00"
-	return time2text(get_real_round_duration() - GLOB.timezoneOffset,"hh:mm")
+		return "0:00"
+	return get_clock_time(Floor(get_real_round_duration()/10),FORMAT_HOUR | FORMAT_MINUTE)
 
 /hook/roundstart/proc/start_timer()
 	round_start_time_real = REALTIMEOFDAY
@@ -132,3 +134,30 @@ GLOBAL_VAR_INIT(rollovercheck_last_timeofday, 0)
 	var/time_string = time2text(world.realtime, "MM-DD")
 	var/time_list = splittext(time_string, "-")
 	return list(text2num(time_list[1]), text2num(time_list[2]))
+
+/proc/get_clock_time(var/seconds,var/format_type = FORMAT_MINUTE | FORMAT_SECOND)
+
+	var/hour_value = Floor(seconds/3600,1)
+	var/minute_value = Floor(seconds/60, 1) % 60
+	var/second_value = seconds % 60
+
+	var/minute_text = "[minute_value]"
+	if(minute_value < 10 && format_type & FORMAT_HOUR)
+		minute_text = "0[minute_text]"
+
+	var/second_text = "[second_value]"
+	if(second_value < 10)
+		second_text = "0[second_value]"
+
+	. = list()
+
+	if(format_type & FORMAT_HOUR || hour_value)
+		. += "[hour_value]"
+
+	if(format_type & FORMAT_MINUTE || minute_value)
+		. += "[minute_text]"
+
+	if(format_type & FORMAT_SECOND)
+		. += "[second_text]"
+
+	return english_list(.,"0:00",":",":")

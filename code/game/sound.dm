@@ -54,112 +54,158 @@ GLOBAL_LIST_INIT(button_sound,list('sound/machines/button1.ogg','sound/machines/
 GLOBAL_LIST_INIT(chop_sound,list('sound/weapons/chop1.ogg','sound/weapons/chop2.ogg','sound/weapons/chop3.ogg'))
 GLOBAL_LIST_INIT(glasscrack_sound,list('sound/effects/glass_crack1.ogg','sound/effects/glass_crack2.ogg','sound/effects/glass_crack3.ogg','sound/effects/glass_crack4.ogg'))
 
-/proc/playsound(var/atom/source, soundin, vol as num, vary, extrarange as num, falloff, var/is_global, var/frequency, var/is_ambiance = 0)
-
-	soundin = get_sfx(soundin) // same sound for everyone
-
-	if(isarea(source))
-		error("[source] is an area and is trying to make the sound: [soundin]")
+/proc/playsound(atom/source, soundin, vol, vary, extrarange, falloff, is_global, usepressure = 1, environment = -1, is_ambiance = FALSE, frequency = FALSE)
+	if (isarea(source))
+		crash_with("[source] is an area and is trying to make the sound: [soundin]")
 		return
-	frequency = vary && isnull(frequency) ? get_rand_frequency() : frequency // Same frequency for everybody
-	var/turf/turf_source = get_turf(source)
+	var/sound/original_sound = playsound_get_sound(soundin, vol, falloff, 0, environment)
 
- 	// Looping through the player list has the added bonus of working for mobs inside containers
-	for (var/P in GLOB.player_list)
-		var/mob/M = P
-		if(!M || !M.client)
-			continue
-		if(get_dist(M, turf_source) <= (world.view + extrarange) * 2)
-			var/turf/T = get_turf(M)
-			if(T && T.z == turf_source.z && (!is_ambiance || M.get_preference_value(/datum/client_preference/play_ambiance) == GLOB.PREF_YES))
-				M.playsound_local(turf_source, soundin, vol, vary, frequency, falloff, is_global, extrarange)
+	if (!original_sound)
+		crash_with("Could not construct original sound.")
+		return
 
-var/const/FALLOFF_SOUNDS = 0.5
+	if(frequency)
+		original_sound.frequency = frequency
 
-/mob/proc/playsound_local(var/turf/turf_source, soundin, vol as num, vary, frequency, falloff, is_global, extrarange)
-	if(!src.client || ear_deaf > 0)	return
-	var/sound/S = soundin
-	if(!istype(S))
-		soundin = get_sfx(soundin)
-		S = sound(soundin)
-		S.wait = 0 //No queue
-		S.channel = 0 //Any channel
-		S.volume = vol
-		S.environment = -1
-		if(frequency)
-			S.frequency = frequency
-		else if (vary)
-			S.frequency = get_rand_frequency()
+	if (is_global)
+		playsound_allinrange(source, original_sound,
+			extra_range = extrarange,
+			is_global = is_global,
+			use_random_freq = !!vary,
+			use_pressure = usepressure,
+			modify_environment = (environment != 0),
+			is_ambiance = is_ambiance
+		)
+	else
+		playsound_lineofsight(source, original_sound,
+			use_random_freq = !!vary,
+			use_pressure = usepressure,
+			modify_environment = (environment != 0),
+			is_ambiance = is_ambiance
+		)
 
-	//sound volume falloff with pressure
+/mob/proc/playsound_to(turf/source_turf, sound/original_sound, use_random_freq, modify_environment = TRUE, use_pressure = TRUE)
+	var/sound/S = copy_sound(original_sound)
+
 	var/pressure_factor = 1.0
 
-	S.volume *= get_sound_volume_multiplier()
+	if (use_random_freq)
+		S.frequency = get_rand_frequency()
 
-	var/turf/T = get_turf(src)
-	// 3D sounds, the technology is here!
-	if(isturf(turf_source))
-		//sound volume falloff with distance
-		var/distance = get_dist(T, turf_source)
+	if (isturf(source_turf))
+		var/turf/T = get_turf(src)
 
-		S.volume -= max(distance - (world.view + extrarange), 0) * 2 //multiplicative falloff to add on top of natural audio falloff.
+		var/distance = get_dist(T, source_turf)
 
-		var/datum/gas_mixture/hearer_env = T.return_air()
-		var/datum/gas_mixture/source_env = turf_source.return_air()
+		S.volume -= max(distance - world.view, 0) * 2
 
-		if (hearer_env && source_env)
-			var/pressure = min(hearer_env.return_pressure(), source_env.return_pressure())
+		if (use_pressure)
+			var/datum/gas_mixture/hearer_env = T.return_air()
+			var/datum/gas_mixture/source_env = source_turf.return_air()
 
-			if (pressure < ONE_ATMOSPHERE)
-				pressure_factor = max((pressure - SOUND_MINIMUM_PRESSURE)/(ONE_ATMOSPHERE - SOUND_MINIMUM_PRESSURE), 0)
-		else //in space
-			pressure_factor = 0
+			if (hearer_env && source_env)
+				var/pressure = min(hearer_env.return_pressure(), source_env.return_pressure())
 
-		if (distance <= 1)
-			pressure_factor = max(pressure_factor, 0.15)	//hearing through contact
+				if (pressure < ONE_ATMOSPHERE)
+					pressure_factor = max((pressure - SOUND_MINIMUM_PRESSURE)/(ONE_ATMOSPHERE - SOUND_MINIMUM_PRESSURE), 0)
+			else //in space
+				pressure_factor = 0
 
-		S.volume *= pressure_factor
+			if (distance <= 1)
+				pressure_factor = max(pressure_factor, 0.15)	//hearing through contact
+
+			S.volume *= pressure_factor
 
 		if (S.volume <= 0)
-			return	//no volume means no sound
+			return 0
 
-		var/dx = turf_source.x - T.x // Hearing from the right/left
-		S.x = dx
-		var/dz = turf_source.y - T.y // Hearing from infront/behind
-		S.z = dz
-		// The y value is for above your head, but there is no ceiling in 2d spessmens.
-		S.y = 1
-		S.falloff = (falloff ? falloff : FALLOFF_SOUNDS)
+		S.x = source_turf.x - T.x // left/right
+		S.z = source_turf.y - T.y // front/back
+		S.y = (source_turf.z - T.z) * SOUND_Z_FACTOR // above/below-ish
 
-	if(!is_global)
+	if (modify_environment)
+		S.environment = playsound_get_environment(pressure_factor)
 
-		if(istype(src,/mob/living/))
-			var/mob/living/carbon/M = src
-			if (istype(M) && M.hallucination_power > 50 && M.chem_effects[CE_MIND] < 1)
-				S.environment = PSYCHOTIC
-			else if (M.druggy)
-				S.environment = DRUGGED
-			else if (M.drowsyness)
-				S.environment = DIZZY
-			else if (M.confused)
-				S.environment = DIZZY
-			else if (M.stat == UNCONSCIOUS)
-				S.environment = UNDERWATER
-			else if (T?.is_flooded(M.lying))
-				S.environment = UNDERWATER
-			else if (pressure_factor < 0.5)
-				S.environment = SPACE
-			else
-				var/area/A = get_area(src)
-				S.environment = A.sound_env
+	sound_to(src, S)
 
-		else if (pressure_factor < 0.5)
-			S.environment = SPACE
-		else
-			var/area/A = get_area(src)
-			S.environment = A.sound_env
+	return S.volume
 
-	src << S
+/proc/playsound_allinrange(atom/source, sound/S, extra_range = 0, is_global = FALSE, use_random_freq = FALSE, use_pressure = TRUE,  modify_environment = TRUE, is_ambiance = FALSE)
+	var/turf/source_turf = get_turf(source)
+
+	for (var/MM in GLOB.player_list)
+		var/mob/M = MM
+
+		if (!M?.client)
+			continue
+
+		var/dist = get_dist(M, source_turf)
+
+		if (dist <= (world.view + extra_range) * 3)
+			var/turf/T = get_turf(M)
+
+			if (!T || T.z != source_turf.z)
+				continue
+			else if (!M.sound_can_play(is_ambiance))
+				continue
+
+			M.playsound_to(source_turf, S, use_random_freq = use_random_freq, use_pressure = use_pressure, modify_environment = modify_environment)
+
+/proc/playsound_lineofsight(atom/source, sound/S, use_random_freq = FALSE, use_pressure = TRUE, modify_environment = TRUE, is_ambiance = FALSE)
+	var/list/mobs = get_mobs_or_objects_in_view(world.view, source, include_objects = FALSE)
+
+	var/turf/source_turf = get_turf(source)
+
+	for (var/MM in mobs)
+		var/mob/M = MM
+		if (!M.sound_can_play(is_ambiance))
+			continue
+
+		M.playsound_to(source_turf, S, use_random_freq = use_random_freq, use_pressure = use_pressure, modify_environment = modify_environment)
+
+/mob/proc/sound_can_play(is_ambiance)
+	if (!client)
+		return FALSE
+
+	return !is_ambiance || src.get_preference_value(/datum/client_preference/play_ambiance) == GLOB.PREF_YES
+
+/proc/playsound_get_sound(soundin, volume, fall_off, frequency = 0, environment = -1)
+	if (istext(soundin))
+		soundin = get_sfx(soundin)
+
+	var/sound/S = istype(soundin, /sound) ? copy_sound(soundin) : sound(soundin)
+
+	S.wait = 0
+	S.channel = 0
+	S.frequency = frequency
+	S.falloff = fall_off || FALLOFF_SOUNDS
+	S.environment = environment
+	S.volume = volume
+
+	return S
+
+/mob/proc/playsound_get_environment(pressure_factor = 1.0)
+	var/turf/self_turf = get_turf(loc)
+	if (druggy)
+		return DRUGGED
+	else if (drowsyness || confused)
+		return DIZZY
+	else if ((stat == UNCONSCIOUS) || (self_turf?.is_flooded(lying)))
+		return UNDERWATER
+	else if (pressure_factor < 0.5)
+		return SPACE
+	var/area/A = get_area(src)
+	return A.sound_env
+
+/mob/living/carbon/playsound_get_environment(pressure_factor = 1.0)
+	if (hallucination_power > 50 && chem_effects[CE_MIND] < 1)
+		return PSYCHOTIC
+	return ..()
+
+/mob/proc/playsound_simple(source, soundin, volume, use_random_freq = FALSE, frequency = 0, falloff = 0, use_pressure = TRUE)
+	var/sound/S = playsound_get_sound(soundin, volume, falloff, frequency)
+
+	playsound_to(source ? get_turf(source) : null, S, use_random_freq, use_pressure = use_pressure)
 
 /client/proc/playtitlemusic()
 	if(get_preference_value(/datum/client_preference/play_lobby_music) == GLOB.PREF_YES)
@@ -190,10 +236,19 @@ var/const/FALLOFF_SOUNDS = 0.5
 			if ("glasscrack") soundin = pick(GLOB.glasscrack_sound)
 	return soundin
 
+/proc/copy_sound(sound/original)
+	var/sound/S = sound(original.file, original.repeat, original.wait, original.channel, original.volume)
+
+	S.frequency = original.frequency
+	S.falloff = original.falloff
+	S.environment = original.environment
+
+	return S
+
 /client/verb/stop_sounds()
 	set name = "Stop All Sounds"
 	set desc = "Stop all sounds that are currently playing on your client."
 	set category = "OOC"
 
 	if(mob)
-		mob << sound(null)
+		sound_to(mob, sound(null))

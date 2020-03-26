@@ -1,7 +1,7 @@
 /datum/phenomena/exhude_blood
 	name = "Exhude Blood"
 	desc = "Take pity on a follower, converting a pitance of your power into blood. Don't let them forget your mercy."
-	cost = 20
+	cost = 15
 	flags = PHENOMENA_FOLLOWER
 	expected_type = /mob/living/carbon/human
 
@@ -22,8 +22,8 @@
 /datum/phenomena/hellscape
 	name = "Reveal Hellscape"
 	desc = "Show a non-follower what awaits their souls after you are through with them."
-	cost = 60
-	cooldown = 450
+	cost = 40
+	cooldown = 240
 	flags = PHENOMENA_NONFOLLOWER
 	expected_type = /mob/living
 	var/static/list/creepy_notes = list("Your knees give out as an unnatural screaming rings your ears.",

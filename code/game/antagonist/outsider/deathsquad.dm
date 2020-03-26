@@ -9,14 +9,12 @@ GLOBAL_DATUM_INIT(deathsquad, /datum/antagonist/deathsquad, new)
 	flags = ANTAG_OVERRIDE_JOB | ANTAG_OVERRIDE_MOB | ANTAG_HAS_NUKE | ANTAG_HAS_LEADER | ANTAG_RANDOM_EXCEPTED
 	default_access = list(access_cent_general, access_cent_specops, access_cent_living, access_cent_storage)
 	antaghud_indicator = "huddeathsquad"
-
 	hard_cap = 4
 	hard_cap_round = 8
 	initial_spawn_req = 4
 	initial_spawn_target = 6
-
 	faction = "deathsquad"
-
+	var/uniform_type = /obj/item/clothing/under/syndicate/tacticool
 	var/deployed = 0
 
 /datum/antagonist/deathsquad/attempt_spawn()
@@ -28,9 +26,9 @@ GLOBAL_DATUM_INIT(deathsquad, /datum/antagonist/deathsquad, new)
 		return
 
 	if (player.mind == leader)
-		player.equip_to_slot_or_del(new /obj/item/clothing/under/solgov/pt/army(player), slot_w_uniform)
+		player.equip_to_slot_or_del(new uniform_type(player), slot_w_uniform)
 	else
-		player.equip_to_slot_or_del(new /obj/item/clothing/under/solgov/pt/army(player), slot_w_uniform)
+		player.equip_to_slot_or_del(new uniform_type(player), slot_w_uniform)
 
 	if (player.mind == leader)
 		player.equip_to_slot_or_del(new /obj/item/weapon/pinpointer(player), slot_l_store)
