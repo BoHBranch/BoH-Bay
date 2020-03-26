@@ -63,8 +63,8 @@
 		objects_in_view -= contact
 		var/datum/overmap_contact/record = contact_datums[contact]
 		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
+		animate(record.marker, alpha=0, 2 SECOND, 1, LINEAR_EASING)
 		if(record && !record.is_overmap_event)
-			animate(record.marker, alpha=0, 2 SECOND, 1, LINEAR_EASING)
 			addtimer(CALLBACK(record, /datum/overmap_contact/proc/hide), 2 SECOND)
 			if(record.identified)
 				visible_message(SPAN_NOTICE("[src] states, 'Contact lost with [record.name], bearing [bearing].'"))
