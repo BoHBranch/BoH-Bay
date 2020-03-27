@@ -177,6 +177,7 @@
 	force = 15
 	hitsound = 'sound/weapons/smash.ogg'
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER // so we can melt things in it
+	temperature_coefficient = 8 // much faster
 
 /obj/item/weapon/reagent_containers/cooking_container/pan/New(var/newloc, var/mat_key) // we use New instead of Initialize because, uh, material, i guess
 	..(newloc)

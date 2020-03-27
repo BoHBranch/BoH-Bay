@@ -712,36 +712,15 @@
 	reagent_data = list(/datum/reagent/nutriment = list("cheese" = 2, "bun" = 2))
 	reagents_to_add = list(/datum/reagent/nutriment = 2, /datum/reagent/nutriment/protein = 2)
 
-/obj/item/weapon/reagent_containers/food/snacks/meatburger
-	name = "burger"
-	desc = "The cornerstone of every nutritious breakfast."
-	icon_state = "hburger"
-	filling_color = "#d63c3c"
-	center_of_mass = "x=16;y=11"
-	reagent_data = list(/datum/reagent/nutriment = list("bun" = 2))
-	reagents_to_add = list(/datum/reagent/nutriment = 3, /datum/reagent/nutriment/protein = 3)
-	bitesize = 2
-
-/obj/item/weapon/reagent_containers/food/snacks/plainburger
-	name = "burger"
-	desc = "The cornerstone of every nutritious breakfast."
-	icon = 'icons/obj/food_ingredients.dmi'
-	icon_state = "burger"
-	filling_color = "#d63c3c"
-	center_of_mass = "x=16;y=11"
-	reagent_data = list(/datum/reagent/nutriment = list("bun" = 2))
-	reagents_to_add = list(/datum/reagent/nutriment = 3, /datum/reagent/nutriment/protein = 3)
-	bitesize = 2
-
 /obj/item/weapon/reagent_containers/food/snacks/hamburger
 	name = "hamburger"
-	desc = "The cornerstone of every nutritious breakfast, now with ham!"
+	desc = "The cornerstone of every nutritious breakfast!"
 	icon = 'icons/obj/food_ingredients.dmi'
 	icon_state = "hamburger"
 	filling_color = "#d63c3c"
 	center_of_mass = "x=16;y=11"
 	reagent_data = list(/datum/reagent/nutriment = list("bun" = 2))
-	reagents_to_add = list(/datum/reagent/nutriment = 3, /datum/reagent/nutriment/protein = 5)
+	reagents_to_add = list(/datum/reagent/nutriment = 3, /datum/reagent/nutriment/protein = 4)
 	bitesize = 2
 
 /obj/item/weapon/reagent_containers/food/snacks/fishburger
@@ -2728,12 +2707,8 @@
 
 /obj/item/weapon/reagent_containers/food/snacks/bun/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	var/obj/item/weapon/reagent_containers/food/snacks/result
-	// bun + meatball = burger
-	if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/meatball))
-		result = new /obj/item/weapon/reagent_containers/food/snacks/plainburger(src)
-
-	// bun + cutlet = hamburger
-	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/cutlet))
+	// bun + meatball/cutlet = hamburger
+	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/cutlet) || istype(W,/obj/item/weapon/reagent_containers/food/snacks/meatball))
 		result = new /obj/item/weapon/reagent_containers/food/snacks/hamburger(src)
 
 	// bun + sausage = hotdog
@@ -2768,17 +2743,6 @@
 		qdel(W)
 		qdel(src)
 		to_chat(user, SPAN_NOTICE("You make \a [result]!"))
-
-// burger + cheese wedge = cheeseburger
-/obj/item/weapon/reagent_containers/food/snacks/plainburger/attackby(obj/item/weapon/reagent_containers/food/snacks/cheesewedge/W as obj, mob/user as mob)
-	if(istype(W))// && !istype(src,/obj/item/weapon/reagent_containers/food/snacks/cheesewedge))
-		new /obj/item/weapon/reagent_containers/food/snacks/cheeseburger(src)
-		to_chat(user, "You make a cheeseburger.")
-		qdel(W)
-		qdel(src)
-		return
-	else
-		..()
 
 // Hamburger + cheese wedge = cheeseburger
 /obj/item/weapon/reagent_containers/food/snacks/hamburger/attackby(obj/item/weapon/reagent_containers/food/snacks/cheesewedge/W as obj, mob/user as mob)

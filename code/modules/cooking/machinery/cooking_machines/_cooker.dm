@@ -84,21 +84,19 @@
 	RefreshParts() // this is what actually updates the cooking power, for some reason.
 
 /obj/machinery/appliance/cooker/proc/heat_up()
-	for(var/datum/cooking_item/CI in cooking_objs)
-		ADJUST_ATOM_TEMPERATURE(CI.container.temperature, min(heating_power/(resistance*2), temperature - CI.container.temperature)) // Twice as slow.
 	if (temperature < optimal_temp)
 		if (use_power == 1 && ((optimal_temp - temperature) > 5))
 			playsound(src, 'sound/machines/click.ogg', 20, 1)
 			use_power = 2.//If we're heating we use the active power
 			update_icon()
-		ADJUST_ATOM_TEMPERATURE(src, heating_power / resistance)
+		temperature += heating_power / resistance
 		update_cooking_power()
 		return 1
 	else
 		if (use_power == 2)
 			use_power = 1
 			playsound(src, 'sound/machines/click.ogg', 20, 1)
-			update_icon()	
+			update_icon()
 	QUEUE_TEMPERATURE_ATOMS(src)
 
 /obj/machinery/appliance/cooker/ProcessAtomTemperature()
@@ -106,6 +104,8 @@
 		update_cooking_power() // update!
 		if(!LAZYLEN(cooking_objs))
 			return TRUE
+		for(var/datum/cooking_item/CI in cooking_objs)
+			QUEUE_TEMPERATURE_ATOMS(CI.container)
 		return TRUE // Don't kill this processing loop unless we're not powered or we're cold.
 		// Also don't cool us.
 	. = ..()

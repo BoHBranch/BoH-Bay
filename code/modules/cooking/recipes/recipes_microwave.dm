@@ -45,7 +45,7 @@
 
 /datum/recipe/bigbiteburger
 	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/plainburger,
+		/obj/item/weapon/reagent_containers/food/snacks/hamburger,
 		/obj/item/weapon/reagent_containers/food/snacks/meat,
 		/obj/item/weapon/reagent_containers/food/snacks/meat,
 		/obj/item/weapon/reagent_containers/food/snacks/meat
