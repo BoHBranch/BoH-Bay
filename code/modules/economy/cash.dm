@@ -15,7 +15,7 @@
 	var/access = list()
 	access = access_crate_cash
 	var/worth = 0
-	var/global/denominations = list(1000,500,200,100,50,20,10,1)
+	var/global/denominations = list(200,100,50,20,10,1)
 
 /obj/item/weapon/spacecash/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/weapon/spacecash))
@@ -54,6 +54,7 @@
 
 /obj/item/weapon/spacecash/bundle/Initialize()
 	. = ..()
+	SetName("[worth] [GLOB.using_map.local_currency_name]")
 	update_icon()
 
 /obj/item/weapon/spacecash/bundle/getMoneyImages()
@@ -100,7 +101,7 @@
 
 	src.worth -= amount
 	src.update_icon()
-	if(amount in list(1000,500,200,100,50,20,1))
+	if(amount in list(200,100,50,20,1))
 		var/cashtype = text2path("/obj/item/weapon/spacecash/bundle/c[amount]")
 		var/obj/cash = new cashtype (usr.loc)
 		usr.put_in_hands(cash)
