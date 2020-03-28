@@ -8,7 +8,7 @@
 /datum/language/human/gaian
 	name = LANGUAGE_HUMAN_GAIAN
 	desc = "A bastardized hybrid of standard ZAC and Pan-Slavic, Neo-Cossack takes its name from the Slavic Cossacks of old Earth, although slight variations on this pidgin\
-			tongue have long since spread all across the border between SolGov and Terran space, where it sees extensive use as a vernacular in the independent worlds."
+			tongue have long since spread all across the border between SolGov and United Colonies space, where it sees extensive use as a vernacular in the independent worlds."
 	colour = "gaian"
 	key = "c"
 	shorthand = "NCos"

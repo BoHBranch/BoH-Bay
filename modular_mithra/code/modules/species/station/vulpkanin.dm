@@ -14,7 +14,7 @@
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp, /datum/unarmed_attack/claws)
 
-	description = "Vulpkanin is a catch-all term for all sorts of canid-like genemods. Vulpkanin genemods, initially patented by VeyMed, were made popular about the middle of the 22nd century, and have only increased in number since. It's such a prolific type of genemod that there are entire communities of naturally-reproducing, self-sustaining populations. You could be from anywhere- Sol space, or the Frontier, or maybe even the GCC, as looked down upon as you would be."
+	description = "Vulpkanin is a catch-all term for all sorts of canid-like genemods. Vulpkanin genemods, initially patented by VeyMed, were made popular about the middle of the 22nd century, and have only increased in number since. It's such a prolific type of genemod that there are entire communities of naturally-reproducing, self-sustaining populations. You could be from anywhere- Sol space, or the Frontier, or maybe even the UCG, as looked down upon as you would be."
 
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
