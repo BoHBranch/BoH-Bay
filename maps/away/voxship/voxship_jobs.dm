@@ -1,6 +1,6 @@
 /datum/job/submap/voxship_vox
 	title = "Shoal Scavenger"
-	total_positions = 3
+	total_positions = 4
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
 	supervisors = "Quill, The Apex and the arkship"
 	info = "Scrap is thin. Not much food is left, but thankfully the sector is quite rich, and it's time to get some more supplies. \
