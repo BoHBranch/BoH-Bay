@@ -479,7 +479,7 @@ TORCH_ESCAPE_POD(11)
 
 // Ammo dump elevators (BoH)
 /area/command/gunnery/ammo
-	name = "\improper Ammunition Dump"
+	name = "\improper Abandoned Ammunition Dump"
 
 /area/command/gunnery/ob/inside
 	name = "\improper KOSMAG Interior"
