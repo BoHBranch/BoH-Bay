@@ -2745,15 +2745,20 @@
 		to_chat(user, SPAN_NOTICE("You make \a [result]!"))
 
 // Hamburger + cheese wedge = cheeseburger
-/obj/item/weapon/reagent_containers/food/snacks/hamburger/attackby(obj/item/weapon/reagent_containers/food/snacks/cheesewedge/W as obj, mob/user as mob)
-	if(istype(W))// && !istype(src,/obj/item/weapon/reagent_containers/food/snacks/cheesewedge))
-		new /obj/item/weapon/reagent_containers/food/snacks/cheeseburger(src)
-		to_chat(user, "You make a cheeseburger.")
-		qdel(W)
-		qdel(src)
-		return
+/obj/item/weapon/reagent_containers/food/snacks/hamburger/attackby(obj/item/weapon/reagent_containers/food/snacks/W as obj, mob/user as mob)
+	var/obj/item/weapon/reagent_containers/food/snacks/result
+	if(istype(W, /obj/item/weapon/reagent_containers/food/snacks/cheesewedge))// && !istype(src,/obj/item/weapon/reagent_containers/food/snacks/cheesewedge))
+		result = new /obj/item/weapon/reagent_containers/food/snacks/cheeseburger(loc)
+	if(istype(W, /obj/item/weapon/reagent_containers/food/snacks/bacon))
+		result = new /obj/item/weapon/reagent_containers/food/snacks/baconburger(loc)
 	else
-		..()
+		return ..()
+	to_chat(user, SPAN_NOTICE("You make [result]."))
+	if (loc == user)
+		user.drop_from_inventory(src)
+		user.put_in_hands(result)
+	qdel(W)
+	qdel(src)
 
 // Human burger + cheese wedge = cheeseburger
 /obj/item/weapon/reagent_containers/food/snacks/human/burger/attackby(obj/item/weapon/reagent_containers/food/snacks/cheesewedge/W as obj, mob/user as mob)
