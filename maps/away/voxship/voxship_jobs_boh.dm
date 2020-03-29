@@ -1,6 +1,6 @@
 /datum/job/submap/voxship_vox/armalis
 	title = "Shoal Armalis"
-	total_positions = 1
+	total_positions = 2
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
 	supervisors = "apex and the arkship"
 	info = "Towering over their contemporaries, the Armalis are the muscle of the Vox. Not useful for much aside from rending the flesh of their foes."
