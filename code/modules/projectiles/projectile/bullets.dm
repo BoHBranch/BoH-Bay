@@ -164,8 +164,8 @@
 /obj/item/projectile/bullet/shotgun
 	name = "slug"
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
-	damage = 65
-	armor_penetration = 10
+	damage = 60
+	distance_falloff = 2.5
 
 /obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
 	name = "beanbag"
@@ -174,7 +174,6 @@
 	agony = 75
 	embed = 0
 	armor_penetration = 0
-	distance_falloff = 2
 
 //Should do about 80 damage at 1 tile distance (adjacent), and 50 damage at 3 tiles distance.
 //Overall less damage than slugs in exchange for more damage at very close range and more embedding

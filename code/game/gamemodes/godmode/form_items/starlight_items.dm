@@ -118,7 +118,7 @@
 	desc = "Look closely into its crystal; there's a miniature sun. Or maybe that's just some fancy LEDs. Either way, it looks thoroughly mystical."
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "starstaff"
-	self_recharge = 1
+	self_recharge = 0
 	max_shots = 10
 	projectile_type = /obj/item/projectile/energy/flash
 	required_antag_type = MODE_GODCULTIST
