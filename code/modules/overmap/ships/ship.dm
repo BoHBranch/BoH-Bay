@@ -67,7 +67,8 @@
 	for(var/obj/machinery/computer/ship/sensors/console in SSmachines.machinery)
 		var/datum/overmap_contact/record = console.contact_datums[src]
 		if(record)
-			console.contact_datums -= src
+			console.contact_datums[src] = null
+			console.contact_datums -= null
 			qdel(record)
 
 	. = ..()
