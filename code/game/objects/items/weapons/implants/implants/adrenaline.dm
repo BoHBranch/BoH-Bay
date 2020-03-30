@@ -18,7 +18,7 @@
 	<b>Integrity:</b> Implant can only be used three times before the nanobots are depleted."}
 	
 /obj/item/weapon/implant/adrenalin/New()
-	uses = rand(3, 3)
+	uses = 3
 	..()
 	return	
 
