@@ -1408,7 +1408,7 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 				/obj/item/weapon/gun/projectile/manualcycle/imprifle = 1,
 				/obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin = 14,
 				/obj/item/weapon/reagent_containers/glass/beaker/sulphuric = 14,
-				/obj/item/weapon/reagent_containers/glass/beaker/vial/hfc = 1,
+				/obj/item/weapon/reagent_containers/glass/beaker/vial/hfp = 1,
 				/obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full = 3,
 				/obj/item/weapon/melee/baton/cattleprod = 6,
 				/obj/item/weapon/arrow = 16,

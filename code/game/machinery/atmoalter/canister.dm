@@ -493,13 +493,13 @@ update_flag
 /////////
 //BoH Gas
 /////////
-/obj/machinery/portable_atmospherics/canister/hfc
-	name = "\improper Canister \[HFC\]"
+/obj/machinery/portable_atmospherics/canister/hfp
+	name = "\improper Canister \[HFP\]"
 	icon_state = "black"
 	canister_color = "black"
 	can_label = 0
 
-/obj/machinery/portable_atmospherics/canister/hfc/New()
+/obj/machinery/portable_atmospherics/canister/hfp/New()
 	..()
-	air_contents.adjust_gas(GAS_HFC, MolesForPressure())
+	air_contents.adjust_gas(GAS_HFP, MolesForPressure())
 	update_icon()

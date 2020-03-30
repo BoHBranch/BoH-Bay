@@ -39,11 +39,11 @@
 	item_cost = 10
 	path = /obj/item/weapon/storage/box/syndie_kit/syringegun
 
-/datum/uplink_item/item/stealthy_weapons/hfc
-	name = "Vial of HFC"
+/datum/uplink_item/item/stealthy_weapons/hfp
+	name = "Vial of Heptafluoropropane"
 	desc = "One of the most dangerous chemicals you could think of, easily vialed up. Be extra careful not to drink it!"
 	item_cost = 64
-	path = /obj/item/weapon/reagent_containers/glass/beaker/vial/hfc
+	path = /obj/item/weapon/reagent_containers/glass/beaker/vial/hfp
 
 /datum/uplink_item/item/stealthy_weapons/zombie
 	name = "Vial of Black Tar"
