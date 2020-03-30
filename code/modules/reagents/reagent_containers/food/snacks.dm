@@ -2709,11 +2709,14 @@
 	var/obj/item/weapon/reagent_containers/food/snacks/result
 	// bun + meatball/cutlet = hamburger
 	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/cutlet) || istype(W,/obj/item/weapon/reagent_containers/food/snacks/meatball))
-		result = new /obj/item/weapon/reagent_containers/food/snacks/hamburger(src)
+		result = new /obj/item/weapon/reagent_containers/food/snacks/hamburger(loc)
 
 	// bun + sausage = hotdog
 	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/sausage))
-		result = new /obj/item/weapon/reagent_containers/food/snacks/hotdog(src)
+		result = new /obj/item/weapon/reagent_containers/food/snacks/hotdog(loc)
+
+	else if(istype(W, /obj/item/weapon/reagent_containers/food/snacks/bearmeat))
+		result = new /obj/item/weapon/reagent_containers/food/snacks/bearburger(loc)
 
 	// Bun + mouse = mouseburger
 	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/variable/mob))
@@ -2731,7 +2734,6 @@
 		if (W.reagents)
 			//Reagents of reuslt objects will be the sum total of both.  Except in special cases where nonfood items are used
 			//Eg robot head
-			result.reagents.clear_reagents()
 			W.reagents.trans_to(result, W.reagents.total_volume)
 			reagents.trans_to(result, reagents.total_volume)
 
