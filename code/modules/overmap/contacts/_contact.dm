@@ -120,8 +120,8 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 	if(owner)
 		hide()
 		if(effect)
-			owner.contact_datums -= effect
+			owner.contact_datums[effect] = null
+			owner.contact_datums -= null
 	owner = null
 	effect = null
 	. = ..()
-
