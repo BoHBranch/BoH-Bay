@@ -52,6 +52,7 @@ Class Procs:
 	var/list/graphic_add = list()
 	var/list/graphic_remove = list()
 	var/last_air_temperature = TCMB
+	var/condensing = FALSE
 
 /zone/New()
 	SSair.add_zone(src)
@@ -164,18 +165,8 @@ Class Procs:
 			E.recheck()
 
 	// Handle condensation from the air.
-	for(var/g in air.gas)
-		var/product = gas_data.condensation_products[g]
-		if(product && air.temperature <= gas_data.condensation_points[g])
-			var/condensation_area = air.group_multiplier
-			while(condensation_area > 0)
-				condensation_area--
-				var/turf/flooding = pick(contents)
-				var/condense_amt = min(air.gas[g], rand(3,5))
-				if(condense_amt < 1)
-					break
-				air.adjust_gas(g, -condense_amt)
-				flooding.add_fluid(condense_amt, product)
+	if(!condensing)
+		handle_condensation()
 
 	// Update atom temperature.
 	if(abs(air.temperature - last_air_temperature) >= ATOM_TEMPERATURE_EQUILIBRIUM_THRESHOLD)
@@ -186,6 +177,24 @@ Class Procs:
 				if(checking.simulated)
 					QUEUE_TEMPERATURE_ATOMS(checking)
 			CHECK_TICK
+
+/zone/proc/handle_condensation()
+	set waitfor = FALSE
+	condensing = TRUE
+	for(var/g in air.gas)
+		var/product = gas_data.condensation_products[g]
+		if(product && air.temperature <= gas_data.condensation_points[g])
+			var/condensation_area = air.group_multiplier
+			while(condensation_area > 0 && length(contents))
+				condensation_area--
+				var/turf/flooding = pick(contents)
+				var/condense_amt = air.gas[g] / air.group_multiplier / gas_data.molar_mass[g] / gas_data.liquid_density[g]
+				if(condense_amt < 1)
+					break
+				air.adjust_gas(g, -condense_amt)
+				flooding.add_fluid(condense_amt, product)
+				CHECK_TICK
+	condensing = FALSE				
 
 /zone/proc/dbg_data(mob/M)
 	to_chat(M, name)
