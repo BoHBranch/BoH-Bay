@@ -60,7 +60,8 @@
 	for(var/obj/effect/overmap/contact in objects_in_view)
 		if(!QDELETED(contact) && objects_in_current_view[contact])
 			continue
-		objects_in_view -= contact
+		objects_in_view[contact] = null
+		objects_in_view -= null
 		var/datum/overmap_contact/record = contact_datums[contact]
 		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
 		if(record)
