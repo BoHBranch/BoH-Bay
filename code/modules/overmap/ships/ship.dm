@@ -264,8 +264,6 @@
 	for(var/datum/ship_engine/E in engines)
 		if(E.is_on())
 			thrust_calc += (E.get_thrust_limit() * 2)
-		else
-			continue
 
 	return min(thrust_calc, 50) //Engines should never increase sensor visibility by more than 50.
 
