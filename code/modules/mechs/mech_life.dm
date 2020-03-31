@@ -3,6 +3,9 @@
 
 /mob/living/exosuit/Life()
 
+	if(QDELETED(src))
+		return
+
 	for(var/thing in pilots)
 		var/mob/pilot = thing
 		if(pilot.loc != src) // Admin jump or teleport/grab.
@@ -24,9 +27,17 @@
 	if(health <= 0 && stat != DEAD)
 		death()
 
+	if(QDELETED(src))
+		return
+
 	..() //Handles stuff like environment
 
-	handle_hud_icons()
+	if(QDELETED(src))
+		return
+
+	// Trying to stop weird runtimes on the away sites map.
+	if(hud_health && hud_open && hud_power)
+		handle_hud_icons()
 
 	lying = FALSE // Fuck off, carp.
 	handle_vision()
@@ -70,13 +81,13 @@
 	var/obj/wreck = new wreckage_path(get_turf(src), src, gibbed)
 	wreck.name = "wreckage of \the [name]"
 	if(!gibbed)
-		if(arms.loc != src)
+		if(arms && (arms.loc != src))
 			arms = null
-		if(legs.loc != src)
+		if(legs && (legs.loc != src))
 			legs = null
-		if(head.loc != src)
+		if(head && (head.loc != src))
 			head = null
-		if(body.loc != src)
+		if(body && (body.loc != src))
 			body = null
 
 	// Eject the pilot.

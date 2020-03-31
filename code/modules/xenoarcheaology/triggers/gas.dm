@@ -3,12 +3,10 @@
 	toggle = FALSE
 	var/list/gas_needed	//list of gas=percentage needed in air to activate
 
-/datum/artifact_trigger/gas/New()
-	if(!gas_needed)
-		gas_needed = list(pick(gas_data.gases) = rand(1,10))
-
 /datum/artifact_trigger/gas/on_gas_exposure(datum/gas_mixture/gas)
 	. = TRUE
+	if(!gas_needed && gas_data && length(gas_data.gases))
+		gas_needed = list(pick(gas_data.gases) = rand(1,10))
 	for(var/g in gas_needed)
 		var/percentage = round(gas.gas[g]/gas.total_moles * 100, 0.01)
 		if(percentage < gas_needed[g])

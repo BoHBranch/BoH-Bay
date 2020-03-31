@@ -1749,7 +1749,7 @@
 /turf/unsimulated/beach/sand,
 /area/icarus/open)
 "ft" = (
-/obj/effect/icarus/irradiate,
+/obj/effect/irradiate,
 /obj/effect/decal/cleanable/dirt,
 /turf/unsimulated/beach/sand,
 /area/icarus/open)

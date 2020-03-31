@@ -23,12 +23,15 @@ var/list/escape_pods_by_name = list()
 		CRASH("Could not find arming controller for escape pod \"[name]\", tag was '[arming_controller_tag]'.")
 
 	//find the pod's own controller
+	var/found_controller = FALSE
 	var/datum/computer/file/embedded_program/docking/simple/prog = SSshuttle.docking_registry[dock_target]
-	var/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod/controller_master = prog.master
-	if(!istype(controller_master))
+	if(prog)
+		var/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod/controller_master = prog.master
+		if(controller_master)
+			controller_master.pod = src
+			found_controller = TRUE
+	if(!found_controller)
 		CRASH("Escape pod \"[name]\" could not find it's controller master!")
-
-	controller_master.pod = src
 
 /datum/shuttle/autodock/ferry/escape_pod/can_launch()
 	if(arming_controller && !arming_controller.armed)	//must be armed

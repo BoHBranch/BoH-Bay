@@ -16,10 +16,6 @@
 	construct_state = /decl/machine_construction/default/panel_closed
 	uncreated_component_parts = null
 	stat_immune = 0
-	var/state = 0
-	var/gibs_ready = 0
-	var/obj/crayon
-	var/obj/item/weapon/reagent_containers/pill/detergent/detergent
 	obj_flags = OBJ_FLAG_ANCHORABLE
 	clicksound = "button"
 	clickvol = 40
@@ -27,6 +23,11 @@
 	// Power
 	idle_power_usage = 10
 	active_power_usage = 150
+
+	var/state = 0
+	var/gibs_ready = 0
+	var/obj/crayon
+	var/obj/item/weapon/reagent_containers/pill/detergent/detergent
 
 /obj/machinery/washing_machine/Destroy()
 	QDEL_NULL(crayon)
@@ -87,7 +88,7 @@
 	QDEL_NULL(detergent)
 
 	//Tanning!
-	for(var/obj/item/stack/hairlesshide/HH in contents)
+	for(var/obj/item/stack/hairlesshide/HH in (contents - component_parts))
 		var/obj/item/stack/wetleather/WL = new(src)
 		WL.amount = HH.amount
 		qdel(HH)
@@ -186,7 +187,7 @@
 			to_chat(user, "This item does not fit.")
 			return
 
-		if(contents.len < 5)
+		if(length(contents-component_parts) < 5)
 			if(!(state & WASHER_STATE_CLOSED))
 				if(!user.unEquip(W, src))
 					return
