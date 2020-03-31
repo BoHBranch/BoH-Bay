@@ -4030,6 +4030,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
+/obj/structure/railing/mapped,
 /turf/simulated/open,
 /area/hallway/primary/thirddeck/fore)
 "hL" = (
@@ -7910,6 +7911,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
+/obj/structure/railing/mapped,
 /turf/simulated/open,
 /area/hallway/primary/thirddeck/fore)
 "oU" = (
@@ -12851,6 +12853,10 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/camera/network/third_deck{
+	c_tag = "Third Deck - Dorms Hallway Port";
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters_boh/cabin_main)
@@ -18772,7 +18778,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/reinforced/airless,
-/area/space)
+/area/hydroponics)
 "LT" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -22530,6 +22536,21 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
+"Yp" = (
+/obj/effect/catwalk_plated,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/camera/network/third_deck{
+	c_tag = "Third Deck - Dorms Hallway Starboard";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/crew_quarters_boh/cabin_main)
 "Ys" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -45344,7 +45365,7 @@ wK
 vb
 wi
 vb
-vb
+Yp
 vb
 xj
 wp

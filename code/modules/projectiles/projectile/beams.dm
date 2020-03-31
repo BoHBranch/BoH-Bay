@@ -12,7 +12,8 @@
 	eyeblur = 4
 	hitscan = 1
 	invisibility = 101	//beam projectiles are invisible as they are rendered by the effect engine
-	penetration_modifier = 0.3
+	shrapnel_chance_multiplier = 0.3
+	arterial_bleed_chance_multiplier = 0.3
 	distance_falloff = 2.5
 
 	muzzle_type = /obj/effect/projectile/laser/muzzle
@@ -51,7 +52,8 @@
 	fire_sound = 'sound/weapons/laser3.ogg'
 	damage = 30
 	armor_penetration = 30
-	penetration_modifier = 0.8
+	shrapnel_chance_multiplier = 0.8
+	arterial_bleed_chance_multiplier = 0.8
 
 	muzzle_type = /obj/effect/projectile/laser/xray/muzzle
 	tracer_type = /obj/effect/projectile/laser/xray/tracer
@@ -240,7 +242,8 @@
 	damage_flags = 0
 	damage_type = STUN
 	life_span = 3
-	penetration_modifier = 0
+	shrapnel_chance_multiplier = 0
+	arterial_bleed_chance_multiplier = 0
 	var/potency_min = 4
 	var/potency_max = 6
 
@@ -269,13 +272,15 @@
 	muzzle_type = /obj/effect/projectile/laser_particle/muzzle
 	tracer_type = /obj/effect/projectile/laser_particle/tracer
 	impact_type = /obj/effect/projectile/laser_particle/impact
-	penetration_modifier = 0.5
+	shrapnel_chance_multiplier = 0.5
+	arterial_bleed_chance_multiplier = 0.5
 
 /obj/item/projectile/beam/particle/small
 	name = "particle beam"
 	damage = 25
 	armor_penetration = 30
-	penetration_modifier = 0.4
+	shrapnel_chance_multiplier = 0.4
+	arterial_bleed_chance_multiplier = 0.4
 
 /obj/item/projectile/beam/darkmatter
 	name = "dark matter bolt"
@@ -318,7 +323,8 @@
 	sharp = FALSE
 	damage_flags = 0
 	life_span = 8
-	penetration_modifier = 0.1
+	shrapnel_chance_multiplier = 0.1
+	arterial_bleed_chance_multiplier = 0.1
 
 	muzzle_type = /obj/effect/projectile/incen/muzzle
 	tracer_type = /obj/effect/projectile/incen/tracer

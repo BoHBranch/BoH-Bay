@@ -117,7 +117,7 @@
 		/obj/item/weapon/storage/belt/holster/security,
 		/obj/item/weapon/reagent_containers/spray/pepper,
 		/obj/item/weapon/melee/baton/loaded,
-		/obj/item/gunbox,
+		/obj/item/gunboxsmall,
 		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/weapon/handcuffs,
 		/obj/item/device/hailer,

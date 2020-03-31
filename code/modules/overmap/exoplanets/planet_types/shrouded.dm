@@ -6,7 +6,6 @@
 	rock_colors = list(COLOR_INDIGO, COLOR_DARK_BLUE_GRAY, COLOR_NAVY_BLUE)
 	plant_colors = list("#3c5434", "#2f6655", "#0e703f", "#495139", "#394c66", "#1a3b77", "#3e3166", "#52457c", "#402d56", "#580d6d")
 	map_generators = list(/datum/random_map/noise/exoplanet/shrouded, /datum/random_map/noise/ore/poor)
-	ruin_tags_blacklist = RUIN_HABITAT
 	lightlevel = -0.15
 	surface_color = "#3e3960"
 	water_color = "#2b2840"

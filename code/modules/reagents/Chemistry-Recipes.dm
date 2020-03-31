@@ -1390,7 +1390,7 @@
 
 /datum/chemical_reaction/browniemix
 	name = "Brownie Mix"
-	result = "browniemix"
+	result = /datum/reagent/browniemix
 	required_reagents = list(/datum/reagent/nutriment/flour = 5, /datum/reagent/nutriment/coco = 5, /datum/reagent/sugar = 5)
 	result_amount = 15
 
