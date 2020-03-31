@@ -3,6 +3,10 @@
 #include "skrellscoutship_areas.dm"
 #include "skrellscoutship_shuttles.dm"
 
+/obj/machinery/power/apc/debug/skrell
+	cell_type = /obj/item/weapon/cell/infinite
+	req_access = list(access_skrellscoutship)
+
 /datum/map_template/ruin/away_site/skrellscoutship
 	name = "Skrellian Scout Ship"
 	id = "awaysite_skrell_scout"
@@ -20,7 +24,7 @@
 /obj/effect/overmap/visitable/sector/skrellscoutspace
 	name = "Empty Sector"
 	desc = "Slight traces of a cloaking device are present. Unable to determine exact location."
-	in_space = 1
+	sector_flags = OVERMAP_SECTOR_IN_SPACE
 	icon_state = "event"
 	hide_from_reports = TRUE
 

@@ -35,6 +35,11 @@
 	QDEL_NULL(diagnostics)
 	QDEL_NULL(armour)
 	QDEL_NULL(air_supply)
+	if(istype(loc, /mob/living/exosuit) && !QDELETED(loc))
+		var/mob/living/exosuit/E = loc
+		if(E.body == src && !QDELETED(src))
+			E.body = null
+			qdel(loc) // can't have a mecha without a body
 	. = ..()
 
 /obj/item/mech_component/chassis/update_components()
@@ -119,5 +124,4 @@
 		C.forceMove(src)
 		update_components()
 	else . = ..()
-
 

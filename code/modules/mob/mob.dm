@@ -5,6 +5,8 @@
 	GLOB.player_list -= src
 	unset_machine()
 	QDEL_NULL(hud_used)
+	if(istype(ability_master))
+		QDEL_NULL(ability_master)
 	if(istype(skillset))
 		QDEL_NULL(skillset)
 	for(var/obj/item/grab/G in grabbed_by)
@@ -114,7 +116,7 @@
 			continue
 	//Multiz, have shadow do same
 	if(bound_overlay)
-		bound_overlay.visible_message(message, self_message, blind_message)
+		bound_overlay.visible_message(message, blind_message) // As this is an atom and not a mob, it has no self_message.
 
 // Show a message to all mobs and objects in earshot of this one
 // This would be for audible actions by the src mob

@@ -90,7 +90,9 @@
 	overlays += get_keyboard_overlay()
 
 /obj/machinery/computer/proc/get_screen_overlay()
-	return image(icon,icon_screen, overlay_layer)
+	return overlay_image(icon,icon_screen, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+
+
 
 /obj/machinery/computer/proc/get_keyboard_overlay()
 	if(icon_keyboard)

@@ -68,7 +68,8 @@ SUBSYSTEM_DEF(shuttle)
 
 /datum/controller/subsystem/shuttle/proc/register_landmark(shuttle_landmark_tag, obj/effect/shuttle_landmark/shuttle_landmark)
 	if (registered_shuttle_landmarks[shuttle_landmark_tag])
-		CRASH("Attempted to register shuttle landmark with tag [shuttle_landmark_tag], but it is already registered!")
+		var/atom/landmark = registered_shuttle_landmarks[shuttle_landmark_tag]
+		CRASH("Attempted to register \a [shuttle_landmark] of type [shuttle_landmark.type] at [shuttle_landmark.x],[shuttle_landmark.y],[shuttle_landmark.z] with tag [shuttle_landmark_tag], but it is already registered to \a [landmark] of type [landmark.type] at [landmark.x],[landmark.y],[landmark.z]!")
 	if (istype(shuttle_landmark))
 		registered_shuttle_landmarks[shuttle_landmark_tag] = shuttle_landmark
 		last_landmark_registration_time = world.time

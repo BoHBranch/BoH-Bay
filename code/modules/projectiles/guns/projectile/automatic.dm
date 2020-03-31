@@ -95,6 +95,16 @@
 	else
 		icon_state = "c20r"
 
+/obj/item/weapon/gun/projectile/automatic/merc_smg/hacked
+	name = "C-20b"
+	desc = "The NanoTrasen C-20b is a lightweight and rapid firing SMG. This is an older model, capable of only firing in semi-automatic and three-round bursts. \
+	Additionally, it does not feature the auto-eject function of the more modern version. It appears, however, that this one has a hacked firing authorization pin."
+	auto_eject = 0
+	firemodes = list(
+		list(mode_name="semi auto",       burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=6, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=8, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		)
+
 /obj/item/weapon/gun/projectile/automatic/assault_rifle
 	name = "assault rifle"
 	desc = "The rugged STS-35 is a durable automatic weapon of a make popular on the frontier worlds. Originally produced by Hephaestus. The serial number has been scratched off."

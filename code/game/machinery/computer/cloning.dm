@@ -21,7 +21,7 @@
 
 /obj/machinery/computer/cloning/Destroy()
 	releasecloner()
-	..()
+	. = ..()
 
 /obj/machinery/computer/cloning/proc/updatemodules()
 	scanner = findscanner()

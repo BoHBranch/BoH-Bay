@@ -7,7 +7,7 @@
 /datum/uplink_item/item/visible_weapons/zipgun
 	name = "Zip Gun"
 	desc = "A pipe attached to crude wooden stock with firing mechanism, holds one round."
-	item_cost = 8
+	item_cost = 4
 	path = /obj/item/weapon/gun/projectile/pirate
 
 /datum/uplink_item/item/visible_weapons/smallenergy_gun
@@ -64,7 +64,7 @@
 /datum/uplink_item/item/visible_weapons/ionpistol
 	name = "Ion Pistol"
 	desc = "Ion rifle in compact form."
-	item_cost = 40
+	item_cost = 20
 	path = /obj/item/weapon/gun/energy/ionrifle/small
 
 /datum/uplink_item/item/visible_weapons/revolver
@@ -83,7 +83,7 @@
 /datum/uplink_item/item/visible_weapons/submachinegun
 	name = "Black Market Submachine Gun"
 	desc = "A quick-firing weapon with three togglable fire modes. Much newer than the older C-20b, and featuring more advanced features."
-	item_cost = 76
+	item_cost = 64
 	path = /obj/item/weapon/gun/projectile/automatic/merc_smg
 
 /datum/uplink_item/item/visible_weapons/submachinegun/hacked
@@ -95,7 +95,7 @@
 /datum/uplink_item/item/visible_weapons/assaultrifle
 	name = "Assault Rifle"
 	desc = "A common rifle with three togglable fire modes."
-	item_cost = 80
+	item_cost = 72
 	path = /obj/item/weapon/gun/projectile/automatic/assault_rifle
 
 /datum/uplink_item/item/visible_weapons/advanced_energy_gun
@@ -119,7 +119,7 @@
 /datum/uplink_item/item/visible_weapons/machine_pistol
 	name = "Standard Machine Pistol"
 	desc = "A high rate of fire weapon in a smaller form factor, able to sling standard ammunition almost as quick as a submachine gun."
-	item_cost = 45
+	item_cost = 37
 	path = /obj/item/weapon/gun/projectile/automatic/machine_pistol
 
 /datum/uplink_item/item/visible_weapons/combat_shotgun
@@ -132,7 +132,7 @@
 /datum/uplink_item/item/visible_weapons/sawnoff
 	name = "Sawnoff Shotgun"
 	desc = "A shortened double-barrel shotgun, able to fire either one, or both, barrels at once."
-	item_cost = 45
+	item_cost = 34
 	path = /obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn
 
 /datum/uplink_item/item/visible_weapons/deagle
@@ -192,7 +192,7 @@
 	name = "Incendiary Laser Blaster"
 	desc = "A laser weapon developed and subsequently banned in Sol space, it sets its targets on fire with dispersed laser technology. \
 			Most of these blasters were swiftly bought back and destroyed - but not this one."
-	item_cost = 40
+	item_cost = 32
 	path = /obj/item/weapon/gun/energy/incendiary_laser
 
 /datum/uplink_item/item/visible_weapons/boltaction
