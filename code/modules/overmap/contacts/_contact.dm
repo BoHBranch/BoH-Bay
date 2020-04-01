@@ -52,6 +52,7 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 		if(source_ship.transponder_active)
 			handle_being_identified()
 	else
+		identified = TRUE
 		var/obj/effect/overmap/event/source_event = source
 		marker = image(loc = source_event, icon = 'icons/obj/overmap.dmi', icon_state = source_event.overmap_effect_state)
 		marker.color = source_event.color

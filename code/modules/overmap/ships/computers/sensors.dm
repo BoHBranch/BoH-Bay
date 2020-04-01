@@ -61,6 +61,7 @@
 			data["status"] = "OK"
 		var/list/contacts = list()
 		for(var/obj/effect/overmap/O in view(7,linked))
+			var/datum/overmap_contact/record
 			if(linked == O)
 				continue
 			if(!O.scannable)
@@ -68,6 +69,11 @@
 			var/bearing = round(90 - Atan2(O.x - linked.x, O.y - linked.y),5)
 			if(bearing < 0)
 				bearing += 360
+			for(var/key in contact_datums)
+				record = contact_datums[O]
+			if(record)
+				if(!record.identified)
+					continue
 			contacts.Add(list(list("name"=O.name, "ref"="\ref[O]", "bearing"=bearing)))
 		if(contacts.len)
 			data["contacts"] = contacts

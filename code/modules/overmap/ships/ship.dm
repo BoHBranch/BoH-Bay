@@ -82,6 +82,8 @@
 
 /obj/effect/overmap/visitable/ship/get_scan_data(mob/user)
 	. = ..()
+	var/decl/ship_contact_class/class = decls_repository.get_decl(contact_class)
+	. += "<br>Class: [class.class_long], mass [vessel_mass] tons."
 	if(!is_still())
 		. += "<br>Heading: [dir2angle(get_heading())], speed [get_speed() * 1000]"
 

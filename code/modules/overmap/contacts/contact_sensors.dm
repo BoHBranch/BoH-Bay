@@ -65,6 +65,8 @@
 			continue
 		var/datum/overmap_contact/record = contact_datums[contact]
 		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
+		if(bearing < 0)
+			bearing += 360
 		if(record)
 			animate(record.marker, alpha=0, 2 SECOND, 1, LINEAR_EASING)
 			addtimer(CALLBACK(record, /datum/overmap_contact/proc/hide), 2 SECOND)
@@ -74,14 +76,15 @@
 			else
 				visible_message(SPAN_NOTICE("[src] states, 'Contact lost with [record.temp_designation], bearing [bearing].'"))
 			playsound(loc, "sound/machines/sensors/contact_lost.ogg", 30, 1)
-		objects_in_view[contact] = null
-		objects_in_view -= null
+		objects_in_view -= contact
 	// Refresh or update contacts and markers for anything new.
 	objects_in_view |= new_objects_in_view
 
 	for(var/obj/effect/overmap/contact in new_objects_in_view)
 		var/datum/overmap_contact/record = contact_datums[contact]
 		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
+		if(bearing < 0)
+			bearing += 360
 		if(record)
 			if(!record.is_overmap_event)
 				if(record.identified)
@@ -100,6 +103,8 @@
 		var/datum/overmap_contact/record = contact_datums[contact]
 		// Generate contact information for this overmap object.
 		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
+		if(bearing < 0)
+			bearing += 360
 		if(!record)
 			record = new /datum/overmap_contact(src, contact)
 			if(record.effect.type in linked.known_ships)
