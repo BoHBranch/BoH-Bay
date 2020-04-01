@@ -178,8 +178,9 @@
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_COMPUTER		= SKILL_ADEPT,
 	                    SKILL_DEVICES		= SKILL_ADEPT,
-	                    SKILL_EVA           = SKILL_ADEPT,
-	                    SKILL_ANATOMY       = SKILL_ADEPT,
+	                    SKILL_ANATOMY       = SKILL_EXPERT,
+	                    SKILL_SCIENCE     	= SKILL_ADEPT,
+	                    SKILL_MEDICAL     	= SKILL_ADEPT,
 	                    SKILL_MECH          = HAS_PERK)
 
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
