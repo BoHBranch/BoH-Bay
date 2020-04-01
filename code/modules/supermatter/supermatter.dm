@@ -556,7 +556,7 @@
 	log_and_message_admins("WARN: Explosion near the Supermatter! New EER: [power].")
 
 /obj/machinery/power/supermatter/shard //Small subtype, less efficient and more sensitive, but less boom.
-	name = "Supermatter Shard"
+	name = "suppermatter shard"
 	desc = "A strangely translucent and iridescent crystal that looks like it used to be part of a larger structure. <span class='danger'>You get headaches just from looking at it.</span>"
 	icon_state = "darkmatter_shard"
 	base_icon_state = "darkmatter_shard"
