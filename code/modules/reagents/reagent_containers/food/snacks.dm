@@ -2708,7 +2708,7 @@
 /obj/item/weapon/reagent_containers/food/snacks/bun/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	var/obj/item/weapon/reagent_containers/food/snacks/result
 	// bun + meatball/cutlet = hamburger
-	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/cutlet) || istype(W,/obj/item/weapon/reagent_containers/food/snacks/meatball))
+	if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/cutlet) || istype(W,/obj/item/weapon/reagent_containers/food/snacks/meatball))
 		result = new /obj/item/weapon/reagent_containers/food/snacks/hamburger(loc)
 
 	// bun + sausage = hotdog
