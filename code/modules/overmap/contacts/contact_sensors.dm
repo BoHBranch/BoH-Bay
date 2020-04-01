@@ -38,14 +38,17 @@
 	if(!sensors || !sensors.use_power || !sensors.powered())
 		linked.set_light(0)
 		// TODO move to on_power_change()?
-		for(var/obj/effect/overmap/visitable/ship/contact in objects_in_view)
-			var/datum/overmap_contact/record = contact_datums[contact]
-			if(record)
-				record.hide()
+		for(var/key in contact_datums)
+			var/datum/overmap_contact/record = contact_datums[key]
+			if(record.effect == linked)
+				continue
+			animate(record.marker, alpha=0, 1 SECOND, 1, LINEAR_EASING)
+			record.hide()
+
 		objects_in_view.Cut()
 		return
 
-	var/sensor_range = round(sensors.range*1.5) + 1
+	var/sensor_range = round(sensors.range,1)
 	linked.set_light(1, sensor_range, sensor_range+1)
 
 	// What can we see?
@@ -60,8 +63,6 @@
 	for(var/obj/effect/overmap/contact in objects_in_view)
 		if(!QDELETED(contact) && objects_in_current_view[contact])
 			continue
-		objects_in_view[contact] = null
-		objects_in_view -= null
 		var/datum/overmap_contact/record = contact_datums[contact]
 		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
 		if(record)
@@ -73,20 +74,26 @@
 			else
 				visible_message(SPAN_NOTICE("[src] states, 'Contact lost with [record.temp_designation], bearing [bearing].'"))
 			playsound(loc, "sound/machines/sensors/contact_lost.ogg", 30, 1)
+		objects_in_view[contact] = null
+		objects_in_view -= null
 	// Refresh or update contacts and markers for anything new.
 	objects_in_view |= new_objects_in_view
 
-	for(var/obj/effect/overmap/visitable/ship/contact in new_objects_in_view)
+	for(var/obj/effect/overmap/contact in new_objects_in_view)
 		var/datum/overmap_contact/record = contact_datums[contact]
 		var/bearing = round(90 - Atan2(contact.x - linked.x, contact.y - linked.y),5)
 		if(record)
-			if(record.identified)
-				visible_message(SPAN_NOTICE("[src] states, 'Contact regained with [record.name], bearing [bearing].'"))
-			else
-				visible_message(SPAN_NOTICE("[src] states, 'Contact regained with [record.temp_designation], bearing [bearing].'"))
+			if(!record.is_overmap_event)
+				if(record.identified)
+					visible_message(SPAN_NOTICE("[src] states, 'Contact regained with [record.name], bearing [bearing].'"))
+				else
+					visible_message(SPAN_NOTICE("[src] states, 'Contact regained with [record.temp_designation], bearing [bearing].'"))
+				playsound(loc, "sound/machines/sensors/contact_regained.ogg", 30, 1)
 			record.show()
+			if(record.is_overmap_event)
+				animate(record.marker, alpha=75, 2 SECOND, 1, LINEAR_EASING)
+				continue
 			animate(record.marker, alpha=255, 2 SECOND, 1, LINEAR_EASING)
-			playsound(loc, "sound/machines/sensors/contact_regained.ogg", 30, 1)
 
 	for(var/obj/effect/overmap/visitable/ship/contact in objects_in_view) //Update everything.
 		// Have we seen this ship before?
@@ -118,9 +125,9 @@
 		var/datum/overmap_contact/record = contact_datums[event]
 		if(!record)
 			record = new /datum/overmap_contact(src, event, TRUE)
-			continue
 		var/time_delay = max((SENSOR_TIME_DELAY * get_dist(linked, event)),1)
-		addtimer(CALLBACK(record, .proc/ping), time_delay)
+		if(!record.pinged)
+			addtimer(CALLBACK(record, .proc/ping), time_delay)
 
 
 	//Update our own marker icon.

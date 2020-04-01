@@ -34,7 +34,6 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 		marker.icon_state =        effect.contact_icon_state || "ship"
 		marker.color =             effect.color
 		show()
-		update_marker_maptext(name)
 
 /datum/overmap_contact/New(var/obj/machinery/computer/ship/sensors/creator, var/obj/effect/overmap/source, var/is_event = FALSE)
 	is_overmap_event = is_event
@@ -50,13 +49,6 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 		temp_designation = "[pick(global.phonetic_alphabet_prefix)]-[pick(global.phonetic_alphabet_suffix)]-[random_id(type, 1, 999)]"
 		marker = image(loc = source_ship, icon = 'icons/obj/overmap.dmi', icon_state = "shuttle")
 
-		var/new_name = temp_designation
-
-		update_marker_maptext(new_name)
-		marker.maptext_width = 128
-		marker.maptext_y = 32
-		marker.maptext_x = -15
-
 		if(source_ship.transponder_active)
 			handle_being_identified()
 	else
@@ -64,6 +56,7 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 		marker = image(loc = source_event, icon = 'icons/obj/overmap.dmi', icon_state = source_event.overmap_effect_state)
 		marker.color = source_event.color
 		marker.filters = filter(type="drop_shadow", color = marker.color + "F0", size = 2, offset = 1,x = 0, y = 0)
+		marker.alpha = 0
 
 /datum/overmap_contact/proc/update_marker_icon()
 	if(identified)
@@ -76,26 +69,6 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 			shield_image.pixel_x = 8
 			marker.overlays += shield_image
 
-/datum/overmap_contact/proc/update_marker_maptext(var/text)
-	marker.maptext = null
-	marker.maptext = text
-
-/datum/overmap_contact/proc/ping()
-	if(pinged)
-		return
-	show()
-	pinged = TRUE
-	animate(marker, alpha=255, 0.5 SECOND, 1, LINEAR_EASING)
-	addtimer(CALLBACK(src, .proc/fadeout), 1.5 SECOND)
-
-/datum/overmap_contact/proc/fadeout()
-	animate(marker, alpha=0, 2 SECOND, 1, LINEAR_EASING)
-	addtimer(CALLBACK(src, .proc/unping), 2 SECOND)
-
-/datum/overmap_contact/proc/unping()
-	hide()
-	pinged = FALSE
-
 /datum/overmap_contact/proc/show()
 	for(var/weakref/W in owner?.viewers)
 		var/mob/M = W.resolve()
@@ -107,6 +80,18 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 		var/mob/M = W.resolve()
 		if(istype(M))
 			M.client?.images -= marker
+
+/datum/overmap_contact/proc/ping()
+	if(pinged)
+		return
+	pinged = TRUE
+	show()
+	animate(marker, alpha=255, 0.5 SECOND, 1, LINEAR_EASING)
+	addtimer(CALLBACK(src, .proc/unping), 1 SECOND)
+
+
+/datum/overmap_contact/proc/unping()
+	animate(marker, alpha=75, 2 SECOND, 1, LINEAR_EASING)
 
 /datum/overmap_contact/proc/check_effect_shield()
 	var/shield_active = FALSE
