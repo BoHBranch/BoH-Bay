@@ -9,7 +9,6 @@
 	economic_power = 6
 	minimal_player_age = 3
 	minimum_character_age = list(SPECIES_HUMAN = 27)
-	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -57,7 +56,6 @@
 	economic_power = 5
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 19)
-	ideal_character_age = 30
 	alt_titles = list(
 		"Engine Technician",
 		"Damage Control Technician",
@@ -95,7 +93,7 @@
 	skill_points = 20
 
 	access = list(access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-			            access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_janitor, access_construction,
+			            access_teleporter, access_eva, access_tech_storage, access_atmospherics, access_construction,
 			            access_solgov_crew, access_hangar, access_tcomsat)
 	minimal_access = list()
 
@@ -119,7 +117,6 @@
 	supervisors = "the Chief Engineer and Engineering Personnel"
 	selection_color = "#5b4d20"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 20
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
@@ -148,7 +145,7 @@
 	                    SKILL_ENGINES      = SKILL_MAX)
 
 	access = list(access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-			            access_eva, access_tech_storage, access_janitor, access_construction,
+			            access_eva, access_tech_storage, access_construction,
 			            access_solgov_crew, access_hangar)
 
 	software_on_spawn = list(/datum/computer_file/program/power_monitor,
@@ -194,7 +191,7 @@
 	                    SKILL_ANATOMY      = SKILL_EXPERT)
 	skill_points = 20
 
-	access = list(access_robotics, access_robotics_engineering, access_engine, access_solgov_crew)
+	access = list(access_robotics, access_robotics_engineering, access_nanotrasen, access_engine, access_solgov_crew, access_maint_tunnels, access_research, access_petrov, access_petrov_maint, access_research,)
 	minimal_access = list()
 
 /datum/job/roboticist/get_description_blurb()
