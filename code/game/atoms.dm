@@ -58,7 +58,7 @@
 		if(!reagents)
 			create_reagents(0)
 		for(var/v in reagents_to_add)
-			reagents.maximum_volume += max(LAZYACCESS(reagents_to_add, v) - get_free_space(), 0)
+			reagents.maximum_volume += max(LAZYACCESS(reagents_to_add, v) - reagents.get_free_space(), 0)
 			reagents.add_reagent(v, LAZYACCESS(reagents_to_add, v), LAZYACCESS(reagent_data, v))
 		//LAZYCLEARLIST(reagents_to_add)
 		//LAZYCLEARLIST(reagent_data)
