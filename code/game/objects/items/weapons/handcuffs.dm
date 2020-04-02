@@ -188,3 +188,14 @@ var/last_chew = 0
 	name = "fuzzy cuffs"
 	icon_state = "fuzzycuff"
 	desc = "Use this to keep... 'prisoners' in line."
+
+//Zipties. Works on hardsuit rigs.
+/obj/item/weapon/handcuffs/ziptie
+	name = "ziptie"
+	desc = " A sturdy and reliable plastic ziptie for binding the wrists."
+	icon = 'icons/obj/items.dmi'
+	icon_state = "ziptie"
+	breakouttime  = 300
+	cuff_sound = 'sound/weapons/cablecuff.ogg'
+	elastic = 1
+
