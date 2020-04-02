@@ -1,5 +1,5 @@
 /datum/job/qm
-	title = "Deck Chief"
+	title = "Deck Officer"
 	department = "Supply"
 	department_flag = SUP
 	total_positions = 1
@@ -44,7 +44,7 @@
 	department_flag = SUP
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Deck Chief and Executive Officer"
+	supervisors = "the Deck Officer and Executive Officer"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 24
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/tech
@@ -80,7 +80,7 @@
 	department_flag = SUP
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Deck Chief, the Corporate Liaison and the Executive Officer"
+	supervisors = "the Deck Officer, the Corporate Liaison and the Executive Officer"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 25

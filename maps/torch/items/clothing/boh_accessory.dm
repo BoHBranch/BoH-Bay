@@ -105,6 +105,25 @@
 /obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9_alt4
 	icon_state = "FE9"
 
+/obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer
+	icon_state = "FW0"
+	overlay_state = "ribbon_peace" //Literally just because it already exists and looks close to what the rank tag looks like
+
+/obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w1
+	icon_state = "FW1"
+
+/obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w2
+	icon_state = "FW2"
+
+/obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w3
+	icon_state = "FW3"
+
+/obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w4
+	icon_state = "FW4"
+
+/obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w5
+	icon_state = "FW5"
+
 /obj/item/clothing/accessory/solgov/rank/fleet/officer
 	icon_state = "FO1"
 	overlay_state = "fleetrank_officer"
@@ -210,11 +229,45 @@
 	icon_state = "ME9A"
 	name = "ranks (E-9 sergeant major)"
 	desc = "Insignia denoting the rank of Sergeant Major."
-	
+
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt2
 	icon_state = "ME9B"
 	name = "ranks (E-9 sergeant major of the marine Corps)"
 	desc = "Insignia denoting the rank of Sergeant Major of the Marine Corps."
+
+/obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer
+	icon_state = "MW0"
+	overlay_state = "armyrank_officer" //Literally just because it already exists and looks close to what the rank tag looks like
+
+/obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w1
+	icon_state = "MW1"
+	overlay_state = "armyrank_warrant_officer"
+	name = "ranks (W-1 warrant officer)"
+	desc = "Insignia denoting the rank of Warrant Officer"
+
+/obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w2
+	icon_state = "MW2"
+	overlay_state = ""
+	name = "ranks (W-2 second warrant officer"
+	desc = "Insignia denoting the rank of Second Warrant Officer"
+
+/obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w3
+	icon_state = "MW3"
+	overlay_state = ""
+	name = "ranks (W-3 first warrant officer)"
+	desc = "Insignia denoting the rank of First Warrant Officer"
+
+/obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w4
+	icon_state = "MW4"
+	overlay_state = ""
+	name = "ranks (W-4 major warrant officer)"
+	desc = "Insignia denoting the rank of Major Warrant Officer"
+
+/obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w5
+	icon_state = "MW5"
+	overlay_state = ""
+	name = "ranks (W-5 general warrant officer)"
+	desc = "Insignia denoting the rank of General Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer
 	icon_state = "MO1A"

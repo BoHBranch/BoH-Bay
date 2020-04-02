@@ -66,14 +66,14 @@
 	item_state = "com_headset_alt"
 
 /obj/item/device/radio/headset/headset_deckofficer
-	name = "deck chief's radio headset"
+	name = "deck officer's radio headset"
 	desc = "The headset of the chief box pusher."
 	icon_state = "cargo_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/headset_deckofficer
 
 /obj/item/device/radio/headset/headset_deckofficer/alt
-	name = "deck chief's bowman headset"
+	name = "deck officer's bowman headset"
 	item_state = "cargo_headset_alt"
 	icon_state = "cargo_headset_alt"
 	max_keys = 3

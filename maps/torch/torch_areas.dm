@@ -828,7 +828,7 @@
 	name = "\improper Supply Upper Warehouse"
 
 /area/quartermaster/deckchief
-	name = "\improper Deck Chief's Office"
+	name = "\improper Deck Officer's Office"
 	icon_state = "quart"
 	req_access = list(access_qm)
 
