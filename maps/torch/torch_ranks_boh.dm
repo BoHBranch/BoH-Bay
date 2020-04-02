@@ -78,10 +78,9 @@
 		/datum/species/vasilissan	= list(UNRESTRICTED, /datum/mil_branch/private_security),
 		/datum/species/vulpkanin	= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/customhuman	= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/shapeshifter/promethean	= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/shapeshifter/promethean	= list(/datum/mil_branch/civilian),
 		//datum/species/tesh/		= list(UNRESTRICTED),
 		/datum/species/vox			= list(/datum/mil_branch/alien),
-		/datum/species/vox/pariah	= list(/datum/mil_branch/civilian),
 		/datum/species/vox/armalis	= list(/datum/mil_branch/alien)
 	)
 
@@ -90,7 +89,6 @@
 		/datum/species/unathi/yeosa	= list(SMC_TROOPERS_ONLY),
 		/datum/species/humanathi	= list(SMC_TROOPERS_ONLY),
 		/datum/species/tajaran		= list(SMC_TROOPERS_ONLY),
-		/datum/species/shapeshifter/promethean	= list(SMC_TROOPERS_ONLY)
 	)
 
 /datum/mil_branch/fleet
