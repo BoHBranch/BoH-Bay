@@ -8,36 +8,26 @@
 	allowed_roles = MEDICAL_ROLES
 
 /datum/gear/suit/trenchcoat
-	allowed_roles = list(/datum/job/assistant, /datum/job/bartender, /datum/job/detective, /datum/job/merchant, /datum/job/submap/bearcat_captain, /datum/job/submap/bearcat_crewman, /datum/job/submap/unishi_crew, /datum/job/submap/unishi_researcher, /datum/job/submap/colonist, /datum/job/submap/pod)
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/poncho
-	allowed_roles = CASUAL_ROLES
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/security_poncho
-	allowed_roles = list(/datum/job/merchant, /datum/job/detective)
-	allowed_branches = CASUAL_BRANCHES
+	allowed_roles = list(/datum/job/merchant, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/officer, /datum/job/seccadet)
 
 /datum/gear/suit/medical_poncho
 	allowed_roles = list(/datum/job/senior_doctor, /datum/job/doctor, /datum/job/psychiatrist, /datum/job/merchant, /datum/job/chemist)
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/engineering_poncho
 	allowed_roles = list(/datum/job/engineer, /datum/job/roboticist, /datum/job/merchant)
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/science_poncho
-	allowed_roles = list(/datum/job/scientist, /datum/job/senior_scientist, /datum/job/scientist_assistant)
-	allowed_branches = CASUAL_BRANCHES
+	allowed_roles = list(/datum/job/scientist, /datum/job/submap/unishi_researcher, /datum/job/senior_scientist, /datum/job/scientist_assistant)
 
 /datum/gear/suit/nanotrasen_poncho
-	allowed_roles = list(/datum/job/scientist, /datum/job/scientist_assistant, /datum/job/senior_scientist, /datum/job/merchant)
-	allowed_branches = CASUAL_BRANCHES
+	allowed_roles = list(/datum/job/scientist, /datum/job/liaison, /datum/job/bodyguard, /datum/job/scientist_assistant, /datum/job/senior_scientist, /datum/job/merchant)
 
 /datum/gear/suit/cargo_poncho
-	allowed_roles = list(/datum/job/cargo_tech, /datum/job/merchant)
-	allowed_branches = CASUAL_BRANCHES
+	allowed_roles = list(/datum/job/cargo_tech, /datum/job/qm, /datum/job/mining, /datum/job/merchant)
 
 /datum/gear/suit/suit_jacket
 	allowed_roles = FORMAL_ROLES
@@ -68,7 +58,6 @@
 /datum/gear/suit/labcoat_ec
 	display_name = "labcoat, Expeditionary Corps"
 	path = /obj/item/clothing/suit/storage/toggle/labcoat/science/ec
-	allowed_roles = DOCTOR_ROLES
 	allowed_branches = NT_BRANCHES
 
 /datum/gear/suit/labcoat_ec_cso
@@ -79,7 +68,6 @@
 /datum/gear/suit/wintercoat_dais
 	display_name = "winter coat, DAIS"
 	allowed_roles = list(/datum/job/engineer, /datum/job/roboticist, /datum/job/scientist_assistant, /datum/job/scientist, /datum/job/senior_scientist, /datum/job/rd)
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/coat
 	allowed_branches = CASUAL_BRANCHES
@@ -88,7 +76,6 @@
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/wintercoat
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/track
 	allowed_roles = CASUAL_ROLES
@@ -116,4 +103,3 @@
 	display_name = "Agent's jacket"
 	path = /obj/item/clothing/suit/storage/toggle/agent_jacket
 	allowed_roles = list(/datum/job/detective)
-	allowed_branches = list(/datum/mil_branch/solgov)
