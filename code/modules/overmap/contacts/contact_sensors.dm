@@ -137,4 +137,5 @@
 
 	//Update our own marker icon.
 	var/datum/overmap_contact/self_record = contact_datums[linked]
-	self_record.update_marker_icon()
+	self_record.update_marker_icon(sensor_range)
+	self_record.show()

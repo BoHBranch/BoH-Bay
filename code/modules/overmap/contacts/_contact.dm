@@ -17,6 +17,7 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 	var/image/marker                 // Image overlay attached to the contact.
 	var/is_overmap_event = FALSE 	 // Pretty much used to skip a bunch of stuff so we can ues the same system for overmap effects.
 	var/pinged = FALSE				 // Used to animate overmap effects.
+	var/list/images = list()		 // Our list of images to cast to users.
 
 	// The sensor console holding this data.
 	var/obj/machinery/computer/ship/sensors/owner
@@ -59,7 +60,9 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 		marker.filters = filter(type="drop_shadow", color = marker.color + "F0", size = 2, offset = 1,x = 0, y = 0)
 		marker.alpha = 0
 
-/datum/overmap_contact/proc/update_marker_icon()
+	images += marker
+
+/datum/overmap_contact/proc/update_marker_icon(var/range = 0)
 	if(identified)
 		marker.icon_state = effect.contact_icon_state
 
@@ -70,17 +73,41 @@ var/list/phonetic_alphabet_suffix = list("ALPHA", "BETA", "GAMMA", "DELTA", "EPS
 			shield_image.pixel_x = 8
 			marker.overlays += shield_image
 
+		if(range > 1)
+			var/image/radar
+
+			for(var/image/I in images)
+				if(I.tag == "radar")
+					radar = I
+			if(radar)
+				return
+
+			radar = image(loc = effect, icon = 'icons/obj/overmap.dmi', icon_state = "sensor_range")
+			radar.pixel_x = -2
+			radar.tag = "radar"
+			radar.filters = filter(type="blur", size = 1)
+			images += radar
+
+			var/matrix/M = matrix()
+			M.Scale(range*2.6)
+			animate(radar, transform = M, alpha = 0, time = (0.25 SECONDS*range), 1, SINE_EASING)
+			addtimer(CALLBACK(src, .proc/reset_radar, radar), (0.25 SECONDS *range+0.1))
+			QDEL_IN(radar, (0.25 SECONDS *range+0.3))
+
+/datum/overmap_contact/proc/reset_radar(var/image/radar)
+	images -= radar
+
 /datum/overmap_contact/proc/show()
 	for(var/weakref/W in owner?.viewers)
 		var/mob/M = W.resolve()
 		if(istype(M))
-			M.client?.images |= marker
+			M.client?.images |= images
 
 /datum/overmap_contact/proc/hide()
 	for(var/weakref/W in owner?.viewers)
 		var/mob/M = W.resolve()
 		if(istype(M))
-			M.client?.images -= marker
+			M.client?.images -= images
 
 /datum/overmap_contact/proc/ping()
 	if(pinged)
