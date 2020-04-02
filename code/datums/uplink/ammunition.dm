@@ -31,73 +31,73 @@
 /datum/uplink_item/item/ammo/speedloader
 	name = "Standard Speedloader"
 	desc = "A speedloader for standard revolvers. Contains 6 rounds."
-	item_cost = 8
+	item_cost = 6
 	path = /obj/item/ammo_magazine/speedloader
 
 /datum/uplink_item/item/ammo/rifle
 	name = "Rifle Magazine"
 	desc = "A magazine for assault rifles. Contains 20 rounds."
-	item_cost = 8
+	item_cost = 6
 	path = /obj/item/ammo_magazine/rifle
 
 /datum/uplink_item/item/ammo/bullpup //for zipguns
 	name = "Bullpup Rifle Magazine"
 	desc = "A magazine for bullpup assault rifles. Contains 15 rounds."
-	item_cost = 8
+	item_cost = 6
 	path = /obj/item/ammo_magazine/mil_rifle
 
 /datum/uplink_item/item/ammo/sniperammo
 	name = "Ammobox of Sniper Rounds"
 	desc = "A container of rounds for the anti-materiel rifle. Contains 7 rounds."
-	item_cost = 8
+	item_cost = 7
 	path = /obj/item/weapon/storage/box/ammo/sniperammo
 
 /datum/uplink_item/item/ammo/sniperammo/apds
 	name = "Ammobox of APDS Sniper Rounds"
 	desc = "A container of armor piercing rounds for the anti-materiel rifle. Contains 3 rounds."
-	item_cost = 12
+	item_cost = 10
 	path = /obj/item/weapon/storage/box/ammo/sniperammo/apds
 
 /datum/uplink_item/item/ammo/shotgun_shells
 	name = "Ammobox of Shotgun Shells"
 	desc = "An ammobox with 2 sets of shell holders. Contains 8 buckshot shells total."
-	item_cost = 8
+	item_cost = 6
 	path = /obj/item/weapon/storage/box/ammo/shotgunshells
 
 /datum/uplink_item/item/ammo/shotgun_slugs
 	name = "Ammobox of Shotgun Slugs"
 	desc = "An ammobox with 2 sets of shell holders. Contains 8 slugs total."
-	item_cost = 8
+	item_cost = 6
 	path = /obj/item/weapon/storage/box/ammo/shotgunammo
 
 /datum/uplink_item/item/ammo/machine_pistol
 	name = "Standard Stick Magazine"
 	desc = "A magazine for standard machine pistols. Contains 16 rounds."
-	item_cost = 8
+	item_cost = 6
 	path = /obj/item/ammo_magazine/machine_pistol
 
 /datum/uplink_item/item/ammo/smg
 	name = "Standard Box Magazine"
 	desc = "A magazine for standard SMGs. Contains 20 rounds."
-	item_cost = 8
+	item_cost = 6
 	path = /obj/item/ammo_magazine/smg
 
 /datum/uplink_item/item/ammo/pistol
 	name = "Standard Doublestack Magazine"
 	desc = "A magazine for standard military pistols. Contains 15 rounds."
-	item_cost = 9
+	item_cost = 6
 	path = /obj/item/ammo_magazine/pistol/double
 
 /datum/uplink_item/item/ammo/magnum
 	name = "Magnum Magazine"
 	desc = "A magazine for magnum pistols. Contains 7 rounds."
-	item_cost = 8
+	item_cost = 6
 	path = /obj/item/ammo_magazine/magnum
 
 /datum/uplink_item/item/ammo/speedloader_magnum
 	name = "Magnum Speedloader"
 	desc = "A speedloader for magnum revolvers. Contains 6 rounds."
-	item_cost = 8
+	item_cost = 6
 	path = /obj/item/ammo_magazine/speedloader/magnum
 
 /datum/uplink_item/item/ammo/flechette
@@ -110,13 +110,13 @@
 /datum/uplink_item/item/ammo/pistol_emp
 	name = "Standard EMP Ammo Box"
 	desc = "A box of EMP ammo for standard pistols. Contains 15 rounds."
-	item_cost = 8
+	item_cost = 4
 	path = /obj/item/ammo_magazine/box/emp/pistol
 
 /datum/uplink_item/item/ammo/holdout_emp
 	name = "Small EMP Ammo Box"
 	desc = "A box of EMP ammo for small pistols and revolvers. Contains 8 rounds."
-	item_cost = 6
+	item_cost = 4
 	path = /obj/item/ammo_magazine/box/emp/smallpistol
 
 /datum/uplink_item/item/ammo/stripperclip

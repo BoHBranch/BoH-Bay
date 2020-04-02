@@ -13,12 +13,15 @@
 
 /obj/structure/catwalk/Initialize()
 	. = ..()
+	var/deleted_duplicate = FALSE
 	for(var/obj/structure/catwalk/C in get_turf(src))
 		if(C != src)
+			deleted_duplicate = TRUE
 			qdel(C)
+	if(deleted_duplicate)
+		error("deleted duplicate catwalk at [x],[y],[z].")
 	update_connections(1)
 	update_icon()
-
 
 /obj/structure/catwalk/Destroy()
 	redraw_nearby_catwalks()

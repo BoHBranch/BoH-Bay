@@ -13,7 +13,7 @@
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick,/datum/unarmed_attack/tail, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp)
 
-	description = "Sharks! This is just a placeholder description!"
+	description = "A genemod, divergent from Tritonians by the addition of additional muscle mass and sharper teeth. Though both races are Human-based genemods that arose from the conditions of their aquatic colony-planet, Koster-4, Tritonians have generally always been a more popular choice of genemod, due to an Akula's large dietary needs."
 
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
@@ -21,7 +21,7 @@
 	sexybits_location = BP_GROIN //this is possibly my favorite variable just because of how out of place it is.
 
 
-	available_cultural_info = list( //I can do ANYTHING! Placeholder until the loreboys come and figure out what Akula do
+	available_cultural_info = list( //I can do ANYTHING! Placeholder until the loreboys come and figure out what Akula do | did it - bear
 		TAG_CULTURE = list(
 			CULTURE_HUMAN,
 			CULTURE_HUMAN_VATGROWN,
@@ -39,11 +39,6 @@
 			CULTURE_HUMAN_SPAFRO,
 			CULTURE_HUMAN_CONFED,
 			CULTURE_HUMAN_OTHER,
-			CULTURE_SKRELL_QERR,
-			CULTURE_SKRELL_MALISH,
-			CULTURE_SKRELL_KANIN,
-			CULTURE_SKRELL_TALUM,
-			CULTURE_SKRELL_RASKINTA,
-			CULTURE_UNATHI,
 		)
 	)
+	override_organ_types = list(BP_LUNGS = /obj/item/organ/internal/lungs/gills)

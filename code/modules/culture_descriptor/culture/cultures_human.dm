@@ -128,6 +128,7 @@
 	in the military, industrial, government or service sectors, with an emphasis being placed on military service. Terrans today are generally poor, bitter and a somewhat broken people angry and \
 	resentful about their loss in the Gaia Conflict. An upbringing on Terra emphasises an odd mix of service to the state, liberalism and militarism."
 	language = LANGUAGE_HUMAN_RUSSIAN
+	secondary_langs = list(LANGUAGE_HUMAN_GAIAN)
 	economic_power = 0.9
 
 /decl/cultural_info/culture/human/other

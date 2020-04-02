@@ -6,10 +6,11 @@
 #define LANGUAGE_HUMAN_IBERIAN   "Iberian"
 #define LANGUAGE_HUMAN_RUSSIAN   "Pan-Slavic"
 #define LANGUAGE_HUMAN_SELENIAN  "Selenian"
+#define LANGUAGE_HUMAN_GAIAN     "Neo-Cossack"
 
 //Human misc
 #define LANGUAGE_GUTTER         "Gutter"
-#define LANGUAGE_LEGALESE       "Legalese"
+#define LANGUAGE_LEGALESE		"Legalese"
 #define LANGUAGE_SPACER         "Spacer"
 
 //Alien

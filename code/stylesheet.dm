@@ -111,8 +111,9 @@ h1.alert, h2.alert		{color: #000000;}
 .iberian				{color: #ff6600;}
 .russian				{color: #9c250b;}
 .arabic					{color: #128b11;}
-.spacer					{color: #9c660b;}
-.selenian       {color: #22228b;}
+.spacer					{color: #9c660b; font-family: "Trebuchet MS", cursive, sans-serif;}
+.selenian				{color: #22228b;}
+.gaian					{color: #4d1105;}
 
 .interface				{color: #330033;}
 

@@ -13,7 +13,7 @@
 /datum/uplink_item/item/medical/stabilisation
 	name = "Stabilisation First Aid Kit"
 	desc = "Contains variety of emergency medical pouches."
-	item_cost = 16
+	item_cost = 10
 	path = /obj/item/weapon/storage/firstaid/stab
 
 /datum/uplink_item/item/medical/stasis
@@ -31,13 +31,13 @@
 /datum/uplink_item/item/medical/surgery
 	name = "Surgery Kit"
 	desc = "Contains all the tools needed for on the spot surgery, assuming you actually know what you're doing with them. Floor sterilization not included."
-	item_cost = 40
+	item_cost = 10
 	path = /obj/item/weapon/storage/firstaid/surgery
 
 /datum/uplink_item/item/medical/combat
 	name = "Combat Medical Kit"
 	desc = "Contains most medicines you need to recover from injuries and illnesses, all in a convenient pill form. Splints for broken bones also included!"
-	item_cost = 38
+	item_cost = 22
 	path = /obj/item/weapon/storage/firstaid/combat
 
 /datum/uplink_item/item/medical/stimpack
