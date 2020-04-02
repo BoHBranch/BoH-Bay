@@ -9,6 +9,7 @@
 	idle_power_usage = 10
 	active_power_usage = 100
 	stat_immune = NOINPUT
+	density = TRUE
 	uncreated_component_parts = null
 	construct_state = /decl/machine_construction/default/panel_closed
 
@@ -18,7 +19,7 @@
 /obj/machinery/vitals_monitor/Destroy()
 	victim = null
 	. = ..()
-	
+
 /obj/machinery/vitals_monitor/examine(mob/user)
 	. = ..()
 	if(victim)
@@ -50,7 +51,7 @@
 				breathing = "normal"
 			else if(lungs.breath_fail_ratio < 1)
 				breathing = "shallow"
-		
+
 		to_chat(user, SPAN_NOTICE("Breathing: [breathing]"))
 
 /obj/machinery/vitals_monitor/Process()
@@ -63,7 +64,7 @@
 		update_icon()
 	if(beep && victim && victim.pulse())
 		playsound(src, 'sound/machines/quiet_beep.ogg')
-	
+
 /obj/machinery/vitals_monitor/MouseDrop(over_object, src_location, over_location)
 	if(!CanMouseDrop(over_object))
 		return
@@ -83,40 +84,40 @@
 
 	if(!victim)
 		return
-	
+
 	switch(victim.pulse())
 		if(PULSE_NONE)
-			overlays += image(icon, icon_state = "pulse_flatline")
-			overlays += image(icon, icon_state = "pulse_warning")
+			overlays += overlay_image(icon, icon_state = "pulse_flatline", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+			overlays += overlay_image(icon, icon_state = "pulse_warning", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 		if(PULSE_SLOW, PULSE_NORM,)
-			overlays += image(icon, icon_state = "pulse_normal")
+			overlays += overlay_image(icon, icon_state = "pulse_normal", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 		if(PULSE_FAST, PULSE_2FAST)
-			overlays += image(icon, icon_state = "pulse_veryfast")
+			overlays += overlay_image(icon, icon_state = "pulse_veryfast", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 		if(PULSE_THREADY)
-			overlays += image(icon, icon_state = "pulse_thready")
-			overlays += image(icon, icon_state = "pulse_warning")
+			overlays += overlay_image(icon, icon_state = "pulse_thready", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+			overlays += overlay_image(icon, icon_state = "pulse_warning", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
 	var/obj/item/organ/internal/brain/brain = victim.internal_organs_by_name[BP_BRAIN]
 	if(istype(brain) && victim.stat != DEAD && !(victim.status_flags & FAKEDEATH))
 		switch(brain.get_current_damage_threshold())
 			if(0 to 2)
-				overlays += image(icon, icon_state = "brain_ok")
+				overlays += overlay_image(icon, icon_state = "brain_ok", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 			if(3 to 5)
-				overlays += image(icon, icon_state = "brain_bad")
+				overlays += overlay_image(icon, icon_state = "brain_bad", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 			if(6 to INFINITY)
-				overlays += image(icon, icon_state = "brain_verybad")
-				overlays += image(icon, icon_state = "brain_warning")
+				overlays += overlay_image(icon, icon_state = "brain_verybad", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+				overlays += overlay_image(icon, icon_state = "brain_warning", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	else
 		overlays += image(icon, icon_state = "brain_warning")
 
 	var/obj/item/organ/internal/lungs/lungs = victim.internal_organs_by_name[BP_LUNGS]
 	if(istype(lungs) && !(victim.status_flags & FAKEDEATH))
 		if(lungs.breath_fail_ratio < 0.3)
-			overlays += image(icon, icon_state = "breathing_normal")
+			overlays += overlay_image(icon, icon_state = "breathing_normal", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 		else if(lungs.breath_fail_ratio < 1)
-			overlays += image(icon, icon_state = "breathing_shallow")
+			overlays += overlay_image(icon, icon_state = "breathing_shallow", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 		else
-			overlays += image(icon, icon_state = "breathing_warning")
+			overlays += overlay_image(icon, icon_state = "breathing_warning", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	else
 		overlays += image(icon, icon_state = "breathing_warning")
 
@@ -128,11 +129,11 @@
 	var/mob/user = usr
 	if(!istype(user))
 		return
-	
+
 	if(CanPhysicallyInteract(user))
 		beep = !beep
 		to_chat(user, SPAN_NOTICE("You turn the sound on \the [src] [beep ? "on" : "off"]."))
-		
+
 /obj/item/weapon/stock_parts/circuitboard/vitals_monitor
 	name = "circuit board (Vitals Monitor)"
 	build_path = /obj/machinery/vitals_monitor

@@ -181,7 +181,7 @@
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. It's fitted with an incredibly tiny self-contained reactor. \
 	This provides the weapon, in theory, an infinite power source, but a horrible munition count in practice. Additionally, it cannot fire a concentrated beam, having been modified to be less-than-lethal."
 	projectile_type = /obj/item/projectile/beam/pulse/epp
-	max_shots = 2
+	max_shots = 3
 	self_recharge = 1
 	burst = 1
 
@@ -193,8 +193,6 @@
 	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Up-chambered for a .454 calibre round. This one has 'To the Captain of the NTSS Dagon' engraved on the grip."
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
 	caliber = CALIBER_PISTOL_MAGNUM_LARGE
-	has_firing_pin = TRUE
-	firing_pin_type = /obj/item/firing_pin/id_locked/commanding_officer
 
 /////////
 // XO Revolver
@@ -202,3 +200,23 @@
 /obj/item/weapon/gun/projectile/revolver/medium/captain/xo
 	name = "Final Argument"
 	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Executive of the NTSS Dagon' engraved on the grip."
+
+/////////
+// ID locked Mk58
+/////////
+
+/obj/item/weapon/gun/projectile/pistol/command
+	name = "pistol"
+	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are. This one appears to be ID locked."
+	icon = 'icons/obj/guns/pistol.dmi'
+	icon_state = "secguncomp"
+	safety_icon = "safety"
+	magazine_type = /obj/item/ammo_magazine/pistol/rubber
+	accuracy = -1
+	fire_delay = 6
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	has_firing_pin = TRUE
+	firing_pin_type = /obj/item/firing_pin/id_locked/commanding_officer
+
+/obj/item/weapon/gun/projectile/pistol/sec/lethal
+	magazine_type = /obj/item/ammo_magazine/pistol
