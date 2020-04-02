@@ -20,13 +20,15 @@
 	if(user && user.client)
 		for(var/key in contact_datums)
 			var/datum/overmap_contact/record = contact_datums[key]
-			user.client.images |= record.marker
+			if(record)
+				user.client.images |= record.marker
 
 /obj/machinery/computer/ship/sensors/proc/hide_contacts(var/mob/user)
 	if(user && user.client)
 		for(var/key in contact_datums)
 			var/datum/overmap_contact/record = contact_datums[key]
-			user.client.images -= record.marker
+			if(record)
+				user.client.images -= record.marker
 
 /obj/machinery/computer/ship/sensors/Process()
 	..()
