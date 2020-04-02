@@ -70,7 +70,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
 	default_material = MATERIAL_TITANIUM
-	base_parry_chance = 20
+	base_parry_chance = 0
 	attack_cooldown_modifier = 1
 	max_force = 20
 	force_divisor = 0.20 //20 with hardness 80 (titanium) or 15 with hardness 60 (steel)
