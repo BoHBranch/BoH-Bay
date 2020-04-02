@@ -83,7 +83,7 @@
 		/datum/species/vasilissan	= list(UNRESTRICTED, /datum/mil_branch/private_security),
 		/datum/species/vulpkanin	= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/customhuman	= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/shapeshifter/promethean	= list(/datum/mil_branch/civilian),
+ 		/datum/species/shapeshifter/promethean	= list(UNRESTRICTED, SEMIRESTRICTED),
 		//datum/species/tesh/		= list(UNRESTRICTED),
 		/datum/species/vox			= list(/datum/mil_branch/alien),
 		/datum/species/vox/pariah	= list(/datum/mil_branch/civilian),
@@ -95,6 +95,7 @@
 		/datum/species/unathi/yeosa	= list(SMC_TROOPERS_ONLY),
 		/datum/species/humanathi	= list(SMC_TROOPERS_ONLY),
 		/datum/species/tajaran		= list(SMC_TROOPERS_ONLY),
+ 		/datum/species/shapeshifter/promethean	= list(SMC_TROOPERS_ONLY)
 	)
 
 /datum/mil_branch/fleet
@@ -516,6 +517,7 @@
 	name = "Sergeant Major of the Marine Corps"
 	name_short = "SMMC"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt2)
+	sort_order = 9
 
 /datum/mil_rank/marine_corps/w1
 	name = "Warrant Officer"

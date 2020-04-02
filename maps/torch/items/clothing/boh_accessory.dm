@@ -111,18 +111,28 @@
 
 /obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w1
 	icon_state = "FW1"
+	name = "ranks (W-1 junior warrant officer"
+	desc = "Insignia denoting the rank of Junior Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w2
 	icon_state = "FW2"
+	name = "ranks (W-2 chief warrant officer"
+	desc = "Insignia denoting the rank of Chief Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w3
 	icon_state = "FW3"
+	name = "ranks (W-3 senior chief warrant officer"
+	desc = "Insignia denoting the rank of Senior Chief Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w4
 	icon_state = "FW4"
+	name = "ranks (W-4 master chief warrant officer"
+	desc = "Insignia denoting the rank of Master Chief Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w5
 	icon_state = "FW5"
+	name = "ranks (W-5 command master chief warrant officer"
+	desc = "Insignia denoting the rank of Command Master Chief Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/officer
 	icon_state = "FO1"
@@ -241,31 +251,26 @@
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w1
 	icon_state = "MW1"
-	overlay_state = "armyrank_warrant_officer"
 	name = "ranks (W-1 warrant officer)"
 	desc = "Insignia denoting the rank of Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w2
 	icon_state = "MW2"
-	overlay_state = ""
 	name = "ranks (W-2 second warrant officer"
 	desc = "Insignia denoting the rank of Second Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w3
 	icon_state = "MW3"
-	overlay_state = ""
 	name = "ranks (W-3 first warrant officer)"
 	desc = "Insignia denoting the rank of First Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w4
 	icon_state = "MW4"
-	overlay_state = ""
 	name = "ranks (W-4 major warrant officer)"
 	desc = "Insignia denoting the rank of Major Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w5
 	icon_state = "MW5"
-	overlay_state = ""
 	name = "ranks (W-5 general warrant officer)"
 	desc = "Insignia denoting the rank of General Warrant Officer"
 
