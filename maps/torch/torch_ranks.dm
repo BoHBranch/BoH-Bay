@@ -503,6 +503,7 @@
 	name_short = "ADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/officer/o8)
 	sort_order = 18
+	
 
 /*
  *  Army
