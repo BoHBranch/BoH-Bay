@@ -31,4 +31,3 @@
 	allowed_roles = SEMIANDFORMAL_ROLES
 
 /datum/gear/shoes/boots
-	cost = 2
