@@ -11,7 +11,6 @@
 	economic_power = 1
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 19
 	selection_color = "#601c1c"
 	alt_titles = list(
 		"Forensics Trainee"
@@ -65,7 +64,6 @@
 	minimal_player_age = 12
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 25)
-	ideal_character_age = 35
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_ADEPT,
@@ -91,7 +89,6 @@
 	economic_power = 4
 	minimal_player_age = 6
 	minimum_character_age = list(SPECIES_HUMAN = 24)
-	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
 						SKILL_ELECTRICAL   = SKILL_ADEPT,
@@ -122,7 +119,6 @@
 	supervisors = "the Combat Technician and Squad Leader"
 	selection_color = "#557e38"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 20
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
 	allowed_branches = list(/datum/mil_branch/marine_corps)
@@ -139,7 +135,7 @@
 	alt_titles = list(
 		"Grunt",
 		"Trooper")
-	
+
 /datum/job/grunt/get_description_blurb()
 	return "You are a Marine! Your duty is to listen to the Squad Leader. If they're not present, the Combat Technician may pull rank. Do your best not to die, while also taking orders. Oorah!"
 
