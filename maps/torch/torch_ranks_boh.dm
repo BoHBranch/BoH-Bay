@@ -243,108 +243,126 @@
 	name_short = "CR"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 1
+	pow_cat = 1
 
 /datum/mil_rank/fleet/e1_exp
 	name = "Recruit Explorer"
 	name_short = "RXPL"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted)
 	sort_order = 1
+	pow_cat = 1
 
 /datum/mil_rank/fleet/e2
 	name = "Crewman Apprentice"
 	name_short = "CA"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e2, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 2
+	pow_cat = 1
 
 /datum/mil_rank/fleet/e2_exp
 	name = "Junior Explorer"
 	name_short = "JXPL"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e2, /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer)
 	sort_order = 2
+	pow_cat = 1
 
 /datum/mil_rank/fleet/e3
 	name = "Crewman"
 	name_short = "CN"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e3, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 3
+	pow_cat = 1
 
 /datum/mil_rank/fleet/e3_exp
 	name = "Explorer"
 	name_short = "XPL"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e3, /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer)
 	sort_order = 3
+	pow_cat = 1
 
 /datum/mil_rank/fleet/e4
 	name = "Petty Officer Third Class"
 	name_short = "PO3"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e4, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 4
+	pow_cat = 1
 
 /datum/mil_rank/fleet/e5
 	name = "Petty Officer Second Class"
 	name_short = "PO2"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e5, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 5
+	pow_cat = 2
 
 /datum/mil_rank/fleet/e5_exp
 	name = "Senior Explorer"
 	name_short = "SXPL"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e5, /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer)
 	sort_order = 5
+	pow_cat = 2
 
 /datum/mil_rank/fleet/e6
 	name = "Petty Officer First Class"
 	name_short = "PO1"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e6, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 6
+	pow_cat = 2
 
 /datum/mil_rank/fleet/e7
 	name = "Chief Petty Officer"
 	name_short = "CPO"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e7, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 7
+	pow_cat = 2
 
 /datum/mil_rank/fleet/e7_exp
 	name = "Chief Explorer"
 	name_short = "CXPL"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/ec/enlisted/e7, /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer)
 	sort_order = 7
+	pow_cat = 2
 
 /datum/mil_rank/fleet/e8
 	name = "Senior Chief Petty Officer"
 	name_short = "SCPO"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e8, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 8
+	pow_cat = 2
 
 /datum/mil_rank/fleet/e9
 	name = "Master Chief Petty Officer"
 	name_short = "MCPO"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 9
+	pow_cat = 2
 
 /datum/mil_rank/fleet/e9_alt1
 	name = "Command Master Chief Petty Officer"
 	name_short = "CMCPO"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9_alt1, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 9
+	pow_cat = 2
 
 /datum/mil_rank/fleet/e9_alt2
 	name = "Fleet Master Chief Petty Officer"
 	name_short = "FLTCM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9_alt2, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 9
+	pow_cat = 2
 
 /datum/mil_rank/fleet/e9_alt3
 	name = "Force Master Chief Petty Officer"
 	name_short = "FORCM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9_alt3, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 9
+	pow_cat = 2
 
 /datum/mil_rank/fleet/e9_alt4
 	name = "Master Chief Petty Officer of the Fleet"
 	name_short = "MCPOF"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9_alt4, /obj/item/clothing/accessory/solgov/specialty/enlisted)
 	sort_order = 9
+	pow_cat = 2
 
 /datum/mil_rank/fleet/w1
 	name = "Junior Warrant Officer"
@@ -381,66 +399,77 @@
 	name_short = "ENS"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/officer, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 16
+	pow_cat = 3
 
 /datum/mil_rank/fleet/o2
 	name = "Lieutenant Junior-Grade"
 	name_short = "LTJG"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/officer/o2, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 17
+	pow_cat = 3
 
 /datum/mil_rank/fleet/o3
 	name = "Lieutenant"
 	name_short = "LT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/officer/o3, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 18
+	pow_cat = 3
 
 /datum/mil_rank/fleet/o4
 	name = "Lieutenant Commander"
 	name_short = "LCDR"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/officer/o4, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 19
+	pow_cat = 4
 
 /datum/mil_rank/fleet/o5
 	name = "Commander"
 	name_short = "CDR"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/officer/o5, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 20
+	pow_cat = 4
 
 /datum/mil_rank/fleet/o6
 	name = "Captain"
 	name_short = "CAPT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/officer/o6, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 21
+	pow_cat = 4
 
 /datum/mil_rank/fleet/o7
 	name = "Commodore"
 	name_short = "CDRE"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 22
+	pow_cat = 5
 
 /datum/mil_rank/fleet/o8
 	name = "Rear Admiral"
 	name_short = "RADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o8, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 23
+	pow_cat = 5
 
 /datum/mil_rank/fleet/o9
 	name = "Vice Admiral"
 	name_short = "VADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o9, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 24
+	pow_cat = 5
 
 /datum/mil_rank/fleet/o10
 	name = "Admiral"
 	name_short = "ADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 25
+	pow_cat = 5
 
 /datum/mil_rank/fleet/o10_alt
 	name = "Fleet Admiral"
 	name_short = "FADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10_alt, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 25
+	pow_cat = 5
 /*****/
 
 /*
@@ -452,72 +481,84 @@
 	name_short = "Pvt"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted)
 	sort_order = 1
+	pow_cat = 1
 
 /datum/mil_rank/marine_corps/e2
 	name = "Private First Class"
 	name_short = "PFC"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e2)
 	sort_order = 2
+	pow_cat = 1
 
 /datum/mil_rank/marine_corps/e3
 	name = "Lance Corporal"
 	name_short = "LCpl"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e3)
 	sort_order = 3
+	pow_cat = 1
 
 /datum/mil_rank/marine_corps/e4
 	name = "Corporal"
 	name_short = "Cpl"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e4)
 	sort_order = 4
+	pow_cat = 1
 
 /datum/mil_rank/marine_corps/e5
 	name = "Sergeant"
 	name_short = "Sgt"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e5)
 	sort_order = 5
+	pow_cat = 2
 
 /datum/mil_rank/marine_corps/e6
 	name = "Staff Sergeant"
 	name_short = "SSgt"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e6)
 	sort_order = 6
+	pow_cat = 2
 
 /datum/mil_rank/marine_corps/e7
 	name = "Gunnery Sergeant"
 	name_short = "GySgt"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e7)
 	sort_order = 7
+	pow_cat = 2
 
 /datum/mil_rank/marine_corps/e8
 	name = "Master Sergeant"
 	name_short = "MSgt"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e8)
 	sort_order = 8
+	pow_cat = 2
 
 /datum/mil_rank/marine_corps/e8_alt
 	name = "First Sergeant"
 	name_short = "1stSg"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e8_alt)
 	sort_order = 8
+	pow_cat = 2
 
 /datum/mil_rank/marine_corps/e9
 	name = "Master Gunnery Sergeant"
 	name_short = "MGySgt"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9)
 	sort_order = 9
+	pow_cat = 2
 
 /datum/mil_rank/marine_corps/e9_alt
 	name = "Sergeant Major"
 	name_short = "SgtMaj"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt)
 	sort_order = 9
+	pow_cat = 2
 
 /datum/mil_rank/marine_corps/e9_alt2
 	name = "Sergeant Major of the Marine Corps"
 	name_short = "SMMC"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted/e9_alt2)
 	sort_order = 9
+	pow_cat = 2
 
 /datum/mil_rank/marine_corps/w1
 	name = "Warrant Officer"
@@ -554,18 +595,21 @@
 	name_short = "2ndLt"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/officer)
 	sort_order = 16
+	pow_cat = 3
 
 /datum/mil_rank/marine_corps/o2
 	name = "First Lieutenant"
 	name_short = "1stLt"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o2)
 	sort_order = 17
+	pow_cat = 3
 
 /datum/mil_rank/marine_corps/o3
 	name = "Captain "
 	name_short = "CPT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o3)
 	sort_order = 18
+	pow_cat = 3
 
 // Specially, to avoid two "Capt" on-board.
 /datum/mil_rank/marine_corps/o3_alt
@@ -573,54 +617,63 @@
 	name_short = "M-CPT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o3_alt)
 	sort_order = 19
+	pow_cat = 3
 
 /datum/mil_rank/marine_corps/o3_alt2
 	name = "Specialist Captain"
 	name_short = "SP-CPT"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o3_alt2)
 	sort_order = 20
+	pow_cat = 3
 
 /datum/mil_rank/marine_corps/o4
 	name = "Major"
 	name_short = "Maj"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o4)
 	sort_order = 21
+	pow_cat = 4
 
 /datum/mil_rank/marine_corps/o5
 	name = "Lieutenant Colonel"
 	name_short = "LtCol"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o5)
 	sort_order = 22
+	pow_cat = 4
 
 /datum/mil_rank/marine_corps/o6
 	name = "Colonel"
 	name_short = "Col"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/officer/o6)
 	sort_order = 23
+	pow_cat = 4
 
 /datum/mil_rank/marine_corps/o7
 	name = "Brigadier General"
 	name_short = "BGen"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/flag)
 	sort_order = 24
+	pow_cat = 5
 
 /datum/mil_rank/marine_corps/o8
 	name = "Major General"
 	name_short = "MGen"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o8)
 	sort_order = 25
+	pow_cat = 5
 
 /datum/mil_rank/marine_corps/o9
 	name = "Lieutenant General"
 	name_short = "LtGen"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o9)
 	sort_order = 26
+	pow_cat = 5
 
 /datum/mil_rank/marine_corps/o10
 	name = "General"
 	name_short = "Gen"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o10)
 	sort_order = 27
+	pow_cat = 5
 /*****/
 
 // Addon: Sec Contractors
@@ -644,15 +697,18 @@
 /datum/mil_rank/private_security/pcrc
 	name = "PCRC Contractor"
 	name_short = "PCRC"
+	pow_cat = 3
 
 // Kind of hacky, to allow usage of PCRC suit via outfit.
 /datum/mil_rank/private_security/pcrc_agt
 	name = "PCRC Agent"
 	name_short = "PCRC-AGT"
+	pow_cat = 3
 
 /datum/mil_rank/private_security/saare
 	name = "SAARE Operative"
 	name_short = "SAARE"
+	pow_cat = 3
 /*****/
 
 // Ends of defines
