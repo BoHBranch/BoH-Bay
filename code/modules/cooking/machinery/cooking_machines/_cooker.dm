@@ -117,7 +117,7 @@
 	var/temp_scale = 0
 	if(temperature > min_temp)
 		if(temperature >= optimal_temp)
-			temp_scale = 1
+			temp_scale = Clamp(1 - ((optimal_temp - temperature) / optimal_temp), 0, 1)
 		else
 			temp_scale = temperature / optimal_temp
 		//If we're between min and optimal this will yield a value in the range 0.7 to 1
@@ -142,6 +142,8 @@
 	QUEUE_TEMPERATURE_ATOMS(src)
 
 /obj/machinery/appliance/cooker/ProcessAtomTemperature()
+	if(set_temp > temperature)
+		. = ..()
 	if( ( !(stat & POWEROFF) && !(stat & NOPOWER) ) || (temperature >= T20C)  ) // must be powered and turned on, or hot, to keep processing
 		update_cooking_power() // update!
 		if(!LAZYLEN(cooking_objs))
@@ -149,10 +151,6 @@
 		for(var/datum/cooking_item/CI in cooking_objs)
 			QUEUE_TEMPERATURE_ATOMS(CI.container)
 		return TRUE // Don't kill this processing loop unless we're not powered or we're cold.
-		// Also don't cool us.
-	if(use_power < 2 || temperature > set_temp)
-		temperature -= loss
-	. = ..()
 
 //Cookers do differently, they use containers
 /obj/machinery/appliance/cooker/has_space(var/obj/item/I)
