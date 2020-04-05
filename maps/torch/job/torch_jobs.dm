@@ -93,11 +93,10 @@
 	)
 	required_language = LANGUAGE_HUMAN_EURO
 
-	var/max_pow_cat = 5 //If the rank pow_cat is great then this, set to this.
 	/* pow_cat is rank equivalent based, max_pow_cat is for non-professional (manual labor) contractor jobs.
 	   A contractor having a higher Galilei/Geneva Convention Article 3 equivelent rank then then an enlisted person for similar work is expected behavior.
-	   Source material is DOD Instruction 1000.01
-	*/
+	   Source material is DOD Instruction 1000.01 */
+	max_pow_cat = 5
 
 
 
