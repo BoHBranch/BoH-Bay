@@ -1563,15 +1563,10 @@
 	name = "Syntiflesh"
 	hidden_from_codex = FALSE
 	result = null
+	result_type = /obj/item/weapon/reagent_containers/food/snacks/meat/syntiflesh
 	required_reagents = list(/datum/reagent/blood = 5, /datum/reagent/clonexadone = 1)
 	result_amount = 1
 	mix_message = "The solution thickens disturbingly, taking on a meaty appearance."
-
-/datum/chemical_reaction/syntiflesh/on_reaction(var/datum/reagents/holder, var/created_volume, var/reaction_flags)
-	..()
-	var/location = get_turf(holder.my_atom)
-	for(var/i = 1, i <= created_volume, i++)
-		new /obj/item/weapon/reagent_containers/food/snacks/meat/syntiflesh(location)
 
 /datum/chemical_reaction/hot_ramen
 	name = "Hot Ramen"

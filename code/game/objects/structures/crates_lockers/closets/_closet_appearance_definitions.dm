@@ -496,6 +496,13 @@
 /decl/closet_appearance/secure_closet/sol/two/dark
 	color = COLOR_DARK_BLUE_GRAY
 
+/decl/closet_appearance/secure_closet/fridge
+	decals = null
+	extra_decals = null
+	base_icon =  'icons/obj/closets/fridge.dmi'
+	decal_icon = 'icons/obj/closets/fridge.dmi'
+	color = COLOR_BLACK // uses additive, so it's no change
+
 // Crates.
 /decl/closet_appearance/crate
 	decals = null

@@ -238,7 +238,7 @@
 		return
 	var/create_type
 	if(W.type in attack_products)
-		create_type = attack_products[type]
+		create_type = attack_products[W.type]
 
 	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/variable/mob))
 		var/obj/item/weapon/reagent_containers/food/snacks/variable/mob/MF = W
@@ -1144,7 +1144,6 @@
 	reagent_data = list(/datum/reagent/nutriment = list("noodles" = 2))
 	reagents_to_add = list(/datum/reagent/nutriment = 1)
 	bitesize = 1
-	attack_products = list("tomato" = /obj/item/weapon/reagent_containers/food/snacks/pastatomato)
 
 /obj/item/weapon/reagent_containers/food/snacks/cheesyfries
 	name = "cheesy fries"
@@ -1664,7 +1663,10 @@
 	reagent_data = list(/datum/reagent/nutriment = list("noodles" = 2))
 	reagents_to_add = list(/datum/reagent/nutriment = 2)
 	bitesize = 2
-	attack_products = list(/obj/item/weapon/reagent_containers/food/snacks/meatball = /obj/item/weapon/reagent_containers/food/snacks/meatballspagetti)
+	attack_products = list(
+		/obj/item/weapon/reagent_containers/food/snacks/meatball = /obj/item/weapon/reagent_containers/food/snacks/meatballspagetti,
+		"tomato" = /obj/item/weapon/reagent_containers/food/snacks/pastatomato
+	)
 
 /obj/item/weapon/reagent_containers/food/snacks/boiledrice
 	name = "boiled rice"
