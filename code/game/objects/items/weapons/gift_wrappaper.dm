@@ -194,7 +194,7 @@
 	if (!istype(target, /mob/living/carbon/human)) return
 	var/mob/living/carbon/human/H = target
 
-	if (istype(H.wear_suit, /obj/item/clothing/suit/straight_jacket) || H.stat)
+	if (H.handcuffed || H.stat)
 		if (src.amount > 2)
 			var/obj/effect/spresent/present = new /obj/effect/spresent (H.loc)
 			src.amount -= 2
@@ -204,9 +204,9 @@
 				H.client.eye = present
 
 			H.forceMove(present)
-			admin_attack_log(user, H, "Used \a [src] to wrap their victim", "Was wrapepd with \a [src]", "used \the [src] to wrap")
+			admin_attack_log(user, H, "Used \a [src] to wrap their victim", "Was wrapped with \a [src]", "used \the [src] to wrap")
 
 		else
 			to_chat(user, "<span class='warning'>You need more paper.</span>")
 	else
-		to_chat(user, "They are moving around too much. A straightjacket would help.")
+		to_chat(user, "They are moving around too much.")
