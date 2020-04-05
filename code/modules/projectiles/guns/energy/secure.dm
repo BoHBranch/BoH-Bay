@@ -36,6 +36,7 @@
 	item_state = null	//so the human update icon uses the icon_state instead.
 	req_access = list(list(access_brig, access_bridge))
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
+	max_shots = 10
 
 /obj/item/weapon/gun/energy/revolver/secure
 	name = "smart service revolver"

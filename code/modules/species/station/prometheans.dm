@@ -70,7 +70,8 @@ var/datum/species/shapeshifter/promethean/prometheans
 		/mob/living/carbon/human/proc/shapeshifter_select_hair,
 		/mob/living/carbon/human/proc/shapeshifter_select_gender,
 		/mob/living/carbon/human/proc/shapeshifter_select_hair_colors,
-		/mob/living/carbon/human/proc/diona_heal_toggle
+		/mob/living/carbon/human/proc/diona_heal_toggle,
+		/mob/living/carbon/human/proc/discharge_energy
 		)
 	base_auras = list(
 		/obj/aura/regenerating/human/promethean
@@ -162,11 +163,10 @@ var/datum/species/shapeshifter/promethean/prometheans
 	..()
 	prometheans = src
 
-/datum/species/shapeshifter/promethean/hug(var/mob/living/carbon/human/H,var/mob/living/target)
+/datum/species/shapeshifter/promethean/hug(var/mob/living/carbon/human/H,var/mob/living/target) //unarmed attack already applies shock - this is just cute
 	var/datum/gender/G = gender_datums[target.gender]
 	H.visible_message("<span class='notice'>\The [H] glomps [target] to make [G.him] feel better!</span>", \
 					"<span class='notice'>You glomp [target] to make [G.him] feel better!</span>")
-	H.apply_stored_shock_to(target)
 
 /datum/species/shapeshifter/promethean/handle_environment_special(var/mob/living/carbon/human/H)
 	if(H.InStasis() || H.stat == DEAD)
@@ -194,11 +194,11 @@ var/datum/species/shapeshifter/promethean/prometheans
 	var/datum/gender/G = gender_datums[H.gender]
 
 	switch(stored_shock_by_ref["\ref[H]"])
-		if(1 to 10)
+		if(1 to 75)
 			return " [G.He] [G.is] flickering gently with a little electrical activity."
-		if(11 to 20)
+		if(75 to 150)
 			return " [G.He] [G.is] glowing gently with moderate levels of electrical activity.\n"
-		if(21 to 35)
+		if(150 to 225)
 			return "<span class='warning'> [G.He] [G.is] glowing brightly with high levels of electrical activity.</span>"
-		if(35 to INFINITY)
+		if(225 to INFINITY)
 			return "<span class='danger'> [G.He] [G.is] radiating massive levels of electrical activity!</span>"
