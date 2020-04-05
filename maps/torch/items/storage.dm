@@ -11,6 +11,7 @@
 	var/list/options = list()
 	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/pistol/military/alt/solar,/obj/item/ammo_magazine/pistol/double/rubber)
 	options["Energy"] = list(/obj/item/weapon/gun/energy/gun/secure/corporate)
+	options["Energy - Stun"] = list(/obj/item/weapon/gun/energy/stunrevolver/secure/nanotrasen)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]

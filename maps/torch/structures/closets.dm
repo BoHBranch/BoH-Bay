@@ -191,7 +191,7 @@
 		/obj/item/weapon/reagent_containers/spray/pepper,
 		/obj/item/device/hailer,
 		/obj/item/clothing/accessory/storage/black_vest,
-		/obj/item/gunboxsmall,
+		/obj/item/gunbox,
 		/obj/item/device/megaphone,
 		/obj/item/clothing/gloves/thick,
 		/obj/item/clothing/gloves/thick/duty/solgov/sec,

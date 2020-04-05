@@ -183,7 +183,7 @@
 	if(T)
 		while(stored_matter >= amount_list[/obj/item/weapon/reagent_containers/food/snacks/meat])
 			stored_matter -= amount_list[/obj/item/weapon/reagent_containers/food/snacks/meat]
-			new /obj/item/weapon/reagent_containers/food/snacks/meat(T)
+			new /obj/item/weapon/reagent_containers/food/snacks/meat/syntiflesh(T)
 	return ..()
 
 /obj/machinery/organ_printer/flesh/print_organ(var/choice)
