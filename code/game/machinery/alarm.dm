@@ -942,7 +942,7 @@ FIRE ALARM
 
 /obj/machinery/firealarm/proc/get_cached_overlay(state)
 	if(!LAZYACCESS(overlays_cache, state))
-		LAZYSET(overlays_cache, state, image(icon, state))
+		LAZYSET(overlays_cache, state, overlay_image(icon, state, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER))
 	return overlays_cache[state]
 
 /obj/machinery/firealarm/on_update_icon()
@@ -984,7 +984,7 @@ FIRE ALARM
 			var/decl/security_level/sl = security_state.current_security_level
 
 			set_light(sl.light_max_bright, sl.light_inner_range, sl.light_outer_range, 2, sl.light_color_alarm)
-			overlays += image(sl.icon, sl.overlay_alarm)
+			overlays += overlay_image(sl.icon, sl.overlay_alarm, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
 /obj/machinery/firealarm/fire_act(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	if(src.detecting)
