@@ -744,8 +744,10 @@ About the new airlock wires panel:
 	overlays += panel_overlay
 	overlays += weld_overlay
 	overlays += brace_overlay
-	overlays += lights_overlay
-	overlays += sparks_overlay
+	var/image/lights_OL = overlay_image(lights_overlay, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+	overlays += lights_OL
+	var/image/sparks_OL = overlay_image(sparks_overlay, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+	overlays += sparks_OL
 	overlays += damage_overlay
 
 /obj/machinery/door/airlock/do_animate(animation)

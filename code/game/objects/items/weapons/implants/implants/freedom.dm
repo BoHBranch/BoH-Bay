@@ -22,11 +22,11 @@
 	<b>Special Features:</b><BR>
 	<i>Neuro-Scan</i>- Analyzes certain shadow signals in the nervous system<BR>
 	<b>Integrity:</b> The battery is extremely weak and commonly after injection its
-	life can drive down to only 1 use.<HR>
+	life can drive down to only 3 uses.<HR>
 	No Implant Specifics"}
 
 /obj/item/weapon/implant/freedom/New()
-	uses = rand(1, 5)
+	uses = rand(3, 5)
 	..()
 	return
 

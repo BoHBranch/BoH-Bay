@@ -308,8 +308,8 @@
 		msg += "<span class = 'deptradio'>Physical status:</span> <a href='?src=\ref[src];medical=1'>\[[medical]\]</a>\n"
 		msg += "<span class = 'deptradio'>Medical records:</span> <a href='?src=\ref[src];medrecord=`'>\[View\]</a>\n"
 
-
-	if(print_flavor_text()) msg += "[print_flavor_text()]\n"
+	var/flavor = print_flavor_text()
+	if(flavor) msg += "[flavor]<br>"
 
 	if(mind && user.mind && name == real_name)
 		var/list/relations = matchmaker.get_relationships_between(user.mind, mind, TRUE)

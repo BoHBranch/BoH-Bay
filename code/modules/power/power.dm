@@ -284,8 +284,8 @@
 		PN.trigger_warning(5)
 	if(istype(M,/mob/living/carbon/human))
 		var/mob/living/carbon/human/H = M
-		if(H.species.siemens_coefficient <= 0)
-			return
+		if(H.species.siemens_coefficient < 0)
+			to_chat(M, "<span class='notice'>You feel the electricity harmlessly flow into you.</span>")
 		if(H.gloves)
 			var/obj/item/clothing/gloves/G = H.gloves
 			if(G.siemens_coefficient == 0)	return 0		//to avoid spamming with insulated glvoes on
@@ -311,6 +311,10 @@
 		power_source = cell
 		shock_damage = cell_damage
 	var/drained_hp = M.electrocute_act(shock_damage, source, siemens_coeff) //zzzzzzap!
+	if(istype(M,/mob/living/carbon/human))
+		var/mob/living/carbon/human/H = M
+		if(H.species.siemens_coefficient < 0)
+			drained_hp = H.electrocute_act(shock_damage, source, siemens_coeff)
 	var/drained_energy = drained_hp*20
 
 	if (source_area)
