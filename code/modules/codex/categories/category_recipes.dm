@@ -1,6 +1,6 @@
 /datum/codex_category/recipes/
-	name = "Recipies"
-	desc = "Recipies for a variety of reagents."
+	name = "Recipes"
+	desc = "Recipes for a variety of reagents."
 
 /datum/codex_category/recipes/Initialize()
 	for(var/search_by_appliance in SScuisine.recipe_datums)
@@ -17,9 +17,11 @@
 				mechanics_text += "<li>[recipe.reagents[thing]]u [initial(thing_reagent.name)]</li>"
 			for(var/thing in recipe.items)
 				var/atom/thing_atom = thing
-				mechanics_text += "<li>\a [initial(thing_atom.name)]</li>"
+				mechanics_text += "<li>\a [sanitize(initial(thing_atom.name))]</li>"
 			for(var/thing in recipe.fruit)
 				mechanics_text += "<li>[recipe.fruit[thing]] [thing]\s</li>"
+			if(recipe.coating)
+				mechanics_text += "<li>\a [initial(recipe.coating.name)] coating</li>"
 			mechanics_text += "</ul>"
 			var/atom/recipe_product = recipe.result
 			var/plural = recipe.result_quantity > 1
@@ -41,4 +43,23 @@
 			entry.update_links()
 			SScodex.add_entry_by_string(entry.display_name, entry)
 			items += entry.display_name
+	for(var/datum/chemical_reaction/food/reaction in subtypesof(/datum/chemical_reaction/food))
+		if(reaction.hidden_from_codex || !reaction.result_type)
+			return
+		var/mechanics_text = "This recipe requires the following ingredients:<br><ul>"
+		var/list/reactant_values = list()
+		for(var/reactant_id in reaction.required_reagents)
+			var/datum/reagent/reactant = reactant_id
+			reactant_values += "<li>[reaction.required_reagents[reactant_id]]u [lowertext(initial(reactant.name))]</li>"
+		mechanics_text += "<ul>[jointext(reactant_values, "")]</ul>"
+		var/atom/result = reaction.result_type
+		var/result_name = sanitize(initial(result.name))
+		var/datum/codex_entry/entry = new(                   \
+		 _display_name =       "[result_name] (recipe)",     \
+		 _associated_strings = list(lowertext(result_name)),
+		 _mechanics_text =     mechanics_text
+		)
+		entry.update_links()
+		SScodex.add_entry_by_string(entry.display_name, entry)
+		items += entry.display_name
 	..()

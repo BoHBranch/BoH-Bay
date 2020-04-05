@@ -533,7 +533,7 @@
 		/obj/item/weapon/reagent_containers/food/snacks/egg,
 		/obj/item/weapon/reagent_containers/food/snacks/egg
 	)
-	reagents = list(/datum/reagent/blood = 15)
+	reagents = list(/datum/reagent/coagulated_blood = 15)
 	result = /obj/item/weapon/reagent_containers/food/snacks/riztizkzi_sea
 
 /datum/recipe/father_breakfast
