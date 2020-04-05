@@ -9,8 +9,3 @@
 	flags = WHITELISTED
 	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","*","!")
 	shorthand = "SK"
-	max_partial_understanding = 2
-	partial_understanding = list(
-		LANGUAGE_HUMAN_EURO = 2,
-		LANGUAGE_SPACER = 2
-	)

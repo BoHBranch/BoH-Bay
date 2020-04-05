@@ -48,7 +48,5 @@
 	shorthand = "YU"
 	max_partial_understanding = 50
 	partial_understanding = list(
-		LANGUAGE_HUMAN_EURO = 2,
-		LANGUAGE_SPACER = 2,
 		LANGUAGE_UNATHI_SINTA = 50
 	)
