@@ -325,7 +325,7 @@ var/const/NO_EMAG_ACT = -50
 				pow_roman = "IV"
 			if(5)
 				pow_roman = "V"
-		dat += text("Gaia Convention: Cat []<BR>\n", pow_roman)
+		dat += text("Galilei Convention: Cat []<BR>\n", pow_roman)
 	dat += text("<BR>\n")
 	if(front && side)
 		dat +="<td align = center valign = top>Photo:<br><img src=front.png height=80 width=80 border=4><img src=side.png height=80 width=80 border=4></td>"
