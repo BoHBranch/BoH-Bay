@@ -100,7 +100,7 @@
 			report.info += "Surface analysis has determined unique fingerprint strings:<br><br>"
 			for(var/prints in evidence["prints"])
 				report.info += "<span class='notice'>Fingerprint string: </span>"
-				if(!is_complete_print(evidence["prints"][prints]))
+				if(!is_complete_print(evidence["prints"][prints]) && !user.skill_check(SKILL_FORENSICS, SKILL_EXPERT)))
 					report.info += "INCOMPLETE PRINT"
 				else
 					report.info += "[prints]"
