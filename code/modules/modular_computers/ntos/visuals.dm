@@ -17,7 +17,7 @@
 		return layered_overlay(check, screen_icon_file, menu_icon)
 
 /datum/extension/interactive/ntos/proc/layered_overlay(var/I, var/icon_, var/state)
-	if(I == TRUE)
+	if(I)
 		return overlay_image(icon_, state, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	else
 		return overlay_image(icon_, state)
