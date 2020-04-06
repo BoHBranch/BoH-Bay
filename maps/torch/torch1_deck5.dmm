@@ -1205,7 +1205,8 @@
 /obj/machinery/alarm{
 	dir = 1;
 	icon_state = "alarm0";
-	pixel_y = -22
+	pixel_y = -22;
+	req_access = list(list("ACCESS_ATMOS","ACCESS_ENGINE_EQUIP","ACCESS_EXPLO_HELM"))
 	},
 /obj/machinery/camera/network/exploration_shuttle{
 	icon_state = "camera";
@@ -1326,7 +1327,8 @@
 /obj/machinery/alarm{
 	dir = 1;
 	icon_state = "alarm0";
-	pixel_y = -22
+	pixel_y = -22;
+	req_access = list(list("ACCESS_ATMOS","ACCESS_ENGINE_EQUIP","ACCESS_EXPLO_HELM"))
 	},
 /turf/simulated/floor/tiled,
 /area/exploration_shuttle/crew)
@@ -1651,7 +1653,8 @@
 /obj/item/device/radio,
 /obj/item/device/radio,
 /obj/machinery/alarm{
-	pixel_y = 32
+	pixel_y = 32;
+	req_access = list(list("ACCESS_ATMOS","ACCESS_ENGINE_EQUIP","ACCESS_EXPLO_HELM"))
 	},
 /obj/machinery/light{
 	dir = 4
@@ -2421,7 +2424,8 @@
 	dir = 4;
 	pixel_x = -21;
 	pixel_y = 0;
-	rcon_setting = 2
+	rcon_setting = 2;
+	req_access = list(list("ACCESS_ATMOS","ACCESS_ENGINE_EQUIP","ACCESS_EXPLO_HELM"))
 	},
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
@@ -2713,7 +2717,8 @@
 	dir = 4;
 	pixel_x = -21;
 	pixel_y = 0;
-	rcon_setting = 2
+	rcon_setting = 2;
+	req_access = list(list("ACCESS_ATMOS","ACCESS_ENGINE_EQUIP","ACCESS_EXPLO_HELM"))
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration_shuttle/airlock)
@@ -9440,7 +9445,7 @@
 /area/guppy_hangar/start)
 "qc" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/portable_atmospherics/canister/hfc,
+/obj/machinery/portable_atmospherics/canister/hfp,
 /obj/structure/window/phoronreinforced{
 	dir = 4
 	},
@@ -11961,11 +11966,11 @@
 "uJ" = (
 /obj/structure/closet/crate/uranium,
 /obj/item/device/geiger,
-/obj/item/weapon/reagent_containers/glass/beaker/vial/hfc,
-/obj/item/weapon/reagent_containers/glass/beaker/vial/hfc,
-/obj/item/weapon/reagent_containers/glass/beaker/vial/hfc,
-/obj/item/weapon/reagent_containers/glass/beaker/vial/hfc,
-/obj/item/weapon/reagent_containers/glass/beaker/vial/hfc,
+/obj/item/weapon/reagent_containers/glass/beaker/vial/hfp,
+/obj/item/weapon/reagent_containers/glass/beaker/vial/hfp,
+/obj/item/weapon/reagent_containers/glass/beaker/vial/hfp,
+/obj/item/weapon/reagent_containers/glass/beaker/vial/hfp,
+/obj/item/weapon/reagent_containers/glass/beaker/vial/hfp,
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24;
@@ -12895,7 +12900,7 @@
 	icon_state = "alarm0";
 	pixel_x = 0;
 	pixel_y = 24;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_EXPLO_HELM"))
+	req_access = list(list("ACCESS_ATMOS","ACCESS_ENGINE_EQUIP","ACCESS_EXPLO_HELM"))
 	},
 /obj/effect/floor_decal/industrial/warning,
 /obj/effect/floor_decal/industrial/outline,
@@ -16362,7 +16367,8 @@
 /obj/machinery/alarm{
 	dir = 1;
 	icon_state = "alarm0";
-	pixel_y = -22
+	pixel_y = -22;
+	req_access = list(list("ACCESS_ATMOS","ACCESS_ENGINE_EQUIP","ACCESS_EXPLO_HELM"))
 	},
 /obj/structure/handrai{
 	icon_state = "handrail";

@@ -6,10 +6,10 @@
 	center_of_mass = "x=17;y=13"
 	bitesize = 6
 	var/fish_type = "fish"
+	reagents_to_add = list(/datum/reagent/nutriment/protein = 6)
 
-/obj/item/weapon/reagent_containers/food/snacks/fish/New()
-	..()
-	reagents.add_reagent(/datum/reagent/nutriment/protein, 6)
+/obj/item/weapon/reagent_containers/food/snacks/fish/Initialize()
+	. = ..()
 	name = "[fish_type] fillet"
 // This will remove carp poison etc. Deliberate, meant to be similar to preparing pufferfish.
 /obj/item/weapon/reagent_containers/food/snacks/fish/attackby(var/obj/item/W, var/mob/user)
@@ -34,10 +34,7 @@
 
 /obj/item/weapon/reagent_containers/food/snacks/fish/poison
 	fish_type = "space carp"
-
-/obj/item/weapon/reagent_containers/food/snacks/fish/poison/New()
-	..()
-	reagents.add_reagent(/datum/reagent/toxin/carpotoxin, 6)
+	reagents_to_add = list(/datum/reagent/nutriment/protein = 6, /datum/reagent/toxin/carpotoxin = 6)
 
 /obj/item/weapon/reagent_containers/food/snacks/fish/shark
 	fish_type = "shark"

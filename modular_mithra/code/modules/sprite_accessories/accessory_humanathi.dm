@@ -4,7 +4,7 @@
 	icon = 'modular_mithra/icons/mob/human_races/species/humanathi/hair.dmi'
 	icon_state = "horns_simple"
 	blend = ICON_MULTIPLY
-	species_allowed = list(SPECIES_OLDUNATHI, SPECIES_CUSTOM)
+	species_allowed = list(SPECIES_OLDUNATHI,SPECIES_CUSTOM)
 
 /datum/sprite_accessory/hair/humanathi/horns_short
 	name = "Veteris'Unathi Short Horns"

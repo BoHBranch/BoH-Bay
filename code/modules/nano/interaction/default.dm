@@ -67,7 +67,7 @@ GLOBAL_DATUM_INIT(default_state, /datum/topic_state/default, new)
 		return STATUS_CLOSE
 
 	var/dist = get_dist_bounds(src_object, src)
-	if (dist <= 1) // interactive (green visibility)
+	if (dist <= 1 || (src_object.loc == src)) // interactive (green visibility)
 		// Checking adjacency even when distance is 0 because get_dist() doesn't include Z-level differences and
 		// the client might have its eye shifted up/down thus putting src_object in view.
 		return Adjacent(src_object) ? STATUS_INTERACTIVE : STATUS_UPDATE

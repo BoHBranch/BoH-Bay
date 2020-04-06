@@ -99,9 +99,11 @@ var/global/list/datum/supply_drop_loot/supply_drop
 		/obj/item/weapon/reagent_containers/food/drinks/milk,
 		/obj/item/weapon/storage/fancy/egg_box,
 		/obj/item/weapon/reagent_containers/food/snacks/tofu,
-		/obj/item/weapon/reagent_containers/food/snacks/tofu,
-		/obj/item/weapon/reagent_containers/food/snacks/meat,
-		/obj/item/weapon/reagent_containers/food/snacks/meat)
+		/obj/item/weapon/reagent_containers/food/snacks/tofu)
+
+/datum/supply_drop_loot/food/contents()
+	var/meat_type = pick(subtypesof(/obj/item/weapon/reagent_containers/food/snacks/meat))
+	contents += list(meat_type, meat_type, meat_type)
 
 /datum/supply_drop_loot/armour
 	name = "Armour"

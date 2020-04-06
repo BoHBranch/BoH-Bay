@@ -93,7 +93,9 @@
 	value = 2.1
 	var/remove_generic = 1
 	var/list/remove_toxins = list(
-		/datum/reagent/toxin/zombiepowder
+		/datum/reagent/toxin/zombiepowder,
+		/datum/reagent/soporific,
+		/datum/reagent/chloralhydrate
 	)
 
 /datum/reagent/dylovene/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
@@ -913,10 +915,10 @@
 		return
 
 	if(M.chem_doses[type] < 0.2)	//not that effective after initial rush
-		M.add_chemical_effect(CE_PAINKILLER, min(30*volume, 80))
+		M.add_chemical_effect(CE_PAINKILLER, min(30*volume, 60))
 		M.add_chemical_effect(CE_PULSE, 1)
 	else if(M.chem_doses[type] < 1)
-		M.add_chemical_effect(CE_PAINKILLER, min(10*volume, 20))
+		M.add_chemical_effect(CE_PAINKILLER, min(10*volume, 10))
 	M.add_chemical_effect(CE_PULSE, 2)
 	if(M.chem_doses[type] > 10)
 		M.make_jittery(1)

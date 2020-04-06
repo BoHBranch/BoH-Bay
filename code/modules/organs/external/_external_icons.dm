@@ -80,7 +80,7 @@ var/list/limb_icon_cache = list()
 
 	//BastionStation edit - START
 
-	if(species.selects_bodytype)
+	if(species.selects_bodytype && !BP_IS_ROBOTIC(src))
 		icon_cache_key = "[icon_state]_[custom_species_override]"
 	else
 		icon_cache_key = "[icon_state]_[species ? species.name : SPECIES_HUMAN]"

@@ -308,8 +308,8 @@
 		msg += "<span class = 'deptradio'>Physical status:</span> <a href='?src=\ref[src];medical=1'>\[[medical]\]</a>\n"
 		msg += "<span class = 'deptradio'>Medical records:</span> <a href='?src=\ref[src];medrecord=`'>\[View\]</a>\n"
 
-
-	if(print_flavor_text()) msg += "[print_flavor_text()]\n"
+	var/flavor = print_flavor_text()
+	if(flavor) msg += "[flavor]<br>"
 
 	if(mind && user.mind && name == real_name)
 		var/list/relations = matchmaker.get_relationships_between(user.mind, mind, TRUE)
@@ -320,7 +320,7 @@
 	msg += applying_pressure
 
 	if (pose)
-		if( findtext(pose,".",lentext(pose)) == 0 && findtext(pose,"!",lentext(pose)) == 0 && findtext(pose,"?",lentext(pose)) == 0 )
+		if( findtext(pose,".",length(pose)) == 0 && findtext(pose,"!",length(pose)) == 0 && findtext(pose,"?",length(pose)) == 0 )
 			pose = addtext(pose,".") //Makes sure all emotes end with a period.
 		msg += "[T.He] [pose]\n"
 
@@ -385,6 +385,9 @@
 	HTML += "<br>"
 	HTML += "<a href='byond://?src=\ref[src];flavor_change=feet'>Feet:</a> "
 	HTML += TextPreview(flavor_texts["feet"])
+	HTML += "<br>"
+	HTML += "<a href='byond://?src=\ref[src];flavor_change=NSFW/OOC'>NSFW/OOC:</a> "
+	HTML += TextPreview(flavor_texts["NSFW/OOC"])
 	HTML += "<br>"
 	HTML += "<hr />"
 	HTML +="<a href='?src=\ref[src];flavor_change=done'>\[Done\]</a>"

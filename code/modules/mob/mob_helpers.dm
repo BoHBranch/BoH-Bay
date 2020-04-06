@@ -85,7 +85,7 @@ proc/getsensorlevel(A)
 
 //The base miss chance for the different defence zones
 var/list/global/base_miss_chance = list(
-	BP_HEAD = 70,
+	BP_HEAD = 75,
 	BP_CHEST = 25,
 	BP_GROIN = 25,
 	BP_L_LEG = 50,
@@ -223,8 +223,8 @@ var/list/global/organ_rel_size = list(
 
 proc/slur(phrase)
 	phrase = html_decode(phrase)
-	var/leng=lentext(phrase)
-	var/counter=lentext(phrase)
+	var/leng=length(phrase)
+	var/counter=length(phrase)
 	var/newphrase=""
 	var/newletter=""
 	while(counter>=1)

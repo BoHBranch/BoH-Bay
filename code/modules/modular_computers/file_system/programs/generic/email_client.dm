@@ -82,7 +82,7 @@
 	var/datum/computer_file/data/email_message/current_message = null
 
 /datum/nano_module/email_client/proc/get_functional_drive()
-	var/datum/extension/interactive/ntos/os = get_extension(nano_host(), /datum/extension/interactive/ntos)
+	var/datum/extension/interactive/ntos/os = get_extension(ui_host(), /datum/extension/interactive/ntos)
 	var/obj/item/weapon/stock_parts/computer/hard_drive/drive = os && os.get_component(/obj/item/weapon/stock_parts/computer/hard_drive)
 	if(!drive || !drive.check_functionality())
 		error = "Error uploading file. Are you using a functional and NTOSv2-compliant device?"
@@ -108,7 +108,7 @@
 
 /datum/nano_module/email_client/proc/log_in()
 	var/list/id_login
-	var/atom/movable/A = nano_host()
+	var/atom/movable/A = ui_host()
 	var/obj/item/weapon/card/id/id = A.GetIdCard()
 	if(!id && ismob(A.loc))
 		var/mob/M = A.loc

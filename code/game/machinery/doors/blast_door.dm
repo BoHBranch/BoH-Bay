@@ -61,6 +61,9 @@
 
 	implicit_material = SSmaterials.get_material_by_name(MATERIAL_PLASTEEL)
 
+/obj/machinery/door/blast/do_simple_ranged_interaction(var/mob/user)
+	return FALSE
+
 /obj/machinery/door/blast/examine(mob/user)
 	. = ..()
 	if((stat & BROKEN))

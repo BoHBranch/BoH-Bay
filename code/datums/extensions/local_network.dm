@@ -44,9 +44,9 @@
 		lan = null
 	return lan
 
-/datum/extension/local_network_member/nano_host()
+/datum/extension/local_network_member/ui_host()
 	if(holder)
-		return holder.nano_host()
+		return holder.ui_host()
 	. = ..()
 
 /datum/extension/local_network_member/proc/get_new_tag(var/mob/user)

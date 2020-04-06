@@ -426,16 +426,16 @@
 	var/launched = !P.launch_from_gun(target, user, src, target_zone, x_offset, y_offset)
 
 	if(launched)
-		play_fire_sound(user,P)
+		play_fire_sound(src,P)
 
 	return launched
 
-/obj/item/weapon/gun/proc/play_fire_sound(var/mob/user, var/obj/item/projectile/P)
+/obj/item/weapon/gun/proc/play_fire_sound(var/source, var/obj/item/projectile/P)
 	var/shot_sound = (istype(P) && P.fire_sound)? P.fire_sound : fire_sound
 	if(silenced)
-		playsound(user, shot_sound, 10, 1)
+		playsound(source, shot_sound, 10, 1)
 	else
-		playsound(user, shot_sound, 50, 1)
+		playsound(source, shot_sound, 75, 1, 3, 0.5, 1)
 
 //Suicide handling.
 /obj/item/weapon/gun/var/mouthshoot = 0 //To stop people from suiciding twice... >.>

@@ -33,7 +33,7 @@
 		to_chat(joining, SPAN_WARNING("You are banned from playing semi-antagonist roles."))
 		return FALSE
 
-	if(job.is_restricted(joining.client.prefs, joining))
+	if(job.is_restricted(joining.client,joining.client.prefs,joining))
 		return FALSE
 
 	return TRUE

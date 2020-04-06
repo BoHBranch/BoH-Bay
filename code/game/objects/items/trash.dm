@@ -183,5 +183,21 @@
 	desc = "a stick from some snack food item or a lollipop, not even useful as crafting material."
 	icon_state = "stick"
 
+/obj/item/trash/brownies
+	name = "square tray"
+	icon_state = "brownies"
+
+/obj/item/trash/snacktray
+	name = "snacktray"
+	icon_state = "snacktray"
+
+/obj/item/trash/dipbowl
+	name = "dip bowl"
+	icon_state = "dipbowl"
+
+/obj/item/trash/chipbasket
+	name = "empty basket"
+	icon_state = "chipbasket_empty"
+
 /obj/item/trash/attack(mob/M as mob, mob/living/user as mob)
 	return

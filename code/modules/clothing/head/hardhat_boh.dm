@@ -6,7 +6,7 @@
 	icon_state = "self-protection_helmet"
 	light_overlay = "DC_light"
 	flags_inv = HIDEEARS|BLOCKHAIR
-	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_DIONA)
+	species_restricted = list("exclude",SPECIES_NABBER,SPECIES_DIONA)
 
 /obj/item/clothing/head/hardhat/self_protection/old
 	name = "old self-protection helmet"

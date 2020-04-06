@@ -40,43 +40,19 @@
 /obj/item/weapon/storage/box/ammo/sabotbox
 	name = "box of sabot shells"
 	startswith = list(/obj/item/ammo_magazine/shotholder/sabot = 7)
-/////////
-// Officer Lockbox
-/////////
+
 
 /obj/item/gunbox
-	name = "equipment kit"
-	desc = "A secure box containing a sidearm and primary."
-	icon = 'icons/obj/storage.dmi'
-	icon_state = "ammo" //temp
-
-/obj/item/gunbox/attack_self(mob/living/user)
-	var/list/options = list()
-	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/pistol/military/alt/solar,/obj/item/ammo_magazine/pistol/double/rubber,/obj/item/weapon/gun/projectile/shotgun/pump/beanbag,/obj/item/weapon/storage/box/ammo/beanbags/eight,/obj/item/clothing/accessory/storage/bandolier)
-	options["Energy"] = list(/obj/item/weapon/gun/energy/gun/secure,/obj/item/weapon/grenade/empgrenade/low_yield,/obj/item/weapon/gun/energy/taser/carbine/ext,/obj/item/weapon/cell/device/high)
-	var/choice = input(user,"What type of equipment?") as null|anything in options
-	if(src && choice)
-		var/list/things_to_spawn = options[choice]
-		for(var/new_type in things_to_spawn)
-			var/atom/movable/AM = new new_type(get_turf(src))
-			if(istype(AM, /obj/item/weapon/gun/))
-				to_chat(user, "You have chosen \the [AM]. This is probably worth more than what your paycheck can be used for.")
-		qdel(src)
-
-/////////
-// Bald Officer Lockbox
-/////////
-
-/obj/item/gunboxsmall
 	name = "equipment kit"
 	desc = "A secure box containing a sidearm."
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "ammo" //temp
 
-/obj/item/gunboxsmall/attack_self(mob/living/user)
+/obj/item/gunbox/attack_self(mob/living/user)
 	var/list/options = list()
 	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/pistol/military/alt/solar,/obj/item/ammo_magazine/pistol/double/rubber)
-	options["Energy"] = list(/obj/item/weapon/gun/energy/gun/secure,/obj/item/weapon/grenade/empgrenade/low_yield)
+	options["Energy"] = list(/obj/item/weapon/gun/energy/gun/secure)
+	options["Energy - Stun"] = list(/obj/item/weapon/gun/energy/stunrevolver/secure)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
@@ -97,7 +73,9 @@
 	var/list/options = list()
 	options["Ballistic - .454 Revolver"] = list(/obj/item/weapon/gun/projectile/revolver/medium/captain/large,/obj/item/weapon/storage/fancy/cigar,/obj/item/ammo_magazine/speedloader/large)
 	options["Ballistic - SA Lumoco P3"] = list(/obj/item/weapon/gun/projectile/pistol/holdout/cap,/obj/item/ammo_magazine/pistol/small,/obj/item/clothing/mask/smokable/ecig/deluxe)
+	options["Ballistic - ID locked Mk58"] = list(/obj/item/weapon/gun/projectile/pistol/command,/obj/item/ammo_magazine/pistol,/obj/item/weapon/storage/fancy/cigar)
 	options["Energy - EPP"] = list(/obj/item/weapon/gun/energy/pulse_rifle/pistol/epp,/obj/item/documents/epp)
+	options["Energy - Smart Service Revolver"] = list(/obj/item/weapon/gun/energy/revolver/secure)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
@@ -117,31 +95,10 @@
 /obj/item/gunbox/executive/attack_self(mob/living/user)
 	var/list/options = list()
 	options["Ballistic - Mk58"] = list(/obj/item/weapon/gun/projectile/pistol/sec/solar,/obj/item/ammo_magazine/pistol,/obj/item/weapon/storage/fancy/cigar)
+	options["Ballistic - SA Lumoco P3"] = list(/obj/item/weapon/gun/projectile/pistol/holdout/cap,/obj/item/ammo_magazine/pistol/small,/obj/item/clothing/mask/smokable/ecig/deluxe)
 	options["Ballistic - Custom Revolver"] = list(/obj/item/weapon/gun/projectile/revolver/medium/captain/xo,/obj/item/weapon/storage/fancy/cigar,/obj/item/ammo_magazine/speedloader)
 	options["Energy - EPP"] = list(/obj/item/weapon/gun/energy/pulse_rifle/pistol/epp,/obj/item/documents/epp)
-	var/choice = input(user,"What type of equipment?") as null|anything in options
-	if(src && choice)
-		var/list/things_to_spawn = options[choice]
-		for(var/new_type in things_to_spawn)
-			var/atom/movable/AM = new new_type(get_turf(src))
-			if(istype(AM, /obj/item/weapon/gun/))
-				to_chat(user, "You have chosen \the [AM].")
-		qdel(src)
-
-/////////
-// Bodyguard Lockbox
-/////////
-
-/obj/item/gunbox/bodyguard
-	name = "equipment kit"
-	desc = "A secure box containing a sidearm."
-	icon = 'icons/obj/storage.dmi'
-	icon_state = "ammo" //temp
-
-/obj/item/gunbox/bodyguard/attack_self(mob/living/user)
-	var/list/options = list()
-	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/pistol/military/alt/solar,/obj/item/ammo_magazine/pistol/double/rubber)
-	options["Energy"] = list(/obj/item/weapon/gun/energy/gun/secure/corporate)
+	options["Energy - Smart Service Revolver"] = list(/obj/item/weapon/gun/energy/revolver/secure)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]

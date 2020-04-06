@@ -283,7 +283,7 @@
 /obj/item/clothing/head/helmet/space/rig/mantid
 	light_color = "#00ffff"
 	desc = "More like a torpedo casing than a helmet."
-	species_restricted = list(SPECIES_MANTID_GYNE, SPECIES_MANTID_ALATE, SPECIES_NABBER)
+	species_restricted = list(SPECIES_MANTID_GYNE,SPECIES_MANTID_ALATE,SPECIES_NABBER)
 	sprite_sheets = list(
 		SPECIES_MANTID_GYNE =  'icons/mob/species/mantid/onmob_head_gyne.dmi',
 		SPECIES_MANTID_ALATE = 'icons/mob/species/mantid/onmob_head_alate.dmi',
@@ -292,7 +292,7 @@
 
 /obj/item/clothing/suit/space/rig/mantid
 	desc = "It's closer to a mech than a suit."
-	species_restricted = list(SPECIES_MANTID_GYNE, SPECIES_MANTID_ALATE, SPECIES_NABBER)
+	species_restricted = list(SPECIES_MANTID_GYNE,SPECIES_MANTID_ALATE,SPECIES_NABBER)
 	sprite_sheets = list(
 		SPECIES_MANTID_GYNE =  'icons/mob/species/mantid/onmob_suit_gyne.dmi',
 		SPECIES_MANTID_ALATE = 'icons/mob/species/mantid/onmob_suit_alate.dmi',
@@ -309,7 +309,7 @@
 
 /obj/item/clothing/shoes/magboots/rig/mantid
 	desc = "It's like a highly advanced forklift."
-	species_restricted = list(SPECIES_MANTID_GYNE, SPECIES_MANTID_ALATE)
+	species_restricted = list(SPECIES_MANTID_GYNE,SPECIES_MANTID_ALATE)
 	sprite_sheets = list(
 		SPECIES_MANTID_GYNE =  'icons/mob/species/mantid/onmob_shoes_gyne.dmi',
 		SPECIES_MANTID_ALATE = 'icons/mob/species/mantid/onmob_shoes_alate.dmi'
@@ -317,7 +317,7 @@
 
 /obj/item/clothing/gloves/rig/mantid
 	desc = "They look like a cross between a can opener and a Swiss army knife the size of a shoebox."
-	species_restricted = list(SPECIES_MANTID_GYNE, SPECIES_MANTID_ALATE, SPECIES_NABBER)
+	species_restricted = list(SPECIES_MANTID_GYNE,SPECIES_MANTID_ALATE,SPECIES_NABBER)
 	sprite_sheets = list(
 		SPECIES_MANTID_GYNE =  'icons/mob/species/mantid/onmob_gloves_gyne.dmi',
 		SPECIES_MANTID_ALATE = 'icons/mob/species/mantid/onmob_gloves_alate.dmi',

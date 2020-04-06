@@ -45,3 +45,15 @@
 	cost = 0
 	var_changes = list("hunger_factor" = DEFAULT_HUNGER_FACTOR * 0.5, "metabolism_mod" = 0.5)
 	excludes = list(/datum/trait/fast_meta)
+
+/datum/trait/carnivore
+	name = "Carnivore"
+	desc = "For one reason or another, you're only capable of eating meat. Vegetables won't kill you, but they won't help you either."
+	cost = 0
+	var_changes = list(reagent_tag = IS_CARNIVORE)
+
+/datum/trait/herbivore
+	name = "Herbivore"
+	desc = "You're only able to eat plants. Eating meat and other animal protein will poison you."
+	cost = 0
+	var_changes = list(reagent_tag = IS_HERBIVORE)

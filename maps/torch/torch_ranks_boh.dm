@@ -3,7 +3,12 @@
 #define SEMIRESTRICTED /datum/mil_branch/marine_corps, /datum/mil_branch/private_security
 
 // Rank-specific defines
-#define SMC_TROOPERS_ONLY /datum/mil_branch/marine_corps = list(/datum/mil_rank/marine_corps/e1, /datum/mil_rank/marine_corps/e2, /datum/mil_rank/marine_corps/e3)
+#define SMC_TROOPERS_ONLY /datum/mil_branch/marine_corps = list(\
+	/datum/mil_rank/marine_corps/e1,\
+	/datum/mil_rank/marine_corps/e2,\
+	/datum/mil_rank/marine_corps/e3,\
+	/datum/mil_rank/marine_corps/e4,\
+	)
 #define SMC_LIMITED_RANKS /datum/mil_branch/marine_corps = list(\
 	/datum/mil_rank/marine_corps/e1,\
 	/datum/mil_rank/marine_corps/e2,\
@@ -18,7 +23,7 @@
 	/datum/mil_rank/marine_corps/e9_alt,\
 	/datum/mil_rank/marine_corps/o1,\
 	/datum/mil_rank/marine_corps/o2,\
-	/datum/mil_rank/marine_corps/o3_alt2\
+	/datum/mil_rank/marine_corps/o3,\
 	)
 
 /datum/map/torch
@@ -63,15 +68,17 @@
 		/datum/species/nabber		= list(/datum/mil_branch/civilian),
 		/datum/species/skrell		= list(UNRESTRICTED, /datum/mil_branch/skrell_fleet),
 		/datum/species/unathi		= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/unathi/yeosa	= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/adherent		= list(UNRESTRICTED),
 		/datum/species/sergal		= list(UNRESTRICTED, /datum/mil_branch/private_security),
 		/datum/species/akula		= list(UNRESTRICTED, /datum/mil_branch/private_security),
 		/datum/species/custom		= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/humanathi	= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/tajaran		= list(UNRESTRICTED, SEMIRESTRICTED),
-		/datum/species/vasilissan	= list(UNRESTRICTED),
+		/datum/species/vasilissan	= list(UNRESTRICTED, /datum/mil_branch/private_security),
 		/datum/species/vulpkanin	= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/customhuman	= list(UNRESTRICTED, SEMIRESTRICTED),
+		/datum/species/shapeshifter/promethean	= list(UNRESTRICTED, SEMIRESTRICTED),
 		//datum/species/tesh/		= list(UNRESTRICTED),
 		/datum/species/vox			= list(/datum/mil_branch/alien),
 		/datum/species/vox/pariah	= list(/datum/mil_branch/civilian),
@@ -80,11 +87,10 @@
 
 	species_to_rank_whitelist = list(
 		/datum/species/unathi		= list(SMC_TROOPERS_ONLY),
+		/datum/species/unathi/yeosa	= list(SMC_TROOPERS_ONLY),
 		/datum/species/humanathi	= list(SMC_TROOPERS_ONLY),
 		/datum/species/tajaran		= list(SMC_TROOPERS_ONLY),
-		/datum/species/vulpkanin	= list(SMC_LIMITED_RANKS),
-		/datum/species/custom		= list(SMC_LIMITED_RANKS),
-		/datum/species/customhuman	= list(SMC_LIMITED_RANKS),
+		/datum/species/shapeshifter/promethean	= list(SMC_TROOPERS_ONLY)
 	)
 
 /datum/mil_branch/fleet
@@ -125,8 +131,6 @@
 	)
 
 	spawn_rank_types = list(
-		/datum/mil_rank/fleet/e1,
-		/datum/mil_rank/fleet/e1_exp,
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
@@ -170,8 +174,6 @@
 		/datum/mil_rank/marine_corps/o1,
 		/datum/mil_rank/marine_corps/o2,
 		/datum/mil_rank/marine_corps/o3,
-		/datum/mil_rank/marine_corps/o3_alt,
-		/datum/mil_rank/marine_corps/o3_alt2,
 		/datum/mil_rank/marine_corps/o4,
 		/datum/mil_rank/marine_corps/o5,
 		/datum/mil_rank/marine_corps/o6,
@@ -182,7 +184,6 @@
 	)
 
 	spawn_rank_types = list(
-		/datum/mil_rank/marine_corps/e1,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3,
 		/datum/mil_rank/marine_corps/e4,
@@ -195,8 +196,7 @@
 		/datum/mil_rank/marine_corps/e9_alt,
 		/datum/mil_rank/marine_corps/o1,
 		/datum/mil_rank/marine_corps/o2,
-		/datum/mil_rank/marine_corps/o3_alt,
-		/datum/mil_rank/marine_corps/o3_alt2,
+		/datum/mil_rank/marine_corps/o3,
 		/datum/mil_rank/marine_corps/o4,
 		/datum/mil_rank/marine_corps/o5,
 		/datum/mil_rank/marine_corps/o6

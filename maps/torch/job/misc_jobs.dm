@@ -23,8 +23,8 @@ Civilian
 
 /datum/job/assistant
 	title = "Passenger"
-	total_positions = 12
-	spawn_positions = 12
+	total_positions = -1
+	spawn_positions = -1
 	supervisors = "the Executive Officer"
 	economic_power = 6
 	announced = FALSE
@@ -56,7 +56,6 @@ Civilian
 	spawn_positions = 2
 	availablity_chance = 30
 	supervisors = "the invisible hand of the market"
-	ideal_character_age = 30
 	minimal_player_age = 0
 	create_record = 0
 	outfit_type = /decl/hierarchy/outfit/job/torch/merchant

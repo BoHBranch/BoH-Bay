@@ -14,13 +14,15 @@
 	switch(alert("Proc owned by something?",, "Yes", "No", "Cancel"))
 		if("Yes")
 			targetselected=1
-			switch(input("Proc owned by...", "Owner", null) as null|anything in list("Obj", "Mob", "Area or Turf", "Client"))
+			switch(input("Proc owned by...", "Owner", null) as null|anything in list("Obj", "Mob", "Area", "Turf", "Client"))
 				if("Obj")
-					target = input("Select target:", "Target") as null|obj in world
+					target = input("Select target:", "Target") as null|obj in range(world.view)
 				if("Mob")
-					target = input("Select target:", "Target", usr) as null|mob in world
-				if("Area or Turf")
-					target = input("Select target:", "Target", get_turf(usr)) as null|area|turf in world
+					target = input("Select target:", "Target", usr) as null|mob in range(world.view)
+				if("Area")
+					target = input("Select target:", "Target", get_area(usr)) as null|area in range(world.view)
+				if("Turf")
+					target = input("Select target:", "Target", get_turf(usr)) as null|turf in range(world.view)
 				if("Client")
 					target = input("Select target:", "Target", usr.client) as null|anything in GLOB.clients
 				else
@@ -36,7 +38,7 @@
 	callproc_targetpicked(targetselected, target)
 
 // right click verb
-/client/proc/callproc_target(atom/A in range(world.view))
+/client/proc/callproc_target(atom/A in view())
 	set category = "Debug"
 	set name = "Advanced ProcCall Target"
 
@@ -119,8 +121,8 @@
 			to_chat(usr, "Your callproc target no longer exists.")
 			return CANCEL
 		switch(input("Type of [arguments.len+1]\th variable", "argument [arguments.len+1]") as null|anything in list(
-				"finished", "null", "text", "num", "type", "obj reference", "mob reference",
-				"area/turf reference", "icon", "file", "client", "mob's area", "marked datum", "click on atom"))
+				"finished", "null", "text", "num", "type (CAUSES LAG)", "obj reference", "mob reference",
+				"area reference", "turf reference", "icon", "file", "client", "mob's area", "marked datum", "click on atom"))
 			if(null)
 				return CANCEL
 
@@ -138,20 +140,24 @@
 				current = input("Enter number for [arguments.len+1]\th argument") as null|num
 				if(isnull(current)) return CANCEL
 
-			if("type")
+			if("type (CAUSES LAG)")
 				current = input("Select type for [arguments.len+1]\th argument") as null|anything in typesof(/obj, /mob, /area, /turf)
 				if(isnull(current)) return CANCEL
 
 			if("obj reference")
-				current = input("Select object for [arguments.len+1]\th argument") as null|obj in world
+				current = input("Select object for [arguments.len+1]\th argument") as null|obj in range(world.view)
 				if(isnull(current)) return CANCEL
 
 			if("mob reference")
-				current = input("Select mob for [arguments.len+1]\th argument") as null|mob in world
+				current = input("Select mob for [arguments.len+1]\th argument") as null|mob in range(world.view)
 				if(isnull(current)) return CANCEL
 
-			if("area/turf reference")
-				current = input("Select area/turf for [arguments.len+1]\th argument") as null|area|turf in world
+			if("turf reference")
+				current = input("Select turf for [arguments.len+1]\th argument") as null|turf in range(world.view)
+				if(isnull(current)) return CANCEL
+
+			if("area reference")
+				current = input("Select area for [arguments.len+1]\th argument") as null|area in range(world.view)
 				if(isnull(current)) return CANCEL
 
 			if("icon")
@@ -163,7 +169,7 @@
 				if(isnull(current)) return CANCEL
 
 			if("mob's area")
-				var/mob/M = input("Select mob to take area for [arguments.len+1]\th argument") as null|mob in world
+				var/mob/M = input("Select mob to take area for [arguments.len+1]\th argument") as null|mob in range(world.view)
 				if(!M) return
 				current = get_area(M)
 				if(!current)

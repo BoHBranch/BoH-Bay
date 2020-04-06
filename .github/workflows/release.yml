@@ -10,19 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Login Docker Registry
-      run: docker login -u $REG_USER -p $REG_PASS $REG_URL
-      env:
-        REG_USER: ${{ secrets.REG_USER }}
-        REG_PASS: ${{ secrets.REG_PASS }}
-        REG_URL: ${{ secrets.REG_URL }}
-    - name: Clone custom items
-      run: git clone --depth 1 https://github.com/Baystation12/custom-items
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag $IMAGE_NAME --build-arg BUILD_ARGS=-Icustom-items/inc.dm
-      env:
-        IMAGE_NAME: ${{ secrets.IMAGE_NAME }}
-    - name: Push the Docker image
-      run: docker push $IMAGE_NAME
-      env:
-        IMAGE_NAME: ${{ secrets.IMAGE_NAME }}
+    - name: Build changelog
+      run: python tools/GenerateChangelog/ss13_genchangelog.py html/changelog.html html/changelogs
+    - name: Upload changelog
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: Changelog
+        path: html/changelog.html 

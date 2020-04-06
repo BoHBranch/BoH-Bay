@@ -24,7 +24,7 @@
 	max_heat_protection_temperature = HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.7
 	w_class = ITEM_SIZE_NORMAL
-	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_ADHERENT)
+	species_restricted = list("exclude",SPECIES_NABBER,SPECIES_ADHERENT)
 	var/allow_hair_covering = 1
 
 // Snowflakes gotta snowflake.

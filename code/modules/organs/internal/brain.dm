@@ -176,12 +176,12 @@
 					if(prob(1))
 						to_chat(owner, "<span class='warning'>You feel [pick("dizzy","woozy","faint")]...</span>")
 					damprob = owner.chem_effects[CE_STABLE] ? 30 : 60
-					if(!past_damage_threshold(2) && prob(damprob))
+					if(!past_damage_threshold(4) && prob(damprob))
 						take_internal_damage(1)
 				if(BLOOD_VOLUME_BAD to BLOOD_VOLUME_OKAY)
 					owner.eye_blurry = max(owner.eye_blurry,6)
 					damprob = owner.chem_effects[CE_STABLE] ? 40 : 80
-					if(!past_damage_threshold(4) && prob(damprob))
+					if(!past_damage_threshold(6) && prob(damprob))
 						take_internal_damage(1)
 					if(!owner.paralysis && prob(10))
 						owner.Paralyse(rand(1,3))
@@ -189,8 +189,8 @@
 				if(BLOOD_VOLUME_SURVIVE to BLOOD_VOLUME_BAD)
 					owner.eye_blurry = max(owner.eye_blurry,6)
 					damprob = owner.chem_effects[CE_STABLE] ? 60 : 100
-					if(!past_damage_threshold(6) && prob(damprob))
-						take_internal_damage(1)
+					if(!past_damage_threshold(8) && prob(damprob))
+						take_internal_damage(2)
 					if(!owner.paralysis && prob(15))
 						owner.Paralyse(3,5)
 						to_chat(owner, "<span class='warning'>You feel extremely [pick("dizzy","woozy","faint")]...</span>")
@@ -200,21 +200,27 @@
 					if(prob(damprob))
 						take_internal_damage(1)
 					if(prob(damprob))
-						take_internal_damage(1)
+						take_internal_damage(2)
 	..()
 
 /obj/item/organ/internal/brain/take_internal_damage(var/damage, var/silent)
 	set waitfor = 0
+	var/damage_secondary = damage * 0.10
+	if(damage >= 50) //should only really be triggered by executions or very big ouch weapons
+		damage *= 2
 	..()
-	if(damage >= 10) //This probably won't be triggered by oxyloss or mercury. Probably.
-		var/damage_secondary = damage * 0.20
+	if(damage >= 10)
+		owner.eye_blurry += damage_secondary
+	if(damage >= 30) //This won't be triggered by oxyloss or mercury or after damage reduction from most helmets.
 		owner.flash_eyes()
 		owner.eye_blurry += damage_secondary
-		owner.confused += damage_secondary * 2
-		owner.Paralyse(damage_secondary)
-		owner.Weaken(round(damage, 1))
+		owner.confused += damage_secondary
+		owner.adjustOxyLoss(damage)
 		if(prob(30))
 			addtimer(CALLBACK(src, .proc/brain_damage_callback, damage), rand(6, 20) SECONDS, TIMER_UNIQUE)
+	if(damage >= 70)
+		owner.Paralyse(damage_secondary)
+		owner.Weaken(round((damage_secondary * 2), 1))
 
 /obj/item/organ/internal/brain/proc/brain_damage_callback(var/damage) //Confuse them as a somewhat uncommon aftershock. Side note: Only here so a spawn isn't used. Also, for the sake of a unique timer.
 	to_chat(owner, "<span class = 'notice' font size='10'><B>I can't remember which way is forward...</B></span>")

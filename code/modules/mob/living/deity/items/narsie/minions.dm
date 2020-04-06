@@ -2,7 +2,7 @@
 	name = DEITY_TREE_DARK_MINION
 	desc = "Unlock abilities that allow your followers to craft and summon useful creatures."
 	category = DEITY_TREE_DARK_MINION
-	base_cost = 75
+	base_cost = 60
 
 /datum/deity_item/boon/soul_shard
 	name = "Soul Stone Shard"
@@ -17,7 +17,7 @@
 	desc = "Give a vessel to a follower filled with infection so vile, it turns all sapient creatures into mindless husks."
 	category = DEITY_TREE_DARK_MINION
 	requirements = list(DEITY_TREE_DARK_MINION = 1)
-	base_cost = 300
+	base_cost = 180
 	boon_path = /obj/item/weapon/reagent_containers/food/drinks/zombiedrink
 
 /datum/deity_item/boon/tear_veil
@@ -25,7 +25,7 @@
 	desc = "Grant your follower the ability to literally rip a hole in this reality, allowing things to pass through."
 	category = DEITY_TREE_DARK_MINION
 	requirements = list(DEITY_TREE_DARK_MINION = 1)
-	base_cost = 100
+	base_cost = 80
 	boon_path = /spell/tear_veil
 
 /datum/deity_item/phenomena/hellscape
@@ -33,5 +33,5 @@
 	desc = "You show a non-believer what their future will be like."
 	category = DEITY_TREE_DARK_MINION
 	requirements = list(DEITY_TREE_DARK_MINION = 1)
-	base_cost = 110
+	base_cost = 40
 	phenomena_path = /datum/phenomena/hellscape

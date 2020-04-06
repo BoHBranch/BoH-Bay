@@ -29,10 +29,8 @@
 	var/icon/open_icon
 	var/icon/closed_emagged_icon
 	var/icon/closed_emagged_welded_icon
-	var/icon/closed_locked_icon
-	var/icon/closed_locked_welded_icon
-	var/icon/closed_unlocked_icon
-	var/icon/closed_unlocked_welded_icon
+	var/icon/closed_icon
+	var/icon/closed_welded_icon
 
 	// Create open icon.
 	var/icon/new_icon = new
@@ -56,25 +54,14 @@
 			var/icon/this_decal_icon = icon(decal_icon, thing)
 			this_decal_icon.Blend(decals[thing], BLEND_ADD)
 			closed_emagged_icon.Blend(this_decal_icon, ICON_OVERLAY)
-	closed_locked_icon =   icon(closed_emagged_icon)
-	closed_unlocked_icon = icon(closed_emagged_icon)
+	closed_icon =   icon(closed_emagged_icon)
 
-	// Add lock lights.
-	if(can_lock)
-		var/icon/light = icon(base_icon, "light")
-		light.Blend(COLOR_RED, BLEND_ADD)
-		closed_locked_icon.Blend(light, ICON_OVERLAY)
-		light = icon(base_icon, "light")
-		light.Blend(COLOR_LIME, BLEND_ADD)
-		closed_unlocked_icon.Blend(light, ICON_OVERLAY)
 
 	// Add welded states.
 	var/icon/welded = icon(base_icon, "welded")
-	closed_locked_welded_icon =   icon(closed_locked_icon)
-	closed_unlocked_welded_icon = icon(closed_unlocked_icon)
+	closed_welded_icon =   icon(closed_icon)
 	closed_emagged_welded_icon =  icon(closed_emagged_icon)
-	closed_locked_welded_icon.Blend(welded, ICON_OVERLAY)
-	closed_unlocked_welded_icon.Blend(welded, ICON_OVERLAY)
+	closed_welded_icon.Blend(welded, ICON_OVERLAY)
 	closed_emagged_welded_icon.Blend(welded, ICON_OVERLAY)
 
 	// Finish up emagged icons.
@@ -86,10 +73,9 @@
 	new_icon.Insert(open_icon,                   "open")
 	new_icon.Insert(closed_emagged_icon,         "closed_emagged")
 	new_icon.Insert(closed_emagged_welded_icon,  "closed_emagged_welded")
-	new_icon.Insert(closed_locked_icon,          "closed_locked")
-	new_icon.Insert(closed_locked_welded_icon,   "closed_locked_welded")
-	new_icon.Insert(closed_unlocked_icon,        "closed_unlocked")
-	new_icon.Insert(closed_unlocked_welded_icon, "closed_unlocked_welded")
+	new_icon.Insert(closed_icon,          "closed")
+	new_icon.Insert(closed_welded_icon,   "closed_welded")
+
 
 	// Set icon!
 	icon = new_icon

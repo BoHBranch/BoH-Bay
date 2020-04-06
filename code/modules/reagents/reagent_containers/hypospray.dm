@@ -124,16 +124,13 @@
 	origin_tech = list(TECH_MATERIAL = 2, TECH_BIO = 2)
 	slot_flags = SLOT_BELT | SLOT_EARS
 	w_class = ITEM_SIZE_TINY
-	var/list/starts_with = list(/datum/reagent/inaprovaline = 5)
 	var/band_color = COLOR_CYAN
 	var/time = 1 SECONDS // takes less time than a normal syringe
+	reagents_to_add = list(/datum/reagent/inaprovaline = 5)
 
-/obj/item/weapon/reagent_containers/hypospray/autoinjector/New()
-	..()
-	for(var/T in starts_with)
-		reagents.add_reagent(T, starts_with[T])
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/Initialize()
+	. = ..()
 	update_icon()
-	return
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/attack(mob/M as mob, mob/user as mob)
 	if(user != M && !M.incapacitated())
@@ -164,36 +161,36 @@
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/detox
 	name = "autoinjector (antitox)"
 	band_color = COLOR_GREEN
-	starts_with = list(/datum/reagent/dylovene = 5)
+	reagents_to_add = list(/datum/reagent/dylovene = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pain
 	name = "autoinjector (painkiller)"
 	band_color = COLOR_PURPLE
-	starts_with = list(/datum/reagent/tramadol = 5)
+	reagents_to_add = list(/datum/reagent/tramadol = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/combatpain
 	name = "autoinjector (oxycodone)"
 	band_color = COLOR_DARK_GRAY
-	starts_with = list(/datum/reagent/tramadol/oxycodone = 5)
+	reagents_to_add = list(/datum/reagent/tramadol/oxycodone = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/antirad
 	name = "autoinjector (anti-rad)"
 	band_color = COLOR_AMBER
-	starts_with = list(/datum/reagent/hyronalin = 5)
+	reagents_to_add = list(/datum/reagent/hyronalin = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/mindbreaker
 	name = "autoinjector"
 	band_color = COLOR_DARK_GRAY
-	starts_with = list(/datum/reagent/mindbreaker = 5)
+	reagents_to_add = list(/datum/reagent/mindbreaker = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/empty
 	name = "autoinjector"
 	band_color = COLOR_WHITE
-	starts_with = list()
+	reagents_to_add = list()
 	matter = list(MATERIAL_PLASTIC = 150, MATERIAL_GLASS = 50)
 
 //boh
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/stim
 	name = "autoinjector (stims)"
 	band_color = COLOR_DARK_GRAY
-	starts_with = list(/datum/reagent/tramadol/oxycodone = 10,/datum/reagent/inaprovaline = 5)
+	reagents_to_add = list(/datum/reagent/tramadol/oxycodone = 10,/datum/reagent/inaprovaline = 5)

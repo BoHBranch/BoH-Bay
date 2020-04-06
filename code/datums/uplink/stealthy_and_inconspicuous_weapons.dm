@@ -39,15 +39,8 @@
 	item_cost = 10
 	path = /obj/item/weapon/storage/box/syndie_kit/syringegun
 
-/datum/uplink_item/item/stealthy_weapons/hfc
-	name = "Vial of HFC"
+/datum/uplink_item/item/stealthy_weapons/hfp
+	name = "Vial of Heptafluoropropane"
 	desc = "One of the most dangerous chemicals you could think of, easily vialed up. Be extra careful not to drink it!"
-	item_cost = 84
-	path = /obj/item/weapon/reagent_containers/glass/beaker/vial/hfc
-
-/datum/uplink_item/item/stealthy_weapons/zombie
-	name = "Vial of Black Tar"
-	desc = "Supposedly, ingesting this would cause someone to become a little less alive, though still alive. How does it make sense? \
-	Well, it doesn't. That's the fun of it!"
-	item_cost = 220 //Needs two traitors collaborating, and even then, it burns a lot of your TCs. Zombies are overdone, mmkay?
-	path = /obj/item/weapon/reagent_containers/glass/beaker/vial/zombie
+	item_cost = 64
+	path = /obj/item/weapon/reagent_containers/glass/beaker/vial/hfp

@@ -32,14 +32,14 @@
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	dir = 4;
 	frequency = 1380;
-	id_tag = "escape_pod_11";
+	id_tag = "escape_pod_6";
 	name = "escape pod six controller";
 	pixel_x = -32;
 	pixel_y = 0;
-	tag_door = "escape_pod_11_hatch"
+	tag_door = "escape_pod6_hatch"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "ad" = (
 /obj/random/obstruction,
 /obj/machinery/door/firedoor,
@@ -2422,7 +2422,7 @@
 	icon_state = "map"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "eC" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -2801,7 +2801,7 @@
 "fn" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "fo" = (
 /obj/machinery/cryopod/robot{
 	dir = 4
@@ -3094,7 +3094,7 @@
 /area/space)
 "fU" = (
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "fV" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -3538,14 +3538,14 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
 	frequency = 1380;
-	id_tag = "escape_pod_11_pump"
+	id_tag = "escape_pod6_pump"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "gH" = (
 /obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "gI" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -3555,11 +3555,11 @@
 	},
 /obj/structure/closet/crate/freezer/rations,
 /turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "gJ" = (
 /obj/machinery/atmospherics/unary/tank/air,
 /turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "gK" = (
 /obj/structure/shuttle/engine/heater{
 	icon_state = "heater";
@@ -3569,13 +3569,13 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "gL" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 4
 	},
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "gM" = (
 /obj/random/junk,
 /turf/simulated/floor/plating,
@@ -3940,10 +3940,10 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
 	frequency = 1380;
-	id_tag = "escape_pod_10_pump"
+	id_tag = "escape_pod5_pump"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "hx" = (
 /obj/structure/closet/secure_closet/engineering_electrical,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -3966,7 +3966,7 @@
 /area/engineering/engine_room)
 "hz" = (
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "hA" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -3975,14 +3975,14 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "hB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9;
 	icon_state = "intact"
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "hC" = (
 /obj/structure/table/rack,
 /obj/random/tech_supply,
@@ -4270,21 +4270,9 @@
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/table/rack/shelf,
-/obj/item/clothing/suit/straight_jacket,
-/obj/item/clothing/suit/straight_jacket,
-/obj/item/clothing/suit/straight_jacket,
-/obj/item/clothing/suit/straight_jacket,
-/obj/item/clothing/suit/straight_jacket,
-/obj/item/clothing/suit/straight_jacket,
 /obj/item/clothing/mask/muzzle,
 /obj/item/clothing/mask/muzzle,
 /obj/item/clothing/mask/muzzle,
-/obj/item/clothing/mask/muzzle,
-/obj/item/clothing/mask/muzzle,
-/obj/item/clothing/mask/muzzle,
-/obj/item/clothing/glasses/blindfold,
-/obj/item/clothing/glasses/blindfold,
-/obj/item/clothing/glasses/blindfold,
 /obj/item/clothing/glasses/blindfold,
 /obj/item/clothing/glasses/blindfold,
 /obj/item/clothing/glasses/blindfold,
@@ -4492,10 +4480,10 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
 	frequency = 1380;
-	id_tag = "escape_pod_11_pump"
+	id_tag = "escape_pod6_pump"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "ip" = (
 /obj/machinery/status_display{
 	pixel_y = -32
@@ -4506,7 +4494,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "iq" = (
 /obj/structure/bed/chair/shuttle{
 	tag = "icon-shuttle_chair_preview (NORTH)";
@@ -4516,10 +4504,10 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
 	frequency = 1380;
-	id_tag = "escape_pod_11_pump"
+	id_tag = "escape_pod6_pump"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "ir" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -4530,7 +4518,7 @@
 	},
 /obj/random/firstaid,
 /turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "is" = (
 /obj/machinery/sleeper{
 	dir = 1
@@ -4543,7 +4531,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "it" = (
 /obj/machinery/portable_atmospherics/powered/pump/filled,
 /turf/simulated/floor/plating,
@@ -5002,12 +4990,12 @@
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	icon_state = "closed";
-	id_tag = "escape_pod_11_hatch";
+	id_tag = "escape_pod6_hatch";
 	locked = 1;
 	name = "Escape Pod Six Hatch"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "jl" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/visible/black{
@@ -5267,7 +5255,7 @@
 /obj/machinery/door/airlock/external/escapepod{
 	frequency = 1380;
 	icon_state = "closed";
-	id_tag = "escape_pod_11_berth_hatch";
+	id_tag = "escape_pod6_berth_hatch";
 	locked = 1;
 	name = "Escape Pod Six"
 	},
@@ -5688,11 +5676,11 @@
 	},
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
 	frequency = 1380;
-	id_tag = "escape_pod_11_berth";
+	id_tag = "escape_pod_6_berth";
 	name = "escape pod six berth controller";
 	pixel_x = -24;
 	pixel_y = 24;
-	tag_door = "escape_pod_11_berth_hatch"
+	tag_door = "escape_pod6_berth_hatch"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/hallway/primary/seconddeck/fore)
@@ -6161,6 +6149,10 @@
 	icon_state = "tube1";
 	dir = 4
 	},
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
 /turf/simulated/open,
 /area/hallway/primary/seconddeck/center)
 "lr" = (
@@ -6592,6 +6584,10 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /obj/structure/railing/mapped,
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
 /turf/simulated/open,
 /area/hallway/primary/seconddeck/center)
 "ml" = (
@@ -6729,6 +6725,9 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/machinery/camera/network/engineering{
+	c_tag = "Engineering - Locker Room 2"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/locker_room)
@@ -7688,14 +7687,14 @@
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	dir = 4;
 	frequency = 1380;
-	id_tag = "escape_pod_10";
+	id_tag = "escape_pod_5";
 	name = "escape pod five controller";
 	pixel_x = -32;
 	pixel_y = 0;
-	tag_door = "escape_pod_10_hatch"
+	tag_door = "escape_pod5_hatch"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "om" = (
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -10608,11 +10607,6 @@
 /area/engineering/locker_room)
 "tt" = (
 /obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8";
@@ -10936,6 +10930,10 @@
 	icon_state = "warningcorner";
 	dir = 8
 	},
+/obj/machinery/camera/network/engineering{
+	c_tag = "Engineering - Shield Bay Starboard";
+	dir = 2
+	},
 /turf/simulated/floor/plating,
 /area/engineering/shieldbay)
 "tY" = (
@@ -10989,11 +10987,11 @@
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
 	dir = 1;
 	frequency = 1380;
-	id_tag = "escape_pod_10_berth";
+	id_tag = "escape_pod_5_berth";
 	name = "escape pod five berth controller";
 	pixel_x = -24;
 	pixel_y = -24;
-	tag_door = "escape_pod_10_berth_hatch"
+	tag_door = "escape_pod5_berth_hatch"
 	},
 /obj/machinery/firealarm{
 	pixel_y = 21
@@ -11056,9 +11054,12 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/foyer)
 "uj" = (
-/obj/structure/catwalk,
-/obj/machinery/power/breakerbox{
-	RCon_tag = "Shield Generator Bay Bypass"
+/obj/machinery/power/smes/buildable/preset/torch/hangar{
+	RCon_tag = "Substation - Shields"
+	},
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
 /area/engineering/shieldbay)
@@ -11081,12 +11082,9 @@
 /turf/simulated/floor/plating,
 /area/engineering/shieldbay)
 "um" = (
-/obj/machinery/power/smes/buildable/preset/torch/hangar{
-	RCon_tag = "Substation - Shields"
-	},
-/obj/structure/cable/cyan{
-	d2 = 2;
-	icon_state = "0-2"
+/obj/structure/catwalk,
+/obj/machinery/power/breakerbox{
+	RCon_tag = "Shield Generator Bay Bypass"
 	},
 /turf/simulated/floor/plating,
 /area/engineering/shieldbay)
@@ -11122,11 +11120,6 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
 	},
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
@@ -11296,7 +11289,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/engineering/shieldbay)
+/area/maintenance/seconddeck/foreport)
 "uG" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -11329,7 +11322,7 @@
 "uL" = (
 /obj/machinery/shield_diffuser,
 /obj/machinery/door/airlock/external/escapepod{
-	id_tag = "escape_pod_10_berth_hatch";
+	id_tag = "escape_pod5_berth_hatch";
 	locked = 1;
 	name = "Escape Pod Five"
 	},
@@ -11611,17 +11604,17 @@
 /area/engineering/engine_room)
 "vt" = (
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "vv" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	icon_state = "closed";
-	id_tag = "escape_pod_10_hatch";
+	id_tag = "escape_pod5_hatch";
 	locked = 1;
 	name = "Escape Pod Five Hatch"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "vz" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -11781,29 +11774,29 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
 	frequency = 1380;
-	id_tag = "escape_pod_10_pump"
+	id_tag = "escape_pod5_pump"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "wj" = (
 /obj/machinery/status_display{
 	pixel_y = 32
 	},
 /obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "wk" = (
 /obj/structure/bed/chair/shuttle,
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
 	frequency = 1380;
-	id_tag = "escape_pod_10_pump"
+	id_tag = "escape_pod5_pump"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "wl" = (
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "wm" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -11816,7 +11809,7 @@
 	},
 /obj/random/firstaid,
 /turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "wn" = (
 /obj/machinery/sleeper,
 /obj/machinery/vending/wallmed1{
@@ -11825,7 +11818,7 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "wo" = (
 /obj/structure/shuttle/engine/heater{
 	icon_state = "heater";
@@ -11835,13 +11828,13 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "wp" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 4
 	},
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "wv" = (
 /obj/structure/table/rack,
 /obj/random/maintenance/solgov,
@@ -12016,7 +12009,7 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "xf" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -12025,14 +12018,14 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "xg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 10;
 	icon_state = "intact"
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "xj" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -12184,10 +12177,10 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
 	frequency = 1380;
-	id_tag = "escape_pod_10_pump"
+	id_tag = "escape_pod5_pump"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "xX" = (
 /obj/structure/bed/chair/shuttle{
 	tag = "icon-shuttle_chair_preview (NORTH)";
@@ -12195,7 +12188,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "xY" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -12203,13 +12196,13 @@
 /obj/machinery/light/small,
 /obj/structure/closet/crate/freezer/rations,
 /turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "xZ" = (
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "yf" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/incinerator)
@@ -12721,9 +12714,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
-"zO" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/engineering/atmos/storage)
 "zP" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -17169,10 +17159,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "Og" = (
-/obj/effect/shuttle_landmark/escape_pod/start/pod11,
+/obj/effect/shuttle_landmark/escape_pod/start/pod6,
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "Oh" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -17330,7 +17320,7 @@
 "OO" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "OQ" = (
 /obj/structure/table/rack{
 	dir = 8
@@ -17589,7 +17579,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "Pr" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/railing/mapped,
@@ -17696,6 +17686,10 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/maintenance/seconddeck/forestarboard)
+"PR" = (
+/obj/structure/sign/warning/secure_area,
+/turf/simulated/wall/r_wall/prepainted,
+/area/maintenance/seconddeck/foreport)
 "PV" = (
 /obj/effect/floor_decal/techfloor{
 	icon_state = "techfloor_edges";
@@ -17889,6 +17883,14 @@
 "Qw" = (
 /turf/simulated/wall/ocp_wall,
 /area/engineering/wastetank)
+"Qx" = (
+/obj/structure/catwalk,
+/obj/machinery/camera/network/engineering{
+	c_tag = "Engineering - Shield Bay Port";
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/engineering/shieldbay)
 "QA" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -18229,7 +18231,7 @@
 	icon_state = "map"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "RR" = (
 /obj/structure/closet/secure_closet/engineering_torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -18406,7 +18408,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "Sr" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
@@ -18892,7 +18894,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "UA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -19320,10 +19322,10 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
 "Wl" = (
-/obj/effect/shuttle_landmark/escape_pod/start/pod10,
+/obj/effect/shuttle_landmark/escape_pod/start/pod5,
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod10/station)
+/area/shuttle/escape_pod5/station)
 "Wn" = (
 /obj/machinery/atmospherics/omni/filter{
 	tag_east = 5;
@@ -19367,7 +19369,7 @@
 /obj/machinery/vending/engineering,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/camera/network/engineering{
-	c_tag = "Engineering - Locker Room"
+	c_tag = "Engineering - Locker Room 1"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
@@ -19387,10 +19389,10 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
 	frequency = 1380;
-	id_tag = "escape_pod_11_pump"
+	id_tag = "escape_pod6_pump"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/shuttle/escape_pod11/station)
+/area/shuttle/escape_pod6/station)
 "WF" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -36352,10 +36354,10 @@ oW
 SX
 va
 va
-TJ
+lr
 uF
-no
-TJ
+PR
+lr
 wx
 nc
 yl
@@ -36557,12 +36559,12 @@ va
 nV
 uG
 Xz
-TJ
-zO
-zO
-zO
-zO
-zO
+lr
+lr
+lr
+lr
+lr
+lr
 AF
 Bk
 BQ
@@ -37363,12 +37365,12 @@ mm
 va
 sL
 rP
-um
+uj
 uo
 tr
 tN
 tY
-ob
+Qx
 ob
 TJ
 AH
@@ -37565,7 +37567,7 @@ va
 va
 QR
 tt
-uj
+um
 up
 tF
 ob
