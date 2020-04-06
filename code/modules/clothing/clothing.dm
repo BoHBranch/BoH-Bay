@@ -62,7 +62,7 @@
 	var/actual_name = name
 	var/datum/extension/labels/L = get_extension(src, /datum/extension/labels)
 	if(L)
-		actual_name = L.GetOriginalName(user, label_text)
+		actual_name = L.GetOriginalName()
 	. = "material from \a [actual_name]"
 	var/list/acc = list()
 	for(var/obj/item/clothing/accessory/A in accessories)
