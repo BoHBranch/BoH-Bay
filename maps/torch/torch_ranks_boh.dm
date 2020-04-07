@@ -86,7 +86,6 @@
  		/datum/species/shapeshifter/promethean	= list(UNRESTRICTED, SEMIRESTRICTED),
 		//datum/species/tesh/		= list(UNRESTRICTED),
 		/datum/species/vox			= list(/datum/mil_branch/alien),
-		/datum/species/vox/pariah	= list(/datum/mil_branch/civilian),
 		/datum/species/vox/armalis	= list(/datum/mil_branch/alien)
 	)
 
