@@ -3,11 +3,6 @@ Code:
   - ~code/**/*
   - modular_mithra/code/**/*
   
-💬Code Review Required:
-  - code/**/*
-  - ~code/**/*
-  - modular_mithra/code/**/*
-  
 Icon:
   - icons/**/*
   - modular_mithra/icons/**/*
@@ -41,4 +36,3 @@ Interface:
 Github:
   - .git/**/*
   - .github/**/*
-  
