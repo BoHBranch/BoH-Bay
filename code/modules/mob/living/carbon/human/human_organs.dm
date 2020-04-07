@@ -196,7 +196,7 @@
 					to_chat(src, SPAN_WARNING("You lose your balance as [affected.name] [pick("malfunctions", "freezes","shudders")]!"))
 			else
 				return
-	Weaken(4)
+	Weaken(2)
 
 /mob/living/carbon/human/proc/grasp_damage_disarm(var/obj/item/organ/external/affected)
 	var/disarm_slot
