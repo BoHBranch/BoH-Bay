@@ -27,7 +27,7 @@
 	var/base_icon
 	var/base_name
 	var/unwielded_force_divisor = 0.25
-	var/wielded_parry_bonus = 15
+	var/wielded_parry_bonus = 5
 
 /obj/item/weapon/material/twohanded/update_twohanding()
 	var/mob/living/M = loc
