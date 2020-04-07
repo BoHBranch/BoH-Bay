@@ -212,7 +212,7 @@
 
 /obj/item/clothing/mask/rubber/admiral
 	name = "Admiral Diwali mask"
-	desc = "Admiral that led the infamous last stand at Helios against the Independent Navy in the Gaia conflict. For bridge officers who wish they'd achieve a fraction of that."
+	desc = "Admiral that led the infamous last stand at Helios against the Independent Navy in the Aigaion conflict. For bridge officers who wish they'd achieve a fraction of that."
 	icon_state = "admiral"
 	visible_name = "Admiral Diwali"
 

@@ -2519,6 +2519,64 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
+"eS" = (
+/obj/machinery/door/airlock/mining{
+	name = "Deck Officer"
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/quartermaster/deckchief)
+"eT" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/weapon/paper_bin{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/random/clipboard,
+/obj/item/weapon/stamp/deckoff{
+	name = "deck officer's rubber stamp"
+	},
+/obj/item/weapon/pen{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/weapon/pen/red{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "do_office";
+	name = "DO Shutter Control";
+	pixel_x = 6;
+	pixel_y = 24
+	},
+/obj/effect/floor_decal/corner/brown/mono,
+/obj/item/device/radio/intercom/department/security{
+	dir = 8;
+	pixel_x = 21
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/quartermaster/deckchief)
+"eU" = (
+/obj/machinery/door/airlock/mining{
+	name = "Deck Officer"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/quartermaster/deckchief)
 "eV" = (
 /obj/random/obstruction,
 /obj/structure/cable{
@@ -11508,14 +11566,6 @@
 "KW" = (
 /turf/simulated/floor/tiled/dark,
 /area/command/captainmess)
-"KZ" = (
-/obj/machinery/door/airlock/mining{
-	name = "Deck Chief"
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel_ridged,
-/area/quartermaster/deckchief)
 "La" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14304,40 +14354,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/quartermaster/office)
-"ST" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/obj/item/weapon/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/obj/random/clipboard,
-/obj/item/weapon/stamp/deckoff,
-/obj/item/weapon/pen{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/weapon/pen/red{
-	pixel_x = 2;
-	pixel_y = 6
-	},
-/obj/machinery/button/blast_door{
-	id_tag = "do_office";
-	name = "DO Shutter Control";
-	pixel_x = 6;
-	pixel_y = 24
-	},
-/obj/effect/floor_decal/corner/brown/mono,
-/obj/item/device/radio/intercom/department/security{
-	dir = 8;
-	pixel_x = 21
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/quartermaster/deckchief)
 "SU" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -15723,20 +15739,6 @@
 /obj/item/weapon/storage/box/glasses/wine,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/captainmess)
-"WW" = (
-/obj/machinery/door/airlock/mining{
-	name = "Deck Chief"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel_ridged,
-/area/quartermaster/deckchief)
 "WX" = (
 /obj/effect/floor_decal/corner/green/mono,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -39337,7 +39339,7 @@ XF
 TH
 tc
 KG
-KZ
+eS
 io
 TO
 SK
@@ -39544,7 +39546,7 @@ qf
 PT
 Pj
 ZQ
-WW
+eU
 XX
 Eq
 Fd
@@ -40146,7 +40148,7 @@ TH
 MI
 ql
 vK
-ST
+eT
 aQ
 Sy
 XN

@@ -27,6 +27,12 @@
 	atom_holder.name = "[atom_holder.name] ([label])"
 	GLOB.name_set_event.raise_event(src, old_name, atom_holder.name)
 
+/datum/extension/labels/proc/GetOriginalName()
+	if(!LAZYLEN(labels))
+		return atom_holder.name
+	var/index = findtextEx(atom_holder.name, " (")
+	return copytext(atom_holder.name, index)
+
 /datum/extension/labels/proc/RemoveLabel(var/mob/user, var/label)
 	if(!(label in labels))
 		return

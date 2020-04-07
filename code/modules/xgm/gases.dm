@@ -3,6 +3,7 @@
 	name = "Oxygen"
 	specific_heat = 20	// J/(mol*K)
 	molar_mass = 0.032	// kg/mol
+	liquid_density = 1.141 // g/cm^3
 	flags = XGM_GAS_OXIDIZER | XGM_GAS_FUSION_FUEL
 	breathed_product = /datum/reagent/oxygen
 	symbol_html = "O<sub>2</sub>"
@@ -14,6 +15,7 @@
 	name = "Nitrogen"
 	specific_heat = 20	// J/(mol*K)
 	molar_mass = 0.028	// kg/mol
+	liquid_density = 0.8085 // g/cm^3
 	symbol_html = "N<sub>2</sub>"
 	symbol = "N2"
 
@@ -22,6 +24,7 @@
 	name = "Carbon Dioxide"
 	specific_heat = 30	// J/(mol*K)
 	molar_mass = 0.044	// kg/mol
+	liquid_density = 1.101 // g/cm^3
 	symbol_html = "CO<sub>2</sub>"
 	symbol = "CO2"
 
@@ -30,6 +33,7 @@
 	name = "Methyl Bromide"
 	specific_heat = 42.59 // J/(mol*K)
 	molar_mass = 0.095	  // kg/mol
+	liquid_density = 1.7 // g/cm^3
 	breathed_product = /datum/reagent/toxin/methyl_bromide
 	symbol_html = "CH<sub>3</sub>Br"
 	symbol = "CH3Br"
@@ -46,6 +50,8 @@
 	//Using multiplicity rule, it's atomic number is 162
 	//and following a N/Z ratio of 1.5, the molar mass of a monatomic gas is:
 	molar_mass = 0.405	// kg/mol
+	
+	liquid_density = 1.101 // g/cm^3 // same as CO2, but it never condenses anyway
 
 	tile_color = "#ff9940"
 	overlay_limit = 0.7
@@ -59,6 +65,7 @@
 	name = "Nitrous Oxide"
 	specific_heat = 40	// J/(mol*K)
 	molar_mass = 0.044	// kg/mol. N2O
+	liquid_density = 1.220 // g/cm^3
 
 	tile_overlay = "sleeping_agent"
 	overlay_limit = 1
@@ -72,6 +79,7 @@
 	name = "Methane"
 	specific_heat = 30	// J/(mol*K)
 	molar_mass = 0.016	// kg/mol
+	liquid_density = 0.42 // g/cm^3
 	flags = XGM_GAS_FUEL
 	symbol_html = "CH<sub>4</sub>"
 	symbol = "CH4"
@@ -88,6 +96,7 @@
 	name = "Compound #[num]"
 	specific_heat = rand(1, 400)	// J/(mol*K)
 	molar_mass = rand(20,800)/1000	// kg/mol
+	liquid_density = rand(600,1400)/1000 // g/cm^3 // .6 to 1.4
 	if(prob(40))
 		flags |= XGM_GAS_FUEL
 	else if(prob(40)) //it's prooobably a bad idea for gas being oxidizer to itself.
@@ -108,6 +117,7 @@
 	name = "Hydrogen"
 	specific_heat = 100	// J/(mol*K)
 	molar_mass = 0.002	// kg/mol
+	liquid_density = 0.07 // g/cm^3
 	flags = XGM_GAS_FUEL|XGM_GAS_FUSION_FUEL
 	burn_product = GAS_STEAM
 	symbol_html = "H<sub>2</sub>"
@@ -116,12 +126,15 @@
 /decl/xgm_gas/hydrogen/deuterium
 	id = GAS_DEUTERIUM
 	name = "Deuterium"
+	specific_heat = 101.16 // J/(mol*K)
+	molar_mass = 0.004 // kg/mol
 	symbol_html = "D"
 	symbol = "D"
 
 /decl/xgm_gas/hydrogen/tritium
 	id = GAS_TRITIUM
 	name = "Tritium"
+	specific_heat = 102.32 // J/(mol*K) // literally a best guess
 	symbol_html = "T"
 	symbol = "T"
 
@@ -130,6 +143,7 @@
 	name = "Helium"
 	specific_heat = 80	// J/(mol*K)
 	molar_mass = 0.004	// kg/mol
+	liquid_density = 1.25 // g/cm^3
 	flags = XGM_GAS_FUSION_FUEL
 	breathed_product = /datum/reagent/helium
 	symbol_html = "He"
@@ -140,6 +154,7 @@
 	name = "Argon"
 	specific_heat = 10	// J/(mol*K)
 	molar_mass = 0.018	// kg/mol
+	liquid_density = 1.3954 // g/cm^3
 	symbol_html = "Ar"
 	symbol = "Ar"
 
@@ -149,6 +164,7 @@
 	name = "Krypton"
 	specific_heat = 5	// J/(mol*K)
 	molar_mass = 0.036	// kg/mol
+	liquid_density = 2.413 // g/cm^3
 	symbol_html = "Kr"
 	symbol = "Kr"
 
@@ -157,6 +173,7 @@
 	name = "Neon"
 	specific_heat = 20	// J/(mol*K)
 	molar_mass = 0.01	// kg/mol
+	liquid_density = 1.207 // g/cm^3
 	symbol_html = "Ne"
 	symbol = "Ne"
 
@@ -165,6 +182,7 @@
 	name = "Xenon"
 	specific_heat = 3	// J/(mol*K)
 	molar_mass = 0.054	// kg/mol
+	liquid_density = 2.942 // g/cm^3
 	breathed_product = /datum/reagent/nitrous_oxide/xenon
 	symbol_html = "Xe"
 	symbol = "Xe"
@@ -175,6 +193,7 @@
 	tile_color = "#ca6409"
 	specific_heat = 37	// J/(mol*K)
 	molar_mass = 0.054	// kg/mol
+	liquid_density = 1.45 // g/cm^3
 	flags = XGM_GAS_OXIDIZER
 	breathed_product = /datum/reagent/toxin
 	symbol_html = "NO<sub>2</sub>"
@@ -186,6 +205,7 @@
 
 	specific_heat = 10	// J/(mol*K)
 	molar_mass = 0.030	// kg/mol
+	liquid_density = 1.27 // g/cm^3
 	flags = XGM_GAS_OXIDIZER
 	symbol_html = "NO"
 	symbol = "NO"
@@ -197,6 +217,7 @@
 	overlay_limit = 0.5
 	specific_heat = 5	// J/(mol*K)
 	molar_mass = 0.017	// kg/mol
+	liquid_density = 1.5625 // g/cm^3
 	flags = XGM_GAS_CONTAMINANT
 	breathed_product = /datum/reagent/toxin/chlorine
 	symbol_html = "Cl"
@@ -209,6 +230,7 @@
 	overlay_limit = 0.5
 	specific_heat = 30	// J/(mol*K)
 	molar_mass = 0.020	// kg/mol
+	liquid_density = 1 // g/cm^3
 	breathed_product =     /datum/reagent/water
 	condensation_product = /datum/reagent/water
 	condensation_point =   308.15 // 35C. Dew point is ~20C but this is better for gameplay considerations.
@@ -221,6 +243,7 @@
 
 	specific_heat = 30	// J/(mol*K)
 	molar_mass = 0.044	// kg/mol
+	liquid_density = 2.6288 // g/cm^3
 	symbol_html = "SO<sub>2</sub>"
 	symbol = "SO2"
 
@@ -230,6 +253,7 @@
 
 	specific_heat = 20	// J/(mol*K)
 	molar_mass = 0.017	// kg/mol
+	liquid_density = 0.681 // g/cm^3
 	breathed_product = /datum/reagent/ammonia
 	symbol_html = "NH<sub>3</sub>"
 	symbol = "NH3"
@@ -239,6 +263,7 @@
 	name = "Carbon Monoxide"
 	specific_heat = 30	// J/(mol*K)
 	molar_mass = 0.028	// kg/mol
+	liquid_density = 0.789 // g/cm^3
 	breathed_product = /datum/reagent/carbon_monoxide
 	symbol_html = "CO"
 	symbol = "CO"
