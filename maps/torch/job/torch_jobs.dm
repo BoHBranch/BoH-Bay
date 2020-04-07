@@ -92,5 +92,13 @@
 	)
 	required_language = LANGUAGE_HUMAN_EURO
 
+	/* pow_cat is rank equivalent based, max_pow_cat is for non-professional (manual labor) contractor jobs.
+	   A contractor having a higher Galilei/Geneva Convention Article 3 equivelent rank then then an enlisted person for similar work is expected behavior.
+	   Source material is DOD Instruction 1000.01 */
+	max_pow_cat = 5
+
+
+
+
 /datum/map/torch
 	default_assistant_title = "Passenger"

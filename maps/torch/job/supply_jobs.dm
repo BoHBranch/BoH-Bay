@@ -58,6 +58,7 @@
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/civ/contractor
 	)
+	max_pow_cat = 1
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_FINANCE     = SKILL_BASIC,
 	                    SKILL_HAULING     = SKILL_BASIC)
