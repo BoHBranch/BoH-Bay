@@ -122,7 +122,6 @@
 /datum/gear/storage/brown_drop_pouches
 
 /datum/gear/storage/black_drop_pouches
-	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/officer, /datum/job/merchant, /datum/job/grunt, /datum/job/combat_tech, /datum/job/squad_lead)
 
 /datum/gear/storage/white_drop_pouches
 
