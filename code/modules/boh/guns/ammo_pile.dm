@@ -25,7 +25,8 @@
 	to_chat(user, SPAN_NOTICE("It has the following shells in it:"))
 	var/list/bullet_text = list()
 	for(var/obj/item/ammo_casing/C in ammo)
-		to_chat(user, SPAN_NOTICE("\icon[src] [C.name]"))
+		bullet_text += "\icon[src] [C.name]"
+	to_chat(user, SPAN_NOTICE(english_list(bullet_text)))
 
 /obj/item/weapon/ammo_pile/afterattack(atom/A, mob/living/user)
 	if(istype(A, ammo_type))
