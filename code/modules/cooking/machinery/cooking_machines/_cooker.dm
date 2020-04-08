@@ -103,7 +103,7 @@
 	overlays += light
 
 /obj/machinery/appliance/cooker/Process()
-	if (stat || use_power == 1)
+	if ((stat && (temperature >= min_temp)) || use_power == 1)
 		QUEUE_TEMPERATURE_ATOMS(src) // cool every tick if we're not turned on or heating
 	if(!stat)
 		heat_up()
@@ -142,8 +142,8 @@
 	QUEUE_TEMPERATURE_ATOMS(src)
 
 /obj/machinery/appliance/cooker/ProcessAtomTemperature()
-	if(set_temp > temperature)
-		. = ..()
+	if(set_temp < temperature || (stat && temperature >= T20C))
+		. = ..() // cool it!
 	if( ( !(stat & POWEROFF) && !(stat & NOPOWER) ) || (temperature >= T20C)  ) // must be powered and turned on, or hot, to keep processing
 		update_cooking_power() // update!
 		if(!LAZYLEN(cooking_objs))
