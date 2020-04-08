@@ -10,7 +10,6 @@
 	w_class = ITEM_SIZE_SMALL
 	matter = list(MATERIAL_ALUMINIUM = 50)
 	attack_verb = list("bludgeoned", "whacked", "disciplined", "thrashed")
-	base_parry_chance = 30
 
 /obj/item/weapon/cane/concealed
 	var/concealed_blade

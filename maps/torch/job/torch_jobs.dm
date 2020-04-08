@@ -3,7 +3,6 @@
 		/datum/species/nabber = list(/datum/job/ai, /datum/job/cyborg, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/chemist,
 									 /datum/job/roboticist, /datum/job/cargo_tech, /datum/job/chef, /datum/job/engineer, /datum/job/doctor, /datum/job/bartender),
 		/datum/species/vox/ = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant),
-		/datum/species/vox/pariah = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/cargo_tech),
 		/datum/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant)
 	)
 
@@ -92,6 +91,14 @@
 		/datum/mil_rank/civ/civ
 	)
 	required_language = LANGUAGE_HUMAN_EURO
+
+	/* pow_cat is rank equivalent based, max_pow_cat is for non-professional (manual labor) contractor jobs.
+	   A contractor having a higher Galilei/Geneva Convention Article 3 equivelent rank then then an enlisted person for similar work is expected behavior.
+	   Source material is DOD Instruction 1000.01 */
+	max_pow_cat = 5
+
+
+
 
 /datum/map/torch
 	default_assistant_title = "Passenger"

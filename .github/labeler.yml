@@ -3,11 +3,6 @@ Code:
   - ~code/**/*
   - modular_mithra/code/**/*
   
-Code Review Required:
-  - code/**/*
-  - ~code/**/*
-  - modular_mithra/code/**/*
-  
 Icon:
   - icons/**/*
   - modular_mithra/icons/**/*
@@ -27,7 +22,7 @@ Interface:
   - nano/**/
   - vueui/**/*
 
-DO NOT MERGE:
+❌DO NOT MERGE:
   - data/**/*
   - settings/**/*
   - config/**/*
@@ -41,4 +36,3 @@ DO NOT MERGE:
 Github:
   - .git/**/*
   - .github/**/*
-  

@@ -1,5 +1,4 @@
 /datum/gear/eyes/eyepatch
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/eyes/fashionglasses
 	allowed_branches = CASUAL_BRANCHES

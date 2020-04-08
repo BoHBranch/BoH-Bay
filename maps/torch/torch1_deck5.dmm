@@ -9445,7 +9445,7 @@
 /area/guppy_hangar/start)
 "qc" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/portable_atmospherics/canister/hfc,
+/obj/machinery/portable_atmospherics/canister/hfp,
 /obj/structure/window/phoronreinforced{
 	dir = 4
 	},
@@ -11966,11 +11966,11 @@
 "uJ" = (
 /obj/structure/closet/crate/uranium,
 /obj/item/device/geiger,
-/obj/item/weapon/reagent_containers/glass/beaker/vial/hfc,
-/obj/item/weapon/reagent_containers/glass/beaker/vial/hfc,
-/obj/item/weapon/reagent_containers/glass/beaker/vial/hfc,
-/obj/item/weapon/reagent_containers/glass/beaker/vial/hfc,
-/obj/item/weapon/reagent_containers/glass/beaker/vial/hfc,
+/obj/item/weapon/reagent_containers/glass/beaker/vial/hfp,
+/obj/item/weapon/reagent_containers/glass/beaker/vial/hfp,
+/obj/item/weapon/reagent_containers/glass/beaker/vial/hfp,
+/obj/item/weapon/reagent_containers/glass/beaker/vial/hfp,
+/obj/item/weapon/reagent_containers/glass/beaker/vial/hfp,
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24;
