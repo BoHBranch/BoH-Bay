@@ -15,7 +15,7 @@
 	name = "beanbag shotgun"
 	id = "bbshot"
 	req_tech = list(TECH_MATERIAL = 1, TECH_COMBAT = 1)
-	materials = list(MATERIAL_STEEL = 10000, MATERIAL_PLASTIC = 6000, MATERIAL_ALUMINIUM = 4000)
+	materials = list(MATERIAL_STEEL = 8000, MATERIAL_PLASTIC = 300, MATERIAL_ALUMINIUM = 1000)
 	build_path = /obj/item/weapon/gun/projectile/shotgun/pump/beanbag
 	sort_string = "TBDAB"
 
@@ -23,7 +23,7 @@
 	name = "electrolaser carbine"
 	id = "electcarbine"
 	req_tech = list(TECH_MATERIAL = 1, TECH_COMBAT = 1)
-	materials = list(MATERIAL_STEEL = 10000, MATERIAL_PLASTIC = 6000, MATERIAL_ALUMINIUM = 4000, MATERIAL_GLASS = 6000)
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_PLASTIC = 1000, MATERIAL_ALUMINIUM = 2000, MATERIAL_GLASS = 3000)
 	build_path = /obj/item/weapon/gun/energy/taser/carbine
 	sort_string = "TDDAB"
 
@@ -31,7 +31,7 @@
 	name = "smartgun"
 	id = "smrtgun"
 	req_tech = list(TECH_MATERIAL = 1, TECH_COMBAT = 1)
-	materials = list(MATERIAL_STEEL = 6000, MATERIAL_PLASTIC = 8000, MATERIAL_ALUMINIUM = 4000)
+	materials = list(MATERIAL_STEEL = 6000, MATERIAL_PLASTIC = 1000, MATERIAL_ALUMINIUM = 3000)
 	build_path = /obj/item/weapon/gun/energy/gun/secure
 	sort_string = "TEDAB"
 
@@ -55,8 +55,8 @@
 	name = "temperature gun"
 	desc = "A gun that shoots high-powered glass-encased energy temperature bullets."
 	id = "temp_gun"
-	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 4, TECH_POWER = 3, TECH_MAGNET = 2)
-	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 500, MATERIAL_SILVER = 3000)
+	req_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1, TECH_POWER = 1, TECH_MAGNET = 1)
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 500)
 	build_path = /obj/item/weapon/gun/energy/temperature
 	sort_string = "TAAAC"
 
@@ -121,7 +121,7 @@
 	desc = "The lasing medium of this prototype is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core."
 	id = "lasercannon"
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
-	materials = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 1000, MATERIAL_DIAMOND = 2000)
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 1000, MATERIAL_OSMIUM = 5000)
 	build_path = /obj/item/weapon/gun/energy/lasercannon
 	sort_string = "TAEAB"
 
@@ -145,7 +145,7 @@
 	name = "grenade launcher"
 	id = "grenadelauncher"
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
-	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 1000)
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 1000, MATERIAL_OSMIUM = 5000)
 	build_path = /obj/item/weapon/gun/launcher/grenade
 	sort_string = "TAGAA"
 
@@ -174,18 +174,18 @@
 	sort_string = "TAJAB"
 
 /datum/design/item/weapon/wt550
-	name = "9mm submachine gun"
+	name = "WT550 submachine gun"
 	id = "wt550"
-	req_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
-	materials = list(MATERIAL_STEEL = 8000, MATERIAL_SILVER = 3000, MATERIAL_DIAMOND = 1500)
+	req_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1)
+	materials = list(MATERIAL_STEEL = 8000, MATERIAL_PLASTIC = 500, MATERIAL_ALUMINUM = 1500)
 	build_path = /obj/item/weapon/gun/projectile/automatic/sec_smg
 	sort_string = "TAPAA"
 
 /datum/design/item/weapon/smg
-	name = "submachin gun"
+	name = "submachine gun"
 	id = "smg"
 	req_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 4)
-	materials = list(MATERIAL_STEEL = 8000, MATERIAL_SILVER = 2000, MATERIAL_DIAMOND = 2000)
+	materials = list(MATERIAL_STEEL = 8000, MATERIAL_PLASTIC = 500, MATERIAL_ALUMINUM = 2000)
 	build_path = /obj/item/weapon/gun/projectile/automatic
 	sort_string = "TAPAB"
 
@@ -193,9 +193,25 @@
 	name = "bullpup rifle"
 	id = "bullpup"
 	req_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 3)
-	materials = list(MATERIAL_STEEL = 10000, MATERIAL_SILVER = 5000, MATERIAL_DIAMOND = 3000)
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_PLASTIC = 5000, MATERIAL_OSMIUM = 5000)
 	build_path = /obj/item/weapon/gun/projectile/automatic/bullpup_rifle
 	sort_string = "TAPAC"
+
+/datum/design/item/weapon/combatshotgun
+	name = "combat shotgun"
+	id = "combatshotgun"
+	req_tech = list(TECH_MATERIAL = 1, TECH_COMBAT = 1)
+	materials = list(MATERIAL_STEEL = 15000, MATERIAL_PLASTIC = 5000, MATERIAL_ALUMINUM = 10000, MATERIAL_OSMIUM = 10000)
+	build_path = /obj/item/weapon/gun/projectile/shotgun/pump/combat
+	sort_string = "TAPAD"
+
+/datum/design/item/weapon/lasercarbinerifle
+	name = "laser carbine"
+	id = "lasercarbinerifle"
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_PLASTIC = 500, MATERIAL_ALUMINUM = 5000, MATERIAL_GLASS = 1500)
+	req_tech = req_tech = list(TECH_MATERIAL = 1, TECH_COMBAT = 1)
+	build_path = /obj/item/weapon/gun/energy/laser/secure
+	sort_string = "TAPAE"
 
 /datum/design/item/weapon/ammunition/AssembleDesignName()
 	..()
