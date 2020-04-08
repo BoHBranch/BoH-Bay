@@ -25,7 +25,7 @@
 			var/list/reactant_values = list()
 			for(var/reactant_id in reaction.required_reagents)
 				var/datum/reagent/reactant = reactant_id
-				reactant_values += "[reaction.required_reagents[reactant_id]]u <l>[lowertext(initial(reactant.name))]</l>"
+				reactant_values += "[reaction.required_reagents[reactant_id]]u <span codexlink='[lowertext(initial(reactant.name))] (chemical)'>[lowertext(initial(reactant.name))]</span>"
 
 			if(!reactant_values.len)
 				continue
@@ -33,7 +33,7 @@
 			var/list/catalysts = list()
 			for(var/catalyst_id in reaction.catalysts)
 				var/datum/reagent/catalyst = catalyst_id
-				catalysts += "[reaction.catalysts[catalyst_id]]u <l>[lowertext(initial(catalyst.name))]</l>"
+				catalysts += "[reaction.catalysts[catalyst_id]]u <span codexlink='[lowertext(initial(catalyst.name))] (chemical)'>[lowertext(initial(catalyst.name))]</span>"
 
 			var/datum/reagent/result = reaction.result
 			if(catalysts.len)

@@ -25,29 +25,16 @@
 	center_of_mass = "x=16;y=16"
 	w_class = ITEM_SIZE_SMALL
 	
+	var/has_products = FALSE
 	var/list/attack_products //Items you can craft together. Like bomb making, but with food and less screwdrivers.
 	// Uses format list(ingredient = result_type). The ingredient can be a typepath or a kitchen_tag string (used for mobs or plants)
-	var/static/recipe_cache = list()
 	var/static/products_cache = list()
-	var/static/mtext_cache = list()
 // Used to make subtypes work properly
 /obj/item/weapon/reagent_containers/food/snacks/Initialize()
 	. = ..()
-	if(!(type in recipe_cache))
-		if(!LAZYLEN(attack_products))
-			return
-		var/mechanics_text = "With this, you can make:<ul>"
-		for(var/ingredient in attack_products)
-			var/ingredient_name = ingredient
-			if(ispath(ingredient))
-				var/obj/item/I = ingredient
-				ingredient_name = initial(I.name)
-			var/atom/result = attack_products[ingredient]
-			mechanics_text += "<li>\a [initial(result.name)] using \a [ingredient_name]</li>"
-		mechanics_text += "</ul>"
-		mtext_cache[type] = mechanics_text
-	
 	if(!(type in products_cache))
+		if(!has_products || !LAZYLEN(attack_products))
+			return
 		var/list/new_attack_products = attack_products.Copy()
 		for(var/ancestor_type in attack_products)
 			if(!ispath(ancestor_type))
@@ -60,9 +47,6 @@
 		products_cache[type] = new_attack_products
 	else
 		attack_products = products_cache[type]
-
-/obj/item/weapon/reagent_containers/food/snacks/get_mechanics_info()
-	return (type in mtext_cache) ? mtext_cache[type] : null
 
 	//Placeholder for effect that trigger on eating that aren't tied to reagents.
 /obj/item/weapon/reagent_containers/food/snacks/proc/On_Consume(var/mob/M)
@@ -775,6 +759,7 @@
 	center_of_mass = "x=16;y=11"
 	bitesize = 2
 	reagents_to_add = list(/datum/reagent/nutriment/protein = 6)
+	has_products = TRUE
 	attack_products = list(/obj/item/weapon/reagent_containers/food/snacks/cheesewedge = /obj/item/weapon/reagent_containers/food/snacks/cheeseburger)
 
 /obj/item/weapon/reagent_containers/food/snacks/cheeseburger
@@ -795,6 +780,7 @@
 	reagent_data = list(/datum/reagent/nutriment = list("bun" = 2))
 	reagents_to_add = list(/datum/reagent/nutriment = 3, /datum/reagent/nutriment/protein = 4)
 	bitesize = 2
+	has_products = TRUE
 	attack_products = list(
 		/obj/item/weapon/reagent_containers/food/snacks/cheesewedge = /obj/item/weapon/reagent_containers/food/snacks/cheeseburger,
 		/obj/item/weapon/reagent_containers/food/snacks/bacon = /obj/item/weapon/reagent_containers/food/snacks/baconburger
@@ -1663,6 +1649,7 @@
 	reagent_data = list(/datum/reagent/nutriment = list("noodles" = 2))
 	reagents_to_add = list(/datum/reagent/nutriment = 2)
 	bitesize = 2
+	has_products = TRUE
 	attack_products = list(
 		/obj/item/weapon/reagent_containers/food/snacks/meatball = /obj/item/weapon/reagent_containers/food/snacks/meatballspagetti,
 		"tomato" = /obj/item/weapon/reagent_containers/food/snacks/pastatomato
@@ -1740,6 +1727,7 @@
 	reagent_data = list(/datum/reagent/nutriment = list("noodles" = 4))
 	reagents_to_add = list(/datum/reagent/nutriment = 4, /datum/reagent/nutriment/protein = 4)
 	bitesize = 2
+	has_products = TRUE
 	attack_products = list(/obj/item/weapon/reagent_containers/food/snacks/meatball = /obj/item/weapon/reagent_containers/food/snacks/spesslaw)
 
 /obj/item/weapon/reagent_containers/food/snacks/spesslaw
@@ -2784,6 +2772,7 @@
 	center_of_mass = "x=16;y=12"
 	reagent_data = list(/datum/reagent/nutriment = list("bun" = 4))
 	reagents_to_add = list(/datum/reagent/nutriment = 4)
+	has_products = TRUE
 	attack_products = list(
 		/obj/item/weapon/reagent_containers/food/snacks/cutlet = /obj/item/weapon/reagent_containers/food/snacks/hamburger,
 		/obj/item/weapon/reagent_containers/food/snacks/meatball = /obj/item/weapon/reagent_containers/food/snacks/hamburger,
