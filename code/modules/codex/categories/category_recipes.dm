@@ -43,7 +43,9 @@
 			entry.update_links()
 			SScodex.add_entry_by_string(entry.display_name, entry)
 			items += entry.display_name
-	for(var/datum/chemical_reaction/food/reaction in subtypesof(/datum/chemical_reaction/food))
+	
+	for(var/rxn in subtypesof(/datum/chemical_reaction/food))
+		var/datum/chemical_reaction/food/reaction = rxn
 		if(reaction.hidden_from_codex || !reaction.result_type)
 			return
 		var/mechanics_text = "This recipe requires the following ingredients:<br><ul>"
@@ -53,11 +55,11 @@
 			reactant_values += "<li>[reaction.required_reagents[reactant_id]]u [lowertext(initial(reactant.name))]</li>"
 		mechanics_text += "<ul>[jointext(reactant_values, "")]</ul>"
 		var/atom/result = reaction.result_type
-		var/result_name = sanitize(initial(result.name))
 		var/datum/codex_entry/entry = new(                   \
-		 _display_name =       "[result_name] (recipe)",     \
-		 _associated_strings = list(lowertext(result_name)),
-		 _mechanics_text =     mechanics_text
+		 _display_name =		"[initial(result.name)] (recipe)",     \
+		 _associated_strings =	list(lowertext(initial(result.name))),
+		 _lore_text =			initial(result.desc),
+		 _mechanics_text =		mechanics_text
 		)
 		entry.update_links()
 		SScodex.add_entry_by_string(entry.display_name, entry)

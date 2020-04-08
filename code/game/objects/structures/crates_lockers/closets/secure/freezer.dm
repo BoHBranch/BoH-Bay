@@ -14,7 +14,6 @@
 
 /obj/structure/closet/secure_closet/freezer/meat
 	name = "meat fridge"
-	closet_appearance = /decl/closet_appearance/secure_closet/fridge
 
 /obj/structure/closet/secure_closet/freezer/meat/WillContain()
 	return list(
@@ -24,7 +23,6 @@
 
 /obj/structure/closet/secure_closet/freezer/fridge
 	name = "refrigerator"
-	closet_appearance = /decl/closet_appearance/secure_closet/fridge
 
 /obj/structure/closet/secure_closet/freezer/fridge/WillContain()
 	return list(
@@ -35,7 +33,6 @@
 
 /obj/structure/closet/secure_closet/freezer/money
 	name = "secure locker"
-	closet_appearance = /decl/closet_appearance/secure_closet/fridge
 	req_access = list(access_heads_vault)
 
 /obj/structure/closet/secure_closet/freezer/money/Initialize()
