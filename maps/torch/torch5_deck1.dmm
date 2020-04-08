@@ -43,9 +43,26 @@
 /turf/simulated/floor/plating,
 /area/security/wing)
 "aae" = (
-/obj/machinery/porta_turret/exterior/dagon,
-/turf/simulated/floor/airless,
-/area/security/detectives_office)
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/weapon/storage/box/handcuffs{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/weapon/storage/box/handcuffs,
+/obj/structure/table/rack/shelf/steel,
+/obj/structure/window/reinforced{
+	health = 1e+007
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	health = 1e+006
+	},
+/obj/item/weapon/storage/box/zipties,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/storage)
 "aaf" = (
 /obj/structure/stairs/north,
 /obj/structure/railing/mapped{
@@ -292,6 +309,9 @@
 	dir = 4;
 	pixel_x = -21
 	},
+/obj/structure/table/glass,
+/obj/item/stack/material/glass/ten,
+/obj/item/stack/material/steel/ten,
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "aay" = (
@@ -347,13 +367,13 @@
 /area/medical/equipstorage)
 "aaD" = (
 /obj/structure/table/glass,
-/obj/item/weapon/storage/firstaid/fire,
-/obj/random/medical,
-/obj/effect/floor_decal/corner/paleblue/three_quarters{
-	dir = 8
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 6
 	},
+/obj/item/weapon/hand_labeler,
+/obj/item/stack/package_wrap/twenty_five,
 /turf/simulated/floor/tiled/white,
-/area/medical/equipstorage)
+/area/medical/locker)
 "aaE" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -513,14 +533,12 @@
 /area/medical/equipstorage)
 "aaS" = (
 /obj/structure/table/glass,
-/obj/item/weapon/storage/box/syringes{
-	pixel_x = 4;
-	pixel_y = 4
+/obj/item/weapon/storage/firstaid/fire,
+/obj/random/medical,
+/obj/effect/floor_decal/corner/paleblue/three_quarters{
+	dir = 8
 	},
-/obj/item/weapon/storage/box/syringes,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
+/obj/item/weapon/storage/firstaid/toxin,
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "aaT" = (
@@ -1404,7 +1422,7 @@
 /area/maintenance/firstdeck/forestarboard)
 "act" = (
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod12/station)
+/area/shuttle/escape_pod7/station)
 "acu" = (
 /obj/machinery/button/blast_door{
 	id_tag = "d1starboardnacelle";
@@ -1429,7 +1447,7 @@
 /area/thruster/d1starboard)
 "acw" = (
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod13/station)
+/area/shuttle/escape_pod8/station)
 "acx" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
 	frequency = 1447;
@@ -1447,7 +1465,7 @@
 /area/assembly/chargebay)
 "acz" = (
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod14/station)
+/area/shuttle/escape_pod9/station)
 "acA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -2774,45 +2792,45 @@
 "aeS" = (
 /obj/structure/shuttle/engine/propulsion,
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod12/station)
+/area/shuttle/escape_pod7/station)
 "aeT" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	icon_state = "closed";
-	id_tag = "escape_pod_12_hatch";
+	id_tag = "escape_pod7_hatch";
 	locked = 1;
 	name = "Escape Pod Seven Hatch"
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod12/station)
+/area/shuttle/escape_pod7/station)
 "aeU" = (
 /obj/structure/shuttle/engine/propulsion,
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod13/station)
+/area/shuttle/escape_pod8/station)
 "aeV" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	icon_state = "closed";
-	id_tag = "escape_pod_13_hatch";
+	id_tag = "escape_pod8_hatch";
 	locked = 1;
 	name = "Escape Pod Eight Hatch"
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod13/station)
+/area/shuttle/escape_pod8/station)
 "aeW" = (
 /obj/structure/shuttle/engine/propulsion,
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod14/station)
+/area/shuttle/escape_pod9/station)
 "aeX" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	icon_state = "closed";
-	id_tag = "escape_pod_14_hatch";
+	id_tag = "escape_pod9_hatch";
 	locked = 1;
 	name = "Escape Pod Nine Hatch"
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod14/station)
+/area/shuttle/escape_pod9/station)
 "aeY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -3097,7 +3115,7 @@
 "afB" = (
 /obj/machinery/porta_turret/exterior/dagon,
 /turf/simulated/floor/airless,
-/area/security/locker)
+/area/maintenance/firstdeck/foreport)
 "afC" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 8
@@ -3108,8 +3126,12 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
 "afD" = (
-/turf/simulated/wall/r_wall/hull,
-/area/space)
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/machinery/fabricator,
+/turf/simulated/floor/tiled/white,
+/area/medical/equipstorage)
 "afE" = (
 /obj/machinery/hologram/holopad,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3314,16 +3336,16 @@
 "afV" = (
 /obj/machinery/door/airlock/external/escapepod{
 	icon_state = "closed";
-	id_tag = "escape_pod_12_berth_hatch";
+	id_tag = "escape_pod7_berth_hatch";
 	name = "Escape Pod Seven"
 	},
 /obj/machinery/shield_diffuser,
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralstarboard)
+/area/maintenance/firstdeck/forestarboard)
 "afW" = (
 /obj/machinery/door/airlock/external/escapepod{
 	icon_state = "closed";
-	id_tag = "escape_pod_13_berth_hatch";
+	id_tag = "escape_pod8_berth_hatch";
 	name = "Escape Pod Eight"
 	},
 /obj/machinery/shield_diffuser,
@@ -3332,7 +3354,7 @@
 "afX" = (
 /obj/machinery/door/airlock/external/escapepod{
 	icon_state = "closed";
-	id_tag = "escape_pod_14_berth_hatch";
+	id_tag = "escape_pod9_berth_hatch";
 	name = "Escape Pod Nine"
 	},
 /obj/machinery/shield_diffuser,
@@ -3472,25 +3494,18 @@
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "agf" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/weapon/storage/box/handcuffs{
-	pixel_x = 3;
-	pixel_y = 3
+/obj/structure/table/glass,
+/obj/item/weapon/storage/box/syringes{
+	pixel_x = 4;
+	pixel_y = 4
 	},
-/obj/item/weapon/storage/box/handcuffs,
-/obj/structure/table/rack/shelf/steel,
-/obj/structure/window/reinforced{
-	health = 1e+007
+/obj/item/weapon/storage/box/syringes,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
 	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/security/storage)
+/obj/random/medical,
+/turf/simulated/floor/tiled/white,
+/area/medical/equipstorage)
 "agg" = (
 /obj/effect/wallframe_spawn/reinforced/polarized/no_grille/regular{
 	id = "surgery_windows"
@@ -3956,11 +3971,11 @@
 	},
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
 	frequency = 1380;
-	id_tag = "escape_pod_12_berth";
+	id_tag = "escape_pod_7_berth";
 	name = "escape pod seven berth controller";
 	pixel_x = -24;
 	pixel_y = 24;
-	tag_door = "escape_pod_12_berth_hatch"
+	tag_door = "escape_pod7_berth_hatch"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
@@ -3992,11 +4007,11 @@
 	},
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
 	frequency = 1380;
-	id_tag = "escape_pod_13_berth";
+	id_tag = "escape_pod_8_berth";
 	name = "escape pod eight berth controller";
 	pixel_x = -24;
 	pixel_y = 24;
-	tag_door = "escape_pod_13_berth_hatch"
+	tag_door = "escape_pod8_berth_hatch"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
@@ -4015,11 +4030,11 @@
 	},
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
 	frequency = 1380;
-	id_tag = "escape_pod_14_berth";
+	id_tag = "escape_pod_9_berth";
 	name = "escape pod nine berth controller";
 	pixel_x = -24;
 	pixel_y = 24;
-	tag_door = "escape_pod_14_berth_hatch"
+	tag_door = "escape_pod9_berth_hatch"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
@@ -4179,7 +4194,7 @@
 /obj/effect/floor_decal/corner/red/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/locker)
 "ahp" = (
 /obj/effect/floor_decal/corner/red/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -4746,6 +4761,10 @@
 /obj/item/device/radio/intercom/department/medbay{
 	dir = 8;
 	pixel_x = 21
+	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Locker Room Hallway 1";
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -5837,7 +5856,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod12/station)
+/area/shuttle/escape_pod7/station)
 "akc" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -5850,12 +5869,18 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
 "akd" = (
-/obj/structure/table/glass,
 /obj/effect/floor_decal/corner/paleblue{
-	dir = 6
+	dir = 10
 	},
+/obj/structure/table/glass,
+/obj/item/weapon/storage/pill_bottle/kelotane,
+/obj/item/weapon/storage/pill_bottle/spaceacillin,
+/obj/item/weapon/storage/pill_bottle/tramadol,
+/obj/item/weapon/storage/pill_bottle/dermaline,
+/obj/item/weapon/storage/pill_bottle/dexalin_plus,
+/obj/item/weapon/storage/pill_bottle/bicaridine,
 /turf/simulated/floor/tiled/white,
-/area/medical/locker)
+/area/medical/equipstorage)
 "ake" = (
 /obj/machinery/power/breakerbox/activated{
 	RCon_tag = "First Deck Substation Bypass"
@@ -5967,15 +5992,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
-"akk" = (
-/obj/structure/table/glass,
-/obj/item/weapon/storage/firstaid/toxin,
-/obj/random/medical,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/equipstorage)
 "akl" = (
 /obj/structure/cable{
 	d2 = 2;
@@ -6037,6 +6053,10 @@
 "akr" = (
 /obj/structure/noticeboard{
 	pixel_y = 32
+	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Locker Room Hallway 2";
+	dir = 2
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -6385,15 +6405,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
-"akU" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/structure/table/glass,
-/obj/item/stack/package_wrap/twenty_five,
-/obj/item/weapon/hand_labeler,
-/turf/simulated/floor/tiled/white,
-/area/medical/equipstorage)
 "akV" = (
 /obj/machinery/camera/network/first_deck{
 	c_tag = "First Deck Fore Hallway - Starboard Maintenence";
@@ -6766,7 +6777,6 @@
 	icon_state = "1-4"
 	},
 /obj/structure/catwalk,
-/obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable/green{
@@ -6828,7 +6838,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/catwalk,
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
@@ -7545,7 +7554,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod13/station)
+/area/shuttle/escape_pod8/station)
 "anc" = (
 /obj/machinery/biogenerator,
 /obj/machinery/light,
@@ -7749,7 +7758,7 @@
 /area/command/armoury/tactical)
 "anu" = (
 /obj/structure/closet/crate{
-	name = "Hydrophonics Supplies"
+	name = "Hydroponics Supplies"
 	},
 /obj/item/weapon/reagent_containers/glass/bucket,
 /obj/item/weapon/reagent_containers/glass/bucket,
@@ -8417,7 +8426,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralport)
+/area/command/gunnery/ammo)
 "aoD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -8437,7 +8446,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralport)
+/area/command/gunnery/ammo)
 "aoE" = (
 /obj/machinery/pointdefense{
 	initial_id_tag = "dagon_primary_pd"
@@ -8450,7 +8459,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
-/area/space)
+/area/command/gunnery/ammo)
 "aoF" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -8506,7 +8515,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
-/area/space)
+/area/command/gunnery/ammo)
 "aoM" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -8564,7 +8573,7 @@
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/plating,
-/area/space)
+/area/command/gunnery/ammo)
 "aoS" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -8572,7 +8581,7 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/plating,
-/area/space)
+/area/command/gunnery/ammo)
 "aoT" = (
 /obj/machinery/door/airlock/medical{
 	id_tag = "MedbaySA";
@@ -10439,7 +10448,6 @@
 /area/security/wing)
 "arY" = (
 /obj/structure/catwalk,
-/obj/structure/catwalk,
 /obj/item/weapon/stool/padded,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
@@ -10943,14 +10951,13 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/foreport)
 "asQ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/security/wing)
+/area/security/armoury)
 "asR" = (
 /obj/effect/floor_decal/corner/research/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -10968,16 +10975,11 @@
 /obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftport)
-"asU" = (
-/obj/structure/catwalk,
-/obj/item/weapon/stool/padded,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/foreport)
 "asV" = (
 /obj/structure/catwalk,
 /obj/structure/closet/crate/freezer/meat,
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralport)
+/area/maintenance/firstdeck/foreport)
 "asW" = (
 /obj/structure/catwalk,
 /obj/structure/table/gamblingtable,
@@ -10992,7 +10994,7 @@
 /obj/random/illegal,
 /obj/random/illegal,
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralport)
+/area/maintenance/firstdeck/foreport)
 "asY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -13960,7 +13962,7 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralport)
+/area/maintenance/firstdeck/foreport)
 "aIG" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
@@ -14099,21 +14101,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/foreport)
-"aJL" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -14281,7 +14268,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod14/station)
+/area/shuttle/escape_pod9/station)
 "aMB" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/closet/crate/medical,
@@ -14521,7 +14508,7 @@
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralport)
+/area/maintenance/firstdeck/foreport)
 "aPb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -14606,7 +14593,7 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralport)
+/area/maintenance/firstdeck/foreport)
 "aPK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -14626,7 +14613,7 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralport)
+/area/maintenance/firstdeck/foreport)
 "aPL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -14643,15 +14630,15 @@
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
 	dir = 1;
 	frequency = 1380;
-	id_tag = "escape_pod_15_berth";
+	id_tag = "escape_pod_10_berth";
 	name = "escape pod ten berth controller";
 	pixel_x = 24;
 	pixel_y = -24;
-	tag_door = "escape_pod_15_berth_hatch"
+	tag_door = "escape_pod10_berth_hatch"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralport)
+/area/maintenance/firstdeck/foreport)
 "aPM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -14672,7 +14659,7 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralport)
+/area/maintenance/firstdeck/foreport)
 "aPO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -14723,11 +14710,11 @@
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
 	dir = 1;
 	frequency = 1380;
-	id_tag = "escape_pod_17_berth";
-	name = "escape pod twelve berth controller";
+	id_tag = "escape_pod_11_berth";
+	name = "escape pod eleven berth controller";
 	pixel_x = 24;
 	pixel_y = -24;
-	tag_door = "escape_pod_17_berth_hatch"
+	tag_door = "escape_pod11_berth_hatch"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -14891,21 +14878,21 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralport)
+/area/maintenance/firstdeck/foreport)
 "aQI" = (
 /obj/machinery/door/airlock/external/escapepod{
 	icon_state = "closed";
-	id_tag = "escape_pod_15_berth_hatch";
+	id_tag = "escape_pod10_berth_hatch";
 	name = "Escape Pod Ten"
 	},
 /obj/machinery/shield_diffuser,
 /turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralport)
+/area/maintenance/firstdeck/foreport)
 "aQK" = (
 /obj/machinery/door/airlock/external/escapepod{
 	icon_state = "closed";
-	id_tag = "escape_pod_17_berth_hatch";
-	name = "Escape Pod Twelve"
+	id_tag = "escape_pod11_berth_hatch";
+	name = "Escape Pod Eleven"
 	},
 /obj/machinery/shield_diffuser,
 /turf/simulated/floor/plating,
@@ -15023,33 +15010,33 @@
 	dir = 1
 	},
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod15/station)
+/area/shuttle/escape_pod10/station)
 "aRC" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	icon_state = "closed";
-	id_tag = "escape_pod_15_hatch";
+	id_tag = "escape_pod10_hatch";
 	locked = 1;
 	name = "Escape Pod Ten Hatch"
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod15/station)
+/area/shuttle/escape_pod10/station)
 "aRF" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 1
 	},
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod17/station)
+/area/shuttle/escape_pod11/station)
 "aRG" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
 	icon_state = "closed";
-	id_tag = "escape_pod_17_hatch";
+	id_tag = "escape_pod11_hatch";
 	locked = 1;
-	name = "Escape Pod Twelve Hatch"
+	name = "Escape Pod Eleven Hatch"
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod17/station)
+/area/shuttle/escape_pod11/station)
 "aRH" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -15232,10 +15219,10 @@
 /area/thruster/d1port)
 "aSx" = (
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod15/station)
+/area/shuttle/escape_pod10/station)
 "aSB" = (
 /turf/simulated/wall/r_titanium,
-/area/shuttle/escape_pod17/station)
+/area/shuttle/escape_pod11/station)
 "aSD" = (
 /obj/machinery/power/apc{
 	name = "south bump";
@@ -17080,7 +17067,7 @@
 "bHb" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/reinforced/airless,
-/area/shuttle/escape_pod12/station)
+/area/shuttle/escape_pod7/station)
 "bHp" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -17121,11 +17108,11 @@
 "bIb" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/reinforced/airless,
-/area/shuttle/escape_pod13/station)
+/area/shuttle/escape_pod8/station)
 "bJb" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/reinforced/airless,
-/area/shuttle/escape_pod14/station)
+/area/shuttle/escape_pod9/station)
 "bLb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -17168,8 +17155,9 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/effect/shuttle_landmark/escape_pod/start/pod7,
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod12/station)
+/area/shuttle/escape_pod7/station)
 "bNt" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -17200,8 +17188,9 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/effect/shuttle_landmark/escape_pod/start/pod8,
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod13/station)
+/area/shuttle/escape_pod8/station)
 "bOr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -17235,8 +17224,9 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/effect/shuttle_landmark/escape_pod/start/pod9,
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod14/station)
+/area/shuttle/escape_pod9/station)
 "bQb" = (
 /obj/item/device/radio/intercom{
 	dir = 8;
@@ -17245,17 +17235,17 @@
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	dir = 4;
 	frequency = 1380;
-	id_tag = "escape_pod_12";
+	id_tag = "escape_pod_7";
 	name = "escape pod seven controller";
 	pixel_x = -24;
-	tag_door = "escape_pod_12_hatch"
+	tag_door = "escape_pod7_hatch"
 	},
 /obj/structure/bed/chair/shuttle{
 	dir = 1;
 	tag = "icon-shuttle_chair_preview (NORTH)"
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod12/station)
+/area/shuttle/escape_pod7/station)
 "bRb" = (
 /obj/item/device/radio/intercom{
 	dir = 8;
@@ -17264,17 +17254,17 @@
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	dir = 4;
 	frequency = 1380;
-	id_tag = "escape_pod_13";
+	id_tag = "escape_pod_8";
 	name = "escape pod eight controller";
 	pixel_x = -24;
-	tag_door = "escape_pod_13_hatch"
+	tag_door = "escape_pod8_hatch"
 	},
 /obj/structure/bed/chair/shuttle{
 	dir = 1;
 	tag = "icon-shuttle_chair_preview (NORTH)"
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod13/station)
+/area/shuttle/escape_pod8/station)
 "bSb" = (
 /obj/item/device/radio/intercom{
 	dir = 8;
@@ -17283,17 +17273,17 @@
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	dir = 4;
 	frequency = 1380;
-	id_tag = "escape_pod_14";
+	id_tag = "escape_pod_9";
 	name = "escape pod nine controller";
 	pixel_x = -24;
-	tag_door = "escape_pod_14_hatch"
+	tag_door = "escape_pod9_hatch"
 	},
 /obj/structure/bed/chair/shuttle{
 	dir = 1;
 	tag = "icon-shuttle_chair_preview (NORTH)"
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod14/station)
+/area/shuttle/escape_pod9/station)
 "bTb" = (
 /obj/item/device/radio/intercom{
 	dir = 4;
@@ -17305,14 +17295,14 @@
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	dir = 8;
 	frequency = 1380;
-	id_tag = "escape_pod_15";
+	id_tag = "escape_pod_10";
 	name = "escape pod ten controller";
 	pixel_x = 24;
-	tag_door = "escape_pod_15_hatch"
+	tag_door = "escape_pod10_hatch"
 	},
 /obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod15/station)
+/area/shuttle/escape_pod10/station)
 "bUe" = (
 /turf/simulated/wall/prepainted,
 /area/medical/washroom)
@@ -17349,14 +17339,14 @@
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
 	dir = 8;
 	frequency = 1380;
-	id_tag = "escape_pod_17";
-	name = "escape pod twelve controller";
+	id_tag = "escape_pod_11";
+	name = "escape pod eleven controller";
 	pixel_x = 24;
-	tag_door = "escape_pod_17_hatch"
+	tag_door = "escape_pod11_hatch"
 	},
 /obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod17/station)
+/area/shuttle/escape_pod11/station)
 "bWb" = (
 /obj/machinery/status_display{
 	pixel_x = -32
@@ -17365,8 +17355,9 @@
 	pixel_x = 32
 	},
 /obj/structure/bed/chair/shuttle,
+/obj/effect/shuttle_landmark/escape_pod/start/pod10,
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod15/station)
+/area/shuttle/escape_pod10/station)
 "bWw" = (
 /obj/machinery/power/apc{
 	dir = 4;
@@ -17400,8 +17391,9 @@
 	pixel_x = 32
 	},
 /obj/structure/bed/chair/shuttle,
+/obj/effect/shuttle_landmark/escape_pod/start/pod11,
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod17/station)
+/area/shuttle/escape_pod11/station)
 "bYj" = (
 /obj/machinery/button/blast_door{
 	id_tag = "armory_entrylock";
@@ -17429,21 +17421,21 @@
 	dir = 1
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod15/station)
+/area/shuttle/escape_pod10/station)
 "cbb" = (
 /obj/machinery/cryopod{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod17/station)
+/area/shuttle/escape_pod11/station)
 "ccb" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod15/station)
+/area/shuttle/escape_pod10/station)
 "ceb" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/plating,
-/area/shuttle/escape_pod17/station)
+/area/shuttle/escape_pod11/station)
 "cfn" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -24086,6 +24078,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
+"mbn" = (
+/obj/structure/sign/warning/pods/south,
+/turf/simulated/wall/r_wall/hull,
+/area/maintenance/firstdeck/forestarboard)
 "mbM" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -25640,6 +25636,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/item/modular_computer/telescreen/preset/medical{
 	pixel_x = 32
+	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Emergency Treatment Center Starboard 2";
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -30985,9 +30985,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
-"xCS" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/security/storage)
+"xCg" = (
+/obj/structure/sign/warning/pods/south{
+	dir = 1
+	},
+/turf/simulated/wall/r_wall/hull,
+/area/maintenance/firstdeck/foreport)
 "xEq" = (
 /obj/structure/sign/warning/pods/south,
 /turf/simulated/wall/r_wall/hull,
@@ -38482,7 +38485,7 @@ hBr
 hBr
 hBr
 hBr
-aae
+afm
 aaa
 aaa
 aaa
@@ -38687,11 +38690,11 @@ gnC
 gnC
 gnC
 gnC
-wEn
-wEn
-wEn
-wEn
-wEn
+sik
+sik
+sik
+sik
+sik
 sik
 sik
 sik
@@ -39095,7 +39098,6 @@ gvJ
 gvJ
 gvJ
 gvJ
-gvJ
 vMH
 vMH
 vMH
@@ -39103,7 +39105,8 @@ vMH
 vMH
 vMH
 vMH
-xCS
+vMH
+vMH
 wvZ
 huf
 enM
@@ -39297,7 +39300,7 @@ oDg
 ilh
 jBk
 kVi
-oDg
+hGs
 goa
 frA
 rnp
@@ -39305,7 +39308,7 @@ aho
 aho
 dZx
 daB
-aMT
+hGs
 gGO
 aga
 agd
@@ -39499,7 +39502,7 @@ oDg
 mig
 nbl
 cWR
-oDg
+hGs
 deo
 acO
 jcg
@@ -39507,10 +39510,10 @@ jcg
 jcg
 jcg
 oSD
-aMT
+hGs
 kss
 agc
-agf
+aae
 abK
 kCN
 tiQ
@@ -39701,7 +39704,7 @@ oDg
 rUO
 mBb
 iDb
-oDg
+hGs
 lVZ
 adw
 aaN
@@ -39709,7 +39712,7 @@ aaN
 aaN
 aaN
 suM
-aMT
+hGs
 ujx
 uRO
 enM
@@ -39723,7 +39726,7 @@ aPu
 aaO
 tAS
 tAS
-afD
+tAS
 aaa
 aaa
 aaa
@@ -39903,7 +39906,7 @@ oDg
 syI
 btE
 sxT
-oDg
+hGs
 saS
 njb
 agB
@@ -39911,7 +39914,7 @@ ahp
 ahp
 ahp
 aex
-aMT
+hGs
 lRa
 cxk
 acU
@@ -39925,8 +39928,8 @@ agj
 amK
 tAS
 tAS
-afD
-afD
+tAS
+tAS
 aaa
 aaa
 aaa
@@ -40105,7 +40108,7 @@ oDg
 bpA
 uDu
 sTK
-oDg
+hGs
 hGs
 nkb
 hGs
@@ -40113,7 +40116,7 @@ aCv
 aCv
 aCv
 hGs
-aMT
+hGs
 mfg
 hbP
 aMT
@@ -40128,8 +40131,8 @@ sHN
 tkr
 tkr
 tkr
-afD
-afD
+tAS
+tAS
 aaa
 aaa
 aaa
@@ -40331,7 +40334,7 @@ nJo
 arj
 arW
 tkr
-afD
+tAS
 aaa
 aaa
 aaa
@@ -40533,7 +40536,7 @@ aqV
 ark
 avI
 tkr
-afD
+tAS
 aaa
 aaa
 aaa
@@ -40735,7 +40738,7 @@ oby
 arl
 arX
 tkr
-afD
+tAS
 aaa
 aaa
 aaa
@@ -40937,8 +40940,8 @@ aNH
 aro
 atd
 tkr
-afD
-jib
+tAS
+afB
 aaa
 aaa
 aaa
@@ -41139,7 +41142,7 @@ rOE
 asY
 ate
 tkr
-afD
+tAS
 aaa
 aaa
 aaa
@@ -41341,7 +41344,7 @@ anC
 ata
 avI
 tkr
-afD
+tAS
 aaa
 aaa
 aaa
@@ -41543,7 +41546,7 @@ aNH
 arE
 jpt
 tkr
-afD
+tAS
 aaa
 aaa
 aaa
@@ -41745,7 +41748,7 @@ nJo
 arF
 arZ
 tkr
-afD
+tAS
 aaa
 aaa
 aaa
@@ -41947,7 +41950,7 @@ aqW
 arG
 jpt
 tkr
-afD
+tAS
 aaa
 aaa
 aaa
@@ -42149,7 +42152,7 @@ oby
 arI
 avI
 tkr
-afD
+tAS
 aaa
 aaa
 aaa
@@ -42351,7 +42354,7 @@ akC
 arJ
 asa
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -42553,7 +42556,7 @@ aqX
 arM
 aot
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -42755,7 +42758,7 @@ aqY
 arN
 aot
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -42957,7 +42960,7 @@ aqZ
 arO
 asb
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -43159,7 +43162,7 @@ akC
 asc
 asd
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -43361,8 +43364,8 @@ aqX
 asn
 atf
 akF
-afD
-jib
+tAS
+afB
 aaa
 aaa
 aaa
@@ -43563,7 +43566,7 @@ ara
 aso
 asf
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -43765,7 +43768,7 @@ aqZ
 asp
 atg
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -43967,7 +43970,7 @@ akC
 asr
 aot
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -44169,7 +44172,7 @@ arr
 atc
 asf
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -44371,7 +44374,7 @@ arC
 asu
 asg
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -44573,7 +44576,7 @@ arb
 arP
 arb
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -44775,7 +44778,7 @@ ard
 arQ
 ash
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -44977,7 +44980,7 @@ arg
 arR
 asi
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -45179,7 +45182,7 @@ arh
 arS
 asm
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -45381,7 +45384,7 @@ ari
 arU
 ari
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -45540,9 +45543,9 @@ aaa
 aaa
 aaa
 acd
-abP
-abP
-abP
+hBr
+hBr
+hBr
 acD
 ahO
 aeg
@@ -45583,7 +45586,7 @@ akF
 akF
 akF
 akF
-afD
+tAS
 aaa
 aaa
 aaa
@@ -45741,10 +45744,10 @@ aaa
 aaa
 aaa
 acd
-abP
-abP
-abP
-abP
+hBr
+hBr
+hBr
+hBr
 apg
 ahP
 ajd
@@ -45782,10 +45785,10 @@ arz
 amD
 amD
 amD
-afD
-afD
-afD
-afD
+tAS
+tAS
+tAS
+tAS
 aaa
 aaa
 aaa
@@ -45942,10 +45945,10 @@ aaa
 aaa
 aaa
 aaa
-abP
-abP
-abP
-abP
+hBr
+hBr
+hBr
+hBr
 afP
 agM
 ahb
@@ -45985,9 +45988,9 @@ amx
 arY
 arY
 tAS
-afD
-afD
-jib
+tAS
+tAS
+afB
 aaa
 aaa
 aaa
@@ -46144,9 +46147,9 @@ aaa
 aaa
 aaa
 afm
-abP
-abP
-abP
+hBr
+hBr
+hBr
 aeP
 afQ
 agN
@@ -46188,7 +46191,7 @@ ass
 asv
 tAS
 tAS
-afD
+tAS
 aaa
 aaa
 aaa
@@ -46346,9 +46349,9 @@ aaa
 aaa
 aaa
 hBr
-abP
-abP
-abP
+hBr
+hBr
+hBr
 aeQ
 afR
 agO
@@ -46377,7 +46380,7 @@ lte
 oGG
 ahL
 jTV
-aJL
+alG
 aIr
 aLQ
 aMX
@@ -46547,9 +46550,9 @@ aaa
 aaa
 aaa
 aaa
-abP
-abP
-abP
+hBr
+hBr
+hBr
 aea
 aeR
 afS
@@ -46579,7 +46582,7 @@ ahL
 ahL
 ahL
 jTV
-aJL
+alG
 aIr
 aLR
 aMY
@@ -46588,8 +46591,8 @@ aOO
 aPI
 alG
 amD
-asU
-asU
+arY
+arY
 tAS
 tAS
 aaa
@@ -46749,9 +46752,9 @@ aaa
 aaa
 aaa
 aaa
-abP
-abP
-abP
+hBr
+hBr
+hBr
 rKD
 acD
 afT
@@ -46951,9 +46954,9 @@ aaa
 aaa
 aaa
 aaa
-abP
-abP
-abP
+hBr
+hBr
+hBr
 aeb
 arA
 afU
@@ -46991,11 +46994,11 @@ aIr
 aOP
 aPJ
 aQG
-aJS
+aIr
 asV
 asX
-jjh
-jjh
+tAS
+tAS
 aaa
 aaa
 aaa
@@ -47153,12 +47156,12 @@ aaa
 aaa
 aaa
 aaa
-abP
-abP
-abP
-abP
-abP
-abP
+hBr
+hBr
+hBr
+hBr
+hBr
+hBr
 agQ
 ahV
 ajh
@@ -47192,12 +47195,12 @@ alC
 alC
 alC
 aIB
-oAx
-jjh
-jjh
-jjh
-jjh
-jjh
+xCg
+tAS
+tAS
+tAS
+tAS
+tAS
 aaa
 aaa
 aaa
@@ -47360,7 +47363,7 @@ act
 act
 act
 aeS
-abP
+hBr
 agR
 tGe
 acD
@@ -47394,7 +47397,7 @@ alC
 alC
 alC
 aPK
-jjh
+tAS
 aRB
 aSx
 aSx
@@ -47764,7 +47767,7 @@ act
 act
 act
 aeS
-abP
+hBr
 agT
 ahX
 aji
@@ -47798,7 +47801,7 @@ alH
 alC
 alC
 aPM
-jjh
+tAS
 aRB
 aSx
 aSx
@@ -47961,12 +47964,12 @@ aaa
 aaa
 aaa
 aaa
-abP
-abP
-abP
-abP
-abP
-xEq
+hBr
+hBr
+hBr
+hBr
+hBr
+mbn
 rhO
 ahY
 aji
@@ -48000,12 +48003,12 @@ aoy
 alC
 alC
 aoC
-jjh
-jjh
-jjh
-jjh
-jjh
-jjh
+alC
+alC
+alC
+alC
+alC
+alC
 aoE
 aaa
 aaa
@@ -48168,7 +48171,7 @@ acw
 acw
 acw
 aeU
-abP
+hBr
 agV
 bjI
 aji
@@ -48808,12 +48811,12 @@ aoA
 alC
 alC
 aoD
-jjh
-jjh
-jjh
-jjh
-jjh
-jjh
+alC
+alC
+alC
+alC
+alC
+alC
 aoL
 aaa
 aaa
@@ -50579,7 +50582,7 @@ fSy
 adA
 adA
 aan
-aaD
+aaS
 ajx
 akx
 aan
@@ -50781,9 +50784,9 @@ fSy
 adA
 aan
 aan
-akk
+afD
 ajy
-aaS
+agf
 aan
 aan
 aaa
@@ -51189,7 +51192,7 @@ aaH
 ajA
 aaU
 akO
-akU
+akd
 aan
 aaa
 abP
@@ -51393,7 +51396,7 @@ atb
 akP
 alb
 aan
-aaa
+abP
 abP
 abP
 abP
@@ -51441,7 +51444,7 @@ aSY
 jjh
 jjh
 jjh
-aaa
+aUp
 sRV
 aUJ
 aUW
@@ -52807,7 +52810,7 @@ akH
 akS
 acN
 aaM
-aaa
+abP
 mpy
 mpy
 acI
@@ -52855,7 +52858,7 @@ aTe
 aFM
 bDK
 bDK
-aaa
+aUp
 sRV
 aUQ
 aUW
@@ -53204,7 +53207,7 @@ aaa
 dDC
 aaM
 aaM
-akd
+aaD
 cVb
 aku
 aky

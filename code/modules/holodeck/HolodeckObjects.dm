@@ -148,12 +148,6 @@
 	dir = 5
 	icon_state = "window_full"
 
-/obj/structure/window/holowindow/full/Destroy()
-	..()
-
-/obj/structure/window/reinforced/holowindow/Destroy()
-	..()
-
 /obj/structure/window/reinforced/holowindow/attackby(obj/item/W as obj, mob/user as mob)
 
 	if(!istype(W) || W.item_flags & ITEM_FLAG_NO_BLUDGEON) return
@@ -179,11 +173,7 @@
 	qdel(src)
 	return
 
-/obj/structure/window/reinforced/holowindow/disappearing/Destroy()
-	..()
-
-/obj/machinery/door/window/holowindoor/Destroy()
-	..()
+/obj/structure/window/reinforced/holowindow/disappearing
 
 /obj/machinery/door/window/holowindoor/attackby(obj/item/weapon/I as obj, mob/user as mob)
 
@@ -220,9 +210,6 @@
 		visible_message("[src] fades away as it shatters!")
 	qdel(src)
 
-/obj/structure/bed/chair/holochair/Destroy()
-	..()
-
 /obj/structure/bed/chair/holochair/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/weapon/wrench))
 		to_chat(user, ("<span class='notice'>It's a holochair, you can't dismantle it!</span>"))
@@ -242,7 +229,7 @@
 	throwforce = 0
 	w_class = ITEM_SIZE_SMALL
 	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_NO_BLOOD
-	base_parry_chance = 50
+	base_parry_chance = 40
 	var/active = 0
 	var/item_color
 

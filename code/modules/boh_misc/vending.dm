@@ -11,7 +11,7 @@
 	icon_vend = "sec-vend"
 	vend_delay = 14
 	base_type = /obj/machinery/vending/security
-	req_access = list(access_armory)
+	req_access = list(access_security)
 	products = list(
 		/obj/item/clothing/accessory/armguards = 12,
 		/obj/item/clothing/accessory/armguards/navy = 8,

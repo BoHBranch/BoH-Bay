@@ -15,7 +15,7 @@
 	matter = list(MATERIAL_STEEL = 500)
 	var/elastic
 	var/dispenser = 0
-	var/breakouttime = 1200 //Deciseconds = 120s = 2 minutes
+	var/breakouttime = 600 //Deciseconds = 60 seconds = 1 minute
 	var/cuff_sound = 'sound/weapons/handcuffs.ogg'
 	var/cuff_type = "handcuffs"
 
@@ -137,7 +137,7 @@ var/last_chew = 0
 	name = "cable restraints"
 	desc = "Looks like some cables tied together. Could be used to tie something up."
 	icon_state = "cuff_white"
-	breakouttime = 300 //Deciseconds = 30s
+	breakouttime = 400 //Deciseconds = 40s
 	cuff_sound = 'sound/weapons/cablecuff.ogg'
 	cuff_type = "cable restraints"
 	elastic = 1
@@ -180,11 +180,12 @@ var/last_chew = 0
 	cuff_type = "duct tape"
 	health = 50
 
-/////////
-// Fuzzy Cuffs. Kill me.
-/////////
-
-/obj/item/weapon/handcuffs/fuzzy
-	name = "fuzzy cuffs"
-	icon_state = "fuzzycuff"
-	desc = "Use this to keep... 'prisoners' in line."
+//Zipties. Works on hardsuit rigs.
+/obj/item/weapon/handcuffs/ziptie
+	name = "ziptie"
+	desc = " A sturdy and reliable plastic ziptie for binding the wrists."
+	icon = 'icons/obj/items.dmi'
+	icon_state = "ziptie"
+	breakouttime  = 300
+	cuff_sound = 'sound/weapons/cablecuff.ogg'
+	elastic = 1

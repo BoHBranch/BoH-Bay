@@ -160,6 +160,12 @@
 	desc = "It's worth 1000 Thalers."
 	worth = 1000
 
+/obj/item/weapon/spacecash/bundle/c50000
+	name = "50000 Thaler"
+	icon_state = "spacecash1000"
+	desc = "It's worth 50000 Thalers."
+	worth = 50000
+
 proc/spawn_money(var/sum, spawnloc, mob/living/carbon/human/human_user as mob)
 	if(sum in list(1000,500,200,100,50,20,10,1))
 		var/cash_type = text2path("/obj/item/weapon/spacecash/bundle/c[sum]")

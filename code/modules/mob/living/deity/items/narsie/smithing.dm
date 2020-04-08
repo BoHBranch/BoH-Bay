@@ -3,9 +3,9 @@
 	desc = "Unlocks the blood smithing structure which allows followers to forge unholy tools from blood and flesh."
 	category = DEITY_BLOOD_CRAFT
 	max_level = 1
-	base_cost = 75
+	base_cost = 50
 	var/forge_type = /obj/structure/deity/blood_forge
-	var/list/recipes = list(/obj/item/weapon/melee/cultblade = 50,
+	var/list/recipes = list(/obj/item/weapon/melee/cultblade = 40,
 							/obj/item/clothing/head/culthood/alt = 10,
 							/obj/item/clothing/suit/cultrobes/alt = 20
 							)
@@ -24,17 +24,17 @@
 	name = DEITY_ARMOR_CRAFT
 	desc = "Unlock the secrets to tempered blood smithing, allowing your followers to smith more powerful and expensive armaments."
 	category = DEITY_BLOOD_CRAFT
-	base_cost = 75
+	base_cost = 50
 	requirements = list(DEITY_BLOOD_CRAFT = 1)
-	recipes = list(/obj/item/clothing/suit/cultrobes/magusred = 80,
-					/obj/item/clothing/head/culthood/magus = 50,
+	recipes = list(/obj/item/clothing/suit/cultrobes/magusred = 75,
+					/obj/item/clothing/head/culthood/magus = 40,
 					/obj/structure/constructshell/cult = 70) //also shield?
 
 /datum/deity_item/blood_crafting/space
 	name = DEITY_VOID_CRAFT
 	desc = "Allows your followers to craft space suits, allowing you to finally spread across the cosmos."
 	category = DEITY_BLOOD_CRAFT
-	base_cost = 100
+	base_cost = 80
 	requirements = list(DEITY_BLOOD_CRAFT = 1, DEITY_ARMOR_CRAFT = 1)
-	recipes = list(/obj/item/clothing/suit/space/cult = 100,
-					/obj/item/clothing/head/helmet/space/cult = 70) //Probably more too.
+	recipes = list(/obj/item/clothing/suit/space/cult = 80,
+					/obj/item/clothing/head/helmet/space/cult = 60) //Probably more too.

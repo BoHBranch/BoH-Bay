@@ -180,7 +180,8 @@
 	armor_penetration = 40
 	damage_type = BRUTE
 	vacuum_traversal = 0
-	penetration_modifier = 0.2
+	shrapnel_chance_multiplier = 0.2
+	arterial_bleed_chance_multiplier = 0.2
 	penetrating = 1
 	min_dizziness_amt = 10
 	med_dizziness_amt = 60

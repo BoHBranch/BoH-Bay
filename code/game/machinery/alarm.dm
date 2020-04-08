@@ -330,6 +330,8 @@
 	return 0
 
 /obj/machinery/alarm/on_update_icon()
+	overlays = overlays.Cut()
+	icon_state = "alarmp"
 	if(wiresexposed)
 		icon_state = "alarmx"
 		set_light(0)
@@ -346,14 +348,13 @@
 	var/new_color = null
 	switch(icon_level)
 		if (0)
-			icon_state = "alarm0"
 			new_color = COLOR_LIME
 		if (1)
-			icon_state = "alarm2" //yes, alarm2 is yellow alarm
 			new_color = COLOR_SUN
 		if (2)
-			icon_state = "alarm1"
 			new_color = COLOR_RED_LIGHT
+	overlays  += overlay_image(icon, "alarm[icon_level]", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+	overlays  += overlay_image(icon, "switch[icon_level]")
 
 	pixel_x = 0
 	pixel_y = 0
@@ -940,9 +941,13 @@ FIRE ALARM
 	. = ..()
 	INVOKE_ASYNC(src, /atom/.proc/update_icon) // to avoid weird travis bugs
 
-/obj/machinery/firealarm/proc/get_cached_overlay(state)
+/obj/machinery/firealarm/proc/get_cached_overlay(state, var/emissive)
 	if(!LAZYACCESS(overlays_cache, state))
-		LAZYSET(overlays_cache, state, image(icon, state))
+		if(emissive)
+			LAZYSET(overlays_cache, state, overlay_image(icon, state, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER))
+		else
+			LAZYSET(overlays_cache, state, overlay_image(icon, state))
+
 	return overlays_cache[state]
 
 /obj/machinery/firealarm/on_update_icon()
@@ -976,15 +981,17 @@ FIRE ALARM
 		set_light(0)
 	else
 		if(!detecting)
-			overlays += get_cached_overlay("fire1")
+			overlays += get_cached_overlay("fire1", TRUE)
+			overlays += get_cached_overlay("switch1", FALSE)
 			set_light(0.25, 0.1, 1, 2, COLOR_RED)
 		else if(z in GLOB.using_map.contact_levels)
-			overlays += get_cached_overlay("fire0")
+			overlays += get_cached_overlay("fire0", TRUE)
+			overlays += get_cached_overlay("switch0", FALSE)
 			var/decl/security_state/security_state = decls_repository.get_decl(GLOB.using_map.security_state)
 			var/decl/security_level/sl = security_state.current_security_level
 
 			set_light(sl.light_max_bright, sl.light_inner_range, sl.light_outer_range, 2, sl.light_color_alarm)
-			overlays += image(sl.icon, sl.overlay_alarm)
+			overlays += overlay_image(sl.icon, sl.overlay_alarm, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
 /obj/machinery/firealarm/fire_act(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	if(src.detecting)

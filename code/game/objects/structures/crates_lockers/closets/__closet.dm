@@ -386,18 +386,23 @@
 		to_chat(usr, "<span class='warning'>This mob type can't use this verb.</span>")
 
 /obj/structure/closet/on_update_icon()
+	overlays.Cut()
 	if(opened)
 		icon_state = "open"
-		overlays.Cut()
 	else
-		if(broken)
-			icon_state = "closed_emagged[welded ? "_welded" : ""]"
-		else
-			if(locked)
-				icon_state = "closed_locked[welded ? "_welded" : ""]"
-			else
-				icon_state = "closed_unlocked[welded ? "_welded" : ""]"
-			overlays.Cut()
+		var/decl/closet_appearance/app = decls_repository.get_decl(closet_appearance)
+		if(app.can_lock)
+			//Show the status light over lighting.
+			var/image/I = overlay_image(app.base_icon, "light", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER, color = "[locked ? COLOR_RED : COLOR_LIME]")
+			overlays += I
+			if(broken) //Show the emag overlay.
+				var/image/I2 = overlay_image(app.base_icon, "sparks", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+				overlays += I2
+
+		icon_state = "closed[welded ? "_welded" : ""]"
+
+
+
 
 /obj/structure/closet/take_damage(damage)
 	health -= damage

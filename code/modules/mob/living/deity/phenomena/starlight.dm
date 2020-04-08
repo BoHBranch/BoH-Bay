@@ -1,7 +1,7 @@
 /datum/phenomena/herald
 	name = "Bestow Heraldry"
 	desc = "Turn one of your followers into a herald of your coming."
-	cost = 100
+	cost = 10
 	cooldown = 60 SECONDS
 	flags = PHENOMENA_FOLLOWER
 	expected_type = /mob/living/carbon/human
@@ -95,7 +95,7 @@
 /datum/phenomena/create_gateway
 	name = "Create Gateway"
 	desc = "Creates a gateway from this world to the next. Gateways syphon absurd amounts of power but can be sacrificed to summon powerful minions."
-	cost = 200
+	cost = 150
 	flags = PHENOMENA_NEAR_STRUCTURE
 	expected_type = /atom
 
@@ -149,9 +149,9 @@
 /datum/phenomena/burning_glare
 	name = "Burning Glare"
 	desc = "Burn a victim. If they are burnt enough, you'll set them ablaze."
-	cost = 100
+	cost = 20
 	flags = PHENOMENA_NONFOLLOWER|PHENOMENA_NEAR_STRUCTURE
-	cooldown = 30 SECONDS
+	cooldown = 15 SECONDS
 	expected_type = /mob/living
 
 /datum/phenomena/burning_glare/activate(var/mob/living/L)
@@ -165,7 +165,7 @@
 /datum/phenomena/divine_right
 	name = "Divine Right"
 	desc = "Trigger your rebirth into the body of someone wearing a herald's uniform. This takes time, requires 3 open gateways, and if the body is destroyed during the ritual... so are you. But once complete, you become an unstoppable demigod of unnatural power."
-	cost = 300
+	cost = 200
 	cooldown = 180 SECONDS
 	flags = PHENOMENA_FOLLOWER|PHENOMENA_NEAR_STRUCTURE
 	expected_type = /mob/living
@@ -198,7 +198,7 @@
 	new /obj/aura/starborn(L)
 	L.status_flags |= GODMODE
 	GLOB.destroyed_event.register(L,src,.proc/fail_ritual)
-	addtimer(CALLBACK(src, .proc/succeed_ritual, L), 600 SECONDS) //6 minutes
+	addtimer(CALLBACK(src, .proc/succeed_ritual, L), 300 SECONDS) //5 minutes.
 	for(var/mob/living/player in GLOB.player_list)
 		sound_to(player, 'sound/effects/cascade.ogg')
 		if(player.mind && istype(player.mind.assigned_job, /datum/job/chaplain))
@@ -223,7 +223,7 @@
 /datum/phenomena/movable_object/wisp
 	name = "Wisp"
 	desc = "Creates or moves a small ball of light for your followers to use."
-	cost = 30
+	cost = 25
 	object_type = /obj/item/device/flashlight/slime
 
 /datum/phenomena/movable_object/wisp/add_object()

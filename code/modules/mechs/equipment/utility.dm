@@ -251,6 +251,10 @@
 	. = ..()
 	drill_head = new /obj/item/weapon/material/drill_head(src, "steel")//You start with a basic steel head
 
+/obj/item/mech_equipment/drill/Destroy()
+	QDEL_NULL(drill_head)
+	. = ..()
+
 /obj/item/mech_equipment/drill/attack_self(var/mob/user)
 	. = ..()
 	if(.)
@@ -375,4 +379,3 @@
 	use_external_power = TRUE
 	has_safety = FALSE
 	
-

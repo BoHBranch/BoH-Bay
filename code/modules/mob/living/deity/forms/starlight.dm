@@ -8,7 +8,7 @@
 		<font color='red'>-Servant's powers will burn them.<br>
 		-You require copious amounts of power regeneration.</font>
 	"}
-	desc = "The bringer of life, and all that entails."
+	desc = "The bringer of life, and all that entails. The embodiment of realspace."
 	god_icon_state = "sungod"
 	pylon_icon_state = "god"
 	faction = "herald"

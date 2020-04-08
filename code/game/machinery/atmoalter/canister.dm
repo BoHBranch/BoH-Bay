@@ -163,13 +163,13 @@ update_flag
 	if(update_flag & 2)
 		overlays += "can-connector"
 	if(update_flag & 4)
-		overlays += "can-o0"
+		overlays += overlay_image(icon, "can-o0", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	if(update_flag & 8)
-		overlays += "can-o1"
+		overlays += overlay_image(icon, "can-o1", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	else if(update_flag & 16)
-		overlays += "can-o2"
+		overlays += overlay_image(icon, "can-o2", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	else if(update_flag & 32)
-		overlays += "can-o3"
+		overlays += overlay_image(icon, "can-o3", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	return
 
 /obj/machinery/portable_atmospherics/canister/fire_act(datum/gas_mixture/air, exposed_temperature, exposed_volume)
@@ -493,13 +493,13 @@ update_flag
 /////////
 //BoH Gas
 /////////
-/obj/machinery/portable_atmospherics/canister/hfc
-	name = "\improper Canister \[HFC\]"
+/obj/machinery/portable_atmospherics/canister/hfp
+	name = "\improper Canister \[HFP\]"
 	icon_state = "black"
 	canister_color = "black"
 	can_label = 0
 
-/obj/machinery/portable_atmospherics/canister/hfc/New()
+/obj/machinery/portable_atmospherics/canister/hfp/New()
 	..()
-	air_contents.adjust_gas(GAS_HFC, MolesForPressure())
+	air_contents.adjust_gas(GAS_HFP, MolesForPressure())
 	update_icon()

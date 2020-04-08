@@ -1,0 +1,38 @@
+Code: 
+  - code/**/*
+  - ~code/**/*
+  - modular_mithra/code/**/*
+  
+Icon:
+  - icons/**/*
+  - modular_mithra/icons/**/*
+  
+Sound:
+  - sound/**/*
+  
+Map:
+  - maps/**/*
+  
+Interface:
+  - html/**/!(*.yml)
+  - interface/**/*
+  - news_articles/**/*
+  - scripts/**/*
+  - fonts/**/
+  - nano/**/
+  - vueui/**/*
+
+❌DO NOT MERGE:
+  - data/**/*
+  - settings/**/*
+  - config/**/*
+  - cfg/**/*
+  - doc/**/*
+  - scripts/**/
+  - sql/**/*
+  - test/**/*
+  - tools/**/*
+  
+Github:
+  - .git/**/*
+  - .github/**/*

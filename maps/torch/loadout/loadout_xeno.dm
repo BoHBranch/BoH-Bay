@@ -14,13 +14,12 @@
 	whitelisted = list(SPECIES_UNATHI)
 
 /datum/gear/suit/unathi/savage_hunter
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/head/skrell_helmet
 	allowed_roles = ARMORED_ROLES
 	allowed_branches = TACTICOOL_BRANCHES
 	whitelisted = list(SPECIES_SKRELL)
-	
+
 /datum/gear/uniform/skrell_bodysuit
 	allowed_roles = ARMORED_ROLES
 	allowed_branches = TACTICOOL_BRANCHES
@@ -30,9 +29,14 @@
 	allowed_roles = ARMORED_ROLES
 	allowed_branches = TACTICOOL_BRANCHES
 	whitelisted = list(SPECIES_SKRELL)
-	
+
 /datum/gear/uniform/harness
 	allowed_branches = null
+
+/datum/gear/uniform/skrell_bodysuit
+	display_name = "Skrellian uniform"
+	path = /obj/item/clothing/under/skrelljumpsuit
+	sort_category = "Xenowear"
 
 // Patches
 /datum/gear/accessory/cultex_patch
@@ -49,3 +53,4 @@
 	description = "A set of insulated gloves meant for GAS."
 	whitelisted = list(SPECIES_NABBER)
 	sort_category = "Xenowear"
+

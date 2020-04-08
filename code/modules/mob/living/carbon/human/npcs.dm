@@ -20,7 +20,6 @@
 	shoes = /obj/item/clothing/shoes/white
 	head = /obj/item/clothing/head/helmet/facecover
 	mask = /obj/item/clothing/mask/muzzle
-	suit = /obj/item/clothing/suit/straight_jacket
 
 /decl/hierarchy/outfit/blank_subject/post_equip(mob/living/carbon/human/H)
 	..()
