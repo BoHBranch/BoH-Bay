@@ -138,7 +138,7 @@
 
 	slowdown = 1.5
 	hidden_from_codex = TRUE
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_FLAG_NO_MINOR_CUT
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_FLAG_NO_MINOR_CUT // | SPECIES_IS_WHITELISTED
 	brute_mod = 0.5
 	burn_mod = 0.5
 	strength = STR_HIGH
