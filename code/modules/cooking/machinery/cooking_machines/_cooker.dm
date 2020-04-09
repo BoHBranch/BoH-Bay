@@ -105,8 +105,8 @@
 	overlays += light
 
 /obj/machinery/appliance/cooker/Process()
-	if ((stat && (temperature >= set_temp)) || use_power == 1)
-		temperature -= loss // cool every tick if we're not turned on or heating
+	if ((temperature >= set_temp) && (stat || use_power == 1))
+		QUEUE_TEMPERATURE_ATOMS(src) // cool every tick if we're not turned on or heating
 	if(!stat)
 		heat_up()
 	. = ..()
