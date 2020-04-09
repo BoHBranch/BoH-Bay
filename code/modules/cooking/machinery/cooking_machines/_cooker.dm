@@ -13,6 +13,8 @@
 	var/light_y = 0
 	cooking_coeff = 0
 	cooking_power = 0
+	flags = 0
+	temperature_coefficient = 0.5
 
 /obj/machinery/appliance/cooker/examine(var/mob/user)
 	. = ..()
@@ -103,8 +105,8 @@
 	overlays += light
 
 /obj/machinery/appliance/cooker/Process()
-	if ((stat && (temperature >= min_temp)) || use_power == 1)
-		QUEUE_TEMPERATURE_ATOMS(src) // cool every tick if we're not turned on or heating
+	if ((stat && (temperature >= set_temp)) || use_power == 1)
+		temperature -= loss // cool every tick if we're not turned on or heating
 	if(!stat)
 		heat_up()
 	. = ..()
@@ -142,8 +144,6 @@
 	QUEUE_TEMPERATURE_ATOMS(src)
 
 /obj/machinery/appliance/cooker/ProcessAtomTemperature()
-	if(set_temp < temperature || (stat && temperature >= T20C))
-		. = ..() // cool it!
 	if( ( !(stat & POWEROFF) && !(stat & NOPOWER) ) || (temperature >= T20C)  ) // must be powered and turned on, or hot, to keep processing
 		update_cooking_power() // update!
 		if(!LAZYLEN(cooking_objs))
