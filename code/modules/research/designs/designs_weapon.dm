@@ -1,7 +1,7 @@
 /datum/design/item/weapon
 	build_type = WEAPONSFAB
 	category = "Weapons"
-	time = 300
+	time = 30
 
 /datum/design/item/weapon/stunrevolver
 	name = "stun revolver"
@@ -121,7 +121,7 @@
 	desc = "The lasing medium of this prototype is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core."
 	id = "lasercannon"
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
-	materials = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 1000, MATERIAL_OSMIUM = 5000)
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_GLASS = 1000, MATERIAL_DIAMOND = 500)
 	build_path = /obj/item/weapon/gun/energy/lasercannon
 	sort_string = "TAEAB"
 
@@ -145,7 +145,7 @@
 	name = "grenade launcher"
 	id = "grenadelauncher"
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
-	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 1000, MATERIAL_OSMIUM = 5000)
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 1000, MATERIAL_DIAMOND = 2000)
 	build_path = /obj/item/weapon/gun/launcher/grenade
 	sort_string = "TAGAA"
 
@@ -177,7 +177,7 @@
 	name = "WT550 submachine gun"
 	id = "wt550"
 	req_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1)
-	materials = list(MATERIAL_STEEL = 8000, MATERIAL_PLASTIC = 500, MATERIAL_ALUMINUM = 1500)
+	materials = list(MATERIAL_STEEL = 8000, MATERIAL_PLASTIC = 500, MATERIAL_ALUMINIUM = 1500)
 	build_path = /obj/item/weapon/gun/projectile/automatic/sec_smg
 	sort_string = "TAPAA"
 
@@ -185,7 +185,7 @@
 	name = "submachine gun"
 	id = "smg"
 	req_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 4)
-	materials = list(MATERIAL_STEEL = 8000, MATERIAL_PLASTIC = 500, MATERIAL_ALUMINUM = 2000)
+	materials = list(MATERIAL_STEEL = 8000, MATERIAL_PLASTIC = 500, MATERIAL_ALUMINIUM = 2000)
 	build_path = /obj/item/weapon/gun/projectile/automatic
 	sort_string = "TAPAB"
 
@@ -193,7 +193,7 @@
 	name = "bullpup rifle"
 	id = "bullpup"
 	req_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 3)
-	materials = list(MATERIAL_STEEL = 10000, MATERIAL_PLASTIC = 5000, MATERIAL_OSMIUM = 5000)
+	materials = list(MATERIAL_STEEL = 10000, MATERIAL_PLASTIC = 5000, MATERIAL_DIAMOND = 500)
 	build_path = /obj/item/weapon/gun/projectile/automatic/bullpup_rifle
 	sort_string = "TAPAC"
 
@@ -201,15 +201,15 @@
 	name = "combat shotgun"
 	id = "combatshotgun"
 	req_tech = list(TECH_MATERIAL = 1, TECH_COMBAT = 1)
-	materials = list(MATERIAL_STEEL = 15000, MATERIAL_PLASTIC = 5000, MATERIAL_ALUMINUM = 10000, MATERIAL_OSMIUM = 10000)
+	materials = list(MATERIAL_STEEL = 15000, MATERIAL_PLASTIC = 8000, MATERIAL_ALUMINIUM = 10000)
 	build_path = /obj/item/weapon/gun/projectile/shotgun/pump/combat
 	sort_string = "TAPAD"
 
 /datum/design/item/weapon/lasercarbinerifle
 	name = "laser carbine"
 	id = "lasercarbinerifle"
-	materials = list(MATERIAL_STEEL = 5000, MATERIAL_PLASTIC = 500, MATERIAL_ALUMINUM = 5000, MATERIAL_GLASS = 1500)
-	req_tech = req_tech = list(TECH_MATERIAL = 1, TECH_COMBAT = 1)
+	materials = list(MATERIAL_STEEL = 5000, MATERIAL_PLASTIC = 500, MATERIAL_ALUMINIUM = 5000, MATERIAL_GLASS = 1500)
+	req_tech = list(TECH_MATERIAL = 1, TECH_COMBAT = 1)
 	build_path = /obj/item/weapon/gun/energy/laser/secure
 	sort_string = "TAPAE"
 

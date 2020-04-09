@@ -5987,6 +5987,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
+"akk" = (
+/obj/machinery/door/window/brigdoor/westright{
+	dir = 2;
+	name = "Requisitions Desk"
+	},
+/obj/structure/table/steel,
+/obj/machinery/door/window/brigdoor/eastleft{
+	dir = 1;
+	id = "Requisitions Desk";
+	name = "Requisitions Desk"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "akl" = (
 /obj/structure/cable{
 	d2 = 2;
@@ -6400,6 +6413,15 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
+"akU" = (
+/obj/structure/table/steel,
+/obj/item/stack/material/plastic/ten,
+/obj/item/stack/material/glass/ten,
+/obj/item/stack/material/glass/ten,
+/obj/item/stack/material/aluminium/ten,
+/obj/item/stack/material/aluminium/ten,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/armoury)
 "akV" = (
 /obj/machinery/camera/network/first_deck{
 	c_tag = "First Deck Fore Hallway - Starboard Maintenence";
@@ -7788,16 +7810,6 @@
 /obj/machinery/smartfridge,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
-"anx" = (
-/obj/structure/table/steel,
-/obj/item/stack/material/osmium/ten,
-/obj/item/stack/material/plastic/ten,
-/obj/item/stack/material/glass/ten,
-/obj/item/stack/material/glass/ten,
-/obj/item/stack/material/aluminium/ten,
-/obj/item/stack/material/aluminium/ten,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/security/armoury)
 "any" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -26211,13 +26223,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
-"oYt" = (
-/obj/machinery/door/window/brigdoor/westright{
-	dir = 2;
-	name = "Brig Chief Desk"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "oZb" = (
 /obj/machinery/chemical_dispenser/full,
 /obj/effect/floor_decal/corner/beige{
@@ -38501,7 +38506,7 @@ tAS
 amK
 abH
 anh
-anx
+akU
 anK
 amK
 tAS
@@ -39710,7 +39715,7 @@ uRO
 enM
 aLy
 enM
-oYt
+akk
 aPu
 aPu
 aPu
