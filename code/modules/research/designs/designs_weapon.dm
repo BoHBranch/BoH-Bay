@@ -209,7 +209,7 @@
 	name = "laser carbine"
 	id = "lasercarbinerifle"
 	materials = list(MATERIAL_STEEL = 5000, MATERIAL_PLASTIC = 500, MATERIAL_ALUMINUM = 5000, MATERIAL_GLASS = 1500)
-	req_tech = req_tech = list(TECH_MATERIAL = 1, TECH_COMBAT = 1)
+	req_tech = list(TECH_MATERIAL = 1, TECH_COMBAT = 1)
 	build_path = /obj/item/weapon/gun/energy/laser/secure
 	sort_string = "TAPAE"
 
