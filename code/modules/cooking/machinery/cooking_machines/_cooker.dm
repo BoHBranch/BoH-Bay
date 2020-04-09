@@ -13,7 +13,7 @@
 	var/light_y = 0
 	cooking_coeff = 0
 	cooking_power = 0
-	flags = 0
+	atom_flags = FALSE
 	temperature_coefficient = 0.5
 
 /obj/machinery/appliance/cooker/examine(var/mob/user)
