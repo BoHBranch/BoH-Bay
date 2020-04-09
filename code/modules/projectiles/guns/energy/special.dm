@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/energy/ionrifle
-	name = "ion rifle"
-	desc = "The NT Mk60 EW Halicon is a man portable anti-armor weapon designed to disable mechanical threats, produced by NT. Not the best of its type."
+	name = "NT-Type 60-EW \"Halicon\""
+	desc = "The NT-Type 60-EW \"Halicon\" is a man portable anti-armor weapon designed to disable mechanical threats, produced by NT. Not the best of its type."
 	icon = 'icons/obj/guns/ion_rifle.dmi'
 	icon_state = "ionrifle"
 	item_state = "ionrifle"
@@ -21,8 +21,8 @@
 	..(max(severity, 2)) //so it doesn't EMP itself, I guess
 
 /obj/item/weapon/gun/energy/ionrifle/small
-	name = "ion pistol"
-	desc = "The NT Mk72 EW Preston is a personal defense weapon designed to disable mechanical threats."
+	name = "NT-Type72-EW \"Preston\""
+	desc = "The NT-Type72-EW \"Preston\" is a personal defense weapon designed to disable mechanical threats."
 	icon = 'icons/obj/guns/ion_pistol.dmi'
 	icon_state = "ionpistol"
 	item_state = "ionpistol"
@@ -36,7 +36,7 @@
 	projectile_type = /obj/item/projectile/ion/small
 
 /obj/item/weapon/gun/energy/decloner
-	name = "biological demolecularisor"
+	name = "NT-Type 75 \"Decloner\""
 	desc = "A gun that discharges high amounts of controlled radiation to slowly break a target into component elements."
 	icon = 'icons/obj/guns/decloner.dmi'
 	icon_state = "decloner"
@@ -47,7 +47,7 @@
 	combustion = 0
 
 /obj/item/weapon/gun/energy/floragun
-	name = "floral somatoray"
+	name = "NT-Type 80 floral somatoray"
 	desc = "A tool that discharges controlled radiation which induces mutation in plant cells."
 	icon = 'icons/obj/guns/floral.dmi'
 	icon_state = "floramut100"
@@ -135,7 +135,7 @@
 	projectile_type = /obj/item/projectile/beam/mindflayer
 
 /obj/item/weapon/gun/energy/toxgun
-	name = "phoron pistol"
+	name = "NT-Type 103 \"Manstopper\""
 	desc = "A specialized firearm designed to fire lethal bolts of phoron."
 	icon = 'icons/obj/guns/toxgun.dmi'
 	icon_state = "toxgun"
@@ -144,8 +144,8 @@
 	projectile_type = /obj/item/projectile/energy/phoron
 
 /obj/item/weapon/gun/energy/plasmacutter
-	name = "plasma cutter"
-	desc = "A mining tool capable of expelling concentrated plasma bursts. You could use it to cut limbs off of xenos! Or, you know, mine stuff."
+	name = "NT-Type 121 Plasma Cutter"
+	desc = "A mining tool of NanoTrasen make capable of expelling concentrated plasma bursts. You could use it to cut limbs off of things! Or, you know, mine stuff."
 	charge_meter = 0
 	icon = 'icons/obj/guns/plasmacutter.dmi'
 	icon_state = "plasmacutter"
@@ -162,7 +162,7 @@
 	var/datum/effect/effect/system/spark_spread/spark_system
 
 /obj/item/weapon/gun/energy/plasmacutter/mounted
-	name = "mounted plasma cutter"
+	name = "mounted NT-Type 121 Plasma Cutter"
 	use_external_power = 1
 	max_shots = 4
 	has_safety = FALSE
@@ -189,8 +189,8 @@
 	return 0
 
 /obj/item/weapon/gun/energy/incendiary_laser
-	name = "dispersive blaster"
-	desc = "The A&M 'Shayatin' was the first of a now-banned class of dispersive laser weapons which, instead of firing a focused beam, scan over a target rapidly with the goal of setting it ablaze."
+	name = "A&M Mk 90 \"Icarus\""
+	desc = "The A&M \"Icarus\" was the first of a now-banned class of dispersive laser weapons which, instead of firing a focused beam, scan over a target rapidly with the goal of setting it ablaze."
 	icon = 'icons/obj/guns/incendiary_laser.dmi'
 	icon_state = "incen"
 	item_state = "incen"

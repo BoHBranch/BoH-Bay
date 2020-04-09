@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/projectile/heavysniper
-	name = "anti-materiel rifle"
+	name = "HI PTR-7 \"AMR\""
 	desc = "A portable anti-armour rifle fitted with a scope, the HI PTR-7 Rifle was originally designed to be used against armoured exosuits. It is capable of punching through windows and non-reinforced walls with ease. \
 	Truly an anachronism from another time."
 	icon = 'icons/obj/guns/heavysniper.dmi'
@@ -80,7 +80,7 @@
 
 
 /obj/item/weapon/gun/projectile/heavysniper/boltaction
-	name = "bolt action rifle"
+	name = "MA-9 \"Boltie\""
 	desc = "An old bolt action rifle from some forgotten war, still commonplace among farmers and colonists as an anti-varmint rifle."
 	icon = 'icons/obj/guns/boltaction.dmi'
 	icon_state = "boltaction"

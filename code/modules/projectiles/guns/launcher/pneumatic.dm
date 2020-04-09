@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/launcher/pneumatic
 	name = "pneumatic cannon"
-	desc = "A large gas-powered cannon."
+	desc = "A large gas-powered cannon. Favored by troublemakers."
 	icon = 'icons/obj/guns/pneumatic.dmi'
 	icon_state = "pneumatic"
 	item_state = "pneumatic"

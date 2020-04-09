@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/energy/gun
-	name = "energy gun"
+	name = "LA-EP-90 \"Perun\""
 	desc = "Another bestseller of Lawson Arms and the FTU, the LAEP90 Perun is a versatile energy based sidearm, capable of switching between low, medium and high power projectile settings. In other words: stun, shock or kill."
 	icon = 'icons/obj/guns/energy_gun.dmi'
 	icon_state = "energystun100"
@@ -41,7 +41,7 @@
 		)
 
 /obj/item/weapon/gun/energy/gun/small
-	name = "small energy gun"
+	name = "LAEP90-C, \"Icon\""
 	desc = "A smaller model of the versatile LAEP90 Perun, the LAEP90-C packs considerable utility in a smaller package. Best used in situations where full-sized sidearms are inappropriate."
 	icon = 'icons/obj/guns/small_egun.dmi'
 	icon_state = "smallgunstun"
@@ -57,14 +57,14 @@
 		)
 
 /obj/item/weapon/gun/energy/gun/mounted
-	name = "mounted energy gun"
+	name = "mounted LA-EP-90 \"Perun\""
 	self_recharge = 1
 	use_external_power = 1
 	has_safety = FALSE
 
 /obj/item/weapon/gun/energy/gun/nuclear
-	name = "advanced energy gun"
-	desc = "An energy gun with an experimental miniaturized reactor."
+	name = "NT-Type 45 \"Atomic\""
+	desc = "A reverse-engineered LA-EP-90 \"Perun\" with an experimental miniaturized reactor."
 	icon = 'icons/obj/guns/adv_egun.dmi'
 	icon_state = "nucgun"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)

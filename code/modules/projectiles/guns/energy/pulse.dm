@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/energy/pulse_rifle
-	name = "pulse rifle"
+	name = "HI-G80P \"New Day\""
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Because of its complexity and cost, it is rarely seen in use except by specialists."
 	icon = 'icons/obj/guns/pulse_rifle.dmi'
 	icon_state = "pulse"
@@ -19,7 +19,7 @@
 	bulk = GUN_BULK_RIFLE
 
 /obj/item/weapon/gun/energy/pulse_rifle/carbine
-	name = "pulse carbine"
+	name = "HI-G80P-C \"Blue Frontier\""
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Less bulky than the full-sized rifle."
 	icon = 'icons/obj/guns/pulse_carbine.dmi'
 	icon_state = "pulse_carbine"
@@ -34,7 +34,7 @@
 	bulk = GUN_BULK_RIFLE - 3
 
 /obj/item/weapon/gun/energy/pulse_rifle/pistol
-	name = "pulse pistol"
+	name = "HI-G80P-M \"Sunset\""
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Even smaller than the carbine."
 	icon = 'icons/obj/guns/pulse_pistol.dmi'
 	icon_state = "pulse_pistol"
@@ -64,7 +64,7 @@
 
 /obj/item/weapon/gun/energy/pulse_rifle/destroyer/attack_self(mob/living/user as mob)
 	to_chat(user, "<span class='warning'>[src.name] has three settings, and they are all DESTROY.</span>")
-	
+
 /obj/item/weapon/gun/energy/pulse_rifle/skrell
 	name = "skrellian carbine"
 	icon = 'icons/obj/guns/skrell_carbine.dmi'
@@ -80,7 +80,7 @@
 	burst=1
 	burst_delay=null
 	wielded_item_state = "skrell_carbine-wielded"
-	
+
 	firemodes = list(
 		list(mode_name="single", projectile_type=/obj/item/projectile/beam/pulse/skrell/single, charge_cost=120, burst=1, burst_delay=null),
 		list(mode_name="heavy", projectile_type=/obj/item/projectile/beam/pulse/skrell/heavy, charge_cost=55, burst=2, burst_delay=3),

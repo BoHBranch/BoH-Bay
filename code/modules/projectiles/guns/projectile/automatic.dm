@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/projectile/automatic
-	name = "prototype SMG"
+	name = "NT-Type 306 \"Talon\""
 	desc = "A protoype lightweight, fast firing submachine gun."
 	icon = 'icons/obj/guns/prototype_smg.dmi'
 	icon_state = "prototype"
@@ -26,7 +26,7 @@
 		)
 
 /obj/item/weapon/gun/projectile/automatic/machine_pistol
-	name = "machine pistol"
+	name = "HI-MP6 \"Vesper\""
 	desc = "The Hephaestus Industries MP6 Vesper, A fairly common machine pistol. Sometimes refered to as an 'uzi' by the backwater spacers it is often associated with."
 	icon = 'icons/obj/guns/machine_pistol.dmi'
 	icon_state = "mpistolen"
@@ -61,8 +61,8 @@
 		overlays += image(icon, "ammo_ok")
 
 /obj/item/weapon/gun/projectile/automatic/merc_smg
-	name = "submachine gun"
-	desc = "The NanoTrasen C-20r is a lightweight and rapid firing SMG, for when you REALLY need someone dead. Has a 'Per falcis, per pravitas' buttstamp."
+	name = "HI-C20R \"Operation\""
+	desc = "The HI-C20R \"Operation\" is a lightweight and rapid firing SMG, for when you REALLY need someone dead. Has a 'Per falcis, per pravitas' buttstamp."
 	icon = 'icons/obj/guns/merc_smg.dmi'
 	icon_state = "c20r"
 	item_state = "c20r"
@@ -96,8 +96,8 @@
 		icon_state = "c20r"
 
 /obj/item/weapon/gun/projectile/automatic/merc_smg/hacked
-	name = "C-20b"
-	desc = "The NanoTrasen C-20b is a lightweight and rapid firing SMG. This is an older model, capable of only firing in semi-automatic and three-round bursts. \
+	name = "HI-C20R \"Backwater\""
+	desc = "The HI-C20R \"Backwater\" is a lightweight and rapid firing SMG. This is an older model, capable of only firing in semi-automatic and three-round bursts. \
 	Additionally, it does not feature the auto-eject function of the more modern version. It appears, however, that this one has a hacked firing authorization pin."
 	auto_eject = 0
 	firemodes = list(
@@ -106,8 +106,8 @@
 		)
 
 /obj/item/weapon/gun/projectile/automatic/assault_rifle
-	name = "assault rifle"
-	desc = "The rugged STS-35 is a durable automatic weapon of a make popular on the frontier worlds. Originally produced by Hephaestus. The serial number has been scratched off."
+	name = "HI STS-35 \"Stormbringer\""
+	desc = "The rugged Hephaestus  STS-35 \"Stormbringer\" is a durable automatic weapon of a make popular on the frontier worlds. Originally produced by Hephaestus. The serial number has been scratched off."
 	icon = 'icons/obj/guns/assault_rifle.dmi'
 	icon_state = "arifle"
 	item_state = null
@@ -144,7 +144,7 @@
 		wielded_item_state = "arifle-wielded-empty"
 
 /obj/item/weapon/gun/projectile/automatic/sec_smg
-	name = "submachine gun"
+	name = "WT-550 \"Saber\""
 	desc = "The WT-550 Saber is a cheap self-defense weapon, mass-produced by Ward-Takahashi for paramilitary and private use."
 	icon = 'icons/obj/guns/sec_smg.dmi'
 	icon_state = "smg"
@@ -253,8 +253,8 @@
 		to_chat(user, "\The [launcher] is empty.")
 
 /obj/item/weapon/gun/projectile/automatic/l6_saw
-	name = "light machine gun"
-	desc = "A rather traditionally made L6 SAW with a pleasantly lacquered wooden pistol grip. Has 'Aussec Armoury- 2281' engraved on the reciever." //probably should refluff this
+	name = "HI-L6 \"Aussec\""
+	desc = "A limited run Squad Automatic Weapon in once marketed out to old fringeworld militias by Hephaestus Industries. Something of an antique, these are favored for their ease of repair, and extreme fire rate, making them wonderful in jungles.." //probably should refluff this
 	icon = 'icons/obj/guns/saw.dmi'
 	icon_state = "l6closed50"
 	item_state = "l6closedmag"

@@ -23,9 +23,9 @@
 			return
 		else
 			overlays += image(icon, "ammo_ok")
-	
+
 /obj/item/weapon/gun/projectile/pistol/military
-	name = "military pistol"
+	name = "HI-P20 \"Longeye\""
 	desc = "The Hephaestus Industries P20 - a mass produced kinetic sidearm in widespread service with the SCGDF."
 	magazine_type = /obj/item/ammo_magazine/pistol/double
 	allowed_magazines = /obj/item/ammo_magazine/pistol/double
@@ -38,6 +38,7 @@
 	ammo_indicator = TRUE
 
 /obj/item/weapon/gun/projectile/pistol/military/alt
+	name = "HT-P10 \"Optimus\""
 	desc = "The HelTek Optimus, best known as the standard-issue sidearm for the ICCG Navy."
 	icon = 'icons/obj/guns/military_pistol2.dmi'
 	icon_state = "military-alt"
@@ -46,8 +47,8 @@
 	fire_delay = 8
 
 /obj/item/weapon/gun/projectile/pistol/sec
-	name = "pistol"
-	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are."
+	name = "NT-Type 58 \"EZ\""
+	desc = "The NT-Type 58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are."
 	icon = 'icons/obj/guns/pistol.dmi'
 	icon_state = "secguncomp"
 	safety_icon = "safety"
@@ -60,7 +61,7 @@
 	magazine_type = /obj/item/ammo_magazine/pistol
 
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol
-	name = "magnum pistol"
+	name = "HT-PM \"Magnus\""
 	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo."
 	icon = 'icons/obj/guns/magnum_pistol.dmi'
 	icon_state = "magnum"
@@ -80,7 +81,7 @@
 	ammo_indicator = TRUE
 
 /obj/item/weapon/gun/projectile/pistol/throwback
-	name = "pistol"
+	name = "Handmade pistol"
 	desc = "A product of one of thousands of illegal workshops from around the galaxy. Often replicas of ancient Earth handguns, these guns are usually found in hands of frontier colonists and pirates."
 	icon = 'icons/obj/guns/pistol_throwback.dmi'
 	icon_state = "pistol1"
@@ -105,7 +106,7 @@
 		icon_state = "[base_icon]-e"
 
 /obj/item/weapon/gun/projectile/pistol/gyropistol
-	name = "gyrojet pistol"
+	name = "HI-PG10 \"Bolter\""
 	desc = "A bulky pistol designed to fire self propelled rounds."
 	icon = 'icons/obj/guns/gyropistol.dmi'
 	icon_state = "gyropistol"
@@ -130,8 +131,8 @@
 		icon_state = "gyropistol"
 
 /obj/item/weapon/gun/projectile/pistol/holdout
-	name = "holdout pistol"
-	desc = "The Lumoco Arms P3 Whisper. A small, easily concealable gun."
+	name = "LA-P3 \"Whisper\""
+	desc = "The Lumoco Arms P3 \"Whisper\". A small, easily concealable gun."
 	icon = 'icons/obj/guns/holdout_pistol.dmi'
 	icon_state = "pistol"
 	item_state = null
@@ -181,8 +182,8 @@
 		icon_state = "[icon_state]-e"
 
 /obj/item/weapon/silencer
-	name = "silencer"
-	desc = "A silencer."
+	name = "suppressor"
+	desc = "A suppressor."
 	icon = 'icons/obj/guns/holdout_pistol.dmi'
 	icon_state = "silencer"
 	w_class = ITEM_SIZE_SMALL

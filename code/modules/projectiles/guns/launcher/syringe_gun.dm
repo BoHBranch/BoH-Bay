@@ -60,7 +60,7 @@
 	update_icon()
 
 /obj/item/weapon/gun/launcher/syringe
-	name = "syringe gun"
+	name = "NT Type 18 syringe gun"
 	desc = "A spring loaded rifle designed to fit syringes, designed to incapacitate unruly patients from a distance."
 	icon = 'icons/obj/guns/syringegun.dmi'
 	icon_state = "syringegun"
@@ -130,7 +130,7 @@
 		..()
 
 /obj/item/weapon/gun/launcher/syringe/rapid
-	name = "syringe gun revolver"
+	name = "NT Type 19 syringe gun revolver"
 	desc = "A modification of the syringe gun design, using a rotating cylinder to store up to five syringes. The spring still needs to be drawn between shots."
 	icon_state = "rapidsyringegun"
 	item_state = "rapidsyringegun"

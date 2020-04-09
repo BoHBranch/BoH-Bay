@@ -1,10 +1,10 @@
 /obj/item/weapon/gun/energy/temperature
-	name = "temperature gun"
+	name = "NT Type 205 \"Thermo\""
 	icon = 'icons/obj/guns/freezegun.dmi'
 	icon_state = "freezegun"
 	item_state = "freezegun"
 	fire_sound = 'sound/weapons/pulse3.ogg'
-	desc = "A gun that changes temperatures. It has a small label on the side, 'More extreme temperatures will cost more charge!'"
+	desc = "A gun that changes temperatures. It has a small label on the side, 'More extreme temperatures will cost more charge!' Not as good for battle as it is for industrial use."
 	var/firing_temperature = T20C
 	var/current_temperature = T20C
 	charge_cost = 10

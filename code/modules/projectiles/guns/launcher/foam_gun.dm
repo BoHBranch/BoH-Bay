@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/launcher/foam
-	name = "foam blaster"
+	name = "Jorf foam blaster"
 	desc = "The classic Jorf blaster!"
 	icon = 'icons/obj/guns/foam.dmi'
 	icon_state = "blaster"
@@ -45,7 +45,7 @@
 			D.mix_up()
 
 /obj/item/weapon/gun/launcher/foam/burst
-	name = "foam machine pistol"
+	name = "Jorf CS4 \"Outlander\""
 	desc = "The Jorf Outlander, a machine pistol blaster, fires two darts in rapid succession. Holds 4 darts."
 	icon_state = "pistol"
 	w_class = ITEM_SIZE_NORMAL
@@ -55,7 +55,7 @@
 	max_darts = 4
 
 /obj/item/weapon/gun/launcher/foam/revolver
-	name = "foam revolver"
+	name = "Jorf CS6 \"Desperado\""
 	desc = "The Jorf Desperado is a revolver blaster, with a hammer action so you can fan the hammer like a real desperado! It holds 6 darts."
 	icon_state = "revolver"
 	w_class = ITEM_SIZE_NORMAL

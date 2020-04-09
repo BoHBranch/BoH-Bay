@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/projectile/shotgun/pump
-	name = "shotgun"
-	desc = "The mass-produced W-T Remmington 29x shotgun is a favourite of police and security forces on many worlds. Useful for sweeping alleys."
+	name = "WT-R29X \"Doom"
+	desc = "The mass-produced W-T Remmington 29X shotgun is a favourite of police and security forces on many worlds. Useful for sweeping alleys."
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
@@ -60,7 +60,7 @@
 	update_icon()
 
 /obj/item/weapon/gun/projectile/shotgun/pump/combat
-	name = "combat shotgun"
+	name = "HI-KS-40 \"Room Broom\""
 	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders."
 	icon_state = "cshotgun"
 	item_state = "cshotgun"
@@ -79,7 +79,7 @@
 			overlays += I
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel
-	name = "double-barreled shotgun"
+	name = "HI-DBS \"Classic\""
 	desc = "A true classic."
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "dshotgun"
@@ -110,7 +110,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel/flare
-	name = "signal shotgun"
+	name = "HI-DBS-S \"Starlight\""
 	desc = "A double-barreled shotgun meant to fire signal flash shells."
 	ammo_type = /obj/item/ammo_casing/shotgun/flash
 
@@ -140,8 +140,8 @@
 		..()
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn
-	name = "sawn-off shotgun"
-	desc = "Omar's coming!"
+	name = "HI-DBS2 \"Super\""
+	desc = "It's better. It's super."
 	icon_state = "sawnshotgun"
 	item_state = "sawnshotgun"
 	wielded_item_state = "sawnshotgun-wielded"

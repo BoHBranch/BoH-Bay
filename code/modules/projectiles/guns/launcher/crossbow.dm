@@ -48,7 +48,7 @@
 
 /obj/item/weapon/gun/launcher/crossbow
 	name = "powered crossbow"
-	desc = "A modern twist on an old classic. Pick up that can."
+	desc = "A modern twist on an old classic. Pick up that can. Favored by freedom fighters for its ease of construction."
 	icon = 'icons/obj/guns/crossbow.dmi'
 	icon_state = "crossbow"
 	item_state = "crossbow-solid"

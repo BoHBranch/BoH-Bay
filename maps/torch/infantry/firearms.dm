@@ -11,8 +11,8 @@
 // Sec Bullpup
 /////////
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec
-	name = "Z9 Bulldog"
-	desc = "The Hephaestus Industries Z9 Bulldog is a newer generation bullpup carbine. It appears to be heavily modified: forcing the feed of one round type, a permanent semi-auto setting and the removal of the auto-eject function. Lame. \
+	name = "HI-Z9 \"Bulldog\""
+	desc = "The Hephaestus Industries Z9 \"Bulldog\" is a newer generation bullpup carbine. It appears to be heavily modified: forcing the feed of one round type, a permanent semi-auto setting and the removal of the auto-eject function. Lame. \
 	Still has the kickass grenade launcher, though! The aforementioned forced munition is a highly specialized frangible bullet. Designed to minimize crossfire damage, alongside civilian casualties."
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	ammo_type = /obj/item/ammo_casing/rifle/military/low
@@ -31,7 +31,8 @@
 
 //sec proper
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b
-	desc = "The Hephaestus Industries Z9b Bulldog is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use. \
+	name = "HI-Z9B \"Bullfighter\""
+	desc = "The Hephaestus Industries Z9B \"Bullfighter\" is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use. \
 	Because of the limited fire-rate, and how the mechanism functions, it has a much higher jam rate."
 	firemodes = list(
 		list(mode_name="semi auto",       burst=1,    fire_delay=null,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
@@ -45,7 +46,7 @@
 // rifle 2
 /////////
 /obj/item/weapon/gun/energy/laser/infantry
-	name = "G40B carbine"
+	name = "HI-G40B-C \"Babysitter\""
 	desc = "A Hephaestus Industries G40B carbine, designed to kill with concentrated energy blasts. Fitted with safety chips to make sure discharge aboard a 'safe zone' is impossible.\
 	Additionally, it features a higher capacity."
 	charge_cost = 10
@@ -61,9 +62,9 @@
 // c20
 /////////
 /obj/item/weapon/gun/projectile/automatic/merc_smg/sec
-	name = "C-20b"
-	desc = "The NanoTrasen C-20b is a lightweight and rapid firing SMG. This is an older model, capable of only firing in semi-automatic and three-round bursts. \
-	Additionally, it does not feature the auto-eject function of the more modern version."
+	name = "HI-C20-C \"Arrowhead\""
+	desc = "The Hephaestus Industries C20C is a lightweight and rapid firing SMG. This is an older model, capable of only firing in semi-automatic and three-round bursts. \
+	Additionally, it does not feature the auto-eject function of the more modern version." //This is disgusting copy-paste.
 	auto_eject = 0
 	req_access = list(access_infantry)
 	authorized_modes = list(UNAUTHORIZED)
@@ -77,7 +78,7 @@
 // Pistol
 /////////
 /obj/item/weapon/gun/projectile/pistol/military/sec
-	name = "P10"
+	name = "HI-P10-C \"Hammerpoint\""
 	desc = "The Hephaestus Industries P10 - a mass produced kinetic sidearm in widespread service with the SCGDF. It has a slide restrictor, preventing quick-draw type shooting."
 	fire_delay = 12
 	req_access = list(access_infantry)
@@ -102,7 +103,7 @@
 
 //rifle
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg
-	name = "Z6 Komodo"
+	name = "HI-Z6 \"Komodo\""
 	desc = "The Hephaestus Industries Z6 Komodo is an old bullpup carbine conversion. \
 	It adds the possibility of automatic fire, though at the cost of likely jams."
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
@@ -119,7 +120,7 @@
 // Recoilless Rifle
 /////////
 /obj/item/weapon/gun/launcher/rocket/recoilless/sec
-	name = "TVP-3"
+	name = "TVP-3 \"Backblast\""
 	req_access = list(access_infantry)
 	authorized_modes = list(UNAUTHORIZED) //can't be registered, but that doesn't matter as this prevents firing regardless
 	firemodes = list(
@@ -136,7 +137,7 @@
 // SL Shotgun
 /////////
 /obj/item/weapon/gun/projectile/shotgun/sabotgun
-	name = "GS-95 Tectonic"
+	name = "HI-GS-95 \"Tectonic\""
 	desc = "Built for light anti-materiel use, the Hephaestus Industries GS-95 Teutonic is for frontline support infantry. \
 	It features a built in magazine, and must be loaded by hand."
 	icon = 'icons/boh/items/shotguns.dmi'

@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/launcher/rocket
-	name = "rocket launcher"
-	desc = "MAGGOT."
+	name = "WT-980 \"Jane\""
+	desc = "A cheap rocket recoilless rocket launcher favored by insurgents. Load rockets from the front, and be nowhere nearby when it fires. Aiming at the floor will not send you to your enemies, but to your death.."
 	icon_state = "rocket"
 	item_state = "rocket"
 	w_class = ITEM_SIZE_HUGE

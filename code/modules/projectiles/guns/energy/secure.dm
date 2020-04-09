@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/energy/gun/small/secure
-	name = "compact smartgun"
+	name = "LA-EP-90-CS \"Peerless\""
 	desc = "Combining the two LAEP90 variants, the secure and compact LAEP90-CS is the next best thing to keeping your security forces on a literal leash. It has an ability to recharge itself over time."
 	icon = 'icons/obj/guns/small_egun_secure.dmi'
 	item_icons = list(
@@ -13,7 +13,7 @@
 	self_recharge = 1
 
 /obj/item/weapon/gun/energy/stunrevolver/secure
-	name = "smart stun revolver"
+	name = "A&M X6-S \"Discharge\""
 	desc = "This A&M X6 is fitted with an NT1019 chip which allows remote authorization of weapon functionality. It has an SCG emblem on the grip."
 	icon = 'icons/obj/guns/stunrevolver_secure.dmi'
 	icon_state = "revolverstun100"
@@ -26,7 +26,7 @@
 	req_access = list(list(access_brig, access_bridge))
 
 /obj/item/weapon/gun/energy/gun/secure
-	name = "smartgun"
+	name = "LAEP90-S \"Perun Thor\""
 	desc = "A more secure LAEP90, the LAEP90-S is designed to please paranoid constituents. Body cam not included."
 	icon = 'icons/obj/guns/energy_gun_secure.dmi'
 	item_icons = list(
@@ -39,7 +39,7 @@
 	max_shots = 10
 
 /obj/item/weapon/gun/energy/revolver/secure
-	name = "smart service revolver"
+	name = "LA-ER-680-S \"Protector\""
 	desc = "The LAER680-S, a standard issue service revolver commonly used by higher ranking offcers among the SCG. Fitted with an NT1019 chip which allows remote authorization of the weapon's functionality."
 	icon = 'icons/obj/guns/energy_revolver.dmi'
 	icon_state = "energyrevolverstun100"
@@ -58,7 +58,7 @@
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
 
 /obj/item/weapon/gun/energy/gun/secure/mounted
-	name = "robot energy gun"
+	name = "machine mounted LAEP90-S \"Perun Thor\""
 	desc = "A robot-mounted equivalent of the LAEP90-S, which is always registered to its owner."
 	self_recharge = 1
 	use_external_power = 1
@@ -75,7 +75,7 @@
 	. = ..()
 
 /obj/item/weapon/gun/energy/laser/secure
-	name = "laser carbine"
+	name = "HI G40E \"Dawnstar\""
 	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts. Fitted with an NT1019 chip to make sure killcount is tracked appropriately."
 	icon_state = "lasersec"
 	req_access = list(list(access_brig, access_bridge))

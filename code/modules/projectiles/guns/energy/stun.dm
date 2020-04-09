@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/energy/taser
-	name = "electrolaser"
-	desc = "The NT Mk30 NL is a small, low capacity gun used for non-lethal takedowns. Produced by NT, it's actually a licensed version of a W-T design. It can switch between high and low intensity stun shots."
+	name = "NT-Type 30-NL \"Electron\""
+	desc = "The NT-Type 30-NL \"Electron\" is a small, low capacity gun used for non-lethal takedowns. Produced by NT, it's actually a licensed version of a W-T design. It can switch between high and low intensity stun shots."
 	icon = 'icons/obj/guns/taser.dmi'
 	icon_state = "taser"
 	item_state = null	//so the human update icon uses the icon_state instead.
@@ -14,8 +14,8 @@
 		)
 
 /obj/item/weapon/gun/energy/taser/carbine
-	name = "electrolaser carbine"
-	desc = "The NT Mk44 NL is a high capacity gun used for non-lethal takedowns. It can switch between high and low intensity stun shots."
+	name = "NT-Type 44-NL \"Thunderbolt\""
+	desc = "The NT-Type 44-NL \"Thunderbolt\" is a high capacity gun used for non-lethal takedowns. It can switch between high and low intensity stun shots."
 	icon = 'icons/obj/guns/taser_carbine.dmi'
 	icon_state = "tasercarbine"
 	w_class = ITEM_SIZE_LARGE
@@ -34,7 +34,7 @@
 		)
 
 /obj/item/weapon/gun/energy/taser/mounted
-	name = "mounted electrolaser"
+	name = "mounted NT-Type 30-NL \"Electron\""
 	self_recharge = 1
 	use_external_power = 1
 	has_safety = FALSE
@@ -46,7 +46,7 @@
 
 
 /obj/item/weapon/gun/energy/stunrevolver
-	name = "stun revolver"
+	name = "A&M X6 \"Zeus\""
 	desc = "An A&M X6 Zeus. Designed by al-Maliki & Mosley, but produced under the wing of the Free Trade Union. Industry spies have been trying to get a hold of the blueprints for half a decade."
 	icon = 'icons/obj/guns/stunrevolver.dmi'
 	icon_state = "stunrevolver"
@@ -57,7 +57,7 @@
 	combustion = 0
 
 /obj/item/weapon/gun/energy/stunrevolver/rifle
-	name = "stun rifle"
+	name = "A&M X10 \"Thor\""
 	desc = "An A&M X10 Thor. A vastly oversized variant of the A&M X6 Zeus. Fires overcharged electrodes to obliterate pain receptors without harming them too much."
 	icon = 'icons/obj/guns/stunrifle.dmi'
 	icon_state = "stunrifle"
@@ -74,10 +74,10 @@
 
 /obj/item/weapon/gun/energy/crossbow
 	name = "mini energy-crossbow"
-	desc = "A weapon favored by many mercenary stealth specialists."
+	desc = "A weapon produced by Unathi weaponsmiths. Silent and nonlethal, it functions by overloading one's senses. Preferred by stealth infiltrators, as it is something of a dishonorable item.."
 	icon = 'icons/obj/guns/energy_crossbow.dmi'
 	icon_state = "crossbow"
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_SMALL
 	item_state = "crossbow"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2, TECH_ESOTERIC = 5)
 	matter = list(MATERIAL_STEEL = 2000)
@@ -101,7 +101,7 @@
 
 /obj/item/weapon/gun/energy/crossbow/largecrossbow
 	name = "energy crossbow"
-	desc = "A weapon favored by mercenary infiltration teams."
+	desc = "An Unathi subdual weapon, strong and quiet enough to take just about anything out before they notice. A weapon favored by mercenary infiltration teams."
 	w_class = ITEM_SIZE_LARGE
 	force = 10
 	one_hand_penalty = 1
@@ -109,7 +109,7 @@
 	projectile_type = /obj/item/projectile/energy/bolt/large
 
 /obj/item/weapon/gun/energy/plasmastun
-	name = "plasma pulse projector"
+	name = "MI-MA21 \"Selkie\""
 	desc = "The Mars Military Industries MA21 Selkie is a weapon that uses a laser pulse to ionise the local atmosphere, creating a disorienting pulse of plasma and deafening shockwave as the wave expands."
 	icon = 'icons/obj/guns/plasma_stun.dmi'
 	icon_state = "plasma_stun"
@@ -121,8 +121,8 @@
 	combustion = 0
 
 /obj/item/weapon/gun/energy/confuseray
-	name = "disorientator"
-	desc = "The W-T Mk. 4 Disorientator is a small, low capacity, and short-ranged energy projector intended for personal defense with minimal risk of permanent damage or cross-fire."
+	name = "W-T Mk.4 \"Disorientator\""
+	desc = "The W-T Mk.4 \"Disorientator\" is a small, low capacity, and short-ranged energy projector intended for personal defense with minimal risk of permanent damage or cross-fire."
 	icon = 'icons/obj/guns/confuseray.dmi'
 	icon_state = "confuseray"
 	safety_icon = "safety"
