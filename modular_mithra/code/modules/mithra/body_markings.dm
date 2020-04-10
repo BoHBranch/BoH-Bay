@@ -939,3 +939,4 @@
 		icon_state = "unathidoublehorns"
 		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_HEAD)
+		
