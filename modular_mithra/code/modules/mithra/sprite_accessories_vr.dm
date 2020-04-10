@@ -116,22 +116,12 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
-/datum/sprite_accessory/ears/oni_h1
-	name = "oni horns"
-	desc = ""
-	icon_state = "oni-h1"
-
 /datum/sprite_accessory/ears/oni_h1_c
 	name = "oni horns, colorable"
 	desc = ""
 	icon_state = "oni-h1_c"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
-/datum/sprite_accessory/ears/demon_horns1
-	name = "demon horns"
-	desc = ""
-	icon_state = "demon-horns1"
 
 /datum/sprite_accessory/ears/demon_horns1_c
 	name = "demon horns, colorable"
@@ -163,10 +153,6 @@
 	name = "flatland zorren ears"
 	desc = ""
 	icon_state = "fenears"
-
-/datum/sprite_accessory/ears/sergal //Redundant
-	name = "Sergal ears"
-	icon_state = "serg_plain_s"
 
 /datum/sprite_accessory/ears/foxearshc
 	name = "highlander zorren ears, colorable"
@@ -363,35 +349,11 @@
 	extra_overlay = "vulp-inner"
 
 /datum/sprite_accessory/ears/bunny_floppy
-	name = "floopy bunny ears (colorable)"
+	name = "floppy bunny ears (colorable)"
 	desc = ""
 	icon_state = "floppy_bun"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
-/datum/sprite_accessory/ears/teshari
-	name = "Teshari (colorable fluff)"
-	desc = ""
-	icon_state = "teshari"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY
-	extra_overlay = "teshariinner"
-
-/datum/sprite_accessory/ears/tesharihigh
-	name = "Teshari upper ears (colorable fluff)"
-	desc = ""
-	icon_state = "tesharihigh"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY
-	extra_overlay = "tesharihighinner"
-
-/datum/sprite_accessory/ears/tesharilow
-	name = "Teshari lower ears (colorable fluff)"
-	desc = ""
-	icon_state = "tesharilow"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY
-	extra_overlay = "tesharilowinner"
 
 // Special snowflake ears go below here.
 
@@ -564,6 +526,21 @@
 	name = "harpy wings, colorable"
 	desc = ""
 	icon_state = "harpywings"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/wing/Harpywings_alt
+	name = "harpy wings alt, archeopteryx"
+	desc = ""
+	icon_state = "Harpywings_alt"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/wing/Harpywings_Bat
+	name = "harpy wings, bat"
+	desc = ""
+	icon_state = "Harpywings_bat"
+	extra_overlay = "Harpywings_BatMarkings"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
@@ -982,14 +959,6 @@
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "deertail_mark"
 
-/datum/sprite_accessory/tail/teshari_fluffytail
-	name = "Teshari alternative, colorable"
-	desc = ""
-	icon_state = "teshari_fluffytail"
-	extra_overlay = "teshari_fluffytail_mark"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY
-
 /*
 //For all species tails. Includes haircolored tails.
 /datum/sprite_accessory/tail/special
@@ -1234,6 +1203,12 @@
 	desc = ""
 	icon_state = "Moth_royal"
 
+/datum/sprite_accessory/wing/Neckfur
+	name = "Neck fur"
+	desc = ""
+	icon_state = "Neckfur"
+	do_colouration = 1
+	blend = ICON_MULTIPLY
 
 /datum/sprite_accessory/wing/Moth_royal_colorable
 	name = "moth royal, colorable"
