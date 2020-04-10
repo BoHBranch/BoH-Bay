@@ -45,7 +45,7 @@
 
 /datum/recipe/bigbiteburger
 	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/plainburger,
+		/obj/item/weapon/reagent_containers/food/snacks/hamburger,
 		/obj/item/weapon/reagent_containers/food/snacks/meat,
 		/obj/item/weapon/reagent_containers/food/snacks/meat,
 		/obj/item/weapon/reagent_containers/food/snacks/meat
@@ -355,15 +355,6 @@
 	reagents = list(/datum/reagent/spacespice = 1)
 	result = /obj/item/weapon/reagent_containers/food/snacks/cheese_cracker
 	result_quantity = 4
-
-/datum/recipe/baconburger
-	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/bun,
-		/obj/item/weapon/reagent_containers/food/snacks/meat,
-		/obj/item/weapon/reagent_containers/food/snacks/bacon,
-		/obj/item/weapon/reagent_containers/food/snacks/bacon
-	)
-	result = /obj/item/weapon/reagent_containers/food/snacks/baconburger
 
 /datum/recipe/ntmuffin
 	items = list(

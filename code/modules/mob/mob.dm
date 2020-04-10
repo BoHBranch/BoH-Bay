@@ -5,6 +5,8 @@
 	GLOB.player_list -= src
 	unset_machine()
 	QDEL_NULL(hud_used)
+	if(istype(ability_master))
+		QDEL_NULL(ability_master)
 	if(istype(skillset))
 		QDEL_NULL(skillset)
 	for(var/obj/item/grab/G in grabbed_by)
@@ -394,12 +396,14 @@
 /mob/proc/print_flavor_text()
 	if (flavor_text && flavor_text != "")
 		var/msg = replacetext(flavor_text, "\n", " ")
-		if(NSFW == 1)
-			return "<span><a href='byond://?src=\ref[src];flavor_more=1'>Read Description (NSFW/OOC)...</a></span>"
-		else if(length(msg) <= 40)
+		if(NSFW)
+			return "<span><a href='byond://?src=\ref[src];flavor_more=1'>Read Description (NSFW)...</a></span>"
+		else if(length(msg) <= 64)
 			return "<span class='notice'>[msg]</span>"
 		else
-			return "<span class='notice'>[copytext_preserve_html(msg, 1, 37)]... <a href='byond://?src=\ref[src];flavor_more=1'>More...</a></span>"
+			var/find_tag = "<br>"
+			var/next_br = findtext(msg,find_tag)
+			return "<span class='notice'>[copytext_preserve_html(msg, 1, next_br ? min(next_br,60) : 60)]... <a href='byond://?src=\ref[src];flavor_more=1'>More...</a></span>"
 
 /client/verb/changes()
 	set name = "Changelog"

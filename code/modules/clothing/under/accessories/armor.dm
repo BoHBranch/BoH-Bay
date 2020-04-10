@@ -108,7 +108,7 @@
 
 //Arm guards
 /obj/item/clothing/accessory/armguards
-	name = "arm guards"
+	name = "black arm guards"
 	desc = "A pair of black arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_override = 'icons/mob/onmob/onmob_modular_armor.dmi'
 	icon = 'icons/obj/clothing/obj_suit_modular_armor.dmi'
@@ -126,18 +126,22 @@
 	slot = ACCESSORY_SLOT_ARMOR_A
 
 /obj/item/clothing/accessory/armguards/blue
+	name = "blue arm guards"
 	desc = "A pair of blue arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_state = "armguards_blue"
 
 /obj/item/clothing/accessory/armguards/navy
+	name = "navy blue arm guards"
 	desc = "A pair of navy blue arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_state = "armguards_navy"
 
 /obj/item/clothing/accessory/armguards/green
+	name = "green arm guards"
 	desc = "A pair of green arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_state = "armguards_green"
 
 /obj/item/clothing/accessory/armguards/tan
+	name = "tan arm guards"
 	desc = "A pair of tan arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_state = "armguards_tan"
 
@@ -194,7 +198,7 @@
 
 //Leg guards
 /obj/item/clothing/accessory/legguards
-	name = "leg guards"
+	name = "black leg guards"
 	desc = "A pair of armored leg pads in black. Attaches to a plate carrier."
 	icon_override = 'icons/mob/onmob/onmob_modular_armor.dmi'
 	icon = 'icons/obj/clothing/obj_suit_modular_armor.dmi'
@@ -212,18 +216,22 @@
 	slot = ACCESSORY_SLOT_ARMOR_L
 
 /obj/item/clothing/accessory/legguards/blue
+	name = "blue leg guards"
 	desc = "A pair of armored leg pads in blue. Attaches to a plate carrier."
 	icon_state = "legguards_blue"
 
 /obj/item/clothing/accessory/legguards/navy
+	name = "navy blue leg guards"
 	desc = "A pair of armored leg pads in navy blue. Attaches to a plate carrier."
 	icon_state = "legguards_navy"
 
 /obj/item/clothing/accessory/legguards/green
+	name = "green leg guards"
 	desc = "A pair of armored leg pads in green. Attaches to a plate carrier."
 	icon_state = "legguards_green"
 
 /obj/item/clothing/accessory/legguards/tan
+	name = "tan leg guards"
 	desc = "A pair of armored leg pads in tan. Attaches to a plate carrier."
 	icon_state = "legguards_tan"
 

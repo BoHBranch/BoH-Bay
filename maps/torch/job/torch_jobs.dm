@@ -1,12 +1,9 @@
 /datum/map/torch
 	species_to_job_whitelist = list(
-		/datum/species/adherent = list(/datum/job/ai, /datum/job/cyborg, /datum/job/assistant, /datum/job/janitor, /datum/job/chef, /datum/job/bartender, /datum/job/cargo_tech,
-										/datum/job/engineer, /datum/job/roboticist, /datum/job/chemist, /datum/job/scientist_assistant, /datum/job/scientist, /datum/job/nt_pilot,
-										/datum/job/mining),
 		/datum/species/nabber = list(/datum/job/ai, /datum/job/cyborg, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/chemist,
 									 /datum/job/roboticist, /datum/job/cargo_tech, /datum/job/chef, /datum/job/engineer, /datum/job/doctor, /datum/job/bartender),
 		/datum/species/vox/ = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant),
-		/datum/species/vox/pariah = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/cargo_tech),
+		/datum/species/vox/armalis = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant),
 		/datum/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant)
 	)
 
@@ -17,6 +14,7 @@
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/machine = list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden),
+		/datum/species/adherent = list(HUMAN_ONLY_JOBS, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden),
 		/datum/species/sergal = list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/akula = list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/humanathi= list(HUMAN_ONLY_JOBS, /datum/job/representative),
@@ -94,6 +92,14 @@
 		/datum/mil_rank/civ/civ
 	)
 	required_language = LANGUAGE_HUMAN_EURO
+
+	/* pow_cat is rank equivalent based, max_pow_cat is for non-professional (manual labor) contractor jobs.
+	   A contractor having a higher Galilei/Geneva Convention Article 3 equivelent rank then then an enlisted person for similar work is expected behavior.
+	   Source material is DOD Instruction 1000.01 */
+	max_pow_cat = 5
+
+
+
 
 /datum/map/torch
 	default_assistant_title = "Passenger"

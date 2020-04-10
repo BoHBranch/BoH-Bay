@@ -23,7 +23,7 @@
 	one_hand_penalty = 3
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
 	force = 8
-	max_shots = 12
+	max_shots = 8
 	accuracy = 1
 	projectile_type = /obj/item/projectile/beam/stun/heavy
 	wielded_item_state = "tasercarbine-wielded"
@@ -67,7 +67,7 @@
 	one_hand_penalty = 6
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
 	force = 10
-	max_shots = 10
+	max_shots = 5
 	accuracy = 1
 	projectile_type = /obj/item/projectile/energy/electrode/stunshot
 	wielded_item_state = "stunrifle-wielded"

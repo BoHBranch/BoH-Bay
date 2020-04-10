@@ -59,17 +59,17 @@
 	report_num++
 
 	var/list/evidence = list()
-	var/scaned_object = sample.name
+	var/scanned_object = sample.name
 	if(istype(sample, /obj/item/weapon/forensics/swab))
 		var/obj/item/weapon/forensics/swab/swab = sample
 		evidence["gunshot_residue"] = swab.gunshot_residue_sample.Copy()
 	else if(istype(sample, /obj/item/weapon/sample/fibers))
 		var/obj/item/weapon/sample/fibers/fibers = sample
-		scaned_object = fibers.object
+		scanned_object = fibers.object
 		evidence["fibers"] = fibers.evidence.Copy()
 	else if(istype(sample, /obj/item/weapon/sample/print))
 		var/obj/item/weapon/sample/print/card = sample
-		scaned_object = card.object ? card.object : card.name
+		scanned_object = card.object ? card.object : card.name
 		evidence["prints"] = card.evidence.Copy()
 	else
 		if(sample.fingerprints)
@@ -80,9 +80,9 @@
 			evidence["gunshot_residue"] = sample.gunshot_residue.Copy()
 
 	report.SetName("Forensic report #[++report_num]: [sample.name]")
-	report.info = "<b>Scanned item:</b><br>[scaned_object]<br><br>"
+	report.info = "<b>Scanned item:</b><br>[scanned_object]<br><br>"
 	if("gunshot_residue" in evidence)
-		report.info += "<b>Gunpowder residue analysis report #[report_num]</b>: [scaned_object]<br>"
+		report.info += "<b>Gunpowder residue analysis report #[report_num]</b>: [scanned_object]<br>"
 		if(evidence["gunshot_residue"])
 			report.info += "Residue from a [evidence["gunshot_residue"]] bullet detected."
 		else
@@ -95,12 +95,12 @@
 		else
 			report.info += "No fibers found."
 	if("prints" in evidence)
-		report.info += "<b>Fingerprint analysis report</b>: [scaned_object]<br>"
+		report.info += "<b>Fingerprint analysis report</b>: [scanned_object]<br>"
 		if(LAZYLEN(evidence["prints"]))
 			report.info += "Surface analysis has determined unique fingerprint strings:<br><br>"
 			for(var/prints in evidence["prints"])
 				report.info += "<span class='notice'>Fingerprint string: </span>"
-				if(!is_complete_print(evidence["prints"][prints]))
+				if(!is_complete_print(evidence["prints"][prints]) && !user.skill_check(SKILL_FORENSICS, SKILL_EXPERT))
 					report.info += "INCOMPLETE PRINT"
 				else
 					report.info += "[prints]"

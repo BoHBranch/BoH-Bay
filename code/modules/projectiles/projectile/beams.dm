@@ -5,7 +5,7 @@
 	fire_sound='sound/weapons/Laser.ogg'
 	impact_sounds = list(BULLET_IMPACT_MEAT = SOUNDS_LASER_MEAT, BULLET_IMPACT_METAL = SOUNDS_LASER_METAL)
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE
-	damage = 40
+	damage = 30
 	damage_type = BURN
 	sharp = 1 //concentrated burns
 	damage_flags = DAM_LASER
@@ -27,10 +27,9 @@
 
 /obj/item/projectile/beam/smalllaser
 	damage = 25
-	armor_penetration = 10
 
 /obj/item/projectile/beam/midlaser
-	damage = 50
+	damage = 45
 	armor_penetration = 20
 	distance_falloff = 1
 
@@ -62,6 +61,7 @@
 /obj/item/projectile/beam/xray/midlaser
 	damage = 30
 	armor_penetration = 50
+	distance_falloff = 1
 
 /obj/item/projectile/beam/pulse
 	name = "pulse"
@@ -168,7 +168,7 @@
 	name = "sniper beam"
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/marauder.ogg'
-	damage = 50
+	damage = 65
 	armor_penetration = 10
 	stun = 3
 	weaken = 3
@@ -187,7 +187,7 @@
 	damage = 1//flavor burn! still not a laser, dmg will be reduce by energy resistance not laser resistances
 	damage_type = BURN
 	eyeblur = 1//Some feedback that you've been hit
-	agony = 40
+	agony = 25
 
 	muzzle_type = /obj/effect/projectile/stun/muzzle
 	tracer_type = /obj/effect/projectile/stun/tracer
@@ -196,7 +196,7 @@
 /obj/item/projectile/beam/stun/heavy
 	name = "heavy stun beam"
 	damage = 2
-	agony = 60
+	agony = 40
 
 /obj/item/projectile/beam/stun/shock
 	name = "shock beam"
