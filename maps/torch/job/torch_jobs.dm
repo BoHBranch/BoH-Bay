@@ -13,7 +13,7 @@
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/machine = list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden),
-		/datum/species/adherent = list(HUMAN_ONLY_JOBS, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden),
+		/datum/species/adherent = list(HUMAN_ONLY_JOBS, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden, /datum/job/detective, /datum/job/seccadet),
 		/datum/species/sergal = list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/akula = list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/humanathi= list(HUMAN_ONLY_JOBS, /datum/job/representative),
