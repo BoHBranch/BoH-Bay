@@ -97,17 +97,24 @@
 
 #define random_id(key,min_id,max_id) uniqueness_repository.Generate(/datum/uniqueness_generator/id_random, key, min_id, max_id)
 
-#define to_chat(target, message)                            target << (message)
-#define to_world(message)                                   world << (message)
-#define to_world_log(message)                               world.log << (message)
-#define sound_to(target, sound)                             target << (sound)
-#define to_file(file_entry, source_var)                     file_entry << (source_var)
-#define from_file(file_entry, target_var)                   file_entry >> (target_var)
-#define show_browser(target, browser_content, browser_name) target << browse(browser_content, browser_name)
-#define close_browser(target, browser_name)                 target << browse(null, browser_name)
-#define show_image(target, image)                           target << (image)
-#define send_rsc(target, rsc_content, rsc_name)             target << browse_rsc(rsc_content, rsc_name)
-#define open_link(target, url)             target << link(url)
+#define to_chat(target, message)							target << (message)
+#define to_world(message)									world << (message)
+#define to_world_log(message)								to_world_log((message))
+#define sound_to(target, sound)								target << (sound)
+#define to_file(file_entry, source_var)						file_entry << (source_var)
+#define from_file(file_entry, target_var)					file_entry >> (target_var)
+#define to_save(savefile, value)							savefile << value
+#define from_save(savefile, value)							savefile >> value
+#define to_save_key(savefile, key, value)					to_save(savefile[key], value)
+#define from_save_key(savefile, key, value)					from_save(savefile[key], value)
+#define show_browser(target, browser_content, browser_name)	target << browse(browser_content, browser_name)
+#define close_browser(target, browser_name)					target << browse(null, browser_name)
+#define show_image(target, image)							target << (image)
+#define send_rsc(target, rsc_content, rsc_name)				target << browse_rsc(rsc_content, rsc_name)
+#define open_link(target, url)								target << link(url)
+#define send_output(target, msg, control)					target << output(msg, control)
+#define send_link(target, url)								target << link(url)
+#define run_file(target, path)								target << run(file(path))
 
 #define MAP_IMAGE_PATH "nano/images/[GLOB.using_map.path]/"
 
@@ -135,10 +142,6 @@
 
 // Insert an object A into a sorted list using cmp_proc (/code/_helpers/cmp.dm) for comparison.
 #define ADD_SORTED(list, A, cmp_proc) if(!list.len) {list.Add(A)} else {list.Insert(FindElementIndex(A, list, cmp_proc), A)}
-
-//Currently used in SDQL2 stuff
-#define send_output(target, msg, control) target << output(msg, control)
-#define send_link(target, url) target << link(url)
 
 // Spawns multiple objects of the same type
 #define cast_new(type, num, args...) if((num) == 1) { new type(args) } else { for(var/i=0;i<(num),i++) { new type(args) } }

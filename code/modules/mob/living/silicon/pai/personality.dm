@@ -17,12 +17,12 @@
 	var/savefile/F = new /savefile(src.savefile_path(user))
 
 
-	F["name"] << src.name
-	F["description"] << src.description
-	F["role"] << src.role
-	F["comments"] << src.comments
+	to_save_key(F, "name", src.name)
+	to_save_key(F, "description", src.description)
+	to_save_key(F, "role", src.role)
+	to_save_key(F, "comments", src.comments)
 
-	F["version"] << 1
+	to_save_key(F, "version", 1)
 
 	return 1
 
@@ -45,7 +45,7 @@
 	if(!F) return //Not everyone has a pai savefile.
 
 	var/version = null
-	F["version"] >> version
+	from_save_key(F, "version", version)
 
 	if (isnull(version) || version != 1)
 		fdel(path)
@@ -53,8 +53,8 @@
 			alert(user, "Your savefile was incompatible with this version and was deleted.")
 		return 0
 
-	F["name"] >> src.name
-	F["description"] >> src.description
-	F["role"] >> src.role
-	F["comments"] >> src.comments
+	from_save_key(F, "name", src.name)
+	from_save_key(F, "description", src.description)
+	from_save_key(F, "role", src.role)
+	from_save_key(F, "comments", src.comments)
 	return 1

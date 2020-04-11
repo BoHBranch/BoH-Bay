@@ -7,39 +7,39 @@
 	sort_order = 4
 
 /datum/category_item/player_setup_item/physical/flavor/load_character(var/savefile/S)
-	S["flavor_texts_general"]	>> pref.flavor_texts["general"]
-	S["flavor_texts_head"]		>> pref.flavor_texts["head"]
-	S["flavor_texts_face"]		>> pref.flavor_texts["face"]
-	S["flavor_texts_eyes"]		>> pref.flavor_texts["eyes"]
-	S["flavor_texts_torso"]		>> pref.flavor_texts["torso"]
-	S["flavor_texts_arms"]		>> pref.flavor_texts["arms"]
-	S["flavor_texts_hands"]		>> pref.flavor_texts["hands"]
-	S["flavor_texts_legs"]		>> pref.flavor_texts["legs"]
-	S["flavor_texts_feet"]		>> pref.flavor_texts["feet"]
-	S["flavor_texts_naked"]		>> pref.flavor_texts["naked"]
-	S["flavor_texts_NSFW/OOC"]	>> pref.flavor_texts["NSFW/OOC"]
+	from_save_key(S, "flavor_texts_general", pref.flavor_texts["general"])
+	from_save_key(S, "flavor_texts_head", pref.flavor_texts["head"])
+	from_save_key(S, "flavor_texts_face", pref.flavor_texts["face"])
+	from_save_key(S, "flavor_texts_eyes", pref.flavor_texts["eyes"])
+	from_save_key(S, "flavor_texts_torso", pref.flavor_texts["torso"])
+	from_save_key(S, "flavor_texts_arms", pref.flavor_texts["arms"])
+	from_save_key(S, "flavor_texts_hands", pref.flavor_texts["hands"])
+	from_save_key(S, "flavor_texts_legs", pref.flavor_texts["legs"])
+	from_save_key(S, "flavor_texts_feet", pref.flavor_texts["feet"])
+	from_save_key(S, "flavor_texts_naked", pref.flavor_texts["naked"])
+	from_save_key(S, "flavor_texts_NSFW/OOC", pref.flavor_texts["NSFW/OOC"])
 
 	//Flavour text for robots.
-	S["flavour_texts_robot_Default"] >> pref.flavour_texts_robot["Default"]
+	from_save_key(S, "flavour_texts_robot_Default", pref.flavour_texts_robot["Default"])
 	for(var/module in SSrobots.all_module_names)
-		S["flavour_texts_robot_[module]"] >> pref.flavour_texts_robot[module]
+		from_save_key(S, "flavour_texts_robot_[module]", pref.flavour_texts_robot[module])
 
 /datum/category_item/player_setup_item/physical/flavor/save_character(var/savefile/S)
-	S["flavor_texts_general"]	<< pref.flavor_texts["general"]
-	S["flavor_texts_head"]		<< pref.flavor_texts["head"]
-	S["flavor_texts_face"]		<< pref.flavor_texts["face"]
-	S["flavor_texts_eyes"]		<< pref.flavor_texts["eyes"]
-	S["flavor_texts_torso"]		<< pref.flavor_texts["torso"]
-	S["flavor_texts_arms"]		<< pref.flavor_texts["arms"]
-	S["flavor_texts_hands"]		<< pref.flavor_texts["hands"]
-	S["flavor_texts_legs"]		<< pref.flavor_texts["legs"]
-	S["flavor_texts_feet"]		<< pref.flavor_texts["feet"]
-	S["flavor_texts_naked"]		<< pref.flavor_texts["naked"]
-	S["flavor_texts_NSFW/OOC"]	<< pref.flavor_texts["NSFW/OOC"]
+	to_save_key(S, "flavor_texts_general", pref.flavor_texts["general"])
+	to_save_key(S, "flavor_texts_head", pref.flavor_texts["head"])
+	to_save_key(S, "flavor_texts_face", pref.flavor_texts["face"])
+	to_save_key(S, "flavor_texts_eyes", pref.flavor_texts["eyes"])
+	to_save_key(S, "flavor_texts_torso", pref.flavor_texts["torso"])
+	to_save_key(S, "flavor_texts_arms", pref.flavor_texts["arms"])
+	to_save_key(S, "flavor_texts_hands", pref.flavor_texts["hands"])
+	to_save_key(S, "flavor_texts_legs", pref.flavor_texts["legs"])
+	to_save_key(S, "flavor_texts_feet", pref.flavor_texts["feet"])
+	to_save_key(S, "flavor_texts_naked", pref.flavor_texts["naked"])
+	to_save_key(S, "flavor_texts_NSFW/OOC", pref.flavor_texts["NSFW/OOC"])
 
-	S["flavour_texts_robot_Default"] << pref.flavour_texts_robot["Default"]
+	to_save_key(S, "flavour_texts_robot_Default", pref.flavour_texts_robot["Default"])
 	for(var/module in SSrobots.all_module_names)
-		S["flavour_texts_robot_[module]"] << pref.flavour_texts_robot[module]
+		to_save_key(S, "flavour_texts_robot_[module]", pref.flavour_texts_robot[module])
 
 /datum/category_item/player_setup_item/physical/flavor/sanitize_character()
 	if(!istype(pref.flavor_texts))        pref.flavor_texts = list()
@@ -129,7 +129,7 @@
 	HTML += "<br>"
 	HTML += "<hr />"
 	HTML += "<tt>"
-	user << browse(HTML, "window=flavor_text;size=430x300")
+	show_browser(user, HTML, "window=flavor_text;size=430x300")
 	return
 
 /datum/category_item/player_setup_item/physical/flavor/proc/SetFlavourTextRobot(mob/user)
@@ -146,5 +146,5 @@
 		HTML += "<br>"
 	HTML += "<hr />"
 	HTML += "<tt>"
-	user << browse(HTML, "window=flavour_text_robot;size=430x300")
+	show_browser(user, HTML, "window=flavour_text_robot;size=430x300")
 	return

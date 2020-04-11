@@ -392,4 +392,4 @@
 	HTML += "<hr />"
 	HTML +="<a href='?src=\ref[src];flavor_change=done'>\[Done\]</a>"
 	HTML += "<tt>"
-	src << browse(jointext(HTML,null), "window=flavor_changes;size=430x300")
+	show_browser(src, jointext(HTML,null), "window=flavor_changes;size=430x300")
