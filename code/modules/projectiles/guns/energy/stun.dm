@@ -14,8 +14,8 @@
 		)
 
 /obj/item/weapon/gun/energy/taser/carbine
-	name = "NT-Type 44-NL \"Thunderbolt\""
-	desc = "The NT-Type 44-NL \"Thunderbolt\" is a high capacity gun used for non-lethal takedowns. It can switch between high and low intensity stun shots."
+	name = "WT544-NL \"Thunderbolt\""
+	desc = "The WT544-NL \"Thunderbolt\" is a high capacity gun used for non-lethal takedowns. It can switch between high and low intensity stun shots."
 	icon = 'icons/obj/guns/taser_carbine.dmi'
 	icon_state = "tasercarbine"
 	w_class = ITEM_SIZE_LARGE
