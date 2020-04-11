@@ -76,7 +76,7 @@ obj/item/weapon/gun/energy/retro
 	self_recharge = 1
 
 /obj/item/weapon/gun/energy/lasercannon
-	name = "NT-Type 12 \"Bombast\""
+	name = "HI-G65E \"Bombast\""
 	desc = "With the laser cannon, the lasing medium is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core. This incredible technology may help YOU achieve high excitation rates with small laser volumes!"
 	icon_state = "lasercannon"
 	icon = 'icons/obj/guns/laser_cannon.dmi'
@@ -93,7 +93,7 @@ obj/item/weapon/gun/energy/retro
 	wielded_item_state = "gun_wielded"
 
 /obj/item/weapon/gun/energy/lasercannon/mounted
-	name = "mounted NT-Type 12 \"Bombast\""
+	name = "mounted HI-G65E \"Bombast\""
 	self_recharge = 1
 	use_external_power = 1
 	recharge_time = 10
