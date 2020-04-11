@@ -84,7 +84,7 @@
 
 /obj/item/device/assembly/timer/Topic(href, href_list, state = GLOB.physical_state)
 	if((. = ..()))
-		close_browser(, "window=timer")
+		close_browser(usr, "window=timer")
 		onclose(usr, "timer")
 		return
 
@@ -98,7 +98,7 @@
 		time = min(max(round(time), 0), 600)
 
 	if(href_list["close"])
-		close_browser(, "window=timer")
+		close_browser(usr, "window=timer")
 		return
 
 	if(usr)

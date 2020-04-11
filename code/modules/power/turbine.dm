@@ -150,7 +150,7 @@
 
 	if ( (get_dist(src, user) > 1 ) || (stat & (NOPOWER|BROKEN)) && (!istype(user, /mob/living/silicon/ai)) )
 		user.machine = null
-		close_browser(, "window=turbine")
+		close_browser(user, "window=turbine")
 		return
 
 	user.machine = src
@@ -179,7 +179,7 @@
 
 /obj/machinery/power/turbine/OnTopic(user, href_list)
 	if(href_list["close"])
-		close_browser(, "window=turbine")
+		close_browser(user, "window=turbine")
 		return TOPIC_HANDLED
 
 	if(href_list["str"])
@@ -257,7 +257,7 @@
 					door_status = 0
 		. = TOPIC_REFRESH
 	else if( href_list["close"] )
-		close_browser(, "window=computer")
+		close_browser(user, "window=computer")
 		return TOPIC_HANDLED
 
 	if(. == TOPIC_REFRESH)
