@@ -23,7 +23,7 @@
 	fielded under their command.</BR></BR>\
 	From battleship to corvette, Scavenger to Biotechnician, recent demand for action has seen new fleets formed\
 	and territory claimed by the long-dormant nation.</BR></BR>\
-	The Vox are a proud people, and face much distrust from the galactic community, but this does not seem to deter them."}
+	The Vox are a proud people, and face much distrust from the galactic community, but this does not seem to deter them."
 	codex_description = "The Vox are a cautious, defensive species from the outer systems and beyond human space. They\
 	reveal little to the outside world, but are known to trade and cooperate with those they find trustworthy. When\
 	insulted or betrayed, Vox are quick to defend the honor of their kin and ensure it is known they are not to be trifled\
