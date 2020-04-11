@@ -81,6 +81,6 @@
 	icon_state = initial(d.icon_state)
 
 /datum/detective_gun_skin/mk_standard
-	name = "\improper NT Type 58 \"Dose\""
+	name = "NT Type 58 \"Dose\"" //DAILY
 	icon_state = "secguncomp"
 	icon = 'icons/obj/guns/pistol.dmi'
