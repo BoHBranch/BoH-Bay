@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/energy/ionrifle
-	name = "NT-Type 60-EW \"Halicon\""
-	desc = "The NT-Type 60-EW \"Halicon\" is a man portable anti-armor weapon designed to disable mechanical threats, produced by NT. Not the best of its type."
+	name = "HI-G98-EW \"Halicon\""
+	desc = "The HI-G98-EW \"Halicon\" is a man portable anti-armor weapon designed to disable mechanical threats, produced by NT. Not the best of its type."
 	icon = 'icons/obj/guns/ion_rifle.dmi'
 	icon_state = "ionrifle"
 	item_state = "ionrifle"
@@ -21,8 +21,8 @@
 	..(max(severity, 2)) //so it doesn't EMP itself, I guess
 
 /obj/item/weapon/gun/energy/ionrifle/small
-	name = "NT-Type72-EW \"Preston\""
-	desc = "The NT-Type72-EW \"Preston\" is a personal defense weapon designed to disable mechanical threats."
+	name = "HI-G98S-EW \"Preston\""
+	desc = "The HI-G98S--EW \"Preston\" is a personal defense weapon designed to disable mechanical threats."
 	icon = 'icons/obj/guns/ion_pistol.dmi'
 	icon_state = "ionpistol"
 	item_state = "ionpistol"
@@ -144,8 +144,8 @@
 	projectile_type = /obj/item/projectile/energy/phoron
 
 /obj/item/weapon/gun/energy/plasmacutter
-	name = "NT-Type 121 Plasma Cutter"
-	desc = "A mining tool of NanoTrasen make capable of expelling concentrated plasma bursts. You could use it to cut limbs off of things! Or, you know, mine stuff."
+	name = "Greyson MK121 Plasma Cutter"
+	desc = "A mining tool of Greyson make capable of expelling concentrated plasma bursts. You could use it to cut limbs off of things! Or, you know, mine stuff."
 	charge_meter = 0
 	icon = 'icons/obj/guns/plasmacutter.dmi'
 	icon_state = "plasmacutter"
@@ -162,7 +162,7 @@
 	var/datum/effect/effect/system/spark_spread/spark_system
 
 /obj/item/weapon/gun/energy/plasmacutter/mounted
-	name = "mounted NT-Type 121 Plasma Cutter"
+	name = "mounted Greyson MK121 Plasma Cutter"
 	use_external_power = 1
 	max_shots = 4
 	has_safety = FALSE
