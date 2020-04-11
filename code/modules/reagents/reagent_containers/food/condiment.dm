@@ -6,9 +6,9 @@
 
 //Food items that aren't eaten normally and leave an empty container behind.
 /obj/item/weapon/reagent_containers/food/condiment
-	name = "Condiment Container"
+	name = "condiment container"
 	desc = "Just your average condiment container."
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/aurora/food.dmi'
 	icon_state = "emptycondiment"
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER
 	possible_transfer_amounts = "1;5;10"
@@ -36,17 +36,16 @@
 		var/tmp_label = sanitizeSafe(input(user, "Enter a label for [name]", "Label", label_text), MAX_NAME_LEN)
 		if(tmp_label == label_text)
 			return
-		if(length(tmp_label) > 10)
-			to_chat(user, "<span class='notice'>The label can be at most 10 characters long.</span>")
+		if(length(tmp_label) > MAX_NAME_LEN)
+			to_chat(user, "<span class='notice'>The label can be at most [MAX_NAME_LEN] characters long.</span>")
 		else
 			if(length(tmp_label))
 				to_chat(user, "<span class='notice'>You set the label to \"[tmp_label]\".</span>")
 				label_text = tmp_label
-				name = addtext(name," ([label_text])")
 			else
 				to_chat(user, "<span class='notice'>You remove the label.</span>")
 				label_text = null
-				on_reagent_change()
+			on_reagent_change()
 		return
 
 
@@ -126,6 +125,7 @@
 /obj/item/weapon/reagent_containers/food/condiment/sugar
 	name = "sugar"
 	desc = "Cavities in a bottle."
+	icon_state = "sugarsmall"
 	starting_reagents = list(/datum/reagent/sugar = 50)
 
 /obj/item/weapon/reagent_containers/food/condiment/ketchup
