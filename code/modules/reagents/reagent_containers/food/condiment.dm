@@ -25,10 +25,11 @@
 		/datum/reagent/sodiumchloride = /obj/item/weapon/reagent_containers/food/condiment/small/saltshaker,
 		/datum/reagent/blackpepper = /obj/item/weapon/reagent_containers/food/condiment/small/peppermill,
 		/datum/reagent/nutriment/cornoil = /obj/item/weapon/reagent_containers/food/condiment/cornoil,
-		/datum/reagent/sugar = /obj/item/weapon/reagent_containers/food/condiment/sugar,
+		/datum/reagent/sugar = /obj/item/weapon/reagent_containers/food/condiment/small/sugar,
 		/datum/reagent/nutriment/mayo = /obj/item/weapon/reagent_containers/food/condiment/mayo,
 		/datum/reagent/nutriment/vinegar = /obj/item/weapon/reagent_containers/food/condiment/vinegar,
-		/datum/reagent/spacespice = /obj/item/weapon/reagent_containers/food/condiment/exoticspices
+		/datum/reagent/spacespice = /obj/item/weapon/reagent_containers/food/condiment/exoticspices,
+		/datum/reagent/nutriment/honey = /obj/item/weapon/reagent_containers/food/condiment/honey
 		)
 
 /obj/item/weapon/reagent_containers/food/condiment/attackby(var/obj/item/weapon/W as obj, var/mob/user as mob)
@@ -196,6 +197,7 @@
 //MRE condiments and drinks.
 
 /obj/item/weapon/reagent_containers/food/condiment/small/packet
+	icon = 'icons/obj/food.dmi'
 	icon_state = "packet_small"
 	w_class = ITEM_SIZE_TINY
 	possible_transfer_amounts = "1;5;10"
@@ -369,6 +371,15 @@
 	desc = "An exotic blend of spices for cooking. It must flow."
 	icon = 'icons/obj/aurora/food.dmi'
 	icon_state = "spacespicebottle"
+	amount_per_transfer_from_this = 1
+	volume = 60
+	starting_reagents = list(/datum/reagent/spacespice = 60)
+
+/obj/item/weapon/reagent_containers/food/condiment/honey
+	name = "bottle of honey"
+	desc = "It's a honey bear, honey bear!"
+	icon = 'icons/obj/aurora/food.dmi'
+	icon_state = "honey"
 	amount_per_transfer_from_this = 1
 	volume = 60
 	starting_reagents = list(/datum/reagent/spacespice = 60)
