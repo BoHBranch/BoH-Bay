@@ -26,7 +26,7 @@
 	req_access = list(list(access_brig, access_bridge))
 
 /obj/item/weapon/gun/energy/gun/secure
-	name = "LAEP90-S \"Perun Thor\""
+	name = "LAEP90-S \"Unvanquished\""
 	desc = "A more secure LAEP90, the LAEP90-S is designed to please paranoid constituents. Body cam not included."
 	icon = 'icons/obj/guns/energy_gun_secure.dmi'
 	item_icons = list(
@@ -58,7 +58,7 @@
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
 
 /obj/item/weapon/gun/energy/gun/secure/mounted
-	name = "machine mounted LAEP90-S \"Perun Thor\""
+	name = "machine mounted LAEP90-S \"Unvanquished\""
 	desc = "A robot-mounted equivalent of the LAEP90-S, which is always registered to its owner."
 	self_recharge = 1
 	use_external_power = 1
