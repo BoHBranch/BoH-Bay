@@ -43,7 +43,7 @@
 	
 /datum/uplink_item/item/implants/adrenalin
 	name = "Adrenalin Implant"
-	desc "An implant with precisely 3 charges. On use it removes any and all none pain related means of crowd control. \
+	desc = "An implant with precisely 3 charges. On use it removes any and all none pain related means of crowd control. \
 	namely knockdowns, stuns and weakening. Does nothing against pain related crowd control. Usefull in case you get shot \
 	in the leg."
 	item_cost = 25
