@@ -262,9 +262,9 @@ swapmap
 		else
 			var/dummy
 			from_save_key(S, "id", dummy)
-		from_save_key(S, "z", z2		// these are depth,)
-		from_save_key(S, "y", y2		//   		 height,)
-		from_save_key(S, "x", x2		//			 width)
+		from_save_key(S, "z", z2)		// these are depth,
+		from_save_key(S, "y", y2)		//   		 height,
+		from_save_key(S, "x", x2)		//			 width
 		from_save_key(S, "areas", areas)
 		locked=1
 		AllocateSwapMap()	// adjust x1,y1,z1 - x2,y2,z2 coords

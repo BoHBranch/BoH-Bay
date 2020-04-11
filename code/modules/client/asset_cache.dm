@@ -52,12 +52,12 @@ You can set verify to TRUE if you want send() to sleep until the client has the 
 
 	client.sending |= asset_name
 	var/job = ++client.last_asset_job
-
-	show_browser(client, {"
-	<script>
-		window.location.href="?asset_cache_confirm_arrival=[job]"
-	</script>
-	"}, "window=asset_cache_browser")
+	var/use_content = {"\
+	<script>\
+		window.location.href=\"?asset_cache_confirm_arrival=[job]\"\
+	</script>\
+	"}
+	show_browser(client, use_content, "window=asset_cache_browser")
 
 	var/t = 0
 	var/timeout_time = (ASSET_CACHE_SEND_TIMEOUT * client.sending.len) + ASSET_CACHE_SEND_TIMEOUT
@@ -104,12 +104,12 @@ You can set verify to TRUE if you want send() to sleep until the client has the 
 		return 0
 	client.sending |= unreceived
 	var/job = ++client.last_asset_job
-
-	show_browser(client, {"
+	var/use_content = {"
 	<script>
 		window.location.href="?asset_cache_confirm_arrival=[job]"
 	</script>
-	"}, "window=asset_cache_browser")
+	"}
+	show_browser(client, use_content, "window=asset_cache_browser")
 
 	var/t = 0
 	var/timeout_time = ASSET_CACHE_SEND_TIMEOUT * client.sending.len

@@ -107,10 +107,10 @@
 #define from_save(savefile, value)							savefile >> value
 #define to_save_key(savefile, key, value)					to_save(savefile[key], value)
 #define from_save_key(savefile, key, value)					from_save(savefile[key], value)
-#define show_browser(target, browser_content, browser_name)	target << browse(browser_content, browser_name)
+#define show_browser(target, browser_content, browser_name)	target << browse((browser_content), (browser_name))
 #define close_browser(target, browser_name)					target << browse(null, browser_name)
 #define show_image(target, image)							target << (image)
-#define send_rsc(target, rsc_content, rsc_name)				target << browse_rsc(rsc_content, rsc_name)
+#define send_rsc(target, rsc_content, rsc_name)				target << browse_rsc((rsc_content), (rsc_name))
 #define open_link(target, url)								target << link(url)
 #define send_output(target, msg, control)					target << output(msg, control)
 #define send_link(target, url)								target << link(url)
