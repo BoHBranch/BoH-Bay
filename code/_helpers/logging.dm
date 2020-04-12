@@ -1,6 +1,6 @@
 //wrapper macros for easier grepping
-#define DIRECT_OUTPUT(A, B) A << B
-#define WRITE_FILE(file, text) DIRECT_OUTPUT(file, text)
+//#define DIRECT_OUTPUT(A, B) A << B // we use RUST_G instead
+#define WRITE_FILE(file, text) rustg_log_write(file, text)
 
 
 // On Linux/Unix systems the line endings are LF, on windows it's CRLF, admins that don't use notepad++
