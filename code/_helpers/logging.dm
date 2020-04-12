@@ -9,6 +9,17 @@
 
 /var/global/log_end= world.system_type == UNIX ? ascii2text(13) : ""
 
+// logging.dm
+/proc/log_startup()
+	var/static/already_logged = FALSE
+	if (!already_logged)
+		WRITE_FILE(diary, "[log_end]\n[log_end]\nStarting up. (ID: [game_id]) [log_end]\n---------------------[log_end]")
+		already_logged = TRUE
+	else
+		crash_with("log_startup() was called more then once")
+
+/proc/shutdown_logging()
+	call(RUST_G, "log_close_all")()
 
 /proc/error(msg)
 	to_world_log("## ERROR: [msg][log_end]")

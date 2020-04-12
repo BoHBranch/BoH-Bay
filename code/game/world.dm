@@ -75,8 +75,8 @@
 	SetupLogs()
 	var/date_string = time2text(world.realtime, "YYYY/MM/DD")
 	href_logfile = file("data/logs/[date_string] hrefs.htm")
-	diary = file("data/logs/[date_string].log")
-	game_log("STARTUP","[log_end]\n[log_end]\nStarting up. (ID: [game_id]) [time2text(world.timeofday, "hh:mm.ss")][log_end]\n---------------------[log_end]")
+	diary = "data/logs/[date_string].log"
+	log_startup()
 	changelog_hash = md5('html/changelog.html')					//used for telling if the changelog has changed recently
 
 	if(config && config.server_name != null && config.server_suffix && world.port > 0)
@@ -517,8 +517,9 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	if (hard_reset)
 		log_misc("World hard rebooted at [time_stamp()].")
+		shutdown_logging()
 		world.TgsEndProcess()
-
+	shutdown_logging()
 	..(reason)
 
 /world/Del()
