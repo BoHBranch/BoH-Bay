@@ -1,6 +1,7 @@
 /obj/structure/closet/secure_closet/freezer/kitchen
 	name = "kitchen cabinet"
 	req_access = list(access_kitchen)
+	closet_appearance = null
 	icon = 'icons/obj/closets/fridge.dmi'
 
 /obj/structure/closet/secure_closet/freezer/kitchen/WillContain()
@@ -16,6 +17,7 @@
 /obj/structure/closet/secure_closet/freezer/meat
 	name = "meat fridge"
 	icon = 'icons/obj/closets/fridge.dmi'
+	closet_appearance = null
 
 /obj/structure/closet/secure_closet/freezer/meat/WillContain()
 	return list(
@@ -26,6 +28,7 @@
 /obj/structure/closet/secure_closet/freezer/fridge
 	name = "refrigerator"
 	icon = 'icons/obj/closets/fridge.dmi'
+	closet_appearance = null
 
 /obj/structure/closet/secure_closet/freezer/fridge/WillContain()
 	return list(
@@ -37,6 +40,7 @@
 /obj/structure/closet/secure_closet/freezer/money
 	name = "secure locker"
 	icon = 'icons/obj/closets/fridge.dmi'
+	closet_appearance = null
 	req_access = list(access_heads_vault)
 
 /obj/structure/closet/secure_closet/freezer/money/Initialize()
