@@ -277,10 +277,10 @@
 
 /datum/recipe/fishfingers
 	appliance = OVEN | PAN
-	reagents = list(/datum/reagent/nutriment/flour = 10,/datum/reagent/nutriment/protein/egg = 3)
 	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/fish/carp
+		/obj/item/weapon/reagent_containers/food/snacks/fish
 	)
+	coating = /datum/reagent/nutriment/coating/batter
 	result = /obj/item/weapon/reagent_containers/food/snacks/fishfingers
 	reagent_mix = RECIPE_REAGENT_REPLACE
 
@@ -486,15 +486,6 @@
 	)
 	reagent_mix = RECIPE_REAGENT_REPLACE //Get that water outta here
 	result = /obj/item/weapon/reagent_containers/food/snacks/poachedegg
-
-/datum/recipe/sashimi
-	appliance = PAN
-	reagents = list(/datum/reagent/nutriment/soysauce = 5)
-	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/fish/carp
-	)
-	result = /obj/item/weapon/reagent_containers/food/snacks/sashimi
-
 
 /datum/recipe/chilied_eggs
 	appliance = PAN

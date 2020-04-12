@@ -100,14 +100,13 @@
 	QUEUE_TEMPERATURE_ATOMS(src)
 
 /obj/machinery/appliance/cooker/ProcessAtomTemperature()
-	if((!(stat & POWEROFF) && !(stat & NOPOWER)) || (temperature >= T20C)) // must be powered and turned on, or hot, to keep processing
+	if((!(stat & POWEROFF) && !(stat & NOPOWER))) // must be powered and turned on to keep processing
 		update_cooking_power() // update!
 		if(!LAZYLEN(cooking_objs))
 			return TRUE
 		for(var/datum/cooking_item/CI in cooking_objs)
 			QUEUE_TEMPERATURE_ATOMS(CI.container)
-		return TRUE // Don't kill this processing loop unless we're not powered or we're cold.
-		// Also don't cool us.
+		return TRUE // Don't kill this processing loop unless we're not powered
 	. = ..()
 
 //Cookers do differently, they use containers
