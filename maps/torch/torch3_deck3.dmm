@@ -332,6 +332,13 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
+/obj/machinery/reagentgrinder/juicer{
+	pixel_z = 8
+	},
+/obj/item/weapon/reagent_containers/glass/beaker{
+	pixel_x = 5;
+	pixel_z = 5
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "aQ" = (
@@ -604,6 +611,7 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
+/obj/item/weapon/tape_roll,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "by" = (
@@ -2088,12 +2096,7 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/obj/structure/table/marble,
 /obj/structure/disposalpipe/segment,
-/obj/item/weapon/reagent_containers/glass/beaker/bowl{
-	pixel_z = 8;
-	pixel_w = 0
-	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "ex" = (
@@ -4136,10 +4139,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/forestarboard)
-"ih" = (
-/obj/structure/closet/crate/freezer,
-/turf/simulated/floor/tiled/freezer,
-/area/crew_quarters/galleybackroom)
 "ii" = (
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
@@ -5163,6 +5162,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/item/weapon/stool/bar/padded,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/mess)
 "jY" = (
@@ -14226,6 +14226,7 @@
 /obj/machinery/door/blast/shutters{
 	dir = 2;
 	id_tag = "kitchen";
+	layer = 4.02;
 	name = "Kitchen Shutters"
 	},
 /turf/simulated/floor/tiled/white,
@@ -14730,25 +14731,18 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
-"Bt" = (
-/obj/structure/table/marble,
-/obj/effect/floor_decal/corner/grey/diagonal{
-	dir = 4
-	},
-/obj/item/weapon/material/knife/kitchen,
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/galley)
 "Bu" = (
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
 /obj/structure/table/marble,
+/obj/item/glass_jar,
 /obj/machinery/door/blast/shutters{
 	dir = 2;
 	id_tag = "kitchen";
+	layer = 4.02;
 	name = "Kitchen Shutters"
 	},
-/obj/item/glass_jar,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "Bv" = (
@@ -14800,13 +14794,10 @@
 	dir = 4
 	},
 /obj/structure/cable/green,
-/obj/structure/table/marble,
-/obj/machinery/reagentgrinder/juicer{
-	pixel_z = 8
-	},
-/obj/item/weapon/reagent_containers/glass/beaker{
-	pixel_x = 5;
-	pixel_z = 5
+/obj/structure/closet/crate/freezer,
+/obj/random/produce{
+	spawn_attempts = 12;
+	spawn_nothing_percentage = 10
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
@@ -15586,14 +15577,12 @@
 /turf/simulated/floor/reinforced/oxygen,
 /area/thruster/d3starboard)
 "DY" = (
+/obj/structure/table/marble,
 /obj/machinery/door/blast/shutters{
 	dir = 2;
 	id_tag = "kitchen";
+	layer = 4.02;
 	name = "Kitchen Shutters"
-	},
-/obj/structure/table/marble,
-/obj/machinery/fabricator/micro{
-	stored_material = list("aluminium" = 5000, "plastic" = 5000)
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
@@ -16363,18 +16352,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
-"Gk" = (
-/obj/effect/floor_decal/corner/grey/diagonal{
-	dir = 4
-	},
-/obj/structure/table/marble,
-/obj/structure/hygiene/sink/kitchen{
-	dir = 4;
-	icon_state = "sink_alt";
-	pixel_x = -24
-	},
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/galley)
 "Gq" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -17087,9 +17064,11 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/machinery/microwave{
-	pixel_x = 0;
-	pixel_y = 6
+/obj/machinery/reagent_temperature{
+	pixel_x = -8
+	},
+/obj/machinery/reagent_temperature/cooler{
+	pixel_x = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
@@ -18703,16 +18682,20 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main)
-"Ml" = (
+"Mm" = (
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/machinery/reagent_temperature/cooler{
-	pixel_x = 8
+/obj/item/weapon/reagent_containers/glass/beaker/bowl{
+	pixel_z = 8;
+	pixel_w = 0
 	},
-/obj/machinery/reagent_temperature{
-	pixel_x = -8
+/obj/structure/hygiene/sink/kitchen{
+	icon_state = "sink_alt";
+	dir = 8;
+	pixel_x = -24;
+	pixel_w = 47
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
@@ -19709,13 +19692,19 @@
 /turf/simulated/floor/wood,
 /area/crew_quarters/gym)
 "PH" = (
-/obj/effect/floor_decal/corner/grey/diagonal{
+/obj/effect/floor_decal/corner/blue/diagonal{
 	dir = 4
 	},
-/obj/structure/table/marble,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
 /obj/machinery/door/blast/shutters{
 	dir = 2;
 	id_tag = "kitchen";
+	layer = 4.02;
 	name = "Kitchen Shutters"
 	},
 /turf/simulated/floor/tiled/white,
@@ -19800,11 +19789,6 @@
 	icon_state = "alarm0";
 	pixel_x = -22;
 	pixel_y = 0
-	},
-/obj/structure/table/marble,
-/obj/item/weapon/reagent_containers/glass/beaker/bowl{
-	pixel_z = 8;
-	pixel_w = 0
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
@@ -19926,6 +19910,16 @@
 /obj/machinery/portable_atmospherics/hydroponics,
 /turf/simulated/floor/tiled,
 /area/hydroponics)
+"Qo" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/structure/table/marble,
+/obj/item/weapon/material/knife/kitchen{
+	pixel_w = 2
+	},
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "Qq" = (
 /turf/simulated/wall/r_wall/hull,
 /area/command/disperser)
@@ -19961,6 +19955,7 @@
 /obj/machinery/door/blast/shutters{
 	dir = 2;
 	id_tag = "kitchen";
+	layer = 4.02;
 	name = "Kitchen Shutters"
 	},
 /turf/simulated/floor/tiled/white,
@@ -20078,6 +20073,22 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
+"QR" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/structure/table/marble,
+/obj/item/weapon/reagent_containers/glass/beaker/bowl{
+	pixel_z = 8;
+	pixel_w = 0
+	},
+/obj/structure/hygiene/sink/kitchen{
+	dir = 4;
+	icon_state = "sink_alt";
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "QS" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -20340,6 +20351,14 @@
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
+"RO" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/random/soap,
+/obj/structure/table/marble,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "RQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -21045,14 +21064,7 @@
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
-/obj/structure/table/marble,
 /obj/structure/disposalpipe/segment,
-/obj/structure/hygiene/sink/kitchen{
-	icon_state = "sink_alt";
-	dir = 8;
-	pixel_x = -24;
-	pixel_w = 47
-	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "Um" = (
@@ -21648,6 +21660,8 @@
 /obj/machinery/door/airlock/civilian{
 	name = "Galley"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "VQ" = (
@@ -21927,8 +21941,6 @@
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
-/obj/structure/table/marble,
-/obj/item/weapon/reagent_containers/food/condiment/sugar,
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1";
@@ -22283,6 +22295,21 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/engineering/hardstorage)
+"XF" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/structure/table/marble,
+/obj/item/weapon/reagent_containers/food/condiment/sugar{
+	pixel_z = 4;
+	pixel_w = 8
+	},
+/obj/item/weapon/reagent_containers/food/condiment/sugar{
+	pixel_z = 4;
+	pixel_w = -8
+	},
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "XH" = (
 /obj/effect/floor_decal/corner_techfloor_grid{
 	icon_state = "corner_techfloor_grid";
@@ -22363,6 +22390,10 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
+"XU" = (
+/obj/structure/reagent_dispensers/cookingoil,
+/turf/simulated/floor/tiled/freezer,
+/area/crew_quarters/galleybackroom)
 "XV" = (
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
@@ -22489,8 +22520,9 @@
 	},
 /obj/structure/table/marble,
 /obj/item/device/eftpos{
-	pixel_z = 6;
-	pixel_w = 9
+	eftpos_name = "Kitchen EFTPOS scanner";
+	pixel_w = 9;
+	pixel_z = 6
 	},
 /obj/item/weapon/hand_labeler{
 	pixel_z = 1;
@@ -22581,6 +22613,11 @@
 	pixel_x = 22;
 	pixel_y = 4
 	},
+/obj/machinery/fabricator/micro{
+	pixel_z = 2;
+	pixel_w = 4;
+	stored_material = list("aluminium" = 5000, "plastic" = 5000)
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/mess)
 "YG" = (
@@ -22604,6 +22641,9 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
+"YI" = (
+/turf/simulated/wall/glass,
+/area/crew_quarters/galley)
 "YJ" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -22624,12 +22664,10 @@
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
-/obj/structure/table/marble,
 /obj/structure/disposalpipe/segment{
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/obj/item/weapon/reagent_containers/food/condiment/sugar,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "YP" = (
@@ -22841,7 +22879,7 @@
 /obj/structure/table/steel,
 /obj/random/junk,
 /turf/simulated/floor/tiled/techfloor,
-/area/crew_quarters/galleybackroom)
+/area/maintenance/thirddeck/forestarboard)
 "Zr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -22974,6 +23012,18 @@
 "ZN" = (
 /turf/simulated/wall/r_wall/hull,
 /area/tcommsat/chamber)
+"ZO" = (
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/structure/hygiene/drain,
+/obj/structure/table/marble,
+/obj/machinery/microwave{
+	pixel_x = 0;
+	pixel_y = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "ZQ" = (
 /obj/machinery/newscaster{
 	pixel_x = 32
@@ -37678,7 +37728,7 @@ gs
 gs
 ij
 iU
-ih
+gs
 kK
 lu
 lu
@@ -37879,7 +37929,7 @@ jj
 gs
 hn
 qn
-gs
+XU
 eu
 kK
 lu
@@ -38277,7 +38327,7 @@ aj
 aj
 cd
 XV
-Gk
+fp
 PS
 WM
 Ds
@@ -38479,11 +38529,11 @@ aj
 aP
 fp
 cP
-fp
-fp
-fp
-fp
+ZO
+Mm
 du
+fp
+RO
 Fb
 ev
 kL
@@ -38681,11 +38731,11 @@ aj
 bx
 fp
 cP
-hr
-ho
 PR
+YI
+ho
 fp
-du
+Qo
 ii
 ZB
 Vi
@@ -38884,8 +38934,8 @@ by
 fp
 cP
 Iz
-Iz
-Ml
+YI
+hr
 ww
 fy
 im
@@ -39085,11 +39135,11 @@ aj
 ca
 fp
 TP
+ZO
+QR
+du
 fp
 fp
-fp
-fp
-Bt
 ii
 ZB
 mo
@@ -39291,7 +39341,7 @@ Uj
 ew
 YN
 fp
-fp
+XF
 io
 Ev
 bB
@@ -39496,12 +39546,12 @@ fp
 Gj
 ii
 PH
-Ug
+jc
 Ug
 Ug
 Ug
 Hs
-Ug
+jc
 Yr
 kL
 xE

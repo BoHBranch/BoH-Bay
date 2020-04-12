@@ -24,7 +24,7 @@
 		/datum/reagent/frostoil = /obj/item/weapon/reagent_containers/food/condiment/frostoil,
 		/datum/reagent/sodiumchloride = /obj/item/weapon/reagent_containers/food/condiment/small/saltshaker,
 		/datum/reagent/blackpepper = /obj/item/weapon/reagent_containers/food/condiment/small/peppermill,
-		/datum/reagent/nutriment/cornoil = /obj/item/weapon/reagent_containers/food/condiment/cornoil,
+		/datum/reagent/nutriment/triglyceride/oil/corn = /obj/item/weapon/reagent_containers/food/condiment/cornoil,
 		/datum/reagent/sugar = /obj/item/weapon/reagent_containers/food/condiment/small/sugar,
 		/datum/reagent/nutriment/mayo = /obj/item/weapon/reagent_containers/food/condiment/mayo,
 		/datum/reagent/nutriment/vinegar = /obj/item/weapon/reagent_containers/food/condiment/vinegar,
@@ -139,7 +139,7 @@
 	name = "corn oil"
 	desc = "A delicious oil used in cooking. Made from corn."
 	icon_state = "oliveoil"
-	starting_reagents = list(/datum/reagent/nutriment/cornoil = 50)
+	starting_reagents = list(/datum/reagent/nutriment/triglyceride/oil/corn = 50)
 
 /obj/item/weapon/reagent_containers/food/condiment/vinegar
 	name = "vinegar"
