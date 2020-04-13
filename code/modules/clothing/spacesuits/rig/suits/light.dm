@@ -40,9 +40,9 @@
 	name = "hood"
 
 /obj/item/weapon/rig/light/hacker
-	name = "cybersuit control module"
+	name = "null suitcontrol module"
 	suit_type = "cyber"
-	desc = "An advanced powered armour suit with many cyberwarfare enhancements. Comes with built-in insulated gloves for safely tampering with electronics."
+	desc = "A very lightweight hardsuit. The gloves appear to be insulated."
 	icon_state = "hacker_rig"
 
 	req_access = list(access_syndicate)
@@ -161,14 +161,15 @@
 	breach_threshold = 38 //comparable to regular hardsuits
 
 /obj/item/weapon/rig/light/stealth
-	name = "stealth suit control module"
+	name = "null suit control module"
 	suit_type = "stealth"
-	desc = "A highly advanced and expensive suit designed for covert operations."
+	desc = "A very lightweight hardsuit. It's rather inconspicuous."
 	icon_state = "stealth_rig"
 
 	req_access = list(access_syndicate)
 
 	initial_modules = list(
 		/obj/item/rig_module/stealth_field,
-		/obj/item/rig_module/vision
+		/obj/item/rig_module/vision,
+		/obj/item/rig_module/cooling_unit
 		)
