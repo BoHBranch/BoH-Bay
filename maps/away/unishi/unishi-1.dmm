@@ -232,46 +232,77 @@
 /turf/simulated/floor,
 /area/unishi/engineering)
 "aI" = (
+/obj/machinery/computer/ship/navigation,
+/obj/machinery/button/blast_door{
+	id_tag = "auxbar";
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
+	cycle_to_external_air = 1;
+	id_tag = "left_shuttle";
+	pixel_y = 25;
+	tag_airpump = "left_shuttle_pump_internal";
+	tag_chamber_sensor = "left_shuttle_sensor";
+	tag_exterior_door = "left_shuttle_outer";
+	tag_interior_door = "left_shuttle_inner"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"aJ" = (
+/obj/machinery/computer/ship/engines,
+/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
+	frequency = 1380;
+	id_tag = "right_shuttle";
+	pixel_y = 25;
+	tag_airpump = "right_shuttle_pump_internal";
+	tag_chamber_sensor = "right_shuttle_sensor";
+	tag_exterior_door = "right_shuttle_outer";
+	tag_interior_door = "right_shuttle_inner"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"aK" = (
+/obj/structure/cable/yellow{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor,
+/area/unishi/engineering)
+"aL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/light/small,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/turf/simulated/floor,
-/area/unishi/engineering)
-"aJ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal{
-	dir = 4
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/turf/simulated/floor,
-/area/unishi/engineering)
-"aK" = (
-/obj/machinery/atmospherics/binary/pump/on{
-	dir = 4;
-	target_pressure = 200
-	},
-/turf/simulated/floor,
-/area/unishi/engineering)
-"aL" = (
-/obj/machinery/door/airlock/external/bolted/cycling{
-	dir = 4;
-	id_tag = "unishi_inner"
-	},
-/obj/machinery/atmospherics/pipe/manifold/visible,
 /turf/simulated/floor,
 /area/unishi/engineering)
 "aM" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 8;
-	frequency = 1379;
-	id_tag = "unishi_vent"
+/obj/machinery/atmospherics/pipe/simple/hidden/universal{
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor,
 /area/unishi/engineering)
 "aN" = (
-/obj/machinery/door/airlock/external/bolted/cycling{
+/obj/machinery/atmospherics/binary/pump/on{
 	dir = 4;
-	id_tag = "unishi_outer"
+	target_pressure = 200
+	},
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor,
 /area/unishi/engineering)
@@ -365,16 +396,17 @@
 /turf/simulated/floor,
 /area/unishi/engineering)
 "aY" = (
-/obj/structure/sign/warning/airlock,
 /turf/simulated/wall/titanium,
-/area/unishi/engineering)
+/area/ship/New_Horizons)
 "aZ" = (
-/obj/machinery/access_button/airlock_exterior{
-	master_tag = "unishi";
-	pixel_x = -28
+/obj/effect/wallframe_spawn/reinforced/titanium,
+/obj/machinery/door/blast/regular{
+	dir = 1;
+	id_tag = "auxbar";
+	name = "Blast Shutters"
 	},
-/turf/space,
-/area/space)
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
 "ba" = (
 /obj/machinery/atmospherics/binary/pump,
 /obj/machinery/light/small{
@@ -721,11 +753,12 @@
 /turf/simulated/floor,
 /area/unishi/engineroom)
 "bQ" = (
-/obj/machinery/atmospherics/pipe/simple/visible/fuel{
-	dir = 10
+/obj/machinery/light{
+	dir = 4
 	},
-/turf/simulated/floor,
-/area/unishi/engineroom)
+/obj/machinery/atmospherics/unary/vent_scrubber,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
 "bR" = (
 /turf/simulated/wall,
 /area/unishi/engineroom)
@@ -836,6 +869,1091 @@
 /obj/effect/shuttle_landmark/nav_unishi/nav3,
 /turf/space,
 /area/space)
+"ck" = (
+/obj/machinery/computer/modular{
+	icon_state = "computer";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cl" = (
+/obj/structure/bed/chair/shuttle/black{
+	icon_state = "shuttle_chair_preview";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cm" = (
+/obj/machinery/door/airlock/external/bolted/cycling{
+	dir = 4;
+	id_tag = "unishi_inner"
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible,
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor,
+/area/unishi/engineering)
+"cn" = (
+/obj/machinery/computer/shuttle_control/explore/New_Horizons,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"co" = (
+/obj/machinery/computer/ship/helm,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cp" = (
+/obj/machinery/computer/ship/sensors,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cq" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8;
+	frequency = 1379;
+	id_tag = "unishi_vent"
+	},
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor,
+/area/unishi/engineering)
+"cr" = (
+/obj/structure/bed/chair/shuttle/black{
+	icon_state = "shuttle_chair_preview";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cs" = (
+/obj/machinery/computer/atmos_alert{
+	icon_state = "computer";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ct" = (
+/obj/machinery/computer/modular/preset/dock{
+	icon_state = "console";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cu" = (
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 6
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cw" = (
+/obj/structure/bed/chair/shuttle/black{
+	icon_state = "shuttle_chair_preview";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/effect/overmap/visitable/ship/landable/New_Horizons,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cx" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cy" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8
+	},
+/obj/machinery/computer/modular/preset/dock{
+	icon_state = "";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cz" = (
+/obj/machinery/computer/power_monitor{
+	icon_state = "computer";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cA" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	controlled = 0;
+	dir = 4;
+	frequency = 1331;
+	id_tag = "calypso_cargo_pump"
+	},
+/obj/structure/bed/chair/shuttle/black{
+	icon_state = "shuttle_chair_preview";
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cB" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/structure/fuel_port,
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"cC" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -22;
+	pixel_y = 0;
+	req_access = newlist()
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cD" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cE" = (
+/obj/effect/wallframe_spawn/reinforced/titanium,
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	icon_state = "intact";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cF" = (
+/obj/structure/bed/chair/shuttle/black{
+	icon_state = "shuttle_chair_preview";
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cG" = (
+/obj/machinery/computer/air_control{
+	dir = 8;
+	name = "Atmospheric Sensors";
+	sensor_tag = "calypso_out"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cH" = (
+/obj/effect/wallframe_spawn/reinforced/titanium,
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cI" = (
+/obj/machinery/door/airlock/engineering,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cJ" = (
+/obj/effect/wallframe_spawn/reinforced/titanium,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cK" = (
+/obj/machinery/shipsensors,
+/turf/simulated/floor,
+/area/ship/New_Horizons)
+"cL" = (
+/obj/effect/wallframe_spawn/phoron,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cM" = (
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cN" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	icon_state = "intact";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cO" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	frequency = 1379;
+	id_tag = "left_shuttle_pump_external"
+	},
+/turf/simulated/floor,
+/area/ship/New_Horizons)
+"cP" = (
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24;
+	req_access = newlist()
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/red{
+	icon_state = "map";
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	d2 = 2
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cQ" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	icon_state = "intact";
+	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cS" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	frequency = 1380;
+	id_tag = "right_shuttle_pump_external"
+	},
+/turf/simulated/floor,
+/area/ship/New_Horizons)
+"cT" = (
+/obj/machinery/atmospherics/pipe/simple/visible,
+/obj/machinery/access_button/airlock_exterior{
+	master_tag = "left_shuttle"
+	},
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"cU" = (
+/obj/machinery/access_button/airlock_interior{
+	master_tag = "left_shuttle"
+	},
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"cV" = (
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -22;
+	pixel_y = 0;
+	req_access = newlist()
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cW" = (
+/obj/machinery/atmospherics/unary/vent_scrubber{
+	icon_state = "map_scrubber_off";
+	dir = 4
+	},
+/obj/effect/shuttle_landmark/nav_unishi/New_Horizons,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	icon_state = "intact";
+	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"cY" = (
+/obj/machinery/access_button/airlock_interior{
+	frequency = 1380;
+	master_tag = "right_shuttle"
+	},
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"cZ" = (
+/obj/machinery/atmospherics/pipe/simple/visible,
+/obj/machinery/access_button/airlock_exterior{
+	frequency = 1380;
+	master_tag = "right_shuttle"
+	},
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"da" = (
+/obj/effect/wallframe_spawn/reinforced/titanium,
+/obj/machinery/atmospherics/pipe/simple/visible,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"db" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	frequency = 1379;
+	id_tag = "left_shuttle_pump_internal"
+	},
+/obj/machinery/airlock_sensor{
+	id_tag = "left_shuttle_sensor";
+	pixel_y = 25
+	},
+/obj/structure/handrai,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dc" = (
+/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
+	cycle_to_external_air = 1;
+	id_tag = "left_shuttle";
+	pixel_y = 25;
+	tag_airpump = "left_shuttle_pump_internal";
+	tag_chamber_sensor = "left_shuttle_sensor";
+	tag_exterior_door = "left_shuttle_outer";
+	tag_interior_door = "left_shuttle_inner"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	frequency = 1379;
+	id_tag = "left_shuttle_pump_internal"
+	},
+/obj/structure/handrai,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dd" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	icon_state = "map";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"de" = (
+/obj/machinery/door/airlock/external/bolted/cycling{
+	dir = 4;
+	id_tag = "unishi_outer"
+	},
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor,
+/area/unishi/engineering)
+"df" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	frequency = 1380;
+	id_tag = "right_shuttle_pump_internal"
+	},
+/obj/machinery/airlock_sensor{
+	frequency = 1380;
+	id_tag = "right_shuttle_sensor";
+	pixel_y = 25
+	},
+/obj/structure/handrai,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dg" = (
+/obj/machinery/embedded_controller/radio/airlock/airlock_controller{
+	frequency = 1380;
+	id_tag = "right_shuttle";
+	pixel_y = 25;
+	tag_airpump = "right_shuttle_pump_internal";
+	tag_chamber_sensor = "right_shuttle_sensor";
+	tag_exterior_door = "right_shuttle_outer";
+	tag_interior_door = "right_shuttle_inner"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	frequency = 1380;
+	id_tag = "right_shuttle_pump_internal"
+	},
+/obj/structure/handrai,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dh" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1379;
+	id_tag = "left_shuttle_outer"
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"di" = (
+/obj/machinery/atmospherics/pipe/manifold4w/hidden,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dj" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1379;
+	id_tag = "left_shuttle_inner"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dk" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1379;
+	id_tag = "left_shuttle_outer"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible,
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dl" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dm" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1380;
+	id_tag = "right_shuttle_inner"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dn" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1380;
+	id_tag = "right_shuttle_outer"
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"do" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	icon_state = "map";
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dp" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	icon_state = "map";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dq" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	icon_state = "map";
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dr" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1380;
+	id_tag = "right_shuttle_inner"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ds" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1380;
+	id_tag = "right_shuttle_outer"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dt" = (
+/obj/machinery/access_button/airlock_exterior{
+	master_tag = "unishi";
+	pixel_x = 0
+	},
+/turf/simulated/wall/titanium,
+/area/unishi/engineering)
+"du" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	controlled = 1;
+	dir = 1;
+	frequency = 1379;
+	id_tag = "left_shuttle_pump_internal"
+	},
+/obj/structure/handrai{
+	icon_state = "handrail";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dv" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	icon_state = "intact";
+	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dw" = (
+/obj/machinery/door/airlock/engineering,
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	icon_state = "intact";
+	dir = 6
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dx" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	controlled = 1;
+	dir = 1;
+	frequency = 1380;
+	id_tag = "right_shuttle_pump_internal"
+	},
+/obj/structure/handrai{
+	icon_state = "handrail";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dy" = (
+/obj/machinery/atmospherics/pipe/simple/visible,
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"dz" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	controlled = 1;
+	dir = 1;
+	frequency = 1379;
+	id_tag = "left_shuttle_pump_external"
+	},
+/turf/simulated/floor,
+/area/ship/New_Horizons)
+"dA" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	controlled = 1;
+	dir = 1;
+	frequency = 1380;
+	id_tag = "right_shuttle_pump_external"
+	},
+/turf/simulated/floor,
+/area/ship/New_Horizons)
+"dB" = (
+/obj/effect/wallframe_spawn/reinforced/titanium,
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	icon_state = "intact";
+	dir = 9
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dC" = (
+/obj/machinery/atmospherics/unary/engine{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/structure/closet/radiation,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dE" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/red,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dF" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/closet/radiation,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dG" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1379;
+	id_tag = "left_shuttle_inner"
+	},
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dH" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dI" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	controlled = 0;
+	dir = 4;
+	frequency = 1331;
+	id_tag = "calypso_cargo_pump"
+	},
+/turf/simulated/floor,
+/area/ship/New_Horizons)
+"dJ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	icon_state = "intact";
+	dir = 8
+	},
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"dK" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/red{
+	icon_state = "map";
+	dir = 1
+	},
+/obj/machinery/alarm,
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"dL" = (
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	icon_state = "intact";
+	dir = 4
+	},
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"dM" = (
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dN" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	icon_state = "intact";
+	dir = 8
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "raddoor"
+	},
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"dO" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8;
+	frequency = 1379;
+	id_tag = "unishi_vent"
+	},
+/turf/simulated/floor,
+/area/ship/New_Horizons)
+"dP" = (
+/obj/machinery/atmospherics/unary/vent_scrubber{
+	icon_state = "map_scrubber_off";
+	dir = 4
+	},
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dQ" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/red{
+	icon_state = "map";
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dR" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	icon_state = "map";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dS" = (
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable/yellow{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor,
+/area/unishi/engineroom)
+"dT" = (
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor,
+/area/unishi/engineroom)
+"dU" = (
+/obj/machinery/atmospherics/portables_connector{
+	dir = 8
+	},
+/obj/machinery/portable_atmospherics/canister/air/airlock,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/light,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dW" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/red,
+/obj/machinery/door/airlock/engineering,
+/obj/machinery/door/blast/regular{
+	dir = 1;
+	id_tag = "raddoor";
+	name = "Blast Shutters"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/red,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dY" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	controlled = 1;
+	dir = 1;
+	frequency = 1379;
+	id_tag = "left_shuttle_pump_internal"
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"dZ" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ea" = (
+/obj/machinery/power/port_gen/pacman/super/potato,
+/obj/structure/cable{
+	icon_state = "0-8";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"eb" = (
+/obj/machinery/power/smes/buildable/preset/torch/shuttle,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-8";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ec" = (
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 10
+	},
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
+/turf/simulated/floor,
+/area/unishi/engineroom)
+"ed" = (
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
+/turf/simulated/floor,
+/area/unishi/engineroom)
+"ee" = (
+/obj/structure/closet/crate/uranium,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ef" = (
+/obj/effect/shuttle_landmark/transit/nav_unishi/New_Horizons,
+/turf/space,
+/area/space)
+"eg" = (
+/obj/effect/shuttle_landmark/ship,
+/turf/space,
+/area/space)
+"eh" = (
+/obj/machinery/atmospherics/unary/vent_scrubber{
+	icon_state = "map_scrubber_off";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ei" = (
+/obj/machinery/atmospherics/portables_connector,
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ej" = (
+/obj/machinery/portable_atmospherics/canister/air,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ek" = (
+/obj/machinery/atmospherics/binary/pump,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"el" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/black{
+	icon_state = "intact";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"em" = (
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"en" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"eo" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ep" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"eq" = (
+/obj/machinery/power/terminal{
+	icon_state = "term";
+	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"er" = (
+/obj/machinery/power/terminal{
+	icon_state = "term";
+	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"es" = (
+/obj/machinery/recharge_station,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"et" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/red,
+/obj/structure/closet/secure_closet/engineering_welding,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"eu" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 5
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/closet/toolcloset,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ev" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ew" = (
+/obj/machinery/atmospherics/pipe/simple/visible/black{
+	dir = 6
+	},
+/obj/structure/closet/crate/uranium,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1";
+	pixel_y = 0
+	},
+/obj/structure/window/phoronreinforced,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ex" = (
+/obj/machinery/atmospherics/pipe/manifold/visible/black{
+	icon_state = "map";
+	dir = 1
+	},
+/obj/structure/window/phoronreinforced,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ey" = (
+/obj/machinery/atmospherics/pipe/manifold4w/visible/black,
+/obj/structure/window/phoronreinforced,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"ez" = (
+/obj/machinery/atmospherics/pipe/manifold/visible/black{
+	icon_state = "map";
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/structure/window/phoronreinforced,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"eA" = (
+/obj/machinery/atmospherics/pipe/simple/visible/black{
+	icon_state = "intact";
+	dir = 10
+	},
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/window/phoronreinforced,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
 "FR" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -3128,7 +4246,7 @@ aa
 aa
 aa
 aa
-aa
+ef
 aa
 aa
 aa
@@ -5976,7 +7094,7 @@ Ic
 aH
 aT
 bc
-bc
+dS
 bc
 bc
 bB
@@ -6075,15 +7193,15 @@ ah
 ao
 aw
 aA
-aw
-aU
-aU
-aU
+aK
+bc
+bc
+dT
 aU
 FR
 bC
 bH
-bQ
+ec
 bW
 cc
 ce
@@ -6177,7 +7295,7 @@ am
 ap
 ax
 aB
-aI
+aL
 aV
 bf
 bn
@@ -6279,7 +7397,7 @@ ai
 aq
 ai
 ai
-aJ
+aM
 aW
 bg
 bg
@@ -6381,7 +7499,7 @@ ab
 ar
 ay
 aC
-aK
+aN
 aX
 bh
 aw
@@ -6389,8 +7507,8 @@ aw
 by
 bF
 bK
-aU
-aU
+ed
+ed
 cd
 ce
 cg
@@ -6483,8 +7601,8 @@ aa
 as
 ay
 aD
-aL
-aY
+cm
+ay
 ab
 ab
 ab
@@ -6585,7 +7703,7 @@ aa
 aa
 ay
 aE
-aM
+cq
 ay
 ab
 ab
@@ -6687,7 +7805,7 @@ aa
 aa
 ay
 aF
-aw
+ak
 ay
 aa
 aa
@@ -6789,12 +7907,12 @@ aa
 aa
 ay
 ai
-aN
-ay
+de
+dt
 aa
 aa
 aa
-aa
+dI
 aa
 aa
 aa
@@ -6881,28 +7999,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aY
 aZ
+aZ
+aZ
+aY
 aa
+cO
+cT
+da
+dh
+dk
+da
+dy
+dz
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+dJ
+aY
+aY
+cL
+cL
+aY
+aY
 aa
 aa
 aa
@@ -6983,28 +8101,28 @@ aa
 aa
 aa
 aa
+aZ
+ck
+ct
+cz
+aZ
 aa
 aa
+aY
+db
+di
+do
+du
+aY
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+dJ
+ea
+eo
+ee
+ee
+ew
+dC
 aa
 aa
 aa
@@ -7085,28 +8203,28 @@ aa
 aa
 aa
 aa
+aZ
+cl
+cu
+cA
+aZ
 aa
 aa
+aY
+dc
+di
+dq
+du
+aY
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+dJ
+ea
+ep
+cu
+cu
+ex
+dC
 aa
 aa
 aa
@@ -7187,28 +8305,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aY
+aI
+cu
+cB
+aY
+cL
+cL
+cU
+cJ
+dj
+dG
+cJ
+aY
+cL
+cL
+dK
+et
+dX
+eh
+cu
+ex
+dC
 aa
 aa
 aa
@@ -7289,28 +8407,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aZ
+co
+cv
+cC
+cH
+cM
+cM
+cV
+dd
+di
+dM
+dl
+cH
+dD
+dV
+dL
+eu
+cQ
+cu
+cu
+ex
+dC
 aa
 aa
 aa
@@ -7391,28 +8509,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aZ
+cn
+cw
+cD
+cI
+cu
+cu
+cW
+cD
+cx
+dP
+cu
+dw
+dE
+dE
+dW
+dR
+dY
+ei
+ek
+ey
+dC
 aa
 aa
 aa
@@ -7493,28 +8611,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aZ
+cp
+cx
+bQ
+cE
+cN
+cN
+cP
+cR
+cX
+dQ
+dv
+dB
+dF
+dH
+dN
+ev
+dZ
+cu
+cu
+ex
+dC
 aa
 aa
 aa
@@ -7595,28 +8713,28 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+aY
+aJ
+cx
+aY
+aY
+cL
+cL
+cY
+cJ
+dm
+dr
+cJ
+aY
+cL
+cL
+dJ
+eb
+eq
+cu
+el
+ex
+dC
 aa
 aa
 aa
@@ -7697,28 +8815,28 @@ aa
 aa
 aa
 aa
+aZ
+cr
+cx
+cF
+aZ
 aa
 aa
+aY
+df
+di
+dd
+dx
+aY
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+dJ
+eb
+er
+cu
+ej
+ez
+dC
 aa
 aa
 aa
@@ -7799,28 +8917,28 @@ aa
 aa
 aa
 aa
+aZ
+cs
+cy
+cG
+aZ
 aa
 aa
+aY
+dg
+di
+dp
+dx
+aY
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+dJ
+dU
+en
+es
+em
+eA
+dC
 aa
 aa
 aa
@@ -7901,28 +9019,28 @@ aa
 aa
 aa
 aa
+aY
+aZ
+aZ
+aZ
+aY
 aa
+cS
+cZ
+da
+dn
+ds
+da
+dy
+dA
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+dJ
+aY
+aY
+cL
+cL
+aY
+aY
 aa
 aa
 aa
@@ -8007,6 +9125,7 @@ aa
 aa
 aa
 aa
+cK
 aa
 aa
 aa
@@ -8017,8 +9136,7 @@ aa
 aa
 aa
 aa
-aa
-aa
+dO
 aa
 aa
 aa
@@ -9395,7 +10513,7 @@ aa
 aa
 aa
 aa
-aa
+eg
 aa
 aa
 aa
