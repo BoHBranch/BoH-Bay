@@ -47,6 +47,7 @@ Civilian
 		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/civ/contractor
 	)
+	max_pow_cat = 0
 
 /datum/job/merchant
 	title = "Merchant"

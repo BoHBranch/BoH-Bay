@@ -309,6 +309,9 @@
 	dir = 4;
 	pixel_x = -21
 	},
+/obj/structure/table/glass,
+/obj/item/stack/material/glass/ten,
+/obj/item/stack/material/steel/ten,
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "aay" = (
@@ -364,13 +367,13 @@
 /area/medical/equipstorage)
 "aaD" = (
 /obj/structure/table/glass,
-/obj/item/weapon/storage/firstaid/fire,
-/obj/random/medical,
-/obj/effect/floor_decal/corner/paleblue/three_quarters{
-	dir = 8
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 6
 	},
+/obj/item/weapon/hand_labeler,
+/obj/item/stack/package_wrap/twenty_five,
 /turf/simulated/floor/tiled/white,
-/area/medical/equipstorage)
+/area/medical/locker)
 "aaE" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -530,14 +533,12 @@
 /area/medical/equipstorage)
 "aaS" = (
 /obj/structure/table/glass,
-/obj/item/weapon/storage/box/syringes{
-	pixel_x = 4;
-	pixel_y = 4
+/obj/item/weapon/storage/firstaid/fire,
+/obj/random/medical,
+/obj/effect/floor_decal/corner/paleblue/three_quarters{
+	dir = 8
 	},
-/obj/item/weapon/storage/box/syringes,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
+/obj/item/weapon/storage/firstaid/toxin,
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "aaT" = (
@@ -3124,6 +3125,13 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
+"afD" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/machinery/fabricator,
+/turf/simulated/floor/tiled/white,
+/area/medical/equipstorage)
 "afE" = (
 /obj/machinery/hologram/holopad,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3485,6 +3493,19 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
+"agf" = (
+/obj/structure/table/glass,
+/obj/item/weapon/storage/box/syringes{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/weapon/storage/box/syringes,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/random/medical,
+/turf/simulated/floor/tiled/white,
+/area/medical/equipstorage)
 "agg" = (
 /obj/effect/wallframe_spawn/reinforced/polarized/no_grille/regular{
 	id = "surgery_windows"
@@ -5848,12 +5869,18 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
 "akd" = (
-/obj/structure/table/glass,
 /obj/effect/floor_decal/corner/paleblue{
-	dir = 6
+	dir = 10
 	},
+/obj/structure/table/glass,
+/obj/item/weapon/storage/pill_bottle/kelotane,
+/obj/item/weapon/storage/pill_bottle/spaceacillin,
+/obj/item/weapon/storage/pill_bottle/tramadol,
+/obj/item/weapon/storage/pill_bottle/dermaline,
+/obj/item/weapon/storage/pill_bottle/dexalin_plus,
+/obj/item/weapon/storage/pill_bottle/bicaridine,
 /turf/simulated/floor/tiled/white,
-/area/medical/locker)
+/area/medical/equipstorage)
 "ake" = (
 /obj/machinery/power/breakerbox/activated{
 	RCon_tag = "First Deck Substation Bypass"
@@ -5965,15 +5992,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
-"akk" = (
-/obj/structure/table/glass,
-/obj/item/weapon/storage/firstaid/toxin,
-/obj/random/medical,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/equipstorage)
 "akl" = (
 /obj/structure/cable{
 	d2 = 2;
@@ -6387,15 +6405,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
-"akU" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/structure/table/glass,
-/obj/item/stack/package_wrap/twenty_five,
-/obj/item/weapon/hand_labeler,
-/turf/simulated/floor/tiled/white,
-/area/medical/equipstorage)
 "akV" = (
 /obj/machinery/camera/network/first_deck{
 	c_tag = "First Deck Fore Hallway - Starboard Maintenence";
@@ -50573,7 +50582,7 @@ fSy
 adA
 adA
 aan
-aaD
+aaS
 ajx
 akx
 aan
@@ -50775,9 +50784,9 @@ fSy
 adA
 aan
 aan
-akk
+afD
 ajy
-aaS
+agf
 aan
 aan
 aaa
@@ -51183,7 +51192,7 @@ aaH
 ajA
 aaU
 akO
-akU
+akd
 aan
 aaa
 abP
@@ -51387,7 +51396,7 @@ atb
 akP
 alb
 aan
-aaa
+abP
 abP
 abP
 abP
@@ -51435,7 +51444,7 @@ aSY
 jjh
 jjh
 jjh
-aaa
+aUp
 sRV
 aUJ
 aUW
@@ -52801,7 +52810,7 @@ akH
 akS
 acN
 aaM
-aaa
+mpy
 mpy
 mpy
 acI
@@ -52849,7 +52858,7 @@ aTe
 aFM
 bDK
 bDK
-aaa
+aUp
 sRV
 aUQ
 aUW
@@ -53198,7 +53207,7 @@ aaa
 dDC
 aaM
 aaM
-akd
+aaD
 cVb
 aku
 aky
