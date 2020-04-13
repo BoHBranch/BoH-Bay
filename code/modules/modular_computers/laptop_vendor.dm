@@ -64,11 +64,11 @@
 		total_price = 99
 		switch(dev_cpu)
 			if(1)
-				if(fabricate)
-					fabricated_laptop.processor_unit = new/obj/item/weapon/stock_parts/computer/processor_unit/small(fabricated_laptop)
-			if(2)
-				if(fabricate)
+				if(fabricate) // Standard
 					fabricated_laptop.processor_unit = new/obj/item/weapon/stock_parts/computer/processor_unit(fabricated_laptop)
+			if(2)
+				if(fabricate) // Photonic
+					fabricated_laptop.processor_unit = new/obj/item/weapon/stock_parts/computer/processor_unit/photonic(fabricated_laptop)
 				total_price += 299
 		switch(dev_battery)
 			if(1) // Basic(750C)
@@ -124,8 +124,15 @@
 	else if(devtype == 2) 	// Tablet, more expensive, not everyone could probably afford this.
 		if(fabricate)
 			fabricated_tablet = new(src)
-			fabricated_tablet.processor_unit = new/obj/item/weapon/stock_parts/computer/processor_unit/small(fabricated_tablet)
 		total_price = 199
+		switch(dev_cpu)
+			if(1) // Standard
+				if(fabricate)
+					fabricated_tablet.processor_unit = new/obj/item/weapon/stock_parts/computer/processor_unit/small(fabricated_tablet)
+			if(2) // Photonic
+				if(fabricate)
+					fabricated_tablet.processor_unit = new/obj/item/weapon/stock_parts/computer/processor_unit/photonic/small(fabricated_tablet)
+				total_price += 199
 		switch(dev_battery)
 			if(1) // Basic(300C)
 				if(fabricate)

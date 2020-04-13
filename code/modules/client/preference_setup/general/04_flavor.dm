@@ -34,7 +34,7 @@
 	S["flavor_texts_hands"]		<< pref.flavor_texts["hands"]
 	S["flavor_texts_legs"]		<< pref.flavor_texts["legs"]
 	S["flavor_texts_feet"]		<< pref.flavor_texts["feet"]
-	S["flavor_texts_naked"]		>> pref.flavor_texts["naked"]
+	S["flavor_texts_naked"]		<< pref.flavor_texts["naked"]
 	S["flavor_texts_NSFW/OOC"]	<< pref.flavor_texts["NSFW/OOC"]
 
 	S["flavour_texts_robot_Default"] << pref.flavour_texts_robot["Default"]

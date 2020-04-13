@@ -80,13 +80,13 @@
 		return 1
 	if (last_pressure_delta > 0 && recent_moles_transferred > 0)
 		if (temperature_overlay)
-			overlays += image('icons/obj/power.dmi', temperature_overlay)
+			overlays += overlay_image('icons/obj/power.dmi', temperature_overlay, plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 		if (last_pressure_delta > 5*ONE_ATMOSPHERE)
-			overlays += image('icons/obj/power.dmi', "circ-run")
+			overlays += overlay_image('icons/obj/power.dmi', "circ-run", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 		else
-			overlays += image('icons/obj/power.dmi', "circ-slow")
+			overlays += overlay_image('icons/obj/power.dmi', "circ-slow", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	else
-		overlays += image('icons/obj/power.dmi', "circ-off")
+		overlays += overlay_image('icons/obj/power.dmi', "circ-off", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
 	return 1
 

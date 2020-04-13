@@ -27,7 +27,6 @@
 	icon_state = "wolverine"
 	name = "combat claws"
 	desc = "These do not grow back."
-	base_parry_chance = 40
 	force_divisor = 0.3
 
 //Alternate look

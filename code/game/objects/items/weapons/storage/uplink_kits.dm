@@ -1,7 +1,7 @@
 /obj/item/weapon/storage/box/syndie_kit
 	name = "box"
 	desc = "A sleek, sturdy box."
-	icon_state = "box_of_doom"
+	icon_state = "box"
 
 //For uplink kits that provide bulkier items
 /obj/item/weapon/storage/backpack/satchel/syndie_kit

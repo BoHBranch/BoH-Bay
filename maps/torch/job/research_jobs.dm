@@ -110,6 +110,7 @@
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/assist,
 		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/assist/solgov
 	)
+	max_pow_cat = 2
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)

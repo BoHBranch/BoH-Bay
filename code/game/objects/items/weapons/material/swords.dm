@@ -12,7 +12,7 @@
 	edge = 1
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
-	base_parry_chance = 50
+	base_parry_chance = 40
 	melee_accuracy_bonus = 10
 	worth_multiplier = 30
 
@@ -20,6 +20,7 @@
 	max_force = 10
 	edge = 0
 	sharp = 0
+	base_parry_chance = 40
 	force_divisor = 0.2
 	thrown_force_divisor = 0.2
 	worth_multiplier = 15
@@ -29,6 +30,7 @@
 	desc = "Woefully underpowered in D20. This one looks pretty sharp."
 	icon_state = "katana"
 	item_state = "katana"
+	base_parry_chance = 40
 	furniture_icon = "katana_handle"
 	slot_flags = SLOT_BELT | SLOT_BACK
 
@@ -36,6 +38,7 @@
 	max_force = 10
 	edge = 0
 	sharp = 0
+	base_parry_chance = 40
 	force_divisor = 0.2
 	thrown_force_divisor = 0.2
 
@@ -48,4 +51,3 @@
 /obj/item/weapon/material/sword/katana/vibro/equipped(mob/user, slot)
 	if(slot == slot_l_hand || slot == slot_r_hand)
 		playsound(src, 'sound/weapons/katana_out.wav', 50, 1, -5)
-	
