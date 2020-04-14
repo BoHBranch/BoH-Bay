@@ -140,8 +140,8 @@
 /obj/effect/spawner/newbomb/traitor
 	name = "TTV bomb - traitor"
 	assembly_type = /obj/item/device/assembly/signaler
-	phoron_amt = 14
-	oxygen_amt = 21
+	phoron_amt = 16
+	oxygen_amt = 25.8
 
 /obj/effect/spawner/newbomb/timer
 	name = "TTV bomb - timer"
