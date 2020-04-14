@@ -39,9 +39,9 @@
 /obj/item/clothing/head/helmet/space/rig/light
 	name = "hood"
 
-/obj/item/weapon/rig/light/hacker
+/obj/item/weapon/rig/light/hacker //originally known as the cyber suit
 	name = "null suitcontrol module"
-	suit_type = "cyber"
+	suit_type = "null"
 	desc = "A very lightweight hardsuit. The gloves appear to be insulated."
 	icon_state = "hacker_rig"
 
@@ -160,9 +160,9 @@
 /obj/item/clothing/suit/space/rig/light/ninja
 	breach_threshold = 38 //comparable to regular hardsuits
 
-/obj/item/weapon/rig/light/stealth
+/obj/item/weapon/rig/light/stealth //the stealth suit, also known as the knock off ninja suit.
 	name = "null suit control module"
-	suit_type = "stealth"
+	suit_type = "null"
 	desc = "A very lightweight hardsuit. It's rather inconspicuous."
 	icon_state = "stealth_rig"
 
