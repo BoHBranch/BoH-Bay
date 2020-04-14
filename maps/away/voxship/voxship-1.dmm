@@ -2462,6 +2462,7 @@
 /obj/random/junk,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/weapon/reagent_containers/chem_disp_cartridge/acetone,
+/obj/random/junk,
 /turf/simulated/floor/plating/vox,
 /area/voxship/hoard)
 "gt" = (
