@@ -1487,7 +1487,7 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "ee" = (
-/obj/structure/bookcase/manuals,
+/obj/structure/undies_wardrobe,
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
 "ef" = (
@@ -22444,7 +22444,7 @@ an
 an
 an
 an
-ee
+eF
 eK
 gJ
 ee
@@ -23053,7 +23053,7 @@ ec
 dT
 dT
 dT
-eF
+dT
 an
 fC
 fC
