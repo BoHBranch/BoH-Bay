@@ -1119,7 +1119,7 @@
 /obj/machinery/access_button/airlock_exterior{
 	master_tag = "left_shuttle"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible{
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	icon_state = "intact";
 	dir = 6
 	},
@@ -1178,15 +1178,15 @@
 	frequency = 1380;
 	master_tag = "right_shuttle"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible{
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	icon_state = "intact";
 	dir = 10
 	},
 /turf/simulated/wall/titanium,
 /area/ship/New_Horizons)
 "da" = (
-/obj/machinery/atmospherics/pipe/simple/visible,
 /obj/effect/wallframe_spawn/phoron,
+/obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/New_Horizons)
 "db" = (
@@ -1272,7 +1272,8 @@
 	frequency = 1379;
 	id_tag = "left_shuttle_outer"
 	},
-/obj/machinery/atmospherics/pipe/manifold/visible{
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	icon_state = "map";
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -1297,12 +1298,12 @@
 	frequency = 1379;
 	id_tag = "left_shuttle_outer"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible,
 /obj/structure/cable/yellow{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/New_Horizons)
 "dl" = (
@@ -1328,7 +1329,8 @@
 	frequency = 1380;
 	id_tag = "right_shuttle_outer"
 	},
-/obj/machinery/atmospherics/pipe/manifold/visible{
+/obj/machinery/atmospherics/pipe/manifold/hidden{
+	icon_state = "map";
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -1376,7 +1378,7 @@
 	frequency = 1380;
 	id_tag = "right_shuttle_outer"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible,
+/obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/New_Horizons)
 "dt" = (
@@ -1633,12 +1635,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/New_Horizons)
-"dX" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal{
-	dir = 4
-	},
-/turf/simulated/wall/titanium,
-/area/ship/New_Horizons)
 "dY" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	controlled = 1;
@@ -1729,13 +1725,6 @@
 /area/ship/New_Horizons)
 "ek" = (
 /obj/machinery/atmospherics/binary/pump,
-/turf/simulated/floor/tiled/techfloor,
-/area/ship/New_Horizons)
-"el" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/black{
-	icon_state = "intact";
-	dir = 8
-	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/New_Horizons)
 "em" = (
@@ -1893,40 +1882,14 @@
 /obj/structure/window/phoronreinforced,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/New_Horizons)
-"gb" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "intact";
-	dir = 4
-	},
-/turf/simulated/wall/titanium,
-/area/ship/New_Horizons)
-"gO" = (
-/obj/machinery/atmospherics/omni/filter,
-/turf/simulated/floor,
-/area/unishi/engineroom)
-"oi" = (
-/obj/machinery/atmospherics/portables_connector,
-/turf/simulated/floor,
-/area/unishi/engineroom)
-"qn" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "intact";
-	dir = 10
-	},
-/turf/simulated/wall/titanium,
-/area/ship/New_Horizons)
-"se" = (
-/obj/structure/fuel_port,
-/turf/simulated/wall/titanium,
-/area/ship/New_Horizons)
-"vu" = (
+"gv" = (
 /obj/machinery/alarm{
 	icon_state = "alarm0";
 	dir = 1
 	},
 /turf/simulated/wall/titanium,
 /area/ship/New_Horizons)
-"ww" = (
+"rp" = (
 /obj/machinery/power/port_gen/pacman/super/potato,
 /obj/structure/cable{
 	icon_state = "0-8";
@@ -1935,10 +1898,33 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/New_Horizons)
-"Fv" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
+"vA" = (
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/effect/wallframe_spawn/phoron,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"vH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
 	icon_state = "intact";
-	dir = 9
+	dir = 6
+	},
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"xm" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 8
+	},
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"zs" = (
+/obj/machinery/atmospherics/portables_connector,
+/turf/simulated/floor,
+/area/unishi/engineroom)
+"ED" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 10
 	},
 /turf/simulated/wall/titanium,
 /area/ship/New_Horizons)
@@ -1948,43 +1934,46 @@
 	},
 /turf/simulated/floor,
 /area/unishi/engineroom)
+"GX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 9
+	},
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
 "Ic" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
 /turf/simulated/wall,
 /area/unishi/engineering)
-"LM" = (
+"NE" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"QD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 5
+	},
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"UE" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	frequency = 1380;
 	id_tag = "right_shuttle_pump_internal"
 	},
 /turf/simulated/floor,
 /area/ship/New_Horizons)
-"Pw" = (
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/effect/wallframe_spawn/phoron,
-/turf/simulated/floor/tiled/techfloor,
-/area/ship/New_Horizons)
-"PQ" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "intact";
-	dir = 6
-	},
-/turf/simulated/wall/titanium,
-/area/ship/New_Horizons)
-"Qs" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "intact";
-	dir = 8
-	},
-/turf/simulated/wall/titanium,
-/area/ship/New_Horizons)
-"Uq" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	icon_state = "intact";
-	dir = 5
-	},
+"Vm" = (
+/obj/machinery/atmospherics/omni/filter,
+/turf/simulated/floor,
+/area/unishi/engineroom)
+"WZ" = (
+/obj/structure/fuel_port,
 /turf/simulated/wall/titanium,
 /area/ship/New_Horizons)
 
@@ -7119,8 +7108,8 @@ dS
 bc
 bc
 bB
-oi
-gO
+zs
+Vm
 bV
 cc
 ce
@@ -8032,10 +8021,10 @@ da
 dh
 dk
 da
-Uq
+QD
 aa
 aa
-dX
+aY
 aY
 aY
 cL
@@ -8129,12 +8118,12 @@ cz
 aZ
 aa
 aa
-Qs
+xm
 db
 di
 do
 du
-gb
+NE
 aa
 aa
 aY
@@ -8231,16 +8220,16 @@ cA
 aZ
 aa
 cO
-Fv
+GX
 dc
 di
 dq
 du
-qn
+ED
 dz
-LM
+UE
 dH
-ww
+rp
 ep
 cu
 cu
@@ -8330,7 +8319,7 @@ aY
 aI
 cu
 cx
-se
+WZ
 cL
 cL
 cU
@@ -8440,7 +8429,7 @@ dd
 di
 dM
 dl
-Pw
+vA
 dD
 dV
 dK
@@ -8738,7 +8727,7 @@ aY
 aJ
 cx
 cu
-vu
+gv
 cL
 cL
 cY
@@ -8753,7 +8742,7 @@ aY
 eb
 eq
 cu
-el
+cu
 ex
 dC
 aa
@@ -8843,14 +8832,14 @@ cr
 aZ
 cK
 cS
-Uq
+QD
 df
 di
 dd
 dx
-PQ
+vH
 dA
-LM
+UE
 aY
 eb
 er
@@ -8945,12 +8934,12 @@ cG
 aZ
 aa
 aa
-Qs
+NE
 dg
 di
 dp
 dx
-Qs
+NE
 aa
 aa
 aY
@@ -9052,7 +9041,7 @@ da
 dn
 ds
 da
-Fv
+GX
 aa
 aa
 aY
