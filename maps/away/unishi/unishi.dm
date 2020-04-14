@@ -1,5 +1,6 @@
 #include "unishi_areas.dm"
 #include "unishi_jobs.dm"
+#include "unishi_shuttles.dm"
 
 /obj/effect/submap_landmark/joinable_submap/unishi
 	name = "SRV Verne"
@@ -13,39 +14,14 @@
 		/datum/job/submap/unishi_researcher
 	)
 
-/obj/effect/overmap/visitable/ship/unishi
-	name = "SRV Verne"
-	desc = "Sensor array detects unknown class medium size vessel. The vessel appears unarmed.\
-	A small amount of radiation has been detected at the aft of the ship"
-	vessel_mass = 5000
-	max_speed = 1/(3 SECONDS)
-	initial_generic_waypoints = list(
-		"nav_unishi_1",
-		"nav_unishi_2",
-		"nav_unishi_3",
-	)
-
 /datum/map_template/ruin/away_site/unishi
 	name = "University Ship"
 	id = "awaysite_unishi"
 	description = "CTI research ship.."
 	suffixes = list("unishi/unishi-1.dmm", "unishi/unishi-2.dmm", "unishi/unishi-3.dmm")
+	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/New_Horizons)
 	cost = 2
-	area_usage_test_exempted_root_areas = list(/area/unishi)
-
-
-/obj/effect/shuttle_landmark/nav_unishi/nav1
-	name = "CTI Research Vessel Deck 1 Port"
-	landmark_tag = "nav_unishi_1"
-
-/obj/effect/shuttle_landmark/nav_unishi/nav2
-	name = "CTI Research Vessel Deck 2 Starboard"
-	landmark_tag = "nav_unishi_2"
-
-/obj/effect/shuttle_landmark/nav_unishi/nav3
-	name = "CTI Research Vessel Deck 3 Aft"
-	landmark_tag = "nav_unishi_3"
-
+	area_usage_test_exempted_root_areas = list(/area/unishi, /area/ship)
 
 /obj/machinery/power/supermatter/randomsample
 	name = "experimental supermatter sample"
@@ -170,4 +146,4 @@ obj/item/weapon/paper/prof2
 
 /datum/chemical_reaction/clonexadone/nophoron
 	required_reagents = list(/datum/reagent/cryoxadone = 1, /datum/reagent/sodium = 1, /datum/reagent/toxin/phoron/safe = 0.1)
-
+	
