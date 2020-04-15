@@ -449,6 +449,7 @@
 
 	var/color_blend_mode = ICON_ADD // Only appliciable if do_coloration = 1
 	var/extra_overlay // Icon state of an additional overlay to blend in.
+	var/extra_overlay2 // Icon state of a tertiary additional overlay to blend in.
 	var/clothing_can_hide = 1 // If true, clothing with HIDETAIL hides it. If the clothing is bulky enough to hide a tail, it should also hide wings.
 	// var/show_species_tail = 1 // Just so // TODO - Seems not needed ~Leshana
 	var/desc = "You should not see this..."
@@ -535,14 +536,17 @@
 	icon_state = "Harpywings_alt"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "Neckfur"
+	extra_overlay2 = "Harpywings_altmarkings"
 
 /datum/sprite_accessory/wing/Harpywings_Bat
 	name = "harpy wings, bat"
 	desc = ""
-	icon_state = "Harpywings_bat"
-	extra_overlay = "Harpywings_BatMarkings"
+	icon_state = "Harpywings_Bat"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "Neckfur"
+	extra_overlay2 = "Harpywings_BatMarkings"
 
 /datum/sprite_accessory/wing/feathered
 	name = "feathered wings, colorable"
@@ -607,6 +611,7 @@
 
 	var/color_blend_mode = ICON_ADD // Only appliciable if do_coloration = 1
 	var/extra_overlay // Icon state of an additional overlay to blend in.
+	var/extra_overlay2 // Icon state of a tertiary additional overlay to blend in.
 	var/show_species_tail = 0 // If false, do not render species' tail.
 	var/clothing_can_hide = 1 // If true, clothing with HIDETAIL hides it
 	var/desc = "You should not see this..."
@@ -1550,3 +1555,13 @@
 	icon_state = "raccoon_tail"
 	do_colouration = 0
 	color_blend_mode = ICON_MULTIPLY
+
+	/datum/sprite_accessory/tail/vulpkanin_alt_color
+	name = "Eastern Dragon (Animated)"
+	desc = ""
+	icon_state = "Easterntail"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "EasterntailColorTip"
+	ani_state = "Easterntail_w"
+	extra_overlay_w = "EasterntailColorTip_w"

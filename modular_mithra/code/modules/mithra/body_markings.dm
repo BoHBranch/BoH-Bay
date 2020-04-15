@@ -922,19 +922,31 @@
 		icon_state = "heterochromia"
 		body_parts = list(BP_HEAD)
 
-	vox scales
+	voxscales
 		name = "Vox Scales"
 		icon_state = "Voxscales"
 		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_HEAD)
 
-	una_hood
+	voxclaws
+		name = "Vox Claws"
+		icon_state = "Voxclaws"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_HAND,BP_R_HAND)
+
+	voxbeak
+		name = "Vox Beak"
+		icon_state = "Voxscales"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
+
+	unathihood
 		name = "Cobra Hood"
 		icon_state = "unathihood"
 		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_HEAD)
 
-	una_doublehorns
+	unathidoublehorns
 		name = "Double Unathi Horns"
 		icon_state = "unathidoublehorns"
 		color_blend_mode = ICON_MULTIPLY
