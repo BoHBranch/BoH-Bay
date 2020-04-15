@@ -58,7 +58,7 @@
 			M.take_organ_damage(3)
 		else
 			M.take_organ_damage(5)
-		playsound(M, file("sound/items/trayhit[pick(1, 2)].ogg"), 50, 1)
+		playsound(M, pick('sound/items/trayhit1.ogg', 'sound/items/trayhit2.ogg'), 50, 1)
 		visible_message(SPAN_DANGER("[user] slams [M] with the tray!"), SPAN_DANGER("You hear metal crashing."))
 		return
 
@@ -83,7 +83,7 @@
 			if (istype(location, /turf/simulated))     //Addin' blood! At least on the floor and item :v
 				location.add_blood(H)
 
-		playsound(M, file("sound/items/trayhit[pick(1, 2)].ogg"), 50, 1)
+		playsound(M, pick('sound/items/trayhit1.ogg', 'sound/items/trayhit2.ogg'), 50, 1)
 		visible_message(SPAN_DANGER("[user] slams [M] with the tray!"), SPAN_DANGER("You hear metal crashing."))
 		if(prob(10))
 			if(!istype(M,/mob/living/silicon))M.Stun(rand(1,3))
@@ -101,7 +101,7 @@
 			if (istype(location, /turf/simulated))
 				location.add_blood(H)
 
-		playsound(M, file("sound/items/trayhit[pick(1, 2)].ogg"), 50, 1)
+		playsound(M, pick('sound/items/trayhit1.ogg', 'sound/items/trayhit2.ogg'), 50, 1)
 		visible_message(SPAN_DANGER("[user] slams [M] with the tray!"), SPAN_DANGER("You hear metal crashing."))
 		M.take_organ_damage(4)
 		if(prob(30))
@@ -233,7 +233,7 @@
 	else
 		src.visible_message(SPAN_NOTICE("The tray scatters its contents all over the area."))
 	current_weight = 0
-	playsound(dropspot, file("sound/items/trayhit[pick(1, 2)].ogg"), 50, 1)
+	playsound(dropspot, pick('sound/items/trayhit1.ogg', 'sound/items/trayhit2.ogg'), 50, 1)
 
 /obj/item/weapon/tray/throw_impact(atom/hit_atom)
 	spill(null, src.loc)
