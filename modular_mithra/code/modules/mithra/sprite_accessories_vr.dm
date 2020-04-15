@@ -1488,7 +1488,7 @@
 	do_colouration = 0
 	color_blend_mode = ICON_MULTIPLY
 
-	/datum/sprite_accessory/tail/vulpkanin_alt_color
+/datum/sprite_accessory/tail/Easterntail
 	name = "Eastern Dragon (Animated)"
 	desc = ""
 	icon_state = "Easterntail"
@@ -1498,7 +1498,7 @@
 	ani_state = "Easterntail_w"
 	extra_overlay_w = "EasterntailColorTip_w"
 
-	/datum/sprite_accessory/tail/m_tail_synthliz_BEHIND
+/datum/sprite_accessory/tail/m_tail_synthliz_BEHIND
 	name = "Synthetic Lizard tail"
 	desc = ""
 	icon_state = "m_tail_synthliz_BEHIND"
