@@ -8,6 +8,8 @@
 	damage_mask =     'icons/mob/human_races/species/vox/damage_mask.dmi'
 	blood_mask =      'icons/mob/human_races/species/vox/blood_mask.dmi'
 
+	limb_blend = ICON_MULTIPLY
+
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/kick,
@@ -54,7 +56,7 @@
 
 	species_flags = SPECIES_FLAG_NO_SCAN
 	spawn_flags = SPECIES_CAN_JOIN // | SPECIES_IS_WHITELISTED
-	appearance_flags = HAS_EYE_COLOR | HAS_HAIR_COLOR
+	appearance_flags = HAS_EYE_COLOR | HAS_HAIR_COLOR | HAS_SKIN_COLOR
 
 	blood_color = "#2299fc"
 	flesh_color = "#808d11"
