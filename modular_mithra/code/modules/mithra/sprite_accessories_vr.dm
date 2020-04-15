@@ -43,7 +43,7 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
-	/datum/sprite_accessory/ears/antennae
+	/datum/sprite_accessory/ears/m_ipc_antenna_synth_horns_ADJ
 	name = "Synth horns"
 	desc = ""
 	icon_state = "m_ipc_antenna_synth_horns_ADJ"
@@ -51,7 +51,7 @@
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "m_ipc_antenna_synth_hornslight_ADJ"
 
-	/datum/sprite_accessory/ears/antennae
+	/datum/sprite_accessory/ears/m_ipc_antenna_synth_thick_ADJ
 	name = "Synth horns thick"
 	desc = ""
 	icon_state = "m_ipc_antenna_synth_thick_ADJ"
@@ -59,7 +59,7 @@
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "m_ipc_antenna_synth_thicklight_ADJ"
 
-	/datum/sprite_accessory/ears/antennae
+	/datum/sprite_accessory/ears/m_ipc_antenna_synth_curled_ADJ
 	name = "Synth horns curly"
 	desc = ""
 	icon_state = "m_ipc_antenna_synth_curled_ADJ"
@@ -1513,3 +1513,17 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
+/datum/sprite_accessory/tail/m_tail_vox_BEHIND
+	name = "Vox tail (Animated)"
+	desc = ""
+	icon_state = "m_tail_vox_BEHIND"
+	ani_state = "m_tailwag_synthliz_BEHIND"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/tail/m_tail_vox_BEHIND
+	name = "Vox tail"
+	desc = ""
+	icon_state = "m_tail_vox_BEHIND"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
