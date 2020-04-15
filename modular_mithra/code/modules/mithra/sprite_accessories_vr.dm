@@ -31,16 +31,6 @@
 
 // Ears avaliable to anyone
 
-/datum/sprite_accessory/ears/squirrel_orange
-	name = "squirel, orange"
-	desc = ""
-	icon_state = "squirrel-orange"
-
-/datum/sprite_accessory/ears/squirrel_red
-	name = "squirrel, red"
-	desc = ""
-	icon_state = "squirrel-red"
-
 /datum/sprite_accessory/ears/bunny_white
 	name = "bunny, white"
 	desc = ""
@@ -55,26 +45,6 @@
 	name = "bear, panda"
 	desc = ""
 	icon_state = "panda"
-
-/datum/sprite_accessory/ears/wolf_grey
-	name = "wolf, grey"
-	desc = ""
-	icon_state = "wolf-grey"
-
-/datum/sprite_accessory/ears/wolf_green
-	name = "wolf, green"
-	desc = ""
-	icon_state = "wolf-green"
-
-/datum/sprite_accessory/ears/wisewolf
-	name = "wolf, wise"
-	desc = ""
-	icon_state = "wolf-wise"
-
-/datum/sprite_accessory/ears/mouse_grey
-	name = "mouse, grey"
-	desc = ""
-	icon_state = "mouse-grey"
 
 /datum/sprite_accessory/ears/bee
 	name = "bee antennae"
@@ -581,6 +551,8 @@
 	name = "xenomorph backplate"
 	desc = ""
 	icon_state = "snag-backplate"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
 
 /datum/sprite_accessory/wing/nevrean
 	name = "nevrean wings/fantail"
@@ -735,11 +707,6 @@
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "wolfinner"
 
-/datum/sprite_accessory/tail/mouse_pink
-	name = "mouse, pink"
-	desc = ""
-	icon_state = "mouse-pink"
-
 /datum/sprite_accessory/tail/mouse
 	name = "mouse, colorable"
 	desc = ""
@@ -802,11 +769,15 @@
 	name = "xenomorph tail 1"
 	desc = ""
 	icon_state = "snag"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
 
 /datum/sprite_accessory/tail/xenotail
 	name = "xenomorph tail 2"
 	desc = ""
 	icon_state = "xenotail"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
 
 /datum/sprite_accessory/tail/eboop
 	name = "EGN mech tail (dual color)"
@@ -815,23 +786,6 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "eboop_mark"
-
-/datum/sprite_accessory/tail/ketrai_wag
-	name = "fennix tail (vwag)"
-	desc = ""
-	icon_state = "ketraitail"
-	ani_state = "ketraitail_w"
-
-/datum/sprite_accessory/tail/ketrainew_wag
-	name = "new fennix tail (vwag)"
-	desc = ""
-	icon_state = "ketraitailnew"
-	ani_state = "ketraitailnew_w"
-
-/datum/sprite_accessory/tail/redpanda
-	name = "red panda"
-	desc = ""
-	icon_state = "redpanda"
 
 /datum/sprite_accessory/tail/ringtail
 	name = "ringtail, colorable"
