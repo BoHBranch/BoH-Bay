@@ -69,7 +69,8 @@
 #define ui_gun_select "EAST-1:28,SOUTH+2:7"
 #define ui_gun4 "EAST-3:24,SOUTH+2:7"
 
-//Upper-middle right (damage indicators)
+//Upper-middle right (damage indicators and up hint)
+#define ui_up_hint "EAST-1:28,NORTH-1:29"
 #define ui_toxin "EAST-1:28,NORTH-2:27"
 #define ui_fire "EAST-1:28,NORTH-3:25"
 #define ui_oxygen "EAST-1:28,NORTH-4:23"
