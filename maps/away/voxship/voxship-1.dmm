@@ -1685,7 +1685,7 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "eF" = (
-/obj/machinery/uniform_vendor,
+/obj/structure/bookcase/manuals/engineering,
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
 "eG" = (
