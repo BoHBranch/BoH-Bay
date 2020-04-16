@@ -813,6 +813,7 @@
 /obj/item/weapon/rcd_ammo/large,
 /obj/item/weapon/rcd_ammo/large,
 /obj/item/weapon/rpd,
+/obj/item/weapon/rpd,
 /turf/simulated/floor,
 /area/unishi/engineroom)
 "bZ" = (
@@ -1882,14 +1883,21 @@
 /obj/structure/window/phoronreinforced,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/New_Horizons)
-"gv" = (
+"nv" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	frequency = 1380;
+	id_tag = "right_shuttle_pump_internal"
+	},
+/turf/simulated/floor,
+/area/ship/New_Horizons)
+"qc" = (
 /obj/machinery/alarm{
 	icon_state = "alarm0";
 	dir = 1
 	},
 /turf/simulated/wall/titanium,
 /area/ship/New_Horizons)
-"rp" = (
+"yy" = (
 /obj/machinery/power/port_gen/pacman/super/potato,
 /obj/structure/cable{
 	icon_state = "0-8";
@@ -1898,33 +1906,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/New_Horizons)
-"vA" = (
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/effect/wallframe_spawn/phoron,
-/turf/simulated/floor/tiled/techfloor,
-/area/ship/New_Horizons)
-"vH" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	icon_state = "intact";
-	dir = 6
-	},
+"yD" = (
+/obj/structure/fuel_port,
 /turf/simulated/wall/titanium,
 /area/ship/New_Horizons)
-"xm" = (
+"Bq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	icon_state = "intact";
 	dir = 8
-	},
-/turf/simulated/wall/titanium,
-/area/ship/New_Horizons)
-"zs" = (
-/obj/machinery/atmospherics/portables_connector,
-/turf/simulated/floor,
-/area/unishi/engineroom)
-"ED" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	icon_state = "intact";
-	dir = 10
 	},
 /turf/simulated/wall/titanium,
 /area/ship/New_Horizons)
@@ -1934,46 +1923,58 @@
 	},
 /turf/simulated/floor,
 /area/unishi/engineroom)
-"GX" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	icon_state = "intact";
-	dir = 9
-	},
-/turf/simulated/wall/titanium,
-/area/ship/New_Horizons)
+"FV" = (
+/obj/machinery/atmospherics/omni/filter,
+/turf/simulated/floor,
+/area/unishi/engineroom)
 "Ic" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
 /turf/simulated/wall,
 /area/unishi/engineering)
-"NE" = (
+"Kg" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 10
+	},
+/turf/simulated/wall/titanium,
+/area/ship/New_Horizons)
+"Nq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	icon_state = "intact";
 	dir = 4
 	},
 /turf/simulated/wall/titanium,
 /area/ship/New_Horizons)
-"QD" = (
+"Rg" = (
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/effect/wallframe_spawn/phoron,
+/turf/simulated/floor/tiled/techfloor,
+/area/ship/New_Horizons)
+"Va" = (
+/obj/machinery/atmospherics/portables_connector,
+/turf/simulated/floor,
+/area/unishi/engineroom)
+"VE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	icon_state = "intact";
 	dir = 5
 	},
 /turf/simulated/wall/titanium,
 /area/ship/New_Horizons)
-"UE" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1380;
-	id_tag = "right_shuttle_pump_internal"
+"Xl" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 9
 	},
-/turf/simulated/floor,
+/turf/simulated/wall/titanium,
 /area/ship/New_Horizons)
-"Vm" = (
-/obj/machinery/atmospherics/omni/filter,
-/turf/simulated/floor,
-/area/unishi/engineroom)
-"WZ" = (
-/obj/structure/fuel_port,
+"Zz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 6
+	},
 /turf/simulated/wall/titanium,
 /area/ship/New_Horizons)
 
@@ -7108,8 +7109,8 @@ dS
 bc
 bc
 bB
-zs
-Vm
+Va
+FV
 bV
 cc
 ce
@@ -8021,7 +8022,7 @@ da
 dh
 dk
 da
-QD
+VE
 aa
 aa
 aY
@@ -8118,12 +8119,12 @@ cz
 aZ
 aa
 aa
-xm
+Bq
 db
 di
 do
 du
-NE
+Nq
 aa
 aa
 aY
@@ -8220,16 +8221,16 @@ cA
 aZ
 aa
 cO
-GX
+Xl
 dc
 di
 dq
 du
-ED
+Kg
 dz
-UE
+nv
 dH
-rp
+yy
 ep
 cu
 cu
@@ -8319,7 +8320,7 @@ aY
 aI
 cu
 cx
-WZ
+yD
 cL
 cL
 cU
@@ -8429,7 +8430,7 @@ dd
 di
 dM
 dl
-vA
+Rg
 dD
 dV
 dK
@@ -8727,7 +8728,7 @@ aY
 aJ
 cx
 cu
-gv
+qc
 cL
 cL
 cY
@@ -8832,14 +8833,14 @@ cr
 aZ
 cK
 cS
-QD
+VE
 df
 di
 dd
 dx
-vH
+Zz
 dA
-UE
+nv
 aY
 eb
 er
@@ -8934,12 +8935,12 @@ cG
 aZ
 aa
 aa
-NE
+Nq
 dg
 di
 dp
 dx
-NE
+Nq
 aa
 aa
 aY
@@ -9041,7 +9042,7 @@ da
 dn
 ds
 da
-GX
+Xl
 aa
 aa
 aY
