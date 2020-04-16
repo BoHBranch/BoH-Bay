@@ -18,6 +18,9 @@
 /datum/uplink_category/grenades
 	name = "Grenades"
 
+/datum/uplink_category/chemicals
+	name = "Chemicals"
+
 /datum/uplink_category/visible_weapons
 	name = "Loud & Dangerous Weaponry"
 
