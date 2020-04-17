@@ -253,6 +253,9 @@ var/list/gamemode_cache = list()
 	var/fail2topic_rule_name = "_DD_Fail2topic"
 	var/fail2topic_enabled = FALSE
 
+	// salt settings
+	var/show_gamemode_vote = TRUE
+
 
 /datum/configuration/New()
 	var/list/L = typesof(/datum/game_mode) - /datum/game_mode
@@ -792,9 +795,9 @@ var/list/gamemode_cache = list()
 				if ("act_interval")
 					config.act_interval = text2num(value) SECONDS
 				if("delist_population")
-					config.delist_population = value
+					config.delist_population = text2num(value)
 				if("pb_population")
-					config.pb_population = value
+					config.pb_population = text2num(value)
 
 				if ("announce_gamemode")
 					config.announce_gamemode = TRUE
@@ -812,6 +815,9 @@ var/list/gamemode_cache = list()
 				if ("fail2topic_rule_name")
 					fail2topic_rule_name = value
 				if ("fail2topic_enabled")
+					fail2topic_enabled = text2num(value)
+				
+				if ("show_gamemode_vote")
 					fail2topic_enabled = text2num(value)
 
 				if ("job_whitelist")

@@ -21,6 +21,7 @@
 
 /datum/vote/gamemode/setup_vote(mob/creator, automatic)
 	..()
+	show_results = config.show_gamemode_vote
 	choices += config.votable_modes
 	for (var/F in choices)
 		var/datum/game_mode/M = gamemode_cache[F]
