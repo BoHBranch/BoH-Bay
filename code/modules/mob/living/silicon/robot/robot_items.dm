@@ -197,6 +197,22 @@
 /obj/item/weapon/tray/robotray
 	name = "RoboTray"
 	desc = "An autoloading tray specialized for carrying refreshments."
+	var/list/valid = list(
+		/obj/item/weapon/reagent_containers,
+		/obj/item/weapon/material/kitchen/utensil,
+		/obj/item/weapon/storage/fancy/cigarettes,
+		/obj/item/clothing/mask/smokable,
+		/obj/item/weapon/storage/box/matches,
+		/obj/item/weapon/flame/match,
+		/obj/item/weapon/material/ashtray
+	)
+
+/obj/item/weapon/tray/robotray/attempt_load_item(var/obj/item/I, var/mob/user, var/messages = TRUE, var/click_params)
+	for(var/checktype in valid)
+		if(istype(I, checktype))
+			return ..()
+	if(messages)
+		to_chat(user, SPAN_NOTICE("You can't load [I] onto [src]."))
 
 /obj/item/weapon/tray/robotray/afterattack(atom/target, mob/user, proximity)
 	if(isturf(target) || istype(target,/obj/structure/table) )

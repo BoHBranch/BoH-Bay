@@ -23,15 +23,6 @@
 
 	var/safedrop = 0//Used to tell when we should or shouldn't spill if the tray is dropped.
 	//Safedrop is set true when throwing, because it will spill on impact. And when placing on a table
-	var/list/valid = list(
-		/obj/item/weapon/reagent_containers,
-		/obj/item/weapon/material/kitchen/utensil,
-		/obj/item/weapon/storage/fancy/cigarettes,
-		/obj/item/clothing/mask/smokable,
-		/obj/item/weapon/storage/box/matches,
-		/obj/item/weapon/flame/match,
-		/obj/item/weapon/material/ashtray
-	)
 
 /obj/item/weapon/tray/attack(mob/living/carbon/M as mob, mob/living/carbon/user as mob, var/target_zone)
 
@@ -86,7 +77,8 @@
 		playsound(M, pick('sound/items/trayhit1.ogg', 'sound/items/trayhit2.ogg'), 50, 1)
 		visible_message(SPAN_DANGER("[user] slams [M] with the tray!"), SPAN_DANGER("You hear metal crashing."))
 		if(prob(10))
-			if(!istype(M,/mob/living/silicon))M.Stun(rand(1,3))
+			if(!istype(M,/mob/living/silicon))
+				M.Stun(rand(1,3))
 			M.take_organ_damage(3)
 			return
 		else
@@ -116,25 +108,20 @@
 	if (istype(user,/mob/living/silicon/robot))//safety to stop robots losing their items
 		return
 
-	if (istype(I, /obj/item/weapon/tray))//safety to prevent tray stacking
-		return
-
 	if(istype(I, /obj/item/weapon/material/kitchen/rollingpin))
 		if(cooldown < world.time - 25)
 			user.visible_message("<span class='warning'>[user] bashes [src] with [I]!</span>")
 			playsound(user.loc, 'sound/effects/shieldbash.ogg', 50, 1)
 			cooldown = world.time
-
-	else
-		attempt_load_item(I, user, click_params=click_params)
-		//..()
+		return
+	attempt_load_item(I, user, click_params=click_params)
 
 /*
-============~~~~~==============~~~~~=============
-=												=
-=  Code for trays carrying things. By Nanako.
-=												=
-============~~~~~============~~~~~===============
+============~~~~~======================~~~~~=============
+=														=
+=  Code for trays carrying things. By Nanako. And Jade.
+=														=
+============~~~~~====================~~~~~===============
 */
 
 //Clicking an item individually loads it. clicking a table places the tray on it safely
@@ -151,24 +138,29 @@
 	if (user.stat || user.incapacitated() || !user.Adjacent(src)) return
 	unload_at_loc(user=user)
 
-/obj/item/weapon/tray/proc/attempt_load_item(var/obj/item/I, var/mob/user, var/messages = 1, var/click_params)
-	if(I in carrying)
+/obj/item/weapon/tray/proc/attempt_load_item(var/obj/item/I, var/mob/user, var/messages = TRUE, var/click_params)
+	if(I in carrying || !I)
 		return
 	if( I != src && !I.anchored && !istype(I, /obj/item/projectile) )
-		var/match = 0
-		for (var/T in valid)
-			if (istype(I,T))
-				match = 1
-				var/remaining = max_carry - current_weight
-				if (remaining >= I.w_class)
-					load_item(I,user, click_params)
-					if (messages)
-						to_chat(user, SPAN_NOTICE("You place [I] on the tray."))
-					return 1
-				if (messages)
-					to_chat(user, SPAN_NOTICE("The tray can't take that much weight!"))
-		if (!match && messages)
-			to_chat(user, SPAN_NOTICE("That item isn't suitable for a tray."))
+		if(istype(I, /obj/item/weapon/tray))
+			var/obj/item/weapon/tray/T = I
+			if(current_weight || T.current_weight) // Just an easter egg for people who try to cheat.
+				T.spill()
+				spill()
+				user.visible_message(
+					SPAN_WARNING("[user] tries to stack two trays and spills their contents everywhere!"),
+					SPAN_WARNING("You spill both the trays' contents!"),
+					SPAN_WARNING("You hear the sound of metal crashing!")
+				)
+			return
+		var/remaining = max_carry - current_weight
+		if (remaining >= I.w_class)
+			load_item(I,user, click_params)
+			if (messages)
+				to_chat(user, SPAN_NOTICE("You place [I] on the tray."))
+			return 1
+		if (messages)
+			to_chat(user, SPAN_NOTICE("The tray can't take that much weight!"))
 	return 0
 
 
@@ -179,8 +171,8 @@
 	current_weight += I.w_class
 	carrying += I
 	vis_contents += I
+	I.hud_layerise()
 	GLOB.item_equipped_event.register(I, src, /obj/item/weapon/tray/proc/pick_up)
-	//rand(0, (max_offset_y*2)-3)-(max_offset_y)-3
 
 /obj/item/weapon/tray/verb/unload()
 	set name = "Unload Tray"
@@ -189,13 +181,10 @@
 	unload_at_loc(user = usr)
 
 /obj/item/weapon/tray/proc/auto_align(obj/item/W, click_params)
-	if (!W.center_of_mass) // Clothing, material stacks, generally items with large sprites where exact placement would be unhandy.
+	if (!W.center_of_mass || !click_params) // Clothing, material stacks, generally items with large sprites where exact placement would be unhandy.
 		W.pixel_x = rand(-W.randpixel, W.randpixel)
 		W.pixel_y = rand(-W.randpixel, W.randpixel)
 		W.pixel_z = 0
-		return
-
-	if (!click_params)
 		return
 
 	var/list/click_data = params2list(click_params)
@@ -206,13 +195,10 @@
 	var/mouse_x = text2num(click_data["icon-x"])-1 // Ranging from 0 to 31
 	var/mouse_y = text2num(click_data["icon-y"])-1
 
-	var/cell_x = Clamp(round(mouse_x/CELLSIZE), 0, CELLS-1) // Ranging from 0 to CELLS-1
-	var/cell_y = Clamp(round(mouse_y/CELLSIZE), 0, CELLS-1)
-
 	var/list/center = cached_key_number_decode(W.center_of_mass)
 
-	W.pixel_x = (CELLSIZE * (cell_x + 0.5)) - center["x"]
-	W.pixel_y = (CELLSIZE * (cell_y + 0.5)) - center["y"]
+	W.pixel_x = mouse_x - center["x"]
+	W.pixel_y = mouse_y - center["y"]
 	W.pixel_z = 0
 
 /obj/item/weapon/tray/proc/pick_up(var/obj/item/contained, var/mob/moved_to, var/slot)
@@ -225,6 +211,7 @@
 	vis_contents.Remove(contained)
 	carrying.Remove(contained)
 	current_weight -= min(contained.w_class, current_weight)
+	contained.reset_plane_and_layer()
 
 /obj/item/weapon/tray/proc/unload_at_loc(var/turf/dropspot = null, var/mob/user)
 	if (!current_weight)
@@ -252,7 +239,7 @@
 
 	for(var/obj/item/I in carrying)
 		unload_item(I, dropspot)
-		I.throw_at(get_edge_target_turf(src, pick(GLOB.alldirs)), rand(1, 2), 1)
+		I.throw_at(get_edge_target_turf(src, pick(GLOB.alldirs)), rand(0, 2), 10)
 	if (user)
 		user.visible_message(SPAN_NOTICE("[user] spills their tray all over the floor."))
 	else
