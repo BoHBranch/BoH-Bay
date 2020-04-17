@@ -47,6 +47,14 @@
 		/obj/item/weapon/tank/emergency/oxygen/double,
 		)
 
+//Soft Suit uplink kit
+/obj/item/weapon/storage/box/syndie_kit/space
+
+	startswith = list(
+		/obj/item/clothing/head/helmet/space/emergency,
+		/obj/item/clothing/suit/space/emergency
+		)
+
 // Chameleon uplink kit
 /obj/item/weapon/storage/backpack/chameleon/sydie_kit
 	startswith = list(

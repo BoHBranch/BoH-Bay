@@ -78,7 +78,7 @@
 //When the wearer gets hit, this armor will teleport the user a short distance away (to safety or to more danger, no one knows. That's the fun of it!)
 /obj/item/clothing/suit/armor/reactive
 	name = "reactive teleport armor"
-	desc = "Someone separated our Chief Science Officer from their own head!"
+	desc = "An advanced device that teleporters the user out of harms way. It's sensors are incredibly sensitive, and there is no way to control where it will bring you."
 	var/active = 0.0
 	icon_state = "reactiveoff"
 	blood_overlay_type = "armor"
@@ -261,6 +261,7 @@
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_PADDED
 		)
+	siemens_coefficient = 0.3
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS //now covers legs with new sprite
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS
