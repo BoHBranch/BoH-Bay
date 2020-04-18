@@ -78,7 +78,7 @@
 	firemodes = list(
 		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun),
 		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock),
-		list(mode_name="kill", projectile_type=/obj/item/projectile/beam),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam/smalllaser),
 		)
 
 	var/fail_counter = 0
