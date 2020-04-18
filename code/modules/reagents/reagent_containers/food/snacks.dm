@@ -297,7 +297,7 @@
 		to_chat(user, span("warning", "There's not enough [C.name] to coat the [src]!"))
 		return 0
 
-	var/id = C.id
+	var/Rtype = C.type
 
 	//First make sure there's space for our batter
 	if (reagents.get_free_space() < req+5)
@@ -308,7 +308,7 @@
 	C.holder.trans_to_holder(reagents, req)
 
 	//We're done with C now, repurpose the var to hold a reference to our local instance of it
-	C = reagents.get_reagent(id)
+	C = reagents.get_reagent(Rtype)
 	if (!C)
 		return
 
