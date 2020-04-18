@@ -55,6 +55,41 @@
 		/obj/item/clothing/suit/space/emergency
 		)
 
+//Plate kits
+
+/obj/item/weapon/storage/box/syndie_kit/riotkit
+
+	startswith = list(
+	/obj/item/clothing/accessory/armguards/riot,
+	/obj/item/clothing/accessory/legguards/riot,
+	/obj/item/clothing/head/helmet/riot
+	)
+
+/obj/item/weapon/storage/box/syndie_kit/ballistickit
+
+	startswith = list(
+	/obj/item/clothing/accessory/armguards/ballistic,
+	/obj/item/clothing/accessory/legguards/ballistic,
+	/obj/item/clothing/head/helmet/ballistic,
+	)
+
+/obj/item/weapon/storage/box/syndie_kit/ablativekit
+
+	startswith = list(
+	/obj/item/clothing/accessory/armguards/ablative,
+	/obj/item/clothing/accessory/legguards/ablative,
+	/obj/item/clothing/head/helmet/ablative
+	)
+
+/obj/item/weapon/storage/box/syndie_kit/mediumkit
+
+	startswith = list(
+	/obj/item/clothing/accessory/armorplate/medium,
+	/obj/item/clothing/accessory/armguards,
+	/obj/item/clothing/accessory/legguards,
+	/obj/item/clothing/head/helmet
+	)
+
 // Chameleon uplink kit
 /obj/item/weapon/storage/backpack/chameleon/sydie_kit
 	startswith = list(
