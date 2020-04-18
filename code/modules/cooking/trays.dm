@@ -171,8 +171,10 @@
 	current_weight += I.w_class
 	carrying += I
 	vis_contents += I
-	I.hud_layerise()
+	if(istype(loc, /mob/))
+		I.hud_layerise()
 	GLOB.item_equipped_event.register(I, src, /obj/item/weapon/tray/proc/pick_up)
+	GLOB.destroyed_event.register(I, src, /obj/item/weapon/tray/proc/unload_item)
 
 /obj/item/weapon/tray/verb/unload()
 	set name = "Unload Tray"
