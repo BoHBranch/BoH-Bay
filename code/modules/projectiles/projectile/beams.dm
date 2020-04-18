@@ -25,8 +25,12 @@
 	damage = 2
 	eyeblur = 2
 
+/obj/item/projectile/beam/tinylaser
+	damage = 15
+
 /obj/item/projectile/beam/smalllaser
 	damage = 25
+	armor_penetration = 10
 
 /obj/item/projectile/beam/midlaser
 	damage = 45
