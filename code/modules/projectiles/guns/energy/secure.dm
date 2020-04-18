@@ -6,10 +6,15 @@
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
 		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns_secure.dmi',
 		)
+	firemodes = list(
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="smallgunstun"),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="smallgunshock"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam/tinylaser, modifystate="smallgunkill"),
+		)
 	req_access = list(list(access_brig, access_bridge))
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
-	max_shots = 3
-	recharge_time = 8
+	max_shots = 5
+	recharge_time = 14
 	self_recharge = 1
 
 /obj/item/weapon/gun/energy/stunrevolver/secure
