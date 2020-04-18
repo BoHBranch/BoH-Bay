@@ -255,6 +255,7 @@ var/list/gamemode_cache = list()
 
 	// salt settings
 	var/show_gamemode_vote = TRUE
+	var/show_gamemode_percentage = TRUE
 
 
 /datum/configuration/New()
@@ -818,7 +819,10 @@ var/list/gamemode_cache = list()
 					fail2topic_enabled = text2num(value)
 				
 				if ("show_gamemode_vote")
-					fail2topic_enabled = text2num(value)
+					show_gamemode_vote = text2num(value)
+
+				if ("show_gamemode_percentage")
+					show_gamemode_percentage = text2num(value)
 
 				if ("job_whitelist")
 					config.job_whitelist = TRUE
