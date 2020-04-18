@@ -12,7 +12,7 @@
 	caliber = CALIBER_SHOTGUN
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	load_method = SINGLE_CASING
-	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
+	ammo_type = /obj/item/ammo_casing/shotgun
 	handle_casings = HOLD_CASINGS
 	one_hand_penalty = 8
 	bulk = 6
@@ -67,7 +67,6 @@
 	wielded_item_state = "cshotgun-wielded"
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	max_shells = 7 //match the ammo box capacity, also it can hold a round in the chamber anyways, for a total of 8.
-	ammo_type = /obj/item/ammo_casing/shotgun
 	one_hand_penalty = 8
 
 /obj/item/weapon/gun/projectile/shotgun/pump/combat/on_update_icon()
