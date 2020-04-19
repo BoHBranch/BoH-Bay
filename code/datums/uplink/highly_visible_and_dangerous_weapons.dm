@@ -200,3 +200,9 @@
 	desc = "For arming your comrades on the cheap!"
 	item_cost = 6
 	path = /obj/item/weapon/gun/projectile/heavysniper/boltaction
+
+/datum/uplink_item/item/visible_weapons/energyshield
+	name = "Energy Shield"
+	desc = "A shield capable of stopping most projectile and melee attacks. It can be retracted, expanded, and stored anywhere."
+	item_cost = 22
+	path = /obj/item/weapon/shield/energy

@@ -125,3 +125,10 @@
 	name = "Chameleon Armor"
 	desc = "A two piece set of chameleon armor that covers the entire body. Due to space and technical limitations, it is only effective against handgun tier weaponry."
 	item_cost = 12
+	path = /obj/item/weapon/storage/backpack/chameleonarmor/sydie_kit
+
+/datum/uplink_item/item/armor/insulatedcombatgloves
+	name = "Insulated Combat Gloves"
+	desc = "A pair of gloves that give moderate hand protection. They appear to be insulated."
+	item_cost = 2
+	path = /obj/item/clothing/gloves/thick/combat

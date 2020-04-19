@@ -90,6 +90,13 @@
 	/obj/item/clothing/head/helmet
 	)
 
+//Chameleon Armor uplink kit
+/obj/item/weapon/storage/backpack/chameleonarmor/sydie_kit
+	startswith = list(
+		/obj/item/clothing/suit/chameleonarmor,
+		/obj/item/clothing/head/chameleonarmor
+		)
+
 // Chameleon uplink kit
 /obj/item/weapon/storage/backpack/chameleon/sydie_kit
 	startswith = list(
