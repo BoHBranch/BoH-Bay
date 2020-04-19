@@ -97,7 +97,7 @@
 /datum/gear/mre
 	display_name = "MRE selection"
 	description = "A vacuum-sealed bag containing a day's worth of nutrients for an adult in strenuous situations."
-	cost = 3
+	cost = 2
 	path = /obj/item/weapon/storage/mre
 
 /datum/gear/mre/New()
