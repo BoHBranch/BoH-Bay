@@ -4,6 +4,12 @@
 /datum/uplink_item/item/visible_weapons
 	category = /datum/uplink_category/visible_weapons
 
+/datum/uplink_item/item/visible_weapons/
+	name = "Switchblade"
+	desc = "Damn it feels good to be a gangsta."
+	item_cost = 4
+	path = /obj/item/weapon/material/knife/folding/combat/switchblade
+
 /datum/uplink_item/item/visible_weapons/zipgun
 	name = "Zip Gun"
 	desc = "A pipe attached to crude wooden stock with firing mechanism, holds one round."
