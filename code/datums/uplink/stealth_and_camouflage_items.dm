@@ -10,6 +10,11 @@
 	item_cost = 1
 	path = /obj/item/clothing/mask/fakemoustache
 
+/datum/uplink_item/item/stealth_items/balaclava
+	name = "Balaclava"
+	item_cost = 1
+	path = /obj/item/clothing/mask/balaclava
+
 /datum/uplink_item/item/stealth_items/syndigaloshes
 	name = "No-Slip Shoes"
 	desc = "These shoes have a non-slip grip on them, so those pesky janitors can't ruin your operations!"
@@ -32,7 +37,7 @@
 	name = "Chameleon Kit"
 	desc = "Comes with a full set of appearance changing clothing you need to impersonate most people.  \
 	Accessories, backpack, and gun included!"
-	item_cost = 20
+	item_cost = 10
 	path = /obj/item/weapon/storage/backpack/chameleon/sydie_kit
 
 /datum/uplink_item/item/stealth_items/voice
