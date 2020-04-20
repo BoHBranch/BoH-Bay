@@ -13,7 +13,7 @@
 /datum/uplink_item/item/medical/stabilisation
 	name = "Stabilisation First Aid Kit"
 	desc = "Contains variety of emergency medical pouches."
-	item_cost = 10
+	item_cost = 6
 	path = /obj/item/weapon/storage/firstaid/stab
 
 /datum/uplink_item/item/medical/stasis

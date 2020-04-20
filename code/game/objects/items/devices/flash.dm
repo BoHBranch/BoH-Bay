@@ -217,8 +217,9 @@
 /obj/item/device/flash/disguised
 	name = "camera"
 	desc = "A polaroid camera."
-	icon_state = "camera"
+	icon_state = "cameraflash"
 	item_state = "electropack"
+	slot_flags = SLOT_BELT
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	str_min = 3
 	str_max = 8
