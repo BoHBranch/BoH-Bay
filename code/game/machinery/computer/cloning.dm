@@ -12,7 +12,7 @@
 	var/list/records = list()
 	var/datum/dna2/record/active_record = null
 	var/obj/item/weapon/disk/data/diskette = null //Mostly so the geneticist can steal everything.
-	var/loading = 0 // Nice loading text
+	var/loading = FALSE // Nice loading text
 
 
 /obj/machinery/computer/cloning/Initialize()
@@ -162,7 +162,7 @@
 	if ((href_list["scan"]) && (!isnull(scanner)))
 		scantemp = ""
 
-		loading = 1
+		loading = TRUE
 
 		addtimer(CALLBACK(src, .proc/scan_mob, scanner.occupant), 2 SECONDS)
 
@@ -274,6 +274,7 @@
 		brain_skip = 1
 	if ((isnull(subject)) || (!(ishuman(subject)) && !brain_skip) || (!subject.dna))
 		scantemp = "Error: Unable to locate valid genetic data."
+		loading = FALSE
 		return
 	if (!subject.has_brain() && !brain_skip)
 		if(istype(subject, /mob/living/carbon/human))
@@ -282,19 +283,24 @@
 				scantemp = "Error: No signs of intelligence detected."
 		else
 			scantemp = "Error: No signs of intelligence detected."
+		loading = FALSE
 		return
 
 	if(subject.isSynthetic())
 		scantemp = "Error: Majority of subject is non-organic."
+		loading = FALSE
 		return
 	if (subject.suiciding)
 		scantemp = "Error: Subject's brain is not responding to scanning stimuli."
+		loading = FALSE
 		return
 	if (MUTATION_NOCLONE in subject.mutations)
 		scantemp = "Error: Genetic sequence too unstable for cloning.."
+		loading = FALSE
 		return
 	if (subject.species && subject.species.species_flags & SPECIES_FLAG_NO_SCAN && !brain_skip)
 		scantemp = "Error: Unspecific Mental interface failure."
+		loading = FALSE
 		return
 /*no modifiers in bay yet
 	for(var/modifier_type in subject.modifiers)	//Can't be cloned, even if they had a previous scan
@@ -304,6 +310,7 @@
 */
 	if (!isnull(find_record(subject.name)))
 		scantemp = "Subject already in database."
+		loading = FALSE
 		return
 
 	subject.dna.check_integrity()
@@ -340,7 +347,7 @@
 
 	records += R
 	scantemp = "Subject successfully scanned."
-	loading = 0
+	loading = FALSE
 
 //Find a specific record by key.
 /obj/machinery/computer/cloning/proc/find_record(var/find_key)
