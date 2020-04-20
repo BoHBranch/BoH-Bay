@@ -36,14 +36,6 @@
 	item_cost = 1
 	path = /obj/item/clothing/accessory/storage/bandolier
 
-/* Requires tweaking, do not enable until televest is reworked.
-/datum/uplink_item/item/armor/teleportervest
-	name = "Reactive Teleporter Vest"
-	desc = "An advanced piece of technology that teleports the users out of harms way. It's sensors are rather sensitive, and there is no way to control where it goes."
-	item_cost = 20
-	path = /obj/item/clothing/suit/armor/reactive
-	*/
-
 /datum/uplink_item/item/armor/beltholster
 	name = "Belt Holster"
 	desc = "A tactical belt that goes on your waist. Comes with a built in holster."
@@ -127,8 +119,14 @@
 	item_cost = 12
 	path = /obj/item/weapon/storage/backpack/chameleonarmor/sydie_kit
 
-/datum/uplink_item/item/armor/insulatedcombatgloves
+/datum/uplink_item/item/armor/combatgloves
 	name = "Insulated Combat Gloves"
-	desc = "A pair of gloves that give moderate hand protection. They appear to be insulated."
+	desc = "A pair of gloves that give moderate hand protection."
 	item_cost = 2
-	path = /obj/item/clothing/gloves/thick/combat
+	path = /obj/item/clothing/gloves/thick/swat
+
+/datum/uplink_item/item/armor/combatboots
+	name = "Combat Boots"
+	desc = "A pair of armored boots."
+	item_cost = 2
+	path = /obj/item/clothing/shoes/tactical
