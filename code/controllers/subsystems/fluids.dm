@@ -42,11 +42,11 @@ var/datum/controller/subsystem/fluids/SSfluids
 	var/list/curr_sources = processing_sources
 	var/list/checked = list()
 	while (curr_sources.len)
-		var/turf/T = curr_sources[curr_sources.len]
 		curr_sources.len--
 		var/flooded_a_neighbor
+		var/turf/T = curr_sources[curr_sources.len]
+		UPDATE_FLUID_BLOCKED_DIRS(T)
 		for(var/spread_dir in GLOB.cardinal)
-			UPDATE_FLUID_BLOCKED_DIRS(T)
 			if(T.fluid_blocked_dirs & spread_dir) 
 				continue
 			var/turf/next = get_step(T, spread_dir)
@@ -60,15 +60,13 @@ var/datum/controller/subsystem/fluids/SSfluids
 			var/obj/effect/fluid/F = locate() in next
 			if(!F)
 				F = new /obj/effect/fluid(next)
-				var/datum/gas_mixture/GM = T:return_air()
+				var/datum/gas_mixture/GM = T.return_air()
 				if(GM) F.temperature = GM.temperature
 			if(F)
 				if(F.fluid_amount < FLUID_MAX_DEPTH)
 					SET_FLUID_DEPTH(F, FLUID_MAX_DEPTH)
 		if(!flooded_a_neighbor)
 			REMOVE_ACTIVE_FLUID_SOURCE(T)
-		else
-			ADD_ACTIVE_FLUID_SOURCE(T)
 		if (MC_TICK_CHECK)
 			return
 
@@ -79,15 +77,18 @@ var/datum/controller/subsystem/fluids/SSfluids
 	// We need to iterate through this list a few times, so we're using indexes instead of a while-truncate loop.
 	checked.Cut()
 	while (af_index <= processing_fluids.len)
+
 		var/obj/effect/fluid/F = processing_fluids[af_index++]
-		if (QDELETED(F))
+		if(QDELETED(F))
 			processing_fluids -= F
 			continue
+
 		var/turf/T = F.loc
 		checked[T] = TRUE
 		if(!T.CanFluidPass() || F.fluid_amount <= FLUID_EVAPORATION_POINT)
 			qdel(F)
 			continue
+
 		if(istype(T, /turf/space))
 			LOSE_FLUID(F, max(FLUID_EVAPORATION_POINT-1, round(F.fluid_amount * 0.5)))
 			if(F.fluid_amount <= FLUID_EVAPORATION_POINT)
@@ -109,7 +110,7 @@ var/datum/controller/subsystem/fluids/SSfluids
 						LOSE_FLUID(F, transfer)
 						SET_FLUID_DEPTH(other, other.fluid_amount + transfer)
 						continue
-
+		
 		if(F.fluid_amount > FLUID_EVAPORATION_POINT)
 			for(var/spread_dir in GLOB.cardinal)
 				if(T.fluid_blocked_dirs & spread_dir)
@@ -119,7 +120,7 @@ var/datum/controller/subsystem/fluids/SSfluids
 					continue
 				var/coming_from = GLOB.reverse_dir[spread_dir]
 				UPDATE_FLUID_BLOCKED_DIRS(neighbor_turf)
-				if((neighbor_turf.fluid_blocked_dirs & coming_from) || !neighbor_turf.CanFluidPass(coming_from) || checked[neighbor_turf])
+				if((neighbor_turf.fluid_blocked_dirs & coming_from) || checked[neighbor_turf] || !neighbor_turf.CanFluidPass(coming_from))
 					continue
 				checked[neighbor_turf] = TRUE
 				var/obj/effect/fluid/other = locate() in neighbor_turf.contents
@@ -133,12 +134,13 @@ var/datum/controller/subsystem/fluids/SSfluids
 						break
 		else
 			qdel(F)
+
 		if (MC_TICK_CHECK)
 			return
 
 	af_index = 1
-
 	while (af_index <= processing_fluids.len)
+
 		var/obj/effect/fluid/F = processing_fluids[af_index++]
 		if (QDELETED(F))
 			processing_fluids -= F
@@ -147,43 +149,42 @@ var/datum/controller/subsystem/fluids/SSfluids
 		// Equalize across our neighbors. Hardcoded here for performance reasons.
 		if(!length(F.neighbors) || F.fluid_amount <= FLUID_EVAPORATION_POINT)
 			continue
-			
+
 		var/sufficient_delta = FALSE
-		var/equalize_avg_depth = 0
-		var/equalize_avg_temp = 0
-		F.last_flow_strength = 0
-		for(var/thing in F.neighbors + F)
+		for(var/thing in F.neighbors)
 			var/obj/effect/fluid/other = thing
 			if(abs(F.fluid_amount - other.fluid_amount) >= FLUID_EVAPORATION_POINT)
 				sufficient_delta = TRUE
 				break
 
+		F.last_flow_strength = 0
+		var/setting_dir = 0
 		if(sufficient_delta)
-			var/setting_dir = 0
-			var/equalize_count = 0
-			for(var/thing in F.neighbors + F)
+			var/equalize_avg_depth = F.fluid_amount
+			var/equalize_avg_temp = F.temperature
+			for(var/thing in F.neighbors)
 				var/obj/effect/fluid/other = thing
-				var/flow_amount = F.fluid_amount - other.fluid_amount
-				equalize_count++
 				equalize_avg_depth += other.fluid_amount
+				equalize_avg_temp += other.temperature
+				var/flow_amount = F.fluid_amount - other.fluid_amount
 				if(F.last_flow_strength < flow_amount && flow_amount >= FLUID_PUSH_THRESHOLD)
 					F.last_flow_strength = flow_amount
 					setting_dir = get_dir(F, other)
-			equalize_avg_depth = Floor(equalize_avg_depth/equalize_count)
-			equalize_avg_temp = Floor(equalize_avg_temp/equalize_count)
+			equalize_avg_depth = Floor(equalize_avg_depth/(length(F.neighbors)+1))
+			equalize_avg_temp = Floor(equalize_avg_temp/(length(F.neighbors)+1))
+			SET_FLUID_DEPTH(F, equalize_avg_depth)
 			for(var/thing in F.neighbors)
 				var/obj/effect/fluid/other = thing
 				SET_FLUID_DEPTH(other, equalize_avg_depth)
-			F.set_dir(setting_dir)
+		F.set_dir(setting_dir)
 
 		if (MC_TICK_CHECK)
 			return
 
 	af_index = 1
-
 	while (af_index <= processing_fluids.len)
 		var/obj/effect/fluid/F = processing_fluids[af_index++]
-		if (QDELETED(F))
+		if(QDELETED(F))
 			processing_fluids -= F
 			continue
 
