@@ -12,13 +12,6 @@
 	build_path = /obj/item/weapon/implantcase/chem
 	sort_string = "MFAAA"
 
-/datum/design/item/implant/death_alarm
-	name = "death alarm"
-	id = "implant_death"
-	req_tech = list(TECH_MATERIAL = 2, TECH_BIO = 3, TECH_DATA = 2)
-	build_path = /obj/item/weapon/implantcase/death_alarm
-	sort_string = "MFAAB"
-
 /datum/design/item/implant/tracking
 	name = "tracking"
 	id = "implant_tracking"
