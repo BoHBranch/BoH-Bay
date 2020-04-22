@@ -4,10 +4,16 @@
 /datum/uplink_item/item/chemicals
 	category = /datum/uplink_category/chemicals
 
+/datum/uplink_item/item/chemicals/syringe
+	name = "Syringe"
+	desc = "Used for stabbing."
+	item_cost = 1
+	path = /obj/item/weapon/reagent_containers/syringe
+
 /datum/uplink_item/item/chemicals/cyanide
 	name = "Cyanide"
 	desc = "One of the most lethal poisons you can come across"
-	item_cost = 16
+	item_cost = 18
 	path = /obj/item/weapon/reagent_containers/glass/bottle/cyanide
 
 /datum/uplink_item/item/chemicals/carpotoxin
@@ -85,11 +91,11 @@
 /datum/uplink_item/item/chemicals/acid
 	name = "Polytrinic Acid"
 	desc = "A powerful acid, capable of causing severe physical harm to others."
-	item_cost = 8
+	item_cost = 14
 	path = /obj/item/weapon/reagent_containers/glass/bottle/pacid
 
-/*
-/datum/uplink_item/item/chemicals/threeeye
+/datum/uplink_item/item/chemicals/threeye
 	name = "Three Eye"
-	desc = "A highly illegal chemical, that stimulates the rarely used parts of the brain. Can awaken psykers psionic potential, or enhance it."
-	item_cost = 25 */
+	desc = "A bottle of Three eye, a highly illegal mind altering substance, rumored to be able to awaken the psionic potential in others. Overdose is 30 units. Comes with a syringe."
+	item_cost = 60
+	path = /obj/item/weapon/reagent_containers/glass/bottle/threeeye

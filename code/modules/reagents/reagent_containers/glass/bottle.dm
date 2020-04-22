@@ -262,3 +262,10 @@
 	reagents_to_add = list(/datum/reagent/space_drugs = 15,
 							/datum/reagent/mindbreaker = 15
 							)
+
+/obj/item/weapon/reagent_containers/glass/bottle/threeeye
+	name = "Bottle"
+	desc = "A small bottle"
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/three_eye = 60)

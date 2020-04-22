@@ -8,7 +8,7 @@
 	name = "Heavy Armor Vest and Helmet"
 	desc = "This satchel holds a combat helmet and fully equipped plate carrier. \
 	Suit up, and strap in, things are about to get hectic."
-	item_cost = 10
+	item_cost = 12
 	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/armor
 
 /datum/uplink_item/item/armor/space_suit
@@ -37,8 +37,8 @@
 	path = /obj/item/clothing/accessory/storage/bandolier
 
 /datum/uplink_item/item/armor/beltholster
-	name = "Belt Holster"
-	desc = "A tactical belt that goes on your waist. Comes with a built in holster."
+	name = "Security Belt Holster"
+	desc = "A standard issue security tactical belt that goes on your waist. Comes with a built in holster."
 	item_cost = 1
 	path = /obj/item/weapon/storage/belt/holster/security
 
@@ -57,19 +57,19 @@
 /datum/uplink_item/item/armor/plate_carrierriot
 	name = "Riot Carrier"
 	desc = "A modular plate carrier. It comes equipped with a riot plate."
-	item_cost = 1
+	item_cost = 2
 	path = /obj/item/clothing/suit/armor/riot
 
 /datum/uplink_item/item/armor/plate_carrierablative
 	name = "Ablative Carrier"
 	desc = "A modular plate carrier. It comes equipped with an ablative plate."
-	item_cost = 1
+	item_cost = 8
 	path = /obj/item/clothing/suit/armor/laserproof
 
 /datum/uplink_item/item/armor/plate_carrierballistic
 	name = "Ballistic Carrier"
 	desc = "A modular plate carrier. Comes equipped with a ballistic plate."
-	item_cost = 1
+	item_cost = 8
 	path = /obj/item/clothing/suit/armor/bulletproof
 
 /datum/uplink_item/item/armor/platepouch
@@ -81,37 +81,32 @@
 /datum/uplink_item/item/armor/platepouchlarge
 	name = "Large Plate Pouch"
 	desc = "A large pouch that can attach to a plate carrier. Holds four items, and slows you down more than a regular pouch."
-	item_cost = 1
+	item_cost = 2
 	path = /obj/item/clothing/accessory/storage/pouches/large/grey
 
 /datum/uplink_item/item/armor/mediumkit
 	name = "Medium Plate Kit"
-	desc = "Contains a medium chest plate, medium arm guards, medium leg guards, and a medium helmet."
-	item_cost = 2
+	desc = "Contains a medium chest plate, medium arm guards, medium leg guards, and a medium helmet. Carrier not included."
+	item_cost = 4
 	path = /obj/item/weapon/storage/box/syndie_kit/mediumkit
 
 /datum/uplink_item/item/armor/ablativekit
 	name = "Ablative Kit"
-	desc = "Contains ablative arm guards, ablative leg guards, and an ablative helmet."
-	item_cost = 2
+	desc = "Contains ablative arm guards, ablative leg guards, and an ablative helmet. Carrier not included."
+	item_cost = 8
 	path = /obj/item/weapon/storage/box/syndie_kit/ablativekit
 
 /datum/uplink_item/item/armor/ballistickit
 	name = "Ballistic Kit"
-	desc = "Contains ballistic arm guards, riot leg guards, and a ballistic helmet."
-	item_cost = 2
+	desc = "Contains ballistic arm guards, riot leg guards, and a ballistic helmet. Carrier not included."
+	item_cost = 8
 	path = /obj/item/weapon/storage/box/syndie_kit/ballistickit
 
 /datum/uplink_item/item/armor/riotkit
 	name = "Riot Kit"
-	desc = "Contains riot arm guards, riot leg guards, and a riot helmet."
+	desc = "Contains riot arm guards, riot leg guards, and a riot helmet. Carrier not included."
 	item_cost = 2
 	path = /obj/item/weapon/storage/box/syndie_kit/riotkit
-
-/datum/uplink_item/item/armor/syndiehardsuit
-	name = "Chameleon Hardsuit"
-	desc = "An advanced hardsuit with built in armor and tactical chameleon plating that enables it to alter it's appearance."
-	item_cost = 30
 
 /datum/uplink_item/item/armor/stealtharmor
 	name = "Chameleon Armor"
@@ -120,7 +115,7 @@
 	path = /obj/item/weapon/storage/backpack/chameleonarmor/sydie_kit
 
 /datum/uplink_item/item/armor/combatgloves
-	name = "Insulated Combat Gloves"
+	name = "Combat Gloves"
 	desc = "A pair of gloves that give moderate hand protection."
 	item_cost = 2
 	path = /obj/item/clothing/gloves/thick/swat
