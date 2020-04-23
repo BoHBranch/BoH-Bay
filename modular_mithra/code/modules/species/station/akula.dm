@@ -38,8 +38,7 @@
 			CULTURE_HUMAN_SPACER,
 			CULTURE_HUMAN_SPAFRO,
 			CULTURE_HUMAN_CONFED,
-			CULTURE_SYMBIOTIC,
-			CULTURE_HUMAN_OTHER
+			CULTURE_HUMAN_OTHER,
 		)
 	)
 	override_organ_types = list(BP_LUNGS = /obj/item/organ/internal/lungs/gills)

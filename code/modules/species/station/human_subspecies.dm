@@ -80,10 +80,7 @@
 		)
 
 	additional_available_cultural_info = list(
-		TAG_CULTURE = list(
-			CULTURE_HUMAN_VATGROWN,
-			CULTURE_SYMBIOTIC
-		)
+		TAG_CULTURE = list(CULTURE_HUMAN_VATGROWN)
 	)
 	default_cultural_info = list(
 		TAG_CULTURE = CULTURE_HUMAN_VATGROWN
