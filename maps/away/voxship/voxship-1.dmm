@@ -1011,10 +1011,6 @@
 /obj/item/weapon/card/emag_broken,
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
-"cN" = (
-/obj/machinery/door/airlock/hatch,
-/turf/simulated/floor/plating/vox,
-/area/voxship/engineering)
 "cO" = (
 /obj/structure/railing/mapped,
 /obj/structure/closet/crate,
@@ -1210,10 +1206,6 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
-"dr" = (
-/obj/structure/inflatable/door,
-/turf/simulated/floor/plating/vox,
-/area/voxship/engineering)
 "ds" = (
 /obj/structure/synthesized_instrument/synthesizer/minimoog,
 /turf/simulated/floor/tiled/techmaint/vox,
@@ -1240,7 +1232,7 @@
 	icon_state = "intact";
 	maximum_pressure = 1e+006
 	},
-/turf/simulated/wall/alienwall,
+/turf/simulated/wall/ocp_wall,
 /area/voxship/engineering)
 "dw" = (
 /obj/machinery/door/blast/regular{
@@ -1825,7 +1817,7 @@
 /obj/machinery/button/ignition{
 	id_tag = "Voxignition"
 	},
-/turf/simulated/wall/alienwall,
+/turf/simulated/wall/ocp_wall,
 /area/voxship/engineering)
 "eX" = (
 /obj/structure/railing/mapped{
@@ -4486,7 +4478,7 @@
 	id_tag = "VoxCombVent";
 	name = "Combustion Chamber Vent"
 	},
-/turf/simulated/wall/alienwall,
+/turf/simulated/wall/ocp_wall,
 /area/voxship/engineering)
 "kL" = (
 /obj/machinery/door/firedoor{
@@ -4713,7 +4705,7 @@
 /area/voxship/engineering)
 "lk" = (
 /obj/effect/paint/sun,
-/turf/simulated/wall/alienwall,
+/turf/simulated/wall/ocp_wall,
 /area/voxship/engineering)
 "ll" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/black{
@@ -4767,7 +4759,7 @@
 	dir = 4
 	},
 /obj/effect/paint/sun,
-/turf/simulated/wall/alienwall,
+/turf/simulated/wall/ocp_wall,
 /area/voxship/engineering)
 "lt" = (
 /obj/structure/sign/warning/caution,
@@ -4814,15 +4806,18 @@
 "ly" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 10;
-	icon_state = "intact"
+	icon_state = "intact";
+	maximum_pressure = 100000
 	},
 /obj/effect/paint/sun,
-/turf/simulated/wall/alienwall,
+/turf/simulated/wall/ocp_wall,
 /area/voxship/engineering)
 "lz" = (
-/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	maximum_pressure = 1e+006
+	},
 /obj/effect/paint/sun,
-/turf/simulated/wall/alienwall,
+/turf/simulated/wall/ocp_wall,
 /area/voxship/engineering)
 "lA" = (
 /obj/structure/inflatable/door,
@@ -6520,6 +6515,8 @@
 "pd" = (
 /obj/machinery/light,
 /obj/structure/table/rack,
+/obj/item/device/mmi,
+/obj/item/device/mmi,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -7623,11 +7620,16 @@
 /obj/machinery/robotics_fabricator,
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
-"Yr" = (
-/obj/machinery/atmospherics/pipe/simple/hidden,
+
+"Vb" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	maximum_pressure = 1e+006
+	},
 /obj/structure/window/alien/full,
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/engineering)
+
+
 
 (1,1,1) = {"
 ae
@@ -34568,7 +34570,7 @@ ao
 bb
 an
 cj
-cN
+dl
 bm
 bz
 dl
@@ -34770,7 +34772,7 @@ ae
 bB
 an
 cj
-dr
+lk
 ls
 ls
 lk
@@ -34972,7 +34974,7 @@ ae
 ab
 ab
 aZ
-cN
+lk
 dN
 oI
 cH
@@ -35380,7 +35382,7 @@ dw
 bj
 bQ
 dm
-Yr
+Vb
 dn
 cG
 mC
