@@ -177,6 +177,7 @@ obj/aiming_overlay/proc/update_aiming_deferred()
 	GLOB.moved_event.register(owner, src, /obj/aiming_overlay/proc/update_aiming)
 	GLOB.moved_event.register(aiming_at, src, /obj/aiming_overlay/proc/target_moved)
 	GLOB.destroyed_event.register(aiming_at, src, /obj/aiming_overlay/proc/cancel_aiming)
+	owner.trigger_aiming(TARGET_CAN_CLICK) //Yeah don't aim when you're being aimed at, it's stupid.
 
 /obj/aiming_overlay/on_update_icon()
 	if(locked)

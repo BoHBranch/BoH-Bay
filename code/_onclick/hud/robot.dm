@@ -129,6 +129,12 @@ var/obj/screen/robot_inventory
 	mymob.fire.SetName("fire")
 	mymob.fire.screen_loc = ui_fire
 
+	mymob.up_hint = new /obj/screen()
+	mymob.up_hint.icon = 'icons/mob/screen1_robot.dmi'
+	mymob.up_hint.icon_state = "uphint0"
+	mymob.up_hint.SetName("up hint")
+	mymob.up_hint.screen_loc = ui_up_hint
+
 	mymob.zone_sel = new /obj/screen/zone_sel()
 	mymob.zone_sel.icon = 'icons/mob/screen1_robot.dmi'
 	mymob.zone_sel.overlays.Cut()
@@ -141,7 +147,7 @@ var/obj/screen/robot_inventory
 	mymob.radio_use_icon = new /obj/screen/gun/radio(null)
 
 	mymob.client.screen = list()
-	mymob.client.screen += list(mymob.throw_icon, mymob.zone_sel, mymob.oxygen, mymob.fire, mymob.hands, mymob.healths, mymob:cells, mymob.pullin, robot_inventory, mymob.gun_setting_icon)
+	mymob.client.screen += list(mymob.throw_icon, mymob.zone_sel, mymob.oxygen, mymob.fire, mymob.up_hint, mymob.hands, mymob.healths, mymob:cells, mymob.pullin, robot_inventory, mymob.gun_setting_icon)
 	mymob.client.screen += src.adding + src.other
 
 /datum/hud/proc/toggle_show_robot_modules()
