@@ -4,6 +4,7 @@
 #include "voxship_jobs.dm"
 #include "voxship_jobs_boh.dm"
 #include "voxship_access.dm"
+#include "Vox_material.dm"
 
 /datum/map_template/ruin/away_site/voxship
 	name = "Vox Ship"
