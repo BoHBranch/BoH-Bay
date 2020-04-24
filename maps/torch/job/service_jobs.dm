@@ -5,7 +5,6 @@
 	total_positions = 1
 	spawn_positions = 1
 	minimum_character_age = list(SPECIES_HUMAN = 24)
-	ideal_character_age = 40
 	economic_power = 5
 	minimal_player_age = 0
 	supervisors = "the Executive Officer"
@@ -20,7 +19,7 @@
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/ec/o1)
 	min_skill = list(SKILL_BUREAUCRACY = SKILL_BASIC)
-	access = list(access_morgue, access_chapel_office, access_crematorium, access_solgov_crew)
+	access = list(access_morgue, access_chapel_office, access_crematorium, access_solgov_crew, access_medical, access_maint_tunnels)
 	minimal_access = list()
 
 /datum/job/janitor
@@ -31,7 +30,6 @@
 	spawn_positions = 2
 	supervisors = "the Executive Officer"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 20
 	alt_titles = list(
 		"Janitor")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/janitor
@@ -47,9 +45,10 @@
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4
 	)
+	max_pow_cat = 1
 	min_skill = list(   SKILL_HAULING = SKILL_BASIC)
 
-	access = list(access_maint_tunnels, access_emergency_storage, access_janitor, access_solgov_crew)
+	access = list(access_maint_tunnels, access_emergency_storage, access_janitor, access_solgov_crew, access_hangar)
 	minimal_access = list()
 
 /datum/job/chef
@@ -92,7 +91,6 @@
 	spawn_positions = 2
 	supervisors = "the Executive Officer and the Corporate Liaison"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 30
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/bartender
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
@@ -101,7 +99,7 @@
 		"Barista",
 		"Apprentice Bartender"
 		)
-	access = list(access_hydroponics, access_bar, access_solgov_crew, access_kitchen, access_commissary)
+	access = list(access_hydroponics, access_bar, access_solgov_crew, access_kitchen, access_commissary, access_maint_tunnels)
 	minimal_access = list()
 	min_skill = list(   SKILL_COOKING   = SKILL_BASIC,
 	                    SKILL_BOTANY    = SKILL_BASIC,
@@ -115,7 +113,6 @@
 	spawn_positions = 10
 	supervisors = "the Executive Officer and SolGov Personnel"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 20
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/crewman
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,

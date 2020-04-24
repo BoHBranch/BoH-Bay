@@ -93,7 +93,7 @@
 /obj/item/projectile/beam/pulse/epp
 	damage = 12
 	damage_type = ELECTROCUTE
-	agony = 25
+	agony = 35
 
 /////////
 // .454
@@ -106,9 +106,8 @@
 
 //projectile
 /obj/item/projectile/bullet/pistol/large
-	damage = 65
-	armor_penetration = 15
-	agony = 25
+	damage = 50
+	armor_penetration = 10
 
 //mag
 /obj/item/ammo_magazine/speedloader/large
@@ -116,7 +115,7 @@
 	icon_state = "spdloader_magnum"
 	caliber = CALIBER_PISTOL_MAGNUM_LARGE
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
-	matter = list(MATERIAL_STEEL = 40000)
+	matter = list(MATERIAL_STEEL = 1240)
 	max_ammo = 6
 	multiple_sprites = 1
 
@@ -133,7 +132,8 @@
 /obj/item/projectile/bullet/rifle/military/sec
 	damage = 60 //higher damage
 	armor_penetration = 5 //much worse pen - frangible bullets
-	penetration_modifier = 2 //higher post pen
+	shrapnel_chance_multiplier = 2
+	arterial_bleed_chance_multiplier = 2 //higher post pen
 
 //mag
 /obj/item/ammo_magazine/mil_rifle/sec
@@ -168,7 +168,8 @@
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 	damage = 35
 	armor_penetration = 80
-	penetration_modifier = 0.1
+	shrapnel_chance_multiplier = 0.1
+	arterial_bleed_chance_multiplier = 0.1
 	penetrating = 1
 	damage_flags = DAM_EDGE
 

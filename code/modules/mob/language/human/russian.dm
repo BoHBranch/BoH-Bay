@@ -5,9 +5,14 @@
 	key = "r"
 	shorthand = "Slav"
 	partial_understanding = list(
-		LANGUAGE_HUMAN_EURO = 5,
+		LANGUAGE_HUMAN_EURO = 10,
+		LANGUAGE_HUMAN_IBERIAN = 5,
+		LANGUAGE_HUMAN_CHINESE = 5,
+		LANGUAGE_HUMAN_INDIAN = 5,
 		LANGUAGE_HUMAN_SELENIAN = 10,
-		LANGUAGE_SPACER = 20
+		LANGUAGE_HUMAN_GAIAN = 60,
+		LANGUAGE_SPACER = 20,
+		LANGUAGE_GUTTER = 15
 	)
 	syllables = list(
 		"rus", "zem", "ave", "groz", "ski", "ska", "ven", "konst", "pol", "lin", "svy",

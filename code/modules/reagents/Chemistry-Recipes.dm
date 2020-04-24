@@ -1388,6 +1388,12 @@
 	result_amount = 5
 	mix_message = "The solution thickens into a creamy brown beverage."
 
+/datum/chemical_reaction/browniemix
+	name = "Brownie Mix"
+	result = /datum/reagent/browniemix
+	required_reagents = list(/datum/reagent/nutriment/flour = 5, /datum/reagent/nutriment/coco = 5, /datum/reagent/sugar = 5)
+	result_amount = 15
+
 /datum/chemical_reaction/coffee
 	name = "Coffee"
 	result = /datum/reagent/drink/coffee
@@ -1537,7 +1543,7 @@
 /datum/chemical_reaction/soydough
 	name = "Soy dough"
 	result = null
-	required_reagents = list(/datum/reagent/nutriment/softtofu = 3, /datum/reagent/nutriment/flour = 10, /datum/reagent/water = 10)
+	required_reagents = list(/datum/reagent/nutriment/protein/tofu = 3, /datum/reagent/nutriment/flour = 10, /datum/reagent/water = 10)
 	result_amount = 1
 	mix_message = "The solution folds and thickens into a large ball of dough."
 
@@ -1551,22 +1557,22 @@
 
 /datum/chemical_reaction/batter
 	name = "Batter"
-	result = /datum/reagent/nutriment/batter
-	required_reagents = list(/datum/reagent/nutriment/protein/egg = 3, /datum/reagent/nutriment/flour = 5, /datum/reagent/drink/milk = 5)
+	result = /datum/reagent/nutriment/coating/batter
+	required_reagents = list(/datum/reagent/nutriment/protein/egg = 3, /datum/reagent/nutriment/flour = 10, /datum/reagent/water = 5, /datum/reagent/sodiumchloride = 2)
 	result_amount = 10
 	mix_message = "The solution thickens into a glossy batter."
 
 /datum/chemical_reaction/cakebatter
 	name = "Cake Batter"
-	result = /datum/reagent/nutriment/batter/cakebatter
-	required_reagents = list(/datum/reagent/sugar = 1, /datum/reagent/nutriment/batter = 2)
+	result = /datum/reagent/nutriment/cakebatter
+	required_reagents = list(/datum/reagent/sugar = 1, /datum/reagent/nutriment/coating/batter = 2)
 	result_amount = 3
 	mix_message = "The sugar lightens the batter and gives it a sweet smell."
 
 /datum/chemical_reaction/soybatter
 	name = "Vegan Batter"
-	result = /datum/reagent/nutriment/batter
-	required_reagents = list(/datum/reagent/nutriment/softtofu = 3, /datum/reagent/nutriment/flour = 5, /datum/reagent/drink/milk = 5)
+	result = /datum/reagent/nutriment/coating/batter
+	required_reagents = list(/datum/reagent/nutriment/protein/tofu = 3, /datum/reagent/nutriment/flour = 10, /datum/reagent/water = 5, /datum/reagent/sodiumchloride = 2)
 	result_amount = 10
 	mix_message = "The solution thickens into a glossy batter."
 
@@ -1597,6 +1603,18 @@
 	result_amount = 6
 	mix_message = "The broth of the noodles takes on a hellish red gleam."
 
+/datum/chemical_reaction/butter
+	name = "Butter"
+	result = null
+	required_reagents = list(/datum/reagent/drink/milk/cream = 20, /datum/reagent/sodiumchloride = 1)
+	result_amount = 1
+
+/datum/chemical_reaction/butter/on_reaction(var/datum/reagents/holder, var/created_volume)
+	var/location = get_turf(holder.my_atom)
+	for(var/i = 1, i <= created_volume, i++)
+		new /obj/item/weapon/reagent_containers/food/snacks/spreads/butter(location)
+	return
+
 /* Alcohol */
 
 /datum/chemical_reaction/goldschlager
@@ -1609,7 +1627,7 @@
 /datum/chemical_reaction/patron
 	name = "Patron"
 	result = /datum/reagent/ethanol/patron
-	required_reagents = list(/datum/reagent/ethanol/tequilla = 10, /datum/reagent/silver = 1)
+	required_reagents = list(/datum/reagent/ethanol/tequila = 10, /datum/reagent/silver = 1)
 	result_amount = 10
 	mix_message = "The silver flakes and settles in the tequila."
 
@@ -1818,13 +1836,13 @@
 /datum/chemical_reaction/brave_bull
 	name = "Brave Bull"
 	result = /datum/reagent/ethanol/coffee/brave_bull
-	required_reagents = list(/datum/reagent/ethanol/tequilla = 2, /datum/reagent/ethanol/coffee/kahlua = 1)
+	required_reagents = list(/datum/reagent/ethanol/tequila = 2, /datum/reagent/ethanol/coffee/kahlua = 1)
 	result_amount = 3
 
-/datum/chemical_reaction/tequilla_sunrise
-	name = "Tequilla Sunrise"
-	result = /datum/reagent/ethanol/tequilla_sunrise
-	required_reagents = list(/datum/reagent/ethanol/tequilla = 2, /datum/reagent/drink/juice/orange = 1)
+/datum/chemical_reaction/tequila_sunrise
+	name = "tequila Sunrise"
+	result = /datum/reagent/ethanol/tequila_sunrise
+	required_reagents = list(/datum/reagent/ethanol/tequila = 2, /datum/reagent/drink/juice/orange = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/phoron_special
@@ -1886,13 +1904,13 @@
 /datum/chemical_reaction/margarita
 	name = "Margarita"
 	result = /datum/reagent/ethanol/margarita
-	required_reagents = list(/datum/reagent/ethanol/tequilla = 2, /datum/reagent/drink/juice/lime = 1)
+	required_reagents = list(/datum/reagent/ethanol/tequila = 2, /datum/reagent/drink/juice/lime = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/longislandicedtea
 	name = "Long Island Iced Tea"
 	result = /datum/reagent/ethanol/longislandicedtea
-	required_reagents = list(/datum/reagent/ethanol/vodka = 1, /datum/reagent/ethanol/gin = 1, /datum/reagent/ethanol/tequilla = 1, /datum/reagent/ethanol/cuba_libre = 3)
+	required_reagents = list(/datum/reagent/ethanol/vodka = 1, /datum/reagent/ethanol/gin = 1, /datum/reagent/ethanol/tequila = 1, /datum/reagent/ethanol/cuba_libre = 3)
 	result_amount = 6
 
 /datum/chemical_reaction/threemileisland
@@ -2310,6 +2328,53 @@
 	required_reagents = list(/datum/reagent/drink/juice/lemon = 5, /datum/reagent/nutriment/protein/egg = 5)
 	result_amount = 10
 	mix_message = "The solution thickens into a glossy, creamy substance."
+
+/datum/chemical_reaction/caramelisation
+	name = "Caramelised Sugar"
+	result = /datum/reagent/nutriment/caramel
+	required_reagents = list(/datum/reagent/sugar = 1)
+	result_amount = 1
+	minimum_temperature = T0C + 82
+	// no maximum! i mean technically it should burn at some point but ehh
+	mix_message = "The sugar melts into a sticky, brown liquid."
+
+/datum/chemical_reaction/caramelsauce
+	name = "Caramel Sauce"
+	result = /datum/reagent/drink/caramel
+	required_reagents = list(/datum/reagent/nutriment/caramel = 2, /datum/reagent/drink/milk/cream = 1, /datum/reagent/drink/syrup_simple = 2)
+	result_amount = 5
+	mix_message = "The solution thickens into a glossy, brown sauce."
+	maximum_temperature = T0C + 82 // You don't want the syrup to crystallise/caramelise; that'd just make more caramel...
+
+/datum/chemical_reaction/simplesyrup
+	name = "Simple Syrup"
+	result = /datum/reagent/drink/syrup_simple
+	required_reagents = list(/datum/reagent/sugar = 2, /datum/reagent/water = 1) // rich simple syrup, technically, but still
+	result_amount = 3
+	minimum_temperature = T20C + 10
+	maximum_temperature = T0C + 82 // Sugar caramelises after this point.
+	mix_message = "The sugar dissolves into the solution."
+
+/datum/chemical_reaction/caramelsyrup
+	name = "Caramel Syrup"
+	result = /datum/reagent/drink/syrup_caramel
+	required_reagents = list(/datum/reagent/nutriment/caramel = 2, /datum/reagent/drink/syrup_simple = 3)
+	result_amount = 5
+	mix_message = "The solution takes on a light brown hue and the aroma of caramel."
+
+/datum/chemical_reaction/chocosyrup
+	name = "Chocolate Syrup"
+	result = /datum/reagent/drink/syrup_chocolate
+	required_reagents = list(/datum/reagent/nutriment/coco = 2, /datum/reagent/drink/syrup_simple = 3)
+	result_amount = 5
+	mix_message = "The solution takes on a brown hue and the aroma of chocolate."
+
+/datum/chemical_reaction/pumpkinsyrup
+	name = "Pumpkin Spice Syrup"
+	result = /datum/reagent/drink/syrup_pumpkin
+	required_reagents = list(/datum/reagent/drink/juice/pumpkinpulp = 2, /datum/reagent/drink/syrup_simple = 3)
+	result_amount = 5
+	mix_message = "The solution takes on an orange hue and the aroma of pumpkin spice."
 
 /datum/chemical_reaction/anfo
 	name = "EZ-ANFO"

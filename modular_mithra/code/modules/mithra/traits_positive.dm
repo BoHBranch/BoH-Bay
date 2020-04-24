@@ -8,6 +8,32 @@
 	cost = 4
 	var_changes = list("slowdown" = -0.5)
 
+/datum/trait/darksight
+	name = "Tapeta Lucida"
+	desc = "Your eyes have a marginally retroreflective layer within their strucuture, allowing you to see slightly better in the dark."
+	cost = 1
+	var_changes = list("darksight_range" = 3, "darksight_tint" = DARKTINT_MODERATE)
+
+/datum/trait/darksight/apply(var/datum/species/S,var/mob/living/carbon/human/H)
+	..(S,H)
+	var/obj/item/organ/internal/eyes/I = H.internal_organs_by_name[S.vision_organ]
+	if(istype(I))
+		I.darksight_range = 3
+		I.darksight_tint = DARKTINT_MODERATE
+
+/datum/trait/darksight_plus
+	name = "Tapeta Lucida Majoris"
+	desc = "Your eyes have a retroreflective layer within their strucuture, allowing you to see much better in the dark."
+	cost = 2
+	var_changes = list("darksight_range" = 6, "darksight_tint" = DARKTINT_GOOD)
+
+/datum/trait/darksight_plus/apply(var/datum/species/S,var/mob/living/carbon/human/H)
+	..(S,H)
+	var/obj/item/organ/internal/eyes/I = H.internal_organs_by_name[S.vision_organ]
+	if(istype(I))
+		I.darksight_range = 6
+		I.darksight_tint = DARKTINT_GOOD
+
 /datum/trait/nonconductive
 	name = "Resistive Skin"
 	desc = "Your skin has a higher electrical resistivity than normal, making you less conductive."
@@ -68,7 +94,7 @@
 /datum/trait/commune
 	name = "Telepathy"
 	desc = "Quite simply, you've the ability to project thoughts into the minds of others. How you've come across this within the frontier of space will probably forever be a mystery. Especially so, given you're probably not a Psyker."
-	cost = 4
+	cost = 2
 /datum/trait/commune/apply(var/datum/species/S,var/mob/living/carbon/human/H)
 	..(S,H)
 	H.verbs |= /mob/living/carbon/human/proc/psychic_whisper

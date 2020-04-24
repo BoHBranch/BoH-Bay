@@ -7,11 +7,14 @@
 	shorthand = "PSA"
 	space_chance = 35
 	partial_understanding = list(
-		LANGUAGE_HUMAN_EURO = 5,
+		LANGUAGE_HUMAN_EURO = 10,
+		LANGUAGE_HUMAN_IBERIAN = 20,
 		LANGUAGE_HUMAN_CHINESE = 5,
 		LANGUAGE_HUMAN_INDIAN = 10,
 		LANGUAGE_HUMAN_SELENIAN = 5,
-		LANGUAGE_SPACER = 20
+		LANGUAGE_HUMAN_GAIAN = 5,
+		LANGUAGE_SPACER = 20,
+		LANGUAGE_GUTTER = 15
 	)
 	syllables = list(
 		"af", "if", "ba", "ta", "tha", "id", "jem", "ha", "kha", "dal", "dhl", "ra", "zay",

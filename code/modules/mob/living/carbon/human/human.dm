@@ -551,6 +551,10 @@
 			return
 		if("general")
 			msg = sanitize(input(src,"Update the general description of your character. This will be shown regardless of clothing. Do not include OOC information here.","Flavor Text",html_decode(flavor_texts[key])) as message, extra = 0)
+		if("NSFW/OOC")
+			msg = sanitize(input(src,"Update your NSFW/OOC description.", "Flavor Text",html_decode(flavor_texts[key])) as message, extra = 0)
+		if("naked")
+			msg = sanitize(input(src,"Update your naked description. This text is NSFW, and will be shown when naked.", "Flavor Text",html_decode(flavor_texts[key])) as message, extra = 0)
 		else
 			if(!(key in flavor_texts))
 				return
@@ -1073,27 +1077,6 @@
 	else
 		to_chat(usr, "<span class='warning'>You failed to check the pulse. Try again.</span>")
 
-/mob/living/carbon/human/verb/lookup()
-	set name = "Look up"
-	set desc = "If you want to know what's above."
-	set category = "IC"
-
-	if(!is_physically_disabled())
-		var/turf/above = GetAbove(src)
-		if(bound_overlay)
-			if(client.eye == bound_overlay)
-				reset_view(0)
-				return
-			if(istype(above, /turf/simulated/open))
-				to_chat(src, "<span class='notice'>You look up.</span>")
-				if(client)
-					reset_view(bound_overlay)
-				return
-		to_chat(src, "<span class='notice'>You can see \the [above].</span>")
-	else
-		to_chat(src, "<span class='notice'>You can't look up right now.</span>")
-	return
-
 /mob/living/carbon/human/proc/set_species(var/new_species, var/default_colour = 1)
 	if(!dna)
 		if(!new_species)
@@ -1342,44 +1325,48 @@
 
 
 /mob/living/carbon/human/print_flavor_text(var/shrink = 1)
-	var/list/equipment = list(src.head,src.wear_mask,src.glasses,src.w_uniform,src.wear_suit,src.gloves,src.shoes)
-	var/head_exposed = 1
-	var/face_exposed = 1
-	var/eyes_exposed = 1
-	var/torso_exposed = 1
-	var/arms_exposed = 1
-	var/legs_exposed = 1
-	var/hands_exposed = 1
-	var/feet_exposed = 1
 
+	var/list/covered = list()
+	var/list/equipment = list(src.head,src.wear_mask,src.glasses,src.w_uniform,src.wear_suit,src.gloves,src.shoes)
 	for(var/obj/item/clothing/C in equipment)
 		if(C.body_parts_covered & HEAD)
-			head_exposed = 0
+			covered["head"] = TRUE
 		if(C.body_parts_covered & FACE)
-			face_exposed = 0
+			covered["face"] = TRUE
 		if(C.body_parts_covered & EYES)
-			eyes_exposed = 0
+			covered["eyes"] = TRUE
 		if(C.body_parts_covered & UPPER_TORSO)
-			torso_exposed = 0
+			covered["torso"] = TRUE
+			covered["naked"] = TRUE
 		if(C.body_parts_covered & ARMS)
-			arms_exposed = 0
+			covered["arms"] = TRUE
 		if(C.body_parts_covered & HANDS)
-			hands_exposed = 0
+			covered["hands"] = TRUE
 		if(C.body_parts_covered & LEGS)
-			legs_exposed = 0
+			covered["legs"] = TRUE
+			covered["naked"] = TRUE
 		if(C.body_parts_covered & FEET)
-			feet_exposed = 0
+			covered["feet"] = TRUE
 
 	flavor_text = ""
+
 	for (var/T in flavor_texts)
-		if(flavor_texts[T] && flavor_texts[T] != "")
-			if((T == "general") || (T == "head" && head_exposed) || (T == "face" && face_exposed) || (T == "eyes" && eyes_exposed) || (T == "torso" && torso_exposed) || (T == "arms" && arms_exposed) || (T == "hands" && hands_exposed) || (T == "legs" && legs_exposed) || (T == "feet" && feet_exposed))
-				flavor_text += flavor_texts[T]
-				flavor_text += "\n\n"
-	if(!shrink)
-		return flavor_text
-	else
+		if(!flavor_texts[T] || flavor_texts[T] == "")
+			continue
+		if(covered[T])
+			continue
+		if(T == "naked")
+			flavor_text += "(NSFW): "
+			NSFW = TRUE
+		if(T == "NSFW/OOC")
+			flavor_text += "(OOC): "
+
+		flavor_text += "[flavor_texts[T]]<br>"
+
+	if(shrink)
 		return ..()
+
+	return flavor_text
 
 /mob/living/carbon/human/getDNA()
 	if(species.species_flags & SPECIES_FLAG_NO_SCAN)

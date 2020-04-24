@@ -57,7 +57,7 @@
 /obj/item/weapon/gun/energy/particle/get_mob_overlay(var/mob/living/carbon/human/user, var/slot)
 	if(istype(user) && (slot == slot_l_hand_str || slot == slot_r_hand_str))
 		var/bodytype = user.species.get_bodytype(user)
-		if(bodytype in list(SPECIES_MANTID_ALATE, SPECIES_MANTID_GYNE, SPECIES_NABBER))
+		if(bodytype in list(SPECIES_MANTID_ALATE,SPECIES_MANTID_GYNE,SPECIES_NABBER))
 			if(slot == slot_l_hand_str)
 				if(bodytype == SPECIES_MANTID_ALATE)
 					return overlay_image('icons/mob/species/mantid/onmob_lefthand_particle_rifle_alate.dmi',  item_state_slots[slot_l_hand_str], color, RESET_COLOR)
@@ -74,25 +74,9 @@
 					return overlay_image('icons/mob/species/nabber/onmob_righthand_particle_rifle.dmi', item_state_slots[slot_r_hand_str], color, RESET_COLOR)
 	. = ..(user, slot)
 
-/obj/item/weapon/gun/magnetic/railgun/flechette/ascent
-	name = "mantid flechette rifle"
-	desc = "A viciously pronged rifle-like weapon."
-	has_safety = FALSE
+/obj/item/weapon/gun/energy/particle/flechette
+	name = "crystal flechette rifle"
+	desc = "A viscious looking rifle decorated with a growth of sharp purple crystals."
 	one_hand_penalty = 6
-	var/charge_per_shot = 10
-
-/obj/item/weapon/gun/magnetic/railgun/flechette/ascent/get_cell()
-	if(isrobot(loc) || istype(loc, /obj/item/rig_module))
-		return loc.get_cell()
-
-/obj/item/weapon/gun/magnetic/railgun/flechette/ascent/show_ammo(var/mob/user)
-	var/obj/item/weapon/cell/cell = get_cell()
-	to_chat(user, "<span class='notice'>There are [cell ? Floor(cell.charge/charge_per_shot) : 0] shot\s remaining.</span>")
-
-/obj/item/weapon/gun/magnetic/railgun/flechette/ascent/check_ammo()
-	var/obj/item/weapon/cell/cell = get_cell()
-	return cell && cell.charge >= charge_per_shot
-
-/obj/item/weapon/gun/magnetic/railgun/flechette/ascent/use_ammo()
-	var/obj/item/weapon/cell/cell = get_cell()
-	if(cell) cell.use(charge_per_shot)
+	projectile_type = /obj/item/projectile/bullet/magnetic/flechette
+	firemodes = list(list(projectile_type = /obj/item/projectile/bullet/magnetic/flechette))

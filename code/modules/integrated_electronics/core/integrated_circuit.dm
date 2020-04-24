@@ -119,7 +119,7 @@ a creative player the means to solve many problems.  Circuits are held inside an
 		to_chat(M, "<span class='notice'>The circuit '[name]' is now labeled '[input]'.</span>")
 		displayed_name = input
 
-/obj/item/integrated_circuit/nano_host()
+/obj/item/integrated_circuit/ui_host()
 	if(istype(src.loc, /obj/item/device/electronic_assembly))
 		return loc
 	return ..()

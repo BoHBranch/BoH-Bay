@@ -72,28 +72,35 @@ modular computers
 /datum/gear/utility/cheaptablet
 	display_name = "tablet computer, cheap"
 	path = /obj/item/modular_computer/tablet/preset/custom_loadout/cheap
-	cost = 3
+	cost = 2
 
 /datum/gear/utility/normaltablet
 	display_name = "tablet computer, advanced"
 	path = /obj/item/modular_computer/tablet/preset/custom_loadout/advanced
-	cost = 4
-
-/datum/gear/utility/customtablet
-	display_name = "tablet computer, custom"
-	path = /obj/item/modular_computer/tablet
-	cost = 4
-
-/datum/gear/utility/customtablet/New()
-	..()
-	gear_tweaks += new /datum/gear_tweak/tablet()
+	cost = 3
 
 /datum/gear/utility/cheaplaptop
 	display_name = "laptop computer, cheap"
 	path = /obj/item/modular_computer/laptop/preset/custom_loadout/cheap
-	cost = 5
+	cost = 3
 
 /datum/gear/utility/normallaptop
 	display_name = "laptop computer, advanced"
 	path = /obj/item/modular_computer/laptop/preset/custom_loadout/advanced
-	cost = 6
+	cost = 4
+
+/datum/gear/utility/instrument
+	display_name = "Instrument Selection"
+	description = "An instrument to play beautiful music. Talent not included."
+	path = /obj/item/device/synthesized_instrument
+	cost = 4
+
+/datum/gear/utility/instrument/New()
+	..()
+	var/instruments = list()
+	instruments["Guitar"] = /obj/item/device/synthesized_instrument/guitar
+	instruments["Electric Guitar"] = /obj/item/device/synthesized_instrument/guitar/multi
+	instruments["Synthesizer"] = /obj/item/device/synthesized_instrument/synthesizer
+	instruments["Trumpet"] = /obj/item/device/synthesized_instrument/trumpet
+	instruments["Violin"] = /obj/item/device/synthesized_instrument/violin
+	gear_tweaks += new/datum/gear_tweak/path(instruments)

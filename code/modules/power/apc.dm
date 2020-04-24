@@ -238,22 +238,22 @@ GLOBAL_LIST_INIT(global_apc_list,list())
 	. = ..()
 	if(distance <= 1)
 		if(stat & BROKEN)
-			to_chat(user, "Looks broken.")
+			to_chat(user, "It looks broken.")
 			return
 		var/terminal = terminal()
 		if(opened)
 			if(has_electronics && terminal)
 				to_chat(user, "The cover is [opened==2?"removed":"open"] and the power cell is [ get_cell() ? "installed" : "missing"].")
 			else if (!has_electronics && terminal)
-				to_chat(user, "There are some wires but no any electronics.")
+				to_chat(user, "The APC is wired, but it lacks electronics.")
 			else if (has_electronics && !terminal)
-				to_chat(user, "Electronics installed but not wired.")
+				to_chat(user, "A power control board has been installed but, the APC is not wired.")
 			else /* if (!has_electronics && !terminal) */
-				to_chat(user, "There is no electronics nor connected wires.")
+				to_chat(user, "The APC lacks a power control board and wires.")
 
 		else
 			if (stat & MAINT)
-				to_chat(user, "The cover is closed. Something wrong with it: it doesn't work.")
+				to_chat(user, "The cover is closed.")
 			else if (hacker && !hacker.hacked_apcs_hidden)
 				to_chat(user, "The cover is locked.")
 			else
@@ -277,21 +277,21 @@ GLOBAL_LIST_INIT(global_apc_list,list())
 		status_overlays_lighting.len = 5
 		status_overlays_environ.len = 5
 
-		status_overlays_lock[1] = image(icon, "apcox-0")    // 0=blue 1=red
-		status_overlays_lock[2] = image(icon, "apcox-1")
+		status_overlays_lock[1] = overlay_image(icon, "apcox-0", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)    // 0=blue 1=red
+		status_overlays_lock[2] = overlay_image(icon, "apcox-1", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
-		status_overlays_charging[1] = image(icon, "apco3-0")
-		status_overlays_charging[2] = image(icon, "apco3-1")
-		status_overlays_charging[3] = image(icon, "apco3-2")
+		status_overlays_charging[1] = overlay_image(icon, "apco3-0", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+		status_overlays_charging[2] = overlay_image(icon, "apco3-1", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+		status_overlays_charging[3] = overlay_image(icon, "apco3-2", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
 		var/list/channel_overlays = list(status_overlays_equipment, status_overlays_lighting, status_overlays_environ)
 		var/channel = 0
 		for(var/list/channel_leds in channel_overlays)
-			channel_leds[POWERCHAN_OFF + 1] = overlay_image(icon,"apco[channel]",COLOR_RED)
-			channel_leds[POWERCHAN_OFF_TEMP + 1] = overlay_image(icon,"apco[channel]",COLOR_ORANGE)
-			channel_leds[POWERCHAN_OFF_AUTO + 1] = overlay_image(icon,"apco[channel]",COLOR_ORANGE)
-			channel_leds[POWERCHAN_ON + 1] = overlay_image(icon,"apco[channel]",COLOR_LIME)
-			channel_leds[POWERCHAN_ON_AUTO + 1] = overlay_image(icon,"apco[channel]",COLOR_BLUE)
+			channel_leds[POWERCHAN_OFF + 1] = overlay_image(icon,"apco[channel]",     COLOR_RED,     plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+			channel_leds[POWERCHAN_OFF_TEMP + 1] = overlay_image(icon,"apco[channel]",COLOR_ORANGE,  plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+			channel_leds[POWERCHAN_OFF_AUTO + 1] = overlay_image(icon,"apco[channel]",COLOR_ORANGE,  plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+			channel_leds[POWERCHAN_ON + 1] = overlay_image(icon,"apco[channel]",      COLOR_LIME,    plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+			channel_leds[POWERCHAN_ON_AUTO + 1] = overlay_image(icon,"apco[channel]", COLOR_BLUE,    plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 			channel++
 
 	if(update_state < 0)
@@ -443,7 +443,7 @@ GLOBAL_LIST_INIT(global_apc_list,list())
 					to_chat(user, SPAN_WARNING("Disconnect the wires first."))
 					return TRUE
 				playsound(src.loc, 'sound/items/Crowbar.ogg', 50, 1)
-				to_chat(user, "You are trying to remove the power control board...")//lpeters - fixed grammar issues
+				to_chat(user, "You begin to remove the power control board...")
 
 				if(do_after(user, 50, src) && opened && (has_electronics == 1) && !terminal()) // redo all checks.
 					has_electronics = 0
@@ -595,15 +595,15 @@ GLOBAL_LIST_INIT(global_apc_list,list())
 			if(opened==2)
 				opened = 1
 			user.visible_message(\
-				"<span class='warning'>[user.name] has replaced the damaged APC frontal panel with a new one.</span>",\
-				"<span class='notice'>You replace the damaged APC frontal panel with a new one.</span>")
+				"<span class='warning'>[user.name] has replaced the damaged APC front panel with a new one.</span>",\
+				"<span class='notice'>You replace the damaged APC front panel with a new one.</span>")
 			qdel(W)
 			update_icon()
 			return TRUE
 
 		if((stat & BROKEN) || (hacker && !hacker.hacked_apcs_hidden))
 			if (has_electronics)
-				to_chat(user, "<span class='warning'>You cannot repair this APC until you remove the electronics still inside.</span>")
+				to_chat(user, "<span class='warning'>You cannot repair this APC until you remove the electronics first.</span>")
 				return TRUE
 
 			user.visible_message("<span class='warning'>[user.name] replaces the damaged APC frame with a new one.</span>",\
@@ -683,7 +683,7 @@ GLOBAL_LIST_INIT(global_apc_list,list())
 				return 1
 
 /obj/machinery/power/apc/CanUseTopicPhysical(var/mob/user)
-	return GLOB.physical_state.can_use_topic(nano_host(), user)
+	return GLOB.physical_state.can_use_topic(ui_host(), user)
 
 /obj/machinery/power/apc/physical_attack_hand(mob/user)
 	//Human mob special interaction goes here.

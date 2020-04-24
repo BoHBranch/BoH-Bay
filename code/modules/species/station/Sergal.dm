@@ -29,7 +29,7 @@
 	min_age = 18
 	max_age = 100
 
-	description = "Shark-dogs. Placeholder description."
+	description = "Sergals are the native race of a planet named Tal, a planet covered by spawling megacities and districts. Run by corporations and criminal cartels, the planet lies in a system that is now controlled by the Sol Central Government. Tal is a protectorate under the SCG, and while the Solarian authority and cartel families attempt to bring Tal in as a proper member world with full citizenship, corporate bodies both on and off-world intend to preserve the status quo of near-unrestricted capitalism."
 
 	cold_level_1 = 260 //Default 260 - Lower is better
 	cold_level_2 = 200 //Default 200
@@ -72,7 +72,8 @@
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
-			CULTURE_SERGAL
+			CULTURE_SERGAL,
+			CULTURE_SYMBIOTIC
 		),
 		TAG_HOMEWORLD = list(
 			HOME_SYSTEM_SERGALTAL

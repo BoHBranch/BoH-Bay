@@ -294,52 +294,48 @@
 	name = "\improper Transport Shuttle Centcom"
 
 //torch large pods
-/area/shuttle/escape_pod6/station
+/area/shuttle/escape_pod1/station
 	name = "Escape Pod One"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod7/station
+/area/shuttle/escape_pod2/station
 	name = "Escape Pod Two"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod8/station
+/area/shuttle/escape_pod3/station
 	name = "Escape Pod Three"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod9/station
+/area/shuttle/escape_pod4/station
 	name = "Escape Pod Four"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod10/station
+/area/shuttle/escape_pod5/station
 	name = "Escape Pod Five"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod11/station
+/area/shuttle/escape_pod6/station
 	name = "Escape Pod Six"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
 //torch small pods
-/area/shuttle/escape_pod12/station
+/area/shuttle/escape_pod7/station
 	name = "Escape Pod Seven"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod13/station
+/area/shuttle/escape_pod8/station
 	name = "Escape Pod Eight"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod14/station
+/area/shuttle/escape_pod9/station
 	name = "Escape Pod Nine"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod15/station
+/area/shuttle/escape_pod10/station
 	name = "Escape Pod Ten"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod16/station
-	name = "Escape Pod Eleven"
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
-
-/area/shuttle/escape_pod17/station
+/area/shuttle/escape_pod11/station
 	name = "Escape Pod Twelve"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
@@ -743,10 +739,6 @@
 	name = "\improper Auxiliary Armory"
 	icon_state = "Tactical"
 
-/area/vacant/cabin
-	name = "\improper Vacant Cabins"
-	icon_state = "crew_quarters"
-
 /area/vacant/mess
 	name = "\improper Old Mess"
 	icon_state = "bar"
@@ -758,10 +750,6 @@
 /area/vacant/infirmary
 	name = "\improper Auxiliary Infirmary"
 	icon_state = "medbay"
-
-/area/vacant/monitoring
-	name = "\improper Auxiliary Monitoring Room"
-	icon_state = "engine_monitoring"
 
 /area/vacant/prototype
 	req_access = list(access_engine)
@@ -840,7 +828,7 @@
 	name = "\improper Supply Upper Warehouse"
 
 /area/quartermaster/deckchief
-	name = "\improper Deck Chief's Office"
+	name = "\improper Deck Officer's Office"
 	icon_state = "quart"
 	req_access = list(access_qm)
 
@@ -974,30 +962,13 @@
 	sound_env = SMALL_ENCLOSED
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
-/area/crew_quarters/sleep/bunk
-	name = "\improper Bunk Room"
-	icon_state = "Sleep"
-	sound_env = SMALL_SOFTFLOOR
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-
-/area/crew_quarters/sleep/cryo/aux
-	name = "\improper First Deck Cryogenic Storage"
-	icon_state = "Sleep"
-
 /area/crew_quarters/adherent
 	name = "\improper Adherent Maintenence"
 	icon_state = "robotics"
 
-/area/crew_quarters/office
-	name = "\improper Computer Lab"
-	icon_state = "conference"
-
 /area/holocontrol
 	name = "\improper Holodeck Control"
 	icon_state = "Holodeck"
-
-/area/hydroponics/storage
-	name = "\improper Hydroponics Storage"
 
 // Tcomms
 /area/tcommsat/storage
@@ -1069,26 +1040,12 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	req_access = list(access_brig)
 
-/area/security/brig/chamber
-	name = "\improper Permanent Brig Equipment"
-	icon_state = "toxstorage"
-	area_flags = AREA_FLAG_RAD_SHIELDED
-	req_access = list(access_brig)
-
-/area/security/brig/psyker
-	name = "\improper Nullglass Containment"
+/area/security/brig/psionic
+	name = "\improper Psionic Holding"
 	icon_state = "misclab"
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	req_access = list(access_brig)
 	ambience = list('sound/ambience/spookyspace1.ogg')
-
-/area/security/brig/psyker/cell
-	name = "\improper Nullglass Cell"
-	icon_state = "brig"
-
-/area/security/brig/psyker/storage
-	name = "\improper Nullglass Storage"
-	icon_state = "toxstorage"
 
 // AI
 /area/turret_protected/ai_foyer
@@ -1485,11 +1442,6 @@
 	icon_state = "engineering_locker"
 	req_access = list(access_engine)
 
-/area/engineering/engineering_bay
-	name = "\improper Engineering Bay"
-	icon_state = "engineering_locker"
-	req_access = list(access_engine)
-
 /area/engineering/storage
 	name = "\improper Engineering Storage"
 	icon_state = "engineering_storage"
@@ -1506,10 +1458,6 @@
 	name = "\improper Chemistry"
 	icon_state = "chem"
 	req_access = list(access_chemistry)
-
-/area/medical/exam_room
-	name = "\improper Exam Room"
-	icon_state = "exam_room"
 
 /area/medical/morgue
 	name = "\improper Morgue"
@@ -1729,3 +1677,91 @@
 /area/tdome/tdomeobserve
 	name = "\improper Thunderdome (Observer.)"
 	icon_state = "purple"
+
+/area/security/infantry
+	name = "\improper Infantry Prep"
+	icon_state = "crew_quarters"
+	sound_env = MEDIUM_SOFTFLOOR
+	req_access = list(access_infantry)
+
+/area/security/infantry/gear
+	name = "\improper Technician Prep"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "triage"
+	req_access = list(access_inftech)
+
+/area/security/infantry/com
+	name = "\improper Squad Leader Prep"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "triage"
+	req_access = list(access_infcom)
+
+/area/defturrets
+	name = "\improper Anti-Boarding Control"
+	icon_state = "security_sub"
+	base_turf = /turf/simulated/floor/reinforced/airless
+	requires_power = 1
+	dynamic_lighting = 1
+	req_access = list(access_brig)
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
+
+/area/command/gunnery
+	name = "\improper Weapon Mounts"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "guntemp"
+	req_access = list(access_gunnery)
+
+/area/command/gunnery/ob
+	name = "\improper KOSMAG Exterior"
+	icon_state = "kosmag1"
+
+/area/command/gunnery/ob/airlock
+	name = "\improper KOSMAG Airlock"
+	icon_state = "kosmagairlock"
+
+/area/command/gunnery/mim
+	name = "\improper Tactical Operations Center"
+	icon_state = "guntemp"
+
+/area/command/gunnery/mim/door
+	name = "\improper Tactical Operations Center Door"
+	icon_state = "guntemp"
+
+/////////
+// Cabins
+/////////
+
+/area/crew_quarters_boh/cabin_main
+	name = "\improper Cabin Primary"
+	icon_state = "crew_quarters"
+	area_flags = AREA_FLAG_RAD_SHIELDED
+	sound_env = MEDIUM_SOFTFLOOR
+
+/area/crew_quarters_boh/cabin_main/c1
+	name = "\improper Cabin One"
+	icon_state = "Sleep"
+
+/area/crew_quarters_boh/cabin_main/c2
+	name = "\improper Cabin Two"
+	icon_state = "Sleep"
+
+/area/crew_quarters_boh/cabin_main/c3
+	name = "\improper Cabin Three"
+	icon_state = "Sleep"
+
+/area/crew_quarters_boh/cabin_main/janitorial
+	name = "\improper Cabin Janitorial"
+	icon_state = "janitor"
+
+//vip
+/area/crew_quarters_boh/cabin_main/vip
+	name = "\improper VIP Cabin"
+	icon_state = "Sleep"
+	req_access = list(access_captain)
+
+/area/crew_quarters_boh/cabin_main/officerbunk
+	name = "\improper Officer Quarters"
+	icon_state = "Sleep"
+	req_access = list(access_bridge)
+	sound_env = SMALL_SOFTFLOOR
+	area_flags = AREA_FLAG_RAD_SHIELDED

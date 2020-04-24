@@ -59,7 +59,11 @@
 	smell_state = smell
 
 /obj/item/clothing/proc/get_fibers()
-	. = "material from \a [name]"
+	var/actual_name = name
+	var/datum/extension/labels/L = get_extension(src, /datum/extension/labels)
+	if(L)
+		actual_name = L.GetOriginalName()
+	. = "material from \a [actual_name]"
 	var/list/acc = list()
 	for(var/obj/item/clothing/accessory/A in accessories)
 		if(prob(40) && A.get_fibers())
@@ -119,8 +123,8 @@
 
 	//Set species_restricted list
 	switch(target_species)
-		if(SPECIES_HUMAN, SPECIES_SKRELL)	//humanoid bodytypes
-			species_restricted = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_IPC) //skrell/humans/machines can wear each other's suits
+		if(SPECIES_HUMAN,SPECIES_SKRELL)	//humanoid bodytypes
+			species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_IPC) //skrell/humans/machines can wear each other's suits
 		else
 			species_restricted = list(target_species)
 
@@ -136,9 +140,9 @@
 	//Set species_restricted list
 	switch(target_species)
 		if(SPECIES_SKRELL)
-			species_restricted = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_IPC) //skrell helmets fit humans too
+			species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_IPC) //skrell helmets fit humans too
 		if(SPECIES_HUMAN)
-			species_restricted = list(SPECIES_HUMAN, SPECIES_IPC) //human helmets fit IPCs too
+			species_restricted = list(SPECIES_HUMAN,SPECIES_IPC) //human helmets fit IPCs too
 		else
 			species_restricted = list(target_species)
 
@@ -262,7 +266,7 @@ BLIND     // can't see anything
 	body_parts_covered = HANDS
 	slot_flags = SLOT_GLOVES
 	attack_verb = list("challenged")
-	species_restricted = list("exclude",SPECIES_NABBER, SPECIES_UNATHI,SPECIES_VOX, SPECIES_VOX_ARMALIS)
+	species_restricted = list("exclude",SPECIES_NABBER,SPECIES_UNATHI,SPECIES_VOX,SPECIES_VOX_ARMALIS,SPECIES_OLDUNATHI)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_hands_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_hands_vox_armalis.dmi',
@@ -317,10 +321,11 @@ BLIND     // can't see anything
 		return
 
 	clipped = 1
-	name = "modified [name]"
+	name = "unathi [name]"
 	desc = "[desc]<br>They have been modified to accommodate a different shape."
 	if("exclude" in species_restricted)
 		species_restricted -= SPECIES_UNATHI
+		species_restricted -= SPECIES_OLDUNATHI
 	return
 
 /obj/item/clothing/gloves/mob_can_equip(mob/user)
@@ -572,7 +577,7 @@ BLIND     // can't see anything
 	slot_flags = SLOT_FEET
 	permeability_coefficient = 0.50
 	force = 2
-	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_UNATHI, SPECIES_VOX, SPECIES_VOX_ARMALIS)
+	species_restricted = list("exclude",SPECIES_NABBER,SPECIES_UNATHI,SPECIES_VOX,SPECIES_VOX_ARMALIS)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_feet_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_feet_vox_armalis.dmi',
@@ -1052,5 +1057,5 @@ BLIND     // can't see anything
 	icon = 'icons/obj/clothing/obj_hands_ring.dmi'
 	slot_flags = SLOT_GLOVES
 	gender = NEUTER
-	species_restricted = list("exclude", SPECIES_NABBER, SPECIES_DIONA)
+	species_restricted = list("exclude",SPECIES_NABBER,SPECIES_DIONA)
 	var/undergloves = 1

@@ -405,7 +405,7 @@ var/list/worths = list(
 					/obj/item/clothing/suit/champarmor = 5050,
 					/obj/item/clothing/suit/fiendcowl = 560,
 					/obj/item/clothing/suit/infilsuit = 250,
-					/obj/item/clothing/suit/straight_jacket/overseercloak = 100,
+					/obj/item/clothing/suit/overseercloak = 100,
 //HEADS,
 					/obj/item/clothing/head/collectable/petehat = 350,
 					/obj/item/clothing/head/collectable = 80,

@@ -54,3 +54,6 @@
 					player.equip_to_slot_or_del(new accessory_path(src), slot_tie)
 
 	return 1
+
+/datum/antagonist/deathsquad
+	uniform_type = /obj/item/clothing/under/solgov/pt/army

@@ -74,11 +74,6 @@
 	display_name = "Skrellian helmet"
 	path = /obj/item/clothing/head/helmet/skrell
 	sort_category = "Xenowear"
-	
-/datum/gear/uniform/skrell_bodysuit
-	display_name = "Skrellian uniform"
-	path = /obj/item/clothing/under/skrelljumpsuit
-	sort_category = "Xenowear"
 
 /datum/gear/accessory/skrell_badge
 	display_name = "skrellian SDTF badge"
@@ -158,5 +153,5 @@
 	display_name = "vox breathing mask"
 	path = /obj/item/clothing/mask/gas/vox
 	sort_category = "Xenowear"
-	whitelisted = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
+	whitelisted = list(SPECIES_VOX,SPECIES_VOX_ARMALIS)
 

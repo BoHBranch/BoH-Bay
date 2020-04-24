@@ -111,7 +111,7 @@
 	gateway installation in SCG space and provides vital links to many other SCG systems. Practically a city in space unto itself, the HGI is home to a hodgepodge of private individuals, \
 	Fleet and law enforcement outposts, government services and a wide array of private enterprises all catering to the many hangabouts, travellers, merchants and soldiers who pass through it daily. \
 	This fact alone is what has allowed the Helios system and Eos as a whole to weather multiple economic recessions and has allowed Eos to establish itself as a premier commercial centre of the wider \
-	SCG. This process was hindered during the Gaia conflict, when the Helios Gateway was destroyed in a suicide action of the Fourth Fleet to stop the GCC advance. It has recovered rapidly \
+	SCG. This process was hindered during the Aigaion conflict, when the Helios Gateway was destroyed in a suicide action of the Fourth Fleet to stop the GCC advance. It has recovered rapidly \
 	since the occupation, though the memories of that event carry in the collective consciousness of those who remained through it."
 	capital = "Surya"
 	economic_power = 1.3
@@ -119,12 +119,12 @@
 
 /decl/cultural_info/location/human/terra
 	name = HOME_SYSTEM_TERRA
-	description = "Terra, in the Gilgamesh system. Is not the planet Earth as some may be lead to believe. No, Terra is the home of the Gilgamesh Colonial Confederation, and the capital of that \
-	particular superpower. Terra is one of the many affiliated planets in the GCC and the one that is perhaps the most important. Terra, much like most of the GCC, is isolationist, with a minimal \
-	non-human presence. Much of Terra is heavily industrialised, with a lower standard of living than on equivalent SCG planets. Much of the population works in services, industry or the military. \
-	Still recovering from an economic crash toward the end of the Gaia conflict, much of Terra is in decline, with public services and works being minimal and much of the population burdened by \
-	increasingly high taxes. This state of affairs has seen the immigration of many Terran citizens to the SCG in recent years, hoping to escape the poor conditions they found themselves in. Despite this,\
-	the people of Terra are a proud and unbroken people who are heavily patriotic and tend to bring this with them wherever they go."
+	description = "Komirov, in the Gilgamesh system. Komirov is the home of the United Colonies of Gilgamesh, and the capital of that \
+	particular superpower. Komirov is one of the many affiliated planets in the UCG and the one that is perhaps the most important. Komirov, much like most of the UCG, is isolationist, with a minimal \
+	non-human presence. Much of Komirov is heavily industrialised, with a lower standard of living than on equivalent SCG planets. Much of the population works in services, industry or the military. \
+	Still recovering from an economic crash toward the end of the Aigaion conflict, much of Komirov is in decline, with public services and works being minimal and much of the population burdened by \
+	increasingly high taxes. This state of affairs has seen the immigration of many Komirov citizens to the SCG in recent years, hoping to escape the poor conditions they found themselves in. Despite this,\
+	the people of Komirov are a proud and unbroken people who are heavily patriotic and tend to bring this with them wherever they go."
 	capital = "Ameranth"
 	distance = "22.5 light years."
 	economic_power = 0.9
@@ -145,7 +145,7 @@
 	Rural Tersteners, known as 'Nevokies', live in the south central region around the city of Nevada.  Many Martian and Earthling enclaves exist on the planet, significantly in South Harelstone. \
 	The divide between north and south could also be considered a divide between rich and poor. Even the poorest city dweller will likely be richer than most farmers. \
 	Typically untrusting, once a Terstener has made a friend, they will often be that way for life.  Known for their community and attitudes to strangers, they are considered the cowboys of Sol Central. \
-	Many Tersteners serve in the Defence Forces, and many gave their lives in the Gaian Conflict."
+	Many Tersteners serve in the Defence Forces, and many gave their lives in the Aigaion Conflict."
 	capital = "Tersten City"
 	economic_power = 1.0
 
@@ -175,7 +175,7 @@
 	falling well below the standard poverty line. Cinu is considered one of the most developed democratic systems in space, with relatively little internal conflict. \
 	<br><br>The Cinuan people ethnically range from Martian Tharseese to Old Earth Arabic, West Asian and Central Asian cultures. From a harsh, duned desert planet, they \
 	are known for characteristic firmness disguising fierce friendliness. Its people have suffered in the past, but today look towards a bright future. They are known to be pacifist,\
-	with many refusing to participate in the Defence Forces. Instead, they serve as peacekeepers and diplomats. The Cinuan People were controversially non-aligned during the Gaian Conflict."
+	with many refusing to participate in the Defence Forces. Instead, they serve as peacekeepers and diplomats. The Cinuan People were controversially non-aligned during the Aigaion Conflict."
 	capital = "Al-Mular"
 	economic_power = 1.0
 
@@ -223,14 +223,15 @@
 /decl/cultural_info/location/human/gaia
 	name = HOME_SYSTEM_GAIA
 	distance = "14 light years"
-	description = "Gaia is the sole planet in the Galilei system, serving as the DMZ between the SCG and the GCC. \
+	description = "Aigaion is the sole planet in the Aigaionion system, serving as the DMZ between the SCG and the UCG. \
 	It is an agricultural world, though various conflicts across the planet's surface have left it scarred. The planet is divided into \
-	Sol-Controlled <b>Southern Gaia</b> and Independent-Controlled <b>Northern Gaia</b>, with New Venice remaining a neutral zone inside the DMZ. \
-	The planet's population remain divided even 10 years after the Gaian Conflict. New Venice sits on the edge of Lake Cabot. While Gaia is divided \
-	the current Mayor of New Venice serves as a vital mediator between both sides. <br><br> The Gaian People are tired of war, and long to see their families \
+	Sol-Controlled <b>Southern Aigaion</b> and Independent-Controlled <b>Northern Aigaion</b>, with New Venice remaining a neutral zone inside the DMZ. \
+	The planet's population remain divided even 10 years after the Aigaion Conflict. New Venice sits on the edge of Lake Cabot. While Aigaion is divided \
+	the current Mayor of New Venice serves as a vital mediator between both sides. <br><br> The Aigaion People are tired of war, and long to see their families \
 	once again.  They suffered hard twenty years prior, and fear they may suffer again."
 	capital = "New Venice"
 	economic_power = 1.0
+	language = LANGUAGE_HUMAN_GAIAN
 
 /decl/cultural_info/location/human/magnitka
 	name = HOME_SYSTEM_MAGNITKA
@@ -242,4 +243,5 @@
 	Though historically relatively isolationist, today Magnitka finds itself more and more closely associated with the Gilgamesh Colonial Confederation, in an effort to offset its economic decline."
 	capital = "Labortown"
 	economic_power = 0.8
+	secondary_langs = list(LANGUAGE_HUMAN_GAIAN)
 	ruling_body = "Magnitka"

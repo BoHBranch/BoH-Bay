@@ -21,7 +21,7 @@
 	name = "Explosive Implant (DANGER!)"
 	desc = "An explosive impant activated with a vocal trigger or radio signal. \
 	Use the included pad to adjust the settings before implanting."
-	item_cost = 40
+	item_cost = 16
 	path = /obj/item/weapon/storage/box/syndie_kit/imp_explosive
 
 /datum/uplink_item/item/implants/imp_uplink
@@ -40,3 +40,11 @@
 	set of law-like instructions to follow. This kit contains an autoinjector with a dose of Mindbreaker Toxin."
 	item_cost = 10
 	path = /obj/item/weapon/storage/box/syndie_kit/imp_imprinting
+	
+/datum/uplink_item/item/implants/adrenalin
+	name = "Adrenalin Implant"
+	desc = "An implant with precisely 3 charges. On use it removes any and all none pain related means of crowd control. \
+	namely knockdowns, stuns and weakening. Does nothing against pain related crowd control. Usefull in case you get shot \
+	in the leg."
+	item_cost = 25
+	path = /obj/item/weapon/implanter/adrenalin

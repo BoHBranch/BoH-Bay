@@ -746,47 +746,75 @@
 	sort_string = "WAAAS"
 
 /datum/design/circuit/microwave
-	name = "microwave"
+	name = "kitchen appliance (microwave)"
 	id = "microwave"
 	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/microwave
 	sort_string = "WAAAT"
 
 /datum/design/circuit/gibber
-	name = "meat gibber"
+	name = "kitchen appliance (meat gibber)"
 	id = "gibber"
 	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/gibber
 	sort_string = "WAAAU"
 
-/datum/design/circuit/cooker
-	name = "kitchen appliance (assorted)"
-	desc = "Allows for the construction of an interchangable cooking appliance circuit board. Use a multitool to select appliance."
-	id = "cooker"
-	req_tech = list(TECH_BIO = 1, TECH_MATERIAL = 1)
-	build_path = /obj/item/weapon/stock_parts/circuitboard/cooker
+/datum/design/circuit/fryer
+	name = "kitchen appliance (fryer)"
+	id = "fryer"
+	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/fryer
 	sort_string = "WAAAV"
+
+/datum/design/circuit/oven
+	name = "kitchen appliance (oven)"
+	id = "oven"
+	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/oven
+	sort_string = "WAAAW"
+
+/datum/design/circuit/stove
+	name = "kitchen appliance (stove)"
+	id = "stove"
+	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/stove
+	sort_string = "WAAAX"
+
+/datum/design/circuit/grill
+	name = "kitchen appliance (grill)"
+	id = "grill"
+	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/grill
+	sort_string = "WAAAX"
+
+/datum/design/circuit/mixers
+	name = "kitchen appliance (assorted mixers)"
+	desc = "Allows for the construction of several kitchen mixers; use a multitool to select the type."
+	id = "mixers"
+	req_tech = list(TECH_BIO = 1, TECH_MATERIAL = 1)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/mixer
+	sort_string = "WAAAX"
 
 /datum/design/circuit/honey_extractor
 	name = "honey extractor"
 	id = "honey_extractor"
 	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 1)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/honey
-	sort_string = "WAAAW"
+	sort_string = "WAABA"
 
 /datum/design/circuit/seed_extractor
 	name = "seed extractor"
 	id = "seed_extractor"
 	req_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 1)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/honey/seed
-	sort_string = "WAAAX"
+	sort_string = "WAABB"
 
 /datum/design/circuit/vending
 	name = "vending machine"
 	id = "vending"
 	req_tech = list(TECH_ENGINEERING = 2)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/vending
-	sort_string = "WAABA"
+	sort_string = "WAACA"
 
 /datum/design/circuit/aicore
 	name = "AI core"
@@ -803,7 +831,7 @@
 	build_path = /obj/item/weapon/stock_parts/circuitboard/engine/ion
 	sort_string = "XAAAB"
 
-/datum/design/circuit/sublimator/sauna
+/datum/design/circuit/sauna
 	name = "sauna heater system"
 	id = "sauna"
 	req_tech = list(TECH_POWER = 2, TECH_ENGINEERING = 1)
@@ -817,7 +845,7 @@
 	build_path = /obj/item/weapon/stock_parts/circuitboard/vitals_monitor
 	sort_string = "XAAAD"
 
-/datum/design/circuit/sublimator/modular_computer
+/datum/design/circuit/modular_computer
 	name = "general-purpose computer"
 	id = "pc_motherboard"
 	req_tech = list(TECH_POWER = 1, TECH_ENGINEERING = 1)

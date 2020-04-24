@@ -4,7 +4,6 @@
 	department_flag = MED
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 29)
-	ideal_character_age = 45
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "the Chief Medical Officer"
@@ -36,7 +35,7 @@
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
 	                    SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_CHEMISTRY   = SKILL_MAX)
-	skill_points = 25
+	skill_points = 20
 
 	access = list(access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
 			            access_crematorium, access_chemistry, access_surgery,
@@ -52,7 +51,6 @@
 	supervisors = "Physicians and the Chief Medical Officer"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 19)
-	ideal_character_age = 40
 	minimal_player_age = 0
 	alt_titles = list(
 		"Paramedic",
@@ -96,7 +94,6 @@
 	supervisors = "Medical personnel, and the Chief Medical Officer"
 	selection_color = "#013d3b"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 20
 	alt_titles = list(
 		"Corpsman Trainee")
 
@@ -141,7 +138,6 @@
 	selection_color = "#013d3b"
 	economic_power = 4
 	minimum_character_age = list(SPECIES_HUMAN = 25)
-	ideal_character_age = 30
 	minimal_player_age = 0
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/chemist
 	allowed_branches = list(/datum/mil_branch/civilian)
@@ -165,7 +161,6 @@
 	title = "Counselor"
 	total_positions = 1
 	spawn_positions = 1
-	ideal_character_age = 40
 	economic_power = 5
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	minimal_player_age = 0
@@ -190,7 +185,7 @@
 	max_skill = list(
 		SKILL_MEDICAL     = SKILL_MAX
 	)
-	access = list(access_medical, access_psychiatrist, access_solgov_crew, access_medical_equip, access_virology)
+	access = list(access_medical, access_psychiatrist, access_maint_tunnels, access_solgov_crew, access_medical_equip, access_virology)
 	minimal_access = list()
 	software_on_spawn = list(
 		/datum/computer_file/program/suit_sensors,

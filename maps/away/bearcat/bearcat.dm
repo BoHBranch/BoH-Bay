@@ -1,7 +1,7 @@
 #include "bearcat_areas.dm"
 #include "bearcat_jobs.dm"
 #include "bearcat_access.dm"
-//#include "bearcat_shuttles.dm"
+#include "bearcat_shuttles.dm"
 
 /obj/effect/submap_landmark/joinable_submap/bearcat
 	name = "FTV Bearcat"
@@ -21,9 +21,13 @@
 	vessel_mass = 60
 	max_speed = 1/(10 SECONDS)
 	burn_delay = 10 SECONDS
+	initial_generic_waypoints = list(
+		"nav_bearcat_fore",
+		"nav_bearcat_aft"
+	)
 	initial_restricted_waypoints = list(
-		"Glowbulb" = list("nav_glowbulb")
-		)
+		"Cargo shuttle" = list("nav_bearcat_dock")
+	)
 
 /obj/effect/overmap/visitable/ship/bearcat/New()
 	name = "[pick("FTV","ITV","IEV")] [pick("Bearcat", "Firebug", "Defiant", "Unsinkable","Horizon","Vagrant")]"
@@ -39,7 +43,7 @@
 	description = "A wrecked light freighter."
 	suffixes = list("bearcat/bearcat-1.dmm", "bearcat/bearcat-2.dmm")
 	cost = 1
-	shuttles_to_initialise = list(/datum/shuttle/autodock/ferry/lift)
+	shuttles_to_initialise = list(/datum/shuttle/autodock/ferry/lift, /datum/shuttle/autodock/overmap/bearcat_shuttle)
 	area_usage_test_exempted_root_areas = list(/area/ship)
 	apc_test_exempt_areas = list(
 		/area/ship/scrap/maintenance/engine/port = NO_SCRUBBER|NO_VENT,
@@ -163,22 +167,3 @@
 		/obj/item/weapon/storage/belt/holster/general = 4,
 		/obj/item/weapon/gun/energy/gun = 4
 	)
-
-/obj/structure/closet/secure_closet/freezer/money/bearcat
-	name = "secure locker"
-	icon = 'icons/obj/closets/fridge.dmi'
-	closet_appearance = null
-	req_access = list(access_bearcat_captain)
-
-/obj/structure/closet/secure_closet/freezer/money/bearcat/Initialize()
-	. = ..()
-	//let's make hold a substantial amount.
-	var/created_size = 0
-	for(var/i = 1 to 200) //sanity loop limit
-		var/obj/item/cash_type = pick(3; /obj/item/weapon/spacecash/bundle/c1000, 4; /obj/item/weapon/spacecash/bundle/c500, 5; /obj/item/weapon/spacecash/bundle/c200)
-		var/bundle_size = initial(cash_type.w_class) / 2
-		if(created_size + bundle_size <= storage_capacity)
-			created_size += bundle_size
-			new cash_type(src)
-		else
-			break

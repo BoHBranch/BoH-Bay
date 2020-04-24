@@ -12,9 +12,15 @@
 	key = "5"
 	shorthand = "Iber"
 	partial_understanding = list(
-		LANGUAGE_HUMAN_EURO = 30,
+		LANGUAGE_HUMAN_EURO = 35,
+		LANGUAGE_HUMAN_ARABIC = 20,
+		LANGUAGE_HUMAN_RUSSIAN = 5,
+		LANGUAGE_HUMAN_CHINESE = 5,
+		LANGUAGE_HUMAN_INDIAN = 5,
 		LANGUAGE_HUMAN_SELENIAN = 15,
-		LANGUAGE_SPACER = 20
+		LANGUAGE_HUMAN_GAIAN = 10,
+		LANGUAGE_SPACER = 20,
+		LANGUAGE_GUTTER = 15
 	)
 	syllables = list(
 		"ad", "al", "an", "ar", "as", "ci", "co", "de", "do", "el", "en", "er", "es",

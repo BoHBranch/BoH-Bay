@@ -55,6 +55,9 @@ client/verb/JoinResponseTeam()
 		if(GLOB.ert.current_antagonists.len >= GLOB.ert.hard_cap)
 			to_chat(usr, "The emergency response team is already full!")
 			return
+		if(!length(GLOB.ert.starting_locations))
+			to_chat(usr, "The emergency response team base is still loading!")
+			return
 		GLOB.ert.create_default(usr)
 	else
 		to_chat(usr, "You need to be an observer or new player to use this.")

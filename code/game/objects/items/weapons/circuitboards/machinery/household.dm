@@ -4,9 +4,70 @@
 	board_type = "machine"
 	origin_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
 	req_components = list(
-		/obj/item/weapon/stock_parts/manipulator = 1,
-		/obj/item/weapon/stock_parts/micro_laser = 2,
-		/obj/item/weapon/stock_parts/matter_bin = 1)
+		/obj/item/weapon/stock_parts/capacitor = 3,
+		/obj/item/weapon/stock_parts/micro_laser = 1,
+		/obj/item/weapon/stock_parts/matter_bin = 2)
+	additional_spawn_components = list(
+		/obj/item/weapon/stock_parts/console_screen = 1,
+		/obj/item/weapon/stock_parts/keyboard = 1,
+		/obj/item/weapon/stock_parts/power/apc/buildable = 1
+	)
+
+/obj/item/weapon/stock_parts/circuitboard/fryer
+	name = T_BOARD("fryer")
+	build_path = /obj/machinery/appliance/cooker/fryer
+	board_type = "machine"
+	origin_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
+	req_components = list(
+		/obj/item/weapon/stock_parts/capacitor = 3,
+		/obj/item/weapon/stock_parts/scanning_module,
+		/obj/item/weapon/stock_parts/matter_bin = 2)
+	additional_spawn_components = list(
+		/obj/item/weapon/stock_parts/console_screen = 1,
+		/obj/item/weapon/stock_parts/keyboard = 1,
+		/obj/item/weapon/stock_parts/power/apc/buildable = 1
+	)
+
+/obj/item/weapon/stock_parts/circuitboard/grill
+	name = T_BOARD("grill")
+	build_path = /obj/machinery/appliance/grill
+	board_type = "machine"
+	origin_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
+	req_components = list(
+			/obj/item/weapon/stock_parts/capacitor = 3,
+			/obj/item/weapon/stock_parts/scanning_module,
+			/obj/item/weapon/stock_parts/matter_bin = 2)
+	additional_spawn_components = list(
+		/obj/item/weapon/stock_parts/console_screen = 1,
+		/obj/item/weapon/stock_parts/keyboard = 1,
+		/obj/item/weapon/stock_parts/power/apc/buildable = 1
+	)
+
+/obj/item/weapon/stock_parts/circuitboard/stove
+	name = T_BOARD("stove")
+	build_path = /obj/machinery/appliance/cooker/stove
+	board_type = "machine"
+	origin_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
+	req_components = list(
+			/obj/item/weapon/stock_parts/capacitor = 3,
+			/obj/item/weapon/stock_parts/scanning_module,
+			/obj/item/weapon/stock_parts/matter_bin = 2)
+	additional_spawn_components = list(
+		/obj/item/weapon/stock_parts/console_screen = 1,
+		/obj/item/weapon/stock_parts/keyboard = 1,
+		/obj/item/weapon/stock_parts/power/apc/buildable = 1
+	)
+
+/obj/item/weapon/stock_parts/circuitboard/oven
+	name = T_BOARD("oven")
+	build_path = /obj/machinery/appliance/cooker/oven
+	board_type = "machine"
+	origin_tech = list(TECH_BIO = 2, TECH_ENGINEERING = 2)
+	req_components = list(
+		/obj/item/weapon/stock_parts/capacitor = 3,
+		/obj/item/weapon/stock_parts/scanning_module,
+		/obj/item/weapon/stock_parts/matter_bin = 2
+	)
 	additional_spawn_components = list(
 		/obj/item/weapon/stock_parts/console_screen = 1,
 		/obj/item/weapon/stock_parts/keyboard = 1,
@@ -27,15 +88,15 @@
 		/obj/item/weapon/stock_parts/power/apc/buildable = 1
 	)
 
-/obj/item/weapon/stock_parts/circuitboard/cooker
+/obj/item/weapon/stock_parts/circuitboard/mixer
 	name = T_BOARD("candy machine")
-	build_path = /obj/machinery/cooker/candy
+	build_path = /obj/machinery/appliance/mixer/candy
 	board_type = "machine"
 	origin_tech = list(TECH_BIO = 1, TECH_MATERIAL = 1)
 	buildtype_select = TRUE
 	req_components = list(
-		/obj/item/weapon/stock_parts/manipulator = 2,
 		/obj/item/weapon/stock_parts/matter_bin = 1,
+		/obj/item/weapon/stock_parts/manipulator = 1,
 		/obj/item/stack/cable_coil = 10)
 	additional_spawn_components = list(
 		/obj/item/weapon/stock_parts/console_screen = 1,
@@ -43,8 +104,8 @@
 		/obj/item/weapon/stock_parts/power/apc/buildable = 1
 	)
 
-/obj/item/weapon/stock_parts/circuitboard/cooker/get_buildable_types()
-	return subtypesof(/obj/machinery/cooker)
+/obj/item/weapon/stock_parts/circuitboard/mixer/get_buildable_types()
+	return subtypesof(/obj/machinery/appliance/mixer)
 
 /obj/item/weapon/stock_parts/circuitboard/honey
 	name = T_BOARD("honey extractor")

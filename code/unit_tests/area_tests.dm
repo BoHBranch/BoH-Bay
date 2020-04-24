@@ -1,7 +1,5 @@
 /datum/unit_test/areas_shall_be_coherent
 	name = "AREA: Areas shall be coherent"
-	disabled = TRUE
-	why_disabled = "TODO: Remap incoherent areas"
 
 /datum/unit_test/areas_shall_be_coherent/start_test()
 	var/incoherent_areas = 0
@@ -82,8 +80,6 @@
 
 /datum/unit_test/areas_shall_be_used
 	name = "AREA: Areas shall be used"
-	disabled = TRUE
-	why_disabled = "TODO: Remove or use unused areas"
 
 /datum/unit_test/areas_shall_be_used/start_test()
 	var/unused_areas = 0

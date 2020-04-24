@@ -10,7 +10,6 @@
 	economic_power = 12
 	minimal_player_age = 3
 	minimum_character_age = list(SPECIES_HUMAN = 30)
-	ideal_character_age = 50
 	alt_titles = list(
 		"Research Supervisor")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/senior_scientist
@@ -46,7 +45,6 @@
 	supervisors = "the Chief Science Officer and the Workplace Liaison"
 	economic_power = 10
 	minimum_character_age = list(SPECIES_HUMAN = 25)
-	ideal_character_age = 45
 	minimal_player_age = 0
 	alt_titles = list(
 		"Xenoarcheologist",
@@ -76,9 +74,9 @@
 		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
 	)
 
-	access = list(access_tox, access_tox_storage, access_research, access_petrov, access_petrov_helm,
+	access = list(access_tox, access_maint_tunnels, access_tox_storage, access_research, access_petrov_maint, access_petrov, access_petrov_helm,
 						access_mining_office, access_mining_station, access_xenobiology, access_guppy_helm,
-						access_xenoarch, access_nanotrasen, access_expedition_shuttle, access_guppy, access_hangar,
+						access_xenoarch, access_nanotrasen, access_expedition_shuttle, access_guppy, access_solgov_crew, access_hangar,
 						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_robotics, access_robotics_engineering)
 	minimal_access = list()
 	skill_points = 20
@@ -93,7 +91,6 @@
 	selection_color = "#633d63"
 	economic_power = 3
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	ideal_character_age = 30
 	alt_titles = list(
 		"Custodian" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/janitor,
 		"Testing Assistant" = /decl/hierarchy/outfit/job/torch/passenger/research/assist/testsubject,
@@ -113,11 +110,12 @@
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/assist,
 		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/assist/solgov
 	)
+	max_pow_cat = 2
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
 
-	access = list(access_tox, access_tox_storage, access_research, access_petrov,
+	access = list(access_tox, access_maint_tunnels, access_tox_storage, access_research, access_petrov_maint, access_petrov,
 						access_mining_office, access_mining_station, access_xenobiology,
-						access_xenoarch, access_nanotrasen, access_expedition_shuttle, access_guppy, access_hangar,
+						access_xenoarch, access_nanotrasen, access_expedition_shuttle, access_solgov_crew, access_guppy, access_hangar,
 						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry)

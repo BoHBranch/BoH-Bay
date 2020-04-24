@@ -327,62 +327,54 @@
 /obj/item/weapon/reagent_containers/syringe/inaprovaline
 	name = "Syringe (inaprovaline)"
 	desc = "Contains inaprovaline - used to stabilize patients."
+	reagents_to_add = list(/datum/reagent/inaprovaline = 15)
 
-/obj/item/weapon/reagent_containers/syringe/inaprovaline/New()
-	..()
-	reagents.add_reagent(/datum/reagent/inaprovaline, 15)
+/obj/item/weapon/reagent_containers/syringe/inaprovaline/Initialize()
 	mode = SYRINGE_INJECT
-	update_icon()
+	. = ..()
 
 /obj/item/weapon/reagent_containers/syringe/antitoxin
 	name = "Syringe (anti-toxin)"
 	desc = "Contains anti-toxins."
+	reagents_to_add = list(/datum/reagent/dylovene = 15)
 
-/obj/item/weapon/reagent_containers/syringe/antitoxin/New()
-	..()
-	reagents.add_reagent(/datum/reagent/dylovene, 15)
+/obj/item/weapon/reagent_containers/syringe/antitoxin/Initialize()
 	mode = SYRINGE_INJECT
-	update_icon()
+	. = ..()
 
 /obj/item/weapon/reagent_containers/syringe/antiviral
 	name = "Syringe (spaceacillin)"
 	desc = "Contains antiviral agents."
+	reagents_to_add = list(/datum/reagent/spaceacillin = 15)
 
-/obj/item/weapon/reagent_containers/syringe/antiviral/New()
-	..()
-	reagents.add_reagent(/datum/reagent/spaceacillin, 15)
+/obj/item/weapon/reagent_containers/syringe/antiviral/Initialize()
 	mode = SYRINGE_INJECT
-	update_icon()
+	. = ..()
 
 /obj/item/weapon/reagent_containers/syringe/drugs
 	name = "Syringe (drugs)"
 	desc = "Contains aggressive drugs meant for torture."
+	reagents_to_add = list(/datum/reagent/space_drugs = 5, /datum/reagent/mindbreaker = 5, /datum/reagent/cryptobiolin = 5)
 
-/obj/item/weapon/reagent_containers/syringe/drugs/New()
-	..()
-	reagents.add_reagent(/datum/reagent/space_drugs, 5)
-	reagents.add_reagent(/datum/reagent/mindbreaker, 5)
-	reagents.add_reagent(/datum/reagent/cryptobiolin, 5)
+/obj/item/weapon/reagent_containers/syringe/drugs/Initialize()
 	mode = SYRINGE_INJECT
-	update_icon()
+	. = ..()
 
 /obj/item/weapon/reagent_containers/syringe/ld50_syringe/choral
+	reagents_to_add = list(/datum/reagent/chloralhydrate = 60)
 
-/obj/item/weapon/reagent_containers/syringe/ld50_syringe/choral/New()
-	..()
-	reagents.add_reagent(/datum/reagent/chloralhydrate, 60)
+/obj/item/weapon/reagent_containers/syringe/ld50_syringe/choral/Initialize()
 	mode = SYRINGE_INJECT
-	update_icon()
+	. = ..()
 
 /obj/item/weapon/reagent_containers/syringe/steroid
 	name = "Syringe (anabolic steroids)"
 	desc = "Contains drugs for muscle growth."
+	reagents_to_add = list(/datum/reagent/adrenaline = 5, /datum/reagent/hyperzine = 10)
 
-/obj/item/weapon/reagent_containers/syringe/steroid/New()
-	..()
-	reagents.add_reagent(/datum/reagent/adrenaline, 5)
-	reagents.add_reagent(/datum/reagent/hyperzine, 10)
-
+/obj/item/weapon/reagent_containers/syringe/ld50_syringe/choral/Initialize()
+	mode = SYRINGE_INJECT
+	. = ..()
 
 // TG ports
 

@@ -93,6 +93,7 @@
 /obj/machinery/vending/security
 	products = list(
 		/obj/item/weapon/handcuffs = 14,
+		/obj/item/weapon/handcuffs/ziptie = 8,
 		/obj/item/weapon/grenade/flashbang = 4,
 		/obj/item/weapon/grenade/chem_grenade/teargas = 4,
 		/obj/item/device/flash = 7,

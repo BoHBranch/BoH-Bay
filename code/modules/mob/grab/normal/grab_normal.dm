@@ -44,7 +44,7 @@
 		if(do_mob(assailant, affecting, action_cooldown - 1))
 			G.attacking = 0
 			G.action_used()
-			affecting.Weaken(2)
+			affecting.Weaken(10)
 			affecting.visible_message("<span class='notice'>[assailant] pins [affecting] to the ground!</span>")
 
 			return 1
@@ -264,9 +264,15 @@
 			damage_mod -= armor_datum.get_blocked(BRUTE, damage_flags, W.armor_penetration, W.force*1.5)
 
 	var/total_damage = 0
+	var/obj/item/organ/external/E = affecting.get_organ(G.target_zone)
+	var/sever_prob = max(((damage_mod * 100) - 20), 0)
 	for(var/i in 1 to 3)
 		var/damage = min(W.force*1.5, 20)*damage_mod
 		affecting.apply_damage(damage, W.damtype, BP_HEAD, damage_flags, armor_pen = 100, used_weapon=W)
+		if(prob(sever_prob))
+			E.sever_artery()
+		affecting.losebreath += 25
+		affecting.adjustOxyLoss(25)
 		total_damage += damage
 
 

@@ -14,7 +14,8 @@
 		LANGUAGE_HUMAN_RUSSIAN,
 		LANGUAGE_SPACER,
 		LANGUAGE_GUTTER,
-		LANGUAGE_SIGN
+		LANGUAGE_SIGN,
+		LANGUAGE_HUMAN_GAIAN
 	)
 
 /decl/cultural_info/culture/human/martian_surfacer
@@ -123,10 +124,10 @@
 
 /decl/cultural_info/culture/human/confederate
 	name = CULTURE_HUMAN_CONFED
-	description = "You are from Terra (not Earth), in the Gilgamesh system. The capital world of the Gilgamesh Colonial Confederation, your people embody what it means to be a part of the GCC. \
-	Unfortunately, the years since the war have not been easy on Terra and the long period of economic recovery has not made life easy. The people of Terra are typically employed \
-	in the military, industrial, government or service sectors, with an emphasis being placed on military service. Terrans today are generally poor, bitter and a somewhat broken people angry and \
-	resentful about their loss in the Gaia Conflict. An upbringing on Terra emphasises an odd mix of service to the state, liberalism and militarism."
+	description = "You are from Komirov (not Earth), in the Gilgamesh system. The capital world of the United Colonies of Gilgamesh, your people embody what it means to be a part of the UCG. \
+	Unfortunately, the years since the war have not been easy on Komirov and the long period of economic recovery has not made life easy. The people of Komirov are typically employed \
+	in the military, industrial, government or service sectors, with an emphasis being placed on military service. Komirovians today are generally poor, bitter and a somewhat broken people angry and \
+	resentful about their loss in the Aigaion Conflict. An upbringing on Komirov emphasises an odd mix of service to the state, liberalism and militarism."
 	language = LANGUAGE_HUMAN_RUSSIAN
 	economic_power = 0.9
 

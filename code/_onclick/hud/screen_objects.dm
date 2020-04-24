@@ -48,8 +48,8 @@
 	var/obj/item/owner
 
 /obj/screen/item_action/Destroy()
-	..()
 	owner = null
+	. = ..()
 
 /obj/screen/item_action/Click()
 	if(!usr || !owner)
@@ -159,7 +159,7 @@
 
 /obj/screen/intent
 	name = "intent"
-	icon = 'icons/mob/screen1_White.dmi'
+	icon = 'icons/mob/screen/white.dmi'
 	icon_state = "intent_help"
 	screen_loc = ui_acti
 	var/intent = I_HELP
@@ -207,6 +207,12 @@
 
 		if("Reset Machine")
 			usr.unset_machine()
+		
+		if("up hint")
+			if(isliving(usr))
+				var/mob/living/L = usr
+				L.lookup()
+
 		if("internal")
 			if(iscarbon(usr))
 				var/mob/living/carbon/C = usr

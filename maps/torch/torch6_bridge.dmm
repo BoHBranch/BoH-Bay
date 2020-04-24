@@ -4235,25 +4235,19 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "gP" = (
+/obj/structure/catwalk,
 /obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
 	dir = 4
 	},
-/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "gQ" = (
@@ -7415,23 +7409,15 @@
 /area/maintenance/bridge/aftport)
 "lW" = (
 /obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/catwalk,
-/obj/structure/cable/green{
 	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment,
+/obj/structure/catwalk,
+/turf/simulated/open,
 /area/maintenance/bridge/foreport)
 "lX" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -11130,10 +11116,27 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/safe_room/bridge)
 "rT" = (
-/obj/structure/closet/toolcloset,
-/obj/random/action_figure,
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/random/powercell,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "rU" = (
@@ -13040,6 +13043,53 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/passenger)
+"vo" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/catwalk,
+/turf/simulated/open,
+/area/maintenance/bridge/foreport)
+"vp" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/obj/structure/catwalk,
+/turf/simulated/open,
+/area/maintenance/bridge/foreport)
+"vq" = (
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_y = -22
+	},
+/obj/structure/catwalk,
+/turf/simulated/open,
+/area/maintenance/bridge/foreport)
 "vs" = (
 /obj/machinery/space_heater,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -13817,11 +13867,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
-"xh" = (
-/obj/random/junk,
-/obj/structure/catwalk,
-/turf/simulated/open,
-/area/maintenance/bridge/foreport)
 "xi" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -13936,27 +13981,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/bridge/aftport)
-"xr" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment,
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/structure/lattice,
-/turf/simulated/open,
-/area/maintenance/bridge/foreport)
 "xt" = (
 /obj/machinery/portable_atmospherics/powered/pump/filled,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -14017,31 +14041,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
-"xB" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	pixel_y = 0
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
-	},
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/structure/lattice,
-/turf/simulated/open,
-/area/maintenance/bridge/foreport)
 "xD" = (
 /obj/structure/cable{
 	d1 = 32;
@@ -14060,19 +14059,6 @@
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
-/area/maintenance/bridge/foreport)
-"xK" = (
-/obj/machinery/alarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_y = -22
-	},
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
-	},
-/turf/simulated/open,
 /area/maintenance/bridge/foreport)
 "xN" = (
 /obj/structure/railing/mapped{
@@ -14947,29 +14933,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
-"BG" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/structure/lattice,
-/turf/simulated/open,
-/area/maintenance/bridge/foreport)
 "BI" = (
 /obj/structure/cable/green{
 	d2 = 2;
@@ -15696,9 +15659,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
-"Fz" = (
-/turf/simulated/open,
-/area/maintenance/bridge/foreport)
 "FE" = (
 /obj/machinery/computer/modular/preset/engineering{
 	dir = 1
@@ -15881,18 +15841,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
-"GI" = (
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
-/turf/simulated/open,
-/area/maintenance/bridge/foreport)
 "GV" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
 	icon_state = "console";
@@ -16653,10 +16601,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
-"Ji" = (
-/obj/random/obstruction,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/foreport)
 "Jj" = (
 /obj/structure/bed/chair/padded/green{
 	icon_state = "chair_preview";
@@ -16865,10 +16809,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/starboard)
-"KZ" = (
-/obj/random/plushie/large,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/foreport)
 "La" = (
 /obj/structure/sign/directions/supply{
 	dir = 2;
@@ -17076,13 +17016,6 @@
 /obj/item/weapon/material/ashtray/glass,
 /turf/simulated/floor/carpet/blue2,
 /area/bridge/meeting_room)
-"Ma" = (
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
-/turf/simulated/open,
-/area/maintenance/bridge/foreport)
 "Mb" = (
 /obj/effect/floor_decal/corner/blue/three_quarters{
 	dir = 4
@@ -18881,18 +18814,6 @@
 "UA" = (
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
-"UE" = (
-/obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/foreport)
 "UL" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -19396,24 +19317,6 @@
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
 /area/aquila/airlock)
-"Xq" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/lattice,
-/turf/simulated/open,
-/area/maintenance/bridge/foreport)
 "Xr" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/bridge/forestarboard)
@@ -29763,9 +29666,9 @@ vQ
 wx
 sB
 xc
-Ji
-KZ
-Ma
+xc
+JG
+JG
 tg
 tg
 tg
@@ -29966,8 +29869,8 @@ ti
 ti
 ti
 ti
-rT
-Ma
+JG
+JG
 tg
 tg
 tg
@@ -30168,8 +30071,8 @@ vS
 wz
 Xa
 ti
-oB
-Ma
+JG
+JG
 tg
 tg
 tg
@@ -30371,7 +30274,7 @@ wA
 nK
 xe
 WX
-Ma
+JG
 tg
 tg
 tg
@@ -31176,10 +31079,10 @@ cF
 AX
 RE
 IK
-UE
-UE
-lW
-oB
+gP
+gP
+rT
+NW
 tg
 tg
 tg
@@ -31378,10 +31281,10 @@ sL
 sL
 sL
 sL
-oB
-oB
-xj
-oB
+JG
+JG
+vo
+JG
 tg
 tg
 tg
@@ -31580,10 +31483,10 @@ Rf
 vX
 wD
 sL
-NW
-NW
-gP
-NW
+JG
+JG
+vo
+JG
 tg
 tg
 tg
@@ -31783,9 +31686,9 @@ vY
 wE
 sL
 JG
-GI
-BG
-xK
+JG
+vo
+vq
 tg
 tg
 tg
@@ -31985,9 +31888,9 @@ vY
 Zf
 sL
 JG
-Ma
-Xq
-Fz
+JG
+vo
+JG
 tg
 tg
 tg
@@ -32187,9 +32090,9 @@ uz
 QS
 sL
 JG
-Ma
-Xq
-Fz
+JG
+vo
+JG
 tg
 tg
 tg
@@ -32388,10 +32291,10 @@ vv
 vv
 vv
 vv
-xh
-Ma
-Xq
-Fz
+JG
+JG
+vo
+JG
 tg
 tg
 tg
@@ -32591,8 +32494,8 @@ wb
 wH
 vv
 xi
-xr
-xB
+lW
+vp
 tg
 tg
 tg

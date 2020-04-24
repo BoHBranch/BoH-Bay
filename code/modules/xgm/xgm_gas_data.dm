@@ -9,6 +9,8 @@
 	var/list/specific_heat = list()
 	//Molar mass of the gas.  Used for calculating specific entropy.
 	var/list/molar_mass = list()
+	//Density relative to water of the gas's liquid form. Used for condensation.
+	var/list/liquid_density = list()
 	//Tile overlays.  /obj/effect/gas_overlay, created from references to 'icons/effects/tile_effects.dmi'
 	var/list/tile_overlay = list()
 	//Optional color for tile overlay
@@ -37,6 +39,7 @@
 	var/name = "Unnamed Gas"
 	var/specific_heat = 20	// J/(mol*K)
 	var/molar_mass = 0.032	// kg/mol
+	var/liquid_density = 1
 
 	var/tile_overlay = "generic"
 	var/tile_color = null
@@ -64,6 +67,7 @@
 		gas_data.name[gas.id] = gas.name
 		gas_data.specific_heat[gas.id] = gas.specific_heat
 		gas_data.molar_mass[gas.id] = gas.molar_mass
+		gas_data.liquid_density[gas.id] = gas.liquid_density
 		if(gas.overlay_limit)
 			gas_data.overlay_limit[gas.id] = gas.overlay_limit
 			gas_data.tile_overlay[gas.id] = gas.tile_overlay

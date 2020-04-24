@@ -1,4 +1,4 @@
-/datum/job/submap/voxship_arm
+/datum/job/submap/voxship_vox/armalis
 	title = "Shoal Armalis"
 	total_positions = 2
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
@@ -11,7 +11,7 @@
 	                    SKILL_COMBAT      = SKILL_MAX,
 	                    SKILL_HAULING     = SKILL_MAX,
 	                    SKILL_PILOT       = SKILL_BASIC)
-	skill_points = 0 //hahaha no not when you get min skills bucko
+	skill_points = 4 //hahaha no not when you get min skills bucko
 
-/obj/effect/submap_landmark/spawnpoint/voxarm_crew
+/obj/effect/submap_landmark/spawnpoint/voxship_crew/armalis
 	name = "Shoal Armalis"

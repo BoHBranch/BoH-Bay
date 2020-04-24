@@ -85,6 +85,31 @@
 		to_chat(src, "<span class='alium'>You channel a message: \"[msg]\" to [M]</span>")
 	return
 
+/mob/living/carbon/human/proc/discharge_energy()
+	set name = "Discharge Energy"
+	set desc = "Releases all the energy you've stored up."
+	set category = "Abilities"
+
+	if(stored_shock_by_ref["\ref[src]"] >= 1 && src.stat == CONSCIOUS)
+		var/spark_amount = max(1, min(12, stored_shock_by_ref["\ref[src]"]/25))
+		switch(spark_amount)
+			if(1 to 4)
+				visible_message("<span class='notice'>[src] releases their stored electric energy with a few pops and arcs.</span>")
+			if(4 to 8)
+				visible_message("<span class='warning'>[src] releases their stored electric energy in a hissing aura of charged particles.</span>")
+			if(8 to 11)
+				visible_message("<span class='danger'>[src] releases their stored electric energy with a burst of jumping arcs and loud pops.</span>")
+				playsound(src, 'sound/effects/snap.ogg', 30)
+			if(11 to INFINITY)
+				visible_message("<span class='danger'>[src] releases their stored electric energy in a massive cloud of charged plasma!</span>")
+				playsound(src, 'sound/weapons/wave.ogg', 30)
+
+		var/datum/effect/effect/system/spark_spread/s = new
+		s.set_up(spark_amount, spark_amount, src.loc)
+		s.start()
+
+		stored_shock_by_ref["\ref[src]"] = 0
+
 /***********
  diona verbs
 ***********/

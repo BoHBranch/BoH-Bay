@@ -7,8 +7,8 @@
 	var/list/access = list()              // Useful for servers which either have fewer players, so each person needs to fill more than one role, or servers which like to give more access, so players can't hide forever in their super secure departments (I'm looking at you, chemistry!)
 	var/list/software_on_spawn = list()   // Defines the software files that spawn on tablets and labtops
 	var/department_flag = 0
-	var/total_positions = 0               // How many players can be this job
-	var/spawn_positions = 0               // How many players can spawn in as this job
+	var/total_positions = 0               // How many players can be this job. Set to -1 to be unlimited.
+	var/spawn_positions = 0               // How many players can spawn in as this job. Set to -1 to be unlimited.
 	var/current_positions = 0             // How many players have this job
 	var/availablity_chance = 100          // Percentage chance job is available each round
 
@@ -54,6 +54,8 @@
 	var/give_psionic_implant_on_join = TRUE // If psionic, will be implanted for control.
 
 	var/required_language
+	var/is_whitelisted = FALSE
+	var/max_pow_cat = 0 //If the rank pow_cat is great then this, set to this.  This is used for Galilei Convention IDs
 
 /datum/job/New()
 
@@ -193,7 +195,10 @@
 /datum/job/proc/has_alt_title(var/mob/H, var/supplied_title, var/desired_title)
 	return (supplied_title == desired_title) || (H.mind && H.mind.role_alt_title == desired_title)
 
-/datum/job/proc/is_restricted(var/datum/preferences/prefs, var/feedback)
+/datum/job/proc/is_restricted(var/client/caller, var/datum/preferences/prefs, var/feedback) //Feedback can be anything that can recieve a message.
+	//caller is the client that calls this. this value doesn't always exist.
+	//pref is the preferences
+	//feedback is the person we want to send feedback messages to, if any.
 
 
 	if(!isnull(allowed_branches) && (!prefs.branches[title] || !is_branch_allowed(prefs.branches[title])))
@@ -216,12 +221,15 @@
 	if(!S.check_background(src, prefs))
 		to_chat(feedback, "<span class='boldannounce'>Incompatible background for [title].</span>")
 		return TRUE
+	if(caller && !has_job_whitelist(caller, src))
+		to_chat(feedback, "<span class='boldannounce'>[title] is whitelisted.</span>")
+		return TRUE
 
 	return FALSE
 
 /datum/job/proc/get_join_link(var/client/caller, var/href_string, var/show_invalid_jobs)
 	if(is_available(caller))
-		if(is_restricted(caller.prefs))
+		if(is_restricted(caller, caller.prefs))
 			if(show_invalid_jobs)
 				return "<tr><td><a style='text-decoration: line-through' href='[href_string]'>[title]</a></td><td>[current_positions]</td><td>(Active: [get_active_count()])</td></tr>"
 		else
@@ -354,6 +362,8 @@
 	var/list/reasons = list()
 	if(jobban_isbanned(caller, title))
 		reasons["You are jobbanned."] = TRUE
+	if(!has_job_whitelist(caller, src)) //This is fine.
+		reasons["You are not whitelisted for this job."] = TRUE
 	if(is_semi_antagonist && jobban_isbanned(caller, MODE_MISC_AGITATOR))
 		reasons["You are semi-antagonist banned."] = TRUE
 	if(!player_old_enough(caller))

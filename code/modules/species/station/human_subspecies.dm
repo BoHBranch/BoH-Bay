@@ -80,7 +80,10 @@
 		)
 
 	additional_available_cultural_info = list(
-		TAG_CULTURE = list(CULTURE_HUMAN_VATGROWN)
+		TAG_CULTURE = list(
+			CULTURE_HUMAN_VATGROWN,
+			CULTURE_SYMBIOTIC
+		)
 	)
 	default_cultural_info = list(
 		TAG_CULTURE = CULTURE_HUMAN_VATGROWN
@@ -120,6 +123,7 @@
 		/datum/unarmed_attack/punch,
 		/datum/unarmed_attack/bite/sharp
 	)
+	override_organ_types = list(BP_LUNGS = /obj/item/organ/internal/lungs/gills)
 
 	descriptors = list(
 		/datum/mob_descriptor/height,

@@ -13,7 +13,7 @@
 	one_hand_penalty = 4
 	force = 10
 	slot_flags = SLOT_BACK
-	origin_tech = list(TECH_COMBAT=2, TECH_MATERIALS=1)
+	origin_tech = list(TECH_COMBAT=2, TECH_MATERIAL=1, TECH_ESOTERIC=1)
 	caliber = "7mmR"
 	//fire_sound = 'sound/weapons/sniper.ogg'
 	handle_casings = HOLD_CASINGS
@@ -37,7 +37,7 @@
 	one_hand_penalty = 0
 	force = 4
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
-	origin_tech = list(TECH_COMBAT=2, TECH_MATERIALS=1)
+	origin_tech = list(TECH_COMBAT=2, TECH_MATERIAL=1, TECH_ESOTERIC=1)
 	caliber = "7mmR"
 	//fire_sound = 'sound/weapons/sniper.ogg'
 	handle_casings = HOLD_CASINGS

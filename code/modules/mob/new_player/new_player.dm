@@ -297,7 +297,7 @@
 	if(!job || !job.is_available(client))
 		alert("[job.title] is not available. Please try another.")
 		return 0
-	if(job.is_restricted(client.prefs, src))
+	if(job.is_restricted(client,client.prefs,src))
 		return
 
 	var/datum/spawnpoint/spawnpoint = job.get_spawnpoint(client)
