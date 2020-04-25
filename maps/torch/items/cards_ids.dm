@@ -225,3 +225,7 @@
 /obj/item/weapon/card/id/torch/crew/infantry/inftech
 	job_access_type = /datum/job/combat_tech
 	detail_color = COLOR_SUN
+
+/obj/item/weapon/card/id/torch/crew/psiadvisor
+	job_access_type = /datum/job/psiadvisor
+	detail_color = COLOR_COMMAND_BLUE

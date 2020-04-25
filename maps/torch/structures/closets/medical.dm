@@ -54,7 +54,7 @@
 		/obj/item/weapon/storage/firstaid/adv,
 		/obj/item/weapon/storage/box/armband/med,
 		/obj/item/weapon/storage/belt/general,
-		/obj/item/weapon/material/knife/folding/swiss/officer,
+		/obj/item/weapon/material/knife/folding/swiss,
 		/obj/item/weapon/sd_key,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/medic, /obj/item/weapon/storage/backpack/satchel/med)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/med, /obj/item/weapon/storage/backpack/messenger/med)),
@@ -84,7 +84,7 @@
 		/obj/item/device/flash,
 		/obj/item/device/megaphone,
 		/obj/item/weapon/storage/firstaid/adv,
-		/obj/item/weapon/material/knife/folding/swiss/medic,
+		/obj/item/weapon/material/knife/folding/swiss,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/medic, /obj/item/weapon/storage/backpack/satchel/med)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/med, /obj/item/weapon/storage/backpack/messenger/med)),
 		RANDOM_SCRUBS = 2
@@ -113,7 +113,7 @@
 		/obj/item/weapon/storage/firstaid/adv,
 		/obj/item/clothing/suit/storage/medical_chest_rig,
 		/obj/item/clothing/head/hardhat/EMS,
-		/obj/item/weapon/material/knife/folding/swiss/medic,
+		/obj/item/weapon/material/knife/folding/swiss,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/medic, /obj/item/weapon/storage/backpack/satchel/med)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/med, /obj/item/weapon/storage/backpack/messenger/med))
 	)
