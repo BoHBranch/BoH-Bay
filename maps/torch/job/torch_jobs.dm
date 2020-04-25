@@ -42,7 +42,7 @@
 						/datum/job/senior_scientist, /datum/job/scientist, /datum/job/scientist_assistant,
 						/datum/job/ai, /datum/job/cyborg,
 						/datum/job/crew, /datum/job/assistant,
-						/datum/job/merchant
+						/datum/job/merchant, /datum/job/symbiote
 						)
 
 	access_modify_region = list(

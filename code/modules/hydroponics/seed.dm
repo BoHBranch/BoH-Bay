@@ -716,7 +716,6 @@
 
 //Place the plant products at the feet of the user.
 /datum/seed/proc/harvest(var/mob/user,var/yield_mod,var/harvest_sample,var/force_amount)
-
 	if(!user)
 		return
 
@@ -748,39 +747,39 @@
 					total_yield = get_trait(TRAIT_YIELD) + rand(yield_mod)
 				total_yield = max(1,total_yield)
 
-		. = list()
 		for(var/i = 0;i<total_yield;i++)
-			var/obj/item/product
-			if(has_mob_product)
-				product = new has_mob_product(get_turf(user),name)
-			else
-				product = new /obj/item/weapon/reagent_containers/food/snacks/grown(get_turf(user),name)
-			. += product
+			spawn_seed(get_turf(user))
 
-			if(get_trait(TRAIT_PRODUCT_COLOUR))
-				if(!istype(product, /mob))
-					product.color = get_trait(TRAIT_PRODUCT_COLOUR)
-					if(istype(product,/obj/item/weapon/reagent_containers/food))
-						var/obj/item/weapon/reagent_containers/food/food = product
-						food.filling_color = get_trait(TRAIT_PRODUCT_COLOUR)
+/datum/seed/proc/spawn_seed(var/turf/spawning_loc)
+	var/obj/item/product
+	if(has_mob_product)
+		product = new has_mob_product(spawning_loc,name)
+	else
+		product = new /obj/item/weapon/reagent_containers/food/snacks/grown(spawning_loc,name)
+	if(get_trait(TRAIT_PRODUCT_COLOUR))
+		if(!istype(product, /mob))
+			product.color = get_trait(TRAIT_PRODUCT_COLOUR)
+			if(istype(product,/obj/item/weapon/reagent_containers/food))
+				var/obj/item/weapon/reagent_containers/food/food = product
+				food.filling_color = get_trait(TRAIT_PRODUCT_COLOUR)
 
-			if(mysterious)
-				product.name += "?"
-				product.desc += " On second thought, something about this one looks strange."
+	if(mysterious)
+		product.name += "?"
+		product.desc += " On second thought, something about this one looks strange."
 
-			if(get_trait(TRAIT_BIOLUM))
-				var/clr
-				if(get_trait(TRAIT_BIOLUM_COLOUR))
-					clr = get_trait(TRAIT_BIOLUM_COLOUR)
-				product.set_light(0.5, 0.1, 3, l_color = clr)
+	if(get_trait(TRAIT_BIOLUM))
+		var/clr
+		if(get_trait(TRAIT_BIOLUM_COLOUR))
+			clr = get_trait(TRAIT_BIOLUM_COLOUR)
+		product.set_light(0.5, 0.1, 3, l_color = clr)
 
-			//Handle spawning in living, mobile products (like dionaea).
-			if(istype(product,/mob/living))
-				product.visible_message("<span class='notice'>The pod disgorges [product]!</span>")
-				handle_living_product(product)
-				if(istype(product,/mob/living/simple_animal/mushroom)) // Gross.
-					var/mob/living/simple_animal/mushroom/mush = product
-					mush.seed = src
+	//Handle spawning in living, mobile products (like dionaea).
+	if(istype(product,/mob/living))
+		product.visible_message("<span class='notice'>The pod disgorges [product]!</span>")
+		handle_living_product(product)
+		if(istype(product,/mob/living/simple_animal/mushroom)) // Gross.
+			var/mob/living/simple_animal/mushroom/mush = product
+			mush.seed = src
 
 // When the seed in this machine mutates/is modified, the tray seed value
 // is set to a new datum copied from the original. This datum won't actually
