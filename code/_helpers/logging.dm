@@ -1,5 +1,5 @@
 //wrapper macros for easier grepping
-//#define DIRECT_OUTPUT(A, B) A << B // we use RUST_G instead
+//#define DIRECT_OUTPUT(A, B) A << B // we use RUST_G instead of <<
 #define WRITE_FILE(file, text) rustg_log_write(file, text)
 
 
