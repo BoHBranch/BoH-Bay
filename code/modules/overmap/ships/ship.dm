@@ -8,17 +8,29 @@
 	else \
 		{speed_var = SANITIZE_SPEED((speed_var + v_diff)/(1 + speed_var*v_diff/(max_speed ** 2)))}
 // Uses Lorentzian dynamics to avoid going too fast.
+#define SENSOR_COEFFICENT 5000
 
 /obj/effect/overmap/visitable/ship
 	name = "generic ship"
 	desc = "Space faring vessel."
 	icon_state = "ship"
+	alpha = 255
+
+	var/contact_icon_state
+	var/class = "spacefaring vessel"
 	var/moving_state = "ship_moving"
+	var/transponder_active = FALSE //do we instantly identify ourselves to any ship?
+
+	var/sensor_visiblity //chance of showing up on sensors at all
+	var/base_sensor_visibility
+	var/identification_difficulty = 100 //How difficult are we to tick up identification on?
 
 	var/vessel_mass = 10000             //tonnes, arbitrary number, affects acceleration provided by engines
 	var/vessel_size = SHIP_SIZE_LARGE	//arbitrary number, affects how likely are we to evade meteors
 	var/max_speed = 1/(1 SECOND)        //"speed of light" for the ship, in turfs/tick.
 	var/min_speed = 1/(2 MINUTES)       // Below this, we round speed to 0 to avoid math errors.
+	var/list/linked_computers = list() //Linked computers, used for ease of communication between computers.
+	var/list/known_ships = list() //List of ships known at roundstart - put types here.
 
 	var/list/speed = list(0,0)          //speed in x,y direction
 	var/last_burn = 0                   //worldtime when ship last acceleated
@@ -35,14 +47,30 @@
 
 /obj/effect/overmap/visitable/ship/Initialize()
 	. = ..()
+	contact_icon_state = initial(icon_state)
+	icon_state = "blank"
 	min_speed = round(min_speed, SHIP_MOVE_RESOLUTION)
 	max_speed = round(max_speed, SHIP_MOVE_RESOLUTION)
 	SSshuttle.ships += src
 	START_PROCESSING(SSobj, src)
+	base_sensor_visibility = get_base_sensor_visibility()
 
 /obj/effect/overmap/visitable/ship/Destroy()
 	STOP_PROCESSING(SSobj, src)
 	SSshuttle.ships -= src
+
+	for(var/obj/machinery/computer/ship/console in linked_computers)
+		if(console.linked == src)
+			console.linked = null
+	linked_computers.Cut()
+
+	for(var/obj/machinery/computer/ship/sensors/console in SSmachines.machinery)
+		var/datum/overmap_contact/record = console.contact_datums[src]
+		if(record)
+			console.contact_datums[src] = null
+			console.contact_datums -= null
+			qdel(record)
+
 	. = ..()
 
 /obj/effect/overmap/visitable/ship/relaymove(mob/user, direction, accel_limit)
@@ -54,6 +82,8 @@
 
 /obj/effect/overmap/visitable/ship/get_scan_data(mob/user)
 	. = ..()
+	var/decl/ship_contact_class/class = decls_repository.get_decl(contact_class)
+	. += "<br>Class: [class.class_long], mass [vessel_mass] tons."
 	if(!is_still())
 		. += "<br>Heading: [dir2angle(get_heading())], speed [get_speed() * 1000]"
 
@@ -143,13 +173,14 @@
 			Move(newloc)
 			handle_wraparound()
 		update_icon()
+	sensor_visiblity = get_total_sensor_vis()
 
 /obj/effect/overmap/visitable/ship/on_update_icon()
 	if(!is_still())
-		icon_state = moving_state
+		contact_icon_state = moving_state
 		dir = get_heading()
 	else
-		icon_state = initial(icon_state)
+		contact_icon_state = initial(icon_state)
 
 /obj/effect/overmap/visitable/ship/proc/burn()
 	for(var/datum/ship_engine/E in engines)
@@ -222,6 +253,26 @@
 
 /obj/effect/overmap/visitable/ship/proc/get_landed_info()
 	return "This ship cannot land."
+
+/obj/effect/overmap/visitable/ship/proc/get_base_sensor_visibility()
+	var/sensor_vis
+
+	sensor_vis = round((vessel_mass/SENSOR_COEFFICENT),1)
+
+	return sensor_vis
+
+/obj/effect/overmap/visitable/ship/proc/get_engine_sensor_increase()
+	var/thrust_calc
+	for(var/datum/ship_engine/E in engines)
+		if(E.is_on())
+			thrust_calc += (E.get_thrust_limit() * 2)
+
+	return min(thrust_calc, 50) //Engines should never increase sensor visibility by more than 50.
+
+/obj/effect/overmap/visitable/ship/proc/get_total_sensor_vis()
+	var/new_sensor_vis = (base_sensor_visibility + get_engine_sensor_increase())
+
+	return min(new_sensor_vis, 100)
 
 #undef MOVING
 #undef SANITIZE_SPEED

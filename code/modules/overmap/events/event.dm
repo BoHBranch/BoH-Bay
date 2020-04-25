@@ -165,18 +165,21 @@
 /obj/effect/overmap/event
 	name = "event"
 	icon = 'icons/obj/overmap.dmi'
-	icon_state = "event"
+	icon_state = "blank"
 	opacity = 1
 	var/list/events
 	var/list/event_icon_states
 	var/difficulty = EVENT_LEVEL_MODERATE
 	var/weaknesses //if the BSA can destroy them and with what
 	var/list/victims //basically cached events on which Z level
+	var/list/colors = list() //Pick a color from this list on init
 
 /obj/effect/overmap/event/Initialize()
 	. = ..()
-	icon_state = pick(event_icon_states)
+	overmap_effect_state = pick(event_icon_states)
 	overmap_event_handler.update_hazards(loc)
+	if(LAZYLEN(colors))
+		color = pick(colors)
 
 /obj/effect/overmap/event/Move()
 	var/turf/old_loc = loc
@@ -203,6 +206,7 @@
 	event_icon_states = list("meteor1", "meteor2", "meteor3", "meteor4")
 	difficulty = EVENT_LEVEL_MAJOR
 	weaknesses = OVERMAP_WEAKNESS_MINING | OVERMAP_WEAKNESS_EXPLOSIVE
+	colors = list("#fc1100", "#b5251b", "#8a1007")
 
 /obj/effect/overmap/event/electric
 	name = "electrical storm"
@@ -211,12 +215,14 @@
 	event_icon_states = list("electrical1", "electrical2", "electrical3", "electrical4")
 	difficulty = EVENT_LEVEL_MAJOR
 	weaknesses = OVERMAP_WEAKNESS_EMP
+	colors = list("#f5ed0c", "#d9d323", "#faf450")
 
 /obj/effect/overmap/event/dust
 	name = "dust cloud"
 	events = list(/datum/event/dust)
 	event_icon_states = list("dust1", "dust2", "dust3", "dust4")
 	weaknesses = OVERMAP_WEAKNESS_MINING | OVERMAP_WEAKNESS_EXPLOSIVE | OVERMAP_WEAKNESS_FIRE
+	colors = list("#facd50", "#cc9d1d", "#cca027")
 
 /obj/effect/overmap/event/ion
 	name = "ion cloud"
@@ -225,6 +231,7 @@
 	event_icon_states = list("ion1", "ion2", "ion3", "ion4")
 	difficulty = EVENT_LEVEL_MAJOR
 	weaknesses = OVERMAP_WEAKNESS_EMP
+	colors = list("#02faee", "#34d1c9", "#0b807a")
 
 /obj/effect/overmap/event/carp
 	name = "carp shoal"
@@ -233,11 +240,13 @@
 	difficulty = EVENT_LEVEL_MODERATE
 	event_icon_states = list("carp1", "carp2")
 	weaknesses = OVERMAP_WEAKNESS_EXPLOSIVE | OVERMAP_WEAKNESS_FIRE
+	colors = list("#c25bc7", "#ea50f2", "#f67efc")
 
 /obj/effect/overmap/event/carp/major
 	name = "carp school"
 	difficulty = EVENT_LEVEL_MAJOR
 	event_icon_states = list("carp3", "carp4")
+	colors = list("#a709db", "#75039c", "#6b1e85")
 
 //These now are basically only used to spawn hazards. Will be useful when we need to spawn group of moving hazards
 /datum/overmap_event

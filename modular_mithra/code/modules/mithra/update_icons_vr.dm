@@ -42,6 +42,18 @@ var/global/list/wing_icon_cache = list()
 				tail_s.Blend(overlay, ICON_OVERLAY)
 				qdel(overlay)
 
+		if(tail_style.extra_overlay2)
+			var/icon/overlay = new/icon("icon" = tail_style.icon, "icon_state" = tail_style.extra_overlay2)
+			if(tail_style.ani_state)
+				overlay = new/icon("icon" = tail_style.icon, "icon_state" = tail_style.extra_overlay_w)
+				overlay.Blend(rgb(src.r_tail3, src.g_tail3, src.b_tail3), tail_style.color_blend_mode)
+				tail_s.Blend(overlay, ICON_OVERLAY)
+				qdel(overlay)
+			else
+				overlay.Blend(rgb(src.r_tail3, src.g_tail3, src.b_tail3), tail_style.color_blend_mode)
+				tail_s.Blend(overlay, ICON_OVERLAY)
+				qdel(overlay)
+
 		return image(tail_s)
 	return null
 
@@ -64,4 +76,29 @@ var/global/list/wing_icon_cache = list()
 		var/icon/wing_s = new/icon("icon" = wing_style.icon, "icon_state" = wing_style.icon_state)
 		if(wing_style.do_colouration)
 			wing_s.Blend(rgb(src.r_wing, src.g_wing, src.b_wing), wing_style.color_blend_mode)
+		if(wing_style.extra_overlay)
+			var/icon/overlay = new/icon("icon" = wing_style.icon, "icon_state" = wing_style.extra_overlay)
+			if(wing_style.ani_state)
+				overlay = new/icon("icon" = wing_style.icon, "icon_state" = wing_style.extra_overlay_w)
+				overlay.Blend(rgb(src.r_wing2, src.g_wing2, src.b_wing2), wing_style.color_blend_mode)
+				wing_s.Blend(overlay, ICON_OVERLAY)
+				qdel(overlay)
+			else
+				overlay.Blend(rgb(src.r_wing2, src.g_wing2, src.b_wing2), wing_style.color_blend_mode)
+				wing_s.Blend(overlay, ICON_OVERLAY)
+				qdel(overlay)
+
+		if(wing_style.extra_overlay2)
+			var/icon/overlay = new/icon("icon" = wing_style.icon, "icon_state" = wing_style.extra_overlay2)
+			if(wing_style.ani_state)
+				overlay = new/icon("icon" = wing_style.icon, "icon_state" = wing_style.extra_overlay_w)
+				overlay.Blend(rgb(src.r_wing3, src.g_wing3, src.b_wing3), wing_style.color_blend_mode)
+				wing_s.Blend(overlay, ICON_OVERLAY)
+				qdel(overlay)
+			else
+				overlay.Blend(rgb(src.r_wing3, src.g_wing3, src.b_wing3), wing_style.color_blend_mode)
+				wing_s.Blend(overlay, ICON_OVERLAY)
+				qdel(overlay)
+
+
 		return image(wing_s)

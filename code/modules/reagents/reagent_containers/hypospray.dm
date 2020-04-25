@@ -193,4 +193,24 @@
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/stim
 	name = "autoinjector (stims)"
 	band_color = COLOR_DARK_GRAY
-	reagents_to_add = list(/datum/reagent/tramadol/oxycodone = 10,/datum/reagent/inaprovaline = 5)
+	reagents_to_add = list(/datum/reagent/tramadol/oxycodone = 10, /datum/reagent/inaprovaline = 5)
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/zerk
+	name = "autoinjector (zerk)"
+	band_color = COLOR_RED
+	reagents_to_add = list(/datum/reagent/synaptizine = 3, /datum/reagent/hyperzine = 12)
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross
+	name = "autoinjector (HO7)"
+	band_color = COLOR_WHITE
+	reagents_to_add = list(/datum/reagent/hypeross = 3)
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon
+	name = "autoinjector (peri)"
+	band_color = COLOR_PINK
+	reagents_to_add = list(/datum/reagent/peridaxon = 10)
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine
+	name = "autoinjector (alky)"
+	band_color = COLOR_YELLOW
+	reagents_to_add = list(/datum/reagent/alkysine = 5)

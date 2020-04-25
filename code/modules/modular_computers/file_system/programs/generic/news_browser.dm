@@ -7,7 +7,7 @@
 	program_menu_icon = "contact"
 	size = 4
 	requires_ntnet = 1
-	available_on_ntnet = 1
+	available_on_ntnet = 0
 
 	nanomodule_path = /datum/nano_module/program/computer_newsbrowser/
 	var/datum/computer_file/data/news_article/loaded_article
