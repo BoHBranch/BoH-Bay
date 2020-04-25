@@ -18,18 +18,19 @@
 		/datum/unarmed_attack/bite/strong
 	)
 	rarity_value = 4
-	description = "The Vox are the broken remnants of a once-proud race, now reduced to little more than \
-	scavenging vermin who prey on isolated stations, ships or planets to keep their own ancient arkships \
-	alive. They are four to five feet tall, reptillian, beaked, tailed and quilled; human crews often \
-	refer to them as 'shitbirds' for their violent and offensive nature, as well as their horrible \
-	smell. \
-	<br/><br/> \
-	Most humans will never meet a Vox raider, instead learning of this insular species through \
-	dealing with their traders and merchants; those that do rarely enjoy the experience."
-	codex_description = "The Vox are a hostile, deeply untrustworthy species from the edges of human space. They prey \
-	on isolated stations, ships or settlements without any apparent logic or reason, and tend to refuse communications \
-	or negotiations except when their backs are to the wall or they are in dire need of resources. They are four to five \
-	feet tall, reptillian, beaked, tailed and quilled."
+	description = "The Vox are a people most ancient, each one having existed well before the evolution of\
+	humanity, led by the Auralis to guide the galaxy to a glorious evolution. Since the fall of the empire\
+	and the disappearance of the Auralis, the Vox have struggled to reclaim their lost influence and territory.\
+	Maintaining their remaining Arks are the revered Apex and their talons, the Ark-Admirals, and the Quill-Captains\
+	fielded under their command.</BR></BR>\
+	From battleship to corvette, Scavenger to Biotechnician, recent demand for action has seen new fleets formed\
+	and territory claimed by the long-dormant nation.</BR></BR>\
+	The Vox are a proud people, and face much distrust from the galactic community, but this does not seem to deter them."
+	codex_description = "The Vox are a cautious, defensive species from the outer systems and beyond human space. They\
+	reveal little to the outside world, but are known to trade and cooperate with those they find trustworthy. When\
+	insulted or betrayed, Vox are quick to defend the honor of their kin and ensure it is known they are not to be trifled\
+	with. They are commonly four to five feet tall, with sectioned-beaks and long scaled tails. They commonly decorate their\
+	head-quills for noteworthy events or individuals."
 	hidden_from_codex = FALSE
 
 	taste_sensitivity = TASTE_DULL
@@ -55,7 +56,7 @@
 
 	species_flags = SPECIES_FLAG_NO_SCAN
 	spawn_flags = SPECIES_CAN_JOIN // | SPECIES_IS_WHITELISTED
-	appearance_flags = HAS_EYE_COLOR | HAS_HAIR_COLOR | HAS_SKIN_COLOR
+	appearance_flags = HAS_EYE_COLOR | HAS_HAIR_COLOR
 
 	blood_color = "#2299fc"
 	flesh_color = "#808d11"
@@ -140,7 +141,7 @@
 
 	slowdown = 1.5
 	hidden_from_codex = TRUE
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_FLAG_NO_MINOR_CUT
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_FLAG_NO_MINOR_CUT | SPECIES_IS_WHITELISTED
 	brute_mod = 0.5
 	burn_mod = 0.5
 	strength = STR_HIGH
