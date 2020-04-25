@@ -61,6 +61,9 @@
 	..(newloc, MATERIAL_GLASS, MATERIAL_STEEL)
 	icon_state = "r_generic"
 
+/turf/simulated/wall/glass/New(var/newloc)
+	..(newloc, MATERIAL_GLASS)
+
 /turf/simulated/wall/iron/New(var/newloc)
 	..(newloc,MATERIAL_IRON)
 

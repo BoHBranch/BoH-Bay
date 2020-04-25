@@ -20,6 +20,7 @@
 /  =--------------------=  /
 ////////////////////////////
 */
+
 /datum/sprite_accessory/ears
 	name = "You should not see this..."
 	icon = 'modular_mithra/icons/mob/ears.dmi'
@@ -28,6 +29,7 @@
 	var/color_blend_mode = ICON_ADD // Only appliciable if do_coloration = 1
 	var/extra_overlay // Icon state of an additional overlay to blend in.
 	var/desc = "You should not see this..."
+
 
 // Ears avaliable to anyone
 
@@ -43,24 +45,24 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
-	/datum/sprite_accessory/ears/m_ipc_antenna_synth_horns_ADJ
-	name = "Synth horns"
+/datum/sprite_accessory/ears/m_ipc_antenna_synth_horns_ADJ
+	name = "Synth horns, plain"
 	desc = ""
 	icon_state = "m_ipc_antenna_synth_horns_ADJ"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "m_ipc_antenna_synth_hornslight_ADJ"
 
-	/datum/sprite_accessory/ears/m_ipc_antenna_synth_thick_ADJ
-	name = "Synth horns thick"
+/datum/sprite_accessory/ears/m_ipc_antenna_synth_thick_ADJ
+	name = "Synth horns, thick"
 	desc = ""
 	icon_state = "m_ipc_antenna_synth_thick_ADJ"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "m_ipc_antenna_synth_thicklight_ADJ"
 
-	/datum/sprite_accessory/ears/m_ipc_antenna_synth_curled_ADJ
-	name = "Synth horns curly"
+/datum/sprite_accessory/ears/m_ipc_antenna_synth_curled_ADJ
+	name = "Synth horns, curly"
 	desc = ""
 	icon_state = "m_ipc_antenna_synth_curled_ADJ"
 	do_colouration = 1
@@ -420,6 +422,7 @@
 /  =--------------------=  /
 ////////////////////////////
 */
+
 /datum/sprite_accessory/wing
 	name = "You should not see this..."
 	icon = 'modular_mithra/icons/mob/wings.dmi'
@@ -433,6 +436,7 @@
 	var/desc = "You should not see this..."
 	var/ani_state // State when flapping/animated
 	var/extra_overlay_w // Flapping state for extra overlay
+
 
 /datum/sprite_accessory/wing/none //Temp fix.
 	name = "NONE"
@@ -584,6 +588,7 @@
 /  =--------------------=  /
 ////////////////////////////
 */
+
 /datum/sprite_accessory/tail
 	name = "You should not see this..."
 	icon = 'modular_mithra/icons/mob/tails.dmi'
@@ -598,20 +603,11 @@
 	var/ani_state // State when wagging/animated
 	var/extra_overlay_w // Wagging state for extra overlay
 
+
 /datum/sprite_accessory/tail/invisible
 	name = "hide species-sprite tail"
 	icon = null
 	icon_state = null
-
-/datum/sprite_accessory/tail/squirrel_orange
-	name = "squirel, orange"
-	desc = ""
-	icon_state = "squirrel-orange"
-
-/datum/sprite_accessory/tail/squirrel_red
-	name = "squirrel, red"
-	desc = ""
-	icon_state = "squirrel-red"
 
 /datum/sprite_accessory/tail/squirrel
 	name = "squirrel, colorable"
@@ -1145,14 +1141,14 @@
 	desc = ""
 	icon_state = "Neckfur"
 	do_colouration = 1
-	blend = ICON_MULTIPLY
+	color_blend_mode = ICON_MULTIPLY
 
 /datum/sprite_accessory/wing/Moth_royal_colorable
 	name = "moth royal, colorable"
 	desc = ""
 	icon_state = "Moth_royal_colorable"
 	do_colouration = 1
-	blend = ICON_MULTIPLY
+	color_blend_mode = ICON_MULTIPLY
 
 //Taurs moved to a separate file due to extra code around them
 
@@ -1412,6 +1408,8 @@
 	extra_overlay = "buggofirefly_vass_markings"
 	extra_overlay_w = "buggofatfirefly_vass_markings"
 
+//So many bugs.
+
 /datum/sprite_accessory/tail/tail_smooth
 	name = "Smooth Lizard Tail, Colorable"
 	desc = ""
@@ -1485,7 +1483,7 @@
 	name = "Raccoon gray tail"
 	desc = ""
 	icon_state = "raccoon_tail"
-	do_colouration = 0
+	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
 /datum/sprite_accessory/tail/Easterntail
@@ -1498,32 +1496,61 @@
 	ani_state = "Easterntail_w"
 	extra_overlay_w = "EasterntailColorTip_w"
 
-/datum/sprite_accessory/tail/m_tail_synthliz_BEHIND
-	name = "Synthetic Lizard tail"
+/datum/sprite_accessory/tail/m_tail_synthliz_BEHINDstatic
+	name = "Synthetic lizard tail"
 	desc = ""
 	icon_state = "m_tail_synthliz_BEHIND"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
 /datum/sprite_accessory/tail/m_tail_synthliz_BEHIND
-	name = "Synthetic Lizard tail (Animated)"
+	name = "Synthetic lizard tail, animated"
 	desc = ""
 	icon_state = "m_tail_synthliz_BEHIND"
 	ani_state = "m_tailwag_synthliz_BEHIND"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
-/datum/sprite_accessory/tail/m_tail_vox_BEHIND
-	name = "Vox tail (Animated)"
+/datum/sprite_accessory/tail/Plugtail
+	name = "Synthetic plug tail"
 	desc = ""
-	icon_state = "m_tail_vox_BEHIND"
-	ani_state = "m_tailwag_synthliz_BEHIND"
+	icon_state = "Plugtail"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "PlugtailMarking"
+	extra_overlay2 = "PlugtailMarking2"
+
+/datum/sprite_accessory/tail/Segmentedtail
+	name = "Segmented tail, animated"
+	desc = ""
+	icon_state = "Segmentedtail"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "Segmentedtailmarking"
+	ani_state = "Segmentedtail_w"
+	extra_overlay_w = "Segmentedtailmarking_w"
+
+
+/datum/sprite_accessory/tail/Segmentedlights
+	name = "Segmented tail, animated synth"
+	desc = ""
+	icon_state = "Segmentedtail"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "Segmentedlights"
+	ani_state = "Segmentedtail_w"
+	extra_overlay_w = "Segmentedlights_w"
+
+/datum/sprite_accessory/tail/fox_tail_s
+	name = "Fox tail"
+	desc = ""
+	icon_state = "fox_tail_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
-/datum/sprite_accessory/tail/m_tail_vox_BEHIND
-	name = "Vox tail"
+/datum/sprite_accessory/tail/fennec_tail_s
+	name = "Fennec tail"
 	desc = ""
-	icon_state = "m_tail_vox_BEHIND"
+	icon_state = "fennec_tail_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
