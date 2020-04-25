@@ -23,10 +23,11 @@
 		tally += chem_effects[CE_SLOWDOWN]
 
 	var/health_deficiency = (maxHealth - health)
-	if(health_deficiency >= 40) tally += (health_deficiency / 25)
+	if(health_deficiency >= 50) tally += (health_deficiency / 30)
 
 	if(can_feel_pain())
-		if(get_shock() >= 10) tally += (get_shock() / 10) //pain shouldn't slow you down if you can't even feel it
+		if(get_shock() >= 20)
+			tally += (get_shock() / 20) //pain shouldn't slow you down if you can't even feel it
 
 	if(istype(buckled, /obj/structure/bed/chair/wheelchair))
 		for(var/organ_name in list(BP_L_HAND, BP_R_HAND, BP_L_ARM, BP_R_ARM))
@@ -55,8 +56,8 @@
 			var/obj/item/organ/external/E = get_organ(organ_name)
 			tally += E ? E.movement_delay(4) : 4
 
-	if(shock_stage >= 10 || get_stamina() <= 0)
-		tally += 3
+	if(get_stamina() <= 0)
+		tally += 2
 
 	if(is_asystole()) tally += 10  //heart attacks are kinda distracting
 
@@ -136,6 +137,10 @@
 	if(.) //We moved
 		handle_exertion()
 		handle_leg_damage()
+	
+		if(client)
+			var/turf/B = GetAbove(src)
+			up_hint.icon_state = "uphint[(B ? B.is_open() : 0)]"
 
 /mob/living/carbon/human/proc/handle_exertion()
 	if(isSynthetic())

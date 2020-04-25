@@ -45,3 +45,27 @@
 	desc = "An autoinjector containing multiple chems to keep someone alive. At least until combat is over, anyhow."
 	item_cost = 3
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/stim
+
+/datum/uplink_item/item/medical/zerk
+	name = "Zerk"
+	desc = "An autoinjector containing a powerful blend of toxic, combat-enhancing drugs. Comes with three doses - or one if you don't plan to come back."
+	item_cost = 5
+	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/zerk
+
+/datum/uplink_item/item/medical/hypeross
+	name = "Hypeross-7"
+	desc = "An autoinjector containing a secretive compound capable of rapidly repairing broken bones. Do not use more than one."
+	item_cost = 4
+	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross
+
+/datum/uplink_item/item/medical/peridaxon
+	name = "Peridaxon"
+	desc = "An autoinjector containing an emergency dose of peridaxon - a potent organ-mending medicine."
+	item_cost = 3
+	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/peridaxon
+
+/datum/uplink_item/item/medical/alkysine
+	name = "Alkysine"
+	desc = "An autoinjector containing alkysine - a slow-acting drug capable of reversing brain damage. A very simple, cartoonish diagram on the uplink ensures you'll have no trouble with this device."
+	item_cost = 2
+	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine

@@ -165,6 +165,7 @@ var/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 			CULTURE_HUMAN_SPAFRO,
 			CULTURE_HUMAN_CONFED,
 			CULTURE_HUMAN_OTHER,
+			CULTURE_SYMBIOTIC,
 			CULTURE_OTHER
 		),
 		TAG_RELIGION = list(
