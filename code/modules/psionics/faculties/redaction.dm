@@ -118,7 +118,7 @@
 /decl/psionic_power/redaction/cleanse
 	name =            "Cleanse"
 	cost =            9
-	cooldown =        60
+	cooldown =        50
 	use_melee =       TRUE
 	min_rank =        PSI_RANK_GRANDMASTER
 	use_description = "Target a patient while on help intent at melee range to cleanse radiation and genetic damage from a patient."
@@ -150,7 +150,7 @@
 /decl/psionic_power/revive
 	name =            "Revive"
 	cost =            25
-	cooldown =        80
+	cooldown =        100
 	use_grab =        TRUE
 	min_rank =        PSI_RANK_PARAMOUNT
 	faculty =         PSI_REDACTION
