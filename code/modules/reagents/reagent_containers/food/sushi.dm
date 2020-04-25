@@ -38,7 +38,7 @@
 
 	if(istype(rice))
 		if(rice.reagents)
-			rice.reagents.trans_to(src, 1)
+			rice.reagents.trans_to(src, 5)
 		if(!rice.reagents || !rice.reagents.total_volume)
 			var/mob/M = rice.loc
 			if(istype(M)) M.drop_from_inventory(rice)

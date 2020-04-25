@@ -21,6 +21,7 @@
 	vessel_mass = 60
 	max_speed = 1/(10 SECONDS)
 	burn_delay = 10 SECONDS
+	contact_class = /decl/ship_contact_class/ship
 	initial_generic_waypoints = list(
 		"nav_bearcat_fore",
 		"nav_bearcat_aft"

@@ -6,6 +6,7 @@
 	desc = "Sensors detect an undamaged vessel without any signs of activity."
 	color = "#bd6100"
 	vessel_mass = 5000
+	contact_class = /decl/ship_contact_class/ship
 	max_speed = 1/(2 SECONDS)
 	burn_delay = 1 SECOND
 	initial_generic_waypoints = list(
