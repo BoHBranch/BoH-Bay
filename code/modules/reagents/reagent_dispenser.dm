@@ -335,3 +335,15 @@
 	amount_per_transfer_from_this = 10
 	anchored = 1
 	initial_reagent_types = list(/datum/reagent/acid = 1)
+
+//Cooking oil tank
+/obj/structure/reagent_dispensers/cookingoil
+	name = "cooking oil tank"
+	desc = "A fifty-litre tank of commercial-grade corn oil, intended for use in large scale deep fryers. Store in a cool, dark place"
+	icon_state = "oiltank"
+	initial_capacity = 5000
+	initial_reagent_types = list(/datum/reagent/nutriment/triglyceride/oil/corn = 1)
+
+/obj/structure/reagent_dispensers/cookingoil/bullet_act(var/obj/item/projectile/Proj)
+	if(Proj.get_structure_damage())
+		ex_act(2.0)

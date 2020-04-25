@@ -24,6 +24,29 @@
 	//Used to stop deepfried meat from looking like slightly tanned raw meat, and make it actually look cooked
 	center_of_mass = "x=16;y=16"
 	w_class = ITEM_SIZE_SMALL
+	
+	var/has_products = FALSE
+	var/list/attack_products //Items you can craft together. Like bomb making, but with food and less screwdrivers.
+	// Uses format list(ingredient = result_type). The ingredient can be a typepath or a kitchen_tag string (used for mobs or plants)
+	var/static/products_cache = list()
+// Used to make subtypes work properly
+/obj/item/weapon/reagent_containers/food/snacks/Initialize()
+	. = ..()
+	if(!(type in products_cache))
+		if(!has_products || !LAZYLEN(attack_products))
+			return
+		var/list/new_attack_products = attack_products.Copy()
+		for(var/ancestor_type in attack_products)
+			if(!ispath(ancestor_type))
+				continue
+			for(var/subtype in subtypesof(ancestor_type))
+				if(subtype in new_attack_products)
+					continue // if we bar specific ones, don't readd them
+				new_attack_products[subtype] = attack_products[ancestor_type]
+		attack_products = new_attack_products
+		products_cache[type] = new_attack_products
+	else
+		attack_products = products_cache[type]
 
 	//Placeholder for effect that trigger on eating that aren't tied to reagents.
 /obj/item/weapon/reagent_containers/food/snacks/proc/On_Consume(var/mob/M)
@@ -194,6 +217,39 @@
 				reagents.trans_to_obj(slice, reagents_per_slice)
 			qdel(src)
 			return
+			
+	if(!LAZYLEN(attack_products))
+		return
+	var/create_type
+	if(W.type in attack_products)
+		create_type = attack_products[W.type]
+
+	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/variable/mob))
+		var/obj/item/weapon/reagent_containers/food/snacks/variable/mob/MF = W
+		if(MF.kitchen_tag && (MF.kitchen_tag in attack_products))
+			create_type = attack_products[MF.kitchen_tag]
+
+	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/grown))
+		var/obj/item/weapon/reagent_containers/food/snacks/grown/G = W
+		if(G.seed.kitchen_tag && (G.seed.kitchen_tag in attack_products))
+			create_type = attack_products[G.seed.kitchen_tag]
+
+	if (create_type)
+		var/obj/item/weapon/reagent_containers/food/snacks/result = new create_type(src)
+		if (W.reagents)
+			//Reagents of result objects will be the sum total of both.  Except in special cases where nonfood items are used
+			//Eg robot head
+			W.reagents.trans_to(result, W.reagents.total_volume)
+			reagents.trans_to(result, reagents.total_volume)
+
+		//If the snack was in your hands, the result will be too
+		if (loc == user)
+			user.drop_from_inventory(src)
+			user.put_in_hands(result)
+
+		qdel(W)
+		qdel(src)
+		to_chat(user, SPAN_NOTICE("You make \a [result]!"))
 
 /obj/item/weapon/reagent_containers/food/snacks/proc/is_sliceable()
 	return (slices_num && slice_path && slices_num > 0)
@@ -241,7 +297,7 @@
 		to_chat(user, span("warning", "There's not enough [C.name] to coat the [src]!"))
 		return 0
 
-	var/id = C.id
+	var/Rtype = C.type
 
 	//First make sure there's space for our batter
 	if (reagents.get_free_space() < req+5)
@@ -252,7 +308,7 @@
 	C.holder.trans_to_holder(reagents, req)
 
 	//We're done with C now, repurpose the var to hold a reference to our local instance of it
-	C = reagents.get_reagent(id)
+	C = reagents.get_reagent(Rtype)
 	if (!C)
 		return
 
@@ -703,6 +759,8 @@
 	center_of_mass = "x=16;y=11"
 	bitesize = 2
 	reagents_to_add = list(/datum/reagent/nutriment/protein = 6)
+	has_products = TRUE
+	attack_products = list(/obj/item/weapon/reagent_containers/food/snacks/cheesewedge = /obj/item/weapon/reagent_containers/food/snacks/cheeseburger)
 
 /obj/item/weapon/reagent_containers/food/snacks/cheeseburger
 	name = "cheeseburger"
@@ -722,6 +780,11 @@
 	reagent_data = list(/datum/reagent/nutriment = list("bun" = 2))
 	reagents_to_add = list(/datum/reagent/nutriment = 3, /datum/reagent/nutriment/protein = 4)
 	bitesize = 2
+	has_products = TRUE
+	attack_products = list(
+		/obj/item/weapon/reagent_containers/food/snacks/cheesewedge = /obj/item/weapon/reagent_containers/food/snacks/cheeseburger,
+		/obj/item/weapon/reagent_containers/food/snacks/bacon = /obj/item/weapon/reagent_containers/food/snacks/baconburger
+	)
 
 /obj/item/weapon/reagent_containers/food/snacks/fishburger
 	name = "fish sandwich"
@@ -1586,6 +1649,11 @@
 	reagent_data = list(/datum/reagent/nutriment = list("noodles" = 2))
 	reagents_to_add = list(/datum/reagent/nutriment = 2)
 	bitesize = 2
+	has_products = TRUE
+	attack_products = list(
+		/obj/item/weapon/reagent_containers/food/snacks/meatball = /obj/item/weapon/reagent_containers/food/snacks/meatballspagetti,
+		"tomato" = /obj/item/weapon/reagent_containers/food/snacks/pastatomato
+	)
 
 /obj/item/weapon/reagent_containers/food/snacks/boiledrice
 	name = "boiled rice"
@@ -1659,6 +1727,8 @@
 	reagent_data = list(/datum/reagent/nutriment = list("noodles" = 4))
 	reagents_to_add = list(/datum/reagent/nutriment = 4, /datum/reagent/nutriment/protein = 4)
 	bitesize = 2
+	has_products = TRUE
+	attack_products = list(/obj/item/weapon/reagent_containers/food/snacks/meatball = /obj/item/weapon/reagent_containers/food/snacks/spesslaw)
 
 /obj/item/weapon/reagent_containers/food/snacks/spesslaw
 	name = "\improper Spesslaw"
@@ -2702,110 +2772,15 @@
 	center_of_mass = "x=16;y=12"
 	reagent_data = list(/datum/reagent/nutriment = list("bun" = 4))
 	reagents_to_add = list(/datum/reagent/nutriment = 4)
-
-//Items you can craft together. Like bomb making, but with food and less screwdrivers.
-
-/obj/item/weapon/reagent_containers/food/snacks/bun/attackby(obj/item/weapon/W as obj, mob/user as mob)
-	var/obj/item/weapon/reagent_containers/food/snacks/result
-	// bun + meatball/cutlet = hamburger
-	if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/cutlet) || istype(W,/obj/item/weapon/reagent_containers/food/snacks/meatball))
-		result = new /obj/item/weapon/reagent_containers/food/snacks/hamburger(loc)
-
-	// bun + sausage = hotdog
-	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/sausage))
-		result = new /obj/item/weapon/reagent_containers/food/snacks/hotdog(loc)
-
-	else if(istype(W, /obj/item/weapon/reagent_containers/food/snacks/bearmeat))
-		result = new /obj/item/weapon/reagent_containers/food/snacks/bearburger(loc)
-
-	// Bun + mouse = mouseburger
-	else if(istype(W,/obj/item/weapon/reagent_containers/food/snacks/variable/mob))
-		var/obj/item/weapon/reagent_containers/food/snacks/variable/mob/MF = W
-
-		switch (MF.kitchen_tag)
-			if ("rodent")
-				result = new /obj/item/weapon/reagent_containers/food/snacks/mouseburger(src)
-
-		switch (MF.kitchen_tag)
-			if ("lizard")
-				result = new /obj/item/weapon/reagent_containers/food/snacks/mouseburger(src)
-
-	if (result)
-		if (W.reagents)
-			//Reagents of reuslt objects will be the sum total of both.  Except in special cases where nonfood items are used
-			//Eg robot head
-			W.reagents.trans_to(result, W.reagents.total_volume)
-			reagents.trans_to(result, reagents.total_volume)
-
-		//If the bun was in your hands, the result will be too
-		if (loc == user)
-			user.drop_from_inventory(src)
-			user.put_in_hands(result)
-
-		qdel(W)
-		qdel(src)
-		to_chat(user, SPAN_NOTICE("You make \a [result]!"))
-
-// Hamburger + cheese wedge = cheeseburger
-/obj/item/weapon/reagent_containers/food/snacks/hamburger/attackby(obj/item/weapon/reagent_containers/food/snacks/W as obj, mob/user as mob)
-	var/obj/item/weapon/reagent_containers/food/snacks/result
-	if(istype(W, /obj/item/weapon/reagent_containers/food/snacks/cheesewedge))// && !istype(src,/obj/item/weapon/reagent_containers/food/snacks/cheesewedge))
-		result = new /obj/item/weapon/reagent_containers/food/snacks/cheeseburger(loc)
-	if(istype(W, /obj/item/weapon/reagent_containers/food/snacks/bacon))
-		result = new /obj/item/weapon/reagent_containers/food/snacks/baconburger(loc)
-	else
-		return ..()
-	to_chat(user, SPAN_NOTICE("You make [result]."))
-	if (loc == user)
-		user.drop_from_inventory(src)
-		user.put_in_hands(result)
-	qdel(W)
-	qdel(src)
-
-// Human burger + cheese wedge = cheeseburger
-/obj/item/weapon/reagent_containers/food/snacks/human/burger/attackby(obj/item/weapon/reagent_containers/food/snacks/cheesewedge/W as obj, mob/user as mob)
-	if(istype(W))
-		new /obj/item/weapon/reagent_containers/food/snacks/cheeseburger(src)
-		to_chat(user, "You make a cheeseburger.")
-		qdel(W)
-		qdel(src)
-		return
-	else
-		..()
-
-// Spaghetti + meatball = spaghetti with meatball(s)
-/obj/item/weapon/reagent_containers/food/snacks/boiledspagetti/attackby(obj/item/weapon/reagent_containers/food/snacks/meatball/W as obj, mob/user as mob)
-	if(istype(W))
-		new /obj/item/weapon/reagent_containers/food/snacks/meatballspagetti(src)
-		to_chat(user, "You add some meatballs to the spaghetti.")
-		qdel(W)
-		qdel(src)
-		return
-	else
-		..()
-
-// Spaghetti with meatballs + meatball = spaghetti with more meatball(s)
-/obj/item/weapon/reagent_containers/food/snacks/meatballspagetti/attackby(obj/item/weapon/reagent_containers/food/snacks/meatball/W as obj, mob/user as mob)
-	if(istype(W))
-		new /obj/item/weapon/reagent_containers/food/snacks/spesslaw(src)
-		to_chat(user, "You add some more meatballs to the spaghetti.")
-		qdel(W)
-		qdel(src)
-		return
-	else
-		..()
-
-// Spaghetti + tomato = tomato'd spaghetti
-obj/item/weapon/reagent_containers/food/snacks/spagetti/attackby(obj/item/weapon/reagent_containers/food/snacks/grown/W, mob/user)
-	if(!istype(W))
-		return ..()
-	var/obj/item/weapon/reagent_containers/food/snacks/grown/G = W
-	if(G.seed.kitchen_tag != "tomato")
-		return ..()
-	new /obj/item/weapon/reagent_containers/food/snacks/pastatomato(src)
-	to_chat(user, "You add some more meatballs to the spaghetti.")
-	qdel(W)
-	qdel(src)
+	has_products = TRUE
+	attack_products = list(
+		/obj/item/weapon/reagent_containers/food/snacks/cutlet = /obj/item/weapon/reagent_containers/food/snacks/hamburger,
+		/obj/item/weapon/reagent_containers/food/snacks/meatball = /obj/item/weapon/reagent_containers/food/snacks/hamburger,
+		/obj/item/weapon/reagent_containers/food/snacks/sausage = /obj/item/weapon/reagent_containers/food/snacks/hotdog,
+		/obj/item/weapon/reagent_containers/food/snacks/bearmeat = /obj/item/weapon/reagent_containers/food/snacks/bearburger,
+		"rodent" = /obj/item/weapon/reagent_containers/food/snacks/mouseburger,
+		"lizard" = /obj/item/weapon/reagent_containers/food/snacks/lizardburger
+	)
 
 /obj/item/weapon/reagent_containers/food/snacks/bunbun
 	name = "\improper Bun Bun"
