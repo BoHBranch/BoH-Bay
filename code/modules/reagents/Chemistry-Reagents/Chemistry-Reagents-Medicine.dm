@@ -48,7 +48,7 @@
 		M.add_chemical_effect(CE_BLOCKAGE, (15 + volume - overdose)/100)
 		var/mob/living/carbon/human/H = M
 		for(var/obj/item/organ/external/E in H.organs)
-			if(E.status & ORGAN_ARTERY_CUT && prob(2))
+			if(E.status & ORGAN_ARTERY_CUT && prob(4))
 				E.status &= ~ORGAN_ARTERY_CUT
 
 /datum/reagent/kelotane
@@ -1027,3 +1027,63 @@
 	..()
 	M.add_chemical_effect(CE_TOXIN, 1)
 	M.immunity -= 0.5 //inverse effects when abused
+
+
+//Antag Agents
+/datum/reagent/hypeross
+	name = "Hypeross-7"
+	description = "A complex, alien compound that stimulates rapid bone growth."
+	taste_description = "spoiled milk"
+	reagent_state = LIQUID
+	color = "#990033"
+	overdose = 5
+	value = 50
+
+/datum/reagent/hypeross/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+	if(ishuman(M) && M.chem_doses[type] >= 2)
+		M.add_chemical_effect(CE_SLOWDOWN, 2)
+		M.make_dizzy(10)
+		M.heal_organ_damage(2 * removed, 0)
+		M.add_chemical_effect(CE_PAINKILLER, 20)
+		var/mob/living/carbon/human/H = M
+		var/in_progress = 0
+		var/fix_delay = 300
+		for(var/obj/item/organ/external/E in H.organs)
+			if((E.status & ORGAN_BROKEN || E.is_stump()) && in_progress == 0 && !(BP_IS_ROBOTIC(E)))
+				in_progress = 1
+				to_chat(H, "<span class='notice'>You feel the jarring sensation of invisible hands forcing your [E.name] back together.</span>")
+				H.make_dizzy(10)
+				sleep(fix_delay)
+				if(E.status || E.is_stump())
+					to_chat(H, "<span class='notice'><font size = [rand(1,3)]>POP!</font></span>")
+					playsound(H.loc, "fracture", 30, 1, -2)
+					if(E.is_stump() && (E.limb_flags & ORGAN_FLAG_CAN_AMPUTATE))
+						E.droplimb(1,DROPLIMB_EDGE)
+					else
+						E.status &= ~ORGAN_BROKEN
+				in_progress = 0
+
+/datum/reagent/hypeross/overdose(var/mob/living/carbon/M, var/alien)
+	..()
+	M.take_organ_damage(volume/2, 0)
+	M.add_chemical_effect(CE_SLOWDOWN, 2)
+	M.drowsyness = max(M.drowsyness - 5, 0)
+	M.AdjustParalysis(-2) //we're going to be awake for most of this
+	M.make_jittery(3)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		for(var/obj/item/organ/external/E in H.organs)
+			if(prob(1) && !(BP_IS_ROBOTIC(E)))
+				if(prob(75))
+					var/S = new /obj/item/weapon/material/shard(material_key = MATERIAL_BONE_GENERIC)
+					E.embed(S)
+					H.visible_message(
+						"<span class='danger'>A shard of bone breaks out of [H]'s [E.name]!</span>",
+						"<span class='danger'>You feel something tearing out of your [E.name]!</span>"
+						)
+				else
+					var/BS = new /obj/item/weapon/material/shard/shrapnel(material_key = MATERIAL_BONE_GENERIC)
+					E.embed(BS, silent = 1)
+					to_chat(H, "<span class='warning'>You feel something break loose inside your [E.name].</span>")

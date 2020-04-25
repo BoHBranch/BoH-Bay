@@ -56,7 +56,6 @@
 	display_name = "NTSS Dagon mission patch"
 	path = /obj/item/clothing/accessory/solgov/torch_patch
 	description = "A shoulder patch representing the NTSS Dagon and its mission. Given to all the oddjobs pulled from various branches to work on the Dagon."
-	flags = GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/accessory/pilot_pin
 	display_name = "pilot's qualification pin"
