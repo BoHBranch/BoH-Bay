@@ -4,6 +4,8 @@
 	#include "../../code/datums/music_tracks/businessend.dm"
 	#include "../../code/datums/music_tracks/salutjohn.dm"
 
+	#include "../away/unishi/unishi.dm"
+
 	#include "bearcat_areas.dm"
 	#include "bearcat_jobs.dm"
 	#include "bearcat_lobby.dm"

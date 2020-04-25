@@ -1,3 +1,4 @@
+
 /obj/machinery/computer/ship/sensors
 	name = "sensors console"
 	icon_keyboard = "teleport_key"
@@ -5,6 +6,9 @@
 	light_color = "#77fff8"
 	extra_view = 4
 	var/obj/machinery/shipsensors/sensors
+	var/working_sound = 'sound/machines/sensors/dradis.ogg'
+	var/datum/sound_token/sound_token
+	var/sound_id
 
 /obj/machinery/computer/ship/sensors/attempt_hook_up(obj/effect/overmap/visitable/ship/sector)
 	if(!(. = ..()))
@@ -18,6 +22,19 @@
 		if(linked.check_ownership(S))
 			sensors = S
 			break
+
+/obj/machinery/computer/ship/sensors/proc/update_sound()
+	if(!working_sound)
+		return
+	if(!sound_id)
+		sound_id = "[type]_[sequential_id(/obj/machinery/computer/ship/sensors)]"
+	if(linked && sensors.use_power ** sensors.powered())
+		var/volume = 10
+		if(!sound_token)
+			sound_token = GLOB.sound_player.PlayLoopingSound(src, sound_id, working_sound, volume = volume, range = 10)
+		sound_token.SetVolume(volume)
+	else if(sound_token)
+		QDEL_NULL(sound_token)
 
 /obj/machinery/computer/ship/sensors/ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = 1)
 	if(!linked)
@@ -44,6 +61,7 @@
 			data["status"] = "OK"
 		var/list/contacts = list()
 		for(var/obj/effect/overmap/O in view(7,linked))
+			var/datum/overmap_contact/record
 			if(linked == O)
 				continue
 			if(!O.scannable)
@@ -51,6 +69,11 @@
 			var/bearing = round(90 - Atan2(O.x - linked.x, O.y - linked.y),5)
 			if(bearing < 0)
 				bearing += 360
+			for(var/key in contact_datums)
+				record = contact_datums[O]
+			if(record)
+				if(!record.identified)
+					continue
 			contacts.Add(list(list("name"=O.name, "ref"="\ref[O]", "bearing"=bearing)))
 		if(contacts.len)
 			data["contacts"] = contacts
@@ -100,16 +123,6 @@
 			playsound(loc, "sound/machines/dotprinter.ogg", 30, 1)
 			new/obj/item/weapon/paper/(get_turf(src), O.get_scan_data(user), "paper (Sensor Scan - [O])")
 		return TOPIC_HANDLED
-
-/obj/machinery/computer/ship/sensors/Process()
-	..()
-	if(!linked)
-		return
-	if(sensors && sensors.use_power && sensors.powered())
-		var/sensor_range = round(sensors.range*1.5) + 1
-		linked.set_light(1, sensor_range, sensor_range+1)
-	else
-		linked.set_light(0)
 
 /obj/machinery/shipsensors
 	name = "sensors suite"

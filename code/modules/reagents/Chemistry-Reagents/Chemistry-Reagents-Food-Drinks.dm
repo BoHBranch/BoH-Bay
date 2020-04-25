@@ -169,6 +169,21 @@
 	if (!data)
 		data = list("temperature" = T20C)
 
+/datum/reagent/nutriment/triglyceride/oil/touch_turf(var/turf/simulated/T)
+	if(!istype(T))
+		return
+
+	var/hotspot = (locate(/obj/fire) in T)
+	if(hotspot && !istype(T, /turf/space))
+		var/datum/gas_mixture/lowertemp = T.remove_air(T:air:total_moles)
+		lowertemp.temperature = max(min(lowertemp.temperature-2000, lowertemp.temperature / 2), 0)
+		lowertemp.react()
+		T.assume_air(lowertemp)
+		qdel(hotspot)
+
+	if(volume >= 3)
+		T.wet_floor()
+
 //Handles setting the temperature when oils are mixed
 /datum/reagent/nutriment/triglyceride/oil/mix_data(var/newdata, var/newamount)
 
@@ -381,30 +396,6 @@
 	reagent_state = LIQUID
 	nutriment_factor = 1
 	color = "#801e28"
-
-/datum/reagent/nutriment/cornoil
-	name = "Corn Oil"
-	description = "An oil derived from various types of corn."
-	taste_description = "slime"
-	taste_mult = 0.1
-	reagent_state = LIQUID
-	nutriment_factor = 20
-	color = "#302000"
-
-/datum/reagent/nutriment/cornoil/touch_turf(var/turf/simulated/T)
-	if(!istype(T))
-		return
-
-	var/hotspot = (locate(/obj/fire) in T)
-	if(hotspot && !istype(T, /turf/space))
-		var/datum/gas_mixture/lowertemp = T.remove_air(T:air:total_moles)
-		lowertemp.temperature = max(min(lowertemp.temperature-2000, lowertemp.temperature / 2), 0)
-		lowertemp.react()
-		T.assume_air(lowertemp)
-		qdel(hotspot)
-
-	if(volume >= 3)
-		T.wet_floor()
 
 /datum/reagent/nutriment/sprinkles
 	name = "Sprinkles"

@@ -1,5 +1,5 @@
 /obj/item/weapon/reagent_containers/food/snacks/meat
-	name = "\proper any meat"
+	name = "any meat"
 	desc = "You shouldn't see this, this is a prototype item. Tell a developer immediately!"
 	icon = 'icons/obj/food_ingredients.dmi'
 	icon_state = "meat"
