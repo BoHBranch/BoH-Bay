@@ -226,7 +226,7 @@
 	gear_tweaks += new/datum/gear_tweak/path(books)
 
 /datum/gear/swiss
-	display_name = "multi-tool"
+	display_name = "combi-knife"
 	path = /obj/item/weapon/material/knife/folding/swiss
 	cost = 4
 	flags = GEAR_HAS_COLOR_SELECTION
