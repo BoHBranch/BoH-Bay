@@ -405,7 +405,7 @@
 /datum/chemical_reaction/glycerol
 	name = "Glycerol"
 	result = /datum/reagent/glycerol
-	required_reagents = list(/datum/reagent/nutriment/cornoil = 3, /datum/reagent/acid = 1)
+	required_reagents = list(/datum/reagent/nutriment/triglyceride/oil/corn = 3, /datum/reagent/acid = 1)
 	result_amount = 1
 
 /datum/chemical_reaction/sodiumchloride
@@ -1498,7 +1498,7 @@
 /datum/chemical_reaction/garlicsauce
 	name = "Garlic Sauce"
 	result = /datum/reagent/nutriment/garlicsauce
-	required_reagents = list(/datum/reagent/drink/juice/garlic = 1, /datum/reagent/nutriment/cornoil = 1)
+	required_reagents = list(/datum/reagent/drink/juice/garlic = 1, /datum/reagent/nutriment/triglyceride/oil/corn = 1)
 	result_amount = 2
 	mix_message = "The solution thickens into a creamy white oil."
 
@@ -1710,7 +1710,7 @@
 /datum/chemical_reaction/spacebeer
 	name = "Space Beer"
 	result = /datum/reagent/ethanol/beer
-	required_reagents = list(/datum/reagent/nutriment/cornoil = 10)
+	required_reagents = list(/datum/reagent/nutriment/triglyceride/oil/corn = 10)
 	catalysts = list(/datum/reagent/enzyme = 5)
 	result_amount = 10
 	mix_message = "The solution roils as it rapidly ferments into a foaming amber liquid."

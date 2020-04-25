@@ -1,5 +1,6 @@
 /obj/structure/closet/secure_closet/freezer/kitchen
 	name = "kitchen cabinet"
+	icon = 'icons/obj/closets/fridge.dmi'
 	req_access = list(access_kitchen)
 	closet_appearance = null
 	icon = 'icons/obj/closets/fridge.dmi'

@@ -725,7 +725,7 @@
 	name = "corn"
 	seed_name = "corn"
 	display_name = "ears of corn"
-	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/nutriment/cornoil = list(1,10))
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/nutriment/triglyceride/oil/corn = list(1,10))
 	kitchen_tag = "corn"
 	trash_type = /obj/item/weapon/corncob
 
