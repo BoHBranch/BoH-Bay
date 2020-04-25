@@ -5,6 +5,8 @@
 	vessel_mass = 100000
 	burn_delay = 2 SECONDS
 	sector_flags = OVERMAP_SECTOR_KNOWN|OVERMAP_SECTOR_IN_SPACE|OVERMAP_SECTOR_BASE
+	known_ships = list(/obj/effect/overmap/visitable/ship/landable/exploration_shuttle, /obj/effect/overmap/visitable/ship/landable/guppy)
+	contact_class = /decl/ship_contact_class/dagon
 
 	initial_restricted_waypoints = list(
 		"NTEV Gaunt" = list("nav_hangar_calypso"), 	//can't have random shuttles popping inside the ship
@@ -67,6 +69,11 @@
 		"nav_skrellscoutsh_altdock",
 		"nav_ert_dock"
 	)
+
+/decl/ship_contact_class/dagon
+	class_short = "MAKO"
+	class_long = "Mako-Class Frigate"
+	max_ship_mass = 100000
 
 /obj/effect/overmap/visitable/ship/landable/exploration_shuttle
 	name = "NTEV Gaunt"
