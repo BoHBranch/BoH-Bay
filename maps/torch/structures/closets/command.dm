@@ -46,7 +46,7 @@
 		/obj/item/weapon/material/clipboard,
 		/obj/item/device/holowarrant,
 		/obj/item/weapon/folder/blue,
-		/obj/item/weapon/material/knife/folding/swiss/officer,
+		/obj/item/weapon/material/knife/folding/swiss,
 		/obj/item/gunbox/captain,
 		/obj/item/weapon/sd_key,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/captain, /obj/item/weapon/storage/backpack/satchel/cap)),
@@ -75,7 +75,7 @@
 		/obj/item/weapon/material/clipboard,
 		/obj/item/device/holowarrant,
 		/obj/item/weapon/folder/blue,
-		/obj/item/weapon/material/knife/folding/swiss/officer,
+		/obj/item/weapon/material/knife/folding/swiss,
 		/obj/item/weapon/sd_key,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/captain, /obj/item/weapon/storage/backpack/satchel/cap)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/captain, /obj/item/weapon/storage/backpack/messenger/com))
@@ -99,7 +99,7 @@
 		/obj/item/weapon/material/clipboard,
 		/obj/item/device/holowarrant,
 		/obj/item/weapon/folder/blue,
-		/obj/item/weapon/material/knife/folding/swiss/officer,
+		/obj/item/weapon/material/knife/folding/swiss,
 		/obj/item/gunbox,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel/grey)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger))
@@ -124,8 +124,40 @@
 		/obj/item/device/radio/headset/bridgeofficer,
 		/obj/item/device/radio/headset/bridgeofficer/alt,
 		/obj/item/weapon/storage/belt/general,
-		/obj/item/weapon/material/knife/folding/swiss/officer,
+		/obj/item/weapon/material/knife/folding/swiss,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel/grey)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger)),
 		new /datum/atom_creator/weighted(list(/obj/item/device/flashlight, /obj/item/device/flashlight/flare, /obj/item/device/flashlight/flare/glowstick/random))
+	)
+
+/obj/structure/closet/secure_closet/psiadvisor
+	name = "foundation advisor's locker"
+	req_access = list(access_psiadvisor)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/command
+
+/obj/structure/closet/secure_closet/psiadvisor/WillContain()
+	return list(
+		/obj/item/device/radio,
+		/obj/item/weapon/pen,
+		/obj/item/device/tape/random,
+		/obj/item/device/taperecorder,
+		/obj/item/device/flash,
+		/obj/item/device/megaphone,
+		/obj/item/weapon/material/clipboard,
+		/obj/item/weapon/folder/blue,
+		/obj/item/device/radio/headset/headset_com,
+		/obj/item/device/radio/headset/headset_com/alt,
+		/obj/item/weapon/storage/belt/general,
+		/obj/item/device/flashlight,
+		/obj/item/weapon/storage/box/psykerimplants,
+		/obj/item/weapon/storage/box/psykerimplants,
+		/obj/item/clothing/suit/storage/toggle/labcoat/foundation,
+		/obj/item/clothing/under/det/grey,
+		/obj/item/clothing/gloves/white,
+		/obj/item/clothing/shoes/dress,
+		/obj/item/weapon/storage/box/large/psinullers,
+		/obj/item/weapon/storage/briefcase/foundation,
+		/obj/item/weapon/storage/secure/briefcase/jerraman,
+		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel/grey)),
+		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger))
 	)

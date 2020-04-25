@@ -11,7 +11,7 @@
 		var/chem_name = lowertext(initial(reagent.name))
 		var/datum/codex_entry/entry = new( \
 		 _display_name = "[chem_name] (chemical)", \
-		 _associated_strings = list("[chem_name] pill"), \
+		 _associated_strings = list("[chem_name] pill", "[chem_name]"), \
 		 _lore_text = "[initial(reagent.description)] It apparently tastes of [initial(reagent.taste_description)].")
 
 		var/list/production_strings = list()
@@ -25,7 +25,7 @@
 			var/list/reactant_values = list()
 			for(var/reactant_id in reaction.required_reagents)
 				var/datum/reagent/reactant = reactant_id
-				reactant_values += "[reaction.required_reagents[reactant_id]]u [lowertext(initial(reactant.name))]"
+				reactant_values += "[reaction.required_reagents[reactant_id]]u <span codexlink='[lowertext(initial(reactant.name))] (chemical)'>[lowertext(initial(reactant.name))]</span>"
 
 			if(!reactant_values.len)
 				continue
@@ -33,7 +33,7 @@
 			var/list/catalysts = list()
 			for(var/catalyst_id in reaction.catalysts)
 				var/datum/reagent/catalyst = catalyst_id
-				catalysts += "[reaction.catalysts[catalyst_id]]u [lowertext(initial(catalyst.name))]"
+				catalysts += "[reaction.catalysts[catalyst_id]]u <span codexlink='[lowertext(initial(catalyst.name))] (chemical)'>[lowertext(initial(catalyst.name))]</span>"
 
 			var/datum/reagent/result = reaction.result
 			if(catalysts.len)

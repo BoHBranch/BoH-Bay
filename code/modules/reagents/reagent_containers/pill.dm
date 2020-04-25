@@ -180,6 +180,12 @@
 	icon_state = "pill2"
 	reagents_to_add = list(/datum/reagent/three_eye = 10)
 
+/obj/item/weapon/reagent_containers/pill/jerraman
+	name = "golden pill"
+	desc = "The golden surface of this unlabelled pill seems to shimmer."
+	icon_state = "pill12"
+	reagents_to_add = list(/datum/reagent/jerraman = 4)
+
 /obj/item/weapon/reagent_containers/pill/spaceacillin
 	name = "Spaceacillin (10u)"
 	desc = "Contains antiviral agents."

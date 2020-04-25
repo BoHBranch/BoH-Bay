@@ -1,7 +1,7 @@
 /obj/item/weapon/implanter/psi
 	name = "psi-null implanter"
 	desc = "An implant gun customized to interact with psi dampeners."
-	var/implanter_mode = PSI_IMPLANT_AUTOMATIC
+	var/implanter_mode = PSI_IMPLANT_LOG
 
 /obj/item/weapon/implanter/psi/attack_self(var/mob/user)
 	var/choice = input("Select a new implant mode.", "Psi Dampener") as null|anything in list(PSI_IMPLANT_AUTOMATIC, PSI_IMPLANT_SHOCK, PSI_IMPLANT_WARN, PSI_IMPLANT_LOG, PSI_IMPLANT_DISABLED)

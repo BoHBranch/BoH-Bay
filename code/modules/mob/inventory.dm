@@ -248,6 +248,8 @@ var/list/slot_equipment_priority = list( \
 	if (src.client)
 		src.client.screen -= O
 	O.reset_plane_and_layer()
+	for(var/atom/movable/AM in O.vis_contents)
+		AM.reset_plane_and_layer()
 	O.screen_loc = null
 	if(istype(O, /obj/item))
 		var/obj/item/I = O
