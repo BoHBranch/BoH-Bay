@@ -984,6 +984,19 @@
 /obj/item/weapon/paper_bin,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
+"ce" = (
+/obj/machinery/power/apc{
+	dir = 2;
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/effect/floor_decal/corner/grey/diagonal{
+	dir = 4
+	},
+/obj/structure/cable/green,
+/obj/structure/closet/crate/freezer,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/galley)
 "cf" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/effect/floor_decal/corner/green{
@@ -14780,23 +14793,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/storage/tools)
-"BB" = (
-/obj/machinery/power/apc{
-	dir = 2;
-	name = "south bump";
-	pixel_y = -24
-	},
-/obj/effect/floor_decal/corner/grey/diagonal{
-	dir = 4
-	},
-/obj/structure/cable/green,
-/obj/structure/closet/crate/freezer,
-/obj/random/produce{
-	spawn_attempts = 12;
-	spawn_nothing_percentage = 10
-	},
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/galley)
 "BF" = (
 /obj/effect/floor_decal/spline/fancy/black,
 /obj/item/device/radio/intercom/entertainment{
@@ -38326,7 +38322,7 @@ WM
 Ds
 FK
 wC
-BB
+ce
 ev
 kK
 kK
