@@ -57,7 +57,7 @@
 /datum/recipe/fishandchips
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/fries,
-		/obj/item/weapon/reagent_containers/food/snacks/fish/carp
+		/obj/item/weapon/reagent_containers/food/snacks/fish
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/fishandchips
 
@@ -332,7 +332,7 @@
 
 /datum/recipe/sushi_roll
 	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/fish/carp,
+		/obj/item/weapon/reagent_containers/food/snacks/fish,
 		/obj/item/weapon/reagent_containers/food/snacks/boiledrice
 	)
 	fruit = list("cabbage" = 1)
@@ -368,7 +368,7 @@
 /datum/recipe/fish_taco
 	fruit = list("chili" = 1, "lemon" = 1)
 	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/fish/carp,
+		/obj/item/weapon/reagent_containers/food/snacks/fish,
 		/obj/item/weapon/reagent_containers/food/snacks/tortilla
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/fish_taco

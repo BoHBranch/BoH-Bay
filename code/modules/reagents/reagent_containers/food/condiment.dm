@@ -6,9 +6,9 @@
 
 //Food items that aren't eaten normally and leave an empty container behind.
 /obj/item/weapon/reagent_containers/food/condiment
-	name = "Condiment Container"
+	name = "condiment container"
 	desc = "Just your average condiment container."
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/aurora/food.dmi'
 	icon_state = "emptycondiment"
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER
 	possible_transfer_amounts = "1;5;10"
@@ -24,11 +24,12 @@
 		/datum/reagent/frostoil = /obj/item/weapon/reagent_containers/food/condiment/frostoil,
 		/datum/reagent/sodiumchloride = /obj/item/weapon/reagent_containers/food/condiment/small/saltshaker,
 		/datum/reagent/blackpepper = /obj/item/weapon/reagent_containers/food/condiment/small/peppermill,
-		/datum/reagent/nutriment/cornoil = /obj/item/weapon/reagent_containers/food/condiment/cornoil,
-		/datum/reagent/sugar = /obj/item/weapon/reagent_containers/food/condiment/sugar,
+		/datum/reagent/nutriment/triglyceride/oil/corn = /obj/item/weapon/reagent_containers/food/condiment/cornoil,
+		/datum/reagent/sugar = /obj/item/weapon/reagent_containers/food/condiment/small/sugar,
 		/datum/reagent/nutriment/mayo = /obj/item/weapon/reagent_containers/food/condiment/mayo,
 		/datum/reagent/nutriment/vinegar = /obj/item/weapon/reagent_containers/food/condiment/vinegar,
-		/datum/reagent/spacespice = /obj/item/weapon/reagent_containers/food/condiment/exoticspices
+		/datum/reagent/spacespice = /obj/item/weapon/reagent_containers/food/condiment/exoticspices,
+		/datum/reagent/nutriment/honey = /obj/item/weapon/reagent_containers/food/condiment/honey
 		)
 
 /obj/item/weapon/reagent_containers/food/condiment/attackby(var/obj/item/weapon/W as obj, var/mob/user as mob)
@@ -36,17 +37,16 @@
 		var/tmp_label = sanitizeSafe(input(user, "Enter a label for [name]", "Label", label_text), MAX_NAME_LEN)
 		if(tmp_label == label_text)
 			return
-		if(length(tmp_label) > 10)
-			to_chat(user, "<span class='notice'>The label can be at most 10 characters long.</span>")
+		if(length(tmp_label) > MAX_NAME_LEN)
+			to_chat(user, "<span class='notice'>The label can be at most [MAX_NAME_LEN] characters long.</span>")
 		else
 			if(length(tmp_label))
 				to_chat(user, "<span class='notice'>You set the label to \"[tmp_label]\".</span>")
 				label_text = tmp_label
-				name = addtext(name," ([label_text])")
 			else
 				to_chat(user, "<span class='notice'>You remove the label.</span>")
 				label_text = null
-				on_reagent_change()
+			on_reagent_change()
 		return
 
 
@@ -126,6 +126,7 @@
 /obj/item/weapon/reagent_containers/food/condiment/sugar
 	name = "sugar"
 	desc = "Cavities in a bottle."
+	icon_state = "sugarsmall"
 	starting_reagents = list(/datum/reagent/sugar = 50)
 
 /obj/item/weapon/reagent_containers/food/condiment/ketchup
@@ -138,7 +139,7 @@
 	name = "corn oil"
 	desc = "A delicious oil used in cooking. Made from corn."
 	icon_state = "oliveoil"
-	starting_reagents = list(/datum/reagent/nutriment/cornoil = 50)
+	starting_reagents = list(/datum/reagent/nutriment/triglyceride/oil/corn = 50)
 
 /obj/item/weapon/reagent_containers/food/condiment/vinegar
 	name = "vinegar"
@@ -196,6 +197,7 @@
 //MRE condiments and drinks.
 
 /obj/item/weapon/reagent_containers/food/condiment/small/packet
+	icon = 'icons/obj/food.dmi'
 	icon_state = "packet_small"
 	w_class = ITEM_SIZE_TINY
 	possible_transfer_amounts = "1;5;10"
@@ -369,6 +371,15 @@
 	desc = "An exotic blend of spices for cooking. It must flow."
 	icon = 'icons/obj/aurora/food.dmi'
 	icon_state = "spacespicebottle"
+	amount_per_transfer_from_this = 1
+	volume = 60
+	starting_reagents = list(/datum/reagent/spacespice = 60)
+
+/obj/item/weapon/reagent_containers/food/condiment/honey
+	name = "bottle of honey"
+	desc = "It's a honey bear, honey bear!"
+	icon = 'icons/obj/aurora/food.dmi'
+	icon_state = "honey"
 	amount_per_transfer_from_this = 1
 	volume = 60
 	starting_reagents = list(/datum/reagent/spacespice = 60)
