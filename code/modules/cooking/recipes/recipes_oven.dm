@@ -391,7 +391,7 @@
 //============
 /datum/recipe/cake
 	appliance = OVEN
-	reagents = list(/datum/reagent/drink/milk = 5, /datum/reagent/nutriment/flour = 15, /datum/reagent/sugar = 15, /datum/reagent/nutriment/protein/egg = 9)
+	reagents = list(/datum/reagent/nutriment/cakebatter = 30)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/plaincake
 	reagent_mix = RECIPE_REAGENT_REPLACE
 
@@ -416,12 +416,12 @@
 
 /datum/recipe/cake/lemoncake
 	fruit = list("lemon" = 3)
-	reagents = list(/datum/reagent/drink/milk = 5, /datum/reagent/nutriment/flour = 15, /datum/reagent/nutriment/protein/egg = 9, /datum/reagent/drink/juice/lemon = 3, /datum/reagent/sugar = 5)
+	reagents = list(/datum/reagent/nutriment/cakebatter = 30, /datum/reagent/drink/juice/lemon = 3)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/lemoncake
 
 /datum/recipe/cake/chocolatecake
 	items = list(/obj/item/weapon/reagent_containers/food/snacks/chocolatebar)
-	reagents = list(/datum/reagent/drink/milk = 5, /datum/reagent/nutriment/flour = 15, /datum/reagent/nutriment/protein/egg = 9, /datum/reagent/nutriment/coco = 4, /datum/reagent/sugar = 5)
+	reagents = list(/datum/reagent/nutriment/cakebatter = 30, /datum/reagent/nutriment/coco = 4)
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/chocolatecake
 
 /datum/recipe/cake/birthdaycake
