@@ -5,6 +5,7 @@
 	desc = "Sensor array is detecting a small vessel with unknown lifeforms on board"
 	color = "#ffc966"
 	vessel_mass = 3000
+	contact_class = /decl/ship_contact_class/ship
 	max_speed = 1/(2 SECONDS)
 	initial_generic_waypoints = list(
 		"nav_yacht_1",
