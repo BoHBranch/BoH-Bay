@@ -203,7 +203,7 @@
 	reagent_state = SOLID
 	color = "#ffffff"
 	strength = 0
-	overdose = REAGENTS_OVERDOSE
+	overdose = REAGENTS_OVERDOSE/3
 	heating_point = null
 	heating_products = null
 
@@ -211,7 +211,7 @@
 	..()
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
-		if(H.stat != 1)
+		if(H.stat != UNCONSCIOUS)
 			if(H.losebreath >= 10)
 				H.losebreath = max(10, H.losebreath - 10)
 			H.adjustOxyLoss(2)
@@ -226,7 +226,7 @@
 	reagent_state = SOLID
 	color = "#ffffff"
 	strength = 10
-	overdose = 20
+	overdose = 5
 	heating_point = null
 	heating_products = null
 
@@ -378,10 +378,12 @@
 		return
 	if(alien == IS_SKRELL)
 		M.take_organ_damage(2.4 * removed, 0)
+		M.adjustOxyLoss(8 * removed)
 		if(M.losebreath < 22.5)
 			M.losebreath++
 	else
 		M.take_organ_damage(3 * removed, 0)
+		M.adjustOxyLoss(10 * removed)
 		if(M.losebreath < 15)
 			M.losebreath++
 

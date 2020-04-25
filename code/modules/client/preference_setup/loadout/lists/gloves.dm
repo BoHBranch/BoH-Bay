@@ -32,7 +32,6 @@
 	display_name = "ring"
 	path = /obj/item/clothing/ring
 	cost = 2
-	flags = GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/ring/New()
 	..()

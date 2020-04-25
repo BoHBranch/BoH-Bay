@@ -72,7 +72,8 @@
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
-			CULTURE_SERGAL
+			CULTURE_SERGAL,
+			CULTURE_SYMBIOTIC
 		),
 		TAG_HOMEWORLD = list(
 			HOME_SYSTEM_SERGALTAL
