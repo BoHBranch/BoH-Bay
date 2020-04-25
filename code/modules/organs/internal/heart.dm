@@ -46,13 +46,13 @@
 	// pulse mod starts out as just the chemical effect amount
 	var/pulse_mod = owner.chem_effects[CE_PULSE]
 	var/is_stable = owner.chem_effects[CE_STABLE]
-		
+
 	// If you have enough heart chemicals to be over 2, you're likely to take extra damage.
 	if(pulse_mod > 2 && !is_stable)
 		var/damage_chance = (pulse_mod - 2) ** 2
 		if(prob(damage_chance))
 			take_internal_damage(0.5)
-	
+
 	// Now pulse mod is impacted by shock stage and other things too
 	if(owner.shock_stage > 30)
 		pulse_mod++
@@ -60,9 +60,11 @@
 		pulse_mod++
 
 	var/oxy = owner.get_blood_oxygenation()
-	if(oxy < BLOOD_VOLUME_OKAY) //brain wants us to get MOAR OXY
+	if(oxy < BLOOD_VOLUME_OKAY && !owner.chem_effects[CE_NOPULSE]) //brain wants us to get MOAR OXY
 		pulse_mod++
-	if(oxy < BLOOD_VOLUME_BAD) //MOAR
+	if(oxy < BLOOD_VOLUME_BAD && !owner.chem_effects[CE_NOPULSE]) //MOAR
+		pulse_mod++
+	if(oxy < BLOOD_VOLUME_SURVIVE && !owner.chem_effects[CE_NOPULSE]) //PUSH IT TO THE LIMIT
 		pulse_mod++
 
 	if(owner.status_flags & FAKEDEATH || owner.chem_effects[CE_NOPULSE])
