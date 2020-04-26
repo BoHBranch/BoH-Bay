@@ -99,6 +99,12 @@
 	QDEL_NULL(sound_token)
 	if(air_temporary)
 		loc.assume_air(air_temporary)
+	
+	if(in_stasis)
+		var/obj/machinery/clamp/C = locate() in get_turf(src)
+		if(C.target == src)
+			C.open()
+			C.removal()
 
 	. = ..()
 
@@ -473,11 +479,6 @@
 	if(node3)
 		node3.disconnect(src)
 		node3 = null
-	if(in_stasis)
-		var/obj/machinery/clamp/C = locate() in get_turf(src)
-		if(C.target == src)
-			C.open()
-			C.removal()
 
 	. = ..()
 

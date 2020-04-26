@@ -75,8 +75,6 @@
 	network_nodes.Cut()
 	
 	for(var/obj/machinery/atmospherics/pipe/node in target.pipeline_expansion())
-		if(!istype(node))
-			continue
 		node.build_network()
 		network_nodes += node
 		var/datum/pipeline/P = node.parent
