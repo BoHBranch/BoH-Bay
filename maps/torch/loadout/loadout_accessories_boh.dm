@@ -3,12 +3,11 @@
 	description = "A military decoration awarded to personnel for significant (or not) accomplishments."
 	path = /obj/item/clothing/accessory/ribbon/solgov/custom
 	cost = 2
-	flags = GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/accessory/custom_ribbon/color
 	display_name = "custom ribbon, colorable"
 	path = /obj/item/clothing/accessory/ribbon/solgov/custom/color
-	flags = GEAR_HAS_COLOR_SELECTION | GEAR_HAS_CUSTOM_SELECTION
+	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/accessory/armband_ma
 	display_name = "military police brassard"

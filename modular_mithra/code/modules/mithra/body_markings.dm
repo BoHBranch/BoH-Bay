@@ -88,12 +88,6 @@
 		icon_state = "hair_ponytail6"
 		species_allowed = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_TAJ,SPECIES_NEVREAN,SPECIES_AKULA,SPECIES_SERGAL,SPECIES_ZORREN_FLAT,SPECIES_ZORREN_HIGH,SPECIES_VULPKANIN,SPECIES_XENOCHIMERA,SPECIES_XENOHYBRID,SPECIES_VASILISSAN,SPECIES_RAPALA,SPECIES_PROTEAN,SPECIES_ALRAUNE)
 
-	una_hood
-		name = "Cobra Hood"
-		icon = 'modular_mithra/icons/mob/human_face.dmi'
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-		icon_state = "soghun_hood"
-
 	una_spines_long
 		name = "Long Unathi Spines"
 		icon_state = "soghun_longspines"
@@ -138,13 +132,6 @@
 	una_sidefrills
 		name = "Unathi Side Frills"
 		icon_state = "unathi_sidefrills"
-		species_allowed = list(SPECIES_UNATHI,SPECIES_XENOCHIMERA,SPECIES_PROTEAN)
-
-	una_doublehorns
-		name = "Double Unathi Horns"
-		icon = 'modular_mithra/icons/mob/human_face.dmi'
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-		icon_state = "soghun_dubhorns"
 		species_allowed = list(SPECIES_UNATHI,SPECIES_XENOCHIMERA,SPECIES_PROTEAN)
 
 	taj_ears
@@ -206,56 +193,6 @@
 		name = "Tajara Messy"
 		icon_state = "hair_messy"
 		species_allowed = list(SPECIES_TAJ,SPECIES_XENOCHIMERA,SPECIES_PROTEAN)
-
-	teshari_fluffymohawk
-		name = "Teshari Fluffy Mohawk"
-		icon =  'modular_mithra/icons/mob/human_face.dmi'
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-		icon_state = "teshari_fluffymohawk"
-		species_allowed = list(SPECIES_TESHARI)
-
-//Teshari things
-	teshari
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-
-	teshari_altdefault
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-
-	teshari_tight
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-
-	teshari_excited
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-
-	teshari_spike
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-
-	teshari_long
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-
-	teshari_burst
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-
-	teshari_shortburst
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-
-	teshari_mohawk
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-
-	teshari_pointy
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-
-	teshari_upright
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-
-	teshari_mane
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-
-	teshari_droopy
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
-
-	teshari_mushroom
-		icon_add = 'modular_mithra/icons/mob/human_face_add.dmi'
 
 //Skrell 'hairstyles' - these were requested for a chimera and screw it, if one wants to eat seafood, go nuts
 	skr_tentacle_veryshort
@@ -588,14 +525,12 @@
 		icon_state = "sergal_full"
 		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST,BP_HEAD)
-		species_allowed = list("Sergal")
 
 	sergal_full_female
 		name = "Sergal Markings (Female)"
 		icon_state = "sergal_full_female"
 		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST,BP_HEAD)
-		species_allowed = list("Sergal")
 
 	monoeye
 		name = "Monoeye"
@@ -841,12 +776,6 @@
 		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND)
 
-	tesh_feathers
-		name = "Teshari Feathers"
-		icon_state = "tesh-feathers"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_HAND,BP_R_HAND)
-
 	harpy_feathers
 		name = "Rapala leg Feather"
 		icon_state = "harpy-feathers"
@@ -952,18 +881,6 @@
 		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_L_LEG)
 
-	teshi_fluff
-		name = "Teshari underfluff"
-		icon_state = "teshi_fluff"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_GROIN,BP_CHEST,BP_HEAD)
-
-	teshi_small_feathers
-		name = "Teshari small wingfeathers"
-		icon_state = "teshi_sf"
-		color_blend_mode = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_HAND,BP_R_HAND,BP_CHEST)
-
 	spirit_lights
 		name = "Ward - Spirit FBP Lights"
 		icon_state = "lights"
@@ -1003,4 +920,34 @@
 	heterochromia
 		name = "Heterochromia"
 		icon_state = "heterochromia"
+		body_parts = list(BP_HEAD)
+
+	voxscales
+		name = "Vox Scales"
+		icon_state = "Voxscales"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_HEAD)
+
+	voxclaws
+		name = "Vox Claws"
+		icon_state = "Voxclaws"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_HAND,BP_R_HAND)
+
+	voxbeak
+		name = "Vox Beak"
+		icon_state = "Voxscales"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
+
+	unathihood
+		name = "Cobra Hood"
+		icon_state = "unathihood"
+		color_blend_mode = ICON_MULTIPLY
+		body_parts = list(BP_HEAD)
+
+	unathidoublehorns
+		name = "Double Unathi Horns"
+		icon_state = "unathidoublehorns"
+		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_HEAD)

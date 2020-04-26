@@ -35,7 +35,6 @@
 
 	update_icon()
 
-
 /obj/item/weapon/reagent_containers/food/snacks/grown/proc/fill_reagents()
 	if(!seed)
 		return
@@ -128,6 +127,21 @@
 			desc += " fruit"
 		SSplants.product_descs["[seed.uid]"] = desc
 	desc += ". Delicious! Probably."
+	var/list/possibilities
+	if(seed.kitchen_tag == "pumpkin")
+		LAZYADD(possibilities, "carve a face into this")
+	if(seed.get_trait(TRAIT_PRODUCES_POWER))
+		LAZYADD(possibilities, "make a battery out of this using a cable")
+	if(!isnull(seed.chems[/datum/reagent/woodpulp]) || !isnull(seed.chems[/datum/reagent/bamboo]))
+		LAZYADD(possibilities, "make planks out of this using a hatchet")
+	else if(!isnull(seed.chems[/datum/reagent/drink/juice/carrot]) || !isnull(seed.chems[/datum/reagent/drink/juice/potato]))
+		LAZYADD(possibilities, "make fries out of this using a knife")
+	else if(!isnull(seed.chems[/datum/reagent/drink/milk/soymilk]))
+		LAZYADD(possibilities, "cut this into soy dope using a knife")
+	else if(seed.get_trait(TRAIT_FLESH_COLOUR))
+		LAZYADD(possibilities, "slice this into pieces using a sharp object")
+	if(LAZYLEN(possibilities))
+		desc += "You can [possibilities.Join(", ")]."
 
 /obj/item/weapon/reagent_containers/food/snacks/grown/on_update_icon()
 	if(!seed)

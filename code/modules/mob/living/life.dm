@@ -183,6 +183,7 @@
 	else if(eyeobj)
 		if(eyeobj.owner != src)
 			reset_view(null)
+	else if(z_eye) return
 	else if(!client.adminobs)
 		reset_view(null)
 

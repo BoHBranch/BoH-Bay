@@ -130,7 +130,6 @@
 	mutants = list("deathnettle")
 	chems = list(/datum/reagent/nutriment = list(1,50), /datum/reagent/acid = list(0,1))
 	kitchen_tag = "nettle"
-	kitchen_tag = "nettle"
 
 /datum/seed/nettle/New()
 	..()
@@ -612,6 +611,7 @@
 	display_name = "grapevines"
 	mutants = list("greengrapes")
 	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/sugar = list(1,5), /datum/reagent/drink/juice/grape = list(10,10))
+	kitchen_tag = "grapes"
 
 /datum/seed/grapes/New()
 	..()
@@ -644,6 +644,7 @@
 	seed_name = "peanut"
 	display_name = "peanut vines"
 	chems = list(/datum/reagent/nutriment = list(1,10))
+	kitchen_tag = "peanut"
 
 /datum/seed/peanuts/New()
 	..()
@@ -724,7 +725,7 @@
 	name = "corn"
 	seed_name = "corn"
 	display_name = "ears of corn"
-	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/nutriment/cornoil = list(1,10))
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/nutriment/triglyceride/oil/corn = list(1,10))
 	kitchen_tag = "corn"
 	trash_type = /obj/item/weapon/corncob
 
@@ -932,7 +933,7 @@
 	name = "watermelon"
 	seed_name = "watermelon"
 	display_name = "watermelon vine"
-	chems = list(/datum/reagent/nutriment = list(1,6), /datum/reagent/drink/juice/watermelon = list(10,6))
+	chems = list(/datum/reagent/nutriment = list(1,6), /datum/reagent/drink/juice/watermelon = list(10,20))
 
 /datum/seed/watermelon/New()
 	..()
@@ -955,7 +956,7 @@
 	name = "pumpkin"
 	seed_name = "pumpkin"
 	display_name = "pumpkin vine"
-	chems = list(/datum/reagent/nutriment = list(1,6))
+	chems = list(/datum/reagent/nutriment = list(1,6), /datum/reagent/drink/juice/pumpkinpulp = list(10, 20))
 	kitchen_tag = "pumpkin"
 
 /datum/seed/pumpkin/New()
@@ -1046,6 +1047,7 @@
 	seed_name = "cacao"
 	display_name = "cacao tree"
 	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/nutriment/coco = list(4,5))
+	kitchen_tag = "cacao"
 
 /datum/seed/cocoa/New()
 	..()
@@ -1249,6 +1251,7 @@
 	seed_name = "bamboo"
 	display_name = "bamboo"
 	chems = list(/datum/reagent/bamboo = list(6,1))
+	kitchen_tag = "bamboo"
 	mutants = null
 
 /datum/seed/bamboo/New()
