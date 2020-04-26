@@ -50,8 +50,9 @@
 	var/defer_roundstart_spawn = FALSE // If true, the job will be put off until all other jobs have been populated.
 	var/list/species_branch_rank_cache_ = list()
 	var/list/psi_faculties                // Starting psi faculties, if any.
-	var/psi_latency_chance = 0            // Chance of an additional psi latency, if any.
-	var/give_psionic_implant_on_join = TRUE // If psionic, will be implanted for control.
+	var/can_be_psionic = TRUE             // If true, joining in has a chance to give you latent psionics. Chance set in psi_latency_chance.
+	var/psi_latency_chance = 10            // Chance of an additional psi latency, if any.
+	var/give_psionic_implant_on_join = FALSE // If psionic, will be implanted for control when set to TRUE.
 
 	var/required_language
 	var/is_whitelisted = FALSE
@@ -81,8 +82,10 @@
 		H.add_language(LANGUAGE_SPACER)
 		H.set_default_language(all_languages[LANGUAGE_SPACER])
 
-	if(psi_latency_chance && prob(psi_latency_chance))
-		H.set_psi_rank(pick(PSI_COERCION, PSI_REDACTION, PSI_ENERGISTICS, PSI_PSYCHOKINESIS), 1, defer_update = TRUE)
+	if(can_be_psionic && prob(psi_latency_chance))
+		var/list/faculties = list("[PSI_COERCION]", "[PSI_REDACTION]", "[PSI_ENERGISTICS]", "[PSI_PSYCHOKINESIS]")
+		for(var/i = 1 to 2)
+			H.set_psi_rank(pick_n_take(faculties), 1)
 	if(islist(psi_faculties))
 		for(var/psi in psi_faculties)
 			H.set_psi_rank(psi, psi_faculties[psi], take_larger = TRUE, defer_update = TRUE)
@@ -94,7 +97,7 @@
 			imp.forceMove(H)
 			imp.imp_in = H
 			imp.implanted = TRUE
-			var/obj/item/organ/external/affected = H.get_organ(BP_HEAD)
+			var/obj/item/organ/external/affected = H.get_organ(BP_CHEST)
 			if(affected)
 				affected.implants += imp
 				imp.part = affected
