@@ -5992,6 +5992,48 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
+"akk" = (
+/obj/machinery/button/alternate/door{
+	id_tag = "prisonexit";
+	name = "Exit Doors";
+	pixel_x = 6;
+	pixel_y = 24;
+	req_access = list("ACCESS_BRIG")
+	},
+/obj/machinery/button/alternate/door{
+	id_tag = "prisonentry";
+	name = "Entry Doors";
+	pixel_x = -6;
+	pixel_y = 24;
+	req_access = list("ACCESS_BRIG")
+	},
+/obj/machinery/button/flasher{
+	id_tag = "permflash";
+	name = "Brig Flash Control";
+	pixel_x = -6;
+	pixel_y = 40;
+	req_access = list("ACCESS_BRIG")
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "Secure Gate";
+	name = "Brig Lockdown Control";
+	pixel_x = 6;
+	pixel_y = 40
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/newscaster/security_unit{
+	pixel_x = 32;
+	pixel_y = 32
+	},
+/obj/machinery/computer/station_alert/security{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/bo)
 "akl" = (
 /obj/structure/cable{
 	d2 = 2;
@@ -6405,6 +6447,20 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
+"akU" = (
+/obj/machinery/door/airlock/civilian{
+	autoset_access = 0;
+	name = "Cleaning Room";
+	req_access = null
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "akV" = (
 /obj/machinery/camera/network/first_deck{
 	c_tag = "First Deck Fore Hallway - Starboard Maintenence";
@@ -6490,20 +6546,19 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
 "ale" = (
-/obj/structure/table/steel,
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/cell_charger,
-/obj/machinery/recharger/wallcharger{
-	dir = 8;
-	pixel_x = 23;
-	pixel_y = -3
+/obj/machinery/door/airlock/glass/civilian{
+	autoset_access = 0;
+	name = "Quarters";
+	req_access = null
 	},
-/obj/item/weapon/storage/box/cdeathalarm_kit,
-/obj/item/weapon/storage/box/psykerimplants,
-/obj/item/weapon/storage/box/trackimp,
-/obj/item/weapon/storage/box/chemimp,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/security/armoury)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "alf" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -7479,18 +7534,19 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "amU" = (
-/obj/machinery/door/airlock/civilian{
-	name = "Cleaning Room";
-	req_access = 0
+/obj/structure/table/steel,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/cell_charger,
+/obj/machinery/recharger/wallcharger{
+	dir = 8;
+	pixel_x = 23;
+	pixel_y = -3
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
+/obj/item/weapon/storage/box/cdeathalarm_kit,
+/obj/item/weapon/storage/box/trackimp,
+/obj/item/weapon/storage/box/chemimp,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/armoury)
 "amV" = (
 /obj/structure/undies_wardrobe,
 /obj/machinery/camera/network/security{
@@ -10744,19 +10800,6 @@
 /obj/structure/table/gamblingtable,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
-"asw" = (
-/obj/machinery/door/airlock/glass/civilian{
-	name = "Quarters";
-	req_access = 0
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
 "asx" = (
 /obj/effect/floor_decal/corner/research{
 	dir = 10;
@@ -10844,46 +10887,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/ammo)
-"asH" = (
-/obj/machinery/button/alternate/door{
-	id_tag = "prisonexit";
-	name = "Exit Doors";
-	pixel_x = 6;
-	pixel_y = 24;
-	req_access = list("ACCESS_BRIG")
-	},
-/obj/machinery/button/alternate/door{
-	id_tag = "prisonentry";
-	name = "Entry Doors";
-	pixel_x = -6;
-	pixel_y = 24;
-	req_access = list("ACCESS_BRIG")
-	},
-/obj/machinery/button/flasher{
-	id_tag = "permflash";
-	name = "Brig Flash Control";
-	pixel_x = -6;
-	pixel_y = 40;
-	req_access = list("ACCESS_BRIG")
-	},
-/obj/machinery/button/blast_door{
-	id_tag = "Secure Gate";
-	name = "Brig Lockdown Control";
-	pixel_x = 6;
-	pixel_y = 40
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/newscaster/security_unit{
-	pixel_x = 32;
-	pixel_y = 32
-	},
-/obj/machinery/psi_monitor,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/security/bo)
 "asI" = (
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
@@ -18672,9 +18675,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
 "dSR" = (
-/obj/machinery/psi_meter,
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 9
+	},
+/obj/structure/table/standard,
+/obj/item/weapon/paper_bin{
+	pixel_x = -3;
+	pixel_y = 7
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/counselor)
@@ -25175,12 +25182,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/teleporter/firstdeck)
 "nEn" = (
-/obj/item/weapon/storage/medical_lolli_jar,
 /obj/structure/table/standard,
-/obj/item/weapon/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/medical/counselor)
@@ -29108,7 +29110,7 @@
 /area/maintenance/firstdeck/aftstarboard)
 "sHb" = (
 /obj/structure/table/standard,
-/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/foundation,
+/obj/item/weapon/storage/medical_lolli_jar,
 /turf/simulated/floor/tiled/white,
 /area/medical/counselor)
 "sHN" = (
@@ -39921,7 +39923,7 @@ acU
 aaT
 aaV
 tiQ
-ale
+amU
 ajj
 afl
 agj
@@ -41733,7 +41735,7 @@ aDE
 aJa
 riC
 aDE
-asH
+akk
 aJs
 aDG
 anz
@@ -44562,11 +44564,11 @@ obZ
 aFV
 aoi
 alU
-amU
+akU
 alU
 alU
 amF
-asw
+ale
 amF
 alU
 aqS
