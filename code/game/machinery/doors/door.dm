@@ -92,7 +92,7 @@
 	if(autoset_access)
 #ifdef UNIT_TEST
 		if(length(req_access))
-			crash_with("A door with mapped access restrictions was set to autoinitialize access.")
+			crash_with("A door ([src.x],[src.y],[src.z]) with mapped access restrictions was set to autoinitialize access.")
 #endif
 		return INITIALIZE_HINT_LATELOAD
 
