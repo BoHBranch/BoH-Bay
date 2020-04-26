@@ -83,7 +83,9 @@
 		H.set_default_language(all_languages[LANGUAGE_SPACER])
 
 	if(can_be_psionic && prob(psi_latency_chance))
-		H.set_psi_rank(pick(PSI_COERCION, PSI_REDACTION, PSI_ENERGISTICS, PSI_PSYCHOKINESIS), 2, defer_update = TRUE)
+		var/list/faculties = list("[PSI_COERCION]", "[PSI_REDACTION]", "[PSI_ENERGISTICS]", "[PSI_PSYCHOKINESIS]")
+		for(var/i = 1 to 2)
+			H.set_psi_rank(pick_n_take(faculties), 1)
 	if(islist(psi_faculties))
 		for(var/psi in psi_faculties)
 			H.set_psi_rank(psi, psi_faculties[psi], take_larger = TRUE, defer_update = TRUE)
