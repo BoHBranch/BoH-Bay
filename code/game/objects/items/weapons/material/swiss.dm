@@ -18,9 +18,9 @@
 	takes_colour = FALSE
 	valid_colors = null
 	max_force = 10
-
+	color = COLOR_NT_RED
 	var/active_tool = SWISSKNF_CLOSED
-	var/tools = list(SWISSKNF_LBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER)
+	var/tools = list(SWISSKNF_LBLADE, SWISSKNF_SBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_CSCREW, SWISSKNF_GBLADE, SWISSKNF_WCUTTER, SWISSKNF_WBLADE, SWISSKNF_CROWBAR)
 	var/can_use_tools = FALSE
 	var/sharp_tools = list(SWISSKNF_LBLADE, SWISSKNF_SBLADE, SWISSKNF_GBLADE, SWISSKNF_WBLADE)
 
@@ -115,48 +115,6 @@
 			can_use_tools = FALSE
 			return
 	return ..()
-
-/obj/item/weapon/material/knife/folding/swiss/officer
-	name = "officer's combi-knife"
-	desc = "A small, blue, multi-purpose folding knife. This one adds a corkscrew."
-	color = COLOR_COMMAND_BLUE
-
-	tools = list(SWISSKNF_LBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_CSCREW)
-
-/obj/item/weapon/material/knife/folding/swiss/sec
-	name = "Master-At-Arms' combi-knife"
-	desc = "A small, red, multi-purpose folding knife. This one adds no special tools."
-	color = COLOR_NT_RED
-
-	tools = list(SWISSKNF_LBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER)
-
-/obj/item/weapon/material/knife/folding/swiss/medic
-	name = "medic's combi-knife"
-	desc = "A small, green, multi-purpose folding knife. This one adds a smaller blade in place of the large blade and a glass cutter."
-	color = COLOR_OFF_WHITE
-
-	tools = list(SWISSKNF_SBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_GBLADE)
-
-/obj/item/weapon/material/knife/folding/swiss/engineer
-	name = "engineer's combi-knife"
-	desc = "A small, yellow, multi-purpose folding knife. This one adds a wood saw and wire cutters."
-	color = COLOR_AMBER
-
-	tools = list(SWISSKNF_LBLADE, SWISSKNF_SBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_WBLADE, SWISSKNF_WCUTTER)
-
-/obj/item/weapon/material/knife/folding/swiss/explorer
-	name = "explorer's combi-knife"
-	desc = "A small, purple, multi-purpose folding knife. This one adds a wood saw and pry bar."
-	color = COLOR_PURPLE
-
-	tools = list(SWISSKNF_LBLADE, SWISSKNF_SBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_WBLADE, SWISSKNF_CROWBAR)
-
-/obj/item/weapon/material/knife/folding/swiss/loot
-	name = "black combi-knife"
-	desc = "A small, silver, multi-purpose folding knife. This one adds a small blade and corkscrew."
-	color = COLOR_TITANIUM
-
-	tools = list(SWISSKNF_LBLADE, SWISSKNF_SBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_CSCREW)
 
 #undef SWISSKNF_CLOSED
 #undef SWISSKNF_LBLADE

@@ -52,7 +52,9 @@
 /mob/living/simple_animal/borer/roundstart
 	roundstart = TRUE
 
-/mob/living/simple_animal/borer/neutered
+/mob/living/simple_animal/borer/symbiote
+	name = "symbiote"
+	real_name = "symbiote"
 	neutered = TRUE
 
 /mob/living/simple_animal/borer/Login()

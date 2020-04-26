@@ -16,7 +16,6 @@
 	var/list/ranks                    // Assoc list of psi faculties to current rank.
 	var/list/base_ranks               // Assoc list of psi faculties to base rank, in case reset is needed
 	var/list/manifested_items         // List of atoms manifested/maintained by psychic power.
-	var/next_latency_trigger = 0      // world.time minimum before a trigger can be attempted again.
 	var/last_armor_check              // world.time of last armour check.
 	var/last_aura_size
 	var/last_aura_alpha

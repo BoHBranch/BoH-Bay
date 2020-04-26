@@ -138,3 +138,11 @@
 /datum/fabricator_recipe/arms_ammo/hidden/pepper
 	name = "ammunition (Pepperball Magazine)"
 	path = /obj/item/ammo_magazine/pistol/double/pepperball
+
+/datum/fabricator_recipe/arms_ammo/hidden/chemmag
+	name = "ammunition (Chemical Dart Magazine)"
+	path = /obj/item/ammo_magazine/chemdart
+
+/datum/fabricator_recipe/arms_ammo/hidden/chemdart
+	name = "ammunition (Chemical Dart)"
+	path = /obj/item/ammo_casing/chemdart

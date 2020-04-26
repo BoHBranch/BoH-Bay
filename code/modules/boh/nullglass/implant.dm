@@ -10,5 +10,5 @@
 	desc = "Box of stuff used to implant psionic monitoring software."
 	icon_state = "implant"
 	item_state = "syringe_kit"
-	startswith = list(/obj/item/weapon/implanter = 1,
+	startswith = list(/obj/item/weapon/implanter/psi = 1,
 				/obj/item/weapon/implantcase/psyker = 6)
