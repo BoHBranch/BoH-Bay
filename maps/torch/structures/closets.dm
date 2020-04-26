@@ -197,7 +197,7 @@
 		/obj/item/clothing/gloves/thick/duty/solgov/sec,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/storage/belt/security,
-		/obj/item/weapon/material/knife/folding/swiss/sec,
+		/obj/item/weapon/material/knife/folding/swiss,
 		/obj/item/weapon/storage/belt/medical/emt,
 		/obj/item/clothing/mask/gas/half,
 		/obj/item/weapon/storage/box/autoinjectors,
