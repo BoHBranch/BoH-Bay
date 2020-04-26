@@ -757,6 +757,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/hatch{
+	autoset_access = 0;
 	name = "Quill Quarters";
 	req_access = list("ACCESS_VOXSHIP_CAPTAIN")
 	},
