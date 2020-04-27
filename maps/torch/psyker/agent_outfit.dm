@@ -1,8 +1,3 @@
-//id
-/obj/item/weapon/card/id/torch/crew/psiadvisor
-	job_access_type = /datum/job/psiadvisor
-	detail_color = COLOR_COMMAND_BLUE
-
 //typical uniform stuff
 
 /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor
