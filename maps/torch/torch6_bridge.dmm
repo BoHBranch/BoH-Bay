@@ -395,6 +395,7 @@
 	dir = 1
 	},
 /obj/structure/closet/secure_closet/psiadvisor,
+/obj/item/weapon/storage/belt/holster/general,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/psiadvisor)
 "aM" = (

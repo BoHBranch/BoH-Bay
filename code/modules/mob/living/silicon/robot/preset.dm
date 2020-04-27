@@ -46,10 +46,9 @@
 
 /mob/living/silicon/robot/flying/ascent/add_ion_law(law)
 	return FALSE
-	
+
 /mob/living/silicon/robot/flying/ascent/Initialize()
 	. = ..()
-	remove_language(LANGUAGE_HUMAN_EURO)
 	remove_language(LANGUAGE_EAL)
 	remove_language(LANGUAGE_ROBOT_GLOBAL)
 	default_language = all_languages[LANGUAGE_MANTID_NONVOCAL]
