@@ -6,5 +6,5 @@
 	suit = /obj/item/clothing/suit/storage/toggle/suit/black/agent
 	gloves = /obj/item/clothing/ring/material/nullglass
 	shoes = /obj/item/clothing/shoes/dutyboots
-	l_hand =   /obj/item/weapon/storage/briefcase/foundation/nt/revolver
+	l_hand =   /obj/item/weapon/storage/briefcase/foundation/nt
 	holster =  /obj/item/clothing/accessory/storage/holster/armpit
