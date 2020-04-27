@@ -6,7 +6,7 @@
 	anchored = TRUE
 	density = TRUE
 	opacity = FALSE
-	req_access = list(list(access_psychiatrist, access_captain, access_cmo, access_hos))
+	req_access = list(list(access_psiadvisor, access_captain, access_hop))
 
 	var/list/psi_violations = list()
 	var/show_violations = FALSE
@@ -114,4 +114,4 @@
 	psi_violations += "<font color='#FF0000'>Critical system failure - [implant.imp_in.name].</font>"
 
 /obj/machinery/psi_monitor/proc/report_violation(var/obj/item/weapon/implant/psi_control/implant, var/stress)
-	psi_violations += "Sigma [round(stress/10)] event - [implant.imp_in.name]."
+	psi_violations += "Sigma [stress] event - [implant.imp_in.name]."

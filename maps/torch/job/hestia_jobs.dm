@@ -139,3 +139,41 @@
 /datum/job/grunt/get_description_blurb()
 	return "You are a Marine! Your duty is to listen to the Squad Leader. If they're not present, the Combat Technician may pull rank. Do your best not to die, while also taking orders. Oorah!"
 
+/datum/job/psiadvisor
+	title = "Foundation Advisor"
+	department = "Support"
+	department_flag = SPT
+	selection_color = "#2f2f7f"
+	total_positions = 0
+	spawn_positions = 0
+	economic_power = 20
+	minimum_character_age = list(SPECIES_HUMAN = 25,SPECIES_UNATHI = 25,SPECIES_SERGAL = 25, SPECIES_SKRELL = 25, SPECIES_PROMETHEAN = 25, SPECIES_YEOSA = 25, SPECIES_VASS = 25, SPECIES_TAJ = 25, SPECIES_CUSTOM = 25, SPECIES_AKULA = 25)
+	minimal_player_age = 7
+	supervisors = "the Foundation and the Commanding Officer"
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/foundationadvisor)
+	min_skill = list(
+		SKILL_BUREAUCRACY = SKILL_EXPERT,
+		SKILL_FINANCE = SKILL_ADEPT,
+		SKILL_MEDICAL = SKILL_BASIC
+	)
+	max_skill = list(
+		SKILL_COMBAT     = SKILL_MAX,
+		SKILL_WEAPONS     = SKILL_MAX
+	)
+	skill_points = 20
+	access = list(access_psiadvisor, access_security, access_medical, access_engine, access_maint_tunnels, access_external_airlocks,
+				access_eva, access_bridge, access_cargo, access_RC_announce, access_solgov_crew, access_hangar)
+	minimal_access = list()
+	software_on_spawn = list(
+		/datum/computer_file/program/comm,
+		/datum/computer_file/program/records
+	)
+
+/datum/job/psiadvisor/equip(var/mob/living/carbon/human/H)
+	psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_OPERANT, "[PSI_COERCION]" = PSI_RANK_OPERANT, "[PSI_PSYCHOKINESIS]" = PSI_RANK_OPERANT, "[PSI_ENERGISTICS]" = PSI_RANK_OPERANT)
+	return ..()
+
+/datum/job/psiadvisor/get_description_blurb()
+	return "You are the Foundation Advisor. You are psionically awakened, and you are the first and only exposure most of the crew will have to the mentally gifted. Your main responsibility is advising the Commanding Officer on psionic matters, and helping freshly awakened psions discover and control their abilities, and overseeing them, or suppress it if they wish to do so. You must report any violent psions to the appropriate personnel including the Foundation to take care of them. Avoid direct confrontation with them as much as possible."

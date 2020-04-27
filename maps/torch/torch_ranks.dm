@@ -237,6 +237,7 @@
 		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/civ/ntr,
+		/datum/mil_rank/civ/foundationadvisor,
 		/datum/mil_rank/civ/synthetic
 	)
 
@@ -244,6 +245,7 @@
 		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/civ/ntr,
+		/datum/mil_rank/civ/foundationadvisor,
 		/datum/mil_rank/civ/synthetic
 	)
 
@@ -721,6 +723,11 @@
 /datum/mil_rank/civ/ntr
 	name = "NanoTrasen Representative"
 	name_short = "NTR"
+	pow_cat = 5
+
+/datum/mil_rank/civ/foundationadvisor
+	name = "Foundation Advisor"
+	name_short = "FADV"
 	pow_cat = 5
 
 /datum/mil_rank/civ/synthetic

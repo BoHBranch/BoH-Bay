@@ -1,5 +1,6 @@
 /area/voxship/
 	icon = 'voxship.dmi'
+	req_access = list(access_voxship)
 
 /area/voxship/ship_fore/
 	name = "\improper Vox Ship Fore"
