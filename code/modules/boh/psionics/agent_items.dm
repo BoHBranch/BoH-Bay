@@ -4,16 +4,13 @@ This file will primarily contain material relating to either Foundation Agents o
 */
 /////////
 
-/obj/item/weapon/gun/projectile/revolver/agent
+/obj/item/weapon/gun/projectile/revolver/foundation/agent
 	name = "\improper Agent revolver"
 	icon = 'icons/obj/guns/foundation.dmi'
 	icon_state = "foundation"
 	desc = "The DF 'Hardtack', a compact firearm designed for concealed carry by Nanotrasen Psionic Corps agents. \
 	Rumored to be a copy of the Foundation's field revolver."
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/nullglass
-
-/obj/item/weapon/gun/projectile/revolver/foundation/disrupts_psionics()
-	return FALSE
 
 /obj/item/weapon/storage/briefcase/foundation/nt
 	name = "\improper Nanotrasen briefcase"
