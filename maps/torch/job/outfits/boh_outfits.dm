@@ -52,15 +52,6 @@
 	l_hand =   /obj/item/weapon/storage/briefcase/foundation/revolver
 	holster =  /obj/item/clothing/accessory/storage/holster/waist
 
-/decl/hierarchy/outfit/job/torch/crew/command/psiadvisor/equip_id(var/mob/living/carbon/human/H, var/rank, var/assignment, var/equip_adjustments)
-	. = ..()
-	var/obj/item/weapon/card/id/foundation_civilian/regis_card = new
-	if(rank)
-		regis_card.rank = rank
-	if(assignment)
-		regis_card.assignment = assignment
-	H.set_id_info(regis_card)
-	H.equip_to_slot_or_store_or_drop(regis_card)
 /***/
 
 // Engineering
