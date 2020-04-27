@@ -49,6 +49,8 @@
 	shoes = /obj/item/clothing/shoes/dress
 	pda_type = /obj/item/modular_computer/pda/heads
 	id_type = /obj/item/weapon/card/id/torch/crew/psiadvisor
+	l_hand =   /obj/item/weapon/storage/briefcase/foundation/revolver
+	holster =  /obj/item/clothing/accessory/storage/holster/waist
 
 /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor/equip_id(var/mob/living/carbon/human/H, var/rank, var/assignment, var/equip_adjustments)
 	. = ..()
@@ -185,3 +187,14 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 	backpack_contents = list(/obj/item/clothing/accessory/armor/tag/saare = 1, /obj/item/clothing/accessory/armor/helmcover/saare = 1)
 /***/
+
+//Medical Psyker
+/decl/hierarchy/outfit/job/torch/crew/command/psiadvisor/equip_id(var/mob/living/carbon/human/H, var/rank, var/assignment, var/equip_adjustments)
+	. = ..()
+	var/obj/item/weapon/card/id/foundation_civilian/regis_card = new
+	if(rank)
+		regis_card.rank = rank
+	if(assignment)
+		regis_card.assignment = assignment
+	H.set_id_info(regis_card)
+	H.equip_to_slot_or_store_or_drop(regis_card)
