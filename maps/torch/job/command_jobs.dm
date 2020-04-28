@@ -395,3 +395,59 @@
 /datum/job/bridgeofficer/get_description_blurb()
 	return "You are a Bridge Officer. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take the Dagon's helm and pilot the Byakhee if needed. You monitor bridge computer programs and communications and report relevant information to command."
 
+
+/datum/job/blueshield
+	title = "Blueshield"
+	department = "Support"
+	department_flag = SPT
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Chief Magistrate"
+	selection_color = "#3d3d7f"
+	economic_power = 12
+	minimal_player_age = 2
+	minimum_character_age = list(SPECIES_HUMAN = 19)
+	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	                    SKILL_EVA         = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_BASIC,
+	                    SKILL_WEAPONS     = SKILL_ADEPT,
+	                    SKILL_FORENSICS   = SKILL_BASIC)
+	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
+	                    SKILL_WEAPONS     = SKILL_MAX,
+	                    SKILL_FORENSICS   = SKILL_MAX)
+
+	alt_titles = list(
+		"Union Enforcer" = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/union,
+		"Executive Assistant",
+		"Asset Protection Agent"
+	)
+	skill_points = 20
+	access = list(access_representative, access_maint_tunnels, access_security, access_medical,
+						access_engine, access_research, access_bridge,
+						access_cargo, access_solgov_crew, access_hangar,
+						access_commissary, access_petrov,
+						access_sec_guard)
+	defer_roundstart_spawn = TRUE
+
+
+
+/datum/job/blueshield/is_position_available()
+	if(..())
+		for(var/mob/M in GLOB.player_list)
+			if(M.client && M.mind && M.mind.assigned_role == "SolGov Representative")
+				return TRUE
+	return FALSE
+
+/datum/job/blueshield/get_description_blurb()
+	return "You are the blueshield. Kick ass, chew gum, and take names. And also guard the SGR if you can."
+
+/datum/job/blueshield/post_equip_rank(var/mob/person, var/alt_title)
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Loss Prevention Associate")]"]"
+	for(var/mob/M in GLOB.player_list)
+		if(M.client && M.mind)
+			if(M.mind.assigned_role == "Workplace Liaison")
+				to_chat(M, SPAN_NOTICE("<b>Your bodyguard, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
+	..()
