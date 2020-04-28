@@ -63,27 +63,6 @@
 		qdel(src)
 
 /////////
-// Advanced Lockbox
-/////////
-
-/obj/item/gunbox/advanced
-	name = "equipment kit"
-	desc = "A secure box containing a sidearm and primary weapon."
-
-/obj/item/gunbox/advanced/attack_self(mob/living/user)
-	var/list/options = list()
-	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/pistol/military/alt/solar,/obj/item/ammo_magazine/pistol/double/rubber,/obj/item/weapon/gun/projectile/shotgun/pump/beanbag,/obj/item/weapon/storage/box/ammo/beanbags/eight,/obj/item/clothing/accessory/storage/bandolier)
-	options["Energy"] = list(/obj/item/weapon/gun/energy/gun/secure,/obj/item/weapon/gun/energy/taser/carbine/ext,/obj/item/weapon/cell/device/high)
-	var/choice = input(user,"What type of equipment?") as null|anything in options
-	if(src && choice)
-		var/list/things_to_spawn = options[choice]
-		for(var/new_type in things_to_spawn)
-			var/atom/movable/AM = new new_type(get_turf(src))
-			if(istype(AM, /obj/item/weapon/gun/))
-				to_chat(user, "You have chosen \the [AM]. This is probably worth more than what your paycheck can be used for.")
-		qdel(src)
-
-/////////
 // 'Officer' Lockbox
 /////////
 

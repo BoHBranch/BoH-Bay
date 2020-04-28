@@ -1,6 +1,8 @@
 /obj/item/projectile/bullet/nullglass
 	name = "nullglass bullet"
-	damage = 40
+	damage = 5
+	shrapnel_chance_multiplier = 2
+	arterial_bleed_chance_multiplier = 0.1
 	shrapnel_type = /obj/item/weapon/material/shard/nullglass
 
 /obj/item/projectile/bullet/nullglass/disrupts_psionics()

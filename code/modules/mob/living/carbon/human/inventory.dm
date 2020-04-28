@@ -351,6 +351,8 @@ This saves us from having to call add_fingerprint() any time something is put in
 		update_inv_r_hand()
 
 	W.hud_layerise()
+	for(var/atom/movable/AM in W.vis_contents)
+		AM.hud_layerise()
 	for(var/s in species.hud.gear)
 		var/list/gear = species.hud.gear[s]
 		if(gear["slot"] == slot)

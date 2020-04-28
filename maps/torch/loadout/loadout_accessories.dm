@@ -56,7 +56,6 @@
 	display_name = "NTSS Dagon mission patch"
 	path = /obj/item/clothing/accessory/solgov/torch_patch
 	description = "A shoulder patch representing the NTSS Dagon and its mission. Given to all the oddjobs pulled from various branches to work on the Dagon."
-	flags = GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/accessory/pilot_pin
 	display_name = "pilot's qualification pin"
@@ -122,7 +121,6 @@
 /datum/gear/storage/brown_drop_pouches
 
 /datum/gear/storage/black_drop_pouches
-	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/officer, /datum/job/merchant, /datum/job/grunt, /datum/job/combat_tech, /datum/job/squad_lead)
 
 /datum/gear/storage/white_drop_pouches
 

@@ -542,34 +542,34 @@ For the purpose of precharged shield generators, we have the below.
 /obj/machinery/power/shield_generator/new_icon/on_update_icon()
 	overlays.Cut()
 
-	overlays += image('icons/boh/newshields_64x32.dmi', "console_state")
+	overlays += overlay_image('icons/boh/newshields_64x32.dmi', "console_state")
 
 
 	if(!overloaded)
 		if(running == SHIELD_DISCHARGING)
-			overlays += image('icons/boh/newshields_64x32.dmi', "shield_discharging")
+			overlays += overlay_image('icons/boh/newshields_64x32.dmi', "shield_discharging", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 		if(running == SHIELD_RUNNING)
-			overlays += image('icons/boh/newshields_64x32.dmi', "shield_running")
+			overlays += overlay_image('icons/boh/newshields_64x32.dmi', "shield_running", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 		if(running == SHIELD_SPINNING_UP)
-			overlays += image('icons/boh/newshields_64x32.dmi', "shield_spinning_up")
+			overlays += overlay_image('icons/boh/newshields_64x32.dmi', "shield_spinning_up", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
 	if(overloaded)
-		overlays += image('icons/boh/newshields_64x32.dmi', "shield_overloaded")
+		overlays += overlay_image('icons/boh/newshields_64x32.dmi', "shield_overloaded", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
 	if(current_energy >= max_energy)
-		overlays += image('icons/boh/newshields_64x32.dmi', "power_overlay_100")
+		overlays += overlay_image('icons/boh/newshields_64x32.dmi', "power_overlay_100", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	if(current_energy >= (max_energy * 0.75))
-		overlays += image('icons/boh/newshields_64x32.dmi', "power_overlay_75")
+		overlays += overlay_image('icons/boh/newshields_64x32.dmi', "power_overlay_75", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	if(current_energy >= (max_energy * 0.50))
-		overlays += image('icons/boh/newshields_64x32.dmi', "power_overlay_50")
+		overlays += overlay_image('icons/boh/newshields_64x32.dmi', "power_overlay_50", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	if(current_energy <= (max_energy * 0.25))
-		overlays += image('icons/boh/newshields_64x32.dmi', "power_overlay_25")
+		overlays += overlay_image('icons/boh/newshields_64x32.dmi', "power_overlay_25", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
 	if(powernet && (!input_cut && running > SHIELD_OFF))
-		overlays += image('icons/boh/newshields_64x32.dmi', "shield-charging")
+		overlays += overlay_image('icons/boh/newshields_64x32.dmi', "shield-charging", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
 	if(running > SHIELD_OFF)
-		overlays += image('icons/boh/newshields_64x32.dmi', "shield_active")
+		overlays += overlay_image('icons/boh/newshields_64x32.dmi', "shield_active", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
 /obj/machinery/power/shield_generator/new_icon/proc/SetBounds()
 	bound_width = width * world.icon_size

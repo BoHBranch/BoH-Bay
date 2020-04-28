@@ -97,25 +97,25 @@
 	overlays.Cut()
 	if(stat & BROKEN)	return
 
-	overlays += image(overlay_icon, "smes-op[outputting]")
+	overlays += overlay_image(overlay_icon, "smes-op[outputting]")
 
 	if(inputting == 2)
-		overlays += image(overlay_icon, "smes-oc2")
+		overlays += overlay_image(overlay_icon, "smes-oc2", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	else if (inputting == 1)
-		overlays += image(overlay_icon, "smes-oc1")
+		overlays += overlay_image(overlay_icon, "smes-oc1", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	else if (input_attempt)
-		overlays += image(overlay_icon, "smes-oc0")
+		overlays += overlay_image(overlay_icon, "smes-oc0", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
 	var/clevel = chargedisplay()
 	if(clevel)
-		overlays += image(overlay_icon, "smes-og[clevel]")
+		overlays += overlay_image(overlay_icon, "smes-og[clevel]", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
 	if(outputting == 2)
-		overlays += image(overlay_icon, "smes-op2")
+		overlays += overlay_image(overlay_icon, "smes-op2", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	else if (outputting == 1)
-		overlays += image(overlay_icon, "smes-op1")
+		overlays += overlay_image(overlay_icon, "smes-op1", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 	else
-		overlays += image(overlay_icon, "smes-op0")
+		overlays += overlay_image(overlay_icon, "smes-op0", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
 
 /obj/machinery/power/smes/proc/chargedisplay()
 	return round(5.5*charge/(capacity ? capacity : 5e6))
@@ -172,9 +172,9 @@
 		var/is_input_available = FALSE
 		for(var/obj/item/weapon/stock_parts/power/terminal/term in power_components)
 			if(!term.terminal || !term.terminal.powernet)
-				continue			
+				continue
 			is_input_available = TRUE
-			term.terminal.powernet.smes_demand += target_load		
+			term.terminal.powernet.smes_demand += target_load
 			term.terminal.powernet.inputting.Add(src)
 		if(!is_input_available)
 			target_load = 0 // We won't input any power without powernet connection.

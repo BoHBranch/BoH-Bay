@@ -47,7 +47,7 @@
 	)
 	reagent_mix = RECIPE_REAGENT_REPLACE
 	result = /obj/item/weapon/reagent_containers/food/snacks/nugget
-	coating = /datum/reagent/nutriment/coating/beerbatter
+	coating = /datum/reagent/nutriment/coating/batter
 
 /datum/recipe/katsu
 	appliance = FRYER
@@ -56,7 +56,6 @@
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/chickenkatsu
 	coating = /datum/reagent/nutriment/coating/beerbatter
-
 
 /datum/recipe/pizzacrunch_1
 	appliance = FRYER

@@ -76,10 +76,10 @@
 	reagents_to_add = list(/datum/reagent/toxin = 60)
 
 /obj/item/weapon/reagent_containers/glass/bottle/cyanide
-	name = "cyanide bottle"
-	desc = "A small bottle of cyanide. Bitter almonds?"
+	name = "bottle"
+	desc = "A small bottle."
 	icon = 'icons/obj/chemical.dmi'
-	icon_state = "bottle-3"
+	icon_state = "bottle-4"
 	reagents_to_add = list(/datum/reagent/toxin/cyanide = 30)
 
 
