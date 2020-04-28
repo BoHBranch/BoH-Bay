@@ -92,6 +92,20 @@
 	gear_tweaks += new/datum/gear_tweak/path(lunchboxes)
 	gear_tweaks += new/datum/gear_tweak/contents(lunchables_lunches(), lunchables_snacks(), lunchables_drinks())
 
+/datum/gear/mre
+	display_name = "MRE selection"
+	description = "A vacuum-sealed bag containing a day's worth of nutrients for an adult in strenuous situations."
+	cost = 2
+	path = /obj/item/weapon/storage/mre
+
+/datum/gear/mre/New()
+	..()
+	var/mre = list()
+	mre["standard mre"] = /obj/item/weapon/storage/mre/random
+	mre["vegan mre"] = /obj/item/weapon/storage/mre/menu9
+	mre["protein mre"] = /obj/item/weapon/storage/mre/menu10
+	gear_tweaks += new /datum/gear_tweak/path(mre)
+
 /datum/gear/towel
 	display_name = "towel"
 	path = /obj/item/weapon/towel
@@ -226,7 +240,7 @@
 	gear_tweaks += new/datum/gear_tweak/path(books)
 
 /datum/gear/swiss
-	display_name = "multi-tool"
+	display_name = "combi-knife"
 	path = /obj/item/weapon/material/knife/folding/swiss
 	cost = 4
 	flags = GEAR_HAS_COLOR_SELECTION
