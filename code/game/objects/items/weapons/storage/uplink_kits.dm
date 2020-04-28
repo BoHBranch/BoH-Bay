@@ -48,7 +48,7 @@
 		)
 
 //Soft Suit uplink kit
-/obj/item/weapon/storage/box/syndie_kit/space
+/obj/item/weapon/storage/backpack/satchel/syndie_kit/space
 
 	startswith = list(
 		/obj/item/clothing/head/helmet/space/emergency,
@@ -57,7 +57,7 @@
 
 //Plate kits
 
-/obj/item/weapon/storage/box/syndie_kit/riotkit
+/obj/item/weapon/storage/backpack/satchel/syndie_kit/riotkit
 
 	startswith = list(
 	/obj/item/clothing/accessory/armguards/riot,
@@ -65,7 +65,7 @@
 	/obj/item/clothing/head/helmet/riot
 	)
 
-/obj/item/weapon/storage/box/syndie_kit/ballistickit
+/obj/item/weapon/storage/backpack/satchel/syndie_kit/ballistickit
 
 	startswith = list(
 	/obj/item/clothing/accessory/armguards/ballistic,
@@ -73,7 +73,7 @@
 	/obj/item/clothing/head/helmet/ballistic,
 	)
 
-/obj/item/weapon/storage/box/syndie_kit/ablativekit
+/obj/item/weapon/storage/backpack/satchel/syndie_kit/ablativekit
 
 	startswith = list(
 	/obj/item/clothing/accessory/armguards/ablative,
@@ -81,7 +81,7 @@
 	/obj/item/clothing/head/helmet/ablative
 	)
 
-/obj/item/weapon/storage/box/syndie_kit/mediumkit
+/obj/item/weapon/storage/backpack/satchel/syndie_kit/mediumkit
 
 	startswith = list(
 	/obj/item/clothing/accessory/armorplate/medium,

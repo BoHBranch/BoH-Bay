@@ -22,7 +22,7 @@
 	name = "Soft Suit"
 	desc = "A generic soft suit, specially packed into an ordinary box. Once removed, it won't fit back in the box."
 	item_cost = 6
-	path = /obj/item/weapon/storage/box/syndie_kit/space
+	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/space
 
 /datum/uplink_item/item/armor/balaclava
 	name = "Balaclava"
@@ -88,25 +88,25 @@
 	name = "Medium Plate Kit"
 	desc = "Contains a medium chest plate, medium arm guards, medium leg guards, and a medium helmet. Carrier not included."
 	item_cost = 4
-	path = /obj/item/weapon/storage/box/syndie_kit/mediumkit
+	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/mediumkit
 
 /datum/uplink_item/item/armor/ablativekit
 	name = "Ablative Kit"
 	desc = "Contains ablative arm guards, ablative leg guards, and an ablative helmet. Carrier not included."
 	item_cost = 8
-	path = /obj/item/weapon/storage/box/syndie_kit/ablativekit
+	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/ablativekit
 
 /datum/uplink_item/item/armor/ballistickit
 	name = "Ballistic Kit"
 	desc = "Contains ballistic arm guards, riot leg guards, and a ballistic helmet. Carrier not included."
 	item_cost = 8
-	path = /obj/item/weapon/storage/box/syndie_kit/ballistickit
+	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/ballistickit
 
 /datum/uplink_item/item/armor/riotkit
 	name = "Riot Kit"
 	desc = "Contains riot arm guards, riot leg guards, and a riot helmet. Carrier not included."
 	item_cost = 2
-	path = /obj/item/weapon/storage/box/syndie_kit/riotkit
+	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/riotkit
 
 /datum/uplink_item/item/armor/stealtharmor
 	name = "Chameleon Armor"
