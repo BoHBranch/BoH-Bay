@@ -15,8 +15,8 @@ This file will primarily contain material relating to either Foundation Agents o
 
 /obj/item/weapon/storage/briefcase/foundation/nt/revolver	
 	startswith = list(
-		/obj/item/weapon/gun/projectile/revolver/foundation/agent,
-		/obj/item/ammo_magazine/speedloader/magnum/nullglass=3)
+	/obj/item/weapon/gun/projectile/revolver/foundation/agent,
+	/obj/item/ammo_magazine/speedloader/magnum/nullglass=3)
 
 //////////
 // Unbranded Psyker Gun
