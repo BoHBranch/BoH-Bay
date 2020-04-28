@@ -455,6 +455,20 @@
 	return "You are the Loss Prevention Associate. Your job is to prevent the loss of the Liason's life - even at the cost of your own. Good luck."
 /***/
 
+// Law
+/datum/job/blueshield
+	allowed_branches = list(/datum/mil_branch/private_security, /datum/mil_branch/civilian)
+	allowed_ranks = list(
+		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc,
+		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc/agent,
+		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/saare,
+		/datum/mil_rank/civ/contractor
+	)
+
+/datum/job/bodyguard/get_description_blurb()
+	return "You are the blueshield."
+/***/
+
 // Misc
 /datum/job/assistant
 	skill_points = 18

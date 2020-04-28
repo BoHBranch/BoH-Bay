@@ -123,3 +123,14 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 	l_hand =   /obj/item/weapon/storage/briefcase/foundation/nt
 	holster =  /obj/item/clothing/accessory/storage/holster/armpit
+
+//Blueshield
+
+/decl/hierarchy/outfit/job/torch/crew/command/blueshield
+	name = OUTFIT_JOB_NAME("Blueshield")
+	l_ear = /obj/item/device/radio/headset/headset_com
+	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
+	suit = /obj/item/clothing/suit/storage/toggle/suit/black
+	shoes = /obj/item/clothing/shoes/laceup
+	id_type = /obj/item/weapon/card/id/torch/crew/blueshield
+	pda_type = /obj/item/modular_computer/pda/heads/paperpusher

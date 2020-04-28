@@ -407,7 +407,7 @@
 	economic_power = 12
 	minimal_player_age = 2
 	minimum_character_age = list(SPECIES_HUMAN = 19)
-	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/blueshield
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
@@ -430,24 +430,3 @@
 						access_cargo, access_solgov_crew, access_hangar,
 						access_commissary, access_petrov,
 						access_sec_guard)
-	defer_roundstart_spawn = TRUE
-
-
-
-/datum/job/blueshield/is_position_available()
-	if(..())
-		for(var/mob/M in GLOB.player_list)
-			if(M.client && M.mind && M.mind.assigned_role == "SolGov Representative")
-				return TRUE
-	return FALSE
-
-/datum/job/blueshield/get_description_blurb()
-	return "You are the blueshield. Kick ass, chew gum, and take names. And also guard the SGR if you can."
-
-/datum/job/blueshield/post_equip_rank(var/mob/person, var/alt_title)
-	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Loss Prevention Associate")]"]"
-	for(var/mob/M in GLOB.player_list)
-		if(M.client && M.mind)
-			if(M.mind.assigned_role == "Workplace Liaison")
-				to_chat(M, SPAN_NOTICE("<b>Your bodyguard, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
-	..()

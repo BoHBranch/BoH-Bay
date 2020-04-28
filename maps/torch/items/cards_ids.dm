@@ -229,3 +229,8 @@
 /obj/item/weapon/card/id/torch/crew/psiadvisor
 	job_access_type = /datum/job/psiadvisor
 	detail_color = COLOR_COMMAND_BLUE
+
+/obj/item/weapon/card/id/torch/crew/blueshield
+	color = COLOR_BOTTLE_GREEN
+	detail_color = COLOR_COMMAND_BLUE
+	job_access_type = /datum/job/blueshield
