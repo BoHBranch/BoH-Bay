@@ -14,9 +14,9 @@ This file will primarily contain material relating to either Foundation Agents o
 	desc = "A handsome black leather briefcase. 'NTPC' appears to be stamped on the handle in an obnoxious blue."
 
 /obj/item/weapon/storage/briefcase/foundation/nt/revolver	
-startswith = list(
-	/obj/item/weapon/gun/projectile/revolver/foundation/agent,
-	/obj/item/ammo_magazine/speedloader/magnum/nullglass=3)
+	startswith = list(
+		/obj/item/weapon/gun/projectile/revolver/foundation/agent,
+		/obj/item/ammo_magazine/speedloader/magnum/nullglass=3)
 
 //////////
 // Unbranded Psyker Gun
