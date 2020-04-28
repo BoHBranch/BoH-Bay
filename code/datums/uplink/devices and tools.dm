@@ -167,6 +167,6 @@
 /datum/uplink_item/item/tools/nabbergloves
 	name = "Insulated Serpentid Gloves"
 	desc = "Insulated gloves, for Serpentids. Need I say more?"
-	item_cost = 6
+	item_cost = 4
 	path = /obj/item/clothing/gloves/nabber
 
