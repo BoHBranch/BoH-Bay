@@ -159,8 +159,8 @@
 		SKILL_MEDICAL = SKILL_BASIC
 	)
 	max_skill = list(
-		SKILL_COMBAT     = SKILL_MAX,
-		SKILL_WEAPONS     = SKILL_MAX
+		SKILL_COMBAT     = SKILL_ADEPT,
+		SKILL_WEAPONS     = SKILL_ADEPT
 	)
 	skill_points = 30
 	access = list(access_psiadvisor, access_security, access_medical, access_engine, access_maint_tunnels, access_external_airlocks,
