@@ -9584,6 +9584,20 @@
 /obj/effect/floor_decal/corner/blue/half,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/sea/marine)
+"aqC" = (
+/obj/structure/table/steel,
+/obj/item/device/multitool,
+/obj/item/weapon/stamp/denied{
+	pixel_x = 5
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/item/weapon/stamp/brig,
+/turf/simulated/floor/tiled/dark,
+/area/security/bo)
 "aqD" = (
 /obj/structure/table/rack,
 /obj/random/action_figure,
@@ -9637,6 +9651,23 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
+"aqK" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	level = 2
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/recharger/wallcharger{
+	pixel_y = 22
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/security/bo)
 "aqL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -10800,6 +10831,13 @@
 /obj/structure/table/gamblingtable,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
+"asw" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 9
+	},
+/obj/machinery/psi_meter,
+/turf/simulated/floor/tiled/white,
+/area/medical/counselor)
 "asx" = (
 /obj/effect/floor_decal/corner/research{
 	dir = 10;
@@ -10887,6 +10925,15 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/ammo)
+"asH" = (
+/obj/structure/table/standard,
+/obj/structure/disposalpipe/segment,
+/obj/item/weapon/paper_bin{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/counselor)
 "asI" = (
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
@@ -13351,23 +13398,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/bo)
-"aEK" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	level = 2
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/item/device/radio/intercom/department/security{
-	pixel_y = 23
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/security/bo)
 "aEL" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -13612,19 +13642,6 @@
 	},
 /obj/structure/cable/green,
 /turf/simulated/floor/plating,
-/area/security/bo)
-"aFR" = (
-/obj/structure/table/steel,
-/obj/item/device/multitool,
-/obj/item/weapon/stamp/denied{
-	pixel_x = 5
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
 /area/security/bo)
 "aFS" = (
 /obj/structure/table/steel,
@@ -18674,17 +18691,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
-"dSR" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 9
-	},
-/obj/structure/table/standard,
-/obj/item/weapon/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/counselor)
 "dTb" = (
 /obj/structure/morgue{
 	dir = 8
@@ -25181,11 +25187,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/teleporter/firstdeck)
-"nEn" = (
-/obj/structure/table/standard,
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/white,
-/area/medical/counselor)
 "nFh" = (
 /obj/structure/table/steel,
 /obj/machinery/photocopier/faxmachine{
@@ -41127,7 +41128,7 @@ aBd
 uJn
 aDF
 aeq
-aFR
+aqC
 aGM
 aHZ
 aJp
@@ -41328,7 +41329,7 @@ gxi
 aBd
 qkc
 aDE
-aEK
+aqK
 aFS
 qig
 vUl
@@ -55861,7 +55862,7 @@ scr
 pWc
 aPc
 ase
-dSR
+asw
 mlb
 avu
 scr
@@ -56063,7 +56064,7 @@ scr
 apP
 jeV
 xYM
-nEn
+asH
 auh
 avv
 awC

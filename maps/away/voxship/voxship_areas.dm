@@ -49,3 +49,7 @@
 /area/voxship/shuttle
 	name = "\improper Unknown Signature"
 	icon_state = "shuttle"
+
+/area/voxship/bioreactor
+	name = "\improper Bioreactor"
+	icon_state = "engineering"
