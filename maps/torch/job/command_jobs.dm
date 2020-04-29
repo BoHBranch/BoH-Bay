@@ -408,8 +408,8 @@
 	minimal_player_age = 2
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/blueshield
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(/datum/mil_branch/civilian,	/datum/mil_branch/solgov)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor, /datum/mil_rank/sol/agent)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
@@ -430,3 +430,23 @@
 						access_cargo, access_solgov_crew, access_hangar,
 						access_commissary, access_petrov,
 						access_sec_guard)
+/*	defer_roundstart_spawn = TRUE
+
+/datum/job/bodyguard/is_position_available()
+	if(..())
+		for(var/mob/M in GLOB.player_list)
+			if(M.client && M.mind && M.mind.assigned_role == "Workplace Liaison")
+				return TRUE
+	return FALSE
+
+/datum/job/bodyguard/get_description_blurb()
+	return "You are the Loss Prevention Associate. You are an employee of NT, specifically the Surveyor Corps branch, and your job is to prevent the loss of the Liason's life - even at the cost of your own. Good luck."
+
+/datum/job/bodyguard/post_equip_rank(var/mob/person, var/alt_title)
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Loss Prevention Associate")]"]"
+	for(var/mob/M in GLOB.player_list)
+		if(M.client && M.mind)
+			if(M.mind.assigned_role == "Workplace Liaison")
+				to_chat(M, SPAN_NOTICE("<b>Your bodyguard, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
+	..()
+*/
