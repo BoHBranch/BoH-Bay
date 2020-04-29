@@ -64,7 +64,7 @@
 /obj/item/weapon/tank/phoron_big
 	name = "large phoron tank"
 	icon_state = "phoron_big"
-	distribute_pressure = ONE_ATMOSPHERE*O2STANDARD
+	distribute_pressure = 12
 	starting_pressure = list(GAS_PHORON = 10*ONE_ATMOSPHERE)
 	volume = 180
 
@@ -129,6 +129,7 @@
 	icon_state = "emergency_phoron"
 	gauge_icon = "indicator_emergency"
 	starting_pressure = list(GAS_PLASMA = 10*ONE_ATMOSPHERE)
+	distribute_pressure = 12
 
 /obj/item/weapon/tank/emergency/nitrogen/double
 	name = "double emergency nitrogen tank"
