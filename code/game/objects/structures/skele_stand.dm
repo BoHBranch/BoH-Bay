@@ -26,7 +26,8 @@
 		var/removed = show_radial_menu(user, src, swag)
 		var/obj/item/clothing/C = swag[removed]
 		if(removed)
-			swag -= swag[removed]
+			swag -= removed
+			swag[removed] = null
 			user.put_in_hands(C)
 			to_chat(user,"<span class='notice'>You take \the [C] off \the [src]</span>")
 			update_icon()
