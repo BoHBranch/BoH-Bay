@@ -11,6 +11,7 @@
 	choices["Wrench"] = image('icons/obj/tools.dmi', "wrench")
 	choices["Screwdriver"] = image('icons/obj/tools.dmi', "screwdriver_preview")
 	choices["Wirecutters"] = image('icons/obj/tools.dmi', "cutters_preview")
+	choices["Multitool"] = image('icons/obj/device.dmi', "multitool")
 	choices["Dismiss"] = image('icons/misc/mark.dmi', "x3")
 
 /obj/item/psychic_power/tinker/iscrowbar()
@@ -24,6 +25,9 @@
 
 /obj/item/psychic_power/tinker/iswirecutter()
 	return emulating == "Wirecutters"
+
+/obj/item/psychic_power/tinker/ismultitool()
+	return emulating == "Multitool"
 
 /obj/item/psychic_power/tinker/attack_self()
 
