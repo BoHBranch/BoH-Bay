@@ -19,7 +19,7 @@
 	valid_colors = null
 	max_force = 10
 
-  var/list/tool_icons
+	var/list/tool_icons
 	color = COLOR_NT_RED
 	var/active_tool = SWISSKNF_CLOSED
 	var/tools = list(SWISSKNF_LBLADE, SWISSKNF_SBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_CSCREW, SWISSKNF_GBLADE, SWISSKNF_WCUTTER, SWISSKNF_WBLADE, SWISSKNF_CROWBAR)
