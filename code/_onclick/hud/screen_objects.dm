@@ -257,7 +257,7 @@
 							for(var/i=1, i<tankcheck.len+1, ++i)
 								if(istype(tankcheck[i], /obj/item/weapon/tank))
 									var/obj/item/weapon/tank/t = tankcheck[i]
-									to_chat(C,"We breathe [breathes] and we're checking [t].")
+									to_chat(C,"We breathe [breathes] and we're checking [t]. It has a score of [t.air_contents.gas[breathes]].")
 									contents.Add(t.air_contents.gas[breathes])
 								else
 									//no tank so we set contents to 0
@@ -266,7 +266,7 @@
 							//Alright now we know the contents of the tanks so we have to pick the best one.
 							var/best = 0
 							var/bestcontents = 0
-							for(var/i=1, i <  contents.len + 1 , ++i)
+							for(var/i=1, i <= contents.len, i++)
 								if(!contents[i])
 									continue
 								if(contents[i] > bestcontents)

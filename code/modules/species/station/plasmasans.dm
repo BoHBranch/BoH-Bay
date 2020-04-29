@@ -26,6 +26,9 @@
 	blood_color = "#4d224d"
 	reagent_tag = IS_PLASMASANS
 
+	breath_pressure = 10
+	max_pressure_diff = 80
+
 	hunger_factor = 0
 	taste_sensitivity = TASTE_DULL //Question is how could they taste anything in the first place?
 	gluttonous = GLUT_NONE
@@ -123,10 +126,10 @@
 	H.equip_to_slot_or_del(new /obj/item/clothing/suit/space/plasmasans(H), slot_wear_suit)
 
 	if(H.get_equipped_item(slot_s_store))
-		H.equip_to_slot_or_del(new /obj/item/weapon/tank/phoron/plasmasans(H), slot_r_hand)
+		H.equip_to_slot_or_del(new /obj/item/weapon/tank/phoron_big(H), slot_r_hand)
 		H.set_internals(H.r_hand)
 	else
-		H.equip_to_slot_or_del(new /obj/item/weapon/tank/phoron/plasmasans(H), slot_s_store)
+		H.equip_to_slot_or_del(new /obj/item/weapon/tank/phoron_big(H), slot_s_store)
 		H.set_internals(H.s_store)
 
 	if(istype(H.get_equipped_item(slot_back), /obj/item/weapon/storage/backpack))
