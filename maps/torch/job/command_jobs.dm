@@ -278,7 +278,7 @@
 	return "You are the Chief of Security. You manage ship security. The Masters at Arms and the Military Police, as well as the Brig Chief and the Forensic Technician. You keep the vessel safe. You handle both internal and external security matters. You are the law. You are subordinate to the CO and the XO. You are expected to know the SCMJ and Sol law and Alert Procedure to a very high degree along with general regulations."
 
 /datum/job/representative
-	title = "SolGov Representative"
+	title = "Chief Magistrate"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
@@ -301,7 +301,7 @@
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
 /datum/job/representative/get_description_blurb()
-	return "You are the Sol Gov Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and corporate interests on board. Send faxes back to Sol on mission progress and important events."
+	return "You are the Chief Magistrate. Your job is to be an unbiased defender of the law, dealing with any ethical or legal issues aboard the ship and informing and advising the Commanding Officer of them. Ensure that the legal process is carried out, and that the security force is enforcing the law correctly."
 
 /datum/job/sea
 	title = "Senior Enlisted Advisor"
