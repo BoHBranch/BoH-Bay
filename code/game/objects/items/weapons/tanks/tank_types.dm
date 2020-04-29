@@ -61,6 +61,9 @@
 	slot_flags = null	//they have no straps!
 	starting_pressure = list(GAS_PHORON = 3*ONE_ATMOSPHERE)
 
+/obj/item/weapon/tank/phoron/plasmasans
+	starting_pressure = list(GAS_OXYGEN = 12*ONE_ATMOSPHERE)
+
 /*
  * Hydrogen
  */
