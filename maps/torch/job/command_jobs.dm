@@ -432,21 +432,21 @@
 						access_sec_guard)
 /*	defer_roundstart_spawn = TRUE
 
-/datum/job/bodyguard/is_position_available()
+/datum/job/blueshield/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
-			if(M.client && M.mind && M.mind.assigned_role == "Workplace Liaison")
+			if(M.client && M.mind && M.mind.assigned_role == "Chief Magistrate")
 				return TRUE
 	return FALSE
 
-/datum/job/bodyguard/get_description_blurb()
-	return "You are the Loss Prevention Associate. You are an employee of NT, specifically the Surveyor Corps branch, and your job is to prevent the loss of the Liason's life - even at the cost of your own. Good luck."
+/datum/job/blueshield/get_description_blurb()
+	return "You are the Arbiter. You are the assistant of the Chief Magistrate. Your job is to assist and protect him in his endeavours. Good luck."
 
-/datum/job/bodyguard/post_equip_rank(var/mob/person, var/alt_title)
-	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Loss Prevention Associate")]"]"
+/datum/job/blueshield/post_equip_rank(var/mob/person, var/alt_title)
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Arbiter")]"]"
 	for(var/mob/M in GLOB.player_list)
 		if(M.client && M.mind)
-			if(M.mind.assigned_role == "Workplace Liaison")
+			if(M.mind.assigned_role == "Chief Magistrate")
 				to_chat(M, SPAN_NOTICE("<b>Your bodyguard, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
 	..()
 */
