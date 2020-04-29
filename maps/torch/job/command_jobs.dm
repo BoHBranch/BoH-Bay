@@ -397,7 +397,7 @@
 
 
 /datum/job/blueshield
-	title = "Blueshield"
+	title = "Arbiter"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
@@ -420,9 +420,9 @@
 	                    SKILL_FORENSICS   = SKILL_MAX)
 
 	alt_titles = list(
-		"Union Enforcer" = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/union,
-		"Executive Assistant",
-		"Asset Protection Agent"
+		"Bailiff",
+		"Judicial Assistant",
+		"Court Officer"
 	)
 	skill_points = 20
 	access = list(access_representative, access_maint_tunnels, access_security, access_medical,
