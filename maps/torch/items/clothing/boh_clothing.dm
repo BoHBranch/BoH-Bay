@@ -112,7 +112,7 @@
 	shoes = /obj/item/clothing/shoes/dress
 	pda_type = /obj/item/modular_computer/pda/heads
 	id_type = /obj/item/weapon/card/id/torch/crew/psiadvisor
-	l_hand =   /obj/item/weapon/storage/briefcase/foundation/revolver
+	l_hand =   /obj/item/weapon/storage/briefcase/foundation
 	holster =  /obj/item/clothing/accessory/storage/holster/waist
 
 /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor/nt
