@@ -102,6 +102,29 @@
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger, 50)
 	)
 
+/obj/structure/closet/secure_closet/blueshield
+	name = "\improper judicial protection locker"
+	req_access = list(access_sec_guard)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/corporate/bodyguard
+
+/obj/structure/closet/secure_closet/bodyguard/WillContain()
+	return list(
+		/obj/item/device/flash,
+		/obj/item/clothing/accessory/storage/holster/armpit,
+		/obj/item/gunbox/bodyguard,
+		/obj/item/weapon/storage/secure/briefcase,
+		/obj/item/clothing/shoes/laceup,
+		/obj/item/clothing/under/det,
+		/obj/item/clothing/suit/storage/toggle/suit/black,
+		/obj/item/clothing/gloves/color/black,
+		/obj/item/clothing/head/helmet,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
+		/obj/item/clothing/accessory/armguards,
+		/obj/item/clothing/accessory/legguards,
+		/obj/item/clothing/glasses/sunglasses/big,
+		/obj/item/device/radio/headset/headset_com
+	)
+
 //equipment closets that everyone on the crew or in research can access, for storing things securely
 
 /obj/structure/closet/secure_closet/crew
