@@ -283,7 +283,7 @@
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Sol Central Government and the SCG Charter"
+	supervisors = "Central Command The Galilei Convention and the Ship Regulations"
 	selection_color = "#2f2f7f"
 	economic_power = 15
 	minimal_player_age = 0
