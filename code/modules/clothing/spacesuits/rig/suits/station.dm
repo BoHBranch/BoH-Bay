@@ -21,7 +21,6 @@
 /obj/item/weapon/rig/light/internalaffairs/equipped
 	initial_modules = list(
 		/obj/item/rig_module/ai_container,
-		/obj/item/rig_module/device/flash,
 		/obj/item/rig_module/device/paperdispenser,
 		/obj/item/rig_module/device/pen,
 		/obj/item/rig_module/device/stamp,
