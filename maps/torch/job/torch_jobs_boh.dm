@@ -462,7 +462,7 @@
 		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc,
 		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc/agent,
 		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/saare,
-		/datum/mil_rank/sol/agent,
+		/datum/mil_rank/sol/agent = /decl/hierarchy/outfit/job/torch/crew/command/blueshield/agent,
 		/datum/mil_rank/civ/contractor
 	)
 

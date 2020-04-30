@@ -301,7 +301,7 @@
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
 /datum/job/representative/get_description_blurb()
-	return "You are the Chief Magistrate. Your job is to be an unbiased defender of the law, dealing with any ethical or legal issues aboard the ship and informing and advising the Commanding Officer of them. Ensure that the legal process is carried out, and that the security force is enforcing the law correctly."
+	return "You are the Chief Magistrate. Your job is to be an unbiased defender of the law, dealing with any ethical or legal issues aboard the ship and informing and advising the Commanding Officer of them. Ensure that the ship regulations are upheld and that the security force is enforcing the law correctly."
 
 /datum/job/sea
 	title = "Senior Enlisted Advisor"
@@ -408,8 +408,10 @@
 	minimal_player_age = 2
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/blueshield
-	allowed_branches = list(/datum/mil_branch/civilian,	/datum/mil_branch/solgov)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor, /datum/mil_rank/sol/agent)
+	allowed_branches = list(/datum/mil_branch/civilian,
+							/datum/mil_branch/solgov)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor,
+						 /datum/mil_rank/sol/agent)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,

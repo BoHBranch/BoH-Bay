@@ -127,10 +127,16 @@
 //Blueshield
 
 /decl/hierarchy/outfit/job/torch/crew/command/blueshield
-	name = OUTFIT_JOB_NAME("Blueshield")
+	name = OUTFIT_JOB_NAME("Arbiter")
 	l_ear = /obj/item/device/radio/headset/headset_com
-	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
-	suit = /obj/item/clothing/suit/storage/toggle/suit/black
-	shoes = /obj/item/clothing/shoes/laceup
+	uniform = /obj/item/clothing/under/syndicate/tacticool
+	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew/blueshield
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
+
+
+/decl/hierarchy/outfit/job/torch/crew/command/blueshield/agent
+	name = OUTFIT_JOB_NAME("Arbiter - Agent")
+	uniform = /obj/item/clothing/under/det
+	suit = /obj/item/clothing/suit/storage/toggle/agent_jacket
+	shoes = /obj/item/clothing/shoes/dress
