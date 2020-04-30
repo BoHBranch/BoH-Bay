@@ -156,8 +156,8 @@
 		/obj/item/clothing/gloves/white,
 		/obj/item/clothing/shoes/dress,
 		/obj/item/weapon/storage/box/large/psinullers,
-		/obj/item/weapon/storage/briefcase/foundation,
-		/obj/item/weapon/storage/secure/briefcase/jerraman,
+		/obj/item/gunbox/psyker,
+//		/obj/item/weapon/storage/secure/briefcase/jerraman,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel/grey)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger))
 	)
