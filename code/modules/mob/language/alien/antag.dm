@@ -51,7 +51,8 @@
 
 /datum/language/vox
 	name = LANGUAGE_VOX
-	desc = "The common tongue of the various Vox ships making up the Shoal. It sounds like chaotic shrieking to everyone else."
+	desc = "Vox communicate via Vox Dei, which is impossible to replicate by non-Vox.\
+	It is produced not only by their vocal system, but also by the position of their beak segments during conversation."
 	speech_verb = "shrieks"
 	ask_verb = "creels"
 	exclaim_verb = "SHRIEKS"

@@ -10,11 +10,11 @@
 		"bewilderingly complex"
 		)
 	chargen_value_descriptors = list(
-		"servitor"  =     1,
-		"labourer" =      2,
-		"cannon fodder" = 3,
-		"raider" =        4,
-		"leader" =        5
+		"Dutiful Servant"  =    1,
+		"Talented Technician" = 2,
+		"Skilled Artisan" =     3,
+		"Loyal Veteran" =       4,
+		"Sacred Command" =      5
 		)
 	comparative_value_descriptor_equivalent = "around the same importance as yours"
 	comparative_value_descriptors_smaller = list(
