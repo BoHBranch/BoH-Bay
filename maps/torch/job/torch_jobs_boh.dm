@@ -467,7 +467,8 @@
 	)
 
 /datum/job/bodyguard/get_description_blurb()
-	return "You are the blueshield."
+	return "You are the Arbiter. You are the assistant of the Chief Magistrate. Your job is to assist and protect him in his endeavours. Good luck."
+
 /***/
 
 // Misc
