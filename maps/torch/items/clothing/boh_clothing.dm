@@ -131,6 +131,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_com
 	uniform = /obj/item/clothing/under/syndicate/tacticool
 	shoes = /obj/item/clothing/shoes/dutyboots
+	suit = /obj/item/clothing/suit/storage/leather_jacket
 	id_type = /obj/item/weapon/card/id/torch/crew/blueshield
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
 
