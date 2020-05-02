@@ -106,7 +106,7 @@
 
 /obj/structure/closet/secure_closet/blueshield
 	name = "\improper judicial protection locker"
-	req_access = list(access_sec_guard)
+	req_access = list(access_representative)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/corporate/bodyguard
 
 /obj/structure/closet/secure_closet/bodyguard/WillContain()
