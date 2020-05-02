@@ -58,7 +58,7 @@
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "drill"
 	hitsound = 'sound/weapons/circsawhit.ogg'
-	matter = list(MATERIAL_STEEL = 1000, MATERIAL_GLASS = 500)
+	matter = list(MATERIAL_STEEL = 2000, MATERIAL_PLASTIC = 1500, MATERIAL_ALUMINIUM = 800)
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	force = 15.0
 	w_class = ITEM_SIZE_NORMAL
@@ -83,7 +83,7 @@
 	throw_speed = 3
 	throw_range = 5
 	origin_tech = list(TECH_MATERIAL = 1, TECH_BIO = 1)
-	matter = list(MATERIAL_STEEL = 200, MATERIAL_GLASS = 100)
+	matter = list(MATERIAL_STEEL = 200, MATERIAL_ALUMINIUM = 100)
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 
 /*
@@ -131,7 +131,7 @@
 	throw_speed = 3
 	throw_range = 5
 	origin_tech = list(TECH_MATERIAL = 1, TECH_BIO = 1)
-	matter = list(MATERIAL_STEEL = 1500,MATERIAL_GLASS = 1000)
+	matter = list(MATERIAL_STEEL = 3000, MATERIAL_ALUMINIUM = 1000, MATERIAL_PLASTIC = 500)
 	attack_verb = list("attacked", "slashed", "sawed", "cut")
 	sharp = 1
 	edge = 1
