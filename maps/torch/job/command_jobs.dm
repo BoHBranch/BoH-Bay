@@ -300,6 +300,10 @@
 
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
+	alt_titles = list(
+				"Chief Prefect"
+				)
+
 /datum/job/representative/get_description_blurb()
 	return "You are the Chief Magistrate. Your job is to be an unbiased defender of the law, dealing with any ethical or legal issues aboard the ship and informing and advising the Commanding Officer of them. Ensure that the ship regulations are upheld and that the security force is enforcing the law correctly."
 
