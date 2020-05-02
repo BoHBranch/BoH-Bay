@@ -50,7 +50,7 @@ This file will primarily contain material relating to either Foundation Agents o
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "ammo" //temp
 
-/obj/item/gunbox/bodyguard/attack_self(mob/living/user)
+/obj/item/gunbox/psyker/attack_self(mob/living/user)
 	var/list/options = list()
 	options["Foundation"] = list(/obj/item/weapon/gun/projectile/revolver/foundation,/obj/item/ammo_magazine/speedloader/magnum/nullglass=3)
 	options["NTPC"] = list(/obj/item/weapon/gun/projectile/revolver/foundation/agent,/obj/item/ammo_magazine/speedloader/magnum/nullglass=3)
