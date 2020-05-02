@@ -112,7 +112,7 @@
 	shoes = /obj/item/clothing/shoes/dress
 	pda_type = /obj/item/modular_computer/pda/heads
 	id_type = /obj/item/weapon/card/id/torch/crew/psiadvisor
-	l_hand =   /obj/item/weapon/storage/briefcase/foundation/revolver
+	l_hand =   /obj/item/weapon/storage/briefcase/foundation
 	holster =  /obj/item/clothing/accessory/storage/holster/waist
 
 /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor/nt
@@ -123,21 +123,3 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 	l_hand =   /obj/item/weapon/storage/briefcase/foundation/nt
 	holster =  /obj/item/clothing/accessory/storage/holster/armpit
-
-//Blueshield
-
-/decl/hierarchy/outfit/job/torch/crew/command/blueshield
-	name = OUTFIT_JOB_NAME("Arbiter")
-	l_ear = /obj/item/device/radio/headset/headset_com
-	uniform = /obj/item/clothing/under/syndicate/tacticool
-	shoes = /obj/item/clothing/shoes/dutyboots
-	suit = /obj/item/clothing/suit/storage/leather_jacket
-	id_type = /obj/item/weapon/card/id/torch/crew/blueshield
-	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
-
-
-/decl/hierarchy/outfit/job/torch/crew/command/blueshield/agent
-	name = OUTFIT_JOB_NAME("Arbiter - Agent")
-	uniform = /obj/item/clothing/under/det
-	suit = /obj/item/clothing/suit/storage/toggle/agent_jacket
-	shoes = /obj/item/clothing/shoes/dress
