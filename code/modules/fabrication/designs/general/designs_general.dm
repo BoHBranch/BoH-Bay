@@ -37,6 +37,9 @@
 /datum/fabricator_recipe/extinguisher
 	path = /obj/item/weapon/extinguisher/empty
 
+/datum/fabricator_recipe/extinguisher_mini
+	path = /obj/item/weapon/extinguisher/mini
+
 /datum/fabricator_recipe/jar
 	path = /obj/item/glass_jar
 
@@ -60,6 +63,9 @@
 
 /datum/fabricator_recipe/tape
 	path = /obj/item/device/tape
+
+/datum/fabricator_recipe/duct_tape
+	path = /obj/item/weapon/tape_roll
 
 /datum/fabricator_recipe/tube/large
 	path = /obj/item/weapon/light/tube/large
