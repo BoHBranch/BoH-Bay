@@ -37,10 +37,6 @@
 	name = "shotgun shell pack (12g), (stun)"
 	path = /obj/item/ammo_magazine/shotholder/stun
 
-/datum/fabricator_recipe/arms_ammo/hidden/shotgun_holder_net
-	name = "shotgun shell pack (12g), (net)"
-	path = /obj/item/ammo_magazine/shotholder/net
-
 /datum/fabricator_recipe/arms_ammo/hidden/speedloader_small
 	name = "speedloader (7mm)"
 	path = /obj/item/ammo_magazine/speedloader/small
@@ -150,7 +146,7 @@
 	path = /obj/item/weapon/magnetic_ammo/skrell/slug
 
 /datum/fabricator_recipe/arms_ammo/hidden/lmg
-	name = "lmg box magazine (7mmmR)"
+	name = "lmg box magazine (7mmR)"
 	path = /obj/item/ammo_magazine/box/machinegun
 
 /datum/fabricator_recipe/arms_ammo/hidden/rcr
