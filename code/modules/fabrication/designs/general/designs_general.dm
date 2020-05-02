@@ -31,6 +31,9 @@
 /datum/fabricator_recipe/flashlight
 	path = /obj/item/device/flashlight
 
+/datum/fabricator_recipe/maglight
+	path = /obj/item/device/flashlight/maglight
+
 /datum/fabricator_recipe/floor_light
 	path = /obj/machinery/floor_light
 
@@ -38,7 +41,7 @@
 	path = /obj/item/weapon/extinguisher/empty
 
 /datum/fabricator_recipe/extinguisher_mini
-	path = /obj/item/weapon/extinguisher/mini
+	path = /obj/item/weapon/extinguisher/mini/empty
 
 /datum/fabricator_recipe/jar
 	path = /obj/item/glass_jar

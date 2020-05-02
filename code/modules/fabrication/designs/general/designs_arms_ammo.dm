@@ -13,61 +13,33 @@
 	path = /obj/item/weapon/material/hatchet/machete/steel
 	hidden = TRUE
 
-/datum/fabricator_recipe/arms_ammo/hidden/shotgun
-	name = "shotgun shell (12g), (slug)"
-	path = /obj/item/ammo_casing/shotgun
-
 /datum/fabricator_recipe/arms_ammo/hidden/shotgun_holder_slug
 	name = "shotgun shell pack (12g), (slug)"
-	path = /obj/item/ammo_casing/shotholder
-
-/datum/fabricator_recipe/arms_ammo/hidden/shotgun_buckshot
-	name = "shotgun shell (12g), (buckshot)"
-	path = /obj/item/ammo_casing/shotgun/pellet
+	path = /obj/item/ammo_magazine/shotholder
 
 /datum/fabricator_recipe/arms_ammo/hidden/shotgun_holder_buckshot
 	name = "shotgun shell pack (12g), (buckshot)"
-	path = /obj/item/ammo_casing/shotholder/shell
-
-/datum/fabricator_recipe/arms_ammo/hidden/birdshot
-	name = "shotgun shell (12g), (rubbershot)"
-	path = /obj/item/ammo_casing/shotgun/birdshot
+	path = /obj/item/ammo_magazine/shotholder/shell
 
 /datum/fabricator_recipe/arms_ammo/hidden/shotgun_holder_rubbershot
 	name = "shotgun shell pack (12g), (rubbershot)"
-	path = /obj/item/ammo_casing/shotholder/birdshot
-
-/datum/fabricator_recipe/arms_ammo/hidden/shotgun_beanbag
-	name = "shotgun shell (12g), (beanbag)"
-	path = /obj/item/ammo_casing/shotgun/beanbag
+	path = /obj/item/ammo_magazine/shotholder/birdshot
 
 /datum/fabricator_recipe/arms_ammo/hidden/shotgun_holder_beanbag
 	name = "shotgun shell pack (12g), (beanbag)"
-	path = /obj/item/ammo_casing/shotholder/beanbag
-
-/datum/fabricator_recipe/arms_ammo/hidden/shotgun_flash
-	name = "shotgun shell (12g), (flash)"
-	path = /obj/item/ammo_casing/shotgun/flash
+	path = /obj/item/ammo_magazine/shotholder/beanbag
 
 /datum/fabricator_recipe/arms_ammo/hidden/shotgun_holder_flash
 	name = "shotgun shell pack (12g), (flash)"
-	path = /obj/item/ammo_casing/shotholder/flash
-
-/datum/fabricator_recipe/arms_ammo/hidden/shotgun_stun
-	name = "shotgun shell (12g), (stun)"
-	path = /obj/item/ammo_casing/shotgun/stunshell
+	path = /obj/item/ammo_magazine/shotholder/flash
 
 /datum/fabricator_recipe/arms_ammo/hidden/shotgun_holder_stun
 	name = "shotgun shell pack (12g), (stun)"
-	path = /obj/item/ammo_casing/shotholder/stun
-
-/datum/fabricator_recipe/arms_ammo/hidden/net
-	name = "shotgun shell (12g), (net)"
-	path = /obj/item/ammo_casing/shotgun/net
+	path = /obj/item/ammo_magazine/shotholder/stun
 
 /datum/fabricator_recipe/arms_ammo/hidden/shotgun_holder_net
 	name = "shotgun shell pack (12g), (net)"
-	path = /obj/item/ammo_casing/shotholder/net
+	path = /obj/item/ammo_magazine/shotholder/net
 
 /datum/fabricator_recipe/arms_ammo/hidden/speedloader_small
 	name = "speedloader (7mm)"
@@ -100,10 +72,6 @@
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_pistol_rubber
 	name = "pistol magazine (10mm), (rubber)"
 	path = /obj/item/ammo_magazine/pistol/rubber
-
-/datum/fabricator_recipe/arms_ammo/hidden/magazine_pistol_practice
-	name = "pistol magazine (10mm), (practice)"
-	path = /obj/item/ammo_magazine/pistol/practice
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_pistol_double
 	name = "pistol magazine (10mm), (extended)"
@@ -167,7 +135,7 @@
 
 /datum/fabricator_recipe/arms_ammo/hidden/bullpupbad_practice
 	name = "rifle magazine (5mmR), (practice)"
-	path = /obj/item/ammo_magazine/mil_rifle/sec/practice
+	path = /obj/item/ammo_magazine/mil_rifle/practice
 
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_arifle
 	name = "rifle magazine (7mmR)"
