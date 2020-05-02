@@ -106,8 +106,9 @@
 
 //projectile
 /obj/item/projectile/bullet/pistol/large
-	damage = 50
-	armor_penetration = 10
+	damage = 85
+	armor_penetration = 15
+	agony = 25
 
 //mag
 /obj/item/ammo_magazine/speedloader/large
@@ -115,7 +116,7 @@
 	icon_state = "spdloader_magnum"
 	caliber = CALIBER_PISTOL_MAGNUM_LARGE
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
-	matter = list(MATERIAL_STEEL = 1240)
+	matter = list(MATERIAL_STEEL = 50000) //Same as the RCD, retardedly high, for good reason.
 	max_ammo = 6
 	multiple_sprites = 1
 
