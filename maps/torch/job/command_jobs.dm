@@ -432,7 +432,7 @@
 						access_cargo, access_solgov_crew, access_hangar,
 						access_commissary, access_petrov,
 						access_sec_guard)
-/*	defer_roundstart_spawn = TRUE
+	defer_roundstart_spawn = TRUE
 
 /datum/job/blueshield/is_position_available()
 	if(..())
@@ -451,4 +451,3 @@
 			if(M.mind.assigned_role == "Chief Magistrate")
 				to_chat(M, SPAN_NOTICE("<b>Your bodyguard, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
 	..()
-*/
