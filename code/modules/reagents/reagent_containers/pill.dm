@@ -88,7 +88,7 @@
 
 /obj/item/weapon/reagent_containers/pill/cyanide
 	name = "strange pill"
-	desc = "It's marked 'KCN'. Smells vaguely of almonds."
+	desc = "A strange, unmarked pill. You probably shouldn't eat this."
 	icon_state = "pillC"
 	volume = 50
 	reagents_to_add = list(/datum/reagent/toxin/cyanide = 50)
@@ -179,6 +179,12 @@
 	desc = "The surface of this unlabelled pill crawls against your skin."
 	icon_state = "pill2"
 	reagents_to_add = list(/datum/reagent/three_eye = 10)
+
+/obj/item/weapon/reagent_containers/pill/jerraman
+	name = "golden pill"
+	desc = "The golden surface of this unlabelled pill seems to shimmer."
+	icon_state = "pill12"
+	reagents_to_add = list(/datum/reagent/jerraman = 4)
 
 /obj/item/weapon/reagent_containers/pill/spaceacillin
 	name = "Spaceacillin (10u)"

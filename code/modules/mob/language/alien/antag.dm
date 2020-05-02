@@ -35,6 +35,9 @@
 		var/mob/living/carbon/M = speaker
 		B = M.has_brain_worms()
 	else if(istype(speaker,/mob/living/simple_animal/borer))
+		if(B.neutered)
+			to_chat(B, SPAN_WARNING("You lack the ability to broadcast your thoughts."))
+			return FALSE
 		B = speaker
 
 	if(B)

@@ -282,30 +282,31 @@ obj/item/organ/external/take_general_damage(var/amount, var/silent = FALSE)
 	if(agony_amount && owner && can_feel_pain())
 		agony_amount -= (owner.chem_effects[CE_PAINKILLER]/2)//painkillers does wonders!
 		agony_amount += get_pain()
+		var/drop_prob = 100 * (agony_amount/max_damage)
 		if(agony_amount < 5) return
 
 		if(limb_flags & ORGAN_FLAG_CAN_GRASP)
-			if(prob((agony_amount/max_damage)*100))
+			if(prob(drop_prob * (agony_amount/max_damage)))
 				owner.grasp_damage_disarm(src)
 				return 1
 
 		else if((limb_flags & ORGAN_FLAG_CAN_STAND))
-			if(prob((agony_amount/max_damage)*100))
+			if(prob(drop_prob * (agony_amount/max_damage)))
 				owner.stance_damage_prone(src)
 				return 1
 
-		else if(agony_amount > 0.5 * max_damage)
+		else if(agony_amount > 0.50 * max_damage)
 			owner.visible_message("<span class='warning'>[owner] reels in pain!</span>")
 			if(has_genitals() || agony_amount > max_damage)
-				owner.Weaken(4)
+				owner.Weaken(3)
 			else
-				owner.Stun(4)
+				owner.Stun(3)
 				owner.drop_l_hand()
 				owner.drop_r_hand()
 			return 1
 
 /obj/item/organ/external/proc/get_agony_multiplier()
-	return has_genitals() ? 2 : 1
+	return has_genitals() ? 2 : 1 //from wikipedia the free encyclopedia
 
 /obj/item/organ/external/proc/sever_artery()
 	if(species && species.has_organ[BP_HEART])

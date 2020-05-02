@@ -1473,6 +1473,11 @@
 "dj" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/weapon/storage/firstaid/surgery/ascent,
+/obj/item/clothing/gloves/latex/nitrile{
+	color = "PURPLE";
+	desc = "Sterile... gloves?";
+	name = "mantis surgical gloves"
+	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
 "dk" = (
@@ -2065,6 +2070,7 @@
 /obj/structure/table/rack/shelf/steel,
 /obj/item/device/flashlight/lamp/floodlamp/ascent,
 /obj/item/device/flashlight/lamp/floodlamp/ascent,
+/obj/item/device/geiger,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_center)
 "eD" = (
@@ -2081,7 +2087,10 @@
 /area/ship/ascent/subdeck_center)
 "eF" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/device/geiger,
+/obj/item/device/paicard,
+/obj/item/device/paicard,
+/obj/item/device/paicard,
+/obj/item/device/paicard,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_center)
 "eG" = (

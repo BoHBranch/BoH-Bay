@@ -76,3 +76,59 @@
 	name = "point defense battery"
 	desc = "A Kuiper pattern anti-meteor battery. Capable of destroying most threats in a single salvo."
 	initial_id_tag = "iccgpd"
+
+/////////
+// Vox Bioreactor
+/////////
+//temp
+/obj/machinery/power/ascent_reactor/vox
+	name = "bio fusion stack"
+	desc = "A tall, gleaming assemblage of advanced alien machinery. It hums and crackles with restrained power."
+	icon = 'icons/obj/machines/power/fusion_core.dmi'
+	icon_state = "core1"
+	color = COLOR_DARK_GREEN_GRAY
+	output_power = 15 KILOWATTS //Temp number to make up for the fact that I'm too out of it to actually add a proper bio reactor rn. -Carl
+
+/obj/machinery/power/ascent_reactor/attack_hand(mob/user)
+	. = ..()
+
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(H.species.name != SPECIES_VOX && H.species.name != SPECIES_VOX_ARMALIS)
+			to_chat(H, SPAN_WARNING("You have no idea how to use \the [src]."))
+			return
+
+	user.visible_message(SPAN_NOTICE("\The [user] switches \the [src] [on ? "off" : "on"]."))
+	on = !on
+	update_icon()
+
+/obj/machinery/power/ascent_reactor/vox/on_update_icon()
+	. = ..()
+
+	if(!field_image)
+		field_image = image(icon = 'icons/obj/machines/power/fusion.dmi', icon_state = "emfield_s1")
+		field_image.color = COLOR_BOTTLE_GREEN
+		field_image.alpha = 50
+		field_image.layer = SINGULARITY_LAYER
+		field_image.appearance_flags |= RESET_COLOR
+
+		var/matrix/M = matrix()
+		M.Scale(3)
+		field_image.transform = M
+
+	if(on)
+		overlays |= field_image
+		set_light(0.8, 1, 6, l_color = COLOR_BOTTLE_GREEN)
+		icon_state = "core1"
+	else
+		overlays -= field_image
+		set_light(0)
+		icon_state = "core0"
+
+/obj/machinery/power/ascent_reactor/vox/Initialize()
+	. = ..()
+	update_icon()
+
+/obj/machinery/power/ascent_reactor/vox/Process()
+	if(on)
+		add_avail(output_power)
