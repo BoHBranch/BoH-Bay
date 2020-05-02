@@ -29,7 +29,7 @@
 #undef HUMAN_ONLY_JOBS
 
 	allowed_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos,
-						/datum/job/liaison, /datum/job/bodyguard, /datum/job/representative, /datum/job/sea, /datum/job/sea/marine, /datum/job/psiadvisor,
+						/datum/job/liaison, /datum/job/bodyguard, /datum/job/representative,  /datum/job/blueshield, /datum/job/sea, /datum/job/sea/marine, /datum/job/psiadvisor,
 						/datum/job/bridgeofficer, /datum/job/pathfinder, /datum/job/nt_pilot, /datum/job/explorer,
 						/datum/job/senior_engineer, /datum/job/engineer, /datum/job/roboticist, /datum/job/engineer_trainee,
 						/datum/job/officer, /datum/job/warden, /datum/job/detective, /datum/job/seccadet,
@@ -41,7 +41,7 @@
 						/datum/job/senior_scientist, /datum/job/scientist, /datum/job/scientist_assistant,
 						/datum/job/ai, /datum/job/cyborg,
 						/datum/job/crew, /datum/job/assistant,
-						/datum/job/merchant, /datum/job/symbiote, /datum/job/blueshield
+						/datum/job/merchant, /datum/job/symbiote,
 						)
 
 	access_modify_region = list(
