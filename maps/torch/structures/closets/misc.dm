@@ -109,7 +109,7 @@
 	req_access = list(access_representative)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/corporate/bodyguard
 
-/obj/structure/closet/secure_closet/bodyguard/WillContain()
+/obj/structure/closet/secure_closet/blueshield/WillContain()
 	return list(
 		/obj/item/device/flash,
 		/obj/item/clothing/accessory/storage/holster/armpit,
