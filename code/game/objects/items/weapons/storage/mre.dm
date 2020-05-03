@@ -7,6 +7,7 @@ MRE Stuff
 	desc = "A vacuum-sealed bag containing a day's worth of nutrients for an adult in strenuous situations. There is no visible expiration date on the package."
 	icon = 'icons/obj/food.dmi'
 	icon_state = "mre"
+	matter = list(MATERIAL_PLASTIC = 200, ALUMINIUM = 100)
 	storage_slots = 7
 	max_w_class = ITEM_SIZE_SMALL
 	opened = FALSE
@@ -122,6 +123,7 @@ MRE Stuff
 	desc = "A vacuum-sealed bag containing the MRE's main course. Self-heats when opened."
 	icon = 'icons/obj/food.dmi'
 	icon_state = "pouch_medium"
+	matter = list(MATERIAL_PLASTIC = 100, ALUMINIUM = 50)
 	storage_slots = 1
 	w_class = ITEM_SIZE_SMALL
 	max_w_class = ITEM_SIZE_SMALL
