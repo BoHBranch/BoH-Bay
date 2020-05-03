@@ -190,3 +190,75 @@
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "bottle-3"
 	reagents_to_add = list(/datum/reagent/nutriment/biomass = 60)
+
+/obj/item/weapon/reagent_containers/glass/bottle/zombiepowder
+	name = "Bottle"
+	desc = "A small bottle."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/toxin/zombiepowder = 30)
+
+/obj/item/weapon/reagent_containers/glass/bottle/lexorin
+	name = "Bottle"
+	desc = "A small bottle."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/lexorin = 30)
+
+/obj/item/weapon/reagent_containers/glass/bottle/vecuronium_bromide
+	name = "Bottle"
+	desc = "A small bottle."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/vecuronium_bromide = 30)
+
+/obj/item/weapon/reagent_containers/glass/bottle/impedrezene
+	name = "Bottle"
+	desc = "A small bottle"
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/impedrezene = 30)
+
+/obj/item/weapon/reagent_containers/glass/bottle/carpotoxin
+	name = "Bottle"
+	desc = "A small bottle"
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/toxin/carpotoxin = 30)
+
+/obj/item/weapon/reagent_containers/glass/bottle/lipozine
+	name = "Bottle"
+	desc = "A small bottle"
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/lipozine = 30)
+
+/obj/item/weapon/reagent_containers/glass/bottle/adrenaline
+	name = "Bottle"
+	desc = "A small bottle"
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/adrenaline = 30)
+
+/obj/item/weapon/reagent_containers/glass/bottle/napalm
+	name = "Bottle"
+	desc = "A small bottle"
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/napalm = 30)
+
+/obj/item/weapon/reagent_containers/glass/bottle/thermite
+	name = "Bottle"
+	desc = "A small bottle"
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/thermite = 30)
+
+/obj/item/weapon/reagent_containers/glass/bottle/drugmix
+	name = "Bottle"
+	desc = "A small bottle"
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/space_drugs = 15,
+							/datum/reagent/mindbreaker = 15
+							)
