@@ -301,7 +301,8 @@
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
 	alt_titles = list(
-				"Chief Prefect"
+				"Chief Prefect",
+				"Chief Adjudicator"
 				)
 
 /datum/job/representative/get_description_blurb()
