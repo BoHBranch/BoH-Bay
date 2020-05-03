@@ -5679,13 +5679,6 @@
 "ld" = (
 /turf/simulated/open,
 /area/crew_quarters/mess)
-"le" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/maintenance{
-	name = "Changing Room"
-	},
-/turf/simulated/floor/tiled/white,
-/area/maintenance/thirddeck/foreport)
 "lf" = (
 /obj/structure/railing/mapped,
 /obj/random/junk,
@@ -16034,10 +16027,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
-"Gn" = (
-/obj/structure/railing/mapped,
-/turf/simulated/floor,
-/area/maintenance/thirddeck/foreport)
 "Gq" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -16665,6 +16654,13 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
+"Il" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance{
+	name = "Changing Room"
+	},
+/turf/simulated/floor/tiled/white,
+/area/maintenance/thirddeck/foreport)
 "Im" = (
 /obj/machinery/shield_diffuser,
 /obj/machinery/door/blast/regular{
@@ -19050,6 +19046,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
+"OD" = (
+/obj/structure/railing/mapped,
+/turf/simulated/floor,
+/area/maintenance/thirddeck/foreport)
 "OE" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/portable_atmospherics/powered/pump/filled,
@@ -37224,7 +37224,7 @@ Ma
 ZJ
 zS
 zS
-le
+Il
 zS
 zS
 zS
@@ -37430,7 +37430,7 @@ BX
 wX
 Yb
 zS
-Gn
+OD
 LW
 BV
 BV
@@ -37632,7 +37632,7 @@ JN
 zS
 zC
 zS
-Gn
+OD
 Bq
 BV
 BV
@@ -37834,7 +37834,7 @@ Yb
 zS
 zS
 zS
-Gn
+OD
 Bq
 BV
 BV
@@ -38036,7 +38036,7 @@ Yb
 zS
 Oo
 zS
-Gn
+OD
 Bq
 GW
 BV
@@ -38238,7 +38238,7 @@ zw
 zp
 Yb
 zS
-Gn
+OD
 Bq
 PB
 BV
