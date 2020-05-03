@@ -16706,10 +16706,6 @@
 /obj/structure/lattice,
 /turf/simulated/floor/reinforced/hydrogen,
 /area/thruster/d1starboard)
-"bgU" = (
-/obj/machinery/vending/security/infantry,
-/turf/simulated/wall/prepainted,
-/area/medical/counselor)
 "bhb" = (
 /obj/machinery/door/blast/regular{
 	id_tag = "cChamber1sV";
@@ -57078,7 +57074,7 @@ sde
 fdQ
 scr
 scr
-bgU
+scr
 scr
 scr
 awF
