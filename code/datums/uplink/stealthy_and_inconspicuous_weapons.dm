@@ -18,19 +18,13 @@
 /datum/uplink_item/item/stealthy_weapons/concealed_cane
 	name = "Concealed Cane Sword"
 	desc = "A cane used by a true gentlemen, especially ones with sharp intentions."
-	item_cost = 8
+	item_cost = 10
 	path = /obj/item/weapon/cane/concealed
-
-/datum/uplink_item/item/stealthy_weapons/random_toxin
-	name = "Random Toxin Vial"
-	desc = "Contains one of an assortment of nasty toxins, with a single syringe included. Don't worry, its labeled. "
-	item_cost = 8
-	path = /obj/item/weapon/storage/box/syndie_kit/toxin
 
 /datum/uplink_item/item/stealthy_weapons/sleepy
 	name = "Paralytic Pen"
 	desc = "Looks and works like a pen, but prick someone with it, and 30 seconds later, they'll be on the ground mumbling."
-	item_cost = 14
+	item_cost = 18
 	path = /obj/item/weapon/pen/reagent/sleepy
 
 /datum/uplink_item/item/stealthy_weapons/syringegun
@@ -39,8 +33,8 @@
 	item_cost = 10
 	path = /obj/item/weapon/storage/box/syndie_kit/syringegun
 
-/datum/uplink_item/item/stealthy_weapons/hfp
-	name = "Vial of Heptafluoropropane"
-	desc = "One of the most dangerous chemicals you could think of, easily vialed up. Be extra careful not to drink it!"
-	item_cost = 64
-	path = /obj/item/weapon/reagent_containers/glass/beaker/vial/hfp
+/datum/uplink_item/item/stealthy_weapons/disguisedflash
+	name = "Flash Camera"
+	desc = "An advanced flashbulb disguised as a camera. It's useful for disorienting and disabling the unprotected, but can be countered by eye protection."
+	item_cost = 10
+	path = /obj/item/device/flash/disguised
