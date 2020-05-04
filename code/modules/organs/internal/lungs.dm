@@ -171,7 +171,6 @@
 		if(prob(20) && active_breathing)
 			if(inhale_efficiency < 0.8)
 				owner.emote("gasp")
-				to_chat(owner,"Gasping because poor inhale efficiency.")
 			else if(prob(20))
 				to_chat(owner, SPAN_WARNING("It's hard to breathe..."))
 		breath_fail_ratio = 1 - inhale_efficiency
@@ -237,8 +236,6 @@
 		if(!owner.is_asystole())
 			if(active_breathing)
 				owner.emote("gasp")
-				//DEBUG
-				to_chat(owner,"Gasping because failed breath.")
 		else
 			owner.emote(pick("shiver","twitch"))
 

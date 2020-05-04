@@ -482,12 +482,18 @@
 	return reagents
 
 /mob/living/carbon/proc/set_nutrition(var/amt)
+	if(species && species.species_flags & SPECIES_FLAG_NO_HUNGER)
+		nutrition = initial(nutrition)
+		return
 	nutrition = Clamp(amt, 0, initial(nutrition))
 
 /mob/living/carbon/proc/adjust_nutrition(var/amt)
 	set_nutrition(nutrition + amt)
 
 /mob/living/carbon/proc/set_hydration(var/amt)
+	if(species && species.species_flags & SPECIES_FLAG_NO_THIRST)
+		hydration = initial(hydration)
+		return
 	hydration = Clamp(amt, 0, initial(hydration))
 
 /mob/living/carbon/proc/adjust_hydration(var/amt)
