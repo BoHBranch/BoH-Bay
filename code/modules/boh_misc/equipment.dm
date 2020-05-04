@@ -12,7 +12,7 @@
 		bomb = ARMOR_BOMB_PADDED,
 		bio =  ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
-		)
+	)
 	max_pressure_protection = ENG_VOIDSUIT_MAX_PRESSURE
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	item_flags = ITEM_FLAG_AIRTIGHT
