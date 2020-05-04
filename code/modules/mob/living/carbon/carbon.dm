@@ -508,7 +508,7 @@
 		if(!source_string)
 			source_string = source.name
 		to_chat(src, "<span class='notice'>You are now running on internals from \the [source_string].</span>")
-		playsound(src, 'sound/effects/internals.ogg', 50, 0)
+		playsound(src, 'sound/effects/internals.ogg', 49, 0)
 	if(old_internal && !internal)
 		to_chat(src, "<span class='warning'>You are no longer running on internals.</span>")
 	if(internals)

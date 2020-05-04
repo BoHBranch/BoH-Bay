@@ -14,7 +14,15 @@
 	breach_threshold = 6
 	can_breach = 1
 	resilience = 0.1
-	armor  = list(DAM_BIO = 100, DAM_RADS = 20)
+	armor = list(
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_MINOR,
+		laser = ARMOR_LASER_MINOR,
+		energy = ARMOR_ENERGY_SHIELDED,
+		bomb = ARMOR_BOMB_PADDED,
+		bio =  ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+	)
 
 
 /obj/item/clothing/head/helmet/space/plasmasans
@@ -30,8 +38,15 @@
 	sprite_sheets = list(
 		SPECIES_PLASMASANS = 'icons/mob/species/plasmasans/onmob_head_plasmasans.dmi'
 		)
-	armor  = list(DAM_BIO = 100, DAM_RADS = 20)
-
+	armor = list(
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_MINOR,
+		laser = ARMOR_LASER_MINOR,
+		energy = ARMOR_ENERGY_SHIELDED,
+		bomb = ARMOR_BOMB_PADDED,
+		bio =  ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+	)
 
 /obj/item/clothing/suit/space/plasmasans/assistant
 	name = "Phoron Restructurant assistant suit"
@@ -47,112 +62,34 @@
 	icon_state = "phorosianAtmos_suit"
 	item_state = "phorosianAtmos_suit"
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	armor  = list(
-		DAM_BLUNT 	= 40,
-		DAM_PIERCE 	= 30,
-		DAM_CUT 	= 40,
-		DAM_BULLET 	= 5,
-		DAM_LASER 	= 20,
-		DAM_ENERGY 	= 5,
-		DAM_BURN 	= 15,
-		DAM_BOMB 	= 35,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 50,
-		DAM_STUN 	= 0)
 
 /obj/item/clothing/head/helmet/space/plasmasans/atmostech
 	name = "Phoron Restructurant atmospheric helmet"
 	icon_state = "phorosianAtmos_helmet0"
 	item_state = "phorosianAtmos_helmet0"
 	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
-	armor  = list(
-		DAM_BLUNT 	= 40,
-		DAM_PIERCE 	= 30,
-		DAM_CUT 	= 40,
-		DAM_BULLET 	= 5,
-		DAM_LASER 	= 20,
-		DAM_ENERGY 	= 5,
-		DAM_BURN 	= 15,
-		DAM_BOMB 	= 35,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 50,
-		DAM_STUN 	= 0)
 
 /obj/item/clothing/suit/space/plasmasans/engineer
 	name = "Phoron Restructurant engineer suit"
 	icon_state = "phorosianEngineer_suit"
 	item_state = "phorosianEngineer_suit"
-	armor  = list(
-		DAM_BLUNT 	= 40,
-		DAM_PIERCE 	= 30,
-		DAM_CUT 	= 40,
-		DAM_BULLET 	= 5,
-		DAM_LASER 	= 20,
-		DAM_ENERGY 	= 5,
-		DAM_BURN 	= 15,
-		DAM_BOMB 	= 35,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 80,
-		DAM_STUN 	= 0)
 
 /obj/item/clothing/head/helmet/space/plasmasans/engineer
 	name = "Phoron Restructurant engineer helmet"
 	icon_state = "phorosianEngineer_helmet0"
 	item_state = "phorosianEngineer_helmet0"
-	armor  = list(
-		DAM_BLUNT 	= 40,
-		DAM_PIERCE 	= 30,
-		DAM_CUT 	= 40,
-		DAM_BULLET 	= 5,
-		DAM_LASER 	= 20,
-		DAM_ENERGY 	= 5,
-		DAM_BURN 	= 15,
-		DAM_BOMB 	= 35,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 80,
-		DAM_STUN 	= 0)
 
 /obj/item/clothing/suit/space/plasmasans/engineer/ce
 	name = "Phoron Restructurant chief engineer suit"
 	icon_state = "phorosianCE"
 	item_state = "phorosianCE"
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	armor  = list(
-		DAM_BLUNT 	= 40,
-		DAM_PIERCE 	= 30,
-		DAM_CUT 	= 40,
-		DAM_BULLET 	= 20,
-		DAM_LASER 	= 20,
-		DAM_ENERGY 	= 10,
-		DAM_BURN 	= 15,
-		DAM_BOMB 	= 35,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 90,
-		DAM_STUN 	= 0)
 
 /obj/item/clothing/head/helmet/space/plasmasans/engineer/ce
 	name = "Phoron Restructurant chief engineer helmet"
 	icon_state = "phorosianCE_helmet0"
 	item_state = "phorosianCE_helmet0"
 	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
-	armor  = list(
-		DAM_BLUNT 	= 40,
-		DAM_PIERCE 	= 30,
-		DAM_CUT 	= 40,
-		DAM_BULLET 	= 20,
-		DAM_LASER 	= 20,
-		DAM_ENERGY 	= 10,
-		DAM_BURN 	= 15,
-		DAM_BOMB 	= 35,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 90,
-		DAM_STUN 	= 0)
 
 //SERVICE
 
@@ -233,38 +170,11 @@
 	name = "Phoron Restructurant miner suit"
 	icon_state = "phorosianMiner_suit"
 	item_state = "phorosianMiner_suit"
-	armor  = list(
-		DAM_BLUNT 	= 50,
-		DAM_PIERCE 	= 40,
-		DAM_CUT 	= 50,
-		DAM_BULLET 	= 10,
-		DAM_LASER 	= 20,
-		DAM_ENERGY 	= 5,
-		DAM_BURN 	= 20,
-		DAM_BOMB 	= 55,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 30,
-		DAM_STUN 	= 2)
-
 
 /obj/item/clothing/head/helmet/space/plasmasans/miner
 	name = "Phoron Restructurant miner helmet"
 	icon_state = "phorosianMiner_helmet0"
 	item_state = "phorosianMiner_helmet0"
-	armor  = list(
-		DAM_BLUNT 	= 50,
-		DAM_PIERCE 	= 40,
-		DAM_CUT 	= 50,
-		DAM_BULLET 	= 10,
-		DAM_LASER 	= 20,
-		DAM_ENERGY 	= 5,
-		DAM_BURN 	= 20,
-		DAM_BOMB 	= 55,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 30,
-		DAM_STUN 	= 2)
 
 /obj/item/clothing/suit/space/plasmasans/miner/alt
 	icon_state = "phorosianMiner_suit_alt"
@@ -280,37 +190,11 @@
 	name = "Phoron Restructurant medical suit"
 	icon_state = "phorosianMedical_suit"
 	item_state = "phorosianMedical_suit"
-	armor  = list(
-		DAM_BLUNT 	= 30,
-		DAM_PIERCE 	= 20,
-		DAM_CUT 	= 30,
-		DAM_BULLET 	= 5,
-		DAM_LASER 	= 20,
-		DAM_ENERGY 	= 5,
-		DAM_BURN 	= 10,
-		DAM_BOMB 	= 25,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 50,
-		DAM_STUN 	= 0)
 
 /obj/item/clothing/head/helmet/space/plasmasans/medical
 	name = "Phoron Restructurant medical helmet"
 	icon_state = "phorosianMedical_helmet0"
 	item_state = "phorosianMedical_helmet0"
-	armor  = list(
-		DAM_BLUNT 	= 30,
-		DAM_PIERCE 	= 20,
-		DAM_CUT 	= 30,
-		DAM_BULLET 	= 5,
-		DAM_LASER 	= 20,
-		DAM_ENERGY 	= 5,
-		DAM_BURN 	= 10,
-		DAM_BOMB 	= 25,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 50,
-		DAM_STUN 	= 0)
 
 /obj/item/clothing/suit/space/plasmasans/medical/paramedic
 	name = "Phoron Restructurant paramedic suit"
@@ -379,37 +263,11 @@
 	name = "Phoron Restructurant security suit"
 	icon_state = "phorosianSecurity_suit"
 	item_state = "phorosianSecurity_suit"
-	armor  = list(
-		DAM_BLUNT 	= 40,
-		DAM_PIERCE 	= 30,
-		DAM_CUT 	= 40,
-		DAM_BULLET 	= 10,
-		DAM_LASER 	= 30,
-		DAM_ENERGY 	= 10,
-		DAM_BURN 	= 10,
-		DAM_BOMB 	= 45,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 10,
-		DAM_STUN 	= 5)
 
 /obj/item/clothing/head/helmet/space/plasmasans/security
 	name = "Phoron Restructurant security helmet"
 	icon_state = "phorosianSecurity_helmet0"
 	item_state = "phorosianSecurity_helmet0"
-	armor  = list(
-		DAM_BLUNT 	= 40,
-		DAM_PIERCE 	= 30,
-		DAM_CUT 	= 40,
-		DAM_BULLET 	= 10,
-		DAM_LASER 	= 30,
-		DAM_ENERGY 	= 10,
-		DAM_BURN 	= 10,
-		DAM_BOMB 	= 45,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 10,
-		DAM_STUN 	= 5)
 
 /obj/item/clothing/suit/space/plasmasans/security/hos
 	name = "Phoron Restructurant head of security suit"
@@ -425,38 +283,11 @@
 	name = "Phoron Restructurant head of personnel suit"
 	icon_state = "phorosianHoP"
 	item_state = "phorosianHoP"
-	armor  = list(
-		DAM_BLUNT 	= 30,
-		DAM_PIERCE 	= 20,
-		DAM_CUT 	= 30,
-		DAM_BULLET 	= 15,
-		DAM_LASER 	= 40,
-		DAM_ENERGY 	= 10,
-		DAM_BURN 	= 10,
-		DAM_BOMB 	= 25,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 10,
-		DAM_STUN 	= 0)
 
 /obj/item/clothing/head/helmet/space/plasmasans/hop
 	name = "Phoron Restructurant head of personnel helmet"
 	icon_state = "phorosianHoP_helmet0"
 	item_state = "phorosianHoP_helmet0"
-	armor  = list(
-		DAM_BLUNT 	= 30,
-		DAM_PIERCE 	= 20,
-		DAM_CUT 	= 30,
-		DAM_BULLET 	= 15,
-		DAM_LASER 	= 40,
-		DAM_ENERGY 	= 10,
-		DAM_BURN 	= 10,
-		DAM_BOMB 	= 25,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 10,
-		DAM_STUN 	= 0)
-
 
 /obj/item/clothing/suit/space/plasmasans/security/captain
 	name = "Phoron Restructurant captain suit"
@@ -473,39 +304,11 @@
 /obj/item/clothing/suit/space/plasmasans/nuclear
 	name = "blood red Phoron Restructurant suit"
 	icon_state = "phorosianNukeops"
-	armor  = list(
-		DAM_BLUNT 	= 60,
-		DAM_PIERCE 	= 50,
-		DAM_CUT 	= 60,
-		DAM_BULLET 	= 50,
-		DAM_LASER 	= 30,
-		DAM_ENERGY 	= 15,
-		DAM_BURN 	= 20,
-		DAM_BOMB 	= 35,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 10,
-		DAM_STUN 	= 0)
-
 
 /obj/item/clothing/head/helmet/space/plasmasans/nuclear
 	name = "blood red Phoron Restructurant helmet"
 	icon_state = "phorosianNukeops_helmet0"
 	item_state = "phorosianNukeops_helmet0"
-	armor  = list(
-		DAM_BLUNT 	= 60,
-		DAM_PIERCE 	= 50,
-		DAM_CUT 	= 60,
-		DAM_BULLET 	= 50,
-		DAM_LASER 	= 30,
-		DAM_ENERGY 	= 15,
-		DAM_BURN 	= 20,
-		DAM_BOMB 	= 35,
-		DAM_EMP 	= 5,
-		DAM_BIO 	= 100,
-		DAM_RADS 	= 10,
-		DAM_STUN 	= 0)
-
 
 /obj/item/device/plasmasanssuit_changer //Can be used to change the type of plasmaman suit.
 	var/used = 0
