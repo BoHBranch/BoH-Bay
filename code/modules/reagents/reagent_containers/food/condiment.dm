@@ -13,6 +13,7 @@
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER
 	possible_transfer_amounts = "1;5;10"
 	center_of_mass = "x=16;y=6"
+	matter = list(MATERIAL_PLASTIC = 100)
 	volume = 50
 	var/list/starting_reagents
 	var/global/list/special_bottles = list(

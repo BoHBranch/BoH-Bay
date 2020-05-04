@@ -6,6 +6,7 @@
 	icon = 'icons/obj/trash.dmi'
 	w_class = ITEM_SIZE_SMALL
 	desc = "This is rubbish."
+	matter = list(MATERIAL_PLASTIC = 50)
 	var/age = 0
 
 /obj/item/trash/New(var/newloc, var/_age)
@@ -56,14 +57,17 @@
 /obj/item/trash/waffles
 	name = "waffles"
 	icon_state = "waffles"
+	matter = list(MATERIAL_ALUMINIUM = 50)
 
 /obj/item/trash/plate
 	name = "plate"
 	icon_state = "plate"
+	matter = list(MATERIAL_GLASS = 80)
 
 /obj/item/trash/snack_bowl
 	name = "snack bowl"
 	icon_state	= "snack_bowl"
+	matter = list(MATERIAL_PLASTIC = 150)
 
 /obj/item/trash/pistachios
 	name = "pistachios pack"
@@ -76,10 +80,12 @@
 /obj/item/trash/fishegg
 	name = "caviar can"
 	icon_state = "fisheggs"
+	matter = list(MATERIAL_ALUMINIUM = 30)
 
 /obj/item/trash/carpegg
 	name = "caviar can"
 	icon_state = "carpeggs"
+	matter = list(MATERIAL_ALUMINIUM = 30)
 
 /obj/item/trash/salo
 	name = "salo pack"
@@ -121,18 +127,22 @@
 /obj/item/trash/beef
 	name = "empty can"
 	icon_state = "beef"
+	matter = list(MATERIAL_ALUMINIUM = 50)
 
 /obj/item/trash/beans
 	name = "empty can"
 	icon_state = "beans"
+	matter = list(MATERIAL_ALUMINIUM = 50)
 
 /obj/item/trash/tomato
 	name = "empty can"
 	icon_state = "tomato"
+	matter = list(MATERIAL_ALUMINIUM = 50)
 
 /obj/item/trash/spinach
 	name = "empty can"
 	icon_state = "spinach"
+	matter = list(MATERIAL_ALUMINIUM = 50)
 
 /obj/item/trash/cakewrap
 	name = "wrapper"
