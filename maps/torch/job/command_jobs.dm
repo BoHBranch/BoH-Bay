@@ -402,7 +402,7 @@
 
 
 /datum/job/blueshield
-	title = "Arbiter"
+	title = "Bailiff"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
@@ -427,9 +427,8 @@
 	                    SKILL_FORENSICS   = SKILL_MAX)
 
 	alt_titles = list(
-		"Bailiff",
-		"Judicial Assistant",
-		"Court Officer"
+		"Court Officer",
+		"Judicial Assistant"
 	)
 	skill_points = 20
 	access = list(access_representative, access_maint_tunnels, access_security, access_medical,
@@ -447,10 +446,10 @@
 	return FALSE
 
 /datum/job/blueshield/get_description_blurb()
-	return "You are the Arbiter. You are the assistant of the Chief Adjudicator. Your job is to assist and protect him in his endeavours. Good luck."
+	return "You are the Bailiff. You are the assistant of the Chief Adjudicator. Your job is to assist and protect him in his endeavours. Good luck."
 
 /datum/job/blueshield/post_equip_rank(var/mob/person, var/alt_title)
-	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Arbiter")]"]"
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Bailiff")]"]"
 	for(var/mob/M in GLOB.player_list)
 		if(M.client && M.mind)
 			if(M.mind.assigned_role == "Chief Adjudicator")
