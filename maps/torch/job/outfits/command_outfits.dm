@@ -113,13 +113,13 @@
 	l_pocket = /obj/item/clothing/mask/smokable/cigarette/cigar/cohiba
 	r_pocket = /obj/item/weapon/flame/lighter/zippo
 
-/decl/hierarchy/outfit/job/torch/crew/representative
+/decl/hierarchy/outfit/job/torch/crew/adjudicator
 	name = OUTFIT_JOB_NAME("SolGov Representative")
 	l_ear = /obj/item/device/radio/headset/headset_com
 	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
 	suit = /obj/item/clothing/suit/storage/toggle/suit/black
 	shoes = /obj/item/clothing/shoes/laceup
-	id_type = /obj/item/weapon/card/id/torch/crew/representative
+	id_type = /obj/item/weapon/card/id/torch/crew/adjudicator
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
 
 /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
@@ -143,19 +143,19 @@
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 
-//Blueshield
+//Bailiff
 
-/decl/hierarchy/outfit/job/torch/crew/command/blueshield
+/decl/hierarchy/outfit/job/torch/crew/command/bailiff
 	name = OUTFIT_JOB_NAME("Arbiter")
 	l_ear = /obj/item/device/radio/headset/headset_com
 	uniform = /obj/item/clothing/under/syndicate/tacticool
 	shoes = /obj/item/clothing/shoes/dutyboots
 	suit = /obj/item/clothing/suit/storage/leather_jacket
-	id_type = /obj/item/weapon/card/id/torch/crew/blueshield
+	id_type = /obj/item/weapon/card/id/torch/crew/bailiff
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
 
 
-/decl/hierarchy/outfit/job/torch/crew/command/blueshield/agent
+/decl/hierarchy/outfit/job/torch/crew/command/bailiff/agent
 	name = OUTFIT_JOB_NAME("Arbiter - Agent")
 	uniform = /obj/item/clothing/under/det
 	suit = /obj/item/clothing/suit/storage/toggle/agent_jacket

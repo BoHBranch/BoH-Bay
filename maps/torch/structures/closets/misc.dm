@@ -82,8 +82,8 @@
 	)
 
 /obj/structure/closet/secure_closet/representative
-	name = "\improper Sol Central Government representative's locker"
-	req_access = list(access_representative)
+	name = "\improper Chief Adjudicator's locker"
+	req_access = list(access_adjudicator)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/sol/rep
 
 /obj/structure/closet/secure_closet/representative/WillContain()
@@ -106,7 +106,7 @@
 
 /obj/structure/closet/secure_closet/blueshield
 	name = "\improper judicial protection locker"
-	req_access = list(access_representative)
+	req_access = list(access_adjudicator)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/corporate/bodyguard
 
 /obj/structure/closet/secure_closet/blueshield/WillContain()

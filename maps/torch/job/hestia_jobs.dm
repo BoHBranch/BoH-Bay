@@ -187,7 +187,7 @@
 //Chief Adjudicator//
 /////////////////////
 
-/datum/job/representative
+/datum/job/adjudicator
 	title = "Chief Adjudicator"
 	department = "Support"
 	department_flag = SPT
@@ -197,7 +197,7 @@
 	selection_color = "#2f2f7f"
 	economic_power = 15
 	minimal_player_age = 7
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/representative
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/adjudicator
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
@@ -205,7 +205,7 @@
 	skill_points = 20
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 
-	access = list(access_representative, access_maint_tunnels, access_security, access_medical,
+	access = list(access_adjudicator, access_maint_tunnels, access_security, access_medical,
 			            access_bridge, access_cargo, access_solgov_crew, access_hangar)
 
 	software_on_spawn = list(/datum/computer_file/program/reports)
@@ -215,11 +215,11 @@
 				"Chief Magistrate"
 				)
 
-/datum/job/representative/get_description_blurb()
+/datum/job/adjudicator/get_description_blurb()
 	return "You are the Chief Adjudicator. Your job is to be an unbiased defender of the law, dealing with any ethical or legal issues aboard the ship and informing and advising the Commanding Officer of them. Ensure that the ship regulations are upheld and that the security force is enforcing the law correctly."
 
 
-/datum/job/blueshield
+/datum/job/bailiff
 	title = "Bailiff"
 	department = "Support"
 	department_flag = SPT
@@ -230,7 +230,7 @@
 	economic_power = 12
 	minimal_player_age = 5
 	minimum_character_age = list(SPECIES_HUMAN = 19)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/blueshield
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/bailiff
 	allowed_branches = list(/datum/mil_branch/civilian,
 							/datum/mil_branch/solgov)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor,
@@ -249,24 +249,24 @@
 		"Judicial Assistant"
 	)
 	skill_points = 20
-	access = list(access_representative, access_maint_tunnels, access_security, access_medical,
+	access = list(access_adjudicator, access_maint_tunnels, access_security, access_medical,
 						access_engine, access_research, access_bridge,
 						access_cargo, access_solgov_crew, access_hangar,
 						access_commissary, access_petrov,
 						access_sec_guard)
 	defer_roundstart_spawn = TRUE
 
-/datum/job/blueshield/is_position_available()
+/datum/job/bailiff/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
 			if(M.client && M.mind && M.mind.assigned_role == "Chief Adjudicator")
 				return TRUE
 	return FALSE
 
-/datum/job/blueshield/get_description_blurb()
+/datum/job/bailiff/get_description_blurb()
 	return "You are the Bailiff. You are the assistant of the Chief Adjudicator. Your job is to assist and protect him in his endeavours. Good luck."
 
-/datum/job/blueshield/post_equip_rank(var/mob/person, var/alt_title)
+/datum/job/bailiff/post_equip_rank(var/mob/person, var/alt_title)
 	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Bailiff")]"]"
 	for(var/mob/M in GLOB.player_list)
 		if(M.client && M.mind)
