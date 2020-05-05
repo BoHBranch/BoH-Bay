@@ -278,7 +278,7 @@
 	return "You are the Chief of Security. You manage ship security. The Masters at Arms and the Military Police, as well as the Brig Chief and the Forensic Technician. You keep the vessel safe. You handle both internal and external security matters. You are the law. You are subordinate to the CO and the XO. You are expected to know the SCMJ and Sol law and Alert Procedure to a very high degree along with general regulations."
 
 /datum/job/representative
-	title = "Chief Magistrate"
+	title = "Chief Adjudicator"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
@@ -302,11 +302,11 @@
 
 	alt_titles = list(
 				"Chief Prefect",
-				"Chief Adjudicator"
+				"Chief Magistrate"
 				)
 
 /datum/job/representative/get_description_blurb()
-	return "You are the Chief Magistrate. Your job is to be an unbiased defender of the law, dealing with any ethical or legal issues aboard the ship and informing and advising the Commanding Officer of them. Ensure that the ship regulations are upheld and that the security force is enforcing the law correctly."
+	return "You are the Chief Adjudicator. Your job is to be an unbiased defender of the law, dealing with any ethical or legal issues aboard the ship and informing and advising the Commanding Officer of them. Ensure that the ship regulations are upheld and that the security force is enforcing the law correctly."
 
 /datum/job/sea
 	title = "Senior Enlisted Advisor"
@@ -407,7 +407,7 @@
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief Magistrate"
+	supervisors = "the Chief Adjudicator"
 	selection_color = "#3d3d7f"
 	economic_power = 12
 	minimal_player_age = 2
@@ -442,17 +442,17 @@
 /datum/job/blueshield/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
-			if(M.client && M.mind && M.mind.assigned_role == "Chief Magistrate")
+			if(M.client && M.mind && M.mind.assigned_role == "Chief Adjudicator")
 				return TRUE
 	return FALSE
 
 /datum/job/blueshield/get_description_blurb()
-	return "You are the Arbiter. You are the assistant of the Chief Magistrate. Your job is to assist and protect him in his endeavours. Good luck."
+	return "You are the Arbiter. You are the assistant of the Chief Adjudicator. Your job is to assist and protect him in his endeavours. Good luck."
 
 /datum/job/blueshield/post_equip_rank(var/mob/person, var/alt_title)
 	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Arbiter")]"]"
 	for(var/mob/M in GLOB.player_list)
 		if(M.client && M.mind)
-			if(M.mind.assigned_role == "Chief Magistrate")
+			if(M.mind.assigned_role == "Chief Adjudicator")
 				to_chat(M, SPAN_NOTICE("<b>Your bodyguard, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
 	..()
