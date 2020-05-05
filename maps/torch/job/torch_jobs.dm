@@ -10,11 +10,10 @@
 		/datum/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant)
 	)
 
-#define HUMAN_ONLY_JOBS /datum/job/representative
 	species_to_job_blacklist = list(
  //Other jobs unavailable via branch restrictions,
-		/datum/species/machine = list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/psiadvisor),
-		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden)
+		/datum/species/machine = list(/datum/job/psiadvisor),
+		/datum/species/diona   = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden)
 
 	)
 #undef HUMAN_ONLY_JOBS
