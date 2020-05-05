@@ -277,37 +277,6 @@
 /datum/job/hos/get_description_blurb()
 	return "You are the Chief of Security. You manage ship security. The Masters at Arms and the Military Police, as well as the Brig Chief and the Forensic Technician. You keep the vessel safe. You handle both internal and external security matters. You are the law. You are subordinate to the CO and the XO. You are expected to know the SCMJ and Sol law and Alert Procedure to a very high degree along with general regulations."
 
-/datum/job/representative
-	title = "Chief Adjudicator"
-	department = "Support"
-	department_flag = SPT
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "Central Command The Galilei Convention and the Ship Regulations"
-	selection_color = "#2f2f7f"
-	economic_power = 15
-	minimal_player_age = 7
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/representative
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
-	                    SKILL_FINANCE     = SKILL_BASIC)
-	skill_points = 20
-	minimum_character_age = list(SPECIES_HUMAN = 27)
-
-	access = list(access_representative, access_maint_tunnels, access_security, access_medical,
-			            access_bridge, access_cargo, access_solgov_crew, access_hangar)
-
-	software_on_spawn = list(/datum/computer_file/program/reports)
-
-	alt_titles = list(
-				"Chief Prefect",
-				"Chief Magistrate"
-				)
-
-/datum/job/representative/get_description_blurb()
-	return "You are the Chief Adjudicator. Your job is to be an unbiased defender of the law, dealing with any ethical or legal issues aboard the ship and informing and advising the Commanding Officer of them. Ensure that the ship regulations are upheld and that the security force is enforcing the law correctly."
-
 /datum/job/sea
 	title = "Senior Enlisted Advisor"
 	department = "Support"
@@ -399,59 +368,3 @@
 
 /datum/job/bridgeofficer/get_description_blurb()
 	return "You are a Bridge Officer. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take the Dagon's helm and pilot the Byakhee if needed. You monitor bridge computer programs and communications and report relevant information to command."
-
-
-/datum/job/blueshield
-	title = "Bailiff"
-	department = "Support"
-	department_flag = SPT
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Chief Adjudicator"
-	selection_color = "#3d3d7f"
-	economic_power = 12
-	minimal_player_age = 5
-	minimum_character_age = list(SPECIES_HUMAN = 19)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/blueshield
-	allowed_branches = list(/datum/mil_branch/civilian,
-							/datum/mil_branch/solgov)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor,
-						 /datum/mil_rank/sol/agent)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-	                    SKILL_EVA         = SKILL_BASIC,
-	                    SKILL_COMBAT      = SKILL_BASIC,
-	                    SKILL_WEAPONS     = SKILL_ADEPT,
-	                    SKILL_FORENSICS   = SKILL_BASIC)
-	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
-	                    SKILL_WEAPONS     = SKILL_MAX,
-	                    SKILL_FORENSICS   = SKILL_MAX)
-
-	alt_titles = list(
-		"Court Officer",
-		"Judicial Assistant"
-	)
-	skill_points = 20
-	access = list(access_representative, access_maint_tunnels, access_security, access_medical,
-						access_engine, access_research, access_bridge,
-						access_cargo, access_solgov_crew, access_hangar,
-						access_commissary, access_petrov,
-						access_sec_guard)
-	defer_roundstart_spawn = TRUE
-
-/datum/job/blueshield/is_position_available()
-	if(..())
-		for(var/mob/M in GLOB.player_list)
-			if(M.client && M.mind && M.mind.assigned_role == "Chief Adjudicator")
-				return TRUE
-	return FALSE
-
-/datum/job/blueshield/get_description_blurb()
-	return "You are the Bailiff. You are the assistant of the Chief Adjudicator. Your job is to assist and protect him in his endeavours. Good luck."
-
-/datum/job/blueshield/post_equip_rank(var/mob/person, var/alt_title)
-	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Bailiff")]"]"
-	for(var/mob/M in GLOB.player_list)
-		if(M.client && M.mind)
-			if(M.mind.assigned_role == "Chief Adjudicator")
-				to_chat(M, SPAN_NOTICE("<b>Your bodyguard, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
-	..()
