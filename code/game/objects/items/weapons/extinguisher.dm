@@ -11,7 +11,7 @@
 	throw_speed = 2
 	throw_range = 10
 	force = 10.0
-	matter = list(MATERIAL_STEEL = 90)
+	matter = list(MATERIAL_STEEL = 500)
 	attack_verb = list("slammed", "whacked", "bashed", "thunked", "battered", "bludgeoned", "thrashed")
 
 	var/spray_particles = 3
@@ -23,7 +23,7 @@
 	var/sprite_name = "fire_extinguisher"
 
 /obj/item/weapon/extinguisher/mini
-	name = "fire extinguisher"
+	name = "compact fire extinguisher"
 	desc = "A light and compact fibreglass-framed model fire extinguisher."
 	icon_state = "miniFE0"
 	item_state = "miniFE"
@@ -35,6 +35,10 @@
 	starting_water = 1000
 	max_water = 1000
 	sprite_name = "miniFE"
+	matter = list(MATERIAL_STEEL = 250)
+
+/obj/item/weapon/extinguisher/mini/empty
+	starting_water = 0
 
 /obj/item/weapon/extinguisher/Initialize()
 	. = ..()
