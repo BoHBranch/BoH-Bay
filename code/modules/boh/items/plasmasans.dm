@@ -6,7 +6,7 @@
 	item_state = "phorosiansuit"
 	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_PHORONGUARD
 	allowed = list(/obj/item/weapon/tank)
-	desc = "A special containment suit designed to protect a plasmasanss volatile body from outside exposure."
+	desc = "A special containment suit designed to protect a Phoron Restructurant Human's volatile body from outside exposure."
 	species_restricted = list(SPECIES_PLASMASANS)
 	sprite_sheets = list(
 		SPECIES_PLASMASANS = 'icons/mob/species/plasmasans/onmob_suit_plasmasans.dmi'

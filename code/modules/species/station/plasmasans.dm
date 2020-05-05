@@ -143,15 +143,20 @@
 
 /datum/species/plasmasans/handle_environment_special(var/mob/living/carbon/human/H)
 	//Should they get exposed to oxygen, things get heated.
-	if(H.get_pressure_weakness()>0.6) //If air gets in, then well there's a problem.
+	if(H.get_pressure_weakness() > 0.6) //If air gets in, then well there's a problem.
 		var/datum/gas_mixture/environment = H.loc.return_air()
 		if(environment && environment.gas[GAS_OXYGEN] && environment.gas[GAS_OXYGEN] >= 0.5) //Phorosians so long as there's enough oxygen (0.5 moles, same as it takes to burn gaseous phoron).
-			if(H.fire_stacks < 10)
-				if(H.get_pressure_weakness() !=1)
-					H.visible_message("<span class='warning'>The internal seals on [H]'s suit break open! </span>","<span class='warning'>The internal seals on your suit break open!</span>")
-				H.visible_message("<span class='warning'>[H]'s body reacts with the atmosphere and starts to sizzle and burn!</span>","<span class='warning'>Your body reacts with the atmosphere and starts to sizzle and burn!</span>")
-				H.fire_stacks = 10
+			H.fire_stacks = max(H.fire_stacks,10)
 			if(!H.on_fire)
+				if(H.get_pressure_weakness() !=1)
+					H.visible_message(
+						"<span class='warning'>The internal seals on [H]'s suit break open! </span>",
+						"<span class='warning'>The internal seals on your suit break open!</span>"
+					)
+				H.visible_message(
+					"<span class='warning'>[H]'s body reacts with the atmosphere and starts to sizzle and burn!</span>",
+					"<span class='warning'>Your body reacts with the atmosphere and starts to sizzle and burn!</span>"
+				)
 				H.IgniteMob()
 			H.burn_skin(H.get_pressure_weakness())
 			H.updatehealth()
