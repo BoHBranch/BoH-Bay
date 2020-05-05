@@ -286,7 +286,7 @@
 	supervisors = "Central Command The Galilei Convention and the Ship Regulations"
 	selection_color = "#2f2f7f"
 	economic_power = 15
-	minimal_player_age = 0
+	minimal_player_age = 7
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/representative
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
@@ -410,7 +410,7 @@
 	supervisors = "the Chief Adjudicator"
 	selection_color = "#3d3d7f"
 	economic_power = 12
-	minimal_player_age = 2
+	minimal_player_age = 5
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/blueshield
 	allowed_branches = list(/datum/mil_branch/civilian,
