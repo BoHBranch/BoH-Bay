@@ -57,6 +57,8 @@
 		removed *= 0.1 // Unathi get most of their nutrition from meat.
 	if(alien == IS_CARNIVORE)
 		removed *= 0.1 // Technically a copy of IS_UNATHI, and likely spaghetti code, but whatever.
+	if(alien == IS_RESOMI) 
+		removed *= 0.8 // Resomi get a bit more nutrition from meat, a bit less from other stuff to compensate
 	if(nutriment_factor)
 		M.adjust_nutrition(nutriment_factor * nut_removed) // For hunger and fatness
 	if(hydration_factor)
@@ -94,6 +96,7 @@
 		if(IS_UNATHI) removed *= 2.25
 		if(IS_CARNIVORE) removed *= 2.25
 		if(IS_OLDUNATHI) removed *= 3.5
+		if(IS_RESOMI) removed *= 1.25
 	M.adjust_nutrition(nutriment_factor * removed)
 
 /datum/reagent/nutriment/protein/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)

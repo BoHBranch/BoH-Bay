@@ -15,6 +15,7 @@
 		LANGUAGE_SKRELLIAN = 0,
 		LANGUAGE_GUTTER = 1,
 		LANGUAGE_SIGN = 0,
+		LANGUAGE_RESOMI = 0,
 		LANGUAGE_HUMAN_RUSSIAN = 1
 		)
 	var/sprites = list()
@@ -80,7 +81,7 @@
 			var/obj/item/I = thing
 			I.forceMove(src)
 			created_equipment |= I
-		else 
+		else
 			log_debug("Invalid var type in [type] equipment creation - [thing]")
 	equipment = created_equipment
 
@@ -98,7 +99,7 @@
 				created_synths += new thing
 		else if(istype(thing, /datum/matter_synth))
 			created_synths |= thing
-		else 
+		else
 			log_debug("Invalid var type in [type] synth creation - [thing]")
 	synths = created_synths
 

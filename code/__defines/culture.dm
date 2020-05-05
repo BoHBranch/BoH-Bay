@@ -197,3 +197,8 @@
 #define FACTION_SERGAL_REONO "Reono lands"
 #define RELIGION_SERGAL_ANIMISM "northern religions"
 #define RELIGION_SERGAL_GOLD_RING "religion of Gold ring"
+
+// Resomii culture
+#define CULTURE_RESOMI "The Resomii"
+#define HOME_SYSTEM_RESOMI "???"
+#define FACTION_RESOMI "???"

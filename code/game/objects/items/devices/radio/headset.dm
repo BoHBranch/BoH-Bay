@@ -19,6 +19,8 @@
 	var/ks1type = /obj/item/device/encryptionkey
 	var/ks2type = null
 
+	sprite_sheets = list(SPECIES_RESOMI = 'icons/mob/species/resomi/onmob_ears_resomi.dmi')
+
 /obj/item/device/radio/headset/Initialize()
 	. = ..()
 	internal_channels.Cut()

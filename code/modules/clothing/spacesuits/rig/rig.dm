@@ -14,16 +14,17 @@
 	slot_flags = SLOT_BACK
 	w_class = ITEM_SIZE_HUGE
 	center_of_mass = null
+	sprite_sheets = list(SPECIES_RESOMI = 'icons/mob/species/resomi/onmob_back_resomi.dmi')
 
 	// These values are passed on to all component pieces.
 	armor_type = /datum/extension/armor/rig
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT, 
-		bullet = ARMOR_BALLISTIC_MINOR, 
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_MINOR,
 		laser = ARMOR_LASER_SMALL,
-		energy = ARMOR_ENERGY_MINOR, 
-		bomb = ARMOR_BOMB_PADDED, 
-		bio = ARMOR_BIO_SHIELDED, 
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_PADDED,
+		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_MINOR
 		)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

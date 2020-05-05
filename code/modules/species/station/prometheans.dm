@@ -156,7 +156,7 @@ var/datum/species/shapeshifter/promethean/prometheans
 		)
 	)
 
-	valid_transform_species = list(SPECIES_HUMAN,SPECIES_UNATHI,SPECIES_OLDUNATHI,SPECIES_SKRELL,SPECIES_VULP,SPECIES_AKULA,SPECIES_TAJ,SPECIES_DIONA,"Monkey")
+	valid_transform_species = list(SPECIES_HUMAN,SPECIES_UNATHI,SPECIES_OLDUNATHI,SPECIES_SKRELL,SPECIES_VULP,SPECIES_AKULA,SPECIES_TAJ,SPECIES_DIONA,SPECIES_RESOMI,"Monkey")
 	monochromatic = 1
 
 /datum/species/shapeshifter/promethean/New()

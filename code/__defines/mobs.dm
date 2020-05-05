@@ -310,7 +310,7 @@
 #define SPECIES_GRAVWORLDER "Grav-Adapted Human"
 #define SPECIES_MULE        "Mule"
 #define SPECIES_BOOSTER     "Booster"
-
+#define SPECIES_RESOMI      "Resomi"
 #define SPECIES_AKULA       "Akula"
 #define SPECIES_CUSTOM      "Genemodder"
 #define SPECIES_VULP        "Vulpkanin"

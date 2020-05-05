@@ -74,6 +74,18 @@
 	desc = "An extremely decorated cape with an intricately runed design has been woven into the fabric of this cape with great care."
 	icon_state = "leadercape"
 
+//Resomi clothing
+
+/obj/item/clothing/suit/storage/toggle/Resomicoat
+ 	name = "small coat"
+ 	desc = "A coat that seems too small to fit a human."
+ 	icon_state = "resomicoat"
+ 	item_state = "resomicoat"
+ 	icon_open = "resomicoat_open"
+ 	icon_closed = "resomicoat"
+ 	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO|LEGS
+ 	species_restricted = list(SPECIES_RESOMI)
+
 //Voxclothing
 
 /obj/item/clothing/suit/armor/vox_scrap

@@ -16,6 +16,7 @@
 		SPECIES_OLDUNATHI = /spell/moghes_blessing,
 		SPECIES_DIONA = /spell/aoe_turf/conjure/grove/gestalt,
 		SPECIES_SKRELL = /obj/item/weapon/contract/apprentice/skrell,
+		SPECIES_RESOMI = /spell/aoe_turf/conjure/summon/resomi,
 		SPECIES_IPC = /spell/camera_connection)
 
 /obj/item/weapon/magic_rock/attack_self(mob/user)
@@ -188,6 +189,41 @@
 		var/obj/item/I = new /obj/item/weapon/contract/apprentice/skrell(get_turf(src),linked,contract_master)
 		user.put_in_hands(I)
 		new /obj/item/weapon/contract/apprentice/skrell(get_turf(src),linked,contract_master)
+
+//RESOMI
+/spell/aoe_turf/conjure/summon/resomi
+	name = "Summon Nano Machines"
+	desc = "This spell summons nano machines from the wizard's body to help them."
+
+	school = "racial"
+	spell_flags = Z2NOCAST
+	invocation_type = SpI_EMOTE
+	invocation = "spasms a moment as nanomachines come out of a port on their back!"
+
+	level_max = list(Sp_TOTAL = 0, Sp_SPEED = 0, Sp_POWER = 0)
+
+	name_summon = 1
+
+	charge_type = Sp_HOLDVAR
+	holder_var_type = "shock_stage"
+	holder_var_amount = 15
+
+	hud_state = "wiz_resomi"
+
+	summon_amt = 1
+	summon_type = list(/mob/living/simple_animal/hostile/commanded/nanomachine)
+
+/spell/aoe_turf/conjure/summon/resomi/before_cast()
+	..()
+	newVars["master"] = holder
+
+/spell/aoe_turf/conjure/summon/resomi/take_charge(mob/user = user, var/skipcharge)
+	. = ..()
+	var/mob/living/carbon/human/H = user
+	if(H && H.shock_stage >= 30)
+		H.visible_message("<b>[user]</b> drops to the floor, thrashing wildly while foam comes from their mouth.")
+		H.Paralyse(20)
+		H.adjustBrainLoss(10)
 
 //IPC
 /spell/camera_connection
