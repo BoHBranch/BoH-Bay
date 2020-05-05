@@ -288,8 +288,8 @@
 	economic_power = 15
 	minimal_player_age = 0
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/representative
-	allowed_branches = list(/datum/mil_branch/solgov)
-	allowed_ranks = list(/datum/mil_rank/sol/gov)
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
 	                    SKILL_FINANCE     = SKILL_BASIC)
 	skill_points = 20
