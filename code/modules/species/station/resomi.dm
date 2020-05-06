@@ -1,11 +1,10 @@
 /datum/species/resomi
 	name = SPECIES_RESOMI
 	name_plural = "Resomii"
-	description = "A race of feathered raptors who developed on a cold world, almost \
-	outside of the Goldilocks zone. Extremely fragile, they developed hunting skills \
-	that emphasized taking out their prey without themselves getting hit. They are an \
-	advanced culture on good terms with Skrellian and Human interests."
-
+	description = "A race of feathered raptors who developed alongside the Skrell, inhabiting \
+	the polar tundral regions outside of Skrell territory. Extremely fragile, they developed \
+	hunting skills that emphasized taking out their prey without themselves getting hit. They \
+	are only recently becoming known on human stations after reaching space with Skrell assistance."
 	min_age = 15
 	max_age = 45
 	health_hud_intensity = 3
@@ -85,6 +84,11 @@
 		)
 
 	inherent_verbs = list(/mob/living/carbon/human/proc/sonar_ping)
+
+	descriptors = list(
+		/datum/mob_descriptor/height = -4,
+		/datum/mob_descriptor/build = -4
+		)
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(

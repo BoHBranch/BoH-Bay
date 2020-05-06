@@ -5,7 +5,7 @@
 	ask_verb = "chirrups"
 	exclaim_verb = "trills"
 	colour = "alien"
-	key = "r"
+	key = "l"
 	shorthand = "SCH"
 	flags = WHITELISTED
 	space_chance = 50
