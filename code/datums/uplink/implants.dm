@@ -33,13 +33,6 @@
 	item_cost = round(DEFAULT_TELECRYSTAL_AMOUNT / 2)
 	desc = "This implant holds an uplink containing [IMPLANT_TELECRYSTAL_AMOUNT(DEFAULT_TELECRYSTAL_AMOUNT)] telecrystals, \
 	activatable with an emotive trigger. You will have access to it, as long as it is still inside of you."
-
-/datum/uplink_item/item/implants/imp_imprinting
-	name = "Neural Imprinting Implant"
-	desc = "An implant able to be used on someone who is under the influence of Mindbreaker Toxin to give them a \
-	set of law-like instructions to follow. This kit contains an autoinjector with a dose of Mindbreaker Toxin."
-	item_cost = 10
-	path = /obj/item/weapon/storage/box/syndie_kit/imp_imprinting
 	
 /datum/uplink_item/item/implants/adrenalin
 	name = "Adrenalin Implant"
