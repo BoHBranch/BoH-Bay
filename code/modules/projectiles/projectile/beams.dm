@@ -31,7 +31,7 @@
 /obj/item/projectile/beam/midlaser
 	damage = 40
 	armor_penetration = 10
-	distance_falloff = 2
+	distance_falloff = 1.5
 
 /obj/item/projectile/beam/heavylaser
 	name = "heavy laser"
@@ -316,7 +316,7 @@
 	name = "scattered laser blast"
 	icon_state = "beam_incen"
 	fire_sound='sound/weapons/scan.ogg'
-	damage = 20
+	damage = 12
 	agony = 8
 	eyeblur = 8
 	sharp = FALSE
