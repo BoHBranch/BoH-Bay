@@ -171,6 +171,7 @@
 	damage = 65
 	armor_penetration = 20
 	stutter = 3
+	distance_falloff = -1
 
 	muzzle_type = /obj/effect/projectile/laser/xray/muzzle
 	tracer_type = /obj/effect/projectile/laser/xray/tracer
