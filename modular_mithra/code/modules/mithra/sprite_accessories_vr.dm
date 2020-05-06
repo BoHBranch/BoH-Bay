@@ -338,67 +338,67 @@
 // Special snowflake ears go below here.
 
 /datum/sprite_accessory/ears/molenar_kitsune
-	name = "quintail kitsune ears (Molenar)"
+	name = "quintail kitsune ears"
 	desc = ""
 	icon_state = "molenar-kitsune"
 
 /datum/sprite_accessory/ears/lilimoth_antennae
-	name = "citheronia antennae (Kira72)"
+	name = "citheronia antennae"
 	desc = ""
 	icon_state = "lilimoth_antennae"
 
 /datum/sprite_accessory/ears/molenar_deathclaw
-	name = "deathclaw ears (Molenar)"
+	name = "deathclaw ears"
 	desc = ""
 	icon_state = "molenar-deathclaw"
 
 /datum/sprite_accessory/ears/miria_fluffdragon
-	name = "fluffdragon ears (Miria Masters)"
+	name = "fluffdragon ears"
 	desc = ""
 	icon_state = "miria-fluffdragonears"
 
 /datum/sprite_accessory/ears/miria_kitsune
-	name = "kitsune ears (Miria Masters)"
+	name = "kitsune ears"
 	desc = ""
 	icon_state = "miria-kitsuneears"
 
 /datum/sprite_accessory/ears/runac
-	name = "fennecsune ears (Runac)"
+	name = "fennecsune ears"
 	desc = ""
 	icon_state = "runac"
 
 /datum/sprite_accessory/ears/kerena
-	name = "wingwolf ears (Kerena)"
+	name = "wingwolf ears"
 	desc = ""
 	icon_state = "kerena"
 
 /datum/sprite_accessory/ears/rosey
-	name = "tritail kitsune ears (Rosey)"
+	name = "tritail kitsune ears"
 	desc = ""
 	icon_state = "rosey"
 
 /datum/sprite_accessory/ears/aronai
-	name = "aronai ears/head (Aronai)"
+	name = "aronai ears/head"
 	desc = ""
 	icon_state = "aronai"
 
 /datum/sprite_accessory/ears/holly
-	name = "tigress ears (Holly Sharp)"
+	name = "tigress ears"
 	desc = ""
 	icon_state = "tigressears"
 
 /datum/sprite_accessory/ears/molenar_inkling
-	name = "teal mature inkling hair (Kari Akiren)"
+	name = "teal mature inkling hair"
 	desc = ""
 	icon_state = "molenar-tentacle"
 
 /datum/sprite_accessory/ears/shock
-	name = "pharoah hound ears (Shock Diamond)"
+	name = "pharoah hound ears"
 	desc = ""
 	icon_state = "shock"
 
 /datum/sprite_accessory/ears/alurane
-	name = "alurane ears/hair (Pumila)"
+	name = "alurane ears/hair"
 	desc = ""
 	icon_state = "alurane-ears"
 
@@ -760,13 +760,6 @@
 	name = "goat legs, colorable"
 	desc = ""
 	icon_state = "satyr"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/tailmaw
-	name = "tailmaw, colorable"
-	desc = ""
-	icon_state = "tailmaw"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
 
