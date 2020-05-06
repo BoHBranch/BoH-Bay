@@ -1,6 +1,9 @@
 /////////
 // Misc joke items. :)
 /////////
+//area fix.
+/area/security/processing
+	name = "\improper Security - Processing"
 
 //baton
 /obj/item/weapon/melee/darkrp_baton
