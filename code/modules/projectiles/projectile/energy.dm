@@ -62,7 +62,7 @@
 	name = "electrode"
 	icon_state = "spark"
 	fire_sound = 'sound/weapons/Taser.ogg'
-	agony = 50
+	agony = 35
 	damage = 2
 	damage_type = BURN
 	eyeblur = 1//Some feedback that you've been hit
@@ -72,7 +72,7 @@
 	icon_state = "spark_green"
 
 /obj/item/projectile/energy/electrode/stunshot
-	agony = 80
+	agony = 50
 	damage = 3
 
 /obj/item/projectile/energy/declone
