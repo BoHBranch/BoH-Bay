@@ -188,7 +188,7 @@
 /////////////////////
 
 /datum/job/adjudicator
-	title = "Chief Adjudicator"
+	title = "Adjudicator"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
