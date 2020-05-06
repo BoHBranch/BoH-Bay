@@ -29,9 +29,9 @@
 	damage = 25
 
 /obj/item/projectile/beam/midlaser
-	damage = 45
-	armor_penetration = 20
-	distance_falloff = 1
+	damage = 40
+	armor_penetration = 10
+	distance_falloff = 2
 
 /obj/item/projectile/beam/heavylaser
 	name = "heavy laser"
