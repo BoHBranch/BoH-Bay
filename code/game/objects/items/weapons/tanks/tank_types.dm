@@ -131,7 +131,7 @@
 	icon_state = "nitrogen"
 	distribute_pressure = ONE_ATMOSPHERE*O2STANDARD
 	starting_pressure = list(GAS_NITROGEN = 10*ONE_ATMOSPHERE)
-	volume = 180
+	volume = 380
 
  /*
  * Extended Oxygen Tank
