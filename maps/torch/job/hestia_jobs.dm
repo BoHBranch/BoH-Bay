@@ -57,8 +57,8 @@
 	title = "Squad Lead"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
 	minimal_player_age = 12
@@ -83,8 +83,8 @@
 	supervisors = "the Squad Leader"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 6
@@ -106,6 +106,13 @@
 		"Combat Engineer",
 		"Combat Medic")
 
+/datum/job/combat_tech/is_position_available()
+	if(..())
+		for(var/mob/M in GLOB.player_list)
+			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
+				return TRUE
+	return FALSE
+
 /datum/job/combat_tech/get_description_blurb()
 	return "You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if no Squad Leader is present."
 
@@ -113,8 +120,8 @@
 	title = "Rifleman"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 4
+	spawn_positions = 4
 	minimal_player_age = 3
 	supervisors = "the Combat Technician and Squad Leader"
 	selection_color = "#557e38"
@@ -135,6 +142,13 @@
 	alt_titles = list(
 		"Grunt",
 		"Trooper")
+
+/datum/job/grunt/is_position_available()
+	if(..())
+		for(var/mob/M in GLOB.player_list)
+			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
+				return TRUE
+	return FALSE
 
 /datum/job/grunt/get_description_blurb()
 	return "You are a Marine! Your duty is to listen to the Squad Leader. If they're not present, the Combat Technician may pull rank. Do your best not to die, while also taking orders. Oorah!"
