@@ -169,9 +169,7 @@
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/marauder.ogg'
 	damage = 65
-	armor_penetration = 10
-	stun = 3
-	weaken = 3
+	armor_penetration = 20
 	stutter = 3
 
 	muzzle_type = /obj/effect/projectile/laser/xray/muzzle
@@ -317,7 +315,7 @@
 	name = "scattered laser blast"
 	icon_state = "beam_incen"
 	fire_sound='sound/weapons/scan.ogg'
-	damage = 12
+	damage = 20
 	agony = 8
 	eyeblur = 8
 	sharp = FALSE
