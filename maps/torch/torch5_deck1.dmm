@@ -1029,8 +1029,9 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/table/rack,
-/obj/item/weapon/gun/projectile/shotgun/sabotgun,
-/obj/item/weapon/storage/box/ammo/sabotbox,
+/obj/item/weapon/storage/box/teargas,
+/obj/item/weapon/storage/box/teargas,
+/obj/item/weapon/storage/box/zipties,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "abI" = (
@@ -11025,6 +11026,20 @@
 /obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftport)
+"asU" = (
+/obj/structure/table/standard,
+/obj/machinery/light_switch{
+	pixel_x = -4;
+	pixel_y = 26
+	},
+/obj/machinery/button/windowtint{
+	id = "misc_lab";
+	pixel_x = 4;
+	pixel_y = 26
+	},
+/obj/item/weapon/storage/toolbox/mechanical,
+/turf/simulated/floor/tiled/white/monotile,
+/area/rnd/misc_lab)
 "asV" = (
 /obj/structure/catwalk,
 /obj/structure/closet/crate/freezer/meat,
@@ -11170,6 +11185,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/psionic)
+"ath" = (
+/obj/machinery/vending/phoronresearch{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/white/monotile,
+/area/rnd/misc_lab)
 "atm" = (
 /obj/random_multi/single_item/runtime,
 /obj/structure/bed/chair/armchair/brown,
@@ -22679,19 +22701,6 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/misc_lab)
-"kbb" = (
-/obj/structure/table/standard,
-/obj/machinery/light_switch{
-	pixel_x = -4;
-	pixel_y = 26
-	},
-/obj/machinery/button/windowtint{
-	id = "misc_lab";
-	pixel_x = 4;
-	pixel_y = 26
-	},
-/turf/simulated/floor/tiled/white/monotile,
-/area/rnd/misc_lab)
 "kcb" = (
 /obj/machinery/organ_printer/robot/mapped,
 /obj/effect/floor_decal/floordetail/edgedrain,
@@ -27914,13 +27923,6 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -32
 	},
-/obj/effect/floor_decal/corner/research/mono,
-/obj/effect/floor_decal/corner/research/mono,
-/turf/simulated/floor/tiled/white/monotile,
-/area/rnd/misc_lab)
-"rpb" = (
-/obj/structure/table/standard,
-/obj/item/weapon/storage/toolbox/mechanical,
 /obj/effect/floor_decal/corner/research/mono,
 /obj/effect/floor_decal/corner/research/mono,
 /turf/simulated/floor/tiled/white/monotile,
@@ -56077,7 +56079,7 @@ aqj
 aqt
 aqy
 ahZ
-kbb
+asU
 phb
 pPb
 qlb
@@ -56892,7 +56894,7 @@ xMP
 gcY
 qDb
 qWb
-rpb
+ath
 aHQ
 aNy
 aDB
