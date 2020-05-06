@@ -191,9 +191,10 @@
 		M.throw_at(get_edge_target_turf(M, get_dir(src, M)), rand(1,5), 6)
 
 /obj/item/projectile/energy/plasmastun/sonic/weak
-	agony = 70
+	agony = 50
 
 /obj/item/projectile/energy/plasmastun/sonic/strong
+	agony = 80
 	damage = 20
 	penetrating = 1
 
