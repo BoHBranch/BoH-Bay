@@ -315,7 +315,7 @@
 	name = "scattered laser blast"
 	icon_state = "beam_incen"
 	fire_sound='sound/weapons/scan.ogg'
-	damage = 20
+	damage = 12
 	agony = 8
 	eyeblur = 8
 	sharp = FALSE
