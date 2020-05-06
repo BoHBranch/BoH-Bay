@@ -86,8 +86,21 @@
 
 	inherent_verbs = list(/mob/living/carbon/human/proc/sonar_ping)
 
-	default_cultural_info = list(
-		TAG_CULTURE = CULTURE_RESOMI,
-		TAG_HOMEWORLD = HOME_SYSTEM_RESOMI,
-		TAG_FACTION = FACTION_RESOMI
+	available_cultural_info = list(
+		TAG_CULTURE = list(
+			CULTURE_RESOMI
+		),
+		TAG_HOMEWORLD = list(
+			HOME_SYSTEM_QERRBALAK,
+			HOME_SYSTEM_OTHER
+		),
+		TAG_FACTION = list(
+			FACTION_RESOMI_SPACEBORN,
+			FACTION_RESOMI_QERRBALAK
+		),
+		TAG_RELIGION =  list(
+			RELIGION_OTHER,
+			RELIGION_ATHEISM,
+			RELIGION_AGNOSTICISM
+		)
 	)

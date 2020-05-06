@@ -198,7 +198,7 @@
 #define RELIGION_SERGAL_ANIMISM "northern religions"
 #define RELIGION_SERGAL_GOLD_RING "religion of Gold ring"
 
-// Resomii culture
+// Resomi culture
 #define CULTURE_RESOMI "The Resomii"
-#define HOME_SYSTEM_RESOMI "???"
-#define FACTION_RESOMI "???"
+#define FACTION_RESOMI_QERRBALAK "Qerrbalak Packs"
+#define FACTION_RESOMI_SPACEBORN "Spaceborn Resomi"
