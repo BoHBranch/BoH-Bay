@@ -1753,6 +1753,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/unsimulated/beach/sand,
 /area/icarus/open)
+"fu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/antlion,
+/turf/unsimulated/beach/sand,
+/area/icarus/open)
 "fv" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
@@ -2675,6 +2681,16 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/weapon/ore/slag,
+/turf/unsimulated/beach/sand,
+/area/icarus/open)
+"in" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/antlion,
 /turf/unsimulated/beach/sand,
 /area/icarus/open)
 "io" = (
@@ -19975,7 +19991,7 @@ ac
 ac
 cN
 cN
-cN
+bG
 cN
 cN
 cN
@@ -20046,7 +20062,7 @@ cN
 ee
 ee
 ei
-ee
+fu
 cN
 ac
 cN
@@ -20170,7 +20186,7 @@ ac
 ac
 ac
 ac
-cN
+bG
 cN
 cN
 cN
@@ -20398,6 +20414,7 @@ cN
 cN
 cN
 cN
+bG
 cN
 cN
 cN
@@ -20414,6 +20431,7 @@ cN
 cN
 cN
 cN
+bG
 cN
 cN
 cN
@@ -20428,9 +20446,7 @@ cN
 cN
 cN
 cN
-cN
-cN
-cN
+bG
 cN
 cN
 cN
@@ -20461,7 +20477,7 @@ aq
 cN
 cN
 cN
-cN
+bG
 fm
 cN
 cN
@@ -20676,7 +20692,7 @@ hY
 hY
 ee
 ie
-cN
+bG
 ee
 ee
 ee
@@ -22707,7 +22723,7 @@ ei
 eH
 en
 ei
-ei
+aC
 ie
 ee
 ei
@@ -23911,7 +23927,7 @@ ee
 ee
 ei
 ei
-eH
+in
 eC
 en
 ei
@@ -25125,7 +25141,7 @@ eM
 eM
 eS
 eS
-en
+ad
 eH
 eH
 eC
@@ -25724,7 +25740,7 @@ aq
 ee
 ee
 ib
-en
+ad
 ei
 ei
 ei
@@ -27346,7 +27362,7 @@ ee
 ei
 ei
 ei
-ee
+fu
 ei
 ei
 ee
@@ -27690,6 +27706,7 @@ cN
 cN
 cN
 cN
+bG
 cN
 cN
 cN
@@ -27702,8 +27719,7 @@ cN
 cN
 cN
 cN
-cN
-cN
+bG
 cN
 cN
 cN
@@ -27868,13 +27884,13 @@ fj
 ee
 ee
 cN
+bG
 cN
 cN
 cN
 cN
 cN
-cN
-cN
+bG
 cN
 cN
 cN
@@ -27945,7 +27961,7 @@ cN
 ee
 ee
 ee
-ee
+fu
 ei
 ee
 ee
@@ -28044,7 +28060,7 @@ ac
 ac
 ac
 ac
-cN
+bG
 cN
 cN
 cN
@@ -28262,7 +28278,7 @@ cN
 cN
 eF
 cN
-cN
+bG
 cN
 cN
 eF

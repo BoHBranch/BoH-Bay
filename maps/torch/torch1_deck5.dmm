@@ -2190,6 +2190,7 @@
 /obj/random/maintenance,
 /obj/random/maintenance,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/maintenance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "dJ" = (
@@ -7792,6 +7793,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
+/obj/random/maintenance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "nz" = (
@@ -8122,14 +8124,8 @@
 /turf/simulated/floor/plating,
 /area/space)
 "nY" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
 "nZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -11684,6 +11680,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
 "tX" = (
@@ -12695,13 +12692,35 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/security/infantry)
+"vX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftstarboard)
 "vY" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
+"vZ" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/random/trash,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fifthdeck/aftport)
 "wa" = (
 /obj/random/trash,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftport)
+"wb" = (
+/obj/random/junk,
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "wc" = (
@@ -12715,22 +12734,20 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "we" = (
-/obj/random/junk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /obj/structure/catwalk,
+/obj/random/maintenance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "wf" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/bed/chair/office/comfy/blue,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fifthdeck/aftport)
-"wg" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
-	},
-/obj/random/trash,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
 "wj" = (
@@ -15608,15 +15625,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cargo)
-"Iq" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftstarboard)
 "It" = (
 /obj/effect/paint/silver,
 /turf/simulated/wall/titanium,
@@ -37448,7 +37456,7 @@ aJ
 mR
 nd
 QQ
-nY
+we
 oh
 ws
 ws
@@ -39870,7 +39878,7 @@ fS
 lf
 aJ
 mU
-wj
+nY
 no
 sa
 of
@@ -41867,7 +41875,7 @@ Xp
 Df
 Df
 bN
-Iq
+vX
 UE
 Ve
 Xp
@@ -41879,7 +41887,7 @@ qF
 Fk
 ul
 wj
-wj
+nY
 wc
 HG
 gq
@@ -42287,7 +42295,7 @@ uw
 tX
 wf
 tW
-wg
+vZ
 Em
 Em
 Em
@@ -43102,7 +43110,7 @@ ws
 ok
 pD
 VC
-we
+wb
 uH
 ws
 ws
