@@ -17,12 +17,7 @@
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/machine = list(HUMAN_ONLY_JOBS, /datum/job/representative, /datum/job/psiadvisor),
 		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden),
-		//datum/species/sergal = list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		//datum/species/akula = list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/humanathi= list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		//datum/species/tajaran= list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		//datum/species/vasilissan= list(HUMAN_ONLY_JOBS, /datum/job/representative),
-		//datum/species/vulpkanin= list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/customhuman= list(HUMAN_ONLY_JOBS, /datum/job/representative),
 		/datum/species/custom= list(HUMAN_ONLY_JOBS, /datum/job/representative)
 	)
