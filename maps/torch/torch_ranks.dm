@@ -721,8 +721,8 @@
 	pow_cat = 5
 
 /datum/mil_rank/civ/foundationadvisor
-	name = "Foundation Advisor"
-	name_short = "FADV"
+	name = "Psionic Advisor"
+	name_short = "PADV"
 	pow_cat = 5
 
 /datum/mil_rank/civ/synthetic
