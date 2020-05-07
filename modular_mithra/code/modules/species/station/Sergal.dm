@@ -1,6 +1,5 @@
 /datum/species/sergal
 	name = SPECIES_SERGAL
-	name_plural = SPECIES_SERGAL
 	icon_template = 'icons/mob/human_races/species/template.dmi'
 	icobase = 'icons/mob/human_races/species/sergal/body.dmi'
 	deform = 'icons/mob/human_races/species/sergal/deformed_body.dmi'
@@ -39,7 +38,7 @@
 	heat_level_2 = 410 //Default 400
 	heat_level_3 = 1010 //Default 1000
 
-	spawn_flags = SPECIES_CAN_JOIN
+	spawn_flags = SPECIES_IS_RESTRICTED | SPECIES_IS_ICONBASE
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	flesh_color = "#34af10"
