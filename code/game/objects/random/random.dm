@@ -1150,7 +1150,9 @@ obj/random/hostile/spawn_choices()
 		/mob/living/simple_animal/hostile/retaliate/goose = 1,
 		/mob/living/simple_animal/hostile/retaliate/parrot = 1,
 		/mob/living/simple_animal/hostile/rogue_drone = 8,
-		/mob/living/simple_animal/hostile/scarybat = 4
+		/mob/living/simple_animal/hostile/scarybat = 4,
+		/mob/living/simple_animal/hostile/voxslug = 3,
+		/mob/living/simple_animal/hostile/leech = 1
 	)
 
 

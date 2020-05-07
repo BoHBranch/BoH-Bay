@@ -1,7 +1,16 @@
 /////////
-// global lock
+// projectile global lock
 /////////
 /obj/item/weapon/gun/projectile/free_fire()
+	var/my_z = get_z(src)
+	if(!GLOB.using_map.station_levels.Find(my_z))
+		return TRUE
+	return ..()
+
+/////////
+// laser global lock
+/////////
+/obj/item/weapon/gun/energy/free_fire()
 	var/my_z = get_z(src)
 	if(!GLOB.using_map.station_levels.Find(my_z))
 		return TRUE

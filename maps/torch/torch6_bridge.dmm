@@ -696,10 +696,9 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/cl)
 "bm" = (
-/obj/random/closet,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor,
-/area/maintenance/bridge/aftstarboard)
+/area/maintenance/bridge/forestarboard)
 "bn" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /turf/simulated/floor/carpet,
@@ -7801,6 +7800,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/random/maintenance,
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/psiadvisor)
 "mE" = (
@@ -9056,6 +9056,7 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/xo)
 "oB" = (
+/obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/foreport)
 "oC" = (
@@ -13831,6 +13832,11 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarbridge)
+"wr" = (
+/obj/structure/catwalk,
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "ws" = (
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -13847,6 +13853,14 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarbridge)
+"wt" = (
+/obj/random/closet,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/aftstarboard)
 "wu" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/yellow{
@@ -13856,6 +13870,15 @@
 	},
 /turf/simulated/floor/airless,
 /area/solar/bridge)
+"wv" = (
+/obj/structure/catwalk,
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/aftstarboard)
+"ww" = (
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/aftstarboard)
 "wx" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -13870,6 +13893,10 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/sea)
+"wy" = (
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/aftport)
 "wz" = (
 /obj/structure/bed/chair/padded/blue{
 	icon_state = "chair_preview";
@@ -13949,6 +13976,14 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/sgr)
+"wF" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/foreport)
 "wH" = (
 /obj/structure/bed/chair/padded/beige{
 	icon_state = "chair_preview";
@@ -17445,13 +17480,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/xo)
-"NW" = (
-/obj/effect/floor_decal/industrial/warning{
-	icon_state = "warning";
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/bridge/foreport)
 "Ob" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Crew Area"
@@ -19640,9 +19668,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/sgr)
-"YI" = (
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/bridge/forestarboard)
 "YJ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/effect/floor_decal/corner/red/half{
@@ -30499,7 +30524,7 @@ af
 af
 af
 aj
-VB
+wr
 mR
 aO
 FG
@@ -31142,7 +31167,7 @@ IK
 gP
 gP
 rT
-NW
+wF
 tg
 tg
 tg
@@ -31508,7 +31533,7 @@ ad
 af
 af
 af
-YI
+bm
 aE
 sJ
 ai
@@ -34340,7 +34365,7 @@ gz
 gz
 aS
 bx
-bm
+wt
 ag
 sT
 sT
@@ -34546,7 +34571,7 @@ Qi
 dr
 aT
 dr
-MD
+wv
 MD
 lU
 fI
@@ -34750,7 +34775,7 @@ cI
 dr
 MD
 MD
-zW
+ww
 fI
 gm
 gm
@@ -34769,7 +34794,7 @@ Vh
 EN
 kJ
 oS
-OK
+wy
 oh
 vF
 wj

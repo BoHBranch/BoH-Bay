@@ -171,6 +171,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/lar_maria/solar_control)
+"at" = (
+/mob/living/simple_animal/hostile/lar_maria/guard/ranged,
+/turf/simulated/floor/tiled,
+/area/lar_maria/mess_hall)
 "au" = (
 /obj/machinery/power/port_gen/pacman/super,
 /turf/simulated/floor/plating,
@@ -194,6 +198,13 @@
 /obj/random/tool,
 /turf/simulated/floor/plating,
 /area/lar_maria/solar_control)
+"ay" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/lar_maria/guard/ranged,
+/turf/simulated/floor/tiled,
+/area/lar_maria/mess_hall)
 "az" = (
 /obj/machinery/power/solar_control/autostart{
 	id = "ZHSolarsEast"
@@ -570,6 +581,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/mob/living/simple_animal/hostile/lar_maria/guard,
 /turf/simulated/floor/plating,
 /area/lar_maria/solar_control)
 "ba" = (
@@ -656,6 +668,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/lar_maria/solar_control)
+"bk" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/lar_maria/guard,
+/turf/simulated/floor/tiled,
+/area/lar_maria/hallway)
 "bl" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -664,6 +683,10 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/space)
+"bm" = (
+/mob/living/simple_animal/hostile/lar_maria/guard,
+/turf/simulated/floor/tiled,
+/area/lar_maria/hallway)
 "bn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable{
@@ -682,6 +705,10 @@
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/plating,
 /area/lar_maria/solar_control)
+"bq" = (
+/mob/living/simple_animal/hostile/lar_maria/guard/ranged,
+/turf/simulated/floor/plating,
+/area/lar_maria/atmos)
 "br" = (
 /obj/machinery/suit_storage_unit/standard_unit,
 /turf/simulated/floor/plating,
@@ -825,6 +852,11 @@
 	icon_state = "map";
 	dir = 1
 	},
+/turf/simulated/floor/plating,
+/area/lar_maria/atmos)
+"bL" = (
+/obj/machinery/atmospherics/pipe/simple/visible/red,
+/mob/living/simple_animal/hostile/lar_maria/guard/ranged,
 /turf/simulated/floor/plating,
 /area/lar_maria/atmos)
 "bM" = (
@@ -1329,6 +1361,10 @@
 /obj/machinery/atmospherics/omni/filter{
 	dir = 4
 	},
+/turf/simulated/floor/plating,
+/area/lar_maria/atmos)
+"dq" = (
+/mob/living/simple_animal/hostile/lar_maria/guard,
 /turf/simulated/floor/plating,
 /area/lar_maria/atmos)
 "dr" = (
@@ -2394,12 +2430,6 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled,
-/area/lar_maria/hallway)
-"gG" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/lar_maria/hallway)
@@ -23281,7 +23311,7 @@ br
 bx
 bN
 ci
-cn
+bq
 cn
 cR
 dC
@@ -23486,7 +23516,7 @@ ci
 cn
 cS
 do
-cn
+dq
 dP
 bx
 eu
@@ -23500,7 +23530,7 @@ eu
 gE
 hf
 hx
-hU
+bm
 iu
 iM
 jd
@@ -23901,7 +23931,7 @@ fC
 fR
 gj
 gt
-gG
+bk
 eN
 hz
 hW
@@ -24494,7 +24524,7 @@ bx
 qb
 cl
 cB
-cB
+bL
 dp
 dF
 ub
@@ -24914,7 +24944,7 @@ gu
 gJ
 gT
 hE
-ia
+ay
 gT
 iT
 gx
@@ -26127,7 +26157,7 @@ gP
 gT
 gT
 gT
-gT
+at
 iV
 gx
 gx
@@ -26529,7 +26559,7 @@ co
 gu
 gR
 gO
-gT
+at
 gT
 gO
 gO
@@ -27133,7 +27163,7 @@ fH
 fW
 dY
 gu
-gT
+at
 gT
 gT
 gT
