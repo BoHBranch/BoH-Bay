@@ -122,7 +122,7 @@
 
 			reset_girder()
 
-	else if(isCrowbar(W) && state == 0 && anchored)
+	else if(isCrowbar(W) && state == 0 && anchored && user.a_intent != I_HURT)
 		playsound(src.loc, 'sound/items/Crowbar.ogg', 100, 1)
 		to_chat(user, "<span class='notice'>Now dislodging the girder...</span>")
 		if(do_after(user, 40,src))
