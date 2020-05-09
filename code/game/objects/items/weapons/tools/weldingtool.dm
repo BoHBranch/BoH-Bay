@@ -249,6 +249,7 @@
 				to_chat(M, SPAN_NOTICE("You switch the [src] on."))
 			else if(T)
 				T.visible_message(SPAN_WARNING("\The [src] turns on."))
+			playsound(src.loc, 'sound/items/WelderActivate.ogg', 50, 1) //muh shitcode
 			if (istype(src, /obj/item/weapon/weldingtool/electric))
 				src.force = 11
 				src.damtype = ELECTROCUTE
@@ -269,6 +270,7 @@
 			to_chat(M, SPAN_NOTICE("You switch \the [src] off."))
 		else if(T)
 			T.visible_message(SPAN_WARNING("\The [src] turns off."))
+		playsound(src.loc, 'sound/items/WelderDeactivate.ogg', 50, 1) //muh shitcode
 		if (istype(src, /obj/item/weapon/weldingtool/electric))
 			src.force = initial(force)
 		else
