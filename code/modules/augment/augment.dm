@@ -33,7 +33,7 @@
 /obj/item/organ/internal/augment/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	if(isScrewdriver(W) && allowed_organs.len > 1)
 		//Here we can adjust location for implants that allow multiple slots
-		organ_tag = input(user, "Adjust installation parameters") as null|anything in allowed_organs
+		organ_tag = show_radial_menu(user, src, allowed_organs)
 		update_parent_organ()
 		playsound(src.loc, 'sound/items/Screwdriver.ogg', 50, 1)
 		return

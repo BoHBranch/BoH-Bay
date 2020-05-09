@@ -756,3 +756,8 @@ proc/dd_sortedTextList(list/incoming)
 		var/atom/A = key
 		if(A.type == T)
 			return A
+
+/proc/popleft(list/L)
+	if(L.len)
+		. = L[1]
+		L.Cut(1,2)
