@@ -2409,21 +2409,37 @@
 /datum/chemical_reaction/three_eye
 	name = "Three Eye"
 	result = /datum/reagent/three_eye
-	result_amount = 2
+	result_amount = 1
 	mix_message = "The surface of the oily, iridescent liquid twitches like a living thing."
 	minimum_temperature = 40 CELSIUS
 	reaction_sound = 'sound/effects/psi/power_used.ogg'
-	hidden_from_codex = TRUE
 
 	catalysts = list(
-		/datum/reagent/toxin/carpotoxin = 1,
-		/datum/reagent/enzyme = 1
+		/datum/reagent/toxin/carpotoxin = 1
 	)
 
 	required_reagents = list(
-		/datum/reagent/mindbreaker = 2,
+		/datum/reagent/mindbreaker = 1,
 		/datum/reagent/toxin/phoron = 1,
 		/datum/reagent/blood = 1
+	)
+
+/datum/chemical_reaction/jerraman
+	name = "Jerraman"
+	result = /datum/reagent/jerraman
+	result_amount = 1
+	mix_message = "The surface of the golden liquid twitches like a living thing, then calms down."
+	minimum_temperature = 40 CELSIUS
+	reaction_sound = 'sound/effects/psi/power_used.ogg'
+
+	catalysts = list(
+		/datum/reagent/crystal = 10
+	)
+
+	required_reagents = list(
+		/datum/reagent/three_eye = 10,
+		/datum/reagent/nanitefluid = 10,
+		/datum/reagent/gold = 10
 	)
 
 // tea expansion pack content - black tea drinks

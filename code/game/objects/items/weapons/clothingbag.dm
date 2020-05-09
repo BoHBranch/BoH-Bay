@@ -3,6 +3,7 @@
 	desc = "A cheap plastic bag that contains a fresh set of clothes."
 	icon = 'icons/obj/trash.dmi'
 	icon_state = "trashbag3"
+	matter = list(MATERIAL_PLASTIC = 400)
 
 	var/icon_used = "trashbag0"
 	var/opened = 0

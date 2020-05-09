@@ -58,7 +58,7 @@
 	//residual illumination
 	new /obj/effect/effect/smoke/illumination(src.loc, rand(190,240), range=8, power=1, color=light_colour) //same lighting power as flare
 
-/obj/item/projectile/energy/electrode	//has more pain than a beam because it's harder to hit 
+/obj/item/projectile/energy/electrode	//has more pain than a beam because it's harder to hit
 	name = "electrode"
 	icon_state = "spark"
 	fire_sound = 'sound/weapons/Taser.ogg'
@@ -86,22 +86,20 @@
 /obj/item/projectile/energy/dart
 	name = "dart"
 	icon_state = "toxin"
-	damage = 5
-	damage_type = TOX
+	nodamage = 1
 	weaken = 5
 
 /obj/item/projectile/energy/bolt
 	name = "bolt"
 	icon_state = "cbbolt"
-	damage = 10
-	damage_type = TOX
-	nodamage = 0
+	nodamage = 1
 	agony = 40
 	stutter = 10
+	weaken = 2
 
 /obj/item/projectile/energy/bolt/large
 	name = "largebolt"
-	damage = 20
+	weaken = 5
 	agony = 60
 
 /obj/item/projectile/energy/neurotoxin

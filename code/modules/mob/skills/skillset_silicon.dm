@@ -1,6 +1,8 @@
 /datum/skillset/silicon
-	default_value = SKILL_MIN
 	skills_transferable = FALSE
+
+/datum/skillset/silicon/robot
+	default_value = SKILL_MIN
 
 // better handling for hard resets
 /mob/living/silicon/robot/reset_skillset()

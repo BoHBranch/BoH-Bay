@@ -10,6 +10,7 @@
  */
 
 /obj/item/weapon/storage/fancy
+	matter = list(MATERIAL_PLASTIC = 100)
 	item_state = "syringe_kit" //placeholder, many of these don't have inhands
 	opened = 0 //if an item has been removed from this container
 	var/obj/item/key_type //path of the key item that this "fancy" container is meant to store
@@ -40,6 +41,7 @@
 /obj/item/weapon/storage/fancy/egg_box
 	icon = 'icons/obj/food.dmi'
 	icon_state = "eggbox"
+	matter = list(MATERIAL_PLASTIC = 300)
 	name = "egg box"
 	storage_slots = 12
 	max_w_class = ITEM_SIZE_SMALL

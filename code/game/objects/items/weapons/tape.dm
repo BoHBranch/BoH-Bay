@@ -3,6 +3,7 @@
 	desc = "A roll of sticky tape. Possibly for taping ducks... or was that ducts?"
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "taperoll"
+	matter = list(MATERIAL_PLASTIC = 1000, MATERIAL_ALUMINIUM = 100)
 	w_class = ITEM_SIZE_SMALL
 
 /obj/item/weapon/tape_roll/attack(var/mob/living/carbon/human/H, var/mob/user)
