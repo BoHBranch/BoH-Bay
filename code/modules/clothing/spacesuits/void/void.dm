@@ -242,22 +242,26 @@ else if(##equipment_var) {\
 			return
 
 		if(helmet || boots || tank)
-			var/choice = input("What component would you like to remove?") as null|anything in list(helmet,boots,tank)
+			var/choices = list()
+			choices[helmet] = helmet
+			choices[boots] = boots
+			choices[tank] = tank
+			var/choice = RADIAL_INPUT(user, choices)
 			if(!choice) return
 
 			playsound(loc, 'sound/items/Screwdriver.ogg', 50)
 			if(choice == tank)	//No, a switch doesn't work here. Sorry. ~Techhead
 				to_chat(user, "You pop \the [tank] out of \the [src]'s storage compartment.")
 				user.put_in_hands(tank)
-				src.tank = null
+				tank = null
 			else if(choice == helmet)
 				to_chat(user, "You detatch \the [helmet] from \the [src]'s helmet mount.")
 				user.put_in_hands(helmet)
-				src.helmet = null
+				helmet = null
 			else if(choice == boots)
 				to_chat(user, "You detatch \the [boots] from \the [src]'s boot mounts.")
 				user.put_in_hands(boots)
-				src.boots = null
+				boots = null
 		else
 			to_chat(user, "\The [src] does not have anything installed.")
 		return
