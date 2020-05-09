@@ -2,6 +2,9 @@
 	var/min_temp = 80 + T0C	//Minimum temperature to do any cooking
 	var/optimal_temp = 200 + T0C	//Temperature at which we have 100% efficiency. efficiency is lowered on either side of this
 	var/optimal_power = 1.1//cooking power at 100%
+	var/set_temp = 200 + T0C
+	var/temp_settings = 4 // the number of temperature settings to have, including min and optimal
+	var/list/temp_options = list()
 
 	var/loss = 1	//Temp lost per proc when equalising
 	var/resistance = 320000	//Resistance to heating. combines with heating power to determine how long heating takes
@@ -10,6 +13,8 @@
 	var/light_y = 0
 	cooking_coeff = 0
 	cooking_power = 0
+	atom_flags = FALSE
+	temperature_coefficient = 0.5
 
 /obj/machinery/appliance/cooker/examine(var/mob/user)
 	. = ..()
@@ -41,6 +46,13 @@
 
 /obj/machinery/appliance/cooker/Initialize()
 	. = ..()
+	var/interval = (optimal_temp - min_temp)/temp_settings
+	for(var/newtemp = min_temp - interval, newtemp<=optimal_temp, newtemp+=interval)
+		var/image/disp_image = image('icons/mob/radial.dmi', "radial_temp")
+		var/hue = RotateHue(hsv(0, 255, 255), 120 * (1 - (newtemp-min_temp)/(optimal_temp-min_temp)))
+		disp_image.color = HSVtoRGB(hue)
+		temp_options["[newtemp - T0C]"] = disp_image
+	temp_options["OFF"] = image('icons/misc/mark.dmi', "x3")
 	loss = (active_power_usage / resistance)*0.5
 	cooking_objs = list()
 	for (var/i = 0, i < max_contents, i++)
@@ -48,6 +60,38 @@
 	cooking = 0
 
 	queue_icon_update()
+
+/obj/machinery/appliance/cooker/attempt_toggle_power(mob/user)
+	var/wasoff = stat & POWEROFF
+	if (!isliving(user))
+		return
+
+	if (!user.IsAdvancedToolUser())
+		to_chat(user, "You lack the dexterity to do that!")
+		return
+
+	if (user.stat || user.restrained() || user.incapacitated())
+		return
+
+	if (!Adjacent(user) && !issilicon(user))
+		to_chat(user, "You can't reach [src] from here.")
+		return
+
+	var/desired_temp = show_radial_menu(user, src, temp_options - (wasoff ? "OFF" : "[set_temp-T0C]"))
+	if(!desired_temp)
+		return
+	
+	if(desired_temp == "OFF")
+		stat |= POWEROFF
+	else 
+		set_temp = text2num(desired_temp) + T0C
+		to_chat(user, SPAN_NOTICE("You set [src] to [round(set_temp-T0C)]C."))
+		stat &= ~POWEROFF
+	use_power = !(stat & POWEROFF)
+	if(wasoff != (stat & POWEROFF))
+		user.visible_message("[user] turns [src] [use_power ? "on" : "off"].", "You turn [use_power ? "on" : "off"] [src].")
+	playsound(src, 'sound/machines/click.ogg', 40, 1)
+	update_icon()
 
 /obj/machinery/appliance/cooker/on_update_icon()
 	overlays.Cut()
@@ -61,10 +105,10 @@
 	overlays += light
 
 /obj/machinery/appliance/cooker/Process()
-	if (!stat)
+	if ((temperature >= set_temp) && (stat || use_power == 1))
+		QUEUE_TEMPERATURE_ATOMS(src) // cool every tick if we're not turned on or heating
+	if(!stat)
 		heat_up()
-	else
-		QUEUE_TEMPERATURE_ATOMS(src) // cool every tick if we're not turned on
 	. = ..()
 
 /obj/machinery/appliance/cooker/power_change()
@@ -75,19 +119,19 @@
 	var/temp_scale = 0
 	if(temperature > min_temp)
 		if(temperature >= optimal_temp)
-			temp_scale = 1
+			temp_scale = Clamp(1 - ((optimal_temp - temperature) / optimal_temp), 0, 1)
 		else
-			temp_scale = (temperature - 73.15) / (optimal_temp - 73.15)
+			temp_scale = temperature / optimal_temp
 		//If we're between min and optimal this will yield a value in the range 0.7 to 1
 
 	cooking_coeff = optimal_power * temp_scale
 	RefreshParts() // this is what actually updates the cooking power, for some reason.
 
 /obj/machinery/appliance/cooker/proc/heat_up()
-	if (temperature < optimal_temp)
-		if (use_power == 1 && ((optimal_temp - temperature) > 5))
+	if (temperature < set_temp)
+		if (use_power == 1 && ((set_temp - temperature) > 5))
 			playsound(src, 'sound/machines/click.ogg', 20, 1)
-			use_power = 2.//If we're heating we use the active power
+			use_power = 2 //If we're heating we use the active power
 			update_icon()
 		temperature += heating_power / resistance
 		update_cooking_power()
@@ -100,14 +144,13 @@
 	QUEUE_TEMPERATURE_ATOMS(src)
 
 /obj/machinery/appliance/cooker/ProcessAtomTemperature()
-	if((!(stat & POWEROFF) && !(stat & NOPOWER)) || (temperature >= T20C)) // must be powered and turned on, or hot, to keep processing
+	if( ( !(stat & POWEROFF) && !(stat & NOPOWER) ) ) // must be powered and turned on, to keep heating items
 		update_cooking_power() // update!
 		if(!LAZYLEN(cooking_objs))
 			return TRUE
 		for(var/datum/cooking_item/CI in cooking_objs)
 			QUEUE_TEMPERATURE_ATOMS(CI.container)
 		return TRUE // Don't kill this processing loop unless we're not powered or we're cold.
-		// Also don't cool us.
 	. = ..()
 
 //Cookers do differently, they use containers

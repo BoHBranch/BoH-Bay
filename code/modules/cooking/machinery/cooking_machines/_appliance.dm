@@ -62,6 +62,9 @@
 		list_contents(user)
 		return TRUE
 
+/obj/machinery/appliance/get_mechanics_info()
+	 return "Control-click this to toggle its power."
+
 /obj/machinery/appliance/proc/list_contents(var/mob/user)
 	if (cooking_objs.len)
 		var/string = "Contains..."
@@ -101,13 +104,6 @@
 	else
 		icon_state = off_icon
 
-/obj/machinery/appliance/verb/toggle_power()
-	set name = "Toggle Power"
-	set category  = "Object"
-	set src in view()
-
-	attempt_toggle_power(usr)
-
 /obj/machinery/appliance/proc/attempt_toggle_power(mob/user)
 	if (!isliving(user))
 		return
@@ -123,16 +119,10 @@
 		to_chat(user, "You can't reach [src] from here.")
 		return
 
-	if (stat & POWEROFF)//Its turned off
-		stat &= ~POWEROFF
-		use_power = 1
-		user.visible_message("[user] turns [src] on.", "You turn on [src].")
-
-	else //Its on, turn it off
-		stat |= POWEROFF
-		use_power = 0
-		user.visible_message("[user] turns [src] off.", "You turn off [src].")
-
+	stat ^= POWEROFF // Toggles power
+	use_power = !(stat & POWEROFF) && POWER_USE_ACTIVE // If on, use active power, else use no power
+	if(user)
+		user.visible_message("[user] turns [src] [use_power ? "on" : "off"].", "You turn [use_power ? "on" : "off"] [src].")
 	playsound(src, 'sound/machines/click.ogg', 40, 1)
 	update_icon()
 
@@ -521,6 +511,11 @@
 	smoke.set_up(10, 0, get_turf(src), 300)
 	smoke.start()
 
+/obj/machinery/appliance/CtrlClick(var/mob/user)
+	if(!anchored)
+		return ..()
+	attempt_toggle_power(user)
+
 /obj/machinery/appliance/attack_hand(var/mob/user)
 	if (cooking_objs.len)
 		if (removal_menu(user))
@@ -664,8 +659,8 @@
 	var/scan_rating = 0
 	var/cap_rating = 0
 
-	scan_rating = total_component_rating_of_type(/obj/item/weapon/stock_parts/scanning_module)
-	cap_rating = total_component_rating_of_type(/obj/item/weapon/stock_parts/capacitor)
+	scan_rating = total_component_rating_of_type(/obj/item/weapon/stock_parts/scanning_module) - number_of_components(/obj/item/weapon/stock_parts/scanning_module)
+	cap_rating = total_component_rating_of_type(/obj/item/weapon/stock_parts/capacitor) - number_of_components(/obj/item/weapon/stock_parts/capacitor)
 
 	active_power_usage = initial(active_power_usage) - scan_rating * 25
 	heating_power = initial(heating_power) + cap_rating * 50
