@@ -11,6 +11,7 @@
 	item_state = "null"
 	amount_per_transfer_from_this = 10
 	possible_transfer_amounts = "5;10;15;25;30;60"
+	matter = list(MATERIAL_GLASS = 50)
 	volume = 60
 	w_class = ITEM_SIZE_SMALL
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER
@@ -113,7 +114,7 @@
 	icon_state = "beaker"
 	item_state = "beaker"
 	center_of_mass = "x=15;y=10"
-	matter = list(MATERIAL_GLASS = 500)
+	matter = list(MATERIAL_GLASS = 350)
 
 	New()
 		..()
@@ -162,7 +163,7 @@
 	desc = "A large beaker."
 	icon_state = "beakerlarge"
 	center_of_mass = "x=16;y=10"
-	matter = list(MATERIAL_GLASS = 5000)
+	matter = list(MATERIAL_GLASS = 500)
 	volume = 120
 	amount_per_transfer_from_this = 10
 	possible_transfer_amounts = "5;10;15;25;30;60;120"
@@ -228,7 +229,7 @@
 	name = "large insulated beaker"
 	icon_state = "insulatedlarge"
 	center_of_mass = "x=16;y=10"
-	matter = list(MATERIAL_GLASS = 5000, MATERIAL_PLASTIC = 2500)
+	matter = list(MATERIAL_GLASS = 500, MATERIAL_PLASTIC = 250)
 	volume = 120
 
 /obj/item/weapon/reagent_containers/glass/beaker/cryoxadone

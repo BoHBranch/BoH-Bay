@@ -120,7 +120,7 @@
 	name = "double emergency nitrogen tank"
 	icon_state = "emergency_double_nitrogen"
 	gauge_icon = "indicator_emergency_double"
-	volume = 60
+	volume = 180
 
 /*
  * Nitrogen
@@ -131,7 +131,7 @@
 	icon_state = "nitrogen"
 	distribute_pressure = ONE_ATMOSPHERE*O2STANDARD
 	starting_pressure = list(GAS_NITROGEN = 10*ONE_ATMOSPHERE)
-	volume = 180
+	volume = 380
 
  /*
  * Extended Oxygen Tank

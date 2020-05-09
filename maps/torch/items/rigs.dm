@@ -34,7 +34,8 @@
 				   /obj/item/device/flashlight,
 				   /obj/item/weapon/tank,
 				   /obj/item/device/suit_cooling_unit,
-				   /obj/item/weapon/storage/secure/briefcase)
+				   /obj/item/weapon/storage/secure/briefcase,
+				   /obj/item/weapon/storage/)
 
 	req_access = list(access_bridge)
 
@@ -169,7 +170,8 @@
 				   /obj/item/weapon/storage/firstaid,
 				   /obj/item/device/scanner/health,
 				   /obj/item/stack/medical,
-				   /obj/item/roller)
+				   /obj/item/roller,
+				   /obj/item/weapon/storage/)
 
 	req_access = list(access_cmo)
 
@@ -218,7 +220,8 @@
 	   			  /obj/item/device/flashlight,
 	    		  /obj/item/weapon/tank,
 				  /obj/item/device/suit_cooling_unit,
-				  /obj/item/weapon/melee/baton)
+				  /obj/item/weapon/melee/baton,
+				  /obj/item/weapon/storage/)
 
 	req_access = list(access_hos)
 
@@ -275,7 +278,8 @@
 				   /obj/item/device/radio/beacon,
 				   /obj/item/weapon/pickaxe/xeno,
 				   /obj/item/weapon/storage/bag/fossils,
-				   /obj/item/rig_module/grenade_launcher/light)
+				   /obj/item/rig_module/grenade_launcher/light,
+				   /obj/item/weapon/storage/)
 
 	req_access = list(access_rd)
 
@@ -324,7 +328,8 @@
 				   /obj/item/ammo_magazine,
 				   /obj/item/device/flashlight,
 				   /obj/item/weapon/tank,
-				   /obj/item/device/suit_cooling_unit)
+				   /obj/item/device/suit_cooling_unit,
+				   /obj/item/weapon/storage/)
 
 	online_slowdown = 0.50
 	offline_slowdown = 4
