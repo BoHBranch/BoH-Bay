@@ -31,11 +31,17 @@
 /datum/fabricator_recipe/flashlight
 	path = /obj/item/device/flashlight
 
+/datum/fabricator_recipe/maglight
+	path = /obj/item/device/flashlight/maglight
+
 /datum/fabricator_recipe/floor_light
 	path = /obj/machinery/floor_light
 
 /datum/fabricator_recipe/extinguisher
 	path = /obj/item/weapon/extinguisher/empty
+
+/datum/fabricator_recipe/extinguisher_mini
+	path = /obj/item/weapon/extinguisher/mini/empty
 
 /datum/fabricator_recipe/jar
 	path = /obj/item/glass_jar
@@ -60,6 +66,9 @@
 
 /datum/fabricator_recipe/tape
 	path = /obj/item/device/tape
+
+/datum/fabricator_recipe/duct_tape
+	path = /obj/item/weapon/tape_roll
 
 /datum/fabricator_recipe/tube/large
 	path = /obj/item/weapon/light/tube/large
