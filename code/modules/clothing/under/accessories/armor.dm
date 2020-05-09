@@ -104,6 +104,7 @@
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED
 		)
+	siemens_coefficient = 0.3
 	slowdown = 0.5
 
 //Arm guards
@@ -156,6 +157,7 @@
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED
 		)
+	siemens_coefficient = 0.3
 
 /obj/item/clothing/accessory/armguards/riot
 	name = "riot arm guards"
@@ -246,6 +248,7 @@
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED
 		)
+	siemens_coefficient = 0.3
 
 /obj/item/clothing/accessory/legguards/riot
 	name = "riot leg guards"

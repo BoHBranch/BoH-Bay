@@ -105,3 +105,34 @@
 /obj/item/device/flashlight/lamp/floodlamp/ascent
 	name = "odd lamp"
 	color = "#a33fbf" //Just makes it look really, really odd. But it's funny, so, y'know.
+
+/////////
+// Ascent Shield/Batterer
+/////////
+/obj/item/device/personal_shield/mantid
+	name = "personal shield"
+	desc = "Truely a life-saver: this device protects its user from being hit by objects moving very, very fast, though only for a few shots."
+	icon = 'icons/obj/device.dmi'
+	icon_state = "batterer"
+	color = "#a33fbf"
+	uses = 15
+
+//batterer
+/obj/item/device/batterer/mantid
+	name = "mantid mind batterer"
+	desc = "A strange device with twin antennas."
+	icon_state = "batterer"
+	item_state = "electronic"
+	max_uses = 5000//It'll never be elsewhere, and this is a safeguard against burnout, given the cooldown. If they somehow still burn it out, well, Jesus. I 'unno.
+
+//gyne rig module
+/obj/item/rig_module/device/batterer
+	desc = "A void-cell powered device of sorts."
+	icon_state = "batterer"
+	interface_name = "mounted mind batterer"
+	interface_desc = "A device to force a restart of the nervous system for any nearby creature. It doesn't discriminate in terms of targets."
+	usable = 1
+	use_power_cost = 1500//dumps all power from the Gyne's/User's suit.
+	module_cooldown = 145//Enough time to stop abuse. It also doesn't care who gets hit, so it's a double edged sword.
+	origin_tech = list(TECH_BLUESPACE = 2, TECH_MAGNET = 8, TECH_ENGINEERING = 12)
+	device = /obj/item/device/batterer/mantid

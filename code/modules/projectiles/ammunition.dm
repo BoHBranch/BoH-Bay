@@ -8,6 +8,7 @@
 	slot_flags = SLOT_BELT | SLOT_EARS
 	throwforce = 1
 	w_class = ITEM_SIZE_TINY
+	matter = list(MATERIAL_STEEL = 50)
 
 	var/leaves_residue = 1
 	var/caliber = ""					//Which kind of guns it can be loaded into

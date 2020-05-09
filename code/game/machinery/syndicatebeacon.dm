@@ -14,6 +14,7 @@
 
 	anchored = 1
 	density = 1
+	interact_offline = 1
 
 	var/temptext = ""
 	var/selfdestructing = 0

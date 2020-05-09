@@ -100,7 +100,7 @@
 				SA.flash_eyes(2)
 				SA.eye_blurry += flash_strength
 				SA.confused += flash_strength
-		else 
+		else
 			flashfail = 1
 
 	else if(issilicon(M))
@@ -211,5 +211,16 @@
 	desc = "A device that produces a very bright flash of light. This is an advanced and expensive version often issued to VIPs."
 	icon_state = "advflash"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
+	str_min = 3
+	str_max = 8
+
+
+/obj/item/device/flash/disguised
+	name = "camera"
+	desc = "A polaroid camera."
+	icon_state = "cameraflash"
+	item_state = "electropack"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
+	slot_flags = SLOT_BELT
 	str_min = 3
 	str_max = 8

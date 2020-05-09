@@ -239,7 +239,8 @@
 		/obj/item/rig_module/device/welder,
 		/obj/item/rig_module/device/clustertool,
 		/obj/item/rig_module/mounted/plasmacutter,
-		/obj/item/rig_module/maneuvering_jets
+		/obj/item/rig_module/maneuvering_jets,
+		/obj/item/rig_module/device/batterer
 	)
 
 /obj/item/weapon/rig/mantid/nabber
@@ -304,6 +305,7 @@
 		/obj/item/weapon/weldingtool/electric/mantid,
 		/obj/item/device/multitool/mantid,
 		/obj/item/stack/medical/resin,
+		/obj/item/weapon/gun/energy/particle/support,
 		/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent
 	)
 
