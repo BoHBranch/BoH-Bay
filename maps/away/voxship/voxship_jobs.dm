@@ -158,6 +158,7 @@
 	id_type = /obj/item/weapon/card/id/voxship
 	r_pocket = /obj/item/device/radio
 	l_pocket = /obj/item/weapon/crowbar/prybar
+	r_hand = /obj/item/weapon/tank/emergency/nitrogen/double
 
 /decl/hierarchy/outfit/job/voxship/crew/captain
 	name = VOXSHIP_OUTFIT_JOB_NAME("Shoal Quill")
@@ -167,6 +168,7 @@
 	belt = /obj/item/weapon/storage/belt/utility/full
 	id_type = /obj/item/weapon/card/id/voxship_captain
 	l_pocket = /obj/item/weapon/crowbar/prybar
+	r_hand = /obj/item/weapon/tank/emergency/nitrogen/double
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew
 	name = "Shoal Scavenger"

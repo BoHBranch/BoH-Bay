@@ -46,7 +46,7 @@
 	else
 		to_chat(src, "<span class='warning'>The forum URL is not set in the server configuration.</span>")
 	return
-
+/*
 /client/verb/rules()
 	set name = "Rules"
 	set desc = "Show Server Rules."
@@ -58,7 +58,7 @@
 	else
 		to_chat(src, "<span class='warning'>The rules URL is not set in the server configuration.</span>")
 	return
-
+*/
 /client/verb/lore_splash()
 	set name = "Lore"
 	set desc = "Links to the beginner Lore wiki."
