@@ -27,6 +27,7 @@
 	caliber = CALIBER_DART
 	projectile_type = /obj/item/projectile/bullet/chemdart
 	leaves_residue = 0
+	matter = list(MATERIAL_GLASS = 100)
 
 /obj/item/ammo_casing/chemdart/expend()
 	qdel(src)
@@ -42,6 +43,7 @@
 	ammo_type = /obj/item/ammo_casing/chemdart
 	max_ammo = 5
 	multiple_sprites = 1
+	matter = list(MATERIAL_GLASS = 500)
 
 /obj/item/weapon/gun/projectile/dartgun
 	name = "dart gun"

@@ -19,38 +19,43 @@
 	valid_colors = null
 	max_force = 10
 
+	var/list/tool_icons
+	color = COLOR_NT_RED
 	var/active_tool = SWISSKNF_CLOSED
-	var/tools = list(SWISSKNF_LBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER)
+	var/tools = list(SWISSKNF_LBLADE, SWISSKNF_SBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_CSCREW, SWISSKNF_GBLADE, SWISSKNF_WCUTTER, SWISSKNF_WBLADE, SWISSKNF_CROWBAR)
 	var/can_use_tools = FALSE
 	var/sharp_tools = list(SWISSKNF_LBLADE, SWISSKNF_SBLADE, SWISSKNF_GBLADE, SWISSKNF_WBLADE)
+
+/obj/item/weapon/material/knife/folding/swiss/Initialize()
+	. = ..()
+	for(var/t in tools)
+		LAZYSET(tool_icons, t, overlay_image(icon, t, flags=RESET_COLOR))
 
 /obj/item/weapon/material/knife/folding/swiss/attack_self(mob/user)
 	var/choice	
 	if(user.a_intent != I_HELP && ((SWISSKNF_LBLADE in tools) || (SWISSKNF_SBLADE in tools)) && active_tool == SWISSKNF_CLOSED)
 		open = TRUE
-		if(SWISSKNF_LBLADE in tools)
-			choice = SWISSKNF_LBLADE
-		else
-			choice = SWISSKNF_SBLADE
+		choice = (SWISSKNF_LBLADE in tools) ? SWISSKNF_LBLADE : SWISSKNF_SBLADE
 	else
 		if(active_tool == SWISSKNF_CLOSED)
-			choice = input("Select a tool to open.","Knife") as null|anything in tools|SWISSKNF_CLOSED
+			var/list/options = list()
+			for(var/t in tools)
+				options[t] = tool_icons[t]
+			choice = RADIAL_INPUT(user, options) || SWISSKNF_CLOSED
 		else
 			choice = SWISSKNF_CLOSED
 			open = FALSE
 	
-	if(!choice || !CanPhysicallyInteract(user))
+	if(!choice || (choice == active_tool) || !CanPhysicallyInteract(user))
 		return
 	if(choice == SWISSKNF_CLOSED)
 		open = FALSE
 		user.visible_message("<span class='notice'>\The [user] closes the [name].</span>")
 	else
 		open = TRUE
+		user.visible_message("<span class='[(choice in sharp_tools) ? "warning" : "notice"]'>\The [user] opens the [lowertext(choice)].</span>")
 		if(choice == SWISSKNF_LBLADE || choice == SWISSKNF_SBLADE)
-			user.visible_message("<span class='warning'>\The [user] opens the [lowertext(choice)].</span>")
 			playsound(user, 'sound/weapons/flipblade.ogg', 15, 1)
-		else
-			user.visible_message("<span class='notice'>\The [user] opens the [lowertext(choice)].</span>")
 			
 	active_tool = choice
 	update_force()
@@ -115,48 +120,6 @@
 			can_use_tools = FALSE
 			return
 	return ..()
-
-/obj/item/weapon/material/knife/folding/swiss/officer
-	name = "officer's combi-knife"
-	desc = "A small, blue, multi-purpose folding knife. This one adds a corkscrew."
-	color = COLOR_COMMAND_BLUE
-
-	tools = list(SWISSKNF_LBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_CSCREW)
-
-/obj/item/weapon/material/knife/folding/swiss/sec
-	name = "Master-At-Arms' combi-knife"
-	desc = "A small, red, multi-purpose folding knife. This one adds no special tools."
-	color = COLOR_NT_RED
-
-	tools = list(SWISSKNF_LBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER)
-
-/obj/item/weapon/material/knife/folding/swiss/medic
-	name = "medic's combi-knife"
-	desc = "A small, green, multi-purpose folding knife. This one adds a smaller blade in place of the large blade and a glass cutter."
-	color = COLOR_OFF_WHITE
-
-	tools = list(SWISSKNF_SBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_GBLADE)
-
-/obj/item/weapon/material/knife/folding/swiss/engineer
-	name = "engineer's combi-knife"
-	desc = "A small, yellow, multi-purpose folding knife. This one adds a wood saw and wire cutters."
-	color = COLOR_AMBER
-
-	tools = list(SWISSKNF_LBLADE, SWISSKNF_SBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_WBLADE, SWISSKNF_WCUTTER)
-
-/obj/item/weapon/material/knife/folding/swiss/explorer
-	name = "explorer's combi-knife"
-	desc = "A small, purple, multi-purpose folding knife. This one adds a wood saw and pry bar."
-	color = COLOR_PURPLE
-
-	tools = list(SWISSKNF_LBLADE, SWISSKNF_SBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_WBLADE, SWISSKNF_CROWBAR)
-
-/obj/item/weapon/material/knife/folding/swiss/loot
-	name = "black combi-knife"
-	desc = "A small, silver, multi-purpose folding knife. This one adds a small blade and corkscrew."
-	color = COLOR_TITANIUM
-
-	tools = list(SWISSKNF_LBLADE, SWISSKNF_SBLADE, SWISSKNF_CLIFTER, SWISSKNF_COPENER, SWISSKNF_CSCREW)
 
 #undef SWISSKNF_CLOSED
 #undef SWISSKNF_LBLADE

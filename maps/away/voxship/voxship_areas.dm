@@ -1,5 +1,6 @@
 /area/voxship/
 	icon = 'voxship.dmi'
+	req_access = list(access_voxship)
 
 /area/voxship/ship_fore/
 	name = "\improper Vox Ship Fore"
@@ -48,3 +49,7 @@
 /area/voxship/shuttle
 	name = "\improper Unknown Signature"
 	icon_state = "shuttle"
+
+/area/voxship/bioreactor
+	name = "\improper Bioreactor"
+	icon_state = "engineering"

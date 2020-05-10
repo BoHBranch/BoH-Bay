@@ -50,6 +50,52 @@
 /obj/random/single/spawn_choices()
 	return list(spawn_object)
 
+/obj/random/produce
+	name = "random produce"
+	icon = 'icons/obj/seeds.dmi'
+	icon_state = ""
+	var/list/produce_list = list( //When adding produce, use the .name variable of the /datum/seed/
+		"chili" = 1,
+		"berries" = 0.25,
+		"blueberries" = 0.25,
+		"tomato" = 2,
+		"eggplant" = 0.5,
+		"apple" = 0.25,
+		"mushrooms" = 0.25,
+		"grapes" = 0.25,
+		"greengrapes" = 0.25,
+		"peanut" = 0.5,
+		"cabbage" = 2,
+		"banana" = 0.5,
+		"corn" = 2,
+		"potato" = 2,
+		"soybean" = 0.5,
+		"rice" = 2,
+		"carrot" = 1,
+		"whitebeet" = 1,
+		"watermelon" = 0.1,
+		"pumpkin" = 0.1,
+		"lime" = 0.25,
+		"lemon" = 0.25,
+		"orange" = 0.25,
+		"cacao" = 0.5,
+		"cherry" = 0.25,
+		"garlic" = 0.5,
+		"onion" = 0.5
+	)
+
+/obj/random/produce/spawn_item()
+	for(var/i=1,i<=spawn_attempts,i++)
+		if(prob(spawn_nothing_percentage))
+			continue
+		var/seed_chosen = pickweight(produce_list)
+		var/datum/seed/chosen_seed = SSplants.seeds[seed_chosen]
+		if(chosen_seed)
+			chosen_seed.spawn_seed(src.loc)
+		else
+			log_debug("Cannot spawn random produce [seed_chosen]! Fix this by editing [type]'s produce_list!")
+
+
 /obj/random/tool
 	name = "random tool"
 	desc = "This is a random tool."
@@ -529,7 +575,7 @@ obj/random/closet //A couple of random closets to spice up maint
 /obj/random/tank/spawn_choices()
 	return list(/obj/item/weapon/tank/oxygen = 5,
 				/obj/item/weapon/tank/oxygen/yellow = 4,
-				/obj/item/weapon/tank/oxygen/red = 4,
+				/obj/item/weapon/tank/emergency/oxygen/double/red = 4,
 				/obj/item/weapon/tank/air = 3,
 				/obj/item/weapon/tank/emergency/oxygen = 4,
 				/obj/item/weapon/tank/emergency/oxygen/engi = 3,

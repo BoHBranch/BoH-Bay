@@ -230,6 +230,18 @@
 /obj/machinery/light/ascent{
 	dir = 8
 	},
+/obj/machinery/chemical_dispenser/ert{
+	color = "PURPLE"
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_starboard_prow)
+"aG" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/clothing/gloves/latex/nitrile{
+	color = "PURPLE";
+	desc = "Sterile... gloves?";
+	name = "mantis surgical gloves"
+	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_starboard_prow)
 "aH" = (
@@ -10544,7 +10556,7 @@ aa
 cL
 CA
 as
-mN
+aG
 as
 as
 as

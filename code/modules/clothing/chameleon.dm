@@ -440,3 +440,82 @@
 		var/mob/M = src.loc
 		M.update_inv_r_hand()
 		M.update_inv_l_hand()
+
+//*****************
+//**Armored Chameleon Hat**
+//*****************
+
+/obj/item/clothing/head/chameleonarmor
+	name = "fedora"
+	icon_state = "fedora"
+	desc = "A sharp, stylish hat."
+	armor = list(
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_PISTOL,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_RESISTANT,
+		bomb = ARMOR_BOMB_PADDED
+		)
+	siemens_coefficient = 0.3
+	origin_tech = list(TECH_ESOTERIC = 3)
+	body_parts_covered = 0
+	item_flags = ITEM_FLAG_INVALID_FOR_CHAMELEON
+	var/global/list/clothing_choices
+
+/obj/item/clothing/head/chameleonarmor/Initialize()
+	. = ..()
+	if(!clothing_choices)
+		clothing_choices = generate_chameleon_choices(/obj/item/clothing/head)
+
+/obj/item/clothing/head/chameleonarmor/verb/change(picked in clothing_choices)
+	set name = "Change Hat/Helmet Appearance"
+	set category = "Chameleon Items"
+	set src in usr
+
+	if (!(usr.incapacitated()))
+		if(!ispath(clothing_choices[picked]))
+			return
+
+		disguise(clothing_choices[picked], usr)
+		update_clothing_icon()	//so our overlays update.
+
+//******************
+//**Chameleon Suit**
+//******************
+
+/obj/item/clothing/suit/chameleonarmor
+	name = "grey trenchcoat"
+	icon_state = "detective2"
+	item_state = "detective2"
+	desc = "A rugged canvas trenchcoat, designed and created by TX Fabrication Corp. The coat is externally impact resistant - perfect for your next act of autodefenestration!"
+	armor = list(
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_PISTOL,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_RESISTANT,
+		bomb = ARMOR_BOMB_PADDED
+		)
+	siemens_coefficient = 0.3
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS/ARMS //now covers legs with new sprite
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS/ARMS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS/ARMS
+	origin_tech = list(TECH_ESOTERIC = 3)
+	item_flags = ITEM_FLAG_INVALID_FOR_CHAMELEON
+	var/global/list/clothing_choices
+
+/obj/item/clothing/suit/chameleonarmor/Initialize()
+	. = ..()
+	if(!clothing_choices)
+		clothing_choices = generate_chameleon_choices(/obj/item/clothing/suit)
+
+/obj/item/clothing/suit/chameleonarmor/verb/change(picked in clothing_choices)
+	set name = "Change Oversuit Appearance"
+	set category = "Chameleon Items"
+	set src in usr
+
+	if (!(usr.incapacitated()))
+		if(!ispath(clothing_choices[picked]))
+			return
+
+		disguise(clothing_choices[picked], usr)
+		update_clothing_icon()	//so our overlays update.

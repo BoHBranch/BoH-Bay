@@ -13,8 +13,8 @@ GLOBAL_LIST_INIT(symbiote_starting_points, new)
 	title = "Symbiote"
 	department = "Civilian"
 	department_flag = CIV
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "your host"
 	selection_color = "#ad6bad"
 	access = list()
@@ -119,7 +119,7 @@ GLOBAL_LIST_INIT(symbiote_starting_points, new)
 			return
 
 /datum/job/symbiote/is_position_available()
-	. = ..() && length(find_valid_hosts(TRUE)) 
+	. = ..() && length(find_valid_hosts(TRUE))
 
 /obj/effect/landmark/symbiote_start
 	name = "Symbiote Start"

@@ -43,7 +43,6 @@
 /datum/gear/flask
 	display_name = "flask"
 	path = /obj/item/weapon/reagent_containers/food/drinks/flask/barflask
-	flags = GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/flask/New()
 	..()
@@ -52,7 +51,6 @@
 /datum/gear/vacflask
 	display_name = "vacuum-flask"
 	path = /obj/item/weapon/reagent_containers/food/drinks/flask/vacuumflask
-	flags = GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/vacflask/New()
 	..()
@@ -61,7 +59,7 @@
 /datum/gear/coffeecup
 	display_name = "coffee cup"
 	path = /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup
-	flags = GEAR_HAS_TYPE_SELECTION | GEAR_HAS_CUSTOM_SELECTION
+	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/knife
 	display_name = "folding knife"
@@ -94,6 +92,20 @@
 	gear_tweaks += new/datum/gear_tweak/path(lunchboxes)
 	gear_tweaks += new/datum/gear_tweak/contents(lunchables_lunches(), lunchables_snacks(), lunchables_drinks())
 
+/datum/gear/mre
+	display_name = "MRE selection"
+	description = "A vacuum-sealed bag containing a day's worth of nutrients for an adult in strenuous situations."
+	cost = 2
+	path = /obj/item/weapon/storage/mre
+
+/datum/gear/mre/New()
+	..()
+	var/mre = list()
+	mre["standard mre"] = /obj/item/weapon/storage/mre/random
+	mre["vegan mre"] = /obj/item/weapon/storage/mre/menu9
+	mre["protein mre"] = /obj/item/weapon/storage/mre/menu10
+	gear_tweaks += new /datum/gear_tweak/path(mre)
+
 /datum/gear/towel
 	display_name = "towel"
 	path = /obj/item/weapon/towel
@@ -103,7 +115,6 @@
 	display_name = "plush toy"
 	description = "A plush toy."
 	path = /obj/item/toy/plushie
-	flags = GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/plush_toy/New()
 	..()
@@ -171,7 +182,6 @@
 /datum/gear/zippo
 	display_name = "zippo"
 	path = /obj/item/weapon/flame/lighter/zippo
-	flags = GEAR_HAS_CUSTOM_SELECTION
 
 /datum/gear/zippo/New()
 	..()
@@ -230,7 +240,7 @@
 	gear_tweaks += new/datum/gear_tweak/path(books)
 
 /datum/gear/swiss
-	display_name = "multi-tool"
+	display_name = "combi-knife"
 	path = /obj/item/weapon/material/knife/folding/swiss
 	cost = 4
 	flags = GEAR_HAS_COLOR_SELECTION

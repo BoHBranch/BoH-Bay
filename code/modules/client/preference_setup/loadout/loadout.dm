@@ -366,9 +366,7 @@ var/list/gear_datums = list()
 		gear_tweaks += new/datum/gear_tweak/path/type(path)
 	if(flags & GEAR_HAS_SUBTYPE_SELECTION)
 		gear_tweaks += new/datum/gear_tweak/path/subtype(path)
-	if(flags & GEAR_HAS_CUSTOM_SELECTION)
-		gear_tweaks += gear_tweak_free_name
-		gear_tweaks += gear_tweak_free_desc
+	gear_tweaks += list(gear_tweak_free_name, gear_tweak_free_desc)
 
 /datum/gear/proc/get_description(var/metadata)
 	. = description
@@ -425,6 +423,7 @@ var/list/gear_datums = list()
 		if(A.augment_flags == AUGMENTATION_MECHANIC)
 			if(!BP_IS_ROBOTIC(organ_to_implant_into))
 				to_chat(H, SPAN_WARNING("Your [organ_to_implant_into.name] is not robotic, and therefore the [A] can not be installed!"))
+				qdel(A)
 				return
 		A.replaced(H, organ_to_implant_into)
 		to_chat(H, SPAN_NOTICE("Implanting you with [A] in your [organ_to_implant_into.name]!"))
