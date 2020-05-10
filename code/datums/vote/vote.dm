@@ -22,7 +22,7 @@
 	var/win_y = 740                // Vote window size.
 
 	var/manual_allowed = 1         // Whether humans can start it.
-	var/show_precentages = TRUE //Are precentages shown?
+	var/show_percentages = TRUE //Are percentages shown?
 	var/show_results = TRUE //Do we show vote results?
 
 //Expected to be run immediately after creation; a false return means that the vote could not be run and the datum will be deleted.
@@ -157,7 +157,7 @@
 	else
 		. += "<h2>Vote: [capitalize(name)]</h2>"
 	. += "Time Left: [time_remaining] s<hr>"
-	. += "<table width = '100%'><tr><td align = 'center'><b>Choices</b></td><td colspan='3' align = 'center'><b>Votex</b></td><td align = 'center'><b>[show_precentages ? "Votes" : " "]</b></td>"
+	. += "<table width = '100%'><tr><td align = 'center'><b>Choices</b></td><td colspan='3' align = 'center'><b>Votex</b></td><td align = 'center'><b>[show_percentages ? "Votes" : " "]</b></td>"
 	. += additional_header
 
 	var/totalvotes = 0
@@ -182,7 +182,7 @@
 			else
 				. += "<a href='?src=\ref[src];choice=[j];priority=[i]'>[priorities[i]]</a>"
 			. += "</td>"
-		if(show_precentages)
+		if(show_percentages)
 			. += "</td><td align = 'center'>[votepercent]%</td>"
 		if (additional_text[choice])
 			. += "[additional_text[choice]]" //Note lack of cell wrapper, to allow for dynamic formatting.

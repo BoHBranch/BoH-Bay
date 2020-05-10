@@ -74,7 +74,7 @@
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_PADDED
 		)
-	siemens_coefficient = 0.5
+	siemens_coefficient = 0.3
 
 /obj/item/clothing/head/helmet/riot
 	name = "riot helmet"

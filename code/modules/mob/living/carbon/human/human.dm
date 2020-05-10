@@ -838,7 +838,7 @@
 	var/list/creatures = list()
 	for(var/mob/living/carbon/h in world)
 		creatures += h
-	var/mob/target = input("Who do you want to project your mind to ?") as null|anything in creatures
+	var/mob/target = input("Who do you want to project your mind to?") as null|anything in creatures
 	if (isnull(target))
 		return
 
@@ -1430,8 +1430,8 @@
 	for(var/limb in organs_by_name)
 		var/obj/item/organ/external/current_limb = organs_by_name[limb]
 		if(current_limb && current_limb.dislocated > 0 && !current_limb.is_parent_dislocated()) //if the parent is also dislocated you will have to relocate that first
-			limbs |= current_limb
-	var/obj/item/organ/external/current_limb = input(usr,"Which joint do you wish to relocate?") as null|anything in limbs
+			limbs[current_limb] = current_limb
+	var/obj/item/organ/external/current_limb = show_radial_menu(U, S, limbs)
 
 	if(!current_limb)
 		return

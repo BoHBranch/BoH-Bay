@@ -1,12 +1,12 @@
 /obj/item/clothing/head/terran
-	name = "master ICCGN hat"
+	name = "master UCGNF hat"
 	icon = 'maps/torch/icons/obj/obj_head_terran.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_terran.dmi')
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/head/terran/navy/service
-	name = "ICCGN service cover"
-	desc = "A service uniform cover, worn by low-ranking crew within the Independent Navy."
+	name = "UCGNF service cover"
+	desc = "A service uniform cover, worn by low-ranking crew within the National Fleet."
 	icon_state = "terranservice"
 	item_state = "terranservice"
 	item_state_slots = list(
@@ -15,7 +15,7 @@
 	body_parts_covered = 0
 
 /obj/item/clothing/head/terran/navy/service/command
-	name = "ICCGN command service cover"
-	desc = "A service uniform cover, worn by high-ranking crew within the Independent Navy."
+	name = "UCGNF command service cover"
+	desc = "A service uniform cover, worn by high-ranking crew within the National Fleet."
 	icon_state = "terranservice_comm"
 	item_state = "terranservice_comm"

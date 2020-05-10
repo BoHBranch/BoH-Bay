@@ -96,6 +96,6 @@
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 
-	access = list(access_mining, access_mining_office, access_mining_station,
+	access = list(access_maint_tunnels, access_emergency_storage, access_mining, access_mining_office, access_mining_station,
 						access_expedition_shuttle, access_guppy, access_hangar, access_guppy_helm, access_solgov_crew, access_cargo, access_eva)
 	minimal_access = list()
