@@ -88,7 +88,6 @@
 	#include "items/clothing/boh_accessory.dm"
 	#include "items/clothing/boh_clothing.dm"
 
-	#include "items/psyker/agent_items.dm"
 
 	#include "items/weapon/storage/wallets.dm"
 
