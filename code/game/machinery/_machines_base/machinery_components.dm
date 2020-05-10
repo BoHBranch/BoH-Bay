@@ -288,9 +288,9 @@ Standard helpers for users interacting with machinery parts.
 		if(!(initial(part.part_flags) & PART_FLAG_HAND_REMOVE))
 			continue
 		if(components_are_accessible(path))
-			removable_parts[initial(part.name)] = path
+			removable_parts[initial(part.name)] = part
 	if(length(removable_parts))
-		var/input = input(user, "Which part would you like to uninstall from \the [src]?", "Part Removal") as null|anything in removable_parts
+		var/input = show_radial_menu(user, src, removable_parts)
 		if(!input || QDELETED(src) || !Adjacent(user) || user.incapacitated())
 			return TRUE
 		var/path = removable_parts[input]

@@ -338,82 +338,69 @@
 // Special snowflake ears go below here.
 
 /datum/sprite_accessory/ears/molenar_kitsune
-	name = "quintail kitsune ears (Molenar)"
+	name = "quintail kitsune ears"
 	desc = ""
 	icon_state = "molenar-kitsune"
-	ckeys_allowed = list("molenar")
 
 /datum/sprite_accessory/ears/lilimoth_antennae
-	name = "citheronia antennae (Kira72)"
+	name = "citheronia antennae"
 	desc = ""
 	icon_state = "lilimoth_antennae"
-	ckeys_allowed = list("kira72")
 
 /datum/sprite_accessory/ears/molenar_deathclaw
-	name = "deathclaw ears (Molenar)"
+	name = "deathclaw ears"
 	desc = ""
 	icon_state = "molenar-deathclaw"
-	ckeys_allowed = list("molenar")
 
 /datum/sprite_accessory/ears/miria_fluffdragon
-	name = "fluffdragon ears (Miria Masters)"
+	name = "fluffdragon ears"
 	desc = ""
 	icon_state = "miria-fluffdragonears"
-	ckeys_allowed = list("miriamasters")
 
 /datum/sprite_accessory/ears/miria_kitsune
-	name = "kitsune ears (Miria Masters)"
+	name = "kitsune ears"
 	desc = ""
 	icon_state = "miria-kitsuneears"
-	ckeys_allowed = list("miriamasters")
 
 /datum/sprite_accessory/ears/runac
-	name = "fennecsune ears (Runac)"
+	name = "fennecsune ears"
 	desc = ""
 	icon_state = "runac"
-	ckeys_allowed = list("rebcom1807")
 
 /datum/sprite_accessory/ears/kerena
-	name = "wingwolf ears (Kerena)"
+	name = "wingwolf ears"
 	desc = ""
 	icon_state = "kerena"
-	ckeys_allowed = list("somekindofpony")
 
 /datum/sprite_accessory/ears/rosey
-	name = "tritail kitsune ears (Rosey)"
+	name = "tritail kitsune ears"
 	desc = ""
 	icon_state = "rosey"
-	ckeys_allowed = list("joey4298")
 
 /datum/sprite_accessory/ears/aronai
-	name = "aronai ears/head (Aronai)"
+	name = "aronai ears/head"
 	desc = ""
 	icon_state = "aronai"
-	ckeys_allowed = list("arokha")
 
 /datum/sprite_accessory/ears/holly
-	name = "tigress ears (Holly Sharp)"
+	name = "tigress ears"
 	desc = ""
 	icon_state = "tigressears"
-	ckeys_allowed = list("hoodoo")
 
 /datum/sprite_accessory/ears/molenar_inkling
-	name = "teal mature inkling hair (Kari Akiren)"
+	name = "teal mature inkling hair"
 	desc = ""
 	icon_state = "molenar-tentacle"
-	ckeys_allowed = list("molenar")
 
 /datum/sprite_accessory/ears/shock
-	name = "pharoah hound ears (Shock Diamond)"
+	name = "pharoah hound ears"
 	desc = ""
 	icon_state = "shock"
-	ckeys_allowed = list("icowom","cameron653")
 
 /datum/sprite_accessory/ears/alurane
-	name = "alurane ears/hair (Pumila)"
+	name = "alurane ears/hair"
 	desc = ""
 	icon_state = "alurane-ears"
-	ckeys_allowed = list("natje")
 
 /*
 ////////////////////////////
@@ -773,13 +760,6 @@
 	name = "goat legs, colorable"
 	desc = ""
 	icon_state = "satyr"
-	color_blend_mode = ICON_MULTIPLY
-	do_colouration = 1
-
-/datum/sprite_accessory/tail/tailmaw
-	name = "tailmaw, colorable"
-	desc = ""
-	icon_state = "tailmaw"
 	color_blend_mode = ICON_MULTIPLY
 	do_colouration = 1
 
