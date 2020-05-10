@@ -13282,10 +13282,20 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarbridge)
 "wr" = (
-/obj/structure/catwalk,
-/obj/random/maintenance,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
+/obj/machinery/newscaster/security_unit{
+	pixel_x = -32
+	},
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/reagent_containers/food/drinks/ice,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/rocks,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/rocks,
+/obj/random/drinkbottle,
+/obj/machinery/vending/medals{
+	dir = 1;
+	pixel_y = -32
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/cobed)
 "ws" = (
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -13303,13 +13313,18 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarbridge)
 "wt" = (
-/obj/random/closet,
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/random/maintenance,
-/obj/random/maintenance,
-/obj/random/maintenance,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/bridge/aftstarboard)
+/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
+	pixel_x = -4;
+	pixel_y = 8
+	},
+/obj/item/device/taperecorder{
+	pixel_x = -4;
+	pixel_y = 2
+	},
+/obj/structure/table/woodentable/walnut,
+/obj/item/sticky_pad/random,
+/turf/simulated/floor/carpet,
+/area/crew_quarters/heads/office/xo)
 "wu" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/yellow{
@@ -14494,17 +14509,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
-"Av" = (
-/obj/machinery/newscaster/security_unit{
-	pixel_x = -32
-	},
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/reagent_containers/food/drinks/ice,
-/obj/item/weapon/reagent_containers/food/drinks/glass2/rocks,
-/obj/item/weapon/reagent_containers/food/drinks/glass2/rocks,
-/obj/random/drinkbottle,
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/cobed)
 "Aw" = (
 /obj/structure/sign/warning/high_voltage{
 	icon_state = "shock";
@@ -18706,30 +18710,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
-"VD" = (
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
-/obj/structure/railing/mapped{
-	dir = 8;
-	tag = "icon-railing0 (EAST)"
-	},
-/turf/simulated/open,
-/area/maintenance/bridge/forestarboard)
-"VF" = (
-/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
-	pixel_x = -4;
-	pixel_y = 8
-	},
-/obj/item/device/taperecorder{
-	pixel_x = -4;
-	pixel_y = 2
-	},
-/obj/structure/table/woodentable/walnut,
-/obj/item/sticky_pad/random,
-/turf/simulated/floor/carpet,
-/area/crew_quarters/heads/office/xo)
 "VL" = (
 /obj/effect/floor_decal/corner/red/half,
 /turf/simulated/floor/tiled/monotile,
@@ -27159,7 +27139,7 @@ uy
 hk
 Cl
 fV
-Av
+wr
 uy
 uy
 tg
@@ -28939,6 +28919,206 @@ aa
 aa
 aa
 af
+mC
+hv
+mD
+mC
+aO
+sC
+Bs
+qa
+aO
+sl
+oA
+wt
+aO
+bR
+cl
+cu
+cB
+iJ
+jz
+dT
+dh
+IY
+nJ
+oy
+eB
+eW
+fw
+fP
+sy
+En
+tX
+En
+vj
+vO
+hr
+sB
+Oi
+lT
+Ht
+aK
+tg
+tg
+hT
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(47,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 af
 af
 ml
