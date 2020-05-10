@@ -121,64 +121,45 @@
 		else if(isWrench(W))
 
 			var/list/current_mounts = list()
-			if(cell) current_mounts   += "cell"
-			if(air_supply) current_mounts += "tank"
-			if(installed_modules && installed_modules.len) current_mounts += "system module"
-
-			var/to_remove = input("Which would you like to modify?") as null|anything in current_mounts
+			if(cell) current_mounts[cell] = cell
+			if(air_supply) current_mounts[air_supply] = air_supply
+			for(var/obj/item/rig_module/module in installed_modules)
+				if(module.permanent)
+					continue
+				current_mounts[module] = module
+			var/to_remove = show_radial_menu(user, (loc == user) ? user : src, current_mounts)
 			if(!to_remove)
 				return
 
-			if(istype(src.loc,/mob/living/carbon/human) && to_remove != "cell" && to_remove != "tank")
+			if(istype(src.loc,/mob/living/carbon/human) && to_remove != cell && to_remove != air_supply)
 				var/mob/living/carbon/human/H = src.loc
 				if(H.back == src)
 					to_chat(user, "You can't remove an installed device while the hardsuit is being worn.")
 					return
 
-			switch(to_remove)
+			if(to_remove == cell)
+				to_chat(user, "You detach \the [cell] from \the [src]'s battery mount.")
+				for(var/obj/item/rig_module/module in installed_modules)
+					module.deactivate()
+				user.put_in_hands(cell)
+				cell = null
 
-				if("cell")
+			else if(to_remove == air_supply)
+				if(!air_supply)
+					to_chat(user, "There is no tank to remove.")
+					return
 
-					if(cell)
-						to_chat(user, "You detach \the [cell] from \the [src]'s battery mount.")
-						for(var/obj/item/rig_module/module in installed_modules)
-							module.deactivate()
-						user.put_in_hands(cell)
-						cell = null
-					else
-						to_chat(user, "There is nothing loaded in that mount.")
+				user.put_in_hands(air_supply)
+				to_chat(user, "You detach and remove \the [air_supply].")
+				air_supply = null
 
-				if("tank")
-					if(!air_supply)
-						to_chat(user, "There is no tank to remove.")
-						return
-
-					user.put_in_hands(air_supply)
-					to_chat(user, "You detach and remove \the [air_supply].")
-					air_supply = null
-
-				if("system module")
-
-					var/list/possible_removals = list()
-					for(var/obj/item/rig_module/module in installed_modules)
-						if(module.permanent)
-							continue
-						possible_removals[module.name] = module
-
-					if(!possible_removals.len)
-						to_chat(user, "There are no installed modules to remove.")
-						return
-
-					var/removal_choice = input("Which module would you like to remove?") as null|anything in possible_removals
-					if(!removal_choice)
-						return
-
-					var/obj/item/rig_module/removed = possible_removals[removal_choice]
-					to_chat(user, "You detach \the [removed] from \the [src].")
-					removed.dropInto(loc)
-					removed.removed()
-					installed_modules -= removed
-					update_icon()
+			else 
+				var/obj/item/rig_module/rem = to_remove
+				to_chat(user, "You detach \the [rem] from \the [src].")
+				rem.dropInto(loc)
+				rem.removed()
+				installed_modules -= rem
+				update_icon()
 
 		else if(istype(W,/obj/item/stack/nanopaste)) //EMP repair
 			var/obj/item/stack/S = W

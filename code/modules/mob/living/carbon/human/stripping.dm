@@ -59,7 +59,11 @@
 				return
 			var/obj/item/clothing/accessory/A = holder.accessories[1]
 			if(holder.accessories.len > 1)
-				A = input("Select an accessory to remove from [holder]") as null|anything in holder.accessories
+				var/list/removables = list()
+				for(var/obj/item/clothing/accessory/ass in holder.accessories)
+					if(ass.removable)
+						removables[ass] = ass
+				A = show_radial_menu(user, src, removables)
 			if(!istype(A))
 				return
 			visible_message("<span class='danger'>\The [user] is trying to remove \the [src]'s [A.name]!</span>")

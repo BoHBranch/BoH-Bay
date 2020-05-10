@@ -345,7 +345,7 @@
 		var/i = 1
 		var/sanity = prob(99.9)
 		while(i <= gasnum && total_moles && newgases.len)
-			if(badflag && sanity)
+			if(badflag) // if sanity is 0 badflag never gets set anyway
 				for(var/g in newgases)
 					if(gas_data.flags[g] & badflag)
 						newgases -= g
@@ -355,7 +355,6 @@
 					badflag |= XGM_GAS_FUEL
 				if(gas_data.flags[ng] & XGM_GAS_FUEL)
 					badflag |= XGM_GAS_OXIDIZER
-				sanity = 0
 
 			var/part = total_moles * rand(3,80)/100 //allocate percentage to it
 			if(i == gasnum || !newgases.len) //if it's last gas, let it have all remaining moles
