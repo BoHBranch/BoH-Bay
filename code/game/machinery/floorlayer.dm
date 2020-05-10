@@ -54,7 +54,11 @@
 		if(!length(contents))
 			to_chat(user, "<span class='notice'>\The [src] is empty.</span>")
 		else
-			var/obj/item/stack/tile/E = input("Choose remove tile type.", "Tiles") as null|anything in contents
+			var/list/removables = list()
+			for(var/obj/item/stack/tile/rem in contents)
+				if(istype(rem))
+					removables[rem] = rem
+			var/obj/item/stack/tile/E = show_radial_menu(user, src, removables)
 			if(E)
 				to_chat(user, "<span class='notice'>You remove the [E] from /the [src].</span>")
 				E.dropInto(loc)
@@ -62,7 +66,11 @@
 		return
 
 	if(isScrewdriver(W))
-		T = input("Choose tile type.", "Tiles") as null|anything in contents
+		var/list/choosables = list()
+		for(var/obj/item/stack/tile/T in contents)
+			if(istype(T))
+				choosables[T] = T
+		T = show_radial_menu(user, src, choosables)
 		return
 	..()
 
