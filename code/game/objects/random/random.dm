@@ -1532,6 +1532,6 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 /obj/random/illegaltwo/spawn_choices()
 	return list(/obj/item/weapon/gun/magnetic = 1,
 				/obj/random/hostile/maint_severe = 25,
-				/obj/random/hostile/maint = 35
+				/obj/random/hostile/maint = 35,
 				/obj/item/weapon/gun/projectile/pirate/unloaded = 4,
 				/obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn/empty = 2)

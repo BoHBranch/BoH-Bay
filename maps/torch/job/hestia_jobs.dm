@@ -63,12 +63,12 @@
 	selection_color = "#557e38"
 	minimal_player_age = 12
 	economic_power = 7
+	skill_points = 34
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_ADEPT,
 	                    SKILL_PILOT       = SKILL_BASIC)
-	skill_points = 22
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
@@ -86,6 +86,7 @@
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 6
+	skill_points = 34
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
@@ -118,11 +119,12 @@
 	title = "Rifleman"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 2
+	spawn_positions = 2
 	minimal_player_age = 3
 	supervisors = "the Combat Technician and Squad Leader"
 	selection_color = "#557e38"
+	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
