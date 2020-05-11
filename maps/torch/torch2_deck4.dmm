@@ -3188,14 +3188,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fourthdeck/starboard)
-"gD" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/starboard)
 "gF" = (
 /obj/effect/floor_decal/techfloor{
 	icon_state = "techfloor_edges";
@@ -6382,7 +6374,7 @@
 	name = "Hangar Maintenance"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
-/area/crew_quarters/lounge)
+/area/maintenance/fourthdeck/port)
 "rD" = (
 /obj/machinery/computer/ship/navigation{
 	icon_state = "computer";
@@ -9173,9 +9165,6 @@
 /obj/effect/floor_decal/corner/red/half,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/fore)
-"zx" = (
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fourthdeck/port)
 "zy" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -10300,20 +10289,6 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
-"Ft" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/structure/railing/mapped,
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/foreport)
 "Fu" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/largecrate,
@@ -10384,16 +10359,6 @@
 "FD" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/carpet,
-/area/crew_quarters/lounge)
-"FI" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 8
-	},
-/obj/machinery/vending/snack{
-	icon_state = "snack";
-	dir = 8
-	},
-/turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
 "FK" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -10592,6 +10557,10 @@
 /obj/machinery/vending/cigarette{
 	icon_state = "cigs";
 	dir = 8
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	icon_state = "spline_fancy";
+	dir = 1
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
@@ -12179,10 +12148,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/fore)
-"Mg" = (
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/crew_quarters/lounge)
 "Mh" = (
 /obj/structure/catwalk,
 /turf/simulated/open,
@@ -14233,7 +14198,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
 "Sb" = (
-/obj/structure/plasticflaps,
 /obj/machinery/conveyor{
 	dir = 8;
 	id = "packageSort1"
@@ -36283,7 +36247,7 @@ lk
 lr
 Yd
 EZ
-FI
+TY
 Gr
 GZ
 iS
@@ -36687,10 +36651,10 @@ lr
 yp
 yp
 rv
-Mg
-Mg
-Mg
-Mg
+Ni
+Ni
+Ni
+Ni
 If
 kw
 XL
