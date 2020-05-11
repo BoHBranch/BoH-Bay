@@ -63,20 +63,18 @@
 	selection_color = "#557e38"
 	minimal_player_age = 12
 	economic_power = 7
+	skill_points = 34
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_ADEPT,
 	                    SKILL_PILOT       = SKILL_BASIC)
-	skill_points = 22
-
-	access = list(access_maint_tunnels, access_infantry, access_infcom, access_inftech)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
 
 /datum/job/squad_lead/get_description_blurb()
-	return "You are a Squad Leader. Your duty is to organize and lead the small infantry squad to support the Pathfinder. You command Marines in your Squad. You make sure that expedition has the firepower it needs. Once on the away mission, your duty is to ensure that the worst doesn't become reality."
+	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are a Squad Leader. Your duty is to organize and lead the small infantry squad to support the Pathfinder. You command Marines in your Squad. You make sure that expedition has the firepower it needs. Once on the away mission, your duty is to ensure that the worst doesn't become reality."
 
 /datum/job/combat_tech
 	title = "Combat Technician"
@@ -88,6 +86,7 @@
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 6
+	skill_points = 34
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
@@ -106,8 +105,15 @@
 		"Combat Engineer",
 		"Combat Medic")
 
+/datum/job/combat_tech/is_position_available()
+	if(..())
+		for(var/mob/M in GLOB.player_list)
+			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
+				return TRUE
+	return FALSE
+
 /datum/job/combat_tech/get_description_blurb()
-	return "You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if no Squad Leader is present."
+	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if no Squad Leader is present."
 
 /datum/job/grunt
 	title = "Rifleman"
@@ -118,6 +124,7 @@
 	minimal_player_age = 3
 	supervisors = "the Combat Technician and Squad Leader"
 	selection_color = "#557e38"
+	skill_points = 18
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
@@ -136,8 +143,15 @@
 		"Grunt",
 		"Trooper")
 
+/datum/job/grunt/is_position_available()
+	if(..())
+		for(var/mob/M in GLOB.player_list)
+			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
+				return TRUE
+	return FALSE
+
 /datum/job/grunt/get_description_blurb()
-	return "You are a Marine! Your duty is to listen to the Squad Leader. If they're not present, the Combat Technician may pull rank. Do your best not to die, while also taking orders. Oorah!"
+	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are a Marine! Your duty is to listen to the Squad Leader. If they're not present, the Combat Technician may pull rank. Do your best not to die, while also taking orders. Oorah!"
 
 /datum/job/psiadvisor
 	title = "Psionic Advisor"
