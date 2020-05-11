@@ -57,8 +57,8 @@
 	title = "Squad Lead"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
 	minimal_player_age = 12
@@ -81,8 +81,8 @@
 	supervisors = "the Squad Leader"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 6
@@ -95,8 +95,7 @@
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/e4,
-		/datum/mil_rank/marine_corps/e5,
-		/datum/mil_rank/marine_corps/e6
+		/datum/mil_rank/marine_corps/e5
 		)
 	access = list(access_maint_tunnels, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
@@ -119,8 +118,8 @@
 	title = "Rifleman"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 4
+	spawn_positions = 4
 	minimal_player_age = 3
 	supervisors = "the Combat Technician and Squad Leader"
 	selection_color = "#557e38"
@@ -132,9 +131,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/e1,
 		/datum/mil_rank/marine_corps/e2,
-		/datum/mil_rank/marine_corps/e3,
-		/datum/mil_rank/marine_corps/e4,
-		/datum/mil_rank/marine_corps/e5
+		/datum/mil_rank/marine_corps/e3
 	)
 	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
