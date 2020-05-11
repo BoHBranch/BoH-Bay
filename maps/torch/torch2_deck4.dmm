@@ -9543,6 +9543,10 @@
 /obj/structure/ladder/up,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/foreport)
+"Cb" = (
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/maintenance/fourthdeck/port)
 "Cc" = (
 /obj/structure/closet/crate,
 /obj/random/firstaid,
@@ -10544,6 +10548,10 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/fore)
+"GE" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/port)
 "GI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9;
@@ -11292,7 +11300,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
 "JM" = (
-/obj/machinery/door/firedoor,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -11307,7 +11314,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
+/turf/simulated/wall/prepainted,
 /area/maintenance/fourthdeck/port)
 "JO" = (
 /obj/machinery/door/firedoor,
@@ -15894,11 +15901,6 @@
 /obj/effect/floor_decal/corner/green/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
-"WY" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/portable_atmospherics/powered/pump/filled,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fourthdeck/port)
 "WZ" = (
 /turf/simulated/wall/r_wall/hull,
 /area/hallway/primary/fourthdeck/fore)
@@ -37649,7 +37651,7 @@ qd
 KQ
 HS
 yG
-Yf
+sh
 JL
 rG
 GT
@@ -38257,7 +38259,7 @@ en
 JT
 sh
 JL
-WY
+Ni
 GT
 GT
 aa
@@ -38459,7 +38461,7 @@ Fc
 Sb
 sh
 JM
-GW
+Cb
 GT
 GT
 aa
@@ -38660,7 +38662,7 @@ pc
 Cj
 Vt
 sh
-JL
+bd
 Ni
 GT
 GT
@@ -38862,7 +38864,7 @@ qI
 sg
 GU
 sh
-bd
+JL
 Ni
 GT
 GT
@@ -39065,7 +39067,7 @@ GW
 BH
 WA
 TW
-Ni
+GE
 GT
 GT
 aa
