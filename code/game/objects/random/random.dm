@@ -991,7 +991,8 @@ something, make sure it's not in one of the other lists.*/
 		/obj/random/shoes = 10,
 		/obj/random/hardsuit = 1,
 		/obj/random/hat = 5,
-		/obj/random/hostile/maint = 20,
+		/obj/random/hostile/maint = 35,
+		/obj/random/hostile/maint_severe = 25,
 		/obj/random/illegal = 5,
 		/obj/random/junk = 1,
 		/obj/random/loot = 1,
@@ -1011,7 +1012,8 @@ something, make sure it's not in one of the other lists.*/
 		/obj/random/tech_supply = 100,
 		/obj/random/technology_scanner = 80,
 		/obj/random/toolbox = 30,
-		/obj/random/toy = 10
+		/obj/random/toy = 10,
+		/obj/random/illegaltwo = 2
 	)
 
 /obj/random/loot /*Better loot for away missions and salvage */
@@ -1160,7 +1162,7 @@ obj/random/hostile/spawn_choices()
 	icon_state = "standing"
 	spawn_nothing_percentage = 0
 
-/obj/random/hostile/maint/spawn_choices()
+/obj/random/hostile/maint_severe/spawn_choices()
 	return list(
 		/mob/living/simple_animal/hostile/voxslug = 6,
 		/mob/living/simple_animal/hostile/leech = 3
@@ -1514,7 +1516,10 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 				/obj/item/weapon/reagent_containers/pill/three_eye = 1,
 				/obj/item/weapon/storage/lockbox/vials/random = 1,
 				/obj/item/weapon/storage/toolbox/syndicate = 6,
-				/obj/item/weapon/reagent_containers/food/snacks/egg/lizard = 1
+				/obj/item/weapon/reagent_containers/food/snacks/egg/lizard = 3,
+				/obj/random/hostile/maint_severe = 25,
+				/obj/random/hostile/maint = 35
+
 			)
 
 //100% Illegal
@@ -1526,5 +1531,7 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 
 /obj/random/illegaltwo/spawn_choices()
 	return list(/obj/item/weapon/gun/magnetic = 1,
+				/obj/random/hostile/maint_severe = 25,
+				/obj/random/hostile/maint = 35
 				/obj/item/weapon/gun/projectile/pirate/unloaded = 4,
 				/obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn/empty = 2)

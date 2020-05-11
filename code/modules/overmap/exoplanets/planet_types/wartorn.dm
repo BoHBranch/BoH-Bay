@@ -44,7 +44,7 @@
 	flora_prob = 8
 	large_flora_prob = 4
 	flora_diversity = 4
-	fauna_types = list(/mob/living/simple_animal/hostile/syndicate/melee, /mob/living/simple_animal/hostile/syndicate/ranged, /mob/living/simple_animal/hostile/russian, /mob/living/simple_animal/hostile/russian/ranged)
+	fauna_types = list(/mob/living/simple_animal/hostile/syndicate/melee, /mob/living/simple_animal/hostile/syndicate/ranged)
 	fauna_prob = 6
 	megafauna_types = list(/mob/living/simple_animal/hostile/mech)
 	var/fallout = 0
