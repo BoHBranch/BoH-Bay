@@ -23,8 +23,9 @@
 
 /obj/item/gunbox/infcom/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun,/obj/item/weapon/gun/energy/revolver/secure)
-	options["Energy"] = list(/obj/item/weapon/gun/energy/laser/infantry,/obj/item/weapon/gun/energy/revolver/secure)
+	options["Ballistic - Heavy"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun,/obj/item/weapon/gun/energy/revolver/secure)
+	options["Ballistic - Light"] = list(/obj/item/weapon/gun/projectile/automatic/merc_smg/sec,/obj/item/weapon/gun/energy/revolver/secure)
+	options["Energy"] = list(/obj/item/weapon/gun/energy/laser/infantry/sl,/obj/item/weapon/gun/energy/revolver/secure)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
