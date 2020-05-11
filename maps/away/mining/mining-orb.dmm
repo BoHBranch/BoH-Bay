@@ -94,6 +94,10 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/exoplanet/water/shallow,
 /area/mine/explored)
+"ay" = (
+/mob/living/simple_animal/hostile/faithless,
+/turf/simulated/floor/asteroid,
+/area/mine/explored)
 "aB" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
@@ -13962,9 +13966,9 @@ ah
 ae
 ag
 ai
-aj
+at
 ak
-aj
+at
 ai
 ah
 ah
@@ -14366,9 +14370,9 @@ ah
 ae
 ae
 ai
-aj
+at
 ak
-aj
+at
 ai
 aj
 ah
@@ -21082,17 +21086,17 @@ ae
 ae
 ae
 ae
-ae
+ay
 ao
 aj
 aj
-ae
+ay
 ae
 ae
 ao
 ae
 ae
-ae
+ay
 aj
 aj
 ap
@@ -21486,17 +21490,17 @@ ae
 ae
 ae
 ae
-ae
+ay
 ao
 aj
 aj
-ae
+ay
 ae
 ae
 ao
 ae
 ae
-ae
+ay
 aj
 aj
 ap
