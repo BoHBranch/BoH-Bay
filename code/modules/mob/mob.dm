@@ -440,7 +440,7 @@
 	getFiles(
 		'html/rules.html'
 		)
-	src << browse('html/rules.html', "window=changes;size=675x650")
+	show_browser(src, 'html/rules.html', "window=rules;size=675x650")
 	if(prefs.lastchangelog != changelog_hash)
 		prefs.lastchangelog = changelog_hash
 		SScharacter_setup.queue_preferences_save(prefs)
