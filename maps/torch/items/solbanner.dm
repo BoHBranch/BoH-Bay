@@ -29,7 +29,7 @@
 	icon = 'maps/torch/icons/obj/uniques.dmi'
 	icon_state = "banner_stowed"
 	w_class = ITEM_SIZE_HUGE
-	req_access = list(access_pathfinder, access_infcom)
+	req_access = list(access_solgov_crew)
 
 /obj/item/solbanner/attack_self(mob/living/carbon/human/user)
 	..()
@@ -56,3 +56,4 @@
 			dudename = "[ID.military_rank.name] [dudename]"
 		E.plantedby = "Planted on [stationdate2text()] by [dudename], [user.get_assignment()] of [GLOB.using_map.full_name]."
 		T.visible_message("<span class='notice'>[user] successfully claims this world with \the [E]!</span>")
+		
