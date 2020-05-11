@@ -109,12 +109,12 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 
 /datum/category_item/player_setup_item/vore/traits/content(var/mob/user)
 	. += "<b>Custom Species</b> "
-	. += "<a href='?src=\ref[src];custom_species=1'>[pref.custom_species ? pref.custom_species : "-Input Name-"]</a><br>"
+	. += "<a href='?src=\ref[src];custom_species=1'>[pref.custom_species ? pref.custom_species : "-Ingresar Nombre-"]</a><br>"
 
 	var/datum/species/selected_species = all_species[pref.species]
 	if(selected_species.selects_bodytype)
 		. += "<b>Icon Base: </b> "
-		. += "<a href='?src=\ref[src];custom_base=1'>[pref.custom_base ? pref.custom_base : "Custom Human"]</a><br>"
+		. += "<a href='?src=\ref[src];custom_base=1'>[pref.custom_base ? pref.custom_base : "Humano Personalizado"]</a><br>"
 
 	if(pref.species == SPECIES_CUSTOM)
 		var/points_left = pref.starting_trait_points
@@ -126,7 +126,7 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 		. += "<b>Points Left:</b> [points_left]<br>"
 		. += "<b>Traits Left:</b> [traits_left]<br>"
 		if(points_left < 0 || traits_left < 0 || !pref.custom_species)
-			. += "<span style='color:red;'><b>^ Fix things! ^</b></span><br>"
+			. += "<span style='color:red;'><b>^ Arregla esto! ^</b></span><br>"
 
 		. += "<a href='?src=\ref[src];add_trait=[POSITIVE_MODE]'>Positive Trait +</a><br>"
 		. += "<ul>"
@@ -157,13 +157,12 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 		return TOPIC_NOACTION
 
 	else if(href_list["custom_species"])
-		/*if(pref.species != "Custom Species")
-			alert("You cannot set a custom species name unless you set your character to use the 'Custom Species' \
-			species on the 'General' tab. If you have this set to something, it's because you had it set before the \
-			Trait system was implemented. If you wish to change it, set your species to 'Custom Species' and configure \
-			the species completely.")
+		/*if(pref.species != "Especie Personalizada")
+			alert("No puedes poner un nombre a la especie personalizada a menos de que coloques tu personaje \
+			como 'Especie Personalizada' en especies en la ventana 'General'. Si tienes esto configurado a algo, es probablemente que \
+			lo configurastes antes de que el sistema de Rasgos fue implementado.")
 			return TOPIC_REFRESH*/ //There was no reason to have this.
-		var/raw_choice = sanitize(input(user, "Input your custom species name:",
+		var/raw_choice = sanitize(input(user, "Coloca el nombre de tu especie:",
 			"Character Preference", pref.custom_species) as null|text, MAX_NAME_LEN)
 		if (CanUseTopic(user))
 			pref.custom_species = raw_choice
@@ -173,41 +172,41 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 		var/list/choices = custom_species_bases
 		if(pref.species != SPECIES_CUSTOM)
 			choices = (choices | pref.species)
-		var/text_choice = input("Pick an icon set for your species:","Icon Base") in choices
+		var/text_choice = input("Selecciona un icono para la base de tu especie:","Base de Icono") in choices
 		if(text_choice in choices)
 			pref.custom_base = text_choice
 		return TOPIC_REFRESH_UPDATE_PREVIEW
 
 	else if(href_list["blood_color"])
-		var/color_choice = input("Pick a blood color (does not apply to synths)","Blood Color",pref.blood_color) as color
+		var/color_choice = input("Selecciona un color de sangre (No sirve para los sinteticos)","Color de sangre",pref.blood_color) as color
 		if(color_choice)
 			pref.blood_color = sanitize_hexcolor(color_choice, default="#f5e400")
 		return TOPIC_REFRESH
 
 	else if(href_list["blood_reset"])
-		var/choice = alert("Reset blood color to human default (#A10808)?","Reset Blood Color","Reset","Cancel")
-		if(choice == "Reset")
+		var/choice = alert("Reiniciar el color de la sangre a su color determinado? (#A10808)?","Reiniciar color de sangre","Reiniciar","Cancelar")
+		if(choice == "Reiniciar")
 			pref.blood_color = "#f5e400"
 		return TOPIC_REFRESH
 
 	else if(href_list["clicked_pos_trait"])
 		var/datum/trait/trait = text2path(href_list["clicked_pos_trait"])
-		var/choice = alert("Remove [initial(trait.name)] and regain [initial(trait.cost)] points?","Remove Trait","Remove","Cancel")
-		if(choice == "Remove")
+		var/choice = alert("Remove [initial(trait.name)] and regain [initial(trait.cost)] points?","Remover rasgo","Remover","Cancelar")
+		if(choice == "Remover")
 			pref.pos_traits -= trait
 		return TOPIC_REFRESH
 
 	else if(href_list["clicked_neu_trait"])
 		var/datum/trait/trait = text2path(href_list["clicked_neu_trait"])
-		var/choice = alert("Remove [initial(trait.name)]?","Remove Trait","Remove","Cancel")
-		if(choice == "Remove")
+		var/choice = alert("Remove [initial(trait.name)]?","Remover rasgo","Remover","Cancelar")
+		if(choice == "Remover")
 			pref.neu_traits -= trait
 		return TOPIC_REFRESH
 
 	else if(href_list["clicked_neg_trait"])
 		var/datum/trait/trait = text2path(href_list["clicked_neg_trait"])
-		var/choice = alert("Remove [initial(trait.name)] and lose [initial(trait.cost)] points?","Remove Trait","Remove","Cancel")
-		if(choice == "Remove")
+		var/choice = alert("Remover [initial(trait.name)] y perder [initial(trait.cost)] puntos?","Remover rasgo","Remover","Cancelar")
+		if(choice == "Remover")
 			pref.neg_traits -= trait
 		return TOPIC_REFRESH
 
@@ -247,16 +246,16 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 		var/trait_choice
 		var/done = FALSE
 		while(!done)
-			var/message = "\[Remaining: [points_left] points, [traits_left] traits\] Select a trait to read the description and see the cost."
+			var/message = "\[Restante: [points_left] puntos, [traits_left] traits\] Selecciona un rasgo para ver su descripcion y ver su costo."
 			trait_choice = input(message,"Trait List") as null|anything in nicelist
 			if(!trait_choice)
 				done = TRUE
 			if(trait_choice in nicelist)
 				var/datum/trait/path = nicelist[trait_choice]
-				var/choice = alert("\[Cost:[initial(path.cost)]\] [initial(path.desc)]",initial(path.name),"Take Trait","Cancel","Go Back")
-				if(choice == "Cancel")
+				var/choice = alert("\[Cost:[initial(path.cost)]\] [initial(path.desc)]",initial(path.name),"Tomar rasgo","Cancelar","Ir hacia atras")
+				if(choice == "Cancelar")
 					trait_choice = null
-				if(choice != "Go Back")
+				if(choice != "Ir hacia atras")
 					done = TRUE
 
 		if(!trait_choice)
@@ -283,8 +282,8 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 							break varconflict
 
 			if(conflict)
-				alert("You cannot take this trait and [conflict] at the same time. \
-				Please remove that trait, or pick another trait to add.","Error")
+				alert("No puedes tomar este rasgo y [conflict] al mismo tiempo. \
+				Porfavor remueve ese rasgo, o toma otro rasgo para añadirlo.","Error")
 				return TOPIC_REFRESH
 
 			mylist += path
