@@ -63,14 +63,18 @@
 	selection_color = "#557e38"
 	minimal_player_age = 12
 	economic_power = 7
-	skill_points = 34
+	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-	                    SKILL_EVA         = SKILL_ADEPT,
-	                    SKILL_PILOT       = SKILL_BASIC,
-	                    SKILL_COMBAT      = SKILL_ADEPT,
-	                    SKILL_WEAPONS     = SKILL_ADEPT)
+						SKILL_EVA         = SKILL_ADEPT,
+						SKILL_PILOT       = SKILL_BASIC,
+						SKILL_COMBAT      = SKILL_ADEPT,
+						SKILL_WEAPONS     = SKILL_ADEPT)
+
+	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
+						SKILL_WEAPONS     = SKILL_MAX,
+						SKILL_EVA		  = SKILL_MAX)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
@@ -88,7 +92,7 @@
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 6
-	skill_points = 32
+	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
@@ -96,6 +100,11 @@
 						SKILL_MEDICAL      = SKILL_BASIC,
 						SKILL_COMBAT       = SKILL_ADEPT,
 						SKILL_WEAPONS      = SKILL_ADEPT)
+
+	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
+						SKILL_WEAPONS     = SKILL_MAX,
+						SKILL_EVA		  = SKILL_MAX)
+
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/e4,
@@ -133,6 +142,11 @@
 	min_skill = list(	SKILL_COMBAT       = SKILL_ADEPT,
 						SKILL_WEAPONS      = SKILL_ADEPT,
 						SKILL_EVA          = SKILL_BASIC)
+
+	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
+						SKILL_WEAPONS     = SKILL_MAX,
+						SKILL_EVA		  = SKILL_MAX)
+
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
