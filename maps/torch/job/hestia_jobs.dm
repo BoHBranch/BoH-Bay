@@ -63,7 +63,7 @@
 	selection_color = "#557e38"
 	minimal_player_age = 12
 	economic_power = 7
-	skill_points = 34
+	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
@@ -92,7 +92,7 @@
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 6
-	skill_points = 32
+	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
