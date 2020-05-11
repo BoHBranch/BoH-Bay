@@ -350,9 +350,9 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/auxillary/port)
 "ba" = (
-/obj/machinery/door/airlock/security{
+/obj/machinery/door/airlock/medical{
 	locked = 1;
-	name = "Aux Medical"
+	name = "Auxilliary Infirmary"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/vacant/infirmary)
@@ -650,7 +650,15 @@
 	icon_state = "intact";
 	dir = 5
 	},
-/obj/structure/catwalk,
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1";
+	tag = "icon-railing0 (EAST)"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "bE" = (
@@ -726,7 +734,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/obj/structure/catwalk,
+/obj/structure/railing/mapped,
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1";
+	tag = "icon-railing0 (EAST)"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "bP" = (
@@ -967,15 +980,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "cq" = (
@@ -1108,6 +1113,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/random/hostile/maint,
 /turf/simulated/floor/tiled/white,
 /area/vacant/infirmary)
 "cG" = (
@@ -1135,7 +1141,7 @@
 	icon_state = "4-8"
 	},
 /obj/item/weapon/storage/firstaid/surgery,
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/plating,
 /area/vacant/infirmary)
 "cK" = (
 /obj/machinery/door/firedoor,
@@ -1162,7 +1168,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/effect/wallframe_spawn/reinforced,
+/obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
 /area/vacant/infirmary)
 "cM" = (
@@ -1223,7 +1229,7 @@
 	name = "west bump";
 	pixel_x = -24
 	},
-/turf/simulated/floor/tiled/white,
+/turf/simulated/floor/plating,
 /area/vacant/infirmary)
 "cT" = (
 /obj/machinery/light/small{
@@ -1390,9 +1396,6 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "di" = (
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/structure/table/reinforced,
 /obj/item/clothing/mask/breath/anesthetic,
 /turf/simulated/floor/tiled/white/monotile,
@@ -1510,12 +1513,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/structure/railing/mapped,
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
-	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "dw" = (
@@ -5974,10 +5972,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/turbolift/cargo_lift)
-"qO" = (
-/obj/random/hostile/maint,
-/turf/simulated/floor/tiled/white,
-/area/vacant/infirmary)
 "qP" = (
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
@@ -7391,6 +7385,9 @@
 	name = "Supply Lift Shutters"
 	},
 /obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/sorting)
 "uo" = (
@@ -9861,10 +9858,6 @@
 /turf/simulated/wall/r_titanium,
 /area/shuttle/escape_pod4/station)
 "Em" = (
-/obj/effect/floor_decal/corner/brown/half{
-	icon_state = "bordercolorhalf";
-	dir = 8
-	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/office)
 "En" = (
@@ -10285,11 +10278,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/obj/effect/floor_decal/industrial/warning{
-	icon_state = "warning";
-	dir = 9
-	},
 /obj/structure/closet/crate/trashcart,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/sorting)
 "FV" = (
@@ -10583,8 +10575,9 @@
 	icon_state = "spline_fancy";
 	dir = 1
 	},
-/obj/item/weapon/storage/box/cups,
-/obj/structure/table/woodentable,
+/obj/machinery/vending/snack{
+	dir = 1
+	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
 "GZ" = (
@@ -13648,14 +13641,14 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "QN" = (
+/obj/machinery/newscaster/security_unit{
+	pixel_x = -27
+	},
 /obj/effect/floor_decal/corner/brown/half{
 	icon_state = "bordercolorhalf";
 	dir = 8
 	},
-/obj/machinery/newscaster/security_unit{
-	pixel_x = -27
-	},
-/obj/machinery/vending/sol{
+/obj/machinery/vending/snack{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -14448,6 +14441,9 @@
 	name = "Supply Lift Shutters"
 	},
 /obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/sorting)
 "SU" = (
@@ -15546,10 +15542,6 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/effect/floor_decal/industrial/warning/corner{
-	icon_state = "warningcorner";
-	dir = 1
-	},
 /obj/machinery/atmospherics/unary/vent_pump{
 	controlled = 0;
 	dir = 8;
@@ -15607,6 +15599,11 @@
 	pixel_y = 6
 	},
 /obj/random/clipboard,
+/obj/effect/floor_decal/corner/brown/half{
+	icon_state = "bordercolorhalf";
+	dir = 8
+	},
+/obj/item/weapon/folder/blue,
 /turf/simulated/floor/tiled,
 /area/quartermaster/office)
 "Wp" = (
@@ -16411,10 +16408,6 @@
 /area/hallway/primary/fourthdeck/center)
 "Yz" = (
 /obj/structure/disposalpipe/sortjunction/untagged/flipped,
-/obj/effect/floor_decal/industrial/warning{
-	icon_state = "warning";
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
@@ -16703,7 +16696,7 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/item/weapon/folder/blue,
+/obj/machinery/recharger,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/office)
 "Zj" = (
@@ -29663,7 +29656,7 @@ LJ
 mh
 GO
 bs
-qO
+bL
 bR
 cl
 cF
