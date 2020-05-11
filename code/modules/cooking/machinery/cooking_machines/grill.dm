@@ -9,26 +9,10 @@
 	can_burn_food = 0
 	stat = POWEROFF
 
-/obj/machinery/appliance/grill/toggle_power()
-	set src in view()
-	set name = "Toggle Power"
-	set category = "Object"
-
-	var/datum/cooking_item/CI = cooking_objs[1]
-
-	if (stat & POWEROFF)//Its turned off
-		stat &= ~POWEROFF
-		if (usr)
-			usr.visible_message("[usr] turns \the [src] on", "You turn on \the [src].")
-			get_cooking_work(CI)
-			use_power = 2
-	else //It's on, turn it off
-		stat |= POWEROFF
-		use_power = 0
-		if (usr)
-			usr.visible_message("[usr] turns \the [src] off", "You turn off \the [src].")
-	playsound(src, 'sound/machines/click.ogg', 40, 1)
-	update_icon()
+/obj/machinery/appliance/grill/attempt_toggle_power(var/mob/user)
+	. = ..()
+	if(use_power)
+		get_cooking_work(cooking_objs[1])
 
 /obj/machinery/appliance/grill/Initialize()
 	. = ..()

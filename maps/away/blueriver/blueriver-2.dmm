@@ -836,14 +836,9 @@
 	},
 /area/bluespaceriver/ground)
 "cE" = (
-/turf/simulated/wall/iron,
-/area/bluespaceriver/ground)
-"cF" = (
-/obj/structure/wall_frame/away,
-/turf/simulated/floor/exoplanet/snow{
-	temperature = 240
-	},
-/area/bluespaceriver/ground)
+/obj/effect/landmark/corpse/scientist,
+/turf/simulated/floor/tiled,
+/area/bluespaceriver/ship)
 "cG" = (
 /mob/living/simple_animal/hostile/syndicate/ranged/space,
 /turf/simulated/floor/exoplanet/snow{
@@ -2566,7 +2561,7 @@ an
 an
 aT
 bc
-au
+cE
 bD
 bG
 ay
@@ -3601,7 +3596,7 @@ ac
 ac
 ac
 ac
-cE
+ac
 ac
 ac
 ac
@@ -3703,7 +3698,7 @@ ac
 ac
 ac
 ac
-cF
+ac
 ac
 ac
 ac
@@ -3805,7 +3800,7 @@ ac
 ac
 ac
 ac
-cF
+ac
 ac
 ac
 ac
@@ -3903,11 +3898,11 @@ ac
 ac
 ac
 ac
-cG
 ac
 ac
+ac
 cG
-cE
+ac
 ac
 ac
 cH
@@ -4005,11 +4000,11 @@ cI
 ac
 ac
 ac
-cE
-cF
-cF
-cE
-cE
+ac
+ac
+ac
+ac
+ac
 ac
 ac
 ac
@@ -4086,8 +4081,8 @@ ac
 af
 ac
 ac
-cE
-cG
+ac
+ac
 ac
 ac
 ac
@@ -4188,11 +4183,11 @@ ac
 ac
 ac
 ac
-cE
-cE
-cF
-cF
-cG
+ac
+ac
+ac
+ac
+ac
 ac
 ac
 cI
@@ -4205,7 +4200,7 @@ ac
 ac
 ac
 ac
-cH
+ac
 ac
 ac
 ac
@@ -4289,12 +4284,12 @@ ac
 ac
 ac
 ac
-cH
 ac
 ac
 ac
-cF
-cF
+ac
+ac
+ac
 ac
 ac
 ac
@@ -4396,8 +4391,8 @@ ac
 ac
 ac
 ac
-cE
-cG
+ac
+ac
 ac
 ac
 ac
@@ -4498,9 +4493,9 @@ ac
 ac
 ac
 ac
-cE
-cF
-cF
+ac
+ac
+ac
 ac
 ac
 ac
@@ -4602,8 +4597,8 @@ ac
 ac
 ac
 ac
-cF
-cF
+ac
+ac
 ac
 ac
 ac
@@ -4705,8 +4700,8 @@ ac
 ac
 ac
 ac
-cE
-cG
+ac
+ac
 ac
 ac
 ac
@@ -4807,12 +4802,12 @@ ac
 ac
 ac
 ac
-cE
-cF
-cF
+ac
+ac
+ac
 ac
 cG
-cE
+ac
 ac
 ac
 ac
@@ -4911,10 +4906,10 @@ ac
 ac
 ac
 ac
-cF
-cF
-cE
-cE
+ac
+ac
+ac
+ac
 ac
 ac
 ac

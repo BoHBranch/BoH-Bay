@@ -575,7 +575,7 @@ obj/random/closet //A couple of random closets to spice up maint
 /obj/random/tank/spawn_choices()
 	return list(/obj/item/weapon/tank/oxygen = 5,
 				/obj/item/weapon/tank/oxygen/yellow = 4,
-				/obj/item/weapon/tank/oxygen/red = 4,
+				/obj/item/weapon/tank/emergency/oxygen/double/red = 4,
 				/obj/item/weapon/tank/air = 3,
 				/obj/item/weapon/tank/emergency/oxygen = 4,
 				/obj/item/weapon/tank/emergency/oxygen/engi = 3,
@@ -1151,11 +1151,47 @@ obj/random/hostile/spawn_choices()
 		/mob/living/simple_animal/hostile/retaliate/parrot = 1,
 		/mob/living/simple_animal/hostile/rogue_drone = 8,
 		/mob/living/simple_animal/hostile/scarybat = 4,
-		/mob/living/simple_animal/hostile/voxslug = 3,
-		/mob/living/simple_animal/hostile/leech = 1
 	)
 
+/obj/random/hostile/maint_severe
+	name = "Random Deadly Maint Mob"
+	desc = "This is a random DEADLY hostile mob suitable to be found in maintenance."
+	icon = 'icons/mob/amorph.dmi'
+	icon_state = "standing"
+	spawn_nothing_percentage = 0
 
+/obj/random/hostile/maint/spawn_choices()
+	return list(
+		/mob/living/simple_animal/hostile/voxslug = 6,
+		/mob/living/simple_animal/hostile/leech = 3
+	)
+
+//bodies
+/obj/random/remains
+	name = "Random Remains"
+	desc = "This is a random body, set of remains or a pile of gibs."
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "remains"
+	spawn_nothing_percentage = 0
+
+/obj/random/remains/spawn_choices()
+	return list(
+		/obj/item/remains/human = 12,
+		/obj/item/remains/xeno = 6,
+		/obj/item/remains/robot = 6,
+		/obj/item/remains/mouse = 6,
+		/obj/item/remains/lizard = 6,
+		/obj/effect/gibspawner/robot = 3,
+		/obj/effect/gibspawner/human = 3,
+		/obj/effect/landmark/corpse/chef = 1,
+		/obj/effect/landmark/corpse/doctor = 1,
+		/obj/effect/landmark/corpse/engineer = 1,
+		/obj/effect/landmark/corpse/scientist = 1,
+		/obj/effect/landmark/corpse/clown = 1,
+		/obj/effect/landmark/corpse/miner = 1,
+		/obj/effect/landmark/corpse/russian = 1,
+		/obj/effect/landmark/corpse/syndicate = 1
+	)
 
 /*
 	Selects one spawn point out of a group of points with the same ID and asks it to generate its items
