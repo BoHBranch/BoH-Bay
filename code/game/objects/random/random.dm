@@ -485,7 +485,8 @@ obj/random/closet //A couple of random closets to spice up maint
 	var/list/locker_vermin = list(
 		/mob/living/simple_animal/mouse,
 		/mob/living/simple_animal/opossum,
-		/mob/living/carbon/alien/diona
+		/mob/living/carbon/alien/diona,
+		/mob/living/simple_animal/hostile/voxslug
 	)
 
 /obj/random/closet/spawn_choices()
@@ -983,7 +984,7 @@ something, make sure it's not in one of the other lists.*/
 		/obj/random/cash = 10,
 		/obj/random/clothing = 30,
 		/obj/random/coin = 5,
-		/obj/random/contraband = 1,
+		/obj/random/contraband = 15,
 		/obj/random/drinkbottle = 5,
 		/obj/random/firstaid = 20,
 		/obj/random/glasses = 10,
@@ -995,7 +996,7 @@ something, make sure it's not in one of the other lists.*/
 		/obj/random/hostile/maint_severe = 25,
 		/obj/random/illegal = 5,
 		/obj/random/junk = 1,
-		/obj/random/loot = 1,
+		/obj/random/loot = 25,
 		/obj/random/masks = 10,
 		/obj/random/material = 40,
 		/obj/random/medical = 20,
@@ -1165,7 +1166,8 @@ obj/random/hostile/spawn_choices()
 /obj/random/hostile/maint_severe/spawn_choices()
 	return list(
 		/mob/living/simple_animal/hostile/voxslug = 6,
-		/mob/living/simple_animal/hostile/leech = 3
+		/mob/living/simple_animal/hostile/leech = 3,
+		/mob/living/simple_animal/hostile/viscerator = 1
 	)
 
 //bodies
