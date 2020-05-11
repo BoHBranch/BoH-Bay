@@ -599,12 +599,6 @@
 	icon_state = "dmg2"
 	},
 /area/constructionsite/bridge)
-"bS" = (
-/obj/random/hostile{
-	spawn_nothing_percentage = 60
-	},
-/turf/simulated/floor/tiled/dark/airless,
-/area/constructionsite/bridge)
 "bT" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled,
@@ -716,12 +710,6 @@
 "ci" = (
 /obj/machinery/door/airlock/hatch,
 /obj/machinery/door/blast/regular/open,
-/turf/simulated/floor/airless,
-/area/constructionsite/bridge)
-"cj" = (
-/obj/random/hostile{
-	spawn_nothing_percentage = 60
-	},
 /turf/simulated/floor/airless,
 /area/constructionsite/bridge)
 "ck" = (
@@ -1341,6 +1329,10 @@
 /obj/random/maintenance,
 /turf/simulated/floor/tiled/dark,
 /area/constructionsite/teleporter)
+"eo" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/airless,
+/area/constructionsite/hallway/fore)
 "ep" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/material/plasteel{
@@ -1493,6 +1485,7 @@
 	icon_state = "warningcorner";
 	dir = 1
 	},
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
 /turf/simulated/floor/tiled/dark,
 /area/constructionsite/teleporter)
 "eJ" = (
@@ -1556,6 +1549,10 @@
 	},
 /turf/simulated/floor,
 /area/constructionsite/teleporter)
+"eT" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/tiled/dark/airless,
+/area/constructionsite/hallway/fore)
 "eU" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1379;
@@ -1792,10 +1789,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/constructionsite/teleporter)
 "fv" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/blue{
-	icon_state = "intact";
-	dir = 9
-	},
+/mob/living/simple_animal/hostile/viscerator,
 /turf/simulated/floor/tiled/dark,
 /area/constructionsite/teleporter)
 "fw" = (
@@ -2537,6 +2531,12 @@
 /obj/random/medical/lite,
 /turf/space,
 /area/constructionsite/medical)
+"is" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/airless{
+	icon_state = "dmg2"
+	},
+/area/constructionsite/hallway/fore)
 "it" = (
 /obj/effect/shuttle_landmark/derelict/nav5,
 /turf/space,
@@ -2573,8 +2573,7 @@
 	output_tag = "d_air_out";
 	pressure_setting = 2000;
 	sensor_tag = "d_air_sensor";
-	sensor_name = "Air Supply Tank";
-	
+	sensor_name = "Air Supply Tank"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
@@ -3624,6 +3623,80 @@
 /obj/effect/shuttle_landmark/derelict/nav7,
 /turf/space,
 /area/space)
+"me" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/airless,
+/area/constructionsite/hallway/aft)
+"mf" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/airless{
+	icon_state = "dmg2"
+	},
+/area/constructionsite/hallway/aft)
+"mg" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled/dark/airless,
+/area/constructionsite/ai)
+"mh" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/tiled/dark/airless,
+/area/constructionsite/ai)
+"mi" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/airless,
+/area/constructionsite/hallway/fore)
+"mj" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/airless,
+/area/constructionsite/hallway/aft)
+"mk" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled/dark/airless,
+/area/constructionsite/hallway/aft)
+"ml" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/airless{
+	icon_state = "dmg2"
+	},
+/area/constructionsite/hallway/fore)
+"mm" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled/dark/airless,
+/area/constructionsite/hallway/fore)
+"mn" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/airless{
+	icon_state = "dmg2"
+	},
+/area/constructionsite/hallway/aft)
+"mo" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/airless,
+/area/constructionsite/atmospherics)
+"mp" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/tiled/dark/airless,
+/area/constructionsite/atmospherics)
+"mq" = (
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/tiled/dark/airless,
+/area/constructionsite/hallway/aft)
+"mr" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/blue{
+	icon_state = "intact";
+	dir = 9
+	},
+/mob/living/simple_animal/hostile/viscerator,
+/turf/simulated/floor/tiled/dark,
+/area/constructionsite/teleporter)
+"ms" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled,
+/area/constructionsite/teleporter)
+"mt" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled/dark,
+/area/constructionsite/teleporter)
 "nb" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/material/glass{
@@ -19933,7 +20006,7 @@ DP
 gW
 gW
 gO
-gQ
+mj
 gU
 gQ
 gQ
@@ -20673,7 +20746,7 @@ aa
 aa
 aW
 aW
-bn
+bo
 bo
 bo
 bo
@@ -21125,7 +21198,7 @@ dz
 cw
 cN
 cy
-cy
+is
 cw
 cw
 cN
@@ -21741,7 +21814,7 @@ gS
 gT
 gQ
 gT
-gP
+mf
 gT
 gQ
 gT
@@ -21926,7 +21999,7 @@ bo
 bo
 dz
 dz
-cw
+eo
 cN
 cy
 cN
@@ -22699,7 +22772,7 @@ bv
 bL
 bK
 bK
-cj
+bL
 bL
 bR
 bv
@@ -22780,7 +22853,7 @@ ia
 gO
 gQ
 gQ
-gR
+mq
 gR
 gR
 gR
@@ -22912,7 +22985,7 @@ dv
 dF
 cw
 cN
-cy
+ml
 dz
 dz
 dz
@@ -23147,9 +23220,9 @@ gh
 gm
 gi
 gh
+mg
 gh
-gh
-gh
+mh
 gh
 gi
 gm
@@ -23157,11 +23230,11 @@ gh
 gh
 gh
 gO
-gQ
+me
 gQ
 gR
 gX
-gR
+mk
 gQ
 gQ
 gQ
@@ -23174,7 +23247,7 @@ gR
 gU
 gQ
 gQ
-gR
+mq
 gR
 gQ
 gP
@@ -23337,7 +23410,7 @@ cN
 cP
 cN
 cN
-cw
+mi
 cw
 cw
 cN
@@ -23365,7 +23438,7 @@ gR
 gQ
 gQ
 gQ
-gQ
+me
 gR
 gR
 gR
@@ -23551,9 +23624,9 @@ gh
 gm
 gi
 gq
+mh
 gh
-gh
-gh
+mg
 gN
 gi
 gm
@@ -23720,7 +23793,7 @@ dj
 dF
 cw
 cw
-cN
+mm
 dz
 dz
 dz
@@ -23732,7 +23805,7 @@ eR
 eb
 dA
 dz
-cw
+eo
 cN
 cw
 fS
@@ -23776,7 +23849,7 @@ gQ
 gQ
 gR
 gR
-gR
+mq
 gO
 gO
 hT
@@ -23996,7 +24069,7 @@ gQ
 gQ
 gP
 gR
-gR
+mq
 gR
 gQ
 gO
@@ -24111,7 +24184,7 @@ aR
 by
 bD
 bK
-bS
+bK
 bL
 bL
 bL
@@ -24573,7 +24646,7 @@ gQ
 gQ
 gR
 gQ
-gQ
+mj
 gO
 bo
 bo
@@ -24588,7 +24661,7 @@ hr
 hr
 hs
 hr
-hr
+mo
 ic
 hr
 hs
@@ -24740,7 +24813,7 @@ eJ
 eJ
 fe
 fo
-fv
+mr
 fD
 eb
 bo
@@ -24755,7 +24828,7 @@ bu
 dz
 dz
 cN
-cN
+eT
 cN
 cN
 cN
@@ -24770,7 +24843,7 @@ gg
 gS
 gS
 gS
-gQ
+me
 gR
 gR
 gR
@@ -24802,7 +24875,7 @@ hs
 hr
 hr
 hr
-hs
+mp
 hs
 hs
 hr
@@ -25366,7 +25439,7 @@ cN
 cP
 cw
 cN
-cw
+eo
 cN
 cy
 cw
@@ -25745,7 +25818,7 @@ dA
 bo
 eb
 ep
-eA
+fv
 eJ
 eJ
 eJ
@@ -25777,7 +25850,7 @@ cw
 cw
 cy
 ea
-gQ
+me
 gO
 gO
 gO
@@ -25800,7 +25873,7 @@ hr
 hG
 hr
 hr
-hr
+mo
 hr
 hr
 hr
@@ -25808,7 +25881,7 @@ hr
 hs
 hr
 hr
-hr
+mo
 iu
 hr
 hr
@@ -25949,10 +26022,10 @@ eb
 eq
 eB
 eA
-eJ
+ms
 eJ
 fr
-eA
+mt
 fJ
 eb
 bo
@@ -26600,7 +26673,7 @@ aR
 aR
 gO
 gO
-gP
+mn
 gQ
 gO
 gO
@@ -27373,7 +27446,7 @@ dz
 cw
 cw
 cw
-cy
+is
 dz
 dz
 dz
