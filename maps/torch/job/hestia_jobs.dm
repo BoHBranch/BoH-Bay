@@ -57,8 +57,8 @@
 	title = "Squad Lead"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
 	minimal_player_age = 12
@@ -68,7 +68,9 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_ADEPT,
-	                    SKILL_PILOT       = SKILL_BASIC)
+	                    SKILL_PILOT       = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_ADEPT,
+	                    SKILL_WEAPONS     = SKILL_ADEPT)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
@@ -81,22 +83,23 @@
 	supervisors = "the Squad Leader"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 6
-	skill_points = 34
+	skill_points = 32
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
 						SKILL_ELECTRICAL   = SKILL_ADEPT,
-						SKILL_MEDICAL      = SKILL_BASIC)
+						SKILL_MEDICAL      = SKILL_BASIC,
+						SKILL_COMBAT       = SKILL_ADEPT,
+						SKILL_WEAPONS      = SKILL_ADEPT)
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/e4,
-		/datum/mil_rank/marine_corps/e5,
-		/datum/mil_rank/marine_corps/e6
+		/datum/mil_rank/marine_corps/e5
 		)
 	access = list(access_maint_tunnels, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
@@ -119,22 +122,23 @@
 	title = "Rifleman"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 4
+	spawn_positions = 4
 	minimal_player_age = 3
 	supervisors = "the Combat Technician and Squad Leader"
 	selection_color = "#557e38"
 	skill_points = 18
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry
+	min_skill = list(	SKILL_COMBAT       = SKILL_ADEPT,
+						SKILL_WEAPONS      = SKILL_ADEPT,
+						SKILL_EVA          = SKILL_BASIC)
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/e1,
 		/datum/mil_rank/marine_corps/e2,
-		/datum/mil_rank/marine_corps/e3,
-		/datum/mil_rank/marine_corps/e4,
-		/datum/mil_rank/marine_corps/e5
+		/datum/mil_rank/marine_corps/e3
 	)
 	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
