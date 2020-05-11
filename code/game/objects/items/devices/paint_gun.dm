@@ -3,6 +3,7 @@
 	icon = 'icons/obj/device.dmi'
 	icon_state = "flpainter"
 	item_state = "fl_painter"
+	matter = list(MATERIAL_STEEL = 2500, MATERIAL_PLASTIC = 1000, MATERIAL_ALUMINIUM = 500)
 	desc = "A slender and none-too-sophisticated device capable of painting, erasing, and applying decals to most types of exosuits, floors and walls."
 
 	var/decal =        "remove all decals"
