@@ -68,7 +68,9 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_ADEPT,
-	                    SKILL_PILOT       = SKILL_BASIC)
+	                    SKILL_PILOT       = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_ADEPT,
+	                    SKILL_WEAPONS     = SKILL_ADEPT)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
@@ -86,12 +88,14 @@
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 6
-	skill_points = 34
+	skill_points = 32
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
 						SKILL_ELECTRICAL   = SKILL_ADEPT,
-						SKILL_MEDICAL      = SKILL_BASIC)
+						SKILL_MEDICAL      = SKILL_BASIC,
+						SKILL_COMBAT       = SKILL_ADEPT,
+						SKILL_WEAPONS      = SKILL_ADEPT)
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/e4,
@@ -126,6 +130,9 @@
 	skill_points = 18
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry
+	min_skill = list(	SKILL_COMBAT       = SKILL_ADEPT,
+						SKILL_WEAPONS      = SKILL_ADEPT,
+						SKILL_EVA          = SKILL_BASIC)
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
