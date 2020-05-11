@@ -1757,3 +1757,19 @@
 	name = "\improper Foundation Advisor"
 	icon_state = "heads"
 	req_access = list(access_psiadvisor)
+
+/////////
+// Radio Host Studio
+/////////
+/area/radio
+	name = "\improper Studio Lobby"
+	icon_state = "chapel"
+	req_access = list(radio_host)
+
+/area/radio/interior
+	name = "\improper Studio"
+	icon_state = "heads"
+
+/area/radio/backroom
+	name = "\improper Studio Backroom"
+	icon_state = "Sleep"

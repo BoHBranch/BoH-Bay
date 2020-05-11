@@ -57,8 +57,8 @@
 	title = "Squad Lead"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
 	minimal_player_age = 12
@@ -83,8 +83,8 @@
 	supervisors = "the Squad Leader"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 6
@@ -113,8 +113,8 @@
 	title = "Rifleman"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 4
+	spawn_positions = 4
 	minimal_player_age = 3
 	supervisors = "the Combat Technician and Squad Leader"
 	selection_color = "#557e38"
@@ -182,3 +182,33 @@
 /datum/job/psiadvisor/get_description_blurb()
 	return "You are the Psionic Advisor, an agent of either the Foundation or Nanotrasen Psionic Corps. Alongside the Counselor, you're the only other individual with known and authorized Psionic abilities aboard the NTSS Dagon. Your main responsibility is advising the Commanding Officer on psionic matters. \
 	Secondly, you're to assist the crew or Research on psionic matters, or guide any newly emergent crew that awaken with psionic abilities."
+
+/datum/job/radio
+	title = "Radio Host"
+	department = "Service"
+	department_flag = SRV
+	total_positions = 1
+	spawn_positions = 1
+	minimal_player_age = 3
+	supervisors = "the Combat Technician and Squad Leader"
+	selection_color = "#557e38"
+	minimum_character_age = list(SPECIES_HUMAN = 18)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry
+	software_on_spawn = list(/datum/computer_file/program/deck_management)
+	allowed_branches = list(/datum/mil_branch/marine_corps)
+	allowed_ranks = list(
+		/datum/mil_rank/marine_corps/e1,
+		/datum/mil_rank/marine_corps/e2,
+		/datum/mil_rank/marine_corps/e3,
+		/datum/mil_rank/marine_corps/e4,
+		/datum/mil_rank/marine_corps/e5
+	)
+	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
+			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
+			            access_aquila)
+	alt_titles = list(
+		"Grunt",
+		"Trooper")
+
+/datum/job/grunt/get_description_blurb()
+	return "You are a Marine! Your duty is to listen to the Squad Leader. If they're not present, the Combat Technician may pull rank. Do your best not to die, while also taking orders. Oorah!"
