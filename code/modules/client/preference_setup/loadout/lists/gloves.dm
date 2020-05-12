@@ -1,4 +1,4 @@
- /datum/gear/gloves
+/datum/gear/gloves
 	cost = 1
 	slot = slot_gloves
 	sort_category = "Guantes y Accesorios de Mano"
