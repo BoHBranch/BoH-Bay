@@ -485,7 +485,8 @@ obj/random/closet //A couple of random closets to spice up maint
 	var/list/locker_vermin = list(
 		/mob/living/simple_animal/mouse,
 		/mob/living/simple_animal/opossum,
-		/mob/living/carbon/alien/diona
+		/mob/living/carbon/alien/diona,
+		/mob/living/simple_animal/hostile/voxslug
 	)
 
 /obj/random/closet/spawn_choices()
@@ -575,7 +576,7 @@ obj/random/closet //A couple of random closets to spice up maint
 /obj/random/tank/spawn_choices()
 	return list(/obj/item/weapon/tank/oxygen = 5,
 				/obj/item/weapon/tank/oxygen/yellow = 4,
-				/obj/item/weapon/tank/oxygen/red = 4,
+				/obj/item/weapon/tank/emergency/oxygen/double/red = 4,
 				/obj/item/weapon/tank/air = 3,
 				/obj/item/weapon/tank/emergency/oxygen = 4,
 				/obj/item/weapon/tank/emergency/oxygen/engi = 3,
@@ -983,7 +984,7 @@ something, make sure it's not in one of the other lists.*/
 		/obj/random/cash = 10,
 		/obj/random/clothing = 30,
 		/obj/random/coin = 5,
-		/obj/random/contraband = 1,
+		/obj/random/contraband = 15,
 		/obj/random/drinkbottle = 5,
 		/obj/random/firstaid = 20,
 		/obj/random/glasses = 10,
@@ -991,10 +992,11 @@ something, make sure it's not in one of the other lists.*/
 		/obj/random/shoes = 10,
 		/obj/random/hardsuit = 1,
 		/obj/random/hat = 5,
-		/obj/random/hostile/maint = 20,
+		/obj/random/hostile/maint = 35,
+		/obj/random/hostile/maint_severe = 25,
 		/obj/random/illegal = 5,
 		/obj/random/junk = 1,
-		/obj/random/loot = 1,
+		/obj/random/loot = 25,
 		/obj/random/masks = 10,
 		/obj/random/material = 40,
 		/obj/random/medical = 20,
@@ -1011,7 +1013,8 @@ something, make sure it's not in one of the other lists.*/
 		/obj/random/tech_supply = 100,
 		/obj/random/technology_scanner = 80,
 		/obj/random/toolbox = 30,
-		/obj/random/toy = 10
+		/obj/random/toy = 10,
+		/obj/random/illegaltwo = 2
 	)
 
 /obj/random/loot /*Better loot for away missions and salvage */
@@ -1150,10 +1153,49 @@ obj/random/hostile/spawn_choices()
 		/mob/living/simple_animal/hostile/retaliate/goose = 1,
 		/mob/living/simple_animal/hostile/retaliate/parrot = 1,
 		/mob/living/simple_animal/hostile/rogue_drone = 8,
-		/mob/living/simple_animal/hostile/scarybat = 4
+		/mob/living/simple_animal/hostile/scarybat = 4,
 	)
 
+/obj/random/hostile/maint_severe
+	name = "Random Deadly Maint Mob"
+	desc = "This is a random DEADLY hostile mob suitable to be found in maintenance."
+	icon = 'icons/mob/amorph.dmi'
+	icon_state = "standing"
+	spawn_nothing_percentage = 0
 
+/obj/random/hostile/maint_severe/spawn_choices()
+	return list(
+		/mob/living/simple_animal/hostile/voxslug = 6,
+		/mob/living/simple_animal/hostile/leech = 3,
+		/mob/living/simple_animal/hostile/viscerator = 1
+	)
+
+//bodies
+/obj/random/remains
+	name = "Random Remains"
+	desc = "This is a random body, set of remains or a pile of gibs."
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "remains"
+	spawn_nothing_percentage = 0
+
+/obj/random/remains/spawn_choices()
+	return list(
+		/obj/item/remains/human = 12,
+		/obj/item/remains/xeno = 6,
+		/obj/item/remains/robot = 6,
+		/obj/item/remains/mouse = 6,
+		/obj/item/remains/lizard = 6,
+		/obj/effect/gibspawner/robot = 3,
+		/obj/effect/gibspawner/human = 3,
+		/obj/effect/landmark/corpse/chef = 1,
+		/obj/effect/landmark/corpse/doctor = 1,
+		/obj/effect/landmark/corpse/engineer = 1,
+		/obj/effect/landmark/corpse/scientist = 1,
+		/obj/effect/landmark/corpse/clown = 1,
+		/obj/effect/landmark/corpse/miner = 1,
+		/obj/effect/landmark/corpse/russian = 1,
+		/obj/effect/landmark/corpse/syndicate = 1
+	)
 
 /*
 	Selects one spawn point out of a group of points with the same ID and asks it to generate its items
@@ -1476,7 +1518,10 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 				/obj/item/weapon/reagent_containers/pill/three_eye = 1,
 				/obj/item/weapon/storage/lockbox/vials/random = 1,
 				/obj/item/weapon/storage/toolbox/syndicate = 6,
-				/obj/item/weapon/reagent_containers/food/snacks/egg/lizard = 1
+				/obj/item/weapon/reagent_containers/food/snacks/egg/lizard = 3,
+				/obj/random/hostile/maint_severe = 25,
+				/obj/random/hostile/maint = 35
+
 			)
 
 //100% Illegal
@@ -1488,5 +1533,7 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 
 /obj/random/illegaltwo/spawn_choices()
 	return list(/obj/item/weapon/gun/magnetic = 1,
+				/obj/random/hostile/maint_severe = 25,
+				/obj/random/hostile/maint = 35,
 				/obj/item/weapon/gun/projectile/pirate/unloaded = 4,
 				/obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn/empty = 2)

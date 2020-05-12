@@ -64,6 +64,10 @@
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
 /area/template_noop)
+"an" = (
+/obj/effect/decal/cleanable/mucus,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/template_noop)
 "ao" = (
 /obj/random/junk,
 /turf/template_noop,
@@ -104,8 +108,9 @@
 /turf/simulated/floor/tiled/white,
 /area/template_noop)
 "aw" = (
+/obj/random/trash,
+/obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/mucus,
-/mob/living/simple_animal/hostile/creature,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/template_noop)
 "ax" = (
@@ -138,6 +143,12 @@
 /obj/random/closet,
 /turf/simulated/floor/carpet/blue2,
 /area/template_noop)
+"aD" = (
+/obj/random/trash,
+/obj/random/trash,
+/mob/living/simple_animal/construct/armoured,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/template_noop)
 "aE" = (
 /obj/structure/bookcase/manuals/xenoarchaeology,
 /turf/simulated/floor/carpet/blue2,
@@ -148,11 +159,6 @@
 /area/template_noop)
 "aG" = (
 /turf/simulated/floor/carpet/blue2,
-/area/template_noop)
-"aH" = (
-/obj/random/trash,
-/obj/random/trash,
-/turf/simulated/floor/tiled/steel_ridged,
 /area/template_noop)
 "aI" = (
 /obj/machinery/door/airlock/vault{
@@ -285,13 +291,6 @@
 /obj/effect/decal/cleanable/mucus,
 /turf/simulated/floor/carpet/blue2,
 /area/template_noop)
-"bf" = (
-/obj/random/trash,
-/obj/effect/decal/cleanable/blood,
-/obj/effect/decal/cleanable/mucus,
-/mob/living/simple_animal/hostile/creature,
-/turf/simulated/floor/tiled/steel_ridged,
-/area/template_noop)
 "bg" = (
 /obj/random/trash,
 /obj/structure/filingcabinet/wallcabinet{
@@ -339,7 +338,7 @@ aa
 aa
 ab
 ad
-aw
+an
 aI
 ac
 aV
@@ -354,7 +353,7 @@ ao
 aa
 ab
 al
-bf
+aw
 am
 aq
 aJ
@@ -399,7 +398,7 @@ aa
 aa
 ab
 ak
-aH
+aD
 am
 ac
 bg

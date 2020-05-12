@@ -282,7 +282,7 @@
 /obj/item/weapon/stock_parts/circuitboard/unary_atmos/cooler,
 /obj/item/weapon/stock_parts/circuitboard/unary_atmos/heater,
 /obj/item/weapon/stock_parts/circuitboard/oxyregenerator,
-/obj/item/weapon/tank/oxygen/red,
+/obj/item/weapon/tank/emergency/oxygen/double/red,
 /obj/structure/cable,
 /obj/item/stack/material/uranium/ten,
 /obj/item/stack/material/uranium/ten,

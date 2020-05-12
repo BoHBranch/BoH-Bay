@@ -4,7 +4,7 @@
 	win_x = 500
 	win_y = 1100
 	show_results = FALSE
-	show_precentages = FALSE
+	show_percentages = FALSE
 
 /datum/vote/gamemode/can_run(mob/creator, automatic)
 	if(!automatic && (!config.allow_vote_mode || !is_admin(creator)))
@@ -21,6 +21,8 @@
 
 /datum/vote/gamemode/setup_vote(mob/creator, automatic)
 	..()
+	show_results = config.show_gamemode_vote
+	show_percentages = config.show_gamemode_percentage
 	choices += config.votable_modes
 	for (var/F in choices)
 		var/datum/game_mode/M = gamemode_cache[F]
