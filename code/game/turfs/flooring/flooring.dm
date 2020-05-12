@@ -314,7 +314,7 @@
 	icon = 'icons/turf/flooring/cult.dmi'
 	icon_base = "cult"
 	build_type = null
-	has_damage_range = 6
+	has_damage_range = 3
 	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_REMOVE_WRENCH
 	can_paint = null
 
