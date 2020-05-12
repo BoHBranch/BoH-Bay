@@ -65,7 +65,7 @@
 	title = "Shaft Miner"
 	department = "Supply"
 	department_flag = SUP
-	total_positions = 4
+	total_positions = 3
 	spawn_positions = 3
 	supervisors = "the quartermaster and the head of personnel"
 	economic_power = 5
