@@ -65,7 +65,7 @@
 	title = "Minero"
 	department = "Suministro"
 	department_flag = SUP
-	total_positions = 4
+	total_positions = 3
 	spawn_positions = 3
 	supervisors = "el quartermaster y el jefe de personal"
 	economic_power = 5

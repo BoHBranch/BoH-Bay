@@ -77,7 +77,7 @@
 	title = "Prospector"
 	department = "Supply"
 	department_flag = SUP
-	total_positions = 2
+	total_positions = 4
 	spawn_positions = 2
 	supervisors = "the Deck Officer, the Corporate Liaison and the Executive Officer"
 	economic_power = 7
