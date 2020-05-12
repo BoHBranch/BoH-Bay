@@ -12,7 +12,7 @@
 
 /datum/uplink_item/item/medical/stabilisation
 	name = "Kit de primeros auxilios de Estabilizacion "
-	desc = "Contains variety of emergency medical pouches.Contiene una variedad de bolsas medicas de emergencia."
+	desc = "Contiene una amplia variedad de bolsas medicas de emergencia."
 	item_cost = 6
 	path = /obj/item/weapon/storage/firstaid/stab
 
@@ -23,8 +23,8 @@
 	path = /obj/item/bodybag/cryobag
 
 /datum/uplink_item/item/medical/defib
-	name = "Desfribrilador de combate"
-	desc = "A belt-equipped defibrillator that can be rapidly deployed. Does not have the restrictions or safeties of conventional defibrillators and can revive through space suits."
+	name = "Desfibrilador de combate"
+	desc = " Un cinturon con un desfibrador equipo que puede ser rapidamente desplegado. No tiene las restricciones o seguros de los desfibradores y puede revivir a pesar de tener un traje espacial."
 	item_cost = 24
 	path = /obj/item/weapon/defibrillator/compact/combat/loaded
 
@@ -54,7 +54,7 @@
 
 /datum/uplink_item/item/medical/hypeross
 	name = "Hypeross-7"
-	desc = "Un autoinyector que contiene un componente secreto capaz de reparar huesos rotos. No uses más de uno."
+	desc = "Un autoinyector que contiene un componente secreto capaz de reparar huesos rotos. No uses mas de uno."
 	item_cost = 4
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/hypeross
 
@@ -66,6 +66,6 @@
 
 /datum/uplink_item/item/medical/alkysine
 	name = "Alkysine"
-	desc = "Un autoinyector que contiene alkysine - una droga que actua de manera lenta capaz de revertir el daño cerebral. Muy simple, un diagrama de dibujos te asegura que no tendrás ningun problema de usar este dispositivo."
+	desc = "Un autoinyector que contiene alkysine - una droga que actua de manera lenta capaz de revertir el daño cerebral. Muy simple, un diagrama de dibujos te asegura que no tendras ningun problema de usar este dispositivo."
 	item_cost = 2
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine
