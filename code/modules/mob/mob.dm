@@ -434,6 +434,18 @@
 		SScharacter_setup.queue_preferences_save(prefs)
 		winset(src, "rpane.changelog", "background-color=none;font-style=;")
 
+/client/verb/rules()
+	set name = "Rules"
+	set category = "OOC"
+	getFiles(
+		'html/rules.html'
+		)
+	show_browser(src, 'html/rules.html', "window=rules;size=675x650")
+	if(prefs.lastchangelog != changelog_hash)
+		prefs.lastchangelog = changelog_hash
+		SScharacter_setup.queue_preferences_save(prefs)
+		winset(src, "rpane.rules", "background-color=none;font-style=;")
+
 /mob/verb/cancel_camera()
 	set name = "Cancel Camera View"
 	set category = "OOC"

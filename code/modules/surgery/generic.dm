@@ -297,7 +297,8 @@
 	name = "Amputate limb"
 	allowed_tools = list(
 		/obj/item/weapon/circular_saw = 100,
-		/obj/item/weapon/material/hatchet = 75
+		/obj/item/weapon/material/hatchet = 75,
+		/obj/item/weapon/crowbar/emergency_forcing_tool = 65
 	)
 	min_duration = 110
 	max_duration = 160
@@ -305,7 +306,7 @@
 
 /decl/surgery_step/generic/amputate/assess_bodypart(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = ..()
-	if(affected && (affected.limb_flags & ORGAN_FLAG_CAN_AMPUTATE) && !affected.how_open())
+	if(affected && (affected.limb_flags & ORGAN_FLAG_CAN_AMPUTATE))
 		return affected
 
 /decl/surgery_step/generic/amputate/get_skill_reqs(mob/living/user, mob/living/carbon/human/target, obj/item/tool)

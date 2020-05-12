@@ -22,10 +22,12 @@
 	playsound(loc, 'sound/effects/bonerattle.ogg', 40)
 
 /obj/structure/skele_stand/attack_hand(mob/user)
-	if(swag.len)
-		var/obj/item/clothing/C = input("What piece of clothing do you want to remove?", "Skeleton undressing") as null|anything in list_values(swag)
-		if(C)
-			swag -= get_key_by_value(swag, C)
+	if(LAZYLEN(swag))
+		var/removed = show_radial_menu(user, src, swag)
+		var/obj/item/clothing/C = swag[removed]
+		if(removed)
+			swag -= removed
+			swag[removed] = null
 			user.put_in_hands(C)
 			to_chat(user,"<span class='notice'>You take \the [C] off \the [src]</span>")
 			update_icon()
@@ -37,7 +39,7 @@
 
 /obj/structure/skele_stand/examine(mob/user)
 	. = ..()
-	if(swag.len)
+	if(LAZYLEN(swag))
 		var/list/swagnames = list()
 		for(var/slot in swag)
 			var/obj/item/clothing/C = swag[slot]
@@ -63,16 +65,18 @@
 		else if(istype(W, /obj/item/clothing/mask))
 			slot = slot_wear_mask_str
 		if(slot)
-			if(swag[slot])
+			if(LAZYACCESS(swag, slot))
 				to_chat(user,"<span class='notice'>There is already that kind of clothing on \the [src].</span>")
 			else if(user.unEquip(W, src))
-				swag[slot] = W
+				LAZYSET(swag, slot, W)
 				update_icon()
 				return 1
 	else
 		rattle_bones(user, W)
 
 /obj/structure/skele_stand/Destroy()
+	if(!LAZYLEN(swag))
+		return ..()
 	for(var/slot in swag)
 		var/obj/item/I = swag[slot]
 		I.forceMove(loc)
@@ -80,6 +84,8 @@
 
 /obj/structure/skele_stand/on_update_icon()
 	overlays.Cut()
+	if(!LAZYLEN(swag))
+		return
 	for(var/slot in swag)
 		var/obj/item/I = swag[slot]
 		overlays += I.get_mob_overlay(null, slot)

@@ -117,6 +117,10 @@
 /obj/structure/table/reinforced,
 /turf/simulated/floor/airless,
 /area/djstation)
+"aD" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/tiled/airless,
+/area/djstation)
 "aE" = (
 /obj/structure/table/reinforced,
 /obj/random/loot,
@@ -239,6 +243,10 @@
 /obj/effect/overmap/visitable/sector/cluster,
 /turf/simulated/floor/asteroid,
 /area/mine/explored)
+"bg" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled/airless,
+/area/djstation)
 "cb" = (
 /obj/effect/shuttle_landmark/cluster/nav5,
 /turf/simulated/floor/asteroid,
@@ -25655,7 +25663,7 @@ aj
 al
 aq
 av
-ar
+aD
 aj
 ab
 ab
@@ -26461,7 +26469,7 @@ ab
 ab
 aj
 ap
-ar
+bg
 aw
 ay
 aj

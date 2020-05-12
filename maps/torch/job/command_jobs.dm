@@ -295,7 +295,7 @@
 	skill_points = 20
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 
-	access = list(access_representative, access_maint_tunnels, access_security, access_medical,
+	access = list(access_security, access_sec_doors, access_brig, access_representative, access_maint_tunnels, access_security, access_medical,
 			            access_bridge, access_cargo, access_solgov_crew, access_hangar)
 
 	software_on_spawn = list(/datum/computer_file/program/reports)
@@ -337,7 +337,7 @@
 	skill_points = 24
 
 
-	access = list(access_security, access_medical, access_engine, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
+	access = list(access_security, access_sec_doors, access_brig, access_medical, access_engine, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_janitor,
 			            access_kitchen, access_cargo, access_RC_announce, access_keycard_auth, access_guppy_helm,
 			            access_solgov_crew, access_gun, access_expedition_shuttle, access_guppy, access_senadv, access_hangar, access_emergency_armory, access_gunnery)

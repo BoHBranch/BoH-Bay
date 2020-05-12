@@ -33,9 +33,11 @@
 	if(!extras.len)
 		to_chat(user, "<span class=warning>There's nothing on the glass to remove!</span>")
 		return
-
-	var/choice = input(user, "What would you like to remove from the glass?") as null|anything in extras
-	if(!choice || !(choice in extras))
+	var/list/removables = list()
+	for(var/extra in extras)
+		removables[extra] = extra
+	var/choice = show_radial_menu(user, src, removables)
+	if(!choice || !(choice in removables))
 		return
 
 	if(user.put_in_active_hand(choice))

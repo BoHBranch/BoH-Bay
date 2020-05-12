@@ -1029,8 +1029,9 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/table/rack,
-/obj/item/weapon/gun/projectile/shotgun/sabotgun,
-/obj/item/weapon/storage/box/ammo/sabotbox,
+/obj/item/weapon/storage/box/teargas,
+/obj/item/weapon/storage/box/teargas,
+/obj/item/weapon/storage/box/zipties,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "abI" = (
@@ -2448,8 +2449,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "aes" = (
-/obj/structure/closet/emcloset,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)
 "aet" = (
@@ -2619,6 +2619,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/random/obstruction,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/forestarboard)
 "aeI" = (
@@ -4454,15 +4455,14 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "ahQ" = (
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/structure/table/rack{
+	dir = 8
 	},
-/obj/machinery/alarm{
-	alarm_id = "xenobio4_alarm";
-	pixel_y = 24
-	},
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor,
-/area/command/gunnery/mim)
+/area/maintenance/firstdeck/forestarboard)
 "ahR" = (
 /obj/structure/cable/green{
 	d2 = 2;
@@ -4678,6 +4678,7 @@
 	dir = 5
 	},
 /obj/item/weapon/storage/fancy/crayons,
+/obj/random/maintenance,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/foreport)
 "aif" = (
@@ -9058,6 +9059,7 @@
 /obj/random/junk,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/random/illegal,
+/obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/forestarboard)
 "apE" = (
@@ -9106,9 +9108,8 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "apH" = (
-/obj/structure/table/rack,
-/obj/random/illegal,
-/turf/simulated/floor/tiled/techfloor,
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "apI" = (
 /obj/machinery/power/apc{
@@ -9608,17 +9609,14 @@
 "aqE" = (
 /obj/structure/table/rack,
 /obj/random/illegal,
+/obj/random/maintenance,
+/obj/random/maintenance,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
 "aqF" = (
 /obj/machinery/ai_status_display,
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/heads/office/sea/marine)
-"aqG" = (
-/obj/structure/closet/crate/solar,
-/obj/random/tech_supply,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/forestarboard)
 "aqH" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -10835,7 +10833,7 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 9
 	},
-/obj/machinery/psi_meter,
+/obj/structure/table/standard,
 /turf/simulated/floor/tiled/white,
 /area/medical/counselor)
 "asx" = (
@@ -11018,6 +11016,8 @@
 /obj/item/weapon/storage/box/lights/mixed,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/closet/wardrobe/suit,
+/obj/random/maintenance,
+/obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftport)
 "asT" = (
@@ -11025,6 +11025,20 @@
 /obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftport)
+"asU" = (
+/obj/structure/table/standard,
+/obj/machinery/light_switch{
+	pixel_x = -4;
+	pixel_y = 26
+	},
+/obj/machinery/button/windowtint{
+	id = "misc_lab";
+	pixel_x = 4;
+	pixel_y = 26
+	},
+/obj/item/weapon/storage/toolbox/mechanical,
+/turf/simulated/floor/tiled/white/monotile,
+/area/rnd/misc_lab)
 "asV" = (
 /obj/structure/catwalk,
 /obj/structure/closet/crate/freezer/meat,
@@ -11170,6 +11184,42 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/psionic)
+"ath" = (
+/obj/machinery/vending/phoronresearch{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/white/monotile,
+/area/rnd/misc_lab)
+"ati" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/aftstarboard)
+"atj" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/aftstarboard)
+"atk" = (
+/obj/structure/closet/emcloset,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/aftstarboard)
+"atl" = (
+/obj/structure/table/rack,
+/obj/item/weapon/storage/box/lights/mixed,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/aftport)
 "atm" = (
 /obj/random_multi/single_item/runtime,
 /obj/structure/bed/chair/armchair/brown,
@@ -11214,6 +11264,55 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
+"atp" = (
+/obj/item/weapon/stool,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/aftport)
+"atq" = (
+/obj/structure/table/rack,
+/obj/random/illegal,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralport)
+"atr" = (
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/firstdeck/centralport)
+"ats" = (
+/obj/structure/catwalk,
+/obj/structure/table/gamblingtable,
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/foreport)
+"att" = (
+/obj/machinery/door/firedoor,
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/centralstarboard)
+"atu" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/alarm{
+	alarm_id = "xenobio4_alarm";
+	pixel_y = 24
+	},
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/command/gunnery/mim)
+"atv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/structure/catwalk,
+/obj/machinery/alarm{
+	pixel_y = 24
+	},
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/forestarboard)
 "atw" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 4
@@ -14416,11 +14515,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
-"aNA" = (
-/obj/structure/table/rack,
-/obj/item/weapon/storage/box/lights/mixed,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/aftport)
 "aNB" = (
 /obj/structure/lattice,
 /turf/simulated/wall/r_wall/hull,
@@ -15633,11 +15727,6 @@
 /obj/random/powercell,
 /obj/random/powercell,
 /obj/random/powercell,
-/obj/effect/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/aftport)
-"aTP" = (
-/obj/item/weapon/stool,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftport)
@@ -17777,13 +17866,6 @@
 /obj/random/medical,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
-"cCb" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/aftstarboard)
 "cDb" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -19065,12 +19147,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery)
-"eNa" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/aftstarboard)
 "eQK" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 9
@@ -22093,12 +22169,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
-"jkm" = (
-/obj/structure/table/rack{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/firstdeck/forestarboard)
 "jlb" = (
 /obj/item/device/radio/intercom{
 	dir = 1;
@@ -22677,19 +22747,6 @@
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/tiled/white/monotile,
-/area/rnd/misc_lab)
-"kbb" = (
-/obj/structure/table/standard,
-/obj/machinery/light_switch{
-	pixel_x = -4;
-	pixel_y = 26
-	},
-/obj/machinery/button/windowtint{
-	id = "misc_lab";
-	pixel_x = 4;
-	pixel_y = 26
-	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/misc_lab)
 "kcb" = (
@@ -27815,16 +27872,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bo)
-"riX" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/obj/structure/catwalk,
-/obj/machinery/alarm{
-	pixel_y = 24
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/forestarboard)
 "rjb" = (
 /obj/machinery/door/window/brigdoor/northright{
 	name = "Test Chamber"
@@ -27914,13 +27961,6 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -32
 	},
-/obj/effect/floor_decal/corner/research/mono,
-/obj/effect/floor_decal/corner/research/mono,
-/turf/simulated/floor/tiled/white/monotile,
-/area/rnd/misc_lab)
-"rpb" = (
-/obj/structure/table/standard,
-/obj/item/weapon/storage/toolbox/mechanical,
 /obj/effect/floor_decal/corner/research/mono,
 /obj/effect/floor_decal/corner/research/mono,
 /turf/simulated/floor/tiled/white/monotile,
@@ -28268,10 +28308,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
-"rKD" = (
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralstarboard)
 "rKL" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -41102,7 +41138,7 @@ aaa
 hBr
 hBr
 hBr
-riX
+atv
 aeD
 lvm
 agC
@@ -41509,7 +41545,7 @@ hBr
 adR
 aeG
 lvm
-aqG
+adM
 adK
 aiS
 ajS
@@ -42718,7 +42754,7 @@ hBr
 hBr
 hBr
 hBr
-jkm
+ahQ
 aeL
 njj
 apT
@@ -44142,7 +44178,7 @@ afN
 afj
 pXG
 vMm
-jkm
+ahQ
 afI
 aqi
 aaX
@@ -45552,7 +45588,7 @@ hBr
 acD
 ahO
 aeg
-ahQ
+atu
 app
 anq
 apr
@@ -46191,7 +46227,7 @@ jTV
 aQD
 amB
 ass
-asv
+ats
 tAS
 tAS
 tAS
@@ -46758,7 +46794,7 @@ aaa
 hBr
 hBr
 hBr
-rKD
+att
 acD
 afT
 agN
@@ -49826,7 +49862,7 @@ aKY
 aPS
 wBV
 aRH
-cQo
+atr
 jjh
 jjh
 jjh
@@ -50832,7 +50868,7 @@ aHi
 aCZ
 aCZ
 eGY
-aCZ
+apH
 aJS
 aJS
 aRI
@@ -51023,7 +51059,7 @@ ayg
 ure
 auN
 anP
-cQo
+atr
 lsb
 wHE
 aHi
@@ -51233,7 +51269,7 @@ aHn
 aIG
 aHn
 aHi
-aCZ
+apH
 aCZ
 eGY
 aCZ
@@ -51436,7 +51472,7 @@ jvb
 ptb
 pzb
 aqD
-apH
+atq
 aJS
 aCZ
 aCZ
@@ -52617,7 +52653,7 @@ mpy
 acH
 adt
 qsc
-cCb
+atj
 aeo
 cwb
 alA
@@ -53020,8 +53056,8 @@ mpy
 mpy
 acJ
 adt
-eNa
-eNa
+ati
+ati
 aeo
 cwb
 alA
@@ -54634,7 +54670,7 @@ aaa
 mpy
 mpy
 acS
-uXe
+aes
 sMO
 aep
 afn
@@ -55484,7 +55520,7 @@ sqb
 auY
 aHQ
 aTe
-aTP
+atp
 bDK
 bDK
 bDK
@@ -56077,7 +56113,7 @@ aqj
 aqt
 aqy
 ahZ
-kbb
+asU
 phb
 pPb
 qlb
@@ -56252,7 +56288,7 @@ abN
 ach
 mEV
 tVi
-aes
+atk
 afs
 pZE
 ahw
@@ -56892,7 +56928,7 @@ xMP
 gcY
 qDb
 qWb
-rpb
+ath
 aHQ
 aNy
 aDB
@@ -57496,7 +57532,7 @@ aJj
 pyb
 pUb
 apF
-aNA
+atl
 bDK
 bDK
 bDK
@@ -58082,7 +58118,7 @@ mpy
 mpy
 mpy
 mpy
-uXe
+aes
 sde
 sde
 abL

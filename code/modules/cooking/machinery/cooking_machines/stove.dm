@@ -11,10 +11,10 @@
 	on_icon = "stove_on"
 	off_icon = "stove_off"
 
-	resistance = 30000 // Approx. 12 minutes.
+	resistance = 5000 // Approx. 2 minutes.
 	idle_power_usage = 1 KILOWATTS
 	//uses ~30% power to stay warm
-	optimal_temp = T0C + 99 // can't boil water!
+	optimal_temp = T0C + 100 // can boil water!
 	optimal_power = 1.2
 
 	max_contents = 4

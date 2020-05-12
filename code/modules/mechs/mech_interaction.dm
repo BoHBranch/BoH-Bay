@@ -280,9 +280,11 @@
 
 		var/free_hardpoints = list()
 		for(var/hardpoint in hardpoints)
-			if(hardpoints[hardpoint] == null)
-				free_hardpoints += hardpoint
-		var/to_place = input("Where would you like to install it?") as null|anything in (realThing.restricted_hardpoints & free_hardpoints)
+			if((hardpoints[hardpoint] == null) && (hardpoint in realThing.restricted_hardpoints))
+				free_hardpoints[hardpoint] = hardpoint
+		var/to_place = free_hardpoints[1]
+		if(LAZYLEN(free_hardpoints) > 1)
+			to_place = show_radial_menu(user, src, free_hardpoints)
 		if(install_system(thing, to_place, user))
 			return
 		to_chat(user, SPAN_WARNING("\The [src] could not be installed in that hardpoint."))
@@ -311,9 +313,8 @@
 				var/list/parts = list()
 				for(var/hardpoint in hardpoints)
 					if(hardpoints[hardpoint])
-						parts += hardpoint
-
-				var/to_remove = input("Which component would you like to remove") as null|anything in parts
+						parts[hardpoint] = hardpoint
+				var/to_remove = show_radial_menu(user, src, parts)
 
 				if(remove_system(to_remove, user))
 					return
@@ -337,8 +338,8 @@
 				var/list/damaged_parts = list()
 				for(var/obj/item/mech_component/MC in list(arms, legs, body, head))
 					if(MC && MC.brute_damage)
-						damaged_parts += MC
-				var/obj/item/mech_component/to_fix = input(user,"Which component would you like to fix") as null|anything in damaged_parts
+						damaged_parts[MC] = MC
+				var/obj/item/mech_component/to_fix = show_radial_menu(user, src, damaged_parts)
 				if(CanPhysicallyInteract(user) && !QDELETED(to_fix) && (to_fix in src) && to_fix.brute_damage)
 					to_fix.repair_brute_generic(thing, user)
 				return
@@ -348,8 +349,8 @@
 				var/list/damaged_parts = list()
 				for(var/obj/item/mech_component/MC in list(arms, legs, body, head))
 					if(MC && MC.burn_damage)
-						damaged_parts += MC
-				var/obj/item/mech_component/to_fix = input(user,"Which component would you like to fix") as null|anything in damaged_parts
+						damaged_parts[MC] = MC
+				var/obj/item/mech_component/to_fix = show_radial_menu(user, src, damaged_parts)
 				if(CanPhysicallyInteract(user) && !QDELETED(to_fix) && (to_fix in src) && to_fix.burn_damage)
 					to_fix.repair_burn_generic(thing, user)
 				return
