@@ -10,6 +10,10 @@
 "c" = (
 /turf/unsimulated/wall/away/blueriver/livingwall,
 /area/bluespaceriver/underground)
+"d" = (
+/obj/effect/landmark/corpse/zombiescience,
+/turf/simulated/floor/asteroid,
+/area/bluespaceriver/underground)
 "e" = (
 /obj/machinery/crystal_static{
 	alpha = 120;
@@ -52,8 +56,9 @@
 /turf/simulated/floor/asteroid,
 /area/bluespaceriver/underground)
 "m" = (
-/mob/living/simple_animal/hostile/hive_alien/defender,
-/turf/simulated/floor/away/blueriver/alienfloor,
+/obj/item/weapon/pickaxe/drill,
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/asteroid,
 /area/bluespaceriver/underground)
 "n" = (
 /obj/item/roller,
@@ -88,10 +93,6 @@
 /area/bluespaceriver/underground)
 "t" = (
 /obj/item/device/geiger,
-/turf/simulated/floor/asteroid,
-/area/bluespaceriver/underground)
-"u" = (
-/obj/item/weapon/pickaxe/drill,
 /turf/simulated/floor/asteroid,
 /area/bluespaceriver/underground)
 "v" = (
@@ -134,6 +135,10 @@
 	color = "BLUE"
 	},
 /turf/simulated/floor/away/blueriver/alienfloor,
+/area/bluespaceriver/underground)
+"A" = (
+/obj/structure/wall_frame/away,
+/turf/simulated/floor/asteroid,
 /area/bluespaceriver/underground)
 
 (1,1,1) = {"
@@ -4274,7 +4279,7 @@ a
 a
 a
 k
-k
+d
 a
 a
 a
@@ -5191,8 +5196,8 @@ a
 a
 a
 a
-k
-k
+A
+A
 a
 a
 a
@@ -5294,7 +5299,7 @@ a
 a
 a
 q
-u
+m
 a
 a
 a
@@ -6005,7 +6010,7 @@ a
 a
 c
 f
-m
+f
 e
 s
 v

@@ -1,11 +1,11 @@
 /obj/item/weapon/gun
-	var/general_codex_key = "guns"
+	var/general_codex_key = "armas de fuego"
 
 /obj/item/weapon/gun/projectile
-	general_codex_key = "ballistic weapons"
+	general_codex_key = "armas balísticas"
 
 /obj/item/weapon/gun/energy
-	general_codex_key = "energy weapons"
+	general_codex_key = "armas de energía"
 
 /obj/item/weapon/gun/get_antag_info()
 	var/list/entries = SScodex.retrieve_entries_for_string(general_codex_key)
@@ -29,42 +29,42 @@
 		traits += general_entry.mechanics_text
 
 	if(one_hand_penalty)
-		traits += "It's best fired with two-handed grip."
+		traits += "Se dispara mejor agarrando con ambas manos."
 
 	if(has_safety)
-		traits += "It has a safety switch. Control-Click it to toggle safety."
+		traits += "Tiene un seguro. CTRL+CLICK para alternar el seguro."
 
 	if(is_secure_gun())
-		traits += "It's fitted with secure registration chip. Swipe ID on it to register."
+		traits += "Está equipado con un chip de registración segura. Pásale una ID para registrarla."
 
 	if(scope_zoom)
-		traits += "It has a magnifying optical scope. It can be toggled with Use Scope verb."
+		traits += "Tiene una mira óptica. Se puede alternar con el verbo Usar mira."
 
-	if(LAZYLEN(firemodes) > 1) 
-		traits += "It has multiple firemodes. Click it in hand to cycle them."
-	
+	if(LAZYLEN(firemodes) > 1)
+		traits += "Tiene múltiples modos de fuego. Clickea en tu mano para rotar entre ellos."
+
 	return jointext(traits, "<br>")
-	
+
 /obj/item/weapon/gun/projectile/get_mechanics_info()
 	. = ..()
 	var/list/traits = list()
 
-	traits += "<br>Caliber: [caliber]"
+	traits += "<br>Calibre: [caliber]"
 
 	var/list/loading_ways = list()
 	if(load_method & SINGLE_CASING)
-		loading_ways += "loose [caliber] rounds"
+		loading_ways += "Rondas [caliber] sueltas."
 	if(load_method & SPEEDLOADER)
-		loading_ways += "speedloaders"
+		loading_ways += "Cargador rápido."
 	if(load_method & MAGAZINE)
-		loading_ways += "magazines"
-	traits += "Can be loaded using [english_list(loading_ways)]"
+		loading_ways += "Cargadores"
+	traits += "Puede ser cargada usando [english_list(loading_ways)]"
 
 	if(load_method & (SINGLE_CASING|SPEEDLOADER))
-		traits += "It can hold [max_shells] rounds."
-	
+		traits += "Puede aguantar [max_shells] rondas."
+
 	if(jam_chance)
-		traits += "It's prone to jamming."
+		traits += "Tiene tendencias a atascarse."
 
 	. += jointext(traits, "<br>")
 
@@ -72,43 +72,42 @@
 	. = ..()
 	var/list/traits = list()
 
-	traits += "<br>Its maximum capacity is [max_shots] shots worth of power."
+	traits += "<br>Su capacidad máxima es de [max_shots] disparos en cuanto a energía."
 
 	if(self_recharge)
-		traits += "It recharges itself over time."
+		traits += "Se recarga sola con el tiempo."
 
 	. += jointext(traits, "<br>")
 
 /obj/item/weapon/gun/projectile/shotgun/pump/get_mechanics_info()
 	. = ..()
-	. += "<br>To pump it, click it in hand.<br>"
+	. += "<br>Para recargar la ronda haz click en el item tu mano.<br>"
 
 /obj/item/weapon/gun/energy/crossbow/get_antag_info()
 	. = ..()
-	. += "This is a stealthy weapon which fires poisoned bolts at your target. When it hits someone, they will suffer a stun effect, in \
-	addition to toxins. The energy crossbow recharges itself slowly, and can be concealed in your pocket or bag.<br>"
-	
+	. += "Esta es un arma sigilosa que dispara flechas envenenadas a tu objetivo. Cuando le de a alguien sufrirán un efecto de aturdimiento, además de algunas toxinas. \
+	. La ballesta de energía se recarga sola lentamente, y puede ser escondida en tu bolsillo o bolsa.<br>"
+
 /obj/item/weapon/gun/energy/chameleon/get_antag_info()
 	. = ..()
-	. += "This gun is actually a hologram projector that can alter its appearance to mimick other weapons. To change the appearance, use \
-	the appropriate verb in the chameleon items tab. Any beams or projectiles fired from this gun are actually holograms and useless for actual combat. \
-	Projecting these holograms over distance uses a little bit of charge.<br>"
+	. += "Esta arma es un proyector holográfico que puede cambiar de apariencia para imitar otras armas. Para cambiar de aspecto usa\
+	el verbo apropiado en la sección camaleón. Cualquier rayo o proyectil disparado por esta arma es realmente un holograma inútil para combate real. \
+	Proyectar estos hologramas a distancia usa un poco de energía.<br>"
 
 /datum/codex_entry/energy_weapons
 	display_name = "energy weapons"
-	mechanics_text = "This weapon is an energy weapon; they run on battery charge rather than traditional ammunition. You can recharge \
-		an energy weapon by placing it in a wall-mounted or table-mounted charger, such as those found in Security or around the \
-		place. Additionally, most energy weapons can go straight through windows and hit whatever is on the other side, and are \
-		hitscan, making them accurate and useful against distant targets. \
+	mechanics_text = "Esta arma es un arma de energía; funcionan con una carga de batería en lugar de munición tradicional. Puedes recargarlas \
+         colocándolas en un cargador montado en una pared o en una mesa, como los que se encuentran en Seguridad o en los \
+        alrededores. Además, la mayoría de las armas de energía pueden atravesar ventanas y golpear lo que esté al otro lado, y son \
+       precisas y útiles contra objetivos distantes. \
 		<br><br>"
 
 /datum/codex_entry/ballistic_weapons
 	display_name = "ballistic weapons"
-	mechanics_text = "This weapon is a ballistic weapon; it fires solid shots using a magazine or loaded rounds of ammunition. You can \
-		unload it by holding it and clicking it with an empty hand, and reload it by clicking it with a magazine, or in the case of \
-		shotguns or some rifles, by opening the breech and clicking it with individual rounds. \
+	mechanics_text = "Esta arma es balistica; dispara proyectiles solidos usando un cartucho o municion cargada a mano. Puedes \
+		descargarla agarrandola y clickeandola con una mano vacía, y recargarla clickeandola con un cartucho, o en el caso de las\
+		escopetas o algunos rifles, abriendo la récamara y clickeandola con rondas individuales.\
 		<br><br>"
-	lore_text = "Ballistic weapons are still used even now due to the relative expense of decent laser \
-		weapons, difficulties in maintaining them, and the sheer stopping and wounding power of solid slugs or \
-		composite shot. Using a ballistic weapon on a spacebound habitat is usually considered a serious undertaking, \
-		as a missed shot or careless use of automatic fire could rip open the hull or injure bystanders with ease."
+	lore_text = "Las armas balisticas son aun usadas por el precio y dificultad de mantenimiento relativo de armas laser estandar \
+		wy por el potencial bruto de cartuchos fisicos. Usar un arma balistica en un entorno espacial es considerado un riesgo serio,\
+		pues una bala puede perforar las paredes de la nave"

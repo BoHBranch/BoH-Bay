@@ -877,79 +877,66 @@
 /datum/sprite_accessory/tail/special
 	name = "Blank tail. Do not select."
 	icon = 'icons/effects/species_tails_vr.dmi'
-
 /datum/sprite_accessory/tail/special/unathi
 	name = "unathi tail"
 	desc = ""
 	icon_state = "sogtail_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/tajaran
 	name = "tajaran tail"
 	desc = ""
 	icon_state = "tajtail_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/sergal
 	name = "sergal tail"
 	desc = ""
 	icon_state = "sergtail_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/akula
 	name = "akula tail"
 	desc = ""
 	icon_state = "sharktail_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/nevrean
 	name = "nevrean tail"
 	desc = ""
 	icon_state = "nevreantail_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/armalis
 	name = "armalis tail"
 	desc = ""
 	icon_state = "armalis_tail_humanoid_s"
-
 /datum/sprite_accessory/tail/special/xenodrone
 	name = "xenomorph drone tail"
 	desc = ""
 	icon_state = "xenos_drone_tail_s"
-
 /datum/sprite_accessory/tail/special/xenosentinel
 	name = "xenomorph sentinel tail"
 	desc = ""
 	icon_state = "xenos_sentinel_tail_s"
-
 /datum/sprite_accessory/tail/special/xenohunter
 	name = "xenomorph hunter tail"
 	desc = ""
 	icon_state = "xenos_hunter_tail_s"
-
 /datum/sprite_accessory/tail/special/xenoqueen
 	name = "xenomorph queen tail"
 	desc = ""
 	icon_state = "xenos_queen_tail_s"
-
 /datum/sprite_accessory/tail/special/monkey
 	name = "monkey tail"
 	desc = ""
 	icon_state = "chimptail_s"
-
 /datum/sprite_accessory/tail/special/seromitail
 	name = "seromi tail"
 	desc = ""
 	icon_state = "seromitail_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/seromitailfeathered
 	name = "seromi tail w/ feathers"
 	desc = ""
@@ -957,106 +944,90 @@
 	extra_overlay = "seromitail_feathers_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/unathihc
 	name = "unathi tail, colorable"
 	desc = ""
 	icon_state = "sogtail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/tajaranhc
 	name = "tajaran tail, colorable"
 	desc = ""
 	icon_state = "tajtail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/sergalhc
 	name = "sergal tail, colorable"
 	desc = ""
 	icon_state = "sergtail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/akulahc
 	name = "akula tail, colorable"
 	desc = ""
 	icon_state = "sharktail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/nevreanhc
 	name = "nevrean tail, colorable"
 	desc = ""
 	icon_state = "nevreantail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/foxhc
 	name = "highlander zorren tail, colorable"
 	desc = ""
 	icon_state = "foxtail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/fennechc
 	name = "flatland zorren tail, colorable"
 	desc = ""
 	icon_state = "fentail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/armalishc
 	name = "armalis tail, colorable"
 	desc = ""
 	icon_state = "armalis_tail_humanoid_hc_s"
 	do_colouration = 1
-
 /datum/sprite_accessory/tail/special/xenodronehc
 	name = "xenomorph drone tail, colorable"
 	desc = ""
 	icon_state = "xenos_drone_tail_hc_s"
 	do_colouration = 1
-
 /datum/sprite_accessory/tail/special/xenosentinelhc
 	name = "xenomorph sentinel tail, colorable"
 	desc = ""
 	icon_state = "xenos_sentinel_tail_hc_s"
 	do_colouration = 1
-
 /datum/sprite_accessory/tail/special/xenohunterhc
 	name = "xenomorph hunter tail, colorable"
 	desc = ""
 	icon_state = "xenos_hunter_tail_hc_s"
 	do_colouration = 1
-
 /datum/sprite_accessory/tail/special/xenoqueenhc
 	name = "xenomorph queen tail, colorable"
 	desc = ""
 	icon_state = "xenos_queen_tail_hc_s"
 	do_colouration = 1
-
 /datum/sprite_accessory/tail/special/monkeyhc
 	name = "monkey tail, colorable, colorable"
 	desc = ""
 	icon_state = "chimptail_hc_s"
 	do_colouration = 1
-
 /datum/sprite_accessory/tail/special/seromitailhc
 	name = "seromi tail, colorable"
 	desc = ""
 	icon_state = "seromitail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/seromitailfeatheredhc
 	name = "seromi tail w/ feathers, colorable"
 	desc = ""
 	icon_state = "seromitail_feathers_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/vulpan
 	name = "vulpkanin, colorable"
 	desc = ""
@@ -1465,6 +1436,14 @@
 	icon_state = "raccoon_tail"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/tail/striped_tail
+	name = "Striped tail, colorable"
+	desc = ""
+	icon_state = "stripedtail_colorable"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "stripedtail_colorable_w"
 
 /datum/sprite_accessory/tail/Easterntail
 	name = "Eastern Dragon (Animated)"
