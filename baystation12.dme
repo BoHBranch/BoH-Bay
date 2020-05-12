@@ -3322,7 +3322,7 @@
 #include "modular_mithra\code\modules\mithra\global_lists_vr.dm"
 #include "modular_mithra\code\modules\mithra\preferences_vr.dm"
 #include "modular_mithra\code\modules\mithra\spawncheck.dm"
-#include "modular_mithra\code\modules\mithra\sprite_accessories_vr .dm"
+#include "modular_mithra\code\modules\mithra\sprite_accessories_vr.dm"
 #include "modular_mithra\code\modules\mithra\traits.dm"
 #include "modular_mithra\code\modules\mithra\traits_negative.dm"
 #include "modular_mithra\code\modules\mithra\traits_neutral.dm"
