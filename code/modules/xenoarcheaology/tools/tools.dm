@@ -9,11 +9,11 @@
 	w_class = ITEM_SIZE_SMALL
 
 /obj/item/device/gps/attack_self(var/mob/user as mob)
-	to_chat(user, "<span class='notice'>\icon[src] \El [src] destella <i>[get_coordinates()]</i>.</span>")
+	to_chat(user, "<span class='notice'>\icon[src] \ El [src] destella <i>[get_coordinates()]</i>.</span>")
 
 /obj/item/device/gps/examine(mob/user)
 	. = ..()
-	to_chat(user, "<span class='notice'>\El [src] muestra en pantalla: <i>[get_coordinates()]</i>.</span>")
+	to_chat(user, "<span class='notice'>\ El [src] muestra en pantalla: <i>[get_coordinates()]</i>.</span>")
 
 /obj/item/device/gps/proc/get_coordinates()
 	var/turf/T = get_turf(src)
@@ -138,7 +138,7 @@
 	var/material = "unknown"
 
 /obj/item/device/depth_scanner/proc/scan_atom(var/mob/user, var/atom/A)
-	user.visible_message("<span class='notice'>\ [user] escanea \el [A], el aire al rededor de esto tararea suavemente.</span>")
+	user.visible_message("<span class='notice'>\ [user] escanea \ el [A], el aire al rededor de esto tararea suavemente.</span>")
 
 	if(istype(A, /turf/simulated/mineral))
 		var/turf/simulated/mineral/M = A

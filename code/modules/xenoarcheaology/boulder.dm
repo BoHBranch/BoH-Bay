@@ -37,7 +37,7 @@
 
 	if(istype(I, /obj/item/device/measuring_tape))
 		var/obj/item/device/measuring_tape/P = I
-		user.visible_message("<span class='notice'>\ [user] extiende \la [P] hacia \the [src].</span>", "<span class='notice'>Extiendes \la [P] hacia \the [src].</span>")
+		user.visible_message("<span class='notice'>\ [user] extiende \ la [P] hacia \the [src].</span>", "<span class='notice'>Extiendes \ la [P] hacia \the [src].</span>")
 		if(do_after(user, 15))
 			to_chat(user, "<span class='notice'>\The [src] ha sido escavada a una profundidad de [src.excavation_level]cm.</span>")
 		return

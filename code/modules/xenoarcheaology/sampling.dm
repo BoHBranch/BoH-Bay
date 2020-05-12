@@ -98,14 +98,14 @@
 /obj/item/device/core_sampler/attackby(var/obj/item/I, var/mob/living/user)
 	if(istype(I, /obj/item/weapon/evidencebag))
 		if(I.contents.len)
-			to_chat(user, "<span class='warning'>\La [I] esta llena.</span>")
+			to_chat(user, "<span class='warning'>\ La [I] esta llena.</span>")
 			return
 		if(num_stored_bags < 10)
 			qdel(I)
 			num_stored_bags += 1
-			to_chat(user, "<span class='notice'>Has insertado \una [I] en \el [src].</span>")
+			to_chat(user, "<span class='notice'>Has insertado \ una [I] en \ el [src].</span>")
 		else
-			to_chat(user, "<span class='warning'>\El [src] no puede contener mas bolsas.</span>")
+			to_chat(user, "<span class='warning'>\ El [src] no puede contener mas bolsas.</span>")
 	else
 		return ..()
 
