@@ -178,3 +178,4 @@
 		regis_card.assignment = assignment
 	H.set_id_info(regis_card)
 	H.equip_to_slot_or_store_or_drop(regis_card)
+
