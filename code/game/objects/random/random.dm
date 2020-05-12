@@ -1154,10 +1154,14 @@ obj/random/hostile/spawn_choices()
 		/mob/living/simple_animal/hostile/retaliate/parrot = 1,
 		/mob/living/simple_animal/hostile/rogue_drone = 8,
 		/mob/living/simple_animal/hostile/scarybat = 4,
-		/mob/living/simple_animal/hostile/voxslug = 3,
-		/mob/living/simple_animal/hostile/leech = 1
 	)
 
+/obj/random/hostile/maint_severe
+	name = "Random Deadly Maint Mob"
+	desc = "This is a random DEADLY hostile mob suitable to be found in maintenance."
+	icon = 'icons/mob/amorph.dmi'
+	icon_state = "standing"
+	spawn_nothing_percentage = 0
 
 /obj/random/hostile/maint_severe/spawn_choices()
 	return list(

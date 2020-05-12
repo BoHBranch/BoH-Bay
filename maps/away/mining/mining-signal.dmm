@@ -1449,7 +1449,6 @@
 /obj/effect/decal/cleanable/liquid_fuel,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/bot/medbot,
 /turf/simulated/floor/tiled/white/airless,
 /area/outpost/abandoned)
 "ev" = (
