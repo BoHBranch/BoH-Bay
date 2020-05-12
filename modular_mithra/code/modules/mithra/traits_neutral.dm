@@ -3,7 +3,7 @@
 */
 
 /datum/trait/glowing_eyes
-	name = "Glowing Eyes"
+	name = "Ojos brillantes"
 	desc = "Your eyes glow in the dark."	//MY VISION IS AUGMENTED
 	cost = 0
 
@@ -13,47 +13,47 @@
 			O.glowing_eyes = TRUE
 
 /datum/trait/cold_blooded
-	name = "Ectothermy"
-	desc = "You have diminished means of internal thermoregulation, forcing you to rely on external heat to stay alive."
+	name = "Ectotermia"
+	desc = "Tu cuerpo no regula bien el frio del calor, forzandote a que estes cerca del calor para sobrevivir."
 	cost = 0
 	var_changes = list("body_temperature" = 285, "cold_discomfort_level" = 292)
 	excludes = list(/datum/trait/hot_blooded)
 
 /datum/trait/hot_blooded
-	name = "Hot-blooded"
-	desc = "Your body is capable of more vigourous endothermoregulation, causing your average body temperature to be higher than normal."
+	name = "Sangre caliente"
+	desc = "Su cuerpo es capaz de una endoregulación térmica más vigorosa, lo que hace que su temperatura corporal promedio sea más alta de lo normal."
 	cost = 0
 	var_changes = list("body_temperature" = 313, "heat_discomfort_level" = 320)
 	excludes = list(/datum/trait/cold_blooded)
 
 /datum/trait/nitrogen_breath
-	name = "Nitrogenous Spirometry"
-	desc = "Your metabolic processes causes you to exhale nitrogen rather than carbon dioxide."
+	name = "Espirometria nitrogenada"
+	desc = "Tu proceso metabolico hace que en vez de exhalar dioxido de carbono exhales nitrogeno."
 	cost = 0
 	var_changes = list("exhale_type" = "nitrogen")
 
 /datum/trait/fast_meta
-	name = "Faster Metabolism"
-	desc = "Your metabolism rate is absurdly high, causing you to get hungry and process chemicals at roughly twice the normal rate."
+	name = "Metabolismo rapido"
+	desc = "Tu metabolismo es mas rapido de lo normal, haciendo que te de mas hambre y proceces los quimicos de tu cuerpo el doble de rapido."
 	cost = 0
 	var_changes = list("hunger_factor" = DEFAULT_HUNGER_FACTOR * 2.5, "metabolism_mod" = 2.5)
 	excludes = list(/datum/trait/slow_meta)
 
 /datum/trait/slow_meta
-	name = "Slower Metabolism"
-	desc = "Your metabolism rate is absurdly low, causing you to get hungry and process chemicals at half the normal rate."
+	name = "Metabolismo lento"
+	desc = "Tu metabolismo es mas lentro de lo normal, haciendo que te de hambre mas lento y proceces los quimicos en tu cuerpo menos rapido."
 	cost = 0
 	var_changes = list("hunger_factor" = DEFAULT_HUNGER_FACTOR * 0.5, "metabolism_mod" = 0.5)
 	excludes = list(/datum/trait/fast_meta)
 
 /datum/trait/carnivore
-	name = "Carnivore"
-	desc = "For one reason or another, you're only capable of eating meat. Vegetables won't kill you, but they won't help you either."
+	name = "Carnivoro"
+	desc = "Por alguna razon u otra solo eres capaz de comer carne. Los vegetables no te mataran, pero no te daran nutrientes como la carne."
 	cost = 0
 	var_changes = list(reagent_tag = IS_CARNIVORE)
 
 /datum/trait/herbivore
-	name = "Herbivore"
-	desc = "You're only able to eat plants. Eating meat and other animal protein will poison you."
+	name = "Herbivoro"
+	desc = "Solo eres capaz de comer plantas. Comer carne o productos de animales te envenenara."
 	cost = 0
 	var_changes = list(reagent_tag = IS_HERBIVORE)
