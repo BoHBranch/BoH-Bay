@@ -93,7 +93,7 @@
 
 /datum/trait/commune
 	name = "Telepathy"
-	desc = "Quite simply, you've the ability to project thoughts into the minds of others. A weak psychic manifestation too minor to require action from the local authorities."
+	desc = "Quite simply, you've the ability to project thoughts into the minds of others. A weak psychic manifestation too minor to require action from the local authorities, unlikely to ever develop into something greater."
 	cost = 2
 /datum/trait/commune/apply(var/datum/species/S,var/mob/living/carbon/human/H)
 	..(S,H)
