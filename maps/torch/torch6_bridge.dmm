@@ -653,10 +653,9 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/cl)
 "bm" = (
-/obj/random/closet,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor,
-/area/maintenance/bridge/aftstarboard)
+/area/maintenance/bridge/forestarboard)
 "bn" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /turf/simulated/floor/carpet,
@@ -7565,9 +7564,9 @@
 	name = "Emergency Exit";
 	req_access = list("ACCESS_BRIDGE")
 	},
-/obj/item/weapon/airlock_brace,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters_boh/cabin_main/officerbunk)
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/psiadvisor)
 "mE" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/heads/office/cos)
@@ -8656,6 +8655,7 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/xo)
 "oB" = (
+/obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/foreport)
 "oC" = (
@@ -13281,6 +13281,21 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarbridge)
+"wr" = (
+/obj/machinery/newscaster/security_unit{
+	pixel_x = -32
+	},
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/reagent_containers/food/drinks/ice,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/rocks,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/rocks,
+/obj/random/drinkbottle,
+/obj/machinery/vending/medals{
+	dir = 1;
+	pixel_y = -32
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/cobed)
 "ws" = (
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -13297,6 +13312,19 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarbridge)
+"wt" = (
+/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
+	pixel_x = -4;
+	pixel_y = 8
+	},
+/obj/item/device/taperecorder{
+	pixel_x = -4;
+	pixel_y = 2
+	},
+/obj/structure/table/woodentable/walnut,
+/obj/item/sticky_pad/random,
+/turf/simulated/floor/carpet,
+/area/crew_quarters/heads/office/xo)
 "wu" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/yellow{
@@ -13306,6 +13334,15 @@
 	},
 /turf/simulated/floor/airless,
 /area/solar/bridge)
+"wv" = (
+/obj/structure/catwalk,
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/aftstarboard)
+"ww" = (
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/aftstarboard)
 "wx" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -13320,6 +13357,10 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/sea)
+"wy" = (
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/aftport)
 "wz" = (
 /obj/structure/bed/chair/padded/blue{
 	icon_state = "chair_preview";
@@ -13399,6 +13440,14 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/sgr)
+"wF" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 4
+	},
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/foreport)
 "wH" = (
 /obj/item/weapon/bedsheet/browndouble{
 	dir = 4
@@ -14460,17 +14509,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
-"Av" = (
-/obj/machinery/newscaster/security_unit{
-	pixel_x = -32
-	},
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/reagent_containers/food/drinks/ice,
-/obj/item/weapon/reagent_containers/food/drinks/glass2/rocks,
-/obj/item/weapon/reagent_containers/food/drinks/glass2/rocks,
-/obj/random/drinkbottle,
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/cobed)
 "Aw" = (
 /obj/structure/sign/warning/high_voltage{
 	icon_state = "shock";
@@ -17019,13 +17057,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/xo)
-"NW" = (
-/obj/effect/floor_decal/industrial/warning{
-	icon_state = "warning";
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/bridge/foreport)
 "Ob" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Crew Area"
@@ -18679,30 +18710,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
-"VD" = (
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
-/obj/structure/railing/mapped{
-	dir = 8;
-	tag = "icon-railing0 (EAST)"
-	},
-/turf/simulated/open,
-/area/maintenance/bridge/forestarboard)
-"VF" = (
-/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
-	pixel_x = -4;
-	pixel_y = 8
-	},
-/obj/item/device/taperecorder{
-	pixel_x = -4;
-	pixel_y = 2
-	},
-/obj/structure/table/woodentable/walnut,
-/obj/item/sticky_pad/random,
-/turf/simulated/floor/carpet,
-/area/crew_quarters/heads/office/xo)
 "VL" = (
 /obj/effect/floor_decal/corner/red/half,
 /turf/simulated/floor/tiled/monotile,
@@ -19269,9 +19276,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/sgr)
-"YI" = (
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/bridge/forestarboard)
 "YJ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/effect/floor_decal/corner/red/half{
@@ -27135,7 +27139,7 @@ uy
 hk
 Cl
 fV
-Av
+wr
 uy
 uy
 tg
@@ -28915,6 +28919,206 @@ aa
 aa
 aa
 af
+mC
+hv
+mD
+mC
+aO
+sC
+Bs
+qa
+aO
+sl
+oA
+wt
+aO
+bR
+cl
+cu
+cB
+iJ
+jz
+dT
+dh
+IY
+nJ
+oy
+eB
+eW
+fw
+fP
+sy
+En
+tX
+En
+vj
+vO
+hr
+sB
+Oi
+lT
+Ht
+aK
+tg
+tg
+hT
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(47,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 af
 af
 ml
@@ -30130,7 +30334,7 @@ af
 af
 af
 aj
-VB
+wr
 mR
 aO
 FG
@@ -30773,7 +30977,7 @@ IK
 gP
 gP
 rT
-NW
+wF
 tg
 tg
 tg
@@ -31139,7 +31343,7 @@ ad
 af
 af
 af
-YI
+bm
 aE
 sJ
 ai
@@ -33971,7 +34175,7 @@ gz
 gz
 aS
 bx
-bm
+wt
 ag
 sT
 sT
@@ -34177,7 +34381,7 @@ Qi
 dr
 aT
 dr
-MD
+wv
 MD
 lU
 fI
@@ -34381,7 +34585,7 @@ cI
 dr
 MD
 MD
-zW
+ww
 fI
 gm
 gm
@@ -34399,8 +34603,8 @@ rp
 Vh
 EN
 kJ
-zI
-OK
+oS
+wy
 oh
 vF
 wj

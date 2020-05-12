@@ -18,6 +18,7 @@
 	dir = 1
 	},
 /obj/structure/catwalk,
+/obj/random/maintenance,
 /turf/simulated/floor/plating,
 /area/maintenance/substation/thirddeck)
 "ac" = (
@@ -596,6 +597,7 @@
 	pixel_y = 0
 	},
 /obj/machinery/light/small,
+/obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/starboard)
 "bw" = (
@@ -1278,6 +1280,20 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/forestarboard)
+"cL" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/command/gunnery/ob)
 "cM" = (
 /obj/effect/floor_decal/corner/green/mono,
 /obj/machinery/honey_extractor,
@@ -1290,6 +1306,24 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
+"cO" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24;
+	req_access = list("ACCESS_ENGINE_EQUIP")
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/air_sensor{
+	id_tag = "kosmag_exterior_sensor"
+	},
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/command/gunnery/ob)
 "cP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -1368,6 +1402,10 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/center)
+"cT" = (
+/obj/random/maintenance,
+/turf/simulated/floor/tiled,
+/area/maintenance/thirddeck/starboard)
 "cU" = (
 /obj/structure/table/standard,
 /obj/machinery/power/apc{
@@ -1509,8 +1547,16 @@
 /turf/simulated/floor/plating,
 /area/command/gunnery/ob/airlock)
 "dd" = (
-/turf/simulated/floor/tiled,
-/area/maintenance/thirddeck/starboard)
+/obj/machinery/power/apc{
+	dir = 2;
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/structure/cable/green,
+/obj/structure/catwalk,
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/maintenance/substation/thirddeck)
 "de" = (
 /obj/item/weapon/beach_ball,
 /turf/simulated/floor/plating,
@@ -1551,6 +1597,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
+"dk" = (
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/aftstarboard)
 "dl" = (
 /turf/simulated/wall/prepainted,
 /area/maintenance/substation/thirddeck)
@@ -1656,6 +1706,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/command/disperser)
+"dA" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/aftstarboard)
 "dB" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 8
@@ -2620,6 +2675,25 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
+"fu" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/structure/catwalk,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/aftport)
+"fv" = (
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/aftport)
 "fw" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -4151,6 +4225,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/forestarboard)
+"ig" = (
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/port)
+"ih" = (
+/obj/random/torchcloset,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/foreport)
 "ii" = (
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
@@ -4183,6 +4269,17 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
+"ik" = (
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/foreport)
+"il" = (
+/obj/random/torchcloset,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/foreport)
 "im" = (
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
@@ -4584,6 +4681,21 @@
 /obj/item/weapon/stool/wood,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
+"iW" = (
+/obj/random/torchcloset,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/forestarboard)
+"iX" = (
+/obj/structure/table/rack,
+/obj/random/maintenance/solgov,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/forestarboard)
 "iZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -6454,36 +6566,6 @@
 /obj/machinery/status_display,
 /turf/simulated/wall/prepainted,
 /area/crew_quarters_boh/cabin_main)
-"mC" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/plating,
-/area/command/gunnery/ob)
-"mD" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24;
-	req_access = list("ACCESS_ENGINE_EQUIP")
-	},
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/machinery/air_sensor{
-	id_tag = "kosmag_exterior_sensor"
-	},
-/turf/simulated/floor/plating,
-/area/command/gunnery/ob)
 "mE" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -10130,20 +10212,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
-"sT" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/thirddeck/aftport)
 "sU" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -13237,16 +13305,6 @@
 /obj/machinery/suit_cycler/engineering/alt,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/hardstorage)
-"yL" = (
-/obj/machinery/power/apc{
-	dir = 2;
-	name = "south bump";
-	pixel_y = -24
-	},
-/obj/structure/cable/green,
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/substation/thirddeck)
 "yM" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Engineering Hard Storage"
@@ -15409,10 +15467,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
-"Es" = (
-/obj/random/torchcloset,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/thirddeck/foreport)
 "Et" = (
 /obj/machinery/camera/network/third_deck{
 	c_tag = "Cryogenic Storage - Fore Port";
@@ -22061,11 +22115,6 @@
 "XR" = (
 /turf/simulated/floor/tiled,
 /area/crew_quarters/cryolocker)
-"XS" = (
-/obj/random/torchcloset,
-/obj/effect/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/foreport)
 "XU" = (
 /obj/structure/reagent_dispensers/cookingoil,
 /turf/simulated/floor/tiled/freezer,
@@ -31570,7 +31619,7 @@ BX
 BX
 BX
 BX
-BX
+ik
 BV
 BV
 BV
@@ -32376,7 +32425,7 @@ lY
 Yc
 LF
 JN
-BX
+ik
 zS
 GV
 RV
@@ -32778,12 +32827,12 @@ zB
 Ao
 lY
 JN
-BX
+ik
 LF
 Yd
 zS
 Mf
-Es
+il
 zS
 Yb
 Ur
@@ -33969,9 +34018,9 @@ bu
 bu
 bu
 ib
-bp
+iW
 jG
-xr
+iX
 lp
 cG
 mj
@@ -35008,7 +35057,7 @@ Ur
 Yb
 Yb
 zS
-XS
+ih
 BV
 BV
 BV
@@ -42481,7 +42530,7 @@ wf
 wf
 FH
 Zl
-Ts
+ig
 Hf
 Hf
 aI
@@ -43252,7 +43301,7 @@ ag
 ag
 aE
 mr
-mC
+cL
 mz
 qk
 rE
@@ -43291,7 +43340,7 @@ tB
 tB
 tB
 HD
-Ts
+ig
 Hf
 Qq
 Qq
@@ -43861,7 +43910,7 @@ mu
 pQ
 mA
 de
-dd
+cT
 cl
 da
 Wb
@@ -44058,7 +44107,7 @@ ag
 lG
 nb
 ag
-mD
+cO
 ng
 ou
 mA
@@ -44099,7 +44148,7 @@ tY
 ud
 tM
 Ts
-Ts
+ig
 qj
 HI
 HO
@@ -46083,7 +46132,7 @@ aT
 bL
 OA
 OA
-dn
+dk
 Zg
 SY
 gE
@@ -46691,7 +46740,7 @@ OA
 dm
 eb
 eJ
-yL
+dd
 gN
 hA
 hA
@@ -46926,7 +46975,7 @@ ta
 Gq
 GQ
 EE
-EE
+fv
 jZ
 jZ
 jZ
@@ -47125,7 +47174,7 @@ CU
 sY
 sY
 sY
-sT
+fu
 EE
 EE
 EE
@@ -48308,7 +48357,7 @@ dn
 ef
 SH
 dn
-dn
+dk
 Fa
 ES
 UG
@@ -48338,7 +48387,7 @@ EE
 EE
 hN
 zt
-EE
+fv
 jZ
 pI
 Ku
@@ -48518,7 +48567,7 @@ CT
 ve
 lU
 mK
-mK
+dA
 wl
 wl
 qr

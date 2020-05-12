@@ -835,6 +835,45 @@
 	temperature = 233
 	},
 /area/bluespaceriver/ground)
+"cE" = (
+/turf/simulated/wall/iron,
+/area/bluespaceriver/ground)
+"cF" = (
+/obj/structure/wall_frame/away,
+/turf/simulated/floor/exoplanet/snow{
+	temperature = 240
+	},
+/area/bluespaceriver/ground)
+"cG" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/exoplanet/snow{
+	temperature = 240
+	},
+/area/bluespaceriver/ground)
+"cH" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/exoplanet/snow{
+	temperature = 240
+	},
+/area/bluespaceriver/ground)
+"cI" = (
+/obj/effect/gibspawner/human,
+/turf/simulated/floor/exoplanet/snow{
+	temperature = 240
+	},
+/area/bluespaceriver/ground)
+"cJ" = (
+/obj/effect/landmark/corpse/pirate/ranged,
+/turf/simulated/floor/exoplanet/snow{
+	temperature = 240
+	},
+/area/bluespaceriver/ground)
+"cK" = (
+/obj/effect/landmark/corpse/doctor,
+/turf/simulated/floor/exoplanet/snow{
+	temperature = 240
+	},
+/area/bluespaceriver/ground)
 "hN" = (
 /obj/machinery/door/airlock/science,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3254,7 +3293,7 @@ cs
 cu
 ac
 ac
-ac
+cI
 ac
 ac
 ac
@@ -3562,7 +3601,7 @@ ac
 ac
 ac
 ac
-ac
+cE
 ac
 ac
 ac
@@ -3664,7 +3703,7 @@ ac
 ac
 ac
 ac
-ac
+cF
 ac
 ac
 ac
@@ -3766,7 +3805,7 @@ ac
 ac
 ac
 ac
-ac
+cF
 ac
 ac
 ac
@@ -3864,14 +3903,14 @@ ac
 ac
 ac
 ac
+cG
 ac
 ac
+cG
+cE
 ac
 ac
-ac
-ac
-ac
-ac
+cH
 ac
 ac
 ac
@@ -3962,15 +4001,15 @@ bV
 bC
 ac
 ac
+cI
 ac
 ac
 ac
-ac
-ac
-ac
-ac
-ac
-ac
+cE
+cF
+cF
+cE
+cE
 ac
 ac
 ac
@@ -4047,8 +4086,8 @@ ac
 af
 ac
 ac
-ac
-ac
+cE
+cG
 ac
 ac
 ac
@@ -4149,14 +4188,14 @@ ac
 ac
 ac
 ac
+cE
+cE
+cF
+cF
+cG
 ac
 ac
-ac
-ac
-ac
-ac
-ac
-ac
+cI
 ac
 an
 ay
@@ -4166,7 +4205,7 @@ ac
 ac
 ac
 ac
-ac
+cH
 ac
 ac
 ac
@@ -4250,12 +4289,12 @@ ac
 ac
 ac
 ac
+cH
 ac
 ac
 ac
-ac
-ac
-ac
+cF
+cF
 ac
 ac
 ac
@@ -4357,8 +4396,8 @@ ac
 ac
 ac
 ac
-ac
-ac
+cE
+cG
 ac
 ac
 ac
@@ -4459,16 +4498,16 @@ ac
 ac
 ac
 ac
+cE
+cF
+cF
 ac
 ac
 ac
 ac
 ac
 ac
-ac
-ac
-ac
-ac
+cH
 ac
 ac
 ac
@@ -4563,8 +4602,8 @@ ac
 ac
 ac
 ac
-ac
-ac
+cF
+cF
 ac
 ac
 ac
@@ -4666,8 +4705,8 @@ ac
 ac
 ac
 ac
-ac
-ac
+cE
+cG
 ac
 ac
 ac
@@ -4763,23 +4802,17 @@ ac
 ac
 ac
 ac
+cH
 ac
 ac
 ac
 ac
+cE
+cF
+cF
 ac
-ai
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+cG
+cE
 ac
 ac
 ac
@@ -4806,6 +4839,12 @@ ac
 ac
 ac
 ac
+ac
+ac
+ac
+ac
+ac
+cK
 ac
 ac
 ac
@@ -4872,10 +4911,10 @@ ac
 ac
 ac
 ac
-ac
-ac
-ac
-ac
+cF
+cF
+cE
+cE
 ac
 ac
 ac
@@ -5008,7 +5047,7 @@ ac
 ac
 ac
 ac
-ac
+cI
 ac
 ac
 ac
@@ -6398,8 +6437,8 @@ ac
 ac
 ac
 ac
-ac
-ac
+cI
+cJ
 ac
 ac
 ac
