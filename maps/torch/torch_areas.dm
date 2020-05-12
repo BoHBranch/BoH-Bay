@@ -1764,7 +1764,7 @@
 /area/radio
 	name = "\improper Studio Lobby"
 	icon_state = "chapel"
-	req_access = list(radio_host)
+	req_access = list(access_radio_host)
 
 /area/radio/interior
 	name = "\improper Studio"

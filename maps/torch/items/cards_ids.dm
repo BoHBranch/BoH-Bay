@@ -229,3 +229,6 @@
 /obj/item/weapon/card/id/torch/crew/psiadvisor
 	job_access_type = /datum/job/psiadvisor
 	detail_color = COLOR_COMMAND_BLUE
+
+/obj/item/weapon/card/id/torch/crew/radio
+	job_access_type = /datum/job/radio

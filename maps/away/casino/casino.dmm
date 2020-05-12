@@ -525,6 +525,7 @@
 /area/casino/casino_maintenance)
 "bn" = (
 /obj/effect/decal/cleanable/blood/splatter,
+/mob/living/simple_animal/hostile/syndicate/ranged,
 /turf/simulated/floor/plating,
 /area/casino/casino_maintenance)
 "bo" = (
@@ -1582,6 +1583,14 @@
 /obj/random/ammo,
 /turf/simulated/floor/tiled,
 /area/casino/casino_security)
+"dV" = (
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/syndicate/ranged,
+/turf/simulated/floor/tiled,
+/area/casino/casino_hangar)
 "dW" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -1860,6 +1869,10 @@
 /obj/random/ammo,
 /turf/simulated/floor/plating,
 /area/casino/casino_security)
+"eE" = (
+/mob/living/simple_animal/hostile/syndicate/ranged,
+/turf/simulated/floor/tiled,
+/area/casino/casino_crew_cantina)
 "eF" = (
 /obj/machinery/light{
 	dir = 8;
@@ -2144,6 +2157,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/casino/casino_maintenance)
+"fl" = (
+/mob/living/simple_animal/hostile/syndicate/ranged,
+/turf/simulated/floor/tiled,
+/area/casino/casino_kitchen)
+"fm" = (
+/mob/living/simple_animal/hostile/syndicate/ranged,
+/turf/simulated/floor/plating,
+/area/casino/casino_crew_atmos)
 "fo" = (
 /obj/machinery/door/airlock{
 	name = "Main desk"
@@ -10189,7 +10210,7 @@ aX
 jN
 jN
 jN
-jN
+fm
 le
 lB
 kC
@@ -10784,7 +10805,7 @@ bz
 bZ
 fS
 gk
-gj
+eE
 rc
 fQ
 hp
@@ -11197,7 +11218,7 @@ vc
 fQ
 ht
 hw
-hw
+fl
 hV
 hw
 hw
@@ -12008,7 +12029,7 @@ Eb
 Gb
 bq
 gr
-gG
+bY
 gG
 gt
 ge
@@ -12511,7 +12532,7 @@ dp
 dG
 Ub
 dp
-eG
+dV
 eX
 bq
 bq

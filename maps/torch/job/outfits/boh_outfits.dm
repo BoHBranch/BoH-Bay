@@ -178,3 +178,10 @@
 		regis_card.assignment = assignment
 	H.set_id_info(regis_card)
 	H.equip_to_slot_or_store_or_drop(regis_card)
+
+//radio host
+/decl/hierarchy/outfit/job/torch/radio
+	name = OUTFIT_JOB_NAME("Radio Host")
+	uniform = /obj/item/clothing/under/sl_suit
+	shoes = /obj/item/clothing/shoes/laceup
+	id_type = /obj/item/weapon/card/id/torch/crew/radio
