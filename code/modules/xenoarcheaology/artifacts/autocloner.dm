@@ -1,6 +1,6 @@
 /obj/machinery/auto_cloner
-	name = "mysterious pod"
-	desc = "It's full of a viscous liquid, but appears dark and silent."
+	name = "capsula misteriosa"
+	desc = "Esta llena de un liquido viscoso, pero parece oscura y silenciosa."
 	icon = 'icons/obj/cryogenics.dmi'
 	icon_state = "cellold0"
 	var/spawn_type
@@ -44,7 +44,7 @@
 		if(!previous_power_state)
 			previous_power_state = 1
 			icon_state = "cellold1"
-			src.visible_message("<span class='notice'>\icon[src] [src] suddenly comes to life!</span>")
+			src.visible_message("<span class='notice'>\icon[src] [src] de repente viene a la vida!</span>")
 
 		//slowly grow a mob
 		if(prob(5))
@@ -56,7 +56,7 @@
 			update_use_power(POWER_USE_IDLE)
 			src.visible_message("<span class='notice'>\icon[src] [src] pings!</span>")
 			icon_state = "cellold1"
-			desc = "It's full of a bubbling viscous liquid, and is lit by a mysterious glow."
+			desc = "Esta lleno de un liquido viscoso burbujeante y esta iluminado por un resplandor misterioso."
 			if(spawn_type)
 				new spawn_type(src.loc)
 
@@ -64,18 +64,18 @@
 		if(time_spent_spawning / time_per_spawn > 0.75)
 			update_use_power(POWER_USE_ACTIVE)
 			icon_state = "cellold2"
-			desc = "It's full of a bubbling viscous liquid, and is lit by a mysterious glow. A dark shape appears to be forming inside..."
+			desc = "Esta lleno de un liquido viscoso burbujeante y esta iluminado por un resplandor misterioso. Una forma parece estar formandose dentro..."
 		else
 			update_use_power(POWER_USE_IDLE)
 			icon_state = "cellold1"
-			desc = "It's full of a bubbling viscous liquid, and is lit by a mysterious glow."
+			desc = "Esta lleno de un liquido viscoso burbujeante y esta iluminado por un resplandor misterioso."
 
 		time_spent_spawning = time_spent_spawning + world.time - last_process
 	else
 		if(previous_power_state)
 			previous_power_state = 0
 			icon_state = "cellold0"
-			src.visible_message("<span class='notice'>\icon[src] [src] suddenly shuts down.</span>")
+			src.visible_message("<span class='notice'>\icon[src] [src] De repente se apaga</span>")
 
 		//cloned mob slowly breaks down
 		time_spent_spawning = max(time_spent_spawning + last_process - world.time, 0)

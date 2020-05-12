@@ -1,6 +1,6 @@
 /obj/structure/anomaly_container
-	name = "anomaly container"
-	desc = "Used to safely contain and move anomalies."
+	name = "Contenedor de anomalias"
+	desc = "Utilizado para contener y mover anomalias de forma segura."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "anomaly_container"
 	density = 1
@@ -27,7 +27,7 @@
 	contained = artifact
 	artifact.forceMove(src)
 	underlays += image(artifact)
-	desc = "Used to safely contain and move anomalies. \The [contained] is kept inside."
+	desc = "Utilizado para contener y mover anomalias de forma segura. \The [contained] is kept inside."
 
 /obj/structure/anomaly_container/proc/release()
 	if(!contained)

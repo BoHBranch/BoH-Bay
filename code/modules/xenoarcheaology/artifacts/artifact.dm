@@ -1,6 +1,6 @@
 /obj/machinery/artifact
-	name = "alien artifact"
-	desc = "A large alien device."
+	name = "artefacto alienigena"
+	desc = "Un gran dispositivo alienigena."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "ano00"
 	var/icon_num = 0
@@ -25,20 +25,20 @@
 
 	icon_state = "ano[icon_num]0"
 	if(icon_num == 7 || icon_num == 8)
-		name = "large crystal"
-		desc = pick("It shines faintly as it catches the light.",
-		"It appears to have a faint inner glow.",
-		"It seems to draw you inward as you look it at.",
-		"Something twinkles faintly as you look at it.",
-		"It's mesmerizing to behold.")
+		name = "crital grande"
+		desc = pick("Brilla tenuemente mientras atrapa la luz.",
+		"Parece tener un brillo tenue interior.",
+		"Parece que te atrae hacia adentro mientras lo miras.",
+		"Algo parpadea debilmente cuando lo miras.",
+		"Es fascinante contemplar.")
 	else if(icon_num == 9)
-		name = "alien computer"
-		desc = "It is covered in strange markings."
+		name = "computadora alienigena"
+		desc = "Esta cubierto de marcas extranas."
 	else if(icon_num == 10)
-		desc = "A large alien device, there appear to be some kind of vents in the side."
+		desc = "Un gran dispositivo alienigena, parece haber algun tipo de respiraderos en el costado."
 	else if(icon_num == 11)
-		name = "sealed alien pod"
-		desc = "A strange alien device."
+		name = "capsula alienigena sellada"
+		desc = "Un extraño dispositivo alienigena."
 
 /obj/machinery/artifact/Destroy()
 	QDEL_NULL(my_effect)
@@ -96,7 +96,7 @@
 	if(check_triggers(/datum/artifact_trigger/proc/on_explosion, severity))
 		return
 	switch(severity)
-		if(1) 
+		if(1)
 			qdel(src)
 		if(2)
 			if (prob(50))
