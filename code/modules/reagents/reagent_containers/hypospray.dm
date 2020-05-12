@@ -119,6 +119,7 @@
 	desc = "A rapid and safe way to administer small amounts of drugs by untrained or trained personnel."
 	icon_state = "injector"
 	item_state = "autoinjector"
+	matter = list(MATERIAL_PLASTIC = 100, MATERIAL_GLASS = 50, MATERIAL_STEEL = 30)
 	amount_per_transfer_from_this = 5
 	volume = 5
 	origin_tech = list(TECH_MATERIAL = 2, TECH_BIO = 2)
