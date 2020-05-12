@@ -13,7 +13,7 @@
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp, /datum/unarmed_attack/claws)
 
-	description = "Vasilissans are a race of enlightened, spider-like people. They have the distinction of being one of the only races that was spared from a war upon being discovered. This was due to already being in the atomic era when they were found by the now-defunct NanoTrasen Surveyor Corps. They've integrated rather well into interstellar society, with only a few hiccups in political relations, mostly involving the fact they are spiders."
+	description = "Los Vasilissans son una especie de personas ilustradas, se ven como gente araña. Son la unica especie que no ha sido victima de una guerra al ser descubiertas. Esto fue debido a que ya estaban en la era atomica cuando fueron encontrados por la ahora difunta NanoTrasen Surveyor Corps. Se han integrado muy bien a la sociedad interestelar, con algunos intercambios en relaciones politicas, principalmente por el hecho de que son arañas."
 
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR

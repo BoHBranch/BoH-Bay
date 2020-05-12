@@ -2,20 +2,20 @@ GLOBAL_LIST_INIT(symbiote_starting_points, new)
 
 /decl/cultural_info/culture/symbiotic
 	name = CULTURE_SYMBIOTIC
-	description = "Your culture has always welcomed a form of brain-slug called cortical borers into their bodies, \
-	and your upbringing taught that this was a normal and beneficial state of affairs. Taking this background will \
-	allow symbiote players to join as your mind-partner. Symbiotes can secrete beneficial chemicals, translate languages \
-	and are rendered docile by sugar. Unlike feral cortical borers, they cannot take control of your body or cause brain damage."
+	description = "Tu cultura siempre ha bienvenido una forma de vida parasital llamada cortical borers en sus cuerpos, \
+	y tu educacion te ha enseñado que este seria un normal y beneficioso estado de negociacion. Tomando esto \
+	se permitira a jugadores symbiote unirse como tu compadre-mental. Los Symbiotes pueden secretar quimicos beneficiosos, traducir idiomas \
+	y se vuelven dociles con algo de azucar. Al contrario que los borers salvajes, ellos no pueden tomar control de tu cuerpo o causar daño cerebral."
 	economic_power = 0.8
 	var/matches_to_role = /datum/job/symbiote
 
 /datum/job/symbiote
 	title = "Symbiote"
-	department = "Civilian"
+	department = "Civil"
 	department_flag = CIV
 	total_positions = 0
 	spawn_positions = 0
-	supervisors = "your host"
+	supervisors = "tu huesped"
 	selection_color = "#ad6bad"
 	access = list()
 	minimal_access = list()
@@ -38,19 +38,19 @@ GLOBAL_LIST_INIT(symbiote_starting_points, new)
 	symbiote.SetName(symbiote.truename)
 	symbiote.real_name = symbiote.truename
 
-	to_chat(person, "<b>You are a [alt_title || title].</b>")
-	to_chat(person, "<b>As the [alt_title || title] you answer directly to [supervisors]. Special circumstances may change this.</b>")
+	to_chat(person, "<b>Tu eres un [alt_title || title].</b>")
+	to_chat(person, "<b>Como [alt_title || title] respondes directamente a [supervisors]. Circunstancias especiales quiza cambien esto.</b>")
 
 	if(symbiote.host)
 		if(symbiote.host.mind)
 			var/a_the = (symbiote.host.mind.assigned_job && symbiote.host.mind.assigned_job.total_positions == 1) ? "the" : "a"
 			var/use_title = symbiote.host.mind.role_alt_title || symbiote.host.mind.assigned_role
-			to_chat(symbiote, SPAN_NOTICE("Your current host is <b>\the [symbiote.host.real_name]</b>, [a_the] <b>[use_title]</b>. Help them stay safe and happy, and assist them in achieving their goals. <b>Remember, your host's desires take precedence over everyone else's.</b>"))
-			to_chat(symbiote.host, SPAN_NOTICE("Your current symbiote, <b>[symbiote.name]</b>, has awakened. They will help you in whatever way they can. Treat them kindly."))
+			to_chat(symbiote, SPAN_NOTICE("Tu huesped actual es <b>\the [symbiote.host.real_name]</b>, [a_the] <b>[use_title]</b>. Ayudale a estar seguro y feliz, y a asistirle en lograr sus metas. <b>Recuerda, los deseos de tu huesped son mas importantes que los de todos los demas.</b>"))
+			to_chat(symbiote.host, SPAN_NOTICE("Tu actual symbiote, <b>[symbiote.name]</b>, ha despertado. Te ayudara en la forma en la que sea posible. Tratalo amablemente."))
 		else
-			to_chat(symbiote, SPAN_NOTICE("Your host is <b>\the [symbiote.host.real_name]</b>. They are mindless and you should probably find a new one soon."))
+			to_chat(symbiote, SPAN_NOTICE("Tu huesped actual es <b>\the [symbiote.host.real_name]</b>. Se encuentra descerebrado y probablemente deberias encontrar uno nuevo pronto."))
 	else
-		to_chat(symbiote, SPAN_DANGER("You do not currently have a host."))
+		to_chat(symbiote, SPAN_DANGER("Actualmente no posees un huesped."))
 
 /datum/job/symbiote/is_restricted(var/datum/preferences/prefs, var/feedback)
 	. = ..()
@@ -68,7 +68,7 @@ GLOBAL_LIST_INIT(symbiote_starting_points, new)
 		// them into xenobio or latejoin instead if there are zero viable hosts left.
 		var/list/available_hosts = find_valid_hosts()
 		while(length(available_hosts) && (!host || !(host in available_hosts)))
-			host = input(H, "Who do you wish to be your mind-partner?", "Symbiote Spawn") as anything in available_hosts
+			host = input(H, "Quien deseas que sea tu compadre-mental?", "Symbiote Spawn") as anything in available_hosts
 			var/list/current_hosts = find_valid_hosts() // Is the host still available?
 			if(QDELETED(host) || QDELETED(H) || !H.key || !(host in current_hosts))
 				host = null
@@ -86,7 +86,7 @@ GLOBAL_LIST_INIT(symbiote_starting_points, new)
 		symbiote.host_brain.SetName(host.real_name)
 		symbiote.host_brain.real_name = host.real_name
 	else
-		to_chat(symbiote, SPAN_DANGER("There are no longer any hosts available, so you are being placed in a safe area."))
+		to_chat(symbiote, SPAN_DANGER("No hay mas huespeds disponibles, asi que seras puesto en un area segura."))
 		if(length(GLOB.symbiote_starting_points))
 			symbiote.forceMove(pick(GLOB.symbiote_starting_points))
 		else
