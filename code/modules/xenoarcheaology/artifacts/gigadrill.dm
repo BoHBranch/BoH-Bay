@@ -13,11 +13,11 @@
 	if(active)
 		active = 0
 		icon_state = "gigadrill"
-		to_chat(user, "<span class='notice'>Presionas un boton y \el [src] gira lentamente.</span>")
+		to_chat(user, "<span class='notice'>Presionas un boton y \ el [src] gira lentamente.</span>")
 	else
 		active = 1
 		icon_state = "gigadrill_mov"
-		to_chat(user, "<span class='notice'>Presionas un boton y \el [src] se estremese a la vida.</span>")
+		to_chat(user, "<span class='notice'>Presionas un boton y \ el [src] se estremese a la vida.</span>")
 	return TRUE
 
 /obj/machinery/giga_drill/Bump(atom/A)
@@ -25,7 +25,7 @@
 		if(istype(A,/turf/simulated/mineral))
 			var/turf/simulated/mineral/M = A
 			drilling_turf = get_turf(src)
-			src.visible_message("<span class='notice'>\El [src] comienza a perforar \el [M].</span>")
+			src.visible_message("<span class='notice'>\ El [src] comienza a perforar \ el [M].</span>")
 			anchored = 1
 			spawn(drill_time)
 				if(get_turf(src) == drilling_turf && active)
