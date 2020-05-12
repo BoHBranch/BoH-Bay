@@ -57,7 +57,7 @@
 
 /obj/structure/closet/secure_closet/bodyguard
 	name = "\improper corporate protection locker"
-	req_access = list(access_sec_guard)
+	req_access = list(access_liaison)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/corporate/bodyguard
 
 /obj/structure/closet/secure_closet/bodyguard/WillContain()
