@@ -81,6 +81,9 @@
 	if(stat != CONSCIOUS || disrupts_psionics()) //Do not use it while unconscious or disrupted.
 		to_chat(src, SPAN_WARNING("You can't focus enough to do this!") )
 		return
+	if(isghost(M) || M.stat == DEAD)
+		to_chat(src, "<span class='warning'>You cannot can speak to the dead.</span>")
+		return
 	var/msg = sanitize(input("Message:", "Psychic Whisper") as text|null)
 	if(msg)
 		log_say("PsychicWhisper: [key_name(src)]->[M.key] : [msg]")
