@@ -45,6 +45,7 @@
 		/obj/item/clothing/head/helmet/space/void/merc,
 		/obj/item/clothing/mask/gas/syndicate,
 		/obj/item/weapon/tank/emergency/oxygen/double,
+		/obj/item/clothing/shoes/magboots
 		)
 
 //Soft Suit uplink kit
