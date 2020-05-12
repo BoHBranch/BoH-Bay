@@ -13,7 +13,7 @@
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick,/datum/unarmed_attack/tail, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp)
 
-	description = "A genemod, divergent from Tritonians by the addition of additional muscle mass and sharper teeth. Though both races are Human-based genemods that arose from the conditions of their aquatic colony-planet, Koster-4, Tritonians have generally always been a more popular choice of genemod, due to an Akula's large dietary needs."
+	description = "Una especie de modificaciones geneticas, divergente de los Tritonians, mediante la adicion de masa muscular adicional y dientes mas afilados. Aunque las dos razas son basadas en humanos con modificaciones geneticas que surgio de las condiciones de su colonia en el planeta acuatico, Koster-4, Tritonians generalmente siempre ha sido una seleccion mas popular en modificaciones geneticas, debido a las grandes necesidades dieteticas de un Akula."
 
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR

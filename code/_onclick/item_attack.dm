@@ -35,7 +35,7 @@ avoid code duplication. This includes items that may sometimes act as a standard
 
 /atom/movable/attackby(obj/item/W, mob/user)
 	if(!(W.item_flags & ITEM_FLAG_NO_BLUDGEON))
-		visible_message("<span class='danger'>[src] has been hit by [user] with [W].</span>")
+		visible_message("<span class='danger'>[src] fue golpeado por [user] con [W].</span>")
 
 /mob/living/attackby(obj/item/I, mob/user)
 	if(!ismob(user))
@@ -48,7 +48,7 @@ avoid code duplication. This includes items that may sometimes act as a standard
 	if(user == src && zone_sel.selecting == BP_MOUTH && can_devour(I, silent = TRUE))
 		var/obj/item/blocked = src.check_mouth_coverage()
 		if(blocked)
-			to_chat(user, SPAN_WARNING("\The [blocked] is in the way!"))
+			to_chat(user, SPAN_WARNING("\The [blocked] esta en el camino!"))
 			return TRUE
 		if(devour(I))
 			return TRUE
@@ -69,7 +69,7 @@ avoid code duplication. This includes items that may sometimes act as a standard
 	/////////////////////////
 
 	if(!no_attack_log)
-		admin_attack_log(user, M, "Attacked using \a [src] (DAMTYE: [uppertext(damtype)])", "Was attacked with \a [src] (DAMTYE: [uppertext(damtype)])", "used \a [src] (DAMTYE: [uppertext(damtype)]) to attack")
+		admin_attack_log(user, M, "Ataco usando \a [src] (DAMTYE: [uppertext(damtype)])", "Fue atacado con \a [src] (DAMTYE: [uppertext(damtype)])", "used \a [src] (DAMTYE: [uppertext(damtype)]) to attack")
 	/////////////////////////
 	user.setClickCooldown(attack_cooldown + w_class)
 	user.do_attack_animation(M)
