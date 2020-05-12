@@ -41,10 +41,8 @@ proc/restore_spells(var/mob/H)
 	H.ability_master.update_abilities(0,H)
 
 /mob/proc/add_spell(var/spell/spell_to_add, var/spell_base = "wiz_spell_ready")
-	/* Here lies shitcode. Let this serve as an example on what you shouldn't fucking do. This is literally called in mob.Initialize so there is no fucking point in this other than covering up bugs.
 	if(!ability_master)
 		ability_master = new()
-	*/
 	spell_to_add.holder = src
 	if(mind)
 		if(!mind.learned_spells)
