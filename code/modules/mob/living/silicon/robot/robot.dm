@@ -419,19 +419,15 @@
 		if(V == "power cell") continue
 		var/datum/robot_component/C = components[V]
 		if(C.installed)
-			installed_components += V
+			installed_components[V] = C.wrapped
 
-	var/toggle = input(src, "Which component do you want to toggle?", "Toggle Component") as null|anything in installed_components
-	if(!toggle)
+	var/datum/robot_component/toggle = show_radial_menu(usr, src, installed_components)
+	if(!istype(toggle))
 		return
+	
+	to_chat(src, SPAN_WARNING("You [toggle.toggled ? "dis" : "en"]able [toggle]."))
+	toggle.toggled = !toggle.toggled
 
-	var/datum/robot_component/C = components[toggle]
-	if(C.toggled)
-		C.toggled = 0
-		to_chat(src, "<span class='warning'>You disable [C.name].</span>")
-	else
-		C.toggled = 1
-		to_chat(src, "<span class='warning'>You enable [C.name].</span>")
 /mob/living/silicon/robot/proc/update_robot_light()
 	if(lights_on)
 		if(intenselight)
@@ -508,7 +504,7 @@
 					C.brute_damage = WC.brute
 					C.electronics_damage = WC.burn
 
-				to_chat(usr, "<span class='notice'>You install the [W.name].</span>")
+				to_chat(usr, "<span class='notice'>You install [W].</span>")
 				return
 
 	if(isWelder(W) && user.a_intent != I_HURT)
@@ -569,23 +565,22 @@
 					if(V == "power cell") continue
 					var/datum/robot_component/C = components[V]
 					if(C.installed == 1 || C.installed == -1)
-						removable_components += V
+						removable_components[C] = C.wrapped
 
-				var/remove = input(user, "Which component do you want to pry out?", "Remove Component") as null|anything in removable_components
+				var/datum/robot_component/remove = show_radial_menu(user, src, removable_components)
 				if(!remove)
 					return
-				var/datum/robot_component/C = components[remove]
-				var/obj/item/robot_parts/robot_component/I = C.wrapped
+				var/obj/item/robot_parts/robot_component/I = remove.wrapped
 				to_chat(user, "You remove \the [I].")
 				if(istype(I))
-					I.brute = C.brute_damage
-					I.burn = C.electronics_damage
+					I.brute = remove.brute_damage
+					I.burn = remove.electronics_damage
 
 				I.forceMove(loc)
 
-				if(C.installed == 1)
-					C.uninstall()
-				C.installed = 0
+				if(remove.installed)
+					remove.uninstall()
+				remove.installed = 0
 
 		else
 			if(locked)

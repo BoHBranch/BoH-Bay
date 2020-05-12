@@ -423,6 +423,7 @@ var/list/gear_datums = list()
 		if(A.augment_flags == AUGMENTATION_MECHANIC)
 			if(!BP_IS_ROBOTIC(organ_to_implant_into))
 				to_chat(H, SPAN_WARNING("Your [organ_to_implant_into.name] is not robotic, and therefore the [A] can not be installed!"))
+				qdel(A)
 				return
 		A.replaced(H, organ_to_implant_into)
 		to_chat(H, SPAN_NOTICE("Implanting you with [A] in your [organ_to_implant_into.name]!"))

@@ -10,7 +10,7 @@
 	heating_power = 6000
 	//Based on a double deck electric convection oven
 
-	resistance = 30000 // Approx. 12 minutes.
+	resistance = 10000 // Approx. 4 minutes.
 	idle_power_usage = 2 KILOWATTS
 	//uses ~30% power to stay warm
 	optimal_power = 1.2
