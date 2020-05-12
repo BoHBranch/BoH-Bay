@@ -47,27 +47,27 @@
 
 /datum/category_item/player_setup_item/physical/flavor/content(var/mob/user)
 	. += "<b>Flavor:</b><br>"
-	. += "<a href='?src=\ref[src];flavor_text=open'>Set Flavor Text</a><br/>"
-	. += "<a href='?src=\ref[src];flavour_text_robot=open'>Set Robot Flavor Text</a><br/>"
+	. += "<a href='?src=\ref[src];flavor_text=open'>Escribir caracteristicas corporales</a><br/>"
+	. += "<a href='?src=\ref[src];flavour_text_robot=open'>Escribir caracteristicas corporales de robot</a><br/>"
 
 /datum/category_item/player_setup_item/physical/flavor/OnTopic(var/href,var/list/href_list, var/mob/user)
 	if(href_list["flavor_text"])
 		switch(href_list["flavor_text"])
 			if("open")
 			if("general")
-				var/msg = sanitize(input(usr,"Give a general description of your character. This will be shown regardless of clothing. Do not include OOC or NSFW information here.","Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
+				var/msg = sanitize(input(usr,"Da una descripcion general sobre tu personaje. Esto se mostrara independientemente de la ropa que tu personaje lleve puesta. No incluyas informacion fuera de personaje o explicita aqui.","Caracteristicas corporales",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
 				if(CanUseTopic(user))
 					pref.flavor_texts[href_list["flavor_text"]] = msg
 			if("NSFW/OOC")
-				var/msg = sanitize(input(usr,"Update your OOC description. Please don't put NSFW information here.", "Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
+				var/msg = sanitize(input(usr,"Actualiza tu informacion de fuera de personaje. Por favor, no escribas nada explicito aqui.", "Caracteristicas corporales",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
 				if(CanUseTopic(user))
 					pref.flavor_texts[href_list["flavor_text"]] = msg
 			if("naked")
-				var/msg = sanitize(input(usr,"Update your naked description. Feel free to put OOC and NSFW information here.", "Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
+				var/msg = sanitize(input(usr,"Actualiza tu informacion desnuda. Sientete libre de colocar informacion fuera de personaje y explicita.", "Caracteristicas corporales",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
 				if(CanUseTopic(user))
 					pref.flavor_texts[href_list["flavor_text"]] = msg
 			else
-				var/msg = sanitize(input(usr,"Set the flavor text for your [href_list["flavor_text"]].","Flavor Text",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
+				var/msg = sanitize(input(usr,"Escribe las caracteristicas corporales para [href_list["flavor_text"]].","Caracteristicas corporales",html_decode(pref.flavor_texts[href_list["flavor_text"]])) as message, extra = 0)
 				if(CanUseTopic(user))
 					pref.flavor_texts[href_list["flavor_text"]] = msg
 		SetFlavorText(user)
@@ -77,11 +77,11 @@
 		switch(href_list["flavour_text_robot"])
 			if("open")
 			if("Default")
-				var/msg = sanitize(input(usr,"Set the default flavour text for your robot. It will be used for any module without individual setting.","Flavour Text",html_decode(pref.flavour_texts_robot["Default"])) as message, extra = 0)
+				var/msg = sanitize(input(usr,"Escribe las caracteristicas corporales predeterminadas de robot. Va a ser utilizada independientemente del modulo que elijas.","Caracteristicas corporales",html_decode(pref.flavour_texts_robot["Default"])) as message, extra = 0)
 				if(CanUseTopic(user))
 					pref.flavour_texts_robot[href_list["flavour_text_robot"]] = msg
 			else
-				var/msg = sanitize(input(usr,"Set the flavour text for your robot with [href_list["flavour_text_robot"]] module. If you leave this empty, default flavour text will be used for this module.","Flavour Text",html_decode(pref.flavour_texts_robot[href_list["flavour_text_robot"]])) as message, extra = 0)
+				var/msg = sanitize(input(usr,"Escribe las caracteristicas corporales para tu robot con el modulo [href_list["flavour_text_robot"]]. Si dejas esto en blanco, las caracteristicas corporales predeterminadas se usaran para este modulo.","Caracteristicas corporales",html_decode(pref.flavour_texts_robot[href_list["flavour_text_robot"]])) as message, extra = 0)
 				if(CanUseTopic(user))
 					pref.flavour_texts_robot[href_list["flavour_text_robot"]] = msg
 		SetFlavourTextRobot(user)
@@ -97,34 +97,34 @@
 	HTML += "<a href='?src=\ref[src];flavor_text=general'>General:</a> "
 	HTML += TextPreview(pref.flavor_texts["general"])
 	HTML += "<br>"
-	HTML += "<a href='?src=\ref[src];flavor_text=head'>Head:</a> "
+	HTML += "<a href='?src=\ref[src];flavor_text=head'>Cabeza:</a> "
 	HTML += TextPreview(pref.flavor_texts["head"])
 	HTML += "<br>"
-	HTML += "<a href='?src=\ref[src];flavor_text=face'>Face:</a> "
+	HTML += "<a href='?src=\ref[src];flavor_text=face'>Cara:</a> "
 	HTML += TextPreview(pref.flavor_texts["face"])
 	HTML += "<br>"
-	HTML += "<a href='?src=\ref[src];flavor_text=eyes'>Eyes:</a> "
+	HTML += "<a href='?src=\ref[src];flavor_text=eyes'>Ojos:</a> "
 	HTML += TextPreview(pref.flavor_texts["eyes"])
 	HTML += "<br>"
-	HTML += "<a href='?src=\ref[src];flavor_text=torso'>Body:</a> "
+	HTML += "<a href='?src=\ref[src];flavor_text=torso'>Cuerpo:</a> "
 	HTML += TextPreview(pref.flavor_texts["torso"])
 	HTML += "<br>"
-	HTML += "<a href='?src=\ref[src];flavor_text=arms'>Arms:</a> "
+	HTML += "<a href='?src=\ref[src];flavor_text=arms'>Brazos:</a> "
 	HTML += TextPreview(pref.flavor_texts["arms"])
 	HTML += "<br>"
-	HTML += "<a href='?src=\ref[src];flavor_text=hands'>Hands:</a> "
+	HTML += "<a href='?src=\ref[src];flavor_text=hands'>Manos:</a> "
 	HTML += TextPreview(pref.flavor_texts["hands"])
 	HTML += "<br>"
-	HTML += "<a href='?src=\ref[src];flavor_text=legs'>Legs:</a> "
+	HTML += "<a href='?src=\ref[src];flavor_text=legs'>Piernas:</a> "
 	HTML += TextPreview(pref.flavor_texts["legs"])
 	HTML += "<br>"
-	HTML += "<a href='?src=\ref[src];flavor_text=feet'>Feet:</a> "
+	HTML += "<a href='?src=\ref[src];flavor_text=feet'>Pies:</a> "
 	HTML += TextPreview(pref.flavor_texts["feet"])
 	HTML += "<br>"
-	HTML += "<a href='?src=\ref[src];flavor_text=naked'>Naked (NSFW):</a> "
+	HTML += "<a href='?src=\ref[src];flavor_text=naked'>Desnudo (Explicito):</a> "
 	HTML += TextPreview(pref.flavor_texts["naked"])
 	HTML += "<br>"
-	HTML += "<a href='?src=\ref[src];flavor_text=NSFW/OOC'>OOC:</a> "
+	HTML += "<a href='?src=\ref[src];flavor_text=NSFW/OOC'>Fuera de personaje:</a> "
 	HTML += TextPreview(pref.flavor_texts["NSFW/OOC"])
 	HTML += "<br>"
 	HTML += "<hr />"

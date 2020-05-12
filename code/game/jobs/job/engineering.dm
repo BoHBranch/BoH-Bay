@@ -1,12 +1,12 @@
 /datum/job/chief_engineer
-	title = "Chief Engineer"
+	title = "Jefe de Ingenieros"
 	head_position = 1
-	department = "Engineering"
+	department = "Ingenieria"
 	department_flag = ENG|COM
 
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "el capitan"
 	selection_color = "#7f6e2c"
 	req_admin_notify = 1
 	economic_power = 10
@@ -26,18 +26,18 @@
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
 
 /datum/job/engineer
-	title = "Engineer"
-	department = "Engineering"
+	title = "Ingeniero"
+	department = "Ingenieria"
 	department_flag = ENG
 
 	total_positions = 8
 	spawn_positions = 7
-	supervisors = "the chief engineer"
+	supervisors = "el jefe de ingenieros"
 	selection_color = "#5b4d20"
 	economic_power = 5
 	minimal_player_age = 7
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage)
 	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage)
-	alt_titles = list("Maintenance Technician","Engine Technician","Electrician",
-		"Atmospheric Technician" = /decl/hierarchy/outfit/job/engineering/atmos)
+	alt_titles = list("Tecnico de Mantenimiento","Tecnico de Motor","Electricista",
+		"Tecnico Atmosferico" = /decl/hierarchy/outfit/job/engineering/atmos)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
