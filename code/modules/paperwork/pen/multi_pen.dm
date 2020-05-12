@@ -1,6 +1,6 @@
 /obj/item/weapon/pen/multi
-	name = "multicoloured pen"
-	desc = "It's a pen with multiple colors of ink!"
+	name = "Lapicera multicolor"
+	desc = "Es una lapicera con multiples colores de tinta!"
 	var/selectedColor = 1
 	var/colors = list("black","blue","red","green")
 	var/color_descriptions = list("black ink", "blue ink", "red ink", "green ink")
@@ -17,4 +17,4 @@
 	else
 		icon_state = "pen_[colour]"
 
-	to_chat(user, "<span class='notice'>Changed color to '[colour].'</span>")
+	to_chat(user, "<span class='notice'>Color cambiado a '[colour].'</span>")
