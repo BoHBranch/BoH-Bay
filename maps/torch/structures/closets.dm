@@ -86,7 +86,9 @@
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/weapon/extinguisher/mini,
 		/obj/item/device/gps,
-		/obj/item/weapon/storage/box/flares
+		/obj/item/weapon/storage/box/flares,
+		/obj/item/clothing/head/helmet/solgov/security,
+		/obj/item/clothing/accessory/storage/black_vest
 		)
 
 /obj/structure/closet/secure_closet/inftech
@@ -109,7 +111,9 @@
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/weapon/plastique,
-		/obj/item/weapon/plastique
+		/obj/item/weapon/plastique,
+		/obj/item/clothing/head/helmet/solgov/security,
+		/obj/item/clothing/accessory/storage/black_vest
 		)
 
 //demolocker
@@ -146,7 +150,9 @@
 		/obj/item/solbanner,
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/device/megaphone,
-		/obj/item/weapon/storage/box/flares
+		/obj/item/weapon/storage/box/flares,
+		/obj/item/clothing/head/helmet/solgov/security,
+		/obj/item/clothing/accessory/storage/black_vest
 		)
 
 /////////
