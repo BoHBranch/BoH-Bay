@@ -22,7 +22,7 @@
 
 	welcome_text += "Coordenadas actuales:<br /><b>[torch.x]:[torch.y]</b><br /><br>"
 	welcome_text += "Siguiente sistema seleccionado para el salto:<br /><b>[generate_system_name()]</b><br /><br>"
-	welcome_text += "iempo de viaje hacia Sol:<br /><b>[rand(15,45)] days</b><br /><br>"
+	welcome_text += "Tiempo de viaje hacia Sol:<br /><b>[rand(15,45)] days</b><br /><br>"
 	welcome_text += "Tiempo desde el ultimo puerto visitado:<br /><b>[rand(60,180)] days</b><br /><hr>"
 	welcome_text += "Los resultados del escaner muestran los siguientes puntos de interes:<br />"
 
