@@ -138,12 +138,9 @@
 	else
 		H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/phoron(H.back), slot_l_hand)
 
-
-
-
 /datum/species/plasmasans/handle_environment_special(var/mob/living/carbon/human/H)
 	//Should they get exposed to oxygen, things get heated.
-	if(H.get_pressure_weakness() > 0.6) //If air gets in, then well there's a problem.
+	if(H.stat != DEAD && H.get_pressure_weakness() > 0.6) //If air gets in, then well there's a problem.
 		var/datum/gas_mixture/environment = H.loc.return_air()
 		if(environment && environment.gas[GAS_OXYGEN] && environment.gas[GAS_OXYGEN] >= 0.5) //Phorosians so long as there's enough oxygen (0.5 moles, same as it takes to burn gaseous phoron).
 			H.fire_stacks = max(H.fire_stacks,10)

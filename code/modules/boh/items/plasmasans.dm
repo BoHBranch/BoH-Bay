@@ -11,9 +11,9 @@
 	sprite_sheets = list(
 		SPECIES_PLASMASANS = 'icons/mob/species/plasmasans/onmob_suit_plasmasans.dmi'
 		)
-	breach_threshold = 6
 	can_breach = 1
-	resilience = 0.1
+	breach_threshold = 12
+	resilience = 0.08
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_MINOR,
