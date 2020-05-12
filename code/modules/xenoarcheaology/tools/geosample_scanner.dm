@@ -1,6 +1,6 @@
 /obj/machinery/radiocarbon_spectrometer
-	name = "radiocarbon spectrometer"
-	desc = "A specialised, complex scanner for gleaning information on all manner of small things."
+	name = "espectrometro de radiocarbono"
+	desc = "Un escaner especializado y complejo para obtener informacion sobre todo tipo de cosas pequeñas."
 	anchored = 1
 	density = 1
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER
@@ -15,7 +15,7 @@
 	var/report_num = 0
 	//
 	var/obj/item/scanned_item
-	var/last_scan_data = "No scans on record."
+	var/last_scan_data = "Sin escaneos registrados."
 	//
 	var/last_process_worldtime = 0
 	//
@@ -65,7 +65,7 @@
 
 /obj/machinery/radiocarbon_spectrometer/attackby(var/obj/I as obj, var/mob/user as mob)
 	if(scanning)
-		to_chat(user, "<span class='warning'>You can't do that while [src] is scanning!</span>")
+		to_chat(user, "<span class='warning'>No puedes hacer esto mientras el [src] esta escaneando!</span>")
 	else
 		if(istype(I, /obj/item/stack/nanopaste))
 			var/choice = alert("What do you want to do with the nanopaste?","Radiometric Scanner","Scan nanopaste","Fix seal integrity")
