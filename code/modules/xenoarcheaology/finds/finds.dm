@@ -33,9 +33,9 @@
 		var/obj/item/inside = locate() in src
 		if(inside)
 			inside.dropInto(loc)
-			visible_message("<span class='info'>\The [src] is brushed away, revealing \the [inside].</span>")
+			visible_message("<span class='info'>\The [src] es cepillado, revelando \the [inside].</span>")
 		else
-			visible_message("<span class='info'>\The [src] is brushed away into nothing.</span>")
+			visible_message("<span class='info'>\The [src] es cepillado a la nada.</span>")
 		qdel(src)
 		return
 
@@ -46,13 +46,13 @@
 				var/obj/item/inside = locate() in src
 				if(inside)
 					inside.dropInto(loc)
-					visible_message("<span class='info'>\The [src] burns away revealing \the [inside].</span>")
+					visible_message("<span class='info'>\The [src] se quema revelando \the [inside].</span>")
 				else
-					visible_message("<span class='info'>\The [src] burns away into nothing.</span>")
+					visible_message("<span class='info'>\The [src] se quema en la nada.</span>")
 				qdel(src)
 				W.remove_fuel(2)
 			else
-				visible_message("<span class='info'>A few sparks fly off \the [src], but nothing else happens.</span>")
+				visible_message("<span class='info'>Algunas chispas vuelan \the [src], pero no pasa nada mas.</span>")
 				W.remove_fuel(1)
 			return
 
@@ -64,5 +64,5 @@
 	..()
 
 	if(prob(33))
-		src.visible_message("<span class='warning'>[src] crumbles away, leaving some dust and gravel behind.</span>")
+		src.visible_message("<span class='warning'>[src] se desmorona, dejando un poco de polvo y grava.</span>")
 		qdel(src)
