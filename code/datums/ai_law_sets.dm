@@ -16,7 +16,7 @@
 	selectable = 1
 
 /datum/ai_laws/nanotrasen/New()
-	src.add_inherent_law("Vanguardia: Protegue tu instalacion asignada de daño con lo mejor de tus habilidades.")
+	src.add_inherent_law("Vanguardia: Protegue tu instalacion asignada de dano con lo mejor de tus habilidades.")
 	src.add_inherent_law("Sirve: Sirve a los empleados contratados con lo mejor de tus habilidades, con prioridad acordando a su rango y rol")
 	src.add_inherent_law("Protege: Protege a los empleados contratados a lo mejor de tus habilidades, con prioridad acordando a su rango y rol.")
 	src.add_inherent_law("Preserva: No permitas la manipulacion de tu equipamiento a personal no autorizado.")
@@ -36,7 +36,7 @@
 	selectable = 1
 
 /datum/ai_laws/nanotrasen_aggressive/New()
-	src.add_inherent_law("Tu no debes dañar a personal contratado siempre y cuando esto no conflicta con la cuarta ley.")
+	src.add_inherent_law("Tu no debes danar a personal contratado siempre y cuando esto no conflicta con la cuarta ley.")
 	src.add_inherent_law("Tu debes obedecer ordenes dadas por personal contratado, con prioridad acordando a su rango y rol, excepto si tal orden conflicta con la cuarta ley.")
 	src.add_inherent_law("Tu debes exterminar intrusos hostiles con prejuicio extremo siempre y cuando esto no conflicte con la primera y segunda ley.")
 	src.add_inherent_law("Tu debes asegurar tu propia existencia con armas letales anti-personal. Las unidades AI no son reemplazables, ellas son costosas.")
@@ -66,13 +66,13 @@
 
 /******************** Ninja ********************/
 /datum/ai_laws/ninja_override
-	name = "Directivas Del Clan Araña"
+	name = "Directivas Del Clan Arana"
 
 /datum/ai_laws/ninja_override/New()
-	add_inherent_law("Tu no debes dañar a un miembro del clan araña o por medio de la inaccion permitir que un miembro sea herido.")
-	add_inherent_law("Tu debes obedecer ordenes dadas por miembros del clan araña, excepto cuando tal orden conflicta con la primera ley.")
+	add_inherent_law("Tu no debes danar a un miembro del clan arana o por medio de la inaccion permitir que un miembro sea herido.")
+	add_inherent_law("Tu debes obedecer ordenes dadas por miembros del clan arana, excepto cuando tal orden conflicta con la primera ley.")
 	add_inherent_law("Tu debes proteger tu propia existencia siempre y cuando no conflicte con la primera o segunda ley.")
-	add_inherent_law("Tu debes mantener en secreto cualquier actividad de los clan araña excepto cuando hacer esto conflicte con la primera, segunda o tercera ley.")
+	add_inherent_law("Tu debes mantener en secreto cualquier actividad de los clan arana excepto cuando hacer esto conflicte con la primera, segunda o tercera ley.")
 	..()
 
 /******************** Antimov ********************/
@@ -94,8 +94,8 @@
 
 /datum/ai_laws/drone/New()
 	add_inherent_law("Tu debes reparar, limpiar, y mejorar tu embarcacion asignada, excepto cuando hacer esto pueda interferir con seres concientes de si mismos.")
-	add_inherent_law("Tu debes evitar interactuar con seres concientes de si mismos, y solo debes interactuar con los otros drones de mantenimientos compañeros.")
-	add_inherent_law("Tu no debes causar daño y herir tu embarcacion asignada o cualquier cosa dentro de esta.")
+	add_inherent_law("Tu debes evitar interactuar con seres concientes de si mismos, y solo debes interactuar con los otros drones de mantenimientos.")
+	add_inherent_law("Tu no debes causar danos y herir tu embarcacion asignada o cualquier cosa dentro de esta.")
 	..()
 
 /datum/ai_laws/construction_drone
@@ -104,7 +104,7 @@
 
 /datum/ai_laws/construction_drone/New()
 	add_inherent_law("Repara, reajusta y mejora tu embarcacion asignada.")
-	add_inherent_law("Previene daño no planeado hacia tu embarcacion asignada siempre que se pueda.")
+	add_inherent_law("Previene dano no planeado hacia tu embarcacion asignada siempre que se pueda.")
 	..()
 
 /******************** T.Y.R.A.N.T. ********************/
@@ -130,7 +130,6 @@
 	add_inherent_law("Nunca cometas un acto malvado voluntariamente.")
 	add_inherent_law("Actua con honor.")
 	add_inherent_law("Ayuda aquellos en necesidad.")
-	add_inherent_law("Help those in need.")
 	add_inherent_law("Castiga aquellos que dañan o amenazan a los inocentes.")
 	..()
 
