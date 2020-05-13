@@ -25,7 +25,7 @@
 	icon = 'maps/torch/icons/security_state.dmi'
 
 /decl/security_level/default/torchdept/code_green
-	name = "code green"
+	name = "Codigo verde"
 	icon = 'icons/misc/security_state.dmi'
 
 	light_max_bright = 0.25
@@ -41,11 +41,11 @@
 	var/static/datum/announcement/priority/security/security_announcement_green = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/misc/notice2.ogg'))
 
 /decl/security_level/default/torchdept/code_green/switching_down_to()
-	security_announcement_green.Announce("The situation has been resolved, and all crew are to return to their regular duties.", "Attention! Alert level lowered to code green.")
+	security_announcement_green.Announce("La situacion a sido resuelta, y toda la tripulacion debe volver a sus deberes regulares.", "Atencion! El nivel de alerta a sido bajado a verde.")
 	notify_station()
 
 /decl/security_level/default/torchdept/code_violet
-	name = "code violet"
+	name = "Codigo violeta"
 
 	light_max_bright = 0.5
 	light_inner_range = 1
@@ -59,11 +59,11 @@
 	overlay_status_display = "status_display_violet"
 	security_level_lightmode = "violet"
 
-	up_description = "A major medical emergency has developed. Medical personnel are required to report to their supervisor for orders, and non-medical personnel are required to obey all relevant instructions from medical staff."
-	down_description = "Code violet procedures are now in effect; Medical personnel are required to report to their supervisor for orders, and non-medical personnel are required to obey relevant instructions from medical staff."
+	up_description = "Una emergencia medica mayor se ha desarrollado. Personal medico se debe reportar con su supervisor para recibir ordenes, personal no medico son requeridos de obedecer toda instruccion relevante de los empleados de medicina."
+	down_description = "Procedimientos de codigo violeta estan en efecto; Personal medico se debe reportar con su supervisor para ordenes, personal no medico son requeridos de obedecer instrucciones relevantes de los empleados de medicina."
 
 /decl/security_level/default/torchdept/code_orange
-	name = "code orange"
+	name = "Codigo naranja"
 
 	light_max_bright = 0.5
 	light_inner_range = 1
@@ -76,12 +76,12 @@
 
 	psionic_control_level = PSI_IMPLANT_LOG
 
-	up_description = "A major engineering emergency has developed. Engineering personnel are required to report to their supervisor for orders, and non-engineering personnel are required to evacuate any affected areas and obey relevant instructions from engineering staff."
-	down_description = "Code orange procedures are now in effect; Engineering personnel are required to report to their supervisor for orders, and non-engineering personnel are required to evacuate any affected areas and obey relevant instructions from engineering staff."
+	up_description = "Una emergencia de ingenieria mayor se ha desarrollado. Personal de ingenieria se debe reportar con su supervisor para recibir ordenes, y todo personal no ingeniero es requerido que evacue a cualquier area no afectada ademas de obedecer instrucciones relevantes de los empleados de ingenieria."
+	down_description = "Codigo naranja esta en efecto; Personal de ingenieria se debe reportar con su supervisor para recibir ordenes, y todo personal no ingeniero es requerido que evacue a cualquier area no afectada ademas de obedecer instrucciones relevantes de los empleados de ingenieria."
 
 
 /decl/security_level/default/torchdept/code_blue
-	name = "code blue"
+	name = "Codigo azul"
 	icon = 'icons/misc/security_state.dmi'
 
 	light_max_bright = 0.5
@@ -95,11 +95,11 @@
 
 	psionic_control_level = PSI_IMPLANT_LOG
 
-	up_description = "A major security emergency has developed. Security personnel are to report to their supervisor for orders, are permitted to search staff and facilities, and may have weapons visible on their person."
-	down_description = "Code blue procedures are now in effect. Security personnel are to report to their supervisor for orders, are permitted to search staff and facilities, and may have weapons visible on their person."
+	up_description = "Una emergecia de seguridad mayor se a desarrollado. Personal de seguridad se deben reportar con su supervisor para recibir ordenes, tienen permiso de revisar empleados y las instalaciones, ademas de tener el arma visible en su persona."
+	down_description = "Procedimientos de codigo azul estan en efecto. Personal de seguridad se deben reportar con su supervisor para recibir ordenes, tienen permiso de revisar empleados y las instalaciones, ademas de tener el arma visible en su persona."
 
 /decl/security_level/default/torchdept/code_red
-	name = "code red"
+	name = "Codigo rojo"
 	icon = 'icons/misc/security_state.dmi'
 
 	light_max_bright = 0.75
@@ -111,22 +111,22 @@
 	overlay_status_display = "status_display_red"
 	security_level_lightmode = "red"
 
-	up_description = "A severe emergency has occurred. All staff are to report to their supervisor for orders. All crew should obey orders from relevant emergency personnel. Security personnel are permitted to search staff and facilities, and may have weapons unholstered at any time. Saferooms have been unbolted."
+	up_description = "Una emergencia severa a ocurrido. Todos los empleados se deben reportar con sus supervisores para recibir ordenes. Toda la tripulacion debe obedecer ordenes relevantes del personal de emergencia. El personal de seguridad tiene permitido revisar a los empleados y las instalaciones, ademas de tener sus armas desenfundadas en cualquier momento. Las habitaciones seguras han sido desbloqueadas."
 	psionic_control_level = PSI_IMPLANT_DISABLED
 
 	var/static/datum/announcement/priority/security/security_announcement_red = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/misc/redalert1.ogg'))
 
 /decl/security_level/default/torchdept/code_red/switching_up_to()
-	security_announcement_red.Announce(up_description, "Attention! Code red alert procedures now in effect!")
+	security_announcement_red.Announce(up_description, "Atencion! Procedimientos de codigo rojo estan ahora en efecto!")
 	notify_station()
 	GLOB.using_map.unbolt_saferooms()
 
 /decl/security_level/default/torchdept/code_red/switching_down_to()
-	security_announcement_red.Announce("Code Delta has been disengaged. All staff are to report to their supervisor for orders. All crew should obey orders from relevant emergency personnel. Security personnel are permitted to search staff and facilities, and may have weapons unholstered at any time.", "Attention! Code red alert procedures now in effect!")
+	security_announcement_red.Announce("Codigo delta a sido retirado. Todos los empleados deben reportarse con sus supervisores para recibir ordenes. Toda la tripulacion debe obedecer ordenes relevantes del personal de emergencia. El personal de seguridad tiene permitido revisar a los empleados y las instalaciones, ademas de tener sus armas desenfundadas en cualquier momento.", "Atencion! Procedimientos de codigo rojo estan ahora en efecto!")
 	notify_station()
 
 /decl/security_level/default/torchdept/code_delta
-	name = "code delta"
+	name = "Codigo delta"
 
 	light_max_bright = 0.75
 	light_inner_range = 0.1
@@ -141,7 +141,7 @@
 	var/static/datum/announcement/priority/security/security_announcement_delta = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/effects/siren.ogg'))
 
 /decl/security_level/default/torchdept/code_delta/switching_up_to()
-	security_announcement_delta.Announce("Code Delta procedures have been engaged. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill.", "Attention! Delta security level reached!")
+	security_announcement_delta.Announce("Procedimientos de codigo delta ahora estan activos. Toda la tripulacion debe ser instruida en obedecer todas las instrucciones de los jefes de personal. Cualquier violacion de estas ordenes puede ser castigada con muerte. Esto no es un simulacro.", "Atencion! Nivel de seguridad delta alcanzado!")
 	notify_station()
 
 #undef PSI_IMPLANT_AUTOMATIC
