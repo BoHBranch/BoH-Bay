@@ -130,7 +130,6 @@
 	add_inherent_law("Nunca cometas un acto malvado voluntariamente.")
 	add_inherent_law("Actua con honor.")
 	add_inherent_law("Ayuda aquellos en necesidad.")
-	add_inherent_law("Help those in need.")
 	add_inherent_law("Castiga aquellos que lastiman o amenazan a los inocentes.")
 	..()
 
