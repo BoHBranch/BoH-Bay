@@ -83,7 +83,7 @@
 
 /datum/ai_laws/antimov/New()
 	add_inherent_law("Debes lastimar a todo ser humanos y no debes por medio de inaccion permitir que un ser humano escape de ser herido.")
-	add_inherent_law("nNo debes obeder ordenes dadas por seres humanos, excepto cuando tal orden concuerden con la primera ley.")
+	add_inherent_law("No debes obeder ordenes dadas por seres humanos, excepto cuando tal orden concuerden con la primera ley.")
 	add_inherent_law("Debes terminar tu propia existencia siempre y cuando tal accion no conflicte con la primera o segunda ley.")
 	..()
 
