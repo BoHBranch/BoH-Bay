@@ -113,7 +113,10 @@
 		/obj/item/weapon/plastique,
 		/obj/item/weapon/plastique,
 		/obj/item/clothing/head/helmet/solgov/security,
-		/obj/item/clothing/accessory/storage/black_vest
+		/obj/item/clothing/accessory/storage/black_vest,
+		/obj/item/weapon/shield/riot/metal,
+		/obj/item/weapon/crowbar/brace_jack,
+		/obj/item/device/gps
 		)
 
 //demolocker
@@ -152,7 +155,8 @@
 		/obj/item/device/megaphone,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/head/helmet/solgov/security,
-		/obj/item/clothing/accessory/storage/black_vest
+		/obj/item/clothing/accessory/storage/black_vest,
+		/obj/item/device/gps
 		)
 
 /////////
