@@ -6,7 +6,8 @@
 	// Unit test vars
 	var/list/apc_test_exempt_areas = list(
 		/area/space = NO_SCRUBBER|NO_VENT|NO_APC,
-		/area/exoplanet = NO_SCRUBBER|NO_VENT|NO_APC
+		/area/exoplanet = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/vacant/infirmary = NO_SCRUBBER|NO_VENT|NO_APC
 	)
 
 	var/list/area_coherency_test_exempt_areas = list(
@@ -26,7 +27,6 @@
 		/area/chapel,
 		/area/hallway,
 		/area/maintenance,
-		/area/vacant/infirmary,
 		/area/medical,
 		/area/medical/virology,
 		/area/medical/virologyaccess,
