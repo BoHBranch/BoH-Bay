@@ -66,7 +66,7 @@
 
 /******************** Ninja ********************/
 /datum/ai_laws/ninja_override
-	name = "Directivas Del Clan Arania"
+	name = "Directivas Del Clan Arana"
 
 /datum/ai_laws/ninja_override/New()
 	add_inherent_law("No debes herir a un miembro del clan arania o por medio de la inaccion permitir que un miembro sea herido.")
