@@ -39,7 +39,7 @@
 /datum/artifact_effect/Destroy()
 	QDEL_NULL(trigger)
 	. = ..()
-	
+
 /datum/artifact_effect/proc/ToggleActivate(var/reveal_toggle = 1)
 	//so that other stuff happens first
 	spawn(0)
@@ -53,9 +53,9 @@
 				A.icon_state = "ano[A.icon_num][activated]"
 			var/display_msg
 			if(activated)
-				display_msg = pick("momentarily glows brightly!","distorts slightly for a moment!","flickers slightly!","vibrates!","shimmers slightly for a moment!")
+				display_msg = pick("Momentaneamente brilla intensamente!","se distorsiona un poco por un momento!","parpadea un poco!","vibra!","brilla un poco por un momento!")
 			else
-				display_msg = pick("grows dull!","fades in intensity!","suddenly becomes very still!","suddenly becomes very quiet!")
+				display_msg = pick("se vuelve aburrida!","se desvanese en intensidad!","de la nada se queda quieto!","de la nada se vuelve tranquila!")
 			var/atom/toplevelholder = holder
 			while(!istype(toplevelholder.loc, /turf))
 				toplevelholder = toplevelholder.loc
@@ -81,33 +81,33 @@
 	. = "<b>"
 	switch(effect_type)
 		if(EFFECT_ENERGY)
-			. += "Concentrated energy emissions"
+			. += "Emisiones de energia concentradas"
 		if(EFFECT_PSIONIC)
-			. += "Intermittent psionic wavefront"
+			. += "Onda psionica intermitente"
 		if(EFFECT_ELECTRO)
-			. += "Electromagnetic energy"
+			. += "Energia electromagnetica"
 		if(EFFECT_PARTICLE)
-			. += "High frequency particles"
+			. += "Gran frecuencia de particulas"
 		if(EFFECT_ORGANIC)
-			. += "Organically reactive exotic particles"
+			. += "Particula exotica organicamente reactiva"
 		if(EFFECT_BLUESPACE)
 			. += "Interdimensional/bluespace? phasing"
 		if(EFFECT_SYNTH)
-			. += "Atomic synthesis"
+			. += "Sintesis atomica"
 		else
-			. += "Low level energy emissions"
+			. += "Bajo nivel de emisiones energeticas"
 
 	. += "</b> have been detected <b>"
 
 	switch(effect)
 		if(EFFECT_TOUCH)
-			. += "interspersed throughout substructure and shell."
+			. += "intercalados en toda la subestructura y caparazon."
 		if(EFFECT_AURA)
-			. += "emitting in an ambient energy field."
+			. += "emite un campo de energia ambiental."
 		if(EFFECT_PULSE)
-			. += "emitting in periodic bursts."
+			. += "emite pulsos peridicamente."
 		else
-			. += "emitting in an unknown way."
+			. += "emitiendo de manera desconocida."
 
 	. += "</b>"
 

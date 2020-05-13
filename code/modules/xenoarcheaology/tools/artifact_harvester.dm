@@ -1,5 +1,5 @@
 /obj/machinery/artifact_harvester
-	name = "Exotic Particle Harvester"
+	name = "Cosechadora de particulas exoticas"
 	icon = 'icons/obj/virology.dmi'
 	icon_state = "incubator"	//incubator_on
 	anchored = 1
@@ -24,11 +24,11 @@
 		if(!inserted_battery)
 			if(!user.unEquip(I, src))
 				return
-			to_chat(user, "<span class='notice'>You insert [I] into [src].</span>")
+			to_chat(user, "<span class='notice'>Has insertado [I] en [src].</span>")
 			src.inserted_battery = I
 			updateDialog()
 		else
-			to_chat(user, "<span class='warning'>There is already a battery in [src].</span>")
+			to_chat(user, "<span class='warning'>Ya hay una bateria en [src].</span>")
 	else
 		return..()
 
@@ -46,9 +46,9 @@
 	if(owned_scanner)
 		if(harvesting)
 			if(harvesting > 0)
-				dat += "Please wait. Harvesting in progress ([round((inserted_battery.stored_charge/inserted_battery.capacity)*100)]%).<br>"
+				dat += "Por favor espera. Cosecha en progreso ([round((inserted_battery.stored_charge/inserted_battery.capacity)*100)]%).<br>"
 			else
-				dat += "Please wait. Energy dump in progress ([round((inserted_battery.stored_charge/inserted_battery.capacity)*100)]%).<br>"
+				dat += "Por favor espera. Descarga de energia en progreso ([round((inserted_battery.stored_charge/inserted_battery.capacity)*100)]%).<br>"
 			dat += "<A href='?src=\ref[src];stopharvest=1'>Halt early</A><BR>"
 		else
 			if(inserted_battery)
