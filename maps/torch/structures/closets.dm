@@ -151,6 +151,7 @@
 		/obj/item/clothing/glasses/tacgoggles,
 		/obj/item/weapon/storage/firstaid/combat,
 		/obj/item/solbanner,
+		/obj/item/device/binoculars, 
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/device/megaphone,
 		/obj/item/weapon/storage/box/flares,
