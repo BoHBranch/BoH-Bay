@@ -1,14 +1,14 @@
 /obj/item/clothing/suit/bio_suit/anomaly
-	name = "Anomaly suit"
-	desc = "A suit that protects against exotic alien energies and biological contamination."
+	name = "traje de anomalia"
+	desc = "Un traje que protege contra las energias exoticas alienigenas y la contaminacion biologica."
 	icon_state = "bio_anom"
 	max_pressure_protection = FIRESUIT_MAX_PRESSURE
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	item_flags = ITEM_FLAG_AIRTIGHT
 
 /obj/item/clothing/head/bio_hood/anomaly
-	name = "Anomaly hood"
-	desc = "A hood that protects the head and face from exotic alien energies and biological contamination."
+	name = "casco de anomalia"
+	desc = "Un casco que protege contras las energias exoticas alienigenas y la contaminacion biologica."
 	icon_state = "bio_anom"
 	item_state = "bio_anom"
 	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
@@ -16,8 +16,8 @@
 	item_flags = ITEM_FLAG_AIRTIGHT
 
 /obj/item/clothing/suit/space/void/excavation
-	name = "excavation voidsuit"
-	desc = "A specially shielded voidsuit that insulates against some exotic alien energies, as well as the more mundane dangers of excavation."
+	name = "traje de excavacion"
+	desc = "Un traje impermeable especialmente protegido que aisla contra algunas energias exoticas alienigenas, asi como contra los peligros mas mundanos de la excavacion."
 	icon_state = "rig-excavation"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
@@ -29,8 +29,8 @@
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/stack/flag,/obj/item/weapon/storage/excavation,/obj/item/weapon/pickaxe,/obj/item/device/scanner/health,/obj/item/device/measuring_tape,/obj/item/device/ano_scanner,/obj/item/device/depth_scanner,/obj/item/device/core_sampler,/obj/item/device/gps,/obj/item/weapon/pinpointer/radio,/obj/item/device/radio/beacon,/obj/item/weapon/pickaxe/xeno,/obj/item/weapon/storage/bag/fossils)
 
 /obj/item/clothing/head/helmet/space/void/excavation
-	name = "excavation voidsuit helmet"
-	desc = "A sophisticated voidsuit helmet, capable of protecting the wearer from many exotic alien energies."
+	name = "casco de excavacion"
+	desc = "Un sofisticado casco de traje impermeable capaz de proteger al usuario de muchas energias exoticas alienigenas."
 	icon_state = "rig0-excavation"
 	item_state = "excavation-helm"
 	armor = list(
@@ -46,8 +46,8 @@
 	helmet = /obj/item/clothing/head/helmet/space/void/excavation
 
 /obj/item/weapon/storage/belt/archaeology
-	name = "excavation gear-belt"
-	desc = "Can hold various excavation gear."
+	name = "correa dentada de excavacion"
+	desc = "Puede contener varios equipos de excavacion."
 	icon_state = "gearbelt"
 	item_state = ACCESSORY_SLOT_UTILITY
 	can_hold = list(
