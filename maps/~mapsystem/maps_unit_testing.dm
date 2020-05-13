@@ -26,6 +26,7 @@
 		/area/chapel,
 		/area/hallway,
 		/area/maintenance,
+		/area/vacant/infirmary,
 		/area/medical,
 		/area/medical/virology,
 		/area/medical/virologyaccess,
