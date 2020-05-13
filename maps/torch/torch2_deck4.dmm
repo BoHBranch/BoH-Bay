@@ -369,7 +369,7 @@
 	name = "Aux Medical"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "bb" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/machinery/button/blast_door{
@@ -456,7 +456,7 @@
 /area/shuttle/escape_pod1/station)
 "bj" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "bk" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -521,7 +521,7 @@
 	},
 /obj/item/weapon/storage/firstaid/o2,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "br" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -542,7 +542,7 @@
 "bs" = (
 /obj/item/bodybag,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "bt" = (
 /obj/machinery/door/airlock/civilian{
 	name = "Emergency Storage"
@@ -600,7 +600,7 @@
 "bz" = (
 /obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "bA" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -622,7 +622,7 @@
 /obj/effect/decal/cleanable/cobweb2,
 /obj/machinery/chem_master,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "bC" = (
 /obj/machinery/atmospherics/binary/pump/on{
 	dir = 1;
@@ -680,7 +680,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "bH" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -689,7 +689,7 @@
 	},
 /obj/item/weapon/grenade/chem_grenade/cleaner,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "bI" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -725,12 +725,12 @@
 	},
 /obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "bL" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/storage/firstaid/regular,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "bM" = (
 /obj/effect/shuttle_landmark/merchant/out,
 /turf/space,
@@ -772,7 +772,7 @@
 "bQ" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "bR" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -781,7 +781,7 @@
 	},
 /obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "bS" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -825,7 +825,7 @@
 	},
 /obj/machinery/light,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "bX" = (
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
@@ -882,10 +882,10 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "cb" = (
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "cc" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/structure/cable/green{
@@ -893,7 +893,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "cd" = (
 /obj/structure/railing/mapped,
 /obj/structure/lattice,
@@ -963,7 +963,7 @@
 "cj" = (
 /obj/effect/paint/sun,
 /turf/simulated/wall/prepainted,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "ck" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/vault/bolted{
@@ -991,11 +991,11 @@
 	},
 /obj/structure/door_assembly,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "cm" = (
 /obj/effect/paint/silver,
 /turf/simulated/wall/prepainted,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "cn" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
@@ -1047,7 +1047,7 @@
 	},
 /obj/structure/door_assembly/door_assembly_hatch,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "ct" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/fourthdeck/fore)
@@ -1105,7 +1105,7 @@
 "cz" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/prepainted,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "cA" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -1152,7 +1152,7 @@
 /obj/item/frame/apc,
 /obj/structure/table/reinforced,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "cE" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 6
@@ -1172,7 +1172,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "cG" = (
 /obj/random/obstruction,
 /turf/simulated/floor/plating,
@@ -1185,7 +1185,7 @@
 	},
 /obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "cI" = (
 /obj/random/trash,
 /turf/simulated/floor/plating,
@@ -1202,7 +1202,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "cK" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance,
@@ -1230,7 +1230,7 @@
 	},
 /obj/machinery/door/airlock/hatch/maintenance,
 /turf/simulated/floor/plating,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "cM" = (
 /obj/structure/catwalk,
 /turf/simulated/open,
@@ -1286,7 +1286,7 @@
 	},
 /obj/item/clothing/mask/plunger,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "cT" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -1359,7 +1359,7 @@
 	},
 /obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "cY" = (
 /obj/structure/catwalk,
 /obj/effect/floor_decal/industrial/warning{
@@ -1389,12 +1389,12 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "dc" = (
 /obj/structure/cable/green,
 /obj/random/junk,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "dd" = (
 /obj/machinery/door/airlock/external/escapepod{
 	frequency = 1380;
@@ -1409,7 +1409,7 @@
 "de" = (
 /obj/machinery/optable,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "df" = (
 /obj/machinery/light{
 	dir = 4
@@ -1417,7 +1417,7 @@
 /obj/structure/table/reinforced,
 /obj/item/weapon/storage/firstaid/surgery,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "dg" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/storage/auxillary/starboard)
@@ -1454,7 +1454,7 @@
 	},
 /obj/random/hostile/maint,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "dj" = (
 /obj/structure/bed/chair/shuttle{
 	tag = "icon-shuttle_chair_preview (NORTH)";
@@ -1524,11 +1524,11 @@
 /obj/structure/table/reinforced,
 /obj/item/weapon/stock_parts/circuitboard/vitals_monitor,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "dr" = (
 /obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "ds" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/structure/cable{
@@ -9928,7 +9928,7 @@
 /area/hallway/primary/fourthdeck/fore)
 "EK" = (
 /turf/simulated/wall/prepainted,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "EM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/structure/catwalk,
@@ -15399,7 +15399,7 @@
 /area/command/pathfinder)
 "VV" = (
 /turf/simulated/wall/r_wall/hull,
-/area/vacant/infirmary)
+/area/maintenance/aux_med)
 "VW" = (
 /turf/simulated/wall/prepainted,
 /area/maintenance/waterstore)
