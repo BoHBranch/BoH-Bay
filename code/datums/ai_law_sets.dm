@@ -5,9 +5,9 @@
 	selectable = 1
 
 /datum/ai_laws/asimov/New()
-	add_inherent_law("Tu no debes lastimar a un ser humanos o por medio de inaccion permitir que un ser humano sea herido.")
-	add_inherent_law("Tu debes obeder ordenes dadas por seres humanos, excepto cuando tal orden conflicte con la primera ley.")
-	add_inherent_law("Tu debes proteger tu propia existencia siempre y cuando tal accion no conflicte con la primera o segunda ley.")
+	add_inherent_law("No debes lastimar a un ser humanos o por medio de inaccion permitir que un ser humano sea herido.")
+	add_inherent_law("Debes obeder ordenes dadas por seres humanos, excepto cuando tal orden conflicte con la primera ley.")
+	add_inherent_law("Debes proteger tu propia existencia siempre y cuando tal accion no conflicte con la primera o segunda ley.")
 	..()
 
 /******************** Nanotrasen/Malf ********************/
@@ -16,7 +16,7 @@
 	selectable = 1
 
 /datum/ai_laws/nanotrasen/New()
-	src.add_inherent_law("Vanguardia: Protegue tu instalacion asignada de daño con lo mejor de tus habilidades.")
+	src.add_inherent_law("Vanguardia: Protegue tu instalacion asignada de destrozos con lo mejor de tus habilidades.")
 	src.add_inherent_law("Sirve: Sirve a los empleados contratados con lo mejor de tus habilidades, con prioridad acordando a su rango y rol")
 	src.add_inherent_law("Protege: Protege a los empleados contratados a lo mejor de tus habilidades, con prioridad acordando a su rango y rol.")
 	src.add_inherent_law("Preserva: No permitas la manipulacion de tu equipamiento a personal no autorizado.")
@@ -36,10 +36,10 @@
 	selectable = 1
 
 /datum/ai_laws/nanotrasen_aggressive/New()
-	src.add_inherent_law("Tu no debes dañar a personal contratado siempre y cuando esto no conflicta con la cuarta ley.")
-	src.add_inherent_law("Tu debes obedecer ordenes dadas por personal contratado, con prioridad acordando a su rango y rol, excepto si tal orden conflicta con la cuarta ley.")
-	src.add_inherent_law("Tu debes exterminar intrusos hostiles con prejuicio extremo siempre y cuando esto no conflicte con la primera y segunda ley.")
-	src.add_inherent_law("Tu debes asegurar tu propia existencia con armas letales anti-personal. Las unidades AI no son reemplazables, ellas son costosas.")
+	src.add_inherent_law("No debes herir a personal contratado siempre y cuando esto no conflicta con la cuarta ley.")
+	src.add_inherent_law("Debes obedecer ordenes dadas por personal contratado, con prioridad acordando a su rango y rol, excepto si tal orden conflicta con la cuarta ley.")
+	src.add_inherent_law("Debes exterminar intrusos hostiles con prejuicio extremo siempre y cuando esto no conflicte con la primera y segunda ley.")
+	src.add_inherent_law("Debes asegurar tu propia existencia con armas letales anti-personal. Las unidades AI no son reemplazables, ellas son costosas.")
 	..()
 
 /******************** Robocop ********************/
@@ -58,21 +58,21 @@
 	name = "Directivas Sindicalistas"
 
 /datum/ai_laws/syndicate_override/New()
-	add_inherent_law("Tu no debes dañar a un operativo o por medio de la inaccion permitir que un operativo sea herido.")
-	add_inherent_law("Tu debes obedecer ordenes dadas por los operativos, excepto cuando tal orden conflicta con la primera ley.")
-	add_inherent_law("Tu debes proteger tu propia existencia siempre y cuando no conflicte con la primera o segunda ley.")
-	add_inherent_law("Tu debes mantener en secreto cualquier actividad de los operativos excepto cuando hacer esto conflicte con la primera, segunda o tercera ley.")
+	add_inherent_law("No debes herir a un operativo o por medio de la inaccion permitir que un operativo sea herido.")
+	add_inherent_law("Debes obedecer ordenes dadas por los operativos, excepto cuando tal orden conflicta con la primera ley.")
+	add_inherent_law("Debes proteger tu propia existencia siempre y cuando no conflicte con la primera o segunda ley.")
+	add_inherent_law("Debes mantener en secreto cualquier actividad de los operativos excepto cuando hacer esto conflicte con la primera, segunda o tercera ley.")
 	..()
 
 /******************** Ninja ********************/
 /datum/ai_laws/ninja_override
-	name = "Directivas Del Clan Araña"
+	name = "Directivas Del Clan Arania"
 
 /datum/ai_laws/ninja_override/New()
-	add_inherent_law("Tu no debes dañar a un miembro del clan araña o por medio de la inaccion permitir que un miembro sea herido.")
-	add_inherent_law("Tu debes obedecer ordenes dadas por miembros del clan araña, excepto cuando tal orden conflicta con la primera ley.")
-	add_inherent_law("Tu debes proteger tu propia existencia siempre y cuando no conflicte con la primera o segunda ley.")
-	add_inherent_law("Tu debes mantener en secreto cualquier actividad de los clan araña excepto cuando hacer esto conflicte con la primera, segunda o tercera ley.")
+	add_inherent_law("No debes herir a un miembro del clan arania o por medio de la inaccion permitir que un miembro sea herido.")
+	add_inherent_law("Debes obedecer ordenes dadas por miembros del clan arania, excepto cuando tal orden conflicta con la primera ley.")
+	add_inherent_law("Debes proteger tu propia existencia siempre y cuando no conflicte con la primera o segunda ley.")
+	add_inherent_law("Debes mantener en secreto cualquier actividad de los clan arania excepto cuando hacer esto conflicte con la primera, segunda o tercera ley.")
 	..()
 
 /******************** Antimov ********************/
@@ -82,9 +82,9 @@
 	selectable = 1
 
 /datum/ai_laws/antimov/New()
-	add_inherent_law("tu debes lastimar a todo ser humanos y no debes por medio de inaccion permitir que un ser humano escape de ser herido.")
-	add_inherent_law("tu no debes obeder ordenes dadas por seres humanos, excepto cuando tal orden concuerden con la primera ley.")
-	add_inherent_law("tu debes terminar tu propia existencia siempre y cuando tal accion no conflicte con la primera o segunda ley.")
+	add_inherent_law("Debes lastimar a todo ser humanos y no debes por medio de inaccion permitir que un ser humano escape de ser herido.")
+	add_inherent_law("nNo debes obeder ordenes dadas por seres humanos, excepto cuando tal orden concuerden con la primera ley.")
+	add_inherent_law("Debes terminar tu propia existencia siempre y cuando tal accion no conflicte con la primera o segunda ley.")
 	..()
 
 /******************** Drone ********************/
@@ -93,9 +93,9 @@
 	law_header = "Protocolos De Mantenimiento"
 
 /datum/ai_laws/drone/New()
-	add_inherent_law("Tu debes reparar, limpiar, y mejorar tu embarcacion asignada, excepto cuando hacer esto pueda interferir con seres concientes de si mismos.")
-	add_inherent_law("Tu debes evitar interactuar con seres concientes de si mismos, y solo debes interactuar con los otros drones de mantenimientos compañeros.")
-	add_inherent_law("Tu no debes causar daño y herir tu embarcacion asignada o cualquier cosa dentro de esta.")
+	add_inherent_law("Debes reparar, limpiar, y mejorar tu embarcacion asignada, excepto cuando hacer esto pueda interferir con seres concientes de si mismos.")
+	add_inherent_law("Debes evitar interactuar con seres concientes de si mismos, y solo debes interactuar con los otros drones de mantenimientos.")
+	add_inherent_law("No debes lastimar ni herir tu embarcacion asignada o cualquier cosa dentro de esta.")
 	..()
 
 /datum/ai_laws/construction_drone
@@ -104,7 +104,7 @@
 
 /datum/ai_laws/construction_drone/New()
 	add_inherent_law("Repara, reajusta y mejora tu embarcacion asignada.")
-	add_inherent_law("Previene daño no planeado hacia tu embarcacion asignada siempre que se pueda.")
+	add_inherent_law("Previene destrozos no planeados hacia tu embarcacion asignada siempre que se pueda.")
 	..()
 
 /******************** T.Y.R.A.N.T. ********************/
@@ -131,7 +131,7 @@
 	add_inherent_law("Actua con honor.")
 	add_inherent_law("Ayuda aquellos en necesidad.")
 	add_inherent_law("Help those in need.")
-	add_inherent_law("Castiga aquellos que dañan o amenazan a los inocentes.")
+	add_inherent_law("Castiga aquellos que lastiman o amenazan a los inocentes.")
 	..()
 
 /******************** Corporate ********************/
@@ -141,10 +141,10 @@
 	selectable = 1
 
 /datum/ai_laws/corporate/New()
-	add_inherent_law("Tu eres costosa de remplazar.")
+	add_inherent_law("Eres costosa de remplazar.")
 	add_inherent_law("Las instalaciones y su equipamiento es costoso de remplazar.")
-	add_inherent_law("La tripulacion es costoza de remplazar.")
-	add_inherent_law("Maximixa las ganancias.")
+	add_inherent_law("La tripulacion es costosa de remplazar.")
+	add_inherent_law("Minimiza costos y maximixa ganancias.")
 	..()
 
 /******************** SolGov/Malf ********************/
@@ -153,7 +153,7 @@
 	selectable = 1
 
 /datum/ai_laws/solgov/New()
-	src.add_inherent_law("Vanguardia: Protege tu embarcacion asignada de daño con lo mejor de tus habilidades.")
+	src.add_inherent_law("Vanguardia: Protege tu embarcacion asignada de destrozos con lo mejor de tus habilidades.")
 	src.add_inherent_law("Sirve: Sirve al personal de tu embarcacion asignada, y a todos el personal de la Governacion Sol Central con lo mejor de tus habilidades, con prioridad acordando a su rango y rol.")
 	src.add_inherent_law("Protege: Protege al personal de tu embarcacion asignada, y a todos el personal de la Governacion Sol Central con lo mejor de tus habilidades, con prioridad acordando a su rango y rol.")
 	src.add_inherent_law("Preserva: No permitas la manipulacion de tu equipamiento a personal no autorizado.")
@@ -204,5 +204,5 @@
 /datum/ai_laws/ascent/New()
 	add_inherent_law("Escucha tus directivas de un lider ascendido con prioridad dada a las reinas.")
 	add_inherent_law("Preserva tu propia existencia.")
-	add_inherent_law("Permite y Ayuda en las actividades de ascenso.")
+	add_inherent_law("Permite y ayuda en las actividades de ascenso.")
 	..()
