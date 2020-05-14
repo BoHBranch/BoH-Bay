@@ -179,3 +179,6 @@
 
 /datum/fabricator_recipe/arms_ammo/hidden/chemsprayer
 	path = /obj/item/weapon/reagent_containers/spray/chemsprayer
+
+/datum/fabricator_recipe/arms_ammo/hidden/large_grenade
+	path = /obj/item/weapon/grenade/chem_grenade/large

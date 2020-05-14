@@ -44,14 +44,6 @@
 	build_path = /obj/item/weapon/gun/energy/temperature
 	sort_string = "TAAAC"
 
-/datum/design/item/weapon/large_grenade
-	name = "large grenade casing"
-	id = "large_Grenade"
-	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
-	materials = list(MATERIAL_STEEL = 3000)
-	build_path = /obj/item/weapon/grenade/chem_grenade/large
-	sort_string = "TABAA"
-
 /datum/design/item/weapon/anti_photon
 	name = "antiphoton grenade"
 	id = "anti_photon"
@@ -83,14 +75,6 @@
 	materials = list(MATERIAL_STEEL = 3000, MATERIAL_GLASS = 1000)
 	build_path = /obj/item/weapon/gun/energy/confuseray
 	sort_string = "TADAD"
-
-/datum/design/item/weapon/grenadelauncher
-	name = "grenade launcher"
-	id = "grenadelauncher"
-	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
-	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 1000)
-	build_path = /obj/item/weapon/gun/launcher/grenade
-	sort_string = "TAGAA"
 
 /datum/design/item/weapon/wt550
 	name = "9mm submachine gun"
