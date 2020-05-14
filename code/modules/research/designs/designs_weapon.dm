@@ -84,22 +84,6 @@
 	build_path = /obj/item/weapon/gun/projectile/automatic/sec_smg
 	sort_string = "TAPAA"
 
-/datum/design/item/weapon/smg
-	name = "submachine gun"
-	id = "smg"
-	req_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 4)
-	materials = list(MATERIAL_STEEL = 8000, MATERIAL_SILVER = 2000, MATERIAL_DIAMOND = 2000)
-	build_path = /obj/item/weapon/gun/projectile/automatic
-	sort_string = "TAPAB"
-
-/datum/design/item/weapon/bullpup
-	name = "bullpup rifle"
-	id = "bullpup"
-	req_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 3)
-	materials = list(MATERIAL_STEEL = 10000, MATERIAL_SILVER = 5000, MATERIAL_DIAMOND = 3000)
-	build_path = /obj/item/weapon/gun/projectile/automatic/bullpup_rifle
-	sort_string = "TAPAC"
-
 /datum/design/item/weapon/ammunition/AssembleDesignName()
 	..()
 	name = "Ammunition prototype ([item_name])"
