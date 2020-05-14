@@ -89,6 +89,7 @@
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/head/helmet/solgov/security,
 		/obj/item/clothing/accessory/storage/black_vest
+		/obj/item/device/radio/headset/infantry/alt
 		)
 
 /obj/structure/closet/secure_closet/inftech
@@ -114,6 +115,7 @@
 		/obj/item/weapon/plastique,
 		/obj/item/clothing/head/helmet/solgov/security,
 		/obj/item/clothing/accessory/storage/black_vest
+		/obj/item/device/radio/headset/inftech/alt
 		)
 
 //demolocker
@@ -153,6 +155,7 @@
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/head/helmet/solgov/security,
 		/obj/item/clothing/accessory/storage/black_vest
+		/obj/item/device/radio/headset/infcom/alt
 		)
 
 /////////
