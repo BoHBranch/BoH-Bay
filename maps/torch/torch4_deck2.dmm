@@ -2527,7 +2527,11 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/structure/catwalk,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/seconddeck)
 "eM" = (
@@ -4521,7 +4525,7 @@
 /area/engineering/engine_room)
 "iI" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/multi_tile/glass/engineering{
+/obj/machinery/door/airlock/multi_tile/engineering{
 	name = "Engineering Bay"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -5667,7 +5671,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/engineering/engine_room)
+/area/engineering/engine_monitoring)
 "la" = (
 /obj/machinery/embedded_controller/radio/airlock/advanced_airlock_controller{
 	cycle_to_external_air = 1;
@@ -6793,18 +6797,15 @@
 /obj/effect/floor_decal/corner/yellow/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/firecloset,
-/obj/structure/sign/warning/engineering_access{
-	pixel_x = 0;
-	pixel_y = 32
-	},
 /obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
 	},
 /obj/machinery/power/apc{
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/foyer)
@@ -6830,7 +6831,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/engineering/engine_room)
+/area/engineering/engine_monitoring)
 "nv" = (
 /obj/structure/table/steel,
 /obj/item/device/flashlight/lamp/green,
@@ -7949,6 +7950,10 @@
 /obj/machinery/pager/engineering{
 	pixel_x = 32;
 	pixel_y = -5
+	},
+/obj/structure/sign/warning/engineering_access{
+	pixel_x = 0;
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/foyer)
@@ -15293,7 +15298,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/engineering/engine_room)
+/area/engineering/engine_monitoring)
 "HW" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 9
@@ -15603,6 +15608,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_monitoring)
+"Jc" = (
+/obj/structure/closet/secure_closet/engineering_torch,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/light,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/engineering/locker_room)
 "Jd" = (
 /obj/structure/table/steel,
 /obj/item/clothing/gloves/insulated,
@@ -15795,7 +15806,6 @@
 "Jv" = (
 /obj/structure/closet/secure_closet/engineering_senior,
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/light,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "Jx" = (
@@ -16812,6 +16822,9 @@
 "NB" = (
 /obj/structure/closet/secure_closet/engineering_welding,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/camera/network/engineering{
+	c_tag = "Engineering - Locker Room 2"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "NC" = (
@@ -17106,13 +17119,7 @@
 /area/hallway/primary/seconddeck/fore)
 "Ot" = (
 /obj/structure/closet/secure_closet/engineering_torch,
-/obj/machinery/camera/network/engineering{
-	c_tag = "Engineering - Locker Room 2"
-	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/structure/noticeboard{
 	pixel_y = 32
 	},
@@ -17534,6 +17541,14 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/engineering/bluespace)
+"PI" = (
+/obj/structure/closet/secure_closet/engineering_torch,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/engineering/locker_room)
 "PK" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Auxilary Bays"
@@ -39790,11 +39805,11 @@ Je
 ee
 iF
 vc
-kH
+PI
 RI
 lz
 MK
-kH
+Jc
 vc
 pw
 Oy
