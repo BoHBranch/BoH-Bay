@@ -45,7 +45,7 @@
 	containername = "Caja de caja de minerales"
 
 /decl/hierarchy/supply_pack/operations/webbing
-	name = "Gear - chaleco, vests, holsters."
+	name = "Equipo - webbing, chalecos, fundas."
 	num_contained = 4
 	contains = list(/obj/item/clothing/accessory/storage/holster,
 					/obj/item/clothing/accessory/storage/black_vest,
