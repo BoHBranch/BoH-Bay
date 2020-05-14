@@ -88,7 +88,7 @@
 		/obj/item/device/gps,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/head/helmet/solgov/security,
-		/obj/item/clothing/accessory/storage/black_vest
+		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/device/radio/headset/infantry/alt
 		)
 
@@ -114,7 +114,7 @@
 		/obj/item/weapon/plastique,
 		/obj/item/weapon/plastique,
 		/obj/item/clothing/head/helmet/solgov/security,
-		/obj/item/clothing/accessory/storage/black_vest
+		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/device/radio/headset/inftech/alt
 		)
 
@@ -154,7 +154,7 @@
 		/obj/item/device/megaphone,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/head/helmet/solgov/security,
-		/obj/item/clothing/accessory/storage/black_vest
+		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/device/radio/headset/infcom/alt
 		)
 
