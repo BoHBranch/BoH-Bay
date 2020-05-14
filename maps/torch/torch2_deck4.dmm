@@ -369,7 +369,7 @@
 	name = "Aux Medical"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "bb" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/machinery/button/blast_door{
@@ -456,7 +456,7 @@
 /area/shuttle/escape_pod1/station)
 "bj" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "bk" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -513,7 +513,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/foreport)
 "bq" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/machinery/alarm{
 	dir = 4;
 	icon_state = "alarm0";
@@ -522,7 +521,7 @@
 	},
 /obj/item/weapon/storage/firstaid/o2,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "br" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -541,10 +540,9 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "bs" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/item/bodybag,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "bt" = (
 /obj/machinery/door/airlock/civilian{
 	name = "Emergency Storage"
@@ -602,7 +600,7 @@
 "bz" = (
 /obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "bA" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -624,7 +622,7 @@
 /obj/effect/decal/cleanable/cobweb2,
 /obj/machinery/chem_master,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "bC" = (
 /obj/machinery/atmospherics/binary/pump/on{
 	dir = 1;
@@ -674,9 +672,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
 "bG" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
 /obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
@@ -685,12 +680,8 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "bH" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -698,7 +689,7 @@
 	},
 /obj/item/weapon/grenade/chem_grenade/cleaner,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "bI" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -734,12 +725,12 @@
 	},
 /obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "bL" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/storage/firstaid/regular,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "bM" = (
 /obj/effect/shuttle_landmark/merchant/out,
 /turf/space,
@@ -762,12 +753,16 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
@@ -777,14 +772,8 @@
 "bQ" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "bR" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 8
-	},
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 4;
@@ -792,7 +781,7 @@
 	},
 /obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "bS" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -822,12 +811,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "bW" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -842,7 +825,7 @@
 	},
 /obj/machinery/light,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "bX" = (
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
@@ -888,13 +871,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "ca" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	icon_state = "map-scrubbers";
-	dir = 1
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -906,30 +882,18 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "cb" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "cc" = (
 /obj/effect/wallframe_spawn/reinforced,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "cd" = (
 /obj/structure/railing/mapped,
 /obj/structure/lattice,
@@ -999,7 +963,7 @@
 "cj" = (
 /obj/effect/paint/sun,
 /turf/simulated/wall/prepainted,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "ck" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/vault/bolted{
@@ -1020,8 +984,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/fourthdeck)
 "cl" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -1029,11 +991,11 @@
 	},
 /obj/structure/door_assembly,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "cm" = (
 /obj/effect/paint/silver,
 /turf/simulated/wall/prepainted,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "cn" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
@@ -1078,8 +1040,6 @@
 /turf/simulated/wall/prepainted,
 /area/maintenance/fourthdeck/aft)
 "cs" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -1087,7 +1047,7 @@
 	},
 /obj/structure/door_assembly/door_assembly_hatch,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "ct" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/fourthdeck/fore)
@@ -1145,7 +1105,7 @@
 "cz" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/prepainted,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "cA" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -1189,13 +1149,10 @@
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod2/station)
 "cD" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
-	},
 /obj/item/frame/apc,
 /obj/structure/table/reinforced,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "cE" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 6
@@ -1209,27 +1166,18 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/captainmess)
 "cF" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	pixel_y = 0
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "cG" = (
 /obj/random/obstruction,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "cH" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 4;
@@ -1237,15 +1185,12 @@
 	},
 /obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "cI" = (
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
 "cJ" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -1257,7 +1202,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "cK" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance,
@@ -1285,7 +1230,7 @@
 	},
 /obj/machinery/door/airlock/hatch/maintenance,
 /turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "cM" = (
 /obj/structure/catwalk,
 /turf/simulated/open,
@@ -1341,7 +1286,7 @@
 	},
 /obj/item/clothing/mask/plunger,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "cT" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -1400,7 +1345,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
 "cX" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
@@ -1415,7 +1359,7 @@
 	},
 /obj/random/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "cY" = (
 /obj/structure/catwalk,
 /obj/effect/floor_decal/industrial/warning{
@@ -1438,7 +1382,6 @@
 /turf/simulated/floor/crystal,
 /area/crew_quarters/adherent)
 "db" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/vending/wallmed1{
 	dir = 4;
 	name = "Emergency NanoMed";
@@ -1446,12 +1389,12 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "dc" = (
 /obj/structure/cable/green,
 /obj/random/junk,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "dd" = (
 /obj/machinery/door/airlock/external/escapepod{
 	frequency = 1380;
@@ -1464,23 +1407,17 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "de" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 4
-	},
 /obj/machinery/optable,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "df" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
 /obj/machinery/light{
 	dir = 4
 	},
 /obj/structure/table/reinforced,
 /obj/item/weapon/storage/firstaid/surgery,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "dg" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/storage/auxillary/starboard)
@@ -1512,15 +1449,12 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "di" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
-	},
 /obj/machinery/light{
 	dir = 8
 	},
 /obj/random/hostile/maint,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "dj" = (
 /obj/structure/bed/chair/shuttle{
 	tag = "icon-shuttle_chair_preview (NORTH)";
@@ -1566,13 +1500,6 @@
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
-"do" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
-	},
-/obj/random/maintenance,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
 "dp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1597,11 +1524,11 @@
 /obj/structure/table/reinforced,
 /obj/item/weapon/stock_parts/circuitboard/vitals_monitor,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "dr" = (
 /obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/fourthdeck/foreport)
+/area/maintenance/aux_med)
 "ds" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/structure/cable{
@@ -9999,6 +9926,9 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
+"EK" = (
+/turf/simulated/wall/prepainted,
+/area/maintenance/aux_med)
 "EM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/structure/catwalk,
@@ -15467,6 +15397,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
 /area/command/pathfinder)
+"VV" = (
+/turf/simulated/wall/r_wall/hull,
+/area/maintenance/aux_med)
 "VW" = (
 /turf/simulated/wall/prepainted,
 /area/maintenance/waterstore)
@@ -29275,7 +29208,7 @@ vu
 ew
 xZ
 zv
-Dc
+EK
 bj
 bj
 bj
@@ -29283,7 +29216,7 @@ bj
 bj
 bj
 bj
-DT
+VV
 WZ
 cv
 aa
@@ -29477,7 +29410,7 @@ vv
 eu
 nx
 Le
-Dc
+EK
 bq
 bG
 bQ
@@ -29485,7 +29418,7 @@ cj
 cD
 cS
 de
-DT
+VV
 DT
 aa
 aa
@@ -29679,7 +29612,7 @@ vw
 wF
 LJ
 mh
-Dc
+EK
 bs
 bH
 bR
@@ -29687,7 +29620,7 @@ cl
 cF
 cX
 df
-DT
+VV
 DT
 aa
 aa
@@ -29889,7 +29822,7 @@ cm
 cm
 cm
 cm
-DT
+VV
 DT
 aa
 aa
@@ -30083,7 +30016,7 @@ vy
 eg
 nx
 Bm
-Dc
+EK
 bL
 dq
 ca
@@ -30091,7 +30024,7 @@ cs
 cH
 db
 di
-DT
+VV
 DT
 aa
 aa
@@ -30285,15 +30218,15 @@ vz
 eg
 nx
 ZZ
-Dc
+EK
 bB
 dr
 cb
 cz
 cJ
 dc
-do
-DT
+bz
+VV
 DT
 aa
 aa
@@ -30487,15 +30420,15 @@ wF
 wF
 Pv
 zy
-Dc
-Dc
-Dc
+EK
+EK
+EK
 cc
 cz
 cL
 cz
 cz
-DT
+VV
 DT
 aa
 aa
