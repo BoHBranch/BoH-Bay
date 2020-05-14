@@ -1,0 +1,57 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/simulated/wall/titanium,/area/template_noop)
+"c" = (/obj/structure/shuttle/engine/propulsion,/turf/template_noop,/area/template_noop)
+"d" = (/turf/simulated/floor/shuttle/darkred,/area/template_noop)
+"e" = (/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+"f" = (/obj/effect/landmark/clear,/turf/template_noop,/area/template_noop)
+"g" = (/obj/effect/landmark/scorcher,/obj/effect/landmark/clear,/turf/template_noop,/area/template_noop)
+"h" = (/obj/effect/landmark/clear,/obj/effect/landmark/corpse/russian/masked,/turf/template_noop,/area/template_noop)
+"i" = (/obj/effect/landmark/clear,/obj/effect/gibspawner/human,/turf/template_noop,/area/template_noop)
+"j" = (/mob/living/simple_animal/hostile/syndicate,/turf/simulated/floor/shuttle/darkred,/area/template_noop)
+"k" = (/obj/effect/landmark/clear,/mob/living/simple_animal/hostile/syndicate/melee,/turf/template_noop,/area/template_noop)
+"l" = (/obj/effect/landmark/scorcher,/obj/effect/landmark/clear,/mob/living/simple_animal/hostile/syndicate/melee,/turf/template_noop,/area/template_noop)
+"m" = (/obj/effect/landmark/clear,/mob/living/simple_animal/hostile/syndicate/ranged,/turf/template_noop,/area/template_noop)
+"n" = (/obj/structure/bed/chair/shuttle/black{dir = 4; icon_state = "shuttle_chair_preview"},/turf/simulated/floor/shuttle/darkred,/area/template_noop)
+"o" = (/obj/structure/bed/chair/shuttle/black{icon_state = "shuttle_chair_preview"; dir = 8},/turf/simulated/floor/shuttle/darkred,/area/template_noop)
+"p" = (/obj/structure/bed/chair/shuttle/black{dir = 1},/turf/simulated/floor/shuttle/darkred,/area/template_noop)
+"q" = (/obj/structure/table/reinforced,/obj/random/mre,/obj/machinery/light/small/red{dir = 1},/turf/simulated/floor/shuttle/darkred,/area/template_noop)
+"r" = (/obj/machinery/computer/dummy,/obj/machinery/light/small/red{dir = 1},/turf/simulated/floor/shuttle/darkred,/area/template_noop)
+"s" = (/obj/structure/table/reinforced,/obj/random/projectile,/obj/machinery/light/small/red{dir = 1},/turf/simulated/floor/shuttle/darkred,/area/template_noop)
+"t" = (/obj/structure/table/reinforced,/obj/random/energy,/obj/machinery/light/small/red,/turf/simulated/floor/shuttle/darkred,/area/template_noop)
+"u" = (/obj/structure/table/reinforced,/obj/random/firstaid,/obj/machinery/light/small/red,/turf/simulated/floor/shuttle/darkred,/area/template_noop)
+"v" = (/obj/effect/landmark/scorcher,/obj/effect/landmark/clear,/obj/random/projectile,/turf/template_noop,/area/template_noop)
+"w" = (/obj/effect/landmark/clear,/obj/random/projectile,/turf/template_noop,/area/template_noop)
+"x" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/shuttle/darkred,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaeeeaaaaaaaaaaaaaaaaa
+aaaaaaaaeeebeeeaaaaaaaaaaaaaaa
+aaaaaaaaeebbbeeaaaaaaaaaaaaaaa
+aaaaaeeeebbrbbeeeeaaaaaaaaaaaa
+aaaaaeebbbbpbbbbeeaaaaaaaaaaaa
+aaaaaebbbbqjsbbbbeaaaaaffffaaa
+aaaaaebbabndobabbeaaaaaffffaaa
+aaaaaaccabndobaccaaaaaaffffaaa
+aaaaaaaaabndobaaaaaaaaafkfhaaa
+aaaaaeebbbtdubbbeeaaaaaffffaaa
+aaaaaebbbbbxbbbbbeaaaaaffifaaa
+aaaaaebbcfffffcbbeaaaffifffaaa
+aaaaaeccglgggggcceaaaffffwfaaa
+aaaaagggfgggggmgggaaaffhfkfaaa
+aaaaaffmfgggggffffaaaffffffaaa
+aaaaaffffggvggffffaaaffffffaaa
+aaaaagfffgggggfffgaaaaaaaaaaaa
+aaaaaaaaaeeeeeaaaaaaaaaaaaaaaa
+aaaaaaeeeeeeeeeeeaaaaaaaaaaaaa
+aaaaaaaeeeeeeeeeeaaaaaaaaaaaaa
+aaaaaeaeeeeeeeeeeeaaaaaaaaaaaa
+aaaaaaaaaaaaaeeeeaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

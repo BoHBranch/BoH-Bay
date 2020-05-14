@@ -30,6 +30,11 @@
 "ah" = (
 /turf/simulated/floor/asteroid,
 /area/space)
+"ai" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/retaliate/malf_drone/syndi,
+/turf/simulated/floor/tiled,
+/area/smugglers/dorms)
 "aj" = (
 /obj/item/ammo_casing/pistol/magnum{
 	pixel_x = 5;
@@ -100,6 +105,31 @@
 	d2 = 2
 	},
 /turf/simulated/floor/airless,
+/area/smugglers/base)
+"as" = (
+/mob/living/simple_animal/hostile/retaliate/malf_drone/syndi,
+/turf/simulated/floor/tiled,
+/area/smugglers/office)
+"at" = (
+/obj/structure/cable,
+/obj/structure/cable{
+	d1 = 32;
+	d2 = 4;
+	icon_state = "32-4"
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	dir = 4;
+	pixel_y = 0;
+	d1 = 16;
+	d2 = 0
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor,
 /area/smugglers/base)
 "au" = (
 /obj/item/device/flashlight/flare/glowstick/yellow{
@@ -280,6 +310,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 4
 	},
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
 /turf/simulated/floor,
 /area/smugglers/base)
 "aI" = (
@@ -446,8 +477,7 @@
 /area/smugglers/base)
 "aX" = (
 /obj/structure/table/rack{
-	dir = 8;
-	
+	dir = 8
 	},
 /obj/item/clothing/mask/breath,
 /turf/simulated/floor,
@@ -499,8 +529,7 @@
 /area/smugglers/base)
 "bf" = (
 /obj/structure/table/rack{
-	dir = 8;
-	
+	dir = 8
 	},
 /obj/item/weapon/tank/air{
 	pixel_x = 5
@@ -548,8 +577,7 @@
 /area/smugglers/base)
 "bm" = (
 /obj/structure/table/rack{
-	dir = 8;
-	
+	dir = 8
 	},
 /obj/random/voidsuit,
 /obj/random/voidhelmet,
@@ -565,6 +593,7 @@
 	pixel_x = 10;
 	pixel_y = -5
 	},
+/mob/living/simple_animal/hostile/syndicate/melee/space,
 /turf/simulated/floor/asteroid,
 /area/mine/explored)
 "bp" = (
@@ -803,9 +832,9 @@
 /turf/simulated/floor,
 /area/smugglers/base)
 "bP" = (
-/mob/living/simple_animal/hostile/retaliate/malf_drone,
-/turf/simulated/floor/tiled,
-/area/smugglers/office)
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor,
+/area/smugglers/base)
 "bQ" = (
 /turf/simulated/floor/tiled,
 /area/smugglers/office)
@@ -924,6 +953,15 @@
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/airless/ceiling,
 /area/smugglers/dorms)
+"ck" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor,
+/area/smugglers/base)
 "cl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1017,11 +1055,9 @@
 /turf/simulated/floor/tiled,
 /area/smugglers/dorms)
 "cz" = (
-/obj/structure/bed,
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/retaliate/malf_drone,
-/turf/simulated/floor/tiled,
-/area/smugglers/dorms)
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor,
+/area/smugglers/base)
 "cA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/trash,
@@ -1038,10 +1074,18 @@
 /obj/effect/shuttle_landmark/nav_asteroid_base/nav2,
 /turf/space,
 /area/space)
+"cD" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/asteroid,
+/area/mine/explored)
 "cE" = (
 /obj/effect/shuttle_landmark/nav_asteroid_base/nav1,
 /turf/space,
 /area/space)
+"cF" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/asteroid,
+/area/mine/explored)
 "db" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/landmark/corpse/doctor,
@@ -4255,13 +4299,13 @@ af
 af
 af
 aw
-aO
+ck
 aZ
 bd
 bq
 bx
 aZ
-bd
+bP
 aZ
 cc
 ce
@@ -4371,7 +4415,7 @@ cm
 cs
 cc
 cy
-cm
+ai
 ca
 ac
 ac
@@ -4472,7 +4516,7 @@ cg
 cm
 ct
 cc
-cz
+cx
 cm
 ca
 ac
@@ -4561,7 +4605,7 @@ ah
 an
 af
 az
-aQ
+at
 bc
 bj
 bt
@@ -4667,7 +4711,7 @@ aO
 bd
 bd
 bd
-bd
+cz
 bd
 bM
 bU
@@ -4784,7 +4828,7 @@ ca
 ac
 ac
 ab
-ab
+cD
 ab
 ab
 ab
@@ -4869,7 +4913,7 @@ ar
 aC
 aS
 aZ
-bd
+bP
 bd
 bd
 bd
@@ -5093,7 +5137,7 @@ aM
 ab
 ab
 ab
-ab
+cF
 ab
 ab
 ab
@@ -5281,7 +5325,7 @@ bl
 bv
 bD
 bK
-bP
+as
 bY
 bw
 ac
@@ -5603,7 +5647,7 @@ ab
 ab
 ab
 ab
-ab
+cD
 ab
 ab
 ab
@@ -6498,7 +6542,7 @@ ab
 aj
 ac
 ac
-ab
+cD
 ab
 ab
 ab
@@ -7112,7 +7156,7 @@ ab
 ab
 ab
 ab
-ab
+cF
 ac
 ab
 aM

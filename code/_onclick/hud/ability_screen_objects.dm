@@ -163,8 +163,8 @@
 		ability_master.toggle_open(1)
 
 /mob/Initialize()
-	. = ..()
 	ability_master = new /obj/screen/movable/ability_master(null,src)
+	. = ..()
 
 ///////////ACTUAL ABILITIES////////////
 //This is what you click to do things//
