@@ -47,6 +47,9 @@
 	real_name = name
 	add_language(LANGUAGE_CULT)
 	add_language(LANGUAGE_CULT_GLOBAL)
+
+/mob/living/simple_animal/construct/Initialize()
+	. = ..()
 	for(var/spell in construct_spells)
 		src.add_spell(new spell, "const_spell_ready")
 	update_icon()
@@ -124,7 +127,7 @@
 /mob/living/simple_animal/construct/armoured/Life()
 	weakened = 0
 	if ((. = ..()))
-		return 
+		return
 
 /mob/living/simple_animal/construct/armoured/bullet_act(var/obj/item/projectile/P)
 	if(istype(P, /obj/item/projectile/energy) || istype(P, /obj/item/projectile/beam))
