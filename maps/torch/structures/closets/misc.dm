@@ -78,7 +78,7 @@
 		/obj/item/clothing/accessory/badge/nanotrasen,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/device/radio/headset/heads/torchntcommand,
-		/obj/item/device/radio/headset/heads/torchntcommand/alt,
+		/obj/item/device/radio/headset/heads/torchntcommand/alt
 		)
 
 /obj/structure/closet/secure_closet/representative
