@@ -2,6 +2,7 @@
 	title = "Unishi Crew"
 	total_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/unishi/crew
+	is_semi_antagonist = TRUE
 	supervisors = "your survival"
 	info = "You remember waking up to alarms blaring in your face. Before you could react, a gush of hot air blew \
 	you away, knocking you cold unconcious.  Before this happened you were a crew member \
@@ -14,6 +15,7 @@
 	supervisors = "the crew"
 	total_positions = 2
 	outfit_type = /decl/hierarchy/outfit/job/unishi/researcher
+	is_semi_antagonist = TRUE
 	info = "You remember waking up to alarms blaring in your face. Before you could react, a gush of hot air blew \
 	you away, knocking you cold unconcious. Before this happened, you were a researcher, aboard SRV Verne."
 	required_language = LANGUAGE_HUMAN_EURO
