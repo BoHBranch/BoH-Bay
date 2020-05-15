@@ -1,22 +1,22 @@
 /decl/emote/visible
 	key ="tail"
-	emote_message_3p = "USER waves USER_THEIR tail."
+	emote_message_3p = "USER agita su cola."
 	message_type = VISIBLE_MESSAGE
 
 /decl/emote/visible/scratch
 	key = "scratch"
 	check_restraints = TRUE
-	emote_message_3p = "USER scratches."
+	emote_message_3p = "USER rasguna."
 
 /decl/emote/visible/drool
 	key ="drool"
-	emote_message_3p = "USER drools."
+	emote_message_3p = "USER babea."
 	conscious = 0
 
 /decl/emote/visible/nod
 	key ="nod"
-	emote_message_3p_target = "USER nods USER_THEIR head at TARGET."
-	emote_message_3p = "USER nods USER_THEIR head."
+	emote_message_3p_target = "USER asiente con su cabeza a TARGET."
+	emote_message_3p = "USER asiente con su cabeza."
 
 /decl/emote/visible/sway
 	key ="sway"
@@ -29,34 +29,34 @@
 /decl/emote/visible/dance
 	key ="dance"
 	check_restraints = TRUE
-	emote_message_3p = "USER dances around happily."
+	emote_message_3p = "USER baila felizmente."
 
 /decl/emote/visible/dance_f
 	key ="dance_f"
 	check_restraints = TRUE
-	emote_message_3p = "USER dances furiously!"
+	emote_message_3p = "USER baila furiosamente!"
 
 /decl/emote/visible/roll
 	key ="roll"
 	check_restraints = TRUE
-	emote_message_3p = "USER rolls."
+	emote_message_3p = "USER rueda."
 
 /decl/emote/visible/shake
 	key ="shake"
-	emote_message_3p = "USER shakes USER_THEIR head."
+	emote_message_3p = "USER agita su cabeza."
 
 /decl/emote/visible/jump
 	key ="jump"
-	emote_message_3p = "USER jumps!"
+	emote_message_3p = "USER salta!"
 
 /decl/emote/visible/shiver
 	key ="shiver"
-	emote_message_3p = "USER shivers."
+	emote_message_3p = "le recorre a USER un escalofrio."
 	conscious = 0
 
 /decl/emote/visible/collapse
 	key ="collapse"
-	emote_message_3p = "USER collapses!"
+	emote_message_3p = "USER colapsa!"
 
 /decl/emote/visible/collapse/do_extra(var/mob/user)
 	if(istype(user))
@@ -64,11 +64,11 @@
 
 /decl/emote/visible/flash
 	key = "flash"
-	emote_message_3p = "The lights on USER flash quickly."
+	emote_message_3p = "La luz en USER ilumina rapidamente."
 
 /decl/emote/visible/blink
 	key = "blink"
-	emote_message_3p = "USER blinks."
+	emote_message_3p = "USER parpadea."
 
 /decl/emote/visible/airguitar
 	key = "airguitar"
@@ -338,7 +338,7 @@
 
 /decl/emote/visible/tilt
 	key = "tilt"
-	emote_message_3p = "USER tilts USER_THEIR head."
+	emote_message_3p = "USER se inclina a la cabeza de USER_THEIR."
 
 /decl/emote/visible/attention
 	key = "attention"

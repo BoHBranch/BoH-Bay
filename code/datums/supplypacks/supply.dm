@@ -1,15 +1,15 @@
 /decl/hierarchy/supply_pack/supply
-	name = "Supplies - Comissary"
+	name = "Suministros - Comisario"
 	containertype = /obj/structure/closet/crate
 
 /decl/hierarchy/supply_pack/supply/toner
-	name = "Refills - Toner cartridges"
+	name = "Recargas - Cartuchos de tinta"
 	contains = list(/obj/item/device/toner = 3)
 	cost = 10
-	containername = "toner cartridges"
+	containername = "caja de cartuchos de tinta"
 
 /decl/hierarchy/supply_pack/supply/cardboard_sheets
-	name = "Material - cardboard sheets (50)"
+	name = "Material - Laminas de carton (50)"
 	contains = list(/obj/item/stack/material/cardboard/fifty)
 	cost = 10
 	containername = "cardboard sheets crate"
@@ -39,20 +39,20 @@
 	containername = "barricade tape crate"
 
 /decl/hierarchy/supply_pack/supply/scanner_module
-	name = "Electronics - Paper scanner modules"
+	name = "Electronicos - Modulos de escaner de papel"
 	contains = list(/obj/item/weapon/stock_parts/computer/scanner/paper = 4)
 	cost = 20
-	containername = "paper scanner module crate"
+	containername = "caja de modulos de escaner de paper"
 
 /decl/hierarchy/supply_pack/supply/spare_pda
-	name = "Electronics - Spare PDAs"
+	name = "Electronicos - Spare PDAs"
 	contains = list(/obj/item/modular_computer/pda = 3)
 	cost = 10
 	containername = "spare PDA crate"
 
 /decl/hierarchy/supply_pack/supply/eftpos
 	contains = list(/obj/item/device/eftpos)
-	name = "Electronics - EFTPOS scanner"
+	name = "Electronicos - EFTPOS escaner"
 	cost = 10
 	containername = "\improper EFTPOS crate"
 
@@ -112,18 +112,18 @@
 	containername = "coolant tank crate"
 
 /decl/hierarchy/supply_pack/supply/fueltank
-	name = "Liquid - Fuel tank"
+	name = "Liquido - Tanque de combustible"
 	contains = list(/obj/structure/reagent_dispensers/fueltank)
 	cost = 8
 	containertype = /obj/structure/largecrate
-	containername = "fuel tank crate"
+	containername = "caja de combustible"
 
 /decl/hierarchy/supply_pack/supply/watertank
-	name = "Liquid - Water tank"
+	name = "Liquido - Tanque de agua"
 	contains = list(/obj/structure/reagent_dispensers/watertank)
 	cost = 8
 	containertype = /obj/structure/largecrate
-	containername = "water tank crate"
+	containername = "caja de tanque de agua"
 
 //replacement vendors
 //Vending Machines
