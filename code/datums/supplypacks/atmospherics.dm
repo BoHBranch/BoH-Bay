@@ -110,7 +110,7 @@
 	containername = "caja de tanque de phoron"
 
 /decl/hierarchy/supply_pack/atmospherics/voidsuit
-	name = "EVA - Atmospherics voidsuit"
+	name = "EVA - Voidsuit atmosfericos"
 	contains = list(/obj/item/clothing/suit/space/void/atmos/alt,
 					/obj/item/clothing/head/helmet/space/void/atmos/alt,
 					/obj/item/clothing/shoes/magboots)
