@@ -101,7 +101,7 @@
 
 /decl/emote/visible/eyebrow
 	key = "eyebrow"
-	emote_message_3p = "USER raises an eyebrow."
+	emote_message_3p = "USER levanta una ceja."
 
 /decl/emote/visible/twitch
 	key = "twitch"
@@ -123,7 +123,7 @@
 
 /decl/emote/visible/frown
 	key = "frown"
-	emote_message_3p = "USER frowns."
+	emote_message_3p = "USER frunce el ceño."
 
 /decl/emote/visible/blush
 	key = "blush"
@@ -141,8 +141,8 @@
 
 /decl/emote/visible/stare
 	key = "stare"
-	emote_message_3p_target = "USER stares at TARGET."
-	emote_message_3p = "USER stares."
+	emote_message_3p_target = "USER mira fijamente a TARGET."
+	emote_message_3p = "USER mira fijamente."
 
 /decl/emote/visible/look
 	key = "look"
@@ -158,7 +158,7 @@
 /decl/emote/visible/raise
 	key = "raise"
 	check_restraints = TRUE
-	emote_message_3p = "USER raises a hand."
+	emote_message_3p = "USER levanta la mano."
 
 /decl/emote/visible/grin
 	key = "grin"
@@ -176,11 +176,11 @@
 
 /decl/emote/visible/pale
 	key = "pale"
-	emote_message_3p = "USER goes pale for a second."
+	emote_message_3p = "USER se pone palido por un momento."
 
 /decl/emote/visible/tremble
 	key = "tremble"
-	emote_message_3p = "USER trembles in fear!"
+	emote_message_3p = "USER tiembla de miedo!"
 
 /decl/emote/visible/wink
 	key = "wink"
@@ -190,8 +190,8 @@
 /decl/emote/visible/hug
 	key = "hug"
 	check_restraints = TRUE
-	emote_message_3p_target = "USER hugs TARGET."
-	emote_message_3p = "USER hugs USER_SELF."
+	emote_message_3p_target = "USER abraza a TARGET."
+	emote_message_3p = "USER se abraza asi mismo."
 
 /decl/emote/visible/dap
 	key = "dap"
@@ -221,7 +221,7 @@
 
 /decl/emote/visible/vibrate
 	key = "vibrate"
-	emote_message_3p = "USER vibrates!"
+	emote_message_3p = "USER vibra!"
 
 /decl/emote/visible/deathgasp_robot
 	key = "deathgasp"
@@ -231,7 +231,7 @@
 	key = "handshake"
 	check_restraints = TRUE
 	emote_message_3p_target = "USER le da un apreton de manos a TARGET."
-	emote_message_3p = "USER le da un aprenton de manos a USER_SELF."
+	emote_message_3p = "USER le da un apreton de manos a USER_SELF."
 	message_type = VISIBLE_MESSAGE
 
 /decl/emote/visible/handshake/get_emote_message_3p(var/atom/user, var/atom/target, var/extra_params)
@@ -342,5 +342,5 @@
 
 /decl/emote/visible/attention
 	key = "attention"
-	emote_message_3p = "USER snaps to attention!"
-	emote_message_3p_target = "USER snaps to attention at TARGET!"
+	emote_message_3p = "USER chasquea para llamar la antencion!"
+	emote_message_3p_target = "USER chasquea sus dedos para llamar la atencion de TARGET!"
