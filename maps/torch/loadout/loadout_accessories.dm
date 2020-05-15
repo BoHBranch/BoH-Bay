@@ -70,8 +70,13 @@
 	allowed_branches = list(/datum/mil_branch/fleet)
 
 /datum/gear/accessory/armband_ma
-	display_name = "master at arms brassard"
+	display_name = "master-at-arms brassard"
 	path = /obj/item/clothing/accessory/armband/solgov/ma
+	allowed_roles = SECURITY_ROLES
+
+/datum/gear/accessory/armband_mp
+	display_name = "military police brassard"
+	path = /obj/item/clothing/accessory/armband/solgov/mp
 	allowed_roles = SECURITY_ROLES
 
 /datum/gear/accessory/armband_security
