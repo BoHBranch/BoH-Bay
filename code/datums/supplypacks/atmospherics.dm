@@ -38,54 +38,54 @@
 	containername = "caja de RPD"
 
 /decl/hierarchy/supply_pack/atmospherics/canister_empty
-	name = "Equipamiento - Empty gas canister"
+	name = "Equipamiento - Bombona vacia"
 	contains = list(/obj/machinery/portable_atmospherics/canister)
 	cost = 7
-	containername = "empty gas canister crate"
+	containername = "caja de bombona vacia"
 	containertype = /obj/structure/largecrate
 
 /decl/hierarchy/supply_pack/atmospherics/canister_air
-	name = "Gas - Air canister"
+	name = "Gas - Bombona de aire"
 	contains = list(/obj/machinery/portable_atmospherics/canister/air)
 	cost = 10
-	containername = "air canister crate"
+	containername = "Caja de bombona de aire"
 	containertype = /obj/structure/largecrate
 
 /decl/hierarchy/supply_pack/atmospherics/canister_oxygen
-	name = "Gas - Oxygen canister"
+	name = "Gas - Bombona de oxigeno"
 	contains = list(/obj/machinery/portable_atmospherics/canister/oxygen)
 	cost = 15
-	containername = "oxygen canister crate"
+	containername = "Caja de bombona de oxigeno"
 	containertype = /obj/structure/largecrate
 
 /decl/hierarchy/supply_pack/atmospherics/canister_nitrogen
-	name = "Gas - Nitrogen canister"
+	name = "Gas - Bombona de nitrogeno"
 	contains = list(/obj/machinery/portable_atmospherics/canister/nitrogen)
 	cost = 10
-	containername = "nitrogen canister crate"
+	containername = "caja de bombona de nitrogeno"
 	containertype = /obj/structure/largecrate
 
 /decl/hierarchy/supply_pack/atmospherics/canister_phoron
-	name = "Gas - Phoron gas canister"
+	name = "Gas - Bombona de Pharon"
 	contains = list(/obj/machinery/portable_atmospherics/canister/phoron)
 	cost = 70
-	containername = "phoron gas canister crate"
+	containername = "caja de bombona de phoron"
 	containertype = /obj/structure/closet/crate/secure/large
 	access = access_atmospherics
 
 /decl/hierarchy/supply_pack/atmospherics/canister_hydrogen
-	name = "Gas - Hydrogen canister"
+	name = "Gas - Bombona de hidrogeno"
 	contains = list(/obj/machinery/portable_atmospherics/canister/hydrogen)
 	cost = 25
-	containername = "hydrogen canister crate"
+	containername = "caja de bombona de hidrogeno"
 	containertype = /obj/structure/closet/crate/secure/large
 	access = access_atmospherics
 
 /decl/hierarchy/supply_pack/atmospherics/canister_sleeping_agent
-	name = "Gas - Nitrous oxide gas canister"
+	name = "Gas - Bombona de N2O"
 	contains = list(/obj/machinery/portable_atmospherics/canister/sleeping_agent)
 	cost = 40
-	containername = "\improper N2O gas canister crate"
+	containername = "\improper caja de bombona de N2O"
 	containertype = /obj/structure/closet/crate/secure/large
 	access = access_atmospherics
 
@@ -93,7 +93,7 @@
 	name = "Gas - Bombona de gas de dioxido de carbono"
 	contains = list(/obj/machinery/portable_atmospherics/canister/carbon_dioxide)
 	cost = 40
-	containername = "\improper CO2 canister crate"
+	containername = "\improper caja de bombona de CO2"
 	containertype = /obj/structure/closet/crate/secure/large
 	access = access_atmospherics
 
