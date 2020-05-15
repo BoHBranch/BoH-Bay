@@ -747,10 +747,6 @@
 	name = "\improper Unused Chapel"
 	icon_state = "chapel"
 
-/area/vacant/infirmary
-	name = "\improper Auxiliary Infirmary"
-	icon_state = "medbay"
-
 /area/vacant/prototype
 	req_access = list(access_engine)
 
@@ -1206,14 +1202,6 @@
 	ambience = list()
 	sound_env = MEDIUM_SOFTFLOOR
 
-/area/bridge/disciplinary_board_room
-	name = "\improper Disciplinary Board Room"
-	sound_env = SMALL_ENCLOSED
-
-/area/bridge/disciplinary_board_room/deliberation
-	name = "\improper Deliberation Room"
-	sound_env = SMALL_ENCLOSED
-
 /area/crew_quarters/heads
 	icon_state = "head_quarters"
 	req_access = list(access_heads)
@@ -1304,6 +1292,10 @@
 
 /area/maintenance/waterstore
 	name = "\improper Cistern"
+	icon_state = "disposal"
+
+/area/maintenance/aux_med
+	name = "\improper Aux. Medical"
 	icon_state = "disposal"
 
 // Storage
