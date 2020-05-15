@@ -15,8 +15,8 @@
 
 /decl/emote/visible/nod
 	key ="nod"
-	emote_message_3p_target = "USER asiente con su cabeza a TARGET."
-	emote_message_3p = "USER asiente con su cabeza."
+	emote_message_3p_target = "USER asiente con la cabeza a TARGET."
+	emote_message_3p = "USER asiente con la cabeza."
 
 /decl/emote/visible/sway
 	key ="sway"
@@ -43,7 +43,7 @@
 
 /decl/emote/visible/shake
 	key ="shake"
-	emote_message_3p = "USER agita su cabeza."
+	emote_message_3p = "USER agita su cabeza hacia los lados."
 
 /decl/emote/visible/jump
 	key ="jump"
@@ -51,7 +51,7 @@
 
 /decl/emote/visible/shiver
 	key ="shiver"
-	emote_message_3p = "le recorre a USER un escalofrio."
+	emote_message_3p = "A USER le recorre un escalofrio."
 	conscious = 0
 
 /decl/emote/visible/collapse
@@ -64,7 +64,7 @@
 
 /decl/emote/visible/flash
 	key = "flash"
-	emote_message_3p = "La luz en USER ilumina rapidamente."
+	emote_message_3p = "La luz de USER ilumina rapidamente."
 
 /decl/emote/visible/blink
 	key = "blink"
@@ -77,7 +77,7 @@
 
 /decl/emote/visible/blink_r
 	key = "blink_r"
-	emote_message_3p = "USER blinks rapidly."
+	emote_message_3p = "USER parpadea rapidamente."
 
 /decl/emote/visible/bow
 	key = "bow"
@@ -92,12 +92,12 @@
 /decl/emote/visible/flap
 	key = "flap"
 	check_restraints = TRUE
-	emote_message_3p = "USER flaps USER_THEIR wings."
+	emote_message_3p = "USER aletea sus alas."
 
 /decl/emote/visible/aflap
 	key = "aflap"
 	check_restraints = TRUE
-	emote_message_3p = "USER flaps USER_THEIR wings ANGRILY!"
+	emote_message_3p = "USER aletea sus alas con RABIA!"
 
 /decl/emote/visible/eyebrow
 	key = "eyebrow"
@@ -105,12 +105,12 @@
 
 /decl/emote/visible/twitch
 	key = "twitch"
-	emote_message_3p = "USER twitches."
+	emote_message_3p = "USER tiembla."
 	conscious = 0
 
 /decl/emote/visible/twitch_v
 	key = "twitch_v"
-	emote_message_3p = "USER twitches violently."
+	emote_message_3p = "USER tiembla violentamente."
 	conscious = 0
 
 /decl/emote/visible/faint
@@ -127,12 +127,12 @@
 
 /decl/emote/visible/blush
 	key = "blush"
-	emote_message_3p = "USER blushes."
+	emote_message_3p = "USER se sonroja."
 
 /decl/emote/visible/wave
 	key = "wave"
-	emote_message_3p_target = "USER waves at TARGET."
-	emote_message_3p = "USER waves."
+	emote_message_3p_target = "USER mueve su mano a los lados en forma de saludo a TARGET."
+	emote_message_3p = "USER mueve su mano a los lados en forma de saludo."
 
 /decl/emote/visible/glare
 	key = "glare"
@@ -146,14 +146,14 @@
 
 /decl/emote/visible/look
 	key = "look"
-	emote_message_3p_target = "USER looks at TARGET."
-	emote_message_3p = "USER looks."
+	emote_message_3p_target = "USER mira a TARGET."
+	emote_message_3p = "USER observa."
 
 /decl/emote/visible/point
 	key = "point"
 	check_restraints = TRUE
-	emote_message_3p_target = "USER points to TARGET."
-	emote_message_3p = "USER points."
+	emote_message_3p_target = "USER senala a TARGET."
+	emote_message_3p = "USER señala."
 
 /decl/emote/visible/raise
 	key = "raise"
@@ -167,12 +167,12 @@
 
 /decl/emote/visible/shrug
 	key = "shrug"
-	emote_message_3p = "USER shrugs."
+	emote_message_3p = "USER levanta los hombros."
 
 /decl/emote/visible/smile
 	key = "smile"
-	emote_message_3p_target = "USER smiles at TARGET."
-	emote_message_3p = "USER smiles."
+	emote_message_3p_target = "USER sonrie a TARGET."
+	emote_message_3p = "USER sonrie."
 
 /decl/emote/visible/pale
 	key = "pale"
@@ -230,8 +230,8 @@
 /decl/emote/visible/handshake
 	key = "handshake"
 	check_restraints = TRUE
-	emote_message_3p_target = "USER shakes hands with TARGET."
-	emote_message_3p = "USER shakes hands with USER_SELF."
+	emote_message_3p_target = "USER le da un apreton de manos a TARGET."
+	emote_message_3p = "USER le da un aprenton de manos a USER_SELF."
 	message_type = VISIBLE_MESSAGE
 
 /decl/emote/visible/handshake/get_emote_message_3p(var/atom/user, var/atom/target, var/extra_params)
@@ -338,7 +338,7 @@
 
 /decl/emote/visible/tilt
 	key = "tilt"
-	emote_message_3p = "USER se inclina a la cabeza de USER_THEIR."
+	emote_message_3p = "USER ladea la cabeza."
 
 /decl/emote/visible/attention
 	key = "attention"

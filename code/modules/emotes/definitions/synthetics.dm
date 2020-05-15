@@ -1,6 +1,6 @@
 /decl/emote/audible/synth
 	key = "beep"
-	emote_message_3p = "USER beeps."
+	emote_message_3p = "USER suelta un pitido."
 	emote_sound = 'sound/machines/twobeep.ogg'
 
 /decl/emote/audible/synth/check_user(var/mob/living/user)
@@ -20,12 +20,12 @@
 
 /decl/emote/audible/synth/confirm
 	key = "confirm"
-	emote_message_3p = "USER emits an affirmative blip."
+	emote_message_3p = "USER suelta un pitido afirmativo."
 	emote_sound = 'sound/machines/synth_yes.ogg'
 
 /decl/emote/audible/synth/deny
 	key = "deny"
-	emote_message_3p = "USER emits a negative blip."
+	emote_message_3p = "USER suelta un pitido negativo."
 	emote_sound = 'sound/machines/synth_no.ogg'
 
 /decl/emote/audible/synth/security
