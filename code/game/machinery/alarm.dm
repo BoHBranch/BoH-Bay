@@ -114,7 +114,7 @@
 	target_temperature = T0C+75
 
 /obj/machinery/alarm/warm/Initialize()
-	..()
+	. = ..()
 	TLV["temperature"] =	list(T0C-26, T0C, T0C+76, T0C+78) // K
 	TLV["pressure"] =		list(ONE_ATMOSPHERE*0.80,ONE_ATMOSPHERE*0.90,ONE_ATMOSPHERE*1.25,ONE_ATMOSPHERE*1.30) /* kpa */
 
@@ -129,7 +129,7 @@
 	target_temperature = T0C+10
 
 /obj/machinery/alarm/server/Initialize()
-	..()
+	. = ..()
 	req_access = list(access_rd, access_atmospherics, access_engine_equip)
 	TLV["temperature"] =	list(T0C-26, T0C, T0C+30, T0C+40) // K
 
