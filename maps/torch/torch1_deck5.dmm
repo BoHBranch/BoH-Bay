@@ -17807,7 +17807,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel_ridged,
-/area/maintenance/fifthdeck/aftport)
+/area/quartermaster/storage)
 "So" = (
 /obj/machinery/portable_atmospherics/canister/air/airlock,
 /obj/effect/floor_decal/industrial/outline/blue,
@@ -40482,7 +40482,7 @@ Em
 Em
 Em
 Em
-gI
+Em
 zZ
 tC
 ws
@@ -40684,7 +40684,7 @@ jd
 jf
 MS
 Pj
-gI
+Em
 KU
 nz
 ws
@@ -41088,7 +41088,7 @@ hG
 Ym
 kZ
 Ym
-gI
+Em
 tt
 tE
 ws
@@ -41290,7 +41290,7 @@ ss
 Ym
 Ym
 Ym
-gI
+Em
 uh
 wD
 ws
@@ -41492,7 +41492,7 @@ ss
 Ym
 Ym
 Ym
-gI
+Em
 uh
 pu
 ws
@@ -41694,7 +41694,7 @@ mD
 jl
 gP
 OE
-gI
+Em
 uh
 uL
 ws
@@ -41896,7 +41896,7 @@ CL
 Yq
 Yq
 Yq
-gI
+Em
 XT
 pv
 ws
@@ -42098,7 +42098,7 @@ iZ
 Yi
 jp
 UL
-gI
+Em
 tw
 gI
 ws
@@ -42300,7 +42300,7 @@ Em
 Em
 Em
 Em
-gI
+Em
 ui
 ws
 ws
