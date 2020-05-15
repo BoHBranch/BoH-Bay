@@ -165,7 +165,7 @@
 	emote_message_1p_target = "<span class='notice'>You snap your fingers at TARGET twice, trying to get TARGET_THEIR attention.</span>"
 	emote_message_1p = "You snap your fingers twice."
 	emote_message_3p_target = "<span class='notice'>USER snaps USER_THEIR fingers at TARGET twice, trying to get TARGET_THEIR attention.</span>"
-	emote_message_3p = "USER snaps their fingers twice."
+	emote_message_3p = "USER snaps USER_THEIR fingers twice."
 	emote_sound = 'sound/misc/fsnap2.ogg'
 
 /decl/emote/audible/fsnap3
@@ -173,7 +173,7 @@
 	emote_message_1p_target = "<span class='notice'>You snap your fingers at TARGET three times in a row, trying to get TARGET_THEIR attention.</span>"
 	emote_message_1p = "You snap your fingers three times in a row."
 	emote_message_3p_target = "<span class='notice'>USER snaps USER_THEIR fingers at TARGET three times in a row, trying to get TARGET_THEIR attention.</span>"
-	emote_message_3p = "USER snaps their fingers three times in a row."
+	emote_message_3p = "USER snaps USER_THEIR fingers three times in a row."
 	emote_sound = 'sound/misc/fsnap3.ogg'
 
 /decl/emote/audible/bug_hiss
