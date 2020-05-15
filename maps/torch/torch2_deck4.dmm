@@ -635,11 +635,6 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment{
@@ -723,11 +718,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "bO" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
@@ -751,11 +741,6 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/aux_med)
 "bR" = (
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
 /obj/random/maintenance,
 /turf/simulated/floor/tiled/white,
 /area/maintenance/aux_med)
@@ -788,11 +773,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "bW" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/machinery/vending/wallmed1{
 	dir = 1;
 	icon_state = "wallmed";
@@ -935,14 +915,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/fourthdeck)
-"cl" = (
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/maintenance/aux_med)
 "cm" = (
 /obj/effect/paint/silver,
 /turf/simulated/wall/prepainted,
@@ -965,15 +937,6 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/aft)
-"cp" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/foreport)
 "cq" = (
 /obj/structure/hygiene/sink/kitchen{
 	pixel_x = 0;
@@ -1084,6 +1047,7 @@
 "cD" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/reagent_containers/spray/sterilizine,
+/obj/item/frame/apc,
 /turf/simulated/floor/tiled/white,
 /area/maintenance/aux_med)
 "cE" = (
@@ -1099,11 +1063,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/captainmess)
 "cF" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/random/hostile/maint,
 /turf/simulated/floor/tiled/white,
 /area/maintenance/aux_med)
@@ -1116,11 +1075,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
 "cJ" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/item/weapon/storage/firstaid/surgery,
 /turf/simulated/floor/plating,
 /area/maintenance/aux_med)
@@ -1144,11 +1098,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fourthdeck/forestarboard)
 "cL" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
 /area/maintenance/aux_med)
@@ -1201,15 +1150,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/fourthdeck)
 "cS" = (
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc{
-	dir = 8;
-	name = "west bump";
-	pixel_x = -24
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/aux_med)
 "cT" = (
@@ -1270,11 +1210,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
 "cX" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /obj/machinery/vending/wallmed1{
 	name = "Emergency NanoMed";
 	icon_state = "wallmed";
@@ -1307,11 +1242,6 @@
 /turf/simulated/floor/crystal,
 /area/crew_quarters/adherent)
 "db" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
 /obj/random/maintenance,
 /obj/item/weapon/tank/anesthetic,
 /turf/simulated/floor/tiled/white,
@@ -1488,15 +1418,6 @@
 	},
 /turf/simulated/open,
 /area/maintenance/fourthdeck/starboard)
-"dv" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/foreport)
 "dw" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -3902,11 +3823,6 @@
 /turf/simulated/floor/plating,
 /area/command/captainmess)
 "jp" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/structure/door_assembly,
 /turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/aux_med)
@@ -15308,6 +15224,9 @@
 "Vw" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/mask/breath/anesthetic,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/aux_med)
 "Vx" = (
@@ -30062,7 +29981,7 @@ Bm
 EK
 bL
 bL
-cl
+bL
 jp
 db
 di
@@ -30669,8 +30588,8 @@ dQ
 bx
 bD
 bO
-cp
-dv
+dE
+dE
 bp
 bp
 DT
