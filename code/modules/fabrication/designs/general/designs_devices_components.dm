@@ -5,6 +5,18 @@
 /datum/fabricator_recipe/device_component/keyboard
 	path = /obj/item/weapon/stock_parts/keyboard
 
+/datum/fabricator_recipe/device_component/matter_bin
+	path = /obj/item/weapon/stock_parts/matter_bin
+
+/datum/fabricator_recipe/device_component/manipulator
+	path = /obj/item/weapon/stock_parts/manipulator
+
+/datum/fabricator_recipe/device_component/micro_laser
+	path = /obj/item/weapon/stock_parts/micro_laser
+
+/datum/fabricator_recipe/device_component/capacitor
+	path = /obj/item/weapon/stock_parts/capacitor
+
 /datum/fabricator_recipe/device_component/tesla_component
 	path = /obj/item/weapon/stock_parts/power/apc/buildable
 
@@ -52,7 +64,7 @@
 	path = /obj/item/device/assembly/prox_sensor
 
 /datum/fabricator_recipe/device_component/cable_coil
-	path = /obj/item/stack/cable_coil/single
+	path = /obj/item/stack/cable_coil
 
 /datum/fabricator_recipe/device_component/electropack
 	path = /obj/item/device/radio/electropack
@@ -64,6 +76,9 @@
 
 /datum/fabricator_recipe/device_component/cell_device
 	path = /obj/item/weapon/cell/device/standard
+
+/datum/fabricator_recipe/device_component/cell
+	path = /obj/item/weapon/cell/standard
 
 /datum/fabricator_recipe/device_component/ecigcartridge
 	path = /obj/item/weapon/reagent_containers/ecig_cartridge/blank
