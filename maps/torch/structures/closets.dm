@@ -115,7 +115,10 @@
 		/obj/item/weapon/plastique,
 		/obj/item/clothing/head/helmet/solgov/security,
 		/obj/item/clothing/accessory/storage/black_vest,
-		/obj/item/device/radio/headset/inftech/alt
+		/obj/item/device/radio/headset/inftech/alt,
+		/obj/item/weapon/shield/riot/metal,
+		/obj/item/weapon/crowbar/brace_jack,
+		/obj/item/device/gps
 		)
 
 //demolocker
@@ -150,12 +153,14 @@
 		/obj/item/clothing/glasses/tacgoggles,
 		/obj/item/weapon/storage/firstaid/combat,
 		/obj/item/solbanner,
+		/obj/item/device/binoculars, 
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/device/megaphone,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/head/helmet/solgov/security,
 		/obj/item/clothing/accessory/storage/black_vest,
-		/obj/item/device/radio/headset/infcom/alt
+		/obj/item/device/radio/headset/infcom/alt,
+		/obj/item/device/gps
 		)
 
 /////////

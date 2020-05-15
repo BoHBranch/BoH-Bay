@@ -22,7 +22,7 @@
 	name = "Soft Suit"
 	desc = "A generic soft suit, specially packed into an ordinary box. Once removed, it won't fit back in the box."
 	item_cost = 6
-	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/space
+	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/softsuit
 
 /datum/uplink_item/item/armor/balaclava
 	name = "Balaclava"
