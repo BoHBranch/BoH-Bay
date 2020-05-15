@@ -4836,11 +4836,11 @@
 /area/maintenance/thirddeck/aftport)
 "ka" = (
 /obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/structure/bed/chair/padded/black{
 	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
 	},
 /turf/simulated/floor/wood/maple,
 /area/crew_quarters/mess)
@@ -5482,11 +5482,10 @@
 /turf/simulated/floor/wood/maple,
 /area/crew_quarters/mess)
 "lz" = (
+/obj/structure/table/standard,
+/obj/random/single/cola,
 /obj/structure/window/reinforced{
 	dir = 4
-	},
-/obj/structure/bed/chair/padded/black{
-	dir = 1
 	},
 /turf/simulated/floor/wood/maple,
 /area/crew_quarters/mess)
@@ -5962,16 +5961,6 @@
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
-"mp" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/bed/chair/padded/black,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/turf/simulated/floor/wood/maple,
-/area/crew_quarters/mess)
 "mq" = (
 /obj/item/device/radio/intercom/entertainment{
 	dir = 8;
@@ -13771,6 +13760,12 @@
 	},
 /turf/simulated/floor/wood/maple,
 /area/chapel/main)
+"AX" = (
+/obj/structure/bed/chair/padded/black{
+	dir = 4
+	},
+/turf/simulated/floor/wood/maple,
+/area/crew_quarters/mess)
 "AY" = (
 /obj/machinery/door/airlock/civilian{
 	name = "Mess Prep"
@@ -14742,10 +14737,10 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/structure/bed/chair/padded/black,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/bed/chair/padded/black,
 /turf/simulated/floor/wood/maple,
 /area/crew_quarters/mess)
 "Ea" = (
@@ -39597,12 +39592,12 @@ Qo
 Qo
 ht
 is
-Bu
-ZA
-KO
-TT
-MK
-ni
+ly
+AX
+AX
+AX
+AX
+jn
 Av
 BD
 fB
@@ -39802,7 +39797,7 @@ PI
 DY
 jX
 lz
-mp
+jX
 jX
 ka
 PH
@@ -40003,9 +39998,9 @@ rM
 iu
 Bu
 ZA
+KO
+TT
 MK
-ZA
-ZA
 ni
 PH
 ZA
@@ -40203,12 +40198,12 @@ Tb
 Ca
 El
 qb
-ly
-CO
-CO
-CO
-CO
-jn
+Bu
+ZA
+KO
+TT
+ZA
+ni
 PH
 CO
 YB
