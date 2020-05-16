@@ -51,7 +51,7 @@
 	)
 	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
-			            access_infcom, access_inftech, access_aquila)
+			            access_infcom, access_inftech, access_aquila, access_eva)
 
 /datum/job/squad_lead
 	title = "Squad Lead"
@@ -112,7 +112,7 @@
 		)
 	access = list(access_maint_tunnels, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
-			            access_inftech, access_aquila)
+			            access_inftech, access_aquila, access_eva)
 	alt_titles = list(
 		"Combat Engineer",
 		"Combat Medic")
@@ -152,11 +152,12 @@
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/e1,
 		/datum/mil_rank/marine_corps/e2,
-		/datum/mil_rank/marine_corps/e3
+		/datum/mil_rank/marine_corps/e3,
+		/datum/mil_rank/marine_corps/e4
 	)
 	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
-			            access_aquila)
+			            access_aquila, access_eva)
 	alt_titles = list(
 		"Grunt",
 		"Trooper")
