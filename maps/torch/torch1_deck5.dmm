@@ -11087,7 +11087,6 @@
 	},
 /obj/item/clothing/mask/gas/skrell,
 /obj/item/weapon/rig/military/infantry,
-/obj/item/rig_module/vision/multi,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/com)
 "sR" = (
