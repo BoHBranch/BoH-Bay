@@ -180,8 +180,8 @@
 	H.equip_to_slot_or_store_or_drop(regis_card)
 
 //radio host
-/decl/hierarchy/outfit/job/torch/radio
+/decl/hierarchy/outfit/job/torch/radio_host
 	name = OUTFIT_JOB_NAME("Radio Host")
 	uniform = /obj/item/clothing/under/sl_suit
 	shoes = /obj/item/clothing/shoes/laceup
-	id_type = /obj/item/weapon/card/id/torch/crew/radio
+	id_type = /obj/item/weapon/card/id/torch/crew/radio_host
