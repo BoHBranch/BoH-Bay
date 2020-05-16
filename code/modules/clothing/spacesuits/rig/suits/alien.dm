@@ -16,6 +16,7 @@
 	online_slowdown = 6
 	offline_slowdown = 10
 	offline_vision_restriction = TINT_BLIND
+	allowed = list(/obj/item/weapon/storage/)
 
 	chest_type = /obj/item/clothing/suit/space/rig/unathi
 	helm_type = /obj/item/clothing/head/helmet/space/rig/unathi
