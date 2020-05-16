@@ -4331,7 +4331,7 @@
 	name = "north bump";
 	pixel_x = 0;
 	pixel_y = 24;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	req_access = list("ACCESS_ENGINE_EQUIP")
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/structure/table/woodentable/mahogany,
@@ -8813,7 +8813,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/sol{
-	id_tag = "studiolobby";
+	id_tag = null;
 	name = "Studio"
 	},
 /obj/structure/disposalpipe/segment,
@@ -13981,11 +13981,6 @@
 /obj/machinery/light_switch{
 	pixel_x = 24;
 	pixel_y = 24
-	},
-/obj/machinery/button/alternate/door/bolts{
-	id_tag = "studiolobby";
-	name = "studio door-control";
-	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark,
 /area/radio/interior)
