@@ -24,7 +24,7 @@
 
 /decl/emote/visible/sulk
 	key ="sulk"
-	emote_message_3p = "USER sulks down sadly."
+	emote_message_3p = "USER se decae tristemente."
 
 /decl/emote/visible/dance
 	key ="dance"
@@ -81,13 +81,13 @@
 
 /decl/emote/visible/bow
 	key = "bow"
-	emote_message_3p_target = "USER bows to TARGET."
-	emote_message_3p = "USER bows."
+	emote_message_3p_target = "USER hace una reverencia TARGET."
+	emote_message_3p = "USER hace una reverencia."
 
 /decl/emote/visible/salute
 	key = "salute"
-	emote_message_3p_target = "USER salutes TARGET."
-	emote_message_3p = "USER salutes."
+	emote_message_3p_target = "USER hace un saludo militar a TARGET."
+	emote_message_3p = "USER hace un saludo militar."
 
 /decl/emote/visible/flap
 	key = "flap"
@@ -115,7 +115,7 @@
 
 /decl/emote/visible/faint
 	key = "faint"
-	emote_message_3p = "USER faints."
+	emote_message_3p = "USER se desmaya."
 
 /decl/emote/visible/faint/do_extra(var/mob/user)
 	if(istype(user) && user.sleeping <= 0)
@@ -136,8 +136,8 @@
 
 /decl/emote/visible/glare
 	key = "glare"
-	emote_message_3p_target = "USER glares at TARGET."
-	emote_message_3p = "USER glares."
+	emote_message_3p_target = "USER mira de forma amenazadora a TARGET."
+	emote_message_3p = "USER mira de forma amenazadora."
 
 /decl/emote/visible/stare
 	key = "stare"
@@ -152,7 +152,7 @@
 /decl/emote/visible/point
 	key = "point"
 	check_restraints = TRUE
-	emote_message_3p_target = "USER senala a TARGET."
+	emote_message_3p_target = "USER señala a TARGET."
 	emote_message_3p = "USER señala."
 
 /decl/emote/visible/raise
@@ -184,8 +184,8 @@
 
 /decl/emote/visible/wink
 	key = "wink"
-	emote_message_3p_target = "USER winks at TARGET."
-	emote_message_3p = "USER winks."
+	emote_message_3p_target = "USER guiña a TARGET."
+	emote_message_3p = "USER guiña."
 
 /decl/emote/visible/hug
 	key = "hug"
@@ -196,7 +196,7 @@
 /decl/emote/visible/dap
 	key = "dap"
 	check_restraints = TRUE
-	emote_message_3p_target = "USER gives daps to TARGET."
+	emote_message_3p_target = "USER choca los cinco TARGET."
 	emote_message_3p = "USER sadly can't find anybody to give daps to, and daps USER_SELF."
 
 /decl/emote/visible/signal
@@ -259,7 +259,7 @@
 
 /decl/emote/visible/alook
 	key = "alook"
-	emote_message_3p = "USER looks away."
+	emote_message_3p = "USER mira a otro lado."
 
 /decl/emote/visible/hbow
 	key = "hbow"
@@ -321,7 +321,7 @@
 /decl/emote/visible/rsalute
 	key = "rsalute"
 	check_restraints = TRUE
-	emote_message_3p = "USER returns the salute."
+	emote_message_3p = "USER devuelve el saludo militar."
 
 /decl/emote/visible/rshoulder
 	key = "rshoulder"
