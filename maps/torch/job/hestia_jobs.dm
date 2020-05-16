@@ -248,5 +248,5 @@
 		"Spokesman",
 		"Artist")
 
-/datum/job/radio/get_description_blurb()
+/datum/job/radio_host/get_description_blurb()
 	return "Practically the guy known as something 'Jones', but in space. Do attempt to keep the peace, if at all possible, within your studio...."
