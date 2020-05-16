@@ -7543,7 +7543,6 @@
 	pixel_x = 23;
 	pixel_y = -3
 	},
-/obj/item/weapon/storage/box/cdeathalarm_kit,
 /obj/item/weapon/storage/box/trackimp,
 /obj/item/weapon/storage/box/chemimp,
 /turf/simulated/floor/tiled/dark/monotile,

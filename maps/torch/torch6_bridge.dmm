@@ -237,6 +237,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/aft)
+"aA" = (
+/obj/structure/table/glass,
+/obj/effect/floor_decal/corner/blue/mono,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/bridge)
 "aB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -2629,12 +2634,6 @@
 /obj/structure/table/glass,
 /obj/item/weapon/book/manual/solgov_law,
 /obj/item/weapon/book/manual/sol_sop,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/bridge)
-"ew" = (
-/obj/structure/table/glass,
-/obj/effect/floor_decal/corner/blue/mono,
-/obj/item/weapon/storage/box/cdeathalarm_kit,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "ex" = (
@@ -13312,19 +13311,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarbridge)
-"wt" = (
-/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
-	pixel_x = -4;
-	pixel_y = 8
-	},
-/obj/item/device/taperecorder{
-	pixel_x = -4;
-	pixel_y = 2
-	},
-/obj/structure/table/woodentable/walnut,
-/obj/item/sticky_pad/random,
-/turf/simulated/floor/carpet,
-/area/crew_quarters/heads/office/xo)
 "wu" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/yellow{
@@ -27745,7 +27731,7 @@ lm
 kw
 nH
 HC
-ew
+aA
 XR
 gB
 gC
@@ -28742,7 +28728,7 @@ qa
 aO
 sl
 oA
-wt
+VF
 aO
 bR
 cl
