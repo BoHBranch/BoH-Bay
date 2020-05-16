@@ -1301,7 +1301,10 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/obj/structure/disposalpipe/junction/mirrored,
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/fore)
 "cP" = (
@@ -1388,7 +1391,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/effect/floor_decal/corner/b_green/border,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
@@ -1398,8 +1400,12 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled,
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
+	},
+/obj/effect/catwalk_plated,
+/turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/fore)
 "cU" = (
 /obj/structure/table/standard,
@@ -2672,9 +2678,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
 "fu" = (
-/obj/machinery/door/airlock/hatch/maintenance{
-	name = "Radio Studio"
-	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -2684,6 +2687,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/glass/civilian,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/radio)
 "fv" = (
@@ -8297,6 +8301,10 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/fore)
 "pr" = (
@@ -8804,7 +8812,10 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/sol,
+/obj/machinery/door/airlock/sol{
+	id_tag = "studiolobby";
+	name = "Studio"
+	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/holosign/chapel{
 	id_tag = "studio";
@@ -12448,10 +12459,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/disposalpipe/sortjunction{
+	dir = 4;
+	name = "Studio";
+	sort_type = "Studio"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/fore)
 "wK" = (
@@ -13968,6 +13981,11 @@
 /obj/machinery/light_switch{
 	pixel_x = 24;
 	pixel_y = 24
+	},
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "studiolobby";
+	name = "studio door-control";
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark,
 /area/radio/interior)

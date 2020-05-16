@@ -134,8 +134,7 @@
 	R.add_fingerprint(user)
 	if(explode_now)
 		R.explode(user)
-	spawn(0)
-		qdel(src)
+	QDEL_IN(src,0)
 
 /obj/item/weapon/mine/dnascramble
 	name = "radiation mine"
