@@ -89,3 +89,6 @@
 	projectile_type = /obj/item/projectile/beam/pulse/xray
 	req_access = list(list(access_brig, access_bridge))
 	authorized_modes = list(UNAUTHORIZED)
+	firemodes = list(
+		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
+		)
