@@ -228,7 +228,7 @@
 	supervisors = "your journalistic morals"
 	selection_color = "#61a82f"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	outfit_type = /decl/hierarchy/outfit/job/torch/radio
+	outfit_type = /decl/hierarchy/outfit/job/torch/radio_host
 	software_on_spawn = list(/datum/computer_file/program/records)
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
