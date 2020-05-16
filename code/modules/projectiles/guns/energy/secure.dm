@@ -79,3 +79,13 @@
 	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts. Fitted with an NT1019 chip to make sure killcount is tracked appropriately."
 	icon_state = "lasersec"
 	req_access = list(list(access_brig, access_bridge))
+
+//Energy Tectonic
+
+/obj/item/weapon/gun/energy/pulse_rifle/secure
+	name = "BXJ-5 Culverin"
+	desc = "A somewhat experimental product of Ward-Takahashi's energy weapons division, the BXJ-5 combines rapid-fire pulse laser technology with \
+			penetrative laser power for the first time. Designed to saw through armour at the cost of raw damage."
+	projectile_type = /obj/item/projectile/beam/pulse/xray
+	req_access = list(list(access_brig, access_bridge))
+	authorized_modes = list(UNAUTHORIZED)

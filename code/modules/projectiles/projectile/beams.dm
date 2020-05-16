@@ -79,6 +79,11 @@
 /obj/item/projectile/beam/pulse/heavy
 	damage = 25
 
+/obj/item/projectile/beam/pulse/xray
+	damage = 10
+	armor_penetration = 80
+	distance_falloff = 0.5
+
 /obj/item/projectile/beam/pulse/destroy
 	name = "destroyer pulse"
 	damage = 100 //badmins be badmins I don't give a fuck
