@@ -1127,14 +1127,14 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "cg" = (
 /obj/effect/floor_decal/techfloor,
-/obj/machinery/atmospherics/valve/open{
-	open = 0
-	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	icon_state = "intact";
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/binary/pump{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "ch" = (
@@ -1440,23 +1440,15 @@
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/crew)
 "cF" = (
-/obj/structure/bed/chair/shuttle/blue{
-	icon_state = "shuttle_chair_preview";
-	dir = 4
+/obj/machinery/light{
+	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/fuel{
-	dir = 9
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/unary/tank/carbon_dioxide{
+	dir = 4;
+	start_pressure = 1013.25
 	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/industrial/warning{
-	icon_state = "warning";
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
+/turf/simulated/floor/plating,
 /area/guppy_hangar/start)
 "cG" = (
 /obj/effect/shuttle_landmark/torch/hangar/guppy,
@@ -1669,30 +1661,34 @@
 	icon_state = "shuttle_chair_preview";
 	dir = 4
 	},
-/obj/machinery/atmospherics/valve/open{
-	dir = 4;
-	open = 0
-	},
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/visible/fuel{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "cU" = (
-/obj/item/device/radio/beacon/anchored{
-	level = 1
+/obj/machinery/camera/network/pod{
+	c_tag = "General Utility Pod - Crew Compartment";
+	dir = 4
 	},
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
+/obj/machinery/power/port_gen/pacman{
+	anchored = 1
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d2 = 4;
+	icon_state = "0-4"
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
+/turf/simulated/floor/plating,
 /area/guppy_hangar/start)
 "cV" = (
 /obj/random/tech_supply,
@@ -1924,21 +1920,25 @@
 	icon_state = "shuttle_chair_preview";
 	dir = 4
 	},
-/obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/cable/yellow{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/binary/pump{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "dp" = (
-/obj/machinery/hologram/holopad/longrange,
-/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/device/radio/beacon/anchored{
+	level = 1
+	},
 /obj/structure/cable/yellow{
 	d1 = 1;
 	d2 = 8;
@@ -11025,21 +11025,27 @@
 /turf/simulated/floor/plating,
 /area/security/infantry)
 "sJ" = (
-/obj/machinery/camera/network/pod{
-	c_tag = "General Utility Pod - Crew Compartment";
-	dir = 4
-	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/portables_connector{
-	icon_state = "map_connector";
 	dir = 4
 	},
-/obj/machinery/portable_atmospherics/canister/air/airlock,
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup,
 /turf/simulated/floor/plating,
 /area/guppy_hangar/start)
 "sK" = (
-/obj/machinery/shipsensors/weak,
-/turf/simulated/floor/plating,
+/obj/structure/bed/chair/shuttle/blue{
+	icon_state = "shuttle_chair_preview";
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/guppy_hangar/start)
 "sL" = (
 /obj/machinery/light{
@@ -11087,6 +11093,7 @@
 	},
 /obj/item/clothing/mask/gas/skrell,
 /obj/item/weapon/rig/military/infantry,
+/obj/item/rig_module/vision/multi,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/com)
 "sR" = (
@@ -12749,6 +12756,15 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
+"wg" = (
+/obj/machinery/hologram/holopad/longrange,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/guppy_hangar/start)
+"wh" = (
+/obj/machinery/shipsensors,
+/turf/simulated/floor/plating,
+/area/guppy_hangar/start)
 "wj" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
@@ -16090,17 +16106,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/petrov/custodial)
-"Ko" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/power/port_gen/pacman{
-	anchored = 1
-	},
-/obj/structure/cable/yellow{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/plating,
-/area/guppy_hangar/start)
 "Kr" = (
 /obj/structure/closet/secure_closet/scientist_torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -17565,18 +17570,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/reinforced,
 /area/shuttle/petrov/phoron)
-"Rd" = (
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/atmospherics/portables_connector{
-	icon_state = "map_connector";
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup,
-/turf/simulated/floor/plating,
-/area/guppy_hangar/start)
 "Re" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -38849,7 +38842,7 @@ cj
 cj
 cj
 cj
-sK
+wh
 bi
 fS
 ih
@@ -39047,9 +39040,9 @@ aY
 aN
 aP
 cj
-Rd
+cF
+cU
 sJ
-Ko
 cj
 cj
 cj
@@ -39249,9 +39242,9 @@ br
 bI
 cg
 Zn
-cF
 cT
 do
+sK
 dE
 dM
 cj
@@ -39452,8 +39445,8 @@ bJ
 ch
 cA
 cG
-cU
 dp
+wg
 dF
 dN
 ef
