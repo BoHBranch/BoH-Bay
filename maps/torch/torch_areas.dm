@@ -1761,15 +1761,15 @@
 /////////
 // Radio Host Studio
 /////////
-/area/radio
+/area/radio_host
 	name = "\improper Studio Lobby"
 	icon_state = "chapel"
 	req_access = list(access_radio_host)
 
-/area/radio/interior
+/area/radio_host/interior
 	name = "\improper Studio"
 	icon_state = "heads"
 
-/area/radio/backroom
+/area/radio_host/backroom
 	name = "\improper Studio Backroom"
 	icon_state = "Sleep"
