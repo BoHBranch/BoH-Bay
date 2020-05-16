@@ -57,7 +57,7 @@
 
 /obj/structure/closet/secure_closet/bodyguard
 	name = "\improper corporate protection locker"
-	req_access = list(access_sec_guard)
+	req_access = list(access_liaison)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/corporate/bodyguard
 
 /obj/structure/closet/secure_closet/bodyguard/WillContain()
@@ -76,9 +76,10 @@
 		/obj/item/clothing/accessory/legguards,
 		/obj/item/clothing/glasses/sunglasses/big,
 		/obj/item/clothing/accessory/badge/nanotrasen,
-		/obj/item/device/radio/headset/heads/torchcorp,
-		/obj/item/device/radio/headset/heads/torchcorp/alt
-	)
+		/obj/item/device/flashlight/maglight,
+		/obj/item/device/radio/headset/heads/torchntcommand,
+		/obj/item/device/radio/headset/heads/torchntcommand/alt
+		)
 
 /obj/structure/closet/secure_closet/representative
 	name = "\improper Sol Central Government representative's locker"
