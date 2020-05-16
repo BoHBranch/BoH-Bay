@@ -156,6 +156,7 @@
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/storage/belt/holster/forensic,
 		/obj/item/weapon/storage/belt/holster/security,
+		/obj/item/weapon/storage/belt/security,
 		/obj/item/clothing/gloves/thick,
 		/obj/item/clothing/gloves/thick/duty/solgov/sec,
 		/obj/item/weapon/material/knife/folding/swiss,

@@ -150,6 +150,8 @@
 	name = "white hazard vest"
 	desc = "A high-visibility vest used in work zones. This one has a blue cross!"
 	icon_state = "hazard_w"
+	allowed = list(/obj/item/stack/medical, /obj/item/weapon/reagent_containers/dropper, /obj/item/weapon/reagent_containers/hypospray, /obj/item/weapon/reagent_containers/syringe, \
+	/obj/item/device/scanner/health, /obj/item/device/flashlight, /obj/item/device/radio, /obj/item/weapon/tank/emergency, /obj/item/weapon/reagent_containers/ivbag,/obj/item/clothing/head/hardhat/EMS)
 
 /obj/item/clothing/suit/storage/hazardvest/green
 	name = "green hazard vest"
