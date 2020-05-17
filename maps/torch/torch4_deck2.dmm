@@ -1344,15 +1344,6 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
-"cE" = (
-/obj/structure/closet/crate,
-/obj/random/single/cola,
-/obj/random/tech_supply,
-/obj/random/junk,
-/obj/random/illegal,
-/obj/random/illegal,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/seconddeck/central)
 "cF" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -11972,6 +11963,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
+"wI" = (
+/obj/structure/closet/crate,
+/obj/random/single/cola,
+/obj/random/tech_supply,
+/obj/random/junk,
+/obj/random/illegal,
+/obj/random/illegal,
+/turf/simulated/floor/tiled/techfloor,
+/area/defturrets)
 "wL" = (
 /obj/random/junk,
 /turf/simulated/floor/tiled/techfloor,
@@ -14434,6 +14434,12 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
+"Eq" = (
+/obj/structure/railing/mapped{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "Er" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 4
@@ -15295,6 +15301,10 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
+"GI" = (
+/obj/structure/stairs/east,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "GM" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
@@ -37774,8 +37784,8 @@ aq
 aa
 aa
 bi
-bi
-cE
+wI
+dY
 dY
 dY
 dY
@@ -37975,11 +37985,11 @@ al
 aq
 ag
 ag
-ag
+fT
 aC
 aC
 bK
-bK
+Eq
 dw
 dW
 eG
@@ -38178,10 +38188,10 @@ aq
 ag
 ag
 ag
-ag
+fT
 aC
-aC
-bK
+GI
+Eq
 bK
 dW
 eG
@@ -38381,7 +38391,7 @@ aa
 aa
 aa
 aa
-aa
+fT
 aC
 bK
 bf
