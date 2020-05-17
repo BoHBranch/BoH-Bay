@@ -636,6 +636,7 @@
 /obj/item/weapon/stock_parts/smes_coil,
 /obj/item/weapon/stock_parts/smes_coil,
 /obj/effect/floor_decal/corner/yellow/mono,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/engineering/hardstorage)
 "bA" = (
@@ -960,6 +961,11 @@
 /area/crew_quarters/galley)
 "ce" = (
 /obj/structure/disposalpipe/segment,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/mess)
 "cf" = (
@@ -1746,6 +1752,7 @@
 	icon_state = "bordercolorhalf";
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/engineering/hardstorage)
 "dK" = (
@@ -4128,6 +4135,7 @@
 	icon_state = "bordercolorhalf";
 	dir = 8
 	},
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/engineering/hardstorage)
 "iF" = (
@@ -4387,16 +4395,16 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "jf" = (
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/disposal,
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/white,
+/obj/machinery/disposal,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/mess)
 "jg" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -5488,6 +5496,11 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/mess)
 "lC" = (
@@ -5948,14 +5961,6 @@
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
-"mq" = (
-/obj/item/device/radio/intercom/entertainment{
-	dir = 8;
-	pixel_x = 22
-	},
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/mess)
 "mr" = (
 /obj/machinery/alarm{
 	alarm_id = "calypso_cargo_alarm";
@@ -12616,6 +12621,7 @@
 "yD" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/effect/floor_decal/corner/yellow/mono,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/engineering/hardstorage)
 "yE" = (
@@ -13239,8 +13245,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/captainmess)
 "Ad" = (
-/obj/structure/bed/chair/padded/black,
-/turf/simulated/floor/wood/maple,
+/obj/structure/bed/chair/wood/mahogany,
+/turf/simulated/floor/carpet/blue2,
 /area/command/captainmess)
 "Ae" = (
 /turf/simulated/floor/plating,
@@ -13249,14 +13255,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main)
 "Ah" = (
-/obj/structure/bed/chair/padded/black{
+/obj/structure/bed/chair/wood/mahogany{
 	dir = 4
 	},
-/turf/simulated/floor/wood/maple,
+/turf/simulated/floor/carpet/blue2,
 /area/command/captainmess)
 "Ai" = (
-/obj/structure/table/woodentable/maple,
-/turf/simulated/floor/wood/maple,
+/obj/structure/table/woodentable/walnut,
+/turf/simulated/floor/carpet/blue2,
 /area/command/captainmess)
 "Aj" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -13434,14 +13440,14 @@
 /area/crew_quarters/mess)
 "AA" = (
 /obj/random_multi/single_item/runtime,
-/obj/structure/disposalpipe/junction{
-	icon_state = "pipe-j2";
-	dir = 2
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/junction{
+	icon_state = "pipe-j2";
+	dir = 2
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/mess)
@@ -13552,10 +13558,10 @@
 /turf/simulated/wall/prepainted,
 /area/storage/tools)
 "AQ" = (
-/obj/structure/bed/chair/padded/black{
+/obj/structure/bed/chair/wood/mahogany{
 	dir = 1
 	},
-/turf/simulated/floor/wood/maple,
+/turf/simulated/floor/carpet/blue2,
 /area/command/captainmess)
 "AR" = (
 /obj/effect/catwalk_plated,
@@ -14127,6 +14133,9 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "CG" = (
+/obj/item/device/radio/intercom/entertainment{
+	pixel_y = 20
+	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/mess)
 "CI" = (
@@ -15190,6 +15199,19 @@
 /obj/item/glass_jar,
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
+"Fx" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/camera/network/third_deck{
+	c_tag = "Mess Hall - Aft";
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/mess)
 "Fy" = (
 /obj/structure/table/rack,
 /obj/random/tech_supply,
@@ -19087,6 +19109,8 @@
 	health = 1e+006
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/weldpack/bigwelder,
+/obj/item/weapon/weldpack/bigwelder,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/engineering/hardstorage)
 "PS" = (
@@ -21728,6 +21752,19 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
+"XO" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 4
+	},
+/obj/machinery/camera/network/third_deck{
+	c_tag = "Mess Hall - Stairwell";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/captainmess)
 "XP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -21857,8 +21894,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "Ym" = (
-/obj/item/weapon/stool/bar/padded,
-/turf/simulated/floor/wood/maple,
+/turf/simulated/floor/carpet/blue2,
 /area/command/captainmess)
 "Yo" = (
 /obj/structure/disposalpipe/segment{
@@ -40553,10 +40589,10 @@ Aq
 Lo
 rL
 AA
-dF
+Fx
 ce
 lB
-mq
+dF
 nk
 Ay
 pi
@@ -41165,7 +41201,7 @@ GG
 Ac
 Ar
 Ar
-Ar
+XO
 LD
 Tl
 sj
