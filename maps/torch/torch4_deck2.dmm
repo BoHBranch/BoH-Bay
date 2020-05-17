@@ -523,7 +523,6 @@
 /area/storage/tech)
 "aV" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/ladder/up,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "aW" = (
@@ -968,9 +967,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/auxsolarstarboard)
 "bP" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
 /obj/structure/closet/l3closet/general/multi,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
@@ -39597,9 +39593,9 @@ aa
 aa
 aa
 aa
-aa
-aB
+fT
 tG
+bq
 bq
 bq
 ee
@@ -39798,9 +39794,9 @@ aq
 ag
 ag
 ag
-ag
+fT
 aB
-aB
+bq
 bq
 JN
 pz
@@ -40809,7 +40805,7 @@ aa
 aa
 aB
 dc
-bq
+bS
 cp
 cp
 ee
@@ -41011,7 +41007,7 @@ aa
 aa
 aB
 bQ
-bS
+bq
 cp
 Al
 dB
