@@ -96,6 +96,7 @@ GLOBAL_LIST_INIT(music_tracks, list(
 	"The only thing they fear is you" = /music_track/theyfearyou,
 	"Gangster's paradise" = /music_track/gangstapara,
 	"phoron will make us rich" = /music_track/pwmur,
+	"Seeing your name makes me happy" = /music_track/seeingyourname,
 	"Martian Cowboy" = /music_track/martiancowboy,
 ))
 

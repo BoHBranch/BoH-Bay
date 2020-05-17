@@ -67,3 +67,7 @@
 /music_track/theyfearyou
 	title = "The only thing they fear is you"
 	song = 'sound/music/manaos/fear.ogg'
+
+/music_track/seeingyourname
+	title = "Seeing your name makes me happy"
+	song = 'sound/music/manaos/seeingyourname.ogg'
