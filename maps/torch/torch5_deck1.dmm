@@ -1029,9 +1029,7 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/table/rack,
-/obj/item/weapon/storage/box/teargas,
-/obj/item/weapon/storage/box/teargas,
-/obj/item/weapon/storage/box/zipties,
+/obj/item/weapon/gun/energy/pulse_rifle/sec
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "abI" = (
