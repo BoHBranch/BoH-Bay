@@ -11744,15 +11744,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/locker_room)
-"vP" = (
-/obj/structure/closet/crate,
-/obj/random/single/cola,
-/obj/random/tech_supply,
-/obj/random/junk,
-/obj/random/illegal,
-/obj/random/illegal,
-/turf/simulated/floor/tiled/techfloor,
-/area/defturrets)
 "vU" = (
 /obj/machinery/atmospherics/pipe/simple/visible/scrubbers{
 	dir = 4
@@ -12065,10 +12056,6 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
-"wZ" = (
-/obj/structure/stairs/east,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/central)
 "xc" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	icon_state = "intact";
@@ -15614,6 +15601,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
+"HM" = (
+/obj/structure/stairs/east,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "HN" = (
 /obj/effect/catwalk_plated,
 /obj/machinery/status_display{
@@ -15634,12 +15625,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
-"HS" = (
-/obj/structure/railing/mapped{
-	dir = 1
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/central)
 "HT" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -17639,6 +17624,12 @@
 /obj/structure/closet/coffin,
 /turf/simulated/floor/wood/walnut,
 /area/vacant/chapel)
+"Pp" = (
+/obj/structure/railing/mapped{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "Pq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
@@ -19016,6 +19007,15 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics/lower)
+"UW" = (
+/obj/structure/closet/crate,
+/obj/random/single/cola,
+/obj/random/tech_supply,
+/obj/random/junk,
+/obj/random/illegal,
+/obj/random/illegal,
+/turf/simulated/floor/tiled/techfloor,
+/area/defturrets)
 "UX" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/ladder/up,
@@ -37784,7 +37784,7 @@ aq
 aa
 aa
 bi
-vP
+UW
 dY
 dY
 dY
@@ -37989,7 +37989,7 @@ fT
 aC
 aC
 bK
-HS
+Pp
 dw
 dW
 eG
@@ -38190,8 +38190,8 @@ ag
 ag
 fT
 aC
-wZ
-HS
+HM
+Pp
 bK
 dW
 eG
