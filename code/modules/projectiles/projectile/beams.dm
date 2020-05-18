@@ -64,7 +64,7 @@
 	distance_falloff = 1
 
 /obj/item/projectile/beam/pulse
-	name = "pulse"
+	name = "pulse beam"
 	icon_state = "u_laser"
 	fire_sound='sound/weapons/pulse.ogg'
 	damage = 15 //lower damage, but fires in bursts
@@ -80,9 +80,16 @@
 	damage = 25
 
 /obj/item/projectile/beam/pulse/xray
-    damage = 20 //Fires in bursts, so little damage.
-    armor_penetration = 95 //Makes up for it in this
-    distance_falloff = 1
+	name = "high-frequency pulse beam"
+	damage = 20 //Fires in bursts, so little damage.
+	armor_penetration = 80 //Makes up for it in this
+	distance_falloff = 1
+
+/obj/item/projectile/beam/darkmatter/burst // Tectonic was very anti-Ascent to begin with
+	name = "experimental pulse beam"
+	damage = 15
+	armor_penetration = 85
+	distance_falloff = 1
 
 /obj/item/projectile/beam/pulse/destroy
 	name = "destroyer pulse"
