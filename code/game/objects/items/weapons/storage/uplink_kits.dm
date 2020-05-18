@@ -45,10 +45,11 @@
 		/obj/item/clothing/head/helmet/space/void/merc,
 		/obj/item/clothing/mask/gas/syndicate,
 		/obj/item/weapon/tank/emergency/oxygen/double,
+		/obj/item/clothing/shoes/magboots
 		)
 
 //Soft Suit uplink kit
-/obj/item/weapon/storage/backpack/satchel/syndie_kit/space
+/obj/item/weapon/storage/backpack/satchel/syndie_kit/softsuit
 
 	startswith = list(
 		/obj/item/clothing/head/helmet/space/emergency,

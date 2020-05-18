@@ -747,10 +747,6 @@
 	name = "\improper Unused Chapel"
 	icon_state = "chapel"
 
-/area/vacant/infirmary
-	name = "\improper Auxiliary Infirmary"
-	icon_state = "medbay"
-
 /area/vacant/prototype
 	req_access = list(access_engine)
 
@@ -1296,6 +1292,10 @@
 
 /area/maintenance/waterstore
 	name = "\improper Cistern"
+	icon_state = "disposal"
+
+/area/maintenance/aux_med
+	name = "\improper Aux. Medical"
 	icon_state = "disposal"
 
 // Storage
