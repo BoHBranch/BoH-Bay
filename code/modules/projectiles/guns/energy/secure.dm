@@ -82,13 +82,13 @@
 
 //Energy Tectonic
 
-/obj/item/weapon/gun/energy/pulse_rifle/secure
-	name = "BXJ-5 Culverin"
-	desc = "A somewhat experimental product of Ward-Takahashi's energy weapons division, the BXJ-5 combines rapid-fire pulse laser technology with \
-			penetrative laser power for the first time. Designed to saw through armour at the cost of raw damage."
-	projectile_type = /obj/item/projectile/beam/pulse/xray
-	req_access = list(list(access_brig, access_bridge))
-	authorized_modes = list(UNAUTHORIZED)
-	firemodes = list(
-		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
-		)
+/obj/item/weapon/gun/energy/pulse_rifle/shotgun
+    name = "BXJ-5 Culverin"
+    desc = "A somewhat experimental product of Ward-Takahashi's energy weapons division, the BXJ-5 combines rapid-fire pulse laser technology \
+    with penetrative laser power for the first time. Designed to saw through armour at the cost of raw damage."
+    projectile_type = /obj/item/projectile/beam/pulse/xray
+    req_access = list(access_brig)
+    authorized_modes = list(UNAUTHORIZED)
+    firemodes = list(
+        list(mode_name="fire", burst=3, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
+        )

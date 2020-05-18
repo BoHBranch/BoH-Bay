@@ -80,9 +80,11 @@
 	damage = 25
 
 /obj/item/projectile/beam/pulse/xray
-	damage = 10
-	armor_penetration = 80
-	distance_falloff = 0.5
+    damage = 25//Fires in bursts, so little damage.
+    armor_penetration = 95//Makes up for it in this -
+    shrapnel_chance_multiplier = 0
+    arterial_bleed_chance_multiplier = 1.5//- and this, ignoring bursts.
+    distance_falloff = 0
 
 /obj/item/projectile/beam/pulse/destroy
 	name = "destroyer pulse"
