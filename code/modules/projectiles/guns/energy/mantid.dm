@@ -20,15 +20,17 @@
 	charge_meter = 0
 	has_safety = FALSE
 	firemodes = list(
-		list(mode_name="stun",   projectile_type = /obj/item/projectile/beam/stun),
-		list(mode_name="shock",  projectile_type = /obj/item/projectile/beam/stun/shock),
-		list(mode_name="lethal", projectile_type = /obj/item/projectile/beam/particle)
+		list(mode_name="stun", burst=3, move_delay=1, projectile_type=/obj/item/projectile/beam/stun),
+		list(mode_name="shock", burst=2, move_delay=2, projectile_type=/obj/item/projectile/beam/stun/shock),
+		list(mode_name="lethal - stable", projectile_type=/obj/item/projectile/beam/particle),
+		list(mode_name="lethal - overcharged", burst=1, move_delay=12, projectile_type=/obj/item/projectile/beam/particleadv)
 		)
 	var/charge_state = "pr"
 
 /obj/item/weapon/gun/energy/particle/small
 	name = "particle projector"
-	desc = "A smaller variant on the Ascent particle lance, usually carried by drones and alates."
+	desc = "A long, thick-bodied energy rifle of some kind, clad in a curious indigo polymer and lit from within by Cherenkov radiation. The grip is clearly not designed for human hands. \
+	It appears that this is a smaller version, however."
 	icon_state = "particle_rifle_small"
 	force = 12
 	max_shots = 9
@@ -40,9 +42,10 @@
 	slot_flags = SLOT_DENYPOCKET | SLOT_HOLSTER
 	projectile_type = /obj/item/projectile/beam/particle/small
 	firemodes = list(
-		list(mode_name="stun",   projectile_type = /obj/item/projectile/beam/stun),
-		list(mode_name="shock",  projectile_type = /obj/item/projectile/beam/stun/shock),
-		list(mode_name="lethal", projectile_type = /obj/item/projectile/beam/particle/small)
+		list(mode_name="stun", burst=3, move_delay=1, projectile_type=/obj/item/projectile/beam/stun),
+		list(mode_name="shock", burst=2, projectile_type=/obj/item/projectile/beam/stun/shock),
+		list(mode_name="lethal - stable", projectile_type=/obj/item/projectile/beam/particle/small),
+		list(mode_name="lethal - overcharged", burst=1, move_delay=10, projectile_type=/obj/item/projectile/beam/particleadv/small)
 		)
 
 
