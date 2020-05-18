@@ -1469,8 +1469,16 @@
 	icon_state = "autopsy"
 
 /area/medical/sleeper
-	name = "\improper Emergency Treatment Centre"
+	name = "\improper Trauma Center"
 	icon_state = "exam_room"
+
+/area/medical/centerhall
+	name = "\improper Center Hallway"
+	icon_state = "medbay"
+
+/area/medical/triage
+	name = "\improper Triage"
+	icon_state = "medbay"
 
 /area/medical/surgery
 	name = "\improper Operating Theatre 1"
@@ -1479,6 +1487,11 @@
 
 /area/medical/surgery2
 	name = "\improper Operating Theatre 2"
+	icon_state = "surgery"
+	req_access = list(access_surgery)
+
+/area/medical/surgery3
+	name = "\improper Operating Theatre 3"
 	icon_state = "surgery"
 	req_access = list(list(access_surgery, access_robotics_engineering))
 
