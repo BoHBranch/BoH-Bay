@@ -81,14 +81,14 @@
 
 /obj/item/projectile/beam/pulse/xray
 	name = "high-frequency pulse beam"
-	damage = 20 //Fires in bursts, so little damage.
-	armor_penetration = 80 //Makes up for it in this
+	damage = 18 //fires in bursts, so little damage.
+	armor_penetration = 80 //makes up for it in this
 	distance_falloff = 1
 
-/obj/item/projectile/beam/darkmatter/burst // Tectonic was very anti-Ascent to begin with
+/obj/item/projectile/beam/darkmatter/burst // Brute mode, oh heck
 	name = "experimental pulse beam"
-	damage = 15
-	armor_penetration = 85
+	damage = 12 //sacrificing raw power for alternate damage type
+	armor_penetration = 85 //increased pen to meet a breakpoint
 	distance_falloff = 1
 
 /obj/item/projectile/beam/pulse/destroy
