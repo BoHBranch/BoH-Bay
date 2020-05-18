@@ -82,7 +82,7 @@
 
 //Energy Tectonic
 
-/obj/item/weapon/gun/energy/pulse_rifle/shotgun
+/obj/item/weapon/gun/energy/pulse_rifle/sec
     name = "BXJ-5 Culverin"
     desc = "A somewhat experimental product of Ward-Takahashi's energy weapons division, the BXJ-5 combines rapid-fire pulse laser technology \
     with penetrative laser power for the first time. Designed to saw through armour at the cost of raw damage."
