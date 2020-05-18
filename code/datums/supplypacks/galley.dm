@@ -16,28 +16,28 @@
 	containername = "caja de suministros de cocina"
 
 /decl/hierarchy/supply_pack/galley/beef
-	name = "Perishables - Filete"
+	name = "Perecibles - Filete"
 	contains = list(/obj/item/weapon/reagent_containers/food/snacks/meat/beef = 6)
 	containertype = /obj/structure/closet/crate/freezer
 	containername = "carne de vaca"
 	cost = 20
 
 /decl/hierarchy/supply_pack/galley/goat
-	name = "Perishables - Carne de cabra"
+	name = "Perecibles - Carne de cabra"
 	contains = list(/obj/item/weapon/reagent_containers/food/snacks/meat/goat = 6)
 	containertype = /obj/structure/closet/crate/freezer
 	containername = "caja de carne de cabra"
 	cost = 20
 
 /decl/hierarchy/supply_pack/galley/chicken
-	name = "Perishables - Carne de gallina"
+	name = "Perecibles - Carne de gallina"
 	contains = list(/obj/item/weapon/reagent_containers/food/snacks/meat/chicken = 6)
 	containertype = /obj/structure/closet/crate/freezer
 	containername = "caja de carne de gallina"
 	cost = 20
 
 /decl/hierarchy/supply_pack/galley/seafood
-	name = "Perishables - Mariscos"
+	name = "Perecibles - Mariscos"
 	contains = list(
 		/obj/item/weapon/reagent_containers/food/snacks/fish = 2,
 		/obj/item/weapon/reagent_containers/food/snacks/fish/shark = 2,
@@ -48,14 +48,14 @@
 	cost = 20
 
 /decl/hierarchy/supply_pack/galley/eggs
-	name = "Perishables - Huevos"
+	name = "Perecibles - Huevos"
 	contains = list(/obj/item/weapon/storage/fancy/egg_box = 2)
 	containertype = /obj/structure/closet/crate/freezer
 	containername = "Caja de huevos"
 	cost = 15
 
 /decl/hierarchy/supply_pack/galley/milk
-	name = "Perishables - Leche"
+	name = "Perecibles - Leche"
 	contains = list(/obj/item/weapon/reagent_containers/food/drinks/milk = 3)
 	containertype = /obj/structure/closet/crate/freezer
 	containername = "caja de leche"
