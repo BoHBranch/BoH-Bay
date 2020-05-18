@@ -91,5 +91,5 @@
     authorized_modes = list(UNAUTHORIZED)
     firemodes = list(
         list(mode_name="high-frequency pulse fire", burst=3, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=list(0, 0, 1), projectile_type=/obj/item/projectile/beam/pulse/xray),
-		list(mode_name="experimental pulse fire", burst=3, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=list(0, 0, 1)projectile_type=/obj/item/projectile/beam/darkmatter/burst),
+		list(mode_name="experimental pulse fire", burst=3, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=list(0, 0, 1), projectile_type=/obj/item/projectile/beam/darkmatter/burst),
         )
