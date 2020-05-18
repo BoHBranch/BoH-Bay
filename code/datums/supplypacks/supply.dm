@@ -105,11 +105,11 @@
 	supply_method = /decl/supply_method/randomized
 
 /decl/hierarchy/supply_pack/supply/coolanttank
-	name = "Liquid - Tanque de Cooltank"
+	name = "Liquid - Tanque de Coolant"
 	contains = list(/obj/structure/reagent_dispensers/coolanttank)
 	cost = 16
 	containertype = /obj/structure/largecrate
-	containername = "caja de tanque de cooltanque"
+	containername = "caja de tanque de coolant"
 
 /decl/hierarchy/supply_pack/supply/fueltank
 	name = "Liquido - Tanque de combustible"
