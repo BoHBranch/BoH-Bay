@@ -1,8 +1,8 @@
 /decl/hierarchy/supply_pack/engineering
-	name = "Engineering"
+	name = "Ingenieria"
 
 /decl/hierarchy/supply_pack/engineering/smes_circuit
-	name = "Electronics - Superconducting magnetic energy storage unit circuitry"
+	name = "Electronicos - Superconducting magnetic energy storage unit circuitry"
 	contains = list(/obj/item/weapon/stock_parts/circuitboard/smes)
 	cost = 20
 	containername = "superconducting magnetic energy storage unit circuitry crate"
