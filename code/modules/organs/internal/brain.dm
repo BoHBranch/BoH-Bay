@@ -81,9 +81,9 @@
 /obj/item/organ/internal/brain/examine(mob/user)
 	. = ..()
 	if(brainmob && brainmob.client)//if thar be a brain inside... the brain.
-		to_chat(user, "Puedes sentir un pequeño brillo de vida que le queda")
+		to_chat(user, "Puedes sentir una pequeña chispa de vida que le queda")
 	else
-		to_chat(user, "Este particularmente parece sin vida. Quizas recupere algo de brillo mas tarde.")
+		to_chat(user, "Este particularmente parece sin vida. Quizas recupere algo de chispa mas tarde.")
 
 /obj/item/organ/internal/brain/removed(var/mob/living/user)
 	if(!istype(owner))
