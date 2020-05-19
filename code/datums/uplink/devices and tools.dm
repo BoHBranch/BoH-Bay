@@ -43,13 +43,6 @@
 	item_cost = 10
 	path = /obj/item/weapon/plastique
 
-/datum/uplink_item/item/tools/heavy_armor
-	name = "Heavy Armor Vest and Helmet"
-	desc = "This satchel holds a combat helmet and fully equipped plate carrier. \
-	Suit up, and strap in, things are about to get hectic."
-	item_cost = 10
-	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/armor
-
 /datum/uplink_item/item/tools/encryptionkey_radio
 	name = "Encrypted Radio Channel Key"
 	desc = "This headset encryption key will allow you to speak on a hidden, encrypted radio channel. Use a screwdriver on your headset to exchange keys."
@@ -94,13 +87,6 @@
 	desc = "Appears and functions as a standard multitool until a screwdriver is used to toggle it. \
 			While in hacking mode, this device will grant full access to any airlock in 20 to 40 seconds. \
 			This device will be able to continuously reaccess the last 6 to 8  airlocks it was used on."
-
-/datum/uplink_item/item/tools/space_suit
-	name = "Voidsuit and Tactical Mask"
-	desc = "A satchel containing a non-regulation voidsuit, voidsuit helmet, tactical mask, and oxygen tank. \
-	Conceal your identity, while also not dying in space. This fits primarily humans, and might not work with others."
-	item_cost = 28
-	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/space
 
 /datum/uplink_item/item/tools/thermal
 	name = "Thermal Imaging Glasses"
