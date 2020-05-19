@@ -235,7 +235,7 @@
 /var/const/access_lawyer = "ACCESS_LAWYER" //38
 /datum/access/lawyer
 	id = access_lawyer
-	desc = "Internal Affairs"
+	desc = "Lawyer Office"
 	region = ACCESS_REGION_COMMAND
 
 /var/const/access_virology = "ACCESS_VIRO" //39

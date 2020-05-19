@@ -234,3 +234,7 @@
 	color = COLOR_BOTTLE_GREEN
 	detail_color = COLOR_COMMAND_BLUE
 	job_access_type = /datum/job/bailiff
+
+/obj/item/weapon/card/id/torch/contractor/service/lawyer
+	job_access_type = /datum/job/lawyer
+	detail_color = COLOR_NAVY_BLUE

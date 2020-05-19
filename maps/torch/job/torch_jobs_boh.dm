@@ -459,9 +459,9 @@
 /datum/job/bailiff
 	allowed_branches = list(/datum/mil_branch/private_security, /datum/mil_branch/civilian, /datum/mil_branch/solgov)
 	allowed_ranks = list(
-		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc,
-		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc/agent,
-		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/saare,
+		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/crew/command/bailiff/pcrc,
+		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/crew/command/bailiff/pcrc/agent,
+		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/crew/command/bailiff/saare,
 		/datum/mil_rank/sol/agent = /decl/hierarchy/outfit/job/torch/crew/command/bailiff/agent,
 		/datum/mil_rank/civ/contractor
 	)
