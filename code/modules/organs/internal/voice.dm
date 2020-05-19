@@ -1,5 +1,5 @@
 /obj/item/organ/internal/voicebox
-	name = "vocal chords"
+	name = "cuerdas vocales"
 	icon_state = "voicebox"
 	parent_organ = BP_CHEST
 	organ_tag = BP_VOICE
@@ -15,4 +15,4 @@
 	assists_languages = language_datums
 
 /obj/item/organ/internal/voicebox/get_mechanical_assisted_descriptor()
-	return "surgically altered [name]"
+	return "alterado quirurgicamente [name]"
