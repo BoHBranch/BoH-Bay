@@ -68,8 +68,7 @@
 
 /obj/item/clothing/head/helmet/space/void/skrell/exchange
 	name = "Skrellian exchange voidsuit helmet"
-	desc = "Smoothly contoured and polished to a shine. Still looks like a fishbowl. The inferior quality of its construction mark this as a \ 
-			somewhat outdated model."
+	desc = "Smoothly contoured and polished to a shine. Still looks like a fishbowl. The inferior quality of its construction mark this as a somewhat outdated model."
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_MINOR,
@@ -88,8 +87,7 @@
 
 /obj/item/clothing/suit/space/void/skrell/exchange
 	name = "Skrellian exchange voidsuit"
-	desc = "Seems like a wetsuit with reinforced plating seamlessly attached to it. Very chic. The inferior quality of the fabric and other material used \ 
-			in its construction mark this as a somewhat outdated model."
+	desc = "Seems like a wetsuit with reinforced plating seamlessly attached to it. Very chic. The inferior quality of the fabric and other material used in its construction mark this as a somewhat outdated model."
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_MINOR,
