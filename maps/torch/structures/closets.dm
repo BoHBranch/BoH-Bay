@@ -107,15 +107,12 @@
 
 //demolocker
 /obj/structure/closet/secure_closet/inftech/ammo
-	name = "technician's munition locker"
+	name = "technician's support locker"
 	req_access = list(access_inftech)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/warden
 
 /obj/structure/closet/secure_closet/inftech/ammo/WillContain()
 	return list(
-		/obj/item/ammo_casing/rocket/rcr,
-		/obj/item/ammo_casing/rocket/rcr,
-		/obj/item/ammo_casing/rocket/rcr,
 		/obj/item/ammo_magazine/mil_rifle/sec/large,
 		/obj/item/ammo_magazine/mil_rifle/sec/large,
 		/obj/item/ammo_magazine/mil_rifle/sec/large

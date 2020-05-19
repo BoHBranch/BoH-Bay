@@ -106,7 +106,7 @@
 						SKILL_EVA		   = SKILL_MAX,
 						SKILL_CONSTRUCTION = SKILL_MAX,
 						SKILL_ELECTRICAL   = SKILL_MAX)
-						
+
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/e4,
@@ -133,8 +133,8 @@
 	title = "Rifleman"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 4
+	spawn_positions = 4
 	minimal_player_age = 6
 	supervisors = "the Combat Technician and Squad Leader"
 	selection_color = "#557e38"

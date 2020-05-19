@@ -4537,10 +4537,8 @@
 	dir = 6
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/item/gunbox/infantry,
-/obj/item/gunbox/infantry,
-/obj/item/gunbox/inftech,
-/obj/item/gunbox/infcom,
+/obj/item/weapon/plastique,
+/obj/item/weapon/plastique,
 /turf/simulated/floor/plating,
 /area/security/infantry/armory)
 "hY" = (
@@ -4594,6 +4592,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/catwalk_plated,
+/obj/machinery/camera/network/security{
+	c_tag = "Infantry Prep";
+	dir = 8
+	},
 /turf/simulated/floor/plating,
 /area/security/infantry)
 "id" = (
@@ -9281,8 +9283,10 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/hallwaya)
 "pM" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel_grid,
+/obj/structure/closet/secure_closet/infantry,
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/item/gunbox/infantry,
+/turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
 "pN" = (
 /obj/structure/cable/cyan{
@@ -11077,10 +11081,6 @@
 	dir = 4
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
 /obj/machinery/power/apc{
 	dir = 1;
 	emp_hardened = 1;
@@ -11091,6 +11091,11 @@
 /obj/structure/cable/cyan{
 	icon_state = "0-2"
 	},
+/obj/machinery/camera/all/command{
+	c_tag = "Infantry Armory"
+	},
+/obj/item/weapon/storage/box/fragshells,
+/obj/item/weapon/storage/box/fragshells,
 /turf/simulated/floor/plating,
 /area/security/infantry/armory)
 "sR" = (
@@ -12177,6 +12182,9 @@
 /obj/structure/bed/chair/comfy/beige{
 	dir = 4
 	},
+/obj/effect/landmark/start{
+	name = "Rifleman"
+	},
 /turf/simulated/floor/tiled,
 /area/security/infantry)
 "uS" = (
@@ -12218,8 +12226,12 @@
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/com)
 "uW" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
 /obj/structure/closet/secure_closet/infantry,
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/item/gunbox/infantry,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
 "uX" = (
@@ -12308,10 +12320,18 @@
 	icon_state = "4-8"
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/item/weapon/storage/box/flares,
-/obj/item/weapon/storage/box/flares,
-/obj/item/weapon/storage/box/flares,
-/obj/item/weapon/storage/box/flares,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/weapon/crowbar/prybar,
+/obj/item/weapon/crowbar/prybar,
+/obj/item/weapon/crowbar/prybar,
+/obj/item/weapon/crowbar/prybar,
+/obj/item/weapon/crowbar/prybar,
+/obj/item/weapon/crowbar/prybar,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
 "vh" = (
@@ -12458,6 +12478,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
+/obj/item/gunbox/infcom,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/com)
 "vt" = (
@@ -12671,7 +12692,10 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/security/infantry)
 "vW" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/closet/secure_closet/infantry,
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/item/gunbox/infantry,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
 "vX" = (
@@ -12737,15 +12761,16 @@
 /turf/simulated/floor/airless,
 /area/security/infantry/armory)
 "wh" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 4
-	},
+/obj/structure/table/rack/shelf/steel,
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/inftech/ammo{
-	name = "munition locker"
-	},
+/obj/item/weapon/rig/military/infantry,
+/obj/item/weapon/rig/military/infantry,
+/obj/item/weapon/rig/military/infantry,
+/obj/item/weapon/rig/military/infantry,
+/obj/item/weapon/rig/military/infantry,
+/obj/item/weapon/rig/military/infantry,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/armory)
 "wi" = (
@@ -12847,6 +12872,9 @@
 /area/shuttle/petrov/rd)
 "wv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/landmark/start{
+	name = "Rifleman"
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/security/infantry)
 "ww" = (
@@ -12878,14 +12906,11 @@
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/equipment)
 "wy" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
-/obj/structure/flora/pottedplant/crystal{
-	desc = "You just know him as good ol' Jim.";
-	name = "Jim, the Plant."
-	},
-/turf/simulated/floor/tiled/monotile,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/closet/secure_closet/infantry,
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/item/gunbox/infantry,
+/turf/simulated/floor/tiled/steel_grid,
 /area/security/infantry)
 "wz" = (
 /obj/machinery/door/airlock/research{
@@ -12931,6 +12956,11 @@
 	pixel_x = -23;
 	pixel_y = -3
 	},
+/obj/item/weapon/plastique,
+/obj/item/weapon/plastique,
+/obj/item/weapon/plastique,
+/obj/item/weapon/plastique,
+/obj/item/gunbox/inftech,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/gear)
 "wC" = (
@@ -12981,9 +13011,11 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "wI" = (
 /obj/machinery/door/airlock/command{
+	hackProof = 1;
 	id_tag = "Inf_Arm_Access";
 	locked = 1;
-	name = "Armory"
+	name = "Armory";
+	secured_wires = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -13024,6 +13056,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/landmark/start{
+	name = "Rifleman"
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/security/infantry)
 "wL" = (
@@ -13055,6 +13090,34 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/hallwaya)
+"wM" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/security/infantry/armory)
+"wN" = (
+/obj/structure/closet/secure_closet/inftech/ammo{
+	name = "support locker"
+	},
+/obj/item/rig_module/vision/nvg,
+/obj/item/rig_module/vision/nvg,
+/obj/item/rig_module/vision/nvg,
+/obj/item/rig_module/vision/nvg,
+/obj/item/rig_module/vision/nvg,
+/obj/item/rig_module/vision/nvg,
+/obj/item/rig_module/grenade_launcher/smoke,
+/obj/item/rig_module/grenade_launcher/light,
+/turf/simulated/floor/tiled/monotile,
+/area/security/infantry/armory)
+"wO" = (
+/obj/structure/flora/ausbushes/brflowers,
+/obj/structure/flora/pottedplant/crystal{
+	desc = "You just know him as good ol' Jim.";
+	name = "Officer Jimbo"
+	},
+/turf/simulated/floor/grass,
+/area/crew_quarters/garden)
 "wW" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -31088,7 +31151,7 @@ aa
 aa
 he
 he
-he
+wh
 he
 aM
 aM
@@ -31289,11 +31352,11 @@ aa
 aa
 aa
 he
+wN
+wM
 he
-wh
-he
+pM
 vW
-uW
 vV
 vn
 vB
@@ -31696,8 +31759,8 @@ he
 sQ
 wn
 he
+uW
 wy
-pM
 wC
 sN
 vQ
@@ -31705,7 +31768,7 @@ vd
 vy
 vy
 aM
-fc
+wO
 dt
 kK
 eI
