@@ -1,5 +1,5 @@
 /obj/structure/bookcase/manuals/xenoarchaeology
-	name = "Xenoarchaeology Manuals bookcase"
+	name = "Libreria de manuales de xenoarquelogia"
 
 /obj/structure/bookcase/manuals/xenoarchaeology/New()
 	..()
@@ -12,7 +12,7 @@
 	update_icon()
 
 /obj/structure/closet/secure_closet/xenoarchaeologist
-	name = "Xenoarchaeologist Locker"
+	name = "Armario de xenoarquelogista"
 	req_access = list(access_xenoarch)
 	closet_appearance = /decl/closet_appearance/secure_closet/expedition/science
 
@@ -36,7 +36,7 @@
 	new /obj/item/taperoll/research(src)
 
 /obj/structure/closet/excavation
-	name = "excavation tools"
+	name = "herramientas de excavacion"
 	closet_appearance = /decl/closet_appearance/secure_closet/engineering/tools
 
 /obj/structure/closet/excavation/New()

@@ -1,15 +1,15 @@
 /decl/hierarchy/supply_pack/supply
-	name = "Supplies - Comissary"
+	name = "Suministros - Comisario"
 	containertype = /obj/structure/closet/crate
 
 /decl/hierarchy/supply_pack/supply/toner
-	name = "Refills - Toner cartridges"
+	name = "Recargas - Cartuchos de tinta"
 	contains = list(/obj/item/device/toner = 3)
 	cost = 10
-	containername = "toner cartridges"
+	containername = "caja de cartuchos de tinta"
 
 /decl/hierarchy/supply_pack/supply/cardboard_sheets
-	name = "Material - cardboard sheets (50)"
+	name = "Material - Laminas de carton (50)"
 	contains = list(/obj/item/stack/material/cardboard/fifty)
 	cost = 10
 	containername = "cardboard sheets crate"
@@ -21,46 +21,46 @@
 	containername = "\improper Sticky notes crate"
 
 /decl/hierarchy/supply_pack/supply/wpaper
-	name = "Cargo - Wrapping paper"
+	name = "Cargo - Papel de envolver"
 	contains = list(/obj/item/stack/package_wrap/twenty_five = 3)
 	cost = 10
-	containername = "wrapping paper"
+	containername = "caja de papel de envolver"
 
 /decl/hierarchy/supply_pack/supply/tapes
-	name = "Medium - Blank Tapes (14)"
+	name = "Medium - Cintas en blanco (14)"
 	contains = list (/obj/item/weapon/storage/box/tapes)
 	cost = 10
-	containername = "blank tapes crate"
+	containername = "caja de cintas en blanco"
 
 /decl/hierarchy/supply_pack/supply/taperolls
-	name = "G.O.S.H - Barricade Tapes (mixed)"
+	name = "G.O.S.H - Cintas de barricada (mezclado)"
 	contains = list (/obj/item/weapon/storage/box/taperolls)
 	cost = 10
-	containername = "barricade tape crate"
+	containername = "caja de cintas de barricada"
 
 /decl/hierarchy/supply_pack/supply/scanner_module
-	name = "Electronics - Paper scanner modules"
+	name = "Electronicos - Modulos de escaner de papel"
 	contains = list(/obj/item/weapon/stock_parts/computer/scanner/paper = 4)
 	cost = 20
-	containername = "paper scanner module crate"
+	containername = "caja de modulos de escaner de paper"
 
 /decl/hierarchy/supply_pack/supply/spare_pda
-	name = "Electronics - Spare PDAs"
+	name = "Electronicos - Spare PDAs"
 	contains = list(/obj/item/modular_computer/pda = 3)
 	cost = 10
 	containername = "spare PDA crate"
 
 /decl/hierarchy/supply_pack/supply/eftpos
 	contains = list(/obj/item/device/eftpos)
-	name = "Electronics - EFTPOS scanner"
+	name = "Electronicos - EFTPOS escaner"
 	cost = 10
 	containername = "\improper EFTPOS crate"
 
 /decl/hierarchy/supply_pack/supply/water
-	name = "Refills - Bottled water"
+	name = "Recargas - Botellas de agua"
 	contains = list (/obj/item/weapon/storage/box/water = 2)
 	cost = 12
-	containername = "bottled water crate"
+	containername = "caja de botellas de agua"
 
 /decl/hierarchy/supply_pack/supply/sodas
 	num_contained = 2
@@ -73,9 +73,9 @@
 					/obj/item/weapon/storage/box/cola/icedtea,
 					/obj/item/weapon/storage/box/cola/grapejuice,
 					/obj/item/weapon/storage/box/cola/sodawater)
-	name = "Refills - Soda cans"
+	name = "Recargas - Latas de Soda"
 	cost = 10
-	containername = "soda can crate"
+	containername = "caja de latas de soda"
 	supply_method = /decl/supply_method/randomized
 
 /decl/hierarchy/supply_pack/supply/snacks
@@ -87,9 +87,9 @@
 					/obj/item/weapon/storage/box/snack/tastybread,
 					/obj/item/weapon/storage/box/snack/candy,
 					/obj/item/weapon/storage/box/snack/chips)
-	name = "Refills - Snack foods"
+	name = "Recargas - Meriendas"
 	cost = 10
-	containername = "snack foods crate"
+	containername = "caja de meriendas"
 	supply_method = /decl/supply_method/randomized
 
 /decl/hierarchy/supply_pack/supply/canned
@@ -99,31 +99,31 @@
 					/obj/item/weapon/storage/box/canned/beans,
 					/obj/item/weapon/storage/box/canned/tomato,
 )
-	name = "Emergency - Canned foods"
+	name = "Emergency - Comidas enlatadas"
 	cost = 30
-	containername = "canneds crate"
+	containername = "caja de comidas enlatadas"
 	supply_method = /decl/supply_method/randomized
 
 /decl/hierarchy/supply_pack/supply/coolanttank
-	name = "Liquid - Coolant tank"
+	name = "Liquid - Tanque de Coolant"
 	contains = list(/obj/structure/reagent_dispensers/coolanttank)
 	cost = 16
 	containertype = /obj/structure/largecrate
-	containername = "coolant tank crate"
+	containername = "caja de tanque de coolant"
 
 /decl/hierarchy/supply_pack/supply/fueltank
-	name = "Liquid - Fuel tank"
+	name = "Liquido - Tanque de combustible"
 	contains = list(/obj/structure/reagent_dispensers/fueltank)
 	cost = 8
 	containertype = /obj/structure/largecrate
-	containername = "fuel tank crate"
+	containername = "caja de combustible"
 
 /decl/hierarchy/supply_pack/supply/watertank
-	name = "Liquid - Water tank"
+	name = "Liquido - Tanque de agua"
 	contains = list(/obj/structure/reagent_dispensers/watertank)
 	cost = 8
 	containertype = /obj/structure/largecrate
-	containername = "water tank crate"
+	containername = "caja de tanque de agua"
 
 //replacement vendors
 //Vending Machines

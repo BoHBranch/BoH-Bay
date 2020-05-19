@@ -7,7 +7,7 @@
 	supervisors = "the Executive Officer"
 	economic_power = 5
 	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 27)
+	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -77,7 +77,7 @@
 	title = "Prospector"
 	department = "Supply"
 	department_flag = SUP
-	total_positions = 2
+	total_positions = 4
 	spawn_positions = 2
 	supervisors = "the Deck Officer, the Corporate Liaison and the Executive Officer"
 	economic_power = 7

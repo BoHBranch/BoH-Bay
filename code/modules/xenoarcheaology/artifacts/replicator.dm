@@ -1,6 +1,6 @@
 /obj/machinery/replicator
-	name = "alien machine"
-	desc = "It's some kind of pod with strange wires and gadgets all over it."
+	name = "maquina alienigena"
+	desc = "Es una especie de capsula con cables y dispositivos extraños."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "borgcharger0(old)"
 	density = 1

@@ -1,28 +1,28 @@
 /datum/gear/uniform
-	sort_category = "Uniforms and Casual Dress"
+	sort_category = "Uniformes y Ropa Casual"
 	slot = slot_w_uniform
 	category = /datum/gear/uniform
 
 /datum/gear/uniform/jumpsuit
-	display_name = "jumpsuit, colour select"
+	display_name = "jumpsuit, coloreable"
 	path = /obj/item/clothing/under/color
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/uniform/shortjumpskirt
-	display_name = "short jumpskirt, colour select"
+	display_name = "jumpskirt corto, coloreable"
 	path = /obj/item/clothing/under/shortjumpskirt
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/uniform/blackjumpshorts
-	display_name = "black jumpsuit shorts"
+	display_name = "jumpsuit negro con shorts"
 	path = /obj/item/clothing/under/color/blackjumpshorts
 
 /datum/gear/uniform/roboticist_skirt
-	display_name = "skirt, roboticist"
+	display_name = "falda, robotista"
 	path = /obj/item/clothing/under/rank/roboticist/skirt
 
 /datum/gear/uniform/suit
-	display_name = "clothes selection"
+	display_name = "ropas varias"
 	path = /obj/item/clothing/under
 
 /datum/gear/uniform/suit/New()
@@ -57,16 +57,16 @@
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(suits)
 
 /datum/gear/uniform/scrubs
-	display_name = "standard medical scrubs"
+	display_name = "ropa de cirugia estandar"
 	path = /obj/item/clothing/under/rank/medical/scrubs
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/uniform/scrubs/custom
-	display_name = "scrubs, colour select"
+	display_name = "ropa de cirugia, coloreable"
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/uniform/dress
-	display_name = "dress selection"
+	display_name = "vestidos varios"
 	path = /obj/item/clothing/under
 
 /datum/gear/uniform/dress/New()
@@ -82,72 +82,72 @@
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(dresses)
 
 /datum/gear/uniform/cheongsam
-	display_name = "cheongsam, colour select"
+	display_name = "cheongsam, coloreable"
 	path = /obj/item/clothing/under/cheongsam
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/uniform/abaya
-	display_name = "abaya, colour select"
+	display_name = "abaya, coloreable"
 	path = /obj/item/clothing/under/abaya
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/uniform/skirt
-	display_name = "skirt selection"
+	display_name = "faldas varias"
 	path = /obj/item/clothing/under/skirt
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/uniform/skirt_c
-	display_name = "short skirt, colour select"
+	display_name = "falda corta, coloreable"
 	path = /obj/item/clothing/under/skirt_c
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/uniform/skirt_c/dress
-	display_name = "simple dress, colour select"
+	display_name = "vestido simple, coloreable"
 	path = /obj/item/clothing/under/skirt_c/dress
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/uniform/casual_pants
-	display_name = "casual pants selection"
+	display_name = "pantalones casuales varios"
 	path = /obj/item/clothing/under/casual_pants
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/uniform/formal_pants
-	display_name = "formal pants selection"
+	display_name = "pantalones formales varios"
 	path = /obj/item/clothing/under/formal_pants
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/uniform/formal_pants/custom
-	display_name = "suit pants, colour select"
+	display_name = "pantalones de traje, coloreables"
 	path = /obj/item/clothing/under/formal_pants
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/uniform/formal_pants/baggycustom
-	display_name = "baggy suit pants, colour select"
+	display_name = "pantalones de traje sueltos, coloreables"
 	path = /obj/item/clothing/under/formal_pants/baggy
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/uniform/shorts
-	display_name = "shorts selection"
+	display_name = "shorts varios"
 	path = /obj/item/clothing/under/shorts/jeans
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/uniform/shorts/custom
-	display_name = "athletic shorts, colour select"
+	display_name = "shorts atleticos, coloreables"
 	path = /obj/item/clothing/under/shorts/
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/uniform/turtleneck
-	display_name = "sweater, colour select"
+	display_name = "sueter, coloreable"
 	path = /obj/item/clothing/under/rank/psych/turtleneck/sweater
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/uniform/kimono
-	display_name = "kimono, colour select"
+	display_name = "kimono, coloreable"
 	path = /obj/item/clothing/under/kimono
 	flags = GEAR_HAS_COLOR_SELECTION
 
 /datum/gear/uniform/corporate
-	display_name = "corporate uniform selection"
+	display_name = "uniformes empresarios varios"
 	path = /obj/item/clothing/under
 
 /datum/gear/uniform/corporate/New()
@@ -172,33 +172,33 @@
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(corps)
 
 /datum/gear/uniform/corp_exec
-	display_name = "corporate colours, senior researcher"
+	display_name = "colores empresarios, investigador senior"
 	path = /obj/item/clothing/under/rank/scientist/executive
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/uniform/corp_overalls
-	display_name = "corporate colours, coveralls"
+	display_name = "overoles, colores empresarios"
 	path = /obj/item/clothing/under/rank/ntwork
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/uniform/corp_flight
-	display_name = "corporate colours, flight suit"
+	display_name = "traje de piloto, colores empresarios"
 	path = /obj/item/clothing/under/rank/ntpilot
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/uniform/corp_exec_jacket
-	display_name = "corporate colours, liason suit"
+	display_name = "traje de liason, colores empresarios"
 	path = /obj/item/clothing/under/suit_jacket/corp
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/uniform/sterile
-	display_name = "sterile jumpsuit"
+	display_name = "jumpsuit esteril"
 	path = /obj/item/clothing/under/sterile
 
 /datum/gear/uniform/hazard
-	display_name = "hazard jumpsuit"
+	display_name = "jumpsuit de peligro quimico"
 	path = /obj/item/clothing/under/hazard
 
 /datum/gear/uniform/frontier
-	display_name = "frontier clothes"
+	display_name = "ropa de frontera"
 	path = /obj/item/clothing/under/frontier

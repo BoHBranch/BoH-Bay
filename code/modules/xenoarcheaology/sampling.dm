@@ -1,6 +1,6 @@
 /obj/item/weapon/rocksliver
-	name = "rock sliver"
-	desc = "It looks extremely delicate."
+	name = "astilla de roca"
+	desc = "Se ve muy delicado."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "sliver1"
 	randpixel = 8
@@ -80,7 +80,7 @@
 
 /obj/item/device/core_sampler
 	name = "core sampler"
-	desc = "Used to extract geological core samples."
+	desc = "Se utiliza para extraer muestras de nucleo geologicos."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "sampler0"
 	item_state = "screwdriver_brown"
@@ -93,19 +93,19 @@
 /obj/item/device/core_sampler/examine(mob/user, distance)
 	. = ..(user)
 	if(distance <= 2)
-		to_chat(user, "<span class='notice'>Used to extract geological core samples - this one is [sampled_turf ? "full" : "empty"], and has [num_stored_bags] bag[num_stored_bags != 1 ? "s" : ""] remaining.</span>")
+		to_chat(user, "<span class='notice'>Se utiliza para extraer muestra de nucleo geologicos - Esto es un [sampled_turf ? "full" : "empty"], y tiene [num_stored_bags] bolsas[num_stored_bags != 1 ? "s" : ""] restantes</span>")
 
 /obj/item/device/core_sampler/attackby(var/obj/item/I, var/mob/living/user)
 	if(istype(I, /obj/item/weapon/evidencebag))
 		if(I.contents.len)
-			to_chat(user, "<span class='warning'>\The [I] is full.</span>")
+			to_chat(user, "<span class='warning'>\ La [I] esta llena.</span>")
 			return
 		if(num_stored_bags < 10)
 			qdel(I)
 			num_stored_bags += 1
-			to_chat(user, "<span class='notice'>You insert \the [I] into \the [src].</span>")
+			to_chat(user, "<span class='notice'>Has insertado \ una [I] en \ el [src].</span>")
 		else
-			to_chat(user, "<span class='warning'>\The [src] can not fit any more bags.</span>")
+			to_chat(user, "<span class='warning'>\ El [src] no puede contener mas bolsas.</span>")
 	else
 		return ..()
 
@@ -122,14 +122,14 @@
 
 	if(geo_data)
 		if(filled_bag)
-			to_chat(user, "<span class='warning'>The core sampler is full.</span>")
+			to_chat(user, "<span class='warning'>El core sampler is fullesta lleno.</span>")
 		else if(num_stored_bags < 1)
-			to_chat(user, "<span class='warning'>The core sampler is out of sample bags.</span>")
+			to_chat(user, "<span class='warning'>El core sampler esta sin bolsas.</span>")
 		else
 			//create a new sample bag which we'll fill with rock samples
 			filled_bag = new /obj/item/weapon/evidencebag(src)
 			filled_bag.SetName("sample bag")
-			filled_bag.desc = "a bag for holding research samples."
+			filled_bag.desc = "una bolsa para guardar muestras de investigacion."
 
 			icon_state = "sampler1"
 			--num_stored_bags
@@ -146,13 +146,13 @@
 			filled_bag.w_class = ITEM_SIZE_TINY
 			filled_bag.stored_item = R
 
-			to_chat(user, "<span class='notice'>You take a core sample of the [item_to_sample].</span>")
+			to_chat(user, "<span class='notice'>Tomas una muestra de nucleo del [item_to_sample].</span>")
 	else
-		to_chat(user, "<span class='warning'>You are unable to take a sample of [item_to_sample].</span>")
+		to_chat(user, "<span class='warning'>No puedes tomar una muestra de [item_to_sample].</span>")
 
 /obj/item/device/core_sampler/attack_self(var/mob/living/user)
 	if(filled_bag)
-		to_chat(user, "<span class='notice'>You eject the full sample bag.</span>")
+		to_chat(user, "<span class='notice'>Expulsas la bolsa de muestra completa.</span>")
 		var/success = 0
 		if(istype(src.loc, /mob))
 			var/mob/M = src.loc
@@ -162,4 +162,4 @@
 		filled_bag = null
 		icon_state = "sampler0"
 	else
-		to_chat(user, "<span class='warning'>The core sampler is empty.</span>")
+		to_chat(user, "<span class='warning'>El core sampler esta vacio.</span>")

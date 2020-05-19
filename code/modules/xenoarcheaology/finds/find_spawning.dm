@@ -505,13 +505,13 @@
 	icon = 'icons/mob/robots_gibs.dmi'
 	icon_state = "remainsrobot"
 	find_type = ARCHAEO_REMAINS_ROBOT
-	descs = list("Almost mistakeable for the remains of a modern cyborg.",\
-			"They are barely recognisable as anything other than a pile of waste metals.",\
-			"It looks like the battered remains of an ancient robot chassis.",\
-			"The chassis is rusting and old, but remarkably well preserved.",\
-			"The chassis is scored by numerous burns and partially melted.",\
-			"The chassis is battered and broken, in some cases only chunks of metal are left.",\
-			"A pile of wires and crap metal that looks vaguely robotic.")
+	descs = list("Casi confundible con los restos de un Cyborg moderno.",\
+			"Apenas es reconocible como cualquier cosa que no sea un monton de desechos de metales.",\
+			"Parecen los restos maltratados de un antiguo chasis robotico.",\
+			"El chasis esta oxidado y viejo, pero notablemente bien conservado.",\
+			"El chasis esta marcado por numerosas quemaduras y parcialmente fundido.",\
+			"El chasis está maltratado y roto, en algunos casos solo quedan trozos de metal.",\
+			"Una pila de alambres y basura de metal que se ve vagamente robotica.")
 
 /obj/item/weapon/archaeological_find/remains/robot/spawn_item()
 	. = ..()
@@ -520,14 +520,14 @@
 /obj/item/weapon/archaeological_find/remains/xeno
 	icon_state = "remainsxeno"
 	find_type = ARCHAEO_REMAINS_ROBOT
-	descs = list("It looks vaguely reptilian, but with more teeth.",\
-			"They are faintly unsettling.",\
-			"There is a faint aura of unease about them.",\
-			"The bones are yellowing and old, but remarkably well preserved.",\
-			"The bones are scored by numerous burns and partially melted.",\
-			"The are battered and broken, in some cases less than splinters are left.",\
-			"This creature would have been twisted and monstrous when it was alive.",\
-			"It doesn't look human.")
+	descs = list("Se ve vagamente reptiliano, pero con mas dientes.",\
+			"Esto es ligeramente inquietante.",\
+			"Hay una leve aura de inquietud sobre esto.",\
+			"Los huesos son amarillentos y viejos, pero notablemente bien conservados.",\
+			"Los huesos estan marcados por numerosas quemaduras y parcialmente fundidos..",\
+			"Esta maltratado y roto, en algunas partes quedan menos que astillas.",\
+			"Esta criatura habria sido retorcida y monstruosa cuando estaba viva.",\
+			"Esto no parece humano.")
 
 /obj/item/weapon/archaeological_find/remains/xeno/spawn_item()
 	. = ..()

@@ -10,15 +10,15 @@ var/global/list/responsive_carriers = list(
 	/datum/reagent/toxin/phoron)
 
 var/global/list/finds_as_strings = list(
-	"Trace organic cells",
-	"Long exposure particles",
-	"Trace water particles",
-	"Crystalline structures",
-	"Metallic derivative",
-	"Metallic composite",
-	"Metamorphic/igneous rock composite",
-	"Metamorphic/sedimentary rock composite",
-	"Anomalous material")
+	"Traza celulas organicas",
+	"Particulas de larga exposicion",
+	"Traza particulas de agua",
+	"Estructuras cristalinas",
+	"Derivado metalico",
+	"Compuesto metalico",
+	"Metamorfico/compuesto de roca ignea",
+	"Metamorfico/compuesto de roca sedimentaria",
+	"Materia anomala")
 
 /proc/get_responsive_reagent(var/find_type)
 	switch(find_type)

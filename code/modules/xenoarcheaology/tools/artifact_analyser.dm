@@ -1,6 +1,6 @@
 /obj/machinery/artifact_analyser
-	name = "Anomaly Analyser"
-	desc = "Studies the emissions of anomalous materials to discover their uses."
+	name = "Analizador de anomalias"
+	desc = "Estudia las emisiones de materiales anomalos para descubrir sus usos."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "xenoarch_console"
 	anchored = 1
@@ -32,23 +32,23 @@
 	return TRUE
 
 /obj/machinery/artifact_analyser/interact(mob/user)
-	var/dat = "<B>Anomalous material analyser</B><BR>"
+	var/dat = "<B>Analizador de material anomalo</B><BR>"
 	dat += "<HR>"
 	if(!owned_scanner)
 		reconnect_scanner()
 
 	if(!owned_scanner)
-		dat += "<b><font color=red>Unable to locate analysis pad.</font></b><br>"
+		dat += "<b><font color=red>No se puede localizar el panel de analisis.</font></b><br>"
 	else if(scan_in_progress)
-		dat += "Please wait. Analysis in progress.<br>"
-		dat += "<a href='?src=\ref[src];halt_scan=1'>Halt scanning.</a><br>"
+		dat += "Por favor espera, analisis en progreso...<br>"
+		dat += "<a href='?src=\ref[src];halt_scan=1'>Detener escaneo.</a><br>"
 	else
 		dat += "Scanner is ready.<br>"
-		dat += "<a href='?src=\ref[src];begin_scan=1'>Begin scanning.</a><br>"
+		dat += "<a href='?src=\ref[src];begin_scan=1'>Comenzar escaneo.</a><br>"
 
 	dat += "<br>"
 	dat += "<hr>"
-	dat += "<a href='?src=\ref[src]'>Refresh</a> <a href='?src=\ref[src];close=1'>Close</a>"
+	dat += "<a href='?src=\ref[src]'>Actualizar</a> <a href='?src=\ref[src];close=1'>Close</a>"
 	user << browse(dat, "window=artanalyser;size=450x500")
 	user.set_machine(src)
 	onclose(user, "artanalyser")
@@ -62,16 +62,16 @@
 		if(!owned_scanner)
 			reconnect_scanner()
 		if(!owned_scanner)
-			results = "Error communicating with scanner."
+			results = "Error al comunicarse con el escaner."
 		else if(!scanned_object || scanned_object.loc != owned_scanner.loc)
-			results = "Unable to locate scanned object. Ensure it was not moved in the process."
+			results = "No se puede localizar el objeto escaneado. Asegurese de que no se movio durante el proceso."
 		else
 			results = get_scan_info(scanned_object)
 
-		src.visible_message("<b>[name]</b> states, \"Scanning complete.\"")
+		src.visible_message("<b>[name]</b> states, \"Escaneo completado.\"")
 		var/obj/item/weapon/paper/P = new(src.loc)
 		P.SetName("[src] report #[++report_num]")
-		P.info = "<b>[src] analysis report #[report_num]</b><br>"
+		P.info = "<b>[src] reporte de analisis #[report_num]</b><br>"
 		P.info += "<br>"
 		P.info += "\icon[scanned_object] [results]"
 		P.stamped = list(/obj/item/weapon/stamp)
@@ -103,19 +103,19 @@
 						A.being_used = 1
 
 				if(artifact_in_use)
-					src.visible_message("<b>[name]</b> states, \"Cannot scan. Too much interference.\"")
+					src.visible_message("<b>[name]</b> states, \"No se puede escanear. Demasiada interferencia.\"")
 				else
 					scanned_object = O
 					scan_in_progress = 1
 					scan_completion_time = world.time + scan_duration
-					src.visible_message("<b>[name]</b> states, \"Scanning begun.\"")
+					src.visible_message("<b>[name]</b> states, \"Escaneo comenzado.\"")
 				break
 			if(!scanned_object)
-				src.visible_message("<b>[name]</b> states, \"Unable to isolate scan target.\"")
+				src.visible_message("<b>[name]</b> states, \"No se puede aislar el objetivo de escaneo.\"")
 		. = TOPIC_REFRESH
 	else if(href_list["halt_scan"])
 		scan_in_progress = 0
-		src.visible_message("<b>[name]</b> states, \"Scanning halted.\"")
+		src.visible_message("<b>[name]</b> states, \"Escaneo detenido.\"")
 		. = TOPIC_REFRESH
 
 	else if(href_list["close"])
@@ -129,28 +129,28 @@
 /obj/machinery/artifact_analyser/proc/get_scan_info(var/obj/scanned_obj)
 	switch(scanned_obj.type)
 		if(/obj/machinery/auto_cloner)
-			return "Automated cloning pod - appears to rely on an artificial ecosystem formed by semi-organic nanomachines and the contained liquid.<br>The liquid resembles protoplasmic residue supportive of unicellular organism developmental conditions.<br>The structure is composed of a titanium alloy."
+			return "Capsula de clonacion automatizada - parece depender de un ecosistema artificial formado por nanomaquinas semi-organicas y el liquido contenido. El liquido se asemeja a un residuo protoplasmatico que apoya las condiciones de desarrollo del organismo unicelular.<br>La estructura esta compuesta de una aleacion de titanio."
 		if(/obj/machinery/power/supermatter)
-			return "Superdense phoron clump - appears to have been shaped or hewn, structure is composed of matter aproximately 20 times denser than ordinary refined phoron."
+			return "Agrupamiento de phoron superdenso - parece haber sido formado o tallado, la estructura esta compuesta de materia aproximadamente 20 veces más densa que el phoron refinado ordinario."
 		if(/obj/structure/constructshell)
-			return "Tribal idol - subject resembles statues/emblems built by superstitious pre-warp civilisations to honour their gods. Material appears to be a rock/plastcrete composite."
+			return "Idolo tribal - el sujeto se asemeja a estatuas / emblemas construidos por civilizaciones supersticiosas anteriores a la urdimbre para honrar a sus dioses. El material parece ser un compuesto de roca / plastcreto."
 		if(/obj/machinery/giga_drill)
-			return "Automated mining drill - structure composed of titanium-carbide alloy, with tip and drill lines edged in an alloy of diamond and phoron."
+			return "Taladro de mineria automatizado - estructura compuesta de aleacion de carburo de titanio, con punta y lineas de perforacion bordeadas en una aleacion de diamante y phoron."
 		if(/obj/structure/cult/pylon)
-			return "Tribal pylon - subject resembles statues/emblems built by cargo cult civilisations to honour energy systems from post-warp civilisations."
+			return "Pilon tribal - el sujeto se asemeja a estatuas / emblemas construidos por civilizaciones de culto de carga para honrar los sistemas de energia de las civilizaciones posteriores a la deformacion."
 		if(/obj/machinery/replicator)
-			return "Automated construction unit - subject appears to be able to synthesize various objects given a material, some with simple internal circuitry. Method unknown."
+			return "Unidad de construccion automatizada - el sujeto parece ser capaz de sintetizar varios objetos dados un material, algunos con circuitos internos simples. Metodo desconocido."
 		if(/obj/structure/crystal)
-			return "Crystal formation - pseudo-organic crystalline matrix, unlikely to have formed naturally. No known technology exists to synthesize this exact composition."
+			return "Formacion de cristales - matriz cristalina pseudo-organica, poco probable que se haya formado naturalmente. No existe tecnologia conocida para sintetizar esta composicion exacta."
 		if(/obj/machinery/artifact)
 			var/obj/machinery/artifact/A = scanned_obj
-			var/out = "Anomalous alien device - composed of an unknown alloy.<br><br>"
+			var/out = "Dispositivo alienigena anomalo - compuesto de una aleacion desconocida.<br><br>"
 
 			if(A.my_effect)
 				out += A.my_effect.getDescription()
 
 			if(A.secondary_effect && A.secondary_effect.activated)
-				out += "<br><br>Internal scans indicate ongoing secondary activity operating independently from primary systems.<br><br>"
+				out += "<br><br>Los escaneos internos indican una actividad secundaria en curso que opera independientemente de los sistemas primarios.<br><br>"
 				out += A.secondary_effect.getDescription()
 
 			return out

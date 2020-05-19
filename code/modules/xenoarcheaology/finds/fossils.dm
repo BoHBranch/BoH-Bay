@@ -3,10 +3,10 @@
 // fossils
 
 /obj/item/weapon/fossil
-	name = "Fossil"
+	name = "Fosil"
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "bone"
-	desc = "It's a fossil."
+	desc = "Es un fosil."
 	var/animal = 1
 
 /obj/item/weapon/fossil/base/New()
@@ -20,12 +20,12 @@
 	qdel(src)
 
 /obj/item/weapon/fossil/bone
-	name = "fossilised bone"
+	name = "hueso fosilizado"
 	icon_state = "bone"
-	desc = "A fossilised part of an alien, long dead."
+	desc = "Una parte fosilizada de un extraterrestre, muerto hace mucho tiempo."
 
 /obj/item/weapon/fossil/skull
-	name = "fossilised skull"
+	name = "creaneo fosilizado"
 	icon_state = "skull"
 
 /obj/item/weapon/fossil/skull/horned
@@ -43,10 +43,10 @@
 		forceMove(o)
 
 /obj/skeleton
-	name = "Incomplete skeleton"
+	name = "Esqueleto incompleto"
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "uskel"
-	desc = "Incomplete skeleton."
+	desc = "Esqueleto incompleto."
 	var/bnum = 1
 	var/breq
 	var/bstate = 0
@@ -54,7 +54,7 @@
 
 /obj/skeleton/New()
 	src.breq = rand(6)+3
-	src.desc = "An incomplete skeleton, looks like it could use [src.breq-src.bnum] more bones."
+	src.desc = "Un esqueleto incompleto, parece que podria usar [src.breq-src.bnum] mas huesos."
 
 /obj/skeleton/attackby(obj/item/weapon/W, mob/user)
 	if(istype(W,/obj/item/weapon/fossil/bone))
@@ -87,14 +87,14 @@
 
 //shells and plants do not make skeletons
 /obj/item/weapon/fossil/shell
-	name = "fossilised shell"
+	name = "caparazon fosilizado"
 	icon_state = "shell"
-	desc = "A fossilised, pre-Stygian alien crustacean."
+	desc = "Un crustaceo alienigena pre-Estigio fosilizado."
 
 /obj/item/weapon/fossil/plant
-	name = "fossilised plant"
+	name = "planta fosilizada"
 	icon_state = "plant1"
-	desc = " A fossilised shred of alien plant matter."
+	desc = " Un fragmento fosilizado de materia vegetal extraterrestre."
 	animal = 0
 
 /obj/item/weapon/fossil/plant/New()

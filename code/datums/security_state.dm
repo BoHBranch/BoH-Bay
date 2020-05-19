@@ -185,12 +185,12 @@
 
 /decl/security_level/default/switching_up_to()
 	if(up_description)
-		security_announcement_up.Announce(up_description, "Attention! Alert level elevated to [name]!")
+		security_announcement_up.Announce(up_description, "Atencion! Nivel de alerta elevado a [name]!")
 	notify_station()
 
 /decl/security_level/default/switching_down_to()
 	if(down_description)
-		security_announcement_down.Announce(down_description, "Attention! Alert level changed to [name]!")
+		security_announcement_down.Announce(down_description, "Atencion! Nivel de alerta degradado a [name]!")
 	notify_station()
 
 /decl/security_level/default/proc/notify_station()
@@ -208,7 +208,7 @@
 	post_status("alert")
 
 /decl/security_level/default/code_green
-	name = "code green"
+	name = "codigo verde"
 
 	light_max_bright = 0.25
 	light_inner_range = 0.1
@@ -220,10 +220,10 @@
 	overlay_alarm = "alarm_green"
 	overlay_status_display = "status_display_green"
 
-	down_description = "All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced."
+	down_description = "Todas las amenazas a la estacion han sido aclaradas. Seguridad no podra tener armas a la vista, leyes de privacidad seran nuevamente reanudadas."
 
 /decl/security_level/default/code_blue
-	name = "code blue"
+	name = "codigo azul"
 
 	light_max_bright = 0.5
 	light_inner_range = 0.1
@@ -236,11 +236,11 @@
 	overlay_alarm = "alarm_blue"
 	overlay_status_display = "status_display_blue"
 
-	up_description = "The station has received reliable information about possible hostile activity on the station. Security staff may have weapons visible, random searches are permitted."
-	down_description = "The immediate threat has passed. Security may no longer have weapons drawn at all times, but may continue to have them visible. Random searches are still allowed."
+	up_description = "La estacion ha recibido informacion a cerca de posible actividad hostil a bordo. El staff de seguridad podra tener las armas a la vista, registros al azar seran permitidos."
+	down_description = "La amenaza vigente ha sido aclarada. Seguridad ya no tendra las armas desenfundadas en todo momento, pero continuaran siendo visibles. Los registros al azar aun estan permitidos."
 
 /decl/security_level/default/code_red
-	name = "code red"
+	name = "codigo rojo"
 
 	light_max_bright = 0.5
 	light_inner_range = 0.1
@@ -253,11 +253,11 @@
 
 	psionic_control_level = PSI_IMPLANT_DISABLED
 
-	up_description = "There is an immediate serious threat to the station. Security may have weapons unholstered at all times. Random searches are allowed and advised."
-	down_description = "The self-destruct mechanism has been deactivated, there is still however an immediate serious threat to the station. Security may have weapons unholstered at all times, random searches are allowed and advised."
+	up_description = "Existe una inmediata seria amenaza contra la estacion. Seguridad tendra las armas desenfundadas en todo momento. Registros al azar seran permitidos y avisados."
+	down_description = "El mecanismo de auto-destruccion ha sido desactivado, sin embargo, la estacion aun posee una inmediata seria amenaza. Seguridad tendra las armas desenfundadas en todo momento, registros al azar son permitidos y avisados."
 
 /decl/security_level/default/code_delta
-	name = "code delta"
+	name = "codigo delta"
 
 	light_max_bright = 0.75
 	light_inner_range = 0.1
@@ -273,5 +273,5 @@
 	var/static/datum/announcement/priority/security/security_announcement_delta = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/effects/deltakalaxon.ogg'))
 
 /decl/security_level/default/code_delta/switching_up_to()
-	security_announcement_delta.Announce("The self-destruct mechanism has been engaged. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill.", "Attention! Delta security level reached!")
+	security_announcement_delta.Announce("El mecanismo de auto-destruccion esta en proceso. Toda la tripulacion esta indicada a obedecer toda instruccion dada por los Heads del staff. Toda violacion de estas ordenes puede ser castigada con la muerte. Este NO es un simulacro.", "Atencion! Nivel de seguridad Delta alcanzado!")
 	notify_station()

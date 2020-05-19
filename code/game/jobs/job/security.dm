@@ -1,12 +1,12 @@
 /datum/job/hos
-	title = "Head of Security"
+	title = "Head de Seguridad"
 	head_position = 1
-	department = "Security"
+	department = "Seguridad"
 	department_flag = SEC|COM
 
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "el capitan"
 	selection_color = "#8e2929"
 	req_admin_notify = 1
 	economic_power = 10
@@ -27,13 +27,13 @@
 		H.implant_loyalty(H)
 
 /datum/job/warden
-	title = "Warden"
-	department = "Security"
+	title = "Guardian"
+	department = "Seguridad"
 	department_flag = SEC
 
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of security"
+	supervisors = "el head de seguridad"
 	selection_color = "#601c1c"
 	economic_power = 5
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory, access_maint_tunnels, access_morgue, access_external_airlocks)
@@ -43,30 +43,30 @@
 
 /datum/job/detective
 	title = "Detective"
-	department = "Security"
+	department = "Seguridad"
 	department_flag = SEC
 
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the head of security"
+	supervisors = "el head de seguridad"
 	selection_color = "#601c1c"
-	alt_titles = list("Forensic Technician" = /decl/hierarchy/outfit/job/security/detective/forensic)
+	alt_titles = list("Tecnico forense" = /decl/hierarchy/outfit/job/security/detective/forensic)
 	economic_power = 5
-	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels)
-	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels)
+	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_eva)
+	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels, access_eva)
 	minimal_player_age = 7
 	outfit_type = /decl/hierarchy/outfit/job/security/detective
 
 /datum/job/officer
-	title = "Security Officer"
-	department = "Security"
+	title = "Oficial de Seguridad"
+	department = "Seguridad"
 	department_flag = SEC
 
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the head of security"
+	supervisors = "el head de seguridad"
 	selection_color = "#601c1c"
-	alt_titles = list("Junior Officer")
+	alt_titles = list("Oficial Junior")
 	economic_power = 4
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_morgue, access_external_airlocks)
 	minimal_access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_external_airlocks)

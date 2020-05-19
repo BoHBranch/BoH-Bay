@@ -1,15 +1,15 @@
 #define TOPIC_UPDATE_PREVIEW 4
 #define TOPIC_REFRESH_UPDATE_PREVIEW (TOPIC_REFRESH|TOPIC_UPDATE_PREVIEW)
 
-var/const/CHARACTER_PREFERENCE_INPUT_TITLE = "Character Preference"
+var/const/CHARACTER_PREFERENCE_INPUT_TITLE = "Preferencias de Personaje"
 
 /datum/category_group/player_setup_category/physical_preferences
-	name = "Physical"
+	name = "Fisico"
 	sort_order = 1
 	category_item_type = /datum/category_item/player_setup_item/physical
 
 /datum/category_group/player_setup_category/background_preferences
-	name = "Background"
+	name = "Transfondo"
 	sort_order = 2
 	category_item_type = /datum/category_item/player_setup_item/background
 
@@ -19,7 +19,7 @@ var/const/CHARACTER_PREFERENCE_INPUT_TITLE = "Character Preference"
 		. += "[PI.content(user)]<br>"
 
 /datum/category_group/player_setup_category/occupation_preferences
-	name = "Occupation"
+	name = "Ocupacion"
 	sort_order = 3
 	category_item_type = /datum/category_item/player_setup_item/occupation
 
@@ -29,12 +29,12 @@ var/const/CHARACTER_PREFERENCE_INPUT_TITLE = "Character Preference"
 	category_item_type = /datum/category_item/player_setup_item/antagonism
 
 /datum/category_group/player_setup_category/relations_preferences
-	name = "Matchmaking"
+	name = "Emparejamiento"
 	sort_order = 5
 	category_item_type = /datum/category_item/player_setup_item/relations
 
 /datum/category_group/player_setup_category/loadout_preferences
-	name = "Loadout"
+	name = "Equipamiento"
 	sort_order = 6
 	category_item_type = /datum/category_item/player_setup_item/loadout
 
@@ -44,7 +44,7 @@ var/const/CHARACTER_PREFERENCE_INPUT_TITLE = "Character Preference"
 	category_item_type = /datum/category_item/player_setup_item/player_global
 
 /datum/category_group/player_setup_category/law_pref
-	name = "Laws"
+	name = "Leyes"
 	sort_order = 8
 	category_item_type = /datum/category_item/player_setup_item/law_pref
 

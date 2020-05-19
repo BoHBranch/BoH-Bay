@@ -54,7 +54,6 @@
 	#include "infantry/outfits.dm"
 	#include "infantry/storage.dm"
 	#include "infantry/vending.dm"
-	#include "infantry/awaysitestuff.dm"
 
 	#include "items/cards_ids.dm"
 	#include "items/encryption_keys.dm"
@@ -193,7 +192,6 @@
 	#include "../away/voxship/voxship.dm"
 	#include "../away/skrellscoutship/skrellscoutship.dm"
 
-	#include "../../code/datums/music_tracks/chasing_time.dm"
 
 	#define using_map_DATUM /datum/map/torch
 
