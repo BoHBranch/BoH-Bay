@@ -46,8 +46,10 @@
 	display_name = "Skrellian exchange voidsuit helmet selection"
 	description = "A selection of outdated Skrellian voidsuit helmets for exchange personnel."
 	path = /obj/item/clothing/head/helmet/space/void/skrell/exchange
+	sort_category = "Xenowear"
 	cost = 1
 	slot = slot_head
+	allowed_roles = ARMORED_ROLES
 	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/suit/skrell_exchange_helmet/New()
@@ -61,8 +63,10 @@
 	display_name = "Skrellian exchange voidsuit selection"
 	description = "A selection of outdated Skrellian voidsuits for exchange personnel."
 	path = /obj/item/clothing/suit/space/void/skrell/exchange
+	sort_category = "Xenowear"
 	cost = 1
 	slot = slot_wear_suit
+	allowed_roles = ARMORED_ROLES
 	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/suit/skrell_exchange_voidsuit/New()
