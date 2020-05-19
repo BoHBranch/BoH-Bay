@@ -12188,11 +12188,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/com)
 "uW" = (
-/obj/structure/closet/secure_closet/infantry,
-/obj/item/clothing/suit/space/void/security/alt/prepared,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/item/clothing/mask/gas/skrell,
-/obj/item/weapon/rig/military/infantry,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
 "uX" = (
@@ -15074,6 +15070,9 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/petrov/hallwaya)
+"Gj" = (
+/turf/simulated/floor/tiled/monotile,
+/area/security/infantry)
 "Gl" = (
 /obj/structure/sign/warning/nosmoking_1{
 	dir = 1;
@@ -31758,7 +31757,7 @@ aa
 aM
 aM
 aM
-hW
+Gj
 pV
 gX
 ic
