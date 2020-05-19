@@ -91,7 +91,7 @@
 	spawn_positions = 1
 	selection_color = "#557e38"
 	economic_power = 4
-	minimal_player_age = 6
+	minimal_player_age = 8
 	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 24)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
@@ -131,9 +131,9 @@
 	title = "Rifleman"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 4
-	spawn_positions = 4
-	minimal_player_age = 3
+	total_positions = 2
+	spawn_positions = 2
+	minimal_player_age = 6
 	supervisors = "the Combat Technician and Squad Leader"
 	selection_color = "#557e38"
 	skill_points = 18

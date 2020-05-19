@@ -213,13 +213,13 @@
 	name = "plasma arc"
 	icon_state = "omnilaser"
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	damage = 15
+	damage = 10
 	sharp = 1
 	edge = 1
-	damage_type = BURN
+	damage_type = BURN || BRUTE
 	life_span = 5
 	pass_flags = PASS_FLAG_TABLE
-	distance_falloff = 4
+	distance_falloff = 5
 
 	muzzle_type = /obj/effect/projectile/trilaser/muzzle
 	tracer_type = /obj/effect/projectile/trilaser/tracer

@@ -79,11 +79,10 @@
 /obj/structure/closet/secure_closet/infantry/WillContain()
 	return list(
 		/obj/item/weapon/storage/belt/holster/security/tactical,
-		/obj/item/gunbox/infantry,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
 		/obj/item/clothing/glasses/tacgoggles,
-		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
+		/obj/item/clothing/suit/armor/pcarrier/light/sol,
 		/obj/item/weapon/extinguisher/mini,
 		/obj/item/device/gps,
 		/obj/item/weapon/storage/box/flares
@@ -97,19 +96,13 @@
 /obj/structure/closet/secure_closet/inftech/WillContain()
 	return list(
 		/obj/item/weapon/storage/belt/holster/security/tactical,
-		/obj/item/gunbox/inftech,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
 		/obj/item/clothing/glasses/tacgoggles,
-		/obj/item/weapon/rcd,
-		/obj/item/weapon/rcd_ammo/large,
-		/obj/item/weapon/rcd_ammo/large,
 		/obj/item/weapon/storage/belt/utility,
 		/obj/item/weapon/weldpack/bigwelder,
 		/obj/item/weapon/storage/box/flares,
-		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
-		/obj/item/weapon/plastique,
-		/obj/item/weapon/plastique
+		/obj/item/clothing/suit/armor/pcarrier/light/sol,
 		)
 
 //demolocker
@@ -123,11 +116,9 @@
 		/obj/item/ammo_casing/rocket/rcr,
 		/obj/item/ammo_casing/rocket/rcr,
 		/obj/item/ammo_casing/rocket/rcr,
-		/obj/item/ammo_casing/rocket/rcr,
-		/obj/item/ammo_casing/rocket/rcr,
-		/obj/item/ammo_casing/rocket/rcr,
-		/obj/item/weapon/rcd_ammo/large,
-		/obj/item/weapon/rcd_ammo/large
+		/obj/item/ammo_magazine/mil_rifle/sec/large,
+		/obj/item/ammo_magazine/mil_rifle/sec/large,
+		/obj/item/ammo_magazine/mil_rifle/sec/large
 		)
 
 /obj/structure/closet/secure_closet/squad_lead
@@ -138,7 +129,6 @@
 /obj/structure/closet/secure_closet/squad_lead/WillContain()
 	return list(
 		/obj/item/weapon/storage/belt/holster/security/tactical,
-		/obj/item/gunbox/infcom,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
 		/obj/item/clothing/glasses/tacgoggles,

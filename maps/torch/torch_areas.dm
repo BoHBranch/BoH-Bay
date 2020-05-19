@@ -1695,6 +1695,12 @@
 	icon_state = "triage"
 	req_access = list(access_infcom)
 
+/area/security/infantry/armory
+	name = "\improper Infantry Hard Storage"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "triage"
+	req_access = list(access_infcom)
+
 /area/defturrets
 	name = "\improper Anti-Boarding Control"
 	icon_state = "security_sub"

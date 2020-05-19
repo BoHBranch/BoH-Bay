@@ -3,6 +3,7 @@
 /////////
 
 /obj/item/gunbox/infantry
+	name = "Standard Kit"
 	desc = "A secure box containing a sidearm and primary."
 
 /obj/item/gunbox/infantry/attack_self(mob/living/user)
@@ -19,6 +20,7 @@
 		qdel(src)
 
 /obj/item/gunbox/infcom
+	name = "Squad Leader Kit"
 	desc = "A secure box containing a sidearm and primary."
 
 /obj/item/gunbox/infcom/attack_self(mob/living/user)
@@ -36,13 +38,14 @@
 		qdel(src)
 
 /obj/item/gunbox/inftech
+	name = "Technician Kit"
 	desc = "A secure box containing a sidearm and primary."
 
 /obj/item/gunbox/inftech/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Demolitions"] = list(/obj/item/weapon/gun/launcher/rocket/recoilless/sec,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/weapon/gun/projectile/pistol/military/sec)
-	options["Dedicated CM"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/loaded,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/storage/firstaid/combat,/obj/item/weapon/storage/belt/medical/emt)
-	options["Dedicated SAG"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/weapon/gun/projectile/pistol/military/sec)
+//	options["Demolitions"] = list(/obj/item/weapon/gun/launcher/rocket/recoilless/sec,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/weapon/gun/projectile/pistol/military/sec)
+	options["Medical Tech"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/loaded,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/bodybag/cryobag,/obj/item/weapon/storage/belt/medical/emt)
+	options["Squad Automatic Gunner"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/weapon/gun/projectile/pistol/military/sec)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
