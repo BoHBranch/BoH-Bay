@@ -10,8 +10,6 @@
 
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/briefcase, /obj/item/weapon/storage/secure/briefcase,/obj/item/weapon/storage/)
 
-	req_access = list(access_lawyer)
-
 	glove_type = null
 	helm_type = null
 	boot_type = null
