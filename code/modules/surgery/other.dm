@@ -139,7 +139,7 @@
 		"<span class='notice'>Has cortado a traves de los sistemas de soporte de[target] [rig] con \the [tool].</span>")
 
 /decl/surgery_step/hardsuit/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
-	user.visible_message("<span class='danger'>[user]'s [tool] can't quite seem to get through the metal...</span>", \
+	user.visible_message("<span class='danger'>[user] [tool] parece que no puede atravesar el metal.</span>", \
 	"<span class='danger'>Tu [tool] parece que no puede atravesar el metal. sin embargo se esta debilitando - intenta de nuevo.</span>")
 
 
