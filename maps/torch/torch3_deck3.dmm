@@ -1292,6 +1292,10 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "cQ" = (
+/obj/effect/floor_decal/corner/green{
+	icon_state = "corner_white";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
 "cR" = (
@@ -1381,6 +1385,10 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/corner/green{
+	icon_state = "corner_white";
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/hydroponics)
@@ -19067,6 +19075,11 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/reinforced/airless,
 /area/thruster/d3starboard)
+"PM" = (
+/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/no_grille,
+/turf/simulated/floor/tiled/monotile,
+/area/command/captainmess)
 "PN" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 8
@@ -19249,6 +19262,9 @@
 /obj/item/device/radio/intercom{
 	dir = 1;
 	pixel_y = -28
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 10
 	},
 /turf/simulated/floor/tiled,
 /area/hydroponics)
@@ -21383,6 +21399,16 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
+"WP" = (
+/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/no_grille,
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	id_tag = "kitchen";
+	name = "Kitchen Shutters"
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/crew_quarters/mess)
 "WT" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -39371,7 +39397,7 @@ Op
 cf
 cR
 dH
-ey
+WP
 FY
 FY
 FY
@@ -40998,7 +41024,7 @@ ct
 fU
 LD
 sN
-sN
+PM
 sN
 LD
 tF
