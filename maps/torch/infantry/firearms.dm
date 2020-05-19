@@ -173,22 +173,3 @@
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		)
-
-//laser
-/obj/item/weapon/gun/energy/pulse_rifle/shotgun
-	name = "BXJ-5 Culverin"
-	desc = "A somewhat experimental product of Ward-Takahashi's energy weapons division, the BXJ-5 combines rapid-fire pulse laser technology \
-	with penetrative laser power for the first time. Designed to saw through armour at the cost of raw damage."
-	projectile_type = /obj/item/projectile/beam/pulse/shotgun
-	req_access = list(access_brig)
-	authorized_modes = list(UNAUTHORIZED)
-	firemodes = list(
-		list(mode_name="fire", burst=3, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
-		)
-
-/obj/item/projectile/beam/pulse/shotgun
-	damage = 25//Fires in bursts, so little damage.
-	armor_penetration = 95//Makes up for it in this -
-	shrapnel_chance_multiplier = 0
-	arterial_bleed_chance_multiplier = 1.5//- and this, ignoring bursts.
-	distance_falloff = 0
