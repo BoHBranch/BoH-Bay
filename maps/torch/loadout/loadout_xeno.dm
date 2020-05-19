@@ -51,6 +51,7 @@
 	slot = slot_head
 	allowed_roles = ARMORED_ROLES
 	allowed_branches = TACTICOOL_BRANCHES
+	whitelisted = list(SPECIES_SKRELL)
 
 /datum/gear/suit/skrell_exchange_helmet/New()
 	..()
@@ -68,6 +69,7 @@
 	slot = slot_wear_suit
 	allowed_roles = ARMORED_ROLES
 	allowed_branches = TACTICOOL_BRANCHES
+	whitelisted = list(SPECIES_SKRELL)
 
 /datum/gear/suit/skrell_exchange_voidsuit/New()
 	..()
