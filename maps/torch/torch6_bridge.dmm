@@ -688,13 +688,6 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/machinery/button/alternate/door/bolts{
-	id_tag = "Inf_Arm_Access";
-	name = "Infantry Armory bolt control";
-	pixel_x = 25;
-	pixel_z = 8;
-	req_access = list("ACCESS_TORCH_ARMORY")
-	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "bp" = (

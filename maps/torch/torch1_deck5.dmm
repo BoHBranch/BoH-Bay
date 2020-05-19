@@ -9286,6 +9286,7 @@
 /obj/structure/closet/secure_closet/infantry,
 /obj/effect/floor_decal/industrial/outline/red,
 /obj/item/gunbox/infantry,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
 "pN" = (
@@ -9425,6 +9426,13 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "Inf_Arm_Access";
+	name = "Infantry Armory bolt control";
+	pixel_x = 25;
+	pixel_z = 8;
+	req_access = list("ACCESS_INFCOM")
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
@@ -11103,6 +11111,9 @@
 	dir = 8
 	},
 /obj/machinery/vending/security/infantry,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/armory)
 "sS" = (
@@ -12232,6 +12243,7 @@
 /obj/structure/closet/secure_closet/infantry,
 /obj/effect/floor_decal/industrial/outline/red,
 /obj/item/gunbox/infantry,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
 "uX" = (
@@ -12479,6 +12491,7 @@
 	dir = 4
 	},
 /obj/item/gunbox/infcom,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/com)
 "vt" = (
@@ -12696,6 +12709,7 @@
 /obj/structure/closet/secure_closet/infantry,
 /obj/effect/floor_decal/industrial/outline/red,
 /obj/item/gunbox/infantry,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
 "vX" = (
@@ -12762,9 +12776,6 @@
 /area/security/infantry/armory)
 "wh" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/machinery/light/small{
-	dir = 8
-	},
 /obj/item/weapon/rig/military/infantry,
 /obj/item/weapon/rig/military/infantry,
 /obj/item/weapon/rig/military/infantry,
@@ -12910,6 +12921,7 @@
 /obj/structure/closet/secure_closet/infantry,
 /obj/effect/floor_decal/industrial/outline/red,
 /obj/item/gunbox/infantry,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/steel_grid,
 /area/security/infantry)
 "wz" = (
@@ -12961,6 +12973,7 @@
 /obj/item/weapon/plastique,
 /obj/item/weapon/plastique,
 /obj/item/gunbox/inftech,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/gear)
 "wC" = (
@@ -13108,6 +13121,9 @@
 /obj/item/rig_module/vision/nvg,
 /obj/item/rig_module/grenade_launcher/smoke,
 /obj/item/rig_module/grenade_launcher/light,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/armory)
 "wO" = (
