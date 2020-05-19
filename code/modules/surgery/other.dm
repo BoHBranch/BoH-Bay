@@ -7,7 +7,7 @@
 //	 Tendon fix surgery step
 //////////////////////////////////////////////////////////////////
 /decl/surgery_step/fix_tendon
-	name = "Repair tendon"
+	name = "Reparar tendon"
 	allowed_tools = list(
 		/obj/item/weapon/FixOVein = 100,
 		/obj/item/stack/cable_coil = 75,
@@ -113,7 +113,7 @@
 	return TRUE
 
 /decl/surgery_step/hardsuit/get_skill_reqs(mob/living/user, mob/living/carbon/human/target, obj/item/tool)
-	return list(SKILL_EVA = SKILL_BASIC) 
+	return list(SKILL_EVA = SKILL_BASIC)
 
 /decl/surgery_step/hardsuit/can_use(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	if(!istype(target))
@@ -169,7 +169,7 @@
 		return affected
 
 /decl/surgery_step/sterilize/get_skill_reqs(mob/living/user, mob/living/carbon/human/target, obj/item/tool)
-	return list(SKILL_MEDICAL = SKILL_BASIC) 
+	return list(SKILL_MEDICAL = SKILL_BASIC)
 
 /decl/surgery_step/sterilize/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
