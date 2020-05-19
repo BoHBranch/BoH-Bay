@@ -1,9 +1,9 @@
 /decl/hierarchy/supply_pack/hydroponics
-	name = "Hydroponics"
+	name = "Hidroponicos"
 	containertype = /obj/structure/closet/crate/hydroponics
 
 /decl/hierarchy/supply_pack/hydroponics/hydroponics // -- Skie
-	name = "Gear - Hydroponics Supplies"
+	name = "Equipo - Suministros de Hidroponicos"
 	contains = list(/obj/item/weapon/reagent_containers/spray/plantbgone = 4,
 					/obj/item/weapon/reagent_containers/glass/bottle/ammonia = 2,
 					/obj/item/weapon/material/hatchet,
@@ -19,7 +19,7 @@
 	access = access_hydroponics
 
 /decl/hierarchy/supply_pack/hydroponics/seeds
-	name = "Samples - Mundane Seeds"
+	name = "Muestras - Semillas mundanas"
 	contains = list(/obj/item/seeds/chiliseed,
 					/obj/item/seeds/berryseed,
 					/obj/item/seeds/cornseed,
@@ -38,21 +38,21 @@
 					/obj/item/seeds/potatoseed,
 					/obj/item/seeds/sugarcaneseed)
 	cost = 10
-	containername = "seeds crate"
+	containername = "caja de semillas"
 	access = access_hydroponics
 
 /decl/hierarchy/supply_pack/hydroponics/weedcontrol
-	name = "Gear - Weed control"
+	name = "Equipo - Control de hierba mala"
 	contains = list(/obj/item/weapon/material/hatchet = 2,
 					/obj/item/weapon/reagent_containers/spray/plantbgone = 4,
 					/obj/item/clothing/mask/gas = 2,
 					/obj/item/weapon/grenade/chem_grenade/antiweed = 2)
 	cost = 25
-	containername = "weed control crate"
+	containername = "control de hierba mala"
 	access = access_hydroponics
 
 /decl/hierarchy/supply_pack/hydroponics/exoticseeds
-	name = "Samples - Exotic seeds"
+	name = "Muestras - Semillas exoticas"
 	contains = list(/obj/item/seeds/replicapod = 2,
 					/obj/item/seeds/libertymycelium,
 					/obj/item/seeds/reishimycelium,
@@ -60,36 +60,36 @@
 					/obj/item/seeds/kudzuseed)
 	cost = 15
 	containertype = /obj/structure/closet/crate/secure
-	containername = "exotic Seeds crate"
+	containername = "caja de Semillas exoticas"
 	access = access_xenobiology
 
 /decl/hierarchy/supply_pack/hydroponics/watertank
-	name = "Liquid - Water tank"
+	name = "Liquido - Tanque de agua"
 	contains = list(/obj/structure/reagent_dispensers/watertank)
 	cost = 8
 	containertype = /obj/structure/largecrate
-	containername = "water tank crate"
+	containername = "caja de tanque de agua"
 
 /decl/hierarchy/supply_pack/hydroponics/bee_keeper
-	name = "Equipment - Beekeeping"
+	name = "Equipamiento - Apicultura"
 	contains = list(/obj/item/beehive_assembly,
 					/obj/item/bee_smoker,
 					/obj/item/honey_frame = 5,
 					/obj/item/bee_pack)
 	cost = 40
-	containername = "beekeeping crate"
+	containername = "caja de apicultura"
 	access = access_hydroponics
 
 /decl/hierarchy/supply_pack/hydroponics/hydrotray
-	name = "Equipment - Hydroponics tray"
+	name = "Equipamiento - Maceta hidroponica"
 	contains = list(/obj/machinery/portable_atmospherics/hydroponics{anchored = 0})
 	cost = 30
 	containertype = /obj/structure/closet/crate/large/hydroponics
-	containername = "hydroponics tray crate"
+	containername = "caja de maceta hidroponica"
 	access = access_hydroponics
 
 /decl/hierarchy/supply_pack/hydroponics/pottedplant
-	name = "Deco - Potted plants"
+	name = "Decoracion - Plantas en macetas"
 	num_contained = 1
 	contains = list(/obj/structure/flora/pottedplant,
 					/obj/structure/flora/pottedplant/large,
@@ -120,5 +120,5 @@
 					/obj/structure/flora/pottedplant/decorative)
 	cost = 8
 	containertype = /obj/structure/closet/crate/large/hydroponics
-	containername = "potted plant crate"
+	containername = "caja de plantas en macetas"
 	supply_method = /decl/supply_method/randomized
