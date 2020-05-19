@@ -213,13 +213,15 @@
 	name = "plasma arc"
 	icon_state = "omnilaser"
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	damage = 10
+	damage = 35//enables it to cut off limbs without too many hits
 	sharp = 1
 	edge = 1
-	damage_type = BURN || BRUTE
-	life_span = 5
-	pass_flags = PASS_FLAG_TABLE
-	distance_falloff = 5
+	damage_type = BRUTE
+	life_span = 4
+	armor_penetration = 65//it's an industrial grade plasma cutter, designed to effortlessly cut through heavy material.
+	distance_falloff = 8//makes up for the damage and pen
+	shrapnel_chance_multiplier = 0.0//no thanks
+	arterial_bleed_chance_multiplier = 0.0//you too
 
 	muzzle_type = /obj/effect/projectile/trilaser/muzzle
 	tracer_type = /obj/effect/projectile/trilaser/tracer
