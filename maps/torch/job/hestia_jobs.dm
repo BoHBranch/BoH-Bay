@@ -59,6 +59,7 @@
 	department_flag = INF
 	total_positions = 1
 	spawn_positions = 1
+	head_position = 1
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
 	minimal_player_age = 12
