@@ -1,5 +1,5 @@
 /obj/item/organ/internal/heart
-	name = "heart"
+	name = "corazon"
 	icon_state = "heart-on"
 	organ_tag = "heart"
 	parent_organ = BP_CHEST
@@ -24,7 +24,7 @@
 
 /obj/item/organ/internal/heart/robotize()
 	. = ..()
-	icon_state = "heart-prosthetic"
+	icon_state = "protesis-corazon"
 
 /obj/item/organ/internal/heart/Process()
 	if(owner)
@@ -79,7 +79,7 @@
 		should_stop = should_stop || prob(max(0, owner.getBrainLoss() - owner.maxHealth * 0.75)) //brain failing to work heart properly
 		should_stop = should_stop || (prob(5) && pulse == PULSE_THREADY) //erratic heart patterns, usually caused by oxyloss
 		if(should_stop) // The heart has stopped due to going into traumatic or cardiovascular shock.
-			to_chat(owner, "<span class='danger'>Your heart has stopped!</span>")
+			to_chat(owner, "<span class='danger'>Tu corazon se ha detenido!</span>")
 			pulse = PULSE_NONE
 			return
 
@@ -174,8 +174,8 @@
 		if(world.time >= next_blood_squirt && istype(owner.loc, /turf) && do_spray.len)
 			var/spray_organ = pick(do_spray)
 			owner.visible_message(
-				SPAN_DANGER("Blood sprays out from \the [owner]'s [spray_organ]!"),
-				FONT_HUGE(SPAN_DANGER("Blood sprays out from your [spray_organ]!"))
+				SPAN_DANGER("La sangre chorrea fuera de \the [owner]'s [spray_organ]!"),
+				FONT_HUGE(SPAN_DANGER("La sangre chorrea fuera de tu [spray_organ]!"))
 			)
 			owner.Stun(1)
 			owner.eye_blurry = 2

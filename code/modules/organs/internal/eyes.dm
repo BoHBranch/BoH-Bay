@@ -1,6 +1,6 @@
 
 /obj/item/organ/internal/eyes
-	name = "eyeballs"
+	name = "globos oculares"
 	icon_state = "eyes"
 	gender = PLURAL
 	organ_tag = BP_EYES
@@ -45,13 +45,13 @@
 		return human_icon_cache[cache_key]
 
 /obj/item/organ/internal/eyes/proc/change_eye_color()
-	set name = "Change Eye Color"
-	set desc = "Changes your robotic eye color."
+	set name = "Cambiar color de ojos."
+	set desc = "Cambias el color de tus ojos roboticos."
 	set category = "IC"
 	set src in usr
 	if (!owner || owner.incapacitated())
 		return
-	var/new_eyes = input("Please select eye color.", "Eye Color", rgb(owner.r_eyes, owner.g_eyes, owner.b_eyes)) as color|null
+	var/new_eyes = input("Por favor selecciona el color de ojos.", "Color de ojos", rgb(owner.r_eyes, owner.g_eyes, owner.b_eyes)) as color|null
 	if(new_eyes)
 		var/r_eyes = hex2num(copytext(new_eyes, 2, 4))
 		var/g_eyes = hex2num(copytext(new_eyes, 4, 6))
@@ -60,7 +60,7 @@
 			update_colour()
 			// Finally, update the eye icon on the mob.
 			owner.regenerate_icons()
-			owner.visible_message(SPAN_NOTICE("\The [owner] changes their eye color."),SPAN_NOTICE("You change your eye color."),)
+			owner.visible_message(SPAN_NOTICE("\The [owner] cambia su color de ojos."),SPAN_NOTICE("Has cambiado tu color de ojos"),)
 
 /obj/item/organ/internal/eyes/replaced(var/mob/living/carbon/human/target)
 
@@ -85,7 +85,7 @@
 	var/oldbroken = is_broken()
 	. = ..()
 	if(is_broken() && !oldbroken && owner && !owner.stat)
-		to_chat(owner, "<span class='danger'>You go blind!</span>")
+		to_chat(owner, "<span class='danger'>Te quedas ciego!</span>")
 
 /obj/item/organ/internal/eyes/Process() //Eye damage replaces the old eye_stat var.
 	..()
@@ -109,7 +109,7 @@
 	return -1
 
 /obj/item/organ/internal/eyes/robot
-	name = "optical sensor"
+	name = "sensor optico"
 	relative_size = 10
 
 /obj/item/organ/internal/eyes/robot/New()
@@ -118,7 +118,7 @@
 
 /obj/item/organ/internal/eyes/robotize()
 	..()
-	name = "optical sensor"
+	name = "sensor optico"
 	icon = 'icons/obj/robot_component.dmi'
 	icon_state = "camera"
 	dead_icon = "camera_broken"

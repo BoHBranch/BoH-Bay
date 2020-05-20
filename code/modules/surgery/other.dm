@@ -7,7 +7,7 @@
 //	 Tendon fix surgery step
 //////////////////////////////////////////////////////////////////
 /decl/surgery_step/fix_tendon
-	name = "Repair tendon"
+	name = "Reparar tendon"
 	allowed_tools = list(
 		/obj/item/weapon/FixOVein = 100,
 		/obj/item/stack/cable_coil = 75,
@@ -28,29 +28,29 @@
 
 /decl/surgery_step/fix_tendon/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("[user] starts reattaching the damaged [affected.tendon_name] in [target]'s [affected.name] with \the [tool]." , \
-	"You start reattaching the damaged [affected.tendon_name] in [target]'s [affected.name] with \the [tool].")
-	target.custom_pain("The pain in your [affected.name] is unbearable!",100,affecting = affected)
+	user.visible_message("[user] comienza a recolocar el danado [affected.tendon_name] en [target] en [affected.name] con \the [tool]." , \
+	"Comienzas a recolocar el danado [affected.tendon_name] en [target] en [affected.name] con \the [tool].")
+	target.custom_pain("El dolor en tu [affected.name] es inaguantable!",100,affecting = affected)
 	..()
 
 /decl/surgery_step/fix_tendon/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("<span class='notice'>[user] has reattached the [affected.tendon_name] in [target]'s [affected.name] with \the [tool].</span>", \
-		"<span class='notice'>You have reattached the [affected.tendon_name] in [target]'s [affected.name] with \the [tool].</span>")
+	user.visible_message("<span class='notice'>[user] ha recolocado el [affected.tendon_name] en [target] en [affected.name] con \the [tool].</span>", \
+		"<span class='notice'>Has recolocado el [affected.tendon_name] en [target] en [affected.name] con \the [tool].</span>")
 	affected.status &= ~ORGAN_TENDON_CUT
 	affected.update_damages()
 
 /decl/surgery_step/fix_tendon/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("<span class='warning'>[user]'s hand slips, smearing [tool] in the incision in [target]'s [affected.name]!</span>" , \
-	"<span class='warning'>Your hand slips, smearing [tool] in the incision in [target]'s [affected.name]!</span>")
+	user.visible_message("<span class='warning'>Las manos de [user] resbalan, manchando [tool] en la incision de [target] [affected.name]!</span>" , \
+	"<span class='warning'>Tus manos resbalan, manchando [tool] en la incision de [target] en [affected.name]!</span>")
 	affected.take_external_damage(5, used_weapon = tool)
 
 //////////////////////////////////////////////////////////////////
 //	 IB fix surgery step
 //////////////////////////////////////////////////////////////////
 /decl/surgery_step/fix_vein
-	name = "Repair arterial bleeding"
+	name = "Reparar sangrado arterial"
 	allowed_tools = list(
 		/obj/item/weapon/FixOVein = 100,
 		/obj/item/stack/cable_coil = 75,
@@ -72,22 +72,22 @@
 
 /decl/surgery_step/fix_vein/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("[user] starts patching the damaged [affected.artery_name] in [target]'s [affected.name] with \the [tool]." , \
-	"You start patching the damaged [affected.artery_name] in [target]'s [affected.name] with \the [tool].")
-	target.custom_pain("The pain in your [affected.name] is unbearable!",100,affecting = affected)
+	user.visible_message("[user] comienza a remendar el danado [affected.artery_name] in [target]'s [affected.name] con \the [tool]." , \
+	"Comienzas a remendar el danado [affected.artery_name] en [target] en [affected.name] con \the [tool].")
+	target.custom_pain("El dolor en tu [affected.name] es insoportable!",100,affecting = affected)
 	..()
 
 /decl/surgery_step/fix_vein/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("<span class='notice'>[user] has patched the [affected.artery_name] in [target]'s [affected.name] with \the [tool].</span>", \
-		"<span class='notice'>You have patched the [affected.artery_name] in [target]'s [affected.name] with \the [tool].</span>")
+	user.visible_message("<span class='notice'>[user] ha remendado el [affected.artery_name] en [target] en [affected.name] con \the [tool].</span>", \
+		"<span class='notice'>Has remendado el [affected.artery_name] en [target] en [affected.name] con \the [tool].</span>")
 	affected.status &= ~ORGAN_ARTERY_CUT
 	affected.update_damages()
 
 /decl/surgery_step/fix_vein/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("<span class='warning'>[user]'s hand slips, smearing [tool] in the incision in [target]'s [affected.name]!</span>" , \
-	"<span class='warning'>Your hand slips, smearing [tool] in the incision in [target]'s [affected.name]!</span>")
+	user.visible_message("<span class='warning'>Las manos de [user] resbalan, manchando [tool] en el inciso en [target] en [affected.name]!</span>" , \
+	"<span class='warning'>Tus manos resbalan, manchando [tool] en el inciso en [target] en [affected.name]!</span>")
 	affected.take_external_damage(5, used_weapon = tool)
 
 
@@ -95,7 +95,7 @@
 //	 Hardsuit removal surgery step
 //////////////////////////////////////////////////////////////////
 /decl/surgery_step/hardsuit
-	name = "Remove hardsuit"
+	name = "Quitar hardsuit"
 	allowed_tools = list(
 		/obj/item/weapon/weldingtool = 80,
 		/obj/item/weapon/circular_saw = 60,
@@ -113,7 +113,7 @@
 	return TRUE
 
 /decl/surgery_step/hardsuit/get_skill_reqs(mob/living/user, mob/living/carbon/human/target, obj/item/tool)
-	return list(SKILL_EVA = SKILL_BASIC) 
+	return list(SKILL_EVA = SKILL_BASIC)
 
 /decl/surgery_step/hardsuit/can_use(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	if(!istype(target))
@@ -125,8 +125,8 @@
 	return (target_zone == BP_CHEST) && istype(target.back, /obj/item/weapon/rig) && !(target.back.canremove)
 
 /decl/surgery_step/hardsuit/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
-	user.visible_message("[user] starts cutting through the support systems of [target]'s [target.back] with \the [tool]." , \
-	"You start cutting through the support systems of [target]'s [target.back] with \the [tool].")
+	user.visible_message("[user] empieza a cortar a traves de los sistemas de soporte de [target]'s [target.back] con \the [tool]." , \
+	"Empiezas a cortar a traves de los sistemas de soporte de [target] en [target.back] con \the [tool].")
 	..()
 
 /decl/surgery_step/hardsuit/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
@@ -135,19 +135,19 @@
 	if(!istype(rig))
 		return
 	rig.reset()
-	user.visible_message("<span class='notice'>[user] has cut through the support systems of [target]'s [rig] with \the [tool].</span>", \
-		"<span class='notice'>You have cut through the support systems of [target]'s [rig] with \the [tool].</span>")
+	user.visible_message("<span class='notice'>[user] ha cortado a traves de los sistemas de soporte de [target] [rig] con \the [tool].</span>", \
+		"<span class='notice'>Has cortado a traves de los sistemas de soporte de[target] [rig] con \the [tool].</span>")
 
 /decl/surgery_step/hardsuit/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
-	user.visible_message("<span class='danger'>[user]'s [tool] can't quite seem to get through the metal...</span>", \
-	"<span class='danger'>Your [tool] can't quite seem to get through the metal. It's weakening, though - try again.</span>")
+	user.visible_message("<span class='danger'>[user] [tool] parece que no puede atravesar el metal.</span>", \
+	"<span class='danger'>Tu [tool] parece que no puede atravesar el metal. sin embargo se esta debilitando - intenta de nuevo.</span>")
 
 
 //////////////////////////////////////////////////////////////////
 //	 Disinfection step
 //////////////////////////////////////////////////////////////////
 /decl/surgery_step/sterilize
-	name = "Sterilize wound"
+	name = "Esterilizar herida"
 	allowed_tools = list(
 		/obj/item/weapon/reagent_containers/spray = 100,
 		/obj/item/weapon/reagent_containers/dropper = 100,
@@ -169,13 +169,13 @@
 		return affected
 
 /decl/surgery_step/sterilize/get_skill_reqs(mob/living/user, mob/living/carbon/human/target, obj/item/tool)
-	return list(SKILL_MEDICAL = SKILL_BASIC) 
+	return list(SKILL_MEDICAL = SKILL_BASIC)
 
 /decl/surgery_step/sterilize/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("[user] starts pouring [tool]'s contents on \the [target]'s [affected.name]." , \
-	"You start pouring [tool]'s contents on \the [target]'s [affected.name].")
-	target.custom_pain("Your [affected.name] is on fire!",50,affecting = affected)
+	user.visible_message("[user] comienza a verter los contenidos de [tool] en \the [target] [affected.name]." , \
+	"Comienzas a verter los contenidos de [tool] en \the [target] [affected.name].")
+	target.custom_pain("Tu[affected.name] esta en llamas!",50,affecting = affected)
 	..()
 
 /decl/surgery_step/sterilize/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
@@ -193,8 +193,8 @@
 
 	var/trans = temp_reagents.trans_to_mob(target, temp_reagents.total_volume, CHEM_BLOOD) //technically it's contact, but the reagents are being applied to internal tissue
 	if (trans > 0)
-		user.visible_message("<span class='notice'>[user] rubs [target]'s [affected.name] down with \the [tool]'s contents</span>.", \
-			"<span class='notice'>You rub [target]'s [affected.name] down with \the [tool]'s contents.</span>")
+		user.visible_message("<span class='notice'>[user] frota [target] en [affected.name] abajo con los contenidos de \the [tool]</span>.", \
+			"<span class='notice'>Frotas [target] en [affected.name] abajo con los contenidos de \the [tool].</span>")
 	affected.disinfect()
 	qdel(temp_reagents)
 	qdel(temp_holder)
@@ -209,8 +209,8 @@
 
 	container.reagents.trans_to_mob(target, container.amount_per_transfer_from_this, CHEM_BLOOD)
 
-	user.visible_message("<span class='warning'>[user]'s hand slips, spilling \the [tool]'s contents over the [target]'s [affected.name]!</span>" , \
-	"<span class='warning'>Your hand slips, spilling \the [tool]'s contents over the [target]'s [affected.name]!</span>")
+	user.visible_message("<span class='warning'>Las manos de [user] resbalan, derramando los contenidos de \the [tool] sobre [target] en [affected.name]!</span>" , \
+	"<span class='warning'>Tus manos resbalan, derramando los contenidos de \the [tool] sobre [target] en [affected.name]!</span>")
 	affected.disinfect()
 
 /decl/surgery_step/sterilize/proc/check_chemicals(var/obj/item/weapon/reagent_containers/container)

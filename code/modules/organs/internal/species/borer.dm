@@ -4,7 +4,7 @@
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "borer"
 	organ_tag = BP_BRAIN
-	desc = "A disgusting space slug."
+	desc = "Una babosa desagradable proveniente del espacio."
 	parent_organ = BP_HEAD
 	vital = 1
 	var/list/chemical_types

@@ -1,5 +1,5 @@
 /obj/item/organ/internal/appendix
-	name = "appendix"
+	name = "apendice"
 	icon_state = "appendix"
 	parent_organ = BP_GROIN
 	organ_tag = BP_APPENDIX
@@ -9,7 +9,7 @@
 	..()
 	if(inflamed)
 		icon_state = "appendixinflamed"
-		SetName("inflamed appendix")
+		SetName("apendice inflamado")
 
 /obj/item/organ/internal/appendix/Process()
 	..()
@@ -17,14 +17,14 @@
 		inflamed++
 		if(prob(5))
 			if(owner.can_feel_pain())
-				owner.custom_pain("You feel a stinging pain in your abdomen!")
+				owner.custom_pain("Sientes un dolor punzante en tu abdomen!")
 				if(owner.can_feel_pain())
-					owner.visible_message("<B>\The [owner]</B> winces slightly.")
+					owner.visible_message("<B>\The [owner]</B> se estremece un poco.")
 		if(inflamed > 200)
 			if(prob(3))
 				take_internal_damage(0.1)
 				if(owner.can_feel_pain())
-					owner.visible_message("<B>\The [owner]</B> winces painfully.")
+					owner.visible_message("<B>\The [owner]</B> se estremece dolorosamente.")
 				owner.adjustToxLoss(1)
 		if(inflamed > 400)
 			if(prob(1))
@@ -33,7 +33,7 @@
 		if(inflamed > 600)
 			if(prob(1))
 				if(owner.can_feel_pain())
-					owner.custom_pain("You feel a stinging pain in your abdomen!")
+					owner.custom_pain("Sientes un dolor punzante en tu abdomen!")
 					owner.Weaken(10)
 
 				var/obj/item/organ/external/E = owner.get_organ(parent_organ)
