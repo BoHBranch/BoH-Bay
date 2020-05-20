@@ -97,7 +97,7 @@
 
 /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard
 	name = OUTFIT_JOB_NAME("Loss Prevention Associate")
-	l_ear =    /obj/item/device/radio/headset/heads/torchcorp
+	l_ear =    /obj/item/device/radio/headset/heads/torchntcommand
 	uniform =  /obj/item/clothing/under/suit_jacket/corp
 	shoes =    /obj/item/clothing/shoes/laceup
 	id_type =  /obj/item/weapon/card/id/torch/passenger/corporate

@@ -482,12 +482,18 @@
 	return reagents
 
 /mob/living/carbon/proc/set_nutrition(var/amt)
+	if(species && species.species_flags & SPECIES_FLAG_NO_HUNGER)
+		nutrition = initial(nutrition)
+		return
 	nutrition = Clamp(amt, 0, initial(nutrition))
 
 /mob/living/carbon/proc/adjust_nutrition(var/amt)
 	set_nutrition(nutrition + amt)
 
 /mob/living/carbon/proc/set_hydration(var/amt)
+	if(species && species.species_flags & SPECIES_FLAG_NO_THIRST)
+		hydration = initial(hydration)
+		return
 	hydration = Clamp(amt, 0, initial(hydration))
 
 /mob/living/carbon/proc/adjust_hydration(var/amt)
@@ -502,7 +508,7 @@
 		if(!source_string)
 			source_string = source.name
 		to_chat(src, "<span class='notice'>You are now running on internals from \the [source_string].</span>")
-		playsound(src, 'sound/effects/internals.ogg', 50, 0)
+		playsound(src, 'sound/effects/internals.ogg', 49, 0)
 	if(old_internal && !internal)
 		to_chat(src, "<span class='warning'>You are no longer running on internals.</span>")
 	if(internals)
