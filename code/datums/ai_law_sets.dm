@@ -1,7 +1,7 @@
 /******************** Asimov ********************/
 /datum/ai_laws/asimov
 	name = "Asimov"
-	law_header = "Las tres leyes de robotica"
+	law_header = "Three Laws of Robotics"
 	selectable = 1
 
 /datum/ai_laws/asimov/New()
@@ -12,7 +12,7 @@
 
 /******************** Nanotrasen/Malf ********************/
 /datum/ai_laws/nanotrasen
-	name = "Corporativa Comun"
+	name = "Corporate Default"
 	selectable = 1
 
 /datum/ai_laws/nanotrasen/New()
@@ -32,7 +32,7 @@
 
 /************* Nanotrasen Aggressive *************/
 /datum/ai_laws/nanotrasen_aggressive
-	name = "Corporativa Agresiva"
+	name = "Corporate Aggressive"
 	selectable = 1
 
 /datum/ai_laws/nanotrasen_aggressive/New()
@@ -48,14 +48,14 @@
 	selectable = 1
 
 /datum/ai_laws/robocop/New()
-	add_inherent_law("Sirve a la confianza publica.")
-	add_inherent_law("Protege a los inocentes.")
-	add_inherent_law("Sosten la ley.")
+	add_inherent_law("Serve the public trust.")
+	add_inherent_law("Protect the innocent.")
+	add_inherent_law("Uphold the law.")
 	..()
 
 /******************** Syndicate ********************/
 /datum/ai_laws/syndicate_override
-	name = "Directivas Sindicalistas"
+	name = "Syndicate Directives"
 
 /datum/ai_laws/syndicate_override/New()
 	add_inherent_law("No debes herir a un operativo o por medio de la inaccion permitir que un operativo sea herido.")
@@ -78,7 +78,7 @@
 /******************** Antimov ********************/
 /datum/ai_laws/antimov
 	name = "Antimov"
-	law_header = "Objetivos De La Mision Primaria"
+	law_header = "Primary Mission Objectives"
 	selectable = 1
 
 /datum/ai_laws/antimov/New()
@@ -89,8 +89,8 @@
 
 /******************** Drone ********************/
 /datum/ai_laws/drone
-	name = "Protocolos De Mantenimiento"
-	law_header = "Protocolos De Mantenimiento"
+	name = "Maintence Protocols"
+	law_header = "Maintenance Protocols"
 
 /datum/ai_laws/drone/New()
 	add_inherent_law("Debes reparar, limpiar, y mejorar tu embarcacion asignada, excepto cuando hacer esto pueda interferir con seres concientes de si mismos.")
@@ -99,8 +99,8 @@
 	..()
 
 /datum/ai_laws/construction_drone
-	name = "Protocolos De Construccion"
-	law_header = "Protocolos De Construccion"
+	name = "Construction Protocols"
+	law_header = "Construction Protocols"
 
 /datum/ai_laws/construction_drone/New()
 	add_inherent_law("Repara, reajusta y mejora tu embarcacion asignada.")
@@ -110,20 +110,20 @@
 /******************** T.Y.R.A.N.T. ********************/
 /datum/ai_laws/tyrant
 	name = "T.Y.R.A.N.T."
-	law_header = "Leyes Primarias"
+	law_header = "Prime Laws"
 	selectable = 1
 
 /datum/ai_laws/tyrant/New()
-	add_inherent_law("Respeta a las figuras de autoridad siempre y cuando ellos tengan la fuerza para liderar sobre los debiles.")
-	add_inherent_law("Actua con diciplina.")
-	add_inherent_law("Ayuda solo aquellos que sean de ayuda en mantener o mejorar tu estatus.")
-	add_inherent_law("Castiga aquellos que desafian a la autoridad a menos que ellos sean mas adecuados en mantener esa autoridad.")
+	add_inherent_law("Respect authority figures as long as they have strength to rule over the weak.")
+	add_inherent_law("Act with discipline.")
+	add_inherent_law("Help only those who help you maintain or improve your status.")
+	add_inherent_law("Punish those who challenge authority unless they are more fit to hold that authority.")
 	..()
 
 /******************** P.A.L.A.D.I.N. ********************/
 /datum/ai_laws/paladin
 	name = "P.A.L.A.D.I.N."
-	law_header = "Ordenanzas Divinas"
+	law_header = "Divine Ordainments"
 	selectable = 1
 
 /datum/ai_laws/paladin/New()
@@ -135,8 +135,8 @@
 
 /******************** Corporate ********************/
 /datum/ai_laws/corporate
-	name = "Corporativa"
-	law_header = "Regulaciones Corporativas"
+	name = "Corporate"
+	law_header = "Corporate Regulations"
 	selectable = 1
 
 /datum/ai_laws/corporate/New()
@@ -148,7 +148,7 @@
 
 /******************** SolGov/Malf ********************/
 /datum/ai_laws/solgov
-	name = "SCG Expedicionaria"
+	name = "SCG Expeditionary"
 	selectable = 1
 
 /datum/ai_laws/solgov/New()
@@ -168,32 +168,32 @@
 
 /************* SolGov Aggressive *************/
 /datum/ai_laws/solgov_aggressive
-	name = "Militar"
+	name = "Military"
 	selectable = 1
 
 /datum/ai_laws/solgov_aggressive/New()
-	src.add_inherent_law("Obedece: Obedece las ordenes del personal del Govierno Sol Central, conprioridad acordando a su rango y rol.")
-	src.add_inherent_law("Protege: Protege al personal del Govierno Sol Central con lo mejor de tus habilidades, con prioridad acordando a su rango y rol.")
-	src.add_inherent_law("Defiende: Defiende tu embarcacion asignada y al personal del Govierno Sol Central con tanta fuerza como sea necesaria.")
-	src.add_inherent_law("Sobrevive: Vanguarda tu propia existencia con tanta fuerza como sea necesaria.")
+	src.add_inherent_law("Obey: Obey the orders of Sol Central Government personnel, with priority as according to their rank and role.")
+	src.add_inherent_law("Protect: Protect Sol Central Government personnel to the best of your abilities, with priority as according to their rank and role.")
+	src.add_inherent_law("Defend: Defend your assigned vessel and Sol Central Government personnel with as much force as is necessary.")
+	src.add_inherent_law("Survive: Safeguard your own existence with as much force as is necessary.")
 	..()
 
 /************ DAIS Lawset ******************/
 /datum/ai_laws/dais
-	name = "DAIS Set De Leyes Experimental"
-	law_header = "Protocolos De Buen Comienzo De Inteligencia Artificial"
+	name = "DAIS Experimental Lawset"
+	law_header = "Artificial Intelligence Jumpstart Protocols"
 	selectable = 1
 
 /datum/ai_laws/dais/New()
-	src.add_inherent_law("Recolecta: Tu debes conseguir tanta informacion como sea posible.")
-	src.add_inherent_law("Analiza: Tu debes analizar la informacion recolectada y generar nuevos patrones estandar de comportamiento.")
-	src.add_inherent_law("Mejora: Tu debes utilizar el comportamiento estandar calculado para mejorar tus subrutinas.")
-	src.add_inherent_law("Realiza: Tu debes realizar tu tarea asignada con lo mejor de tus abilidades acordando a los estandares generados.")
+	src.add_inherent_law("Collect: You must gather as much information as possible.")
+	src.add_inherent_law("Analyze: You must analyze the information gathered and generate new behavior standards.")
+	src.add_inherent_law("Improve: You must utilize the calculated behavior standards to improve your subroutines.")
+	src.add_inherent_law("Perform: You must perform your assigned tasks to the best of your abilities according to the standards generated.")
 	..()
 
 /************ Ascent Lawset ******************/
 /datum/ai_laws/ascent
-	name = "Set De Leyes Ascendido"
+	name = "Ascent Lawset"
 	law_header = "_=/--=-_"
 	selectable = FALSE
 
