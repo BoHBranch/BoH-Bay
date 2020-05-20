@@ -924,14 +924,21 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/auxsolarstarboard)
+"bQ" = (
+/obj/structure/dispenser/oxygen,
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "bR" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/maintenance/seconddeck/aftstarboard)
+/area/storage/medical)
 "bS" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/ladder/up,
@@ -1197,13 +1204,17 @@
 /turf/simulated/floor/plating,
 /area/storage/expedition)
 "cs" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance{
+	name = "Medical Storage Maintenance"
 	},
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/seconddeck/aftstarboard)
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/storage/medical)
 "ct" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -1535,6 +1546,12 @@
 /obj/item/weapon/material/bell,
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/engineering_monitoring)
+"da" = (
+/obj/machinery/suit_storage_unit/medical,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "dd" = (
 /obj/machinery/door/airlock/civilian{
 	name = "Custodial Closet"
@@ -4169,6 +4186,12 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
+"ia" = (
+/obj/structure/table/rack,
+/obj/item/weapon/inflatable_dispenser,
+/obj/item/weapon/inflatable_dispenser,
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "ib" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -10639,7 +10662,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
+/area/maintenance/seconddeck/central)
 "tH" = (
 /obj/structure/cable/cyan{
 	icon_state = "0-8"
@@ -11864,12 +11887,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
-"wI" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/seconddeck/aftstarboard)
 "wL" = (
 /obj/random/junk,
 /turf/simulated/floor/tiled/techfloor,
@@ -12508,6 +12525,14 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
+"zn" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "zr" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 9
@@ -14918,18 +14943,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/fuelbay)
-"FI" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/maintenance{
-	name = "Medical Storage Maintenance"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/seconddeck/aftstarboard)
 "FJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/red{
 	icon_state = "intact";
@@ -15174,10 +15187,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck/fore)
-"Gx" = (
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/storage/medical)
 "GA" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/blast/shutters{
@@ -15914,6 +15923,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
+"Jk" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "Jl" = (
 /obj/machinery/atmospherics/omni/filter{
 	tag_east = 5;
@@ -17355,6 +17368,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/fuelbay)
+"OX" = (
+/obj/structure/table/standard,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/disposal)
 "OY" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	icon_state = "warningcorner";
@@ -17626,6 +17643,19 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/engineering/bluespace)
+"PI" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "PK" = (
 /obj/machinery/door/airlock/engineering{
 	name = "Auxilary Bays"
@@ -19851,14 +19881,6 @@
 /obj/item/weapon/storage/box/matches,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
-"Yv" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "Yy" = (
 /obj/machinery/ai_status_display,
 /turf/simulated/wall/r_wall/prepainted,
@@ -20141,19 +20163,6 @@
 /obj/structure/sign/warning/biohazard,
 /turf/simulated/wall/prepainted,
 /area/maintenance/disposal)
-"ZA" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "ZC" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -39299,12 +39308,12 @@ ar
 aa
 aa
 aa
-aB
-aB
-aB
-cp
-cp
-Gx
+aC
+aC
+aC
+bf
+bf
+Jk
 ee
 kg
 ee
@@ -39502,11 +39511,11 @@ aa
 aa
 aa
 aa
-aB
+aC
 tG
-bq
-bq
-Gx
+dY
+dY
+Jk
 ee
 eR
 Ge
@@ -39704,11 +39713,11 @@ ag
 ag
 ag
 aB
-aB
-Gx
-Gx
-Gx
-Gx
+aC
+Jk
+Jk
+Jk
+Jk
 ee
 eR
 Ge
@@ -40310,9 +40319,9 @@ aa
 aa
 aB
 aB
-ZA
+PI
 bq
-cq
+da
 ee
 Ae
 eR
@@ -40512,7 +40521,7 @@ aa
 aa
 aB
 bn
-Yv
+zn
 bq
 cq
 ee
@@ -40914,10 +40923,10 @@ ao
 aq
 aa
 aa
-IE
-IE
-FI
-dA
+aB
+bQ
+zn
+cp
 Al
 dB
 eM
@@ -41116,8 +41125,8 @@ ap
 aq
 aa
 aa
-IE
-IE
+aB
+ia
 bR
 cs
 Cl
@@ -41317,11 +41326,11 @@ aa
 aa
 ag
 aa
-IE
-IE
-IE
-wI
-aN
+aB
+aB
+aB
+cp
+cp
 de
 aN
 ek
@@ -41518,12 +41527,12 @@ af
 af
 af
 af
-IE
-IE
-IE
-IE
+PC
+PC
+PC
+PC
 aN
-aN
+OX
 df
 dD
 el
