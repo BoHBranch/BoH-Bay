@@ -19,7 +19,7 @@
 		if(istype(H))
 			var/obj/item/organ/external/E = H.get_organ(parent_organ)
 			if(!E)
-				CRASH("[src] spawned in [holder] without a parent organ: [parent_organ].")
+				CRASH("[src] spawned en [holder] sin el organo padre: [parent_organ].")
 			E.internal_organs |= src
 
 /obj/item/organ/internal/Destroy()
@@ -138,25 +138,25 @@ obj/item/organ/internal/take_general_damage(var/amount, var/silent = FALSE)
 			if(parent && !silent)
 				var/degree = ""
 				if(is_bruised())
-					degree = " a lot"
+					degree = " un monton"
 				if(damage < 5)
-					degree = " a bit"
-				owner.custom_pain("Something inside your [parent.name] hurts[degree].", amount, affecting = parent)
+					degree = " un poco"
+				owner.custom_pain("Algo dentro de tu [parent.name] duele[degree].", amount, affecting = parent)
 
 /obj/item/organ/internal/proc/get_visible_state()
 	if(damage > max_damage)
 		. = "bits and pieces of a destroyed "
 	else if(is_broken())
-		. = "broken "
+		. = "roto "
 	else if(is_bruised())
-		. = "badly damaged "
+		. = "muy danado "
 	else if(damage > 5)
-		. = "damaged "
+		. = "danado "
 	if(status & ORGAN_DEAD)
 		if(can_recover())
-			. = "decaying [.]"
+			. = "decadente [.]"
 		else
-			. = "necrotic [.]"
+			. = "necrotico [.]"
 	. = "[.][name]"
 
 /obj/item/organ/internal/Process()
@@ -175,7 +175,7 @@ obj/item/organ/internal/take_general_damage(var/amount, var/silent = FALSE)
 		scarring = 1 - 0.3 * scarring ** 2 // Between ~15 and 30 percent loss
 		var/new_max_dam = Floor(scarring * max_damage)
 		if(new_max_dam < max_damage)
-			to_chat(user, "<span class='warning'>Not every part of [src] could be saved, some dead tissue had to be removed, making it more suspectable to damage in the future.</span>")
+			to_chat(user, "<span class='warning'>No todas las partes de [src] pudieron ser salvadas, algunos tejidos muertos han sido removidos, haciendole mas susceptible al dano en el futuro.</span>")
 			set_max_damage(new_max_dam)
 	heal_damage(damage)
 
