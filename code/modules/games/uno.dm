@@ -31,10 +31,10 @@
 	allow_quick_empty = TRUE
 	w_class = ITEM_SIZE_SMALL
 
-/obj/item/weapon/storage/bag/uno/New()
+/obj/item/weapon/storage/bag/uno/Initialize()
 	..()
 	new /obj/item/weapon/storage/bag/cardholder/withcards(src)
-	for(var/j in 1 to 13)
+	for(var/j in 1 to 6)
 		new /obj/item/weapon/storage/bag/cardholder(src)
 
 /obj/item/weapon/storage/bag/uno/attack_self(mob/user as mob)
@@ -45,13 +45,13 @@
 	desc = "Un portacartas de UNO."
 	icon = 'icons/obj/uno.dmi'
 	icon_state = "holder_e"
+	allow_quick_empty = FALSE
 	w_class = ITEM_SIZE_TINY
+	storage_slots = 108
+	max_storage_space = 250
 
 /obj/item/weapon/storage/bag/cardholder/withcards
 	icon_state = "holder_f" // One starts with cards to be used as the initial deck.
-
-/obj/item/weapon/storage/bag/cardholder/attack_self(mob/user as mob)
-	return
 
 /obj/item/weapon/storage/bag/cardholder/MouseDrop(atom/over_object)
 	var/mob/M = usr
@@ -135,6 +135,7 @@
 	else
 		to_chat(user, "<span class='notice'>El [src] esta vacio!</span>")
 
+/* Despues arreglo esto -DanaDririon
 /obj/item/weapon/storage/bag/cardholder/examine(mob/user)
 	. = ..()
 	if(in_range(user, src))
@@ -142,8 +143,9 @@
 			. += "<span class='notice'>Hay " + (contents.len > 1 ? "[contents.len] cartas de UNO" : "una carta de UNO") + " en el [src].</span>"
 		else
 			. += "<span class='notice'>No hay cartas en el portacartas.</span>"
+*/
 
-/obj/item/weapon/storage/bag/cardholder/withcards/New()
+/obj/item/weapon/storage/bag/cardholder/withcards/Initialize()
 	..()
 	for(var/j in 1 to 2)
 		new /obj/item/weapon/uno/g1(src)
