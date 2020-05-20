@@ -141,7 +141,7 @@
 */
 
 /obj/item/weapon/storage/bag/cardholder/withcards/Initialize()
-	..()
+	. = ..()
 	for(var/j in 1 to 2)
 		new /obj/item/weapon/uno/g1(src)
 		new /obj/item/weapon/uno/g2(src)
