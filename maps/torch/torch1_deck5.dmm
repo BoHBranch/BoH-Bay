@@ -12182,6 +12182,7 @@
 /area/security/infantry)
 "uP" = (
 /obj/machinery/light,
+/obj/random_multi/single_item/runtime,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
 "uQ" = (
@@ -12267,9 +12268,11 @@
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/com)
 "uW" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
+/obj/structure/table/rack/shelf/steel,
+/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/gas/half,
+/obj/item/clothing/mask/gas/half,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
 "uX" = (
@@ -12765,11 +12768,10 @@
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
 "vW" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/structure/closet/secure_closet/infantry,
-/obj/effect/floor_decal/industrial/outline/red,
-/obj/item/gunbox/infantry,
-/obj/item/clothing/accessory/storage/black_vest,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
 "vX" = (
@@ -12835,13 +12837,18 @@
 /turf/simulated/floor/airless,
 /area/security/infantry/armory)
 "wh" = (
-/obj/structure/table/rack/shelf/steel,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
+/obj/structure/closet/secure_closet/inftech/ammo{
+	name = "support locker"
+	},
+/obj/item/rig_module/vision/nvg,
+/obj/item/rig_module/vision/nvg,
+/obj/item/rig_module/vision/nvg,
+/obj/item/rig_module/vision/nvg,
+/obj/item/rig_module/grenade_launcher/smoke,
+/obj/item/rig_module/grenade_launcher/light,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/armory)
 "wi" = (
@@ -12905,6 +12912,7 @@
 	},
 /obj/item/remains/robot,
 /obj/random/illegaltwo,
+/obj/item/clothing/under/carp,
 /turf/simulated/floor/plating,
 /area/security/infantry/armory)
 "wq" = (
@@ -12943,9 +12951,6 @@
 /area/shuttle/petrov/rd)
 "wv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/effect/landmark/start{
-	name = "Rifleman"
-	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/security/infantry)
 "ww" = (
@@ -13160,23 +13165,15 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
+/obj/random_multi/single_item/poppy,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/armory)
 "wN" = (
-/obj/structure/closet/secure_closet/inftech/ammo{
-	name = "support locker"
-	},
-/obj/item/rig_module/vision/nvg,
-/obj/item/rig_module/vision/nvg,
-/obj/item/rig_module/vision/nvg,
-/obj/item/rig_module/vision/nvg,
-/obj/item/rig_module/vision/nvg,
-/obj/item/rig_module/vision/nvg,
-/obj/item/rig_module/grenade_launcher/smoke,
-/obj/item/rig_module/grenade_launcher/light,
-/obj/machinery/light/small{
-	dir = 1
-	},
+/obj/structure/table/rack/shelf/steel,
+/obj/item/weapon/rig/military/infantry,
+/obj/item/weapon/rig/military/infantry,
+/obj/item/weapon/rig/military/infantry,
+/obj/item/weapon/rig/military/infantry,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/armory)
 "wO" = (
@@ -13191,6 +13188,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
+/obj/random_multi/single_item/punitelly,
 /turf/simulated/floor/tiled,
 /area/security/infantry)
 "wQ" = (
@@ -13344,6 +13342,12 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
+/area/security/infantry)
+"xc" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/table/rack/shelf/steel,
+/obj/item/weapon/paper/inf,
+/turf/simulated/floor/tiled/monotile,
 /area/security/infantry)
 "xd" = (
 /obj/structure/bed/chair/office/comfy/red{
@@ -31330,7 +31334,7 @@ aa
 aa
 he
 he
-wh
+wN
 he
 hQ
 wR
@@ -31531,11 +31535,11 @@ aa
 aa
 aa
 he
-wN
+wh
 wM
 he
-pM
-vW
+uW
+xc
 ww
 vn
 vB
@@ -31938,7 +31942,7 @@ he
 sQ
 wn
 he
-uW
+vW
 wy
 wC
 sN
