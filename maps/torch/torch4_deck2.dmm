@@ -340,6 +340,9 @@
 /obj/machinery/door/airlock/maintenance{
 	name = "Medical Storage Maintenance"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/medical)
 "aG" = (
@@ -690,6 +693,13 @@
 /turf/simulated/floor/reinforced/airless,
 /area/engineering/engine_room)
 "bq" = (
+/obj/machinery/alarm{
+	alarm_id = "petrov1";
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "bs" = (
@@ -11862,16 +11872,17 @@
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
 /obj/structure/cable{
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
@@ -11980,6 +11991,12 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
+"xb" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "xc" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	icon_state = "intact";
@@ -13728,6 +13745,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/auxsolarport)
+"CA" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "CB" = (
 /obj/random/toolbox,
 /turf/simulated/floor/tiled/techfloor,
@@ -15925,6 +15951,12 @@
 /area/vacant/prototype/engine)
 "Jk" = (
 /obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "Jl" = (
@@ -16120,6 +16152,16 @@
 "JY" = (
 /turf/simulated/wall/ocp_wall,
 /area/engineering/fuelbay)
+"JZ" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "Kb" = (
 /obj/effect/shuttle_landmark/ert/deck2,
 /turf/space,
@@ -17666,6 +17708,14 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
+"PL" = (
+/obj/machinery/suit_storage_unit/medical,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "PO" = (
 /obj/structure/catwalk,
 /obj/structure/cable{
@@ -18388,6 +18438,12 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod5/station)
+"Sn" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "Sr" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
@@ -19149,6 +19205,12 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/maintenance/seconddeck/forestarboard)
+"Wa" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "Wb" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /obj/structure/cable/cyan{
@@ -20234,6 +20296,16 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
+"ZP" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "ZS" = (
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
@@ -39313,7 +39385,7 @@ aC
 aC
 bf
 bf
-Jk
+ZP
 ee
 kg
 ee
@@ -39515,7 +39587,7 @@ aC
 tG
 dY
 dY
-Jk
+ZP
 ee
 eR
 Ge
@@ -39715,9 +39787,9 @@ ag
 aB
 aC
 Jk
-Jk
-Jk
-Jk
+Sn
+Sn
+JZ
 ee
 eR
 Ge
@@ -40118,7 +40190,7 @@ aa
 aB
 nb
 bq
-bq
+CA
 cq
 ee
 ef
@@ -40320,7 +40392,7 @@ aa
 aB
 aB
 PI
-bq
+Wa
 da
 ee
 Ae
@@ -40522,8 +40594,8 @@ aa
 aB
 bn
 zn
-bq
-cq
+xb
+PL
 ee
 He
 eR
