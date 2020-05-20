@@ -12358,19 +12358,6 @@
 /obj/machinery/door/airlock,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/seconddeck/elevator)
-"yP" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "yQ" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 1
@@ -14637,10 +14624,6 @@
 /obj/structure/sign/warning/fire,
 /turf/simulated/wall/ocp_wall,
 /area/maintenance/incinerator)
-"Fa" = (
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/storage/medical)
 "Fb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -14932,14 +14915,6 @@
 /obj/effect/shuttle_landmark/merc/deck2,
 /turf/space,
 /area/space)
-"FR" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "FS" = (
 /obj/effect/shuttle_landmark/skipjack/deck2,
 /turf/space,
@@ -15572,12 +15547,6 @@
 	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftport)
-"Ia" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "Ib" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
 /obj/machinery/door/firedoor,
@@ -17608,6 +17577,12 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/foyer)
+"PA" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "PC" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/disposal)
@@ -17896,14 +17871,6 @@
 /obj/random/junk,
 /turf/simulated/floor/airless,
 /area/engineering/engine_room)
-"QH" = (
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "QJ" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -18151,6 +18118,18 @@
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
+"RD" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance{
+	name = "Medical Storage Maintenance"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/storage/medical)
 "RE" = (
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
@@ -18873,6 +18852,14 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck)
+"UF" = (
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "UM" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 32
@@ -18886,18 +18873,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/fore)
-"UP" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/maintenance{
-	name = "Medical Storage Maintenance"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/storage/medical)
 "US" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/window/reinforced{
@@ -19575,6 +19550,19 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/engineering/engine_room)
+"Xq" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "Xr" = (
 /obj/effect/floor_decal/techfloor{
 	icon_state = "techfloor_edges";
@@ -19721,6 +19709,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/disposal)
+"XY" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/storage/medical)
 "XZ" = (
 /obj/structure/sign/warning/high_voltage{
 	icon_state = "shock";
@@ -19872,6 +19864,14 @@
 /obj/item/weapon/storage/box/matches,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
+"Yu" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "Yy" = (
 /obj/machinery/ai_status_display,
 /turf/simulated/wall/r_wall/prepainted,
@@ -39304,7 +39304,7 @@ fT
 aB
 cp
 cp
-Fa
+XY
 ee
 kg
 ee
@@ -39506,7 +39506,7 @@ fT
 tG
 bq
 bq
-Fa
+XY
 ee
 eR
 Ge
@@ -39705,10 +39705,10 @@ ag
 ag
 fT
 aB
-Fa
-Fa
-Fa
-Fa
+XY
+XY
+XY
+XY
 ee
 eR
 Ge
@@ -40310,7 +40310,7 @@ aa
 aa
 aB
 aB
-yP
+Xq
 bq
 cq
 ee
@@ -40512,7 +40512,7 @@ aa
 aa
 aB
 bn
-FR
+Yu
 bq
 cq
 ee
@@ -40916,7 +40916,7 @@ aa
 aa
 aB
 aB
-UP
+RD
 cp
 Al
 dB
@@ -41118,7 +41118,7 @@ aa
 aa
 aB
 aB
-QH
+UF
 bR
 Cl
 dC
@@ -41320,7 +41320,7 @@ aa
 aB
 aB
 aB
-Ia
+PA
 aN
 de
 aN
