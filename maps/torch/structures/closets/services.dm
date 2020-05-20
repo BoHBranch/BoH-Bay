@@ -79,3 +79,25 @@
 		/obj/item/clothing/shoes/laceup
 	)
 
+/obj/structure/closet/secure_closet/lawyer
+	name = "lawyer locker"
+	desc = "It's a storage unit for lawyers."
+	req_access = list(access_lawyer)
+
+/obj/structure/closet/secure_closet/lawyer/WillContain()
+	return list(
+		/obj/item/clothing/under/lawyer/female,
+		/obj/item/clothing/under/lawyer/black,
+		/obj/item/clothing/under/lawyer/red,
+		/obj/item/clothing/under/lawyer/bluesuit,
+		/obj/item/clothing/shoes/laceup,
+		/obj/item/device/radio,
+		/obj/item/weapon/pen,
+		/obj/item/device/tape/random,
+		/obj/item/device/taperecorder,
+		/obj/item/device/megaphone,
+		/obj/item/weapon/material/clipboard,
+		/obj/item/weapon/folder/red,
+		/obj/item/weapon/storage/belt/general,
+		/obj/item/device/flashlight
+	)
