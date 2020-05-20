@@ -21,7 +21,7 @@
 
 /datum/trait/hot_blooded
 	name = "Sangre caliente"
-	desc = "Su cuerpo es capaz de una endoregulación térmica más vigorosa, lo que hace que su temperatura corporal promedio sea más alta de lo normal."
+	desc = "Su cuerpo es capaz de una endoregulación térmica mas vigorosa, lo que hace que su temperatura corporal promedio sea mas alta de lo normal."
 	cost = 0
 	var_changes = list("body_temperature" = 313, "heat_discomfort_level" = 320)
 	excludes = list(/datum/trait/cold_blooded)

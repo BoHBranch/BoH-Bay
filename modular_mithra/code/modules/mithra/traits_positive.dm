@@ -36,7 +36,7 @@
 
 /datum/trait/nonconductive
 	name = "Piel resistiva"
-	desc = "Su piel tiene una resistividad eléctrica más alta de lo normal, lo que lo hace menos conductor."
+	desc = "Su piel tiene una resistividad eléctrica mas alta de lo normal, lo que lo hace menos conductor."
 	cost = 2 //This effects tasers!
 	var_changes = list("siemens_coefficient" = 0.75)
 

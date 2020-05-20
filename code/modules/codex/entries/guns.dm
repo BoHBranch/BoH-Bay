@@ -35,7 +35,7 @@
 		traits += "Tiene un seguro. CTRL+CLICK para alternar el seguro."
 
 	if(is_secure_gun())
-		traits += "Está equipado con un chip de registración segura. Pásale una ID para registrarla."
+		traits += "Esta equipado con un chip de registración segura. Pasale una ID para registrarla."
 
 	if(scope_zoom)
 		traits += "Tiene una mira óptica. Se puede alternar con el verbo Usar mira."
@@ -55,7 +55,7 @@
 	if(load_method & SINGLE_CASING)
 		loading_ways += "Rondas [caliber] sueltas."
 	if(load_method & SPEEDLOADER)
-		loading_ways += "Cargador rápido."
+		loading_ways += "Cargador rapido."
 	if(load_method & MAGAZINE)
 		loading_ways += "Cargadores"
 	traits += "Puede ser cargada usando [english_list(loading_ways)]"
@@ -72,7 +72,7 @@
 	. = ..()
 	var/list/traits = list()
 
-	traits += "<br>Su capacidad máxima es de [max_shots] disparos en cuanto a energía."
+	traits += "<br>Su capacidad maxima es de [max_shots] disparos en cuanto a energía."
 
 	if(self_recharge)
 		traits += "Se recarga sola con el tiempo."
@@ -85,20 +85,20 @@
 
 /obj/item/weapon/gun/energy/crossbow/get_antag_info()
 	. = ..()
-	. += "Esta es un arma sigilosa que dispara flechas envenenadas a tu objetivo. Cuando le de a alguien sufrirán un efecto de aturdimiento, además de algunas toxinas. \
+	. += "Esta es un arma sigilosa que dispara flechas envenenadas a tu objetivo. Cuando le de a alguien sufriran un efecto de aturdimiento, ademas de algunas toxinas. \
 	. La ballesta de energía se recarga sola lentamente, y puede ser escondida en tu bolsillo o bolsa.<br>"
 
 /obj/item/weapon/gun/energy/chameleon/get_antag_info()
 	. = ..()
-	. += "Esta arma es un proyector holográfico que puede cambiar de apariencia para imitar otras armas. Para cambiar de aspecto usa\
+	. += "Esta arma es un proyector holografico que puede cambiar de apariencia para imitar otras armas. Para cambiar de aspecto usa\
 	el verbo apropiado en la sección camaleón. Cualquier rayo o proyectil disparado por esta arma es realmente un holograma inútil para combate real. \
 	Proyectar estos hologramas a distancia usa un poco de energía.<br>"
 
 /datum/codex_entry/energy_weapons
 	display_name = "energy weapons"
 	mechanics_text = "Esta arma es un arma de energía; funcionan con una carga de batería en lugar de munición tradicional. Puedes recargarlas \
-         colocándolas en un cargador montado en una pared o en una mesa, como los que se encuentran en Seguridad o en los \
-        alrededores. Además, la mayoría de las armas de energía pueden atravesar ventanas y golpear lo que esté al otro lado, y son \
+         colocandolas en un cargador montado en una pared o en una mesa, como los que se encuentran en Seguridad o en los \
+        alrededores. Ademas, la mayoría de las armas de energía pueden atravesar ventanas y golpear lo que esté al otro lado, y son \
        precisas y útiles contra objetivos distantes. \
 		<br><br>"
 
