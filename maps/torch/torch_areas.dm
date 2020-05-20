@@ -791,7 +791,7 @@
 	req_access = list(list(access_mining, access_xenoarch))
 
 /area/storage/medical
-	name = "Medical Storage"
+	name = "Medical EVA Storage"
 	icon_state = "medbay4"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_medical)
@@ -1085,6 +1085,10 @@
 	name = "\improper Infirmary Locker Room"
 	icon_state = "locker"
 	req_access = list(access_medical_equip)
+
+/area/medical/cryomaint
+	name = "\improper Cryogenics Storage"
+	icon_state = "medbay3"
 
 /area/medical/subacute
 	name = "\improper Sub-Acute Ward"
@@ -1480,6 +1484,10 @@
 	name = "\improper Triage"
 	icon_state = "medbay"
 
+/area/medical/auxstorage
+	name = "\improper Auxiliary Storage"
+	icon_state = "medbay4"
+
 /area/medical/surgery
 	name = "\improper Operating Theatre 1"
 	icon_state = "surgery"
@@ -1489,11 +1497,6 @@
 	name = "\improper Operating Theatre 2"
 	icon_state = "surgery"
 	req_access = list(access_surgery)
-
-/area/medical/surgery3
-	name = "\improper Operating Theatre 3"
-	icon_state = "surgery"
-	req_access = list(list(access_surgery, access_robotics_engineering))
 
 // Research
 /area/assembly

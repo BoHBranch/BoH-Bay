@@ -926,12 +926,12 @@
 /area/maintenance/auxsolarstarboard)
 "bR" = (
 /obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
+/area/maintenance/seconddeck/aftstarboard)
 "bS" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/ladder/up,
@@ -1196,6 +1196,14 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/storage/expedition)
+"cs" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/seconddeck/aftstarboard)
 "ct" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -11856,6 +11864,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
+"wI" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/seconddeck/aftstarboard)
 "wL" = (
 /obj/random/junk,
 /turf/simulated/floor/tiled/techfloor,
@@ -14904,6 +14918,18 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/fuelbay)
+"FI" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance{
+	name = "Medical Storage Maintenance"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/seconddeck/aftstarboard)
 "FJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/red{
 	icon_state = "intact";
@@ -15148,6 +15174,10 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck/fore)
+"Gx" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/storage/medical)
 "GA" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/blast/shutters{
@@ -17577,12 +17607,6 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/foyer)
-"PA" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "PC" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/disposal)
@@ -18118,18 +18142,6 @@
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
-"RD" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/maintenance{
-	name = "Medical Storage Maintenance"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/storage/medical)
 "RE" = (
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor,
@@ -18852,14 +18864,6 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck)
-"UF" = (
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "UM" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 32
@@ -19550,19 +19554,6 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/engineering/engine_room)
-"Xq" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "Xr" = (
 /obj/effect/floor_decal/techfloor{
 	icon_state = "techfloor_edges";
@@ -19709,10 +19700,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/disposal)
-"XY" = (
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/storage/medical)
 "XZ" = (
 /obj/structure/sign/warning/high_voltage{
 	icon_state = "shock";
@@ -19864,7 +19851,7 @@
 /obj/item/weapon/storage/box/matches,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
-"Yu" = (
+"Yv" = (
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -20154,6 +20141,19 @@
 /obj/structure/sign/warning/biohazard,
 /turf/simulated/wall/prepainted,
 /area/maintenance/disposal)
+"ZA" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "ZC" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -39299,12 +39299,12 @@ ar
 aa
 aa
 aa
-fT
-fT
+aB
+aB
 aB
 cp
 cp
-XY
+Gx
 ee
 kg
 ee
@@ -39502,11 +39502,11 @@ aa
 aa
 aa
 aa
-fT
+aB
 tG
 bq
 bq
-XY
+Gx
 ee
 eR
 Ge
@@ -39703,12 +39703,12 @@ aq
 ag
 ag
 ag
-fT
 aB
-XY
-XY
-XY
-XY
+aB
+Gx
+Gx
+Gx
+Gx
 ee
 eR
 Ge
@@ -40310,7 +40310,7 @@ aa
 aa
 aB
 aB
-Xq
+ZA
 bq
 cq
 ee
@@ -40512,7 +40512,7 @@ aa
 aa
 aB
 bn
-Yu
+Yv
 bq
 cq
 ee
@@ -40914,10 +40914,10 @@ ao
 aq
 aa
 aa
-aB
-aB
-RD
-cp
+IE
+IE
+FI
+dA
 Al
 dB
 eM
@@ -41116,10 +41116,10 @@ ap
 aq
 aa
 aa
-aB
-aB
-UF
+IE
+IE
 bR
+cs
 Cl
 dC
 eN
@@ -41317,10 +41317,10 @@ aa
 aa
 ag
 aa
-aB
-aB
-aB
-PA
+IE
+IE
+IE
+wI
 aN
 de
 aN
@@ -41518,10 +41518,10 @@ af
 af
 af
 af
-aB
-aB
-aB
-aB
+IE
+IE
+IE
+IE
 aN
 aN
 df
