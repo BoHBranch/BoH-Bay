@@ -698,6 +698,9 @@
 	icon_state = "2-4"
 	},
 /obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "abf" = (
@@ -1519,7 +1522,6 @@
 /area/rnd/development)
 "acH" = (
 /obj/machinery/door/firedoor,
-/obj/structure/disposalpipe/segment,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -10931,6 +10933,7 @@
 	dir = 1;
 	frequency = 1331
 	},
+/obj/item/weapon/tableflag,
 /turf/simulated/floor/wood/walnut,
 /area/medical/lounge)
 "atk" = (
@@ -18811,10 +18814,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 4;
@@ -18919,6 +18918,8 @@
 /obj/structure/table/standard,
 /obj/item/auto_cpr,
 /obj/effect/floor_decal/corner/paleblue/three_quarters,
+/obj/item/auto_cpr,
+/obj/item/auto_cpr,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "fqb" = (
@@ -19587,6 +19588,9 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
+/obj/item/robot_rack/roller,
+/obj/item/robot_rack/roller,
+/obj/item/robot_rack/roller,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "gnC" = (
@@ -22346,6 +22350,9 @@
 /obj/machinery/camera/network/medbay{
 	c_tag = "Infirmary - Trauma Center North";
 	dir = 2
+	},
+/obj/item/modular_computer/telescreen/preset/medical{
+	pixel_y = 28
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -30707,19 +30714,6 @@
 /obj/effect/floor_decal/corner/paleblue/full,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
-"wqY" = (
-/obj/machinery/door/blast/shutters{
-	density = 0;
-	dir = 2;
-	icon_state = "shutter0";
-	id_tag = "infirmaryquar";
-	name = "Infirmary Emergency Quarantine Shutters";
-	opacity = 0
-	},
-/obj/effect/wallframe_spawn/reinforced/no_grille,
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/plating,
-/area/medical/triage)
 "wro" = (
 /obj/structure/bed/chair/office/light,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -30835,6 +30829,20 @@
 "wEw" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/thruster/d1port)
+"wFp" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/aftstarboard)
 "wGe" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/portable_atmospherics/powered/scrubber,
@@ -30853,6 +30861,9 @@
 "wHW" = (
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/chemical_dispenser/tac_coffee/full/good,
+/obj/item/weapon/reagent_containers/food/condiment/sugar{
+	pixel_x = 8
+	},
 /turf/simulated/floor/lino,
 /area/medical/lounge)
 "wLA" = (
@@ -51468,7 +51479,7 @@ mwb
 hmz
 aak
 gJb
-wqY
+gUb
 jiq
 gxX
 dDc
@@ -56910,7 +56921,7 @@ abL
 agv
 aer
 aer
-aer
+wFp
 akK
 tCO
 tCO
