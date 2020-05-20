@@ -203,6 +203,12 @@
 	name = "First Deck Maintenance"
 	icon_state = "maintcentral"
 
+/area/maintenance/firstdeck/cryomaint
+	name = "\improper Cryogenics Storage"
+	icon_state = "medbay3"
+	req_access = list(access_medical)
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
 /area/maintenance/firstdeck/aftstarboard
 	name = "First Deck Aft Starboard Maintenance"
 	icon_state = "asmaint"
@@ -1081,10 +1087,6 @@
 	name = "\improper Infirmary Locker Room"
 	icon_state = "locker"
 	req_access = list(access_medical_equip)
-
-/area/medical/cryomaint
-	name = "\improper Cryogenics Storage"
-	icon_state = "medbay3"
 
 /area/medical/subacute
 	name = "\improper Sub-Acute Ward"
