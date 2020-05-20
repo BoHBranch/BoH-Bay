@@ -11659,6 +11659,12 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
+"vD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "vH" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/seconddeck)
@@ -12504,6 +12510,14 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/maintenance/seconddeck/foreport)
+"ze" = (
+/obj/machinery/suit_storage_unit/medical,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "zk" = (
 /obj/structure/sign/warning/compressed_gas{
 	icon_state = "hikpa";
@@ -13845,6 +13859,16 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/fore)
+"CO" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "CP" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
 	dir = 1;
@@ -14612,6 +14636,16 @@
 /obj/structure/cable/yellow,
 /turf/simulated/floor/airless,
 /area/solar/port)
+"EM" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "EO" = (
 /obj/effect/floor_decal/corner/lime{
 	dir = 9
@@ -15239,12 +15273,6 @@
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/bluespace)
-"GS" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "GU" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -15256,16 +15284,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
-"GV" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/central)
 "GW" = (
 /turf/simulated/wall/r_wall/hull,
 /area/storage/tech)
@@ -15796,15 +15814,6 @@
 "Ir" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/auxsolarport)
-"Iu" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "Iv" = (
 /obj/machinery/alarm{
 	dir = 1;
@@ -15989,6 +15998,12 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
+"Jm" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "Jn" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -16278,6 +16293,15 @@
 /obj/machinery/light/spot,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
+"Kp" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "Kv" = (
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
@@ -16500,6 +16524,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
+"LI" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "LK" = (
 /obj/structure/sign/warning/secure_area,
 /turf/simulated/wall/r_wall/prepainted,
@@ -18206,12 +18236,6 @@
 	},
 /turf/simulated/floor/reinforced/carbon_dioxide,
 /area/engineering/fuelbay)
-"Rw" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/central)
 "Rx" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/plating,
@@ -18708,12 +18732,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/seconddeck)
-"TB" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "TD" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 1
@@ -19152,16 +19170,6 @@
 /obj/machinery/ai_status_display,
 /turf/simulated/wall/r_wall/prepainted,
 /area/engineering/bluespace/containment)
-"Vw" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/central)
 "Vy" = (
 /obj/structure/closet/emcloset,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -19216,14 +19224,6 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/maintenance/seconddeck/forestarboard)
-"VZ" = (
-/obj/machinery/suit_storage_unit/medical,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "Wb" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /obj/structure/cable/cyan{
@@ -39388,7 +39388,7 @@ aC
 aC
 bf
 bf
-GV
+CO
 ee
 kg
 ee
@@ -39590,7 +39590,7 @@ aC
 tG
 dY
 dY
-GV
+CO
 ee
 eR
 Ge
@@ -39790,9 +39790,9 @@ ag
 aB
 aC
 Jk
-Rw
-Rw
-Vw
+Jm
+Jm
+EM
 ee
 eR
 Ge
@@ -40193,7 +40193,7 @@ aa
 aB
 nb
 bq
-Iu
+Kp
 cq
 ee
 ef
@@ -40395,7 +40395,7 @@ aa
 aB
 aB
 PI
-TB
+LI
 da
 ee
 Ae
@@ -40597,8 +40597,8 @@ aa
 aB
 bn
 zn
-GS
-VZ
+vD
+ze
 ee
 He
 eR

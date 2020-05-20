@@ -327,10 +327,6 @@
 	name = "Escape Pod Eight"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod9/station
-	name = "Escape Pod Nine"
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
-
 /area/shuttle/escape_pod10/station
 	name = "Escape Pod Ten"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
@@ -1107,12 +1103,6 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list()
 
-/area/chapel/crematorium
-	name = "\improper Crematorium"
-	icon_state = "chapel"
-	sound_env = SMALL_ENCLOSED
-	req_access = list(access_crematorium)
-
 /area/medical/lounge
 	name = "\improper Staff Lounge"
 	icon_state = "locker"
@@ -1456,7 +1446,7 @@
 	sound_env = LARGE_ENCLOSED
 	req_access = list(access_atmospherics)
 
-// Medical.
+// Medical
 /area/medical/chemistry
 	name = "\improper Chemistry"
 	icon_state = "chem"
