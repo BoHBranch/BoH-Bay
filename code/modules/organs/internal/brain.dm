@@ -1,6 +1,6 @@
 /obj/item/organ/internal/brain
-	name = "brain"
-	desc = "A piece of juicy meat found in a person's head. Un pedazo de carne jugosa encontrado en la cabeza de una persona."
+	name = "cerebro"
+	desc = "Un pedazo de carne jugosa encontrado en la cabeza de una persona."
 	organ_tag = BP_BRAIN
 	parent_organ = BP_HEAD
 	vital = 1
@@ -75,7 +75,7 @@
 	if(H.mind)
 		H.mind.transfer_to(brainmob)
 
-	to_chat(brainmob, "<span class='notice'>You feel slightly disoriented. That's normal when you're just \a [initial(src.name)].</span>")
+	to_chat(brainmob, "<span class='notice'>Te sientes un poco desorientado. Es normal cuando eres solo un \a [initial(src.name)].</span>")
 	callHook("debrain", list(brainmob))
 
 /obj/item/organ/internal/brain/examine(mob/user)
