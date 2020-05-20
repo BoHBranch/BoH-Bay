@@ -35,7 +35,7 @@
 		traits += "Tiene un seguro. CTRL+CLICK para alternar el seguro."
 
 	if(is_secure_gun())
-		traits += "Esta equipado con un chip de registracion segura. Pasale una ID para registrarla."
+		traits += "Esta equipado con un chip de registración segura. Pasale una ID para registrarla."
 
 	if(scope_zoom)
 		traits += "Tiene una mira optica. Se puede alternar con el verbo Usar mira."
@@ -86,20 +86,20 @@
 /obj/item/weapon/gun/energy/crossbow/get_antag_info()
 	. = ..()
 	. += "Esta es un arma sigilosa que dispara flechas envenenadas a tu objetivo. Cuando le de a alguien sufriran un efecto de aturdimiento, ademas de algunas toxinas. \
-	. La ballesta de energia se recarga sola lentamente, y puede ser escondida en tu bolsillo o bolsa.<br>"
+	. La ballesta de energía se recarga sola lentamente, y puede ser escondida en tu bolsillo o bolsa.<br>"
 
 /obj/item/weapon/gun/energy/chameleon/get_antag_info()
 	. = ..()
 	. += "Esta arma es un proyector holografico que puede cambiar de apariencia para imitar otras armas. Para cambiar de aspecto usa\
-	el verbo apropiado en la seccion camaleon. Cualquier rayo o proyectil disparado por esta arma es realmente un holograma inutil para combate real. \
-	Proyectar estos hologramas a distancia usa un poco de energia.<br>"
+	el verbo apropiado en la sección camaleón. Cualquier rayo o proyectil disparado por esta arma es realmente un holograma inútil para combate real. \
+	Proyectar estos hologramas a distancia usa un poco de energía.<br>"
 
 /datum/codex_entry/energy_weapons
 	display_name = "energy weapons"
-	mechanics_text = "Esta arma es un arma de energia; funcionan con una carga de bateria en lugar de municion tradicional. Puedes recargarlas \
+	mechanics_text = "Esta arma es un arma de energía; funcionan con una carga de batería en lugar de munición tradicional. Puedes recargarlas \
          colocandolas en un cargador montado en una pared o en una mesa, como los que se encuentran en Seguridad o en los \
-        alrededores. Ademas, la mayoria de las armas de energia pueden atravesar ventanas y golpear lo que este al otro lado, y son \
-       precisas y utiles contra objetivos distantes. \
+        alrededores. Ademas, la mayoría de las armas de energía pueden atravesar ventanas y golpear lo que esté al otro lado, y son \
+       precisas y útiles contra objetivos distantes. \
 		<br><br>"
 
 /datum/codex_entry/ballistic_weapons

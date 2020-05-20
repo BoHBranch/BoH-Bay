@@ -1,5 +1,5 @@
 /obj/item/organ/internal/diona
-	name = "diona nymph"
+	name = "ninfa diona"
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "nymph"
 	organ_tag = "special" // Turns into a nymph instantly, no transplanting possible.
@@ -18,28 +18,28 @@
 	return PROCESS_KILL
 
 /obj/item/organ/internal/diona/strata
-	name = "neural strata"
+	name = "estratos neurales"
 	parent_organ = BP_CHEST
 	organ_tag = "neural strata"
 
 
 /obj/item/organ/internal/diona/bladder
-	name = "gas bladder"
+	name = "vejiga de gas"
 	parent_organ = BP_HEAD
 	organ_tag = "gas bladder"
 
 /obj/item/organ/internal/diona/polyp
-	name = "polyp segment"
+	name = "segmento de polipo"
 	parent_organ = BP_GROIN
 	organ_tag = "polyp segment"
 
 /obj/item/organ/internal/diona/ligament
-	name = "anchoring ligament"
+	name = "ligamento de anclaje"
 	parent_organ = BP_GROIN
 	organ_tag = "anchoring ligament"
 
 /obj/item/organ/internal/diona/node
-	name = "receptor node"
+	name = "receptor de nodo"
 	parent_organ = BP_HEAD
 
 /obj/item/organ/internal/diona/nutrients
@@ -59,7 +59,7 @@
 	return ..(user, 1)
 
 /obj/item/organ/internal/diona/node
-	name = "response node"
+	name = "nodo de respuesta"
 	parent_organ = BP_HEAD
 	organ_tag = "response node"
 	icon = 'icons/obj/alien.dmi'
