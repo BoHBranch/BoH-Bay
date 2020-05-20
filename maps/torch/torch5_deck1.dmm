@@ -774,7 +774,6 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/medical/morgue/autopsy)
 "abk" = (
-/obj/structure/closet/crate/secure/biohazard,
 /obj/effect/floor_decal/borderfloorblack{
 	icon_state = "borderfloor_white";
 	dir = 9
@@ -792,6 +791,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/structure/closet/crate/secure/biohazard/alt,
 /turf/simulated/floor/tiled/dark,
 /area/medical/surgery2)
 "abl" = (
@@ -17650,10 +17650,10 @@
 	icon_state = "borderfloor_white";
 	dir = 10
 	},
-/obj/structure/closet/crate/secure/biohazard,
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/structure/closet/crate/secure/biohazard/alt,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "cNb" = (
@@ -21436,6 +21436,19 @@
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
 /area/rnd/development)
+"iJq" = (
+/obj/effect/floor_decal/borderfloorblack{
+	icon_state = "borderfloor_white";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/beige{
+	dir = 6
+	},
+/obj/structure/closet/crate/freezer,
+/obj/item/device/mmi,
+/obj/item/device/mmi,
+/turf/simulated/floor/tiled/dark,
+/area/medical/surgery2)
 "iKb" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -50026,7 +50039,7 @@ bNt
 jhq
 oei
 abk
-aej
+iJq
 aej
 agI
 oei
