@@ -56,6 +56,13 @@
 	slot_flags = null	//they have no straps!
 	starting_pressure = list(GAS_PHORON = 3*ONE_ATMOSPHERE)
 
+/obj/item/weapon/tank/phoron_big
+	name = "large phoron tank"
+	icon_state = "phoron_big"
+	distribute_pressure = 12
+	starting_pressure = list(GAS_PHORON = 10*ONE_ATMOSPHERE)
+	volume = 180
+
 /*
  * Hydrogen
  */
@@ -116,6 +123,14 @@
 	icon_state = "emergency_nitro"
 	gauge_icon = "indicator_emergency"
 	starting_pressure = list(GAS_NITROGEN = 10*ONE_ATMOSPHERE)
+
+/obj/item/weapon/tank/emergency/phoron
+	name = "emergency phoron tank"
+	desc = "An emergency air tank hastily painted orange and issued to plasma-afflicted crewmembers."
+	icon_state = "emergency_phoron"
+	gauge_icon = "indicator_emergency"
+	starting_pressure = list(GAS_PLASMA = 10*ONE_ATMOSPHERE)
+	distribute_pressure = 12
 
 /obj/item/weapon/tank/emergency/nitrogen/double
 	name = "double emergency nitrogen tank"
