@@ -1496,7 +1496,7 @@
 /area/medical/surgery2
 	name = "\improper Operating Theatre 2"
 	icon_state = "surgery"
-	req_access = list(access_surgery)
+	req_access = list(list(access_surgery, access_robotics_engineering))
 
 // Research
 /area/assembly
