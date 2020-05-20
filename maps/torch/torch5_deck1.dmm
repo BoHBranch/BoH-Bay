@@ -18407,6 +18407,12 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
+"dXT" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/centralstarboard)
 "dZx" = (
 /obj/structure/table/steel,
 /obj/item/stack/package_wrap/twenty_five,
@@ -18907,12 +18913,6 @@
 /obj/item/auto_cpr,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
-"fpq" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/forestarboard)
 "fqb" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 4
@@ -19482,16 +19482,6 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/hardstorage/aux)
-"gaw" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralstarboard)
 "gaA" = (
 /obj/machinery/status_display,
 /turf/simulated/wall/r_wall/prepainted,
@@ -20394,6 +20384,16 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/opscheck)
+"hsq" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/forestarboard)
 "htq" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 9
@@ -22067,6 +22067,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/questioning)
+"jCp" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/forestarboard)
 "jCM" = (
 /turf/simulated/wall/prepainted,
 /area/medical/morgue/autopsy)
@@ -25486,20 +25492,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/fore)
-"nZz" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/fuel,
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/aftstarboard)
 "nZB" = (
 /obj/machinery/teleport/station,
 /obj/machinery/button/blast_door{
@@ -26037,35 +26029,6 @@
 /obj/random/powercell,
 /turf/simulated/floor/tiled,
 /area/assembly/robotics)
-"oKi" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
-	frequency = 1380;
-	id_tag = "escape_pod_8_berth";
-	name = "escape pod eight berth controller";
-	pixel_x = -24;
-	pixel_y = 24;
-	tag_door = "escape_pod8_berth_hatch"
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/forestarboard)
 "oLb" = (
 /obj/structure/bed/psych,
 /obj/random_multi/single_item/runtime,
@@ -26476,16 +26439,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
-"pmf" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralstarboard)
 "pnb" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -27557,6 +27510,16 @@
 /obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor/tiled/white,
 /area/rnd/misc_lab)
+"qOv" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/centralstarboard)
 "qPb" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/red,
 /obj/machinery/meter,
@@ -27793,12 +27756,6 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
-"rgF" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralstarboard)
 "rhb" = (
 /obj/machinery/atmospherics/pipe/simple/visible,
 /obj/effect/floor_decal/industrial/warning{
@@ -28205,6 +28162,35 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
+"rFG" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
+	frequency = 1380;
+	id_tag = "escape_pod_8_berth";
+	name = "escape pod eight berth controller";
+	pixel_x = -24;
+	pixel_y = 24;
+	tag_door = "escape_pod8_berth_hatch"
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/forestarboard)
 "rFK" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 1
@@ -28365,6 +28351,20 @@
 /obj/effect/catwalk_plated/white,
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
+"rQU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/aftstarboard)
 "rRb" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/white,
@@ -29425,6 +29425,16 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology)
+"sZC" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/centralstarboard)
 "tab" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 4
@@ -29929,16 +29939,6 @@
 "tJO" = (
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
-"tLS" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/forestarboard)
 "tNY" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -30179,16 +30179,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/medical/morgue/autopsy)
-"uMf" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralstarboard)
 "uMh" = (
 /obj/effect/floor_decal/corner/paleblue,
 /obj/machinery/disposal,
@@ -31140,6 +31130,16 @@
 "xPU" = (
 /turf/simulated/wall/r_wall/hull,
 /area/thruster/d1port)
+"xQN" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/centralstarboard)
 "xRh" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/processing)
@@ -43239,7 +43239,7 @@ mbW
 hIV
 atM
 xYj
-oKi
+rFG
 njj
 njj
 vhs
@@ -47484,7 +47484,7 @@ act
 aeS
 hBr
 agR
-pmf
+qOv
 acD
 akj
 alk
@@ -48289,10 +48289,10 @@ hBr
 hBr
 adM
 geC
-tLS
-fpq
-rgF
-gaw
+hsq
+jCp
+dXT
+sZC
 aji
 akn
 aln
@@ -49299,8 +49299,8 @@ abP
 abP
 wGn
 cJP
-uMf
-rgF
+xQN
+dXT
 agY
 bOe
 hML
@@ -56979,7 +56979,7 @@ abL
 agv
 aer
 aer
-nZz
+rQU
 akK
 tCO
 tCO
