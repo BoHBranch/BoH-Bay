@@ -426,23 +426,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarstarboard)
-"aM" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/table/rack,
-/obj/item/weapon/rig/medical/equipped,
-/obj/machinery/door/window/brigdoor/southleft{
-	name = "suit storage"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "aN" = (
 /turf/simulated/wall/prepainted,
 /area/maintenance/disposal)
@@ -686,25 +669,9 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/vacant/prototype/control)
-"bm" = (
-/obj/structure/table/rack,
-/obj/item/weapon/storage/belt/medical,
-/obj/item/weapon/storage/belt/medical,
-/obj/item/weapon/storage/belt/medical,
-/obj/item/weapon/storage/belt/medical,
-/obj/item/clothing/accessory/stethoscope,
-/obj/item/clothing/accessory/stethoscope,
-/obj/item/clothing/accessory/stethoscope,
-/obj/item/clothing/accessory/stethoscope,
-/obj/structure/catwalk,
-/obj/item/device/flashlight/pen,
-/obj/item/device/flashlight/pen,
-/obj/item/device/flashlight/pen,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "bn" = (
-/obj/structure/closet/crate/med_crate/trauma,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/suit_cycler/medical,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "bo" = (
@@ -723,15 +690,6 @@
 /turf/simulated/floor/reinforced/airless,
 /area/engineering/engine_room)
 "bq" = (
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
-"br" = (
-/obj/structure/fireaxecabinet{
-	pixel_y = -32
-	},
-/obj/machinery/light/small{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "bs" = (
@@ -966,26 +924,6 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/auxsolarstarboard)
-"bP" = (
-/obj/structure/closet/l3closet/general/multi,
-/obj/effect/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
-"bQ" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/structure/closet/crate/med_crate/oxyloss,
-/obj/effect/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "bR" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -997,6 +935,11 @@
 "bS" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/ladder/up,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "bT" = (
@@ -1240,8 +1183,8 @@
 /turf/simulated/wall/prepainted,
 /area/storage/medical)
 "cq" = (
-/obj/structure/closet/radiation,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/suit_storage_unit/medical,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "cr" = (
@@ -1253,18 +1196,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/storage/expedition)
-"cs" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/maintenance{
-	name = "Medical Storage Maintenance"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/storage/medical)
 "ct" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -1596,30 +1527,6 @@
 /obj/item/weapon/material/bell,
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/engineering_monitoring)
-"da" = (
-/obj/structure/table/rack,
-/obj/item/device/flashlight,
-/obj/item/device/flashlight,
-/obj/item/device/flashlight,
-/obj/item/device/radio,
-/obj/item/device/radio,
-/obj/item/device/radio,
-/obj/item/weapon/storage/box/bodybags,
-/obj/item/weapon/crowbar/prybar,
-/obj/item/weapon/crowbar/prybar,
-/obj/item/weapon/crowbar/prybar,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
-"db" = (
-/obj/structure/closet/secure_closet/medical_torch,
-/obj/effect/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
-"dc" = (
-/obj/structure/closet/crate/med_crate/burn,
-/obj/effect/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "dd" = (
 /obj/machinery/door/airlock/civilian{
 	name = "Custodial Closet"
@@ -4254,22 +4161,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
-"ia" = (
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack/shelf,
-/obj/item/clothing/mask/muzzle,
-/obj/item/clothing/mask/muzzle,
-/obj/item/clothing/mask/muzzle,
-/obj/item/clothing/glasses/blindfold,
-/obj/item/clothing/glasses/blindfold,
-/obj/item/clothing/glasses/blindfold,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "ib" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -7024,12 +6915,21 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/seconddeck/elevator)
 "nb" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
 /obj/structure/table/rack,
-/obj/item/weapon/gun/launcher/syringe,
-/obj/item/weapon/storage/box/syringegun,
-/obj/item/weapon/storage/box/syringegun,
-/obj/item/weapon/defibrillator/compact,
-/turf/simulated/floor/tiled/techfloor,
+/obj/item/weapon/rig/medical/equipped,
+/obj/machinery/door/window/brigdoor/southleft{
+	name = "suit storage"
+	},
+/turf/simulated/floor/tiled/white,
 /area/storage/medical)
 "nc" = (
 /turf/simulated/wall/prepainted,
@@ -8376,13 +8276,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/foyer)
-"pz" = (
-/obj/structure/closet/crate/medical,
-/obj/item/bodybag,
-/obj/item/bodybag,
-/obj/effect/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "pA" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -12465,6 +12358,19 @@
 /obj/machinery/door/airlock,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/seconddeck/elevator)
+"yP" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "yQ" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 1
@@ -14731,6 +14637,10 @@
 /obj/structure/sign/warning/fire,
 /turf/simulated/wall/ocp_wall,
 /area/maintenance/incinerator)
+"Fa" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/storage/medical)
 "Fb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -15022,6 +14932,14 @@
 /obj/effect/shuttle_landmark/merc/deck2,
 /turf/space,
 /area/space)
+"FR" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "FS" = (
 /obj/effect/shuttle_landmark/skipjack/deck2,
 /turf/space,
@@ -15654,6 +15572,12 @@
 	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftport)
+"Ia" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "Ib" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
 /obj/machinery/door/firedoor,
@@ -16166,14 +16090,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/fore)
-"JN" = (
-/obj/item/roller,
-/obj/item/roller,
-/obj/item/roller,
-/obj/item/roller,
-/obj/structure/table/rack,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "JS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -17695,11 +17611,6 @@
 "PC" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/disposal)
-"PD" = (
-/obj/structure/table/rack,
-/obj/structure/bedsheetbin,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "PE" = (
 /obj/machinery/alarm{
 	frequency = 1439;
@@ -17985,6 +17896,14 @@
 /obj/random/junk,
 /turf/simulated/floor/airless,
 /area/engineering/engine_room)
+"QH" = (
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "QJ" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -18954,38 +18873,6 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck)
-"UI" = (
-/obj/structure/table/rack{
-	dir = 8
-	},
-/obj/item/stack/material/steel{
-	amount = 50
-	},
-/obj/item/stack/material/steel{
-	amount = 50
-	},
-/obj/item/stack/material/steel{
-	amount = 50
-	},
-/obj/item/stack/material/steel{
-	amount = 50
-	},
-/obj/item/stack/material/steel{
-	amount = 50
-	},
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
-	},
-/obj/item/stack/material/aluminium/fifty,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/expedition)
 "UM" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 32
@@ -18999,6 +18886,18 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/fore)
+"UP" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance{
+	name = "Medical Storage Maintenance"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/storage/medical)
 "US" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/window/reinforced{
@@ -39405,7 +39304,7 @@ fT
 aB
 cp
 cp
-aF
+Fa
 ee
 kg
 ee
@@ -39607,7 +39506,7 @@ fT
 tG
 bq
 bq
-bq
+Fa
 ee
 eR
 Ge
@@ -39806,10 +39705,10 @@ ag
 ag
 fT
 aB
-bq
-bq
-JN
-pz
+Fa
+Fa
+Fa
+Fa
 ee
 eR
 Ge
@@ -40008,12 +39907,12 @@ ag
 aB
 aB
 aB
-bq
-bq
+aF
+cp
 ee
 ee
 ee
-UI
+eR
 Ge
 ee
 ee
@@ -40209,7 +40108,7 @@ aa
 aa
 aB
 nb
-bP
+bq
 bq
 cq
 ee
@@ -40410,10 +40309,10 @@ aq
 aa
 aa
 aB
-bm
+aB
+yP
 bq
-bq
-da
+cq
 ee
 Ae
 eR
@@ -40613,9 +40512,9 @@ aa
 aa
 aB
 bn
+FR
 bq
-db
-PD
+cq
 ee
 He
 eR
@@ -40814,7 +40713,7 @@ aq
 aa
 aa
 aB
-dc
+aB
 bS
 cp
 cp
@@ -41016,8 +40915,8 @@ aq
 aa
 aa
 aB
-bQ
-bq
+aB
+UP
 cp
 Al
 dB
@@ -41218,9 +41117,9 @@ aq
 aa
 aa
 aB
-ia
+aB
+QH
 bR
-cs
 Cl
 dC
 eN
@@ -41420,8 +41319,8 @@ ag
 aa
 aB
 aB
-bq
-bq
+aB
+Ia
 aN
 de
 aN
@@ -41621,8 +41520,8 @@ af
 af
 aB
 aB
-aM
-br
+aB
+aB
 aN
 aN
 df
