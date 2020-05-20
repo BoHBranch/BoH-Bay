@@ -872,6 +872,16 @@
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "deertail_mark"
 
+
+/datum/sprite_accessory/tail/special/tajaran
+	name = "tajaran tail"
+	desc = ""
+	icon_state = "tajtail_loop1"
+	ani_state = "tajtail_loop1"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+
 /*
 //For all species tails. Includes haircolored tails.
 /datum/sprite_accessory/tail/special
@@ -885,12 +895,7 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
-/datum/sprite_accessory/tail/special/tajaran
-	name = "tajaran tail"
-	desc = ""
-	icon_state = "tajtail_s"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY
+
 
 /datum/sprite_accessory/tail/special/sergal
 	name = "sergal tail"
