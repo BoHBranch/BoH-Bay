@@ -1,6 +1,6 @@
 /obj/item/device/gps
-	name = "relay positioning device"
-	desc = "Triangulates the approximate co-ordinates using a nearby satellite network."
+	name = "dispositivo de retraso posicional"
+	desc = "Triangula las coordenadas aproximadas utilizando una red de satelite cercana."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "locator"
 	item_state = "locator"
@@ -9,11 +9,11 @@
 	w_class = ITEM_SIZE_SMALL
 
 /obj/item/device/gps/attack_self(var/mob/user as mob)
-	to_chat(user, "<span class='notice'>\icon[src] \The [src] flashes <i>[get_coordinates()]</i>.</span>")
+	to_chat(user, "<span class='notice'>\icon[src] \ El [src] destella <i>[get_coordinates()]</i>.</span>")
 
 /obj/item/device/gps/examine(mob/user)
 	. = ..()
-	to_chat(user, "<span class='notice'>\The [src]'s screen shows: <i>[get_coordinates()]</i>.</span>")
+	to_chat(user, "<span class='notice'>\ El [src] muestra en pantalla: <i>[get_coordinates()]</i>.</span>")
 
 /obj/item/device/gps/proc/get_coordinates()
 	var/turf/T = get_turf(src)
@@ -27,8 +27,8 @@
 			stat("Coordinates:", "[L.get_coordinates()]")
 
 /obj/item/device/measuring_tape
-	name = "measuring tape"
-	desc = "A coiled metallic tape used to check dimensions and lengths."
+	name = "cinta metrica"
+	desc = "Una cinta metalica enrollada utilziada para verificar dimensiones y longitudes."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "measuring"
 	origin_tech = list(TECH_MATERIAL = 1)
@@ -36,8 +36,8 @@
 	w_class = ITEM_SIZE_SMALL
 
 /obj/item/weapon/storage/bag/fossils
-	name = "fossil satchel"
-	desc = "Transports delicate fossils in suspension so they don't break during transit."
+	name = "bolso de fosiles"
+	desc = "Transporta delicados fosiles en suspencion para que no se rompan durante el camino"
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "satchel"
 	slot_flags = SLOT_BELT | SLOT_POCKET
@@ -48,8 +48,8 @@
 	can_hold = list(/obj/item/weapon/fossil)
 
 /obj/item/weapon/storage/box/samplebags
-	name = "sample bag box"
-	desc = "A box claiming to contain sample bags."
+	name = "caja de bolsas de muestra"
+	desc = "Una caja que dice contener bolsas de muestra."
 
 /obj/item/weapon/storage/box/samplebags/New()
 	..()
@@ -60,7 +60,7 @@
 
 /obj/item/device/ano_scanner
 	name = "\improper Alden-Saraspova counter"
-	desc = "A device which aids in triangulation of exotic particles."
+	desc = "Un dispositivo que ayuda en la triangulacion de particulas exoticas."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "flashgun"
 	item_state = "lampgreen"
@@ -107,17 +107,17 @@
 				SSxenoarch.digsite_spawning_turfs.Remove(T)
 
 		if(nearestTargetDist >= 0)
-			to_chat(user, "Exotic energy detected on wavelength '[nearestTargetId]' in a radius of [nearestTargetDist]m[nearestSimpleTargetDist > 0 ? "; small anomaly detected in a radius of [nearestSimpleTargetDist]m" : ""]")
+			to_chat(user, "Energia exotica detectada en logitud de onda '[nearestTargetId]' en un radio de [nearestTargetDist]m[nearestSimpleTargetDist > 0 ? "; small anomaly detected in a radius of [nearestSimpleTargetDist]m" : ""]")
 		else if(nearestSimpleTargetDist >= 0)
-			to_chat(user, "Small anomaly detected in a radius of [nearestSimpleTargetDist]m.")
+			to_chat(user, "Pequeña anomalia detectada en un radio de [nearestSimpleTargetDist]m.")
 		else
-			to_chat(user, "Background radiation levels detected.")
+			to_chat(user, "Niveles bajos de radiacion detectados.")
 	else
-		to_chat(user, "Scanning array is recharging.")
+		to_chat(user, "La matriz de escaneo se esta recargando.")
 
 /obj/item/device/depth_scanner
-	name = "depth analysis scanner"
-	desc = "A device used to check spatial depth and density of rock outcroppings."
+	name = "escaner de analisis de profundidad"
+	desc = "Dispositivo utilizado para verificar la profundidad espacial y la densidad de los afloramientos rocosos."
 	icon = 'icons/obj/pda.dmi'
 	icon_state = "crap"
 	item_state = "analyzer"
@@ -138,7 +138,7 @@
 	var/material = "unknown"
 
 /obj/item/device/depth_scanner/proc/scan_atom(var/mob/user, var/atom/A)
-	user.visible_message("<span class='notice'>\The [user] scans \the [A], the air around them humming gently.</span>")
+	user.visible_message("<span class='notice'>\ [user] escanea \ el [A], el aire al rededor de esto tararea suavemente.</span>")
 
 	if(istype(A, /turf/simulated/mineral))
 		var/turf/simulated/mineral/M = A
@@ -184,36 +184,36 @@
 	interact(user)
 
 /obj/item/device/depth_scanner/interact(var/mob/user as mob)
-	var/dat = "<b>Coordinates with positive matches</b><br>"
+	var/dat = "<b>Coordenadas con coincidencias positivas.</b><br>"
 
 	dat += "<A href='?src=\ref[src];clear=0'>== Clear all ==</a><br>"
 
 	if(current)
-		dat += "Time: [current.time]<br>"
-		dat += "Coords: [current.coords]<br>"
-		dat += "Anomaly depth: [current.depth] cm<br>"
-		dat += "Anomaly size: [current.clearance] cm<br>"
-		dat += "Dissonance spread: [current.dissonance_spread]<br>"
+		dat += "Tiempo: [current.time]<br>"
+		dat += "Coordenadas: [current.coords]<br>"
+		dat += "Profundidad de la anomalia: [current.depth] cm<br>"
+		dat += "Tamaño de la anomalia: [current.clearance] cm<br>"
+		dat += "Difusion de disonancia: [current.dissonance_spread]<br>"
 		var/index = responsive_carriers.Find(current.material)
 		if(index > 0 && index <= finds_as_strings.len)
-			dat += "Anomaly material: [finds_as_strings[index]]<br>"
+			dat += "Material de la anomalia: [finds_as_strings[index]]<br>"
 		else
-			dat += "Anomaly material: Unknown<br>"
-		dat += "<A href='?src=\ref[src];clear=[current.record_index]'>clear entry</a><br>"
+			dat += "Material de la anomalia: Unknown<br>"
+		dat += "<A href='?src=\ref[src];clear=[current.record_index]'>Borrar entrada</a><br>"
 	else
-		dat += "Select an entry from the list<br>"
+		dat += "Seleccione una entrada de la lista<br>"
 		dat += "<br><br><br><br>"
 	dat += "<hr>"
 	if(positive_locations.len)
 		for(var/index = 1 to positive_locations.len)
 			var/datum/depth_scan/D = positive_locations[index]
-			dat += "<A href='?src=\ref[src];select=[index]'>[D.time], coords: [D.coords]</a><br>"
+			dat += "<A href='?src=\ref[src];select=[index]'>[D.time], coordenadas: [D.coords]</a><br>"
 	else
-		dat += "No entries recorded."
+		dat += "No se registraron entradas."
 
 	dat += "<hr>"
-	dat += "<A href='?src=\ref[src];refresh=1'>Refresh</a><br>"
-	dat += "<A href='?src=\ref[src];close=1'>Close</a><br>"
+	dat += "<A href='?src=\ref[src];refresh=1'>Actualizar</a><br>"
+	dat += "<A href='?src=\ref[src];close=1'>Cerrar</a><br>"
 	user << browse(dat,"window=depth_scanner;size=300x500")
 	onclose(user, "depth_scanner")
 
@@ -241,8 +241,8 @@
 
 //Radio beacon locator
 /obj/item/weapon/pinpointer/radio
-	name = "locator device"
-	desc = "Used to scan and locate signals on a particular frequency."
+	name = "dispositivo localizador"
+	desc = "Utilizado para escanear y localizar señales en una frencuencia particular."
 	var/tracking_freq = PUB_FREQ
 	matter = list(MATERIAL_ALUMINIUM = 1000, MATERIAL_GLASS = 500)
 
@@ -263,11 +263,11 @@
 	interact(user)
 
 /obj/item/weapon/pinpointer/radio/interact(var/mob/user)
-	var/dat = "<b>Radio frequency tracker</b><br>"
+	var/dat = "<b>Rastrador de radiofrecuencia</b><br>"
 	dat += {"
-				Tracking: <A href='byond://?src=\ref[src];toggle=1'>[active ? "Enabled" : "Disabled"]</A><BR>
-				<A href='byond://?src=\ref[src];reset_tracking=1'>Reset tracker</A><BR>
-				Frequency:
+				Rastreo: <A href='byond://?src=\ref[src];toggle=1'>[active ? "Enabled" : "Disabled"]</A><BR>
+				<A href='byond://?src=\ref[src];reset_tracking=1'>Reiniciar rastreador</A><BR>
+				Frecuencia:
 				<A href='byond://?src=\ref[src];freq=-10'>-</A>
 				<A href='byond://?src=\ref[src];freq=-2'>-</A>
 				[format_frequency(tracking_freq)]

@@ -6,3 +6,5 @@
 #define RUIN_WRECK 		8		//crashed vessel
 #define RUIN_NATURAL	16		//naturally occuring structure
 #define RUIN_WATER 		32		//ruin depending on planet having water accessible
+#define RUIN_SYNDI		64		//syndicate ruins
+#define RUIN_RUSSIAN	128		//russian ruins

@@ -101,7 +101,7 @@
 			if(affected)
 				affected.implants += imp
 				imp.part = affected
-			to_chat(H, SPAN_DANGER("As a registered psionic, you are fitted with a psi-dampening control implant. Using psi-power while the implant is active will result in neural shocks and your violation being reported."))
+			to_chat(H, SPAN_DANGER("Como un psionico registrado, usted esta equipado con un implante de control de amortiguacion psionica. Usar el poder psionico mientras el implante esta activado resultara en shocks neuronales y en tu violacion siendo reportada."))
 
 	var/decl/hierarchy/outfit/outfit = get_outfit(H, alt_title, branch, grade)
 	if(outfit) . = outfit.equip(H, title, alt_title)
@@ -147,13 +147,13 @@
 	var/datum/money_account/M = create_account("[H.real_name]'s account", H.real_name, money_amount)
 	if(H.mind)
 		var/remembered_info = ""
-		remembered_info += "<b>Your account number is:</b> #[M.account_number]<br>"
-		remembered_info += "<b>Your account pin is:</b> [M.remote_access_pin]<br>"
-		remembered_info += "<b>Your account funds are:</b> [GLOB.using_map.local_currency_name_short][M.money]<br>"
+		remembered_info += "<b>El numero de tu cuenta es:</b> #[M.account_number]<br>"
+		remembered_info += "<b>El PIN de tu cuenta es:</b> [M.remote_access_pin]<br>"
+		remembered_info += "<b>Los fondos de tu cuenta son:</b> [GLOB.using_map.local_currency_name_short][M.money]<br>"
 
 		if(M.transaction_log.len)
 			var/datum/transaction/T = M.transaction_log[1]
-			remembered_info += "<b>Your account was created:</b> [T.time], [T.date] at [T.get_source_name()]<br>"
+			remembered_info += "<b>Tu cuenta ha sido creada:</b> [T.time], [T.date] en [T.get_source_name()]<br>"
 		H.StoreMemory(remembered_info, /decl/memory_options/system)
 		H.mind.initial_account = M
 
@@ -205,27 +205,27 @@
 
 
 	if(!isnull(allowed_branches) && (!prefs.branches[title] || !is_branch_allowed(prefs.branches[title])))
-		to_chat(feedback, "<span class='boldannounce'>Wrong branch of service for [title]. Valid branches are: [get_branches()].</span>")
+		to_chat(feedback, "<span class='boldannounce'>Rama de servicio equivocada para [title]. Ramas validas son: [get_branches()].</span>")
 		return TRUE
 
 	if(!isnull(allowed_ranks) && (!prefs.ranks[title] || !is_rank_allowed(prefs.branches[title], prefs.ranks[title])))
-		to_chat(feedback, "<span class='boldannounce'>Wrong rank for [title]. Valid ranks in [prefs.branches[title]] are: [get_ranks(prefs.branches[title])].</span>")
+		to_chat(feedback, "<span class='boldannounce'>Rango equivocado para [title]. Rangos validos en [prefs.branches[title]] son: [get_ranks(prefs.branches[title])].</span>")
 		return TRUE
 
 	var/datum/species/S = all_species[prefs.species]
 	if(!is_species_allowed(S))
-		to_chat(feedback, "<span class='boldannounce'>Restricted species, [S], for [title].</span>")
+		to_chat(feedback, "<span class='boldannounce'>Especie restringida, [S], para [title].</span>")
 		return TRUE
 
 	if(LAZYACCESS(minimum_character_age, S.get_bodytype()) && (prefs.age < minimum_character_age[S.get_bodytype()]))
-		to_chat(feedback, "<span class='boldannounce'>Not old enough. Minimum character age is [minimum_character_age[S.get_bodytype()]].</span>")
+		to_chat(feedback, "<span class='boldannounce'>No lo suficientemente viejo. La minima edad del personaje es [minimum_character_age[S.get_bodytype()]].</span>")
 		return TRUE
 
 	if(!S.check_background(src, prefs))
-		to_chat(feedback, "<span class='boldannounce'>Incompatible background for [title].</span>")
+		to_chat(feedback, "<span class='boldannounce'>Background incompatible para [title].</span>")
 		return TRUE
 	if(caller && !has_job_whitelist(caller, src))
-		to_chat(feedback, "<span class='boldannounce'>[title] is whitelisted.</span>")
+		to_chat(feedback, "<span class='boldannounce'>[title] es whitelisteado.</span>")
 		return TRUE
 
 	return FALSE
@@ -364,25 +364,25 @@
 /datum/job/proc/get_unavailable_reasons(var/client/caller)
 	var/list/reasons = list()
 	if(jobban_isbanned(caller, title))
-		reasons["You are jobbanned."] = TRUE
+		reasons["Estas jobbaneado."] = TRUE
 	if(!has_job_whitelist(caller, src)) //This is fine.
-		reasons["You are not whitelisted for this job."] = TRUE
+		reasons["No estas whitelisteado para este trabajo."] = TRUE
 	if(is_semi_antagonist && jobban_isbanned(caller, MODE_MISC_AGITATOR))
-		reasons["You are semi-antagonist banned."] = TRUE
+		reasons["Tu estas baneado de semi-antagonista."] = TRUE
 	if(!player_old_enough(caller))
-		reasons["Your player age is too low."] = TRUE
+		reasons["La edad de tu personaje es muy baja."] = TRUE
 	if(!is_position_available())
-		reasons["There are no positions left."] = TRUE
+		reasons["No hay posiciones disponibles."] = TRUE
 	if(!isnull(allowed_branches) && (!caller.prefs.branches[title] || !is_branch_allowed(caller.prefs.branches[title])))
-		reasons["Your branch of service does not allow it."] = TRUE
+		reasons["Tu rama de servicio no lo permite."] = TRUE
 	else if(!isnull(allowed_ranks) && (!caller.prefs.ranks[title] || !is_rank_allowed(caller.prefs.branches[title], caller.prefs.ranks[title])))
-		reasons["Your rank choice does not allow it."] = TRUE
+		reasons["Tu eleccion de rango no lo permite."] = TRUE
 	var/datum/species/S = all_species[caller.prefs.species]
 	if(S)
 		if(!is_species_allowed(S))
-			reasons["Your species choice does not allow it."] = TRUE
+			reasons["Tu eleccion de especie no lo permite."] = TRUE
 		if(!S.check_background(src, caller.prefs))
-			reasons["Your background choices do not allow it."] = TRUE
+			reasons["Tu eleccion de background no lo permite."] = TRUE
 	if(LAZYLEN(reasons))
 		. = reasons
 

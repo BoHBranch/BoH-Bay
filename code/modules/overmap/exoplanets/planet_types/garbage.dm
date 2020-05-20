@@ -45,12 +45,12 @@
 	descriptor = "garbage exoplanet"
 	smoothing_iterations = 4
 	land_type = /turf/simulated/floor/exoplanet/desert
-	flora_prob = 1
-	large_flora_prob = 0
-	flora_diversity = 2
-	fauna_types = list(/mob/living/simple_animal/hostile/hivebot, /mob/living/simple_animal/hostile/hivebot/range, /mob/living/simple_animal/hostile/viscerator/hive)
-	fauna_prob = 4
-	megafauna_types = list(/mob/living/simple_animal/hostile/hivebot/mega)
+	flora_prob = 8
+	large_flora_prob = 4
+	flora_diversity = 4
+	fauna_types = list(/mob/living/simple_animal/hostile/syndicate/melee, /mob/living/simple_animal/hostile/syndicate/ranged)
+	fauna_prob = 6
+	megafauna_types = list(/mob/living/simple_animal/hostile/mech)
 	var/fallout = 0
 
 /datum/random_map/noise/exoplanet/garbage/New(var/seed, var/tx, var/ty, var/tz, var/tlx, var/tly, var/do_not_apply, var/do_not_announce, var/never_be_priority = 0)

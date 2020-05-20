@@ -15,7 +15,7 @@
 	var/is_rummaging = 0
 
 /obj/structure/rubble/New()
-	if(prob(emptyprob)) 
+	if(prob(emptyprob))
 		lootleft = 0
 	..()
 
@@ -63,7 +63,7 @@
 		is_rummaging = 0
 	else
 		to_chat(user, "<span class='warning'>Someone is already rummaging here!</span>")
-		
+
 /obj/structure/rubble/attackby(var/obj/item/I, var/mob/user)
 	if (istype(I, /obj/item/weapon/pickaxe))
 		var/obj/item/weapon/pickaxe/P = I
@@ -74,7 +74,7 @@
 				var/obj/item/booty = pickweight(loot)
 				booty = new booty(loc)
 			qdel(src)
-	else 
+	else
 		..()
 		health -= I.force
 		if(health < 1)
@@ -116,3 +116,11 @@
 	/obj/item/weapon/archaeological_find/laser,
 	/obj/item/weapon/archaeological_find/sword,
 	/obj/item/weapon/archaeological_find/katana)
+
+/obj/structure/rubble/wartorn
+	emptyprob = 15
+	loot = list(/obj/item/weapon/archaeological_find/knife,
+	/obj/item/weapon/gun/projectile/heavysniper/boltaction,
+	/obj/item/weapon/gun/projectile/revolver/holdout,
+	/obj/item/weapon/gun/projectile/manualcycle/imprifle,
+	/obj/item/weapon/gun/magnetic)

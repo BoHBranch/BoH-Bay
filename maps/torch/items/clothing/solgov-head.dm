@@ -152,7 +152,7 @@
 
 /obj/item/clothing/head/solgov/dress/fleet/command
 	name = "fleet officer's dress wheel cover"
-	desc = "A white dress uniform cover. This one has a gold stripe and NT's Expeditionar Fleet crest."
+	desc = "A white dress uniform cover. This one has a gold stripe and NT's Expeditionary Fleet crest."
 	icon_state = "whitepeakcap_com"
 
 /obj/item/clothing/head/solgov/dress/army

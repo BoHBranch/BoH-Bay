@@ -5,7 +5,7 @@
 	total_positions = 0 // Not used for AI, see is_position_available below and modules/mob/living/silicon/ai/latejoin.dm
 	spawn_positions = 1
 	selection_color = "#3f823f"
-	supervisors = "your laws"
+	supervisors = "tus leyes"
 	req_admin_notify = 1
 	minimal_player_age = 14
 	account_allowed = 0
@@ -31,7 +31,7 @@
 	department_flag = MSC
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "your laws and the AI"
+	supervisors = "tus leyes y la IA"
 	selection_color = "#254c25"
 	minimal_player_age = 7
 	account_allowed = 0

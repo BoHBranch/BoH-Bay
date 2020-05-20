@@ -1,6 +1,6 @@
 /obj/machinery/artifact_scanpad
-	name = "Anomaly Scanner Pad"
-	desc = "Place things here for scanning."
+	name = "Panel escaneador de anomalias"
+	desc = "Coloque las cosas aqui para escanear."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "xenoarch_scanner"
 	anchored = 1

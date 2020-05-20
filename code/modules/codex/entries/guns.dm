@@ -2,10 +2,10 @@
 	var/general_codex_key = "armas de fuego"
 
 /obj/item/weapon/gun/projectile
-	general_codex_key = "armas balísticas"
+	general_codex_key = "armas balisticas"
 
 /obj/item/weapon/gun/energy
-	general_codex_key = "armas de energía"
+	general_codex_key = "armas de energia"
 
 /obj/item/weapon/gun/get_antag_info()
 	var/list/entries = SScodex.retrieve_entries_for_string(general_codex_key)
@@ -38,10 +38,10 @@
 		traits += "Esta equipado con un chip de registración segura. Pasale una ID para registrarla."
 
 	if(scope_zoom)
-		traits += "Tiene una mira óptica. Se puede alternar con el verbo Usar mira."
+		traits += "Tiene una mira optica. Se puede alternar con el verbo Usar mira."
 
 	if(LAZYLEN(firemodes) > 1)
-		traits += "Tiene múltiples modos de fuego. Clickea en tu mano para rotar entre ellos."
+		traits += "Tiene multiples modos de fuego. Clickea en tu mano para rotar entre ellos."
 
 	return jointext(traits, "<br>")
 
@@ -72,7 +72,7 @@
 	. = ..()
 	var/list/traits = list()
 
-	traits += "<br>Su capacidad maxima es de [max_shots] disparos en cuanto a energía."
+	traits += "<br>Su capacidad maxima es de [max_shots] disparos en cuanto a energia."
 
 	if(self_recharge)
 		traits += "Se recarga sola con el tiempo."
@@ -105,8 +105,8 @@
 /datum/codex_entry/ballistic_weapons
 	display_name = "ballistic weapons"
 	mechanics_text = "Esta arma es balistica; dispara proyectiles solidos usando un cartucho o municion cargada a mano. Puedes \
-		descargarla agarrandola y clickeandola con una mano vacía, y recargarla clickeandola con un cartucho, o en el caso de las\
-		escopetas o algunos rifles, abriendo la récamara y clickeandola con rondas individuales.\
+		descargarla agarrandola y clickeandola con una mano vacia, y recargarla clickeandola con un cartucho, o en el caso de las\
+		escopetas o algunos rifles, abriendo la recamara y clickeandola con rondas individuales.\
 		<br><br>"
 	lore_text = "Las armas balisticas son aun usadas por el precio y dificultad de mantenimiento relativo de armas laser estandar \
 		wy por el potencial bruto de cartuchos fisicos. Usar un arma balistica en un entorno espacial es considerado un riesgo serio,\

@@ -20,10 +20,10 @@
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
 
-	description = "This is a genemodded species - either human or some of established ones. It can also work as \
-	subspecies or hybrid of some sorts. Here you can assign various gene traits to them as you wish, to create \
-	a (hopefully) balanced genemodder. You will see the options to customize them on the Genemods tab once \
-	you select and set this species as your species, so please, look into here if you select this."
+	description = "Este es una especia modificada geneticamente - puede ser humano o una raza pre-establecida. Puede ser tambien \
+	una sub-especie o un hibrido de alguna forma u otra. Aqui puedes asignar varios rasgos geneticos como desees, para crear \
+	un personaje modificador genetico balanceado. Puedes ver estas opciones en la ventana de Genemods cuando selecciones \
+	esto y selecciones especie personalizada como tu especie."
 
 	min_age = 18
 	max_age = 200
