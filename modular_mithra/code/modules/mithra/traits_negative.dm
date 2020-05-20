@@ -21,13 +21,13 @@
 
 /datum/trait/minor_brute_weak
 	name = "Piel delicada"
-	desc = "Tu piel es mas delicada de lo normal, haciendote un poco mas susceptible al daño bruto."
+	desc = "Tu piel es mas delicada de lo normal, haciendote un poco mas suseptible al daño bruto."
 	cost = -2
 	var_changes = list("brute_mod" = 1.50)
 
 /datum/trait/minor_burn_weak
 	name = "Piel inflamable"
-	desc = "Tu piel de alguna manera es inflamable, haciendote un poco mas susceptible al daño por quemaduras."
+	desc = "Tu piel de alguna manera es inflamable, haciendote un poco mas suseptible al daño por quemaduras."
 	cost = -2
 	var_changes = list("burn_mod" = 1.50)
 

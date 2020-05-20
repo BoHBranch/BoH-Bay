@@ -1,5 +1,4 @@
 language: generic
-sudo: false
 dist: xenial
 jdk: openjdk8
 
@@ -10,7 +9,7 @@ env:
 
 # ALL MAPS MUST BE PRESENT HERE
 # IF THEY ARE NOT, YOUR BUILD WILL FAIL
-matrix:
+jobs:
     include:
     - name: "Code"
       env: TEST=CODE

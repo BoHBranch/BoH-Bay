@@ -1,6 +1,6 @@
 /obj/item/organ/internal/eyes/unathi
-	name = "reptilian eyes"
-	desc = "Eyes belonging to a big lizard. They seem to be staring right at you no matter where you look from."
+	name = "ojos reptilianos"
+	desc = "Ojos provenientes de un lagarto grande. Parece estar mirandote sin importar desde donde mires."
 	icon = 'icons/mob/human_races/species/unathi/organs.dmi'
 	eye_icon = 'icons/mob/human_races/species/unathi/eyes.dmi'
 
