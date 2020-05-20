@@ -225,7 +225,7 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 
 /decl/surgery_step/robotics/repair_brute/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("[user] begins to patch damage to [target]'s [affected.name]'s support structure con \the [tool]." , \
+	user.visible_message("[user] empieza a remendar el daño de [target] en [affected.name]'s support structure con \the [tool]." , \
 	"You begin to patch damage to [target]'s [affected.name]'s support structure con \the [tool].")
 	..()
 
