@@ -3,6 +3,7 @@
 	desc = "Una carta de UNO."
 	icon = 'icons/obj/uno.dmi'
 	icon_state = "uno"
+	w_class = ITEM_SIZE_TINY
 	var/flip_icon = null
 	var/flip_name = null
 
@@ -28,6 +29,7 @@
 	use_to_pickup = TRUE
 	allow_quick_gather = TRUE
 	allow_quick_empty = TRUE
+	w_class = ITEM_SIZE_SMALL
 
 /obj/item/weapon/storage/bag/uno/New()
 	..()
@@ -35,15 +37,21 @@
 	for(var/j in 1 to 13)
 		new /obj/item/weapon/storage/bag/cardholder(src)
 
+/obj/item/weapon/storage/bag/uno/attack_self(mob/user as mob)
+	return
+
 /obj/item/weapon/storage/bag/cardholder
 	name = "portacartas"
 	desc = "Un portacartas de UNO."
 	icon = 'icons/obj/uno.dmi'
 	icon_state = "holder_e"
+	w_class = ITEM_SIZE_TINY
 
 /obj/item/weapon/storage/bag/cardholder/withcards
 	icon_state = "holder_f" // One starts with cards to be used as the initial deck.
 
+/obj/item/weapon/storage/bag/cardholder/attack_self(mob/user as mob)
+	return
 
 /obj/item/weapon/storage/bag/cardholder/MouseDrop(atom/over_object)
 	var/mob/M = usr
