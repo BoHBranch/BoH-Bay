@@ -1456,7 +1456,7 @@
 	sound_env = LARGE_ENCLOSED
 	req_access = list(access_atmospherics)
 
-// Medical
+// Medical.
 /area/medical/chemistry
 	name = "\improper Chemistry"
 	icon_state = "chem"
