@@ -30,12 +30,7 @@
 	allow_quick_gather = TRUE
 	allow_quick_empty = TRUE
 	w_class = ITEM_SIZE_SMALL
-
-/obj/item/weapon/storage/bag/uno/Initialize()
-	..()
-	new /obj/item/weapon/storage/bag/cardholder/withcards(src)
-	for(var/j in 1 to 6)
-		new /obj/item/weapon/storage/bag/cardholder(src)
+	startswith = list(/obj/item/weapon/storage/bag/cardholder/withcards = 1, /obj/item/weapon/storage/bag/cardholder = 6)
 
 /obj/item/weapon/storage/bag/uno/attack_self(mob/user as mob)
 	return
