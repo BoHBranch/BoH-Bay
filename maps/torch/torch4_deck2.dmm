@@ -10661,6 +10661,9 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/structure/table/rack/shelf,
+/obj/random/illegal,
+/obj/random/toolbox,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/central)
 "tH" = (
@@ -12192,6 +12195,14 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/escape_pod5/station)
+"yb" = (
+/obj/machinery/suit_storage_unit/medical,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "yf" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/incinerator)
@@ -13218,6 +13229,12 @@
 "Bc" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/seconddeck/aftport)
+"Be" = (
+/obj/structure/table/rack/shelf,
+/obj/random/storage,
+/obj/random/gloves,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/seconddeck/central)
 "Bh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/wall/ocp_wall,
@@ -15823,15 +15840,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
-"IO" = (
-/obj/machinery/alarm{
-	alarm_id = "petrov1";
-	dir = 4;
-	icon_state = "alarm0";
-	pixel_x = -24
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "IR" = (
 /obj/structure/grille,
 /turf/simulated/floor/airless,
@@ -16454,6 +16462,15 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
+"Lx" = (
+/obj/machinery/alarm{
+	alarm_id = "petrov1";
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "LD" = (
 /obj/effect/floor_decal/corner/yellow{
 	icon_state = "corner_white";
@@ -16464,6 +16481,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
+"LH" = (
+/obj/structure/grille,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/seconddeck/central)
 "LK" = (
 /obj/structure/sign/warning/secure_area,
 /turf/simulated/wall/r_wall/prepainted,
@@ -18903,14 +18924,6 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/seconddeck)
-"UL" = (
-/obj/machinery/suit_storage_unit/medical,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "UM" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 32
@@ -39530,8 +39543,8 @@ aa
 aa
 aC
 tG
-dY
-dY
+Be
+LH
 Jk
 ee
 eR
@@ -40134,7 +40147,7 @@ aa
 aa
 aB
 nb
-IO
+Lx
 bq
 cq
 ee
@@ -40540,7 +40553,7 @@ aB
 bn
 zn
 bq
-UL
+yb
 ee
 He
 eR
