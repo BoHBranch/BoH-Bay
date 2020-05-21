@@ -22847,19 +22847,6 @@
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
 /area/assembly/robotics)
-"kyr" = (
-/obj/effect/floor_decal/borderfloorblack{
-	icon_state = "borderfloor_white";
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/beige{
-	dir = 6
-	},
-/obj/structure/closet/crate/freezer,
-/obj/item/device/mmi,
-/obj/item/device/mmi,
-/turf/simulated/floor/tiled/dark,
-/area/medical/surgery2)
 "kyt" = (
 /obj/effect/floor_decal/techfloor,
 /obj/effect/floor_decal/techfloor{
@@ -24059,6 +24046,19 @@
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
 /area/medical/lounge)
+"mcj" = (
+/obj/effect/floor_decal/borderfloorblack{
+	icon_state = "borderfloor_white";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/beige{
+	dir = 6
+	},
+/obj/structure/closet/crate/freezer,
+/obj/item/device/mmi,
+/obj/item/device/mmi,
+/turf/simulated/floor/tiled/dark,
+/area/medical/surgery2)
 "mcA" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -25709,6 +25709,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/medical/centerhall)
 "oeb" = (
@@ -50077,7 +50078,7 @@ bNt
 jhq
 oei
 abk
-kyr
+mcj
 aej
 agI
 oei
