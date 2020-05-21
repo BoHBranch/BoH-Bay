@@ -19433,13 +19433,11 @@
 	pixel_y = -36;
 	req_access = list("ACCESS_MEDICAL")
 	},
-/obj/machinery/button/alternate/door{
-	desc = "A remote control switch for the medbay triage.";
-	id_tag = "triage";
+/obj/machinery/button/blast_door{
 	name = "Triage Shutter Control";
 	pixel_x = -6;
 	pixel_y = -36;
-	req_access = list("ACCESS_MEDICAL")
+	id_tag = "triage"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmreception)
@@ -19918,6 +19916,19 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/medical/centerhall)
+"gEP" = (
+/obj/effect/floor_decal/borderfloorblack{
+	icon_state = "borderfloor_white";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/beige{
+	dir = 6
+	},
+/obj/structure/closet/crate/freezer,
+/obj/item/device/mmi,
+/obj/item/device/mmi,
+/turf/simulated/floor/tiled/dark,
+/area/medical/surgery2)
 "gGd" = (
 /obj/machinery/atmospherics/unary/freezer{
 	icon_state = "freezer";
@@ -21576,8 +21587,7 @@
 "iRw" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
-	external_pressure_bound = 202;
-	external_pressure_bound_default = 202
+	frequency = 1331
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/medical/morgue)
@@ -25172,19 +25182,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/teleporter/firstdeck)
-"nEi" = (
-/obj/effect/floor_decal/borderfloorblack{
-	icon_state = "borderfloor_white";
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/beige{
-	dir = 6
-	},
-/obj/structure/closet/crate/freezer,
-/obj/item/device/mmi,
-/obj/item/device/mmi,
-/turf/simulated/floor/tiled/dark,
-/area/medical/surgery2)
 "nEB" = (
 /obj/effect/wallframe_spawn/reinforced/polarized/no_grille{
 	id = "recovery1"
@@ -50078,7 +50075,7 @@ bNt
 jhq
 oei
 abk
-nEi
+gEP
 aej
 agI
 oei
