@@ -258,3 +258,7 @@
 	crosstype["cross, plata"] = /obj/item/weapon/material/cross/silver
 	crosstype["cross, oro"] = /obj/item/weapon/material/cross/gold
 	gear_tweaks += new/datum/gear_tweak/path(crosstype)
+
+/datum/gear/uno
+	display_name = "baraja de UNO"
+	path = /obj/item/weapon/storage/bag/uno

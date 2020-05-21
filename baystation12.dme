@@ -1837,6 +1837,7 @@
 #include "code\modules\games\cards.dm"
 #include "code\modules\games\spaceball_cards.dm"
 #include "code\modules\games\tarot.dm"
+#include "code\modules\games\uno.dm"
 #include "code\modules\ghosttrap\trap.dm"
 #include "code\modules\goals\_goal.dm"
 #include "code\modules\goals\goal_ambition.dm"
