@@ -1,0 +1,8 @@
+<h1>Bienvenido a Space Station 13!</h1>
+
+-<i>Este servidor corre el codigo de Bastion of Hestia, parte del codigo de <a href="http://baystation12.net/">Baystation 12's</a> una modificacion de  <a href="http://ss13.eu/">/tg/station13</a>.</i>
+<br><br>
+
+- <i>El servidor de discord es: https://discord.gg/dkUJqXZ</i>
+
+- <i>THIS IS A SPANISH SPEAKER SERVER, BE AWARE OF IT AND TRY TO RESPECT OTHERS</i>

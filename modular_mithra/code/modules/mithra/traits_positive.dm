@@ -3,14 +3,14 @@
 */
 
 /datum/trait/speed_fast
-	name = "Agil"
-	desc = "Te mueves mas rapido que los demas."
+	name = "Agile"
+	desc = "You can move faster than everyone else."
 	cost = 4
 	var_changes = list("slowdown" = -0.5)
 
 /datum/trait/darksight
 	name = "Tapeta Lucida"
-	desc = "Tus ojos tienen una pequeña capa retroreflectante dentro de su estructura, haciendo que puedas ver en la oscuridad un poco mejor."
+	desc = "Your eyes have a marginally retroreflective layer within their strucuture, allowing you to see slightly better in the dark."
 	cost = 1
 	var_changes = list("darksight_range" = 3, "darksight_tint" = DARKTINT_MODERATE)
 
@@ -23,7 +23,7 @@
 
 /datum/trait/darksight_plus
 	name = "Tapeta Lucida Majoris"
-	desc = "Tus ojos tienen una capa retroreflectante dentro de su estructura, haciendo que puedas ver en la oscuridad mejor."
+	desc = "Your eyes have a retroreflective layer within their strucuture, allowing you to see much better in the dark."
 	cost = 2
 	var_changes = list("darksight_range" = 6, "darksight_tint" = DARKTINT_GOOD)
 
@@ -36,13 +36,13 @@
 
 /datum/trait/nonconductive
 	name = "Piel resistiva"
-	desc = "Su piel tiene una resistividad electrica mas alta de lo normal, lo que lo hace menos conductor."
+	desc = "Su piel tiene una resistividad eléctrica mas alta de lo normal, lo que lo hace menos conductor."
 	cost = 2 //This effects tasers!
 	var_changes = list("siemens_coefficient" = 0.75)
 
 /datum/trait/melee_attack
-	name = "Garras"
-	desc = "Tienes garras. Las usas en combate mano a mano."
+	name = "Rending Claws"
+	desc = "You have claws. You use them in unarmed combat."
 	cost = 2
 	var_changes = list("unarmed_types" = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/claws, /datum/unarmed_attack/bite/sharp))
 
@@ -52,38 +52,38 @@
 			S.unarmed_attacks += new u_type()
 
 /datum/trait/minor_brute_resist
-	name = "Piel gruesa"
-	desc = "Tu piel es mas gruesa de lo normal, haciendo que seas menos susceptible al daño fisico."
+	name = "Thick Skin"
+	desc = "Your skin is thicker than normal, making you slightly more resistant to physical damage."
 	cost = 2
 	var_changes = list("brute_mod" = 0.85)
 
 /datum/trait/minor_burn_resist
-	name = "Piel insulada"
-	desc = "Tu piel de alguna manera es insulada, haciendo que seas mas resistente al calor."
+	name = "Insulated Skin"
+	desc = "You skin is somehow insulated, making you slightly more resistant to burns."
 	cost = 2
 	var_changes = list("burn_mod" = 0.85)
 
 /datum/trait/photoresistant
 	name = "Phototransductive Praesidium"
-	desc = "Tus ojos son mas resistentes a las luces fuertes."
+	desc = "Your eyes are slightly more resillient against bright lights."
 	cost = 1
 	var_changes = list("flash_mod" = 0.85)
 
 /datum/trait/oxy_resist
 	name = "Haemoglobin Melior"
-	desc = "Puedes aguantar mas la asfixia por la saturacion de oxigeno en tu torrente sanguineo."
+	desc = "You can last a bit longer while aphyxiating due to higher blood-oxygen saturation."
 	cost = 1
 	var_changes = list("oxy_mod" = 0.75)
 
 /datum/trait/toxin_resist
-	name = "Higado de hierro"
-	desc = "Tu metabolismo procesa las toxinas mas eficientemente, haciendo que seas mas resistente a las posiones o toxinas."
+	name = "Iron Liver"
+	desc = "Your metabolism processes toxins more efficiently, making you slightly more resistant to poisonings."
 	cost = 1
 	var_changes = list("toxins_mod" = 0.85)
 
 /datum/trait/mussel
-	name = "Hipertrofia muscular"
-	desc = "Tienes mas masa muscular de lo normal, dejandote tener mas fuerza."
+	name = "Muscular Hypertrophy"
+	desc = "You have higher muscle mass than normal, giving you greater strength."
 	cost = 4
 	var_changes = list("strength" = STR_HIGH)
 
@@ -92,16 +92,16 @@
 /////////////////////
 
 /datum/trait/commune
-	name = "Telepatia"
-	desc = "Tienes la habilidad de proyectar tus pensamientos en la mente de los demas."
+	name = "Telepathy"
+	desc = "Quite simply, you've the ability to project thoughts into the minds of others. A weak psychic manifestation too minor to require action from the local authorities, unlikely to ever develop into something greater."
 	cost = 2
 /datum/trait/commune/apply(var/datum/species/S,var/mob/living/carbon/human/H)
 	..(S,H)
 	H.verbs |= /mob/living/carbon/human/proc/psychic_whisper
 
 /datum/trait/venom
-	name = "Venenoso"
-	desc = "Tienes varios metodos para injectar veneno en combate mano a mano."
+	name = "Venomous"
+	desc = "You've various methods of injecting venom when in unarmed combat."
 	cost = 4
 	var_changes = list("unarmed_types" = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch/venom, /datum/unarmed_attack/bite/venom))
 

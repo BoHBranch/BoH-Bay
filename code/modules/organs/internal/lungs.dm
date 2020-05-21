@@ -1,5 +1,5 @@
 /obj/item/organ/internal/lungs
-	name = "lungs"
+	name = "pulmones"
 	icon_state = "lungs"
 	gender = PLURAL
 	organ_tag = BP_LUNGS
@@ -51,7 +51,7 @@
 
 /obj/item/organ/internal/lungs/robotize()
 	. = ..()
-	icon_state = "lungs-prosthetic"
+	icon_state = "pulmones-protesis"
 
 /obj/item/organ/internal/lungs/set_dna(var/datum/dna/new_dna)
 	..()
@@ -84,26 +84,26 @@
 		if(prob(3))
 			if(active_breathing)
 				owner.visible_message(
-					"<B>\The [owner]</B> coughs up blood!",
-					"<span class='warning'>You cough up blood!</span>",
-					"You hear someone coughing!",
+					"<B>\The [owner]</B> tose sangre!",
+					"<span class='warning'>Toses sangre!</span>",
+					"Escuchas a alguien toser!",
 				)
 			else
 				var/obj/item/organ/parent = owner.get_organ(parent_organ)
 				owner.visible_message(
-					"blood drips from <B>\the [owner]'s</B> [parent.name]!",
+					"sangre gotea de <B>\the [owner]'s</B> [parent.name]!",
 				)
 
 			owner.drip(rand(1,3))
 		if(prob(3))
 			if(active_breathing)
 				owner.visible_message(
-					"<B>\The [owner]</B> gasps for air!",
-					"<span class='danger'>You can't breathe!</span>",
-					"You hear someone gasp for air!",
+					"<B>\The [owner]</B> jadea por aire!",
+					"<span class='danger'>No puedes respirar!</span>",
+					"Escuchas a alguien jadear por aire!",
 				)
 			else
-				to_chat(owner, "<span class='danger'>You're having trouble getting enough [breath_type]!</span>")
+				to_chat(owner, "<span class='danger'>Tienes problemas para obtener suficiente [breath_type]!</span>")
 
 			owner.losebreath = max(owner.losebreath, round(damage/4))
 
@@ -115,7 +115,7 @@
 /obj/item/organ/internal/lungs/proc/rupture()
 	var/obj/item/organ/external/parent = owner.get_organ(parent_organ)
 	if(istype(parent))
-		owner.custom_pain("You feel a stabbing pain in your [parent.name]!", 50, affecting = parent)
+		owner.custom_pain("Sientes un dolor punzante en tu [parent.name]!", 50, affecting = parent)
 	bruise()
 
 //exposure to extreme pressures can rupture lungs
@@ -172,7 +172,7 @@
 			if(inhale_efficiency < 0.8)
 				owner.emote("gasp")
 			else if(prob(20))
-				to_chat(owner, SPAN_WARNING("It's hard to breathe..."))
+				to_chat(owner, SPAN_WARNING("Es dificil respirar..."))
 		breath_fail_ratio = 1 - inhale_efficiency
 		failed_inhale = 1
 	else
@@ -251,7 +251,7 @@
 		var/damage = 0
 		if(breath.temperature <= species.cold_level_1)
 			if(prob(20))
-				to_chat(owner, "<span class='danger'>You feel your face freezing and icicles forming in your lungs!</span>")
+				to_chat(owner, "<span class='danger'>Sientes como tu cara se enfria y se forman carambanos en tus pulmones!</span>")
 			switch(breath.temperature)
 				if(species.cold_level_3 to species.cold_level_2)
 					damage = COLD_GAS_DAMAGE_LEVEL_3
@@ -267,7 +267,7 @@
 			owner.fire_alert = 1
 		else if(breath.temperature >= species.heat_level_1)
 			if(prob(20))
-				to_chat(owner, "<span class='danger'>You feel your face burning and a searing heat in your lungs!</span>")
+				to_chat(owner, "<span class='danger'>Sientes como tu cara arde y un calor abrasador en tus pulmones!</span>")
 
 			switch(breath.temperature)
 				if(species.heat_level_1 to species.heat_level_2)

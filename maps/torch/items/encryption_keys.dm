@@ -26,7 +26,7 @@
 /obj/item/device/encryptionkey/headset_deckofficer
 	name = "deck chief's encryption key"
 	icon_state = "qm_cypherkey"
-	channels = list("Supply" = 1, "Command" = 1, "Exploration" = 1)
+	channels = list("Supply" = 1, "Command" = 1, "Exploration" = 1, "Infantry" = 1)
 
 /obj/item/device/encryptionkey/bridgeofficer
 	name = "bridge officer's encryption key"
@@ -79,4 +79,4 @@
 /obj/item/device/encryptionkey/heads/sea
 	name = "senior enlisted advisor's encryption key"
 	icon_state = "com_cypherkey"
-	channels = list("Command" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1)
+	channels = list("Command" = 1, "Infantry" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1)

@@ -33,7 +33,7 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 //	 unscrew robotic limb hatch surgery step
 //////////////////////////////////////////////////////////////////
 /decl/surgery_step/robotics/unscrew_hatch
-	name = "Unscrew maintenance hatch"
+	name = "Desatornillar cubierta de mantenimiento"
 	allowed_tools = list(
 		/obj/item/weapon/screwdriver = 100,
 		/obj/item/weapon/material/coin = 50,
@@ -49,14 +49,14 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 
 /decl/surgery_step/robotics/unscrew_hatch/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("[user] starts to unscrew the maintenance hatch on [target]'s [affected.name] with \the [tool].", \
-	"You start to unscrew the maintenance hatch on [target]'s [affected.name] with \the [tool].")
+	user.visible_message("[user] empieza a desatornillar la cubierta de mantenimiento de [target] en [affected.name] con \the [tool].", \
+	"empieza a desatornillar la cubierta de mantenimiento de [target] en [affected.name] con \the [tool].")
 	..()
 
 /decl/surgery_step/robotics/unscrew_hatch/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("<span class='notice'>[user] has opened the maintenance hatch on [target]'s [affected.name] with \the [tool].</span>", \
-	"<span class='notice'>You have opened the maintenance hatch on [target]'s [affected.name] with \the [tool].</span>",)
+	user.visible_message("<span class='notice'>[user] abrio la cubierta de mantenimiento de [target] en [affected.name] con \the [tool].</span>", \
+	"<span class='notice'>Has abierto la cubierta de mantenimiento de [target] en [affected.name] con \the [tool].</span>",)
 	affected.hatch_state = HATCH_UNSCREWED
 
 /decl/surgery_step/robotics/unscrew_hatch/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
@@ -84,14 +84,14 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 
 /decl/surgery_step/robotics/screw_hatch/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("[user] starts to screw down the maintenance hatch on [target]'s [affected.name] with \the [tool].", \
-	"You start to screw down the maintenance hatch on [target]'s [affected.name] with \the [tool].")
+	user.visible_message("[user] starts to screw down the maintenance hatch on [target]'s [affected.name] con \the [tool].", \
+	"You start to screw down the maintenance hatch on [target]'s [affected.name] con \the [tool].")
 	..()
 
 /decl/surgery_step/robotics/screw_hatch/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("<span class='notice'>[user] has screwed down the maintenance hatch on [target]'s [affected.name] with \the [tool].</span>", \
-	"<span class='notice'>You have screwed down the maintenance hatch on [target]'s [affected.name] with \the [tool].</span>",)
+	user.visible_message("<span class='notice'>[user] has screwed down the maintenance hatch on [target]'s [affected.name] con \the [tool].</span>", \
+	"<span class='notice'>You have screwed down the maintenance hatch on [target]'s [affected.name] con \the [tool].</span>",)
 	affected.hatch_state = HATCH_CLOSED
 
 /decl/surgery_step/robotics/screw_hatch/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
@@ -120,14 +120,14 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 
 /decl/surgery_step/robotics/open_hatch/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("[user] starts to pry open the maintenance hatch on [target]'s [affected.name] with \the [tool].",
-	"You start to pry open the maintenance hatch on [target]'s [affected.name] with \the [tool].")
+	user.visible_message("[user] starts to pry open the maintenance hatch on [target]'s [affected.name] con \the [tool].",
+	"You start to pry open the maintenance hatch on [target]'s [affected.name] con \the [tool].")
 	..()
 
 /decl/surgery_step/robotics/open_hatch/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("<span class='notice'>[user] opens the maintenance hatch on [target]'s [affected.name] with \the [tool].</span>", \
-	 "<span class='notice'>You open the maintenance hatch on [target]'s [affected.name] with \the [tool].</span>")
+	user.visible_message("<span class='notice'>[user] opens the maintenance hatch on [target]'s [affected.name] con \the [tool].</span>", \
+	 "<span class='notice'>You open the maintenance hatch on [target]'s [affected.name] con \the [tool].</span>")
 	affected.hatch_state = HATCH_OPENED
 
 /decl/surgery_step/robotics/open_hatch/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
@@ -156,14 +156,14 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 
 /decl/surgery_step/robotics/close_hatch/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("[user] begins to close the hatch on [target]'s [affected.name] with \the [tool]." , \
-	"You begin to close the hatch on [target]'s [affected.name] with \the [tool].")
+	user.visible_message("[user] begins to close the hatch on [target]'s [affected.name] con \the [tool]." , \
+	"You begin to close the hatch on [target]'s [affected.name] con \the [tool].")
 	..()
 
 /decl/surgery_step/robotics/close_hatch/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("<span class='notice'>[user] closes the hatch on [target]'s [affected.name] with \the [tool].</span>", \
-	"<span class='notice'>You close the hatch on [target]'s [affected.name] with \the [tool].</span>")
+	user.visible_message("<span class='notice'>[user] closes the hatch on [target]'s [affected.name] con \the [tool].</span>", \
+	"<span class='notice'>You close the hatch on [target]'s [affected.name] con \the [tool].</span>")
 	affected.hatch_state = HATCH_UNSCREWED
 	affected.germ_level = 0
 
@@ -225,14 +225,14 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 
 /decl/surgery_step/robotics/repair_brute/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("[user] begins to patch damage to [target]'s [affected.name]'s support structure with \the [tool]." , \
-	"You begin to patch damage to [target]'s [affected.name]'s support structure with \the [tool].")
+	user.visible_message("[user] empieza a remendar el daño de [target] en [affected.name]'s support structure con \the [tool]." , \
+	"You begin to patch damage to [target]'s [affected.name]'s support structure con \the [tool].")
 	..()
 
 /decl/surgery_step/robotics/repair_brute/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("<span class='notice'>[user] finishes patching damage to [target]'s [affected.name] with \the [tool].</span>", \
-	"<span class='notice'>You finish patching damage to [target]'s [affected.name] with \the [tool].</span>")
+	user.visible_message("<span class='notice'>[user] finishes patching damage to [target]'s [affected.name] con \the [tool].</span>", \
+	"<span class='notice'>You finish patching damage to [target]'s [affected.name] con \the [tool].</span>")
 	affected.heal_damage(rand(30,50),0,1,1)
 	affected.status &= ~ORGAN_DISFIGURED
 
@@ -283,7 +283,7 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 //	robotic limb burn damage repair surgery step
 //////////////////////////////////////////////////////////////////
 /decl/surgery_step/robotics/repair_burn
-	name = "Repair burns on prosthetic"
+	name = "Reparar quemaduras en la protesis"
 	allowed_tools = list(
 		/obj/item/stack/cable_coil = 100,
 		/obj/item/weapon/wirecutters = 35
@@ -302,7 +302,7 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
 	if(affected)
 		if(!affected.burn_dam)
-			to_chat(user, SPAN_WARNING("There is no damage to repair."))
+			to_chat(user, SPAN_WARNING("No hay daño para reparar."))
 			return FALSE
 		if(BP_IS_BRITTLE(affected))
 			to_chat(user, SPAN_WARNING("\The [target]'s [affected.name] is too brittle for this kind of repair."))
@@ -390,14 +390,14 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	for(var/obj/item/organ/I in affected.internal_organs)
 		if(I && I.damage > 0)
 			if(BP_IS_ROBOTIC(I))
-				user.visible_message("<span class='notice'>[user] repairs [target]'s [I.name] with [tool].</span>", \
-				"<span class='notice'>You repair [target]'s [I.name] with [tool].</span>" )
+				user.visible_message("<span class='notice'>[user] repairs [target]'s [I.name] con [tool].</span>", \
+				"<span class='notice'>You repair [target]'s [I.name] con [tool].</span>" )
 				I.damage = 0
 
 /decl/surgery_step/robotics/fix_organ_robotic/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
-	user.visible_message("<span class='warning'>[user]'s hand slips, gumming up the mechanisms inside of [target]'s [affected.name] with \the [tool]!</span>", \
-	"<span class='warning'>Your hand slips, gumming up the mechanisms inside of [target]'s [affected.name] with \the [tool]!</span>")
+	user.visible_message("<span class='warning'>[user]'s hand slips, gumming up the mechanisms inside of [target]'s [affected.name] con \the [tool]!</span>", \
+	"<span class='warning'>Your hand slips, gumming up the mechanisms inside of [target]'s [affected.name] con \the [tool]!</span>")
 	target.adjustToxLoss(5)
 	affected.createwound(CUT, 5)
 	for(var/internal in affected.internal_organs)
@@ -431,13 +431,13 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		return organ_to_remove
 
 /decl/surgery_step/robotics/detatch_organ_robotic/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
-	user.visible_message("[user] starts to decouple [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] with \the [tool].", \
-	"You start to decouple [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] with \the [tool]." )
+	user.visible_message("[user] starts to decouple [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] con \the [tool].", \
+	"You start to decouple [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] con \the [tool]." )
 	..()
 
 /decl/surgery_step/robotics/detatch_organ_robotic/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
-	user.visible_message("<span class='notice'>[user] has decoupled [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] with \the [tool].</span>" , \
-	"<span class='notice'>You have decoupled [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] with \the [tool].</span>")
+	user.visible_message("<span class='notice'>[user] has decoupled [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] con \the [tool].</span>" , \
+	"<span class='notice'>You have decoupled [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] con \the [tool].</span>")
 
 	var/obj/item/organ/internal/I = target.internal_organs_by_name[LAZYACCESS(target.surgeries_in_progress, target_zone)]
 	if(I && istype(I))
@@ -477,15 +477,15 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	return organ_to_replace
 
 /decl/surgery_step/robotics/attach_organ_robotic/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
-	user.visible_message("[user] begins reattaching [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] with \the [tool].", \
-	"You start reattaching [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] with \the [tool].")
+	user.visible_message("[user] begins reattaching [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] con \the [tool].", \
+	"You start reattaching [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] con \the [tool].")
 	..()
 
 /decl/surgery_step/robotics/attach_organ_robotic/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/I = LAZYACCESS(target.surgeries_in_progress, target_zone)
 
-	user.visible_message("<span class='notice'>[user] has reattached [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] with \the [tool].</span>" , \
-	"<span class='notice'>You have reattached [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] with \the [tool].</span>")
+	user.visible_message("<span class='notice'>[user] has reattached [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] con \the [tool].</span>" , \
+	"<span class='notice'>You have reattached [target]'s [LAZYACCESS(target.surgeries_in_progress, target_zone)] con \the [tool].</span>")
 
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
 	if(istype(I) && I.parent_organ == target_zone && affected && (I in affected.implants))
@@ -495,13 +495,13 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 
 /decl/surgery_step/robotics/attach_organ_robotic/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	user.visible_message("<span class='warning'>[user]'s hand slips, disconnecting \the [tool].</span>", \
-	"<span class='warning'>Your hand slips, disconnecting \the [tool].</span>")
+	"<span class='warning'>Tus manos resbalan, desconectando \the [tool].</span>")
 
 //////////////////////////////////////////////////////////////////
 //	mmi installation surgery step
 //////////////////////////////////////////////////////////////////
 /decl/surgery_step/robotics/install_mmi
-	name = "Install MMI"
+	name = "Instalar MMI"
 	allowed_tools = list(
 		/obj/item/device/mmi = 100
 	)
@@ -514,13 +514,13 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
 	if(affected && istype(M))
 		if(!M.brainmob || !M.brainmob.client || !M.brainmob.ckey || M.brainmob.stat >= DEAD)
-			to_chat(user, SPAN_WARNING("That brain is not usable."))
+			to_chat(user, SPAN_WARNING("Ese cerebro no es usable."))
 		else if(BP_IS_CRYSTAL(affected))
-			to_chat(user, SPAN_WARNING("The crystalline interior of \the [affected] is incompatible with \the [M]."))
+			to_chat(user, SPAN_WARNING("La cristalina interior de \the [affected] es incompatible con \the [M]."))
 		else if(!target.isSynthetic())
 			to_chat(user, SPAN_WARNING("You cannot install a computer brain into a meat body."))
 		else if(!target.should_have_organ(BP_BRAIN))
-			to_chat(user, SPAN_WARNING("You're pretty sure [target.species.name_plural] don't normally have a brain."))
+			to_chat(user, SPAN_WARNING("Estas muy seguro de que normalmente [target.species.name_plural] no tienen cerebro."))
 		else if(target.internal_organs[BP_BRAIN])
 			to_chat(user, SPAN_WARNING("Your subject already has a brain."))
 		else
@@ -593,8 +593,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 /decl/surgery_step/remove_mmi/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
 	user.visible_message( \
-	"\The [user] starts poking around inside [target]'s [affected.name] with \the [tool].", \
-	"You start poking around inside [target]'s [affected.name] with \the [tool]." )
+	"\The [user] starts poking around inside [target]'s [affected.name] con \the [tool].", \
+	"You start poking around inside [target]'s [affected.name] con \the [tool]." )
 	target.custom_pain("The pain in your [affected.name] is living hell!",1,affecting = affected)
 	..()
 
@@ -604,17 +604,17 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		var/obj/item/device/mmi/mmi = locate() in affected.implants
 		if(affected && mmi)
 			user.visible_message( \
-			SPAN_NOTICE("\The [user] removes \the [mmi] from \the [target]'s [affected.name] with \the [tool]."), \
-			SPAN_NOTICE("You  remove \the [mmi] from \the [target]'s [affected.name] with \the [tool]."))
+			SPAN_NOTICE("\The [user] removes \the [mmi] from \the [target]'s [affected.name] con \the [tool]."), \
+			SPAN_NOTICE("You  remove \the [mmi] from \the [target]'s [affected.name] con \the [tool]."))
 			target.remove_implant(mmi, TRUE, affected)
 		else
 			user.visible_message( \
-			SPAN_NOTICE("\The [user] could not find anything inside [target]'s [affected.name]."), \
-			SPAN_NOTICE("You could not find anything inside [target]'s [affected.name]."))
+			SPAN_NOTICE("\The [user] no pudo encontrar nada dentro de [target] [affected.name]."), \
+			SPAN_NOTICE("No encontraste nada dentro de [target]'s [affected.name]."))
 
 /decl/surgery_step/remove_mmi/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
 	user.visible_message( \
-	SPAN_WARNING("\The [user]'s hand slips, damaging \the [target]'s [affected.name] with \the [tool]!"), \
-	SPAN_WARNING("Your hand slips, damaging \the [target]'s [affected.name] with \the [tool]!"))
+	SPAN_WARNING("Las manos de \The [user] resbalan, dañando \the [target]  [affected.name] con \the [tool]!"), \
+	SPAN_WARNING("Tus manos resbalan, dañando \the [target]'s [affected.name] con \the [tool]!"))
 	affected.take_external_damage(3, 0, used_weapon = tool)

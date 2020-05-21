@@ -1,8 +1,6 @@
 #if !defined(using_map_DATUM)
 	#include "bearcat_unit_testing.dm"
 
-	#include "../../code/datums/music_tracks/businessend.dm"
-	#include "../../code/datums/music_tracks/salutjohn.dm"
 
 	#include "../away/unishi/unishi.dm"
 

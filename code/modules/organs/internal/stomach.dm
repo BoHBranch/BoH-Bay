@@ -1,8 +1,8 @@
 #define PUKE_ACTION_NAME "Empty Stomach"
 
 /obj/item/organ/internal/stomach
-	name = "stomach"
-	desc = "Gross. This is hard to stomach."
+	name = "estomago"
+	desc = "Grotesto. Esto es dificil de soportar."
 	icon_state = "stomach"
 	dead_icon = "stomach"
 	organ_tag = BP_STOMACH
@@ -91,9 +91,9 @@
 /obj/item/organ/internal/stomach/proc/metabolize()
 	if(is_usable())
 		ingested.metabolize()
-	
+
 #define STOMACH_VOLUME 65
-	
+
 /obj/item/organ/internal/stomach/Process()
 	..()
 
@@ -118,17 +118,17 @@
 
 		else if(world.time >= next_cramp)
 			next_cramp = world.time + rand(200,800)
-			owner.custom_pain("Your stomach cramps agonizingly!",1)
+			owner.custom_pain("Tu estomago sufre de calambres agonizantes!",1)
 
 		var/alcohol_volume = ingested.get_reagent_amount(/datum/reagent/ethanol)
-		
+
 		var/alcohol_threshold_met = alcohol_volume > STOMACH_VOLUME / 2
 		if(alcohol_threshold_met && (owner.disabilities & EPILEPSY) && prob(20))
 			owner.seizure()
-		
+
 		// Alcohol counts as double volume for the purposes of vomit probability
 		var/effective_volume = ingested.total_volume + alcohol_volume
-		
+
 		// Just over the limit, the probability will be low. It rises a lot such that at double ingested it's 64% chance.
 		var/vomit_probability = (effective_volume / STOMACH_VOLUME) ** 6
 		if(prob(vomit_probability))

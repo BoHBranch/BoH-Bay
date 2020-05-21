@@ -81,7 +81,7 @@
 		"Surgeon")
 	total_positions = 1
 	spawn_positions = 1
-	hud_icon = "hudmedicaldoctor"
+	hud_icon = "huddoctormedico"
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
@@ -96,7 +96,7 @@
 	title = "First Mate"
 	supervisors = "the Captain and the Merchant Code"
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/mate
-	hud_icon = "hudheadofpersonnel"
+	hud_icon = "hudjefedepersonal"
 	min_skill = list(   SKILL_WEAPONS     = SKILL_BASIC,
 	                    SKILL_FINANCE     = SKILL_EXPERT,
 	                    SKILL_BUREAUCRACY = SKILL_ADEPT,
@@ -115,14 +115,14 @@
 		"Cook" = /decl/hierarchy/outfit/job/bearcat/hand/cook,
 		"Cargo Hand",
 		"Passenger")
-	hud_icon = "hudcargotechnician"
+	hud_icon = "hudtecnicodecargo"
 
 /datum/job/engineer
 	title = "Junior Engineer"
 	supervisors = "Chief Engineer"
 	total_positions = 2
 	spawn_positions = 2
-	hud_icon = "hudengineer"
+	hud_icon = "hudingeniero"
 	min_skill = list(   SKILL_COMPUTER     = SKILL_BASIC,
 	                    SKILL_EVA          = SKILL_BASIC,
 	                    SKILL_CONSTRUCTION = SKILL_ADEPT,

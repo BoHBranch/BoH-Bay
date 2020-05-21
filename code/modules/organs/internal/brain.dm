@@ -1,6 +1,6 @@
 /obj/item/organ/internal/brain
-	name = "brain"
-	desc = "A piece of juicy meat found in a person's head."
+	name = "cerebro"
+	desc = "Un pedazo de carne jugosa encontrado en la cabeza de una persona."
 	organ_tag = BP_BRAIN
 	parent_organ = BP_HEAD
 	vital = 1
@@ -11,7 +11,7 @@
 	throw_speed = 3
 	throw_range = 5
 	origin_tech = list(TECH_BIO = 3)
-	attack_verb = list("attacked", "slapped", "whacked")
+	attack_verb = list("atacado", "abofeteado", "agotado")
 	relative_size = 85
 	damage_reduction = 0
 	can_be_printed = FALSE
@@ -42,7 +42,7 @@
 
 /obj/item/organ/internal/brain/robotize()
 	. = ..()
-	icon_state = "brain-prosthetic"
+	icon_state = "protesis cerebral"
 
 /obj/item/organ/internal/brain/New(var/mob/living/carbon/holder)
 	..()
@@ -75,15 +75,15 @@
 	if(H.mind)
 		H.mind.transfer_to(brainmob)
 
-	to_chat(brainmob, "<span class='notice'>You feel slightly disoriented. That's normal when you're just \a [initial(src.name)].</span>")
+	to_chat(brainmob, "<span class='notice'>Te sientes un poco desorientado. Es normal cuando eres solo un \a [initial(src.name)].</span>")
 	callHook("debrain", list(brainmob))
 
 /obj/item/organ/internal/brain/examine(mob/user)
 	. = ..()
 	if(brainmob && brainmob.client)//if thar be a brain inside... the brain.
-		to_chat(user, "You can feel the small spark of life still left in this one.")
+		to_chat(user, "Puedes sentir una pequeña chispa de vida que le queda")
 	else
-		to_chat(user, "This one seems particularly lifeless. Perhaps it will regain some of its luster later..")
+		to_chat(user, "Este particularmente parece sin vida. Quizas recupere algo de chispa mas tarde.")
 
 /obj/item/organ/internal/brain/removed(var/mob/living/user)
 	if(!istype(owner))
@@ -128,18 +128,18 @@
 /obj/item/organ/internal/brain/proc/handle_severe_brain_damage()
 	set waitfor = FALSE
 	healed_threshold = 0
-	to_chat(owner, "<span class = 'notice' font size='10'><B>Where am I...?</B></span>")
+	to_chat(owner, "<span class = 'notice' font size='10'><B>Donde estoy...?</B></span>")
 	sleep(5 SECONDS)
 	if(!owner)
 		return
-	to_chat(owner, "<span class = 'notice' font size='10'><B>What's going on...?</B></span>")
+	to_chat(owner, "<span class = 'notice' font size='10'><B>Que esta pasando?...</B></span>")
 	sleep(10 SECONDS)
 	if(!owner)
 		return
-	to_chat(owner, "<span class = 'notice' font size='10'><B>What happened...?</B></span>")
-	alert(owner, "You have taken massive brain damage! You will not be able to remember the events leading up to your injury.", "Brain Damaged")
+	to_chat(owner, "<span class = 'notice' font size='10'><B>Que ha pasado?</B></span>")
+	alert(owner, "Has recibido demasiado dano cerebral! No podras recordar los eventos que te llevaron a la lesion.", "Cerebro dañado")
 	if(owner.psi)
-		owner.psi.check_latency_trigger(50, "physical trauma")
+		owner.psi.check_latency_trigger(50, "trauma fisico")
 
 /obj/item/organ/internal/brain/Process()
 	if(owner)
@@ -174,7 +174,7 @@
 						damage = max(damage-1, 0)
 				if(BLOOD_VOLUME_OKAY to BLOOD_VOLUME_SAFE)
 					if(prob(1))
-						to_chat(owner, "<span class='warning'>You feel [pick("dizzy","woozy","faint")]...</span>")
+						to_chat(owner, "<span class='warning'>You feel [pick("mareado","aturdido","debil")]...</span>")
 					damprob = owner.chem_effects[CE_STABLE] ? 30 : 60
 					if(!past_damage_threshold(4) && prob(damprob))
 						take_internal_damage(1)
@@ -185,7 +185,7 @@
 						take_internal_damage(1)
 					if(!owner.paralysis && prob(10))
 						owner.Paralyse(rand(1,3))
-						to_chat(owner, "<span class='warning'>You feel extremely [pick("dizzy","woozy","faint")]...</span>")
+						to_chat(owner, "<span class='warning'>You feel extremely [pick("mareado","aturdido","debil")]...</span>")
 				if(BLOOD_VOLUME_SURVIVE to BLOOD_VOLUME_BAD)
 					owner.eye_blurry = max(owner.eye_blurry,6)
 					damprob = owner.chem_effects[CE_STABLE] ? 60 : 100
@@ -193,7 +193,7 @@
 						take_internal_damage(2)
 					if(!owner.paralysis && prob(15))
 						owner.Paralyse(3,5)
-						to_chat(owner, "<span class='warning'>You feel extremely [pick("dizzy","woozy","faint")]...</span>")
+						to_chat(owner, "<span class='warning'>You feel extremely [pick("mareado","aturdido","debil")]...</span>")
 				if(-(INFINITY) to BLOOD_VOLUME_SURVIVE) // Also see heart.dm, being below this point puts you into cardiac arrest.
 					owner.eye_blurry = max(owner.eye_blurry,6)
 					damprob = owner.chem_effects[CE_STABLE] ? 80 : 100
@@ -223,7 +223,7 @@
 		owner.Weaken(round((damage_secondary * 2), 1))
 
 /obj/item/organ/internal/brain/proc/brain_damage_callback(var/damage) //Confuse them as a somewhat uncommon aftershock. Side note: Only here so a spawn isn't used. Also, for the sake of a unique timer.
-	to_chat(owner, "<span class = 'notice' font size='10'><B>I can't remember which way is forward...</B></span>")
+	to_chat(owner, "<span class = 'notice' font size='10'><B>No recuerdo en que direccion se encuentra...</B></span>")
 	owner.confused += damage
 
 /obj/item/organ/internal/brain/proc/handle_disabilities()
@@ -237,7 +237,7 @@
 			if(1)
 				owner.emote("twitch")
 			if(2 to 3)
-				owner.say("[prob(50) ? ";" : ""][pick("SHIT", "PISS", "FUCK", "CUNT", "COCKSUCKER", "MOTHERFUCKER", "TITS")]")
+				owner.say("[prob(50) ? ";" : ""][pick("MIERDA", "PIS", "JODER", "COÑO", "CHUPAPOLLAS", "HIJO DE PUTA", "TETAS")]")
 		owner.make_jittery(100)
 	else if((owner.disabilities & NERVOUS) && prob(10))
 		owner.stuttering = max(10, owner.stuttering)
@@ -246,24 +246,24 @@
 	if(owner.stat)
 		return
 	if(damage > 0 && prob(1))
-		owner.custom_pain("Your head feels numb and painful.",10)
+		owner.custom_pain("Tu cabeza se siente entumecida y dolorida.",10)
 	if(is_bruised() && prob(1) && owner.eye_blurry <= 0)
-		to_chat(owner, "<span class='warning'>It becomes hard to see for some reason.</span>")
+		to_chat(owner, "<span class='warning'>Se esta haciendo dificil de ver por alguna razon.</span>")
 		owner.eye_blurry = 10
 	if(damage >= 0.5*max_damage && prob(1) && owner.get_active_hand())
-		to_chat(owner, "<span class='danger'>Your hand won't respond properly, and you drop what you are holding!</span>")
+		to_chat(owner, "<span class='danger'>Tu mano no respondera correctamente, y soltaras lo que estas tomando!</span>")
 		owner.unequip_item()
 	if(damage >= 0.6*max_damage)
 		owner.slurring = max(owner.slurring, 2)
 	if(is_broken())
 		if(!owner.lying)
-			to_chat(owner, "<span class='danger'>You black out!</span>")
+			to_chat(owner, "<span class='danger'>Te desmayas!</span>")
 		owner.Paralyse(10)
 
 /obj/item/organ/internal/brain/surgical_fix(mob/user)
 	var/blood_volume = owner.get_blood_oxygenation()
 	if(blood_volume < BLOOD_VOLUME_SURVIVE)
-		to_chat(user, "<span class='danger'>Parts of [src] didn't survive the procedure due to lack of air supply!</span>")
+		to_chat(user, "<span class='danger'>Partes del [src] no sobrevivieron al procedimiento debido a la falda del suministro de aire!</span>")
 		set_max_damage(Floor(max_damage - 0.25*damage))
 	heal_damage(damage)
 
@@ -274,8 +274,8 @@
 	return "machine-interface [name]"
 
 /obj/item/organ/internal/pariah_brain
-	name = "brain remnants"
-	desc = "Did someone tread on this? It looks useless for cloning or cyborgification."
+	name = "restos cerebrales"
+	desc = "Alguien piso esto? Parece algo inutil para la clonacion o borgificacion"
 	organ_tag = BP_BRAIN
 	parent_organ = BP_HEAD
 	icon = 'icons/obj/alien.dmi'

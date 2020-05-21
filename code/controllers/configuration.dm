@@ -57,7 +57,7 @@ var/list/gamemode_cache = list()
 	var/allow_random_events = 0			// enables random events mid-round when set to 1
 	var/allow_ai = 1					// allow ai job
 	var/hostedby = null
-	var/respawn_delay = 30
+	var/respawn_delay = 15
 	var/guest_jobban = 1
 	var/usewhitelist = 0
 	var/kick_inactive = 0				//force disconnect for inactive players after this many minutes, if non-0
@@ -241,8 +241,8 @@ var/list/gamemode_cache = list()
 	var/act_interval = 0.1 SECONDS //Interval for spam prevention.
 
 	var/job_whitelist = FALSE //Do we use the job whitelist? Set to false so devs don't have to set config options.
-	var/panic_bunker = FALSE //is the panic bunker enabled?
-	var/panic_bunker_message = "Sorry! The panic bunker is enabled. Please head to our discord to get yourself added to the panic bunker bypass."
+	var/panic_bunker = TRUE //is the panic bunker enabled?
+	var/panic_bunker_message = "Perdon! La whitelist esta activada. Por favor, ingresa a nuestro discord para pedir acceso."
 	var/delist_population = 50 //What population do we automatically take ourselves off to hub at?
 	var/pb_population = 70 //What population do we automatically engage the panic bunker at?
 	var/announce_gamemode = FALSE //Do we annouce the game mode or not?
@@ -817,7 +817,7 @@ var/list/gamemode_cache = list()
 					fail2topic_rule_name = value
 				if ("fail2topic_enabled")
 					fail2topic_enabled = text2num(value)
-				
+
 				if ("show_gamemode_vote")
 					show_gamemode_vote = text2num(value)
 

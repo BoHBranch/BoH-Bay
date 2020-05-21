@@ -2,6 +2,7 @@
 	sort_category = "Sombreros y Accesorios de Cabeza"
 	slot = slot_head
 	category = /datum/gear/head
+	banned_species = list(SPECIES_PLASMASANS)
 
 /datum/gear/head/beret
 	display_name = "boina, coloreable"
