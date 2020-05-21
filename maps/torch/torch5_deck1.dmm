@@ -644,8 +644,9 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/button/alternate/door{
 	id_tag = "trauma";
-	pixel_x = 22;
-	pixel_y = -21
+	name = "Trauma Center Exit";
+	pixel_x = 24;
+	pixel_y = -22
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -3776,6 +3777,7 @@
 	pixel_y = -6
 	},
 /obj/machinery/button/holosign{
+	name = "Surgery Sign";
 	pixel_x = -21;
 	pixel_y = -6
 	},
@@ -17091,9 +17093,10 @@
 	pixel_y = 24
 	},
 /obj/machinery/button/holosign{
+	id_tag = "operating1";
+	name = "Surgery Sign";
 	pixel_x = 10;
-	pixel_y = 24;
-	id_tag = "operating1"
+	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
@@ -19625,9 +19628,9 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/item/robot_rack/roller,
-/obj/item/robot_rack/roller,
-/obj/item/robot_rack/roller,
+/obj/item/roller,
+/obj/item/roller,
+/obj/item/roller,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "gnC" = (
@@ -19916,19 +19919,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/medical/centerhall)
-"gEP" = (
-/obj/effect/floor_decal/borderfloorblack{
-	icon_state = "borderfloor_white";
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/beige{
-	dir = 6
-	},
-/obj/structure/closet/crate/freezer,
-/obj/item/device/mmi,
-/obj/item/device/mmi,
-/turf/simulated/floor/tiled/dark,
-/area/medical/surgery2)
 "gGd" = (
 /obj/machinery/atmospherics/unary/freezer{
 	icon_state = "freezer";
@@ -22857,6 +22847,19 @@
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
 /area/assembly/robotics)
+"kyr" = (
+/obj/effect/floor_decal/borderfloorblack{
+	icon_state = "borderfloor_white";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/beige{
+	dir = 6
+	},
+/obj/structure/closet/crate/freezer,
+/obj/item/device/mmi,
+/obj/item/device/mmi,
+/turf/simulated/floor/tiled/dark,
+/area/medical/surgery2)
 "kyt" = (
 /obj/effect/floor_decal/techfloor,
 /obj/effect/floor_decal/techfloor{
@@ -23193,6 +23196,7 @@
 	icon_state = "crit";
 	dir = 10
 	},
+/obj/structure/bed/roller,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/triage)
 "kRb" = (
@@ -25703,11 +25707,8 @@
 /area/rnd/entry)
 "odQ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4;
-	external_pressure_bound = 202;
-	external_pressure_bound_default = 202
+	dir = 4
 	},
-/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/medical/centerhall)
 "oeb" = (
@@ -30669,6 +30670,7 @@
 	dir = 8;
 	pixel_x = 24
 	},
+/obj/structure/coatrack,
 /turf/simulated/floor/wood/walnut,
 /area/medical/lounge)
 "vIP" = (
@@ -50075,7 +50077,7 @@ bNt
 jhq
 oei
 abk
-gEP
+kyr
 aej
 agI
 oei
