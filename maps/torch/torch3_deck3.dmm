@@ -15726,14 +15726,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
-"GE" = (
-/obj/structure/table/standard,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/item/weapon/storage/bag/uno,
-/turf/simulated/floor/wood/maple,
-/area/crew_quarters/mess)
 "GF" = (
 /obj/effect/floor_decal/corner/lime/mono,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -39805,7 +39797,7 @@ PI
 DY
 jX
 lz
-GE
+jX
 jX
 ka
 PH
