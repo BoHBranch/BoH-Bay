@@ -17916,6 +17916,19 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
+"dgY" = (
+/obj/effect/floor_decal/borderfloorblack{
+	icon_state = "borderfloor_white";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/beige{
+	dir = 6
+	},
+/obj/structure/closet/crate/freezer,
+/obj/item/device/mmi,
+/obj/item/device/mmi,
+/turf/simulated/floor/tiled/dark,
+/area/medical/surgery2)
 "dib" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 1
@@ -21436,19 +21449,6 @@
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
 /area/rnd/development)
-"iJq" = (
-/obj/effect/floor_decal/borderfloorblack{
-	icon_state = "borderfloor_white";
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/beige{
-	dir = 6
-	},
-/obj/structure/closet/crate/freezer,
-/obj/item/device/mmi,
-/obj/item/device/mmi,
-/turf/simulated/floor/tiled/dark,
-/area/medical/surgery2)
 "iKb" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -28420,7 +28420,7 @@
 	icon_state = "railing0-1";
 	tag = "icon-railing0 (EAST)"
 	},
-/obj/item/weapon/storage/chewables/candy/medicallollis,
+/obj/item/weapon/storage/chewables/candy/medicallollis/weak,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "rQb" = (
@@ -50039,7 +50039,7 @@ bNt
 jhq
 oei
 abk
-iJq
+dgY
 aej
 agI
 oei

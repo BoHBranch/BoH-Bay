@@ -156,6 +156,14 @@
 	startswith = list(/obj/item/clothing/mask/chewable/candy/lolli/meds = 20)
 	make_exact_fit()
 
+/obj/item/weapon/storage/chewables/candy/medicallollis/weak
+	name = "pack of medicinal lollipops"
+	desc = "A mixed pack of medicinal flavored lollipops. These have no business being on store shelves."
+	icon_state = "lollipack"
+	max_storage_space = 20
+	startswith = list(/obj/item/clothing/mask/chewable/candy/lolli/weak_meds = 20)
+	make_exact_fit()
+
 /obj/item/weapon/storage/medical_lolli_jar
 	name = "lollipops jar"
 	desc = "A mixed pack of flavored medicinal lollipops. Perfect for small boo-boos."
