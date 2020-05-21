@@ -11994,8 +11994,7 @@
 	pixel_x = 36;
 	pixel_y = 0
 	},
-/obj/item/weapon/folder/envelope/rep,
-/obj/item/documents/scgr,
+/obj/item/documents/adjudicator,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/adjudicator)
 "uo" = (

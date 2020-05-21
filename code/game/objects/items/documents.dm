@@ -48,3 +48,8 @@
 	name = "private memos and faxes"
 	desc = "\"Top Secret\" memos and faxes between the SCGR and other officials of the SCG. It's like a chat client ran on pure paperwork."
 	description_antag = "The SCGR's conversations contain a massive amount of dirt on politicians: drugs, sex, money..."
+
+/obj/item/documents/adjudicator
+	name = "secret legal documents"
+	desc = "Documents owned by the Adjudicator, it contains information on a variety of high profile cases."
+	description_antag = "The Adjudicator's documents contain a large amount of information that a variety of influential people would likely prefer hidden."
