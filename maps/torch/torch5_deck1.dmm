@@ -10417,7 +10417,12 @@
 /obj/machinery/door/airlock/medical{
 	name = "Operating Theatre Two"
 	},
-/turf/simulated/floor/tiled/white,
+/obj/machinery/door/firedoor{
+	icon_state = "open";
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery2)
 "ask" = (
 /obj/structure/cable/green{
@@ -17513,6 +17518,7 @@
 /area/space)
 "cBx" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/triage)
 "cBU" = (
@@ -18597,19 +18603,6 @@
 /obj/effect/floor_decal/corner/research/half,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/aft)
-"eqO" = (
-/obj/effect/floor_decal/borderfloorblack{
-	icon_state = "borderfloor_white";
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/beige{
-	dir = 6
-	},
-/obj/structure/closet/crate/freezer,
-/obj/item/device/mmi,
-/obj/item/device/mmi,
-/turf/simulated/floor/tiled/dark,
-/area/medical/surgery2)
 "esb" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance{
@@ -19077,6 +19070,9 @@
 	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
+	},
+/obj/machinery/newscaster{
+	pixel_y = 36
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
@@ -19754,6 +19750,10 @@
 	dir = 4;
 	id_tag = "triage";
 	name = "Triage Shutters"
+	},
+/obj/machinery/door/firedoor{
+	icon_state = "open";
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/triage)
@@ -22655,6 +22655,7 @@
 /obj/machinery/door/airlock/glass/medical{
 	name = "Auxiliary Equipment Storage"
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/auxstorage)
 "koX" = (
@@ -23346,7 +23347,9 @@
 /obj/machinery/door/airlock/medical{
 	name = "Operating Theatre Two"
 	},
-/turf/simulated/floor/tiled/white,
+/obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery2)
 "leb" = (
 /obj/machinery/door/blast/shutters{
@@ -23374,7 +23377,9 @@
 /obj/machinery/door/airlock/medical{
 	name = "Operating Theatre"
 	},
-/turf/simulated/floor/tiled/white,
+/obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery)
 "lfb" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -28231,6 +28236,10 @@
 	id_tag = "triage";
 	name = "Triage Shutters"
 	},
+/obj/machinery/door/firedoor{
+	icon_state = "open";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/triage)
 "rEz" = (
@@ -30055,6 +30064,7 @@
 	name = "Infirmary";
 	req_access = list(list("ACCESS_MEDICAL","ACCESS_MORGUE"))
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/triage)
 "tOm" = (
@@ -30702,6 +30712,19 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/centerhall)
+"vPh" = (
+/obj/effect/floor_decal/borderfloorblack{
+	icon_state = "borderfloor_white";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/beige{
+	dir = 6
+	},
+/obj/structure/closet/crate/freezer,
+/obj/item/device/mmi,
+/obj/item/device/mmi,
+/turf/simulated/floor/tiled/dark,
+/area/medical/surgery2)
 "vRN" = (
 /obj/effect/wallframe_spawn/reinforced/polarized/no_grille{
 	id = "recovery1"
@@ -30846,7 +30869,12 @@
 /obj/machinery/door/airlock/medical{
 	name = "Operating Theatre"
 	},
-/turf/simulated/floor/tiled/white,
+/obj/machinery/door/firedoor{
+	icon_state = "open";
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery)
 "wjP" = (
 /obj/structure/table/rack{
@@ -50037,7 +50065,7 @@ bNt
 jhq
 oei
 abk
-eqO
+vPh
 aej
 agI
 oei
