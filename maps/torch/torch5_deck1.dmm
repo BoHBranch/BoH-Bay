@@ -18597,6 +18597,19 @@
 /obj/effect/floor_decal/corner/research/half,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/aft)
+"eqO" = (
+/obj/effect/floor_decal/borderfloorblack{
+	icon_state = "borderfloor_white";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/beige{
+	dir = 6
+	},
+/obj/structure/closet/crate/freezer,
+/obj/item/device/mmi,
+/obj/item/device/mmi,
+/turf/simulated/floor/tiled/dark,
+/area/medical/surgery2)
 "esb" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance{
@@ -26971,13 +26984,11 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/counselor)
 "pWm" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4;
-	external_pressure_bound = 202;
-	external_pressure_bound_default = 202
-	},
 /obj/machinery/light_switch{
 	pixel_x = -22
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/auxstorage)
@@ -30691,19 +30702,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/centerhall)
-"vQz" = (
-/obj/effect/floor_decal/borderfloorblack{
-	icon_state = "borderfloor_white";
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/beige{
-	dir = 6
-	},
-/obj/structure/closet/crate/freezer,
-/obj/item/device/mmi,
-/obj/item/device/mmi,
-/turf/simulated/floor/tiled/dark,
-/area/medical/surgery2)
 "vRN" = (
 /obj/effect/wallframe_spawn/reinforced/polarized/no_grille{
 	id = "recovery1"
@@ -50039,7 +50037,7 @@ bNt
 jhq
 oei
 abk
-vQz
+eqO
 aej
 agI
 oei
