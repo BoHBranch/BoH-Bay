@@ -4188,7 +4188,8 @@
 /area/engineering/locker_room)
 "ia" = (
 /obj/structure/table/rack,
-/obj/item/weapon/inflatable_dispenser,
+/obj/item/weapon/storage/briefcase/inflatable,
+/obj/item/weapon/storage/briefcase/inflatable,
 /obj/item/weapon/inflatable_dispenser,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
