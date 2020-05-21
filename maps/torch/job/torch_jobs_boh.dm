@@ -87,7 +87,6 @@
 		"Helmsman",
 		"Tactical Officer",
 		"Sensor Operator",
-		"Dispatch Officer"
 	)
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
