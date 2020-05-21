@@ -81,7 +81,7 @@
 		"Surgeon")
 	total_positions = 1
 	spawn_positions = 1
-	hud_icon = "hudmdoctormedico"
+	hud_icon = "huddoctormedico"
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
