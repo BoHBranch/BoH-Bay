@@ -86,7 +86,8 @@
 	alt_titles = list(
 		"Helmsman",
 		"Tactical Officer",
-		"Sensor Operator"
+		"Sensor Operator",
+		"Dispatch Officer"
 	)
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
