@@ -86,7 +86,7 @@
 	skill_points = 22
 
 /datum/job/medical_trainee
-	title = "Trainee Medical Technician"
+	title = "Medical Trainee"
 	department = "Medical"
 	department_flag = MED
 	total_positions = 1
@@ -95,6 +95,7 @@
 	selection_color = "#013d3b"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	alt_titles = list(
+		"Trainee Medical Technician",
 		"Corpsman Trainee",
 		"Nurse",)
 
