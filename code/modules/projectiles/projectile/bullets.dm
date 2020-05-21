@@ -166,7 +166,7 @@
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 	damage = 60
 	armor_penetration = 10
-	distance_falloff = 0.5
+	distance_falloff = 1.5
 
 /obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
 	name = "beanbag"
