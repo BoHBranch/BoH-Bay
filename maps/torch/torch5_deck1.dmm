@@ -3775,6 +3775,10 @@
 	pixel_x = -40;
 	pixel_y = -6
 	},
+/obj/machinery/button/holosign{
+	pixel_x = -21;
+	pixel_y = -6
+	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/surgery2)
 "agJ" = (
@@ -17438,12 +17442,16 @@
 /area/security/armoury)
 "cwb" = (
 /obj/structure/table/standard,
-/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,
+/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone{
+	pixel_x = 6
+	},
 /obj/machinery/light{
 	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone,
+/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone{
+	pixel_x = -5
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/subacute)
 "cwQ" = (
@@ -19946,8 +19954,13 @@
 /area/medical/triage)
 "gJb" = (
 /obj/structure/table/standard,
-/obj/item/weapon/storage/box/bodybags,
-/obj/item/weapon/storage/box/autoinjectors,
+/obj/item/weapon/storage/box/bodybags{
+	pixel_x = -3
+	},
+/obj/item/weapon/storage/box/autoinjectors{
+	pixel_x = -3;
+	pixel_y = 7
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/triage)
 "gLb" = (
@@ -22402,8 +22415,9 @@
 /obj/machinery/vending/medical/torch,
 /obj/effect/floor_decal/corner/paleblue/full,
 /obj/machinery/camera/network/medbay{
-	c_tag = "Infirmary - Trauma Center North";
-	dir = 2
+	dir = 2;
+	pixel_x = -9;
+	c_tag = "Infirmary - Trauma Center North"
 	},
 /obj/item/modular_computer/telescreen/preset/medical{
 	pixel_y = 28
@@ -24458,7 +24472,6 @@
 /turf/simulated/floor/reinforced/oxygen,
 /area/thruster/d1starboard)
 "mHP" = (
-/obj/effect/floor_decal/corner/paleblue/full,
 /obj/structure/ladder,
 /obj/machinery/door/window/westleft{
 	name = "EVA storage"
@@ -24470,8 +24483,8 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/tiled/white,
+/obj/structure/catwalk,
+/turf/simulated/open,
 /area/medical/sleeper)
 "mIb" = (
 /obj/structure/closet/secure_closet/nuke_wall,
@@ -25159,6 +25172,19 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/teleporter/firstdeck)
+"nEi" = (
+/obj/effect/floor_decal/borderfloorblack{
+	icon_state = "borderfloor_white";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/beige{
+	dir = 6
+	},
+/obj/structure/closet/crate/freezer,
+/obj/item/device/mmi,
+/obj/item/device/mmi,
+/turf/simulated/floor/tiled/dark,
+/area/medical/surgery2)
 "nEB" = (
 /obj/effect/wallframe_spawn/reinforced/polarized/no_grille{
 	id = "recovery1"
@@ -30712,19 +30738,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/centerhall)
-"vPh" = (
-/obj/effect/floor_decal/borderfloorblack{
-	icon_state = "borderfloor_white";
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/beige{
-	dir = 6
-	},
-/obj/structure/closet/crate/freezer,
-/obj/item/device/mmi,
-/obj/item/device/mmi,
-/turf/simulated/floor/tiled/dark,
-/area/medical/surgery2)
 "vRN" = (
 /obj/effect/wallframe_spawn/reinforced/polarized/no_grille{
 	id = "recovery1"
@@ -50065,7 +50078,7 @@ bNt
 jhq
 oei
 abk
-vPh
+nEi
 aej
 agI
 oei
