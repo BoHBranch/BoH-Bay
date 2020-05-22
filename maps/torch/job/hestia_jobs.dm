@@ -93,7 +93,7 @@
 	economic_power = 4
 	minimal_player_age = 6
 	skill_points = 24
-	minimum_character_age = list(SPECIES_HUMAN = 24)
+	minimum_character_age = list(SPECIES_HUMAN = 22)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
 						SKILL_ELECTRICAL   = SKILL_ADEPT,
@@ -101,10 +101,12 @@
 						SKILL_COMBAT       = SKILL_ADEPT,
 						SKILL_WEAPONS      = SKILL_ADEPT)
 
-	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
-						SKILL_WEAPONS     = SKILL_MAX,
-						SKILL_EVA		  = SKILL_MAX)
-
+	max_skill = list(	SKILL_COMBAT       = SKILL_MAX,
+						SKILL_WEAPONS      = SKILL_MAX,
+						SKILL_EVA		   = SKILL_MAX,
+						SKILL_CONSTRUCTION = SKILL_MAX,
+						SKILL_ELECTRICAL   = SKILL_MAX)
+						
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/e4,
