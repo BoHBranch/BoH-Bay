@@ -37,7 +37,7 @@
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 20
-
+//.
 /datum/job/scientist
 	title = "Scientist"
 	total_positions = 6
