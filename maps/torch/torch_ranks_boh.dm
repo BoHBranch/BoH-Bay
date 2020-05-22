@@ -85,7 +85,7 @@
 	)
 
 	species_to_branch_whitelist = list(
-		/datum/species/diona		= list(/datum/mil_branch/civilian), /datum/mil_branch/private_security, /datum/mil_branch/solgov),
+		/datum/species/diona		= list(/datum/mil_branch/civilian, /datum/mil_branch/private_security, /datum/mil_branch/solgov),
 		/datum/species/nabber		= list(/datum/mil_branch/civilian),
 		/datum/species/skrell		= list(UNRESTRICTED, /datum/mil_branch/skrell_fleet),
 		/datum/species/unathi		= list(UNRESTRICTED, SEMIRESTRICTED),
