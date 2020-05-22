@@ -97,7 +97,7 @@
 	alt_titles = list(
 		"Trainee Medical Technician",
 		"Corpsman Trainee",
-		"Nurse",)
+		"Nurse")
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(

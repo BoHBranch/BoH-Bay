@@ -86,7 +86,7 @@
 	alt_titles = list(
 		"Helmsman",
 		"Tactical Officer",
-		"Sensor Operator",
+		"Sensor Operator"
 	)
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
@@ -218,14 +218,14 @@
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet,
-		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/marine,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/marine
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/marine_corps/e2,
-		/datum/mil_rank/marine_corps/e3,
+		/datum/mil_rank/marine_corps/e3
 	)
 
 /datum/job/psychiatrist
