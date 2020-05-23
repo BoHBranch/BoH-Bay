@@ -310,6 +310,16 @@
 	icon_state = "hair_himecut"
 	flags = HAIR_TIEABLE
 
+/datum/sprite_accessory/hair/himecutlong
+	name = "Long Hime Cut"
+	icon_state = "hair_himecut_long"
+	flags = HAIR_TIEABLE
+
+/datum/sprite_accessory/hair/himecutlong
+	name = "Bedhead Long hair"
+	icon_state = "hair_long_bedhead"
+	flags = HAIR_TIEABLE
+
 /datum/sprite_accessory/hair/shorthime
 	name = "Short Hime Cut"
 	icon_state = "hair_shorthime"
