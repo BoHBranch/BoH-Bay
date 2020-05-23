@@ -325,6 +325,11 @@
 	icon_state = "hair_wisp"
 	flags = HAIR_TIEABLE
 
+/datum/sprite_accessory/hair/anomaly
+	name = "Anomaly"
+	icon_state = "hair_anomaly"
+	flags = HAIR_TIEABLE
+
 /datum/sprite_accessory/hair/shorthime
 	name = "Short Hime Cut"
 	icon_state = "hair_shorthime"
