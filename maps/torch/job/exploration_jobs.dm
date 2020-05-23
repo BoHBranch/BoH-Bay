@@ -62,7 +62,7 @@
 	)
 
 	access = list(
-	 access_guppy, access_hangar, access_maint_tunnels, access_guppy_helm, access_expedition_shuttle, access_expedition_shuttle_helm, access_pilot,
+	 access_guppy, access_hangar, access_maint_tunnels, access_mining_office, access_guppy_helm, access_expedition_shuttle, access_expedition_shuttle_helm, access_pilot,
 		access_solgov_crew, access_eva, access_explorer,
 	)
 	min_skill = list(	SKILL_EVA   = SKILL_BASIC,
