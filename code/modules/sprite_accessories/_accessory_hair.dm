@@ -315,12 +315,12 @@
 	icon_state = "hair_himecut_long"
 	flags = HAIR_TIEABLE
 
-/datum/sprite_accessory/hair/bedheadlong
+/datum/sprite_accessory/hair/shy
 	name = "Shy"
 	icon_state = "hair_shy"
 	flags = HAIR_TIEABLE
 
-/datum/sprite_accessory/hair/bedheadlong
+/datum/sprite_accessory/hair/wisp
 	name = "Wisp"
 	icon_state = "hair_wisp"
 	flags = HAIR_TIEABLE
