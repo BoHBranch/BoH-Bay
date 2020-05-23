@@ -330,6 +330,12 @@
 	icon_state = "hair_anomaly"
 	flags = HAIR_TIEABLE
 
+/datum/sprite_accessory/hair/beedheadlong
+	name = "Beedhead"
+	icon_state = "hair_long_bedhead"
+	flags = HAIR_TIEABLE
+
+
 /datum/sprite_accessory/hair/shorthime
 	name = "Short Hime Cut"
 	icon_state = "hair_shorthime"
