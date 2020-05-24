@@ -310,6 +310,31 @@
 	icon_state = "hair_himecut"
 	flags = HAIR_TIEABLE
 
+/datum/sprite_accessory/hair/himecutlong
+	name = "Long Hime Cut"
+	icon_state = "hair_himecut_long"
+	flags = HAIR_TIEABLE
+
+/datum/sprite_accessory/hair/shy
+	name = "Shy"
+	icon_state = "hair_shy"
+	flags = HAIR_TIEABLE
+
+/datum/sprite_accessory/hair/wisp
+	name = "Wisp"
+	icon_state = "hair_wisp"
+	flags = HAIR_TIEABLE
+
+/datum/sprite_accessory/hair/anomaly
+	name = "Anomaly"
+	icon_state = "hair_anomaly"
+	flags = HAIR_TIEABLE
+
+/datum/sprite_accessory/hair/beedheadlong
+	name = "Beedhead"
+	icon_state = "hair_long_bedhead"
+	flags = HAIR_TIEABLE
+
 /datum/sprite_accessory/hair/shorthime
 	name = "Short Hime Cut"
 	icon_state = "hair_shorthime"
