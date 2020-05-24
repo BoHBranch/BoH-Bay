@@ -54,7 +54,8 @@
 	minimal_player_age = 0
 	alt_titles = list(
 		"Paramedic",
-		"Corpsman")
+		"Corpsman",
+		"Nurse")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -97,7 +98,7 @@
 	alt_titles = list(
 		"Trainee Medical Technician",
 		"Corpsman Trainee",
-		"Nurse")
+		"Trainee Nurse")
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
