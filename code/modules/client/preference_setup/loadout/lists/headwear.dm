@@ -2,6 +2,7 @@
 	sort_category = "Hats and Headwear"
 	slot = slot_head
 	category = /datum/gear/head
+	banned_species = list(SPECIES_PLASMASANS)
 
 /datum/gear/head/beret
 	display_name = "beret, colour select"

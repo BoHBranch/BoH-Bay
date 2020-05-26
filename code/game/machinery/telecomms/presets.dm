@@ -180,7 +180,7 @@
 /obj/machinery/telecomms/server/presets/infantry
 	id = "Infantry Server"
 	freq_listening = list(INF_FREQ)
-	channel_tags = list(list(INF_FREQ, "Infantry", COMMS_COLOR_SERVICE))
+	channel_tags = list(list(INF_FREQ, "Infantry", COMMS_COLOR_SKRELL))
 	autolinkers = list("infantry")
 
 /obj/machinery/telecomms/server/presets/centcomm

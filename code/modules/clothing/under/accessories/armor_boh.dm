@@ -6,7 +6,7 @@
 	slowdown = 0.25
 
 /obj/item/clothing/accessory/storage/pouches/grey
-	name = "storage pouches"
+	name = "grey storage pouches"
 	desc = "A collection of grey pouches that can be attached to a plate carrier. Carries up to two items."
 	icon_override = 'icons/boh/mob/onmob/onmob_modular_armor.dmi'
 	icon = 'icons/boh/obj/clothing/obj_modular_armor.dmi'
@@ -14,7 +14,7 @@
 	icon_state = "pouches_grey"
 
 /obj/item/clothing/accessory/storage/pouches/large/grey
-	name = "large storage pouches"
+	name = "large grey storage pouches"
 	desc = "A collection of grey pouches that can be attached to a plate carrier. Carries up to four items."
 	icon_override = 'icons/boh/mob/onmob/onmob_modular_armor.dmi'
 	icon = 'icons/boh/obj/clothing/obj_modular_armor.dmi'
