@@ -113,6 +113,20 @@
 					/obj/item/weapon/reagent_containers/food/snacks/candy/proteinbar = 1,
 					/obj/item/device/oxycandle = 1)
 
+
+/obj/item/weapon/storage/box/phoron
+	name = "Phoron Restructurant survival kit"
+	desc = "A box decorated in warning colors that contains a limited supply of survival tools for those suffering from Phoron Restructurant syndrome."
+	icon_state = "survivaleng"
+	startswith = list(
+		/obj/item/weapon/tank/emergency/phoron = 2,
+		/obj/item/weapon/extinguisher/mini = 1,
+		/obj/item/weapon/reagent_containers/hypospray/autoinjector = 1,
+		/obj/item/stack/medical/bruise_pack = 1,
+		/obj/item/device/flashlight/flare/glowstick = 1
+	)
+
+
 /obj/item/weapon/storage/box/gloves
 	name = "box of sterile gloves"
 	desc = "Contains sterile gloves."
