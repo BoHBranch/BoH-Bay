@@ -104,6 +104,12 @@
 	item_cost = 60
 	path = /obj/item/weapon/gun/energy/gun/nuclear
 
+/datum/uplink_item/item/visible_weapons/stinger_stunrifle
+	name = "Stinger MK1"
+	desc = "A self charging, rapid fire stunrifle. Great agaisnt soft targets, but requires aimming when dealing with armored targets."
+	item_cost = 45
+	path = /obj/item/weapon/gun/energy/gun/stinger
+
 /datum/uplink_item/item/visible_weapons/heavysniper
 	name = "Anti-materiel Sniper Rifle"
 	desc = "A secure briefcase that contains an immensely powerful penetrating rifle, as well as seven extra sniper rounds."
