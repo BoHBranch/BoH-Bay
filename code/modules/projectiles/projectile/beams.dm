@@ -60,7 +60,7 @@
 
 /obj/item/projectile/beam/xray/midlaser
 	damage = 30
-	armor_penetration = 50
+	armor_penetration = 60
 	distance_falloff = 1
 
 /obj/item/projectile/beam/pulse
@@ -169,7 +169,7 @@
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/marauder.ogg'
 	damage = 65
-	armor_penetration = 10
+	armor_penetration = 25
 	stun = 3
 	weaken = 3
 	stutter = 3

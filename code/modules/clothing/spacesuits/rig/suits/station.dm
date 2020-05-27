@@ -8,7 +8,7 @@
 	offline_slowdown = 0
 	offline_vision_restriction = 0
 
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/briefcase, /obj/item/weapon/storage/secure/briefcase)
+	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/briefcase, /obj/item/weapon/storage/secure/briefcase,/obj/item/weapon/storage/)
 
 	req_access = list(access_lawyer)
 
@@ -384,9 +384,9 @@
 	min_pressure_protection = 0
 
 
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit)
+	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/)
 	//Bans the most common combat items, idea is that this isn't a mass built shouldergun rig.
-	banned_modules = list(/obj/item/rig_module/grenade_launcher,/obj/item/rig_module/mounted,/obj/item/rig_module/fabricator )
+	banned_modules = list(/obj/item/rig_module/grenade_launcher,/obj/item/rig_module/mounted,/obj/item/rig_module/fabricator)
 	req_access = list()
 
 /obj/item/clothing/head/helmet/space/rig/zero

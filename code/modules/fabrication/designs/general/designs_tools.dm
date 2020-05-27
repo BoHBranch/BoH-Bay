@@ -38,6 +38,9 @@
 /datum/fabricator_recipe/tool/minihoe
 	path = /obj/item/weapon/material/minihoe
 
+/datum/fabricator_recipe/tool/floor_painter
+	path = /obj/item/device/floor_painter
+
 /datum/fabricator_recipe/tool/welder_industrial
 	path = /obj/item/weapon/weldingtool/largetank
 	hidden = TRUE
