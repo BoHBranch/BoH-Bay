@@ -143,7 +143,6 @@
 	desc = "A strange device manufactured with mysterious elements that somehow emits darkness. Or maybe it just sucks in light? Nobody knows for sure."
 	icon_state = "flashdark"
 	item_state = "flashdark"
-	w_class = ITEM_SIZE_NORMAL
 	flashlight_max_bright = -1
 	flashlight_outer_range = 4
 	flashlight_inner_range = 1
