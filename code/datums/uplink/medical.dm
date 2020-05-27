@@ -73,5 +73,5 @@
 /datum/uplink_item/item/medical/three_eye
 	name = "Three Eye pill bottle"
 	desc = "A pill bottle of highly illegal drugs, often overdosed on to awaken psionic latencies. A picture of a skull and a small note is attached, explaining that more than three pills cause overdose."
-	item_cost = 80
+	item_cost = 50
 	path = /obj/item/weapon/storage/pill_bottle/three_eye
