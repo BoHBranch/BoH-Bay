@@ -4376,6 +4376,57 @@
 /obj/effect/shuttle_landmark/nav_magshield/nav3,
 /turf/space,
 /area/space)
+"lB" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/tiled,
+/area/magshield/west)
+"lC" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/carpet/blue,
+/area/magshield/west)
+"lD" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/tiled,
+/area/magshield/south)
+"lE" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/tiled,
+/area/magshield/south)
+"lF" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/airless,
+/area/magshield/east)
+"lG" = (
+/obj/machinery/atmospherics/pipe/manifold4w/visible/black,
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/airless,
+/area/magshield/east)
+"lH" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/airless,
+/area/magshield/east)
+"lI" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/airless,
+/area/magshield/north)
+"lJ" = (
+/mob/living/simple_animal/hostile/syndicate/ranged/space,
+/turf/simulated/floor/airless,
+/area/magshield/north)
+"lK" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/tiled/dark,
+/area/magshield/west)
+"lL" = (
+/mob/living/simple_animal/hostile/syndicate/melee/space,
+/turf/simulated/floor/tiled,
+/area/magshield/west)
 "uL" = (
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/tiled,
@@ -17826,7 +17877,7 @@ gV
 fA
 fA
 fA
-gv
+lC
 hS
 ia
 fu
@@ -19027,7 +19078,7 @@ di
 fu
 fB
 fK
-fB
+lK
 fB
 fB
 fB
@@ -19438,7 +19489,7 @@ ga
 ga
 fB
 fB
-fA
+lB
 hr
 fA
 fB
@@ -19658,7 +19709,7 @@ jb
 iq
 jJ
 jd
-jd
+lD
 kO
 jd
 lh
@@ -20037,12 +20088,12 @@ dj
 fu
 fA
 fA
-fA
+lB
 fB
 fA
 fA
 fB
-fA
+lL
 fA
 fA
 fB
@@ -20059,7 +20110,7 @@ fA
 fu
 iP
 jd
-jd
+lD
 jd
 jd
 kx
@@ -23092,7 +23143,7 @@ ip
 jp
 jQ
 iq
-kx
+lE
 iq
 kZ
 jq
@@ -24268,7 +24319,7 @@ cV
 de
 de
 dj
-dj
+lJ
 dj
 dj
 eo
@@ -25515,7 +25566,7 @@ ip
 ip
 jw
 jw
-jd
+lD
 kx
 jd
 jw
@@ -25682,7 +25733,7 @@ db
 de
 de
 dv
-dj
+lI
 dj
 dj
 eo
@@ -25888,7 +25939,7 @@ dM
 dj
 dj
 eo
-dj
+lJ
 eV
 de
 de
@@ -27099,7 +27150,7 @@ dj
 dP
 dj
 dj
-dj
+lI
 ey
 eZ
 de
@@ -27905,13 +27956,13 @@ de
 de
 dA
 dj
-dj
+lI
 dj
 dj
 eo
 dt
 fg
-fo
+lG
 fy
 fo
 fQ
@@ -28732,7 +28783,7 @@ gM
 fe
 fi
 fi
-fi
+lF
 hH
 hP
 hP
@@ -29140,7 +29191,7 @@ fi
 fi
 fi
 fi
-fi
+lF
 fi
 iq
 iz
@@ -29333,7 +29384,7 @@ fi
 fi
 fz
 fi
-fi
+lH
 fi
 fk
 hh

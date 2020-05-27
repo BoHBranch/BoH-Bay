@@ -1006,7 +1006,8 @@
 /turf/simulated/floor/plating,
 /area/errant_pisces/atmos)
 "cP" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/obj/machinery/atmospherics/pipe/simple/visible/blue,
+/mob/living/simple_animal/hostile/carp/shark,
 /turf/simulated/floor/plating,
 /area/errant_pisces/atmos)
 "cQ" = (
@@ -2407,6 +2408,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/errant_pisces/bow_maint)
+"fs" = (
+/mob/living/simple_animal/hostile/carp/shark,
+/turf/simulated/floor/plating,
+/area/errant_pisces/storage_starboard)
 "ft" = (
 /obj/machinery/power/apc{
 	dir = 4;
@@ -2454,6 +2459,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
 /area/errant_pisces/head_m)
+"fz" = (
+/mob/living/simple_animal/hostile/carp/shark,
+/turf/simulated/floor/plating,
+/area/errant_pisces/bow_starboard)
 "fA" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -2642,6 +2651,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
 /area/errant_pisces/head_m)
+"fQ" = (
+/obj/machinery/atmospherics/pipe/manifold/visible/fuel{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/carp/shark,
+/turf/simulated/floor/plating,
+/area/errant_pisces/bow_port)
 "fR" = (
 /obj/item/weapon/stool,
 /obj/machinery/alarm{
@@ -5261,6 +5277,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/plating,
 /area/errant_pisces/general_storage)
 "nb" = (
@@ -5273,6 +5290,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/airlock/freezer,
 /obj/effect/decal/cleanable/blood,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/freezer,
 /area/errant_pisces/prod_storage)
 "nc" = (
@@ -5443,6 +5461,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
+/mob/living/simple_animal/hostile/carp/shark,
 /turf/simulated/floor/tiled,
 /area/errant_pisces/aft_hallway)
 "nr" = (
@@ -6973,6 +6992,40 @@
 /mob/living/simple_animal/hostile/carp/shark,
 /turf/space,
 /area/space)
+"rd" = (
+/mob/living/simple_animal/hostile/carp/shark,
+/turf/simulated/floor/plating,
+/area/errant_pisces/storage_port)
+"re" = (
+/mob/living/simple_animal/hostile/carp/shark,
+/turf/simulated/floor/plating,
+/area/errant_pisces/enginering)
+"rf" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/turf/simulated/floor/plating,
+/area/errant_pisces/atmos)
+"rg" = (
+/mob/living/simple_animal/hostile/carp/shark,
+/turf/simulated/floor/tiled/white,
+/area/errant_pisces/head_m)
+"rh" = (
+/mob/living/simple_animal/hostile/carp/shark,
+/turf/simulated/floor/tiled,
+/area/errant_pisces/hallway)
+"ri" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/carp/shark,
+/turf/simulated/floor/tiled,
+/area/errant_pisces/hallway)
+"rj" = (
+/mob/living/simple_animal/hostile/carp/shark,
+/turf/simulated/floor/tiled,
+/area/errant_pisces/aft_hallway)
 "sb" = (
 /obj/structure/hygiene/sink{
 	icon_state = "sink";
@@ -24064,7 +24117,7 @@ aa
 ab
 ab
 aW
-bd
+fs
 bd
 bd
 bd
@@ -24485,7 +24538,7 @@ dR
 fq
 dR
 dR
-fZ
+rh
 gj
 gr
 gN
@@ -25885,7 +25938,7 @@ aY
 bh
 bA
 bV
-bV
+cP
 cw
 cM
 cZ
@@ -26484,7 +26537,7 @@ aa
 aa
 ad
 ah
-aq
+fz
 ax
 aJ
 aY
@@ -26695,7 +26748,7 @@ bE
 bX
 cl
 cl
-cP
+rf
 dc
 do
 dv
@@ -27324,7 +27377,7 @@ hM
 fZ
 fZ
 fZ
-fZ
+rh
 fZ
 jY
 kp
@@ -28107,7 +28160,7 @@ aZ
 bo
 bJ
 cc
-bn
+re
 bn
 bn
 dh
@@ -28525,7 +28578,7 @@ fh
 tb
 ub
 eR
-gb
+ri
 gn
 gF
 gW
@@ -28707,12 +28760,12 @@ aa
 ae
 al
 at
-aA
+fQ
 aP
 aZ
 bq
 bL
-bn
+re
 cp
 cE
 bn
@@ -28926,7 +28979,7 @@ dY
 ey
 ey
 fi
-ey
+rg
 ey
 eR
 gb
@@ -30126,7 +30179,7 @@ ac
 bb
 bt
 bt
-bt
+rd
 bt
 cH
 cU
@@ -32790,7 +32843,7 @@ mx
 mU
 nc
 nD
-nS
+rj
 oi
 oi
 oX

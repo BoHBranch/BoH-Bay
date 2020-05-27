@@ -69,6 +69,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/lar_maria/morgue)
+"ak" = (
+/mob/living/simple_animal/hostile/lar_maria/guard/ranged,
+/turf/simulated/floor/tiled,
+/area/lar_maria/sec_wing)
 "al" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -23676,7 +23680,7 @@ dS
 dS
 et
 et
-et
+ak
 et
 fN
 cO
@@ -23886,7 +23890,7 @@ gp
 gF
 gW
 gF
-gF
+gx
 hF
 hZ
 ih
@@ -24086,7 +24090,7 @@ fQ
 cO
 gq
 gF
-gF
+gx
 gF
 gW
 gF
@@ -25704,7 +25708,7 @@ dC
 gK
 cO
 hi
-gF
+gx
 hL
 hj
 hL

@@ -17,7 +17,7 @@
 	//Power used to maintain temperature once it's heated.
 	//Going with 25% of the active power. This is a somewhat arbitrary value
 
-	resistance = 30000	// Approx. 10 minutes.
+	resistance = 10000	// Approx. 4 minutes.
 
 	max_contents = 2
 	container_type = /obj/item/weapon/reagent_containers/cooking_container/fryer
@@ -137,7 +137,7 @@
 			for (var/obj/item/I in CI.container)
 				if (I.reagents && I.reagents.total_volume)
 					for (var/datum/reagent/R in I.reagents.reagent_list)
-						if (R.type == our_oil.type)
+						if (istype(R, /datum/reagent/nutriment/triglyceride/oil) && R.type == our_oil.type)
 							I.reagents.remove_reagent(R.type, R.volume*portion)
 
 

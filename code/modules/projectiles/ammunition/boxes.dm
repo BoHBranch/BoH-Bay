@@ -76,19 +76,19 @@
 /obj/item/ammo_magazine/shotholder/beanbag
 	name = "beanbag shell holder"
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
-	matter = list(MATERIAL_STEEL = 720)
+	matter = list(MATERIAL_STEEL = 1000)
 	marking_color = COLOR_PAKISTAN_GREEN
 
 /obj/item/ammo_magazine/shotholder/flash
 	name = "illumination shell holder"
 	ammo_type = /obj/item/ammo_casing/shotgun/flash
-	matter = list(MATERIAL_STEEL = 360, MATERIAL_GLASS = 360)
+	matter = list(MATERIAL_STEEL = 600, MATERIAL_GLASS = 360)
 	marking_color = COLOR_PALE_YELLOW
 
 /obj/item/ammo_magazine/shotholder/stun
 	name = "stun shell holder"
 	ammo_type = /obj/item/ammo_casing/shotgun/stunshell
-	matter = list(MATERIAL_STEEL = 1440, MATERIAL_GLASS = 2880)
+	matter = list(MATERIAL_STEEL = 1700, MATERIAL_GLASS = 2900)
 	marking_color = COLOR_MUZZLE_FLASH
 
 /obj/item/ammo_magazine/shotholder/empty

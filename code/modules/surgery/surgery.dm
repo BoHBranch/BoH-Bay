@@ -187,17 +187,14 @@ GLOBAL_LIST_INIT(surgery_tool_exception_cache, new)
 	for(var/decl in all_surgeries)
 		var/decl/surgery_step/S = all_surgeries[decl]
 		if(S.name && S.tool_quality(src) && S.can_use(user, M, zone, src))
-			LAZYSET(possible_surgeries, S, TRUE)
+			LAZYSET(possible_surgeries, S, src)
 
 	// Which surgery, if any, do we actually want to do?
-	var/decl/surgery_step/S
-	if(LAZYLEN(possible_surgeries) == 1)
-		S = possible_surgeries[1]
-	else if(LAZYLEN(possible_surgeries) >= 1)
-		if(user.client) // In case of future autodocs.
-			S = input(user, "Which surgery would you like to perform?", "Surgery") as null|anything in possible_surgeries
-		if(S && !user.skill_check_multiple(S.get_skill_reqs(user, M, src, zone)))
-			S = pick(possible_surgeries)
+	var/decl/surgery_step/S = LAZYACCESS(possible_surgeries, 1) // Choose the first, and probably only, one.
+	if(user.client && LAZYLEN(possible_surgeries) > 1) // In case of future autodocs.
+		S = show_radial_menu(user, M, possible_surgeries)
+	if(S && !user.skill_check_multiple(S.get_skill_reqs(user, M, src, zone)))
+		S = pick(possible_surgeries)
 
 	// We didn't find a surgery, or decided not to perform one.
 	if(!istype(S))
@@ -214,7 +211,9 @@ GLOBAL_LIST_INIT(surgery_tool_exception_cache, new)
 			return TRUE
 
 	// Otherwise we can make a start on surgery!
-	else if(istype(M) && !QDELETED(M) && user.a_intent != I_HURT && user.get_active_hand() == src)
+	else if(istype(M) && !QDELETED(M) && user.a_intent != I_HURT)
+		if(istype(user, /mob/living/carbon) && user.get_active_hand() != src)
+			return FALSE
 		// Double-check this in case it changed between initial check and now.
 		if(zone in M.surgeries_in_progress)
 			to_chat(user, SPAN_WARNING("You can't operate on this area while surgery is already in progress."))

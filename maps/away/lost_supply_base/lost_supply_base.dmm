@@ -950,6 +950,7 @@
 "cp" = (
 /obj/structure/door_assembly,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/airless,
 /area/lost_supply_base)
 "cq" = (

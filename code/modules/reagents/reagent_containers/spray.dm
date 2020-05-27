@@ -106,6 +106,13 @@
 	desc = "Great for hiding incriminating bloodstains and sterilizing scalpels."
 	reagents_to_add = list(/datum/reagent/sterilizine = 250)
 
+/obj/item/weapon/reagent_containers/spray/surgical
+	name = "surgical spray"
+	desc = "Great for hiding incriminating bloodstains and sterilizing scalpels."
+	reagents_to_add = list(/datum/reagent/sterilizine = 125,
+	/datum/reagent/space_cleaner = 125,)
+
+
 /obj/item/weapon/reagent_containers/spray/hair_remover
 	name = "hair remover"
 	desc = "Very effective at removing hair, feathers, spines and horns."

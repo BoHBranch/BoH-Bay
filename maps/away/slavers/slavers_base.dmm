@@ -4192,6 +4192,15 @@
 /obj/machinery/chemical_dispenser/bar_alc,
 /turf/simulated/floor/tiled,
 /area/slavers_base/demo)
+"kx" = (
+/mob/living/simple_animal/hostile/abolition_extremist,
+/turf/simulated/floor/tiled/airless,
+/area/slavers_base/demo)
+"ky" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/abolition_extremist,
+/turf/simulated/floor/tiled/airless,
+/area/slavers_base/hallway)
 "kz" = (
 /mob/living/simple_animal/hostile/abolition_extremist,
 /turf/simulated/floor/tiled/white,
@@ -4324,6 +4333,20 @@
 /obj/effect/shuttle_landmark/nav_slavers_base/nav6,
 /turf/space,
 /area/space)
+"kZ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/abolition_extremist,
+/turf/simulated/floor/tiled/airless,
+/area/slavers_base/hallway)
+"la" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/mob/living/simple_animal/hostile/abolition_extremist,
+/turf/simulated/floor/airless/ceiling,
+/area/slavers_base/maint)
 "lb" = (
 /obj/structure/hygiene/sink{
 	pixel_y = -20
@@ -4335,6 +4358,77 @@
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/tiled/white,
 /area/slavers_base/dorms)
+"lc" = (
+/mob/living/simple_animal/hostile/abolition_extremist,
+/turf/simulated/floor/tiled/airless,
+/area/slavers_base/secwing)
+"ld" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/mob/living/simple_animal/hostile/abolition_extremist,
+/turf/simulated/floor/tiled,
+/area/slavers_base/secwing)
+"le" = (
+/mob/living/simple_animal/hostile/abolition_extremist,
+/turf/simulated/floor/airless/ceiling,
+/area/slavers_base/powatm)
+"lf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/mob/living/simple_animal/hostile/abolition_extremist,
+/turf/simulated/floor/tiled/airless,
+/area/slavers_base/cells)
+"lg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/mob/living/simple_animal/hostile/abolition_extremist,
+/turf/simulated/floor/tiled/airless,
+/area/slavers_base/cells)
+"lh" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/abolition_extremist,
+/turf/simulated/floor/tiled/airless,
+/area/slavers_base/med)
+"li" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/mob/living/simple_animal/hostile/abolition_extremist,
+/turf/simulated/floor/tiled/airless,
+/area/slavers_base/cells)
+"lj" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/abolition_extremist,
+/turf/simulated/floor/tiled/airless,
+/area/slavers_base/cells)
+"lk" = (
+/mob/living/simple_animal/hostile/abolition_extremist,
+/turf/simulated/floor/airless/ceiling,
+/area/slavers_base/mort)
 "mb" = (
 /obj/structure/hygiene/sink{
 	pixel_y = -20
@@ -15163,14 +15257,14 @@ dI
 da
 da
 da
-da
+le
 da
 gd
 da
 go
 da
 hg
-da
+le
 da
 in
 cR
@@ -15976,7 +16070,7 @@ da
 gd
 da
 da
-da
+le
 da
 da
 da
@@ -16170,7 +16264,7 @@ ad
 cR
 db
 cZ
-da
+le
 eI
 fl
 da
@@ -17179,7 +17273,7 @@ aW
 aP
 cS
 de
-dL
+lc
 eh
 eM
 cS
@@ -17382,7 +17476,7 @@ cJ
 cS
 df
 dL
-dL
+lc
 eM
 cS
 fv
@@ -17763,7 +17857,7 @@ ah
 ak
 ak
 ax
-ak
+lk
 ak
 aM
 aP
@@ -17962,7 +18056,7 @@ ad
 ad
 ad
 ah
-ak
+lk
 ak
 ak
 ak
@@ -18178,7 +18272,7 @@ bu
 aP
 aP
 bK
-bq
+lf
 bK
 aP
 aP
@@ -19199,7 +19293,7 @@ aP
 aP
 cS
 dn
-dN
+ld
 en
 dp
 cS
@@ -19378,7 +19472,7 @@ ad
 ah
 aq
 ak
-ak
+lk
 ak
 aI
 aM
@@ -20222,7 +20316,7 @@ hb
 er
 er
 er
-er
+kZ
 hb
 er
 er
@@ -20421,7 +20515,7 @@ gl
 gG
 fo
 fo
-fo
+ky
 fo
 id
 fo
@@ -21040,7 +21134,7 @@ jv
 jv
 kt
 hd
-gJ
+la
 gI
 kJ
 kN
@@ -21421,7 +21515,7 @@ aM
 aM
 cV
 dy
-dx
+lh
 ew
 eX
 cV
@@ -21607,7 +21701,7 @@ aM
 aO
 aP
 bj
-br
+li
 bA
 bG
 bJ
@@ -21818,7 +21912,7 @@ aM
 aQ
 be
 bk
-bq
+lf
 aU
 bH
 be
@@ -22228,7 +22322,7 @@ aM
 aM
 aM
 cV
-dx
+lh
 dx
 ey
 fb
@@ -22618,7 +22712,7 @@ aQ
 bg
 bk
 bq
-aU
+lj
 bH
 be
 bO
@@ -22829,7 +22923,7 @@ cf
 aP
 bj
 cq
-bx
+lg
 bG
 aP
 cO
@@ -23253,10 +23347,10 @@ hw
 hw
 hw
 hw
-hw
+kx
 hw
 hd
-jv
+kk
 jv
 jv
 jv
@@ -23451,7 +23545,7 @@ fJ
 gI
 gR
 hd
-hw
+kx
 hN
 hN
 hN
@@ -24057,7 +24151,7 @@ fJ
 gI
 gR
 hd
-hw
+kx
 hQ
 hQ
 hQ

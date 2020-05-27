@@ -209,7 +209,8 @@
 		list("bromide",             "bromide",             /datum/reagent/toxin/bromide, 80),
 		list("crystallizing agent", "crystallizing agent", /datum/reagent/crystal,       80),
 		list("spaceacillin",        "spaceacillin",        /datum/reagent/spaceacillin,  80),
-		list("tramadol",            "tramadol",            /datum/reagent/tramadol,      80)
+		list("tramadol",            "tramadol",            /datum/reagent/tramadol,      80),
+		list("crystal brothime",    "crystal brothime",    /datum/reagent/crystaltram,   80)
 	)
 
 // Rig definitions.
@@ -301,7 +302,7 @@
 		)
 	allowed = list(
 		/obj/item/clustertool,
-		/obj/item/weapon/gun/energy/particle/small,
+		/obj/item/weapon/gun,
 		/obj/item/weapon/weldingtool/electric/mantid,
 		/obj/item/device/multitool/mantid,
 		/obj/item/stack/medical/resin,

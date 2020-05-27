@@ -180,6 +180,10 @@ var/list/gear_datums = list()
 		entry += "<td width = 10% style='vertical-align:top'>[G.cost]</td>"
 		entry += "<td><font size=2>[G.get_description(get_gear_metadata(G,1))]</font>"
 		var/allowed = 1
+		if(allowed && G.banned_species)
+			if(pref.species in G.banned_species)
+				allowed = FALSE
+				entry += "<br><i><font color=cc5555>Not supported by current species.</font></i>"
 		if(allowed && G.allowed_roles)
 			var/good_job = 0
 			var/bad_job = 0
@@ -346,7 +350,8 @@ var/list/gear_datums = list()
 	var/list/allowed_roles //Roles that can spawn with this item.
 	var/list/allowed_branches //Service branches that can spawn with it.
 	var/list/allowed_skills //Skills required to spawn with this item.
-	var/whitelisted        //Term to check the whitelist for..
+	var/list/banned_species //For plasmaman honestly.
+	var/whitelisted        //Term to check the whitelist for.
 	var/sort_category = "General"
 	var/flags              //Special tweaks in new
 	var/category
@@ -423,6 +428,7 @@ var/list/gear_datums = list()
 		if(A.augment_flags == AUGMENTATION_MECHANIC)
 			if(!BP_IS_ROBOTIC(organ_to_implant_into))
 				to_chat(H, SPAN_WARNING("Your [organ_to_implant_into.name] is not robotic, and therefore the [A] can not be installed!"))
+				qdel(A)
 				return
 		A.replaced(H, organ_to_implant_into)
 		to_chat(H, SPAN_NOTICE("Implanting you with [A] in your [organ_to_implant_into.name]!"))

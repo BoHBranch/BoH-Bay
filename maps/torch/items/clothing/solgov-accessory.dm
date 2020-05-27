@@ -402,7 +402,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/command/army
 	icon_state = "dept_marine"
-	desc = "Insignia denoting assignment to the command department. These fit Army and Marine Corps uniforms."
+	desc = "Insignia denoting assignment to the command department. These fit Marine Corps uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/engineering
@@ -423,7 +423,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/engineering/army
 	icon_state = "dept_marine"
-	desc = "Insignia denoting assignment to the engineering department. These fit Army and Marine Corps uniforms."
+	desc = "Insignia denoting assignment to the engineering department. These fit Marine Corps uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/security
@@ -445,7 +445,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/security/army
 	icon_state = "dept_marine"
-	desc = "Insignia denoting assignment to the security department. These fit Army and Marine Corps uniforms."
+	desc = "Insignia denoting assignment to the security department. These fit Marine Corps uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/medical
@@ -468,7 +468,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/medical/army
 	icon_state = "dept_marine"
-	desc = "Insignia denoting assignment to the medical department. These fit Army and Marine Corps uniforms."
+	desc = "Insignia denoting assignment to the medical department. These fit Marine Corps uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/supply
@@ -490,7 +490,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/supply/army
 	icon_state = "dept_marine"
-	desc = "Insignia denoting assignment to the supply department. These fit Army and Marine Corps uniforms."
+	desc = "Insignia denoting assignment to the supply department. These fit Marine Corps uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/service
@@ -512,7 +512,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/service/army
 	icon_state = "dept_marine"
-	desc = "Insignia denoting assignment to the service department. These fit Army and Marine Corps uniforms."
+	desc = "Insignia denoting assignment to the service department. These fit Marine Corps uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/exploration
@@ -533,7 +533,7 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/exploration/army
 	icon_state = "dept_marine"
-	desc = "Insignia denoting assignment to the exploration department. These fit Army and Marine Corps uniforms."
+	desc = "Insignia denoting assignment to the exploration department. These fit Marine Corps uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/research
@@ -736,7 +736,7 @@ ranks - army
 **************/
 /obj/item/clothing/accessory/solgov/rank/army
 	name = "army ranks"
-	desc = "Insignia denoting army rank of some kind. These appear blank."
+	desc = "Insignia denoting Marine rank of some kind. These appear blank."
 	icon_state = "armyrank_enlisted"
 	on_rolled = list("down" = "none")
 
@@ -786,7 +786,7 @@ ranks - army
 	desc = "Insignia denoting the rank of Command Sergeant Major."
 
 /obj/item/clothing/accessory/solgov/rank/army/enlisted/e9_alt2
-	name = "ranks (E-9 sergeant major of the Army)"
+	name = "ranks (E-9 sergeant major of the Marine Corp)"
 	desc = "Insignia denoting the rank of Sergeant Major of the Army."
 
 /obj/item/clothing/accessory/solgov/rank/army/officer
