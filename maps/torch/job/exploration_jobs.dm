@@ -95,7 +95,8 @@
 	                    SKILL_WEAPONS     = SKILL_EXPERT)
 
 	access = list(access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,
-		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar,
+		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar, 
+		access_expedition_shuttle_helm,
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
