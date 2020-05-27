@@ -2,6 +2,7 @@
 	slot = slot_wear_suit
 	sort_category = "Suits and Overwear"
 	category = /datum/gear/suit
+	banned_species = list(SPECIES_PLASMASANS)
 
 /datum/gear/suit/poncho
 	display_name = "poncho selection"

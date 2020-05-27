@@ -207,7 +207,7 @@
 
 		if("Reset Machine")
 			usr.unset_machine()
-		
+
 		if("up hint")
 			if(isliving(usr))
 				var/mob/living/L = usr
@@ -257,31 +257,23 @@
 							for(var/i=1, i<tankcheck.len+1, ++i)
 								if(istype(tankcheck[i], /obj/item/weapon/tank))
 									var/obj/item/weapon/tank/t = tankcheck[i]
-									if (!isnull(t.manipulated_by) && t.manipulated_by != C.real_name && findtext(t.desc,breathes))
-										contents.Add(t.air_contents.total_moles)	//Someone messed with the tank and put unknown gasses
-										continue					//in it, so we're going to believe the tank is what it says it is
-									if(t.air_contents.gas[breathes] && !t.air_contents.gas[GAS_PHORON])
-										contents.Add(t.air_contents.gas[breathes])
-									else
-										contents.Add(0)
+									to_chat(C,"We breathe [breathes] and we're checking [t]. It has a score of [t.air_contents.gas[breathes]].")
+									contents.Add(t.air_contents.gas[breathes])
 								else
 									//no tank so we set contents to 0
 									contents.Add(0)
 
 							//Alright now we know the contents of the tanks so we have to pick the best one.
-
 							var/best = 0
 							var/bestcontents = 0
-							for(var/i=1, i <  contents.len + 1 , ++i)
+							for(var/i=1, i <= contents.len, i++)
 								if(!contents[i])
 									continue
 								if(contents[i] > bestcontents)
 									best = i
 									bestcontents = contents[i]
 
-
 							//We've determined the best container now we set it as our internals
-
 							if(best)
 								C.set_internals(tankcheck[best], "\the [tankcheck[best]] [from] your [nicename[best]]")
 
