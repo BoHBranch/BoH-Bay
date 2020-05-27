@@ -102,7 +102,7 @@
 /obj/item/projectile/energy/stinger
 	name = "stinger pellet"
 	nodamage = 1
-	agony = 3
+	agony = 4
 	armor_penetration = 20
 	icon_state = "cbbolt"
 	var/dizziness_amt = 5
