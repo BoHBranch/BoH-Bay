@@ -146,7 +146,7 @@
 	fire_delay = 1
 	burst = 3
 	self_recharge = 1
-	recharge_time = 2
+	recharge_time = 1.5
 	max_shots = 60
 	move_delay= 0.5
 	projectile_type = /obj/item/projectile/energy/stinger
