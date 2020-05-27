@@ -132,3 +132,22 @@
 	max_shots = 4
 	projectile_type = /obj/item/projectile/beam/confuseray
 	combustion = 0
+
+/obj/item/weapon/gun/energy/stinger
+	name = "stinger stunrifle"
+	desc = "The Stinger MK1 is a different approach in nonlethal weaponry, opting for superior firerate and ammo capacity over accurate and powerful stunbeams. Seems to also be able to self-recharge. Fires in 3 round bursts."
+	icon = 'icons/obj/guns/stinger.dmi'
+	icon_state = "stinger"
+	w_class = ITEM_SIZE_HUGE
+	slot_flags = SLOT_BACK
+	one_hand_penalty = 7
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 4)
+	force = 10
+	fire_delay = 1
+	burst = 3
+	self_recharge = 1
+	recharge_time = 2
+	max_shots = 60
+	move_delay= 0.5
+	projectile_type = /obj/item/projectile/energy/stinger
+	wielded_item_state = "stinger-wielded"
