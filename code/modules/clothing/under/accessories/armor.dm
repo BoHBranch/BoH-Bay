@@ -11,18 +11,22 @@
 	slots = 2
 
 /obj/item/clothing/accessory/storage/pouches/blue
+	name = "blue storage pouches"
 	desc = "A collection of blue pouches that can be attached to a plate carrier. Carries up to two items."
 	icon_state = "pouches_blue"
 
 /obj/item/clothing/accessory/storage/pouches/navy
+	name = "navy storage pouches"
 	desc = "A collection of navy blue pouches that can be attached to a plate carrier. Carries up to two items."
 	icon_state = "pouches_navy"
 
 /obj/item/clothing/accessory/storage/pouches/green
+	name = "green storage pouches"
 	desc = "A collection of green pouches that can be attached to a plate carrier. Carries up to two items."
 	icon_state = "pouches_green"
 
 /obj/item/clothing/accessory/storage/pouches/tan
+	name = "tan storage pouches"
 	desc = "A collection of tan pouches that can be attached to a plate carrier. Carries up to two items."
 	icon_state = "pouches_tan"
 
@@ -34,18 +38,22 @@
 	slowdown = 1
 
 /obj/item/clothing/accessory/storage/pouches/large/blue
+	name = "large blue storage pouches"
 	desc = "A collection of blue pouches that can be attached to a plate carrier. Carries up to four items."
 	icon_state = "lpouches_blue"
 
 /obj/item/clothing/accessory/storage/pouches/large/navy
+	name = "large navy storage pouches"
 	desc = "A collection of navy blue pouches that can be attached to a plate carrier. Carries up to four items."
 	icon_state = "lpouches_navy"
 
 /obj/item/clothing/accessory/storage/pouches/large/green
+	name = "large green storage pouches"
 	desc = "A collection of green pouches that can be attached to a plate carrier. Carries up to four items."
 	icon_state = "lpouches_green"
 
 /obj/item/clothing/accessory/storage/pouches/large/tan
+	name = "large tan storage pouches"
 	desc = "A collection of tan pouches that can be attached to a plate carrier. Carries up to four items."
 	icon_state = "lpouches_tan"
 

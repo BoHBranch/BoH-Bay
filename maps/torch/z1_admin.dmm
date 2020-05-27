@@ -23,6 +23,12 @@
 	icon_state = "steel"
 	},
 /area/centcom/control)
+"aaf" = (
+/obj/machinery/vending/engineering{
+	req_access = list("ACCESS_MERCHANT")
+	},
+/turf/simulated/floor/tiled,
+/area/merchant_station)
 "aao" = (
 /turf/space,
 /area/shuttle/escape_pod1/centcom)
@@ -12615,10 +12621,6 @@
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
-"yaW" = (
-/obj/machinery/vending/engineering/bearcat,
-/turf/simulated/floor/tiled,
-/area/merchant_station)
 
 (1,1,1) = {"
 ala
@@ -21964,7 +21966,7 @@ aMf
 aUP
 aVl
 aVK
-yaW
+aaf
 aWI
 aXa
 aXs
