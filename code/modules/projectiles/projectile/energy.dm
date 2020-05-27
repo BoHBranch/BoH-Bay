@@ -97,6 +97,26 @@
 	stutter = 10
 	weaken = 2
 
+// used by Stinger
+
+/obj/item/projectile/energy/stinger
+	name = "stinger pellet"
+	nodamage = 1
+	agony = 3
+	armor_penetration = 20
+	icon_state = "cbbolt"
+	var/dizziness_amt = 5
+
+/obj/item/projectile/energy/stinger/proc/hit(var/mob/living/carbon/M)
+
+	if(!istype(M))
+		return
+	M.make_dizzy(dizziness_amt)
+
+/obj/item/projectile/energy/stinger/on_hit(var/atom/target)
+	hit(target)
+	. = ..()
+
 /obj/item/projectile/energy/bolt/large
 	name = "largebolt"
 	weaken = 5
