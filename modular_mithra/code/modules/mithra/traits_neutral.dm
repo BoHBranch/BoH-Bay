@@ -57,3 +57,53 @@
 	desc = "You're only able to eat plants. Eating meat and other animal protein will poison you."
 	cost = 0
 	var_changes = list(reagent_tag = IS_HERBIVORE)
+	
+/datum/trait/gigantism
+	name = "Gigantismo"
+	desc = "Eres extremadamente alto."
+	cost = 0
+
+	apply(var/datum/species/S,var/mob/living/carbon/human/H)
+		..(S,H)
+		if(H)
+			H.size_multiplier = 1.22
+
+	excludes = list(/datum/trait/tiny)
+	
+/datum/trait/tall
+	name = "Alta estatura"
+	desc = "Eres considerablemente alto."
+	cost = 0
+
+	apply(var/datum/species/S,var/mob/living/carbon/human/H)
+		..(S,H)
+		if(H)
+			H.size_multiplier = 1.10
+
+	excludes = list(/datum/trait/tiny)
+
+
+/datum/trait/tiny
+	name = "Enanismo"
+	desc = "Eres extremadamente pequeño."
+	cost = 0
+	
+	apply(var/datum/species/S,var/mob/living/carbon/human/H)
+		..(S,H)
+		if(H)
+			H.size_multiplier = 0.75
+
+	excludes = list(/datum/trait/gigantism)
+	
+/datum/trait/shorty
+	name = "Baja estatura"
+	desc = "Eres algo pequeño."
+	cost = 0
+	
+	apply(var/datum/species/S,var/mob/living/carbon/human/H)
+		..(S,H)
+		if(H)
+			H.size_multiplier = 0.90
+
+	excludes = list(/datum/trait/gigantism)
+	
