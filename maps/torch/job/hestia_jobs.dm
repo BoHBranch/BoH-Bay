@@ -54,8 +54,10 @@
 	title = "Squad Lead"
 	department = "Infantry"
 	department_flag = INF
+	head_position = 1
 	total_positions = 0
 	spawn_positions = 0
+
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
 	minimal_player_age = 12
