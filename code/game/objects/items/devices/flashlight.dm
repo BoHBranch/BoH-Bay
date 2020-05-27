@@ -144,7 +144,7 @@
 	icon_state = "flashdark"
 	item_state = "flashdark"
 	flashlight_max_bright = -1
-	flashlight_outer_range = 4
+	flashlight_outer_range = 5
 	flashlight_inner_range = 1
 
 /obj/item/device/flashlight/pen
