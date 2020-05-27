@@ -25,6 +25,12 @@
 /datum/gear/uniform/dress
 	allowed_roles = FORMAL_ROLES
 
+/datum/gear/uniform/kimono
+	display_name = "kimono, colour select"
+	path = /obj/item/clothing/under/kimono
+	flags = GEAR_HAS_COLOR_SELECTION
+	allowed_roles = FORMAL_ROLES
+
 /datum/gear/uniform/cheongsam
 	allowed_roles = FORMAL_ROLES
 
