@@ -15014,7 +15014,7 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/engineering/engineering_monitoring)
+/area/maintenance/seconddeck/aftstarboard)
 "Gb" = (
 /obj/effect/shuttle_landmark/torch/deck3/guppy,
 /turf/space,
@@ -19708,24 +19708,6 @@
 "XR" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/assembly/robotics/lower)
-"XS" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/engineering/engineering_monitoring)
 "XV" = (
 /obj/machinery/button/blast_door{
 	desc = "A remote-control switch.";
@@ -19872,7 +19854,7 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/engineering/engineering_monitoring)
+/area/maintenance/seconddeck/aftstarboard)
 "Yn" = (
 /obj/effect/floor_decal/corner/black{
 	icon_state = "corner_white";
@@ -40554,7 +40536,7 @@ bZ
 Je
 ee
 GM
-XS
+iF
 jw
 jY
 iE
@@ -40756,7 +40738,7 @@ ee
 ee
 ee
 QJ
-XS
+iF
 jw
 hT
 kJ
