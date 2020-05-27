@@ -160,6 +160,7 @@
 	possible_transfer_amounts = null
 	volume = 600
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_ENGINEERING = 3)
+	matter = list(MATERIAL_STEEL = 2500)
 	step_delay = 8
 
 /obj/item/weapon/reagent_containers/spray/chemsprayer/Spray_at(atom/A as mob|obj)
