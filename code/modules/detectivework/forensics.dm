@@ -62,9 +62,6 @@ obj/item/var/list/trace_DNA
 		var/mob/living/carbon/human/H = M
 		if (H.gloves && H.gloves.body_parts_covered & HANDS && H.gloves != src)
 			if(istype(H.gloves, /obj/item/clothing/gloves)) //Don't add prints if you are wearing gloves.
-				var/obj/item/clothing/gloves/G = H.gloves
-				if(!G.clipped) //Fingerless gloves leave prints.
-					return 0
 			else if(prob(75))
 				return 0
 			H.gloves.add_fingerprint(M)
