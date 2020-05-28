@@ -3596,11 +3596,6 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	icon_state = "1-8";
-	dir = 8;
-	d2 = 2
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "hf" = (
@@ -3623,11 +3618,6 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "hh" = (
@@ -3648,11 +3638,6 @@
 /turf/simulated/floor/plating,
 /area/engineering/engine_smes)
 "hi" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -3660,10 +3645,10 @@
 	dir = 5
 	},
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
@@ -11275,6 +11260,16 @@
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
+"wf" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/ladder/up,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "wg" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green{
 	dir = 5
@@ -11575,15 +11570,6 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/bluespace)
-"xk" = (
-/obj/structure/catwalk,
-/obj/machinery/power/apc{
-	name = "south bump";
-	pixel_y = -28
-	},
-/obj/structure/cable/green,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/aftstarboard)
 "xp" = (
 /obj/random/junk,
 /obj/structure/cable{
@@ -11838,6 +11824,10 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/maintenance/seconddeck/foreport)
+"yo" = (
+/obj/structure/grille,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/seconddeck/central)
 "yr" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -12123,6 +12113,15 @@
 "zd" = (
 /turf/simulated/floor/tiled/freezer,
 /area/maintenance/seconddeck/foreport)
+"zi" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/table/rack/shelf,
+/obj/random/illegal,
+/obj/random/toolbox,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/seconddeck/central)
 "zk" = (
 /obj/structure/sign/warning/compressed_gas{
 	icon_state = "hikpa";
@@ -12176,11 +12175,6 @@
 	icon_state = "2-4"
 	},
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "zr" = (
@@ -12561,6 +12555,17 @@
 	icon_state = "2-4"
 	},
 /obj/structure/catwalk,
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24;
+	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "Am" = (
@@ -12640,6 +12645,22 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/engineering/storage)
+"Av" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/catwalk,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/aftstarboard)
 "Aw" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/plating,
@@ -12965,14 +12986,6 @@
 "Bm" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/vacant/cargo)
-"Bp" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "Bq" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
@@ -13162,16 +13175,6 @@
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/plating,
 /area/vacant/cargo)
-"BU" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/ladder/up,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "BV" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/random/maintenance/solgov/clean,
@@ -13756,26 +13759,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/auxsolarport)
-"Dw" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/seconddeck/aftstarboard)
 "Dx" = (
 /obj/structure/table/rack{
 	dir = 8
@@ -14578,6 +14561,10 @@
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/plating,
 /area/engineering/fuelbay)
+"Ft" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "Fu" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -14994,19 +14981,6 @@
 "GW" = (
 /turf/simulated/wall/r_wall/hull,
 /area/storage/tech)
-"GX" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/medical)
 "GY" = (
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -15545,26 +15519,6 @@
 "Ir" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/auxsolarport)
-"Is" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/obj/structure/cable/green{
-	icon_state = "1-4";
-	dir = 1;
-	d2 = 2
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/aftstarboard)
 "Iy" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /obj/structure/window/reinforced{
@@ -16064,6 +16018,14 @@
 /obj/machinery/light/spot,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
+"Ku" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "Kv" = (
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
@@ -17219,15 +17181,6 @@
 /obj/effect/floor_decal/corner/yellow,
 /turf/simulated/floor/tiled,
 /area/engineering/locker_room)
-"OE" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/structure/table/rack/shelf,
-/obj/random/illegal,
-/obj/random/toolbox,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/seconddeck/central)
 "OG" = (
 /obj/machinery/shield_diffuser,
 /turf/simulated/floor/reinforced/airless,
@@ -18766,10 +18719,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/bluespace)
-"Tw" = (
-/obj/structure/grille,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/seconddeck/central)
 "Tx" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 8
@@ -19911,10 +19860,6 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/engineering/engine_room)
-"Xp" = (
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/central)
 "Xr" = (
 /obj/effect/floor_decal/techfloor{
 	icon_state = "techfloor_edges";
@@ -20230,6 +20175,19 @@
 /obj/item/weapon/storage/box/matches,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
+"Yv" = (
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/medical)
 "Yy" = (
 /obj/machinery/ai_status_display,
 /turf/simulated/wall/r_wall/prepainted,
@@ -39722,7 +39680,7 @@ aC
 aC
 bf
 bf
-Xp
+Ft
 ee
 kg
 ee
@@ -39921,10 +39879,10 @@ aa
 aa
 aa
 aC
-OE
+zi
 tG
-Tw
-Xp
+yo
+Ft
 ee
 eR
 Ge
@@ -40123,10 +40081,10 @@ ag
 ag
 aC
 aC
-Xp
-Xp
-Xp
-Xp
+Ft
+Ft
+Ft
+Ft
 ee
 eR
 Ge
@@ -40728,7 +40686,7 @@ aa
 aa
 aB
 aB
-GX
+Yv
 bq
 da
 ee
@@ -40930,7 +40888,7 @@ aa
 aa
 aB
 bn
-Bp
+Ku
 bq
 cq
 ee
@@ -41132,7 +41090,7 @@ aa
 aa
 aB
 aB
-BU
+wf
 cp
 cp
 ee
@@ -41334,7 +41292,7 @@ aa
 aa
 aB
 bQ
-Bp
+Ku
 cp
 Al
 dB
@@ -41744,7 +41702,7 @@ de
 aN
 ek
 aN
-hg
+Av
 gq
 eF
 gC
@@ -42350,7 +42308,7 @@ dg
 dh
 en
 aN
-Dw
+tx
 gq
 gq
 gq
@@ -42552,8 +42510,8 @@ dh
 aN
 em
 aN
-Is
-xk
+WK
+ZJ
 vc
 mw
 XE
