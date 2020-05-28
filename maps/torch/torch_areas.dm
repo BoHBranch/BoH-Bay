@@ -1,5 +1,5 @@
 /datum/map/torch
-//
+
 	base_floor_type = /turf/simulated/floor/reinforced/airless
 	base_floor_area = /area/maintenance/exterior
 
