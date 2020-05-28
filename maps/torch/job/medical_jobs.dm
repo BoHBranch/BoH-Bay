@@ -3,7 +3,7 @@
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 29)
+	minimum_character_age = list(SPECIES_HUMAN = 25) //this is at 25 due to the 'resident' title. If the Resident title is removed, the age should be raised.
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "the Chief Medical Officer"
@@ -137,7 +137,7 @@
 	supervisors = "the Chief Medical Officer, the Corporate Liaison and Medical Personnel"
 	selection_color = "#013d3b"
 	economic_power = 4
-	minimum_character_age = list(SPECIES_HUMAN = 25)
+	minimum_character_age = list(SPECIES_HUMAN = 21)
 	minimal_player_age = 0
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/chemist
 	allowed_branches = list(/datum/mil_branch/civilian)

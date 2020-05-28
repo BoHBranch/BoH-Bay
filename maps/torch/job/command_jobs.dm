@@ -1,4 +1,4 @@
-/datum/job/captain
+	/datum/job/captain
 	title = "Commanding Officer"
 	supervisors = "Central Command and the Sol Code of Military Justice"
 	minimal_player_age = 14
@@ -143,7 +143,7 @@
 	supervisors = "the Commanding Officer and the Executive Officer"
 	economic_power = 10
 	minimal_player_age = 6
-	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
+	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 32)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cmo
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -358,7 +358,7 @@
 	selection_color = "#2f2f7f"
 	minimal_player_age = 0
 	economic_power = 7
-	minimum_character_age = list(SPECIES_HUMAN = 22,SPECIES_UNATHI = 22,SPECIES_SERGAL = 22, SPECIES_SKRELL = 22, SPECIES_PROMETHEAN = 22, SPECIES_YEOSA = 22, SPECIES_VASS = 22, SPECIES_TAJ = 22, SPECIES_CUSTOM = 22, SPECIES_AKULA = 22)
+	minimum_character_age = list(SPECIES_HUMAN = 21,SPECIES_UNATHI = 21,SPECIES_SERGAL = 21, SPECIES_SKRELL = 21, SPECIES_PROMETHEAN = 21, SPECIES_YEOSA = 21, SPECIES_VASS = 21, SPECIES_TAJ = 21, SPECIES_CUSTOM = 21, SPECIES_AKULA = 21)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,

@@ -43,7 +43,7 @@
 	supervisors = "the Chief of Security"
 	economic_power = 5
 	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 25)
+	minimum_character_age = list(SPECIES_HUMAN = 21)
 	skill_points = 18
 	alt_titles = list(
 		"Criminal Investigator"

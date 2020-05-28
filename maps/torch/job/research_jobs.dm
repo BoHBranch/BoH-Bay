@@ -9,7 +9,7 @@
 	selection_color = "#633d63"
 	economic_power = 12
 	minimal_player_age = 3
-	minimum_character_age = list(SPECIES_HUMAN = 30)
+	minimum_character_age = list(SPECIES_HUMAN = 21)
 	alt_titles = list(
 		"Research Supervisor")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/senior_scientist
@@ -36,7 +36,7 @@
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
-	skill_points = 20
+	skill_points = 22
 
 /datum/job/scientist
 	title = "Scientist"
@@ -44,7 +44,7 @@
 	spawn_positions = 6
 	supervisors = "the Chief Science Officer and the Workplace Liaison"
 	economic_power = 10
-	minimum_character_age = list(SPECIES_HUMAN = 25)
+	minimum_character_age = list(SPECIES_HUMAN = 18)
 	minimal_player_age = 0
 	alt_titles = list(
 		"Xenoarcheologist",
@@ -79,7 +79,7 @@
 						access_xenoarch, access_nanotrasen, access_expedition_shuttle, access_guppy, access_solgov_crew, access_hangar,
 						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_robotics, access_robotics_engineering)
 	minimal_access = list()
-	skill_points = 20
+	skill_points = 22
 
 /datum/job/scientist_assistant
 	title = "Research Assistant"

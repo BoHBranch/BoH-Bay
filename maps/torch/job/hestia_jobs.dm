@@ -88,7 +88,7 @@
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 6
-	minimum_character_age = list(SPECIES_HUMAN = 24)
+	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
 						SKILL_ELECTRICAL   = SKILL_ADEPT,
