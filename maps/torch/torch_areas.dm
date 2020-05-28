@@ -203,6 +203,12 @@
 	name = "First Deck Maintenance"
 	icon_state = "maintcentral"
 
+/area/maintenance/firstdeck/cryomaint
+	name = "\improper Cryogenics Storage"
+	icon_state = "medbay3"
+	req_access = list(access_medical)
+	area_flags = AREA_FLAG_RAD_SHIELDED
+
 /area/maintenance/firstdeck/aftstarboard
 	name = "First Deck Aft Starboard Maintenance"
 	icon_state = "asmaint"
@@ -325,10 +331,6 @@
 
 /area/shuttle/escape_pod8/station
 	name = "Escape Pod Eight"
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
-
-/area/shuttle/escape_pod9/station
-	name = "Escape Pod Nine"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
 /area/shuttle/escape_pod10/station
@@ -791,7 +793,7 @@
 	req_access = list(list(access_mining, access_xenoarch))
 
 /area/storage/medical
-	name = "Medical Storage"
+	name = "Medical EVA Storage"
 	icon_state = "medbay4"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_medical)
@@ -1102,12 +1104,6 @@
 	icon_state = "toilet"
 	sound_env = SMALL_ENCLOSED
 	req_access = list()
-
-/area/chapel/crematorium
-	name = "\improper Crematorium"
-	icon_state = "chapel"
-	sound_env = SMALL_ENCLOSED
-	req_access = list(access_crematorium)
 
 /area/medical/lounge
 	name = "\improper Staff Lounge"
@@ -1469,8 +1465,20 @@
 	icon_state = "autopsy"
 
 /area/medical/sleeper
-	name = "\improper Emergency Treatment Centre"
+	name = "\improper Trauma Center"
 	icon_state = "exam_room"
+
+/area/medical/centerhall
+	name = "\improper Center Hallway"
+	icon_state = "medbay"
+
+/area/medical/triage
+	name = "\improper Triage"
+	icon_state = "medbay"
+
+/area/medical/auxstorage
+	name = "\improper Auxiliary Storage"
+	icon_state = "medbay4"
 
 /area/medical/surgery
 	name = "\improper Operating Theatre 1"

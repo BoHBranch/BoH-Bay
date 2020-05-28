@@ -973,6 +973,47 @@ var/list/floor_decals = list()
 	name = "shutoff valve marker"
 	icon_state = "shutoff"
 
+/obj/effect/floor_decal/industrial/triage
+	name = "white triage"
+	icon_state = "triage"
+	alpha = 229
+
+/obj/effect/floor_decal/industrial/triage/red
+	name = "triage"
+	color = COLOR_RED_GRAY
+
+/obj/effect/floor_decal/industrial/triage/yellow
+	name = "yellow triage"
+	color = "#cfcf55"
+
+/obj/effect/floor_decal/industrial/triage/grey
+	name = "grey triage"
+	color = "#808080"
+
+/obj/effect/floor_decal/industrial/triage/blue
+	name = "blue triage"
+	color = "#7A90A4"
+
+/obj/effect/floor_decal/industrial/triage/marker
+	name = "critical"
+	icon_state = "crit"
+
+
+/obj/effect/floor_decal/industrial/triage/marker/mid
+	name = "mid"
+	icon_state = "mid"
+
+
+/obj/effect/floor_decal/industrial/triage/marker/dead
+	name = "dead"
+	icon_state = "dead"
+
+
+/obj/effect/floor_decal/industrial/triage/marker/recovery
+	name = "blue triage"
+	icon_state = "recovery"
+
+
 /obj/effect/floor_decal/industrial/outline
 	name = "white outline"
 	icon_state = "outline"
@@ -1001,6 +1042,11 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/industrial/loading
 	name = "loading area"
 	icon_state = "loadingarea"
+	alpha = 229
+
+/obj/effect/floor_decal/industrial/loading/reversed
+	name = "reversed loading area"
+	icon_state = "revloading"
 	alpha = 229
 
 /obj/effect/floor_decal/plaque
