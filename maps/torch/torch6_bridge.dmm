@@ -2439,6 +2439,10 @@
 /obj/item/weapon/storage/secure/briefcase,
 /obj/item/weapon/storage/secure/briefcase,
 /obj/item/device/paicard,
+/obj/machinery/camera/network/bridge{
+	c_tag = "Bridge - Storage";
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "ef" = (
@@ -18707,19 +18711,6 @@
 	},
 /turf/simulated/open,
 /area/maintenance/bridge/forestarboard)
-"VF" = (
-/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
-	pixel_x = -4;
-	pixel_y = 8
-	},
-/obj/item/device/taperecorder{
-	pixel_x = -4;
-	pixel_y = 2
-	},
-/obj/structure/table/woodentable/walnut,
-/obj/item/sticky_pad/random,
-/turf/simulated/floor/carpet,
-/area/crew_quarters/heads/office/xo)
 "VL" = (
 /obj/effect/floor_decal/corner/red/half,
 /turf/simulated/floor/tiled/monotile,
