@@ -97,8 +97,6 @@
 	stutter = 10
 	weaken = 2
 
-// used by Stinger
-
 /obj/item/projectile/energy/stinger
 	name = "stinger pellet"
 	nodamage = 1
