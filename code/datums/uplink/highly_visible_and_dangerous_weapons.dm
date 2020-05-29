@@ -105,9 +105,9 @@
 	path = /obj/item/weapon/gun/energy/gun/nuclear
 
 /datum/uplink_item/item/visible_weapons/stinger_stunrifle
-	name = "Stinger MK1"
-	desc = "A self charging, rapid fire stunrifle. Great agaisnt soft targets, but requires aimming when dealing with armored targets."
-	item_cost = 45
+	name = "Stinger Stunrifle"
+	desc = "A self charging, rapid fire stunrifle. Commonly seen in the hands of slavers and backwater security forces, requires careful aimming when disabling armored targets."
+	item_cost = 50
 	path = /obj/item/weapon/gun/energy/stinger
 
 /datum/uplink_item/item/visible_weapons/heavysniper
