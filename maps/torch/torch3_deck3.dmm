@@ -2490,9 +2490,6 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "fs" = (
-/obj/effect/floor_decal/corner/lime{
-	dir = 5
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
@@ -2501,7 +2498,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "ft" = (
 /obj/machinery/firealarm{
@@ -6948,7 +6945,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/engineering/hardstorage)
 "op" = (
-/obj/effect/catwalk_plated,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -6964,7 +6960,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating,
+/obj/structure/bed/chair/wood{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "oq" = (
 /obj/structure/cable/green,
@@ -7257,10 +7256,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
 "oX" = (
-/obj/structure/bed/chair/wood{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/lime/mono,
 /obj/item/device/radio/intercom{
 	dir = 1;
 	pixel_y = -28
@@ -7270,7 +7265,11 @@
 	dir = 5;
 	icon_state = "intact"
 	},
-/turf/simulated/floor/tiled/monotile,
+/obj/machinery/vending/coffee{
+	icon_state = "coffee";
+	dir = 1
+	},
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "oY" = (
 /obj/structure/cable/green{
@@ -8081,12 +8080,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
 "qr" = (
-/obj/structure/bed/chair/wood{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/lime/three_quarters{
-	dir = 8
-	},
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
@@ -8094,29 +8087,17 @@
 	dir = 6;
 	icon_state = "intact"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "qs" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup,
-/obj/effect/floor_decal/corner/lime{
-	dir = 5
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 9;
 	icon_state = "intact"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "qt" = (
-/obj/effect/floor_decal/corner/lime/three_quarters{
-	dir = 1
-	},
-/obj/machinery/vending/cola{
-	icon_state = "Cola_Machine";
-	dir = 8
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "qv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -8661,6 +8642,7 @@
 /obj/machinery/newscaster{
 	pixel_y = 32
 	},
+/obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/aft)
 "rz" = (
@@ -8694,12 +8676,6 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/hardstorage)
-"rB" = (
-/obj/effect/floor_decal/corner/lime/three_quarters{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/hallway/primary/thirddeck/aft)
 "rC" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -9640,6 +9616,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/airlock/civilian{
+	name = "Observatory"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/aft)
 "sS" = (
@@ -9671,7 +9650,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/table/woodentable,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "sV" = (
 /obj/machinery/alarm{
@@ -9697,15 +9677,12 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "sX" = (
-/obj/effect/floor_decal/corner/lime{
-	dir = 6
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "sY" = (
 /turf/simulated/wall/prepainted,
@@ -9973,7 +9950,11 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/bed/chair/wood{
+	icon_state = "wooden_chair_preview";
+	dir = 8
+	},
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "tB" = (
 /turf/simulated/wall/prepainted,
@@ -10257,39 +10238,33 @@
 "uk" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/aft)
 "ul" = (
-/obj/effect/floor_decal/corner/lime{
-	dir = 10
-	},
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_x = 0;
 	pixel_y = -24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "um" = (
-/obj/effect/floor_decal/corner/lime{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
-/turf/simulated/floor/tiled,
+/obj/structure/bed/chair/wood{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "un" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/thruster/d3starboard)
 "uo" = (
-/obj/effect/floor_decal/corner/lime/three_quarters{
-	dir = 4
-	},
 /obj/machinery/disposal,
-/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "up" = (
 /obj/effect/wallframe_spawn/reinforced,
@@ -10394,10 +10369,11 @@
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters_boh/cabin_main/c3)
 "ux" = (
-/obj/effect/floor_decal/corner/lime{
-	dir = 4
+/obj/structure/bed/chair/wood{
+	icon_state = "wooden_chair_preview";
+	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "uy" = (
 /obj/structure/undies_wardrobe,
@@ -10817,10 +10793,6 @@
 /turf/simulated/floor/plating,
 /area/crew_quarters_boh/cabin_main/janitorial)
 "vu" = (
-/obj/structure/bed/chair/wood{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/lime/three_quarters,
 /obj/item/device/radio/intercom/entertainment{
 	dir = 1;
 	pixel_y = -28
@@ -10833,7 +10805,7 @@
 	dir = 5;
 	icon_state = "intact"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "vv" = (
 /obj/structure/closet/crate/trashcart,
@@ -12936,13 +12908,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/obj/effect/catwalk_plated,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/plating,
+/obj/structure/table/woodentable,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "zr" = (
 /obj/machinery/light{
@@ -15655,7 +15628,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "GF" = (
-/obj/effect/floor_decal/corner/lime/mono,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable{
@@ -15667,7 +15639,7 @@
 	icon_state = "intact";
 	dir = 10
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "GG" = (
 /obj/effect/floor_decal/spline/fancy/wood/corner,
@@ -16593,6 +16565,23 @@
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
+"Jn" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/wood,
+/area/hallway/primary/thirddeck/aft)
 "Jo" = (
 /obj/machinery/atmospherics/binary/passive_gate/on{
 	dir = 4;
@@ -16865,7 +16854,6 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/thirddeck/aft)
 "JK" = (
-/obj/effect/floor_decal/corner/lime/mono,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
@@ -16878,7 +16866,7 @@
 	dir = 9;
 	icon_state = "intact"
 	},
-/turf/simulated/floor/tiled/monotile,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "JL" = (
 /obj/structure/railing/mapped{
@@ -16903,7 +16891,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "JO" = (
-/obj/effect/catwalk_plated,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
 	},
@@ -16924,12 +16911,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating,
+/obj/structure/table/woodentable,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "JP" = (
-/obj/effect/floor_decal/corner/lime{
-	dir = 10
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable{
@@ -16937,7 +16922,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "JQ" = (
 /obj/structure/disposalpipe/trunk{
@@ -17194,11 +17179,14 @@
 /turf/simulated/floor/plating,
 /area/thruster/d3port)
 "Kt" = (
-/obj/effect/floor_decal/corner/lime,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/bed/chair/wood{
+	icon_state = "wooden_chair_preview";
+	dir = 8
+	},
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "Ku" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -17637,7 +17625,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/catwalk_plated,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -17647,7 +17634,8 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/plating,
+/obj/structure/table/woodentable,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "Ly" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -19150,15 +19138,6 @@
 /obj/effect/floor_decal/corner/grey/diagonal,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
-"PT" = (
-/obj/effect/floor_decal/corner/lime/three_quarters{
-	dir = 4
-	},
-/obj/machinery/vending/coffee{
-	dir = 8
-	},
-/turf/simulated/floor/tiled,
-/area/hallway/primary/thirddeck/aft)
 "PU" = (
 /obj/random/torchcloset,
 /turf/simulated/floor/tiled/techfloor,
@@ -20125,12 +20104,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
-"Tn" = (
-/obj/effect/floor_decal/corner/lime{
-	dir = 5
-	},
-/turf/simulated/floor/tiled,
-/area/hallway/primary/thirddeck/aft)
 "To" = (
 /obj/structure/lattice,
 /turf/simulated/wall/r_wall/hull,
@@ -20248,7 +20221,8 @@
 /area/maintenance/thirddeck/port)
 "TC" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled,
+/obj/structure/table/woodentable,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "TD" = (
 /turf/simulated/wall/r_wall/prepainted,
@@ -20833,9 +20807,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
 "Vn" = (
-/obj/effect/floor_decal/corner/lime{
-	dir = 1
-	},
 /obj/machinery/button/blast_door{
 	desc = "A remote control-switch for shutters.";
 	id_tag = "d3aft_shutters";
@@ -20844,7 +20815,10 @@
 	pixel_y = 26
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
-/turf/simulated/floor/tiled,
+/obj/structure/bed/chair/wood{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "Vo" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
@@ -21484,8 +21458,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "WY" = (
-/obj/structure/bed/chair/wood,
-/obj/effect/floor_decal/corner/lime/mono,
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
@@ -21496,7 +21468,8 @@
 	dir = 6;
 	icon_state = "intact"
 	},
-/turf/simulated/floor/tiled/monotile,
+/obj/machinery/vending/cola,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "WZ" = (
 /obj/structure/disposalpipe/down{
@@ -22119,15 +22092,11 @@
 /turf/simulated/floor/reinforced/airless,
 /area/space)
 "YS" = (
-/obj/structure/table/woodentable,
-/obj/effect/floor_decal/corner/lime{
-	dir = 10
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	icon_state = "intact";
 	dir = 10
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "YT" = (
 /obj/machinery/atmospherics/binary/passive_gate/on{
@@ -22404,7 +22373,8 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/obj/structure/table/woodentable,
+/turf/simulated/floor/wood,
 /area/hallway/primary/thirddeck/aft)
 "ZF" = (
 /obj/machinery/atmospherics/portables_connector{
@@ -48097,8 +48067,8 @@ nG
 oA
 wl
 wl
-Tn
-Xv
+qt
+Jn
 ul
 TE
 TE
@@ -48908,7 +48878,7 @@ qt
 ux
 tA
 Kt
-PT
+qt
 Su
 MM
 jZ
@@ -49107,7 +49077,7 @@ aI
 aI
 Su
 Su
-rB
+qt
 sX
 uo
 Su
