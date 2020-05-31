@@ -42,6 +42,7 @@
 	department_flag = SUP
 	total_positions = 1
 	spawn_positions = 1
+	head_position = 1
 	supervisors = "the head of personnel"
 	economic_power = 5
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
