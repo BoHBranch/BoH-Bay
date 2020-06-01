@@ -217,5 +217,7 @@
 	self_recharge = 1
 	recharge_time = 1
 	max_shots = 60
+	accuracy = 2 //for some reason energy bolts cant hit shit, and this weapon depends on hitting shit
+	move_delay = 0
 	projectile_type = /obj/item/projectile/energy/stinger
 	wielded_item_state = "stinger-wielded"
