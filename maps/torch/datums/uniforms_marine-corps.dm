@@ -17,7 +17,7 @@
 	utility_under_tan = /obj/item/clothing/under/solgov/utility/army/tan
 	utility_shoes = /obj/item/clothing/shoes/dutyboots
 	utility_hat = /obj/item/clothing/head/solgov/utility/army
-	utility_hat_urban = /obj/item/clothing/under/solgov/utility/army/urban
+	utility_hat_urban = /obj/item/clothing/head/solgov/utility/army/urban
 	utility_hat_tan = /obj/item/clothing/head/solgov/utility/army/tan
 	utility_extra = list(
 		/obj/item/clothing/head/beret/solgov,
