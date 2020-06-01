@@ -134,6 +134,114 @@
 	desc = ""
 	icon_state = "fenears"
 
+/datum/sprite_accessory/ears/tajplain
+	name = "Plain Tajaran Ears"
+	icon_state = "ears_plain"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajbangs
+	name = "Tajaran Bangs"
+	icon_state = "hair_bangs"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajbob
+	name = "Tajaran Bob"
+	icon_state = "hair_bob"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajbraid
+	name = "Tajaran Braid"
+	icon_state = "hair_braid"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajclean
+	name = "Tajaran Clean"
+	icon_state = "hair_clean"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajcurly
+	name = "Tajaran Curly"
+	icon_state = "hair_curly"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajfingerwave
+	name = "Tajaran Fingerwave"
+	icon_state = "hair_fingerwave"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajgreaser
+	name = "Tajaran Greaser"
+	icon_state = "hair_greaser"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajhousewife
+	name = "Tajaran Housewife"
+	icon_state = "hair_housewife"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajlong
+	name = "Tajaran Long"
+	icon_state = "hair_long"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajmessy
+	name = "Tajaran Messy"
+	icon_state = "hair_messy"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajmohawk
+	name = "Tajaran Mohawk"
+	icon_state = "hair_mohawk"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajplait
+	name = "Tajaran Plait"
+	icon_state = "hair_plait"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajrattail
+	name = "Tajaran Rat Tail"
+	icon_state = "hair_rattail"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajshaggy
+	name = "Tajaran Shaggy"
+	icon_state = "hair_shaggy"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajspiky
+	name = "Tajaran Spiky"
+	icon_state = "hair_spiky"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajstraight
+	name = "Tajaran Straight"
+	icon_state = "hair_straight"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajvictory
+	name = "Tajaran Victory"
+	icon_state = "hair_victory"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
 /datum/sprite_accessory/ears/foxearshc
 	name = "highlander zorren ears, colorable"
 	desc = ""
@@ -872,6 +980,16 @@
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "deertail_mark"
 
+
+/datum/sprite_accessory/tail/special/tajaran
+	name = "tajaran tail"
+	desc = ""
+	icon_state = "tajtail_loop1"
+	ani_state = "tajtail_loop1"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+
 /*
 //For all species tails. Includes haircolored tails.
 /datum/sprite_accessory/tail/special
@@ -885,12 +1003,7 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
-/datum/sprite_accessory/tail/special/tajaran
-	name = "tajaran tail"
-	desc = ""
-	icon_state = "tajtail_s"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY
+
 
 /datum/sprite_accessory/tail/special/sergal
 	name = "sergal tail"

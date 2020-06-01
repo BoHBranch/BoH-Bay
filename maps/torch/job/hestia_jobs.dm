@@ -44,10 +44,7 @@
 /datum/job/squad_lead
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
-		/datum/mil_rank/marine_corps/e6,
-		/datum/mil_rank/marine_corps/e7,
-		/datum/mil_rank/marine_corps/e8,
-		/datum/mil_rank/marine_corps/e9
+		/datum/mil_rank/marine_corps/e6
 	)
 	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
@@ -57,8 +54,10 @@
 	title = "Squad Lead"
 	department = "Infantry"
 	department_flag = INF
+	head_position = 1
 	total_positions = 0
 	spawn_positions = 0
+
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
 	minimal_player_age = 12
@@ -109,6 +108,7 @@
 						
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
+		/datum/mil_rank/marine_corps/e3,
 		/datum/mil_rank/marine_corps/e4,
 		/datum/mil_rank/marine_corps/e5
 		)
