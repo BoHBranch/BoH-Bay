@@ -54,7 +54,8 @@
 	minimal_player_age = 0
 	alt_titles = list(
 		"Paramedic",
-		"Corpsman")
+		"Corpsman",
+		"Nurse")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -86,7 +87,7 @@
 	skill_points = 22
 
 /datum/job/medical_trainee
-	title = "Trainee Medical Technician"
+	title = "Medical Trainee"
 	department = "Medical"
 	department_flag = MED
 	total_positions = 1
@@ -95,13 +96,16 @@
 	selection_color = "#013d3b"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	alt_titles = list(
-		"Corpsman Trainee")
+		"Trainee Medical Technician",
+		"Corpsman Trainee",
+		"Trainee Nurse")
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet
 	)
+
 	allowed_ranks = list(
 		/datum/mil_rank/ec/e3,
 		/datum/mil_rank/fleet/e2
