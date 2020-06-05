@@ -312,6 +312,11 @@
 	slot = ACCESSORY_SLOT_ARMOR_M
 	w_class = ITEM_SIZE_TINY
 
+/obj/item/clothing/accessory/armor/tag/swat
+	name = "\improper SWAT tag"
+	desc = "An armor tag with the letters SWAT printed in bottle green lettering on it."
+	icon_state = "nanotag"
+
 /obj/item/clothing/accessory/armor/tag/nt
 	name = "\improper CORPORATE SECURITY tag"
 	desc = "An armor tag with the words CORPORATE SECURITY printed in bottle green lettering on it."
