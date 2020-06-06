@@ -8068,7 +8068,7 @@
 /obj/machinery/door/airlock/sol{
 	autoset_access = 0;
 	id_tag = null;
-	name = "Foundation Advisor";
+	name = "Psionic Advisor";
 	req_access = list("ACCESS_PSIADVISOR");
 	secured_wires = 1
 	},
@@ -13473,7 +13473,7 @@
 /area/bridge)
 "wN" = (
 /obj/machinery/camera/network/command{
-	c_tag = "Foundation Advisors - Office";
+	c_tag = "Psionic Advisor - Office";
 	dir = 1;
 	network = list("Command","Engineering")
 	},
@@ -18318,7 +18318,7 @@
 /obj/machinery/door/airlock/sol{
 	autoset_access = 0;
 	id_tag = "psi_door";
-	name = "Foundation Advisor";
+	name = "Psionic Advisor";
 	req_access = list("ACCESS_PSIADVISOR");
 	secured_wires = 1
 	},
