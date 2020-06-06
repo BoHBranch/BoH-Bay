@@ -108,7 +108,7 @@
 		/obj/item/rig_module/maneuvering_jets
 	)
 
-//psi agent
+//Psionic Advisor
 
 /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor
 	name = OUTFIT_JOB_NAME("Foundation Advisor")

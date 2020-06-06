@@ -1758,8 +1758,8 @@
 	name = "\improper Cabin Janitorial"
 	icon_state = "janitor"
 
-//Foundation Advisor
+//Psionic Advisor
 /area/crew_quarters/heads/office/psiadvisor
-	name = "\improper Foundation Advisor"
+	name = "\improper Psionic Advisor"
 	icon_state = "heads"
 	req_access = list(access_psiadvisor)
