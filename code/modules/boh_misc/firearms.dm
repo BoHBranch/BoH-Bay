@@ -193,6 +193,8 @@
 	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Up-chambered for a .454 calibre round. This one has 'To the Captain of the NTSS Dagon' engraved on the grip."
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
 	caliber = CALIBER_PISTOL_MAGNUM_LARGE
+	has_firing_pin = TRUE
+	firing_pin_type = /obj/item/firing_pin/id_locked/commanding_officer
 
 /////////
 // XO Revolver
