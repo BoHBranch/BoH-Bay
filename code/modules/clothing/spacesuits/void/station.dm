@@ -319,11 +319,11 @@
 	item_state = "secalt_helm"
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_MAJOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_RESISTANT)
+		rad = ARMOR_RAD_SHIELDED)
 	camera = /obj/machinery/camera/network/security
 
 /obj/item/clothing/suit/space/void/security/alt
@@ -332,11 +332,11 @@
 	desc = "A heavily armored voidsuit, designed to intimidate people who find black intimidating. Surprisingly slimming."
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_MAJOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_MINOR)
+		rad = ARMOR_RAD_SHIELDED)
 	allowed = list(/obj/item/weapon/gun,/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/melee/baton)
 
 /obj/item/clothing/suit/space/void/security/alt/prepared

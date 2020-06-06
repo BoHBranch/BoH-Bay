@@ -79,17 +79,13 @@
 /obj/structure/closet/secure_closet/infantry/WillContain()
 	return list(
 		/obj/item/weapon/storage/belt/holster/security/tactical,
-		/obj/item/gunbox/infantry,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
 		/obj/item/clothing/glasses/tacgoggles,
-		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
+		/obj/item/clothing/suit/armor/pcarrier/light/sol,
 		/obj/item/weapon/extinguisher/mini,
 		/obj/item/device/gps,
-		/obj/item/weapon/storage/box/flares,
-		/obj/item/clothing/head/helmet/solgov/security,
-		/obj/item/clothing/accessory/storage/black_vest,
-		/obj/item/device/radio/headset/infantry/alt
+		/obj/item/weapon/storage/box/flares
 		)
 
 /obj/structure/closet/secure_closet/inftech
@@ -100,43 +96,26 @@
 /obj/structure/closet/secure_closet/inftech/WillContain()
 	return list(
 		/obj/item/weapon/storage/belt/holster/security/tactical,
-		/obj/item/gunbox/inftech,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
 		/obj/item/clothing/glasses/tacgoggles,
-		/obj/item/weapon/rcd,
-		/obj/item/weapon/rcd_ammo/large,
-		/obj/item/weapon/rcd_ammo/large,
 		/obj/item/weapon/storage/belt/utility,
 		/obj/item/weapon/weldpack/bigwelder,
 		/obj/item/weapon/storage/box/flares,
-		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
-		/obj/item/weapon/plastique,
-		/obj/item/weapon/plastique,
-		/obj/item/clothing/head/helmet/solgov/security,
-		/obj/item/clothing/accessory/storage/black_vest,
-		/obj/item/device/radio/headset/inftech/alt,
-		/obj/item/weapon/shield/riot/metal,
-		/obj/item/weapon/crowbar/brace_jack,
-		/obj/item/device/gps
+		/obj/item/clothing/suit/armor/pcarrier/light/sol,
 		)
 
 //demolocker
 /obj/structure/closet/secure_closet/inftech/ammo
-	name = "technician's munition locker"
+	name = "technician's support locker"
 	req_access = list(access_inftech)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/warden
 
 /obj/structure/closet/secure_closet/inftech/ammo/WillContain()
 	return list(
-		/obj/item/ammo_casing/rocket/rcr,
-		/obj/item/ammo_casing/rocket/rcr,
-		/obj/item/ammo_casing/rocket/rcr,
-		/obj/item/ammo_casing/rocket/rcr,
-		/obj/item/ammo_casing/rocket/rcr,
-		/obj/item/ammo_casing/rocket/rcr,
-		/obj/item/weapon/rcd_ammo/large,
-		/obj/item/weapon/rcd_ammo/large
+		/obj/item/ammo_magazine/mil_rifle/sec/large,
+		/obj/item/ammo_magazine/mil_rifle/sec/large,
+		/obj/item/ammo_magazine/mil_rifle/sec/large
 		)
 
 /obj/structure/closet/secure_closet/squad_lead
@@ -147,20 +126,14 @@
 /obj/structure/closet/secure_closet/squad_lead/WillContain()
 	return list(
 		/obj/item/weapon/storage/belt/holster/security/tactical,
-		/obj/item/gunbox/infcom,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
 		/obj/item/clothing/glasses/tacgoggles,
 		/obj/item/weapon/storage/firstaid/combat,
 		/obj/item/solbanner,
-		/obj/item/device/binoculars, 
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/device/megaphone,
-		/obj/item/weapon/storage/box/flares,
-		/obj/item/clothing/head/helmet/solgov/security,
-		/obj/item/clothing/accessory/storage/black_vest,
-		/obj/item/device/radio/headset/infcom/alt,
-		/obj/item/device/gps
+		/obj/item/weapon/storage/box/flares
 		)
 
 /////////
