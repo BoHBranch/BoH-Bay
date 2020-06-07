@@ -25,7 +25,7 @@
 /datum/uplink_item/item/stealth_items/id
 	name = "Agent ID card"
 	desc = "A unique ID card that is completely configurable. Scan another ID card with it to clone its access capabilities."
-	item_cost = 6
+	item_cost = 8
 	path = /obj/item/weapon/card/id/syndicate
 
 /datum/uplink_item/item/stealth_items/chameleon_kit
