@@ -131,7 +131,7 @@
 
 //projectile
 /obj/item/projectile/bullet/rifle/military/sec
-	damage = 50 //higher damage
+	damage = 40 //higher damage
 	armor_penetration = 5 //much worse pen - frangible bullets
 	shrapnel_chance_multiplier = 1.5
 	arterial_bleed_chance_multiplier = 1.5 //higher post pen
