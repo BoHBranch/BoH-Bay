@@ -72,7 +72,7 @@
 	icon_state = "spark_green"
 
 /obj/item/projectile/energy/electrode/stunshot
-	agony = 70
+	agony = 80
 	damage = 3
 
 /obj/item/projectile/energy/declone
