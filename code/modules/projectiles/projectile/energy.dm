@@ -66,7 +66,7 @@
 	damage = 2
 	damage_type = BURN
 	eyeblur = 1//Some feedback that you've been hit
-	step_delay = 0.6
+	step_delay = 0.85
 
 /obj/item/projectile/energy/electrode/green
 	icon_state = "spark_green"
