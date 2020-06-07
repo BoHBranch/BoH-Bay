@@ -148,7 +148,6 @@
 	damage = 10
 	agony = 40
 	embed = 0
-	armor_penetration = 5
 
 /obj/item/projectile/bullet/pistol/rubber/holdout
 	agony = 20
@@ -177,18 +176,18 @@
 	damage_flags = 0
 	agony = 75
 	embed = 0
-	armor_penetration = 5
 
-//Does more damage than slugs to unarmored targets, and moderately-armored targets at close range, but is worse at defeating armor
-//High number of pellets lends itself to more embeds
+//Spreads damage across more body parts than slugs, but is more effective up close and against unarmored opponents
+//High number of pellets with low velocity lends itself to more embeds
 /obj/item/projectile/bullet/pellet/shotgun
 	name = "shrapnel"
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 	damage = 30
-	armor_penetration = 5
+	armor_penetration = 10
 	pellets = 8
-	range_step = 1
+	range_step = 2
 	spread_step = 10
+	shrapnel_chance_multiplier = 2.0
 
 /* "Rifle" rounds */
 

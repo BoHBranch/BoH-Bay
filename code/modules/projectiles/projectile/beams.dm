@@ -27,7 +27,7 @@
 
 /obj/item/projectile/beam/smalllaser
 	damage = 25
-	armor_penetration = 7.5
+	armor_penetration = 5
 
 /obj/item/projectile/beam/midlaser
 	damage = 45
@@ -202,7 +202,7 @@
 /obj/item/projectile/beam/stun/shock
 	name = "shock beam"
 	agony = 0
-	damage = 20
+	damage = 15
 	damage_type = ELECTROCUTE
 	fire_sound='sound/weapons/pulse.ogg'
 	stutter = 2

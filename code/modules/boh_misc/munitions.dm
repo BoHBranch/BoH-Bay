@@ -18,7 +18,7 @@
 	fire_sound = 'sound/weapons/gunshot/gunshot_4mm.ogg'
 	damage = 1
 	pellets = 10
-	range_step = 1
+	range_step = 2
 	spread_step = 10
 	agony = 7
 
