@@ -1165,7 +1165,6 @@ obj/random/hostile/spawn_choices()
 
 /obj/random/hostile/maint_severe/spawn_choices()
 	return list(
-		
 		/mob/living/simple_animal/hostile/leech = 3,
 		/mob/living/simple_animal/hostile/viscerator = 1
 	)
