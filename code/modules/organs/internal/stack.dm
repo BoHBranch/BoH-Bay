@@ -67,9 +67,12 @@
 		prompting = FALSE
 		if(src && response == "Yes" && owner == current_owner)
 			overwrite()
+	var/timer = 1800
 	sleep(-1)
 	do_backup()
-
+	owner.eye_blurry = 1800
+	while(timer)
+		owner.movement_delay(2)
 	return 1
 
 /obj/item/organ/internal/stack/removed()
