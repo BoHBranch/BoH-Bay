@@ -21,6 +21,7 @@
 	range_step = 2
 	spread_step = 10
 	agony = 7
+	embed = 0
 
 //holder
 /obj/item/ammo_magazine/shotholder/birdshot
