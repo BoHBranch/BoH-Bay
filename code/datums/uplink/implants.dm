@@ -14,7 +14,7 @@
 	name = "Compressed Matter Implant"
 	desc = "An implant with an emotive trigger used to hide a handheld item in your body. \
 	Activating it materializes the item in your hand."
-	item_cost = 32
+	item_cost = 22
 	path = /obj/item/weapon/storage/box/syndie_kit/imp_compress
 
 /datum/uplink_item/item/implants/imp_explosive
