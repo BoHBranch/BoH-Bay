@@ -204,7 +204,7 @@
 /datum/uplink_item/item/visible_weapons/energyshield
 	name = "Energy Shield"
 	desc = "A shield capable of stopping most projectile and melee attacks. It can be retracted, expanded, and stored anywhere."
-	item_cost = 30
+	item_cost = 28
 	path = /obj/item/weapon/shield/energy
 
 /datum/uplink_item/item/visible_weapons/
