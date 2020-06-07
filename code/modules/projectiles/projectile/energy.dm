@@ -66,13 +66,13 @@
 	damage = 2
 	damage_type = BURN
 	eyeblur = 1//Some feedback that you've been hit
-	step_delay = 0.7
+	step_delay = 0.6
 
 /obj/item/projectile/energy/electrode/green
 	icon_state = "spark_green"
 
 /obj/item/projectile/energy/electrode/stunshot
-	agony = 80
+	agony = 70
 	damage = 3
 
 /obj/item/projectile/energy/declone
@@ -121,14 +121,15 @@
 	name = "plasma pulse"
 	icon_state = "plasma_stun"
 	fire_sound = 'sound/weapons/blaster.ogg'
-	armor_penetration = 10
-	life_span = 4
+	armor_penetration = 20
+	life_span = 5
 	damage = 5
 	agony = 70
 	damage_type = BURN
 	vacuum_traversal = 0
-	var/min_dizziness_amt = 60
-	var/med_dizziness_amt = 120
+	step_delay = 0.85
+	var/min_dizziness_amt = 100
+	var/med_dizziness_amt = 200
 	var/max_dizziness_amt = 300
 
 /obj/item/projectile/energy/plasmastun/proc/bang(var/mob/living/carbon/M)

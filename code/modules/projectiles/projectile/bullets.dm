@@ -140,12 +140,15 @@
 	distance_falloff = 2.5
 	armor_penetration = 15
 
-/obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
+//"rubber" bullets
+//Armor pen is to prevent them from being invalidated by an especially thick jacket, as has been the case.
+/obj/item/projectile/bullet/pistol/rubber
 	name = "rubber bullet"
 	damage_flags = 0
 	damage = 10
-	agony = 35
+	agony = 40
 	embed = 0
+	armor_penetration = 5
 
 /obj/item/projectile/bullet/pistol/rubber/holdout
 	agony = 20
@@ -174,16 +177,16 @@
 	damage_flags = 0
 	agony = 75
 	embed = 0
-	armor_penetration = 0
+	armor_penetration = 5
 
-//Should do about 80 damage at 1 tile distance (adjacent), and 50 damage at 3 tiles distance.
-//Overall less damage than slugs in exchange for more damage at very close range and more embedding
+//Does more damage than slugs to unarmored targets, and moderately-armored targets at close range, but is worse at defeating armor
+//High number of pellets lends itself to more embeds
 /obj/item/projectile/bullet/pellet/shotgun
 	name = "shrapnel"
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
-	damage = 35
+	damage = 30
 	armor_penetration = 5
-	pellets = 6
+	pellets = 8
 	range_step = 1
 	spread_step = 10
 
