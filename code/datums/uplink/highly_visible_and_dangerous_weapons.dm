@@ -39,7 +39,7 @@
 	name = "Energy Sword"
 	desc = "A hilt, that when activated, creates a solid beam of pure energy in the form of a sword. \
 			Able to slice through people like butter!"
-	item_cost = 64
+	item_cost = 54
 	path = /obj/item/weapon/melee/energy/sword
 
 /datum/uplink_item/item/visible_weapons/silenced
@@ -204,7 +204,7 @@
 /datum/uplink_item/item/visible_weapons/energyshield
 	name = "Energy Shield"
 	desc = "A shield capable of stopping most projectile and melee attacks. It can be retracted, expanded, and stored anywhere."
-	item_cost = 56
+	item_cost = 30
 	path = /obj/item/weapon/shield/energy
 
 /datum/uplink_item/item/visible_weapons/
