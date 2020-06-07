@@ -70,7 +70,7 @@
 /datum/uplink_item/item/visible_weapons/revolver
 	name = "Magnum Revolver"
 	desc = "A high-caliber revolver. Includes an extra speedloader of ammo."
-	item_cost = 56
+	item_cost = 52
 	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/revolver
 
 /datum/uplink_item/item/visible_weapons/grenade_launcher
