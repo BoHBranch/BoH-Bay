@@ -486,7 +486,6 @@ obj/random/closet //A couple of random closets to spice up maint
 		/mob/living/simple_animal/mouse,
 		/mob/living/simple_animal/opossum,
 		/mob/living/carbon/alien/diona
-		
 	)
 
 /obj/random/closet/spawn_choices()
