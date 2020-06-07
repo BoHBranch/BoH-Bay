@@ -122,7 +122,7 @@
 	icon_state = "plasma_stun"
 	fire_sound = 'sound/weapons/blaster.ogg'
 	armor_penetration = 20
-	life_span = 5
+	life_span = 4
 	damage = 5
 	agony = 70
 	damage_type = BURN
