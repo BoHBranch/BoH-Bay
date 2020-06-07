@@ -243,15 +243,15 @@
 		switch(construction_stage)
 			if(6)
 
-				if(istype(W, /obj/item/psychic_power/psiblade/master/grand/paramount))
+				if(istype(W,/obj/item/psychic_power/psiblade/master) || istype(W, /obj/item/weapon/gun/energy/plasmacutter))
 
-					to_chat(user, "<span class='notice'>You sink \the [W] into the wall and begin trying to rip out the support frame...</span>")
+					to_chat(user, "<span class='notice'>You line up \the [W] with the wall and begin trying to cut into the support frame...</span>")
 					playsound(src, 'sound/items/Welder.ogg', 100, 1)
 
 					if(!do_after(user, 60, src))
 						return
 
-					to_chat(user, "<span class='notice'>You tear through the wall's support system and plating!</span>")
+					to_chat(user, "<span class='notice'>You cleanly tear through the wall's support system and plating!</span>")
 					dismantle_wall()
 					user.visible_message("<span class='warning'>The wall was torn open by [user]!</span>")
 					playsound(src, 'sound/items/Welder.ogg', 100, 1)
