@@ -15,8 +15,8 @@
 	desc = "Nanomachines, son."
 	action_button_name = "Toggle Nanomachines"
 	var/obj/aura/nanoaura/aura = null
-	var/charges = 4
-	var/max_charges = 4
+	var/charges = 1
+	var/max_charges = 1
 	var/list/memesounds = list('sound/effects/nanomachines/nanomachinesson.ogg', 'sound/effects/nanomachines/physicaltrauma.ogg')
 	var/next_regen_time
 	var/regen_delay = 5 MINUTES
