@@ -141,16 +141,18 @@
 	armor_penetration = 15
 
 //"rubber" bullets
-//Armor pen is to prevent them from being invalidated by an especially thick jacket, as has been the case.
+//Armor pen is to prevent them from being invalidated by ARMOR_BALLISTIC_MINOR, as has been the case.
 /obj/item/projectile/bullet/pistol/rubber
 	name = "rubber bullet"
 	damage_flags = 0
 	damage = 10
 	agony = 40
 	embed = 0
+	armor_penetration = 5
 
 /obj/item/projectile/bullet/pistol/rubber/holdout
-	agony = 20
+	agony = 25
+	armor_penetration = 5
 
 //4mm. Tiny, very low damage, does not embed, but has very high penetration. Only to be used for the experimental SMG.
 /obj/item/projectile/bullet/flechette
@@ -172,9 +174,10 @@
 
 /obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
 	name = "beanbag"
-	damage = 15
+	damage = 10
 	damage_flags = 0
-	agony = 75
+	agony = 65
+	armor_penetration = 10
 	embed = 0
 
 //Spreads damage across more body parts than slugs, but is more effective up close and against unarmored opponents

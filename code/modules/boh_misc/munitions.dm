@@ -16,11 +16,11 @@
 /obj/item/projectile/bullet/pellet/birdshot
 	name = "rubbershot"
 	fire_sound = 'sound/weapons/gunshot/gunshot_4mm.ogg'
-	damage = 1
+	damage = 2
 	pellets = 10
 	range_step = 2
 	spread_step = 10
-	agony = 7
+	agony = 8.5
 	embed = 0
 
 //holder
