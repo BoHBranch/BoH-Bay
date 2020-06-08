@@ -46,7 +46,6 @@
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/labcoat
-	allowed_roles = DOCTOR_ROLES
 
 /datum/gear/suit/labcoat_corp
 	allowed_roles = DOCTOR_ROLES
@@ -73,7 +72,6 @@
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/leather
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/wintercoat
 

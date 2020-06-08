@@ -1,4 +1,4 @@
-// This system is used to grab a ghost from observers with the required preferences 
+// This system is used to grab a ghost from observers with the required preferences
 // and lack of bans set. See posibrain.dm for an example of how they are called/used.
 
 var/list/ghost_traps
@@ -23,11 +23,11 @@ var/list/ghost_traps
 	var/object = "positronic brain"
 	var/minutes_since_death = 0     // If non-zero the ghost must have been dead for this many minutes to be allowed to spawn
 	var/list/ban_checks = list("AI","Robot")
-	var/pref_check = BE_SYNTH
+	var/pref_check = null
 	var/ghost_trap_message = "They are occupying a positronic brain now."
 	var/ghost_trap_role = "Positronic Brain"
 	var/can_set_own_name = TRUE
-	var/list_as_special_role = TRUE	// If true, this entry will be listed as a special role in the character setup
+	var/list_as_special_role = FALSE	// If true, this entry will be listed as a special role in the character setup
 
 	var/list/request_timeouts
 
@@ -132,9 +132,7 @@ var/list/ghost_traps
 /datum/ghosttrap/plant
 	object = "living plant"
 	ban_checks = list("Dionaea")
-	pref_check = BE_PLANT
 	ghost_trap_message = "They are occupying a living plant now."
-	ghost_trap_role = "Plant"
 
 /datum/ghosttrap/plant/welcome_candidate(var/mob/target)
 	to_chat(target, "<span class='alium'><B>You awaken slowly, stirring into sluggish motion as the air caresses you.</B></span>")
@@ -189,9 +187,9 @@ datum/ghosttrap/drone/transfer_personality(var/mob/candidate, var/mob/living/sil
 **************/
 /datum/ghosttrap/pai
 	object = "pAI"
-	pref_check = BE_PAI
 	ghost_trap_message = "They are occupying a pAI now."
 	ghost_trap_role = "pAI"
+	pref_check = BE_PAI
 
 datum/ghosttrap/pai/assess_candidate(var/mob/observer/ghost/candidate, var/mob/target)
 	return 0
@@ -215,10 +213,8 @@ datum/ghosttrap/pai/transfer_personality(var/mob/candidate, var/mob/living/silic
 /datum/ghosttrap/cult
 	object = "cultist"
 	ban_checks = list("cultist")
-	pref_check = MODE_CULTIST
 	can_set_own_name = FALSE
 	ghost_trap_message = "They are occupying a cultist's body now."
-	ghost_trap_role = "Cultist"
 
 /datum/ghosttrap/cult/welcome_candidate(var/mob/target)
 	var/obj/item/device/soulstone/S = target.loc
@@ -233,4 +229,3 @@ datum/ghosttrap/pai/transfer_personality(var/mob/candidate, var/mob/living/silic
 /datum/ghosttrap/cult/shade
 	object = "soul stone"
 	ghost_trap_message = "They are occupying a soul stone now."
-	ghost_trap_role = "Shade"

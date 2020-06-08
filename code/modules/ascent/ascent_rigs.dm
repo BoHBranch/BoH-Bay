@@ -302,11 +302,10 @@
 		)
 	allowed = list(
 		/obj/item/clustertool,
-		/obj/item/weapon/gun/energy/particle/small,
+		/obj/item/weapon/gun,
 		/obj/item/weapon/weldingtool/electric/mantid,
 		/obj/item/device/multitool/mantid,
 		/obj/item/stack/medical/resin,
-		/obj/item/weapon/gun/energy/particle/support,
 		/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent
 	)
 

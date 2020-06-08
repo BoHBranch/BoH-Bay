@@ -131,7 +131,7 @@
 	)
 
 /obj/structure/closet/secure_closet/psiadvisor
-	name = "foundation advisor's locker"
+	name = "psionic advisor's locker"
 	req_access = list(access_psiadvisor)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/command
 
@@ -157,7 +157,7 @@
 		/obj/item/clothing/shoes/dress,
 		/obj/item/weapon/storage/box/large/psinullers,
 		/obj/item/gunbox/psyker,
-//		/obj/item/weapon/storage/secure/briefcase/jerraman,
+		/obj/item/weapon/storage/secure/briefcase/jerraman,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel/grey)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger))
 	)
