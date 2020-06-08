@@ -19,7 +19,7 @@
 	var/max_charges = 1
 	var/list/memesounds = list('sound/effects/nanomachines/nanomachinesson.ogg', 'sound/effects/nanomachines/physicaltrauma.ogg')
 	var/next_regen_time
-	var/regen_delay = 5 MINUTES
+	var/regen_delay = 2 MINUTES
 	var/regen_amount = 1
 
 /obj/item/organ/internal/augment/active/nanounit/Initialize()
