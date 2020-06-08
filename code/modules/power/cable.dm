@@ -508,7 +508,7 @@ obj/structure/cable/proc/cableColor(var/colorC)
 	if (param_color) // It should be red by default, so only recolor it if parameter was specified.
 		color = param_color
 	update_icon()
-	update_wclass()
+
 
 ///////////////////////////////////
 // General procedures
@@ -563,13 +563,6 @@ obj/structure/cable/proc/cableColor(var/colorC)
 		final_color = GLOB.possible_cable_colours[selected_color]
 	color = final_color
 	to_chat(user, "<span class='notice'>You change \the [src]'s color to [lowertext(selected_color)].</span>")
-
-/obj/item/stack/cable_coil/proc/update_wclass()
-	if(amount <= 2)
-		w_class = ITEM_SIZE_SMALL
-	else
-		w_class = ITEM_SIZE_SMALL
-
 
 
 /obj/item/stack/cable_coil/verb/make_restraint()
@@ -788,7 +781,6 @@ obj/structure/cable/proc/cableColor(var/colorC)
 	..()
 	src.amount = rand(1,2)
 	update_icon()
-	update_wclass()
 
 /obj/item/stack/cable_coil/yellow
 	color = COLOR_AMBER
