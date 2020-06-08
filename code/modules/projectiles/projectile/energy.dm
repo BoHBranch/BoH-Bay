@@ -67,7 +67,7 @@
 	damage_type = BURN
 	eyeblur = 2//More feedback that you've been hit
 	stutter = 2
-	step_delay = 0.7
+	step_delay = 0.65
 
 /obj/item/projectile/energy/electrode/green
 	icon_state = "spark_green"
@@ -75,6 +75,7 @@
 /obj/item/projectile/energy/electrode/stunshot
 	agony = 80
 	damage = 3
+	step_delay = 0.7
 
 /obj/item/projectile/energy/declone
 	name = "decloner beam"
