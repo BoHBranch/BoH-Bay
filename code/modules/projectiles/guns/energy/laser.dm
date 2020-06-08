@@ -66,6 +66,7 @@ obj/item/weapon/gun/energy/retro
 	icon_state = "caplaser"
 	item_state = "caplaser"
 	desc = "A rare weapon, handcrafted by a now defunct specialty manufacturer on Luna for a small fortune. It's certainly aged well."
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	force = 5
 	w_class = ITEM_SIZE_NORMAL
 	projectile_type = /obj/item/projectile/beam
