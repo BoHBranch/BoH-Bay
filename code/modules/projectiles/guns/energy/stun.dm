@@ -116,6 +116,7 @@
 	icon_state = "plasma_stun"
 	item_state = "plasma_stun"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_POWER = 3)
+	slot_flags = SLOT_BACK
 	fire_delay = 20
 	max_shots = 8
 	projectile_type = /obj/item/projectile/energy/plasmastun
