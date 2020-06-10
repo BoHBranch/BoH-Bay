@@ -2,6 +2,9 @@
 	path = /obj/item/weapon/syringe_cartridge
 	category = "Arms and Ammunition"
 
+/datum/fabricator_recipe/arms_ammo/flora_gun
+	path = /obj/item/weapon/gun/energy/floragun
+
 /datum/fabricator_recipe/arms_ammo/shotgun_holder
 	path = /obj/item/ammo_magazine/shotholder/empty
 
@@ -164,9 +167,18 @@
 /datum/fabricator_recipe/arms_ammo/hidden/chemdart
 	name = "chemical dart"
 	path = /obj/item/ammo_casing/chemdart
-	
+
 /datum/fabricator_recipe/arms_ammo/hidden/tacknife
 	path = /obj/item/weapon/material/knife/combat
 
 /datum/fabricator_recipe/arms_ammo/hidden/flamethrower
 	path = /obj/item/weapon/flamethrower/full
+
+/datum/fabricator_recipe/arms_ammo/hidden/rapidsyringe
+	path = /obj/item/weapon/gun/launcher/syringe/rapid
+
+/datum/fabricator_recipe/arms_ammo/hidden/chemsprayer
+	path = /obj/item/weapon/reagent_containers/spray/chemsprayer
+
+/datum/fabricator_recipe/arms_ammo/hidden/large_grenade
+	path = /obj/item/weapon/grenade/chem_grenade/large
