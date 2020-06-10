@@ -19120,7 +19120,7 @@
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "secarmwindoors";
-	name = "Security Armory Backup";
+	name = "Security Armory Emergency Open";
 	pixel_x = -26;
 	pixel_y = 1;
 	req_access = list("ACCESS_HEAD_OF_PERSONNEL")
