@@ -6,8 +6,8 @@
 	damage_type = BURN
 	damage_flags = 0
 	nodamage = 1
-	var/heavy_effect_range = 1
-	var/light_effect_range = 2
+	var/heavy_effect_range = 0
+	var/light_effect_range = 1
 
 	on_impact(var/atom/A)
 		empulse(A, heavy_effect_range, light_effect_range)
@@ -16,7 +16,7 @@
 /obj/item/projectile/ion/small
 	name = "ion pulse"
 	heavy_effect_range = 0
-	light_effect_range = 1
+	light_effect_range = 0
 
 /obj/item/projectile/ion/tiny
 	heavy_effect_range = 0
