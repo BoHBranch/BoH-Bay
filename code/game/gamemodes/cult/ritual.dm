@@ -25,7 +25,7 @@
 	if(!proximity || !iscultist(user))
 		return
 	if(A.reagents && A.reagents.has_reagent(/datum/reagent/water/holywater))
-		to_chat(user, "<span class='notice'>You unbless \the [A].</span>")
+		to_chat(user, SPAN_NOTICE(" \the [A]'s sorcery is dispelled.") )
 		var/holy2water = A.reagents.get_reagent_amount(/datum/reagent/water/holywater)
 		A.reagents.del_reagent(/datum/reagent/water/holywater)
 		A.reagents.add_reagent(/datum/reagent/water, holy2water)
@@ -37,21 +37,21 @@
 	if(istype(get_active_hand(), /obj/item/weapon/book/tome) || istype(get_inactive_hand(), /obj/item/weapon/book/tome))
 		has_tome = 1
 	else if(tome_required && mob_needs_tome())
-		to_chat(src, "<span class='warning'>This rune is too complex to draw by memory, you need to have a tome in your hand to draw it.</span>")
+		to_chat(src, SPAN_WARNING("This rune is too complex to draw by memory, you need to have a tome in your hand to draw it.") )
 		return
 	if(istype(get_equipped_item(slot_head), /obj/item/clothing/head/culthood) && istype(get_equipped_item(slot_wear_suit), /obj/item/clothing/suit/cultrobes) && istype(get_equipped_item(slot_shoes), /obj/item/clothing/shoes/cult))
 		has_robes = 1
 	var/turf/T = get_turf(src)
 	if(T.holy)
-		to_chat(src, "<span class='warning'>This place is blessed, you may not draw runes on it - defile it first.</span>")
+		to_chat(src, SPAN_WARNING("This place is blessed, you may not draw runes on it - defile it first.") )
 		return
 	if(!istype(T, /turf/simulated))
-		to_chat(src, "<span class='warning'>You need more space to draw a rune here.</span>")
+		to_chat(src, SPAN_WARNING("You need more space to draw a rune here.") ) 
 		return
 	if(locate(/obj/effect/rune) in T)
-		to_chat(src, "<span class='warning'>There's already a rune here.</span>") // Don't cross the runes
+		to_chat(src, SPAN_WARNING("There's already a rune here.") ) // Don't cross the runes
 		return
-	if(T.icon_state == "cult" || T.icon_state == "cult-narsie")
+	if(T.icon_state == "cult" || T.icon_state == "cult-narsie") //God this is an awful check.
 		cult_ground = 1
 	var/self
 	var/timer
@@ -87,7 +87,7 @@
 			self += ", having to cut your finger two more times before you make it resemble the pattern in your memory. It still looks a little off."
 			timer = 80
 			damage = 2
-	visible_message("<span class='warning'>\The [src] slices open a finger and begins to chant and paint symbols on the floor.</span>", "<span class='notice'>[self]</span>", "You hear chanting.")
+	visible_message(SPAN_WARNING("\The [src] slices open a finger and begins to chant and paint symbols on the floor.") , SPAN_NOTICE("[self]"), "You hear chanting.")
 	if(do_after(src, timer))
 		remove_blood_simple(cost * damage)
 		if(locate(/obj/effect/rune) in T)
@@ -101,8 +101,10 @@
 
 /mob/living/carbon/human/make_rune(var/rune, var/cost, var/tome_required)
 	if(should_have_organ(BP_HEART) && vessel && !vessel.has_reagent(/datum/reagent/blood, species.blood_volume * 0.7))
-		to_chat(src, "<span class='danger'>You are too weak to draw runes.</span>")
+		to_chat(src, SPAN_DANGER("You are too weak to draw runes.") )
 		return
+	if(disrupts_psionics())
+		to_chat(src, SPAN_DANGER("The words of your Lord cannot reach you, you are being nulled!") ) 
 	..()
 
 /mob/proc/remove_blood_simple(var/blood)
@@ -149,23 +151,27 @@ var/list/Tier1Runes = list(
 	/mob/proc/emp_imbue,
 	/mob/proc/cult_communicate,
 	/mob/proc/obscure,
-	/mob/proc/reveal
+	/mob/proc/reveal,
+	/mob/proc/metal_rune,
+	/mob/proc/glass_rune
 	)
 
 var/list/Tier2Runes = list(
-	/mob/proc/armor_rune,
+	/mob/proc/robe_rune,
 	/mob/proc/offering_rune,
 	/mob/proc/drain_rune,
 	/mob/proc/emp_rune,
-	/mob/proc/massdefile_rune
+	/mob/proc/greaterdefile_rune,
+	/mob/proc/summon_shade_rune
 	)
 
 var/list/Tier3Runes = list(
+	/mob/proc/armor_rune,
 	/mob/proc/weapon_rune,
 	/mob/proc/shell_rune,
-	/mob/proc/bloodboil_rune,
 	/mob/proc/confuse_rune,
-	/mob/proc/revive_rune
+	/mob/proc/revive_rune,
+	/mob/proc/pylon_rune
 )
 
 var/list/Tier4Runes = list(
@@ -208,25 +214,41 @@ var/list/Tier4Runes = list(
 
 	make_rune(/obj/effect/rune/defile, tome_required = 1)
 
-/mob/proc/massdefile_rune()
+/mob/proc/greaterdefile_rune()
 	set category = "Cult Magic"
-	set name = "Rune: Mass Defile"
+	set name = "Rune: Greater Defile"
 
-	make_rune(/obj/effect/rune/massdefile, tome_required = 1, cost = 20)
+	make_rune(/obj/effect/rune/defile/greater, tome_required = 1, cost = 10)
 
-/mob/proc/armor_rune()
+/mob/proc/metal_rune()
+	set category = "Cult Magic"
+	set name = "Rune: Summon Occult Stone"
+
+	make_rune(/obj/effect/rune/summon_metal, tome_required = 1)
+
+/mob/proc/glass_rune()
+	set category = "Cult Magic"
+	set name = "Rune: Summon fellglass"
+
+	make_rune(/obj/effect/rune/summon_glass, tome_required = 1)
+
+/mob/proc/robe_rune()
 	set category = "Cult Magic"
 	set name = "Rune: Summon Robes"
 
-	make_rune(/obj/effect/rune/armor, tome_required = 1)
+	make_rune(/obj/effect/rune/equip, tome_required = 1)
+
+/mob/proc/armor_rune()
+	set category = "Cult Magic"
+	set name = "Rune: Summon Armor"
+
+	make_rune(/obj/effect/rune/equip/space, tome_required = 1)
 
 /mob/proc/offering_rune()
 	set category = "Cult Magic"
 	set name = "Rune: Offering"
 
 	make_rune(/obj/effect/rune/offering, tome_required = 1)
-
-
 
 /mob/proc/drain_rune()
 	set category = "Cult Magic"
@@ -252,12 +274,6 @@ var/list/Tier4Runes = list(
 
 	make_rune(/obj/effect/rune/shell, cost = 10, tome_required = 1)
 
-/mob/proc/bloodboil_rune()
-	set category = "Cult Magic"
-	set name = "Rune: Blood Boil"
-
-	make_rune(/obj/effect/rune/blood_boil, cost = 20, tome_required = 1)
-
 /mob/proc/confuse_rune()
 	set category = "Cult Magic"
 	set name = "Rune: Confuse"
@@ -269,6 +285,18 @@ var/list/Tier4Runes = list(
 	set name = "Rune: Revive"
 
 	make_rune(/obj/effect/rune/revive, tome_required = 1)
+
+/mob/proc/summon_shade_rune()
+	set category = "Cult Magic"
+	set name = "Rune: Summon Shade"
+
+	make_rune(/obj/effect/rune/summon_shade, tome_required = 1, 15)
+
+/mob/proc/pylon_rune()
+	set category = "Cult Magic"
+	set name = "Rune: Raise Pylon"
+
+	make_rune(/obj/effect/rune/summon_pylon, cost = 10, tome_required = 1)
 
 /mob/proc/tearreality_rune()
 	set category = "Cult Magic"

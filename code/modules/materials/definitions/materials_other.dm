@@ -19,6 +19,7 @@
 	conductive = 0
 	construction_difficulty = MATERIAL_NORMAL_DIY
 	hidden_from_codex = TRUE
+	stack_type = /obj/item/stack/material/cult
 
 /material/cult/place_dismantled_girder(var/turf/target)
 	new /obj/structure/girder/cult(target)
@@ -26,4 +27,12 @@
 /material/cult/reinf
 	name = MATERIAL_REINFORCED_CULT
 	display_name = "runic inscriptions"
-	
+
+/material/glass/cult
+	name = MATERIAL_CULT_GLASS
+	display_name = "felglass"
+	icon_colour = "#b13d27"
+	stack_type = /obj/item/stack/material/glass/cult
+	integrity = 80
+	brute_armor = 2
+	burn_armor = 5
