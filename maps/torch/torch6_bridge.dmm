@@ -12258,7 +12258,10 @@
 	dir = 1
 	},
 /obj/structure/table/steel_reinforced,
-/obj/item/weapon/storage/toolbox/electrical,
+/obj/item/weapon/storage/toolbox/mechanical{
+	pixel_x = 2;
+	pixel_y = 3
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/turret_protected/ai_outer_chamber)
 "uG" = (
