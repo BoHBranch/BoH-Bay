@@ -1036,11 +1036,11 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 1;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -1647,11 +1647,11 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 1;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -2152,6 +2152,13 @@
 /obj/item/weapon/airlock_brace,
 /obj/item/weapon/airlock_brace,
 /obj/item/weapon/airlock_brace,
+/obj/machinery/button/blast_door{
+	id_tag = "secarmwindoors";
+	name = "Security Armory Quick Open";
+	pixel_x = 4;
+	pixel_y = 25;
+	req_access = list("ACCESS_ARMORY")
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "adI" = (
@@ -9395,13 +9402,6 @@
 	pixel_x = 7;
 	pixel_y = 6
 	},
-/obj/machinery/button/blast_door{
-	id_tag = "secarmwindoors";
-	name = "Security Armory Quick Open";
-	pixel_x = -11;
-	pixel_y = 3;
-	req_access = list("ACCESS_ARMORY")
-	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bo)
 "aqD" = (
@@ -11918,6 +11918,8 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 1;
+	id_tag = "secarmwindoors";
+	min_force = 16;
 	name = "grenade launcher";
 	req_access = list("ACCESS_ARMORY")
 	},

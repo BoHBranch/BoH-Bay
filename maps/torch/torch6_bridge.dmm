@@ -19118,13 +19118,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/button/blast_door{
-	id_tag = "secarmwindoors";
-	name = "Security Armory Emergency Open";
-	pixel_x = -26;
-	pixel_y = 1;
-	req_access = list("ACCESS_HEAD_OF_PERSONNEL")
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "XI" = (
