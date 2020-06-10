@@ -6,10 +6,10 @@
 	item_state = null
 	suit_type = "support exosuit"
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
-		energy = ARMOR_ENERGY_RESISTANT,
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_RIFLES,
+		energy = ARMOR_ENERGY_SHIELDED,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
@@ -41,7 +41,8 @@
 		/obj/item/rig_module/device/welder,
 		/obj/item/rig_module/device/clustertool,
 		/obj/item/rig_module/mounted/plasmacutter,
-		/obj/item/rig_module/maneuvering_jets
+		/obj/item/rig_module/maneuvering_jets,
+		/obj/item/rig_module/device/nanoblade
 		)
 	req_access = list(access_ascent)
 	var/mantid_caste = SPECIES_MANTID_ALATE
@@ -218,9 +219,9 @@
 	name = "gyne utility exosuit"
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
-		energy = ARMOR_ENERGY_RESISTANT,
+		bullet = ARMOR_BALLISTIC_AP,
+		laser = ARMOR_LASER_RIFLES,
+		energy = ARMOR_ENERGY_SHIELDED,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
