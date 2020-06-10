@@ -6,6 +6,7 @@
 	icon_state = "shade"
 	icon_living = "shade"
 	icon_dead = "shade_dead"
+	gender = NEUTER
 	maxHealth = 50
 	health = 50
 	universal_speak = TRUE
@@ -40,16 +41,9 @@
 /mob/living/simple_animal/shade/cultify()
 	return
 
-/mob/living/simple_animal/shade/Life()
-	. = ..()
-	OnDeathInLife()
+/mob/living/simple_animal/shade/death()
+	..(null, SPAN_WARNING("\the[src] lets out a contented sigh as \his form unwinds."), "The bonds tying you to this mortal plane have been severed.")
+	new /obj/item/weapon/ectoplasm (src.loc)
+	ghostize()
+	qdel(src)
 
-/mob/living/simple_animal/shade/proc/OnDeathInLife()
-	if(stat == 2)
-		new /obj/item/weapon/ectoplasm (src.loc)
-		for(var/mob/M in viewers(src, null))
-			if((M.client && !( M.blinded )))
-				M.show_message("<span class='warning'>[src] lets out a contented sigh as their form unwinds.</span>")
-				ghostize()
-		qdel(src)
-		return
