@@ -524,6 +524,7 @@
 /obj/item/stack/material/glass/phoronrglass/fifty
 	amount = 50
 
+
 /obj/item/stack/material/aliumium
 	name = "alien alloy"
 	icon_state = "sheet"
@@ -560,3 +561,23 @@
 	icon_state = "brick"
 	plural_icon_state = "brick-mult"
 	max_icon_state = "brick-max"
+
+
+//------Cult stuff----//
+/obj/item/stack/material/cult
+	name = "disturbing stone"
+	default_type = MATERIAL_CULT
+	icon_state = "brick"
+	plural_icon_state = "brick-mult"
+	max_icon_state = "brick-max"
+
+/obj/item/stack/material/cult/ten
+	amount = 10
+
+/obj/item/stack/material/glass/cult
+	name = "felglass"
+	default_type = MATERIAL_CULT_GLASS
+	default_reinf_type = MATERIAL_CULT
+
+/obj/item/stack/material/glass/cult/ten
+	amount = 10
