@@ -19054,9 +19054,18 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/button/blast_door{
+	id_tag = "secarmwindoors";
+	name = "Security Armory Backup";
+	pixel_x = -26;
+	pixel_y = 5;
+	req_access = list("ACCESS_HEAD_OF_PERSONNEL")
+	},
+/obj/machinery/button/blast_door{
 	id_tag = "earm_stairs";
 	name = "Secondary Bridge Shutter Controls";
-	pixel_x = -26
+	pixel_x = -26;
+	req_access = list("ACCESS_HEAD_OF_PERSONNEL");
+	pixel_y = -6
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
