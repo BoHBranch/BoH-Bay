@@ -17866,6 +17866,7 @@
 /obj/machinery/door/firedoor,
 /obj/effect/wallframe_spawn/reinforced/hull,
 /obj/machinery/door/blast/regular/open{
+	begins_closed = 1;
 	dir = 4;
 	id_tag = "cap_window";
 	name = "CO's Quarters Shutters"
