@@ -279,8 +279,8 @@
 
 /obj/item/projectile/beam/particle/small
 	name = "particle beam"
-	damage = 25
-	armor_penetration = 30
+	damage = 30
+	armor_penetration = 40
 	shrapnel_chance_multiplier = 0.4
 	arterial_bleed_chance_multiplier = 0.4
 
