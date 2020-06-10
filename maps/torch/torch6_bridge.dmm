@@ -3884,11 +3884,7 @@
 /obj/item/device/radio/intercom/locked/ai_private{
 	pixel_y = 22
 	},
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/porta_turret{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/monotile,
 /area/turret_protected/ai_outer_chamber)
 "gu" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -4043,6 +4039,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/vault{
+	id_tag = backupbridge;
 	name = "AI Core Backup Access"
 	},
 /turf/simulated/floor/tiled/techmaint,
@@ -4292,6 +4289,9 @@
 	pixel_y = 24;
 	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_EXPLO_HELM"))
 	},
+/obj/structure/sign/warning/lethal_turrets{
+	pixel_x = 32
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_foyer)
 "hg" = (
@@ -4304,6 +4304,11 @@
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
+	},
+/obj/machinery/recharger/wallcharger{
+	dir = 4;
+	pixel_x = -23;
+	pixel_y = -3
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/turret_protected/ai_outer_chamber)
@@ -4383,9 +4388,7 @@
 "hp" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/displaycase,
-/obj/item/weapon/gun/projectile/shotgun/sabotgun{
-	starts_loaded = 0
-	},
+/obj/item/weapon/gun/projectile/heavysniper/display,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "hq" = (
@@ -4633,11 +4636,13 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/turret_protected/ai_outer_chamber)
 "hQ" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/porta_turret{
-	dir = 8
+/obj/structure/table/steel_reinforced,
+/obj/machinery/recharger/wallcharger{
+	dir = 4;
+	pixel_x = -23;
+	pixel_y = -3
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/monotile,
 /area/turret_protected/ai_outer_chamber)
 "hR" = (
 /obj/structure/cable/cyan{
@@ -5454,6 +5459,9 @@
 	},
 /obj/structure/cable/cyan{
 	icon_state = "0-8"
+	},
+/obj/machinery/porta_turret{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/turret_protected/ai)
@@ -7418,11 +7426,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/porta_turret{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/monotile,
 /area/turret_protected/ai_outer_chamber)
 "mi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -8063,10 +8067,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/turretid/stun{
-	name = "AI Chamber turret control";
-	pixel_x = -32
-	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/turret_protected/ai_outer_chamber)
 "nB" = (
@@ -8644,6 +8646,9 @@
 /obj/machinery/computer/modular/preset/cardslot/command{
 	dir = 4;
 	icon_state = "console"
+	},
+/obj/structure/sign/warning/lethal_turrets{
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/turret_protected/ai_outer_chamber)
@@ -10153,6 +10158,11 @@
 	icon_state = "intact-supply";
 	dir = 9
 	},
+/obj/machinery/recharger/wallcharger{
+	dir = 8;
+	pixel_x = 23;
+	pixel_y = -3
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/turret_protected/ai_outer_chamber)
 "qX" = (
@@ -11156,6 +11166,10 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
+/obj/machinery/turretid/stun{
+	name = "AI Chamber turret control";
+	pixel_x = 28
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/turret_protected/ai_outer_chamber)
 "sF" = (
@@ -11432,6 +11446,11 @@
 /obj/machinery/light_switch{
 	pixel_x = 6;
 	pixel_y = 8
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "backupbridge";
+	name = "Door Bolt";
+	pixel_x = -7
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "earm_stairs";
@@ -11762,19 +11781,30 @@
 /turf/simulated/floor/tiled/monotile,
 /area/turret_protected/ai_outer_chamber)
 "tJ" = (
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/turret_protected/ai_outer_chamber)
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/porta_turret{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/turret_protected/ai)
 "tK" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/r_wall/hull,
 /area/turret_protected/ai_outer_chamber)
 "tL" = (
-/obj/structure/sign/warning/lethal_turrets,
-/obj/effect/paint/black,
-/turf/simulated/wall/r_wall/hull,
-/area/turret_protected/ai_data_chamber)
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/tiled/dark,
+/area/turret_protected/ai_outer_chamber)
 "tM" = (
 /obj/structure/table/standard,
 /obj/item/weapon/reagent_containers/syringe/antiviral,
@@ -12513,6 +12543,9 @@
 	pixel_x = 24
 	},
 /obj/structure/closet/secure_closet/guncabinet/PPE,
+/obj/structure/sign/warning/lethal_turrets{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/turret_protected/ai_outer_chamber)
 "vf" = (
@@ -14042,6 +14075,17 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/aquila/medical)
+"ys" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/porta_turret{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/turret_protected/ai)
 "yw" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/glass,
@@ -16765,6 +16809,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/airlock)
+"Mf" = (
+/obj/structure/table/steel_reinforced,
+/turf/simulated/floor/tiled/monotile,
+/area/turret_protected/ai_outer_chamber)
 "Mh" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4;
@@ -16975,6 +17023,22 @@
 /obj/item/weapon/reagent_containers/food/condiment/small/packet/coffee,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/sea)
+"No" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/porta_turret{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/turret_protected/ai)
 "Np" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -19058,15 +19122,8 @@
 	id_tag = "secarmwindoors";
 	name = "Security Armory Backup";
 	pixel_x = -26;
-	pixel_y = 5;
+	pixel_y = 1;
 	req_access = list("ACCESS_HEAD_OF_PERSONNEL")
-	},
-/obj/machinery/button/blast_door{
-	id_tag = "earm_stairs";
-	name = "Secondary Bridge Shutter Controls";
-	pixel_x = -26;
-	req_access = list("ACCESS_HEAD_OF_PERSONNEL");
-	pixel_y = -6
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
@@ -42091,7 +42148,7 @@ kl
 le
 kl
 jr
-hR
+ys
 hd
 ou
 ei
@@ -42691,13 +42748,13 @@ qM
 rM
 sc
 vf
-ic
+tJ
 jr
 sK
 sk
 ss
 jr
-md
+No
 vh
 qJ
 qU
@@ -42888,7 +42945,7 @@ ad
 Rx
 qG
 ei
-hQ
+sA
 sX
 rU
 ve
@@ -42904,7 +42961,7 @@ hd
 uR
 rU
 sX
-hQ
+Mf
 ei
 qG
 Rx
@@ -43702,11 +43759,11 @@ iE
 js
 qW
 sE
-hQ
+rF
 ux
 rz
 uA
-hQ
+rF
 sr
 si
 js
@@ -44104,8 +44161,8 @@ nB
 hS
 ib
 hg
-mg
 nA
+mg
 tw
 rD
 tn
@@ -44311,7 +44368,7 @@ pv
 rF
 rF
 sG
-rF
+tL
 rF
 rF
 tr
@@ -44911,8 +44968,8 @@ Rx
 ei
 ei
 ei
-hQ
-tJ
+ei
+ei
 ei
 ei
 ei
@@ -44920,8 +44977,8 @@ gG
 ei
 ei
 ei
-tJ
-hQ
+ei
+ei
 ei
 ei
 ei
@@ -45723,7 +45780,7 @@ if
 lk
 qT
 oG
-tL
+oG
 ot
 tQ
 oG
