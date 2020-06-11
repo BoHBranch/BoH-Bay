@@ -7,7 +7,7 @@
 	shoes = /obj/item/clothing/shoes/brown
 	id_type = /obj/item/weapon/card/id/gold
 	pda_type = /obj/item/modular_computer/pda/captain
-	backpack_contents = list(/obj/item/weapon/storage/box/ids = 1)
+	backpack_contents = list(/obj/item/weapon/storage/box/ids = 1,/obj/item/gunbox/captain = 1)
 
 /decl/hierarchy/outfit/job/captain/New()
 	..()
