@@ -1863,11 +1863,11 @@
 /obj/structure/table/rack/shelf/steel,
 /obj/structure/window/reinforced{
 	dir = 1;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -1915,14 +1915,14 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 1;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/gun/energy/taser/carbine,
@@ -4080,7 +4080,7 @@
 /obj/effect/floor_decal/industrial/outline/orange,
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 1
@@ -9471,7 +9471,7 @@
 /obj/effect/floor_decal/industrial/outline/orange,
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 1
@@ -11410,14 +11410,14 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 1;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
@@ -11484,7 +11484,7 @@
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -11514,14 +11514,14 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 1;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/gun/energy/stunrevolver/rifle,
@@ -11545,7 +11545,7 @@
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -11565,7 +11565,7 @@
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -11626,7 +11626,7 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -11707,7 +11707,7 @@
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -11750,11 +11750,11 @@
 /obj/item/weapon/shield/riot/metal,
 /obj/item/weapon/shield/riot/metal,
 /obj/structure/window/reinforced{
-	health = 1e+007
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -11814,11 +11814,11 @@
 /obj/structure/table/rack/shelf/steel,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced{
-	health = 1e+007
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -11899,7 +11899,7 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/item/weapon/storage/box/ammo/shotgunammo/full,
 /obj/machinery/door/window/brigdoor/westright{
@@ -11969,11 +11969,11 @@
 /obj/item/weapon/shield/riot,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced{
-	health = 1e+007
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -12001,7 +12001,7 @@
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
@@ -12031,7 +12031,7 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
@@ -12246,7 +12246,7 @@
 "auQ" = (
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -12291,7 +12291,7 @@
 "auS" = (
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/item/weapon/gun/projectile/automatic/sec_smg{
 	starts_loaded = 0
@@ -12316,14 +12316,14 @@
 "auU" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/structure/window/reinforced{
-	health = 1e+007
+	health = null
 	},
 /obj/structure/window/reinforced{
 	dir = 4
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
@@ -12349,7 +12349,7 @@
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
-	health = 1e+006
+	health = null
 	},
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
