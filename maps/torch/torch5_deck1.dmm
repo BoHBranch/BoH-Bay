@@ -351,7 +351,7 @@
 /obj/item/weapon/folder/white,
 /obj/item/weapon/pen,
 /obj/structure/window/reinforced{
-	dir = 4
+	dir = 8
 	},
 /obj/item/device/camera,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -577,7 +577,7 @@
 /area/medical/equipstorage)
 "aaV" = (
 /obj/structure/window/reinforced{
-	dir = 4
+	dir = 8
 	},
 /obj/machinery/computer/modular/preset/medical{
 	dir = 4;
@@ -1127,7 +1127,7 @@
 /area/rnd/development)
 "abK" = (
 /obj/structure/window/reinforced{
-	dir = 4
+	dir = 8
 	},
 /obj/structure/window/reinforced,
 /obj/structure/table/reinforced,
@@ -11351,7 +11351,7 @@
 /area/assembly/robotics)
 "atM" = (
 /obj/structure/window/reinforced{
-	dir = 4
+	dir = 8
 	},
 /obj/structure/table/standard,
 /obj/item/device/integrated_circuit_printer,
@@ -11452,7 +11452,7 @@
 "atS" = (
 /obj/structure/table/standard,
 /obj/structure/window/reinforced{
-	dir = 4
+	dir = 8
 	},
 /obj/structure/window/reinforced{
 	health = 1e+007
@@ -11669,7 +11669,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/window/reinforced{
-	dir = 4
+	dir = 8
 	},
 /obj/machinery/disposal,
 /obj/machinery/alarm{
