@@ -4039,7 +4039,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/vault{
-	id_tag = backupbridge;
+	id_tag = "backupbridge";
 	name = "AI Core Backup Access"
 	},
 /turf/simulated/floor/tiled/techmaint,
