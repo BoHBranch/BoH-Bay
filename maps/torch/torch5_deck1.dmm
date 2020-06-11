@@ -2155,7 +2155,7 @@
 /obj/machinery/button/blast_door{
 	id_tag = "secarmory";
 	name = "Security Armory Quick Open";
-	pixel_x = 4;
+	pixel_x = 6;
 	pixel_y = 25;
 	req_access = list("ACCESS_ARMORY")
 	},
@@ -2332,13 +2332,6 @@
 	pixel_x = 21
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced,
 /obj/item/weapon/storage/box/ammo/pepperball/full{
 	pixel_x = -1
 	},
@@ -2897,13 +2890,6 @@
 /area/medical/morgue/autopsy)
 "afd" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/item/weapon/storage/box/ammo/solar/rubber{
 	pixel_x = -1
@@ -3415,7 +3401,7 @@
 /obj/structure/window/reinforced,
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "handgun ammunition";
 	req_access = list("ACCESS_ARMORY")
@@ -8444,7 +8430,7 @@
 /obj/structure/window/reinforced,
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "laser carbine";
 	req_access = list("ACCESS_ARMORY")
@@ -8592,13 +8578,10 @@
 /area/engineering/hardstorage/aux)
 "ape" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/closet/secure_closet{
-	name = "Secure Evidence Locker";
-	req_access = list("ACCESS_SECURITY")
-	},
 /obj/random/illegal,
 /obj/random/illegal,
 /obj/random/illegal,
+/obj/structure/closet/crate/secure/large/reinforced,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "apf" = (
@@ -8966,10 +8949,6 @@
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "apM" = (
-/obj/structure/closet/secure_closet{
-	name = "Secure Evidence Locker";
-	req_access = list("ACCESS_SECURITY")
-	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/camera/network/security{
 	c_tag = "Security Wing - Evidence Storage";
@@ -8978,6 +8957,7 @@
 /obj/random/illegal,
 /obj/random/illegal,
 /obj/random/illegal,
+/obj/structure/closet/crate/secure/large/reinforced,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "apN" = (
@@ -9401,6 +9381,13 @@
 /obj/item/weapon/stamp/brig{
 	pixel_x = 7;
 	pixel_y = 6
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "secarmory";
+	name = "Security Armory Quick Open";
+	pixel_y = 5;
+	req_access = list("ACCESS_ARMORY");
+	pixel_x = -14
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bo)
@@ -10836,7 +10823,7 @@
 	},
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "ion pistol";
 	req_access = list("ACCESS_ARMORY")
@@ -11596,14 +11583,6 @@
 "auf" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/door/window/brigdoor/westright{
-	autoset_access = 0;
-	dir = 4;
-	id_tag = secarmwindoors;
-	min_force = 16;
-	name = "spare equipment";
-	req_access = list("ACCESS_ARMORY")
-	},
 /obj/structure/window/reinforced{
 	dir = 8;
 	health = 1e+006
@@ -11729,6 +11708,24 @@
 /obj/item/weapon/shield/riot/metal,
 /obj/item/weapon/shield/riot/metal,
 /obj/item/weapon/shield/riot/metal,
+/obj/structure/window/reinforced{
+	health = 1e+007
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	health = 1e+006
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/window/brigdoor/westright{
+	autoset_access = 0;
+	dir = 1;
+	id_tag = "secarmwindoors";
+	min_force = 16;
+	name = "ballistic armor";
+	req_access = list("ACCESS_ARMORY")
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "auo" = (
@@ -11775,6 +11772,24 @@
 /obj/item/clothing/head/helmet/ablative,
 /obj/structure/table/rack/shelf/steel,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/window/reinforced{
+	health = 1e+007
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	health = 1e+006
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/window/brigdoor/westright{
+	autoset_access = 0;
+	dir = 1;
+	id_tag = "secarmwindoors";
+	min_force = 16;
+	name = "ablative armor";
+	req_access = list("ACCESS_ARMORY")
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "aur" = (
@@ -11846,6 +11861,14 @@
 	health = 1e+006
 	},
 /obj/item/weapon/storage/box/ammo/shotgunammo/full,
+/obj/machinery/door/window/brigdoor/westright{
+	autoset_access = 0;
+	dir = 1;
+	id_tag = "secarmory";
+	min_force = 16;
+	name = "slugs";
+	req_access = list("ACCESS_ARMORY")
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "aux" = (
@@ -11904,6 +11927,24 @@
 /obj/item/weapon/shield/riot,
 /obj/item/weapon/shield/riot,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/window/reinforced{
+	health = 1e+007
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	health = 1e+006
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/window/brigdoor/westright{
+	autoset_access = 0;
+	dir = 1;
+	id_tag = "secarmwindoors";
+	min_force = 16;
+	name = "riot armor";
+	req_access = list("ACCESS_ARMORY")
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "auA" = (
@@ -11954,7 +11995,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 1;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "combat shotgun";
 	req_access = list("ACCESS_ARMORY")
@@ -12198,7 +12239,7 @@
 /obj/structure/window/reinforced,
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "laser carbine";
 	req_access = list("ACCESS_ARMORY")
@@ -12246,13 +12287,13 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 1;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "buckshot";
 	req_access = list("ACCESS_ARMORY")
 	},
 /obj/effect/floor_decal/industrial/outline/orange,
-/obj/item/weapon/storage/box/ammo/shotgunshells,
+/obj/item/weapon/storage/box/ammo/shotgunshells/full,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "auW" = (
@@ -12272,7 +12313,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 1;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "combat shotgun";
 	req_access = list("ACCESS_ARMORY")
