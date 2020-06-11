@@ -3193,6 +3193,9 @@
 /obj/structure/closet{
 	name = "Evidence Closet"
 	},
+/obj/random/trash,
+/obj/random/single/lighter,
+/obj/random/junk,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "afI" = (
@@ -4245,12 +4248,21 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
 "aht" = (
-/obj/structure/table/reinforced,
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
+/obj/structure/closet{
+	name = "Evidence Closet"
+	},
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/random/tool,
+/obj/random/tool,
+/obj/random/junk,
+/obj/random/coin,
+/turf/simulated/floor/tiled/dark,
+/area/security/evidence)
 "ahu" = (
-/obj/structure/fitness/weightlifter,
-/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/table/reinforced,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ahv" = (
@@ -6204,12 +6216,8 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
 "akC" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/pen/multi,
-/obj/item/weapon/pen/fancy{
-	pixel_x = -5;
-	pixel_y = 3
-	},
+/obj/structure/fitness/weightlifter,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "akD" = (
@@ -6796,26 +6804,12 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "alw" = (
-/obj/structure/fitness/weightlifter,
-/obj/item/weapon/wrench{
-	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
-	force = 5;
-	name = "ultralite wrench";
-	throwforce = 5
+/obj/structure/table/reinforced,
+/obj/item/weapon/pen/multi,
+/obj/item/weapon/pen/fancy{
+	pixel_x = -5;
+	pixel_y = 3
 	},
-/obj/item/weapon/wrench{
-	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
-	force = 5;
-	name = "ultralite wrench";
-	throwforce = 5
-	},
-/obj/item/weapon/wrench{
-	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
-	force = 5;
-	name = "ultralite wrench";
-	throwforce = 5
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "alx" = (
@@ -6972,6 +6966,29 @@
 /obj/random/illegal,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/ammo)
+"alM" = (
+/obj/structure/fitness/weightlifter,
+/obj/item/weapon/wrench{
+	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
+	force = 5;
+	name = "ultralite wrench";
+	throwforce = 5
+	},
+/obj/item/weapon/wrench{
+	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
+	force = 5;
+	name = "ultralite wrench";
+	throwforce = 5
+	},
+/obj/item/weapon/wrench{
+	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
+	force = 5;
+	name = "ultralite wrench";
+	throwforce = 5
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "alN" = (
 /turf/simulated/floor/plating,
 /area/command/gunnery/ammo)
@@ -7058,6 +7075,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/random/material,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "amd" = (
@@ -8573,10 +8591,19 @@
 /area/engineering/hardstorage/aux)
 "ape" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/random/illegal,
-/obj/random/illegal,
-/obj/random/illegal,
-/obj/structure/closet/crate/secure/large/reinforced,
+/obj/structure/closet/crate/secure/large/reinforced{
+	req_access = list("ACCESS_FORENSICS")
+	},
+/obj/random/handgun{
+	spawn_nothing_percentage = 50
+	},
+/obj/random/bomb_supply{
+	spawn_nothing_percentage = 50
+	},
+/obj/random/bomb_supply{
+	spawn_nothing_percentage = 50
+	},
+/obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "apf" = (
@@ -8949,10 +8976,19 @@
 	c_tag = "Security Wing - Evidence Storage";
 	dir = 8
 	},
-/obj/random/illegal,
-/obj/random/illegal,
-/obj/random/illegal,
-/obj/structure/closet/crate/secure/large/reinforced,
+/obj/structure/closet/crate/secure/large/reinforced{
+	req_access = list("ACCESS_FORENSICS")
+	},
+/obj/random/bomb_supply{
+	spawn_nothing_percentage = 50
+	},
+/obj/random/bomb_supply{
+	spawn_nothing_percentage = 50
+	},
+/obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin,
+/obj/random/handgun{
+	spawn_nothing_percentage = 50
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "apN" = (
@@ -8960,8 +8996,8 @@
 /obj/machinery/light_switch{
 	pixel_x = -24
 	},
-/obj/random/illegal,
 /obj/structure/table/rack/shelf/steel,
+/obj/random/plushie,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "apO" = (
@@ -9377,12 +9413,11 @@
 	pixel_x = 7;
 	pixel_y = 6
 	},
-/obj/machinery/button/blast_door{
+/obj/machinery/button/alternate/door{
 	id_tag = "secarmory";
 	name = "Security Armory Quick Open";
-	pixel_y = 5;
-	req_access = list("ACCESS_ARMORY");
-	pixel_x = -14
+	pixel_x = -12;
+	pixel_y = 5
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bo)
@@ -11320,6 +11355,7 @@
 	},
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = -30;
+	step_x = 0
 	},
 /obj/item/weapon/storage/box/teargas{
 	pixel_x = 3;
@@ -28082,6 +28118,8 @@
 	name = "Evidence Closet"
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/masks,
+/obj/random/clothing,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "qTX" = (
@@ -41965,7 +42003,7 @@ qSD
 amb
 ape
 apM
-amb
+aht
 afH
 tkr
 xzK
@@ -43397,9 +43435,9 @@ aFV
 abn
 adB
 ahf
-aht
+ahu
 ala
-akC
+alw
 ahf
 ahf
 ank
@@ -44407,9 +44445,9 @@ aFV
 abn
 adB
 ahH
-ahu
+akC
 ahz
-alw
+alM
 amS
 amY
 aoi
