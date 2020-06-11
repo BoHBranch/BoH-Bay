@@ -11320,7 +11320,6 @@
 	},
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = -30;
-	step_x = 0
 	},
 /obj/item/weapon/storage/box/teargas{
 	pixel_x = 3;
