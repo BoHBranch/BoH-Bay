@@ -4,11 +4,11 @@
 
 /obj/item/weapon/storage/box/ammo/beanbags/full
 	name = "heavy box of beanbag shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 8)
+	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 7)
 
 /obj/item/weapon/storage/box/ammo/beanbags/half
 	name = "box of beanbag shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 4)
+	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 3)
 
 /obj/item/weapon/storage/box/ammo/beanbags/eight
 	name = "box of beanbag shells"
@@ -17,34 +17,34 @@
 /obj/item/weapon/storage/box/ammo/solar
 	name = "box of handgun magazines"
 	desc = "It has a picture of a gun and several warning symbols on the front."
-	startswith = list(/obj/item/ammo_magazine/pistol/double = 4)
+	startswith = list(/obj/item/ammo_magazine/pistol/double = 3)
 
 /obj/item/weapon/storage/box/ammo/solar/full
 	name = "box of handgun magazines"
 	desc = "It has a picture of a gun and several warning symbols on the front."
-	startswith = list(/obj/item/ammo_magazine/pistol/double = 8)
+	startswith = list(/obj/item/ammo_magazine/pistol/double = 7)
 
 /obj/item/weapon/storage/box/ammo/solar/rubber
 	name = "box of handgun 'rubber' magazines"
 	desc = "It has a picture of a gun and several warning symbols on the front."
-	startswith = list(/obj/item/ammo_magazine/pistol/double/rubber = 8)
+	startswith = list(/obj/item/ammo_magazine/pistol/double/rubber = 7)
 
 /obj/item/weapon/storage/box/ammo/shotgunammo/full
 	name = "heavy box of shotgun slugs"
-	startswith = list(/obj/item/ammo_magazine/shotholder = 8)
+	startswith = list(/obj/item/ammo_magazine/shotholder = 7)
 
 /obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full
 	name = "heavy box of rubbershot"
-	startswith = list(/obj/item/ammo_magazine/shotholder/birdshot = 8)
+	startswith = list(/obj/item/ammo_magazine/shotholder/birdshot = 7)
 
 /obj/item/weapon/storage/box/ammo/shotgunshells/full
 	name = "heavy box of shotgun shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/shell = 8)
+	startswith = list(/obj/item/ammo_magazine/shotholder/shell = 7)
 
 
 /obj/item/weapon/storage/box/ammo/sabotbox
 	name = "box of sabot shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/sabot = 8)
+	startswith = list(/obj/item/ammo_magazine/shotholder/sabot = 7)
 
 
 /obj/item/gunbox

@@ -746,6 +746,9 @@
 /obj/machinery/photocopier/faxmachine{
 	department = "Forensics Technician's Office"
 	},
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
 /area/security/detectives_office)
 "abj" = (
@@ -4255,6 +4258,9 @@
 /obj/random/junk,
 /obj/random/coin,
 /obj/random/trash,
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "ahu" = (
@@ -7068,13 +7074,13 @@
 	name = "Evidence Closet"
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/light/small{
-	dir = 4
-	},
 /obj/random/material,
 /obj/random/tool,
 /obj/random/tank,
 /obj/random/powercell,
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "amd" = (
@@ -7117,6 +7123,7 @@
 /obj/structure/cable/green,
 /obj/structure/closet/secure_closet/brigchief,
 /obj/item/weapon/crowbar/brace_jack,
+/obj/item/device/binoculars,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bo)
 "amg" = (
@@ -7536,6 +7543,11 @@
 /obj/structure/table/steel,
 /obj/effect/floor_decal/corner/red{
 	dir = 9
+	},
+/obj/structure/sign/dedicationplaque{
+	desc = "This plaque is dedicated to the security forces aboard the NTSS Dagon who have given their lives for the sake of her crew and her mission. May they always be remembered.'";
+	name = "\improper NTSS Dagon Security Forces rememberance plaque";
+	pixel_x = -32
 	},
 /turf/simulated/floor/tiled,
 /area/security/locker)
@@ -24513,8 +24525,6 @@
 /area/maintenance/firstdeck/aftstarboard)
 "lCN" = (
 /obj/structure/table/standard,
-/obj/item/device/tape/random,
-/obj/item/device/tape/random,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "lEf" = (
@@ -28882,6 +28892,13 @@
 /obj/structure/table/steel,
 /obj/item/device/taperecorder,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/item/device/tape/random{
+	pixel_y = 8;
+	pixel_x = 11
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/questioning)
 "rVb" = (
