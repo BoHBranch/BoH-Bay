@@ -3217,18 +3217,19 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_outer_chamber)
 "fs" = (
-/obj/machinery/door/airlock/vault/bolted{
-	name = "AI Core External Access"
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/vault{
+	id_tag = "backupbridge";
+	name = "AI Core Backup Access"
 	},
 /obj/machinery/door/blast/regular{
 	dir = 4;
 	id_tag = "earm_stairs";
 	name = "Chamber Lockdown"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
@@ -8620,24 +8621,25 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
 "ot" = (
-/obj/machinery/door/airlock/vault/bolted{
-	name = "AI Core External Access"
-	},
 /obj/machinery/door/blast/regular{
 	dir = 4;
 	id_tag = "earm_stairs";
 	name = "Chamber Lockdown"
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/machinery/door/airlock/vault{
+	id_tag = "backupbridge";
+	name = "AI Core Backup Access"
+	},
+/obj/machinery/door/blast/regular{
+	dir = 4;
+	id_tag = "earm_stairs";
+	name = "Chamber Lockdown"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
@@ -9093,14 +9095,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/aquila/airlock)
 "pg" = (
-/obj/machinery/door/airlock/vault/bolted{
-	name = "AI Core External Access"
-	},
-/obj/machinery/door/blast/regular{
-	dir = 4;
-	id_tag = "earm_stairs";
-	name = "Chamber Lockdown"
-	},
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
@@ -9108,6 +9102,15 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/airlock/vault{
+	id_tag = "backupbridge";
+	name = "AI Core Backup Access"
+	},
+/obj/machinery/door/blast/regular{
+	dir = 4;
+	id_tag = "earm_stairs";
+	name = "Chamber Lockdown"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
 "ph" = (
