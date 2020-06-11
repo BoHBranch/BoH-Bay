@@ -723,6 +723,18 @@
 	max_force = 5;
 	name = "dull hatchet"
 	},
+/obj/item/weapon/plantspray/weeds,
+/obj/item/weapon/plantspray/weeds,
+/obj/item/weapon/plantspray/weeds,
+/obj/item/weapon/plantspray/pests,
+/obj/item/weapon/plantspray/pests,
+/obj/item/weapon/plantspray/pests,
+/obj/item/weapon/reagent_containers/glass/bottle/robustharvest,
+/obj/item/weapon/reagent_containers/glass/bottle/robustharvest,
+/obj/item/weapon/reagent_containers/glass/bottle/robustharvest,
+/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
+/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
+/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "abh" = (
@@ -3871,12 +3883,11 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
 "agK" = (
-/obj/structure/closet/crate/freezer/rations{
-	name = "Perma Rations"
+/obj/machinery/reagentgrinder/juicer{
+	pixel_z = 8
 	},
-/obj/item/weapon/storage/box/donkpockets,
-/obj/item/weapon/storage/box/donkpockets,
-/obj/item/weapon/storage/box/donut,
+/obj/structure/table/reinforced,
+/obj/item/weapon/reagent_containers/glass/beaker,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "agL" = (
@@ -4240,6 +4251,14 @@
 /obj/item/clothing/accessory/armorplate/tactical,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
+"aht" = (
+/obj/structure/table/reinforced,
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
+"ahu" = (
+/obj/structure/fitness/weightlifter,
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "ahv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -5833,6 +5852,7 @@
 /area/security/wing)
 "ajY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ajZ" = (
@@ -6189,6 +6209,15 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
+"akC" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/pen/multi,
+/obj/item/weapon/pen/fancy{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "akD" = (
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -6496,15 +6525,19 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ala" = (
-/obj/item/weapon/stool/padded,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/item/weapon/paper_bin{
+	pixel_y = -4
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -6522,14 +6555,13 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "alc" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/storage/box/checkers,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ald" = (
@@ -6770,13 +6802,24 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "alw" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/storage/box/checkers/chess,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+/obj/structure/fitness/weightlifter,
+/obj/item/weapon/wrench{
+	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
+	force = 5;
+	name = "ultralite wrench";
+	throwforce = 5
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+/obj/item/weapon/wrench{
+	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
+	force = 5;
+	name = "ultralite wrench";
+	throwforce = 5
+	},
+/obj/item/weapon/wrench{
+	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
+	force = 5;
+	name = "ultralite wrench";
+	throwforce = 5
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -6934,17 +6977,6 @@
 /obj/random/illegal,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/ammo)
-"alM" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/storage/box/checkers/chess/red,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
 "alN" = (
 /turf/simulated/floor/plating,
 /area/command/gunnery/ammo)
@@ -6958,9 +6990,13 @@
 	icon_state = "tube1";
 	dir = 4
 	},
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen/multi,
-/obj/item/weapon/pen/fancy,
+/obj/item/weapon/deck/cards,
+/obj/machinery/vending/wallmed1{
+	dir = 8;
+	name = "Emergency NanoMed";
+	pixel_x = 28;
+	pixel_y = 4
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "alQ" = (
@@ -7050,7 +7086,6 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/media/jukebox/old,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "amf" = (
@@ -7111,6 +7146,7 @@
 /area/security/wing)
 "ami" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "amj" = (
@@ -7134,16 +7170,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
-"amk" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/storage/pill_bottle/dice,
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
-"aml" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/deck/cards,
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
 "amm" = (
 /obj/machinery/door/airlock/multi_tile/glass/security{
 	name = "Brig Wing"
@@ -7174,8 +7200,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "amo" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/storage/pill_bottle/dice_nerd,
+/obj/structure/fitness/punchingbag,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "amp" = (
@@ -7477,14 +7502,6 @@
 /obj/effect/floor_decal/corner/red,
 /turf/simulated/floor/tiled,
 /area/security/wing)
-"amR" = (
-/obj/item/weapon/stool/padded,
-/obj/machinery/flasher{
-	id_tag = "permflash";
-	pixel_x = 0
-	},
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
 "amS" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
@@ -7549,6 +7566,10 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/security/wing)
+"amY" = (
+/obj/machinery/media/jukebox/old,
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "amZ" = (
 /turf/simulated/floor/tiled/monotile,
 /area/security/detectives_office)
@@ -7570,6 +7591,9 @@
 /area/shuttle/escape_pod8/station)
 "anc" = (
 /obj/machinery/light,
+/obj/machinery/vending/fitness{
+	dir = 1
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ane" = (
@@ -7601,12 +7625,7 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/locker)
-"ani" = (
-/obj/structure/closet/secure_closet/brig,
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
 "anj" = (
-/obj/structure/closet/secure_closet/brig,
 /obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -7616,6 +7635,10 @@
 	c_tag = "Permanent Holding - Lockers";
 	dir = 1
 	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
+"anl" = (
+/obj/structure/closet/secure_closet/brig,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "anm" = (
@@ -42974,7 +42997,7 @@ amd
 ahf
 ahg
 ahf
-ani
+ahf
 akF
 anQ
 arB
@@ -43373,9 +43396,9 @@ aFV
 abn
 adB
 ahf
-ahf
+aht
 ala
-ajZ
+akC
 ahf
 ahf
 ank
@@ -43577,10 +43600,10 @@ adB
 ahf
 ajZ
 alc
-amk
 ajZ
 ahf
-ani
+ahf
+anl
 akF
 akF
 akF
@@ -43777,10 +43800,10 @@ aGb
 aoi
 abA
 ahg
-ajZ
-alw
-aml
-amR
+ahf
+ahz
+ahf
+ahg
 ahf
 anu
 akF
@@ -43979,10 +44002,10 @@ uPc
 aoi
 abD
 ahf
-ajZ
-alM
 amo
-ajZ
+ahz
+amo
+ahf
 ahf
 anv
 akF
@@ -44182,8 +44205,8 @@ abn
 adB
 ahf
 ahf
-ala
-ajZ
+ahz
+ahf
 ahf
 ahf
 anw
@@ -44383,11 +44406,11 @@ aFV
 abn
 adB
 ahH
-ahf
+ahu
 ahz
-ahf
+alw
 amS
-ahf
+amY
 aoi
 akF
 akF
