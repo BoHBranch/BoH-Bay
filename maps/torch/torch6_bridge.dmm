@@ -331,6 +331,12 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "aG" = (
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "toc_door";
+	name = "TOC door-bolt control";
+	pixel_x = -25;
+	pixel_y = 0
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "aH" = (
@@ -14199,10 +14205,6 @@
 "yD" = (
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
-"yH" = (
-/obj/machinery/light,
-/turf/simulated/floor/tiled/monotile,
-/area/turret_protected/ai_outer_chamber)
 "yM" = (
 /obj/structure/sign/dedicationplaque{
 	desc = "S.E.V. Torch - Mako Class - Sol Expeditionary Corps Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'";
@@ -15048,22 +15050,6 @@
 /obj/machinery/suit_storage_unit/medical/alt/sol,
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
-"Cj" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/door/airlock/command,
-/obj/machinery/door/firedoor/autoset,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techmaint,
-/area/turret_protected/ai_outer_chamber)
 "Cl" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -15302,6 +15288,14 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aux_eva)
+"Dv" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/turret_protected/ai_outer_chamber)
 "Dw" = (
 /turf/simulated/floor/tiled/dark,
 /area/aquila/airlock)
@@ -15315,6 +15309,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/co)
+"DC" = (
+/obj/machinery/light,
+/turf/simulated/floor/tiled/monotile,
+/area/turret_protected/ai_outer_chamber)
 "DE" = (
 /obj/structure/cable/green,
 /obj/machinery/door/firedoor,
@@ -16000,22 +15998,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge)
-"HB" = (
-/obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/structure/cable/cyan,
-/obj/effect/paint/black,
-/obj/machinery/door/firedoor/autoset,
-/obj/machinery/door/blast/regular{
-	id_tag = "heavy_ai_doors";
-	name = "Internal Chamber Lockdown"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating,
-/area/turret_protected/ai_outer_chamber)
 "HC" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -16527,17 +16509,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/aquila/storage)
-"JD" = (
-/obj/machinery/light/spot{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/steel_ridged,
-/area/turret_protected/ai_outer_chamber)
 "JE" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -17217,20 +17188,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/xo)
-"NR" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/tiled/steel_ridged,
-/area/turret_protected/ai_outer_chamber)
 "NW" = (
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
@@ -17386,6 +17343,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"Oz" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/turret_protected/ai_outer_chamber)
 "OD" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 9
@@ -17406,14 +17369,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/cl)
-"OI" = (
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/tiled/steel_ridged,
-/area/turret_protected/ai_outer_chamber)
 "OK" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/aftport)
@@ -18030,6 +17985,17 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
+"RN" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/turret_protected/ai_outer_chamber)
 "RQ" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -18076,12 +18042,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/co)
-"RZ" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/turret_protected/ai_outer_chamber)
 "Sa" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/weapon/tableflag,
@@ -18239,6 +18199,22 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
+"SI" = (
+/obj/effect/wallframe_spawn/reinforced/titanium,
+/obj/structure/cable/cyan,
+/obj/effect/paint/black,
+/obj/machinery/door/firedoor/autoset,
+/obj/machinery/door/blast/regular{
+	id_tag = "heavy_ai_doors";
+	name = "Internal Chamber Lockdown"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/turret_protected/ai_outer_chamber)
 "SJ" = (
 /obj/effect/floor_decal/corner/blue{
 	icon_state = "corner_white";
@@ -18501,6 +18477,17 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
+"TU" = (
+/obj/machinery/light/spot{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/turret_protected/ai_outer_chamber)
 "TV" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
 	dir = 4;
@@ -18714,6 +18701,22 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
+"Uv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/airlock/command,
+/obj/machinery/door/firedoor/autoset,
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/turret_protected/ai_outer_chamber)
 "Uy" = (
 /obj/structure/table/glass,
 /obj/structure/cable/green{
@@ -18892,6 +18895,20 @@
 	},
 /turf/simulated/floor/airless,
 /area/aquila/secure_storage)
+"Vv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/turret_protected/ai_outer_chamber)
 "VB" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -19231,6 +19248,20 @@
 "Xr" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/bridge/forestarboard)
+"Xs" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/turret_protected/ai_outer_chamber)
 "Xx" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/machinery/door/airlock/medical{
@@ -19640,20 +19671,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
-"Zq" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled/steel_ridged,
-/area/turret_protected/ai_outer_chamber)
 "Zs" = (
 /obj/machinery/computer/account_database,
 /obj/machinery/recharger/wallcharger{
@@ -19753,17 +19770,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
-"ZO" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel_ridged,
-/area/turret_protected/ai_outer_chamber)
 "ZP" = (
 /obj/machinery/porta_turret/exterior/dagon,
 /turf/simulated/floor/airless,
@@ -43128,8 +43134,8 @@ kj
 me
 hd
 uR
-Zq
-JD
+Vv
+TU
 Mf
 ei
 qG
@@ -43330,7 +43336,7 @@ hd
 hd
 hd
 ei
-Cj
+Uv
 ei
 ei
 ei
@@ -43532,7 +43538,7 @@ nD
 mm
 tG
 ei
-NR
+Xs
 qL
 rH
 ei
@@ -43937,7 +43943,7 @@ sr
 si
 js
 sj
-ZO
+RN
 sw
 ei
 qG
@@ -44124,7 +44130,7 @@ ad
 Rx
 qG
 ei
-RZ
+Oz
 sR
 ei
 ei
@@ -44140,7 +44146,7 @@ ei
 ei
 ei
 sO
-yH
+DC
 ei
 qG
 Rx
@@ -44340,8 +44346,8 @@ mk
 mg
 mg
 mp
-HB
-OI
+SI
+Dv
 nB
 ei
 qG

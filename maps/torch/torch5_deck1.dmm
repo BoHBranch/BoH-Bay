@@ -11165,9 +11165,9 @@
 	alarm_id = "xenobio4_alarm";
 	pixel_y = 24
 	},
-/obj/random/maintenance,
+/obj/structure/closet/secure_closet/guncabinet/PPE,
 /turf/simulated/floor/tiled/techfloor,
-/area/command/gunnery/mim)
+/area/space)
 "atv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
