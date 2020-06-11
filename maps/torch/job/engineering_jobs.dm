@@ -173,7 +173,9 @@
 	selection_color = "#5b4d20"
 	economic_power = 6
 	alt_titles = list(
-		"Mechsuit Technician")
+		"Mechsuit Technician",
+		"Biomechanical Technician"
+		)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)

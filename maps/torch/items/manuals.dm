@@ -149,3 +149,18 @@
 	<i>Regards, John.</i></tt>
 	<i>This paper has been stamped with the stamp of Office of the General Secretary of NTF.</i>
 	"}
+
+/////////
+// Inf
+/////////
+/obj/item/weapon/paper/inf
+	name = "note"
+	info = {"
+	<i>Hey, don't wear your suits or carry the firearms outside of the prep unless deploying.
+	<hr>
+	It scares every chickenshit here to Coraba-V. Seriously. Don't do it.<br>
+	Next person I catch on cameras doing it will be discharged, and relocated. This is your final and only warning.<br>
+	Keep the gear locked up. Do your duty.<br>
+	Love, Steven. From Accounting.</i>
+	<i>This paper has been stamped with the stamp of NTF Command.</i>
+	"}
