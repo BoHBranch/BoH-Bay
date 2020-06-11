@@ -3214,6 +3214,7 @@
 /area/turret_protected/ai_outer_chamber)
 "fr" = (
 /obj/structure/closet/secure_closet/guncabinet/sidearm/small,
+/obj/machinery/light,
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_outer_chamber)
 "fs" = (
@@ -7998,6 +7999,9 @@
 /area/space)
 "nt" = (
 /obj/structure/closet/firecloset,
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_outer_chamber)
 "nu" = (
@@ -8586,16 +8590,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/aft)
 "oq" = (
-/obj/machinery/power/apc/super/critical{
-	dir = 1;
-	is_critical = 1;
-	name = "north bump";
-	pixel_y = 24
-	},
-/obj/structure/cable/cyan{
-	d2 = 8;
-	icon_state = "0-8"
-	},
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
 	dir = 4
@@ -8666,11 +8660,20 @@
 	dir = 4;
 	icon_state = "console"
 	},
-/obj/structure/sign/warning/lethal_turrets{
-	pixel_y = 32
+/obj/machinery/turretid/stun{
+	check_synth = 1;
+	name = "AI Chamber turret control";
+	pixel_y = 32;
+	step_x = null
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "heavy_ai_doors";
+	name = "Internal Lockdown Shutter Control";
+	pixel_x = 7;
+	pixel_y = 22
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/turret_protected/ai_outer_chamber)
+/area/turret_protected/ai)
 "ov" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -8863,6 +8866,9 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
 "oM" = (
@@ -8995,6 +9001,9 @@
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
+	},
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
@@ -9187,6 +9196,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
 "po" = (
@@ -9793,6 +9803,7 @@
 	pixel_x = 6;
 	pixel_y = 0
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
 "ql" = (
@@ -10063,6 +10074,11 @@
 	},
 /obj/machinery/suit_cycler/security,
 /obj/effect/floor_decal/industrial/outline/red,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/turret_protected/ai_outer_chamber)
 "qM" = (
@@ -10074,6 +10090,9 @@
 "qN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
+	},
+/obj/structure/bed/chair/office/comfy/black{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/turret_protected/ai_outer_chamber)
@@ -10923,6 +10942,11 @@
 	icon_state = "intact-supply";
 	dir = 9
 	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/turret_protected/ai_outer_chamber)
 "se" = (
@@ -11186,10 +11210,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/obj/machinery/turretid/stun{
-	name = "AI Chamber turret control";
-	pixel_x = 28
-	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/turret_protected/ai_outer_chamber)
 "sF" = (
@@ -11298,6 +11318,11 @@
 	pixel_x = 0;
 	pixel_y = 24;
 	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_EXPLO_HELM"))
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/turret_protected/ai_outer_chamber)
@@ -11468,15 +11493,15 @@
 	pixel_y = 8
 	},
 /obj/machinery/button/blast_door{
-	id_tag = "backupbridge";
-	name = "Door Bolt";
-	pixel_x = -7
-	},
-/obj/machinery/button/blast_door{
 	id_tag = "earm_stairs";
 	name = "Lockdown Shutter Control";
 	pixel_x = 4;
 	pixel_y = 0
+	},
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "backupbridge";
+	name = "door bolts";
+	pixel_x = -6
 	},
 /turf/simulated/floor/tiled/dark,
 /area/turret_protected/ai_outer_chamber)
@@ -12433,6 +12458,9 @@
 	pixel_x = 24
 	},
 /obj/structure/closet/firecloset,
+/obj/structure/sign/warning/lethal_turrets{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/turret_protected/ai_outer_chamber)
 "uS" = (
@@ -12527,14 +12555,29 @@
 /area/aquila/maintenance)
 "vb" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
+	dir = 4;
+	pixel_y = -9
 	},
 /obj/machinery/computer/ship/helm{
 	icon_state = "computer";
 	dir = 4
 	},
+/obj/machinery/turretid/stun{
+	check_synth = 1;
+	dir = 1;
+	name = "AI Chamber turret control";
+	pixel_y = -32;
+	step_x = null;
+	step_y = null
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "heavy_ai_doors";
+	name = "Internal Lockdown Shutter Control";
+	pixel_x = 7;
+	pixel_y = -22
+	},
 /turf/simulated/floor/tiled/monotile,
-/area/turret_protected/ai_outer_chamber)
+/area/turret_protected/ai)
 "vc" = (
 /obj/machinery/camera/all/command{
 	c_tag = "AI Core - Port Access";
@@ -14156,6 +14199,10 @@
 "yD" = (
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
+"yH" = (
+/obj/machinery/light,
+/turf/simulated/floor/tiled/monotile,
+/area/turret_protected/ai_outer_chamber)
 "yM" = (
 /obj/structure/sign/dedicationplaque{
 	desc = "S.E.V. Torch - Mako Class - Sol Expeditionary Corps Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'";
@@ -15001,6 +15048,22 @@
 /obj/machinery/suit_storage_unit/medical/alt/sol,
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
+"Cj" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/airlock/command,
+/obj/machinery/door/firedoor/autoset,
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/turret_protected/ai_outer_chamber)
 "Cl" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -15937,6 +16000,22 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge)
+"HB" = (
+/obj/effect/wallframe_spawn/reinforced/titanium,
+/obj/structure/cable/cyan,
+/obj/effect/paint/black,
+/obj/machinery/door/firedoor/autoset,
+/obj/machinery/door/blast/regular{
+	id_tag = "heavy_ai_doors";
+	name = "Internal Chamber Lockdown"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/turret_protected/ai_outer_chamber)
 "HC" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -16448,6 +16527,17 @@
 	},
 /turf/simulated/floor/tiled,
 /area/aquila/storage)
+"JD" = (
+/obj/machinery/light/spot{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/turret_protected/ai_outer_chamber)
 "JE" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -16831,6 +16921,13 @@
 /area/aquila/airlock)
 "Mf" = (
 /obj/structure/table/steel_reinforced,
+/obj/machinery/power/apc/super/critical{
+	dir = 2;
+	is_critical = 1;
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/structure/cable/cyan,
 /turf/simulated/floor/tiled/monotile,
 /area/turret_protected/ai_outer_chamber)
 "Mh" = (
@@ -17120,6 +17217,20 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/xo)
+"NR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/turret_protected/ai_outer_chamber)
 "NW" = (
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
@@ -17295,6 +17406,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/cl)
+"OI" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/turret_protected/ai_outer_chamber)
 "OK" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/aftport)
@@ -17957,6 +18076,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/co)
+"RZ" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/turret_protected/ai_outer_chamber)
 "Sa" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/weapon/tableflag,
@@ -19515,6 +19640,20 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
+"Zq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/turret_protected/ai_outer_chamber)
 "Zs" = (
 /obj/machinery/computer/account_database,
 /obj/machinery/recharger/wallcharger{
@@ -19614,6 +19753,17 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
+"ZO" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/turret_protected/ai_outer_chamber)
 "ZP" = (
 /obj/machinery/porta_turret/exterior/dagon,
 /turf/simulated/floor/airless,
@@ -42978,8 +43128,8 @@ kj
 me
 hd
 uR
-rU
-sX
+Zq
+JD
 Mf
 ei
 qG
@@ -43180,7 +43330,7 @@ hd
 hd
 hd
 ei
-fq
+Cj
 ei
 ei
 ei
@@ -43382,7 +43532,7 @@ nD
 mm
 tG
 ei
-rU
+NR
 qL
 rH
 ei
@@ -43787,7 +43937,7 @@ sr
 si
 js
 sj
-qM
+ZO
 sw
 ei
 qG
@@ -43974,7 +44124,7 @@ ad
 Rx
 qG
 ei
-nB
+RZ
 sR
 ei
 ei
@@ -43990,7 +44140,7 @@ ei
 ei
 ei
 sO
-nB
+yH
 ei
 qG
 Rx
@@ -44190,8 +44340,8 @@ mk
 mg
 mg
 mp
-rW
-hS
+HB
+OI
 nB
 ei
 qG
