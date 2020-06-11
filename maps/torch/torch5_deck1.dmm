@@ -703,6 +703,9 @@
 /area/medical/sleeper)
 "abi" = (
 /obj/structure/table/steel,
+/obj/item/weapon/storage/secure/safe{
+	pixel_x = -24
+	},
 /obj/machinery/photocopier/faxmachine{
 	department = "Forensics Technician's Office"
 	},
@@ -6172,6 +6175,9 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
+"akC" = (
+/turf/simulated/wall/prepainted,
+/area/security/brig/psionic)
 "akD" = (
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -6980,6 +6986,9 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/security/detectives_office)
+"alU" = (
+/turf/simulated/wall/prepainted,
+/area/security/brig/perma)
 "alW" = (
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
@@ -7537,6 +7546,8 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "amZ" = (
+/obj/structure/table/rack,
+/obj/item/weapon/storage/briefcase/crimekit,
 /turf/simulated/floor/tiled/monotile,
 /area/security/detectives_office)
 "ana" = (
@@ -8954,8 +8965,8 @@
 /obj/machinery/light_switch{
 	pixel_x = -24
 	},
+/obj/structure/table/rack,
 /obj/random/illegal,
-/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "apO" = (
@@ -18522,6 +18533,9 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
+"cHj" = (
+/turf/simulated/wall/prepainted,
+/area/security/bo)
 "cHm" = (
 /obj/machinery/air_sensor{
 	id_tag = "d1sh_sensor"
@@ -20359,11 +20373,11 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "fUW" = (
+/obj/structure/table/standard,
+/obj/item/weapon/hand_labeler,
 /obj/item/device/radio/intercom/department/security{
 	pixel_y = 23
 	},
-/obj/structure/table/rack/shelf/steel,
-/obj/item/weapon/storage/briefcase/crimekit,
 /turf/simulated/floor/tiled/monotile,
 /area/security/detectives_office)
 "fVb" = (
@@ -21640,6 +21654,9 @@
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/entry)
+"hGs" = (
+/turf/simulated/wall/prepainted,
+/area/security/locker)
 "hHb" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 5
@@ -22559,9 +22576,6 @@
 /obj/machinery/computer/modular/preset/security{
 	dir = 4;
 	icon_state = "console"
-	},
-/obj/item/weapon/storage/secure/safe{
-	pixel_x = -24
 	},
 /turf/simulated/floor/tiled,
 /area/security/detectives_office)
@@ -24696,7 +24710,6 @@
 /area/medical/locker)
 "mgb" = (
 /obj/structure/table/steel,
-/obj/item/weapon/hand_labeler,
 /turf/simulated/floor/tiled,
 /area/security/detectives_office)
 "mhb" = (
@@ -26456,6 +26469,9 @@
 /obj/item/sticky_pad/random,
 /turf/simulated/floor/carpet/green,
 /area/rnd/breakroom)
+"oDg" = (
+/turf/simulated/wall/prepainted,
+/area/security/questioning)
 "oEb" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 5
@@ -39329,8 +39345,8 @@ adK
 apO
 apQ
 adK
-pjR
-pjR
+qWE
+qWE
 pjR
 pjR
 gnC
@@ -39531,7 +39547,7 @@ adK
 oBZ
 yfH
 adK
-pjR
+qWE
 alT
 uCA
 pjR
@@ -39733,7 +39749,7 @@ adK
 aco
 adK
 adK
-pjR
+qWE
 jqF
 bmO
 vIP
@@ -39741,11 +39757,11 @@ jfn
 abi
 kgu
 dmz
-gvJ
+oDg
 ilh
 jBk
 kVi
-vMH
+hGs
 adm
 frA
 aaN
@@ -39935,7 +39951,7 @@ pdO
 gQn
 aiK
 adK
-pjR
+qWE
 pVv
 nOO
 nOO
@@ -39943,11 +39959,11 @@ yeI
 mgb
 iVM
 uZY
-gvJ
+oDg
 mig
 nbl
 cWR
-vMH
+hGs
 aex
 acO
 aho
@@ -40137,7 +40153,7 @@ agz
 ahD
 aiL
 adK
-pjR
+qWE
 afo
 bmO
 ana
@@ -40145,11 +40161,11 @@ aaI
 kxs
 pzH
 jAr
-gvJ
+oDg
 rUO
 mBb
 iDb
-vMH
+hGs
 agd
 adw
 aho
@@ -40339,7 +40355,7 @@ aXh
 agA
 aiM
 adK
-pjR
+qWE
 fUW
 amZ
 rpB
@@ -40347,11 +40363,11 @@ vvn
 bWw
 mtB
 mKb
-gvJ
+oDg
 syI
 btE
 sxT
-vMH
+hGs
 agj
 njb
 ahp
@@ -40541,7 +40557,7 @@ hhB
 ahF
 aiN
 adK
-pjR
+qWE
 aaO
 aaT
 aaT
@@ -40549,19 +40565,19 @@ cNn
 qWE
 are
 jqD
-gvJ
+oDg
 bpA
 uDu
 sTK
-vMH
-vMH
+hGs
+hGs
 agB
-vMH
+hGs
 aCv
 aCv
 aCv
-vMH
-vMH
+hGs
+hGs
 amK
 adO
 sHN
@@ -40743,7 +40759,7 @@ ahE
 ahG
 kzy
 adK
-pjR
+qWE
 alX
 tJO
 wDm
@@ -40772,7 +40788,7 @@ aMD
 nJo
 aij
 ajk
-tkr
+aNH
 anA
 aoF
 nJo
@@ -41167,16 +41183,16 @@ aCy
 aDE
 aEI
 aFQ
-aDE
+cHj
 tgs
-aDE
-aDE
+cHj
+cHj
 akJ
 jpt
 oby
 ain
 ajo
-tkr
+aNH
 anE
 aoY
 oby
@@ -41372,15 +41388,15 @@ nFh
 hDp
 aHY
 amf
-aDE
+cHj
 akQ
 amh
-tkr
-tkr
-tkr
-tkr
-tkr
-tkr
+aNH
+aNH
+aNH
+aNH
+aNH
+aNH
 aNH
 aro
 atd
@@ -41574,7 +41590,7 @@ aqC
 aGM
 aHZ
 aJp
-aDE
+cHj
 amj
 amP
 rOE
@@ -41981,13 +41997,13 @@ lcS
 taR
 amX
 ahr
-tkr
-tkr
-tkr
-tkr
-tkr
-tkr
-tkr
+aNH
+aNH
+aNH
+aNH
+aNH
+aNH
+aNH
 arE
 jpt
 tkr
@@ -42186,7 +42202,7 @@ ama
 nJo
 air
 amg
-tkr
+aNH
 anN
 apJ
 nJo
@@ -42382,7 +42398,7 @@ aFU
 aDE
 axu
 aFQ
-aDE
+cHj
 agL
 aqL
 aib
@@ -42584,13 +42600,13 @@ xoV
 aoi
 aaK
 agK
-aoi
+alU
 anV
 jpt
 oby
 aiz
 ajX
-tkr
+aNH
 ajX
 aqH
 oby
@@ -42786,16 +42802,16 @@ aFW
 aoi
 aba
 ahf
-aoi
+alU
 anX
 aqN
-tkr
-tkr
-tkr
-akF
-akF
-akF
-akF
+aNH
+aNH
+aNH
+akC
+akC
+akC
+akC
 arJ
 asa
 akF
@@ -42994,7 +43010,7 @@ ahf
 ahg
 ahf
 ani
-akF
+akC
 anQ
 arB
 aqX
@@ -43196,7 +43212,7 @@ ami
 amL
 ahf
 anj
-akF
+akC
 anZ
 aqO
 aqY
@@ -43398,7 +43414,7 @@ ajZ
 ahf
 ahf
 ank
-akF
+akC
 aoe
 aqR
 aqZ
@@ -43600,10 +43616,10 @@ amk
 ajZ
 ahf
 anl
-akF
-akF
-akF
-akF
+akC
+akC
+akC
+akC
 asc
 asd
 akF
@@ -43802,7 +43818,7 @@ aml
 amR
 ahf
 anu
-akF
+akC
 aof
 aqT
 aqX
@@ -44004,7 +44020,7 @@ amo
 ajZ
 ahf
 anv
-akF
+akC
 aog
 aqU
 ara
@@ -44206,7 +44222,7 @@ ajZ
 ahf
 ahf
 anw
-akF
+akC
 anS
 arD
 aqZ
@@ -44407,11 +44423,11 @@ ahz
 ahf
 amS
 amY
-aoi
-akF
-akF
-akF
-akF
+alU
+akC
+akC
+akC
+akC
 asr
 aot
 akF
@@ -44609,7 +44625,7 @@ ame
 akq
 amT
 anc
-aoi
+alU
 arc
 arr
 arr
@@ -44811,7 +44827,7 @@ alP
 amE
 ahz
 and
-aoi
+alU
 anR
 anY
 arC
@@ -45006,17 +45022,17 @@ fVw
 obZ
 aFV
 aoi
-aoi
+alU
 akU
-aoi
-aoi
+alU
+alU
 amF
 ale
 amF
-aoi
+alU
 aqS
 ars
-akF
+akC
 arb
 arP
 arb
@@ -45211,14 +45227,14 @@ aoi
 afh
 ahJ
 akz
-aoi
+alU
 amG
 ahz
 amG
-aoi
+alU
 arf
 aot
-akF
+akC
 ard
 arQ
 ash
@@ -45413,14 +45429,14 @@ aoi
 afy
 aid
 akX
-aoi
+alU
 amH
 ahz
 ane
-aoi
+alU
 arp
 aot
-akF
+akC
 arg
 arR
 asi
@@ -45612,17 +45628,17 @@ ahL
 ahL
 chN
 aoi
-aoi
+alU
 aiD
-aoi
-aoi
+alU
+alU
 anB
 aid
 anf
-aoi
+alU
 arq
 aov
-akF
+akC
 arh
 arS
 asm
@@ -45817,14 +45833,14 @@ aoi
 agh
 aiJ
 akY
-aoi
+alU
 amJ
 amV
 amJ
-aoi
+alU
 arv
 aot
-akF
+akC
 ari
 arU
 ari
