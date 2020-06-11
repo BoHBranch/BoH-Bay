@@ -23,9 +23,9 @@
 		affecting = H.get_organ(zone)
 
 	if(affecting)
-		to_chat(user, "<span class='danger'>An unexplicable force rips through your [affecting.name], tearing the sword from your grasp!</span>")
+		to_chat(user, "<span class='cult'>An unexplicable force rips through your [affecting.name], tearing the sword from your grasp!</span>")
 	else
-		to_chat(user, "<span class='danger'>An unexplicable force rips through you, tearing the sword from your grasp!</span>")
+		to_chat(user, "<span class='cult'>An unexplicable force rips through you, tearing the sword from your grasp!</span>")
 
 	//random amount of damage between half of the blade's force and the full force of the blade.
 	user.apply_damage(rand(force/2, force), BRUTE, zone, (DAM_SHARP|DAM_EDGE), armor_pen = 100)
@@ -41,7 +41,7 @@
 
 /obj/item/weapon/melee/cultblade/pickup(mob/living/user as mob)
 	if(!iscultist(user))
-		to_chat(user, "<span class='warning'>An overwhelming feeling of dread comes over you as you pick up the cultist's sword. It would be wise to be rid of this blade quickly.</span>")
+		to_chat(user, SPAN_WARNING("An overwhelming feeling of dread comes over you as you pick up the cultist's sword. It would be wise to be rid of this blade quickly.") ) 
 		user.make_dizzy(120)
 
 
@@ -128,9 +128,9 @@
 	siemens_coefficient = 0.3 //Bone is not very conducive to electricity.
 
 /obj/item/clothing/suit/space/cult
-	name = "cult armour"
+	name = "cult armor"
 	icon_state = "cult_armour"
-	desc = "A bulky suit of armour, bristling with spikes. It looks space proof."
+	desc = "A bulky suit of armor, bristling with spikes. It looks space proof."
 	allowed = list(/obj/item/weapon/book/tome,/obj/item/weapon/melee/cultblade,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit)
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
