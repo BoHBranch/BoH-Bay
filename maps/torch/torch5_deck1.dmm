@@ -1048,7 +1048,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 2;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "beanbag shotgun";
 	req_access = list("ACCESS_BRIG")
@@ -1659,7 +1659,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 2;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "beanbag shotgun";
 	power_components = newlist();
@@ -1839,7 +1839,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 2;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "electrolaser carbine";
 	power_components = newlist();
@@ -1871,7 +1871,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 2;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "electrolaser carbine";
 	req_access = list("ACCESS_BRIG")
@@ -2153,7 +2153,7 @@
 /obj/item/weapon/airlock_brace,
 /obj/item/weapon/airlock_brace,
 /obj/machinery/button/blast_door{
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	name = "Security Armory Quick Open";
 	pixel_x = 4;
 	pixel_y = 25;
@@ -4073,7 +4073,7 @@
 	},
 /obj/machinery/door/window/brigdoor/westright{
 	dir = 4;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "bullpup";
 	req_access = null
@@ -9454,7 +9454,7 @@
 	},
 /obj/machinery/door/window/brigdoor/westright{
 	dir = 4;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "bullpup";
 	req_access = null
@@ -11478,7 +11478,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 2;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "stun rifle";
 	power_components = newlist();
@@ -11623,7 +11623,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 4;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "spare equipment";
 	req_access = list("ACCESS_ARMORY")
@@ -11841,18 +11841,11 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/ammo_magazine/smg_top/rubber,
-/obj/item/ammo_magazine/smg_top/rubber,
-/obj/machinery/door/window/brigdoor/westright{
-	autoset_access = 0;
-	id_tag = "secarmwindoors";
-	min_force = 16;
-	name = "submachinegun ammo";
-	req_access = list("ACCESS_ARMORY")
-	},
 /obj/structure/window/reinforced{
-	dir = 1
+	dir = 8;
+	health = 1e+006
 	},
+/obj/item/weapon/storage/box/ammo/shotgunammo/full,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "aux" = (
@@ -12109,7 +12102,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 4;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "bullpup ammo";
 	req_access = list("ACCESS_ARMORY")
@@ -12174,20 +12167,21 @@
 	health = 1e+006
 	},
 /obj/structure/window/reinforced,
-/obj/item/weapon/storage/box/fragshells,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/structure/table/rack/shelf/steel,
+/obj/item/ammo_magazine/smg_top/rubber,
+/obj/item/ammo_magazine/smg_top/rubber,
+/obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 4;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
-	name = "frag shells";
+	name = "SMG ammo";
 	req_access = list("ACCESS_ARMORY")
 	},
-/obj/structure/table/rack/shelf/steel,
-/obj/effect/floor_decal/industrial/outline/orange,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "auR" = (
@@ -12228,7 +12222,7 @@
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 4;
-	id_tag = "secarmwindoors";
+	id_tag = "secarmory";
 	min_force = 16;
 	name = "submachinegun";
 	pixel_x = -1;
@@ -12245,7 +12239,6 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/weapon/storage/box/ammo/shotgunammo/full,
 /obj/structure/window/reinforced{
 	dir = 8;
 	health = 1e+006
@@ -12255,11 +12248,11 @@
 	dir = 1;
 	id_tag = "secarmwindoors";
 	min_force = 16;
-	name = "shotgun ammunition";
+	name = "buckshot";
 	req_access = list("ACCESS_ARMORY")
 	},
-/obj/item/weapon/storage/box/ammo/shotgunshells,
 /obj/effect/floor_decal/industrial/outline/orange,
+/obj/item/weapon/storage/box/ammo/shotgunshells,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "auW" = (
