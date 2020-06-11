@@ -4252,13 +4252,9 @@
 	name = "Evidence Closet"
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/random/tool,
-/obj/random/tool,
 /obj/random/junk,
 /obj/random/coin,
+/obj/random/trash,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "ahu" = (
@@ -7076,6 +7072,9 @@
 	dir = 4
 	},
 /obj/random/material,
+/obj/random/tool,
+/obj/random/tank,
+/obj/random/powercell,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "amd" = (
@@ -28120,6 +28119,7 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/random/masks,
 /obj/random/clothing,
+/obj/random/shoes,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "qTX" = (
