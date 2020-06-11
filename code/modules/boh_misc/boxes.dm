@@ -8,7 +8,7 @@
 
 /obj/item/weapon/storage/box/ammo/beanbags/half
 	name = "box of beanbag shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 3)
+	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 4)
 
 /obj/item/weapon/storage/box/ammo/beanbags/eight
 	name = "box of beanbag shells"
@@ -17,7 +17,7 @@
 /obj/item/weapon/storage/box/ammo/solar
 	name = "box of handgun magazines"
 	desc = "It has a picture of a gun and several warning symbols on the front."
-	startswith = list(/obj/item/ammo_magazine/pistol/double = 3)
+	startswith = list(/obj/item/ammo_magazine/pistol/double = 4)
 
 /obj/item/weapon/storage/box/ammo/solar/full
 	name = "box of handgun magazines"
@@ -44,7 +44,7 @@
 
 /obj/item/weapon/storage/box/ammo/sabotbox
 	name = "box of sabot shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/sabot = 7)
+	startswith = list(/obj/item/ammo_magazine/shotholder/sabot = 8)
 
 
 /obj/item/gunbox
