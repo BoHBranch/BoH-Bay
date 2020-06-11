@@ -4250,6 +4250,7 @@
 /area/security/brig/perma)
 "ahu" = (
 /obj/structure/fitness/weightlifter,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ahv" = (
@@ -6814,6 +6815,7 @@
 	name = "ultralite wrench";
 	throwforce = 5
 	},
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "alx" = (
@@ -7194,6 +7196,7 @@
 /area/maintenance/firstdeck/centralstarboard)
 "amo" = (
 /obj/structure/fitness/punchingbag,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "amp" = (
