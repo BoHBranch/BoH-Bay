@@ -7384,12 +7384,11 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "amH" = (
-/obj/structure/bed,
-/obj/item/weapon/bedsheet/orange,
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 1
 	},
+/obj/structure/closet/secure_closet/brig,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "amI" = (
@@ -7591,15 +7590,11 @@
 /area/shuttle/escape_pod8/station)
 "anc" = (
 /obj/machinery/light,
-/obj/machinery/vending/fitness{
-	dir = 1
-	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ane" = (
-/obj/structure/bed,
-/obj/item/weapon/bedsheet/orange,
 /obj/machinery/light,
+/obj/structure/closet/secure_closet/brig,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "anf" = (
@@ -7625,14 +7620,25 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/locker)
+"ani" = (
+/obj/machinery/vending/cigarette{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "anj" = (
 /obj/machinery/light,
+/obj/machinery/vending/games{
+	dir = 1
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ank" = (
-/obj/structure/closet/secure_closet/brig,
 /obj/machinery/camera/network/security{
 	c_tag = "Permanent Holding - Lockers";
+	dir = 1
+	},
+/obj/machinery/vending/fitness{
 	dir = 1
 	},
 /turf/simulated/floor/tiled,
@@ -42997,7 +43003,7 @@ amd
 ahf
 ahg
 ahf
-ahf
+ani
 akF
 anQ
 arB
