@@ -645,6 +645,10 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
+/obj/structure/hygiene/sink{
+	dir = 1;
+	pixel_y = 16
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "abb" = (
@@ -680,6 +684,30 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "abg" = (
+/obj/structure/closet/crate{
+	name = "Hydroponics Supplies"
+	},
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/weapon/material/minihoe,
+/obj/item/weapon/material/minihoe,
+/obj/item/weapon/plantspray/pests,
+/obj/item/weapon/plantspray/pests,
+/obj/item/weapon/plantspray/pests,
+/obj/item/weapon/plantspray/pests,
+/obj/item/weapon/plantspray/weeds,
+/obj/item/weapon/plantspray/weeds,
+/obj/item/weapon/plantspray/weeds,
+/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
+/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
+/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
+/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
+/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
+/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
+/obj/item/weapon/reagent_containers/glass/bottle/robustharvest,
+/obj/item/weapon/reagent_containers/glass/bottle/robustharvest,
+/obj/item/weapon/reagent_containers/glass/bottle/robustharvest,
 /obj/machinery/firealarm{
 	pixel_y = 22
 	},
@@ -687,13 +715,13 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/obj/machinery/door/window/brigdoor/westright{
-	autoset_access = 0;
-	dir = 4;
-	id_tag = secarmwindoors;
-	min_force = 16;
-	name = "spare equipment";
-	req_access = list("ACCESS_ARMORY")
+/obj/item/weapon/material/hatchet{
+	max_force = 5;
+	name = "dull hatchet"
+	},
+/obj/item/weapon/material/hatchet{
+	max_force = 5;
+	name = "dull hatchet"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -975,14 +1003,11 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head/aux)
 "abA" = (
-/obj/structure/hygiene/sink{
-	dir = 1;
-	pixel_y = 16
-	},
 /obj/machinery/camera/network/security{
 	c_tag = "Permanent Holding - Windows";
 	dir = 2
 	},
+/obj/machinery/seed_extractor,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "abB" = (
@@ -1004,11 +1029,11 @@
 /obj/machinery/newscaster{
 	pixel_y = 32
 	},
-/obj/machinery/portable_atmospherics/hydroponics,
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 1
 	},
+/obj/machinery/vending/hydroseeds/generic,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "abE" = (
@@ -2230,11 +2255,11 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
 "adQ" = (
-/obj/machinery/portable_atmospherics/hydroponics,
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 4
 	},
+/obj/machinery/biogenerator,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "adR" = (
@@ -4215,14 +4240,6 @@
 /obj/item/clothing/accessory/armorplate/tactical,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
-"aht" = (
-/obj/machinery/computer/arcade/battle,
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
-"ahu" = (
-/obj/machinery/computer/arcade/orion_trail,
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
 "ahv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -7532,10 +7549,6 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/security/wing)
-"amY" = (
-/obj/machinery/seed_extractor,
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
 "amZ" = (
 /turf/simulated/floor/tiled/monotile,
 /area/security/detectives_office)
@@ -7556,12 +7569,7 @@
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod8/station)
 "anc" = (
-/obj/machinery/biogenerator,
 /obj/machinery/light,
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
-"and" = (
-/obj/machinery/vending/hydroseeds/generic,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ane" = (
@@ -7608,10 +7616,6 @@
 	c_tag = "Permanent Holding - Lockers";
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
-"anl" = (
-/obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "anm" = (
@@ -7748,31 +7752,8 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
 "anu" = (
-/obj/structure/closet/crate{
-	name = "Hydroponics Supplies"
-	},
-/obj/item/weapon/reagent_containers/glass/bucket,
-/obj/item/weapon/reagent_containers/glass/bucket,
-/obj/item/weapon/reagent_containers/glass/bucket,
-/obj/item/weapon/material/minihoe,
-/obj/item/weapon/material/minihoe,
-/obj/item/weapon/plantspray/pests,
-/obj/item/weapon/plantspray/pests,
-/obj/item/weapon/plantspray/pests,
-/obj/item/weapon/plantspray/pests,
-/obj/item/weapon/plantspray/weeds,
-/obj/item/weapon/plantspray/weeds,
-/obj/item/weapon/plantspray/weeds,
-/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
-/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
-/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
-/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
-/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
-/obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
-/obj/item/weapon/reagent_containers/glass/bottle/robustharvest,
-/obj/item/weapon/reagent_containers/glass/bottle/robustharvest,
-/obj/item/weapon/reagent_containers/glass/bottle/robustharvest,
 /obj/machinery/light,
+/obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "anv" = (
@@ -43188,7 +43169,7 @@ axR
 nWb
 ogb
 abn
-aht
+adB
 ahj
 ajY
 akZ
@@ -43390,7 +43371,7 @@ axR
 obZ
 aFV
 abn
-ahf
+adB
 ahf
 ahf
 ala
@@ -43592,14 +43573,14 @@ axR
 obZ
 aFV
 abn
-ahu
+adB
 ahf
 ajZ
 alc
 amk
 ajZ
 ahf
-anl
+ani
 akF
 akF
 akF
@@ -44406,7 +44387,7 @@ ahf
 ahz
 ahf
 amS
-amY
+ahf
 aoi
 akF
 akF
@@ -44810,7 +44791,7 @@ aks
 alP
 amE
 ahz
-and
+ahf
 aoi
 anR
 anY
