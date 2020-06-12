@@ -12892,14 +12892,8 @@
 	pixel_x = -24;
 	pixel_y = -6
 	},
-/obj/machinery/door/window{
-	dir = 1;
-	req_access = list("ACCESS_HEAD_OF_PERSONNEL")
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/secure_closet/guncabinet/sidearm/small,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "vC" = (
@@ -15877,7 +15871,9 @@
 /area/crew_quarters/heads/office/cl)
 "Hf" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/guncabinet/PPE,
+/obj/structure/filingcabinet/chestdrawer{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "Hg" = (
@@ -17391,9 +17387,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
-"OB" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/command/gunnery/mim/door)
 "OD" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 9
@@ -19255,6 +19248,9 @@
 "Xr" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/bridge/forestarboard)
+"Xv" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/command/gunnery/mim/door)
 "Xx" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/machinery/door/airlock/medical{
@@ -19278,7 +19274,7 @@
 /area/crew_quarters/heads/office/cmo)
 "Xz" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/guncabinet/sidearm/small,
+/obj/structure/closet/secure_closet/guncabinet/PPE,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "XD" = (
@@ -34431,9 +34427,9 @@ gz
 gz
 bB
 Qi
-OB
+Xv
 aT
-OB
+Xv
 MD
 MD
 lU
@@ -34633,9 +34629,9 @@ dY
 dY
 gi
 bx
-OB
+Xv
 cI
-OB
+Xv
 MD
 MD
 zW
