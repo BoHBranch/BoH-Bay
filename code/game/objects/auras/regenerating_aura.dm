@@ -2,8 +2,8 @@
 	name = "regenerating aura"
 	var/brute_mult = 1
 	var/fire_mult = 1
-	var/tox_mult = 1
-	var/oxy_mult = 1
+	var/tox_mult = 0
+	var/oxy_mult = 0
 	var/clone_mult = 1
 
 /obj/aura/regenerating/life_tick()
@@ -17,7 +17,7 @@
 	var/nutrition_damage_mult = 1 //How much nutrition it takes to heal regular damage
 	var/external_nutrition_mult = 50 // How much nutrition it takes to regrow a limb
 	var/organ_mult = 2
-	var/organheal_nut = 380 //The minimum amount of nutriments stored when organs can heal themselves.
+	var/organheal_nut = 350 //The minimum amount of nutriments stored when organs can heal themselves.
 	var/regen_message = "<span class='warning'>Your body throbs as you feel your ORGAN regenerate.</span>"
 	var/grow_chance = 0
 	var/grow_threshold = 0
