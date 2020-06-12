@@ -11403,6 +11403,7 @@
 	},
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = -30;
+	step_x = 0
 	},
 /obj/item/weapon/storage/box/teargas{
 	pixel_x = 3;
@@ -11923,11 +11924,6 @@
 /area/security/wing)
 "auw" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/structure/table/rack/shelf/steel,
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
