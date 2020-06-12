@@ -23,7 +23,7 @@
 
 //Skrell space gear. Sleek like a wetsuit.
 /obj/item/clothing/head/helmet/space/void/skrell
-	name = "Skrellian helmet"
+	name = "Skrellian voidsuit helmet"
 	desc = "Smoothly contoured and polished to a shine. Still looks like a fishbowl."
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
@@ -65,3 +65,42 @@
 
 /obj/item/clothing/suit/space/void/skrell/black
 	icon_state = "skrell_suit_black"
+
+/obj/item/clothing/head/helmet/space/void/skrell/exchange
+	name = "Skrellian exchange voidsuit helmet"
+	desc = "Smoothly contoured and polished to a shine. Still looks like a fishbowl. The inferior quality of its construction mark this as a somewhat outdated model."
+	armor = list(
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_MINOR,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_SMALL,
+		bomb = ARMOR_BOMB_MINOR,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+		)
+
+/obj/item/clothing/head/helmet/space/void/skrell/exchange/white
+	icon_state = "skrell_helmet_white"
+
+/obj/item/clothing/head/helmet/space/void/skrell/exchange/black
+	icon_state = "skrell_helmet_black"
+
+/obj/item/clothing/suit/space/void/skrell/exchange
+	name = "Skrellian exchange voidsuit"
+	desc = "Seems like a wetsuit with reinforced plating seamlessly attached to it. Very chic. The inferior quality of the fabric and other material used in its construction mark this as a somewhat outdated model."
+	armor = list(
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_MINOR,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_SMALL,
+		bomb = ARMOR_BOMB_MINOR,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+		)
+
+/obj/item/clothing/suit/space/void/skrell/exchange/white
+	icon_state = "skrell_suit_white"
+
+/obj/item/clothing/suit/space/void/skrell/exchange/black
+	icon_state = "skrell_suit_black"
+
