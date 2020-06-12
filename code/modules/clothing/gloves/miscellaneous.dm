@@ -151,6 +151,12 @@
 		laser = ARMOR_LASER_MINOR
 		)
 
+/obj/item/clothing/gloves/tactical/black
+	desc = "These black swat gloves are made from a durable synthetic, and have hardened knuckles."
+	name = "black tactical gloves"
+	icon_state = "guards"
+	item_state = "swat_gl"
+
 /obj/item/clothing/gloves/guards
 	desc = "A pair of synthetic gloves and arm pads reinforced with armor plating."
 	name = "arm guards"
