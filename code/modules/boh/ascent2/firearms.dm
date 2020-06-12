@@ -5,7 +5,7 @@
 	name = "defence lance"
 	desc = "A modified variant of the Ascent particle lance, usually carried by rearline combatants."
 	force = 6
-	max_shots = 4
+	max_shots = 2
 	burst = 2
 	move_delay = 2
 	one_hand_penalty = 0

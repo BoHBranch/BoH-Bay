@@ -92,7 +92,7 @@
 		/datum/species/unathi/yeosa	= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/adherent		= list(/datum/mil_branch/civilian),
 		/datum/species/sergal		= list(UNRESTRICTED, /datum/mil_branch/private_security),
-		/datum/species/akula		= list(UNRESTRICTED, /datum/mil_branch/private_security),
+		/datum/species/akula		= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/custom		= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/humanathi	= list(UNRESTRICTED, SEMIRESTRICTED),
 		/datum/species/tajaran		= list(UNRESTRICTED, SEMIRESTRICTED),
