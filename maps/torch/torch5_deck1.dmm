@@ -6226,9 +6226,9 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
 "akC" = (
-/obj/structure/table/reinforced,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
-/area/security/brig/perma)
+/area/security/locker)
 "akD" = (
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -6813,8 +6813,7 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "alw" = (
-/obj/structure/fitness/weightlifter,
-/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/table/reinforced,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "alx" = (
@@ -6972,12 +6971,8 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/ammo)
 "alM" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/pen/multi,
-/obj/item/weapon/pen/fancy{
-	pixel_x = -5;
-	pixel_y = 3
-	},
+/obj/structure/fitness/weightlifter,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "alN" = (
@@ -7037,26 +7032,12 @@
 /turf/simulated/floor/tiled/monotile,
 /area/security/detectives_office)
 "alU" = (
-/obj/structure/fitness/weightlifter,
-/obj/item/weapon/wrench{
-	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
-	force = 5;
-	name = "ultralite wrench";
-	throwforce = 5
+/obj/structure/table/reinforced,
+/obj/item/weapon/pen/multi,
+/obj/item/weapon/pen/fancy{
+	pixel_x = -5;
+	pixel_y = 3
 	},
-/obj/item/weapon/wrench{
-	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
-	force = 5;
-	name = "ultralite wrench";
-	throwforce = 5
-	},
-/obj/item/weapon/wrench{
-	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
-	force = 5;
-	name = "ultralite wrench";
-	throwforce = 5
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "alW" = (
@@ -7201,6 +7182,29 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
+"amk" = (
+/obj/structure/fitness/weightlifter,
+/obj/item/weapon/wrench{
+	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
+	force = 5;
+	name = "ultralite wrench";
+	throwforce = 5
+	},
+/obj/item/weapon/wrench{
+	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
+	force = 5;
+	name = "ultralite wrench";
+	throwforce = 5
+	},
+/obj/item/weapon/wrench{
+	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
+	force = 5;
+	name = "ultralite wrench";
+	throwforce = 5
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "amm" = (
 /obj/machinery/door/airlock/multi_tile/glass/security{
 	name = "Brig Wing"
@@ -7655,6 +7659,7 @@
 	icon_state = "chair_preview";
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/security/locker)
 "ani" = (
@@ -11252,6 +11257,9 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/disposalpipe/trunk{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/security/locker)
 "atz" = (
@@ -11403,6 +11411,7 @@
 	},
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = -30;
+	step_x = 0
 	},
 /obj/item/weapon/storage/box/teargas{
 	pixel_x = 3;
@@ -11811,6 +11820,10 @@
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 10
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled,
 /area/security/locker)
@@ -40041,7 +40054,7 @@ cWR
 vMH
 aex
 acO
-aho
+akC
 anh
 anh
 anh
@@ -43483,9 +43496,9 @@ aFV
 abn
 adB
 ahf
-akC
+alw
 ala
-alM
+alU
 ahf
 ahf
 ank
@@ -44493,9 +44506,9 @@ aFV
 abn
 adB
 ahH
-alw
+alM
 ahz
-alU
+amk
 amS
 amY
 aoi
