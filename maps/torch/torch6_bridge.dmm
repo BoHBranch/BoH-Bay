@@ -16285,9 +16285,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
-"Iw" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/command/gunnery/mim/door)
 "IA" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -17230,6 +17227,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
+"NF" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/command/gunnery/mim/door)
 "NH" = (
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/structure/bed/chair/comfy/beige{
@@ -34428,9 +34428,9 @@ gz
 gz
 bB
 Qi
-Iw
+NF
 aT
-Iw
+NF
 MD
 MD
 lU
@@ -34630,9 +34630,9 @@ dY
 dY
 gi
 bx
-Iw
+NF
 cI
-Iw
+NF
 MD
 MD
 zW
