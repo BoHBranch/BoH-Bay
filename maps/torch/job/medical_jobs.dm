@@ -3,7 +3,7 @@
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 29)
+	minimum_character_age = list(SPECIES_HUMAN = 25) //lowered to 25 because of Resident alt-title. if resident title is removed or someone changes age to somehow link to tile, raise back to 28
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "the Chief Medical Officer"
@@ -50,7 +50,7 @@
 	spawn_positions = 3
 	supervisors = "Physicians and the Chief Medical Officer"
 	economic_power = 7
-	minimum_character_age = list(SPECIES_HUMAN = 19)
+	minimum_character_age = list(SPECIES_HUMAN = 18)
 	minimal_player_age = 0
 	alt_titles = list(
 		"Paramedic",
@@ -141,7 +141,7 @@
 	supervisors = "the Chief Medical Officer, the Corporate Liaison and Medical Personnel"
 	selection_color = "#013d3b"
 	economic_power = 4
-	minimum_character_age = list(SPECIES_HUMAN = 25)
+	minimum_character_age = list(SPECIES_HUMAN = 21)
 	minimal_player_age = 0
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/chemist
 	allowed_branches = list(/datum/mil_branch/civilian)
