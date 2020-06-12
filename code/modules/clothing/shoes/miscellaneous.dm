@@ -113,6 +113,11 @@
 		bomb = ARMOR_BOMB_RESISTANT)
 	siemens_coefficient = 0.7
 
+/obj/item/clothing/shoes/tactical/black
+	name = "black tactical boots"
+	desc = "Black boots with extra padding and armor."
+	icon_state = "duty"
+
 /obj/item/clothing/shoes/dress
 	name = "dress shoes"
 	desc = "The height of fashion, and they're pre-polished!"
