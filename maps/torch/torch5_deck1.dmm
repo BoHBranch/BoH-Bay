@@ -4251,6 +4251,15 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury/tactical)
 "aht" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/table/reinforced,
+/turf/simulated/floor/tiled/techfloor,
+/area/command/gunnery/mim)
+"ahu" = (
 /obj/structure/closet{
 	name = "Evidence Closet"
 	},
@@ -4263,10 +4272,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
-"ahu" = (
-/obj/structure/table/reinforced,
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
 "ahv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -6218,8 +6223,7 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
 "akC" = (
-/obj/structure/fitness/weightlifter,
-/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/table/reinforced,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "akD" = (
@@ -6806,12 +6810,8 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
 "alw" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/pen/multi,
-/obj/item/weapon/pen/fancy{
-	pixel_x = -5;
-	pixel_y = 3
-	},
+/obj/structure/fitness/weightlifter,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "alx" = (
@@ -6969,26 +6969,12 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/ammo)
 "alM" = (
-/obj/structure/fitness/weightlifter,
-/obj/item/weapon/wrench{
-	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
-	force = 5;
-	name = "ultralite wrench";
-	throwforce = 5
+/obj/structure/table/reinforced,
+/obj/item/weapon/pen/multi,
+/obj/item/weapon/pen/fancy{
+	pixel_x = -5;
+	pixel_y = 3
 	},
-/obj/item/weapon/wrench{
-	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
-	force = 5;
-	name = "ultralite wrench";
-	throwforce = 5
-	},
-/obj/item/weapon/wrench{
-	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
-	force = 5;
-	name = "ultralite wrench";
-	throwforce = 5
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "alN" = (
@@ -7047,6 +7033,29 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/security/detectives_office)
+"alU" = (
+/obj/structure/fitness/weightlifter,
+/obj/item/weapon/wrench{
+	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
+	force = 5;
+	name = "ultralite wrench";
+	throwforce = 5
+	},
+/obj/item/weapon/wrench{
+	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
+	force = 5;
+	name = "ultralite wrench";
+	throwforce = 5
+	},
+/obj/item/weapon/wrench{
+	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
+	force = 5;
+	name = "ultralite wrench";
+	throwforce = 5
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "alW" = (
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
@@ -7729,14 +7738,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/hardstorage/aux)
 "anq" = (
-/obj/structure/table/reinforced,
-/obj/machinery/chemical_dispenser/tac_coffee/full{
-	pixel_x = -6;
-	pixel_y = 6
-	},
-/obj/item/weapon/reagent_containers/food/drinks/pitcher{
-	pixel_x = 6
-	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
@@ -7744,6 +7745,12 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/computer/crew{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
@@ -8665,6 +8672,12 @@
 	dir = 1;
 	level = 2
 	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/bed/chair/office/dark{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "apj" = (
@@ -8745,11 +8758,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "apr" = (
-/obj/structure/mim_ammo_broken/left,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
 /obj/machinery/power/terminal{
 	dir = 8
 	},
@@ -8772,13 +8780,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/mim)
-"apt" = (
-/obj/machinery/missile_interceptor_mainframe_broken,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/command/gunnery/mim)
 "apu" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 6
@@ -8791,6 +8792,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/closet/firecloset,
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/mim)
 "apv" = (
@@ -8804,11 +8806,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "apw" = (
-/obj/structure/mim_ammo_broken/right,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "apx" = (
@@ -8820,6 +8817,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/closet/secure_closet/medical_wall{
+	pixel_x = 32
+	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/mim)
 "apy" = (
@@ -8828,6 +8828,11 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/structure/bed/chair/office/dark,
+/obj/item/modular_computer/telescreen/preset/generic{
+	name = "telescreen";
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "apz" = (
@@ -8835,6 +8840,12 @@
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
+	},
+/obj/machinery/computer/power_monitor{
+	dir = 4
+	},
+/obj/item/modular_computer/telescreen/preset/engineering{
+	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
@@ -8847,6 +8858,13 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/computer/atmoscontrol{
+	dir = 8
+	},
+/obj/machinery/computer/ship/navigation/telescreen{
+	name = "navigation monitoring";
+	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
@@ -8865,6 +8883,14 @@
 	},
 /obj/machinery/power/apc/hyper/toc{
 	pixel_y = -24
+	},
+/obj/structure/table/reinforced,
+/obj/item/weapon/reagent_containers/food/drinks/pitcher{
+	pixel_x = 6
+	},
+/obj/machinery/chemical_dispenser/tac_coffee/full{
+	pixel_x = -6;
+	pixel_y = 6
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/mim)
@@ -11165,7 +11191,7 @@
 	alarm_id = "xenobio4_alarm";
 	pixel_y = 24
 	},
-/obj/structure/closet/secure_closet/guncabinet/PPE,
+/obj/structure/closet/secure_closet/guncabinet/sidearm/combined,
 /turf/simulated/floor/tiled/techfloor,
 /area/space)
 "atv" = (
@@ -42020,7 +42046,7 @@ qSD
 amb
 ape
 apM
-aht
+ahu
 afH
 tkr
 xzK
@@ -43452,9 +43478,9 @@ aFV
 abn
 adB
 ahf
-ahu
+akC
 ala
-alw
+alM
 ahf
 ahf
 ank
@@ -44462,9 +44488,9 @@ aFV
 abn
 adB
 ahH
-akC
+alw
 ahz
-alM
+alU
 amS
 amY
 aoi
@@ -46259,7 +46285,7 @@ ajd
 ann
 apq
 api
-apt
+apw
 apB
 apj
 aqn
@@ -46462,7 +46488,7 @@ aps
 apl
 apn
 apw
-apy
+aht
 apj
 aqn
 aqn
