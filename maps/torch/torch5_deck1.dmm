@@ -9486,6 +9486,9 @@
 	pixel_x = -12;
 	pixel_y = 5
 	},
+/obj/machinery/button/alternate{
+	id_tag = "secarmory"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bo)
 "aqD" = (
@@ -18655,6 +18658,14 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralstarboard)
+"cMs" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "cMx" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -19529,15 +19540,6 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/hardstorage/aux)
-"efG" = (
-/obj/machinery/light,
-/obj/structure/cable/green,
-/obj/machinery/power/apc{
-	name = "Armory - Port";
-	pixel_y = -28
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "ehb" = (
 /obj/structure/table/rack{
 	dir = 8
@@ -21003,6 +21005,12 @@
 /obj/item/weapon/material/knife/table,
 /turf/simulated/floor/wood/walnut,
 /area/medical/lounge)
+"gIQ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "gJb" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -21137,10 +21145,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics/surgery)
-"gXm" = (
-/obj/machinery/porta_turret/exterior/dagon,
-/turf/simulated/floor/airless,
-/area/security/storage)
 "gYb" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/effect/floor_decal/corner/paleblue{
@@ -21334,6 +21338,17 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/aft)
+"hlk" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "hml" = (
 /obj/machinery/air_sensor{
 	id_tag = "d1so2_sensor"
@@ -22016,6 +22031,17 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics)
+"idN" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "iej" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/reinforced,
@@ -22161,14 +22187,6 @@
 /obj/item/weapon/pen,
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmreception)
-"ioB" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "ipb" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -24069,9 +24087,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/morgue)
-"kZU" = (
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "lab" = (
 /turf/simulated/floor/tiled,
 /area/assembly/chargebay)
@@ -24261,6 +24276,15 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/firstdeck/aft)
+"lkR" = (
+/obj/machinery/light,
+/obj/structure/cable/green,
+/obj/machinery/power/apc{
+	name = "Armory - Port";
+	pixel_y = -28
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "llb" = (
 /obj/machinery/fabricator,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -25437,17 +25461,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/nuke_storage)
-"ndn" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "neb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -25877,6 +25890,10 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled,
 /area/rnd/entry)
+"nMs" = (
+/obj/machinery/porta_turret/exterior/dagon,
+/turf/simulated/floor/airless,
+/area/security/storage)
 "nOA" = (
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -26928,9 +26945,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
-"pdh" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/security/storage)
 "pdO" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 8
@@ -27392,6 +27406,14 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
+"pJN" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "pKb" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/effect/floor_decal/industrial/outline/blue,
@@ -27649,17 +27671,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/xenoflora)
-"qcw" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "qdb" = (
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/xenoflora)
@@ -28361,12 +28372,6 @@
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
 /area/rnd/xenobiology/xenoflora)
-"rdy" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "reb" = (
 /obj/machinery/biogenerator,
 /obj/machinery/atmospherics/pipe/manifold/visible/red{
@@ -29995,14 +30000,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology)
-"taa" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "tab" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 4
@@ -30612,6 +30609,9 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/medical/counselor)
+"umw" = (
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "umI" = (
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
@@ -31581,6 +31581,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
+"xCb" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/security/storage)
 "xCg" = (
 /obj/structure/sign/warning/pods/south{
 	dir = 1
@@ -38693,7 +38696,7 @@ aaa
 aaa
 aaa
 aaa
-gXm
+nMs
 auC
 auC
 auC
@@ -39301,15 +39304,15 @@ sik
 sik
 abH
 ajj
-taa
-taa
-taa
-taa
-qcw
-ioB
-ioB
-ioB
-efG
+pJN
+pJN
+pJN
+pJN
+idN
+cMs
+cMs
+cMs
+lkR
 alY
 alY
 aaa
@@ -39502,9 +39505,9 @@ sik
 sik
 sik
 acU
-ndn
+hlk
 agc
-kZU
+umw
 atY
 atT
 adL
@@ -39704,9 +39707,9 @@ vMH
 vMH
 vMH
 afl
-ndn
+hlk
 agc
-kZU
+umw
 atZ
 atV
 adL
@@ -40110,7 +40113,7 @@ vMH
 adj
 atx
 agc
-rdy
+gIQ
 aum
 aue
 aem
@@ -40311,10 +40314,10 @@ atI
 vMH
 adl
 atx
-kZU
-rdy
-kZU
-kZU
+umw
+gIQ
+umw
+umw
 aem
 aqG
 aqG
@@ -40715,10 +40718,10 @@ vMH
 vMH
 amK
 adO
-pdh
-pdh
-pdh
-pdh
+xCb
+xCb
+xCb
+xCb
 sHN
 sHN
 aud

@@ -1601,10 +1601,12 @@
 /area/maintenance/bridge/aftstarboard)
 "cI" = (
 /obj/machinery/door/airlock/vault/bolted{
+	autoset_access = 0;
 	frequency = 1379;
 	id_tag = "toc_door";
 	locked = 0;
-	name = "TOC Access"
+	name = "TOC Access";
+	req_access = list("ACCESS_BRIDGE)
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -17533,9 +17535,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
-"PO" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/command/gunnery/mim/door)
 "Qb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -18737,6 +18736,9 @@
 "UA" = (
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
+"UD" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/command/gunnery/mim/door)
 "UJ" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/structure/cable/cyan,
@@ -34429,9 +34431,9 @@ gz
 gz
 bB
 Qi
-PO
+UD
 aT
-PO
+UD
 MD
 MD
 lU
@@ -34631,9 +34633,9 @@ dY
 dY
 gi
 bx
-PO
+UD
 cI
-PO
+UD
 MD
 MD
 zW
