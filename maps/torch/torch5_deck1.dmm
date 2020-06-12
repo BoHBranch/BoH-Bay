@@ -8746,7 +8746,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
-/area/command/gunnery/mim)
+/area/command/gunnery/mim{
+	req_access = list("ACCESS_HEADS","ACCESS_TORCH_SENIOR_ADVISOR")
+	})
 "apm" = (
 /turf/simulated/floor/tiled/steel_grid,
 /area/turbolift/robotics_lift)
@@ -19230,6 +19232,10 @@
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
+"dBQ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled/techfloor,
+/area/command/gunnery/mim)
 "dDc" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -31138,10 +31144,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
-"vSC" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/techfloor,
-/area/command/gunnery/mim)
 "vTH" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "forensicswindow"
@@ -46561,7 +46563,7 @@ aeg
 aps
 apl
 apn
-vSC
+dBQ
 aht
 apj
 aqn
