@@ -11409,13 +11409,12 @@
 	pixel_x = -5;
 	pixel_y = 6
 	},
-/obj/structure/reagent_dispensers/peppertank{
-	pixel_x = -30;
-	step_x = null
-	},
 /obj/item/weapon/storage/box/teargas{
 	pixel_x = 3;
 	pixel_y = -1
+	},
+/obj/structure/reagent_dispensers/peppertank{
+	pixel_x = -32
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
@@ -12058,6 +12057,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/firstdeck)
+"auC" = (
+/turf/simulated/wall/r_wall/hull,
+/area/security/storage)
 "auE" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -39014,7 +39016,7 @@ aaa
 aaa
 aaa
 alY
-alY
+auC
 alY
 adH
 atz

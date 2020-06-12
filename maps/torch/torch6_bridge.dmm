@@ -8651,7 +8651,7 @@
 /obj/machinery/turretid/stun{
 	check_synth = 1;
 	name = "AI Chamber turret control";
-	pixel_y = 32;
+	pixel_y = 32
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "heavy_ai_doors";
@@ -11047,8 +11047,8 @@
 "so" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	icon_state = "intact";
-	dir = 10
+	dir = 10;
+	icon_state = "intact"
 	},
 /obj/structure/cable{
 	d1 = 1;
@@ -12553,7 +12553,7 @@
 	check_synth = 1;
 	dir = 1;
 	name = "AI Chamber turret control";
-	pixel_y = -32;
+	pixel_y = -32
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "heavy_ai_doors";
@@ -13523,7 +13523,13 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 6
 	},
-/obj/item/weapon/stamp/cos,
+/obj/item/weapon/stamp/cos{
+	pixel_x = -16
+	},
+/obj/item/weapon/paper/inf{
+	info = "<i>Your AMR has been replaced with the old Tectonic for the time being. We're trying something new.<hr>Do keep in mind that it won't fire unless you're on Red Alert, though. And you're not gonna keep it loaded.<br>Keep it locked up when you're not using it.<br>Love, Steven. From Accounting.</i><i>This paper has been stamped with the stamp of NTF Command.</i>";
+	pixel_y = 5
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "wD" = (
@@ -16629,6 +16635,9 @@
 /obj/structure/catwalk,
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
+"Ks" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/command/gunnery/mim/door)
 "KC" = (
 /obj/structure/flora/pottedplant/bamboo,
 /obj/machinery/power/apc{
@@ -34393,7 +34402,7 @@ gz
 gz
 bB
 Qi
-ag
+Ks
 aT
 ag
 MD
