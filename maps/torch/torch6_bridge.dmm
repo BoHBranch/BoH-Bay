@@ -4032,9 +4032,9 @@
 	},
 /obj/structure/catwalk,
 /obj/structure/cable/green{
-	d1 = 4;
+	d1 = 1;
 	d2 = 8;
-	icon_state = "4-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
@@ -18941,6 +18941,9 @@
 /obj/effect/floor_decal/corner/red/half,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
+"VM" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/command/gunnery/mim/door)
 "VN" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "bridge_port"
@@ -19248,9 +19251,6 @@
 "Xr" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/bridge/forestarboard)
-"Xv" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/command/gunnery/mim/door)
 "Xx" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/machinery/door/airlock/medical{
@@ -34427,9 +34427,9 @@ gz
 gz
 bB
 Qi
-Xv
+VM
 aT
-Xv
+VM
 MD
 MD
 lU
@@ -34629,9 +34629,9 @@ dY
 dY
 gi
 bx
-Xv
+VM
 cI
-Xv
+VM
 MD
 MD
 zW
