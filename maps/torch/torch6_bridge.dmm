@@ -335,7 +335,7 @@
 	id_tag = "toc_door";
 	name = "TOC door-bolt control";
 	pixel_x = -25;
-	req_access = list("ACCESS_HEADS")
+	req_access = list("ACCESS_HEADS","ACCESS_TORCH_SENIOR_ADVISOR")
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
@@ -447,7 +447,7 @@
 	id_tag = "toc_door";
 	name = "TOC door-bolt control";
 	pixel_x = -25;
-	pixel_y = 0
+	req_access = list("ACCESS_HEADS","ACCESS_TORCH_SENIOR_ADVISOR")
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/power/apc{
@@ -13597,22 +13597,6 @@
 /obj/item/weapon/storage/briefcase/foundation,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/psiadvisor)
-"wK" = (
-/obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/structure/cable/cyan,
-/obj/effect/paint/black,
-/obj/machinery/door/firedoor/autoset,
-/obj/machinery/door/blast/regular{
-	id_tag = "heavy_ai_doors";
-	name = "Internal Chamber Lockdown"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating,
-/area/turret_protected/ai_outer_chamber)
 "wL" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4;
@@ -13749,6 +13733,22 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/foreport)
+"xf" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/airlock/command,
+/obj/machinery/door/firedoor/autoset,
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/turret_protected/ai_outer_chamber)
 "xg" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
@@ -13878,6 +13878,14 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/bridge/aftport)
+"xq" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/turret_protected/ai_outer_chamber)
 "xt" = (
 /obj/machinery/portable_atmospherics/powered/pump/filled,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -14223,17 +14231,6 @@
 "yD" = (
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
-"yK" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/steel_ridged,
-/area/turret_protected/ai_outer_chamber)
 "yM" = (
 /obj/structure/sign/dedicationplaque{
 	desc = "S.E.V. Torch - Mako Class - Sol Expeditionary Corps Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched 2302 - Sol Central Government - 'Never was anything great achieved without danger.'";
@@ -14731,17 +14728,6 @@
 /obj/structure/bed/chair/comfy/green,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/rd)
-"AG" = (
-/obj/machinery/light/spot{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/steel_ridged,
-/area/turret_protected/ai_outer_chamber)
 "AH" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "bridge_starboard"
@@ -14800,6 +14786,22 @@
 "AN" = (
 /turf/simulated/floor/tiled/dark,
 /area/aquila/mess)
+"AQ" = (
+/obj/effect/wallframe_spawn/reinforced/titanium,
+/obj/structure/cable/cyan,
+/obj/effect/paint/black,
+/obj/machinery/door/firedoor/autoset,
+/obj/machinery/door/blast/regular{
+	id_tag = "heavy_ai_doors";
+	name = "Internal Chamber Lockdown"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/turret_protected/ai_outer_chamber)
 "AR" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -14957,6 +14959,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/co)
+"BK" = (
+/obj/machinery/light,
+/turf/simulated/floor/tiled/monotile,
+/area/turret_protected/ai_outer_chamber)
 "BO" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
@@ -15643,20 +15649,6 @@
 /obj/effect/floor_decal/corner/blue/mono,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
-"FF" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/tiled/steel_ridged,
-/area/turret_protected/ai_outer_chamber)
 "FG" = (
 /obj/machinery/photocopier/faxmachine{
 	department = "XO"
@@ -16424,6 +16416,17 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
+"IV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/turret_protected/ai_outer_chamber)
 "IW" = (
 /obj/effect/floor_decal/corner/yellow/full,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -16658,20 +16661,6 @@
 /obj/structure/catwalk,
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
-"Ks" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled/steel_ridged,
-/area/turret_protected/ai_outer_chamber)
 "KC" = (
 /obj/structure/flora/pottedplant/bamboo,
 /obj/machinery/power/apc{
@@ -16946,10 +16935,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/airlock)
-"Md" = (
-/obj/machinery/light,
-/turf/simulated/floor/tiled/monotile,
-/area/turret_protected/ai_outer_chamber)
 "Mf" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/power/apc/super/critical{
@@ -16960,6 +16945,17 @@
 	},
 /obj/structure/cable/cyan,
 /turf/simulated/floor/tiled/monotile,
+/area/turret_protected/ai_outer_chamber)
+"Mg" = (
+/obj/machinery/light/spot{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
 /area/turret_protected/ai_outer_chamber)
 "Mh" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -17043,28 +17039,26 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aquila/mess)
-"Mz" = (
-/turf/simulated/wall/r_wall/hull,
-/area/crew_quarters/heads/office/co)
-"MA" = (
-/turf/simulated/floor/carpet/blue,
-/area/crew_quarters/heads/cobed)
-"MC" = (
+"Mx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/door/airlock/command,
-/obj/machinery/door/firedoor/autoset,
 /obj/structure/cable/cyan{
-	d1 = 4;
+	d1 = 2;
 	d2 = 8;
-	icon_state = "4-8"
+	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/techmaint,
+/turf/simulated/floor/tiled/steel_ridged,
 /area/turret_protected/ai_outer_chamber)
+"Mz" = (
+/turf/simulated/wall/r_wall/hull,
+/area/crew_quarters/heads/office/co)
+"MA" = (
+/turf/simulated/floor/carpet/blue,
+/area/crew_quarters/heads/cobed)
 "MD" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -17526,17 +17520,23 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/fore)
-"Pt" = (
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/co)
-"PA" = (
+"Ps" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/turret_protected/ai_outer_chamber)
+"Pt" = (
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/co)
 "PB" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -17976,12 +17976,6 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/heads/cobed)
-"Rm" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/turret_protected/ai_outer_chamber)
 "Rp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -18781,6 +18775,12 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
+"UM" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/turret_protected/ai_outer_chamber)
 "UU" = (
 /obj/effect/shuttle_landmark/ert/deck5,
 /turf/space,
@@ -43136,8 +43136,8 @@ kj
 me
 hd
 uR
-Ks
-AG
+Ps
+Mg
 Mf
 ei
 qG
@@ -43338,7 +43338,7 @@ hd
 hd
 hd
 ei
-MC
+xf
 ei
 ei
 ei
@@ -43540,7 +43540,7 @@ nD
 mm
 tG
 ei
-FF
+Mx
 qL
 rH
 ei
@@ -43945,7 +43945,7 @@ sr
 si
 js
 sj
-yK
+IV
 sw
 ei
 qG
@@ -44132,7 +44132,7 @@ ad
 Rx
 qG
 ei
-Rm
+UM
 sR
 ei
 ei
@@ -44148,7 +44148,7 @@ ei
 ei
 ei
 sO
-Md
+BK
 ei
 qG
 Rx
@@ -44348,8 +44348,8 @@ mk
 mg
 mg
 mp
-wK
-PA
+AQ
+xq
 nB
 ei
 qG

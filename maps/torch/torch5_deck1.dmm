@@ -4256,7 +4256,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/table/reinforced,
+/obj/machinery/computer/modular/preset/security{
+	icon_state = "console";
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "ahu" = (
@@ -7752,6 +7755,10 @@
 /obj/machinery/computer/crew{
 	dir = 4
 	},
+/obj/item/modular_computer/telescreen/preset/medical{
+	pixel_x = -32;
+	pixel_y = -3
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "anr" = (
@@ -8780,6 +8787,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/mim)
+"apt" = (
+/turf/simulated/floor/tiled/techfloor,
+/area/command/gunnery/mim)
 "apu" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 6
@@ -8806,6 +8816,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "apw" = (
+/obj/structure/bed/chair/office/dark,
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "apx" = (
@@ -46285,7 +46296,7 @@ ajd
 ann
 apq
 api
-apw
+apt
 apB
 apj
 aqn
