@@ -8646,8 +8646,7 @@
 /obj/machinery/turretid/stun{
 	check_synth = 1;
 	name = "AI Chamber turret control";
-	pixel_y = 32;
-	step_x = null
+	pixel_y = 32
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "heavy_ai_doors";
@@ -12550,8 +12549,6 @@
 	dir = 1;
 	name = "AI Chamber turret control";
 	pixel_y = -32;
-	step_x = null;
-	step_y = null
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "heavy_ai_doors";
