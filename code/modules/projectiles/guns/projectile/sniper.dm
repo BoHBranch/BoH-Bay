@@ -95,3 +95,28 @@
 	scope_zoom = 0
 	scoped_accuracy = 0
 	wielded_item_state = "boltaction-wielded"
+
+/obj/item/weapon/gun/projectile/hornetsniper
+	name = "Z2 Hornet"
+	desc = "An older cousin of the Z9 Bullpup Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer."
+	icon = 'icons/obj/guns/hornet.dmi'
+	icon_state = "hornet"
+	item_state = "hornet"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK
+	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
+	caliber = CALIBER_RIFLE_MILITARY_LARGE
+	screen_shake = 0
+	handle_casings = EJECT_CASINGS
+	load_method = SINGLE_CASING
+	max_shells = 5
+	ammo_type = /obj/item/ammo_casing/rifle/military/large
+	one_hand_penalty = 6
+	accuracy = -4
+	bulk = 8
+	scoped_accuracy = 9
+	scope_zoom = 2
+	wielded_item_state = "z8carbine-wielded"
+	load_sound = 'sound/weapons/guns/interaction/rifle_load.ogg'
+	fire_delay = 40

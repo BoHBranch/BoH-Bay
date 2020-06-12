@@ -110,6 +110,12 @@
 	item_cost = 90
 	path = /obj/item/weapon/storage/secure/briefcase/heavysniper
 
+/datum/uplink_item/item/visible_weapons/ballisticdmr
+	name = "Hornet Designated Marksman Rifle"
+	desc = "A secure briefcase that contains a powerful, semi-automatic Designated Marksman Rifle. With ten extra rounds."
+	item_cost = 72
+	path = /obj/item/weapon/storage/secure/briefcase/hornetsniper
+
 /datum/uplink_item/item/visible_weapons/psi_amp
 	name = "Cerebroenergetic Psionic Amplifier"
 	item_cost = 50
