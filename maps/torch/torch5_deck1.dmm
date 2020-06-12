@@ -8892,7 +8892,7 @@
 	pixel_y = -32
 	},
 /obj/machinery/light/spot,
-/obj/machinery/computer/drone_control{
+/obj/machinery/computer/robotics{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,

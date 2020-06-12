@@ -458,8 +458,10 @@
 	},
 /obj/machinery/power/apc{
 	dir = 1;
-	name = "TOC Door";
-	pixel_y = 24
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24;
+	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
 	},
 /turf/simulated/floor/plating,
 /area/command/gunnery/mim/door{
@@ -1600,21 +1602,20 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "cI" = (
-/obj/machinery/door/airlock/vault/bolted{
-	autoset_access = 0;
-	frequency = 1379;
-	id_tag = "toc_door";
-	locked = 0;
-	name = "TOC Access";
-	req_access = list("ACCESS_BRIDGE")
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/airlock/vault/bolted{
+	autoset_access = 0;
+	frequency = 1379;
+	id_tag = "toc_door";
+	name = "TOC Access";
+	req_access = list("ACCESS_BRIDGE")
+	},
 /turf/simulated/floor/plating,
-/area/command/gunnery/mim/door)
+/area/maintenance/bridge/aftstarboard)
 "cJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
