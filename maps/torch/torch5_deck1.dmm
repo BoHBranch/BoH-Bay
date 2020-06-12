@@ -8742,7 +8742,9 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/command/gunnery/mim)
+/area/command/gunnery/mim{
+	req_access = list("ACCESS_BRIDGE")
+	})
 "apo" = (
 /obj/structure/bed/chair/office/light{
 	dir = 4
@@ -18169,6 +18171,9 @@
 /obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod11/station)
+"bVp" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/security/storage)
 "bWb" = (
 /obj/machinery/status_display{
 	pixel_x = -32
@@ -19551,14 +19556,6 @@
 /obj/structure/window/reinforced/tinted,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/subacute)
-"ejK" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "ekb" = (
 /obj/structure/window/reinforced/tinted,
 /turf/simulated/floor/tiled/white,
@@ -20699,6 +20696,17 @@
 "gnC" = (
 /turf/simulated/wall/r_wall/hull,
 /area/security/detectives_office)
+"gnL" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "gqz" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 9
@@ -21808,15 +21816,6 @@
 	},
 /turf/simulated/open,
 /area/assembly/robotics)
-"hMv" = (
-/obj/machinery/light,
-/obj/structure/cable/green,
-/obj/machinery/power/apc{
-	name = "Armory - Port";
-	pixel_y = -28
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "hNb" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/light{
@@ -21954,6 +21953,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
+"hYq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "hYM" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -23990,6 +23995,17 @@
 	},
 /turf/simulated/floor/plating,
 /area/assembly/robotics/surgery)
+"kUk" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "kUP" = (
 /obj/effect/floor_decal/floordetail/edgedrain,
 /obj/effect/floor_decal/corner/paleblue{
@@ -25342,14 +25358,6 @@
 	},
 /turf/simulated/floor/blackgrid,
 /area/security/nuke_storage)
-"mVH" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "mVW" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "forensicswindow"
@@ -25374,17 +25382,6 @@
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/firstdeck)
-"mYB" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "nbb" = (
 /obj/structure/cable/green{
 	d2 = 2;
@@ -25842,6 +25839,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/entry)
+"nJc" = (
+/obj/machinery/porta_turret/exterior/dagon,
+/turf/simulated/floor/airless,
+/area/security/storage)
 "nJo" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/structure/cable/green{
@@ -25966,6 +25967,15 @@
 /obj/effect/floor_decal/torchltdlogo,
 /turf/simulated/floor/tiled,
 /area/rnd/entry)
+"nRM" = (
+/obj/machinery/light,
+/obj/structure/cable/green,
+/obj/machinery/power/apc{
+	name = "Armory - Port";
+	pixel_y = -28
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "nSb" = (
 /obj/effect/floor_decal/torchltdlogo{
 	icon_state = "bottomright";
@@ -26534,6 +26544,14 @@
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/firstdeck/centralport)
+"oBl" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "oBZ" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 9
@@ -27232,10 +27250,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/misc_lab)
-"pCd" = (
-/obj/machinery/porta_turret/exterior/dagon,
-/turf/simulated/floor/airless,
-/area/security/storage)
 "pCs" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden,
@@ -27524,6 +27538,9 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
+"pYR" = (
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "pZb" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -27800,6 +27817,14 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
+"qru" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "qsc" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -27828,9 +27853,6 @@
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/xenoflora)
-"qth" = (
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "qtQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -28422,12 +28444,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/misc_lab)
-"rjh" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "rkb" = (
 /obj/machinery/atmospherics/valve,
 /obj/machinery/camera/network/research{
@@ -29258,9 +29274,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
-"siT" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/security/storage)
 "sjb" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5
@@ -31205,17 +31218,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
-"wdY" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "wep" = (
 /obj/structure/sign/warning/high_voltage{
 	dir = 1
@@ -38681,7 +38683,7 @@ aaa
 aaa
 aaa
 aaa
-pCd
+nJc
 auC
 auC
 auC
@@ -39289,15 +39291,15 @@ sik
 sik
 abH
 ajj
-mVH
-mVH
-mVH
-mVH
-mYB
-ejK
-ejK
-ejK
-hMv
+qru
+qru
+qru
+qru
+kUk
+oBl
+oBl
+oBl
+nRM
 alY
 alY
 aaa
@@ -39490,9 +39492,9 @@ sik
 sik
 sik
 acU
-wdY
+gnL
 agc
-qth
+pYR
 atY
 atT
 adL
@@ -39692,9 +39694,9 @@ vMH
 vMH
 vMH
 afl
-wdY
+gnL
 agc
-qth
+pYR
 atZ
 atV
 adL
@@ -40098,7 +40100,7 @@ vMH
 adj
 atx
 agc
-rjh
+hYq
 aum
 aue
 aem
@@ -40299,10 +40301,10 @@ atI
 vMH
 adl
 atx
-qth
-rjh
-qth
-qth
+pYR
+hYq
+pYR
+pYR
 aem
 aqG
 aqG
@@ -40703,10 +40705,10 @@ vMH
 vMH
 amK
 adO
-siT
-siT
-siT
-siT
+bVp
+bVp
+bVp
+bVp
 sHN
 sHN
 aud

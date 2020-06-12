@@ -462,7 +462,9 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/plating,
-/area/command/gunnery/mim/door)
+/area/command/gunnery/mim/door{
+	req_access = list("ACCESS_BRIDGE")
+	})
 "aU" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -17531,6 +17533,9 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
+"PO" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/command/gunnery/mim/door)
 "Qb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -18903,9 +18908,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge/meeting_room)
-"Vo" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/command/gunnery/mim/door)
 "Vs" = (
 /obj/machinery/atmospherics/unary/engine{
 	dir = 1
@@ -34427,9 +34429,9 @@ gz
 gz
 bB
 Qi
-Vo
+PO
 aT
-Vo
+PO
 MD
 MD
 lU
@@ -34629,9 +34631,9 @@ dY
 dY
 gi
 bx
-Vo
+PO
 cI
-Vo
+PO
 MD
 MD
 zW
