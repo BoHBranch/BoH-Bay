@@ -452,8 +452,17 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/catwalk,
 /obj/machinery/light/small,
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "TOC Door";
+	pixel_y = 24
+	},
 /turf/simulated/floor/plating,
-/area/maintenance/bridge/aftstarboard)
+/area/command/gunnery/mim/door)
 "aU" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -1595,8 +1604,13 @@
 	locked = 0;
 	name = "TOC Access"
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating,
-/area/maintenance/bridge/aftstarboard)
+/area/command/gunnery/mim/door)
 "cJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -3984,6 +3998,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "gE" = (
@@ -4008,6 +4027,11 @@
 	icon_state = "intact"
 	},
 /obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "gG" = (
@@ -16635,9 +16659,6 @@
 /obj/structure/catwalk,
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
-"Ks" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/command/gunnery/mim/door)
 "KC" = (
 /obj/structure/flora/pottedplant/bamboo,
 /obj/machinery/power/apc{
@@ -16651,6 +16672,9 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
+"KE" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/command/gunnery/mim/door)
 "KG" = (
 /obj/structure/cable/green{
 	d2 = 2;
@@ -34402,9 +34426,9 @@ gz
 gz
 bB
 Qi
-Ks
+KE
 aT
-ag
+KE
 MD
 MD
 lU
@@ -34604,9 +34628,9 @@ dY
 dY
 gi
 bx
-ag
+KE
 cI
-ag
+KE
 MD
 MD
 zW
