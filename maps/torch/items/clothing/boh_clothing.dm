@@ -118,7 +118,6 @@
 	shoes = /obj/item/clothing/shoes/dress
 	pda_type = /obj/item/modular_computer/pda/heads
 	id_type = /obj/item/weapon/card/id/torch/crew/psiadvisor
-	l_hand =   /obj/item/weapon/storage/briefcase/foundation
 	holster =  /obj/item/clothing/accessory/storage/holster/waist
 
 /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor/nt
@@ -127,5 +126,4 @@
 	suit = /obj/item/clothing/suit/storage/toggle/suit/black/agent
 	gloves = /obj/item/clothing/ring/material/nullglass
 	shoes = /obj/item/clothing/shoes/dutyboots
-	l_hand =   /obj/item/weapon/storage/briefcase/foundation/nt
 	holster =  /obj/item/clothing/accessory/storage/holster/armpit
