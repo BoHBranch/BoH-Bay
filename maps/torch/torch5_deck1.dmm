@@ -11222,7 +11222,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/space)
+/area/command/gunnery/mim)
 "atv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -18372,14 +18372,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/firstdeck/centralstarboard)
-"cnU" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "cob" = (
 /obj/structure/skele_stand,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -19479,9 +19471,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
-"eax" = (
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "eaS" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/self_destruct,
@@ -20046,9 +20035,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
-"foY" = (
-/turf/simulated/wall/r_wall/hull,
-/area/security/storage)
 "fpb" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 6
@@ -20065,12 +20051,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
-"fqD" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "fra" = (
 /obj/effect/floor_decal/floordetail/edgedrain,
 /obj/effect/floor_decal/corner/red{
@@ -20381,6 +20361,17 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/infirmreception)
+"fNU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "fOb" = (
 /obj/structure/sign/chemistry{
 	dir = 1
@@ -20633,6 +20624,14 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/engineering/hardstorage/aux)
+"gbu" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "gcc" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -20692,14 +20691,9 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/center)
-"gkH" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+"gjq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
@@ -22449,6 +22443,9 @@
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
 /area/rnd/development)
+"iJb" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/security/storage)
 "iKb" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -24372,15 +24369,6 @@
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralport)
-"lsy" = (
-/obj/machinery/light,
-/obj/structure/cable/green,
-/obj/machinery/power/apc{
-	name = "Armory - Port";
-	pixel_y = -28
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "ltb" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/computer/rdconsole/core{
@@ -24639,10 +24627,6 @@
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/reinforced,
 /area/thruster/d1port)
-"lJH" = (
-/obj/machinery/porta_turret/exterior/dagon,
-/turf/simulated/floor/airless,
-/area/security/storage)
 "lLD" = (
 /obj/machinery/computer/arcade,
 /turf/simulated/floor/plating,
@@ -25578,6 +25562,14 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
+"nkz" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "nlb" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -26276,6 +26268,15 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
+"ofz" = (
+/obj/machinery/light,
+/obj/structure/cable/green,
+/obj/machinery/power/apc{
+	name = "Armory - Port";
+	pixel_y = -28
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "ogb" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
@@ -26792,14 +26793,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
-"oTf" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "oUb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -27441,6 +27434,9 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
+"pOT" = (
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "pPb" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -27928,6 +27924,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
+"qyM" = (
+/obj/machinery/porta_turret/exterior/dagon,
+/turf/simulated/floor/airless,
+/area/security/storage)
 "qzb" = (
 /obj/machinery/atmospherics/pipe/simple/visible,
 /obj/machinery/meter,
@@ -30500,17 +30500,6 @@
 "tJO" = (
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
-"tNP" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "tOm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -30602,6 +30591,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
+"uhT" = (
+/turf/simulated/wall/r_wall/hull,
+/area/security/storage)
 "uiY" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/medical{
@@ -31439,6 +31431,17 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
 /area/command/armoury/access)
+"wSR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "wWc" = (
 /obj/structure/sign/warning/secure_area{
 	dir = 4
@@ -31629,9 +31632,6 @@
 "xRh" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/processing)
-"xRJ" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/security/storage)
 "xSd" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 5
@@ -38693,12 +38693,12 @@ aaa
 aaa
 aaa
 aaa
-lJH
-foY
-foY
-foY
-foY
-foY
+qyM
+uhT
+uhT
+uhT
+uhT
+uhT
 alY
 alY
 alY
@@ -38894,13 +38894,13 @@ aaa
 aaa
 aaa
 aaa
-foY
-foY
-foY
-foY
-foY
-foY
-foY
+uhT
+uhT
+uhT
+uhT
+uhT
+uhT
+uhT
 alY
 alY
 alY
@@ -39095,9 +39095,9 @@ aaa
 aaa
 aaa
 aaa
-foY
-foY
-foY
+uhT
+uhT
+uhT
 adH
 atz
 atN
@@ -39301,15 +39301,15 @@ sik
 sik
 abH
 ajj
-oTf
-oTf
-oTf
-oTf
-tNP
-cnU
-cnU
-cnU
-lsy
+nkz
+nkz
+nkz
+nkz
+wSR
+gbu
+gbu
+gbu
+ofz
 alY
 alY
 aaa
@@ -39502,9 +39502,9 @@ sik
 sik
 sik
 acU
-gkH
+fNU
 agc
-eax
+pOT
 atY
 atT
 adL
@@ -39704,9 +39704,9 @@ vMH
 vMH
 vMH
 afl
-gkH
+fNU
 agc
-eax
+pOT
 atZ
 atV
 adL
@@ -40110,7 +40110,7 @@ vMH
 adj
 atx
 agc
-fqD
+gjq
 aum
 aue
 aem
@@ -40311,10 +40311,10 @@ atI
 vMH
 adl
 atx
-eax
-fqD
-eax
-eax
+pOT
+gjq
+pOT
+pOT
 aem
 aqG
 aqG
@@ -40715,10 +40715,10 @@ vMH
 vMH
 amK
 adO
-xRJ
-xRJ
-xRJ
-xRJ
+iJb
+iJb
+iJb
+iJb
 sHN
 sHN
 aud
