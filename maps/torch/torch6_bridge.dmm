@@ -5740,7 +5740,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
-/area/space)
+/area/bridge)
 "jJ" = (
 /obj/machinery/alarm{
 	frequency = 1439;
@@ -8693,9 +8693,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/guncabinet/PPE{
-	name = "Saferoom primary cabinet"
-	},
+/obj/structure/closet/secure_closet/guncabinet/sidearm/combined,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/bridge)
 "ow" = (
@@ -12879,7 +12877,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
-/area/space)
+/area/bridge)
 "vB" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -13108,6 +13106,10 @@
 /obj/effect/floor_decal/techfloor{
 	icon_state = "techfloor_edges";
 	dir = 8
+	},
+/obj/structure/bed/chair/padded/blue{
+	icon_state = "chair_preview";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
@@ -16283,6 +16285,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
+"Iw" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/command/gunnery/mim/door)
 "IA" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -17470,7 +17475,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "Pf" = (
-/obj/random/maintenance/solgov,
 /obj/machinery/light{
 	icon_state = "tube1";
 	dir = 8
@@ -18941,9 +18945,6 @@
 /obj/effect/floor_decal/corner/red/half,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
-"VM" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/command/gunnery/mim/door)
 "VN" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "bridge_port"
@@ -34427,9 +34428,9 @@ gz
 gz
 bB
 Qi
-VM
+Iw
 aT
-VM
+Iw
 MD
 MD
 lU
@@ -34629,9 +34630,9 @@ dY
 dY
 gi
 bx
-VM
+Iw
 cI
-VM
+Iw
 MD
 MD
 zW
