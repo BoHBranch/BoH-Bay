@@ -4277,6 +4277,10 @@
 	pixel_y = -5;
 	pixel_x = 6
 	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1;
+	level = 2
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "ahu" = (
@@ -7763,9 +7767,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/hardstorage/aux)
 "anq" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -8738,16 +8739,12 @@
 /obj/effect/floor_decal/corner/blue{
 	dir = 6
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
 /obj/structure/closet/hydrant{
 	pixel_y = 1;
 	pixel_x = 32
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/mim)
 "apm" = (
@@ -8756,6 +8753,10 @@
 "apn" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/mim{
@@ -8768,9 +8769,6 @@
 /turf/simulated/floor/tiled,
 /area/assembly/robotics)
 "app" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
 /obj/structure/cable/green{
 	d1 = 2;
 	d2 = 4;
@@ -8785,12 +8783,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
 "apq" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
@@ -8842,13 +8834,17 @@
 	dir = 1
 	},
 /obj/structure/bed/roller,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/mim)
 "apv" = (
 /obj/machinery/power/smes/buildable/preset/torch/substation{
 	RCon_tag = "Substation - First Deck - MIM";
 	_fully_charged = 1;
-	_input_on = 1
+	_input_on = 1;
+	_output_on = 1
 	},
 /obj/structure/cable/green{
 	d2 = 2;
@@ -8868,6 +8864,7 @@
 	pixel_x = 32
 	},
 /obj/structure/bed/chair/office/dark,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/mim)
 "apy" = (
@@ -8922,6 +8919,7 @@
 	dir = 6
 	},
 /obj/machinery/power/apc/hyper/toc{
+	name = null;
 	pixel_y = -24
 	},
 /obj/machinery/light/spot,
@@ -8931,6 +8929,9 @@
 /obj/structure/cable/green{
 	d2 = 8;
 	icon_state = "0-8"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/mim)
@@ -31137,6 +31138,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
+"vSC" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled/techfloor,
+/area/command/gunnery/mim)
 "vTH" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "forensicswindow"
@@ -46556,7 +46561,7 @@ aeg
 aps
 apl
 apn
-apt
+vSC
 aht
 apj
 aqn
