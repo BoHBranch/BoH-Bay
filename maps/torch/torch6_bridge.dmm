@@ -12895,6 +12895,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "vC" = (
@@ -16672,9 +16673,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
-"KE" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/command/gunnery/mim/door)
 "KG" = (
 /obj/structure/cable/green{
 	d2 = 2;
@@ -18905,6 +18903,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge/meeting_room)
+"Vo" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/command/gunnery/mim/door)
 "Vs" = (
 /obj/machinery/atmospherics/unary/engine{
 	dir = 1
@@ -34426,9 +34427,9 @@ gz
 gz
 bB
 Qi
-KE
+Vo
 aT
-KE
+Vo
 MD
 MD
 lU
@@ -34628,9 +34629,9 @@ dY
 dY
 gi
 bx
-KE
+Vo
 cI
-KE
+Vo
 MD
 MD
 zW
