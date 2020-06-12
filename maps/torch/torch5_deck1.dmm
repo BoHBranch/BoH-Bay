@@ -11411,7 +11411,7 @@
 	},
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = -30;
-	step_x = 0
+	step_x = null
 	},
 /obj/item/weapon/storage/box/teargas{
 	pixel_x = 3;
@@ -11779,11 +11779,6 @@
 	pixel_x = -2;
 	pixel_y = -2
 	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/item/clothing/head/helmet/ballistic,
 /obj/item/clothing/head/helmet/ballistic,
 /obj/item/clothing/head/helmet/ballistic,
@@ -12063,36 +12058,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/firstdeck)
-"auC" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/table/rack,
-/obj/item/weapon/gun/projectile/shotgun/pump/combat{
-	starts_loaded = 0
-	},
-/obj/structure/window/reinforced{
-	dir = 8;
-	health = null
-	},
-/obj/machinery/door/window/brigdoor/westright{
-	autoset_access = 0;
-	dir = 1;
-	id_tag = "secarmory";
-	min_force = 16;
-	name = "combat shotgun";
-	req_access = list("ACCESS_ARMORY")
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/industrial/outline/orange,
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "auE" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -39868,7 +39833,7 @@ auc
 auq
 aux
 aqG
-auC
+auW
 alY
 alY
 aaa
