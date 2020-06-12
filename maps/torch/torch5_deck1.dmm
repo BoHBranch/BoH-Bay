@@ -92,10 +92,10 @@
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "earm_stairs";
-	name = "Secondary Bridge Shutter Controls";
+	name = "Emergency Bridge Shutter Controls";
 	pixel_x = -26;
-	req_access = list("ACCESS_HEAD_OF_PERSONNEL");
-	pixel_y = 9
+	pixel_y = 9;
+	req_access = list("ACCESS_HEAD_OF_PERSONNEL")
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/armoury)
@@ -7780,7 +7780,12 @@
 	},
 /obj/structure/table/reinforced,
 /obj/item/weapon/storage/toolbox/syndicate{
-	pixel_y = 2
+	pixel_y = 4;
+	pixel_x = 2
+	},
+/obj/item/weapon/cell/super{
+	pixel_x = -9;
+	pixel_y = -2
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/mim)
@@ -17906,10 +17911,6 @@
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/reinforced/airless,
 /area/shuttle/escape_pod9/station)
-"bJR" = (
-/obj/machinery/porta_turret/exterior/dagon,
-/turf/simulated/floor/airless,
-/area/security/storage)
 "bLb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -18273,6 +18274,17 @@
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod11/station)
+"cfk" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "cfn" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -19557,6 +19569,9 @@
 /obj/item/clothing/gloves/insulated,
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
+"ehm" = (
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "ehT" = (
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
@@ -20175,6 +20190,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmary)
+"fwf" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
 "fyb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -21224,17 +21245,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
-"hhS" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "hib" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -22052,6 +22062,14 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
+"iig" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "ijb" = (
 /obj/machinery/hologram/holopad,
 /obj/structure/cable/green{
@@ -23961,14 +23979,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/assembly/chargebay)
-"kRk" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "kSb" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -25964,6 +25974,25 @@
 /obj/effect/floor_decal/torchltdlogo,
 /turf/simulated/floor/tiled,
 /area/rnd/entry)
+"nRJ" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/storage)
+"nRQ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "nSb" = (
 /obj/effect/floor_decal/torchltdlogo{
 	icon_state = "bottomright";
@@ -26505,17 +26534,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/rnd/xenobiology)
-"oyf" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "ozb" = (
 /turf/simulated/floor/carpet/green,
 /area/rnd/breakroom)
@@ -26800,6 +26818,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
+"oUn" = (
+/obj/machinery/porta_turret/exterior/dagon,
+/turf/simulated/floor/airless,
+/area/security/storage)
 "oXb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -28183,9 +28205,6 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/misc_lab)
-"qSz" = (
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "qSD" = (
 /obj/structure/closet{
 	name = "Evidence Closet"
@@ -29425,9 +29444,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/misc_lab)
-"srh" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/security/storage)
 "srR" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -29724,12 +29740,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/aft)
-"sLd" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "sMO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -31044,6 +31054,9 @@
 	},
 /turf/simulated/floor/reinforced/oxygen,
 /area/thruster/d1starboard)
+"vBh" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/security/storage)
 "vBV" = (
 /obj/random/obstruction,
 /turf/simulated/floor/plating,
@@ -31124,14 +31137,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
-"vNM" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/storage)
 "vTH" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "forensicswindow"
@@ -31287,6 +31292,15 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmreception)
+"wrC" = (
+/obj/machinery/light,
+/obj/structure/cable/green,
+/obj/machinery/power/apc{
+	name = "Armory - Port";
+	pixel_y = -28
+	},
+/turf/simulated/floor/tiled/dark,
+/area/security/armoury)
 "wtS" = (
 /obj/random/medical,
 /obj/random/medical,
@@ -31564,15 +31578,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
-"xAu" = (
-/obj/machinery/light,
-/obj/structure/cable/green,
-/obj/machinery/power/apc{
-	name = "Armory - Port";
-	pixel_y = -28
-	},
-/turf/simulated/floor/tiled/dark,
-/area/security/armoury)
 "xBk" = (
 /obj/structure/railing/mapped{
 	dir = 4;
@@ -38692,7 +38697,7 @@ aaa
 aaa
 aaa
 aaa
-bJR
+oUn
 auC
 auC
 auC
@@ -39300,15 +39305,15 @@ sik
 sik
 abH
 ajj
-vNM
-vNM
-vNM
-vNM
-hhS
-kRk
-kRk
-kRk
-xAu
+nRJ
+nRJ
+nRJ
+nRJ
+nRQ
+iig
+iig
+iig
+wrC
 alY
 alY
 aaa
@@ -39501,9 +39506,9 @@ sik
 sik
 sik
 acU
-oyf
+cfk
 agc
-qSz
+ehm
 atY
 atT
 adL
@@ -39703,9 +39708,9 @@ vMH
 vMH
 vMH
 afl
-oyf
+cfk
 agc
-qSz
+ehm
 atZ
 atV
 adL
@@ -40109,7 +40114,7 @@ vMH
 adj
 atx
 agc
-sLd
+fwf
 aum
 aue
 aem
@@ -40310,10 +40315,10 @@ atI
 vMH
 adl
 atx
-qSz
-sLd
-qSz
-qSz
+ehm
+fwf
+ehm
+ehm
 aem
 aqG
 aqG
@@ -40714,10 +40719,10 @@ vMH
 vMH
 amK
 adO
-srh
-srh
-srh
-srh
+vBh
+vBh
+vBh
+vBh
 sHN
 sHN
 aud

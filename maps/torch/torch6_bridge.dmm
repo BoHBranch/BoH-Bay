@@ -11509,12 +11509,20 @@
 	id_tag = "earm_stairs";
 	name = "Lockdown Shutter Control";
 	pixel_x = 4;
-	pixel_y = 0
+	pixel_y = -5
 	},
 /obj/machinery/button/alternate/door/bolts{
 	id_tag = "backupbridge";
 	name = "door bolts";
-	pixel_x = -6
+	pixel_x = -6;
+	pixel_y = -5
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "earm_stairs";
+	name = "Emergency Bridge Shutter Controls";
+	pixel_x = -6;
+	pixel_y = 5;
+	req_access = list("ACCESS_HEAD_OF_PERSONNEL")
 	},
 /turf/simulated/floor/tiled/dark,
 /area/turret_protected/ai_outer_chamber)
@@ -14561,6 +14569,9 @@
 /obj/effect/shuttle_landmark/merc/deck5,
 /turf/space,
 /area/space)
+"Ac" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/command/gunnery/mim/door)
 "Ad" = (
 /obj/structure/bed/chair/office/comfy/blue{
 	icon_state = "comfyofficechair_preview";
@@ -17227,9 +17238,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
-"NF" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/command/gunnery/mim/door)
 "NH" = (
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/structure/bed/chair/comfy/beige{
@@ -34428,9 +34436,9 @@ gz
 gz
 bB
 Qi
-NF
+Ac
 aT
-NF
+Ac
 MD
 MD
 lU
@@ -34630,9 +34638,9 @@ dY
 dY
 gi
 bx
-NF
+Ac
 cI
-NF
+Ac
 MD
 MD
 zW
