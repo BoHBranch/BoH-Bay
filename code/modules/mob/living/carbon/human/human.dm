@@ -1709,8 +1709,6 @@
 		. += 1
 	if(skill_check(SKILL_WEAPONS, SKILL_EXPERT))
 		. += 1
-	if(skill_check(SKILL_WEAPONS, SKILL_PROF))
-		. += 2
 
 /mob/living/carbon/human/can_drown()
 	if(!internal && (!istype(wear_mask) || !wear_mask.filters_water()))
