@@ -7,7 +7,7 @@
 /datum/uplink_item/item/visible_weapons/zipgun
 	name = "Zip Gun"
 	desc = "A pipe attached to crude wooden stock with firing mechanism, holds one round."
-	item_cost = 4
+	item_cost = 1
 	path = /obj/item/weapon/gun/projectile/pirate
 
 /datum/uplink_item/item/visible_weapons/smallenergy_gun
@@ -26,27 +26,27 @@
 	name = "Dart Gun"
 	desc = "A gas-powered dart gun capable of delivering chemical payloads across short distances. \
 			Uses a unique cartridge loaded with hollow darts."
-	item_cost = 20
+	item_cost = 12
 	path = /obj/item/weapon/gun/projectile/dartgun
 
 /datum/uplink_item/item/visible_weapons/crossbow
 	name = "Energy Crossbow"
 	desc = "A self-recharging, almost silent weapon employed by stealth operatives."
-	item_cost = 24
+	item_cost = 32
 	path = /obj/item/weapon/gun/energy/crossbow
 
 /datum/uplink_item/item/visible_weapons/energy_sword
 	name = "Energy Sword"
 	desc = "A hilt, that when activated, creates a solid beam of pure energy in the form of a sword. \
 			Able to slice through people like butter!"
-	item_cost = 32
+	item_cost = 54
 	path = /obj/item/weapon/melee/energy/sword
 
 /datum/uplink_item/item/visible_weapons/silenced
 	name = "Small Silenced Pistol"
 	desc = "A kit with a pocket-sized holdout pistol, silencer, and an extra magazine. \
 			Attaching the silencer will make it too big to conceal in your pocket."
-	item_cost = 32
+	item_cost = 20
 	path = /obj/item/weapon/storage/box/syndie_kit/silenced
 
 /datum/uplink_item/item/badassery/money_cannon
@@ -58,7 +58,7 @@
 /datum/uplink_item/item/visible_weapons/energy_gun
 	name = "Energy Gun"
 	desc = "A energy based sidearm with three different lethality settings, stun, shock, kill."
-	item_cost = 32
+	item_cost = 24
 	path = /obj/item/weapon/gun/energy/gun
 
 /datum/uplink_item/item/visible_weapons/ionpistol
@@ -70,7 +70,7 @@
 /datum/uplink_item/item/visible_weapons/revolver
 	name = "Magnum Revolver"
 	desc = "A high-caliber revolver. Includes an extra speedloader of ammo."
-	item_cost = 56
+	item_cost = 52
 	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/revolver
 
 /datum/uplink_item/item/visible_weapons/grenade_launcher
@@ -110,6 +110,12 @@
 	item_cost = 90
 	path = /obj/item/weapon/storage/secure/briefcase/heavysniper
 
+/datum/uplink_item/item/visible_weapons/ballisticdmr
+	name = "Hornet Designated Marksman Rifle"
+	desc = "A secure briefcase that contains a powerful, semi-automatic Designated Marksman Rifle. With ten extra rounds."
+	item_cost = 72
+	path = /obj/item/weapon/storage/secure/briefcase/hornetsniper
+
 /datum/uplink_item/item/visible_weapons/psi_amp
 	name = "Cerebroenergetic Psionic Amplifier"
 	item_cost = 50
@@ -119,7 +125,7 @@
 /datum/uplink_item/item/visible_weapons/machine_pistol
 	name = "Standard Machine Pistol"
 	desc = "A high rate of fire weapon in a smaller form factor, able to sling standard ammunition almost as quick as a submachine gun."
-	item_cost = 37
+	item_cost = 30
 	path = /obj/item/weapon/gun/projectile/automatic/machine_pistol
 
 /datum/uplink_item/item/visible_weapons/combat_shotgun
@@ -144,13 +150,13 @@
 /datum/uplink_item/item/visible_weapons/sigsauer
 	name = "Standard Military Pistol"
 	desc = "A regularly used and reliable weapon that is standard issue in the Navy."
-	item_cost = 40
+	item_cost = 20
 	path = /obj/item/weapon/gun/projectile/pistol/military/alt
 
 /datum/uplink_item/item/visible_weapons/detective_revolver
 	name = "Small Revolver"
 	desc = "A pocket-sized holdout revolver. Easily concealable.."
-	item_cost = 24
+	item_cost = 12
 	path = /obj/item/weapon/gun/projectile/revolver/holdout
 
 /datum/uplink_item/item/visible_weapons/pulserifle
@@ -204,7 +210,7 @@
 /datum/uplink_item/item/visible_weapons/energyshield
 	name = "Energy Shield"
 	desc = "A shield capable of stopping most projectile and melee attacks. It can be retracted, expanded, and stored anywhere."
-	item_cost = 22
+	item_cost = 28
 	path = /obj/item/weapon/shield/energy
 
 /datum/uplink_item/item/visible_weapons/

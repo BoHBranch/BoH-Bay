@@ -52,6 +52,12 @@
 	item_cost = 7
 	path = /obj/item/weapon/storage/box/ammo/sniperammo
 
+/datum/uplink_item/item/ammo/hornetammo
+	name = "Ammobox of Hornet Rounds"
+	desc = "A container of rounds for the Hornet DMR. Contains 10 rounds."
+	item_cost = 5
+	path = /obj/item/weapon/storage/box/ammo/hornetammo
+
 /datum/uplink_item/item/ammo/sniperammo/apds
 	name = "Ammobox of APDS Sniper Rounds"
 	desc = "A container of armor piercing rounds for the anti-materiel rifle. Contains 3 rounds."
