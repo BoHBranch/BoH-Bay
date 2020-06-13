@@ -831,6 +831,10 @@
 	opacity = 0
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/plating,
 /area/security/brig/perma)
 "abo" = (
@@ -2127,6 +2131,11 @@
 /area/space)
 "adB" = (
 /obj/machinery/portable_atmospherics/hydroponics,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "adC" = (
@@ -4180,6 +4189,11 @@
 /area/security/wing)
 "ahj" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ahk" = (
@@ -4308,6 +4322,11 @@
 	id_tag = "permflash";
 	pixel_x = 0
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ahw" = (
@@ -4385,6 +4404,11 @@
 "ahH" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -5895,6 +5919,11 @@
 "ajY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/item/weapon/stool/padded,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ajZ" = (
@@ -6563,6 +6592,16 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/item/weapon/stool/padded,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ala" = (
@@ -6575,6 +6614,16 @@
 /obj/structure/table/reinforced,
 /obj/item/weapon/paper_bin{
 	pixel_y = -4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -6599,6 +6648,16 @@
 	dir = 4
 	},
 /obj/item/weapon/stool/padded,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ald" = (
@@ -6840,6 +6899,11 @@
 /area/medical/infirmary)
 "alw" = (
 /obj/structure/table/reinforced,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "alx" = (
@@ -6999,6 +7063,17 @@
 "alM" = (
 /obj/structure/fitness/weightlifter,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/wrench{
+	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
+	force = 5;
+	name = "ultralite wrench";
+	throwforce = 5
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "alN" = (
@@ -7114,6 +7189,11 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ame" = (
@@ -7122,6 +7202,11 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -7210,18 +7295,6 @@
 /area/security/wing)
 "amk" = (
 /obj/structure/fitness/weightlifter,
-/obj/item/weapon/wrench{
-	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
-	force = 5;
-	name = "ultralite wrench";
-	throwforce = 5
-	},
-/obj/item/weapon/wrench{
-	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
-	force = 5;
-	name = "ultralite wrench";
-	throwforce = 5
-	},
 /obj/item/weapon/wrench{
 	desc = "A good, durable combination wrench, with self-adjusting, universal open- and ring-end mechanisms to match a wide variety of nuts and bolts. This one is made out of especially light materials.";
 	force = 5;
@@ -19886,6 +19959,15 @@
 /obj/machinery/recharger,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
+"eYh" = (
+/obj/item/weapon/stool/padded,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "eZQ" = (
 /obj/machinery/lapvend{
 	dir = 4
@@ -24453,6 +24535,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
+"lwz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "lxb" = (
 /obj/structure/table/steel,
 /obj/item/weapon/paper_bin,
@@ -31390,12 +31482,34 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/subacute)
+"wzA" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "wzN" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
+"wAX" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "wBV" = (
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
@@ -43553,7 +43667,7 @@ obZ
 aFV
 abn
 adB
-ahf
+wAX
 alw
 ala
 alU
@@ -43755,8 +43869,8 @@ obZ
 aFV
 abn
 adB
-ahf
-ajZ
+wAX
+eYh
 alc
 ajZ
 ahf
@@ -43959,7 +44073,7 @@ aoi
 abA
 ahg
 ahf
-ahz
+wzA
 ahf
 ahg
 ahf
@@ -44161,7 +44275,7 @@ aoi
 abD
 ahf
 amo
-ahz
+wzA
 amo
 ahf
 ahf
@@ -44361,9 +44475,9 @@ aEU
 aFV
 abn
 adB
-ahf
-ahf
-ahz
+wAX
+wAX
+amd
 ahf
 ahf
 ahf
@@ -44565,7 +44679,7 @@ abn
 adB
 ahH
 alM
-ahz
+amd
 amk
 amS
 amY
@@ -44766,7 +44880,7 @@ aGe
 abn
 adB
 ahv
-akq
+lwz
 ame
 akq
 amT
