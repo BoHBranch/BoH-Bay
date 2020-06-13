@@ -53,7 +53,7 @@
 		is_jammed = 1
 		var/mob/user = loc
 		if(istype(user))
-			if(prob(user.skill_fail_chance(SKILL_WEAPONS, 75, 6, 0.22)))
+			if(prob(user.skill_fail_chance(SKILL_WEAPONS, 100, 6, 0.33)))
 				return null
 			else
 				to_chat(user, "<span class='notice'>You reflexively clear the jam on \the [src].</span>")
