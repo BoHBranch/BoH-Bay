@@ -202,6 +202,10 @@
 	name = "box of sniper shells"
 	startswith = list(/obj/item/ammo_casing/shell = 7)
 
+/obj/item/weapon/storage/box/ammo/hornetammo
+	name = "box of hornet rounds"
+	startswith = list(/obj/item/ammo_casing/rifle/military/large = 10)
+
 /obj/item/weapon/storage/box/ammo/sniperammo/apds
 	name = "box of sniper APDS shells"
 	startswith = list(/obj/item/ammo_casing/shell/apds = 3)

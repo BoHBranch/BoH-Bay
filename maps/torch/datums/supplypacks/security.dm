@@ -108,6 +108,25 @@
 	access = access_emergency_armory
 	security_level = SUPPLY_SECURITY_HIGH
 
+/decl/hierarchy/supply_pack/security/hornetsniper
+	name = "Weapons - Ballistic DMR"
+	contains = list(/obj/item/weapon/gun/projectile/hornetsniper = 2, 
+					/obj/item/weapon/storage/box/ammo/hornetammo = 2,)
+	cost = 100
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "ballistic marksman crate"
+	access = access_emergency_armory
+	security_level = SUPPLY_SECURITY_HIGH
+
+/decl/hierarchy/supply_pack/security/hornetsniperammo
+	name = "Ammunition - Ballistic DMR"
+	contains = list(/obj/item/weapon/storage/box/ammo/hornetammo = 2,)
+	cost = 20
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "ballistic marksman ammunition crate"
+	access = access_emergency_armory
+	security_level = SUPPLY_SECURITY_HIGH
+
 /decl/hierarchy/supply_pack/security/pdw
 	name = "Weapons - Ballistic PDWs"
 	contains = list(/obj/item/weapon/gun/projectile/automatic/sec_smg = 2)

@@ -23,7 +23,7 @@
 	one_hand_penalty = 3
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
 	force = 8
-	max_shots = 8
+	max_shots = 10
 	accuracy = 1
 	projectile_type = /obj/item/projectile/beam/stun/heavy
 	wielded_item_state = "tasercarbine-wielded"
@@ -68,7 +68,7 @@
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
 	force = 10
 	max_shots = 5
-	accuracy = 1
+	accuracy = 2
 	projectile_type = /obj/item/projectile/energy/electrode/stunshot
 	wielded_item_state = "stunrifle-wielded"
 
@@ -111,13 +111,14 @@
 
 /obj/item/weapon/gun/energy/plasmastun
 	name = "plasma pulse projector"
-	desc = "The Mars Military Industries MA21 Selkie is a weapon that uses a laser pulse to ionise the local atmosphere, creating a disorienting pulse of plasma and deafening shockwave as the wave expands."
+	desc = "The Mars Military Industries MA21 Selkie is a weapon that uses a laser pulse to ionise the local atmosphere, creating a disorienting pulse of plasma and deafening shockwave as the wave expands. Without a local atmosphere to ionize, however, it becomes a very expensive paperweight."
 	icon = 'icons/obj/guns/plasma_stun.dmi'
 	icon_state = "plasma_stun"
 	item_state = "plasma_stun"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_POWER = 3)
+	slot_flags = SLOT_BACK
 	fire_delay = 20
-	max_shots = 4
+	max_shots = 8
 	projectile_type = /obj/item/projectile/energy/plasmastun
 	combustion = 0
 
