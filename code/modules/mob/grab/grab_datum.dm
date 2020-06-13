@@ -286,7 +286,7 @@
 	if(affecting.confused)
 		break_strength--
 
-	if(break_strength < 1)
+	if(break_strength < 2)
 		to_chat(G.affecting, "<span class='warning'>You try to break free but feel that unless something changes, you'll never escape!</span>")
 		return
 
