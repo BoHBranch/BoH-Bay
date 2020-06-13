@@ -64,7 +64,7 @@
 /datum/uplink_item/item/visible_weapons/ionpistol
 	name = "Ion Pistol"
 	desc = "Ion rifle in compact form."
-	item_cost = 10
+	item_cost = 16
 	path = /obj/item/weapon/gun/energy/ionrifle/small
 
 /datum/uplink_item/item/visible_weapons/revolver
