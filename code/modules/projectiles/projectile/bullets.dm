@@ -140,15 +140,19 @@
 	distance_falloff = 2.5
 	armor_penetration = 15
 
-/obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
+//"rubber" bullets
+//Armor pen is to prevent them from being invalidated by ARMOR_BALLISTIC_MINOR, as has been the case.
+/obj/item/projectile/bullet/pistol/rubber
 	name = "rubber bullet"
 	damage_flags = 0
 	damage = 10
-	agony = 35
+	agony = 40
 	embed = 0
+	armor_penetration = 5
 
 /obj/item/projectile/bullet/pistol/rubber/holdout
-	agony = 20
+	agony = 25
+	armor_penetration = 5
 
 //4mm. Tiny, very low damage, does not embed, but has very high penetration. Only to be used for the experimental SMG.
 /obj/item/projectile/bullet/flechette
@@ -170,22 +174,23 @@
 
 /obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
 	name = "beanbag"
-	damage = 15
+	damage = 10
 	damage_flags = 0
-	agony = 75
+	agony = 65
+	armor_penetration = 10
 	embed = 0
-	armor_penetration = 0
 
-//Should do about 80 damage at 1 tile distance (adjacent), and 50 damage at 3 tiles distance.
-//Overall less damage than slugs in exchange for more damage at very close range and more embedding
+//Spreads damage across more body parts than slugs, but is more effective up close and against unarmored opponents
+//High number of pellets with low velocity lends itself to more embeds
 /obj/item/projectile/bullet/pellet/shotgun
 	name = "shrapnel"
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
-	damage = 35
-	armor_penetration = 5
-	pellets = 6
-	range_step = 1
+	damage = 30
+	armor_penetration = 10
+	pellets = 8
+	range_step = 2
 	spread_step = 10
+	shrapnel_chance_multiplier = 2.0
 
 /* "Rifle" rounds */
 
@@ -201,6 +206,15 @@
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
 	damage = 35
 	armor_penetration = 35
+	shrapnel_chance_multiplier = 1
+	arterial_bleed_chance_multiplier = 1
+
+/obj/item/projectile/bullet/rifle/military/large
+	fire_sound = 'sound/weapons/gunshot/hornet.ogg'
+	damage = 45
+	armor_penetration = 30
+	penetrating = 0
+	distance_falloff = 0.50
 	shrapnel_chance_multiplier = 1
 	arterial_bleed_chance_multiplier = 1
 
