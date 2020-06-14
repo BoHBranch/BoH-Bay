@@ -1695,6 +1695,12 @@
 	icon_state = "triage"
 	req_access = list(access_infcom)
 
+/area/security/infantry/armory
+	name = "\improper Infantry Hard Storage"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "triage"
+	req_access = list(access_infcom)
+
 /area/defturrets
 	name = "\improper Anti-Boarding Control"
 	icon_state = "security_sub"
@@ -1752,8 +1758,8 @@
 	name = "\improper Cabin Janitorial"
 	icon_state = "janitor"
 
-//Foundation Advisor
+//Psionic Advisor
 /area/crew_quarters/heads/office/psiadvisor
-	name = "\improper Foundation Advisor"
+	name = "\improper Psionic Advisor"
 	icon_state = "heads"
 	req_access = list(access_psiadvisor)

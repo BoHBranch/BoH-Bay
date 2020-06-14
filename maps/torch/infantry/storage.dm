@@ -3,6 +3,7 @@
 /////////
 
 /obj/item/gunbox/infantry
+	name = "Standard Kit"
 	desc = "A secure box containing a sidearm and primary."
 
 /obj/item/gunbox/infantry/attack_self(mob/living/user)
@@ -19,6 +20,7 @@
 		qdel(src)
 
 /obj/item/gunbox/infcom
+	name = "Squad Leader Kit"
 	desc = "A secure box containing a sidearm and primary."
 
 /obj/item/gunbox/infcom/attack_self(mob/living/user)
@@ -36,11 +38,12 @@
 		qdel(src)
 
 /obj/item/gunbox/inftech
+	name = "Technician Kit"
 	desc = "A secure box containing a sidearm and primary."
 
 /obj/item/gunbox/inftech/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Rocket Launcher"] = list(/obj/item/weapon/gun/launcher/rocket/recoilless/sec,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/weapon/gun/projectile/pistol/military/sec)
+//	options["Rocket Launcher"] = list(/obj/item/weapon/gun/launcher/rocket/recoilless/sec,/obj/item/ammo_casing/rocket/rcr,/obj/item/ammo_casing/rocket/rcr,/obj/item/weapon/gun/projectile/pistol/military/sec)
 	options["Combat Medic"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/loaded,/obj/item/weapon/gun/projectile/pistol/military/sec,/obj/item/weapon/storage/firstaid/combat,/obj/item/weapon/storage/belt/medical/emt)
 	options["Automatic Rifleman"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/ammo_magazine/mil_rifle/sec/large,/obj/item/weapon/gun/projectile/pistol/military/sec)
 	var/choice = input(user,"What type of equipment?") as null|anything in options

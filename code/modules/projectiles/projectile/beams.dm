@@ -27,6 +27,7 @@
 
 /obj/item/projectile/beam/smalllaser
 	damage = 25
+	armor_penetration = 5
 
 /obj/item/projectile/beam/midlaser
 	damage = 45
@@ -187,7 +188,7 @@
 	damage = 1//flavor burn! still not a laser, dmg will be reduce by energy resistance not laser resistances
 	damage_type = BURN
 	eyeblur = 1//Some feedback that you've been hit
-	agony = 25
+	agony = 20
 
 	muzzle_type = /obj/effect/projectile/stun/muzzle
 	tracer_type = /obj/effect/projectile/stun/tracer
@@ -204,22 +205,25 @@
 	damage = 15
 	damage_type = ELECTROCUTE
 	fire_sound='sound/weapons/pulse.ogg'
+	stutter = 2
 
 /obj/item/projectile/beam/stun/shock/heavy
 	name = "heavy shock beam"
-	damage = 30
+	damage = 40
 
 /obj/item/projectile/beam/plasmacutter
 	name = "plasma arc"
 	icon_state = "omnilaser"
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	damage = 15
+	damage = 35//enables it to cut off limbs without too many hits
 	sharp = 1
 	edge = 1
-	damage_type = BURN
-	life_span = 5
-	pass_flags = PASS_FLAG_TABLE
-	distance_falloff = 4
+	damage_type = BRUTE
+	life_span = 4
+	armor_penetration = 65//it's an industrial grade plasma cutter, designed to effortlessly cut through heavy material.
+	distance_falloff = 8//makes up for the damage and pen
+	shrapnel_chance_multiplier = 0.0//no thanks
+	arterial_bleed_chance_multiplier = 0.0//you too
 
 	muzzle_type = /obj/effect/projectile/trilaser/muzzle
 	tracer_type = /obj/effect/projectile/trilaser/tracer
@@ -277,8 +281,8 @@
 
 /obj/item/projectile/beam/particle/small
 	name = "particle beam"
-	damage = 25
-	armor_penetration = 30
+	damage = 30
+	armor_penetration = 40
 	shrapnel_chance_multiplier = 0.4
 	arterial_bleed_chance_multiplier = 0.4
 
