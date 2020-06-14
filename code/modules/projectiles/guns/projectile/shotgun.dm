@@ -149,7 +149,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	w_class = ITEM_SIZE_NORMAL
 	force = 5
-	one_hand_penalty = 4
+	one_hand_penalty = 2
 	bulk = 2
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn/empty
