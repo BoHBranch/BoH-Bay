@@ -37,7 +37,7 @@
 	firemodes = list(
 		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="skrell_pistol_stun"),
 		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="skrell_pistol_shock"),
-		list(mode_name="kill", projectile_type=/obj/item/projectile/beam, modifystate="skrell_pistol_kill"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam/smalllaser, modifystate="skrell_pistol_kill"),
 		)
 
 /obj/item/weapon/gun/energy/gun/small

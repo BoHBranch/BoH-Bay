@@ -23,7 +23,7 @@
 			return
 		else
 			overlays += image(icon, "ammo_ok")
-	
+
 /obj/item/weapon/gun/projectile/pistol/military
 	name = "military pistol"
 	desc = "The Hephaestus Industries P20 - a mass produced kinetic sidearm in widespread service with the SCGDF."
@@ -34,7 +34,7 @@
 	item_state = "secgundark"
 	safety_icon = "safety"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
-	fire_delay = 7
+	fire_delay = 6
 	ammo_indicator = TRUE
 
 /obj/item/weapon/gun/projectile/pistol/military/alt

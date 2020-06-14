@@ -63,6 +63,12 @@
 		)
 	siemens_coefficient = 0.6
 
+/obj/item/clothing/head/helmet/tactical/black
+	name = "black tactical helmet"
+	desc = "A black helmet made from advanced ceramic. Comfortable and robust."
+	icon_state = "helmet"
+	item_state = "helmet"
+
 /obj/item/clothing/head/helmet/merc
 	name = "combat helmet"
 	desc = "A heavily reinforced helmet painted with red markings. Feels like it could take a lot of punishment."

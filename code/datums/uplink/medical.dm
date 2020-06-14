@@ -43,13 +43,13 @@
 /datum/uplink_item/item/medical/stimpack
 	name = "Stimpack"
 	desc = "An autoinjector containing multiple chems to keep someone alive. At least until combat is over, anyhow."
-	item_cost = 3
+	item_cost = 10
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/stim
 
 /datum/uplink_item/item/medical/zerk
 	name = "Zerk"
 	desc = "An autoinjector containing a powerful blend of toxic, combat-enhancing drugs. Comes with three doses - or one if you don't plan to come back."
-	item_cost = 5
+	item_cost = 15
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/zerk
 
 /datum/uplink_item/item/medical/hypeross
@@ -69,3 +69,9 @@
 	desc = "An autoinjector containing alkysine - a slow-acting drug capable of reversing brain damage. A very simple, cartoonish diagram on the uplink ensures you'll have no trouble with this device."
 	item_cost = 2
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine
+
+/datum/uplink_item/item/medical/three_eye
+	name = "Three Eye pill bottle"
+	desc = "A pill bottle of highly illegal drugs, often overdosed on to awaken psionic latencies. A picture of a skull and a small note is attached, explaining that more than three pills cause overdose."
+	item_cost = 50
+	path = /obj/item/weapon/storage/pill_bottle/three_eye
