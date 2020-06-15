@@ -95,7 +95,7 @@
 	name = "Emergency Bridge Shutter Controls";
 	pixel_x = -26;
 	pixel_y = 9;
-	req_access = list("ACCESS_HEAD_OF_PERSONNEL")
+	req_access = list("ACCESS_BRIDGE")
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/armoury)
@@ -8993,10 +8993,6 @@
 /obj/effect/floor_decal/corner/blue{
 	dir = 6
 	},
-/obj/machinery/power/apc/hyper/toc{
-	name = null;
-	pixel_y = -24
-	},
 /obj/machinery/light/spot,
 /obj/machinery/computer/crew{
 	dir = 1
@@ -9007,6 +9003,10 @@
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
+	},
+/obj/machinery/power/apc{
+	name = "south bump";
+	pixel_y = -28
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/mim)
