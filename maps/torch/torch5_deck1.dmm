@@ -835,6 +835,11 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/plating,
 /area/security/brig/perma)
 "abo" = (
@@ -3208,6 +3213,8 @@
 /obj/random/trash,
 /obj/random/single/lighter,
 /obj/random/junk,
+/obj/random/drinkbottle,
+/obj/random/toy,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "afI" = (
@@ -3469,6 +3476,7 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/clothing/accessory/badge/solgov/security,
+/obj/item/device/binoculars,
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "agd" = (
@@ -3530,6 +3538,7 @@
 /area/medical/surgery)
 "agh" = (
 /obj/structure/hygiene/shower,
+/obj/item/weapon/soap,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "agi" = (
@@ -3892,10 +3901,21 @@
 /area/maintenance/firstdeck/forestarboard)
 "agK" = (
 /obj/machinery/reagentgrinder/juicer{
-	pixel_z = 8
+	pixel_z = 8;
+	pixel_x = -4
 	},
 /obj/structure/table/reinforced,
-/obj/item/weapon/reagent_containers/glass/beaker,
+/obj/item/weapon/reagent_containers/glass/beaker{
+	pixel_x = 7;
+	pixel_y = 11
+	},
+/obj/item/weapon/material/knife/kitchen{
+	desc = "A general purpose chef's knife made by SpaceCook Incorporated. Guaranteed to stay sharp for years to come. This one looks almost as old as you.";
+	max_force = 5;
+	name = "dull knife";
+	pixel_x = 7;
+	pixel_y = -6
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "agL" = (
@@ -4308,6 +4328,9 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/random/accessory,
+/obj/random/firstaid,
+/obj/random/plushie,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "ahv" = (
@@ -4321,11 +4344,6 @@
 /obj/machinery/flasher{
 	id_tag = "permflash";
 	pixel_x = 0
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -4404,11 +4422,6 @@
 "ahH" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -6597,11 +6610,6 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ala" = (
@@ -6612,21 +6620,8 @@
 	dir = 4
 	},
 /obj/structure/table/reinforced,
-/obj/item/weapon/paper_bin{
-	pixel_y = -4
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled,
-/area/security/brig/perma)
+/area/space)
 "alb" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -6648,16 +6643,6 @@
 	dir = 4
 	},
 /obj/item/weapon/stool/padded,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ald" = (
@@ -6899,10 +6884,24 @@
 /area/medical/infirmary)
 "alw" = (
 /obj/structure/table/reinforced,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/item/weapon/material/kitchen/utensil/spork/plastic{
+	pixel_x = -4
+	},
+/obj/item/weapon/material/kitchen/utensil/spork/plastic{
+	pixel_x = -4
+	},
+/obj/item/weapon/material/kitchen/utensil/spork/plastic{
+	pixel_x = -4
+	},
+/obj/item/weapon/material/kitchen/utensil/spork/plastic{
+	pixel_x = -4
+	},
+/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker{
+	pixel_x = 4;
+	pixel_y = 10
+	},
+/obj/item/weapon/reagent_containers/food/condiment/small/peppermill{
+	pixel_x = 4
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -7069,11 +7068,6 @@
 	name = "ultralite wrench";
 	throwforce = 5
 	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "alN" = (
@@ -7095,6 +7089,9 @@
 	name = "Emergency NanoMed";
 	pixel_x = 28;
 	pixel_y = 4
+	},
+/obj/item/weapon/storage/fancy/crayons{
+	pixel_y = 11
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -7134,10 +7131,16 @@
 /area/security/detectives_office)
 "alU" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/pen/multi,
+/obj/item/weapon/pen/multi{
+	pixel_x = 3;
+	pixel_y = 10
+	},
 /obj/item/weapon/pen/fancy{
-	pixel_x = -5;
-	pixel_y = 3
+	pixel_x = -7;
+	pixel_y = 6
+	},
+/obj/item/weapon/paper_bin{
+	pixel_y = -4
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -7202,11 +7205,6 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -7523,7 +7521,8 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/obj/structure/closet/secure_closet/brig,
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/orange,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "amI" = (
@@ -7667,7 +7666,6 @@
 /turf/simulated/floor/tiled,
 /area/security/locker)
 "amV" = (
-/obj/structure/undies_wardrobe,
 /obj/machinery/camera/network/security{
 	c_tag = "Permanent Holding - Quarters";
 	dir = 8
@@ -7730,11 +7728,13 @@
 /area/shuttle/escape_pod8/station)
 "anc" = (
 /obj/machinery/light,
+/obj/structure/closet/secure_closet/brig,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ane" = (
 /obj/machinery/light,
-/obj/structure/closet/secure_closet/brig,
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/orange,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "anf" = (
@@ -7742,6 +7742,7 @@
 	dir = 1;
 	level = 2
 	},
+/obj/structure/closet/secure_closet/brig,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ang" = (
@@ -7785,8 +7786,24 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "anl" = (
-/obj/structure/closet/secure_closet/brig,
-/turf/simulated/floor/tiled,
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id_tag = "Secure Gate";
+	name = "Security Blast Door";
+	opacity = 0
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/plating,
 /area/security/brig/perma)
 "anm" = (
 /turf/simulated/wall/prepainted,
@@ -8721,14 +8738,15 @@
 /obj/structure/closet/crate/secure/large/reinforced{
 	req_access = list("ACCESS_FORENSICS")
 	},
-/obj/random/handgun{
-	spawn_nothing_percentage = 50
-	},
 /obj/random/bomb_supply{
 	spawn_nothing_percentage = 50
 	},
 /obj/random/bomb_supply{
 	spawn_nothing_percentage = 50
+	},
+/obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin,
+/obj/random/energy{
+	spawn_nothing_percentage = 33
 	},
 /obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin,
 /turf/simulated/floor/tiled/dark,
@@ -9139,9 +9157,10 @@
 	spawn_nothing_percentage = 50
 	},
 /obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin,
-/obj/random/handgun{
-	spawn_nothing_percentage = 50
+/obj/random/projectile{
+	spawn_nothing_percentage = 33
 	},
+/obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "apN" = (
@@ -9150,9 +9169,8 @@
 	pixel_x = -24
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/random/plushie,
 /turf/simulated/floor/tiled/dark,
-/area/security/evidence)
+/area/space)
 "apO" = (
 /obj/structure/closet/crate/freezer/rations,
 /obj/random/single/cola,
@@ -9551,8 +9569,7 @@
 "aqC" = (
 /obj/structure/table/steel,
 /obj/item/device/multitool{
-	pixel_x = 13;
-	pixel_y = -4
+	pixel_x = -8
 	},
 /obj/item/weapon/stamp/denied{
 	pixel_x = 5
@@ -11472,6 +11489,7 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/clothing/accessory/badge/solgov/security,
+/obj/item/device/binoculars,
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "atK" = (
@@ -11677,6 +11695,7 @@
 /obj/structure/closet/secure_closet/security_torch/cadet,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/clothing/accessory/badge/solgov/security,
+/obj/item/device/binoculars,
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "atY" = (
@@ -11760,6 +11779,7 @@
 /obj/structure/closet/secure_closet/security_torch/cadet,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/clothing/accessory/badge/solgov/security,
+/obj/item/device/binoculars,
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
 "auf" = (
@@ -19960,13 +19980,24 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "eYh" = (
-/obj/item/weapon/stool/padded,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id_tag = "Secure Gate";
+	name = "Security Blast Door";
+	opacity = 0
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/plating,
 /area/security/brig/perma)
 "eZQ" = (
 /obj/machinery/lapvend{
@@ -24536,14 +24567,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
 "lwz" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/wall/r_wall/prepainted,
 /area/security/brig/perma)
 "lxb" = (
 /obj/structure/table/steel,
@@ -24683,7 +24712,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "lCN" = (
-/obj/structure/table/standard,
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "lEf" = (
@@ -28004,7 +28033,7 @@
 	pixel_x = -24
 	},
 /obj/item/weapon/hand_labeler,
-/obj/structure/table/standard,
+/obj/structure/table/rack/shelf/steel,
 /obj/structure/cable/green{
 	d2 = 2;
 	icon_state = "0-2"
@@ -28312,6 +28341,7 @@
 /obj/random/masks,
 /obj/random/clothing,
 /obj/random/shoes,
+/obj/random/hat,
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "qTX" = (
@@ -28943,6 +28973,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
+"rKv" = (
+/obj/structure/closet/secure_closet/brig,
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "rKL" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -31483,18 +31517,20 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/subacute)
 "wzA" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id_tag = "Secure Gate";
+	name = "Security Blast Door";
+	opacity = 0
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
+/obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8"
+	icon_state = "0-8"
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/plating,
 /area/security/brig/perma)
 "wzN" = (
 /obj/effect/floor_decal/corner/red{
@@ -31503,11 +31539,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
 "wAX" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
+/obj/machinery/portable_atmospherics/hydroponics,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "wBV" = (
@@ -43665,9 +43697,9 @@ aDN
 axR
 obZ
 aFV
-abn
-adB
+anl
 wAX
+ahf
 alw
 ala
 alU
@@ -43867,15 +43899,15 @@ axR
 axR
 obZ
 aFV
-abn
-adB
-wAX
 eYh
+wAX
+ahf
+ajZ
 alc
 ajZ
 ahf
 ahf
-anl
+ahf
 akF
 akF
 akF
@@ -44069,11 +44101,11 @@ axR
 axR
 nYb
 aGb
-aoi
+lwz
 abA
 ahg
 ahf
-wzA
+ahz
 ahf
 ahg
 ahf
@@ -44271,11 +44303,11 @@ aAQ
 qHx
 nZb
 uPc
-aoi
+lwz
 abD
 ahf
 amo
-wzA
+ahz
 amo
 ahf
 ahf
@@ -44473,11 +44505,11 @@ nEb
 aAQ
 aEU
 aFV
-abn
-adB
+anl
 wAX
-wAX
-amd
+ahf
+ahf
+ahz
 ahf
 ahf
 ahf
@@ -44675,11 +44707,11 @@ mlw
 iui
 wkS
 aFV
-abn
-adB
+anl
+wAX
 ahH
 alM
-amd
+ahz
 amk
 amS
 amY
@@ -44877,10 +44909,10 @@ aKK
 qHx
 aEW
 aGe
-abn
-adB
+wzA
+wAX
 ahv
-lwz
+akq
 ame
 akq
 amT
@@ -45086,7 +45118,7 @@ aks
 alP
 amE
 ahz
-ahf
+rKv
 aoi
 anR
 anY
