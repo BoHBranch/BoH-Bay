@@ -1099,7 +1099,7 @@
 	name = "beanbag shotgun";
 	req_access = list("ACCESS_BRIG")
 	},
-/obj/machinery/light{
+/obj/machinery/light/spot{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -1911,7 +1911,7 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head/aux)
 "adl" = (
-/obj/machinery/light{
+/obj/machinery/light/spot{
 	dir = 1
 	},
 /obj/machinery/door/window/brigdoor/westright{
@@ -2379,8 +2379,7 @@
 /obj/item/weapon/storage/box/ammo/pepperball/full{
 	pixel_x = -1
 	},
-/obj/machinery/light{
-	icon_state = "tube1";
+/obj/machinery/light/spot{
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -11378,7 +11377,7 @@
 /area/security/locker)
 "atz" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/machinery/light{
+/obj/machinery/light/spot{
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -11535,7 +11534,7 @@
 /area/security/storage)
 "atO" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/light{
+/obj/machinery/light/spot{
 	dir = 8
 	},
 /obj/structure/closet/crate/medical,
@@ -11769,12 +11768,25 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "aud" = (
-/obj/machinery/light{
-	icon_state = "tube1";
-	dir = 8
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id_tag = "Secure Gate";
+	name = "Security Blast Door";
+	opacity = 0
 	},
-/turf/simulated/wall/r_wall/prepainted,
-/area/security/armoury)
+/obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/plating,
+/area/security/brig/perma)
 "aue" = (
 /obj/structure/closet/secure_closet/security_torch/cadet,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -11939,8 +11951,7 @@
 /turf/simulated/floor/tiled,
 /area/security/locker)
 "aup" = (
-/obj/machinery/light{
-	icon_state = "tube1";
+/obj/machinery/light/spot{
 	dir = 4
 	},
 /obj/machinery/vending/security{
@@ -12025,6 +12036,9 @@
 	req_access = list("ACCESS_ARMORY")
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/light/spot{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "auv" = (
@@ -12319,7 +12333,7 @@
 	},
 /obj/item/ammo_magazine/mil_rifle/sec,
 /obj/item/ammo_magazine/mil_rifle/sec,
-/obj/machinery/light{
+/obj/machinery/light/spot{
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/orange,
@@ -12491,7 +12505,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "auX" = (
-/obj/machinery/light,
+/obj/machinery/light/spot,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "auY" = (
@@ -19980,24 +19994,12 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "eYh" = (
-/obj/effect/wallframe_spawn/reinforced,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id_tag = "Secure Gate";
-	name = "Security Blast Door";
-	opacity = 0
-	},
-/obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/structure/cable/green{
+	d1 = 4;
 	d2 = 8;
-	icon_state = "0-8"
+	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/wall/r_wall/prepainted,
 /area/security/brig/perma)
 "eZQ" = (
 /obj/machinery/lapvend{
@@ -24567,12 +24569,20 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
 "lwz" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id_tag = "Secure Gate";
+	name = "Security Blast Door";
+	opacity = 0
 	},
-/turf/simulated/wall/r_wall/prepainted,
+/obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/plating,
 /area/security/brig/perma)
 "lxb" = (
 /obj/structure/table/steel,
@@ -28973,10 +28983,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
-"rKv" = (
-/obj/structure/closet/secure_closet/brig,
-/turf/simulated/floor/tiled,
-/area/security/brig/perma)
 "rKL" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -31426,7 +31432,7 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmreception)
 "wrC" = (
-/obj/machinery/light,
+/obj/machinery/light/spot,
 /obj/structure/cable/green,
 /obj/machinery/power/apc{
 	name = "Armory - Port";
@@ -31517,20 +31523,8 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/subacute)
 "wzA" = (
-/obj/effect/wallframe_spawn/reinforced,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id_tag = "Secure Gate";
-	name = "Security Blast Door";
-	opacity = 0
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/plating,
+/obj/machinery/portable_atmospherics/hydroponics,
+/turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "wzN" = (
 /obj/effect/floor_decal/corner/red{
@@ -31539,7 +31533,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
 "wAX" = (
-/obj/machinery/portable_atmospherics/hydroponics,
+/obj/structure/closet/secure_closet/brig,
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "wBV" = (
@@ -40878,7 +40872,7 @@ vBh
 vBh
 sHN
 sHN
-aud
+sHN
 sHN
 sHN
 sHN
@@ -43698,7 +43692,7 @@ axR
 obZ
 aFV
 anl
-wAX
+wzA
 ahf
 alw
 ala
@@ -43899,8 +43893,8 @@ axR
 axR
 obZ
 aFV
-eYh
-wAX
+aud
+wzA
 ahf
 ajZ
 alc
@@ -44101,7 +44095,7 @@ axR
 axR
 nYb
 aGb
-lwz
+eYh
 abA
 ahg
 ahf
@@ -44303,7 +44297,7 @@ aAQ
 qHx
 nZb
 uPc
-lwz
+eYh
 abD
 ahf
 amo
@@ -44506,7 +44500,7 @@ aAQ
 aEU
 aFV
 anl
-wAX
+wzA
 ahf
 ahf
 ahz
@@ -44708,7 +44702,7 @@ iui
 wkS
 aFV
 anl
-wAX
+wzA
 ahH
 alM
 ahz
@@ -44909,8 +44903,8 @@ aKK
 qHx
 aEW
 aGe
+lwz
 wzA
-wAX
 ahv
 akq
 ame
@@ -45118,7 +45112,7 @@ aks
 alP
 amE
 ahz
-rKv
+wAX
 aoi
 anR
 anY
