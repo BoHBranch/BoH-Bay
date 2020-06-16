@@ -258,3 +258,20 @@
 	crosstype["cross, silver"] = /obj/item/weapon/material/cross/silver
 	crosstype["cross, gold"] = /obj/item/weapon/material/cross/gold
 	gear_tweaks += new/datum/gear_tweak/path(crosstype)
+
+/datum/gear/cigarettes //haha copypaste go brrrrrrrr
+	display_name = "cigarette pack selection"
+	description = "A selection of cigarette packets from several cigarette brands, each containing 6 cigarettes. Got a light?"
+	cost = 1
+	path = /obj/item/weapon/storage/fancy/cigarettes
+
+/datum/gear/cigarettes/New()
+	..()
+	var/packtype = list()
+	packtype["Trans-Stellar Duty-frees"] = /obj/item/weapon/storage/fancy/cigarettes
+	packtype["Lucky Stars"] = /obj/item/weapon/storage/fancy/cigarettes/luckystars
+	packtype["Jerichos"] = /obj/item/weapon/storage/fancy/cigarettes/jerichos
+	packtype["Temperamento Menthols"] = /obj/item/weapon/storage/fancy/cigarettes/menthols
+	packtype["Carcinoma Angels"] = /obj/item/weapon/storage/fancy/cigarettes/carcinomas
+	packtype["Professional 120's"] = /obj/item/weapon/storage/fancy/cigarettes/professionals
+	gear_tweaks += new /datum/gear_tweak/path(packtype)

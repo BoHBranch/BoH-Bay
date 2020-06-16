@@ -16,11 +16,12 @@
 /obj/item/projectile/bullet/pellet/birdshot
 	name = "rubbershot"
 	fire_sound = 'sound/weapons/gunshot/gunshot_4mm.ogg'
-	damage = 1
-	pellets = 4
-	range_step = 1
+	damage = 2
+	pellets = 10
+	range_step = 2
 	spread_step = 10
-	agony = 4
+	agony = 8.5
+	embed = 0
 
 //holder
 /obj/item/ammo_magazine/shotholder/birdshot
@@ -133,8 +134,8 @@
 /obj/item/projectile/bullet/rifle/military/sec
 	damage = 40 //higher damage
 	armor_penetration = 5 //much worse pen - frangible bullets
-	shrapnel_chance_multiplier = 2
-	arterial_bleed_chance_multiplier = 2 //higher post pen
+	shrapnel_chance_multiplier = 1.5
+	arterial_bleed_chance_multiplier = 1.5 //higher post pen
 
 //mag
 /obj/item/ammo_magazine/mil_rifle/sec
@@ -146,7 +147,7 @@
 	name = "high-cap frangible munitions rifle magazine"
 	icon_state = "assault_rifle"
 	ammo_type = /obj/item/ammo_casing/rifle/military/low
-	max_ammo = 35
+	max_ammo = 30
 
 /////////
 // SL Shotty

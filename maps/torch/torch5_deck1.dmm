@@ -1029,9 +1029,18 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/table/rack,
-/obj/item/weapon/storage/box/teargas,
-/obj/item/weapon/storage/box/teargas,
-/obj/item/weapon/storage/box/zipties,
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b,
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b,
+/obj/item/ammo_magazine/mil_rifle/sec,
+/obj/item/ammo_magazine/mil_rifle/sec,
+/obj/item/ammo_magazine/mil_rifle/sec,
+/obj/item/ammo_magazine/mil_rifle/sec,
+/obj/machinery/door/window/brigdoor/westright{
+	autoset_access = 1;
+	dir = 4;
+	name = "Rifles";
+	req_access = null
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "abI" = (
@@ -7644,8 +7653,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/conference)
 "anh" = (
-/obj/item/weapon/gun/energy/gun/secure,
-/obj/item/weapon/gun/energy/gun/secure,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
@@ -7654,9 +7661,11 @@
 	health = 1e+006
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/weapon/gun/energy/gun/secure,
-/obj/item/weapon/gun/energy/gun/secure,
 /obj/structure/table/rack,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "ani" = (

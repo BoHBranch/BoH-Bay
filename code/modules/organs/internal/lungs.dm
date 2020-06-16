@@ -19,7 +19,7 @@
 	var/min_breath_pressure
 	var/last_int_pressure
 	var/last_ext_pressure
-	var/max_pressure_diff = 60
+	var/max_pressure_diff = 30
 
 	var/oxygen_deprivation = 0
 	var/safe_exhaled_max = 6

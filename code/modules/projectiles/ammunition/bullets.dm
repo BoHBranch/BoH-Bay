@@ -153,6 +153,13 @@
 	icon_state = "rifle_mil"
 	spent_icon = "rifle_mil-spent"
 
+/obj/item/ammo_casing/rifle/military/large
+	desc = "A military sniper rifle bullet casing."
+	caliber = CALIBER_RIFLE_MILITARY_LARGE
+	projectile_type = /obj/item/projectile/bullet/rifle/military/large
+	icon_state = "rifle_mil"
+	spent_icon = "rifle_mil-spent"
+
 /obj/item/ammo_casing/rifle/military/practice
 	desc = "A military rifle practice bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/military/practice

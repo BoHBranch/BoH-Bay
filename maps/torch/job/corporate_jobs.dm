@@ -8,7 +8,7 @@
 	selection_color = "#2f2f7f"
 	economic_power = 15
 	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 25)
+	minimum_character_age = list(SPECIES_HUMAN = 24)
 	alt_titles = list(
 		"Corporate Liaison",
 		"Union Representative" = /decl/hierarchy/outfit/job/torch/passenger/workplace_liaison/union_rep,
@@ -48,7 +48,7 @@
 	selection_color = "#3d3d7f"
 	economic_power = 12
 	minimal_player_age = 2
-	minimum_character_age = list(SPECIES_HUMAN = 19)
+	minimum_character_age = list(SPECIES_HUMAN = 21)
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)

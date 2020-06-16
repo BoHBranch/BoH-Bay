@@ -4,7 +4,7 @@
 	department_flag = SRV
 	total_positions = 1
 	spawn_positions = 1
-	minimum_character_age = list(SPECIES_HUMAN = 24)
+	minimum_character_age = list(SPECIES_HUMAN = 21)
 	economic_power = 5
 	minimal_player_age = 0
 	supervisors = "the Executive Officer"
