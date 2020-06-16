@@ -35,6 +35,17 @@
 	species_restricted = null
 	gender = PLURAL
 	icon_base = null
+	var/footstep = 1
+
+/obj/item/clothing/shoes/magboots/rig/handle_movement(var/turf/walking, var/running)
+	if(running)
+		if(footstep >= 2)
+			footstep = 0
+			playsound(src, "sound/machines/rigstep.ogg", 50, 1) // this will get annoying very fast.
+		else
+			footstep++
+	else
+		playsound(src, "sound/machines/rigstep.ogg", 20, 1)
 
 /obj/item/clothing/suit/space/rig
 	name = "chestpiece"
