@@ -20,7 +20,7 @@
 /obj/item/weapon/paper/talisman/stun/attack(var/mob/living/M, var/mob/living/user)
 	if(!iscultist(user))
 		return
-	user.say("Dream Sign: Evil Sealing Talisman!") //TODO: never change this shit
+	user.say("Ta'gh fara[pick("'","`")]qha mil a'tar imet!")
 	var/obj/item/weapon/nullrod/nrod = locate() in M
 	if(nrod)
 		user.visible_message("<span class='danger'>\The [user] invokes \the [src] at [M], but they are unaffected.</span>", "<span class='danger'>You invoke \the [src] at [M], but they are unaffected.</span>")

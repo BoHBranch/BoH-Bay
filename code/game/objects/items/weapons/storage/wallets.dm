@@ -40,6 +40,7 @@
 		/obj/item/clothing/accessory/badge,
 		/obj/item/clothing/accessory/medal,
 		/obj/item/clothing/accessory/armor/tag,
+		/obj/item/weapon/reagent_containers/ecig_cartridge,
 		)
 	slot_flags = SLOT_ID
 

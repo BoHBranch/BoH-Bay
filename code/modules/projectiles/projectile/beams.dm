@@ -27,6 +27,7 @@
 
 /obj/item/projectile/beam/smalllaser
 	damage = 25
+	armor_penetration = 5
 
 /obj/item/projectile/beam/midlaser
 	damage = 45
@@ -187,7 +188,7 @@
 	damage = 1//flavor burn! still not a laser, dmg will be reduce by energy resistance not laser resistances
 	damage_type = BURN
 	eyeblur = 1//Some feedback that you've been hit
-	agony = 25
+	agony = 20
 
 	muzzle_type = /obj/effect/projectile/stun/muzzle
 	tracer_type = /obj/effect/projectile/stun/tracer
@@ -204,10 +205,11 @@
 	damage = 15
 	damage_type = ELECTROCUTE
 	fire_sound='sound/weapons/pulse.ogg'
+	stutter = 2
 
 /obj/item/projectile/beam/stun/shock/heavy
 	name = "heavy shock beam"
-	damage = 30
+	damage = 40
 
 /obj/item/projectile/beam/plasmacutter
 	name = "plasma arc"
@@ -279,8 +281,8 @@
 
 /obj/item/projectile/beam/particle/small
 	name = "particle beam"
-	damage = 25
-	armor_penetration = 30
+	damage = 30
+	armor_penetration = 40
 	shrapnel_chance_multiplier = 0.4
 	arterial_bleed_chance_multiplier = 0.4
 
