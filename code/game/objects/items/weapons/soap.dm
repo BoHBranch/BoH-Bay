@@ -37,12 +37,6 @@
 /obj/item/weapon/soap/proc/wet()
 	reagents.add_reagent(/datum/reagent/space_cleaner, 15)
 
-/obj/item/weapon/soap/Crossed(var/mob/living/AM)
-	if (istype(AM))
-		if(AM.pulledby)
-			return
-		AM.slip("the [src.name]",3)
-
 /obj/item/weapon/soap/afterattack(atom/target, mob/user as mob, proximity)
 	if(!proximity) return
 	//I couldn't feasibly  fix the overlay bugs caused by cleaning items we are wearing.
