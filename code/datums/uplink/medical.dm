@@ -43,13 +43,13 @@
 /datum/uplink_item/item/medical/stimpack
 	name = "Stimpack"
 	desc = "An autoinjector containing multiple chems to keep someone alive. At least until combat is over, anyhow."
-	item_cost = 3
+	item_cost = 10
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/stim
 
 /datum/uplink_item/item/medical/zerk
 	name = "Zerk"
 	desc = "An autoinjector containing a powerful blend of toxic, combat-enhancing drugs. Comes with three doses - or one if you don't plan to come back."
-	item_cost = 5
+	item_cost = 15
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/zerk
 
 /datum/uplink_item/item/medical/hypeross

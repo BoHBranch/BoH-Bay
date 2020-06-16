@@ -216,6 +216,16 @@
 	. = ..()
 	make_exact_fit()
 
+/obj/item/weapon/storage/secure/briefcase/hornetsniper
+	startswith = list(
+		/obj/item/weapon/gun/projectile/hornetsniper,
+		/obj/item/weapon/storage/box/ammo/hornetammo
+	)
+
+/obj/item/weapon/storage/secure/briefcase/hornetsniper/Initialize()
+	. = ..()
+	make_exact_fit()
+
 /obj/item/weapon/storage/secure/briefcase/money
 
 	startswith = list(/obj/item/weapon/spacecash/bundle/c1000 = 10)

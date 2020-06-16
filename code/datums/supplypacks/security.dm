@@ -43,6 +43,21 @@
 	containername = "tactical armor crate"
 	access = access_armory
 
+/decl/hierarchy/supply_pack/security/tacticalarmorblack
+	name = "Armor - Tactical Black"
+	contains = list(/obj/item/clothing/under/tactical/navy,
+					/obj/item/clothing/suit/armor/pcarrier/tactical,
+					/obj/item/clothing/head/helmet/tactical/black,
+					/obj/item/clothing/mask/balaclava/tactical,
+					/obj/item/clothing/glasses/tacgoggles,
+					/obj/item/weapon/storage/belt/holster/security/tactical,
+					/obj/item/clothing/shoes/tactical/black,
+					/obj/item/clothing/gloves/tactical/black)
+	cost = 45
+	containertype = /obj/structure/closet/crate/secure
+	containername = "tactical black armor crate"
+	access = access_armory
+
 /decl/hierarchy/supply_pack/security/blackguards
 	name = "Armor - Arm and leg guards, black"
 	contains = list(/obj/item/clothing/accessory/armguards = 2,

@@ -7,7 +7,7 @@
 	icon = 'icons/obj/wizard.dmi'
 	icon_state = "soulstone"
 	item_state = "electronic"
-	desc = "A strange, ridged chunk of some glassy red material. Achingly cold to the touch."
+	desc = "A strange, ridged chunk of some glassy red material. Achingly cold to the touch. Looks fragile."
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_BELT
 	origin_tech = list(TECH_BLUESPACE = 4, TECH_MATERIAL = 4)
@@ -110,7 +110,7 @@
 	else if(shade.loc == src)
 		var/choice = alert("Would you like to invoke the spirit within?",,"Yes","No")
 		if(choice == "Yes")
-			shade.dropInto(loc)
+			shade.dropInto(get_turf(src))
 			to_chat(user, "<span class='notice'>You summon \the [shade].</span>")
 		if(choice == "No")
 			return
@@ -118,6 +118,8 @@
 /obj/item/device/soulstone/proc/set_full(var/f)
 	full = f
 	update_icon()
+	if(f == SOULSTONE_CRACKED) //Let 'em out
+		shade.ghostize()
 
 /obj/structure/constructshell
 	name = "empty shell"
