@@ -388,7 +388,9 @@
 			if(!canremove)
 				if (offline_slowdown < 3)
 					to_chat(wearer, "<span class='danger'>Your suit beeps stridently, and suddenly goes dead.</span>")
+					playsound(src, 'sound/machines/rigdown.ogg', 100, 0)
 				else
+					playsound(src, 'sound/machines/rigdown.ogg', 100, 0)
 					to_chat(wearer, "<span class='danger'>Your suit beeps stridently, and suddenly you're wearing a leaden mass of metal and plastic composites instead of a powered suit.</span>")
 			if(offline_vision_restriction >= TINT_MODERATE)
 				to_chat(wearer, "<span class='danger'>The suit optics flicker and die, leaving you with restricted vision.</span>")
