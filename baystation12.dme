@@ -2989,6 +2989,7 @@
 #include "code\modules\species\station\adherent.dm"
 #include "code\modules\species\station\golem.dm"
 #include "code\modules\species\station\human_subspecies.dm"
+#include "code\modules\species\station\kidan.dm"
 #include "code\modules\species\station\lizard.dm"
 #include "code\modules\species\station\lizard_subspecies.dm"
 #include "code\modules\species\station\machine.dm"

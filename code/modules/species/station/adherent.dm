@@ -95,6 +95,7 @@
 		BP_COOLING_FINS = /obj/item/organ/internal/powered/cooling_fins
 		)
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/snake
+	max_players = 3
 
 	base_skin_colours = list(
 		"Turquoise"   = "",
