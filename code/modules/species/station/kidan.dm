@@ -28,7 +28,11 @@
 	max_age = 60
 	skin_material = MATERIAL_SKIN_CHITIN
 
-	description = "This is Placeholder. It means Kidan works!"
+	description = "Relatively new to the galactic scene, Kida are a species of sturdy ant-like creatures, \ 
+	once led to the stars by psionic empress-queens. Their society is very feudal in nature, with individuals \
+	separated into castes, which determine their social status, and which jobs they are destined to occupy. \
+	It is not unheard of for individuals to access a job not meant for their caste, though such cases are \
+	considered taboo, and generally lead to social outcasting."
 
 	cold_level_1 = 260 //Default 260 - Lower is better
 	cold_level_2 = 200 //Default 200
