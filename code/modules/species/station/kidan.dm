@@ -19,9 +19,9 @@
 	flash_mod = 1.6
 	natural_armour_values = list(
 		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR
+		bullet = ARMOR_BALLISTIC_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
-		bio = ARMOR_BIO_STRONG, 
+		bio = ARMOR_BIO_STRONG,
 		rad = 0.5*ARMOR_RAD_SMALL
 		)
 	blood_volume = 360
@@ -61,7 +61,7 @@
 		)
 
 	available_cultural_info = list(
-	
+
 	)
 
 	pain_emotes_with_pain_level = list(
