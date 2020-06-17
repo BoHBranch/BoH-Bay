@@ -66,7 +66,7 @@
 
 /datum/uplink_item/item/medical/kompoton
 	name = "Kompoton"
-	desc = "An autoinjector containing an emergency dose of kompoton - a extrme organ-mending medicine, agony guaranteed"
+	desc = "An autoinjector containing an emergency dose of kompoton - a extrme organ-mending medicine, suffering guaranteed"
 	item_cost = 6
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton
 

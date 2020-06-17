@@ -474,7 +474,7 @@
 
 /datum/reagent/kompoton
 	name = "Kompoton"
-	description = "Used to completely regenerate internal organs and the nervous systems. Agony guaranteed."
+	description = "Used to completely regenerate internal organs and the nervous systems. Suffering guaranteed."
 	taste_description = "bitterness"
 	reagent_state = LIQUID
 	color = "#d82e2e"
@@ -498,7 +498,7 @@
 				I.heal_damage(removed*7)
 				M.apply_effect(agony_amount, PAIN, 0)
 				if(prob(5))
-					M.custom_emote(2, "[pick("dry heaves!","coughs!","splutters!")]")
+					M.custom_emote(2, "[pick("dry heaves!","twists and spasms erratically!","wails in agony!")]")
 					to_chat(M, "<span class='danger'>You feel like your insides are disintegrating!</span>")
 				for(var/obj/item/organ/external/E in H.organs)
 					if(E.status & ORGAN_ARTERY_CUT)
