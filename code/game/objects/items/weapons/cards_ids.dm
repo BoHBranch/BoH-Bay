@@ -589,10 +589,6 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/weapon/card/id/civilian/librarian
 	job_access_type = /datum/job/librarian
 
-/obj/item/weapon/card/id/civilian/internal_affairs_agent
-	job_access_type = /datum/job/lawyer
-	detail_color = COLOR_NAVY_BLUE
-
 /obj/item/weapon/card/id/civilian/chaplain
 	job_access_type = /datum/job/chaplain
 
