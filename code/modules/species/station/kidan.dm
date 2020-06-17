@@ -14,17 +14,14 @@
 	strength = STR_HIGH
 	breath_pressure = 18
 	slowdown = 0.2
-	burn_mod = 1.10
+	burn_mod = 0.7
 	oxy_mod = 1.10
 	flash_mod = 1.6
+	siemens_coefficient = 0.8
 	natural_armour_values = list(
-		melee = ARMOR_MELEE_SMALL,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		bomb = ARMOR_BOMB_PADDED,
-		bio = ARMOR_BIO_STRONG,
-		rad = 0.5*ARMOR_RAD_SMALL
+		melee = ARMOR_MELEE_MINOR,
 		)
-	blood_volume = 360
+	blood_volume = 460
 	health_hud_intensity = 2
 
 	min_age = 18
@@ -57,7 +54,7 @@
 
 	descriptors = list(
 		/datum/mob_descriptor/height = 1,
-		/datum/mob_descriptor/build = 1
+		/datum/mob_descriptor/build = 2
 		)
 
 	available_cultural_info = list(

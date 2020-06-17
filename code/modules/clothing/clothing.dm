@@ -266,7 +266,7 @@ BLIND     // can't see anything
 	body_parts_covered = HANDS
 	slot_flags = SLOT_GLOVES
 	attack_verb = list("challenged")
-	species_restricted = list("exclude",SPECIES_NABBER,SPECIES_UNATHI,SPECIES_VOX,SPECIES_VOX_ARMALIS,SPECIES_OLDUNATHI)
+	species_restricted = list("exclude",SPECIES_NABBER,SPECIES_UNATHI,SPECIES_VOX,SPECIES_VOX_ARMALIS,SPECIES_OLDUNATHI,SPECIES_KIDAN)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_hands_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_hands_vox_armalis.dmi',
@@ -577,7 +577,7 @@ BLIND     // can't see anything
 	slot_flags = SLOT_FEET
 	permeability_coefficient = 0.50
 	force = 2
-	species_restricted = list("exclude",SPECIES_NABBER,SPECIES_UNATHI,SPECIES_VOX,SPECIES_VOX_ARMALIS)
+	species_restricted = list("exclude",SPECIES_NABBER,SPECIES_UNATHI,SPECIES_VOX,SPECIES_VOX_ARMALIS,SPECIES_KIDAN)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_feet_vox.dmi',
 		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_feet_vox_armalis.dmi',
