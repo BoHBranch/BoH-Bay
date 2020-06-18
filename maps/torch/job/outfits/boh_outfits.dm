@@ -178,3 +178,56 @@
 		regis_card.assignment = assignment
 	H.set_id_info(regis_card)
 	H.equip_to_slot_or_store_or_drop(regis_card)
+
+//Adjudicator
+/decl/hierarchy/outfit/job/torch/crew/adjudicator
+	name = OUTFIT_JOB_NAME("Adjudicator")
+	l_ear = /obj/item/device/radio/headset/headset_com
+	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
+	suit = /obj/item/clothing/suit/storage/toggle/suit/black
+	shoes = /obj/item/clothing/shoes/laceup
+	id_type = /obj/item/weapon/card/id/torch/crew/adjudicator
+	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
+
+//Bailiff
+/decl/hierarchy/outfit/job/torch/crew/command/bailiff
+	name = OUTFIT_JOB_NAME("Bailiff")
+	l_ear = /obj/item/device/radio/headset/headset_com
+	uniform = /obj/item/clothing/under/syndicate/tacticool
+	shoes = /obj/item/clothing/shoes/dutyboots
+	suit = /obj/item/clothing/suit/storage/leather_jacket
+	id_type = /obj/item/weapon/card/id/torch/crew/bailiff
+	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
+
+//Bailiff alts
+/decl/hierarchy/outfit/job/torch/crew/command/bailiff/pcrc
+	name = OUTFIT_JOB_NAME("Bailiff - PCRC")
+	uniform = /obj/item/clothing/under/pcrc
+	shoes = /obj/item/clothing/shoes/dutyboots
+	backpack_contents = list(/obj/item/clothing/accessory/armor/tag/pcrc = 1, /obj/item/clothing/accessory/armor/helmcover/pcrc = 1)
+
+/decl/hierarchy/outfit/job/torch/crew/command/bailiff/pcrc/agent
+	name = OUTFIT_JOB_NAME("Bailiff - PCRC Agent")
+	uniform = /obj/item/clothing/under/pcrcsuit
+	shoes = /obj/item/clothing/shoes/laceup
+
+/decl/hierarchy/outfit/job/torch/crew/command/bailiff/saare
+	name = OUTFIT_JOB_NAME("Bailiff - SAARE")
+	uniform = /obj/item/clothing/under/saare
+	shoes = /obj/item/clothing/shoes/dutyboots
+	backpack_contents = list(/obj/item/clothing/accessory/armor/tag/saare = 1, /obj/item/clothing/accessory/armor/helmcover/saare = 1)
+
+/decl/hierarchy/outfit/job/torch/crew/command/bailiff/agent
+	name = OUTFIT_JOB_NAME("Bailiff - Agent")
+	uniform = /obj/item/clothing/under/det
+	suit = /obj/item/clothing/suit/storage/toggle/agent_jacket
+	shoes = /obj/item/clothing/shoes/dress
+/***/
+
+//Lawyer
+/decl/hierarchy/outfit/job/torch/crew/service/lawyer
+	name = OUTFIT_JOB_NAME("Lawyer")
+	uniform = /obj/item/clothing/under/lawyer/black
+	shoes = /obj/item/clothing/shoes/laceup
+	id_type = /obj/item/weapon/card/id/torch/contractor/service/lawyer
+	pda_type = /obj/item/modular_computer/pda

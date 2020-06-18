@@ -62,10 +62,10 @@
 	region = ACCESS_REGION_COMMAND
 	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, CO and RD cannot enter
 
-/var/const/access_representative = "ACCESS_TORCH_REPRESENTATIVE" //85
-/datum/access/representative
-	id = access_representative
-	desc = "SolGov Representative"
+/var/const/access_adjudicator = "ACCESS_ADJUDICATOR" //85
+/datum/access/adjudicator
+	id = access_adjudicator
+	desc = "Adjudicator"
 	region = ACCESS_REGION_COMMAND
 	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, CO cannot enter
 
