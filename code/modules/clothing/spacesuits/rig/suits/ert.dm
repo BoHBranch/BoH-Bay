@@ -1,6 +1,6 @@
 /obj/item/weapon/rig/ert
 	name = "emergency response command hardsuit control module"
-	desc = "A hardsuit, designed for response teams and the like. This one has seems to be pretty standard in terms of protection. Has blue highlights."
+	desc = "A hardsuit, designed for response teams and the like. Designed to command the rest of the squad in the field. Has blue highlights."
 	suit_type = "emergency response command"
 	icon_state = "ert_commander_rig"
 
@@ -50,7 +50,7 @@
 
 /obj/item/weapon/rig/ert/engineer
 	name = "emergency response engineering hardsuit control module"
-	desc = "A hardsuit, designed for response teams and the like. This one has extra plating and protection from bombs and shock based weaponry. Has orange highlights."
+	desc = "A hardsuit, designed for response teams and the like. Designed for Engineering use and Bomb Disposal. Has orange highlights."
 	suit_type = "emergency response engineer"
 	icon_state = "ert_engineer_rig"
 		
@@ -94,7 +94,7 @@
 
 /obj/item/weapon/rig/ert/medical
 	name = "emergency response medical hardsuit control module"
-	desc = "A hardsuit, designed for response teams and the like. This one has seems to be pretty standard in terms of protection. Has white and red highlights."
+	desc = "A hardsuit, designed for response teams and the like. Designed for medical support in the field. Has white and red highlights."
 	suit_type = "emergency response medic"
 	icon_state = "ert_medical_rig"
 
@@ -117,7 +117,7 @@
 
 /obj/item/weapon/rig/ert/security
 	name = "emergency response security hardsuit control module"
-	desc = "A hardsuit, designed for response teams and the like. This one seems to have extra padding and ballistic plating. Has red highlights."
+	desc = "A hardsuit, designed for response teams and the like. Designed for front line security operations. Has red highlights."
 	suit_type = "emergency response security"
 	icon_state = "ert_security_rig"
 
@@ -141,8 +141,7 @@
 
 /obj/item/weapon/rig/ert/assetprotection
 	name = "heavy emergency response suit control module"
-	desc = "A very heavy hardsuit, modified to take on the galaxies most hostile enviroments, this one appears to have extra padding, ballistic armor, combined with ablative plating and shock padding. Do not mess with the person wearing this."
-	suit_type = "heavy emergency response"
+	desc = "A very heavy hardsuit, modified to take on the galaxies most hostile environments, this one appears to have a LOT of armour. Do not mess with the person wearing this."
 	icon_state = "asset_protection_rig"
 	
 	armor = list( //This is the guy you throw at everything.
