@@ -1,6 +1,6 @@
 /obj/item/weapon/rig/ert
 	name = "emergency response command hardsuit control module"
-	desc = "A hardsuit used by many corporate and governmental emergency response forces. Has blue highlights. Armoured and space ready."
+	desc = "A hardsuit, designed for response teams and the like. This one has seems to be pretty standard in terms of protection. Has blue highlights."
 	suit_type = "emergency response command"
 	icon_state = "ert_commander_rig"
 
@@ -50,9 +50,19 @@
 
 /obj/item/weapon/rig/ert/engineer
 	name = "emergency response engineering hardsuit control module"
-	desc = "A hardsuit used by many corporate and governmental emergency response forces. Has orange highlights. Armoured and space ready."
+	desc = "A hardsuit, designed for response teams and the like. This one has extra plating and protection from bombs and shock based weaponry. Has orange highlights."
 	suit_type = "emergency response engineer"
 	icon_state = "ert_engineer_rig"
+		
+	armor = list( //This is the guy you throw at a bomb, or a hole in the ship.
+		melee = ARMOR_MELEE_MAJOR,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_MAJOR,
+		energy = ARMOR_ENERGY_RESISTANT,
+		bomb = ARMOR_BOMB_SHIELDED, 
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+		)
 
 	glove_type = /obj/item/clothing/gloves/rig/ert/engineer
 
@@ -84,7 +94,7 @@
 
 /obj/item/weapon/rig/ert/medical
 	name = "emergency response medical hardsuit control module"
-	desc = "A hardsuit used by many corporate and governmental emergency response forces. Has white highlights. Armoured and space ready."
+	desc = "A hardsuit, designed for response teams and the like. This one has seems to be pretty standard in terms of protection. Has white and red highlights."
 	suit_type = "emergency response medic"
 	icon_state = "ert_medical_rig"
 
@@ -95,12 +105,31 @@
 		/obj/item/rig_module/chem_dispenser/injector,
 		/obj/item/rig_module/cooling_unit
 		)
+	armor = list( //Same as the Lead Commander
+		melee = ARMOR_MELEE_MAJOR,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_MAJOR,
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_PADDED,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+		)
 
 /obj/item/weapon/rig/ert/security
 	name = "emergency response security hardsuit control module"
-	desc = "A hardsuit used by many corporate and governmental emergency response forces. Has red highlights. Armoured and space ready."
+	desc = "A hardsuit, designed for response teams and the like. This one seems to have extra padding and ballistic plating. Has red highlights."
 	suit_type = "emergency response security"
 	icon_state = "ert_security_rig"
+
+	armor = list( //This is the guy you throw at antags.
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_RIFLE,
+		laser = ARMOR_LASER_MAJOR,
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_PADDED,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+		)
 
 	initial_modules = list(
 		/obj/item/rig_module/ai_container,
@@ -112,15 +141,16 @@
 
 /obj/item/weapon/rig/ert/assetprotection
 	name = "heavy emergency response suit control module"
-	desc = "A heavy, modified version of a common emergency response hardsuit. Has blood red highlights.  Armoured and space ready."
+	desc = "A very heavy hardsuit, modified to take on the galaxies most hostile enviroments, this one appears to have extra padding, ballistic armor, combined with ablative plating and shock padding. Do not mess with the person wearing this."
 	suit_type = "heavy emergency response"
 	icon_state = "asset_protection_rig"
-	armor = list(
+	
+	armor = list( //This is the guy you throw at everything.
 		melee = ARMOR_MELEE_VERY_HIGH,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
-		energy = ARMOR_ENERGY_MINOR,
-		bomb = ARMOR_BOMB_PADDED,
+		bullet = ARMOR_BALLISTIC_RIFLE,
+		laser = ARMOR_LASER_RIFLES,
+		energy = ARMOR_ENERGY_RESISTANT,
+		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 		)
