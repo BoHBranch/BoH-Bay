@@ -36,6 +36,7 @@
 		/obj/item/weapon/folder,
 		/obj/item/device/tape/random = 3,
 		/obj/item/weapon/storage/secure/briefcase,
+		/obj/item/weapon/rig/light/internalaffairs,
 		/obj/item/clothing/shoes/laceup,
 		/obj/item/clothing/under/rank/internalaffairs/plain/nt,
 		/obj/item/clothing/suit/storage/toggle/suit/black,
@@ -82,8 +83,8 @@
 		)
 
 /obj/structure/closet/secure_closet/representative
-	name = "\improper Sol Central Government representative's locker"
-	req_access = list(access_representative)
+	name = "\improper adjudicator's locker"
+	req_access = list(access_adjudicator)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/sol/rep
 
 /obj/structure/closet/secure_closet/representative/WillContain()
@@ -94,6 +95,7 @@
 		/obj/item/weapon/folder,
 		/obj/item/device/tape/random = 3,
 		/obj/item/weapon/storage/secure/briefcase,
+		/obj/item/weapon/rig/light/internalaffairs,
 		/obj/item/device/radio/headset/headset_com,
 		/obj/item/clothing/shoes/laceup,
 		/obj/item/clothing/under/rank/internalaffairs/plain/solgov,
@@ -101,6 +103,29 @@
 		/obj/item/clothing/glasses/sunglasses/big,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel)),
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger, 50)
+	)
+
+/obj/structure/closet/secure_closet/blueshield
+	name = "\improper judicial protection locker"
+	req_access = list(access_adjudicator)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/corporate/bodyguard
+
+/obj/structure/closet/secure_closet/blueshield/WillContain()
+	return list(
+		/obj/item/device/flash,
+		/obj/item/clothing/accessory/storage/holster/armpit,
+		/obj/item/gunbox/bodyguard,
+		/obj/item/weapon/storage/secure/briefcase,
+		/obj/item/clothing/shoes/laceup,
+		/obj/item/clothing/under/det,
+		/obj/item/clothing/suit/storage/toggle/suit/black,
+		/obj/item/clothing/gloves/color/black,
+		/obj/item/clothing/head/helmet,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
+		/obj/item/clothing/accessory/armguards,
+		/obj/item/clothing/accessory/legguards,
+		/obj/item/clothing/glasses/sunglasses/big,
+		/obj/item/device/radio/headset/headset_com
 	)
 
 //equipment closets that everyone on the crew or in research can access, for storing things securely

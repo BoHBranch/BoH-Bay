@@ -469,6 +469,7 @@ obj/structure/cable/proc/cableColor(var/colorC)
 
 /obj/item/stack/cable_coil
 	name = "multipurpose cable coil"
+	singular_name = "cable piece"
 	icon = 'icons/obj/power.dmi'
 	icon_state = "coil"
 	randpixel = 2
@@ -477,7 +478,7 @@ obj/structure/cable/proc/cableColor(var/colorC)
 	color = COLOR_MAROON
 	desc = "A coil of wiring, for delicate electronics use aswell as the more basic cable laying."
 	throwforce = 0
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_SMALL
 	throw_speed = 2
 	throw_range = 5
 	matter = list(MATERIAL_STEEL = 50, MATERIAL_GLASS = 20, MATERIAL_PLASTIC = 20)
@@ -507,7 +508,7 @@ obj/structure/cable/proc/cableColor(var/colorC)
 	if (param_color) // It should be red by default, so only recolor it if parameter was specified.
 		color = param_color
 	update_icon()
-	update_wclass()
+
 
 ///////////////////////////////////
 // General procedures
@@ -534,8 +535,9 @@ obj/structure/cable/proc/cableColor(var/colorC)
 		return
 	return ..()
 
+//Updates icon and name
 
-/obj/item/stack/cable_coil/on_update_icon()
+/obj/item/stack/cable_coil/on_update_icon() 
 	if (!color)
 		color = GLOB.possible_cable_colours[pick(GLOB.possible_cable_colours)]
 	if(amount == 1)
@@ -543,7 +545,7 @@ obj/structure/cable/proc/cableColor(var/colorC)
 		SetName("cable piece")
 	else if(amount == 2)
 		icon_state = "coil2"
-		SetName("cable piece")
+		SetName("long cable piece")
 	else if(amount > 2 && amount != max_amount)
 		icon_state = "coil"
 		SetName(initial(name))
@@ -561,24 +563,6 @@ obj/structure/cable/proc/cableColor(var/colorC)
 		final_color = GLOB.possible_cable_colours[selected_color]
 	color = final_color
 	to_chat(user, "<span class='notice'>You change \the [src]'s color to [lowertext(selected_color)].</span>")
-
-/obj/item/stack/cable_coil/proc/update_wclass()
-	if(amount == 1)
-		w_class = ITEM_SIZE_TINY
-	else
-		w_class = ITEM_SIZE_SMALL
-
-/obj/item/stack/cable_coil/examine(mob/user, distance)
-	. = ..()
-	if(distance > 1)
-		return
-
-	if(get_amount() == 1)
-		to_chat(user, "A short piece of power cable.")
-	else if(get_amount() == 2)
-		to_chat(user, "A piece of power cable.")
-	else
-		to_chat(user, "A coil of power cable. There are [get_amount()] lengths of cable in the coil.")
 
 
 /obj/item/stack/cable_coil/verb/make_restraint()
@@ -797,7 +781,6 @@ obj/structure/cable/proc/cableColor(var/colorC)
 	..()
 	src.amount = rand(1,2)
 	update_icon()
-	update_wclass()
 
 /obj/item/stack/cable_coil/yellow
 	color = COLOR_AMBER
