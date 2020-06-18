@@ -180,6 +180,15 @@ var/last_chew = 0
 	cuff_type = "duct tape"
 	health = 50
 
+/////////
+// Fuzzy Cuffs. Kill me.
+/////////
+
+/obj/item/weapon/handcuffs/fuzzy
+	name = "fuzzy cuffs"
+	icon_state = "fuzzycuff"
+	desc = "Use this to keep... 'prisoners' in line."
+
 //Zipties. Works on hardsuit rigs.
 /obj/item/weapon/handcuffs/ziptie
 	name = "ziptie"
@@ -189,3 +198,4 @@ var/last_chew = 0
 	breakouttime  = 300
 	cuff_sound = 'sound/weapons/cablecuff.ogg'
 	elastic = 1
+
