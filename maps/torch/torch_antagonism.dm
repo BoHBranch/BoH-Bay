@@ -3,19 +3,22 @@
 	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/captain, /datum/job/hop, /datum/job/submap)
 
 /datum/antagonist/godcultist
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/chaplain, /datum/job/merchant, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/submap)
+	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/chaplain, /datum/job/merchant, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
 
 /datum/antagonist/cultist
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/merchant, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/submap)
+	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/chaplain, /datum/job/merchant, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
 
 /datum/antagonist/loyalists
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/submap)
+	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
 
 /datum/antagonist/revolutionary
-	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/submap)
+	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
 
 /datum/antagonist/traitor
-	blacklisted_jobs = list(/datum/job/merchant, /datum/job/captain, /datum/job/hop, /datum/job/ai, /datum/job/submap, /datum/job/hos)
+	blacklisted_jobs = list(/datum/job/merchant, /datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/ai, /datum/job/cyborg, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/submap)
+
+/datum/antagonist/renegade
+	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt,/datum/job/submap)
 
 /datum/antagonist/ert
 	var/sic //Second-In-Command
