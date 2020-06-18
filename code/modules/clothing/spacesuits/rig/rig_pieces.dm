@@ -28,7 +28,7 @@
 
 /obj/item/clothing/shoes/magboots/rig
 	name = "boots"
-	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_AIRTIGHT
+	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_AIRTIGHT | ITEM_FLAG_SILENT
 	body_parts_covered = FEET
 	cold_protection = FEET
 	heat_protection = FEET
