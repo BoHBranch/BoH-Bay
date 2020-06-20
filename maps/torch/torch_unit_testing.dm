@@ -92,7 +92,16 @@
 		/area/turbolift/seconddeck,
 		/area/turbolift/thirddeck,
 		/area/turbolift/fourthdeck,
-		/area/template_noop
+		/area/template_noop,
+		/area/chapel/crematorium,
+		/area/medical/infirmary,
+		/area/medical/infirmreception,
+		/area/medical/subacute,
+		/area/medical/counselor,
+		/area/medical/reslab,
+		/area/medical/chemistry,
+		/area/medical/morgue,
+		/area/medical/surgery
 	)
 
 /datum/unit_test/zas_area_test/ai_chamber
