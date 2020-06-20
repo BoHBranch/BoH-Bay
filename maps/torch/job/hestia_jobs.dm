@@ -240,7 +240,7 @@
 	skill_points = 20
 	minimum_character_age = list(SPECIES_HUMAN = 28)
 
-	access = list(access_adjudicator, access_lawyer, access_security, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
+	access = list(access_adjudicator, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
 			            access_bridge, access_cargo, access_solgov_crew, access_hangar)
 
 	software_on_spawn = list(/datum/computer_file/program/reports)
@@ -279,7 +279,7 @@
 		"Judicial Assistant"
 	)
 	skill_points = 20
-	access = list(access_adjudicator, access_lawyer, access_security, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
+	access = list(access_adjudicator, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
 			            access_bridge, access_cargo, access_solgov_crew, access_hangar)
 	defer_roundstart_spawn = TRUE
 
@@ -318,7 +318,7 @@
 	skill_points = 20
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 
-	access = list(access_lawyer, access_security, access_sec_doors, access_maint_tunnels, access_solgov_crew)
+	access = list(access_lawyer, access_sec_doors, access_maint_tunnels, access_solgov_crew)
 
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
