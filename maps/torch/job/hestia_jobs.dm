@@ -291,7 +291,7 @@
 	return FALSE
 
 /datum/job/bailiff/get_description_blurb()
-	return "You are the Bailiff. Your task is to assist and protect him in his endeavours. Do not intervene with security matters, the protection of your client is your first concern. Good luck."
+	return "You are the Bailiff. Your task is to assist and protect the Adjudicator in his endeavours. Do not intervene with security matters, the protection of your client is your first concern. Good luck."
 
 /datum/job/bailiff/post_equip_rank(var/mob/person, var/alt_title)
 	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Bailiff")]"]"
