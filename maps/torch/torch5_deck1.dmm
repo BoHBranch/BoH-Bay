@@ -2841,7 +2841,7 @@
 	pixel_x = 5
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley
+	c_tag = "First Deck - Galley"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/lounge)
@@ -5222,7 +5222,7 @@
 	dir = 5
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Freezer;
+	c_tag = "First Deck - Freezer";
 	dir = 4
 	},
 /turf/simulated/floor/tiled/freezer,
@@ -5323,7 +5323,7 @@
 /area/medical/sleeper)
 "ajL" = (
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley;
+	c_tag = "First Deck - Galley";
 	dir = 1
 	},
 /turf/simulated/floor/lino,
@@ -17266,7 +17266,7 @@
 	dir = 9
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley;
+	c_tag = "First Deck - Galley";
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
@@ -17560,7 +17560,7 @@
 	dir = 1
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley
+	c_tag = "First Deck - Galley"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/lounge)
@@ -17698,7 +17698,7 @@
 	dir = 8
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley;
+	c_tag = "First Deck - Galley";
 	dir = 8
 	},
 /turf/simulated/floor/wood/ebony,
@@ -17901,7 +17901,7 @@
 	dir = 1
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley;
+	c_tag = "First Deck - Galley";
 	dir = 1
 	},
 /turf/simulated/floor/wood/ebony,
@@ -18314,7 +18314,7 @@
 	},
 /obj/machinery/vending/fitness,
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley
+	c_tag = "First Deck - Galley"
 	},
 /turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
@@ -18760,7 +18760,7 @@
 	dir = 8
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley;
+	c_tag = "First Deck - Galley";
 	dir = 4
 	},
 /turf/simulated/floor/wood,
@@ -20795,7 +20795,7 @@
 "jeV" = (
 /obj/machinery/portable_atmospherics/hydroponics,
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Hydroponics;
+	c_tag = "First Deck - Hydroponics";
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
@@ -21176,7 +21176,7 @@
 	dir = 4
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley;
+	c_tag = "First Deck - Galley";
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
@@ -21568,7 +21568,7 @@
 	dir = 4
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley
+	c_tag = "First Deck - Galley"
 	},
 /turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
@@ -22373,7 +22373,7 @@
 /area/rnd/development)
 "lqh" = (
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley;
+	c_tag = "First Deck - Galley";
 	dir = 1
 	},
 /turf/simulated/floor/wood/ebony,
@@ -25644,7 +25644,7 @@
 /area/maintenance/firstdeck/aftstarboard)
 "qsz" = (
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley
+	c_tag = "First Deck - Galley"
 	},
 /obj/structure/table/woodentable/maple,
 /turf/simulated/floor/wood/ebony,
@@ -26302,7 +26302,7 @@
 	},
 /obj/structure/table/woodentable/maple,
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley;
+	c_tag = "First Deck - Galley";
 	dir = 4
 	},
 /obj/structure/window/basic{
@@ -28524,7 +28524,7 @@
 	dir = 4
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = First Deck - Galley;
+	c_tag = "First Deck - Galley";
 	dir = 4
 	},
 /turf/simulated/floor/wood/ebony,
