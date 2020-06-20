@@ -102,7 +102,8 @@
 		/area/medical/chemistry,
 		/area/medical/morgue,
 		/area/medical/morgue/autopsy,
-		/area/medical/surgery
+		/area/medical/surgery,
+		/area/medical/sleeper
 	)
 
 /datum/unit_test/zas_area_test/ai_chamber
