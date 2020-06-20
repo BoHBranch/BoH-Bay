@@ -101,6 +101,7 @@
 		/area/medical/reslab,
 		/area/medical/chemistry,
 		/area/medical/morgue,
+		/area/medical/morgue/autopsy,
 		/area/medical/surgery
 	)
 

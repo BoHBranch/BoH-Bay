@@ -793,7 +793,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "abu" = (
 /obj/structure/table/standard,
 /obj/effect/floor_decal/corner/yellow{
@@ -1076,7 +1076,7 @@
 	icon_state = "pipe-j2"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "abU" = (
 /obj/structure/lattice,
 /turf/simulated/wall/r_wall/hull,
@@ -2841,7 +2841,7 @@
 	pixel_x = 5
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley"
+	c_tag = "First Deck - Kitchen Aft Port"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/lounge)
@@ -4545,7 +4545,7 @@
 	pixel_x = -24
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "ail" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 6
@@ -4566,7 +4566,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "aim" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -4615,7 +4615,7 @@
 "aip" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "aiq" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -4625,7 +4625,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "air" = (
 /obj/structure/hygiene/sink{
 	dir = 8;
@@ -4654,7 +4654,7 @@
 	name = "Medical Staff Wing"
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "ait" = (
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -4669,7 +4669,7 @@
 	name = "Medical Staff Wing"
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "aiu" = (
 /obj/machinery/status_display,
 /turf/simulated/wall/prepainted,
@@ -4686,7 +4686,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "aiw" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -5216,7 +5216,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "ajC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -5320,10 +5320,10 @@
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "ajL" = (
 /obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley";
+	c_tag = "First Deck - Bar Port";
 	dir = 1
 	},
 /turf/simulated/floor/lino,
@@ -5779,7 +5779,7 @@
 	c_tag = "Infirmary - Locker Room Hallway 2"
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "aks" = (
 /obj/structure/bed/chair,
 /obj/machinery/camera/network/security{
@@ -5828,7 +5828,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "akw" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -5871,7 +5871,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "akC" = (
 /turf/simulated/wall/prepainted,
 /area/security/brig/psionic)
@@ -5889,12 +5889,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/lounge)
-"akE" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
 "akF" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/brig/psionic)
@@ -5906,7 +5900,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "akH" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -6257,7 +6251,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "alg" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -6274,7 +6268,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "alh" = (
 /obj/structure/cable{
 	d1 = 32;
@@ -6417,7 +6411,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "alt" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -8705,11 +8699,6 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
-	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -17265,10 +17254,6 @@
 /obj/effect/floor_decal/spline/plain/grey{
 	dir = 9
 	},
-/obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley";
-	dir = 4
-	},
 /turf/simulated/floor/tiled/white,
 /area/medical/lounge)
 "cxk" = (
@@ -17560,7 +17545,7 @@
 	dir = 1
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley"
+	c_tag = "First Deck - Kitchen Fore Starboard"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/lounge)
@@ -17660,7 +17645,7 @@
 "ddb" = (
 /obj/structure/bed/chair/comfy/red,
 /obj/structure/bed/chair/comfy/red,
-/obj/structure/window/basic{
+/obj/structure/window/reinforced/tinted/frosted{
 	dir = 1
 	},
 /turf/simulated/floor/wood,
@@ -17698,7 +17683,7 @@
 	dir = 8
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley";
+	c_tag = "First Deck - Commerce Panopticon Fore";
 	dir = 8
 	},
 /turf/simulated/floor/wood/ebony,
@@ -17901,7 +17886,7 @@
 	dir = 1
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley";
+	c_tag = "First Deck - Commerce Panopticon Starboard";
 	dir = 1
 	},
 /turf/simulated/floor/wood/ebony,
@@ -18105,6 +18090,16 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
+"dRm" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/table/woodentable/maple,
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/medical/lounge)
 "dRs" = (
 /obj/effect/floor_decal/corner/yellow,
 /obj/effect/floor_decal/techfloor{
@@ -18314,7 +18309,7 @@
 	},
 /obj/machinery/vending/fitness,
 /obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley"
+	c_tag = "First Deck - Commerce Panopticon Port"
 	},
 /turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
@@ -18760,7 +18755,7 @@
 	dir = 8
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley";
+	c_tag = "First Deck - Galley Dining Fore Port";
 	dir = 4
 	},
 /turf/simulated/floor/wood,
@@ -19441,10 +19436,7 @@
 /obj/structure/bed/chair/comfy/red{
 	dir = 1
 	},
-/obj/structure/window/basic{
-	dir = 8
-	},
-/obj/structure/window/basic,
+/obj/structure/window/reinforced/tinted/frosted,
 /turf/simulated/floor/wood,
 /area/medical/lounge)
 "hlb" = (
@@ -21176,7 +21168,7 @@
 	dir = 4
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley";
+	c_tag = "First Deck - Kitchen Aft";
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
@@ -21568,7 +21560,7 @@
 	dir = 4
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley"
+	c_tag = "First Deck - Galley Dining Mid Port"
 	},
 /turf/simulated/floor/wood/ebony,
 /area/medical/lounge)
@@ -22077,14 +22069,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/assembly/robotics/surgery)
-"kUP" = (
-/obj/structure/bed/chair/comfy/red{
-	dir = 1
-	},
-/obj/structure/window/basic,
-/obj/structure/window/basic,
-/turf/simulated/floor/wood,
-/area/medical/lounge)
 "kVb" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -22373,7 +22357,7 @@
 /area/rnd/development)
 "lqh" = (
 /obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley";
+	c_tag = "First Deck - Galley Dining Aft Port";
 	dir = 1
 	},
 /turf/simulated/floor/wood/ebony,
@@ -24374,6 +24358,9 @@
 	},
 /obj/structure/table/woodentable/maple,
 /obj/structure/table/woodentable/maple,
+/obj/structure/window/reinforced/tinted/frosted{
+	dir = 4
+	},
 /turf/simulated/floor/wood,
 /area/medical/lounge)
 "ouI" = (
@@ -25208,9 +25195,6 @@
 	dir = 4
 	},
 /obj/structure/table/woodentable/maple,
-/obj/structure/window/basic{
-	dir = 8
-	},
 /turf/simulated/floor/wood,
 /area/medical/lounge)
 "pIA" = (
@@ -25362,11 +25346,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
-"pWW" = (
-/obj/effect/wallframe_spawn/reinforced/no_grille,
-/obj/effect/wallframe_spawn/reinforced/no_grille,
-/turf/simulated/floor/plating,
-/area/medical/lounge)
 "pXm" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/sol{
@@ -25608,13 +25587,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/misc_lab)
-"qnz" = (
-/obj/structure/bed/chair/comfy/red{
-	dir = 1
-	},
-/obj/structure/window/basic,
-/turf/simulated/floor/wood,
-/area/medical/lounge)
 "qqb" = (
 /obj/machinery/photocopier,
 /obj/machinery/power/apc{
@@ -25644,7 +25616,7 @@
 /area/maintenance/firstdeck/aftstarboard)
 "qsz" = (
 /obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley"
+	c_tag = "First Deck - Galley Dining Fore Starboard"
 	},
 /obj/structure/table/woodentable/maple,
 /turf/simulated/floor/wood/ebony,
@@ -26302,11 +26274,8 @@
 	},
 /obj/structure/table/woodentable/maple,
 /obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley";
+	c_tag = "First Deck - Galley Private Dining";
 	dir = 4
-	},
-/obj/structure/window/basic{
-	dir = 8
 	},
 /turf/simulated/floor/wood,
 /area/medical/lounge)
@@ -28524,7 +28493,7 @@
 	dir = 4
 	},
 /obj/machinery/camera/network/first_deck{
-	c_tag = "First Deck - Galley";
+	c_tag = "First Deck - Commerce Panopticon Aft";
 	dir = 4
 	},
 /turf/simulated/floor/wood/ebony,
@@ -28696,10 +28665,7 @@
 /area/command/armoury/tactical)
 "vfH" = (
 /obj/structure/bed/chair/comfy/red,
-/obj/structure/window/basic{
-	dir = 8
-	},
-/obj/structure/window/basic{
+/obj/structure/window/reinforced/tinted/frosted{
 	dir = 1
 	},
 /turf/simulated/floor/wood,
@@ -28813,7 +28779,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/window/basic{
+/obj/structure/window/reinforced/tinted/frosted{
 	dir = 1
 	},
 /turf/simulated/floor/wood,
@@ -28922,7 +28888,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/equipstorage)
 "vTH" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "forensicswindow"
@@ -48734,7 +48700,7 @@ fvw
 vzy
 dnb
 eMg
-qnz
+hku
 tCw
 abu
 afb
@@ -48935,8 +48901,8 @@ fvw
 fvw
 ddb
 ouG
-eMg
-kUP
+dRm
+hku
 tCw
 tCw
 asj
@@ -50335,7 +50301,7 @@ aav
 aaP
 bUe
 akr
-akE
+ajy
 abt
 abT
 akv
@@ -55007,7 +54973,7 @@ guP
 guP
 guP
 guP
-pWW
+mcb
 aGx
 hnN
 uZi
