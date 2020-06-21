@@ -197,3 +197,7 @@
 /datum/gear/uniform/frontier
 	display_name = "frontier clothes"
 	path = /obj/item/clothing/under/frontier
+
+/datum/gear/uniform/slav 
+	display_name = "ancient uniform"
+	path = /obj/item/clothing/under/soviet

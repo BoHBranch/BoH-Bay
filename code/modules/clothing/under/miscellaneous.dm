@@ -258,7 +258,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 
 /obj/item/clothing/under/soviet
-	name = "soviet uniform"
+	name = "ancient uniform"
 	desc = "For the Motherland!"
 	icon_state = "soviet"
 	item_state = "gy_suit"

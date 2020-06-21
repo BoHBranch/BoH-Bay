@@ -31,3 +31,9 @@
 	song = 'sound/music/boh/lonely_satellite.ogg'
 	license = /decl/license/cc_by_nc_sa_3_0
 	url = "https://freemusicarchive.org/music/Bio_Unit/Export"
+
+/music_track/cheekibreeki
+	title = "Cheeki Breeki"
+	artist = "apartje."
+	song = 'sound/music/boh/cheekibreeki.ogg'
+	url = "https://youtu.be/BnTW6fZz-1E"

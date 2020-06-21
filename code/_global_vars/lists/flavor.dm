@@ -109,7 +109,8 @@ GLOBAL_LIST_INIT(music_tracks, list(
 	"A Place" = /music_track/astrometrics/a_place,
 	"Starbase" = /music_track/astrometrics/engage,
 	"Ram It Up Their Snout" = /music_track/astrometrics/engage/riuts,
-	"Lonely Satellite" = /music_track/lonely_satellite
+	"Lonely Satellite" = /music_track/lonely_satellite,
+	"Cheeki Breeki" = /music_track/cheekibreeki
 ))
 
 /proc/setup_music_tracks(var/list/tracks)
