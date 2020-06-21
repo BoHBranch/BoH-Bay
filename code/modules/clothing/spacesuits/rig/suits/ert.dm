@@ -50,7 +50,7 @@
 
 /obj/item/weapon/rig/ert/engineer
 	name = "emergency response engineering hardsuit control module"
-	desc = "A hardsuit, designed for response teams and the like. Designed for Engineering use and Bomb Disposal. Has orange highlights."
+	desc = "A hardsuit, designed for response teams and the like. Designed for engineering use and bomb disposal. Has orange highlights."
 	suit_type = "emergency response engineer"
 	icon_state = "ert_engineer_rig"
 		
