@@ -68,6 +68,10 @@
 /****************
 modular computers
 ****************/
+/datum/gear/utility/boombox
+	display_name = "boombox"
+	path = /obj/item/device/boombox
+	cost = 2
 
 /datum/gear/utility/cheaptablet
 	display_name = "tablet computer, cheap"
