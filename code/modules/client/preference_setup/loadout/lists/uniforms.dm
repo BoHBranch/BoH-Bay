@@ -201,3 +201,4 @@
 /datum/gear/uniform/slav 
 	display_name = "ancient uniform"
 	path = /obj/item/clothing/under/soviet
+	
