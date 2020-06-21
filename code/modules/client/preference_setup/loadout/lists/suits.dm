@@ -121,6 +121,10 @@
 	path = /obj/item/clothing/suit/storage/toggle/track
 	flags = GEAR_HAS_TYPE_SELECTION
 
+/datum/gear/suit/track/ucg 
+	display_name = "UCG track jacket"
+	path = /obj/item/clothing/suit/storage/toggle/track/ucg
+
 /datum/gear/suit/blueapron
 	display_name = "apron, blue"
 	path = /obj/item/clothing/suit/apron

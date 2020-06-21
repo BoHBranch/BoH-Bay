@@ -483,7 +483,7 @@
 	icon_open = "trackjacketwhite_open"
 	icon_closed = "trackjacketwhite"
 
-/obj/item/clothing/suit/storage/toggle/track/gcc
+/obj/item/clothing/suit/storage/toggle/track/ucg
 	name = "UCG track jacket"
 	desc = "An Independent track jacket, for the truly cheeki breeki."
 	icon_state = "trackjackettcc"
