@@ -25,7 +25,7 @@
 /datum/uplink_item/item/stealth_items/id
 	name = "Agent ID card"
 	desc = "A unique ID card that is completely configurable. Scan another ID card with it to clone its access capabilities."
-	item_cost = 12
+	item_cost = 8
 	path = /obj/item/weapon/card/id/syndicate
 
 /datum/uplink_item/item/stealth_items/chameleon_kit
@@ -37,9 +37,9 @@
 
 /datum/uplink_item/item/stealth_items/voice
 	name = "Modified Gas Mask"
-	desc = "A fully functioning gas mask that is able to conceal your face and has a built in voice modulator, \
-	so you can become a true shadow operative!"
-	item_cost = 20
+	desc = "A gas mask that is able to conceal your face and has a built in voice modulator, \
+	so you can become a true shadow operative! Filters not included."
+	item_cost = 10
 	path = /obj/item/clothing/mask/chameleon/voice
 
 /datum/uplink_item/item/stealth_items/chameleon_projector
