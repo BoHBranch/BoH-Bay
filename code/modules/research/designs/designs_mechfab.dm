@@ -520,13 +520,6 @@
 	req_tech = list(TECH_MATERIAL = 5, TECH_COMBAT = 4, TECH_BIO = 4)
 	id = "augment_armor"
 
-/datum/design/item/mechfab/augment/nanounit
-	name = "Nanite MCU"
-	build_path = /obj/item/organ/internal/augment/active/nanounit
-	materials = list(DEFAULT_WALL_MATERIAL = 5000, "glass" = 1000, "gold" = 100, "uranium" = 500)
-	req_tech = list(TECH_MATERIAL = 5, TECH_COMBAT = 5, TECH_BIO = 5, TECH_ENGINEERING = 5)
-	id = "augment_nanounit"
-
 /datum/design/item/mechfab/augment/circuit
 	name = "Integrated circuit frame"
 	build_path = /obj/item/organ/internal/augment/active/simple/circuit

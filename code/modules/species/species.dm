@@ -224,7 +224,7 @@
 	var/list/equip_adjust = list()
 	var/list/equip_overlays = list()
 
-	var/list/base_auras = list(/obj/aura/regenerating/human)
+	var/list/base_auras
 
 	var/sexybits_location	//organ tag where they are located if they can be kicked for increased pain
 
