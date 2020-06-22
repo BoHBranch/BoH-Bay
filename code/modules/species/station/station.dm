@@ -351,8 +351,8 @@
 
 /datum/species/diona/skills_from_age(age)
 	switch(age)
-		if(101 to 200)	. = 12 // age bracket before this is 46 to 100 . = 8 making this +4
-		if(201 to 300)	. = 16 // + 8
+		if(101 to 200)	. = 8 // age bracket before this is 46 to 100 . = 8 making this +4
+		if(201 to 300)	. = 8 // + 8
 		else			. = ..()
 
 // Dionaea spawned by hand or by joining will not have any
