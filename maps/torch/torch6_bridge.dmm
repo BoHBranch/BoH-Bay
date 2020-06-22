@@ -238,18 +238,15 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/aft)
 "aA" = (
-/obj/structure/bed/chair/comfy/captain{
-	icon_state = "capchair_preview";
-	dir = 4;
-	color = "#666666"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
 	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/item/device/radio/intercom{
+	pixel_y = 23
 	},
-/turf/simulated/floor/carpet/blue,
-/area/crew_quarters/heads/office/co)
+/obj/structure/closet/secure_closet/blueshield,
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/adjudicator)
 "aB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -2615,6 +2612,17 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/xo)
+"er" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/carpet/blue,
+/area/crew_quarters/heads/office/co)
 "es" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -3904,11 +3912,11 @@
 /obj/item/modular_computer/tablet/lease/preset/command,
 /obj/machinery/button/alternate/door{
 	desc = "A remote control-switch for the office door.";
-	id_tag = "repdoor";
-	name = "SCGR's Office Door Control";
+	id_tag = "adjudicator";
+	name = "Adjudicator's Office Door Control";
 	pixel_x = 27;
 	pixel_y = 5;
-	req_access = list("ACCESS_TORCH_REPRESENTATIVE")
+	req_access = list("ACCESS_ADJUDICATOR")
 	},
 /obj/machinery/button/windowtint{
 	pixel_x = 25;
@@ -3917,7 +3925,7 @@
 	range = 11
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "gw" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
@@ -8726,10 +8734,10 @@
 	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
 	},
 /obj/effect/landmark/start{
-	name = "SolGov Representative"
+	name = "Adjudicator"
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "oD" = (
 /obj/effect/floor_decal/corner/blue{
 	icon_state = "corner_white";
@@ -9953,7 +9961,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "qC" = (
 /obj/machinery/power/terminal{
 	icon_state = "term";
@@ -11205,7 +11213,7 @@
 	id = "sgr_windows"
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "sI" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -11219,7 +11227,7 @@
 	id = "sgr_windows"
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "sJ" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/heads/office/cl)
@@ -11229,7 +11237,7 @@
 /area/turret_protected/ai)
 "sL" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "sM" = (
 /obj/item/device/radio/intercom/locked/ai_private{
 	dir = 8;
@@ -11273,7 +11281,7 @@
 	dir = 1
 	},
 /turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "sQ" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -11595,16 +11603,16 @@
 	id = "sgr_windows"
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "tt" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "tu" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "tv" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -11616,7 +11624,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "tw" = (
 /obj/structure/cable/cyan{
 	d1 = 2;
@@ -11630,19 +11638,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/turret_protected/ai_outer_chamber)
-"tx" = (
-/obj/structure/bookcase,
-/obj/item/weapon/book/manual/solgov_law,
-/obj/item/weapon/book/manual/sol_sop,
-/obj/item/weapon/book/manual/military_law,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/obj/item/device/radio/intercom{
-	pixel_y = 23
-	},
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
 "ty" = (
 /obj/structure/closet/secure_closet/representative,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -11655,7 +11650,7 @@
 	pixel_y = 26
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "tz" = (
 /obj/structure/table/woodentable/walnut,
 /obj/item/sticky_pad/random,
@@ -11664,7 +11659,7 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "tA" = (
 /obj/item/weapon/paper_bin,
 /obj/item/weapon/pen/multi,
@@ -11982,7 +11977,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "uh" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -11992,13 +11987,13 @@
 	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "ui" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "uj" = (
 /obj/structure/bed/chair/padded/blue,
 /obj/structure/cable/green{
@@ -12011,7 +12006,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "uk" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -12022,11 +12017,11 @@
 	},
 /obj/machinery/door/airlock/sol{
 	id_tag = null;
-	name = "SolGov Representative";
+	name = "Adjudicator";
 	secured_wires = 1
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "ul" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -12039,7 +12034,7 @@
 	pixel_y = -24
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "um" = (
 /obj/structure/cable/cyan{
 	d1 = 2;
@@ -12054,10 +12049,9 @@
 	pixel_x = 36;
 	pixel_y = 0
 	},
-/obj/item/weapon/folder/envelope/rep,
-/obj/item/documents/scgr,
+/obj/item/documents/adjudicator,
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "uo" = (
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/photocopier/faxmachine{
@@ -12177,7 +12171,7 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "uA" = (
 /obj/machinery/computer/robotics{
 	dir = 1
@@ -12325,7 +12319,7 @@
 	network = list("Command","Security")
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "uN" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/weapon/paper_bin{
@@ -12337,7 +12331,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "uO" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/structure/cable/green{
@@ -12351,7 +12345,7 @@
 	},
 /obj/item/weapon/tableflag,
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "uP" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/computer/ship/navigation/telescreen{
@@ -12735,7 +12729,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "vw" = (
 /obj/effect/floor_decal/corner/blue,
 /obj/structure/cable/green{
@@ -13068,10 +13062,10 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "vY" = (
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "vZ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -13440,7 +13434,7 @@
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/photocopier/faxmachine{
 	anchored = 1;
-	department = "SolGov Representative"
+	department = "Adjudicator"
 	},
 /obj/item/device/radio/intercom{
 	dir = 4;
@@ -13448,7 +13442,7 @@
 	},
 /obj/machinery/light,
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "wE" = (
 /obj/structure/table/woodentable/walnut,
 /obj/structure/sign/double/icarus/solgovflag/right{
@@ -13470,7 +13464,7 @@
 	pixel_y = -4
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "wH" = (
 /obj/item/weapon/bedsheet/browndouble{
 	dir = 4
@@ -15230,7 +15224,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "Eb" = (
 /obj/machinery/camera/network/engineering{
 	c_tag = "Shield Generator - Bridge Deck"
@@ -17574,7 +17568,7 @@
 	},
 /obj/item/weapon/book/manual/solgov_law,
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "QW" = (
 /obj/machinery/computer/ship/engines{
 	icon_state = "computer";
@@ -17657,7 +17651,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "Rg" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/yellow{
@@ -17928,7 +17922,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "Sg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
@@ -18050,7 +18044,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "SN" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
@@ -19254,8 +19248,8 @@
 /area/crew_quarters/heads/office/xo)
 "YC" = (
 /obj/machinery/door/airlock/sol{
-	id_tag = "repdoor";
-	name = "SolGov Representative";
+	id_tag = "adjudicator";
+	name = "Adjudicator";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -19272,7 +19266,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "YI" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/forestarboard)
@@ -19398,7 +19392,7 @@
 	pixel_y = -2
 	},
 /turf/simulated/floor/carpet/blue2,
-/area/crew_quarters/heads/office/sgr)
+/area/crew_quarters/heads/office/adjudicator)
 "Zh" = (
 /obj/structure/table/steel,
 /obj/machinery/cell_charger,
@@ -27533,7 +27527,7 @@ SJ
 ev
 eP
 UY
-aA
+er
 Ig
 OM
 tR
@@ -32181,7 +32175,7 @@ ck
 FS
 yb
 sL
-tx
+aA
 ul
 sL
 Tf

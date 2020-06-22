@@ -217,3 +217,110 @@
 /datum/job/psiadvisor/get_description_blurb()
 	return "You are the Psionic Advisor, an agent of either the Foundation or Nanotrasen Psionic Corps. Alongside the Counselor, you're the only other individual with known and authorized Psionic abilities aboard the NTSS Dagon. Your main responsibility is advising the Commanding Officer on psionic matters. \
 	Secondly, you're to assist the crew or Research on psionic matters, or guide any newly emergent crew that awaken with psionic abilities."
+
+/*
+	Adjudicator
+*/
+
+/datum/job/adjudicator
+	title = "Adjudicator"
+	department = "Support"
+	department_flag = SPT
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "Central Command The Galilei Convention and the Ship Regulations"
+	selection_color = "#2f2f7f"
+	economic_power = 15
+	minimal_player_age = 7
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/adjudicator
+	allowed_branches = list(/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
+	                    SKILL_FINANCE     = SKILL_BASIC)
+	skill_points = 20
+	minimum_character_age = list(SPECIES_HUMAN = 27)
+
+	access = list(access_adjudicator, access_lawyer, access_security, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
+			            access_bridge, access_cargo, access_solgov_crew, access_hangar)
+
+	software_on_spawn = list(/datum/computer_file/program/reports)
+
+/datum/job/adjudicator/get_description_blurb()
+	return "You are the Adjudicator. Your job is to be an unbiased defender of the law, dealing with any ethical or legal issues aboard the ship and informing and advising the Commanding Officer of them. Ensure that the ship regulations are upheld and that the security force is enforcing the law correctly."
+
+
+/datum/job/bailiff
+	title = "Bailiff"
+	department = "Support"
+	department_flag = SPT
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Adjudicator"
+	selection_color = "#3d3d7f"
+	economic_power = 12
+	minimal_player_age = 5
+	minimum_character_age = list(SPECIES_HUMAN = 19)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/bailiff
+	allowed_branches = list(/datum/mil_branch/civilian,
+							/datum/mil_branch/solgov)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor,
+						 /datum/mil_rank/sol/agent)
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	                    SKILL_EVA         = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_BASIC,
+	                    SKILL_WEAPONS     = SKILL_ADEPT,
+	                    SKILL_FORENSICS   = SKILL_BASIC)
+	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
+	                    SKILL_WEAPONS     = SKILL_MAX,
+	                    SKILL_FORENSICS   = SKILL_MAX)
+
+	alt_titles = list(
+		"Court Officer",
+		"Judicial Assistant"
+	)
+	skill_points = 20
+	access = list(access_adjudicator, access_lawyer, access_security, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
+			            access_bridge, access_cargo, access_solgov_crew, access_hangar)
+	defer_roundstart_spawn = TRUE
+
+/datum/job/bailiff/is_position_available()
+	if(..())
+		for(var/mob/M in GLOB.player_list)
+			if(M.client && M.mind && M.mind.assigned_role == "Adjudicator")
+				return TRUE
+	return FALSE
+
+/datum/job/bailiff/get_description_blurb()
+	return "You are the Bailiff. You are the assistant of the Adjudicator. Your job is to assist and protect him in his endeavours. Good luck."
+
+/datum/job/bailiff/post_equip_rank(var/mob/person, var/alt_title)
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Bailiff")]"]"
+	for(var/mob/M in GLOB.player_list)
+		if(M.client && M.mind)
+			if(M.mind.assigned_role == "Adjudicator")
+				to_chat(M, SPAN_NOTICE("<b>Your bodyguard, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
+	..()
+
+/datum/job/lawyer
+	title = "Lawyer"
+	department = "Service"
+	department_flag = SRV
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the Adjudicator, The Galilei Convention and the Ship Regulations"
+	economic_power = 10
+	minimal_player_age = 2
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/lawyer
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/solgov)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor, /datum/mil_rank/sol/gov)
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
+	                    SKILL_FINANCE     = SKILL_BASIC)
+	skill_points = 20
+	minimum_character_age = list(SPECIES_HUMAN = 27)
+
+	access = list(access_lawyer, access_security, access_sec_doors, access_maint_tunnels, access_solgov_crew)
+
+	software_on_spawn = list(/datum/computer_file/program/reports)
+
+/datum/job/lawyer/get_description_blurb()
+	return "You are a lawyer. Your job is to prosecute or defend your client depending on the circumstances."
