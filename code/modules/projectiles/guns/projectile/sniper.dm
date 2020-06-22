@@ -97,8 +97,8 @@
 	wielded_item_state = "boltaction-wielded"
 
 /obj/item/weapon/gun/projectile/hornetsniper
-	name = "Z2 Hornet"
-	desc = "An older cousin of the Z9 Bullpup Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer."
+	name = "hornet marksman rifle"
+	desc = "The Z2 Hornet, is an older cousin of the Z9 Bullpup Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer."
 	icon = 'icons/obj/guns/hornet.dmi'
 	icon_state = "hornet"
 	item_state = "hornet"
@@ -118,5 +118,5 @@
 	scoped_accuracy = 9
 	scope_zoom = 2
 	wielded_item_state = "z8carbine-wielded"
-	load_sound = 'sound/weapons/guns/interaction/rifle_load.ogg'
-	fire_delay = 40
+	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
+	fire_delay = 30
