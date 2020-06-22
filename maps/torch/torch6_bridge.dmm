@@ -2616,16 +2616,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/obj/item/device/radio/intercom{
-	pixel_y = 23
-	},
-/obj/structure/closet/secure_closet/blueshield,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/co)
 "es" = (
 /obj/structure/disposalpipe/segment{
