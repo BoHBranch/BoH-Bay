@@ -3322,6 +3322,30 @@
 "gz" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/heads/office/lawyer_office)
+"gA" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/window/brigdoor/eastleft{
+	name = "Bar";
+	req_access = list("ACCESS_BAR")
+	},
+/turf/simulated/floor/lino,
+/area/crew_quarters/bar)
 "gB" = (
 /obj/structure/closet/crate/freezer/rations,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -7722,29 +7746,6 @@
 	},
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 4
-	},
-/turf/simulated/floor/lino,
-/area/crew_quarters/bar)
-"pc" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/door/window/brigdoor/eastleft{
-	name = "Bar"
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
@@ -38997,7 +38998,7 @@ Vg
 Vg
 Vg
 Fw
-pc
+gA
 pW
 qP
 IY

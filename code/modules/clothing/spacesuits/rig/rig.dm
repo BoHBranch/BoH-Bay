@@ -257,6 +257,7 @@
 
 	if(!seal_target && !suit_is_deployed())
 		wearer.visible_message("<span class='danger'>[wearer]'s suit flashes an error light.</span>","<span class='danger'>Your suit flashes an error light. It can't function properly without being fully deployed.</span>")
+		playsound(src, 'sound/machines/rigerror.ogg', 20, 0)
 		failed_to_seal = 1
 
 	if(!failed_to_seal)
@@ -265,6 +266,7 @@
 			wearer.visible_message("<font color='blue'>[wearer]'s suit emits a quiet hum as it begins to adjust its seals.</font>","<font color='blue'>With a quiet hum, the suit begins running checks and adjusting components.</font>")
 			if(seal_delay && !do_after(wearer,seal_delay, src))
 				if(wearer) to_chat(wearer, "<span class='warning'>You must remain still while the suit is adjusting the components.</span>")
+				playsound(src, 'sound/machines/rigerror.ogg', 20, 0)
 				failed_to_seal = 1
 
 		if(!wearer)
@@ -282,6 +284,7 @@
 
 				if(!istype(wearer) || !istype(piece) || !istype(compare_piece) || !msg_type)
 					if(wearer) to_chat(wearer, "<span class='warning'>You must remain still while the suit is adjusting the components.</span>")
+					playsound(src, 'sound/machines/rigerror.ogg', 20, 0)
 					failed_to_seal = 1
 					break
 
@@ -334,8 +337,10 @@
 	// Success!
 	canremove = seal_target
 	to_chat(wearer, "<font color='blue'><b>Your entire suit [canremove ? "loosens as the components relax" : "tightens around you as the components lock into place"].</b></font>")
+	playsound(src, 'sound/machines/rigstarted.ogg', 10, 0)
 	if(!canremove && update_visible_name)
 		visible_name = wearer.real_name
+	
 
 	if(wearer != initiator)
 		to_chat(initiator, "<font color='blue'>Suit adjustment complete. Suit is now [canremove ? "unsealed" : "sealed"].</font>")
@@ -388,7 +393,9 @@
 			if(!canremove)
 				if (offline_slowdown < 3)
 					to_chat(wearer, "<span class='danger'>Your suit beeps stridently, and suddenly goes dead.</span>")
+					playsound(src, 'sound/machines/rigdown.ogg', 60, 0)
 				else
+					playsound(src, 'sound/machines/rigdown.ogg', 60, 0)
 					to_chat(wearer, "<span class='danger'>Your suit beeps stridently, and suddenly you're wearing a leaden mass of metal and plastic composites instead of a powered suit.</span>")
 			if(offline_vision_restriction >= TINT_MODERATE)
 				to_chat(wearer, "<span class='danger'>The suit optics flicker and die, leaving you with restricted vision.</span>")
@@ -442,12 +449,16 @@
 			fail_msg = "<span class='warning'>You must be wearing \the [src] to do this.</span>"
 	if(sealing)
 		fail_msg = "<span class='warning'>The hardsuit is in the process of adjusting seals and cannot be activated.</span>"
+		playsound(src, 'sound/machines/rigerror.ogg', 20, 0)
 	else if(!fail_msg && ((use_unconcious && user.stat > 1) || (!use_unconcious && user.stat)))
 		fail_msg = "<span class='warning'>You are in no fit state to do that.</span>"
+		playsound(src, 'sound/machines/rigerror.ogg', 20, 0)
 	else if(!cell)
 		fail_msg = "<span class='warning'>There is no cell installed in the suit.</span>"
+		playsound(src, 'sound/machines/rigerror.ogg', 20, 0)
 	else if(cost && !cell.check_charge(cost * CELLRATE))
 		fail_msg = "<span class='warning'>Not enough stored power.</span>"
+		playsound(src, 'sound/machines/rigerror.ogg', 20, 0)
 
 	if(fail_msg)
 		to_chat(user, "[fail_msg]")
