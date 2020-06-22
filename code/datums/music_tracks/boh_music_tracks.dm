@@ -36,5 +36,5 @@
 	title = "Cheeki Breeki"
 	artist = "apartje."
 	song = 'sound/music/boh/cheekibreeki.ogg'
-	license = null
+	license = /decl/license/cc_by_nc_sa_3_0
 	url = "https://youtu.be/BnTW6fZz-1E"
