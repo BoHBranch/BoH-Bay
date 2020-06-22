@@ -211,6 +211,11 @@
 	band_color = COLOR_PINK
 	reagents_to_add = list(/datum/reagent/peridaxon = 10)
 
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton
+	name = "autoinjector (kompo)"
+	band_color = COLOR_RED_LIGHT
+	reagents_to_add = list(/datum/reagent/kompoton = 10)
+
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine
 	name = "autoinjector (alky)"
 	band_color = COLOR_YELLOW
