@@ -484,7 +484,7 @@
 	icon_closed = "trackjacketwhite"
 
 /obj/item/clothing/suit/storage/toggle/track/ucg
-	name = "UCG track jacket"
+	name = "slavic track jacket"
 	desc = "An Independent track jacket, for the truly cheeki breeki."
 	icon_state = "trackjackettcc"
 	icon_open = "trackjackettcc_open"

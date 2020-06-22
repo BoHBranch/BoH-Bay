@@ -259,7 +259,7 @@
 
 /obj/item/clothing/under/soviet
 	name = "ancient uniform"
-	desc = "For the Motherland!"
+	desc = "Ancient and faded UCG uniform, they don't make them like these anymore."
 	icon_state = "soviet"
 	item_state = "gy_suit"
 	worn_state = "soviet"
