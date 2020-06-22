@@ -472,6 +472,38 @@
 					H.drowsyness++
 				I.heal_damage(removed)
 
+/datum/reagent/kompoton
+	name = "Kompoton"
+	description = "Used to completely regenerate internal organs and the nervous systems. Suffering guaranteed."
+	taste_description = "bitterness"
+	reagent_state = LIQUID
+	color = "#d82e2e"
+	overdose = 15
+	scannable = 1
+	flags = IGNORE_MOB_SIZE
+	var/agony_dose = 5
+	var/agony_amount = 2
+	value = 6
+
+/datum/reagent/kompoton/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		for(var/obj/item/organ/internal/I in H.internal_organs)
+			if(!BP_IS_ROBOTIC(I))
+				if(I.organ_tag == BP_BRAIN)
+					if(I.damage >= I.max_damage)
+						continue
+					H.confused++
+					H.drowsyness++
+				I.heal_damage(removed*7)
+				M.apply_effect(agony_amount, PAIN, 0)
+				if(prob(5))
+					M.custom_emote(2, "[pick("dry heaves!","twists and spasms erratically!","wails in agony!")]")
+					to_chat(M, "<span class='danger'>You feel like your insides are disintegrating!</span>")
+				for(var/obj/item/organ/external/E in H.organs)
+					if(E.status & ORGAN_ARTERY_CUT)
+						E.status &= ~ORGAN_ARTERY_CUT
+
 /datum/reagent/ryetalyn
 	name = "Ryetalyn"
 	description = "Ryetalyn can cure all genetic abnomalities via a catalytic process."
