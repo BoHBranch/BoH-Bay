@@ -15,7 +15,7 @@
 
 	description = "A genemod, divergent from Tritonians by the addition of additional muscle mass and sharper teeth. Though both races are Human-based genemods that arose from the conditions of their aquatic colony-planet, Koster-4, Tritonians have generally always been a more popular choice of genemod, due to an Akula's large dietary needs."
 
-	spawn_flags = SPECIES_CAN_JOIN
+	spawn_flags = SPECIES_IS_RESTRICTED | SPECIES_IS_ICONBASE
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	sexybits_location = BP_GROIN //this is possibly my favorite variable just because of how out of place it is.
