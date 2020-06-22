@@ -1677,30 +1677,6 @@
 	name = "\improper Thunderdome (Observer.)"
 	icon_state = "purple"
 
-/area/security/infantry
-	name = "\improper Infantry Prep"
-	icon_state = "crew_quarters"
-	sound_env = MEDIUM_SOFTFLOOR
-	req_access = list(access_infantry)
-
-/area/security/infantry/gear
-	name = "\improper Technician Prep"
-	icon = 'icons/boh/area.dmi'
-	icon_state = "triage"
-	req_access = list(access_inftech)
-
-/area/security/infantry/com
-	name = "\improper Squad Leader Prep"
-	icon = 'icons/boh/area.dmi'
-	icon_state = "triage"
-	req_access = list(access_infcom)
-
-/area/security/infantry/armory
-	name = "\improper Infantry Hard Storage"
-	icon = 'icons/boh/area.dmi'
-	icon_state = "triage"
-	req_access = list(access_infcom)
-
 /area/defturrets
 	name = "\improper Anti-Boarding Control"
 	icon_state = "security_sub"

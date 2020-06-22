@@ -2,29 +2,25 @@
 	name = "regenerating aura"
 	var/brute_mult = 1
 	var/fire_mult = 1
-	var/tox_mult = 0
+	var/tox_mult = 1
 	var/oxy_mult = 0
-	var/clone_mult = 1
 
 /obj/aura/regenerating/life_tick()
 	user.adjustBruteLoss(-brute_mult)
 	user.adjustFireLoss(-fire_mult)
 	user.adjustToxLoss(-tox_mult)
-	user.adjustOxyLoss(-oxy_mult)
-	user.adjustCloneLoss(-clone_mult)
 
 /obj/aura/regenerating/human
 	var/nutrition_damage_mult = 1 //How much nutrition it takes to heal regular damage
 	var/external_nutrition_mult = 50 // How much nutrition it takes to regrow a limb
 	var/organ_mult = 2
-	var/organheal_nut = 350 //The minimum amount of nutriments stored when organs can heal themselves.
 	var/regen_message = "<span class='warning'>Your body throbs as you feel your ORGAN regenerate.</span>"
 	var/grow_chance = 0
 	var/grow_threshold = 0
-	var/ignore_tag //organ tag to ignore
+	var/ignore_tag//organ tag to ignore
 	var/last_nutrition_warning = 0
 	var/innate_heal = TRUE // Whether the aura is on, basically.
-	var/noregen = 0 //Used to count how long to toggle regen when hit.
+
 
 /obj/aura/regenerating/human/proc/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
 	return
@@ -34,16 +30,11 @@
 	if(!istype(H))
 		CRASH("Someone gave [user.type] a [src.type] aura. This is invalid.")
 		return 0
-	if (world.time < noregen)
-		innate_heal = FALSE
-	else
-		innate_heal = TRUE
 	if(!innate_heal || H.InStasis() || H.stat == DEAD)
 		return 0
 	if(H.nutrition < nutrition_damage_mult)
 		low_nut_warning()
 		return 0
-
 
 	if(brute_mult && H.getBruteLoss())
 		H.adjustBruteLoss(-brute_mult * config.organ_regeneration_multiplier)
@@ -55,10 +46,7 @@
 		H.adjustToxLoss(-tox_mult * config.organ_regeneration_multiplier)
 		H.adjust_nutrition(-nutrition_damage_mult)
 	if(oxy_mult && H.getOxyLoss())
-		H.adjustOxyLoss(-oxy_mult * config.organ_regeneration_multiplier)
-		H.adjust_nutrition(-nutrition_damage_mult)
-	if(clone_mult && H.getCloneLoss())
-		H.adjustCloneLoss(-clone_mult * config.organ_regeneration_multiplier)
+		H.adjustToxLoss(-oxy_mult * config.organ_regeneration_multiplier)
 		H.adjust_nutrition(-nutrition_damage_mult)
 
 	if(!can_regenerate_organs())
@@ -72,20 +60,20 @@
 					H.adjust_nutrition(-20)
 				else
 					low_nut_warning("head")
-		if (H.nutrition >= organheal_nut)
-			for(var/bpart in shuffle(H.internal_organs_by_name - BP_BRAIN))
-				var/obj/item/organ/internal/regen_organ = H.internal_organs_by_name[bpart]
-				if(BP_IS_ROBOTIC(regen_organ))
-					continue
-				if(istype(regen_organ))
-					if(regen_organ.damage > 0 && !(regen_organ.status & ORGAN_DEAD))
-						if (H.nutrition >= organ_mult)
-							regen_organ.damage = max(regen_organ.damage - organ_mult, 0)
-							H.adjust_nutrition(-organ_mult)
-							if(prob(10))
-								to_chat(H, replacetext(regen_message,"ORGAN", regen_organ.name))
-						else
-							low_nut_warning(regen_organ.name)
+
+		for(var/bpart in shuffle(H.internal_organs_by_name - BP_BRAIN))
+			var/obj/item/organ/internal/regen_organ = H.internal_organs_by_name[bpart]
+			if(BP_IS_ROBOTIC(regen_organ))
+				continue
+			if(istype(regen_organ))
+				if(regen_organ.damage > 0 && !(regen_organ.status & ORGAN_DEAD))
+					if (H.nutrition >= organ_mult)
+						regen_organ.damage = max(regen_organ.damage - organ_mult, 0)
+						H.adjust_nutrition(-organ_mult)
+						if(prob(5))
+							to_chat(H, replacetext(regen_message,"ORGAN", regen_organ.name))
+					else
+						low_nut_warning(regen_organ.name)
 
 	if(prob(grow_chance))
 		for(var/limb_type in H.species.has_limbs)
@@ -127,15 +115,6 @@
 /obj/aura/regenerating/human/proc/can_regenerate_organs()
 	return TRUE
 
-/obj/aura/regenerating/human/attackby()
-	noregen = max(world.time + 30 SECONDS, noregen)
-
-/obj/aura/regenerating/human/hitby()
-	noregen = max(world.time + 30 SECONDS, noregen)
-
-/obj/aura/regenerating/human/bullet_act()
-	noregen = max(world.time + 30 SECONDS, noregen)
-
 /obj/aura/regenerating/human/unathi
 	nutrition_damage_mult = 2
 	brute_mult = 2
@@ -167,10 +146,6 @@
 
 /obj/aura/regenerating/human/unathi/life_tick()
 	var/mob/living/carbon/human/H = user
-	if (world.time < noregen)
-		innate_heal = FALSE
-	else
-		innate_heal = TRUE
 	if(innate_heal && istype(H) && H.stat != DEAD && H.nutrition < 50)
 		H.apply_damage(5, TOX)
 		H.adjust_nutrition(3)
@@ -199,7 +174,6 @@
 	tox_mult = 0
 	nutrition_damage_mult = 2
 	organ_mult = 2
-	organheal_nut = 10
 	regen_message = "<span class='warning'>You sense your nymphs shifting internally to regenerate your ORGAN..</span>"
 	grow_chance = 5
 	grow_threshold = 100
@@ -216,7 +190,6 @@
 	oxy_mult = 3
 	nutrition_damage_mult = 2
 	organ_mult = 2
-	organheal_nut = 10
 	regen_message = "<span class='warning'>You feel a soothing sensation within your ORGAN.</span>"
 	grow_chance = 20
 	grow_threshold = 50
