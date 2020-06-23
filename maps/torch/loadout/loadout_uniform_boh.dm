@@ -19,7 +19,7 @@
 	cost = 0
 	allowed_branches = NT_BRANCHES
 
-/datum/gear/uniform/fleet
+/datum/gear/uniform/fleet/officer
 	display_name = "officer fleet fatigue"
 	path = /obj/item/clothing/under/solgov/utility/fleet/officer
 	cost = 0
