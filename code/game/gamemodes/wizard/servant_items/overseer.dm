@@ -15,7 +15,7 @@
 	species_restricted = list(SPECIES_HUMAN)
 	flags_inv = HIDEEARS | BLOCKHAIR
 
-/obj/item/clothing/suit/straight_jacket/overseercloak
+/obj/item/clothing/suit/overseercloak
 	name = "grim cloak"
 	desc = "The void of space woven into fabric. It's hard to tell where its edges are."
 	icon_state = "overseercloak"
