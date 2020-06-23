@@ -24,5 +24,5 @@
 	path = /obj/item/clothing/under/solgov/utility/fleet/officer
 	cost = 0
 	allowed_branches = NT_BRANCHES
-	allowed_roles = list(COMMAND_ROLES, OFFICER_ROLES)
+	allowed_roles = COMMANDANDOFFICER_ROLES
 
