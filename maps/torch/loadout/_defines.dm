@@ -52,7 +52,7 @@
 #define COMMAND_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/sea, /datum/job/sea/marine, /datum/job/bridgeofficer, /datum/job/liaison, /datum/job/bodyguard, /datum/job/bailiff, /datum/job/psiadvisor, /datum/job/adjudicator)
 
 //For jobs that have at least O-1 in either NTEF or SMC, but aren't considered Command or Command Support.
-#define MISCOFFICER_ROLES list(/datum/job/scientist, /datum/job/qm, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/senior_doctor, /datum/job/pathfinder)
+#define OFFICER_ROLES list(/datum/job/scientist, /datum/job/qm, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/senior_doctor, /datum/job/pathfinder)
 
 #define UNIFORMED_BRANCHES list(/datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/marine_corps)
 
