@@ -189,4 +189,3 @@ var/last_chew = 0
 	breakouttime  = 300
 	cuff_sound = 'sound/weapons/cablecuff.ogg'
 	elastic = 1
-
