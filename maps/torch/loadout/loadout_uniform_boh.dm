@@ -18,3 +18,11 @@
 	path = /obj/item/clothing/under/solgov/utility/fleet
 	cost = 0
 	allowed_branches = NT_BRANCHES
+
+/datum/gear/uniform/fleet/officer
+	display_name = "fleet officer fatigues"
+	path = /obj/item/clothing/under/solgov/utility/fleet/officer
+	cost = 0
+	allowed_branches = NT_BRANCHES
+	allowed_roles = COMMANDANDOFFICER_ROLES
+
