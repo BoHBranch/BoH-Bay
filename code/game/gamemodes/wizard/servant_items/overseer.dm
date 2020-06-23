@@ -42,4 +42,3 @@
 	name = "stained boots"
 	desc = "These boots are stained with blood so dry that it's turned black..."
 	icon_state = "grimboots"
-	item_flags = ITEM_FLAG_SILENT
