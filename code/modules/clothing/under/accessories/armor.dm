@@ -35,7 +35,6 @@
 	desc = "A collection of black pouches that can be attached to a plate carrier. Carries up to four items."
 	icon_state = "lpouches"
 	slots = 4
-	slowdown = 1
 
 /obj/item/clothing/accessory/storage/pouches/large/blue
 	name = "large blue storage pouches"
