@@ -12,7 +12,7 @@
 	melee_damage_upper = 4
 	melee_damage_flags = DAM_SHARP
 	pass_flags = PASS_FLAG_TABLE
-	faction = "syndicate"
+	faction = "leeches"
 	can_pry = FALSE
 	break_stuff_probability = 5
 	flash_vulnerability = 0
