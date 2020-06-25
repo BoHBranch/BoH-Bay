@@ -42,9 +42,9 @@
 	return "You're either a new hire, or a new trainee aboard the [GLOB.using_map.full_name]. Everyone is your senior, and as such, you'd best listen to them."
 
 /datum/job/squad_lead
-	allowed_branches = list(/datum/mil_branch/marine_corps)
+	allowed_branches = list(/datum/mil_branch/private_security)
 	allowed_ranks = list(
-		/datum/mil_rank/marine_corps/e6
+		/datum/mil_rank/private_security/saare
 	)
 	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
@@ -52,13 +52,13 @@
 
 /datum/job/squad_lead
 	title = "Squad Lead"
-	department = "Infantry"
+	department = "Tactical Division"
 	department_flag = INF
 	head_position = 1
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 
-	supervisors = "the highest ranking Marine and SolGov Command"
+	supervisors = "the Pathfinder"
 	selection_color = "#557e38"
 	minimal_player_age = 12
 	economic_power = 7
@@ -83,11 +83,11 @@
 
 /datum/job/combat_tech
 	title = "Combat Technician"
-	supervisors = "the Squad Leader"
-	department = "Infantry"
+	supervisors = "the Squad Leader and Pathfinder"
+	department = "Tactical Division"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 8
@@ -106,12 +106,10 @@
 						SKILL_CONSTRUCTION = SKILL_MAX,
 						SKILL_ELECTRICAL   = SKILL_MAX)
 
-	allowed_branches = list(/datum/mil_branch/marine_corps)
+	allowed_branches = list(/datum/mil_branch/private_security)
 	allowed_ranks = list(
-		/datum/mil_rank/marine_corps/e3,
-		/datum/mil_rank/marine_corps/e4,
-		/datum/mil_rank/marine_corps/e5
-		)
+		/datum/mil_rank/private_security/saare
+	)
 	access = list(access_maint_tunnels, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_inftech, access_aquila, access_eva)
@@ -130,13 +128,13 @@
 	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if no Squad Leader is present."
 
 /datum/job/grunt
-	title = "Rifleman"
-	department = "Infantry"
+	title = "Operative"
+	department = "Tactical Division"
 	department_flag = INF
 	total_positions = 2
 	spawn_positions = 2
 	minimal_player_age = 6
-	supervisors = "the Combat Technician and Squad Leader"
+	supervisors = "the Squad Leader and Pathfinder"
 	selection_color = "#557e38"
 	skill_points = 18
 	minimum_character_age = list(SPECIES_HUMAN = 18)
@@ -150,18 +148,15 @@
 						SKILL_EVA		  = SKILL_MAX)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
-	allowed_branches = list(/datum/mil_branch/marine_corps)
+	allowed_branches = list(/datum/mil_branch/private_security)
 	allowed_ranks = list(
-		/datum/mil_rank/marine_corps/e1,
-		/datum/mil_rank/marine_corps/e2,
-		/datum/mil_rank/marine_corps/e3,
-		/datum/mil_rank/marine_corps/e4
+		/datum/mil_rank/private_security/saare
 	)
 	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_aquila, access_eva)
 	alt_titles = list(
-		"Grunt",
+		"Rifleman",
 		"Trooper")
 
 /datum/job/grunt/is_position_available()

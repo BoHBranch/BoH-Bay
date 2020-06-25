@@ -142,5 +142,5 @@ datum/announcement/proc/NewsCast(message as text, message_title as text)
 	if(job.department_flag & EXP)
 		return "Exploration"
 	if(job.department_flag & INF)
-		return "Infantry"
+		return "Tactical Division"
 	return "Common"

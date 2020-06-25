@@ -43,6 +43,10 @@
 /area/maintenance/substation/fifthdeck
 	name = "Fifth Deck Substation"
 
+/area/infantry/infprep
+	name = "\improper Tactical Division Preparation Room "
+	req_access = list(access_infantry)
+
 //Fourth Deck (Z-1)
 /area/hallway/primary/fourthdeck/fore
 	name = "\improper Fourth Deck Fore Hallway"
