@@ -44,7 +44,7 @@
 	name = "Fifth Deck Substation"
 
 /area/infantry/infprep
-	name = "\improper Tactical Division Preparation Room "
+	name = "\improper Tactical Division Preparation Room"
 	req_access = list(access_infantry)
 
 //Fourth Deck (Z-1)

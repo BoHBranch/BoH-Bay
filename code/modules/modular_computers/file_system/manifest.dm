@@ -132,7 +132,7 @@
 		"spt" =   filtered_nano_crew_manifest(SSjobs.titles_by_department(SPT)),
 		"sci" =   filtered_nano_crew_manifest(SSjobs.titles_by_department(SCI)),
 		"sec" =   filtered_nano_crew_manifest(SSjobs.titles_by_department(SEC)),
-		"INF" =   filtered_nano_crew_manifest(SSjobs.titles_by_department(INF)),
+		"inf" =   filtered_nano_crew_manifest(SSjobs.titles_by_department(INF)),
 		"eng" =   filtered_nano_crew_manifest(SSjobs.titles_by_department(ENG)),
 		"med" =   filtered_nano_crew_manifest(SSjobs.titles_by_department(MED)),
 		"sup" =   filtered_nano_crew_manifest(SSjobs.titles_by_department(SUP)),

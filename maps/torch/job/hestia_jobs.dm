@@ -128,7 +128,7 @@
 	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if no Squad Leader is present."
 
 /datum/job/grunt
-	title = "Operative"
+	title = "Rifleman"
 	department = "Tactical Division"
 	department_flag = INF
 	total_positions = 2
@@ -156,7 +156,7 @@
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_aquila, access_eva)
 	alt_titles = list(
-		"Rifleman",
+		"Operative",
 		"Trooper")
 
 /datum/job/grunt/is_position_available()
