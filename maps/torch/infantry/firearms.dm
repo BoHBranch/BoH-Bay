@@ -26,7 +26,7 @@
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	ammo_type = /obj/item/ammo_casing/rifle/military/low
 	magazine_type = /obj/item/ammo_magazine/mil_rifle/sec
-	allowed_magazines = list(/obj/item/ammo_magazine/mil_rifle/sec, /obj/item/ammo_magazine/mil_rifle/sec/large)
+	allowed_magazines = list(/obj/item/ammo_magazine/mil_rifle/sec, /obj/item/ammo_magazine/mil_rifle/sec/large, /obj/item/ammo_magazine/mil_rifle)
 	auto_eject = 0
 	starts_loaded = 0
 	one_hand_penalty = 6 //lower power rounds

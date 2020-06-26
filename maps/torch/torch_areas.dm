@@ -678,10 +678,10 @@
 	name = "\improper Command - CL's Backroom"
 	req_access = list(access_liaison)
 
-/area/crew_quarters/heads/office/sgr
+/area/crew_quarters/heads/office/adjudicator
 	icon_state = "heads_sr"
-	name = "\improper Command - SCGR's Office"
-	req_access = list(access_representative)
+	name = "\improper Command - Adjudicator's Office"
+	req_access = list(access_adjudicator)
 
 /area/crew_quarters/heads/office/sea
 	icon_state = "heads_sea"
@@ -1677,30 +1677,6 @@
 	name = "\improper Thunderdome (Observer.)"
 	icon_state = "purple"
 
-/area/security/infantry
-	name = "\improper Infantry Prep"
-	icon_state = "crew_quarters"
-	sound_env = MEDIUM_SOFTFLOOR
-	req_access = list(access_infantry)
-
-/area/security/infantry/gear
-	name = "\improper Technician Prep"
-	icon = 'icons/boh/area.dmi'
-	icon_state = "triage"
-	req_access = list(access_inftech)
-
-/area/security/infantry/com
-	name = "\improper Squad Leader Prep"
-	icon = 'icons/boh/area.dmi'
-	icon_state = "triage"
-	req_access = list(access_infcom)
-
-/area/security/infantry/armory
-	name = "\improper Infantry Hard Storage"
-	icon = 'icons/boh/area.dmi'
-	icon_state = "triage"
-	req_access = list(access_infcom)
-
 /area/defturrets
 	name = "\improper Anti-Boarding Control"
 	icon_state = "security_sub"
@@ -1719,6 +1695,10 @@
 /area/command/gunnery/ob
 	name = "\improper KOSMAG Exterior"
 	icon_state = "kosmag1"
+
+/area/command/gunnery/ob/inside
+	name = "\improper KOSMAG Interior"
+	icon_state = "kosmag2"
 
 /area/command/gunnery/ob/airlock
 	name = "\improper KOSMAG Airlock"
@@ -1763,3 +1743,16 @@
 	name = "\improper Psionic Advisor"
 	icon_state = "heads"
 	req_access = list(access_psiadvisor)
+
+//Lawyer Office
+/area/crew_quarters/heads/office/lawyer_office
+	name = "\improper Lawyer Office"
+	icon_state = "heads"
+	req_access = list(access_lawyer)
+
+/area/crew_quarters/courtroom
+	name = "\improper Courtroom"
+
+/area/crew_quarters/courtroom_private
+	name = "\improper Courtroom Private"
+	req_access = list(access_lawyer)

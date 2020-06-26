@@ -107,9 +107,8 @@
 
 //projectile
 /obj/item/projectile/bullet/pistol/large
-	damage = 85
-	armor_penetration = 15
-	agony = 25
+	damage = 50
+	armor_penetration = 10
 
 //mag
 /obj/item/ammo_magazine/speedloader/large

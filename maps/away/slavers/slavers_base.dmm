@@ -2024,8 +2024,8 @@
 /area/slavers_base/hangar)
 "fi" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	icon_state = "intact";
-	dir = 9
+	dir = 9;
+	icon_state = "intact"
 	},
 /obj/structure/cable{
 	d1 = 2;
@@ -2299,8 +2299,8 @@
 /area/slavers_base/maint)
 "fH" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	icon_state = "intact";
-	dir = 9
+	dir = 9;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/airless/ceiling,
 /area/slavers_base/maint)
@@ -4316,10 +4316,6 @@
 	id_tag = "solar_port_pump"
 	},
 /turf/simulated/floor/airless/ceiling,
-/area/slavers_base/maint)
-"kV" = (
-/obj/machinery/door/airlock/external,
-/turf/space,
 /area/slavers_base/maint)
 "kW" = (
 /obj/effect/overmap/visitable/sector/slavers_base,
@@ -19727,7 +19723,7 @@ gI
 kO
 kH
 gI
-kV
+kO
 ag
 ag
 ag
@@ -19929,7 +19925,7 @@ kL
 kP
 kS
 kU
-kV
+kO
 ag
 ag
 ag

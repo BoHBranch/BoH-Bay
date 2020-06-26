@@ -315,7 +315,7 @@
 
 /obj/item/clothing/suit/armor/pcarrier/tan/tactical
 	name = "tactical plate carrier"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/tactical, /obj/item/clothing/accessory/storage/pouches/large/tan)
+	starting_accessories = list(/obj/item/clothing/accessory/armorplate/tactical, /obj/item/clothing/accessory/storage/pouches/large/tan, /obj/item/clothing/accessory/armguards/tan, /obj/item/clothing/accessory/legguards/tan,)
 
 /obj/item/clothing/suit/armor/pcarrier/tactical
 	name = "black tactical plate carrier"

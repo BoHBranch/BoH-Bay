@@ -191,6 +191,7 @@
 
 /datum/uplink_item/item/visible_weapons/harpoonbomb
 	name = "Explosive Harpoon"
+	desc = "A short throwing spear with a grenade attached to the end. For when you want to take on a tank with just a spear."
 	item_cost = 12
 	path = /obj/item/weapon/material/harpoon/bomb
 

@@ -121,7 +121,7 @@
 	name = "energy sword"
 	desc = "May the force be within you."
 	icon_state = "sword0"
-	active_force = 45
+	active_force = 30
 	active_throwforce = 20
 	force = 3
 	throwforce = 5
