@@ -481,8 +481,7 @@
 	overdose = 15
 	scannable = 1
 	flags = IGNORE_MOB_SIZE
-	var/agony_dose = 5
-	var/agony_amount = 2
+	var/agony_amount = 1
 	value = 6
 
 /datum/reagent/kompoton/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
@@ -497,6 +496,7 @@
 					H.drowsyness++
 				I.heal_damage(removed*7)
 				M.apply_effect(agony_amount, PAIN, 0)
+				M.add_chemical_effect(CE_BRAIN_REGEN, 1)
 				if(prob(5))
 					M.custom_emote(2, "[pick("dry heaves!","twists and spasms erratically!","wails in agony!")]")
 					to_chat(M, "<span class='danger'>You feel like your insides are disintegrating!</span>")
