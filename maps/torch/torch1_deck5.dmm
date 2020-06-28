@@ -13820,10 +13820,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	dir = 4;
-	icon_state = "1-2"
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/wood/ebony,
 /area/infantry)
@@ -14500,6 +14499,14 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"Fb" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/wall/r_wall/hull,
+/area/infantry)
 "Fd" = (
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/equipment)
@@ -15796,14 +15803,6 @@
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
 /turf/simulated/floor/plating,
 /area/guppy_hangar/start)
-"Kq" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/wall/r_wall/hull,
-/area/infantry/ct)
 "Kr" = (
 /obj/structure/closet/secure_closet/scientist_torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -16257,10 +16256,9 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	dir = 4;
-	icon_state = "1-2"
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/wood/ebony,
 /area/infantry)
@@ -18134,10 +18132,9 @@
 /area/shuttle/petrov/maint)
 "Ug" = (
 /obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	dir = 4;
-	icon_state = "1-2"
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/infantry/ct)
@@ -19470,10 +19467,9 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "ZI" = (
 /obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	dir = 4;
-	icon_state = "1-2"
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/wood/ebony,
 /area/infantry)
@@ -31762,7 +31758,7 @@ aa
 aa
 aa
 ZG
-Sj
+Fb
 xW
 yt
 yt
@@ -32578,7 +32574,7 @@ DC
 Eb
 Eb
 Eb
-Kq
+Ug
 hD
 pp
 db
