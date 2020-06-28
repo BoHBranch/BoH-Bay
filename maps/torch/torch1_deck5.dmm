@@ -4206,11 +4206,6 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/vending/sovietsoda,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftstarboard)
 "ht" = (
@@ -13206,6 +13201,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/wood/ebony,
 /area/infantry)
 "Ae" = (
@@ -16392,6 +16392,20 @@
 /obj/item/clothing/mask/gas,
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/equipment)
+"My" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	dir = 4;
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/wood/ebony,
+/area/infantry)
 "Mz" = (
 /obj/structure/stasis_cage,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -17528,11 +17542,6 @@
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/infantry/ct)
@@ -31560,7 +31569,7 @@ xj
 Fw
 Gt
 Gt
-ZI
+My
 Ad
 Hd
 wO
