@@ -481,8 +481,7 @@
 	overdose = 15
 	scannable = 1
 	flags = IGNORE_MOB_SIZE
-	var/agony_dose = 5
-	var/agony_amount = 2
+	var/agony_amount = 1
 	value = 6
 
 /datum/reagent/kompoton/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
