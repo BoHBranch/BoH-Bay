@@ -496,7 +496,6 @@
 					H.drowsyness++
 				I.heal_damage(removed*7)
 				M.apply_effect(agony_amount, PAIN, 0)
-				M.add_chemical_effect(CE_BRAIN_REGEN, 1)
 				if(prob(5))
 					M.custom_emote(2, "[pick("dry heaves!","twists and spasms erratically!","wails in agony!")]")
 					to_chat(M, "<span class='danger'>You feel like your insides are disintegrating!</span>")
