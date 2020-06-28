@@ -52,11 +52,12 @@
 
 /datum/job/squad_lead
 	title = "Squad Lead"
+	supervisors = "The Pathfinder"
 	department = "Infantry"
 	department_flag = INF
 	head_position = 1
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
@@ -79,15 +80,15 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/squad_lead/get_description_blurb()
-	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are a Squad Leader. Your duty is to organize and lead the small infantry squad to support the Pathfinder. You command Marines in your Squad. You make sure that expedition has the firepower it needs. Once on the away mission, your duty is to ensure that the worst doesn't become reality."
+	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are a Squad Leader. Your duty is to organize and lead the small infantry squad to support the and you awnser to the Pathfinder. You command Marines in your Squad. You make sure that expedition has the firepower it needs. Once on the away mission, your duty is to ensure that the worst doesn't become reality."
 
 /datum/job/combat_tech
 	title = "Combat Technician"
-	supervisors = "the Squad Leader"
+	supervisors = "The Pathfinder and Squad Leader"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 8
@@ -136,7 +137,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	minimal_player_age = 6
-	supervisors = "the Combat Technician and Squad Leader"
+	supervisors = "The Pathfinder, Combat Technician and Squad Leader"
 	selection_color = "#557e38"
 	skill_points = 18
 	minimum_character_age = list(SPECIES_HUMAN = 18)

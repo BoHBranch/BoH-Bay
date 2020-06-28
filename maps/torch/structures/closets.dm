@@ -82,7 +82,7 @@
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
 		/obj/item/clothing/glasses/tacgoggles,
-		/obj/item/clothing/suit/armor/pcarrier/light/sol,
+		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/weapon/extinguisher/mini,
 		/obj/item/device/gps,
 		/obj/item/weapon/storage/box/flares
@@ -102,7 +102,7 @@
 		/obj/item/weapon/storage/belt/utility,
 		/obj/item/weapon/weldpack/bigwelder,
 		/obj/item/weapon/storage/box/flares,
-		/obj/item/clothing/suit/armor/pcarrier/light/sol,
+		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		)
 
 //demolocker

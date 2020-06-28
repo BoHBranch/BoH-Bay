@@ -1756,3 +1756,21 @@
 /area/crew_quarters/courtroom_private
 	name = "\improper Courtroom Private"
 	req_access = list(access_lawyer)
+
+//Infantry 
+/area/infantry
+	name = "\improper Infantry"
+	icon_state = "green"
+	req_access = list(access_infantry)
+
+/area/infantry/sl
+	name = "\improper Squad Lead"
+	req_access = list(access_infcom)
+
+/area/infantry/ct
+	name = "\improper Combat Technician"
+	req_access = list(access_inftech)
+
+/area/infantry/armoury
+	name = "\improper Infantry Armoury"
+	req_access = list(access_infcom)
