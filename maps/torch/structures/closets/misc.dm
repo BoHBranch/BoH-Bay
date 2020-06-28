@@ -180,7 +180,6 @@
 
 /obj/structure/closet/secure_closet/guncabinet/PPE/WillContain()
 	return list(
-		/obj/item/weapon/gun/energy/laser/secure = 4,
 		/obj/item/clothing/suit/armor/pcarrier/medium/command = 4,
 		/obj/item/clothing/head/helmet/solgov/command = 4
 	)
