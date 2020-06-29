@@ -70,7 +70,7 @@ Single Use Emergency Pouches
 	color = COLOR_RED
 
 	startswith = list(
-	/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline,
+	/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine,
 	/obj/item/weapon/reagent_containers/pill/pouch_pill/inaprovaline,
 	/obj/item/weapon/reagent_containers/pill/pouch_pill/paracetamol,
 	/obj/item/stack/medical/bruise_pack = 2,
@@ -93,7 +93,7 @@ Single Use Emergency Pouches
 	startswith = list(
 	/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/inaprovaline,
 	/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/deletrathol,
-	/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/adrenaline,
+	/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane,
 	/obj/item/weapon/reagent_containers/pill/pouch_pill/paracetamol,
 	/obj/item/stack/medical/ointment = 2,
 		)
@@ -211,6 +211,14 @@ Single Use Emergency Pouches
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/dexalin
 	name = "emergency dexalin autoinjector"
 	reagents_to_add = list(/datum/reagent/dexalin = 5)
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/bicaridine
+	name = "emergency bicaridine autoinjector"
+	reagents_to_add = list(/datum/reagent/bicaridine = 5)
+
+/obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/kelotane
+	name = "emergency kelotane autoinjector"
+	reagents_to_add = list(/datum/reagent/kelotane = 5)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector/pouch_auto/adrenaline
 	name = "emergency adrenaline autoinjector"
