@@ -151,8 +151,8 @@
 
 /obj/item/weapon/storage/backpack/satchel/syndie_kit/magnum
 	startswith = list(
-		/datum/uplink_item/item/visible_weapons/deagle,
-		/datum/uplink_item/item/ammo/magnum
+		/obj/item/weapon/gun/projectile/pistol/magnum_pistol,
+		/obj/item/ammo_magazine/magnum
 	)
 
 
