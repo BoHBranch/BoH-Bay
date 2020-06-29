@@ -200,6 +200,7 @@
 /obj/item/weapon/gun/projectile/revolver/medium/captain/xo
 	name = "Final Argument"
 	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Executive of the NTSS Dagon' engraved on the grip."
+	ammo_type = /obj/item/projectile/bullet/pistol/xo
 
 /////////
 // ID locked Mk58

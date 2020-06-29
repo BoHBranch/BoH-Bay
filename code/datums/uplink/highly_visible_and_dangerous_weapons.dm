@@ -64,7 +64,7 @@
 /datum/uplink_item/item/visible_weapons/ionpistol
 	name = "Ion Pistol"
 	desc = "Ion rifle in compact form."
-	item_cost = 20
+	item_cost = 16
 	path = /obj/item/weapon/gun/energy/ionrifle/small
 
 /datum/uplink_item/item/visible_weapons/revolver
@@ -75,9 +75,9 @@
 
 /datum/uplink_item/item/visible_weapons/grenade_launcher
 	name = "Grenade Launcher"
-	desc = "A pump action grenade launcher loaded with a random assortment of grenades"
-	item_cost = 60
-	path = /obj/item/weapon/gun/launcher/grenade/loaded
+	desc = "A pump action grenade launcher."
+	item_cost = 40
+	path = /obj/item/weapon/gun/launcher/grenade
 
 //These are for traitors (or other antags, perhaps) to have the option of purchasing some merc gear.
 /datum/uplink_item/item/visible_weapons/submachinegun

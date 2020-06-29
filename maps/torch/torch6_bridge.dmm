@@ -2856,6 +2856,24 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/meeting_room)
+"eM" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/secure_closet/guncabinet/PPE,
+/obj/item/ammo_magazine/smg_top,
+/obj/item/ammo_magazine/smg_top,
+/obj/item/ammo_magazine/smg_top,
+/obj/item/ammo_magazine/smg_top,
+/obj/item/weapon/gun/projectile/shotgun/pump,
+/obj/item/weapon/storage/box/ammo/beanbags/half,
+/obj/item/weapon/storage/box/ammo/shotgunshells,
+/obj/item/weapon/gun/projectile/automatic/sec_smg{
+	starts_loaded = 0
+	},
+/obj/item/weapon/gun/projectile/automatic/sec_smg{
+	starts_loaded = 0
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/bridge/storage)
 "eN" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /turf/simulated/floor/carpet/blue,
@@ -3247,6 +3265,23 @@
 /obj/structure/bed/chair/office/comfy/black,
 /turf/simulated/floor/tiled/dark,
 /area/turret_protected/ai_outer_chamber)
+"fu" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/obj/machinery/power/apc/shuttle/aquila{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable/cyan{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/secure_closet/guncabinet/sidearm/small,
+/turf/simulated/floor/tiled/dark,
+/area/aquila/cockpit)
 "fv" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -3867,25 +3902,6 @@
 	icon_state = "shuttle_chair_preview";
 	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
-/area/aquila/cockpit)
-"gs" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
-	},
-/obj/machinery/power/apc/shuttle/aquila{
-	dir = 4;
-	name = "east bump";
-	pixel_x = 24
-	},
-/obj/structure/cable/cyan{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/guncabinet/sidearm/small,
-/obj/item/weapon/gun/energy/laser/secure,
-/obj/item/weapon/gun/energy/laser/secure,
 /turf/simulated/floor/tiled/dark,
 /area/aquila/cockpit)
 "gt" = (
@@ -19033,11 +19049,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
-"Xz" = (
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/guncabinet/PPE,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/bridge/storage)
 "XD" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -27310,7 +27321,7 @@ qO
 aY
 dE
 Tl
-Xz
+eM
 Fp
 za
 Ie
@@ -38825,7 +38836,7 @@ ec
 SA
 SA
 fL
-gs
+fu
 ec
 jC
 iy

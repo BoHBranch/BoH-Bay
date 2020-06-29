@@ -14,7 +14,7 @@
 /datum/uplink_item/item/ammo/empslug
 	name = "Haywire Slug"
 	desc = "Single 12-gauge shotgun slug fitted with a single-use ion pulse generator"
-	item_cost = 1
+	item_cost = 3
 	path = /obj/item/ammo_casing/shotgun/emp
 
 /datum/uplink_item/item/ammo/holdout_speedloader

@@ -132,6 +132,12 @@
 	arterial_bleed_chance_multiplier = 1.2
 	distance_falloff = 4
 
+/obj/item/projectile/bullet/pistol/xo
+	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
+	damage = 45
+	armor_penetration = 10
+	distance_falloff = 3
+
 /obj/item/projectile/bullet/pistol/strong
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	damage = 50
