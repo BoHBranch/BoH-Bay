@@ -14,7 +14,7 @@
 /datum/uplink_item/item/ammo/empslug
 	name = "Haywire Slug"
 	desc = "Single 12-gauge shotgun slug fitted with a single-use ion pulse generator"
-	item_cost = 1
+	item_cost = 3
 	path = /obj/item/ammo_casing/shotgun/emp
 
 /datum/uplink_item/item/ammo/holdout_speedloader
@@ -100,11 +100,13 @@
 	item_cost = 6
 	path = /obj/item/ammo_magazine/magnum
 
+/*
 /datum/uplink_item/item/ammo/speedloader_magnum
 	name = "Magnum Speedloader"
 	desc = "A speedloader for magnum revolvers. Contains 6 rounds."
 	item_cost = 6
 	path = /obj/item/ammo_magazine/speedloader/magnum
+	*/
 
 /datum/uplink_item/item/ammo/flechette
 	name = "Flechette Rifle Magazine"

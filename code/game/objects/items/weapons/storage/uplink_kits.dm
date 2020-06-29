@@ -149,6 +149,13 @@
 		/obj/item/ammo_magazine/speedloader/magnum
 	)
 
+/obj/item/weapon/storage/backpack/satchel/syndie_kit/magnum
+	startswith = list(
+		/datum/uplink_item/item/visible_weapons/deagle,
+		/datum/uplink_item/item/ammo/magnum
+	)
+
+
 /obj/item/weapon/storage/box/syndie_kit/toxin
 	startswith = list(
 		/obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin,
