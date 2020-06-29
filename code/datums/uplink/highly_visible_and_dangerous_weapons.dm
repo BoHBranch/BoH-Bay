@@ -125,7 +125,7 @@
 
 /datum/uplink_item/item/visible_weapons/deagle
 	name = "Magnum Pistol"
-	desc = "A high-caliber pistol that uses 15mm ammunition."
+	desc = "A high-caliber pistol that uses 15mm ammunition. Contains a spare magazine."
 	item_cost = 52
 	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/magnum
 
