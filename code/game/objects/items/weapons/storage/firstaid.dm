@@ -27,7 +27,7 @@
 	startswith = list(
 		/obj/item/stack/medical/bruise_pack = 2,
 		/obj/item/stack/medical/ointment = 2,
-		/obj/item/weapon/storage/pill_bottle/antidexafen,
+		/obj/item/device/scanner/health,
 		/obj/item/weapon/storage/pill_bottle/paracetamol,
 		/obj/item/stack/medical/splint
 		)
