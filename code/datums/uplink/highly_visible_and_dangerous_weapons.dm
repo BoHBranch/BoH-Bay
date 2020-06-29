@@ -16,14 +16,6 @@
 	item_cost = 10
 	path = /obj/item/weapon/gun/energy/gun/small
 
-/*
-/datum/uplink_item/item/visible_weapons/ancient
-	name = "Replica Pistol"
-	desc = "A cheap replica of an earth handgun. To reload, buy another."
-	item_cost = 16
-	path = /obj/item/weapon/gun/projectile/pistol/throwback
-	*/
-
 /datum/uplink_item/item/visible_weapons/dartgun
 	name = "Dart Gun"
 	desc = "A gas-powered dart gun capable of delivering chemical payloads across short distances. \
@@ -69,14 +61,6 @@
 	item_cost = 16
 	path = /obj/item/weapon/gun/energy/ionrifle/small
 
-/*
-/datum/uplink_item/item/visible_weapons/revolver
-	name = "Magnum Revolver"
-	desc = "A high-caliber revolver. Includes an extra speedloader of ammo."
-	item_cost = 52
-	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/revolver
-		*/
-
 /datum/uplink_item/item/visible_weapons/grenade_launcher
 	name = "Grenade Launcher"
 	desc = "A pump action grenade launcher."
@@ -89,14 +73,6 @@
 	desc = "A quick-firing weapon with three togglable fire modes. Much newer than the older C-20b, and featuring more advanced features."
 	item_cost = 48
 	path = /obj/item/weapon/gun/projectile/automatic/merc_smg
-
-/*
-/datum/uplink_item/item/visible_weapons/submachinegun/hacked
-	name = "Hacked SMG"
-	desc = "The Infantry's C-20b, hacked to fire aboard the vessel."
-	item_cost = 42
-	path = /obj/item/weapon/gun/projectile/automatic/merc_smg/hacked
-	*/
 
 /datum/uplink_item/item/visible_weapons/assaultrifle
 	name = "Assault Rifle"
