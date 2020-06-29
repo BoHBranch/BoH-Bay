@@ -12,12 +12,6 @@
 	d2 = 4
 	},
 /obj/machinery/telecomms/allinone/skrellscoutship,
-/obj/machinery/alarm/server{
-	dir = 4;
-	pixel_x = -22;
-	pixel_y = 0;
-	req_access = list("ACCESS_SKRELLSCOUT")
-	},
 /obj/machinery/power/apc/debug/skrell{
 	dir = 1;
 	pixel_z = 0
@@ -255,6 +249,14 @@
 /obj/effect/paint/silver,
 /turf/simulated/wall/r_wall,
 /area/ship/skrellscoutship/dock)
+"az" = (
+/obj/structure/table/steel,
+/obj/machinery/recharger/wallcharger{
+	pixel_x = 0;
+	pixel_y = 23
+	},
+/turf/simulated/floor/tiled/skrell/red,
+/area/ship/skrellscoutship/command/bridge)
 "aA" = (
 /obj/machinery/alarm/skrell{
 	dir = 4;
@@ -337,6 +339,14 @@
 	},
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock)
+"aK" = (
+/obj/machinery/alarm/skrell{
+	dir = 2;
+	pixel_x = 0;
+	pixel_y = 32
+	},
+/turf/simulated/floor/plating,
+/area/ship/skrellscoutship/maintenance/power)
 "aL" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -985,9 +995,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/maintenance/power)
-"ck" = (
-/turf/simulated/floor/plating,
-/area/ship/skrellscoutship/maintenance/power)
 "cl" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/air/airlock{
@@ -1558,10 +1565,6 @@
 	},
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/crew/hallway/d1)
-"ds" = (
-/obj/structure/table/steel,
-/turf/simulated/floor/tiled/skrell/red,
-/area/ship/skrellscoutship/command/bridge)
 "fr" = (
 /obj/structure/table/woodentable/ebony,
 /obj/machinery/chemical_dispenser/bar_alc/full,
@@ -7857,14 +7860,14 @@ bC
 bE
 aZ
 aW
-ds
+az
 Lg
 bS
 cf
 aW
 dr
 bP
-ck
+aK
 bP
 cy
 bP
