@@ -33,7 +33,6 @@
 	data["idsalarm"] = ntnet_global.intrusion_detection_alarm
 
 	data["config_softwaredownload"] = ntnet_global.setting_softwaredownload
-	data["config_peertopeer"] = ntnet_global.setting_peertopeer
 	data["config_communication"] = ntnet_global.setting_communication
 	data["config_systemcontrol"] = ntnet_global.setting_systemcontrol
 
