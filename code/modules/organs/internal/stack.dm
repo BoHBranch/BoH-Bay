@@ -76,8 +76,8 @@
 	do_backup()
 	to_chat(owner,SPAN_WARNING("You feel sluggish and your limbs are heavy as your new body adjusts to the neural lace - you'll probably be pretty useless until your lace has acclimated."))
 	owner.buff_skill(skilldecay, 30 MINUTES, buff_type)//Debuff applied
-	ralacetime = world.time
-	if(world.time = relacetime + 30 MINUTES)
+	relacetime = world.time
+	if(world.time == relacetime + 30 MINUTES)
 		to_chat(owner, "<span class='notice'>You feel like you have recovered slightly from your ordeal, still wouldn't make a habit of dying.</span>")
 	return 1
 
