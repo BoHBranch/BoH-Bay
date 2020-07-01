@@ -78,7 +78,7 @@
 	owner.buff_skill(skilldecay, 30 MINUTES, buff_type)//Debuff applied
 	relacetime = world.time
 	if(world.time >= relacetime + 30 MINUTES)
-		to_chat(owner, "<span class='notice'>You feel like you have recovered slightly from your ordeal, still wouldn't make a habit of dying.</span>")
+		to_chat(owner, SPAN_NOTICE("You feel like you have recovered slightly from your ordeal, still wouldn't make a habit of dying."))
 	return 1
 
 /obj/item/organ/internal/stack/removed()
