@@ -8,7 +8,7 @@
 	name= "Juggernaut Kit"
 	desc = "This bag holds a fully armored, bomb proof suit. \
 	Limber up, suit up, and strap in. Things are about to get loud and chaotic."
-	item_cost = 32
+	item_cost = 38
 	path= /obj/item/weapon/storage/backpack/dufflebag/syndie/juggernaut
 
 /datum/uplink_item/item/armor/heavy_armor
