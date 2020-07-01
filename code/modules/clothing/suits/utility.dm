@@ -109,6 +109,47 @@
 	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 
+/obj/item/clothing/suit/bomb_suit/juggernaut
+	name = "heaivly armored bombsuit"
+	desc = "A bomb suit, which seems to have a lot of armor plating strapped to it- god that's actually a lot... wow. 'You are up against the wall. I am the fucking wall.'"
+	icon_state = "juggernautsuit"
+	w_class = ITEM_SIZE_HUGE
+	gas_transfer_coefficient = 0.01
+	permeability_coefficient = 0.01
+	armor = list(
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_AP,
+		laser = ARMOR_LASER_MAJOR,
+		energy = ARMOR_ENERGY_RESISTANT,
+		bomb = ARMOR_BOMB_SHIELDED
+		)
+	flags_inv = HIDEJUMPSUIT|HIDETAIL
+	heat_protection = UPPER_TORSO|LOWER_TORSO
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
+	siemens_coefficient = 0
+
+/obj/item/clothing/suit/bomb_suit/juggernaut/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 3
+
+/obj/item/clothing/head/bomb_hood/juggernaut
+	name = "heavily armored bomb hood"
+	icon_state = "juggernautsuit"
+	body_parts_covered = HEAD
+	tint = TINT_MODERATE
+	armor = list(
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_RIFLE,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_RESISTANT,
+		bomb = ARMOR_BOMB_SHIELDED
+		)
+
+/obj/item/clothing/suit/bomb_suit/juggernaut
+	icon_state = "juggernautsuit"
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+
 /*
  * Radiation protection
  */
