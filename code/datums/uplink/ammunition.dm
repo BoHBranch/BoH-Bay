@@ -100,12 +100,6 @@
 	item_cost = 6
 	path = /obj/item/ammo_magazine/magnum
 
-/datum/uplink_item/item/ammo/speedloader_magnum
-	name = "Magnum Speedloader"
-	desc = "A speedloader for magnum revolvers. Contains 6 rounds."
-	item_cost = 6
-	path = /obj/item/ammo_magazine/speedloader/magnum
-
 /datum/uplink_item/item/ammo/flechette
 	name = "Flechette Rifle Magazine"
 	desc = "A  rifle magazine loaded with flechette rounds. Contains 9 rounds."
