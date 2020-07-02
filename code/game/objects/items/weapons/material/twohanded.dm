@@ -73,7 +73,7 @@
 	name = "fire axe"
 	desc = "Truly, the weapon of a madman. Who would think to fight fire with an axe?"
 
-	max_force = 60	//for wielded
+	max_force = 40	//for wielded
 	force_divisor = 0.6
 	unwielded_force_divisor = 0.3
 	sharp = 1
