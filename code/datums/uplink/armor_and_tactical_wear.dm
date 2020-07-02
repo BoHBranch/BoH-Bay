@@ -4,6 +4,13 @@
 /datum/uplink_item/item/armor
 	category = /datum/uplink_category/armor
 
+/datum/uplink_item/item/armor/juggernaut
+	name= "Juggernaut Kit"
+	desc = "This bag holds a fully armored, bomb proof suit. \
+	Limber up, suit up, and strap in. Things are about to get loud and chaotic."
+	item_cost = 38
+	path= /obj/item/weapon/storage/backpack/dufflebag/syndie/juggernaut
+
 /datum/uplink_item/item/armor/heavy_armor
 	name = "Heavy Armor Vest and Helmet"
 	desc = "This satchel holds a combat helmet and fully equipped plate carrier. \

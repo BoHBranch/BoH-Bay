@@ -86,7 +86,7 @@
 	permeability_coefficient = 0.01
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
-		bullet = ARMOR_BALLISTIC_MINOR,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
 		laser = ARMOR_LASER_SMALL,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_SHIELDED
@@ -108,6 +108,38 @@
 	icon_state = "bombsuitsec"
 	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+
+/obj/item/clothing/suit/bomb_suit/juggernaut
+	name = "heavily armored bombsuit"
+	desc = "A heavily modified bombsuit, this one seems to have been made in to a walking tank."
+	icon_state = "juggernautsuit"
+	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	armor = list(
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_AP,
+		laser = ARMOR_LASER_MAJOR,
+		energy = ARMOR_ENERGY_RESISTANT,
+		bomb = ARMOR_BOMB_SHIELDED
+		)
+
+/obj/item/clothing/suit/bomb_suit/juggernaut/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 4
+
+/obj/item/clothing/head/bomb_hood/juggernaut
+	name = "heavily armored bomb hood"
+	desc = "A heavily modified bomb hood, it has a tinted and armored visor."
+	icon_state = "juggernautsuit"
+	tint = TINT_MODERATE
+	flash_protection = FLASH_PROTECTION_MAJOR
+	armor = list(
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_AP,
+		laser = ARMOR_LASER_MAJOR,
+		energy = ARMOR_ENERGY_RESISTANT,
+		bomb = ARMOR_BOMB_SHIELDED
+		)
 
 /*
  * Radiation protection

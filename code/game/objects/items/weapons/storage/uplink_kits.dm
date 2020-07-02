@@ -242,3 +242,13 @@
 		/obj/item/clothing/suit/armor/pcarrier/merc,
 		/obj/item/clothing/head/helmet/merc
 	)
+
+/obj/item/weapon/storage/backpack/dufflebag/syndie/juggernaut
+	startswith = list(
+		/obj/item/clothing/suit/bomb_suit/juggernaut,
+		/obj/item/clothing/head/bomb_hood/juggernaut
+	)
+
+/obj/item/weapon/storage/backpack/dufflebag/syndie/juggernaut/Initialize()
+	. = ..()
+	make_exact_fit()
