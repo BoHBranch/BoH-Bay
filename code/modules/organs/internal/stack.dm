@@ -20,6 +20,11 @@
 	var/list/languages = list()
 	var/datum/mind/backup
 	var/prompting = FALSE // Are we waiting for a user prompt?
+	var/list/skilldecay = list(SKILL_WEAPONS = -3, SKILL_COMBAT = -3, SKILL_HAULING = -2) //Skills that will suffer from relacing (Combat relevant skills as of the implementation of this PR)
+	var/buff_type = /datum/skill_buff/lace
+	var/relacetime
+	/datum/skill_buff/lace
+		limit = 1
 
 /obj/item/organ/internal/stack/examine(var/mob/user)
 	. = ..(user)
@@ -69,7 +74,11 @@
 			overwrite()
 	sleep(-1)
 	do_backup()
-
+	to_chat(owner,SPAN_WARNING("You feel sluggish and your limbs are heavy as your new body adjusts to the neural lace - you'll probably be pretty useless until your lace has acclimated."))
+	owner.buff_skill(skilldecay, 30 MINUTES, buff_type)//Debuff applied
+	relacetime = world.time
+	if(world.time >= relacetime + 30 MINUTES)
+		to_chat(owner, SPAN_NOTICE("You feel like you have recovered slightly from your ordeal, still wouldn't make a habit of dying."))
 	return 1
 
 /obj/item/organ/internal/stack/removed()
