@@ -32,6 +32,9 @@
 	desc = "A large briefcase designed to carry vials of chemicals, with a digital locking system."
 	startswith = list(/obj/item/weapon/reagent_containers/glass/beaker/vial/jerraman = 5, /obj/item/weapon/storage/box/syringes = 1)
 
+/obj/item/weapon/storage/secure/briefcase/jerraman/disrupts_psionics()
+	return FALSE
+
 /obj/item/weapon/reagent_containers/glass/beaker/vial/jerraman
 	reagents_to_add = list(/datum/reagent/jerraman = 4)
 
@@ -51,3 +54,6 @@
 	max_w_class = ITEM_SIZE_NORMAL
 	max_storage_space = DEFAULT_LARGEBOX_STORAGE
 	startswith = list(/obj/item/weapon/material/coin/nullglass = 7, /obj/item/weapon/material/cross/nullglass = 7)
+
+/obj/item/weapon/storage/box/large/psinullers/disrupts_psionics()
+	return FALSE
