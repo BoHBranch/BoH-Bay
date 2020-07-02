@@ -13,6 +13,7 @@
 	vital = 1
 	origin_tech = list(TECH_BIO = 4, TECH_MATERIAL = 4, TECH_MAGNET = 2, TECH_DATA = 3)
 	relative_size = 25
+	max_damage = 100
 
 	var/ownerckey
 	var/invasive
