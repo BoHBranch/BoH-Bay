@@ -254,7 +254,7 @@ obj/item/organ/external/take_general_damage(var/amount, var/silent = FALSE)
 	var/tox_dam = 0
 	for(var/obj/item/organ/internal/I in internal_organs)
 		tox_dam += I.getToxLoss()
-	return pain + lasting_pain + 0.7 * brute_dam + 0.8 * burn_dam + 0.3 * tox_dam + 0.5 * get_genetic_damage()
+	return pain + lasting_pain + 0.6 * brute_dam + 0.7 * burn_dam + 0.3 * tox_dam + 0.5 * get_genetic_damage()
 
 /obj/item/organ/external/proc/remove_pain(var/amount)
 	if(!can_feel_pain())
@@ -282,7 +282,7 @@ obj/item/organ/external/take_general_damage(var/amount, var/silent = FALSE)
 	if(agony_amount && owner && can_feel_pain())
 		agony_amount -= (owner.chem_effects[CE_PAINKILLER]/2)//painkillers does wonders!
 		agony_amount += get_pain()
-		var/drop_prob = 100 * (agony_amount/max_damage)
+		var/drop_prob = 80 * (agony_amount/max_damage)
 		if(agony_amount < 5) return
 
 		if(limb_flags & ORGAN_FLAG_CAN_GRASP)
@@ -295,7 +295,7 @@ obj/item/organ/external/take_general_damage(var/amount, var/silent = FALSE)
 				owner.stance_damage_prone(src)
 				return 1
 
-		else if(agony_amount > 0.50 * max_damage)
+		else if(agony_amount > 0.60 * max_damage)
 			owner.visible_message("<span class='warning'>[owner] reels in pain!</span>")
 			if(agony_amount > max_damage)
 				owner.Weaken(3)
