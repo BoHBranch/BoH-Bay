@@ -110,8 +110,8 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 
 /obj/item/clothing/suit/bomb_suit/juggernaut
-	name = "heavily  armored bombsuit"
-	desc = "A heavily  modified bombsuit, this one seems to have been made in to a walking tank."
+	name = "heavily armored bombsuit"
+	desc = "A heavily modified bombsuit, this one seems to have been made in to a walking tank."
 	icon_state = "juggernautsuit"
 	allowed = list(/obj/item/weapon/gun/energy,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
