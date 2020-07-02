@@ -8,7 +8,7 @@
 	min_bruised_damage = 25
 	min_broken_damage = 45
 	max_damage = 70
-	relative_size = 60
+	relative_size = 50
 
 /obj/item/organ/internal/liver/robotize()
 	. = ..()
