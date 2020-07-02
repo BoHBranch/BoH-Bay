@@ -21,7 +21,6 @@ var/global/datum/ntnet/ntnet_global = new()
 
 	// These only affect wireless. LAN (consoles) are unaffected since it would be possible to create scenario where someone turns off NTNet, and is unable to turn it back on since it refuses connections
 	var/setting_softwaredownload = 1
-	var/setting_peertopeer = 1
 	var/setting_communication = 1
 	var/setting_systemcontrol = 1
 	var/setting_disabled = 0					// Setting to 1 will disable all wireless, independently on relays status.
@@ -112,8 +111,6 @@ var/global/datum/ntnet/ntnet_global = new()
 
 	if(specific_action == NTNET_SOFTWAREDOWNLOAD)
 		return (operating && setting_softwaredownload)
-	if(specific_action == NTNET_PEERTOPEER)
-		return (operating && setting_peertopeer)
 	if(specific_action == NTNET_COMMUNICATION)
 		return (operating && setting_communication)
 	if(specific_action == NTNET_SYSTEMCONTROL)
@@ -208,9 +205,6 @@ var/global/datum/ntnet/ntnet_global = new()
 		if(NTNET_SOFTWAREDOWNLOAD)
 			setting_softwaredownload = !setting_softwaredownload
 			add_log("Configuration Updated. Wireless network firewall now [setting_softwaredownload ? "allows" : "disallows"] connection to software repositories.")
-		if(NTNET_PEERTOPEER)
-			setting_peertopeer = !setting_peertopeer
-			add_log("Configuration Updated. Wireless network firewall now [setting_peertopeer ? "allows" : "disallows"] peer to peer network traffic.")
 		if(NTNET_COMMUNICATION)
 			setting_communication = !setting_communication
 			add_log("Configuration Updated. Wireless network firewall now [setting_communication ? "allows" : "disallows"] instant messaging and similar communication services.")
