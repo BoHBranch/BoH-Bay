@@ -46,6 +46,7 @@
 	requires_power = 0
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
+	req_access = list(access_cent_specops)
 
 /area/map_template/rescue_base/base
 	name = "\improper Barracks"
@@ -53,6 +54,6 @@
 	dynamic_lighting = 0
 
 /area/map_template/rescue_base/start
-	name = "\improper Response Team Base"
+	name = "\improper Response Team Shuttle"
 	icon_state = "shuttlered"
 	base_turf = /turf/unsimulated/floor/rescue_base

@@ -3512,8 +3512,7 @@
 /obj/structure/window/reinforced/crescent{
 	dir = 1
 	},
-/obj/effect/paint/sun,
-/turf/simulated/wall/titanium,
+/turf/simulated/floor/plating,
 /area/map_template/rescue_base/start)
 "gY" = (
 /obj/structure/table/glass,
@@ -3563,8 +3562,7 @@
 /area/map_template/rescue_base/start)
 "he" = (
 /obj/structure/shuttle/engine/propulsion,
-/obj/effect/paint/sun,
-/turf/simulated/wall/titanium,
+/turf/simulated/floor/plating,
 /area/map_template/rescue_base/start)
 "hf" = (
 /obj/structure/table/glass,
