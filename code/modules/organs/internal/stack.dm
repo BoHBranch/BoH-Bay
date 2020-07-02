@@ -62,7 +62,7 @@
 	. = ..()
 	var/obj/gore
 	playsound(src, "shatter", 70, 1)
-	gore = new /obj/item/weapon/material/shard(get_turf(victim), MATERIAL_GLASS)
+	gore = new /obj/item/weapon/material/shard(get_turf(owner), MATERIAL_GLASS)
 	gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
 	owner.visible_message(SPAN_WARNING("[owner]'s neck explodes in a shower of strange blue liquid and metalic fragments!"))
 
