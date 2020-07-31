@@ -9,7 +9,7 @@
 	selection_color = "#68099e"
 	minimal_player_age = 4
 	economic_power = 7
-	minimum_character_age = list(SPECIES_HUMAN = 21)
+	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/exploration/pathfinder
 	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
 	allowed_ranks = list(
