@@ -58,6 +58,16 @@
 	do_backup()
 	robotize()
 
+/obj/item/organ/internal/stack/Destroy()
+	. = ..()
+	var/obj/gore
+	playsound(src, "shatter", 70, 1)
+	gore = new /obj/item/weapon/material/shard(get_turf(owner), MATERIAL_GLASS)
+	gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
+	gore = new /obj/effect/decal/cleanable/blood/gibs(get_turf(owner))
+	gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
+	owner.visible_message(SPAN_WARNING("[owner]'s neck explodes in a shower of strange blue liquid and metallic fragments!"))
+
 /obj/item/organ/internal/stack/proc/backup_inviable()
 	return 	(!istype(backup) || backup == owner.mind || (backup.current && backup.current.stat != DEAD))
 
