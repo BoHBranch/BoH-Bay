@@ -92,7 +92,7 @@
 	economic_power = 4
 	minimal_player_age = 8
 	skill_points = 24
-	minimum_character_age = list(SPECIES_HUMAN = 20)
+	minimum_character_age = list(SPECIES_HUMAN = 22)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
 						SKILL_ELECTRICAL   = SKILL_ADEPT,
