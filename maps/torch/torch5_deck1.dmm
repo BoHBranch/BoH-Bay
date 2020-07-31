@@ -8739,7 +8739,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/wood/yew,
+/turf/space,
 /area/crew_quarters/courtroom)
 "aoX" = (
 /obj/effect/floor_decal/corner/red{
