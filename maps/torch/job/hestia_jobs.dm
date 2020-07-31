@@ -238,9 +238,9 @@
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
 	                    SKILL_FINANCE     = SKILL_BASIC)
 	skill_points = 20
-	minimum_character_age = list(SPECIES_HUMAN = 28)
+	minimum_character_age = list(SPECIES_HUMAN = 27)
 
-	access = list(access_adjudicator, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
+	access = list(access_adjudicator, access_lawyer, access_security, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
 			            access_bridge, access_cargo, access_solgov_crew, access_hangar)
 
 	software_on_spawn = list(/datum/computer_file/program/reports)
@@ -279,7 +279,7 @@
 		"Judicial Assistant"
 	)
 	skill_points = 20
-	access = list(access_adjudicator, access_lawyer, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
+	access = list(access_adjudicator, access_lawyer, access_security, access_sec_doors, access_brig, access_maint_tunnels, access_medical,
 			            access_bridge, access_cargo, access_solgov_crew, access_hangar)
 	defer_roundstart_spawn = TRUE
 
@@ -291,7 +291,7 @@
 	return FALSE
 
 /datum/job/bailiff/get_description_blurb()
-	return "You are the Bailiff. Your task is to assist and protect the Adjudicator in his endeavours. Do not intervene with security matters, the protection of your client is your first concern. Good luck."
+	return "You are the Bailiff. You are the assistant of the Adjudicator. Your job is to assist and protect him in his endeavours. Good luck."
 
 /datum/job/bailiff/post_equip_rank(var/mob/person, var/alt_title)
 	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Bailiff")]"]"
@@ -318,7 +318,7 @@
 	skill_points = 20
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 
-	access = list(access_lawyer, access_sec_doors, access_maint_tunnels, access_solgov_crew)
+	access = list(access_lawyer, access_security, access_sec_doors, access_maint_tunnels, access_solgov_crew)
 
 	software_on_spawn = list(/datum/computer_file/program/reports)
 
