@@ -55,8 +55,8 @@
 	department = "Infantry"
 	department_flag = INF
 	head_position = 1
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
@@ -86,8 +86,8 @@
 	supervisors = "the Squad Leader"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 8

@@ -24,6 +24,9 @@
 	var/buff_type = /datum/skill_buff/lace
 	var/relacetime
 
+/datum/skill_buff/lace
+	limit = 1
+
 /obj/item/organ/internal/stack/examine(var/mob/user)
 	. = ..(user)
 	if(istype(backup)) // Do we have a backup?
