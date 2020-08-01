@@ -1744,15 +1744,19 @@
 	icon_state = "heads"
 	req_access = list(access_psiadvisor)
 
-//Lawyer Office
-/area/crew_quarters/heads/office/lawyer_office
-	name = "\improper Lawyer Office"
-	icon_state = "heads"
-	req_access = list(access_lawyer)
+//Infantry
 
-/area/crew_quarters/courtroom
-	name = "\improper Courtroom"
+/area/infantry
+	name = "\improper Infantry Lounge"
+	icon_state = "green"
+	sound_env = SMALL_ENCLOSED
+	req_access = list(access_infantry)
 
-/area/crew_quarters/courtroom_private
-	name = "\improper Courtroom Private"
-	req_access = list(access_lawyer)
+/area/infantry/infcom
+	name = "\improper Squad Leader's Cabin"
+	req_access = list(access_infcom)
+
+/area/infantry/inftech
+	name = "\improper Infantry Technician's Cabin"
+	req_access = list(access_inftech)
+
