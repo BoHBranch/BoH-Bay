@@ -1760,3 +1760,34 @@
 	name = "\improper Infantry Technician's Cabin"
 	req_access = list(access_inftech)
 
+//Operations storage
+
+/area/operations_storage
+	name = "\improper Operations Storage Hallway"
+	icon_state = "yellow"
+	sound_env = SMALL_ENCLOSED
+
+/area/operations_storage/medical
+	name = "\improper Medical Operations Storage"
+	icon_state = "green"
+	req_access = (access_medical)
+
+/area/operations_storage/security
+	name = "\improper Security Operations Storage"
+	icon_state = "red"
+	req_access = (access_security)
+
+/area/operations_storage/science
+	name = "\improper Research Operations Storage"
+	icon_state = "purple"
+	req_access = (access_research)
+
+/area/operations_storage/engineering
+	name = "\improper Engineering Operations Storage"
+	icon_state = "orange"
+	req_access = (access_engine)
+
+/area/operations_storage/robotics
+	name = "\improper Robotics Operations Storage"
+	icon_state = "pink"
+	req_access = (access_robotics)
