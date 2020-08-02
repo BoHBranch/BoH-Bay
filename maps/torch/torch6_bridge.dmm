@@ -3943,7 +3943,7 @@
 	name = "SolGov Rep's Office Door Control";
 	pixel_x = 27;
 	pixel_y = 5;
-	req_access = list("ACCESS_ADJUDICATOR")
+	req_access = list("access_representative")
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/adjudicator)

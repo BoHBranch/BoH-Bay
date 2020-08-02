@@ -8,13 +8,13 @@
 	)
 
 	species_to_job_blacklist = list(
-		/datum/species/adherent = list(/datum/job/psiadvisor, /datum/job/liaison, /datum/job/bodyguard, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/detective),
+		/datum/species/adherent = list(/datum/job/psiadvisor, /datum/job/liaison, /datum/job/bodyguard, /datum/job/representative, /datum/job/detective),
 		/datum/species/machine = list(/datum/job/psiadvisor),
-		/datum/species/diona   = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden, /datum/job/seccadet, /datum/job/sea, /datum/job/bodyguard, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt)
+		/datum/species/diona   = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden, /datum/job/seccadet, /datum/job/sea, /datum/job/bodyguard, /datum/job/representative, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt)
 	)
 
 	allowed_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos,
-						/datum/job/liaison, /datum/job/bodyguard, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/sea, /datum/job/sea/marine, /datum/job/psiadvisor,
+						/datum/job/liaison, /datum/job/bodyguard, /datum/job/representative, /datum/job/sea, /datum/job/sea/marine, /datum/job/psiadvisor,
 						/datum/job/bridgeofficer, /datum/job/pathfinder, /datum/job/nt_pilot, /datum/job/explorer,
 						/datum/job/senior_engineer, /datum/job/engineer, /datum/job/roboticist, /datum/job/engineer_trainee,
 						/datum/job/officer, /datum/job/warden, /datum/job/detective, /datum/job/seccadet,
@@ -22,7 +22,7 @@
 						/datum/job/senior_doctor, /datum/job/doctor, /datum/job/chemist, /datum/job/medical_trainee,
 						/datum/job/psychiatrist, /datum/job/chaplain,
 						/datum/job/qm, /datum/job/cargo_tech, /datum/job/mining,
-						/datum/job/janitor, /datum/job/chef, /datum/job/bartender, /datum/job/lawyer,
+						/datum/job/janitor, /datum/job/chef, /datum/job/bartender,
 						/datum/job/senior_scientist, /datum/job/scientist, /datum/job/scientist_assistant,
 						/datum/job/ai, /datum/job/cyborg,
 						/datum/job/crew, /datum/job/assistant,
