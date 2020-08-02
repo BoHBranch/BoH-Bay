@@ -3939,7 +3939,7 @@
 	name = "SolGov Rep's Office Door Control";
 	pixel_x = 27;
 	pixel_y = 5;
-	req_access = list("access_representative")
+	req_access = list("ACCESS_TORCH_REPRESENTATIVE")
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/representative)
