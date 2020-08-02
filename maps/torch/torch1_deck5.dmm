@@ -13732,6 +13732,9 @@
 "Co" = (
 /obj/structure/table/steel,
 /obj/item/weapon/folder/red,
+/obj/structure/flora/pottedplant/deskferntrim{
+	pixel_y = 4
+	},
 /turf/simulated/floor/wood/walnut,
 /area/infantry)
 "Cp" = (
@@ -16815,6 +16818,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
+/obj/item/weapon/folder/red,
 /turf/simulated/floor/wood/walnut,
 /area/infantry)
 "Oq" = (
@@ -18158,13 +18162,13 @@
 	pixel_y = -24
 	},
 /obj/structure/table/steel,
-/obj/structure/flora/pottedplant/deskferntrim{
-	pixel_y = 4
-	},
 /obj/machinery/recharger/wallcharger{
 	dir = 4;
 	pixel_x = -23;
 	pixel_y = -3
+	},
+/obj/machinery/photocopier/faxmachine{
+	department = "Infantry Prep"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/infantry)
