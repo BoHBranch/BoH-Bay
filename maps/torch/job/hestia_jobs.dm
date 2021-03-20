@@ -55,8 +55,8 @@
 	department = "Infantry"
 	department_flag = INF
 	head_position = 1
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
@@ -86,8 +86,8 @@
 	supervisors = "the Squad Leader"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 8
@@ -226,8 +226,8 @@
 	title = "Adjudicator"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "Central Command The Galilei Convention and the Ship Regulations"
 	selection_color = "#2f2f7f"
 	economic_power = 15
@@ -253,8 +253,8 @@
 	title = "Bailiff"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Adjudicator"
 	selection_color = "#3d3d7f"
 	economic_power = 12
@@ -305,8 +305,8 @@
 	title = "Lawyer"
 	department = "Service"
 	department_flag = SRV
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Adjudicator, The Galilei Convention and the Ship Regulations"
 	economic_power = 10
 	minimal_player_age = 2
