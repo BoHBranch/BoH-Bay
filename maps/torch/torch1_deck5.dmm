@@ -1728,14 +1728,9 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition/eva)
 "cX" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
-	},
-/turf/simulated/wall/r_wall/hull,
-/area/maintenance/fifthdeck/aftstarboard)
+/obj/structure/table/rack/shelf/steel,
+/turf/simulated/floor/plating,
+/area/shuttle/petrov/isolation)
 "cY" = (
 /obj/structure/cable/green{
 	d2 = 4;
@@ -1895,12 +1890,19 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/exploration_shuttle/airlock)
 "dn" = (
-/obj/structure/cable{
+/obj/structure/cable/cyan{
 	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
+	d2 = 4;
+	icon_state = "2-4"
 	},
-/turf/simulated/wall/r_wall/hull,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "do" = (
 /obj/structure/bed/chair/shuttle/blue{
@@ -2169,14 +2171,6 @@
 /obj/random/maintenance,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
-"dJ" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/wall/r_wall/hull,
-/area/maintenance/fifthdeck/aftstarboard)
 "dK" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
@@ -2237,30 +2231,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
-"dQ" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/turf/simulated/wall/r_wall/hull,
-/area/maintenance/fifthdeck/aftstarboard)
 "dR" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/fifthdeck/aft)
-"dS" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/turf/simulated/wall/r_wall/hull,
-/area/maintenance/fifthdeck/aftstarboard)
 "dT" = (
 /obj/effect/floor_decal/industrial/outline/orange,
 /obj/machinery/atmospherics/unary/tank/carbon_dioxide{
@@ -3372,16 +3345,6 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
-"fO" = (
-/obj/structure/catwalk,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftstarboard)
 "fP" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	controlled = 0;
@@ -3480,27 +3443,6 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/fifthdeck/aftstarboard)
-"gb" = (
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/obj/structure/catwalk,
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "gc" = (
@@ -9161,16 +9103,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/hallwaya)
-"pO" = (
-/obj/structure/lattice,
-/obj/structure/catwalk,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/space)
 "pP" = (
 /obj/structure/table/steel,
 /obj/item/device/scanner/gas{
@@ -9239,9 +9171,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
-"pS" = (
-/turf/space,
-/area/crew_quarters/garden)
 "pT" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -10735,18 +10664,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/isolation)
-"sE" = (
-/obj/structure/window/phoronreinforced{
-	dir = 1
-	},
-/obj/structure/window/phoronreinforced,
-/obj/structure/window/phoronreinforced{
-	dir = 8
-	},
-/obj/machinery/artifact,
-/obj/machinery/door/window/eastright,
-/turf/simulated/floor/tiled/white/monotile,
-/area/shuttle/petrov/isolation)
 "sF" = (
 /obj/machinery/alarm{
 	frequency = 1439;
@@ -12053,18 +11970,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
-"vR" = (
-/obj/machinery/pointdefense,
-/obj/machinery/power/terminal{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/obj/structure/cable/cyan{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/plating,
-/area/space)
 "vS" = (
 /obj/machinery/portable_atmospherics/canister/air/airlock,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -29580,13 +29485,13 @@ aa
 aa
 aa
 aa
-vR
 aa
 aa
 aa
 aa
 aa
-vR
+aa
+aa
 aa
 aa
 aa
@@ -29782,13 +29687,13 @@ aa
 aa
 aa
 aa
-pO
 aa
 aa
 aa
 aa
 aa
-pO
+aa
+aa
 aa
 aa
 aa
@@ -29982,17 +29887,17 @@ aa
 aa
 aa
 aa
-bF
-ZG
-cX
-ZG
-ZG
-ZG
-ZG
-ZG
-cX
-ZG
-bF
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -30184,17 +30089,17 @@ aa
 aa
 aa
 aa
-ZG
-ZG
-dn
-dJ
-dJ
-dJ
-dJ
-dJ
-dQ
-dS
-ZG
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -30386,18 +30291,18 @@ aa
 aa
 aa
 aa
-ZG
-ZG
-ye
-ye
-ye
-ye
-ye
-ye
-ye
-cX
-ZG
-pS
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aa
 aa
@@ -30588,16 +30493,16 @@ aa
 aa
 aa
 aa
-ZG
-ZG
-ye
-ye
-ye
-ye
-ye
-ye
-ye
-cX
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+bF
 ZG
 eQ
 eQ
@@ -30789,17 +30694,17 @@ aa
 aa
 aa
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 ZG
 ZG
-ye
-ye
-ye
-ye
-ye
-ye
-ye
-ye
-fO
 ZG
 mi
 kH
@@ -30991,17 +30896,17 @@ aa
 aa
 aa
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 ZG
 ZG
-ye
-ye
-ye
-ye
-ye
-ye
-ye
-ye
-fO
+ZG
 ZG
 wO
 dt
@@ -31193,17 +31098,17 @@ aa
 aa
 aa
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 ZG
 ZG
-ye
-ye
-ye
-ye
-ye
-ye
-ye
-ye
-gb
+ZG
+dn
 gJ
 gX
 he
@@ -31394,16 +31299,16 @@ aa
 aa
 aa
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 ZG
 ZG
-ZG
-ye
-ye
-ye
-ye
-ye
-ye
-ye
 ye
 gf
 ib
@@ -31596,16 +31501,16 @@ aa
 aa
 aa
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 ZG
 ZG
 ZG
-ye
-ye
-ye
-ye
-ye
-ye
-ye
 ye
 hs
 aW
@@ -31797,17 +31702,17 @@ aa
 aa
 aa
 aa
-aa
+bF
 ZG
 ZG
 ZG
-ye
-ye
-ye
-ye
-ye
-ye
-ye
+ZG
+ZG
+ZG
+ZG
+ZG
+ZG
+ZG
 ye
 vz
 Sd
@@ -32003,13 +31908,13 @@ ZG
 ZG
 ZG
 ZG
-ye
-ye
-ye
-ye
-ye
-ye
-ye
+ZG
+ZG
+ZG
+ZG
+ZG
+ZG
+ZG
 ye
 hD
 pp
@@ -49599,8 +49504,8 @@ Wl
 Wl
 sD
 Wl
-sE
-sE
+sy
+cX
 fF
 fF
 aa
@@ -49803,7 +49708,7 @@ sy
 sy
 sy
 sy
-sy
+cX
 fF
 aa
 aa
