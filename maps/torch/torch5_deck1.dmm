@@ -8625,10 +8625,10 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/airless,
 /area/rnd/anom_storage/living)
 "aoE" = (
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/airless,
 /area/rnd/anom_storage/living)
 "aoF" = (
 /obj/effect/floor_decal/corner/red{
@@ -11091,7 +11091,7 @@
 	dir = 4;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/airless,
 /area/rnd/anom_storage/living)
 "asK" = (
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -11721,7 +11721,7 @@
 /obj/machinery/air_sensor{
 	id_tag = "a1_sensor"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/airless,
 /area/rnd/anom_storage/living)
 "atY" = (
 /obj/effect/wallframe_spawn/reinforced,
@@ -11833,7 +11833,7 @@
 	dir = 4;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/airless,
 /area/rnd/anom_storage/living)
 "auj" = (
 /obj/structure/cable/green{
@@ -11965,7 +11965,7 @@
 	dir = 4;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/airless,
 /area/rnd/anom_storage/living)
 "aux" = (
 /obj/structure/cable/green{
