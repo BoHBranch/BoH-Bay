@@ -1,3 +1,29 @@
+//combat
+/datum/gear/augmentation/nanite_unit
+	display_name = "nanite MCU"
+	path = /obj/item/organ/internal/augment/active/nanounit
+	cost = 15
+	allowed_roles = SECURITY_ROLES
+
+/datum/gear/augmentation/mil
+	allowed_branches = MILITARY_BRANCHES
+
+/datum/gear/augmentation/mil/target_comp
+	display_name = "tactical computer"
+	path = /obj/item/organ/internal/augment/boost/shooting
+	cost = 10
+
+/datum/gear/augmentation/mil/cqc_booster
+	display_name = "close combat reflex booster"
+	path = /obj/item/organ/internal/augment/boost/reflex
+	cost = 15
+
+/datum/gear/augmentation/mil/subdural_armor
+	display_name = "subdermal armor"
+	path = /obj/item/organ/internal/augment/armor
+	cost = 10
+
+//utility
 /datum/gear/augmentation/implanted_surgical
 	display_name = "surgical polytool - left arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/polytool/surgical/left
@@ -25,4 +51,3 @@
 /datum/gear/augmentation/implanted_circuitkit/right
 	display_name = "circuit augment - right arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/simple/circuit/right
-	
