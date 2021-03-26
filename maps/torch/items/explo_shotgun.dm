@@ -27,11 +27,11 @@
 		icon_state = "expshotgun[!!chambered]"
 	else
 		icon_state = "ghettexpshotgun[!!chambered]"
-	
+
 /obj/item/weapon/gun/projectile/shotgun/pump/exploration/Destroy()
 	QDEL_NULL(reinforced)
 	. = ..()
-	
+
 /obj/item/weapon/gun/projectile/shotgun/pump/exploration/free_fire()
 	var/my_z = get_z(src)
 	if(!GLOB.using_map.station_levels.Find(my_z))
@@ -113,7 +113,7 @@
 
 /obj/structure/closet/secure_closet/explo_gun
 	name = "gun locker"
-	desc = "Wall locker holding the boomstick."
+	desc = "Wall locker holding the boomstick and two locked rifles."
 	req_access = list(access_expedition_shuttle_helm)
 	closet_appearance = /decl/closet_appearance/wall/explo_gun
 	density = 0
@@ -124,7 +124,8 @@
 /obj/structure/closet/secure_closet/explo_gun/WillContain()
 	return list(
 		/obj/item/weapon/storage/box/ammo/explo_shells = 3,
-		/obj/item/weapon/gun/projectile/shotgun/pump/exploration
+		/obj/item/weapon/gun/projectile/shotgun/pump/exploration,
+		/obj/item/weapon/gun/energy/laser/exploration = 2
 	)
 
 /decl/closet_appearance/wall/explo_gun
