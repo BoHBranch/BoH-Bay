@@ -5,23 +5,23 @@
 	cost = 15
 	allowed_roles = SECURITY_ROLES
 
-/datum/gear/augmentation/mil
-	allowed_branches = MILITARY_BRANCHES
-
-/datum/gear/augmentation/mil/target_comp
+/datum/gear/augmentation/target_comp
 	display_name = "tactical computer"
 	path = /obj/item/organ/internal/augment/boost/shooting
 	cost = 10
+	allowed_branches = MILITARY_BRANCHES
 
-/datum/gear/augmentation/mil/cqc_booster
+/datum/gear/augmentation/cqc_booster
 	display_name = "close combat reflex booster"
 	path = /obj/item/organ/internal/augment/boost/reflex
 	cost = 15
+	allowed_branches = MILITARY_BRANCHES
 
-/datum/gear/augmentation/mil/subdural_armor
+/datum/gear/augmentation/subdural_armor
 	display_name = "subdermal armor"
 	path = /obj/item/organ/internal/augment/armor
 	cost = 10
+	allowed_branches = MILITARY_BRANCHES
 
 //utility
 /datum/gear/augmentation/implanted_surgical

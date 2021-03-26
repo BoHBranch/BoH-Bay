@@ -230,8 +230,8 @@
 /obj/item/weapon/gun/energy/laser/exploration
 	name = "G40EP carbine"
 	desc = "A Hephaestus Industries G40EP carbine, designed to kill with concentrated energy blasts.\
-	Fitted with safety chips to make sure discharge aboard a 'safe zone' is impossible.\
-	Additionally, it features a higher capacity.\
+	Fitted with safety chips to make sure discharge aboard a 'safe zone' is impossible. \
+	Additionally, it features a higher capacity. \
 	It appears this one is painted in Exploration colors. Neat."
 	icon_state = "laserr"
 	charge_cost = 10

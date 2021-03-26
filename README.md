@@ -2,7 +2,7 @@
 
 [Website]() - [Code](https://github.com/BoHBranch/BoH-Bay) - [Discord]() - [IRC]()
 
-This is a fork of Baystation12's code for BYOND on Space Station 13.
+This is a heavily modified fork of Baystation12's code for BYOND on Space Station 13.
 
 ---
 
@@ -13,9 +13,6 @@ This is a fork of Baystation12's code for BYOND on Space Station 13.
 Don't be a dick.
 Make a logical argument.
 Maintainer has final say on code issues.
-Lore head has final say on lore issues.
-Make sure you read: https://github.com/Baystation12/Baystation12/wiki/Automatic-changelog-generation and https://github.com/Baystation12/Baystation12/wiki/Changelog-rules-and-guidelines for Changelog rules.
-
 
 Maintainers have the right to punish you for breaking these rules.
 
