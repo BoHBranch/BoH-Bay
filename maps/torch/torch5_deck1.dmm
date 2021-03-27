@@ -11628,7 +11628,9 @@
 	dir = 1;
 	frequency = 1438
 	},
-/obj/structure/closet/hydrant,
+/obj/structure/reagent_dispensers/water_cooler{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/anom_storage)
 "atN" = (
