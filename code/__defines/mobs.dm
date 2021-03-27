@@ -314,7 +314,7 @@
 #define SPECIES_PLASMASANS  "Phoron Restructurant Human"
 
 #define SPECIES_AKULA       "Akula"
-#define SPECIES_CUSTOM      "Uncategorized"//Temp. - Carl
+#define SPECIES_CUSTOM      "Genemodder"
 #define SPECIES_VULP        "Vulpkanin"
 #define SPECIES_VASS        "Vasilissan"
 #define SPECIES_TAJ         "Tajaran"
