@@ -42,7 +42,7 @@
 		/obj/item/stack/nanopaste,
 		/obj/item/stack/medical/resin
 		)
-	
+
 	startswith = list(
 		/obj/item/weapon/bonesetter,
 		/obj/item/weapon/cautery,

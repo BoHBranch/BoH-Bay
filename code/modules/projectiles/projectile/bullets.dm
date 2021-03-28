@@ -128,6 +128,7 @@
 
 /obj/item/projectile/bullet/pistol/holdout
 	damage = 40
+	armor_penetration = 5
 	shrapnel_chance_multiplier = 1.2
 	arterial_bleed_chance_multiplier = 1.2
 	distance_falloff = 4

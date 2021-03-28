@@ -50,6 +50,7 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "hatchet"
 	max_force = 15
+	base_parry_chance = 15
 	force_divisor = 0.2 // 12 with hardness 60 (steel)
 	thrown_force_divisor = 0.75 // 15 with weight 20 (steel)
 	w_class = ITEM_SIZE_SMALL
@@ -72,6 +73,7 @@
 	default_material = MATERIAL_TITANIUM
 	attack_cooldown_modifier = 1
 	max_force = 20
+	base_parry_chance = 40
 	force_divisor = 0.20 //20 with hardness 80 (titanium) or 15 with hardness 60 (steel)
 
 /obj/item/weapon/material/hatchet/machete/unbreakable
