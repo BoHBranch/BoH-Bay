@@ -42,7 +42,7 @@
 	song = 'sound/music/boh/TheHillsHaveSolarian.ogg'
 	license = /decl/license/grandfathered//Probably incorrect. We'll see, when someone shouts at me about it. - Carl
 	url = "https://en.wikipedia.org/wiki/Electric_Wizard"
-	volume = 25
+	volume = 15//Does this even work? Probably not.
 
 /music_track/the_void
 	title = "Welcome To The Void"
@@ -51,4 +51,4 @@
 	song = 'sound/music/boh/Bastion_Of_Void.ogg'
 	license = /decl/license/grandfathered//Probably incorrect. We'll see, when someone shouts at me about it. - Carl
 	url = "https://en.wikipedia.org/wiki/The_Kings_of_Frog_Island"
-	volume = 25
+	volume = 15//Does this even work? Probably not.
