@@ -187,8 +187,6 @@
 
 	var/flavor_text = ""
 
-	var/NSFW = 0 //for NSFW descriptions
-
 	var/datum/skillset/skillset = /datum/skillset
 
 
