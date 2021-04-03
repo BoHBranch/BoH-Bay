@@ -4986,16 +4986,6 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/quartermaster/storage)
 "iM" = (
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24
-	},
 /obj/machinery/light/small{
 	icon_state = "bulb1";
 	dir = 4
@@ -5254,20 +5244,15 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/storage)
 "jj" = (
-/obj/machinery/door/firedoor,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/wallframe_spawn/reinforced,
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	id_tag = "inf_sec_storage";
-	name = "Infantry Secure Storage Shutters"
+/obj/structure/catwalk,
+/obj/machinery/alarm{
+	alarm_id = "petrov2";
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
 	},
 /turf/simulated/floor/plating,
-/area/security/infantry/armory)
+/area/maintenance/substation/fifthdeck)
 "jk" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -5927,21 +5912,9 @@
 /turf/unsimulated/mask,
 /area/hallway/primary/fifthdeck/fore)
 "km" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/structure/dispenser/oxygen,
-/obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/armory)
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/substation/fifthdeck)
 "kn" = (
 /obj/structure/table/steel,
 /obj/machinery/recharger,
@@ -6519,20 +6492,15 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/quartermaster/storage)
 "lp" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/catwalk,
-/obj/machinery/alarm{
-	alarm_id = "petrov2";
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
+/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	id_tag = "inf_sec_storage";
+	name = "Infantry Secure Storage Shutters"
 	},
 /turf/simulated/floor/plating,
-/area/maintenance/substation/fifthdeck)
+/area/security/infantry/armory)
 "lq" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/ore_box,
@@ -6660,13 +6628,18 @@
 /area/quartermaster/expedition/atmos)
 "lB" = (
 /obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
 	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/substation/fifthdeck)
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/dispenser/oxygen,
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/security/infantry/armory)
 "lC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -7346,6 +7319,17 @@
 	dir = 8;
 	icon_state = "alarm0";
 	pixel_x = 24
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24;
+	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/fore)
@@ -32808,11 +32792,11 @@ pa
 it
 ph
 iM
-lp
-lB
-lB
 jj
 km
+km
+lp
+lB
 mp
 mG
 oA

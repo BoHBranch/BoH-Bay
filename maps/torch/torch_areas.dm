@@ -1749,14 +1749,14 @@
 	name = "\improper Vacant Cryo Office"
 	icon_state = "heads"
 //	req_access = list(access_lawyer)
-
+/*
 /area/crew_quarters/courtroom
 	name = "\improper Courtroom"
 
 /area/crew_quarters/courtroom_private
 	name = "\improper Courtroom Private"
 //	req_access = list(access_lawyer)
-
+*/
 
 /////////
 // Infantry
@@ -1766,7 +1766,7 @@
 	icon_state = "crew_quarters"
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_infantry)
-
+/*
 /area/security/infantry/gear
 	name = "\improper Technician Prep"
 	icon = 'icons/boh/area.dmi'
@@ -1778,7 +1778,7 @@
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
 	req_access = list(access_infcom)
-
+*/
 /area/security/infantry/armory
 	name = "\improper Infantry Hard Storage"
 	icon = 'icons/boh/area.dmi'
