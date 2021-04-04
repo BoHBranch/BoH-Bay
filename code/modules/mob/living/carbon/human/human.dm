@@ -551,10 +551,6 @@
 			return
 		if("general")
 			msg = sanitize(input(src,"Update the general description of your character. This will be shown regardless of clothing. Do not include OOC information here.","Flavor Text",html_decode(flavor_texts[key])) as message, extra = 0)
-		if("NSFW/OOC")
-			msg = sanitize(input(src,"Update your NSFW/OOC description.", "Flavor Text",html_decode(flavor_texts[key])) as message, extra = 0)
-		if("naked")
-			msg = sanitize(input(src,"Update your naked description. This text is NSFW, and will be shown when naked.", "Flavor Text",html_decode(flavor_texts[key])) as message, extra = 0)
 		else
 			if(!(key in flavor_texts))
 				return
@@ -1337,14 +1333,12 @@
 			covered["eyes"] = TRUE
 		if(C.body_parts_covered & UPPER_TORSO)
 			covered["torso"] = TRUE
-			covered["naked"] = TRUE
 		if(C.body_parts_covered & ARMS)
 			covered["arms"] = TRUE
 		if(C.body_parts_covered & HANDS)
 			covered["hands"] = TRUE
 		if(C.body_parts_covered & LEGS)
 			covered["legs"] = TRUE
-			covered["naked"] = TRUE
 		if(C.body_parts_covered & FEET)
 			covered["feet"] = TRUE
 
@@ -1355,11 +1349,6 @@
 			continue
 		if(covered[T])
 			continue
-		if(T == "naked")
-			flavor_text += "(NSFW): "
-			NSFW = TRUE
-		if(T == "NSFW/OOC")
-			flavor_text += "(OOC): "
 
 		flavor_text += "[flavor_texts[T]]<br>"
 

@@ -678,10 +678,9 @@
 	name = "\improper Command - CL's Backroom"
 	req_access = list(access_liaison)
 
-/area/crew_quarters/heads/office/adjudicator
+/area/crew_quarters/heads/office/vip
 	icon_state = "heads_sr"
-	name = "\improper Command - Adjudicator's Office"
-	req_access = list(access_adjudicator)
+	name = "\improper Command - VIP Quarters"
 
 /area/crew_quarters/heads/office/sea
 	icon_state = "heads_sea"
@@ -1746,13 +1745,62 @@
 
 //Lawyer Office
 /area/crew_quarters/heads/office/lawyer_office
-	name = "\improper Lawyer Office"
+//	name = "\improper Lawyer Office"// Not for the moment, sorry. :(
+	name = "\improper Vacant Cryo Office"
 	icon_state = "heads"
-	req_access = list(access_lawyer)
-
+//	req_access = list(access_lawyer)
+/*
 /area/crew_quarters/courtroom
 	name = "\improper Courtroom"
 
 /area/crew_quarters/courtroom_private
 	name = "\improper Courtroom Private"
-	req_access = list(access_lawyer)
+//	req_access = list(access_lawyer)
+*/
+
+/////////
+// Infantry
+/////////
+/area/security/infantry
+	name = "\improper Infantry Prep"
+	icon_state = "crew_quarters"
+	sound_env = MEDIUM_SOFTFLOOR
+	req_access = list(access_infantry)
+/*
+/area/security/infantry/gear
+	name = "\improper Technician Prep"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "triage"
+	req_access = list(access_inftech)
+
+/area/security/infantry/com
+	name = "\improper Squad Leader Prep"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "triage"
+	req_access = list(access_infcom)
+*/
+/area/security/infantry/armory
+	name = "\improper Infantry Hard Storage"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "triage"
+	req_access = list(access_infcom)
+
+
+
+/////////
+// Anom
+/////////
+/area/rnd/anom_storage
+	name = "\improper Anomaly LTS"
+	icon_state = "misclab"
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
+	req_access = list(list(access_explorer, access_xenoarch))
+
+/area/rnd/anom_storage/gas
+	name = "\improper LTS Gas Runoff"
+	icon_state = "misclab"
+
+/area/rnd/anom_storage/living
+	name = "\improper Biological LTS"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "triage"

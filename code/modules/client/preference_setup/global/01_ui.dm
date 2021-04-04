@@ -73,7 +73,7 @@
 		if(new_ooccolor && can_select_ooc_color(user) && CanUseTopic(user))
 			pref.ooccolor = new_ooccolor
 			return TOPIC_REFRESH
-	
+
 	else if(href_list["select_tooltip_style"])
 		var/tooltip_style_new = input(user, "Choose tooltip style.", "Global Preference", pref.tooltipstyle) as null|anything in all_tooltip_styles
 		if(!tooltip_style_new || !CanUseTopic(user)) return TOPIC_NOACTION

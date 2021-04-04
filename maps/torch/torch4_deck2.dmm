@@ -40,6 +40,25 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod6/station)
+"ad" = (
+/obj/effect/floor_decal/corner/red{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/item/device/radio/intercom{
+	pixel_y = 26
+	},
+/obj/machinery/computer/air_control{
+	dir = 4;
+	frequency = 1441;
+	input_tag = "n2_in";
+	name = "Atmosphere Supply Control";
+	output_tag = "n2_out";
+	sensor_name = "Biological Containment Atmosphere";
+	sensor_tag = "a1_sensor"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/engineering/atmos)
 "ae" = (
 /obj/effect/floor_decal/corner/yellow/half{
 	icon_state = "bordercolorhalf";
@@ -18177,25 +18196,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/vacant/prototype/control)
-"Rl" = (
-/obj/effect/floor_decal/corner/red{
-	icon_state = "corner_white";
-	dir = 9
-	},
-/obj/item/device/radio/intercom{
-	pixel_y = 26
-	},
-/obj/machinery/computer/air_control{
-	dir = 4;
-	frequency = 1441;
-	input_tag = "n2_in";
-	name = "Nitrogen Supply Control";
-	output_tag = "n2_out";
-	sensor_tag = "n2_sensor";
-	sensor_name = "Nitrogen Supply Tank"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/engineering/atmos)
 "Ro" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
 	dir = 8;
@@ -42559,7 +42559,7 @@ sQ
 ur
 Jp
 sZ
-Rl
+ad
 FA
 yA
 zl

@@ -85,7 +85,8 @@
 		/obj/item/clothing/suit/armor/pcarrier/light/sol,
 		/obj/item/weapon/extinguisher/mini,
 		/obj/item/device/gps,
-		/obj/item/weapon/storage/box/flares
+		/obj/item/weapon/storage/box/flares,
+		/obj/item/gunbox/infantry
 		)
 
 /obj/structure/closet/secure_closet/inftech
@@ -103,6 +104,7 @@
 		/obj/item/weapon/weldpack/bigwelder,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/suit/armor/pcarrier/light/sol,
+		/obj/item/gunbox/inftech
 		)
 
 //demolocker
@@ -133,7 +135,8 @@
 		/obj/item/solbanner,
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/device/megaphone,
-		/obj/item/weapon/storage/box/flares
+		/obj/item/weapon/storage/box/flares,
+		/obj/item/gunbox/infcom
 		)
 
 /////////

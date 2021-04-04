@@ -193,6 +193,8 @@
 	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Up-chambered for a .454 calibre round. This one has 'To the Captain of the NTSS Dagon' engraved on the grip."
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
 	caliber = CALIBER_PISTOL_MAGNUM_LARGE
+	has_firing_pin = TRUE
+	firing_pin_type = /obj/item/firing_pin/id_locked/commanding_officer
 
 /////////
 // XO Revolver
@@ -221,3 +223,18 @@
 
 /obj/item/weapon/gun/projectile/pistol/sec/lethal
 	magazine_type = /obj/item/ammo_magazine/pistol
+
+/////////
+// Exp Carbine
+/////////
+/obj/item/weapon/gun/energy/laser/exploration
+	name = "G40EP carbine"
+	desc = "A Hephaestus Industries G40EP carbine, designed to kill with concentrated energy blasts.\
+	Fitted with safety chips to make sure discharge aboard a 'safe zone' is impossible. \
+	Additionally, it features a higher capacity. \
+	It appears this one is painted in Exploration colors. Neat."
+	icon_state = "laserr"
+	charge_cost = 10
+	max_shots = 20
+	req_access = list(access_hop)
+	authorized_modes = list(UNAUTHORIZED)

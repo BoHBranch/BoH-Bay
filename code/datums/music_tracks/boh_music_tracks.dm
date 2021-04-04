@@ -31,3 +31,24 @@
 	song = 'sound/music/boh/lonely_satellite.ogg'
 	license = /decl/license/cc_by_nc_sa_3_0
 	url = "https://freemusicarchive.org/music/Bio_Unit/Export"
+
+/////////
+// Other
+/////////
+/music_track/hills_solarian
+	title = "The Hills have Solarian"
+	album = "Dopethrone - Come My Fanatics"
+	artist = "Electric Wizard"
+	song = 'sound/music/boh/TheHillsHaveSolarian.ogg'
+	license = /decl/license/grandfathered//Probably incorrect. We'll see, when someone shouts at me about it. - Carl
+	url = "https://en.wikipedia.org/wiki/Electric_Wizard"
+	volume = 15//Does this even work? Probably not.
+
+/music_track/the_void
+	title = "Welcome To The Void"
+	album = "II"
+	artist = "The Kings Of Frog Island"
+	song = 'sound/music/boh/Bastion_Of_Void.ogg'
+	license = /decl/license/grandfathered//Probably incorrect. We'll see, when someone shouts at me about it. - Carl
+	url = "https://en.wikipedia.org/wiki/The_Kings_of_Frog_Island"
+	volume = 15//Does this even work? Probably not.

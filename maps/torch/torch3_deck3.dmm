@@ -4209,7 +4209,7 @@
 "in" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/civilian{
-	name = "Lawyer Office"
+	name = "Vacant Cryo Office"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -5266,6 +5266,13 @@
 /obj/item/weapon/stool/wood,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
+"ki" = (
+/obj/structure/table/glass,
+/obj/machinery/photocopier/faxmachine{
+	department = "Vacant Cryo Office"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/crew_quarters/heads/office/lawyer_office)
 "kj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -6351,6 +6358,13 @@
 /area/crew_quarters/bar)
 "mp" = (
 /obj/machinery/papershredder,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/crew_quarters/heads/office/lawyer_office)
+"mq" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/lawyer_office)
 "mr" = (
@@ -8607,13 +8621,6 @@
 "qA" = (
 /turf/simulated/floor/tiled,
 /area/ai_monitored/storage/eva)
-"qB" = (
-/obj/structure/table/glass,
-/obj/machinery/photocopier/faxmachine{
-	department = "Lawyer Office"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
 "qC" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/device/radio/off,
@@ -8623,14 +8630,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/monotile,
 /area/ai_monitored/storage/eva)
-"qD" = (
-/obj/structure/closet/secure_closet/lawyer,
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
 "qE" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "AI Upload Access"
@@ -8905,10 +8904,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
-"rd" = (
-/obj/structure/closet/secure_closet/lawyer,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
 "re" = (
 /obj/effect/floor_decal/corner/green/half,
 /turf/simulated/floor/tiled,
@@ -10166,9 +10161,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/starboard)
-"ta" = (
-/turf/simulated/wall/walnut,
-/area/crew_quarters_boh/cabin_main/c3)
 "tb" = (
 /obj/structure/bed/chair/comfy/beige{
 	dir = 4
@@ -10516,9 +10508,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
-"tM" = (
-/turf/simulated/wall/walnut,
-/area/crew_quarters_boh/cabin_main/c2)
 "tN" = (
 /obj/structure/bed/chair/pew/left/mahogany,
 /obj/machinery/light{
@@ -37400,8 +37389,8 @@ iY
 hn
 qw
 gy
-qD
-rd
+mq
+nH
 gy
 LW
 BV
@@ -38206,7 +38195,7 @@ id
 kO
 mp
 qu
-qB
+ki
 mF
 qV
 ro
@@ -43459,11 +43448,11 @@ AN
 Ez
 Ny
 Hn
-tM
+tB
 tQ
 yh
 vi
-tM
+tB
 HD
 Ts
 HE
@@ -43661,11 +43650,11 @@ TV
 AN
 RT
 CE
-tM
+tB
 tY
 tY
 tY
-tM
+tB
 sS
 tz
 tz
@@ -43863,11 +43852,11 @@ nu
 YZ
 Ts
 CE
-tM
+tB
 tY
 tY
 tY
-tM
+tB
 vk
 or
 or
@@ -44065,11 +44054,11 @@ Cv
 AN
 qi
 So
-tM
+tB
 ub
 tY
 ud
-tM
+tB
 Ts
 ig
 qj
@@ -44267,11 +44256,11 @@ Cw
 AN
 Ov
 JV
-tM
+tB
 uy
 tY
 uc
-tM
+tB
 ko
 ny
 Hf
@@ -44469,11 +44458,11 @@ Cx
 AN
 TN
 JV
-tM
+tB
 uu
 vp
 uG
-tM
+tB
 ug
 Hf
 Hf
@@ -44671,11 +44660,11 @@ Cy
 AN
 tZ
 EB
-tM
+tB
 uZ
 vq
 wr
-tM
+tB
 xm
 Hf
 Hf
@@ -45680,12 +45669,12 @@ yx
 vr
 vt
 wa
-ta
+sY
 tb
 va
 yl
 ur
-ta
+sY
 Ba
 jZ
 jZ
@@ -45882,12 +45871,12 @@ yy
 vr
 vv
 xe
-ta
+sY
 uw
 ym
 xv
 tX
-ta
+sY
 Ba
 jZ
 jZ
@@ -46084,12 +46073,12 @@ yn
 vr
 vw
 wa
-ta
+sY
 vl
 tk
 xA
 vo
-ta
+sY
 Ba
 jZ
 jZ
@@ -46286,12 +46275,12 @@ RG
 RG
 RG
 wc
-ta
+sY
 tk
 tk
 xw
 xo
-ta
+sY
 Ba
 jZ
 jZ
@@ -46488,12 +46477,12 @@ BO
 CI
 RG
 Lr
-ta
+sY
 yj
 yi
 uh
-ta
-ta
+sY
+sY
 Ba
 jZ
 jZ
@@ -46690,11 +46679,11 @@ BP
 CJ
 RG
 CU
-ta
+sY
 uJ
-ta
-ta
-ta
+sY
+sY
+sY
 IJ
 Tk
 jZ
@@ -46892,9 +46881,9 @@ ZW
 BF
 RG
 CU
-ta
+sY
 tO
-ta
+sY
 Gq
 GQ
 EE

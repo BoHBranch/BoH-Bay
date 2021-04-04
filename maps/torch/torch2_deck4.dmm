@@ -65,6 +65,13 @@
 /obj/random/torchcloset,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/forestarboard)
+"ap" = (
+/obj/effect/floor_decal/corner/mauve/mono,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/secure_closet/pathfinder,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/tall,
+/turf/simulated/floor/tiled/monotile,
+/area/command/pathfinder)
 "aq" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/fourthdeck/starboard)
@@ -2808,12 +2815,6 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
-"gc" = (
-/obj/effect/floor_decal/corner/mauve/mono,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/pathfinder,
-/turf/simulated/floor/tiled/monotile,
-/area/command/pathfinder)
 "gd" = (
 /obj/effect/floor_decal/corner/mauve/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -32402,7 +32403,7 @@ UE
 QX
 id
 fl
-gc
+ap
 hd
 hV
 jf
