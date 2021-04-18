@@ -37,3 +37,4 @@ changes:
   - rscdel: "Removes Travis CI due to its new incompatible payment model."
   - rscadd: "Ports Github Actions CI from Nebula."
   - rscadd: "Ports Dreamchecker annotations on PRs from... Yogstation? Maybe?"
+  - tweak: "Properly configures the SpacemanDMM linter."
