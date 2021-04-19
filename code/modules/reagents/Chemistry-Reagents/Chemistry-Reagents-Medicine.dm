@@ -240,12 +240,14 @@
 /datum/reagent/nanitefluid/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	M.add_chemical_effect(CE_CRYO, 1)
 	if(M.bodytemperature < 170)
-		M.heal_organ_damage(30 * removed, 30 * removed, affect_robo = 1)
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
+			H.heal_organ_damage(30 * removed, 30 * removed, affect_robo = TRUE)
 			for(var/obj/item/organ/internal/I in H.internal_organs)
 				if(BP_IS_ROBOTIC(I))
 					I.heal_damage(20*removed)
+		else
+			M.heal_organ_damage(30 * removed, 30 * removed)
 
 /* Painkillers */
 

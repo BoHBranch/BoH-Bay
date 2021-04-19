@@ -390,8 +390,9 @@
 		return 0
 	if(prob(50))
 		playsound(get_turf(src), 'sound/machines/defib_zap.ogg', 100, 1, -1)
-		user.electrocute_act(burn_damage_amt*2, src, def_zone = BP_L_HAND)
-		user.electrocute_act(burn_damage_amt*2, src, def_zone = BP_R_HAND)
+		var/mob/living/carbon/cuser = user
+		cuser.electrocute_act(burn_damage_amt*2, src, def_zone = BP_L_HAND)
+		cuser.electrocute_act(burn_damage_amt*2, src, def_zone = BP_R_HAND)
 		user.visible_message("<span class='warning'><i>\The [user] shocks themselves with \the [src]!</i></span>", "<span class='warning'>You forget to move your hands away and shock yourself with \the [src]!</span>")
 		return 0
 	return 1
