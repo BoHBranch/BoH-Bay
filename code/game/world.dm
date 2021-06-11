@@ -94,6 +94,10 @@
 	world.TgsNew()
 
 	callHook("startup")
+
+	TgsNew(new /datum/tgs_event_handler/impl, TGS_SECURITY_TRUSTED)
+	TgsInitializationComplete();
+
 	//Emergency Fix
 	load_mods()
 	//end-emergency fix
@@ -112,6 +116,8 @@ var/world_topic_spam_protect_ip = "0.0.0.0"
 var/world_topic_spam_protect_time = world.timeofday
 
 /world/Topic(T, addr, master, key)
+	TGS_TOPIC
+
 	var/list/response = list()
 	if (!SSfail2topic)
 		response["statuscode"] = 500
@@ -130,11 +136,11 @@ var/world_topic_spam_protect_time = world.timeofday
 	game_log("TOPIC", "\"[T]\", from:[addr], master:[master], key:[key][log_end]")
 
 	// TGS topic hook. Returns if successful, expects old-style serialization.
-	var/tgs_topic_return = TgsTopic(T)
+	//var/tgs_topic_return = TgsTopic(T)
 
-	if (tgs_topic_return)
-		log_debug("API - TGS3 Request.")
-		return tgs_topic_return
+	//if (tgs_topic_return)
+	//	log_debug("API - TGS3 Request.")
+	//	return tgs_topic_return
 
 	if (T == "ping")
 		var/x = 1
@@ -491,6 +497,7 @@ var/world_topic_spam_protect_time = world.timeofday
 	else if (!world.TgsAvailable() && hard_reset)
 		hard_reset = FALSE
 
+	TgsReboot()
 
 	Master.Shutdown()
 
