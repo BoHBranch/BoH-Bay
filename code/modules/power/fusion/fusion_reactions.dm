@@ -216,3 +216,58 @@ proc/cache_reactions()
 	energy_production = 8.00
 	products = list("nickel" = 1, "gamma ray" = 1)
 	priority = 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// the cursed place
+///decl/fusion_reaction/suppermatter_boss_fight
+
+// for the bravest
+/decl/fusion_reaction/cooking
+	energy_production = 0
+	energy_consumption = 10
+	instability = 100
+	is_special = TRUE
+
+/decl/fusion_reaction/cooking/steak
+	l_reactants = list("raw steak" = 1, "metaphoron" = 1)
+	minimum_reaction_temperature = 100000
+	products = list("fusion steak" = 1)
+
+/decl/fusion_reaction/cooking/steak/handle_reaction_special(obj/effect/fusion_em_field/holder)
+	// TBD
