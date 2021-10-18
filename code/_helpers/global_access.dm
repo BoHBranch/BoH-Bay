@@ -1194,6 +1194,8 @@
 			global.all_money_accounts=newval;
 		if("all_objectives")
 			global.all_objectives=newval;
+		if("all_reactions")
+			global.all_reactions=newval;
 		if("all_robolimbs")
 			global.all_robolimbs=newval;
 		if("all_species")
@@ -1404,8 +1406,6 @@
 			global.forced_ambiance_list=newval;
 		if("fruit_icon_cache")
 			global.fruit_icon_cache=newval;
-		if("fusion_reactions")
-			global.fusion_reactions=newval;
 		if("game_id")
 			global.game_id=newval;
 		if("game_version")
