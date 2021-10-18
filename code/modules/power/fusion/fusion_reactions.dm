@@ -1,25 +1,19 @@
-var/list/fusion_reactions
 var/list/all_reactions
 
 /decl/fusion_reaction
-	var/p_react = "" // Primary reactant.
-	var/s_react = "" // Secondary reactant.
+	var/list/l_reactants = list() // New list of reactants necessary
+	var/list/products = list()
 	var/minimum_energy_level = 1
+	var/maximum_energy_level = 0 // Set to 0 to disable
+	var/minimum_reaction_temperature = 100
+	var/maximum_reaction_temperature = 0 // Set to 0 to disable
 	var/energy_consumption = 0
 	var/energy_production = 0
 	var/radiation = 0
 	var/instability = 0
-	var/list/products = list()
-	var/minimum_reaction_temperature = 100
 	var/priority = 100
-
-	var/list/l_reactants = list() // New list of reactants necessary. Due to BYOND, it will be assumed it consumes 1 unit of reactant per entry
-	var/decay = FALSE // For nuclear/particle decay reactions
-	var/maximum_reaction_temperature
-	var/maximum_energy_level
 	var/reaction_chance = 0
-
-	var/visited = FALSE // Path traversal helper
+	var/is_special = FALSE // Should we call a special handler for this reaction?
 
 /decl/fusion_reaction/proc/handle_reaction_special(var/obj/effect/fusion_em_field/holder)
 	return 0
@@ -50,59 +44,52 @@ proc/cache_reactions()
 // Basic power production reactions.
 // This is not necessarily realistic, but it makes a basic failure more spectacular.
 /decl/fusion_reaction/hydrogen_hydrogen
-	p_react = GAS_HYDROGEN
-	s_react = GAS_HYDROGEN
+	l_reactants = list("hydrogen" = 2)
 	energy_consumption = 1
 	energy_production = 2
-	products = list(GAS_HELIUM = 1)
+	products = list("helium" = 1)
 	priority = 10
 
 /decl/fusion_reaction/deuterium_deuterium
-	p_react = GAS_DEUTERIUM
-	s_react = GAS_DEUTERIUM
+	l_reactants = list("deuterium" = 2)
 	energy_consumption = 1
 	energy_production = 2
 	priority = 0
 
 // Advanced production reactions (todo)
 /decl/fusion_reaction/deuterium_helium
-	p_react = GAS_DEUTERIUM
-	s_react = GAS_HELIUM
+	l_reactants = list("deuterium" = 1, "helium" = 1)
 	energy_consumption = 1
 	energy_production = 5
 	radiation = 2
 
 /decl/fusion_reaction/deuterium_tritium
-	p_react = GAS_DEUTERIUM
-	s_react = GAS_TRITIUM
+	l_reactants = list("deuterium" = 1, "tritium" = 1)
 	energy_consumption = 1
 	energy_production = 1
-	products = list(GAS_HELIUM = 1)
+	products = list("helium" = 1)
 	instability = 0.5
 	radiation = 3
 
 /decl/fusion_reaction/deuterium_lithium
-	p_react = GAS_DEUTERIUM
-	s_react = "lithium"
+	l_reactants = list("deuterium" = 1, "lithium" = 1)
 	energy_consumption = 2
 	energy_production = 0
 	radiation = 3
-	products = list(GAS_TRITIUM= 1)
+	products = list("tritium" = 1)
 	instability = 1
 
 // Unideal/material production reactions
 /decl/fusion_reaction/oxygen_oxygen
-	p_react = GAS_OXYGEN
-	s_react = GAS_OXYGEN
+	l_reactants = list("oxygen" = 2)
 	energy_consumption = 10
 	energy_production = 0
 	instability = 5
 	radiation = 5
-	products = list("silicon"= 1)
+	products = list("silicon" = 1)
 
 /decl/fusion_reaction/iron_iron
-	p_react = "iron"
-	s_react = "iron"
+	l_reactants = list("iron" = 2)
 	products = list("silver" = 10, "gold" = 10, "platinum" = 10) // Not realistic but w/e
 	energy_consumption = 10
 	energy_production = 0
@@ -110,8 +97,7 @@ proc/cache_reactions()
 	minimum_reaction_temperature = 10000
 
 /decl/fusion_reaction/phoron_hydrogen
-	p_react = GAS_HYDROGEN
-	s_react = GAS_PHORON
+	l_reactants = list("hydrogen" = 1, "phoron" = 1)
 	energy_consumption = 10
 	energy_production = 0
 	instability = 5
@@ -120,12 +106,12 @@ proc/cache_reactions()
 
 // VERY UNIDEAL REACTIONS.
 /decl/fusion_reaction/phoron_supermatter
-	p_react = "supermatter"
-	s_react = GAS_PHORON
+	l_reactants = list("supermatter" = 1, "phoron" = 1)
 	energy_consumption = 0
 	energy_production = 5
 	radiation = 40
 	instability = 20
+	is_special = TRUE
 
 /decl/fusion_reaction/phoron_supermatter/handle_reaction_special(var/obj/effect/fusion_em_field/holder)
 
@@ -161,8 +147,7 @@ proc/cache_reactions()
 
 // High end reactions.
 /decl/fusion_reaction/boron_hydrogen
-	p_react = "boron"
-	s_react = GAS_HYDROGEN
+	l_reactants = list("boron" = 1, "hydrogen" = 1)
 	minimum_energy_level = 15000
 	energy_consumption = 3
 	energy_production = 12
