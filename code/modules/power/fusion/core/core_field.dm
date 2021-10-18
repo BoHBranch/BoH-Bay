@@ -146,7 +146,7 @@
 	check_instability()
 	Radiate()
 	if(radiation)
-		SSradiation.radiate(src, round(radiation*0.001))
+		SSradiation.radiate(src, round(radiation))
 	return 1
 
 /obj/effect/fusion_em_field/proc/check_instability()
@@ -356,42 +356,42 @@
 	if (reactants_copy.len)
 		var/sum = 0
 
-		for(var/reactant in reactants_copy)
+		for (var/reactant in reactants_copy)
 			sum += reactants_copy[reactant] // Sum all reactants conveniently in the loop for later use
-			for(var/decl/fusion_reaction/reaction in all_reactions)
+			for (var/decl/fusion_reaction/reaction in all_reactions)
 				/*
 				 * Begin looping the reactions and checking their requirements.
 				 * The order of this might change for optimisation purposes.continue
 				 * Currently, check for temperature, energy and then for present reactants.
 				 */
-				if(reaction.minimum_reaction_temperature > plasma_temperature)
+				if (reaction.minimum_reaction_temperature > plasma_temperature)
 					continue
-				if(reaction.maximum_reaction_temperature != 0 && reaction.maximum_reaction_temperature < plasma_temperature)
+				if (reaction.maximum_reaction_temperature != 0 && reaction.maximum_reaction_temperature < plasma_temperature)
 					continue
-				if(reaction.minimum_energy_level > energy)
+				if (reaction.minimum_energy_level > energy)
 					continue
-				if(reaction.maximum_reaction_temperature != 0 && reaction.maximum_energy_level < energy)
+				if (reaction.maximum_reaction_temperature != 0 && reaction.maximum_energy_level < energy)
 					continue
 				var/i = list_find(reaction.l_reactants, reactant)
-				if(i == 0) // Since Find returns 0 if not found, we break if we cannot find the reactant in the list of reactants
+				if (i == 0) // Since Find returns 0 if not found, we break if we cannot find the reactant in the list of reactants
 					continue
 				var/possible = TRUE // Per default we assume the reaction to be possible
-				for(var/reaction_reactant in reaction.l_reactants) // Check if all needed reactants are present
+				for (var/reaction_reactant in reaction.l_reactants) // Check if all needed reactants are present
 					var/j = list_find(reactants_copy, reaction_reactant)
-					if(j == 0)
+					if (j == 0)
 						possible = FALSE
 						break // Goto next reaction
-				if(!possible)
+				if (!possible)
 					break // Goto next reaction
 				reaction.reaction_chance += reactants_copy[reactant] // We calculate the reaction chance later, for now we want the sum of present reaction reactants
-				if(list_find(possible_reactions, reaction) == 0)
+				if (list_find(possible_reactions, reaction) == 0)
 					possible_reactions.Add(reaction) // Add the found reaction
 
-		if(possible_reactions.len == 0)
+		if (possible_reactions.len == 0)
 			return
 
-		for(var/decl/fusion_reaction/reaction in possible_reactions)
-			if(reaction.reaction_chance != 0) // If this is somehow 0, we can skip this calculation because it's not going to be executed anyway. This is a div-by-zero prevention.
+		for (var/decl/fusion_reaction/reaction in possible_reactions)
+			if (reaction.reaction_chance != 0) // If this is somehow 0, we can skip this calculation because it's not going to be executed anyway. This is a div-by-zero prevention.
 				/*
 				 * Get the percentage this reaction will take place based on: present reaction reactants / sum of all present reactants
 				 * This currently does not take into account other reactions we will iterate and may result in calculation misssteps.
@@ -400,18 +400,20 @@
 
 				// TODO: Fit this onto a beta distribution
 
-		sortTim(possible_reactions, /proc/cmp_fusion_reaction_des) // proc compares A.priority and B.priority
+		sortTim(possible_reactions, /proc/cmp_fusion_reaction_c_des) // proc compares A.priority and B.priority
 
-		for(var/decl/fusion_reaction/reaction in possible_reactions)
+		for (var/decl/fusion_reaction/reaction in possible_reactions)
 			// We begin looking at each reaction we cached earlier
 			var/list/reaction_reactant_pool = reactants_copy & reaction.l_reactants // Cache the reactants we need based on the list_reactants of the reaction
 			var/list/hackystuff = new/list // This might not be necessary anymore, prevents wrong caluclation of the max_possible
-			for(var/reactant in reaction_reactant_pool)
+			for (var/reactant in reaction_reactant_pool)
 				hackystuff.Add(reaction_reactant_pool[reactant])
 			var/max_possible = min(hackystuff) // Calculate the maximum possible amount of reaction that can take place based on lowest reactant amount
 			var/reaction_amount = max_possible * reaction.reaction_chance // The chance is used as a stand-in for random particle movement
 
-			for(var/reactant in reaction_reactant_pool)
+			for (var/reactant in reaction_reactant_pool)
+				if (reaction_reactant_pool[reactant] < reaction_amount)
+					continue
 				// Remove reactants from the pool
 				reactants_copy[reactant] -= reaction_amount
 
@@ -421,11 +423,11 @@
 			radiation += reaction_amount * reaction.radiation
 			tick_instability += reaction_amount * reaction.instability
 
-			for(var/reactant in reaction.products)
+			for (var/reactant in reaction.products)
 				// Add results back. It's a multiplication because products can be larger than 1 and there may also be multiple results
-				reactants_copy[reactant] = (reaction.products[reactant] * reaction_amount)
+				reactants_copy[reactant] += (reaction.products[reactant] * reaction_amount)
 
-			if(reaction.is_special)
+			if (reaction.is_special)
 				// Handle anything special this reaction does, like explode
 				reaction.handle_reaction_special(src)
 
