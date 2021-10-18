@@ -1,4 +1,5 @@
 var/list/fusion_reactions
+var/list/all_reactions
 
 /decl/fusion_reaction
 	var/p_react = "" // Primary reactant.
@@ -12,25 +13,27 @@ var/list/fusion_reactions
 	var/minimum_reaction_temperature = 100
 	var/priority = 100
 
+	var/list/l_reactants = list() // New list of reactants necessary. Due to BYOND, it will be assumed it consumes 1 unit of reactant per entry
+	var/decay = FALSE // For nuclear/particle decay reactions
+	var/maximum_reaction_temperature
+	var/maximum_energy_level
+	var/reaction_chance = 0
+
+	var/visited = FALSE // Path traversal helper
+
 /decl/fusion_reaction/proc/handle_reaction_special(var/obj/effect/fusion_em_field/holder)
 	return 0
 
-proc/get_fusion_reaction(var/p_react, var/s_react, var/m_energy)
-	if(!fusion_reactions)
-		fusion_reactions = list()
-		for(var/rtype in typesof(/decl/fusion_reaction) - /decl/fusion_reaction)
-			var/decl/fusion_reaction/cur_reaction = new rtype()
-			if(!fusion_reactions[cur_reaction.p_react])
-				fusion_reactions[cur_reaction.p_react] = list()
-			fusion_reactions[cur_reaction.p_react][cur_reaction.s_react] = cur_reaction
-			if(!fusion_reactions[cur_reaction.s_react])
-				fusion_reactions[cur_reaction.s_react] = list()
-			fusion_reactions[cur_reaction.s_react][cur_reaction.p_react] = cur_reaction
+// ------
+// IN-DEV
+// ------
 
-	if(fusion_reactions.Find(p_react))
-		var/list/secondary_reactions = fusion_reactions[p_react]
-		if(secondary_reactions.Find(s_react))
-			return fusion_reactions[p_react][s_react]
+// Cache all our reactions at init or at admin discretion for easier access during procs
+proc/cache_reactions()
+	all_reactions = new/list
+	for(var/rtype in typesof(/decl/fusion_reaction) - /decl/fusion_reaction)
+		var/decl/fusion_reaction/current_reaction = new rtype()
+		all_reactions.Add(current_reaction)
 
 // Material fuels
 //  deuterium
@@ -162,6 +165,23 @@ proc/get_fusion_reaction(var/p_react, var/s_react, var/m_energy)
 	s_react = GAS_HYDROGEN
 	minimum_energy_level = 15000
 	energy_consumption = 3
+	energy_production = 12
+	radiation = 3
+	instability = 2.5
+
+
+// ------
+// IN-DEV
+// ------
+
+/decl/fusion_reaction/debug_one
+	l_reactants = list("debug" = 1, "debugtwo" = 2)
+	energy_production = 2
+	instability = 0
+	products = list("debugthree" = 3)
+
+/decl/fusion_reaction/debug_two
+	l_reactants = list("debugthree" = 3)
 	energy_production = 10
-	radiation = 5
-	instability = 3
+	instability = 0
+	products = list("debug" = 1, "debugtwo" = 1)

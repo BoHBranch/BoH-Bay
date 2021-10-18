@@ -457,8 +457,8 @@
 			return global.forced_ambiance_list;
 		if("fruit_icon_cache")
 			return global.fruit_icon_cache;
-		if("fusion_reactions")
-			return global.fusion_reactions;
+		if("all_reactions")
+			return global.all_reactions;
 		if("game_id")
 			return global.game_id;
 		if("game_version")
