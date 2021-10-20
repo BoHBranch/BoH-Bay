@@ -146,11 +146,11 @@
 	check_instability()
 	Radiate()
 	if(radiation)
-		SSradiation.radiate(src, round(radiation))
+		SSradiation.radiate(src, round(radiation/1000))
 		if (locate(src.x, src.y, src.z-1))
-			SSradiation.radiate(locate(src.x, src.y, src.z-1), round(radiation/1000))
+			SSradiation.radiate(locate(src.x, src.y, src.z-1), round(radiation/100000))
 		if (locate(src.x, src.y, src.z+1))
-			SSradiation.radiate(locate(src.x, src.y, src.z+1), round(radiation/1000))
+			SSradiation.radiate(locate(src.x, src.y, src.z+1), round(radiation/100000))
 		radiation -= radiation * 0.1
 	return 1
 
