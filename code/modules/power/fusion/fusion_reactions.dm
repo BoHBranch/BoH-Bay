@@ -29,8 +29,9 @@ proc/cache_reactions()
 	all_reactions = new/list
 	for (var/rtype in typesof(/decl/fusion_reaction) - /decl/fusion_reaction)
 		var/decl/fusion_reaction/current_reaction = new rtype()
-		if	(current_reaction.wacky && current_reaction.hackyconfighack)
-			all_reactions.Add(current_reaction)
+		all_reactions.Add(current_reaction)
+		//if (current_reaction.wacky && current_reaction.hackyconfighack)
+		//	all_reactions.Add(current_reaction)
 
 // VERY UNIDEAL REACTIONS.
 /decl/fusion_reaction/phoron_supermatter

@@ -147,6 +147,10 @@
 	Radiate()
 	if(radiation)
 		SSradiation.radiate(src, round(radiation))
+		if (locate(src.x, src.y, src.z-1))
+			SSradiation.radiate(locate(src.x, src.y, src.z-1), round(radiation/1000))
+		if (locate(src.x, src.y, src.z+1))
+			SSradiation.radiate(locate(src.x, src.y, src.z+1), round(radiation/1000))
 		radiation -= radiation * 0.1
 	return 1
 
@@ -252,7 +256,7 @@
 /obj/effect/fusion_em_field/proc/AddParticles(var/name, var/quantity = 1)
 	if(name in reactants)
 		reactants[name] += quantity
-	else if(name != "proton" && name != "electron" && name != "neutron")
+	else
 		reactants.Add(name)
 		reactants[name] = quantity
 
