@@ -14,6 +14,8 @@ var/list/all_reactions
 	var/priority = 1
 	var/reaction_chance = 0
 	var/is_special = FALSE // Should we call a special handler for this reaction?
+	var/wacky = FALSE // In the future, reactions with this flag will be able to be disabled
+	var/hackyconfighack = TRUE
 
 /decl/fusion_reaction/proc/handle_reaction_special(var/obj/effect/fusion_em_field/holder)
 	return 0
@@ -27,7 +29,8 @@ proc/cache_reactions()
 	all_reactions = new/list
 	for (var/rtype in typesof(/decl/fusion_reaction) - /decl/fusion_reaction)
 		var/decl/fusion_reaction/current_reaction = new rtype()
-		all_reactions.Add(current_reaction)
+		if	(current_reaction.wacky && current_reaction.hackyconfighack)
+			all_reactions.Add(current_reaction)
 
 // VERY UNIDEAL REACTIONS.
 /decl/fusion_reaction/phoron_supermatter
@@ -126,13 +129,6 @@ proc/cache_reactions()
 	products = list()
 	priority = 80
 
-/decl/fusion_reaction/positron_annihilation
-	l_reactants = list("positron" = 1)
-	instability = 1
-	energy_production = 1
-	products = list()
-	priority = 90
-
 /decl/fusion_reaction/tpa_one
 	l_reactants = list("helium" = 2)
 	energy_consumption = 0.09
@@ -217,6 +213,82 @@ proc/cache_reactions()
 	products = list("nickel" = 1, "gamma ray" = 1)
 	priority = 2
 
+/decl/fusion_reaction/pp_one
+	l_reactants = list("helium-3" = 2)
+	energy_production = 12.85
+	products = list("helium" = 1, "hydrogen" = 2)
+	priority = 10
+
+/decl/fusion_reaction/pp_two_one
+	l_reactants = list("helium-3" = 1, "helium" = 1)
+	energy_production = 1.59
+	products = list("beryllium-7" = 1, "gamma ray" = 1)
+	priority = 10
+
+/decl/fusion_reaction/pp_two_two
+	l_reactants = list("beryllium-7" = 1, "electron" = 1)
+	energy_production = 0.76
+	products = list("lithium-7" = 1, "electron neutrino" = 1)
+	priority = 20
+
+/decl/fusion_reaction/pp_two_three
+	l_reactants = list("lithium-7" = 1, "hydrogen" = 1)
+	energy_production = 17.35
+	products = list("helium" = 2)
+	priority = 30
+
+/decl/fusion_reaction/pp_three_one
+	l_reactants = list("helium-3" = 1, "helium" = 1)
+	energy_production = 1.59
+	products = list("berrylium-7" = 1, "gamma ray" = 1)
+	priority = 10
+
+/decl/fusion_reaction/pp_three_two
+	l_reactants = list("beryllium-7" = 1, "hydrogen" = 1)
+	energy_production = 0.29
+	products = list("boron-8" = 1, "gamma ray" = 1)
+	priority = 20
+
+/decl/fusion_reaction/pp_three_three
+	l_reactants = list("boron-8" = 1)
+	energy_production = 10.19
+	products = list("beryllium" = 1, "positron" = 1, "electron neutrino" = 1)
+	priority = 30
+
+/decl/fusion_reaction/pp_three_four
+	l_reactants = list("beryllium" = 1)
+	energy_production = 8.01
+	products = list("helium" = 2)
+	priority = 40
+
+/decl/fusion_reaction/pp_four
+	l_reactants = list("helium-3" = 1, "hydrogen" = 1)
+	energy_production = 19.79
+	products = list("helium" = 1, "positron" = 1, "electron neutrino" = 1)
+	priority = 1
+
+/decl/fusion_reaction/posi_elec_neut_annihilation
+	l_reactants = list("positron" = 1, "electron neutrino" = 1)
+	energy_production = 20
+	products = list("gamma ray" = 2)
+	priority = 1
+
+/decl/fusion_reaction/proton_proton
+	l_reactants = list("proton" = 2)
+	energy_production = 5.69
+	products = list("deuterium" = 1, "positron" = 1, "electron neutrino" = 1)
+	priority = 1
+
+/decl/fusion_reaction/proton_proton_electron
+	l_reactants = list("proton" = 2, "electron" = 1)
+	energy_production = 1.44
+	products = list("deuterium" = 1, "electron neutrino" = 1)
+	priority = 1
+
+/decl/fusion_reaction/deuterium_hydrogen
+	l_reactants = list("deuterium" = 1, "hydrogen" = 1)
+	energy_production = 5.49
+	products = list("helium-3" = 1, "gamma ray" = 1)
 
 
 
@@ -255,19 +327,21 @@ proc/cache_reactions()
 
 
 // the cursed place
+/decl/fusion_reaction/wacky
+	wacky = TRUE
 ///decl/fusion_reaction/suppermatter_boss_fight
 
 // for the bravest
-/decl/fusion_reaction/cooking
+/decl/fusion_reaction/wacky/cooking
 	energy_production = 0
 	energy_consumption = 10
 	instability = 100
 	is_special = TRUE
 
-/decl/fusion_reaction/cooking/steak
+/decl/fusion_reaction/wacky/cooking/steak
 	l_reactants = list("raw steak" = 1, "metaphoron" = 1)
 	minimum_reaction_temperature = 100000
 	products = list("fusion steak" = 1)
 
-/decl/fusion_reaction/cooking/steak/handle_reaction_special(obj/effect/fusion_em_field/holder)
+/decl/fusion_reaction/wacky/cooking/steak/handle_reaction_special(obj/effect/fusion_em_field/holder)
 	// TBD
