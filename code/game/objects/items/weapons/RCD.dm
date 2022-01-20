@@ -1,4 +1,5 @@
 //Contains the rapid construction device.
+//THIS SHIT IS STILL BROKEN, YO. FIX IT IF YOU CARE ENOUGH! - Carl. Probably.
 
 /obj/item/weapon/rcd
 	name = "rapid construction device"

@@ -945,8 +945,8 @@ window "mainwindow"
 		type = MAIN
 		pos = 281,0
 		size = 640x440
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = none
 		is-default = true
 		saved-params = "pos;size;is-minimized;is-maximized"
@@ -954,12 +954,14 @@ window "mainwindow"
 		icon = 'icons\\ss13_64.png'
 		macro = "macro"
 		menu = "menu"
+		outer-size = 1696x1036
+		inner-size = 1680x977
 	elem "asset_cache_browser"
 		type = BROWSER
 		pos = 424,208
 		size = 1x1
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = none
 		is-visible = false
 		saved-params = ""
@@ -968,7 +970,7 @@ window "mainwindow"
 		pos = 560,420
 		size = 80x20
 		anchor1 = 100,100
-		anchor2 = none
+		anchor2 = -1,-1
 		background-color = none
 		saved-params = ""
 		text = "Hotkey Toggle"
@@ -999,7 +1001,7 @@ window "mainwindow"
 		pos = 520,420
 		size = 40x20
 		anchor1 = 100,100
-		anchor2 = none
+		anchor2 = -1,-1
 		background-color = none
 		saved-params = "is-checked"
 		text = "Chat"
@@ -1009,8 +1011,8 @@ window "mainwindow"
 		type = BROWSER
 		pos = 0,0
 		size = 999x999
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = none
 		is-visible = false
 		saved-params = ""
@@ -1020,8 +1022,9 @@ window "mapwindow"
 		type = MAIN
 		pos = 281,0
 		size = 640x480
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
 		statusbar = false
@@ -1029,6 +1032,7 @@ window "mapwindow"
 		can-minimize = false
 		can-resize = false
 		is-pane = true
+		outer-size = 654x494
 	elem "map"
 		type = MAP
 		pos = 0,0
@@ -1047,18 +1051,18 @@ window "mapwindow"
 		size = 640x480
 		anchor1 = 0,0
 		anchor2 = 100,100
+		background-color = none
 		is-visible = false
 		is-disabled = true
 		saved-params = ""
-		auto-format = false
 
 window "outputwindow"
 	elem "outputwindow"
 		type = MAIN
 		pos = 281,0
 		size = 640x480
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
@@ -1067,6 +1071,7 @@ window "outputwindow"
 		can-minimize = false
 		can-resize = false
 		is-pane = true
+		outer-size = 654x494
 	elem "output"
 		type = OUTPUT
 		pos = 0,0
@@ -1083,16 +1088,20 @@ window "rpane"
 		type = MAIN
 		pos = 281,0
 		size = 640x480
-		anchor1 = none
-		anchor2 = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
+		outer-size = 656x538
+		inner-size = 640x499
 	elem "rpanewindow"
 		type = CHILD
 		pos = 0,0
 		size = 640x474
 		anchor1 = 0,0
 		anchor2 = 100,100
+		background-color = none
 		saved-params = "splitter"
 		right = "outputwindow"
 		is-vert = false
@@ -1100,8 +1109,9 @@ window "rpane"
 		type = BUTTON
 		pos = 476,0
 		size = 60x15
-		anchor1 = none
-		anchor2 = none
+		anchor1 = 74,0
+		anchor2 = 84,3
+		background-color = none
 		saved-params = "is-checked"
 		text = "GitHub"
 		command = "GitHub"
@@ -1109,67 +1119,41 @@ window "rpane"
 		type = BUTTON
 		pos = 536,0
 		size = 60x15
-		anchor1 = none
-		anchor2 = none
+		anchor1 = 84,0
+		anchor2 = 93,3
+		background-color = none
 		saved-params = "is-checked"
 		text = "Bug Report"
 		command = "Bug-Report"
 	elem "rulesb"
 		type = BUTTON
-		pos = 120,0
+		pos = 128,0
 		size = 60x15
-		anchor1 = none
-		anchor2 = none
+		anchor1 = 19,0
+		anchor2 = 28,3
+		background-color = none
 		saved-params = "is-checked"
 		text = "Rules"
 		command = "rules"
 		group = "rpanemode"
-	elem "changelog"
+	elem "forumb"
 		type = BUTTON
 		pos = 416,0
 		size = 60x15
-		anchor1 = none
-		anchor2 = none
+		anchor1 = 65,0
+		anchor2 = 74,3
+		background-color = none
 		saved-params = "is-checked"
-		text = "Changelog"
-		command = "Changelog"
-		group = "rpanemode"
-	elem "Lore"
-		type = BUTTON
-		pos = 208,0
-		size = 60x15
-		anchor1 = none
-		anchor2 = none
-		saved-params = "is-checked"
-		text = "Lore"
-		command = "Lore"
-		group = "rpanemode"
-	elem "forumb"
-		type = BUTTON
-		pos = 328,0
-		size = 60x15
-		anchor1 = none
-		anchor2 = none
-		saved-params = "is-checked"
-		text = "Forum"
+		text = "Discord"
 		command = "forum"
-		group = "rpanemode"
-	elem "wikib"
-		type = BUTTON
-		pos = 268,0
-		size = 60x15
-		anchor1 = none
-		anchor2 = none
-		saved-params = "is-checked"
-		text = "Wiki"
-		command = "wiki"
 		group = "rpanemode"
 	elem "textb"
 		type = BUTTON
-		pos = 0,0
+		pos = 8,0
 		size = 60x15
-		anchor1 = none
-		anchor2 = none
+		anchor1 = 0,0
+		anchor2 = 9,3
+		background-color = none
 		is-visible = false
 		saved-params = "is-checked"
 		text = "Text"
@@ -1179,10 +1163,11 @@ window "rpane"
 		button-type = pushbox
 	elem "infob"
 		type = BUTTON
-		pos = 60,0
+		pos = 68,0
 		size = 60x15
-		anchor1 = none
-		anchor2 = none
+		anchor1 = 9,0
+		anchor2 = 19,3
+		background-color = none
 		is-visible = false
 		saved-params = "is-checked"
 		text = "Info"
@@ -1195,9 +1180,8 @@ window "infowindow"
 		type = MAIN
 		pos = 281,0
 		size = 640x480
-		anchor1 = none
-		anchor2 = none
-		background-color = none
+		anchor1 = -1,-1
+		anchor2 = -1,-1
 		saved-params = "pos;size;is-minimized;is-maximized"
 		title = "Info"
 		is-pane = true
@@ -1210,7 +1194,6 @@ window "infowindow"
 		is-default = true
 		saved-params = ""
 		highlight-color = #00aa00
-		tab-background-color = none
 		on-show = ".winset\"rpane.infob.is-visible=true;rpane.infob.pos=65,0 rpane.textb.is-visible=true rpane.infob.is-checked=true rpane.rpanewindow.pos=0,30 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=infowindow\""
 		on-hide = ".winset\"rpane.infob.is-visible=false;rpane.textb.is-visible=true rpane.rpanewindow.pos=0,30 rpane.rpanewindow.size=0x0 rpane.rpanewindow.left=\""
 
