@@ -28,12 +28,12 @@
 	name = "\improper NANOTRASEN patch"
 	desc = "An armor tag with the words NANOTRASEN printed in bottle green lettering on it."
 
-// Dog Tags badge string rename, plus added for SMC and NTEF.
+// Dog Tags badge string rename, plus added for SMC and SGF.
 /obj/item/clothing/accessory/badge/solgov/tags
 	badge_string = "NTSS Dagon"
 
 /obj/item/clothing/accessory/badge/solgov/tags/fleet
-	badge_string = "NTEF"
+	badge_string = "SGF"
 
 /obj/item/clothing/accessory/badge/solgov/tags/marine
 	badge_string = "SMC"
@@ -59,7 +59,7 @@
 	name = "ranks (E-2 junior explorer)"
 	desc = "Insignia denoting the rank of Junior Explorer."
 
-// NTEF ranks. Icon overrides for now (useless on-mob, but good for in-hand/dropped or on examine).
+// SGF ranks. Icon overrides for now (useless on-mob, but good for in-hand/dropped or on examine).
 /obj/item/clothing/accessory/solgov/rank/fleet
 	icon_state = "FE0"
 	overlay_state = "fleetrank_enlisted"

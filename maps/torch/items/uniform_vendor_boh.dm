@@ -1,4 +1,4 @@
-// A modular rewrite to allow "alternative" uniform. Done for NTEF to allow both NTSC and NTF uniforms, and to allow marines for camo selection.
+// A modular rewrite to allow "alternative" uniform. Done for SGF to allow both NTSC and SGF uniforms, and to allow marines for camo selection.
 // Some of those (shoes, gloves) are not really needed but hey - safe check.
 
 /obj/machinery/uniform_vendor/populate_uniforms(decl/hierarchy/mil_uniform/user_outfit)
