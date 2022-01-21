@@ -69,7 +69,9 @@
 /obj/effect/floor_decal/corner/mauve/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/secure_closet/pathfinder,
-/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/tall,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/tall{
+	desc = "How the Pathfinder keeps up with the Marine bullshit."
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/command/pathfinder)
 "aq" = (
@@ -326,6 +328,25 @@
 /obj/random/junk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
+"aT" = (
+/obj/structure/bed/chair/office/comfy/purple,
+/obj/effect/floor_decal/corner/mauve{
+	icon_state = "corner_white";
+	dir = 5
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/closet/secure_closet/explo_gun/pf{
+	pixel_y = 32
+	},
+/obj/effect/landmark/start{
+	name = "Pathfinder"
+	},
+/turf/simulated/floor/tiled,
+/area/command/pathfinder)
 "aU" = (
 /obj/item/device/tape/random,
 /obj/random/trash,
@@ -14526,22 +14547,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/sorting)
-"Ts" = (
-/obj/structure/bed/chair/office/comfy/purple,
-/obj/effect/floor_decal/corner/mauve{
-	icon_state = "corner_white";
-	dir = 5
-	},
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
-/obj/machinery/light{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/command/pathfinder)
 "Tt" = (
 /obj/structure/closet/emcloset,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -33010,7 +33015,7 @@ QX
 Ti
 SV
 fl
-Ts
+aT
 QG
 Lh
 ki
