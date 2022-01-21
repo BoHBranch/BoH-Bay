@@ -17,12 +17,12 @@
 	station_name  = "NTSS Dagon"
 	station_short = "Dagon"
 	dock_name     = "TBD"
-	boss_name     = "Central Command"
-	boss_short    = "Central"
-	company_name  = "NanoTrasen"
-	company_short = "NT"
+	boss_name     = "High Fleet Command"
+	boss_short    = "HighCom"
+	company_name  = "SolGov"
+	company_short = "SG"
 
-	map_admin_faxes = list("Corporate Central Office")
+	map_admin_faxes = list("Office of Naval Assets")
 
 	//These should probably be moved into the evac controller...
 	shuttle_docked_message = "Attention all hands: Jump preparation complete. The bluespace drive is now spooling up, secure all stations for departure. Time to jump: approximately %ETD%."
@@ -32,7 +32,7 @@
 
 	evac_controller_type = /datum/evacuation_controller/starship
 
-	default_law_type = /datum/ai_laws/nanotrasen
+	default_law_type = /datum/ai_laws/solgov
 	use_overmap = 1
 	num_exoplanets = 1
 

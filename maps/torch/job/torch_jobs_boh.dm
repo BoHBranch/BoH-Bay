@@ -4,10 +4,10 @@
 // Captain is basically a modular fix.
 /datum/job/captain
 	allowed_branches = list(
-		/datum/mil_branch/fleet
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/CO/marine
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/o6
+		/datum/mil_rank/marine_corps/o6
 	)
 
 /datum/job/hop

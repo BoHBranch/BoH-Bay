@@ -72,15 +72,19 @@
 	chargedesc = "ASCENT"
 
 /obj/structure/ship_munition/disperser_charge/ascent/fire(turf/target, strength, range)
-	explosion(target,max(1,strength * range / 10),strength * range / 7.5,strength * range / 5)
-	empulse(target, strength * range / 3, strength * range)
-	for(var/turf/T in range(range, target))
-		var/obj/effect/fake_fire/bluespace/disperserf = new(T)
-		disperserf.lifetime = strength * 20
+	empulse(target, strength * range / 6, strength * range)//Enough to knock out an entire ship's power systems, or one deck of the Dagon.
 	var/list/victims = range(range * 3, target)
-	for(var/turf/simulated/mineral/M in victims)
-		if(prob(strength * 100 / 6)) //6 instead of 5 so there are always leftovers
-			M.GetDrilled(TRUE) //no artifacts survive this
 	for(var/mob/living/L in victims)
-		to_chat(L, "<span class='alert'>You feel an incredible force ripping and tearing at you.</span>")
-		L.ex_act(3) //no artif- I mean idiot/unfortunate bystanders survive this... much
+		to_chat(L, "<span class='alert'>Something shakes the vessel violently!</span>")
+		L.apply_damage(125, WEAKEN)//Ascent can board without much of a fight, assuming they're lucky and it hits the deck they're boarding on.
+
+//ship-to-ship 'fack off' charge
+/obj/structure/ship_munition/disperser_charge/s2s
+	name = "RN8-KOSMAG slug"
+	icon_state = "slug"
+	desc = "A charge to power the obstruction field disperser with. It looks impossibly round and shiny. This charge is designed to punch through defences and explode moments after entering a vessel."
+//	chargetype = OVERMAP_WEAKNESS_EXPLOSIVE //lol no
+	chargedesc = "KOSMAG"
+
+/obj/structure/ship_munition/disperser_charge/s2s/fire(turf/target, strength, range)
+	explosion(target,max(1,strength * range / 1),strength * range / 1,strength * range / 1)

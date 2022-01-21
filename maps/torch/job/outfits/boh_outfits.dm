@@ -5,6 +5,11 @@
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 
+/decl/hierarchy/outfit/job/torch/crew/command/CO/marine
+	name = OUTFIT_JOB_NAME("Commanding Officer - Marine Corps")
+	uniform = /obj/item/clothing/under/solgov/utility/army/command
+	shoes = /obj/item/clothing/shoes/dutyboots
+
 /decl/hierarchy/outfit/job/torch/crew/command/XO/marine
 	name = OUTFIT_JOB_NAME("Executive Officer - Marine Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/army/command

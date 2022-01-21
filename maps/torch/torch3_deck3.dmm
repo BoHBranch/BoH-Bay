@@ -7763,6 +7763,17 @@
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
+"pc" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/ship_munition/disperser_charge/s2s,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/disperser)
 "pd" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -7887,6 +7898,19 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/hardstorage)
+"pm" = (
+/obj/machinery/camera/network/command{
+	c_tag = "Fire Control - Storage";
+	dir = 4;
+	network = list("Command")
+	},
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/ship_munition/disperser_charge/s2s,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/disperser)
 "pn" = (
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -8621,6 +8645,13 @@
 "qA" = (
 /turf/simulated/floor/tiled,
 /area/ai_monitored/storage/eva)
+"qB" = (
+/obj/effect/floor_decal/industrial/hatch,
+/obj/structure/closet/crate{
+	name = "hermes crate"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/disperser)
 "qC" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/device/radio/off,
@@ -8630,6 +8661,19 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/monotile,
 /area/ai_monitored/storage/eva)
+"qD" = (
+/obj/structure/sign/warning/nosmoking_1{
+	dir = 4;
+	icon_state = "nosmoking";
+	pixel_x = -32
+	},
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/ship_munition/disperser_charge/s2s,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/disperser)
 "qE" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "AI Upload Access"
@@ -8904,6 +8948,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
+"rd" = (
+/obj/effect/floor_decal/industrial/hatch/blue,
+/obj/structure/ship_munition/disperser_charge/emp,
+/obj/structure/window/reinforced,
+/turf/simulated/floor/tiled/dark,
+/area/command/disperser)
 "re" = (
 /obj/effect/floor_decal/corner/green/half,
 /turf/simulated/floor/tiled,
@@ -9104,6 +9154,15 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/aft)
+"ry" = (
+/obj/effect/floor_decal/industrial/hatch/orange,
+/obj/structure/ship_munition/disperser_charge/fire,
+/obj/structure/window/reinforced{
+	dir = 8;
+	health = 1e+006
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/disperser)
 "rz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -9166,10 +9225,11 @@
 /turf/simulated/floor/airless,
 /area/hydroponics)
 "rG" = (
-/obj/structure/sign/warning/nosmoking_1{
-	dir = 4;
-	icon_state = "nosmoking";
-	pixel_x = -32
+/obj/effect/floor_decal/industrial/hatch/red,
+/obj/structure/ship_munition/disperser_charge/explosive,
+/obj/structure/window/reinforced{
+	dir = 8;
+	health = 1e+006
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
@@ -9510,6 +9570,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/turret_protected/ai_upload_foyer)
+"se" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/ship_munition/disperser_charge/mining,
+/obj/structure/window/reinforced{
+	dir = 1;
+	health = 1e+006
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/disperser)
 "sf" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -9637,6 +9706,14 @@
 /obj/effect/floor_decal/corner/red/mono,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/center)
+"sm" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/ship_munition/disperser_charge/s2s,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/disperser)
 "sn" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -10098,6 +10175,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
+"sT" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/ship_munition/disperser_charge/s2s,
+/obj/structure/window/reinforced,
+/turf/simulated/floor/tiled/dark,
+/area/command/disperser)
 "sU" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -10161,6 +10244,15 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/starboard)
+"ta" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/ship_munition/disperser_charge/s2s,
+/obj/structure/window/reinforced{
+	dir = 1;
+	health = 1e+006
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/disperser)
 "tb" = (
 /obj/structure/bed/chair/comfy/beige{
 	dir = 4
@@ -14802,12 +14894,6 @@
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
-"DM" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/command/disperser)
 "DO" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -14883,14 +14969,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/port)
-"DU" = (
-/obj/machinery/camera/network/command{
-	c_tag = "Fire Control - Storage";
-	dir = 4;
-	network = list("Command")
-	},
-/turf/simulated/floor/tiled/dark,
-/area/command/disperser)
 "DV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -16361,11 +16439,6 @@
 /area/command/disperser)
 "HW" = (
 /turf/simulated/wall/prepainted,
-/area/command/disperser)
-"HX" = (
-/obj/effect/floor_decal/industrial/hatch/blue,
-/obj/structure/ship_munition/disperser_charge/emp,
-/turf/simulated/floor/tiled/dark,
 /area/command/disperser)
 "HZ" = (
 /obj/effect/floor_decal/industrial/loading,
@@ -19624,11 +19697,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/hardstorage)
-"QL" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/ship_munition/disperser_charge/mining,
-/turf/simulated/floor/tiled/dark,
-/area/command/disperser)
 "QM" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -19728,13 +19796,6 @@
 	},
 /turf/simulated/wall/ocp_wall,
 /area/thruster/d3port)
-"Rl" = (
-/obj/effect/floor_decal/industrial/hatch,
-/obj/structure/closet/crate{
-	name = "hermes crate"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/command/disperser)
 "Rm" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -44470,13 +44531,13 @@ Hf
 aI
 aa
 Qq
-HX
-DM
-DU
+rd
+pc
+pm
 IK
-rG
-Pp
-QL
+qD
+sm
+se
 Qq
 aa
 aa
@@ -44875,11 +44936,11 @@ aI
 aa
 Qq
 Qq
-Rl
+qB
+sT
 Pp
-Pp
-Pp
-Rl
+ta
+qB
 Qq
 Qq
 aa
@@ -45078,9 +45139,9 @@ aa
 aa
 Qq
 Qq
-Ih
+ry
 Pp
-Iw
+rG
 Qq
 Qq
 aa
