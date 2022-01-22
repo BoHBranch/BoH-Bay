@@ -44,7 +44,7 @@
 			return
 		send_link(src, config.forumurl)
 	else
-		to_chat(src, "<span class='warning'>The forum URL is not set in the server configuration.</span>")
+		to_chat(src, "<span class='warning'>The Discord URL is not set in the server configuration.</span>")
 	return
 /*
 /client/verb/rules()

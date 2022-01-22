@@ -75,7 +75,7 @@
 	"}
 
 /obj/item/weapon/folder/envelope/captain
-	desc = "A thick envelope. The NTF crest is stamped in the corner."
+	desc = "A thick envelope. The SGF crest is stamped in the corner."
 
 /obj/item/weapon/folder/envelope/captain/Initialize()
 	..()
@@ -86,7 +86,7 @@
 	var/obj/effect/overmap/visitable/torch = map_sectors["[z]"]
 	var/memo = {"
 	<tt><center><b><font color='red'>SECRET - CODE WORDS: DAGON</font></b>
-	<h3>NANOTRASEN FLEET COMMAND</h3>
+	<h3>SOLGOV FLEET COMMAND</h3>
 	<img src = ntlogo.png>
 	</center>
 	<b>FROM:</b> ADM William Lau<br>
@@ -108,12 +108,12 @@
 	Priority targets are artifacts of uncontacted alien species and signal sources of unknown origin.<br>
 	None of these systems are claimed by any entity recognized by the SCG, so you have full salvage rights on any derelicts discovered.<br>
 	Investigate and mark any prospective colony worlds as per usual procedures.<br>
-	There is no NT presence in that area. In case of distress calls, you will be the only vessel available; do not ignore them. We cannot afford any more PR backlash.<br>
+	There is no SGF presence in that area. In case of distress calls, you will be the only vessel available; do not ignore them. We cannot afford any more PR backlash.<br>
 	The current docking code is: [torch.docking_codes]<br>
 	Report all findings via bluespace comm buoys during inter-system jumps.<br>
 
 	<i>ADM Lau.</i></tt>
-	<i>This paper has been stamped with the stamp of NTF Command.</i>
+	<i>This paper has been stamped with the stamp of SGF Command.</i>
 	"}
 	new/obj/item/weapon/paper(src, memo, "Standing Orders")
 //	new/obj/item/weapon/paper/umbra(src)
@@ -129,7 +129,7 @@
 	name = "UMBRA Protocol"
 	info = {"
 	<tt><center><b><font color='red'>TOP SECRET - CODE WORDS: DAGON UMBRA</font></b>
-	<h3>OFFICE OF THE SECRETARY GENERAL OF THE NANOTRASEN PRIVATE FLEET</h3>
+	<h3>OFFICE OF THE SECRETARY GENERAL OF THE SOLGOV FLEET</h3>
 	<img src = ntlogo.png
 	</center>
 	<b>FROM:</b> Johnathan Smitherson, Special Aide of the Secretary General<br>
@@ -138,7 +138,7 @@
 	<b>SUBJECT:</b> UMBRA protocol<br>
 	<hr>
 	This is a small addendum to the usual operating procedures. Unlike the rest of SOP, this is not left to the Commanding Officer's discretion and is mandatory. As unconventional as this is, we felt it is essential for smooth operation of this mission.<br>
-	Procedure can be initiated only by transmission from NT Surveyor Corps Command via secure channel. The sender may not introduce themselves, but you shouldn't have trouble confirming the transmission source, I believe.<br>
+	Procedure can be initiated only by transmission from SolGov Command via secure channel. The sender may not introduce themselves, but you shouldn't have trouble confirming the transmission source, I believe.<br>
 	The signal to initiate the procedure are codewords 'GOOD NIGHT WORLD' used in this order as one phrase. You do not need to send acknowledgement.
 	<li>Information about this expedition's findings is to be treated as secret and vital to NTF security, and is protected under codeword UMBRA. Crew aboard the NTSS Dagon are allowed access to this information on a need-to-know basis.</li>
 	<li>The secrecy of this information is to be applied retroactively. Any non-cleared personnel who were exposed to such information are to be secured and transferred to DIA on arrival at home port.</li>
@@ -147,7 +147,7 @@
 	<br>
 	While drastic, I assure you this is a simple precaution, lest any issues. Just keep the option open, and carry on with your normal duties.
 	<i>Regards, John.</i></tt>
-	<i>This paper has been stamped with the stamp of Office of the General Secretary of NTF.</i>
+	<i>This paper has been stamped with the stamp of Office of the General Secretary of SGF.</i>
 	"}
 
 /////////
@@ -162,5 +162,5 @@
 	Next person I catch on cameras doing it will be discharged, and relocated. This is your final and only warning.<br>
 	Keep the gear locked up. Do your duty.<br>
 	Love, Steven. From Accounting.</i>
-	<i>This paper has been stamped with the stamp of NTF Command.</i>
+	<i>This paper has been stamped with the stamp of SGF Command.</i>
 	"}

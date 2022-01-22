@@ -6,19 +6,19 @@
 
 /obj/item/clothing/accessory/cloak/boh/dress
 	name = "boatcloak"
-	desc = "A fancy NTEF boatcloak with silver ribbon."
+	desc = "A fancy SGF boatcloak with silver ribbon."
 	icon_state = "boatcloak"
 	body_parts_covered = UPPER_TORSO|ARMS
 
 /obj/item/clothing/accessory/cloak/boh/dress/command
 	name = "command boatcloak"
-	desc = "A fancy NTEF boatcloak with golden ribbon."
+	desc = "A fancy SGF boatcloak with golden ribbon."
 	icon_state = "boatcloak_com"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 
 /obj/item/clothing/accessory/cloak/boh/command
 	name = "command cloak"
-	desc = "A white NTEF dress cloak with gold details."
+	desc = "A white SGF dress cloak with gold details."
 	icon_state = "cloak_com"
 
 /obj/item/clothing/accessory/cloak/boh/command/support
@@ -26,12 +26,12 @@
 
 /obj/item/clothing/accessory/cloak/boh/engineering
 	name = "engineering cloak"
-	desc = "A white NTEF dress cloak with orange details."
+	desc = "A white SGF dress cloak with orange details."
 	icon_state = "cloak_eng"
 
 /obj/item/clothing/accessory/cloak/boh/explorer
 	name = "explorer cloak"
-	desc = "A white NTEF dress cloak with purple details."
+	desc = "A white SGF dress cloak with purple details."
 	icon_state = "cloak_exp"
 
 /obj/item/clothing/accessory/cloak/boh/explorer/science
@@ -39,22 +39,22 @@
 
 /obj/item/clothing/accessory/cloak/boh/medical
 	name = "medical cloak"
-	desc = "A white NTEF dress cloak with light-blue details."
+	desc = "A white SGF dress cloak with light-blue details."
 	icon_state = "cloak_med"
 
 /obj/item/clothing/accessory/cloak/boh/security
 	name = "security cloak"
-	desc = "A white NTEF dress cloak with red details."
+	desc = "A white SGF dress cloak with red details."
 	icon_state = "cloak_sec"
 
 /obj/item/clothing/accessory/cloak/boh/service
 	name = "service cloak"
-	desc = "A white NTEF dress cloak with green details."
+	desc = "A white SGF dress cloak with green details."
 	icon_state = "cloak_service"
 
 /obj/item/clothing/accessory/cloak/boh/supply
 	name = "supply cloak"
-	desc = "A white NTEF dress cloak with brown details."
+	desc = "A white SGF dress cloak with brown details."
 	icon_state = "cloak_supply"
 
 // Map-wise Modular Override to include ACCESSORY_SLOT_OVER

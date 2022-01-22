@@ -149,7 +149,7 @@
 
 /******************** SolGov/Malf ********************/
 /datum/ai_laws/solgov
-	name = "SCG Expeditionary"
+	name = "SCG Fleet"
 	selectable = 1
 
 /datum/ai_laws/solgov/New()

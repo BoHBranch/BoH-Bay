@@ -5615,6 +5615,7 @@
 	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
 	},
 /obj/structure/table/steel,
+/obj/item/weapon/paper/inf,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/armory)
 "jO" = (

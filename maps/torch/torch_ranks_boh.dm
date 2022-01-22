@@ -112,9 +112,9 @@
 	)
 
 /datum/mil_branch/fleet
-	name = "Expeditionary Fleet"
-	name_short = "NTEF"
-	email_domain = "dagon.nt.exp"
+	name = "Solar Fleet"
+	name_short = "SGF"
+	email_domain = "dagon.sgf.mil"
 
 	rank_types = list(
 		/datum/mil_rank/fleet/e1,
@@ -248,7 +248,7 @@
 						SKILL_EVA     = SKILL_BASIC)
 
 /*
- *  Fleet (NTEF Override)
+ *  Fleet (SGF Override)
  *  =====
  */
 /datum/mil_rank/fleet/e1
