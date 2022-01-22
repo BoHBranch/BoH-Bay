@@ -29,6 +29,12 @@
 	fire_delay = 2
 	starts_loaded = 0
 
+/obj/item/weapon/gun/projectile/pistol/sec/pf
+	name = "Mk58"
+	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are. \
+	'Pathfinder' is stenciled onto the grip."
+	starts_loaded = 0
+
 /////////
 // display
 /////////

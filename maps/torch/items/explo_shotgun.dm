@@ -135,3 +135,21 @@
 	extra_decals = list(
 		"stripe_outer" = COLOR_PURPLE
 	)
+
+//pathfinder
+/obj/structure/closet/secure_closet/explo_gun/pf
+	desc = "Wall locker holding the Pathfinder's survival sidearm."
+	closet_appearance = /decl/closet_appearance/wall/explo_gun/pf
+	req_access = list(access_pathfinder)
+
+/obj/structure/closet/secure_closet/explo_gun/pf/WillContain()
+	return list(
+		/obj/item/weapon/gun/projectile/pistol/sec/pf = 1,
+		/obj/item/ammo_magazine/pistol/double/pepperball = 1
+	)
+
+/decl/closet_appearance/wall/explo_gun/pf
+	extra_decals = list(
+		"stripe_outer" = COLOR_RED,
+		"stripe_inner" = COLOR_PURPLE
+	)

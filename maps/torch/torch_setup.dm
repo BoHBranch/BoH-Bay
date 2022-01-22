@@ -6,10 +6,11 @@
 /datum/map/torch/get_map_info()
 	. = list()
 	. += "Congratulations on your employment aboard the NTSS (NanoTrasen Solarian Ship) Dagon."
-	. += "It is an Epsilon Class Vessel outfitted with state of the art medical, research, and security facilities for all your needs!"
+	. += "You are now in deep space, but there's no reason to worry! While SolGov might not be over your shoulder, the Captain certainly is! Trust in authority!"
 	. += ""
-	. += "It is a re-commissioned science vessel revamped to be closer to a military vessel."
-	. += "Capable of responding both to deal with most minor insurrectionist threats in a rapid fashion as well as explore any 'forgotten' planets in these sectors."
+	. += "You're sailing on an Epsilon Class System Surveyor with state of the art medical, research and security facilities. All provided by SolGov!"
+	. += "Being a re-commissioned military vessel, it's now clearly showing its age and used for far less dangerous tasks on average."
+	. += "Still, it is more than capable of responding to insurrectionist threats or putting down dissent."
 	return jointext(., "<br>")
 
 /datum/map/torch/send_welcome()

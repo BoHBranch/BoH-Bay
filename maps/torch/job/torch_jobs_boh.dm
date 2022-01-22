@@ -4,10 +4,10 @@
 // Captain is basically a modular fix.
 /datum/job/captain
 	allowed_branches = list(
-		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/command/CO/marine
+		/datum/mil_branch/fleet
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/marine_corps/o6
+		/datum/mil_rank/fleet/o6
 	)
 
 /datum/job/hop
@@ -178,7 +178,7 @@
 		/datum/mil_rank/fleet/e3_exp,
 		/datum/mil_rank/fleet/e5_exp
 	)
-	min_skill = list(SKILL_EVA = SKILL_BASIC, SKILL_SCIENCE = SKILL_BASIC) // To make up NTEF not having sci skill by default.
+	min_skill = list(SKILL_EVA = SKILL_BASIC, SKILL_SCIENCE = SKILL_BASIC) // To make up SGF not having sci skill by default.
 /***/
 
 // Medical
