@@ -311,10 +311,10 @@
 	icon_state = "command_exp_rig"
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
-		bullet = ARMOR_BALLISTIC_RESISTANT,//Exosuit meant for hostile environments.
-		laser = ARMOR_LASER_SMALL,
+		bullet = ARMOR_BALLISTIC_PISTOL,
+		laser = ARMOR_LASER_RIFLES,
 		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_MINOR,
+		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 		)

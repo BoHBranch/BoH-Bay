@@ -1718,7 +1718,7 @@
 /area/crew_quarters_boh/cabin_main
 	name = "\improper Cabin Primary"
 	icon_state = "crew_quarters"
-	area_flags = AREA_FLAG_RAD_SHIELDED
+//	area_flags = AREA_FLAG_RAD_SHIELDED
 	sound_env = MEDIUM_SOFTFLOOR
 
 /area/crew_quarters_boh/cabin_main/c1

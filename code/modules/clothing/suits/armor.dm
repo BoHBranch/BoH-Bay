@@ -267,6 +267,20 @@
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS
 
+/obj/item/clothing/suit/storage/vest/barkeep
+	name = "webbed armor vest"
+	desc = "A synthetic armor vest. This one has added webbing very a light set of plates."
+	icon_state = "webvest"
+	armor = list(
+		melee = ARMOR_MELEE_MINOR,
+		bullet = ARMOR_BALLISTIC_MINOR,
+		laser = ARMOR_LASER_MINOR,
+		energy = ARMOR_ENERGY_MINOR,
+		bomb = ARMOR_BOMB_MINOR
+		)
+	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
+	allowed = list(/obj/item/weapon/gun/projectile)
+
 //Modular plate carriers
 /obj/item/clothing/suit/armor/pcarrier
 	name = "plate carrier"

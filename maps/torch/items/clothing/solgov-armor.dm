@@ -1,12 +1,12 @@
 /obj/item/clothing/suit/armor/vest/solgov
-	name = "\improper NTF armored vest"
-	desc = "A synthetic armor vest. This one is marked with the crest of the NTF."
+	name = "\improper SGF armored vest"
+	desc = "A synthetic armor vest. This one is marked with the crest of the SGF."
 	icon_state = "solvest"
 	icon = 'maps/torch/icons/obj/obj_suit_solgov.dmi'
 	item_icons = list(slot_wear_suit_str = 'maps/torch/icons/mob/onmob_suit_solgov.dmi')
 
 /obj/item/clothing/suit/storage/vest/solgov
-	name = "\improper NTF heavy armored vest"
+	name = "\improper SGF heavy armored vest"
 	desc = "A synthetic armor vest with PEACEKEEPER printed in distinctive blue lettering on the chest. This one has added webbing and ballistic plates."
 	icon_state = "solwebvest"
 	icon = 'maps/torch/icons/obj/obj_suit_solgov.dmi'
@@ -19,7 +19,7 @@
 
 /obj/item/clothing/suit/storage/vest/solgov/command
 	name = "command heavy armored vest"
-	desc = "A synthetic armor vest with 'NTF SECURITY' printed in gold lettering on the chest. This one has added webbing and ballistic plates."
+	desc = "A synthetic armor vest with 'SGF SECURITY' printed in gold lettering on the chest. This one has added webbing and ballistic plates."
 	icon_state = "comwebvest"
 
 /obj/item/clothing/suit/armor/pcarrier/blue/sol

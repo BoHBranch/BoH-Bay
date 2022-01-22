@@ -10600,6 +10600,18 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
+"tM" = (
+/obj/structure/closet/secure_closet/bar_torch,
+/obj/item/clothing/accessory/badge/firearm/bar,
+/obj/item/weapon/storage/box/ammo/beanbags/full,
+/obj/item/weapon/gun/projectile/shotgun/doublebarrel,
+/obj/item/clothing/accessory/storage/bandolier,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/item/clothing/suit/storage/vest/barkeep,
+/turf/simulated/floor/lino,
+/area/crew_quarters/bar/storage)
 "tN" = (
 /obj/structure/bed/chair/pew/left/mahogany,
 /obj/machinery/light{
@@ -11041,6 +11053,16 @@
 /obj/machinery/status_display,
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/habcheck)
+"uL" = (
+/obj/structure/closet/secure_closet/bar_torch,
+/obj/item/clothing/accessory/badge/firearm/bar,
+/obj/item/weapon/storage/box/ammo/beanbags/full,
+/obj/item/weapon/gun/projectile/shotgun/doublebarrel,
+/obj/item/clothing/accessory/storage/bandolier,
+/obj/structure/window/reinforced/tinted,
+/obj/item/clothing/suit/storage/vest/barkeep,
+/turf/simulated/floor/lino,
+/area/crew_quarters/bar/storage)
 "uN" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -14111,17 +14133,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/aftport)
-"Bf" = (
-/obj/structure/closet/secure_closet/bar_torch,
-/obj/item/clothing/accessory/badge/firearm/bar,
-/obj/item/weapon/storage/box/ammo/beanbags/full,
-/obj/item/weapon/gun/projectile/shotgun/doublebarrel,
-/obj/item/clothing/accessory/storage/bandolier,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/turf/simulated/floor/lino,
-/area/crew_quarters/bar/storage)
 "Bg" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 5
@@ -20066,15 +20077,6 @@
 /obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/cryolocker)
-"Sk" = (
-/obj/structure/closet/secure_closet/bar_torch,
-/obj/item/clothing/accessory/badge/firearm/bar,
-/obj/item/weapon/storage/box/ammo/beanbags/full,
-/obj/item/weapon/gun/projectile/shotgun/doublebarrel,
-/obj/item/clothing/accessory/storage/bandolier,
-/obj/structure/window/reinforced/tinted,
-/turf/simulated/floor/lino,
-/area/crew_quarters/bar/storage)
 "Sm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
@@ -37222,8 +37224,8 @@ qn
 gs
 Dx
 Ab
-Bf
-Sk
+tM
+uL
 Bh
 kK
 lu
