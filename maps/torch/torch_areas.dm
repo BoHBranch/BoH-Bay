@@ -342,34 +342,34 @@
 //Charon
 
 /area/exploration_shuttle/
-	name = "\improper NTEV Gaunt"
+	name = "\improper SGEV Gaunt"
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/floor/plating
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 /area/exploration_shuttle/cockpit
-	name = "\improper NTEV Gaunt - Cockpit"
+	name = "\improper SGEV Gaunt - Cockpit"
 	req_access = list(access_expedition_shuttle)
 
 /area/exploration_shuttle/atmos
-	name = "\improper NTEV Gaunt - Atmos Compartment"
+	name = "\improper SGEV Gaunt - Atmos Compartment"
 
 /area/exploration_shuttle/power
-	name = "\improper NTEV Gaunt - Power Compartment"
+	name = "\improper SGEV Gaunt - Power Compartment"
 
 /area/exploration_shuttle/crew
-	name = "\improper NTEV Gaunt - Crew Compartment"
+	name = "\improper SGEV Gaunt - Crew Compartment"
 
 /area/exploration_shuttle/cargo
-	name = "\improper NTEV Gaunt - Cargo Bay"
+	name = "\improper SGEV Gaunt - Cargo Bay"
 
 /area/exploration_shuttle/airlock
-	name = "\improper NTEV Gaunt - Airlock Compartment"
+	name = "\improper SGEV Gaunt - Airlock Compartment"
 
 //Aquila
 
 /area/aquila
-	name = "\improper NTSC Byakhee"
+	name = "\improper SGGS Byakhee"
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/floor/reinforced/airless
 	requires_power = 1
@@ -377,41 +377,41 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 /area/aquila/cockpit
-	name = "\improper NTSC Byakhee - Cockpit"
+	name = "\improper SGGS Byakhee - Cockpit"
 	req_access = list(access_aquila)
 
 /area/aquila/maintenance
-	name = "\improper NTSC Byakhee - Maintenance"
+	name = "\improper SGGS Byakhee - Maintenance"
 	req_access = list(access_solgov_crew)
 
 /area/aquila/storage
-	name = "\improper NTSC Byakhee - Storage"
+	name = "\improper SGGS Byakhee - Storage"
 	req_access = list(access_solgov_crew)
 
 /area/aquila/secure_storage
-	name = "\improper NTSC Byakhee - Secure Storage"
+	name = "\improper SGGS Byakhee - Secure Storage"
 	req_access = list(access_aquila)
 
 /area/aquila/mess
-	name = "\improper NTSC Byakhee - Mess Hall"
+	name = "\improper SGGS Byakhee - Mess Hall"
 
 /area/aquila/passenger
-	name = "\improper NTSC Byakhee - Passenger Compartment"
+	name = "\improper SGGS Byakhee - Passenger Compartment"
 
 /area/aquila/medical
-	name = "\improper NTSC Byakhee - Medical"
+	name = "\improper SGGS Byakhee - Medical"
 
 /area/aquila/head
-	name = "\improper NTSC Byakhee - Cannon"
+	name = "\improper SGGS Byakhee - Cannon"
 
 /area/aquila/airlock
-	name = "\improper NTSC Byakhee - Airlock Compartment"
+	name = "\improper SGGS Byakhee - Airlock Compartment"
 	req_access = list(access_solgov_crew)
 
 //Guppy
 
 /area/guppy_hangar/start
-	name = "\improper NTRP Garuda"
+	name = "\improper SGRP Garuda"
 	icon_state = "shuttlered"
 	requires_power = 1
 	dynamic_lighting = 1
@@ -1766,7 +1766,7 @@
 	icon_state = "crew_quarters"
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_infantry)
-/*
+
 /area/security/infantry/gear
 	name = "\improper Technician Prep"
 	icon = 'icons/boh/area.dmi'
@@ -1778,13 +1778,27 @@
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
 	req_access = list(access_infcom)
-*/
+
 /area/security/infantry/armory
 	name = "\improper Infantry Hard Storage"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
 	req_access = list(access_infcom)
 
+/area/security/infantry/bunk
+	name = "\improper Infantry Barracks"
+	icon_state = "Sleep"
+	req_access = list(access_infantry)
+
+/area/security/infantry/exterior
+	name = "\improper Infantry Barracks Exterior"
+	icon_state = "Sleep"
+	req_access = list(access_infantry)
+
+/area/security/infantry/aux_bunk
+	name = "\improper Auxiliary Infantry Barracks"
+	icon_state = "Sleep"
+	req_access = list(access_infantry)
 
 
 /////////

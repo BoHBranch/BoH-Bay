@@ -36,7 +36,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/pathfinder/get_description_blurb()
-	return "You are the Pathfinder. Your duty is to organize and lead the expeditions to away sites, carrying out the SC's Primary Mission. You command Explorers. You make sure that expedition has the supplies and personnel it needs. You can pilot 'NTEV Gaunt' if nobody else provides a pilot. Once on the away mission, your duty is to ensure that anything of scientific interest is brought back to the ship and passed to the relevant research lab."
+	return "You are the Pathfinder. Your duty is to organize and lead the expeditions to away sites, carrying out the SC's Primary Mission. You command Explorers. You make sure that expedition has the supplies and personnel it needs. You can pilot 'SGEV Gaunt' if nobody else provides a pilot. Once on the away mission, your duty is to ensure that anything of scientific interest is brought back to the ship and passed to the relevant research lab."
 
 /datum/job/nt_pilot
 	title = "Shuttle Pilot"

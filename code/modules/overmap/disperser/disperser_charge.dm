@@ -83,8 +83,8 @@
 	name = "RN8-KOSMAG slug"
 	icon_state = "slug"
 	desc = "A charge to power the obstruction field disperser with. It looks impossibly round and shiny. This charge is designed to punch through defences and explode moments after entering a vessel."
-//	chargetype = OVERMAP_WEAKNESS_EXPLOSIVE //lol no
+	chargetype = OVERMAP_WEAKNESS_EXPLOSIVE
 	chargedesc = "KOSMAG"
 
 /obj/structure/ship_munition/disperser_charge/s2s/fire(turf/target, strength, range)
-	explosion(target,max(1,strength * range / 1),strength * range / 1,strength * range / 1)
+	explosion(target, strength * range / 1)

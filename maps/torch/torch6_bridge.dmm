@@ -3244,18 +3244,18 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_outer_chamber)
 "fs" = (
-/obj/machinery/door/airlock/vault/bolted{
-	name = "AI Core External Access"
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /obj/machinery/door/blast/regular{
+	density = 0;
 	dir = 4;
+	icon_state = "pdoor0";
 	id_tag = "earm_stairs";
-	name = "Chamber Lockdown"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+	name = "Aux-Bridge Lockdown";
+	opacity = 0
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
@@ -4078,23 +4078,22 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
 "gG" = (
-/obj/machinery/door/airlock/vault/bolted{
-	name = "AI Core Backup Access"
-	},
 /obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+/obj/machinery/door/airlock/vault,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id_tag = "earm_stairs";
+	name = "Aux-Bridge Lockdown";
+	opacity = 0
 	},
 /turf/simulated/floor/tiled/techmaint,
-/area/turret_protected/ai_outer_chamber)
+/area/turret_protected/ai_data_chamber)
 "gH" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/table/rack{
@@ -8255,9 +8254,12 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /obj/machinery/door/blast/regular{
+	density = 0;
 	dir = 4;
+	icon_state = "pdoor0";
 	id_tag = "earm_stairs";
-	name = "Chamber Lockdown"
+	name = "Aux-Bridge Lockdown";
+	opacity = 0
 	},
 /turf/simulated/open,
 /area/turret_protected/ai_data_chamber)
@@ -8841,27 +8843,21 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
 "ot" = (
-/obj/machinery/door/airlock/vault/bolted{
-	name = "AI Core External Access"
-	},
-/obj/machinery/door/blast/regular{
-	dir = 4;
-	id_tag = "earm_stairs";
-	name = "Chamber Lockdown"
-	},
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/door/airlock/vault,
 /turf/simulated/floor/tiled/techmaint,
-/area/turret_protected/ai_data_chamber)
+/area/turret_protected/ai_outer_chamber)
 "ou" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -9243,10 +9239,20 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/airlock/vault,
 /obj/machinery/door/blast/regular{
+	density = 0;
 	dir = 4;
+	icon_state = "pdoor0";
 	id_tag = "earm_stairs";
-	name = "Chamber Lockdown"
+	name = "Aux-Bridge Lockdown";
+	opacity = 0
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
@@ -9317,22 +9323,34 @@
 /turf/simulated/floor/tiled/dark,
 /area/aquila/airlock)
 "pg" = (
-/obj/machinery/door/airlock/vault/bolted{
-	name = "AI Core External Access"
+/obj/structure/cable{
+	d1 = 32;
+	d2 = 8;
+	icon_state = "32-8"
 	},
-/obj/machinery/door/blast/regular{
+/obj/structure/railing/mapped{
 	dir = 4;
+	icon_state = "railing0-1";
+	tag = "icon-railing0 (EAST)"
+	},
+/obj/structure/railing/mapped,
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1";
+	tag = "icon-railing0 (EAST)"
+	},
+/obj/machinery/atmospherics/pipe/zpipe/down/scrubbers,
+/obj/machinery/atmospherics/pipe/zpipe/down/supply,
+/obj/structure/disposalpipe/down,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
 	id_tag = "earm_stairs";
-	name = "Chamber Lockdown"
+	name = "Aux-Bridge Lockdown";
+	opacity = 0
 	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techmaint,
+/turf/simulated/open,
 /area/turret_protected/ai_data_chamber)
 "ph" = (
 /obj/structure/handrai{
@@ -10290,26 +10308,23 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/co)
 "qQ" = (
-/obj/structure/cable{
-	d1 = 32;
-	d2 = 8;
-	icon_state = "32-8"
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/structure/railing/mapped{
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/airlock/vault,
+/obj/machinery/door/blast/regular{
+	density = 0;
 	dir = 4;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
+	icon_state = "pdoor0";
+	id_tag = "earm_stairs";
+	name = "Aux-Bridge Lockdown";
+	opacity = 0
 	},
-/obj/structure/railing/mapped,
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1";
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/machinery/atmospherics/pipe/zpipe/down/scrubbers,
-/obj/machinery/atmospherics/pipe/zpipe/down/supply,
-/obj/structure/disposalpipe/down,
-/turf/simulated/open,
+/turf/simulated/floor/tiled/techmaint,
 /area/turret_protected/ai_data_chamber)
 "qR" = (
 /obj/structure/flora/pottedplant/large,
@@ -44954,7 +44969,7 @@ tJ
 ei
 ei
 ei
-gG
+ot
 ei
 ei
 ei
@@ -45762,7 +45777,7 @@ lk
 qT
 oG
 tL
-ot
+oY
 tQ
 oG
 pC
@@ -45962,11 +45977,11 @@ ad
 iK
 oG
 oH
-fs
+gG
 pD
 oN
 nv
-pg
+qQ
 oX
 oG
 iK
@@ -47375,10 +47390,10 @@ ad
 ad
 iK
 oG
-oY
+fs
 nz
 nz
-qQ
+pg
 qX
 qh
 rN

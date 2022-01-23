@@ -86,8 +86,8 @@
 	supervisors = "the Squad Leader"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 8
@@ -133,8 +133,8 @@
 	title = "Rifleman"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 4
+	spawn_positions = 4
 	minimal_player_age = 6
 	supervisors = "the Combat Technician and Squad Leader"
 	selection_color = "#557e38"
