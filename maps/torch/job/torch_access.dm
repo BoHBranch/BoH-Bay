@@ -22,13 +22,13 @@
 /var/const/access_aquila = "ACCESS_TORCH_AQUILA" //78
 /datum/access/aquila
 	id = access_aquila
-	desc = "NTSC Byakhee"
+	desc = "SGGS Byakhee"
 	region = ACCESS_REGION_GENERAL
 
 /var/const/access_aquila_helm = "ACCESS_TORCH_AQUILA_HELM" //79
 /datum/access/aquila_helm
 	id = access_aquila_helm
-	desc = "NTSC Byakhee Helm"
+	desc = "SGGS Byakhee Helm"
 	region = ACCESS_REGION_GENERAL
 
 /var/const/access_solgov_crew = "ACCESS_TORCH_CREW" //80
@@ -84,13 +84,13 @@
 /var/const/access_expedition_shuttle = "ACCESS_TORCH_EXPLO" //88
 /datum/access/exploration_shuttle
 	id = access_expedition_shuttle
-	desc = "NTEV Gaunt"
+	desc = "SGEV Gaunt"
 	region = ACCESS_REGION_GENERAL
 
 /var/const/access_guppy = "ACCESS_TORCH_GUP" //89
 /datum/access/guppy
 	id = access_guppy
-	desc = "NTRP Garuda"
+	desc = "SGRP Garuda"
 	region = ACCESS_REGION_GENERAL
 
 /var/const/access_seneng = "ACCESS_TORCH_SENIOR_ENG" //90

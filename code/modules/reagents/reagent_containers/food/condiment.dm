@@ -393,3 +393,12 @@
 	amount_per_transfer_from_this = 1
 	volume = 60
 	starting_reagents = list(/datum/reagent/drink/milk/cream = 60)
+
+/obj/item/weapon/reagent_containers/food/condiment/infantry
+	name = "the test"
+	desc = "Legend goes, that if you can drink this entire bottle in one go, you're a true Marine."
+	icon = 'icons/obj/aurora/food.dmi'
+	icon_state = "spacespicebottle"
+	amount_per_transfer_from_this = 1
+	volume = 120
+	starting_reagents = list(/datum/reagent/capsaicin/condensed = 120)

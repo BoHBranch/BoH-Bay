@@ -92,6 +92,7 @@
 /obj/item/weapon/material/hatchet/machete/deluxe
 	name = "deluxe machete"
 	desc = "A fine example of a machete, with a polished blade, wooden handle and a leather cord loop."
+	unbreakable = TRUE//Not supposed to be garbage.
 
 /obj/item/weapon/material/hatchet/machete/deluxe/Initialize()
 	. = ..()
