@@ -1470,9 +1470,6 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "do" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
@@ -3321,7 +3318,10 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/captainmess)
 "gx" = (
-/obj/effect/floor_decal/techfloor,
+/obj/effect/floor_decal/techfloor{
+	icon_state = "techfloor_edges";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/bunk)
 "gy" = (
@@ -3501,10 +3501,14 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/armory)
 "gR" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 6
+/obj/structure/bed,
+/obj/structure/window/reinforced{
+	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor,
+/obj/effect/landmark/start{
+	name = "Rifleman"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/bunk)
 "gS" = (
 /obj/machinery/light{
@@ -3539,9 +3543,10 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/armory)
 "gV" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/catwalk_plated/dark,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
 /turf/simulated/floor/plating,
 /area/security/infantry/com)
 "gW" = (
@@ -4732,16 +4737,32 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/bunk)
 "iX" = (
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 8
+/obj/effect/floor_decal/corner_techfloor_grid{
+	icon_state = "corner_techfloor_grid";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/bunk)
 "iY" = (
-/obj/effect/floor_decal/corner_techfloor_grid{
-	icon_state = "corner_techfloor_grid";
-	dir = 4
+/obj/effect/floor_decal/techfloor{
+	dir = 1
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24;
+	req_access = list("ACCESS_ENGINE_EQUIP")
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/bunk)
@@ -4922,7 +4943,17 @@
 /area/security/infantry/gear)
 "jp" = (
 /obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
+	dir = 1
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -4944,35 +4975,33 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
 "js" = (
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/effect/floor_decal/techfloor{
 	icon_state = "techfloor_edges";
-	dir = 10
+	dir = 5
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "intact-supply";
+	dir = 9
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/bunk)
 "jt" = (
 /obj/effect/floor_decal/techfloor{
-	dir = 1
+	icon_state = "techfloor_edges";
+	dir = 8
 	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24;
-	req_access = list("ACCESS_ENGINE_EQUIP")
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -22
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/bunk)
@@ -5054,16 +5083,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/office)
 "jC" = (
-/obj/structure/bed,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/effect/landmark/start{
-	name = "Rifleman"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/bunk)
-"jD" = (
 /obj/structure/closet/secure_closet/infantry,
 /obj/structure/window/reinforced{
 	dir = 8
@@ -5075,6 +5094,10 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/security/infantry/bunk)
+"jD" = (
+/obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/bunk)
 "jE" = (
@@ -5132,31 +5155,27 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/com)
 "jI" = (
-/obj/structure/closet/secure_closet/infantry,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4;
+	external_pressure_bound = 101.325;
+	external_pressure_bound_default = 101.325
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/bunk)
 "jJ" = (
-/obj/structure/bed,
-/obj/effect/landmark/start{
-	name = "Rifleman"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "intact-supply";
+	dir = 9
+	},
+/obj/effect/catwalk_plated/dark,
+/turf/simulated/floor/plating,
 /area/security/infantry/bunk)
 "jK" = (
-/obj/structure/bed,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/effect/landmark/start{
-	name = "Rifleman"
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/bunk)
@@ -5298,16 +5317,11 @@
 /turf/simulated/floor/reinforced/airless,
 /area/maintenance/fourthdeck/port)
 "jY" = (
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 8
+/obj/structure/bed,
+/obj/effect/landmark/start{
+	name = "Rifleman"
 	},
-/obj/machinery/alarm{
-	dir = 4;
-	icon_state = "alarm0";
-	pixel_x = -22
-	},
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/bunk)
 "jZ" = (
 /obj/structure/bed/chair{
@@ -5320,40 +5334,26 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/armory)
 "kb" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 1
-	},
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+/obj/structure/closet/secure_closet/infantry,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+/obj/structure/window/reinforced{
+	dir = 1;
+	health = 1e+006
 	},
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/bunk)
 "kc" = (
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 5
+/obj/structure/bed,
+/obj/structure/window/reinforced{
+	dir = 1
 	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
+/obj/effect/landmark/start{
+	name = "Rifleman"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	icon_state = "intact-supply";
-	dir = 9
-	},
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/bunk)
 "kd" = (
 /obj/structure/cable/green{
@@ -5377,8 +5377,11 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry)
 "kf" = (
-/obj/structure/table/rack/shelf/steel,
-/turf/simulated/floor/tiled/techfloor/grid,
+/obj/effect/floor_decal/techfloor{
+	icon_state = "techfloor_edges";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/bunk)
 "kg" = (
 /obj/effect/floor_decal/corner/mauve/mono,
@@ -5531,13 +5534,13 @@
 /turf/simulated/open,
 /area/quartermaster/hangar/top)
 "kr" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 1
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
+	},
+/obj/effect/floor_decal/techfloor{
+	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -5565,15 +5568,14 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/aft)
 "kv" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
+/obj/machinery/light{
+	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	icon_state = "intact-supply";
-	dir = 9
+/obj/effect/floor_decal/techfloor{
+	icon_state = "techfloor_edges";
+	dir = 10
 	},
-/obj/effect/catwalk_plated/dark,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/bunk)
 "kw" = (
 /obj/structure/cable/green{
@@ -5653,10 +5655,8 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
 "kE" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/catwalk_plated/dark,
-/turf/simulated/floor/plating,
+/obj/effect/floor_decal/techfloor,
+/turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/gear)
 "kF" = (
 /obj/machinery/door/firedoor,
@@ -5694,18 +5694,14 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
 "kI" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4;
-	external_pressure_bound = 101.325;
-	external_pressure_bound_default = 101.325
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
+/obj/effect/floor_decal/techfloor,
+/turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/bunk)
 "kJ" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
+/obj/effect/floor_decal/techfloor{
+	dir = 6
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
+/turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/bunk)
 "kK" = (
 /obj/structure/bed/chair{
@@ -5815,15 +5811,15 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/sorting)
 "kT" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
+/obj/effect/floor_decal/techfloor{
+	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	icon_state = "intact-supply";
-	dir = 9
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/obj/effect/catwalk_plated/dark,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/gear)
 "kU" = (
 /obj/item/clothing/head/bio_hood/security{
@@ -6256,6 +6252,65 @@
 /obj/item/device/radio/beacon,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/aft)
+"lN" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/security/infantry/com)
+"lO" = (
+/obj/effect/catwalk_plated/dark,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/plating,
+/area/security/infantry/gear)
+"lP" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/catwalk_plated/dark,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/plating,
+/area/security/infantry/com)
+"lQ" = (
+/obj/effect/floor_decal/techfloor,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/security/infantry/com)
+"lR" = (
+/obj/effect/catwalk_plated/dark,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor/plating,
+/area/security/infantry/com)
+"lS" = (
+/obj/effect/catwalk_plated/dark,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/turf/simulated/floor/plating,
+/area/security/infantry/gear)
+"lT" = (
+/obj/effect/catwalk_plated/dark,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/turf/simulated/floor/plating,
+/area/security/infantry/gear)
+"lU" = (
+/obj/effect/catwalk_plated/dark,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/plating,
+/area/security/infantry/gear)
 "lX" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -45480,10 +45535,10 @@ hA
 hA
 cc
 iW
-iX
-jY
-iX
-js
+gx
+jt
+gx
+kv
 fI
 fI
 Vr
@@ -45682,10 +45737,10 @@ hA
 hA
 cc
 gl
+gR
 jC
-jD
-jJ
-gx
+jY
+kI
 fI
 fI
 aa
@@ -45885,9 +45940,9 @@ lC
 cc
 kV
 iR
-kf
-jI
-gx
+jD
+kb
+kI
 fI
 fI
 aa
@@ -46086,10 +46141,10 @@ lI
 lL
 cc
 gW
-iY
+iX
+jI
+kc
 kI
-jK
-gx
 fI
 fI
 aa
@@ -46288,10 +46343,10 @@ cc
 cc
 cc
 gF
-jt
-kv
-jI
-gx
+iY
+jJ
+kb
+kI
 fI
 fI
 aa
@@ -46490,10 +46545,10 @@ lg
 fW
 jQ
 gF
-kb
-kJ
+jp
 jK
-gx
+kc
+kI
 fI
 fI
 aa
@@ -46692,10 +46747,10 @@ hD
 hF
 gJ
 jm
-kb
+jp
 iR
-jI
-gx
+kb
+kI
 fI
 fI
 aa
@@ -46894,10 +46949,10 @@ hD
 hD
 iV
 kR
-kc
+js
 jR
-jp
-gR
+kf
+kJ
 fI
 fI
 aa
@@ -47487,7 +47542,7 @@ fQ
 fQ
 hE
 do
-gV
+lP
 hL
 iU
 iK
@@ -47501,9 +47556,9 @@ hD
 jl
 jo
 kr
+lO
+lU
 kE
-kT
-ks
 jy
 jy
 aa
@@ -47687,10 +47742,10 @@ aa
 aa
 fQ
 fQ
-fR
-jU
-fV
-gT
+lN
+gV
+lR
+lQ
 fQ
 fN
 gv
@@ -47702,10 +47757,10 @@ gH
 hI
 iL
 jy
-jL
-iv
-kO
-iz
+kT
+lT
+lS
+ks
 jy
 jy
 aa
@@ -47889,10 +47944,10 @@ aa
 aa
 fQ
 fQ
-fQ
-fQ
-fQ
-fQ
+fR
+jU
+fV
+gT
 fQ
 iT
 iT
@@ -47904,10 +47959,10 @@ gt
 iT
 iT
 jy
-jy
-jy
-jy
-jy
+jL
+iv
+kO
+iz
 jy
 jy
 aa
