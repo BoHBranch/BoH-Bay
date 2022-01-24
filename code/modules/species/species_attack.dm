@@ -193,3 +193,33 @@
 
 /datum/unarmed_attack/bite/venom/get_damage_type()
 	return TOX
+
+/datum/unarmed_attack/claws/armalis
+	blocked_by_gloves = FALSE
+	attack_verb = list("rends", "cleaved", "tore", "pierced")
+	attack_noun = list("talon")
+	attack_sound = 'sound/weapons/heavysmash.ogg'
+	damage = 15
+	shredding = 1
+	sharp = 1
+	edge = 1
+	delay = 5
+	eye_attack_text = "a talon"
+	eye_attack_text_victim = "a talon"
+	attack_name = "talon slash"
+
+/datum/unarmed_attack/stomp/armalis
+	damage = 15//atop magboots if not clamped, for future stuff
+	shredding = 1//the rest explains itself
+	sharp = 1
+	edge = 1
+	attack_verb = list("crushed")
+	attack_noun = list("crush")
+	attack_name = "crush"
+
+/datum/unarmed_attack/bite/armalis
+	attack_verb = list("bit", "clamped their beak around")
+	attack_sound = 'sound/weapons/bite.ogg'
+	damage = 45//HAHAHAHA NO.
+	delay = 240
+	attack_name = "strong bite"

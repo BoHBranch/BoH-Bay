@@ -11286,9 +11286,6 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/machinery/light/spot{
-	dir = 4
-	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "vg" = (
@@ -13581,9 +13578,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/light/spot{
-	dir = 8
-	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "zc" = (
@@ -14960,6 +14954,12 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head)
+"BI" = (
+/obj/machinery/light/spot{
+	dir = 4
+	},
+/turf/simulated/open,
+/area/hallway/primary/thirddeck/aft)
 "BK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -50549,7 +50549,7 @@ ww
 rB
 zc
 zn
-zg
+BI
 zw
 zC
 AF

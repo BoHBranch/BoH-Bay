@@ -141,11 +141,17 @@
 
 	slowdown = 1.5
 	hidden_from_codex = TRUE
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_FLAG_NO_MINOR_CUT | SPECIES_IS_WHITELISTED
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_FLAG_NO_MINOR_CUT | SPECIES_IS_WHITELISTED | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_POISON
 	brute_mod = 0.5
 	burn_mod = 0.5
 	strength = STR_HIGH
 	mob_size = MOB_LARGE
+
+	unarmed_types = list(
+		/datum/unarmed_attack/stomp/armalis,
+		/datum/unarmed_attack/claws/armalis,
+		/datum/unarmed_attack/bite/armalis
+	)
 
 	speech_sounds = list('sound/voice/shriek1.ogg')
 	speech_chance = 25
@@ -173,4 +179,4 @@
 		grabber.unEquip(grabber.r_hand)
 		to_chat(grabber, SPAN_WARNING("You drop everything in a rage as you seize \the [target]!"))
 		playsound(grabber.loc, 'sound/weapons/pierce.ogg', 25, 1, -1)
-	. = ..(grabber, target, GRAB_NAB)
+	. = ..(grabber, target, GRAB_ARMALIS)

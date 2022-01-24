@@ -17,6 +17,7 @@
 #define GRAB_NORMAL			"normal"
 #define GRAB_NAB			"nab"
 #define GRAB_NAB_SPECIAL	"special nab"
+#define GRAB_ARMALIS			"armalis grab"
 
 // Grab levels.
 #define NORM_PASSIVE    "normal passive"
@@ -28,6 +29,10 @@
 #define NAB_PASSIVE		"nab passive"
 #define NAB_AGGRESSIVE	"nab aggressive"
 #define NAB_KILL		"nab kill"
+
+#define ARMALIS_PASSIVE		"armalis passive"
+#define ARMALIS_AGGRESSIVE	"armalis aggressive"
+#define ARMALIS_KILL		"armalis kill"
 
 #define BORGMESON 0x1
 #define BORGTHERM 0x2

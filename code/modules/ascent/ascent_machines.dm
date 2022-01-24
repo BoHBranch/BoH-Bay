@@ -173,6 +173,14 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 	construct_state = /decl/machine_construction/default/panel_closed/computer/no_deconstruct
 	base_type = /obj/machinery/computer/ship/sensors
 
+/obj/machinery/computer/ship/disperser/ascent
+	icon_state = "ascent"
+	icon_keyboard = "ascent_key"
+	icon_screen = "ascent_screen"
+	req_access = list(access_ascent)
+	construct_state = /decl/machine_construction/default/panel_closed/computer/no_deconstruct
+	base_type = /obj/machinery/computer/ship/disperser
+
 // This is an absolutely stupid machine. Basically the same as the debug one with some alterations.
 // It is a placeholder for a proper reactor setup (probably a RUST descendant)
 /obj/machinery/power/ascent_reactor
