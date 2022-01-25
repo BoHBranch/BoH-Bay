@@ -65,7 +65,7 @@
 	name = FACTION_SPACECOPS
 	description = "The Sol Federal (SFP) is a government law enforcement agency tasked with enforcing Sol Central Government law, \
 	investigating breaches of law, fugitive recovery and transport, and securing ports of entry. \
-	Some Agents embedded with other organizations (e.g. an <l>Expeditionary Corps</l> ship) and are expected to answer to their superiours from those organizations. \
+	Some Agents embedded with other organizations (e.g. a <l>SolGov Fleet</l> vessel) and are expected to answer to their superiours from those organizations. \
 	Notable units are Organized Crime & Vice (self-explanatory), Territory Support (ports of entry and helping local law enforcement), \
 	Special Investigations (sensitive and urgent cases) and Fugitive Recovery Division (for when local authorities are unable or unwilling to arrest someone). \
 	The contractor SFP Trackers are also used find and arrest low-profile fugitives from justice."
@@ -127,7 +127,7 @@
 	description = "Deimos Advanced Information Systems (DAIS) is a large corporation specializing in information technology such as computer hardware \
 	and software, telecommunications equipment, and networking equipment based on Mars. It is the number one supplier of computer technology in The Sol Central \
 	 Government, its systems used by most consumers and businesses within SolGov. DAIS is actually older than the Sol Central Government and is one of the very \
-	few corporate members of the Solar Assembly. DAIS is also a major investor in the Torch project, and is on the Expeditionary Corps Organization board of directors. \
+	few corporate members of the Solar Assembly. DAIS is also a major investor in the Torch project. \
 	Currently DAIS is invested in bluespace computing research and artificial intelligence research. Despite recent intrusions by NanoTrasen into their sector with NTNet \
 	and related products, they still remain the market leader in computer technologies."
 	economic_power = 1.1
