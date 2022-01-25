@@ -3575,11 +3575,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
-/obj/structure/closet/secure_closet/guncabinet,
-/obj/item/weapon/gun/energy/laser/secure,
-/obj/item/weapon/gun/energy/laser/secure,
-/obj/item/weapon/gun/energy/laser/secure,
-/obj/item/weapon/gun/energy/laser/secure,
+/obj/structure/closet/secure_closet/guncabinet/sidearm/small,
 /turf/simulated/floor/tiled/steel_grid,
 /area/defturrets)
 "gR" = (

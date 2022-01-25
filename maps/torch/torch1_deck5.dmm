@@ -772,9 +772,6 @@
 	icon_state = "tube1";
 	dir = 1
 	},
-/obj/structure/sign/ecplaque{
-	pixel_y = 30
-	},
 /obj/structure/bed/chair/shuttle/blue,
 /turf/simulated/floor/tiled,
 /area/exploration_shuttle/crew)
@@ -4146,9 +4143,6 @@
 "hm" = (
 /obj/structure/closet/secure_closet/pilot,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/sign/ecplaque{
-	pixel_y = 30
-	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/pilot)
 "hn" = (
@@ -4993,9 +4987,6 @@
 	},
 /obj/item/weapon/folder/blue,
 /obj/effect/floor_decal/corner/mauve/mono,
-/obj/structure/sign/ecplaque{
-	pixel_y = 30
-	},
 /obj/machinery/light_switch{
 	pixel_x = 22;
 	pixel_y = 22
@@ -5912,9 +5903,6 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
-	},
-/obj/structure/sign/ecplaque{
-	pixel_y = -30
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)

@@ -1973,36 +1973,10 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "di" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
-/obj/structure/window/reinforced{
-	dir = 2;
-	health = 1e+007
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/machinery/door/window/brigdoor/westright{
-	autoset_access = 0;
-	dir = 4;
-	name = "CMO's suit storage";
-	req_access = list("ACCESS_CHIEF_MEDICAL_OFFICER")
-	},
-/obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/effect/floor_decal/corner/paleblue/diagonal{
-	icon_state = "corner_white_diagonal";
-	dir = 4
-	},
-/obj/item/weapon/tank/emergency/oxygen/double,
-/obj/item/weapon/rig/command/medical/equipped,
-/turf/simulated/floor/tiled/dark,
-/area/aux_eva)
+/obj/machinery/photocopier,
+/obj/effect/floor_decal/corner/research/mono,
+/turf/simulated/floor/tiled/monotile,
+/area/crew_quarters/heads/office/rd)
 "dj" = (
 /obj/machinery/light{
 	dir = 4;
@@ -2909,19 +2883,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/xo)
 "eR" = (
-/obj/structure/disposalpipe/trunk{
-	dir = 1
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/machinery/disposal,
-/obj/effect/floor_decal/corner/blue/three_quarters{
-	dir = 4
-	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/sign/ecplaque{
-	pixel_x = 29
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/bridge/meeting_room)
+/turf/simulated/floor/tiled/dark,
+/area/bridge/storage)
 "eS" = (
 /obj/structure/cable/green{
 	d2 = 8;
@@ -3437,24 +3406,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
 "fH" = (
-/obj/structure/table/rack,
-/obj/structure/window/reinforced,
-/obj/machinery/door/window/brigdoor/westright{
-	dir = 8;
-	name = "CE's Equipment Storage"
-	},
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
+/obj/structure/disposalpipe/trunk{
 	dir = 1
 	},
-/obj/item/weapon/tank/emergency/oxygen/double,
-/obj/effect/floor_decal/corner/yellow/full,
-/obj/item/weapon/rig/ce/equipped,
-/turf/simulated/floor/tiled/monotile,
-/area/aux_eva)
+/obj/machinery/disposal,
+/obj/effect/floor_decal/corner/blue/three_quarters{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/dark/monotile,
+/area/bridge/meeting_room)
 "fI" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/bridge/aft)
@@ -4216,18 +4177,35 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "gS" = (
-/obj/structure/displaycase,
-/obj/structure/sign/ecplaque{
-	pixel_x = 29
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/table/rack{
+	dir = 8
 	},
-/obj/machinery/light,
-/obj/structure/sign/warning/smoking{
-	pixel_x = 0;
-	pixel_y = -26
+/obj/structure/window/reinforced{
+	dir = 1;
+	health = 1e+006
 	},
-/obj/item/weapon/gun/energy/captain,
-/turf/simulated/floor/wood/walnut,
-/area/crew_quarters/heads/office/co)
+/obj/structure/window/reinforced{
+	dir = 2;
+	health = 1e+007
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/blue/diagonal,
+/obj/effect/floor_decal/corner/blue/diagonal{
+	dir = 4
+	},
+/obj/item/weapon/tank/emergency/oxygen/double,
+/obj/item/weapon/rig/command/xo/equipped,
+/obj/machinery/door/window/brigdoor/westright{
+	autoset_access = 0;
+	dir = 8;
+	name = "XO's suit storage";
+	req_access = list("ACCESS_HEAD_OF_PERSONNEL")
+	},
+/turf/simulated/floor/tiled/dark,
+/area/aux_eva)
 "gT" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -4759,14 +4737,19 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/item/weapon/tank/emergency/oxygen/double,
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
 	dir = 4;
-	name = "CSO's suit storage";
-	req_access = list("ACCESS_RESEARCH_DIRECTOR")
+	name = "CMO's suit storage";
+	req_access = list("ACCESS_CHIEF_MEDICAL_OFFICER")
 	},
-/obj/item/weapon/rig/hazmat/equipped,
+/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/effect/floor_decal/corner/paleblue/diagonal{
+	icon_state = "corner_white_diagonal";
+	dir = 4
+	},
+/obj/item/weapon/tank/emergency/oxygen/double,
+/obj/item/weapon/rig/command/medical/equipped,
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
 "ia" = (
@@ -12268,12 +12251,67 @@
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/vip)
+"uh" = (
+/obj/structure/window/reinforced{
+	dir = 2;
+	health = 1e+007
+	},
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	health = 1e+006
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/window/brigdoor/westright{
+	autoset_access = 0;
+	dir = 8;
+	name = "CO's suit storage";
+	req_access = list("ACCESS_CAPTAIN")
+	},
+/obj/effect/floor_decal/corner/blue/diagonal,
+/obj/effect/floor_decal/corner/blue/diagonal{
+	dir = 4
+	},
+/obj/item/weapon/tank/emergency/oxygen/double,
+/obj/item/weapon/rig/command/co/equipped,
+/turf/simulated/floor/tiled/dark,
+/area/aux_eva)
 "ui" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/vip)
+"uj" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1;
+	health = 1e+006
+	},
+/obj/structure/window/reinforced{
+	dir = 2;
+	health = 1e+007
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/item/weapon/tank/emergency/oxygen/double,
+/obj/machinery/door/window/brigdoor/westright{
+	autoset_access = 0;
+	dir = 4;
+	name = "CSO's suit storage";
+	req_access = list("ACCESS_RESEARCH_DIRECTOR")
+	},
+/obj/item/weapon/rig/hazmat/equipped,
+/turf/simulated/floor/tiled/dark,
+/area/aux_eva)
 "uk" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -12310,6 +12348,26 @@
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/turret_protected/ai_foyer)
+"un" = (
+/obj/structure/table/rack,
+/obj/structure/window/reinforced,
+/obj/machinery/door/window/brigdoor/westright{
+	dir = 8;
+	name = "CE's Equipment Storage";
+	req_access = list("ACCESS_CHIEF_ENGINEER")
+	},
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/item/weapon/tank/emergency/oxygen/double,
+/obj/effect/floor_decal/corner/yellow/full,
+/obj/item/weapon/rig/ce/equipped,
+/turf/simulated/floor/tiled/monotile,
+/area/aux_eva)
 "uo" = (
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/photocopier/faxmachine{
@@ -12570,6 +12628,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/turret_protected/ai_outer_chamber)
+"uM" = (
+/obj/structure/displaycase,
+/obj/machinery/light,
+/obj/structure/sign/warning/smoking{
+	pixel_x = 0;
+	pixel_y = -26
+	},
+/obj/item/weapon/gun/energy/captain,
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/heads/office/co)
 "uN" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/weapon/paper_bin{
@@ -15275,36 +15343,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
-"Dq" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
-/obj/structure/window/reinforced{
-	dir = 2;
-	health = 1e+007
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/blue/diagonal,
-/obj/effect/floor_decal/corner/blue/diagonal{
-	dir = 4
-	},
-/obj/item/weapon/tank/emergency/oxygen/double,
-/obj/item/weapon/rig/command/xo/equipped,
-/obj/machinery/door/window/brigdoor/westright{
-	autoset_access = 0;
-	dir = 8;
-	name = "XO's suit storage";
-	req_access = list("ACCESS_HEAD_OF_PERSONNEL")
-	},
-/turf/simulated/floor/tiled/dark,
-/area/aux_eva)
 "Dr" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -16873,18 +16911,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/psiadvisor)
-"Mi" = (
-/obj/structure/sign/ecplaque{
-	pixel_x = 29
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/bridge/storage)
 "Mj" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -18511,43 +18537,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
-"Uh" = (
-/obj/structure/window/reinforced{
-	dir = 2;
-	health = 1e+007
-	},
-/obj/structure/table/rack{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/machinery/door/window/brigdoor/westright{
-	autoset_access = 0;
-	dir = 8;
-	name = "CO's suit storage";
-	req_access = list("ACCESS_CAPTAIN")
-	},
-/obj/effect/floor_decal/corner/blue/diagonal,
-/obj/effect/floor_decal/corner/blue/diagonal{
-	dir = 4
-	},
-/obj/item/weapon/tank/emergency/oxygen/double,
-/obj/item/weapon/rig/command/co/equipped,
-/turf/simulated/floor/tiled/dark,
-/area/aux_eva)
-"Ui" = (
-/obj/structure/sign/ecplaque{
-	pixel_y = 30
-	},
-/obj/machinery/photocopier,
-/obj/effect/floor_decal/corner/research/mono,
-/turf/simulated/floor/tiled/monotile,
-/area/crew_quarters/heads/office/rd)
 "Uk" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/firedoor,
@@ -28195,7 +28184,7 @@ qO
 GY
 nO
 nW
-Mi
+eR
 Oe
 Se
 lL
@@ -28215,7 +28204,7 @@ bf
 Io
 Kh
 uC
-gS
+uM
 uy
 IB
 To
@@ -30631,7 +30620,7 @@ dQ
 dS
 jH
 es
-eR
+fH
 id
 rb
 rV
@@ -33239,7 +33228,7 @@ gz
 fd
 gh
 sT
-Ui
+di
 bj
 nj
 Aj
@@ -35480,8 +35469,8 @@ na
 on
 Qh
 gH
-di
 hZ
+uj
 yi
 Bp
 Ci
@@ -36287,9 +36276,9 @@ Sg
 ne
 on
 Th
-Dq
-Uh
-fH
+gS
+uh
+un
 bk
 zz
 IW

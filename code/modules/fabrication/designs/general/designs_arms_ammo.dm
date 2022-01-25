@@ -25,7 +25,7 @@
 	path = /obj/item/ammo_magazine/shotholder/shell
 
 /datum/fabricator_recipe/arms_ammo/hidden/shotgun_holder_rubbershot
-	name = "shotgun shell pack (12g), (rubbershot)"
+	name = "shotgun shell pack (12g), (birdshot)"
 	path = /obj/item/ammo_magazine/shotholder/birdshot
 
 /datum/fabricator_recipe/arms_ammo/hidden/shotgun_holder_beanbag

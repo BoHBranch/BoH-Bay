@@ -7834,9 +7834,6 @@
 /obj/machinery/light/spot{
 	dir = 8
 	},
-/obj/structure/sign/ecplaque{
-	pixel_y = -30
-	},
 /obj/machinery/vending/cigarette{
 	icon_state = "cigs";
 	dir = 4

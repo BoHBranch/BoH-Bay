@@ -6311,6 +6311,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/infantry/gear)
+"lV" = (
+/obj/effect/floor_decal/corner/mauve/mono,
+/obj/machinery/disposal,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/command/pathfinder)
 "lX" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -7269,18 +7278,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod4/station)
-"oO" = (
-/obj/effect/floor_decal/corner/mauve/mono,
-/obj/machinery/disposal,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/obj/structure/sign/ecplaque{
-	pixel_x = 30
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/command/pathfinder)
 "oP" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/quartermaster/office)
@@ -35022,7 +35019,7 @@ fl
 Zz
 my
 zE
-oO
+lV
 TT
 Xo
 sK
