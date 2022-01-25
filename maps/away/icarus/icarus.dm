@@ -56,7 +56,7 @@
 
 /obj/item/weapon/disk/icarus
 	name = "black box backup disk"
-	desc = "Digital storage. Inscription says: \"Deliver to Sol Goverment Expeditionary Corps Command!\". Content is encrypted with quantum crypthography methods."
+	desc = "Digital storage. Inscription says: \"Deliver to Sol Goverment Fleet Command!\". Content is encrypted with quantum crypthography methods."
 	icon = 'icons/obj/items.dmi'
 	icon_state = "nucleardisk"
 	item_state = "card-id"
@@ -149,7 +149,7 @@
 
 /obj/item/clothing/under/icarus/ec_uniform
 	name = "expeditionary uniform"
-	desc = "An older model of the utility uniform of the SCG Expeditionary Corps. It has a patch on the left sleeve signifying the wearer served on the SEV Icarus."
+	desc = "An older model of the utility uniform of the SolGov Fleet. It has a patch on the left sleeve signifying the wearer served on the SEV Icarus."
 	icon_state = "blackutility_crew"
 	worn_state = "blackutility_crew"
 	icon = 'maps/away/icarus/icarus_sprites.dmi'

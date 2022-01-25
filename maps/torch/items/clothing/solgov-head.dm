@@ -147,12 +147,12 @@
 
 /obj/item/clothing/head/solgov/dress/fleet
 	name = "fleet dress wheel cover"
-	desc = "A white dress uniform cover. This one has NT's Expeditionary Fleet crest."
+	desc = "A white dress uniform cover. This one has a SolGov Fleet crest."
 	icon_state = "whitepeakcap"
 
 /obj/item/clothing/head/solgov/dress/fleet/command
 	name = "fleet officer's dress wheel cover"
-	desc = "A white dress uniform cover. This one has a gold stripe and NT's Expeditionary Fleet crest."
+	desc = "A white dress uniform cover. This one has a gold stripe and a SolGov Fleet crest."
 	icon_state = "whitepeakcap_com"
 
 /obj/item/clothing/head/solgov/dress/army
@@ -226,7 +226,7 @@
 
 /obj/item/clothing/head/beret/solgov/expedition
 	name = "Surveyor Corps beret"
-	desc = "A black beret belonging to the NT Surveyor Corps. For personnel that are more inclined towards style than safety."
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black"
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
@@ -234,129 +234,129 @@
 
 /obj/item/clothing/head/beret/solgov/expedition/security
 	name = "Surveyor Corps security beret"
-	desc = "An NT Surveyor Corps beret with a security crest. For personnel that are more inclined towards style than safety."
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_security"
 
 /obj/item/clothing/head/beret/solgov/expedition/medical
 	name = "Surveyor Corps medical beret"
-	desc = "An NT Surveyor Corps beret with a medical crest. For personnel that are more inclined towards style than safety."
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_medical"
 
 /obj/item/clothing/head/beret/solgov/expedition/engineering
 	name = "Surveyor Corps engineering beret"
-	desc = "An NT Surveyor Corps Corps beret with an engineering crest. For personnel that are more inclined towards style than safety."
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_engineering"
 
 /obj/item/clothing/head/beret/solgov/expedition/supply
 	name = "Surveyor Corps supply beret"
-	desc = "An NT Surveyor Corps beret with a supply crest. For personnel that are more inclined towards style than safety."
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_supply"
 
 /obj/item/clothing/head/beret/solgov/expedition/service
 	name = "Surveyor Corps service beret"
-	desc = "An NT Surveyor Corps beret with a service crest. For personnel that are more inclined towards style than safety."
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_service"
 
 /obj/item/clothing/head/beret/solgov/expedition/exploration
 	name = "Surveyor Corps exploration beret"
-	desc = "An NT Surveyor Corps Corps beret with an exploration crest. For personnel that are more inclined towards style than safety."
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_exploration"
 
 /obj/item/clothing/head/beret/solgov/expedition/command
 	name = "Surveyor Corps officer's beret"
-	desc = "An NT Surveyor Corps Corps beret with a golden crest. For personnel that are more inclined towards style than safety."
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_command"
 
 /obj/item/clothing/head/beret/solgov/expedition/branch
 	name = "\improper Field Operations beret"
-	desc = "An NT Private Fleet beret carrying insignia of the Field Operations section of the Surveyor Corps. For personnel that are more inclined towards style than safety."
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_fieldOps"
 
 /obj/item/clothing/head/beret/solgov/expedition/branch/observatory
 	name = "\improper Observatory beret"
-	desc = "An NT Private Fleet beret carrying insignia of the Observatory section of the Expeditionary Corps. For personnel that are more inclined towards style than safety."
+	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black_observatory"
 
 /obj/item/clothing/head/beret/solgov/fleet
 	name = "fleet beret"
-	desc = "A navy blue beret belonging to the NT Private Fleet. For personnel that are more inclined towards style than safety."
+	desc = "A navy blue beret belonging to the SolGov Fleet. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy"
 
 /obj/item/clothing/head/beret/solgov/fleet/security
 	name = "fleet security beret"
-	desc = "An NT Private Fleet beret with a security crest. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret with a security crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_security"
 
 /obj/item/clothing/head/beret/solgov/fleet/medical
 	name = "fleet medical beret"
-	desc = "An NT Private Fleet beret with a medical crest. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret with a medical crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_medical"
 
 /obj/item/clothing/head/beret/solgov/fleet/engineering
 	name = "fleet engineering beret"
-	desc = "An NT Private Fleet with an engineering crest. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret with an engineering crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_engineering"
 
 /obj/item/clothing/head/beret/solgov/fleet/supply
 	name = "fleet supply beret"
-	desc = "An NT Private Fleet beret with a supply crest. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret with a supply crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_supply"
 
 /obj/item/clothing/head/beret/solgov/fleet/service
 	name = "fleet service beret"
-	desc = "An NT Private Fleet beret with a service crest. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret with a service crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_service"
 
 /obj/item/clothing/head/beret/solgov/fleet/exploration
-	name = "fleet Surveyor beret"
-	desc = "An NT Private Fleet beret with an exploration crest. For personnel that are more inclined towards style than safety."
+	name = "fleet explorer beret"
+	desc = "A SolGov Fleet beret with an exploration crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_exploration"
 
 /obj/item/clothing/head/beret/solgov/fleet/command
 	name = "fleet officer's beret"
-	desc = "An NT Private Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_command"
 
 /obj/item/clothing/head/beret/solgov/fleet/dress
 	name = "fleet dress beret"
-	desc = "A white NT Private Fleet beret. For personnel that are more inclined towards style than safety."
+	desc = "A white SolGov Fleet beret. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_whiterim"
 
 /obj/item/clothing/head/beret/solgov/fleet/dress/command
 	name = "fleet officer's dress beret"
-	desc = "A white NT Private Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
+	desc = "A white SolGov Fleet beret with a golden crest. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_whiterim_com"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch
 	name = "first fleet beret"
-	desc = "A NT Fleet beret carrying insignia of First Fleet. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret carrying insignia of First Fleet. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_first"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/second
 	name = "second fleet beret"
-	desc = "A NT Fleet beret carrying insignia of Second Fleet. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret carrying insignia of Second Fleet. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_second"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/third
 	name = "third fleet beret"
-	desc = "A NT Fleet beret carrying insignia of Third Fleet. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret carrying insignia of Third Fleet. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_third"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/fourth
 	name = "fourth fleet beret"
-	desc = "A NT Fleet beret carrying insignia of Fourth Fleet. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret carrying insignia of Fourth Fleet. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_fourth"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/fifth
 	name = "fifth fleet beret"
-	desc = "A NT Fleet beret carrying insignia of Fifth Fleet. For personnel that are more inclined towards style than safety."
+	desc = "A SolGov Fleet beret carrying insignia of Fifth Fleet. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_fifth"
 
 //ushanka
 
 /obj/item/clothing/head/ushanka/solgov
 	name = "Surveyor Corps fur hat"
-	desc = "An NT Surveyor Corps synthfur-lined hat for operating in cold environments."
+	desc = "A dated Surveyor Corps synthfur-lined hat for operating in cold environments."
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	icon_state = "ecushankadown"
@@ -364,7 +364,7 @@
 
 /obj/item/clothing/head/ushanka/solgov/fleet
 	name = "fleet fur hat"
-	desc = "A Private Fleet synthfur-lined hat for operating in cold environments."
+	desc = "A SolGov Fleet synthfur-lined hat for operating in cold environments."
 	icon_state = "flushankadown"
 	icon_state_up = "flushankaup"
 
@@ -398,7 +398,7 @@
 
 /obj/item/clothing/head/helmet/solgov/command
 	name = "command helmet"
-	desc = "A helmet with 'NTF SECURITY' printed on the back in gold lettering."
+	desc = "A helmet with 'SCGF SECURITY' printed on the back in gold lettering."
 	icon_state = "helmet_command"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')

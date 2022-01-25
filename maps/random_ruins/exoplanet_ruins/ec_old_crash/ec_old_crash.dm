@@ -55,7 +55,7 @@
 
 /obj/item/weapon/ecletters/Initialize()
 	. = ..()
-	desc = "A bunch of letters from Expeditionary Corps explorers to their family and loved ones, dated [game_year - 142]. They're not hopeful."
+	desc = "A bunch of letters from SolGov Fleet explorers to their family and loved ones, dated [game_year - 142]. They're not hopeful."
 
 /obj/item/weapon/paper/ecrashlog
 	name = "handwritten note"
