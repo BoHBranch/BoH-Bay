@@ -16,8 +16,8 @@
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
 /obj/item/clothing/suit/storage/solgov/service/expeditionary
-	name = "expeditionary jacket"
-	desc = "A uniform service jacket belonging to the SCG Expeditionary Corps."
+	name = "exploration jacket"
+	desc = "A uniform service jacket belonging to SolGov Fleet exploration personnel."
 	icon_state = "ecservice_crew"
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_suit_unathi.dmi'
@@ -68,27 +68,27 @@
 
 /obj/item/clothing/suit/storage/solgov/service/fleet
 	name = "fleet service jacket"
-	desc = "A navy blue Nanotrasen Expeditionary Fleet service jacket."
+	desc = "A navy blue SolGov Fleet service jacket."
 	icon_state = "blueservice"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 	name = "fleet SNCO service jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet service jacket with silver cuffs."
+	desc = "A navy blue SolGov Fleet service jacket with silver cuffs."
 	icon_state = "blueservice_snco"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/officer
 	name = "fleet officer's service jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with silver accents."
+	desc = "A navy blue SolGov Fleet dress jacket with silver accents."
 	icon_state = "blueservice_off"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/command
 	name = "fleet senior officer's service jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with gold accents."
+	desc = "A navy blue SolGov Fleet dress jacket with gold accents."
 	icon_state = "blueservice_comm"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/flag
 	name = "fleet flag officer's service jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with red accents."
+	desc = "A navy blue SolGov Fleet dress jacket with red accents."
 	icon_state = "blueservice_flag"
 
 /obj/item/clothing/suit/storage/solgov/service/army
@@ -169,7 +169,7 @@
 
 /obj/item/clothing/suit/storage/solgov/dress/expedition
 	name = "expeditionary dress coat"
-	desc = "A silver and black dress peacoat belonging to the NanoTrasen Surveyor Corps. Fashionable, for the 25th century at least."
+	desc = "A silver and black dress peacoat belonging to the SolGov Fleet. Fashionable, for the 25th century at least."
 	icon_state = "ecdress_xpl"
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_suit_unathi.dmi'
@@ -185,7 +185,7 @@
 
 /obj/item/clothing/suit/storage/solgov/dress/expedition/command
 	name = "expeditionary officer's dress coat"
-	desc = "A gold and black dress peacoat belonging to the NanoTrasen Surveyor Corps. The height of fashion."
+	desc = "A gold and black dress peacoat belonging to the SolGov Fleet. The height of fashion."
 	icon_state = "ecdress_ofcr"
 
 /obj/item/clothing/suit/storage/solgov/dress/expedition/command/cdr
@@ -202,28 +202,28 @@
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet
 	name = "fleet dress jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket. Don't get near pasta sauce or vox."
+	desc = "A navy blue SolGov Fleet dress jacket. Don't get near pasta sauce or vox."
 	icon_state = "whitedress"
 	item_state = "whitedress"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
 	name = "fleet dress SNCO jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with silver cuffs. Don't get near pasta sauce or vox."
+	desc = "A navy blue SolGov Fleet dress jacket with silver cuffs. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_snco"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	name = "fleet officer's dress jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with silver accents. Don't get near pasta sauce or vox."
+	desc = "A navy blue SolGov Fleet dress jacket with silver accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_off"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 	name = "fleet senior officer's dress jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with gold accents. Don't get near pasta sauce or vox."
+	desc = "A navy blue SolGov Fleet dress jacket with gold accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_comm"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 	name = "fleet flag officer's dress jacket"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress jacket with red accents. Don't get near pasta sauce or vox."
+	desc = "A navy blue SolGov Fleet dress jacket with red accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_flag"
 
 /obj/item/clothing/suit/dress/solgov
@@ -239,7 +239,7 @@
 
 /obj/item/clothing/suit/dress/solgov/fleet/sailor
 	name = "fleet dress overwear"
-	desc = "A navy blue NanoTrasen Expeditionary Fleet dress suit. Almost looks like a school-girl outfit."
+	desc = "A navy SolGov Fleet dress suit. Almost looks like a school-girl outfit."
 	icon_state = "sailordress"
 
 /obj/item/clothing/suit/dress/solgov/army

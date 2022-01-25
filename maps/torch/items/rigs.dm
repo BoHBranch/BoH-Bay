@@ -9,7 +9,7 @@
 	name = "command HCM"
 	suit_type = "command hardsuit"
 	icon = 'maps/torch/icons/obj/uniques.dmi'
-	desc = "A specialized hardsuit rig control module issued to command staff of the Expeditionary Corps and their peers."
+	desc = "A specialized hardsuit rig control module issued to command staff of the SolGov Fleet and their peers."
 	icon_state = "command_rig"
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
@@ -75,7 +75,7 @@
 /obj/item/weapon/rig/command/xo
 	name = "officer's command HCM"
 	suit_type = "advanced command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to high ranking officers of the Expeditionary Corps and their peers."
+	desc = "A specialized hardsuit rig control module issued to high ranking officers of the SolGov Fleet and their peers."
 	icon_state = "command_XO_rig"
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
@@ -115,7 +115,7 @@
 /obj/item/weapon/rig/command/co
 	name = "commanding officer's command HCM"
 	suit_type = "advanced command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to commanding officers of the Expeditionary Corps."
+	desc = "A specialized hardsuit rig control module issued to commanding officers of the SolGov Fleet."
 	icon_state = "command_CO_rig"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
@@ -156,7 +156,7 @@
 /obj/item/weapon/rig/command/medical
 	name = "medical command HCM"
 	suit_type = "medical command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to ranking medical officers of the Expeditionary Corps and their peers."
+	desc = "A specialized hardsuit rig control module issued to ranking medical officers of the SolGov Fleet and their peers."
 	icon_state = "command_med_rig"
 
 	chest_type = /obj/item/clothing/suit/space/rig/command/medical
@@ -199,7 +199,7 @@
 /obj/item/weapon/rig/command/security
 	name = "security command HCM"
 	suit_type = "security command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to ranking security officers of the Expeditionary Corps and their peers."
+	desc = "A specialized hardsuit rig control module issued to ranking security officers of the SolGov Fleet or Marines and their peers."
 	icon_state = "command_sec_rig"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
@@ -246,7 +246,7 @@
 /obj/item/weapon/rig/command/science
 	name = "research command HCM"
 	suit_type = "research command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to ranking research officers of the Expeditionary Corps."
+	desc = "A specialized hardsuit rig control module issued to ranking research officers of the SolGov Fleet."
 	icon_state = "command_sci_rig"
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
@@ -307,7 +307,7 @@
 /obj/item/weapon/rig/exploration
 	name = "heavy exploration HCM"
 	suit_type = "heavy exploration hardsuit"
-	desc = "Expeditionary Corps' Exoplanet Exploration Armored Unit, A-Unit for short. Built for more hostile (and hungry) environments, it features additional armor and powered exoskeleton."
+	desc = "Odyssey' Exoplanet Exploration Armored Unit, A-Unit for short. Built for more hostile (and hungry) environments, it features additional armor and powered exoskeleton."
 	icon_state = "command_exp_rig"
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
