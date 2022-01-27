@@ -1,10 +1,10 @@
 /obj/structure/sign/dedicationplaque
-	name = "\improper NTSS Dagon dedication plaque"
+	name = "\improper SGV Dagon dedication plaque"
 	icon_state = "lightplaque"
 
 /obj/structure/sign/dedicationplaque/Initialize()
 	. = ..()
-	desc = "NTSS Dagon - Mako Class System Surveyor - NTF Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched [game_year-5] - Sol Central Government - 'Never was anything great achieved without danger.'"
+	desc = "SGV Dagon - Mako Class System Surveyor - SGF Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched [game_year-5] - Sol Central Government - 'Never was anything great achieved without danger.'"
 
 /obj/structure/sign/ecplaque
 	name = "\improper Surveyor Corps Directives"

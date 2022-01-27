@@ -6336,6 +6336,16 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/command/pathfinder)
+"lW" = (
+/obj/structure/table/standard,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/item/weapon/book/manual/military_law,
+/turf/simulated/floor/tiled,
+/area/command/pathfinder)
 "lX" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -15306,15 +15316,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/deckchief)
-"QG" = (
-/obj/structure/table/standard,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled,
-/area/command/pathfinder)
 "QI" = (
 /obj/machinery/door/airlock/mining{
 	id_tag = null;
@@ -34831,7 +34832,7 @@ Ti
 SV
 fl
 aT
-QG
+lW
 Lh
 ki
 lf

@@ -1,5 +1,5 @@
 /obj/effect/overmap/visitable/ship/torch
-	name = "NTSS Dagon"
+	name = "SGV Dagon"
 	desc = "A bluespace-capable corvette bearing markings of the NanoTrasen Surveyor Corps."
 	fore_dir = WEST
 	vessel_mass = 100000

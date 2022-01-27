@@ -30,7 +30,7 @@
 
 // Dog Tags badge string rename, plus added for SMC and SGF.
 /obj/item/clothing/accessory/badge/solgov/tags
-	badge_string = "NTSS Dagon"
+	badge_string = "SGV Dagon"
 
 /obj/item/clothing/accessory/badge/solgov/tags/fleet
 	badge_string = "SGF"

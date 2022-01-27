@@ -14,7 +14,7 @@
 	return jointext(., "<br>")
 
 /datum/map/torch/send_welcome()
-	var/welcome_text = "<center><img src = bluentlogo.png /><br /><font size = 3><b>NTSS Dagon</b> Sensor Readings:</font><br>"
+	var/welcome_text = "<center><img src = bluentlogo.png /><br /><font size = 3><b>SGV Dagon</b> Sensor Readings:</font><br>"
 	welcome_text += "Report generated on [stationdate2text()] at [stationtime2text()]</center><br /><br />"
 	welcome_text += "<hr>Current system:<br /><b>[system_name()]</b><br /><br>"
 
@@ -55,5 +55,5 @@
 		welcome_text += "<br>No distress calls logged.<br />"
 	welcome_text += "<hr>"
 
-	post_comm_message("NTSS Dagon Sensor Readings", welcome_text)
+	post_comm_message("SGV Dagon Sensor Readings", welcome_text)
 	minor_announcement.Announce(message = "New [GLOB.using_map.company_name] Update available at all communication consoles.")
