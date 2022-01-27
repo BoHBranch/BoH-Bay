@@ -6040,10 +6040,6 @@
 /area/hallway/primary/seconddeck/center)
 "lq" = (
 /obj/structure/railing/mapped,
-/obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
-	},
 /obj/structure/railing/mapped{
 	dir = 1;
 	icon_state = "railing0-1"

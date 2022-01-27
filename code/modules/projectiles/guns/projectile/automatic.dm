@@ -106,7 +106,7 @@
 		)
 
 /obj/item/weapon/gun/projectile/automatic/assault_rifle
-	name = "assault rifle"
+	name = "STS-35"
 	desc = "The rugged STS-35 is a durable automatic weapon of a make popular on the frontier worlds. Originally produced by Hephaestus. The serial number has been scratched off."
 	icon = 'icons/obj/guns/assault_rifle.dmi'
 	icon_state = "arifle"

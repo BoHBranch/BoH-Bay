@@ -3,6 +3,7 @@
 /////////
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar
+	name = "Mk59"
 	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps."
 	magazine_type = /obj/item/ammo_magazine/pistol/double/pepperball
 
@@ -13,6 +14,10 @@
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar
 	name = "high-powered handgun"
 	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo."
+
+/obj/item/weapon/gun/projectile/pistol/military/alt/solar/loadout
+	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps."
+	magazine_type = /obj/item/ammo_magazine/pistol/double
 
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar/loaded
 	name = "high-powered handgun"

@@ -3823,6 +3823,14 @@
 /obj/effect/floor_decal/industrial/hatch/orange,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/map_template/colony/airlock)
+"gS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 4
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/colony/mineralprocessing)
 "gT" = (
 /obj/machinery/atmospherics/binary/pump,
 /obj/effect/floor_decal/corner_techfloor_grid{
@@ -4192,17 +4200,6 @@
 /area/map_template/colony)
 "hB" = (
 /obj/structure/table/rack,
-/obj/item/ammo_magazine/pistol/small,
-/obj/item/ammo_magazine/pistol,
-/obj/item/ammo_magazine/pistol,
-/obj/item/ammo_magazine/pistol/rubber,
-/obj/item/ammo_magazine/pistol/small,
-/obj/item/ammo_magazine/pistol/small,
-/obj/item/ammo_magazine/pistol/rubber,
-/obj/item/weapon/storage/box/ammo/shotgunshells,
-/obj/item/weapon/storage/box/ammo/shotgunshells,
-/obj/item/weapon/storage/box/ammo/shotgunammo,
-/obj/item/weapon/storage/box/ammo/shotgunammo,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
@@ -4563,13 +4560,15 @@
 /area/map_template/colony)
 "ii" = (
 /obj/structure/table/rack,
-/obj/item/weapon/gun/projectile/pistol/holdout,
-/obj/item/weapon/gun/projectile/pistol/holdout,
-/obj/item/weapon/gun/projectile/pistol/sec/lethal,
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
 	dir = 8
 	},
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/item/weapon/gun/projectile/shotgun/pump/combat,
+/obj/item/weapon/gun/projectile/shotgun/pump/combat,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/map_template/colony/armory)
 "ij" = (
@@ -4772,14 +4771,12 @@
 /area/map_template/colony/jail)
 "iA" = (
 /obj/structure/table/rack,
-/obj/item/weapon/gun/projectile/shotgun/doublebarrel,
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
 	dir = 8
 	},
-/obj/machinery/light{
-	dir = 8
-	},
+/obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full,
+/obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/map_template/colony/armory)
 "iB" = (
@@ -5141,6 +5138,16 @@
 	},
 /turf/simulated/floor/wood,
 /area/map_template/colony/commons)
+"jb" = (
+/obj/structure/railing/mapped,
+/obj/effect/floor_decal/industrial/warning/dust,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/rack,
+/obj/item/weapon/gun/projectile/hornetsniper/civ,
+/obj/item/weapon/storage/box/ammo/hornetammo,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/colony/mineralprocessing)
 "jc" = (
 /obj/structure/sign/warning/smoking{
 	pixel_y = -28
@@ -5938,7 +5945,6 @@
 /area/map_template/colony/mineralprocessing)
 "kp" = (
 /obj/structure/table/rack,
-/obj/item/weapon/gun/energy/gun,
 /obj/effect/floor_decal/industrial/warning{
 	icon_state = "warning";
 	dir = 8
@@ -5951,6 +5957,8 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/item/weapon/storage/box/ammo/machine_pistol,
+/obj/item/weapon/storage/box/ammo/machine_pistol,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/map_template/colony/armory)
 "kq" = (
@@ -5964,9 +5972,6 @@
 /area/map_template/colony/airlock)
 "kr" = (
 /obj/structure/table/rack,
-/obj/item/weapon/gun/projectile/pirate,
-/obj/item/weapon/gun/projectile/pirate,
-/obj/item/weapon/gun/projectile/pirate,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
@@ -5982,6 +5987,8 @@
 	pixel_y = -28
 	},
 /obj/structure/cable,
+/obj/item/weapon/gun/projectile/automatic/machine_pistol/usi,
+/obj/item/weapon/gun/projectile/automatic/machine_pistol/usi,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/map_template/colony/armory)
 "ks" = (
@@ -8303,33 +8310,6 @@
 /obj/item/stack/flag/yellow,
 /turf/simulated/floor/exoplanet/concrete,
 /area/map_template/colony/mineralprocessing)
-"oj" = (
-/obj/structure/railing/mapped,
-/obj/effect/floor_decal/industrial/warning/dust,
-/obj/structure/table/rack,
-/obj/item/weapon/gun/projectile/heavysniper/ant{
-	desc = "A large, unwieldy bolt-action rifle in shoddy condition. Chambered in small caliber, looks far scarier than it is. Vamoos ya varmint!";
-	name = "anti-varmint rifle"
-	},
-/obj/item/ammo_magazine/pistol/small,
-/obj/item/ammo_magazine/pistol/small,
-/obj/item/ammo_magazine/pistol/small,
-/obj/item/ammo_magazine/pistol/small,
-/obj/item/ammo_magazine/pistol/small,
-/obj/item/ammo_magazine/pistol/small,
-/obj/item/ammo_magazine/pistol/small,
-/obj/item/ammo_magazine/pistol/small,
-/obj/item/ammo_magazine/pistol/small,
-/obj/item/ammo_magazine/pistol/small,
-/obj/machinery/door/window/northright,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/turf/simulated/floor/exoplanet/concrete,
-/area/map_template/colony/mineralprocessing)
 "ok" = (
 /obj/structure/railing/mapped,
 /obj/effect/floor_decal/industrial/warning/dust,
@@ -8566,14 +8546,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/structure/catwalk,
-/turf/simulated/floor/exoplanet/concrete,
-/area/map_template/colony/mineralprocessing)
-"oB" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/industrial/warning/dust{
-	dir = 4
-	},
 /turf/simulated/floor/exoplanet/concrete,
 /area/map_template/colony/mineralprocessing)
 "oC" = (
@@ -9030,8 +9002,8 @@ aF
 kD
 aF
 hB
-iA
 ii
+iA
 kp
 kr
 aU
@@ -9657,8 +9629,8 @@ gR
 lX
 na
 oz
-oB
-oj
+gS
+jb
 nP
 fc
 "}

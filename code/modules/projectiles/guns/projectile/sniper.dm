@@ -97,7 +97,7 @@
 	wielded_item_state = "boltaction-wielded"
 
 /obj/item/weapon/gun/projectile/hornetsniper
-	name = "hornet marksman rifle"
+	name = "Z2 marksman rifle"
 	desc = "The Z2 Hornet, is an older cousin of the Z9 Bullpup Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer."
 	icon = 'icons/obj/guns/hornet.dmi'
 	icon_state = "hornet"
@@ -120,3 +120,10 @@
 	wielded_item_state = "z8carbine-wielded"
 	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
 	fire_delay = 30
+
+/obj/item/weapon/gun/projectile/hornetsniper/civ
+	name = "Z2B marksman rifle"
+	desc = "The Z2B Hornet, is an older cousin of the Z9 Bullpup Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer. \
+	This is a civilan model, holding a single round and requiring manual ejection."
+	handle_casings = HOLD_CASINGS
+	max_shells = 1

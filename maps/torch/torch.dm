@@ -161,6 +161,7 @@
 	#include "loadout/loadout_uniform_boh.dm"
 	#include "loadout/loadout_xeno.dm"
 	#include "loadout/loadout_augments.dm"
+	#include "loadout/loadout_sikits.dm"
 	#include "loadout/~defines.dm"
 
 	#include "torch1_deck5.dmm"
