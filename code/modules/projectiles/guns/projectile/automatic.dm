@@ -26,8 +26,8 @@
 		)
 
 /obj/item/weapon/gun/projectile/automatic/machine_pistol
-	name = "machine pistol"
-	desc = "The Hephaestus Industries MP6 Vesper, A fairly common machine pistol. Sometimes refered to as an 'uzi' by the backwater spacers it is often associated with."
+	name = "U.A.F Machinepistol"
+	desc = "Built off a ancient design. This weapon is most commonly seen in the hands of thugs and pirates!"
 	icon = 'icons/obj/guns/machine_pistol.dmi'
 	icon_state = "mpistolen"
 	safety_icon = "safety"
@@ -61,8 +61,8 @@
 		overlays += image(icon, "ammo_ok")
 
 /obj/item/weapon/gun/projectile/automatic/merc_smg
-	name = "submachine gun"
-	desc = "The NanoTrasen C-20r is a lightweight and rapid firing SMG, for when you REALLY need someone dead. Has a 'Per falcis, per pravitas' buttstamp."
+	name = "NT-C-20r"
+	desc = "The NanoTrasen C-20r is a lightweight and rapid firing SMG designed for it's security forces."
 	icon = 'icons/obj/guns/merc_smg.dmi'
 	icon_state = "c20r"
 	item_state = "c20r"
@@ -96,9 +96,8 @@
 		icon_state = "c20r"
 
 /obj/item/weapon/gun/projectile/automatic/merc_smg/hacked
-	name = "C-20b"
-	desc = "The NanoTrasen C-20b is a lightweight and rapid firing SMG. This is an older model, capable of only firing in semi-automatic and three-round bursts. \
-	Additionally, it does not feature the auto-eject function of the more modern version. It appears, however, that this one has a hacked firing authorization pin."
+	name = "NT-C-20b"
+	desc = "The NanoTrasen C-20b is a lightweight and rapid firing SMG designed for the Civilian market. It lacks some of the newer features of the R-model."
 	auto_eject = 0
 	firemodes = list(
 		list(mode_name="semi auto",       burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=6, burst_accuracy=null, dispersion=null),
@@ -106,8 +105,8 @@
 		)
 
 /obj/item/weapon/gun/projectile/automatic/assault_rifle
-	name = "assault rifle"
-	desc = "The rugged STS-35 is a durable automatic weapon of a make popular on the frontier worlds. Originally produced by Hephaestus. The serial number has been scratched off."
+	name = "Territorial STS-35"
+	desc = "The rugged STS-35 is a durable automatic weapon designed originally by Hephaestus. It was redesigned with cheaper materials and looser tolerances for the SolGov Territorials!"
 	icon = 'icons/obj/guns/assault_rifle.dmi'
 	icon_state = "arifle"
 	item_state = null
@@ -144,8 +143,8 @@
 		wielded_item_state = "arifle-wielded-empty"
 
 /obj/item/weapon/gun/projectile/automatic/sec_smg
-	name = "submachine gun"
-	desc = "The WT-550 Saber is a cheap self-defense weapon, mass-produced by Ward-Takahashi for paramilitary and private use."
+	name = "SSF-Submachine Gun"
+	desc = "The Solarian Security Forces submachinegun is a generically produced weapon for arming Authority forces cheaply and robustly. It failed on the latter half!"
 	icon = 'icons/obj/guns/sec_smg.dmi'
 	icon_state = "smg"
 	item_state = "wt550"
@@ -178,8 +177,8 @@
 		overlays += image(icon, "ammo-bad")
 
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle
-	name = "bullpup assault rifle"
-	desc = "The Hephaestus Industries Z8 Bulldog is an older model bullpup carbine. Makes you feel like a space marine when you hold it."
+	name = "SSF-Z8 Houndmaster"
+	desc = "Produced by the Solarian Security Forces from the design of the Z9 Bulldog, commonly seen with the SMC. It is a robust design with a underbarrel grenade launcher!"
 	icon = 'icons/obj/guns/bullpup_rifle.dmi'
 	icon_state = "carbine"
 	item_state = "z8carbine"

@@ -2824,3 +2824,21 @@
 	required_reagents = list(/datum/reagent/drink/alien/unathijuice = 2, /datum/reagent/nutriment/protein = 1)
 	result_amount = 3
 	mix_message = "The mixture turns a dark green"
+
+
+// Drug Stuff
+
+
+/datum/chemical_reaction/blackspice
+	name = "BlackSpiceProduction"
+	result = /datum/reagent/blackspice
+	required_reagents = list(/datum/reagent/blackspiceraw = 1, /datum/reagent/ethanol = 1)
+	result_amount = 1
+	mix_message = "The mixture bubbles and froths into a ribbony black liquid!"
+
+/datum/chemical_reaction/blackspicebad
+	name = "BlackSpiceFailure"
+	result = /datum/reagent/toxin/blackspicebad
+	required_reagents = list(/datum/reagent/blackspice = 1, /datum/reagent/nutriment = 1)
+	result_amount = 1
+	mix_message = "The mixture bubbles and froths into a ribbony black liquid!"

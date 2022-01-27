@@ -55,16 +55,16 @@
 	has_safety = FALSE
 
 /obj/item/weapon/gun/energy/pulse_rifle/destroyer
-	name = "pulse destroyer"
-	desc = "A heavy-duty, pulse-based energy weapon. Because of its complexity and cost, it is rarely seen in use except by specialists."
+	name = "Pulse Destroyer"
+	desc = "The pride and joy of Solarian special forces. Capable of taking pretty much anyone off the census within a single volley!"
 	cell_type = /obj/item/weapon/cell/super
 	fire_delay = 25
 	projectile_type=/obj/item/projectile/beam/pulse/destroy
 	charge_cost= 40
 
 /obj/item/weapon/gun/energy/pulse_rifle/destroyer/attack_self(mob/living/user as mob)
-	to_chat(user, "<span class='warning'>[src.name] has three settings, and they are all DESTROY.</span>")
-	
+	to_chat(user, "<span class='warning'>[src.name] has three settings, DESTROY, DESTROY, and FUCKING DESTROY!</span>")
+
 /obj/item/weapon/gun/energy/pulse_rifle/skrell
 	name = "skrellian carbine"
 	icon = 'icons/obj/guns/skrell_carbine.dmi'
@@ -80,7 +80,7 @@
 	burst=1
 	burst_delay=null
 	wielded_item_state = "skrell_carbine-wielded"
-	
+
 	firemodes = list(
 		list(mode_name="single", projectile_type=/obj/item/projectile/beam/pulse/skrell/single, charge_cost=120, burst=1, burst_delay=null),
 		list(mode_name="heavy", projectile_type=/obj/item/projectile/beam/pulse/skrell/heavy, charge_cost=55, burst=2, burst_delay=3),

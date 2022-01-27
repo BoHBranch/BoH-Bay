@@ -25,8 +25,8 @@
 			overlays += image(icon, "ammo_ok")
 
 /obj/item/weapon/gun/projectile/pistol/military
-	name = "military pistol"
-	desc = "The Hephaestus Industries P20 - a mass produced kinetic sidearm in widespread service with the SCGDF."
+	name = "SDF-p20"
+	desc = "The Hephaestus Industries P20 - a mass produced kinetic sidearm in widespread service with the Solarian Defence Forces."
 	magazine_type = /obj/item/ammo_magazine/pistol/double
 	allowed_magazines = /obj/item/ammo_magazine/pistol/double
 	icon = 'icons/obj/guns/military_pistol.dmi'
@@ -38,7 +38,7 @@
 	ammo_indicator = TRUE
 
 /obj/item/weapon/gun/projectile/pistol/military/alt
-	desc = "The HelTek Optimus, best known as the standard-issue sidearm for the ICCG Navy."
+	desc = "The HelTek Optimus, best known as the rival to the P20. It seens some service with the SDF!"
 	icon = 'icons/obj/guns/military_pistol2.dmi'
 	icon_state = "military-alt"
 	safety_icon = "safety"
@@ -46,8 +46,8 @@
 	fire_delay = 8
 
 /obj/item/weapon/gun/projectile/pistol/sec
-	name = "pistol"
-	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are."
+	name = "U.A.F Envoy"
+	desc = "Cheaper than the narcotics it is commonly seen protecting: The 'Envoy' is one of the most widely produced and used pistols in Human space. Especially with low-end scum!"
 	icon = 'icons/obj/guns/pistol.dmi'
 	icon_state = "secguncomp"
 	safety_icon = "safety"
@@ -60,8 +60,8 @@
 	magazine_type = /obj/item/ammo_magazine/pistol
 
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol
-	name = "magnum pistol"
-	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo."
+	name = "U.A.F Churchill"
+	desc = "Named after a ancient human leader. This weapon fires a robust cartridge, through lacks modern-features!"
 	icon = 'icons/obj/guns/magnum_pistol.dmi'
 	icon_state = "magnum"
 	item_state = "magnum"
@@ -80,8 +80,8 @@
 	ammo_indicator = TRUE
 
 /obj/item/weapon/gun/projectile/pistol/throwback
-	name = "pistol"
-	desc = "A product of one of thousands of illegal workshops from around the galaxy. Often replicas of ancient Earth handguns, these guns are usually found in hands of frontier colonists and pirates."
+	name = "U.A.F Patriot"
+	desc = "Absolutely should have been the weapon picked as the sidearm for the Solarian Marine Corps. Or that is what every private will tell you! The U.A.F Patriot will never fail to impress."
 	icon = 'icons/obj/guns/pistol_throwback.dmi'
 	icon_state = "pistol1"
 	magazine_type = /obj/item/ammo_magazine/pistol/throwback
@@ -105,8 +105,8 @@
 		icon_state = "[base_icon]-e"
 
 /obj/item/weapon/gun/projectile/pistol/gyropistol
-	name = "gyrojet pistol"
-	desc = "A bulky pistol designed to fire self propelled rounds."
+	name = "NT-Warsledge"
+	desc = "Handheld rocket-propelled munition thrower. Don't get caught making funny videos with it!"
 	icon = 'icons/obj/guns/gyropistol.dmi'
 	icon_state = "gyropistol"
 	max_shells = 8
@@ -130,8 +130,8 @@
 		icon_state = "gyropistol"
 
 /obj/item/weapon/gun/projectile/pistol/holdout
-	name = "holdout pistol"
-	desc = "The Lumoco Arms P3 Whisper. A small, easily concealable gun."
+	name = "U.A.F Bitch"
+	desc = "The classic 'Bitch', more formally known as the 'Union-Arms-Factory Classic' is a low-caliber holdout-weapon commonly used Space-Mart shoppers fighting over the last sugar-cookies!"
 	icon = 'icons/obj/guns/holdout_pistol.dmi'
 	icon_state = "pistol"
 	item_state = null

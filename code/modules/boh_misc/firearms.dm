@@ -6,10 +6,6 @@
 	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps."
 	magazine_type = /obj/item/ammo_magazine/pistol/double/pepperball
 
-/obj/item/weapon/gun/projectile/pistol/military/alt/solar/cabinet
-	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps."
-	starts_loaded = 0
-
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar
 	name = "high-powered handgun"
 	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo."
@@ -38,17 +34,6 @@
 	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are. \
 	'Pathfinder' is stenciled onto the grip."
 	starts_loaded = 0
-
-/obj/item/weapon/gun/projectile/revolver/medium/sec
-	name = "Lumoco Mk12"
-	icon_state = "medium"
-	safety_icon = "medium_safety"
-	caliber = CALIBER_PISTOL
-	ammo_type = /obj/item/ammo_casing/pistol
-	desc = "The Lumoco Arms' Solid is a rugged revolver for people who don't keep their guns well-maintained."
-	accuracy = 1
-	bulk = 0
-	fire_delay = 9
 
 /////////
 // display
@@ -146,7 +131,7 @@
 /obj/item/weapon/gun/projectile/shotgun/pump/beanbag
 	name = "beanbag shotgun"
 	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders. \
-	This one appears to be modified to fire nothing but beanbags, and has an orange paintjob on the slide. Trying to fire high pressure shells doesn't seem like a good idea."
+	This one appears to be modified to fire nothing but beanbags, and has an orange paintjob on the slide. Trying to fire lethals doesn't seem like a good idea."
 	icon = 'icons/boh/items/shotguns.dmi'
 	icon_state = "bshotgun"
 	item_state = "bshotgun"

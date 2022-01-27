@@ -2112,7 +2112,7 @@
 
 /datum/reagent/ethanol/battuta
 	name = "Ibn Batutta"
-	description = "One of the Official Cocktails of the SolGov Fleet, celebrating Muhammad Ibn Battuta."
+	description = "One of the Official Cocktails of the Expeditionary Corps, celebrating Muhammad Ibn Battuta."
 	taste_description = "a Moroccan garden"
 	color = "#dfbe00"
 	strength = 18
@@ -2122,7 +2122,7 @@
 
 /datum/reagent/ethanol/magellan
 	name = "Magellan"
-	description = "One of the Official Cocktails of the SolGov Fleet, celebrating Ferdinand Magellan."
+	description = "One of the Official Cocktails of the Expeditionary Corps, celebrating Ferdinand Magellan."
 	taste_description = "an aristrocatic experience"
 	color = "#6b3535"
 	strength = 13
@@ -2132,7 +2132,7 @@
 
 /datum/reagent/ethanol/zhenghe
 	name = "Zheng He"
-	description = "One of the Official Cocktails of the SolGov Fleet, celebrating Zheng He."
+	description = "One of the Official Cocktails of the Expeditionary Corps, celebrating Zheng He."
 	taste_description = "herbal bitterness"
 	color = "#173b06"
 	strength = 20
@@ -2142,7 +2142,7 @@
 
 /datum/reagent/ethanol/armstrong
 	name = "Armstrong"
-	description = "One of the Official Cocktails of the SolGov Fleet, celebrating Neil Armstrong."
+	description = "One of the Official Cocktails of the Expeditionary Corps, celebrating Neil Armstrong."
 	taste_description = "limes and alcoholic beer"
 	color = "#ffd300"
 	strength = 15

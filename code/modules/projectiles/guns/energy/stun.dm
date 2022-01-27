@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/energy/taser
-	name = "electrolaser"
-	desc = "The NT Mk30 NL is a small, low capacity gun used for non-lethal takedowns. Produced by NT, it's actually a licensed version of a W-T design. It can switch between high and low intensity stun shots."
+	name = "NT-Electronic Laser"
+	desc = "Nanotrasen designed low-yield energy-rifle built for non-lethal takedowns by it's corporate security. Can switch between a low and high energy."
 	icon = 'icons/obj/guns/taser.dmi'
 	icon_state = "taser"
 	item_state = null	//so the human update icon uses the icon_state instead.
@@ -14,8 +14,8 @@
 		)
 
 /obj/item/weapon/gun/energy/taser/carbine
-	name = "electrolaser carbine"
-	desc = "The NT Mk44 NL is a high capacity gun used for non-lethal takedowns. It can switch between high and low intensity stun shots."
+	name = "Nt-Electronic Carbine"
+	desc = "Nanotrasen's premier non-lethal takedown weapon. Capable of delivering a (mostly) non-lethal shock with a respectable magazine size!"
 	icon = 'icons/obj/guns/taser_carbine.dmi'
 	icon_state = "tasercarbine"
 	w_class = ITEM_SIZE_LARGE
@@ -46,8 +46,8 @@
 
 
 /obj/item/weapon/gun/energy/stunrevolver
-	name = "stun revolver"
-	desc = "An A&M X6 Zeus. Designed by al-Maliki & Mosley, but produced under the wing of the Free Trade Union. Industry spies have been trying to get a hold of the blueprints for half a decade."
+	name = "U.A.F Stunner"
+	desc = "Union Arms Factory's Stunner. Designed to mimic the silhouette of a classic Human revolver: This piece of shit's only saving grace is it's low-price tag."
 	icon = 'icons/obj/guns/stunrevolver.dmi'
 	icon_state = "stunrevolver"
 	item_state = "stunrevolver"
@@ -57,8 +57,8 @@
 	combustion = 0
 
 /obj/item/weapon/gun/energy/stunrevolver/rifle
-	name = "stun rifle"
-	desc = "An A&M X10 Thor. A vastly oversized variant of the A&M X6 Zeus. Fires overcharged electrodes to obliterate pain receptors without harming them too much."
+	name = "U.A.F Stunrifle"
+	desc = "Union Arms Factory's stunrifle. Designed originally in order to non-lethally quell offworld rebellions."
 	icon = 'icons/obj/guns/stunrifle.dmi'
 	icon_state = "stunrifle"
 	item_state = "stunrifle"
@@ -110,8 +110,8 @@
 	projectile_type = /obj/item/projectile/energy/bolt/large
 
 /obj/item/weapon/gun/energy/plasmastun
-	name = "plasma pulse projector"
-	desc = "The Mars Military Industries MA21 Selkie is a weapon that uses a laser pulse to ionise the local atmosphere, creating a disorienting pulse of plasma and deafening shockwave as the wave expands. Without a local atmosphere to ionize, however, it becomes a very expensive paperweight."
+	name = "Plasma Distruptor"
+	desc = "Produced by a unknown manufacturer: This questionably legal weapon is capable of causing a atmospheric 'distruption' that can cause disorientation. In otherwords: It's a Kinetic-Accelerator on Black-Spice."
 	icon = 'icons/obj/guns/plasma_stun.dmi'
 	icon_state = "plasma_stun"
 	item_state = "plasma_stun"
@@ -123,8 +123,8 @@
 	combustion = 0
 
 /obj/item/weapon/gun/energy/confuseray
-	name = "disorientator"
-	desc = "The W-T Mk. 4 Disorientator is a small, low capacity, and short-ranged energy projector intended for personal defense with minimal risk of permanent damage or cross-fire."
+	name = "NT-Brainscorcher"
+	desc = "Nanotrasen produced 'neural-scrambling' device. Designated as a 'warcrime' by every sentient species apart of the Solarian Federation, it has become a collectors item!"
 	icon = 'icons/obj/guns/confuseray.dmi'
 	icon_state = "confuseray"
 	safety_icon = "safety"

@@ -80,8 +80,8 @@
 
 
 /obj/item/weapon/gun/projectile/heavysniper/boltaction
-	name = "bolt action rifle"
-	desc = "An old bolt action rifle from some forgotten war, still commonplace among farmers and colonists as an anti-varmint rifle."
+	name = "U.A.F Russ"
+	desc = "An old bolt action rifle from some forgotten war, still commonplace wherever poverty and spaceleak videos thrive!"
 	icon = 'icons/obj/guns/boltaction.dmi'
 	icon_state = "boltaction"
 	item_state = "boltaction"
@@ -97,8 +97,8 @@
 	wielded_item_state = "boltaction-wielded"
 
 /obj/item/weapon/gun/projectile/hornetsniper
-	name = "hornet marksman rifle"
-	desc = "The Z2 Hornet, is an older cousin of the Z9 Bullpup Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer."
+	name = "NT-Z9 Bulldog"
+	desc = "The Nanotrasen production-variant of the legendary Z9 Bulldog Onboard ballistic-suite, modern materials and chambered in 12mm makes this weapon absolutely devestating!"
 	icon = 'icons/obj/guns/hornet.dmi'
 	icon_state = "hornet"
 	item_state = "hornet"

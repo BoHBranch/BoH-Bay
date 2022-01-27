@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/launcher/money
 	name = "money cannon"
-	desc = "A blocky, plastic novelty launcher that claims to be able to shoot money at considerable velocities."
+	desc = "Making it rain at shitty corporate meetings since about the time your mother was dancing on tables!"
 	icon_state = "money_launcher"
 	item_state = "money_launcher"
 	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1)

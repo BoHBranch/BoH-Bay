@@ -1267,3 +1267,53 @@
 	set_trait(TRAIT_IDEAL_HEAT, 298)
 	set_trait(TRAIT_IDEAL_LIGHT, 6)
 	set_trait(TRAIT_WATER_CONSUMPTION, 6)
+
+
+// Drug Update
+
+// Cannabis
+
+/datum/seed/cannabis
+	name = "Cannabis"
+	seed_name = "Cannabis"
+	display_name = "Cannabis"
+	chems = list(/datum/reagent/thc = list(5,10))
+
+/datum/seed/cannabis/New()
+	..()
+	set_trait(TRAIT_POTENCY,10)
+	set_trait(TRAIT_MATURATION,10)
+	set_trait(TRAIT_PRODUCTION,10)
+	set_trait(TRAIT_YIELD,1)
+	set_trait(TRAIT_PRODUCT_ICON,"flower3")
+	set_trait(TRAIT_PRODUCT_COLOUR,"#446c2f")
+	set_trait(TRAIT_PLANT_ICON,"flower3")
+	set_trait(TRAIT_IDEAL_LIGHT, 8)
+	set_trait(TRAIT_WATER_CONSUMPTION, 1)
+	set_trait(TRAIT_NUTRIENT_CONSUMPTION, 0.25)
+	set_trait(TRAIT_IMMUTABLE, 1)
+	set_trait(TRAIT_IDEAL_HEAT, 303.15)
+
+// Black Poppy
+
+/datum/seed/blackpoppy
+	name = "Black Poppies"
+	seed_name = "black poppy"
+	display_name = "blackpoppies"
+	chems = list(/datum/reagent/nutriment = list(1,10), /datum/reagent/blackspiceraw = list(1,10))
+	kitchen_tag = "poppy"
+
+/datum/seed/blackpoppy/New()
+	..()
+	set_trait(TRAIT_POTENCY,10)
+	set_trait(TRAIT_MATURATION,10)
+	set_trait(TRAIT_PRODUCTION,10)
+	set_trait(TRAIT_YIELD,1)
+	set_trait(TRAIT_PRODUCT_ICON,"flower3")
+	set_trait(TRAIT_PRODUCT_COLOUR,"#444444")
+	set_trait(TRAIT_PLANT_ICON,"flower3")
+	set_trait(TRAIT_IDEAL_LIGHT, 6)
+	set_trait(TRAIT_WATER_CONSUMPTION, 2)
+	set_trait(TRAIT_NUTRIENT_CONSUMPTION, 0.5)
+	set_trait(TRAIT_IMMUTABLE, 1)
+	set_trait(TRAIT_IDEAL_HEAT, 313.15)

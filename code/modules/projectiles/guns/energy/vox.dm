@@ -20,8 +20,8 @@
  * Vox Darkmatter Cannon
  */
 /obj/item/weapon/gun/energy/darkmatter
-	name = "flux cannon"
-	desc = "A vicious beam weapon that crushes targets with dark-matter gravity pulses. Parts of it twitch and writhe, as if alive."
+	name = "Flux Parasite"
+	desc = "A vicious beam weapon that crushes targets from the inside using ancient Vox technology. It wiggles and gurgles are downright disgusting.."
 	icon = 'icons/obj/guns/darkcannon.dmi'
 	icon_state = "darkcannon"
 	item_state = "darkcannon"
@@ -43,8 +43,8 @@
  * Vox Sonic Cannon
  */
 /obj/item/weapon/gun/energy/sonic
-	name = "soundcannon"
-	desc = "A vicious sonic weapon of alien manufacture. Parts of it quiver gelatinously, as though the insectile-looking thing is alive."
+	name = "Sonic Cannon"
+	desc = "A vicious sonic weapon of ancient manufacture. This weapon seems to chirp like a cricket!"
 	icon = 'icons/obj/guns/noise.dmi'
 	icon_state = "noise"
 	item_state = "noise"

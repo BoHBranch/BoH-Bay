@@ -175,7 +175,7 @@
 		else
 			to_chat(user, "<span class='notice'>The drill is unpowered.</span>")
 	else
-		to_chat(user, "<span class='notice'>Turning on a piece of industrial machinery without sufficient bracing or wires exposed is a bad idea.</span>")
+		to_chat(user, "<span class='notice'>Turning on a piece of industrial machinery without sufficient bracing or wiring exposed is a fast-track way to a Darwin award.</span>")
 
 	update_icon()
 	return TRUE
@@ -281,7 +281,7 @@
 	if(isWrench(W))
 
 		if(istype(get_turf(src), /turf/space))
-			to_chat(user, "<span class='notice'>You can't anchor something to empty space. Idiot.</span>")
+			to_chat(user, "<span class='notice'>Surprising nobody but yourself: You cannot mine open space, moron.</span>")
 			return
 
 		playsound(src.loc, 'sound/items/Ratchet.ogg', 100, 1)

@@ -284,3 +284,9 @@ var/global/list/plant_seed_sprites = list()
 
 /obj/item/seeds/bamboo
 	seed_type = "bamboo"
+
+/obj/item/seeds/cannabis
+	seed_type = "ambrosia" // carl help
+
+/obj/item/seeds/blackpoppy
+	seed_type = "poppies" // carl help

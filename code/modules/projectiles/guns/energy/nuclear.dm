@@ -64,7 +64,7 @@
 
 /obj/item/weapon/gun/energy/gun/nuclear
 	name = "advanced energy gun"
-	desc = "An energy gun with an experimental miniaturized reactor."
+	desc = "An energy gun with an experimental miniaturized reactor. It can recharge itself with the power of CANCER CAUSING RADIATION!"
 	icon = 'icons/obj/guns/adv_egun.dmi'
 	icon_state = "nucgun"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)

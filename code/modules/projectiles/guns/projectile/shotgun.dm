@@ -1,10 +1,10 @@
 /obj/item/weapon/gun/projectile/shotgun/pump
-	name = "shotgun"
-	desc = "The mass-produced W-T Remmington 29x shotgun is a favourite of police and security forces on many worlds. Useful for sweeping alleys."
+	name = "U.A.F Defender"
+	desc = "The mass-produced UAF Defender shotgun is a favourite of police and security forces on many worlds. A robust ammo-tube is only shorted by it's pump-action nature!"
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
-	max_shells = 4
+	max_shells = 6
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
@@ -60,13 +60,13 @@
 	update_icon()
 
 /obj/item/weapon/gun/projectile/shotgun/pump/combat
-	name = "combat shotgun"
-	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders."
+	name = "SDF-Sweeper"
+	desc = "Built for close quarters combat, the Hephaestus's KS-40 is widely regarded as the be-all-end-all weapon for repelling hostiles!"
 	icon_state = "cshotgun"
 	item_state = "cshotgun"
 	wielded_item_state = "cshotgun-wielded"
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
-	max_shells = 7 //match the ammo box capacity, also it can hold a round in the chamber anyways, for a total of 8.
+	max_shells = 4 // No nice tube for you, fucker!
 	ammo_type = /obj/item/ammo_casing/shotgun
 	one_hand_penalty = 8
 
@@ -79,8 +79,8 @@
 			overlays += I
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel
-	name = "double-barreled shotgun"
-	desc = "A true classic."
+	name = "U.A.F Lovebird"
+	desc = "Developed in response to the countless shotgun weddings occuring on Offworld planets. This weapon was named by someone with a really sick sense of humor!"
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "dshotgun"
 	item_state = "dshotgun"
@@ -110,8 +110,8 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel/flare
-	name = "signal shotgun"
-	desc = "A double-barreled shotgun meant to fire signal flash shells."
+	name = "NTEF Signal Cannon"
+	desc = "A double-barreled shotgun created to fire signal-shells. More commonly used as a cheap-defensive option by the poor bastards of the NTEF!"
 	ammo_type = /obj/item/ammo_casing/shotgun/flash
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel/unload_ammo(user, allow_dump)
@@ -141,7 +141,7 @@
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn
 	name = "sawn-off shotgun"
-	desc = "Omar's coming!"
+	desc = "Because fuck you, the two guys behind you and the fucking dog next door!"
 	icon_state = "sawnshotgun"
 	item_state = "sawnshotgun"
 	wielded_item_state = "sawnshotgun-wielded"

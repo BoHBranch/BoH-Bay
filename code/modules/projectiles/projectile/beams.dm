@@ -1,11 +1,11 @@
 /obj/item/projectile/beam
 	name = "laser"
 	icon_state = "laser"
-	temperature = T0C + 300
+	temperature = T0C + 600
 	fire_sound='sound/weapons/EnergyBoom.ogg'
 	impact_sounds = list(BULLET_IMPACT_MEAT = SOUNDS_LASER_MEAT, BULLET_IMPACT_METAL = SOUNDS_LASER_METAL)
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE
-	damage = 30
+	damage = 60
 	damage_type = BURN
 	sharp = 1 //concentrated burns
 	damage_flags = DAM_LASER
@@ -22,7 +22,7 @@
 
 /obj/item/projectile/beam/practice
 	fire_sound = 'sound/weapons/Taser.ogg'
-	damage = 2
+	damage = 5
 	eyeblur = 2
 
 /obj/item/projectile/beam/smalllaser
@@ -38,8 +38,8 @@
 	name = "heavy laser"
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
-	damage = 60
-	armor_penetration = 30
+	damage = 100
+	armor_penetration = 50
 	distance_falloff = 0.5
 
 	muzzle_type = /obj/effect/projectile/laser/heavy/muzzle
@@ -50,7 +50,7 @@
 	name = "x-ray beam"
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/laser3.ogg'
-	damage = 30
+	damage = 50
 	armor_penetration = 30
 	shrapnel_chance_multiplier = 0.8
 	arterial_bleed_chance_multiplier = 0.8
@@ -68,7 +68,7 @@
 	name = "pulse"
 	icon_state = "u_laser"
 	fire_sound='sound/weapons/pulse.ogg'
-	damage = 15 //lower damage, but fires in bursts
+	damage = 30 //lower damage, but fires in bursts
 
 	muzzle_type = /obj/effect/projectile/laser/pulse/muzzle
 	tracer_type = /obj/effect/projectile/laser/pulse/tracer
@@ -196,7 +196,7 @@
 
 /obj/item/projectile/beam/stun/heavy
 	name = "heavy stun beam"
-	damage = 2
+	damage = 10
 	agony = 40
 
 /obj/item/projectile/beam/stun/shock
@@ -215,7 +215,7 @@
 	name = "plasma arc"
 	icon_state = "omnilaser"
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	damage = 35//enables it to cut off limbs without too many hits
+	damage = 45//enables it to cut off limbs without too many hits. Slightly boosted
 	sharp = 1
 	edge = 1
 	damage_type = BRUTE

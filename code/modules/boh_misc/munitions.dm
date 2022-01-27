@@ -4,8 +4,8 @@
 
 //casing
 /obj/item/ammo_casing/shotgun/birdshot
-	name = "birdshot shell"
-	desc = "A birdshot shell."
+	name = "rubbershot shell"
+	desc = "A rubbershot shell."
 	icon = 'icons/boh/ammo.dmi'
 	icon_state = "bdshell"
 	spent_icon = "bdshell-spent"
@@ -14,18 +14,18 @@
 
 //projectile
 /obj/item/projectile/bullet/pellet/birdshot
-	name = "birdshot"
+	name = "rubbershot"
 	fire_sound = 'sound/weapons/gunshot/gunshot_4mm.ogg'
 	damage = 2
 	pellets = 10
 	range_step = 2
 	spread_step = 10
-	agony = 15//up from 8.5
-//	embed = 0
+	agony = 8.5
+	embed = 0
 
 //holder
 /obj/item/ammo_magazine/shotholder/birdshot
-	name = "birdshot shell holder"
+	name = "rubbershot shell holder"
 	ammo_type = /obj/item/ammo_casing/shotgun/birdshot
 	matter = list(MATERIAL_STEEL = 620)
 	marking_color = COLOR_PALE_YELLOW

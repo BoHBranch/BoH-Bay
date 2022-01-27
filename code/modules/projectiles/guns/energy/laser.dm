@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/energy/laser
-	name = "laser carbine"
+	name = "Hephaestus laser Carbine"
 	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts."
 	icon = 'icons/obj/guns/laser_carbine.dmi'
 	icon_state = "laser"
@@ -50,11 +50,11 @@
 			projectile_type = null
 
 obj/item/weapon/gun/energy/retro
-	name = "retro laser"
+	name = "Retro Terran Laser"
 	icon = 'icons/obj/guns/retro_laser.dmi'
 	icon_state = "retro"
 	item_state = "retro"
-	desc = "An older model of the basic lasergun. Nevertheless, it is still quite deadly and easy to maintain, making it a favorite amongst pirates and other outlaws."
+	desc = "An almost ancient pattern of laser-pistol. Uses the ancient 'thermal' design for energy weapons, making it incredibly simple to upkeep. Favoured amongst flashy pirates."
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_NORMAL
 	projectile_type = /obj/item/projectile/beam
@@ -76,8 +76,8 @@ obj/item/weapon/gun/energy/retro
 	self_recharge = 1
 
 /obj/item/weapon/gun/energy/lasercannon
-	name = "laser cannon"
-	desc = "With the laser cannon, the lasing medium is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core. This incredible technology may help YOU achieve high excitation rates with small laser volumes!"
+	name = "Hephaestus laser Cannon"
+	desc = "HI's most powerful LASER built for taking down mechanized threats. It's low-weight (in comparison for it's destructive power!) has made it a staple of anti-mech teams of the Solarian Federation!"
 	icon_state = "lasercannon"
 	icon = 'icons/obj/guns/laser_cannon.dmi'
 	item_state = null
@@ -102,8 +102,8 @@ obj/item/weapon/gun/energy/retro
 	has_safety = FALSE
 
 /obj/item/weapon/gun/energy/xray
-	name = "x-ray laser carbine"
-	desc = "A high-power laser gun capable of emitting concentrated x-ray blasts, that are able to penetrate laser-resistant armor much more readily than standard photonic beams."
+	name = "Radiation Rifle"
+	desc = "A high-power laser gun capable of emitting concentrated x-ray blasts, that are able to penetrate laser-resistant armor much more readily than standard photonic beams. Because Warcrimes!"
 	icon = 'icons/obj/guns/xray.dmi'
 	icon_state = "xray"
 	item_state = "xray"
@@ -118,7 +118,7 @@ obj/item/weapon/gun/energy/retro
 	combustion = 0
 
 /obj/item/weapon/gun/energy/xray/pistol
-	name = "x-ray laser gun"
+	name = "Radiation Handgun"
 	icon = 'icons/obj/guns/xray_pistol.dmi'
 	icon_state = "oldxray"
 	item_state = "oldxray"
@@ -130,7 +130,7 @@ obj/item/weapon/gun/energy/retro
 	fire_delay = 10
 
 /obj/item/weapon/gun/energy/sniperrifle
-	name = "marksman energy rifle"
+	name = "Hephaestus 'Pinner'"
 	desc = "The HI DMR 9E is an older design of Hephaestus Industries. A designated marksman rifle capable of shooting powerful ionized beams, this is a weapon to kill from a distance."
 	icon = 'icons/obj/guns/laser_sniper.dmi'
 	icon_state = "sniper"
@@ -160,7 +160,7 @@ obj/item/weapon/gun/energy/retro
 	icon = 'icons/obj/guns/lasertag.dmi'
 	icon_state = "bluetag"
 	item_state = "laser"
-	desc = "Standard issue weapon of the Imperial Guard."
+	desc = "Harmless laser-gun used for recreation by incredibly bored marines who have run out of non-lethals!"
 	origin_tech = list(TECH_COMBAT = 1, TECH_MAGNET = 2)
 	self_recharge = 1
 	matter = list(MATERIAL_STEEL = 2000)

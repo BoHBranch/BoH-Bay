@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/launcher/rocket
-	name = "rocket launcher"
-	desc = "MAGGOT."
+	name = "SMC-SORL"
+	desc = "Solarian Marine Corps 'multi-use' Single Operator Rocket-Launcher! Fires a 88MM rocket right up their asses!"
 	icon_state = "rocket"
 	item_state = "rocket"
 	w_class = ITEM_SIZE_HUGE

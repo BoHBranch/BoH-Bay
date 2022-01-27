@@ -17,7 +17,7 @@
 		return
 
 	if (suiciding)
-		to_chat(src, "You're already committing suicide! Be patient!")
+		to_chat(src, "You're already committing suicide, sunshine! You can't double-kill yourself!")
 		return
 
 	var/confirm = alert("Are you sure you want to commit suicide?", "Confirm Suicide", "Yes", "No")

@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/magnetic
 	name = "improvised coilgun"
-	desc = "A coilgun hastily thrown together out of a basic frame and advanced power storage components. Is it safe for it to be duct-taped together like that?"
+	desc = "A coilgun hastily thrown together out of a basic frame and advanced power storage components. Don't be a pussy. Duct-tape is totally keeping this piece of shit together!"
 	icon = 'icons/obj/guns/coilgun.dmi'
 	icon_state = "coilgun"
 	item_state = "coilgun"

@@ -26,6 +26,7 @@
 \[ntlogo\] - Inserts the NT logo image.<br>
 \[bluelogo\] - Inserts blue NT logo image.<br>
 \[solcrest\] - Inserts SCG crest image.<br>
+\[eclogo\] - Inserts the Expeditionary Corps logo.<br>
 \[daislogo\] - Inserts the Deimos Advanced Information Systems logo.<br>
 \[xynlogo\] - Inserts the Xyngergy logo.<br>
 \[iccgseal\] - Inserts ICCG seal.<br>

@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/launcher/net
-	name = "net gun"
-	desc = "Specially made-to-order by Xenonomix, the XX-1 \"Varmint Catcher\" is designed to trap even the most unruly of creatures for safe transport."
+	name = "Hephaestus Net-Gun"
+	desc = "Specially made-to-order by Hephaestus to capture rogue factory-employees. Non-lethally takes down the target for later beating!"
 	icon_state = "netgun"
 	item_state = "netgun"
 	fire_sound = 'sound/weapons/empty.ogg'
@@ -33,7 +33,7 @@
 
 /obj/item/weapon/gun/launcher/net/proc/finish_loading(var/obj/item/weapon/net_shell/S, var/mob/user)
 	chambered = S
-	if(user) 
+	if(user)
 		user.visible_message("\The [user] inserts \a [S] into \the [src].", SPAN_NOTICE("You insert \a [S] into \the [src]."))
 
 /obj/item/weapon/gun/launcher/net/proc/load(obj/item/weapon/net_shell/S, mob/user)

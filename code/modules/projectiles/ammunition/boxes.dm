@@ -264,7 +264,7 @@
 	caliber = CALIBER_GYROJET
 	ammo_type = /obj/item/ammo_casing/gyrojet
 	multiple_sprites = 1
-	max_ammo = 20
+	max_ammo = 4
 
 /obj/item/ammo_magazine/gyrojet/empty
 	initial_ammo = 0
