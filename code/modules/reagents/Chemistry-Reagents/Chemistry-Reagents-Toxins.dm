@@ -1050,3 +1050,12 @@
 	H.weedlevel += removed*strength*0.05
 	seed.set_trait(TRAIT_POTENCY, seed.get_trait(TRAIT_POTENCY) + removed*0.1, 200, 0)
 	return
+
+// Drug Update Toxins
+
+/datum/reagent/toxin/blackspicebad
+	name = "Black Spice"
+	description = "Produced from bioengineered opium poppy, Black-Spice is one of the cheapest hard-drug on the black-market! It's incredibly dangerous as both a stimulant and opiod!"
+	taste_description = "oddly sweet dirt"
+	color = "#000000"
+	strength = 20

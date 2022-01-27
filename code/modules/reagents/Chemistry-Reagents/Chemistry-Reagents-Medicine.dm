@@ -1117,3 +1117,133 @@
 					var/BS = new /obj/item/weapon/material/shard/shrapnel(material_key = MATERIAL_BONE_GENERIC)
 					E.embed(BS, silent = 1)
 					to_chat(H, "<span class='warning'>You feel something break loose inside your [E.name].</span>")
+
+// Alcoholism's Drug Rework Below!
+
+
+// Cannabis Products
+
+/datum/reagent/thc
+	name = "Tetrahydrocannabinol-7"
+	description = "Tetrahydrocannabinol is one of the many active cannabinoids in Cannabis. THC-7 was bred into Cannabis roughly seventy years ago!"
+	taste_description = "pungent skunk"
+	reagent_state = LIQUID
+	color = "#807653"
+	overdose = 120 // If you are smoking that much pot you need to get a job buddy.
+	reagent_state = LIQUID
+	scannable = 1
+	metabolism = 0.5
+	scent = "skunky odor"
+	scent_intensity = /decl/scent_intensity/strong
+	scent_descriptor = SCENT_DESC_ODOR
+	scent_range = 8 // Good luck hiding it, buddy!
+	flags = IGNORE_MOB_SIZE
+	value = 3 // Selling Drugs on a SolGov space ship, huh? You know there are no nice prisons, right?
+
+/datum/reagent/thc/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	M.add_chemical_effect(CE_PAINKILLER, 60) // Between Paracementol and Tramadol!
+
+/datum/reagent/thc/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+	if(volume <= 0.1 && M.chem_doses[type] >= 0.5 && world.time > data + ANTIDEPRESSANT_MESSAGE_DELAY)
+		data = world.time
+		to_chat(M, "<span class='warning'>You're feeling a bit better after that hit...</span>")
+	else
+		M.add_chemical_effect(CE_MIND, 2)
+		if(world.time > data + ANTIDEPRESSANT_MESSAGE_DELAY)
+			data = world.time
+			if(prob(95))
+				to_chat(M, "<span class='notice'>You feel calmed and held together better after that hit...</span>")
+			else
+				to_chat(M, "<span class='warning'>You feel a bit sick after that hit...</span>") // Space Weed is not your uncles stash, buddy!
+				M.hallucination(100, 50)
+
+
+/datum/reagent/hash
+	name = "Hashish"
+	description = "Hash is a refined product from Cannabis. It's incredibly concentrated! THC-7 Hash like this in particular is an acquired taste.."
+	taste_description = "sickly skunk"
+	reagent_state = LIQUID
+	color = "#807653"
+	overdose = 60 // Don't go smoking too much of that Solarian spice!
+	reagent_state = LIQUID
+	scannable = 1
+	metabolism = 0.3 // Hash lasts a good sum longer!
+	flags = IGNORE_MOB_SIZE
+	scent = "overwhelming skunky odor"
+	scent_intensity = /decl/scent_intensity/strong
+	scent_descriptor = SCENT_DESC_ODOR
+	scent_range = 6 // Hash loses some of it's odor compared to flower. Perfect for smoking in a cave somewhere in Space-Afghanistan!
+	value = 18 // It's worth it to process your THC into Hash! Too bad it's turbo-fucking-illegal in all those United Cities..
+
+/datum/reagent/hash/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	M.add_chemical_effect(CE_PAINKILLER, 120) // Stronger than Tramadol. Have fun, kids!
+
+/datum/reagent/hash/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+	if(volume <= 0.1 && M.chem_doses[type] >= 0.5 && world.time > data + ANTIDEPRESSANT_MESSAGE_DELAY)
+		data = world.time
+		to_chat(M, "<span class='warning'>Hash just hits different...</span>")
+	else
+		M.add_chemical_effect(CE_MIND, 2)
+		if(world.time > data + ANTIDEPRESSANT_MESSAGE_DELAY)
+			data = world.time
+			if(prob(80))
+				to_chat(M, "<span class='notice'>You're feeling much better after that hit...</span>")
+			else
+				to_chat(M, "<span class='warning'>OH SHIT BUDDY, YOU FUCKED UP NOW! EYE IN THE FUCKING SKY IS COMING!...</span>") // HAVE FUN ASSHOLE!
+				M.hallucination(200, 100) // I HEARD YOU LIKE LSD SO WE MADE THE HASH STRONGER THAN LSD!
+
+
+// [HARD DRUGS]
+
+// Black Spice (Refined)
+/datum/reagent/blackspice
+	name = "Black Spice"
+	description = "Produced from bioengineered opium poppy, Black-Spice is one of the cheapest hard-drug on the black-market! It's incredibly dangerous as both a stimulant and opiod!"
+	taste_description = "oddly sweet dirt"
+	reagent_state = LIQUID
+	color = "#000000"
+	overdose = 6 // You're doing bioengineered speedball. Don't fuck around with it!
+	reagent_state = LIQUID
+	scannable = 1
+	metabolism = 0.1
+	flags = IGNORE_MOB_SIZE
+	value = 6 // Actually worth quite a bit! Sadly the plants don't produce much..
+
+/datum/reagent/blackspice/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+	M.add_chemical_effect(CE_PAINKILLER, 300) // Makes Oxycodone look like fucking Baby Asprin! Too bad it'll rot you out from the inside..
+	if(prob(5))
+		M.emote(pick("tweaks", "blink_r", "shakes"))
+	M.add_chemical_effect(CE_SPEEDBOOST, 1)
+	M.add_chemical_effect(CE_PULSE, 2)
+
+/datum/reagent/blackspice/overdose(var/mob/living/carbon/M, var/alien, var/removed)
+	..()
+	M.hallucination(100, 40)
+	M.add_chemical_effect(CE_BREATHLOSS, 1) // Oh boy your lungs are gonna hate your ass!
+	M.add_chemical_effect(CE_TOXIN, 2) // Also your organs are failing.
+
+
+// Black Spice Unrefined
+
+/datum/reagent/blackspiceraw
+	name = "Black Poppy Oil"
+	description = "Bioengineered Poppy oil used commonly in drug-production. Some cultures brew it to denature it's narcotic compounds into a medicinal tea! Still highly illegal despite it's relatively safe nature.."
+	taste_description = "floral dirt"
+	reagent_state = LIQUID
+	color = "#000000"
+	reagent_state = LIQUID
+	scannable = 1
+	metabolism = 0.1
+	flags = IGNORE_MOB_SIZE
+	value = 1 // It's worthless without being refined. You really wanna go to jail selling this illusive toast topping?
+
+/datum/reagent/blackspiceraw/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+	M.add_chemical_effect(CE_PAINKILLER, 30) // Light painkiller.
