@@ -1495,10 +1495,6 @@
 	dir = 8
 	},
 /obj/structure/handrai,
-/obj/structure/handrai{
-	icon_state = "handrail";
-	dir = 8
-	},
 /obj/machinery/access_button/airlock_exterior{
 	frequency = 1331;
 	master_tag = "calypso_shuttle";
@@ -1976,7 +1972,7 @@
 	},
 /obj/structure/handrai{
 	icon_state = "handrail";
-	dir = 8
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/airlock)

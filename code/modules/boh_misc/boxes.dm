@@ -41,6 +41,10 @@
 	name = "box of sabot shells"
 	startswith = list(/obj/item/ammo_magazine/shotholder/sabot = 7)
 
+/obj/item/weapon/storage/box/ammo/machine_pistol
+	name = "box of magazines"
+	startswith = list(/obj/item/ammo_magazine/machine_pistol = 7)
+
 
 /obj/item/gunbox
 	name = "equipment kit"

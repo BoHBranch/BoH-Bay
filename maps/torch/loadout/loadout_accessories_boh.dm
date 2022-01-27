@@ -91,7 +91,7 @@
 	path = /obj/item/clothing/accessory/armor/tag/nt/dagon
 	allowed_branches = NT_BRANCHES
 	cost = 0 // Ditto.
-/*
+
 /// Limb guards
 // Arms
 /datum/gear/tactical/arm_guards
@@ -170,7 +170,7 @@
 /datum/gear/tactical/leg_guards_grey
 	display_name = "grey leg pads"
 	path = /obj/item/clothing/accessory/legguards/light/grey
-*/
+
 // Grey carrier pouches. Only small ones to emulate standard suit/storage behavior.
 /datum/gear/tactical/armor_pouches_grey
 	display_name = "grey armor pouches"

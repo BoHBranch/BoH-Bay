@@ -2924,12 +2924,28 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/armory)
 "fN" = (
-/obj/machinery/light{
-	dir = 4
-	},
+/obj/structure/table/steel,
 /obj/effect/floor_decal/techfloor{
 	icon_state = "techfloor_edges";
 	dir = 5
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/metal{
+	pixel_x = 6
+	},
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/metal{
+	pixel_x = 6;
+	pixel_y = 12
+	},
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/metal{
+	pixel_x = -6;
+	pixel_y = -2
+	},
+/obj/machinery/chemical_dispenser/tac_coffee/full/good{
+	pixel_x = -6;
+	pixel_y = 11
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry)
