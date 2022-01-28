@@ -70,6 +70,73 @@
 		)
 
 /*
+* SEA 
+*/
+/obj/item/weapon/rig/command/sea
+	name = "Senior NCO HCM"
+	suit_type = "command hardsuit"
+	icon = 'maps/torch/icons/obj/uniques.dmi'
+	desc = "A specialized hardsuit rig control module issued to senior NCOs of the SolGov Fleet and their peers."
+	icon_state = "sea_rig"
+	armor = list(
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_SMALL,
+		laser = ARMOR_LASER_MINOR,
+		energy = ARMOR_ENERGY_SMALL,
+		bomb = ARMOR_BOMB_PADDED,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SMALL
+		)
+	online_slowdown = 0.50
+	offline_slowdown = 2
+	offline_vision_restriction = TINT_HEAVY
+
+	chest_type = /obj/item/clothing/suit/space/rig/command/sea
+	helm_type = /obj/item/clothing/head/helmet/space/rig/command/sea
+	boot_type = /obj/item/clothing/shoes/magboots/rig/command/sea
+	glove_type = /obj/item/clothing/gloves/rig/command/sea
+
+	allowed = list(/obj/item/weapon/gun,
+				   /obj/item/ammo_magazine,
+				   /obj/item/device/flashlight,
+				   /obj/item/weapon/tank,
+				   /obj/item/device/suit_cooling_unit,
+				   /obj/item/weapon/storage/secure/briefcase,
+				   /obj/item/weapon/storage/)
+
+	req_access = list(access_bridge)
+
+/obj/item/clothing/head/helmet/space/rig/command/sea
+	light_overlay = "helmet_light_dual"
+	icon = 'icons/obj/clothing/obj_head.dmi'
+	item_icons = list(slot_head_str = 'icons/mob/onmob/onmob_head.dmi')
+	camera = /obj/machinery/camera/network/command
+	species_restricted = list(SPECIES_HUMAN,SPECIES_IPC) //no available icons for aliens
+
+/obj/item/clothing/suit/space/rig/command/sea
+	icon = 'icons/obj/clothing/obj_suit.dmi'
+	item_icons = list(slot_wear_suit_str = 'icons/mob/onmob/onmob_suit.dmi')
+	species_restricted = list(SPECIES_HUMAN,SPECIES_IPC)
+
+/obj/item/clothing/shoes/magboots/rig/command/sea
+	icon = 'icons/obj/clothing/obj_feet.dmi'
+	item_icons = list(slot_shoes_str = 'icons/mob/onmob/onmob_feet.dmi')
+	species_restricted = list(SPECIES_HUMAN,SPECIES_IPC)
+
+/obj/item/clothing/gloves/rig/command/sea
+	icon = 'icons/obj/clothing/obj_hands.dmi'
+	item_icons = list(slot_gloves_str = 'icons/mob/onmob/onmob_hands.dmi')
+	species_restricted = list(SPECIES_HUMAN,SPECIES_IPC)
+
+
+/obj/item/weapon/rig/command/sea/equipped
+	initial_modules = list(
+		/obj/item/rig_module/maneuvering_jets,
+		/obj/item/rig_module/device/flash,
+		/obj/item/rig_module/cooling_unit
+		)
+
+/*
  * EXECUTIVE OFFICER
  */
 /obj/item/weapon/rig/command/xo
