@@ -29,32 +29,32 @@
 				<h3>Mutiny</h3>
 				Immediate public execution.
 
+				<h3>Murder</h3>
+				Public execution following an investigation to confirm guilt.
+
 				<h3>Abandonment of Duty (Serious)</h3>
-				Immediate execution on the spot.
+				Removal from post. Potential public execution or punishment, depending on severity, at the discretion of the departmental head.
 
 				<h3>Escape from Confinment</h3>
-				Immediate execution.
-
-				<h3>Murder</h3>
-				Immediate public execution.
+				Return to confinment, double sentence. Immediate execution if not possible.
 
 				<h3>Grand Theft</h3>
-				Immediate execution. Nuclear Keycards, firearms, etc.
+				Immediate return of items. If not possible, removal from post and/or execution at the discretion of the Captain. Nuclear Keycards, firearms, etc.
 
 				<h3>Possession of Contraband (Serious)</h3>
-				Fifteen minute sentence.
+				Ten minute sentence.
 
 				<h3>Negligence</h3>
 				Removal from post.
+
+				<h3>Abandonment of Duty (Minor)</h3>
+				Punishment at the discretion of the departmental head.
 
 				<h3>Assault</h3>
 				Fifteen minute sentence, or same injuries as the victim.
 
 				<h3>Trespassing</h3>
 				Five minute sentence.
-
-				<h3>Abandonment of Duty (Minor)</h3>
-				Removal from post.
 
 				<h3>Battery</h3>
 				Five minute sentence.
@@ -63,7 +63,7 @@
 				Five minute sentence.
 
 				<h3>Petty Theft</h3>
-				Five minute sentence.
+				Immediate return of items. If not possible, removal from post and/or five minute sentence, at the discretion of their departmental head.
 
 				<h3>Disorderly Conduct</h3>
 				Five minute sentence.

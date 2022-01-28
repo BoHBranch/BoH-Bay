@@ -11287,7 +11287,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "vg" = (
-/turf/simulated/wall/prepainted,
+/turf/simulated/wall/wood,
 /area/crew_quarters_boh/cabin_main/c1)
 "vh" = (
 /obj/machinery/door/firedoor/autoset,
@@ -11394,7 +11394,7 @@
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters_boh/cabin_main/c2)
 "vr" = (
-/turf/simulated/wall/prepainted,
+/turf/simulated/wall/wood,
 /area/crew_quarters_boh/cabin_main/janitorial)
 "vs" = (
 /turf/simulated/floor/plating,
@@ -14958,6 +14958,9 @@
 	},
 /turf/simulated/open,
 /area/hallway/primary/thirddeck/aft)
+"BJ" = (
+/turf/simulated/wall/wood,
+/area/crew_quarters_boh/cabin_main/c2)
 "BK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14970,6 +14973,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/storage/tools)
+"BM" = (
+/turf/simulated/wall/wood,
+/area/crew_quarters_boh/cabin_main/c3)
+"BN" = (
+/turf/simulated/wall/prepainted,
+/area/crew_quarters/head/sauna)
 "BO" = (
 /obj/effect/floor_decal/spline/fancy/black{
 	icon_state = "spline_fancy";
@@ -42273,11 +42282,11 @@ uU
 fo
 gr
 uU
-hL
-hL
-hL
-hL
-hL
+BN
+BN
+BN
+BN
+BN
 UZ
 Vf
 Ez
@@ -42479,7 +42488,7 @@ hL
 iF
 jO
 km
-hL
+BN
 UZ
 kq
 Ez
@@ -42681,7 +42690,7 @@ hP
 iV
 ke
 kt
-hL
+BN
 UZ
 qf
 Ez
@@ -42883,7 +42892,7 @@ iy
 iZ
 kf
 kM
-hL
+BN
 zZ
 Ez
 Ez
@@ -43085,7 +43094,7 @@ hP
 jl
 kg
 kU
-hL
+BN
 Vw
 wf
 wf
@@ -43287,7 +43296,7 @@ hL
 jp
 kh
 kV
-hL
+BN
 CE
 Ez
 Ff
@@ -43485,11 +43494,11 @@ fl
 uU
 uU
 uU
-hL
-hL
-hL
-hL
-hL
+BN
+BN
+BN
+BN
+BN
 CE
 Ez
 Fe
@@ -45511,10 +45520,10 @@ AN
 AN
 jt
 tB
-tB
-tB
+BJ
+BJ
 xq
-tB
+BJ
 tB
 xm
 Hf
@@ -46117,10 +46126,10 @@ vr
 vr
 vX
 sY
-sY
-sY
+BM
+BM
 xK
-sY
+BM
 sY
 Ba
 jZ

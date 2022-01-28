@@ -5,7 +5,7 @@
 
 /datum/map/torch/get_map_info()
 	. = list()
-	. += "Congratulations on your employment aboard the NTSS (NanoTrasen Solarian Ship) Dagon."
+	. += "Congratulations on your employment aboard the SGV (SolGov Vessel) Dagon."
 	. += "You are now in deep space, but there's no reason to worry! While SolGov might not be over your shoulder, the Captain certainly is! Trust in authority!"
 	. += ""
 	. += "You're sailing on an Epsilon Class System Surveyor with state of the art medical, research and security facilities. All provided by SolGov!"
