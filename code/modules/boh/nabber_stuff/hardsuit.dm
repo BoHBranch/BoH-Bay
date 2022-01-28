@@ -1,11 +1,11 @@
 // Rigs and gear themselves.
-/obj/item/weapon/rig/mantid
+/obj/item/weapon/rig/gas
 	name = "serpentid utility exosuit"
 	icon_override = 'icons/mob/species/nabber/onmob_back_gas.dmi'
-	desc = "An advanced utility exosuit with integrated power supply, weapon and atmosphere. It's closer to a mech than a rig."
-	icon_state = "kexosuit"
+	desc = "An advanced utility exosuit with integrated power supply and atmosphere."
+	icon_state = "gexosuit"
 	item_state = null
-	suit_type = "support exosuit"
+	suit_type = "exosuit"
 	armor = list(
 		melee = ARMOR_MELEE_MINOR,
 		bullet = ARMOR_BALLISTIC_MINOR,
@@ -15,18 +15,14 @@
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 	)
-	armor_type = /datum/extension/armor/ablative
 	online_slowdown = 0
 	offline_slowdown = 1
 	equipment_overlay_icon = null
-	air_type =   /obj/item/weapon/tank/mantid/reactor/oxygen
-	cell_type =  /obj/item/weapon/cell/mantid
-	chest_type = /obj/item/clothing/suit/space/rig/mantid/serpentid
-	helm_type =  /obj/item/clothing/head/helmet/space/rig/mantid
-	boot_type =  /obj/item/clothing/shoes/magboots/rig/mantid
-	glove_type = /obj/item/clothing/gloves/rig/mantid
+	chest_type = /obj/item/clothing/suit/space/rig/gas
+	helm_type =  /obj/item/clothing/head/helmet/space/rig/gas
+	boot_type =  /obj/item/clothing/shoes/magboots/rig/gas
+	glove_type = /obj/item/clothing/gloves/rig/gas
 	update_visible_name = TRUE
-	icon_override = 'icons/mob/species/mantid/onmob_back_alate.dmi'
 	sprite_sheets = list(
 		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_back_gas.dmi'
 		)
@@ -34,10 +30,24 @@
 		/obj/item/rig_module/maneuvering_jets
 		)
 
-/obj/item/weapon/rig/gas/mob_can_equip(var/mob/M, var/slot)
-	. = ..()
-	if(. && slot == slot_back)
-		var/mob/living/carbon/human/H = M
-		if(!istype(H) || H.species.get_bodytype(H))
-			to_chat(H, "<span class='danger'>Your species cannot wear \the [src].</span>")
-			. = 0
+/obj/item/clothing/head/helmet/space/rig/gas
+	light_overlay = "helmet_light_dual"
+	icon = 'icons/obj/clothing/obj_head.dmi'
+	item_icons = list(slot_head_str = 'icons/mob/onmob/onmob_head.dmi')
+	camera = /obj/machinery/camera/network/command
+	species_restricted = list(SPECIES_NABBER)
+
+/obj/item/clothing/suit/space/rig/gas
+	icon = 'icons/obj/clothing/obj_suit.dmi'
+	item_icons = list(slot_wear_suit_str = 'icons/mob/onmob/onmob_suit.dmi')
+	species_restricted = list(SPECIES_NABBER)
+
+/obj/item/clothing/shoes/magboots/rig/gas
+	icon = 'icons/obj/clothing/obj_feet.dmi'
+	item_icons = list(slot_shoes_str = 'icons/mob/onmob/onmob_feet.dmi')
+	species_restricted = list(SPECIES_NABBER)
+
+/obj/item/clothing/gloves/rig/gas
+	icon = 'icons/obj/clothing/obj_hands.dmi'
+	item_icons = list(slot_gloves_str = 'icons/mob/onmob/onmob_hands.dmi')
+	species_restricted = list(SPECIES_NABBER)

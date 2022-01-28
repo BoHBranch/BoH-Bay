@@ -12608,6 +12608,20 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
+"xl" = (
+/obj/structure/table/steel,
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/machinery/light_switch{
+	pixel_x = -6;
+	pixel_y = -24
+	},
+/obj/machinery/light/small,
+/obj/item/weapon/book/manual/military_law,
+/turf/simulated/floor/tiled/steel_grid,
+/area/engineering/engineering_monitoring)
 "xp" = (
 /obj/random/junk,
 /obj/structure/cable{
@@ -14412,19 +14426,6 @@
 /obj/item/weapon/storage/bag/trash,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
-"CC" = (
-/obj/structure/table/steel,
-/obj/machinery/atmospherics/pipe/simple/hidden/red{
-	icon_state = "intact";
-	dir = 4
-	},
-/obj/machinery/light_switch{
-	pixel_x = -6;
-	pixel_y = -24
-	},
-/obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel_grid,
-/area/engineering/engineering_monitoring)
 "CD" = (
 /obj/structure/table/rack,
 /obj/item/stack/material/steel/fifty,
@@ -42746,7 +42747,7 @@ MA
 HN
 pH
 qP
-CC
+xl
 Gp
 sZ
 sZ

@@ -4,7 +4,7 @@
 	req_access = list(access_medical)
 
 /obj/machinery/drone_fabricator/torch
-	fabricator_tag = "NTSS Dagon Maintenance"
+	fabricator_tag = "SGV Dagon Maintenance"
 
 /obj/machinery/drone_fabricator/torch/adv
 	name = "advanced drone fabricator"
@@ -13,7 +13,7 @@
 
 ///ai cons
 /obj/machinery/drone_fabricator/dagon //not needed, but just as a base
-	fabricator_tag = "NTSS Dagon Maintenance"
+	fabricator_tag = "SGV Dagon Maintenance"
 
 /obj/machinery/drone_fabricator/dagon/adv
 	name = "advanced drone fabricator"

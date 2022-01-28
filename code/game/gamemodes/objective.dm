@@ -209,7 +209,7 @@ var/global/list/all_objectives = list()
 // Nuclear Explosion //
 
 /datum/objective/nuclear
-	explanation_text = "Extract a ransom, or resources, from the NTSS Dagon with the threat of your nuclear device. Take hostages, make examples. Be creative."
+	explanation_text = "Extract a ransom, or resources, from the SGV Dagon with the threat of your nuclear device. Take hostages, make examples. Be creative."
 
 
 // Steal //

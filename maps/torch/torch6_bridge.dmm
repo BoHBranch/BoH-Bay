@@ -4160,6 +4160,7 @@
 /area/maintenance/bridge/foreport)
 "gQ" = (
 /obj/structure/table/woodentable_reinforced/walnut/maple,
+/obj/item/weapon/book/manual/military_law,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
 "gR" = (
@@ -5590,6 +5591,7 @@
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
 	},
+/obj/item/weapon/book/manual/military_law,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "jz" = (
@@ -12969,6 +12971,16 @@
 /obj/structure/catwalk,
 /turf/simulated/open,
 /area/hallway/primary/bridge/fore)
+"vp" = (
+/obj/structure/table/glass,
+/obj/effect/floor_decal/corner/blue/mono,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/bridge)
 "vs" = (
 /obj/machinery/space_heater,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -18992,16 +19004,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
-"WW" = (
-/obj/structure/table/glass,
-/obj/effect/floor_decal/corner/blue/mono,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/bridge)
 "WX" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -27181,7 +27183,7 @@ QW
 Rq
 GV
 dU
-WW
+vp
 FE
 HE
 BI

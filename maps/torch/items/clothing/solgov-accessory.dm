@@ -75,7 +75,7 @@ medals
 	return check_codex_val || ..()
 
 /obj/item/clothing/accessory/solgov/torch_patch
-	name = "\improper NTSS Dagon mission patch"
+	name = "\improper SGV Dagon mission patch"
 	desc = "A fire resistant shoulder patch, worn by the personnel involved in the Dagon Project."
 	icon_state = "torchpatch"
 	on_rolled = list("down" = "none")

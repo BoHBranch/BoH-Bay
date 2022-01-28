@@ -4533,6 +4533,7 @@
 	dir = 8
 	},
 /obj/structure/table/steel,
+/obj/item/weapon/book/manual/military_law,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/aux_bunk)
 "hY" = (
