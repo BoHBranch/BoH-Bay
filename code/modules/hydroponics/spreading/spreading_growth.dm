@@ -59,7 +59,7 @@
 	adjust_health(-seed.handle_environment(T,T.return_air(),null,1))
 	if(health <= 0)
 		return
-	
+
 	//Vine fight!
 	for(var/obj/effect/vine/other in T)
 		if(other.seed != seed)
@@ -74,8 +74,8 @@
 	if(is_mature())
 		//Find a victim
 		if(!buckled_mob)
-			var/mob/living/list/targets = targets_in_range()
-			if(targets && targets.len && prob(round(seed.get_trait(TRAIT_POTENCY)/4)))
+			var/list/mob/living/targets = targets_in_range()
+			if(LAZYLEN(targets) && prob(round(seed.get_trait(TRAIT_POTENCY)/4)))
 				entangle(pick(targets))
 
 		//Handle the victim
@@ -89,7 +89,7 @@
 			var/list/neighbors = get_neighbors()
 			if(neighbors.len)
 				spread_to(pick(neighbors))
-			
+
 		//Try to settle down
 		if(can_spawn_plant())
 			plant = new(T,seed)
@@ -112,7 +112,7 @@
 /obj/effect/vine/proc/should_sleep()
 	if(buckled_mob) //got a victim to fondle
 		return FALSE
-	if(get_neighbors().len) //got places to spread to
+	if(length(get_neighbors())) //got places to spread to
 		return FALSE
 	if(health < max_health) //got some growth to do
 		return FALSE
@@ -146,14 +146,14 @@
 			START_PROCESSING(SSvines, neighbor)
 
 /obj/effect/vine/proc/targets_in_range()
-	var/mob/list/targets = list()
+	var/list/mob/targets = list()
 	for(var/turf/simulated/check_turf in (get_cardinal_neighbors() | get_zlevel_neighbors() | list(loc)))
 		if(!istype(check_turf))
 			continue
 		for(var/mob/living/M in check_turf.contents)
 			if(prob(5) || !M.skill_check(SKILL_BOTANY, SKILL_PROF))
 				targets |= M
-	if(targets.len)
+	if(LAZYLEN(targets))
 		return targets
 
 /obj/effect/vine/proc/die_off()

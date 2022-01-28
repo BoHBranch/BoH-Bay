@@ -50,7 +50,7 @@
 			return
 		owner.visible_message(SPAN_WARNING("[owner] retracts \his [I] into \his [limb.name]."), SPAN_NOTICE("You retract your [I] into your [limb.name]."))
 
-	if(!istype(item) || !src.loc in owner.organs)
+	if(!istype(item) || !(src.loc in owner.organs))
 		return
 	if(owner.equip_to_slot_if_possible(item, slot))
 		GLOB.item_unequipped_event.register(item, src, /obj/item/organ/internal/augment/active/polytool/proc/holding_dropped )

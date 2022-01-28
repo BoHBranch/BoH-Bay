@@ -284,7 +284,7 @@ Class Procs:
 /obj/machinery/attack_ghost(mob/user)
 	interface_interact(user)
 
-// If you don't call parent in this proc, you must make all appropriate checks yourself. 
+// If you don't call parent in this proc, you must make all appropriate checks yourself.
 // If you do, you must respect the return value.
 /obj/machinery/attack_hand(mob/user)
 	if((. = ..())) // Buckling, climbers; unlikely to return true.
@@ -403,7 +403,7 @@ Class Procs:
 
 /obj/machinery/proc/display_parts(mob/user)
 	to_chat(user, "<span class='notice'>Following parts detected in the machine:</span>")
-	for(var/var/obj/item/C in component_parts)
+	for(var/obj/item/C in component_parts)
 		to_chat(user, "<span class='notice'>	[C.name]</span>")
 	for(var/path in uncreated_component_parts)
 		var/obj/item/thing = path

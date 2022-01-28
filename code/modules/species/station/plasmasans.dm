@@ -111,7 +111,7 @@
 /mob/living/carbon/human/plasmasans/pl_effects() //you're made of the stuff why would it hurt you?
 	return
 
-/mob/living/carbon/human/plasmasans/vomit(var/toxvomit = 0, var/timevomit = 1, var/level = 3) //nothing to really vomit out, considering they don't eat
+/mob/living/carbon/human/plasmasans/vomit(var/timevomit = 1, var/level = 3, var/deliberate = FALSE) //nothing to really vomit out, considering they don't eat
 	return
 
 /mob/living/carbon/human/plasmasans/get_breath_volume()

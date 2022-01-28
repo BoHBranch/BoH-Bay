@@ -5,7 +5,9 @@
 /client/proc/admin_memo(task in list("write","show","delete"))
 	set name = "Memo"
 	set category = "Server"
-	if(!ENABLE_MEMOS)		return
+	#ifndef ENABLE_MEMOS
+	return
+	#endif
 	if(!check_rights(0))	return
 	switch(task)
 		if("write")		admin_memo_write()
@@ -31,11 +33,13 @@
 
 //show all memos
 /client/proc/admin_memo_show()
-	if(ENABLE_MEMOS)
-		var/savefile/F = new(MEMOFILE)
-		if(F)
-			for(var/ckey in F.dir)
-				to_chat(src, "<center><span class='motd'><b>Admin Memo</b><i> by [F[ckey]]</i></span></center>")
+	#ifndef ENABLE_MEMOS
+	return
+	#endif
+	var/savefile/F = new(MEMOFILE)
+	if(F)
+		for(var/ckey in F.dir)
+			to_chat(src, "<center><span class='motd'><b>Admin Memo</b><i> by [F[ckey]]</i></span></center>")
 
 //delete your own or somebody else's memo
 /client/proc/admin_memo_delete()
