@@ -13472,6 +13472,10 @@
 /obj/effect/floor_decal/corner/lime/three_quarters{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "yU" = (

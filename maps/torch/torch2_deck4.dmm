@@ -3256,10 +3256,6 @@
 "gq" = (
 /obj/machinery/pointdefense,
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/machinery/power/terminal,
 /obj/structure/cable/green{
 	d2 = 2;
