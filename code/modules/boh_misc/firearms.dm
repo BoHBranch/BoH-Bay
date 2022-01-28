@@ -21,7 +21,7 @@
 
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar/loaded
 	name = "high-powered handgun"
-	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo. This one has 'To the Chief of Security Aboard the NTSS Dagon' engraved"
+	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo. This one has 'To the Chief of Security Aboard the SGV Dagon' engraved"
 	magazine_type = /obj/item/ammo_magazine/magnum/rubber
 	starts_loaded = 1
 
@@ -34,7 +34,7 @@
 /obj/item/weapon/gun/projectile/pistol/holdout/cap
 	name = "Lumoco P3"
 	desc = "The Lumoco Arms P3 Whisper. A small, easily concealable gun. \
-	On the grip is bold stamped lettering, 'NTSS Dagon, Custom Order'."
+	On the grip is bold stamped lettering, 'SGV Dagon, Custom Order'."
 	fire_delay = 2
 	starts_loaded = 0
 
@@ -216,7 +216,7 @@
 /////////
 /obj/item/weapon/gun/projectile/revolver/medium/captain/large
 	name = "Ultimate Argument"
-	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Up-chambered for a .454 calibre round. This one has 'To the Captain of the NTSS Dagon' engraved on the grip."
+	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Up-chambered for a .454 calibre round. This one has 'To the Captain of the SGV Dagon' engraved on the grip."
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
 	caliber = CALIBER_PISTOL_MAGNUM_LARGE
 	has_firing_pin = TRUE
@@ -227,7 +227,7 @@
 /////////
 /obj/item/weapon/gun/projectile/revolver/medium/captain/xo
 	name = "Final Argument"
-	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Executive of the NTSS Dagon' engraved on the grip."
+	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Executive of the SGV Dagon' engraved on the grip."
 	ammo_type = /obj/item/projectile/bullet/pistol/xo
 
 /////////

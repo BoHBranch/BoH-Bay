@@ -53,9 +53,9 @@
 	allowed_branches = NT_BRANCHES
 
 /datum/gear/accessory/torch_patch
-	display_name = "NTSS Dagon mission patch"
+	display_name = "SGV Dagon mission patch"
 	path = /obj/item/clothing/accessory/solgov/torch_patch
-	description = "A shoulder patch representing the NTSS Dagon and its mission. Given to all the oddjobs pulled from various branches to work on the Dagon."
+	description = "A shoulder patch representing the SGV Dagon and its mission. Given to all the oddjobs pulled from various branches to work on the Dagon."
 
 /datum/gear/accessory/pilot_pin
 	display_name = "pilot's qualification pin"

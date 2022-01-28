@@ -50,14 +50,6 @@ var/global/list/rad_collectors = list()
 			P.air_contents.adjust_gas("phoron", -0.001*drainratio)
 	return
 
-	if(P)
-		if(P.air_contents.gas["phoron"] == 0)
-			investigate_log("<font color='red'>out of fuel</font>.","singulo")
-			eject()
-		else
-			P.air_contents.adjust_gas("phoron", -0.001*drainratio)
-	return
-
 /obj/machinery/power/rad_collector/CanUseTopic(mob/user)
 	if(!anchored)
 		return STATUS_CLOSE
@@ -172,15 +164,12 @@ var/global/list/rad_collectors = list()
 		update_icon()
 
 /obj/machinery/power/rad_collector/proc/receive_pulse(var/pulse_strength)
-	if(P && active)
-		var/power_produced = 0
-		power_produced = P.air_contents.gas[GAS_PHORON]*pulse_strength*20
-		add_avail(power_produced)
-		last_power_new = power_produced
+	if(!P || !active)
 		return
-	return
-
-	return
+	var/power_produced = 0
+	power_produced = P.air_contents.gas[GAS_PHORON]*pulse_strength*20
+	add_avail(power_produced)
+	last_power_new = power_produced
 
 
 /obj/machinery/power/rad_collector/on_update_icon()

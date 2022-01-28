@@ -400,7 +400,7 @@ SUBSYSTEM_DEF(jobs)
 			if(G)
 				var/permitted = 0
 				if(G.allowed_branches)
-					if(H.char_branch && H.char_branch.type in G.allowed_branches)
+					if(H.char_branch && (H.char_branch.type in G.allowed_branches))
 						permitted = 1
 				else
 					permitted = 1

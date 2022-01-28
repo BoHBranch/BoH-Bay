@@ -17,7 +17,7 @@
 	use_power = 1
 	idle_power_usage = 2
 	active_power_usage = 500
-	
+
 	construct_state = /decl/machine_construction/default/panel_closed
 	uncreated_component_parts = null
 
@@ -115,7 +115,7 @@
 
 	user.visible_message("<span class='danger'>\The [user] starts to put \the [victim] into \the [src]!</span>")
 	src.add_fingerprint(user)
-	if(do_after(user, 30 SECONDS, act_target = src) && victim.Adjacent(src) && user.Adjacent(src) && victim.Adjacent(user) && !occupant)
+	if(do_after(user, 30 SECONDS, src) && victim.Adjacent(src) && user.Adjacent(src) && victim.Adjacent(user) && !occupant)
 		user.visible_message("<span class='danger'>[user] stuffs [victim] into the gibber!</span>")
 		if(victim.client)
 			victim.client.perspective = EYE_PERSPECTIVE

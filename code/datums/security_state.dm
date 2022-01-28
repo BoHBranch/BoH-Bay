@@ -198,7 +198,7 @@
 		if(FA.z in GLOB.using_map.contact_levels)
 			FA.update_icon()
 	for(var/obj/machinery/power/apc/A in GLOB.global_apc_list)
-		if(!A.z in GLOB.using_map.station_levels)
+		if(!(A.z in GLOB.using_map.station_levels))
 			continue
 		var/turf/T = get_turf(A)
 		if(!istype(T.loc,/area/hallway/))

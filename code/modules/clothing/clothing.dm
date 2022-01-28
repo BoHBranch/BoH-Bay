@@ -241,9 +241,7 @@ BLIND     // can't see anything
 /obj/item/clothing/glasses/get_icon_state(mob/user_mob, slot)
 	if(item_state_slots && item_state_slots[slot])
 		return item_state_slots[slot]
-	else
-		return icon_state
-	return ..()
+	return icon_state
 
 /obj/item/clothing/glasses/update_clothing_icon()
 	if (ismob(src.loc))
@@ -621,10 +619,7 @@ BLIND     // can't see anything
 	if (istype(I, /obj/item/weapon/handcuffs))
 		add_cuffs(I, user)
 		return
-	else
-		add_hidden(I, user)
-		return
-	..()
+	add_hidden(I, user)
 
 /obj/item/clothing/shoes/proc/add_cuffs(var/obj/item/weapon/handcuffs/cuffs, var/mob/user)
 	if (!can_add_cuffs)
@@ -988,8 +983,8 @@ BLIND     // can't see anything
 	set name = "Toggle Suit Sensors"
 	set category = "Object"
 	set src in usr
+
 	set_sensors(usr)
-	..()
 
 /obj/item/clothing/under/verb/rollsuit()
 	set name = "Roll Down Jumpsuit"

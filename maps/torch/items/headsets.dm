@@ -7,7 +7,7 @@
 
 /obj/item/device/radio/headset/heads/torchexec
 	name = "executive headset"
-	desc = "The headset of those brave men and women who command the NTSS Dagon."
+	desc = "The headset of those brave men and women who command the SGV Dagon."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/heads/torchexec

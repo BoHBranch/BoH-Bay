@@ -407,6 +407,7 @@
 		qdel(target)
 		to_chat(H, "<span class='notice'>You use the kit on [target], adapting it to suit your current job.</span>")
 		used |= USED_ADAPT_HELM
+		return
 	if (istype(target, /obj/item/clothing/suit/space/plasmasans))
 		if(used & USED_ADAPT_SUIT)
 			to_chat(user, "<span class='notice'>The kit's suit modifier has already been used.</span>")
@@ -415,7 +416,7 @@
 		qdel(target)
 		to_chat(H, "<span class='notice'>You use the kit on [target], adapting it to suit your current job.</span>")
 		used |= USED_ADAPT_SUIT
-	return
+		return
 	to_chat(user, "<span class='warning'>You can't modify [target]!</span>")
 
 #undef USED_ADAPT_HELM

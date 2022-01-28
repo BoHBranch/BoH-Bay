@@ -46,7 +46,7 @@
 		to_chat(src, SPAN_WARNING("This place is blessed, you may not draw runes on it - defile it first.") )
 		return
 	if(!istype(T, /turf/simulated))
-		to_chat(src, SPAN_WARNING("You need more space to draw a rune here.") ) 
+		to_chat(src, SPAN_WARNING("You need more space to draw a rune here.") )
 		return
 	if(locate(/obj/effect/rune) in T)
 		to_chat(src, SPAN_WARNING("There's already a rune here.") ) // Don't cross the runes
@@ -104,7 +104,7 @@
 		to_chat(src, SPAN_DANGER("You are too weak to draw runes.") )
 		return
 	if(disrupts_psionics())
-		to_chat(src, SPAN_DANGER("The words of your Lord cannot reach you, you are being nulled!") ) 
+		to_chat(src, SPAN_DANGER("The words of your Lord cannot reach you, you are being nulled!") )
 	..()
 
 /mob/proc/remove_blood_simple(var/blood)
@@ -290,7 +290,7 @@ var/list/Tier4Runes = list(
 	set category = "Cult Magic"
 	set name = "Rune: Summon Shade"
 
-	make_rune(/obj/effect/rune/summon_shade, tome_required = 1, 15)
+	make_rune(/obj/effect/rune/summon_shade, cost = 15, tome_required = 1)
 
 /mob/proc/pylon_rune()
 	set category = "Cult Magic"
