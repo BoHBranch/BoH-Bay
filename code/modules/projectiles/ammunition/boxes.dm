@@ -16,6 +16,10 @@
 	labels = list("rubber")
 	ammo_type = /obj/item/ammo_casing/pistol/rubber
 
+/obj/item/ammo_magazine/speedloader/pepperball
+	labels = list("pepperball")
+	ammo_type = /obj/item/ammo_casing/pistol/rubber/pepperball
+
 /obj/item/ammo_magazine/speedloader/magnum
 	icon_state = "spdloader_magnum"
 	caliber = CALIBER_PISTOL_MAGNUM

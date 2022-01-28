@@ -4,11 +4,11 @@
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar
 	name = "Mk59"
-	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps."
+	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps. It's known for severe issues with reliability when not maintained well or used by inexperienced shooters."
 	magazine_type = /obj/item/ammo_magazine/pistol/double/pepperball
+	jam_chance = 5 //Cheap firearm. Chance of jamming.
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar/cabinet
-	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps."
 	starts_loaded = 0
 
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar
@@ -16,7 +16,6 @@
 	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo."
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar/loadout
-	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps."
 	magazine_type = /obj/item/ammo_magazine/pistol/double
 
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar/loaded
@@ -50,10 +49,14 @@
 	safety_icon = "medium_safety"
 	caliber = CALIBER_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol
-	desc = "The Lumoco Arms' Solid is a rugged revolver for people who don't keep their guns well-maintained."
+	desc = "The Lumoco Arms' Mk12 is a rugged revolver for people who don't keep their guns well-maintained. Unlike its cousin, the Mk59 'Jhen Bothus', it has no issues with reliability."
 	accuracy = 1
 	bulk = 0
 	fire_delay = 9
+
+/obj/item/weapon/gun/projectile/revolver/medium/sec/pepper
+	ammo_type = /obj/item/ammo_casing/pistol/rubber/pepperball
+
 
 /////////
 // display
