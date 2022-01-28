@@ -15,12 +15,13 @@
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 	)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 	online_slowdown = 0
 	offline_slowdown = 1
 	equipment_overlay_icon = null
 	chest_type = /obj/item/clothing/suit/space/rig/gas
 	helm_type =  /obj/item/clothing/head/helmet/space/rig/gas
-	boot_type =  /obj/item/clothing/shoes/magboots/rig/gas
+	boot_type =  null
 	glove_type = /obj/item/clothing/gloves/rig/gas
 	update_visible_name = TRUE
 	sprite_sheets = list(
@@ -30,24 +31,30 @@
 		/obj/item/rig_module/maneuvering_jets
 		)
 
+
 /obj/item/clothing/head/helmet/space/rig/gas
-	light_overlay = "helmet_light_dual"
-	icon = 'icons/obj/clothing/obj_head.dmi'
-	item_icons = list(slot_head_str = 'icons/mob/onmob/onmob_head.dmi')
-	camera = /obj/machinery/camera/network/command
+	light_color = "#ffff00"
+	desc = "More like a torpedo casing than a helmet."
 	species_restricted = list(SPECIES_NABBER)
+	sprite_sheets = list(
+		SPECIES_NABBER =       'icons/mob/species/nabber/onmob_head_gas.dmi'
+		)
 
 /obj/item/clothing/suit/space/rig/gas
-	icon = 'icons/obj/clothing/obj_suit.dmi'
-	item_icons = list(slot_wear_suit_str = 'icons/mob/onmob/onmob_suit.dmi')
+	desc = "It's closer to a mech than a suit."
 	species_restricted = list(SPECIES_NABBER)
-
-/obj/item/clothing/shoes/magboots/rig/gas
-	icon = 'icons/obj/clothing/obj_feet.dmi'
-	item_icons = list(slot_shoes_str = 'icons/mob/onmob/onmob_feet.dmi')
-	species_restricted = list(SPECIES_NABBER)
+	sprite_sheets = list(
+		SPECIES_NABBER =       'icons/mob/species/nabber/onmob_suit_gas.dmi'
+		)
+	allowed = list(
+		/obj/item/weapon/storage/
+	)
 
 /obj/item/clothing/gloves/rig/gas
-	icon = 'icons/obj/clothing/obj_hands.dmi'
-	item_icons = list(slot_gloves_str = 'icons/mob/onmob/onmob_hands.dmi')
+	desc = "They look like a cross between a can opener and a Swiss army knife the size of a shoebox."
 	species_restricted = list(SPECIES_NABBER)
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+	sprite_sheets = list(
+		SPECIES_NABBER =       'icons/mob/species/nabber/onmob_hands_gas.dmi'
+		)

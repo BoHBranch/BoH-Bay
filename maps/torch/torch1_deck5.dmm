@@ -8338,6 +8338,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
+"or" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/table/rack,
+/obj/item/weapon/rig/gas,
+/obj/item/weapon/rig/gas,
+/obj/item/weapon/rig/gas,
+/turf/simulated/floor/tiled/monotile,
+/area/quartermaster/exploration)
 "os" = (
 /obj/machinery/firealarm{
 	dir = 2;
@@ -8407,6 +8415,11 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/storage)
+"oA" = (
+/obj/random/illegal,
+/obj/machinery/the_singularitygen,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftport)
 "oC" = (
 /obj/machinery/computer/shuttle_control{
 	dir = 4;
@@ -11662,10 +11675,6 @@
 	},
 /obj/random/illegal,
 /turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fifthdeck/aftport)
-"uM" = (
-/obj/random/illegal,
-/turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "uN" = (
 /obj/machinery/door/firedoor,
@@ -33457,7 +33466,7 @@ kL
 hl
 iP
 kg
-hz
+or
 ki
 jD
 eu
@@ -44369,7 +44378,7 @@ ws
 ws
 uf
 uz
-uM
+oA
 uA
 ws
 ws
