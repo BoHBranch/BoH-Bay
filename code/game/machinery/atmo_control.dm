@@ -108,7 +108,6 @@ obj/machinery/computer/air_control/Destroy()
 	data["out_pressure_mode"] = out_pressure_mode
 
 	data["automation"] = automation
-	. = ..()
 
 /obj/machinery/computer/air_control/Process()
 	..()

@@ -12,7 +12,7 @@
 	status_flags = PASSEMOTES
 	a_intent =     I_HURT
 	mob_size =     MOB_LARGE
-	
+
 	meat_type = null
 	meat_amount = 0
 	skin_material = null
@@ -70,7 +70,7 @@
 	var/obj/screen/movable/exosuit/toggle/hatch_open/hud_open
 	var/obj/screen/movable/exosuit/power/hud_power
 
-/mob/living/exosuit/is_flooded()
+/mob/living/exosuit/is_flooded(var/lying_mob, var/absolute)
 	. = (body && body.pilot_coverage >= 100 && hatch_closed) ? FALSE : ..()
 
 /mob/living/exosuit/Initialize(mapload, var/obj/structure/heavy_vehicle_frame/source_frame)
@@ -154,7 +154,7 @@
 	QDEL_NULL(head)
 	QDEL_NULL(body)
 	QDEL_NULL(radio)
-	
+
 	QDEL_NULL(sparks)
 
 	for(var/hardpoint in hardpoint_hud_elements)
@@ -209,6 +209,6 @@
 	if(.)
 		update_pilots()
 
-		
+
 
 
