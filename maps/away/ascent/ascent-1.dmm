@@ -2643,22 +2643,6 @@
 /obj/structure/ship_munition/disperser_charge/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
-"fP" = (
-/obj/machinery/conveyor{
-	color = "#a33fbf";
-	dir = 4;
-	id = "ammo_belt_ascent";
-	name = "munitions belt"
-	},
-/obj/structure/window/phoronreinforced,
-/obj/machinery/door/window/brigdoor{
-	color = "PURPLE";
-	dir = 4;
-	name = "munitions belt access"
-	},
-/obj/structure/ship_munition/disperser_charge/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_center)
 "fQ" = (
 /obj/structure/window/phoronreinforced,
 /obj/machinery/disperser/back/ascent,
@@ -7537,7 +7521,7 @@ aj
 ax
 ar
 ai
-fP
+fA
 bV
 fO
 ai

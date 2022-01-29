@@ -9027,7 +9027,8 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/window/brigdoor/southleft{
 	dir = 4;
-	name = "Monitoring Desk"
+	name = "Monitoring Desk";
+	req_access = list("ACCESS_ENGINE_EQUIP")
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/engineering_monitoring)
