@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/energy/gun/small/secure
-	name = "compact smartgun"
-	desc = "Combining the two LAEP90 variants, the secure and compact LAEP90-CS is the next best thing to keeping your security forces on a literal leash. It has an ability to recharge itself over time."
+	name = "Hephaestus Self Recharging Multipurpose Laser"
+	desc = "The SRML is a part of Hephaestus 'smart' series of firearms. It's incredibly high price-tag has led to it being rarely seen outside of private security forces!"
 	icon = 'icons/obj/guns/small_egun_secure.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
@@ -26,8 +26,8 @@
 	req_access = list(list(access_brig, access_bridge))
 
 /obj/item/weapon/gun/energy/gun/secure
-	name = "smartgun"
-	desc = "A more secure LAEP90, the LAEP90-S is designed to please paranoid constituents. Body cam not included."
+	name = "Hephaestus Smartgun"
+	desc = "Hephaestus's 'smart' series of laser-gun. It is designed to please people after rampant claims of abuse by the Solarian Republican Guard! It has a incredibly high pricetag!"
 	icon = 'icons/obj/guns/energy_gun_secure.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns_secure.dmi',
@@ -37,9 +37,10 @@
 	req_access = list(list(access_brig, access_bridge))
 	authorized_modes = list(ALWAYS_AUTHORIZED, AUTHORIZED)
 	max_shots = 10
+	self_recharge = 1
 
 /obj/item/weapon/gun/energy/revolver/secure
-	name = "smart service revolver"
+	name = "Nanotrasen Smart Revolver"
 	desc = "The LAER680-S, a standard issue service revolver commonly used by higher ranking offcers among the SCG. Fitted with an NT1019 chip which allows remote authorization of the weapon's functionality."
 	icon = 'icons/obj/guns/energy_revolver.dmi'
 	icon_state = "energyrevolverstun100"
@@ -75,7 +76,7 @@
 	. = ..()
 
 /obj/item/weapon/gun/energy/laser/secure
-	name = "laser carbine"
+	name = "Hephaestus G40E-UP"
 	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts. Fitted with an NT1019 chip to make sure killcount is tracked appropriately."
 	icon_state = "lasersec"
 	req_access = list(list(access_brig, access_bridge))

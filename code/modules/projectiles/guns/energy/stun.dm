@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/energy/taser
-	name = "electrolaser"
-	desc = "The NT Mk30 NL is a small, low capacity gun used for non-lethal takedowns. Produced by NT, it's actually a licensed version of a W-T design. It can switch between high and low intensity stun shots."
+	name = "Hephaestus Stunner"
+	desc = "The Hephaestus Stunner is a cheap and effective stungun designed for the Military Police!"
 	icon = 'icons/obj/guns/taser.dmi'
 	icon_state = "taser"
 	item_state = null	//so the human update icon uses the icon_state instead.
@@ -14,8 +14,8 @@
 		)
 
 /obj/item/weapon/gun/energy/taser/carbine
-	name = "electrolaser carbine"
-	desc = "The NT Mk44 NL is a high capacity gun used for non-lethal takedowns. It can switch between high and low intensity stun shots."
+	name = "Hephaestus Lightning"
+	desc = "The Hephaestus Lightning is a powerful stunrifle built to takedown more 'biologically robust' species, such as Unathi!"
 	icon = 'icons/obj/guns/taser_carbine.dmi'
 	icon_state = "tasercarbine"
 	w_class = ITEM_SIZE_LARGE
@@ -46,8 +46,8 @@
 
 
 /obj/item/weapon/gun/energy/stunrevolver
-	name = "stun revolver"
-	desc = "An A&M X6 Zeus. Designed by al-Maliki & Mosley, but produced under the wing of the Free Trade Union. Industry spies have been trying to get a hold of the blueprints for half a decade."
+	name = "MA-Sparkler"
+	desc = "The Martian Armoury Sparkler. It's a stun-gun in the shape of a revolver with pitiful ammo-capacity. It's only saving grace is the stability of it's shot over distance!"
 	icon = 'icons/obj/guns/stunrevolver.dmi'
 	icon_state = "stunrevolver"
 	item_state = "stunrevolver"
@@ -57,8 +57,8 @@
 	combustion = 0
 
 /obj/item/weapon/gun/energy/stunrevolver/rifle
-	name = "stun rifle"
-	desc = "An A&M X10 Thor. A vastly oversized variant of the A&M X6 Zeus. Fires overcharged electrodes to obliterate pain receptors without harming them too much."
+	name = "MA-Crackler"
+	desc = "An Martian Armoury Crackler. A vastly oversized variant of the Sparkler. Fires overcharged electrodes to obliterate pain receptors without harming them too much!"
 	icon = 'icons/obj/guns/stunrifle.dmi'
 	icon_state = "stunrifle"
 	item_state = "stunrifle"
@@ -110,8 +110,8 @@
 	projectile_type = /obj/item/projectile/energy/bolt/large
 
 /obj/item/weapon/gun/energy/plasmastun
-	name = "plasma pulse projector"
-	desc = "The Mars Military Industries MA21 Selkie is a weapon that uses a laser pulse to ionise the local atmosphere, creating a disorienting pulse of plasma and deafening shockwave as the wave expands. Without a local atmosphere to ionize, however, it becomes a very expensive paperweight."
+	name = "Hephaestus Selkie"
+	desc = "The Hephaestus Industries MA21 Selkie is a weapon that uses a laser pulse to ionise the local atmosphere, creating a disorienting pulse of plasma and deafening shockwave as the wave expands. Without a local atmosphere to ionize, however, it becomes a very expensive paperweight."
 	icon = 'icons/obj/guns/plasma_stun.dmi'
 	icon_state = "plasma_stun"
 	item_state = "plasma_stun"
@@ -123,7 +123,7 @@
 	combustion = 0
 
 /obj/item/weapon/gun/energy/confuseray
-	name = "disorientator"
+	name = "W-T Disorientator"
 	desc = "The W-T Mk. 4 Disorientator is a small, low capacity, and short-ranged energy projector intended for personal defense with minimal risk of permanent damage or cross-fire."
 	icon = 'icons/obj/guns/confuseray.dmi'
 	icon_state = "confuseray"
