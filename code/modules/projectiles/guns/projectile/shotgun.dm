@@ -1,10 +1,10 @@
 /obj/item/weapon/gun/projectile/shotgun/pump
-	name = "shotgun"
-	desc = "The mass-produced W-T Remmington 29x shotgun is a favourite of police and security forces on many worlds. Useful for sweeping alleys."
+	name = "MA-Envoy"
+	desc = "The mass-produced Martian Armoury Envoy is the favourite of police and security forces on many worlds for it's reliable action and generous capacity. Perfect for clearing hallways!"
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
-	max_shells = 4
+	max_shells = 7
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
@@ -60,13 +60,13 @@
 	update_icon()
 
 /obj/item/weapon/gun/projectile/shotgun/pump/combat
-	name = "combat shotgun"
+	name = "Hephaestus KS-40"
 	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders."
 	icon_state = "cshotgun"
 	item_state = "cshotgun"
 	wielded_item_state = "cshotgun-wielded"
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
-	max_shells = 7 //match the ammo box capacity, also it can hold a round in the chamber anyways, for a total of 8.
+	max_shells = 4
 	ammo_type = /obj/item/ammo_casing/shotgun
 	one_hand_penalty = 8
 
@@ -79,8 +79,8 @@
 			overlays += I
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel
-	name = "double-barreled shotgun"
-	desc = "A true classic."
+	name = "MA-Bitch"
+	desc = "Martian Armoury's finest example of el-cheapo firearms. The 'Bitch' was originally called another name, but it's brutal recoil and near indestructability earned it the nickname!"
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "dshotgun"
 	item_state = "dshotgun"
@@ -141,7 +141,7 @@
 
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn
 	name = "sawn-off shotgun"
-	desc = "Omar's coming!"
+	desc = "Because fuck you, fuck the guy behind you and fuck that Dog twenty yards to the right aswell!"
 	icon_state = "sawnshotgun"
 	item_state = "sawnshotgun"
 	wielded_item_state = "sawnshotgun-wielded"
