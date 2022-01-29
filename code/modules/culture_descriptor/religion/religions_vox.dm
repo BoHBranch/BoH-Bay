@@ -1,6 +1,6 @@
 /decl/cultural_info/religion/codex
 	name = RELIGION_VOX_CODEX
-	description = "During the fall of the Auralis’ grand federation, the risk of their collective knowledge being lost was high. \
+	description = "During the fall of the Auralis' grand federation, the risk of their collective knowledge being lost was high. \
 	However, of the Auralis who did all they could to preserve their technology, she did the most; having kept alive for the Vox the ways of biotechnology, \
 	and saving the five sacred arks from the calamity which destroyed all others. Those who follow Chakala believe the way forward for the Vox \
 	is the discovery of science both old and new. Their symbol is a golden trinity of eyes."
