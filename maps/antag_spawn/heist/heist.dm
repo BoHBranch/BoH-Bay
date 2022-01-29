@@ -76,7 +76,7 @@
 				spawn(1)
 					var/newname = sanitizeSafe(input(vox,"Enter a name, or leave blank for the default name.", "Name change","") as text, MAX_NAME_LEN)
 					if(!newname || newname == "")
-						var/decl/cultural_info/voxculture = SSculture.get_culture(CULTURE_VOX_RAIDER)
+						var/decl/cultural_info/voxculture = SSculture.get_culture(CULTURE_VOX_LIGHT)
 						newname = voxculture.get_random_name()
 					vox.real_name = newname
 					vox.SetName(vox.real_name)
