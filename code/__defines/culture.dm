@@ -122,19 +122,25 @@
 #define FACTION_ADHERENT_SEPARATISTS "Seperatists"
 
 // Vox cultures.
-#define CULTURE_VOX_ARKSHIP    "Arkship Crew"
-#define CULTURE_VOX_SALVAGER   "Salvager Crew"
-#define CULTURE_VOX_RAIDER     "Raider Crew"
+#define CULTURE_VOX_ACOLYTE    "Resolute Acolyte"
+#define CULTURE_VOX_TRUTH      "Artificer of Truth"
+#define CULTURE_VOX_TECHNICIAN "Sacred Technician"
+#define CULTURE_VOX_LIGHT      "Warrior of Light"
+#define CULTURE_VOX_MERCHANT   "Sworn Merchant"
 
-#define HOME_SYSTEM_VOX_ARK    "Ark-Dweller"
-#define HOME_SYSTEM_VOX_SHROUD "Shroud-Dweller"
-#define HOME_SYSTEM_VOX_SHIP   "Ship-Dweller"
+#define HOME_SYSTEM_VOX_CAPITAL    "Ark of the Starlight Herald"
+#define HOME_SYSTEM_VOX_FORTRESS   "Ark of the Stalwart Guardian"
+#define HOME_SYSTEM_VOX_RESEARCH   "Ark of the Curious Acolyte"
+#define HOME_SYSTEM_VOX_PROCESSING "Ark of the Dutiful Blade"
+#define HOME_SYSTEM_VOX_PRODUCTION "Ark of the Vigilant Prophet"
 
-#define FACTION_VOX_RAIDER     "Raider"
-#define FACTION_VOX_CREW       "Ark Labourer"
-#define FACTION_VOX_APEX       "Apex Servant"
+#define FACTION_VOX_FLEET      "Fleet Vox"
+#define FACTION_VOX_COVENANT   "Covenant Vox"
+#define FACTION_VOX_ARK        "Ark Vox"
 
-#define RELIGION_VOX           "Auralis Reverence"
+#define RELIGION_VOX_CODEX     "Chakala, The Immortal Codex"
+#define RELIGION_VOX_GUARDIAN  "Kihikihi, The Watchful Guardian"
+#define RELIGION_VOX_FORCE     "Kritika, The Unrelenting Force"
 
 // IPC cultures.
 #define CULTURE_POSITRONICS    "Union Member"
