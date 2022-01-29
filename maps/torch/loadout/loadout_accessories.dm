@@ -69,6 +69,14 @@
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/fleet)
 
+/datum/gear/accessory/fleetpatch/New()
+	..()
+	var/fleetpatch = list()
+	fleetpatch["Group 40 patch"] = /obj/item/clothing/accessory/solgov/fleet_patch
+	fleetpatch["Border Patrol patch"] = /obj/item/clothing/accessory/solgov/fleet_patch/second
+	fleetpatch["Sol Defense Group patch"] = /obj/item/clothing/accessory/solgov/fleet_patch/fourth
+	gear_tweaks += new/datum/gear_tweak/path(fleetpatch)
+
 /datum/gear/accessory/armband_ma
 	display_name = "master-at-arms brassard"
 	path = /obj/item/clothing/accessory/armband/solgov/ma

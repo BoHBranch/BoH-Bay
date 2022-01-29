@@ -108,30 +108,30 @@ patches
 	check_codex_val = FACTION_EXPEDITIONARY
 
 /obj/item/clothing/accessory/solgov/fleet_patch
-	name = "\improper First Fleet patch"
-	desc = "A fancy shoulder patch carrying insignia of First Fleet."
+	name = "\improper Group 40 patch"
+	desc = "A fancy shoulder patch carrying insignia of Naval Group 40."
 	icon_state = "fleetpatch1"
 	on_rolled = list("down" = "none")
 	slot = ACCESSORY_SLOT_INSIGNIA
 
 /obj/item/clothing/accessory/solgov/fleet_patch/second
-	name = "\improper Second Fleet patch"
-	desc = "A well-worn shoulder patch carrying insignia of Second Fleet."
+	name = "\improper Patrol Group patch"
+	desc = "A well-worn shoulder patch carrying insignia of the Border Patrol Group."
 	icon_state = "fleetpatch2"
 
 /obj/item/clothing/accessory/solgov/fleet_patch/third
-	name = "\improper Third Fleet patch"
-	desc = "A scuffed shoulder patch carrying insignia of Third Fleet."
+	name = "\improper Special Operations Group patch"
+	desc = "A tactical shoulder patch carrying insignia of the SolGov Fleet S.O.G. task force."
 	icon_state = "fleetpatch3"
 
 /obj/item/clothing/accessory/solgov/fleet_patch/fourth
-	name = "\improper Fourth Fleet patch"
-	desc = "A pristine shoulder patch carrying insignia of Fourth Fleet."
+	name = "\improper Sol Defence Group patch"
+	desc = "A pristine shoulder patch carrying insignia of S.D.G."
 	icon_state = "fleetpatch4"
 
 /obj/item/clothing/accessory/solgov/fleet_patch/fifth
-	name = "\improper Fifth Fleet patch"
-	desc = "A tactical shoulder patch carrying insignia of Fifth Fleet."
+	name = "\improper NWB patch"
+	desc = "A shiny shoulder patch carrying insignia of the Non-Conventional Warfare Board."
 	icon_state = "fleetpatch5"
 
 /*****
