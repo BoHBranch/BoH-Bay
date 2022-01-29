@@ -71,10 +71,11 @@
 
 /datum/gear/accessory/fleetpatch/New()
 	..()
-	var/solmajors = list()
+	var/fleetpatch = list()
 	fleetpatch["Group 40 patch"] = /obj/item/clothing/accessory/solgov/fleet_patch
 	fleetpatch["Border Patrol patch"] = /obj/item/clothing/accessory/solgov/fleet_patch/second
 	fleetpatch["Sol Defense Group patch"] = /obj/item/clothing/accessory/solgov/fleet_patch/fourth
+	gear_tweaks += new/datum/gear_tweak/path(fleetpatch)
 
 /datum/gear/accessory/armband_ma
 	display_name = "master-at-arms brassard"
