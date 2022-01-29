@@ -5,7 +5,7 @@
 	If you serve Chakala, you likely promote most heavily the advancement of the sciences to grow ever closer to the Auralis and to understand their plans for their divine children, the Vox. \
 	If you serve Kihikihi, you likely promote new understandings and kinship, even in unexpected places. \
 	Finally, as an Acolyte of Kritika, you promote Vox dominance of the galaxy, using a combination of military force and tactful alliance with the worthy. \
-	Acolyte’s experience with aliens can vary based on assignment."
+	Acolyte experience with aliens can vary based on assignment."
 	hidden_from_codex = TRUE
 	language = LANGUAGE_VOX
 	secondary_langs = list(
