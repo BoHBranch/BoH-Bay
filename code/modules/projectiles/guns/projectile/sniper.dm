@@ -1,7 +1,7 @@
 /obj/item/weapon/gun/projectile/heavysniper
-	name = "anti-materiel rifle"
-	desc = "A portable anti-armour rifle fitted with a scope, the HI PTR-7 Rifle was originally designed to be used against armoured exosuits. It is capable of punching through windows and non-reinforced walls with ease. \
-	Truly an anachronism from another time."
+	name = "Hephaestus Diplomat"
+	desc = "A portable anti-armour rifle fitted with a scope, the HI 'Diplomat' Rifle was originally designed to be used against armoured exosuits. \
+	It's name nearly caused a lawsuit with Martian-Armouries until their Board of Directors began to suffer unfortunate .50 caliber headaches!"
 	icon = 'icons/obj/guns/heavysniper.dmi'
 	icon_state = "heavysniper"
 	item_state = "heavysniper" //sort of placeholder
@@ -80,8 +80,8 @@
 
 
 /obj/item/weapon/gun/projectile/heavysniper/boltaction
-	name = "bolt action rifle"
-	desc = "An old bolt action rifle from some forgotten war, still commonplace among farmers and colonists as an anti-varmint rifle."
+	name = "Ancient-Pattern Russ"
+	desc = "An ancient weapon. The Russ is well respected by colonists and farmers in the outer-colonies for it's reliable action and cheap ammo!"
 	icon = 'icons/obj/guns/boltaction.dmi'
 	icon_state = "boltaction"
 	item_state = "boltaction"
@@ -97,8 +97,8 @@
 	wielded_item_state = "boltaction-wielded"
 
 /obj/item/weapon/gun/projectile/hornetsniper
-	name = "Z2 marksman rifle"
-	desc = "The Z2 Hornet, is an older cousin of the Z9 Bullpup Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer."
+	name = "Nanotrasen Z9R Houndmaster"
+	desc = "The Z9R Houndmaster, is Nanotrasens custom-built weapon for SDF special-forces. Features a onboard targeting suite, upscaled 12mm round and modern materials!"
 	icon = 'icons/obj/guns/hornet.dmi'
 	icon_state = "hornet"
 	item_state = "hornet"
@@ -122,8 +122,8 @@
 	fire_delay = 30
 
 /obj/item/weapon/gun/projectile/hornetsniper/civ
-	name = "Z2B marksman rifle"
-	desc = "The Z2B Hornet, is an older cousin of the Z9 Bullpup Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer. \
-	This is a civilan model, holding a single round and requiring manual ejection."
+	name = "nanotrasen Z9RC Kentucky"
+	desc = "The Z9R Houndmaster, is Nanotrasens custom-built weapon for SDF special-forces. Features a onboard targeting suite, upscaled 12mm round and modern materials! \
+	this particular model is made for the civilian market. Meaning it can only be chambered with a single round and cycled manually."
 	handle_casings = HOLD_CASINGS
 	max_shells = 1

@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/magnetic/railgun
-	name = "railgun"
-	desc = "The HelTek Arms LM-76 Thunderclap. A portable linear motor cannon produced during the Aigaion Conflict for anti-armour and anti-fortification operations. Today, it sees wide use among private militaries, and is a staple on the black market."
+	name = "HellTek Thundergod"
+	desc = "The HelTek Arms Thundergod is a powerful pattern of railgun originally produced for the Human-Unathi War. With a capable battery and fast coils, this weapon has ironically become a favorite amongst Unathi Stormtroops!"
 	icon = 'icons/obj/guns/railgun.dmi'
 	icon_state = "railgun"
 	removable_components = TRUE // Can swap out the capacitor for more shots, or cell for longer usage before recharge
@@ -70,8 +70,8 @@
 	icon_state = "old_railgun"
 
 /obj/item/weapon/gun/magnetic/railgun/tcc // Oppa! Should only be available to TCC shock troops or high-budget mercs.
-	name = "advanced railgun"
-	desc = "The HelTek Arms HR-22 Hammerhead. A man-portable helical rail cannon; favorite weapon of Terran shock troops and anti-tank personnel."
+	name = "HelTek Eviction"
+	desc = "The HelTek Arms Eviction is then next evolution in man-portable helical rail cannons! This weapon's pricetag alone has led to it being considered more a legend than a actual firearm!"
 	icon = 'icons/obj/guns/railgun_adv.dmi'
 	icon_state = "railgun-tcc"
 	removable_components = TRUE // Railgunners are expected to be able to completely disassemble and reassemble their weapons in the field. But we don't have that mechanic, so the cell and capacitor will do.
@@ -111,7 +111,7 @@
 
 /obj/item/weapon/gun/magnetic/railgun/automatic // Adminspawn only, this shit is absurd.
 	name = "\improper LMRA autocannon"
-	desc = "The HelTek Arms LMRA-14A Meteor. Originally a vehicle-mounted turret weapon used by the United Colonies in the Aigaion Conflict for anti-vehicular operations, the fact that it was made man-portable is mindboggling in itself."
+	desc = "The HelTek Arms LMRA-14A Autocannon. Designed originally for light-skinned vehicles, this weapon has been upgraded with hyperlight materials and 'recoil dampeners' to somehow make it man-portable! A favorite amongst the SMC!"
 	icon = 'icons/obj/guns/railgun_heavy.dmi'
 	icon_state = "heavy_railgun"
 	removable_components = FALSE // Absolutely not. This has an infinity cell.
@@ -169,7 +169,7 @@
 
 /obj/item/weapon/gun/magnetic/railgun/flechette/out_of_ammo()
 	visible_message("<span class='warning'>\The [src] beeps to indicate the magazine is empty.</span>")
-	
+
 
 /obj/item/weapon/gun/magnetic/railgun/flechette/skrell
 	name = "skrellian rifle"
