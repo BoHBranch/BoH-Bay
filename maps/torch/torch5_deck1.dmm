@@ -12456,6 +12456,7 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
 	},
+/obj/item/weapon/hand_labeler,
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "avp" = (

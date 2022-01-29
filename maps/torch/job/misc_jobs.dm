@@ -40,7 +40,8 @@ Civilian
 		"Independent Observer",
 		"Sociologist",
 		"Off-Duty" = /decl/hierarchy/outfit/job/torch/crew/service/crewman,
-		"Trainer")
+		"Trainer",
+		"Assistant")
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/passenger
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(

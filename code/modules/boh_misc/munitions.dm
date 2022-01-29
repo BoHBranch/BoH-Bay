@@ -80,7 +80,7 @@
 	name ="incendiary shell"
 	icon_state= "rod"
 	damage_type = BURN
-	damage = 95
+	damage = 165//It's a rocket and there's so few of them. We'll down this if it's too powerful. Up from 90, which was a tickle cannon.
 	armor_penetration = 65 //not 100, because recoilless rifles don't have that high of a velocity
 	damage_flags = DAM_EDGE | DAM_DISPERSED | DAM_EXPLODE
 
