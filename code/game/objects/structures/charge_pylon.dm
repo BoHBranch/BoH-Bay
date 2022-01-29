@@ -41,7 +41,7 @@
 		visible_message("<span class='danger'>Electricity arcs off [user] as it touches \the [src]!</span>")
 		to_chat(user, "<span class='danger'><b>You detect damage to your components!</b></span>")
 	else
-		user.electrocute_act(100, src, def_zone = BP_CHEST)
+		H.electrocute_act(100, src, def_zone = BP_CHEST)
 		visible_message("<span class='danger'>\The [user] has been shocked by \the [src]!</span>")
 	user.throw_at(get_step(user,get_dir(src,user)), 5, 10)
 

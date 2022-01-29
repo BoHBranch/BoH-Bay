@@ -199,7 +199,7 @@
 		return 1
 
 /mob/living/silicon/remove_language(var/rem_language)
-	var/var/datum/language/removed_language = all_languages[rem_language]
+	var/datum/language/removed_language = all_languages[rem_language]
 	if(!removed_language)
 		return
 

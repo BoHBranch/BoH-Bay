@@ -1522,6 +1522,9 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
+/obj/machinery/light/spot{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry)
 "dr" = (
@@ -3256,10 +3259,6 @@
 "gq" = (
 /obj/machinery/pointdefense,
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/machinery/power/terminal,
 /obj/structure/cable/green{
 	d2 = 2;
@@ -3483,6 +3482,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/light/spot,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry)
 "gO" = (
@@ -3490,13 +3490,13 @@
 /area/security/infantry/armory)
 "gP" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/random/toolbox,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/item/weapon/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/armory)
 "gQ" = (
@@ -4032,7 +4032,7 @@
 /turf/simulated/floor/tiled,
 /area/security/infantry/exterior)
 "hK" = (
-/obj/structure/closet/crate/med_crate/trauma,
+/obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/armory)
 "hL" = (
@@ -4049,12 +4049,21 @@
 "hM" = (
 /obj/effect/floor_decal/techfloor{
 	icon_state = "techfloor_edges";
-	dir = 9
+	dir = 8
 	},
-/obj/structure/table/rack/shelf/steel,
-/obj/item/weapon/storage/firstaid/stab,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4;
+	external_pressure_bound = 101.325;
+	external_pressure_bound_default = 101.325
+	},
+/obj/machinery/recharger/wallcharger{
+	dir = 4;
+	icon_state = "wrecharger0";
+	pixel_x = -23;
+	pixel_y = -3
+	},
 /turf/simulated/floor/tiled/techfloor,
-/area/security/infantry/gear)
+/area/security/infantry/com)
 "hN" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -4232,16 +4241,19 @@
 /turf/simulated/wall/r_titanium,
 /area/shuttle/escape_pod1/station)
 "ic" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/effect/floor_decal/techfloor{
+	icon_state = "techfloor_edges";
+	dir = 8
 	},
 /obj/structure/table/steel,
-/obj/item/weapon/deck/cards,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/techfloor/grid,
+/obj/item/weapon/hand_labeler,
+/obj/machinery/recharger/wallcharger{
+	dir = 4;
+	icon_state = "wrecharger0";
+	pixel_x = -23;
+	pixel_y = -3
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/security/infantry)
 "id" = (
 /obj/structure/table/rack{
@@ -5161,15 +5173,18 @@
 "jH" = (
 /obj/effect/floor_decal/techfloor{
 	icon_state = "techfloor_edges";
-	dir = 8
+	dir = 9
 	},
-/obj/machinery/atmospherics/unary/vent_pump/on{
+/obj/structure/table/rack/shelf/steel,
+/obj/item/weapon/storage/firstaid/stab,
+/obj/machinery/recharger/wallcharger{
 	dir = 4;
-	external_pressure_bound = 101.325;
-	external_pressure_bound_default = 101.325
+	icon_state = "wrecharger0";
+	pixel_x = -23;
+	pixel_y = -3
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/security/infantry/com)
+/area/security/infantry/gear)
 "jI" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
@@ -5326,6 +5341,7 @@
 	},
 /obj/structure/table/steel,
 /obj/item/weapon/paper/inf,
+/obj/item/weapon/paper_bin,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry)
 "jX" = (
@@ -6072,13 +6088,16 @@
 /turf/simulated/open,
 /area/quartermaster/hangar/top)
 "ls" = (
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 8
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /obj/structure/table/steel,
-/obj/item/clothing/shoes/sandal,
-/turf/simulated/floor/tiled/techfloor,
+/obj/item/weapon/deck/cards,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry)
 "lt" = (
 /obj/structure/railing/mapped{
@@ -6335,6 +6354,16 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
+/area/command/pathfinder)
+"lW" = (
+/obj/structure/table/standard,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/item/weapon/book/manual/military_law,
+/turf/simulated/floor/tiled,
 /area/command/pathfinder)
 "lX" = (
 /obj/structure/disposalpipe/segment{
@@ -15306,15 +15335,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/deckchief)
-"QG" = (
-/obj/structure/table/standard,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled,
-/area/command/pathfinder)
 "QI" = (
 /obj/machinery/door/airlock/mining{
 	id_tag = null;
@@ -34831,7 +34851,7 @@ Ti
 SV
 fl
 aT
-QG
+lW
 Lh
 ki
 lf
@@ -46550,7 +46570,7 @@ gI
 gO
 cs
 li
-ls
+ic
 jO
 jA
 gC
@@ -47158,7 +47178,7 @@ dq
 ge
 gD
 kp
-ic
+ls
 ik
 kd
 kk
@@ -47352,7 +47372,7 @@ aa
 fQ
 fQ
 cj
-jH
+hM
 ih
 gf
 ip
@@ -47366,7 +47386,7 @@ gE
 hD
 jk
 iE
-hM
+jH
 ky
 kL
 iw

@@ -119,7 +119,7 @@
 		update_skin(1)
 	if(client && client.is_afk())
 		if(old_stat == UNCONSCIOUS && stat == CONSCIOUS)
-			playsound_simple(null, 'sound/effects/bells.ogg', 100, is_global=TRUE)
+			playsound_simple(null, 'sound/effects/bells.ogg', 100)
 
 /mob/living/carbon/human/proc/handle_some_updates()
 	if(life_tick > 5 && timeofdeath && (timeofdeath < 5 || world.time - timeofdeath > 6000))	//We are long dead, or we're junk mobs spawned like the clowns on the clown shuttle
@@ -886,7 +886,6 @@
 		mind.changeling.regenerate()
 
 /mob/living/carbon/human/proc/handle_shock()
-	..()
 	if(status_flags & GODMODE)	return 0	//godmode
 	if(!can_feel_pain())
 		shock_stage = 0

@@ -91,7 +91,11 @@
 
 #define isPlunger(A) istype(A, /obj/item/clothing/mask/plunger) || istype(A, /obj/item/device/plunger/robot)
 
-#define isspecies(A, B) (iscarbon(A) && A:species?.name == B)
+/proc/isspecies(A, B)
+	if(!iscarbon(A))
+		return FALSE
+	var/mob/living/carbon/C = A
+	return C.species?.name == B
 
 #define sequential_id(key) uniqueness_repository.Generate(/datum/uniqueness_generator/id_sequential, key)
 

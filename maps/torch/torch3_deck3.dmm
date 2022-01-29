@@ -1616,10 +1616,6 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/door/window/brigdoor/southleft{
-	dir = 8;
-	name = "suit storage"
-	},
 /obj/structure/window/reinforced,
 /obj/structure/window/phoronreinforced{
 	dir = 1
@@ -1800,11 +1796,6 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters/head)
 "dL" = (
-/obj/machinery/alarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_y = -22
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
@@ -8501,11 +8492,16 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
 "qo" = (
-/obj/structure/table/steel,
-/obj/random/maintenance/solgov,
-/obj/random/illegal,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/foreport)
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_y = -22
+	},
+/obj/structure/table/rack/shelf/steel,
+/obj/item/weapon/rig/gas,
+/obj/item/weapon/rig/gas,
+/turf/simulated/floor/tiled/dark,
+/area/ai_monitored/storage/eva)
 "qp" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -9016,6 +9012,7 @@
 	pixel_x = 0;
 	pixel_y = -24
 	},
+/obj/item/weapon/book/manual/military_law,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/lawyer_office)
 "rk" = (
@@ -11286,7 +11283,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "vg" = (
-/turf/simulated/wall/prepainted,
+/turf/simulated/wall/wood,
 /area/crew_quarters_boh/cabin_main/c1)
 "vh" = (
 /obj/machinery/door/firedoor/autoset,
@@ -11393,7 +11390,7 @@
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters_boh/cabin_main/c2)
 "vr" = (
-/turf/simulated/wall/prepainted,
+/turf/simulated/wall/wood,
 /area/crew_quarters_boh/cabin_main/janitorial)
 "vs" = (
 /turf/simulated/floor/plating,
@@ -13341,6 +13338,11 @@
 "yH" = (
 /obj/machinery/light/small,
 /obj/effect/floor_decal/corner/yellow/half,
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_y = -22
+	},
 /turf/simulated/floor/tiled/dark,
 /area/engineering/hardstorage)
 "yI" = (
@@ -13470,6 +13472,10 @@
 "yT" = (
 /obj/effect/floor_decal/corner/lime/three_quarters{
 	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
@@ -14125,20 +14131,12 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/thruster/d3starboard)
 "Am" = (
-/obj/effect/floor_decal/corner/yellow{
-	dir = 9
-	},
-/obj/machinery/alarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_y = -22
+/obj/effect/floor_decal/corner/red{
+	dir = 6
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ai_monitored/storage/eva)
 "An" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 6
-	},
 /obj/machinery/camera/network/command{
 	c_tag = "EVA - Suit Storage";
 	dir = 1
@@ -14147,6 +14145,9 @@
 	dir = 1;
 	pixel_y = -28
 	},
+/obj/structure/table/rack/shelf/steel,
+/obj/item/weapon/rig/gas,
+/obj/item/weapon/rig/gas,
 /turf/simulated/floor/tiled/dark,
 /area/ai_monitored/storage/eva)
 "Ao" = (
@@ -14957,6 +14958,9 @@
 	},
 /turf/simulated/open,
 /area/hallway/primary/thirddeck/aft)
+"BJ" = (
+/turf/simulated/wall/wood,
+/area/crew_quarters_boh/cabin_main/c2)
 "BK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14969,6 +14973,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/storage/tools)
+"BM" = (
+/turf/simulated/wall/wood,
+/area/crew_quarters_boh/cabin_main/c3)
+"BN" = (
+/turf/simulated/wall/prepainted,
+/area/crew_quarters/head/sauna)
 "BO" = (
 /obj/effect/floor_decal/spline/fancy/black{
 	icon_state = "spline_fancy";
@@ -14980,6 +14990,15 @@
 /obj/structure/table/woodentable_reinforced/mahogany,
 /turf/simulated/floor/wood/maple,
 /area/chapel/main)
+"BQ" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/table/rack{
+	dir = 8
+	},
+/obj/item/weapon/rig/gas,
+/obj/item/weapon/rig/gas,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/engineering/hardstorage)
 "BR" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -22702,13 +22721,6 @@
 /area/chapel/main)
 "Yb" = (
 /turf/simulated/floor/tiled/techfloor,
-/area/maintenance/thirddeck/foreport)
-"Yc" = (
-/obj/structure/table/steel,
-/obj/random/maintenance/solgov,
-/obj/random/tech_supply,
-/obj/random/tech_supply,
-/turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "Yd" = (
 /obj/machinery/constructable_frame/computerframe,
@@ -32578,7 +32590,7 @@ lY
 lY
 lY
 lY
-zS
+lY
 NL
 zS
 zS
@@ -32780,7 +32792,7 @@ zz
 zz
 No
 lY
-qo
+lY
 BX
 LA
 LA
@@ -32980,9 +32992,9 @@ nL
 Mo
 yI
 yI
-Am
+yI
+qo
 lY
-Yc
 LF
 JN
 ik
@@ -33182,9 +33194,9 @@ wH
 xG
 Zn
 zA
+Am
 An
 lY
-Kd
 Kd
 BX
 Yd
@@ -33386,7 +33398,7 @@ zB
 zB
 Ao
 lY
-JN
+lY
 ik
 LF
 Yd
@@ -33588,7 +33600,7 @@ lY
 lY
 lY
 lY
-zS
+lY
 zS
 NL
 zS
@@ -42272,11 +42284,11 @@ uU
 fo
 gr
 uU
-hL
-hL
-hL
-hL
-hL
+BN
+BN
+BN
+BN
+BN
 UZ
 Vf
 Ez
@@ -42478,7 +42490,7 @@ hL
 iF
 jO
 km
-hL
+BN
 UZ
 kq
 Ez
@@ -42680,7 +42692,7 @@ hP
 iV
 ke
 kt
-hL
+BN
 UZ
 qf
 Ez
@@ -42882,7 +42894,7 @@ iy
 iZ
 kf
 kM
-hL
+BN
 zZ
 Ez
 Ez
@@ -43084,7 +43096,7 @@ hP
 jl
 kg
 kU
-hL
+BN
 Vw
 wf
 wf
@@ -43286,7 +43298,7 @@ hL
 jp
 kh
 kV
-hL
+BN
 CE
 Ez
 Ff
@@ -43484,11 +43496,11 @@ fl
 uU
 uU
 uU
-hL
-hL
-hL
-hL
-hL
+BN
+BN
+BN
+BN
+BN
 CE
 Ez
 Fe
@@ -45288,7 +45300,7 @@ XD
 PQ
 dr
 rC
-QQ
+BQ
 EM
 oo
 yH
@@ -45510,10 +45522,10 @@ AN
 AN
 jt
 tB
-tB
-tB
+BJ
+BJ
 xq
-tB
+BJ
 tB
 xm
 Hf
@@ -46116,10 +46128,10 @@ vr
 vr
 vX
 sY
-sY
-sY
+BM
+BM
 xK
-sY
+BM
 sY
 Ba
 jZ

@@ -1,6 +1,6 @@
 /datum/map/torch
 	name = "Dagon"
-	full_name = "NTSS Dagon"
+	full_name = "SGV Dagon"
 	path = "torch"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 
@@ -14,7 +14,7 @@
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
 
-	station_name  = "NTSS Dagon"
+	station_name  = "SGV Dagon"
 	station_short = "Dagon"
 	dock_name     = "TBD"
 	boss_name     = "High Fleet Command"

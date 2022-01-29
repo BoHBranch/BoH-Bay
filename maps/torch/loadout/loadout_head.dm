@@ -81,7 +81,7 @@
 
 /datum/gear/head/fleetberet
 	display_name = "Fleet branch beret selection"
-	description = "A beret denoting service in one of the fleets within the NT Fleet."
+	description = "A beret denoting service in one of the fleets within the SolGov Fleet."
 	path = /obj/item/clothing/head/beret/solgov/fleet/branch
 	allowed_branches = list(/datum/mil_branch/fleet)
 

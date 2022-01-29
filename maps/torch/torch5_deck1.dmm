@@ -12089,6 +12089,17 @@
 /obj/structure/lattice,
 /turf/simulated/open,
 /area/hallway/primary/firstdeck/fore)
+"auH" = (
+/obj/structure/table/steel,
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 5
+	},
+/obj/item/weapon/book/manual/military_law,
+/turf/simulated/floor/tiled,
+/area/security/wing)
 "auI" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -12445,6 +12456,7 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
 	},
+/obj/item/weapon/hand_labeler,
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "avp" = (
@@ -12662,6 +12674,28 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/locker)
+"avG" = (
+/obj/machinery/computer/modular/preset/security{
+	icon_state = "console";
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/red{
+	dir = 6
+	},
+/turf/simulated/floor/tiled,
+/area/security/processing)
+"avH" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 9
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/obj/structure/table/steel,
+/obj/item/weapon/book/manual/military_law,
+/turf/simulated/floor/tiled,
+/area/security/locker)
 "avI" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -13706,16 +13740,6 @@
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 9
-	},
-/turf/simulated/floor/tiled,
-/area/security/processing)
-"aAe" = (
-/obj/machinery/computer/modular/preset/security{
-	icon_state = "console";
-	dir = 8
-	},
-/obj/effect/floor_decal/corner/red{
-	dir = 6
 	},
 /turf/simulated/floor/tiled,
 /area/security/processing)
@@ -25240,16 +25264,6 @@
 /obj/item/weapon/storage/box/swabs,
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
-"mCk" = (
-/obj/structure/table/steel,
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/red{
-	dir = 5
-	},
-/turf/simulated/floor/tiled,
-/area/security/wing)
 "mEj" = (
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /turf/simulated/floor/plating,
@@ -26898,16 +26912,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/locker)
-"oSD" = (
-/obj/effect/floor_decal/corner/red{
-	dir = 9
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
-	},
-/turf/simulated/floor/tiled,
-/area/security/locker)
 "oTb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -40162,7 +40166,7 @@ jcg
 jcg
 jcg
 jcg
-oSD
+avH
 hGs
 kss
 agc
@@ -41969,7 +41973,7 @@ alW
 tUl
 hCE
 tkr
-mCk
+auH
 hnL
 dPA
 vTY
@@ -42177,7 +42181,7 @@ jpt
 xRh
 axN
 grI
-aAe
+avG
 aBf
 aif
 aDI
