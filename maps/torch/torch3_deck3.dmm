@@ -15017,6 +15017,20 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
+"BT" = (
+/obj/machinery/door/window/brigdoor/westleft{
+	req_access = list("ACCESS_ENGINE_EQUIP")
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/floor_decal/techfloor,
+/obj/effect/floor_decal/techfloor{
+	icon_state = "techfloor_edges";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/engineering/hardstorage)
 "BU" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -16707,18 +16721,6 @@
 /obj/effect/floor_decal/spline/fancy/wood/corner,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/command/captainmess)
-"GJ" = (
-/obj/machinery/door/window/brigdoor/westleft,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/floor_decal/techfloor,
-/obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/engineering/hardstorage)
 "GL" = (
 /obj/effect/floor_decal/corner/green/mono,
 /obj/machinery/vending/hydronutrients/generic,
@@ -45701,7 +45703,7 @@ gG
 hC
 nA
 gP
-GJ
+BT
 XC
 ds
 Ol
