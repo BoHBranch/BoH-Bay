@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/launcher/rocket
-	name = "rocket launcher"
-	desc = "MAGGOT."
+	name = "Lumoco Faithbreaker"
+	desc = "Lumoco's Faithbreaker is a aptly named rocket-launcher commonly seen amongst poorer fighters and terrorists due to it's cheap and reusable nature."
 	icon_state = "rocket"
 	item_state = "rocket"
 	w_class = ITEM_SIZE_HUGE

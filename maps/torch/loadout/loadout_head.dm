@@ -81,23 +81,21 @@
 
 /datum/gear/head/fleetberet
 	display_name = "Fleet branch beret selection"
-	description = "A beret denoting service in one of the fleets within the SolGov Fleet."
+	description = "A beret denoting service in one of the branches within the SolGov Fleet."
 	path = /obj/item/clothing/head/beret/solgov/fleet/branch
 	allowed_branches = list(/datum/mil_branch/fleet)
 
 /datum/gear/head/fleetberet/New()
 	..()
 	var/berets = list()
-	berets["first fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch
-	berets["second fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/second
-	berets["third fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/third
-	berets["fourth fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/fourth
-	berets["fifth fleet beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/fifth
+	berets["group 40 beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch
+	berets["border patrol beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/second
+	berets["sol defense group beret"] = /obj/item/clothing/head/beret/solgov/fleet/branch/fourth
 	gear_tweaks += new/datum/gear_tweak/path(berets)
 
 /datum/gear/head/ECberet
 	display_name = "SC sections beret selection"
-	description = "A beret denoting service in one of the branches within the NTSC."
+	description = "An ancient beret bearing the insignias of the original expeditionary organization."
 	path = /obj/item/clothing/head/beret/solgov/expedition/branch
 	allowed_branches = NT_BRANCHES
 

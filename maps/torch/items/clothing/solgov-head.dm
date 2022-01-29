@@ -328,28 +328,28 @@
 	icon_state = "beret_whiterim_com"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch
-	name = "first fleet beret"
-	desc = "A SolGov Fleet beret carrying insignia of First Fleet. For personnel that are more inclined towards style than safety."
+	name = "Group 40 beret"
+	desc = "A SolGov Fleet beret carrying the insignia of Naval Group 40, an as needed task force operating under short term orders. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_first"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/second
-	name = "second fleet beret"
-	desc = "A SolGov Fleet beret carrying insignia of Second Fleet. For personnel that are more inclined towards style than safety."
+	name = "Border Patrol beret"
+	desc = "A SolGov Fleet beret carrying the insignia of the Naval Border Patrol Group. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_second"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/third
-	name = "third fleet beret"
-	desc = "A SolGov Fleet beret carrying insignia of Third Fleet. For personnel that are more inclined towards style than safety."
+	name = "Special Operations Group beret"
+	desc = "A SolGov Fleet beret carrying the insignia of the S.O.G. naval organization. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_third"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/fourth
-	name = "fourth fleet beret"
-	desc = "A SolGov Fleet beret carrying insignia of Fourth Fleet. For personnel that are more inclined towards style than safety."
+	name = "Sol Defense Group beret"
+	desc = "A SolGov Fleet beret carrying the insignia of the S.D.G. which provides internal Solarian space security, from Earth outwards to Alpha-Centurai. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_fourth"
 
 /obj/item/clothing/head/beret/solgov/fleet/branch/fifth
-	name = "fifth fleet beret"
-	desc = "A SolGov Fleet beret carrying insignia of Fifth Fleet. For personnel that are more inclined towards style than safety."
+	name = "NWB beret"
+	desc = "A SolGov beret carrying the insignia of the Non-Conventional Warfare Board. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_navy_fifth"
 
 //ushanka

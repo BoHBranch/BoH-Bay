@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/energy/gun
-	name = "energy gun"
-	desc = "Another bestseller of Lawson Arms and the FTU, the LAEP90 Perun is a versatile energy based sidearm, capable of switching between low, medium and high power projectile settings. In other words: stun, shock or kill."
+	name = "Nanotrasen MK-4"
+	desc = "Another bestseller of Lawson Arms before being bought-out by Nanotrasen, the Mk-4 is a versatile energy based sidearm, capable of switching between low, medium and high power projectile settings. In other words: stun, shock or kill."
 	icon = 'icons/obj/guns/energy_gun.dmi'
 	icon_state = "energystun100"
 	item_state = null	//so the human update icon uses the icon_state instead.
@@ -41,8 +41,8 @@
 		)
 
 /obj/item/weapon/gun/energy/gun/small
-	name = "small energy gun"
-	desc = "A smaller model of the versatile LAEP90 Perun, the LAEP90-C packs considerable utility in a smaller package. Best used in situations where full-sized sidearms are inappropriate."
+	name = "Nanotrasen MK-3"
+	desc = "Another bestseller of Lawson Arms before being bought-out by Nanotrasen, the Mk-3 is a versatile energy based small-arm, capable of switching between a low, medium and respectable 'high' powered setting!"
 	icon = 'icons/obj/guns/small_egun.dmi'
 	icon_state = "smallgunstun"
 	max_shots = 5
@@ -63,8 +63,8 @@
 	has_safety = FALSE
 
 /obj/item/weapon/gun/energy/gun/nuclear
-	name = "advanced energy gun"
-	desc = "An energy gun with an experimental miniaturized reactor."
+	name = "Nanotrasen EP-24"
+	desc = "An energy gun with an experimental miniaturized reactor. Worry about the cancer later!"
 	icon = 'icons/obj/guns/adv_egun.dmi'
 	icon_state = "nucgun"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)

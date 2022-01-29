@@ -17,8 +17,8 @@
 	station_name  = "SGV Dagon"
 	station_short = "Dagon"
 	dock_name     = "TBD"
-	boss_name     = "High Fleet Command"
-	boss_short    = "HighCom"
+	boss_name     = "Strategic Command"
+	boss_short    = "Stratcom"
 	company_name  = "SolGov"
 	company_short = "SG"
 
