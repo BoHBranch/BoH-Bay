@@ -7663,6 +7663,7 @@
 	pixel_y = -24;
 	id = "sea_windows"
 	},
+/obj/item/weapon/rig/command/sea/equipped,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/sea)
 "mA" = (

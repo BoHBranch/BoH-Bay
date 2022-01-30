@@ -116,7 +116,8 @@
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor/southright{
 	dir = 8;
-	name = "Supply Desk"
+	name = "Supply Desk";
+	req_access = list("ACCESS_CARGO")
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/blast/shutters{

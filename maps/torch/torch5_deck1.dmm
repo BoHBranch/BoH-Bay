@@ -9598,6 +9598,7 @@
 /obj/effect/floor_decal/corner/blue/half{
 	dir = 8
 	},
+/obj/item/weapon/rig/command/sea/equipped,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/sea/marine)
 "aqu" = (
