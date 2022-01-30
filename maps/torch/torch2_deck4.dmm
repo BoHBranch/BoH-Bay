@@ -4457,10 +4457,10 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/closet/secure_closet/inftech,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/structure/closet/secure_closet/infmed,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/gear)
 "iw" = (
@@ -4523,17 +4523,19 @@
 /area/maintenance/fourthdeck/starboard)
 "iz" = (
 /obj/effect/floor_decal/techfloor{
-	dir = 6
+	icon_state = "techfloor_edges";
+	dir = 4
 	},
-/obj/structure/cable/green,
-/obj/machinery/power/apc{
-	name = "south bump";
-	pixel_y = -28
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/structure/bed,
-/obj/effect/landmark/start{
-	name = "Combat Technician"
+/obj/structure/window/reinforced,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
 	},
+/obj/structure/closet/secure_closet/triagesec/inf,
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/gear)
 "iA" = (
@@ -4963,7 +4965,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/sol{
-	name = "Combat Technician Prep"
+	name = "Technician Prep"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -5777,18 +5779,16 @@
 /area/hallway/primary/fourthdeck/aft)
 "kO" = (
 /obj/effect/floor_decal/techfloor{
-	icon_state = "techfloor_edges";
-	dir = 4
+	dir = 6
 	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/structure/cable/green,
+/obj/machinery/power/apc{
+	name = "south bump";
+	pixel_y = -28
 	},
-/obj/structure/closet/secure_closet/inftech/ammo,
-/obj/structure/window/reinforced,
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
+/obj/structure/bed,
+/obj/effect/landmark/start{
+	name = "Combat Medic"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/gear)
@@ -47995,8 +47995,8 @@ iT
 jy
 jL
 iv
-kO
 iz
+kO
 jy
 jy
 aa

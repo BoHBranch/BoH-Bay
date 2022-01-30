@@ -86,8 +86,8 @@
 	supervisors = "the Squad Leader"
 	department = "Infantry"
 	department_flag = INF
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	selection_color = "#557e38"
 	economic_power = 4
 	minimal_player_age = 8
@@ -106,6 +106,52 @@
 						SKILL_CONSTRUCTION = SKILL_MAX,
 						SKILL_ELECTRICAL   = SKILL_MAX)
 
+	allowed_branches = list(/datum/mil_branch/marine_corps)
+	allowed_ranks = list(
+		/datum/mil_rank/marine_corps/e3,
+		/datum/mil_rank/marine_corps/e4,
+		/datum/mil_rank/marine_corps/e5
+		)
+	access = list(access_maint_tunnels, access_petrov, access_petrov_security,
+			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
+			            access_inftech, access_aquila, access_eva)
+	alt_titles = list(
+		"Combat Engineer")
+/*
+/datum/job/combat_tech/is_position_available()
+	if(..())
+		for(var/mob/M in GLOB.player_list)
+			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
+				return TRUE
+	return FALSE
+*/
+/datum/job/combat_tech/get_description_blurb()
+	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if no Squad Leader is present."
+
+/datum/job/combat_medic
+	title = "Combat Medic"
+	supervisors = "the Squad Leader"
+	department = "Infantry"
+	department_flag = INF
+	total_positions = 1
+	spawn_positions = 1
+	selection_color = "#557e38"
+	economic_power = 4
+	minimal_player_age = 8
+	skill_points = 24
+	minimum_character_age = list(SPECIES_HUMAN = 20)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_medic
+	min_skill = list(SKILL_ANATOMY         = SKILL_ADEPT,
+						SKILL_MEDICAL      = SKILL_ADEPT,
+						SKILL_COMBAT       = SKILL_ADEPT,
+						SKILL_WEAPONS      = SKILL_ADEPT)
+
+	max_skill = list(	SKILL_COMBAT       = SKILL_MAX,
+						SKILL_WEAPONS      = SKILL_MAX,
+						SKILL_EVA		   = SKILL_MAX,
+						SKILL_MEDICAL      = SKILL_MAX,
+						SKILL_ANATOMY      = SKILL_MAX)
+
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e3,
@@ -114,20 +160,17 @@
 		)
 	access = list(access_maint_tunnels, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
-			            access_inftech, access_aquila, access_eva)
-	alt_titles = list(
-		"Combat Engineer",
-		"Combat Medic")
-
-/datum/job/combat_tech/is_position_available()
+			            access_infmed, access_aquila, access_eva)
+/*
+/datum/job/combat_medic/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
 			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
 				return TRUE
 	return FALSE
-
-/datum/job/combat_tech/get_description_blurb()
-	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if no Squad Leader is present."
+*/
+/datum/job/combat_medic/get_description_blurb()
+	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Medic in the squad. Your duty is to provide medical assistance as required. You may assume Command if no Squad Leader is present."
 
 /datum/job/grunt
 	title = "Rifleman"
@@ -163,14 +206,14 @@
 	alt_titles = list(
 		"Grunt",
 		"Trooper")
-
+/*
 /datum/job/grunt/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
 			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
 				return TRUE
 	return FALSE
-
+*/
 /datum/job/grunt/get_description_blurb()
 	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are a Marine! Your duty is to listen to the Squad Leader. If they're not present, the Combat Technician may pull rank. Do your best not to die, while also taking orders. Oorah!"
 
