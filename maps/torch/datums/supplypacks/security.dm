@@ -71,7 +71,7 @@
 	containername = "ballistic sidearms crate"
 	access = access_armory
 	security_level = SUPPLY_SECURITY_ELEVATED
-
+/*
 /decl/hierarchy/supply_pack/security/laser
 	name = "Weapons - Laser carbines"
 	contains = list(/obj/item/weapon/gun/energy/laser/secure = 4)
@@ -107,10 +107,10 @@
 	containername = "energy marksman crate"
 	access = access_emergency_armory
 	security_level = SUPPLY_SECURITY_HIGH
-
+*/
 /decl/hierarchy/supply_pack/security/hornetsniper
 	name = "Weapons - Ballistic DMR"
-	contains = list(/obj/item/weapon/gun/projectile/hornetsniper = 2, 
+	contains = list(/obj/item/weapon/gun/projectile/hornetsniper = 2,
 					/obj/item/weapon/storage/box/ammo/hornetammo = 2,)
 	cost = 100
 	containertype = /obj/structure/closet/crate/secure/weapon
