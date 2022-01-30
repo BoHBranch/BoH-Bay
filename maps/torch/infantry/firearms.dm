@@ -177,3 +177,30 @@
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		)
+/*
+/////////
+// rifle 3
+/////////
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/sav
+	name = "SAV-1"
+	desc = "The Sluzhba Arms SAV-1 is a current-generation assault rifle designed for the SCG military. \
+	It uses the standard 5mmR rifle magazines previously used by the Z-series rifles, and it has an underbarrel grenade launcher. \
+	This rifle is widely praised by the military for its ruggedness and useability."
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
+	ammo_type = /obj/item/ammo_casing/rifle/military/low
+	magazine_type = /obj/item/ammo_magazine/mil_rifle/sec
+	allowed_magazines = list(/obj/item/ammo_magazine/mil_rifle/sec, /obj/item/ammo_magazine/mil_rifle/sec/large, /obj/item/ammo_magazine/mil_rifle)
+	auto_eject = 1
+	jam_chance = 1
+
+//sec proper
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/sav/stv
+	name = "STV-1"
+	desc = "The Hephaestus Industries Z9B Bulldog is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use. \
+	Because of the limited fire-rate, and how the mechanism functions, it has a much higher jam rate."
+	jam_chance = 5
+	req_access = list(access_brig)
+	firemodes = list(
+		list(mode_name="semi auto",       burst=1,    fire_delay=null,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
+		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
+		)*/

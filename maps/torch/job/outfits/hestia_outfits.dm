@@ -17,3 +17,10 @@
 	id_type = /obj/item/weapon/card/id/torch/crew/infantry/inftech
 	pda_type = /obj/item/modular_computer/pda/engineering
 	l_ear = /obj/item/device/radio/headset/inftech
+
+/decl/hierarchy/outfit/job/torch/crew/infantry/combat_medic
+	name = OUTFIT_JOB_NAME("Combat Medic")
+	uniform = /obj/item/clothing/under/solgov/utility/army/medical
+	id_type = /obj/item/weapon/card/id/torch/crew/infantry/infmed
+	pda_type = /obj/item/modular_computer/pda/medical
+	l_ear = /obj/item/device/radio/headset/infmed

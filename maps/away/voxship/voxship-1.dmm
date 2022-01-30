@@ -2693,14 +2693,14 @@
 /obj/item/stack/material/steel/fifty,
 /obj/item/stack/material/plastic,
 /obj/item/stack/material/plasteel,
-/obj/item/stack/material/cyborg/aluminium,
-/obj/item/stack/material/cyborg/glass,
 /obj/machinery/atmospherics/binary/pump/on{
 	dir = 8;
 	target_pressure = 200
 	},
 /obj/item/stack/material/glass/phoronrglass/ten,
 /obj/item/stack/material/glass/phoronrglass/ten,
+/obj/item/stack/material/glass/fifty,
+/obj/item/stack/material/aluminium/fifty,
 /turf/simulated/floor/plating/vox,
 /area/voxship/atmos)
 "gs" = (

@@ -226,6 +226,10 @@
 	job_access_type = /datum/job/combat_tech
 	detail_color = COLOR_SUN
 
+/obj/item/weapon/card/id/torch/crew/infantry/infmed
+	job_access_type = /datum/job/combat_medic
+	detail_color = COLOR_NAVY_BLUE
+
 /obj/item/weapon/card/id/torch/crew/psiadvisor
 	job_access_type = /datum/job/psiadvisor
 	detail_color = COLOR_COMMAND_BLUE
