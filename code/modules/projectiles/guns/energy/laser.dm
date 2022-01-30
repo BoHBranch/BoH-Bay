@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/energy/laser
-	name = "laser carbine"
+	name = "Hephaestus G40E"
 	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts."
 	icon = 'icons/obj/guns/laser_carbine.dmi'
 	icon_state = "laser"
@@ -21,8 +21,8 @@
 	has_safety = FALSE
 
 /obj/item/weapon/gun/energy/laser/practice
-	name = "practice laser carbine"
-	desc = "A modified version of the HI G40E, this one fires less concentrated energy bolts designed for target practice."
+	name = "Hephaestus G40S-P"
+	desc = "A modified version of the HI G40S-P, this one fires less concentrated energy bolts designed for target practice."
 	icon_state = "laserp"
 	projectile_type = /obj/item/projectile/beam/practice
 	charge_cost = 10 //How much energy is needed to fire.
@@ -50,22 +50,22 @@
 			projectile_type = null
 
 obj/item/weapon/gun/energy/retro
-	name = "retro laser"
+	name = "Ancient-Pattern Thermal-Laser"
 	icon = 'icons/obj/guns/retro_laser.dmi'
 	icon_state = "retro"
 	item_state = "retro"
-	desc = "An older model of the basic lasergun. Nevertheless, it is still quite deadly and easy to maintain, making it a favorite amongst pirates and other outlaws."
+	desc = "An ancient laser-pistol that still uses the 'Thermal' firing mechanism. It suffers from a low firerate, but is incredibly easy to upkeep; making it favoured amongst space-scum!"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_NORMAL
 	projectile_type = /obj/item/projectile/beam
 	fire_delay = 15 //old technology, and a pistol
 
 /obj/item/weapon/gun/energy/captain
-	name = "antique laser gun"
+	name = "Ancient-Pattern SR-51"
 	icon = 'icons/obj/guns/caplaser.dmi'
 	icon_state = "caplaser"
 	item_state = "caplaser"
-	desc = "A rare weapon, handcrafted by a now defunct specialty manufacturer on Luna for a small fortune. It's certainly aged well."
+	desc = "An incredibly rare product from nearly a century before: It's certainly aged well! This weapon was once the favoured tool of the Terran Defence Forces 'Commando' squads!"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	force = 5
 	w_class = ITEM_SIZE_NORMAL
@@ -76,8 +76,8 @@ obj/item/weapon/gun/energy/retro
 	self_recharge = 1
 
 /obj/item/weapon/gun/energy/lasercannon
-	name = "laser cannon"
-	desc = "With the laser cannon, the lasing medium is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core. This incredible technology may help YOU achieve high excitation rates with small laser volumes!"
+	name = "Hephaestus Armageddon"
+	desc = "The Hephaestus Armageddon is a anti-tank laser designed to punch-through nearly any mechanized infantry known in Terran-Space!"
 	icon_state = "lasercannon"
 	icon = 'icons/obj/guns/laser_cannon.dmi'
 	item_state = null
@@ -102,7 +102,7 @@ obj/item/weapon/gun/energy/retro
 	has_safety = FALSE
 
 /obj/item/weapon/gun/energy/xray
-	name = "x-ray laser carbine"
+	name = "Nanotrasen X-43"
 	desc = "A high-power laser gun capable of emitting concentrated x-ray blasts, that are able to penetrate laser-resistant armor much more readily than standard photonic beams."
 	icon = 'icons/obj/guns/xray.dmi'
 	icon_state = "xray"
@@ -118,7 +118,7 @@ obj/item/weapon/gun/energy/retro
 	combustion = 0
 
 /obj/item/weapon/gun/energy/xray/pistol
-	name = "x-ray laser gun"
+	name = "Nanotrasen X-43p"
 	icon = 'icons/obj/guns/xray_pistol.dmi'
 	icon_state = "oldxray"
 	item_state = "oldxray"
@@ -130,8 +130,8 @@ obj/item/weapon/gun/energy/retro
 	fire_delay = 10
 
 /obj/item/weapon/gun/energy/sniperrifle
-	name = "marksman energy rifle"
-	desc = "The HI DMR 9E is an older design of Hephaestus Industries. A designated marksman rifle capable of shooting powerful ionized beams, this is a weapon to kill from a distance."
+	name = "Hephaestus Baleful"
+	desc = "The Hephaestus Industries Baleful is a designated marksman rifle capable of shooting powerful ionized beams, this is a weapon to kill from a distance."
 	icon = 'icons/obj/guns/laser_sniper.dmi'
 	icon_state = "sniper"
 	item_state = "laser"

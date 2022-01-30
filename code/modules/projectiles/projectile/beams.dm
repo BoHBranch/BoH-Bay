@@ -1,11 +1,11 @@
 /obj/item/projectile/beam
 	name = "laser"
 	icon_state = "laser"
-	temperature = T0C + 300
+	temperature = T0C + 400
 	fire_sound='sound/weapons/EnergyBoom.ogg'
 	impact_sounds = list(BULLET_IMPACT_MEAT = SOUNDS_LASER_MEAT, BULLET_IMPACT_METAL = SOUNDS_LASER_METAL)
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE
-	damage = 30
+	damage = 50
 	damage_type = BURN
 	sharp = 1 //concentrated burns
 	damage_flags = DAM_LASER
@@ -22,15 +22,15 @@
 
 /obj/item/projectile/beam/practice
 	fire_sound = 'sound/weapons/Taser.ogg'
-	damage = 2
+	damage = 5
 	eyeblur = 2
 
 /obj/item/projectile/beam/smalllaser
-	damage = 25
+	damage = 30
 	armor_penetration = 5
 
 /obj/item/projectile/beam/midlaser
-	damage = 45
+	damage = 60
 	armor_penetration = 20
 	distance_falloff = 1
 
@@ -38,7 +38,7 @@
 	name = "heavy laser"
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
-	damage = 60
+	damage = 100
 	armor_penetration = 30
 	distance_falloff = 0.5
 
@@ -50,7 +50,7 @@
 	name = "x-ray beam"
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/laser3.ogg'
-	damage = 30
+	damage = 40
 	armor_penetration = 30
 	shrapnel_chance_multiplier = 0.8
 	arterial_bleed_chance_multiplier = 0.8
@@ -196,12 +196,12 @@
 
 /obj/item/projectile/beam/stun/heavy
 	name = "heavy stun beam"
-	damage = 2
+	damage = 10
 	agony = 40
 
 /obj/item/projectile/beam/stun/shock
 	name = "shock beam"
-	agony = 0
+	agony = 20
 	damage = 15
 	damage_type = ELECTROCUTE
 	fire_sound='sound/weapons/pulse.ogg'
