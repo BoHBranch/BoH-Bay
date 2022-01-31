@@ -957,7 +957,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "ck" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/vault/bolted{
@@ -1485,7 +1485,7 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "dp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -3002,7 +3002,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "fS" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/infantry/exterior)
@@ -3033,7 +3033,7 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "fW" = (
 /obj/machinery/light{
 	dir = 8
@@ -3154,7 +3154,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "gg" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 8;
@@ -3550,19 +3550,19 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "gU" = (
 /obj/machinery/door/airlock/sol{
 	name = "Infantry Storage"
 	},
 /turf/simulated/floor/plating,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "gV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "gW" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 5;
@@ -3889,7 +3889,7 @@
 	id = "mmgrayons"
 	},
 /turf/space,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "hw" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -3989,7 +3989,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "hF" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
@@ -4024,11 +4024,11 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "hM" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "hN" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 6
@@ -4261,7 +4261,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "ii" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -4720,7 +4720,7 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "iV" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -5221,7 +5221,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "jO" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -5314,7 +5314,7 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "jW" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -5362,7 +5362,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "kd" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -6371,7 +6371,7 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "lO" = (
 /obj/effect/catwalk_plated/dark,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -6397,7 +6397,7 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "lQ" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -6414,7 +6414,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "lR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -9444,7 +9444,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "uu" = (
 /obj/structure/railing/mapped{
 	dir = 4;
@@ -12810,7 +12810,7 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "Hm" = (
 /obj/structure/cable{
 	d1 = 16;
@@ -13323,6 +13323,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/infantry/exterior)
+"IS" = (
+/turf/simulated/wall/r_wall/hull,
+/area/security/infantry/armory)
 "IT" = (
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
@@ -17892,7 +17895,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/security/infantry/com)
+/area/security/infantry/armory)
 "Wf" = (
 /obj/structure/railing/mapped,
 /turf/simulated/floor/shuttle_ceiling/torch/air,
@@ -17962,6 +17965,9 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
+"Wr" = (
+/turf/simulated/wall/prepainted,
+/area/security/infantry/armory)
 "Wv" = (
 /obj/machinery/light/spot{
 	dir = 4
@@ -47527,13 +47533,13 @@ aa
 aa
 aa
 aa
-fQ
-fQ
+IS
+IS
 gU
 hv
 hv
 hv
-ip
+Wr
 iu
 hD
 ke
@@ -47729,13 +47735,13 @@ aa
 aa
 aa
 aa
-fQ
-fQ
+IS
+IS
 jN
 kc
 ur
 We
-ip
+Wr
 dq
 ge
 gD
@@ -47931,8 +47937,8 @@ aa
 aa
 aa
 aa
-fQ
-fQ
+IS
+IS
 cj
 hM
 ih
@@ -48133,8 +48139,8 @@ aa
 aa
 aa
 aa
-fQ
-fQ
+IS
+IS
 hE
 do
 lP
@@ -48335,13 +48341,13 @@ aa
 aa
 aa
 aa
-fQ
-fQ
+IS
+IS
 lN
 gV
 lR
 lQ
-ip
+Wr
 fN
 gv
 gH
@@ -48537,13 +48543,13 @@ aa
 aa
 aa
 aa
-fQ
-fQ
+IS
+IS
 fR
 jU
 fV
 gT
-fQ
+IS
 iT
 iT
 gt
@@ -48740,12 +48746,12 @@ aa
 aa
 aa
 fT
-fQ
-fQ
-fQ
-fQ
-fQ
-fQ
+IS
+IS
+IS
+IS
+IS
+IS
 iT
 gq
 iI
