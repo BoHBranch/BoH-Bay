@@ -60,8 +60,12 @@
 	name = "Fourth Deck Maintenance"
 	icon_state = "maintcentral"
 
-/area/maintenance/fourthdeck/aft
-	name = "Fourth Deck Aft Maintenance"
+/area/maintenance/fourthdeck/aftport
+	name = "Fourth Deck Aft Port Maintenance"
+	icon_state = "amaint"
+
+/area/maintenance/fourthdeck/aftstarboard
+	name = "Fourth Deck Aft Starboard Maintenance"
 	icon_state = "amaint"
 
 /area/maintenance/fourthdeck/foreport

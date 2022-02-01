@@ -75,11 +75,6 @@
 	path = /obj/item/clothing/head/helmet/skrell
 	sort_category = "Xenowear"
 
-/datum/gear/accessory/skrell_badge
-	display_name = "skrellian SDTF badge"
-	path = /obj/item/clothing/accessory/badge/tags/skrell
-	sort_category = "Xenowear"
-
 // IPC clothing
 /datum/gear/mask/ipc_monitor
 	display_name = "display monitor (IPC)"
