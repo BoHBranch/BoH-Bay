@@ -13742,6 +13742,7 @@
 /area/space)
 "Ko" = (
 /obj/effect/shuttle_landmark/ert/dock,
+/obj/effect/shuttle_landmark/skrellscoutship/altdock,
 /turf/space,
 /area/space)
 "Kp" = (
@@ -17196,7 +17197,6 @@
 	name = "Docking Port Airlock"
 	},
 /obj/machinery/shield_diffuser,
-/obj/effect/shuttle_landmark/skrellscoutshuttle/altdock,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "TY" = (
@@ -18927,6 +18927,10 @@
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/hallway/primary/fourthdeck/fore)
+"YM" = (
+/obj/effect/shuttle_landmark/skrellscoutship/dock,
+/turf/space,
+/area/space)
 "YN" = (
 /obj/structure/fireaxecabinet{
 	pixel_x = 32;
@@ -43727,7 +43731,7 @@ aa
 aa
 aa
 aa
-aa
+YM
 aa
 aa
 aa

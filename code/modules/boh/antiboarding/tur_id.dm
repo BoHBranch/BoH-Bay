@@ -45,14 +45,6 @@ GLOBAL_LIST_INIT(antiboarding_turret_list, list())
 /obj/machinery/porta_turret/exterior/dagon
 	id_tag = "dagonturret"
 
-//SSV turrets
-
-/obj/machinery/turretid/tur_ID/ssv
-	id_tag = "skrurret"
-
-/obj/machinery/porta_turret/ssv/exterior
-	id_tag = "skrurret"
-
 /obj/machinery/porta_turret/exterior/Initialize()
 	GLOB.antiboarding_turret_list += src
 	. = ..()

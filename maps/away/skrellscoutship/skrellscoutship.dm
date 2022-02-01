@@ -10,17 +10,13 @@
 	description = "A Skrellian SDTF scouting vessel. This one seems to be a heavier model."
 	suffixes = list("skrellscoutship/skrellscoutship_revamp.dmm")
 	cost = 0.5
-	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/skrellscoutship, /datum/shuttle/autodock/overmap/skrellscoutshuttle)
-	apc_test_exempt_areas = list(
-		/area/ship/skrellscoutship/externalwing/port = NO_SCRUBBER|NO_VENT|NO_APC,
-		/area/ship/skrellscoutship/externalwing/starboard = NO_SCRUBBER|NO_VENT|NO_APC
-	)
+	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/skrellscoutship)
 	spawn_weight = 0.67
 
 /obj/effect/overmap/visitable/sector/skrellscoutspace
-	sector_flags = OVERMAP_SECTOR_IN_SPACE
 	name = "Empty Sector"
 	desc = "Slight traces of a cloaking device are present. Unable to determine exact location."
+	sector_flags = OVERMAP_SECTOR_IN_SPACE
 	icon_state = "event"
 	hide_from_reports = TRUE
 
@@ -156,7 +152,7 @@
 	pda_slot = slot_l_store
 	//l_ear = /obj/item/device/radio/headset/map_preset/skrellscoutship DEPENDS ON skrellradio's new files
 	l_ear = /obj/item/device/radio/headset/skrellian
-	id_type = list(/obj/item/weapon/card/id/skrellscoutship)
+	id_type = /obj/item/weapon/card/id/skrellscoutship
 	l_pocket = /obj/item/clothing/accessory/badge/tags/skrell
 	r_pocket = /obj/item/clothing/accessory/skrellian/rank/SDTF/QZQX
 
