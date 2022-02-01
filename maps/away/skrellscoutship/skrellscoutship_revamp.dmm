@@ -230,6 +230,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/crew/rec)
+"dl" = (
+/obj/effect/shuttle_landmark/skrellscoutship/emptsec,
+/turf/space,
+/area/space)
 "dp" = (
 /obj/machinery/pipedispenser,
 /turf/simulated/floor/tiled/skrell/orange,
@@ -722,6 +726,9 @@
 /area/ship/skrellscoutship/crew/medbay)
 "hl" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/crew/hallway/d1)
 "hr" = (
@@ -734,6 +741,15 @@
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/brig)
+"hD" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -32
+	},
+/turf/simulated/floor/tiled/skrell,
+/area/ship/skrellscoutship/crew/hallway/d1)
 "hH" = (
 /obj/structure/bed/chair/padded/red,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -840,6 +856,9 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/rec)
 "iI" = (
@@ -1146,6 +1165,11 @@
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/armory)
+"mw" = (
+/obj/effect/paint/black,
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
+/turf/simulated/wall/r_titanium,
+/area/ship/skrellscoutship/dock)
 "mE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1222,6 +1246,9 @@
 	dir = 8;
 	pixel_x = 26;
 	pixel_y = -4
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/armory)
@@ -1336,13 +1363,13 @@
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
 "qf" = (
-/obj/machinery/computer/shuttle_control/explore/skrellscoutship{
-	dir = 4
-	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/computer/ship/helm{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/bridge)
@@ -1375,6 +1402,21 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/bridge)
+"qt" = (
+/obj/effect/paint/black,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/sign/warning/high_voltage{
+	dir = 8;
+	icon_state = "shock";
+	pixel_x = 4;
+	pixel_y = -6
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/skrellscoutship/maintenance/power)
 "qx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 10
@@ -1445,6 +1487,9 @@
 	pixel_x = -24;
 	pixel_y = 6
 	},
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/crew/hallway/d2)
 "rK" = (
@@ -1469,7 +1514,8 @@
 	id_tag = "ssv_ofd";
 	name = "Artillery Blast Door"
 	},
-/turf/space,
+/obj/machinery/shield_diffuser,
+/turf/simulated/floor/airless,
 /area/ship/skrellscoutship/command/brig)
 "rY" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
@@ -1727,11 +1773,6 @@
 	},
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/crew/hallway/d1)
-"vs" = (
-/obj/effect/paint/black,
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
-/turf/simulated/wall/r_titanium,
-/area/ship/skrellscoutship/dock)
 "vu" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	frequency = 1289;
@@ -1896,6 +1937,16 @@
 	},
 /turf/simulated/wall/r_titanium,
 /area/ship/skrellscoutship/command/armory)
+"xT" = (
+/obj/structure/table/steel,
+/obj/machinery/recharger/wallcharger{
+	dir = 8;
+	pixel_x = 26;
+	pixel_y = -4
+	},
+/obj/machinery/recharger,
+/turf/simulated/floor/tiled/skrell/red,
+/area/ship/skrellscoutship/command/armory)
 "ye" = (
 /obj/structure/table/woodentable/ebony,
 /obj/item/weapon/reagent_containers/food/condiment/psilocybin,
@@ -1985,13 +2036,6 @@
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/brig)
-"yO" = (
-/obj/structure/bed/chair/padded/red{
-	dir = 1;
-	icon_state = "chair_preview"
-	},
-/turf/simulated/floor/tiled/skrell/red,
-/area/ship/skrellscoutship/command/armory)
 "yT" = (
 /obj/effect/paint/black,
 /obj/structure/cable{
@@ -2055,10 +2099,10 @@
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/dormitories)
 "zM" = (
+/obj/effect/overmap/visitable/sector/skrellscoutspace,
 /obj/effect/landmark/map_data{
 	height = 2
 	},
-/obj/effect/overmap/visitable/sector/skrellscoutspace,
 /turf/space,
 /area/space)
 "zN" = (
@@ -2393,6 +2437,16 @@
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
 /area/ship/skrellscoutship/crew/hallway/d1)
+"Eg" = (
+/obj/structure/bed/chair/padded/red{
+	dir = 8;
+	icon_state = "chair_preview"
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 32
+	},
+/turf/simulated/floor/carpet/purple,
+/area/ship/skrellscoutship/crew/rec)
 "Ej" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/light/skrell{
@@ -2591,9 +2645,6 @@
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/armory)
 "Hc" = (
-/obj/machinery/computer/ship/helm{
-	dir = 1
-	},
 /obj/machinery/light/skrell{
 	dir = 8
 	},
@@ -2601,6 +2652,9 @@
 	dir = 1;
 	pixel_x = 0;
 	pixel_y = -32
+	},
+/obj/machinery/computer/shuttle_control/explore/skrellscoutship{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/bridge)
@@ -2729,7 +2783,7 @@
 	level = 2
 	},
 /turf/simulated/floor/reinforced/airless,
-/area/space)
+/area/ship/skrellscoutship/maintenance/atmos)
 "Iv" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -2809,16 +2863,6 @@
 	},
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/maintenance/atmos)
-"JE" = (
-/obj/structure/table/steel,
-/obj/machinery/recharger/wallcharger{
-	dir = 8;
-	pixel_x = 26;
-	pixel_y = -4
-	},
-/obj/machinery/recharger,
-/turf/simulated/floor/tiled/skrell/red,
-/area/ship/skrellscoutship/command/armory)
 "JN" = (
 /obj/structure/table/rack/dark,
 /obj/item/weapon/melee/baton/loaded,
@@ -3250,6 +3294,13 @@
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/brig)
+"OY" = (
+/obj/structure/bed/chair/padded/red{
+	dir = 1;
+	icon_state = "chair_preview"
+	},
+/turf/simulated/floor/tiled/skrell/red,
+/area/ship/skrellscoutship/command/armory)
 "Pa" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -3653,6 +3704,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock)
 "Wg" = (
@@ -3671,21 +3725,6 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/ship/skrellscoutship/command/armory)
-"Ws" = (
-/obj/effect/paint/black,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/structure/sign/warning/high_voltage{
-	dir = 8;
-	icon_state = "shock";
-	pixel_x = 4;
-	pixel_y = -6
-	},
-/turf/simulated/wall/r_titanium,
-/area/ship/skrellscoutship/maintenance/power)
 "WK" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /obj/effect/paint/black,
@@ -3870,6 +3909,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/crew/fit)
 "Zs" = (
@@ -5996,7 +6036,7 @@ bS
 bS
 bS
 bS
-zM
+bS
 bS
 bS
 bS
@@ -7946,7 +7986,7 @@ pn
 bS
 bS
 bS
-bS
+zM
 bS
 bS
 bS
@@ -8241,7 +8281,7 @@ JN
 CG
 Vk
 Ys
-HE
+Eg
 RL
 Kl
 ye
@@ -8559,7 +8599,7 @@ bS
 bS
 bS
 bS
-bS
+dl
 bS
 bS
 bS
@@ -9264,7 +9304,7 @@ LT
 nS
 pd
 sf
-yG
+hD
 Gs
 Ts
 Wb
@@ -9461,8 +9501,8 @@ QL
 Ys
 Ys
 nY
-JE
-yO
+xT
+OY
 JZ
 wu
 nS
@@ -9665,7 +9705,7 @@ AU
 sh
 sh
 LD
-vs
+mw
 jq
 jm
 sh
@@ -9970,7 +10010,7 @@ vx
 fX
 yT
 yT
-Ws
+qt
 yT
 ww
 kd

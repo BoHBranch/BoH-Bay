@@ -3,15 +3,10 @@
 	req_access = list(access_skrellscoutship)
 	shuttle_tag = "Skrellian Scout"
 
-/obj/machinery/computer/shuttle_control/explore/skrellscoutshuttle
-	name = "SSV Shuttle control console"
-	req_access = list(access_skrellscoutship)
-	shuttle_tag = "Skrellian Shuttle"
-
 /obj/effect/overmap/visitable/ship/landable/skrellscoutship
-	name = "light skrellian vessel"
+	name = "skrellian vessel"
 	shuttle = "Skrellian Scout"
-	desc = "A small vessel of skrellian design. Sensors detect residual bluespace signatures and cloaking particulates on the vessel's surface."
+	desc = "A small vessel of skrellian design. Sensors detect residual bluespace signatures."
 	multiz = 1
 	icon_state = "ship"
 	moving_state = "ship_moving"
@@ -19,10 +14,6 @@
 	color = "#ff00ff"
 	vessel_mass = 5000
 	vessel_size = SHIP_SIZE_SMALL
-	initial_restricted_waypoints = list(
-		"Skrellian Shuttle" = list("nav_skrellscoutsh_dock")
-	)
-
 
 /obj/effect/overmap/visitable/ship/landable/skrellscoutship/New()
 	name = "SSV [pick("Xilvuxix", "Zuuvixix", "Quizuu", "Vulzxixvuu","Krixxmuzoox","Qerr-Gliqrixx", "Qarr-Kon")]"
@@ -51,6 +42,10 @@
 /obj/effect/shuttle_landmark/skrellscoutship/start
 	name = "Uncharted Space"
 	landmark_tag = "nav_skrellscout_start"
+
+/obj/effect/shuttle_landmark/skrellscoutship/emptsec
+	name = "Cloaking Field"
+	landmark_tag = "nav_skrellscout_return"
 
 /obj/effect/shuttle_landmark/skrellscoutship/dock
 	name = "Fourth Deck Starboard Docking Port"

@@ -7,16 +7,15 @@
 /datum/map_template/ruin/away_site/skrellscoutship
 	name = "Skrellian Scout Ship"
 	id = "awaysite_skrell_scout"
-	description = "A Skrellian SDTF scouting vessel. This one seems to be a heavier model."
+	description = "A Skrellian SDTF scouting vessel."
 	suffixes = list("skrellscoutship/skrellscoutship_revamp.dmm")
-	cost = 0.5
+	cost = 0.1
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/skrellscoutship)
-	spawn_weight = 0.67
+	spawn_weight = 2
 
 /obj/effect/overmap/visitable/sector/skrellscoutspace
 	name = "Empty Sector"
 	desc = "Slight traces of a cloaking device are present. Unable to determine exact location."
-	sector_flags = OVERMAP_SECTOR_IN_SPACE
 	icon_state = "event"
 	hide_from_reports = TRUE
 
@@ -118,6 +117,8 @@
 		if(istype(C))
 			C.assignment = skrellsubcaste
 
+// Skrell clothing
+
 /obj/item/clothing/gloves/thick/swat/skrell
 	name = "black gloves"
 	desc = "A pair of black, reinforced gloves. The tag on the inner stitching appears to be written in some form of Skrellian."
@@ -128,6 +129,29 @@
 	icon_state = "skrell_suit"
 	item_state = "skrell_suit"
 	worn_state = "skrell_suit"
+
+// ### SDTF ranks.
+
+/obj/item/clothing/accessory/skrellian/rank/sdtf
+	name = "Skrellian Ranks"
+	desc = "Insigna denothing some sort of position in the SDTF. This one is blank."
+	icon = 'icons/boh/obj/obj_skrell_accessories.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi')
+	icon_state = "skrell_blank"
+	on_rolled = list("down" = "none")
+	slot = ACCESSORY_SLOT_RANK
+	gender = PLURAL
+	high_visibility = 1
+
+/obj/item/clothing/accessory/skrellian/rank/sdtf/qzqx
+	name = "ranks (Qrii-Zuumqix)"
+	desc = "Skrellian holographic insigna denoting the position of Qrii-Zuumqix"
+	icon_state = "skrell_qriizuumqix"
+
+/obj/item/clothing/accessory/skrellian/rank/sdtf/qvx
+	name = "ranks (Qrii-Vuxix)"
+	desc = "Skrellian holographic insigna denoting the position of Qrii-Vuxix"
+	icon_state = "skrell_qriivuxix"
 
 /obj/item/weapon/reagent_containers/food/condiment/psilocybin
 	label_text = "Psilocybin"
@@ -154,11 +178,11 @@
 	l_ear = /obj/item/device/radio/headset/skrellian
 	id_type = /obj/item/weapon/card/id/skrellscoutship
 	l_pocket = /obj/item/clothing/accessory/badge/tags/skrell
-	r_pocket = /obj/item/clothing/accessory/skrellian/rank/SDTF/QZQX
+	r_pocket = /obj/item/clothing/accessory/skrellian/rank/sdtf/qzqx
 
 /decl/hierarchy/outfit/job/skrellscoutship/leader
 	name = "Xilvuxix Vuxix"
-	r_pocket = /obj/item/clothing/accessory/skrellian/rank/SDTF/QVX
+	r_pocket = /obj/item/clothing/accessory/skrellian/rank/sdtf/qvx
 
 /datum/mil_branch/skrell_fleet
 	name = "Skrellian Defense Task Force"
@@ -176,12 +200,12 @@
 /datum/mil_rank/skrell_fleet/zuumqix
 	name = "Qrii-Zuumqix"
 	name_short = "QZQX"
-	accessory = list(/obj/item/clothing/accessory/skrellian/rank/SDTF/QZQX)
+	accessory = list(/obj/item/clothing/accessory/skrellian/rank/sdtf/qzqx)
 
 /datum/mil_rank/skrell_fleet/vuxix
 	name = "Qrii-Vuxix"
 	name_short = "QVX"
-	accessory = list(/obj/item/clothing/accessory/skrellian/rank/SDTF/QVX)
+	accessory = list(/obj/item/clothing/accessory/skrellian/rank/sdtf/qvx)
 
 /obj/machinery/power/apc/skrell
 	req_access = list(access_skrellscoutship)
