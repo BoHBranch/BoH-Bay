@@ -111,7 +111,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew/captain
 	supervisors = "The Apex and the arkship"
 	info = "You're in charge. You fly the ship, and dictate what the crew does. You are in charge of keeping your subordinates in check, the Apex has given you authority to kill any that disobeys your orders. Do not disappoint the Apex."
-	whitelisted_species = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
+	whitelisted_species = list(SPECIES_VOX)
 	min_skill = list(	SKILL_HAULING     = SKILL_BASIC,
 						SKILL_EVA         = SKILL_EXPERT,
 						SKILL_SCIENCE     = SKILL_BASIC,
