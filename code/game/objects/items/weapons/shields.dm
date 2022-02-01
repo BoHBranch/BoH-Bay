@@ -199,3 +199,13 @@
 		set_light(0.4, 0.1, 1, 2, "#006aff")
 	else
 		set_light(0)
+
+/obj/item/weapon/shield/energy/skrell
+	name = "skrellian combat shield"
+	desc = "An alien shield capable of stopping most projectile and melee attacks. It can be retracted, expanded, and stored anywhere."
+	icon = 'icons/boh/obj/weapons/skrellshield.dmi'
+	icon_state = "skrellshield0" // skrellshield1 for expanded
+	item_icons = list(
+		slot_l_hand_str = 'icons/boh/mob/items/lefthand.dmi',
+		slot_r_hand_str = 'icons/boh/mob/items/righthand.dmi',
+		)
