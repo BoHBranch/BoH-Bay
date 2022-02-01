@@ -152,7 +152,7 @@
 /obj/machinery/door/blast/regular{
 	id_tag = "sensor"
 	},
-/turf/simulated/floor/usedup,
+/turf/simulated/floor/reinforced/airless,
 /area/ship/scrap/comms)
 "at" = (
 /obj/effect/paint/brown,
@@ -192,7 +192,7 @@
 /area/ship/scrap/command/bridge)
 "ax" = (
 /obj/machinery/shipsensors,
-/turf/simulated/floor/usedup,
+/turf/simulated/floor/reinforced/airless,
 /area/ship/scrap/comms)
 "ay" = (
 /obj/machinery/light,

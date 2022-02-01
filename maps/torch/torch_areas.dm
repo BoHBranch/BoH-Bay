@@ -60,8 +60,12 @@
 	name = "Fourth Deck Maintenance"
 	icon_state = "maintcentral"
 
-/area/maintenance/fourthdeck/aft
-	name = "Fourth Deck Aft Maintenance"
+/area/maintenance/fourthdeck/aftport
+	name = "Fourth Deck Aft Port Maintenance"
+	icon_state = "amaint"
+
+/area/maintenance/fourthdeck/aftstarboard
+	name = "Fourth Deck Aft Starboard Maintenance"
 	icon_state = "amaint"
 
 /area/maintenance/fourthdeck/foreport
@@ -1771,7 +1775,7 @@
 	name = "\improper Technician Prep"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
-	req_access = list(access_inftech)
+//	req_access = list(access_inftech, access_infmed)
 
 /area/security/infantry/com
 	name = "\improper Squad Leader Prep"

@@ -290,7 +290,7 @@
 	name = "dark matter bolt"
 	icon_state = "darkb"
 	damage = 40
-	armor_penetration = 35
+	armor_penetration = 65
 	damage_type = BRUTE
 	muzzle_type = /obj/effect/projectile/darkmatter/muzzle
 	tracer_type = /obj/effect/projectile/darkmatter/tracer

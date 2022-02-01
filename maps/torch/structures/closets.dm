@@ -117,7 +117,10 @@
 	return list(
 		/obj/item/ammo_magazine/mil_rifle/sec/large,
 		/obj/item/ammo_magazine/mil_rifle/sec/large,
-		/obj/item/ammo_magazine/mil_rifle/sec/large
+		/obj/item/ammo_magazine/mil_rifle/sec/large,
+		/obj/item/ammo_casing/rocket/rcr,
+		/obj/item/ammo_casing/rocket/rcr,
+		/obj/item/ammo_casing/rocket/rcr
 		)
 
 /obj/structure/closet/secure_closet/squad_lead
@@ -137,6 +140,24 @@
 		/obj/item/device/megaphone,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/gunbox/infcom
+		)
+
+/obj/structure/closet/secure_closet/infmed
+	name = "medic's locker"
+	req_access = list(access_infmed)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
+
+/obj/structure/closet/secure_closet/infmed/WillContain()
+	return list(
+		/obj/item/weapon/storage/belt/holster/security/tactical,
+		/obj/item/device/flashlight/maglight,
+		/obj/item/weapon/material/knife/combat,
+		/obj/item/clothing/glasses/tacgoggles,
+		/obj/item/weapon/storage/belt/utility,
+		/obj/item/weapon/weldpack/bigwelder,
+		/obj/item/weapon/storage/box/flares,
+		/obj/item/clothing/suit/armor/pcarrier/light/sol,
+		/obj/item/gunbox/infmed
 		)
 
 /////////
@@ -195,4 +216,22 @@
 		/obj/item/clothing/glasses/hud/health,
 		/obj/item/weapon/storage/firstaid/adv,
 		/obj/item/clothing/accessory/storage/holster/waist
+	)
+
+//inf
+/obj/structure/closet/secure_closet/triagesec/inf
+	name = "triage locker"
+	req_access = list(access_infmed)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
+
+/obj/structure/closet/secure_closet/triagesec/inf/WillContain()
+	return list(
+		/obj/item/device/megaphone,
+		/obj/item/clothing/gloves/latex,
+		/obj/item/weapon/material/knife/folding/swiss,
+		/obj/item/weapon/storage/belt/medical/emt,
+		/obj/item/weapon/storage/box/autoinjectors,
+		/obj/item/device/scanner/health,
+		/obj/item/clothing/glasses/hud/health,
+		/obj/item/weapon/storage/firstaid/adv,
 	)
