@@ -431,9 +431,9 @@
 
 	var/proj_damage = Proj.get_structure_damage()
 	if(istype(Proj, /obj/item/projectile/beam))
-		power += proj_damage * config_bullet_energy	* charging_factor / power_factor
+		power += clamp(proj_damage,10,20) * config_bullet_energy	* charging_factor / power_factor
 	else
-		damage += proj_damage * config_bullet_energy
+		damage += clamp(proj_damage,10,20) * config_bullet_energy
 	return 0
 
 /obj/machinery/power/supermatter/attack_robot(mob/user as mob)
