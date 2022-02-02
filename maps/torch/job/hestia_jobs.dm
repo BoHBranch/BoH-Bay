@@ -117,14 +117,14 @@
 			            access_inftech, access_aquila, access_eva)
 	alt_titles = list(
 		"Combat Engineer")
-/*
+
 /datum/job/combat_tech/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
 			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
 				return TRUE
 	return FALSE
-*/
+
 /datum/job/combat_tech/get_description_blurb()
 	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if no Squad Leader is present."
 
@@ -161,14 +161,14 @@
 	access = list(access_maint_tunnels, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_infmed, access_aquila, access_eva)
-/*
+
 /datum/job/combat_medic/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
 			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
 				return TRUE
 	return FALSE
-*/
+
 /datum/job/combat_medic/get_description_blurb()
 	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Medic in the squad. Your duty is to provide medical assistance as required. You may assume Command if no Squad Leader is present."
 
@@ -206,14 +206,14 @@
 	alt_titles = list(
 		"Grunt",
 		"Trooper")
-/*
+
 /datum/job/grunt/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
 			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
 				return TRUE
 	return FALSE
-*/
+
 /datum/job/grunt/get_description_blurb()
 	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are a Marine! Your duty is to listen to the Squad Leader. If they're not present, the Combat Technician may pull rank. Do your best not to die, while also taking orders. Oorah!"
 
