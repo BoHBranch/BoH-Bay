@@ -93,3 +93,15 @@
 /obj/item/weapon/grenade/frag/high_yield/on_explosion(var/turf/O)
 	if(explosion_size)
 		explosion(O, -1, round(explosion_size/2), explosion_size, round(explosion_size/2), 0) //has a chance to blow a hole in the floor
+
+/obj/item/weapon/grenade/frag/rubber
+	name = "stinger grenade"
+	desc = "A Stinger grenade, a grenade releasing a huge amount of tiny rubber balls made to cause extreme pain and trauma to anyone it hits to nonleathally disable them, but may still cause severe injuries."
+	icon_state = "concussion"
+	fragment_types = list(/obj/item/projectile/bullet/pellet/rubber=1)
+	num_fragments = 69
+	explosion_size = 0 // Rubber grenade, doesn't have explosives.
+
+/obj/item/projectile/bullet/pellet/rubber // Rubber balls, deal agony and a tiny bit of damage.
+	damage = 5
+	agony = 25
