@@ -1,6 +1,5 @@
 /obj/item/weapon/gun/projectile/pistol/sec/MK
 	desc = "Similar in both appearance and use of the NT Mk58, the MK pistol is an cheap knock off that preys on the unsuspecting firearm buyers."
-	jam_chance = 35
 
 /obj/item/weapon/gun/projectile/heavysniper/ant
 	name = "anti-material rifle"
@@ -17,4 +16,3 @@
 
 /obj/item/weapon/gun/projectile/automatic/machine_pistol/usi
 	desc = "An uncommon machine pistol, sometimes refered to as an 'uzi' by the backwater spacers it is often associated with. This one looks especially run-down. Uses pistol rounds."
-	jam_chance = 20

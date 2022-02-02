@@ -30,7 +30,6 @@
 	auto_eject = 0
 	starts_loaded = 0
 	one_hand_penalty = 6 //lower power rounds
-	jam_chance = 5
 	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
@@ -42,9 +41,7 @@
 //sec proper
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/b
 	name = "Z9B Bulldog"
-	desc = "The Hephaestus Industries Z9B Bulldog is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use. \
-	Because of the limited fire-rate, and how the mechanism functions, it has a much higher jam rate."
-	jam_chance = 15
+	desc = "The Hephaestus Industries Z9B Bulldog is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use."
 	req_access = list(access_brig)
 	firemodes = list(
 		list(mode_name="semi auto",       burst=1,    fire_delay=null,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
@@ -126,11 +123,10 @@
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg
 	name = "Z6 Komodo"
 	desc = "The Hephaestus Industries Z6 Komodo is an old bullpup carbine conversion. \
-	It adds the possibility of automatic fire, though at the cost of likely jams."
+	It adds the possibility of automatic fire."
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	auto_eject = 1
 	one_hand_penalty = 8
-	jam_chance = 15 //frangible rounds might shatter if they're chambered improperly. Especially so with such a high firerate.
 	firemodes = list(
 		list(mode_name="semi auto", burst=1, fire_delay=null, move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		list(mode_name="burst fire",  burst=5, fire_delay=null, move_delay=2, one_hand_penalty=10, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0)),
@@ -173,7 +169,6 @@
 	caliber = CALIBER_SABOT
 	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
-	jam_chance = 25 //big ol' gun. Purely for balance.
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		)
@@ -191,14 +186,11 @@
 	magazine_type = /obj/item/ammo_magazine/mil_rifle/sec
 	allowed_magazines = list(/obj/item/ammo_magazine/mil_rifle/sec, /obj/item/ammo_magazine/mil_rifle/sec/large, /obj/item/ammo_magazine/mil_rifle)
 	auto_eject = 1
-	jam_chance = 1
 
 //sec proper
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/sav/stv
 	name = "STV-1"
-	desc = "The Hephaestus Industries Z9B Bulldog is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use. \
-	Because of the limited fire-rate, and how the mechanism functions, it has a much higher jam rate."
-	jam_chance = 5
+	desc = "The Hephaestus Industries Z9B Bulldog is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use."
 	req_access = list(access_brig)
 	firemodes = list(
 		list(mode_name="semi auto",       burst=1,    fire_delay=null,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),

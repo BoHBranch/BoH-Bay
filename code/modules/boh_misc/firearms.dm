@@ -6,7 +6,6 @@
 	name = "Mk59"
 	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps. It's known for severe issues with reliability when not maintained well or used by inexperienced shooters."
 	magazine_type = /obj/item/ammo_magazine/pistol/double/pepperball
-	jam_chance = 5 //Cheap firearm. Chance of jamming.
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar/cabinet
 	starts_loaded = 0
