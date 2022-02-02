@@ -431,7 +431,7 @@
 
 	var/proj_damage = Proj.get_structure_damage()
 	if(istype(Proj, /obj/item/projectile/beam))
-		power += clamp(proj_damage,10,20) * config_bullet_energy	* charging_factor / power_factor
+		power += proj_damage * config_bullet_energy	* charging_factor / power_factor
 	else
 		damage += clamp(proj_damage,10,20) * config_bullet_energy
 	return 0
