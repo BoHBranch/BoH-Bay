@@ -132,9 +132,9 @@
 
 /decl/cultural_info/faction/foundation
 	name = FACTION_FOUNDATION
-	description = "The Cuchulain Foundation is a non-profit body based out of Neptune orbit. 
-	Their logo is an upward-facing radio telescope dish, usually printed in green. 
-	They perform niche research on behalf of private parties, the SGC, and their own interests. 
+	description = "The Cuchulain Foundation is a non-profit body based out of Neptune orbit. \
+	Their logo is an upward-facing radio telescope dish, usually printed in green. \
+	They perform niche research on behalf of private parties, the SGC, and their own interests. \
 	They are also the single largest psionic registration and oversight body in human space, responsible for educating and training operants at no cost, even across territorial and political lines."
 	economic_power = 1.1
 	subversive_potential = 15
