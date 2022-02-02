@@ -312,17 +312,17 @@
 
 /datum/sprite_accessory/hair/himecutponytail
 	name = "Himecut Ponytail"
-	icon_state = "himecut_himecut_ponytail"
+	icon_state = "hair_himecut_ponytail"
 	flags = HAIR_TIEABLE
 
 /datum/sprite_accessory/hair/himecutponytailup
 	name = "Himecut High Ponytail"
-	icon_state = "himecut_himecut_ponytail_up"
+	icon_state = "hair_himecut_ponytail_up"
 	flags = HAIR_TIEABLE
 
 /datum/sprite_accessory/hair/himecutlongponytail
 	name = "Himecut Long Ponytail"
-	icon_state = "himecut_himecut_long_ponytail"
+	icon_state = "hair_himecut_long_ponytail"
 	flags = HAIR_TIEABLE
 
 /datum/sprite_accessory/hair/shorthime
