@@ -7,3 +7,4 @@
 	required_enemies = 3
 	end_on_antag_death = FALSE
 	antag_tags = list(MODE_DEITY, MODE_GODCULTIST)
+	votable = 0
