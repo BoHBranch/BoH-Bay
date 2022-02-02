@@ -37,5 +37,6 @@
 	path = /obj/item/clothing/gloves/nabber
 	description = "A set of insulated gloves meant for GAS."
 	whitelisted = list(SPECIES_NABBER)
+	allowed_branches = ENGINEERING_ROLES
 	sort_category = "Xenowear"
 
