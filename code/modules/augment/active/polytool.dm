@@ -50,10 +50,8 @@
 			return
 		owner.visible_message(SPAN_WARNING("[owner] retracts \his [I] into \his [limb.name]."), SPAN_NOTICE("You retract your [I] into your [limb.name]."))
 
-	if(!istype(item) || !(src.loc in owner.organs))
-		return
 	if(owner.equip_to_slot_if_possible(item, slot))
-		GLOB.item_unequipped_event.register(item, src, /obj/item/organ/internal/augment/active/polytool/proc/holding_dropped )
+		GLOB.item_unequipped_event.register(item, src, /obj/item/organ/internal/augment/active/polytool/proc/holding_dropped)
 		owner.visible_message(
 			SPAN_WARNING("[owner] extends \his [item.name] from \his [limb.name]."),
 			SPAN_NOTICE("You extend your [item.name] from your [limb.name].")
