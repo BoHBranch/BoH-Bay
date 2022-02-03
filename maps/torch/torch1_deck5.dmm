@@ -8417,7 +8417,6 @@
 /area/quartermaster/storage)
 "oA" = (
 /obj/random/illegal,
-/obj/machinery/the_singularitygen,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "oC" = (
