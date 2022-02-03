@@ -390,7 +390,7 @@ GLOBAL_LIST_INIT(click_catchers, create_click_catcher())
 ///////////////////////////
 // Credit to Whoever wrote this years ago. //
 
-var/dispersion_modifyer = 0 //while(automatic) dispersion_mod++; dispersion = 0.1 + dispersion_mod;
+var/dispersion_modifier = 0 //while(automatic) dispersion_mod++; dispersion = 0.1 + dispersion_mod;
 
 /client/MouseDown(object, location, control, params)
 	var/delay = mob.CanMobAutoclick(object, location, params)
@@ -398,10 +398,10 @@ var/dispersion_modifyer = 0 //while(automatic) dispersion_mod++; dispersion = 0.
 		selected_target[1] = object
 		selected_target[2] = params
 		while(selected_target[1])
-			dispersion_modifyer += 0.04
+			dispersion_modifier += 0.04
 			Click(selected_target[1], location, control, selected_target[2])
 			sleep(delay)
-		dispersion_modifyer = 0
+		dispersion_modifier = 0
 
 /client/MouseUp(object, location, control, params)
 	selected_target[1] = null
