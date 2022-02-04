@@ -433,7 +433,7 @@
 	if(istype(Proj, /obj/item/projectile/beam))
 		power += proj_damage * config_bullet_energy	* charging_factor / power_factor
 	else
-		damage += Clamp((proj_damage * config_bullet_energy),1,20)
+		damage += Clamp((proj_damage * config_bullet_energy),1,60)
 	return 0
 
 /obj/machinery/power/supermatter/attack_robot(mob/user as mob)
