@@ -71,6 +71,8 @@
 /obj/structure/closet/secure_closet/brig/WillContain()
 	return null
 
+//INFANTRY LOCKERS HERE - YAWET330 CHANGES BELOW AS FOLLOWS: SIDEARMS
+
 /obj/structure/closet/secure_closet/infantry
 	name = "infantry locker"
 	req_access = list(access_infantry)
@@ -86,7 +88,8 @@
 		/obj/item/weapon/extinguisher/mini,
 		/obj/item/device/gps,
 		/obj/item/weapon/storage/box/flares,
-		/obj/item/gunbox/infantry
+		/obj/item/gunbox/infantry,
+		/obj/item/gunbox/sidearm/infantry
 		)
 
 /obj/structure/closet/secure_closet/inftech
@@ -104,7 +107,8 @@
 		/obj/item/weapon/weldpack/bigwelder,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/suit/armor/pcarrier/light/sol,
-		/obj/item/gunbox/inftech
+		/obj/item/gunbox/inftech,
+		/obj/item/gunbox/sidearm/infantry
 		)
 
 //demolocker
@@ -139,7 +143,8 @@
 		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
 		/obj/item/device/megaphone,
 		/obj/item/weapon/storage/box/flares,
-		/obj/item/gunbox/infcom
+		/obj/item/gunbox/infcom,
+		/obj/item/gunbox/sidearm/infantry
 		)
 
 /obj/structure/closet/secure_closet/infmed
@@ -147,7 +152,7 @@
 	req_access = list(access_infmed)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
 
-/obj/structure/closet/secure_closet/infmed/WillContain()
+/obj/structure/closet/secure_closet/inftech/WillContain()
 	return list(
 		/obj/item/weapon/storage/belt/holster/security/tactical,
 		/obj/item/device/flashlight/maglight,
@@ -157,7 +162,8 @@
 		/obj/item/weapon/weldpack/bigwelder,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/suit/armor/pcarrier/light/sol,
-		/obj/item/gunbox/infmed
+		/obj/item/gunbox/infmed,
+		/obj/item/gunbox/sidearm/infantry
 		)
 
 /////////
