@@ -110,6 +110,62 @@
 		/obj/item/gunbox/inftech,
 		/obj/item/gunbox/sidearm/infantry
 		)
+
+//demolocker
+/obj/structure/closet/secure_closet/inftech/ammo
+	name = "technician's support locker"
+	req_access = list(access_inftech)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/warden
+
+/obj/structure/closet/secure_closet/inftech/ammo/WillContain()
+	return list(
+		/obj/item/ammo_magazine/mil_rifle/sec/large,
+		/obj/item/ammo_magazine/mil_rifle/sec/large,
+		/obj/item/ammo_magazine/mil_rifle/sec/large,
+		/obj/item/ammo_casing/rocket/rcr,
+		/obj/item/ammo_casing/rocket/rcr,
+		/obj/item/ammo_casing/rocket/rcr
+		)
+
+/obj/structure/closet/secure_closet/squad_lead
+	name = "squad leader's locker"
+	req_access = list(access_infcom)
+	closet_appearance = /decl/closet_appearance/secure_closet/security/hos
+
+/obj/structure/closet/secure_closet/squad_lead/WillContain()
+	return list(
+		/obj/item/weapon/storage/belt/holster/security/tactical,
+		/obj/item/device/flashlight/maglight,
+		/obj/item/weapon/material/knife/combat,
+		/obj/item/clothing/glasses/tacgoggles,
+		/obj/item/weapon/storage/firstaid/combat,
+		/obj/item/solbanner,
+		/obj/item/clothing/suit/armor/pcarrier/medium/sol,
+		/obj/item/device/megaphone,
+		/obj/item/weapon/storage/box/flares,
+		/obj/item/gunbox/infcom,
+		/obj/item/gunbox/sidearm/infantry
+		)
+
+/obj/structure/closet/secure_closet/infmed
+	name = "medic's locker"
+	req_access = list(access_infmed)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
+
+/obj/structure/closet/secure_closet/inftech/WillContain()
+	return list(
+		/obj/item/weapon/storage/belt/holster/security/tactical,
+		/obj/item/device/flashlight/maglight,
+		/obj/item/weapon/material/knife/combat,
+		/obj/item/clothing/glasses/tacgoggles,
+		/obj/item/weapon/storage/belt/utility,
+		/obj/item/weapon/weldpack/bigwelder,
+		/obj/item/weapon/storage/box/flares,
+		/obj/item/clothing/suit/armor/pcarrier/light/sol,
+		/obj/item/gunbox/infmed,
+		/obj/item/gunbox/sidearm/infantry
+		)
+
 /////////
 // Cadet Locker
 /////////
