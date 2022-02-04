@@ -71,6 +71,7 @@
 	var/one_hand_penalty
 	var/wielded_item_state
 	var/combustion	//whether it creates hotspot when fired
+	var/automatic = FALSE // Does this fire at full auto? Burst should be set to one, and this should be one aswell. Effectively an autoclicker. Set to true if yes.
 
 	var/next_fire_time = 0
 

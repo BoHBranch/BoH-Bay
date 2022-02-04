@@ -190,7 +190,7 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 	icon_state = "core1"
 	color = COLOR_PURPLE
 	var/on = TRUE
-	var/output_power = 45 MEGAWATTS //it's the future, and this is a god darn fusion reactor. Why would it produce measly kilowatts?
+	var/output_power = 90 MEGAWATTS //Doubled due to shield nerfs by bay unintentionally making the Ascent Shields worse than the Dagon's
 	var/image/field_image
 
 /obj/machinery/power/ascent_reactor/attack_hand(mob/user)

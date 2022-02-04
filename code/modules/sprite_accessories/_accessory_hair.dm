@@ -310,6 +310,21 @@
 	icon_state = "hair_himecut"
 	flags = HAIR_TIEABLE
 
+/datum/sprite_accessory/hair/himecutponytail
+	name = "Himecut Ponytail"
+	icon_state = "hair_himecut_ponytail"
+	flags = HAIR_TIEABLE
+
+/datum/sprite_accessory/hair/himecutponytailup
+	name = "Himecut High Ponytail"
+	icon_state = "hair_himecut_ponytail_up"
+	flags = HAIR_TIEABLE
+
+/datum/sprite_accessory/hair/himecutlongponytail
+	name = "Himecut Long Ponytail"
+	icon_state = "hair_himecut_long_ponytail"
+	flags = HAIR_TIEABLE
+
 /datum/sprite_accessory/hair/shorthime
 	name = "Short Hime Cut"
 	icon_state = "hair_shorthime"

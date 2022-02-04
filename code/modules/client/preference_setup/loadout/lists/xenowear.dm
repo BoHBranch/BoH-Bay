@@ -75,11 +75,6 @@
 	path = /obj/item/clothing/head/helmet/skrell
 	sort_category = "Xenowear"
 
-/datum/gear/accessory/skrell_badge
-	display_name = "skrellian SDTF badge"
-	path = /obj/item/clothing/accessory/badge/tags/skrell
-	sort_category = "Xenowear"
-
 // IPC clothing
 /datum/gear/mask/ipc_monitor
 	display_name = "display monitor (IPC)"
@@ -93,7 +88,6 @@
 	path = /obj/item/clothing/suit/storage/toggle/labcoat/xyn_machine
 	slot = slot_wear_suit
 	sort_category = "Xenowear"
-	whitelisted = list(SPECIES_IPC)
 
 // Misc clothing
 /datum/gear/uniform/harness
