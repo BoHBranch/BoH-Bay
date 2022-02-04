@@ -25,9 +25,9 @@
 
 /obj/item/gunbox/infcom/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic - GS-95"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun,/obj/item/weapon/gun/energy/revolver/secure)
-	options["Ballistic - Z9"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec,/obj/item/weapon/gun/energy/revolver/secure)
-	options["Energy - G40C"] = list(/obj/item/weapon/gun/energy/laser/infantry/sl,/obj/item/weapon/gun/energy/revolver/secure)
+	options["Ballistic - GS-95"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun)
+	options["Ballistic - Z9"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec)
+	options["Energy - G40C"] = list(/obj/item/weapon/gun/energy/laser/infantry/sl)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
