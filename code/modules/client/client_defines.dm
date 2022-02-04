@@ -14,11 +14,12 @@
 		/////////
 	var/datum/preferences/prefs = null
 	var/adminobs		= null
+	var/list/selected_target[2] // For the full auto autoclicker.
 
 	var/adminhelped = 0
 
 	var/staffwarn = null
-	
+
 	var/datum/tooltip/tooltips 	= null
 
 		///////////////

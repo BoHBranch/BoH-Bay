@@ -25,6 +25,21 @@
 		list(mode_name="long bursts",   burst=8, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
+// Full auto version.
+
+/obj/item/weapon/gun/projectile/automatic/fullauto
+	name = "prototype SMG"
+	desc = "A protoype lightweight, fast firing submachine gun. With a fun switch."
+
+	//FULL AUTO GUNS NEED THEIR OTHER MODES TO BE DEFINED WITH A FALSE, ELSE THEY'LL STILL BE AUTOMATIC WHEN FIREMODES ARE SWITCHED!
+	firemodes = list(
+		list(mode_name="semi auto", automatic = FALSE,     burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
+		list(mode_name="4-round bursts", automatic = FALSE, burst=4, fire_delay=null, move_delay=4,    one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1),       dispersion=list(0.0, 0.0, 0.5, 0.6)),
+		list(mode_name="long bursts", automatic = FALSE,  burst=8, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
+		list(mode_name="automatic",  automatic = TRUE, fire_delay = 0.2,  burst= 1, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
+		)
+
+
 /obj/item/weapon/gun/projectile/automatic/machine_pistol
 	name = "Hephaestus Vesper"
 	desc = "The Hephaestus Industries MP6 Vesper, A fairly common machine pistol. It is respected for it's ability to repaired with little more than a hammer, screwdriver and a hard table!"
