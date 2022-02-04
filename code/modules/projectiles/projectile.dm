@@ -51,7 +51,7 @@
 	var/arterial_bleed_chance_multiplier = 0.2 // Multiplier for post-hit damage-based artery severing proc.
 
 	var/hitscan = 0		// whether the projectile should be hitscan
-	var/step_delay = 1	// the delay between iterations if not a hitscan projectile
+	var/step_delay = 0.25	// the delay between iterations if not a hitscan projectile
 
 	// effect types to be used
 	var/muzzle_type
