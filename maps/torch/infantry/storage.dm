@@ -2,6 +2,26 @@
 // Infantry Kits
 /////////
 
+/obj/item/gunbox/sidearm/infantry
+	name = "Sidearm Kit"
+	desc = "A secure box containing a primary."
+
+/obj/item/gunbox/sidearm/infantry/attack_self(mob/living/user)
+	var/list/options = list()
+	options["Energy - NTSec Revolver"] = list(/obj/item/weapon/gun/energy/revolver/secure)
+	options["Ballistic - HPI P20"] = list(/obj/item/weapon/gun/projectile/pistol/military)
+	options["Ballistic - MA Blacklist"] = list(/obj/item/weapon/gun/projectile/revolver/medium)
+	var/choice = input(user,"What type of equipment?") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn)
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/weapon/gun/))
+				to_chat(user, "You have chosen \the [AM].")
+		qdel(src)
+
+
+
 /obj/item/gunbox/infantry
 	name = "Standard Kit"
 	desc = "A secure box containing a primary."
