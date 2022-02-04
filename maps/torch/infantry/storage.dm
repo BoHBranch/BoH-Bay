@@ -45,9 +45,9 @@
 
 /obj/item/gunbox/infcom/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic - GS-95"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun)
-	options["Ballistic - Z9"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec)
-	options["Energy - G40C"] = list(/obj/item/weapon/gun/energy/laser/infantry/sl)
+	options["Ballistic - GS-95"] = list(/obj/item/weapon/gun/projectile/shotgun/sabotgun,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
+	options["Ballistic - Z9"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
+	options["Energy - G40C"] = list(/obj/item/weapon/gun/energy/laser/infantry/sl,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
@@ -63,8 +63,8 @@
 
 /obj/item/gunbox/inftech/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Explosive - TVP-3, Recoilless Rifle"] = list(/obj/item/weapon/gun/launcher/rocket/recoilless/sec)
-	options["Ballistic - Z6, Light Machinegun"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg)
+	options["Explosive - TVP-3, Recoilless Rifle"] = list(/obj/item/weapon/gun/launcher/rocket/recoilless/sec,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
+	options["Ballistic - Z6, Light Machinegun"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
 	options["Energy - G40B"] = list(/obj/item/weapon/gun/energy/laser/infantry,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
@@ -81,8 +81,8 @@
 
 /obj/item/gunbox/infmed/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Ballistic - C-20b"] = list(/obj/item/weapon/gun/projectile/automatic/merc_smg/sec)
-	options["Ballistic - Z9"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/loaded)
+	options["Ballistic - C-20b"] = list(/obj/item/weapon/gun/projectile/automatic/merc_smg/sec,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
+	options["Ballistic - Z9"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/loaded,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
