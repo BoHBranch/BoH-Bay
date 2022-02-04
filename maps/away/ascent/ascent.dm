@@ -10,11 +10,12 @@
 	id = "awaysite_ascent_seedship"
 	description = "A small Ascent colony ship."
 	suffixes = list("ascent/ascent-1.dmm", "ascent/ascent-2.dmm")
-	cost = 0.5
+	cost = 0//from 0.5
 	shuttles_to_initialise = list(
 		/datum/shuttle/autodock/overmap/ascent,
 		/datum/shuttle/autodock/overmap/ascent/two
 	)
+	template_flags = TEMPLATE_FLAG_SPAWN_GUARANTEED
 
 // Overmap objects.
 /obj/effect/overmap/visitable/ship/ascent_seedship

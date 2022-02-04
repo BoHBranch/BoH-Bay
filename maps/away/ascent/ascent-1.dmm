@@ -817,14 +817,7 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
 "bX" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/weapon/reagent_containers/glass/beaker/cryobromide{
-	item_state = "beaker";
-	name = "cryo beaker"
-	},
-/obj/item/weapon/reagent_containers/glass/beaker/cryobromide{
-	name = "cryo beaker"
-	},
+/obj/structure/adherent_bath/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
 "bY" = (
@@ -1038,6 +1031,12 @@
 /obj/item/stack/medical/ointment,
 /obj/item/stack/medical/ointment,
 /obj/structure/table/rack/dark,
+/obj/item/weapon/reagent_containers/glass/beaker/cryobromide{
+	name = "cryo beaker"
+	},
+/obj/item/weapon/reagent_containers/glass/beaker/cryobromide{
+	name = "cryo beaker"
+	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
 "ct" = (

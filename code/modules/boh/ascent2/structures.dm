@@ -25,3 +25,8 @@
 	desc = "Something about this looks dangerous. Best to keep off."
 	color = "#a33fbf"
 	dir = 8
+/////////
+// Gyne Bath Water
+/////////
+/obj/structure/adherent_bath/ascent
+	color = "#a33fbf"
