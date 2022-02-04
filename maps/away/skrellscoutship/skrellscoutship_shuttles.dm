@@ -38,14 +38,14 @@
 	flags = SHUTTLE_FLAGS_PROCESS
 	skill_needed = SKILL_NONE
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/skrell
+	dock_target = "obsevatory_dock"
 
 /obj/effect/shuttle_landmark/skrellscoutship/start
-	name = "Uncharted Space"
+	name = "Observatory Dock"
 	landmark_tag = "nav_skrellscout_start"
-
-/obj/effect/shuttle_landmark/skrellscoutship/emptsec
-	name = "Cloaking Field"
-	landmark_tag = "nav_skrellscout_return"
+	docking_controller = "observatory_dock"
+	base_area = /area/observatory/dock
+	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/shuttle_landmark/skrellscoutship/dock
 	name = "Fourth Deck Starboard Docking Port"

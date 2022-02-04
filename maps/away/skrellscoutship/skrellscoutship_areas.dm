@@ -59,3 +59,15 @@
 	name = "\improper Atmospherics"
 	icon_state = "atmos"
 	ambience = list('sound/ambience/ambigen3.ogg','sound/ambience/ambigen4.ogg','sound/ambience/ambigen5.ogg','sound/ambience/ambigen6.ogg','sound/ambience/ambigen7.ogg','sound/ambience/ambigen8.ogg','sound/ambience/ambigen9.ogg','sound/ambience/ambigen10.ogg','sound/ambience/ambigen11.ogg','sound/ambience/ambiatm1.ogg')
+
+// Observatory Areas
+
+/area/observatory
+	name = "\improper Skrellian Observatory"
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
+	base_turf = /turf/space
+	req_access = list(access_skrellscoutship)
+
+/area/observatory/dock
+	name = "\improper Docking Port"
+	icon_state = "entry_1"

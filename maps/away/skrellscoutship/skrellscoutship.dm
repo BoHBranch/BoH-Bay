@@ -12,12 +12,16 @@
 	cost = 0.1
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/skrellscoutship)
 	spawn_weight = 2
+	apc_test_exempt_areas = list()
 
 /obj/effect/overmap/visitable/sector/skrellscoutspace
 	name = "Empty Sector"
-	desc = "Slight traces of a cloaking device are present. Unable to determine exact location."
+	desc = "Slight traces of a cloaking device are present. Unable to determine exact location. There is something big here but the sensors just can not make it out."
 	icon_state = "event"
 	hide_from_reports = TRUE
+	initial_restricted_waypoints = list(
+		"Skrellian Scout" = list("nav_skrellscout_start")
+	)
 
 /obj/effect/submap_landmark/joinable_submap/skrellscoutship
 	name = "Xilvuxix"
