@@ -11,7 +11,7 @@ Specifically made to do radiation burns.
 		if(species.name == SPECIES_DIONA)
 			return FALSE
 		damage = 0.25 * damage * species.get_radiation_mod(src)
-		adjustFireLoss(clamp(damage,0,10))
+		adjustFireLoss(clamp(damage,0,5))
 
 	updatehealth()
 	return TRUE
