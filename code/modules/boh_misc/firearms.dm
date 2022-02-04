@@ -208,11 +208,11 @@
 /obj/item/weapon/gun/energy/pulse_rifle/pistol/epp
 	name = "experimental pulse pistol"
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. It's fitted with an incredibly tiny self-contained reactor. \
-	This provides the weapon, in theory, an infinite power source, but a horrible munition count in practice. Additionally, it cannot fire a concentrated beam, having been modified to be less-than-lethal."
+	This provides the weapon, in theory, an infinite power source, but a horrible munition count in practice. Additionally, due to its modification not only does it suffer from a horrific lack of shots per recharge; but due to the unique lense modification, causes more pain than harm."
 	projectile_type = /obj/item/projectile/beam/pulse/epp
-	max_shots = 3
+	max_shots = 6
 	self_recharge = 1
-	burst = 1
+	burst = 2
 
 /////////
 // Casull
