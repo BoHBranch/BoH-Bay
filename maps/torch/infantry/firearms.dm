@@ -21,21 +21,22 @@
 /////////
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec
 	name = "Z9 Bulldog"
-	desc = "The Hephaestus Industries Z9 Bulldog is a newer generation bullpup carbine. It appears to be heavily modified: forcing the feed of one round type, a permanent semi-auto setting and the removal of the auto-eject function. Lame. \
-	Still has the kickass grenade launcher, though! The aforementioned forced munition is a highly specialized frangible bullet. Designed to minimize crossfire damage, alongside civilian casualties."
+	desc = "The Hephaestus Industries Z9 Bulldog is a newer generation bullpup carbine. It appears to be heavily modified: consisting of the removal of the auto-eject function. Lame. \
+	Still has the kickass grenade launcher, though!"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
-	ammo_type = /obj/item/ammo_casing/rifle/military/low
+	ammo_type = /obj/item/ammo_casing/rifle/military //De-nerfs the one-round type.
 	magazine_type = /obj/item/ammo_magazine/mil_rifle/sec
 	allowed_magazines = list(/obj/item/ammo_magazine/mil_rifle/sec, /obj/item/ammo_magazine/mil_rifle/sec/large, /obj/item/ammo_magazine/mil_rifle)
 	auto_eject = 0
 	starts_loaded = 0
-	one_hand_penalty = 6 //lower power rounds
-	jam_chance = 5
+	one_hand_penalty = 10 //Can feed all types of magazines.
+	jam_chance = 2
 	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
 		list(mode_name="semi auto",       burst=1,    fire_delay=null,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		list(mode_name="bump fire", burst=2, fire_delay=null, move_delay=2,    one_hand_penalty=8, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="3-round bursts", burst=3,    fire_delay=null, move_delay=6,    use_launcher=null, one_hand_penalty=9, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0)),
 		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
 		)
 
@@ -44,7 +45,7 @@
 	name = "Z9B Bulldog"
 	desc = "The Hephaestus Industries Z9B Bulldog is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use. \
 	Because of the limited fire-rate, and how the mechanism functions, it has a much higher jam rate."
-	jam_chance = 15
+	jam_chance = 8 //You're my little pogchamp, security.
 	req_access = list(access_brig)
 	firemodes = list(
 		list(mode_name="semi auto",       burst=1,    fire_delay=null,    move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
