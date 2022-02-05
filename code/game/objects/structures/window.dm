@@ -30,8 +30,6 @@
 /obj/structure/window/get_material()
 	return material
 
-/obj/structure/window/New(var/newloc, var/start_dir, var/new_material, var/new_reinf_material)
-	..(newloc, start_dir, new_material, new_reinf_material)
 /obj/structure/window/Initialize(mapload, start_dir=null, constructed=0, var/new_material, var/new_reinf_material)
 	. = ..()
 	if(!new_material)
