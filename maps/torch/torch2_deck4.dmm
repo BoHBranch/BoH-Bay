@@ -5456,7 +5456,6 @@
 /area/command/pathfinder)
 "kj" = (
 /obj/machinery/door/airlock/glass/civilian{
-	autoset_access = 0;
 	name = "Commissary"
 	},
 /obj/machinery/door/firedoor,
@@ -8232,6 +8231,14 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/aft)
+"rv" = (
+/obj/effect/floor_decal/corner/brown/mono,
+/obj/machinery/door/airlock/civilian{
+	id_tag = "shop_doors";
+	name = "Commissary Counter"
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/crew_quarters/commissary)
 "rD" = (
 /obj/machinery/computer/ship/navigation{
 	dir = 4;
@@ -17160,6 +17167,7 @@
 /area/command/pathfinder)
 "TU" = (
 /obj/machinery/door/airlock/civilian{
+	id_tag = "shop_doors";
 	name = "Commissary Counter"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
@@ -18595,6 +18603,13 @@
 	icon_state = "alarm0";
 	pixel_x = -22;
 	pixel_y = 0
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "shop_doors";
+	name = "Door Lockdown";
+	pixel_x = -24;
+	pixel_y = 7;
+	req_access = list(list("ACCESS_HEADS","ACCESS_TORCH_SHOP"))
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/commissary)
@@ -31638,7 +31653,7 @@ aa
 YK
 WZ
 WZ
-UO
+rv
 UO
 UO
 UO
