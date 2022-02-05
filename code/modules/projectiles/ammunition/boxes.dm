@@ -9,8 +9,9 @@
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/speedloader/xo
-	labels = list("custom")
-	ammo_type = /obj/item/ammo_casing/pistol/xo
+	labels = list("magnum")
+	caliber = CALIBER_PISTOL_MAGNUM
+	ammo_type = /obj/item/ammo_casing/pistol/magnum
 
 /obj/item/ammo_magazine/speedloader/rubber
 	labels = list("rubber")
