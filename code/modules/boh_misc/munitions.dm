@@ -92,9 +92,8 @@
 // EPP Projectile
 /////////
 /obj/item/projectile/beam/pulse/epp
-	damage = 12
-	damage_type = ELECTROCUTE
-	agony = 35
+	damage = 15
+	agony = 20 //reduced for lethality bonus.
 
 /////////
 // .454
