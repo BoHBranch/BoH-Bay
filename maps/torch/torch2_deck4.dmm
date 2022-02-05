@@ -13163,6 +13163,7 @@
 	name = "Docking Port Airlock"
 	},
 /obj/machinery/shield_diffuser,
+/obj/effect/shuttle_landmark/skrellscoutship/dock,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "Ir" = (
@@ -17125,6 +17126,7 @@
 	name = "Docking Port Airlock"
 	},
 /obj/machinery/shield_diffuser,
+/obj/effect/shuttle_landmark/skrellscoutship/altdock,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "TO" = (
@@ -17209,7 +17211,6 @@
 	name = "Docking Port Airlock"
 	},
 /obj/machinery/shield_diffuser,
-/obj/effect/shuttle_landmark/skrellscoutshuttle/altdock,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "TY" = (
