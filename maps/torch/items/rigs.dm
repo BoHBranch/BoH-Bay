@@ -377,7 +377,6 @@
 	icon = 'maps/torch/icons/obj/uniques.dmi'
 	desc = "Odyssey' Exoplanet Exploration Armored Unit, A-Unit for short. Built for more hostile (and hungry) environments, it features additional armor and powered exoskeleton."
 	icon_state = "command_exp_rig"
-	light_overlay = "helmet_light_wide"
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_PISTOL,
