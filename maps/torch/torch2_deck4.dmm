@@ -4811,6 +4811,11 @@
 	dir = 4;
 	icon_state = "techfloor_edges"
 	},
+/obj/machinery/button/alternate/door{
+	id_tag = "starboard_storage";
+	name = "Door Bolt";
+	pixel_y = -22
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/auxillary/starboard)
 "jd" = (
@@ -5933,7 +5938,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/airlock/mining{
-	id_tag = null;
+	id_tag = "starboard_storage";
 	name = "Starboard Auxiliary Storage"
 	},
 /obj/effect/floor_decal/techfloor/corner{
@@ -8231,14 +8236,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/aft)
-"rv" = (
-/obj/effect/floor_decal/corner/brown/mono,
-/obj/machinery/door/airlock/civilian{
-	id_tag = "shop_doors";
-	name = "Commissary Counter"
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/crew_quarters/commissary)
 "rD" = (
 /obj/machinery/computer/ship/navigation{
 	dir = 4;
@@ -15108,6 +15105,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
+"Ov" = (
+/obj/effect/floor_decal/corner/brown/mono,
+/obj/machinery/door/airlock/civilian{
+	id_tag = "shop_doors";
+	name = "Commissary Counter"
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/crew_quarters/commissary)
 "Ow" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -18604,11 +18609,11 @@
 	pixel_x = -22;
 	pixel_y = 0
 	},
-/obj/machinery/button/blast_door{
+/obj/machinery/button/alternate/door{
 	id_tag = "shop_doors";
 	name = "Door Lockdown";
 	pixel_x = -24;
-	pixel_y = 7;
+	pixel_y = 6;
 	req_access = list(list("ACCESS_HEADS","ACCESS_TORCH_SHOP"))
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -31653,7 +31658,7 @@ aa
 YK
 WZ
 WZ
-rv
+Ov
 UO
 UO
 UO
