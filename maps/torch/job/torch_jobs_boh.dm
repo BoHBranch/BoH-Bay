@@ -134,6 +134,20 @@
 		/datum/mil_rank/civ/contractor
 	)
 
+/datum/job/roboticist
+	allowed_branches = list(
+		/datum/mil_branch/fleet,
+		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/engineering/contractor,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/marine
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6,
+		/datum/mil_rank/marine_corps/e5,
+		/datum/mil_rank/marine_corps/e6,
+		/datum/mil_rank/civ/contractor
+	)
+
 /datum/job/engineer_trainee
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
