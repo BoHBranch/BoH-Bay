@@ -5101,15 +5101,6 @@
 	icon_state = "dark"
 	},
 /area/centcom/specops)
-"aBA" = (
-/obj/effect/landmark{
-	name = "Commando"
-	},
-/turf/unsimulated/floor{
-	dir = 1;
-	icon_state = "vault"
-	},
-/area/centcom/specops)
 "aBB" = (
 /obj/structure/closet{
 	name = "emergency response team wardrobe"
@@ -21619,12 +21610,12 @@ azU
 ayc
 aAJ
 axH
-aBA
-aBA
-aBA
-aBA
-aBA
-aBA
+awp
+awp
+awp
+awp
+awp
+awp
 avY
 axH
 axH
