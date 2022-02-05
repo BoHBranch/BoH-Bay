@@ -240,7 +240,8 @@
 	dir = 4
 	},
 /obj/machinery/door/window/brigdoor/northleft{
-	name = "emergency core eject"
+	name = "emergency core eject";
+	req_access = list("ACCESS_ENGINEERING")
 	},
 /obj/machinery/button/blast_door{
 	desc = "A remote switch to open the engine core vent to space.";
