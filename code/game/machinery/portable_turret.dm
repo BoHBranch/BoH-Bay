@@ -89,9 +89,12 @@
 	check_records = 0
 	check_weapons = 0
 	check_anomalies = 1
-	installation = /obj/item/weapon/gun/energy/pulse_rifle/skrell
+	installation = /obj/item/weapon/gun/energy/exteriorturret/skrell
 	color = COLOR_DARK_GRAY
 	req_access = list("ACCESS_SKRELLSCOUT")
+
+/obj/item/weapon/gun/energy/exteriorturret/skrell
+	projectile_type = /obj/item/projectile/beam/pulse/skrell/single
 
 /obj/machinery/turretid/tur_ID/ssv
 	id_tag = "skrurret"
@@ -109,7 +112,7 @@
 	check_records = 0
 	check_weapons = 0
 	check_anomalies = 1
-	installation = /obj/item/weapon/gun/energy/pulse_rifle/skrell
+	installation = /obj/item/weapon/gun/energy/exteriorturret/skrell
 	color = COLOR_DARK_GRAY
 	req_access = list("ACCESS_SKRELLSCOUT")
 

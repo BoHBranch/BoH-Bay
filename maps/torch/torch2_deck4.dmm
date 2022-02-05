@@ -13159,6 +13159,7 @@
 	name = "Docking Port Airlock"
 	},
 /obj/machinery/shield_diffuser,
+/obj/effect/shuttle_landmark/skrellscoutship/dock,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "Ir" = (
@@ -18927,10 +18928,6 @@
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/hallway/primary/fourthdeck/fore)
-"YM" = (
-/obj/effect/shuttle_landmark/skrellscoutship/dock,
-/turf/space,
-/area/space)
 "YN" = (
 /obj/structure/fireaxecabinet{
 	pixel_x = 32;
@@ -43730,7 +43727,7 @@ aa
 aa
 aa
 aa
-YM
+aa
 aa
 aa
 aa

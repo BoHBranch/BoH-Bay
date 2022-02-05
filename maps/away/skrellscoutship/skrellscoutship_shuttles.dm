@@ -36,9 +36,9 @@
 	defer_initialisation = TRUE
 	knockdown = FALSE
 	flags = SHUTTLE_FLAGS_PROCESS
-	skill_needed = SKILL_NONE
+	skill_needed = SKILL_BASIC
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/skrell
-	dock_target = "obsevatory_dock"
+	dock_target = "xil_dock"
 
 /obj/effect/shuttle_landmark/skrellscoutship/start
 	name = "Observatory Dock"
@@ -48,11 +48,11 @@
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/shuttle_landmark/skrellscoutship/dock
-	name = "Fourth Deck Starboard Docking Port"
+	name = "SSV Secondary Docking Port"
 	landmark_tag = "nav_skrellscout_dock"
 
 /obj/effect/shuttle_landmark/skrellscoutship/altdock
-	name = "Fourth Deck Port Docking Port"
+	name = "SSV Docking Port"
 	landmark_tag = "nav_skrellscoutsh_altdock"
 
 /turf/simulated/floor/shuttle_ceiling/skrell

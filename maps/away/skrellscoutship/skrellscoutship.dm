@@ -9,9 +9,8 @@
 	id = "awaysite_skrell_scout"
 	description = "A Skrellian SDTF scouting vessel."
 	suffixes = list("skrellscoutship/skrellscoutship_revamp.dmm")
-	cost = 0.1
+	cost = 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/skrellscoutship)
-	spawn_weight = 2
 	apc_test_exempt_areas = list()
 
 /obj/effect/overmap/visitable/sector/skrellscoutspace
@@ -78,7 +77,7 @@
 /datum/job/submap/skrellscoutship_crew
 	title = "Qrri-Zuumqix"
 	supervisors = "your Qrri-Vuxix"
-	total_positions = 5
+	total_positions = 4
 	whitelisted_species = list("Skrell")
 	branch = /datum/mil_branch/skrell_fleet
 	rank = /datum/mil_rank/skrell_fleet
