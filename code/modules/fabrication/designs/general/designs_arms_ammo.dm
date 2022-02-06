@@ -152,6 +152,10 @@
 	name = "Skrellian rifle cylinder (slug)"
 	path = /obj/item/weapon/magnetic_ammo/skrell/slug
 
+/datum/fabricator_recipe/arms_ammo/hidden/skrell_flechette
+	name = "skrellian flechette magazine"
+	path = /obj/item/ammo_magazine/skrell_shotgun
+
 /datum/fabricator_recipe/arms_ammo/hidden/lmg
 	name = "lmg box magazine (7mmR)"
 	path = /obj/item/ammo_magazine/box/machinegun

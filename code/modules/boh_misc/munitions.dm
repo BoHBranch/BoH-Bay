@@ -180,3 +180,37 @@
 	ammo_type = /obj/item/ammo_casing/sabot
 	matter = list(MATERIAL_STEEL = 1240)
 	marking_color = COLOR_GUNMETAL
+
+//Skrell QX2
+
+//magazine
+/obj/item/ammo_magazine/skrell_shotgun
+	name = "skrellian flechette magazine"
+	desc = "A magazine with pointy, alien flechettes inside"
+	icon = 'icons/boh/obj/ammo.dmi'
+	icon_state = "skrellflechettemag"
+	mag_type = MAGAZINE
+	caliber = CALIBER_SKRELL_SHOTGUN
+	ammo_type = /obj/item/ammo_casing/skrell_shotgun
+	matter = list(MATERIAL_STEEL = 1240)
+	max_ammo = 8
+	multiple_sprites = 1
+
+//projectile
+/obj/item/projectile/bullet/magnetic/skrell_flechette
+	name = "flechette"
+	icon_state = "flechette"
+	damage = 25
+	armor_penetration = 100
+	fire_sound = 'sound/weapons/rapidslice.ogg'
+	distance_falloff = 0.5
+
+//casing
+/obj/item/ammo_casing/skrell_shotgun
+	name = "skrellian flechette"
+	desc = "A pointy flechette of alien design"
+	icon = 'icons/boh/obj/ammo.dmi'
+	icon_state = "skrellflechette"
+	spent_icon = "skrellflechette-spent"
+	caliber = CALIBER_SKRELL_SHOTGUN
+	projectile_type = /obj/item/projectile/bullet/magnetic/skrell_flechette

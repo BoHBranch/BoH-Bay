@@ -13,6 +13,11 @@
 		empulse(A, heavy_effect_range, light_effect_range)
 		return 1
 
+/obj/item/projectile/ion/skrell
+	name = "ionic payload"
+	heavy_effect_range = 2
+	light_effect_range = 3
+
 /obj/item/projectile/ion/small
 	name = "ion pulse"
 	heavy_effect_range = 0

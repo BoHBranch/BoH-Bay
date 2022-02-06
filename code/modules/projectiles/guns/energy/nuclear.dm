@@ -19,7 +19,7 @@
 		)
 
 /obj/item/weapon/gun/energy/gun/skrell
-	name = "skrellian handgun"
+	name = "XV-5 handgun"
 	desc = "A common Skrellian side-arm, the Xuxquu*'Voom-5, or XV-5, is a more traditional energy weapon, tuned to dispense beams in three different wavelengths."
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
@@ -29,6 +29,7 @@
 	fire_delay = 6
 	one_hand_penalty = 1
 	self_recharge = 1
+	base_parry_chance = 20
 
 	projectile_type = /obj/item/projectile/beam/stun
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)

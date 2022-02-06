@@ -76,10 +76,12 @@
 /obj/item/clothing/head/helmet/space/proc/update_tint()
 	if(tinted)
 		icon_state = "[initial(icon_state)]_dark"
+		item_state = "[initial(item_state)]_dark"
 		flash_protection = FLASH_PROTECTION_MAJOR
 		flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	else
 		icon_state = initial(icon_state)
+		item_state = initial(item_state)
 		flash_protection = FLASH_PROTECTION_NONE
 		flags_inv = HIDEEARS|BLOCKHAIR
 	update_icon()

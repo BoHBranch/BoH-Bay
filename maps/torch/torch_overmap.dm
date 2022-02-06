@@ -67,6 +67,7 @@
 		"nav_ert_hanger",
 
 		"nav_skrellscoutsh_altdock",
+		"nav_skrellscout_dock",
 		"nav_ert_dock"
 	)
 
