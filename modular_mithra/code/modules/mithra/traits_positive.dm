@@ -6,7 +6,7 @@
 	name = "Agile"
 	desc = "You can move faster than everyone else."
 	cost = 4
-	var_changes = list("slowdown" = -0.5)
+	var_changes = list("slowdown" = -0.2) //No.
 
 /datum/trait/darksight
 	name = "Tapeta Lucida"
@@ -34,11 +34,13 @@
 		I.darksight_range = 6
 		I.darksight_tint = DARKTINT_GOOD
 
+/* Disabled Forever. If you attempt to re-implement this without consulting me, I will remove your github access. -Yawet330
 /datum/trait/nonconductive
 	name = "Resistive Skin"
 	desc = "Your skin has a higher electrical resistivity than normal, making you less conductive."
 	cost = 2 //This effects tasers!
 	var_changes = list("siemens_coefficient" = 0.75)
+*/ 
 
 /datum/trait/melee_attack
 	name = "Rending Claws"
@@ -90,7 +92,7 @@
 /////////////////////
 // BoH Materials
 /////////////////////
-
+/* Disabled forever. Read comment about electrical resistance.
 /datum/trait/commune
 	name = "Telepathy"
 	desc = "Quite simply, you've the ability to project thoughts into the minds of others. A weak psychic manifestation too minor to require action from the local authorities, unlikely to ever develop into something greater."
@@ -98,7 +100,7 @@
 /datum/trait/commune/apply(var/datum/species/S,var/mob/living/carbon/human/H)
 	..(S,H)
 	H.verbs |= /mob/living/carbon/human/proc/psychic_whisper
-
+*/
 /datum/trait/venom
 	name = "Venomous"
 	desc = "You've various methods of injecting venom when in unarmed combat."
