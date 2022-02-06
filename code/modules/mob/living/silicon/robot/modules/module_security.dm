@@ -55,6 +55,7 @@
 		/obj/item/device/megaphone,
 		/obj/item/device/holowarrant,
 		/obj/item/weapon/crowbar,
+		/obj/item/weapon/inflatable_dispenser/robot,
 		/obj/item/device/hailer
 	)
 	emag = /obj/item/weapon/gun/energy/laser/mounted
