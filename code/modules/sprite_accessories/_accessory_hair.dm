@@ -698,3 +698,16 @@
 	name = "Zieglertail"
 	icon_state = "hair_ziegler"
 	flags = HAIR_TIEABLE
+
+//New additions here for HESTIA.
+/datum/sprite_accessory/hair/business1
+	name = "Business Suave"
+	icon_state = "hair_business"
+
+/datum/sprite_accessory/hair/business2
+	name = "Business Debonair"
+	icon_state = "hair_business2"
+
+/datum/sprite_accessory/hair/business3
+	name = "Business Slick"
+	icon_state = "hair_business3"
