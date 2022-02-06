@@ -101,6 +101,9 @@
 	frequency = 1289;
 	id_tag = "xil_dock_pump"
 	},
+/obj/structure/handrai{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/dock)
 "bm" = (
@@ -356,6 +359,7 @@
 	frequency = 1290;
 	id_tag = "xil_air_pump_out_external"
 	},
+/obj/structure/handrai,
 /turf/simulated/floor/airless,
 /area/ship/skrellscoutship/maintenance/atmos)
 "ex" = (
@@ -419,7 +423,9 @@
 	dir = 9;
 	pixel_y = 0
 	},
-/obj/machinery/telecomms/allinone/skrellscoutship,
+/obj/machinery/telecomms/allinone/skrellscoutship{
+	outage_probability = 0
+	},
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/maintenance/power)
 "eM" = (
@@ -984,6 +990,9 @@
 /area/observatory/dock)
 "lc" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
+/obj/item/weapon/rpd,
+/obj/item/weapon/rpd,
+/obj/item/weapon/rpd,
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/maintenance/atmos)
 "le" = (
@@ -1081,7 +1090,7 @@
 /obj/machinery/door/blast/regular{
 	id_tag = "xil_sensors"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/airless,
 /area/ship/skrellscoutship/command/bridge)
 "mo" = (
 /obj/machinery/light/skrell{
@@ -1554,6 +1563,22 @@
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor/tiled/skrell,
 /area/observatory/dock)
+"sm" = (
+/obj/structure/table/rack/dark,
+/obj/item/rig_module/chem_dispenser/skrell/combat,
+/obj/item/rig_module/chem_dispenser/skrell/combat,
+/obj/item/rig_module/chem_dispenser/skrell/combat,
+/obj/item/rig_module/chem_dispenser/skrell/combat,
+/obj/item/rig_module/chem_dispenser/skrell/combat,
+/obj/item/rig_module/chem_dispenser/skrell/combat,
+/obj/item/rig_module/chem_dispenser/skrell,
+/obj/item/rig_module/chem_dispenser/skrell,
+/obj/item/rig_module/chem_dispenser/skrell,
+/obj/item/rig_module/chem_dispenser/skrell,
+/obj/item/rig_module/chem_dispenser/skrell,
+/obj/item/rig_module/chem_dispenser/skrell,
+/turf/simulated/floor/tiled/skrell/red,
+/area/observatory/dock)
 "sn" = (
 /obj/structure/ship_munition/disperser_charge/emp{
 	name = "Quxiim'Vali Payload"
@@ -1831,7 +1856,7 @@
 /obj/machinery/ion_engine{
 	dir = 8
 	},
-/turf/space,
+/turf/simulated/floor/airless,
 /area/ship/skrellscoutship/crew/medbay)
 "xd" = (
 /obj/machinery/door/airlock/external/glass{
@@ -1845,6 +1870,9 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	frequency = 1289;
 	id_tag = "xil_dock_pump_out_external"
+	},
+/obj/structure/handrai{
+	dir = 1
 	},
 /turf/simulated/floor/airless,
 /area/ship/skrellscoutship/command/armory)
@@ -1897,6 +1925,9 @@
 	frequency = 1289;
 	id_tag = "xil_dock_pump_out_external"
 	},
+/obj/structure/handrai{
+	dir = 1
+	},
 /turf/simulated/floor/airless,
 /area/ship/skrellscoutship/maintenance/power)
 "xz" = (
@@ -1933,6 +1964,9 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/structure/handrai{
+	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/dock)
@@ -2192,7 +2226,7 @@
 /obj/machinery/ion_engine{
 	dir = 8
 	},
-/turf/space,
+/turf/simulated/floor/airless,
 /area/ship/skrellscoutship/maintenance/power)
 "Aj" = (
 /obj/machinery/porta_turret/exterior/ssv,
@@ -2311,15 +2345,9 @@
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock)
 "BQ" = (
-/obj/effect/wallframe_spawn/reinforced_phoron,
-/obj/machinery/door/blast/regular/open{
-	dir = 2;
-	id_tag = "xil_reactor";
-	name = "Blast Doors"
-	},
-/obj/machinery/door/firedoor,
-/turf/space,
-/area/ship/skrellscoutship/maintenance/power)
+/obj/structure/table/rack/dark,
+/turf/simulated/floor/tiled/skrell/red,
+/area/observatory/dock)
 "BR" = (
 /obj/effect/paint/black,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
@@ -2356,6 +2384,13 @@
 /obj/item/device/binoculars,
 /obj/item/device/binoculars,
 /obj/item/device/binoculars,
+/obj/item/device/gps,
+/obj/item/device/gps,
+/obj/item/device/gps,
+/obj/item/device/gps,
+/obj/item/device/gps,
+/obj/item/device/gps,
+/obj/item/device/gps,
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/armory)
 "Cx" = (
@@ -2934,6 +2969,8 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
+/obj/item/stack/material/plastic/fifty,
+/obj/item/stack/material/aluminium/fifty,
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/armory)
 "Ik" = (
@@ -2970,7 +3007,7 @@
 	name = "Blast Doors"
 	},
 /obj/machinery/door/firedoor,
-/turf/space,
+/turf/simulated/floor/plating,
 /area/ship/skrellscoutship/maintenance/power)
 "Iw" = (
 /obj/structure/sign/warning/lethal_turrets,
@@ -3031,6 +3068,10 @@
 /obj/item/device/radio,
 /obj/item/device/radio,
 /obj/machinery/recharger,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/bridge)
 "Jr" = (
@@ -3483,6 +3524,22 @@
 /area/ship/skrellscoutship/maintenance/atmos)
 "Oc" = (
 /obj/structure/table/woodentable/ebony,
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
 /turf/simulated/floor/carpet/purple,
 /area/observatory/dock)
 "Om" = (
@@ -3948,6 +4005,7 @@
 	frequency = 1290;
 	id_tag = "xil_air_pump_out_external"
 	},
+/obj/structure/handrai,
 /turf/simulated/floor/airless,
 /area/ship/skrellscoutship/command/brig)
 "Ss" = (
@@ -4045,7 +4103,7 @@
 /obj/machinery/ion_engine{
 	dir = 8
 	},
-/turf/space,
+/turf/simulated/floor/airless,
 /area/ship/skrellscoutship/maintenance/atmos)
 "Tj" = (
 /obj/effect/paint/black,
@@ -4411,6 +4469,7 @@
 	},
 /obj/machinery/light/skrell,
 /obj/item/weapon/storage/box/bodybags,
+/obj/item/weapon/storage/box/bodybags,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
 "WZ" = (
@@ -4435,6 +4494,10 @@
 /obj/item/auto_cpr,
 /obj/item/auto_cpr,
 /obj/item/auto_cpr,
+/obj/item/bodybag/cryobag,
+/obj/item/bodybag/cryobag,
+/obj/item/bodybag/cryobag,
+/obj/item/bodybag/cryobag,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
 "Xc" = (
@@ -4583,7 +4646,7 @@
 	id_tag = "xil_sensors"
 	},
 /obj/machinery/shipsensors,
-/turf/simulated/floor/reinforced/airless,
+/turf/simulated/floor/airless,
 /area/ship/skrellscoutship/command/bridge)
 "YH" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan{
@@ -4635,6 +4698,67 @@
 	id_tag = "xil_cafe";
 	name = "Mess Hall Blast Doors";
 	pixel_y = -26
+	},
+/obj/structure/closet/crate/freezer,
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
 	},
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/rec)
@@ -4764,7 +4888,7 @@
 /obj/machinery/door/blast/regular{
 	id_tag = "xil_sensors"
 	},
-/turf/simulated/floor/reinforced/airless,
+/turf/simulated/floor/airless,
 /area/ship/skrellscoutship/command/bridge)
 
 (1,1,1) = {"
@@ -10228,7 +10352,7 @@ uk
 EK
 EK
 EK
-EK
+BQ
 UU
 Ud
 YW
@@ -10330,7 +10454,7 @@ dA
 EK
 EK
 EK
-EK
+sm
 UU
 Ud
 Ud
@@ -11457,9 +11581,9 @@ Tb
 OE
 ct
 ct
-BQ
+cI
 Ip
-BQ
+cI
 qY
 KI
 OJ
