@@ -213,7 +213,7 @@
 
 		else//Then fix wounds if they do it again.
 			for(var/datum/wound/W in affected.wounds)
-				if(W.damage < W.autoheal_cutoff) // Are they even damaged enough to suture?
+				if(W.damage) // Are they even damaged?
 					user.visible_message("<span class='notice'>[user] begins to suture up [H]'s wounds.")
 					playsound(src, 'sound/weapons/suture.ogg', 65, FALSE)
 					H.custom_pain("The pain in your [affected.name] is unbearable!",rand(50, 65),affecting = affected)
