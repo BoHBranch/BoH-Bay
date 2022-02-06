@@ -62,7 +62,7 @@
 	                    SKILL_FORENSICS   = SKILL_MAX)
 	alt_titles = list(
 		"Union Enforcer" = /decl/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/union,
-		"Executive Assistant",
+		"Corporate Assistant",
 		"Asset Protection Agent"
 	)
 	skill_points = 20
@@ -81,7 +81,7 @@
 	return FALSE
 
 /datum/job/bodyguard/get_description_blurb()
-	return "You are the Loss Prevention Associate. You are an employee of NT, specifically the Surveyor Corps branch, and your job is to prevent the loss of the Liason's life - even at the cost of your own. Good luck."
+	return "You are the Loss Prevention Associate. You are an employee of a recovering corporation, and your premier objective is to prevent the loss of the Liason's life - even at the cost of your own. Good luck."
 
 /datum/job/bodyguard/post_equip_rank(var/mob/person, var/alt_title)
 	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Loss Prevention Associate")]"]"
