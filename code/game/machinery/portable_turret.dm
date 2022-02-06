@@ -80,6 +80,7 @@
 /obj/machinery/porta_turret/ssv
 	name = "Anti-personnel battery"
 	desc = "A sleek, menacing turret of Skrellian origin."
+	use_power = 0 //Not optimal, but they lose power on each Z-level transfer. DM has forced my hand.
 	enabled = 1
 	ailock = 1
 	lethal = 1
@@ -103,6 +104,7 @@
 	id_tag = "skrurret"
 	name = "Anti-personnel battery"
 	desc = "A sleek, menacing turret of Skrellian origin."
+	use_power = 0 //Not optimal, but they lose power on each Z-level transfer. DM has forced my hand.
 	enabled = 1
 	ailock = 1
 	lethal = 1
