@@ -20,9 +20,9 @@
 
 	//machine pistol, easier to one-hand with
 	firemodes = list(
-		list(mode_name="semi auto",       burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
-		list(mode_name="4-round bursts", burst=4, fire_delay=null, move_delay=4,    one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1),       dispersion=list(0.0, 0.0, 0.5, 0.6)),
-		list(mode_name="long bursts",   burst=8, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
+		list(mode_name="semi auto", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
+		list(mode_name="4-round bursts", burst=4, fire_delay=null, move_delay=4, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.0, 0.5, 0.6)),
+		list(mode_name="long bursts", burst=8, fire_delay=null, move_delay=4, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
 // Full auto version.
