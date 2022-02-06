@@ -22,6 +22,7 @@
 	var/hide_from_reports = FALSE
 
 	var/has_distress_beacon
+	var/free_landing = FALSE
 
 /obj/effect/overmap/visitable/Initialize()
 	. = ..()

@@ -2,6 +2,8 @@
 	name = "exoplanet"
 	icon_state = "globe"
 	sector_flags = OVERMAP_SECTOR_KNOWN
+	free_landing = TRUE
+	
 	var/area/planetary_area
 	var/list/seeds = list()
 	var/list/animals = list()

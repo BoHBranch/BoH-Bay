@@ -83,6 +83,13 @@
 
 /obj/effect/shuttle_landmark/proc/shuttle_arrived(datum/shuttle/shuttle)
 
+/obj/effect/shuttle_landmark/proc/shuttle_departed(datum/shuttle/shuttle)
+
+// Used to trigger effects prior to the shuttle's actual landing
+/obj/effect/shuttle_landmark/proc/landmark_selected(datum/shuttle/shuttle)
+
+/obj/effect/shuttle_landmark/proc/landmark_deselected(datum/shuttle/shuttle)
+
 /proc/check_collision(area/target_area, list/target_turfs)
 	for(var/target_turf in target_turfs)
 		var/turf/target = target_turf
@@ -121,6 +128,28 @@
 	for(var/turf/T in range(radius, src))
 		if(T.density)
 			T.ChangeTurf(get_base_turf_by_area(T))
+
+//Used for custom landing locations. Self deletes after a shuttle leaves.
+/obj/effect/shuttle_landmark/temporary
+	name = "Landing Point"
+	landmark_tag = "landing"
+	flags = SLANDMARK_FLAG_AUTOSET
+
+/obj/effect/shuttle_landmark/temporary/Initialize()
+	landmark_tag += "-[random_id("landmarks",1,9999)]"
+	. = ..()
+
+/obj/effect/shuttle_landmark/temporary/Destroy()
+	SSshuttle.unregister_landmark(landmark_tag)
+	return ..()
+
+/obj/effect/shuttle_landmark/temporary/landmark_deselected(datum/shuttle/shuttle)
+	if(shuttle.moving_status != SHUTTLE_INTRANSIT && shuttle.current_location != src)
+		qdel(src)
+
+/obj/effect/shuttle_landmark/temporary/shuttle_departed(datum/shuttle/shuttle)
+	qdel(src)
+
 
 /obj/item/device/spaceflare
 	name = "bluespace flare"
