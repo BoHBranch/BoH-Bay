@@ -9101,7 +9101,7 @@
 	dir = 8;
 	icon_state = "closed";
 	id_tag = "PetrovAccess";
-	name = "Petrov Access"
+	name = "Polyp Access"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/infpolyp/hall)
@@ -11097,8 +11097,7 @@
 "tL" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
-	id_tag = null;
-	name = "Storage and Range"
+	name = "Old Storage and Range"
 	},
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -12585,8 +12584,7 @@
 "yP" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
-	id_tag = null;
-	name = "Analysis Lab"
+	name = "Medbay"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -13598,8 +13596,7 @@
 "CW" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
-	id_tag = null;
-	name = "Research Lab"
+	name = "Technician Prep"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -13903,8 +13900,7 @@
 "Ed" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
-	id_tag = null;
-	name = "Equipment Storage"
+	name = "Old Equipment Storage"
 	},
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -14765,8 +14761,7 @@
 "HZ" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
-	id_tag = null;
-	name = "Suit Storage"
+	name = "Old Suit Storage"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -16210,8 +16205,7 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "Of" = (
 /obj/machinery/door/airlock/research{
-	id_tag = null;
-	name = "Custodial Closet"
+	name = "Old Custodial Closet"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -16296,8 +16290,7 @@
 "OD" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
-	id_tag = null;
-	name = "Isolation Chambers"
+	name = "Common Room"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/cyan{
