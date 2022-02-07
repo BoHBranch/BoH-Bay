@@ -61,14 +61,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fifthdeck/aftstarboard)
 "aj" = (
-/obj/structure/window/phoronreinforced{
-	dir = 4
-	},
-/obj/structure/window/phoronreinforced{
-	dir = 8
-	},
-/obj/machinery/portable_atmospherics/canister/air,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/misc)
 "ak" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
@@ -119,27 +112,23 @@
 /turf/simulated/wall/titanium,
 /area/guppy_hangar/start)
 "ap" = (
-/obj/machinery/door/airlock/research{
-	name = "Canister Storage"
-	},
-/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
+/obj/machinery/door/window/eastleft,
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 1;
+	health = 1e+006
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/misc)
 "aq" = (
-/obj/structure/window/phoronreinforced{
-	dir = 4
-	},
-/obj/structure/window/phoronreinforced{
-	dir = 8
-	},
-/obj/machinery/portable_atmospherics/canister/phoron,
-/turf/simulated/floor/reinforced,
+/obj/effect/floor_decal/techfloor,
+/turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/misc)
 "ar" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -229,24 +218,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fifthdeck/aftstarboard)
 "ax" = (
-/obj/structure/window/phoronreinforced{
-	dir = 8
+/obj/effect/floor_decal/techfloor{
+	dir = 6
 	},
-/obj/structure/window/phoronreinforced{
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/floor/reinforced,
-/area/shuttle/infpolyp/misc)
-"ay" = (
-/obj/structure/window/phoronreinforced{
-	dir = 8
-	},
-/obj/structure/window/phoronreinforced{
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/misc)
 "az" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -3988,10 +3963,10 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "gZ" = (
 /obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced_phoron/titanium,
 /obj/effect/paint/silver,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/reinforced,
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "hb" = (
 /obj/structure/disposalpipe/segment{
@@ -9732,6 +9707,9 @@
 "qX" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/table/standard,
+/obj/item/weapon/handcuffs/cable/pink,
+/obj/item/weapon/handcuffs/cable/pink,
+/obj/item/weapon/handcuffs/cable/pink,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/cell)
 "qY" = (
@@ -9828,8 +9806,7 @@
 "rg" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
-	id_tag = null;
-	name = "Heavy Containment"
+	name = "Holding Cell"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -9850,8 +9827,9 @@
 /area/shuttle/infpolyp/cell)
 "ri" = (
 /obj/effect/floor_decal/industrial/warning,
-/obj/structure/table/standard,
-/obj/item/weapon/handcuffs/cable/pink,
+/obj/structure/closet/secure_closet{
+	req_access = list("ACCESS_INFANTRY")
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/cell)
 "rj" = (
@@ -9866,9 +9844,9 @@
 /turf/simulated/wall/prepainted,
 /area/maintenance/fifthdeck/aftport)
 "rk" = (
-/obj/effect/wallframe_spawn/reinforced_phoron/titanium,
 /obj/machinery/door/firedoor,
 /obj/effect/paint/silver,
+/obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/reinforced,
 /area/shuttle/infpolyp/cell)
 "rl" = (
@@ -9958,20 +9936,7 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/cell)
-"ru" = (
-/obj/structure/handrai{
-	dir = 4;
-	icon_state = "handrail"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/shuttle/infpolyp/misc)
 "rv" = (
-/obj/machinery/alarm{
-	alarm_id = "misc_research";
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 24
-	},
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
@@ -9985,19 +9950,13 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/misc)
 "rw" = (
-/obj/machinery/alarm{
-	alarm_id = "petrov2";
-	frequency = 1439;
-	pixel_y = 23;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
+/turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/misc)
 "rz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -10014,12 +9973,12 @@
 	dir = 1;
 	health = 1e+006
 	},
-/obj/machinery/door/window/eastleft,
 /obj/effect/floor_decal/industrial/outline/blue,
 /obj/structure/table/reinforced,
 /obj/effect/floor_decal/techfloor{
 	dir = 1
 	},
+/obj/machinery/door/window/eastright,
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/misc)
 "rB" = (
@@ -10029,21 +9988,18 @@
 /obj/structure/window/phoronreinforced{
 	dir = 8
 	},
-/obj/machinery/portable_atmospherics/canister/phoron,
 /obj/machinery/light,
-/turf/simulated/floor/reinforced,
+/obj/item/target/syndicate,
+/obj/item/target/syndicate,
+/obj/item/target/syndicate,
+/obj/structure/closet/crate,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/misc)
 "rC" = (
-/obj/structure/window/phoronreinforced{
-	dir = 8
-	},
-/obj/structure/window/phoronreinforced{
-	dir = 4
-	},
-/obj/machinery/light,
-/obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/reinforced,
-/area/shuttle/infpolyp/misc)
+/obj/effect/paint/black,
+/obj/structure/sign/solgov,
+/turf/simulated/wall/titanium,
+/area/shuttle/infpolyp/med)
 "rD" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -10066,10 +10022,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/substation/fifthdeck)
 "rH" = (
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
-	},
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
@@ -10232,11 +10184,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/misc)
 "rV" = (
-/obj/structure/closet/crate,
-/obj/item/target/alien,
-/obj/item/target/alien,
-/obj/item/target/syndicate,
-/obj/item/target/syndicate,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
@@ -10246,7 +10193,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
+/obj/effect/floor_decal/techfloor{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/misc)
 "rY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -10336,10 +10286,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fifthdeck/aftstarboard)
 "se" = (
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = 26
-	},
 /obj/machinery/power/apc{
 	dir = 1;
 	name = "north bump";
@@ -10354,6 +10300,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
+/obj/structure/target_stake,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/misc)
 "sf" = (
@@ -10371,10 +10318,16 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/misc)
 "sg" = (
-/obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced_phoron/titanium,
-/obj/effect/paint/black,
-/turf/simulated/floor/reinforced,
+/obj/machinery/door/window/eastright{
+	name = "range access"
+	},
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 2;
+	health = 1e+007
+	},
+/obj/effect/floor_decal/techfloor,
+/turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/misc)
 "sh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -10451,7 +10404,7 @@
 "sn" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/weapon/tape_roll,
-/obj/item/weapon/gun/energy/laser/broken,
+/obj/item/weapon/gun/energy/laser/practice,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/misc)
 "so" = (
@@ -10502,10 +10455,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/misc)
 "su" = (
-/obj/structure/handrai{
-	dir = 8;
-	icon_state = "handrail"
-	},
 /obj/structure/target_stake,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/misc)
@@ -10517,10 +10466,6 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
-	},
-/obj/structure/handrai{
-	dir = 8;
-	icon_state = "handrail"
 	},
 /obj/structure/target_stake,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -10553,15 +10498,18 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftstarboard)
 "sB" = (
-/obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced_phoron/titanium,
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/effect/paint/black,
-/turf/simulated/floor/reinforced,
+/obj/machinery/alarm{
+	alarm_id = "misc_research";
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/misc)
 "sC" = (
 /obj/structure/cable/green{
@@ -10584,6 +10532,12 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/infpolyp)
+"sE" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/infpolyp)
 "sF" = (
 /obj/machinery/alarm{
 	frequency = 1439;
@@ -10593,11 +10547,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/effect/floor_decal/techfloor{
-	dir = 9;
-	icon_state = "techfloor_edges"
-	},
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/misc)
 "sG" = (
 /obj/machinery/light{
@@ -10607,10 +10557,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/effect/floor_decal/techfloor{
-	dir = 5
-	},
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/misc)
 "sH" = (
 /obj/machinery/light{
@@ -10655,6 +10602,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/misc)
 "sM" = (
+/obj/structure/handrai{
+	dir = 4;
+	icon_state = "handrail"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/misc)
 "sO" = (
@@ -10901,6 +10852,7 @@
 	dir = 1;
 	level = 2
 	},
+/obj/item/weapon/gun/energy/laser/practice,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/shuttle/infpolyp/misc)
 "tr" = (
@@ -11103,7 +11055,7 @@
 "tL" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
-	name = "Old Storage and Range"
+	name = "Canister Storage and Range"
 	},
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -11607,8 +11559,6 @@
 	pixel_x = -24;
 	pixel_y = 0
 	},
-/obj/structure/table/standard,
-/obj/item/weapon/handcuffs/cable/pink,
 /obj/effect/floor_decal/techfloor,
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/cell)
@@ -11689,6 +11639,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"vi" = (
+/obj/effect/paint/black,
+/obj/structure/sign/solgov,
+/turf/simulated/wall/titanium,
+/area/shuttle/infpolyp/com/office)
 "vj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
@@ -11994,12 +11949,6 @@
 	},
 /turf/simulated/floor/lino,
 /area/shuttle/infpolyp/com)
-"wv" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/shuttle/infpolyp)
 "wx" = (
 /obj/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -12295,6 +12244,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"xM" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/infpolyp/misc)
 "xN" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -12312,10 +12267,10 @@
 /area/shuttle/infpolyp/com/office)
 "xO" = (
 /obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced_phoron/titanium,
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
 /obj/effect/paint/silver,
-/turf/simulated/floor/reinforced,
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "xS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
@@ -12360,12 +12315,6 @@
 /obj/random/junk,
 /turf/simulated/floor/tiled/old_tile,
 /area/shuttle/infpolyp/misc)
-"yc" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/turf/simulated/floor/reinforced/airless,
-/area/shuttle/infpolyp/armory)
 "yd" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/titanium,
@@ -12374,6 +12323,9 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"yg" = (
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/infpolyp/misc)
 "yi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -12414,6 +12366,11 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/infpolyp/hall)
+"ym" = (
+/obj/effect/paint/black,
+/obj/structure/sign/warning/deathsposal,
+/turf/simulated/wall/ocp_wall,
+/area/shuttle/infpolyp/cell)
 "yr" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -12679,7 +12636,7 @@
 /obj/effect/landmark/start{
 	name = "Rifleman"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "zk" = (
 /obj/structure/cable/cyan{
@@ -12695,7 +12652,7 @@
 /obj/effect/landmark/start{
 	name = "Rifleman"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "zl" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
@@ -12704,11 +12661,6 @@
 /area/shuttle/infpolyp/tech)
 "zm" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
-/obj/machinery/button/ignition{
-	id_tag = "Isocell1";
-	pixel_x = -36;
-	pixel_y = -25
-	},
 /obj/structure/dogbed,
 /obj/random/plushie,
 /mob/living/simple_animal/corgi/Lisa,
@@ -12984,14 +12936,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/infpolyp/hall)
-"At" = (
-/obj/machinery/sparker{
-	id_tag = "Isocell2";
-	pixel_x = -18
-	},
-/obj/structure/closet/secure_closet/infantry,
-/turf/simulated/floor/reinforced,
-/area/shuttle/infpolyp/bunk)
 "Ay" = (
 /obj/structure/catwalk,
 /obj/machinery/power/apc{
@@ -13048,13 +12992,6 @@
 	},
 /turf/simulated/floor/lino,
 /area/shuttle/infpolyp/com)
-"AP" = (
-/obj/machinery/sparker{
-	id_tag = "Isocell3";
-	pixel_x = -18
-	},
-/turf/simulated/floor/reinforced,
-/area/shuttle/infpolyp/bunk)
 "AS" = (
 /obj/structure/table/glass,
 /obj/machinery/button/blast_door{
@@ -13085,6 +13022,13 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"AW" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 9;
+	icon_state = "techfloor_edges"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/infpolyp)
 "AY" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -13182,7 +13126,7 @@
 /obj/effect/landmark/start{
 	name = "Rifleman"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "Bo" = (
 /obj/structure/cable/cyan{
@@ -13373,6 +13317,19 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/shuttle/infpolyp/misc)
+"BV" = (
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 8
+	},
+/obj/item/target,
+/obj/item/target,
+/obj/item/target,
+/obj/structure/closet/crate,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/shuttle/infpolyp/misc)
 "BX" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -13405,6 +13362,13 @@
 /obj/effect/floor_decal/techfloor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
+"Cg" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 1;
+	icon_state = "techfloor_edges"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/infpolyp/misc)
 "Ch" = (
 /obj/structure/window/reinforced{
 	dir = 1;
@@ -13699,14 +13663,14 @@
 	dir = 1
 	},
 /obj/structure/closet/secure_closet/infantry,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "Di" = (
 /obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced_phoron/titanium,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/paint/silver,
-/turf/simulated/floor/reinforced,
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "Dl" = (
 /obj/structure/table/steel,
@@ -13803,7 +13767,7 @@
 /obj/machinery/door/airlock/sol{
 	name = "Infantry Barracks"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "DE" = (
 /obj/machinery/camera/network/nanotrasen{
@@ -13828,11 +13792,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
-	},
-/obj/machinery/button/ignition{
-	id_tag = "Isocell3";
-	pixel_x = -6;
-	pixel_y = -25
 	},
 /obj/effect/floor_decal/techfloor{
 	dir = 8;
@@ -13877,11 +13836,6 @@
 	dir = 4
 	},
 /obj/machinery/light,
-/obj/machinery/button/ignition{
-	id_tag = "Isocell2";
-	pixel_x = -6;
-	pixel_y = -25
-	},
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp)
 "DQ" = (
@@ -13894,12 +13848,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/infpolyp/misc)
-"DX" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/shuttle/infpolyp)
 "DZ" = (
 /obj/structure/bed/chair/office/light,
 /obj/effect/landmark/start{
@@ -14056,7 +14004,7 @@
 /area/quartermaster/hangar)
 "ED" = (
 /obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "EH" = (
 /obj/machinery/suit_storage_unit/science,
@@ -14087,8 +14035,6 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/structure/table/standard,
-/obj/item/weapon/handcuffs/cable/pink,
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/cell)
 "EK" = (
@@ -14160,13 +14106,6 @@
 "Fk" = (
 /turf/simulated/wall/prepainted,
 /area/hallway/primary/fifthdeck/aft)
-"Fl" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 9;
-	icon_state = "techfloor_edges"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/shuttle/infpolyp)
 "Fn" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -14198,7 +14137,7 @@
 	dir = 8
 	},
 /obj/structure/closet/secure_closet/infantry,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "FB" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -14222,7 +14161,7 @@
 /obj/effect/landmark/start{
 	name = "Rifleman"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "FR" = (
 /obj/random/junk,
@@ -14277,7 +14216,7 @@
 /obj/machinery/door/airlock/sol{
 	name = "Technician Barracks"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "Gc" = (
 /obj/structure/window/reinforced{
@@ -14355,9 +14294,9 @@
 /area/quartermaster/hangar)
 "Gx" = (
 /obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced_phoron/titanium,
 /obj/effect/paint/silver,
-/turf/simulated/floor/reinforced,
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "Gy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -14390,25 +14329,12 @@
 	},
 /turf/simulated/floor/tiled/old_tile,
 /area/shuttle/infpolyp/misc)
-"GD" = (
-/obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/machinery/door/blast/regular{
-	density = 0;
-	icon_state = "pdoor0";
-	id_tag = "PetrovShield";
-	name = "Polyp Blast Shutters";
-	opacity = 0
-	},
-/obj/effect/paint/black,
-/turf/simulated/floor/plating,
-/area/shuttle/infpolyp/misc)
 "GG" = (
 /obj/structure/bed,
 /obj/effect/landmark/start{
 	name = "Rifleman"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "GK" = (
 /obj/machinery/power/apc{
@@ -14426,17 +14352,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/armory)
-"GL" = (
-/obj/effect/floor_decal/techfloor/corner{
-	dir = 1;
-	icon_state = "techfloor_corners"
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/shuttle/infpolyp/misc)
 "GM" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/table/rack/shelf/steel,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "GO" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -14891,12 +14810,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cargo)
-"Ip" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/shuttle/infpolyp/misc)
 "Iu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -15311,12 +15224,8 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "Kb" = (
-/obj/machinery/sparker{
-	id_tag = "Isocell1";
-	pixel_x = -18
-	},
 /obj/structure/closet/secure_closet/infantry,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "Kc" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -15507,7 +15416,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "KQ" = (
 /obj/machinery/light{
@@ -15678,7 +15587,7 @@
 	pixel_x = 24
 	},
 /obj/structure/bed,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "LA" = (
 /obj/effect/paint/black,
@@ -15856,7 +15765,7 @@
 	pixel_x = -24
 	},
 /obj/structure/closet/secure_closet/infantry,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "Mr" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -15947,6 +15856,19 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/infpolyp/com/cockpit)
+"ME" = (
+/obj/structure/window/phoronreinforced{
+	dir = 8
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
+/obj/item/target/alien,
+/obj/item/target/alien,
+/obj/item/target/alien,
+/obj/structure/closet/crate,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/shuttle/infpolyp/misc)
 "MG" = (
 /obj/item/weapon/stool/bar,
 /turf/simulated/floor/wood/walnut,
@@ -16000,6 +15922,11 @@
 /obj/machinery/portable_atmospherics/canister/empty/oxygen,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftstarboard)
+"Nc" = (
+/obj/effect/paint/red,
+/obj/structure/sign/solgov,
+/turf/simulated/wall/titanium,
+/area/shuttle/infpolyp)
 "Ne" = (
 /turf/simulated/floor/wood/walnut,
 /area/vacant/bar)
@@ -16071,7 +15998,7 @@
 	dir = 8
 	},
 /obj/structure/closet/secure_closet/infantry,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "Nu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -16120,6 +16047,12 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/random/obstruction,
 /turf/simulated/floor/tiled/white/monotile,
+/area/shuttle/infpolyp/misc)
+"Nz" = (
+/obj/machinery/door/window/eastright{
+	name = "range access"
+	},
+/turf/simulated/floor/tiled/techfloor,
 /area/shuttle/infpolyp/misc)
 "NC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -16213,6 +16146,11 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/infpolyp/tech)
+"NZ" = (
+/obj/effect/paint/black,
+/obj/structure/sign/solgov,
+/turf/simulated/wall/titanium,
+/area/shuttle/infpolyp/com)
 "Od" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/cyan{
@@ -16446,6 +16384,12 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/shuttle/infpolyp/med)
+"Pl" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/infpolyp/misc)
 "Pm" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -16665,8 +16609,14 @@
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/table/standard,
 /obj/machinery/recharger,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
+"Qs" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor/reinforced/airless,
+/area/shuttle/infpolyp/armory)
 "Qz" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -16908,6 +16858,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/expedition/atmos)
+"RC" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 8
+	},
+/obj/effect/floor_decal/techfloor{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/shuttle/infpolyp)
 "RE" = (
 /obj/machinery/suit_storage_unit/science,
 /obj/machinery/newscaster{
@@ -16925,13 +16884,19 @@
 /obj/machinery/door/airlock/sol{
 	name = "Infantry Barracks"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "RN" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack/shelf/steel,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/infpolyp/med)
+"RT" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/infpolyp)
 "RU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
@@ -17115,7 +17080,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "SJ" = (
 /obj/structure/disposalpipe/segment{
@@ -17186,7 +17151,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "SV" = (
 /obj/machinery/atmospherics/valve/shutoff{
@@ -17239,6 +17204,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"Tp" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/shuttle/infpolyp)
 "Ts" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -17392,7 +17363,7 @@
 	dir = 1;
 	icon_state = "map_scrubber_off"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "TP" = (
 /obj/effect/floor_decal/corner/brown{
@@ -17532,12 +17503,6 @@
 /obj/effect/floor_decal/carpet/red,
 /turf/simulated/floor/carpet/red,
 /area/shuttle/infpolyp/com)
-"UD" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 5
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/shuttle/infpolyp)
 "UE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/cyan{
@@ -17730,7 +17695,7 @@
 	dir = 1
 	},
 /obj/structure/bed,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "Vz" = (
 /obj/structure/ladder/up,
@@ -17921,6 +17886,19 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"Wj" = (
+/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced/titanium,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id_tag = "PetrovShield";
+	name = "Polyp Blast Shutters";
+	opacity = 0
+	},
+/obj/effect/paint/black,
+/turf/simulated/floor/plating,
+/area/shuttle/infpolyp/misc)
 "Wl" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/titanium,
@@ -18017,7 +17995,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/infpolyp/tech)
 "WR" = (
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "WU" = (
 /turf/simulated/wall/prepainted,
@@ -18071,6 +18049,11 @@
 "Xi" = (
 /turf/simulated/floor/reinforced/airless,
 /area/space)
+"Xj" = (
+/obj/effect/paint/black,
+/obj/structure/sign/solgov,
+/turf/simulated/wall/titanium,
+/area/shuttle/infpolyp/hall)
 "Xk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -18173,6 +18156,11 @@
 /obj/structure/sign/warning/compressed_gas,
 /turf/simulated/wall/prepainted,
 /area/hallway/primary/fifthdeck/aft)
+"XF" = (
+/obj/effect/paint/red,
+/obj/structure/sign/solgov,
+/turf/simulated/wall/titanium,
+/area/shuttle/infpolyp/misc)
 "XH" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -18687,7 +18675,7 @@
 /obj/item/clothing/mask/gas/half,
 /obj/item/clothing/mask/gas/half,
 /obj/item/clothing/mask/gas/half,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/tiled/techmaint,
 /area/shuttle/infpolyp/bunk)
 "ZA" = (
 /turf/simulated/wall/r_wall/prepainted,
@@ -18736,15 +18724,6 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/fifthdeck/aft)
-"ZP" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 8
-	},
-/obj/effect/floor_decal/techfloor{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/shuttle/infpolyp)
 "ZQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor,
@@ -42534,11 +42513,11 @@ bP
 bP
 bP
 aa
-Al
+Xj
 Al
 bl
 bs
-Al
+Xj
 aa
 Fx
 pl
@@ -43537,7 +43516,7 @@ eo
 ZG
 ZG
 aa
-bP
+vi
 bP
 bP
 LC
@@ -43555,7 +43534,7 @@ yd
 yd
 yd
 yd
-yd
+NZ
 aa
 ws
 ws
@@ -45778,7 +45757,7 @@ qO
 qO
 qO
 qO
-qO
+ym
 qO
 aa
 aa
@@ -46969,7 +46948,7 @@ aa
 aa
 aa
 aa
-Mm
+rC
 Mm
 Mm
 Mm
@@ -47373,7 +47352,7 @@ aa
 aa
 aa
 aa
-yc
+Qs
 oT
 UF
 xV
@@ -47575,7 +47554,7 @@ aa
 aa
 aa
 aa
-yc
+Qs
 oT
 Bx
 Oz
@@ -47797,7 +47776,7 @@ VD
 gZ
 Dh
 Fy
-At
+Kb
 Zy
 Sb
 aa
@@ -47993,8 +47972,8 @@ TR
 Bg
 Wl
 Ur
-UD
-wv
+RT
+Tp
 Bs
 RG
 TO
@@ -48196,7 +48175,7 @@ Xd
 Wl
 Bu
 CV
-ZP
+RC
 fE
 Gx
 GG
@@ -48384,7 +48363,7 @@ aa
 aa
 aa
 Yr
-GD
+Wj
 xY
 GB
 VU
@@ -48398,7 +48377,7 @@ NW
 Wl
 Wl
 yU
-Fl
+AW
 DG
 Qm
 Qm
@@ -48586,7 +48565,7 @@ aa
 aa
 aa
 Yr
-GD
+Wj
 EH
 NC
 VO
@@ -48594,18 +48573,18 @@ NW
 sn
 sL
 sM
-ru
+sM
 rJ
 tN
 sH
 Wl
 YZ
-DX
+sE
 JH
 zp
 Di
 Vy
-AP
+WR
 GM
 Sb
 aa
@@ -48788,7 +48767,7 @@ aa
 aa
 aa
 Yr
-GD
+Wj
 EH
 Ik
 Kw
@@ -48998,15 +48977,15 @@ NW
 st
 rA
 rI
-rr
+Nz
 ap
 sg
 rr
 Wl
 NX
 NG
-wv
-wv
+Tp
+Tp
 Gx
 Lv
 WR
@@ -49198,9 +49177,9 @@ Of
 NW
 NW
 sF
-GL
+Cg
 rH
-rr
+yg
 rw
 aq
 rB
@@ -49400,12 +49379,12 @@ Kk
 tM
 NW
 sG
-Ip
+xM
 sf
-rr
+Pl
 rX
 ax
-ax
+ME
 Rt
 Wl
 Wl
@@ -49607,7 +49586,7 @@ sv
 sB
 tK
 aj
-aj
+BV
 Rt
 Wl
 Wl
@@ -49808,8 +49787,8 @@ rr
 rr
 rr
 se
-ay
-rC
+su
+rr
 Rt
 Wl
 Wl
@@ -49999,7 +49978,7 @@ aa
 aa
 aa
 aa
-DQ
+XF
 DQ
 BT
 BT
@@ -50021,7 +50000,7 @@ vt
 vt
 vt
 fF
-fF
+Nc
 aa
 aa
 aa
