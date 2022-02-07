@@ -101,13 +101,13 @@
 	return FALSE
 
 // The visual net is responsible for adding/removing eyes.
-/datum/chunk/proc/add_eye(mob/observer/eye/eye)
+/datum/chunk/proc/add_eye(mob/observer/eye/freelook/eye)
 	seenby += eye
 	eye.visibleChunks += src
 	if(eye.owner && eye.owner.client)
 		eye.owner.client.images += obscured
 
-/datum/chunk/proc/remove_eye(mob/observer/eye/eye)
+/datum/chunk/proc/remove_eye(mob/observer/eye/freelook/eye)
 	seenby -= eye
 	eye.visibleChunks -= src
 	if(eye.owner && eye.owner.client)
@@ -153,7 +153,7 @@
 			var/image/obfuscation_image = obfuscation.get_obfuscation(t)
 			obscured -= obfuscation_image
 			for(var/eye in seenby)
-				var/mob/observer/eye/m = eye
+				var/mob/observer/eye/freelook/m = eye
 				if(m && m.owner && m.owner.client)
 					m.owner.client.images -= obfuscation_image
 
@@ -163,7 +163,7 @@
 			var/image/obfuscation_image = obfuscation.get_obfuscation(t)
 			obscured += obfuscation_image
 			for(var/eye in seenby)
-				var/mob/observer/eye/m = eye
+				var/mob/observer/eye/freelook/m = eye
 				if(m && m.owner && m.owner.client)
 					m.owner.client.images += obfuscation_image
 
