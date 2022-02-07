@@ -1804,6 +1804,82 @@
 	icon_state = "Sleep"
 	req_access = list(access_infantry)
 
+/////////
+//SGTS Polyp (Infantry)
+/////////
+
+/area/shuttle/infpolyp
+	name = "\improper SGTS Polyp - Infantry Prep"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "infcommon"
+	sound_env = MEDIUM_SOFTFLOOR
+	req_access = list(access_infantry)
+
+/area/shuttle/infpolyp/tech
+	name = "\improper SGTS Polyp - Technician Prep"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "inftech"
+//	req_access = list(access_inftech, access_infmed)
+
+/area/shuttle/infpolyp/com
+	name = "\improper SGTS Polyp - Squad Leader Prep"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "infcom"
+	req_access = list(access_infcom)
+
+/area/shuttle/infpolyp/com/cockpit
+	name = "\improper SGTS Polyp - Cockpit"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "infcom"
+	req_access = list(access_infcom)
+
+/area/shuttle/infpolyp/com/office
+	name = "\improper SGTS Polyp - Security Office"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "infcom"
+	req_access = list(access_infcom)
+
+/area/shuttle/infpolyp/armory
+	name = "\improper SGTS Polyp - Infantry Hard Storage"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "infcom"
+	req_access = list(access_infcom)
+
+/area/shuttle/infpolyp/bunk
+	name = "\improper SGTS Polyp - Infantry Barracks"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "infcrew"
+	req_access = list(access_infantry)
+
+/area/shuttle/infpolyp/misc
+	name = "\improper SGTS Polyp - Old Rooms"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "infmisc"
+	req_access = list(access_infantry)
+
+/area/shuttle/infpolyp/hall
+	name = "\improper SGTS Polyp - Hallway"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "infmisc"
+	req_access = list(access_infantry)
+
+/area/shuttle/infpolyp/maint
+	name = "\improper SGTS Polyp - Maintenance"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "inftech"
+	req_access = list(access_infantry)
+
+/area/shuttle/infpolyp/med
+	name = "\improper SGTS Polyp - Medbay"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "infmed"
+	req_access = list(access_infantry)
+
+/area/shuttle/infpolyp/cell
+	name = "\improper SGTS Polyp - Holding Cell"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "infcell"
+	req_access = list(access_infantry)
 
 /////////
 // Anom
