@@ -8491,7 +8491,7 @@
 	name = "Polyp Blast Shutters";
 	opacity = 0
 	},
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/med)
 "oL" = (
@@ -8588,7 +8588,7 @@
 	name = "Polyp Blast Shutters";
 	opacity = 0
 	},
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/misc)
 "oU" = (
@@ -8610,7 +8610,7 @@
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "rcheckinner_windows"
 	},
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/com/office)
 "oW" = (
@@ -8699,7 +8699,7 @@
 	name = "Polyp Blast Shutters";
 	opacity = 0
 	},
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/com/office)
 "pe" = (
@@ -8776,7 +8776,7 @@
 	name = "Polyp Blast Shutters";
 	opacity = 0
 	},
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/com/cockpit)
 "pj" = (
@@ -8789,7 +8789,7 @@
 	name = "Polyp Blast Shutters";
 	opacity = 0
 	},
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/com/cockpit)
 "pl" = (
@@ -8803,7 +8803,7 @@
 	name = "Polyp Blast Shutters";
 	opacity = 0
 	},
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/com/cockpit)
 "pm" = (
@@ -8925,7 +8925,7 @@
 	name = "Polyp Blast Shutters";
 	opacity = 0
 	},
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/tech)
 "pz" = (
@@ -10371,6 +10371,7 @@
 "sg" = (
 /obj/machinery/door/firedoor,
 /obj/effect/wallframe_spawn/reinforced_phoron/titanium,
+/obj/effect/paint/black,
 /turf/simulated/floor/reinforced,
 /area/shuttle/infpolyp/misc)
 "sh" = (
@@ -10556,12 +10557,12 @@
 "sB" = (
 /obj/machinery/door/firedoor,
 /obj/effect/wallframe_spawn/reinforced_phoron/titanium,
-/obj/effect/paint/silver,
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/effect/paint/black,
 /turf/simulated/floor/reinforced,
 /area/shuttle/infpolyp/misc)
 "sC" = (
@@ -12002,13 +12003,13 @@
 /obj/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/light_construct{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/old_tile,
 /area/shuttle/infpolyp/misc)
@@ -12038,7 +12039,7 @@
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "rd_windows"
 	},
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/armory)
 "wD" = (
@@ -12165,10 +12166,10 @@
 	dir = 4;
 	pixel_x = -21
 	},
-/obj/machinery/light{
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light_construct{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/infpolyp/misc)
 "wZ" = (
@@ -12364,6 +12365,7 @@
 "xY" = (
 /obj/structure/closet/toolcloset/excavation,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/random/junk,
 /turf/simulated/floor/tiled/old_tile,
 /area/shuttle/infpolyp/misc)
 "yd" = (
@@ -12621,6 +12623,7 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "yR" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/misc)
 "yU" = (
@@ -12694,7 +12697,7 @@
 /area/shuttle/infpolyp/bunk)
 "zl" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/tech)
 "zm" = (
@@ -12845,9 +12848,6 @@
 	pixel_x = -24;
 	pixel_y = 0
 	},
-/obj/machinery/light{
-	dir = 8
-	},
 /obj/structure/cable/cyan{
 	d2 = 2;
 	dir = 1;
@@ -12860,6 +12860,9 @@
 	pixel_y = 24
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light_construct{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/infpolyp/misc)
 "Ag" = (
@@ -13241,6 +13244,7 @@
 /area/shuttle/infpolyp)
 "Bx" = (
 /obj/structure/closet/l3closet/scientist,
+/obj/random/junk,
 /turf/simulated/floor/tiled/old_cargo,
 /area/shuttle/infpolyp/misc)
 "By" = (
@@ -13580,7 +13584,7 @@
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "rd_windows"
 	},
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/com)
 "CU" = (
@@ -13804,10 +13808,6 @@
 	c_tag = "Petrov - EVA";
 	dir = 4
 	},
-/obj/machinery/light_switch{
-	pixel_x = -24;
-	pixel_y = 12
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1;
 	level = 2
@@ -13817,6 +13817,7 @@
 /obj/item/stack/flag/red,
 /obj/item/stack/flag/red,
 /obj/effect/decal/cleanable/dirt,
+/obj/random/trash,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/infpolyp/misc)
 "DG" = (
@@ -13896,7 +13897,7 @@
 "Ec" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp)
 "Ed" = (
@@ -13953,6 +13954,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
+/obj/random/trash,
 /turf/simulated/floor/tiled/old_tile,
 /area/shuttle/infpolyp/misc)
 "Ep" = (
@@ -15194,7 +15196,7 @@
 "JP" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp)
 "JS" = (
@@ -15338,10 +15340,11 @@
 "Kr" = (
 /obj/structure/closet/secure_closet/scientist_torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/light{
+/obj/effect/decal/cleanable/dirt,
+/obj/random/junk,
+/obj/machinery/light_construct{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/infpolyp/misc)
 "Kt" = (
@@ -15704,12 +15707,12 @@
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "rd_windows"
 	},
-/obj/effect/paint/silver,
 /obj/machinery/door/blast/shutters{
 	dir = 2;
 	id_tag = "sl_office";
 	name = "SL Office Shutters"
 	},
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/armory)
 "LX" = (
@@ -15880,6 +15883,7 @@
 	},
 /obj/item/clothing/mask/gas,
 /obj/item/clothing/mask/gas,
+/obj/random/junk,
 /turf/simulated/floor/tiled/old_tile,
 /area/shuttle/infpolyp/misc)
 "Mz" = (
@@ -15890,6 +15894,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/random/junk,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/infpolyp/misc)
 "MC" = (
@@ -15956,7 +15961,7 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/storage)
 "MX" = (
-/obj/machinery/light{
+/obj/machinery/light_construct{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/old_tile,
@@ -16106,6 +16111,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/random/trash,
 /turf/simulated/floor/tiled/old_tile,
 /area/shuttle/infpolyp/misc)
 "NF" = (
@@ -16284,6 +16290,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/random/trash,
 /turf/simulated/floor/tiled/old_tile,
 /area/shuttle/infpolyp/misc)
 "OD" = (
@@ -16855,13 +16862,13 @@
 /area/quartermaster/expedition/atmos)
 "RE" = (
 /obj/machinery/suit_storage_unit/science,
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/machinery/newscaster{
 	pixel_y = 32
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light_construct{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/infpolyp/misc)
 "RG" = (
@@ -17227,7 +17234,7 @@
 /area/shuttle/infpolyp)
 "Tx" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/silver,
+/obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/infpolyp/med)
 "TA" = (
@@ -17510,11 +17517,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	id_tag = "sl_office";
-	name = "SL Office Shutters"
-	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/infpolyp/armory)
 "UO" = (
@@ -18189,6 +18191,7 @@
 "XW" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
+/obj/random/trash,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/infpolyp/misc)
 "Yb" = (
@@ -18258,10 +18261,6 @@
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = -24
-	},
-/obj/machinery/light_switch{
-	pixel_x = -10;
-	pixel_y = -21
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/disposalpipe/trunk{
