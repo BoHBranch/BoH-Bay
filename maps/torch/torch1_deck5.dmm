@@ -6879,10 +6879,10 @@
 /obj/effect/floor_decal/corner/blue/border{
 	dir = 6
 	},
-/obj/machinery/vitals_monitor,
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/bed,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/infpolyp/med)
 "mn" = (
@@ -14155,8 +14155,7 @@
 /obj/effect/floor_decal/corner/blue/border{
 	dir = 1
 	},
-/obj/structure/table/standard,
-/obj/item/weapon/storage/firstaid/surgery,
+/obj/structure/iv_drip,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/infpolyp/med)
 "Fx" = (
@@ -15162,6 +15161,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/voxslug,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/infpolyp/misc)
 "JL" = (
@@ -15937,7 +15937,7 @@
 /area/quartermaster/storage)
 "MQ" = (
 /obj/effect/floor_decal/corner/blue/border,
-/obj/machinery/optable,
+/obj/structure/bed,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/infpolyp/med)
 "MR" = (
