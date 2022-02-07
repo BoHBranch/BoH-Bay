@@ -13,7 +13,7 @@
 	var/cooldown = 0
 	var/acceleration = 1
 	var/owner_follows_eye = 0
-	var/living_eye = TRUE
+	var/living_eye = FALSE
 
 
 	see_in_dark = 7
