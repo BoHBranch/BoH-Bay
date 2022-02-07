@@ -205,8 +205,8 @@
 
 	spell_flags = Z2NOCAST
 	hud_state = "wiz_IPC"
-	var/mob/observer/eye/vision
-	var/eye_type = /mob/observer/eye/wizard_eye
+	var/mob/observer/eye/freelook/vision
+	var/eye_type = /mob/observer/eye/freelook/wizard_eye
 
 /spell/camera_connection/New()
 	..()
@@ -237,10 +237,10 @@
 	GLOB.destroyed_event.unregister(L, src)
 	GLOB.logged_out_event.unregister(L, src)
 
-/mob/observer/eye/wizard_eye
+/mob/observer/eye/freelook/wizard_eye
 	name_sufix = "Wizard Eye"
 
-/mob/observer/eye/wizard_eye/New() //we dont use the Ai one because it has AI specific procs imbedded in it.
+/mob/observer/eye/freelook/wizard_eye/New() //we dont use the Ai one because it has AI specific procs imbedded in it.
 	..()
 	visualnet = cameranet
 
@@ -255,7 +255,7 @@
 		return
 	eyeobj.release(src)
 
-/mob/observer/eye/wizard_eye/Destroy()
+/mob/observer/eye/freelook/wizard_eye/Destroy()
 	if(istype(eyeobj.owner, /mob/living))
 		var/mob/living/L = eyeobj.owner
 		L.release_eye()

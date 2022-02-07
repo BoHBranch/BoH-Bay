@@ -72,6 +72,11 @@
 		laser = ARMOR_LASER_MINOR,
 		bio = ARMOR_BIO_RESISTANT
 		)
+	down_gas_transfer_coefficient = 1
+	down_body_parts_covered = null
+	down_item_flags = ITEM_FLAG_THICKMATERIAL
+	down_icon_state = "halfgasdown"
+	pull_mask = 1
 
 //In scaling order of utility and seriousness
 
