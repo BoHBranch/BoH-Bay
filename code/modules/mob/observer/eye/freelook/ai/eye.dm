@@ -15,11 +15,11 @@
 	name = "Inactive AI Eye"
 	name_sufix = "AI Eye"
 	icon_state = "AI-eye"
-	living_eye = 0 //Fixes
-
 /mob/observer/eye/freelook/freelook/freelook/aiEye/New()
 	..()
 	visualnet = cameranet
+	living_eye = FALSE //Fixes
+
 
 /mob/observer/eye/freelook/freelook/freelook/aiEye/setLoc(var/T, var/cancel_tracking = 1)
 	. = ..()
