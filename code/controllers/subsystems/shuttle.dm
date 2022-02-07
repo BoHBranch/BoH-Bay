@@ -82,6 +82,10 @@ SUBSYSTEM_DEF(shuttle)
 			O = map_sectors["[shuttle_landmark.z]"]
 			O ? O.add_landmark(shuttle_landmark, shuttle_landmark.shuttle_restricted) : (landmarks_awaiting_sector += shuttle_landmark)
 
+/datum/controller/subsystem/shuttle/proc/unregister_landmark(shuttle_landmark_tag)
+	LAZYREMOVE(registered_shuttle_landmarks, shuttle_landmark_tag)
+
+
 /datum/controller/subsystem/shuttle/proc/get_landmark(var/shuttle_landmark_tag)
 	return registered_shuttle_landmarks[shuttle_landmark_tag]
 
