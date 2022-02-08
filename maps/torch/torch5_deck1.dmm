@@ -4998,7 +4998,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "aiH" = (
-/obj/machinery/computer/modular/preset/medical,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -5008,6 +5007,7 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 5
 	},
+/obj/machinery/reagentgrinder,
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "aiI" = (
@@ -5189,13 +5189,21 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/forestarboard)
 "aja" = (
-/obj/item/weapon/stool/padded,
 /obj/effect/floor_decal/corner/beige{
 	dir = 6
 	},
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25
+	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -5372,7 +5380,7 @@
 "ajr" = (
 /obj/item/clothing/glasses/science,
 /obj/item/device/scanner/spectrometer,
-/obj/structure/table/glass,
+/obj/structure/table/reinforced,
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
 	},
@@ -7480,20 +7488,18 @@
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "amM" = (
-/obj/effect/floor_decal/corner/beige{
-	dir = 9
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/table/glass,
-/obj/machinery/reagent_temperature{
-	pixel_x = 8
+/obj/structure/table/reinforced,
+/obj/item/weapon/hand_labeler,
+/obj/effect/floor_decal/corner/beige{
+	dir = 9
 	},
-/obj/machinery/reagent_temperature/cooler{
-	pixel_x = -8
+/obj/effect/floor_decal/corner/beige{
+	dir = 6
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -8362,6 +8368,9 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
+/obj/structure/table/reinforced,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/dropper,
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "aoi" = (
@@ -10589,16 +10598,8 @@
 	pixel_x = 6;
 	pixel_y = 21
 	},
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
 /obj/item/weapon/reagent_containers/glass/beaker/insulated/large,
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/item/weapon/reagent_containers/dropper,
-/obj/structure/table/glass,
+/obj/structure/table/reinforced,
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
 	},
@@ -10607,6 +10608,18 @@
 	},
 /obj/machinery/light_switch{
 	pixel_y = 30
+	},
+/obj/item/weapon/reagent_containers/glass/beaker/insulated/large{
+	pixel_x = -5;
+	pixel_y = 5
+	},
+/obj/item/weapon/reagent_containers/glass/beaker/insulated/large{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/weapon/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/glass/beaker/large{
+	pixel_x = -5
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -11743,15 +11756,21 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 6
 	},
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "east bump";
-	pixel_x = 24
-	},
 /obj/structure/cable/green{
+	d1 = 1;
 	d2 = 8;
-	icon_state = "0-8"
+	icon_state = "1-8"
 	},
+/obj/effect/floor_decal/corner/beige{
+	dir = 9
+	},
+/obj/structure/table/reinforced,
+/obj/item/stack/material/phoron,
+/obj/item/stack/material/phoron,
+/obj/item/stack/material/phoron,
+/obj/item/stack/material/phoron,
+/obj/item/stack/material/phoron,
+/obj/item/stack/material/phoron,
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "auc" = (
@@ -12425,7 +12444,7 @@
 	desc = "Someone has crossed out the 'Space' from Space Cleaner and written in Chemistry. Scrawled on the back is, 'Okay, whoever filled this with polytrinic acid, it was only funny the first time. It was hard enough replacing the CMO's first cat!'";
 	name = "Chemistry Cleaner"
 	},
-/obj/structure/table/glass,
+/obj/structure/table/reinforced,
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
 	},
@@ -12453,11 +12472,20 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/hallway/primary/firstdeck/center)
 "avo" = (
-/obj/machinery/reagentgrinder,
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
 	},
-/obj/item/weapon/hand_labeler,
+/obj/structure/table/reinforced,
+/obj/machinery/reagent_temperature/cooler{
+	pixel_x = -8
+	},
+/obj/machinery/reagent_temperature{
+	pixel_x = 8
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "avp" = (
@@ -20735,19 +20763,7 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
 	},
-/obj/structure/table/glass,
-/obj/item/weapon/reagent_containers/glass/beaker/large{
-	pixel_x = -5
-	},
-/obj/item/weapon/reagent_containers/glass/beaker/insulated/large{
-	pixel_x = -5;
-	pixel_y = 5
-	},
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/item/weapon/reagent_containers/glass/beaker/insulated/large{
-	pixel_x = 5;
-	pixel_y = 5
-	},
+/obj/structure/table/reinforced,
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "fYv" = (
@@ -20893,6 +20909,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/item/weapon/screwdriver,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "gnC" = (
@@ -26979,6 +26996,11 @@
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)

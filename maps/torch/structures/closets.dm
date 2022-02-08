@@ -152,7 +152,7 @@
 	req_access = list(access_infmed)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical
 
-/obj/structure/closet/secure_closet/inftech/WillContain()
+/obj/structure/closet/secure_closet/infmed/WillContain()
 	return list(
 		/obj/item/weapon/storage/belt/holster/security/tactical,
 		/obj/item/device/flashlight/maglight,

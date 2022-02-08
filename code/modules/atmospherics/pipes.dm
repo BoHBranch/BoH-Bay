@@ -14,6 +14,7 @@
 	var/alert_pressure = 170 * ONE_ATMOSPHERE
 	var/in_stasis = 0
 		//minimum pressure before check_pressure(...) should be called
+	var/obj/machinery/clamp/clamp // Linked stasis clamp
 
 	can_buckle = 1
 	buckle_require_restraints = 1
@@ -99,12 +100,9 @@
 	QDEL_NULL(sound_token)
 	if(air_temporary)
 		loc.assume_air(air_temporary)
-	
-	if(in_stasis)
-		var/obj/machinery/clamp/C = locate() in get_turf(src)
-		if(C.target == src)
-			C.open()
-			C.removal()
+
+	if (clamp)
+		clamp.detach()
 
 	. = ..()
 
@@ -126,7 +124,8 @@
 		var/datum/gas_mixture/int_air = return_air()
 		var/datum/gas_mixture/env_air = loc.return_air()
 
-		if ((int_air.return_pressure()-env_air.return_pressure()) > 2*ONE_ATMOSPHERE)
+		var/wrench_time = 40
+		if ((int_air.return_pressure()-env_air.return_pressure()) > 5*ONE_ATMOSPHERE)
 			to_chat(user, "<span class='warning'>You cannot unwrench \the [src], it is too exerted due to internal pressure.</span>")
 			add_fingerprint(user)
 			return 1
@@ -134,7 +133,7 @@
 		playsound(src.loc, 'sound/items/Ratchet.ogg', 50, 1)
 		to_chat(user, "<span class='notice'>You begin to unfasten \the [src]...</span>")
 
-		if (do_after(user, 40, src))
+		if (do_after(user, wrench_time, src))
 			user.visible_message("<span class='notice'>\The [user] unfastens \the [src].</span>", "<span class='notice'>You have unfastened \the [src].</span>", "You hear a ratchet.")
 
 			new /obj/item/pipe(loc, src)
@@ -806,13 +805,10 @@
 
 		/*
 		var/list/directions = list(NORTH, SOUTH, EAST, WEST)
-
-
 		directions -= add_underlay(node1)
 		directions -= add_underlay(node2)
 		directions -= add_underlay(node3)
 		directions -= add_underlay(node4)
-
 		for(var/D in directions)
 			add_underlay(,D)
 		*/

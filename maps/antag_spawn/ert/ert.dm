@@ -5,7 +5,7 @@
 	apc_test_exempt_areas = list(
 		/area/map_template/rescue_base = NO_SCRUBBER|NO_VENT|NO_APC
 	)
-		
+	template_flags = TEMPLATE_FLAG_SPAWN_GUARANTEED
 
 /datum/shuttle/autodock/multi/antag/rescue
 	name = "Rescue"

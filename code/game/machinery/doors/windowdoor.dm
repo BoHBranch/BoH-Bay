@@ -247,7 +247,7 @@
 
 /obj/machinery/door/window/create_electronics(var/electronics_type = /obj/item/weapon/airlock_electronics)
 	electronics = ..()
-	return electronics	
+	return electronics
 
 /obj/machinery/door/window/brigdoor
 	name = "secure door"
@@ -255,8 +255,7 @@
 	icon_state = "leftsecure"
 	base_state = "leftsecure"
 	var/id = null
-	autoset_access = 0
-	req_access = list(access_brig)
+	autoset_access = 1
 	maxhealth = 300
 	health = 300.0 //Stronger doors for prison (regular window door health is 150)
 	pry_mod = 0.65

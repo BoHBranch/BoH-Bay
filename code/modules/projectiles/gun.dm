@@ -50,33 +50,49 @@
 	zoomdevicename = "scope"
 	waterproof = FALSE
 
+	// The amount a burst fires.
 	var/burst = 1
 	var/can_autofire = FALSE
-	var/fire_delay = 6 	//delay after shooting before the gun can be used again. Cannot be less than [burst_delay+1]
-	var/burst_delay = 2	//delay between shots, if firing in bursts
+	// Delay after shooting before the gun can be used again. Seperate from burst delay.
+	var/fire_delay = 6
+	// The delay between the time bullets come out in a burst.
+	var/burst_delay = 2
+	// The delay added to the move before it can move after shooting, will usually stop the mob from moving entirely.
 	var/move_delay = 1
+	// The Sound shooting Plays.
 	var/fire_sound = 'sound/weapons/gunshot/gunshot.ogg'
 	var/fire_sound_text = "gunshot"
 	var/fire_anim = null
-	var/screen_shake = 0 //shouldn't be greater than 2 unless zoomed
+	// Shouldn't be greater than 2 unless zoomed. Untrained people have more screenshake.
+	var/screen_shake = 0
 	var/silenced = 0
-	var/accuracy = 0   //accuracy is measured in tiles. +1 accuracy means that everything is effectively one tile closer for the purpose of miss chance, -1 means the opposite. launchers are not supported, at the moment.
-	var/accuracy_power = 5  //increase of to-hit chance per 1 point of accuracy
-	var/bulk = 0			//how unwieldy this weapon for its size, affects accuracy when fired without aiming
-	var/last_handled		//time when hand gun's in became active, for purposes of aiming bonuses
-	var/scoped_accuracy = null  //accuracy used when zoomed in a scope
+	// Accuracy is measured in tiles. +1 accuracy means that everything is effectively one tile closer for the purpose of miss chance, -1 means the opposite. launchers are not supported, at the moment.
+	var/accuracy = 0
+	// Increase of to-hit chance per 1 point of accuracy
+	var/accuracy_power = 5
+	// How unwieldy this weapon for its size, affects accuracy when fired without aiming or moving.
+	var/bulk = 0
+	// Time when hand gun's in became active, for purposes of aiming bonuses
+	var/last_handled
+	// Accuracy used when zoomed in a scope
+	var/scoped_accuracy = null
 	var/scope_zoom = 0
-	var/list/burst_accuracy = list(0) //allows for different accuracies for each shot in a burst. Applied on top of accuracy
+	// Allows for different accuracies for each shot in a burst. Applied on top of accuracy.
+	var/list/burst_accuracy = list(0)
+	// How much do our bullets disperse when firing?
 	var/list/dispersion = list(0)
+	// The penalty that a firearm has when you fire if you have another item in your hand, if any.
 	var/one_hand_penalty
+	// The two handed sprite, if any.
 	var/wielded_item_state
-	var/combustion	//whether it creates hotspot when fired
-	var/automatic = FALSE // Does this fire at full auto? Burst should be set to one, and this should be one aswell. Effectively an autoclicker. Set to true if yes.
-
+	//whether it creates hotspot when fired
+	var/combustion
+	// Does this firemode at full auto? Effectively an autoclicker. Set to true if yes. The gun will keep firing until empty when the mouse is held down.
+	var/automatic = FALSE
 	var/next_fire_time = 0
 
 	var/sel_mode = 1 //index of the currently selected mode
-	var/list/firemodes = list()
+	var/list/firemodes = list() // Your lists of firemodes.
 	var/selector_sound = 'sound/weapons/guns/selector.ogg'
 
 	//aiming system stuff
@@ -89,7 +105,7 @@
 	var/tmp/lock_time = -100
 	var/tmp/last_safety_check = -INFINITY
 	var/safety_state = 1
-	var/has_safety = TRUE
+	var/has_safety = TRUE // Does the gun have a safety?
 	var/safety_icon 	   //overlay to apply to gun based on safety state, if any
 	var/has_firing_pin = FALSE
 	var/obj/item/firing_pin/pin //firing pin
@@ -262,7 +278,7 @@
 			pointblank = 0
 
 	//update timing
-	var/delay = max(burst_delay+1, fire_delay)
+	var/delay = max(fire_delay)
 	user.setClickCooldown(min(delay, DEFAULT_QUICK_COOLDOWN))
 	user.SetMoveCooldown(move_delay)
 	next_fire_time = world.time + delay
@@ -328,7 +344,10 @@
 
 	if(screen_shake)
 		spawn()
-			shake_camera(user, screen_shake+1, screen_shake)
+			if(user.skill_check(SKILL_WEAPONS,SKILL_BASIC)) // Do you have basically ANY firearms training?
+				shake_camera(user, screen_shake-2, screen_shake) // No screenshake with most weaponry.
+			else
+				shake_camera(user, screen_shake, screen_shake) // Untrained people will screenshake with most guns.
 
 	if(combustion)
 		var/turf/curloc = get_turf(src)

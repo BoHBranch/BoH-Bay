@@ -2171,11 +2171,17 @@
 /area/voxship/armory)
 "fp" = (
 /obj/structure/sign/warning/vent_port,
+/obj/structure/grille,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /obj/machinery/door/blast/regular{
-	id_tag = "EngineVent";
+	dir = 4;
+	id_tag = "VoxEngineVent";
 	name = "Emergency Engine Vent"
 	},
-/obj/structure/grille,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "fq" = (
@@ -3249,7 +3255,8 @@
 /area/voxship/bridge)
 "hL" = (
 /obj/machinery/door/blast/regular{
-	id_tag = "EngineVent";
+	dir = 4;
+	id_tag = "VoxEngineVent";
 	name = "Emergency Engine Vent"
 	},
 /obj/structure/grille,
@@ -3390,7 +3397,7 @@
 /area/voxship/armory)
 "hZ" = (
 /obj/machinery/button/blast_door{
-	id_tag = "EngineVent";
+	id_tag = "VoxEngineVent";
 	name = "Emergency Engine vent"
 	},
 /turf/simulated/wall/r_wall/hull{
@@ -5347,6 +5354,16 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/bioreactor)
+"mb" = (
+/obj/structure/sign/warning/vent_port,
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	dir = 4;
+	id_tag = "VoxEngineVent";
+	name = "Emergency Engine Vent"
+	},
+/turf/simulated/floor/plating/vox,
+/area/voxship/engineering)
 "mc" = (
 /obj/effect/floor_decal/industrial/hatch/orange,
 /obj/structure/cable{
@@ -8285,20 +8302,6 @@
 /turf/simulated/wall/r_wall/hull{
 	initial_gas = list("nitrogen" = 101.23)
 	},
-/area/voxship/engineering)
-"sp" = (
-/obj/structure/sign/warning/vent_port,
-/obj/machinery/door/blast/regular{
-	id_tag = "EngineVent";
-	name = "Emergency Engine Vent"
-	},
-/obj/structure/grille,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "sq" = (
 /obj/structure/cable{
@@ -37889,9 +37892,9 @@ so
 so
 so
 so
-sp
-hL
 fp
+hL
+mb
 et
 et
 et

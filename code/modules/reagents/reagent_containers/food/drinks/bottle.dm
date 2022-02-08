@@ -309,7 +309,7 @@
 	icon_state = "space-up_bottle"
 	center_of_mass = "x=16;y=6"
 	reagents_to_add = list(/datum/reagent/drink/space_up = 100)
-	
+
 /obj/item/weapon/reagent_containers/food/drinks/bottle/space_mountain_wind
 	name = "\improper Space Mountain Wind"
 	desc = "Blows right through you like a space wind."
@@ -336,7 +336,7 @@
 	desc = "Finest Sake allowed for import in the SCG."
 	icon_state = "sake"
 	center_of_mass = "x=16;y=4"
-	reagents_to_add = list(/datum/reagent/ethanol/sake)
+	reagents_to_add = list(/datum/reagent/ethanol/sake = 100)
 
 
 /obj/item/weapon/reagent_containers/food/drinks/bottle/lordaniawine

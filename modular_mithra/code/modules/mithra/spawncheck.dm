@@ -32,7 +32,7 @@
 				points_left -= traits_costs[T]
 
 		//Went into negatives
-		if(points_left < 0 || traits_left < 0)
+		if(points_left <= 0 || traits_left <= 0)
 			pass = FALSE
 			to_chat(src,"<span class='warning'>Your custom species is not playable. Reconfigure your traits under the genemod tab.</span>")
 

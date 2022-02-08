@@ -249,8 +249,8 @@
 	desc = "A machete handle that extends out into a long, purple machete blade. It appears to be Skrellian in origin."
 	icon_state = "machete_skrell_x"
 	active_icon = "machete_skrell"
-	active_force = 16		//In line with standard machetes at time of creation.
-	active_throwforce = 17.25
+	active_force = 30		//Same as E-sword
+	active_throwforce = 20
 	lighting_color = COLOR_SABER_SKRELL
 	force = 3
 	throwforce = 1
