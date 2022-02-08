@@ -241,8 +241,7 @@
 		SKILL_WEAPONS     = SKILL_EXPERT
 	)
 	skill_points = 30
-	access = list(access_psiadvisor, access_security, access_medical, access_engine, access_maint_tunnels, access_external_airlocks,
-				access_eva, access_bridge, access_cargo, access_RC_announce, access_solgov_crew, access_hangar)
+	access = list(access_psiadvisor, access_security, access_medical, access_maint_tunnels, access_bridge, access_RC_announce, access_solgov_crew, access_hangar)
 	minimal_access = list()
 	software_on_spawn = list(
 		/datum/computer_file/program/comm,
