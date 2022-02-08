@@ -1458,6 +1458,7 @@
 #include "code\modules\awaymissions\trigger.dm"
 #include "code\modules\awaymissions\zlevel.dm"
 #include "code\modules\blob\blob.dm"
+#include "code\modules\boh\admin\items.dm"
 #include "code\modules\boh\admin\panicbunker.dm"
 #include "code\modules\boh\antiboarding\tur_id.dm"
 #include "code\modules\boh\ascent2\chemicals.dm"
