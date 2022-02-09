@@ -1204,6 +1204,7 @@ About the new airlock wires panel:
 		if (secured_wires)
 			lock()
 		visible_message("\The [src]'s control panel bursts open, sparks spewing out!")
+		playsound(src.loc, 'sound/machines/airlock_break.ogg', 100, 1)
 		var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread
 		s.set_up(5, 1, src)
 		s.start()

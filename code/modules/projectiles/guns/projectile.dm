@@ -61,7 +61,7 @@
 			else
 				to_chat(user, "<span class='notice'>You reflexively clear the jam on \the [src].</span>")
 				is_jammed = 0
-				playsound(src.loc, 'sound/weapons/flipblade.ogg', 50, 1)
+				playsound(src.loc, 'sound/weapons/unjam.ogg', 50, 1)
 	if(is_jammed)
 		return null
 	//get the next casing
@@ -185,7 +185,7 @@
 		if(!do_after(user, 4, src))
 			return
 		is_jammed = 0
-		playsound(src.loc, 'sound/weapons/flipblade.ogg', 50, 1)
+		playsound(src.loc, 'sound/weapons/unjam.ogg', 50, 1)
 	if(ammo_magazine)
 		user.put_in_hands(ammo_magazine)
 		user.visible_message("[user] removes [ammo_magazine] from [src].", "<span class='notice'>You remove [ammo_magazine] from [src].</span>")
