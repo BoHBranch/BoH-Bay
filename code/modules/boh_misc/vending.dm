@@ -2,7 +2,7 @@
 // Sec
 /////////
 
-/obj/machinery/vending/security/accessory
+/obj/machinery/vending/accessory
 	name = "SecTech - Accessory"
 	desc = "A security accessory vendor."
 //	product_ads = "Crack capitalist skulls!;Beat some heads in!;Don't forget - harm is good!;Your weapons are right here.;Handcuffs!;Freeze, scumbag!;Don't tase me bro!;Tase them, bro.;Why not have a donut?"
@@ -10,7 +10,6 @@
 	icon_deny = "sec-deny"
 	icon_vend = "sec-vend"
 	vend_delay = 14
-	base_type = /obj/machinery/vending/security
 	req_access = list(access_security)
 	products = list(
 		/obj/item/clothing/accessory/armguards = 12,

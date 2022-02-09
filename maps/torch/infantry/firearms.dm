@@ -151,7 +151,7 @@
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=12, burst_accuracy=null, dispersion=null),
 		)
 
-/obj/item/weapon/gun/launcher/projectile/recoilless/sec/free_fire()
+/obj/item/weapon/gun/projectile/rocket/recoilless/sec/free_fire()
 	var/my_z = get_z(src)
 	if(!GLOB.using_map.station_levels.Find(my_z))
 		return TRUE
