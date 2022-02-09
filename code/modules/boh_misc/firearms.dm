@@ -122,12 +122,21 @@
 	This specific model was designed to fire incendiary charges. Said charges have a minor explosive charge, with an incredibly powerful, though small, incendiary powder of sorts. \
 	Hopefully it's still working after all this time, because, by god, this looks like an old relic. \
 	What doesn't look like a relic, however, is the rather large optic mounted atop the rifle."
-	icon = 'icons/boh/items/launchers.dmi'
+	icon = 'icons/boh/obj/guns/launchers64.dmi'
 	icon_state = "recoilless"
 	item_state = "recoilless"
-	wielded_item_state = "gun_wielded"
+	wielded_item_state = "recoilless_wielded"
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5)
 	ammo_type = /obj/item/ammo_casing/rocket/rcr
+
+/obj/item/weapon/gun/projectile/rocket/recoilless/on_update_icon()
+	..()
+	if(length(loaded))
+		icon_state = initial(icon_state)
+	else
+		icon_state = "[initial(icon_state)]-empty"
+		item_state = "[initial(icon_state)]-empty"
+
 
 
 /////////
@@ -267,11 +276,10 @@
 	slot_flags = SLOT_BACK|SLOT_BELT
 	icon = 'icons/boh/obj/guns/launchers64.dmi' // RPG file for big boy RPGs.
 	icon_state = "disposable"
+	 // As a note, you can technically reload these, but you need an admin to spawn you the ammo, which is better than having them spawn you the rocket THEN delete the old one.
+	ammo_type = /obj/item/ammo_casing/oneuse_rocket
+	ununloadable = TRUE
 	var/folded = 1
-
-// Stops us from unloading it.
-/obj/item/weapon/gun/projectile/rocket/oneuse/unload_ammo(mob/user)
-	to_chat(user, "<span class='warning'>You cannot unload this type of weapon!</span>")
 
 //Unfolds/folds the RPG.
 /obj/item/weapon/gun/projectile/rocket/oneuse/attack_self(mob/user)
