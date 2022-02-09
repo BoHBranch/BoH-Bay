@@ -30,11 +30,14 @@
 	var/mag_insert_sound = 'sound/weapons/guns/interaction/pistol_magin.ogg'
 	var/mag_remove_sound = 'sound/weapons/guns/interaction/pistol_magout.ogg'
 
+	// You can't unload this firearm!
+	var/ununloadable = FALSE
+
 	var/is_jammed = 0           //Whether this gun is jammed
 	var/jam_chance = 0          //Chance it jams on fire
 	//TODO generalize ammo icon states for guns
 	//var/magazine_states = 0
-	//var/list/icon_keys = list()		//keys
+	//var/list/empty_keys = list()		//keys
 	//var/list/ammo_states = list()	//values
 
 /obj/item/weapon/gun/projectile/Initialize()
@@ -174,6 +177,9 @@
 
 //attempts to unload src. If allow_dump is set to 0, the speedloader unloading method will be disabled
 /obj/item/weapon/gun/projectile/proc/unload_ammo(mob/user, var/allow_dump=1)
+	if(ununloadable)
+		to_chat(user, "<span class='warning'>You can't unload this!</span>")
+		return
 	if(is_jammed)
 		user.visible_message("\The [user] begins to unjam [src].", "You clear the jam and unload [src]")
 		if(!do_after(user, 4, src))
