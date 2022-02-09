@@ -1,6 +1,10 @@
-/obj/machinery/vending/security/infantry
+/obj/machinery/vending/infantry
 	name = "InfTech"
 	desc = "A munition vendor."
+	icon_state = "sec"
+	icon_deny = "sec-deny"
+	icon_vend = "sec-vend"
+	vend_delay = 14
 	req_access = list(access_infantry)
 	products = list(
 		/obj/item/ammo_magazine/mil_rifle/sec = 12,

@@ -886,6 +886,22 @@
 /obj/random/illegal,
 /turf/simulated/floor/tiled/techmaint,
 /area/maintenance/fourthdeck/forestarboard)
+"cb" = (
+/obj/structure/dogbed,
+/obj/random/plushie,
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -22
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 9
+	},
+/obj/effect/floor_decal/corner/green,
+/obj/item/weapon/pen/crayon/blue,
+/mob/living/simple_animal/corgi/Lisa,
+/turf/simulated/floor/tiled/monotile,
+/area/security/infantry)
 "cd" = (
 /obj/structure/railing/mapped,
 /obj/structure/lattice,
@@ -5258,22 +5274,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/infantry/exterior)
-"jQ" = (
-/obj/structure/dogbed,
-/obj/random/plushie,
-/obj/machinery/alarm{
-	dir = 4;
-	icon_state = "alarm0";
-	pixel_x = -22
-	},
-/mob/living/simple_animal/corgi/Lisa,
-/obj/effect/floor_decal/corner/green{
-	dir = 9
-	},
-/obj/effect/floor_decal/corner/green,
-/obj/item/weapon/pen/crayon/blue,
-/turf/simulated/floor/tiled/monotile,
-/area/security/infantry)
 "jR" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 4;
@@ -5295,12 +5295,6 @@
 /obj/effect/floor_decal/corner/green/half{
 	dir = 8;
 	icon_state = "bordercolorhalf"
-	},
-/turf/simulated/floor/tiled,
-/area/security/infantry/com)
-"jT" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/security/infantry/com)
@@ -5359,7 +5353,7 @@
 /turf/simulated/floor/tiled,
 /area/security/infantry/com)
 "kc" = (
-/obj/machinery/vending/security/infantry,
+/obj/machinery/vending/infantry,
 /obj/effect/floor_decal/corner_techfloor_gray{
 	dir = 9
 	},
@@ -9441,7 +9435,7 @@
 /turf/simulated/floor/plating,
 /area/quartermaster/office)
 "ur" = (
-/obj/machinery/vending/security/accessory{
+/obj/machinery/vending/accessory{
 	req_access = list("ACCESS_INFANTRY")
 	},
 /obj/effect/floor_decal/corner_techfloor_gray{
@@ -46614,7 +46608,7 @@ fL
 gO
 jG
 fU
-jT
+kb
 uG
 ST
 hA
@@ -47230,7 +47224,7 @@ jA
 gC
 lg
 fW
-jQ
+cb
 gF
 pm
 jK
