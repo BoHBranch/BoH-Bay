@@ -26,6 +26,7 @@
 	if(!message)
 		return
 	message = capitalize(message)
+	playsound(src.loc, 'sound/items/megaphone.ogg', 35, 0)
 	if ((src.loc == user && usr.stat == 0))
 		if(emagged)
 			if(insults)
