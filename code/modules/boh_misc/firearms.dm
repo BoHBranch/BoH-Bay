@@ -316,6 +316,6 @@
 	return ..()
 
 /obj/item/weapon/gun/launcher/rocket/oneuse/marine // Marine version..
-	name = "L-19 Disposable Rocket Launcher"
+	name = "L-19 disposable rocket launcher"
 	desc = "A disposable use rocket launcher, better known as an RPG well known around SolGov space, used by many people and many folk to blow things sky high. This is a licensed marine version, known as the Lance 19."
 	icon_state = "disposable_marine"
