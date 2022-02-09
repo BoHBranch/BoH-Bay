@@ -189,7 +189,7 @@
 		playsound(grabber.loc, 'sound/weapons/pierce.ogg', 25, 1, -1)
 	. = ..(grabber, target, GRAB_ARMALIS)
 
-
+/*
 /datum/species/vox/pariah
 	name = SPECIES_VOXPARIAH
 	description = "Sickly biproducts of Vox society, these creatures are vilified by their own kind \
@@ -248,4 +248,4 @@
 
 // No combat skills for you.
 /datum/species/vox/pariah/can_shred(var/mob/living/carbon/human/H, var/ignore_intent)
-	return 0
+	return 0*/
