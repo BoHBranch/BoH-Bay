@@ -116,7 +116,7 @@
 /////////
 // Recoilless Rifle
 /////////
-/obj/item/weapon/gun/launcher/rocket/recoilless
+/obj/item/weapon/gun/projectile/rocket/recoilless
 	name = "recoilless rifle"
 	desc = "A TVP-2 anti-armor recoilless rifle. Truly an anachronism of another time. \
 	This specific model was designed to fire incendiary charges. Said charges have a minor explosive charge, with an incredibly powerful, though small, incendiary powder of sorts. \
@@ -127,17 +127,8 @@
 	item_state = "recoilless"
 	wielded_item_state = "gun_wielded"
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5)
+	ammo_type = /obj/item/ammo_casing/rocket/rcr
 
-/obj/item/weapon/gun/launcher/rocket/recoilless/attackby(obj/item/I as obj, mob/user as mob)
-	if(istype(I, /obj/item/ammo_casing/rocket/rcr))
-		if(rockets.len < max_rockets)
-			if(!user.unEquip(I, src))
-				return
-			rockets += I
-			to_chat(user, "<span class='notice'>you carefully slide the shell into the [src].</span>")
-			to_chat(user, "<span class='notice'>[rockets.len] / [max_rockets] shells.</span>")
-		else
-			to_chat(usr, "<span class='warning'>\The [src] cannot hold more than one shell, for obvious reasons.</span>")
 
 /////////
 // 'Broken' Carbine
@@ -268,3 +259,49 @@
 	max_shots = 20
 	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
+
+
+// Disposable RPG
+
+/obj/item/weapon/gun/projectile/rocket/oneuse // One time use RPGs.
+	slot_flags = SLOT_BACK|SLOT_BELT
+	icon = 'icons/boh/obj/guns/launchers64.dmi' // RPG file for big boy RPGs.
+	icon_state = "disposable"
+	var/folded = 1
+
+// Stops us from unloading it.
+/obj/item/weapon/gun/projectile/rocket/oneuse/unload_ammo(mob/user)
+	to_chat(user, "<span class='warning'>You cannot unload this type of weapon!</span>")
+
+//Unfolds/folds the RPG.
+/obj/item/weapon/gun/projectile/rocket/oneuse/attack_self(mob/user)
+	if(folded)
+//		playsound(src.loc,'sound/weapons/gunporn/rpgoneuse_deploying.ogg',80, 0)
+		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
+		if(do_after(usr, 30, src))
+			usr.visible_message("<span class='notice'>\The [usr] extends [src].</span>", "<span class='notice'>You deploy the [src]</span>")
+			folded = FALSE
+			icon_state = "[icon_state]_deployed"
+			item_state = "[item_state]_deployed"
+			slot_flags = null
+	else
+//		playsound(src.loc,'sound/weapons/gunporn/rpgoneuse_deploying.ogg',80, 0)
+		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
+		if(do_after(usr, 30, src))
+			usr.visible_message("<span class='notice'>\The [usr] folds the [src].</span>", "<span class='notice'>You fold the [src]</span>")
+			folded = TRUE
+			icon_state = initial(icon_state)
+			item_state = initial(item_state)
+			slot_flags = SLOT_BACK|SLOT_BELT
+
+// Tells the player to deploy it, dummy.
+/obj/item/weapon/gun/projectile/rocket/oneuse/special_check(mob/user)
+	if(folded)
+		to_chat(user, "You can't fire this in this state! Deploy it!")
+		return 0
+	return ..()
+
+/obj/item/weapon/gun/projectile/rocket/oneuse/marine // Marine version..
+	name = "L-19 disposable rocket launcher"
+	desc = "A disposable use rocket launcher, better known as an RPG well known around SolGov space, used by many people and many folk to blow things sky high. This is a licensed marine version, known as the Lance 19."
+	icon_state = "disposable_marine"

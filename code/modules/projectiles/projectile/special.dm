@@ -175,19 +175,13 @@
 	if(L.reagents)
 		L.reagents.add_reagent(/datum/reagent/toxin/venom, 5)
 
-/obj/item/missile
+/obj/item/projectile/missile
 	icon = 'icons/obj/grenade.dmi'
 	icon_state = "missile"
-	var/primed = null
 	throwforce = 15
 
-/obj/item/missile/throw_impact(atom/hit_atom)
-	if(primed)
-		explosion(hit_atom, 0, 1, 2, 4)
-		qdel(src)
-	else
-		..()
-	return
+/obj/item/projectile/missile/on_impact(var/atom/target, var/blocked = 0)
+	explosion(target, 1, 2, 2, 4)
 
 /obj/item/projectile/hotgas
 	name = "gas vent"
