@@ -135,6 +135,7 @@
 		icon_state = initial(icon_state)
 	else
 		icon_state = "[initial(icon_state)]-empty"
+		item_state = "[initial(icon_state)]-empty"
 
 
 
