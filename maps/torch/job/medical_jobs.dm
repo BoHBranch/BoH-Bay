@@ -201,17 +201,4 @@
 	)
 
 /datum/job/psychiatrist/get_description_blurb()
-	return "You are the Psychiatrist. Your main responsibility is the mental health and wellbeing of the crew. You are subordinate to the Chief Medical Officer. Additionally, alongside the Psionic Advisor, you're the only member aboard with known Psionic abilities."
-
-/datum/job/psychiatrist/equip(var/mob/living/carbon/human/H)
-	psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
-	return ..()
-
-/datum/job/psychiatrist/equip(var/mob/living/carbon/human/H)
-	if(H.mind.role_alt_title == "Psychiatrist")
-		psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_OPERANT)
-	if(H.mind.role_alt_title == "Psionic Psychiatrist")
-		psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_OPERANT)
-	if(H.mind.role_alt_title == "Mentalist")
-		psi_faculties = list("[PSI_COERCION]" = PSI_RANK_OPERANT)
-	return ..()
+	return "You are the Psychiatrist. Your main responsibility is the mental health and wellbeing of the crew. You are subordinate to the Chief Medical Officer."
