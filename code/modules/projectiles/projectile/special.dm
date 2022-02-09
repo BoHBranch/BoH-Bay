@@ -176,7 +176,6 @@
 		L.reagents.add_reagent(/datum/reagent/toxin/venom, 5)
 
 /obj/item/projectile/missile
-	icon = 'icons/obj/grenade.dmi'
 	icon_state = "missile"
 	throwforce = 15
 
