@@ -18,6 +18,7 @@
 	fire_sound = 'sound/weapons/gunshot/rpg_fire.ogg'
 	combustion = 1
 	max_shells = 1
+	one_hand_penalty = 10
 	handle_casings = HOLD_CASINGS
 	ammo_type = /obj/item/ammo_casing/rocket
 	var/windup = 5 // Rockets take half a second to prep to fire, set to zero to invalidate cmompletly.

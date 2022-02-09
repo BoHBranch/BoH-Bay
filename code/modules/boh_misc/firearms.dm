@@ -276,7 +276,7 @@
 //Unfolds/folds the RPG.
 /obj/item/weapon/gun/projectile/rocket/oneuse/attack_self(mob/user)
 	if(folded)
-//		playsound(src.loc,'sound/weapons/gunporn/rpgoneuse_deploying.ogg',80, 0)
+		playsound(src.loc,'sound/weapons/guns/interaction/rpgoneuse_deploying.ogg',80, 0)
 		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
 		if(do_after(usr, 30, src))
 			usr.visible_message("<span class='notice'>\The [usr] extends [src].</span>", "<span class='notice'>You deploy the [src]</span>")
@@ -285,7 +285,7 @@
 			item_state = "[item_state]_deployed"
 			slot_flags = null
 	else
-//		playsound(src.loc,'sound/weapons/gunporn/rpgoneuse_deploying.ogg',80, 0)
+		playsound(src.loc,'sound/weapons/guns/interaction/rpgoneuse_deploying.ogg',80, 0)
 		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
 		if(do_after(usr, 30, src))
 			usr.visible_message("<span class='notice'>\The [usr] folds the [src].</span>", "<span class='notice'>You fold the [src]</span>")
@@ -305,3 +305,4 @@
 	name = "L-19 disposable rocket launcher"
 	desc = "A disposable use rocket launcher, better known as an RPG well known around SolGov space, used by many people and many folk to blow things sky high. It cannot be unloaded or reloaded without specialized tools and is meant to be disposed once used. This is one is a licensed version, known as the Lance 19 for the SMC."
 	icon_state = "disposable_marine"
+	item_state = "disposable_marine"
