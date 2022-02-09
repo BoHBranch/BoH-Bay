@@ -268,3 +268,54 @@
 	max_shots = 20
 	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
+
+// If this file didn't exist I wouldn't put this here - MJP.
+
+/obj/item/weapon/gun/launcher/rocket/oneuse // One time use RPGs.
+	slot_flags = SLOT_BACK|SLOT_BELT
+	icon = 'icons/boh/items/launchers64.dmi' // RPG file for big boy RPGs.
+	icon_state = "disposable"
+	var/folded = 1
+
+// This is the rocket generated on new and is our only shot, because Rocket Launchers are horribly snowflake.
+/obj/item/weapon/gun/launcher/rocket/oneuse/New()
+	..()
+	rockets += new /obj/item/ammo_casing/rocket(src)
+
+// Stops us from unloading it.
+/obj/item/weapon/gun/launcher/rocket/oneuse/attackby(mob/user)
+	to_chat(user, "You can't unload or reload this.")
+	return
+
+//Unfolds/folds the RPG.
+/obj/item/weapon/gun/launcher/rocket/oneuse/attack_self(mob/user)
+	if(folded)
+//		playsound(src.loc,'sound/weapons/gunporn/rpgoneuse_deploying.ogg',80, 0)
+		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
+		if(do_after(usr, 30, src))
+			usr.visible_message("<span class='notice'>\The [usr] extends [src].</span>", "<span class='notice'>You deploy the [src]</span>")
+			folded = FALSE
+			icon_state = "[icon_state]_deployed"
+			item_state = "[item_state]_deployed"
+			slot_flags = null
+	else
+//		playsound(src.loc,'sound/weapons/gunporn/rpgoneuse_deploying.ogg',80, 0)
+		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
+		if(do_after(usr, 30, src))
+			usr.visible_message("<span class='notice'>\The [usr] folds the [src].</span>", "<span class='notice'>You fold the [src]</span>")
+			folded = TRUE
+			icon_state = initial(icon_state)
+			item_state = initial(item_state)
+			slot_flags = SLOT_BACK|SLOT_BELT
+
+// Tells the player to deploy it, dummy.
+/obj/item/weapon/gun/launcher/rocket/oneuse/special_check(mob/user)
+	if(folded)
+		to_chat(user, "You can't fire this in this state! Deploy it!")
+		return 0
+	return ..()
+
+/obj/item/weapon/gun/launcher/rocket/oneuse/marine // Marine version..
+	name = "L-19 Disposable Rocket Launcher"
+	desc = "A disposable use rocket launcher, better known as an RPG well known around SolGov space, used by many people and many folk to blow things sky high. This is a licensed marine version, known as the Lance 19."
+	icon_state = "disposable_marine"
