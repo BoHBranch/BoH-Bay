@@ -180,7 +180,7 @@
 		M.visible_message("<span class='notice'>[icon2html(src, viewers(src))]M] [M] begins to float in the air!</span>","You feel tingly and light, but it is difficult to move.")
 
 	suspension_field = new(T)
-	src.visible_message("<span class='notice'>[icon2html(src, viewers(src))]src] [src] activates with a low hum.</span>")
+	src.visible_message("<span class='notice'>[icon2html(src, viewers(src))] [src] activates with a low hum.</span>")
 	icon_state = "suspension3"
 
 	for(var/obj/item/I in T)
@@ -206,7 +206,7 @@
 		to_chat(M, "<span class='info'>You no longer feel like floating.</span>")
 		M.weakened = min(M.weakened, 3)
 
-	src.visible_message("<span class='notice'>[icon2html(src, viewers(src))]src] [src] deactivates with a gentle shudder.</span>")
+	src.visible_message("<span class='notice'>[icon2html(src, viewers(src))] [src] deactivates with a gentle shudder.</span>")
 	qdel(suspension_field)
 	suspension_field = null
 	icon_state = "suspension2"
