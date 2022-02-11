@@ -1697,7 +1697,7 @@
 	if(skill_check(SKILL_WEAPONS, SKILL_BASIC)) // Every rank below this inherits the rank above it. So every rank gets a .5 bonus.
 		. += 1
 	if(skill_check(SKILL_WEAPONS, SKILL_ADEPT))
-		. += 0.5
+		. += 1
 	if(skill_check(SKILL_WEAPONS, SKILL_EXPERT))
 		. += 0.5
 	if(skill_check(SKILL_WEAPONS, SKILL_PROF))
