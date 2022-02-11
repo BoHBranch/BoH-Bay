@@ -70,7 +70,8 @@
 	var/accuracy = 0
 	// Increase of to-hit chance per 1 point of accuracy
 	var/accuracy_power = 5
-	// How unwieldy this weapon for its size, affects accuracy when fired without aiming or moving.
+	// How unwieldy this weapon for its size, affects accuracy when fired without standing still. Masters are nearly uneffected by this.
+	// By the way, negative Bulk makes you more accurate.
 	var/bulk = 0
 	// Time when hand gun's in became active, for purposes of aiming bonuses
 	var/last_handled
@@ -93,6 +94,8 @@
 	var/penetration_mult = 1
 	// Does this firemode at full auto? Effectively an autoclicker. Set to true if yes. The gun will keep firing until empty when the mouse is held down.
 	var/automatic = FALSE
+	// Our base Acc_Mod. Higher levels means the gun has a higher accuracy modifier in the acc_mod calcs.
+	var/acc_mod_base = 1
 	var/next_fire_time = 0
 
 	var/sel_mode = 1 //index of the currently selected mode
@@ -390,21 +393,23 @@
 	if(!istype(P))
 		return //default behaviour only applies to true projectiles
 
-	var/acc_mod = burst_accuracy[min(burst, burst_accuracy.len)]
+	var/acc_mod = acc_mod_base
 	var/disp_mod = dispersion[min(burst, dispersion.len)]
 	var/stood_still = last_handled
-	//Not keeping gun active will throw off aim (for non-Masters)
+	//Not keeping gun active will throw off our standing still bonus, unless we are a master. If a gun has bulk, it also rolls off of this system
 	if(user.skill_check(SKILL_WEAPONS, SKILL_PROF))
 		stood_still = min(user.l_move_time, last_handled)
 	else
 		stood_still = max(user.l_move_time, last_handled)
 
 	stood_still = max(0,round((world.time - stood_still)/10) - 1)
-	if(stood_still)
-		acc_mod += min(max(3, accuracy), stood_still)
+	if(stood_still) // Are we standing still?
+		acc_mod += 1 // Plus to our acc_mod.
 	else
-		acc_mod -= w_class - ITEM_SIZE_NORMAL
-		acc_mod -= bulk
+		acc_mod -= bulk // Our gun is bulky, we get minus to hitting if we are not still.
+		if(bulk > 0) // Is our bulk even existant?
+			to_chat(user, SPAN_WARNING("This weapon is difficult to fire on the move!")) // If so apply it!
+
 
 	if(one_hand_penalty >= 4 && !held_twohanded)
 		acc_mod -= one_hand_penalty/2
@@ -423,6 +428,7 @@
 
 	acc_mod += user.ranged_accuracy_mods()
 	acc_mod += accuracy
+//	to_chat(user, SPAN_WARNING("Your results with firing are..", acc_mod)) if you're testing acc mod results, uncomment this.
 	P.hitchance_mod = accuracy_power*acc_mod
 	P.dispersion = disp_mod
 
