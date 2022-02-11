@@ -53,7 +53,7 @@
 	else
 		STOP_PROCESSING(SSobj, src)
 	update_icon()
-	to_chat(user, "<span class='notice'>[icon2html(src, viewers(src))]src] You switch [scanning ? "on" : "off"] [src].</span>")
+	to_chat(user, "<span class='notice'>[icon2html(src, viewers(src))] You switch [scanning ? "on" : "off"] [src].</span>")
 
 /obj/item/device/geiger/on_update_icon()
 	if(!scanning)

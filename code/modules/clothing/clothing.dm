@@ -183,7 +183,7 @@
 	if(href_list["list_armor_damage"])
 		var/datum/extension/armor/ablative/armor_datum = get_extension(src, /datum/extension/armor/ablative)
 		var/list/damages = armor_datum.get_visible_damage()
-		to_chat(user, "\The [src] [icon2html(src, viewers(src))]src] has some damage:")
+		to_chat(user, "\The [src] [icon2html(src, viewers(src))] has some damage:")
 		for(var/key in damages)
 			to_chat(user, "<li><b>[capitalize(damages[key])]</b> damage to the <b>[key]</b> armor.")
 		return TOPIC_HANDLED
