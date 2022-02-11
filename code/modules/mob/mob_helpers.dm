@@ -424,7 +424,8 @@ proc/is_blind(A)
 	var/turf/sourceturf = get_turf(broadcast_source)
 	for(var/mob/M in targets)
 		if(!sourceturf || (get_z(M) in GetConnectedZlevels(sourceturf.z)))
-			M.show_message("<span class='info'>\icon[icon] [message]</span>", 1)
+			M.show_message("<span class='info'>[icon2html(icon, M)] [message]</span>", 1)
+
 
 /proc/mobs_in_area(var/area/A)
 	var/list/mobs = new

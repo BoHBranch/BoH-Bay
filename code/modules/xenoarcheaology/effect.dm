@@ -39,7 +39,7 @@
 /datum/artifact_effect/Destroy()
 	QDEL_NULL(trigger)
 	. = ..()
-	
+
 /datum/artifact_effect/proc/ToggleActivate(var/reveal_toggle = 1)
 	//so that other stuff happens first
 	spawn(0)
@@ -59,7 +59,7 @@
 			var/atom/toplevelholder = holder
 			while(!istype(toplevelholder.loc, /turf))
 				toplevelholder = toplevelholder.loc
-			toplevelholder.visible_message("<span class='warning'>\icon[toplevelholder] [toplevelholder] [display_msg]</span>")
+			toplevelholder.visible_message("<span class='warning'>[icon2html(src, viewers(src))]toplevelholder] [toplevelholder] [display_msg]</span>")
 
 /datum/artifact_effect/proc/DoEffectTouch(var/mob/user)
 /datum/artifact_effect/proc/DoEffectAura(var/atom/holder)

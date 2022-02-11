@@ -45,6 +45,8 @@
 			return global.SSatoms;
 		if("SScharacter_setup")
 			return global.SScharacter_setup;
+		if("SSchat")
+			return global.SSchat;
 		if("SSchemistry")
 			return global.SSchemistry;
 		if("SScircuit")
@@ -984,6 +986,8 @@
 			global.SSatoms=newval;
 		if("SScharacter_setup")
 			global.SScharacter_setup=newval;
+		if("SSchat")
+			global.SSchat=newval;
 		if("SSchemistry")
 			global.SSchemistry=newval;
 		if("SScircuit")
@@ -1900,6 +1904,7 @@
 	"SSao",
 	"SSatoms",
 	"SScharacter_setup",
+	"SSchat",
 	"SSchemistry",
 	"SScircuit",
 	"SScircuit_components",
@@ -1931,6 +1936,7 @@
 	"SSnano",
 	"SSobj",
 	"SSpersistence",
+	"SSping",
 	"SSplants",
 	"SSprocessing",
 	"SSpsi",

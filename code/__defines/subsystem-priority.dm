@@ -17,6 +17,7 @@
 #define SS_PRIORITY_CHEMISTRY      60  // Multi-tick chemical reactions.
 #define SS_PRIORITY_ALARM          20  // Alarm processing.
 #define SS_PRIORITY_EVENT          20  // Event processing and queue handling.
+#define SS_PRIORITY_CHAT           40  // Chat
 #define SS_PRIORITY_SHUTTLE        20  // Shuttle movement.
 #define SS_PRIORITY_CIRCUIT_COMP   20  // Processing circuit component do_work.
 #define SS_PRIORITY_TEMPERATURE    20  // Cooling and heating of atoms.

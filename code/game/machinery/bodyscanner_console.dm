@@ -1,5 +1,5 @@
 /obj/machinery/body_scanconsole
-	var/obj/machinery/bodyscanner/connected	
+	var/obj/machinery/bodyscanner/connected
 	var/stored_scan_subject
 	name = "Body Scanner Console"
 	icon = 'icons/obj/Cryogenic2.dmi'
@@ -20,7 +20,7 @@
 
 /obj/machinery/body_scanconsole/on_update_icon()
 	if(stat & (BROKEN | NOPOWER))
-		icon_state = "body_scannerconsole-p"	
+		icon_state = "body_scannerconsole-p"
 	else
 		icon_state = initial(icon_state)
 
@@ -31,7 +31,7 @@
 			qdel(src)
 		if(2.0)
 			if (prob(50))
-				qdel(src)				
+				qdel(src)
 
 /obj/machinery/body_scanconsole/proc/FindScanner()
 	for(var/D in GLOB.cardinal)
@@ -40,7 +40,7 @@
 			break
 		GLOB.destroyed_event.register(connected, src, .proc/unlink_scanner)
 
-/obj/machinery/body_scanconsole/proc/unlink_scanner(var/obj/machinery/bodyscanner/scanner)	
+/obj/machinery/body_scanconsole/proc/unlink_scanner(var/obj/machinery/bodyscanner/scanner)
 	GLOB.destroyed_event.unregister(scanner, src, .proc/unlink_scanner)
 	connected = null
 
@@ -94,10 +94,10 @@
 /obj/machinery/body_scanconsole/OnTopic(mob/user, href_list)
 	if(href_list["scan"])
 		if (!connected.occupant)
-			to_chat(user, "\icon[src]<span class='warning'>The body scanner is empty.</span>")
+			to_chat(user, "[icon2html(src, viewers(src))]src]<span class='warning'>The body scanner is empty.</span>")
 			return TOPIC_REFRESH
 		if (!istype(connected.occupant))
-			to_chat(user, "\icon[src]<span class='warning'>The body scanner cannot scan that lifeform.</span>")
+			to_chat(user, "[icon2html(src, viewers(src))]src]<span class='warning'>The body scanner cannot scan that lifeform.</span>")
 			return TOPIC_REFRESH
 		data["printEnabled"] = TRUE
 		data["eraseEnabled"] = TRUE
@@ -106,22 +106,22 @@
 		data["html_scan_header"] = display_medical_data_header(data["scan"], user.get_skill_value(SKILL_MEDICAL))
 		data["html_scan_health"] = display_medical_data_health(data["scan"], user.get_skill_value(SKILL_MEDICAL))
 		data["html_scan_body"] = display_medical_data_body(data["scan"], user.get_skill_value(SKILL_MEDICAL))
-		
+
 		stored_scan_subject = connected.occupant
 		user.visible_message("<span class='notice'>\The [user] performs a scan of \the [connected.occupant] using \the [connected].</span>")
 		return TOPIC_REFRESH
 
 	if (href_list["print"])
 		if (!data["scan"])
-			to_chat(user, "\icon[src]<span class='warning'>Error: No scan stored.</span>")
+			to_chat(user, "[icon2html(src, viewers(src))]src]<span class='warning'>Error: No scan stored.</span>")
 			return TOPIC_REFRESH
 		var/list/scan = data["scan"]
 		new /obj/item/weapon/paper/bodyscan(loc, "Printout error.", "Body scan report - [stored_scan_subject]", scan.Copy())
 		return TOPIC_REFRESH
 
-	if(href_list["push"])		
+	if(href_list["push"])
 		if(!connected_displays.len && !FindDisplays())
-			to_chat(user, "\icon[src]<span class='warning'>Error: No configured displays detected.</span>")
+			to_chat(user, "[icon2html(src, viewers(src))]src]<span class='warning'>Error: No configured displays detected.</span>")
 			return TOPIC_REFRESH
 		for(var/obj/machinery/body_scan_display/D in connected_displays)
 			D.add_new_scan(data["scan"])

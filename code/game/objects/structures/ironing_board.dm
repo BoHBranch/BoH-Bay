@@ -45,7 +45,7 @@
 /obj/structure/bed/roller/ironingboard/examine(mob/user)
 	. = ..()
 	if(cloth)
-		to_chat(user, "<span class='notice'>\The \icon[cloth] [cloth] lies on it.</span>")
+		to_chat(user, "<span class='notice'>\The [icon2html(src, viewers(src))]cloth] [cloth] lies on it.</span>")
 
 /obj/structure/bed/roller/ironingboard/on_update_icon()
 	if(density)
@@ -103,7 +103,7 @@
 				holding = R
 				GLOB.destroyed_event.register(I, src, /obj/structure/bed/roller/ironingboard/proc/remove_item)
 				update_icon()
-				return	
+				return
 			to_chat(user, "<span class='notice'>There isn't anything on the ironing board.</span>")
 			return
 
