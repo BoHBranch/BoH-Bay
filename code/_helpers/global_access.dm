@@ -109,6 +109,8 @@
 			return global.SSobj;
 		if("SSpersistence")
 			return global.SSpersistence;
+		if("SSping")
+			return global.SSping;
 		if("SSplants")
 			return global.SSplants;
 		if("SSprocessing")
@@ -1050,6 +1052,8 @@
 			global.SSobj=newval;
 		if("SSpersistence")
 			global.SSpersistence=newval;
+		if("SSping")
+			global.SSping=newval;
 		if("SSplants")
 			global.SSplants=newval;
 		if("SSprocessing")
