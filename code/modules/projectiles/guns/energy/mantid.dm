@@ -15,7 +15,6 @@
 	burst_delay = 3
 	burst = 3
 	move_delay = 4
-	accuracy = -1
 	wielded_item_state = "particle_rifle-wielded"
 	charge_meter = 0
 	has_safety = FALSE

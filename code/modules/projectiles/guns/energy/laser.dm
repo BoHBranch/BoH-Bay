@@ -144,7 +144,7 @@ obj/item/weapon/gun/energy/retro
 	fire_delay = 35
 	force = 10
 	w_class = ITEM_SIZE_HUGE
-	accuracy = -2 //shooting at the hip
+	accuracy = 0 //shooting at the hip
 	scoped_accuracy = 9
 	scope_zoom = 2
 	wielded_item_state = "gun_wielded"

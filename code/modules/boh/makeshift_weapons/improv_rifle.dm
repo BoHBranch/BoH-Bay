@@ -20,7 +20,7 @@
 	load_method = SINGLE_CASING
 	max_shells = 3
 	ammo_type = /obj/item/ammo_casing/rifle
-	accuracy = -1
+	accuracy = 0
 
 
 /obj/item/weapon/gun/projectile/manualcycle/imprifle/impriflesawn
@@ -44,7 +44,6 @@
 	load_method = SINGLE_CASING
 	max_shells = 3
 	ammo_type =	/obj/item/ammo_casing/rifle
-	accuracy = -2
 
 /obj/item/weapon/imprifleframe/imprifleframesawn
 	name = "unfinished improvised short rifle"
