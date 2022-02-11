@@ -19,15 +19,15 @@
 	bulk = 3
 	var/broke_open = FALSE // Revovlers break open to reveal a cylinder.
 
-/obj/item/gun/projectile/revolver/attack_self(mob/user)
+/obj/item/weapon/gun/projectile/revolver/attack_self(mob/user)
 	broke_open = !broke_open
-	playsound(src, unload_sound, 50)
+	playsound(src, mag_remove_sound, 50)
 	if(broke_open)
 		if(loaded.len)
 			unload_ammo(user)
 	update_icon()
 
-/obj/item/gun/projectile/revolver/update_icon()
+/obj/item/weapon/gun/projectile/revolver/update_icon()
 	..()
 	if(broke_open)
 		icon_state = "[icon_state]_open"
@@ -59,11 +59,11 @@
 
 /obj/item/weapon/gun/projectile/revolver/load_ammo(var/obj/item/A, mob/user)
 	if(!broke_open)
-		to_chat(user, SPAN_WARNING("You can't reload closed revolver!"))
+		to_chat(user, SPAN_WARNING("You can't reload a closed revolver!"))
 		return
 	..()
 
-/obj/item/gun/projectile/revolver/special_check(mob/user) // Make sure they don't fire.
+/obj/item/weapon/gun/projectile/revolver/special_check(mob/user) // Make sure they don't fire.
 	if(broke_open)
 		to_chat(user, "Close the revolver first.")
 		return FALSE
