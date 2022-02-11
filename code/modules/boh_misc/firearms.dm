@@ -245,7 +245,6 @@
 	icon_state = "secguncomp"
 	safety_icon = "safety"
 	magazine_type = /obj/item/ammo_magazine/pistol/rubber
-	accuracy = -1
 	fire_delay = 6
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	has_firing_pin = TRUE
