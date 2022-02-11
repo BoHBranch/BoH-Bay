@@ -43,10 +43,12 @@ GLOBAL_DATUM_INIT(iconCache, /savefile, new("data/tmp/iconCache.sav"))
 
 
 /chatOutput/Destroy(force)
+	SSping.chats -= src
 	return ..()
 
 
 /chatOutput/New(client/C)
+	SSping.chats += src
 	owner = C
 
 
