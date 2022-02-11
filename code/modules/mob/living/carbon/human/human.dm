@@ -1694,12 +1694,14 @@
 		. -= 1
 	if(shock_stage > 30)
 		. -= 1
+	if(skill_check(SKILL_WEAPONS, SKILL_BASIC)) // Every rank below this inherits the rank above it. So every rank gets a .5 bonus.
+		. += 1
 	if(skill_check(SKILL_WEAPONS, SKILL_ADEPT))
-		. += 1
+		. += 0.5
 	if(skill_check(SKILL_WEAPONS, SKILL_EXPERT))
-		. += 1
+		. += 0.5
 	if(skill_check(SKILL_WEAPONS, SKILL_PROF))
-		. += 2
+		. += 0.5
 
 /mob/living/carbon/human/can_drown()
 	if(!internal && (!istype(wear_mask) || !wear_mask.filters_water()))
