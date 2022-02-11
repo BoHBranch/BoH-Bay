@@ -428,7 +428,7 @@
 
 	acc_mod += user.ranged_accuracy_mods()
 	acc_mod += accuracy
-	to_chat(user, SPAN_WARNING("Your results with firing are..", acc_mod)) //If you're testing acc mod results, uncomment this.
+//	to_chat(user, SPAN_WARNING("Your results with firing are..", acc_mod)) if you're testing acc mod results, uncomment this.
 	P.hitchance_mod = accuracy_power*acc_mod
 	P.dispersion = disp_mod
 
