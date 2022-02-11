@@ -38,7 +38,7 @@
 		T = gender_datums[PLURAL]
 	else
 		if(icon)
-			msg += "[icon2html(src, viewers(src))]icon] " //fucking BYOND: this should stop dreamseeker crashing if we -somehow- examine somebody before their icon is generated
+			msg += "[icon2html(src, viewers(src))] " //fucking BYOND: this should stop dreamseeker crashing if we -somehow- examine somebody before their icon is generated
 
 	if(!T)
 		// Just in case someone VVs the gender to something strange. It'll runtime anyway when it hits usages, better to CRASH() now with a helpful message.
