@@ -128,13 +128,13 @@
 	//handcuffed?
 	if(handcuffed)
 		if(istype(handcuffed, /obj/item/weapon/handcuffs/cable))
-			msg += "<span class='warning'>[T.He] [T.is] [icon2html(src, viewers(src))]handcuffed] restrained with cable!</span>\n"
+			msg += "<span class='warning'>[T.He] [T.is] [icon2html(src, viewers(src))]restrained with cable!</span>\n"
 		else
-			msg += "<span class='warning'>[T.He] [T.is] [icon2html(src, viewers(src))]handcuffed] handcuffed!</span>\n"
+			msg += "<span class='warning'>[T.He] [T.is] [icon2html(src, viewers(src))] handcuffed!</span>\n"
 
 	//buckled
 	if(buckled)
-		msg += "<span class='warning'>[T.He] [T.is] [icon2html(src, viewers(src))]buckled] buckled to [buckled]!</span>\n"
+		msg += "<span class='warning'>[T.He] [T.is] [icon2html(src, viewers(src))] buckled to [buckled]!</span>\n"
 
 	//Jitters
 	if(is_jittery)
