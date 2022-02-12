@@ -17,22 +17,6 @@
 	accuracy_power = 8
 	one_hand_penalty = 2
 	bulk = 3
-	var/broke_open = FALSE // Revovlers break open to reveal a cylinder.
-
-/obj/item/weapon/gun/projectile/revolver/attack_self(mob/user)
-	broke_open = !broke_open
-	playsound(src, mag_remove_sound, 50)
-	if(broke_open)
-		if(loaded.len)
-			unload_ammo(user)
-	update_icon()
-
-/obj/item/weapon/gun/projectile/revolver/update_icon()
-	..()
-	if(broke_open)
-		icon_state = "[icon_state]_open"
-	else
-		icon_state = initial(icon_state)
 
 /obj/item/weapon/gun/projectile/revolver/AltClick()
 	if(CanPhysicallyInteract(usr))
@@ -58,15 +42,7 @@
 	return ..()
 
 /obj/item/weapon/gun/projectile/revolver/load_ammo(var/obj/item/A, mob/user)
-	if(!broke_open)
-		to_chat(user, SPAN_WARNING("You can't reload a closed revolver!"))
-		return
-	..()
-
-/obj/item/weapon/gun/projectile/revolver/special_check(mob/user) // Make sure they don't fire.
-	if(broke_open)
-		to_chat(user, "Close the revolver first.")
-		return FALSE
+	chamber_offset = 0
 	return ..()
 
 /obj/item/weapon/gun/projectile/revolver/medium
