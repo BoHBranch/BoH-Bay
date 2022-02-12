@@ -23,6 +23,12 @@
 	item_cost = 3
 	path = /obj/item/ammo_magazine/speedloader/small
 
+/datum/uplink_item/item/ammo/speedloader
+	name = "Speedloader"
+	desc = "A speedloader for 15mm revolvers. Contains 6 rounds."
+	item_cost = 3
+	path = /obj/item/ammo_magazine/speedloader
+
 /datum/uplink_item/item/ammo/darts
 	name = "Dart Cartridge"
 	desc = "A small cartridge for a gas-powered dart gun. Contains 5 hollow darts."
