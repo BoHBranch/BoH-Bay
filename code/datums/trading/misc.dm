@@ -45,7 +45,7 @@
 								/mob/living/simple_animal/hostile/retaliate/parrot      = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/retaliate/beast/samak= TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/retaliate/goat = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/carp = TRADER_All,
+								/mob/living/simple_animal/hostile/carp = TRADER_ALL,
 								)
 
 	possible_trading_items = list(/mob/living/simple_animal/corgi     = TRADER_THIS_TYPE,
