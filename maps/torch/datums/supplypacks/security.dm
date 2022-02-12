@@ -151,7 +151,7 @@
 	name = "Weapons - Light Machine Gun"
 	contains = list(
 		/obj/item/weapon/gun/projectile/automatic/l6_saw = 1,
-		/obj/item/ammo_magazine/box = 2,)
+		/obj/item/ammo_magazine/box/machinegun = 1,)
 	cost = 150
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "l6 law crate"
@@ -169,7 +169,7 @@
 
 /decl/hierarchy/supply_pack/security/machinegunammo
 	name = "Ammunition - light machine gun box"
-	contains = list(/obj/item/ammo_magazine/box = 3)
+	contains = list(/obj/item/ammo_magazine/box/machinegun = 4)
 	cost = 60
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "light machine gun ammo crate"
