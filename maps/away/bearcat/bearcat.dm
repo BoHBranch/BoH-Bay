@@ -18,9 +18,9 @@
 /obj/effect/overmap/visitable/ship/bearcat
 	name = "light freighter"
 	color = "#00ffff"
-	vessel_mass = 60
-	max_speed = 1/(10 SECONDS)
-	burn_delay = 10 SECONDS
+	vessel_mass = 4000
+	max_speed = 1/(2 SECONDS)
+	burn_delay = 1 SECONDS
 	contact_class = /decl/ship_contact_class/ship
 	initial_generic_waypoints = list(
 		"nav_bearcat_fore",
