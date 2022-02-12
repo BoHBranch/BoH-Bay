@@ -11,6 +11,7 @@
 	fire_delay = 12 //Revolvers are naturally slower-firing
 	ammo_type = /obj/item/ammo_casing/pistol/magnum
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
+	fire_sound = 'sound/weapons/gunshot/revolver_medium.ogg'
 	mag_insert_sound = 'sound/weapons/guns/interaction/rev_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/rev_magout.ogg'
 	accuracy = 2
@@ -90,6 +91,7 @@
 	desc = "The Lumoco Protector is a simple, through robust revolver made for those ladies and gentlemen who wish to classily expunge someone from the census!"
 	icon_state = "holdout"
 	item_state = "pen"
+	fire_sound = 'sound/weapons/gunshot/revolver_small.ogg'
 	caliber = CALIBER_PISTOL_SMALL
 	ammo_type = /obj/item/ammo_casing/pistol/small
 	w_class = ITEM_SIZE_SMALL
