@@ -84,7 +84,7 @@
 /decl/hierarchy/supply_pack/security/advancedlaser
 	name = "Weapons - Advanced Laser Weapons"
 	contains = list(/obj/item/weapon/gun/energy/xray = 2,
-					/obj/item/weapon/gun/energy/xray/pistol = 2,
+					/obj/item/weapon/gun/energy/xray/pistol = 2,)
 	cost = 120
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "advanced Laser Weapons crate"
@@ -94,7 +94,7 @@
 /decl/hierarchy/supply_pack/security/pulselaser
 	name = "Weapons - Prototype Pulse Weapons"
 	contains = list(/obj/item/weapon/gun/energy/pulse_rifle/carbine = 2,
-					/obj/item/weapon/gun/energy/pulse_rifle/pistol = 2,
+					/obj/item/weapon/gun/energy/pulse_rifle/pistol = 2,)
 	cost = 140
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "pulse Weapons crate"
