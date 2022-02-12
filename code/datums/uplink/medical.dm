@@ -78,7 +78,7 @@
 
 /datum/uplink_item/item/medical/creth
 	name = "Creth syringe"
-	desc = "A pill bottle of highly illegal drugs, often overdosed on to die a nice death. This syringe contains Creth, and will give you massive speed at the cost of.. Your heart."
+	desc = "A syringe of highly illegal drugs, often overdosed on to die a nice death. This syringe contains Creth, and will give you massive speed at the cost of.. Your heart."
 	item_cost = 5
 	path = /obj/item/weapon/reagent_containers/syringe/creth
 
