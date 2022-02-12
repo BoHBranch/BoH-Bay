@@ -1255,9 +1255,9 @@
 	description = "Creth is a highly illegal chemical with massive boosts and terrible side effects."
 	taste_description = "acid"
 	reagent_state = LIQUID
-	color = "#ff3300"
+	color = "#FFFFFF"
 	metabolism = REM * 0.1
-	overdose = REAGENTS_OVERDOSE * 0.5
+	overdose = 15
 	value = 15
 
 /datum/reagent/creth/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
@@ -1267,9 +1267,10 @@
 		M.emote(pick("twitch", "blink_r", "shiver"))
 	M.add_chemical_effect(CE_SPEEDBOOST, 1)
 	M.add_chemical_effect(CE_PULSE, 3)
-	M.adjust_stamina(5)
+	M.druggy = max(M.druggy, 10)
+	M.adjust_stamina(20)
 	var/obj/item/organ/internal/heart = M.internal_organs_by_name[BP_HEART]
-	heart.take_internal_damage(heart.max_damage * 0.05)
+	heart.take_internal_damage(0.05) // Yeah this is low, any higher and you die insanely fast.
 
 
 /datum/reagent/creth/overdose(var/mob/living/carbon/M, var/alien, var/removed)
