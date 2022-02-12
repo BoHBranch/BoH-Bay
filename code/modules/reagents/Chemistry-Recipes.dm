@@ -137,6 +137,12 @@
 	minimum_temperature = 50 CELSIUS
 	maximum_temperature = (50 CELSIUS) + 100
 
+/datum/chemical_reaction/creth
+	name = "Creth"
+	result = /datum/reagent/creth
+	required_reagents = list(/datum/reagent/adrenaline = 1, /datum/reagent/sugar = 1, /datum/reagent/hyperzine = 1)
+	result_amount = 3
+
 /datum/chemical_reaction/lube
 	name = "Space Lube"
 	result = /datum/reagent/lube
