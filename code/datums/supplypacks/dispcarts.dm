@@ -92,5 +92,9 @@ PACK(syrup_caramel,   /obj/item/weapon/reagent_containers/chem_disp_cartridge/sy
 PACK(syrup_vanilla,   /obj/item/weapon/reagent_containers/chem_disp_cartridge/syrup_vanilla,   "Reagent refill - Vanilla Syrup",       "vanilla syrup reagent cartridge crate",   15)
 PACK(syrup_pumpkin,   /obj/item/weapon/reagent_containers/chem_disp_cartridge/syrup_pumpkin,   "Reagent refill - Pumpkin Spice Syrup", "pumpkin spice syrup reagent cartridge crate",   15)
 
+// Engineering-restricted
+//
+SEC_PACK(boron,     /obj/item/weapon/reagent_containers/chem_disp_cartridge/boron,   "Reagent refill - Boron",    "boron reagent cartridge crate",    45, access_engine)
+
 #undef SEC_PACK
 #undef PACK
