@@ -63,7 +63,7 @@
 
 /decl/hierarchy/supply_pack/medical/bloodpack
 	name = "Refills - Blood packs"
-	contains = list(/obj/item/weapon/storage/box/bloodpacks = 3)
+	contains = list(/obj/item/weapon/storage/box/bloodpacks = 1)
 	cost = 10
 	containername = "blood pack crate"
 
@@ -353,7 +353,7 @@
 
 /decl/hierarchy/supply_pack/medical/autocomp
 	name = "Electronics - Auto-Compressor crate"
-	contains = list(/obj/item/auto_cpr)
+	contains = list(/obj/item/auto_cpr = 2)
 	cost = 50
 	containername = "\improper Auto-Compressor crate"
 	containertype = /obj/structure/closet/crate/secure

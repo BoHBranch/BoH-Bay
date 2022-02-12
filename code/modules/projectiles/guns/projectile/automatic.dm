@@ -288,7 +288,7 @@
 	magazine_type = /obj/item/ammo_magazine/box/machinegun
 	allowed_magazines = list(/obj/item/ammo_magazine/box/machinegun, /obj/item/ammo_magazine/rifle)
 	one_hand_penalty = 10
-	wielded_item_state = "gun_wielded"
+	wielded_item_state = "l6closed_wielded"
 	mag_insert_sound = 'sound/weapons/guns/interaction/lmg_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/lmg_magout.ogg'
 
@@ -297,7 +297,7 @@
 	firemodes = list(
 		list(mode_name="short bursts",	can_autofire=0, burst=5, fire_delay=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2),          dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2)),
 		list(mode_name="long bursts",	can_autofire=0, burst=8, fire_delay=5, one_hand_penalty=12, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
-		list(mode_name="full auto",		can_autofire=1, burst=4, fire_delay=1, one_hand_penalty=12, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
+		list(mode_name="full auto",		can_autofire=1, burst=1, fire_delay=1, one_hand_penalty=12, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
 		)
 
 	var/cover_open = 0
@@ -331,14 +331,17 @@
 /obj/item/weapon/gun/projectile/automatic/l6_saw/on_update_icon()
 	..()
 	if(istype(ammo_magazine, /obj/item/ammo_magazine/box))
-		icon_state = "l6[cover_open ? "open" : "closed"]"
+		icon_state = "l6[cover_open ? "open" : "closed"][round(ammo_magazine.stored_ammo.len, 10)]"
 		item_state = "l6[cover_open ? "open" : "closed"]"
+		wielded_item_state = "l6[cover_open ? "open" : "closed"]-wielded"
 	else if(ammo_magazine)
 		icon_state = "l6[cover_open ? "open" : "closed"]mag"
 		item_state = "l6[cover_open ? "open" : "closed"]mag"
+		wielded_item_state = "l6[cover_open ? "open" : "closed"]mag-wielded"
 	else
 		icon_state = "l6[cover_open ? "open" : "closed"]-empty"
 		item_state = "l6[cover_open ? "open" : "closed"]-empty"
+		wielded_item_state = "l6[cover_open ? "open" : "closed"]-empty-wielded"
 
 /obj/item/weapon/gun/projectile/automatic/l6_saw/load_ammo(var/obj/item/A, mob/user)
 	if(!cover_open)
