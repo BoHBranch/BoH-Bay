@@ -2,6 +2,10 @@
 
 
 //This override is to allow our snowflake species to use voidsuits. Keep this updated with whatever new species you add.
+
+//holy fucking shit I'm pretty sure all of this code was pointless in the fucking first place, if there is no sprite sheet listed it'll just use those that exist
+//if this does end up being needed for some reason in the future then I suggest having this ADD to the sprite sheet instead of REPLCACING it
+/*
 /obj/item/clothing/head/helmet/space/void/Initialize()
 	. = ..()
 	sprite_sheets |= list(
@@ -51,6 +55,9 @@
 		SPECIES_EASTERN = 'icons/mob/onmob/onmob_suit.dmi',
 		SPECIES_HUMAN2 = 'icons/obj/clothing/obj_suit.dmi'
 		)
+
+
+*/
 
 /* SHIT DOESNT WORK FOR WHATEVER REASON ITS CURSED
 /obj/item/clothing/head/helmet/space/void/excavation	//This fixes a literal year-old bug from upstream. Should probably bring it to bay directly but eh.
