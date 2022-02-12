@@ -1,0 +1,10 @@
+Github username: Spummm
+Discord/ckey: Spum
+Changes made:
+Added more random loot to the merchant station
+Added a mech recharger and cargo loader to the merchant station (makes moving lots of things/crates much easier)
+Increased maximum number of traders from 10 to 15
+Added descriptions for various trader defines
+Added several new animals to animal traders on the hub (pike, cosmoshark, opossum, baby slime, giant spider)
+Edited existing food traders to sell all types of food leading to much larger variety
+Removed useless food traders (chinese food, pizza shop) 
