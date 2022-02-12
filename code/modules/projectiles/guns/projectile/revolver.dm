@@ -25,10 +25,9 @@
 	if(broke_open)
 		if(loaded.len)
 			unload_ammo(user)
-	update_icon()
+	update_open_icon()
 
-/obj/item/weapon/gun/projectile/revolver/update_icon()
-	..()
+/obj/item/weapon/gun/projectile/revolver/proc/update_open_icon() // Bay has wielding on update_icon, so if you have this as update_icon, bay breaks the open sprites.
 	if(broke_open)
 		icon_state = "[icon_state]_open"
 	else
@@ -63,9 +62,15 @@
 		return
 	..()
 
+/obj/item/weapon/gun/projectile/revolver/unload_ammo(mob/user, var/allow_dump=1)
+	if(!broke_open)
+		to_chat(user, SPAN_WARNING("You can't unload a closed revolver!"))
+		return
+	..()
+
 /obj/item/weapon/gun/projectile/revolver/special_check(mob/user) // Make sure they don't fire.
 	if(broke_open)
-		to_chat(user, "Close the revolver first.")
+		to_chat(user, SPAN_WARNING("Close the revolver!"))
 		return FALSE
 	return ..()
 
