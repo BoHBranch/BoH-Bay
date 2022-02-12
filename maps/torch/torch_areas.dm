@@ -1005,6 +1005,10 @@
 	name = "\improper Security - Evidence Storage"
 	icon_state = "security"
 
+/area/security/processing
+	name = "\improper Security - Processing"
+	icon_state = "security"
+
 /area/security/questioning
 	name = "\improper Security - Interview Room"
 	icon_state = "security"
