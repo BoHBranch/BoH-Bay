@@ -38,8 +38,6 @@
 								/mob/living/simple_animal/yithian     = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/opossum     = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/slime       = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/carp/pike      = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/carp/shark      = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/giant_spider      = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/retaliate/beast/diyaab = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/bear= TRADER_THIS_TYPE,
@@ -47,7 +45,8 @@
 								/mob/living/simple_animal/hostile/retaliate/parrot      = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/retaliate/beast/samak= TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/retaliate/goat = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/carp = TRADER_THIS_TYPE)
+								/mob/living/simple_animal/hostile/carp = TRADER_All,
+								)
 
 	possible_trading_items = list(/mob/living/simple_animal/corgi     = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/cat         = TRADER_THIS_TYPE,
@@ -63,6 +62,7 @@
 								/mob/living/simple_animal/yithian     = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/opossum     = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/slime       = TRADER_THIS_TYPE,
+								/mob/living/simple_animal/hostile/giant_spider      = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/retaliate/beast/diyaab = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/bear= TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/retaliate/beast/shantak= TRADER_THIS_TYPE,
