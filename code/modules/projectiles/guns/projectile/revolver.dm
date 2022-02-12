@@ -11,28 +11,12 @@
 	fire_delay = 12 //Revolvers are naturally slower-firing
 	ammo_type = /obj/item/ammo_casing/pistol/magnum
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
-	fire_sound = 'sound/weapons/gunshot/revolver_medium.ogg'
 	mag_insert_sound = 'sound/weapons/guns/interaction/rev_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/rev_magout.ogg'
 	accuracy = 2
 	accuracy_power = 8
 	one_hand_penalty = 2
 	bulk = 3
-	var/broke_open = FALSE // Revovlers break open to reveal a cylinder.
-
-/obj/item/weapon/gun/projectile/revolver/attack_self(mob/user)
-	broke_open = !broke_open
-	playsound(src, mag_remove_sound, 50)
-	if(broke_open)
-		if(loaded.len)
-			unload_ammo(user)
-	update_open_icon()
-
-/obj/item/weapon/gun/projectile/revolver/proc/update_open_icon() // Bay has wielding on update_icon, so if you have this as update_icon, bay breaks the open sprites.
-	if(broke_open)
-		icon_state = "[icon_state]_open"
-	else
-		icon_state = initial(icon_state)
 
 /obj/item/weapon/gun/projectile/revolver/AltClick()
 	if(CanPhysicallyInteract(usr))
@@ -58,21 +42,7 @@
 	return ..()
 
 /obj/item/weapon/gun/projectile/revolver/load_ammo(var/obj/item/A, mob/user)
-	if(!broke_open)
-		to_chat(user, SPAN_WARNING("You can't reload a closed revolver!"))
-		return
-	..()
-
-/obj/item/weapon/gun/projectile/revolver/unload_ammo(mob/user, var/allow_dump=1)
-	if(!broke_open)
-		to_chat(user, SPAN_WARNING("You can't unload a closed revolver!"))
-		return
-	..()
-
-/obj/item/weapon/gun/projectile/revolver/special_check(mob/user) // Make sure they don't fire.
-	if(broke_open)
-		to_chat(user, SPAN_WARNING("Close the revolver!"))
-		return FALSE
+	chamber_offset = 0
 	return ..()
 
 /obj/item/weapon/gun/projectile/revolver/medium
@@ -91,7 +61,6 @@
 	desc = "The Lumoco Protector is a simple, through robust revolver made for those ladies and gentlemen who wish to classily expunge someone from the census!"
 	icon_state = "holdout"
 	item_state = "pen"
-	fire_sound = 'sound/weapons/gunshot/revolver_small.ogg'
 	caliber = CALIBER_PISTOL_SMALL
 	ammo_type = /obj/item/ammo_casing/pistol/small
 	w_class = ITEM_SIZE_SMALL

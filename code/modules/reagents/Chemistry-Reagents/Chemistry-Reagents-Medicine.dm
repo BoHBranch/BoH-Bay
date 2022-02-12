@@ -1249,3 +1249,33 @@
 	if(alien == IS_DIONA)
 		return
 	M.add_chemical_effect(CE_PAINKILLER, 30) // Light painkiller.
+
+/datum/reagent/creth
+	name = "Creth"
+	description = "Creth is a highly illegal chemical with massive boosts and terrible side effects."
+	taste_description = "acid"
+	reagent_state = LIQUID
+	color = "#FFFFFF"
+	metabolism = REM * 0.1
+	overdose = 15
+	value = 15
+
+/datum/reagent/creth/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+	if(prob(5))
+		M.emote(pick("twitch", "blink_r", "shiver"))
+	M.add_chemical_effect(CE_SPEEDBOOST, 1)
+	M.add_chemical_effect(CE_PULSE, 3)
+	M.druggy = max(M.druggy, 10)
+	M.adjust_stamina(20)
+	var/obj/item/organ/internal/heart = M.internal_organs_by_name[BP_HEART]
+	heart.take_internal_damage(0.05) // Yeah this is low, any higher and you die insanely fast.
+
+
+/datum/reagent/creth/overdose(var/mob/living/carbon/M, var/alien, var/removed)
+	..()
+	M.add_chemical_effect(CE_TOXIN, 3)
+	M.add_chemical_effect(CE_PAINKILLER, 80)
+	M.add_chemical_effect(CE_SPEEDBOOST, 5)
+	M.add_chemical_effect(CE_PULSE, 2)
