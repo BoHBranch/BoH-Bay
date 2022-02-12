@@ -80,7 +80,7 @@
 	name = "Creth syringe"
 	desc = "A pill bottle of highly illegal drugs, often overdosed on to die a nice death. This syringe contains Creth, and will give you massive speed at the cost of.. Your heart."
 	item_cost = 5
-	path = /obj/item/weapon/storage/pill_bottle/three_eye
+	path = /obj/item/weapon/reagent_containers/syringe/creth
 
 /datum/uplink_item/item/medical/three_eye
 	name = "Three Eye pill bottle"
