@@ -71,7 +71,7 @@
 
 /obj/item/weapon/gun/projectile/revolver/special_check(mob/user) // Make sure they don't fire.
 	if(broke_open)
-		to_chat(user, SPAN_WARNING("Close the revolver!"))
+		to_chat(user, SPAN_WARNING("You can't fire the revolver in this state, close the revolver!"))
 		return FALSE
 	return ..()
 
