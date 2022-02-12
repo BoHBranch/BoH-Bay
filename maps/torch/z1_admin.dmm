@@ -8740,6 +8740,16 @@
 	req_access = list("ACCESS_MERCHANT")
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "aOd" = (
@@ -8935,6 +8945,7 @@
 /obj/random/loot,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/effect/decal/cleanable/dirt,
+/obj/random/contraband,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "aOM" = (
@@ -9296,6 +9307,8 @@
 	dir = 4
 	},
 /obj/structure/table/woodentable,
+/obj/random/drinkbottle,
+/obj/random/drinkbottle,
 /turf/simulated/floor/wood,
 /area/merchant_station)
 "aQd" = (
@@ -9938,6 +9951,8 @@
 /area/merchant_station)
 "aSS" = (
 /obj/effect/floor_decal/industrial/warning,
+/obj/machinery/mech_recharger,
+/mob/living/exosuit/premade/powerloader,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aST" = (
@@ -10909,8 +10924,12 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aWn" = (
-/obj/structure/table/steel,
 /obj/machinery/light/small,
+/obj/structure/table/rack,
+/obj/item/stack/material/aluminium,
+/obj/item/stack/material/aluminium,
+/obj/item/stack/material/aluminium,
+/obj/item/stack/material/aluminium,
 /turf/simulated/floor/plating,
 /area/merchant_station)
 "aWp" = (
@@ -12231,6 +12250,7 @@
 /obj/random/loot,
 /obj/random/loot,
 /obj/random/illegal,
+/obj/random/illegal,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "oMZ" = (
@@ -12376,6 +12396,11 @@
 /obj/random/loot,
 /obj/random/loot,
 /obj/random/junk,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "rJY" = (
@@ -12451,7 +12476,6 @@
 /obj/random/loot,
 /obj/random/loot,
 /obj/random/loot,
-/obj/random/illegaltwo,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "twU" = (

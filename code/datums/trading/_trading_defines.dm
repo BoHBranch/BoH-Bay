@@ -1,7 +1,7 @@
-#define TRADER_THIS_TYPE     1
-#define TRADER_SUBTYPES_ONLY 2
-#define TRADER_ALL           3
-#define TRADER_BLACKLIST     4
+#define TRADER_THIS_TYPE     1 //Trader can trade this subtype, but not any subtypes coming out of it (It can buy /material/steel , but not /material/steel/fifty).
+#define TRADER_SUBTYPES_ONLY 2 //Trader can not trade this subtype, but it can trade all subtypes of it (Can't sell weapons/gun, but can sell weapons/gun/energy).
+#define TRADER_ALL           3 //Trader can sell THIS subtype (/material/glass/) AND any subtypes it has (/material/glass/reinforced).
+#define TRADER_BLACKLIST     4 //Trader can NOT sell this, even if it was told earlier that it could.
 #define TRADER_BLACKLIST_SUB 8
 #define TRADER_BLACKLIST_ALL 12
 
