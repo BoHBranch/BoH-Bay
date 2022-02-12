@@ -167,6 +167,15 @@
 	access = access_security
 	security_level = SUPPLY_SECURITY_ELEVATED
 
+/decl/hierarchy/supply_pack/security/machinegunammo
+	name = "Ammunition - light machine gun box"
+	contains = list(/obj/item/ammo_magazine/box = 3)
+	cost = 60
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "light machine gun ammo crate"
+	access = access_security
+	security_level = SUPPLY_SECURITY_HIGH
+
 /decl/hierarchy/supply_pack/security/pistolammorubber
 	name = "Ammunition - pistol rubber"
 	contains = list(/obj/item/ammo_magazine/pistol/double/rubber = 4)
