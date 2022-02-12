@@ -1461,6 +1461,7 @@
 #include "code\modules\awaymissions\trigger.dm"
 #include "code\modules\awaymissions\zlevel.dm"
 #include "code\modules\blob\blob.dm"
+#include "code\modules\boh\admin\items.dm"
 #include "code\modules\boh\admin\panicbunker.dm"
 #include "code\modules\boh\antiboarding\tur_id.dm"
 #include "code\modules\boh\ascent2\chemicals.dm"
@@ -3385,7 +3386,6 @@
 #include "modular_mithra\code\modules\sprite_accessories\_accessory_hair.dm"
 #include "modular_mithra\code\modules\sprite_accessories\accessory_humanathi.dm"
 #include "modular_mithra\code\modules\sprite_accessories\accessory_tajara.dm"
-#include "code\modules\boh\admin\items.dm" //Loading it after torch areas
 #include "~code\clothing.dm"
 #include "~code\global_init.dm"
 // END_INCLUDE
