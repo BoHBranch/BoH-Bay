@@ -26,7 +26,7 @@
 				"bribe_refusal"      = "Of course sir! ORIGIN is always here for you!",
 				)
 
-/datum/trader/sghip/bakery
+/datum/trader/ship/bakery
 	name = "Pastry Chef"
 	name_language = TRADER_DEFAULT_NAME
 	origin = "Bakery"
