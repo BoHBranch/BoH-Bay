@@ -44,7 +44,7 @@
 	name = "Observatory Dock"
 	landmark_tag = "nav_skrellscout_start"
 	docking_controller = "observatory_dock"
-	base_area = /area/observatory/dock
+	base_area = /area/observatory
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/shuttle_landmark/skrellscoutship/dock

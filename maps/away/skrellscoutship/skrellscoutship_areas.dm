@@ -67,7 +67,3 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 	base_turf = /turf/space
 	req_access = list(access_skrellscoutship)
-
-/area/observatory/dock
-	name = "\improper Observatory"
-	icon_state = "entry_1"
