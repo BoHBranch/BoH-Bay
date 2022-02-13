@@ -141,6 +141,12 @@
 	item_cost = 10
 	path = /obj/item/weapon/gun/projectile/revolver/holdout
 
+/datum/uplink_item/item/visible_weapons/revolver
+	name = "Revolver (15mm)"
+	desc = "A deadly revolver. Useful for putting holes in fools."
+	item_cost = 40
+	path = /obj/item/weapon/gun/projectile/revolver
+
 /datum/uplink_item/item/visible_weapons/pulserifle
 	name = "Pulse Rifle"
 	desc = "A triple burst, heavy laser rifle, with a large battery compacity."
