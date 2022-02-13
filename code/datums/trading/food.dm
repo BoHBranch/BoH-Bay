@@ -150,3 +150,4 @@
 							/obj/item/weapon/reagent_containers/food/snacks/meat/human                 = TRADER_BLACKLIST,
 							/obj/item/weapon/reagent_containers/food/snacks/variable                   = TRADER_BLACKLIST_ALL
 								)
+								
