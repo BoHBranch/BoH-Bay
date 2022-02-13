@@ -99,6 +99,9 @@
 	var/list/firemodes = list() // Your lists of firemodes.
 	var/selector_sound = 'sound/weapons/guns/selector.ogg'
 
+	var/slowdown_held = 0 //How much slowdown when held
+	var/slowdown_worn = 0 //How much slowdown when worn
+
 	//aiming system stuff
 	var/keep_aim = 1 	//1 for keep shooting until aim is lowered
 						//0 for one bullet after tarrget moves and aim is lowered
@@ -130,6 +133,11 @@
 		pin = new firing_pin_type(src)
 		pin.installed_in = src
 
+	slowdown_per_slot[slot_l_hand] =  slowdown_held
+	slowdown_per_slot[slot_r_hand] =  slowdown_held
+	slowdown_per_slot[slot_back] =    slowdown_worn
+	slowdown_per_slot[slot_belt] =    slowdown_worn
+	slowdown_per_slot[slot_s_store] = slowdown_worn
 
 /obj/item/weapon/gun/update_twohanding()
 	if(one_hand_penalty)

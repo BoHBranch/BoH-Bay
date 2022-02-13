@@ -50,7 +50,7 @@
 	name = "x-ray beam"
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/laser3.ogg'
-	damage = 40
+	damage = 30 //lower damage, high pen
 	armor_penetration = 30
 	shrapnel_chance_multiplier = 0.8
 	arterial_bleed_chance_multiplier = 0.8
@@ -60,7 +60,7 @@
 	impact_type = /obj/effect/projectile/laser/xray/impact
 
 /obj/item/projectile/beam/xray/midlaser
-	damage = 30
+	damage = 40
 	armor_penetration = 60
 	distance_falloff = 1
 
@@ -68,17 +68,20 @@
 	name = "pulse"
 	icon_state = "u_laser"
 	fire_sound='sound/weapons/pulse.ogg'
-	damage = 15 //lower damage, but fires in bursts
+	damage = 20 //worse than the x-ray, except that most pulse weapons fire in burst.
+	armor_penetration = 40
 
 	muzzle_type = /obj/effect/projectile/laser/pulse/muzzle
 	tracer_type = /obj/effect/projectile/laser/pulse/tracer
 	impact_type = /obj/effect/projectile/laser/pulse/impact
 
 /obj/item/projectile/beam/pulse/mid
-	damage = 20
+	damage = 30
+	armor_penetration = 60
 
 /obj/item/projectile/beam/pulse/heavy
-	damage = 25
+	damage = 60
+	armor_penetration = 80
 
 /obj/item/projectile/beam/pulse/destroy
 	name = "destroyer pulse"
@@ -92,16 +95,23 @@
 
 /obj/item/projectile/beam/pulse/skrell
 	icon_state = "pu_laser"
-	damage = 20
+	damage = 30
+	armor_penetration = 20
 	muzzle_type = /obj/effect/projectile/laser/pulse/skrell/muzzle
 	tracer_type = /obj/effect/projectile/laser/pulse/skrell/tracer
 	impact_type = /obj/effect/projectile/laser/pulse/skrell/impact
 
 /obj/item/projectile/beam/pulse/skrell/heavy
-	damage = 30
+	damage = 50
+	armor_penetration = 20
 
 /obj/item/projectile/beam/pulse/skrell/single
-	damage = 50
+	damage = 70
+	armor_penetration = 20
+
+/obj/item/projectile/beam/pulse/skrell/single/lance
+	distance_falloff = 0.50
+	damage = 100
 
 /obj/item/projectile/beam/emitter
 	name = "emitter beam"
@@ -169,6 +179,7 @@
 	name = "sniper beam"
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/marauder.ogg'
+	distance_falloff = 0.50
 	damage = 65
 	armor_penetration = 25
 	stun = 3

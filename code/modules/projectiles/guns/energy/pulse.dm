@@ -72,6 +72,7 @@
 	icon_state = "skrell_carbine"
 	item_state = "skrell_carbine"
 	slot_flags = SLOT_BACK|SLOT_BELT
+	origin_tech = list(TECH_COMBAT = 10, TECH_MAGNET = 7)
 	self_recharge = 1
 	move_delay = 2
 	projectile_type=/obj/item/projectile/beam/pulse/skrell/single
@@ -85,3 +86,34 @@
 		list(mode_name="single", projectile_type=/obj/item/projectile/beam/pulse/skrell/single, charge_cost=120, burst=1, burst_delay=null),
 		list(mode_name="double", projectile_type=/obj/item/projectile/beam/pulse/skrell/heavy, charge_cost=55, burst=2, burst_delay=3),
 		)
+
+//SSV Ions
+/obj/item/weapon/gun/energy/pulse_rifle/skrell/lance
+	name = "WK-53 Energy Lance"
+	desc = "The Wuu'tap Kal'xuum 53 or WK-53 is a man portable anti-armor weapon designed for longer range operations, with a potent, secondary ion discharge."
+	icon = 'icons/boh/obj/guns/ion.dmi'
+	icon_state = "ionskrifle"
+	item_state = "ionskrifle"
+	one_hand_penalty = 6
+	accuracy = -4
+	bulk = 8
+	scoped_accuracy = 9
+	recharge_time = 20
+	fire_delay = 30
+	slowdown_held = 2
+	slowdown_worn = 1
+	screen_shake = 0 //screenshake breaks the scope.
+	scope_zoom = 2
+	charge_cost = 240
+	max_shots = 6
+	projectile_type = /obj/item/projectile/beam/pulse/skrell/single/lance
+	wielded_item_state = "ionskrifle_wielded"
+	item_icons = list(
+		slot_l_hand_str = 'icons/boh/mob/items/lefthand_guns.dmi',
+		slot_r_hand_str = 'icons/boh/mob/items/righthand_guns.dmi',
+		slot_back_str = 'icons/boh/mob/items/onmob_back.dmi',
+	)
+	firemodes = list(
+		list(mode_name="pulse", projectile_type=/obj/item/projectile/beam/pulse/skrell/single/lance, charge_cost=240, burst=1, burst_delay=null),
+		list(mode_name="ion", projectile_type=/obj/item/projectile/ion/skrell, charge_cost=720, burst=1, burst_delay=null),
+	)

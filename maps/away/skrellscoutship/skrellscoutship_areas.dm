@@ -15,7 +15,7 @@
 	icon_state = "green"
 
 /area/ship/skrellscoutship/crew/fit
-	name = "\improper Exercise Area"
+	name = "\improper Chemistry"
 	icon_state = "green"
 
 /area/ship/skrellscoutship/crew/toilets
@@ -69,5 +69,5 @@
 	req_access = list(access_skrellscoutship)
 
 /area/observatory/dock
-	name = "\improper Docking Port"
+	name = "\improper Observatory"
 	icon_state = "entry_1"
