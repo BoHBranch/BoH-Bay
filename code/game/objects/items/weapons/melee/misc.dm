@@ -48,7 +48,7 @@
 	desc = "A polished sword issued to Fleet officers and NCOs alike. Surprisngly robust and deadly. Considering its former roots as a ship to ship weapon, before the rise of Frangible ammuniton and Laser weaponry."
 	icon_state = "fleet_sword"
 	item_state = "officersword"
-	force_divisor = 0.6 // 36 damage considering they're all made out of steel.
+	force_divisor = 0.55 // 33 damage considering they're all made out of steel.
 	w_class = ITEM_SIZE_HUGE
 	applies_material_colour = FALSE
 
