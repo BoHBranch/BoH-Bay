@@ -88,7 +88,7 @@
 	var/memo = {"
 	<tt><center><b><font color='red'>SECRET - CODE WORDS: DAGON</font></b>
 	<h3>SOLGOV FLEET COMMAND</h3>
-	<img src = ntlogo.png>
+	<img src = sollogo.png>
 	</center>
 	<b>FROM:</b> ADM William Lau<br>
 	<b>TO:</b> Commanding Officer of SGV Dagon<br>
@@ -131,7 +131,7 @@
 	info = {"
 	<tt><center><b><font color='red'>TOP SECRET - CODE WORDS: DAGON UMBRA</font></b>
 	<h3>OFFICE OF THE SECRETARY GENERAL OF THE SOLGOV FLEET</h3>
-	<img src = ntlogo.png
+	<img src = sollogo.png>
 	</center>
 	<b>FROM:</b> Johnathan Smitherson, Special Aide of the Secretary General<br>
 	<b>TO:</b> Commanding Officer of the SGV Dagon<br>
