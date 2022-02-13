@@ -49,6 +49,7 @@
 	safety_icon = "medium_safety"
 	caliber = CALIBER_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol
+	fire_sound = 'sound/weapons/gunshot/revolver_small.ogg'
 	desc = "The Lumoco Arms' Mk12 is a rugged revolver for people who don't keep their guns well-maintained. Unlike its cousin, the Mk59 'Jhen Bothus', it has no issues with reliability."
 	accuracy = 1
 	bulk = 0
