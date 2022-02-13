@@ -85,3 +85,4 @@
 				"insult_good"        = "Blub do not understand. Blub thought we were briends.",
 				"insult_bad"         = "Blub feels bad now.",
 				)
+				
