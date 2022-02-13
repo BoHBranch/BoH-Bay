@@ -9952,7 +9952,10 @@
 "aSS" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/mech_recharger,
-/mob/living/exosuit/premade/powerloader,
+/mob/living/exosuit/premade/powerloader{
+	health = 1000;
+	maxHealth = 1000
+	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aST" = (
@@ -12239,18 +12242,16 @@
 "oLN" = (
 /obj/structure/closet/crate,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
 /obj/random/illegal,
 /obj/random/illegal,
+/obj/random/illegal,
+/obj/random/illegal,
+/obj/random/illegaltwo,
+/obj/random/illegaltwo,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/contraband,
+/obj/random/contraband,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "oMZ" = (
