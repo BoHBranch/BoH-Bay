@@ -6,7 +6,7 @@
 	icon_state = "closed";
 	name = "Observatory Access"
 	},
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "ae" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -15,7 +15,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden,
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "ag" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /obj/machinery/door/blast/regular/open{
@@ -24,7 +24,7 @@
 	name = "Blast Doors"
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "ah" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/machinery/alarm/skrell{
@@ -33,7 +33,7 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "ao" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -41,7 +41,7 @@
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "ap" = (
 /obj/structure/window/phoronreinforced,
 /obj/machinery/light/skrell{
@@ -65,21 +65,21 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "aA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "aJ" = (
 /obj/structure/bed/chair/padded/red{
 	dir = 1;
 	icon_state = "chair_preview"
 	},
 /turf/simulated/floor/carpet/purple,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "aO" = (
 /obj/machinery/computer/cryopod{
 	name = "observatory oversight console";
@@ -91,19 +91,19 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "aW" = (
 /obj/structure/window/phoronreinforced{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "bc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "bf" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	frequency = 1289;
@@ -124,7 +124,7 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "bq" = (
 /obj/structure/ship_munition/disperser_charge/emp{
 	name = "Quxiim'Vali Payload"
@@ -134,7 +134,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/red,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "bu" = (
 /obj/machinery/door/airlock/external/glass{
 	frequency = 1289;
@@ -160,7 +160,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "bS" = (
 /turf/space,
 /area/space)
@@ -200,7 +200,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "cT" = (
 /obj/machinery/button/blast_door{
 	id_tag = "xil_reactor";
@@ -228,7 +228,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/reinforced,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "df" = (
 /obj/effect/paint/black,
 /obj/structure/cable{
@@ -266,7 +266,7 @@
 "dA" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/plating,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "dO" = (
 /obj/machinery/power/skrell_reactor,
 /obj/structure/cable/yellow{
@@ -324,7 +324,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/reinforced,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "eg" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /obj/machinery/door/blast/regular/open{
@@ -338,7 +338,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "ek" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -347,7 +347,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "el" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -360,7 +360,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "es" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
@@ -374,7 +374,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/hologram/holopad/longrange/remoteship,
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "ew" = (
 /obj/machinery/air_sensor{
 	id_tag = "xil_out"
@@ -432,7 +432,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "eD" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -460,17 +460,17 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "eM" = (
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "eX" = (
 /turf/simulated/floor/reinforced,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "fa" = (
 /obj/machinery/portable_atmospherics/canister/air/airlock{
 	start_pressure = 1900;
@@ -497,7 +497,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "fg" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -505,13 +505,13 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "fj" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "ft" = (
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/brig)
@@ -530,7 +530,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "gb" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -545,7 +545,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "gv" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden,
 /turf/simulated/floor/tiled/skrell/white,
@@ -570,7 +570,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/light/skrell,
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "gG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -703,7 +703,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "hy" = (
 /obj/machinery/power/smes/buildable/preset/skrell{
 	charge = 5e+006;
@@ -714,7 +714,7 @@
 	},
 /obj/structure/cable,
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "hG" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -723,7 +723,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "hH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -771,7 +771,7 @@
 "hX" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "hY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -807,7 +807,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "io" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -830,7 +830,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "is" = (
 /obj/structure/bed/chair/padded/red,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -877,7 +877,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "ji" = (
 /turf/unsimulated/wall{
 	desc = "A secure airlock. Doesn't look like you can get through easily.";
@@ -886,7 +886,7 @@
 	icon_state = "closed";
 	name = "Facility Access"
 	},
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "jm" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -928,7 +928,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "jY" = (
 /obj/machinery/body_scanconsole{
 	dir = 1
@@ -937,7 +937,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "kb" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
@@ -953,19 +953,19 @@
 "kh" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "kl" = (
 /obj/machinery/light/skrell{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/green,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "km" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "kx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 9
@@ -1004,7 +1004,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "kM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1015,7 +1015,7 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "kN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1057,7 +1057,7 @@
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/skrell/red,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "lc" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /turf/simulated/floor/tiled/skrell/orange,
@@ -1168,7 +1168,7 @@
 	dir = 10
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "mu" = (
 /obj/effect/submap_landmark/joinable_submap/skrellscoutship,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1202,7 +1202,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "np" = (
 /obj/effect/paint/black,
 /obj/structure/cable{
@@ -1240,13 +1240,13 @@
 	temperature = 313.15
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "nM" = (
 /obj/machinery/light/skrell{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "nV" = (
 /obj/effect/paint/black,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1278,7 +1278,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "oV" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
@@ -1296,7 +1296,7 @@
 /area/ship/skrellscoutship/command/bridge)
 "pn" = (
 /turf/simulated/floor/tiled/skrell/green,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "pB" = (
 /obj/structure/ship_munition/disperser_charge/explosive{
 	name = "Quxiim'Huqii-i Payload"
@@ -1318,7 +1318,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "pD" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -1330,7 +1330,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "pQ" = (
 /obj/machinery/turretid/stun{
 	ailock = 1;
@@ -1370,7 +1370,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "qq" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -1417,7 +1417,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "qB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -1426,7 +1426,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "qI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -1454,7 +1454,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "qN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -1486,7 +1486,7 @@
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "qY" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
@@ -1500,13 +1500,13 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "rd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "rh" = (
 /obj/machinery/door/airlock/external/glass{
 	frequency = 1289;
@@ -1517,7 +1517,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/plating,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "rl" = (
 /obj/structure/window/phoronreinforced{
 	dir = 4
@@ -1597,7 +1597,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "rR" = (
 /obj/structure/table/glass,
 /obj/item/weapon/reagent_containers/glass/beaker/large,
@@ -1610,7 +1610,7 @@
 	pixel_x = 6
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "rS" = (
 /obj/machinery/door/airlock/glass{
 	door_color = "#404040";
@@ -1619,7 +1619,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "rY" = (
 /obj/machinery/porta_turret/ssv,
 /obj/structure/window/phoronreinforced{
@@ -1665,7 +1665,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "sm" = (
 /obj/structure/table/rack/dark,
 /obj/item/stack/material/plasteel/fifty,
@@ -1675,21 +1675,21 @@
 /obj/item/stack/material/steel/fifty,
 /obj/item/stack/material/steel/fifty,
 /turf/simulated/floor/tiled/skrell/red,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "sn" = (
 /obj/structure/ship_munition/disperser_charge/emp{
 	name = "Quxiim'Vali Payload"
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/skrell/red,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "sy" = (
 /obj/machinery/chemical_dispenser/ert,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "sB" = (
 /obj/machinery/disperser/back{
 	dir = 8;
@@ -1702,7 +1702,7 @@
 	level = 2
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "td" = (
 /obj/machinery/light/skrell{
 	dir = 4
@@ -1713,7 +1713,7 @@
 	id_tag = "observatory_dock_pump"
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "te" = (
 /obj/effect/paint/black,
 /obj/structure/disposalpipe/segment,
@@ -1730,7 +1730,7 @@
 	},
 /obj/machinery/vitals_monitor,
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "tg" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -1740,7 +1740,7 @@
 "ti" = (
 /obj/structure/bed/chair/padded/red,
 /turf/simulated/floor/carpet/purple,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "tt" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
@@ -1751,7 +1751,7 @@
 	},
 /obj/structure/bed/chair/padded/red,
 /turf/simulated/floor/carpet/purple,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "tF" = (
 /obj/machinery/light/skrell{
 	dir = 1
@@ -1760,7 +1760,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "tG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -1769,7 +1769,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/skrell/green,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "tR" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -1777,7 +1777,7 @@
 /obj/structure/table/woodentable/ebony,
 /obj/machinery/chemical_dispenser/bar_soft/full,
 /turf/simulated/floor/carpet/purple,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "tS" = (
 /obj/structure/bed/padded,
 /obj/structure/curtain/open/bed,
@@ -1800,7 +1800,7 @@
 /obj/structure/table/woodentable/ebony,
 /obj/machinery/chemical_dispenser/bar_coffee/full,
 /turf/simulated/floor/carpet/purple,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "ug" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -1809,13 +1809,13 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "uk" = (
 /obj/machinery/door/airlock/highsecurity{
 	name = "Munitions"
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "up" = (
 /obj/structure/ship_munition/disperser_charge/explosive{
 	name = "Quxiim'Huqii-i Payload"
@@ -1849,7 +1849,7 @@
 	id_tag = "observatory_dock_pump"
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "uJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 4
@@ -1884,12 +1884,12 @@
 /obj/item/weapon/reagent_containers/food/condiment/psilocybin,
 /obj/item/weapon/reagent_containers/food/condiment/space_drugs,
 /turf/simulated/floor/carpet/purple,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "vl" = (
 /obj/structure/table/woodentable/ebony,
 /obj/item/weapon/storage/box/glasses/pint,
 /turf/simulated/floor/carpet/purple,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "vu" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
@@ -1921,7 +1921,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "vM" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1;
@@ -1948,7 +1948,7 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "vV" = (
 /obj/machinery/porta_turret/ssv,
 /obj/structure/window/phoronreinforced{
@@ -1969,11 +1969,11 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "wq" = (
 /obj/machinery/light/skrell,
 /turf/simulated/floor/tiled/skrell/green,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "wy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -1982,7 +1982,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "wz" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
@@ -2006,7 +2006,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "wN" = (
 /obj/effect/overmap/visitable/sector/skrellscoutspace,
 /obj/effect/landmark/map_data,
@@ -2027,7 +2027,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "xd" = (
 /obj/machinery/door/airlock/external/glass{
 	frequency = 1289;
@@ -2035,7 +2035,7 @@
 	locked = 1
 	},
 /turf/simulated/floor/plating,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "xi" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	frequency = 1289;
@@ -2127,7 +2127,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "xM" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
@@ -2257,7 +2257,7 @@
 "zd" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden,
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "zj" = (
 /obj/structure/window/phoronreinforced,
 /obj/structure/window/phoronreinforced{
@@ -2329,7 +2329,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "zM" = (
 /obj/machinery/portable_atmospherics/canister/air/airlock{
 	start_pressure = 1900;
@@ -2537,7 +2537,7 @@
 /obj/item/stack/material/plastic/fifty,
 /obj/item/stack/material/plastic/fifty,
 /turf/simulated/floor/tiled/skrell/red,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "BR" = (
 /obj/effect/paint/black,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
@@ -2591,7 +2591,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "Cx" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 8
@@ -2648,7 +2648,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "Dc" = (
 /obj/structure/table/rack/dark,
 /obj/item/weapon/melee/baton/loaded,
@@ -2706,13 +2706,13 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "DQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "DV" = (
 /obj/machinery/vending/engineering{
 	density = 0;
@@ -2748,7 +2748,7 @@
 	id_tag = "observatory_dock_pump"
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "Ey" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -2806,7 +2806,7 @@
 /area/ship/skrellscoutship/command/bridge)
 "EK" = (
 /turf/simulated/floor/tiled/skrell/red,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "ES" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -2839,7 +2839,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "Fu" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
@@ -2907,7 +2907,7 @@
 	id_tag = "observatory_dock_pump"
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "FY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -3134,7 +3134,7 @@
 /area/ship/skrellscoutship/command/brig)
 "HD" = (
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "HE" = (
 /obj/machinery/disposal/deliveryChute{
 	dir = 4
@@ -3174,7 +3174,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "Ic" = (
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/crew/hallway/d1)
@@ -3219,7 +3219,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell/orange,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "Ip" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /obj/structure/cable/yellow{
@@ -3364,7 +3364,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "JS" = (
 /obj/machinery/space_heater/skrell,
 /turf/simulated/floor/tiled/skrell,
@@ -3595,7 +3595,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "LU" = (
 /obj/structure/table/woodentable/ebony,
 /obj/machinery/chemical_dispenser/bar_soft/full,
@@ -3616,7 +3616,7 @@
 /obj/item/weapon/storage/box/bodybags,
 /obj/structure/table/glass,
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "Mf" = (
 /obj/structure/bed/chair/padded/red{
 	dir = 4;
@@ -3657,7 +3657,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "MQ" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
@@ -3774,7 +3774,7 @@
 	name = "Ka'li'xuq"
 	},
 /turf/simulated/floor/carpet/purple,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "Om" = (
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	cycle_to_external_air = 1;
@@ -3820,7 +3820,7 @@
 /area/ship/skrellscoutship/maintenance/power)
 "OI" = (
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "OJ" = (
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
@@ -3887,7 +3887,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "Qu" = (
 /obj/machinery/hologram/holopad/longrange/remoteship,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -3969,7 +3969,7 @@
 "QH" = (
 /obj/machinery/optable,
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "QJ" = (
 /obj/machinery/door/airlock/glass/command{
 	door_color = "#404040"
@@ -4344,7 +4344,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/skrell/red,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "Tn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/closet/crate/secure/biohazard/alt,
@@ -4377,7 +4377,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "TF" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
@@ -4468,7 +4468,7 @@
 "UK" = (
 /obj/structure/window/phoronreinforced,
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "UL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -4481,7 +4481,7 @@
 "UU" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "UX" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -4525,7 +4525,7 @@
 	dir = 2
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "Vh" = (
 /obj/structure/table/steel,
 /obj/machinery/recharger/wallcharger{
@@ -4594,7 +4594,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "VZ" = (
 /obj/item/device/radio/intercom{
 	pixel_y = 23
@@ -4780,7 +4780,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/white,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "Xj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 6
@@ -4839,7 +4839,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "XY" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -5160,11 +5160,11 @@
 /area/ship/skrellscoutship/maintenance/atmos)
 "ZP" = (
 /turf/simulated/floor/carpet/purple,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "ZT" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor/tiled/skrell,
-/area/observatory)
+/area/ship/skrellskoutship/observatory)
 "ZY" = (
 /obj/machinery/door/blast/regular{
 	id_tag = "xil_sensors"

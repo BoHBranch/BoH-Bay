@@ -62,8 +62,5 @@
 
 // Observatory Areas
 
-/area/observatory
-	name = "\improper Skrellian Observatory"
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-	base_turf = /turf/space
-	req_access = list(access_skrellscoutship)
+/area/ship/skrellskoutship/observatory
+	name = "\improper Observatory"
