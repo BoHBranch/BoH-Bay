@@ -18,7 +18,7 @@
 	accuracy_power = 8
 	one_hand_penalty = 2
 	bulk = 3
-	var/broke_open = FALSE // Revovlers break open to reveal a cylinder.
+	var/broke_open = FALSE // Revolvers break open to reveal a cylinder.
 
 /obj/item/weapon/gun/projectile/revolver/attack_self(mob/user)
 	broke_open = !broke_open
