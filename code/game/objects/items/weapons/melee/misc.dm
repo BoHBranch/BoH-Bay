@@ -67,7 +67,7 @@
 	storage_slots = 1
 	w_class = 6
 	max_w_class = 6
-	max_storage_space = 6
+	max_storage_space = 16 // Swords are bulky, needs this to not erorr.
 	slot_flags = SLOT_BELT|SLOT_BACK
 	sound_in = 'sound/effects/holster/sheathin.ogg'
 	sound_out = 'sound/effects/holster/blade_unsheath.ogg'
