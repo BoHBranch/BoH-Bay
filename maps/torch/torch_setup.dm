@@ -14,7 +14,7 @@
 	return jointext(., "<br>")
 
 /datum/map/torch/send_welcome()
-	var/welcome_text = "<center><img src = bluentlogo.png /><br /><font size = 3><b>SGV Dagon</b> Sensor Readings:</font><br>"
+	var/welcome_text = "<center><img src = sollogo.png /><br /><font size = 3><b>SGV Dagon</b> Sensor Readings:</font><br>"
 	welcome_text += "Report generated on [stationdate2text()] at [stationtime2text()]</center><br /><br />"
 	welcome_text += "<hr>Current system:<br /><b>[system_name()]</b><br /><br>"
 
