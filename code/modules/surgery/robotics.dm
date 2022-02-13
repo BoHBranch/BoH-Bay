@@ -39,8 +39,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		/obj/item/weapon/material/coin = 50,
 		/obj/item/weapon/material/knife = 50
 	)
-	min_duration = 90
-	max_duration = 110
+	min_duration = 60
+	max_duration = 80
 
 /decl/surgery_step/robotics/unscrew_hatch/assess_bodypart(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = ..()
@@ -74,8 +74,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		/obj/item/weapon/material/coin = 50,
 		/obj/item/weapon/material/knife = 50
 	)
-	min_duration = 90
-	max_duration = 110
+	min_duration = 60
+	max_duration = 80
 
 /decl/surgery_step/robotics/screw_hatch/assess_bodypart(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = ..()
@@ -146,8 +146,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 		/obj/item/weapon/material/kitchen/utensil = 50
 	)
 
-	min_duration = 70
-	max_duration = 100
+	min_duration = 30
+	max_duration = 40
 
 /decl/surgery_step/robotics/close_hatch/assess_bodypart(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = ..()
@@ -413,8 +413,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	allowed_tools = list(
 		/obj/item/device/multitool = 100
 	)
-	min_duration = 90
-	max_duration = 110
+	min_duration = 70
+	max_duration = 90
 	surgery_candidate_flags = SURGERY_NO_CRYSTAL | SURGERY_NO_FLESH | SURGERY_NO_STUMP | SURGERY_NEEDS_ENCASEMENT
 
 /decl/surgery_step/robotics/detatch_organ_robotic/pre_surgery_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
@@ -455,8 +455,8 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	allowed_tools = list(
 		/obj/item/weapon/screwdriver = 100,
 	)
-	min_duration = 100
-	max_duration = 120
+	min_duration = 80
+	max_duration = 100
 	surgery_candidate_flags = SURGERY_NO_CRYSTAL | SURGERY_NO_FLESH | SURGERY_NO_STUMP | SURGERY_NEEDS_ENCASEMENT
 
 /decl/surgery_step/robotics/attach_organ_robotic/pre_surgery_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)

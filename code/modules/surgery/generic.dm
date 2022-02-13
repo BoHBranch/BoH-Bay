@@ -28,8 +28,8 @@
 		/obj/item/weapon/scalpel/laser1 = 75,
 		/obj/item/weapon/melee/energy/sword = 5
 	)
-	min_duration = 90
-	max_duration = 110
+	min_duration = 50
+	max_duration = 80
 
 /decl/surgery_step/generic/cut_with_laser/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
@@ -61,8 +61,8 @@
 	allowed_tools = list(
 		/obj/item/weapon/scalpel/manager = 100
 	)
-	min_duration = 80
-	max_duration = 120
+	min_duration = 40 //cutting-edge tool that rarely if ever gets made.
+	max_duration = 60
 
 /decl/surgery_step/generic/managed/begin_step(mob/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
@@ -96,8 +96,8 @@
 		/obj/item/weapon/broken_bottle = 50,
 		/obj/item/weapon/material/shard = 50
 	)
-	min_duration = 90
-	max_duration = 110
+	min_duration = 60
+	max_duration = 90
 	var/fail_string = "slicing open"
 	var/access_string = "an incision"
 
@@ -147,8 +147,8 @@
 		/obj/item/stack/cable_coil = 75,
 		/obj/item/device/assembly/mousetrap = 20
 	)
-	min_duration = 40
-	max_duration = 60
+	min_duration = 30
+	max_duration = 40
 	surgery_candidate_flags = SURGERY_NO_ROBOTIC | SURGERY_NO_CRYSTAL | SURGERY_NO_STUMP | SURGERY_NEEDS_INCISION
 	strict_access_requirement = FALSE
 

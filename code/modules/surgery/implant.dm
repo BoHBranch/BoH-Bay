@@ -87,8 +87,8 @@
 /decl/surgery_step/cavity/place_item
 	name = "Place item in cavity"
 	allowed_tools = list(/obj/item = 100)
-	min_duration = 80
-	max_duration = 100
+	min_duration = 50
+	max_duration = 70
 
 /decl/surgery_step/cavity/place_item/can_use(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	if(istype(user,/mob/living/silicon/robot))
@@ -147,8 +147,8 @@
 		/obj/item/weapon/wirecutters = 75,
 		/obj/item/weapon/material/kitchen/utensil/fork = 20
 	)
-	min_duration = 80
-	max_duration = 100
+	min_duration = 30
+	max_duration = 40
 
 /decl/surgery_step/cavity/implant_removal/assess_bodypart(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = ..()
