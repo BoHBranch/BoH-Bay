@@ -71,43 +71,45 @@
 	containername = "ballistic sidearms crate"
 	access = access_armory
 	security_level = SUPPLY_SECURITY_ELEVATED
-/*
+
 /decl/hierarchy/supply_pack/security/laser
 	name = "Weapons - Laser carbines"
 	contains = list(/obj/item/weapon/gun/energy/laser/secure = 4)
-	cost = 60
+	cost = 90
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "laser carbines crate"
 	access = access_emergency_armory
 	security_level = SUPPLY_SECURITY_ELEVATED
 
-/decl/hierarchy/supply_pack/security/laser/shady
-	name = "Weapons - Laser carbines (For disposal)"
-	contains = list(/obj/item/weapon/gun/energy/laser = 4)
-	cost = 80
-	contraband = 1
-	security_level = null
-
 /decl/hierarchy/supply_pack/security/advancedlaser
 	name = "Weapons - Advanced Laser Weapons"
 	contains = list(/obj/item/weapon/gun/energy/xray = 2,
-					/obj/item/weapon/gun/energy/xray/pistol = 2,
-					/obj/item/weapon/shield/energy = 2)
-	cost = 100
+					/obj/item/weapon/gun/energy/xray/pistol = 2,)
+	cost = 120
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "advanced Laser Weapons crate"
+	access = access_emergency_armory
+	security_level = SUPPLY_SECURITY_HIGH
+
+/decl/hierarchy/supply_pack/security/pulselaser
+	name = "Weapons - Prototype Pulse Weapons"
+	contains = list(/obj/item/weapon/gun/energy/pulse_rifle/carbine = 2,
+					/obj/item/weapon/gun/energy/pulse_rifle/pistol = 2,)
+	cost = 140
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "pulse Weapons crate"
 	access = access_emergency_armory
 	security_level = SUPPLY_SECURITY_HIGH
 
 /decl/hierarchy/supply_pack/security/sniperlaser
 	name = "Weapons - Energy marksman"
 	contains = list(/obj/item/weapon/gun/energy/sniperrifle = 2)
-	cost = 70
+	cost = 100
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "energy marksman crate"
 	access = access_emergency_armory
 	security_level = SUPPLY_SECURITY_HIGH
-*/
+
 /decl/hierarchy/supply_pack/security/hornetsniper
 	name = "Weapons - Ballistic DMR"
 	contains = list(/obj/item/weapon/gun/projectile/hornetsniper = 2,
@@ -134,7 +136,7 @@
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "\improper Ballistic PDW crate"
 	access = access_emergency_armory
-	security_level = SUPPLY_SECURITY_HIGH
+	security_level = SUPPLY_SECURITY_ELEVATED
 
 /decl/hierarchy/supply_pack/security/bullpup
 	name = "Weapons - Ballistic rifles"
@@ -142,6 +144,17 @@
 	cost = 80 //Because 5.56 is OP as fuck right now.
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "bullpup automatic rifle crate"
+	access = access_emergency_armory
+	security_level = SUPPLY_SECURITY_HIGH
+
+/decl/hierarchy/supply_pack/security/machinegun
+	name = "Weapons - Light Machine Gun"
+	contains = list(
+		/obj/item/weapon/gun/projectile/automatic/l6_saw = 1,
+		/obj/item/ammo_magazine/box/machinegun = 1,)
+	cost = 150
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "l6 law crate"
 	access = access_emergency_armory
 	security_level = SUPPLY_SECURITY_HIGH
 
@@ -153,6 +166,15 @@
 	containername = "pistol ammunition crate"
 	access = access_security
 	security_level = SUPPLY_SECURITY_ELEVATED
+
+/decl/hierarchy/supply_pack/security/machinegunammo
+	name = "Ammunition - light machine gun box"
+	contains = list(/obj/item/ammo_magazine/box/machinegun = 4)
+	cost = 60
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "light machine gun ammo crate"
+	access = access_security
+	security_level = SUPPLY_SECURITY_HIGH
 
 /decl/hierarchy/supply_pack/security/pistolammorubber
 	name = "Ammunition - pistol rubber"

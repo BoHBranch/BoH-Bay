@@ -170,7 +170,7 @@
 
 	else if(isicon(variable))
 		to_chat(usr, "Variable appears to be <b>ICON</b>.")
-		variable = "\icon[variable]"
+		variable = "[icon2html(src, viewers(src))]variable]"
 		default = "icon"
 
 	else if(istype(variable,/atom) || istype(variable,/datum))
@@ -366,7 +366,7 @@
 
 			else if(isicon(var_value))
 				to_chat(usr, "Variable appears to be <b>ICON</b>.")
-				var_value = "\icon[var_value]"
+				var_value = "[icon2html(src, viewers(src))]var_value]"
 				class = "icon"
 
 			else if(istype(var_value,/atom) || istype(var_value,/datum))
@@ -421,7 +421,7 @@
 
 		else if(isicon(var_value))
 			to_chat(usr, "Variable appears to be <b>ICON</b>.")
-			var_value = "\icon[var_value]"
+			var_value = "[icon2html(src, viewers(src))]var_value]"
 			default = "icon"
 
 		else if(istype(var_value,/atom) || istype(var_value,/datum))

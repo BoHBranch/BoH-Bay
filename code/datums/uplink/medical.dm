@@ -76,6 +76,12 @@
 	item_cost = 2
 	path = /obj/item/weapon/reagent_containers/hypospray/autoinjector/alkysine
 
+/datum/uplink_item/item/medical/creth
+	name = "Creth syringe"
+	desc = "A syringe of highly illegal drugs, often overdosed on to die a nice death. This syringe contains Creth, and will give you massive speed at the cost of.. Your heart."
+	item_cost = 5
+	path = /obj/item/weapon/reagent_containers/syringe/creth
+
 /datum/uplink_item/item/medical/three_eye
 	name = "Three Eye pill bottle"
 	desc = "A pill bottle of highly illegal drugs, often overdosed on to awaken psionic latencies. A picture of a skull and a small note is attached, explaining that more than three pills cause overdose."

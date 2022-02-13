@@ -259,6 +259,12 @@
 	icon_state = "radbox"
 	startswith = list(/obj/item/weapon/grenade/supermatter = 5)
 
+/obj/item/weapon/storage/box/stinger
+	name = "box of stinger grenades"
+	desc = "A box containing 6 stinger grenades. <br> WARNING: Device carries risk of serious injury or death when deployed."
+	icon_state = "flashbang"
+	startswith = list(/obj/item/weapon/grenade/frag/rubber = 6)
+
 /obj/item/weapon/storage/box/trackimp
 	name = "boxed tracking implant kit"
 	desc = "Box full of scum-bag tracking utensils."

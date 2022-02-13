@@ -187,7 +187,7 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 	if(AM == user)
 		user.visible_message("<span class='danger'>[user] climbs into [src].</span>", \
 							 "<span class='notice'>You climb into [src].</span>")
-		log_and_message_admins("has stuffed themselves into [src].", AM)		 
+		log_and_message_admins("has stuffed themselves into [src].", AM)
 	else
 		user.visible_message("<span class='[is_dangerous ? "danger" : "notice"]'>[user] stuffs [AM] into [src][is_dangerous ? "!" : "."]</span>", \
 							 "<span class='notice'>You stuff [AM] into [src].</span>")
@@ -220,7 +220,7 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 	return
 
 /obj/machinery/disposal/DefaultTopicState()
-	return GLOB.outside_state	
+	return GLOB.outside_state
 
 // human interact with machine
 /obj/machinery/disposal/physical_attack_hand(mob/user)
@@ -533,7 +533,7 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 			found = 1
 			break
 	if(!found)
-		to_chat(user, "\icon[src]<span class=notice>\The [src] is not linked to any junctions!</span>")
+		to_chat(user, "[icon2html(src, viewers(src))]<span class=notice>\The [src] is not linked to any junctions!</span>")
 		return
 	var/obj/machinery/disposal_switch/NC = new/obj/machinery/disposal_switch(A, id_tag)
 	transfer_fingerprints_to(NC)
@@ -607,7 +607,7 @@ GLOBAL_LIST_EMPTY(diversion_junctions)
 				if(!src || !W.isOn()) return
 				to_chat(user, "You sliced the floorweld off the disposal outlet.")
 				var/obj/structure/disposalconstruct/machine/outlet/C = new (loc, src)
-				src.transfer_fingerprints_to(C)								
+				src.transfer_fingerprints_to(C)
 				C.anchored = 1
 				C.set_density(1)
 				C.update()

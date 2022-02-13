@@ -335,6 +335,7 @@ Sells devices, odds and ends, and medical stuff
 								)
 
 	possible_trading_items = list(/obj/item/weapon/storage/pill_bottle = TRADER_SUBTYPES_ONLY,
+								  /obj/item/weapon/storage/pill_bottle/three_eye  = TRADER_THIS_TYPE,
 								  /obj/item/weapon/storage/firstaid/fire  = TRADER_THIS_TYPE,
 								  /obj/item/weapon/storage/firstaid/toxin  = TRADER_THIS_TYPE,
 								  /obj/item/weapon/storage/firstaid/adv  = TRADER_THIS_TYPE,

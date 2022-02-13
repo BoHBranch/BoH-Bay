@@ -559,7 +559,7 @@
 	health = 1e+006
 	},
 /obj/item/weapon/storage/box/ammo/pepperball/full,
-/obj/item/weapon/storage/box/ammo/pepperball/full,
+/obj/item/weapon/storage/box/ammo/solar/rubber,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
 "aaU" = (
@@ -2897,7 +2897,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/vending/security/accessory,
+/obj/machinery/vending/accessory,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
 "afe" = (
@@ -3447,25 +3447,24 @@
 /area/security/storage)
 "agd" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/machinery/light{
+	dir = 1
 	},
 /obj/structure/table/rack/shelf/steel,
+/obj/structure/window/reinforced{
+	dir = 8;
+	health = 1e+006
+	},
 /obj/structure/window/reinforced{
 	health = 1e+007
 	},
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/item/weapon/storage/box/flares,
-/obj/item/weapon/storage/box/flares,
+/obj/item/weapon/grenade/frag/rubber,
+/obj/item/weapon/grenade/frag/rubber,
+/obj/item/weapon/grenade/frag/rubber,
+/obj/item/weapon/grenade/frag/rubber,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
 "age" = (
@@ -4068,22 +4067,25 @@
 /area/maintenance/firstdeck/centralstarboard)
 "ahc" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/light{
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/structure/window/reinforced{
-	dir = 8;
-	health = 1e+006
-	},
 /obj/structure/window/reinforced{
 	health = 1e+007
 	},
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/item/weapon/storage/box/flashbangs,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
 /obj/item/weapon/storage/box/teargas,
+/obj/item/weapon/storage/box/flashbangs,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
 "ahd" = (
@@ -9738,8 +9740,7 @@
 /obj/machinery/light,
 /obj/structure/window/reinforced,
 /obj/structure/table/rack,
-/obj/item/weapon/storage/box/greenglowsticks,
-/obj/item/weapon/storage/box/greenglowsticks,
+/obj/item/weapon/storage/box/stinger,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "aqJ" = (
@@ -12732,6 +12733,12 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/security/wing)
+"avJ" = (
+/obj/structure/sign/warning/secure_area{
+	dir = 1
+	},
+/turf/simulated/wall/r_wall/prepainted,
+/area/security/armoury)
 "avS" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -18560,12 +18567,6 @@
 /obj/item/weapon/bedsheet/blue,
 /turf/simulated/floor/carpet/orange,
 /area/crew_quarters/safe_room/firstdeck)
-"csy" = (
-/obj/structure/sign/warning/secure_area{
-	dir = 1
-	},
-/turf/simulated/wall/prepainted,
-/area/security/armoury)
 "ctb" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
@@ -30303,9 +30304,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
-"tiQ" = (
-/turf/simulated/wall/prepainted,
-/area/security/armoury)
 "tjb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -39388,7 +39386,7 @@ cZi
 cZi
 aLv
 aLv
-tiQ
+sHN
 aPu
 aPu
 aPu
@@ -39585,12 +39583,12 @@ sik
 sik
 sik
 nli
-ahc
+agd
 cZi
 cZi
 aLv
 abQ
-tiQ
+sHN
 hLf
 adm
 adm
@@ -39792,7 +39790,7 @@ huf
 enM
 enM
 enM
-csy
+avJ
 asM
 adh
 adH
@@ -39991,7 +39989,7 @@ daB
 hGs
 gGO
 aaV
-agd
+ahc
 afd
 bii
 hzl
@@ -40196,7 +40194,7 @@ agc
 aae
 aaT
 kCN
-tiQ
+sHN
 asO
 adl
 adO
@@ -40398,7 +40396,7 @@ uRO
 enM
 aLy
 aMC
-tiQ
+sHN
 hLf
 aPu
 aPu
@@ -40600,7 +40598,7 @@ cxk
 acU
 abK
 aga
-tiQ
+sHN
 amU
 ajj
 afl

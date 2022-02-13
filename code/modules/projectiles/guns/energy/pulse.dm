@@ -14,7 +14,6 @@
 	burst_delay = 3
 	burst = 3
 	move_delay = 4
-	accuracy = -1
 	wielded_item_state = "gun_wielded"
 	bulk = GUN_BULK_RIFLE
 

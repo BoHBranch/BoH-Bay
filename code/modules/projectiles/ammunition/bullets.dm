@@ -169,13 +169,6 @@
 	projectile_type = /obj/item/projectile/bullet/rifle/military/practice
 	icon_state = "rifle_mil_p"
 
-/obj/item/ammo_casing/rocket
-	name = "rocket shell"
-	desc = "A high explosive designed to be fired from a launcher."
-	icon_state = "rocketshell"
-	projectile_type = /obj/item/missile
-	caliber = "rocket"
-
 /obj/item/ammo_casing/cap
 	name = "cap"
 	desc = "A cap for children toys."
@@ -204,3 +197,20 @@
 	spent_icon = "empshell-spent"
 	projectile_type  = /obj/item/projectile/ion
 	matter = list(MATERIAL_STEEL = 260, MATERIAL_URANIUM = 200)
+
+// Rockets //
+
+/obj/item/ammo_casing/rocket
+	name = "rocket shell"
+	desc = "A high explosive designed to be fired from a launcher."
+	icon_state = "rocketshell"
+	projectile_type = /obj/item/projectile/missile
+	caliber = CALIBER_ROCKET
+
+// Yes, this a copy paste of above, but these shouldn't be under the normal rocket subcategory so you can't reload one use launchers without admins.
+/obj/item/ammo_casing/oneuse_rocket
+	name = "rocket shell"
+	desc = "A high explosive designed to be fired from a launcher."
+	icon_state = "rocketshell"
+	projectile_type = /obj/item/projectile/missile
+	caliber = CALIBER_ROCKET
