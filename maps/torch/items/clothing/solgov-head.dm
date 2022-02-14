@@ -11,6 +11,9 @@
 	icon_state = "solsoft"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
 
 /obj/item/clothing/head/soft/solgov/veteranhat
 	name = "veteran hat"
@@ -21,9 +24,6 @@
 	name = "\improper Surveyor Corps cap"
 	desc = "It's a black ballcap bearing the Surveyor Corps crest."
 	icon_state = "expeditionsoft"
-	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
-		)
 
 /obj/item/clothing/head/soft/solgov/expedition/co
 	name = "\improper Surveyor Corps captain's cap"
@@ -44,6 +44,9 @@
 		slot_r_hand_str = "helmet",
 		)
 	body_parts_covered = 0
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
 
 /obj/item/clothing/head/solgov/utility/fleet
 	name = "fleet utility cover"
@@ -118,11 +121,17 @@
 	name = "marine garrison cap"
 	desc = "A green garrison cap belonging to the SCG Marine Corp."
 	icon_state = "greengarrisoncap"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
 
 /obj/item/clothing/head/solgov/service/army/garrison/command
 	name = "marine officer's garrison cap"
 	desc = "A green garrison cap belonging to the SCG Marine Corp. This one has a gold pin."
 	icon_state = "greengarrisoncap_com"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
 
 /obj/item/clothing/head/solgov/service/army/campaign
 	name = "campaign cover"
@@ -144,6 +153,9 @@
 	name = "fleet garrison cap"
 	desc = "A white dress uniform cap. The classic sailor's choice."
 	icon_state = "whitegarrisoncap"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
 
 /obj/item/clothing/head/solgov/dress/fleet
 	name = "fleet dress wheel cover"
@@ -173,6 +185,10 @@
 	icon_state = "beret_lightblue"
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
+
 
 /obj/item/clothing/head/beret/solgov/homeguard
 	name = "home guard beret"
@@ -228,9 +244,6 @@
 	name = "Surveyor Corps beret"
 	desc = "An old SCG explorer beret, phased out of production. For personnel that are more inclined towards style than safety."
 	icon_state = "beret_black"
-	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
-		)
 
 /obj/item/clothing/head/beret/solgov/expedition/security
 	name = "Surveyor Corps security beret"
@@ -393,7 +406,7 @@
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	starting_accessories = null
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_helmet_unathi.dmi'
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
 		)
 
 /obj/item/clothing/head/helmet/solgov/command
@@ -403,6 +416,9 @@
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	starting_accessories = null
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_unathi.dmi'
+		)
 
 /obj/item/clothing/head/helmet/solgov/pilot
 	name = "pilot's helmet"
