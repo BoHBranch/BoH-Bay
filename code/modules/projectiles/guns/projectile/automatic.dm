@@ -25,7 +25,7 @@
 		list(mode_name="long bursts", burst=8, fire_delay=null, move_delay=4, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
-
+// full auto versoin, as an example.
 
 /obj/item/weapon/gun/projectile/automatic/fullauto
 	name = "prototype SMG"
@@ -57,7 +57,7 @@
 	// Uzi moves as fast on the auto as the semi.
 	firemodes = list(
 		list(mode_name="semi auto", automatic = FALSE, fire_delay= 3, burst=1, burst_delay = 2, move_delay= 0, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 2.5, burst_delay = 1.5, burst=4, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.0, 0.5, 0.6)),
+		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 2.5, burst_delay = 1.5, burst=4, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.6, 0.7)),
 		list(mode_name="automatic",  automatic = TRUE, fire_delay = 1, burst = 1, burst_delay = 0, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
@@ -100,7 +100,7 @@
 	//SMG
 	firemodes = list(
 		list(mode_name="semi auto", automatic = FALSE, fire_delay= 2, burst=1, burst_delay = 2, move_delay=0, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 2, burst_delay = 2, burst=3, move_delay=3, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.0, 0.5, 0.6)),
+		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 2, burst_delay = 2, burst=3, move_delay=3, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list((0.0, 0.5, 0.6)),
 		list(mode_name="automatic",  automatic = TRUE, fire_delay = 1.5, burst = 1, burst_delay = 0, move_delay=3, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
@@ -143,8 +143,8 @@
 	// Semi auto is a bit more accurate here. It treats all accuracy checks as if they're a tile closer overall.
 
 	firemodes = list(
-		list(mode_name="semi auto", automatic = FALSE, fire_delay= 4, burst=1, burst_delay = 2, move_delay=null, one_hand_penalty=8, accuracy = 2, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 4, burst_delay = 2, burst=4 , one_hand_penalty=9, accuracy = 1, burst_accuracy=list(0,-1,-1,-2,-2), dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="semi auto", automatic = FALSE, fire_delay= 4, burst=1, burst_delay = 2, move_delay=0, one_hand_penalty=8, accuracy = 2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 4, burst_delay = 2, burst=4 , one_hand_penalty=9, move_delay=3, accuracy = 1, burst_accuracy=list(0,-1,-1,-2,-2), dispersion=list(0.0, 0.6, 1.0)),
 		list(mode_name="automatic",  automatic = TRUE, fire_delay = 2.5, burst = 1, burst_delay = 0, one_hand_penalty=11, accuracy = 1, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.6, 1.0, 1.2, 1.2, 1.5)),
 		)
 
