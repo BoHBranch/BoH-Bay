@@ -193,6 +193,34 @@
 	grow_chance = 20
 	grow_threshold = 50
 	external_nutrition_mult = 10
+	var/toggle_blocked_until = 0 // A time
+
+/obj/aura/regenerating/human/promethean/toggle()
+	..()
+	toggle_blocked_until = max(world.time + 2 MINUTES, toggle_blocked_until)
+
+/obj/aura/regenerating/human/promethean/can_toggle()
+	if(world.time < toggle_blocked_until)
+		return FALSE
+	return ..()
+
+// Default return; we're just logging.
+/obj/aura/regenerating/human/promethean/attackby()
+	toggle_blocked_until = max(world.time + 1 MINUTE, toggle_blocked_until)
+
+/obj/aura/regenerating/human/promethean/hitby()
+	toggle_blocked_until = max(world.time + 1 MINUTE, toggle_blocked_until)
+
+/obj/aura/regenerating/human/promethean/bullet_act()
+	toggle_blocked_until = max(world.time + 1 MINUTE, toggle_blocked_until)
+
+/obj/aura/regenerating/human/promethean/life_tick()
+	var/mob/living/carbon/human/H = user
+	if(innate_heal && istype(H) && H.stat != DEAD && H.nutrition < 50)
+		H.apply_damage(5, BRUTE)
+		H.adjust_nutrition(3)
+		return 1
+	return ..()
 
 /obj/aura/regenerating/human/promethean/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
 	to_chat(H, "<span class='warning'>You feel a slithering sensation as your [O.name] reforms.</span>")
