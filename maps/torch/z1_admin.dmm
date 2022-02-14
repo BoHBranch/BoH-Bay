@@ -11056,7 +11056,6 @@
 	},
 /mob/living/exosuit/premade/powerloader{
 	health = 1000;
-	maxHealth = 1000
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
