@@ -33,10 +33,11 @@
 
 	//FULL AUTO GUNS NEED THEIR OTHER MODES TO BE DEFINED WITH A FALSE, ELSE THEY'LL STILL BE AUTOMATIC WHEN FIREMODES ARE SWITCHED!
 	//SET THE BURST DELAY TO ZERO AS WELL! AUTOMATIC STILL RESPECTS BURST DELAY!
+	// move delay above 2 roots you in place. 0 is no move speed slowodwn.
 	firemodes = list(
 		list(mode_name="semi auto", automatic = FALSE, fire_delay= 3, burst=1, burst_delay = 2, move_delay=0, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
-		list(mode_name="4-round bursts", automatic = FALSE, fire_delay= 2, burst_delay = 2, burst=4, move_delay =3, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.0, 0.5, 0.6)),
-		list(mode_name="automatic",  automatic = TRUE, fire_delay = 1, burst = 1, burst_delay = 0, move_delay=3, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
+		list(mode_name="4-round bursts", automatic = FALSE, fire_delay= 2, burst_delay = 2, burst=4, move_delay =2, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.0, 0.5, 0.6)),
+		list(mode_name="automatic",  automatic = TRUE, fire_delay = 1, burst = 1, burst_delay = 0, move_delay=2, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
 
@@ -100,8 +101,8 @@
 	//SMG
 	firemodes = list(
 		list(mode_name="semi auto", automatic = FALSE, fire_delay= 2, burst=1, burst_delay = 2, move_delay=0, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 2, burst_delay = 2, burst=3, move_delay=3, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.5, 0.6)),
-		list(mode_name="automatic",  automatic = TRUE, fire_delay = 1.5, burst = 1, burst_delay = 0, move_delay=3, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
+		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 2, burst_delay = 2, burst=3, move_delay=1, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.5, 0.6)),
+		list(mode_name="automatic",  automatic = TRUE, fire_delay = 1.5, burst = 1, burst_delay = 0, move_delay=1, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
 /obj/item/weapon/gun/projectile/automatic/merc_smg/on_update_icon()
@@ -144,7 +145,7 @@
 
 	firemodes = list(
 		list(mode_name="semi auto", automatic = FALSE, fire_delay= 4, burst=1, burst_delay = 2, move_delay=0, one_hand_penalty=8, accuracy = 2, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 4, burst_delay = 2, burst=4 , one_hand_penalty=9, move_delay=3, accuracy = 1, burst_accuracy=list(0,-1,-1,-2,-2), dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 4, burst_delay = 2, burst=4 , one_hand_penalty=9, move_delay=2, accuracy = 1, burst_accuracy=list(0,-1,-1,-2,-2), dispersion=list(0.0, 0.6, 1.0)),
 		list(mode_name="automatic",  automatic = TRUE, fire_delay = 2.5, burst = 1, burst_delay = 0, one_hand_penalty=11, accuracy = 1, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.6, 1.0, 1.2, 1.2, 1.5)),
 		)
 
