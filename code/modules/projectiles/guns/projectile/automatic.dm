@@ -100,7 +100,7 @@
 	//SMG
 	firemodes = list(
 		list(mode_name="semi auto", automatic = FALSE, fire_delay= 2, burst=1, burst_delay = 2, move_delay=0, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 2, burst_delay = 2, burst=3, move_delay=3, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list((0.0, 0.5, 0.6)),
+		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 2, burst_delay = 2, burst=3, move_delay=3, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.5, 0.6)),
 		list(mode_name="automatic",  automatic = TRUE, fire_delay = 1.5, burst = 1, burst_delay = 0, move_delay=3, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
