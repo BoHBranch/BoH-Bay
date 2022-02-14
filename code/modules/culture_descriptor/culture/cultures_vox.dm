@@ -26,12 +26,13 @@
 
 /decl/cultural_info/culture/vox/tech
 	name = CULTURE_VOX_TECHNICIAN
-	description = "In the times before the Great Collapse, during the Era of Decay which has only so recently come to a close, \
-	and in these times of revival, one thing remains true above all else; without the work of the Sacred Technicians, your kin would be lost. \
-	Ranging from the salvage technician to the biotechnician, that which was left by the Auralis and made after by the Vox require constant maintenance. \
-	Among your kin, you are one who is most skilled in stripping salvage from dead ships and ruins, and not just maintaining but improving upon the sacred Auralis technology. \
-	Your experience with Non-Vox is mostly with spacers and colonists, with mixed results. Sanctified in oil and armed with wrench and steel, you halt entropy itself. \
-	The stars will die before the arks."
+	description = "You are a Voidborne Vigilant, and you know this to be true; to be Vox is to be an enemy of those who covet the arks and their untold miracles of eons dead. \
+	You have served extensively aboard the ark fleets, massive sacred naval assemblies safeguarding each artifact-world in their voidborne flight. \
+	Your experience with outsiders comes twofold, in the Novalis and the Heretic. \
+	The Novalis are Non-Vox who have proven their loyalty and kinship to your people, and earned the honor of serving aboard the ships of the fleet. \
+	They are often spacers or of the lower-class of their societies, and easily find their feet on both repurposed frigates and bioship cruisers. \
+	To the Heretic, from the SAARE mercenaries to the Kharmanni purifiers, you give the blessing of silence. \
+	Not once has a Non-Vox found purchase aboard the Arks, and this will remain true."
 
 /decl/cultural_info/culture/vox/light
 	name = CULTURE_VOX_LIGHT

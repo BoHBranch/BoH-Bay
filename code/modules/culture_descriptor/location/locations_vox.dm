@@ -11,32 +11,29 @@
 
 /decl/cultural_info/location/vox/fortress
 	name = HOME_SYSTEM_VOX_FORTRESS
-	description = "The shroud of an arkship is an unstable and dangerous place to live, and those vox stationed there are \
-	often salvagers, scavengers, engineers and technicians, struggling with the endless burden of keeping the decay of the ark \
-	from progressing beyond the shroud and into more critical systems. By comparison to arkborn, they are quiet, self-supporting and \
-	independant, with few cares for clan politics, family squabbles, or contest challenges. They know their task is critical to \
-	the survival of the vox as a species, and next to that, tussling with your peers seems a bit immature."
+	description = "The Ark of the Stalwart Guardian is a heavily fortified ark of the Vox Fleets, its Apex defensive in both its administration and its calculation of potential outcomes. \
+	Through their deliberation, the fleets have been assembled and armed, ancient fleet doctrine and training returning to the Vox from eons long past. \
+	While a place of warmth and home as all arks are, a certain pride and rigid nature is inherent to those serving the machinations of the Stalwart Guardian and the scarred ark admiral serving by their side, a hobbled primalis with two cracked eyes, who has dealt with many of the species of the galaxy before their appointment. \
+	At any given time, the population of this ark is about eight billion, and many return to its decks for retraining of skills long lost. \
+	The halls are clean, the artisans of its district centers collected and proper in the presentation of their creations to the general crew. \
+	All aboard the Ark of the Stalwart Guardian are expected to train diligently in combat, to maintain a ready state for whatever new fate the galaxy may cast."
 
 /decl/cultural_info/location/vox/research
 	name = HOME_SYSTEM_VOX_RESEARCH
-	description = "Shipborn vox are often purpose-grown for their assigned tasks, frequently under the direct supervision of \
-	an apex or their servants. They are often seen as 'disposable' in vox culture, as they rarely survive their incarnation \
-	beyond the tour of the vessel. Those that do, however, are generally thrown straight back into long-distance shipside \
-	duties, as their success shows their masters that they are well suited to it. The life of a shipborn vox is arduous and \
-	bloody, and they will be killed and reborn more often than even the most reckless of arkborn raiders."
+	description = "The Ark of the Curious Acolyte is as all arks, led by the Apex it takes name from, the Curious Acolyte. \
+	This Apex is of the remaining quintet the most caught in its own machinations, diving ever deeper into personal research and directing their Ark Admiral to new archeo-tech digs from the ancient sites of industry and science it recalls in deep thought. \
+	The resident Ark Admiral is a Primalis with extensive augmentation, possessing their original body from first its cortical stack was activated, with ark-made legs, arms, and two of their three eyes replacing the original. \
+	Holding an average at most times of seven billion Vox, most research projects and archeological digs are conducted by this traveling world and its attached fleet, with an abnormal amount of research districts and the majority of ark-made prosthetics and rediscovered technology coming from its halls. \
+	Its fleet is known to conduct cooperative tech digs with outsiders on occasion."
 
 /decl/cultural_info/location/vox/processing
 	name = HOME_SYSTEM_VOX_PROCESSING
-	description = "The shroud of an arkship is an unstable and dangerous place to live, and those vox stationed there are \
-	often salvagers, scavengers, engineers and technicians, struggling with the endless burden of keeping the decay of the ark \
-	from progressing beyond the shroud and into more critical systems. By comparison to arkborn, they are quiet, self-supporting and \
-	independant, with few cares for clan politics, family squabbles, or contest challenges. They know their task is critical to \
-	the survival of the vox as a species, and next to that, tussling with your peers seems a bit immature."
+	description = "The Ark of the Dutiful Blade is the processing center of most salvage and raw ore collected by the Vox Fleets, its population holding at any given time thirteen billion Vox, the second most populous of the artifact-worlds. \
+	Many honor this ark as the beating heart of Vox industry, which produces the vast majority of resources for itself and the rest as its many technicians repurpose and deconstruct what the fleets bring in, melting down scrap and ore for new materials. \
+	The Ark Admiral serving as the Dutiful Blade’s personal claw is an Armalis clad in the distinctive bronze salvage suits of its technicians, known for their perfected appraisal of alien tech and ability to find the most value possible from a pile of tangled debris. \
+	This Ark holds not just the majority of technicians, but has a notable amount of decks dedicated to a merchant sub-fleet, constantly departing with what the arks have no need for, and returning with holds full of supply."
 
 /decl/cultural_info/location/vox/production
 	name = HOME_SYSTEM_VOX_PRODUCTION
-	description = "Shipborn vox are often purpose-grown for their assigned tasks, frequently under the direct supervision of \
-	an apex or their servants. They are often seen as 'disposable' in vox culture, as they rarely survive their incarnation \
-	beyond the tour of the vessel. Those that do, however, are generally thrown straight back into long-distance shipside \
-	duties, as their success shows their masters that they are well suited to it. The life of a shipborn vox is arduous and \
-	bloody, and they will be killed and reborn more often than even the most reckless of arkborn raiders."
+	description = "The Ark of the Vigilant Prophet is the heart of production among the relic-worlds, where great barges of ore, massive spools of wire, crates of biomass are fed to the hungry forges of the most calculating Apex, the Vigilant Prophet. \
+	Here the majority of newly forged starships take flight, and Quill-Captains make berths to unload that which they cannot use, and take what is needed for the long voyages away from the warmth of the home fleets."

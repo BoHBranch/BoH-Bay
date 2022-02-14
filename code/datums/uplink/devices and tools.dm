@@ -31,6 +31,15 @@
 	. = ..()
 	desc = "A briefcase with 10,000 untraceable [GLOB.using_map.local_currency_name]. Makes a great bribe if they're willing to take you up on your offer."
 
+/datum/uplink_item/item/tools/fakemoney
+	name = "Fake Money"
+	item_cost = 1
+	path = /obj/item/weapon/storage/secure/briefcase/fakemoney
+/datum/uplink_item/item/tools/fakemoney/New()
+	. = ..()
+	desc = "A briefcase with 10,000 false [GLOB.using_map.local_currency_name]. This costs next to nothing, because it's worth next to nothing. Only an expert can tell the difference between these and the real deal."
+
+
 /datum/uplink_item/item/tools/clerical
 	name = "Morphic Clerical Kit"
 	desc = "Comes with everything you need to fake paperwork, assuming you know how to forge the required documents."
