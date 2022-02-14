@@ -285,3 +285,16 @@ proc/age2agedescription(age)
 	if(damflags & DAM_BIO)
 		res += "bio"
 	return english_list(res)
+
+/proc/IsAdminGhost(var/mob/user)
+	if(!user)		//Are they a mob? Auto interface updates call this with a null src
+		return
+	if(!user.client) // Do they have a client?
+		return
+	if(!isobserver(user)) // Are they a ghost?
+		return
+	if(!check_rights(R_ADMIN, 0, user)) // Are they allowed?
+		return
+	// if(!user.client.AI_Interact) // Do they have it enabled?
+	// 	return
+	return TRUE

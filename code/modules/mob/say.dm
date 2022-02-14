@@ -87,6 +87,16 @@
 		return "2"
 	return "0"
 
+/mob/proc/say_overhead(var/message, var/datum/language/speaking)
+	var/list/speech_bubble_hearers = list()
+	var/italics = 0
+	for(var/mob/M in get_mobs_in_view(7, src))
+		if(M.client)
+			speech_bubble_hearers += M.client
+	if(length(speech_bubble_hearers))
+		INVOKE_ASYNC(src, /atom/movable/proc/animate_chat, message, speaking, italics, speech_bubble_hearers, 30)
+
+
 //parses the message mode code (e.g. :h, :w) from text, such as that supplied to say.
 //returns the message mode string or null for no message mode.
 //standard mode is the mode returned for the special ';' radio code.

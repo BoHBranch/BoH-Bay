@@ -234,6 +234,11 @@ var/list/_client_preferences_by_type
 			winset(C, "output", "is-visible=true;is-disabled=false")
 			winset(C, "browseroutput", "is-visible=false")
 
+/datum/client_preference/overhead_chat
+	description = "Overhead Chat"
+	key = "OVERHEAD_CHAT"
+	options = list(GLOB.PREF_SHOW, GLOB.PREF_HIDE)
+
 /********************
 * General Staff Preferences *
 ********************/

@@ -303,6 +303,17 @@ proc/get_radio_key_from_channel(var/channel)
 
 	// VOREStation Port End
 
+	if(!used_radios.len)
+		if(!isobserver(usr) || !IsAdminGhost(usr))
+			if(!whispering)
+				usr.say_overhead(say_emphasis_strip(message), speaking)
+			if(whispering)
+				for(var/mob/M in listening)
+					spawn(0) //Using spawns to queue all the messages for AFTER this proc is done, and stop runtimes
+						var/dst = get_dist(get_turf(M),get_turf(src))
+						if(dst <= message_range)
+							usr.say_overhead(stars(say_emphasis_strip(message), speaking))
+
 	var/list/speech_bubble_recipients = list()
 	for(var/mob/M in listening)
 		if(M)
@@ -317,7 +328,7 @@ proc/get_radio_key_from_channel(var/channel)
 				O.hear_talk(src, message, verb, speaking)
 
 	if(whispering)
-		var/eavesdroping_range = 5
+		var/eavesdroping_range = 7
 		var/list/eavesdroping = list()
 		var/list/eavesdroping_obj = list()
 		get_mobs_and_objs_in_view_fast(T, eavesdroping_range, eavesdroping, eavesdroping_obj)
