@@ -22,7 +22,7 @@ Civilian
 *******/
 
 /datum/job/assistant
-	title = "Passenger"
+	title = "Off-Duty"
 	total_positions = -1
 	spawn_positions = -1
 	supervisors = "the Executive Officer"
@@ -30,19 +30,8 @@ Civilian
 	announced = FALSE
 	alt_titles = list(
 		"Journalist" = /decl/hierarchy/outfit/job/torch/passenger/passenger/journalist,
-		"Historian",
-		"Botanist",
-		"Investor" = /decl/hierarchy/outfit/job/torch/passenger/passenger/investor,
-		"Psychologist" = /decl/hierarchy/outfit/job/torch/passenger/passenger/psychologist,
-		"Naturalist",
-		"Ecologist",
-		"Entertainer",
-		"Independent Observer",
-		"Sociologist",
-		"Off-Duty" = /decl/hierarchy/outfit/job/torch/crew/service/crewman,
-		"Trainer",
-		"Assistant")
-	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/passenger
+		"Botanist")
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/crewman
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ,
