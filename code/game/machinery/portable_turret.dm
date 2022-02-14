@@ -81,6 +81,9 @@
 	name = "Anti-personnel battery"
 	desc = "A sleek, menacing turret of Skrellian origin."
 	use_power = 0 //Not optimal, but they lose power on each Z-level transfer. DM has forced my hand.
+	maxhealth = 300
+	health = 300
+	auto_repair = 1
 	enabled = 1
 	ailock = 1
 	lethal = 1
@@ -88,35 +91,21 @@
 	check_access = 1
 	check_arrest = 0
 	check_records = 0
+	shot_delay = 10
 	check_weapons = 0
 	check_anomalies = 1
-	installation = /obj/item/weapon/gun/energy/exteriorturret/skrell
+	installation = /obj/item/weapon/gun/energy/turret/skrell
 	color = COLOR_DARK_GRAY
 	req_access = list("ACCESS_SKRELLSCOUT")
 
-/obj/item/weapon/gun/energy/exteriorturret/skrell
-	projectile_type = /obj/item/projectile/beam/pulse/skrell/single
+/obj/item/weapon/gun/energy/turret/skrell
+	accuracy = 1
+	projectile_type = /obj/item/projectile/beam/pulse/skrell/heavy/turret
 
-/obj/machinery/turretid/tur_ID/ssv
-	id_tag = "skrurret"
-
-/obj/machinery/porta_turret/exterior/ssv
-	id_tag = "skrurret"
-	name = "Anti-personnel battery"
-	desc = "A sleek, menacing turret of Skrellian origin."
-	use_power = 0 //Not optimal, but they lose power on each Z-level transfer. DM has forced my hand.
-	enabled = 1
-	ailock = 1
-	lethal = 1
-	check_synth	 = 0
-	check_access = 1
-	check_arrest = 0
-	check_records = 0
-	check_weapons = 0
-	check_anomalies = 1
-	installation = /obj/item/weapon/gun/energy/exteriorturret/skrell
-	color = COLOR_DARK_GRAY
-	req_access = list("ACCESS_SKRELLSCOUT")
+/obj/item/projectile/beam/pulse/skrell/heavy/turret
+	hitchance_mod = 100 //this and dispersion likely isn't needed, but, whatever
+	distance_falloff = 0.25
+	dispersion = 0
 
 /obj/machinery/porta_turret/malf_upgrade(var/mob/living/silicon/ai/user)
 	..()

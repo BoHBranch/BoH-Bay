@@ -144,10 +144,6 @@
 	name = "rifle magazine (7mmR)"
 	path = /obj/item/ammo_magazine/rifle
 
-/datum/fabricator_recipe/arms_ammo/hidden/skrellian_rifle_flechette
-	name = "Skrellian rifle cylinder (flechette)"
-	path = /obj/item/weapon/magnetic_ammo/skrell
-
 /datum/fabricator_recipe/arms_ammo/hidden/skrellian_rifle_slug
 	name = "Skrellian rifle cylinder (slug)"
 	path = /obj/item/weapon/magnetic_ammo/skrell/slug
