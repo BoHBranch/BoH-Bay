@@ -124,7 +124,6 @@
 		/obj/item/rig_module/device/clustertool/skrell,
 		/obj/item/rig_module/device/healthscanner,
 		/obj/item/rig_module/device/defib,
-		/obj/item/rig_module/vision/medhud,
 		/obj/item/rig_module/cooling_unit
 	)
 
@@ -216,6 +215,7 @@
 	desc = "A skrellian gas processing plant that continuously synthesises oxygen."
 	icon = 'icons/boh/obj/skrell.dmi'
 	icon_state = "skrelltank"
+	origin_tech = list(TECH_ENGINEERING= 10)
 	distribute_pressure = ONE_ATMOSPHERE*O2STANDARD
 	var/refill_gas_type = GAS_OXYGEN
 	var/gas_regen_amount = 0.05
@@ -253,6 +253,7 @@
 	desc = "An impossibly tiny fusion power engine of Skrell design."
 	icon = 'icons/boh/obj/skrell.dmi'
 	icon_state = "skrellcell"
+	origin_tech = list(TECH_POWER = 10)
 	maxcharge = 1500
 	w_class = ITEM_SIZE_NORMAL
 	var/recharge_amount = 12
