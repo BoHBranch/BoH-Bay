@@ -25,7 +25,7 @@
 		list(mode_name="long bursts", burst=8, fire_delay=null, move_delay=4, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
-// Full auto version.
+// full auto versoin, as an example.
 
 /obj/item/weapon/gun/projectile/automatic/fullauto
 	name = "prototype SMG"
@@ -33,10 +33,11 @@
 
 	//FULL AUTO GUNS NEED THEIR OTHER MODES TO BE DEFINED WITH A FALSE, ELSE THEY'LL STILL BE AUTOMATIC WHEN FIREMODES ARE SWITCHED!
 	//SET THE BURST DELAY TO ZERO AS WELL! AUTOMATIC STILL RESPECTS BURST DELAY!
+	// move delay above 2 roots you in place. 0 is no move speed slowodwn.
 	firemodes = list(
-		list(mode_name="semi auto", automatic = FALSE, fire_delay= 6, burst=1, burst_delay = 2, move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
-		list(mode_name="4-round bursts", automatic = FALSE, fire_delay= 2, burst_delay = 2, burst=4, move_delay=4, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.0, 0.5, 0.6)),
-		list(mode_name="automatic",  automatic = TRUE, fire_delay = 1, burst = 1, burst_delay = 0, move_delay=4, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
+		list(mode_name="semi auto", automatic = FALSE, fire_delay= 3, burst=1, burst_delay = 2, move_delay=0, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
+		list(mode_name="4-round bursts", automatic = FALSE, fire_delay= 2, burst_delay = 2, burst=4, move_delay =2, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.0, 0.5, 0.6)),
+		list(mode_name="automatic",  automatic = TRUE, fire_delay = 1, burst = 1, burst_delay = 0, move_delay=2, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
 
@@ -54,10 +55,11 @@
 	allowed_magazines = /obj/item/ammo_magazine/machine_pistol //more damage compared to the wt550, smaller mag size
 	one_hand_penalty = 2
 
+	// Uzi moves as fast on the auto as the semi.
 	firemodes = list(
-		list(mode_name="semi auto",       burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=2,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
-		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		list(mode_name="semi auto", automatic = FALSE, fire_delay= 3, burst=1, burst_delay = 2, move_delay= 0, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 2.5, burst_delay = 1.5, burst=3, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.6, 0.7)),
+		list(mode_name="automatic",  automatic = TRUE, fire_delay = 1, burst = 1, burst_delay = 0, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
 /obj/item/weapon/gun/projectile/automatic/machine_pistol/on_update_icon()
@@ -98,9 +100,9 @@
 
 	//SMG
 	firemodes = list(
-		list(mode_name="semi auto",       burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=5, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
-		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=6, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		list(mode_name="semi auto", automatic = FALSE, fire_delay= 2, burst=1, burst_delay = 2, move_delay=0, one_hand_penalty=0, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 2, burst_delay = 2, burst=3, move_delay=1, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.5, 0.6)),
+		list(mode_name="automatic",  automatic = TRUE, fire_delay = 1.5, burst = 1, burst_delay = 0, move_delay=1, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
 /obj/item/weapon/gun/projectile/automatic/merc_smg/on_update_icon()
@@ -115,10 +117,6 @@
 	desc = "The NanoTrasen C-20b is a lightweight and rapid firing SMG. This is an older model, capable of only firing in semi-automatic and three-round bursts. \
 	Additionally, it does not feature the auto-eject function of the more modern version. It appears, however, that this one has a hacked firing authorization pin."
 	auto_eject = 0
-	firemodes = list(
-		list(mode_name="semi auto",       burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=6, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=8, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
-		)
 
 /obj/item/weapon/gun/projectile/automatic/assault_rifle
 	name = "STS-35"
@@ -146,9 +144,9 @@
 	// Semi auto is a bit more accurate here. It treats all accuracy checks as if they're a tile closer overall.
 
 	firemodes = list(
-		list(mode_name="semi auto", automatic = FALSE, fire_delay= 4, burst=1, burst_delay = 2, move_delay=null, one_hand_penalty=8, accuracy = 2, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 4, burst_delay = 2, burst=4, move_delay=6, one_hand_penalty=9, accuracy = 1, burst_accuracy=list(0,-1,-1,-2,-2), dispersion=list(0.0, 0.6, 1.0)),
-		list(mode_name="automatic",  automatic = TRUE, fire_delay = 2.5, burst = 1, burst_delay = 0, move_delay=6, one_hand_penalty=11, accuracy = 1, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.6, 1.0, 1.2, 1.2, 1.5)),
+		list(mode_name="semi auto", automatic = FALSE, fire_delay= 4, burst=1, burst_delay = 2, move_delay=0, one_hand_penalty=8, accuracy = 2, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 4, burst_delay = 2, burst=4 , one_hand_penalty=9, move_delay=2, accuracy = 1, burst_accuracy=list(0,-1,-1,-2,-2), dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="automatic",  automatic = TRUE, fire_delay = 2.5, burst = 1, burst_delay = 0, one_hand_penalty=11, accuracy = 1, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.6, 1.0, 1.2, 1.2, 1.5)),
 		)
 
 /obj/item/weapon/gun/projectile/automatic/assault_rifle/on_update_icon()
