@@ -126,7 +126,7 @@
 #define CULTURE_VOX_ACOLYTE    "Resolute Acolyte"
 #define CULTURE_VOX_TRUTH      "Artificer of Truth"
 #define CULTURE_VOX_TECHNICIAN "Sacred Technician"
-#define CULTURE_VOX_LIGHT      "Warrior of Light"
+#define CULTURE_VOX_LIGHT      "Voidborne Vigilant"
 #define CULTURE_VOX_MERCHANT   "Sworn Merchant"
 
 #define HOME_SYSTEM_VOX_CAPITAL    "Ark of the Starlight Herald"
