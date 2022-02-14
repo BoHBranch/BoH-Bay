@@ -9951,8 +9951,6 @@
 /area/merchant_station)
 "aSS" = (
 /obj/effect/floor_decal/industrial/warning,
-/obj/machinery/mech_recharger,
-/mob/living/exosuit/premade/powerloader,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aST" = (
@@ -10648,6 +10646,7 @@
 "aVl" = (
 /obj/structure/table/steel,
 /obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/device/floor_painter,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aVm" = (
@@ -10766,20 +10765,14 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/obj/structure/closet/crate,
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/item/stack/material/glass{
-	amount = 15
+/obj/machinery/mech_recharger,
+/mob/living/exosuit/premade/powerloader{
+	health = 100;
+	maxHealth = 100
 	},
-/obj/item/stack/material/plastic{
-	amount = 10
-	},
-/obj/item/stack/material/steel{
-	amount = 10
-	},
-/obj/item/device/floor_painter,
 /turf/simulated/floor/plating,
 /area/merchant_station)
 "aVI" = (
@@ -11060,6 +11053,8 @@
 "aWI" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
+	},
+/mob/living/exosuit/premade/powerloader{
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
@@ -12239,18 +12234,16 @@
 "oLN" = (
 /obj/structure/closet/crate,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
 /obj/random/illegal,
 /obj/random/illegal,
+/obj/random/illegal,
+/obj/random/illegal,
+/obj/random/illegaltwo,
+/obj/random/illegaltwo,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/contraband,
+/obj/random/contraband,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "oMZ" = (
