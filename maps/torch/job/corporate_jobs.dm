@@ -1,4 +1,4 @@
-/datum/job/liaison
+/datum/job/liaison //add to allowed jobs list in torch_jobs.dm to enable
 	title = "Workplace Liaison"
 	department = "Support"
 	department_flag = SPT

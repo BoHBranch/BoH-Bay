@@ -371,16 +371,24 @@
 
 /datum/job/solrep
 	title = "Sol Gov Representative"
+	department = "Command"
+	department_flag = COM
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "Central Command and the Sol Code of Military Justice"
-	minimal_player_age = 10
-	economic_power = 15
+	selection_color = "#2f2f7f"
+	minimal_player_age = 14
+	economic_power = 20
 	minimum_character_age = list(SPECIES_HUMAN = 23, SPECIES_CUSTOM = 23)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/CO
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/solrep
+	alt_titles = list(
+		"Sol Gov Diplomat",
+		"Sol Gov Negotiator" )
 	allowed_branches = list(
 		/datum/mil_branch/solgov
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/sol/gov,
+		/datum/mil_rank/sol/gov
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_SCIENCE     = SKILL_BASIC,
@@ -395,30 +403,17 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-	access = list(access_security, access_brig, access_armory, access_forensics_lockers, access_heads, access_medical, access_morgue, access_tox, access_tox_storage,
-					access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage, access_change_ids,
-					access_ai_upload, access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_chapel_office, access_tech_storage,
-					access_atmospherics, access_bar, access_janitor, access_crematorium, access_kitchen, access_robotics, access_cargo, access_construction,
-					access_chemistry, access_cargo_bot, access_hydroponics, access_manufacturing, access_library, access_lawyer, access_virology, access_cmo,
-					access_qm, access_network, access_surgery, access_research, access_mining, access_mining_office, access_mailsorting, access_heads_vault,
-					access_mining_station, access_xenobiology, access_ce, access_hop, access_hos, access_RC_announce, access_keycard_auth, access_tcomsat,
+	access = list(access_adjudicator, access_security, access_brig, access_forensics_lockers, access_heads, access_medical, access_morgue,
+					access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage, access_change_ids,
+					access_ai_upload, access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_tech_storage,
+					access_bar, access_janitor, access_crematorium, access_kitchen, access_robotics, access_cargo, access_construction,
+					access_cargo_bot, access_hydroponics, access_manufacturing, access_library, access_lawyer, access_network, access_research, access_mining, access_mining_office, access_mailsorting, access_heads_vault,
+					access_mining_station, access_xenobiology, access_keycard_auth, access_tcomsat,
 					access_gateway, access_sec_doors, access_psychiatrist, access_xenoarch, access_medical_equip, access_heads, access_hangar, access_guppy_helm,
 					access_expedition_shuttle_helm, access_aquila, access_aquila_helm, access_solgov_crew, access_nanotrasen, access_robotics_engineering,
 					access_emergency_armory, access_sec_guard, access_gun, access_expedition_shuttle, access_guppy, access_seneng, access_senmed, access_senadv,
 					access_explorer, access_pathfinder, access_pilot, access_commissary, access_petrov, access_petrov_helm, access_petrov_analysis, access_petrov_phoron,
 					access_petrov_toxins, access_petrov_chemistry, access_petrov_security, access_petrov_maint, access_rd, access_petrov_rd)
-	minimal_access = list(access_security, access_brig, access_armory, access_forensics_lockers, access_heads, access_medical, access_morgue, access_tox, access_tox_storage,
-						access_engine, access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage, access_change_ids,
-						access_ai_upload, access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_chapel_office, access_tech_storage,
-						access_atmospherics, access_bar, access_janitor, access_crematorium, access_kitchen, access_robotics, access_cargo, access_construction,
-						access_chemistry, access_cargo_bot, access_hydroponics, access_manufacturing, access_library, access_lawyer, access_virology, access_cmo,
-						access_qm, access_network, access_surgery, access_research, access_mining, access_mining_office, access_mailsorting, access_heads_vault,
-						access_mining_station, access_xenobiology, access_ce, access_hop, access_hos, access_RC_announce, access_keycard_auth, access_tcomsat,
-						access_gateway, access_sec_doors, access_psychiatrist, access_xenoarch, access_medical_equip, access_heads, access_hangar, access_guppy_helm,
-						access_expedition_shuttle_helm, access_aquila, access_aquila_helm, access_solgov_crew, access_nanotrasen, access_robotics_engineering,
-						access_emergency_armory, access_sec_guard, access_gun, access_expedition_shuttle, access_guppy, access_seneng, access_senmed, access_senadv,
-						access_explorer, access_pathfinder, access_pilot, access_commissary, access_petrov, access_petrov_helm, access_petrov_analysis, access_petrov_phoron,
-						access_petrov_toxins, access_petrov_chemistry, access_petrov_security, access_petrov_maint, access_rd, access_petrov_rd, access_gunnery)
 
 /datum/job/solrep/get_description_blurb()
 	return "You are the Sol Gov Representative. You are subordinate only to Central Command. Your job is represent the interests of the Solarian Central Government, to maintain said interests, and to check and recheck the ship's conduct. You use your immense legal and diplomatic power to keep any unlawful individual from escaping justice; You are able to approve, oversee, overrule any legal action aboard the ship. Remember: you hold incredible responsibility as the direct representative of the Solarian Central Govermnent and that no one on the ship holds the same kind of power you do... yet you are only one person."

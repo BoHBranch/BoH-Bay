@@ -682,6 +682,16 @@
 	name = "\improper Command - CL's Backroom"
 	req_access = list(access_liaison)
 
+/area/crew_quarters/heads/office/solrep
+	icon_state = "heads_sol"
+	name = "\improper Command - Rep's Office"
+	req_access = list(access_adjudicator)
+
+/area/crew_quarters/heads/office/solrep/backroom
+	icon_state = "heads_sol"
+	name = "\improper Command - Rep's Backroom"
+	req_access = list(access_adjudicator)
+
 /area/crew_quarters/heads/office/vip
 	icon_state = "heads_sr"
 	name = "\improper Command - VIP Quarters"
