@@ -1,9 +1,9 @@
-/datum/job/liaison //add to allowed jobs list in torch_jobs.dm to enable
+/datum/job/liaison
 	title = "Workplace Liaison"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "Corporate Regulations, the Union Charter, and the Surveyor Corps Organisation"
 	selection_color = "#2f2f7f"
 	economic_power = 15
