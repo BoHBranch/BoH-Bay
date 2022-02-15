@@ -620,6 +620,19 @@
 				jobs += "<td width='20%'><a href='?src=\ref[src];jobban3=[entry];jobban4=\ref[M]'>[entry]</a></td>"
 		jobs += "</tr></table>"
 
+		//Speciesbans
+		jobs += "<table cellpadding='1' cellspacing='0' width='100%'>"
+		jobs += "<tr bgcolor='ccccff'><th colspan='[LAZYLEN(misc_roles)]'>Species</th></tr><tr align='center'>"
+		#define SPECIES_COLUMNS 6
+		var/list/ASS = all_species
+		for(var/entry in ASS)
+			if(jobban_isbanned(M, entry))
+				jobs += "<td width='20%'><a href='?src=\ref[src];jobban3=[entry];jobban4=\ref[M]'><font color=red>[entry]</font></a></td>"
+			else
+				jobs += "<td width='20%'><a href='?src=\ref[src];jobban3=[entry];jobban4=\ref[M]'>[entry]</a></td>"
+		jobs += "</tr></table>"
+		#undef SPECIES_COLUMNS
+
 	// Channels
 		jobs += "<table cellpadding='1' cellspacing='0' width='100%'>"
 		var/list/channels = decls_repository.get_decls_of_subtype(/decl/communication_channel)

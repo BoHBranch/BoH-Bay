@@ -232,11 +232,14 @@
 
 /datum/job/proc/get_join_link(var/client/caller, var/href_string, var/show_invalid_jobs)
 	if(is_available(caller))
-		if(is_restricted(caller, caller.prefs))
+		if(jobban_isbanned(caller, caller.prefs.species))
 			if(show_invalid_jobs)
 				return "<tr><td><a style='text-decoration: line-through' href='[href_string]'>[title]</a></td><td>[current_positions]</td><td>(Active: [get_active_count()])</td></tr>"
-		else
-			return "<tr><td><a href='[href_string]'>[title]</a></td><td>[current_positions]</td><td>(Active: [get_active_count()])</td></tr>"
+			if(is_restricted(caller, caller.prefs))
+				if(show_invalid_jobs)
+					return "<tr><td><a style='text-decoration: line-through' href='[href_string]'>[title]</a></td><td>[current_positions]</td><td>(Active: [get_active_count()])</td></tr>"
+			else
+				return "<tr><td><a href='[href_string]'>[title]</a></td><td>[current_positions]</td><td>(Active: [get_active_count()])</td></tr>"
 	return ""
 
 // Only players with the job assigned and AFK for less than 10 minutes count as active
