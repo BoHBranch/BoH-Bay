@@ -185,3 +185,21 @@
 	icon = 'icons/obj/guns/holdout_pistol.dmi'
 	icon_state = "silencer"
 	w_class = ITEM_SIZE_SMALL
+
+/obj/item/weapon/gun/projectile/pistol/gluger
+	name = "Low Height Gluger"
+	desc = "A strange, insane looking contraption from Low Height Industries, this handgun seems exceptionally deadly, utterly insane yet sleek. And also a pile of trash. Will most definitly leave a hole without missing, leaving the victim either impressed or not. Loads .454 Casull."
+	icon = 'icons/obj/guns/pistol.dmi'
+	fire_sound = 'sound/weapons/gunshot/revolver_strong.ogg'
+	icon_state = "gluger"
+	item_state = "secgundark"
+	max_shells = 8
+	caliber = CALIBER_PISTOL_MAGNUM
+	magazine_type = /obj/item/ammo_magazine/pistol/gluger
+	allowed_magazines = /obj/item/ammo_magazine/pistol/gluger
+	fire_delay = 5 // 0.5 seconds, since the Gluger is unlikely to miss, will be ahove most pistols, places it in revovler territory, as it is a handcannon.
+	acc_mod_base = 10 // Gluger don't miss often.
+	accuracy_power = 10
+	penetration_mult = 1.6 // 26 pen, does 50/26 with this.
+	mag_insert_sound = 'sound/weapons/guns/interaction/hpistol_magin.ogg'
+	mag_remove_sound = 'sound/weapons/guns/interaction/hpistol_magout.ogg'

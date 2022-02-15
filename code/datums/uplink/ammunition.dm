@@ -106,6 +106,12 @@
 	item_cost = 6
 	path = /obj/item/ammo_magazine/magnum
 
+/datum/uplink_item/item/ammo/gluger
+	name = "Gluger Magazine"
+	desc = "A magazine for the Gluger pistol. Contains 8 rounds."
+	item_cost = 6
+	path = /obj/item/ammo_magazine/pistol/gluger
+
 /datum/uplink_item/item/ammo/flechette
 	name = "Flechette Rifle Magazine"
 	desc = "A  rifle magazine loaded with flechette rounds. Contains 9 rounds."

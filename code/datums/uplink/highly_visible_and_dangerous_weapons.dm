@@ -202,6 +202,13 @@
 	item_cost = 28
 	path = /obj/item/weapon/shield/energy
 
+/datum/uplink_item/item/visible_weapons/gluger
+	name = "Low Height Gluger"
+	desc = "A highly powered magnum from Low Height of unquestionable quality, yet will most definitly leave a hole in quite a few people."
+	item_cost = 100
+	path = /obj/item/weapon/shield/energy
+
+
 /datum/uplink_item/item/visible_weapons/
 	name = "Switchblade"
 	desc = "Damn it feels good to be a gangsta."

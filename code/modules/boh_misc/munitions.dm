@@ -224,6 +224,6 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = CALIBER_PISTOL_MAGNUM
-	projectile_type = /obj/item/ammo_casing/pistol/magnum
+	ammo_type  = /obj/item/ammo_casing/pistol/magnum
 	max_ammo = 8
 	multiple_sprites = 1
