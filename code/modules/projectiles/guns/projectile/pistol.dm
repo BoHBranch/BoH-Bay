@@ -197,9 +197,9 @@
 	caliber = CALIBER_PISTOL_MAGNUM
 	magazine_type = /obj/item/ammo_magazine/pistol/gluger
 	allowed_magazines = /obj/item/ammo_magazine/pistol/gluger
-	fire_delay = 5 // 0.5 seconds, since the Gluger is unlikely to miss, will be ahove most pistols, places it in revovler territory, as it is a handcannon.
-	acc_mod_base = 10 // Gluger don't miss often.
-	accuracy_power = 10
+	fire_delay = 7 // 0.7 seconds, since the Gluger is unlikely to miss, will be ahove most pistols, places it in revovler territory, as it is a handcannon.
+	acc_mod_base = 4 // Gluger don't miss often.
+	accuracy_power = 2
 	penetration_mult = 1.6 // 26 pen, does 50/26 with this.
 	mag_insert_sound = 'sound/weapons/guns/interaction/hpistol_magin.ogg'
 	mag_remove_sound = 'sound/weapons/guns/interaction/hpistol_magout.ogg'
