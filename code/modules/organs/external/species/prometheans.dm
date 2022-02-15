@@ -1,7 +1,7 @@
 // Slime limbs.
 /obj/item/organ/external/chest/unbreakable/slime //The huge max_damage is necessary because if their chest breaks, they can't regen the damage unlike limbs, that can be cut off.
 	max_damage = 400
-	limb_flags = ORGAN_FLAG_GENDERED_ICON
+	limb_flags = ORGAN_FLAG_GENDERED_ICON | ORGAN_FLAG_HEALS_OVERKILL
 
 /obj/item/organ/external/groin/unbreakable/slime
 	max_damage = 30
