@@ -374,7 +374,7 @@
 	supervisors = "Central Command and the Sol Code of Military Justice"
 	minimal_player_age = 10
 	economic_power = 15
-	minimum_character_age = list(SPECIES_HUMAN = 23,SPECIES_UNATHI = 30,SPECIES_SERGAL = 20, SPECIES_SKRELL = 200, SPECIES_PROMETHEAN = 20, SPECIES_YEOSA = 20, SPECIES_VULP = 20, SPECIES_VASS = 20, SPECIES_TAJ = 20, SPECIES_CUSTOM = 20, SPECIES_AKULA = 20)
+	minimum_character_age = list(SPECIES_HUMAN = 23, SPECIES_CUSTOM = 23)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/CO
 	allowed_branches = list(
 		/datum/mil_branch/solgov
