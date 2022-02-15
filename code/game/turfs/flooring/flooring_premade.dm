@@ -371,8 +371,8 @@
 	icon_state = "sand"
 
 /turf/simulated/floor/beach/sand/desert
+	icon = 'icons/turf/desert.dmi'
 	icon_state = "desert"
-	has_resources = 1
 
 /turf/simulated/floor/beach/sand/desert/New()
 	icon_state = "desert[rand(0,5)]"
@@ -407,3 +407,9 @@
 	icon = 'icons/turf/flooring/crystal.dmi'
 	icon_state = ""
 	initial_flooring = /decl/flooring/crystal
+
+/turf/simulated/floor/pool
+	name = "pool floor"
+	icon = 'icons/turf/flooring/pool.dmi'
+	icon_state = "pool"
+	initial_flooring = /decl/flooring/pool

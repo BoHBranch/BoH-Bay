@@ -152,8 +152,8 @@
 	name = "\improper Laundry Room"
 	icon_state = "Sleep"
 
-/area/crew_quarters/garden
-	name = "\improper Ship Garden"
+/area/crew_quarters/recreation
+	name = "\improper Recreation"
 
 //Second Deck (Z-3)
 /area/maintenance/seconddeck
