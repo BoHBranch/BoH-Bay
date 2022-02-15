@@ -8250,11 +8250,11 @@
 	pixel_x = 36;
 	pixel_y = 0
 	},
-/obj/structure/bed/double,
-/obj/item/weapon/bedsheet/browndouble,
 /obj/effect/landmark/start{
 	name = "Workplace Liason"
 	},
+/obj/structure/bed,
+/obj/item/weapon/bedsheet/orange,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
 "nz" = (
@@ -15286,6 +15286,11 @@
 /obj/item/device/radio,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
+"CF" = (
+/obj/structure/catwalk,
+/obj/structure/closet/secure_closet/representative,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "CH" = (
 /obj/structure/sign/directions/bridge{
 	dir = 8;
@@ -15422,15 +15427,6 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
-"DL" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/storage/briefcase{
-	pixel_x = 3;
-	pixel_y = 0
-	},
-/obj/item/weapon/material/clipboard/glass,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "DN" = (
 /turf/simulated/wall/r_wall/hull,
 /area/hallway/primary/bridge/aft)
@@ -16652,11 +16648,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/officerbunk)
-"Kz" = (
-/obj/structure/catwalk,
-/obj/structure/closet/secure_closet/representative,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "KC" = (
 /obj/structure/flora/pottedplant/bamboo,
 /obj/machinery/power/apc{
@@ -16670,6 +16661,14 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
+"KF" = (
+/obj/structure/catwalk,
+/obj/structure/filingcabinet/chestdrawer{
+	dir = 1
+	},
+/obj/item/weapon/folder/red,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "KG" = (
 /obj/structure/cable/green{
 	d2 = 2;
@@ -16867,6 +16866,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
+"Lu" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/storage/briefcase{
+	pixel_x = 3;
+	pixel_y = 0
+	},
+/obj/item/weapon/material/clipboard/glass,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "Lv" = (
 /obj/structure/table/glass,
 /obj/item/weapon/book/manual/nt_regs,
@@ -18947,14 +18955,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
-"Wg" = (
-/obj/structure/catwalk,
-/obj/structure/filingcabinet/chestdrawer{
-	dir = 1
-	},
-/obj/item/weapon/folder/red,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "Wh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -19039,6 +19039,19 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters_boh/cabin_main/officerbunk)
+"WH" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/pen/red{
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/item/weapon/pen/green,
+/obj/item/weapon/pen/blue{
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/turf/simulated/floor/carpet/blue,
+/area/crew_quarters/heads/office/solrep/backroom)
 "WK" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -19648,19 +19661,6 @@
 /mob/living/simple_animal/corgi/Ian,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/xo)
-"ZU" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/pen/red{
-	pixel_x = -1;
-	pixel_y = 3
-	},
-/obj/item/weapon/pen/green,
-/obj/item/weapon/pen/blue{
-	pixel_x = -5;
-	pixel_y = -1
-	},
-/turf/simulated/floor/carpet/blue,
-/area/crew_quarters/heads/office/solrep/backroom)
 "ZX" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/bed/chair/padded/teal,
@@ -32070,8 +32070,8 @@ af
 af
 JT
 aE
-Kz
-Wg
+CF
+KF
 sJ
 sJ
 bu
@@ -32474,12 +32474,12 @@ af
 af
 af
 af
-DL
+Lu
 bh
 dk
 br
 Ld
-ZU
+WH
 Ve
 IO
 IO
