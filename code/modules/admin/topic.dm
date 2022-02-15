@@ -621,10 +621,11 @@
 		jobs += "</tr></table>"
 
 		//Speciesbans
-		jobs += "<table cellpadding='1' cellspacing='0' width='100%'>"
-		jobs += "<tr bgcolor='ccccff'><th colspan='[LAZYLEN(misc_roles)]'>Species</th></tr><tr align='center'>"
 		#define SPECIES_COLUMNS 6
 		var/list/ASS = all_species
+		jobs += "<table cellpadding='1' cellspacing='0' width='100%'>"
+		jobs += "<tr bgcolor='ccccff'><th colspan='[LAZYLEN(ASS)]'>Species</th></tr><tr align='center'>"
+		jobs += "</tr><tr align='center'>"
 		for(var/entry in ASS)
 			if(jobban_isbanned(M, entry))
 				jobs += "<td width='20%'><a href='?src=\ref[src];jobban3=[entry];jobban4=\ref[M]'><font color=red>[entry]</font></a></td>"
