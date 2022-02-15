@@ -8048,10 +8048,11 @@
 /area/crew_quarters/heads/office/cl)
 "nh" = (
 /obj/machinery/camera/network/command{
-	c_tag = "Sol Government Representative - Office";
+	c_tag = "Corporate  Office";
 	dir = 4;
 	network = list("Command","Security")
 	},
+/obj/machinery/photocopier,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/cl)
 "ni" = (
@@ -11877,8 +11878,7 @@
 "tt" = (
 /obj/structure/table/woodentable/walnut,
 /obj/machinery/photocopier/faxmachine{
-	anchored = 1;
-	department = "VIP Quarters"
+	department = "Corporate Liason"
 	},
 /obj/item/device/radio/intercom{
 	dir = 4;
@@ -14376,6 +14376,11 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/bridge/storage)
+"yO" = (
+/obj/structure/catwalk,
+/obj/structure/closet/secure_closet/representative,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "yR" = (
 /obj/machinery/door/airlock/security{
 	name = "Security Checkpoint";
@@ -14854,6 +14859,14 @@
 /obj/structure/bed/chair/comfy/green,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/rd)
+"AF" = (
+/obj/structure/catwalk,
+/obj/structure/filingcabinet/chestdrawer{
+	dir = 1
+	},
+/obj/item/weapon/folder/red,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "AH" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "bridge_starboard"
@@ -15153,6 +15166,11 @@
 /obj/machinery/newscaster{
 	pixel_x = -32
 	},
+/obj/machinery/camera/network/command{
+	c_tag = "Sol Government Representative - Office";
+	dir = 4;
+	network = list("Command","Security")
+	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/solrep)
 "Ce" = (
@@ -15286,11 +15304,6 @@
 /obj/item/device/radio,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
-"CF" = (
-/obj/structure/catwalk,
-/obj/structure/closet/secure_closet/representative,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "CH" = (
 /obj/structure/sign/directions/bridge{
 	dir = 8;
@@ -15573,6 +15586,15 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
+"EF" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/storage/briefcase{
+	pixel_x = 3;
+	pixel_y = 0
+	},
+/obj/item/weapon/material/clipboard/glass,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "EJ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1;
@@ -16661,14 +16683,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
-"KF" = (
-/obj/structure/catwalk,
-/obj/structure/filingcabinet/chestdrawer{
-	dir = 1
-	},
-/obj/item/weapon/folder/red,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "KG" = (
 /obj/structure/cable/green{
 	d2 = 2;
@@ -16866,15 +16880,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
-"Lu" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/storage/briefcase{
-	pixel_x = 3;
-	pixel_y = 0
-	},
-/obj/item/weapon/material/clipboard/glass,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "Lv" = (
 /obj/structure/table/glass,
 /obj/item/weapon/book/manual/nt_regs,
@@ -17724,11 +17729,11 @@
 /area/hallway/primary/bridge/fore)
 "QS" = (
 /obj/structure/table/woodentable/walnut,
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
+/obj/item/weapon/stamp/denied{
+	pixel_x = 4;
+	pixel_y = -2
 	},
-/obj/item/weapon/pen/green,
+/obj/item/weapon/stamp/nt,
 /obj/item/weapon/pen/red{
 	pixel_x = -1;
 	pixel_y = 3
@@ -17736,6 +17741,11 @@
 /obj/item/weapon/pen/blue{
 	pixel_x = -5;
 	pixel_y = -1
+	},
+/obj/item/weapon/pen/green,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/cl)
@@ -18517,8 +18527,7 @@
 /area/aquila/maintenance)
 "Uc" = (
 /obj/machinery/photocopier/faxmachine{
-	anchored = 1;
-	department = "Corporate Liasion"
+	department = "SolGov Representative"
 	},
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/structure/noticeboard{
@@ -19039,19 +19048,6 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters_boh/cabin_main/officerbunk)
-"WH" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/pen/red{
-	pixel_x = -1;
-	pixel_y = 3
-	},
-/obj/item/weapon/pen/green,
-/obj/item/weapon/pen/blue{
-	pixel_x = -5;
-	pixel_y = -1
-	},
-/turf/simulated/floor/carpet/blue,
-/area/crew_quarters/heads/office/solrep/backroom)
 "WK" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -19068,6 +19064,19 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
+"WV" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/pen/red{
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/item/weapon/pen/green,
+/obj/item/weapon/pen/blue{
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/turf/simulated/floor/carpet/blue,
+/area/crew_quarters/heads/office/solrep/backroom)
 "WX" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -19508,12 +19517,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "Zf" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/stamp/denied{
-	pixel_x = 4;
-	pixel_y = -2
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
 	},
-/obj/item/weapon/stamp/nt,
+/obj/machinery/photocopier,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/cl)
 "Zh" = (
@@ -32070,8 +32078,8 @@ af
 af
 JT
 aE
-CF
-KF
+yO
+AF
 sJ
 sJ
 bu
@@ -32474,12 +32482,12 @@ af
 af
 af
 af
-Lu
+EF
 bh
 dk
 br
 Ld
-WH
+WV
 Ve
 IO
 IO
