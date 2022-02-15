@@ -188,7 +188,7 @@
 
 /obj/item/weapon/gun/projectile/pistol/gluger
 	name = "Low Height Gluger"
-	desc = "A strange, insane looking contraption from Low Height Industries, this handgun seems exceptionally deadly, utterly insane yet sleek. And also a pile of trash. Will most definitly leave a hole without missing, leaving the victim either impressed or not. Loads .454 Casull."
+	desc = "A strange, insane looking contraption from Low Height Industries, this handgun seems exceptionally deadly, utterly insane yet sleek. And also a pile of trash. Will most definitly leave a hole without missing, leaving the victim either impressed or not. Loads 15mm."
 	icon = 'icons/obj/guns/pistol.dmi'
 	fire_sound = 'sound/weapons/gunshot/revolver_strong.ogg'
 	icon_state = "gluger"

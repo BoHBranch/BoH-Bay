@@ -218,7 +218,7 @@
 // Gluger Magazine, no I don't care that it doesn't fit the Bay magazine naming scheme, the bay naming scheme is dumb. //
 
 /obj/item/ammo_magazine/pistol/gluger
-	name = "Gluger magazine (.454)"
+	name = "Gluger magazine"
 	desc = "A magazine for some type of high caliber handgun, the markings on the bottom spell out.. 'GLUGER'."
 	icon_state = "magnum"
 	origin_tech = list(TECH_COMBAT = 2)
