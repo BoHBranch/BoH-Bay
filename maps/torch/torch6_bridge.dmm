@@ -13110,6 +13110,19 @@
 	},
 /turf/simulated/wall/r_wall/hull,
 /area/bridge/storage)
+"vD" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/pen/red{
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/item/weapon/pen/green,
+/obj/item/weapon/pen/blue{
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/turf/simulated/floor/carpet/blue,
+/area/crew_quarters/heads/office/solrep/backroom)
 "vE" = (
 /obj/structure/lattice,
 /obj/structure/disposalpipe/down{
@@ -13768,6 +13781,7 @@
 	pixel_x = 3;
 	pixel_y = -4
 	},
+/obj/item/weapon/storage/box/large/union_cards,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/cl)
 "wH" = (
@@ -13903,6 +13917,11 @@
 /obj/structure/railing/mapped,
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
+"xb" = (
+/obj/structure/catwalk,
+/obj/structure/closet/secure_closet/representative,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "xc" = (
 /turf/simulated/wall/prepainted,
 /area/maintenance/bridge/foreport)
@@ -14376,11 +14395,6 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/bridge/storage)
-"yO" = (
-/obj/structure/catwalk,
-/obj/structure/closet/secure_closet/representative,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "yR" = (
 /obj/machinery/door/airlock/security{
 	name = "Security Checkpoint";
@@ -14859,14 +14873,6 @@
 /obj/structure/bed/chair/comfy/green,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/rd)
-"AF" = (
-/obj/structure/catwalk,
-/obj/structure/filingcabinet/chestdrawer{
-	dir = 1
-	},
-/obj/item/weapon/folder/red,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "AH" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "bridge_starboard"
@@ -15586,15 +15592,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/aquila/airlock)
-"EF" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/storage/briefcase{
-	pixel_x = 3;
-	pixel_y = 0
-	},
-/obj/item/weapon/material/clipboard/glass,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "EJ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1;
@@ -16727,6 +16724,15 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
+"KR" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/storage/briefcase{
+	pixel_x = 3;
+	pixel_y = 0
+	},
+/obj/item/weapon/material/clipboard/glass,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "KX" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 9
@@ -18916,6 +18922,14 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/bridge)
+"VZ" = (
+/obj/structure/catwalk,
+/obj/structure/filingcabinet/chestdrawer{
+	dir = 1
+	},
+/obj/item/weapon/folder/red,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "Wa" = (
 /obj/structure/bed/chair/padded/red{
 	dir = 4;
@@ -19064,19 +19078,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
-"WV" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/pen/red{
-	pixel_x = -1;
-	pixel_y = 3
-	},
-/obj/item/weapon/pen/green,
-/obj/item/weapon/pen/blue{
-	pixel_x = -5;
-	pixel_y = -1
-	},
-/turf/simulated/floor/carpet/blue,
-/area/crew_quarters/heads/office/solrep/backroom)
 "WX" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -32078,8 +32079,8 @@ af
 af
 JT
 aE
-yO
-AF
+xb
+VZ
 sJ
 sJ
 bu
@@ -32482,12 +32483,12 @@ af
 af
 af
 af
-EF
+KR
 bh
 dk
 br
 Ld
-WV
+vD
 Ve
 IO
 IO
