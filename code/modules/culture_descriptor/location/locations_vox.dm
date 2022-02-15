@@ -30,7 +30,7 @@
 	name = HOME_SYSTEM_VOX_PROCESSING
 	description = "The Ark of the Dutiful Blade is the processing center of most salvage and raw ore collected by the Vox Fleets, its population holding at any given time thirteen billion Vox, the second most populous of the artifact-worlds. \
 	Many honor this ark as the beating heart of Vox industry, which produces the vast majority of resources for itself and the rest as its many technicians repurpose and deconstruct what the fleets bring in, melting down scrap and ore for new materials. \
-	The Ark Admiral serving as the Dutiful Blade’s personal claw is an Armalis clad in the distinctive bronze salvage suits of its technicians, known for their perfected appraisal of alien tech and ability to find the most value possible from a pile of tangled debris. \
+	The Ark Admiral serving as the Dutiful Blades personal claw is an Armalis clad in the distinctive bronze salvage suits of its technicians, known for their perfected appraisal of alien tech and ability to find the most value possible from a pile of tangled debris. \
 	This Ark holds not just the majority of technicians, but has a notable amount of decks dedicated to a merchant sub-fleet, constantly departing with what the arks have no need for, and returning with holds full of supply."
 
 /decl/cultural_info/location/vox/production
