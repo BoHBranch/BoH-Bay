@@ -30,7 +30,8 @@ Civilian
 	announced = FALSE
 	alt_titles = list(
 		"Journalist" = /decl/hierarchy/outfit/job/torch/passenger/passenger/journalist,
-		"Botanist")
+		"Botanist"
+		"Passenger" = /decl/hierarchy/outfit/job/torch/passenger/passenger)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/crewman
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(
