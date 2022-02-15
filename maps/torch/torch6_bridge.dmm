@@ -7812,7 +7812,6 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
 "mM" = (
-/obj/structure/flora/pottedplant/tall,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
@@ -7828,6 +7827,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/structure/flora/pottedplant/smelly,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
 "mN" = (
@@ -15422,6 +15422,15 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
+"DL" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/storage/briefcase{
+	pixel_x = 3;
+	pixel_y = 0
+	},
+/obj/item/weapon/material/clipboard/glass,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "DN" = (
 /turf/simulated/wall/r_wall/hull,
 /area/hallway/primary/bridge/aft)
@@ -15652,15 +15661,6 @@
 	},
 /turf/simulated/floor/airless,
 /area/aquila/airlock)
-"Fd" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/storage/briefcase{
-	pixel_x = 3;
-	pixel_y = 0
-	},
-/obj/item/weapon/material/clipboard/glass,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "Fi" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -16554,14 +16554,6 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/psiadvisor)
-"Ju" = (
-/obj/structure/catwalk,
-/obj/structure/filingcabinet/chestdrawer{
-	dir = 1
-	},
-/obj/item/weapon/folder/red,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "JA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -16660,6 +16652,11 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters_boh/cabin_main/officerbunk)
+"Kz" = (
+/obj/structure/catwalk,
+/obj/structure/closet/secure_closet/representative,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "KC" = (
 /obj/structure/flora/pottedplant/bamboo,
 /obj/machinery/power/apc{
@@ -17458,19 +17455,6 @@
 "Pt" = (
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
-"Pv" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/pen/red{
-	pixel_x = -1;
-	pixel_y = 3
-	},
-/obj/item/weapon/pen/green,
-/obj/item/weapon/pen/blue{
-	pixel_x = -5;
-	pixel_y = -1
-	},
-/turf/simulated/floor/carpet/blue,
-/area/crew_quarters/heads/office/solrep/backroom)
 "PB" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -18063,11 +18047,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/aquila/storage)
-"Sc" = (
-/obj/structure/catwalk,
-/obj/structure/closet/secure_closet/representative,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "Sd" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/device/flashlight/lamp,
@@ -18968,6 +18947,14 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
+"Wg" = (
+/obj/structure/catwalk,
+/obj/structure/filingcabinet/chestdrawer{
+	dir = 1
+	},
+/obj/item/weapon/folder/red,
+/turf/simulated/floor/plating,
+/area/maintenance/bridge/forestarboard)
 "Wh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -19661,6 +19648,19 @@
 /mob/living/simple_animal/corgi/Ian,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/xo)
+"ZU" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/pen/red{
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/item/weapon/pen/green,
+/obj/item/weapon/pen/blue{
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/turf/simulated/floor/carpet/blue,
+/area/crew_quarters/heads/office/solrep/backroom)
 "ZX" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/bed/chair/padded/teal,
@@ -32070,8 +32070,8 @@ af
 af
 JT
 aE
-Sc
-Ju
+Kz
+Wg
 sJ
 sJ
 bu
@@ -32474,12 +32474,12 @@ af
 af
 af
 af
-Fd
+DL
 bh
 dk
 br
 Ld
-Pv
+ZU
 Ve
 IO
 IO
