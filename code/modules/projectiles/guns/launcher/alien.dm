@@ -1,8 +1,8 @@
 /obj/item/weapon/gun/launcher/alien
 	var/last_regen = 0
-	var/ammo_gen_time = 100
-	var/max_ammo = 3
-	var/ammo = 3
+	var/ammo_gen_time = 80
+	var/max_ammo = 6
+	var/ammo = 6
 	var/ammo_type
 	var/ammo_name
 
@@ -38,7 +38,6 @@
 
 //Vox pinning weapon.
 /obj/item/weapon/gun/launcher/alien/spikethrower
-
 	name = "spike thrower"
 	desc = "A vicious alien projectile weapon. Parts of it quiver gelatinously, as though the thing is insectile and alive."
 	w_class = ITEM_SIZE_LARGE
