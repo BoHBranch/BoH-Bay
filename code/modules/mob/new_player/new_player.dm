@@ -299,8 +299,6 @@
 		return 0
 	if(job.is_restricted(client,client.prefs,src))
 		return
-	if(jobban_isbanned(client, client.prefs.species))
-		return
 
 	var/datum/spawnpoint/spawnpoint = job.get_spawnpoint(client)
 	var/turf/spawn_turf = pick(spawnpoint.turfs)
