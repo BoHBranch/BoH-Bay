@@ -55,7 +55,11 @@
 
 // Some jobs for nabber grades defined here due to map-specific job datums.
 /decl/cultural_info/culture/nabber/New()
-	LAZYADD(valid_jobs, /datum/job/scientist_assistant, /datum/job/assistant)
+	LAZYADD(valid_jobs, /datum/job/scientist_assistant)
+	..()
+	
+	/decl/cultural_info/culture/nabber/New()
+	LAZYADD(valid_jobs, /datum/job/assistant)
 	..()
 
 /decl/cultural_info/culture/nabber/b/New()
@@ -67,7 +71,11 @@
 	..()
 
 /decl/cultural_info/culture/nabber/a/plus/New()
-	LAZYADD(valid_jobs, /datum/job/doctor, /datum/job/explorer)
+	LAZYADD(valid_jobs, /datum/job/doctor)
+	..()
+	
+	/decl/cultural_info/culture/nabber/a/plus/New()
+	LAZYADD(valid_jobs, /datum/job/explorer)
 	..()
 
 /datum/job
