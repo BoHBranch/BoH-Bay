@@ -2772,6 +2772,29 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
+"eI" = (
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 8
+	},
+/obj/structure/hygiene/drain,
+/turf/simulated/floor/tiled,
+/area/crew_quarters/recreation)
+"eJ" = (
+/obj/effect/floor_decal/corner/paleblue/border{
+	dir = 8
+	},
+/obj/effect/floor_decal/beach/corner{
+	dir = 8;
+	icon_state = "beachbordercorner"
+	},
+/obj/structure/hygiene/drain,
+/turf/simulated/floor/tiled,
+/area/crew_quarters/recreation)
 "eK" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -2863,6 +2886,15 @@
 "eQ" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/grass,
+/area/crew_quarters/recreation)
+"eR" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/turf/simulated/floor/tiled,
 /area/crew_quarters/recreation)
 "eS" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -2965,6 +2997,16 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
+"fc" = (
+/obj/structure/curtain/open/privacy,
+/obj/item/weapon/stool,
+/obj/structure/hygiene/shower{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/paleblue/mono,
+/obj/structure/hygiene/drain,
+/turf/simulated/floor/tiled/monotile,
+/area/crew_quarters/recreation)
 "fd" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -7154,15 +7196,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
-"mQ" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/turf/simulated/floor/tiled,
-/area/crew_quarters/recreation)
 "mR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -16088,17 +16121,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/petrov/rnd)
-"NV" = (
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 8
-	},
-/obj/effect/floor_decal/beach/corner{
-	dir = 8;
-	icon_state = "beachbordercorner"
-	},
-/obj/item/drain,
-/turf/simulated/floor/tiled,
-/area/crew_quarters/recreation)
 "NW" = (
 /obj/effect/paint/silver,
 /turf/simulated/wall/titanium,
@@ -16955,15 +16977,6 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/analysis)
-"Sa" = (
-/obj/structure/curtain/open/privacy,
-/obj/item/weapon/stool,
-/obj/structure/hygiene/shower{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/paleblue/mono,
-/turf/simulated/floor/tiled/monotile,
-/area/crew_quarters/recreation)
 "Sb" = (
 /obj/machinery/door/blast/regular{
 	density = 1;
@@ -17383,18 +17396,6 @@
 /obj/item/weapon/melee/baton/loaded,
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/analysis)
-"TK" = (
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/corner/paleblue/border{
-	dir = 8
-	},
-/obj/item/drain,
-/turf/simulated/floor/tiled,
-/area/crew_quarters/recreation)
 "TL" = (
 /obj/structure/ladder/up,
 /obj/effect/floor_decal/corner/brown{
@@ -31063,21 +31064,21 @@ dX
 eG
 mg
 iN
-TK
+eI
 RK
 RK
 RK
 ln
 lI
 lI
-NV
+eJ
 gb
 gb
 gb
 gb
 ml
 mO
-Sa
+fc
 Tv
 Tv
 aa
@@ -31278,7 +31279,7 @@ ik
 ik
 ik
 mo
-mQ
+eR
 Ly
 Tv
 Tv
@@ -31481,7 +31482,7 @@ jk
 jN
 mp
 mV
-Sa
+fc
 Tv
 Tv
 Tv
