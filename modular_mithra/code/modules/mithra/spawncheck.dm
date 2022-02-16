@@ -76,8 +76,6 @@
 		return 0
 	if(job.is_restricted(client,client.prefs, src))
 		return 0
-	if(jobban_isbanned(client, client.prefs.species))
-		return
 	if(!attempt_vr(src,"spawn_checks",list())) //Really the only thing changed here
 		return 0									// Ditto
 
