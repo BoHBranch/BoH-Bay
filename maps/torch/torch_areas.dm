@@ -1824,12 +1824,6 @@
 	icon_state = "Sleep"
 	req_access = list(access_infantry)
 
-/area/security/infantry/aux_bunk
-	name = "\improper Auxiliary Infantry Barracks"
-	icon_state = "Sleep"
-	req_access = list(access_infantry)
-
-
 /////////
 // Anom
 /////////
