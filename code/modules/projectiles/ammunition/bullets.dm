@@ -77,6 +77,7 @@
 	desc = "A shotshell."
 	icon_state = "gshell"
 	spent_icon = "gshell-spent"
+	ammo_stack = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/two
 	projectile_type = /obj/item/projectile/bullet/pellet/shotgun
 	matter = list(MATERIAL_STEEL = 360)
 
