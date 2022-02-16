@@ -366,8 +366,8 @@
 /obj/effect/landmark/start{
 	name = "Bridge Officer"
 	},
-/obj/structure/bed,
 /obj/item/weapon/bedsheet/blue,
+/obj/structure/bed/padded,
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters_boh/cabin_main/officerbunk)
 "aM" = (
@@ -15883,6 +15883,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
+"GI" = (
+/turf/simulated/floor/pool,
+/area/crew_quarters/heads/cobed)
 "GV" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
 	dir = 4;
@@ -16055,10 +16058,11 @@
 "Ht" = (
 /obj/item/weapon/soap,
 /obj/item/weapon/bikehorn/rubberducky,
+/obj/structure/curtain/open/shower,
 /obj/structure/hygiene/shower{
-	dir = 8;
-	icon_state = "shower"
+	dir = 1
 	},
+/obj/item/weapon/towel/random,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/heads/cobed)
 "Hv" = (
@@ -17320,14 +17324,8 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "Oi" = (
-/obj/structure/hygiene/sink{
-	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
-	},
-/obj/item/weapon/storage/mirror{
-	pixel_x = 28
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/heads/cobed)
@@ -17364,6 +17362,9 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"Ot" = (
+/turf/simulated/floor/pool,
+/area/maintenance/bridge/foreport)
 "OD" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 9
@@ -17912,8 +17913,14 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/rd)
 "Rl" = (
-/obj/machinery/light/small{
-	dir = 1
+/obj/structure/hygiene/sink{
+	dir = 8;
+	icon_state = "sink";
+	pixel_x = -12;
+	pixel_y = 0
+	},
+/obj/item/weapon/storage/mirror{
+	pixel_x = -28
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/heads/cobed)
@@ -18885,6 +18892,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge)
+"VO" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/maintenance/bridge/foreport)
 "VP" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -19385,6 +19395,11 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
+"Yy" = (
+/obj/structure/hygiene/faucet,
+/obj/structure/hygiene/drain/bath,
+/turf/simulated/floor/pool,
+/area/crew_quarters/heads/cobed)
 "Yz" = (
 /obj/structure/flora/pottedplant/orientaltree,
 /obj/effect/floor_decal/spline/fancy/wood/corner{
@@ -29082,8 +29097,8 @@ vk
 vP
 IE
 sB
-aK
-aK
+Yy
+GI
 aK
 aK
 tg
@@ -29284,10 +29299,10 @@ Nn
 oD
 mz
 sB
-xc
-xc
-xc
-xc
+Ot
+Ot
+VO
+VO
 tg
 tg
 tg
@@ -29486,9 +29501,9 @@ vl
 vQ
 wx
 sB
-xc
-xc
-gs
+VO
+VO
+VO
 gs
 tg
 tg

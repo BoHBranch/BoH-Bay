@@ -205,6 +205,6 @@
 	name = "dark matter pellet"
 	icon_state = "dark_pellet"
 	fire_sound = 'sound/weapons/eLuger.ogg'
-	damage = 20
+	damage = 35
 	armor_penetration = 35
-	damage_type = BRUTE
+	damage_flags = DAM_DISPERSED

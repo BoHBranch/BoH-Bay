@@ -32,7 +32,7 @@
 	firemodes = list(
 		list(mode_name="stunning", burst=1, fire_delay=null, move_delay=null, burst_accuracy=list(30), dispersion=null, projectile_type=/obj/item/projectile/beam/stun/darkmatter, charge_cost = 50),
 		list(mode_name="focused", burst=1, fire_delay=null, move_delay=null, burst_accuracy=list(30), dispersion=null, projectile_type=/obj/item/projectile/beam/darkmatter, charge_cost = 75),
-		list(mode_name="scatter burst", burst=8, fire_delay=null, move_delay=4, burst_accuracy=list(0, 0, 0, 0, 0, 0, 0, 0), dispersion=list(0, 1, 2, 2, 3, 3, 3, 3, 3), projectile_type=/obj/item/projectile/energy/darkmatter, charge_cost = 10),
+		list(mode_name="scatter burst", burst=8, fire_delay=null, move_delay=null, burst_accuracy=list(0, 0, 0, 0, 0, 0, 0, 0), dispersion=list(0, 1, 2, 2, 3, 3, 3, 3, 3), projectile_type=/obj/item/projectile/energy/darkmatter, charge_cost = 10),
 		)
 
 /obj/item/weapon/gun/energy/darkmatter/Initialize()
@@ -51,7 +51,7 @@
 	w_class = ITEM_SIZE_LARGE
 	one_hand_penalty = 1
 	self_recharge = 1
-	recharge_time = 10
+	recharge_time = 8
 	fire_delay = 15
 	projectile_type=/obj/item/projectile/energy/plasmastun/sonic/weak
 	firemodes = list(
