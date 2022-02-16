@@ -47,10 +47,10 @@ var/datum/controller/subsystem/fluids/SSfluids
 		var/turf/T = curr_sources[curr_sources.len]
 		UPDATE_FLUID_BLOCKED_DIRS(T)
 		for(var/spread_dir in GLOB.cardinal)
-			if(T.fluid_blocked_dirs & spread_dir) 
+			if(T.fluid_blocked_dirs & spread_dir)
 				continue
 			var/turf/next = get_step(T, spread_dir)
-			if(!istype(next) || next.flooded) 
+			if(!istype(next) || next.flooded)
 				continue
 			UPDATE_FLUID_BLOCKED_DIRS(next)
 			if((next.fluid_blocked_dirs & GLOB.reverse_dir[spread_dir]) || !next.CanFluidPass(spread_dir) || checked[next])
@@ -110,13 +110,15 @@ var/datum/controller/subsystem/fluids/SSfluids
 						LOSE_FLUID(F, transfer)
 						SET_FLUID_DEPTH(other, other.fluid_amount + transfer)
 						continue
-		
+
 		if(F.fluid_amount > FLUID_EVAPORATION_POINT)
 			for(var/spread_dir in GLOB.cardinal)
 				if(T.fluid_blocked_dirs & spread_dir)
 					continue
 				var/turf/neighbor_turf = get_step(T, spread_dir)
 				if(!istype(neighbor_turf) || neighbor_turf.flooded)
+					continue
+				if((F.fluid_amount + T.height) <= neighbor_turf.height) //Water cannot flow up height differences
 					continue
 				var/coming_from = GLOB.reverse_dir[spread_dir]
 				UPDATE_FLUID_BLOCKED_DIRS(neighbor_turf)
