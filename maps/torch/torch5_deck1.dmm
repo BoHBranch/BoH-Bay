@@ -234,6 +234,8 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/weapon/storage/box/monkeycubes,
+/obj/item/weapon/reagent_containers/ivbag,
+/obj/item/weapon/reagent_containers/ivbag,
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "aat" = (
@@ -539,6 +541,8 @@
 	dir = 8
 	},
 /obj/item/weapon/storage/firstaid/toxin,
+/obj/item/weapon/reagent_containers/ivbag,
+/obj/item/weapon/reagent_containers/ivbag,
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "aaT" = (
@@ -20765,6 +20769,8 @@
 	dir = 10
 	},
 /obj/structure/table/reinforced,
+/obj/item/weapon/reagent_containers/ivbag,
+/obj/item/weapon/reagent_containers/ivbag,
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "fYv" = (
@@ -20911,6 +20917,8 @@
 	icon_state = "0-4"
 	},
 /obj/item/weapon/screwdriver,
+/obj/item/weapon/reagent_containers/ivbag,
+/obj/item/weapon/reagent_containers/ivbag,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "gnC" = (

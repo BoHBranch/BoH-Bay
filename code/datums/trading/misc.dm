@@ -47,7 +47,6 @@
 								/mob/living/simple_animal/hostile/retaliate/goat = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/carp = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/carp/pike = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/carp/shark = TRADER_THIS_TYPE,
 								)
 
 	possible_trading_items = list(/mob/living/simple_animal/corgi     = TRADER_THIS_TYPE,
@@ -73,7 +72,6 @@
 								/mob/living/simple_animal/hostile/retaliate/goat = TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/carp= TRADER_THIS_TYPE,
 								/mob/living/simple_animal/hostile/carp/pike = TRADER_THIS_TYPE,
-								/mob/living/simple_animal/hostile/carp/shark = TRADER_THIS_TYPE,
 								/obj/item/device/dociler              = TRADER_THIS_TYPE,
 								/obj/structure/dogbed                 = TRADER_THIS_TYPE)
 
