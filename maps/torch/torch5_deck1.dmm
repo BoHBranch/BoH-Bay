@@ -1796,9 +1796,8 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/weapon/storage/box/ammo/solar/rubber,
-/obj/item/weapon/storage/box/ammo/solar/rubber,
-/obj/item/weapon/storage/box/ammo/solar/rubber,
+/obj/item/weapon/storage/box/ammo/solar/full,
+/obj/item/weapon/storage/box/ammo/solar/full,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "adi" = (
