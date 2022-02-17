@@ -371,14 +371,14 @@
 
 /datum/job/solrep
 	title = "Sol Gov Representative"
-	department = "Command"
-	department_flag = COM
+	department = "Support"
+	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Central Command and the Sol Code of Military Justice"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 14
-	economic_power = 20
+	economic_power = 16
 	minimum_character_age = list(SPECIES_HUMAN = 23, SPECIES_CUSTOM = 23)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/solrep
 	alt_titles = list(
@@ -403,17 +403,73 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-	access = list(access_adjudicator, access_security, access_brig, access_forensics_lockers, access_heads, access_medical, access_morgue,
-					access_engine_equip, access_maint_tunnels, access_external_airlocks, access_emergency_storage, access_change_ids,
-					access_ai_upload, access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_tech_storage,
-					access_bar, access_janitor, access_crematorium, access_kitchen, access_robotics, access_cargo, access_construction,
-					access_cargo_bot, access_hydroponics, access_manufacturing, access_library, access_lawyer, access_network, access_research, access_mining, access_mining_office, access_mailsorting, access_heads_vault,
-					access_mining_station, access_xenobiology, access_keycard_auth, access_tcomsat,
-					access_gateway, access_sec_doors, access_psychiatrist, access_xenoarch, access_medical_equip, access_heads, access_hangar, access_guppy_helm,
-					access_expedition_shuttle_helm, access_aquila, access_aquila_helm, access_solgov_crew, access_nanotrasen, access_robotics_engineering,
-					access_emergency_armory, access_sec_guard, access_gun, access_expedition_shuttle, access_guppy, access_seneng, access_senmed, access_senadv,
-					access_explorer, access_pathfinder, access_pilot, access_commissary, access_petrov, access_petrov_helm, access_petrov_analysis, access_petrov_phoron,
-					access_petrov_toxins, access_petrov_chemistry, access_petrov_security, access_petrov_maint, access_rd, access_petrov_rd)
+	access = list(access_representative, access_security, access_medical,
+					access_emergency_storage, access_change_ids,
+					access_eva, access_bridge,
+					access_janitor, access_cargo,
+					access_hydroponics, access_library, access_network, access_mailsorting,
+					access_hangar, access_aquila, access_solgov_crew,
+					access_commissary,)
 
 /datum/job/solrep/get_description_blurb()
-	return "You are the Sol Gov Representative. You are subordinate only to Central Command. Your job is represent the interests of the Solarian Central Government, to maintain said interests, and to check and recheck the ship's conduct. You use your immense legal and diplomatic power to keep any unlawful individual from escaping justice; You are able to approve, oversee, overrule any legal action aboard the ship. Remember: you hold incredible responsibility as the direct representative of the Solarian Central Govermnent and that no one on the ship holds the same kind of power you do... yet you are only one person."
+	return "You are the Sol Gov Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and governmental interests on board. Send faxes back to Sol on mission progress and important events."
+
+/datum/job/solrep/post_equip_rank(var/mob/person, var/alt_title)
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Sol Federal Agent")]"]"
+	for(var/mob/M in GLOB.player_list)
+		if(M.client && M.mind)
+			if(M.mind.assigned_role == "Sol Federal Agent")
+				to_chat(M, SPAN_NOTICE("<b>Your supervisor, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
+	..()
+
+/datum/job/solguard
+	title = "Sol Federal Agent"
+	department = "Support"
+	department_flag = SPT
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Sol Gov Representative"
+	selection_color = "#3d3d7f"
+	economic_power = 12
+	minimal_player_age = 2
+	minimum_character_age = list(SPECIES_HUMAN = 21, SPECIES_CUSTOM = 23)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sol_bodyguard
+	allowed_branches = list(/datum/mil_branch/solgov)
+	allowed_ranks = list(/datum/mil_rank/sol/agent)
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	                    SKILL_EVA         = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_BASIC,
+	                    SKILL_WEAPONS     = SKILL_ADEPT,
+	                    SKILL_FORENSICS   = SKILL_BASIC)
+	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
+	                    SKILL_WEAPONS     = SKILL_MAX,
+	                    SKILL_FORENSICS   = SKILL_MAX,
+	                    SKILL_BUREAUCRACY = SKILL_MAX)
+	alt_titles = list(
+		"Sol Federal Assistant",
+		"Sol Federal Chaperone"	)
+	skill_points = 20
+	access = list(access_representative, access_maint_tunnels, access_security, access_medical,
+						access_engine, access_research, access_bridge,
+						access_cargo, access_solgov_crew, access_hangar,
+						access_commissary, access_aquila,
+						access_sec_guard)
+	defer_roundstart_spawn = TRUE
+
+/datum/job/solguard/is_position_available()
+	if(..())
+		for(var/mob/M in GLOB.player_list)
+			if(M.client && M.mind && M.mind.assigned_role == "Sol Gov Representative")
+				return TRUE
+	return FALSE
+
+/datum/job/solguard/get_description_blurb()
+	return "You are the Sol Federal Agent. You are an employee of the Sol Federal Police, with your primary objective of keeping the Sol Gov Representative alive and operating efficiently. You also make sure the Representative, and by extension, the Solarian Central Government's will is complete. Good luck, Agent. NOTE: YOU ARE NOT A SECURITY OFFICER."
+
+/datum/job/solguard/post_equip_rank(var/mob/person, var/alt_title)
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Sol Federal Agent")]"]"
+	for(var/mob/M in GLOB.player_list)
+		if(M.client && M.mind)
+			if(M.mind.assigned_role == "Sol Gov Representative")
+				to_chat(M, SPAN_NOTICE("<b>Your Agent, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
+	..()

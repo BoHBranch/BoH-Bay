@@ -610,7 +610,6 @@
 	icon_state = "1-4"
 	},
 /obj/structure/catwalk,
-/obj/item/weapon/stool/padded,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "bh" = (
@@ -631,10 +630,6 @@
 	pixel_y = -22
 	},
 /obj/structure/catwalk,
-/obj/structure/bed/double{
-	dir = 4;
-	icon_state = "doublebed"
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "bi" = (
@@ -3043,11 +3038,7 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/obj/structure/closet/secure_closet/representative{
-	name = "\improper representative's locker"
-	},
-/obj/item/weapon/gun/energy/gun/small,
-/obj/item/device/flash,
+/obj/structure/closet/secure_closet/solguard,
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/solrep/backroom)
 "fc" = (
@@ -4382,7 +4373,6 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/obj/vehicle/bike/gyroscooter,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
 "hk" = (
@@ -8448,7 +8438,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/obj/structure/flora/pottedplant/large,
+/obj/vehicle/bike/gyroscooter,
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/solrep/backroom)
 "nO" = (
@@ -13918,10 +13908,9 @@
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
 "xb" = (
-/obj/structure/catwalk,
 /obj/structure/closet/secure_closet/representative,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
+/turf/simulated/floor/carpet/blue,
+/area/crew_quarters/heads/office/solrep/backroom)
 "xc" = (
 /turf/simulated/wall/prepainted,
 /area/maintenance/bridge/foreport)
@@ -16728,15 +16717,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
-"KR" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/storage/briefcase{
-	pixel_x = 3;
-	pixel_y = 0
-	},
-/obj/item/weapon/material/clipboard/glass,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "KX" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 9
@@ -18643,6 +18623,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/structure/bed/chair/padded/green,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/solrep)
 "Us" = (
@@ -18759,6 +18740,9 @@
 /obj/structure/bed/chair/padded/green{
 	dir = 1;
 	icon_state = "chair_preview"
+	},
+/obj/effect/landmark/start{
+	name = "Sol Federal Agent"
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/solrep/backroom)
@@ -18932,14 +18916,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/bridge)
-"VZ" = (
-/obj/structure/catwalk,
-/obj/structure/filingcabinet/chestdrawer{
-	dir = 1
-	},
-/obj/item/weapon/folder/red,
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/forestarboard)
 "Wa" = (
 /obj/structure/bed/chair/padded/red{
 	dir = 4;
@@ -32094,8 +32070,8 @@ af
 af
 JT
 aE
-xb
-VZ
+VB
+VB
 sJ
 sJ
 bu
@@ -32498,7 +32474,7 @@ af
 af
 af
 af
-KR
+aj
 bh
 dk
 br
@@ -32506,7 +32482,7 @@ Ld
 vD
 Ve
 IO
-IO
+xb
 dk
 gf
 gM

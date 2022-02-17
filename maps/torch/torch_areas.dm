@@ -677,20 +677,15 @@
 	name = "\improper Command - CL's Office"
 	req_access = list(access_liaison)
 
-/area/crew_quarters/heads/office/cl/backroom
-	icon_state = "heads_cl"
-	name = "\improper Command - CL's Backroom"
-	req_access = list(access_liaison)
-
 /area/crew_quarters/heads/office/solrep
 	icon_state = "heads_sol"
 	name = "\improper Command - Rep's Office"
-	req_access = list(access_adjudicator)
+	req_access = list(access_representative)
 
 /area/crew_quarters/heads/office/solrep/backroom
 	icon_state = "heads_sol"
 	name = "\improper Command - Rep's Backroom"
-	req_access = list(access_adjudicator)
+	req_access = list(access_representative)
 
 /area/crew_quarters/heads/office/vip
 	icon_state = "heads_sr"

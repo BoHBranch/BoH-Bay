@@ -83,8 +83,8 @@
 		)
 
 /obj/structure/closet/secure_closet/representative
-	name = "\improper adjudicator's locker"
-	req_access = list(access_adjudicator)
+	name = "\improper representative's locker"
+	req_access = list(access_representative)
 	closet_appearance = /decl/closet_appearance/secure_closet/torch/sol/rep
 
 /obj/structure/closet/secure_closet/representative/WillContain()
@@ -96,14 +96,39 @@
 		/obj/item/device/tape/random = 3,
 		/obj/item/weapon/storage/secure/briefcase,
 		/obj/item/weapon/rig/light/internalaffairs,
-		/obj/item/device/radio/headset/headset_com,
+		/obj/item/device/radio/headset/federal,
 		/obj/item/clothing/shoes/laceup,
 		/obj/item/clothing/under/rank/internalaffairs/plain/solgov,
 		/obj/item/clothing/suit/storage/toggle/suit/black,
+		/obj/item/clothing/glasses/sunglasses,
 		/obj/item/clothing/glasses/sunglasses/big,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel)),
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger, 50)
 	)
+
+obj/structure/closet/secure_closet/solguard
+	name = "\improper sol agent locker"
+	req_access = list(access_representative)
+	closet_appearance = /decl/closet_appearance/secure_closet/sol/two
+
+/obj/structure/closet/secure_closet/solguard/WillContain()
+	return list(
+		/obj/item/device/flash,
+		/obj/item/clothing/accessory/storage/holster/armpit,
+		/obj/item/weapon/gun/projectile/pistol/throwback,
+		/obj/item/weapon/storage/secure/briefcase,
+		/obj/item/clothing/shoes/laceup,
+		/obj/item/clothing/under/rank/internalaffairs/plain,
+		/obj/item/clothing/suit/storage/toggle/suit/black/sfp,
+		/obj/item/clothing/gloves/color/black,
+		/obj/item/clothing/glasses/sunglasses,
+		/obj/item/clothing/glasses/sunglasses/big,
+		/obj/item/device/flashlight/maglight,
+		/obj/item/device/radio/headset/federal,
+		/obj/item/taperoll/police
+		)
+
+
 
 /obj/structure/closet/secure_closet/blueshield
 	name = "\improper judicial protection locker"
