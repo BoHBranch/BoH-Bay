@@ -41,6 +41,7 @@
 	name = "slug sling"
 	desc = "A bulbous looking rifle. It feels like holding a plastic bag full of meat."
 	w_class = ITEM_SIZE_LARGE
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	icon_state = "slugsling"
 	item_state = "spikethrower"
 	fire_sound_text = "a strange noise"

@@ -37,7 +37,8 @@
 
 	possible_trading_items = list(/obj/item/weapon/gun/projectile/automatic                            = TRADER_SUBTYPES_ONLY,
 							/obj/item/weapon/gun/projectile/automatic/machine_pistol/usi                     = TRADER_BLACKLIST,
-							/obj/item/weapon/gun/projectile/automatic/l6_saw/mag                       = TRADER_BLACKLIST
+							/obj/item/weapon/gun/projectile/automatic/l6_saw/mag                       = TRADER_BLACKLIST,
+							/obj/item/weapon/gun/projectile/automatic/skrell                           = TRADER_BLACKLIST
 							)
 
 	blacklisted_trade_items = null
@@ -85,4 +86,4 @@
 				"insult_good"        = "Blub do not understand. Blub thought we were briends.",
 				"insult_bad"         = "Blub feels bad now.",
 				)
-				
+
