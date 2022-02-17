@@ -109,6 +109,7 @@
 	desc = "A box holidng a neat pile of 12 gauge shells. You get them out of here."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful
 
+// Shotguns, why do we even use gauges anymore?
 
 /obj/item/ammo_magazine/handful/shotgun/shotgun_handful
 	name = "\improper handful of shells"
@@ -118,18 +119,64 @@
 	caliber =  CALIBER_SHOTGUN
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 
-/obj/item/ammo_magazine/handful/shotgun/shotgun_handful/two // This exists because you're technically making a new item when making handfuls. Not combining ammos.
+// This exists because you're technically making a new item when making handfuls. Not combining ammos. Putting this here since this is the first example.
+/obj/item/ammo_magazine/handful/shotgun/shotgun_handful/two
 	initial_ammo = 2
+
+/obj/item/ammo_magazine/handful/shotgun/shotgun_handful/slug
+	icon_state = "slshell_handful"
+	ammo_type = /obj/item/ammo_casing/shotgun/slug
+
+/obj/item/ammo_magazine/handful/shotgun/shotgun_handful/slug/two
+	initial_ammo = 2
+
+/obj/item/ammo_magazine/handful/shotgun/shotgun_handful/beanbag
+	icon_state = "bshell_handful"
+	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
+
+/obj/item/ammo_magazine/handful/shotgun/shotgun_handful/beanbag/two
+	initial_ammo = 2
+
+// Handguns, low caliber.. Sticks?
+
+// 10mm.
+
+/obj/item/ammo_magazine/handful/pistol_handful
+	name = "\improper handful of handgun rounds"
+	desc = "A handful of rounds for some kind of handgun, 10mm."
+	max_ammo = 6
+	icon_state = "handful_pistol"
+	caliber = CALIBER_PISTOL
+	ammo_type = /obj/item/ammo_casing/pistol
+
+/obj/item/ammo_magazine/handful/pistol_handful/two
+	initial_ammo = 2
+
+/obj/item/ammo_magazine/handful/pistol_handful/rubber
+	name = "\improper handful of rubber handgun rounds"
+	ammo_type = /obj/item/ammo_casing/pistol/rubber
+
+/obj/item/ammo_magazine/handful/pistol_handful/rubber/two
+	initial_ammo = 2
+
 
 // .454.
 
 /obj/item/ammo_magazine/handful/magnum_handful
 	name = "\improper handful of high caliber revolver rounds"
-	desc = "A handful of shotgun shells for a high caliber revolver. .454."
+	desc = "A handful of rounds for a high caliber revolver. .454."
 	max_ammo = 6
 	icon_state = "handful_magnum"
 	caliber = CALIBER_PISTOL_MAGNUM_LARGE
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
 
-/obj/item/ammo_magazine/handful/magnum_handful/two // This exists because you're technically making a new item when making handfuls. Not combining ammos.
+/obj/item/ammo_magazine/handful/magnum_handful/two
+	initial_ammo = 2
+
+/obj/item/ammo_magazine/handful/magnum_handful/small
+	desc = "A handful of rounds for a high caliber revolver. 15mm."
+	caliber = CALIBER_PISTOL_MAGNUM
+	ammo_type = /obj/item/ammo_casing/pistol/magnum
+
+/obj/item/ammo_magazine/handful/magnum_handful/small/two
 	initial_ammo = 2
