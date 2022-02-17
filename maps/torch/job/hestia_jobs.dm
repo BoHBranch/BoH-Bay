@@ -205,8 +205,8 @@
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_aquila, access_eva)
 	alt_titles = list(
-		"Grunt",
-		"Trooper")
+		"Grenadier",
+		"Assaultman")
 
 /datum/job/grunt/is_position_available()
 	if(..())
