@@ -37,6 +37,6 @@
 	name = HOME_SYSTEM_VOX_PRODUCTION
 	description = "The Ark of the Vigilant Prophet is the heart of production among the relic-worlds, where great barges of ore, massive spools of wire, crates of biomass are fed to the hungry forges of the most calculating Apex, the Vigilant Prophet. \
 	Here the majority of newly forged starships take flight, and Quill-Captains make berths to unload that which they cannot use, and take what is needed for the long voyages away from the warmth of the home fleets. \
-	Biomatter, both the vacuum-sealed from Zeng-Hu laboratories to the raw flesh of slaughtered space carp, the scraps of exotic matter from abandoned foreign mines to entire space hulks drifting in the void, all feeds the ever gnawing heart of the Vigilant Prophet’s maw of industry. \
+	Biomatter, both the vacuum-sealed from Zeng-Hu laboratories to the raw flesh of slaughtered space carp, the scraps of exotic matter from abandoned foreign mines to entire space hulks drifting in the void, all feeds the ever gnawing heart of the Vigilant Prophets maw of industry. \
 	New biotech ships are born here, given life and sapience, and crews to make their new family-band. \
 	It is the largest shipyard of the Vox, much of the ark dedicated to general production and naval industry."
