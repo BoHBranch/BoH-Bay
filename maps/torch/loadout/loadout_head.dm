@@ -38,7 +38,7 @@
 	display_name = "SC cap"
 	path = /obj/item/clothing/head/soft/solgov/expedition
 	cost = 0
-	allowed_branches = NT_BRANCHES
+	allowed_branches = list(/datum/mil_branch/fleet)
 
 /datum/gear/head/surgical
 	allowed_roles = STERILE_ROLES
@@ -97,7 +97,7 @@
 	display_name = "SC sections beret selection"
 	description = "An ancient beret bearing the insignias of the original expeditionary organization."
 	path = /obj/item/clothing/head/beret/solgov/expedition/branch
-	allowed_branches = NT_BRANCHES
+	allowed_branches = list(/datum/mil_branch/fleet)
 
 /datum/gear/head/ECberet/New()
 	..()
