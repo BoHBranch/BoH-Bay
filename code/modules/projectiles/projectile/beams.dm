@@ -26,19 +26,19 @@
 	eyeblur = 2
 
 /obj/item/projectile/beam/smalllaser
-	damage = 30
-	armor_penetration = 5
+	damage = 25
+	armor_penetration = 10
 
 /obj/item/projectile/beam/midlaser
-	damage = 60
-	armor_penetration = 20
+	damage = 40
+	armor_penetration = 15
 	distance_falloff = 1
 
 /obj/item/projectile/beam/heavylaser
 	name = "heavy laser"
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
-	damage = 100
+	damage = 60
 	armor_penetration = 30
 	distance_falloff = 0.5
 
@@ -60,28 +60,28 @@
 	impact_type = /obj/effect/projectile/laser/xray/impact
 
 /obj/item/projectile/beam/xray/midlaser
-	damage = 40
-	armor_penetration = 60
+	damage = 30
+	armor_penetration = 70
 	distance_falloff = 1
 
 /obj/item/projectile/beam/pulse
 	name = "pulse"
 	icon_state = "u_laser"
 	fire_sound='sound/weapons/pulse.ogg'
-	damage = 20 //worse than the x-ray, except that most pulse weapons fire in burst.
-	armor_penetration = 40
+	damage = 15 //worse than the x-ray, except that most pulse weapons fire in burst.
+	armor_penetration = 20
 
 	muzzle_type = /obj/effect/projectile/laser/pulse/muzzle
 	tracer_type = /obj/effect/projectile/laser/pulse/tracer
 	impact_type = /obj/effect/projectile/laser/pulse/impact
 
 /obj/item/projectile/beam/pulse/mid
-	damage = 30
-	armor_penetration = 60
+	damage = 25
+	armor_penetration = 40
 
 /obj/item/projectile/beam/pulse/heavy
-	damage = 60
-	armor_penetration = 80
+	damage = 30
+	armor_penetration = 60
 
 /obj/item/projectile/beam/pulse/destroy
 	name = "destroyer pulse"
@@ -102,16 +102,17 @@
 	impact_type = /obj/effect/projectile/laser/pulse/skrell/impact
 
 /obj/item/projectile/beam/pulse/skrell/heavy
-	damage = 50
+	damage = 40
 	armor_penetration = 20
 
 /obj/item/projectile/beam/pulse/skrell/single
-	damage = 70
+	damage = 60
 	armor_penetration = 20
 
 /obj/item/projectile/beam/pulse/skrell/single/lance
 	distance_falloff = 0.50
-	damage = 100
+	damage = 80
+	armor_penetration = 40
 
 /obj/item/projectile/beam/emitter
 	name = "emitter beam"
@@ -180,8 +181,8 @@
 	icon_state = "xray"
 	fire_sound = 'sound/weapons/marauder.ogg'
 	distance_falloff = 0.50
-	damage = 65
-	armor_penetration = 25
+	damage = 50
+	armor_penetration = 50
 	stun = 3
 	weaken = 3
 	stutter = 3
