@@ -1,22 +1,20 @@
 /datum/job/submap/bearcat_captain
 	title = "Independant Captain"
 	total_positions = 1
+	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/captain
 	is_semi_antagonist = TRUE
 	supervisors = "your bottom line"
-	info = "Your ship has suffered a freak ion storm blowout, leaving it dark and crippled in the depths of \
-	unexplored space. Most of the crew jumped ship at the first sight of the storm. What good judgement you have for hiring, eh? \
-	Organize what's left of your crew, and continue with your trading efforts."
+	info = "Your ship has been recently remade and resupplied, and you are using this opportunity to salvage some goodies and do a little trading in an unexplored region of space. Remember to organize your crew appropriately."
 
 /datum/job/submap/bearcat_crewman
 	title = "Independant Crewman"
 	supervisors = "the Captain"
 	total_positions = 6
+	spawn_positions = 6
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/crew
 	is_semi_antagonist = TRUE
-	info = "Your ship has suffered a freak ion storm blowout, leaving it dark and crippled in the depths of \
-	unexplored space. Most of the crew jumped ship at the first sight of the storm. \
-	Work together with the Captain and what's left of the crew."
+	info = "The ship you are working on has been recently remade and resupplied, and you are using this opportunity to salvage some goodies and do a little trading in an unexplored region of space."
 
 #define BEARCAT_OUTFIT_JOB_NAME(job_name) ("Bearcat - Job - " + job_name)
 
