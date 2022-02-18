@@ -58,7 +58,7 @@
 	LAZYADD(valid_jobs, /datum/job/scientist_assistant)
 	..()
 	
-	/decl/cultural_info/culture/nabber/New()
+/decl/cultural_info/culture/nabber/New()
 	LAZYADD(valid_jobs, /datum/job/assistant)
 	..()
 
