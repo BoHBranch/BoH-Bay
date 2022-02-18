@@ -75,7 +75,7 @@
 	spent_icon = "slshell-spent"
 	caliber = CALIBER_SHOTGUN
 	projectile_type = /obj/item/projectile/bullet/shotgun
-	ammo_stack = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/slugtwo
+	ammo_stack = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/slug/two
 	matter = list(MATERIAL_STEEL = 360)
 	fall_sounds = list('sound/weapons/guns/shotgun_fall.ogg')
 

@@ -125,7 +125,7 @@
 
 /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/slug
 	icon_state = "slshell_handful"
-	ammo_type = /obj/item/ammo_casing/shotgun/slug
+	ammo_type = /obj/item/ammo_casing/shotgun
 
 /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/slug/two
 	initial_ammo = 2
