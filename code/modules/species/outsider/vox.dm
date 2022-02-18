@@ -155,6 +155,10 @@
 	strength = STR_HIGH
 	mob_size = MOB_LARGE
 
+	base_auras = list(
+		/obj/aura/regenerating/human/armalis
+		)
+
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp/armalis,
 		/datum/unarmed_attack/claws/armalis,
@@ -188,6 +192,7 @@
 		to_chat(grabber, SPAN_WARNING("You drop everything in a rage as you seize \the [target]!"))
 		playsound(grabber.loc, 'sound/weapons/pierce.ogg', 25, 1, -1)
 	. = ..(grabber, target, GRAB_ARMALIS)
+
 
 /*
 /datum/species/vox/pariah

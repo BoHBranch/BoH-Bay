@@ -1,10 +1,10 @@
 /datum/job/submap/voxship_vox
-	title = "Shoal Scavenger"
-	total_positions = 4
+	title = "Shoal Expeditionary"
+	total_positions = 6
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
-	supervisors = "Quill,The Apex and the arkship"
-	info = "Scrap is thin. Not much food is left, but thankfully the sector is quite rich, and it's time to get some more supplies. \
-	although staying on base is tempting. Plenty of nitrogen, and not much hazards to worry about."
+	supervisors = "Quill, The Apex and the arkship"
+	info = "The Auralis dictate that you are to reclaim areas of space, specifically for the purpose of subjugating the Meat. \
+	Your Quill knows more than you do, so be sure to listen to them."
 	whitelisted_species = list(SPECIES_VOX)
 	blacklisted_species = null
 	is_semi_antagonist = TRUE
@@ -34,7 +34,7 @@
 /datum/job/submap/voxship_vox/doc
 	title = "Shoal Biotechnician"
 	total_positions = 1
-	info = "You are the sawbones of your scavenger crew. You are in charge of removing stacks, replacing limbs, and generally keeping your kin alive at all costs."
+	info = "You are the sawbones of your expeditionary crew. You are in charge of removing stacks, replacing limbs, and generally keeping your kin alive at all costs."
 	whitelisted_species = list(SPECIES_VOX)
 	min_skill = list(	SKILL_HAULING     = SKILL_BASIC,
 						SKILL_EVA         = SKILL_EXPERT,
@@ -70,7 +70,7 @@
 /datum/job/submap/voxship_vox/engineer
 	title = "Shoal Technician"
 	total_positions = 2
-	info = "You are the mechanic of your scavenger crew. Keep all your salvaged technology running, fix robotics, and disassemble some of the more complex devices your crew comes across."
+	info = "You are the mechanic of your expeditionary crew. Keep all your salvaged technology running, fix robotics, and disassemble some of the more complex devices your crew comes across."
 	whitelisted_species = list(SPECIES_VOX)
 	min_skill = list(	SKILL_HAULING      = SKILL_BASIC,
 						SKILL_COMPUTER     = SKILL_ADEPT,
@@ -150,7 +150,7 @@
 	r_ear = null
 
 /decl/hierarchy/outfit/job/voxship/crew
-	name = VOXSHIP_OUTFIT_JOB_NAME("Shoal Scavenger")
+	name = VOXSHIP_OUTFIT_JOB_NAME("Shoal Expeditionary")
 	uniform = /obj/item/clothing/under/vox/vox_robes
 	r_pocket = /obj/item/device/radio
 	shoes = /obj/item/clothing/shoes/magboots/vox
@@ -171,7 +171,7 @@
 	r_hand = /obj/item/weapon/tank/emergency/nitrogen/double
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew
-	name = "Shoal Scavenger"
+	name = "Shoal Expeditionary"
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/doc
 	name = "Shoal Biotechnician"
