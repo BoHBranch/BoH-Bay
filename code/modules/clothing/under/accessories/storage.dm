@@ -80,7 +80,7 @@
 	slots = 5
 
 /obj/item/clothing/accessory/storage/drop_pouches
-	slots = 4 //to accomodate it being slotless
+	slots = 5
 
 /obj/item/clothing/accessory/storage/drop_pouches/create_storage()
 	hold = new/obj/item/weapon/storage/internal/pouch(src, slots*BASE_STORAGE_COST(max_w_class))
