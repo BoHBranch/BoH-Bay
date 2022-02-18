@@ -1,10 +1,10 @@
 /datum/job/submap/voxship_vox
-	title = "Shoal Scavenger"
-	total_positions = 4
+	title = "Shard Acolyte"
+	total_positions = 6
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
-	supervisors = "Quill,The Apex and the arkship"
-	info = "Scrap is thin. Not much food is left, but thankfully the sector is quite rich, and it's time to get some more supplies. \
-	although staying on base is tempting. Plenty of nitrogen, and not much hazards to worry about."
+	supervisors = "Quill, The Apex and the arkship"
+	info = "By the will of the dead creators, you must reclaim the lost territory of their fallen empire, and re-establish the domain of the Auralis no matter the cost. \
+	Honor their memory, obey your Quill-Captain."
 	whitelisted_species = list(SPECIES_VOX)
 	blacklisted_species = null
 	is_semi_antagonist = TRUE
@@ -32,9 +32,10 @@
 	skill_points = 40
 
 /datum/job/submap/voxship_vox/doc
-	title = "Shoal Biotechnician"
+	title = "Shard Biotechnician"
 	total_positions = 1
-	info = "You are the sawbones of your scavenger crew. You are in charge of removing stacks, replacing limbs, and generally keeping your kin alive at all costs."
+	info = "Your sacred duty is to preserve the lives of your ship-band; \
+	save their stacks, stabilize wounded crew, replace missing components and ensure nobody messes with your patients or your workspace."
 	whitelisted_species = list(SPECIES_VOX)
 	min_skill = list(	SKILL_HAULING     = SKILL_BASIC,
 						SKILL_EVA         = SKILL_EXPERT,
@@ -68,9 +69,10 @@
 	skill_points = 26
 
 /datum/job/submap/voxship_vox/engineer
-	title = "Shoal Technician"
+	title = "Shard Technician"
 	total_positions = 2
-	info = "You are the mechanic of your scavenger crew. Keep all your salvaged technology running, fix robotics, and disassemble some of the more complex devices your crew comes across."
+	info = "You are one among many billions who has kept the five sacred Arks operational over eons, such a small shard vessel is an easy task in comparison. \
+	Keep the tech operational, fix damage, and disassemble more complex devices or artefacts the acolytes come across on their expeditions."
 	whitelisted_species = list(SPECIES_VOX)
 	min_skill = list(	SKILL_HAULING      = SKILL_BASIC,
 						SKILL_COMPUTER     = SKILL_ADEPT,
@@ -106,11 +108,15 @@
 	skill_points = 26
 
 /datum/job/submap/voxship_vox/quill
-	title = "Shoal Quill"
+	title = "Shard Quill"
 	total_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew/captain
 	supervisors = "The Apex and the arkship"
-	info = "You're in charge. You fly the ship, and dictate what the crew does. You are in charge of keeping your subordinates in check, the Apex has given you authority to kill any that disobeys your orders. Do not disappoint the Apex."
+	info = "You are the Quill-Captain of a handsome shard-class frigate, a scout vessel for the Ark Fleets of the Vox. \
+	The dead empire is being reborn, new planets settled, alliances made. To one of the five ark admirals you are sworn, and they have your complete loyalty. \
+	The age of stagnancy is over, you have purpose anew, the crew must know this. \
+	Ensure they do not disgrace the memory of the Auralis, that they do not forget the faith, and that new territory is claimed and material secured for the arks. \
+	Measure your discipline lest you be challenged for being too lenient or harsh."
 	whitelisted_species = list(SPECIES_VOX)
 	min_skill = list(	SKILL_HAULING     = SKILL_BASIC,
 						SKILL_EVA         = SKILL_EXPERT,
@@ -150,7 +156,7 @@
 	r_ear = null
 
 /decl/hierarchy/outfit/job/voxship/crew
-	name = VOXSHIP_OUTFIT_JOB_NAME("Shoal Scavenger")
+	name = VOXSHIP_OUTFIT_JOB_NAME("Shard Expeditionary")
 	uniform = /obj/item/clothing/under/vox/vox_robes
 	r_pocket = /obj/item/device/radio
 	shoes = /obj/item/clothing/shoes/magboots/vox
@@ -161,7 +167,7 @@
 	r_hand = /obj/item/weapon/tank/emergency/nitrogen/double
 
 /decl/hierarchy/outfit/job/voxship/crew/captain
-	name = VOXSHIP_OUTFIT_JOB_NAME("Shoal Quill")
+	name = VOXSHIP_OUTFIT_JOB_NAME("Shard Quill")
 	uniform = /obj/item/clothing/under/vox/vox_robes
 	r_pocket = /obj/item/device/radio
 	shoes = /obj/item/clothing/shoes/magboots/vox
@@ -171,15 +177,15 @@
 	r_hand = /obj/item/weapon/tank/emergency/nitrogen/double
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew
-	name = "Shoal Scavenger"
+	name = "Shard Acolyte"
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/doc
-	name = "Shoal Biotechnician"
+	name = "Shard Biotechnician"
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/engineer
-	name = "Shoal Technician"
+	name = "Shard Technician"
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/quill
-	name = "Shoal Quill"
+	name = "Shard Quill"
 
 #undef VOXSHIP_OUTFIT_JOB_NAME
