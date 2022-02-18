@@ -1510,6 +1510,7 @@
 #include "code\modules\boh_misc\material.dm"
 #include "code\modules\boh_misc\misc_verbs.dm"
 #include "code\modules\boh_misc\munitions.dm"
+#include "code\modules\boh_misc\pouches.dm"
 #include "code\modules\boh_misc\rig_modules.dm"
 #include "code\modules\boh_misc\rigs.dm"
 #include "code\modules\boh_misc\vending.dm"
