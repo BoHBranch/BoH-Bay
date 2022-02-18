@@ -14,7 +14,7 @@
 	..()
 	update_icon()
 
-/obj/item/ammo_magazine/handful/update_icon()
+/obj/item/ammo_magazine/handful/on_update_icon()
 	if(!stored_ammo.len)//There's no more ammo here, so delete the handful.
 		qdel(src)
 		return
