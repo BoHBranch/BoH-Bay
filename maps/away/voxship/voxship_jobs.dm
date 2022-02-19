@@ -160,6 +160,7 @@
 	uniform = /obj/item/clothing/under/vox/vox_robes
 	r_pocket = /obj/item/device/radio
 	shoes = /obj/item/clothing/shoes/magboots/vox
+	l_ear = /obj/item/device/radio/headset
 	belt = /obj/item/weapon/storage/belt/utility/full
 	id_type = /obj/item/weapon/card/id/voxship
 	l_pocket = /obj/item/weapon/crowbar/prybar
@@ -171,6 +172,7 @@
 	uniform = /obj/item/clothing/under/vox/vox_robes
 	r_pocket = /obj/item/weapon/tank/emergency/nitrogen/double
 	shoes = /obj/item/clothing/shoes/magboots/vox
+	l_ear = /obj/item/device/radio/headset
 	belt = /obj/item/weapon/storage/belt/utility/full
 	id_type = /obj/item/weapon/card/id/voxship_captain
 	l_pocket = /obj/item/weapon/crowbar/prybar
