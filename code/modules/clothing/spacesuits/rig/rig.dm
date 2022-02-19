@@ -602,7 +602,7 @@
 	return ret
 
 /obj/item/weapon/rig/get_req_access()
-	if(!security_check_enabled)
+	if(!security_check_enabled || !locked)
 		return list()
 	return ..()
 
