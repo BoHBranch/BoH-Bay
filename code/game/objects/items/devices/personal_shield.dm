@@ -56,12 +56,10 @@
 			user.visible_message("\The [user] installs \the [W] into \the [src].", SPAN_NOTICE("You install \the [W] into \the [src]."))
 			power_cell = W
 			START_PROCESSING(SSobj, src)
-			update_icon()
 	if(isScrewdriver(W))
 		playsound(src, 'sound/items/Screwdriver.ogg', 15, 1)
 		user.visible_message("\The [user] [open ? "screws" : "unscrews"] the top of \the [src].", SPAN_NOTICE("You [open ? "screw" : "unscrew"] the top of \the [src]."))
 		open = !open
-		update_icon()
 
 /obj/item/device/personal_shield/attack_self(var/mob/living/user)
 	if (open && power_cell)
@@ -87,7 +85,6 @@
 	power_cell = null
 	currently_stored_power = 0
 	enable_when_powered = FALSE
-	update_icon()
 
 /obj/item/device/personal_shield/dropped(var/mob/user)
 	turn_off()
@@ -121,14 +118,12 @@
 		return
 	shield = new shield_type(user, src)
 	update_name()
-	update_icon()
 
 /obj/item/device/personal_shield/proc/turn_off(var/mob/user)
 	if(!shield)
 		return
 	QDEL_NULL(shield)
 	update_name()
-	update_icon()
 
 /obj/item/device/personal_shield/proc/toggle(var/mob/user)
 	if(shield)
@@ -161,16 +156,6 @@
 		enable_when_powered = TRUE
 		return FALSE
 	return TRUE
-
-/obj/item/device/personal_shield/on_update_icon()
-	..()
-	if(shield)
-		icon_state = "batterer"
-	else
-		if(open)
-			icon_state = "battereropen[power_cell ? "full" : "empty"]"
-		else
-			icon_state = "battereroff"
 
 /obj/item/device/personal_shield/proc/update_name()
 	if(shield)
