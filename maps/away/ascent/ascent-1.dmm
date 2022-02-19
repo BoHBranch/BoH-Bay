@@ -2690,6 +2690,22 @@
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
+"Yt" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/submap_landmark/spawnpoint/ascent_seedship/queen,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_gyne_quarters)
 
 (1,1,1) = {"
 aa
@@ -11907,7 +11923,7 @@ ai
 aQ
 fp
 fb
-eb
+Yt
 fb
 fp
 aQ
