@@ -29,6 +29,14 @@
 #define SPEEDLOADER 	2	//Transfers casings from the mag to the gun when used.
 #define MAGAZINE 		4	//The magazine item itself goes inside the gun
 
+// attachments
+
+#define ATTACH_REMOVABLE	1
+#define ATTACH_ACTIVATION	2
+#define ATTACH_PROJECTILE	4 //for attachments that fire bullets
+#define ATTACH_RELOADABLE	8
+#define ATTACH_WEAPON		16 //is a weapon that fires stuff
+#define ATTACH_MELEE        32 //This attachment should activate if you attack() with it attached.
 
 #define GUN_BULK_RIFLE  5
 
