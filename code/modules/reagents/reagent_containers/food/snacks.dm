@@ -24,7 +24,7 @@
 	//Used to stop deepfried meat from looking like slightly tanned raw meat, and make it actually look cooked
 	center_of_mass = "x=16;y=16"
 	w_class = ITEM_SIZE_SMALL
-	
+
 	var/has_products = FALSE
 	var/list/attack_products //Items you can craft together. Like bomb making, but with food and less screwdrivers.
 	// Uses format list(ingredient = result_type). The ingredient can be a typepath or a kitchen_tag string (used for mobs or plants)
@@ -217,7 +217,7 @@
 				reagents.trans_to_obj(slice, reagents_per_slice)
 			qdel(src)
 			return
-			
+
 	if(!LAZYLEN(attack_products))
 		return
 	var/create_type
@@ -715,7 +715,7 @@
 	desc = "A heated Donk pocket, great for vendors on the go."
 	reagents_to_add = list(/datum/reagent/nutriment = 2, /datum/reagent/nutriment/protein = 2, /datum/reagent/tricordrazine = 5)
 	bitesize = 6
-	
+
 /obj/item/weapon/reagent_containers/food/snacks/donkpocket/warm/Initialize()
 	. = ..()
 	addtimer(CALLBACK(src, .proc/cool), 7 MINUTES)
@@ -3158,7 +3158,7 @@
 	icon_state = "proteinbar"
 	trash = /obj/item/trash/candy/proteinbar
 	bitesize = 6
-	reagents_to_add = list(/datum/reagent/nutriment = 10, /datum/reagent/nutriment/protein = 4, /datum/reagent/sugar = 7)
+	reagents_to_add = list(/datum/reagent/nutriment = 10, /datum/reagent/nutriment/protein = 4, /datum/reagent/iron = 3)
 
 /obj/item/weapon/reagent_containers/food/snacks/candy/donor
 	name = "donor candy"
