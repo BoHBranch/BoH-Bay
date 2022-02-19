@@ -1386,8 +1386,8 @@
 /area/ship/ascent/subdeck_atmos)
 "da" = (
 /obj/machinery/atmospherics/unary/freezer{
-	icon_state = "freezer";
-	dir = 1
+	dir = 1;
+	icon_state = "freezer"
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
@@ -1612,8 +1612,8 @@
 "dy" = (
 /obj/structure/bed/chair/padded/purple/ascent,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	icon_state = "intact-supply";
-	dir = 9
+	dir = 9;
+	icon_state = "intact-supply"
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_atmos)
@@ -1860,8 +1860,8 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	icon_state = "map-scrubbers";
-	dir = 1
+	dir = 1;
+	icon_state = "map-scrubbers"
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_armory)
@@ -2334,6 +2334,7 @@
 "fm" = (
 /obj/structure/table/rack/dark,
 /obj/item/weapon/gun/energy/particle,
+/obj/item/device/personal_shield/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "fn" = (
@@ -2599,8 +2600,9 @@
 /area/ship/ascent/subdeck_armory)
 "fK" = (
 /obj/structure/table/rack/dark,
-/obj/item/weapon/tank/mantid/reactor,
-/obj/item/clothing/mask/gas/ascent,
+/obj/item/device/personal_shield/mantid,
+/obj/item/weapon/rig/mantid/nabber/queen,
+/obj/item/weapon/cell/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "fL" = (

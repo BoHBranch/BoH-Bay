@@ -79,6 +79,21 @@
 	usable = TRUE
 	selectable = TRUE
 
+/obj/item/rig_module/chem_dispenser/nabber
+	name = "serpentid chemical injector"
+	desc = "A compact chemical dispenser of mantid design."
+	interface_name = "serpentid chemical injector"
+	interface_desc = "A compact chemical dispenser of mantid design."
+	icon = 'icons/obj/ascent.dmi'
+	icon_state = "injector"
+	charges = list(
+		list("tramadol",            "tramadol",            /datum/reagent/tramadol,     	  20),
+		list("dexalin plus",        "dexalin plus",        /datum/reagent/dexalinp,     	  20),
+		list("inaprovaline",        "inaprovaline",        /datum/reagent/inaprovaline,  	  20),
+		list("spaceacillin",  		"spaceacillin",		   /datum/reagent/spaceacillin,       20),
+		list("glucose",             "glucose",             /datum/reagent/nutriment/glucose,  20)
+	)
+
 /obj/item/rig_module/device/multitool
 	name = "mantid integrated multitool"
 	desc = "A limited-sentience integrated multitool capable of interfacing with any number of systems."
@@ -252,18 +267,35 @@
 	air_type =   /obj/item/weapon/tank/mantid/reactor/oxygen
 	chest_type = /obj/item/clothing/suit/space/rig/mantid/serpentid
 	boot_type =  null
+	initial_modules = list(
+		/obj/item/rig_module/vision/thermal,
+		/obj/item/rig_module/ai_container,
+		/obj/item/rig_module/electrowarfare_suite,
+		/obj/item/rig_module/chem_dispenser/nabber,
+		/obj/item/rig_module/device/nanoblade,
+		/obj/item/rig_module/mounted/flechette_rifle,
+		/obj/item/rig_module/mounted/particle_rifle,
+		/obj/item/rig_module/device/multitool,
+		/obj/item/rig_module/device/cable_coil,
+		/obj/item/rig_module/device/welder,
+		/obj/item/rig_module/device/clustertool,
+		/obj/item/rig_module/mounted/plasmacutter,
+		/obj/item/rig_module/maneuvering_jets
+	)
+
 
 /obj/item/clothing/suit/space/rig/mantid/serpentid
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 
 /obj/item/weapon/rig/mantid/nabber/queen
-	name = "small support exosuit"
+	name = "small combat exosuit"
+	icon_override = 'icons/mob/species/nabber/msq/onmob_back_msq.dmi'
 	mantid_caste = SPECIES_MONARCH_QUEEN
 	initial_modules = list(
 		/obj/item/rig_module/vision/thermal,
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
-		/obj/item/rig_module/chem_dispenser/mantid,
+		/obj/item/rig_module/chem_dispenser/nabber,
 		/obj/item/rig_module/device/nanoblade,
 		/obj/item/rig_module/mounted/flechette_rifle,
 		/obj/item/rig_module/mounted/particle_rifle,
