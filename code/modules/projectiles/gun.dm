@@ -111,6 +111,7 @@
 	var/list/attachable_allowed = list()		//Must be the exact path to the attachment present in the list. Empty list for a default.
 	var/attachable_overlays[] = null			//List of overlays so we can switch them in an out, instead of using Cut() on overlays.
 	var/attachable_offset[] = null				//Is a list, see examples of from the other files. Initiated on New() because lists don't initial() properly.
+	var/list/starting_attachment_types = list() //What attachments this gun starts with. Added on Init.
 
 	//aiming system stuff
 	var/keep_aim = 1 	//1 for keep shooting until aim is lowered
@@ -146,6 +147,7 @@
 
 	attachable_overlays = list("muzzle" = null, "rail" = null, "under" = null, "stock" = null, "mag" = null, "special" = null)
 	set_gun_attachment_offsets()
+	handle_starting_attachment()
 
 	slowdown_per_slot[slot_l_hand] =  slowdown_held
 	slowdown_per_slot[slot_r_hand] =  slowdown_held
@@ -687,6 +689,18 @@
 // Offset setter.
 /obj/item/weapon/gun/proc/set_gun_attachment_offsets()
 	attachable_offset = null
+
+// Handles our starting attachments. //
+
+/obj/item/weapon/gun/proc/handle_starting_attachment()
+	set waitfor = 0
+
+	sleep(1) //Give a moment to the rest of the proc to work out
+	if(starting_attachment_types && starting_attachment_types.len)
+		for(var/path in starting_attachment_types)
+			var/obj/item/attachable/A = new path(src)
+			A.Attach(src)
+			update_attachable(A.slot)
 
 // Field Stripping //
 
