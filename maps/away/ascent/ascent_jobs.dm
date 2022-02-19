@@ -14,8 +14,8 @@
 		/datum/job/submap/ascent/alate,
 		/datum/job/submap/ascent/drone,
 		//datum/job/submap/ascent/control_mind,
-		//datum/job/submap/ascent/msq,
-		//datum/job/submap/ascent/msw,
+		/datum/job/submap/ascent/msq,
+		/datum/job/submap/ascent/msw,
 	)
 	call_webhook = WEBHOOK_SUBMAP_LOADED_ASCENT
 
