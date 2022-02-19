@@ -191,7 +191,7 @@
 	options["Enforcer"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/energy/plasmastun/vox,/obj/item/weapon/storage/firstaid/adv)
 	options["Controller"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/launcher/alien/spikethrower,/obj/item/weapon/gun/energy/sonic,/obj/item/weapon/storage/box/stinger,/obj/item/weapon/storage/firstaid/adv)
 	options["Stolen Marine Gear"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle,/obj/item/weapon/storage/firstaid/adv,/obj/item/ammo_magazine/mil_rifle,/obj/item/ammo_magazine/mil_rifle,/obj/item/ammo_magazine/mil_rifle,/obj/item/weapon/gun/energy/gun,/obj/item/weapon/storage/box/fragshells)
-	options["Melee"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,,/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton,/obj/item/weapon/storage/firstaid/adv)
+	options["Melee"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton,/obj/item/weapon/storage/firstaid/adv)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
