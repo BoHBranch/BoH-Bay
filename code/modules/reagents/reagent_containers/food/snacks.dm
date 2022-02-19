@@ -3158,6 +3158,11 @@
 	icon_state = "proteinbar"
 	trash = /obj/item/trash/candy/proteinbar
 	bitesize = 6
+	reagents_to_add = list(/datum/reagent/nutriment = 10, /datum/reagent/nutriment/protein = 4, /datum/reagent/sugar=7, /datum/reagent/iron = 3)
+
+/obj/item/weapon/reagent_containers/food/snacks/candy/proteinbar/protein
+	name = "sugar-free protein bar"
+	desc = "SwoleMAX brand protein bars, guaranteed to get you feeling perfectly overconfident. Now with extra no sugar!"
 	reagents_to_add = list(/datum/reagent/nutriment = 10, /datum/reagent/nutriment/protein = 4, /datum/reagent/iron = 3)
 
 /obj/item/weapon/reagent_containers/food/snacks/candy/donor
