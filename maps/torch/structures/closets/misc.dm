@@ -108,7 +108,7 @@
 
 obj/structure/closet/secure_closet/solguard
 	name = "\improper sol agent locker"
-	req_access = list(access_representative)
+	req_access = list(access_sec_guard)
 	closet_appearance = /decl/closet_appearance/secure_closet/sol/two
 
 /obj/structure/closet/secure_closet/solguard/WillContain()
@@ -116,6 +116,7 @@ obj/structure/closet/secure_closet/solguard
 		/obj/item/device/flash,
 		/obj/item/clothing/accessory/storage/holster/armpit,
 		/obj/item/weapon/gun/projectile/pistol/throwback,
+		/obj/item/ammo_magazine/pistol/throwback,
 		/obj/item/weapon/storage/secure/briefcase,
 		/obj/item/clothing/shoes/laceup,
 		/obj/item/clothing/under/rank/internalaffairs/plain,
@@ -124,8 +125,7 @@ obj/structure/closet/secure_closet/solguard
 		/obj/item/clothing/glasses/sunglasses,
 		/obj/item/clothing/glasses/sunglasses/big,
 		/obj/item/device/flashlight/maglight,
-		/obj/item/device/radio/headset/federal,
-		/obj/item/taperoll/police
+		/obj/item/device/radio/headset/federal
 		)
 
 

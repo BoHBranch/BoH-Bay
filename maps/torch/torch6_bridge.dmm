@@ -238,7 +238,6 @@
 	pixel_y = 23
 	},
 /obj/structure/closet/secure_closet/liaison,
-/obj/item/device/flash,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
 "aB" = (

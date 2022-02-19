@@ -404,12 +404,9 @@
 							 /datum/computer_file/program/reports)
 
 	access = list(access_representative, access_security, access_medical,
-					access_emergency_storage, access_change_ids,
-					access_eva, access_bridge,
-					access_janitor, access_cargo,
-					access_hydroponics, access_library, access_network, access_mailsorting,
-					access_hangar, access_aquila, access_solgov_crew,
-					access_commissary,)
+					access_emergency_storage, access_bridge,
+					access_janitor, access_cargo, access_hydroponics,
+					access_hangar, access_solgov_crew)
 
 /datum/job/solrep/get_description_blurb()
 	return "You are the Sol Gov Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and governmental interests on board. Send faxes back to Sol on mission progress and important events."
@@ -449,11 +446,10 @@
 		"Sol Federal Assistant",
 		"Sol Federal Chaperone"	)
 	skill_points = 20
-	access = list(access_representative, access_maint_tunnels, access_security, access_medical,
-						access_engine, access_research, access_bridge,
-						access_cargo, access_solgov_crew, access_hangar,
-						access_commissary, access_aquila,
-						access_sec_guard)
+	access = list(access_representative, access_security, access_medical,
+					access_emergency_storage, access_bridge,
+					access_janitor, access_cargo, access_hydroponics,
+					access_hangar, access_solgov_crew, access_sec_guard)
 	defer_roundstart_spawn = TRUE
 
 /datum/job/solguard/is_position_available()
