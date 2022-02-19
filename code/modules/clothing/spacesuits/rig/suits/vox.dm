@@ -45,3 +45,19 @@
 /obj/item/clothing/gloves/rig/vox_rig
 	species_restricted = list(SPECIES_VOX)
 	siemens_coefficient = 0
+
+/obj/item/weapon/rig/vox/quill
+	name = "Quill's rig control module"
+	desc = "The quill's personal rig suit. Parts of it writhe and squirm as if alive. The visor looks more like a thick membrane."
+	cell_type =  /obj/item/weapon/cell/hyper
+	req_access = list(access_voxship_captain)
+
+	initial_modules = list(
+		/obj/item/rig_module/vision/meson,
+		/obj/item/rig_module/mounted/plasmacutter,
+		/obj/item/rig_module/maneuvering_jets,
+		/obj/item/rig_module/power_sink,
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/mounted/egun,
+		/obj/item/rig_module/chem_dispenser/combat
+		)

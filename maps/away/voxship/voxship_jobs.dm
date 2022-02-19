@@ -162,19 +162,47 @@
 	shoes = /obj/item/clothing/shoes/magboots/vox
 	belt = /obj/item/weapon/storage/belt/utility/full
 	id_type = /obj/item/weapon/card/id/voxship
-	r_pocket = /obj/item/device/radio
 	l_pocket = /obj/item/weapon/crowbar/prybar
 	r_hand = /obj/item/weapon/tank/emergency/nitrogen/double
+	l_hand = /obj/item/voxbox
 
 /decl/hierarchy/outfit/job/voxship/crew/captain
 	name = VOXSHIP_OUTFIT_JOB_NAME("Shard Quill")
 	uniform = /obj/item/clothing/under/vox/vox_robes
-	r_pocket = /obj/item/device/radio
+	r_pocket = /obj/item/weapon/tank/emergency/nitrogen/double
 	shoes = /obj/item/clothing/shoes/magboots/vox
 	belt = /obj/item/weapon/storage/belt/utility/full
 	id_type = /obj/item/weapon/card/id/voxship_captain
 	l_pocket = /obj/item/weapon/crowbar/prybar
-	r_hand = /obj/item/weapon/tank/emergency/nitrogen/double
+	r_hand = /obj/item/weapon/rig/vox/quill
+	l_hand = /obj/item/voxbox
+
+/obj/item/voxbox
+	name = "Vox Combat Kit"
+	desc = "A secure box containing weapons."
+	icon = 'icons/obj/ascent_doodads.dmi'
+	icon_state = "box" //temp
+
+/obj/item/voxbox/attack_self(mob/living/user)
+	var/list/options = list()
+	options["Support"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/launcher/alien/slugsling,/obj/item/weapon/storage/firstaid/combat,/obj/item/clothing/glasses/hud/health/visor,/obj/item/device/scanner/health)
+	options["Enforcer"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/energy/plasmastun/vox,/obj/item/weapon/storage/firstaid/adv)
+	options["Controller"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/launcher/alien/spikethrower,/obj/item/weapon/gun/energy/sonic,/obj/item/weapon/storage/box/stinger,/obj/item/weapon/storage/firstaid/adv)
+	options["Stolen Marine Gear"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle,/obj/item/weapon/storage/firstaid/adv,/obj/item/ammo_magazine/mil_rifle,/obj/item/ammo_magazine/mil_rifle,/obj/item/ammo_magazine/mil_rifle,/obj/item/weapon/gun/energy/gun,/obj/item/weapon/storage/box/fragshells)
+	options["Melee"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,,/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton,/obj/item/weapon/storage/firstaid/adv)
+	var/choice = input(user,"What type of equipment?") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn)
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/weapon/gun/))
+				to_chat(user, "You have chosen \the [AM]. Make sure to keep it safe.")
+		qdel(src)
+
+/obj/item/weapon/gun/energy/plasmastun/vox
+	desc = "The modified Hephaestus Industries MA21 Selkie is a weapon that uses a laser pulse to ionise the local atmosphere, creating a disorienting pulse of plasma and deafening shockwave as the wave expands. Without a local atmosphere to ionize, however, it becomes a very expensive paperweight. This model seems heavily modified, to use the power of biofuel."
+	self_recharge = 1
+	recharge_time = 20
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew
 	name = "Shard Acolyte"
