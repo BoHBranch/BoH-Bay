@@ -174,7 +174,7 @@
 	belt = /obj/item/weapon/storage/belt/utility/full
 	id_type = /obj/item/weapon/card/id/voxship_captain
 	l_pocket = /obj/item/weapon/crowbar/prybar
-	r_hand = /obj/item/weapon/rig/vox/quill
+	r_hand = /obj/item/device/radio
 	l_hand = /obj/item/voxbox
 
 /obj/item/voxbox
