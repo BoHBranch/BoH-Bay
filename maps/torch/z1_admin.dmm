@@ -11529,6 +11529,10 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
+"bWN" = (
+/obj/machinery/hologram/holopad/longrange,
+/turf/simulated/floor/wood,
+/area/merchant_station)
 "bXW" = (
 /obj/structure/table/rack,
 /obj/item/stack/material/rods{
@@ -20809,7 +20813,7 @@ aMW
 aMC
 aNU
 aNU
-aNU
+bWN
 aQa
 aOw
 aab
