@@ -1852,17 +1852,9 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_armory)
 "dV" = (
-/obj/effect/catwalk_plated/ascent,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 1;
-	icon_state = "map-scrubbers"
-	},
+/obj/structure/table/rack/dark,
+/obj/item/weapon/rig/mantid/nabber,
+/obj/item/weapon/rig/mantid/nabber,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_armory)
 "dW" = (
@@ -10695,7 +10687,7 @@ ch
 ch
 dI
 ch
-dL
+dV
 ch
 dI
 ch
