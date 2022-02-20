@@ -2,6 +2,7 @@
 #define SIGHTS_ATTACHMENT 2
 #define BARREL_ATTACHMENT 3
 #define MUZZLE_ATTACHMENT 4
+#define STOCK_ATTACHMENT 5
 
 /obj/item/attachable
 	icon = 'icons/obj/guns/gun_attachments.dmi'
@@ -15,6 +16,7 @@
 	var/flags_attach_features = ATTACH_REMOVABLE
 	var/bipod_deployed = FALSE //only used by bipod
 	var/light_mod = null
+	action_button_name = "Activate Attachment" //It is also the text which gets displayed on the action button. If not set it defaults to 'Use [name]'. If it's not set, there'll be no button.
 
 	var/accuracy_modifier = 0 //This number is added to your base accuracy. The higher this number is, the more accurate at range you will be.
 	var/acc_power_mod = 0 //This will add to our acc_power.
@@ -37,6 +39,9 @@
 		var/obj/item/attachable/A = G.attachments[slot]
 		A.Detach(G, user)
 
+	if(ATTACH_ACTIVATION)
+		verbs += /obj/item/attachable/proc/activate_attachable
+
 	if(ishuman(loc))
 		var/mob/living/carbon/human/M = src.loc
 		M.drop_item(src)
@@ -52,6 +57,10 @@
 
 	G.attachments[slot] = null
 	G.recalculate_attachment_bonuses()
+
+
+	if(ATTACH_ACTIVATION)
+		activate_attachment(G, null, TRUE)
 
 	forceMove(get_turf(G))
 	user.put_in_hands(src)
@@ -169,3 +178,48 @@
 	attach_icon = "holosight_a"
 	slot = "rail"
 	accuracy_modifier = 6
+
+// A stock that is unremoveable, this is used to make the gun more centered on the inventory and the ground!
+
+/obj/item/attachable/unremoveable_stock
+	name = "stock" // change this because it'll be the only seeable thing playerfacing, wise.
+	desc = "If you see this, an admin spawned in an irremoveable stock or someone was dumb - MJP."
+	icon_state = "holosight"
+	attach_icon = "holosight_a"// And the icon, ofcourse.
+	flags_attach_features = null // you can't remove this!
+	slot = "stock"
+
+/obj/item/attachable/unremoveable_stock/t19_folding
+	name = "T&C-19 Stock (Folded)"
+	desc = "Folding stock for a Teckler and Carry-19 Machinepistole, how did you even see this?."
+	flags_attach_features = ATTACH_ACTIVATION
+	icon_state = "t19stock" // Gun starts folded.
+	attach_icon = "t19stock_a"
+	slot = "stock"
+	var/folded = 0 // Is our gun folded, or not?
+
+/obj/item/attachable/unremoveable_stock/t19_folding/activate_attachment(mob/user)
+	if(folded)
+		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
+		if(do_after(usr, 30, src))
+			usr.visible_message("<span class='notice'>\The [usr] extends [src].</span>", "<span class='notice'>You deploy the [src]</span>")
+			folded = FALSE
+			icon_state = "[icon_state]_deployed"
+	else
+		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
+		if(do_after(usr, 30, src))
+			folded = TRUE
+			icon_state = initial(icon_state)
+
+// Activating attachments, stuff.
+
+
+/obj/item/attachable/proc/activate_attachable(mob/living/user, obj/item/weapon/gun/G)
+	set name = "Toggle-Attachment"
+	set category = "Object"
+	set src in usr
+
+	activate_attachment(G, user) //success
+
+/obj/item/attachable/proc/activate_attachment(atom/target, mob/user) //This is for activating stuff like flamethrowers, or switching weapon modes.
+	return
