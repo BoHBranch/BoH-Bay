@@ -493,6 +493,12 @@
 /obj/effect/floor_decal/industrial/outline/blue,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/scrap/broken1)
+"hD" = (
+/obj/machinery/light_switch{
+	pixel_x = 25
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/scrap/broken2)
 "hQ" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -1380,12 +1386,6 @@
 /obj/effect/floor_decal/corner/grey/three_quarters,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/maintenance/lower)
-"xM" = (
-/obj/machinery/light_switch{
-	pixel_x = 25
-	},
-/turf/simulated/floor/tiled,
-/area/ship/scrap/cargo/lower)
 "xO" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/corner/yellow{
@@ -1723,6 +1723,12 @@
 	},
 /turf/simulated/floor/wood,
 /area/ship/scrap/gambling)
+"Dc" = (
+/obj/machinery/light_switch{
+	pixel_x = 25
+	},
+/turf/simulated/floor/tiled,
+/area/ship/scrap/cargo/lower)
 "Dh" = (
 /obj/machinery/light{
 	dir = 8
@@ -2280,12 +2286,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/shuttle/lift)
-"Na" = (
-/obj/machinery/light_switch{
-	pixel_x = 25
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/scrap/broken2)
 "Np" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -2342,7 +2342,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/maintenance/lower)
 "NU" = (
-/obj/machinery/vending/boozeomat,
+/obj/machinery/vending/boozeomat{
+	req_access = list()
+	},
 /turf/simulated/wall,
 /area/ship/scrap/gambling)
 "NV" = (
@@ -9244,7 +9246,7 @@ Ht
 SG
 gU
 gU
-Na
+hD
 Hm
 QK
 gU
@@ -10708,7 +10710,7 @@ PW
 YS
 Ay
 UX
-xM
+Dc
 gO
 UX
 UX
