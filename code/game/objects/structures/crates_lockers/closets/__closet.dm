@@ -390,14 +390,15 @@
 	if(opened)
 		icon_state = "open"
 	else
-		var/decl/closet_appearance/app = decls_repository.get_decl(closet_appearance)
-		if(app?.can_lock)
-			//Show the status light over lighting.
-			var/image/I = overlay_image(app.base_icon, "light", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER, color = "[locked ? COLOR_RED : COLOR_LIME]")
-			overlays += I
-			if(broken) //Show the emag overlay.
-				var/image/I2 = overlay_image(app.base_icon, "sparks", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
-				overlays += I2
+		if(closet_appearance)
+			var/decl/closet_appearance/app = decls_repository.get_decl(closet_appearance)
+			if(app?.can_lock)
+				//Show the status light over lighting.
+				var/image/I = overlay_image(app.base_icon, "light", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER, color = "[locked ? COLOR_RED : COLOR_LIME]")
+				overlays += I
+				if(broken) //Show the emag overlay.
+					var/image/I2 = overlay_image(app.base_icon, "sparks", plane = EFFECTS_ABOVE_LIGHTING_PLANE, layer = ABOVE_LIGHTING_LAYER)
+					overlays += I2
 
 		icon_state = "closed[welded ? "_welded" : ""]"
 
