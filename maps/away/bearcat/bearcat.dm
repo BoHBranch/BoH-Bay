@@ -46,7 +46,6 @@
 	cost = 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/ferry/lift, /datum/shuttle/autodock/overmap/bearcat_shuttle)
 	area_usage_test_exempted_root_areas = list(/area/ship)
-	template_flags = TEMPLATE_FLAG_SPAWN_GUARANTEED
 	apc_test_exempt_areas = list(
 		/area/ship/scrap/maintenance/engine/port = NO_SCRUBBER|NO_VENT,
 		/area/ship/scrap/maintenance/engine/starboard = NO_SCRUBBER|NO_VENT,

@@ -544,6 +544,9 @@
 /obj/machinery/chemical_dispenser/bar_alc/full{
 	pixel_y = 9
 	},
+/obj/machinery/light_switch{
+	pixel_x = 25
+	},
 /turf/simulated/floor/wood,
 /area/ship/scrap/gambling)
 "iQ" = (
@@ -616,20 +619,24 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/maintenance/lower)
 "kj" = (
-/obj/structure/cable{
-	dir = 4
-	},
 /obj/machinery/power/apc/derelict{
 	dir = 4
 	},
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 4
 	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/scrap/broken1)
 "kr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/machinery/light_switch{
+	pixel_x = 25
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/scrap/broken2)
 "kv" = (
@@ -830,9 +837,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/scrap/maintenance/storage)
 "nu" = (
-/obj/structure/cable{
-	dir = 1
-	},
 /obj/machinery/power/apc/derelict{
 	dir = 1
 	},
@@ -844,6 +848,11 @@
 	},
 /obj/effect/floor_decal/corner/grey{
 	dir = 5
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2";
+	pixel_y = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/maintenance/lower)
@@ -1371,6 +1380,12 @@
 /obj/effect/floor_decal/corner/grey/three_quarters,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/maintenance/lower)
+"xM" = (
+/obj/machinery/light_switch{
+	pixel_x = 25
+	},
+/turf/simulated/floor/tiled,
+/area/ship/scrap/cargo/lower)
 "xO" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/corner/yellow{
@@ -1880,6 +1895,10 @@
 	dir = 6;
 	icon_state = "corner_white"
 	},
+/obj/machinery/light_switch{
+	pixel_x = 30;
+	pixel_y = 28
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/scrap/maintenance/eva)
 "Gg" = (
@@ -1990,6 +2009,10 @@
 "Iu" = (
 /obj/effect/floor_decal/floordetail/edgedrain{
 	dir = 8
+	},
+/obj/machinery/light_switch{
+	pixel_x = -23;
+	pixel_y = 6
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/scrap/broken1)
@@ -2257,6 +2280,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/shuttle/lift)
+"Na" = (
+/obj/machinery/light_switch{
+	pixel_x = 25
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/ship/scrap/broken2)
 "Np" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -9215,7 +9244,7 @@ Ht
 SG
 gU
 gU
-gU
+Na
 Hm
 QK
 gU
@@ -10679,7 +10708,7 @@ PW
 YS
 Ay
 UX
-UX
+xM
 gO
 UX
 UX

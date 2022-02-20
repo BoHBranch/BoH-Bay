@@ -24,20 +24,6 @@
 /obj/effect/overmap/visitable/ship/bearcat,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/command/bridge)
-"ag" = (
-/obj/machinery/door/blast/regular/open{
-	dir = 2;
-	icon_state = "pdoor0";
-	id_tag = "radaway2";
-	opacity = 0
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating,
-/area/ship/scrap/maintenance/power)
 "an" = (
 /obj/machinery/computer/ship/engines,
 /turf/simulated/floor/tiled/dark,
@@ -63,11 +49,7 @@
 /obj/machinery/light/small,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/power/port_gen/pacman/super/potato,
-/obj/structure/cable/cyan{
-	d2 = 2;
-	dir = 1;
-	icon_state = "0-2"
-	},
+/obj/structure/cable,
 /turf/simulated/floor/plating,
 /area/ship/scrap/maintenance/power)
 "az" = (
@@ -205,14 +187,15 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/structure/cable{
-	dir = 4
-	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
 /obj/machinery/light,
 /obj/machinery/power/apc,
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/command/bridge)
 "bu" = (
@@ -279,11 +262,12 @@
 /turf/simulated/floor/bluegrid,
 /area/ship/scrap/comms)
 "ci" = (
-/obj/structure/cable{
-	dir = 1
-	},
 /obj/machinery/power/apc{
 	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/comms)
@@ -662,14 +646,15 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/cable{
-	dir = 1
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
 /obj/machinery/power/apc{
 	dir = 4
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/command/hallway)
@@ -842,11 +827,12 @@
 /turf/simulated/floor/usedup,
 /area/ship/scrap/crew/cryo)
 "gw" = (
-/obj/structure/cable{
-	dir = 1
-	},
 /obj/machinery/power/apc{
 	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/dock)
@@ -1429,21 +1415,6 @@
 "kJ" = (
 /turf/simulated/wall/r_wall,
 /area/ship/scrap/hidden)
-"kL" = (
-/obj/machinery/door/blast/regular/open{
-	dir = 2;
-	icon_state = "pdoor0";
-	id_tag = "radaway1";
-	opacity = 0
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/meter,
-/turf/simulated/floor/plating,
-/area/ship/scrap/maintenance/power)
 "kO" = (
 /obj/machinery/door/airlock/autoname/bearcat,
 /obj/structure/cable{
@@ -1860,12 +1831,13 @@
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/cryo)
 "nT" = (
-/obj/structure/cable{
-	dir = 1
-	},
 /obj/effect/submap_landmark/spawnpoint/crewman,
 /obj/machinery/power/apc{
 	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/cryo)
@@ -1897,9 +1869,6 @@
 /area/ship/scrap/crew/toilets)
 "of" = (
 /obj/effect/floor_decal/corner/white/diagonal,
-/obj/structure/cable{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -1907,6 +1876,10 @@
 	dir = 5
 	},
 /obj/machinery/power/apc,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/toilets)
 "og" = (
@@ -2165,13 +2138,13 @@
 	dir = 9;
 	icon_state = "corner_white"
 	},
-/obj/structure/cable,
 /obj/machinery/light{
 	dir = 8
 	},
 /obj/machinery/power/apc{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/saloon)
 "pV" = (
@@ -2256,21 +2229,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/scrap/crew/kitchen)
-"qp" = (
-/obj/machinery/door/blast/regular/open{
-	dir = 2;
-	icon_state = "pdoor0";
-	id_tag = "radaway3";
-	opacity = 0
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/meter,
-/turf/simulated/floor/plating,
-/area/ship/scrap/maintenance/power)
 "qs" = (
 /obj/effect/floor_decal/corner/black/diagonal,
 /obj/item/device/radio/intercom{
@@ -2299,11 +2257,12 @@
 /area/ship/scrap/crew/hallway/port)
 "qy" = (
 /obj/effect/floor_decal/corner/black/diagonal,
-/obj/structure/cable{
-	dir = 8
-	},
 /obj/machinery/power/apc{
 	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/scrap/crew/kitchen)
@@ -2781,7 +2740,7 @@
 	},
 /obj/effect/floor_decal/techfloor/orange,
 /obj/machinery/light/small,
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
@@ -2916,7 +2875,7 @@
 /area/ship/scrap/cargo)
 "uH" = (
 /obj/effect/floor_decal/techfloor/orange,
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
@@ -2964,11 +2923,7 @@
 /obj/machinery/power/port_gen/pacman/super/potato,
 /obj/machinery/light/small,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/cable/cyan{
-	d2 = 2;
-	dir = 1;
-	icon_state = "0-2"
-	},
+/obj/structure/cable,
 /turf/simulated/floor/plating,
 /area/ship/scrap/maintenance/power)
 "uX" = (
@@ -3089,9 +3044,6 @@
 "vF" = (
 /obj/effect/floor_decal/corner/white/diagonal,
 /obj/structure/cable{
-	dir = 1
-	},
-/obj/structure/cable{
 	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3105,6 +3057,10 @@
 	},
 /obj/machinery/power/apc{
 	dir = 4
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/wash)
@@ -3253,6 +3209,9 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/wash)
 "xc" = (
@@ -3281,11 +3240,7 @@
 /obj/item/weapon/paper{
 	info = "Hey, we forgot the uhh, second reactor. Sorry buddy, haha. I think we did a preeeetty good job on the rest of the ship, though!"
 	},
-/obj/structure/cable/cyan{
-	d2 = 2;
-	dir = 1;
-	icon_state = "0-2"
-	},
+/obj/structure/cable,
 /turf/simulated/floor/plating,
 /area/ship/scrap/maintenance/power)
 "xk" = (
@@ -3350,12 +3305,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/cable{
-	dir = 1
-	},
-/obj/structure/cable{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 1
 	},
@@ -3363,6 +3312,7 @@
 /obj/machinery/power/apc{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/simulated/floor/tiled/white,
 /area/ship/scrap/crew/medbay)
 "xE" = (
@@ -3389,10 +3339,11 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/structure/cable{
-	dir = 8
-	},
 /obj/machinery/power/shield_generator/precharged,
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/scrap/maintenance/power)
 "xR" = (
@@ -3491,9 +3442,6 @@
 	dir = 8
 	},
 /obj/structure/cable{
-	dir = 1
-	},
-/obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -3502,6 +3450,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable,
 /turf/simulated/floor/tiled/dark,
 /area/ship/scrap/crew/hallway/starboard)
 "yO" = (
@@ -3521,11 +3470,12 @@
 	dir = 6;
 	icon_state = "corner_white"
 	},
-/obj/structure/cable{
-	dir = 4
-	},
 /obj/machinery/power/apc{
 	dir = 4
+	},
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/cargo)
@@ -3884,12 +3834,12 @@
 /area/ship/scrap/maintenance/engine/aft)
 "Ca" = (
 /obj/effect/floor_decal/techfloor/orange,
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
@@ -3956,10 +3906,10 @@
 "Cs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/weapon/clothingbag/rubbermask,
-/obj/structure/cable,
 /obj/machinery/power/apc{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/simulated/floor/usedup,
 /area/ship/scrap/unused)
 "Cv" = (
@@ -4089,9 +4039,6 @@
 /area/ship/scrap/hidden)
 "CZ" = (
 /obj/machinery/portable_atmospherics/powered/pump/filled,
-/obj/structure/cable{
-	dir = 8
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
@@ -4103,6 +4050,10 @@
 	},
 /obj/machinery/power/apc{
 	dir = 8
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled,
 /area/ship/scrap/fire)
@@ -4336,17 +4287,13 @@
 /obj/structure/table/woodentable,
 /obj/item/weapon/storage/belt/utility/full,
 /obj/item/weapon/gun/energy/captain,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/light/small{
 	dir = 8
 	},
 /obj/machinery/power/apc{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/simulated/floor/wood,
 /area/ship/scrap/command/captain)
 "EX" = (
@@ -4561,13 +4508,13 @@
 /area/ship/scrap/crew/hallway/port)
 "FQ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
 /obj/machinery/power/apc{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/simulated/floor/tiled/dark/usedup,
 /area/ship/scrap/hidden)
 "FW" = (
@@ -4577,7 +4524,7 @@
 	id_tag = "radaway3";
 	opacity = 0
 	},
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -4611,7 +4558,8 @@
 	dir = 1
 	},
 /obj/structure/cable{
-	dir = 4
+	d2 = 8;
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/usedup,
 /area/ship/scrap/maintenance/engine/starboard)
@@ -4657,7 +4605,7 @@
 /area/ship/scrap/hidden)
 "GH" = (
 /obj/effect/floor_decal/techfloor/orange,
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
@@ -4683,12 +4631,11 @@
 	id_tag = "radaway2";
 	opacity = 0
 	},
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/meter,
 /turf/simulated/floor/plating,
 /area/ship/scrap/maintenance/power)
 "GS" = (
@@ -4721,7 +4668,6 @@
 /area/ship/scrap/dock)
 "Hj" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
-/obj/effect/paint/brown,
 /obj/machinery/door/blast/regular{
 	density = 0;
 	icon_state = "pdoor0";
@@ -4819,11 +4765,12 @@
 /obj/machinery/atmospherics/pipe/simple/visible/supply{
 	dir = 4
 	},
-/obj/structure/cable{
-	dir = 8
-	},
 /obj/machinery/power/apc{
 	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/scrap/maintenance/atmos)
@@ -4901,14 +4848,15 @@
 /area/ship/scrap/crew/medbay)
 "Id" = (
 /obj/structure/table/standard,
-/obj/structure/cable{
-	dir = 1
-	},
 /obj/effect/floor_decal/techfloor/orange{
 	dir = 1
 	},
 /obj/machinery/power/apc{
 	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/scrap/maintenance/engineering)
@@ -4984,7 +4932,6 @@
 /area/ship/scrap/bearcat_shuttle)
 "Il" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
-/obj/effect/paint/brown,
 /obj/machinery/door/blast/regular{
 	density = 0;
 	icon_state = "pdoor0";
@@ -5171,7 +5118,6 @@
 /obj/machinery/light_switch{
 	pixel_y = 29
 	},
-/obj/machinery/meter,
 /turf/simulated/floor/plating,
 /area/ship/scrap/maintenance/power)
 "IX" = (
@@ -5191,15 +5137,18 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/power/smes/buildable/max_cap_in_out,
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
 /turf/simulated/floor/plating,
 /area/ship/scrap/maintenance/power)
 "Jh" = (
-/obj/structure/cable{
-	dir = 4
-	},
 /obj/machinery/power/smes/buildable/max_cap_in_out,
 /obj/structure/cable{
-	dir = 8
+	d2 = 8;
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
 /area/ship/scrap/maintenance/power)
@@ -5395,12 +5344,17 @@
 /turf/simulated/floor/tiled,
 /area/ship/scrap/cargo)
 "Kn" = (
-/obj/structure/cable/cyan{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/machinery/power/terminal{
 	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
 /area/ship/scrap/maintenance/power)
@@ -5640,7 +5594,7 @@
 	id_tag = "radaway1";
 	opacity = 0
 	},
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
@@ -6143,20 +6097,15 @@
 	},
 /obj/effect/floor_decal/techfloor/orange,
 /obj/machinery/light/small,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/scrap/maintenance/power)
@@ -6294,6 +6243,16 @@
 /obj/machinery/recharge_station,
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/saloon)
+"UM" = (
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/terminal{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/ship/scrap/maintenance/power)
 "Vr" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -6354,10 +6313,10 @@
 /turf/simulated/floor/tiled,
 /area/ship/scrap/cargo)
 "WD" = (
-/obj/structure/cable,
 /obj/machinery/power/apc/high{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/simulated/floor/plating,
 /area/ship/scrap/maintenance/engine/aft)
 "WX" = (
@@ -14462,7 +14421,7 @@ Kt
 GH
 LT
 LT
-kL
+LT
 uW
 Yj
 VN
@@ -14702,10 +14661,10 @@ FQ
 GG
 Ax
 IZ
-Kt
+UM
 Ca
-ag
-ag
+GQ
+GQ
 GQ
 xh
 Yj
@@ -14950,7 +14909,7 @@ Kt
 uH
 FW
 FW
-qp
+FW
 ax
 Yj
 Yj
