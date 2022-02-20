@@ -32,3 +32,8 @@
 	name = "Ammo - disperser-XP4-INDARRA charge"
 	contains = list(/obj/structure/ship_munition/disperser_charge/explosive)
 	cost = 40
+
+/decl/hierarchy/supply_pack/munition/odst
+	name = "Ammo - Droppod"
+	contains = list(/obj/structure/closet/odst)
+	cost = 30

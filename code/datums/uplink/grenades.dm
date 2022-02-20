@@ -37,6 +37,12 @@
 	item_cost = 24
 	path = /obj/item/weapon/storage/box/emps
 
+/datum/uplink_item/item/grenades/neutron
+	name = "Neutron Grenade"
+	desc = "This grenade acts as a 'dirty bomb' of sorts, weakly flashing people in view and irradiating them to the point of death if not treated immediately."
+	item_cost = 24
+	path = /obj/item/weapon/grenade/neutron
+
 /datum/uplink_item/item/grenades/frag_high_yield
 	name = "Fragmentation Bomb"
 	item_cost = 34

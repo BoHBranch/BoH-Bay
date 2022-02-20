@@ -11,7 +11,7 @@
 	slot_flags = SLOT_BACK
 	caliber = CALIBER_SHOTGUN
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
-	load_method = SINGLE_CASING
+	load_method = SINGLE_CASING|SINGLE_LOAD
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
 	handle_casings = HOLD_CASINGS
 	one_hand_penalty = 8
