@@ -115,8 +115,8 @@ obj/structure/closet/secure_closet/solguard
 	return list(
 		/obj/item/device/flash,
 		/obj/item/clothing/accessory/storage/holster/armpit,
-		/obj/item/weapon/gun/projectile/pistol/throwback,
-		/obj/item/ammo_magazine/pistol/throwback,
+		/obj/item/weapon/gun/projectile/pistol/holdout,
+		/obj/item/ammo_magazine/pistol/small = 2,
 		/obj/item/weapon/storage/secure/briefcase,
 		/obj/item/clothing/shoes/laceup,
 		/obj/item/clothing/under/rank/internalaffairs/plain,
