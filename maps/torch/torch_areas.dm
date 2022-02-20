@@ -631,6 +631,11 @@
 	icon_state = "disperser"
 	req_access = list(access_bridge)
 
+/area/command/disperser/odst
+	name = "\improper Drop-Pod Bays"
+	icon_state = "disperser"
+	req_access = list(access_infantry)
+
 /area/crew_quarters/heads
 	icon_state = "heads"
 	req_access = list(access_heads)
