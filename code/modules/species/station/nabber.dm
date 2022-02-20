@@ -9,6 +9,7 @@
 	new environment."
 	hidden_from_codex = FALSE
 	silent_steps = TRUE
+	status_flags = NO_ANTAG
 
 	antaghud_offset_y = 8
 
@@ -318,7 +319,6 @@
 /datum/species/nabber/handle_post_spawn(var/mob/living/carbon/human/H)
 	..()
 	return H.pulling_punches = TRUE
-	H.status_flags |= NO_ANTAG
 
 /datum/species/nabber/has_fine_manipulation(var/mob/living/carbon/human/H)
 	if(H.species.get_bodytype() == SPECIES_MONARCH_QUEEN)
