@@ -23,7 +23,7 @@
 	name = "particle charge"
 	icon_state = "particle"
 	fire_sound = 'sound/weapons/gauss.ogg'
-	damage = 65
+	damage = 60
 	armor_penetration = 85
 	muzzle_type = /obj/effect/projectile/laser_particle/muzzle
 	tracer_type = /obj/effect/projectile/laser_particle/tracer
@@ -33,7 +33,7 @@
 
 /obj/item/projectile/beam/particleadv/small
 	name = "particle charge"
-	damage = 55
-	armor_penetration = 65
+	damage = 30
+	armor_penetration = 40
 	shrapnel_chance_multiplier = 0.3
 	arterial_bleed_chance_multiplier = 0.3

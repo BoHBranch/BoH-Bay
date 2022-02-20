@@ -106,12 +106,12 @@
 	armor_penetration = 20
 
 /obj/item/projectile/beam/pulse/skrell/single
-	damage = 60
+	damage = 50
 	armor_penetration = 20
 
 /obj/item/projectile/beam/pulse/skrell/single/lance
 	distance_falloff = 0.50
-	damage = 80
+	damage = 60
 	armor_penetration = 40
 
 /obj/item/projectile/beam/emitter
@@ -283,8 +283,8 @@
 /obj/item/projectile/beam/particle
 	name = "particle lance"
 	icon_state = "particle"
-	damage = 35
-	armor_penetration = 50
+	damage = 40
+	armor_penetration = 60
 	muzzle_type = /obj/effect/projectile/laser_particle/muzzle
 	tracer_type = /obj/effect/projectile/laser_particle/tracer
 	impact_type = /obj/effect/projectile/laser_particle/impact
@@ -294,7 +294,7 @@
 /obj/item/projectile/beam/particle/small
 	name = "particle beam"
 	damage = 30
-	armor_penetration = 40
+	armor_penetration = 20
 	shrapnel_chance_multiplier = 0.4
 	arterial_bleed_chance_multiplier = 0.4
 
