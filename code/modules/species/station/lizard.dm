@@ -85,10 +85,16 @@
 
 	prone_overlay_offset = list(-4, -4)
 
-	override_organ_types = list(
-		BP_EYES = /obj/item/organ/internal/eyes/unathi,
-		BP_BRAIN = /obj/item/organ/internal/brain/unathi
-	)
+	has_organ = list(
+		BP_HEART =    /obj/item/organ/internal/heart,
+		BP_STOMACH =  /obj/item/organ/internal/stomach,
+		BP_LUNGS =    /obj/item/organ/internal/lungs,
+		BP_LIVER =    /obj/item/organ/internal/liver,
+		BP_KIDNEYS =  /obj/item/organ/internal/kidneys,
+		BP_APPENDIX = /obj/item/organ/internal/appendix,
+		BP_EYES =   /obj/item/organ/internal/eyes/unathi,
+		BP_BRAIN =  /obj/item/organ/internal/brain/unathi
+		)
 
 	descriptors = list(
 		/datum/mob_descriptor/height = 2,

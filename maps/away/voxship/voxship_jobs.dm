@@ -1,10 +1,10 @@
 /datum/job/submap/voxship_vox
-	title = "Shoal Scavenger"
-	total_positions = 4
+	title = "Shard Acolyte"
+	total_positions = 6
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
-	supervisors = "Quill,The Apex and the arkship"
-	info = "Scrap is thin. Not much food is left, but thankfully the sector is quite rich, and it's time to get some more supplies. \
-	although staying on base is tempting. Plenty of nitrogen, and not much hazards to worry about."
+	supervisors = "Quill, The Apex and the arkship"
+	info = "By the will of the dead creators, you must reclaim the lost territory of their fallen empire, and re-establish the domain of the Auralis no matter the cost. \
+	Honor their memory, obey your Quill-Captain."
 	whitelisted_species = list(SPECIES_VOX)
 	blacklisted_species = null
 	is_semi_antagonist = TRUE
@@ -32,9 +32,10 @@
 	skill_points = 40
 
 /datum/job/submap/voxship_vox/doc
-	title = "Shoal Biotechnician"
+	title = "Shard Biotechnician"
 	total_positions = 1
-	info = "You are the sawbones of your scavenger crew. You are in charge of removing stacks, replacing limbs, and generally keeping your kin alive at all costs."
+	info = "Your sacred duty is to preserve the lives of your ship-band; \
+	save their stacks, stabilize wounded crew, replace missing components and ensure nobody messes with your patients or your workspace."
 	whitelisted_species = list(SPECIES_VOX)
 	min_skill = list(	SKILL_HAULING     = SKILL_BASIC,
 						SKILL_EVA         = SKILL_EXPERT,
@@ -68,9 +69,10 @@
 	skill_points = 26
 
 /datum/job/submap/voxship_vox/engineer
-	title = "Shoal Technician"
+	title = "Shard Technician"
 	total_positions = 2
-	info = "You are the mechanic of your scavenger crew. Keep all your salvaged technology running, fix robotics, and disassemble some of the more complex devices your crew comes across."
+	info = "You are one among many billions who has kept the five sacred Arks operational over eons, such a small shard vessel is an easy task in comparison. \
+	Keep the tech operational, fix damage, and disassemble more complex devices or artefacts the acolytes come across on their expeditions."
 	whitelisted_species = list(SPECIES_VOX)
 	min_skill = list(	SKILL_HAULING      = SKILL_BASIC,
 						SKILL_COMPUTER     = SKILL_ADEPT,
@@ -106,11 +108,15 @@
 	skill_points = 26
 
 /datum/job/submap/voxship_vox/quill
-	title = "Shoal Quill"
+	title = "Shard Quill"
 	total_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew/captain
 	supervisors = "The Apex and the arkship"
-	info = "You're in charge. You fly the ship, and dictate what the crew does. You are in charge of keeping your subordinates in check, the Apex has given you authority to kill any that disobeys your orders. Do not disappoint the Apex."
+	info = "You are the Quill-Captain of a handsome shard-class frigate, a scout vessel for the Ark Fleets of the Vox. \
+	The dead empire is being reborn, new planets settled, alliances made. To one of the five ark admirals you are sworn, and they have your complete loyalty. \
+	The age of stagnancy is over, you have purpose anew, the crew must know this. \
+	Ensure they do not disgrace the memory of the Auralis, that they do not forget the faith, and that new territory is claimed and material secured for the arks. \
+	Measure your discipline lest you be challenged for being too lenient or harsh."
 	whitelisted_species = list(SPECIES_VOX)
 	min_skill = list(	SKILL_HAULING     = SKILL_BASIC,
 						SKILL_EVA         = SKILL_EXPERT,
@@ -150,36 +156,72 @@
 	r_ear = null
 
 /decl/hierarchy/outfit/job/voxship/crew
-	name = VOXSHIP_OUTFIT_JOB_NAME("Shoal Scavenger")
+	name = VOXSHIP_OUTFIT_JOB_NAME("Shard Expeditionary")
 	uniform = /obj/item/clothing/under/vox/vox_robes
 	r_pocket = /obj/item/device/radio
 	shoes = /obj/item/clothing/shoes/magboots/vox
+	l_ear = /obj/item/device/radio/headset
 	belt = /obj/item/weapon/storage/belt/utility/full
 	id_type = /obj/item/weapon/card/id/voxship
-	r_pocket = /obj/item/device/radio
 	l_pocket = /obj/item/weapon/crowbar/prybar
 	r_hand = /obj/item/weapon/tank/emergency/nitrogen/double
+	l_hand = /obj/item/voxbox
 
 /decl/hierarchy/outfit/job/voxship/crew/captain
-	name = VOXSHIP_OUTFIT_JOB_NAME("Shoal Quill")
+	name = VOXSHIP_OUTFIT_JOB_NAME("Shard Quill")
 	uniform = /obj/item/clothing/under/vox/vox_robes
-	r_pocket = /obj/item/device/radio
+	r_pocket = /obj/item/weapon/tank/emergency/nitrogen/double
 	shoes = /obj/item/clothing/shoes/magboots/vox
+	l_ear = /obj/item/device/radio/headset
 	belt = /obj/item/weapon/storage/belt/utility/full
 	id_type = /obj/item/weapon/card/id/voxship_captain
 	l_pocket = /obj/item/weapon/crowbar/prybar
-	r_hand = /obj/item/weapon/tank/emergency/nitrogen/double
+	r_hand = /obj/item/device/radio
+	l_hand = /obj/item/voxbox
+
+/obj/item/voxbox
+	name = "Vox Combat Kit"
+	desc = "A secure box containing weapons."
+	icon = 'icons/obj/ascent_doodads.dmi'
+	icon_state = "box" //temp
+
+/obj/item/voxbox/attack_self(mob/living/user)
+	var/list/options = list()
+	options["Support"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/launcher/alien/slugsling,/obj/item/weapon/storage/firstaid/combat,/obj/item/clothing/glasses/hud/health/visor,/obj/item/device/scanner/health)
+	options["Enforcer"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/energy/plasmastun/vox,/obj/item/weapon/storage/firstaid/adv)
+	options["Controller"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/launcher/alien/spikethrower,/obj/item/weapon/gun/energy/sonic,/obj/item/weapon/storage/box/stinger,/obj/item/weapon/storage/firstaid/adv)
+	options["Stolen Marine Gear"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle,/obj/item/weapon/storage/firstaid/adv,/obj/item/ammo_magazine/mil_rifle,/obj/item/ammo_magazine/mil_rifle,/obj/item/ammo_magazine/mil_rifle,/obj/item/weapon/gun/energy/gun,/obj/item/weapon/storage/box/fragshells)
+	options["Sniper"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/energy/sniperrifle/vox,/obj/item/weapon/storage/firstaid/adv,/obj/item/device/binoculars,/obj/item/weapon/gun/projectile/revolver,/obj/item/ammo_magazine/speedloader/magnum,/obj/item/ammo_magazine/speedloader/magnum,/obj/item/ammo_magazine/speedloader/magnum)
+	options["Melee"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton,/obj/item/weapon/storage/firstaid/adv)
+	var/choice = input(user,"What type of equipment?") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn)
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/weapon/gun/))
+				to_chat(user, "You have chosen \the [AM]. Make sure to keep it safe.")
+		qdel(src)
+
+/obj/item/weapon/gun/energy/plasmastun/vox
+	desc = "The modified Hephaestus Industries MA21 Selkie is a weapon that uses a laser pulse to ionise the local atmosphere, creating a disorienting pulse of plasma and deafening shockwave as the wave expands. Without a local atmosphere to ionize, however, it becomes a very expensive paperweight. This model seems heavily modified, to use the power of biofuel."
+	self_recharge = 1
+	recharge_time = 20
+
+/obj/item/weapon/gun/energy/sniperrifle/vox
+	desc = "This is a modified Hephaestus Industries Baleful, the cell have been replaced by a vox variant, making it able to self charge. It's a designated marksman rifle capable of shooting powerful ionized beams, this is a weapon to kill from a distance."
+	self_recharge = 1
+	recharge_time = 60
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew
-	name = "Shoal Scavenger"
+	name = "Shard Acolyte"
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/doc
-	name = "Shoal Biotechnician"
+	name = "Shard Biotechnician"
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/engineer
-	name = "Shoal Technician"
+	name = "Shard Technician"
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/quill
-	name = "Shoal Quill"
+	name = "Shard Quill"
 
 #undef VOXSHIP_OUTFIT_JOB_NAME

@@ -191,7 +191,7 @@
 	delay = 60
 	attack_name = "venomous strike"
 
-/datum/unarmed_attack/bite/venom/get_damage_type()
+/datum/unarmed_attack/punch/venom/get_damage_type()
 	return TOX
 
 /datum/unarmed_attack/claws/armalis

@@ -16,6 +16,6 @@
 
 /decl/cultural_info/faction/vox/ark
 	name = FACTION_VOX_ARK
-	description = "The majority of Vox live and serve the arkships. \
-	Artificers creating all that their civilization requires, acolytes keeping alive the flame of the Auralis, technicians maintaining the arcane works of eons past, merchants serving supply needs as they rejoin and depart for their duties beyond home and warriors that defend the sacred homeworlds from any outside threat. \
+	description = "The majority of Vox live on and serve the arkships. \
+	This includes artificers creating all that their civilization requires, acolytes keeping alive the flame of the Auralis, technicians maintaining the arcane works of eons past, merchants serving supply needs as they rejoin and depart for their duties beyond home and warriors that defend the sacred home worlds from any outside threat. \
 	Ark Vox are the closest their society has to civilians, living with a degree of ease and comfort, assured by the Apex guiding their construct world and the Ark Admiral that leads matters of local state."

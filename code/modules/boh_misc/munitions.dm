@@ -103,6 +103,7 @@
 	desc = "A high-power bullet casing."
 	caliber = CALIBER_PISTOL_MAGNUM_LARGE
 	projectile_type = /obj/item/projectile/bullet/pistol/large
+	ammo_stack = /obj/item/ammo_magazine/handful/magnum_handful/two
 
 //projectile
 /obj/item/projectile/bullet/pistol/large

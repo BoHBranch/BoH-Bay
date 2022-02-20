@@ -225,3 +225,15 @@
 /obj/aura/regenerating/human/promethean/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
 	to_chat(H, "<span class='warning'>You feel a slithering sensation as your [O.name] reforms.</span>")
 	H.adjust_nutrition(-external_nutrition_mult)
+
+/////////
+// Armalis regen. Not soft-balanced by timers.
+/////////
+/obj/aura/regenerating/human/armalis
+	brute_mult = 1.5
+	fire_mult = 1.5
+	tox_mult = 1.5
+	oxy_mult = 2
+	nutrition_damage_mult = 0.1
+	organ_mult = 1
+	regen_message = "<span class='warning'>You sense your body shifting internally to regenerate your ORGAN..</span>"

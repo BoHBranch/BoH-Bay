@@ -1,7 +1,7 @@
 /datum/map/torch
 	species_to_job_whitelist = list(
 		/datum/species/nabber = list(/datum/job/ai, /datum/job/cyborg, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/chemist,
-									 /datum/job/roboticist, /datum/job/cargo_tech, /datum/job/chef, /datum/job/engineer, /datum/job/doctor, /datum/job/bartender),
+									 /datum/job/roboticist, /datum/job/cargo_tech, /datum/job/chef, /datum/job/engineer, /datum/job/doctor, /datum/job/bartender, /datum/job/assistant),
 		/datum/species/vox/ = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant),
 		/datum/species/vox/armalis = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant),
 		/datum/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant)
@@ -56,6 +56,10 @@
 // Some jobs for nabber grades defined here due to map-specific job datums.
 /decl/cultural_info/culture/nabber/New()
 	LAZYADD(valid_jobs, /datum/job/scientist_assistant)
+	..()
+	
+/decl/cultural_info/culture/nabber/New()
+	LAZYADD(valid_jobs, /datum/job/assistant)
 	..()
 
 /decl/cultural_info/culture/nabber/b/New()
