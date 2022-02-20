@@ -5,7 +5,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/captain
 	is_semi_antagonist = TRUE
 	supervisors = "your bottom line"
-	info = "Your ship has been recently remade and resupplied, and you are using this opportunity to salvage some goodies and do a little trading in an unexplored region of space. Remember to organize your crew appropriately."
+	info = "our ship is in a deep, fringe region of space following a ion storm blowout. God knows for how long you have been guided by a malfunctioning auto-pilot, but at least the cryo-revival system is functional now. Organize what's left of your crew and continue with your salvage, trade or exploration efforts."
 
 /datum/job/submap/bearcat_crewman
 	title = "Independant Crewman"
@@ -14,7 +14,7 @@
 	spawn_positions = 6
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/crew
 	is_semi_antagonist = TRUE
-	info = "The ship you are working on has been recently remade and resupplied, and you are using this opportunity to salvage some goodies and do a little trading in an unexplored region of space."
+	info = "our ship is in a deep, fringe region of space following a ion storm blowout. God knows for how long you have been guided by a malfunctioning auto-pilot, but at least the cryo-revival system is functional now. Coordinate with your captain and continue with your salvage, trade or exploration efforts."
 
 #define BEARCAT_OUTFIT_JOB_NAME(job_name) ("Bearcat - Job - " + job_name)
 

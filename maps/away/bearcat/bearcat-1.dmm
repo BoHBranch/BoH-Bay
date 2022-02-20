@@ -765,6 +765,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/light_switch{
+	pixel_x = -24;
+	pixel_y = -26
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/scrap/maintenance/eva)
 "lZ" = (
@@ -1901,10 +1905,6 @@
 	dir = 6;
 	icon_state = "corner_white"
 	},
-/obj/machinery/light_switch{
-	pixel_x = 30;
-	pixel_y = 28
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/scrap/maintenance/eva)
 "Gg" = (
@@ -2345,7 +2345,7 @@
 /obj/machinery/vending/boozeomat{
 	req_access = list()
 	},
-/turf/simulated/wall,
+/turf/simulated/floor/plating,
 /area/ship/scrap/gambling)
 "NV" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{

@@ -31,7 +31,7 @@
 	)
 
 /obj/effect/overmap/visitable/ship/bearcat/New()
-	name = "[pick("FTV","ITV","IEV")] [pick("Bearcat")]" //one name for consistency instead of a random selection. if you want, just say the ship data is outdated and use a different name anyway
+	name = "[pick("FTV","ITV","IEV")] [pick("Bearcat", "Firebug", "Defiant", "Unsinkable","Horizon","Vagrant")]"
 	for(var/area/ship/scrap/A)
 		A.name = "\improper [name] - [A.name]"
 		GLOB.using_map.area_purity_test_exempt_areas += A.type
@@ -41,7 +41,7 @@
 /datum/map_template/ruin/away_site/bearcat_wreck
 	name = "Bearcat Wreck"
 	id = "awaysite_bearcat_wreck"
-	description = "A brand-new light freighter."
+	description = "A wrecked light freighter."
 	suffixes = list("bearcat/bearcat-1.dmm", "bearcat/bearcat-2.dmm")
 	cost = 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/ferry/lift, /datum/shuttle/autodock/overmap/bearcat_shuttle)
