@@ -59,6 +59,7 @@
 
 /mob/living/carbon/human/nabber/New(var/new_loc)
 	pulling_punches = 1
+	status_flags = NO_ANTAG
 	..(new_loc,SPECIES_NABBER)
 
 /mob/living/carbon/human/monkey/New(var/new_loc)

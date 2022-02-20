@@ -9,7 +9,6 @@
 	new environment."
 	hidden_from_codex = FALSE
 	silent_steps = TRUE
-	status_flags = NO_ANTAG
 
 	antaghud_offset_y = 8
 
