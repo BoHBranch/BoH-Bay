@@ -51,3 +51,4 @@
 	desc = "A module that drains your power reserves while cloaking you from all visual scanners"
 	item_cost = 130
 	path = /obj/item/rig_module/stealth_field
+	antag_roles = list(MODE_TRAITOR)
