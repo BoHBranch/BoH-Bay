@@ -127,7 +127,7 @@
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg
 	name = "Z6 Komodo"
 	desc = "The Hephaestus Industries Z6 Komodo is an old bullpup carbine conversion. \
-	It adds the possibility of automatic fire, though at the cost of likely jams. Sadly, it also removes the grenade launcher."
+	It adds the possibility of automatic fire, though at the cost of likely jams."
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	auto_eject = 1
 	one_hand_penalty = 8
