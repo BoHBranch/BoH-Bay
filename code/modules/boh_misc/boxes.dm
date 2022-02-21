@@ -33,6 +33,10 @@
 	name = "heavy box of shotgun slugs"
 	startswith = list(/obj/item/ammo_magazine/shotholder = 7)
 
+/obj/item/weapon/storage/box/ammo/shotgunammo/buckshot/full
+	name = "heavy box of shotgun shells"
+	startswith = list(/obj/item/ammo_magazine/shotholder/shell = 7)
+
 /obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full
 	name = "heavy box of birdshot"
 	startswith = list(/obj/item/ammo_magazine/shotholder/birdshot = 7)
