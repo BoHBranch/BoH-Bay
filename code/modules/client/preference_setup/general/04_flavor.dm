@@ -119,6 +119,7 @@
 	HTML += "<br>"
 	HTML += "<a href='?src=\ref[src];flavor_text=feet'>Feet:</a> "
 	HTML += TextPreview(pref.flavor_texts["feet"])
+	HTML += "<br>"
 	HTML += "<a href='?src=\ref[src];flavor_text=naked'>Naked (NSFW):</a> "
 	HTML += TextPreview(pref.flavor_texts["naked"])
 	HTML += "<br>"
