@@ -4,7 +4,7 @@
 
 	genders = list(MALE, FEMALE, PLURAL)
 
-	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/tail, /datum/unarmed_attack/claws, /datum/unarmed_attack/punch/venom, /datum/unarmed_attack/bite/sharp, /datum/unarmed_attack/bite/venom)
+	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/tail, /datum/unarmed_attack/claws, /datum/unarmed_attack/punch, /datum/unarmed_attack/punch/venom, /datum/unarmed_attack/bite/sharp, /datum/unarmed_attack/bite/venom)
 	darksight_range = 5
 	darksight_tint = DARKTINT_GOOD
 	slowdown = 0.4
