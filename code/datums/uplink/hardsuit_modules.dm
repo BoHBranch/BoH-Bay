@@ -47,7 +47,7 @@
 	path = /obj/item/rig_module/mounted/lcannon
 
 /datum/uplink_item/item/hardsuit_modules/stealth_module
-	name = "\improper Stealth Module
+	name = "\improper Stealth Module"
 	desc = "A module that drains your power reserves while cloaking you from all visual scanners"
 	item_cost = 130
 	path = /obj/item/rig_module/stealth_field
