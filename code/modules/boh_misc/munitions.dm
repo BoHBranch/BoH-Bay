@@ -72,6 +72,7 @@
 	It does mention something about being an incredibly localized explosive, however, and only to be used against non-organic targets. Whatever that means."
 	icon = 'icons/boh/ammo.dmi'
 	icon_state = "rcrshell"
+	spent_icon = "rcrshell-spent"//for some reason needed because wacky
 	matter = list(MATERIAL_STEEL = 50000) //Same as the RCD, retardedly high, for good reason.
 	projectile_type = /obj/item/projectile/bullet/rcr
 
