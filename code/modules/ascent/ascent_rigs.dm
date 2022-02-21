@@ -9,7 +9,7 @@
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = 1.1 * ARMOR_BALLISTIC_RESISTANT,
 		laser = 1.1 * ARMOR_LASER_RIFLES,
-		energy = ARMOR_ENERGY_RESISTANT,
+		energy = ARMOR_ENERGY_SHIELDED,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
@@ -197,7 +197,7 @@
 /obj/item/weapon/tank/mantid/reactor/Process()
 	..()
 	var/obj/item/weapon/rig/holder = loc
-	if(air_contents.total_moles < gas_regen_cap && istype(holder) && holder.cell && holder.cell.use(charge_cost))
+	if(air_contents.total_moles < gas_regen_cap) //Reverted from new cell code because it would drain ascent RIGs at stupid fast rates.
 		air_contents.adjust_gas(refill_gas_type, gas_regen_amount)
 
 // Chem dispenser.
@@ -276,6 +276,20 @@
 	air_type =   /obj/item/weapon/tank/mantid/reactor/oxygen
 	chest_type = /obj/item/clothing/suit/space/rig/mantid/serpentid
 	boot_type =  null
+	initial_modules = list(
+		/obj/item/rig_module/vision/thermal,
+		/obj/item/rig_module/ai_container,
+		/obj/item/rig_module/electrowarfare_suite,
+		/obj/item/rig_module/chem_dispenser/nabber,
+		/obj/item/rig_module/mounted/energy_blade/mantid,
+		/obj/item/rig_module/device/multitool,
+		/obj/item/rig_module/device/cable_coil,
+		/obj/item/rig_module/device/welder,
+		/obj/item/rig_module/device/clustertool,
+		/obj/item/rig_module/mounted/plasmacutter,
+		/obj/item/rig_module/maneuvering_jets,
+		/obj/item/rig_module/cooling_unit
+	)
 	allowed = list(
 		/obj/item/clustertool,
 		/obj/item/weapon/gun/energy/particle,
