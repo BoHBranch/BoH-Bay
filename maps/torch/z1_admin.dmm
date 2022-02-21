@@ -9890,7 +9890,7 @@
 /area/shuttle/merchant/home)
 "aSK" = (
 /obj/machinery/button/blast_door{
-	id_tag = "merchant_rear";
+	id_tag = "merchant_station_hatchr";
 	name = "Rear Hatch Control";
 	pixel_y = -24;
 	req_access = list("ACCESS_MERCHANT")
@@ -12211,9 +12211,10 @@
 /obj/effect/paint/silver,
 /obj/machinery/door/blast/regular{
 	dir = 4;
-	id_tag = "merchant_rear";
+	id_tag = "merchant_station_hatch";
 	name = "Rear Hatch"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/shuttle/merchant/home)
 "oiM" = (
