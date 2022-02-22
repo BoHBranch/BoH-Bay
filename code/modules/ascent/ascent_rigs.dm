@@ -9,7 +9,7 @@
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = 1.1 * ARMOR_BALLISTIC_RESISTANT,
 		laser = 1.1 * ARMOR_LASER_RIFLES,
-		energy = ARMOR_ENERGY_SHIELDED,
+		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
@@ -197,7 +197,7 @@
 /obj/item/weapon/tank/mantid/reactor/Process()
 	..()
 	var/obj/item/weapon/rig/holder = loc
-	if(air_contents.total_moles < gas_regen_cap) //Reverted from new cell code because it would drain ascent RIGs at stupid fast rates.
+	if(air_contents.total_moles < gas_regen_cap && istype(holder) && holder.cell && holder.cell.use(charge_cost))
 		air_contents.adjust_gas(refill_gas_type, gas_regen_amount)
 
 // Chem dispenser.
@@ -292,7 +292,7 @@
 	)
 	allowed = list(
 		/obj/item/clustertool,
-		/obj/item/weapon/gun/energy/particle,
+		/obj/item/weapon/gun/energy/particle/small,
 		/obj/item/weapon/weldingtool/electric/mantid,
 		/obj/item/device/multitool/mantid,
 		/obj/item/stack/medical/resin,
