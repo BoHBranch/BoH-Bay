@@ -7,7 +7,7 @@
 	anchored = 1
 	idle_power_usage = 20
 	active_power_usage = 5000
-	req_access = list(access_brig)
+	req_access = list(access_brig, access_research)
 	base_type = /obj/machinery/weapons_fabricator
 	construct_state = /decl/machine_construction/default/panel_closed
 	uncreated_component_parts = null
