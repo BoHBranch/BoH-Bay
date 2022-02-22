@@ -14,7 +14,6 @@
 	var/pixel_shift_y = 16 //Uses the bottom left corner of the item.
 	var/slot = null //"muzzle", "rail", "under", "stock", "special"
 	var/flags_attach_features = ATTACH_REMOVABLE
-	var/bipod_deployed = FALSE //only used by bipod
 	var/light_mod = null
 	action_button_name = "Activate Attachment" //It is also the text which gets displayed on the action button. If not set it defaults to 'Use [name]'. If it's not set, there'll be no button.
 
@@ -39,7 +38,7 @@
 		var/obj/item/attachable/A = G.attachments[slot]
 		A.Detach(G, user)
 
-	if(ATTACH_ACTIVATION)
+	if(flags_attach_features && ATTACH_ACTIVATION)
 		verbs += /obj/item/attachable/proc/activate_attachable
 
 	if(ishuman(loc))
@@ -59,7 +58,7 @@
 	G.recalculate_attachment_bonuses()
 
 
-	if(ATTACH_ACTIVATION)
+	if(flags_attach_features && ATTACH_ACTIVATION)
 		activate_attachment(G, null, TRUE)
 
 	forceMove(get_turf(G))
@@ -202,9 +201,8 @@
 	if(folded)
 		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
 		if(do_after(usr, 30, src))
-			usr.visible_message("<span class='notice'>\The [usr] extends [src].</span>", "<span class='notice'>You deploy the [src]</span>")
 			folded = FALSE
-			icon_state = "[icon_state]_deployed"
+			icon_state = "[icon_state]_retracted"
 	else
 		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
 		if(do_after(usr, 30, src))

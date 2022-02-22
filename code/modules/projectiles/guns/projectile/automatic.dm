@@ -31,6 +31,10 @@
 	name = "prototype SMG"
 	desc = "A protoype lightweight, fast firing submachine gun. With a fun switch."
 	// Please for the love of whatever is up there, use this format for your list!
+	starting_attachment_types = list(
+		/obj/item/attachable/unremoveable_stock/t19_folding,
+	)
+
 	attachable_allowed = list(
 		/obj/item/attachable/verticalgrip,
 		/obj/item/attachable/angledgrip,

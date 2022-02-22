@@ -659,6 +659,8 @@
 			return 1
 
 /obj/item/weapon/gun/attackby(var/obj/item/A as obj, mob/user as mob)
+	if(istype(A, /obj/item/attachable))
+		attach_to_gun(user, A)
 	if(istype(A, /obj/item/firing_pin))
 		var/obj/item/firing_pin/newpin = A
 		if(!has_firing_pin)
@@ -673,8 +675,7 @@
 			to_chat(user, SPAN_NOTICE("You install [newpin] into [src]."))
 		if(pin)
 			to_chat(user, SPAN_WARNING("There's already a pin installed."))
-		if(istype(A, /obj/item/attachable))
-			attach_to_gun(user, A)
+
 
 /obj/item/weapon/gun/AltClick(var/mob/user)
 	if(!pin)
