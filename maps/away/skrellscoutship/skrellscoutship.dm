@@ -88,7 +88,7 @@
 	allowed_ranks = list(/datum/mil_rank/skrell_fleet/zuumqix)
 	outfit_type = /decl/hierarchy/outfit/job/skrellscoutship
 	info = "Your vessel is scouting through unknown space, working to map out any potential dangers, as well as potential allies."
-	skill_points = 46 //Skrell get the same buffs the ascent do. Strange why we gave them less
+	skill_points = 40 //Skrell get the same buffs the ascent do. Strange why we gave them less
 	is_semi_antagonist = TRUE
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_HAULING = SKILL_ADEPT,
