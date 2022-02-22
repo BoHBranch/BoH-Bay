@@ -203,11 +203,13 @@
 		if(do_after(usr, 30, src))
 			folded = FALSE
 			icon_state = "[icon_state]_retracted"
+//			playsound(user, 'sound/items/attachment_add.ogg', 25)
 	else
 		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
 		if(do_after(usr, 30, src))
 			folded = TRUE
 			icon_state = initial(icon_state)
+//			playsound(user, 'sound/items/attachment_add.ogg', 25)
 
 // Activating attachments, stuff.
 
