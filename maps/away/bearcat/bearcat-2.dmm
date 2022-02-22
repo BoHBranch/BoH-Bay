@@ -699,7 +699,7 @@
 /turf/simulated/floor/shuttle/black,
 /area/ship/scrap/bearcat_shuttle)
 "fs" = (
-/obj/machinery/computer/ship/helm,
+/obj/machinery/computer/ship/helm/bearcat_shuttle,
 /turf/simulated/floor/shuttle/black,
 /area/ship/scrap/bearcat_shuttle)
 "fu" = (
@@ -709,7 +709,7 @@
 /turf/simulated/floor/shuttle/black,
 /area/ship/scrap/bearcat_shuttle)
 "fy" = (
-/obj/machinery/computer/ship/engines,
+/obj/machinery/computer/ship/engines/bearcat_shuttle,
 /turf/simulated/floor/shuttle/black,
 /area/ship/scrap/bearcat_shuttle)
 "fB" = (
@@ -1632,9 +1632,8 @@
 /turf/simulated/floor/tiled,
 /area/ship/scrap/crew/saloon)
 "mI" = (
-/obj/effect/paint/brown,
 /turf/simulated/wall/r_wall,
-/area/ship/scrap/crew/cryo)
+/area/ship/scrap/comms)
 "mJ" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
 /obj/machinery/door/blast/regular{
@@ -2118,9 +2117,8 @@
 /turf/simulated/floor/usedup,
 /area/ship/scrap/command/hallway)
 "pK" = (
-/obj/effect/paint/brown,
 /turf/simulated/wall/r_wall,
-/area/ship/scrap/crew/kitchen)
+/area/ship/scrap/command/captain)
 "pL" = (
 /turf/simulated/wall,
 /area/ship/scrap/crew/kitchen)
@@ -2636,11 +2634,6 @@
 /area/ship/scrap/crew/hallway/starboard)
 "tb" = (
 /obj/structure/table/standard,
-/obj/structure/cable,
-/obj/machinery/power/apc/derelict{
-	cell_type = /obj/item/weapon/cell;
-	name = "Medical Bay APC"
-	},
 /obj/item/weapon/tape_roll,
 /obj/item/weapon/retractor,
 /obj/item/weapon/scalpel,
@@ -2958,15 +2951,11 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/scrap/crew/medbay)
-"vn" = (
-/obj/effect/paint/brown,
-/turf/simulated/wall/r_wall,
-/area/ship/scrap/crew/medbay)
 "vo" = (
 /obj/structure/cable{
 	icon_state = "4-10"
 	},
-/turf/space,
+/turf/simulated/floor/usedup,
 /area/space)
 "vr" = (
 /obj/structure/cable{
@@ -3150,7 +3139,7 @@
 /obj/structure/cable{
 	icon_state = "4-10"
 	},
-/turf/space,
+/turf/simulated/floor/usedup,
 /area/space)
 "wz" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
@@ -3175,7 +3164,7 @@
 /obj/structure/cable{
 	icon_state = "5-8"
 	},
-/turf/space,
+/turf/simulated/floor/usedup,
 /area/space)
 "wT" = (
 /obj/effect/floor_decal/corner/white/diagonal,
@@ -6164,13 +6153,6 @@
 /obj/effect/paint/brown,
 /turf/simulated/wall/r_wall,
 /area/ship/scrap/dock)
-"QT" = (
-/obj/machinery/atmospherics/unary/engine{
-	dir = 1;
-	icon_state = "nozzle"
-	},
-/turf/space,
-/area/ship/scrap/bearcat_shuttle)
 "QY" = (
 /turf/simulated/wall,
 /area/ship/scrap/crew/medbay)
@@ -11828,7 +11810,7 @@ hc
 iV
 kp
 kU
-QT
+ko
 bu
 bu
 bu
@@ -12086,7 +12068,7 @@ Wy
 Wy
 bu
 vo
-YH
+ve
 YH
 bu
 bu
@@ -12199,13 +12181,13 @@ bu
 Wy
 Re
 Wy
-pK
+qh
 qh
 qh
 rA
 qh
 qh
-pK
+qh
 Wy
 vr
 Wy
@@ -12228,7 +12210,7 @@ Ky
 Ky
 Ky
 Ky
-Wy
+Yn
 Wy
 bu
 bu
@@ -12318,7 +12300,7 @@ kw
 lq
 wb
 Wy
-mh
+ml
 mJ
 ml
 pL
@@ -12433,9 +12415,9 @@ bu
 bu
 bu
 bu
-QP
+qP
 hr
-QP
+qP
 YH
 bu
 bu
@@ -12557,7 +12539,7 @@ bu
 QP
 Cr
 hs
-QP
+qP
 YH
 YH
 YH
@@ -12798,10 +12780,10 @@ Wy
 Wy
 Re
 Wy
-QP
-QP
+Cr
+Cr
 hJ
-QP
+Cr
 QP
 lz
 Re
@@ -12916,18 +12898,18 @@ bu
 bu
 bu
 Wy
-aG
-aG
+mI
+mI
 dx
-aG
-aG
+mI
+mI
 gi
 lw
 jj
-QP
-lz
+Cr
+lE
 lQ
-lz
+lE
 mD
 nb
 or
@@ -13037,8 +13019,8 @@ bu
 bu
 bu
 aG
-aG
-aG
+mI
+mI
 cT
 dO
 eA
@@ -13280,8 +13262,8 @@ bu
 bu
 ac
 ac
-aG
-aG
+mI
+mI
 ci
 cZ
 dV
@@ -14012,8 +13994,8 @@ bu
 bu
 ac
 ac
-gk
-gk
+pK
+pK
 cJ
 dw
 ET
@@ -14257,8 +14239,8 @@ bu
 bu
 bu
 gk
-gk
-gk
+pK
+pK
 rT
 LI
 Zr
@@ -14380,18 +14362,18 @@ bu
 bu
 bu
 Wy
-gk
-gk
+pK
+pK
 eq
-gk
-gk
+pK
+pK
 IX
 om
 kj
-QP
-Lb
+Cr
+lH
 me
-Lb
+lH
 lH
 nF
 pt
@@ -14506,10 +14488,10 @@ Wy
 Wy
 Re
 Wy
-QP
-QP
+Cr
+Cr
 it
-QP
+Cr
 QP
 Lb
 Re
@@ -14753,7 +14735,7 @@ bu
 QP
 Cr
 iF
-QP
+qP
 YH
 bu
 bu
@@ -14873,9 +14855,9 @@ bu
 bu
 bu
 bu
-QP
+qP
 iJ
-QP
+qP
 bu
 bu
 bu
@@ -14890,9 +14872,9 @@ QY
 tn
 uc
 up
-vn
+hH
 CU
-vn
+hH
 QY
 DF
 KJ
@@ -15002,7 +14984,7 @@ bu
 bu
 bu
 Wy
-mI
+Xk
 gs
 Xk
 Xk
