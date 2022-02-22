@@ -10,10 +10,10 @@
 /decl/cultural_info/location/ouere
 	name = HOME_SYSTEM_OUERE
 	description = "The recently discovered system of precursor gateway devices connecting Moghes to its smaller sister \
-planet of Ouere has seen many clans and small groups stepping through it into this new world. There is \
-no clear consensus on how to treat this new world - either as a logical extension of Moghes, a completely new entity, \
-or simply as a resource base for improving the home planet. Many colonists, artifact hunters, and ostracised groups have \
-flocked to the planet, with Markesheli communities growing quite rapidly in numbers compared to other parts of Moghes. "
+	planet of Ouere has seen many clans and small groups stepping through it into this new world. There is \
+	no clear consensus on how to treat this new world - either as a logical extension of Moghes, a completely new entity, \
+	or simply as a resource base for improving the home planet. Many colonists, artifact hunters, and ostracised groups have \
+	flocked to the planet, with Markesheli communities growing quite rapidly in numbers compared to other parts of Moghes. "
 	ruling_body = "Krukzuz"
 	distance = "20 light-years"
 
