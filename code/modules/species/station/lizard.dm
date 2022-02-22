@@ -34,11 +34,15 @@
 
 	body_temperature = null // cold-blooded, implemented the same way nabbers do it
 
-	description = "A heavily reptillian species, Unathi (or 'Sinta as they call themselves) hail from the \
-	Uuosa-Eso system, which roughly translates to 'burning mother'.<br/><br/>Coming from a harsh, radioactive \
-	desert planet, they mostly hold ideals of honesty, virtue, martial combat and bravery above all \
-	else, frequently even their own lives. They prefer warmer temperatures than most species and \
-	their native tongue is a heavy hissing laungage called Sinta'Unathi."
+	description = "The Reptillian Unathi are a fractured people from the planet moghes, which is coated in loose tributaries of the SCG. \
+	Most Unathi owe less allegiance to the SCG than to the group of families they belong to, their clan. \
+	Their clan name is their last name, and referring to them by their first name instead is often seen as an insult.<br/><br/> The \
+	division along clan lines has stagnated unathi technology to at its highest a pre-industrial level, though their intellect combined\
+	with ancient moghesian technology has given them an occasional burst of tech. Unathi are often viewed as savages because of this, \
+	their traditionalism, violence, and even sexism in certain clans, but most Unathi are proud of their honour and their meager planet. <br/><br/> Unathi \
+	find traditional human temperatures absolutely frigid, and being cold-blooded means coats are no help, but they are capable of \
+	regenerating from certain kinds of severe wounds at the cost of their hunger, so long as they don't starve enough that \
+	their stomach eats itself."
 
 	cold_level_1 = 280 //Default 260 - Lower is better
 	cold_level_2 = 220 //Default 200
@@ -103,24 +107,32 @@
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
-			CULTURE_UNATHI
+			CULTURE_UNATHI_DIAMOND_PEAKS,
+			CULTURE_UNATHI_POLAR,
+			CULTURE_UNATHI_SALT_SWAMP,
+			CULTURE_UNATHI_DESERT,
+			CULTURE_UNATHI_SAVANNAH,
+			CULTURE_UNATHI_SPACE
 		),
 		TAG_HOMEWORLD = list(
-			HOME_SYSTEM_MOGHES
+			HOME_SYSTEM_MOGHES,
+			HOME_SYSTEM_OUERE,
+			HOME_SYSTEM_OFFWORLD
 		),
 		TAG_FACTION = list(
-			FACTION_UNATHI_POLAR,
-			FACTION_UNATHI_DESERT,
-			FACTION_UNATHI_SAVANNAH,
-			FACTION_UNATHI_DIAMOND_PEAK,
-			FACTION_UNATHI_SALT_SWAMP
+			FACTION_UNATHI_CLAN,
+			FACTION_UNATHI_KRUKZUZ,
+			FACTION_UNATHI_SOL,
+			FACTION_UNATHI_INDEPENDENT
 		),
 		TAG_RELIGION =  list(
 			RELIGION_UNATHI_STRATAGEM,
 			RELIGION_UNATHI_PRECURSOR,
 			RELIGION_UNATHI_VINE,
 			RELIGION_UNATHI_LIGHTS,
-			RELIGION_OTHER
+			RELIGION_UNATHI_OTHER,
+			RELIGION_UNATHI_MARKESHELI,
+			RELIGION_UNATHI_ANCESTORS
 		)
 	)
 	pain_emotes_with_pain_level = list(
