@@ -45,3 +45,10 @@
 	desc = "A module capable of draining your suit's power reserves in order to fire a shoulder mounted laser cannon."
 	item_cost = 64
 	path = /obj/item/rig_module/mounted/lcannon
+
+/datum/uplink_item/item/hardsuit_modules/stealth_module
+	name = "\improper Stealth Module"
+	desc = "A module that drains your power reserves while cloaking you from all visual scanners"
+	item_cost = 130
+	path = /obj/item/rig_module/stealth_field
+	antag_roles = list(MODE_TRAITOR)
