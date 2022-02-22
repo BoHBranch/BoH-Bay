@@ -67,7 +67,7 @@
 	economic_power = 0.8
 	description = "Combining assorted elements of various cultures with an adventurous spirit and resolve, salt swamp unathi are noted for their friendliness and openness to outsiders, \
 	their craftmanship, and their knack for rituals \
-    that often get mistaken as \"parties\" by humans. The Fruitful Lights and Hand of the Vines both have numerous \
+	that often get mistaken as \"parties\" by humans. The Fruitful Lights and Hand of the Vines both have numerous \
 	followers with these unathi, but the swamps find Unathi from all walks of life, including Yeosa."
 	language = LANGUAGE_UNATHI_SINTA
 	secondary_langs = list(
