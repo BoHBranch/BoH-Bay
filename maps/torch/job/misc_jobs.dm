@@ -62,12 +62,12 @@ Civilian
 	create_record = 0
 	outfit_type = /decl/hierarchy/outfit/job/torch/merchant
 	allowed_branches = list(
-		/datum/mil_branch/civilian
+		/datum/mil_branch/civilian,
 		/datum/mil_branch/alien
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/civ
+		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/alien
 		/datum/mil_rank/civ/civ
 	)
