@@ -174,7 +174,6 @@
 	title = "Serpentid Adjunct"
 	supervisors = "your Queen"
 	total_positions = 2
-	skill_points = 46 //Monarchs live longer and take longer to grow compared to Gynes and Alates.
 	info = "You are a Monarch Serpentid Worker serving as an attendant to your Queen on this vessel. Serve her however she requires."
 	set_species_on_join = SPECIES_MONARCH_WORKER
 	outfit_type = /decl/hierarchy/outfit/job/monarch
@@ -189,7 +188,6 @@
 	title = "Serpentid Queen"
 	supervisors = "the Gyne"
 	total_positions = 1
-	skill_points = 46 //Ditto
 	info = "You are a Monarch Serpentid Queen living on an independant Ascent vessel. Assist the Gyne in her duties and tend to your Workers."
 	set_species_on_join = SPECIES_MONARCH_QUEEN
 	outfit_type = /decl/hierarchy/outfit/job/monarch
