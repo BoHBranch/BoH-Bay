@@ -6685,6 +6685,7 @@
 /obj/item/weapon/disk/tech_disk,
 /obj/item/weapon/disk/tech_disk,
 /obj/item/weapon/disk/tech_disk,
+/obj/item/weapon/rig/vox/quill,
 /turf/simulated/floor/plating/vox,
 /area/voxship/bridge)
 "oK" = (
