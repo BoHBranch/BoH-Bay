@@ -2687,21 +2687,6 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
-"gn" = (
-/obj/structure/catwalk,
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
-	},
-/turf/simulated/floor/airless,
-/area/space)
 "go" = (
 /obj/structure/table/standard,
 /obj/item/weapon/storage/box/bodybags,
@@ -4697,8 +4682,7 @@
 /area/space)
 "kw" = (
 /obj/structure/catwalk,
-/obj/item/weapon/slugegg,
-/turf/simulated/floor/airless,
+/turf/simulated/floor/plating/vox,
 /area/space)
 "kx" = (
 /obj/machinery/light,
@@ -5785,12 +5769,6 @@
 /obj/effect/gibspawner/human,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_fore)
-"mN" = (
-/obj/machinery/body_scan_display,
-/turf/simulated/wall/r_wall/hull{
-	initial_gas = list("nitrogen" = 101.23)
-	},
-/area/voxship/med)
 "mO" = (
 /obj/effect/decal/cleanable/blood/oil,
 /obj/structure/closet/firecloset,
@@ -26688,7 +26666,7 @@ pE
 nx
 oM
 pe
-mN
+cn
 an
 an
 an
@@ -29716,8 +29694,8 @@ hB
 ld
 lf
 ia
-hT
-iJ
+zP
+kw
 iJ
 mD
 ae
@@ -32140,7 +32118,7 @@ gZ
 kV
 kV
 ia
-gn
+zP
 kw
 iJ
 mD
