@@ -176,7 +176,7 @@
 
 #define FACTION_UNATHI_CLAN          "Clan Focused"
 #define FACTION_UNATHI_KRUKZUZ       "Krukzuz"
-#define FACTION_UNATHI_SOL           "Sol Central Government"
+#define FACTION_UNATHI_SOL           "Solarian Government"
 #define FACTION_UNATHI_INDEPENDENT   "Independent Faction"
 
 #define RELIGION_UNATHI_ANCESTORS	 "Ancestor Worship"
@@ -184,7 +184,7 @@
 #define RELIGION_UNATHI_PRECURSOR    "Precursor"
 #define RELIGION_UNATHI_VINE         "Hand of the Vine"
 #define RELIGION_UNATHI_LIGHTS       "The Fruitful Lights"
-#define RELIGION_UNATHI_OTHER        "Other Religion"
+#define RELIGION_UNATHI_OTHER        "Other"
 #define RELIGION_UNATHI_MARKESHELI   "Markesheli Cult"
 
 // Nabber grades.
