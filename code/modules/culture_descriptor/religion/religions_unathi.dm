@@ -37,6 +37,7 @@
 	description = "In order to ensure the normal functioning of natural and societal life, Unathi seek patronage with the powerful spirits of the \
 	past, especially with those of their own kin, whom the call the Ancestors - the ranks of which every unathi is bound to join at some point. \
 	The worship of the Ancestors is almost universal, and serves as the basis for other spiritual movements of Moghes."
+
 /decl/cultural_info/religion/unathi_others
 	name = RELIGION_UNATHI_OTHER
 	description = "It's very unusual for an Unathi not to worship the ancestors. Perhaps you're some crazed rebel who rejects all of society, \
