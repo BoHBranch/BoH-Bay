@@ -533,6 +533,15 @@
 	materials = list(DEFAULT_WALL_MATERIAL = 30000, "glass" = 5000, "silver" = 1000)
 	id = "null _suit"
 	time = 120
+	
+/datum/design/item/mechfab/rig/light
+	catagory = "Hardsuits"
+	name = "light suit control module"
+	build_path = /obj/item/weapon/rig/light
+	materials = list(MATERIAL_STEEL = 30000, MATERIAL_SILVER = 3000, MATERIAL_ALUMINIUM = 2000)
+	req_tech = list(TECH_MATERIAL = 5, TECH_COMBAT = 5, TECH_ENGINEERING = 5)
+	id = "light_suit"
+	time = 170
 
 //mech projectile weps
 
