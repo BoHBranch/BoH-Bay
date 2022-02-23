@@ -5831,6 +5831,8 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "mZ" = (
+/obj/structure/dogbed,
+/mob/living/simple_animal/chick,
 /turf/simulated/floor/plating/vox,
 /area/voxship/bridge)
 "na" = (
