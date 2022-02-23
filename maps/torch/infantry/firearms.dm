@@ -134,7 +134,7 @@
 	acc_mod_base = 3
 	penetration_mult = 1.1
 	firemodes = list(
-		list(mode_name="semi auto", burst=1, fire_delay=null, move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=list(1.0, 1.5)),
+		list(mode_name="semi auto", burst=1, fire_delay=null, move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=list(0.5, 1)),
 		list(mode_name="automatic",  automatic = TRUE, fire_delay = 2,5, burst = 1, burst_delay = 0, move_delay=2, dispersion= 0),
 		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
 		)
