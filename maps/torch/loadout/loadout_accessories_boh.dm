@@ -91,7 +91,23 @@
 	path = /obj/item/clothing/accessory/armor/tag/nt/dagon
 	allowed_branches = NT_BRANCHES
 	cost = 0 // Ditto.
-
+	
+// Armor plates
+/datum/gear/tactical/armor_plate_light
+	display_name = "Light armor plate"
+	description = "A light armor plate to be slipped into a plate carrier"
+	path = /obj/item/clothing/accessory/armorplate
+	cost = 3
+	allowed_branches = TACTICOOL_BRANCHES
+	
+/datum/gear/tactical/armor_plate_medium
+	display_name = "Medium armor plate"
+	description = "A medium armor plate to be slipped into a plate carrier"
+	path = /obj/item/clothing/accessory/armorplate/medium
+	cost = 5
+	allowed_roles = ARMORED_ROLES
+	allowed_branches = TACTICOOL_BRANCHES
+	
 /// Limb guards
 // Arms
 /datum/gear/tactical/arm_guards
