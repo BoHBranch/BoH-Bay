@@ -15,7 +15,6 @@
 	var/slot = null //"muzzle", "rail", "under", "stock", "special"
 	var/flags_attach_features = ATTACH_REMOVABLE
 	var/light_mod = null
-	action_button_name = "Activate Attachment" //It is also the text which gets displayed on the action button. If not set it defaults to 'Use [name]'. If it's not set, there'll be no button.
 
 	var/accuracy_modifier = 0 //This number is added to your base accuracy. The higher this number is, the more accurate at range you will be.
 	var/acc_power_mod = 0 //This will add to our acc_power.
@@ -187,29 +186,6 @@
 	attach_icon = "holosight_a"// And the icon, ofcourse.
 	flags_attach_features = null // you can't remove this!
 	slot = "stock"
-
-/obj/item/attachable/unremoveable_stock/folding
-	name = "FOLDING STOCK"
-	desc = "Folding stock example, how did you even see this?."
-	flags_attach_features = ATTACH_ACTIVATION
-	icon_state = "t19stock" // Gun starts folded.
-	attach_icon = "t19stock_a"
-	slot = "stock"
-	var/folded = 0 // Is our gun folded, or not?
-
-/obj/item/attachable/unremoveable_stock/t19_folding/activate_attachment(mob/user)
-	if(folded)
-		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
-		if(do_after(usr, 30, src))
-			folded = FALSE
-			icon_state = "[icon_state]_retracted"
-			playsound(user, 'sound/items/attachment_add.ogg', 25)
-	else
-		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
-		if(do_after(usr, 30, src))
-			folded = TRUE
-			icon_state = initial(icon_state)
-			playsound(user, 'sound/items/attachment_add.ogg', 25)
 
 // Activating attachments, stuff.
 
