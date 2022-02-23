@@ -527,7 +527,7 @@
 	id = "augment_circuitry"
 
 /datum/design/item/mechfab/rig/zero
-	category = "Hardsuits"
+	catagory = "Hardsuits"
 	name = "Null suit control module"
 	build_path = /obj/item/weapon/rig/zero
 	materials = list(DEFAULT_WALL_MATERIAL = 30000, "glass" = 5000, "silver" = 1000)
