@@ -1,12 +1,12 @@
 
-//The weapons that fire this charge aren't functional and they don't have any other use, so there's no reason for them to be accessible until that changes. - ITR//
 
 
-///decl/hierarchy/supply_pack/munition
-//	name = "Ship Munitions"
-//	containertype = /obj/structure/largecrate
-//	containername = "mass driver munition crate"
+/decl/hierarchy/supply_pack/munition
+	name = "Ship Munitions"
+	containertype = /obj/structure/largecrate
+	containername = "mass driver munition crate"
 
+//
 ///decl/hierarchy/supply_pack/munition/md_slug
 //	name = "Ammo - Mass Driver Slug"
 //	contains = list(/obj/structure/ship_munition/md_slug)
@@ -16,8 +16,6 @@
 //	name = "Ammo - Armor Piercing Mass Driver Slug"
 //	contains = list(/obj/structure/ship_munition/ap_slug)
 //	cost = 60
-
-//Back to business!
 
 /decl/hierarchy/supply_pack/munition/fire
 	name = "OFD Charge - FR1-ENFER (Incendiary)"
