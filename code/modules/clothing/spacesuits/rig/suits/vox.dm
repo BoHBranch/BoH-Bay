@@ -50,7 +50,6 @@
 	name = "Quill's rig control module"
 	desc = "The quill's rig suit. It looks exactly like the standard rig suit, but fancier. Parts of it writhe and squirm as if alive. The visor looks more like a thick membrane."
 	cell_type =  /obj/item/weapon/cell/hyper
-	req_access = list(access_voxship_captain)
 
 	initial_modules = list(
 		/obj/item/rig_module/vision,
