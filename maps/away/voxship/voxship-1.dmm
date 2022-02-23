@@ -598,11 +598,12 @@
 	},
 /area/voxship/hydro)
 "bx" = (
-/obj/structure/sign/warning,
-/turf/simulated/wall/r_wall/hull{
-	initial_gas = list("nitrogen" = 101.23)
+/obj/structure/ship_munition/disperser_charge/explosive,
+/obj/machinery/light/small/red{
+	dir = 1
 	},
-/area/voxship/engineering)
+/turf/simulated/floor/plating/vox,
+/area/voxship/ship_fore)
 "by" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing/mapped,
@@ -2213,6 +2214,14 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "fs" = (
+/obj/machinery/atmospherics/unary/vent_pump/siphon/on/atmos{
+	external_pressure_bound = 100;
+	internal_pressure_bound = 0;
+	internal_pressure_bound_default = 0;
+	pressure_checks = 1;
+	pressure_checks_default = 1;
+	dir = 1
+	},
 /turf/simulated/floor/reinforced/carbon_dioxide{
 	initial_gas = list("carbon_dioxide" = 120000)
 	},
@@ -2898,17 +2907,16 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_mid)
 "gL" = (
-/obj/machinery/atmospherics/unary/vent_pump/siphon/on/atmos{
-	external_pressure_bound = 100;
-	internal_pressure_bound = 0;
-	internal_pressure_bound_default = 0;
-	pressure_checks = 1;
-	pressure_checks_default = 1;
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	icon_state = "intact";
+	dir = 4
 	},
-/turf/simulated/floor/reinforced/carbon_dioxide{
-	initial_gas = list("carbon_dioxide" = 120000)
+/obj/structure/window/reinforced{
+	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "gM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -5772,11 +5780,13 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_fore)
 "mN" = (
-/obj/machinery/body_scan_display,
-/turf/simulated/wall/r_wall/hull{
-	initial_gas = list("nitrogen" = 101.23)
+/obj/machinery/porta_turret/exterior{
+	req_access = list("ACCESS_VOXSHIP");
+	check_access = 1;
+	reqpower = 0
 	},
-/area/voxship/med)
+/turf/simulated/floor/plating/vox,
+/area/voxship/bridge)
 "mO" = (
 /obj/effect/decal/cleanable/blood/oil,
 /obj/structure/closet/firecloset,
@@ -8063,6 +8073,7 @@
 /turf/space,
 /area/space)
 "rB" = (
+/obj/effect/wallframe_spawn/reinforced_phoron,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
@@ -8183,14 +8194,12 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
 "rP" = (
-/obj/machinery/shield_diffuser,
-/obj/machinery/door/blast/regular{
-	dir = 4;
-	id_tag = "vox_ofd";
-	name = "Artillery Blast Door"
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	icon_state = "intact";
+	dir = 9
 	},
 /turf/simulated/floor/plating/vox,
-/area/voxship/med)
+/area/voxship/engineering)
 "rQ" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -8687,14 +8696,6 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
-"sX" = (
-/obj/machinery/porta_turret/exterior{
-	req_access = list("ACCESS_VOXSHIP");
-	check_access = 1;
-	reqpower = 0
-	},
-/turf/simulated/floor/plating/vox,
-/area/voxship/bridge)
 "tN" = (
 /obj/machinery/shield_diffuser,
 /obj/machinery/light/small/red,
@@ -8704,6 +8705,17 @@
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
 /area/voxship/med)
+"ul" = (
+/obj/structure/sign/warning,
+/turf/simulated/wall/r_wall/hull{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/engineering)
+"uR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/vending/props,
+/turf/simulated/floor/plating/vox,
+/area/voxship/armory)
 "vQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	icon_state = "intact-scrubbers";
@@ -8711,14 +8723,6 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
-"wn" = (
-/obj/effect/wallframe_spawn/reinforced_phoron,
-/obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	maximum_pressure = 1e+008
-	},
-/turf/simulated/floor/plating/vox,
-/area/voxship/engineering)
 "wN" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -8731,6 +8735,17 @@
 /obj/structure/ship_munition/disperser_charge/s2s,
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
+"xx" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	icon_state = "intact";
+	dir = 6
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
+/turf/simulated/floor/plating/vox,
+/area/voxship/engineering)
 "yv" = (
 /obj/structure/cable{
 	icon_state = "0-2";
@@ -8777,6 +8792,18 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
+"DS" = (
+/turf/simulated/floor/reinforced/carbon_dioxide{
+	initial_gas = list("carbon_dioxide" = 120000)
+	},
+/area/voxship/engineering)
+"Eq" = (
+/obj/structure/ship_munition/disperser_charge/emp,
+/obj/machinery/light/small/red{
+	dir = 1
+	},
+/turf/simulated/floor/plating/vox,
+/area/voxship/ship_fore)
 "Fm" = (
 /obj/machinery/vending/medical/torch{
 	req_access = list();
@@ -8786,15 +8813,17 @@
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/med)
-"GD" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	icon_state = "intact";
-	dir = 4
+"FO" = (
+/obj/machinery/body_scan_display,
+/turf/simulated/wall/r_wall/hull{
+	initial_gas = list("nitrogen" = 101.23)
 	},
-/obj/structure/window/reinforced{
-	dir = 4
+/area/voxship/med)
+"GN" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
+	icon_state = "map";
+	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
@@ -8825,23 +8854,22 @@
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/med)
-"Ll" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	icon_state = "intact";
-	dir = 9
-	},
+"Le" = (
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
+"Ly" = (
+/obj/machinery/shield_diffuser,
+/obj/machinery/door/blast/regular{
+	dir = 4;
+	id_tag = "vox_ofd";
+	name = "Artillery Blast Door"
+	},
+/turf/simulated/floor/plating/vox,
+/area/voxship/med)
 "LO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/ship_munition/disperser_charge/emp,
-/turf/simulated/floor/plating/vox,
-/area/voxship/ship_fore)
-"Ne" = (
-/obj/structure/ship_munition/disperser_charge/emp,
-/obj/machinery/light/small/red{
-	dir = 1
-	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
 "NZ" = (
@@ -8856,32 +8884,6 @@
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/med)
-"OC" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	icon_state = "intact";
-	dir = 6
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/machinery/portable_atmospherics/canister/carbon_dioxide,
-/turf/simulated/floor/plating/vox,
-/area/voxship/engineering)
-"OR" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
-	icon_state = "map";
-	dir = 8
-	},
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/floor/plating/vox,
-/area/voxship/engineering)
-"Ph" = (
-/obj/machinery/atmospherics/binary/pump{
-	name = "carbon dioxide tank";
-	dir = 1
-	},
-/turf/simulated/floor/plating/vox,
-/area/voxship/engineering)
 "Pw" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 8;
@@ -8909,17 +8911,11 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
-"Sh" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/vending/props,
-/turf/simulated/floor/plating/vox,
-/area/voxship/armory)
-"Up" = (
-/turf/space,
-/area/voxship/bridge)
-"Vf" = (
-/obj/effect/wallframe_spawn/reinforced_phoron,
-/obj/machinery/door/firedoor,
+"RR" = (
+/obj/machinery/atmospherics/binary/pump{
+	name = "carbon dioxide tank";
+	dir = 1
+	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "VC" = (
@@ -8942,6 +8938,14 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
+"YQ" = (
+/obj/effect/wallframe_spawn/reinforced_phoron,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	maximum_pressure = 1e+008
+	},
+/turf/simulated/floor/plating/vox,
+/area/voxship/engineering)
 "YV" = (
 /obj/structure/window/phoronreinforced,
 /obj/structure/cable{
@@ -8951,13 +8955,6 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
-"ZA" = (
-/obj/structure/ship_munition/disperser_charge/explosive,
-/obj/machinery/light/small/red{
-	dir = 1
-	},
-/turf/simulated/floor/plating/vox,
-/area/voxship/ship_fore)
 "ZF" = (
 /obj/machinery/door/window/brigdoor{
 	name = "Bluespace Artillery Access";
@@ -23613,7 +23610,7 @@ fC
 an
 an
 an
-sX
+mN
 ae
 ae
 ae
@@ -24020,7 +24017,7 @@ an
 an
 an
 an
-rP
+Ly
 an
 an
 an
@@ -25609,7 +25606,7 @@ ae
 ae
 an
 ak
-ZA
+bx
 aN
 dT
 as
@@ -26640,7 +26637,7 @@ pE
 nx
 oV
 pe
-mN
+FO
 an
 an
 an
@@ -27023,7 +27020,7 @@ ae
 ae
 an
 ak
-Ne
+Eq
 dT
 dT
 as
@@ -27234,7 +27231,7 @@ bs
 di
 dQ
 eS
-Sh
+uR
 fR
 dZ
 hi
@@ -37949,12 +37946,12 @@ nr
 qq
 gf
 oY
-rB
+Le
 li
 sJ
-Ph
-wn
-gL
+RR
+YQ
+fs
 rX
 aZ
 oE
@@ -37962,7 +37959,7 @@ ok
 pV
 ni
 pF
-Up
+bA
 ae
 ae
 ae
@@ -38153,10 +38150,10 @@ gy
 oK
 ou
 iY
-Ll
+rP
 dl
-Vf
-fs
+rB
+DS
 rX
 an
 ae
@@ -38353,7 +38350,7 @@ et
 et
 aZ
 aZ
-bx
+ul
 lp
 ng
 ns
@@ -38555,10 +38552,10 @@ ae
 ae
 bA
 aZ
-OC
+xx
 ch
 pk
-OR
+GN
 mt
 mK
 rX
@@ -38760,7 +38757,7 @@ aZ
 et
 me
 mI
-GD
+gL
 mY
 et
 qw
