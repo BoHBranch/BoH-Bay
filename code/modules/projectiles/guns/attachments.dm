@@ -134,7 +134,7 @@
 			user.drop_from_inventory(attachment)
 			attachment.Attach(src, user)
 			update_attachable(attachment.slot)
-//			playsound(user, 'sound/items/attachment_add.ogg', 25)
+			playsound(user, 'sound/items/attachment_add.ogg', 25)
 
 /obj/item/weapon/gun/proc/recalculate_attachment_bonuses()
 
@@ -188,9 +188,9 @@
 	flags_attach_features = null // you can't remove this!
 	slot = "stock"
 
-/obj/item/attachable/unremoveable_stock/t19_folding
-	name = "T&C-19 Stock (Folded)"
-	desc = "Folding stock for a Teckler and Carry-19 Machinepistole, how did you even see this?."
+/obj/item/attachable/unremoveable_stock/folding
+	name = "FOLDING STOCK"
+	desc = "Folding stock example, how did you even see this?."
 	flags_attach_features = ATTACH_ACTIVATION
 	icon_state = "t19stock" // Gun starts folded.
 	attach_icon = "t19stock_a"
@@ -203,13 +203,13 @@
 		if(do_after(usr, 30, src))
 			folded = FALSE
 			icon_state = "[icon_state]_retracted"
-//			playsound(user, 'sound/items/attachment_add.ogg', 25)
+			playsound(user, 'sound/items/attachment_add.ogg', 25)
 	else
 		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
 		if(do_after(usr, 30, src))
 			folded = TRUE
 			icon_state = initial(icon_state)
-//			playsound(user, 'sound/items/attachment_add.ogg', 25)
+			playsound(user, 'sound/items/attachment_add.ogg', 25)
 
 // Activating attachments, stuff.
 

@@ -705,6 +705,13 @@
 
 // Field Stripping //
 
+/obj/item/weapon/gun/verb/field_Strip()
+	set src in usr
+	set category = "Object"
+	set name = "Field-Strip"
+	if(usr == loc)
+		field_strip(usr)
+
 
 /obj/item/weapon/gun/proc/field_strip(mob/living/user)
 	if(!istype(user))
@@ -754,5 +761,5 @@
 	SPAN_NOTICE("You strip [A] from [src]."), null, 4)
 	A.Detach(src, user)
 
-//	playsound(src, 'sound/items/attachment_remove.ogg', 25)
+	playsound(src, 'sound/items/attachment_remove.ogg', 25)
 	update_icon()
