@@ -5,6 +5,7 @@
 	icon_state = "ninja_rig"
 	suit_type = "light suit"
 	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/cell,/obj/item/weapon/storage/)
+	banned_modules = list(/obj/item/rig_module/grenade_launcher,/obj/item/rig_module/mounted,/obj/item/rig_module/fabricator)
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_PISTOL,
