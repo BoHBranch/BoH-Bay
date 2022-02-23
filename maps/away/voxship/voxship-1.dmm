@@ -616,12 +616,10 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "bA" = (
-/obj/machinery/porta_turret/exterior{
-	req_access = list("ACCESS_VOXSHIP");
-	check_access = 1
-	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/vending/fashionvend,
 /turf/simulated/floor/plating/vox,
-/area/voxship/bridge)
+/area/voxship/armory)
 "bB" = (
 /obj/structure/lattice,
 /turf/simulated/mineral/random/high_chance,
@@ -1582,6 +1580,7 @@
 /obj/item/clothing/gloves/vox,
 /obj/item/clothing/gloves/vox,
 /obj/item/clothing/gloves/vox,
+/obj/item/weapon/spacecash/bundle/c1000,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "dR" = (
@@ -2080,6 +2079,7 @@
 /obj/structure/table/rack/shelf/steel,
 /obj/random/illegal,
 /obj/random/illegal,
+/obj/item/weapon/spacecash/bundle/c1000,
 /turf/simulated/floor/plating/vox,
 /area/voxship/hoard)
 "fe" = (
@@ -5136,6 +5136,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/turretid/lethal{
+	dir = 8;
+	pixel_x = 32;
+	req_access = list("ACCESS_VOXSHIP")
+	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/bridge)
 "lx" = (
@@ -8065,6 +8070,7 @@
 "rB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/vending/props,
+/obj/machinery/vending/fitness,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "rC" = (
@@ -8756,11 +8762,7 @@
 	},
 /area/voxship/med)
 "zP" = (
-/obj/machinery/porta_turret/exterior{
-	req_access = list("ACCESS_VOXSHIP");
-	check_access = 1;
-	reqpower = 0
-	},
+/obj/machinery/porta_turret/ssv/vox,
 /turf/simulated/floor/plating/vox,
 /area/voxship/bridge)
 "Ah" = (
@@ -8800,13 +8802,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
-"DR" = (
-/obj/machinery/porta_turret/exterior{
-	req_access = list("ACCESS_VOXSHIP");
-	check_access = 1
-	},
-/turf/simulated/floor/plating/vox,
-/area/voxship/engineering)
 "Fm" = (
 /obj/machinery/vending/medical/torch{
 	req_access = list();
@@ -23247,7 +23242,7 @@ ae
 ae
 ae
 ae
-bA
+zP
 ae
 gY
 ae
@@ -23256,7 +23251,7 @@ rA
 ae
 ae
 rE
-bA
+zP
 ae
 ae
 ae
@@ -23875,7 +23870,7 @@ BF
 an
 an
 an
-an
+zP
 ae
 ae
 ae
@@ -24652,7 +24647,7 @@ ae
 ae
 ae
 ae
-bA
+zP
 an
 ba
 ba
@@ -26903,7 +26898,7 @@ cn
 an
 an
 an
-bA
+zP
 ae
 ae
 ae
@@ -28499,7 +28494,7 @@ bs
 di
 fx
 dZ
-fl
+bA
 fr
 gC
 hP
@@ -28692,7 +28687,7 @@ ae
 ae
 ae
 ae
-bA
+zP
 an
 an
 ba
@@ -32731,7 +32726,7 @@ ae
 ss
 gY
 ae
-bA
+zP
 an
 an
 aw
@@ -34176,7 +34171,7 @@ ln
 an
 an
 bB
-bA
+zP
 ae
 ae
 ae
@@ -35389,7 +35384,7 @@ ln
 ln
 ln
 ln
-ae
+zP
 ae
 ae
 ae
@@ -35560,7 +35555,7 @@ ae
 ae
 ae
 ae
-bA
+zP
 an
 an
 an
@@ -38015,7 +38010,7 @@ ok
 pV
 ni
 pF
-bA
+zP
 ae
 ae
 ae
@@ -38391,7 +38386,7 @@ ae
 ae
 ae
 ae
-DR
+zP
 sq
 in
 so
@@ -38606,7 +38601,7 @@ ae
 ae
 ae
 ae
-bA
+zP
 aZ
 UE
 ch
