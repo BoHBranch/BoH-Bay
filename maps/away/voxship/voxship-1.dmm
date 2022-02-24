@@ -530,15 +530,15 @@
 	},
 /area/voxship/hydro)
 "bo" = (
-/obj/effect/floor_decal/carpet/purple,
-/obj/effect/floor_decal/carpet/purple{
-	dir = 4
+/obj/machinery/light{
+	dir = 1
 	},
-/obj/effect/floor_decal/carpet/purple{
-	dir = 6
+/mob/living/bot/cleanbot{
+	botcard_access = list("ACCESS_VOXSHIP");
+	req_access = list(list("ACCESS_VOXSHIP"))
 	},
-/turf/simulated/floor/carpet/purple,
-/area/voxship/hoard)
+/turf/simulated/floor/plating/vox,
+/area/voxship/ship_fore)
 "bp" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan,
 /turf/simulated/floor/plating/vox,
@@ -1392,7 +1392,9 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/hydro)
 "dt" = (
-/obj/structure/flora/pottedplant/unusual,
+/obj/structure/bed/chair/comfy/purple{
+	dir = 8
+	},
 /turf/simulated/floor/carpet/magenta,
 /area/voxship/hoard)
 "du" = (
@@ -1646,12 +1648,13 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/bioreactor)
 "eb" = (
-/mob/living/bot/cleanbot{
-	botcard_access = list("ACCESS_VOXSHIP");
-	req_access = list(list("ACCESS_VOXSHIP"))
+/obj/structure/table/woodentable_reinforced/mahogany/walnut,
+/obj/effect/floor_decal/carpet/red,
+/obj/effect/floor_decal/carpet/red{
+	dir = 10
 	},
-/turf/simulated/floor/plating/vox,
-/area/voxship/ship_aft)
+/turf/simulated/floor/carpet/purple,
+/area/voxship/hoard)
 "ec" = (
 /obj/machinery/door/airlock,
 /obj/machinery/door/firedoor,
@@ -1953,6 +1956,9 @@
 /obj/item/weapon/tank/nitrogen,
 /obj/item/weapon/tank/nitrogen,
 /obj/item/weapon/tank/nitrogen,
+/obj/item/clothing/suit/holidaypriest,
+/obj/item/clothing/suit/imperium_monk,
+/obj/item/clothing/suit/poncho/colored/purple,
 /turf/simulated/floor/plating/vox,
 /area/voxship/armory)
 "eR" = (
@@ -2043,13 +2049,10 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
 "eY" = (
-/obj/structure/bed/chair/wood/wings/mahogany,
-/turf/simulated/floor/carpet/purple,
+/turf/simulated/floor/carpet/magenta,
 /area/voxship/hoard)
 "eZ" = (
-/obj/effect/floor_decal/carpet/red{
-	dir = 9
-	},
+/obj/structure/synthesized_instrument/synthesizer/piano,
 /turf/simulated/floor/carpet/purple,
 /area/voxship/hoard)
 "fa" = (
@@ -2077,15 +2080,9 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "fd" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/mob/living/bot/cleanbot{
-	botcard_access = list("ACCESS_VOXSHIP");
-	req_access = list(list("ACCESS_VOXSHIP"))
-	},
-/turf/simulated/floor/plating/vox,
-/area/voxship/ship_fore)
+/obj/structure/flora/pottedplant/unusual,
+/turf/simulated/floor/carpet/magenta,
+/area/voxship/hoard)
 "fe" = (
 /obj/structure/holostool,
 /turf/simulated/floor/wood/mahogany{
@@ -2100,8 +2097,17 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "fg" = (
-/turf/simulated/floor/carpet/purple,
-/area/voxship/hoard)
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/mob/living/bot/cleanbot{
+	botcard_access = list("ACCESS_VOXSHIP");
+	req_access = list(list("ACCESS_VOXSHIP"))
+	},
+/turf/simulated/floor/plating/vox,
+/area/voxship/ship_mid)
 "fh" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -2280,7 +2286,6 @@
 	},
 /area/voxship/hydro)
 "fz" = (
-/obj/structure/synthesized_instrument/synthesizer/piano,
 /turf/simulated/floor/carpet/purple,
 /area/voxship/hoard)
 "fA" = (
@@ -5755,11 +5760,7 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_aft)
 "mM" = (
-/obj/structure/table/woodentable_reinforced/mahogany/walnut,
-/obj/effect/floor_decal/carpet/red,
-/obj/effect/floor_decal/carpet/red{
-	dir = 10
-	},
+/obj/structure/bed/chair/wood/wings/mahogany,
 /turf/simulated/floor/carpet/purple,
 /area/voxship/hoard)
 "mO" = (
@@ -8700,6 +8701,13 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
+"wx" = (
+/mob/living/bot/cleanbot{
+	botcard_access = list("ACCESS_VOXSHIP");
+	req_access = list(list("ACCESS_VOXSHIP"))
+	},
+/turf/simulated/floor/plating/vox,
+/area/voxship/ship_fore)
 "wN" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -8720,9 +8728,6 @@
 /obj/machinery/power/shield_generator,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/bioreactor)
-"yX" = (
-/turf/simulated/floor/carpet/magenta,
-/area/voxship/hoard)
 "zs" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -8752,6 +8757,16 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
+"AO" = (
+/obj/effect/floor_decal/carpet/purple{
+	dir = 8
+	},
+/obj/effect/floor_decal/carpet/purple,
+/obj/effect/floor_decal/carpet/purple{
+	dir = 10
+	},
+/turf/simulated/floor/carpet/purple,
+/area/voxship/hoard)
 "AW" = (
 /obj/machinery/shield_diffuser,
 /obj/machinery/door/blast/regular{
@@ -8761,6 +8776,16 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
+"Bl" = (
+/obj/effect/floor_decal/carpet/purple,
+/obj/effect/floor_decal/carpet/purple{
+	dir = 4
+	},
+/obj/effect/floor_decal/carpet/purple{
+	dir = 6
+	},
+/turf/simulated/floor/carpet/purple,
+/area/voxship/hoard)
 "BF" = (
 /obj/machinery/shield_diffuser,
 /turf/space,
@@ -8781,13 +8806,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
-"DV" = (
+"CP" = (
 /mob/living/bot/cleanbot{
 	botcard_access = list("ACCESS_VOXSHIP");
 	req_access = list(list("ACCESS_VOXSHIP"))
 	},
 /turf/simulated/floor/plating/vox,
-/area/voxship/ship_fore)
+/area/voxship/ship_aft)
 "Fm" = (
 /obj/machinery/vending/medical/torch{
 	req_access = list();
@@ -8820,6 +8845,12 @@
 /obj/machinery/shield_diffuser,
 /turf/simulated/floor/airless,
 /area/voxship/med)
+"Ji" = (
+/obj/effect/floor_decal/carpet/red{
+	dir = 9
+	},
+/turf/simulated/floor/carpet/purple,
+/area/voxship/hoard)
 "Jk" = (
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /obj/machinery/door/firedoor,
@@ -8851,12 +8882,6 @@
 /obj/structure/ship_munition/disperser_charge/emp,
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
-"LW" = (
-/obj/structure/bed/chair/comfy/purple{
-	dir = 8
-	},
-/turf/simulated/floor/carpet/magenta,
-/area/voxship/hoard)
 "Mm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black,
 /obj/machinery/body_scanconsole,
@@ -8912,18 +8937,6 @@
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/ship_aft)
-"Ro" = (
-/obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/mob/living/bot/cleanbot{
-	botcard_access = list("ACCESS_VOXSHIP");
-	req_access = list(list("ACCESS_VOXSHIP"))
-	},
-/turf/simulated/floor/plating/vox,
-/area/voxship/ship_mid)
 "RC" = (
 /obj/machinery/disperser/back{
 	dir = 8;
@@ -8970,16 +8983,6 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
-"UD" = (
-/obj/effect/floor_decal/carpet/purple{
-	dir = 8
-	},
-/obj/effect/floor_decal/carpet/purple,
-/obj/effect/floor_decal/carpet/purple{
-	dir = 10
-	},
-/turf/simulated/floor/carpet/purple,
-/area/voxship/hoard)
 "UE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	icon_state = "intact";
@@ -25482,11 +25485,11 @@ ba
 cS
 bs
 cC
-dt
+fd
+eZ
 fz
-fg
 fE
-UD
+AO
 hh
 dT
 hN
@@ -25685,10 +25688,10 @@ aW
 bs
 cC
 du
-LW
-fg
+dt
+fz
 dA
-bo
+Bl
 hi
 dT
 hH
@@ -25886,9 +25889,9 @@ as
 cS
 bs
 cZ
-eZ
-mM
-yX
+Ji
+eb
+eY
 dy
 dB
 fV
@@ -26090,7 +26093,7 @@ bs
 cC
 fa
 ej
-yX
+eY
 dy
 dy
 ba
@@ -26492,11 +26495,11 @@ hI
 cm
 sK
 cC
-dt
+fd
 sF
-fg
+fz
 eC
-eY
+mM
 lV
 dT
 hN
@@ -26700,7 +26703,7 @@ di
 di
 di
 ba
-fd
+bo
 hH
 jM
 ba
@@ -27508,7 +27511,7 @@ dZ
 fT
 gw
 ba
-DV
+wx
 hH
 dT
 ba
@@ -30739,7 +30742,7 @@ fe
 ce
 bt
 gR
-Ro
+fg
 hB
 iE
 ki
@@ -35590,7 +35593,7 @@ rV
 rS
 jB
 eV
-eb
+CP
 ln
 nT
 lY
