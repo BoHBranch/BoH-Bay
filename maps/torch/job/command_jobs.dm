@@ -383,7 +383,8 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/solrep
 	alt_titles = list(
 		"Sol Gov Diplomat",
-		"Sol Gov Negotiator" )
+		"Sol Gov Negotiator", 
+		"Sol Gov Political Officer")
 	allowed_branches = list(
 		/datum/mil_branch/solgov
 	)
@@ -403,10 +404,10 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-	access = list(access_representative, access_security, access_medical,
-					access_emergency_storage, access_bridge,
-					access_janitor, access_cargo, access_hydroponics,
-					access_hangar, access_solgov_crew)
+	access = list(access_representative, access_security, access_medical, 
+					access_maint_tunnels, access_bridge, access_janitor, 
+					access_cargo, access_hangar, access_solgov_crew)
+
 
 /datum/job/solrep/get_description_blurb()
 	return "You are the Sol Gov Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and governmental interests on board. Send faxes back to Sol on mission progress and important events."
@@ -447,8 +448,7 @@
 		"Sol Federal Chaperone"	)
 	skill_points = 20
 	access = list(access_representative, access_security, access_medical,
-					access_emergency_storage, access_bridge,
-					access_janitor, access_cargo, access_hydroponics,
+					access_bridge, access_janitor, access_cargo, 
 					access_hangar, access_solgov_crew, access_sec_guard)
 	defer_roundstart_spawn = TRUE
 
