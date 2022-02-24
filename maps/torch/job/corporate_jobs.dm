@@ -42,8 +42,8 @@
 	title = "Loss Prevention Associate"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Workplace Liaison"
 	selection_color = "#3d3d7f"
 	economic_power = 12
