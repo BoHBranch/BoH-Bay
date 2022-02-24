@@ -87,7 +87,7 @@
 	icon = 'icons/obj/machines/power/fusion_core.dmi'
 	icon_state = "core1"
 	color = COLOR_DARK_GREEN_GRAY
-	output_power = 5 MEGAWATTS //Temp number to make up for the fact that I'm too out of it to actually add a proper bio reactor rn. -Carl
+	output_power = 6 MEGAWATTS //Temp number to make up for the fact that I'm too out of it to actually add a proper bio reactor rn. -Carl
 
 /obj/machinery/power/ascent_reactor/attack_hand(mob/user)
 	. = ..()
