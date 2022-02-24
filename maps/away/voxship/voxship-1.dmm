@@ -2458,6 +2458,9 @@
 "fU" = (
 /obj/structure/table/gamblingtable,
 /obj/item/weapon/deck/cards,
+/obj/item/weapon/storage/mre/menu10,
+/obj/item/weapon/storage/mre/menu10,
+/obj/item/weapon/storage/mre/menu10,
 /obj/item/weapon/storage/pill_bottle/dice,
 /turf/simulated/floor/wood/mahogany{
 	initial_gas = list("nitrogen" = 101.23)
@@ -3453,6 +3456,9 @@
 /area/voxship/ship_fore)
 "ic" = (
 /obj/structure/table/gamblingtable,
+/obj/item/weapon/storage/mre/menu10,
+/obj/item/weapon/storage/mre/menu10,
+/obj/item/weapon/storage/mre/menu10,
 /obj/random/smokes,
 /turf/simulated/floor/wood/mahogany{
 	initial_gas = list("nitrogen" = 101.23)
@@ -6803,7 +6809,6 @@
 /obj/item/weapon/reagent_containers/glass/bucket,
 /obj/item/weapon/mop,
 /obj/item/weapon/reagent_containers/spray/cleaner,
-/obj/item/weapon/storage/box/detergent,
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_aft)
 "oP" = (
@@ -8721,6 +8726,12 @@
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/med)
+"zN" = (
+/obj/machinery/vending/wallmed1,
+/turf/simulated/wall/r_wall/hull{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/ship_fore)
 "zP" = (
 /obj/machinery/porta_turret/ssv/vox,
 /turf/simulated/floor/plating/vox,
@@ -8957,6 +8968,12 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
+"Xb" = (
+/obj/machinery/vending/wallmed1,
+/turf/simulated/wall/r_wall/hull{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/ship_aft)
 "YV" = (
 /obj/structure/window/phoronreinforced,
 /obj/structure/cable{
@@ -24821,7 +24838,7 @@ dT
 eX
 eX
 gi
-ba
+zN
 hM
 mr
 jL
@@ -29063,7 +29080,7 @@ di
 di
 di
 di
-ba
+zN
 dT
 hH
 ik
@@ -33305,7 +33322,7 @@ cs
 dG
 dW
 iH
-gu
+Xb
 ju
 iK
 mz
@@ -35325,7 +35342,7 @@ cD
 dh
 mJ
 eI
-gu
+Xb
 jA
 iK
 lD
