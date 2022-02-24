@@ -3594,6 +3594,7 @@
 	},
 /obj/prefab/hand_teleporter,
 /obj/item/integrated_circuit/manipulation/bluespace_rift,
+/obj/item/weapon/card/id/captains_spare,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
 "fW" = (

@@ -215,6 +215,7 @@
 	name = "Tricordrazine"
 	result = /datum/reagent/tricordrazine
 	required_reagents = list(/datum/reagent/inaprovaline = 1, /datum/reagent/dylovene = 1)
+	catalysts = list(/datum/reagent/toxin/phoron = 5)
 	result_amount = 2
 
 /datum/chemical_reaction/alkysine
@@ -242,6 +243,7 @@
 	name = "Dexalin Plus"
 	result = /datum/reagent/dexalinp
 	required_reagents = list(/datum/reagent/dexalin = 1, /datum/reagent/carbon = 1, /datum/reagent/iron = 1)
+	catalysts = list(/datum/reagent/toxin/phoron = 5)
 	result_amount = 3
 
 /datum/chemical_reaction/bicaridine
