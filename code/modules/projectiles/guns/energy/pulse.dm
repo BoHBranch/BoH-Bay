@@ -99,7 +99,7 @@
 	scoped_accuracy = 9
 	recharge_time = 20
 	fire_delay = 30
-	slowdown_held = 2
+	slowdown_held = 1
 	slowdown_worn = 1
 	screen_shake = 0 //screenshake breaks the scope.
 	scope_zoom = 2

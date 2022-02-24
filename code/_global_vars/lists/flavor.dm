@@ -109,7 +109,17 @@ GLOBAL_LIST_INIT(music_tracks, list(
 	"A Place" = /music_track/astrometrics/a_place,
 	"Starbase" = /music_track/astrometrics/engage,
 	"Ram It Up Their Snout" = /music_track/astrometrics/engage/riuts,
-	"Lonely Satellite" = /music_track/lonely_satellite
+	"Lonely Satellite" = /music_track/lonely_satellite,
+	"Inhert" = /music_track/inhert,
+	"Chanson" = /music_track/chanson_dautomne,
+	"You Make Me Feel So Young" = /music_track/you_make_me,
+	"Blue Moon" = /music_track/blue_moon,
+	"Can't Take My Eyes Off Of You" = /music_track/cant_take_my_eyes,
+	"Major Tom" = /music_track/major_tom,
+	"No One Rides For Free" = /music_track/no_one_rides,
+	"Follow Molly" = /music_track/follow_molly,
+	"Kidney-ing Me" = /music_track/kidneying_me,
+	"Cat Beat" = /music_track/cat_beat
 ))
 
 /proc/setup_music_tracks(var/list/tracks)

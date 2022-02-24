@@ -121,7 +121,7 @@
 
 	var/decl/move_intent/default_walk_intent
 	var/decl/move_intent/default_run_intent
-
+	var/NSFW = 0 //for NSFW descriptions
 	var/obj/buckled = null//Living
 	var/obj/item/l_hand = null//Living
 	var/obj/item/r_hand = null//Living

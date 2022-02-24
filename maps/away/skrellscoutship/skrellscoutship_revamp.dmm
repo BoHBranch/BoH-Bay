@@ -2334,9 +2334,7 @@
 	start_pressure = 1900;
 	temperature = 313.15
 	},
-/obj/machinery/atmospherics/portables_connector{
-	dir = 1
-	},
+/obj/machinery/atmospherics/portables_connector,
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock/alt)
 "zN" = (

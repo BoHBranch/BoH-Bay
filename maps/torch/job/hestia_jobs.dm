@@ -39,7 +39,7 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant)
 
 /datum/job/seccadetn/get_description_blurb()
-	return "You're either a new hire, or a new trainee aboard the [GLOB.using_map.full_name]. Everyone is your senior, and as such, you'd best listen to them."
+	return "You're a new trainee aboard the [GLOB.using_map.full_name]. Everyone is your senior, and as such, you'd best listen to them."
 
 /datum/job/squad_lead
 	allowed_branches = list(/datum/mil_branch/marine_corps)
@@ -113,9 +113,9 @@
 		/datum/mil_rank/marine_corps/e4,
 		/datum/mil_rank/marine_corps/e5
 		)
-	access = list(access_maint_tunnels, access_petrov, access_petrov_security,
+	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
-			            access_inftech, access_aquila, access_eva)
+			            access_aquila, access_eva, access_inftech)
 	alt_titles = list(
 		"Combat Engineer")
 
@@ -159,9 +159,9 @@
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5
 		)
-	access = list(access_maint_tunnels, access_petrov, access_petrov_security,
+	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
-			            access_infmed, access_aquila, access_eva)
+			            access_aquila, access_eva, access_infmed)
 
 /datum/job/combat_medic/is_position_available()
 	if(..())

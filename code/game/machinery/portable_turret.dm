@@ -107,6 +107,14 @@
 	distance_falloff = 0.25
 	dispersion = 0
 
+/obj/machinery/porta_turret/ssv/vox
+
+	name = "Anti-personnel battery"
+	desc = "A sleek, menacing turret of stolen origin."
+	installation = /obj/item/weapon/gun/energy/laser
+	color = COLOR_SILVER
+	req_access = list("ACCESS_VOXSHIP")
+
 /obj/machinery/porta_turret/malf_upgrade(var/mob/living/silicon/ai/user)
 	..()
 	ailock = 0

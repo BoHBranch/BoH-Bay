@@ -162,7 +162,6 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3
@@ -173,9 +172,10 @@
 /datum/job/pathfinder
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e7_exp,
+		/datum/mil_rank/fleet/e7,
 		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/fleet/o2
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/fleet/o3
 	)
 
 /datum/job/nt_pilot
@@ -185,8 +185,8 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
-		/datum/mil_rank/fleet/e5_exp,
-		/datum/mil_rank/fleet/e7_exp,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/fleet/w1,
 		/datum/mil_rank/fleet/w2
 	)
@@ -195,9 +195,9 @@
 	allowed_branches = list(/datum/mil_branch/fleet)
 
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e2_exp,
-		/datum/mil_rank/fleet/e3_exp,
-		/datum/mil_rank/fleet/e5_exp
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6
 	)
 	min_skill = list(SKILL_EVA = SKILL_BASIC, SKILL_SCIENCE = SKILL_BASIC) // To make up SGF not having sci skill by default.
 /***/
@@ -243,7 +243,6 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3
@@ -280,7 +279,6 @@
 		/datum/mil_branch/solgov
 	)
 	allowed_ranks = list(,
-		/datum/mil_rank/fleet/e7_exp,
 		/datum/mil_rank/fleet/o1,
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/scientist,
@@ -294,9 +292,9 @@
 		/datum/mil_branch/solgov
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e2_exp,
-		/datum/mil_rank/fleet/e3_exp,
-		/datum/mil_rank/fleet/e5_exp,
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/assist,
 		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/assist/solgov
 	)
@@ -391,7 +389,6 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
@@ -462,7 +459,6 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
