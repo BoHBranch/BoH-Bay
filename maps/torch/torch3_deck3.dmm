@@ -3954,7 +3954,8 @@
 	density = 0;
 	icon_state = "shutter0";
 	id_tag = "saunashutters";
-	name = "privacy shutters"
+	name = "privacy shutters";
+	opacity = 0
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/head/sauna)
@@ -4360,7 +4361,8 @@
 	density = 0;
 	icon_state = "shutter0";
 	id_tag = "saunashutters";
-	name = "privacy shutters"
+	name = "privacy shutters";
+	opacity = 0
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
