@@ -169,6 +169,7 @@
 #define CULTURE_UNATHI_SAVANNAH       "Savannah Clans"
 #define CULTURE_UNATHI_SALT_SWAMP     "Salt Swamp Clans"
 #define CULTURE_UNATHI_SPACE          "Space-Faring Clans"
+#define CULTURE_UNATHI_ADOPTED          "Adopted Veteris'Unathi"
 
 #define HOME_SYSTEM_MOGHES          "Moghes"
 #define HOME_SYSTEM_OUERE           "Ouere"

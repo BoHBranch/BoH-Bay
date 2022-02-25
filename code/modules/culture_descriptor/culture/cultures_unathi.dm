@@ -128,3 +128,16 @@
 		LANGUAGE_HUMAN_EURO,
 		LANGUAGE_SPACER
 	)
+
+/decl/cultural_info/culture/unathi/clan_adopted
+ 	name = CULTURE_UNATHI_ADOPTED
+ 	description = "You are one of the Veteris'Unathi's that have been adopted by one of the clans around Moghes. \
+ 	Your life might not be as easy as the Sinta'unathi's, but it's at least better than being in the hostile environments of the ash plains."
+ 	economic_power = 0.7
+ 	language = LANGUAGE_UNATHI_SINTA
+ 	secondary_langs = list(
+        LANGUAGE_UNATHI_YEOSA,
+        LANGUAGE_SIGN,
+        LANGUAGE_HUMAN_EURO,
+        LANGUAGE_SPACER
+    )
