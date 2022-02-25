@@ -1425,13 +1425,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/voxship/dock)
-"me" = (
-/obj/machinery/disperser/back{
-	dir = 8
-	},
-/obj/structure/ship_munition/disperser_charge/ascent,
-/turf/simulated/floor/reinforced/vox,
-/area/voxship/ofd_lower)
 "mh" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -2039,10 +2032,6 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
-/obj/machinery/computer/ship/disperser{
-	dir = 4;
-	icon_state = "computer"
-	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_lower)
 "qu" = (
@@ -2309,13 +2298,11 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
 "sn" = (
-/obj/machinery/disperser/middle{
-	dir = 8
+/obj/item/weapon/paper{
+	info = "<i>You see a 2nd OFD?, No? THATS AS ONE OF YOU SKREKS, BLEW IT THE SKREK UP. No 2nd OFD till I can get the parts to put it back in, DON'T OVER LOAD</i>";
+	name = "CE's note for you skreks"
 	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
-	},
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_lower)
 "so" = (
 /turf/simulated/floor/reinforced/oxygen,
@@ -4821,15 +4808,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
-"Oc" = (
-/obj/machinery/disperser/front{
-	dir = 8
-	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
-	},
-/area/voxship/ofd_lower)
 "Oj" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -5569,19 +5547,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
-"Uu" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/computer/ship/disperser{
-	dir = 4;
-	icon_state = "computer"
-	},
-/turf/simulated/floor/reinforced/vox,
-/area/voxship/ofd_lower)
 "Uz" = (
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/ship_fore)
@@ -13020,7 +12985,7 @@ uY
 XG
 BN
 QC
-Oc
+Bt
 Lw
 Bt
 Bt
@@ -13324,7 +13289,7 @@ La
 vj
 AH
 tq
-me
+oI
 CS
 Yp
 tG
@@ -13932,7 +13897,7 @@ Ts
 cE
 sY
 SF
-Uu
+zC
 Bt
 Em
 Nd

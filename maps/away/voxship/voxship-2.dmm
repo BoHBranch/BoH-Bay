@@ -730,13 +730,19 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/cbridge)
 "jT" = (
-/obj/machinery/button/windowtint{
-	id_tag = "quil_room"
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "quil_room"
 	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/airless,
 /area/voxship/quills)
 "kd" = (
 /obj/machinery/computer/ship/sensors{
@@ -786,6 +792,12 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/structure/cable,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/space,
 /area/voxship/quills)
@@ -1156,6 +1168,11 @@
 	req_access = list("ACCESS_VOXSHIP_CAPTAIN")
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/quills)
 "pt" = (
@@ -1329,6 +1346,15 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/space,
 /area/voxship/quills)
 "sE" = (
@@ -2677,6 +2703,10 @@
 	icon_state = "tube1"
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/machinery/button/windowtint{
+	id_tag = "quil_room";
+	pixel_y = 25
+	},
 /turf/simulated/floor/wood/mahogany{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -2858,6 +2888,10 @@
 "OT" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "quil_room"
+	},
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/airless,
 /area/voxship/quills)
@@ -14135,7 +14169,7 @@ OI
 OI
 OI
 kP
-jT
+Gv
 Mr
 pl
 jz
@@ -14439,7 +14473,7 @@ bq
 dI
 Ya
 OI
-OT
+jT
 zo
 tz
 tz
@@ -15646,7 +15680,7 @@ fx
 OS
 Xl
 eg
-uB
+DI
 XQ
 Pk
 NF
@@ -15654,7 +15688,7 @@ NF
 NF
 tV
 XQ
-uB
+Jj
 Lh
 QJ
 Oc
@@ -16102,7 +16136,7 @@ fx
 OS
 Xl
 eg
-uB
+DI
 XQ
 Pk
 NF
@@ -16110,7 +16144,7 @@ NF
 NF
 tV
 XQ
-uB
+Jj
 fe
 rz
 uB
