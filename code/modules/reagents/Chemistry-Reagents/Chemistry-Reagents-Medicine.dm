@@ -138,7 +138,7 @@
 
 /datum/reagent/dexalinp
 	name = "Dexalin Plus"
-	description = "Dexalin Plus is used in the treatment of oxygen deprivation. It is highly effective."
+	description = "Dexalin Plus is used in the treatment of extreme oxygen deprivation."
 	taste_description = "bitterness"
 	reagent_state = LIQUID
 	color = "#0040ff"
