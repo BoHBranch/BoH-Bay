@@ -60,7 +60,7 @@
 	id = access_liaison
 	desc = "Corporate Liaison"
 	region = ACCESS_REGION_COMMAND
-	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, CO and RD cannot enter
+	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, CO cannot enter
 
 /var/const/access_adjudicator = "ACCESS_ADJUDICATOR" //85
 /datum/access/adjudicator
@@ -134,6 +134,13 @@
 	id = access_commissary
 	desc = "Commissary"
 	region = ACCESS_REGION_GENERAL
+
+/var/const/access_representative = "ACCESS_REPRESENTATIVE" //97
+/datum/access/representative
+	id = access_representative
+	desc = "Sol Gov Representative"
+	region = ACCESS_REGION_COMMAND
+	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, CO cannot enter
 
 /datum/access/psychiatrist
 	desc = "Mental Health"

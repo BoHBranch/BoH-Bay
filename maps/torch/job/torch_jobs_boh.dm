@@ -98,6 +98,13 @@
 		/datum/mil_rank/marine_corps/o1,
 		/datum/mil_rank/marine_corps/o2
 	)
+/datum/job/solrep
+	allowed_branches = list(
+		/datum/mil_branch/solgov
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/sol/gov
+	)
 /***/
 
 // Engineering

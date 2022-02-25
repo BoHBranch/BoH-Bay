@@ -191,6 +191,12 @@
 	name = "black suit jacket"
 	color = "#1f1f1f"
 
+//SFP
+/obj/item/clothing/suit/storage/toggle/suit/black/sfp
+	name = "\improper SFP agent jacket"
+	desc = "A snappy dress jacket. It has the letters 'SFP' embroidered on the cuffs."
+
+
 //Medical
 /obj/item/clothing/suit/storage/toggle/fr_jacket
 	name = "first responder jacket"
