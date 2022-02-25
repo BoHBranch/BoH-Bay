@@ -131,13 +131,14 @@
 
 /decl/cultural_info/culture/unathi/clan_adopted
  	name = CULTURE_UNATHI_ADOPTED
- 	description = "You are one of the Veteris'Unathi's that have been adopted by one of the clans around Moghes. \
- 	Your life might not be as easy as the Sinta'unathi's, but it's at least better than being in the hostile environments of the ash plains."
- 	economic_power = 0.7
+ 	description = "A Veteris'Unathi that has either been adopted by a clan or was hatched into a clan inheriting their clan's customs and traditions. \
+ 	They may have never seen the ash plains themself yet share Veteris characteristics with their brethren from the plains. \
+ 	Depending on the clan, the treatment of Veteris can significantly vary."
+ 	economic_power = 0.8
  	language = LANGUAGE_UNATHI_SINTA
  	secondary_langs = list(
-        LANGUAGE_UNATHI_YEOSA,
-        LANGUAGE_SIGN,
-        LANGUAGE_HUMAN_EURO,
-        LANGUAGE_SPACER
-    )
+ 		LANGUAGE_UNATHI_YEOSA,
+ 		LANGUAGE_SIGN,
+ 		LANGUAGE_HUMAN_EURO,
+ 		LANGUAGE_SPACER
+ 	)
