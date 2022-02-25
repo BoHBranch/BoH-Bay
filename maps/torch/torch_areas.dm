@@ -692,10 +692,6 @@
 	name = "\improper Command - Rep's Backroom"
 	req_access = list(access_representative)
 
-/area/crew_quarters/heads/office/vip
-	icon_state = "heads_sr"
-	name = "\improper Command - VIP Quarters"
-
 /area/crew_quarters/heads/office/sea
 	icon_state = "heads_sea"
 	name = "\improper Command - Fleet SEA's Office"
