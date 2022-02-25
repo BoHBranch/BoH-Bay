@@ -22,8 +22,28 @@
 	name = "\improper Asteroid Control Room"
 	icon_state = "bridge"
 
+/area/voxship/cbridge
+	name = "\improper Corvette Control Room"
+	icon_state = "bridge"
+
+/area/voxship/quills
+	name = "\improper Quills Room"
+	icon_state = "bridge"
+
 /area/voxship/armory
 	name = "\improper Vox Armory"
+	icon_state = "armory"
+
+/area/voxship/birg
+	name = "\improper Vox Brig"
+	icon_state = "armory"
+
+/area/voxship/ofd_upper
+	name = "\improper Vox OFD Upper"
+	icon_state = "armory"
+
+/area/voxship/ofd_lower
+	name = "\improper Vox OFD Lower"
 	icon_state = "armory"
 
 /area/voxship/dock
@@ -36,6 +56,10 @@
 
 /area/voxship/hydro
 	name = "\improper Vox Hydroponics"
+	icon_state = "hydro"
+
+/area/voxship/dorms
+	name = "\improper Vox Dorms"
 	icon_state = "hydro"
 
 /area/voxship/atmos
