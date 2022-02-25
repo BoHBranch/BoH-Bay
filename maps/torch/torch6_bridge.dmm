@@ -11906,6 +11906,9 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/turret_protected/ai_outer_chamber)
 "tx" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
 /obj/structure/closet/secure_closet/bodyguard,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/cl)
@@ -16996,9 +16999,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/aquila/airlock)
-"MZ" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/heads/office/solrep)
 "Nb" = (
 /obj/machinery/light,
 /turf/simulated/floor/carpet/blue,
@@ -17431,6 +17431,9 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/fore)
+"Pk" = (
+/turf/simulated/wall/r_wall/prepainted,
+/area/crew_quarters/heads/office/solrep)
 "Pt" = (
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/co)
@@ -18015,6 +18018,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/co)
+"RZ" = (
+/obj/structure/table/woodentable/walnut,
+/obj/item/weapon/pen/red{
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/item/weapon/pen/green,
+/obj/item/weapon/pen/blue{
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/turf/simulated/floor/carpet/blue,
+/area/crew_quarters/heads/office/solrep/backroom)
 "Sa" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/weapon/tableflag,
@@ -18232,19 +18248,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/heads/cobed)
-"SW" = (
-/obj/structure/table/woodentable/walnut,
-/obj/item/weapon/pen/red{
-	pixel_x = -1;
-	pixel_y = 3
-	},
-/obj/item/weapon/pen/green,
-/obj/item/weapon/pen/blue{
-	pixel_x = -5;
-	pixel_y = -1
-	},
-/turf/simulated/floor/carpet/blue,
-/area/crew_quarters/heads/office/solrep/backroom)
 "Ta" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -31052,15 +31055,15 @@ af
 af
 aq
 aE
-MZ
-MZ
+Pk
+Pk
 aC
 bV
-MZ
+Pk
 Nd
 He
 Ka
-MZ
+Pk
 Le
 Pe
 gL
@@ -31254,7 +31257,7 @@ af
 af
 YI
 aE
-MZ
+Pk
 ai
 aJ
 Dg
@@ -31456,7 +31459,7 @@ af
 af
 ar
 aE
-MZ
+Pk
 ak
 gc
 bl
@@ -31658,7 +31661,7 @@ af
 af
 as
 aE
-MZ
+Pk
 bc
 Uo
 bn
@@ -31860,16 +31863,16 @@ af
 af
 at
 aE
-MZ
-MZ
-MZ
+Pk
+Pk
+Pk
 Uc
 Dd
 Wd
 ir
 ZJ
 qR
-MZ
+Pk
 xV
 Fb
 ie
@@ -32064,14 +32067,14 @@ JT
 aE
 VB
 VB
-MZ
-MZ
+Pk
+Pk
 bu
-MZ
-MZ
+Pk
+Pk
 HG
-MZ
-MZ
+Pk
+Pk
 Gs
 gR
 ie
@@ -32471,7 +32474,7 @@ bh
 dk
 br
 Ld
-SW
+RZ
 Ve
 dn
 Ge
