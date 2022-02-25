@@ -82,6 +82,6 @@
 	channels = list("Command" = 1, "Infantry" = 1, "Security" = 1, "Engineering" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "Exploration" = 1)
 
 /obj/item/device/encryptionkey/federal
-	name = "bridge officer's encryption key"
+	name = "federal encryption key"
 	icon_state = "com_cypherkey"
 	channels = list("Command" = 1, "Infantry" = 1, "Engineering" = 1, "Security" = 1)

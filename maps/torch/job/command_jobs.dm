@@ -375,7 +375,7 @@
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Central Command and the Sol Code of Military Justice"
+	supervisors = "Central Command and Sol Law"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 14
 	economic_power = 16

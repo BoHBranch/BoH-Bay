@@ -193,7 +193,7 @@
 
 //SFP
 /obj/item/clothing/suit/storage/toggle/suit/black/sfp
-	name = "\improper SFP Agent Jacket"
+	name = "\improper SFP agent jacket"
 	desc = "A snappy dress jacket. It has the letters 'SFP' embroidered on the cuffs."
 
 
