@@ -61,14 +61,14 @@
 
 /obj/item/weapon/storage/belt/holster/sheath
 	name = "sword sheath"
-	desc = "A sword sheath, it can hold pattern swords."
+	desc = "A sword sheath, it can hold Marine or Fleet swords. It can be worn on the back, belt, some outerwear or as outerwear in and of itself."
 	icon_state = "sword_sheath"
 	item_state = "sword_sheath"
 	storage_slots = 1
 	w_class = 6
 	max_w_class = 6
-	max_storage_space = 16 // Swords are bulky, needs this to not erorr.
-	slot_flags = SLOT_BELT|SLOT_BACK
+	max_storage_space = 16 // Swords are bulky, needs this to not error.
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_OCLOTHING
 	sound_in = 'sound/effects/holster/sheathin.ogg'
 	sound_out = 'sound/effects/holster/blade_unsheath.ogg'
 	can_holster = list(/obj/item/weapon/material/sword/officersword)
