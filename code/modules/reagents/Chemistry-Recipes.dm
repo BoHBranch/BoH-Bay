@@ -215,6 +215,8 @@
 	name = "Tricordrazine"
 	result = /datum/reagent/tricordrazine
 	required_reagents = list(/datum/reagent/inaprovaline = 1, /datum/reagent/dylovene = 1)
+	minimum_temperature = 50 CELSIUS
+	maximum_temperature = 100 CELSIUS
 	result_amount = 2
 
 /datum/chemical_reaction/alkysine
