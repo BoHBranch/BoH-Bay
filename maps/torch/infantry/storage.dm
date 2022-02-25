@@ -8,7 +8,7 @@
 
 /obj/item/gunbox/sidearm/infantry/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Energy - NTSec Revolver"] = list(/obj/item/weapon/gun/energy/revolver/secure)
+	options["Energy - NTSec Revolver"] = list(/obj/item/weapon/gun/energy/revolver/secure/inf)
 	options["Ballistic - HPI P20"] = list(/obj/item/weapon/gun/projectile/pistol/military)
 	options["Ballistic - MA Blacklist"] = list(/obj/item/weapon/gun/projectile/revolver/medium)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
