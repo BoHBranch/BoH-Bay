@@ -83,6 +83,7 @@
 		/obj/item/device/megaphone,
 		/obj/item/weapon/melee/baton/loaded,
 		/obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar/loaded,
+		/obj/item/weapon/gun/energy/taser,
 		/obj/item/weapon/melee/telebaton,
 		/obj/item/weapon/reagent_containers/spray/pepper,
 		/obj/item/clothing/accessory/storage/black_vest,
