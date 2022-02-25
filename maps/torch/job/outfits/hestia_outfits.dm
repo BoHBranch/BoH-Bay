@@ -20,7 +20,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/infantry/combat_medic
 	name = OUTFIT_JOB_NAME("Combat Medic")
-	uniform = /obj/item/clothing/under/solgov/utility/army/medical
+	uniform = /obj/item/clothing/under/solgov/utility
 	id_type = /obj/item/weapon/card/id/torch/crew/infantry/infmed
 	pda_type = /obj/item/modular_computer/pda/medical
 	l_ear = /obj/item/device/radio/headset/infmed
