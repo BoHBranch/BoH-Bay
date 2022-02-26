@@ -52,9 +52,17 @@
 	name = "speedloader (10mm), (rubber)"
 	path = /obj/item/ammo_magazine/speedloader/rubber
 
+/datum/fabricator_recipe/arms_ammo/hidden/speedloader_moderate
+	name = "speedloader (12mm)"
+	path = /obj/item/ammo_magazine/speedloader/moderate
+
+/datum/fabricator_recipe/arms_ammo/hidden/speedloader_moderate_rubber
+	name = "speedloader (12mm), (rubber)"
+	path = /obj/item/ammo_magazine/speedloader/moderate/rubber
+
 /datum/fabricator_recipe/arms_ammo/hidden/speedloader_pepperball
-	name = "speedloader (10mm), (pepperball)"
-	path = /obj/item/ammo_magazine/speedloader/pepperball
+	name = "speedloader (12mm), (pepperball)"
+	path = /obj/item/ammo_magazine/speedloader/moderate/pepperball
 
 /datum/fabricator_recipe/arms_ammo/hidden/speedloader_large
 	name = "speedloader (.454)"

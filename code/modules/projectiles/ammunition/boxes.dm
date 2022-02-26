@@ -17,9 +17,9 @@
 	labels = list("rubber")
 	ammo_type = /obj/item/ammo_casing/pistol/rubber
 
-/obj/item/ammo_magazine/speedloader/pepperball
+/obj/item/ammo_magazine/speedloader/moderate/pepperball
 	labels = list("pepperball")
-	ammo_type = /obj/item/ammo_casing/pistol/rubber/pepperball
+	ammo_type = /obj/item/ammo_casing/pistol/moderate/rubber/pepperball
 
 /obj/item/ammo_magazine/speedloader/magnum
 	icon_state = "spdloader_magnum"
@@ -28,6 +28,17 @@
 	matter = list(MATERIAL_STEEL = 1440)
 	max_ammo = 6
 	multiple_sprites = 1
+
+/obj/item/ammo_magazine/speedloader/moderate
+	caliber = CALIBER_PISTOL_MODERATE
+	ammo_type = /obj/item/ammo_casing/pistol/moderate
+	matter = list(MATERIAL_STEEL = 1350)
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/speedloader/moderate/rubber
+	labels = list("rubber")
+	ammo_type = /obj/item/ammo_casing/pistol/moderate/rubber
 
 /obj/item/ammo_magazine/speedloader/small
 	name = "speed loader"

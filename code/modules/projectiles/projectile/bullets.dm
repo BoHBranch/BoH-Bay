@@ -133,11 +133,13 @@
 	arterial_bleed_chance_multiplier = 1.2
 	distance_falloff = 4
 
-/obj/item/projectile/bullet/pistol/xo
-	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
+/obj/item/projectile/bullet/pistol/moderate
+	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	damage = 45
 	armor_penetration = 10
-	distance_falloff = 3
+	shrapnel_chance_multiplier = 0.5
+	arterial_bleed_chance_multiplier = 0.5
+	distance_falloff = 2.5
 
 /obj/item/projectile/bullet/pistol/strong
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
@@ -160,6 +162,9 @@
 /obj/item/projectile/bullet/pistol/rubber/holdout
 	agony = 25
 	armor_penetration = 5
+
+/obj/item/projectile/bullet/pistol/rubber/moderate
+	agony = 45
 
 //4mm. Tiny, very low damage, does not embed, but has very high penetration. Only to be used for the experimental SMG.
 /obj/item/projectile/bullet/flechette

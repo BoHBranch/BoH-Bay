@@ -7,10 +7,6 @@
 	icon_state = "pistolcasing"
 	spent_icon = "pistolcasing-spent"
 
-/obj/item/ammo_casing/pistol/xo
-	desc = "A rubber pistol bullet casing."
-	projectile_type = /obj/item/projectile/bullet/pistol/xo
-
 /obj/item/ammo_casing/pistol/rubber
 	desc = "A rubber pistol bullet casing."
 	projectile_type = /obj/item/projectile/bullet/pistol/rubber
@@ -40,6 +36,18 @@
 	desc = "A small pistol practice bullet casing."
 	projectile_type = /obj/item/projectile/bullet/pistol/practice
 	icon_state = "pistolcasing_p"
+
+/obj/item/ammo_casing/pistol/moderate
+	desc = "A pistol bullet casing."
+	caliber = CALIBER_PISTOL_MODERATE
+	projectile_type = /obj/item/projectile/bullet/pistol/moderate
+	ammo_stack = null
+	icon_state = "pistolcasing"
+	spent_icon = "pistolcasing-spent"
+
+/obj/item/ammo_casing/pistol/moderate/rubber
+	projectile_type = /obj/item/projectile/bullet/pistol/rubber/moderate
+	icon_state = "pistolcasing_r"
 
 /obj/item/ammo_casing/pistol/magnum
 	desc = "A high-power pistol bullet casing."

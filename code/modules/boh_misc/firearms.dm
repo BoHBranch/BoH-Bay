@@ -4,7 +4,7 @@
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar
 	name = "Mk59"
-	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps. It's known for severe issues with reliability when not maintained well or used by inexperienced shooters."
+	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps. It's known for severe issues with reliability when not maintained well or used by inexperienced shooters. Uses 10mm ammo."
 	magazine_type = /obj/item/ammo_magazine/pistol/double/pepperball
 	jam_chance = 5 //Cheap firearm. Chance of jamming.
 
@@ -47,16 +47,16 @@
 	name = "Lumoco Mk12"
 	icon_state = "medium"
 	safety_icon = "medium_safety"
-	caliber = CALIBER_PISTOL
-	ammo_type = /obj/item/ammo_casing/pistol
+	caliber = CALIBER_PISTOL_MODERATE
+	ammo_type = /obj/item/ammo_casing/pistol/moderate
 	fire_sound = 'sound/weapons/gunshot/revolver_small.ogg'
-	desc = "The Lumoco Arms' Mk12 is a rugged revolver for people who don't keep their guns well-maintained. Unlike its cousin, the Mk59 'Jhen Bothus', it has no issues with reliability."
-	accuracy = 1
+	desc = "The Lumoco Arms' Mk12 is a rugged revolver for people who don't keep their guns well-maintained. Unlike its cousin, the Mk59 'Jhen Bothus', it has no issues with reliability. Uses 12mm ammo."
+	accuracy = 2
 	bulk = 0
-	fire_delay = 9
+	fire_delay = 12
 
 /obj/item/weapon/gun/projectile/revolver/medium/sec/pepper
-	ammo_type = /obj/item/ammo_casing/pistol/rubber/pepperball
+	ammo_type = /obj/item/ammo_casing/pistol/moderate/rubber/pepperball
 
 
 /////////

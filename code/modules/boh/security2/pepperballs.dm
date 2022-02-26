@@ -7,6 +7,10 @@
 	name = "pepperball casing"
 	projectile_type = /obj/item/projectile/bullet/pistol/pepperball
 
+/obj/item/ammo_casing/pistol/moderate/rubber/pepperball
+	name = "pepperball casing"
+	projectile_type = /obj/item/projectile/bullet/pistol/pepperball
+
 //magazine
 /obj/item/ammo_magazine/pistol/double/pepperball
 	name = "pepperball magazine"
