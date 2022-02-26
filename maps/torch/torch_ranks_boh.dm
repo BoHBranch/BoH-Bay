@@ -180,6 +180,10 @@
 		/datum/mil_rank/fleet/o6
 	)
 
+
+	min_skill = list(	SKILL_MEDICAL = SKILL_BASIC,
+						SKILL_EVA     = SKILL_BASIC)
+
 /datum/mil_branch/marine_corps
 	name = "Solar Marine Corps"
 	name_short = "SMC"
