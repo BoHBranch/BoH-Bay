@@ -1473,7 +1473,7 @@
 	dir = 4;
 	id = "ammobeltvox"
 	},
-/obj/structure/ship_munition/disperser_charge/ascent,
+/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_upper{
 	 = 
@@ -1501,7 +1501,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/ship_munition/disperser_charge/ascent,
+/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_lower)
 "mB" = (
@@ -1648,7 +1648,7 @@
 	dir = 9;
 	id = "ammobeltvox1"
 	},
-/obj/structure/ship_munition/disperser_charge/ascent,
+/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_upper{
 	 = 
@@ -1990,7 +1990,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/ship_munition/disperser_charge/ascent,
+/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_upper{
 	 = 
@@ -2519,7 +2519,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/ship_munition/disperser_charge/ascent,
+/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_upper{
 	 = 
@@ -2813,7 +2813,7 @@
 	dir = 8;
 	id = "ammobeltvox1"
 	},
-/obj/structure/ship_munition/disperser_charge/ascent,
+/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_upper{
 	 = 
@@ -3920,7 +3920,7 @@
 	dir = 5;
 	id = "ammobeltvox"
 	},
-/obj/structure/ship_munition/disperser_charge/ascent,
+/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_lower)
 "Hd" = (
@@ -4170,6 +4170,11 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
+"IW" = (
+/obj/effect/wallframe_spawn/alien,
+/obj/structure/ship_munition/disperser_charge/ascent,
+/turf/space,
+/area/space)
 "Jj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -4423,7 +4428,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/ship_munition/disperser_charge/ascent,
+/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_lower)
 "KS" = (
@@ -4460,7 +4465,7 @@
 /obj/machinery/disperser/back{
 	dir = 8
 	},
-/obj/structure/ship_munition/disperser_charge/ascent,
+/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_upper{
 	 = 
@@ -4719,7 +4724,7 @@
 	dir = 4;
 	id = "ammobeltvox"
 	},
-/obj/structure/ship_munition/disperser_charge/ascent,
+/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_lower)
 "Nj" = (
@@ -5509,7 +5514,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/ship_munition/disperser_charge/ascent,
+/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_upper{
 	 = 
@@ -6219,7 +6224,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/ship_munition/disperser_charge/ascent,
+/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_lower)
 "ZW" = (
@@ -12548,7 +12553,7 @@ Jk
 Jk
 cZ
 cZ
-Jk
+IW
 Jk
 Ik
 cZ
