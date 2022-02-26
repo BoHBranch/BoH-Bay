@@ -37,34 +37,6 @@
 								/obj/item/ammo_magazine/magnum/empty           = TRADER_BLACKLIST,
 								/obj/item/clothing/accessory/storage/holster        = TRADER_ALL)
 
-/datum/trader/ship/egunshop
-	name = "Energy Gun Shop Employee"
-	name_language = TRADER_DEFAULT_NAME
-	origin = "EGun Shop"
-	possible_origins = list("The Emperor's Lasgun Shop", "Future Guns", "Solar Army", "Kiefer's Dependable Electric Arms", "Olympus Kingsport")
-	speech = list("hail_generic"    = "Welcome to the future of warfare! ORIGIN, your one-stop shop for energy weaponry!",
-				"hail_deny"         = "I'm sorry, your communication channel has been blacklisted.",
-
-				"trade_complete"    = "Thank you, your purchase has been logged and you have automatically liked our Spacebook page.",
-				"trade_blacklist"   = "I'm sorry, is that a joke?",
-				"trade_no_goods"    = "We deal in cash.",
-				"trade_not_enough"  = "State of the art weaponry costs more than that.",
-				"how_much"          = "All our quality weapons are priceless, but I'd give that to you for VALUE.",
-
-				"compliment_deny"   = "If I was dumber I probably would have believed you.",
-				"compliment_accept" = "Yes, I am very smart.",
-				"insult_good"       = "Energy weapons are TWICE the gun kinetic guns are!",
-				"insult_bad"        = "That's... very mean. I won't think twice about blacklisting your channel, so stop."
-				)
-
-	possible_trading_items = list(/obj/item/weapon/gun/energy/taser                      = TRADER_THIS_TYPE,
-								/obj/item/weapon/cell                                    = TRADER_THIS_TYPE,
-								/obj/item/weapon/cell/crap                               = TRADER_THIS_TYPE,
-								/obj/item/weapon/cell/high                               = TRADER_THIS_TYPE,
-								/obj/item/weapon/cell/super                              = TRADER_THIS_TYPE,
-								/obj/item/weapon/cell/hyper                              = TRADER_THIS_TYPE,
-								/obj/item/clothing/accessory/storage/holster                     = TRADER_ALL)
-
 /datum/trader/dogan
 	name = "Dogan"
 	origin = "Dogan's Gun Beacon"
