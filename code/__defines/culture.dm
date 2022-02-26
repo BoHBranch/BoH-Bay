@@ -215,3 +215,8 @@
 #define FACTION_SERGAL_REONO "Reono lands"
 #define RELIGION_SERGAL_ANIMISM "northern religions"
 #define RELIGION_SERGAL_GOLD_RING "religion of Gold ring"
+
+// Tajaran cultures.
+#define CULTURE_TAJARAN      "The Tajara"
+#define HOME_SYSTEM_TAJARAN  "Rarkajar"
+#define FACTION_TAJARAN      "Tajaran Government"
