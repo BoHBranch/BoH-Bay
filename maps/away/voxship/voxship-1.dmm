@@ -1813,6 +1813,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
 "oT" = (
@@ -2326,6 +2329,9 @@
 /obj/machinery/door/firedoor{
 	dir = 4;
 	icon_state = "open"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ship_fore)
@@ -3053,6 +3059,7 @@
 /obj/item/clothing/accessory/storage/webbing_large,
 /obj/item/clothing/accessory/storage/brown_vest,
 /obj/item/clothing/suit/storage/hazardvest,
+/obj/machinery/atmospherics/pipe/simple/visible/red,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "zg" = (
@@ -3346,6 +3353,7 @@
 	pixel_z = 0;
 	req_access = list("ACCESS_VOXSHIP")
 	},
+/obj/item/clothing/glasses/thermal,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
 "Cf" = (
@@ -4530,6 +4538,8 @@
 	dir = 1;
 	icon_state = "map-scrubbers"
 	},
+/obj/item/clothing/glasses/thermal,
+/obj/item/clothing/glasses/thermal,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
 "Lz" = (
