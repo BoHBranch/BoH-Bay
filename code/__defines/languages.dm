@@ -23,6 +23,7 @@
 #define LANGUAGE_ADHERENT          "Protocol"
 #define LANGUAGE_VOX               "Vox Dei"
 #define LANGUAGE_NABBER            "Serpentid"
+#define LANGUAGE_TAJARAN           "Siik'Maas"
 #define LANGUAGE_SERGAL            "Sagaru"
 
 //Antag

@@ -26,6 +26,14 @@
 					LANGUAGE_UNATHI_YEOSA
 	)
 
+/datum/species/tajaran
+	autohiss_basic_map = list(
+			"r" = list("rr", "rrr", "rrrr")
+		)
+	autohiss_exempt = list(
+					LANGUAGE_TAJARAN
+	)
+
 /datum/species/proc/handle_autohiss(message, datum/language/lang, mode)
 	if(!autohiss_basic_map)
 		return message
