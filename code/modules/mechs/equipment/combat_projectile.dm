@@ -88,7 +88,7 @@
 //magazines below this.
 
 /obj/item/ammo_magazine/mecha/smg_top
-	name = "large 7mm magazine"
+	name = "large .22LR magazine"
 	desc = "A large magazine for a mech's gun. Looks way too big for a normal gun."
 	icon_state = "smg_top"
 	mag_type = MAGAZINE

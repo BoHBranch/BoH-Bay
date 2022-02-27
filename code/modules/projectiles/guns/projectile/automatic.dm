@@ -79,7 +79,7 @@
 
 /obj/item/weapon/gun/projectile/automatic/merc_smg
 	name = "MA-C20v"
-	desc = "A licenced copy of Nanotrasens C20r. The C20v is made with cheaper materials and fires the anemic 7mm cartridge."
+	desc = "A licenced copy of Nanotrasens C20r. The C20v is made with cheaper materials and fires the anemic .22LR cartridge."
 	icon = 'icons/obj/guns/merc_smg.dmi'
 	icon_state = "c20r"
 	item_state = "c20r"

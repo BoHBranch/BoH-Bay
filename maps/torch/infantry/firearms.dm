@@ -186,7 +186,7 @@
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/sav
 	name = "SAV-1"
 	desc = "The Sluzhba Arms SAV-1 is a current-generation assault rifle designed for the SCG military. \
-	It uses the standard 5mmR rifle magazines previously used by the Z-series rifles, and it has an underbarrel grenade launcher. \
+	It uses the standard 6.5mm rifle magazines previously used by the Z-series rifles, and it has an underbarrel grenade launcher. \
 	This rifle is widely praised by the military for its ruggedness and useability."
 	icon = 'icons/boh/items/shotguns.dmi'
 	icon_state = "sexyshotgun"
@@ -202,7 +202,7 @@
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/sav/stv
 	name = "STV-1"
 	desc = "The Sluzhba Arms STV-1 is a current-generation heavy rifle designed for the SCG military. \
-	It uses the standard 5mmR rifle magazines previously used by the Z-series rifles, and has a re-enforced barrel for more accurate suppressive fire. \
+	It uses the standard 6.5mm rifle magazines previously used by the Z-series rifles, and has a re-enforced barrel for more accurate suppressive fire. \
 	Hated by those with back pain everywhere."
 	icon = 'icons/boh/items/shotguns.dmi'
 	icon_state = "sexyshotgun"

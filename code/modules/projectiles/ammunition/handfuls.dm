@@ -139,11 +139,11 @@
 
 // Handguns, low caliber.. Sticks?
 
-// 10mm.
+// 9mm.
 
 /obj/item/ammo_magazine/handful/pistol_handful
 	name = "\improper handful of handgun rounds"
-	desc = "A handful of rounds for some kind of handgun, 10mm."
+	desc = "A handful of rounds for some kind of handgun, 9mm."
 	max_ammo = 6
 	icon_state = "handful_pistol"
 	caliber = CALIBER_PISTOL
@@ -174,7 +174,7 @@
 	initial_ammo = 2
 
 /obj/item/ammo_magazine/handful/magnum_handful/small
-	desc = "A handful of rounds for a high caliber revolver. 15mm."
+	desc = "A handful of rounds for a high caliber revolver. .44."
 	caliber = CALIBER_PISTOL_MAGNUM
 	ammo_type = /obj/item/ammo_casing/pistol/magnum
 

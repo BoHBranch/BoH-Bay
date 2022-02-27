@@ -125,7 +125,7 @@
 
 /datum/uplink_item/item/visible_weapons/deagle
 	name = "Magnum Pistol"
-	desc = "A high-caliber pistol that uses 15mm ammunition. Contains a spare magazine."
+	desc = "A high-caliber pistol that uses .44 ammunition. Contains a spare magazine."
 	item_cost = 52
 	path = /obj/item/weapon/storage/backpack/satchel/syndie_kit/magnum
 
@@ -142,7 +142,7 @@
 	path = /obj/item/weapon/gun/projectile/revolver/holdout
 
 /datum/uplink_item/item/visible_weapons/revolver
-	name = "Revolver (15mm)"
+	name = "Revolver (.44)"
 	desc = "A deadly revolver. Useful for putting holes in fools."
 	item_cost = 40
 	path = /obj/item/weapon/gun/projectile/revolver

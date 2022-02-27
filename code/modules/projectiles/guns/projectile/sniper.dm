@@ -98,7 +98,7 @@
 
 /obj/item/weapon/gun/projectile/hornetsniper
 	name = "Nanotrasen Z9R Houndmaster"
-	desc = "The Z9R Houndmaster, is Nanotrasens custom-built weapon for SDF special-forces. Features a onboard targeting suite, upscaled 12mm round and modern materials!"
+	desc = "The Z9R Houndmaster, is Nanotrasens custom-built weapon for SDF special-forces. Features a onboard targeting suite, upscaled .338L round and modern materials!"
 	icon = 'icons/obj/guns/hornet.dmi'
 	icon_state = "hornet"
 	item_state = "hornet"
@@ -123,7 +123,7 @@
 
 /obj/item/weapon/gun/projectile/hornetsniper/civ
 	name = "nanotrasen Z9RC Kentucky"
-	desc = "The Z9R Houndmaster, is Nanotrasens custom-built weapon for SDF special-forces. Features a onboard targeting suite, upscaled 12mm round and modern materials! \
+	desc = "The Z9R Houndmaster, is Nanotrasens custom-built weapon for SDF special-forces. Features a onboard targeting suite, upscaled .338L round and modern materials! \
 	this particular model is made for the civilian market. Meaning it can only be chambered with a single round and cycled manually."
 	handle_casings = HOLD_CASINGS
 	max_shells = 1

@@ -25,7 +25,7 @@
 
 /datum/uplink_item/item/ammo/speedloader
 	name = "Speedloader"
-	desc = "A speedloader for 15mm revolvers. Contains 6 rounds."
+	desc = "A speedloader for .44 revolvers. Contains 6 rounds."
 	item_cost = 3
 	path = /obj/item/ammo_magazine/speedloader/magnum
 

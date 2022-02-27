@@ -567,13 +567,13 @@
 	materials = list(MATERIAL_STEEL = 7000)
 
 /datum/design/item/mechfab/mech_ammo/ar
-	name = "large 7mmR ammo box"
+	name = "large 6.5mm ammo box"
 	id = "mech_ar_ammo"
 	build_path = /obj/item/ammo_magazine/mech/rifle
 	materials = list(MATERIAL_STEEL = 9000)
 
 /datum/design/item/mechfab/mech_ammo/har
-	name = "large 5mm ammo box"
+	name = "large .338L ammo box"
 	id = "mech_HAR_ammo"
 	build_path = /obj/item/ammo_magazine/mech/mil_rifle
 	materials = list(MATERIAL_STEEL = 9000)
