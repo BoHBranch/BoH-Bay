@@ -450,7 +450,7 @@
 		"Sol Federal Chaperone",
 		"Marine Embassy Guard")
 	skill_points = 24
-	access = list(access_representative, access_maint_tunnels, access_bridge, access_solgov_crew)
+	access = list(access_representative, access_maint_tunnels, access_bridge, access_solgov_crew, access_sec_guard)
 	defer_roundstart_spawn = TRUE
 
 /datum/job/solguard/is_position_available()
