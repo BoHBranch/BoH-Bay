@@ -84,4 +84,4 @@
 /obj/item/device/encryptionkey/federal
 	name = "federal encryption key"
 	icon_state = "com_cypherkey"
-	channels = list("Command" = 1, "Infantry" = 1, "Engineering" = 1, "Security" = 1)
+	channels = list("Command" = 1)
