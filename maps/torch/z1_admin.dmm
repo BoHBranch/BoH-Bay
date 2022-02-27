@@ -9275,6 +9275,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/reagentgrinder,
 /turf/simulated/floor/wood,
 /area/merchant_station)
 "aQa" = (
@@ -11059,7 +11060,6 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/mob/living/exosuit/premade/powerloader,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aWJ" = (
