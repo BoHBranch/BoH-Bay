@@ -449,7 +449,7 @@
 		"Sol Federal Assistant",
 		"Sol Federal Chaperone",
 		"Marine Embassy Guard")
-	skill_points = 32
+	skill_points = 24
 	access = list(access_representative, access_maint_tunnels, access_bridge, access_solgov_crew)
 	defer_roundstart_spawn = TRUE
 
