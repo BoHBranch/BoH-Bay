@@ -3109,6 +3109,7 @@
 #include "code\modules\sprite_accessories\_accessory.dm"
 #include "code\modules\sprite_accessories\_accessory_facial.dm"
 #include "code\modules\sprite_accessories\_accessory_hair.dm"
+#include "code\modules\sprite_accessories\_accessory_hair_fade.dm"
 #include "code\modules\sprite_accessories\_accessory_markings.dm"
 #include "code\modules\sprite_accessories\_accessory_skin.dm"
 #include "code\modules\sprite_accessories\accessory_booster.dm"
