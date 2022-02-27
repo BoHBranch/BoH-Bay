@@ -383,7 +383,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/solrep
 	alt_titles = list(
 		"Sol Gov Diplomat",
-		"Sol Gov Negotiator", 
+		"Sol Gov Negotiator",
 		"Sol Gov Political Officer")
 	allowed_branches = list(
 		/datum/mil_branch/solgov
@@ -404,9 +404,7 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-	access = list(access_representative, access_security, access_medical, 
-					access_maint_tunnels, access_bridge, access_janitor, 
-					access_cargo, access_hangar, access_solgov_crew)
+	access = list(access_representative, access_maint_tunnels, access_bridge, access_solgov_crew)
 
 
 /datum/job/solrep/get_description_blurb()
@@ -452,9 +450,7 @@
 		"Sol Federal Chaperone",
 		"Marine Embassy Guard")
 	skill_points = 20
-	access = list(access_representative, access_security, access_medical,
-					access_bridge, access_janitor, access_cargo, 
-					access_hangar, access_solgov_crew, access_sec_guard)
+	access = list(access_representative, access_maint_tunnels, access_bridge, access_solgov_crew)
 	defer_roundstart_spawn = TRUE
 
 /datum/job/solguard/is_position_available()
