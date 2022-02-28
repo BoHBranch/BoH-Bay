@@ -4842,7 +4842,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/maintenance{
-	locked = 1
+	locked = 0
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
@@ -11770,7 +11770,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/maintenance{
-	locked = 1
+	locked = 0
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
