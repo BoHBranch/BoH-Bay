@@ -4,6 +4,7 @@
 	icon = 'icons/obj/modular_tablet.dmi'
 	icon_state = "tablet"
 	icon_state_unpowered = "tablet"
+	item_state = "tablet"
 
 	hardware_flag = PROGRAM_TABLET
 	max_hardware_size = 1
@@ -17,3 +18,4 @@
 	desc = "A small, portable microcomputer. This one has a gold and blue stripe, and a serial number stamped into the case."
 	icon_state = "tabletsol"
 	icon_state_unpowered = "tabletsol"
+	item_state = "tabletsol"
