@@ -125,7 +125,7 @@
 
 //rifle
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg
-	name = "Z-6 Komodo Automatic Rifle"
+	name = "Z6 Komodo"
 	desc = "The Hephaestus Industries Z6 Komodo is an old bullpup carbine conversion. \
 	It is equiped with a heavy barrel for combat, ensuring better accuracy and velocity for penetration at the cost of firerate and magazine size."
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
