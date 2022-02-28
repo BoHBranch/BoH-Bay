@@ -2029,8 +2029,6 @@
 /obj/item/weapon/gun/launcher/alien/spikethrower,
 /obj/item/weapon/gun/energy/sonic,
 /obj/item/weapon/gun/launcher/alien/slugsling,
-/obj/item/weapon/gun/energy/darkmatter,
-/obj/item/weapon/gun/energy/darkmatter,
 /obj/item/weapon/gun/energy/sonic,
 /obj/item/weapon/gun/launcher/alien/spikethrower,
 /turf/simulated/floor/reinforced/vox,
@@ -3793,7 +3791,6 @@
 /turf/simulated/floor/reinforced/oxygen,
 /area/voxship/engineering)
 "Ht" = (
-/obj/machinery/light,
 /obj/machinery/atmospherics/portables_connector{
 	dir = 1
 	},
