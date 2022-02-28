@@ -161,4 +161,3 @@ datum/gear/bible/vox
 	books["kihikihi"] = /obj/item/weapon/storage/bible/kihikihi
 	books["kritika"] = /obj/item/weapon/storage/bible/kritika
 	gear_tweaks += new/datum/gear_tweak/path(books)
-
