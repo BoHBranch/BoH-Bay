@@ -12361,7 +12361,8 @@
 /obj/machinery/door/window/brigdoor/westright{
 	dir = 8;
 	name = "CE's Equipment Storage";
-	req_access = list("ACCESS_CHIEF_ENGINEER")
+	req_access = list("ACCESS_CHIEF_ENGINEER");
+	autoset_access = 0
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced{
