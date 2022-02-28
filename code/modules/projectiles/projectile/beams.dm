@@ -301,9 +301,8 @@
 /obj/item/projectile/beam/darkmatter
 	name = "dark matter bolt"
 	icon_state = "darkb"
-	damage = 50
-	armor_penetration = 65
-	damage_flags = DAM_DISPERSED
+	damage = 30
+	armor_penetration = 25
 	muzzle_type = /obj/effect/projectile/darkmatter/muzzle
 	tracer_type = /obj/effect/projectile/darkmatter/tracer
 	impact_type = /obj/effect/projectile/darkmatter/impact
