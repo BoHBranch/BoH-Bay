@@ -17,7 +17,7 @@
 	ruling_body = "Krukzuz"
 	distance = "20 light-years"
 
-/decl/cultural_info/location/tersten
+/decl/cultural_info/location/tersten_unathi
 	name = HOME_SYSTEM_UNATHI_TERSTEN
 	description = "Tersten opened it's arms to Unathi in the wake of the golden age. Though the clans still enjoy a great deal \
 	of autonomy on the human centric planet, the two people's share a great deal of cooperation with one another. The Tersten \
