@@ -1715,19 +1715,19 @@
 	dir = 6
 	},
 /obj/item/weapon/storage/bible/kojiki{
-	name = "The teaching of Chakala";
-	desc = "It contains a collection of knowledge passed down through generation. It has a symbol of a golden trinity of eyes on it.";
+	name = "Codex of Chakala";
+	desc = "The collection of knowledge from a long dead civilization, from science to culture. Three golden eyes are engraved on the cover of the tome.";
 	deity_name = "Chakala"
 	},
 /obj/item/weapon/storage/bible/tanakh{
 	deity_name = "Kihikihi";
-	name = "The wisdom of Kihikihi";
-	desc = "It tells tales about how Kihikihi protect their children from either this plane of reality or another. It is a symbol of a lone feather, glowing bright blue on it."
+	name = "Cloak of Kihikihi";
+	desc = "A collection of fables and helpful tips on stealth and survival, centered around a neither living-nor-dead Auralis. A single feather decorates the cover, a brilliant shimmering blue."
 	},
 /obj/item/weapon/storage/bible/aqdas{
 	deity_name = "Kritika";
-	name = "Kritika book of conquest";
-	desc = "It contains the wisdom on how to both be mightful in diplomatic as well as in military strength. It has a symbol of an outstretched claw, talons embossed over an open flame on it."
+	name = "Blade of Kritika";
+	desc = "The cover is decorated with an outstretched claw, talons embossed over an open flame. Inside, it contains the wisdom of how to employ both diplomatic and military strength, along with numerous tales of conquest and statecraft from a long dead Auralis."
 	},
 /turf/simulated/floor/carpet/purple,
 /area/voxship/hoard)
