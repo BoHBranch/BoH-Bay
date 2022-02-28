@@ -91,7 +91,7 @@
 	path = /obj/item/clothing/accessory/armor/tag/nt/dagon
 	allowed_branches = NT_BRANCHES
 	cost = 0 // Ditto.
-	
+
 // Armor plates
 /datum/gear/tactical/armor_plate_light
 	display_name = "Light armor plate"
@@ -99,9 +99,26 @@
 	path = /obj/item/clothing/accessory/armorplate
 	cost = 3
 	allowed_branches = TACTICOOL_BRANCHES
-	
+
 /// Limb guards
 // Arms
+/datum/gear/tactical/arm_guards
+	display_name = "arm guards selection"
+	description = "A selection of military arm guards. Attaches to plate carrier."
+	path = /obj/item/clothing/accessory/armguards
+	cost = 1
+	allowed_roles = ARMORED_ROLES
+	allowed_branches = TACTICOOL_BRANCHES
+
+/datum/gear/tactical/arm_guards/New()
+	..()
+	var/arm_guards = list()
+	arm_guards["black arm guards"] = /obj/item/clothing/accessory/armguards
+	arm_guards["navy arm guards"] = /obj/item/clothing/accessory/armguards/navy
+	arm_guards["blue arm guards"] = /obj/item/clothing/accessory/armguards/blue
+	arm_guards["green arm guards"] = /obj/item/clothing/accessory/armguards/green
+	arm_guards["tan arm guards"] = /obj/item/clothing/accessory/armguards/tan
+	gear_tweaks += new/datum/gear_tweak/path(arm_guards)
 
 /datum/gear/tactical/arm_guards_light
 	display_name = "arm pads selection"
@@ -124,6 +141,23 @@
 	path = /obj/item/clothing/accessory/armguards/light/grey
 
 // Legs
+/datum/gear/tactical/leg_guards
+	display_name = "leg guards selection"
+	description = "A selection of military leg guards. Attaches to plate carrier."
+	path = /obj/item/clothing/accessory/legguards
+	cost = 1
+	allowed_roles = ARMORED_ROLES
+	allowed_branches = TACTICOOL_BRANCHES
+
+/datum/gear/tactical/leg_guards/New()
+	..()
+	var/leg_guards = list()
+	leg_guards["black leg guards"] = /obj/item/clothing/accessory/legguards
+	leg_guards["navy leg guards"] = /obj/item/clothing/accessory/legguards/navy
+	leg_guards["blue leg guards"] = /obj/item/clothing/accessory/legguards/blue
+	leg_guards["green leg guards"] = /obj/item/clothing/accessory/legguards/green
+	leg_guards["tan leg guards"] = /obj/item/clothing/accessory/legguards/tan
+	gear_tweaks += new/datum/gear_tweak/path(leg_guards)
 
 /datum/gear/tactical/leg_guards_light
 	display_name = "leg pads selection"

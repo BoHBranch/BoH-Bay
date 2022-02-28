@@ -51,9 +51,11 @@
 	ammo_type = /obj/item/ammo_casing/pistol
 	fire_sound = 'sound/weapons/gunshot/revolver_small.ogg'
 	desc = "The Lumoco Arms' Mk12 is a rugged revolver for people who don't keep their guns well-maintained. Unlike its cousin, the Mk59 'Jhen Bothus', it has no issues with reliability."
-	accuracy = 1
+	accuracy = 2
 	bulk = 0
-	fire_delay = 9
+	fire_delay = 14
+	penetration_mod = 10
+	falloff_mod = -0.5
 
 /obj/item/weapon/gun/projectile/revolver/medium/sec/pepper
 	ammo_type = /obj/item/ammo_casing/pistol/rubber/pepperball

@@ -50,6 +50,7 @@
 		"nav_deck2_calypso",
 		"nav_deck2_guppy",
 		"nav_deck2_aquila",
+		"nav_hangar_rawlship_torch",
 
 		//start Forth Deck
 		"nav_merc_deck4",
