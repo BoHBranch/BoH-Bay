@@ -751,7 +751,7 @@
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/engineering)
 "bR" = (
-/obj/structure/ship_munition/disperser_charge/s2s,
+/obj/structure/ship_munition/disperser_charge/fire,
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
 "bS" = (
@@ -8717,7 +8717,7 @@
 /turf/simulated/floor/tiled/skrell/red,
 /area/voxship/med)
 "xo" = (
-/obj/structure/ship_munition/disperser_charge/s2s,
+/obj/structure/ship_munition/disperser_charge/emp,
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
 "yv" = (
@@ -8899,7 +8899,7 @@
 /area/voxship/engineering)
 "NO" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ship_munition/disperser_charge/s2s,
+/obj/structure/ship_munition/disperser_charge/fire,
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
 "NZ" = (
@@ -8995,12 +8995,12 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "VC" = (
-/obj/structure/ship_munition/disperser_charge/s2s,
-/obj/structure/ship_munition/disperser_charge/s2s,
+/obj/structure/ship_munition/disperser_charge/fire,
 /turf/simulated/floor/plating/vox,
-/area/voxship/ship_fore)
+/area/voxship/med)
 "VX" = (
 /obj/machinery/light/small/red,
+/obj/structure/ship_munition/disperser_charge/fire,
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
 "Wd" = (
@@ -9008,10 +9008,10 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
 "WE" = (
-/obj/structure/ship_munition/disperser_charge/s2s,
 /obj/machinery/light/small/red{
 	dir = 1
 	},
+/obj/structure/ship_munition/disperser_charge/emp,
 /turf/simulated/floor/plating/vox,
 /area/voxship/med)
 "Xb" = (
@@ -24694,8 +24694,8 @@ rv
 qT
 fC
 xo
-xo
 rg
+VC
 tS
 sT
 tS
@@ -24896,7 +24896,7 @@ rp
 oH
 fC
 WE
-Wd
+rg
 VX
 tS
 aS
@@ -25681,7 +25681,7 @@ ae
 an
 ak
 uz
-aN
+av
 av
 as
 aW
@@ -25883,7 +25883,7 @@ ae
 an
 ak
 av
-aN
+av
 av
 as
 cS
@@ -26085,7 +26085,7 @@ ae
 an
 ak
 av
-dT
+bR
 dT
 as
 dR
@@ -26286,8 +26286,8 @@ ae
 ae
 an
 ak
-av
-dT
+bR
+bR
 dT
 cf
 dT
@@ -26489,7 +26489,7 @@ ae
 an
 ak
 bR
-dT
+bR
 dT
 hI
 cm
@@ -26690,9 +26690,9 @@ ae
 ae
 an
 ak
-LO
-dT
 NO
+bR
+ii
 cf
 cz
 bv
@@ -26893,8 +26893,8 @@ ae
 an
 ak
 LO
-dT
-NO
+aN
+ii
 nj
 ax
 bs
@@ -27095,8 +27095,8 @@ ae
 an
 ak
 RS
-bR
-bR
+aN
+aN
 as
 ck
 bs
@@ -27297,8 +27297,8 @@ ae
 an
 ak
 ak
-VC
-bR
+aN
+aN
 ba
 by
 bs
