@@ -52,8 +52,8 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "aG" = (
-/obj/machinery/porta_turret/exterior/ssv{
-	desc = "Vox Anti-boarder measure.";
+/obj/machinery/porta_turret/exterior{
+	name = "Vox Anti-boarder turret";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/structure/window/phoronreinforced,
@@ -365,8 +365,8 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "ep" = (
-/obj/machinery/porta_turret/exterior/ssv{
-	desc = "Vox Anti-boarder measure.";
+/obj/machinery/porta_turret/exterior{
+	name = "Vox Anti-boarder turret";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/reinforced/airless,
@@ -432,6 +432,18 @@
 	initial_gas = list("nitrogen" = 103)
 	},
 /area/voxship/ship_aft)
+"eG" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/computer/modular{
+	dir = 4
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/ofd_lower)
 "eI" = (
 /obj/machinery/ion_engine{
 	dir = 8
@@ -648,18 +660,6 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/birg)
-"gl" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/computer/modular{
-	dir = 4
-	},
-/turf/simulated/floor/reinforced/vox,
-/area/voxship/ofd_lower)
 "gr" = (
 /obj/machinery/light{
 	dir = 4;
@@ -1035,8 +1035,8 @@
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/ship_aft)
 "jl" = (
-/obj/machinery/porta_turret/exterior/ssv{
-	desc = "Vox Anti-boarder measure.";
+/obj/machinery/porta_turret/exterior{
+	name = "Vox Anti-boarder turret";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/reinforced/airless,
@@ -1399,8 +1399,8 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "lT" = (
-/obj/machinery/porta_turret/exterior/ssv{
-	desc = "Vox Anti-boarder measure.";
+/obj/machinery/porta_turret/exterior{
+	name = "Vox Anti-boarder turret";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/structure/window/phoronreinforced,
@@ -1677,11 +1677,6 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
-"oq" = (
-/obj/effect/wallframe_spawn/alien,
-/obj/structure/ship_munition/disperser_charge/ascent,
-/turf/space,
-/area/space)
 "ou" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1870,8 +1865,8 @@
 /turf/simulated/floor/reinforced,
 /area/voxship/dock)
 "pa" = (
-/obj/machinery/porta_turret/exterior/ssv{
-	desc = "Vox Anti-boarder measure.";
+/obj/machinery/porta_turret/exterior{
+	name = "Vox Anti-boarder turret";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/reinforced/airless,
@@ -3175,8 +3170,8 @@
 	},
 /area/voxship/ofd_lower)
 "Ay" = (
-/obj/machinery/porta_turret/exterior/ssv{
-	desc = "Vox Anti-boarder measure.";
+/obj/machinery/porta_turret/exterior{
+	name = "Vox Anti-boarder turret";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/structure/window/phoronreinforced{
@@ -3570,6 +3565,11 @@
 /area/voxship/ofd_upper{
 	 = 
 	})
+"DN" = (
+/obj/effect/wallframe_spawn/alien,
+/obj/structure/ship_munition/disperser_charge/ascent,
+/turf/space,
+/area/space)
 "DO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -3760,8 +3760,8 @@
 /turf/simulated/floor/reinforced/nitrogen,
 /area/voxship/engineering)
 "Fe" = (
-/obj/machinery/porta_turret/exterior/ssv{
-	desc = "Vox Anti-boarder measure.";
+/obj/machinery/porta_turret/exterior{
+	name = "Vox Anti-boarder turret";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/structure/window/phoronreinforced{
@@ -3971,8 +3971,8 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
 "Ho" = (
-/obj/machinery/porta_turret/exterior/ssv{
-	desc = "Vox Anti-boarder measure.";
+/obj/machinery/porta_turret/exterior{
+	name = "Vox Anti-boarder turret";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/reinforced/airless,
@@ -4066,8 +4066,8 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_fore)
 "Io" = (
-/obj/machinery/porta_turret/exterior/ssv{
-	desc = "Vox Anti-boarder measure.";
+/obj/machinery/porta_turret/exterior{
+	name = "Vox Anti-boarder turret";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/structure/window/phoronreinforced,
@@ -5866,8 +5866,8 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "Xw" = (
-/obj/machinery/porta_turret/exterior/ssv{
-	desc = "Vox Anti-boarder measure.";
+/obj/machinery/porta_turret/exterior{
+	name = "Vox Anti-boarder turret";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/reinforced/airless,
@@ -12560,7 +12560,7 @@ Jk
 Jk
 cZ
 cZ
-oq
+DN
 Jk
 Ik
 cZ
@@ -13926,7 +13926,7 @@ Ts
 cE
 sY
 SF
-gl
+eG
 Bt
 Em
 Nd
