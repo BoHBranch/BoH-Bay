@@ -174,7 +174,7 @@
 	item_state = "skrell_rifle"
 	one_hand_penalty = 3
 	fire_delay = 10
-	slowdown_held = 2
+	slowdown_held = 1
 	slowdown_worn = 1
 	screen_shake = 0 //screenshake breaks the scope.
 	scoped_accuracy = 4

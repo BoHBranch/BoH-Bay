@@ -2,15 +2,16 @@
 	name = "Hephaestus Stunner"
 	desc = "The Hephaestus Stunner is a cheap and effective stungun designed for the Military Police!"
 	icon = 'icons/obj/guns/taser.dmi'
-	icon_state = "taser"
+	icon_state = "taserstun"
 	item_state = null	//so the human update icon uses the icon_state instead.
+	modifystate = "taserstun"
 	max_shots = 5
 	projectile_type = /obj/item/projectile/beam/stun
 	combustion = 0
 
 	firemodes = list(
-		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun),
-		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock),
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="taserstun"),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="tasershock"),
 		)
 
 /obj/item/weapon/gun/energy/taser/carbine

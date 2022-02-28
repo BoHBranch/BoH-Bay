@@ -18,13 +18,10 @@
 		/datum/unarmed_attack/bite/strong
 	)
 	rarity_value = 4
-	description = "The Vox are a people most ancient, each one having existed well before the evolution of\
-	humanity, led by the Auralis to guide the galaxy to a glorious evolution. Since the fall of the empire\
-	and the disappearance of the Auralis, the Vox have struggled to reclaim their lost influence and territory.\
-	Maintaining their remaining Arks are the revered Apex and their talons, the Ark-Admirals, and the Quill-Captains\
-	fielded under their command.</BR></BR>\
-	From battleship to corvette, Scavenger to Biotechnician, recent demand for action has seen new fleets formed\
-	and territory claimed by the long-dormant nation.</BR></BR>\
+	description = "The Vox are a people most ancient, each one having existed well before the evolution of humanity, led by the Auralis to guide the galaxy to a glorious evolution. \
+	Since the fall of the empire and the disappearance of the Auralis, the Vox have struggled to reclaim their lost influence and territory. \
+	Maintaining their remaining Arks are the revered Apex and their talons, the Ark-Admirals, and the Quill-Captains fielded under their command. <br/><br/>\
+	From battleship to corvette, Scavenger to Biotechnician, recent demand for action has seen new fleets formed and territory claimed by the long-dormant nation. <br/><br/>\
 	The Vox are a proud people, and face much distrust from the galactic community, but this does not seem to deter them."
 	codex_description = "The Vox are a cautious, defensive species from the outer systems and beyond human space. They\
 	reveal little to the outside world, but are known to trade and cooperate with those they find trustworthy. When\
@@ -155,6 +152,10 @@
 	strength = STR_HIGH
 	mob_size = MOB_LARGE
 
+	base_auras = list(
+		/obj/aura/regenerating/human/armalis
+		)
+
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp/armalis,
 		/datum/unarmed_attack/claws/armalis,
@@ -188,6 +189,7 @@
 		to_chat(grabber, SPAN_WARNING("You drop everything in a rage as you seize \the [target]!"))
 		playsound(grabber.loc, 'sound/weapons/pierce.ogg', 25, 1, -1)
 	. = ..(grabber, target, GRAB_ARMALIS)
+
 
 /*
 /datum/species/vox/pariah

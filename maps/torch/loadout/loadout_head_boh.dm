@@ -24,7 +24,7 @@
 	display_name = "fleet cap"
 	path = /obj/item/clothing/head/soft/solgov/fleet
 	cost = 0
-	allowed_branches = NT_BRANCHES
+	allowed_branches = list(/datum/mil_branch/fleet)
 
 /datum/gear/head/corpsecberet
 	display_name = "corporate security beret"

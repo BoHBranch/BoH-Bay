@@ -1447,7 +1447,6 @@
 /area/ship/skrellscoutship/maintenance/atmos)
 "qL" = (
 /obj/machinery/chemical_dispenser/full{
-	density = 0;
 	name = "old chemical dispenser"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -2335,9 +2334,7 @@
 	start_pressure = 1900;
 	temperature = 313.15
 	},
-/obj/machinery/atmospherics/portables_connector{
-	dir = 1
-	},
+/obj/machinery/atmospherics/portables_connector,
 /turf/simulated/floor/tiled/skrell,
 /area/ship/skrellscoutship/dock/alt)
 "zN" = (
@@ -4347,7 +4344,9 @@
 /area/ship/skrellskoutship/observatory)
 "Tn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/closet/crate/secure/biohazard/alt,
+/obj/structure/closet/crate/secure/biohazard/alt{
+	req_access = list()
+	},
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
 "Ts" = (
@@ -4600,7 +4599,6 @@
 	pixel_y = 23
 	},
 /obj/machinery/chemical_dispenser/full{
-	density = 0;
 	name = "old chemical dispenser"
 	},
 /turf/simulated/floor/tiled/skrell/white,

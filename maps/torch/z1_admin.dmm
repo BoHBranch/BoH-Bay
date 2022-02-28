@@ -9275,6 +9275,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/reagentgrinder,
 /turf/simulated/floor/wood,
 /area/merchant_station)
 "aQa" = (
@@ -9889,6 +9890,12 @@
 /turf/simulated/floor/tiled,
 /area/shuttle/merchant/home)
 "aSK" = (
+/obj/machinery/button/blast_door{
+	id_tag = "merchant_station_hatchr";
+	name = "Rear Hatch Control";
+	pixel_y = -24;
+	req_access = list("ACCESS_MERCHANT")
+	},
 /turf/simulated/floor/plating,
 /area/shuttle/merchant/home)
 "aSL" = (
@@ -9916,6 +9923,11 @@
 	dir = 2;
 	frequency = 1380;
 	id_tag = "merchant_ship_vent"
+	},
+/obj/machinery/airlock_sensor{
+	frequency = 1380;
+	id_tag = "merchant_ship_sensor";
+	pixel_y = 38
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/merchant/home)
@@ -10075,12 +10087,6 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4;
 	icon_state = "map"
-	},
-/obj/machinery/airlock_sensor{
-	frequency = 1380;
-	id_tag = "merchant_ship_sensor";
-	pixel_x = 28;
-	pixel_y = 0
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/merchant/home)
@@ -11054,8 +11060,6 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/mob/living/exosuit/premade/powerloader{
-	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aWJ" = (
@@ -11525,6 +11529,10 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_volleyball)
+"bWN" = (
+/obj/machinery/hologram/holopad/longrange,
+/turf/simulated/floor/wood,
+/area/merchant_station)
 "bXW" = (
 /obj/structure/table/rack,
 /obj/item/stack/material/rods{
@@ -12199,6 +12207,16 @@
 	},
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"ocj" = (
+/obj/effect/paint/silver,
+/obj/machinery/door/blast/regular{
+	dir = 4;
+	id_tag = "merchant_station_hatch";
+	name = "Rear Hatch"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/shuttle/merchant/home)
 "oiM" = (
 /obj/structure/closet,
 /obj/item/clothing/shoes/laceup,
@@ -12254,6 +12272,15 @@
 	name = "Shuttle Bay Blast Door"
 	},
 /area/syndicate_elite_squad)
+"oOo" = (
+/obj/machinery/door/blast/regular{
+	dir = 4;
+	id_tag = "merchant_station_hatch";
+	name = "Loading Hatch"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/plating,
+/area/merchant_station)
 "pgJ" = (
 /obj/structure/holostool,
 /turf/simulated/floor/holofloor/tiled/stone,
@@ -12500,6 +12527,18 @@
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_cafe)
+"tUB" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/button/blast_door{
+	id_tag = "merchant_station_hatch";
+	name = "Loading Hatch Control";
+	pixel_x = -32;
+	pixel_y = -32;
+	req_access = list("ACCESS_MERCHANT")
+	},
+/turf/simulated/floor/tiled,
+/area/merchant_station)
 "ufC" = (
 /obj/structure/table/holo_woodentable,
 /turf/simulated/floor/holofloor/concrete,
@@ -12590,6 +12629,19 @@
 /obj/effect/paint/black,
 /turf/simulated/floor/plating,
 /area/shuttle/administration/centcom)
+"wsO" = (
+/obj/effect/paint/silver,
+/obj/effect/wallframe_spawn/reinforced/titanium,
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 2;
+	icon_state = "shutter0";
+	id_tag = "merchantshuttle";
+	name = "Merchant Window Shutters";
+	opacity = 0
+	},
+/turf/simulated/floor/plating,
+/area/shuttle/merchant/home)
 "wCv" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -12603,6 +12655,10 @@
 "wDD" = (
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_temple)
+"wKN" = (
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/plating,
+/area/merchant_station)
 "xqW" = (
 /obj/structure/bed/chair/wood{
 	holographic = 1
@@ -20758,7 +20814,7 @@ aMW
 aMC
 aNU
 aNU
-aNU
+bWN
 aQa
 aOw
 aab
@@ -23189,9 +23245,9 @@ aRo
 aOw
 aab
 aRA
-aRA
-aRA
-aRA
+wsO
+ocj
+wsO
 aRA
 aMf
 aUx
@@ -23391,8 +23447,8 @@ aRp
 aOw
 aOw
 aRn
-aMf
-aMf
+wKN
+oOo
 aMf
 aRn
 aMf
@@ -23594,7 +23650,7 @@ aRD
 aPd
 aPd
 aPd
-aPd
+tUB
 aPd
 aTZ
 aPd

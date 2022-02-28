@@ -7360,7 +7360,7 @@
 /area/vacant/prototype/engine)
 "nP" = (
 /obj/structure/sign/directions/security{
-	dir = 2;
+	dir = 1;
 	pixel_y = -4;
 	pixel_z = 0
 	},
@@ -7372,7 +7372,7 @@
 /area/hallway/primary/seconddeck/center)
 "nQ" = (
 /obj/structure/sign/directions/security{
-	dir = 2;
+	dir = 1;
 	pixel_y = -4;
 	pixel_z = 0
 	},

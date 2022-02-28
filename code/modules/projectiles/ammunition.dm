@@ -16,6 +16,7 @@
 	var/obj/item/projectile/BB = null	//The loaded bullet - make it so that the projectiles are created only when needed?
 	var/spent_icon = "pistolcasing-spent"
 	var/fall_sounds = list('sound/weapons/guns/casingfall1.ogg','sound/weapons/guns/casingfall2.ogg','sound/weapons/guns/casingfall3.ogg')
+	var/ammo_stack = null 				//Put the path of the ammo stack you'd like to create here. It creates an ammo stack when you combine two of the same ammo type.
 
 /obj/item/ammo_casing/Initialize()
 	if(ispath(projectile_type))
@@ -60,6 +61,14 @@
 		LAZYDISTINCTADD(A.gunshot_residue, caliber)
 
 /obj/item/ammo_casing/attackby(obj/item/weapon/W as obj, mob/user as mob)
+	if(istype(W, /obj/item/ammo_casing)) // merges it into handfuls.
+		if(src.type == W.type)
+			var/obj/item/ammo_casing/A = W
+			if(A.BB && src.BB && ammo_stack)
+				var/obj/item/ammo_magazine/handful/H = new ammo_stack(src.loc)
+				H.update_icon()
+				qdel(src)
+				qdel(A)
 	if(isScrewdriver(W))
 		if(!BB)
 			to_chat(user, "<span class='notice'>There is no bullet in the casing to inscribe anything into.</span>")

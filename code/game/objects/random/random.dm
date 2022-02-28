@@ -1121,7 +1121,6 @@ something, make sure it's not in one of the other lists.*/
 	return list(/obj/item/weapon/rig/industrial,
 				/obj/item/weapon/rig/eva,
 				/obj/item/weapon/rig/light/hacker,
-				/obj/item/weapon/rig/light/stealth,
 				/obj/item/weapon/rig/light,
 				/obj/item/weapon/rig/unathi)
 
