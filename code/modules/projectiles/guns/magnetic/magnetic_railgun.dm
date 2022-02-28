@@ -150,7 +150,7 @@
 	removable_components = FALSE
 	initial_cell_type = /obj/item/weapon/cell/hyper
 	initial_capacitor_type = /obj/item/weapon/stock_parts/capacitor/adv
-	slot_flags = SLOT_BACK
+	slot_flags = SLOT_BACK|SLOT_BELT
 	power_cost = 100
 	load_type = /obj/item/weapon/magnetic_ammo
 	projectile_type = /obj/item/projectile/bullet/magnetic/flechette
