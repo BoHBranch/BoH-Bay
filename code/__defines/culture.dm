@@ -174,7 +174,7 @@
 
 #define HOME_SYSTEM_MOGHES          "Moghes"
 #define HOME_SYSTEM_OUERE           "Ouere"
-#define HOME_SYSTEM_UNATHI_TERSTEN  "Tersten"
+#define HOME_SYSTEM_UNATHI_TERSTEN  "Tersten - Unathi Clans"
 #define HOME_SYSTEM_OFFWORLD        "Off-world"
 
 #define FACTION_UNATHI_CLAN          "Clan Focused"
