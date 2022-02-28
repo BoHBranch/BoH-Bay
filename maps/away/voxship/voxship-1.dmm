@@ -50,7 +50,9 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "aG" = (
-/obj/machinery/porta_turret/ssv/vox,
+/obj/machinery/porta_turret/vox{
+	id_tag = "voxpdlt'
+	},
 /obj/structure/window/phoronreinforced,
 /obj/structure/window/phoronreinforced{
 	dir = 4
@@ -356,7 +358,9 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "ep" = (
-/obj/machinery/porta_turret/ssv/vox,
+/obj/machinery/porta_turret/vox{
+	id_tag = "voxpdlt'
+	},
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/ship_aft)
 "eu" = (
@@ -998,7 +1002,9 @@
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/ship_aft)
 "jl" = (
-/obj/machinery/porta_turret/ssv/vox,
+/obj/machinery/porta_turret/vox{
+	id_tag = "voxpdlt'
+	},
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/ship_fore)
 "jn" = (
@@ -1088,6 +1094,9 @@
 	},
 /obj/structure/window/phoronreinforced{
 	dir = 4
+	},
+/obj/machinery/porta_turret/vox{
+	id_tag = "voxpdlt'
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/ship_aft)
@@ -1345,7 +1354,9 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "lT" = (
-/obj/machinery/porta_turret/ssv/vox,
+/obj/machinery/porta_turret/vox{
+	id_tag = "voxpdlt'
+	},
 /obj/structure/window/phoronreinforced,
 /obj/structure/window/phoronreinforced{
 	dir = 8
@@ -3048,7 +3059,9 @@
 	},
 /area/voxship/ofd)
 "Ay" = (
-/obj/machinery/porta_turret/ssv/vox,
+/obj/machinery/porta_turret/vox{
+	id_tag = "voxpdlt'
+	},
 /obj/structure/window/phoronreinforced{
 	dir = 8
 	},
@@ -3578,7 +3591,9 @@
 /turf/simulated/floor/reinforced/nitrogen,
 /area/voxship/engineering)
 "Fe" = (
-/obj/machinery/porta_turret/ssv/vox,
+/obj/machinery/porta_turret/vox{
+	id_tag = "voxpdlt'
+	},
 /obj/structure/window/phoronreinforced{
 	dir = 1
 	},
@@ -3673,6 +3688,14 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
+"Gu" = (
+/obj/machinery/turretid/lethal{
+	id_tag = "voxpdlt';
+	pixel_y = 32;
+	req_access = list("ACCESS_VOXSHIP")
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/armory)
 "GI" = (
 /obj/structure/cable/yellow,
 /obj/machinery/power/terminal{
@@ -3779,7 +3802,9 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
 "Ho" = (
-/obj/machinery/porta_turret/ssv/vox,
+/obj/machinery/porta_turret/vox{
+	id_tag = "voxpdlt'
+	},
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/engineering)
 "Hr" = (
@@ -3870,7 +3895,9 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_fore)
 "Io" = (
-/obj/machinery/porta_turret/ssv/vox,
+/obj/machinery/porta_turret/vox{
+	id_tag = "voxpdlt'
+	},
 /obj/structure/window/phoronreinforced,
 /obj/structure/window/phoronreinforced{
 	dir = 4
@@ -5525,7 +5552,9 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "Xw" = (
-/obj/machinery/porta_turret/ssv/vox,
+/obj/machinery/porta_turret/vox{
+	id_tag = "voxpdlt'
+	},
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/ofd)
 "Xx" = (
@@ -15831,7 +15860,7 @@ VN
 Il
 QE
 Nx
-YO
+Gu
 qK
 fQ
 YO

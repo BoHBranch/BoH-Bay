@@ -586,7 +586,9 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/dorms)
 "jh" = (
-/obj/machinery/porta_turret/ssv/vox,
+/obj/machinery/porta_turret/vox{
+	id_tag = "voxpdlt'
+	},
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/ship_mid)
 "jq" = (
@@ -909,7 +911,9 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/med)
 "nG" = (
-/obj/machinery/porta_turret/ssv/vox,
+/obj/machinery/porta_turret/vox{
+	id_tag = "voxpdlt'
+	},
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/cbridge)
 "nI" = (
