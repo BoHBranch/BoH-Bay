@@ -2146,9 +2146,6 @@
 /obj/item/weapon/disk/tech_disk,
 /obj/item/weapon/disk/tech_disk,
 /obj/item/weapon/disk/tech_disk,
-/obj/item/weapon/rig/merc{
-	name = "Hide of the Quil"
-	},
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
