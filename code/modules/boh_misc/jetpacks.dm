@@ -9,4 +9,4 @@
 	item_state =  "jetpack-void"
 //	slot_flags = SLOT_BELT //Doesn't work, because jetpacks only function when worn on the back. Spaghetti code ahoy.
 	starting_pressure = list(GAS_NITROGEN = 12*ONE_ATMOSPHERE)
-	volume = 1280
+	volume = 100
