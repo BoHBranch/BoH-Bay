@@ -133,3 +133,21 @@
 	name = OUTFIT_JOB_NAME("Bridge Officer - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
 	shoes = /obj/item/clothing/shoes/dutyboots
+
+/decl/hierarchy/outfit/job/torch/crew/command/solrep
+	name = OUTFIT_JOB_NAME("Sol Gov Representative")
+	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
+	shoes = /obj/item/clothing/shoes/dress
+	suit = /obj/item/clothing/suit/storage/toggle/suit/black
+	id_type = /obj/item/weapon/card/id/torch/crew/representative
+	pda_type = /obj/item/modular_computer/pda/heads
+	l_ear = /obj/item/device/radio/headset/federal
+
+/decl/hierarchy/outfit/job/torch/crew/command/sol_bodyguard
+	name = OUTFIT_JOB_NAME("Sol Federal Agent")
+	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
+	shoes = /obj/item/clothing/shoes/dress
+	id_type = /obj/item/weapon/card/id/torch/crew/solguard
+	suit = /obj/item/clothing/suit/storage/toggle/suit/black/sfp
+	glasses = /obj/item/clothing/glasses/sunglasses
+	l_ear = /obj/item/device/radio/headset/federal

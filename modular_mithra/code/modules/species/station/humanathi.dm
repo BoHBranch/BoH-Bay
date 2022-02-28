@@ -38,13 +38,13 @@
 	max_age = 260
 
 	body_temperature = null // cold-blooded, implemented the same way nabbers do it
-
-	description = "Known as the Veteris'Unathi, this subspecies of Unathi evolved to survive in the clanless ash-ridden \
-	pocket regions of their home planet, also known as \"Ash Plains.\" \
+	description = "Known as the Veteris'Unathi, this subspecies of Unathi evolved to survive in the land down under, \
+	clanless ash-ridden islands of Moghes' world sea, opposite the Sinta, and too inhospitable for Yeosa. \
 	These regions usually contain dangerous and hostile fauna and megafauna, an atmosphere filled with a high concentration of ash particles, and little to no \
-	plant life to snack on. Most Veteris'Unathi have left the dangerous Ash Plains, however generations of exposure to this wasteland have adapted \
+	plant life to snack on. Most Veteris'Unathi have left the dangerous Ash Plains on passing ships, however generations of exposure to this wasteland have adapted \
 	them to eat meat, bones, and bone marrow exclusively, with some eating rocks to assist with digestion of bones. The usual lack of nutrition and slow metabolism, \
-	this subspecies of Unathi are generally shorter than their cousins, however they are still excellent candidates for physical activity due to their resilient and efficient lungs."
+	this subspecies of Unathi are generally shorter than their cousins, however they are still excellent candidates for physical activity due to their resilient and efficient lungs. \
+	Their clanless nature leaves them with no place in society on the main continent, so many Veteris look to space for chances to bring meaning to their lives."
 
 	cold_level_1 = 280 //Default 260 - Lower is better
 	cold_level_2 = 220 //Default 200
@@ -102,24 +102,30 @@
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
-			CULTURE_UNATHI
+			CULTURE_UNATHI_ADOPTED,
+			CULTURE_OTHER,
+			CULTURE_UNATHI_SPACE
 		),
 		TAG_HOMEWORLD = list(
-			HOME_SYSTEM_MOGHES
+			HOME_SYSTEM_MOGHES,
+			HOME_SYSTEM_OUERE,
+			HOME_SYSTEM_UNATHI_TERSTEN,
+			HOME_SYSTEM_OFFWORLD
 		),
 		TAG_FACTION = list(
-			FACTION_UNATHI_POLAR,
-			FACTION_UNATHI_DESERT,
-			FACTION_UNATHI_SAVANNAH,
-			FACTION_UNATHI_DIAMOND_PEAK,
-			FACTION_UNATHI_SALT_SWAMP
+			FACTION_UNATHI_CLAN,
+			FACTION_UNATHI_KRUKZUZ,
+			FACTION_UNATHI_SOL,
+			FACTION_UNATHI_INDEPENDENT
 		),
 		TAG_RELIGION =  list(
 			RELIGION_UNATHI_STRATAGEM,
-			RELIGION_UNATHI_PRECURSOR,
 			RELIGION_UNATHI_VINE,
 			RELIGION_UNATHI_LIGHTS,
-			RELIGION_OTHER
+			RELIGION_UNATHI_MARKESHELI,
+			RELIGION_UNATHI_ANCESTORS,
+			RELIGION_UNATHI_PRECURSOR,
+			RELIGION_UNATHI_OTHER
 		)
 	)
 

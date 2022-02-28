@@ -165,6 +165,9 @@
 	icon_open = "highvis_open"
 	icon_closed = "highvis"
 	blood_overlay_type = "coat"
+	allowed = list (/obj/item/device/scanner/gas, /obj/item/device/flashlight, /obj/item/device/multitool, /obj/item/device/pipe_painter, /obj/item/device/radio, /obj/item/device/t_scanner, \
+	/obj/item/weapon/crowbar, /obj/item/weapon/screwdriver, /obj/item/weapon/weldingtool, /obj/item/weapon/wirecutters, /obj/item/weapon/wrench, /obj/item/weapon/tank/emergency, \
+	/obj/item/clothing/mask/gas, /obj/item/taperoll/engineering)
 	body_parts_covered = UPPER_TORSO|ARMS
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
 
@@ -190,6 +193,12 @@
 /obj/item/clothing/suit/storage/toggle/suit/black
 	name = "black suit jacket"
 	color = "#1f1f1f"
+
+//SFP
+/obj/item/clothing/suit/storage/toggle/suit/black/sfp
+	name = "\improper SFP agent jacket"
+	desc = "A snappy dress jacket. It has the letters 'SFP' embroidered on the cuffs."
+
 
 //Medical
 /obj/item/clothing/suit/storage/toggle/fr_jacket

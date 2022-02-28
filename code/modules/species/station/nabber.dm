@@ -13,7 +13,7 @@
 	antaghud_offset_y = 8
 
 	assisted_langs = list(LANGUAGE_GUTTER, LANGUAGE_UNATHI_SINTA, LANGUAGE_SKRELLIAN, LANGUAGE_HUMAN_EURO, LANGUAGE_EAL, LANGUAGE_HUMAN_RUSSIAN)
-	min_age = 10
+	min_age = 18
 	max_age = 40
 
 	skin_material = MATERIAL_SKIN_CHITIN
@@ -418,6 +418,7 @@
 	years ago and now allies and peers within the Ascent."
 	icobase = 'icons/mob/human_races/species/nabber/body_msw.dmi'
 	deform = 'icons/mob/human_races/species/nabber/body_msw.dmi'
+	assisted_langs = list(LANGUAGE_EAL)
 	spawn_flags = SPECIES_IS_RESTRICTED | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN
 	appearance_flags = 0
 	base_skin_colours = null
@@ -464,7 +465,7 @@
 	genders = list(FEMALE)
 
 	total_health = 200
-
+	assisted_langs = list(LANGUAGE_EAL)
 	mob_size = MOB_MEDIUM
 	breath_pressure = 21
 	blood_volume = 600

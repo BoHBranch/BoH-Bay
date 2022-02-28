@@ -3954,7 +3954,8 @@
 	density = 0;
 	icon_state = "shutter0";
 	id_tag = "saunashutters";
-	name = "privacy shutters"
+	name = "privacy shutters";
+	opacity = 0
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/head/sauna)
@@ -4360,7 +4361,8 @@
 	density = 0;
 	icon_state = "shutter0";
 	id_tag = "saunashutters";
-	name = "privacy shutters"
+	name = "privacy shutters";
+	opacity = 0
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/head/sauna)
@@ -4839,9 +4841,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance{
-	locked = 1
-	},
+/obj/machinery/door/airlock/maintenance,
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
 	d1 = 4;
@@ -11767,9 +11767,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/maintenance{
-	locked = 1
-	},
+/obj/machinery/door/airlock/maintenance,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters_boh/cabin_main/janitorial)
@@ -15096,6 +15094,10 @@
 /obj/random/tank,
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
+"Ch" = (
+/obj/effect/shuttle_landmark/rawl/torch,
+/turf/space,
+/area/space)
 "Cj" = (
 /obj/machinery/light/spot{
 	dir = 4
@@ -29555,7 +29557,7 @@ aa
 aa
 aa
 aa
-aa
+Ch
 aa
 aa
 aa

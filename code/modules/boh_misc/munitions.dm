@@ -21,7 +21,7 @@
 	range_step = 2
 	spread_step = 10
 	agony = 15//up from 8.5
-//	embed = 0
+	embed = 1//shouldn't HAVE to be noted, but, y'know, seems like it's a problem.
 
 //holder
 /obj/item/ammo_magazine/shotholder/birdshot
@@ -86,7 +86,7 @@
 	damage_flags = DAM_EDGE | DAM_DISPERSED | DAM_EXPLODE
 
 	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, 1, 6, 12)
+		explosion(target, 0, 1, 6, 12)
 		return 1
 
 /////////

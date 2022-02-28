@@ -21,6 +21,7 @@
 
 /datum/submap/ascent
 	var/gyne_name
+	var/monarch_name
 
 /datum/submap/ascent/sync_cell(obj/effect/overmap/visitable/cell)
 	return
@@ -75,6 +76,46 @@
 				to_chat(H, SPAN_NOTICE("<font size = 3>Your gyne, [real_name], has awakened, and you recall your place in the nest-lineage: <b>[H.real_name]</b>.</font>"))
 
 	verbs -= /mob/living/carbon/human/proc/gyne_rename_lineage
+
+
+/mob/living/carbon/human/proc/monarch_rename_lineage()
+	set name = "Name Monarch-Lineage"
+	set category = "IC"
+	set desc = "Rename yourself and your workers."
+
+	if(species.name == SPECIES_MONARCH_QUEEN && mind && istype(mind.assigned_job, /datum/job/submap/ascent/msq))
+		var/datum/job/submap/ascent/ascent_job = mind.assigned_job
+		var/datum/submap/ascent/cutter = ascent_job.owner
+		if(istype(cutter))
+
+			var/new_number = input("What is your position in your lineage?", "Name Monarch-Lineage") as num|null
+			if(!new_number)
+				return
+			new_number = Clamp(new_number, 1, 999)
+			var/new_name = sanitize(input("What is the true name of your nest-lineage?", "Name Monarch-Lineage") as text|null, MAX_NAME_LEN)
+			if(!new_name)
+				return
+
+			if(species.name != SPECIES_MONARCH_QUEEN || !mind || mind.assigned_job != ascent_job)
+				return
+
+			// Rename ourselves.
+			fully_replace_character_name("[new_number] [new_name]")
+
+			// Rename our workers
+			cutter.monarch_name = new_name
+			for(var/mob/living/carbon/human/H in GLOB.human_mob_list)
+				if(!H.mind || H.species.name != SPECIES_MONARCH_WORKER)
+					continue
+				var/datum/job/submap/ascent/temp_ascent_job = H.mind.assigned_job
+				if(!istype(temp_ascent_job) || temp_ascent_job.owner != ascent_job.owner)
+					continue
+
+				var/new_monarch_number = random_id(/datum/species/nabber/monarch, 10000, 99999)
+				H.fully_replace_character_name("[new_monarch_number] [new_name]")
+				to_chat(H, SPAN_NOTICE("<font size = 3>Your Queen, [real_name], has awoken. You recall your place in the nest-lineage: <b>[H.real_name]</b>.</font>"))
+
+	verbs -= /mob/living/carbon/human/proc/monarch_rename_lineage
 
 // Jobs.
 /datum/job/submap/ascent
@@ -143,6 +184,12 @@
 		if(SPECIES_MANTID_ALATE)
 			var/new_alate_number = is_species_whitelisted(H, SPECIES_MANTID_GYNE) ? random_id(/datum/species/mantid, 1000, 9999) : random_id(/datum/species/mantid, 10000, 99999)
 			H.real_name = "[new_alate_number] [cutter.gyne_name]"
+		if(SPECIES_MONARCH_QUEEN)
+			H.real_name = "[random_id(/datum/species/nabber/monarch, 1, 99)] [cutter.monarch_name]"
+			H.verbs |= /mob/living/carbon/human/proc/monarch_rename_lineage
+		if(SPECIES_MONARCH_WORKER)
+			var/new_monarch_number = random_id(/datum/species/nabber/monarch, 10000, 99999)
+			H.real_name = "[new_monarch_number] [cutter.monarch_name]"
 	H.name = H.real_name
 	if(H.mind)
 		H.mind.name = H.real_name
@@ -183,6 +230,7 @@
 					SKILL_WEAPONS = SKILL_ADEPT,
 					SKILL_SCIENCE = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_BASIC)
+	requires_supervisor = "Serpentid Queen"
 
 /datum/job/submap/ascent/msq
 	title = "Serpentid Queen"
@@ -196,6 +244,7 @@
 					SKILL_COMBAT = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT,
 					SKILL_MEDICAL = SKILL_BASIC)
+	requires_supervisor = "Ascent Gyne"
 
 // Spawn points.
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship
