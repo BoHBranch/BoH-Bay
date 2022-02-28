@@ -4,7 +4,7 @@
 
 	genders = list(MALE, FEMALE, PLURAL)
 
-	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/tail, /datum/unarmed_attack/claws, /datum/unarmed_attack/punch/venom, /datum/unarmed_attack/bite/sharp, /datum/unarmed_attack/bite/venom)
+	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/tail, /datum/unarmed_attack/claws, /datum/unarmed_attack/punch, /datum/unarmed_attack/punch/venom, /datum/unarmed_attack/bite/sharp, /datum/unarmed_attack/bite/venom)
 	darksight_range = 5
 	darksight_tint = DARKTINT_GOOD
 	slowdown = 0.4
@@ -12,31 +12,29 @@
 	flash_mod = 1.4
 	blood_volume = 700
 	water_soothe_amount = 5
-	description = "A heavily aquatic offshoot of the Sinta species, Yeosa originally hail from the \
-	Salt Swamps, leaving their former home for unclear reasons.<br/><br/>Now dwelling in the islands and seas, \
-	their culture has diverged majorly from the Sinta, spending less time performing acts of violence and more time socializing. \
-	Their biology is heavily attuned to surviving Moghes' dangerous waters, including gills, fins, and a venomous bite."
+	description = "The rarer, quieter, and more aquatic counterpart to Sinta, Yeosa'Unathi are smaller and softer than Sinta,   \
+	preferring socialization and trade to combat and development. Still, they spend much of their time fishing or exploring the ocean. \
+	Though following many traditional unathi beliefs, Yeosa are much fairer to each other to account for their low numbers and \
+	often worship beasts of the sea as if they're the same as their ancestors.\
+	<br/><br/>Their biology is heavily attuned to surviving Moghes' dangerous waters, including gills, fins, and a venomous bite."
 
 	base_auras = list(
 		/obj/aura/regenerating/human/unathi/yeosa
 		)
 
 	additional_available_cultural_info = list(
-		TAG_FACTION = list(
-			FACTION_UNATHI_YEOSA
+		TAG_CULTURE = list(
+			CULTURE_UNATHI_YEOSA_ABYSS,
+			CULTURE_UNATHI_YEOSA_LITTORAL
 		)
 	)
 
-	default_cultural_info = list(TAG_FACTION = FACTION_UNATHI_YEOSA)
 
-	has_organ = list(
-		BP_HEAD =     /obj/item/organ/external/head/yeosa,
-		BP_HEART =    /obj/item/organ/internal/heart,
-		BP_STOMACH =  /obj/item/organ/internal/stomach,
-		BP_LUNGS =    /obj/item/organ/internal/lungs/gills,
-		BP_LIVER =    /obj/item/organ/internal/liver,
-		BP_KIDNEYS =  /obj/item/organ/internal/kidneys,
-		BP_BRAIN =    /obj/item/organ/internal/brain,
-		BP_EYES =     /obj/item/organ/internal/eyes
-		)
 
+	override_organ_types = list(
+		BP_LUNGS =  /obj/item/organ/internal/lungs/gills
+	)
+
+	override_limb_types = list(
+		BP_HEAD =   /obj/item/organ/external/head/yeosa
+	)

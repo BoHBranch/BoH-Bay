@@ -28,6 +28,7 @@
 #define SINGLE_CASING 	1	//The gun only accepts ammo_casings. ammo_magazines should never have this as their mag_type.
 #define SPEEDLOADER 	2	//Transfers casings from the mag to the gun when used.
 #define MAGAZINE 		4	//The magazine item itself goes inside the gun
+#define SINGLE_LOAD		5	//You have to load it one casing at a time from a stack.
 
 // attachments
 

@@ -99,6 +99,7 @@ h1.alert, h2.alert		{color: #000000;}
 .skrell					{color: #00ced1;}
 .soghun					{color: #228b22;}
 .yeosa					{color: #218b89;}
+.tajaran				{color: #a900ac;}
 .nabber_lang			{color: #525252;}
 .changeling				{color: #800080;}
 .vox					{color: #aa00aa;}

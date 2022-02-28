@@ -33,6 +33,10 @@
 	name = "heavy box of shotgun slugs"
 	startswith = list(/obj/item/ammo_magazine/shotholder = 7)
 
+/obj/item/weapon/storage/box/ammo/shotgunammo/buckshot/full
+	name = "heavy box of shotgun shells"
+	startswith = list(/obj/item/ammo_magazine/shotholder/shell = 7)
+
 /obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full
 	name = "heavy box of birdshot"
 	startswith = list(/obj/item/ammo_magazine/shotholder/birdshot = 7)
@@ -58,6 +62,7 @@
 	options["Ballistic - Military Revolver"] = list(/obj/item/weapon/gun/projectile/revolver/medium/sec/pepper,/obj/item/ammo_magazine/speedloader/rubber)
 //	options["Energy - Smartgun"] = list(/obj/item/weapon/gun/energy/gun/secure)
 //	options["Energy - Stun Revolver"] = list(/obj/item/weapon/gun/energy/stunrevolver/secure)
+	options["Stun - Non-Lethal Taser"] = list(/obj/item/weapon/gun/energy/taser)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]

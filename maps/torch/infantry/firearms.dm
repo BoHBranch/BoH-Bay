@@ -62,13 +62,12 @@
 	name = "G40B carbine"
 	desc = "A Hephaestus Industries G40B carbine, designed to kill with concentrated energy blasts. Fitted with safety chips to make sure discharge aboard a 'safe zone' is impossible.\
 	Additionally, it features a lower capacity than usual; with a quick-recharge cell."
-	charge_cost = 10
-	max_shots = 10
+	charge_cost = 8
+	max_shots = 15
 	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null),
-		list(mode_name="burst fire", burst=2, fire_delay=1, move_delay=1, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		)
 
 //SL's
@@ -78,7 +77,6 @@
 	desc = "A Hephaestus Industries G40C carbine, designed to kill with concentrated energy blasts. In comparison to its slighty older cousin, this features better handling, a tuned-down powercell and dispersion lense; along with a better fire-restriction system."
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
-		list(mode_name="burst fire", burst=4, fire_delay=1, move_delay=1, one_hand_penalty=6, burst_accuracy=null, dispersion=null),
 		)
 
 /////////
@@ -114,14 +112,15 @@
 // LMG
 /////////
 /obj/item/weapon/gun/projectile/automatic/l6_saw/sec
-	name = "L7 SAW"
-	desc = "A rather traditionally made L7 SAW with a pleasantly lacquered wooden pistol grip. Has 'Aussec Armoury- 2561' engraved on the reciever. \
-	It appears to have a firing restrictor installed, to prevent firing without authorization aboard the Dagon."
+	name = "Z2 Sheol"
+	desc = "The Z2 Sheol, a firearm that preceded the much more refined Z6 Komodo. Despite being older, it still sees use in modern conflict. \
+	Generally noted as 'inferior' by those that have never had the pleasure of laying down the trigger, although they are right about it being absurdly inaccurate."
 	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
+	starts_loaded = 0
 	firemodes = list(
-		list(mode_name="semi auto", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=6, burst_accuracy=null, dispersion=null),
-		list(mode_name="short bursts", burst=5, fire_delay=null, move_delay=4, one_hand_penalty=8, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0))
+		list(mode_name="semi auto", automatic = FALSE, fire_delay= 3, burst=1, burst_delay = 2, move_delay=0, one_hand_penalty=12, burst_accuracy=null, dispersion=null),
+		list(mode_name="automatic",  automatic = TRUE, fire_delay = 0.5, burst = 1, burst_delay = 0, move_delay=12, one_hand_penalty=24, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0)),
 		)
 
 //rifle
@@ -179,15 +178,19 @@
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		)
-/*
+
 /////////
 // rifle 3
 /////////
+/*
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/sav
 	name = "SAV-1"
 	desc = "The Sluzhba Arms SAV-1 is a current-generation assault rifle designed for the SCG military. \
 	It uses the standard 5mmR rifle magazines previously used by the Z-series rifles, and it has an underbarrel grenade launcher. \
 	This rifle is widely praised by the military for its ruggedness and useability."
+	icon = 'icons/boh/items/shotguns.dmi'
+	icon_state = "sexyshotgun"
+	item_state = "sexyshotgun"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	ammo_type = /obj/item/ammo_casing/rifle/military/low
 	magazine_type = /obj/item/ammo_magazine/mil_rifle/sec
@@ -198,8 +201,12 @@
 //sec proper
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/sav/stv
 	name = "STV-1"
-	desc = "The Hephaestus Industries Z9B Bulldog is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use. \
-	Because of the limited fire-rate, and how the mechanism functions, it has a much higher jam rate."
+	desc = "The Sluzhba Arms STV-1 is a current-generation heavy rifle designed for the SCG military. \
+	It uses the standard 5mmR rifle magazines previously used by the Z-series rifles, and has a re-enforced barrel for more accurate suppressive fire. \
+	Hated by those with back pain everywhere."
+	icon = 'icons/boh/items/shotguns.dmi'
+	icon_state = "sexyshotgun"
+	item_state = "sexyshotgun"
 	jam_chance = 5
 	req_access = list(access_brig)
 	firemodes = list(

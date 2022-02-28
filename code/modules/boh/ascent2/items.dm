@@ -130,7 +130,6 @@
 	icon = 'icons/obj/device.dmi'
 	icon_state = "batterer"
 	color = "#a33fbf"
-	uses = 15
 
 //batterer
 /obj/item/device/batterer/mantid

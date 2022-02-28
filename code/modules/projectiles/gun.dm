@@ -90,8 +90,10 @@
 	var/combustion
 	//damage multiplier. Multiplies damage. 0 does nothing, by the way. Higher means more damage, lower less.
 	var/damage_mult = 1
-	// Pen multiplier. Multiplies pen. 0 means no pen, higher means more pen, lower less.
-	var/penetration_mult = 1
+	// Pen multiplier. adds/subtracts pen. 0 means no pen, higher means more pen, lower less.
+	var/penetration_mod = 0
+	// Falloff modifier. less means less distance falloff, more means more.
+	var/falloff_mod = 0
 	// Does this firemode at full auto? Effectively an autoclicker. Set to true if yes. The gun will keep firing until empty when the mouse is held down.
 	var/automatic = FALSE
 	// Our base Acc_Mod. Higher levels means the gun has a higher accuracy modifier in the acc_mod calcs.
@@ -457,8 +459,8 @@
 /obj/item/weapon/gun/proc/process_projectile(obj/projectile, mob/user, atom/target, var/target_zone, var/params=null)
 	var/obj/item/projectile/P = projectile
 	P.damage *= damage_mult // Multiplies our projectiles damage.
-	P.armor_penetration *= penetration_mult // Multiplies the penetration of our projectile.
-
+	P.armor_penetration += penetration_mod // adds/subtracts from penetration of our projectile.
+	P.distance_falloff += falloff_mod // Adds/subtracts distance falloff of our projectile.
 	if(!istype(P))
 		return 0 //default behaviour only applies to true projectiles
 
