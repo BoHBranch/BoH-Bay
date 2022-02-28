@@ -648,6 +648,18 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/birg)
+"gl" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/computer/modular{
+	dir = 4
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/ofd_lower)
 "gr" = (
 /obj/machinery/light{
 	dir = 4;
@@ -1501,7 +1513,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_lower)
 "mB" = (
@@ -1666,6 +1677,11 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
+"oq" = (
+/obj/effect/wallframe_spawn/alien,
+/obj/structure/ship_munition/disperser_charge/ascent,
+/turf/space,
+/area/space)
 "ou" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3920,7 +3936,6 @@
 	dir = 5;
 	id = "ammobeltvox"
 	},
-/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_lower)
 "Hd" = (
@@ -4170,11 +4185,6 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
-"IW" = (
-/obj/effect/wallframe_spawn/alien,
-/obj/structure/ship_munition/disperser_charge/ascent,
-/turf/space,
-/area/space)
 "Jj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -4428,7 +4438,6 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_lower)
 "KS" = (
@@ -4724,7 +4733,6 @@
 	dir = 4;
 	id = "ammobeltvox"
 	},
-/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_lower)
 "Nj" = (
@@ -6224,7 +6232,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/ship_munition/disperser_charge/vox,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd_lower)
 "ZW" = (
@@ -12553,7 +12560,7 @@ Jk
 Jk
 cZ
 cZ
-IW
+oq
 Jk
 Ik
 cZ
@@ -13919,7 +13926,7 @@ Ts
 cE
 sY
 SF
-zC
+gl
 Bt
 Em
 Nd
