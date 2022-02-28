@@ -586,10 +586,7 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/dorms)
 "jh" = (
-/obj/machinery/porta_turret/exterior{
-	name = "Vox Anti-boarder turret";
-	req_access = list("ACCESS_VOXSHIP")
-	},
+/obj/machinery/porta_turret/ssv/vox,
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/ship_mid)
 "jq" = (
@@ -912,10 +909,7 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/med)
 "nG" = (
-/obj/machinery/porta_turret/exterior{
-	name = "Vox Anti-boarder turret";
-	req_access = list("ACCESS_VOXSHIP")
-	},
+/obj/machinery/porta_turret/ssv/vox,
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/cbridge)
 "nI" = (

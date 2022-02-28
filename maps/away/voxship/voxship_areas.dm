@@ -38,12 +38,8 @@
 	name = "\improper Vox Brig"
 	icon_state = "armory"
 
-/area/voxship/ofd_upper
-	name = "\improper Vox OFD Upper"
-	icon_state = "armory"
-
-/area/voxship/ofd_lower
-	name = "\improper Vox OFD Lower"
+/area/voxship/ofd
+	name = "\improper Vox OFD"
 	icon_state = "armory"
 
 /area/voxship/dock
