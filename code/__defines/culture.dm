@@ -169,10 +169,12 @@
 #define CULTURE_UNATHI_SAVANNAH       "Savannah Clans"
 #define CULTURE_UNATHI_SALT_SWAMP     "Salt Swamp Clans"
 #define CULTURE_UNATHI_SPACE          "Space-Faring Clans"
-#define CULTURE_UNATHI_ADOPTED          "Adopted Veteris'Unathi"
+#define CULTURE_UNATHI_TERSTEN        "Tersten Clans"
+#define CULTURE_UNATHI_ADOPTED        "Adopted Veteris'Unathi"
 
 #define HOME_SYSTEM_MOGHES          "Moghes"
 #define HOME_SYSTEM_OUERE           "Ouere"
+#define HOME_SYSTEM_UNATHI_TERSTEN  "Tersten"
 #define HOME_SYSTEM_OFFWORLD        "Off-world"
 
 #define FACTION_UNATHI_CLAN          "Clan Focused"
