@@ -85,7 +85,8 @@
 	icon_state = "tube1"
 	},
 /obj/machinery/door/window/brigdoor/southright{
-	req_access = list("ACCESS_MERCHANT")
+	req_access = list("ACCESS_MERCHANT");
+	autoset_access = 0
 	},
 /obj/structure/window/reinforced{
 	dir = 8;
