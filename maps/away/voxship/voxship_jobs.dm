@@ -208,7 +208,7 @@
 	recharge_time = 20
 
 /obj/item/weapon/gun/energy/sniperrifle/vox
-	desc = "This is a modified Hephaestus Industries Baleful, the cell have been replaced by a vox variant, making it able to self charge. It's a designated marksman rifle capable of shooting powerful ionized beams, this is a weapon to kill from a distance."
+	desc = "This is a modified Hephaestus Industries Baleful. The cell has been replaced by a vox variant, allowing it to self-charge. Sadly, this makes it lose its function to knock people out. It's a designated marksman rifle capable of shooting powerful ionized beams, this is a weapon to kill from a distance."
 	self_recharge = 1
 	recharge_time = 60
 	max_shots = 2
