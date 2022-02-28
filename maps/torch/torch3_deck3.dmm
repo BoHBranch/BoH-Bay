@@ -3337,7 +3337,8 @@
 	},
 /obj/machinery/door/window/brigdoor/eastleft{
 	name = "Bar";
-	req_access = list("ACCESS_BAR")
+	req_access = list("ACCESS_BAR");
+	autoset_access = 0
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
@@ -14979,7 +14980,8 @@
 /area/maintenance/thirddeck/port)
 "BT" = (
 /obj/machinery/door/window/brigdoor/westleft{
-	req_access = list("ACCESS_ENGINE_EQUIP")
+	req_access = list("ACCESS_ENGINE_EQUIP");
+	autoset_access = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
