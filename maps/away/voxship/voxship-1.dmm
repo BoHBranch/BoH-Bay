@@ -743,16 +743,6 @@
 	},
 /turf/simulated/wall/alienwall,
 /area/voxship/shuttle)
-"gM" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/red{
-	dir = 8;
-	icon_state = "intact"
-	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
-	},
-/area/voxship/dock)
 "gP" = (
 /obj/machinery/atmospherics/omni/filter,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -943,12 +933,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
-"im" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/reinforced,
-/area/voxship/dock)
 "iu" = (
 /obj/machinery/light{
 	dir = 1;
@@ -1877,9 +1861,6 @@
 /area/space)
 "pH" = (
 /obj/machinery/hologram/holopad/longrange,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /turf/simulated/floor/reinforced,
 /area/voxship/dock)
 "pL" = (
@@ -2391,16 +2372,6 @@
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
-"tj" = (
-/obj/structure/handrai{
-	dir = 1;
-	icon_state = "handrail"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/reinforced,
-/area/voxship/dock)
 "tq" = (
 /obj/machinery/door/window/brigdoor,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -2575,8 +2546,9 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/hidden/red{
+	dir = 4;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
@@ -4102,10 +4074,7 @@
 	color = "#6CDA1B";
 	req_access = list("ACCESS_VOXSHIP")
 	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
-	},
+/turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "JT" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -4150,16 +4119,6 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/birg)
-"Ki" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/red{
-	dir = 9;
-	icon_state = "intact"
-	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
-	},
-/area/voxship/dock)
 "Kk" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/yellow{
 	dir = 8
@@ -4367,24 +4326,6 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
-"LI" = (
-/obj/machinery/atmospherics/unary/vent_pump{
-	dir = 4;
-	external_pressure_bound = 0;
-	external_pressure_bound_default = 0;
-	frequency = 1441;
-	icon_state = "map_vent_in";
-	id_tag = "bromide_tank";
-	initialize_directions = 1;
-	internal_pressure_bound = 4000;
-	internal_pressure_bound_default = 4000;
-	pressure_checks = 2;
-	pressure_checks_default = 2;
-	pump_direction = 0;
-	use_power = 1
-	},
-/turf/simulated/floor/reinforced,
-/area/voxship/dock)
 "LQ" = (
 /obj/structure/window/phoronreinforced,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -4971,7 +4912,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/reinforced,
 /area/voxship/dock)
 "Rc" = (
@@ -5065,19 +5005,6 @@
 	},
 /turf/simulated/wall/ocp_wall,
 /area/voxship/ship_aft)
-"RZ" = (
-/obj/structure/window/phoronreinforced{
-	dir = 1
-	},
-/obj/structure/handrai{
-	dir = 1;
-	icon_state = "handrail"
-	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 4
-	},
-/turf/simulated/floor/reinforced,
-/area/voxship/dock)
 "Sl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techmaint/vox,
@@ -5173,10 +5100,6 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/bioreactor)
-"SU" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal,
-/turf/simulated/floor/reinforced,
-/area/voxship/dock)
 "Tb" = (
 /obj/machinery/door/airlock/ascent{
 	color = "#6CDA1B";
@@ -5626,10 +5549,6 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
 "XF" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/red,
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
-	},
 /obj/machinery/alarm/vox{
 	dir = 1;
 	icon_state = "alarm0";
@@ -5916,12 +5835,6 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8;
 	icon_state = "warning"
-	},
-/turf/simulated/floor/reinforced/vox,
-/area/voxship/dock)
-"ZE" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
@@ -17595,7 +17508,7 @@ fN
 ZW
 SM
 ev
-RZ
+fw
 HX
 Dn
 ZW
@@ -17747,7 +17660,7 @@ ou
 ZW
 HX
 JV
-tj
+mc
 HX
 HX
 ZW
@@ -17899,10 +17812,10 @@ AN
 Dn
 HX
 Cf
-ZE
+ZW
 hQ
 HX
-LI
+Dn
 el
 sP
 ZW
@@ -18054,7 +17967,7 @@ UO
 pH
 hQ
 Ru
-gM
+HX
 KI
 Iq
 ZW
@@ -18203,10 +18116,10 @@ HX
 HX
 Kt
 Ra
-im
-SU
+Dn
+Dn
 XF
-Ki
+HX
 aj
 Tj
 ZW
