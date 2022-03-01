@@ -2722,6 +2722,7 @@
 	req_access = list("ACCESS_SKRELLSCOUT")
 	},
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 0;
 	dir = 4;
 	name = "Weaponry";
 	req_access = list("ACCESS_SKRELLSCOUT")
