@@ -132,7 +132,7 @@
 	auto_eject = 1
 	one_hand_penalty = 8
 	acc_mod_base = 3
-	penetration_addition = 5
+	penetration_mod = 5
 	firemodes = list(
 		list(mode_name="semi auto", burst=1, fire_delay=null, move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=list(0.5, 1)),
 		list(mode_name="automatic",  automatic = TRUE, fire_delay = 2.5, burst = 1, burst_delay = 0, move_delay=2, dispersion=list(0.5, 1, 1.5, 2)),
