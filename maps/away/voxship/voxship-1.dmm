@@ -122,6 +122,7 @@
 /obj/structure/table/rack,
 /obj/item/weapon/gun/projectile/dartgun/vox/raider,
 /obj/item/weapon/rig/vox,
+/obj/item/clothing/glasses/night,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
 "bN" = (
@@ -140,6 +141,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_fore)
 "bQ" = (
@@ -457,6 +459,10 @@
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
+	},
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_fore)
@@ -820,13 +826,18 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
 "hq" = (
-/obj/machinery/turretid/tur_ID{
-	id_tag = "voxpdlt';
-	pixel_y = 25;
-	req_access = list("ACCESS_VOXSHIP")
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
-/turf/simulated/floor/reinforced/vox,
-/area/voxship/armory)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_fore)
 "ht" = (
 /turf/simulated/wall/ocp_wall,
 /area/voxship/engineering)
@@ -936,8 +947,8 @@
 /obj/item/clothing/suit/space/vox/carapace,
 /obj/item/clothing/head/helmet/space/vox/carapace,
 /obj/item/clothing/mask/gas/swat/vox,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/glasses/night,
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
@@ -1111,6 +1122,19 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
+"kg" = (
+/obj/machinery/door/airlock/ascent{
+	color = "#6CDA1B";
+	dir = 4;
+	name = "OFD";
+	req_access = list("ACCESS_VOXSHIP")
+	},
+/obj/machinery/door/firedoor{
+	dir = 4;
+	icon_state = "open"
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/ofd)
 "ki" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5;
@@ -2228,6 +2252,7 @@
 	},
 /obj/machinery/door/airlock/ascent{
 	color = "#6CDA1B";
+	name = "Brig";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/structure/cable{
@@ -2474,6 +2499,12 @@
 /obj/effect/overmap/visitable/ship/voxship,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
+"tP" = (
+/obj/effect/shuttle_landmark/vox_ship/nav_south{
+	name = "South of Abnormal Ship"
+	},
+/turf/space,
+/area/space)
 "uf" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -2778,6 +2809,7 @@
 /obj/machinery/door/airlock/ascent{
 	color = "#6CDA1B";
 	dir = 4;
+	name = "Armory";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/reinforced/vox,
@@ -2949,6 +2981,16 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
+"xV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_fore)
 "xX" = (
 /obj/machinery/alarm/vox{
 	pixel_y = 15;
@@ -3313,7 +3355,8 @@
 	pixel_z = 0;
 	req_access = list("ACCESS_VOXSHIP")
 	},
-/obj/item/clothing/glasses/thermal,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/glasses/night,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
 "Cf" = (
@@ -3823,9 +3866,8 @@
 /obj/item/clothing/suit/space/vox/medic,
 /obj/item/clothing/head/helmet/space/vox/medic,
 /obj/item/clothing/mask/gas/swat/vox,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/thermal,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/glasses/night,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
@@ -3937,6 +3979,12 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/dock)
+"HD" = (
+/obj/effect/shuttle_landmark/vox_ship/nav_northwest{
+	name = "Northwest of Abnormal Ship"
+	},
+/turf/space,
+/area/space)
 "HH" = (
 /obj/machinery/light{
 	dir = 8;
@@ -4116,6 +4164,7 @@
 /obj/machinery/door/airlock/ascent{
 	color = "#6CDA1B";
 	dir = 4;
+	name = "Engineering";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/machinery/door/firedoor{
@@ -4154,6 +4203,7 @@
 /obj/machinery/door/airlock/ascent{
 	color = "#6CDA1B";
 	dir = 4;
+	name = "Engineering";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/structure/cable{
@@ -4447,8 +4497,8 @@
 	dir = 1;
 	icon_state = "map-scrubbers"
 	},
-/obj/item/clothing/glasses/thermal,
-/obj/item/clothing/glasses/thermal,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/glasses/night,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
 "Lz" = (
@@ -5081,6 +5131,15 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
+"RA" = (
+/obj/machinery/turretid/vox{
+	dir = 1
+	},
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen" = 103)
+	},
+/area/voxship/armory)
 "RC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -5156,6 +5215,7 @@
 /obj/machinery/door/airlock/ascent{
 	color = "#6CDA1B";
 	dir = 4;
+	name = "Armory";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/machinery/door/firedoor{
@@ -8928,7 +8988,7 @@ cZ
 cZ
 cZ
 cZ
-cZ
+HD
 cZ
 cZ
 cZ
@@ -14144,7 +14204,7 @@ Xl
 pY
 zC
 Wd
-xi
+kg
 Wd
 zC
 pY
@@ -14899,7 +14959,7 @@ px
 VN
 Wb
 VN
-Il
+hq
 QE
 XZ
 lW
@@ -14909,7 +14969,7 @@ FK
 ux
 XZ
 QE
-Il
+xV
 VN
 Wb
 VN
@@ -15966,11 +16026,11 @@ VN
 eK
 vo
 Nx
-hq
+YO
 qK
 fQ
 YO
-YO
+RA
 Nx
 Bh
 jM
@@ -25889,7 +25949,7 @@ cZ
 cZ
 cZ
 cZ
-cZ
+tP
 cZ
 cZ
 cZ

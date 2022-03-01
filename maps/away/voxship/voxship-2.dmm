@@ -435,8 +435,7 @@
 "gF" = (
 /obj/machinery/door/airlock/ascent{
 	color = "#6CDA1B";
-	dir = 4;
-	req_access = list("ACCESS_VOXSHIP")
+	dir = 4
 	},
 /obj/machinery/door/firedoor{
 	dir = 4;
@@ -948,8 +947,7 @@
 /area/voxship/ship_mid)
 "nY" = (
 /obj/machinery/door/airlock/ascent{
-	color = "#6CDA1B";
-	req_access = list("ACCESS_VOXSHIP")
+	color = "#6CDA1B"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1009,8 +1007,7 @@
 "pa" = (
 /obj/machinery/door/airlock/ascent{
 	color = "#6CDA1B";
-	dir = 4;
-	req_access = list("ACCESS_VOXSHIP")
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -1304,8 +1301,7 @@
 /area/voxship/dorms)
 "tn" = (
 /obj/machinery/door/airlock/ascent{
-	color = "#6CDA1B";
-	req_access = list("ACCESS_VOXSHIP")
+	color = "#6CDA1B"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1390,8 +1386,7 @@
 /area/voxship/ship_mid)
 "ub" = (
 /obj/machinery/door/airlock/ascent{
-	color = "#6CDA1B";
-	req_access = list("ACCESS_VOXSHIP")
+	color = "#6CDA1B"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -3671,6 +3666,25 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
+	},
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/dorms)
+"XK" = (
+/obj/machinery/door/airlock/ascent{
+	color = "#6CDA1B";
+	dir = 4;
+	req_access = list("ACCESS_VOXSHIP")
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/airlock/ascent{
+	color = "#6CDA1B";
+	dir = 4
+	},
+/obj/machinery/door/firedoor{
+	dir = 4;
+	icon_state = "open"
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
@@ -21387,7 +21401,7 @@ YO
 YO
 pa
 YO
-pa
+XK
 YO
 YO
 bC
