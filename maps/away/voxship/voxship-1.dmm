@@ -1157,7 +1157,7 @@
 /obj/item/clothing/suit/storage/det_trench,
 /obj/item/clothing/accessory/storage/holster,
 /obj/item/clothing/head/det,
-/obj/item/clothing/glasses/thermal,
+/obj/item/clothing/glasses/night,
 /obj/random/contraband,
 /obj/random/contraband,
 /obj/random/contraband,
@@ -3313,7 +3313,7 @@
 	pixel_z = 0;
 	req_access = list("ACCESS_VOXSHIP")
 	},
-/obj/item/clothing/glasses/thermal,
+/obj/item/clothing/glasses/night,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
 "Cf" = (
@@ -3825,7 +3825,7 @@
 /obj/item/clothing/mask/gas/swat/vox,
 /obj/item/clothing/glasses/meson,
 /obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/thermal,
+/obj/item/clothing/glasses/night,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
@@ -4447,8 +4447,8 @@
 	dir = 1;
 	icon_state = "map-scrubbers"
 	},
-/obj/item/clothing/glasses/thermal,
-/obj/item/clothing/glasses/thermal,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/glasses/night,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
 "Lz" = (
