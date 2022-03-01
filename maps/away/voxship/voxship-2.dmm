@@ -333,9 +333,8 @@
 /area/voxship/dorms)
 "fF" = (
 /obj/structure/catwalk,
-/obj/structure/lattice,
 /obj/structure/ladder,
-/turf/space,
+/turf/simulated/floor/airless,
 /area/space)
 "fG" = (
 /obj/item/weapon/reagent_containers/glass/bucket,
@@ -436,6 +435,7 @@
 /area/voxship/med)
 "gF" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4
 	},
@@ -950,6 +950,7 @@
 /area/voxship/ship_mid)
 "nY" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B"
 	},
 /obj/machinery/door/firedoor,
@@ -1009,6 +1010,7 @@
 /area/voxship/ship_mid)
 "pa" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4
 	},
@@ -1307,6 +1309,7 @@
 /area/voxship/dorms)
 "tn" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B"
 	},
 /obj/machinery/door/firedoor,
@@ -1392,7 +1395,9 @@
 /area/voxship/ship_mid)
 "ub" = (
 /obj/machinery/door/airlock/ascent{
-	color = "#6CDA1B"
+	autoset_access = 0;
+	color = "#6CDA1B";
+	name = "Washroom"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -2579,6 +2584,7 @@
 /area/voxship/ship_mid)
 "KW" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	req_access = list("ACCESS_VOXSHIP_CAPTAIN")
 	},
