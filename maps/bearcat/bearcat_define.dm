@@ -43,4 +43,3 @@
 	..()
 	SStrade.traders += new /datum/trader/xeno_shop
 	SStrade.traders += new /datum/trader/medical
-	SStrade.traders += new /datum/trader/mining
