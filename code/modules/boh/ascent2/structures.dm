@@ -12,21 +12,19 @@
 	name = "odd cannon barrel"
 	desc = "Something about this looks dangerous. Best to keep away."
 	color = "#a33fbf"
-	dir = 8
 
 /obj/machinery/disperser/middle/ascent
 	name = "odd cannon breach"
 	desc = "Something about this looks dangerous. Best to keep away."
 	color = "#a33fbf"
-	dir = 8
 
 /obj/machinery/disperser/back/ascent
 	name = "odd cannon loading platform"
 	desc = "Something about this looks dangerous. Best to keep off."
 	color = "#a33fbf"
-	dir = 8
+
 /////////
 // Gyne Bath Water
-/////////
+///////// Gyne sloppy toppy when?????
 /obj/structure/adherent_bath/ascent
 	color = "#a33fbf"

@@ -454,7 +454,7 @@
 /area/ship/ascent/subdeck_south)
 "bj" = (
 /obj/machinery/disperser/front/ascent,
-/turf/simulated/wall/r_wall/ascent,
+/turf/simulated/floor/reinforced/airless,
 /area/ship/ascent/subdeck_center)
 "bk" = (
 /obj/structure/window/phoronreinforced,
@@ -1921,6 +1921,9 @@
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_north)
 "ee" = (
+/obj/machinery/door/blast/regular{
+	id_tag = "ascent_boomboom"
+	},
 /turf/simulated/floor/reinforced/airless,
 /area/ship/ascent/subdeck_center)
 "ef" = (
@@ -2439,7 +2442,7 @@
 /area/ship/ascent/subdeck_center)
 "fz" = (
 /obj/machinery/disperser/middle/ascent,
-/turf/simulated/wall/r_wall/ascent,
+/turf/simulated/floor/reinforced/airless,
 /area/ship/ascent/subdeck_center)
 "fA" = (
 /obj/machinery/conveyor{
@@ -2688,6 +2691,11 @@
 "fW" = (
 /obj/structure/bed/chair/padded/purple/ascent,
 /obj/effect/catwalk_plated/ascent,
+/obj/machinery/button/blast_door{
+	id_tag = "ascent_boomboom";
+	name = "Cannon Blast Doors";
+	pixel_y = -22
+	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "Yt" = (

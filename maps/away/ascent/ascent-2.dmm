@@ -4347,9 +4347,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
-"mg" = (
-/turf/space,
-/area/ship/ascent/fore_starboard_jut)
 "mn" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -10673,7 +10670,7 @@ aa
 aa
 aa
 aa
-mg
+aa
 cL
 CA
 as
@@ -10794,7 +10791,7 @@ aa
 aa
 aa
 aa
-mg
+aa
 ac
 ac
 ah
