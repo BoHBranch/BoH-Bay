@@ -54,7 +54,7 @@
 		return
 	if(owner.stat == DEAD)	//not a drain anymore
 		return
-	var/cost = get_power_drain()
+	var/cost = (get_power_drain() + (damage / 10))
 	if(world.time - owner.l_move_time < 15)
 		cost *= (2 + (damage / 10))
 	if(!checked_use(cost) && owner.isSynthetic())
