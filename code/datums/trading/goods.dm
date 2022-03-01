@@ -356,9 +356,9 @@ Sells devices, odds and ends, and medical stuff
 								  /obj/item/sign/medipolma = TRADER_THIS_TYPE
 								)
 
-/datum/trader/ship/Appliances_and_tech
+/datum/trader/ship/Appliances_anpossible_trading_items = listd_tech
 	origin = "Vending Suppliers ltd."
-								 (/obj/machinery/vending = TRADER_SUBTYPES_ONLY,
+possible_trading_items = list(/obj/machinery/vending = TRADER_SUBTYPES_ONLY,
 								  /obj/machinery/vending/assist = TRADER_BLACKLIST,
 								  /obj/machinery/vending/medical/skrell = TRADER_BLACKLIST,
 								)
