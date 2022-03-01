@@ -245,4 +245,4 @@
 
 /obj/machinery/turretid/vox
 
-	req_access = list(access_voxship)
+	req_access = list("ACCESS_VOXSHIP")
