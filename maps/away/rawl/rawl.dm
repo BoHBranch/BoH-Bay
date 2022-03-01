@@ -8,7 +8,7 @@
 	description = "Unathi Poacher Ship."
 	suffixes = list("rawl/rawl.dmm")
 	area_usage_test_exempted_root_areas = list(/area/rawl/)
-	cost = 0.2
+	cost = 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/rawl_ship)
 
 /obj/effect/overmap/visitable/sector/rawl_spawn
@@ -52,6 +52,7 @@
 
 /obj/item/weapon/storage/secure/safe/rawl/New()
 	..()
+	new /obj/item/weapon/melee/energy/pick(src)
 	new /obj/item/weapon/melee/energy/knife(src)
 	new /obj/item/clothing/accessory/storage/holster/knife(src)
 	spawn_money(rand(75,350)*10, src)
@@ -99,7 +100,7 @@
 
 /obj/structure/closet/secure_closet/personal/rawl/WillContain()
 	return list(
-		/obj/item/clothing/under/savage_hunter,
+		/obj/item/clothing/under/rank/ntpilot/dohruk,
 		/obj/item/clothing/shoes/jackboots/unathi,
 		/obj/item/weapon/storage/backpack/satchel/leather/reddish)
 
@@ -113,8 +114,9 @@
 	name = "old radio"
 	desc = "An old, cheap radio that looks heavy enough to kill someone."
 	cell = /obj/item/weapon/cell/device/high
-	throwforce = 12
+	throwforce = 35
 	icon_state = "radio"
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_HUGE
 	canhear_range = 6
 	power_usage = 8
+

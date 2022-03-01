@@ -48,7 +48,7 @@
 	item_state = "lb_suit"
 	worn_state = "work"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR, 
+		melee = ARMOR_MELEE_MINOR,
 		bio = ARMOR_BIO_MINOR
 		)
 	item_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_under_corporate.dmi')
@@ -195,3 +195,14 @@
 	icon_state = "suit_zeng"
 	worn_state = "suit_zeng"
 	starting_accessories = list(/obj/item/clothing/accessory/toggleable/corpjacket/zeng, /obj/item/clothing/accessory/corptie/zeng)
+
+/obj/item/clothing/under/rank/ntpilot/dohruk
+	name = "brown flight suit"
+	desc = "A dull unmarked flight suit. It has some patches on it, but all of them are just a mess of brown, like someone tried to clean a coffee stain with more coffee."
+	icon_state = "pilot_unathi"
+	gender_icons = 0
+	worn_state = "pilot_unat"
+	item_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_under_corporate.dmi')
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_under_corporate_unathi.dmi',
+		)
