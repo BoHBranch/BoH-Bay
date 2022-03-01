@@ -31,7 +31,7 @@
 
 /obj/item/projectile/beam/midlaser
 	damage = 40
-	armor_penetration = 15
+	armor_penetration = 20
 	distance_falloff = 1
 
 /obj/item/projectile/beam/heavylaser
