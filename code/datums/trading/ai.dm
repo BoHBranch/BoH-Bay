@@ -117,18 +117,14 @@ They sell generic supplies and ask for generic supplies.
 								/obj/structure/particle_accelerator/particle_emitter/center = TRADER_THIS_TYPE,
 								/obj/structure/particle_accelerator/particle_emitter/left = TRADER_THIS_TYPE,
 								/obj/structure/particle_accelerator/particle_emitter/right = TRADER_THIS_TYPE,
-								/obj/structure/adherent_pylon = TRADER_THIS_TYPE,
-								/obj/structure/adherent_bath  = TRADER_THIS_TYPE,
 								/obj/structure/closet/coffin  = TRADER_ALL,
 								/obj/structure/fitness        = TRADER_SUBTYPES_ONLY,
 								/obj/structure/gunnery        = TRADER_SUBTYPES_ONLY,
 								/obj/item/bone/skull/deer     = TRADER_THIS_TYPE,
-								/obj/item/device/plunger/robot = TRADER_THIS_TYPE,
 								/obj/item/device/spy_bug      = TRADER_THIS_TYPE,
 								/obj/item/device/spy_monitor  = TRADER_THIS_TYPE,
 								/obj/item/rig_module/self_destruct = TRADER_THIS_TYPE,
-								/obj/item/weapon/material/armblade/claws = TRADER_THIS_TYPE,
-								/obj/item/weapon/nuclear_cylinder = TRADER_THIS_TYPE
+								/obj/item/weapon/material/armblade/claws = TRADER_THIS_TYPE
 								)
 
 /datum/trader/trading_beacon/manufacturing
