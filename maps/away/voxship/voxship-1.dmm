@@ -248,7 +248,7 @@
 	frequency = 1505;
 	id_tag = "vox_shuttle";
 	pixel_x = 24;
-	req_access = list("access_voxship");
+	req_access = list("ACCESS_VOXSHIP");
 	tag_exterior_sensor = "vox_shuttle_sensor_external"
 	},
 /turf/simulated/floor/reinforced/vox,
@@ -801,6 +801,16 @@
 "hb" = (
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
+"hc" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_fore)
 "hk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -5422,16 +5432,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
-"UD" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/light,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/ship_fore)
 "UO" = (
 /obj/structure/bed/chair/shuttle/black,
 /obj/structure/cable{
@@ -14955,7 +14955,7 @@ FK
 ux
 XZ
 QE
-UD
+hc
 VN
 Wb
 VN
