@@ -56,7 +56,7 @@
 		return
 	var/cost = get_power_drain()
 	if(world.time - owner.l_move_time < 15)
-		cost *= 2
+		cost *= (2 + (damage / 10))
 	if(!checked_use(cost) && owner.isSynthetic())
 		if(!owner.lying && !owner.buckled)
 			to_chat(owner, "<span class='warning'>You don't have enough energy to function!</span>")
