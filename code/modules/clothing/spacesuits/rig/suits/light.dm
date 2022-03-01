@@ -169,7 +169,6 @@
 	req_access = list(access_syndicate)
 
 	initial_modules = list(
-		/obj/item/rig_module/stealth_field,
 		/obj/item/rig_module/vision,
 		/obj/item/rig_module/cooling_unit
-		)
+		) //removed the stealth module because it lacks counterplay and shouldn't be readily available.
