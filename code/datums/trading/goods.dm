@@ -358,7 +358,7 @@ Sells devices, odds and ends, and medical stuff
 
 /datum/trader/ship/Appliances_and_tech
 	origin = "Vending Suppliers ltd."
-								 (/obj/machinery/vending = TRADER_SUBTYPES_ONLY,
+	possible_trading_items = list(/obj/machinery/vending = TRADER_SUBTYPES_ONLY,
 								  /obj/machinery/vending/assist = TRADER_BLACKLIST,
 								  /obj/machinery/vending/medical/skrell = TRADER_BLACKLIST,
 								)
