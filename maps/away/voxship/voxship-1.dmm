@@ -2854,6 +2854,16 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
+"wA" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_fore)
 "wK" = (
 /obj/structure/bed/chair/shuttle/black,
 /turf/simulated/floor/reinforced/vox,
@@ -2981,16 +2991,6 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
-"xV" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/light,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/ship_fore)
 "xX" = (
 /obj/machinery/alarm/vox{
 	pixel_y = 15;
@@ -5131,15 +5131,6 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
-"RA" = (
-/obj/machinery/turretid/vox{
-	dir = 1
-	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
-	},
-/area/voxship/armory)
 "RC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -5330,6 +5321,16 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_fore)
+"Tw" = (
+/obj/machinery/turretid/vox{
+	dir = 1;
+	id_tag = "voxpdlt'
+	},
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen" = 103)
+	},
+/area/voxship/armory)
 "TE" = (
 /obj/machinery/atmospherics/binary/pump,
 /turf/simulated/floor/tiled/techmaint/vox,
@@ -14969,7 +14970,7 @@ FK
 ux
 XZ
 QE
-xV
+wA
 VN
 Wb
 VN
@@ -16030,7 +16031,7 @@ YO
 qK
 fQ
 YO
-RA
+Tw
 Nx
 Bh
 jM
