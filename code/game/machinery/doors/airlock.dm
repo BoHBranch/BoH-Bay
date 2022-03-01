@@ -973,6 +973,10 @@ About the new airlock wires panel:
 		cut_verb = "slicing"
 		cut_sound = "sparks"
 		cut_delay *= 0.66
+	else if(istype(item,/obj/item/weapon/melee/energy/pick))
+		cut_verb = "hewing"
+		cut_sound = "sparks"
+		cut_delay *= 0.75
 	else if(istype(item,/obj/item/weapon/circular_saw))
 		cut_verb = "sawing"
 		cut_sound = 'sound/weapons/circsawhit.ogg'

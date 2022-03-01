@@ -185,7 +185,7 @@
 	dir = 4;
 	icon_state = "open"
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/hydro)
 "dL" = (
 /obj/structure/table/standard{
@@ -442,7 +442,7 @@
 	dir = 4;
 	icon_state = "open"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/hydro)
 "gJ" = (
 /obj/effect/landmark/map_data{
@@ -954,7 +954,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/hydro)
 "oa" = (
 /obj/structure/table/reinforced,
@@ -988,7 +988,9 @@
 /area/voxship/med)
 "oC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/kafel_full{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -1026,7 +1028,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/vending/hotfood{
+/obj/machinery/vending/sovietsoda{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/kafel_full{
@@ -1236,7 +1238,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/med)
 "sE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -1284,7 +1286,7 @@
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/cbridge)
 "ta" = (
 /obj/machinery/light{
@@ -1308,7 +1310,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/ship_mid)
 "tq" = (
 /turf/simulated/floor/tiled/techmaint/vox,
@@ -1394,7 +1396,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dorms)
 "uh" = (
 /obj/machinery/vending/cola,
@@ -1404,6 +1406,14 @@
 /obj/machinery/media/jukebox,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
+"uu" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/kafel_full{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/ship_mid)
 "uB" = (
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
@@ -1540,7 +1550,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/bed/chair/comfy/captain,
+/obj/structure/bed/chair/comfy/captain{
+	dir = 1
+	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -1564,9 +1576,9 @@
 	icon_state = "4-8"
 	},
 /obj/structure/cable{
-	d1 = 16;
-	d2 = 0;
-	icon_state = "16-0"
+	d1 = 32;
+	d2 = 4;
+	icon_state = "32-4"
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
@@ -1915,7 +1927,7 @@
 	dir = 4;
 	icon_state = "open"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/cbridge)
 "Cs" = (
 /obj/structure/cable{
@@ -2330,7 +2342,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/med)
 "He" = (
 /obj/machinery/alarm/vox{
@@ -2355,7 +2367,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/med)
 "Hv" = (
 /obj/machinery/washing_machine,
@@ -2558,7 +2570,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/med)
 "KX" = (
 /obj/structure/hygiene/sink{
@@ -2756,7 +2768,7 @@
 	},
 /area/voxship/quills)
 "Mz" = (
-/obj/machinery/vending/medical/torch,
+/obj/machinery/vending/medical,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -3065,7 +3077,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/quills)
 "QJ" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{
@@ -3115,7 +3127,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/ship_mid)
 "QY" = (
 /obj/machinery/smartfridge/chemistry,
@@ -3455,8 +3467,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/computer/atmos_alert{
-	dir = 1
+/obj/machinery/computer/modular/preset/engineering{
+	dir = 1;
+	icon_state = "console"
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/cbridge)
@@ -18466,7 +18479,7 @@ Xb
 aV
 nQ
 nQ
-nQ
+uu
 nQ
 sS
 uB
