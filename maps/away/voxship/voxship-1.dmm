@@ -575,16 +575,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/voxship/dock)
-"fB" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/light,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/ship_fore)
 "fH" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -1532,6 +1522,16 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/dock)
+"mv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_fore)
 "mx" = (
 /obj/machinery/conveyor/ammobelt{
 	dir = 9;
@@ -4683,7 +4683,6 @@
 "NE" = (
 /obj/structure/lattice,
 /obj/structure/catwalk,
-/obj/structure/ladder/up,
 /turf/space,
 /area/space)
 "NG" = (
@@ -4803,16 +4802,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
-"OZ" = (
-/obj/machinery/turretid/vox{
-	dir = 1;
-	id_tag = "voxpdlt'
-	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
-	},
-/area/voxship/armory)
 "Pa" = (
 /turf/simulated/floor/reinforced/hydrogen,
 /area/voxship/engineering)
@@ -5677,6 +5666,16 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
+"Xb" = (
+/obj/machinery/turretid/vox{
+	dir = 1;
+	id_tag = "voxpdlt'
+	},
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen" = 103)
+	},
+/area/voxship/armory)
 "Xd" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /turf/simulated/floor/tiled/techmaint/vox,
@@ -14982,7 +14981,7 @@ FK
 ux
 XZ
 QE
-fB
+mv
 VN
 Wb
 VN
@@ -16043,7 +16042,7 @@ YO
 qK
 fQ
 YO
-OZ
+Xb
 Nx
 Bh
 jM
@@ -17551,7 +17550,7 @@ cZ
 cZ
 cZ
 cZ
-Iz
+Ya
 HX
 HX
 ZW
@@ -17571,7 +17570,7 @@ ZW
 ZW
 HX
 HX
-Iz
+Ya
 cZ
 cZ
 cZ

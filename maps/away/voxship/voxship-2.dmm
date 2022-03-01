@@ -331,11 +331,6 @@
 /obj/effect/submap_landmark/spawnpoint/voxship_crew,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
-"fF" = (
-/obj/structure/catwalk,
-/obj/structure/ladder,
-/turf/simulated/floor/airless,
-/area/space)
 "fG" = (
 /obj/item/weapon/reagent_containers/glass/bucket,
 /obj/item/weapon/mop,
@@ -15323,7 +15318,7 @@ hC
 hC
 hC
 hC
-fF
+Sh
 bC
 qE
 Tx
@@ -15343,7 +15338,7 @@ Vb
 nK
 Lh
 bC
-fF
+Sh
 hC
 hC
 hC
@@ -17300,7 +17295,7 @@ hC
 hC
 hC
 hC
-fF
+Sh
 Lh
 uB
 dZ
@@ -17318,7 +17313,7 @@ SB
 qt
 NO
 aj
-fF
+Sh
 hC
 hC
 hC
