@@ -2158,7 +2158,6 @@
 /obj/item/ammo_magazine/magnum,
 /obj/item/ammo_magazine/magnum,
 /obj/item/weapon/storage/box/glasses/shot,
-/obj/item/clothing/glasses/night,
 /obj/item/weapon/disk/tech_disk,
 /obj/item/weapon/disk/tech_disk,
 /obj/item/weapon/disk/tech_disk,
@@ -2169,6 +2168,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
+/obj/item/clothing/glasses/night,
 /turf/simulated/floor/wood/mahogany{
 	initial_gas = list("nitrogen" = 101.23)
 	},
