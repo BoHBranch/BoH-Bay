@@ -360,5 +360,5 @@ Sells devices, odds and ends, and medical stuff
 	origin = "Vending Suppliers ltd."
 	possible_trading_items = list(/obj/machinery/vending = TRADER_SUBTYPES_ONLY,
 								  /obj/machinery/vending/assist = TRADER_BLACKLIST,
-								  /obj/machinery/vending/medical/skrell = TRADER_BLACKLIST,
+								  /obj/machinery/vending/medical = TRADER_BLACKLIST
 								)
