@@ -81,12 +81,6 @@
 /turf/simulated/floor/carpet/purple,
 /area/ship/skrellskoutship/observatory)
 "aO" = (
-/obj/machinery/computer/cryopod{
-	name = "observatory oversight console";
-	pixel_x = 31;
-	pixel_y = 4;
-	storage_name = "Observatory Oversight Control"
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
@@ -2210,6 +2204,9 @@
 /area/ship/skrellscoutship/crew/rec)
 "yj" = (
 /obj/structure/disposaloutlet,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
 /turf/simulated/floor/airless,
 /area/ship/skrellscoutship/crew/rec)
 "yl" = (
@@ -3051,6 +3048,12 @@
 /obj/item/ammo_magazine/skrell_shotgun,
 /obj/item/ammo_magazine/skrell_shotgun,
 /obj/item/ammo_magazine/skrell_shotgun,
+/obj/item/ammo_magazine/skrell_shotgun,
+/obj/item/ammo_magazine/skrell_shotgun,
+/obj/item/ammo_magazine/skrell_shotgun,
+/obj/item/ammo_magazine/skrell_shotgun,
+/obj/item/ammo_magazine/skrell_shotgun,
+/obj/item/ammo_magazine/skrell_shotgun,
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/armory)
 "Hc" = (
@@ -3062,6 +3065,15 @@
 	dir = 1;
 	pixel_y = -24
 	},
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/armory)
 "Hd" = (
@@ -3451,7 +3463,6 @@
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
 "KR" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/atmospherics/unary/cryo_cell,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
@@ -3459,7 +3470,6 @@
 /obj/machinery/light/skrell{
 	dir = 1
 	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/atmospherics/unary/cryo_cell,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
@@ -3821,13 +3831,7 @@
 "OJ" = (
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
-"OX" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/manifold/hidden,
-/turf/simulated/floor/tiled/skrell/white,
-/area/ship/skrellscoutship/crew/medbay)
 "OY" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9
 	},
@@ -4282,7 +4286,7 @@
 /turf/simulated/wall/r_titanium,
 /area/ship/skrellscoutship/command/armory)
 "SL" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
 "SR" = (
@@ -4343,10 +4347,10 @@
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellskoutship/observatory)
 "Tn" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/closet/crate/secure/biohazard/alt{
 	req_access = list()
 	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
 "Ts" = (
@@ -4377,10 +4381,6 @@
 	},
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellskoutship/observatory)
-"TF" = (
-/obj/effect/paint/black,
-/turf/simulated/wall/r_titanium,
-/area/ship/skrellscoutship/crew/hallway/d2)
 "TH" = (
 /obj/structure/bed/chair/padded/red,
 /turf/simulated/floor/tiled/skrell/blue,
@@ -11048,7 +11048,7 @@ Ud
 Ud
 Ud
 Ud
-TF
+Mh
 gy
 hl
 jm
@@ -11967,7 +11967,7 @@ dp
 St
 qY
 KR
-OX
+gv
 SL
 UX
 Xr
