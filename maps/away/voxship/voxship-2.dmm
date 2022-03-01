@@ -1406,14 +1406,6 @@
 /obj/machinery/media/jukebox,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
-"uu" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/kafel_full{
-	initial_gas = list("nitrogen" = 101.23)
-	},
-/area/voxship/ship_mid)
 "uB" = (
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
@@ -1458,6 +1450,10 @@
 /area/voxship/dorms)
 "wm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/chemical_dispenser/full,
+/obj/item/weapon/book/manual/chemistry_recipes,
+/obj/item/weapon/reagent_containers/glass/beaker/bluespace,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -1474,9 +1470,17 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "wq" = (
-/obj/machinery/reagentgrinder,
-/obj/item/stack/material/phoron/ten,
-/obj/item/weapon/reagent_containers/dropper,
+/obj/structure/table/standard,
+/obj/machinery/recharger,
+/obj/item/bodybag/cryobag,
+/obj/item/weapon/storage/belt/medical,
+/obj/item/weapon/storage/firstaid/adv,
+/obj/item/weapon/storage/firstaid/combat,
+/obj/item/roller,
+/obj/item/clothing/accessory/stethoscope,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/bodybag/cryobag,
+/obj/item/weapon/defibrillator/loaded,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
@@ -2255,6 +2259,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/item/stack/nanopaste,
+/obj/item/weapon/storage/box/beakers,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -2544,6 +2549,13 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
+"Kk" = (
+/obj/structure/table/standard,
+/obj/machinery/reagent_temperature/cooler,
+/turf/simulated/floor/tiled/white/usedup{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/med)
 "Kz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -2774,10 +2786,10 @@
 	},
 /area/voxship/med)
 "ML" = (
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/machinery/chemical_dispenser/full,
-/obj/item/weapon/reagent_containers/glass/beaker/bluespace,
-/obj/item/weapon/book/manual/chemistry_recipes,
+/obj/structure/table/standard,
+/obj/item/weapon/storage/box/beakers,
+/obj/item/weapon/storage/box/syringes,
+/obj/item/weapon/storage/box/pillbottles,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -2820,7 +2832,6 @@
 	},
 /obj/machinery/reagent_temperature,
 /obj/structure/table/standard,
-/obj/item/weapon/storage/box/beakers,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -2849,10 +2860,7 @@
 /area/voxship/ship_mid)
 "NI" = (
 /obj/structure/table/standard,
-/obj/item/weapon/storage/box/beakers,
-/obj/item/weapon/storage/box/syringes,
 /obj/item/device/scanner/reagent,
-/obj/item/weapon/autopsy_scanner,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -3060,6 +3068,13 @@
 	initial_gas = list("nitrogen" = 103)
 	},
 /area/voxship/quills)
+"Qm" = (
+/obj/effect/submap_landmark/spawnpoint/voxship_crew/doc,
+/obj/item/weapon/stool/padded,
+/turf/simulated/floor/tiled/white/usedup{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/med)
 "Qq" = (
 /obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled/kafel_full{
@@ -3136,9 +3151,6 @@
 	},
 /area/voxship/med)
 "Rd" = (
-/obj/structure/table/standard,
-/obj/machinery/reagent_temperature/cooler,
-/obj/item/weapon/storage/box/pillbottles,
 /obj/machinery/alarm/vox{
 	dir = 4;
 	icon_state = "alarm0";
@@ -3150,25 +3162,15 @@
 	},
 /area/voxship/med)
 "Rf" = (
-/obj/item/weapon/stool/padded,
-/obj/effect/submap_landmark/spawnpoint/voxship_crew/doc,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/med)
 "Rh" = (
-/obj/structure/table/standard,
-/obj/machinery/recharger,
-/obj/item/bodybag/cryobag,
-/obj/item/weapon/storage/belt/medical,
-/obj/item/weapon/storage/firstaid/adv,
-/obj/item/weapon/storage/firstaid/combat,
-/obj/item/roller,
-/obj/item/clothing/accessory/stethoscope,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/bodybag/cryobag,
-/obj/item/weapon/defibrillator/loaded,
+/obj/machinery/reagentgrinder,
+/obj/item/stack/material/phoron/ten,
+/obj/item/weapon/reagent_containers/dropper,
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
@@ -3232,6 +3234,14 @@
 /obj/structure/lattice,
 /turf/space,
 /area/space)
+"Sq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/kafel_full{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/ship_mid)
 "St" = (
 /obj/structure/safe,
 /obj/item/weapon/spacecash/bundle/c1000,
@@ -18479,15 +18489,15 @@ Xb
 aV
 nQ
 nQ
-uu
+Sq
 nQ
 sS
 uB
 XQ
 aj
 Nq
-NO
-NO
+Qm
+Kk
 Ui
 NO
 VY
