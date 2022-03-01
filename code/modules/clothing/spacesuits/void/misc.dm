@@ -71,13 +71,13 @@
 	desc = "A bulky helmet with padding to protect from the collisions wearing this can cause."
 	species_restricted = list(SPECIES_UNATHI)
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MAJOR,
+		bullet = ARMOR_BALLISTIC_PISTOL,
+		laser = ARMOR_LASER_SMALL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_RESISTANT
+		rad = ARMOR_RAD_SHIELDED
 		)
 	icon_state = "rig0-dohruk"
 	item_state = "dohruk_helm"
@@ -86,13 +86,13 @@
 	name = "heavy Unathi helmet"
 	desc = "A thick helmet for the intellectual who needs to headbutt people safely."
 	armor = list(
-		melee = ARMOR_MELEE_MAJOR,
-		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_SMALL,
-		bomb = ARMOR_BOMB_RESISTANT,
+		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_RESISTANT
+		rad = ARMOR_RAD_SHIELDED
 		)
 	siemens_coefficient = 0.3
 	icon_state = "rig0-dohrukheavy"
@@ -104,13 +104,13 @@
 	desc = "A dull voidsuit with thick but uneven padding. Perfect for those lacking other options."
 	species_restricted = list(SPECIES_UNATHI)
 	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
-		bullet = ARMOR_BALLISTIC_MINOR,
-		laser = ARMOR_LASER_MINOR,
+		melee = ARMOR_MELEE_MAJOR,
+		bullet = ARMOR_BALLISTIC_PISTOL,
+		laser = ARMOR_LASER_SMALL,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_PADDED,
 		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_RESISTANT
+		rad = ARMOR_RAD_SHIELDED
 		)
 	icon_state = "rig-dohruk"
 
@@ -118,13 +118,13 @@
 	name = "heavy Unathi voidsuit"
 	desc = "This suit tries to compensate for poor material quality with flashes of color and excessive padding."
 	armor = list(
-		melee = ARMOR_MELEE_MAJOR,
-		bullet = ARMOR_BALLISTIC_SMALL,
-		laser = ARMOR_LASER_SMALL,
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_RESISTANT
+		rad = ARMOR_RAD_SHIELDED
 		)
 	siemens_coefficient = 0.3
 	icon_state = "rig-dohrukheavy"
