@@ -28,7 +28,7 @@
 	desc = "A sleek, menacing turret of unkown origin."
 	installation = /obj/item/weapon/gun/energy/laser
 	color = COLOR_SILVER
-	req_access = list("access_voxship")
+	req_access = list("ACCESS_VOXSHIP")
 	health = 150
 	maxhealth = 150
 
