@@ -95,13 +95,47 @@ They sell generic supplies and ask for generic supplies.
 								/obj/item/weapon/tank/anesthetic          = TRADER_THIS_TYPE,
 								/obj/item/weapon/tank/nitrogen            = TRADER_THIS_TYPE,
 								/obj/item/weapon/tank/phoron              = TRADER_THIS_TYPE,
+								/obj/item/weapon/engine                   = TRADER_SUBTYPES_ONLY,
 								/obj/machinery/mining                     = TRADER_SUBTYPES_ONLY
+								)
+
+/datum/trader/ship/Appliances_and_tech
+	origin = "Discount Dan's Expiremental Machines & Junk Yard"
+
+	possible_trading_items = list(/obj/machinery/alarm                    = TRADER_SUBTYPES_ONLY,
+								/obj/machinery/appliance/cooker           = TRADER_SUBTYPES_ONLY,
+								/obj/machinery/appliance/grill            = TRADER_THIS_TYPE,
+								/obj/machinery/appliance/mixer            = TRADER_SUBTYPES_ONLY,
+								/obj/machinery/artillerycontrol           = TRADER_THIS_TYPE,
+								/obj/machinery/atmospherics/pipeturbine   = TRADER_THIS_TYPE,
+								/obj/machinery/bluespace_beacon           = TRADER_THIS_TYPE,
+								/obj/machinery/flasher/portable           = TRADER_THIS_TYPE,
+								/obj/machinery/particle_accelerator/control_box = TRADER_THIS_TYPE,
+								/obj/structure/particle_accelerator/fuel_chamber = TRADER_THIS_TYPE,
+								/obj/structure/particle_accelerator/end_cap      = TRADER_THIS_TYPE,
+								/obj/structure/particle_accelerator/power_box    = TRADER_THIS_TYPE,
+								/obj/structure/particle_accelerator/particle_emitter/center = TRADER_THIS_TYPE,
+								/obj/structure/particle_accelerator/particle_emitter/left = TRADER_THIS_TYPE,
+								/obj/structure/particle_accelerator/particle_emitter/right = TRADER_THIS_TYPE,
+								/obj/structure/adherent_pylon = TRADER_THIS_TYPE,
+								/obj/structure/adherent_bath  = TRADER_THIS_TYPE,
+								/obj/structure/closet/coffin  = TRADER_ALL,
+								/obj/structure/fitness        = TRADER_SUBTYPES_ONLY,
+								/obj/structure/gunnery        = TRADER_SUBTYPES_ONLY,
+								/obj/item/bone/skull/deer     = TRADER_THIS_TYPE,
+								/obj/item/device/plunger/robot = TRADER_THIS_TYPE,
+								/obj/item/device/spy_bug      = TRADER_THIS_TYPE,
+								/obj/item/device/spy_monitor  = TRADER_THIS_TYPE,
+								/obj/item/rig_module/self_destruct = TRADER_THIS_TYPE,
+								/obj/item/weapon/material/armblade/claws = TRADER_THIS_TYPE,
+								/obj/item/weapon/nuclear_cylinder = TRADER_THIS_TYPE
 								)
 
 /datum/trader/trading_beacon/manufacturing
 	origin = "Manifacturing Beacon"
 
 	possible_trading_items = list(/obj/structure/AIcore             = TRADER_THIS_TYPE,
+								/obj/machinery/ai_slipper           = TRADER_THIS_TYPE,
 								/obj/structure/girder               = TRADER_THIS_TYPE,
 								/obj/structure/grille               = TRADER_THIS_TYPE,
 								/obj/structure/mopbucket            = TRADER_THIS_TYPE,
@@ -122,5 +156,6 @@ They sell generic supplies and ask for generic supplies.
 								/obj/structure/sign                 = TRADER_SUBTYPES_ONLY,
 								/obj/structure/sign/double          = TRADER_BLACKLIST_ALL,
 								/obj/structure/sign/goldenplaque    = TRADER_BLACKLIST_ALL,
-								/obj/structure/sign/poster          = TRADER_BLACKLIST
+								/obj/structure/sign/poster          = TRADER_BLACKLIST,
+								/obj/item/weapon/crowbar/brace_jack = TRADER_THIS_TYPE
 								)

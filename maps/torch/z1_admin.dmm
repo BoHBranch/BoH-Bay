@@ -8569,19 +8569,18 @@
 /turf/simulated/floor/carpet/blue,
 /area/merchant_station)
 "aNx" = (
-/obj/structure/hygiene/shower{
-	dir = 4;
-	icon_state = "shower"
+/obj/machinery/botany,
+/obj/machinery/light/small{
+	dir = 1
 	},
-/obj/structure/curtain/open/shower,
-/obj/structure/window/reinforced,
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
 "aNA" = (
-/obj/machinery/door/airlock{
-	name = "Toilet"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/botany,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
 "aNB" = (
@@ -8589,10 +8588,11 @@
 	dir = 4;
 	pixel_y = 8
 	},
-/obj/structure/hygiene/toilet{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/botany,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
 "aNC" = (
@@ -8714,16 +8714,6 @@
 /turf/simulated/floor/carpet/blue,
 /area/merchant_station)
 "aNZ" = (
-/obj/structure/hygiene/shower{
-	dir = 4;
-	icon_state = "shower";
-	pixel_x = 0
-	},
-/obj/structure/curtain/open/shower,
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
 "aOa" = (
@@ -8733,10 +8723,6 @@
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
 "aOb" = (
-/obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 8
-	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
@@ -8924,12 +8910,6 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
-	},
-/turf/simulated/floor/tiled/freezer,
-/area/merchant_station)
-"aOI" = (
-/obj/machinery/door/airlock{
-	name = "Toilet"
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
@@ -9598,6 +9578,7 @@
 /obj/structure/table/steel,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/recharger,
+/obj/item/device/scanner/price,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aRt" = (
@@ -10556,13 +10537,19 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aUQ" = (
-/obj/machinery/constructable_frame/machine_frame,
 /obj/machinery/light/small{
 	dir = 1
 	},
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = 24
+	},
+/obj/machinery/vending/engivend{
+	req_access = list("ACCESS_MERCHANT")
+	},
+/obj/structure/cable/blue{
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
@@ -10669,6 +10656,11 @@
 	d1 = 2;
 	d2 = 4;
 	icon_state = "2-4"
+	},
+/obj/structure/cable/blue,
+/obj/structure/cable/blue{
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
@@ -10793,7 +10785,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/reagent_dispensers/fueltank,
+/obj/machinery/clonepod,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aVJ" = (
@@ -10802,7 +10794,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/vending/engivend{
+/obj/machinery/computer/cloning{
 	req_access = list("ACCESS_MERCHANT")
 	},
 /turf/simulated/floor/plating,
@@ -11154,7 +11146,7 @@
 /turf/simulated/floor/plating,
 /area/merchant_station)
 "aXc" = (
-/obj/effect/decal/cleanable/blood/oil,
+/obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/plating,
 /area/merchant_station)
 "aXd" = (
@@ -11507,25 +11499,19 @@
 	},
 /area/centcom/living)
 "bOb" = (
-/obj/structure/hygiene/sink{
+/obj/machinery/light/small{
 	dir = 1;
-	pixel_y = 16
-	},
-/obj/item/weapon/storage/mirror{
-	pixel_y = 32
+	flickering = 1
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
 "bPb" = (
-/obj/structure/hygiene/sink{
-	dir = 1;
-	pixel_y = 16
-	},
-/obj/item/weapon/storage/mirror{
-	pixel_y = 32
-	},
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/botany,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
 "bRY" = (
@@ -12248,6 +12234,10 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"oAS" = (
+/obj/machinery/constructable_frame/machine_frame,
+/turf/simulated/floor/tiled,
+/area/merchant_station)
 "oFc" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1;
@@ -12648,6 +12638,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/shuttle/merchant/home)
+"wBK" = (
+/obj/structure/window/reinforced,
+/turf/simulated/floor/tiled/freezer,
+/area/merchant_station)
 "wCv" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -23045,7 +23039,7 @@ aMf
 aMf
 aQi
 aQK
-aPc
+oAS
 aOw
 aab
 aRA
@@ -23646,8 +23640,8 @@ aMg
 aMI
 aMf
 aNA
-aMf
-aOI
+aNZ
+aNZ
 aMf
 aQl
 aQM
@@ -23848,7 +23842,7 @@ aMg
 aMg
 aMf
 aNB
-aMf
+wBK
 aOJ
 aMf
 aQm

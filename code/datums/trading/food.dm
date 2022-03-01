@@ -59,6 +59,7 @@
 							/obj/item/weapon/reagent_containers/food/snacks/sliceable/braincake        = TRADER_BLACKLIST,
 							/obj/item/weapon/reagent_containers/food/snacks/meat/human                 = TRADER_BLACKLIST,
 							/obj/item/weapon/reagent_containers/cooking_container					   = TRADER_SUBTYPES_ONLY,
+							/obj/structure/kitchenspike                                                = TRADER_THIS_TYPE,
 							/obj/item/weapon/reagent_containers/food/snacks/variable                   = TRADER_BLACKLIST_ALL
 								)
 

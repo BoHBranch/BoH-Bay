@@ -36,9 +36,15 @@
 								/obj/item/toy/sword                   = TRADER_THIS_TYPE,
 								/obj/item/toy/bosunwhistle            = TRADER_THIS_TYPE,
 								/obj/item/weapon/board                = TRADER_THIS_TYPE,
+								/obj/item/toy/balloon                 = TRADER_THIS_TYPE,
+								/obj/item/toy/snappop                 = TRADER_THIS_TYPE,
+								/obj/item/toy/ringbell                = TRADER_THIS_TYPE,
+								/obj/item/weapon/bikehorn/airhorn     = TRADER_THIS_TYPE,
+								/obj/item/weapon/grenade/fake         = TRADER_THIS_TYPE,
 								/obj/item/weapon/storage/box/checkers = TRADER_ALL,
 								/obj/item/weapon/deck                 = TRADER_SUBTYPES_ONLY,
 								/obj/item/weapon/pack                 = TRADER_SUBTYPES_ONLY,
+								/obj/structure/skele_stand            = TRADER_THIS_TYPE,
 								/obj/item/weapon/dice                 = TRADER_ALL,
 								/obj/item/weapon/dice/d20/cursed      = TRADER_BLACKLIST,
 								/obj/item/weapon/gun/launcher/money   = TRADER_THIS_TYPE)
@@ -133,19 +139,6 @@
 								/obj/item/clothing/under/vox              = TRADER_BLACKLIST_ALL,
 								/obj/item/clothing/under/wedding          = TRADER_BLACKLIST,
 								/obj/item/clothing/under/punpun           = TRADER_BLACKLIST)
-
-/datum/trader/ship/clothingshop/shoes
-	possible_origins = list("Foot Safe", "Paysmall", "Popular Footwear", "Grimbly's Shoes", "Right Steps")
-	possible_trading_items = list(/obj/item/clothing/shoes                = TRADER_SUBTYPES_ONLY,
-								/obj/item/clothing/shoes/chameleon        = TRADER_BLACKLIST,
-								/obj/item/clothing/shoes/combat           = TRADER_BLACKLIST,
-								/obj/item/clothing/shoes/clown_shoes      = TRADER_BLACKLIST,
-								/obj/item/clothing/shoes/cult             = TRADER_BLACKLIST,
-								/obj/item/clothing/shoes/cyborg           = TRADER_BLACKLIST,
-								/obj/item/clothing/shoes/lightrig         = TRADER_BLACKLIST_ALL,
-								/obj/item/clothing/shoes/magboots         = TRADER_BLACKLIST_ALL,
-								/obj/item/clothing/shoes/swat             = TRADER_BLACKLIST,
-								/obj/item/clothing/shoes/syndigaloshes    = TRADER_BLACKLIST)
 
 /datum/trader/ship/clothingshop/hatglovesaccessories
 	possible_origins = list("Baldie's Hats and Accessories", "The Right Fit", "Like a Glove", "Space Fashion")
@@ -302,6 +295,9 @@ Sells devices, odds and ends, and medical stuff
 								/obj/item/device/dociler              = TRADER_THIS_TYPE,
 								/obj/item/weapon/beartrap			  = TRADER_THIS_TYPE,
 								/obj/item/seeds/random                = TRADER_THIS_TYPE,
+								/obj/item/bee_pack = TRADER_THIS_TYPE,
+								/obj/item/stack/animalhide = TRADER_SUBTYPES_ONLY,
+								/obj/item/stack/animalhide/human = TRADER_BLACKLIST,
 								/obj/item/device/scanner/xenobio = TRADER_THIS_TYPE)
 
 /datum/trader/medical
@@ -360,40 +356,9 @@ Sells devices, odds and ends, and medical stuff
 								  /obj/item/sign/medipolma = TRADER_THIS_TYPE
 								)
 
-/datum/trader/mining
-	name = "Rock'n'Drill Mining Inc"
-	origin = "Automated Smelter AH-532"
-	trade_flags = TRADER_GOODS|TRADER_MONEY|TRADER_WANTED_ONLY|TRADER_WANTED_ALL
-	want_multiplier = 1.5
-	margin = 2
-	possible_origins = list("Automated Smelter AH-532", "CMV Locust", "The Galactic Foundry Company", "Crucible LLC")
-	speech = list("hail_generic"    = "Welcome to R'n'D Mining. Please place your order.",
-				"hail_deny"         = "There is no response on the line.",
-
-				"trade_complete"    = "Transaction complete. Please use our services again",
-				"trade_blacklist"   = "Whoa whoa, I don't want this shit, put it away.",
-				"trade_found_unwanted" = "Sorry, we are currently not looking to purchase these items.",
-				"trade_not_enough"   = "Sorry, this is an insufficient sum for this purchase.",
-				"how_much"          = "For ONE entry of ITEM the price would be VALUE CURRENCY.",
-				"what_want"         = "We are currently looking to procure",
-
-				"compliment_deny"   = "I am afraid this is beyond my competency.",
-				"compliment_accept" = "Thank you.",
-				"insult_good"       = "Alright, we will reconsider the terms.",
-				"insult_bad"        = "This is not acceptable, please cease.",
-				)
-
-	possible_wanted_items = list(/obj/item/weapon/ore/ = TRADER_SUBTYPES_ONLY,
-								/obj/item/weapon/disk/survey = TRADER_THIS_TYPE,
-								/obj/item/weapon/ore/slag = TRADER_BLACKLIST)
-
-	possible_trading_items = list(/obj/machinery/mining/drill = TRADER_THIS_TYPE,
-								  /obj/machinery/mining/brace = TRADER_THIS_TYPE,
-								  /obj/machinery/floodlight = TRADER_THIS_TYPE,
-								  /obj/machinery/floodlight = TRADER_THIS_TYPE,
-								  /obj/item/weapon/storage/box/greenglowsticks = TRADER_THIS_TYPE,
-								  /obj/item/clothing/suit/space/void/engineering/salvage/prepared  = TRADER_THIS_TYPE,
-								  /obj/item/stack/material/uranium/ten = TRADER_THIS_TYPE,
-								  /obj/item/stack/material/plasteel/fifty = TRADER_THIS_TYPE,
-								  /obj/item/stack/material/steel/fifty = TRADER_THIS_TYPE
+/datum/trader/ship/Appliances_and_tech
+	origin = "Vending Suppliers ltd."
+								 (/obj/machinery/vending = TRADER_SUBTYPES_ONLY,
+								  /obj/machinery/vending/assist = TRADER_BLACKLIST,
+								  /obj/machinery/vending/medical/skrell = TRADER_BLACKLIST,
 								)
