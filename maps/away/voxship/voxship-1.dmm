@@ -682,6 +682,7 @@
 /area/voxship/engineering)
 "gs" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	frequency = 1504;
@@ -801,16 +802,6 @@
 "hb" = (
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
-"hc" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/light,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/ship_fore)
 "hk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1031,6 +1022,7 @@
 /area/voxship/dock)
 "iY" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	frequency = 1503;
@@ -1134,6 +1126,7 @@
 /area/voxship/engineering)
 "kg" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	name = "OFD";
@@ -2157,11 +2150,6 @@
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
-"ra" = (
-/obj/effect/wallframe_spawn/alien,
-/obj/structure/ship_munition/disperser_charge/ascent,
-/turf/space,
-/area/space)
 "rc" = (
 /obj/machinery/atmospherics/unary/engine{
 	dir = 8
@@ -2261,6 +2249,7 @@
 	dir = 10
 	},
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	name = "Brig";
 	req_access = list("ACCESS_VOXSHIP")
@@ -2282,6 +2271,7 @@
 /area/voxship/engineering)
 "sf" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	frequency = 1500;
@@ -2485,15 +2475,10 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "tG" = (
-/obj/machinery/turretid/vox{
-	dir = 1;
-	id_tag = "voxpdlt'
-	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
-	},
-/area/voxship/armory)
+/obj/effect/wallframe_spawn/alien,
+/obj/effect/wallframe_spawn/alien,
+/turf/simulated/floor/airless,
+/area/space)
 "tI" = (
 /obj/machinery/hologram/holopad,
 /obj/structure/cable{
@@ -2586,11 +2571,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
-"ur" = (
-/obj/effect/wallframe_spawn/alien,
-/obj/effect/wallframe_spawn/alien,
-/turf/space,
-/area/space)
 "ut" = (
 /obj/machinery/access_button/airlock_exterior{
 	frequency = 1500;
@@ -2812,6 +2792,7 @@
 /area/voxship/ofd)
 "wm" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	name = "Armory";
@@ -2821,6 +2802,7 @@
 /area/voxship/armory)
 "wp" = (
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 0;
 	dir = 8;
 	req_access = list("ACCESS_VOXSHIP")
 	},
@@ -3182,6 +3164,7 @@
 /area/voxship/engineering)
 "AL" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	frequency = 1502;
@@ -3628,6 +3611,7 @@
 /area/voxship/engineering)
 "Ew" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	frequency = 1501;
@@ -4006,13 +3990,6 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
-"Ik" = (
-/obj/effect/wallframe_spawn/alien,
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
-	},
-/area/space)
 "Il" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -4056,6 +4033,7 @@
 /area/voxship/dock)
 "Is" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	frequency = 1503;
@@ -4141,7 +4119,7 @@
 /area/voxship/shuttle)
 "Jk" = (
 /obj/effect/wallframe_spawn/alien,
-/turf/space,
+/turf/simulated/floor/airless,
 /area/space)
 "Jl" = (
 /obj/structure/railing/mapped{
@@ -4157,6 +4135,7 @@
 /area/voxship/engineering)
 "Jp" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	name = "Engineering";
@@ -4196,6 +4175,7 @@
 /area/voxship/engineering)
 "Jx" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	name = "Engineering";
@@ -4476,9 +4456,15 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "Lw" = (
-/obj/structure/window/alien/full,
-/turf/space,
-/area/voxship/ofd)
+/obj/machinery/turretid/vox{
+	dir = 1;
+	id_tag = "voxpdlt'
+	},
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen" = 103)
+	},
+/area/voxship/armory)
 "Ly" = (
 /obj/structure/table/rack,
 /obj/item/clothing/mask/gas/swat/vox,
@@ -4580,6 +4566,7 @@
 /area/voxship/engineering)
 "ME" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	frequency = 1502;
@@ -4715,6 +4702,7 @@
 /area/voxship/armory)
 "NZ" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	frequency = 1500;
 	id_tag = "lower_fore_vox_in";
@@ -4992,9 +4980,15 @@
 	},
 /area/voxship/dock)
 "QC" = (
-/obj/effect/wallframe_spawn/alien,
-/turf/space,
-/area/voxship/ofd)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_fore)
 "QE" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -5199,6 +5193,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	name = "Armory";
@@ -5271,6 +5266,7 @@
 /area/voxship/engineering)
 "Tb" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	frequency = 1504;
@@ -5393,6 +5389,7 @@
 /area/voxship/dock)
 "Ur" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	frequency = 1501;
 	id_tag = "upper_fore_vox_in";
@@ -12361,18 +12358,18 @@ cZ
 cZ
 cZ
 Jk
-ur
+Jk
+Jk
+cZ
+cZ
+Jk
+Jk
 Jk
 cZ
 cZ
 Jk
 Jk
 Jk
-cZ
-cZ
-ra
-Jk
-Ik
 cZ
 cZ
 cZ
@@ -12517,7 +12514,7 @@ jl
 Jk
 cZ
 cZ
-ur
+tG
 Xw
 Jk
 cZ
@@ -12667,13 +12664,13 @@ cZ
 We
 VN
 Bt
-Lw
+EL
 GO
-QC
+Wd
 Bt
-QC
+Wd
 GO
-Lw
+EL
 Bt
 VN
 RP
@@ -12821,9 +12818,9 @@ VN
 Bt
 EL
 uY
-QC
+Wd
 BN
-QC
+Wd
 Bt
 EL
 Bt
@@ -14955,7 +14952,7 @@ FK
 ux
 XZ
 QE
-hc
+QC
 VN
 Wb
 VN
@@ -16016,7 +16013,7 @@ YO
 qK
 fQ
 YO
-tG
+Lw
 Nx
 Bh
 jM
