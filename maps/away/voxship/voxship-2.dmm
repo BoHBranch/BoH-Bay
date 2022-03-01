@@ -988,7 +988,9 @@
 /area/voxship/med)
 "oC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/kafel_full{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -1404,6 +1406,14 @@
 /obj/machinery/media/jukebox,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
+"uu" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/kafel_full{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/ship_mid)
 "uB" = (
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
@@ -18469,7 +18479,7 @@ Xb
 aV
 nQ
 nQ
-nQ
+uu
 nQ
 sS
 uB
