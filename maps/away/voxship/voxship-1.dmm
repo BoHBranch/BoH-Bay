@@ -248,7 +248,7 @@
 	frequency = 1505;
 	id_tag = "vox_shuttle";
 	pixel_x = 24;
-	req_access = list("ACCESS_VOXSHIP");
+	req_access = list("access_voxship");
 	tag_exterior_sensor = "vox_shuttle_sensor_external"
 	},
 /turf/simulated/floor/reinforced/vox,
@@ -2475,20 +2475,15 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "tG" = (
-/obj/machinery/door/airlock/ascent{
-	color = "#6CDA1B";
-	req_access = list("ACCESS_VOXSHIP")
+/obj/machinery/turretid/vox{
+	dir = 1;
+	id_tag = "voxpdlt'
 	},
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/external{
-	autoset_access = 0;
-	density = 1;
-	frequency = 1331;
-	id_tag = "calypso_shuttle_outer";
-	name = "Gaunt External Access"
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen" = 103)
 	},
-/turf/simulated/floor/reinforced/vox,
-/area/voxship/dock)
+/area/voxship/armory)
 "tI" = (
 /obj/machinery/hologram/holopad,
 /obj/structure/cable{
@@ -2854,16 +2849,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
-"wA" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/light,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/ship_fore)
 "wK" = (
 /obj/structure/bed/chair/shuttle/black,
 /turf/simulated/floor/reinforced/vox,
@@ -5321,16 +5306,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_fore)
-"Tw" = (
-/obj/machinery/turretid/vox{
-	dir = 1;
-	id_tag = "voxpdlt'
-	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
-	},
-/area/voxship/armory)
 "TE" = (
 /obj/machinery/atmospherics/binary/pump,
 /turf/simulated/floor/tiled/techmaint/vox,
@@ -5447,6 +5422,16 @@
 /obj/machinery/light,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
+"UD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_fore)
 "UO" = (
 /obj/structure/bed/chair/shuttle/black,
 /obj/structure/cable{
@@ -14970,7 +14955,7 @@ FK
 ux
 XZ
 QE
-wA
+UD
 VN
 Wb
 VN
@@ -16031,7 +16016,7 @@ YO
 qK
 fQ
 YO
-Tw
+tG
 Nx
 Bh
 jM
@@ -20431,7 +20416,7 @@ cZ
 NG
 HX
 aj
-tG
+WQ
 ZW
 nn
 Na
