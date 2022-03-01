@@ -11,8 +11,8 @@
 	//at 0.8 completely depleted after 60ish minutes of constant walking or 130 minutes of standing still
 	var/servo_cost = 0.8
 
-	min_broken_damage = 15//up from 5
-	max_damage = 65//up from 45. Easily destroyed still.
+	min_broken_damage = 45//up from 15. Buffed because for some reason the damage used isn't consistent?
+	max_damage = 45//Simply 45 now.
 
 	relative_size = 70
 
