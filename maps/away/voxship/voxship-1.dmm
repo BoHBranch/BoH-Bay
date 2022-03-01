@@ -820,9 +820,9 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
 "hq" = (
-/obj/machinery/turretid/lethal{
+/obj/machinery/turretid/tur_ID{
 	id_tag = "voxpdlt';
-	pixel_y = 32;
+	pixel_y = 25;
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/reinforced/vox,
@@ -1030,7 +1030,6 @@
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/visible/yellow,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 4;
@@ -1040,6 +1039,10 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/binary/pump{
+	dir = 1;
+	icon_state = "map_off"
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
@@ -1199,9 +1202,8 @@
 /turf/space,
 /area/voxship/engineering)
 "kL" = (
-/obj/machinery/atmospherics/binary/pump{
-	dir = 1;
-	icon_state = "map_off"
+/obj/machinery/atmospherics/pipe/manifold/visible/fuel{
+	dir = 4
 	},
 /obj/structure/cable{
 	d1 = 1;
@@ -1388,6 +1390,10 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
+"lN" = (
+/obj/structure/window/alien/full,
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/ofd)
 "lT" = (
 /obj/machinery/porta_turret/vox{
 	id_tag = "voxpdlt'
@@ -1839,6 +1845,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/visible/blue,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "oZ" = (
@@ -2015,6 +2022,9 @@
 	dir = 10
 	},
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/armalis,
+/obj/machinery/atmospherics/pipe/simple/visible/blue{
+	dir = 6
+	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
 "qp" = (
@@ -2444,8 +2454,20 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "tG" = (
-/turf/simulated/floor/plating/vox,
-/area/voxship/ofd)
+/obj/machinery/door/airlock/ascent{
+	color = "#6CDA1B";
+	req_access = list("ACCESS_VOXSHIP")
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/external{
+	autoset_access = 0;
+	density = 1;
+	frequency = 1331;
+	id_tag = "calypso_shuttle_outer";
+	name = "Gaunt External Access"
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/dock)
 "tI" = (
 /obj/machinery/hologram/holopad,
 /obj/structure/cable{
@@ -2548,6 +2570,13 @@
 	initial_gas = list("nitrogen" = 103)
 	},
 /area/voxship/ship_fore)
+"uv" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1505;
+	id_tag = "vox_shuttle_inner"
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/shuttle)
 "ux" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
@@ -2578,14 +2607,15 @@
 /obj/machinery/disperser/front{
 	dir = 8
 	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
-	},
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "uZ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
+	},
+/obj/machinery/atmospherics/binary/pump/on{
+	dir = 1;
+	target_pressure = 200
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
@@ -2723,6 +2753,17 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
+"vU" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/engineering)
 "vZ" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
@@ -2788,9 +2829,6 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/engineering)
 "ww" = (
-/obj/machinery/atmospherics/binary/pump{
-	dir = 1
-	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 4;
@@ -2800,6 +2838,9 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/visible/blue{
+	dir = 9
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
@@ -3233,6 +3274,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/black,
 /obj/effect/paint/sun,
+/obj/machinery/button/ignition{
+	id_tag = "Voxignition";
+	pixel_y = -5
+	},
 /turf/simulated/wall/ocp_wall,
 /area/voxship/engineering)
 "BC" = (
@@ -3661,8 +3706,8 @@
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/dock)
 "Fk" = (
-/obj/machinery/atmospherics/pipe/manifold/visible/yellow{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/visible/yellow{
+	dir = 6
 	},
 /obj/structure/cable{
 	d1 = 1;
@@ -3728,7 +3773,8 @@
 /obj/machinery/access_button/airlock_interior{
 	frequency = 1505;
 	master_tag = "vox_shuttle";
-	pixel_y = 20
+	pixel_y = 20;
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
@@ -4186,7 +4232,10 @@
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/engineering)
 "JZ" = (
-/obj/machinery/door/airlock/external,
+/obj/machinery/door/airlock/external{
+	frequency = 1505;
+	id_tag = "vox_shuttle_outer"
+	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
 "Ke" = (
@@ -4414,7 +4463,10 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
 "Lz" = (
-/obj/machinery/door/airlock/external,
+/obj/machinery/door/airlock/external{
+	frequency = 1505;
+	id_tag = "vox_shuttle_outer"
+	},
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -4538,7 +4590,8 @@
 /obj/machinery/access_button/airlock_interior{
 	frequency = 1505;
 	master_tag = "vox_shuttle";
-	pixel_y = 10
+	pixel_y = 10;
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/wall/alienwall,
 /area/voxship/shuttle)
@@ -5103,7 +5156,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating/vox,
-/area/voxship/ofd)
+/area/voxship/ship_fore)
 "Su" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -5716,7 +5769,7 @@
 /turf/space,
 /area/space)
 "Yc" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal,
+/obj/machinery/atmospherics/pipe/simple/visible/universal,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -12414,7 +12467,7 @@ cZ
 cZ
 cZ
 Jk
-Xw
+jl
 Jk
 cZ
 cZ
@@ -12424,7 +12477,7 @@ Jk
 cZ
 cZ
 Jk
-Xw
+jl
 Jk
 cZ
 cZ
@@ -12566,7 +12619,7 @@ cZ
 cZ
 cZ
 We
-Bt
+VN
 Bt
 Lw
 GO
@@ -12576,7 +12629,7 @@ QC
 GO
 Lw
 Bt
-Bt
+VN
 RP
 cZ
 cZ
@@ -12718,17 +12771,17 @@ cZ
 cZ
 Uz
 WC
+VN
 Bt
-Bt
-Lw
+lN
 uY
 QC
 BN
 QC
 Bt
-Lw
+lN
 Bt
-Bt
+VN
 WC
 Uz
 cZ
@@ -13022,7 +13075,7 @@ cZ
 WC
 VN
 Wb
-tG
+Wb
 Yp
 cD
 La
@@ -13032,7 +13085,7 @@ tq
 oI
 CS
 Yp
-tG
+Wb
 Wb
 VN
 WC
@@ -20018,7 +20071,7 @@ xX
 CZ
 Lz
 Qo
-JZ
+uv
 bZ
 eM
 dr
@@ -20170,7 +20223,7 @@ lI
 qu
 JZ
 cN
-JZ
+uv
 QQ
 eM
 dr
@@ -20317,7 +20370,7 @@ cZ
 NG
 HX
 aj
-WQ
+tG
 ZW
 nn
 Na
@@ -21999,7 +22052,7 @@ hb
 ql
 oU
 uZ
-al
+vU
 wt
 EU
 uX
