@@ -191,6 +191,19 @@
 	tracer_type = /obj/effect/projectile/laser/xray/tracer
 	impact_type = /obj/effect/projectile/laser/xray/impact
 
+/obj/item/projectile/beam/snipervox
+	name = "sniper beam"
+	icon_state = "xray"
+	fire_sound = 'sound/weapons/marauder.ogg'
+	distance_falloff = 0.50
+	damage = 50
+	armor_penetration = 50
+	stutter = 2
+
+	muzzle_type = /obj/effect/projectile/laser/xray/muzzle
+	tracer_type = /obj/effect/projectile/laser/xray/tracer
+	impact_type = /obj/effect/projectile/laser/xray/impact
+
 /obj/item/projectile/beam/stun
 	name = "stun beam"
 	icon_state = "stun"
