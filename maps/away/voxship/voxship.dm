@@ -16,12 +16,12 @@
 
 
 /obj/effect/overmap/visitable/ship/voxship
-	name = "Abnormal Asteroid"
-	desc = "Sensors detect asteroid formation, rich in minerals. Non-geological formations present.\
+	name = "Unkown ship type"
+	desc = "An unkown ship type, seemingly corvette to frigate in size made out of a unkown type of metal.\
 	Organic signature detected."
-	vessel_mass = 10000 //Rather heavy due to all the rocks surrounding it, and the sheer size
+	vessel_mass = 10000 //Heavy due to all the THICC metal surrounding it.
 	fore_dir = WEST
-	burn_delay = 2 SECONDS //Not very manoeuvrable due to the large mass
+	burn_delay = 2 SECONDS //Now more manoeuvrable due to the less mass
 
 	icon_state = "ship"
 	hide_from_reports = TRUE
