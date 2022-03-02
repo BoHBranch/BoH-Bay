@@ -219,11 +219,11 @@
 /obj/item/projectile/bullet/rifle/military/large
 	fire_sound = 'sound/weapons/gunshot/hornet.ogg'
 	damage = 45
-	armor_penetration = 30
-	penetrating = 0
+	armor_penetration = 45
+	penetrating = 2
 	distance_falloff = 0.50
-	shrapnel_chance_multiplier = 1
-	arterial_bleed_chance_multiplier = 1
+	shrapnel_chance_multiplier = 1.1
+	arterial_bleed_chance_multiplier = 1.3
 
 /obj/item/projectile/bullet/rifle/shell
 	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
