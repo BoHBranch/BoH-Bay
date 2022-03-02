@@ -148,7 +148,7 @@
 	name = "improvised gun product"
 	desc = "An almost-complete improvised gun. From here, a final specification part is needed."
 
-/obj/item/weapon/firearmframe_4/attackby(var/obj/item/W, var/mob/user)
+/obj/item/weapon/firearmframe_4/attackby(var/obj/item/W, var/mob/user) //This is currently WIP.
 	if(istype(W, /obj/item/weapon/firearmpart_spec))
 		qdel(src)
 		qdel(W)

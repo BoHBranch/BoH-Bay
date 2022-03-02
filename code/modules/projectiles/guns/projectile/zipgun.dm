@@ -37,7 +37,7 @@
 
 /obj/item/weapon/gun/projectile/pirate/unloaded
 	starts_loaded = FALSE
-//note, remove unneeded vars like icon=
+
 /obj/item/weapon/gun/projectile/pistol/improvised
 	name = "scrapper-9"
 	desc = "An improvised pistol capable of utilizing standard magazines. Its makeshift nature sacrifices power for speed; shoddy, but useful in a pinch."
