@@ -16,7 +16,8 @@
 	preferring socialization and trade to combat and development. Still, they spend much of their time fishing or exploring the ocean. \
 	Though following many traditional unathi beliefs, Yeosa are much fairer to each other to account for their low numbers and \
 	often worship beasts of the sea as if they're the same as their ancestors.\
-	<br/><br/>Their biology is heavily attuned to surviving Moghes' dangerous waters, including gills, fins, and a venomous bite."
+	<br/><br/>Their biology is heavily attuned to surviving Moghes' dangerous waters, including gills, fins, and a venomous bite. \
+	<br/><br/>Naming format: Personalname Clanname Nickname"
 
 	base_auras = list(
 		/obj/aura/regenerating/human/unathi/yeosa
