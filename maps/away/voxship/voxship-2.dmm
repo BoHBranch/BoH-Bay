@@ -53,6 +53,7 @@
 /area/voxship/ship_mid)
 "aX" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	req_access = list("ACCESS_VOXSHIP")
@@ -172,6 +173,7 @@
 /area/voxship/dorms)
 "dI" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	req_access = list("ACCESS_VOXSHIP")
@@ -329,12 +331,6 @@
 /obj/effect/submap_landmark/spawnpoint/voxship_crew,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
-"fF" = (
-/obj/structure/catwalk,
-/obj/structure/lattice,
-/obj/structure/ladder,
-/turf/space,
-/area/space)
 "fG" = (
 /obj/item/weapon/reagent_containers/glass/bucket,
 /obj/item/weapon/mop,
@@ -434,9 +430,9 @@
 /area/voxship/med)
 "gF" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
-	dir = 4;
-	req_access = list("ACCESS_VOXSHIP")
+	dir = 4
 	},
 /obj/machinery/door/firedoor{
 	dir = 4;
@@ -575,6 +571,7 @@
 /area/voxship/dorms)
 "jg" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	req_access = list("ACCESS_VOXSHIP")
@@ -948,8 +945,8 @@
 /area/voxship/ship_mid)
 "nY" = (
 /obj/machinery/door/airlock/ascent{
-	color = "#6CDA1B";
-	req_access = list("ACCESS_VOXSHIP")
+	autoset_access = 0;
+	color = "#6CDA1B"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1008,9 +1005,9 @@
 /area/voxship/ship_mid)
 "pa" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
-	dir = 4;
-	req_access = list("ACCESS_VOXSHIP")
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -1159,6 +1156,7 @@
 /area/voxship/med)
 "qY" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	req_access = list("ACCESS_VOXSHIP")
 	},
@@ -1224,6 +1222,7 @@
 /area/voxship/med)
 "sp" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	req_access = list("ACCESS_VOXSHIP")
@@ -1282,6 +1281,7 @@
 /area/voxship/ship_mid)
 "sX" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	req_access = list("ACCESS_VOXSHIP")
 	},
@@ -1304,8 +1304,8 @@
 /area/voxship/dorms)
 "tn" = (
 /obj/machinery/door/airlock/ascent{
-	color = "#6CDA1B";
-	req_access = list("ACCESS_VOXSHIP")
+	autoset_access = 0;
+	color = "#6CDA1B"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1390,8 +1390,9 @@
 /area/voxship/ship_mid)
 "ub" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
-	req_access = list("ACCESS_VOXSHIP")
+	name = "Washroom"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1406,14 +1407,6 @@
 /obj/machinery/media/jukebox,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
-"uu" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/kafel_full{
-	initial_gas = list("nitrogen" = 101.23)
-	},
-/area/voxship/ship_mid)
 "uB" = (
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
@@ -1458,6 +1451,10 @@
 /area/voxship/dorms)
 "wm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/chemical_dispenser/full,
+/obj/item/weapon/book/manual/chemistry_recipes,
+/obj/item/weapon/reagent_containers/glass/beaker/bluespace,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -1474,9 +1471,17 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "wq" = (
-/obj/machinery/reagentgrinder,
-/obj/item/stack/material/phoron/ten,
-/obj/item/weapon/reagent_containers/dropper,
+/obj/structure/table/standard,
+/obj/machinery/recharger,
+/obj/item/bodybag/cryobag,
+/obj/item/weapon/storage/belt/medical,
+/obj/item/weapon/storage/firstaid/adv,
+/obj/item/weapon/storage/firstaid/combat,
+/obj/item/roller,
+/obj/item/clothing/accessory/stethoscope,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/bodybag/cryobag,
+/obj/item/weapon/defibrillator/loaded,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
@@ -1920,6 +1925,7 @@
 /area/voxship/med)
 "Cm" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4
 	},
@@ -2158,7 +2164,7 @@
 /obj/item/ammo_magazine/magnum,
 /obj/item/ammo_magazine/magnum,
 /obj/item/weapon/storage/box/glasses/shot,
-/obj/item/clothing/glasses/thermal,
+/obj/item/clothing/glasses/night,
 /obj/item/weapon/disk/tech_disk,
 /obj/item/weapon/disk/tech_disk,
 /obj/item/weapon/disk/tech_disk,
@@ -2255,6 +2261,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/item/stack/nanopaste,
+/obj/item/weapon/storage/box/beakers,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -2544,6 +2551,13 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
+"Kk" = (
+/obj/structure/table/standard,
+/obj/machinery/reagent_temperature/cooler,
+/turf/simulated/floor/tiled/white/usedup{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/med)
 "Kz" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -2565,6 +2579,7 @@
 /area/voxship/ship_mid)
 "KW" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	req_access = list("ACCESS_VOXSHIP_CAPTAIN")
 	},
@@ -2627,6 +2642,7 @@
 /area/voxship/med)
 "Lx" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	req_access = list("ACCESS_VOXSHIP")
@@ -2774,10 +2790,10 @@
 	},
 /area/voxship/med)
 "ML" = (
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/machinery/chemical_dispenser/full,
-/obj/item/weapon/reagent_containers/glass/beaker/bluespace,
-/obj/item/weapon/book/manual/chemistry_recipes,
+/obj/structure/table/standard,
+/obj/item/weapon/storage/box/beakers,
+/obj/item/weapon/storage/box/syringes,
+/obj/item/weapon/storage/box/pillbottles,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -2820,7 +2836,6 @@
 	},
 /obj/machinery/reagent_temperature,
 /obj/structure/table/standard,
-/obj/item/weapon/storage/box/beakers,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -2849,10 +2864,7 @@
 /area/voxship/ship_mid)
 "NI" = (
 /obj/structure/table/standard,
-/obj/item/weapon/storage/box/beakers,
-/obj/item/weapon/storage/box/syringes,
 /obj/item/device/scanner/reagent,
-/obj/item/weapon/autopsy_scanner,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -3060,6 +3072,13 @@
 	initial_gas = list("nitrogen" = 103)
 	},
 /area/voxship/quills)
+"Qm" = (
+/obj/effect/submap_landmark/spawnpoint/voxship_crew/doc,
+/obj/item/weapon/stool/padded,
+/turf/simulated/floor/tiled/white/usedup{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/med)
 "Qq" = (
 /obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled/kafel_full{
@@ -3068,6 +3087,7 @@
 /area/voxship/ship_mid)
 "Qw" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	req_access = list("ACCESS_VOXSHIP_CAPTAIN")
 	},
@@ -3120,6 +3140,7 @@
 /area/voxship/ship_mid)
 "QV" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	req_access = list("ACCESS_VOXSHIP")
 	},
@@ -3136,9 +3157,6 @@
 	},
 /area/voxship/med)
 "Rd" = (
-/obj/structure/table/standard,
-/obj/machinery/reagent_temperature/cooler,
-/obj/item/weapon/storage/box/pillbottles,
 /obj/machinery/alarm/vox{
 	dir = 4;
 	icon_state = "alarm0";
@@ -3150,25 +3168,15 @@
 	},
 /area/voxship/med)
 "Rf" = (
-/obj/item/weapon/stool/padded,
-/obj/effect/submap_landmark/spawnpoint/voxship_crew/doc,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/med)
 "Rh" = (
-/obj/structure/table/standard,
-/obj/machinery/recharger,
-/obj/item/bodybag/cryobag,
-/obj/item/weapon/storage/belt/medical,
-/obj/item/weapon/storage/firstaid/adv,
-/obj/item/weapon/storage/firstaid/combat,
-/obj/item/roller,
-/obj/item/clothing/accessory/stethoscope,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/bodybag/cryobag,
-/obj/item/weapon/defibrillator/loaded,
+/obj/machinery/reagentgrinder,
+/obj/item/stack/material/phoron/ten,
+/obj/item/weapon/reagent_containers/dropper,
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
@@ -3232,6 +3240,14 @@
 /obj/structure/lattice,
 /turf/space,
 /area/space)
+"Sq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/kafel_full{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/ship_mid)
 "St" = (
 /obj/structure/safe,
 /obj/item/weapon/spacecash/bundle/c1000,
@@ -3251,6 +3267,7 @@
 	},
 /obj/item/weapon/stock_parts/circuitboard/protolathe,
 /obj/item/weapon/stock_parts/circuitboard/circuit_imprinter,
+/obj/machinery/atmospherics/pipe/cap/visible,
 /turf/simulated/floor/wood/mahogany{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -3486,10 +3503,7 @@
 	},
 /area/voxship/ship_mid)
 "Vs" = (
-/obj/machinery/atmospherics/unary/freezer{
-	dir = 2;
-	icon_state = "freezer"
-	},
+/obj/machinery/ntnet_relay,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ship_mid)
 "VJ" = (
@@ -3503,7 +3517,8 @@
 /obj/structure/table/steel,
 /obj/item/weapon/storage/box/cups,
 /obj/machinery/photocopier/faxmachine{
-	department = "Telecomms"
+	department = "Vox Telecomms";
+	send_access = list(list("ACCESS_VOXSHIP"))
 	},
 /obj/machinery/light{
 	dir = 1;
@@ -3664,6 +3679,27 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
+"XK" = (
+/obj/machinery/door/airlock/ascent{
+	color = "#6CDA1B";
+	dir = 4;
+	req_access = list("ACCESS_VOXSHIP")
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
+	color = "#6CDA1B";
+	dir = 4;
+	req_access = list("ACCESS_VOXSHIP")
+	},
+/obj/machinery/door/firedoor{
+	dir = 4;
+	icon_state = "open"
+	},
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/dorms)
 "XL" = (
 /obj/structure/morgue{
 	dir = 8
@@ -3763,9 +3799,8 @@
 	},
 /area/voxship/ship_mid)
 "Zh" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 9;
-	icon_state = "intact"
+/obj/machinery/atmospherics/pipe/cap/visible{
+	dir = 8
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ship_mid)
@@ -15281,7 +15316,7 @@ hC
 hC
 hC
 hC
-fF
+Sh
 bC
 qE
 Tx
@@ -15301,7 +15336,7 @@ Vb
 nK
 Lh
 bC
-fF
+Sh
 hC
 hC
 hC
@@ -17258,7 +17293,7 @@ hC
 hC
 hC
 hC
-fF
+Sh
 Lh
 uB
 dZ
@@ -17276,7 +17311,7 @@ SB
 qt
 NO
 aj
-fF
+Sh
 hC
 hC
 hC
@@ -18479,15 +18514,15 @@ Xb
 aV
 nQ
 nQ
-uu
+Sq
 nQ
 sS
 uB
 XQ
 aj
 Nq
-NO
-NO
+Qm
+Kk
 Ui
 NO
 VY
@@ -21377,7 +21412,7 @@ YO
 YO
 pa
 YO
-pa
+XK
 YO
 YO
 bC
