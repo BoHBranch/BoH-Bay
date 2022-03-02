@@ -325,8 +325,6 @@
 
 /datum/job/detective
 	allowed_branches = list(
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/contractor,
-		/datum/mil_branch/private_security,
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/marine,
 		/datum/mil_branch/solgov = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/agent
@@ -334,24 +332,19 @@
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/pcrc_agent,
 		/datum/mil_rank/sol/agent,
 		/datum/mil_rank/marine_corps/e4,
 		/datum/mil_rank/marine_corps/e5
 	)
 
 /datum/job/officer
-	title = "Security Guard"
+	title = "Military Police"
 	alt_titles = list(
-		"Master at Arms",
-		"Enforcer",
-		"Military Police"
+		"Master at Arms"
 	)
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
-		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/maa/marine,
-		/datum/mil_branch/private_security
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/maa/marine
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e3,
@@ -359,9 +352,7 @@
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/marine_corps/e3,
 		/datum/mil_rank/marine_corps/e4,
-		/datum/mil_rank/marine_corps/e5,
-		/datum/mil_rank/private_security/pcrc = /decl/hierarchy/outfit/job/torch/crew/security/maa/pcrc,
-		/datum/mil_rank/private_security/saare = /decl/hierarchy/outfit/job/torch/crew/security/maa/saare
+		/datum/mil_rank/marine_corps/e5
 	)
 /***/
 
