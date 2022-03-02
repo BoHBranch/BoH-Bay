@@ -117,6 +117,15 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
+"bE" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/blue{
+	dir = 1
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/shuttle)
 "bK" = (
 /obj/structure/table/rack,
 /obj/item/weapon/gun/projectile/dartgun/vox/raider,
@@ -805,16 +814,6 @@
 "hb" = (
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
-"hj" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/light,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/ship_fore)
 "hk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -860,6 +859,16 @@
 /obj/machinery/power/terminal,
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/dock)
+"hA" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_fore)
 "hC" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1145,6 +1154,11 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
+"kj" = (
+/obj/effect/wallframe_spawn/alien,
+/obj/effect/wallframe_spawn/alien,
+/turf/simulated/floor/airless,
+/area/space)
 "kk" = (
 /obj/machinery/light,
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -2229,15 +2243,6 @@
 	},
 /turf/simulated/floor/airless,
 /area/voxship/ship_fore)
-"rH" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/blue{
-	dir = 1
-	},
-/turf/simulated/floor/reinforced/vox,
-/area/voxship/shuttle)
 "rR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
@@ -2568,6 +2573,7 @@
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
 	color = "#6CDA1B";
+	name = "Hall to Brig";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/structure/cable{
@@ -2937,6 +2943,15 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_fore)
+"xq" = (
+/obj/machinery/turretid/vox{
+	dir = 1
+	},
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen" = 103)
+	},
+/area/voxship/armory)
 "xs" = (
 /obj/machinery/light{
 	dir = 4;
@@ -3979,12 +3994,6 @@
 	},
 /turf/simulated/floor/reinforced/nitrogen,
 /area/voxship/engineering)
-"HK" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
-	},
-/turf/simulated/floor/reinforced/vox,
-/area/voxship/shuttle)
 "HM" = (
 /obj/machinery/light{
 	dir = 8;
@@ -4305,15 +4314,6 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
-"Kx" = (
-/obj/machinery/turretid/vox{
-	dir = 1
-	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
-	},
-/area/voxship/armory)
 "Ky" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 1;
@@ -4708,6 +4708,12 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
+"NX" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/shuttle)
 "NY" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/material/steel/fifty,
@@ -5294,11 +5300,6 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
-"Ta" = (
-/obj/effect/wallframe_spawn/alien,
-/obj/effect/wallframe_spawn/alien,
-/turf/simulated/floor/airless,
-/area/space)
 "Tb" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
@@ -12549,7 +12550,7 @@ jl
 Jk
 cZ
 cZ
-Ta
+kj
 Xw
 Jk
 cZ
@@ -14987,7 +14988,7 @@ FK
 ux
 XZ
 QE
-hj
+hA
 VN
 Wb
 VN
@@ -16048,7 +16049,7 @@ YO
 qK
 fQ
 YO
-Kx
+xq
 Nx
 Bh
 jM
@@ -20303,7 +20304,7 @@ JZ
 cN
 FO
 QQ
-rH
+bE
 dr
 YX
 aR
@@ -20606,7 +20607,7 @@ nn
 GK
 wK
 QQ
-HK
+NX
 QQ
 Lp
 YX
