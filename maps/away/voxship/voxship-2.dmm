@@ -591,10 +591,6 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/dorms)
-"jh" = (
-/obj/machinery/porta_turret/vox,
-/turf/simulated/floor/reinforced/airless,
-/area/voxship/ship_mid)
 "jq" = (
 /obj/item/weapon/inflatable_dispenser,
 /obj/item/clothing/mask/gas/vox,
@@ -917,7 +913,7 @@
 "nG" = (
 /obj/machinery/porta_turret/vox,
 /turf/simulated/floor/reinforced/airless,
-/area/voxship/cbridge)
+/area/voxship/armory)
 "nI" = (
 /obj/structure/table/standard,
 /obj/item/weapon/storage/box/bodybags{
@@ -2037,10 +2033,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
-"Dd" = (
-/obj/structure/table/gamblingtable,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/dorms)
 "De" = (
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
@@ -2102,6 +2094,10 @@
 	dir = 4;
 	icon_state = "open"
 	},
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/dorms)
+"EF" = (
+/obj/structure/table/gamblingtable,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "EL" = (
@@ -15950,7 +15946,7 @@ Lx
 mF
 Cw
 Lh
-jh
+nG
 bC
 bC
 hC
@@ -18820,7 +18816,7 @@ hC
 hC
 hC
 Sh
-jh
+nG
 Lh
 Lh
 Lh
@@ -20962,7 +20958,7 @@ zA
 zG
 De
 fK
-Dd
+EF
 fW
 ZA
 YO

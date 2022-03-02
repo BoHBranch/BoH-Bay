@@ -13,7 +13,9 @@
 	cost = 0.5//From 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/vox_shuttle)
 	area_usage_test_exempted_root_areas = list(/area/voxship)
-
+	area_coherency_test_subarea_count = list(
+		/area/voxship/armory = 10
+	)
 
 /obj/effect/overmap/visitable/ship/voxship
 	name = "Unkown ship type"
