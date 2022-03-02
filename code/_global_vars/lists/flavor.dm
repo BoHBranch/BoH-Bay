@@ -119,7 +119,8 @@ GLOBAL_LIST_INIT(music_tracks, list(
 	"No One Rides For Free" = /music_track/no_one_rides,
 	"Follow Molly" = /music_track/follow_molly,
 	"Kidney-ing Me" = /music_track/kidneying_me,
-	"Cat Beat" = /music_track/cat_beat
+	"Cat Beat" = /music_track/cat_beat,
+	"Choir of Qerr-Goi Volzux" = /music_track/cloudsofneptune
 ))
 
 /proc/setup_music_tracks(var/list/tracks)
