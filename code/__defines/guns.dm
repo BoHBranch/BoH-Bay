@@ -16,6 +16,7 @@
 #define CALIBER_DART			"darts"
 #define CALIBER_SABOT			"sabot"
 #define CALIBER_SKRELL_SHOTGUN	"flechette"
+#define CALIBER_NAILS "nails"
 
 #define CALIBER_ROCKET	"rocket"
 
