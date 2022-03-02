@@ -1522,16 +1522,6 @@
 	},
 /turf/simulated/floor/plating/vox,
 /area/voxship/dock)
-"mv" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/light,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/ship_fore)
 "mx" = (
 /obj/machinery/conveyor/ammobelt{
 	dir = 9;
@@ -3248,6 +3238,16 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
+"Be" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_fore)
 "Bh" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -4086,10 +4086,9 @@
 /turf/simulated/floor/reinforced/hydrogen,
 /area/voxship/engineering)
 "Iz" = (
-/obj/structure/catwalk,
-/obj/structure/lattice,
-/obj/structure/ladder/up,
-/turf/space,
+/obj/effect/wallframe_spawn/alien,
+/obj/effect/wallframe_spawn/alien,
+/turf/simulated/floor/airless,
 /area/space)
 "ID" = (
 /obj/structure/lattice,
@@ -4481,10 +4480,11 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/engineering)
 "Lw" = (
-/obj/effect/wallframe_spawn/alien,
-/obj/effect/wallframe_spawn/alien,
-/turf/simulated/floor/airless,
-/area/space)
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/shuttle)
 "Ly" = (
 /obj/structure/table/rack,
 /obj/item/clothing/mask/gas/swat/vox,
@@ -5000,11 +5000,15 @@
 	},
 /area/voxship/dock)
 "QC" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
+/obj/machinery/turretid/vox{
+	dir = 1;
+	id_tag = "voxpdlt'
 	},
-/turf/simulated/floor/reinforced/vox,
-/area/voxship/shuttle)
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen" = 103)
+	},
+/area/voxship/armory)
 "QE" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -5666,16 +5670,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
-"Xb" = (
-/obj/machinery/turretid/vox{
-	dir = 1;
-	id_tag = "voxpdlt'
-	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
-	},
-/area/voxship/armory)
 "Xd" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /turf/simulated/floor/tiled/techmaint/vox,
@@ -12543,7 +12537,7 @@ jl
 Jk
 cZ
 cZ
-Lw
+Iz
 Xw
 Jk
 cZ
@@ -14981,7 +14975,7 @@ FK
 ux
 XZ
 QE
-mv
+Be
 VN
 Wb
 VN
@@ -16042,7 +16036,7 @@ YO
 qK
 fQ
 YO
-Xb
+QC
 Nx
 Bh
 jM
@@ -20600,7 +20594,7 @@ nn
 GK
 wK
 QQ
-QC
+Lw
 QQ
 Lp
 YX
@@ -24409,7 +24403,7 @@ Ya
 Ya
 Ya
 Ya
-Iz
+Ya
 Ya
 aG
 Ya

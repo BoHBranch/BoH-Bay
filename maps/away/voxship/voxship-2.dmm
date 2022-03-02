@@ -3267,6 +3267,7 @@
 	},
 /obj/item/weapon/stock_parts/circuitboard/protolathe,
 /obj/item/weapon/stock_parts/circuitboard/circuit_imprinter,
+/obj/machinery/atmospherics/pipe/cap/visible,
 /turf/simulated/floor/wood/mahogany{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -3502,10 +3503,7 @@
 	},
 /area/voxship/ship_mid)
 "Vs" = (
-/obj/machinery/atmospherics/unary/freezer{
-	dir = 2;
-	icon_state = "freezer"
-	},
+/obj/machinery/ntnet_relay,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ship_mid)
 "VJ" = (
@@ -3519,7 +3517,8 @@
 /obj/structure/table/steel,
 /obj/item/weapon/storage/box/cups,
 /obj/machinery/photocopier/faxmachine{
-	department = "Telecomms"
+	department = "Vox Telecomms";
+	send_access = list(list("ACCESS_VOXSHIP"))
 	},
 /obj/machinery/light{
 	dir = 1;
@@ -3800,9 +3799,8 @@
 	},
 /area/voxship/ship_mid)
 "Zh" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 9;
-	icon_state = "intact"
+/obj/machinery/atmospherics/pipe/cap/visible{
+	dir = 8
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ship_mid)
