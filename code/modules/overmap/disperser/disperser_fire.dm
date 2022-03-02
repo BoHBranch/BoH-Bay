@@ -37,7 +37,7 @@
 			continue
 		shake_camera(M, 25)
 		if(!isdeaf(M))
-			sound_to(M, sound('sound/effects/explosionfar.ogg', volume=10))
+			sound_to(M, sound('sound/machines/disperser_far.ogg', volume=40))
 
 	if(front) //Meanwhile front might have exploded
 		front.layer = ABOVE_OBJ_LAYER //So the beam goes below us. Looks a lot better
@@ -50,12 +50,12 @@
 	//Some moron disregarded the cooldown warning. Let's blow in their face.
 	if(prob(cool_failchance()))
 		explosion(middle,rand(1,2),rand(2,3),rand(3,4))
-	
+
 	if(chargetype == OVERMAP_WEAKNESS_ODST)
 		next_shot = coolinterval * 0.1 + world.time //Cooldown reduced for odst
 	else
 		next_shot = coolinterval + world.time
-	
+
 	//Success, but we missed.
 	if(prob(100 - cal_accuracy()))
 		if(chargetype == OVERMAP_WEAKNESS_DROPPOD || chargetype == OVERMAP_WEAKNESS_ODST)

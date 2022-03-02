@@ -31,7 +31,7 @@
 
 /obj/item/projectile/beam/midlaser
 	damage = 40
-	armor_penetration = 15
+	armor_penetration = 20
 	distance_falloff = 1
 
 /obj/item/projectile/beam/heavylaser
@@ -186,6 +186,19 @@
 	stun = 3
 	weaken = 3
 	stutter = 3
+
+	muzzle_type = /obj/effect/projectile/laser/xray/muzzle
+	tracer_type = /obj/effect/projectile/laser/xray/tracer
+	impact_type = /obj/effect/projectile/laser/xray/impact
+
+/obj/item/projectile/beam/snipervox
+	name = "sniper beam"
+	icon_state = "xray"
+	fire_sound = 'sound/weapons/marauder.ogg'
+	distance_falloff = 0.50
+	damage = 50
+	armor_penetration = 50
+	stutter = 2
 
 	muzzle_type = /obj/effect/projectile/laser/xray/muzzle
 	tracer_type = /obj/effect/projectile/laser/xray/tracer

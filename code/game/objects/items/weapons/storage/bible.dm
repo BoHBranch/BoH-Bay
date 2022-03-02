@@ -57,6 +57,30 @@
 	renamed = 1
 	icon_changed = 1
 
+/obj/item/weapon/storage/bible/chakala
+	name = "\improper Codex of Chakala"
+	desc = "The collection of knowledge from a long dead civilization, from science to culture. Three golden eyes are engraved on the cover of the tome."
+	icon_state = "chakala"
+	deity_name = "chakala"
+	renamed = 1
+	icon_changed = 1
+
+/obj/item/weapon/storage/bible/kihikihi
+	name = "\improper Cloak of Kihikihi"
+	desc = "A collection of fables and helpful tips on stealth and survival, centered around a neither living-nor-dead Auralis. A single feather decorates the cover, a brilliant shimmering blue."
+	icon_state = "kihikihi"
+	deity_name = "kihikihi"
+	renamed = 1
+	icon_changed = 1
+
+/obj/item/weapon/storage/bible/kritika
+	name = "\improper Blade of Kritika"
+	desc = "The cover is decorated with an outstretched claw, talons embossed over an open flame. Inside, it contains the wisdom of how to employ both diplomatic and military strength, along with numerous tales of conquest and statecraft from a long dead Auralis."
+	icon_state = "kritika"
+	deity_name = "kritika"
+	renamed = 1
+	icon_changed = 1
+
 /obj/item/weapon/storage/bible/attack(mob/living/carbon/human/M, mob/living/carbon/human/user)
 	if(user == M || !ishuman(user) || !ishuman(M))
 		return
