@@ -36,7 +36,7 @@
 	name = "trauma first-aid kit"
 	desc = "It's an emergency medical kit for when people brought ballistic weapons to a laser fight."
 	icon_state = "radfirstaid"
-	item_state = "firstaid-ointment"
+	item_state = "radfirstaid"
 
 	startswith = list(
 		/obj/item/weapon/storage/med_pouch/trauma = 4
@@ -101,7 +101,7 @@
 	name = "combat medical kit"
 	desc = "Contains advanced medical treatments."
 	icon_state = "bezerk"
-	item_state = "firstaid-advanced"
+	item_state = "bezerk"
 
 	startswith = list(
 		/obj/item/weapon/storage/pill_bottle/bicaridine,
@@ -117,7 +117,7 @@
 	name = "stabilisation first aid"
 	desc = "Stocked with medical pouches."
 	icon_state = "stabfirstaid"
-	item_state = "firstaid-advanced"
+	item_state = "stabfirstaid"
 
 	startswith = list(
 		/obj/item/weapon/storage/med_pouch/trauma,
