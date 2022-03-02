@@ -14,7 +14,7 @@
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/vox_shuttle)
 	area_usage_test_exempted_root_areas = list(/area/voxship)
 	area_coherency_test_subarea_count = list(
-		/area/voxship/armory = 10
+		/area/voxship/armory = 16
 	)
 
 /obj/effect/overmap/visitable/ship/voxship
