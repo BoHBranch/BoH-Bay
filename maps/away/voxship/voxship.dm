@@ -10,11 +10,12 @@
 	id = "awaysite_voxship"
 	description = "Vox ship."
 	suffixes = list("voxship/voxship-1.dmm","voxship/voxship-2.dmm")
-	cost = 0//From 0.5
+	cost = 0.5//From 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/vox_shuttle)
 	area_usage_test_exempted_root_areas = list(/area/voxship)
-	template_flags = TEMPLATE_FLAG_SPAWN_GUARANTEED
-
+	area_coherency_test_subarea_count = list(
+		/area/voxship/armory = 16
+	)
 
 /obj/effect/overmap/visitable/ship/voxship
 	name = "Unkown ship type"
