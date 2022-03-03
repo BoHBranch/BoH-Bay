@@ -1,0 +1,55 @@
+<h2>Weapons control console</h2>
+<div style="float:left;width:50%">
+<h3>SHIP CONTACTS</h3>
+{{if data.contacts_ships}}
+	<table>
+	{{for data.contacts_ships}}
+	<tr>
+	<div class='item'>
+		<td>{{:helper.link('Lock', '&#8858' ,{ 'lock' : value.ref }, null, null)}}</td>
+		<td><span class='white'>{{:value.name}}</span>, bearing {{:value.bearing}}</td>
+	</div>
+	</tr>
+	{{/for}}
+	</table>
+{{/if}}
+</div>
+<div style="float:right;width:50%">
+<h3>MISSILE CONTACTS</h3>
+{{if data.contacts_missiles}}
+	<table>
+	{{for data.contacts_missiles}}
+	<tr>
+	<div class='item'>
+		<td>{{:helper.link('Lock', '&#8858' ,{ 'lock' : value.ref }, null, null)}}</td>
+		<td><span class='white'>{{:value.name}}</span>, bearing {{:value.bearing}}</td>
+	</div>
+	</tr>
+	{{/for}}
+	</table>
+{{/if}}
+</div>
+<div style="float:left;width:75%">
+<h3>PLANET CONTACTS</h3>
+{{:helper.link(data.planet_x, null, { 'set_planetx' : 1 }, null, null)}} {{:helper.link(data.planet_y, null, { 'set_planety' : 1 }, null, null)}}
+{{if data.contacts_planets}}
+	<table>
+	{{for data.contacts_planets}}
+	<tr>
+	<div class='item'>
+		<td>{{:helper.link('Lock', 'search' ,{ 'lock' : value.ref }, null, null)}}</td>
+		<td><span class='white'>{{:value.name}}</span>, bearing {{:value.bearing}}</td>
+	</div>
+	</tr>
+	{{/for}}
+	</table>
+{{/if}}
+</div>
+<div style="float:right;width:25%">
+<h3>POINT COORDINATE</h3>
+<div class="itemContent">
+	{{:helper.link(data.point_x, null, { 'set_pointx' : 1 }, null, null)}} {{:helper.link(data.point_y, null, { 'set_pointy' : 1 }, null, null)}}
+
+</div>
+
+</div>
