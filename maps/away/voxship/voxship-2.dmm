@@ -324,6 +324,13 @@
 	initial_gas = list("nitrogen" = 103)
 	},
 /area/voxship/hydro)
+"fA" = (
+/obj/structure/table/standard,
+/obj/item/weapon/storage/lockbox/vox,
+/turf/simulated/floor/wood/mahogany{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/quills)
 "fD" = (
 /obj/machinery/cryopod{
 	dir = 2
@@ -14575,7 +14582,7 @@ OI
 Ya
 Tc
 zo
-zo
+fA
 Gk
 jz
 Sh
