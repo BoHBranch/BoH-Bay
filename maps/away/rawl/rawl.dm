@@ -115,6 +115,11 @@
 	desc = "An old, cheap radio that looks heavy enough to kill someone."
 	cell = /obj/item/weapon/cell/device/high
 	throwforce = 35
+	hitsound = 'sound/weapons/Genhit.ogg'
+	force = 22
+	melee_accuracy_bonus = -30 //takes years of training to use properly, truly powerful weapon
+	attack_verb = list("smashed","bashed","bonked")
+	attack_cooldown = 25 //heavy enough
 	icon_state = "radio"
 	w_class = ITEM_SIZE_HUGE
 	canhear_range = 6
