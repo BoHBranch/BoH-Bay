@@ -1,0 +1,115 @@
+//Engine control and monitoring console
+
+/obj/machinery/computer/ship/missiles
+	name = "missile control console"
+	icon_keyboard = "tech_key"
+	icon_screen = "engines"
+	var/display_state = "status"
+
+/obj/machinery/computer/ship/missiles/ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = 1)
+	if(!linked)
+		display_reconnect_dialog(user, "sensors")
+		return
+		
+	var/data[0]
+	var/list/contacts_ships = list()
+	var/list/contacts_planets = list()
+	var/list/contacts_missiles = list()
+	
+	for(var/obj/effect/overmap/O in view(7,linked))
+		if(linked == O)
+			continue
+		if(!O.scannable)
+			continue
+		var/bearing = round(90 - Atan2(O.x - linked.x, O.y - linked.y),5)
+		if(bearing < 0)
+			bearing += 360
+		
+		if(istype(O, /obj/effect/overmap/visitable/ship))
+			contacts_ships.Add(list(list("name"=O.name, "ref"="\ref[O]", "bearing"=bearing)))
+		
+		else if(istype(O, /obj/effect/overmap/visitable/sector/exoplanet))
+			contacts_planets.Add(list(list("name"=O.name, "ref"="\ref[O]", "bearing"=bearing)))
+		
+		else if(istype(O, /obj/effect/overmap/projectile))
+			contacts_missiles.Add(list(list("name"=O.name, "ref"="\ref[O]", "bearing"=bearing)))
+		
+	if(contacts_ships.len)
+		data["contacts_ships"] = contacts_ships
+	
+	if(contacts_planets.len)
+		data["contacts_planets"] = contacts_planets
+		
+	if(contacts_missiles.len)
+		data["contacts_missiles"] = contacts_missiles
+	
+	data["planet_x"] = linked.get_target(TARGET_PLANETCOORD)[1]
+	data["planet_y"] = linked.get_target(TARGET_PLANETCOORD)[2]
+	data["point_x"] = linked.get_target(TARGET_POINT)[1]
+	data["point_y"] = linked.get_target(TARGET_POINT)[2]
+	
+	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
+	if (!ui)
+		ui = new(user, src, ui_key, "target.tmpl", "[linked.name] Helm Control", 565, 545)
+		ui.set_initial_data(data)
+		ui.open()
+		ui.set_auto_update(1)
+
+/obj/machinery/computer/ship/missiles/OnTopic(var/mob/user, var/list/href_list, state) //TODO: FIX THIS
+	if(..())
+		return TOPIC_HANDLED
+
+	if (!linked)
+		return TOPIC_NOACTION
+
+	if (href_list["ship_lock"])
+		var/obj/effect/overmap/O = locate(href_list["lock"])
+		if(istype(O) && !QDELETED(O) && (O in view(7,linked)))
+			linked.set_target(TARGET_SHIP, O)
+		return TOPIC_HANDLED
+		
+	if (href_list["missile_lock"])
+		var/obj/effect/overmap/O = locate(href_list["lock"])
+		if(istype(O) && !QDELETED(O) && (O in view(7,linked)))
+			linked.set_target(TARGET_MISSILE, O)
+		return TOPIC_HANDLED
+		
+	if (href_list["planet_lock"])
+		var/obj/effect/overmap/O = locate(href_list["lock"])
+		if(istype(O) && !QDELETED(O) && (O in view(7,linked)))
+			linked.set_target(TARGET_PLANET, O, linked.get_target(TARGET_PLANET)[2], linked.get_target(TARGET_PLANET)[3])		
+		return TOPIC_HANDLED
+	
+	if (href_list["set_planetx"])
+		var/input = input("Set new planet X target", "Planet X", linked.get_target(TARGET_PLANETCOORD)[1]) as num|null
+		if(!CanInteract(user,state))
+			return TOPIC_NOACTION
+		if (input)
+			linked.set_target(TARGET_PLANET, linked.get_target(TARGET_PLANET)[1], clamp(input,1, world.maxx-8), linked.get_target(TARGET_PLANET)[3])
+		return TOPIC_REFRESH
+			
+	if (href_list["set_planety"])
+		var/input = input("Set new planet Y target", "Planet Y", linked.get_target(TARGET_PLANETCOORD)[2]) as num|null
+		if(!CanInteract(user,state))
+			return TOPIC_NOACTION
+		if (input)
+			linked.set_target(TARGET_PLANET, linked.get_target(TARGET_PLANET)[1], linked.get_target(TARGET_PLANET)[2], clamp(input,1, world.maxy-8))
+		return TOPIC_REFRESH
+			
+		
+	if (href_list["set_pointx"])
+		var/input = input("Set new point X target", "Planet X", linked.get_target(TARGET_POINT)[1]) as num|null
+		if(!CanInteract(user,state))
+			return TOPIC_NOACTION
+		if (input)
+			linked.set_target(TARGET_POINT, null, clamp(input, 1, 34), linked.get_target(TARGET_POINT)[2])
+		return TOPIC_REFRESH
+			
+	if (href_list["set_pointy"])
+		var/input = input("Set new point Y target", "Planet Y", linked.get_target(TARGET_POINT)[2]) as num|null
+		if(!CanInteract(user,state))
+			return TOPIC_NOACTION
+		if (input)
+			linked.set_target(TARGET_POINT, null, linked.get_target(TARGET_POINT)[1], clamp(input, 1, 34))
+		return TOPIC_REFRESH
+

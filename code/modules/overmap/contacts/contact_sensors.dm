@@ -1,3 +1,5 @@
+//Seriously whoever made this fucking mess fuck you, I fucking hate you and your unmodular incomphrehensible half working fucking shit
+
 /obj/machinery/computer/ship/sensors
 	var/list/objects_in_view = list()
 	var/list/contact_datums = list()
