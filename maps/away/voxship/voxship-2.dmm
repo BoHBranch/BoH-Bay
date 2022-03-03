@@ -14578,7 +14578,6 @@ OI
 Ya
 Tc
 zo
-zo
 Gk
 jz
 Sh
@@ -49457,3 +49456,11 @@ hC
 hC
 hC
 "}
+"XR" = (
+/obj/structure/table/standard,
+/obj/item/weapon/storage/lockbox/vox,
+/turf/simulated/floor/wood/mahogany{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/quills)
+XR
