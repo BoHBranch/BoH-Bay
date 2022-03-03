@@ -85,6 +85,18 @@
 		new /obj/item/weapon/implanter/loyalty(src)
 
 
+/obj/item/weapon/storage/lockbox/vox
+	name = "lockbox of vox implants"
+	req_access = list(access_voxship)
+
+	New()
+		..()
+		new /obj/item/weapon/implantcase/vox(src)
+		new /obj/item/weapon/implantcase/vox(src)
+		new /obj/item/weapon/implantcase/vox(src)
+		new /obj/item/weapon/implantcase/vox(src)
+		new /obj/item/weapon/implanter/vox(src)
+
 /obj/item/weapon/storage/lockbox/clusterbang
 	name = "lockbox of clusterbangs"
 	desc = "You have a bad feeling about opening this."
