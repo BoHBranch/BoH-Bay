@@ -85,7 +85,7 @@
 		if(!CanInteract(user,state))
 			return TOPIC_NOACTION
 		if (input)
-			linked.set_target(TARGET_PLANET, linked.get_target(TARGET_PLANET)[1], clamp(input,1, world.maxx-8), linked.get_target(TARGET_PLANET)[3])
+			linked.set_target(TARGET_PLANET, linked.get_target(TARGET_PLANET)[1], Clamp(input,1, world.maxx-8), linked.get_target(TARGET_PLANET)[3])
 		return TOPIC_REFRESH
 			
 	if (href_list["set_planety"])
@@ -93,7 +93,7 @@
 		if(!CanInteract(user,state))
 			return TOPIC_NOACTION
 		if (input)
-			linked.set_target(TARGET_PLANET, linked.get_target(TARGET_PLANET)[1], linked.get_target(TARGET_PLANET)[2], clamp(input,1, world.maxy-8))
+			linked.set_target(TARGET_PLANET, linked.get_target(TARGET_PLANET)[1], linked.get_target(TARGET_PLANET)[2], Clamp(input,1, world.maxy-8))
 		return TOPIC_REFRESH
 			
 		
@@ -102,7 +102,7 @@
 		if(!CanInteract(user,state))
 			return TOPIC_NOACTION
 		if (input)
-			linked.set_target(TARGET_POINT, null, clamp(input, 1, 34), linked.get_target(TARGET_POINT)[2])
+			linked.set_target(TARGET_POINT, null, Clamp(input, 1, 34), linked.get_target(TARGET_POINT)[2])
 		return TOPIC_REFRESH
 			
 	if (href_list["set_pointy"])
@@ -110,6 +110,6 @@
 		if(!CanInteract(user,state))
 			return TOPIC_NOACTION
 		if (input)
-			linked.set_target(TARGET_POINT, null, linked.get_target(TARGET_POINT)[1], clamp(input, 1, 34))
+			linked.set_target(TARGET_POINT, null, linked.get_target(TARGET_POINT)[1], Clamp(input, 1, 34))
 		return TOPIC_REFRESH
 
