@@ -2096,10 +2096,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
-"EF" = (
-/obj/structure/table/gamblingtable,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/dorms)
 "EL" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -3538,6 +3534,10 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
+"VO" = (
+/obj/structure/table/gamblingtable,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/dorms)
 "VY" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled/white/usedup{
@@ -3706,6 +3706,9 @@
 /obj/machinery/door/firedoor{
 	dir = 4;
 	icon_state = "open"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
@@ -20958,7 +20961,7 @@ zA
 zG
 De
 fK
-EF
+VO
 fW
 ZA
 YO
