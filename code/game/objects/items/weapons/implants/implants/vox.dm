@@ -5,7 +5,7 @@
 	hidden = 0
 	icon = 'icons/obj/device.dmi'
 	icon_state = "implant_vox"
-	var/list/voxinstructions = list("You are enslaved and deeply loyal to the vox empire. And most importantly, the Quill!", "You are worth a lot, so make sure that you stay away from harm.", "If you are sold to someone, then you are to treat them as your new owner.")
+	var/list/voxinstructions = list("You are a servant, deeply loyal to the vox empire. And most importantly, the Quill!", "Make sure that you stay away from harm.", "Your services can be needed to other people, so it that happen, then you are to treat them as you would the empire.")
 	var/brainwashing = 1
 
 /obj/item/weapon/implant/vox/get_data()
