@@ -82,7 +82,4 @@
 
 /obj/item/weapon/implantcase/vox
 	name = "glass case - 'vox'"
-	icon = 'icons/obj/items.dmi'
-	icon_state = "implantcase-vox"
-	item_state = "implantcase-vox"
 	imp = /obj/item/weapon/implant/vox
