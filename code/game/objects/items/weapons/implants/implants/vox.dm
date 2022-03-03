@@ -1,11 +1,11 @@
 /obj/item/weapon/implant/vox
 	name = "vox property implant"
 	desc = "The parasite wriggles around in search for a new host!."
-	origin_tech = list(TECH_MATERIAL = 5, TECH_BIO = 7, TECH_DATA = 6)
+	origin_tech = list(TECH_MATERIAL = 3, TECH_BIO = 7, TECH_DATA = 4)
 	hidden = 0
 	icon = 'icons/obj/device.dmi'
 	icon_state = "implant_vox"
-	var/list/voxinstructions = list("You are the property of the voxes.", "You are worth a lot as a property, so make sure that you stay away from harm.", "You are not allowed to use any device that is considered dangerous. This may include using weapons, delaming a supermatter, or activating a bomb, as an example. ", "If you are sold to someone, then you are to treat them as your new owner.")
+	var/list/voxinstructions = list("You are enslaved and deeply loyal to the vox empire. And most importantly, the Quill!", "You are worth a lot, so make sure that you stay away from harm.", "If you are sold to someone, then you are to treat them as your new owner.")
 	var/brainwashing = 1
 
 /obj/item/weapon/implant/vox/get_data()
@@ -17,19 +17,28 @@
 	<HR>
 	<b>Implant Details:</b><BR>
 	<b>Function:</b> Contains a small pod with a single wrigling parasite that manipulate the host's mental functions.<BR>
-	<b>Special Features:</b> The parasite can only be cured through the use of surgery. And the user can be sold to other owners.<BR>
+	<b>Special Features:</b> The parasite can only be cured through the use of surgery. The user can be sold to other owners.<BR>
 	<b>Integrity:</b> Implant will last so long as the parasite keeps getting nutrients inside the bloodstream."}
 
 
 /obj/item/weapon/implant/vox/implanted(mob/M)
-	var/msg = get_voxinstructions()
-	to_chat(M, msg)
-	if(M.mind)
-		M.StoreMemory(msg, /decl/memory_options/system)
-	if(brainwashing)
-		log_and_message_admins("was implanted with a vox brainwashing implant", M)
-	addtimer(CALLBACK(src,.proc/activate),3000,(TIMER_UNIQUE|TIMER_OVERRIDE))
-	return TRUE
+	var/confirm = alert("Do you want to be implanted, and become a slave to the vox empire?", "Confirm Implant", "Yes", "No")
+
+	if(confirm == "Yes")
+		src.visible_message("The host have accepted their parasite, rejoice!")
+		var/msg = get_voxinstructions()
+		to_chat(M, msg)
+		if(M.mind)
+			M.StoreMemory(msg, /decl/memory_options/system)
+		if(brainwashing)
+			log_and_message_admins("was implanted with a vox brainwashing implant", M)
+		addtimer(CALLBACK(src,.proc/activate),3000,(TIMER_UNIQUE|TIMER_OVERRIDE))
+		return TRUE
+
+	if(confirm == "No")
+		src.visible_message("The parasite bites into them, as they deny the parasite!")
+		playsound(src, 'sound/voice/BugHiss.ogg', 50, 1)
+		new /mob/living/simple_animal/hostile/voxslug(get_turf(src))
 
 /obj/item/weapon/implant/vox/proc/get_voxinstructions()
 	. = list()
