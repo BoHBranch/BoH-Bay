@@ -5,7 +5,7 @@
 	hidden = 0
 	icon = 'icons/obj/device.dmi'
 	icon_state = "implant_vox"
-	var/list/voxinstructions = list("You are the property of the voxes.", "You are worth a lot as a property, so make sure that you stay away from harm.", "You are not allowed to use any device that is considered dangerous. This may include using weapons, delaming a supermatter, or activating a bomb, as an example. ", "If you are sold, then you are to treat them as your new owner.")
+	var/list/voxinstructions = list("You are the property of the voxes.", "You are worth a lot as a property, so make sure that you stay away from harm.", "You are not allowed to use any device that is considered dangerous. This may include using weapons, delaming a supermatter, or activating a bomb, as an example. ", "If you are sold to someone, then you are to treat them as your new owner.")
 	var/brainwashing = 1
 
 /obj/item/weapon/implant/vox/get_data()
