@@ -38,15 +38,15 @@
 		rad = ARMOR_RAD_SMALL)
 
 /obj/item/clothing/head/helmet/space/rig/unathi
-	species_restricted = list(SPECIES_UNATHI)
+	species_restricted = list(SPECIES_UNATHI, SPECIES_OLDUNATHI)
 	force = 5
 	sharp = 1 //poking people with the horn
 
 /obj/item/clothing/suit/space/rig/unathi
-	species_restricted = list(SPECIES_UNATHI)
+	species_restricted = list(SPECIES_UNATHI, SPECIES_OLDUNATHI)
 
 /obj/item/clothing/shoes/magboots/rig/unathi
-	species_restricted = list(SPECIES_UNATHI)
+	species_restricted = list(SPECIES_UNATHI, SPECIES_OLDUNATHI)
 
 /obj/item/clothing/gloves/rig/unathi
-	species_restricted = list(SPECIES_UNATHI)
+	species_restricted = list(SPECIES_UNATHI, SPECIES_OLDUNATHI)

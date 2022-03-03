@@ -69,7 +69,7 @@
 /obj/item/clothing/head/helmet/space/void/dohruk/
 	name = "\improper Unathi helmet"
 	desc = "A bulky helmet with padding to protect from the collisions wearing this can cause."
-	species_restricted = list(SPECIES_UNATHI)
+	species_restricted = list(SPECIES_UNATHI, SPECIES_OLDUNATHI)
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_PISTOL,
@@ -102,7 +102,7 @@
 /obj/item/clothing/suit/space/void/dohruk/
 	name = "\improper Unathi voidsuit"
 	desc = "A dull voidsuit with thick but uneven padding. Perfect for those lacking other options."
-	species_restricted = list(SPECIES_UNATHI)
+	species_restricted = list(SPECIES_UNATHI, SPECIES_OLDUNATHI)
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_PISTOL,
@@ -117,6 +117,7 @@
 /obj/item/clothing/suit/space/void/dohruk/heavy
 	name = "heavy Unathi voidsuit"
 	desc = "This suit tries to compensate for poor material quality with flashes of color and excessive padding."
+	species_restricted = list(SPECIES_UNATHI)
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
