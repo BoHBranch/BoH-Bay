@@ -160,7 +160,7 @@
 
 /obj/item/weapon/gun/projectile/automatic/sec_smg
 	name = "MA-Sword"
-	desc = "An incredibly cheap weapon design originally based off the WT-550. This weapons only saving grace is the price-tag."
+	desc = "A modernised design based off of the older NanoTrasen made WT-550. This incorporates proper automatic fire, alongside better handling."
 	icon = 'icons/obj/guns/sec_smg.dmi'
 	icon_state = "smg"
 	item_state = "wt550"
@@ -178,9 +178,9 @@
 
 	//machine pistol, like SMG but easier to one-hand with
 	firemodes = list(
-		list(mode_name="semi auto",       burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=3, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=4, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
-		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=5, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		list(mode_name="semi auto",  automatic = FALSE, burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=3, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts",  automatic = FALSE, burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=4, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="automatic",  automatic = TRUE, burst=1, fire_delay=null, move_delay=4,    one_hand_penalty=5, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
 		)
 
 /obj/item/weapon/gun/projectile/automatic/sec_smg/on_update_icon()

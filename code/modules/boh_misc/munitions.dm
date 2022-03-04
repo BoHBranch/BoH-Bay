@@ -183,7 +183,9 @@
 	matter = list(MATERIAL_STEEL = 1240)
 	marking_color = COLOR_GUNMETAL
 
+/////////
 //Skrell QX2
+/////////
 
 //magazine
 /obj/item/ammo_magazine/skrell_shotgun
@@ -216,3 +218,28 @@
 	spent_icon = "skrellflechette-spent"
 	caliber = CALIBER_SKRELL_SHOTGUN
 	projectile_type = /obj/item/projectile/bullet/magnetic/skrell_flechette
+
+/////////
+// smg frangibles
+/////////
+
+//casing
+/obj/item/ammo_casing/pistol/small/frangible
+	desc = "A small pistol bullet casing."
+	caliber = CALIBER_PISTOL_SMALL
+	projectile_type = /obj/item/projectile/bullet/pistol/frangible
+	icon_state = "smallcasing"
+	spent_icon = "smallcasing-spent"
+
+//projectile
+/obj/item/projectile/bullet/pistol/frangible
+	name = "frangible bullet"
+	damage = 15
+	armor_penetration = 5
+	shrapnel_chance_multiplier = 2 //Smaller, tumbling projectile.
+	arterial_bleed_chance_multiplier = 1.2 //Less post-pen compared to rifles.
+
+//Magazine
+/obj/item/ammo_magazine/smg_top/frangible
+	labels = list("frangible")
+	ammo_type = /obj/item/ammo_casing/pistol/small/frangible

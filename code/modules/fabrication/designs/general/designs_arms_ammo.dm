@@ -112,6 +112,10 @@
 	name = "smg magazine (7mm)"
 	path = /obj/item/ammo_magazine/smg_top
 
+/datum/fabricator_recipe/arms_ammo/hidden/magazine_smg_bad
+	name = "smg magazine (7mm), (frangible)"
+	path = /obj/item/ammo_magazine/smg_top/frangible
+
 /datum/fabricator_recipe/arms_ammo/hidden/magazine_smg_rubber
 	name = "smg magazine (7mm), (rubber)"
 	path = /obj/item/ammo_magazine/smg_top/rubber

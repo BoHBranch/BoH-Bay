@@ -50,6 +50,7 @@
 		/obj/item/device/hailer,
 		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/gunbox,
+		/obj/item/gunbox/primary,
 		/obj/item/device/megaphone,
 		/obj/item/clothing/gloves/thick,
 		/obj/item/clothing/gloves/thick/duty/solgov/sec,
