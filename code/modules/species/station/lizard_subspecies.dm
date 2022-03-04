@@ -14,8 +14,7 @@
 	water_soothe_amount = 5
 	description = "The rarer, quieter, and more aquatic counterpart to Sinta, Yeosa'Unathi are smaller and softer than Sinta,   \
 	preferring socialization and trade to combat and development. Still, they spend much of their time fishing or exploring the ocean. \
-	Though following many traditional unathi beliefs, Yeosa are much fairer to each other to account for their low numbers and \
-	often worship beasts of the sea as if they're the same as their ancestors.\
+	Though following many traditional unathi beliefs, Yeosa are much fairer to each other to account for their low numbers. \
 	<br/><br/>Their biology is heavily attuned to surviving Moghes' dangerous waters, including gills, fins, and a venomous bite. \
 	<br/><br/>Naming format: Personalname Clanname Nickname"
 
@@ -27,6 +26,9 @@
 		TAG_CULTURE = list(
 			CULTURE_UNATHI_YEOSA_ABYSS,
 			CULTURE_UNATHI_YEOSA_LITTORAL
+		),
+		TAG_RELIGION = list(
+			RELIGION_UNATHI_AGA_EAKHE
 		)
 	)
 
