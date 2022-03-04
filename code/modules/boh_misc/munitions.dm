@@ -21,7 +21,7 @@
 	range_step = 2
 	spread_step = 10
 	agony = 15//up from 8.5
-	shrapnel_chance_multiplier = 2 //Guarantees shrapnel more-or-less.
+	shrapnel_chance_multiplier = 99 //Guarantees shrapnel. Needed for the gimmick.
 	embed = 1//shouldn't HAVE to be noted, but, y'know, seems like it's a problem.
 
 //holder
@@ -227,8 +227,8 @@
 //casing
 /obj/item/ammo_casing/pistol/small/frangible
 	desc = "A small pistol bullet casing."
-	caliber = CALIBER_PISTOL_SMALL
 	projectile_type = /obj/item/projectile/bullet/pistol/frangible
+	caliber = CALIBER_PISTOL_FRANGIBLE
 	icon_state = "smallcasing"
 	spent_icon = "smallcasing-spent"
 
@@ -243,4 +243,5 @@
 //Magazine
 /obj/item/ammo_magazine/smg_top/frangible
 	labels = list("frangible")
+	caliber = CALIBER_PISTOL_FRANGIBLE
 	ammo_type = /obj/item/ammo_casing/pistol/small/frangible
