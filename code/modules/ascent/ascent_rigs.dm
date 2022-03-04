@@ -7,8 +7,8 @@
 	suit_type = "support exosuit"
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
-		bullet = 1.1 * ARMOR_BALLISTIC_RESISTANT,
-		laser = 1.1 * ARMOR_LASER_RIFLES,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_RIFLES,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -34,7 +34,7 @@
 		SPECIES_MONARCH_QUEEN =  'icons/mob/species/nabber/msq/onmob_back_msq.dmi'
 		)
 	initial_modules = list(
-		/obj/item/rig_module/vision/thermal,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/chem_dispenser/mantid,
@@ -253,7 +253,7 @@
 	icon_override = 'icons/mob/species/mantid/onmob_back_gyne.dmi'
 	mantid_caste = SPECIES_MANTID_GYNE
 	initial_modules = list(
-		/obj/item/rig_module/vision/thermal,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/chem_dispenser/mantid,
@@ -277,7 +277,7 @@
 	chest_type = /obj/item/clothing/suit/space/rig/mantid/serpentid
 	boot_type =  null
 	initial_modules = list(
-		/obj/item/rig_module/vision/thermal,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/chem_dispenser/nabber,
@@ -308,7 +308,7 @@
 	icon_override = 'icons/mob/species/nabber/msq/onmob_back_msq.dmi'
 	mantid_caste = SPECIES_MONARCH_QUEEN
 	initial_modules = list(
-		/obj/item/rig_module/vision/thermal,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/chem_dispenser/nabber,

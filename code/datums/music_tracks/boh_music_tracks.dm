@@ -139,3 +139,11 @@
 	license = /decl/license/grandfathered//Probably incorrect. We'll see, when someone shouts at me about it. - Carl
 	url = "https://en.wikipedia.org/wiki/The_Kings_of_Frog_Island"
 	volume = 15//Does this even work? Probably not.
+
+music_track/cloudsofneptune
+	song = 'sound/music/boh/skrell_choir.ogg'
+	title = "Clouds of Neptune" // Choir of Qerr-Goi Volzux
+	artist = "Dukica99"
+	license = /decl/license/cc_by_4_0
+	url = "https://soundcloud.com/user-472035237/clouds-of-neptune"
+	volume = 15

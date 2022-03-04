@@ -10,6 +10,7 @@
 	whitelisted_species = list(SPECIES_UNATHI)
 	is_semi_antagonist = TRUE
 	min_skill = list(
+		SKILL_BUREAUCRACY = SKILL_ADEPT,
 		SKILL_HAULING = SKILL_BASIC,
 		SKILL_EVA = SKILL_ADEPT,
 		SKILL_PILOT = SKILL_EXPERT,
@@ -40,7 +41,7 @@
 		SKILL_ANATOMY = SKILL_ADEPT,
 		SKILL_CHEMISTRY = SKILL_ADEPT
 	)
-	skill_points = 18
+	skill_points = 20
 
 
 /datum/job/submap/rawl_tech
@@ -52,7 +53,7 @@
 	That's your excuse if questioned. Dohruk is legally a 'fishing club', but they're more known  \
 	for mercenary work of all sorts. You're as willing to offer labor as you are to \
 	get into trouble, but if you get caught trying to steal info or tech from Sol, keep your mouth shut."
-	whitelisted_species = list(SPECIES_UNATHI,SPECIES_YEOSA)
+	whitelisted_species = list(SPECIES_UNATHI,SPECIES_YEOSA,SPECIES_OLDUNATHI)
 	is_semi_antagonist = TRUE
 	min_skill = list(
 		SKILL_CONSTRUCTION = SKILL_ADEPT,
@@ -92,7 +93,7 @@
 		SKILL_CHEMISTRY = SKILL_ADEPT
 	)
 
-	skill_points = 14
+	skill_points = 16
 
 /datum/job/submap/rawl_medic
 	title = "Bonesetter"
@@ -103,7 +104,7 @@
 	That's your excuse if questioned. Dohruk is legally a 'fishing club', but they're more known  \
 	for mercenary work of all sorts. You're as willing to offer labor as you are to \
 	get into trouble, but if you get caught trying to steal info or tech from Sol, keep your mouth shut."
-	whitelisted_species = list(SPECIES_UNATHI,SPECIES_YEOSA)
+	whitelisted_species = list(SPECIES_UNATHI,SPECIES_YEOSA,SPECIES_OLDUNATHI)
 	is_semi_antagonist = TRUE
 	min_skill = list(
 		SKILL_HAULING = SKILL_BASIC,
@@ -139,7 +140,7 @@
 		SKILL_CHEMISTRY = SKILL_MAX
 	)
 
-	skill_points = 16
+	skill_points = 18
 
 /obj/effect/submap_landmark/spawnpoint/rawl_pilot
 	name = "Jhoge"
@@ -157,7 +158,7 @@
 	name = "Poacher"
 	l_ear = null
 	r_ear = null
-	uniform = /obj/item/clothing/under/savage_hunter
+	uniform = /obj/item/clothing/under/rank/ntpilot/dohruk
 	l_pocket = /obj/item/device/radio/
 	r_pocket = /obj/item/weapon/crowbar/prybar
 	shoes = /obj/item/clothing/shoes/jackboots/unathi

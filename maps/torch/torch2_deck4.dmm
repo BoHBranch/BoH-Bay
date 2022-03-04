@@ -117,7 +117,8 @@
 /obj/machinery/door/window/brigdoor/southright{
 	dir = 8;
 	name = "Supply Desk";
-	req_access = list("ACCESS_CARGO")
+	req_access = list("ACCESS_CARGO");
+	autoset_access = 0
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/blast/shutters{
@@ -14861,6 +14862,10 @@
 /obj/item/device/flashlight/lamp/green,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
+"NF" = (
+/obj/effect/shuttle_landmark/rawl/torchdock,
+/turf/space,
+/area/space)
 "NG" = (
 /obj/machinery/computer/modular/preset/civilian,
 /obj/machinery/alarm{
@@ -26617,7 +26622,7 @@ aa
 aa
 aa
 aa
-aa
+NF
 aa
 aa
 aa

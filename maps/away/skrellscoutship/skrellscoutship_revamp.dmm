@@ -81,12 +81,6 @@
 /turf/simulated/floor/carpet/purple,
 /area/ship/skrellskoutship/observatory)
 "aO" = (
-/obj/machinery/computer/cryopod{
-	name = "observatory oversight console";
-	pixel_x = 31;
-	pixel_y = 4;
-	storage_name = "Observatory Oversight Control"
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
@@ -452,6 +446,7 @@
 /area/ship/skrellscoutship/maintenance/power)
 "eJ" = (
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 0;
 	dir = 8;
 	name = "Morgue";
 	req_access = list("ACCESS_SKRELLSCOUT")
@@ -1121,6 +1116,7 @@
 	dir = 4
 	},
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 0;
 	name = "Engineering RIG";
 	req_access = list("ACCESS_SKRELLSCOUT")
 	},
@@ -1306,6 +1302,7 @@
 	dir = 1
 	},
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 0;
 	dir = 4;
 	name = "Munitions";
 	req_access = list("ACCESS_SKRELLSCOUT")
@@ -1824,6 +1821,7 @@
 	dir = 1
 	},
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 0;
 	dir = 4;
 	name = "Munitions";
 	req_access = list("ACCESS_SKRELLSCOUT")
@@ -2210,6 +2208,9 @@
 /area/ship/skrellscoutship/crew/rec)
 "yj" = (
 /obj/structure/disposaloutlet,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
 /turf/simulated/floor/airless,
 /area/ship/skrellscoutship/crew/rec)
 "yl" = (
@@ -2263,6 +2264,7 @@
 	dir = 1
 	},
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 0;
 	dir = 4;
 	name = "Munitions";
 	req_access = list("ACCESS_SKRELLSCOUT")
@@ -2355,6 +2357,7 @@
 	dir = 4
 	},
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 0;
 	name = "Vuxix RIG";
 	req_access = list("ACCESS_SKRELLSCOUT")
 	},
@@ -2386,6 +2389,7 @@
 	dir = 8
 	},
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 0;
 	name = "Raskinta-Katish RIG";
 	req_access = list("ACCESS_SKRELLSCOUT")
 	},
@@ -2431,6 +2435,7 @@
 /area/ship/skrellscoutship/command/armory)
 "AV" = (
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 0;
 	name = "Bluespace Artillery Access";
 	req_access = list("ACCESS_SKRELLSCOUT")
 	},
@@ -2717,6 +2722,7 @@
 	req_access = list("ACCESS_SKRELLSCOUT")
 	},
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 0;
 	dir = 4;
 	name = "Weaponry";
 	req_access = list("ACCESS_SKRELLSCOUT")
@@ -2872,6 +2878,13 @@
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
+	},
+/obj/machinery/turretid/stun{
+	ailock = 1;
+	check_arrest = 0;
+	check_records = 0;
+	pixel_y = -27;
+	req_access = list("ACCESS_SKRELLSCOUT")
 	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/armory)
@@ -3051,6 +3064,12 @@
 /obj/item/ammo_magazine/skrell_shotgun,
 /obj/item/ammo_magazine/skrell_shotgun,
 /obj/item/ammo_magazine/skrell_shotgun,
+/obj/item/ammo_magazine/skrell_shotgun,
+/obj/item/ammo_magazine/skrell_shotgun,
+/obj/item/ammo_magazine/skrell_shotgun,
+/obj/item/ammo_magazine/skrell_shotgun,
+/obj/item/ammo_magazine/skrell_shotgun,
+/obj/item/ammo_magazine/skrell_shotgun,
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/armory)
 "Hc" = (
@@ -3062,6 +3081,15 @@
 	dir = 1;
 	pixel_y = -24
 	},
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
+/obj/item/weapon/magnetic_ammo/skrell/slug,
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/armory)
 "Hd" = (
@@ -3334,20 +3362,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/toilets)
-"JN" = (
-/obj/machinery/turretid/stun{
-	ailock = 1;
-	check_arrest = 0;
-	check_records = 0;
-	pixel_y = 32;
-	req_access = list("ACCESS_SKRELLSCOUT")
-	},
-/obj/machinery/alarm/skrell{
-	dir = 4;
-	pixel_x = -24
-	},
-/turf/simulated/floor/tiled/skrell,
-/area/ship/skrellscoutship/crew/hallway/d1)
 "JO" = (
 /obj/effect/shuttle_landmark/skrellscoutship/start,
 /obj/machinery/door/airlock/external/glass{
@@ -3451,7 +3465,6 @@
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
 "KR" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/atmospherics/unary/cryo_cell,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
@@ -3459,7 +3472,6 @@
 /obj/machinery/light/skrell{
 	dir = 1
 	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/atmospherics/unary/cryo_cell,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
@@ -3821,13 +3833,7 @@
 "OJ" = (
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
-"OX" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/manifold/hidden,
-/turf/simulated/floor/tiled/skrell/white,
-/area/ship/skrellscoutship/crew/medbay)
 "OY" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9
 	},
@@ -4282,7 +4288,7 @@
 /turf/simulated/wall/r_titanium,
 /area/ship/skrellscoutship/command/armory)
 "SL" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
 "SR" = (
@@ -4343,10 +4349,10 @@
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellskoutship/observatory)
 "Tn" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/closet/crate/secure/biohazard/alt{
 	req_access = list()
 	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
 "Ts" = (
@@ -4377,10 +4383,6 @@
 	},
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellskoutship/observatory)
-"TF" = (
-/obj/effect/paint/black,
-/turf/simulated/wall/r_titanium,
-/area/ship/skrellscoutship/crew/hallway/d2)
 "TH" = (
 /obj/structure/bed/chair/padded/red,
 /turf/simulated/floor/tiled/skrell/blue,
@@ -4585,6 +4587,7 @@
 /area/ship/skrellscoutship/crew/fit)
 "VX" = (
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 0;
 	dir = 8;
 	name = "Morgue";
 	req_access = list("ACCESS_SKRELLSCOUT")
@@ -5089,6 +5092,7 @@
 	dir = 4
 	},
 /obj/machinery/door/window/brigdoor{
+	autoset_access = 0;
 	name = "Medical RIG";
 	req_access = list("ACCESS_SKRELLSCOUT")
 	},
@@ -10742,7 +10746,7 @@ zm
 zm
 FY
 Ud
-JN
+Ic
 Ic
 hH
 Uu
@@ -11048,7 +11052,7 @@ Ud
 Ud
 Ud
 Ud
-TF
+Mh
 gy
 hl
 jm
@@ -11967,7 +11971,7 @@ dp
 St
 qY
 KR
-OX
+gv
 SL
 UX
 Xr

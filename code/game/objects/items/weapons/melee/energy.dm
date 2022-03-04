@@ -6,6 +6,8 @@
 	var/lighting_color
 	var/active_attack_verb
 	var/inactive_attack_verb = list()
+	var/active_sharp = 1
+	var/active_edge = 1
 	sharp = 0
 	edge = 0
 	armor_penetration = 50
@@ -36,8 +38,8 @@
 	active = TRUE
 	force = active_force
 	throwforce = active_throwforce
-	sharp = 1
-	edge = 1
+	sharp = active_sharp
+	edge = active_edge
 	slot_flags |= SLOT_DENYPOCKET
 	attack_verb = active_attack_verb
 	update_icon()
@@ -258,20 +260,47 @@
 	origin_tech = list(TECH_MAGNET = 3)
 	active_attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
 
-/obj/item/weapon/melee/energy/knife  //these sprites slightly suck, may replace with the war pick later
+/obj/item/weapon/melee/energy/knife  //these sprites slightly suck, may redo later
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "knife_unathi_x"
 	active_icon = "knife_unathi"
-	active_force = 35
-	active_throwforce = 40
+	active_force = 20
+	active_throwforce = 30
 	name = "power dagger"
-	desc = "A moderately sharp, extremely hot knife. Not to be confused with a laser scalpel, the only medical use for this knife is euthanasia. Or cutting a plastic bottle of soda."
+	desc = "A dull yet extremely hot knife. Not to be confused with a laser scalpel, the only medical use for this knife is euthanasia. Or cutting a plastic bottle of soda."
 	lighting_color = COLOR_SABER_UNATHI
-	force = 10
-	throwforce = 12
+	sharp = 1
+	edge = 1
+	base_parry_chance = 10 //more unwieldy than a combat knife, and you don't want to toast yourself!
+	force = 7
+	throwforce = 10
 	throw_speed = 3
 	throw_range = 7
 	w_class = ITEM_SIZE_SMALL
 	active_attack_verb = list("stabbed", "cut", "seared", "slashed")
 	inactive_attack_verb = list("stabbed", "cut", "slashed")
 	hitsound = 'sound/weapons/blade1.ogg'
+
+/obj/item/weapon/melee/energy/pick
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "pick_unathi_x"
+	active_icon = "pick_unathi"
+	active_force = 30
+	active_throwforce = 20
+	name = "War Pick"
+	desc = "Probably not for mining. The head folds into the handle."
+	lighting_color = COLOR_SABER_UNATHI
+	sharp = 0
+	edge = 0
+	active_edge = 0
+	base_parry_chance = 20
+	force = 25
+	throwforce = 15
+	throw_speed = 3
+	throw_range = 7
+	attack_cooldown = 8
+	melee_accuracy_bonus = 5 //half that of a sword
+	w_class = ITEM_SIZE_NORMAL
+	slot_flags = SLOT_BELT
+	active_attack_verb = list("stabbed", "pierced", "slashed", "jabbed")
+	inactive_attack_verb = list("beaten", "clubbed", "bashed")
