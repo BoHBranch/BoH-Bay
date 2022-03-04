@@ -21,6 +21,7 @@
 	range_step = 2
 	spread_step = 10
 	agony = 15//up from 8.5
+	shrapnel_chance_multiplier = 2 //Guarantees shrapnel more-or-less.
 	embed = 1//shouldn't HAVE to be noted, but, y'know, seems like it's a problem.
 
 //holder
