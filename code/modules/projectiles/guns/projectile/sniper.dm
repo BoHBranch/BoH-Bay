@@ -115,11 +115,11 @@
 	one_hand_penalty = 6
 	accuracy = -4
 	bulk = 8
-	scoped_accuracy = 9
+	scoped_accuracy = 11
 	scope_zoom = 2
 	wielded_item_state = "z8carbine-wielded"
 	load_sound = 'sound/weapons/guns/interaction/shotgun_instert.ogg'
-	fire_delay = 30
+	fire_delay = 12
 
 /obj/item/weapon/gun/projectile/hornetsniper/civ
 	name = "nanotrasen Z9RC Kentucky"

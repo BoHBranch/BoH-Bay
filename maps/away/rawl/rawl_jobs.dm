@@ -41,7 +41,7 @@
 		SKILL_ANATOMY = SKILL_ADEPT,
 		SKILL_CHEMISTRY = SKILL_ADEPT
 	)
-	skill_points = 18
+	skill_points = 20
 
 
 /datum/job/submap/rawl_tech
@@ -93,7 +93,7 @@
 		SKILL_CHEMISTRY = SKILL_ADEPT
 	)
 
-	skill_points = 14
+	skill_points = 16
 
 /datum/job/submap/rawl_medic
 	title = "Bonesetter"
@@ -140,7 +140,7 @@
 		SKILL_CHEMISTRY = SKILL_MAX
 	)
 
-	skill_points = 16
+	skill_points = 18
 
 /obj/effect/submap_landmark/spawnpoint/rawl_pilot
 	name = "Jhoge"

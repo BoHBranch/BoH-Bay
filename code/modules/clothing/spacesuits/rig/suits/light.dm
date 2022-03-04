@@ -61,7 +61,7 @@
 		/obj/item/rig_module/datajack,
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/voice,
-		/obj/item/rig_module/vision,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/cooling_unit
 		)
 
@@ -169,6 +169,6 @@
 	req_access = list(access_syndicate)
 
 	initial_modules = list(
-		/obj/item/rig_module/vision,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/cooling_unit
 		) //removed the stealth module because it lacks counterplay and shouldn't be readily available.

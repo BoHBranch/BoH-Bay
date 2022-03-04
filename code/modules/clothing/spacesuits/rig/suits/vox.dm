@@ -52,7 +52,7 @@
 	cell_type =  /obj/item/weapon/cell/hyper
 
 	initial_modules = list(
-		/obj/item/rig_module/vision,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/mounted/plasmacutter,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/power_sink,

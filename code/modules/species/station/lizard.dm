@@ -42,7 +42,8 @@
 	their traditionalism, violence, and even sexism in certain clans, but most Unathi are proud of their honour and their meager planet. <br/><br/> Unathi \
 	find traditional human temperatures absolutely frigid, and being cold-blooded means coats are no help, but they are capable of \
 	regenerating from certain kinds of severe wounds at the cost of their hunger, so long as they don't starve enough that \
-	their stomach eats itself."
+	their stomach eats itself. \
+	<br/><br/>Naming format: Personalname Clanname"
 
 	cold_level_1 = 280 //Default 260 - Lower is better
 	cold_level_2 = 220 //Default 200
