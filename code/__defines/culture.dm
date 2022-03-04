@@ -189,6 +189,7 @@
 #define RELIGION_UNATHI_LIGHTS       "The Fruitful Lights"
 #define RELIGION_UNATHI_OTHER        "Other"
 #define RELIGION_UNATHI_MARKESHELI   "Markesheli Cult"
+#define RELIGION_UNATHI_AGA_EAKHE    "Aga-Eakhe"
 
 // Nabber grades.
 #define CULTURE_NABBER_CMINUS "Grade C-"
