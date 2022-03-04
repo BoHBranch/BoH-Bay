@@ -72,7 +72,7 @@
 			for(var/key in contact_datums)
 				record = contact_datums[O]
 			if(record)
-				if(!record.identified) 
+				if(!record.identified)
 					continue
 			contacts.Add(list(list("name"=O.name, "ref"="\ref[O]", "bearing"=bearing)))
 		if(contacts.len)
@@ -137,7 +137,7 @@
 	var/heat = 0
 	var/range = 1
 	idle_power_usage = 5000
-	
+
 /obj/machinery/shipsensors/attackby(obj/item/weapon/W, mob/user)
 	var/damage = max_health - health
 	if(damage && isWelder(W))
@@ -209,7 +209,7 @@
 			take_damage(rand(10,50))
 			toggle()
 		heat += idle_power_usage/15000
-		
+
 	if (heat > 0)
 		heat = max(0, heat - heat_reduction)
 
