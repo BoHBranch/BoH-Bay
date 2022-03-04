@@ -441,7 +441,8 @@
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
 	color = "#6CDA1B";
-	dir = 4
+	dir = 4;
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/machinery/door/firedoor{
 	dir = 4;
@@ -947,7 +948,8 @@
 "nY" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
-	color = "#6CDA1B"
+	color = "#6CDA1B";
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1008,7 +1010,8 @@
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
 	color = "#6CDA1B";
-	dir = 4
+	dir = 4;
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -1306,7 +1309,8 @@
 "tn" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
-	color = "#6CDA1B"
+	color = "#6CDA1B";
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1393,7 +1397,7 @@
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
 	color = "#6CDA1B";
-	name = "Washroom"
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -2582,7 +2586,7 @@
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
 	color = "#6CDA1B";
-	req_access = list("ACCESS_VOXSHIP_CAPTAIN")
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/door/firedoor,
@@ -3696,12 +3700,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
-	},
-/obj/machinery/door/airlock/ascent{
-	autoset_access = 0;
-	color = "#6CDA1B";
-	dir = 4;
-	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/machinery/door/firedoor{
 	dir = 4;
