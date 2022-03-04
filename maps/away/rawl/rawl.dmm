@@ -1216,8 +1216,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/rawl/cargo)
 "cD" = (
-/obj/item/ammo_magazine/shotholder/net,
-/obj/item/ammo_magazine/shotholder/net,
 /obj/structure/table/rack{
 	dir = 4
 	},

@@ -1488,7 +1488,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/power/smes/buildable/preset/torch/engine_main,
+/obj/machinery/power/smes/buildable/preset/voxship/ship,
 /obj/structure/cable{
 	d2 = 8;
 	icon_state = "0-8"
