@@ -1,3 +1,4 @@
+/*
 //baton
 /obj/item/weapon/melee/darkrp_baton
 	name = "magical stunbaton"
@@ -38,4 +39,4 @@
 		to_world("<span><font face='Arial Black, Arial, sans-serif'>\The [target.name] has been arrested for 120 seconds!</font></span>")
 		return TRUE
 
-	return FALSE
+	return FALSE*/
