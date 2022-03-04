@@ -13,7 +13,7 @@
 /obj/effect/floor_decal/corner/white/border{
 	dir = 4
 	},
-/obj/structure/table/standard,
+/obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled,
 /area/rawl/crew)
 "ad" = (
@@ -137,10 +137,11 @@
 /turf/simulated/floor/airless,
 /area/rawl/pipeworks)
 "ao" = (
-/obj/structure/table/standard,
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/structure/table/standard,
+/obj/machinery/microwave,
 /turf/simulated/floor/tiled,
 /area/rawl/crew)
 "ap" = (
@@ -151,9 +152,6 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/rawl/crew)
@@ -394,6 +392,10 @@
 /obj/structure/closet/secure_closet/personal/rawl{
 	pixel_x = 28
 	},
+/obj/structure/handrai{
+	dir = 8;
+	icon_state = "handrail"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/rawl/fore)
 "aN" = (
@@ -488,10 +490,13 @@
 /turf/simulated/floor/plating,
 /area/rawl/pipeworks)
 "aU" = (
-/obj/structure/table/standard,
-/obj/machinery/microwave,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/rawl/crew)
@@ -524,7 +529,8 @@
 	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
-	dir = 4
+	dir = 2;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled,
 /area/rawl/crew)
@@ -922,11 +928,6 @@
 /turf/simulated/wall/titanium,
 /area/rawl/crew)
 "bV" = (
-/obj/structure/disposalpipe/trunk{
-	dir = 1
-	},
-/obj/machinery/disposal,
-/obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/white,
 /area/rawl/crew)
@@ -1215,8 +1216,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/rawl/cargo)
 "cD" = (
-/obj/item/ammo_magazine/shotholder/net,
-/obj/item/ammo_magazine/shotholder/net,
 /obj/structure/table/rack{
 	dir = 4
 	},
@@ -1265,6 +1264,10 @@
 "cK" = (
 /obj/structure/closet/secure_closet/personal/rawl{
 	pixel_x = 28
+	},
+/obj/structure/handrai{
+	dir = 8;
+	icon_state = "handrail"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rawl/fore)
@@ -1372,9 +1375,6 @@
 /obj/effect/floor_decal/corner/white/border{
 	dir = 4
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/simulated/floor/tiled,
 /area/rawl/crew)
 "if" = (
@@ -1403,13 +1403,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/rawl/cargo)
 "mE" = (
-/obj/structure/bed/chair/shuttle/black{
-	dir = 8;
-	icon_state = "shuttle_chair_preview"
-	},
-/obj/effect/submap_landmark/spawnpoint/rawl_pilot,
-/turf/simulated/floor/tiled/dark,
-/area/rawl/fore)
+/obj/machinery/appliance/cooker/stove,
+/turf/simulated/floor/tiled,
+/area/rawl/crew)
 "nm" = (
 /obj/machinery/atmospherics/unary/engine{
 	dir = 8;
@@ -1424,9 +1420,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/simulated/floor/tiled,
 /area/rawl/crew)
 "pm" = (
@@ -1434,9 +1427,6 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/rawl/crew)
@@ -1512,10 +1502,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 2;
-	icon_state = "pipe-c"
-	},
 /turf/simulated/floor/tiled/white,
 /area/rawl/crew)
 "zV" = (
@@ -1580,6 +1566,9 @@
 "PU" = (
 /obj/structure/disposaloutlet{
 	dir = 8
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 4
 	},
 /turf/simulated/floor/airless,
 /area/rawl/crew)
@@ -21567,7 +21556,7 @@ co
 XX
 bZ
 cd
-mE
+cd
 cd
 cl
 bz
@@ -22571,7 +22560,7 @@ aa
 aa
 aa
 TU
-bT
+mE
 ap
 aC
 TU

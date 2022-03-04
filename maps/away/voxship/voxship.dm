@@ -10,11 +10,12 @@
 	id = "awaysite_voxship"
 	description = "Vox ship."
 	suffixes = list("voxship/voxship-1.dmm","voxship/voxship-2.dmm")
-	cost = 0//From 0.5
+	cost = 0.5//From 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/vox_shuttle)
 	area_usage_test_exempted_root_areas = list(/area/voxship)
-	template_flags = TEMPLATE_FLAG_SPAWN_GUARANTEED
-
+	area_coherency_test_subarea_count = list(
+		/area/voxship/armory = 16
+	)
 
 /obj/effect/overmap/visitable/ship/voxship
 	name = "Unkown ship type"
@@ -120,6 +121,16 @@
 
 /obj/machinery/power/smes/buildable/preset/voxship/ship
 	uncreated_component_parts = list(/obj/item/weapon/stock_parts/smes_coil/super_capacity = 1)
+	_input_maxed = TRUE
+	_output_maxed = TRUE
+	_input_on = TRUE
+	_output_on = TRUE
+	_fully_charged = TRUE
+
+/obj/machinery/power/smes/buildable/preset/voxship/engine
+	uncreated_component_parts = list(
+		/obj/item/weapon/stock_parts/smes_coil/advanced = 2
+	)
 	_input_maxed = TRUE
 	_output_maxed = TRUE
 	_input_on = TRUE

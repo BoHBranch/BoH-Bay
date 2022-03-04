@@ -31,6 +31,12 @@
 	req_access = list("ACCESS_VOXSHIP")
 	health = 150
 	maxhealth = 150
+	check_synth	 = 0
+	check_access = 1
+	check_arrest = 0
+	check_records = 0
+	check_weapons = 0
+	check_anomalies = 1
 
 /////////
 // Firearms
