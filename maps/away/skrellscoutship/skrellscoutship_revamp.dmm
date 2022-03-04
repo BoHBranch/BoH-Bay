@@ -2879,6 +2879,13 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/machinery/turretid/stun{
+	ailock = 1;
+	check_arrest = 0;
+	check_records = 0;
+	pixel_y = -27;
+	req_access = list("ACCESS_SKRELLSCOUT")
+	},
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/armory)
 "FS" = (
@@ -3355,20 +3362,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/toilets)
-"JN" = (
-/obj/machinery/turretid/stun{
-	ailock = 1;
-	check_arrest = 0;
-	check_records = 0;
-	pixel_y = 32;
-	req_access = list("ACCESS_SKRELLSCOUT")
-	},
-/obj/machinery/alarm/skrell{
-	dir = 4;
-	pixel_x = -24
-	},
-/turf/simulated/floor/tiled/skrell,
-/area/ship/skrellscoutship/crew/hallway/d1)
 "JO" = (
 /obj/effect/shuttle_landmark/skrellscoutship/start,
 /obj/machinery/door/airlock/external/glass{
@@ -10753,7 +10746,7 @@ zm
 zm
 FY
 Ud
-JN
+Ic
 Ic
 hH
 Uu
