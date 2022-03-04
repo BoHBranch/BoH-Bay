@@ -441,8 +441,7 @@
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
 	color = "#6CDA1B";
-	dir = 4;
-	req_access = list("ACCESS_VOXSHIP")
+	dir = 4
 	},
 /obj/machinery/door/firedoor{
 	dir = 4;
@@ -948,8 +947,7 @@
 "nY" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
-	color = "#6CDA1B";
-	req_access = list("ACCESS_VOXSHIP")
+	color = "#6CDA1B"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1309,8 +1307,7 @@
 "tn" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
-	color = "#6CDA1B";
-	req_access = list("ACCESS_VOXSHIP")
+	color = "#6CDA1B"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1396,8 +1393,7 @@
 "ub" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
-	color = "#6CDA1B";
-	req_access = list("ACCESS_VOXSHIP")
+	color = "#6CDA1B"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -3694,6 +3690,7 @@
 /area/voxship/dorms)
 "XK" = (
 /obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
 	color = "#6CDA1B";
 	dir = 4;
 	req_access = list("ACCESS_VOXSHIP")

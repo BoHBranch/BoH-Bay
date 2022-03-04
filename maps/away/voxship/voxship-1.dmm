@@ -1488,7 +1488,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/power/smes/buildable/preset/voxship/ship,
+/obj/machinery/power/smes/buildable/preset/voxship/engine,
 /obj/structure/cable{
 	d2 = 8;
 	icon_state = "0-8"
@@ -1915,7 +1915,7 @@
 /area/voxship/shuttle)
 "pq" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/obj/machinery/power/smes/buildable/preset/voxship/ship,
+/obj/machinery/power/smes/buildable/preset/voxship/engine,
 /obj/structure/cable{
 	d2 = 8;
 	icon_state = "0-8"
@@ -4088,7 +4088,6 @@
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
 	color = "#6CDA1B";
-	name = "Armory";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/structure/cable{
@@ -4228,7 +4227,6 @@
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
 	color = "#6CDA1B";
-	name = "Armory";
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/reinforced/vox,
