@@ -44,8 +44,13 @@
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/shuttle_landmark/rawl/torch
-	name = "SEV Torch IPV Rawl Fore Dock"
+	name = "SEV Torch IPV Rawl Fore Airlock"
 	landmark_tag = "nav_hangar_rawlship_torch"
+	movable_flags = MOVABLE_FLAG_EFFECTMOVE
+
+/obj/effect/shuttle_landmark/rawl/torchdock
+	name = "SEV Torch IPV Rawl Lower Fore Dock"
+	landmark_tag = "nav_hangar_rawlship_torchdock"
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/shuttle_landmark/transit/rawl
