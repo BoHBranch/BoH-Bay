@@ -185,7 +185,7 @@
 
 	// prevent the missile from moving on the overmap
 	overmap_missile.set_moving(FALSE)
-
+	entered_away = TRUE
 	var/heading = overmap_missile.dir
 	if(!heading)
 		heading = random_dir() // To prevent the missile from popping into the middle of the map and sitting there
