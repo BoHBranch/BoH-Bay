@@ -777,3 +777,12 @@
 /datum/sprite_accessory/hair/boyish5b
 	name = "Boyish 5b"
 	icon_state = "hair_boyish5b"
+
+/datum/sprite_accessory/hair/wheeler
+	name = "Wheeler"
+	icon_state = "hair_wheeler"
+
+/datum/sprite_accessory/hair/tressshoulder
+	name = "Tress Shoulder"
+	icon_state = "hair_tressshoulder"
+	flags = HAIR_TIEABLE

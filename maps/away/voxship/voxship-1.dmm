@@ -1488,7 +1488,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/power/smes/buildable/preset/torch/engine_main,
+/obj/machinery/power/smes/buildable/preset/voxship/engine,
 /obj/structure/cable{
 	d2 = 8;
 	icon_state = "0-8"
@@ -1915,7 +1915,7 @@
 /area/voxship/shuttle)
 "pq" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/obj/machinery/power/smes/buildable/preset/voxship/ship,
+/obj/machinery/power/smes/buildable/preset/voxship/engine,
 /obj/structure/cable{
 	d2 = 8;
 	icon_state = "0-8"
@@ -3653,7 +3653,6 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "EO" = (
-/obj/effect/decal/warning_stripes,
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
@@ -4088,7 +4087,8 @@
 "IG" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
-	color = "#6CDA1B"
+	color = "#6CDA1B";
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/structure/cable{
 	d1 = 4;
@@ -4219,14 +4219,15 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/shuttle)
 "JV" = (
-/obj/machinery/door/airlock/ascent{
-	autoset_access = 0;
-	color = "#6CDA1B"
-	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/ascent{
+	autoset_access = 0;
+	color = "#6CDA1B";
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
@@ -4703,11 +4704,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_fore)
-"Oh" = (
-/obj/effect/wallframe_spawn/alien,
-/obj/effect/wallframe_spawn/alien,
-/turf/simulated/floor/airless,
-/area/space)
 "Oj" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -12522,7 +12518,7 @@ Xw
 Jk
 cZ
 cZ
-Oh
+Jk
 Xw
 Jk
 cZ
