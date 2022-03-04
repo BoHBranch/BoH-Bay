@@ -332,7 +332,7 @@
 		else
 			planet_x = target_x
 			planet_y = target_y
-	
+
 #undef MOVING
 #undef SANITIZE_SPEED
 #undef CHANGE_SPEED_BY
