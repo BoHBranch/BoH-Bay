@@ -155,8 +155,8 @@
 /obj/item/attachable/verticalgrip
 	name = "vertical grip"
 	desc = "A vertical foregrip that offers less loss of accuracy while moving."
-	icon_state = "grip"
-	attach_icon = "grip_a"
+	icon_state = "vgrip"
+	attach_icon = "vgrip_a"
 	slot = "under"
 	bulk_mod = -20 // removes all rifle bulk
 	aim_slowdown_mod = -50
@@ -164,8 +164,8 @@
 /obj/item/attachable/angledgrip
 	name = "angled grip"
 	desc = "A angled foregrip that faster movement speed while firing."
-	icon_state = "grip"
-	attach_icon = "grip_a"
+	icon_state = "agrip"
+	attach_icon = "agrip_a"
 	slot = "under"
 	bulk_mod = -2 // removes all rifle bulk
 

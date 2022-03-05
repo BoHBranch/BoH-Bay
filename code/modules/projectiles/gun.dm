@@ -147,7 +147,7 @@
 		pin.installed_in = src
 
 
-	attachable_overlays = list("muzzle" = null, "rail" = null, "under" = null, "stock" = null, "mag" = null, "special" = null)
+	attachable_overlays = list("muzzle" = null, "rail" = null, "under" = null, "stock" = null, "mag" = null)
 	set_gun_attachment_offsets()
 	handle_starting_attachment()
 
@@ -164,7 +164,7 @@
 
 /obj/item/weapon/gun/on_update_icon()
 	var/mob/living/M = loc
-	overlays.Cut()
+	overlays -= image('icons/obj/guns/gui.dmi',"safety[safety()]") // This might error if it doesn't exist, but like. It used to cut ALL OTHER OVERLAYS, so sue me.
 	if(istype(M))
 		if(wielded_item_state)
 			if(M.can_wield_item(src) && src.is_held_twohanded(M))
