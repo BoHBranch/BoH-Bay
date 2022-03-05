@@ -19,6 +19,7 @@
 	desc = "The Hephaestus Lightning is a powerful stunrifle built to takedown more 'biologically robust' species, such as Unathi!"
 	icon = 'icons/obj/guns/taser_carbine.dmi'
 	icon_state = "tasercarbine"
+	modifystate = "tasercarbine"
 	w_class = ITEM_SIZE_LARGE
 	slot_flags = SLOT_BELT|SLOT_BACK
 	one_hand_penalty = 3

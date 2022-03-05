@@ -49,6 +49,10 @@
 	name = "box of magazines"
 	startswith = list(/obj/item/ammo_magazine/machine_pistol = 7)
 
+/obj/item/weapon/storage/box/ammo/smg_frang
+	name = "box of magazines"
+	startswith = list(/obj/item/ammo_magazine/smg_top/frangible = 7)
+
 
 /obj/item/gunbox
 	name = "equipment kit"
@@ -70,6 +74,27 @@
 			var/atom/movable/AM = new new_type(get_turf(src))
 			if(istype(AM, /obj/item/weapon/gun/))
 				to_chat(user, "You have chosen \the [AM]. This is probably worth more than what your paycheck can be used for.")
+		qdel(src)
+
+/////////
+// Primary Gunbox for Sec
+/////////
+
+/obj/item/gunbox/primary
+	desc = "A secure box containing a primary."
+
+/obj/item/gunbox/primary/attack_self(mob/living/user)
+	var/list/options = list()
+	options["Ballistic - SMG"] = list(/obj/item/weapon/gun/projectile/automatic/sec_smg/less_lethal,/obj/item/weapon/storage/box/ammo/smg_frang)
+	options["Ballistic - Beanbag Shotgun"] = list(/obj/item/weapon/gun/projectile/shotgun/pump/beanbag,/obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full)
+	options["Stun - Taser Carbine"] = list(/obj/item/weapon/gun/energy/taser/carbine/ext)
+	var/choice = input(user,"What type of equipment?") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn)
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/weapon/gun/))
+				to_chat(user, "You have chosen \the [AM].")
 		qdel(src)
 
 /////////
