@@ -164,7 +164,7 @@
 
 /obj/item/weapon/gun/on_update_icon()
 	var/mob/living/M = loc
-	overlays -= image('icons/obj/guns/gui.dmi',"safety[safety()]") // This might error if it doesn't exist, but like. It used to cut ALL OTHER OVERLAYS, so sue me.
+	overlays -= image('icons/obj/guns/gui.dmi',"safety[safety()]") // Used to cut all other overlays, just cuts Safety_Icons now.
 	if(istype(M))
 		if(wielded_item_state)
 			if(M.can_wield_item(src) && src.is_held_twohanded(M))
