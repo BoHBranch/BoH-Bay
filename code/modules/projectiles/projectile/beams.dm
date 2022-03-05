@@ -31,7 +31,7 @@
 
 /obj/item/projectile/beam/midlaser
 	damage = 40
-	armor_penetration = 15
+	armor_penetration = 20
 	distance_falloff = 1
 
 /obj/item/projectile/beam/heavylaser
@@ -191,6 +191,19 @@
 	tracer_type = /obj/effect/projectile/laser/xray/tracer
 	impact_type = /obj/effect/projectile/laser/xray/impact
 
+/obj/item/projectile/beam/snipervox
+	name = "sniper beam"
+	icon_state = "xray"
+	fire_sound = 'sound/weapons/marauder.ogg'
+	distance_falloff = 0.50
+	damage = 50
+	armor_penetration = 50
+	stutter = 2
+
+	muzzle_type = /obj/effect/projectile/laser/xray/muzzle
+	tracer_type = /obj/effect/projectile/laser/xray/tracer
+	impact_type = /obj/effect/projectile/laser/xray/impact
+
 /obj/item/projectile/beam/stun
 	name = "stun beam"
 	icon_state = "stun"
@@ -301,9 +314,8 @@
 /obj/item/projectile/beam/darkmatter
 	name = "dark matter bolt"
 	icon_state = "darkb"
-	damage = 50
-	armor_penetration = 65
-	damage_flags = DAM_DISPERSED
+	damage = 35
+	armor_penetration = 45
 	muzzle_type = /obj/effect/projectile/darkmatter/muzzle
 	tracer_type = /obj/effect/projectile/darkmatter/tracer
 	impact_type = /obj/effect/projectile/darkmatter/impact
@@ -313,7 +325,7 @@
 	icon_state = "darkt"
 	damage_flags = 0
 	sharp = 0 //not a laser
-	agony = 50
+	agony = 25
 	damage_type = STUN
 	muzzle_type = /obj/effect/projectile/stun/darkmatter/muzzle
 	tracer_type = /obj/effect/projectile/stun/darkmatter/tracer

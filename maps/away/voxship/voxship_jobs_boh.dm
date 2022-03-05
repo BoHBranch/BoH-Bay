@@ -1,6 +1,6 @@
 /datum/job/submap/voxship_vox/armalis
 	title = "Shard Martinet"
-	total_positions = 2
+	total_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
 	supervisors = "apex and the arkship"
 	info = "Loyal to your Quill-Captain, you enforce the will of the ark admirals; while you may be away from the main fleets, the crew must not forget they are subservient to the will of the Archon. \

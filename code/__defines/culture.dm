@@ -169,10 +169,12 @@
 #define CULTURE_UNATHI_SAVANNAH       "Savannah Clans"
 #define CULTURE_UNATHI_SALT_SWAMP     "Salt Swamp Clans"
 #define CULTURE_UNATHI_SPACE          "Space-Faring Clans"
-#define CULTURE_UNATHI_ADOPTED          "Adopted Veteris'Unathi"
+#define CULTURE_UNATHI_TERSTEN        "Tersten Clans"
+#define CULTURE_UNATHI_ADOPTED        "Adopted Veteris'Unathi"
 
 #define HOME_SYSTEM_MOGHES          "Moghes"
 #define HOME_SYSTEM_OUERE           "Ouere"
+#define HOME_SYSTEM_UNATHI_TERSTEN  "Tersten - Unathi Clans"
 #define HOME_SYSTEM_OFFWORLD        "Off-world"
 
 #define FACTION_UNATHI_CLAN          "Clan Focused"
@@ -187,6 +189,7 @@
 #define RELIGION_UNATHI_LIGHTS       "The Fruitful Lights"
 #define RELIGION_UNATHI_OTHER        "Other"
 #define RELIGION_UNATHI_MARKESHELI   "Markesheli Cult"
+#define RELIGION_UNATHI_AGA_EAKHE    "Aga-Eakhe"
 
 // Nabber grades.
 #define CULTURE_NABBER_CMINUS "Grade C-"

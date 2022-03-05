@@ -50,6 +50,7 @@
 		"nav_deck2_calypso",
 		"nav_deck2_guppy",
 		"nav_deck2_aquila",
+		"nav_hangar_rawlship_torch",
 
 		//start Forth Deck
 		"nav_merc_deck4",
@@ -59,6 +60,7 @@
 		"nav_deck1_calypso",
 		"nav_deck1_guppy",
 		"nav_deck1_aquila",
+		"nav_hangar_rawlship_torchdock",
 
 		//start Hanger Deck
 		"nav_merc_hanger",

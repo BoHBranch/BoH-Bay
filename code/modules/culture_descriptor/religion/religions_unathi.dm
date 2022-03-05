@@ -5,6 +5,13 @@
 	\"her hands\". Though Moghes is spiritual for all unathi, this lifestyle is entirely based around it, and so those offworld \
 	usually plan for a swift return."
 
+/decl/cultural_info/religion/unathi_aga_eakhe
+	name = RELIGION_UNATHI_AGA_EAKHE
+	description = "Traditional Yeosa religion is based on totemic worship of Ancestors and other spirits, which manifest themselves as monstrous \
+	creatures dwelling on the seabed. Revered by Yeosa, those physical avatars of the powerful ones rest beneath the dark waters, their mere movements \
+	causing a change of sea. Aga-Eakhe has its own oral tradition and commandments, designed to facilitate the survival of Yeosa in their \
+	aquatic homeworld - those religious laws are respected by the majority of World Sea clans."
+
 /decl/cultural_info/religion/unathi_precursors
 	name = RELIGION_UNATHI_PRECURSOR
 	description = "Focused primarily with learning and understanding everything they can about the precursors, unathi of this faith \

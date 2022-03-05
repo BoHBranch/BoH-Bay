@@ -371,7 +371,7 @@
 	wielded_item_state = "skrellshotgun-wielded"
 	w_class = ITEM_SIZE_HUGE
 	force = 10
-	slot_flags = SLOT_BACK
+	slot_flags = SLOT_BACK|SLOT_BELT
 	load_method = MAGAZINE
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	caliber = CALIBER_SKRELL_SHOTGUN

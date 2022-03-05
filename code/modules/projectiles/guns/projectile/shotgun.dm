@@ -4,7 +4,7 @@
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
-	max_shells = 7
+	max_shells = 4
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
@@ -66,7 +66,7 @@
 	item_state = "cshotgun"
 	wielded_item_state = "cshotgun-wielded"
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
-	max_shells = 4
+	max_shells = 7
 	ammo_type = /obj/item/ammo_casing/shotgun
 	one_hand_penalty = 8
 

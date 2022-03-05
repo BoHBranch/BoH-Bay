@@ -21,10 +21,14 @@
 		return allocated[req_skill] + get_min_skill(job, req_skill)
 
 /datum/preferences/proc/get_min_skill(datum/job/job, decl/hierarchy/skill/S)
-	if(job && job.min_skill)
-		. = job.min_skill[S.type]
+	var/datum/mil_branch/branch = mil_branches.get_branch(branches[job.title])
+	if(job && job.min_skill && branch && branch.min_skill) //hacky check, makes sure whatever skill is higher is applied. Sorry guys.
+		if(job.min_skill[S.type] < branch.min_skill[S.type])
+			. = branch.min_skill[S.type]
 	if(!.)
-		var/datum/mil_branch/branch = mil_branches.get_branch(branches[job.title])
+		if(job && job.min_skill)
+			. = job.min_skill[S.type]
+	if(!.)
 		if(branch && branch.min_skill)
 			. = branch.min_skill[S.type]
 	if(!.)

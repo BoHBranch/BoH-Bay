@@ -26,7 +26,7 @@
 
 	initial_modules = list(
 		/obj/item/rig_module/mounted/lcannon,
-		/obj/item/rig_module/vision/thermal,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/grenade_launcher,
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/power_sink,

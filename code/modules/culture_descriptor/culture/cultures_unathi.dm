@@ -129,6 +129,21 @@
 		LANGUAGE_SPACER
 	)
 
+/decl/cultural_info/culture/unathi_tersten
+	name = CULTURE_UNATHI_TERSTEN
+	description = "The sinta clans that have made their home on Tersten are something of an oddity. Many settled on Tersten in the wake of the \
+	Tersten Golden Age. While still independent, they maintain a close relationship with the Tersten people. These clans have formed their own \
+	hegemony, with their primary focus being unity of the clans as well as maintaining relations with the native Tersten people. Still traditional to their \
+	beliefs, sinta on Tersten have integrated well with the planet's inhabitants. Tersten clans are seen by some Moghes clans as traitors - clans that have \
+	abandoned their homeland. Regardless, the clans on Tersten enjoy a peace that could not be achieved on the rough surface of Moghes."
+	language = LANGUAGE_UNATHI_SINTA
+	secondary_langs = list(
+		LANGUAGE_SIGN,
+		LANGUAGE_HUMAN_EURO,
+		LANGUAGE_GUTTER,
+		LANGUAGE_SPACER
+	)
+
 /decl/cultural_info/culture/unathi/clan_adopted
  	name = CULTURE_UNATHI_ADOPTED
  	description = "A Veteris'Unathi that has either been adopted by a clan or was hatched into a clan inheriting their clan's customs and traditions. \

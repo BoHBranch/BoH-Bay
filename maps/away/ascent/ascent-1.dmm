@@ -453,7 +453,12 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_south)
 "bj" = (
-/obj/machinery/disperser/front/ascent,
+/obj/machinery/disperser/front{
+	color = "#a33fbf";
+	desc = "Something about this looks dangerous. Better to keep away...";
+	dir = 8;
+	name = "odd cannon barrel"
+	},
 /turf/simulated/wall/r_wall/ascent,
 /area/ship/ascent/subdeck_center)
 "bk" = (
@@ -2438,7 +2443,12 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "fz" = (
-/obj/machinery/disperser/middle/ascent,
+/obj/machinery/disperser/middle{
+	color = "#a33fbf";
+	desc = "Something about this looks dangerous. Better to keep away...";
+	dir = 8;
+	name = "odd cannon fusor"
+	},
 /turf/simulated/wall/r_wall/ascent,
 /area/ship/ascent/subdeck_center)
 "fA" = (
@@ -2638,7 +2648,12 @@
 /area/ship/ascent/subdeck_center)
 "fQ" = (
 /obj/structure/window/phoronreinforced,
-/obj/machinery/disperser/back/ascent,
+/obj/machinery/disperser/back{
+	color = "#a33fbf";
+	desc = "Something about this looks dangerous. Better to keep away...";
+	dir = 8;
+	name = "odd cannon loader"
+	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "fR" = (
