@@ -186,3 +186,27 @@
 
 /datum/fabricator_recipe/arms_ammo/hidden/large_grenade
 	path = /obj/item/weapon/grenade/chem_grenade/large
+
+/datum/fabricator_recipe/arms_ammo/hidden/firearmpart_internals
+	path = /obj/item/weapon/firearmpart_internals
+
+/datum/fabricator_recipe/arms_ammo/hidden/firearmpart_grip
+	path = /obj/item/weapon/firearmpart_grip
+
+/datum/fabricator_recipe/arms_ammo/hidden/firearmpart_body
+	path = /obj/item/weapon/firearmpart_body
+
+/datum/fabricator_recipe/arms_ammo/hidden/firearmpart_barrel
+	path = /obj/item/weapon/firearmpart_barrel
+
+/datum/fabricator_recipe/arms_ammo/hidden/spec_pistol
+	path = /obj/item/weapon/firearmpart_spec/pistol
+
+/datum/fabricator_recipe/arms_ammo/hidden/spec_revolver
+	path = /obj/item/weapon/firearmpart_spec/revolver
+
+/datum/fabricator_recipe/arms_ammo/hidden/spec_shotgun
+	path = /obj/item/weapon/firearmpart_spec/shotgun
+
+/datum/fabricator_recipe/arms_ammo/hidden/spec_rifle
+	path = /obj/item/weapon/firearmpart_spec/rifle
