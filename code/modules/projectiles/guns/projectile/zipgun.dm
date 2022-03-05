@@ -82,6 +82,7 @@
 	..()
 
 /obj/item/weapon/gun/projectile/revolver/improvised_revolver/special_check()
+	..()
 	if(!barrelexploded && prob(80))
 		barrelexploded = TRUE
 		to_chat(usr,SPAN_NOTICE("Something sparks."))
@@ -127,6 +128,15 @@
 		list(mode_name="semi auto", automatic = FALSE, fire_delay= 4, burst=1, burst_delay = 2, move_delay=0, one_hand_penalty=10, accuracy = 2, burst_accuracy=null, dispersion=null),
 		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 4, burst_delay = 2, burst=4 , one_hand_penalty=12, move_delay=2, accuracy = 1, burst_accuracy=list(0,-1,-1,-2,-2), dispersion=list(0.0, 0.6, 1.0)),
 		)
+
+/obj/item/weapon/gun/projectile/automatic/assault_rifle/improvised/on_update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "ruskie"
+		wielded_item_state = "arifle-wielded"
+	else
+		icon_state = "ruskie-empty"
+		wielded_item_state = "arifle-wielded-empty"
 
 /obj/item/weapon/gun/projectile/pistol/nailgun
 	name = "nailgun"

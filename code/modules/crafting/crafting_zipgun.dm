@@ -128,7 +128,7 @@
 	. = ..()
 	icon_state = "weaponcraft[buildstate]"
 
-/obj/item/weapon/imprifleframe/examine(mob/user)
+/obj/item/weapon/firearmframe/examine(mob/user)
 	. = ..(user)
 	switch(buildstate)
 		if(0) to_chat(user, "It needs some internal parts if you want it to actually do anything.")
@@ -140,7 +140,7 @@
 		if(6) to_chat(user, "The chassis has the shape, but its still a bit wobbly. Looks like it could use some welding.")
 		if(7) to_chat(user, "It is nearly complete, but its missing a specification part.")
 
-/obj/item/weapon/imprifleframe/attackby(obj/item/W as obj, mob/user as mob)
+/obj/item/weapon/firearmframe/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/weapon/firearmpart_internals))
 		if(buildstate == 0)
 			user.drop_from_inventory(W)
@@ -206,8 +206,7 @@
 			user.drop_from_inventory(W)
 			qdel(W)
 			to_chat(user, "<span class='notice'>With the specification part installed, you're left with a complete pistol!</span>")
-			var/obj/item/weapon/gun/projectile/pistol/improvised/emptymag = new /obj/item/weapon/gun/projectile/pistol/improvised(get_turf(src))
-			emptymag.loaded = list()
+			new /obj/item/weapon/gun/projectile/pistol/improvised(get_turf(src))
 			qdel(src)
 		return
 	else if(istype(W,/obj/item/weapon/firearmpart_spec/shotgun))
@@ -215,8 +214,7 @@
 			user.drop_from_inventory(W)
 			qdel(W)
 			to_chat(user, "<span class='notice'>With the specification part installed, you're left with a complete shotgun!</span>")
-			var/obj/item/weapon/gun/projectile/shotgun/pump/improvised/emptymag = new /obj/item/weapon/gun/projectile/shotgun/pump/improvised(get_turf(src))
-			emptymag.loaded = list()
+			new /obj/item/weapon/gun/projectile/shotgun/pump/improvised(get_turf(src))
 			qdel(src)
 		return
 	else if(istype(W,/obj/item/weapon/firearmpart_spec/rifle))
@@ -224,8 +222,7 @@
 			user.drop_from_inventory(W)
 			qdel(W)
 			to_chat(user, "<span class='notice'>With the specification part installed, you're left with a complete rifle!</span>")
-			var/obj/item/weapon/gun/projectile/automatic/assault_rifle/improvised/emptymag = new /obj/item/weapon/gun/projectile/automatic/assault_rifle/improvised(get_turf(src))
-			emptymag.loaded = list()
+			new /obj/item/weapon/gun/projectile/automatic/assault_rifle/improvised(get_turf(src))
 			qdel(src)
 		return
 	else if(istype(W,/obj/item/weapon/firearmpart_spec/nail))
@@ -233,16 +230,14 @@
 			user.drop_from_inventory(W)
 			qdel(W)
 			to_chat(user, "<span class='notice'>With the specification part installed, you're left with a complete... nailgun? Why would you make a nailgun?</span>")
-			var/obj/item/weapon/gun/projectile/pistol/nailgun/emptymag = new /obj/item/weapon/gun/projectile/pistol/nailgun(get_turf(src))
-			emptymag.loaded = list()
+			new /obj/item/weapon/gun/projectile/pistol/nailgun(get_turf(src))
 			qdel(src)
 		return
 	else if(istype(W,/obj/item/weapon/firearmpart_spec/revolver))
 		if(buildstate == 7)
 			user.drop_from_inventory(W)
 			qdel(W)
-			to_chat(user, "<span class='notice'>With the specification part installed, you're left with a complete... nailgun? Why would you make a nailgun?</span>")
-			var/obj/item/weapon/gun/projectile/revolver/improvised_revolver/emptymag = new /obj/item/weapon/gun/projectile/revolver/improvised_revolver(get_turf(src))
-			emptymag.loaded = list()
+			to_chat(user, "<span class='notice'>With the specification part installed, you're left with a complete... revolver?</span>")
+			new /obj/item/weapon/gun/projectile/revolver/improvised_revolver(get_turf(src))
 			qdel(src)
 		return
