@@ -127,4 +127,14 @@
 	_output_on = TRUE
 	_fully_charged = TRUE
 
+/obj/machinery/power/smes/buildable/preset/voxship/engine
+	uncreated_component_parts = list(
+		/obj/item/weapon/stock_parts/smes_coil/advanced = 2
+	)
+	_input_maxed = TRUE
+	_output_maxed = TRUE
+	_input_on = TRUE
+	_output_on = TRUE
+	_fully_charged = TRUE
+
 #undef WEBHOOK_SUBMAP_LOADED_VOX
