@@ -16,6 +16,7 @@
 #define MATERIAL_PHORON_GLASS            "phglass"
 #define MATERIAL_REINFORCED_PHORON_GLASS "rphglass"
 #define MATERIAL_MARBLE                  "marble"
+#define MATERIAL_RESIN                   "resin"
 #define MATERIAL_CULT                    "cult"
 #define MATERIAL_REINFORCED_CULT         "cult2"
 #define MATERIAL_CULT_GLASS              "cult_g"
