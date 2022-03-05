@@ -46,7 +46,6 @@
 	caliber = CALIBER_PISTOL_SMALL
 	fire_delay = 5
 	damage_mult = 0.9
-	penetration_mult = 0.8
 	has_safety = FALSE
 	magazine_type = /obj/item/ammo_magazine/pistol/small
 	allowed_magazines = /obj/item/ammo_magazine/pistol/small
@@ -71,7 +70,6 @@
 	force = 15
 	throwforce = 18
 	damage_mult = 1.5
-	penetration_mult = 1.5
 	has_safety = FALSE
 	var/barrelexploded = FALSE //Has it been fired? If so, the gun is now inoperable.
 
@@ -109,7 +107,6 @@
 	one_hand_penalty = 3
 	bulk = 2
 	damage_mult = 0.9
-	penetration_mult = 0.8
 	has_safety = FALSE
 
 /obj/item/weapon/gun/projectile/automatic/assault_rifle/improvised
