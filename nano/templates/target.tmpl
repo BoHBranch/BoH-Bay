@@ -6,7 +6,7 @@
 	{{for data.contacts_ships}}
 	<tr>
 	<div class='item'>
-		<td>{{:helper.link('Lock', '&#8858' ,{ 'lock' : value.ref }, null, null)}}</td>
+		<td>{{:helper.link('Lock', '&#8858' ,{ 'ship_lock' : value.ref }, null, null)}}</td>
 		<td><span class='white'>{{:value.name}}</span>, bearing {{:value.bearing}}</td>
 	</div>
 	</tr>
@@ -21,7 +21,7 @@
 	{{for data.contacts_missiles}}
 	<tr>
 	<div class='item'>
-		<td>{{:helper.link('Lock', '&#8858' ,{ 'lock' : value.ref }, null, null)}}</td>
+		<td>{{:helper.link('Lock', '&#8858' ,{ 'missile_lock' : value.ref }, null, null)}}</td>
 		<td><span class='white'>{{:value.name}}</span>, bearing {{:value.bearing}}</td>
 	</div>
 	</tr>
@@ -37,7 +37,7 @@
 	{{for data.contacts_planets}}
 	<tr>
 	<div class='item'>
-		<td>{{:helper.link('Lock', 'search' ,{ 'lock' : value.ref }, null, null)}}</td>
+		<td>{{:helper.link('Lock', 'search' ,{ 'planet_lock' : value.ref }, null, null)}}</td>
 		<td><span class='white'>{{:value.name}}</span>, bearing {{:value.bearing}}</td>
 	</div>
 	</tr>

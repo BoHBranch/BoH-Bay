@@ -63,19 +63,19 @@
 		return TOPIC_NOACTION
 
 	if (href_list["ship_lock"])
-		var/obj/effect/overmap/O = locate(href_list["lock"])
+		var/obj/effect/overmap/O = locate(href_list["ship_lock"])
 		if(istype(O) && !QDELETED(O) && (O in view(7,linked)))
 			linked.set_target(TARGET_SHIP, O)
 		return TOPIC_HANDLED
 		
 	if (href_list["missile_lock"])
-		var/obj/effect/overmap/O = locate(href_list["lock"])
+		var/obj/effect/overmap/O = locate(href_list["missile_lock"])
 		if(istype(O) && !QDELETED(O) && (O in view(7,linked)))
 			linked.set_target(TARGET_MISSILE, O)
 		return TOPIC_HANDLED
 		
 	if (href_list["planet_lock"])
-		var/obj/effect/overmap/O = locate(href_list["lock"])
+		var/obj/effect/overmap/O = locate(href_list["planet_lock"])
 		if(istype(O) && !QDELETED(O) && (O in view(7,linked)))
 			linked.set_target(TARGET_PLANET, O, linked.get_target(TARGET_PLANET)[2], linked.get_target(TARGET_PLANET)[3])		
 		return TOPIC_HANDLED

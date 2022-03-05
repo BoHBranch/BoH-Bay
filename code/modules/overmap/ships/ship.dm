@@ -284,7 +284,9 @@
 	
 /obj/effect/overmap/visitable/ship/proc/check_target(obj/effect/overmap/target) 
 	if(target in view(7, src))
+		to_world("returned true")
 		return TRUE
+	to_world("return false")
 	return FALSE
 
 /obj/effect/overmap/visitable/ship/proc/get_target(var/target_type)
@@ -311,7 +313,7 @@
 	return null
 
 /obj/effect/overmap/visitable/ship/proc/set_target(var/target_type, var/obj/effect/overmap/target, var/target_x, var/target_y)
-
+	to_world("got here")
 	if(target_type == TARGET_SHIP)
 		if(target && check_target(target))
 			ship_target = target			

@@ -26,9 +26,9 @@
 	var/maintenance_hatch_open = FALSE
 	var/active = FALSE
 	var/entered_away = FALSE
-	var/list/equipment
+	var/list/equipment = list()
 	var/obj/effect/overmap/projectile/overmap_missile = null
-	
+
 	var/obj/effect/overmap/origin = null
 
 /obj/structure/missile/proc/get_additional_info()
@@ -37,7 +37,7 @@
 		info += ("<li>" + E.name)
 	info += "</ul>"
 	return JOINTEXT(info)
-
+/*
 /obj/structure/missile/proc/update_bounds()
 	if(dir in list(EAST, WEST))
 		bound_width = 2 * world.icon_size
@@ -45,7 +45,7 @@
 	else
 		bound_width = world.icon_size
 		bound_height = 2 * world.icon_size
-
+*/
 /obj/structure/missile/Initialize()
 	. = ..()
 
@@ -53,7 +53,7 @@
 		var/path = equipment[i]
 		equipment[i] = new path(src)
 
-	update_bounds()
+//	update_bounds()
 	update_icon()
 
 /obj/structure/missile/Destroy()
@@ -68,7 +68,7 @@
 
 /obj/structure/missile/Move()
 	. = ..()
-	update_bounds()
+	//update_bounds()
 
 	// for some reason, touch_map_edge doesn't always trigger like it should
 	// this ensures that it does
@@ -81,7 +81,7 @@
 
 // Move to the overmap until we encounter a new z
 /obj/structure/missile/touch_map_edge()
-	
+
 	//Missile destroyed if it fails to hit something
 	if(entered_away)
 		Destroy()
@@ -101,9 +101,9 @@
 	if(overmap_missile.dangerous)
 		log_and_message_admins("A dangerous missile has entered the overmap (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[overmap_missile.x];Y=[overmap_missile.y];Z=[overmap_missile.z]'>JMP</a>)")
 
-	
+
 	origin = map_sectors["[z]"]
-	
+
 	// Abort walk
 	walk(src, 0)
 	forceMove(overmap_missile)
@@ -193,10 +193,6 @@
 	var/start_x = Floor(world.maxx / 2) + rand(-10, 10)
 	var/start_y = Floor(world.maxy / 2) + rand(-10, 10)
 
-	//Oh god oh fuck
-	//TODO: CURRENTLY CHECKING OBJ HEADING AND NOT OVERMAP HEADING WHICH IS WHY THIS IS FUCKED UP
-	
-	
 	if(heading == target_dir)
 		if(target_fore_dir == NORTH)
 			start_y = TRANSITIONEDGE + 2
@@ -221,7 +217,7 @@
 		else if(target_fore_dir == WEST)
 			start_x = TRANSITIONEDGE + 2
 			heading = EAST
-		else 
+		else
 			start_x = world.maxx - TRANSITIONEDGE - 2
 			heading = WEST
 
@@ -235,10 +231,10 @@
 		else if(target_fore_dir == WEST)
 			start_y = TRANSITIONEDGE + 2
 			heading = NORTH
-		else 
+		else
 			start_y = world.maxy - TRANSITIONEDGE - 2
 			heading = SOUTH
-		
+
 	else if(heading == GLOB.ccw_dir[target_dir])
 		if(target_fore_dir == NORTH)
 			start_x = world.maxx - TRANSITIONEDGE - 2
@@ -249,23 +245,23 @@
 		else if(target_fore_dir == WEST)
 			start_y = world.maxy - TRANSITIONEDGE - 2
 			heading = SOUTH
-		else 
+		else
 			start_y = TRANSITIONEDGE + 2
 			heading = NORTH
-	
+
 	var/turf/start = locate(start_x, start_y, z_level)
 
 
 	if(overmap_missile.dangerous)
 		log_and_message_admins("A dangerous missile has entered z level [z_level] (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP</a>)")
-	
+
 
 	// if we enter into a dense place, just detonate immediately
 	if(start.contains_dense_objects())
 		forceMove(start)
 		detonate()
 		return
-	
+
 	forceMove(start)
 
 	// let missile equipment decide a target
