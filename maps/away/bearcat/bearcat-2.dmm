@@ -344,6 +344,9 @@
 /obj/item/weapon/storage/backpack/dufflebag/syndie,
 /obj/item/weapon/storage/box/ammo/shotgunshells,
 /obj/item/weapon/handcuffs,
+/obj/item/device/radio/intercom{
+	pixel_y = 32
+	},
 /turf/simulated/floor/wood,
 /area/ship/scrap/command/captain)
 "aL" = (
@@ -522,15 +525,11 @@
 /turf/simulated/floor/tiled/dark/usedup,
 /area/ship/scrap/command/hallway)
 "ba" = (
-/obj/item/device/radio/intercom{
-	pixel_x = -32
-	},
 /obj/item/weapon/gun/projectile/shotgun/pump/combat{
 	desc = "When words don't strike hard enough.";
 	name = "Solid Argument"
 	},
-/obj/structure/window/reinforced/full,
-/obj/structure/table/marble,
+/obj/structure/displaycase,
 /turf/simulated/floor/wood,
 /area/ship/scrap/command/captain)
 "bb" = (
@@ -1451,11 +1450,6 @@
 /obj/machinery/computer/cryopod,
 /turf/simulated/wall,
 /area/ship/scrap/crew/cryo)
-"cE" = (
-/obj/effect/wallframe_spawn/reinforced,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/shuttle/black,
-/area/ship/scrap/bearcat_shuttle)
 "cF" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -1956,7 +1950,7 @@
 /area/ship/scrap/crew/saloon)
 "dq" = (
 /obj/machinery/shipsensors,
-/turf/simulated/floor/shuttle/black,
+/turf/simulated/floor/usedup,
 /area/ship/scrap/bearcat_shuttle)
 "dr" = (
 /obj/machinery/disposal,
@@ -2645,7 +2639,7 @@
 "ey" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
-/turf/space,
+/turf/simulated/floor/usedup,
 /area/ship/scrap/bearcat_shuttle)
 "ez" = (
 /obj/effect/wallframe_spawn/reinforced,
@@ -6100,13 +6094,6 @@
 /obj/effect/paint/brown,
 /turf/simulated/wall/r_wall/hull,
 /area/ship/scrap/bearcat_shuttle)
-"ks" = (
-/obj/machinery/atmospherics/unary/engine{
-	dir = 1;
-	icon_state = "nozzle"
-	},
-/turf/simulated/floor/shuttle/black,
-/area/ship/scrap/bearcat_shuttle)
 "kt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -6237,14 +6224,14 @@
 	pressure_checks_default = 1;
 	use_power = 1
 	},
-/turf/simulated/floor/shuttle/black,
+/turf/simulated/floor/usedup,
 /area/ship/scrap/bearcat_shuttle)
 "kH" = (
 /obj/machinery/atmospherics/unary/engine{
 	dir = 1;
 	icon_state = "nozzle"
 	},
-/turf/space,
+/turf/simulated/floor/usedup,
 /area/ship/scrap/bearcat_shuttle)
 "kI" = (
 /obj/structure/disposalpipe/segment{
@@ -11773,8 +11760,8 @@ kR
 kR
 kR
 kR
-cE
-cE
+ey
+ey
 kf
 kp
 kf
@@ -11895,7 +11882,7 @@ kR
 kR
 kR
 kR
-cE
+ey
 hQ
 kl
 kB
@@ -12017,13 +12004,13 @@ kR
 kR
 kR
 kR
-cE
+ey
 kc
 kz
 dI
 iR
 ko
-ks
+kH
 kR
 kR
 kR
@@ -12139,13 +12126,13 @@ kR
 kR
 kR
 kR
-cE
+ey
 kd
 ki
 kk
 iR
 ko
-ks
+kH
 kR
 kR
 kR
@@ -12261,13 +12248,13 @@ kR
 kR
 kR
 kR
-cE
+ey
 ke
 ky
 dJ
 kj
 kD
-ks
+kH
 kR
 kR
 xU

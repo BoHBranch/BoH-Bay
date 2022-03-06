@@ -325,3 +325,13 @@
 	matter = list(MATERIAL_STEEL = 600)
 	max_ammo = 7
 	multiple_sprites = 1
+
+/obj/item/ammo_magazine/nailgun
+	name = "nail cartridge"
+	desc = "A cartridge of nails for a nailgun."
+	icon_state = "nail_cartridge"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/nails
+	matter = list(MATERIAL_STEEL = 700)
+	caliber = CALIBER_NAILS
+	max_ammo = 100

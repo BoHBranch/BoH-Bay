@@ -223,3 +223,11 @@
 #define CULTURE_TAJARAN      "The Tajara"
 #define HOME_SYSTEM_TAJARAN  "Rarkajar"
 #define FACTION_TAJARAN      "Tajaran Government"
+
+//Xenophage cultures
+
+#define CULTURE_XENOPHAGE_D    "Xenophage Drone"
+#define CULTURE_XENOPHAGE_H    "Xenophage Hunter"
+#define CULTURE_XENOPHAGE_S    "Xenophage Sentinel"
+#define CULTURE_XENOPHAGE_Q    "Xenophage Queen"
+#define FACTION_XENOPHAGE      "Xenophage Hive"

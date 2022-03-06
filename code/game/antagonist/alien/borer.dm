@@ -1,6 +1,6 @@
-GLOBAL_DATUM_INIT(borers, /datum/antagonist/borer, new)
+GLOBAL_DATUM_INIT(borers, /datum/antagonist/xenos/borer, new)
 
-/datum/antagonist/borer
+/datum/antagonist/xenos/borer
 	id = MODE_BORER
 	role_text = "Cortical Borer"
 	role_text_plural = "Cortical Borers"
@@ -22,20 +22,17 @@ GLOBAL_DATUM_INIT(borers, /datum/antagonist/borer, new)
 	initial_spawn_req = 3
 	initial_spawn_target = 5
 
-	spawn_announcement_title = "Lifesign Alert"
-	spawn_announcement_delay = 5000
-
-/datum/antagonist/borer/get_extra_panel_options(var/datum/mind/player)
+/datum/antagonist/xenos/borer/get_extra_panel_options(var/datum/mind/player)
 	return "<a href='?src=\ref[src];move_to_spawn=\ref[player.current]'>\[put in host\]</a>"
 
-/datum/antagonist/borer/create_objectives(var/datum/mind/player)
+/datum/antagonist/xenosborer/create_objectives(var/datum/mind/player)
 	if(!..())
 		return
 	player.objectives += new /datum/objective/borer_survive()
 	player.objectives += new /datum/objective/borer_reproduce()
 	player.objectives += new /datum/objective/escape()
 
-/datum/antagonist/borer/place_mob(var/mob/living/mob)
+/datum/antagonist/xenos/borer/place_mob(var/mob/living/mob)
 	var/mob/living/simple_animal/borer/borer = mob
 	if(istype(borer))
 		var/mob/living/carbon/human/host
@@ -57,11 +54,3 @@ GLOBAL_DATUM_INIT(borers, /datum/antagonist/borer, new)
 				borer.host_brain.real_name = host.real_name
 				return
 	..() // Place them at a vent if they can't get a host.
-
-/datum/antagonist/borer/Initialize()
-	spawn_announcement = replacetext(GLOB.using_map.unidentified_lifesigns_message, "%STATION_NAME%", station_name())
-	spawn_announcement_sound = GLOB.using_map.lifesign_spawn_sound
-	..()
-
-/datum/antagonist/borer/attempt_random_spawn()
-	if(config.aliens_allowed) ..()

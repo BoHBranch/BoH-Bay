@@ -90,6 +90,19 @@
 	base_parry_chance = 15
 	w_class = ITEM_SIZE_SMALL
 
+/obj/item/weapon/material/knife/combat/improvised
+	name = "spiked crowbar"
+	desc = "A snapped crowbar with blade-like protrusions on all sides. Functions like an ill-advised knife."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "spiked_crowbar"
+	item_state = "crowbar"
+	max_force = 19
+	base_parry_chance = 19
+	w_class = ITEM_SIZE_NORMAL
+	melee_accuracy_bonus = -20
+	throwforce = 10
+	throw_range = 3
+
 //random stuff
 /obj/item/weapon/material/knife/hook
 	name = "meat hook"
