@@ -98,6 +98,14 @@
 /obj/item/weapon/material/twohanded/fireaxe/ishatchet()
 	return TRUE
 
+/obj/item/weapon/material/twohanded/fireaxe/improvised
+	icon_state = "scissorpipe0"
+	base_icon = "scissorpipe"
+	item_state = "metalbat"
+	name = "scissor pipe"
+	desc = "A bizarre construction: two blades mounted at the top of a pipe. Functions like an axe, but much more psychopathic."
+	max_force = 25 //I so wish I could make it a full 50 or 60, but alas.
+
 //spears, bay edition
 /obj/item/weapon/material/twohanded/spear
 	icon_state = "spearglass0"

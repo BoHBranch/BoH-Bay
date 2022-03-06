@@ -759,7 +759,8 @@
 /area/rawl/fore)
 "bx" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	id_tag = "rawl_main_pump_out_internal"
+	id_tag = "rawl_main_pump_out_internal";
+	frequency = 1331
 	},
 /turf/simulated/floor/plating,
 /area/rawl/fore)
@@ -1278,7 +1279,8 @@
 	pixel_x = -25
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	id_tag = "rawl_main_pump_out_internal"
+	id_tag = "rawl_main_pump_out_internal";
+	frequency = 1331
 	},
 /obj/structure/handrai{
 	dir = 4;
@@ -1303,7 +1305,8 @@
 	pixel_y = -24
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	id_tag = "rawl_main_pump_out_internal"
+	id_tag = "rawl_main_pump_out_internal";
+	frequency = 1331
 	},
 /obj/structure/handrai{
 	dir = 8;
