@@ -766,4 +766,4 @@
 		energy = ARMOR_ENERGY_SMALL, 
 		rad = ARMOR_RAD_SMALL
 		)
-	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE //I still want some heat protection but this should be better balanced(?)

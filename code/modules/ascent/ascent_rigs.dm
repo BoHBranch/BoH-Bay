@@ -494,22 +494,13 @@
 		/obj/item/rig_module/cooling_unit
 		)
 
-///Begin Ascent Tiro
+///Begin Ascent Tiro --------------------------------------------------------------------------------------------------
 /obj/item/weapon/rig/mantid/tiro
 	name = "tiro exosuit"
 	desc = "A reverse-engineered Mantid exosuit designed to be worn by a Humanoid. Often utilized by Ascent Tiros."
 	icon_state = "tiro_voidsuit"
 	item_state = null
 	suit_type = "retrofitted exosuit"
-	armor = list(
-		melee = ARMOR_MELEE_MAJOR,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = 1.2 * ARMOR_LASER_MAJOR,
-		energy = ARMOR_ENERGY_RESISTANT,
-		bomb = ARMOR_BOMB_RESISTANT,
-		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_SHIELDED
-	)
 	equipment_overlay_icon = 'icons/mob/onmob/onmob_rig_modules.dmi'
 	air_type =   /obj/item/weapon/tank/mantid/reactor/oxygen
 	cell_type =  /obj/item/weapon/cell/mantid
@@ -532,6 +523,7 @@
 		/obj/item/rig_module/cooling_unit
 		)
 	req_access = list(access_ascent)
+	mantid_caste = null //I THINK this will allow any species to wear the suit, but I'm uncertain. Will need to test further.
 
 /obj/item/clothing/head/helmet/space/rig/mantid/tiro
 	desc = "A sleek, insect-esque helmet designed for a Humanoid."
