@@ -563,11 +563,11 @@
 	sort_string = "JFAAE"
 
 /datum/design/circuit/engine
-	name = "ship target control console"
-	id = "shipweapons"
+	name = "ship engine control console"
+	id = "shipengine"
 	req_tech = list(TECH_DATA = 2, TECH_POWER = 2, TECH_ENGINEERING = 2)
-	build_path = /obj/item/weapon/stock_parts/circuitboard/missiles
-	sort_string = "JFAAG"
+	build_path = /obj/item/weapon/stock_parts/circuitboard/engine
+	sort_string = "JFAAF"
 
 /datum/design/circuit/shuttle
 	name = "basic shuttle console"
@@ -584,11 +584,11 @@
 	sort_string = "JFAAH"
 
 /datum/design/circuit/weapons
-	name = "ship sensor control console"
-	id = "sensors"
+	name = "ship target control console"
+	id = "shipweapons"
 	req_tech = list(TECH_DATA = 4)
-	build_path = /obj/item/weapon/stock_parts/circuitboard/sensors
-	sort_string = "JFAAE"
+	build_path = /obj/item/weapon/stock_parts/circuitboard/missiles
+	sort_string = "JFAAI"
 
 /datum/design/circuit/biogenerator
 	name = "biogenerator"
