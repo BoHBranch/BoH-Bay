@@ -114,8 +114,9 @@
 
 /obj/item/weapon/gun/projectile/automatic/merc_smg/hacked
 	name = "Nanotrasen C-20b"
-	desc = "The NanoTrasen C-20b is a lightweight and rapid firing SMG. This is an older model, capable of only firing in semi-automatic and three-round bursts. \
-	Additionally, it does not feature the auto-eject function of the more modern version. It appears, however, that this one has a hacked firing authorization pin."
+	desc = "The NanoTrasen C-20b is a lightweight and rapid firing SMG. Due to being an older model,it does not possess the capability of being fired in full auto \
+	instead only firing in semi-automatic and three-round bursts. Additionally, it does not feature the auto-eject function of the more modern version. \
+	It appears that this particular weapon has a hacked firing authorization pin."
 	auto_eject = 0
 
 /obj/item/weapon/gun/projectile/automatic/assault_rifle
@@ -160,8 +161,8 @@
 
 /obj/item/weapon/gun/projectile/automatic/sec_smg
 	name = "MA-Sword"
-	desc = "A modernised design based off of the older NanoTrasen made WT-550. This incorporates proper automatic fire, alongside better handling. \
-	Unlike the Pariah, its newer cousin, this does not have nearly the same rate of fire."
+	desc = "The Martian Armory Sword is a modernized version of the older WT-550 line of submachine guns produced by NanoTrasen. This incorporates proper automatic fire, alongside better handling. \
+	However, unlike its cousin, the Pariah, it does not possess nearly the same rate of fire."
 	icon = 'icons/obj/guns/sec_smg.dmi'
 	icon_state = "smg"
 	item_state = "wt550"

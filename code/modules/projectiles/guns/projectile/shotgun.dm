@@ -1,6 +1,6 @@
 /obj/item/weapon/gun/projectile/shotgun/pump
 	name = "MA-Envoy"
-	desc = "The mass-produced Martian Armoury Envoy is the favourite of police and security forces on many worlds for it's reliable action and generous capacity. Perfect for clearing hallways!"
+	desc = "The mass-produced Martian Armoury Envoy is well-liked by police and security forces on many worlds for it's reliable action and generous capacity. Perfect for clearing hallways!"
 	icon = 'icons/obj/guns/shotguns.dmi'
 	icon_state = "shotgun"
 	item_state = "shotgun"
