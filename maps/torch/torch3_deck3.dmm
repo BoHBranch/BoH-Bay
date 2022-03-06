@@ -2710,6 +2710,15 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "east bump";
+	pixel_x = 24
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/starboard)
 "fI" = (
@@ -7837,6 +7846,11 @@
 "pt" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/missiles/inside)
@@ -17583,20 +17597,6 @@
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
-"Jn" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/disposalpipe/segment{
-	dir = 2;
-	icon_state = "pipe-c"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles/storage)
 "Jo" = (
 /obj/machinery/atmospherics/binary/passive_gate/on{
 	dir = 4;
@@ -19297,7 +19297,7 @@
 	dir = 1
 	},
 /obj/machinery/camera/network/command{
-	c_tag = "Missile Magazine Upper"
+	c_tag = "Missile Magazine Upper Starboard"
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/command/gunnery/missiles/storage)
@@ -19350,6 +19350,10 @@
 /obj/machinery/light_switch{
 	pixel_x = 6;
 	pixel_y = -24
+	},
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles/storage)
@@ -23608,7 +23612,6 @@
 /turf/simulated/floor/wood/maple,
 /area/chapel/main)
 "ZY" = (
-/obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
@@ -23616,6 +23619,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles/storage)
 
@@ -44317,7 +44324,7 @@ XK
 Fs
 VJ
 pp
-Jn
+VJ
 ZY
 sI
 Qs
