@@ -104,3 +104,7 @@
 /area/ship/ascent/subdeck_gyne_quarters
 	name = "\improper Ascent Seedship - Gyne's Quarters"
 	icon_state = "ai"
+
+/area/ship/ascent/tiroarea
+	name = "\improper Ascent Seedship - Tiro Wing"
+	icon_state = "purple"

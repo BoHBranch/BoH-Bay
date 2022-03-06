@@ -403,6 +403,13 @@
 	jets.holder = null
 	jets.ion_trail.set_up(jets)
 
+/obj/item/rig_module/maneuvering_jets/tirowings
+	name = "tiro glider"
+	desc = "A highly advanced system of wing-like protrusions, made entirely from contained plasma. How it works is completely lost on you."
+	icon_state = "tirowings"
+	interface_name = "maneuvering wings"
+	interface_desc = "An inbuilt energy wing maneuvering system, fueled by suit atmosphere."
+
 /obj/item/rig_module/device/paperdispenser
 	name = "hardsuit paper dispenser"
 	desc = "Crisp sheets."

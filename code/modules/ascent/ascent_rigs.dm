@@ -230,6 +230,9 @@
 		list("glucose",             "glucose",             /datum/reagent/nutriment/glucose,  20)
 	)
 
+/obj/item/rig_module/chem_dispenser/nabber/tiro
+	name = "tiro chemical injector"
+
 // Rig definitions.
 /obj/item/weapon/rig/mantid/gyne
 	name = "gyne combat exosuit"
@@ -490,3 +493,87 @@
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/cooling_unit
 		)
+
+///Begin Ascent Tiro
+/obj/item/weapon/rig/mantid/tiro
+	name = "tiro exosuit"
+	desc = "A reverse-engineered Mantid exosuit designed to be worn by a Humanoid. Often utilized by Ascent Tiros."
+	icon_state = "tiro_voidsuit"
+	item_state = null
+	suit_type = "retrofitted exosuit"
+	armor = list(
+		melee = ARMOR_MELEE_MAJOR,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = 1.2 * ARMOR_LASER_MAJOR,
+		energy = ARMOR_ENERGY_RESISTANT,
+		bomb = ARMOR_BOMB_RESISTANT,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+	)
+	equipment_overlay_icon = 'icons/mob/onmob/onmob_rig_modules.dmi'
+	air_type =   /obj/item/weapon/tank/mantid/reactor/oxygen
+	cell_type =  /obj/item/weapon/cell/mantid
+	chest_type = /obj/item/clothing/suit/space/rig/mantid/tiro
+	helm_type =  /obj/item/clothing/head/helmet/space/rig/mantid/tiro
+	boot_type =  /obj/item/clothing/shoes/magboots/rig/mantid/tiro
+	glove_type = /obj/item/clothing/gloves/rig/mantid/tiro
+	update_visible_name = TRUE
+	initial_modules = list(
+		/obj/item/rig_module/vision/nvg,
+		/obj/item/rig_module/ai_container,
+		/obj/item/rig_module/electrowarfare_suite,
+		/obj/item/rig_module/chem_dispenser/mantid,
+		/obj/item/rig_module/device/multitool,
+		/obj/item/rig_module/device/cable_coil,
+		/obj/item/rig_module/device/welder,
+		/obj/item/rig_module/device/clustertool,
+		/obj/item/rig_module/mounted/plasmacutter,
+		/obj/item/rig_module/maneuvering_jets/tirowings,
+		/obj/item/rig_module/cooling_unit
+		)
+	req_access = list(access_ascent)
+
+/obj/item/clothing/head/helmet/space/rig/mantid/tiro
+	desc = "A sleek, insect-esque helmet designed for a Humanoid."
+	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/clothing/suit/space/rig/mantid/tiro
+	desc = "A Mantid exosuit designed for a Humanoid. Offers superb protection."
+	species_restricted = list(SPECIES_HUMAN)
+	allowed = list(
+		/obj/item/clustertool,
+		/obj/item/weapon/gun/energy/particle/small,
+		/obj/item/stack/medical/resin,
+		/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent,
+		/obj/item/device/flashlight, 
+		/obj/item/weapon/tank,
+		/obj/item/ammo_magazine,
+		/obj/item/ammo_casing,
+		/obj/item/weapon/handcuffs,
+		/obj/item/device/t_scanner,
+		/obj/item/weapon/rcd,
+		/obj/item/weapon/crowbar,
+		/obj/item/weapon/screwdriver,
+		/obj/item/weapon/weldingtool,
+		/obj/item/weapon/wirecutters, 
+		/obj/item/weapon/wrench, 
+		/obj/item/device/multitool,
+		/obj/item/device/radio, 
+		/obj/item/device/scanner/gas,
+		/obj/item/weapon/storage/briefcase/inflatable, 
+		/obj/item/weapon/melee/baton, 
+		/obj/item/weapon/gun,
+		/obj/item/weapon/storage/firstaid, 
+		/obj/item/weapon/reagent_containers/hypospray, 
+		/obj/item/roller, 
+		/obj/item/device/suit_cooling_unit, 
+		/obj/item/weapon/storage
+	)
+
+/obj/item/clothing/shoes/magboots/rig/mantid/tiro
+	desc = "Feels like you're stepping on a cloud."
+	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/clothing/gloves/rig/mantid/tiro
+	desc = "Highly advanced gloves that bind themselves around your fingers. Despite this, it feels as flexible as air."
+	species_restricted = list(SPECIES_HUMAN)

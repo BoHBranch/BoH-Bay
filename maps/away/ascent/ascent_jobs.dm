@@ -16,6 +16,7 @@
 		//datum/job/submap/ascent/control_mind,
 		/datum/job/submap/ascent/msq,
 		/datum/job/submap/ascent/msw,
+		/datum/job/submap/tiro
 	)
 	call_webhook = WEBHOOK_SUBMAP_LOADED_ASCENT
 
@@ -246,6 +247,45 @@
 					SKILL_MEDICAL = SKILL_BASIC)
 	requires_supervisor = "Ascent Gyne"
 
+/datum/job/submap/tiro //We do this snowflake style because otherwise the species throws a fit. DO NOT SUBTYPE THIS TO ASCENT!!!!
+	title = "Ascent Tiro"
+	supervisors = "the Khaarmani."
+	total_positions = 1
+	info = "You are an Ascent Tiro, servant to the independent Ascent vessel. How you ended up in this position is known only to you and the Khaarmani. Assist the Gyne and Queen in their duties - or, find a method of escape."
+	outfit_type = /decl/hierarchy/outfit/job/tiro
+	blacklisted_species = null
+	whitelisted_species = null
+	loadout_allowed = TRUE
+	skill_points = 50 //Just *about* the # for a Roboticst at default, counting their preset skills. We have no min-skill level for this role since anyone could be deemed "interesting".
+	min_skill = list()
+
+/*/datum/job/submap/tiro/is_position_available()   ///UNCOMMENT THIS WHEN TESTING IS DONE!!! UNCOMMENT THIS WHEN TESTING IS DONE!!! UNCOMMENT THIS WHEN TESTING IS DONE!!!
+	. = ..()
+	for(var/mob/M in GLOB.player_list)
+		if(!M.client || !M.mind || !M.mind.assigned_job)
+			continue
+		var/datum/job/submap/ascent/ascent_job = M.mind.assigned_job
+		if(istype(ascent_job) && ascent_job.owner == owner)
+			return TRUE
+	return FALSE*/
+
+/datum/job/submap/tiro/equip(var/mob/living/carbon/human/H)
+	..()
+	world.log << "!!! FUNCTION RAN !!!" //Testing to see if this is actually fucking doing anything. Remove when finished. Fuck this entire bloc I hate it so fucking much.
+	if(H.has_organ(BP_LUNGS))
+		qdel(H)
+		var/obj/item/organ/internal/lungs/tirolungs/imp = new
+		var/obj/item/organ/external/affected = H.get_organ(BP_LUNGS)
+		if(affected)
+			affected.implants += imp
+		to_chat(H, SPAN_DANGER("The Ascent have altered you to breathe both Oxygen and their own alien atmosphere."))
+	if(!H.has_organ(BP_SYSTEM_CONTROLLER))
+		var/obj/item/organ/internal/controller/imp = new
+		var/obj/item/organ/external/affected = H.get_organ(BP_SYSTEM_CONTROLLER)
+		if(affected)
+			affected.implants += imp
+		to_chat(H, SPAN_DANGER("The Ascent have linked you to their local neural network, affording you access aboard their vessel."))
+
 // Spawn points.
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship
 	name = "Ascent Gyne"
@@ -262,6 +302,9 @@
 
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship/queen
 	name = "Serpentid Queen"
+
+/obj/effect/submap_landmark/spawnpoint/ascent_seedship/tiro
+	name = "Ascent Tiro"
 
 /*
 /datum/job/submap/ascent/control_mind
