@@ -187,6 +187,15 @@
 	color = "#ff0000"
 	projectile_type = /obj/item/projectile/bullet/pistol/cap
 
+/obj/item/ammo_casing/nails
+	name = "nail"
+	desc = "A single forged nail. Pointy."
+	icon_state = "nail"
+	matter = list(MATERIAL_STEEL = 5)
+	leaves_residue = 0
+	caliber = CALIBER_NAILS
+	projectile_type	= /obj/item/projectile/bullet/nail
+
 // EMP ammo.
 /obj/item/ammo_casing/pistol/emp
 	name = "haywire round"

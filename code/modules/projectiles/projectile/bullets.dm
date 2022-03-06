@@ -261,6 +261,19 @@
 	damage = 1
 	embed = 0
 
+/obj/item/projectile/bullet/nail
+	name = "nail"
+	icon_state = "nail"
+	fire_sound = 'sound/weapons/genhit.ogg'
+	damage = 0.5
+	damage_type = BRUTE
+	damage_flags = DAM_BULLET | DAM_SHARP
+	nodamage = 0
+	embed = 1
+	shrapnel_chance_multiplier = 0.1
+	arterial_bleed_chance_multiplier = 0.1
+	muzzle_type = null
+
 /* Practice */
 
 /obj/item/projectile/bullet/pistol/practice
