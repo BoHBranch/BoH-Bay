@@ -29,3 +29,6 @@
 	desc = "A strange device which can process both oxygen and methyl bromide into breathable air."
 	icon_state = "oxybromine_lungs"
 	breath_type = list(GAS_METHYL_BROMIDE,GAS_OXYGEN)
+
+/obj/item/organ/internal/lungs/tirolungs/mechassist()
+	

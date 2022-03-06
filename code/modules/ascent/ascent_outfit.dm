@@ -105,6 +105,4 @@
 	r_ear = null
 	shoes = /obj/item/clothing/shoes/black
 	pda_type = null
-	pda_slot = 0
-	flags =    0
-	id_type =  /obj/item/weapon/card/id/ascent
+	id_type =  /obj/item/weapon/card/id/ascenttiro

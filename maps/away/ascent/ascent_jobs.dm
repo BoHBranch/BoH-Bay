@@ -269,22 +269,26 @@
 			return TRUE
 	return FALSE*/
 
-/datum/job/submap/tiro/equip(var/mob/living/carbon/human/H)
+/datum/job/submap/tiro/equip(var/mob/living/carbon/human/H, var/obj/item/organ/internal/lungs/O)
 	..()
 	world.log << "!!! FUNCTION RAN !!!" //Testing to see if this is actually fucking doing anything. Remove when finished. Fuck this entire bloc I hate it so fucking much.
-	if(H.has_organ(BP_LUNGS))
-		qdel(H)
-		var/obj/item/organ/internal/lungs/tirolungs/imp = new
-		var/obj/item/organ/external/affected = H.get_organ(BP_LUNGS)
-		if(affected)
-			affected.implants += imp
-		to_chat(H, SPAN_DANGER("The Ascent have altered you to breathe both Oxygen and their own alien atmosphere."))
-	if(!H.has_organ(BP_SYSTEM_CONTROLLER))
-		var/obj/item/organ/internal/controller/imp = new
-		var/obj/item/organ/external/affected = H.get_organ(BP_SYSTEM_CONTROLLER)
-		if(affected)
-			affected.implants += imp
+	if(H.has_organ(O))
+		qdel(O)
+		var/item = new /obj/item/organ/internal/lungs/tirolungs
+		item.Insert(H) //I have no idea what I'm doing.
+		to_chat(H, SPAN_DANGER("The Ascent have altered you to breathe both oxygen and their own alien atmosphere."))
+		world.log << "Tried to replace the lungs of an Ascent Tiro."
+
+/datum/job/submap/tiro/equip(var/mob/living/carbon/human/H, var/obj/item/organ/internal/controller/O) //Yes I'm splitting this into two procs because variables are weird and I don't understand them. This lets me reuse O.
+	..()
+	world.log << "!!! FUNCTION RAN 2 !!!"
+	if(!H.has_organ(O))
+		var/item = new /obj/item/organ/internal/controller/tiro
+		item.Insert(H)
 		to_chat(H, SPAN_DANGER("The Ascent have linked you to their local neural network, affording you access aboard their vessel."))
+		world.log << "Tried to install a controller implant into an Ascent Tiro."
+	else
+		return
 
 // Spawn points.
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship
