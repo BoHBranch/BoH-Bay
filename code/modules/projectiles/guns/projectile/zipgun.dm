@@ -121,6 +121,10 @@
 	bulk = GUN_BULK_RIFLE
 	jam_chance = 40
 
+	firemodes = list(
+		list(mode_name="semi auto", automatic = FALSE, fire_delay= 4, burst=1, burst_delay = 2, move_delay=0, one_hand_penalty=10, accuracy = 2, burst_accuracy=null, dispersion=null),
+	)
+
 /obj/item/weapon/gun/projectile/automatic/assault_rifle/improvised/on_update_icon()
 	..()
 	if(ammo_magazine)
