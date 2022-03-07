@@ -120,6 +120,16 @@
 
 	if(maintenance_hatch_open)
 		if(istype(I, /obj/item/missile_equipment))
+			if(istype(I, /obj/item/missile_equipment/payload))
+				for(var/obj/item/missile_equipment/payload/L in equipment)
+					to_chat(user, "\The [src] can only have one payload.")
+					return
+				
+			if(istype(I, /obj/item/missile_equipment/thruster))
+				for(var/obj/item/missile_equipment/thruster/T in equipment)
+					to_chat(user, "\The [src] can only have one thruster.")
+					return
+				
 			if(!user.unEquip(I, src))
 				return
 			equipment += I

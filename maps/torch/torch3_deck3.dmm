@@ -2773,7 +2773,12 @@
 	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/tiled/techfloor,
+/obj/machinery/conveyor/ammobelt{
+	dir = 1;
+	id = "ammobelt0";
+	name = "Loading Belt 1"
+	},
+/turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "fM" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -6731,23 +6736,6 @@
 	name = "missile launcher 1"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
-/area/command/gunnery/missiles/inside)
-"ns" = (
-/obj/machinery/shield_diffuser,
-/obj/machinery/door/blast/regular{
-	dir = 4;
-	id_tag = "kosmag_firing_doors";
-	name = "firing port"
-	},
-/obj/machinery/mass_driver{
-	icon_state = "mass_driver";
-	dir = 8
-	},
-/obj/machinery/mass_driver{
-	icon_state = "mass_driver";
-	dir = 8
-	},
-/turf/simulated/floor/airless,
 /area/command/gunnery/missiles/inside)
 "nt" = (
 /obj/effect/floor_decal/industrial/warning/corner,
@@ -42884,9 +42872,9 @@ aa
 aa
 aa
 ad
-ns
 QD
-ns
+QD
+QD
 ad
 aa
 aa
