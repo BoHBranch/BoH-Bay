@@ -3846,6 +3846,11 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
 /area/security/infantry)
+"hG" = (
+/obj/random/maintenance,
+/obj/structure/closet/crate/freezer/rations,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/foreport)
 "hH" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/monotile,
@@ -6765,6 +6770,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftport)
+"ne" = (
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/structure/closet/crate/freezer/rations,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/foreport)
 "ng" = (
 /obj/machinery/door/firedoor,
 /obj/effect/wallframe_spawn/reinforced/hull,
@@ -7108,6 +7119,11 @@
 "od" = (
 /turf/simulated/floor/tiled/techmaint,
 /area/maintenance/fourthdeck/aftstarboard)
+"oe" = (
+/obj/random/maintenance,
+/obj/structure/reagent_dispensers/beerkeg,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/foreport)
 "of" = (
 /obj/effect/floor_decal/corner/brown/half{
 	dir = 1;
@@ -7299,6 +7315,12 @@
 	},
 /turf/simulated/open,
 /area/quartermaster/hangar/top)
+"oX" = (
+/obj/random/trash,
+/obj/random/trash,
+/obj/structure/closet/crate/freezer/rations,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/foreport)
 "oZ" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 1;
@@ -8607,6 +8629,10 @@
 /obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftport)
+"sO" = (
+/obj/random/obstruction,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/foreport)
 "sQ" = (
 /obj/machinery/newscaster/security_unit{
 	pixel_x = -27
@@ -11618,6 +11644,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod2/station)
+"CL" = (
+/obj/random/maintenance,
+/obj/random/toy,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/foreport)
 "CM" = (
 /turf/simulated/wall,
 /area/hallway/primary/fourthdeck/aft)
@@ -11709,7 +11740,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "Dc" = (
-/turf/space,
+/turf/simulated/wall/prepainted,
 /area/maintenance/fourthdeck/foreport)
 "Dg" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -12221,6 +12252,11 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
+"Fs" = (
+/obj/random/maintenance,
+/obj/random/firstaid,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/foreport)
 "Fu" = (
 /obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled,
@@ -18071,6 +18107,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftport)
+"WP" = (
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/foreport)
 "WR" = (
 /obj/effect/floor_decal/corner/mauve/half{
 	dir = 1;
@@ -33574,9 +33613,9 @@ OX
 Db
 QV
 Dc
-Dc
-Dc
-Dc
+oX
+ne
+oe
 DT
 DT
 aa
@@ -33775,10 +33814,10 @@ TB
 OX
 Db
 QV
-Dc
-Dc
-Dc
-Dc
+sO
+WP
+WP
+WP
 DT
 DT
 aa
@@ -33978,9 +34017,9 @@ OX
 Db
 QV
 Dc
-Dc
-Dc
-Dc
+hG
+Fs
+CL
 DT
 DT
 aa
