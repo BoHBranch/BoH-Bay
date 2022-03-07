@@ -94,12 +94,11 @@
 
 /obj/item/weapon/gun/projectile/shotgun/pump/improvised
 	name = "cycler scattergun"
-	desc = "An improvised shotgun utilizing a crank mechanism to spin a revolving cylinder of shells. Can hold four shots, and is decently small as far as shotguns go."
+	desc = "An improvised shotgun utilizing a crank mechanism to spin a revolving cylinder of shells. Can hold four shots."
 	icon = 'icons/obj/guns/zipgun.dmi'
 	icon_state = "cycler"
 	item_state = "cycler"
 	max_shells = 4
-	w_class = ITEM_SIZE_NORMAL
 	force = 6
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	origin_tech = list(TECH_COMBAT = 1)
@@ -120,11 +119,7 @@
 	accuracy_power = 5
 	has_safety = FALSE
 	bulk = GUN_BULK_RIFLE
-
-	firemodes = list(
-		list(mode_name="semi auto", automatic = FALSE, fire_delay= 4, burst=1, burst_delay = 2, move_delay=0, one_hand_penalty=10, accuracy = 2, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", automatic = FALSE, fire_delay= 4, burst_delay = 2, burst=4 , one_hand_penalty=12, move_delay=2, accuracy = 1, burst_accuracy=list(0,-1,-1,-2,-2), dispersion=list(0.0, 0.6, 1.0)),
-		)
+	jam_chance = 40
 
 /obj/item/weapon/gun/projectile/automatic/assault_rifle/improvised/on_update_icon()
 	..()
