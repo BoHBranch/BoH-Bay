@@ -403,6 +403,14 @@
 	jets.holder = null
 	jets.ion_trail.set_up(jets)
 
+/obj/item/rig_module/maneuvering_jets/infantry
+
+	name = "heavy hardsuit thrusters"
+	desc = "A heavy-duty thruster system developed for the Sol Marine Corps."
+	icon_state = "infantry-jet"
+	suit_overlay_active = "infantry-jet_active"
+	suit_overlay_inactive = null //"infantry-jet_inactive"
+
 /obj/item/rig_module/device/paperdispenser
 	name = "hardsuit paper dispenser"
 	desc = "Crisp sheets."
