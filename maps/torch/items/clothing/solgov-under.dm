@@ -1,8 +1,8 @@
 /obj/item/clothing/under/solgov
 	name = "master solgov uniform"
 	desc = "You shouldn't be seeing this."
-	icon = 'maps/torch/icons/obj/obj_under_solgov.dmi'
-	item_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_under_solgov.dmi')
+	icon = 'modular_boh/icon/obj/obj_under_solgov.dmi'
+	item_icons = list(slot_w_uniform_str = 'modular_boh/icon/mob/onmob_under_solgov.dmi')
 	siemens_coefficient = 0.8
 	gender_icons = 1
 
@@ -15,12 +15,12 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
 /obj/item/clothing/under/solgov/pt/expeditionary
-	name = "fleet pt uniform"
-	desc = "A baggy shirt bearing the seal of the SolGov Fleet, and some dorky looking blue shorts."
+	name = "expeditionary pt uniform"
+	desc = "A baggy shirt bearing the seal of the NT Surveyor Corps and some dorky looking blue shorts."
 	icon_state = "expeditionpt"
 	worn_state = "expeditionpt"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/pt/fleet
@@ -35,7 +35,7 @@
 	icon_state = "armypt"
 	worn_state = "armypt"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
 
 
@@ -48,7 +48,7 @@
 	item_state = "bl_suit"
 	worn_state = "blackutility"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 	armor = list(
 		melee = ARMOR_MELEE_MINOR,
@@ -56,26 +56,26 @@
 		)
 
 /obj/item/clothing/under/solgov/utility/expeditionary
-	name = "fleet utility uniform"
-	desc = "The utility uniform of the SolGov Fleet, made from biohazard resistant material. This one has silver trim."
+	name = "expeditionary uniform"
+	desc = "The utility uniform of the NT Surveyor Corps, made from biohazard resistant material. This one has silver trim."
 	icon_state = "blackutility_crew"
 	worn_state = "blackutility_crew"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/utility/expeditionary_skirt
-	name = "fleet skirt"
-	desc = "A black turtleneck and skirt, the elusive ladies' uniform of the SolGov Fleet."
+	name = "expeditionary skirt"
+	desc = "A black turtleneck and skirt, the elusive ladies' uniform of the NT Surveyor Corps."
 	icon_state = "blackservicefem"
 	worn_state = "blackservicefem"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/utility/expeditionary_skirt/officer
-	name = "fleet officer skirt"
-	desc = "A black turtleneck and skirt, the elusive ladies' uniform of the SolGov Fleet. This one has gold trim."
+	name = "expeditionary officer skirt"
+	desc = "A black turtleneck and skirt, the elusive ladies' uniform of the NT Surveyor Corps. This one has gold trim."
 	icon_state = "blackservicefem_com"
 	worn_state = "blackservicefem_com"
 
@@ -104,8 +104,8 @@
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/research)
 
 /obj/item/clothing/under/solgov/utility/expeditionary/officer
-	name = "fleet officer's uniform"
-	desc = "The utility uniform of the SolGov Fleet, made from biohazard resistant material. This one has gold trim."
+	name = "expeditionary officer's uniform"
+	desc = "The utility uniform of the NT Surveyor Corps, made from biohazard resistant material. This one has gold trim."
 	icon_state = "blackutility_com"
 	worn_state = "blackutility_com"
 
@@ -135,10 +135,13 @@
 
 /obj/item/clothing/under/solgov/utility/fleet
 	name = "fleet coveralls"
-	desc = "The utility uniform of the SolGov Fleet, made from an insulated material."
+	desc = "The utility uniform of the SCG Fleet, made from an insulated material."
 	icon_state = "navyutility"
 	item_state = "jensensuit"
 	worn_state = "navyutility"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
+		)
 
 /obj/item/clothing/under/solgov/utility/fleet/command
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/command/fleet)
@@ -166,45 +169,48 @@
 
 /obj/item/clothing/under/solgov/utility/fleet/polopants
 	name = "fleet polo and pants"
-	desc = "An alternative utility uniform of the SolGov Fleet, specially designed for engineering staff. The pants sports some yellow reflective stripes, and have knee pads."
+	desc = "An alternative utility uniform of the SCG Fleet, specially designed for engineering staff. The pants sports some yellow reflective stripes, and have knee pads."
 	icon_state = "navypolopants"
 	worn_state = "navypolopants"
 
 /obj/item/clothing/under/solgov/utility/fleet/polopants/command
-	desc = "An alternative utility uniform of the SolGov Fleet. The pants have knee pads."
+	desc = "An alternative utility uniform of the SCG Fleet. The pants have knee pads."
 	icon_state = "navypolopantsnostripe"
 	worn_state = "navypolopantscom"
 
 /obj/item/clothing/under/solgov/utility/fleet/polopants/security
-	desc = "An alternative utility uniform of the SolGov Fleet. The pants have knee pads."
+	desc = "An alternative utility uniform of the SCG Fleet. The pants have knee pads."
 	icon_state = "navypolopantsnostripe"
 	worn_state = "navypolopantssec"
 
 /obj/item/clothing/under/solgov/utility/fleet/polopants/medical
-	desc = "An alternative utility uniform of the SolGov Fleet, specially designed for medics and doctors. The pants have knee pads."
+	desc = "An alternative utility uniform of the SCG Fleet, specially designed for medics and doctors. The pants have knee pads."
 	icon_state = "navypolopantsnostripe"
 	worn_state = "navypolopantsmed"
 
 /obj/item/clothing/under/solgov/utility/fleet/polopants/supply
-	desc = "An alternative utility uniform of the SolGov Fleet. The pants have knee pads."
+	desc = "An alternative utility uniform of the SCG Fleet. The pants have knee pads."
 	icon_state = "navypolopantsnostripe"
 	worn_state = "navypolopantssup"
 
 /obj/item/clothing/under/solgov/utility/fleet/polopants/service
-	desc = "An alternative utility uniform of the SolGov Fleet. The pants have knee pads."
+	desc = "An alternative utility uniform of the SCG Fleet. The pants have knee pads."
 	icon_state = "navypolopantsnostripe"
 	worn_state = "navypolopantssrv"
 
 /obj/item/clothing/under/solgov/utility/fleet/polopants/exploration
-	desc = "An alternative utility uniform of the SolGov Fleet. The pants have knee pads."
+	desc = "An alternative utility uniform of the SCG Fleet. The pants have knee pads."
 	icon_state = "navypolopantsnostripe"
 	worn_state = "navypolopantsxpl"
 
 /obj/item/clothing/under/solgov/utility/fleet/combat
 	name = "fleet fatigues"
-	desc = "Alternative utility uniform of the SolGov Fleet, for when coveralls are impractical."
-	icon_state = "navycombat"
-	worn_state = "navycombat"
+	desc = "Alternative utility uniform of the SCG Fleet, for when coveralls are impractical."
+	icon_state = "greyutility"
+	worn_state = "greyutility"
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
+		)
 
 /obj/item/clothing/under/solgov/utility/fleet/combat/security
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/security/fleet)
@@ -220,15 +226,33 @@
 
 /obj/item/clothing/under/solgov/utility/fleet/combat/marine
 	name = "navy fatigues"
-	desc = "Alternative Marine utility uniform, made for ship use."
+	desc = "A navy SCG Marine utility uniform, made for ship use."
 	icon_state = "navycombat"
 	worn_state = "navycombat"
 
-/obj/item/clothing/under/solgov/utility/fleet/officer
-	name = "fleet officer's coveralls"
-	desc = "Alternative utility uniform of the SolGov Fleet, for officers."
-	icon_state = "navyutilityoff"
-	worn_state = "navyutilityoff"
+/obj/item/clothing/under/solgov/utility/fleet/combat/marine/command
+	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/command/fleet)
+
+/obj/item/clothing/under/solgov/utility/fleet/combat/marine/engineering
+	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/engineering/fleet)
+
+/obj/item/clothing/under/solgov/utility/fleet/combat/marine/security
+	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/security/fleet)
+
+/obj/item/clothing/under/solgov/utility/fleet/combat/marine/medical
+	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/medical/fleet)
+
+/obj/item/clothing/under/solgov/utility/fleet/combat/marine/medical/banded
+	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/medical/fleet, /obj/item/clothing/accessory/armband/medblue)
+
+/obj/item/clothing/under/solgov/utility/fleet/combat/marine/supply
+	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/supply/fleet)
+
+/obj/item/clothing/under/solgov/utility/fleet/combat/marine/service
+	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/service/fleet)
+
+/obj/item/clothing/under/solgov/utility/fleet/combat/marine/exploration
+	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/exploration/fleet)
 
 /obj/item/clothing/under/solgov/utility/fleet/officer/command
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/command/fleet)
@@ -243,13 +267,13 @@
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/medical/fleet)
 
 /obj/item/clothing/under/solgov/utility/army
-	name = "marine fatigues"
+	name = "green fatigues"
 	desc = "The utility uniform of the SCG Marine Corps, made from durable material."
 	icon_state = "greenutility"
 	item_state = "jensensuit"
 	worn_state = "greenutility"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/utility/army/command
@@ -300,12 +324,12 @@
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/solgov/service/expeditionary
-	name = "fleet service uniform"
-	desc = "The service uniform of the SolGov Fleet in silver trim."
+	name = "expeditionary service uniform"
+	desc = "The service uniform of the NT Surveyor Corps in silver trim."
 	icon_state = "greydress"
 	worn_state = "greydress"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/service/expeditionary/command
@@ -333,8 +357,8 @@
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/research/jumper)
 
 /obj/item/clothing/under/solgov/service/expeditionary/skirt
-	name = "fleet service skirt"
-	desc = "A feminine version of the SolGov Fleet service uniform in silver trim."
+	name = "expeditionary service skirt"
+	desc = "A feminine version of the NT Surveyor Corps service uniform in silver trim."
 	icon_state = "greydressfem"
 	worn_state = "greydressfem"
 
@@ -363,8 +387,8 @@
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/research/jumper)
 
 /obj/item/clothing/under/solgov/service/expeditionary/command
-	name = "fleet officer's service uniform"
-	desc = "The service uniform of the SolGov Fleet in gold trim."
+	name = "expeditionary officer's service uniform"
+	desc = "The service uniform of the NT Surveyor Corps in gold trim."
 	icon_state = "greydress_com"
 	worn_state = "greydress_com"
 
@@ -393,8 +417,8 @@
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/research/jumper)
 
 /obj/item/clothing/under/solgov/service/expeditionary/command/skirt
-	name = "fleet officer's service skirt"
-	desc = "A feminine version of the SolGov Fleet service uniform in gold trim."
+	name = "expeditionary officer's service skirt"
+	desc = "A feminine version of the NT Surveyor Corps service uniform in gold trim."
 	icon_state = "greydressfem_com"
 	worn_state = "greydressfem_com"
 
@@ -424,17 +448,59 @@
 
 /obj/item/clothing/under/solgov/service/fleet
 	name = "fleet service uniform"
-	desc = "The service uniform of the SolGov Fleet, made from immaculate white fabric."
+	desc = "The service uniform of the SCG Fleet, made from immaculate white fabric."
 	icon_state = "whiteservice"
 	item_state = "nursesuit"
 	worn_state = "whiteservice"
 	starting_accessories = list(/obj/item/clothing/accessory/navy)
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
+		)
 
 /obj/item/clothing/under/solgov/service/fleet/skirt
 	name = "fleet service skirt"
-	desc = "The service uniform skirt of the SolGov Fleet, made from immaculate white fabric."
+	desc = "The service uniform skirt of the SCG Fleet, made from immaculate white fabric."
 	icon_state = "whiteservicefem"
 	worn_state = "whiteservicefem"
+
+/obj/item/clothing/under/solgov/service/fleet/officer
+	name = "fleet officer service uniform"
+	desc = "The service uniform of the SCG Fleet, made from immaculate white fabric. This one has a silver trim, denoting it as a junior officer's."
+	icon_state = "whiteservice_off"
+	item_state = "nursesuit"
+	worn_state = "whiteservice_off"
+
+/obj/item/clothing/under/solgov/service/fleet/command
+	name = "fleet senior officer service uniform"
+	desc = "The service uniform of the SCG Fleet, made from immaculate white fabric. This one has a gold trim, denoting it as a senior officer's."
+	icon_state = "whiteservice_comm"
+	item_state = "nursesuit"
+	worn_state = "whiteservice_comm"
+
+/obj/item/clothing/under/solgov/service/fleet/flag
+	name = "fleet flag officer service uniform"
+	desc = "The service uniform of the SCG Fleet, made from immaculate white fabric. This one has a blood-red trim, denoting it as a flag officer's."
+	icon_state = "whiteservice_flag"
+	item_state = "nursesuit"
+	worn_state = "whiteservice_flag"
+
+/obj/item/clothing/under/solgov/service/fleet/skirt/officer
+	name = "fleet officer service skirt"
+	desc = "The service uniform skirt of the SCG Fleet, made from immaculate white fabric. This one has a silver trim, denoting it as a junior officer's."
+	icon_state = "whiteservicefem_off"
+	worn_state = "whiteservicefem_off"
+
+/obj/item/clothing/under/solgov/service/fleet/skirt/command
+	name = "fleet senior officer service skirt"
+	desc = "The service uniform skirt of the SCG Fleet, made from immaculate white fabric. This one has a gold trim, denoting it as a senior officer's."
+	icon_state = "whiteservicefem_comm"
+	worn_state = "whiteservicefem_comm"
+
+/obj/item/clothing/under/solgov/service/fleet/skirt/flag
+	name = "fleet flag officer service skirt"
+	desc = "The service uniform skirt of the SCG Fleet, made from immaculate white fabric. This one has a blood-red trim, denoting it as a flag officer's."
+	icon_state = "whiteservicefem_flag"
+	worn_state = "whiteservicefem_flag"
 
 /obj/item/clothing/under/solgov/service/army
 	name = "marine service uniform"
@@ -444,7 +510,7 @@
 	worn_state = "greenservice"
 	starting_accessories = list(/obj/item/clothing/accessory/brown)
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/service/army/skirt
@@ -453,7 +519,7 @@
 	icon_state = "greenservicefem"
 	worn_state = "greenservicefem"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/service/army/command
@@ -484,7 +550,7 @@
 	icon_state = "blackdress"
 	worn_state = "blackdress"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/mildress/army/skirt
@@ -493,7 +559,7 @@
 	icon_state = "blackdressfem"
 	worn_state = "blackdressfem"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/mildress/army/command
@@ -515,8 +581,8 @@
 	starting_accessories = list(/obj/item/clothing/accessory/blue_clip)
 
 /obj/item/clothing/under/solgov/utility/expeditionary/monkey
-	name = "adjusted fleet uniform"
-	desc = "The utility uniform of the SolGov Fleet, made from biohazard resistant material. This one has silver trim. It was also mangled to fit a monkey. This better be worth the NJP you'll get for making it."
-	species_restricted = list("Monkey")
+	name = "adjusted expeditionary uniform"
+	desc = "The utility uniform of the NT Surveyor Corp, made from biohazard resistant material. This one has silver trim. It was also mangled to fit a monkey. This better be worth the NJP you'll get for making it."
+	species_restricted = list(SPECIES_MONKEY)
 	sprite_sheets = list("Monkey" = 'icons/mob/species/monkey/onmob_under_monkey.dmi')
 	starting_accessories = list(/obj/item/clothing/accessory/solgov/rank/fleet/officer/wo1_monkey)
