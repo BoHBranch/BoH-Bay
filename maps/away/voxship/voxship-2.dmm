@@ -896,9 +896,6 @@
 	},
 /area/voxship/cbridge)
 "lg" = (
-/obj/structure/closet/secure_closet/chaplain{
-	req_access = list("ACCESS_VOXSHIP")
-	},
 /obj/item/weapon/storage/bible/kihikihi,
 /obj/item/weapon/storage/bible/kihikihi,
 /obj/item/weapon/storage/bible/kihikihi,
@@ -931,6 +928,10 @@
 	},
 /obj/effect/floor_decal/carpet/green{
 	dir = 5
+	},
+/obj/structure/closet/secure_closet{
+	name = "Chaplain's locker";
+	req_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/carpet/magenta{
 	initial_gas = list("nitrogen" = 102.684)
