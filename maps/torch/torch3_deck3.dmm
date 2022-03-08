@@ -15096,10 +15096,6 @@
 /obj/random/tank,
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
-"Ch" = (
-/obj/effect/shuttle_landmark/rawl/torch,
-/turf/space,
-/area/space)
 "Cj" = (
 /obj/machinery/light/spot{
 	dir = 4
@@ -20448,6 +20444,7 @@
 /area/crew_quarters/gym)
 "Rh" = (
 /obj/machinery/shield_diffuser,
+/obj/effect/shuttle_landmark/rawl/torch,
 /turf/simulated/floor/reinforced/airless,
 /area/space)
 "Ri" = (
@@ -29559,7 +29556,7 @@ aa
 aa
 aa
 aa
-Ch
+aa
 aa
 aa
 aa

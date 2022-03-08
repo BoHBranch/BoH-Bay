@@ -14169,6 +14169,7 @@
 	pixel_y = -19;
 	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"))
 	},
+/obj/effect/shuttle_landmark/rawl/torchdock,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "LG" = (
@@ -14862,10 +14863,6 @@
 /obj/item/device/flashlight/lamp/green,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
-"NF" = (
-/obj/effect/shuttle_landmark/rawl/torchdock,
-/turf/space,
-/area/space)
 "NG" = (
 /obj/machinery/computer/modular/preset/civilian,
 /obj/machinery/alarm{
@@ -26622,7 +26619,7 @@ aa
 aa
 aa
 aa
-NF
+aa
 aa
 aa
 aa
