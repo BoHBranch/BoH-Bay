@@ -6,6 +6,8 @@
 /obj/item/missile_equipment/payload/explosive/on_trigger(var/atom/triggerer)
 	if(istype(triggerer, /obj/effect/shield))
 		explosion(get_turf(src), 1, 2, 3, 4)
+		var/obj/effect/shield/S = triggerer
+		S.take_damage(1000)
 	else
 		explosion(get_turf(src), 3, 6, 8, 4)
 	

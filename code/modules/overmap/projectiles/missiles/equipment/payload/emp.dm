@@ -5,6 +5,6 @@
 	icon_state = "ion"
 
 /obj/item/missile_equipment/payload/emp/on_trigger()
-	empulse(get_turf(src), rand(4,5), rand(6,7))
+	empulse(get_turf(src), rand(6,8), rand(8,10))
 
 	..()

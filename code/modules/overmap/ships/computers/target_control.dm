@@ -47,10 +47,17 @@
 	data["planet_y"] = linked.get_target(TARGET_PLANETCOORD)[2]
 	data["point_x"] = linked.get_target(TARGET_POINT)[1]
 	data["point_y"] = linked.get_target(TARGET_POINT)[2]
-	
+	data["target_ship"] = null
+	if(linked.get_target(TARGET_PLANET)[1])
+		data["target_planet"] = linked.get_target(TARGET_PLANET)[1].name
+	if(linked.get_target(TARGET_SHIP))
+		data["target_ship"] = linked.get_target(TARGET_SHIP).name
+	if(linked.get_target(TARGET_MISSILE))
+		data["target_missile"] = linked.get_target(TARGET_MISSILE).name
+
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
-		ui = new(user, src, ui_key, "target.tmpl", "[linked.name] Helm Control", 565, 545)
+		ui = new(user, src, ui_key, "target.tmpl", "[linked.name] Target Control", 565, 545)
 		ui.set_initial_data(data)
 		ui.open()
 		ui.set_auto_update(1)
@@ -65,19 +72,28 @@
 	if (href_list["ship_lock"])
 		var/obj/effect/overmap/O = locate(href_list["ship_lock"])
 		if(istype(O) && !QDELETED(O) && (O in view(7,linked)))
-			linked.set_target(TARGET_SHIP, O)
+			if(linked.set_target(TARGET_SHIP, O))
+				visible_message(SPAN_NOTICE("[src] states, 'TARGET LOCKED: [O.name]'"))
+			else
+				visible_message(SPAN_NOTICE("[src] states, 'TARGET LOCK FAILED'"))
 		return TOPIC_HANDLED
 		
 	if (href_list["missile_lock"])
 		var/obj/effect/overmap/O = locate(href_list["missile_lock"])
 		if(istype(O) && !QDELETED(O) && (O in view(7,linked)))
-			linked.set_target(TARGET_MISSILE, O)
+			if(linked.set_target(TARGET_MISSILE, O))
+				visible_message(SPAN_NOTICE("[src] states, 'MISSILE LOCKED: [O.name]'"))				
+			else
+				visible_message(SPAN_NOTICE("[src] states, 'MISSILE LOCK FAILED'"))
 		return TOPIC_HANDLED
 		
 	if (href_list["planet_lock"])
 		var/obj/effect/overmap/O = locate(href_list["planet_lock"])
 		if(istype(O) && !QDELETED(O) && (O in view(7,linked)))
-			linked.set_target(TARGET_PLANET, O, linked.get_target(TARGET_PLANET)[2], linked.get_target(TARGET_PLANET)[3])		
+			if(linked.set_target(TARGET_PLANET, O, linked.get_target(TARGET_PLANET)[2], linked.get_target(TARGET_PLANET)[3]))
+				visible_message(SPAN_NOTICE("[src] states, 'PLANET LOCKED: [O.name]'"))	
+			else
+				visible_message(SPAN_NOTICE("[src] states, 'PLANET LOCK FAILED'"))
 		return TOPIC_HANDLED
 	
 	if (href_list["set_planetx"])

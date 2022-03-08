@@ -69,13 +69,8 @@
 /obj/item/missile_equipment/thruster/point/on_touch_map_edge(var/obj/effect/overmap/projectile/P)
 	var/turf/turf_location = get_turf(src)
 	var/obj/effect/overmap/visitable/ship/ship = waypoint_sector(turf_location)
-	to_world("Going to [ship.get_target(TARGET_POINT)]")
 	target = locate(ship.get_target(TARGET_POINT)[1], ship.get_target(TARGET_POINT)[2], GLOB.using_map.overmap_z)
-	to_world("Obtained target - [target[0]], [target[1]]")
 	
-	
-
-
 /obj/item/missile_equipment/thruster/planet
 	name = "planetary missile booster"
 	desc = "The standard fare missile booster, but with planetary flight capabilities."
@@ -105,7 +100,7 @@
 
 	return null
 
-/obj/item/missile_equipment/thruster/planet/on_touch_map_edge(var/obj/effect/overmap/projectile/P) //TODO: FINISH THIS
+/obj/item/missile_equipment/thruster/planet/on_touch_map_edge(var/obj/effect/overmap/projectile/P) //TODO: THIS WILL FUCKING RUNTIME
 
 	var/turf/turf_location = get_turf(src)
 	var/obj/effect/overmap/visitable/ship/ship = waypoint_sector(turf_location)

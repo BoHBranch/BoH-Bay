@@ -11,8 +11,8 @@
 */
 
 /obj/structure/missile
-	name = "intergalactic missile"
-	desc = "big scary missile that boom boom the ship. go open an issue for having seen this."
+	name = "MK3 Universal Missile"
+	desc = "A development on the MK2, this missile frame allows various modular components to be installed that define what the missile can and cannot do. "
 	icon = 'icons/obj/bigmissile.dmi'
 	icon_state = "base"
 
@@ -28,7 +28,7 @@
 	var/entered_away = FALSE
 	var/list/equipment = list()
 	var/obj/effect/overmap/projectile/overmap_missile = null
-
+	var/lifetime = 60 SECONDS
 	var/obj/effect/overmap/origin = null
 
 /obj/structure/missile/proc/get_additional_info()
@@ -37,15 +37,7 @@
 		info += ("<li>" + E.name)
 	info += "</ul>"
 	return JOINTEXT(info)
-/*
-/obj/structure/missile/proc/update_bounds()
-	if(dir in list(EAST, WEST))
-		bound_width = 2 * world.icon_size
-		bound_height = world.icon_size
-	else
-		bound_width = world.icon_size
-		bound_height = 2 * world.icon_size
-*/
+
 /obj/structure/missile/Initialize()
 	. = ..()
 
@@ -53,7 +45,6 @@
 		var/path = equipment[i]
 		equipment[i] = new path(src)
 
-//	update_bounds()
 	update_icon()
 
 /obj/structure/missile/Destroy()
@@ -68,7 +59,6 @@
 
 /obj/structure/missile/Move()
 	. = ..()
-	//update_bounds()
 
 	// for some reason, touch_map_edge doesn't always trigger like it should
 	// this ensures that it does
@@ -79,9 +69,14 @@
 	..()
 	detonate(obstacle)
 
+/obj/structure/missile/proc/expire()
+	Destroy()
+
 // Move to the overmap until we encounter a new z
 /obj/structure/missile/touch_map_edge()
-
+	
+	addtimer(CALLBACK(src, .proc/expire), lifetime)
+	
 	//Missile destroyed if it fails to hit something
 	if(entered_away)
 		Destroy()
@@ -193,6 +188,7 @@
 // Figure out where to pop in and set the missile flying
 /obj/structure/missile/proc/enter_level(var/z_level, var/target_fore_dir, var/target_dir)
 
+
 	// prevent the missile from moving on the overmap
 	overmap_missile.set_moving(FALSE)
 	entered_away = TRUE
@@ -202,7 +198,7 @@
 
 	var/start_x = Floor(world.maxx / 2) + rand(-10, 10)
 	var/start_y = Floor(world.maxy / 2) + rand(-10, 10)
-
+	
 	if(heading == target_dir)
 		if(target_fore_dir == NORTH)
 			start_y = TRANSITIONEDGE + 2
@@ -220,10 +216,10 @@
 	else if(heading == GLOB.reverse_dir[target_dir])
 		if(target_fore_dir == NORTH)
 			start_y = world.maxy - TRANSITIONEDGE - 2
-			heading = NORTH
+			heading = SOUTH
 		else if(target_fore_dir == SOUTH)
 			start_y = TRANSITIONEDGE + 2
-			heading = SOUTH
+			heading = NORTH
 		else if(target_fore_dir == WEST)
 			start_x = TRANSITIONEDGE + 2
 			heading = EAST

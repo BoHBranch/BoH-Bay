@@ -9,15 +9,16 @@
 	var/moving = FALSE // is the missile moving on the overmap?
 	var/dangerous = FALSE
 	var/should_enter_zs = FALSE
-	
+
 /obj/effect/overmap/projectile/Initialize(var/maploading, var/sx, var/sy)
 	. = ..()
 	x = sx
 	y = sy
 	z = GLOB.using_map.overmap_z
-
+	name = "[actual_missile.origin.name]'s [actual_missile]" 
 	START_PROCESSING(SSobj, src)
 
+	
 /obj/effect/overmap/projectile/Destroy()
 	if(!QDELETED(actual_missile))
 		QDEL_NULL(actual_missile)
@@ -85,7 +86,7 @@
 	var/list/potential_levels
 	var/turf/T = get_turf(src)
 	for(var/obj/effect/overmap/visitable/O in T)
-		if(O == actual_missile.origin) // ATTENTION HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		if(O == actual_missile.origin) 
 			continue
 	
 	
