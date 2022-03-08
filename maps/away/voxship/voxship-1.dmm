@@ -415,7 +415,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "ex" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
@@ -603,7 +603,7 @@
 	dir = 1;
 	icon_state = "handrail"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "fH" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
@@ -957,7 +957,7 @@
 	dir = 1;
 	icon_state = "shuttle_chair_preview"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "hR" = (
 /obj/machinery/portable_atmospherics/canister/hydrogen,
@@ -1492,7 +1492,7 @@
 	dir = 1;
 	icon_state = "handrail"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "me" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -1731,7 +1731,7 @@
 	info = "<i>Look, who ever was flying this to drop it off, MUST have flown in to like 70 rocks on the way. Its SKREKING BUSTED, so till I fix it no combat shuttle till I fix it</i>";
 	name = "CE's note for you skreks"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "om" = (
 /obj/machinery/vending/wallmed2{
@@ -1936,7 +1936,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "oU" = (
 /obj/structure/cable{
@@ -1957,7 +1957,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "pe" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -2011,7 +2011,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "pt" = (
 /obj/machinery/door/blast/regular{
@@ -2025,7 +2025,7 @@
 /area/space)
 "pH" = (
 /obj/machinery/hologram/holopad/longrange,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "pL" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -2755,7 +2755,7 @@
 	desc = "The plaque on this Ramsled reads; And so we the Auralis give onto thee the means to speedy flight, to deliver your murder into their hearts.";
 	name = "Ramsled"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "vh" = (
 /obj/structure/window/reinforced{
@@ -3591,9 +3591,6 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
-"Dn" = (
-/turf/simulated/floor/reinforced,
-/area/voxship/dock)
 "Dv" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
@@ -4289,7 +4286,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "IT" = (
 /obj/machinery/atmospherics/unary/tank/carbon_dioxide{
@@ -4666,7 +4663,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "Lv" = (
 /obj/effect/catwalk_plated,
@@ -5338,7 +5335,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "Rc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -5522,7 +5519,7 @@
 /area/voxship/ofd)
 "SM" = (
 /obj/structure/window/phoronreinforced,
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "SP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/red,
@@ -5713,7 +5710,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "UW" = (
 /obj/machinery/computer/ship/engines{
@@ -6020,7 +6017,7 @@
 	pixel_y = -22;
 	req_access = list("ACCESS_VOXSHIP")
 	},
-/turf/simulated/floor/reinforced,
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "XH" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
@@ -17983,7 +17980,7 @@ SM
 ev
 fw
 HX
-Dn
+ZW
 ZW
 qk
 ZW
@@ -18282,13 +18279,13 @@ ZW
 ZW
 tt
 AN
-Dn
+ZW
 HX
 Cf
 ZW
 hQ
 HX
-Dn
+ZW
 el
 sP
 ZW
@@ -18589,8 +18586,8 @@ HX
 HX
 Kt
 Ra
-Dn
-Dn
+ZW
+ZW
 XF
 HX
 aj
@@ -18741,7 +18738,7 @@ mh
 dt
 EO
 Lr
-Dn
+ZW
 pr
 Ht
 aj
