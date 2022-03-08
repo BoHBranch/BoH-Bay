@@ -8,6 +8,8 @@
 	economic_power = 5
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
+	alt_titles = list(
+		"Deck Chief")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -79,7 +81,7 @@
 	department_flag = SUP
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Deck Officer, the Corporate Liaison"
+	supervisors = "the Deck Officer"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	alt_titles = list(
@@ -93,8 +95,12 @@
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/research/prospector
-	allowed_branches = list(/datum/mil_branch/civilian)
-	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	allowed_branches = list(/datum/mil_branch/civilian, /datum/mil_branch/fleet)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor,
+								/datum/mil_rank/fleet/e3,
+								/datum/mil_rank/fleet/e4,
+								/datum/mil_rank/fleet/e5,
+								/datum/mil_rank/fleet/e6)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_mining, access_mining_office, access_mining_station,
 						access_expedition_shuttle, access_guppy, access_hangar, access_guppy_helm, access_solgov_crew, access_cargo, access_eva)
