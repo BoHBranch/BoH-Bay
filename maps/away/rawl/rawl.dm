@@ -8,6 +8,7 @@
 	description = "Unathi Poacher Ship."
 	suffixes = list("rawl/rawl.dmm")
 	area_usage_test_exempted_root_areas = list(/area/ship/rawl/)
+	area_coherency_test_exempt_areas = list(/area/ship/rawl/wreck)
 	cost = 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/rawl_ship)
 
