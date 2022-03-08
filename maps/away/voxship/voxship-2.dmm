@@ -7,8 +7,12 @@
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/hydro)
 "ag" = (
-/obj/machinery/portable_atmospherics/powered/scrubber,
-/turf/simulated/floor/plating/vox,
+/obj/effect/floor_decal/carpet/green{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
 /area/voxship/cbridge)
 "ah" = (
 /obj/machinery/seed_extractor,
@@ -39,6 +43,16 @@
 	initial_gas = list("nitrogen" = 101)
 	},
 /area/voxship/ship_mid)
+"az" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/dorms)
 "aN" = (
 /obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled/techmaint/vox,
@@ -68,6 +82,12 @@
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/med)
+"bi" = (
+/mob/living/bot/cleanbot{
+	req_access = list(list("ACCESS_VOXSHIP"))
+	},
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
 "bq" = (
 /obj/machinery/computer/ship/sensors{
 	dir = 1;
@@ -99,7 +119,10 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/techmaint/vox,
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen" = 103)
+	},
 /area/voxship/cbridge)
 "cc" = (
 /obj/structure/closet/crate,
@@ -149,7 +172,10 @@
 "cY" = (
 /obj/item/weapon/reagent_containers/glass/bucket,
 /obj/item/weapon/mop,
-/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/weapon/reagent_containers/spray/cleaner{
+	desc = "BLAM!-brand non-foaming wall destroying agent!";
+	reagents_to_add = list(/datum/reagent/thermite = 250)
+	},
 /obj/item/weapon/storage/box/detergent,
 /turf/simulated/floor/plating/vox,
 /area/voxship/dorms)
@@ -158,6 +184,7 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/vox,
 /area/voxship/dorms)
 "dt" = (
@@ -197,6 +224,8 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
+/obj/item/clothing/glasses/hud/health/visor,
+/obj/item/clothing/glasses/eyepatch/hud/medical,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -205,6 +234,10 @@
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
+	},
+/obj/structure/hygiene/sink{
+	dir = 4;
+	pixel_x = 9
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/hydro)
@@ -259,7 +292,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/space,
+/turf/simulated/floor/plating/vox,
 /area/voxship/quills)
 "eR" = (
 /obj/structure/table/standard,
@@ -299,19 +332,25 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "fe" = (
-/obj/machinery/portable_atmospherics/canister/nitrogen,
-/turf/simulated/floor/plating/vox,
+/obj/effect/floor_decal/carpet/green,
+/obj/effect/floor_decal/carpet/green{
+	dir = 4
+	},
+/obj/effect/floor_decal/carpet/green{
+	dir = 6
+	},
+/obj/structure/table/woodentable_reinforced/mahogany,
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
 /area/voxship/cbridge)
 "fo" = (
-/obj/structure/table/standard,
-/obj/item/weapon/crowbar/brace_jack,
-/obj/item/weapon/airlock_brace,
-/obj/item/weapon/airlock_brace,
-/obj/item/weapon/airlock_brace,
-/obj/item/weapon/airlock_brace,
-/obj/item/weapon/airlock_brace,
-/obj/item/weapon/airlock_brace,
-/turf/simulated/floor/plating/vox,
+/obj/structure/bed/chair/wood/wings/mahogany{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
 /area/voxship/cbridge)
 "fz" = (
 /obj/structure/cable{
@@ -341,12 +380,14 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "fG" = (
-/obj/item/weapon/reagent_containers/glass/bucket,
-/obj/item/weapon/mop,
-/obj/item/weapon/reagent_containers/spray/cleaner,
-/obj/item/weapon/storage/box/detergent,
-/turf/simulated/floor/plating/vox,
-/area/voxship/cbridge)
+/obj/structure/table/standard,
+/obj/item/weapon/storage/bible/chakala,
+/obj/item/weapon/storage/bible/kihikihi,
+/obj/item/weapon/storage/bible/kritika,
+/turf/simulated/floor/wood/mahogany{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/quills)
 "fJ" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 8
@@ -562,6 +603,7 @@
 	pixel_x = -24;
 	req_access = list("ACCESS_VOXSHIP")
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "jd" = (
@@ -676,13 +718,14 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/space,
+/turf/simulated/floor/plating/vox,
 /area/voxship/quills)
 "jT" = (
 /obj/structure/bed,
 /obj/item/weapon/bedsheet/brown,
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/quill,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/random/plushie,
 /turf/simulated/floor/wood/mahogany{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -693,6 +736,23 @@
 	dir = 1
 	},
 /turf/simulated/floor/reinforced/vox,
+/area/voxship/cbridge)
+"ke" = (
+/obj/structure/bed/chair/wood/wings/mahogany{
+	dir = 8
+	},
+/obj/effect/floor_decal/carpet/green{
+	dir = 6
+	},
+/obj/effect/floor_decal/carpet/green{
+	dir = 1
+	},
+/obj/effect/floor_decal/carpet/green{
+	dir = 5
+	},
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
 /area/voxship/cbridge)
 "kj" = (
 /obj/structure/cable{
@@ -711,9 +771,17 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/dorms)
 "kx" = (
-/obj/machinery/power/port_gen/pacman/mrs,
-/obj/item/stack/material/tritium/ten,
-/turf/simulated/floor/plating/vox,
+/obj/structure/flora/pottedplant/unusual,
+/obj/effect/floor_decal/carpet/green,
+/obj/effect/floor_decal/carpet/green{
+	dir = 8
+	},
+/obj/effect/floor_decal/carpet/green{
+	dir = 10
+	},
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
 /area/voxship/cbridge)
 "kA" = (
 /obj/machinery/power/apc{
@@ -760,8 +828,10 @@
 	},
 /area/voxship/quills)
 "kU" = (
-/obj/machinery/floodlight,
-/turf/simulated/floor/plating/vox,
+/obj/effect/floor_decal/carpet/green,
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
 /area/voxship/cbridge)
 "kX" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -772,22 +842,52 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/hydro)
 "le" = (
-/obj/structure/table/standard,
-/obj/item/weapon/storage/briefcase/inflatable,
-/turf/simulated/floor/plating/vox,
+/obj/machinery/light,
+/obj/effect/floor_decal/carpet/green,
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
 /area/voxship/cbridge)
 "lg" = (
-/obj/structure/closet,
-/obj/item/clothing/mask/gas/vox,
-/obj/item/clothing/mask/gas/vox,
-/obj/item/clothing/mask/gas/vox,
-/obj/item/weapon/storage/box/detergent,
-/obj/item/weapon/storage/box/detergent,
-/obj/item/weapon/storage/box/detergent,
-/obj/item/weapon/tank/nitrogen,
-/obj/item/weapon/tank/nitrogen,
-/obj/item/weapon/tank/nitrogen,
-/turf/simulated/floor/plating/vox,
+/obj/structure/closet/secure_closet/chaplain{
+	req_access = list("ACCESS_VOXSHIP")
+	},
+/obj/item/weapon/storage/bible/kihikihi,
+/obj/item/weapon/storage/bible/kihikihi,
+/obj/item/weapon/storage/bible/kihikihi,
+/obj/item/weapon/storage/bible/kritika,
+/obj/item/weapon/storage/bible/kritika,
+/obj/item/weapon/storage/bible/kritika,
+/obj/item/weapon/storage/bible/chakala,
+/obj/item/weapon/storage/bible/chakala,
+/obj/item/weapon/storage/bible/chakala,
+/obj/item/device/flashlight/flare/glowstick/random,
+/obj/item/device/flashlight/flare/glowstick/random,
+/obj/item/device/flashlight/flare/glowstick/random,
+/obj/item/device/flashlight/flare/glowstick/random,
+/obj/item/weapon/flame/lighter/zippo/random,
+/obj/item/stack/material/wood/mahogany/twentyfive,
+/obj/item/stack/material/wood/mahogany/twentyfive,
+/obj/item/stack/material/wood/mahogany/twentyfive,
+/obj/item/stack/material/wood/mahogany/twentyfive,
+/obj/item/bodybag,
+/obj/item/bodybag,
+/obj/item/bodybag,
+/obj/item/bodybag,
+/obj/item/bodybag,
+/obj/item/weapon/nullrod,
+/obj/item/weapon/storage/candle_box/incense,
+/obj/item/clothing/suit/imperium_monk,
+/obj/effect/floor_decal/carpet/green,
+/obj/effect/floor_decal/carpet/green{
+	dir = 6
+	},
+/obj/effect/floor_decal/carpet/green{
+	dir = 5
+	},
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
 /area/voxship/cbridge)
 "lj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -836,6 +936,10 @@
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/armalis,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
+"lT" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/dorms)
 "lV" = (
 /obj/structure/table/rack/holorack,
 /obj/random/maintenance,
@@ -867,8 +971,7 @@
 /obj/item/clothing/suit/storage/toggle/labcoat,
 /obj/item/clothing/suit/storage/toggle/brown_jacket,
 /obj/item/clothing/head/cowboy_hat,
-/obj/item/device/synthesized_instrument/guitar/multi,
-/obj/item/device/synthesized_instrument/guitar,
+/obj/item/device/synthesized_instrument/synthesizer,
 /turf/simulated/floor/plating/vox,
 /area/voxship/dorms)
 "mF" = (
@@ -928,7 +1031,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/voxship/med)
 "nJ" = (
-/obj/structure/filingcabinet,
+/obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
 "nK" = (
@@ -1122,6 +1225,17 @@
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/dorms)
+"qk" = (
+/obj/structure/table/standard,
+/obj/item/weapon/crowbar/brace_jack,
+/obj/item/weapon/airlock_brace,
+/obj/item/weapon/airlock_brace,
+/obj/item/weapon/airlock_brace,
+/obj/item/weapon/airlock_brace,
+/obj/item/weapon/airlock_brace,
+/obj/item/weapon/airlock_brace,
+/turf/simulated/floor/plating/vox,
+/area/voxship/dorms)
 "qr" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/multi_tile/glass,
@@ -1137,6 +1251,17 @@
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/med)
+"qx" = (
+/obj/effect/decal/cleanable/fruit_smudge,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/hydro)
+"qA" = (
+/obj/machinery/vending/wallmed2,
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen" = 103)
+	},
+/area/voxship/ship_mid)
 "qE" = (
 /turf/simulated/wall/alienwall{
 	color = "#284840";
@@ -1248,6 +1373,21 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
+"sH" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/dorms)
 "sJ" = (
 /obj/machinery/light{
 	dir = 4;
@@ -1281,6 +1421,15 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating/vox,
 /area/voxship/ship_mid)
+"sW" = (
+/obj/machinery/vending/wallmed2{
+	dir = 1
+	},
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen" = 103)
+	},
+/area/voxship/med)
 "sX" = (
 /obj/machinery/door/airlock/ascent{
 	autoset_access = 0;
@@ -1288,6 +1437,11 @@
 	req_access = list("ACCESS_VOXSHIP")
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/cbridge)
 "ta" = (
@@ -1426,6 +1580,12 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/dorms)
+"vu" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/kafel_full{
+	initial_gas = list("nitrogen" = 101.23)
+	},
 /area/voxship/dorms)
 "vA" = (
 /obj/machinery/body_scanconsole{
@@ -1599,6 +1759,15 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
+"xg" = (
+/obj/structure/synthesized_instrument/synthesizer/piano,
+/obj/effect/floor_decal/carpet/green{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
+/area/voxship/cbridge)
 "xr" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -1633,6 +1802,9 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
+/obj/item/device/scanner/health,
+/obj/item/device/scanner/health,
+/obj/item/device/scanner/health,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -1663,9 +1835,19 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
 "yd" = (
-/obj/structure/closet/firecloset,
+/obj/structure/table/rack,
+/obj/item/weapon/storage/firstaid/adv{
+	pixel_x = 1
+	},
+/obj/item/weapon/storage/firstaid/adv{
+	pixel_x = 1
+	},
+/obj/item/weapon/storage/firstaid/combat,
+/obj/item/weapon/storage/firstaid/adv{
+	pixel_x = 1
+	},
 /turf/simulated/floor/plating/vox,
-/area/voxship/cbridge)
+/area/voxship/dorms)
 "ym" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor{
@@ -1780,6 +1962,7 @@
 	dir = 4
 	},
 /obj/structure/table/standard,
+/obj/item/weapon/spacecash/bundle/c500,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "zB" = (
@@ -1824,6 +2007,21 @@
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/med)
+"AA" = (
+/obj/effect/floor_decal/carpet/green{
+	dir = 1
+	},
+/obj/effect/floor_decal/carpet/green{
+	dir = 4
+	},
+/obj/effect/floor_decal/carpet/green{
+	dir = 5
+	},
+/obj/structure/table/woodentable_reinforced/mahogany,
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
+/area/voxship/cbridge)
 "AE" = (
 /obj/machinery/computer/telecomms/monitor{
 	dir = 4;
@@ -1865,11 +2063,6 @@
 /area/voxship/ship_mid)
 "Bi" = (
 /obj/structure/table/standard,
-/obj/item/weapon/circular_saw{
-	pixel_y = 8
-	},
-/obj/item/weapon/hemostat,
-/obj/item/weapon/scalpel,
 /obj/item/stack/medical/advanced/bruise_pack,
 /obj/item/weapon/storage/firstaid/surgery,
 /obj/item/weapon/scalpel/manager,
@@ -1890,6 +2083,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "BF" = (
@@ -1905,7 +2099,6 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "BM" = (
-/obj/structure/reagent_dispensers/watertank,
 /obj/machinery/power/apc{
 	dir = 8;
 	icon_state = "apc0";
@@ -1915,6 +2108,10 @@
 /obj/structure/cable{
 	d2 = 2;
 	icon_state = "0-2"
+	},
+/mob/living/bot/farmbot/premade{
+	name = "Old Jameski";
+	req_access = list(list("ACCESS_VOXSHIP"))
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/hydro)
@@ -1972,6 +2169,10 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/mob/living/bot/medbot{
+	req_access = list(list("ACCESS_VOXSHIP"));
+	name = "Vox healer"
+	},
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -1998,6 +2199,16 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/voxship/dorms)
+"CT" = (
+/obj/machinery/button/windowtint{
+	id_tag = "vox_church_room";
+	pixel_x = 9
+	},
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen" = 103)
+	},
+/area/voxship/cbridge)
 "CV" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -2058,6 +2269,10 @@
 /obj/structure/window/phoronreinforced,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
+"DS" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating/vox,
+/area/voxship/dorms)
 "Et" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -2169,6 +2384,7 @@
 /obj/item/weapon/disk/tech_disk,
 /obj/item/weapon/disk/tech_disk,
 /obj/item/weapon/disk/tech_disk,
+/obj/item/weapon/rig/vox/quill,
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
@@ -2249,11 +2465,6 @@
 /area/voxship/quills)
 "Go" = (
 /obj/structure/table/standard,
-/obj/item/weapon/circular_saw{
-	pixel_y = 8
-	},
-/obj/item/weapon/hemostat,
-/obj/item/weapon/scalpel,
 /obj/item/stack/medical/advanced/bruise_pack,
 /obj/item/weapon/storage/firstaid/surgery,
 /obj/item/weapon/scalpel/manager,
@@ -2280,6 +2491,15 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
+"Gw" = (
+/obj/machinery/vending/wallmed2{
+	dir = 1
+	},
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen" = 103)
+	},
 /area/voxship/ship_mid)
 "Gx" = (
 /obj/structure/cable{
@@ -2327,9 +2547,27 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
 "GF" = (
-/obj/random/vendor,
-/turf/simulated/floor/plating/vox,
+/obj/structure/flora/pottedplant/unusual,
+/obj/effect/floor_decal/carpet/green{
+	dir = 8
+	},
+/obj/effect/floor_decal/carpet/green{
+	dir = 1
+	},
+/obj/effect/floor_decal/carpet/green{
+	dir = 9
+	},
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
 /area/voxship/cbridge)
+"GK" = (
+/obj/structure/table/standard,
+/obj/item/pizzabox/meat,
+/turf/simulated/floor/tiled/white/usedup{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/med)
 "GQ" = (
 /obj/machinery/light{
 	dir = 8;
@@ -2413,6 +2651,18 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
+"Ii" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/white/usedup{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/med)
 "Ir" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -2485,6 +2735,39 @@
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/quills)
+"Jn" = (
+/obj/item/weapon/spacecash/bundle/c1000,
+/obj/item/weapon/spacecash/bundle/c1000,
+/obj/item/weapon/spacecash/bundle/c1000,
+/obj/item/weapon/spacecash/bundle/c1000,
+/obj/item/weapon/spacecash/bundle/c1000,
+/obj/item/weapon/spacecash/bundle/c1000,
+/obj/item/device/powersink,
+/obj/item/weapon/portable_destructive_analyzer,
+/obj/item/weapon/disk/secret_project/science{
+	req_access = newlist()
+	},
+/obj/item/documents{
+	desc = "A collection of blueprints and orders, These seemed to have been printed out directly from an Apex computer. The documents contain blueprints to a variety of vairous Solgov and NT built space vessels. The documents contains orders to Infiltrate and steal classified technology and to destrively analyze them."
+	},
+/obj/item/weapon/stock_parts/circuitboard/protolathe,
+/obj/item/weapon/stock_parts/circuitboard/circuit_imprinter,
+/obj/structure/closet/secure_closet/guncabinet{
+	req_access = list("ACCESS_VOXSHIP_CAPTAIN");
+	name = "Quills Project Locker"
+	},
+/obj/random/projectile,
+/obj/random/energy,
+/obj/item/weapon/gun/projectile/dartgun/vox/raider,
+/obj/item/weapon/reagent_containers/spray/cleaner{
+	desc = "BLAM!-brand non-foaming wall destroying agent!";
+	reagents_to_add = list(/datum/reagent/thermite = 250)
+	},
+/obj/random/energy,
+/turf/simulated/floor/wood/mahogany{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/quills)
 "Jp" = (
 /obj/machinery/light,
 /obj/machinery/alarm/vox{
@@ -2553,8 +2836,7 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
 "Kk" = (
-/obj/structure/table/standard,
-/obj/machinery/reagent_temperature/cooler,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -2610,7 +2892,6 @@
 	},
 /area/voxship/ship_mid)
 "Lk" = (
-/obj/machinery/sleeper,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -2626,16 +2907,21 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/machinery/sleeper{
+	base_chemicals = list("Inaprovaline" = /datum/reagent/inaprovaline, "Soporific" = /datum/reagent/soporific, "Paracetamol" = /datum/reagent/paracetamol, "Dylovene" = /datum/reagent/dylovene, "Ammonia" = /datum/reagent/ammonia)
+	},
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/med)
 "Lo" = (
-/obj/machinery/sleeper,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/sleeper{
+	base_chemicals = list("Inaprovaline" = /datum/reagent/inaprovaline, "Soporific" = /datum/reagent/soporific, "Paracetamol" = /datum/reagent/paracetamol, "Dylovene" = /datum/reagent/dylovene, "Ammonia" = /datum/reagent/ammonia)
 	},
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
@@ -2704,8 +2990,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/item/weapon/spacecash/bundle/c500,
-/obj/item/weapon/spacecash/bundle/c500,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 4;
@@ -2718,8 +3002,10 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
 "LL" = (
-/obj/item/weapon/stool/padded,
 /obj/structure/window/phoronreinforced,
+/obj/structure/bed/chair/shuttle/white{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -2773,8 +3059,16 @@
 	},
 /area/voxship/med)
 "Mn" = (
-/obj/structure/reagent_dispensers/watertank,
-/turf/simulated/floor/plating/vox,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/obj/effect/floor_decal/carpet/green{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
 /area/voxship/cbridge)
 "Mr" = (
 /obj/machinery/alarm/vox{
@@ -2841,12 +3135,28 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/reagent_temperature,
+/obj/machinery/reagent_temperature{
+	pixel_x = 8
+	},
 /obj/structure/table/standard,
+/obj/machinery/reagent_temperature/cooler{
+	pixel_x = -8
+	},
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/med)
+"Nt" = (
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/mob/living/simple_animal/familiar/minor_amaros{
+	name = "Amaros";
+	min_gas = list("nitrogen" = 1)
+	},
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
 "Nv" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -2880,7 +3190,9 @@
 	},
 /area/voxship/med)
 "NJ" = (
-/turf/simulated/floor/plating/vox,
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
 /area/voxship/cbridge)
 "NO" = (
 /turf/simulated/floor/tiled/white/usedup{
@@ -2932,6 +3244,22 @@
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/dorms)
+"Om" = (
+/obj/structure/table/standard,
+/obj/item/weapon/reagent_containers/syringe/antiviral,
+/obj/item/weapon/reagent_containers/syringe/antiviral,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/device/scanner/health,
+/turf/simulated/floor/tiled/white/usedup{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/med)
+"On" = (
+/obj/effect/decal/cleanable/flour,
+/turf/simulated/floor/tiled/kafel_full{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/ship_mid)
 "Oz" = (
 /obj/machinery/appliance/cooker/stove,
 /turf/simulated/floor/tiled/kafel_full{
@@ -2943,6 +3271,10 @@
 	dir = 2;
 	icon_state = "freezer"
 	},
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/med)
+"OC" = (
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/med)
 "OI" = (
@@ -2977,18 +3309,19 @@
 /turf/simulated/floor/airless,
 /area/voxship/cbridge)
 "Pf" = (
-/obj/structure/table/rack,
-/obj/item/weapon/storage/firstaid/adv{
-	pixel_x = 1
-	},
-/obj/item/weapon/storage/firstaid/adv{
-	pixel_x = 1
-	},
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/plating/vox,
+/obj/structure/bed/chair/wood/wings/mahogany{
+	dir = 8
+	},
+/obj/effect/floor_decal/carpet/green{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/magenta{
+	initial_gas = list("nitrogen" = 102.684)
+	},
 /area/voxship/cbridge)
 "Pi" = (
 /obj/structure/window/phoronreinforced{
@@ -3013,6 +3346,18 @@
 /obj/structure/table/rack{
 	dir = 8
 	},
+/obj/item/weapon/reagent_containers/spray/cleaner{
+	desc = "BLAM!-brand non-foaming wall destroying agent!";
+	reagents_to_add = list(/datum/reagent/thermite = 250)
+	},
+/obj/item/weapon/mop,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/auto_cpr,
+/obj/item/auto_cpr,
+/obj/item/bodybag/cryobag,
+/obj/item/bodybag/cryobag,
+/obj/item/weapon/reagent_containers/chem_disp_cartridge/acetone,
+/obj/item/weapon/reagent_containers/chem_disp_cartridge/carbon,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/med)
 "Pp" = (
@@ -3055,7 +3400,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/airless,
+/turf/simulated/floor/plating/vox,
 /area/voxship/quills)
 "PX" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -3253,29 +3598,9 @@
 	},
 /area/voxship/ship_mid)
 "St" = (
-/obj/structure/safe,
-/obj/item/weapon/spacecash/bundle/c1000,
-/obj/item/weapon/spacecash/bundle/c1000,
-/obj/item/weapon/spacecash/bundle/c1000,
-/obj/item/weapon/spacecash/bundle/c1000,
-/obj/item/weapon/spacecash/bundle/c1000,
-/obj/item/weapon/spacecash/bundle/c1000,
-/obj/item/weapon/implanter/loyalty,
-/obj/item/device/powersink,
-/obj/item/weapon/portable_destructive_analyzer,
-/obj/item/weapon/disk/secret_project/science{
-	req_access = newlist()
-	},
-/obj/item/documents{
-	desc = "A collection of blueprints and orders, These seemed to have been printed out directly from an Apex computer. The documents contain blueprints to a variety of vairous Solgov and NT built space vessels. The documents contains orders to Infiltrate and steal classified technology and to destrively analyze them."
-	},
-/obj/item/weapon/stock_parts/circuitboard/protolathe,
-/obj/item/weapon/stock_parts/circuitboard/circuit_imprinter,
-/obj/machinery/atmospherics/pipe/cap/visible,
-/turf/simulated/floor/wood/mahogany{
-	initial_gas = list("nitrogen" = 101.23)
-	},
-/area/voxship/quills)
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
 "SB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -3540,6 +3865,10 @@
 /area/voxship/dorms)
 "VY" = (
 /obj/machinery/light,
+/obj/machinery/robotics_fabricator,
+/obj/item/stack/material/plastic/fifty,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/glass/fifty,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -3558,13 +3887,12 @@
 	},
 /area/voxship/med)
 "Wi" = (
-/obj/structure/table/steel,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
-/obj/item/sticky_pad/random,
 /obj/structure/noticeboard{
 	pixel_y = 32
 	},
+/obj/machinery/power/port_gen/pacman/mrs,
+/obj/item/stack/material/tritium/ten,
+/obj/item/stack/material/tritium/ten,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
 "Wt" = (
@@ -3740,7 +4068,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/airless,
+/turf/simulated/floor/plating/vox,
 /area/voxship/quills)
 "Yg" = (
 /obj/structure/cable{
@@ -3806,9 +4134,11 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ship_mid)
 "Zi" = (
-/obj/item/weapon/stool/padded,
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/doc,
 /obj/structure/window/phoronreinforced,
+/obj/structure/bed/chair/shuttle/white{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -14107,7 +14437,7 @@ Xa
 Xa
 Xa
 Xa
-Xa
+CT
 Xa
 OZ
 OZ
@@ -14257,7 +14587,7 @@ hC
 Sh
 Xa
 GF
-NJ
+Mn
 Mn
 kx
 Xa
@@ -14408,8 +14738,8 @@ hC
 hC
 Sh
 Xa
-yd
-NJ
+ag
+AA
 fe
 kU
 Xa
@@ -14419,7 +14749,7 @@ AW
 EL
 OI
 PW
-St
+Jl
 OT
 Jl
 Gk
@@ -14563,7 +14893,7 @@ Xa
 ag
 NJ
 NJ
-NJ
+kU
 Xa
 OI
 kd
@@ -14573,7 +14903,7 @@ OI
 Ya
 Tc
 zo
-zo
+fG
 Gk
 jz
 Sh
@@ -14713,7 +15043,7 @@ hC
 Sh
 Xa
 Pf
-NJ
+fo
 fo
 le
 Xa
@@ -14864,10 +15194,10 @@ hC
 hC
 Sh
 Xa
-NJ
-NJ
-NJ
-NJ
+xg
+fo
+fo
+kU
 sX
 ri
 Jr
@@ -15016,9 +15346,9 @@ hC
 Sh
 bC
 Xa
+ke
 NJ
 NJ
-fG
 lg
 Xa
 ca
@@ -15029,7 +15359,7 @@ Vg
 jL
 Uy
 kA
-Jl
+Jn
 FJ
 PN
 bC
@@ -15631,10 +15961,10 @@ yW
 UF
 Pk
 NF
-uB
+St
 Gv
 tV
-Lh
+Gw
 au
 QJ
 tQ
@@ -16085,7 +16415,7 @@ Xl
 fM
 yW
 UF
-uB
+St
 XQ
 gJ
 XQ
@@ -16233,11 +16563,11 @@ bC
 bC
 qE
 yW
-Xl
+qx
 fM
 yW
 UF
-ao
+Nt
 XQ
 uB
 XQ
@@ -16391,9 +16721,9 @@ yW
 UF
 uB
 XQ
-uB
+St
 XQ
-uB
+St
 QV
 LK
 LK
@@ -16543,7 +16873,7 @@ yW
 UF
 dZ
 yv
-uB
+bi
 Gx
 KB
 Zb
@@ -17149,7 +17479,7 @@ uB
 hZ
 aN
 Lh
-uB
+St
 uB
 XQ
 aj
@@ -17458,7 +17788,7 @@ uB
 XQ
 aj
 Lo
-NO
+Kk
 vA
 kM
 bJ
@@ -17605,7 +17935,7 @@ Lh
 Lh
 Lh
 Lh
-Lh
+qA
 ao
 yc
 GW
@@ -17613,7 +17943,7 @@ LR
 iC
 Wt
 RJ
-Wc
+Om
 WV
 aj
 Sh
@@ -18068,7 +18398,7 @@ aj
 aj
 aj
 WO
-Ui
+Ii
 Wc
 WS
 aj
@@ -18214,12 +18544,12 @@ Qq
 nQ
 pg
 sS
-uB
+St
 XQ
 aj
 ML
 Rd
-NO
+GK
 Ui
 NO
 As
@@ -18513,7 +18843,7 @@ hC
 Sh
 Xb
 aV
-nQ
+On
 nQ
 Sq
 nQ
@@ -18523,7 +18853,7 @@ XQ
 aj
 Nq
 Qm
-Kk
+NO
 Ui
 NO
 VY
@@ -18829,7 +19159,7 @@ aj
 aj
 aj
 KX
-NO
+Kk
 EX
 aj
 bC
@@ -19275,7 +19605,7 @@ YO
 aX
 YO
 it
-it
+vu
 it
 YO
 zk
@@ -19735,11 +20065,11 @@ iV
 qr
 De
 De
-YX
+sH
 aj
 Pp
 tq
-tq
+OC
 tq
 ic
 ne
@@ -20038,9 +20368,9 @@ BI
 lP
 YO
 vL
-De
+lT
 YX
-aj
+sW
 aj
 aj
 aj
@@ -20803,10 +21133,10 @@ LJ
 fK
 ZA
 De
-cn
+az
 ZA
 JE
-De
+lT
 YO
 bC
 bC
@@ -21098,7 +21428,7 @@ bC
 YO
 cY
 tK
-tK
+DS
 tK
 qY
 De
@@ -21106,11 +21436,11 @@ De
 Bo
 fK
 ZA
-De
+lT
 cn
 ZA
 JE
-De
+lT
 YO
 bC
 bC
@@ -21401,7 +21731,7 @@ bC
 bC
 YO
 gw
-tK
+DS
 ku
 mu
 YO
@@ -21557,7 +21887,7 @@ tK
 kJ
 tK
 dk
-tK
+qk
 YO
 ZV
 IA
@@ -21709,7 +22039,7 @@ LH
 WM
 mx
 tK
-tK
+yd
 YO
 xc
 IG

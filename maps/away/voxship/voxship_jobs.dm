@@ -33,7 +33,7 @@
 
 /datum/job/submap/voxship_vox/doc
 	title = "Shard Biotechnician"
-	total_positions = 1
+	total_positions = 2
 	info = "Your sacred duty is to preserve the lives of your ship-band; \
 	save their stacks, stabilize wounded crew, replace missing components and ensure nobody messes with your patients or your workspace."
 	whitelisted_species = list(SPECIES_VOX)
@@ -187,12 +187,12 @@
 
 /obj/item/voxbox/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Medic"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/launcher/alien/slugsling,/obj/item/weapon/storage/firstaid/combat,/obj/item/clothing/glasses/hud/health/visor,/obj/item/device/scanner/health,/obj/item/weapon/storage/firstaid/adv)
-	options["Enforcer"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/energy/plasmastun/vox,/obj/item/weapon/gun/launcher/alien/spikethrower,/obj/item/weapon/storage/firstaid/adv,/obj/item/weapon/gun/projectile/automatic/machine_pistol,/obj/item/ammo_magazine/machine_pistol,/obj/item/ammo_magazine/machine_pistol,/obj/item/ammo_magazine/machine_pistol)
-	options["Controller"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/projectile/shotgun/pump,/obj/item/weapon/storage/box/ammo/shotgunammo/full,/obj/item/weapon/storage/box/ammo/shotgunammo/buckshot/full,/obj/item/weapon/gun/energy/sonic,/obj/item/weapon/storage/box/stinger,/obj/item/weapon/storage/firstaid/adv)
-	options["Stolen Marine Gear"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle,/obj/item/weapon/storage/firstaid/adv,/obj/item/ammo_magazine/mil_rifle,/obj/item/ammo_magazine/mil_rifle,/obj/item/ammo_magazine/mil_rifle,/obj/item/weapon/gun/energy/gun,/obj/item/weapon/storage/box/fragshells)
+	options["Medic gear"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/launcher/alien/slugsling,/obj/item/weapon/storage/firstaid/combat,/obj/item/clothing/glasses/hud/health/visor,/obj/item/device/scanner/health,/obj/item/weapon/storage/firstaid/adv)
+	options["Enforcer"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/launcher/alien/spikethrower,/obj/item/weapon/storage/firstaid/adv,/obj/item/weapon/gun/projectile/automatic/machine_pistol,/obj/item/ammo_magazine/machine_pistol,/obj/item/ammo_magazine/machine_pistol,/obj/item/ammo_magazine/machine_pistol,/obj/item/weapon/gun/projectile/automatic/machine_pistol,/obj/item/ammo_magazine/machine_pistol,/obj/item/ammo_magazine/machine_pistol,/obj/item/ammo_magazine/machine_pistol)
+	options["Shotgun"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/projectile/shotgun/pump,/obj/item/weapon/storage/box/ammo/shotgunammo/full,/obj/item/weapon/storage/box/ammo/shotgunammo/buckshot/full,/obj/item/weapon/gun/energy/sonic,/obj/item/weapon/storage/box/stinger,/obj/item/weapon/storage/firstaid/adv)
+	options["Z9 Gear"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle,/obj/item/weapon/storage/firstaid/adv,/obj/item/ammo_magazine/mil_rifle,/obj/item/ammo_magazine/mil_rifle,/obj/item/ammo_magazine/mil_rifle,/obj/item/weapon/gun/energy/gun,/obj/item/weapon/storage/box/fragshells)
 	options["Sniper"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/gun/energy/sniperrifle/vox,/obj/item/weapon/storage/firstaid/adv,/obj/item/device/binoculars,/obj/item/weapon/gun/projectile/revolver,/obj/item/ammo_magazine/speedloader/magnum,/obj/item/ammo_magazine/speedloader/magnum,/obj/item/ammo_magazine/speedloader/magnum)
-	options["Melee"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton,/obj/item/weapon/storage/firstaid/adv)
+	options["Melee gear"] = list(/obj/item/weapon/gun/energy/darkmatter,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,/obj/item/weapon/reagent_containers/hypospray/autoinjector/stim,/obj/item/weapon/reagent_containers/hypospray/autoinjector/kompoton,/obj/item/weapon/storage/firstaid/adv)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
@@ -202,16 +202,13 @@
 				to_chat(user, "You have chosen \the [AM]. Make sure to keep it safe.")
 		qdel(src)
 
-/obj/item/weapon/gun/energy/plasmastun/vox
-	desc = "The modified Hephaestus Industries MA21 Selkie is a weapon that uses a laser pulse to ionise the local atmosphere, creating a disorienting pulse of plasma and deafening shockwave as the wave expands. Without a local atmosphere to ionize, however, it becomes a very expensive paperweight. This model seems heavily modified, to use the power of biofuel."
-	self_recharge = 1
-	recharge_time = 20
 
 /obj/item/weapon/gun/energy/sniperrifle/vox
 	desc = "This is a modified Hephaestus Industries Baleful. The cell has been replaced by a vox variant, allowing it to self-charge. Sadly, this makes it lose its function to knock people out. It's a designated marksman rifle capable of shooting powerful ionized beams."
 	self_recharge = 1
-	recharge_time = 80
+	recharge_time = 60
 	projectile_type = /obj/item/projectile/beam/snipervox
+
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew
 	name = "Shard Acolyte"
