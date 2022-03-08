@@ -182,8 +182,8 @@
 /obj/item/attachable/unremoveable_stock
 	name = "stock" // change this because it'll be the only seeable thing playerfacing, wise.
 	desc = "If you see this, an admin spawned in an irremoveable stock or someone was dumb - MJP."
-	icon_state = "holosight"
-	attach_icon = "holosight_a"// And the icon, ofcourse.
+	icon_state = "tp19stock"
+	attach_icon = "tp19stock_a"// And the icon, ofcourse.
 	flags_attach_features = null // you can't remove this!
 	slot = "stock"
 
