@@ -45,6 +45,7 @@
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/e6
+		/datum/mil_rank/marine_corps/e7
 	)
 
 /datum/job/squad_lead
@@ -59,12 +60,11 @@
 	selection_color = "#557e38"
 	minimal_player_age = 12
 	economic_power = 7
-	skill_points = 24
+	skill_points = 26
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 						SKILL_EVA         = SKILL_ADEPT,
-						SKILL_PILOT       = SKILL_BASIC,
 						SKILL_COMBAT      = SKILL_ADEPT,
 						SKILL_WEAPONS     = SKILL_ADEPT)
 
