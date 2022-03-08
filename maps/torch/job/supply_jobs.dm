@@ -9,7 +9,7 @@
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	alt_titles = list(
-		"Quartermaster")
+		"Deck Chief")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -100,7 +100,7 @@
 								/datum/mil_rank/fleet/e3,
 								/datum/mil_rank/fleet/e4,
 								/datum/mil_rank/fleet/e5,
-                                                                /datum/mil_rank/fleet/e6)
+								/datum/mil_rank/fleet/e6)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_mining, access_mining_office, access_mining_station,
 						access_expedition_shuttle, access_guppy, access_hangar, access_guppy_helm, access_solgov_crew, access_cargo, access_eva)
