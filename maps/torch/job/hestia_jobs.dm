@@ -73,7 +73,7 @@
 						SKILL_EVA		  = SKILL_MAX)
 
 	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
-			            access_infcom, access_inftech, access_infmed, access_aquila, access_eva)
+			            access_infcom, access_inftech, access_infmed, access_aquila, access_eva, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
