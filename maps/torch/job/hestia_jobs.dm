@@ -44,7 +44,7 @@
 /datum/job/squad_lead
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
-		/datum/mil_rank/marine_corps/e6
+		/datum/mil_rank/marine_corps/e6,
 		/datum/mil_rank/marine_corps/e7
 	)
 
