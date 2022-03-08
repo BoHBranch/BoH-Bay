@@ -2248,7 +2248,8 @@
 	dir = 4
 	},
 /mob/living/bot/cleanbot{
-	req_access = list(list("ACCESS_VOXSHIP"))
+	req_access = list(list("ACCESS_VOXSHIP"));
+	botcard_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)

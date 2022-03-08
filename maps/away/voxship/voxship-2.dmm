@@ -2176,7 +2176,8 @@
 	},
 /mob/living/bot/medbot{
 	req_access = list(list("ACCESS_VOXSHIP"));
-	name = "Vox healer"
+	name = "Vox healer";
+	botcard_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
@@ -2799,7 +2800,8 @@
 /area/voxship/ship_mid)
 "KT" = (
 /mob/living/bot/cleanbot{
-	req_access = list(list("ACCESS_VOXSHIP"))
+	req_access = list(list("ACCESS_VOXSHIP"));
+	botcard_access = list("ACCESS_VOXSHIP")
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
