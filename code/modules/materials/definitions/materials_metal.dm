@@ -328,7 +328,7 @@
 // Adminspawn only, do not let anyone get this.
 /material/voxalloy
 	name = MATERIAL_VOX
-	display_name = "durable alloy"
+	display_name = "resinous alloy"
 	wall_name = "bulkhead"
 	stack_type = null
 	icon_colour = "#6c7364"

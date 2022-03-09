@@ -192,6 +192,7 @@
 	#include "../away/lar_maria/lar_maria.dm"
 	#include "../away/unishi/unishi.dm"
 	#include "../away/voxship/voxship.dm"
+	#include "../away/vox/_vox.dm"
 	#include "../away/skrellscoutship/skrellscoutship.dm"
 	#include "../away/rawl/rawl.dm"
 
