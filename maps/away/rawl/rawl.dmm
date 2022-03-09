@@ -613,12 +613,12 @@
 /obj/item/ammo_magazine/shotholder,
 /obj/item/ammo_magazine/shotholder,
 /obj/item/weapon/gun/projectile/shotgun/doublebarrel{
-	ammo_type = /obj/item/ammo_casing/shotgun/rawlnet
+	ammo_type = /obj/item/ammo_casing/shotgun/net
 	},
 /obj/item/weapon/pickaxe/silver,
 /obj/item/weapon/storage/ore,
-/obj/item/ammo_magazine/shotholder/rawlnet,
-/obj/item/ammo_magazine/shotholder/rawlnet,
+/obj/item/ammo_magazine/shotholder/net,
+/obj/item/ammo_magazine/shotholder/net,
 /turf/simulated/floor/tiled/dark,
 /area/ship/rawl/cargo)
 "bc" = (
