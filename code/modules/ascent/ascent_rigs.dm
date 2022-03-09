@@ -325,6 +325,7 @@
 	allowed = list(
 		/obj/item/clustertool,
 		/obj/item/weapon/gun/energy/particle/small,
+		/obj/item/weapon/gun/energy/particle/support,
 		/obj/item/weapon/weldingtool/electric/mantid,
 		/obj/item/device/multitool/mantid,
 		/obj/item/stack/medical/resin,
@@ -360,6 +361,7 @@
 	allowed = list(
 		/obj/item/clustertool,
 		/obj/item/weapon/gun/energy/particle/small,
+		/obj/item/weapon/gun/energy/particle/support,
 		/obj/item/weapon/weldingtool/electric/mantid,
 		/obj/item/device/multitool/mantid,
 		/obj/item/stack/medical/resin,
@@ -400,6 +402,7 @@
 	allowed = list(
 		/obj/item/clustertool,
 		/obj/item/weapon/gun/energy/particle/small,
+		/obj/item/weapon/gun/energy/particle/support,
 		/obj/item/weapon/weldingtool/electric/mantid,
 		/obj/item/device/multitool/mantid,
 		/obj/item/stack/medical/resin,

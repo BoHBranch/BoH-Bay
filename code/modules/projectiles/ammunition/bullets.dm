@@ -126,6 +126,13 @@
 	leaves_residue = 0
 	matter = list(MATERIAL_STEEL = 360, MATERIAL_GLASS = 720)
 
+/obj/item/ammo_casing/shotgun/net
+	name = "net shell"
+	desc = "A net shell."
+	icon_state = "netshell"
+	projectile_type = /obj/item/projectile/bullet/shotgun/beanbag/net
+	matter = list(MATERIAL_STEEL = 180)
+
 /obj/item/ammo_casing/shotgun/stunshell/emp_act(severity)
 	if(prob(100/severity)) BB = null
 	update_icon()

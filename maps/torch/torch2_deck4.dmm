@@ -115,10 +115,10 @@
 "ax" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor/southright{
+	autoset_access = 0;
 	dir = 8;
 	name = "Supply Desk";
-	req_access = list("ACCESS_CARGO");
-	autoset_access = 0
+	req_access = list("ACCESS_CARGO")
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/blast/shutters{
@@ -1490,10 +1490,6 @@
 /area/hallway/primary/fourthdeck/aft)
 "do" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
 /obj/effect/floor_decal/corner_techfloor_gray{
 	dir = 9
 	},
@@ -1501,6 +1497,10 @@
 	dir = 6
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/rig/infantry/equipped,
+/obj/item/weapon/rig/infantry/equipped,
+/obj/item/weapon/rig/infantry/equipped,
+/obj/item/weapon/rig/infantry/equipped,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/armory)
 "dp" = (
@@ -3732,6 +3732,7 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
+/obj/item/weapon/rig/infantry/sl/equipped,
 /turf/simulated/floor/tiled/monotile,
 /area/security/infantry/com)
 "hi" = (
@@ -6384,10 +6385,6 @@
 	dir = 4
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
-/obj/item/weapon/rig/military/infantry,
 /obj/effect/floor_decal/corner_techfloor_gray{
 	dir = 9
 	},
@@ -6395,6 +6392,9 @@
 	dir = 6
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/rig/infantry/equipped,
+/obj/item/weapon/rig/infantry/equipped,
+/obj/item/weapon/rig/infantry/equipped,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/security/infantry/armory)
 "lQ" = (
@@ -14169,6 +14169,7 @@
 	pixel_y = -19;
 	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"))
 	},
+/obj/effect/shuttle_landmark/rawl/torchdock,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "LG" = (
@@ -14862,10 +14863,6 @@
 /obj/item/device/flashlight/lamp/green,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
-"NF" = (
-/obj/effect/shuttle_landmark/rawl/torchdock,
-/turf/space,
-/area/space)
 "NG" = (
 /obj/machinery/computer/modular/preset/civilian,
 /obj/machinery/alarm{
@@ -26622,7 +26619,7 @@ aa
 aa
 aa
 aa
-NF
+aa
 aa
 aa
 aa

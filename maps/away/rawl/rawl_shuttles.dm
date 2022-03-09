@@ -21,14 +21,15 @@
 	range = 1
 	fuel_consumption = 7
 	shuttle_area = list(
-		/area/rawl/crew,
-		/area/rawl/fore,
-		/area/rawl/cargo,
-		/area/rawl/pipeworks
+		/area/ship/rawl/crew,
+		/area/ship/rawl/fore,
+		/area/ship/rawl/cargo,
+		/area/ship/rawl/pipeworks
 	)
 	skill_needed = SKILL_BASIC
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling
 	defer_initialisation = TRUE
+	flags = SHUTTLE_FLAGS_PROCESS
 	current_location = "nav_hangar_rawlship"
 	landmark_transition = "nav_transit_rawlship"
 	dock_target = "rawl_ship_dock"
@@ -39,19 +40,20 @@
 
 
 /obj/effect/shuttle_landmark/rawl/start
-	name = "North of asteroid"
+	name = "Jimmy's Fuel"
 	landmark_tag = "nav_hangar_rawlship"
+	docking_controller = "jimmysfuel_dock"
+	base_area = /area/ship/rawl/wreck
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/shuttle_landmark/rawl/torch
 	name = "SEV Torch IPV Rawl Fore Airlock"
 	landmark_tag = "nav_hangar_rawlship_torch"
-	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/shuttle_landmark/rawl/torchdock
 	name = "SEV Torch IPV Rawl Lower Fore Dock"
 	landmark_tag = "nav_hangar_rawlship_torchdock"
-	movable_flags = MOVABLE_FLAG_EFFECTMOVE
+	docking_controller = "nuke_shuttle_dock_airlock"
 
 /obj/effect/shuttle_landmark/transit/rawl
 	name = "In transit"

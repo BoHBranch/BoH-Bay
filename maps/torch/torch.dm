@@ -54,6 +54,7 @@
 	#include "infantry/outfits.dm"
 	#include "infantry/storage.dm"
 	#include "infantry/vending.dm"
+	#include "infantry/hardsuit.dm"
 
 	#include "items/cards_ids.dm"
 	#include "items/encryption_keys.dm"
