@@ -206,7 +206,7 @@
 	return FALSE
 
 /datum/species/xenos/drone
-	name = "Xenophage Drone"
+	name = SPECIES_XENO_DRONE
 	weeds_plasma_rate = 15
 	slowdown = -1
 
@@ -247,7 +247,7 @@
 
 /datum/species/xenos/hunter
 
-	name = "Xenophage Hunter"
+	name = SPECIES_XENO_HUNTER
 	weeds_plasma_rate = 5
 	slowdown = -3
 	total_health = 300
@@ -284,7 +284,7 @@
 	)
 
 /datum/species/xenos/sentinel
-	name = "Xenophage Sentinel"
+	name = SPECIES_XENO_SENTINEL
 	weeds_plasma_rate = 10
 	slowdown = -1
 	base_color = "#00284d"
@@ -320,7 +320,7 @@
 
 /datum/species/xenos/queen
 
-	name = "Xenophage Queen"
+	name = SPECIES_XENO_QUEEN
 	total_health = 500
 	weeds_heal_rate = 8
 	weeds_plasma_rate = 20
