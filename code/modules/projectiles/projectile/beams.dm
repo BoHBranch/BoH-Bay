@@ -68,7 +68,7 @@
 	name = "pulse"
 	icon_state = "u_laser"
 	fire_sound='sound/weapons/pulse.ogg'
-	damage = 15 //worse than the x-ray, except that most pulse weapons fire in burst.
+	damage = 20 //worse than the x-ray, but in burst.
 	armor_penetration = 20
 
 	muzzle_type = /obj/effect/projectile/laser/pulse/muzzle
@@ -76,11 +76,11 @@
 	impact_type = /obj/effect/projectile/laser/pulse/impact
 
 /obj/item/projectile/beam/pulse/mid
-	damage = 25
+	damage = 30
 	armor_penetration = 40
 
 /obj/item/projectile/beam/pulse/heavy
-	damage = 30
+	damage = 40
 	armor_penetration = 60
 
 /obj/item/projectile/beam/pulse/destroy
@@ -103,11 +103,11 @@
 
 /obj/item/projectile/beam/pulse/skrell/heavy
 	damage = 40
-	armor_penetration = 20
+	armor_penetration = 30
 
 /obj/item/projectile/beam/pulse/skrell/single
 	damage = 50
-	armor_penetration = 20
+	armor_penetration = 40
 
 /obj/item/projectile/beam/pulse/skrell/single/lance
 	distance_falloff = 0.50

@@ -31,7 +31,7 @@
 		/decl/emote/audible/lizard_bellow
 		)
 
-/datum/species/unathi
+/datum/species/unathi/yeosa
 	default_emotes = list(
 		/decl/emote/human/swish,
 		/decl/emote/human/wag,
