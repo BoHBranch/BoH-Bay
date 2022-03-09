@@ -138,7 +138,7 @@
 //If you think this code is shit? We wouldn't need it if torch files weren't seperately loaded.
 /obj/item/ammo_magazine/shotholder/rawlnet
 	name = "net shell holder"
-	ammo_type = /obj/item/ammo_casing/shotgun/net
+	ammo_type = /obj/item/ammo_casing/shotgun/rawlnet
 	matter = list(MATERIAL_STEEL = 720)
 	marking_color = COLOR_PALE_PURPLE_GRAY
 
@@ -146,7 +146,7 @@
 	name = "net shell"
 	desc = "A net shell."
 	icon_state = "netshell"
-	projectile_type = /obj/item/projectile/bullet/shotgun/beanbag/net
+	projectile_type = /obj/item/projectile/bullet/shotgun/beanbag/rawlnet
 	matter = list(MATERIAL_STEEL = 180)
 
 /obj/item/projectile/bullet/shotgun/beanbag/rawlnet
