@@ -558,7 +558,7 @@
 		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
-		/obj/item/rig_module/chem_dispenser/nabber,
+		/obj/item/rig_module/chem_dispenser/nabber/tiro,
 		/obj/item/rig_module/device/multitool,
 		/obj/item/rig_module/device/cable_coil,
 		/obj/item/rig_module/device/welder,
@@ -617,7 +617,7 @@
 
 /obj/item/weapon/rig/mantid/tiro/elite
 	name = "par exosuit"
-	desc = "The exosuit of a Gyne's Par, an esteemed Tiro who has earned their favor through efficiency and loyalty. Considered a guardian of sorts, their armor has few equals."
+	desc = "The exosuit of a Gyne's Par, an esteemed Tiro who has earned their favor through efficiency and loyalty. An armor of this quality has few equals."
 	icon_state = "par_voidsuit"
 	chest_type = /obj/item/clothing/suit/space/rig/mantid/tiro/elite
 	helm_type = /obj/item/clothing/head/helmet/space/rig/mantid/tiro/elite
@@ -636,7 +636,7 @@
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/chem_dispenser/combat,
-		/obj/item/rig_module/chem_dispenser/nabber,
+		/obj/item/rig_module/chem_dispenser/nabber/tiro,
 		/obj/item/rig_module/device/nanoblade/par,
 		/obj/item/rig_module/mounted/flechette_rifle,
 		/obj/item/rig_module/mounted/particle_rifle,
