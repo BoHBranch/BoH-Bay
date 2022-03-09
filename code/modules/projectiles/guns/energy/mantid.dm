@@ -1,3 +1,21 @@
+/datum/extension/mantidgun
+	base_type = /datum/extension/mantidgun
+
+/datum/extension/mantidgun/proc/check_held_user(var/mob/living/carbon/human/user, var/atom/movable/thing)
+	if(!istype(user))
+		return FALSE
+	if(user.species.get_bodytype(user) != SPECIES_MANTID_ALATE && user.species.get_bodytype(user) != SPECIES_MANTID_GYNE && user.species.get_bodytype(user) != SPECIES_NABBER && user.unEquip(thing))
+		to_chat(user, SPAN_WARNING("\The [thing] lets out a shock!"))
+		playsound(user, 'sound/effects/zapbeep.ogg', 50, 1)
+		return FALSE
+	return TRUE
+
+/obj/item/weapon/gun/special_check(var/mob/living/carbon/human/user)
+	. = ..()
+	if(!QDELETED(src) && src.loc == user && has_extension(src, /datum/extension/mantidgun))
+		var/datum/extension/mantidgun/mantidgun = get_extension(src, /datum/extension/mantidgun)
+		. = mantidgun.check_held_user(user, src)
+
 /obj/item/weapon/gun/energy/particle
 	name = "particle lance"
 	desc = "A long, thick-bodied energy rifle of some kind, clad in a curious indigo polymer and lit from within by Cherenkov radiation. The grip is clearly not designed for human hands."
@@ -25,6 +43,10 @@
 		list(mode_name="lethal - overcharged", burst=1, move_delay=12, projectile_type=/obj/item/projectile/beam/particleadv)
 		)
 	var/charge_state = "pr"
+
+/obj/item/weapon/gun/energy/particle/Initialize()
+	. = ..()
+	set_extension(src, /datum/extension/mantidgun)
 
 /obj/item/weapon/gun/energy/particle/small
 	name = "particle projector"
