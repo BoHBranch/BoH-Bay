@@ -3207,6 +3207,7 @@
 #include "code\modules\ventcrawl\ventcrawl_atmospherics.dm"
 #include "code\modules\ventcrawl\ventcrawl_multiz.dm"
 #include "code\modules\ventcrawl\ventcrawl_verb.dm"
+#include "code\modules\Vox2\vox_machines.dm"
 #include "code\modules\vueui\external.dm"
 #include "code\modules\vueui\ui.dm"
 #include "code\modules\vueui\var_monitor.dm"
