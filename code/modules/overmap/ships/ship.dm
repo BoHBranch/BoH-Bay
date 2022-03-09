@@ -326,7 +326,7 @@
 		coord_target_y = target_y
 		
 	if(target_type == TARGET_PLANET)
-		if(planet_target && check_target(target))
+		if(target && check_target(target))
 			planet_target = target
 			planet_x = target_x
 			planet_y = target_y

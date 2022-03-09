@@ -7,10 +7,10 @@
 	cooldown = 5
 
 	var/target
-	var/fuel = 60 // how many times can the engine do work until its out of fuel
+	var/fuel = 10 // how many times can the engine do work until its out of fuel
 	var/max_fuel = 100
 	var/speed = 0
-	var/min_speed = 50 // slightly misleading. this is the amount of ticks between each step, so higher min speed => slower initial speed
+	var/min_speed = 25 // slightly misleading. this is the amount of ticks between each step, so higher min speed => slower initial speed
 
 /obj/item/missile_equipment/thruster/do_overmap_work(var/obj/effect/overmap/projectile/P)
 	if(!..() || isnull(target) || !fuel)

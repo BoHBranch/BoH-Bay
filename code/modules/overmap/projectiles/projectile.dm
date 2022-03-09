@@ -15,7 +15,6 @@
 	x = sx
 	y = sy
 	z = GLOB.using_map.overmap_z
-	name = "[actual_missile.origin.name]'s [actual_missile]" 
 	START_PROCESSING(SSobj, src)
 
 	

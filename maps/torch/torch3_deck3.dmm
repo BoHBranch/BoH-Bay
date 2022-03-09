@@ -420,6 +420,7 @@
 /obj/machinery/door/airlock/munitions,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles)
 "bi" = (
@@ -8106,6 +8107,7 @@
 /obj/item/missile_equipment/autoarm,
 /obj/item/missile_equipment/autoarm,
 /obj/item/missile_equipment/autoarm,
+/obj/item/weapon/storage/belt/utility/full,
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles)
 "pR" = (
@@ -16756,7 +16758,7 @@
 	dir = 6;
 	icon_state = "techfloor_edges"
 	},
-/obj/structure/closet/toolcloset,
+/obj/structure/closet/crate/munitions/thruster,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/missiles/storage)
 "Hl" = (
@@ -17298,6 +17300,9 @@
 /area/command/gunnery/missiles)
 "II" = (
 /obj/machinery/door/airlock/munitions,
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/command/gunnery/missiles/storage)
 "IJ" = (
@@ -20948,6 +20953,16 @@
 	},
 /turf/simulated/floor/reinforced/hydrogen,
 /area/thruster/d3port)
+"Sz" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/munitions,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/dark,
+/area/command/gunnery/missiles)
 "SC" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -44695,7 +44710,7 @@ pt
 pu
 pv
 ai
-bF
+Sz
 bH
 dc
 bF

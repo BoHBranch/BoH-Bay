@@ -21,7 +21,7 @@
 	dir = WEST
 	does_spin = FALSE
 
-	var/overmap_name = "projectile"
+	var/overmap_name = "missile"
 
 	var/maintenance_hatch_open = FALSE
 	var/active = FALSE
@@ -92,13 +92,13 @@
 	if(!active)
 		Destroy()
 		return
-
+	
 	if(overmap_missile.dangerous)
 		log_and_message_admins("A dangerous missile has entered the overmap (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[overmap_missile.x];Y=[overmap_missile.y];Z=[overmap_missile.z]'>JMP</a>)")
 
 
 	origin = map_sectors["[z]"]
-
+	overmap_missile.SetName("[origin.name]'s [overmap_name]")
 	// Abort walk
 	walk(src, 0)
 	forceMove(overmap_missile)
@@ -165,8 +165,7 @@
 
 	overmap_missile = new /obj/effect/overmap/projectile(null, start_object.x, start_object.y)
 	overmap_missile.set_missile(src)
-	overmap_missile.SetName(overmap_name)
-
+	
 	for(var/obj/item/missile_equipment/E in equipment)
 		E.on_missile_activated(overmap_missile)
 
