@@ -253,7 +253,7 @@
 	total_positions = 1
 	info = "You are an Ascent Tiro, servant to the independent Ascent vessel. How you ended up in this position is known only to you and the Khaarmani. Assist the Gyne and Queen in their duties - or, find a method of escape."
 	outfit_type = /decl/hierarchy/outfit/job/tiro
-	blacklisted_species = null
+	blacklisted_species = list(SPECIES_VOXPARIAH, SPECIES_VOX, SPECIES_ADHERENT)
 	whitelisted_species = null
 	loadout_allowed = TRUE
 	skill_points = 50 //Just *about* the # for a Roboticst at default, counting their preset skills. We have no min-skill level for this role since anyone could be deemed "interesting".
@@ -269,26 +269,28 @@
 			return TRUE
 	return FALSE*/
 
-/datum/job/submap/tiro/equip(var/mob/living/carbon/human/H, var/obj/item/organ/internal/lungs/O)
+/datum/job/submap/tiro/equip(var/mob/living/carbon/human/H) //You have no FFFFUCKING idea how happy I am that this works now FUCK
 	..()
-	world.log << "!!! FUNCTION RAN !!!" //Testing to see if this is actually fucking doing anything. Remove when finished. Fuck this entire bloc I hate it so fucking much.
-	if(H.has_organ(O))
-		qdel(O)
-		var/item = new /obj/item/organ/internal/lungs/tirolungs
-		item.Insert(H) //I have no idea what I'm doing.
-		to_chat(H, SPAN_DANGER("The Ascent have altered you to breathe both oxygen and their own alien atmosphere."))
-		world.log << "Tried to replace the lungs of an Ascent Tiro."
+	qdel(H.internal_organs_by_name[BP_LUNGS]) //Delete the old lungs
+	H.internal_organs_by_name[BP_LUNGS] = new /obj/item/organ/internal/lungs/tirolungs //Install new ones
+	to_chat(H, SPAN_DANGER("The Ascent have altered you to breathe both oxygen and their own alien atmosphere. The air feels strange."))
 
-/datum/job/submap/tiro/equip(var/mob/living/carbon/human/H, var/obj/item/organ/internal/controller/O) //Yes I'm splitting this into two procs because variables are weird and I don't understand them. This lets me reuse O.
-	..()
-	world.log << "!!! FUNCTION RAN 2 !!!"
-	if(!H.has_organ(O))
-		var/item = new /obj/item/organ/internal/controller/tiro
-		item.Insert(H)
-		to_chat(H, SPAN_DANGER("The Ascent have linked you to their local neural network, affording you access aboard their vessel."))
-		world.log << "Tried to install a controller implant into an Ascent Tiro."
-	else
+	H.internal_organs_by_name[BP_SYSTEM_CONTROLLER] = new /obj/item/organ/internal/controller/tiro //Give them a snowflakey controller
+	to_chat(H, SPAN_OCCULT("You feel a faint, brief pain in your head. A connection to the Ascent has been installed into your body - allowing you access to their neural network."))
+	H.add_language(LANGUAGE_MANTID_BROADCAST) //Incase the controller fucks itself for some reason, we add the language forcibly.
+
+	H.verbs |= /mob/living/carbon/human/proc/identity_rename
+	to_chat(H, SPAN_NOTICE("You may wish to rename yourself as a Tiro. This can be done with the 'Rename Yourself' verb in the IC tab at the top right of the screen. This is not required."))
+
+/mob/living/carbon/human/proc/identity_rename() //Incase people would rather have a different name.
+	set name = "Rename Yourself"
+	set category = "IC"
+	set desc = "Abandon your old identity and adopt a new one."
+	var/new_name = sanitize(input("What is your new identity?", "Adopt a New Name") as text|null, MAX_NAME_LEN)
+	if(!new_name)
 		return
+	fully_replace_character_name("[new_name]") //With our old life forgotten, we rename ourselves in the image anew.
+	verbs -= /mob/living/carbon/human/proc/identity_rename
 
 // Spawn points.
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship

@@ -99,6 +99,8 @@
 /datum/language/mantid/worldnet/check_special_condition(var/mob/living/carbon/other)
 	if(istype(other, /mob/living/silicon/robot/flying/ascent))
 		return TRUE
-	if(istype(other) && (locate(/obj/item/organ/internal/controller) in other.internal_organs))
+	if(istype(other) && (locate(/obj/item/organ/internal/controller || /obj/item/organ/internal/controller/tiro) in other.internal_organs))
+		return TRUE
+	if(istype(other) && other.internal_organs_by_name[BP_SYSTEM_CONTROLLER])
 		return TRUE
 	return FALSE

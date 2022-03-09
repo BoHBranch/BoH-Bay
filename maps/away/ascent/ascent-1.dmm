@@ -1777,22 +1777,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
-"dQ" = (
-/obj/machinery/door/airlock/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_gyne_quarters)
 "dR" = (
 /obj/machinery/light/ascent{
 	dir = 8
@@ -2334,9 +2318,12 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "fm" = (
-/obj/structure/table/rack/dark,
+/obj/structure/table/rack/dark{
+	name = "gyne equipment rack"
+	},
 /obj/item/weapon/gun/energy/particle,
 /obj/item/device/personal_shield/mantid,
+/obj/item/weapon/rig/mantid/gyne,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "fn" = (
@@ -2555,15 +2542,24 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/window/brigdoor{
+	color = "#800080";
+	dir = 8;
+	req_access = list(access_ascentpar)
+	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "fG" = (
 /obj/structure/table/rack/dark,
-/obj/item/weapon/rig/mantid/gyne,
 /obj/machinery/power/apc/hyper/ascent/east,
 /obj/structure/cable/cyan{
 	icon_state = "0-8"
 	},
+/obj/item/weapon/rig/mantid/nabber/queen{
+	name = "queen equipment rack"
+	},
+/obj/item/device/personal_shield/mantid,
+/obj/item/weapon/cell/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "fH" = (
@@ -2606,10 +2602,12 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_armory)
 "fK" = (
-/obj/structure/table/rack/dark,
+/obj/structure/table/rack/dark{
+	name = "par equipment rack"
+	},
+/obj/item/weapon/gun/energy/particle/small/par,
+/obj/item/weapon/rig/mantid/tiro/elite,
 /obj/item/device/personal_shield/mantid,
-/obj/item/weapon/rig/mantid/nabber/queen,
-/obj/item/weapon/cell/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "fL" = (
@@ -2718,11 +2716,11 @@
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "gv" = (
-/obj/structure/curtain/medical,
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 9;
 	icon_state = "corner_white"
 	},
+/obj/structure/curtain/open/privacy,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "ic" = (
@@ -2776,10 +2774,7 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "lx" = (
-/obj/structure/iv_drip{
-	pixel_x = 12;
-	pixel_y = 11
-	},
+/obj/structure/iv_drip,
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
 	},
@@ -2837,6 +2832,7 @@
 /obj/structure/table/rack/dark,
 /obj/item/device/lightreplacer,
 /obj/item/device/robotanalyzer,
+/obj/item/weapon/tape_roll,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "ql" = (
@@ -2887,6 +2883,7 @@
 	pixel_x = -12;
 	pixel_y = -5
 	},
+/obj/item/weapon/pen,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "wL" = (
@@ -3071,8 +3068,15 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
 	},
+/obj/item/clothing/gloves/latex/nitrile,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
+"GO" = (
+/obj/structure/table/rack/dark,
+/obj/item/weapon/rig/mantid/tiro,
+/obj/item/weapon/rig/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_armory)
 "HC" = (
 /obj/structure/reagent_dispensers/water_cooler/ascent{
 	dir = 1
@@ -3111,6 +3115,16 @@
 /obj/machinery/atmospherics/unary/vent_pump/on/ascent,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
+"MO" = (
+/obj/structure/table/rack/dark,
+/obj/item/weapon/rig/mantid/nabber,
+/obj/item/weapon/rig/mantid/nabber,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 1
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_armory)
 "Oh" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/weapon/storage/mre/menu10,
@@ -3168,7 +3182,6 @@
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "SL" = (
-/obj/machinery/vitals_monitor,
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 9;
 	icon_state = "corner_white"
@@ -3176,6 +3189,7 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 4
 	},
+/obj/machinery/computer/operating,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "Tt" = (
@@ -3188,6 +3202,7 @@
 	info = "<i> Written on this paper is a language you cannot understand. However, looking at the scribbles makes you feel vaguely insulted, for some reason. A crude drawing at the right hand side attempts to emote something... but you don't know what it could possibly be.</i>";
 	name = "scribble"
 	},
+/obj/item/weapon/handcuffs/cable/pink,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "TG" = (
@@ -3207,10 +3222,10 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "Vh" = (
-/obj/machinery/door/airlock/ascent,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/wall/ascent,
+/obj/machinery/door/airlock/ascent,
+/turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "Vv" = (
 /obj/structure/table/steel_reinforced,
@@ -3308,7 +3323,7 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "YN" = (
-/obj/structure/curtain/medical,
+/obj/structure/curtain/open/privacy,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "YP" = (
@@ -3330,14 +3345,14 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "YU" = (
-/obj/machinery/door/airlock/ascent,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/space,
+/obj/machinery/door/airlock/ascent,
+/turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "ZK" = (
 /obj/structure/bed/chair/padded/purple,
@@ -11222,7 +11237,7 @@ ZK
 Qc
 YP
 by
-bE
+GO
 bT
 cj
 dH
@@ -11593,7 +11608,7 @@ ch
 ch
 ch
 dN
-dV
+MO
 fn
 ch
 ch
@@ -11710,7 +11725,7 @@ Oj
 Oj
 tD
 by
-bE
+GO
 bT
 cU
 bR
@@ -12202,9 +12217,9 @@ bz
 bz
 dG
 aQ
-dQ
+dK
 aQ
-dQ
+dK
 aQ
 dG
 bz

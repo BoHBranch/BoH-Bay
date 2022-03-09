@@ -6,6 +6,9 @@
 	desc = "A slender, complex chip of alien circuitry."
 	access = list(access_ascent)
 
+/obj/item/weapon/card/id/ascent/gyne
+	access = list(access_ascent, access_ascentpar)
+
 /obj/item/weapon/card/id/ascenttiro
 	name = "tiro chip"
 	icon = 'icons/obj/ascent.dmi'

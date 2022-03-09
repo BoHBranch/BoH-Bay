@@ -409,6 +409,16 @@
 	icon_state = "tirowings"
 	interface_name = "maneuvering wings"
 	interface_desc = "An inbuilt energy wing maneuvering system, fueled by suit atmosphere."
+	suit_overlay_active = "tirowings_active"
+	suit_overlay_inactive = "tirowings_inactive"
+	jets = /obj/item/weapon/tank/jetpack/ascent/tiro
+
+/obj/item/rig_module/maneuvering_jets/tirowings/elite
+	name = "tiro wings"
+	desc = "An incredibly advanced projector capable of sustaining large wing-like appendages made from pure energy."
+	suit_overlay_active = "tirowings_elite_active"
+	suit_overlay_inactive = "tirowings_elite_inactive"
+	jets = /obj/item/weapon/tank/jetpack/ascent/tiro/elite
 
 /obj/item/rig_module/device/paperdispenser
 	name = "hardsuit paper dispenser"
