@@ -100,6 +100,12 @@
 	matter = list(MATERIAL_STEEL = 1700, MATERIAL_GLASS = 2900)
 	marking_color = COLOR_MUZZLE_FLASH
 
+/obj/item/ammo_magazine/shotholder/net
+	name = "net shell holder"
+	ammo_type = /obj/item/ammo_casing/shotgun/net
+	matter = list(MATERIAL_STEEL = 720)
+	marking_color = COLOR_PALE_PURPLE_GRAY
+
 /obj/item/ammo_magazine/shotholder/empty
 	name = "shotgun ammunition holder"
 	matter = list(MATERIAL_STEEL = 250)

@@ -187,6 +187,16 @@
 	armor_penetration = 10
 	embed = 0
 
+/obj/item/projectile/bullet/shotgun/beanbag/net
+	name = "netshell"
+	damage = 5
+	agony = 10
+
+/obj/item/projectile/bullet/shotgun/beanbag/net/on_hit(var/atom/target, var/blocked = 0, var/def_zone = null)
+	var/obj/item/weapon/energy_net/safari/net = new(loc)
+	net.throw_impact(target)
+	return TRUE
+
 //Spreads damage across more body parts than slugs, but is more effective up close and against unarmored opponents
 //High number of pellets with low velocity lends itself to more embeds
 /obj/item/projectile/bullet/pellet/shotgun
