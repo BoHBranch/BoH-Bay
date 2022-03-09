@@ -26,7 +26,7 @@
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
 	force = 8
 	max_shots = 10
-	fire_delay = 11 // 1.1 second inbetween shots.
+	fire_delay = 10 // 1.1 second inbetween shots.
 	accuracy = 1
 	projectile_type = /obj/item/projectile/beam/stun/heavy
 	wielded_item_state = "tasercarbine-wielded"
