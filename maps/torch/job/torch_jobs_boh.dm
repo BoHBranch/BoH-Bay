@@ -462,7 +462,6 @@
 /datum/job/cargo_tech
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/supply/contractor,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/supply/tech/marine
 	)
 	allowed_ranks = list(
@@ -474,7 +473,6 @@
 		/datum/mil_rank/marine_corps/e3,
 		/datum/mil_rank/marine_corps/e4,
 		/datum/mil_rank/marine_corps/e5,
-		/datum/mil_rank/civ/contractor
 	)
 /***/
 
