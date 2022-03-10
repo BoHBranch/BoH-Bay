@@ -2,22 +2,24 @@
 	name = "Hephaestus Stunner"
 	desc = "The Hephaestus Stunner is a cheap and effective stungun designed for the Military Police!"
 	icon = 'icons/obj/guns/taser.dmi'
-	icon_state = "taser"
+	icon_state = "taserstun"
 	item_state = null	//so the human update icon uses the icon_state instead.
+	modifystate = "taserstun"
 	max_shots = 5
 	projectile_type = /obj/item/projectile/beam/stun
 	combustion = 0
 
 	firemodes = list(
-		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun),
-		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock),
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="taserstun"),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="tasershock"),
 		)
 
 /obj/item/weapon/gun/energy/taser/carbine
 	name = "Hephaestus Lightning"
 	desc = "The Hephaestus Lightning is a powerful stunrifle built to takedown more 'biologically robust' species, such as Unathi!"
 	icon = 'icons/obj/guns/taser_carbine.dmi'
-	icon_state = "tasercarbine"
+	icon_state = "tasercarbinestun"
+	modifystate = "tasercarbinestun"
 	w_class = ITEM_SIZE_LARGE
 	slot_flags = SLOT_BELT|SLOT_BACK
 	one_hand_penalty = 3
@@ -29,8 +31,8 @@
 	wielded_item_state = "tasercarbine-wielded"
 
 	firemodes = list(
-		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun/heavy),
-		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock/heavy),
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun/heavy, modifystate="tasercarbinestun"),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock/heavy, modifystate="tasercarbineshock"),
 		)
 
 /obj/item/weapon/gun/energy/taser/mounted

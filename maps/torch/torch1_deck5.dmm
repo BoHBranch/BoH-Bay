@@ -3197,6 +3197,12 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/exploration_shuttle/power)
+"fv" = (
+/obj/machinery/door/window/eastleft,
+/obj/structure/window/reinforced,
+/obj/machinery/artifact,
+/turf/simulated/floor/reinforced,
+/area/shuttle/petrov/isolation)
 "fw" = (
 /obj/structure/catwalk,
 /obj/structure/cable/cyan{
@@ -3770,6 +3776,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"gB" = (
+/obj/machinery/door/window/eastright,
+/obj/structure/window/reinforced{
+	dir = 1;
+	health = 1e+006
+	},
+/obj/machinery/artifact,
+/turf/simulated/floor/reinforced,
+/area/shuttle/petrov/isolation)
 "gC" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -49452,8 +49467,8 @@ Wl
 Wl
 sD
 Wl
-sy
-cX
+fv
+gB
 fF
 fF
 aa

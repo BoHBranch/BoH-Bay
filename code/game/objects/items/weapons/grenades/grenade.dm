@@ -13,6 +13,7 @@
 	var/det_time = 50
 	var/fail_det_time = 5 // If you are clumsy and fail, you get this time.
 	var/arm_sound = 'sound/weapons/armbomb.ogg'
+	var/list/no_grenades_for_you = PRIMITIVE_XENO_SPECIES
 
 /obj/item/weapon/grenade/proc/clown_check(var/mob/living/user)
 	if((MUTATION_CLUMSY in user.mutations) && prob(50))
@@ -20,6 +21,15 @@
 		det_time = fail_det_time
 		activate(user)
 		add_fingerprint(user)
+		return 0
+	return 1
+
+/obj/item/weapon/grenade/proc/xeno_check(var/mob/living/user)
+	if(user.get_species() in no_grenades_for_you)
+		to_chat(user, "<span class='warning'>How do you use a grenade with claws?</span>")
+		return 0
+	if (user.is_ventcrawling == 1)
+		to_chat(user, "<span class='warning'>The pipe is too tight, you can't reach the trigger.</span>")
 		return 0
 	return 1
 
@@ -35,7 +45,7 @@
 
 /obj/item/weapon/grenade/attack_self(mob/user as mob)
 	if(!active)
-		if(clown_check(user))
+		if(clown_check(user) && xeno_check(user))
 			to_chat(user, "<span class='warning'>You prime \the [name]! [det_time/10] seconds!</span>")
 			activate(user)
 			add_fingerprint(user)

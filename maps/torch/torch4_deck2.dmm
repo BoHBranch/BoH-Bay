@@ -241,7 +241,8 @@
 	},
 /obj/machinery/door/window/brigdoor/northleft{
 	name = "emergency core eject";
-	req_access = list("ACCESS_ENGINEERING")
+	req_access = list("ACCESS_ENGINEERING");
+	autoset_access = 0
 	},
 /obj/machinery/button/blast_door{
 	desc = "A remote switch to open the engine core vent to space.";
@@ -9005,7 +9006,8 @@
 /obj/machinery/door/window/brigdoor/southleft{
 	dir = 4;
 	name = "Monitoring Desk";
-	req_access = list("ACCESS_ENGINE_EQUIP")
+	req_access = list("ACCESS_ENGINE_EQUIP");
+	autoset_access = 0
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/engineering_monitoring)

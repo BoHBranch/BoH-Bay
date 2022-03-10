@@ -84,15 +84,15 @@
 /obj/item/weapon/rig/military/infantry
 	name = "heavy suit control module"
 	desc = "A heavy, incredibly sleek suit of military grade armor. \
-	The minor ablative coating and composite armor makes it seem incredibly sturdy."
+	The ablative coating and composite armor makes it seem incredibly sturdy."
 	req_access = list(access_infantry)
 	suit_type = "military hardsuit"
 	icon_state = "military_rig"
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RIFLE,
-		laser = ARMOR_LASER_HANDGUNS,
-		energy = ARMOR_ENERGY_SMALL,
+		laser = ARMOR_LASER_MAJOR,
+		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED

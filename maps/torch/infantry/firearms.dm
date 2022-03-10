@@ -127,14 +127,15 @@
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg
 	name = "Z6 Komodo"
 	desc = "The Hephaestus Industries Z6 Komodo is an old bullpup carbine conversion. \
-	It adds the possibility of automatic fire, though at the cost of likely jams."
+	It is equiped with a heavy barrel for combat, ensuring better accuracy and velocity for penetration at the cost of firerate and magazine size."
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	auto_eject = 1
 	one_hand_penalty = 8
-	jam_chance = 15 //frangible rounds might shatter if they're chambered improperly. Especially so with such a high firerate.
+	acc_mod_base = 3
+	penetration_mod = 3.5
 	firemodes = list(
-		list(mode_name="semi auto", burst=1, fire_delay=null, move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
-		list(mode_name="burst fire",  burst=5, fire_delay=null, move_delay=2, one_hand_penalty=10, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="semi auto", burst=1, fire_delay=null, move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=list(0.5, 1)),
+		list(mode_name="automatic",  automatic = TRUE, fire_delay = 2.5, burst = 1, burst_delay = 0, move_delay=2, dispersion=list(0.5, 1, 1.5, 2)),
 		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
 		)
 

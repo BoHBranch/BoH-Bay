@@ -107,6 +107,14 @@
 	distance_falloff = 0.25
 	dispersion = 0
 
+/obj/machinery/porta_turret/ssv/vox
+
+	name = "Anti-personnel battery"
+	desc = "A sleek, menacing turret of stolen origin."
+	installation = /obj/item/weapon/gun/energy/laser
+	color = COLOR_SILVER
+	req_access = list("ACCESS_VOXSHIP")
+
 /obj/machinery/porta_turret/malf_upgrade(var/mob/living/silicon/ai/user)
 	..()
 	ailock = 0
@@ -533,6 +541,9 @@ var/list/turret_icons
 
 	if(isanimal(L) || issmall(L)) // Animals are not so dangerous
 		return check_anomalies ? TURRET_SECONDARY_TARGET : TURRET_NOT_TARGET
+
+	if(isxenomorph(L) || isalien(L)) // Xenos are dangerous RAAAWR
+		return check_anomalies ? TURRET_PRIORITY_TARGET	: TURRET_NOT_TARGET
 
 	if(ishuman(L))	//if the target is a human, analyze threat level
 		if(assess_perp(L) < 4)

@@ -100,6 +100,12 @@
 	matter = list(MATERIAL_STEEL = 1700, MATERIAL_GLASS = 2900)
 	marking_color = COLOR_MUZZLE_FLASH
 
+/obj/item/ammo_magazine/shotholder/net
+	name = "net shell holder"
+	ammo_type = /obj/item/ammo_casing/shotgun/net
+	matter = list(MATERIAL_STEEL = 720)
+	marking_color = COLOR_PALE_PURPLE_GRAY
+
 /obj/item/ammo_magazine/shotholder/empty
 	name = "shotgun ammunition holder"
 	matter = list(MATERIAL_STEEL = 250)
@@ -325,3 +331,13 @@
 	matter = list(MATERIAL_STEEL = 600)
 	max_ammo = 7
 	multiple_sprites = 1
+
+/obj/item/ammo_magazine/nailgun
+	name = "nail cartridge"
+	desc = "A cartridge of nails for a nailgun."
+	icon_state = "nail_cartridge"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/nails
+	matter = list(MATERIAL_STEEL = 700)
+	caliber = CALIBER_NAILS
+	max_ammo = 100

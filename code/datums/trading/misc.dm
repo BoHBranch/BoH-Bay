@@ -75,7 +75,7 @@
 								/obj/item/device/dociler              = TRADER_THIS_TYPE,
 								/obj/structure/dogbed                 = TRADER_THIS_TYPE)
 
-/datum/trader/ship/prank_shop
+/datum/trader/prank_shop
 	name = "Prank Shop Owner"
 	name_language = LANGUAGE_ROOTLOCAL
 	origin = "Prank Shop"

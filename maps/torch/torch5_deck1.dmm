@@ -1924,7 +1924,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	autoset_access = 0;
+	req_access = list("ACCESS_MAINT")
+	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -7068,8 +7071,11 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/obj/machinery/door/airlock/maintenance,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance{
+	autoset_access = 0;
+	req_access = list("ACCESS_MAINT")
+	},
 /turf/simulated/floor/plating,
 /area/rnd/anom_storage/gas)
 "alW" = (
@@ -8574,8 +8580,11 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/machinery/door/airlock/maintenance,
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance{
+	autoset_access = 0;
+	req_access = list("ACCESS_MAINT")
+	},
 /turf/simulated/floor/plating,
 /area/rnd/anom_storage/gas)
 "aoz" = (
@@ -18517,7 +18526,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/maintenance{
+	autoset_access = 0;
+	req_access = list("ACCESS_MAINT")
+	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;

@@ -178,8 +178,9 @@
 	)
 
 	assistant_job = /datum/job/crew
-	min_skill = list(	SKILL_WEAPONS = SKILL_BASIC,
-						SKILL_EVA     = SKILL_BASIC)
+	min_skill = list(	SKILL_HAULING = SKILL_BASIC,
+						SKILL_WEAPONS = SKILL_BASIC,
+						SKILL_EVA     = SKILL_ADEPT)
 
 /datum/mil_branch/army
 	name = "Army"
@@ -729,7 +730,7 @@
  */
 
 /datum/mil_rank/sol/gov
-	name = "SolGov Representative"
+	name = "Sol Gov Representative"
 	name_short = "SGR"
 	accessory = list(/obj/item/clothing/accessory/badge/solgov/representative)
 	pow_cat = 5
