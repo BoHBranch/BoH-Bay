@@ -1,7 +1,7 @@
 
 /obj/item/clothing/accessory/solgov/skillbadge
 	name = "skill badge"
-	desc = "An EC skill badge signifying that the bearer has passed the advanced training on spawning wrong types. Informally known as 'Shouldn't be seeing this'."
+	desc = "An NT skill badge signifying that the bearer has passed the advanced training on spawning wrong types. Informally known as 'Shouldn't be seeing this'."
 	slot = ACCESSORY_SLOT_INSIGNIA
 	var/badgecolor //for on-mob sprite cause im not putting 9000 colored pixels in dmi
 
@@ -15,43 +15,43 @@
 
 /obj/item/clothing/accessory/solgov/skillbadge/botany
 	name = "\improper Field Xenobotany Specialist badge"
-	desc = "An EC skill badge signifying that the bearer has passed the advanced training on handling exotic xenoflora. Informally known as 'Vine Wrangler'."
+	desc = "An NT skill badge signifying that the bearer has passed the advanced training on handling exotic xenoflora. Informally known as 'Vine Wrangler'."
 	icon_state = "ec_badge_botany"
 	badgecolor = "#387c4f"
 
 /obj/item/clothing/accessory/solgov/skillbadge/netgun
 	name = "\improper Xenofauna Acquisition Specialist badge"
-	desc = "An EC skill badge signifying that the bearer has passed the advanced training on capturing alien wildlife with the netgun. Informally known as 'Xeno-Cowboy'."
+	desc = "An NT skill badge signifying that the bearer has passed the advanced training on capturing alien wildlife with the netgun. Informally known as 'Xeno-Cowboy'."
 	icon_state = "ec_badge_netgun"
 	badgecolor = "#6a60a1"
 
 /obj/item/clothing/accessory/solgov/skillbadge/eva
 	name = "\improper Void Mobility Specialist badge"
-	desc = "An EC skill badge signifying that the bearer has passed the advanced training on moving around in zero-g using a jetpack. Informally known as 'Zoomer'."
+	desc = "An NT skill badge signifying that the bearer has passed the advanced training on moving around in zero-g using a jetpack. Informally known as 'Zoomer'."
 	icon_state = "ec_badge_eva"
 	badgecolor = "#4d9799"
 
 /obj/item/clothing/accessory/solgov/skillbadge/medical
 	name = "\improper Advanced First Aid Specialist badge"
-	desc = "An EC skill badge signifying that the bearer has passed the advanced training on CPR and basic medical tech. Informally known as 'Para-paramedic'."
+	desc = "An NT skill badge signifying that the bearer has passed the advanced training on CPR and basic medical tech. Informally known as 'Para-paramedic'."
 	icon_state = "ec_badge_med"
 	badgecolor = "#47799e"
 
 /obj/item/clothing/accessory/solgov/skillbadge/mech
 	name = "\improper Exosuit Specialist badge"
-	desc = "An EC skill badge signifying that the bearer has passed the advanced training on piloting exosuits. Informally known as 'Exonaut'."
+	desc = "An NT skill badge signifying that the bearer has passed the advanced training on piloting exosuits. Informally known as 'Exonaut'."
 	icon_state = "ec_badge_exo"
 	badgecolor = "#72763d"
 
 /obj/item/clothing/accessory/solgov/skillbadge/electric
 	name = "\improper Electrical Specialist badge"
-	desc = "An EC skill badge signifying that the bearer has passed the advanced training on working with high-voltage electrical systems. Informally known as 'Jury-rigger'."
+	desc = "An NT skill badge signifying that the bearer has passed the advanced training on working with high-voltage electrical systems. Informally known as 'Jury-rigger'."
 	icon_state = "ec_badge_electro"
 	badgecolor = "#8e633f"
 
 /obj/item/clothing/accessory/solgov/skillbadge/science
 	name = "\improper Research Specialist badge"
-	desc = "An EC skill badge signifying that the bearer has passed the advanced training on assisting in the labs and working the sensor suites. Informally known as 'Peeper'."
+	desc = "An NT skill badge signifying that the bearer has passed the advanced training on assisting in the labs and working the sensor suites. Informally known as 'Peeper'."
 	icon_state = "ec_badge_sci"
 	badgecolor = "#7876ad"
 

@@ -76,7 +76,7 @@ medals
 
 /obj/item/clothing/accessory/solgov/torch_patch
 	name = "\improper Andromeda mission patch"
-	desc = "A fire resistant shoulder patch, worn by the personnel involved in the Andromeda Project."
+	desc = "A fire resistant shoulder patch, worn by personnel aboard the SFV Andromeda."
 	icon_state = "torchpatch"
 	on_rolled = list("down" = "none")
 	slot = ACCESSORY_SLOT_INSIGNIA
@@ -89,15 +89,15 @@ patches
 *****/
 /obj/item/clothing/accessory/solgov/ec_patch
 	name = "\improper Observatory patch"
-	desc = "A laminated shoulder patch, carrying the symbol of the Sol Central Government Expeditionary Corpss Observatory, or SCGEO for short, the eyes and ears of the Expeditionary Corps' missions."
+	desc = "A laminated shoulder patch, carrying the symbol of the NanoTrasen Surveyor Corps, or NTSC for short, the eyes and ears of the Expeditionary Fleet's missions."
 	icon_state = "ecpatch1"
 	on_rolled = list("down" = "none")
 	slot = ACCESSORY_SLOT_INSIGNIA
-	check_codex_val = FACTION_EXPEDITIONARY
+	check_codex_val = FACTION_FLEET
 
 /obj/item/clothing/accessory/solgov/ec_patch/fieldops
 	name = "\improper Field Operations patch"
-	desc = "A radiation-shielded shoulder patch, carrying the symbol of the Sol Central Government Expeditionary Corps Field Operations, or SCGECFO for short, the hands-on workers of every Expeditionary Corps mission."
+	desc = "A radiation-shielded shoulder patch, carrying the symbol of the NanoTrasen Surveyor Corps Field Operations, or NTSCFO for short, the hands-on workers of every Expeditionary Fleet mission."
 	icon_state = "ecpatch2"
 
 /obj/item/clothing/accessory/solgov/cultex_patch
@@ -105,33 +105,33 @@ patches
 	desc = "A radiation-shielded shoulder patch, denoting service in the the Sol Central Government Expeditionary Corps Cultural Exchange program."
 	icon_state = "ecpatch3"
 	slot = ACCESSORY_SLOT_INSIGNIA
-	check_codex_val = FACTION_EXPEDITIONARY
+	check_codex_val = FACTION_FLEET
 
 /obj/item/clothing/accessory/solgov/fleet_patch
 	name = "\improper First Fleet patch"
-	desc = "A fancy shoulder patch carrying insignia of First Fleet, the Sol Guard, stationed in Sol."
+	desc = "A fancy shoulder patch carrying insignia of NTEF's First Fleet."
 	icon_state = "fleetpatch1"
 	on_rolled = list("down" = "none")
 	slot = ACCESSORY_SLOT_INSIGNIA
 
 /obj/item/clothing/accessory/solgov/fleet_patch/second
 	name = "\improper Second Fleet patch"
-	desc = "A well-worn shoulder patch carrying insignia of Second Fleet, the Home Guard, tasked with defense of Sol territories."
+	desc = "A well-worn shoulder patch carrying insignia of NTEF's Second Fleet."
 	icon_state = "fleetpatch2"
 
 /obj/item/clothing/accessory/solgov/fleet_patch/third
 	name = "\improper Third Fleet patch"
-	desc = "A scuffed shoulder patch carrying insignia of Third Fleet, the Border Guard, guarding borders of Sol territory against Vox and pirates."
+	desc = "A scuffed shoulder patch carrying insignia of NTEF's Third Fleet."
 	icon_state = "fleetpatch3"
 
 /obj/item/clothing/accessory/solgov/fleet_patch/fourth
 	name = "\improper Fourth Fleet patch"
-	desc = "A pristine shoulder patch carrying insignia of Fourth Fleet, stationed on Skrell border."
+	desc = "A pristine shoulder patch carrying insignia of NTEF's Fourth Fleet."
 	icon_state = "fleetpatch4"
 
 /obj/item/clothing/accessory/solgov/fleet_patch/fifth
 	name = "\improper Fifth Fleet patch"
-	desc = "A tactical shoulder patch carrying insignia of Fifth Fleet, the Quick Reaction Force, recently formed and outfited with last tech."
+	desc = "A tactical shoulder patch carrying insignia of NTEF's Fifth Fleet."
 	icon_state = "fleetpatch5"
 
 /*****
@@ -139,22 +139,22 @@ scarves
 *****/
 /obj/item/clothing/accessory/solgov/ec_scarf
 	name = "expeditionary scarf"
-	desc = "An SCG blue silk scarf, meant to be worn with Expeditionary Corps uniforms."
+	desc = "An SCG blue silk scarf, meant to be worn with Surveyor Corps uniforms."
 	icon = 'icons/obj/clothing/obj_accessories.dmi'
 	accessory_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_accessories.dmi', slot_wear_suit_str = 'icons/mob/onmob/onmob_accessories.dmi')
 	icon_state = "whitescarf"
 	on_rolled = list("down" = "none")
 	color = "#68a0ce"
-	check_codex_val = FACTION_EXPEDITIONARY
+	check_codex_val = FACTION_FLEET
 
 /obj/item/clothing/accessory/solgov/ec_scarf/observatory
 	name = "\improper Observatory scarf"
-	desc = "A silk scarf in Expeditionary Corps Observatory section colors, meant to be worn with Expeditionary Corps uniforms."
+	desc = "A silk scarf in Expeditionary Corps Observatory section colors, meant to be worn with Expeditionary Fleet uniforms."
 	color = "#58bb59"
 
 /obj/item/clothing/accessory/solgov/ec_scarf/fieldops
 	name = "\improper Field Operations scarf"
-	desc = "A silk scarf in Expeditionary Corps Field Operations section colors, meant to be worn with Expeditionary Corps uniforms."
+	desc = "A silk scarf in Expeditionary Corps Field Operations section colors, meant to be worn with Expeditionary Fleet uniforms."
 	color = "#9f84b3"
 
 /******
@@ -258,7 +258,7 @@ badges
 
 /obj/item/clothing/accessory/badge/solgov/security
 	name = "security forces badge"
-	desc = "A silver law enforcement badge. Stamped with the words 'Master at Arms'."
+	desc = "A silver law enforcement badge. Stamped with the words 'POLICE'."
 	icon_state = "silverbadge"
 	slot_flags = SLOT_TIE
 	badge_string = "Sol Central Government"
@@ -335,7 +335,7 @@ armour attachments
 
 /obj/item/clothing/accessory/armor/tag/solgov/ec
 	name = "\improper Expeditionary Corps crest"
-	desc = "An emblem depicting the crest of the SCG Expeditionary Corps."
+	desc = "An emblem depicting the crest of the NanoTrasen Expeditionary Fleet."
 	icon_state = "ecflag"
 
 /obj/item/clothing/accessory/armor/tag/solgov/sec
@@ -399,12 +399,12 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/command/army
 	icon_state = "dept_army"
-	desc = "Insignia denoting assignment to the command department. These fit Army uniforms."
+	desc = "Insignia denoting assignment to the command department. These fit Marine uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/engineering
 	name = "engineering insignia"
-	desc = "Insignia denoting assignment to the engineering department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the engineering department. These fit Surveyor Corps uniforms."
 	color = "#ff7f00"
 
 /obj/item/clothing/accessory/solgov/department/engineering/service
@@ -420,13 +420,13 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/engineering/army
 	icon_state = "dept_army"
-	desc = "Insignia denoting assignment to the engineering department. These fit Army uniforms."
+	desc = "Insignia denoting assignment to the engineering department. These fit Marine uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/security
 	name = "security insignia"
-	desc = "Insignia denoting assignment to the security department. These fit Expeditionary Corps uniforms."
-	color = "#1e4168"
+	desc = "Insignia denoting assignment to the security department. These fit Surveyor Corps uniforms."
+	color = "#0c6bb0"
 
 /obj/item/clothing/accessory/solgov/department/security/service
 	icon_state = "dept_exped_service"
@@ -442,12 +442,12 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/security/army
 	icon_state = "dept_army"
-	desc = "Insignia denoting assignment to the security department. These fit Army uniforms."
+	desc = "Insignia denoting assignment to the security department. These fit Marine uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/medical
 	name = "medical insignia"
-	desc = "Insignia denoting assignment to the medical department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the medical department. These fit Surveyor Corps uniforms."
 	color = "#4c9ce4"
 
 /obj/item/clothing/accessory/solgov/department/medical/service
@@ -465,12 +465,12 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/medical/army
 	icon_state = "dept_army"
-	desc = "Insignia denoting assignment to the medical department. These fit Army uniforms."
+	desc = "Insignia denoting assignment to the medical department. These fit Marine uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/supply
 	name = "supply insignia"
-	desc = "Insignia denoting assignment to the supply department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the supply department. These fit Surveyor Corps uniforms."
 	color = "#bb9042"
 
 /obj/item/clothing/accessory/solgov/department/supply/service
@@ -487,12 +487,12 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/supply/army
 	icon_state = "dept_army"
-	desc = "Insignia denoting assignment to the supply department. These fit Army uniforms."
+	desc = "Insignia denoting assignment to the supply department. These fit Marine uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/service
 	name = "service insignia"
-	desc = "Insignia denoting assignment to the service department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the service department. These fit Surveyor Corps uniforms."
 	color = "#6eaa2c"
 
 /obj/item/clothing/accessory/solgov/department/service/service
@@ -509,12 +509,12 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/service/army
 	icon_state = "dept_army"
-	desc = "Insignia denoting assignment to the service department. These fit Army uniforms."
+	desc = "Insignia denoting assignment to the service department. These fit Marine uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/exploration
 	name = "exploration insignia"
-	desc = "Insignia denoting assignment to the exploration department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the exploration department. These fit Surveyor Corps uniforms."
 	color = "#68099e"
 
 /obj/item/clothing/accessory/solgov/department/exploration/service
@@ -530,12 +530,12 @@ department tags
 
 /obj/item/clothing/accessory/solgov/department/exploration/army
 	icon_state = "dept_army"
-	desc = "Insignia denoting assignment to the exploration department. These fit Army uniforms."
+	desc = "Insignia denoting assignment to the exploration department. These fit Marine uniforms."
 	on_rolled = list("down" = "none")
 
 /obj/item/clothing/accessory/solgov/department/research
 	name = "research insignia"
-	desc = "Insignia denoting assignment to the research department. These fit Expeditionary Corps uniforms."
+	desc = "Insignia denoting assignment to the research department. These fit Surveyor Corps uniforms."
 	color = COLOR_RESEARCH
 
 /obj/item/clothing/accessory/solgov/department/research/service
@@ -684,7 +684,7 @@ ranks - fleet
 
 /obj/item/clothing/accessory/solgov/rank/fleet/officer/wo1_monkey
 	name = "makeshift ranks (WO-1 warrant officer 1)"
-	desc = "Insignia denoting the mythical rank of Warrant Officer. Too bad it's obviously fake."
+	desc = "Insignia denoting the mythical rank of Warrant Officer. Is Punitelli *really* an officer?."
 
 /obj/item/clothing/accessory/solgov/rank/fleet/officer/o2
 	name = "ranks (O-2 sub-lieutenant)"
