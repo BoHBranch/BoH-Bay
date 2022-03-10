@@ -62,7 +62,7 @@ var/const/HOLOPAD_MODE = RANGE_BASED
 
 /obj/machinery/hologram/holopad/examine(user)
 	. = ..()
-	to_chat(user, SPAN_INFO("Its ID is <b>[loc.loc]</b>.")) //God I fucking hate this loc.loc shit ~10sc
+	to_chat(user, SPAN_NOTICE("Its ID is <b>[loc.loc]</b>.")) //God I fucking hate this loc.loc shit ~10sc
 
 /obj/machinery/hologram/holopad/interface_interact(var/mob/living/carbon/human/user) //Carn: Hologram requests.
 	if(!CanInteract(user, DefaultTopicState()))
@@ -96,12 +96,12 @@ var/const/HOLOPAD_MODE = RANGE_BASED
 				var/area/area = get_area(src)
 				for(var/mob/living/silicon/ai/AI in GLOB.living_mob_list_)
 					if(!AI.client)	continue
-					to_chat(AI, SPAN_INFO("Your presence is requested at <a href='?src=\ref[AI];jumptoholopad=\ref[src]'>\the [area]</a>."))
+					to_chat(AI, SPAN_NOTICE("Your presence is requested at <a href='?src=\ref[AI];jumptoholopad=\ref[src]'>\the [area]</a>."))
 			else
 				to_chat(user, SPAN_NOTICE("A request for AI presence was already sent recently."))
 		if("Holocomms")
 			if(user.loc != src.loc)
-				to_chat(user, SPAN_INFO("Please step onto the holopad."))
+				to_chat(user, SPAN_NOTICE("Please step onto the holopad."))
 				return
 			if(last_request + 200 < world.time) //don't spam other people with requests either, you jerk!
 				last_request = world.time
@@ -119,11 +119,11 @@ var/const/HOLOPAD_MODE = RANGE_BASED
 				var/temppad = input(user, "Which holopad would you like to contact?", "holopad list") as null|anything in holopadlist
 				targetpad = holopadlist["[temppad]"]
 				if(targetpad==src)
-					to_chat(user, SPAN_INFO("Using such sophisticated technology, just to talk to yourself seems a bit silly."))
-         	targetpad = null //Clean up the mess after an unsuccessful call
+					to_chat(user, SPAN_NOTICE("Using such sophisticated technology, just to talk to yourself seems a bit silly."))
+					targetpad = null //Clean up the mess after an unsuccessful call
 					return
 				if(targetpad && targetpad.caller_id)
-					to_chat(user, SPAN_INFO("The pad flashes a busy sign. Maybe you should try again later."))
+					to_chat(user, SPAN_NOTICE("The pad flashes a busy sign. Maybe you should try again later."))
 					targetpad = null //Clean up the mess after an unsuccessful call
 					return
 				if(targetpad)
@@ -435,6 +435,8 @@ Holographic project of everything else.
 
 // Used for overmap capable ships that should have communications, but not be AI accessible
 /obj/machinery/hologram/holopad/longrange/remoteship
+	name = "encrypted long range holopad"
+	desc = "It's a floor-mounted device for projecting holographic images. This one utilizes an advanced bluespace transmitter to communicate with distant holopads, and it also has end-to-end encryption."
 	allow_ai = FALSE
 
 #undef RANGE_BASED

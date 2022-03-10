@@ -25,3 +25,8 @@
 		TECH_DATA = 2,
 		TECH_MAGNET = 2
 	)
+
+//For overmap vessels
+/obj/item/weapon/stock_parts/circuitboard/holopad/longrange/remoteship
+	name = T_BOARD("encrypted long range holopad")
+	build_path = /obj/machinery/hologram/holopad/longrange/remoteship
