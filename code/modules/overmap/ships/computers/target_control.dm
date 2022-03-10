@@ -15,7 +15,7 @@
 	var/list/contacts_ships = list()
 	var/list/contacts_planets = list()
 	var/list/contacts_missiles = list()
-	var/obj/target_name = null
+	var/obj/target_temp
 	for(var/obj/effect/overmap/O in view(7,linked))
 		if(linked == O)
 			continue
@@ -49,14 +49,14 @@
 	data["point_y"] = linked.get_target(TARGET_POINT)[2]
 	data["target_ship"] = null
 	if(linked.get_target(TARGET_PLANET)[1])
-		target_name = linked.get_target(TARGET_PLANET)[1].name
-		data["target_planet"] = target_name
+		target_temp = linked.get_target(TARGET_PLANET)[1]
+		data["target_planet"] = target_temp.name
 	if(linked.get_target(TARGET_SHIP))
-		target_name = linked.get_target(TARGET_SHIP).name
-		data["target_ship"] = target_name
+		target_temp = linked.get_target(TARGET_SHIP)
+		data["target_ship"] = target_temp.name
 	if(linked.get_target(TARGET_MISSILE))
-		target_name = linked.get_target(TARGET_MISSILE).name
-		data["target_missile"] = target_name
+		target_temp = linked.get_target(TARGET_MISSILE)
+		data["target_missile"] = target_temp.name
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
