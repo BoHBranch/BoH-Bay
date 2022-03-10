@@ -40,9 +40,10 @@
 	software_on_spawn = list(/datum/computer_file/program/supply,
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
-							 
+	
 	/datum/job/qm/get_description_blurb()
-	return "You are the Deck Officer, and the Supply department, hanger, and munitions are your domain. Your responsibilities include ensuring the ship is supplied, the flight records are filled, shuttles are fuelled, missiles are made, and the ship is always combat ready for ship to ship combat." 
+	return "You are the Deck Officer, and the Supply department, hanger, and munitions are your domain. Your responsibilities include ensuring the ship is supplied, the flight records are filled, shuttles are fuelled, missiles are made, and the ship is always combat ready for ship to ship combat." 						 
+
 
 /datum/job/cargo_tech
 	title = "Deck Technician"
