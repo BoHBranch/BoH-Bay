@@ -1431,11 +1431,6 @@
 	dir = 8;
 	pixel_x = 21
 	},
-/obj/machinery/embedded_controller/radio/simple_docking_controller{
-	dir = 4;
-	id_tag = "admin_shuttle_dock_airlock";
-	pixel_x = -24
-	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "di" = (
