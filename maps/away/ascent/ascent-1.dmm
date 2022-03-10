@@ -2544,8 +2544,7 @@
 	},
 /obj/machinery/door/window/brigdoor{
 	color = "#800080";
-	dir = 8;
-	req_access = list(access_ascentpar)
+	dir = 8
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
