@@ -198,6 +198,28 @@
 	var/start_x = Floor(world.maxx / 2) + rand(-10, 10)
 	var/start_y = Floor(world.maxy / 2) + rand(-10, 10)
 	
+	
+	//Normalizes this to just be NWES. If you want to do the fuckery required to make this better, be my guest.
+	if(heading in GLOB.cornerdirs)	
+		if(heading == NORTHEAST)
+			heading = pick(NORTH, EAST)
+		if(heading == NORTHWEST)
+			heading = pick(NORTH, WEST) 
+		if(heading == SOUTHEAST)
+			heading = pick(SOUTH, EAST) 
+		if(heading == SOUTHWEST)
+			heading = pick(SOUTH, WEST) 
+
+	if(target_dir in GLOB.cornerdirs)
+		if(target_dir == NORTHEAST)
+			target_dir = pick(NORTH, EAST)
+		if(target_dir == NORTHWEST)
+			target_dir = pick(NORTH, WEST) 
+		if(target_dir == SOUTHEAST)
+			target_dir = pick(SOUTH, EAST) 
+		if(target_dir == SOUTHWEST)
+			target_dir = pick(SOUTH, WEST) 
+
 	if(heading == target_dir)
 		if(target_fore_dir == NORTH)
 			start_y = TRANSITIONEDGE + 2

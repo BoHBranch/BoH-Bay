@@ -17559,12 +17559,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/aft)
-"Vh" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/command/gunnery/missiles/storage/lower)
 "Vi" = (
 /obj/effect/floor_decal/corner/brown{
 	dir = 8;
@@ -39656,7 +39650,7 @@ gz
 gz
 ir
 Fi
-Vh
+dZ
 dZ
 dZ
 dt
