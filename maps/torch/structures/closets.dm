@@ -155,14 +155,21 @@
 /obj/structure/closet/secure_closet/infmed/WillContain()
 	return list(
 		/obj/item/weapon/storage/belt/holster/security/tactical,
+		/obj/item/weapon/reagent_containers/syringe,
+		/obj/item/weapon/storage/firstaid/combat,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
+		/obj/item/bodybag/rescue,
+		/obj/item/bodybag/rescue,
 		/obj/item/clothing/glasses/tacgoggles,
 		/obj/item/weapon/storage/belt/utility,
 		/obj/item/weapon/weldpack/bigwelder,
 		/obj/item/weapon/storage/box/flares,
 		/obj/item/clothing/suit/armor/pcarrier/light/sol,
 		/obj/item/gunbox/infmed,
+		/obj/item/weapon/defibrillator/compact,
+		/obj/item/weapon/reagent_containers/glass/bottle/antitoxin,
+		/obj/item/weapon/reagent_containers/glass/bottle/inaprovaline,
 		/obj/item/gunbox/sidearm/infantry
 		)
 
