@@ -48,12 +48,14 @@
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/shuttle_landmark/skrellscoutship/dock
-	name = "SSV Secondary Docking Port"
-	landmark_tag = "nav_skrellscout_dock"
+	name = "Invalid Fore Docking Port"
+	landmark_tag = "nav_skrellscoutsh_dock"
+	docking_controller = "skipjack_shuttle_dock_airlock"
 
 /obj/effect/shuttle_landmark/skrellscoutship/altdock
-	name = "SSV Docking Port"
+	name = "Valid Aft Docking Port"
 	landmark_tag = "nav_skrellscoutsh_altdock"
+	docking_controller = "rescue_shuttle_dock_airlock"
 
 /turf/simulated/floor/shuttle_ceiling/skrell
 	color = COLOR_HULL

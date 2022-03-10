@@ -1418,11 +1418,6 @@
 	dir = 8;
 	pixel_x = 21
 	},
-/obj/machinery/embedded_controller/radio/simple_docking_controller{
-	dir = 4;
-	id_tag = "admin_shuttle_dock_airlock";
-	pixel_x = -24
-	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "di" = (
@@ -2338,6 +2333,18 @@
 /obj/structure/disposalpipe/junction{
 	dir = 8;
 	icon_state = "pipe-j2"
+	},
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	display_name = "Starboard Dock C";
+	frequency = 1380;
+	id_tag = "admin_shuttle_dock_airlock";
+	pixel_x = 25;
+	pixel_y = 18;
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	tag_airpump = "admin_shuttle_dock_pump";
+	tag_chamber_sensor = "admin_shuttle_dock_sensor";
+	tag_exterior_door = "admin_shuttle_dock_outer";
+	tag_interior_door = "admin_shuttle_dock_inner"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
@@ -8137,6 +8144,16 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
+"rI" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner/white{
+	dir = 1;
+	icon_state = "corner_white"
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/hallway/primary/fourthdeck/fore)
 "rM" = (
 /obj/effect/floor_decal/techfloor,
 /obj/effect/landmark/start{
@@ -12855,6 +12872,19 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/sorting)
+"HA" = (
+/obj/machinery/door/airlock/external{
+	frequency = 1380;
+	icon_state = "closed";
+	id_tag = "skipjack_shuttle_dock_outer";
+	locked = 1;
+	name = "Docking Port Airlock"
+	},
+/obj/machinery/shield_diffuser,
+/obj/effect/shuttle_landmark/ascent_seedship/dock/two,
+/obj/effect/shuttle_landmark/skrellscoutship/dock,
+/turf/simulated/floor/plating,
+/area/hallway/primary/fourthdeck/fore)
 "HB" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Lounge Maintenance"
@@ -13087,15 +13117,8 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
 "Io" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "closed";
-	id_tag = "skipjack_shuttle_dock_outer";
-	locked = 1;
-	name = "Docking Port Airlock"
-	},
-/obj/machinery/shield_diffuser,
-/obj/effect/shuttle_landmark/skrellscoutship/dock,
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "Ip" = (
@@ -17008,6 +17031,7 @@
 	},
 /obj/machinery/shield_diffuser,
 /obj/effect/shuttle_landmark/skrellscoutship/altdock,
+/obj/effect/shuttle_landmark/ascent_seedship/dock,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "TO" = (
@@ -17095,6 +17119,7 @@
 	name = "Docking Port Airlock"
 	},
 /obj/machinery/shield_diffuser,
+/obj/effect/shuttle_landmark/ascent_seedship/dock/three,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "TY" = (
@@ -30786,7 +30811,7 @@ FY
 BK
 BK
 BK
-aa
+BK
 aa
 aa
 aa
@@ -30988,8 +31013,8 @@ AG
 BK
 BK
 BK
-aa
-aa
+BK
+BK
 aa
 aa
 aa
@@ -31185,16 +31210,16 @@ BR
 on
 on
 EH
+rI
+rI
 Fn
 FZ
 ek
+WZ
+WZ
 YK
 WZ
 Nv
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -31384,20 +31409,20 @@ xY
 zu
 AK
 BS
+EI
 CT
+EI
 DO
 EI
 Fo
 fk
+Io
+Io
 GB
 Ho
 HR
-Io
+HA
 Kn
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -31594,11 +31619,11 @@ bj
 bj
 VV
 WZ
+WZ
+WZ
+WZ
+WZ
 cv
-aa
-aa
-aa
-aa
 aa
 aa
 aa
@@ -31796,8 +31821,8 @@ cS
 de
 VV
 DT
-aa
-aa
+DT
+DT
 aa
 aa
 aa
@@ -31998,7 +32023,7 @@ cX
 df
 VV
 DT
-aa
+DT
 aa
 aa
 aa
