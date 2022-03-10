@@ -31,7 +31,7 @@
 			RELIGION_UNATHI_AGA_EAKHE
 		)
 	)
-
+	default_cultural_info = list(TAG_CULTURE = CULTURE_UNATHI_YEOSA_LITTORAL)
 
 
 	override_organ_types = list(

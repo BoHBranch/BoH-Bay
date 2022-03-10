@@ -195,6 +195,8 @@
 	allowed_branches = list(/datum/mil_branch/fleet)
 
 	allowed_ranks = list(
+		/datum/mil_rank/fleet/e2,
+		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/fleet/e6
@@ -441,10 +443,16 @@
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer/marine
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/fleet/e7,
+		/datum/mil_rank/fleet/e8,
+		/datum/mil_rank/fleet/e9,		
 		/datum/mil_rank/fleet/w2,
 		/datum/mil_rank/fleet/w3,
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3,
+		/datum/mil_rank/marine_corps/e7,
+		/datum/mil_rank/marine_corps/e8,
+		/datum/mil_rank/marine_corps/e9,
 		/datum/mil_rank/marine_corps/w2,
 		/datum/mil_rank/marine_corps/w3,
 		/datum/mil_rank/marine_corps/o2,

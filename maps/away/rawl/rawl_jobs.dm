@@ -8,6 +8,7 @@
 	for mercenary work of all sorts. You're as willing to offer labor as you are to \
 	get into trouble, but if you get caught trying to steal info or tech from Sol, keep your mouth shut."
 	whitelisted_species = list(SPECIES_UNATHI)
+	required_language = LANGUAGE_UNATHI_SINTA
 	is_semi_antagonist = TRUE
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_ADEPT,
@@ -54,6 +55,7 @@
 	for mercenary work of all sorts. You're as willing to offer labor as you are to \
 	get into trouble, but if you get caught trying to steal info or tech from Sol, keep your mouth shut."
 	whitelisted_species = list(SPECIES_UNATHI,SPECIES_YEOSA,SPECIES_OLDUNATHI)
+	required_language = LANGUAGE_UNATHI_SINTA
 	is_semi_antagonist = TRUE
 	min_skill = list(
 		SKILL_CONSTRUCTION = SKILL_ADEPT,
@@ -105,6 +107,7 @@
 	for mercenary work of all sorts. You're as willing to offer labor as you are to \
 	get into trouble, but if you get caught trying to steal info or tech from Sol, keep your mouth shut."
 	whitelisted_species = list(SPECIES_UNATHI,SPECIES_YEOSA,SPECIES_OLDUNATHI)
+	required_language = LANGUAGE_UNATHI_SINTA
 	is_semi_antagonist = TRUE
 	min_skill = list(
 		SKILL_HAULING = SKILL_BASIC,

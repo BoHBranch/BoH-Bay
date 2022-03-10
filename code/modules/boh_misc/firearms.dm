@@ -6,7 +6,10 @@
 	name = "Mk59"
 	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps. It's known for severe issues with reliability when not maintained well or used by inexperienced shooters."
 	magazine_type = /obj/item/ammo_magazine/pistol/double/pepperball
-	jam_chance = 5 //Cheap firearm. Chance of jamming.
+	fire_sound = 'sound/weapons/gunshot/pistol_mk59.ogg'
+	jam_chance = 5 //Cheap firearm. Chance of jamming
+	fire_delay = 2 // Fires faster than usual
+	damage_mult = 0.9 // Damages a bit less than peers.
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar/cabinet
 	starts_loaded = 0
@@ -53,7 +56,7 @@
 	desc = "The Lumoco Arms' Mk12 is a rugged revolver for people who don't keep their guns well-maintained. Unlike its cousin, the Mk59 'Jhen Bothus', it has no issues with reliability."
 	accuracy = 2
 	bulk = 0
-	fire_delay = 14
+	fire_delay = 5.5
 	penetration_mod = 10
 	falloff_mod = -0.5
 

@@ -7,6 +7,13 @@
 	var/scannable       //if set to TRUE will show up on ship sensors for detailed scans
 	var/overmap_effect_state //Our overmap effect state.
 
+	var/list/map_z = list()
+
+	var/start_x			//Coordinates for self placing
+	var/start_y			//will use random values if unset
+
+	var/sector_flags = OVERMAP_SECTOR_KNOWN|OVERMAP_SECTOR_IN_SPACE
+
 //Overlay of how this object should look on other skyboxes
 /obj/effect/overmap/proc/get_skybox_representation()
 	return
