@@ -2,7 +2,7 @@
 #define MIN_FIELD_STR 1
 
 /obj/machinery/power/fusion_core
-	name = "\improper R-UST Mk. 8 Tokamak core"
+	name = "\improper Large Hyperluminal Engine"
 	desc = "An enormous solenoid for generating extremely high power electromagnetic fields. It includes a kinetic energy harvester."
 	icon = 'icons/obj/machines/power/fusion_core.dmi'
 	icon_state = "core0"
@@ -98,7 +98,7 @@
 		var/datum/extension/local_network_member/fusion = get_extension(src, /datum/extension/local_network_member)
 		fusion.get_new_tag(user)
 		return
-	
+
 	else if(isWrench(W))
 		anchored = !anchored
 		playsound(src.loc, 'sound/items/Ratchet.ogg', 75, 1)
