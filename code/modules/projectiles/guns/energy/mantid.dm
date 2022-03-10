@@ -4,6 +4,8 @@
 /datum/extension/mantidgun/proc/check_held_user(var/mob/living/carbon/human/user, var/atom/movable/thing)
 	if(!istype(user))
 		return FALSE
+	if(istype(user) && user.internal_organs_by_name[BP_SYSTEM_CONTROLLER]) //If they have a controller, they can use the guns.
+		return TRUE
 	if(user.species.get_bodytype(user) != SPECIES_MANTID_ALATE && user.species.get_bodytype(user) != SPECIES_MANTID_GYNE && user.species.get_bodytype(user) != SPECIES_NABBER && user.unEquip(thing))
 		to_chat(user, SPAN_WARNING("\The [thing] lets out a shock!"))
 		playsound(user, 'sound/effects/zapbeep.ogg', 50, 1)
