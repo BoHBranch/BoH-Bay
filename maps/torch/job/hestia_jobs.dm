@@ -140,16 +140,16 @@
 	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_medic
-	min_skill = list(   SKILL_EVA     = SKILL_BASIC,
-	                    SKILL_MEDICAL = SKILL_BASIC,
-						SKILL_COMBAT  = SKILL_ADEPT,
-						SKILL_WEAPONS = SKILL_ADEPT,
-	                    SKILL_ANATOMY = SKILL_BASIC)
+	min_skill = list(SKILL_EVA    = SKILL_BASIC,
+					SKILL_MEDICAL = SKILL_BASIC,
+					SKILL_COMBAT  = SKILL_ADEPT,
+					SKILL_WEAPONS = SKILL_ADEPT,
+					SKILL_ANATOMY = SKILL_BASIC)
 
-	max_skill = list(   SKILL_MEDICAL      = SKILL_MAX,
-						SKILL_COMBAT       = SKILL_MAX,
-						SKILL_WEAPONS      = SKILL_MAX,
-	                    SKILL_CHEMISTRY    = SKILL_MAX)
+	max_skill = list(SKILL_MEDICAL     = SKILL_MAX,
+					SKILL_COMBAT       = SKILL_MAX,
+					SKILL_WEAPONS      = SKILL_MAX,
+					SKILL_CHEMISTRY    = SKILL_MAX)
 
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_ranks = list(
