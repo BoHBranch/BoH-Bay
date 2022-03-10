@@ -212,6 +212,7 @@
 	dir = 1
 	},
 /obj/structure/closet/crate/munitions/payload/antimissile,
+/obj/machinery/light,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
 "ay" = (
@@ -302,6 +303,16 @@
 	},
 /obj/machinery/computer/ship/missiles{
 	dir = 4
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/ofd)
+"aL" = (
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
@@ -14268,7 +14279,7 @@ pY
 Xl
 oI
 ay
-ay
+aL
 Bt
 px
 cZ
