@@ -120,9 +120,11 @@ var/const/HOLOPAD_MODE = RANGE_BASED
 				targetpad = holopadlist["[temppad]"]
 				if(targetpad==src)
 					to_chat(user, SPAN_INFO("Using such sophisticated technology, just to talk to yourself seems a bit silly."))
+         	targetpad = null //Clean up the mess after an unsuccessful call
 					return
 				if(targetpad && targetpad.caller_id)
 					to_chat(user, SPAN_INFO("The pad flashes a busy sign. Maybe you should try again later."))
+					targetpad = null //Clean up the mess after an unsuccessful call
 					return
 				if(targetpad)
 					make_call(targetpad, user)
