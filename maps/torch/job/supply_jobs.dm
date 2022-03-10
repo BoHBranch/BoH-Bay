@@ -83,7 +83,7 @@
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
 	
-	/datum/job/qm/get_description_blurb()
+	/datum/job/cargo_tech/get_description_blurb()
 	return "You are a Deck Technician, you answer directly to the Deck Officer. Your responsibilities are to ensure supplies ordered are delivered, shuttles are fuelled, munitions are made and loaded, and to man the ship's missile weaponry in the case  of ship to ship combat."
 
 /datum/job/mining
