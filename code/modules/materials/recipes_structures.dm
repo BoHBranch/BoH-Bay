@@ -24,3 +24,12 @@
 	time = 50
 	on_floor = 1
 	difficulty = 2
+
+//Temp until we figure out how we want procurement to work.
+/datum/stack_recipe/missile_casing
+	title = "MK3 Universal Missile Casing"
+	result_type = /obj/structure/missile
+	req_amount = 25
+	time = 125
+	on_floor = 1
+	difficulty = 3

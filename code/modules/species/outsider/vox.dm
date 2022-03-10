@@ -190,7 +190,6 @@
 	. = ..(grabber, target, GRAB_ARMALIS)
 
 
-/*
 /datum/species/vox/pariah
 	name = SPECIES_VOXPARIAH
 	description = "Sickly biproducts of Vox society, these creatures are vilified by their own kind \
@@ -241,7 +240,7 @@
 	)
 
 	species_flags = SPECIES_FLAG_NO_SCAN//shouldn't be needed, but in game happenings have shown otherwise. For some reason.
-	spawn_flags = SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_LACE// | SPECIES_CAN_JOIN
+	spawn_flags = SPECIES_IS_RESTRICTED
 	appearance_flags = HAS_EYE_COLOR | HAS_HAIR_COLOR
 
 /datum/species/vox/pariah/get_bodytype(var/mob/living/carbon/human/H)
@@ -249,4 +248,4 @@
 
 // No combat skills for you.
 /datum/species/vox/pariah/can_shred(var/mob/living/carbon/human/H, var/ignore_intent)
-	return 0*/
+	return 0
