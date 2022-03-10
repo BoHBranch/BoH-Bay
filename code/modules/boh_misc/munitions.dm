@@ -236,7 +236,7 @@
 /obj/item/projectile/bullet/pistol/frangible
 	name = "frangible bullet"
 	damage = 15
-	armor_penetration = 5
+	armor_penetration = 35 //Lets try this. Up from 5.
 	shrapnel_chance_multiplier = 2 //Smaller, tumbling projectile.
 	arterial_bleed_chance_multiplier = 1.2 //Less post-pen compared to rifles.
 
