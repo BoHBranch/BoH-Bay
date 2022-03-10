@@ -100,7 +100,7 @@
 /area/ship/skrellskoutship/observatory)
 "bf" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "xil_dock_pump"
 	},
 /obj/structure/handrai{
@@ -131,7 +131,7 @@
 /area/ship/skrellskoutship/observatory)
 "bu" = (
 /obj/machinery/door/airlock/external/glass{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "xil_dock_inner";
 	locked = 1
 	},
@@ -1505,7 +1505,7 @@
 /area/ship/skrellskoutship/observatory)
 "rh" = (
 /obj/machinery/door/airlock/external/glass{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "observatory_dock_inner";
 	locked = 1
 	},
@@ -1580,7 +1580,7 @@
 /area/ship/skrellscoutship/maintenance/atmos)
 "rJ" = (
 /obj/machinery/door/airlock/external/glass{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "observatory_dock_inner";
 	locked = 1
 	},
@@ -1705,7 +1705,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "observatory_dock_pump"
 	},
 /turf/simulated/floor/tiled/skrell,
@@ -1833,7 +1833,7 @@
 /area/ship/skrellscoutship/command/brig)
 "uH" = (
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "observatory_dock";
 	pixel_x = 23;
 	pixel_y = 5;
@@ -1842,7 +1842,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "observatory_dock_pump"
 	},
 /turf/simulated/floor/tiled/skrell,
@@ -1936,11 +1936,11 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "observatory_dock_pump"
 	},
 /obj/machinery/airlock_sensor{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "observatory_dock_sensor";
 	pixel_x = 24
 	},
@@ -2027,7 +2027,7 @@
 /area/ship/skrellskoutship/observatory)
 "xd" = (
 /obj/machinery/door/airlock/external/glass{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "observatory_dock_outer";
 	locked = 1
 	},
@@ -2035,7 +2035,7 @@
 /area/ship/skrellskoutship/observatory)
 "xi" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "xil_dock_pump_out_external"
 	},
 /obj/structure/handrai{
@@ -2065,13 +2065,13 @@
 	name = "Blast Doors"
 	},
 /obj/machinery/door/airlock/external/glass{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "xil_dock_outer";
 	locked = 1
 	},
 /obj/machinery/access_button{
 	command = "cycle_exterior";
-	frequency = 1289;
+	frequency = 1331;
 	master_tag = "xil_dock";
 	pixel_x = -32;
 	pixel_y = 6;
@@ -2084,12 +2084,12 @@
 /area/ship/skrellscoutship/dock)
 "xw" = (
 /obj/machinery/airlock_sensor{
-	frequency = 1292;
+	frequency = 1331;
 	id_tag = "xil_dock_ext";
 	pixel_y = -23
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "xil_dock_pump_out_external"
 	},
 /obj/structure/handrai{
@@ -2100,7 +2100,7 @@
 "xz" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "xil_dock_pump_out_internal"
 	},
 /obj/machinery/light/skrell{
@@ -2128,11 +2128,11 @@
 "xM" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "xil_dock_pump_out_internal"
 	},
 /obj/machinery/airlock_sensor{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "xil_dock_sensor";
 	pixel_x = 24
 	},
@@ -2279,12 +2279,12 @@
 /area/ship/skrellscoutship/command/armory)
 "zq" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "xil_dock_pump"
 	},
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	cycle_to_external_air = 1;
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "xil_dock";
 	pixel_x = 23;
 	pixel_y = 5;
@@ -2747,7 +2747,7 @@
 "Eu" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "observatory_dock_pump"
 	},
 /turf/simulated/floor/tiled/skrell,
@@ -2913,7 +2913,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "observatory_dock_pump"
 	},
 /turf/simulated/floor/tiled/skrell,
@@ -3365,7 +3365,7 @@
 "JO" = (
 /obj/effect/shuttle_landmark/skrellscoutship/start,
 /obj/machinery/door/airlock/external/glass{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "observatory_dock_outer";
 	locked = 1
 	},
@@ -3928,13 +3928,13 @@
 /area/ship/skrellscoutship/command/bridge)
 "QA" = (
 /obj/machinery/door/airlock/external/glass{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "xil_dock_inner";
 	locked = 1
 	},
 /obj/machinery/access_button{
 	command = "cycle_interior";
-	frequency = 1289;
+	frequency = 1331;
 	master_tag = "xil_dock";
 	pixel_x = 22;
 	pixel_y = -22
@@ -4255,7 +4255,7 @@
 	name = "Blast Doors"
 	},
 /obj/machinery/door/airlock/external/glass{
-	frequency = 1289;
+	frequency = 1331;
 	id_tag = "xil_dock_outer";
 	locked = 1
 	},

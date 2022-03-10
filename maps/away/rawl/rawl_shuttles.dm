@@ -43,11 +43,11 @@
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/shuttle_landmark/rawl/torch
-	name = "SEV Torch IPV Rawl Fore Airlock"
+	name = "Invalid Central Fore Airlock"
 	landmark_tag = "nav_hangar_rawlship_torch"
 
 /obj/effect/shuttle_landmark/rawl/torchdock
-	name = "SEV Torch IPV Rawl Lower Fore Dock"
+	name = "Valid Lower Fore Dock"
 	landmark_tag = "nav_hangar_rawlship_torchdock"
 	docking_controller = "nuke_shuttle_dock_airlock"
 
