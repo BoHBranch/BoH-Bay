@@ -658,4 +658,3 @@
 
 /obj/item/clothing/suit/space/rig/mantid/tiro/elite
 	desc = "The exosuit of the Gyne's Par. Little else can compare to its protection and prestige, besides perhaps the hatred of Solarians towards them."
-

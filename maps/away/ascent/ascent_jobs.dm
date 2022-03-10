@@ -251,7 +251,9 @@
 	title = "Ascent Tiro"
 	supervisors = "the Khaarmani."
 	total_positions = 1
-	info = "You are an Ascent Tiro, servant to the independent Ascent vessel. How you ended up in this position is known only to you and the Khaarmani. Assist the Gyne and Queen in their duties - or, find a method of escape."
+	info = "You are an Ascent Tiro, servant to the independent Ascent vessel. How you ended up in this position is known only to you and the Khaarmani. Assist the Gyne and Queen in their duties - or, find a method of escape. \
+	As this is a roleplaying role, you will be expected to uphold a certain bare-minimum standard when playing. If you have devoted yourself to the role of Tiro enough to be considered a <b>Par</b> by the Ascent (and have accepted the equipment), \
+	please note that you will <u>be held to a higher standard</u> in regards to roleplay as them!"
 	outfit_type = /decl/hierarchy/outfit/job/tiro
 	blacklisted_species = list(SPECIES_VOXPARIAH, SPECIES_VOX, SPECIES_ADHERENT)
 	whitelisted_species = null
