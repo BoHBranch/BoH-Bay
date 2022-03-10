@@ -22,6 +22,9 @@
 		"nav_rawl_1",
 		"nav_rawl_2"
 	)
+	initial_restricted_waypoints = list(
+		"IPV Rawl" = list("nav_hangar_rawlship")
+	)
 
 /obj/effect/shuttle_landmark/rawl/one
 	name = "East of asteroid"

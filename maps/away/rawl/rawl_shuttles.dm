@@ -10,10 +10,6 @@
 	vessel_size = SHIP_SIZE_SMALL
 	fore_dir = WEST
 	hide_from_reports = TRUE
-	initial_restricted_waypoints = list(
-		"IPV Rawl" = list("nav_hangar_rawlship")
-	)
-
 
 /datum/shuttle/autodock/overmap/rawl_ship
 	name = "IPV Rawl"
