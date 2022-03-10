@@ -386,6 +386,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/random/drinkbottle,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "gf" = (
@@ -912,6 +913,20 @@
 /obj/machinery/optable,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/med)
+"nw" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/structure/table/standard,
+/obj/item/weapon/spacecash/bundle/c10,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
 "nG" = (
 /obj/machinery/porta_turret/vox,
 /turf/simulated/floor/reinforced/airless,
@@ -1151,8 +1166,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
+"qJ" = (
+/obj/structure/table/standard,
+/obj/item/weapon/book/manual/nuclear,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
 "qV" = (
-/obj/structure/morgue,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
@@ -1348,7 +1367,6 @@
 /obj/item/weapon/reagent_containers/glass/bottle/stoxin,
 /obj/item/weapon/reagent_containers/syringe,
 /obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
@@ -1684,6 +1702,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/table/standard,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
 "yA" = (
@@ -1780,8 +1799,6 @@
 	dir = 4
 	},
 /obj/structure/table/standard,
-/obj/item/weapon/spacecash/bundle/c500,
-/obj/item/weapon/spacecash/bundle/c500,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "zB" = (
@@ -1843,6 +1860,11 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/space)
+"AQ" = (
+/obj/structure/table/standard,
+/obj/random/drinkbottle,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
 "AW" = (
 /obj/machinery/computer/ship/helm{
 	dir = 4;
@@ -2131,6 +2153,21 @@
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/ship_mid)
+"Fo" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/item/weapon/stool/padded,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
 "Fu" = (
 /obj/structure/bed/padded,
 /obj/structure/curtain/open/bed,
@@ -2278,6 +2315,8 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
 	},
+/obj/structure/table/standard,
+/obj/item/weapon/book/manual/barman_recipes,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
 "Gx" = (
@@ -2292,6 +2331,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/table/standard,
+/obj/item/weapon/spacecash/bundle/c50,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
 "Gy" = (
@@ -2942,6 +2983,17 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/med)
+"OG" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/item/weapon/stool/padded,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
 "OI" = (
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/cbridge)
@@ -3275,8 +3327,8 @@
 /obj/item/weapon/stock_parts/circuitboard/circuit_imprinter,
 /obj/machinery/atmospherics/pipe/cap/visible,
 /obj/structure/closet/secure_closet/guncabinet{
-	req_access = list("ACCESS_VOXSHIP_CAPTAIN");
-	name = "Quills Project Locker"
+	name = "Quills Project Locker";
+	req_access = list("ACCESS_VOXSHIP_CAPTAIN")
 	},
 /obj/random/energy,
 /obj/random/energy,
@@ -3546,6 +3598,9 @@
 /area/voxship/ship_mid)
 "VO" = (
 /obj/structure/table/gamblingtable,
+/obj/item/weapon/spacecash/bundle/c500,
+/obj/item/weapon/spacecash/bundle/c500,
+/obj/random/drinkbottle,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "VY" = (
@@ -3561,7 +3616,6 @@
 /obj/item/weapon/FixOVein,
 /obj/item/weapon/reagent_containers/syringe/antiviral,
 /obj/item/weapon/reagent_containers/syringe/antiviral,
-/obj/effect/decal/cleanable/dirt,
 /obj/item/device/scanner/health,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
@@ -3642,9 +3696,9 @@
 	icon_state = "0-8"
 	},
 /mob/living/bot/medbot{
+	botcard_access = list("ACCESS_VOXSHIP");
 	name = "Vox Healer bot";
-	req_access = list(list("ACCESS_VOXSHIP"));
-	botcard_access = list("ACCESS_VOXSHIP")
+	req_access = list(list("ACCESS_VOXSHIP"))
 	},
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
@@ -15499,9 +15553,9 @@ iI
 lj
 nY
 sM
-kj
-uB
-XQ
+OG
+aN
+Fo
 Kh
 Lh
 Vj
@@ -15651,8 +15705,8 @@ eg
 yW
 UF
 Pk
-NF
-uB
+nw
+AQ
 Gv
 tV
 Lh
@@ -15803,9 +15857,9 @@ fM
 yW
 UF
 ao
-XQ
-uB
-XQ
+Fo
+aN
+Fo
 Kd
 Lh
 Vs
@@ -16411,9 +16465,9 @@ gl
 yW
 UF
 uB
-XQ
-uB
-XQ
+Fo
+aN
+Fo
 uB
 QV
 LK
@@ -16564,7 +16618,7 @@ yW
 UF
 dZ
 yv
-uB
+qJ
 Gx
 KB
 Zb
@@ -16715,9 +16769,9 @@ gF
 qE
 qE
 ao
-XQ
-uB
-XQ
+Fo
+aN
+Fo
 Kd
 aj
 aj
