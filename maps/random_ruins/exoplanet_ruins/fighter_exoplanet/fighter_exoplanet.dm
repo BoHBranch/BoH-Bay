@@ -5,4 +5,4 @@
 	suffixes = list("fighter_exoplanet/fighter_exoplanet.dmm")
 	cost = 1
 	template_flags = TEMPLATE_FLAG_NO_RUINS | TEMPLATE_FLAG_CLEAR_CONTENTS
-	ruin_tags = RUIN_ALIEN
+	ruin_tags = RUIN_HUMAN | RUIN_WRECK
