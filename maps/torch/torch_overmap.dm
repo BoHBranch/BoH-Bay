@@ -17,7 +17,8 @@
 		"Rescue" = list("nav_ert_dock"),
 		"IPV Rawl" = list("nav_hangar_rawlship_torch","nav_hangar_rawlship_torchdock"),
 		"Trichoptera" = list("nav_ascentshipone_dock", "nav_ascentshipone_altdock"),
-		"Lepidoptera" = list("nav_ascentshiptwo_dock")
+		"Lepidoptera" = list("nav_ascentshiptwo_dock"),
+		"Vox Shuttle" = list("nav_vox_shuttle_dock")
 	)
 
 	initial_generic_waypoints = list(
