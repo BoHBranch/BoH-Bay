@@ -4,7 +4,7 @@
 /datum/extension/mantidgun/proc/check_held_user(var/mob/living/carbon/human/user, var/atom/movable/thing)
 	if(!istype(user))
 		return FALSE
-	if(user.species.get_bodytype(user) != SPECIES_MANTID_ALATE && user.species.get_bodytype(user) != SPECIES_MANTID_GYNE && user.species.get_bodytype(user) != SPECIES_NABBER && user.unEquip(thing))
+	if(user.species.get_bodytype(user) != SPECIES_MANTID_ALATE && user.species.get_bodytype(user) != SPECIES_MANTID_GYNE && user.species.get_bodytype(user) != SPECIES_MONARCH_WORKER && user.species.get_bodytype(user)  != SPECIES_MONARCH_QUEEN && user.species.get_bodytype(user) != SPECIES_NABBER && user.unEquip(thing))
 		to_chat(user, SPAN_WARNING("\The [thing] lets out a shock!"))
 		playsound(user, 'sound/effects/zapbeep.ogg', 50, 1)
 		return FALSE
