@@ -1,18 +1,20 @@
 // marine patch
+
 /obj/item/clothing/accessory/solgov/smc_patch
-	name = "\improper Marine Corps patch"
-	desc = "A robust shoulder patch, carrying the symbol of the Solar Marine Corps, or SMC for short."
+	name = "\improper Marine Corps Patch"
+	desc = "A robust shoulder patch, carrying the symbol of the SCG Marine Corps, or SCGMC for short.."
 	icon = 'maps/torch/icons/obj/obj_accessories_boh.dmi'
 	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi')
 	icon_state = "smcpatch"
 	on_rolled = list("down" = "none")
-	slot = ACCESSORY_SLOT_INSIGNIA
-	check_codex_val = FACTION_MARINES
 
 /obj/item/clothing/accessory/solgov/smc_patch/xeno
-	name = "\improper Xenoic Division of Marine Corps patch"
+	name = "\improper Xenoic Division of the Marine Corps patch"
 	desc = "A robust shoulder patch, carrying the symbol-mascot of Xenoic division, yellow-eyed devil dog."
+	icon = 'maps/torch/icons/obj/obj_accessories_boh.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi')
 	icon_state = "smcpatch13"
+	on_rolled = list("down" = "none")
 
 // Sixth Fleet Patch, as for bonus
 /obj/item/clothing/accessory/solgov/fleet_patch/sixth
@@ -28,21 +30,21 @@
 	name = "\improper NANOTRASEN patch"
 	desc = "An armor tag with the words NANOTRASEN printed in bottle green lettering on it."
 
-// Dog Tags badge string rename, plus added for SMC and SGF.
+// Dog Tags badge string rename, plus added for SMC and NTEF.
 /obj/item/clothing/accessory/badge/solgov/tags
 	badge_string = "SGV Dagon"
 
 /obj/item/clothing/accessory/badge/solgov/tags/fleet
-	badge_string = "SGF"
+	badge_string = "SCGF"
 
 /obj/item/clothing/accessory/badge/solgov/tags/marine
-	badge_string = "SMC"
+	badge_string = "SCGMC"
 
 // custom ribbon for loadout
 /obj/item/clothing/accessory/ribbon/solgov/custom
 	icon_state = "ribbon_custom"
 	icon = 'maps/torch/icons/obj/obj_accessories_boh.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi')
+	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_boh.dmi')
 
 /obj/item/clothing/accessory/ribbon/solgov/custom/color
 	icon_state = "ribbon_custom_color"
@@ -59,7 +61,7 @@
 	name = "ranks (E-2 junior explorer)"
 	desc = "Insignia denoting the rank of Junior Explorer."
 
-// SGF ranks. Icon overrides for now (useless on-mob, but good for in-hand/dropped or on examine).
+// SCGF ranks. Icon overrides for now (useless on-mob, but good for in-hand/dropped or on examine).
 /obj/item/clothing/accessory/solgov/rank/fleet
 	icon_state = "FE0"
 	overlay_state = "fleetrank_enlisted"
@@ -164,7 +166,7 @@
 	icon_state = "FO6"
 	overlay_state = "fleetrank_command"
 
-/obj/item/clothing/accessory/solgov/rank/fleet/flag
+/obj/item/clothing/accessory/solgov/rank/fleet/flag/o7
 	icon_state = "FO7"
 	overlay_state = "fleetrank_command"
 
