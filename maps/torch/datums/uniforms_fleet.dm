@@ -31,43 +31,31 @@
 	name = "Fleet Commissioned Officer"
 	min_rank = 11
 
-	service_under = /obj/item/clothing/under/solgov/service/fleet/officer
-	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/officer
-	service_under_alt = /obj/item/clothing/under/solgov/service/fleet
-	service_skirt_alt = /obj/item/clothing/under/solgov/service/fleet/skirt
-	
-	dress_under = /obj/item/clothing/under/solgov/service/fleet/officer
-	dress_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/officer
-	dress_under_alt = /obj/item/clothing/under/solgov/service/fleet
-	dress_skirt_alt = /obj/item/clothing/under/solgov/service/fleet/skirt
+	service_under = list(/obj/item/clothing/under/solgov/service/fleet/officer, /obj/item/clothing/under/solgov/service/fleet)
+	service_skirt = list(/obj/item/clothing/under/solgov/service/fleet/skirt/officer, /obj/item/clothing/under/solgov/service/fleet/skirt)
+
+	dress_under = list(/obj/item/clothing/under/solgov/service/fleet/officer, /obj/item/clothing/under/solgov/service/fleet)
+	dress_skirt = list(/obj/item/clothing/under/solgov/service/fleet/skirt/officer, /obj/item/clothing/under/solgov/service/fleet/skirt)
 	
 /decl/hierarchy/mil_uniform/fleet //Can only be officers
 	name = "Fleet Senior Commissioned Officer"
 	min_rank = 15
 
-	service_under = /obj/item/clothing/under/solgov/service/fleet/command
-	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/command
-	service_under_alt = /obj/item/clothing/under/solgov/service/fleet
-	service_skirt_alt = /obj/item/clothing/under/solgov/service/fleet/skirt
+	service_under = list(/obj/item/clothing/under/solgov/service/fleet/command, /obj/item/clothing/under/solgov/service/fleet)
+	service_skirt = list(/obj/item/clothing/under/solgov/service/fleet/skirt/command, /obj/item/clothing/under/solgov/service/fleet/skirt)
 
-	dress_under = /obj/item/clothing/under/solgov/service/fleet/command
-	dress_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/command
-	dress_under_alt = /obj/item/clothing/under/solgov/service/fleet
-	dress_skirt_alt = /obj/item/clothing/under/solgov/service/fleet/skirt
+	dress_under = list(/obj/item/clothing/under/solgov/service/fleet/command, /obj/item/clothing/under/solgov/service/fleet)
+	dress_skirt = list(/obj/item/clothing/under/solgov/service/fleet/skirt/command, /obj/item/clothing/under/solgov/service/fleet/skirt)
 	
 /decl/hierarchy/mil_uniform/fleet //Can only be officers
 	name = "Fleet Flag Officer"
 	min_rank = 17
 
-	service_under = /obj/item/clothing/under/solgov/service/fleet/flag
-	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/flag
-	service_under_alt = /obj/item/clothing/under/solgov/service/fleet
-	service_skirt_alt = /obj/item/clothing/under/solgov/service/fleet/skirt
+	service_under = list(/obj/item/clothing/under/solgov/service/fleet/flag, /obj/item/clothing/under/solgov/service/fleet)
+	service_skirt = list(/obj/item/clothing/under/solgov/service/fleet/skirt/flag, /obj/item/clothing/under/solgov/service/fleet/skirt)
 
-	dress_under = /obj/item/clothing/under/solgov/service/fleet/flag
-	dress_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/flag
-	dress_under_alt = /obj/item/clothing/under/solgov/service/fleet
-	dress_skirt_alt = /obj/item/clothing/under/solgov/service/fleet/skirt
+	dress_under = list(/obj/item/clothing/under/solgov/service/fleet/flag, /obj/item/clothing/under/solgov/service/fleet)
+	dress_skirt = list(/obj/item/clothing/under/solgov/service/fleet/skirt/flag, /obj/item/clothing/under/solgov/service/fleet/skirt)
 	
 /decl/hierarchy/mil_uniform/fleet/com //Can only be officers
 	name = "Fleet command"
