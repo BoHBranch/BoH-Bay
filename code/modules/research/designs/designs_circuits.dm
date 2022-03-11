@@ -583,6 +583,13 @@
 	build_path = /obj/item/weapon/stock_parts/circuitboard/shuttle_console/explore
 	sort_string = "JFAAH"
 
+/datum/design/circuit/weapons
+	name = "ship target control console"
+	id = "shipweapons"
+	req_tech = list(TECH_DATA = 4)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/missiles
+	sort_string = "JFAAI"
+
 /datum/design/circuit/biogenerator
 	name = "biogenerator"
 	id = "biogenerator"

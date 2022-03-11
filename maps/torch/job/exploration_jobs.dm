@@ -29,7 +29,7 @@
 	access = list(
 		access_pathfinder, access_explorer, access_eva, access_maint_tunnels, access_bridge, access_emergency_storage,
 		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_research,
-		access_guppy, access_hangar
+		access_guppy, access_hangar, access_petrov_analysis, access_petrov, access_petrov_maint, access_petrov_helm, access_petrov_toxins, access_petrov_security
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
@@ -64,7 +64,7 @@
 
 	access = list(
 	 access_guppy, access_hangar, access_maint_tunnels, access_guppy_helm, access_expedition_shuttle, access_expedition_shuttle_helm, access_pilot,
-		access_solgov_crew, access_eva, access_explorer,
+		access_solgov_crew, access_eva, access_explorer, access_petrov_analysis, access_petrov, access_petrov_maint, access_petrov_helm, access_aquila, access_aquila_helm
 	)
 	min_skill = list(	SKILL_EVA   = SKILL_BASIC,
 						SKILL_PILOT = SKILL_ADEPT)
@@ -96,7 +96,7 @@
 	                    SKILL_WEAPONS     = SKILL_EXPERT)
 
 	access = list(access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,
-		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar,
+		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar, access_petrov_analysis, access_petrov, access_petrov_maint
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
