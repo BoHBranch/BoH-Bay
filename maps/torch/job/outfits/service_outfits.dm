@@ -70,7 +70,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/service/chaplain/ec
 	name = OUTFIT_JOB_NAME("Chaplain - Expeditionary Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/officer/service
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/service
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /decl/hierarchy/outfit/job/torch/crew/service/chaplain/fleet
