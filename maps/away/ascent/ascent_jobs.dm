@@ -241,9 +241,11 @@
 	outfit_type = /decl/hierarchy/outfit/job/monarch
 	min_skill = list(SKILL_EVA = SKILL_ADEPT,
 					SKILL_HAULING = SKILL_ADEPT,
-					SKILL_COMBAT = SKILL_ADEPT,
-					SKILL_WEAPONS = SKILL_ADEPT,
-					SKILL_MEDICAL = SKILL_BASIC)
+					SKILL_COMBAT = SKILL_BASIC,
+					SKILL_WEAPONS = SKILL_BASIC,
+					SKILL_MEDICAL     = SKILL_EXPERT,
+					SKILL_ANATOMY     = SKILL_EXPERT,
+					SKILL_CHEMISTRY   = SKILL_ADEPT)
 	requires_supervisor = "Ascent Gyne"
 
 // Spawn points.
