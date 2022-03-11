@@ -26,6 +26,36 @@
 	dress_gloves = /obj/item/clothing/gloves/white
 
 	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
+
+/decl/hierarchy/mil_uniform/fleet //Can only be officers
+	name = "Fleet Commissioned Officer"
+	min_rank = 11
+
+	service_under = /obj/item/clothing/under/solgov/service/fleet/officer
+	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/officer
+
+	dress_under = /obj/item/clothing/under/solgov/service/fleet/officer
+	dress_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/officer
+
+/decl/hierarchy/mil_uniform/fleet //Can only be officers
+	name = "Fleet Senior Commissioned Officer"
+	min_rank = 15
+
+	service_under = /obj/item/clothing/under/solgov/service/fleet/command
+	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/command
+
+	dress_under = /obj/item/clothing/under/solgov/service/fleet/command
+	dress_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/command
+
+/decl/hierarchy/mil_uniform/fleet //Can only be officers
+	name = "Fleet Flag Officer"
+	min_rank = 17
+
+	service_under = /obj/item/clothing/under/solgov/service/fleet/flag
+	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/flag
+
+	dress_under = /obj/item/clothing/under/solgov/service/fleet/flag
+	dress_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/flag
 /decl/hierarchy/mil_uniform/fleet/com //Can only be officers
 	name = "Fleet command"
 	departments = COM
@@ -42,6 +72,8 @@
 	service_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	service_over = /obj/item/clothing/suit/storage/solgov/service/fleet/officer
 
+	dress_under = /obj/item/clothing/under/solgov/service/fleet/officer
+	dress_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt/officer
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/fleet, /obj/item/clothing/accessory/cloak/boh/command, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
