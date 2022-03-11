@@ -481,7 +481,7 @@
 	
 // have to resprite science, so that'll have to wait
 /decl/hierarchy/mil_uniform/fleet/sci
-	name = "NTEF science"
+	name = "Fleet science"
 	departments = SCI
 
 	utility_under = /obj/item/clothing/under/solgov/utility/expeditionary/research
@@ -498,7 +498,7 @@
 	dress_extra_alt = list(/obj/item/clothing/accessory/cloak/boh/explorer/science, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/sci/senior
-	name = "NTEF science senior"
+	name = "Fleet science senior"
 	min_rank = 4
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/expedition/senior
@@ -509,7 +509,7 @@
 	dress_over_alt = /obj/item/clothing/suit/storage/solgov/dress/fleet
 
 /decl/hierarchy/mil_uniform/fleet/sci/chief
-	name = "NTEF science chief"
+	name = "Fleet science chief"
 	min_rank = 7
 
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/expedition/chief
@@ -521,7 +521,7 @@
 	dress_extra_alt = list(/obj/item/weapon/storage/belt/holster/sheath/fleet, /obj/item/clothing/accessory/cloak/boh/explorer/science, /obj/item/clothing/head/beret/solgov/fleet/dress)
 
 /decl/hierarchy/mil_uniform/fleet/sci/officer
-	name = "NTEF science CO"
+	name = "Fleet science CO"
 	min_rank = 11
 
 	utility_under = /obj/item/clothing/under/solgov/utility/expeditionary/officer/research
@@ -542,7 +542,7 @@
 	dress_extra_alt = list(/obj/item/weapon/storage/belt/holster/sheath/fleet, /obj/item/clothing/accessory/cloak/boh/explorer/science, /obj/item/clothing/head/beret/solgov/fleet/dress/command)
 
 /decl/hierarchy/mil_uniform/fleet/sci/officer/com //Can only be officers
-	name = "NTEF science command"
+	name = "Fleet science command"
 	departments = SCI|COM
 
 	utility_extra = list(/obj/item/clothing/head/beret/solgov/expedition/command,
