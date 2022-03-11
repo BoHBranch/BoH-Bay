@@ -5109,30 +5109,6 @@
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
 /area/ship/skrellscoutship/command/brig)
-"Xl" = (
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/missile/impact{
-	dir = 1;
-	pixel_x = -5;
-	pixel_y = 5
-	},
-/obj/structure/missile/impact{
-	dir = 1;
-	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/structure/missile/impact{
-	dir = 1;
-	pixel_x = 5;
-	pixel_y = -5
-	},
-/obj/structure/missile/impact{
-	dir = 1;
-	pixel_x = -5;
-	pixel_y = -5
-	},
-/turf/simulated/floor/tiled/skrell/red,
-/area/ship/skrellskoutship/observatory)
 "Xr" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
@@ -10592,7 +10568,7 @@ dA
 Tl
 EK
 EK
-Xl
+qL
 UU
 Tb
 xU
