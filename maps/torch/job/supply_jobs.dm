@@ -41,7 +41,7 @@
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
 	
-	datum/job/qm/get_description_blurb()
+	get_description_blurb()
 	return "You are the Deck Officer, and the Supply department, hanger, and munitions are your domain. Your responsibilities include ensuring the ship is supplied, the flight records are filled, shuttles are fuelled, missiles are made, and the ship is always combat ready for ship to ship combat." 						 
 
 
@@ -84,7 +84,7 @@
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
 	
-	datum/job/cargo_tech/get_description_blurb()
+	get_description_blurb()
 	return "You are a Deck Technician, you answer directly to the Deck Officer. Your responsibilities are to ensure supplies ordered are delivered, shuttles are fuelled, munitions are made and loaded, and to man the ship's missile weaponry in the case  of ship to ship combat."
 
 /datum/job/mining
