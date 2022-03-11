@@ -1,3 +1,60 @@
+/decl/hierarchy/mil_uniform
+	name = "Master outfit hierarchy"
+	hierarchy_type = /decl/hierarchy/mil_uniform
+	var/list/branches = null
+	var/departments = 0
+	var/min_rank = 0
+
+	var/pt_under = null
+	var/pt_shoes = null
+
+	var/utility_under = null
+	var/utility_shoes = null
+	var/utility_hat = null
+	var/utility_extra = null
+
+	var/service_under = null
+	var/service_skirt = null
+	var/service_over = null
+	var/service_shoes = null
+	var/service_hat = null
+	var/service_gloves = null
+	var/service_extra = null
+
+	var/dress_under = null
+	var/dress_skirt = null
+	var/dress_over = null
+	var/dress_shoes = null
+	var/dress_hat = null
+	var/dress_gloves = null
+	var/dress_extra = null
+/decl/hierarchy/mil_uniform/fleet
+	name = "Master fleet outfit"
+	hierarchy_type = /decl/hierarchy/mil_uniform/fleet
+	branches = list(/datum/mil_branch/fleet)
+
+	pt_under = /obj/item/clothing/under/solgov/pt/fleet
+	pt_shoes = /obj/item/clothing/shoes/black
+
+	utility_under = /obj/item/clothing/under/solgov/utility/fleet
+	utility_shoes = /obj/item/clothing/shoes/dutyboots
+	utility_hat = /obj/item/clothing/head/solgov/utility/fleet
+	utility_extra = list(/obj/item/clothing/head/beret/solgov/fleet, /obj/item/clothing/head/ushanka/solgov/fleet, /obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,/obj/item/clothing/head/soft/solgov/fleet)
+
+	service_under = /obj/item/clothing/under/solgov/service/fleet
+	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt
+	service_over = null
+	service_shoes = /obj/item/clothing/shoes/dress
+	service_hat = /obj/item/clothing/head/solgov/dress/fleet/garrison
+
+	dress_under = /obj/item/clothing/under/solgov/service/fleet
+	dress_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt
+	dress_over = /obj/item/clothing/suit/dress/solgov/fleet/sailor
+	dress_shoes = /obj/item/clothing/shoes/dress
+	dress_hat = /obj/item/clothing/head/solgov/dress/fleet
+	dress_gloves = /obj/item/clothing/gloves/white
+
+	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
 /decl/hierarchy/mil_uniform/fleet/com //Can only be officers
 	name = "Fleet command"
 	departments = COM
