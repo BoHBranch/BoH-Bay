@@ -246,7 +246,7 @@
 	)
 
 	alt_titles = list(
-		"Nanotrasen Psionic Operative" = /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor/nt,
+		"Nanotrasen Psionic Operative",
 		"Foundation Agent")
 
 /datum/job/psiadvisor/equip(var/mob/living/carbon/human/H)
