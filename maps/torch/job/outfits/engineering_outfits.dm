@@ -10,7 +10,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer
 	name = OUTFIT_JOB_NAME("Senior Engineer")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew/engineering/senior
 	pda_type = /obj/item/modular_computer/pda/heads/ce
@@ -22,7 +22,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
 	name = OUTFIT_JOB_NAME("Engineer - Torch")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew/engineering
 	pda_type = /obj/item/modular_computer/pda/engineering
