@@ -24,8 +24,8 @@
 
 	#include "datums/access.dm"
 	#include "datums/uniforms.dm"
-	#include "datums/uniforms_expedition.dm"
-	//#include "datums/uniforms_fleet.dm"
+	//#include "datums/uniforms_expedition.dm"
+	#include "datums/uniforms_fleet.dm"
 	#include "datums/uniforms_exp_fleet.dm"
 	#include "datums/uniforms_marine-corps.dm"
 	#include "datums/reports/command.dm"
