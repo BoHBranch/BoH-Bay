@@ -77,6 +77,10 @@
 	name = "South of Abnormal Asteroid"
 	landmark_tag = "nav_vox_south"
 
+/obj/effect/shuttle_landmark/vox_ship/dock
+	name = "Invalid Fore Docking Port"
+	landmark_tag = "nav_vox_shuttle_dock"
+
 /obj/effect/submap_landmark/joinable_submap/voxship
 	archetype = /decl/submap_archetype/derelict/voxship
 
