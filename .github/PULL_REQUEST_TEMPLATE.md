@@ -1,7 +1,43 @@
-<!--
+## About The Pull Request
 
+## Why It's Good For The Game
+
+## Did You Test It?
+
+## Authorship
+
+## Changelog
+
+:cl:
+/:cl:
+
+<!--
 Please make sure to detail the changes addressed in this PR on your description and on your title.
 Jokes are fine, but the Pull Request needs to be easy to locate and read. Be clear and concise!
+
+Here are the tags supported by changelog:
+* rscadd - Adding a feature.
+* rscdel - Removing a feature.
+* tweak - Changing an existing feature.
+* bugfix - Fixing an intended functionality that is not working, or correcting an oversight.
+* maptweak - Changing something on a map, or adding a new away site. In 99% of cases, all map changes are maptweak.
+* spellcheck - Spelling and grammar fixes.
+Uncommon tags:
+* admin - Adding, removing or changing administrative tools.
+* balance - Changing an existing feature in such a way that it may broadly impact game balance; usually reserved for larger changes.
+* soundadd - Adding new sounds, usually covered by rscadd unless you're only adding the sounds themselves.
+* sounddel - Ditto as above with rscdel
+* imageadd - Adding new icons; same situation as soundadd - usually you're adding something that uses these icons, so this isn't needed
+* imagedel - Ditto as above.
+* experiment - For experimental changes and tests that are intended to be temporary.
+* wip - For works in progress. You probably won't get away with using this one.
+
+Here's a changelog example:
+:cl: Yourname
+rscadd: Adds a new energy weapon, along with sprites and sound effects.
+sounddel: Removes the unused X song
+imageadd: Adds Skrell pictures to the magazines around the ship/station
+/:cl:
 
 ############################
 
