@@ -13719,6 +13719,7 @@
 /area/maintenance/fourthdeck/port)
 "Kn" = (
 /obj/effect/shuttle_landmark/skipjack/dock,
+/obj/effect/shuttle_landmark/vox_ship/dock,
 /turf/space,
 /area/space)
 "Ko" = (
