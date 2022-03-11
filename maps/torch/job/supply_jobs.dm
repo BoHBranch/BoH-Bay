@@ -1,7 +1,7 @@
 /datum/job/qm
 	title = "Deck Officer"
 	department = "Support"
-	department_flag = SPT
+	department_flag = SPT|SUP
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Commanding Officer"
