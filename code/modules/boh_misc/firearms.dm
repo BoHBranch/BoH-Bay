@@ -200,15 +200,6 @@
 	return ..()
 
 /////////
-// Extended Taser Carbine
-/////////
-/obj/item/weapon/gun/energy/taser/carbine/ext
-	name = "modified electrolaser carbine"
-	desc = "The NT Mk44 NL is a high capacity gun used for non-lethal takedowns. It can switch between high and low intensity stun shots. \
-	This one has a larger capacity."
-	max_shots = 24
-
-/////////
 // EPP
 /////////
 /obj/item/weapon/gun/energy/pulse_rifle/pistol/epp
