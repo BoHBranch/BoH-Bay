@@ -469,8 +469,8 @@
 /obj/item/clothing/under/solgov/service/fleet/skirt/command
 	name = "fleet senior officer service skirt"
 	desc = "The service uniform skirt of the SolGov Fleet, made from immaculate white fabric and gold stripes along its hems."
-	icon_state = "whiteservicefem_comm"
-	worn_state = "whiteservicefem_commm"
+	icon_state = "whiteservicefem_com"
+	worn_state = "whiteservicefem_com"
 
 /obj/item/clothing/under/solgov/service/fleet/skirt/flag
 	name = "fleet flag officer service skirt"
