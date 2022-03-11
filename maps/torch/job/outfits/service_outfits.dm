@@ -11,7 +11,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/service/janitor/ec
 	name = OUTFIT_JOB_NAME("Sanitation Technician - Expeditionary Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/service
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/service
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew/service/janitor
 	pda_type = /obj/item/modular_computer/pda
@@ -30,7 +30,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/service/cook/ec
 	name = OUTFIT_JOB_NAME("Cook - Expeditionary Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/service
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/service
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew/service/chef
 	pda_type = /obj/item/modular_computer/pda
@@ -49,7 +49,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/service/crewman
 	name = OUTFIT_JOB_NAME("Crewman")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary
+	uniform = /obj/item/clothing/under/solgov/utility/fleet
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew
 	pda_type = /obj/item/modular_computer/pda
@@ -70,7 +70,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/service/chaplain/ec
 	name = OUTFIT_JOB_NAME("Chaplain - Expeditionary Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/service
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/officer/service
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /decl/hierarchy/outfit/job/torch/crew/service/chaplain/fleet
