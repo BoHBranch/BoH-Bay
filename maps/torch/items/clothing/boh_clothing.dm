@@ -97,6 +97,14 @@
 /obj/item/clothing/suit/dress/terran
 	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL,ACCESSORY_SLOT_RANK,ACCESSORY_SLOT_OVER)
 
+/obj/item/weapon/rig/military/infantry
+	name = "heavy suit control module"
+	desc = "A heavy, incredibly sleek suit of military grade armor. \
+	The ablative coating and composite armor makes it seem incredibly sturdy."
+	req_access = list(access_infantry)
+	suit_type = "military hardsuit"
+	icon_state = "military_rig"
+
 //####### LONG LABCOATS
 
 /obj/item/clothing/suit/storage/toggle/labcoat/lclabcoat
