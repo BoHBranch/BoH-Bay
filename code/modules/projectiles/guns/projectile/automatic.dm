@@ -25,18 +25,11 @@
 		list(mode_name="long bursts", burst=8, fire_delay=null, move_delay=4, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
 
-// full auto versoin, as an example. NOW WITH ATTACHMENT EXAMPLE TOO!
+// full auto versoin, as an example.
 
 /obj/item/weapon/gun/projectile/automatic/fullauto
 	name = "prototype SMG"
 	desc = "A protoype lightweight, fast firing submachine gun. With a fun switch."
-	// Please for the love of whatever is up there, use this format for your list!
-	attachable_allowed = list(
-		/obj/item/attachable/verticalgrip,
-		/obj/item/attachable/angledgrip,
-		/obj/item/attachable/holosight,
-	)
-
 
 	//FULL AUTO GUNS NEED THEIR OTHER MODES TO BE DEFINED WITH A FALSE, ELSE THEY'LL STILL BE AUTOMATIC WHEN FIREMODES ARE SWITCHED!
 	//SET THE BURST DELAY TO ZERO AS WELL! AUTOMATIC STILL RESPECTS BURST DELAY!
@@ -46,9 +39,7 @@
 		list(mode_name="4-round bursts", automatic = FALSE, fire_delay= 2, burst_delay = 2, burst=4, move_delay =2, one_hand_penalty=1, burst_accuracy=list(0,0,-1,-1), dispersion=list(0.0, 0.0, 0.5, 0.6)),
 		list(mode_name="automatic",  automatic = TRUE, fire_delay = 1, burst = 1, burst_delay = 0, move_delay=2, one_hand_penalty=2, burst_accuracy=list(0,0,-1,-1,-1,-1,-2,-2), dispersion=list(0.0, 0.0, 0.5, 0.6, 0.8, 1.0, 1.0, 1.2)),
 		)
-// This is how you declare a offset.
-/obj/item/weapon/gun/projectile/automatic/fullauto/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 18,"rail_x" = 13, "rail_y" = 18, "under_x" = 23, "under_y" = 21, "stock_x" = 24, "stock_y" = 13, "special_x" = 25, "special_y" = 25)
+
 
 /obj/item/weapon/gun/projectile/automatic/machine_pistol
 	name = "Hephaestus Vesper"
