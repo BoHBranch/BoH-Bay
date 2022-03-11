@@ -3065,9 +3065,6 @@
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "CI" = (
-/obj/machinery/power/apc/hyper/ascent/west{
-	name = "tiro apc"
-	},
 /obj/structure/cable/cyan{
 	d2 = 2;
 	icon_state = "0-2"
@@ -3214,6 +3211,9 @@
 "Lz" = (
 /obj/machinery/atmospherics/unary/vent_pump/on/ascent,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/power/apc/hyper/ascent/west{
+	name = "tiro apc"
+	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "MO" = (
@@ -10735,10 +10735,10 @@ ai
 ai
 ai
 ai
-Yn
-Yn
-Yn
-Yn
+al
+al
+al
+al
 al
 al
 Up
