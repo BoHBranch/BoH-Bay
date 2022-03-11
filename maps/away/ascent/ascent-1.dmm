@@ -2746,7 +2746,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/door/airlock/ascent,
+/obj/machinery/door/airlock/ascent{
+	id_tag = "tirobathroom"
+	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "kF" = (
@@ -2861,7 +2863,6 @@
 	dir = 10
 	},
 /obj/effect/catwalk_plated/ascent,
-/obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "ql" = (
@@ -2891,6 +2892,10 @@
 "tD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
+	},
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "tirobathroom";
+	pixel_x = -32
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
