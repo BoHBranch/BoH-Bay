@@ -14,7 +14,7 @@
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/vox_shuttle)
 	area_usage_test_exempted_root_areas = list(/area/voxship)
 	area_coherency_test_subarea_count = list(
-		/area/voxship/armory = 16
+		/area/voxship/armory = 17
 	)
 
 /obj/effect/overmap/visitable/ship/voxship
@@ -76,6 +76,10 @@
 /obj/effect/shuttle_landmark/vox_ship/nav_south
 	name = "South of Abnormal Asteroid"
 	landmark_tag = "nav_vox_south"
+
+/obj/effect/shuttle_landmark/vox_ship/dock
+	name = "Invalid Fore Docking Port"
+	landmark_tag = "nav_vox_shuttle_dock"
 
 /obj/effect/submap_landmark/joinable_submap/voxship
 	archetype = /decl/submap_archetype/derelict/voxship

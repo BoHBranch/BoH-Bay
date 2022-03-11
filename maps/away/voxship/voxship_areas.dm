@@ -42,6 +42,10 @@
 	name = "\improper Vox OFD"
 	icon_state = "armory"
 
+/area/voxship/misslie
+	name = "\improper Vox Misslie Room"
+	icon_state = "armory"
+
 /area/voxship/dock
 	name = "\improper Vox Dock"
 	icon_state = "dock"

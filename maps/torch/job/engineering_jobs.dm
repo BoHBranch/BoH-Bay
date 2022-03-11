@@ -55,7 +55,7 @@
 	supervisors = "the Chief Engineer"
 	economic_power = 5
 	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 24)
+	minimum_character_age = list(SPECIES_HUMAN = 19)
 	alt_titles = list(
 		"Engine Technician",
 		"Damage Control Technician",
@@ -168,7 +168,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 25)
+	minimum_character_age = list(SPECIES_HUMAN = 22)
 	supervisors = "the Chief Engineer and the Corporate Liaison."
 	selection_color = "#5b4d20"
 	economic_power = 6
