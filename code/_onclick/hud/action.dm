@@ -222,11 +222,6 @@
 /datum/action/item_action/hands_free
 	check_flags = AB_CHECK_ALIVE|AB_CHECK_INSIDE
 
-/datum/action/item_action/toggle/New(Target)
-	..()
-	name = "Toggle [target]"
-	button.name = name
-
 /datum/action/item_action/organ
 	action_type = AB_ITEM_USE_ICON
 	button_icon = 'icons/obj/action_buttons/organs.dmi'
