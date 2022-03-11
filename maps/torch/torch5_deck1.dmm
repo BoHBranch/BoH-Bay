@@ -346,6 +346,7 @@
 	},
 /obj/structure/table/rack,
 /obj/item/weapon/gun/energy/ionrifle/small,
+/obj/item/weapon/gun/energy/ionrifle,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "aaB" = (
@@ -2335,6 +2336,7 @@
 	health = 1e+006
 	},
 /obj/item/weapon/storage/box/frags,
+/obj/item/weapon/storage/box/stinger,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "aee" = (
@@ -9759,7 +9761,8 @@
 /obj/machinery/light,
 /obj/structure/window/reinforced,
 /obj/structure/table/rack,
-/obj/item/weapon/storage/box/stinger,
+/obj/item/weapon/gun/energy/taser/carbine,
+/obj/item/weapon/gun/energy/taser/carbine,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "aqJ" = (
