@@ -55,7 +55,7 @@
 	supervisors = "the Chief Engineer"
 	economic_power = 5
 	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 20)
+	minimum_character_age = list(SPECIES_HUMAN = 19)
 	alt_titles = list(
 		"Engine Technician",
 		"Damage Control Technician",
