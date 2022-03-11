@@ -245,10 +245,4 @@
 
 /obj/machinery/turretid/vox
 
-	var/enabled = 1
-	var/lethal = 1
-
-	var/check_arrest = 0
-	var/check_records = 0
-
 	req_access = list("ACCESS_VOXSHIP")
