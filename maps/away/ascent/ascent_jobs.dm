@@ -250,7 +250,7 @@
 /datum/job/submap/tiro //We do this snowflake style because otherwise the species throws a fit. DO NOT SUBTYPE THIS TO ASCENT!!!!
 	title = "Ascent Tiro"
 	supervisors = "the Khaarmani."
-	total_positions = 1
+	total_positions = 2
 	info = "You are an Ascent Tiro, servant to the independent Ascent vessel. How you ended up in this position is known only to you and the Khaarmani. Assist the Gyne and Queen in their duties - or, find a method of escape. \
 	As this is a roleplaying role, you will be expected to uphold a certain bare-minimum standard when playing. If you have devoted yourself to the role of Tiro enough to be considered a <b>Par</b> by the Ascent (and have accepted the equipment), \
 	please note that you will <u>be held to a higher standard</u> in regards to roleplay as them!"
