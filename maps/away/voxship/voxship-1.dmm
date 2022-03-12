@@ -3830,9 +3830,7 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/misslie)
 "DF" = (
-/obj/machinery/power/ascent_reactor/vox{
-	output_power = 5e+006
-	},
+/obj/machinery/power/ascent_reactor/vox,
 /obj/effect/catwalk_plated,
 /obj/structure/cable/yellow{
 	d2 = 8;
@@ -16498,7 +16496,7 @@ Sr
 xt
 Kq
 EN
-cZ
+NG
 cZ
 cZ
 cZ
@@ -16650,7 +16648,7 @@ xK
 xt
 Kq
 EN
-cZ
+NG
 cZ
 cZ
 cZ
@@ -16802,7 +16800,7 @@ Du
 xt
 Kq
 EN
-cZ
+NG
 cZ
 cZ
 cZ
@@ -16954,7 +16952,7 @@ VP
 xt
 Kq
 EN
-cZ
+NG
 cZ
 cZ
 cZ
@@ -17106,7 +17104,7 @@ oZ
 xt
 Kq
 EN
-cZ
+NG
 cZ
 cZ
 cZ
@@ -17258,7 +17256,7 @@ wl
 xt
 Kq
 EN
-cZ
+NG
 cZ
 cZ
 cZ
@@ -17410,7 +17408,7 @@ sc
 xt
 Kq
 EN
-cZ
+NG
 cZ
 cZ
 cZ
@@ -17562,7 +17560,7 @@ lU
 xt
 Kq
 Zf
-cZ
+NG
 cZ
 cZ
 cZ
