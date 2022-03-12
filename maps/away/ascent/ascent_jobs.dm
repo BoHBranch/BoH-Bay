@@ -16,6 +16,7 @@
 		//datum/job/submap/ascent/control_mind,
 		/datum/job/submap/ascent/msq,
 		/datum/job/submap/ascent/msw,
+		/datum/job/submap/tiro
 	)
 	call_webhook = WEBHOOK_SUBMAP_LOADED_ASCENT
 
@@ -246,6 +247,55 @@
 					SKILL_MEDICAL = SKILL_BASIC)
 	requires_supervisor = "Ascent Gyne"
 
+/datum/job/submap/tiro //We do this snowflake style because otherwise the species throws a fit. DO NOT SUBTYPE THIS TO ASCENT!!!!
+	title = "Ascent Tiro"
+	supervisors = "the Khaarmani."
+	total_positions = 2
+	info = "You are an Ascent Tiro, servant to the independent Ascent vessel. How you ended up in this position is known only to you and the Khaarmani. Assist the Gyne and Queen in their duties - or, find a method of escape. \
+	As this is a roleplaying role, you will be expected to uphold a certain bare-minimum standard when playing. If you have devoted yourself to the role of Tiro enough to be considered a <b>Par</b> by the Ascent (and have accepted the equipment), \
+	please note that you will <u>be held to a higher standard</u> in regards to roleplay as them!"
+	outfit_type = /decl/hierarchy/outfit/job/tiro
+	blacklisted_species = list(SPECIES_VOXPARIAH, SPECIES_VOX, SPECIES_VOX_ARMALIS, SPECIES_ADHERENT)
+	whitelisted_species = null
+	loadout_allowed = TRUE
+	skill_points = 50 //Just *about* the # for a Roboticst at default, counting their preset skills. We have no min-skill level for this role since anyone could be deemed "interesting".
+	min_skill = list()
+	var/requires_supervisor = "Ascent Gyne"
+
+/datum/job/submap/tiro/is_position_available()
+	..()
+	if(. && requires_supervisor)
+		for(var/mob/M in GLOB.player_list)
+			if(!M.client || !M.mind || !M.mind.assigned_job || M.mind.assigned_job.title != requires_supervisor)
+				continue
+			var/datum/job/submap/ascent/ascent_job = M.mind.assigned_job
+			if(istype(ascent_job) && ascent_job.owner == owner)
+				return TRUE
+		return FALSE
+
+/datum/job/submap/tiro/equip(var/mob/living/carbon/human/H) //You have no FFFFUCKING idea how happy I am that this works now FUCK
+	..()
+	qdel(H.internal_organs_by_name[BP_LUNGS]) //Delete the old lungs
+	H.internal_organs_by_name[BP_LUNGS] = new /obj/item/organ/internal/lungs/tirolungs //Install new ones
+	to_chat(H, SPAN_DANGER("The Ascent have altered you to breathe both oxygen and their own alien atmosphere. The air feels strange."))
+
+	H.internal_organs_by_name[BP_SYSTEM_CONTROLLER] = new /obj/item/organ/internal/controller/tiro //Give them a snowflakey controller
+	to_chat(H, SPAN_OCCULT("You feel a faint, brief pain in your head. A connection to the Ascent has been installed into your body - allowing you access to their neural network."))
+	H.add_language(LANGUAGE_MANTID_BROADCAST) //Incase the controller fucks itself for some reason, we add the language forcibly.
+
+	H.verbs |= /mob/living/carbon/human/proc/identity_rename
+	to_chat(H, SPAN_NOTICE("You may wish to rename yourself as a Tiro. This can be done with the 'Rename Yourself' verb in the IC tab at the top right of the screen. This is not required."))
+
+/mob/living/carbon/human/proc/identity_rename() //Incase people would rather have a different name.
+	set name = "Rename Yourself"
+	set category = "IC"
+	set desc = "Abandon your old identity and adopt a new one."
+	var/new_name = sanitize(input("What is your new identity?", "Adopt a New Name") as text|null, MAX_NAME_LEN)
+	if(!new_name)
+		return
+	fully_replace_character_name("[new_name]") //With our old life forgotten, we rename ourselves in the image anew.
+	verbs -= /mob/living/carbon/human/proc/identity_rename
+
 // Spawn points.
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship
 	name = "Ascent Gyne"
@@ -262,6 +312,9 @@
 
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship/queen
 	name = "Serpentid Queen"
+
+/obj/effect/submap_landmark/spawnpoint/ascent_seedship/tiro
+	name = "Ascent Tiro"
 
 /*
 /datum/job/submap/ascent/control_mind

@@ -30,6 +30,11 @@
 
 	..()
 
+/mob/living/carbon/alien/get_species()
+	if(!species)
+		log_debug("An alien does not have a species. Please yell at Cupa.")
+	return species.name
+
 /mob/living/carbon/alien/u_equip(obj/item/W as obj)
 	return
 

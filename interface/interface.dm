@@ -71,7 +71,7 @@
 
 	var/admin = {"<font color='purple'>
 Admin:
-\tF5 = Aghost (admin-ghost)
+\tF5 = asay
 \tF6 = player-panel-new
 \tF7 = admin-pm
 \tF8 = Invisimin

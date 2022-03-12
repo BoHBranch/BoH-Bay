@@ -44,7 +44,8 @@
 /datum/job/squad_lead
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
-		/datum/mil_rank/marine_corps/e6
+		/datum/mil_rank/marine_corps/e6,
+		/datum/mil_rank/marine_corps/e7
 	)
 
 /datum/job/squad_lead
@@ -59,12 +60,11 @@
 	selection_color = "#557e38"
 	minimal_player_age = 12
 	economic_power = 7
-	skill_points = 24
+	skill_points = 26
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 						SKILL_EVA         = SKILL_ADEPT,
-						SKILL_PILOT       = SKILL_BASIC,
 						SKILL_COMBAT      = SKILL_ADEPT,
 						SKILL_WEAPONS     = SKILL_ADEPT)
 
@@ -72,9 +72,8 @@
 						SKILL_WEAPONS     = SKILL_MAX,
 						SKILL_EVA		  = SKILL_MAX)
 
-	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
-			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
-			            access_infcom, access_inftech, access_infmed, access_aquila, access_eva)
+	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
+			            access_infcom, access_inftech, access_infmed, access_aquila, access_eva, access_bridge)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
@@ -113,8 +112,7 @@
 		/datum/mil_rank/marine_corps/e4,
 		/datum/mil_rank/marine_corps/e5
 		)
-	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
-			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
+	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_aquila, access_eva, access_inftech)
 	alt_titles = list(
 		"Combat Engineer")
@@ -142,16 +140,16 @@
 	skill_points = 24
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_medic
-	min_skill = list(SKILL_ANATOMY         = SKILL_ADEPT,
-						SKILL_MEDICAL      = SKILL_ADEPT,
-						SKILL_COMBAT       = SKILL_ADEPT,
-						SKILL_WEAPONS      = SKILL_ADEPT)
+	min_skill = list(SKILL_EVA    = SKILL_BASIC,
+					SKILL_MEDICAL = SKILL_BASIC,
+					SKILL_COMBAT  = SKILL_ADEPT,
+					SKILL_WEAPONS = SKILL_ADEPT,
+					SKILL_ANATOMY = SKILL_BASIC)
 
-	max_skill = list(	SKILL_COMBAT       = SKILL_MAX,
-						SKILL_WEAPONS      = SKILL_MAX,
-						SKILL_EVA		   = SKILL_MAX,
-						SKILL_MEDICAL      = SKILL_MAX,
-						SKILL_ANATOMY      = SKILL_MAX)
+	max_skill = list(SKILL_MEDICAL     = SKILL_MAX,
+					SKILL_COMBAT       = SKILL_MAX,
+					SKILL_WEAPONS      = SKILL_MAX,
+					SKILL_CHEMISTRY    = SKILL_MAX)
 
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_ranks = list(
@@ -159,8 +157,7 @@
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5
 		)
-	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
-			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
+	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_aquila, access_eva, access_infmed)
 
 /datum/job/combat_medic/is_position_available()
@@ -201,8 +198,7 @@
 		/datum/mil_rank/marine_corps/e3,
 		/datum/mil_rank/marine_corps/e4
 	)
-	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
-			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
+	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_aquila, access_eva)
 	alt_titles = list(
 		"Grenadier",

@@ -13,8 +13,8 @@ Small, little HP, poisonous.
 	response_disarm = "gently pushes aside"
 	response_harm   = "stamps on"
 	destroy_surroundings = 0
-	health = 15
-	maxHealth = 15
+	health = 40
+	maxHealth = 40
 	speed = 0
 	move_to_delay = 0
 	density = 1
@@ -22,8 +22,8 @@ Small, little HP, poisonous.
 	mob_size = MOB_MINISCULE
 	can_escape = TRUE
 	pass_flags = PASS_FLAG_TABLE
-	melee_damage_lower = 5
-	melee_damage_upper = 10
+	melee_damage_lower = 10
+	melee_damage_upper = 20
 	melee_damage_flags = DAM_SHARP
 	holder_type = /obj/item/weapon/holder/voxslug
 	faction = SPECIES_VOX

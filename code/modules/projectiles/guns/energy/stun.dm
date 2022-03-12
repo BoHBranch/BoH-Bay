@@ -18,21 +18,22 @@
 	name = "Hephaestus Lightning"
 	desc = "The Hephaestus Lightning is a powerful stunrifle built to takedown more 'biologically robust' species, such as Unathi!"
 	icon = 'icons/obj/guns/taser_carbine.dmi'
-	icon_state = "tasercarbine"
-	modifystate = "tasercarbine"
+	icon_state = "tasercarbinestun"
+	modifystate = "tasercarbinestun"
 	w_class = ITEM_SIZE_LARGE
 	slot_flags = SLOT_BELT|SLOT_BACK
 	one_hand_penalty = 3
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
 	force = 8
 	max_shots = 10
+	fire_delay = 10 // 1.1 second inbetween shots.
 	accuracy = 1
 	projectile_type = /obj/item/projectile/beam/stun/heavy
 	wielded_item_state = "tasercarbine-wielded"
 
 	firemodes = list(
-		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun/heavy),
-		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock/heavy),
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun/heavy, modifystate="tasercarbinestun"),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock/heavy, modifystate="tasercarbineshock"),
 		)
 
 /obj/item/weapon/gun/energy/taser/mounted

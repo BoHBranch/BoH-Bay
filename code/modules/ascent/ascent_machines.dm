@@ -67,11 +67,12 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 	icon = 'icons/obj/ascent_sleepers.dmi'
 	base_type = /obj/machinery/sleeper
 	construct_state = /decl/machine_construction/default/no_deconstruct
+	available_chemicals = list("Inaprovaline" = /datum/reagent/inaprovaline, "Soporific" = /datum/reagent/soporific, "Tramadol" = /datum/reagent/tramadol, "Dylovene" = /datum/reagent/dylovene, "Dexalin Plus" = /datum/reagent/dexalinp, "Crystalizing Agent" = /datum/reagent/crystal, "Bromide" = /datum/reagent/toxin/bromide, "Peridaxon" = /datum/reagent/peridaxon, "Alkysine" = /datum/reagent/alkysine, "Kelotane" = /datum/reagent/kelotane, "Bicaridine" = /datum/reagent/bicaridine, "Hyronalin" = /datum/reagent/hyronalin)
+	base_chemicals = list("Inaprovaline" = /datum/reagent/inaprovaline, "Soporific" = /datum/reagent/soporific, "Tramadol" = /datum/reagent/tramadol, "Dylovene" = /datum/reagent/dylovene, "Dexalin Plus" = /datum/reagent/dexalinp, "Crystalizing Agent" = /datum/reagent/crystal, "Bromide" = /datum/reagent/toxin/bromide, "Peridaxon" = /datum/reagent/peridaxon, "Alkysine" = /datum/reagent/alkysine, "Kelotane" = /datum/reagent/kelotane, "Bicaridine" = /datum/reagent/bicaridine, "Hyronalin" = /datum/reagent/hyronalin)
 
 /obj/machinery/sleeper/ascent/Initialize(mapload, d, populate_parts)
 	. = ..()
-	base_chemicals["Crystalizing Agent"] = /datum/reagent/crystal
-	base_chemicals["Bromide"] = /datum/reagent/toxin/bromide
+
 
 /obj/machinery/fabricator/ascent
 	name = "\improper Ascent nanofabricator"
@@ -88,7 +89,9 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 	base_type = /obj/machinery/power/apc
 
 /obj/machinery/hologram/holopad/longrange/ascent
-	req_access = list(access_ascent)
+	req_access = list(access_ascent) //Who the hell put access on a god damn HOLOPAD? ~10sc
+	construct_state = /decl/machine_construction/default/panel_closed/floor/no_deconstruct
+	base_type = /obj/machinery/hologram/holopad/longrange
 
 /obj/effect/catwalk_plated/ascent
 	color = COLOR_GRAY40
