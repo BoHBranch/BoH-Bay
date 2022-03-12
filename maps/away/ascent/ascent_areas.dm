@@ -104,3 +104,8 @@
 /area/ship/ascent/subdeck_gyne_quarters
 	name = "\improper Ascent Seedship - Gyne's Quarters"
 	icon_state = "ai"
+	req_access = list(access_ascentpar) //This is fucking stupid why is access handled like this what the FUCK
+
+/area/ship/ascent/tiroarea
+	name = "\improper Ascent Seedship - Tiro Wing"
+	icon_state = "purple"
