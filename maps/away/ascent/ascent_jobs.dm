@@ -260,16 +260,18 @@
 	loadout_allowed = TRUE
 	skill_points = 50 //Just *about* the # for a Roboticst at default, counting their preset skills. We have no min-skill level for this role since anyone could be deemed "interesting".
 	min_skill = list()
+	var/requires_supervisor = "Ascent Gyne"
 
 /datum/job/submap/tiro/is_position_available()
-	. = ..()
-	for(var/mob/M in GLOB.player_list)
-		if(!M.client || !M.mind || !M.mind.assigned_job)
-			continue
-		var/datum/job/submap/ascent/ascent_job = M.mind.assigned_job
-		if(istype(ascent_job) && ascent_job.owner == owner)
-			return TRUE
-	return FALSE
+	..()
+	if(. && requires_supervisor)
+		for(var/mob/M in GLOB.player_list)
+			if(!M.client || !M.mind || !M.mind.assigned_job || M.mind.assigned_job.title != requires_supervisor)
+				continue
+			var/datum/job/submap/ascent/ascent_job = M.mind.assigned_job
+			if(istype(ascent_job) && ascent_job.owner == owner)
+				return TRUE
+		return FALSE
 
 /datum/job/submap/tiro/equip(var/mob/living/carbon/human/H) //You have no FFFFUCKING idea how happy I am that this works now FUCK
 	..()
