@@ -262,7 +262,7 @@
 	min_skill = list()
 	var/requires_supervisor = "Ascent Gyne"
 
-/datum/job/submap/tiro/is_position_available()
+/*/datum/job/submap/tiro/is_position_available() //Doesn't work. If you can fix it, uncomment this.
 	..()
 	if(. && requires_supervisor)
 		for(var/mob/M in GLOB.player_list)
@@ -271,7 +271,7 @@
 			var/datum/job/submap/ascent/ascent_job = M.mind.assigned_job
 			if(istype(ascent_job) && ascent_job.owner == owner)
 				return TRUE
-		return FALSE
+		return FALSE*/
 
 /datum/job/submap/tiro/equip(var/mob/living/carbon/human/H) //You have no FFFFUCKING idea how happy I am that this works now FUCK
 	..()
