@@ -81,6 +81,8 @@
 
 		handle_medical_side_effects()
 
+		handle_diseases() //Defined in _disease.dm
+
 		if(!client && !mind)
 			species.handle_npc(src)
 
