@@ -3333,6 +3333,10 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/engineering)
+"gO" = (
+/obj/machinery/pipedispenser,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/wing_starboard)
 "gP" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4
@@ -11888,9 +11892,9 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
+qG
+qG
+qG
 ac
 ac
 Ou
@@ -12011,9 +12015,9 @@ ab
 ab
 ab
 UQ
-aa
-aa
-aa
+qG
+qG
+qG
 ac
 ac
 ac
@@ -12137,8 +12141,8 @@ ad
 ad
 ab
 Qz
-aa
-aa
+qG
+qG
 ah
 as
 as
@@ -12260,7 +12264,7 @@ MY
 ab
 ab
 Qz
-aa
+qG
 ah
 as
 as
@@ -13236,7 +13240,7 @@ Nv
 ab
 ab
 Qz
-aa
+na
 ag
 an
 fW
@@ -13357,8 +13361,8 @@ ad
 ad
 ab
 Qz
-aa
-aa
+na
+na
 ag
 cG
 gG
@@ -13474,10 +13478,10 @@ ab
 ab
 ab
 ab
-aa
-aa
-aa
-aa
+na
+na
+na
+na
 aj
 aj
 aj
@@ -13596,9 +13600,9 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
+na
+na
+na
 aj
 aj
 JC
@@ -14583,7 +14587,7 @@ ag
 ag
 dr
 ax
-ak
+gO
 jy
 az
 az
