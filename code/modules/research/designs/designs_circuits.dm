@@ -858,3 +858,26 @@
 	req_tech = list(TECH_POWER = 1, TECH_ENGINEERING = 1)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/modular_computer
 	sort_string = "XAAAE"
+
+/datum/design/circuit/holopad
+	name = "holopad"
+	id = "holopad"
+	req_tech = list(TECH_DATA = 2, TECH_MAGNET = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/holopad
+	sort_string = "XAAAF"
+
+/datum/design/circuit/holopad_longrange
+	name = "long range holopad"
+	id = "holopad_longrange"
+	req_tech = list(TECH_DATA = 2, TECH_MAGNET = 2, TECH_BLUESPACE = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/holopad/longrange
+	sort_string = "XAAAG"
+
+/datum/design/circuit/holopad_longrange_remoteship
+	name = "encrypted long range holopad"
+	id = "holopad_longrange_remote"
+	req_tech = list(TECH_DATA = 2, TECH_MAGNET = 2, TECH_BLUESPACE = 2, TECH_ESOTERIC = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/holopad/longrange/remoteship
+	sort_string = "XAAAH"
+
+
