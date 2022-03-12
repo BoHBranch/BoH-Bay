@@ -255,7 +255,7 @@
 	As this is a roleplaying role, you will be expected to uphold a certain bare-minimum standard when playing. If you have devoted yourself to the role of Tiro enough to be considered a <b>Par</b> by the Ascent (and have accepted the equipment), \
 	please note that you will <u>be held to a higher standard</u> in regards to roleplay as them!"
 	outfit_type = /decl/hierarchy/outfit/job/tiro
-	blacklisted_species = list(SPECIES_VOXPARIAH, SPECIES_VOX, SPECIES_ADHERENT)
+	blacklisted_species = list(SPECIES_VOXPARIAH, SPECIES_VOX, SPECIES_VOX_ARMALIS, SPECIES_ADHERENT)
 	whitelisted_species = null
 	loadout_allowed = TRUE
 	skill_points = 50 //Just *about* the # for a Roboticst at default, counting their preset skills. We have no min-skill level for this role since anyone could be deemed "interesting".
