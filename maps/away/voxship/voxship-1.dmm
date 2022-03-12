@@ -3116,7 +3116,7 @@
 	id_tag = "Voxmissdoor"
 	},
 /obj/machinery/shield_diffuser,
-/turf/simulated/floor/reinforced/vox,
+/turf/simulated/floor/reinforced/airless,
 /area/voxship/misslie)
 "xB" = (
 /obj/machinery/igniter{
