@@ -89,7 +89,9 @@ MANTIDIFY(/obj/machinery/door/airlock/external/bolted, "mantid airlock", "door")
 	base_type = /obj/machinery/power/apc
 
 /obj/machinery/hologram/holopad/longrange/ascent
-	req_access = list(access_ascent)
+	req_access = list(access_ascent) //Who the hell put access on a god damn HOLOPAD? ~10sc
+	construct_state = /decl/machine_construction/default/panel_closed/floor/no_deconstruct
+	base_type = /obj/machinery/hologram/holopad/longrange
 
 /obj/effect/catwalk_plated/ascent
 	color = COLOR_GRAY40
