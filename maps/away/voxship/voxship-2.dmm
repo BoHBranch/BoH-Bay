@@ -686,6 +686,11 @@
 /obj/item/weapon/bedsheet/brown,
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/quill,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/button/windowtint{
+	id_tag = "quil_room";
+	pixel_x = -25;
+	range = 14
+	},
 /turf/simulated/floor/wood/mahogany{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -754,10 +759,6 @@
 	icon_state = "tube1"
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/machinery/button/windowtint{
-	id_tag = "quil_room";
-	pixel_y = 25
-	},
 /turf/simulated/floor/wood/mahogany{
 	initial_gas = list("nitrogen" = 101.23)
 	},
