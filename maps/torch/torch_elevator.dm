@@ -121,7 +121,7 @@
 	name = "Lower Deck"
 	landmark_tag = "nav_med_lift_bottom"
 	flags = SLANDMARK_FLAG_AUTOSET
-	base_area = /area/storage/medical
+	base_area = /area/medical/storage
 
 /obj/effect/shuttle_landmark/lift/missiles_top
 	name = "Top Deck"

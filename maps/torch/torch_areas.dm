@@ -805,7 +805,7 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list(list(access_mining, access_xenoarch))
 
-/area/storage/medical
+/area/medical/storage
 	name = "Medical Storage"
 	icon_state = "medbay4"
 	sound_env = SMALL_ENCLOSED
