@@ -4010,6 +4010,11 @@
 /obj/structure/window/alien/full,
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/ofd)
+"EN" = (
+/obj/machinery/shield_diffuser,
+/obj/structure/lattice,
+/turf/space,
+/area/voxship/misslie)
 "EQ" = (
 /obj/machinery/pointdefense{
 	initial_id_tag = "vox_pd"
@@ -4730,6 +4735,11 @@
 	initial_gas = list("nitrogen" = 103)
 	},
 /area/voxship/engineering)
+"Kq" = (
+/obj/structure/catwalk,
+/obj/structure/lattice,
+/turf/space,
+/area/voxship/misslie)
 "Kr" = (
 /obj/machinery/conveyor_switch/ammobelt{
 	id = "voxmiss"
@@ -6394,6 +6404,12 @@
 	initial_gas = list("nitrogen" = 103)
 	},
 /area/voxship/ship_fore)
+"Zf" = (
+/obj/structure/catwalk,
+/obj/structure/lattice,
+/obj/machinery/shield_diffuser,
+/turf/space,
+/area/voxship/misslie)
 "Zi" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -16480,8 +16496,8 @@ EB
 Py
 Sr
 xt
-Ya
-cZ
+Kq
+EN
 cZ
 cZ
 cZ
@@ -16632,8 +16648,8 @@ EB
 yk
 xK
 xt
-Ya
-cZ
+Kq
+EN
 cZ
 cZ
 cZ
@@ -16784,8 +16800,8 @@ EB
 yk
 Du
 xt
-Ya
-cZ
+Kq
+EN
 cZ
 cZ
 cZ
@@ -16936,8 +16952,8 @@ EB
 yk
 VP
 xt
-Ya
-cZ
+Kq
+EN
 cZ
 cZ
 cZ
@@ -17088,8 +17104,8 @@ EB
 yk
 oZ
 xt
-Ya
-cZ
+Kq
+EN
 cZ
 cZ
 cZ
@@ -17240,8 +17256,8 @@ EB
 yk
 wl
 xt
-Ya
-cZ
+Kq
+EN
 cZ
 cZ
 cZ
@@ -17392,8 +17408,8 @@ EB
 yk
 sc
 xt
-Ya
-cZ
+Kq
+EN
 cZ
 cZ
 cZ
@@ -17544,8 +17560,8 @@ EB
 cK
 lU
 xt
-Ya
-Ya
+Kq
+Zf
 cZ
 cZ
 cZ
