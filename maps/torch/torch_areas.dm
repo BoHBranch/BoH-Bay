@@ -331,10 +331,6 @@
 	name = "Escape Pod Eight"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-/area/shuttle/escape_pod9/station
-	name = "Escape Pod Nine"
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
-
 /area/shuttle/escape_pod10/station
 	name = "Escape Pod Ten"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
@@ -541,6 +537,11 @@
 
 /area/turbolift/robotics_lift
 	name = "\improper Robotics Lift"
+	icon_state = "shuttle3"
+	base_turf = /turf/simulated/open
+
+/area/turbolift/medical_lift
+	name = "\improper Medical Lift"
 	icon_state = "shuttle3"
 	base_turf = /turf/simulated/open
 
@@ -1118,10 +1119,10 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_crematorium)
 
-/area/medical/lounge
-	name = "\improper Staff Lounge"
-	icon_state = "locker"
-	req_access = list(access_medical_equip)
+/area/medical/triage
+	name = "\improper Triage"
+	icon_state = "medbay"
+	req_access = list(access_medical)
 
 /area/medical/reslab
 	name = "\improper Resuscitation Lab"
@@ -1129,6 +1130,9 @@
 
 /area/medical/virology
 	name = "\improper Virology (decomissioned)"
+
+/area/crew_quarters/safe_room/medical
+	name = "\improper Medical Safe Room"
 
 // Shield Rooms
 /area/shield
