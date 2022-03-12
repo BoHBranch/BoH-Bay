@@ -238,7 +238,6 @@
 /obj/item/projectile/bullet/rifle/shell
 	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
 	damage = 80
-	stun = 3
 	weaken = 3
 	penetrating = 3
 	armor_penetration = 70

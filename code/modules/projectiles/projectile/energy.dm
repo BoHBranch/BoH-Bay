@@ -89,7 +89,8 @@
 	name = "dart"
 	icon_state = "toxin"
 	nodamage = 1
-	weaken = 5
+	agony = 60
+	weaken = 3
 
 /obj/item/projectile/energy/bolt
 	name = "bolt"
@@ -101,7 +102,7 @@
 
 /obj/item/projectile/energy/bolt/large
 	name = "largebolt"
-	weaken = 5
+	weaken = 3
 	agony = 60
 
 /obj/item/projectile/energy/neurotoxin
@@ -109,7 +110,7 @@
 	icon_state = "neurotoxin"
 	damage = 5
 	damage_type = TOX
-	weaken = 5
+	weaken = 3
 
 /obj/item/projectile/energy/phoron
 	name = "phoron bolt"

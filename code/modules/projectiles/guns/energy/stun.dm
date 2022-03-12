@@ -96,7 +96,7 @@
 /obj/item/weapon/gun/energy/crossbow/ninja
 	name = "energy dart thrower"
 	projectile_type = /obj/item/projectile/energy/dart
-	max_shots = 2
+	max_shots = 3
 
 /obj/item/weapon/gun/energy/crossbow/ninja/mounted
 	use_external_power = 1
