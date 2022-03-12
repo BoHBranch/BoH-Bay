@@ -204,6 +204,13 @@ ARMCHAIR(yellow)
 	time = 25
 	send_material_data = 0
 
+/datum/stack_recipe/furniture/floor_machine
+	title = "floor machine frame"
+	result_type = /obj/machinery/constructable_frame/machine_frame/floor
+	req_amount = 3
+	time = 30
+	send_material_data = 0
+
 /datum/stack_recipe/furniture/turret
 	title = "turret frame"
 	result_type = /obj/machinery/porta_turret_construct

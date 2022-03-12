@@ -7,7 +7,8 @@
 	id = "awaysite_rawl"
 	description = "Unathi Poacher Ship."
 	suffixes = list("rawl/rawl.dmm")
-	area_usage_test_exempted_root_areas = list(/area/rawl/)
+	area_usage_test_exempted_root_areas = list(/area/ship/rawl/)
+	apc_test_exempt_areas = list(/area/ship/rawl/wreck = NO_SCRUBBER)
 	cost = 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/rawl_ship)
 
@@ -20,6 +21,9 @@
 	initial_generic_waypoints = list(
 		"nav_rawl_1",
 		"nav_rawl_2"
+	)
+	initial_restricted_waypoints = list(
+		"IPV Rawl" = list("nav_hangar_rawlship")
 	)
 
 /obj/effect/shuttle_landmark/rawl/one
@@ -125,3 +129,11 @@
 	canhear_range = 6
 	power_usage = 8
 
+/obj/item/weapon/rig/unathi/rawl
+
+	initial_modules = list(
+		/obj/item/rig_module/mounted/plasmacutter,
+		/obj/item/rig_module/device/drill,
+		/obj/item/rig_module/device/orescanner,
+		/obj/item/rig_module/vision/meson,
+		)

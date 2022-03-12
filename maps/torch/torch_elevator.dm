@@ -35,6 +35,10 @@
 /obj/machinery/computer/shuttle_control/lift/medical
 	name = "medical lift controls"
 	shuttle_tag = "Medical Lift"
+
+/obj/machinery/computer/shuttle_control/lift/missile
+	name = "robotics lift controls"
+	shuttle_tag = "Missiles Lift"
 	ui_template = "shuttle_control_console_lift.tmpl"
 	icon_state = "tiny"
 	icon_keyboard = "tiny_keyboard"
@@ -69,6 +73,13 @@
 	warmup_time = 3
 	waypoint_station = "nav_med_lift_top"
 	waypoint_offsite = "nav_med_lift_bottom"
+
+/datum/shuttle/autodock/ferry/missiles_lift
+	name = "Missiles Lift"
+	shuttle_area = /area/turbolift/missiles_lift
+	warmup_time = 3
+	waypoint_station = "nav_missiles_lift_top"
+	waypoint_offsite = "nav_missiles_lift_bottom"
 	sound_takeoff = 'sound/effects/lift_heavy_start.ogg'
 	sound_landing = 'sound/effects/lift_heavy_stop.ogg'
 	ceiling_type = null
@@ -111,4 +122,16 @@
 	landmark_tag = "nav_med_lift_bottom"
 	flags = SLANDMARK_FLAG_AUTOSET
 	base_area = /area/storage/medical
+
+/obj/effect/shuttle_landmark/lift/missiles_top
+	name = "Top Deck"
+	landmark_tag = "nav_missiles_lift_top"
+	base_area = /area/assembly/robotics
+	base_turf = /turf/simulated/open
+
+/obj/effect/shuttle_landmark/lift/missiles_bottom
+	name = "Lower Deck"
+	landmark_tag = "nav_missiles_lift_bottom"
+	flags = SLANDMARK_FLAG_AUTOSET
+	base_area = /area/assembly/robotics/lower
 	base_turf = /turf/simulated/floor/plating

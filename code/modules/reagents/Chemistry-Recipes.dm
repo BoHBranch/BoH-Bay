@@ -2848,3 +2848,9 @@
 	required_reagents = list(/datum/reagent/blackspice = 1, /datum/reagent/nutriment = 1)
 	result_amount = 1
 	mix_message = "The mixture bubbles and froths into a ribbony black liquid!"
+
+/datum/chemical_reaction/tilt
+	name = "Tilt"
+	result = /datum/reagent/tilt
+	required_reagents = list(/datum/reagent/antidexafen = 2, /datum/reagent/drink/space_up = 1)
+	result_amount = 3

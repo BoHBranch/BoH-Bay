@@ -52,7 +52,7 @@
 	},
 /obj/machinery/door/airlock/external/bolted/ascent{
 	airlock_type = "Internal";
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_inner"
 	},
 /turf/simulated/floor/ascent,
@@ -512,7 +512,7 @@
 "bq" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
 	airlock_type = "Internal";
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_dock_starboard_internal"
 	},
 /obj/structure/cable/cyan{
@@ -805,7 +805,7 @@
 	dir = 1
 	},
 /obj/machinery/airlock_sensor{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_sensor";
 	pixel_x = -8;
 	pixel_y = 24
@@ -883,7 +883,7 @@
 /area/ship/ascent/fore_starboard_prow)
 "bW" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_inner"
 	},
 /obj/structure/cable/cyan{
@@ -948,7 +948,7 @@
 "ce" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_inner"
 	},
 /turf/simulated/floor/ascent,
@@ -1847,7 +1847,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_pump"
 	},
 /turf/simulated/floor/ascent,
@@ -1872,7 +1872,7 @@
 /obj/machinery/light/ascent,
 /obj/machinery/access_button{
 	command = "cycle_interior";
-	frequency = 1333;
+	frequency = 1380;
 	master_tag = "ascent_starboard";
 	pixel_y = -24
 	},
@@ -2017,12 +2017,12 @@
 "eo" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump_out_internal"
 	},
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	cycle_to_external_air = 1;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard";
 	pixel_x = -24;
 	pixel_y = 0;
@@ -2139,7 +2139,7 @@
 "ey" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_pump"
 	},
 /turf/simulated/floor/ascent,
@@ -2261,7 +2261,7 @@
 /area/ship/ascent/engineering)
 "eF" = (
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock";
 	pixel_x = -24;
 	pixel_y = 0;
@@ -2322,7 +2322,7 @@
 "eO" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
 	airlock_type = "Internal";
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_inner"
 	},
 /obj/effect/catwalk_plated/ascent,
@@ -2341,7 +2341,7 @@
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /obj/machinery/door/airlock/external/bolted/ascent{
 	airlock_type = "Internal";
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_inner"
 	},
 /turf/simulated/floor/ascent,
@@ -2459,14 +2459,14 @@
 /area/ship/ascent/habitation)
 "fa" = (
 /obj/machinery/airlock_sensor{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_sensor";
 	pixel_x = -24;
 	pixel_y = 0
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump"
 	},
 /turf/simulated/floor/ascent,
@@ -2474,7 +2474,7 @@
 "fb" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump"
 	},
 /obj/structure/cable/cyan{
@@ -2492,7 +2492,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump_out_internal"
 	},
 /turf/simulated/floor/ascent,
@@ -2517,7 +2517,7 @@
 /area/ship/ascent/habitation)
 "fe" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_outer"
 	},
 /obj/structure/cable/cyan{
@@ -2541,7 +2541,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_shuttle_starboard_vent_inner"
 	},
 /turf/simulated/floor/ascent,
@@ -2552,20 +2552,20 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/effect/shuttle_landmark/ascent_seedship/start,
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_outer"
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/wing_starboard)
 "fi" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_outer"
 	},
 /obj/effect/catwalk_plated/ascent,
+/obj/effect/shuttle_landmark/ascent_seedship/start,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/wing_starboard)
 "fj" = (
@@ -2604,8 +2604,8 @@
 	dir = 9
 	},
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
-	frequency = 1332;
-	id_tag = "ascent_port_shuttle_dock";
+	frequency = 1380;
+	id_tag = "ascent_port";
 	pixel_x = 24;
 	tag_airpump = "ascent_port_pump";
 	tag_chamber_sensor = "ascent_port_sensor";
@@ -2613,7 +2613,7 @@
 	tag_interior_door = "ascent_port_inner"
 	},
 /obj/machinery/airlock_sensor{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_sensor";
 	pixel_x = 24;
 	pixel_y = -12
@@ -2690,7 +2690,7 @@
 /area/ship/ascent/shuttle_starboard)
 "fv" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_shuttle_starboard_vent_inner"
 	},
 /turf/simulated/floor/ascent,
@@ -2714,7 +2714,7 @@
 	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_pump"
 	},
 /turf/simulated/floor/ascent,
@@ -3114,7 +3114,7 @@
 /area/ship/ascent/fore_hallway)
 "gs" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_inner"
 	},
 /obj/effect/catwalk_plated/ascent,
@@ -3146,7 +3146,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_pump"
 	},
 /turf/simulated/floor/ascent,
@@ -3333,6 +3333,10 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/engineering)
+"gO" = (
+/obj/machinery/pipedispenser,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/wing_starboard)
 "gP" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4
@@ -3712,14 +3716,14 @@
 /area/ship/ascent/shuttle_starboard)
 "ie" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_outer"
 	},
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/atmospherics/pipe/manifold/hidden/black,
 /obj/machinery/access_button{
 	command = "cycle_exterior";
-	frequency = 1333;
+	frequency = 1380;
 	master_tag = "ascent_starboard";
 	pixel_x = -24;
 	pixel_y = 0
@@ -3824,7 +3828,7 @@
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/atmospherics/pipe/manifold/hidden/black,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_outer"
 	},
 /turf/simulated/floor/ascent,
@@ -3840,8 +3844,8 @@
 	dir = 4
 	},
 /obj/machinery/access_button/airlock_interior{
-	frequency = 1332;
-	master_tag = "ascent_port_shuttle_dock";
+	frequency = 1380;
+	master_tag = "ascent_port";
 	pixel_x = 4;
 	pixel_y = 24
 	},
@@ -3894,7 +3898,7 @@
 /area/ship/ascent/shuttle_port)
 "iE" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_dock_starboard_external"
 	},
 /obj/effect/catwalk_plated/ascent,
@@ -3909,7 +3913,7 @@
 /obj/effect/catwalk_plated/ascent,
 /obj/effect/shuttle_landmark/ascent_seedship/start/two,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_dock_starboard_external"
 	},
 /turf/simulated/floor/ascent,
@@ -3927,7 +3931,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump"
 	},
 /turf/simulated/floor/ascent,
@@ -3978,7 +3982,7 @@
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/door/airlock/external/bolted/ascent{
 	airlock_type = "Internal";
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_dock_starboard_internal"
 	},
 /turf/simulated/floor/ascent,
@@ -4169,7 +4173,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden,
 /obj/machinery/airlock_sensor{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_shuttle_starboard_interior_sensor";
 	pixel_x = -8;
 	pixel_y = -24
@@ -4256,7 +4260,7 @@
 	},
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_outer"
 	},
 /turf/simulated/floor/ascent,
@@ -4294,11 +4298,11 @@
 "kH" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump_out_external"
 	},
 /obj/machinery/airlock_sensor{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_sensor_external";
 	pixel_x = -24;
 	pixel_y = 0
@@ -4413,7 +4417,7 @@
 /area/ship/ascent/aft_starboard_jut)
 "nV" = (
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_dock";
 	pixel_x = -24;
 	pixel_y = 0;
@@ -4465,7 +4469,7 @@
 "pE" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_inner"
 	},
 /turf/simulated/floor/ascent,
@@ -4582,7 +4586,7 @@
 "wO" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump_out_internal"
 	},
 /turf/simulated/floor/ascent,
@@ -4765,7 +4769,7 @@
 "Fg" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump_out_external"
 	},
 /turf/simulated/floor/ascent,
@@ -5169,7 +5173,7 @@
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/atmospherics/pipe/manifold/hidden/black,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_outer"
 	},
 /turf/simulated/floor/ascent,
@@ -11888,9 +11892,9 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
+qG
+qG
+qG
 ac
 ac
 Ou
@@ -12011,9 +12015,9 @@ ab
 ab
 ab
 UQ
-aa
-aa
-aa
+qG
+qG
+qG
 ac
 ac
 ac
@@ -12137,8 +12141,8 @@ ad
 ad
 ab
 Qz
-aa
-aa
+qG
+qG
 ah
 as
 as
@@ -12260,7 +12264,7 @@ MY
 ab
 ab
 Qz
-aa
+qG
 ah
 as
 as
@@ -13236,7 +13240,7 @@ Nv
 ab
 ab
 Qz
-aa
+na
 ag
 an
 fW
@@ -13357,8 +13361,8 @@ ad
 ad
 ab
 Qz
-aa
-aa
+na
+na
 ag
 cG
 gG
@@ -13474,10 +13478,10 @@ ab
 ab
 ab
 ab
-aa
-aa
-aa
-aa
+na
+na
+na
+na
 aj
 aj
 aj
@@ -13596,9 +13600,9 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
+na
+na
+na
 aj
 aj
 JC
@@ -14583,7 +14587,7 @@ ag
 ag
 dr
 ax
-ak
+gO
 jy
 az
 az
