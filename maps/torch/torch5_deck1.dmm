@@ -19821,6 +19821,29 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/engineering/hardstorage/aux)
+"eoi" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/computer/guestpass{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/infirmreception)
 "equ" = (
 /obj/machinery/camera/network/first_deck{
 	c_tag = "First Deck - Ladders";
@@ -30926,6 +30949,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
+/obj/structure/iv_drip,
 /turf/simulated/floor/tiled/dark,
 /area/medical/surgery)
 "vBa" = (
@@ -54818,7 +54842,7 @@ afk
 scs
 fib
 bUe
-hYb
+eoi
 pca
 afZ
 arT
