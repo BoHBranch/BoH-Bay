@@ -2606,7 +2606,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/medical/reslab)
 "afo" = (
@@ -3152,6 +3152,7 @@
 	pixel_x = 1;
 	pixel_y = 2
 	},
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/medical/reslab)
 "ago" = (
@@ -12553,9 +12554,11 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/firstdeck/center)
 "azd" = (
-/obj/structure/catwalk,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/aftstarboard)
+/obj/effect/floor_decal/corner/pink/bordercorner{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/sleeper)
 "azi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -13346,6 +13349,11 @@
 /area/maintenance/firstdeck/aftport)
 "aED" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/table/rack,
+/obj/item/roller,
+/obj/item/roller,
+/obj/item/roller,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/medical/reslab)
 "aEG" = (
@@ -16740,11 +16748,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
 "aZb" = (
-/obj/effect/floor_decal/corner/pink/bordercorner{
-	dir = 1
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 9
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
+/area/medical/triage)
 "aZy" = (
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -19060,10 +19071,11 @@
 /area/security/locker)
 "dgd" = (
 /obj/effect/floor_decal/corner/paleblue{
-	dir = 9
+	dir = 6
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/triage)
@@ -20723,13 +20735,9 @@
 /turf/simulated/floor/tiled/monotile,
 /area/security/locker)
 "goc" = (
-/obj/structure/railing/mapped,
-/obj/structure/railing/mapped{
-	dir = 4;
-	tag = "icon-railing0 (EAST)"
-	},
-/obj/machinery/space_heater,
-/turf/simulated/floor/plating,
+/obj/structure/ladder,
+/obj/effect/catwalk_plated/dark,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
 "gqz" = (
 /obj/effect/floor_decal/corner/beige{
@@ -20764,6 +20772,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/medical/triage)
 "grI" = (
@@ -21374,9 +21383,6 @@
 /obj/item/stack/material/glass/ten,
 /obj/item/stack/material/steel/ten,
 /obj/effect/floor_decal/corner/paleblue/mono,
-/obj/structure/closet/shipping_wall/filled{
-	pixel_y = -28
-	},
 /obj/item/weapon/storage/box/bodybags{
 	pixel_x = 6;
 	pixel_y = -1
@@ -21850,16 +21856,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/security/opscheck)
-"hUo" = (
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 6
-	},
-/obj/machinery/disposal,
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/white,
-/area/medical/triage)
 "hUE" = (
 /obj/machinery/atmospherics/tvalve/digital{
 	dir = 4;
@@ -22007,6 +22003,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /obj/random/obstruction,
+/obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "ihT" = (
@@ -24046,7 +24043,7 @@
 /area/security/detectives_office)
 "lhb" = (
 /obj/effect/floor_decal/corner/paleblue{
-	dir = 4
+	dir = 5
 	},
 /obj/machinery/light{
 	dir = 1
@@ -26028,6 +26025,16 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/fore)
+"nZA" = (
+/obj/effect/floor_decal/spline/plain/blue{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 10
+	},
+/obj/structure/curtain/open/privacy,
+/turf/simulated/floor/tiled/white,
+/area/medical/triage)
 "nZB" = (
 /obj/machinery/teleport/station,
 /obj/machinery/button/blast_door{
@@ -26614,6 +26621,13 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
+"oUU" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/hallway/primary/firstdeck/center)
 "oXb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -30492,6 +30506,9 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
 "umI" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
 "uoC" = (
@@ -31339,16 +31356,6 @@
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
-"wLV" = (
-/obj/effect/floor_decal/spline/plain/blue{
-	dir = 1
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 10
-	},
-/obj/structure/curtain/open/privacy,
-/turf/simulated/floor/tiled/white,
-/area/medical/triage)
 "wMo" = (
 /obj/structure/railing/mapped{
 	dir = 1
@@ -50375,7 +50382,7 @@ kLb
 lTv
 hPt
 fvw
-dRf
+umI
 dkJ
 knu
 azs
@@ -50977,11 +50984,11 @@ agx
 aig
 tCw
 lcb
-wLV
+nZA
 wNc
 lcb
 fvw
-axh
+oUU
 ayi
 azn
 auN
@@ -51582,7 +51589,7 @@ anL
 gwb
 fob
 lVC
-dgd
+aZb
 myb
 myb
 cZC
@@ -51784,7 +51791,7 @@ bvc
 gMb
 keb
 mcb
-hUo
+dgd
 gtb
 gtb
 gIb
@@ -52385,7 +52392,7 @@ uVh
 dTb
 dZb
 dZb
-aZb
+azd
 bvc
 gMb
 hjb
@@ -53588,7 +53595,7 @@ aaa
 mpy
 aeC
 adt
-azd
+uXe
 ati
 alx
 bdn

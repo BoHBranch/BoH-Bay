@@ -1822,6 +1822,7 @@
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "dx" = (
@@ -16660,6 +16661,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/engine_smes)
+"Kf" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "Kk" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/floor_decal/techfloor{
@@ -19248,6 +19253,11 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
+"TX" = (
+/obj/structure/ladder/up,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/central)
 "TY" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -38797,9 +38807,9 @@ ag
 yw
 yw
 aC
-aC
-bK
-bK
+TX
+Kf
+Kf
 dW
 eG
 jv
@@ -38998,7 +39008,7 @@ aa
 aa
 aa
 aa
-aa
+aC
 aC
 UB
 bf
