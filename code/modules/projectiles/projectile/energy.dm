@@ -89,7 +89,6 @@
 	name = "dart"
 	icon_state = "toxin"
 	nodamage = 1
-	agony = 60
 	weaken = 3
 
 /obj/item/projectile/energy/bolt
