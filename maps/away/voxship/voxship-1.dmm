@@ -158,6 +158,19 @@
 	initial_gas = list("nitrogen" = 103)
 	},
 /area/voxship/dock)
+"bS" = (
+/obj/effect/wallframe_spawn/alien,
+/obj/machinery/door/blast/regular{
+	dir = 8;
+	id_tag = "VoxArmoryBlast"
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/armory)
 "cd" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /obj/structure/cable{
@@ -323,6 +336,11 @@
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/misslie)
@@ -1020,6 +1038,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
@@ -3037,6 +3060,11 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/misslie)
 "wZ" = (
@@ -4287,6 +4315,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/armory)
@@ -15978,7 +16011,7 @@ Ur
 XW
 Uh
 eD
-Dm
+bS
 Nx
 Dm
 eD
