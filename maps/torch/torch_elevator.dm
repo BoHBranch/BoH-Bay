@@ -73,6 +73,10 @@
 	warmup_time = 3
 	waypoint_station = "nav_med_lift_top"
 	waypoint_offsite = "nav_med_lift_bottom"
+	sound_takeoff = 'sound/effects/lift_heavy_start.ogg'
+	sound_landing = 'sound/effects/lift_heavy_stop.ogg'
+	ceiling_type = null
+	knockdown = 0
 
 /datum/shuttle/autodock/ferry/missiles_lift
 	name = "Missiles Lift"
@@ -122,6 +126,7 @@
 	landmark_tag = "nav_med_lift_bottom"
 	flags = SLANDMARK_FLAG_AUTOSET
 	base_area = /area/medical/storage
+	base_turf = /turf/simulated/floor/plating
 
 /obj/effect/shuttle_landmark/lift/missiles_top
 	name = "Top Deck"
