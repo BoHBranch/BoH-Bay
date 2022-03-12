@@ -3077,6 +3077,11 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "yN" = (
@@ -3175,10 +3180,6 @@
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "CI" = (
-/obj/structure/cable/cyan{
-	d2 = 2;
-	icon_state = "0-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
@@ -3186,6 +3187,11 @@
 	dir = 6
 	},
 /obj/effect/catwalk_plated/ascent,
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/tiroarea)
 "CL" = (
@@ -3239,6 +3245,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
@@ -3306,6 +3317,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/apc/hyper/ascent/west{
 	name = "tiro apc"
+	},
+/obj/structure/cable/cyan{
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
@@ -3510,6 +3524,11 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/ascent,
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "ZK" = (
