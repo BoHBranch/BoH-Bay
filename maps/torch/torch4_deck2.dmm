@@ -18195,9 +18195,6 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/maintenance/seconddeck/forestarboard)
-"PR" = (
-/turf/simulated/floor/bluegrid,
-/area/engineering/atmos/storage)
 "PV" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 8;
@@ -37005,7 +37002,7 @@ va
 va
 vQ
 uF
-PR
+nV
 yS
 va
 Ka
