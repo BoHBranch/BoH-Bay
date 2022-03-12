@@ -430,11 +430,53 @@
 	worn_state = "whiteservice"
 	starting_accessories = list(/obj/item/clothing/accessory/navy)
 
+/obj/item/clothing/under/solgov/service/fleet/officer
+	name = "fleet junior officer service uniform"
+	desc = "The service uniform of the SolGov Fleet, made from immaculate white fabric and silver stripes along its hems."
+	icon_state = "whiteservice_off"
+	item_state = "nursesuit"
+	worn_state = "whiteservice_off"
+	starting_accessories = list(/obj/item/clothing/accessory/navy)
+
+/obj/item/clothing/under/solgov/service/fleet/command
+	name = "fleet senior officer service uniform"
+	desc = "The service uniform of the SolGov Fleet, made from immaculate white fabric and gold stripes along its hems."
+	icon_state = "whiteservice_comm"
+	item_state = "nursesuit"
+	worn_state = "whiteservice_comm"
+	starting_accessories = list(/obj/item/clothing/accessory/navy)
+
+/obj/item/clothing/under/solgov/service/fleet/flag
+	name = "fleet flag officer service uniform"
+	desc = "The service uniform of the SolGov Fleet, made from immaculate white fabric and ruby stripes along its hems."
+	icon_state = "whiteservice_flag"
+	item_state = "nursesuit"
+	worn_state = "whiteservice_flag"
+	starting_accessories = list(/obj/item/clothing/accessory/navy)
+
 /obj/item/clothing/under/solgov/service/fleet/skirt
 	name = "fleet service skirt"
-	desc = "The service uniform skirt of the SolGov Fleet, made from immaculate white fabric."
+	desc = "The service uniform skirt of the SolGov Fleet, made from immaculate white fabric ."
 	icon_state = "whiteservicefem"
 	worn_state = "whiteservicefem"
+
+/obj/item/clothing/under/solgov/service/fleet/skirt/officer
+	name = "fleet junior officer service skirt"
+	desc = "The service uniform skirt of the SolGov Fleet, made from immaculate white fabricand silver stripes along its hems."
+	icon_state = "whiteservicefem_off"
+	worn_state = "whiteservicefem_off"
+
+/obj/item/clothing/under/solgov/service/fleet/skirt/command
+	name = "fleet senior officer service skirt"
+	desc = "The service uniform skirt of the SolGov Fleet, made from immaculate white fabric and gold stripes along its hems."
+	icon_state = "whiteservicefem_comm"
+	worn_state = "whiteservicefem_comm"
+
+/obj/item/clothing/under/solgov/service/fleet/skirt/flag
+	name = "fleet flag officer service skirt"
+	desc = "The service uniform skirt of the SolGov Fleet, made from immaculate white fabric and ruby stripes along its hems."
+	icon_state = "whiteservicefem_flag"
+	worn_state = "whiteservicefem_flag"
 
 /obj/item/clothing/under/solgov/service/army
 	name = "marine service uniform"

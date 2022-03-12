@@ -9,7 +9,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/security/brig_chief
 	name = OUTFIT_JOB_NAME("Brig Chief")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/security
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/security
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew/security/brigchief
 	pda_type = /obj/item/modular_computer/pda/security
@@ -21,7 +21,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech
 	name = OUTFIT_JOB_NAME("Forensic Technician - Torch")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/security
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/security
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew/security/forensic
 	pda_type = /obj/item/modular_computer/pda/forensics
@@ -47,7 +47,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/security/maa
 	name = OUTFIT_JOB_NAME("Master at Arms")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/security
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/security
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew/security
 	pda_type = /obj/item/modular_computer/pda/security
