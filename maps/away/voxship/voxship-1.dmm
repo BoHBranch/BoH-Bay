@@ -2753,6 +2753,14 @@
 	initial_gas = list("nitrogen" = 103)
 	},
 /area/voxship/engineering)
+"uG" = (
+/obj/structure/closet/crate/trashcart,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/reinforced/vox,
+/area/voxship/dock)
 "uI" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -3026,10 +3034,10 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/wall/alienwall{
-	color = "#284840";
-	initial_gas = list("nitrogen" = 103)
+/obj/structure/window/reinforced{
+	dir = 4
 	},
+/turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
 "wQ" = (
 /obj/structure/cable{
@@ -3994,8 +4002,11 @@
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/misslie)
 "EC" = (
-/obj/structure/closet/crate/trashcart,
-/turf/simulated/floor/reinforced/vox,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/wall/alienwall{
+	color = "#284840";
+	initial_gas = list("nitrogen" = 103)
+	},
 /area/voxship/dock)
 "EJ" = (
 /obj/machinery/alarm/vox{
@@ -5313,6 +5324,10 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/computer/mining,
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
 /turf/simulated/wall/alienwall{
 	color = "#284840";
 	initial_gas = list("nitrogen" = 103)
@@ -6481,9 +6496,17 @@
 /turf/simulated/floor/plating/vox,
 /area/voxship/dock)
 "Zz" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/computer/mining,
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/dock)
@@ -21650,13 +21673,13 @@ aj
 HX
 tt
 hk
+oP
+HX
+uG
 ZW
+oP
 EC
-ZW
-ZW
-ZW
-Ug
-ZW
+iu
 sD
 sP
 HX
@@ -21803,11 +21826,11 @@ HX
 ZW
 MH
 ZW
-Zz
+ZW
 ZW
 Gl
 ZW
-Zz
+ZW
 ZW
 Zs
 ZW
@@ -21955,7 +21978,7 @@ HX
 Bi
 Pc
 RC
-Qg
+Zz
 Oj
 Qg
 vh
