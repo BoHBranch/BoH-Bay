@@ -478,6 +478,16 @@ update_flag
 	air_contents.adjust_gas(GAS_METHYL_BROMIDE, MolesForPressure())
 	update_icon()
 
+/obj/machinery/portable_atmospherics/canister/methyl_bromide/prechilled
+	name = "\improper Canister: \[CH3Br (Cryo)\]"
+	start_pressure = 20 * ONE_ATMOSPHERE
+
+/obj/machinery/portable_atmospherics/canister/methyl_bromide/prechilled/New()
+	..()
+	src.air_contents.temperature = 80
+	src.update_icon()
+	return 1
+
 /obj/machinery/portable_atmospherics/canister/chlorine
 	name = "\improper Canister \[Cl\]"
 	icon_state = "black"

@@ -3333,6 +3333,10 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/engineering)
+"gO" = (
+/obj/machinery/pipedispenser,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/wing_starboard)
 "gP" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4
@@ -14583,7 +14587,7 @@ ag
 ag
 dr
 ax
-ak
+gO
 jy
 az
 az
