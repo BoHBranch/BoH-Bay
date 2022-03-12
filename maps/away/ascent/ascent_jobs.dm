@@ -16,7 +16,7 @@
 		//datum/job/submap/ascent/control_mind,
 		/datum/job/submap/ascent/msq,
 		/datum/job/submap/ascent/msw,
-		/datum/job/submap/tiro
+		/datum/job/submap/ascent/tiro
 	)
 	call_webhook = WEBHOOK_SUBMAP_LOADED_ASCENT
 
@@ -247,7 +247,7 @@
 					SKILL_MEDICAL = SKILL_BASIC)
 	requires_supervisor = "Ascent Gyne"
 
-/datum/job/submap/tiro //We do this snowflake style because otherwise the species throws a fit. DO NOT SUBTYPE THIS TO ASCENT!!!!
+/datum/job/submap/ascent/tiro //We do this snowflake style because otherwise the species throws a fit. DO NOT SUBTYPE THIS TO ASCENT!!!!
 	title = "Ascent Tiro"
 	supervisors = "the Khaarmani."
 	total_positions = 2
@@ -260,20 +260,10 @@
 	loadout_allowed = TRUE
 	skill_points = 50 //Just *about* the # for a Roboticst at default, counting their preset skills. We have no min-skill level for this role since anyone could be deemed "interesting".
 	min_skill = list()
-	var/requires_supervisor = "Ascent Gyne"
+	requires_supervisor = "Ascent Gyne"
+	set_species_on_join = null
 
-/*/datum/job/submap/tiro/is_position_available() //Doesn't work. If you can fix it, uncomment this.
-	..()
-	if(. && requires_supervisor)
-		for(var/mob/M in GLOB.player_list)
-			if(!M.client || !M.mind || !M.mind.assigned_job || M.mind.assigned_job.title != requires_supervisor)
-				continue
-			var/datum/job/submap/ascent/ascent_job = M.mind.assigned_job
-			if(istype(ascent_job) && ascent_job.owner == owner)
-				return TRUE
-		return FALSE*/
-
-/datum/job/submap/tiro/equip(var/mob/living/carbon/human/H) //You have no FFFFUCKING idea how happy I am that this works now FUCK
+/datum/job/submap/ascent/tiro/equip(var/mob/living/carbon/human/H) //You have no FFFFUCKING idea how happy I am that this works now FUCK
 	..()
 	qdel(H.internal_organs_by_name[BP_LUNGS]) //Delete the old lungs
 	H.internal_organs_by_name[BP_LUNGS] = new /obj/item/organ/internal/lungs/tirolungs //Install new ones
