@@ -4355,9 +4355,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
-"mg" = (
-/turf/space,
-/area/ship/ascent/fore_starboard_jut)
 "mn" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -4440,6 +4437,7 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
 "oF" = (
+/obj/machinery/porta_turret/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
 "oL" = (
@@ -10738,7 +10736,7 @@ aa
 aa
 aa
 aa
-mg
+aa
 cL
 CA
 as
