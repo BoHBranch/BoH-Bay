@@ -641,7 +641,6 @@
 		/obj/item/rig_module/chem_dispenser/combat,
 		/obj/item/rig_module/chem_dispenser/nabber/tiro,
 		/obj/item/rig_module/device/nanoblade/par,
-		/obj/item/rig_module/mounted/flechette_rifle,
 		/obj/item/rig_module/mounted/particle_rifle,
 		/obj/item/rig_module/device/multitool,
 		/obj/item/rig_module/device/cable_coil,
