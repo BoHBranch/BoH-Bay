@@ -401,18 +401,24 @@
 /turf/simulated/floor/plating,
 /area/medical/chemistry)
 "abc" = (
-/obj/machinery/chem_master,
-/obj/effect/floor_decal/corner/beige/three_quarters{
-	dir = 8
-	},
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
+/obj/structure/closet/secure_closet/chemical,
+/obj/effect/floor_decal/corner/beige/mono,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/storage/firstaid/combat,
+/obj/item/weapon/storage/box/pillbottles,
+/obj/item/device/radio/headset/headset_med,
+/obj/item/weapon/reagent_containers/ivbag,
+/obj/item/weapon/reagent_containers/ivbag,
+/obj/item/weapon/book/manual/chemistry_recipes,
+/obj/item/weapon/storage/box/freezer,
+/obj/item/clothing/glasses/science,
+/turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
 "abe" = (
-/obj/machinery/reagentgrinder,
+/obj/structure/table/reinforced,
 /obj/effect/floor_decal/corner/beige/mono,
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
 "abf" = (
@@ -663,12 +669,15 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
 	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 1
+/obj/machinery/button/blast_door{
+	id_tag = "chemcounter";
+	name = "Chemistry Lockdown Control";
+	pixel_x = -6;
+	pixel_y = -21
 	},
 /obj/machinery/light_switch{
-	pixel_x = -9;
-	pixel_y = -22
+	pixel_x = 6;
+	pixel_y = -21
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -2438,21 +2447,9 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)
 "aeY" = (
-/obj/structure/closet/secure_closet/chemical,
-/obj/item/device/radio/headset/headset_med,
-/obj/item/weapon/storage/box/pillbottles,
+/obj/machinery/chemical_dispenser/full,
 /obj/effect/floor_decal/corner/beige/mono,
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/obj/item/weapon/reagent_containers/ivbag,
-/obj/item/weapon/reagent_containers/ivbag,
-/obj/item/weapon/storage/firstaid/combat,
-/obj/item/weapon/book/manual/chemistry_recipes,
-/obj/item/modular_computer/telescreen/preset/medical{
-	pixel_y = 23
-	},
+/obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
 "aeZ" = (
@@ -16785,10 +16782,11 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics)
 "aZO" = (
-/obj/effect/floor_decal/corner/beige{
-	dir = 5
+/obj/structure/bed/chair/office/comfy/blue{
+	dir = 8
 	},
-/turf/simulated/floor/tiled/white,
+/obj/effect/floor_decal/corner/beige/mono,
+/turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
 "bbb" = (
 /obj/machinery/atmospherics/binary/pump/high_power/on,
@@ -16887,44 +16885,52 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/effect/floor_decal/corner/beige{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/white,
-/area/medical/chemistry)
-"bfu" = (
-/obj/structure/disposalpipe/segment{
-	dir = 2;
-	icon_state = "pipe-c"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
+/turf/simulated/floor/tiled/white,
+/area/medical/chemistry)
+"bfu" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/hologram/holopad,
+/obj/effect/floor_decal/corner/beige{
+	dir = 4
 	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/machinery/hologram/holopad,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "bgw" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/beige{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -16991,7 +16997,15 @@
 /turf/simulated/floor/tiled/monotile,
 /area/assembly/robotics)
 "bkC" = (
-/obj/effect/floor_decal/corner/beige,
+/obj/effect/floor_decal/corner/beige{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "blE" = (
@@ -17034,13 +17048,9 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "bpt" = (
+/obj/structure/bed/chair/padded/blue,
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
-	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/disposal,
-/obj/structure/disposalpipe/trunk{
-	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -17088,10 +17098,12 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1starboard)
 "bqQ" = (
-/obj/effect/floor_decal/corner/beige{
-	dir = 10
+/obj/effect/floor_decal/corner/beige/three_quarters{
+	dir = 4
 	},
-/obj/structure/bed/chair/padded/blue,
+/obj/structure/table/reinforced,
+/obj/item/device/scanner/spectrometer,
+/obj/item/weapon/hand_labeler,
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "brb" = (
@@ -17117,14 +17129,16 @@
 /turf/simulated/floor/plating,
 /area/security/wing)
 "brJ" = (
-/obj/effect/floor_decal/corner/beige/three_quarters{
-	dir = 4
-	},
-/obj/structure/table/reinforced,
-/obj/item/weapon/paper_bin,
-/obj/item/weapon/pen,
-/obj/item/weapon/storage/box/freezer,
-/turf/simulated/floor/tiled/white,
+/obj/machinery/reagentgrinder,
+/obj/effect/floor_decal/corner/beige/mono,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/stack/material/phoron,
+/obj/item/stack/material/phoron,
+/obj/item/stack/material/phoron,
+/obj/item/stack/material/phoron,
+/obj/item/stack/material/phoron,
+/obj/item/stack/material/phoron,
+/turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
 "bta" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -17143,15 +17157,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/questioning)
 "buU" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/reagent_containers/dropper,
-/obj/item/weapon/hand_labeler,
-/obj/item/clothing/glasses/science,
-/obj/item/device/scanner/spectrometer,
+/obj/machinery/disposal,
 /obj/effect/floor_decal/corner/beige/mono,
-/obj/machinery/camera/network/medbay{
-	c_tag = "Infirmary - Chemistry";
-	dir = 8
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
@@ -17220,12 +17233,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/chargebay)
 "bwR" = (
-/obj/structure/table/reinforced,
-/obj/machinery/door/window/westright{
-	dir = 1;
-	name = "Chemistry Desk"
-	},
-/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced/no_grille,
 /obj/machinery/door/blast/shutters{
 	density = 0;
 	dir = 2;
@@ -17234,8 +17242,7 @@
 	name = "Chemistry Shutters";
 	opacity = 0
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/item/weapon/material/bell,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "bxz" = (
@@ -17703,20 +17710,15 @@
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod8/station)
 "bOr" = (
-/obj/machinery/chemical_dispenser/full,
+/obj/structure/closet/wardrobe/chemistry_white,
 /obj/effect/floor_decal/corner/beige/mono,
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -23
 	},
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/obj/machinery/button/blast_door{
-	id_tag = "chemcounter";
-	name = "Chemistry Lockdown Control";
-	pixel_x = -6;
-	pixel_y = 21
+	dir = 1
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
@@ -20838,18 +20840,15 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
 "gqz" = (
-/obj/effect/floor_decal/corner/beige{
-	dir = 5
-	},
-/obj/machinery/alarm{
-	dir = 8;
+/obj/structure/table/reinforced,
+/obj/effect/floor_decal/corner/beige/mono,
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/machinery/firealarm{
+	dir = 4;
 	pixel_x = 24
 	},
-/obj/structure/hygiene/sink{
-	dir = 4;
-	pixel_x = 11
-	},
-/turf/simulated/floor/tiled/white,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
 "gqI" = (
 /obj/effect/floor_decal/corner/paleblue{
@@ -23782,9 +23781,6 @@
 /area/crew_quarters/safe_room/firstdeck)
 "kBb" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/effect/floor_decal/corner/pink/mono,
 /obj/structure/bed,
 /obj/item/weapon/bedsheet/medical,
@@ -24528,12 +24524,23 @@
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
 "lEf" = (
-/obj/effect/floor_decal/corner/beige{
-	dir = 10
-	},
-/obj/machinery/firealarm{
+/obj/structure/hygiene/sink{
 	dir = 4;
-	pixel_x = 24
+	pixel_x = 11
+	},
+/obj/effect/floor_decal/corner/beige{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Chemistry";
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -25097,7 +25104,6 @@
 /area/hallway/primary/firstdeck/aft)
 "mxn" = (
 /obj/structure/table/reinforced,
-/obj/effect/floor_decal/corner/beige/mono,
 /obj/machinery/reagent_temperature/cooler{
 	pixel_x = -7;
 	pixel_y = 10
@@ -25106,12 +25112,19 @@
 	pixel_x = 7;
 	pixel_y = 10
 	},
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
-/obj/item/stack/material/phoron,
+/obj/effect/floor_decal/corner/beige/mono,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/reagent_containers/glass/beaker/large{
+	pixel_x = -9
+	},
+/obj/item/weapon/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/glass/beaker/large{
+	pixel_x = 8
+	},
+/obj/item/weapon/reagent_containers/dropper{
+	pixel_x = -1;
+	pixel_y = -9
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
 "myb" = (
@@ -25155,12 +25168,8 @@
 /turf/simulated/floor/tiled/white,
 /area/security/detectives_office)
 "mEj" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 4
-	},
-/obj/structure/bed/chair/office/comfy/blue,
 /obj/effect/floor_decal/corner/beige{
-	dir = 1
+	dir = 6
 	},
 /obj/structure/cable/green{
 	d1 = 1;
@@ -26828,17 +26837,8 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
 "pdd" = (
-/obj/structure/table/reinforced,
-/obj/item/weapon/reagent_containers/glass/beaker/large{
-	pixel_x = -5
-	},
-/obj/item/weapon/reagent_containers/glass/beaker/large{
-	pixel_x = -5
-	},
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/effect/floor_decal/corner/beige/mono,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
+/obj/effect/floor_decal/corner/beige{
+	dir = 6
 	},
 /obj/machinery/power/apc{
 	dir = 1;
@@ -26849,7 +26849,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
 "pdO" = (
 /obj/effect/floor_decal/techfloor{
@@ -31672,8 +31672,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/medical/reslab)
 "xwY" = (
-/obj/structure/closet/wardrobe/chemistry_white,
+/obj/machinery/chem_master,
 /obj/effect/floor_decal/corner/beige/mono,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/modular_computer/telescreen/preset/medical{
+	pixel_y = 23
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
 "xxB" = (
@@ -31742,7 +31746,12 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/rnd/misc_lab)
 "xNn" = (
-/obj/effect/wallframe_spawn/reinforced/no_grille,
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/westright{
+	dir = 1;
+	name = "Chemistry Desk"
+	},
+/obj/machinery/door/firedoor,
 /obj/machinery/door/blast/shutters{
 	density = 0;
 	dir = 2;
@@ -31751,7 +31760,8 @@
 	name = "Chemistry Shutters";
 	opacity = 0
 	},
-/obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/item/weapon/material/bell,
 /turf/simulated/floor/plating,
 /area/medical/chemistry)
 "xOb" = (
