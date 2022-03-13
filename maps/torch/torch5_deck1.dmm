@@ -2017,6 +2017,10 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Hallway";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmreception)
 "aem" = (
@@ -3398,10 +3402,6 @@
 /obj/item/device/radio/intercom{
 	dir = 4;
 	pixel_x = -21
-	},
-/obj/machinery/camera/network/medbay{
-	c_tag = "Infirmary - Operating Theatre 2";
-	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/surgery2)
@@ -9498,6 +9498,9 @@
 /obj/item/roller,
 /obj/item/roller,
 /obj/item/roller,
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Triage"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/triage)
 "arI" = (
@@ -17146,6 +17149,10 @@
 /obj/item/clothing/glasses/science,
 /obj/item/device/scanner/spectrometer,
 /obj/effect/floor_decal/corner/beige/mono,
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Chemistry";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
 "bvc" = (
@@ -18386,6 +18393,10 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Saferoom";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/medical)
 "cxk" = (
@@ -18575,6 +18586,14 @@
 	},
 /turf/simulated/floor/reinforced/hydrogen,
 /area/thruster/d1starboard)
+"cHr" = (
+/obj/structure/morgue,
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Morgue";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/medical/morgue)
 "cHB" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -23423,6 +23442,16 @@
 	},
 /turf/simulated/floor/plating,
 /area/rnd/misc_lab)
+"jZX" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Aft Hallway";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/medical/infirmary)
 "kab" = (
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal,
@@ -28011,8 +28040,9 @@
 	name = "Medical Storage"
 	},
 /obj/effect/floor_decal/industrial/hatch/blue,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
 "qIb" = (
@@ -30588,6 +30618,10 @@
 	},
 /obj/machinery/light,
 /obj/machinery/photocopier,
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Locker Room";
+	dir = 1
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/locker)
 "ugg" = (
@@ -55151,7 +55185,7 @@ bUe
 bUe
 bUe
 fyf
-lUb
+jZX
 afZ
 ckV
 qmS
@@ -55954,7 +55988,7 @@ eLb
 eLb
 aKb
 svc
-eLb
+cHr
 aMo
 fmb
 aep

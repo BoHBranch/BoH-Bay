@@ -683,9 +683,8 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 9
 	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
+/obj/machinery/light/small{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/medical/storage)
@@ -956,6 +955,9 @@
 /obj/item/weapon/storage/box/freezer,
 /obj/item/stack/nanopaste,
 /obj/item/stack/nanopaste,
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/medical/storage)
 "bQ" = (
@@ -15181,6 +15183,10 @@
 "EW" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 9
+	},
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Storage Room";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/medical/storage)
