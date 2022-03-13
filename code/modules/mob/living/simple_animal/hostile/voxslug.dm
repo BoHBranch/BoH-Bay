@@ -26,7 +26,7 @@ Small, little HP, poisonous.
 	melee_damage_upper = 20
 	melee_damage_flags = DAM_SHARP
 	holder_type = /obj/item/weapon/holder/voxslug
-	faction = SPECIES_VOX || SPECIES_VOX_ARMALIS
+	faction = SPECIES_VOX
 
 /mob/living/simple_animal/hostile/voxslug/ListTargets(var/dist = 7)
 	var/list/L = list()
