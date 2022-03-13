@@ -10,6 +10,7 @@
 	jam_chance = 5 //Cheap firearm. Chance of jamming
 	fire_delay = 2 // Fires faster than usual
 	damage_mult = 0.9 // Damages a bit less than peers.
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_ESOTERIC = -1) //bandaid fix to prevent r&d from getting free esoterics
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar/cabinet
 	starts_loaded = 0
