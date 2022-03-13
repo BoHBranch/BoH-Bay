@@ -2276,6 +2276,7 @@
 /obj/machinery/light/ascent{
 	dir = 4
 	},
+/obj/structure/ship_munition/disperser_charge/ascent,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_center)
 "ff" = (
@@ -2674,10 +2675,16 @@
 /obj/machinery/light/ascent{
 	dir = 4
 	},
+/obj/machinery/computer/ship/disperser/ascent{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_center)
 "fO" = (
-/obj/structure/ship_munition/disperser_charge/ascent,
+/obj/structure/bed/chair/padded/purple/ascent,
+/obj/machinery/computer/ship/navigation/ascent{
+	dir = 4
+	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "fP" = (
@@ -2711,6 +2718,7 @@
 	id = "ammo_belt_ascent";
 	pixel_x = -6
 	},
+/obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "fS" = (
@@ -2723,21 +2731,12 @@
 /obj/machinery/light/ascent{
 	dir = 8
 	},
-/obj/machinery/computer/ship/disperser/ascent{
-	dir = 4
-	},
+/obj/structure/ship_munition/disperser_charge/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "fT" = (
-/obj/machinery/computer/ship/navigation/ascent{
-	dir = 8
-	},
-/obj/structure/window/phoronreinforced{
-	dir = 1
-	},
-/obj/structure/window/phoronreinforced{
-	dir = 4
-	},
+/obj/effect/catwalk_plated/ascent,
+/obj/structure/ship_munition/disperser_charge/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "fU" = (
@@ -2745,9 +2744,6 @@
 	dir = 8
 	},
 /obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_center)
-"fV" = (
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
 "fW" = (
@@ -3077,11 +3073,6 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "yN" = (
@@ -3180,6 +3171,10 @@
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "CI" = (
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
@@ -3187,11 +3182,6 @@
 	dir = 6
 	},
 /obj/effect/catwalk_plated/ascent,
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/tiroarea)
 "CL" = (
@@ -3245,11 +3235,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
@@ -3317,9 +3302,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/apc/hyper/ascent/west{
 	name = "tiro apc"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
@@ -3524,11 +3506,6 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/ascent,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "ZK" = (
@@ -8125,7 +8102,7 @@ ai
 ai
 fA
 fU
-fW
+fT
 ai
 ai
 ai
@@ -8490,8 +8467,8 @@ ax
 cI
 ai
 fR
-fV
-fO
+bV
+fW
 ai
 aX
 bO
