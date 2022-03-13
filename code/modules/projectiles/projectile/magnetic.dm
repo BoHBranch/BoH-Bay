@@ -13,7 +13,6 @@
 /obj/item/projectile/bullet/magnetic/slug
 	name = "slug"
 	icon_state = "gauss_silenced"
-	stun = 1
 	damage = 50
 	armor_penetration = 75
 
