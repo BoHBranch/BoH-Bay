@@ -39,7 +39,6 @@ var/datum/species/shapeshifter/promethean/prometheans
 	toxins_mod =          0.1
 	oxy_mod =             0
 	radiation_mod =       0
-
 	siemens_coefficient = -1
 	rarity_value =        5
 	slowdown = 0.5
