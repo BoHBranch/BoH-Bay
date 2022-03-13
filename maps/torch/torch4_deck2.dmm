@@ -18859,6 +18859,9 @@
 	dir = 8;
 	icon_state = "warning"
 	},
+/obj/structure/reagent_dispensers/acid{
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics/lower)
 "SB" = (
