@@ -4309,6 +4309,10 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
+"kI" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_starboard_jut)
 "lb" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -4435,6 +4439,9 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
+"oF" = (
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_starboard_prow)
 "oL" = (
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/hydroponics_starboard)
@@ -4497,6 +4504,10 @@
 /obj/item/weapon/reagent_containers/dropper,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
+"qZ" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_port_spike)
 "rb" = (
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
@@ -4574,6 +4585,10 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
+"wJ" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_port_prow)
 "wM" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -4614,6 +4629,12 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
+"yv" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent{
+	initial_gas = newlist()
+	},
+/area/ship/ascent/fore_port_prow)
 "yx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -4630,6 +4651,10 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
+"yS" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/aft_starboard_jut)
 "yU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -4774,6 +4799,12 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
+"FE" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent{
+	initial_gas = newlist()
+	},
+/area/ship/ascent/fore_hallway)
 "FO" = (
 /obj/structure/bed/chair/padded/purple/ascent{
 	dir = 1
@@ -4785,6 +4816,7 @@
 /obj/structure/window/phoronreinforced{
 	dir = 4
 	},
+/obj/machinery/porta_turret/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
 "Gl" = (
@@ -4816,6 +4848,7 @@
 	dir = 8
 	},
 /obj/structure/window/phoronreinforced,
+/obj/machinery/porta_turret/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
 "If" = (
@@ -4973,6 +5006,12 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
+"OV" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent{
+	initial_gas = newlist()
+	},
+/area/ship/ascent/wing_starboard)
 "OZ" = (
 /obj/machinery/mineral/unloading_machine{
 	color = "PURPLE";
@@ -5064,6 +5103,12 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/shuttle_starboard)
+"Su" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent{
+	initial_gas = newlist()
+	},
+/area/ship/ascent/fore_starboard_jut)
 "TL" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -5075,6 +5120,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
+"TM" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent{
+	initial_gas = newlist()
+	},
+/area/ship/ascent/aft_starboard_jut)
 "TN" = (
 /obj/structure/window/phoronreinforced{
 	dir = 1
@@ -5135,6 +5186,12 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
+"Vw" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent{
+	initial_gas = newlist()
+	},
+/area/ship/ascent/shuttle_port)
 "Vx" = (
 /obj/structure/railing/mapped{
 	dir = 4;
@@ -5213,6 +5270,10 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
+"YB" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/shuttle_port)
 "Zh" = (
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_starboard_jut)
@@ -7998,6 +8059,7 @@ aa
 aa
 aa
 aa
+qZ
 aa
 aa
 aa
@@ -8009,8 +8071,7 @@ aa
 aa
 aa
 aa
-aa
-aa
+qZ
 aa
 aa
 aa
@@ -9587,13 +9648,13 @@ aA
 cu
 av
 aa
+FE
 aa
 aa
 aa
 aa
 aa
-aa
-aa
+FE
 aa
 bz
 hr
@@ -9946,7 +10007,7 @@ aa
 aa
 aa
 aa
-aa
+oF
 ah
 ah
 ah
@@ -9966,7 +10027,7 @@ hG
 cy
 cy
 cy
-aa
+wJ
 aa
 aa
 aa
@@ -10798,7 +10859,7 @@ aa
 aa
 aa
 aa
-mg
+kI
 ac
 ac
 ah
@@ -10820,7 +10881,7 @@ cv
 cv
 cv
 cy
-aa
+wJ
 aa
 aa
 aa
@@ -11552,7 +11613,7 @@ cv
 hc
 ic
 dT
-aa
+yv
 cN
 je
 cQ
@@ -11645,7 +11706,7 @@ aa
 aa
 aa
 aa
-aa
+Su
 ac
 ac
 ac
@@ -12049,7 +12110,7 @@ iS
 gT
 cN
 cN
-XM
+Vw
 aa
 aa
 aa
@@ -12264,7 +12325,7 @@ MY
 ab
 ab
 Qz
-qG
+kI
 ah
 as
 as
@@ -12419,7 +12480,7 @@ cN
 XM
 iX
 cN
-aa
+YB
 aa
 aa
 aa
@@ -13029,7 +13090,7 @@ cN
 XM
 XM
 cN
-aa
+YB
 aa
 aa
 aa
@@ -13240,7 +13301,7 @@ Nv
 ab
 ab
 Qz
-na
+yS
 ag
 an
 fW
@@ -13391,7 +13452,7 @@ jc
 jl
 cN
 cN
-XM
+Vw
 aa
 aa
 aa
@@ -13841,7 +13902,7 @@ aa
 aa
 aa
 aa
-aa
+TM
 aj
 aj
 aj
@@ -13870,7 +13931,7 @@ ek
 bI
 da
 ag
-aa
+OV
 cN
 jb
 cQ
@@ -14822,7 +14883,7 @@ aa
 aa
 aa
 aa
-aa
+TM
 aj
 aj
 aj

@@ -2990,6 +2990,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_center)
+"qA" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_north)
 "sH" = (
 /obj/machinery/door/airlock/ascent,
 /turf/simulated/floor/tiled/ascent,
@@ -3033,6 +3037,10 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
+"vr" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_south)
 "wL" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -3112,6 +3120,10 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
+"zU" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_center)
 "BA" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -3377,6 +3389,10 @@
 /obj/effect/floor_decal/corner/paleblue,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_hospital)
+"RP" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_atmos)
 "SL" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -3412,6 +3428,10 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
+"UU" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_south_spike)
 "Vh" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -6288,6 +6308,7 @@ aa
 aa
 aa
 aa
+UU
 aa
 aa
 aa
@@ -6299,8 +6320,7 @@ aa
 aa
 aa
 aa
-aa
-aa
+UU
 aa
 aa
 aa
@@ -8236,7 +8256,7 @@ aa
 aa
 aa
 aa
-aa
+qA
 ax
 ax
 ax
@@ -8256,7 +8276,7 @@ dw
 bO
 bO
 bO
-aa
+vr
 aa
 aa
 aa
@@ -9086,7 +9106,7 @@ aa
 aa
 aa
 aa
-aa
+RP
 aa
 aa
 aR
@@ -9235,7 +9255,7 @@ af
 aa
 aa
 aa
-aa
+zU
 aa
 aa
 aa
@@ -9935,7 +9955,7 @@ aa
 aa
 aa
 aa
-aa
+RP
 aR
 aR
 aR
