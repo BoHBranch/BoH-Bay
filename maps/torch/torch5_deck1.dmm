@@ -5972,6 +5972,12 @@
 /obj/machinery/firealarm{
 	pixel_y = 22
 	},
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "medicalsafedoor1";
+	name = "safe room door-control";
+	pixel_x = 23;
+	pixel_y = 25
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/medical)
 "alB" = (
@@ -10385,9 +10391,17 @@
 	pixel_y = 23;
 	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
 	},
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "opssafedoor";
+	name = "safe room door-control";
+	pixel_x = -24;
+	pixel_y = -8
+	},
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "medicalsafedoor2";
+	name = "safe room door-control";
+	pixel_x = -24;
+	pixel_y = -8
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/medical)
@@ -18564,6 +18578,10 @@
 "cHB" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
+	},
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/medical)
