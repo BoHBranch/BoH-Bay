@@ -540,11 +540,6 @@
 	icon_state = "shuttle3"
 	base_turf = /turf/simulated/open
 
-/area/turbolift/medical_lift
-	name = "\improper Medical Lift"
-	icon_state = "shuttle3"
-	base_turf = /turf/simulated/open
-
 /area/turbolift/missiles_lift
 	name = "\improper Missiles Lift"
 	icon_state = "shuttle3"
