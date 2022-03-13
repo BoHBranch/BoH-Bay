@@ -624,10 +624,12 @@
 /area/maintenance/seconddeck/central)
 "bi" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/mech_recharger,
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/structure/table/rack,
+/obj/random/firstaid,
+/obj/random/firstaid,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/medical/storage)
 "bj" = (
@@ -678,15 +680,8 @@
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
 "bn" = (
-/obj/structure/railing/mapped{
-	dir = 8;
-	tag = "icon-railing0 (EAST)"
-	},
 /obj/effect/floor_decal/techfloor{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 8
+	dir = 9
 	},
 /obj/machinery/light{
 	dir = 1;
@@ -955,7 +950,13 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/auxsolarstarboard)
 "bP" = (
-/turf/simulated/floor/plating,
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/storage/box/freezer,
+/obj/item/weapon/storage/box/freezer,
+/obj/item/stack/nanopaste,
+/obj/item/stack/nanopaste,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/medical/storage)
 "bQ" = (
 /obj/effect/floor_decal/techfloor{
@@ -1479,8 +1480,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 8
+/obj/effect/floor_decal/corner_techfloor_grid{
+	dir = 1;
+	icon_state = "corner_techfloor_grid"
+	},
+/obj/effect/floor_decal/techfloor/corner{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/medical/storage)
@@ -1645,9 +1650,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
-	},
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 1
 	},
 /obj/effect/floor_decal/techfloor/corner,
 /turf/simulated/floor/tiled/techfloor,
@@ -3346,14 +3348,10 @@
 	pixel_y = 32
 	},
 /obj/effect/floor_decal/techfloor{
-	dir = 8;
-	icon_state = "techfloor_edges"
+	dir = 9
 	},
 /obj/effect/floor_decal/corner_techfloor_grid,
 /obj/effect/floor_decal/techfloor/corner,
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/techfloor,
 /area/medical/storage)
 "gs" = (
@@ -6945,8 +6943,11 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/seconddeck/elevator)
 "nb" = (
-/obj/effect/shuttle_landmark/lift/med_bottom,
-/turf/simulated/floor/plating,
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/random/firstaid,
+/obj/random/firstaid,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/medical/storage)
 "nc" = (
 /turf/simulated/wall/prepainted,
@@ -6974,7 +6975,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/obj/effect/floor_decal/industrial/warning{
+/obj/effect/floor_decal/corner_techfloor_grid{
+	dir = 1;
+	icon_state = "corner_techfloor_grid"
+	},
+/obj/effect/floor_decal/techfloor/corner{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -7450,9 +7455,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/medical/storage)
@@ -8013,9 +8015,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/medical/storage)
@@ -10538,8 +10537,6 @@
 /obj/structure/table/rack,
 /obj/structure/bedsheetbin,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/random/firstaid,
-/obj/random/firstaid,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/medical/storage)
 "tH" = (
@@ -15181,6 +15178,12 @@
 /obj/structure/sign/warning/fire,
 /turf/simulated/wall/ocp_wall,
 /area/maintenance/incinerator)
+"EW" = (
+/obj/effect/floor_decal/techfloor{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/medical/storage)
 "Fb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -40624,7 +40627,7 @@ ag
 ag
 aM
 bP
-bP
+EW
 ne
 sG
 tr
@@ -40826,7 +40829,7 @@ aa
 aa
 aM
 nb
-bP
+bQ
 nZ
 cq
 tr
@@ -41027,8 +41030,8 @@ aq
 aa
 aa
 aM
-bP
-bP
+nb
+bQ
 ph
 da
 up
