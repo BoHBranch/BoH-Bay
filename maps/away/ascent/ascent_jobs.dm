@@ -258,7 +258,7 @@
 	blacklisted_species = list(SPECIES_VOXPARIAH, SPECIES_VOX, SPECIES_VOX_ARMALIS, SPECIES_ADHERENT)
 	whitelisted_species = null
 	loadout_allowed = TRUE
-	skill_points = 50 //Just *about* the # for a Roboticst at default, counting their preset skills. We have no min-skill level for this role since anyone could be deemed "interesting".
+	skill_points = 36
 	min_skill = list()
 	requires_supervisor = "Ascent Gyne"
 	set_species_on_join = null
