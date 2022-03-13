@@ -150,6 +150,9 @@
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/fleet/e6,
+		/datum/mil_rank/fleet/w1,
+		/datum/mil_rank/fleet/w2,
+		/datum/mil_rank/fleet/w3,
 		/datum/mil_rank/marine_corps/e5,
 		/datum/mil_rank/marine_corps/e6,
 		/datum/mil_rank/civ/contractor
@@ -445,7 +448,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e7,
 		/datum/mil_rank/fleet/e8,
-		/datum/mil_rank/fleet/e9,		
+		/datum/mil_rank/fleet/e9,
 		/datum/mil_rank/fleet/w2,
 		/datum/mil_rank/fleet/w3,
 		/datum/mil_rank/fleet/o2,
