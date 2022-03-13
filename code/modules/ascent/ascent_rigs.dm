@@ -84,6 +84,16 @@
 	icon_state = "rifle"
 	gun = /obj/item/weapon/gun/energy/particle
 
+/obj/item/rig_module/mounted/particle_projector
+	name = "particle projector"
+	desc = "A mounted particle projector of Ascent design."
+	interface_name = "particle projector"
+	interface_desc = "A mounted particle projector of Ascent design."
+	icon = 'icons/obj/ascent.dmi'
+	icon_state = "rifle"
+	gun = /obj/item/weapon/gun/energy/particle/small
+
+
 /obj/item/rig_module/device/multitool
 	name = "mantid integrated multitool"
 	desc = "A limited-sentience integrated multitool capable of interfacing with any number of systems."
@@ -347,8 +357,7 @@
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/chem_dispenser/nabber,
 		/obj/item/rig_module/device/nanoblade,
-		/obj/item/rig_module/mounted/flechette_rifle,
-		/obj/item/rig_module/mounted/particle_rifle,
+		/obj/item/rig_module/mounted/particle_projector,
 		/obj/item/rig_module/device/multitool,
 		/obj/item/rig_module/device/cable_coil,
 		/obj/item/rig_module/device/welder,
@@ -488,7 +497,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = 1.2 * ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_MAJOR,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -514,7 +523,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = 1.2 * ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_MAJOR,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -641,7 +650,7 @@
 		/obj/item/rig_module/chem_dispenser/combat,
 		/obj/item/rig_module/chem_dispenser/nabber/tiro,
 		/obj/item/rig_module/device/nanoblade/par,
-		/obj/item/rig_module/mounted/particle_rifle,
+		/obj/item/rig_module/mounted/particle_projector,
 		/obj/item/rig_module/device/multitool,
 		/obj/item/rig_module/device/cable_coil,
 		/obj/item/rig_module/device/welder,
