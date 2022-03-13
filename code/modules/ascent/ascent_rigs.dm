@@ -575,11 +575,15 @@
 
 /obj/item/clothing/head/helmet/space/rig/mantid/tiro
 	desc = "A sleek, insect-esque helmet designed for a Humanoid."
-	species_restricted = list(SPECIES_HUMAN)
-
+	species_restricted = null
+	sprite_sheets = list(
+		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_skrell.dmi',
+		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_head_unathi.dmi',
+		SPECIES_OLDUNATHI = 'icons/mob/species/unathi/generated/onmob_head_unathi.dmi'
+		)
 /obj/item/clothing/suit/space/rig/mantid/tiro
 	desc = "A Mantid exosuit designed for a Humanoid. Offers superb protection."
-	species_restricted = list(SPECIES_HUMAN)
+	species_restricted = null
 	allowed = list(
 		/obj/item/clustertool,
 		/obj/item/weapon/gun/energy/particle/small,
@@ -609,14 +613,24 @@
 		/obj/item/device/suit_cooling_unit,
 		/obj/item/weapon/storage
 	)
-
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_suit_unathi.dmi'
+		)
 /obj/item/clothing/shoes/magboots/rig/mantid/tiro
 	desc = "Feels like you're stepping on a cloud."
-	species_restricted = list(SPECIES_HUMAN)
-
+	species_restricted = null
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_feet_unathi.dmi',
+		)
 /obj/item/clothing/gloves/rig/mantid/tiro
 	desc = "Highly advanced gloves that bind themselves around your fingers. Despite this, it feels as flexible as air."
-	species_restricted = list(SPECIES_HUMAN)
+	species_restricted = null
+	sprite_sheets = list(
+		SPECIES_VOX = 'icons/mob/species/vox/onmob_hands_vox.dmi',
+		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_hands_vox_armalis.dmi',
+		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_hands_gas.dmi',
+		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_hands_unathi.dmi',
+		)
 
 /obj/item/weapon/rig/mantid/tiro/elite
 	name = "par exosuit"
