@@ -13178,16 +13178,14 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "aDe" = (
-/obj/machinery/atmospherics/unary/cryo_cell,
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 5
-	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
 	},
-/obj/machinery/camera/network/medbay{
-	c_tag = "Infirmary - Emergency Treatment Center Starboard 2"
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
 	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/iv_drip,
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "aDs" = (
@@ -18423,14 +18421,14 @@
 /turf/simulated/floor/plating,
 /area/medical/equipstorage)
 "czb" = (
-/obj/machinery/door/airlock/glass/medical{
-	name = "Medical Storage"
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 6
 	},
-/obj/machinery/door/firedoor{
-	dir = 4
+/obj/machinery/camera/network/medbay{
+	c_tag = "Infirmary - Emergency Treatment Center Starboard 2";
+	dir = 8
 	},
-/obj/effect/floor_decal/industrial/hatch/blue,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "czN" = (
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -27153,14 +27151,6 @@
 "pzb" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/rnd/research)
-"pzz" = (
-/obj/effect/floor_decal/corner/paleblue/three_quarters{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/iv_drip,
-/turf/simulated/floor/tiled/white,
-/area/medical/sleeper)
 "pzH" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -28036,14 +28026,9 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/teleporter/firstdeck)
 "qHZ" = (
-/obj/machinery/door/airlock/glass/medical{
-	name = "Medical Storage"
-	},
-/obj/effect/floor_decal/industrial/hatch/blue,
-/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/white/monotile,
+/turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "qIb" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue,
@@ -29577,6 +29562,13 @@
 	icon_state = "tube1"
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/window/eastleft{
+	dir = 2;
+	name = "Medical Storage"
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
 "stb" = (
@@ -51550,7 +51542,7 @@ acC
 aeo
 gqI
 cNb
-cQb
+aDe
 oEb
 qsz
 aMe
@@ -51954,9 +51946,9 @@ acC
 aeo
 vaW
 lqh
-cQb
-pzz
-fsb
+czb
+qCj
+qsz
 gcc
 uMh
 ewb
@@ -52157,7 +52149,7 @@ aeo
 kNB
 gMb
 aeo
-aDe
+gtU
 uVh
 dQb
 exb
@@ -52559,7 +52551,7 @@ bDc
 ahk
 aeo
 aeo
-czb
+gMb
 aeo
 gtU
 uVh
