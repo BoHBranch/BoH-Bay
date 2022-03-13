@@ -262,3 +262,31 @@
 	reagents_to_add = list(/datum/reagent/space_drugs = 15,
 							/datum/reagent/mindbreaker = 15
 							)
+
+/obj/item/weapon/reagent_containers/glass/bottle/dexalinp
+	name = "dexalin plus bottle"
+	desc = "A small bottle of dexalin plus. Used to raise blood oxygenation."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/dexalinp = 60)
+
+/obj/item/weapon/reagent_containers/glass/bottle/kelotane
+	name = "kelotane bottle"
+	desc = "A small bottle of kelotane. Used to heal burns quickly."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/kelotane = 60)
+
+/obj/item/weapon/reagent_containers/glass/bottle/tramadol
+	name = "tramadol bottle"
+	desc = "A small bottle of tramadol. it is a strong painkiller, do not mix with alcohol!."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/tramadol = 60)
+
+/obj/item/weapon/reagent_containers/glass/bottle/bicaridine
+	name = "bicaridine bottle"
+	desc = "A small bottle of bicaridine. Great for stimultating the heal of bruises and traumas."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+	reagents_to_add = list(/datum/reagent/bicaridine = 60)
