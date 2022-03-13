@@ -38,12 +38,16 @@ var/datum/species/shapeshifter/promethean/prometheans
 	burn_mod =            2
 	toxins_mod =          0.1
 	oxy_mod =             0
+	radiation_mod =       0
+
 	siemens_coefficient = -1
 	rarity_value =        5
 	slowdown = 0.5
 	darksight_range = 3
 	darksight_tint = DARKTINT_MODERATE
 	limbs_are_nonsolid =  TRUE
+	warning_low_pressure = 50
+	hazard_low_pressure = 0
 
 	unarmed_types = list(/datum/unarmed_attack/slime_glomp)
 	has_organ =     list(BP_SLIMECORE = /obj/item/organ/internal/brain/slime) // Slime core.
