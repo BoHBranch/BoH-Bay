@@ -35,7 +35,7 @@
 	item_state = "secgundark"
 	safety_icon = "safety"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
-	fire_delay = 2.5
+	fire_delay = 4
 	ammo_indicator = TRUE
 
 /obj/item/weapon/gun/projectile/pistol/military/alt
@@ -44,7 +44,6 @@
 	icon_state = "military-alt"
 	safety_icon = "safety"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
-	fire_delay = 8
 
 /obj/item/weapon/gun/projectile/pistol/sec
 	name = "MA-Mk58"
