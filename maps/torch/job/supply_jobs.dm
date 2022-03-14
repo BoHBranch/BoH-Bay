@@ -55,7 +55,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	alt_titles = list(
 		"Supply Technician",
-		"Gunnery Technician")
+		"Munitions Technician")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/tech
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
