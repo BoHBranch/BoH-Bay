@@ -591,7 +591,7 @@
 		SPECIES_OLDUNATHI = 'icons/mob/species/unathi/generated/onmob_head_unathi.dmi'
 		)
 /obj/item/clothing/suit/space/rig/mantid/tiro
-	desc = "A Mantid exosuit designed for a Humanoid. Offers superb protection."
+	desc = "A Mantid exosuit designed for a Humanoid. Offers good protection."
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 	allowed = list(
 		/obj/item/clustertool,
@@ -626,13 +626,13 @@
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_suit_unathi.dmi'
 		)
 /obj/item/clothing/shoes/magboots/rig/mantid/tiro
-	desc = "Feels like you're stepping on a cloud."
+	desc = "Ascent magnetic boots readapted for humanoids."
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_feet_unathi.dmi',
 		)
 /obj/item/clothing/gloves/rig/mantid/tiro
-	desc = "Highly advanced gloves that bind themselves around your fingers. Despite this, it feels as flexible as air."
+	desc = "Ascent gloves refitted to suit a humanoid. Quite advanced and made out of the same nanosilica composite like most of their armor."
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_hands_vox.dmi',
@@ -642,8 +642,8 @@
 		)
 
 /obj/item/weapon/rig/mantid/tiro/elite
-	name = "par exosuit"
-	desc = "The exosuit of a Gyne's Par, an esteemed Tiro who has earned their favor through efficiency and loyalty. An armor of this quality has few equals."
+	name = "Auctus exosuit"
+	desc = "A somehwat more advanced variant of the tiro suit Ascent employ on their integrated humanoids. The auctus suit features somewhat improved armor plating and more modules such as an integrated particle projector."
 	icon_state = "par_voidsuit"
 	chest_type = /obj/item/clothing/suit/space/rig/mantid/tiro/elite
 	helm_type = /obj/item/clothing/head/helmet/space/rig/mantid/tiro/elite
@@ -676,7 +676,7 @@
 	)
 
 /obj/item/clothing/head/helmet/space/rig/mantid/tiro/elite
-	desc = "The helmet of the Gyne's Par. Comfortable as air."
+	desc = "The helmet of the auctus exosuit. Features somehwat advanced optics and good armor."
 
 /obj/item/clothing/suit/space/rig/mantid/tiro/elite
-	desc = "The exosuit of the Gyne's Par. Little else can compare to its protection and prestige, besides perhaps the hatred of Solarians towards them."
+	desc = "The chestpiece of an auctus exosuit. Features improved nanosilica composite armor plating almost on par with that of an alate exosuit."
