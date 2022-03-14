@@ -8,7 +8,7 @@
 	magazine_type = /obj/item/ammo_magazine/pistol/double/pepperball
 	fire_sound = 'sound/weapons/gunshot/pistol_mk59.ogg'
 	jam_chance = 5 //Cheap firearm. Chance of jamming
-	fire_delay = 2 // Fires faster than usual
+	fire_delay = 5 // Fires faster than usual
 	damage_mult = 0.9 // Damages a bit less than peers.
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_ESOTERIC = -1) //bandaid fix to prevent r&d from getting free esoterics
 
@@ -57,7 +57,7 @@
 	desc = "The Lumoco Arms' Mk12 is a rugged revolver for people who don't keep their guns well-maintained. Unlike its cousin, the Mk59 'Jhen Bothus', it has no issues with reliability."
 	accuracy = 2
 	bulk = 0
-	fire_delay = 5.5
+	fire_delay = 8
 	penetration_mod = 10
 	falloff_mod = -0.5
 

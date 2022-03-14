@@ -35,7 +35,8 @@
 	item_state = "secgundark"
 	safety_icon = "safety"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
-	fire_delay = 2.5
+	jam_chance = 5 //Cheap firearm. Chance of jamming
+	fire_delay = 6
 	ammo_indicator = TRUE
 
 /obj/item/weapon/gun/projectile/pistol/military/alt
@@ -44,6 +45,7 @@
 	icon_state = "military-alt"
 	safety_icon = "safety"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
+	jam_chance = 0
 	fire_delay = 8
 
 /obj/item/weapon/gun/projectile/pistol/sec
