@@ -240,11 +240,13 @@
 	info = "You are a Monarch Serpentid Queen living on an independant Ascent vessel. Assist the Gyne in her duties and tend to your Workers."
 	set_species_on_join = SPECIES_MONARCH_QUEEN
 	outfit_type = /decl/hierarchy/outfit/job/monarch
-	min_skill = list(SKILL_EVA = SKILL_ADEPT,
-					SKILL_HAULING = SKILL_ADEPT,
-					SKILL_COMBAT = SKILL_ADEPT,
-					SKILL_WEAPONS = SKILL_ADEPT,
-					SKILL_MEDICAL = SKILL_BASIC)
+	skill_points = 26
+	min_skill = list(SKILL_EVA = SKILL_EXPERT,
+					SKILL_HAULING = SKILL_BASIC,
+					SKILL_MEDICAL = SKILL_EXPERT,
+					SKILL_ANATOMY = SKILL_EXPERT,
+					SKILL_CHEMISTRY = SKILL_ADEPT,
+					SKILL_WEAPONS = SKILL_ADEPT)
 	requires_supervisor = "Ascent Gyne"
 
 /datum/job/submap/ascent/tiro //We do this snowflake style because otherwise the species throws a fit. DO NOT SUBTYPE THIS TO ASCENT!!!!
