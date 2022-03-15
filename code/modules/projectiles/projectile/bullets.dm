@@ -157,7 +157,7 @@
 	agony = 40
 	embed = 0
 	armor_penetration = 5
-	impact_sounds = list(BULLET_IMPACT_MEAT = 'sound/weapons/bonk.ogg', BULLET_IMPACT_METAL = 'sound/weapons/bonk.ogg')
+	impact_sounds = list(BULLET_IMPACT_MEAT = 'sound/weapons/rubberthunk_flesjh.ogg', BULLET_IMPACT_METAL = 'sound/weapons/rubberthunk_metal.ogg')
 
 /obj/item/projectile/bullet/pistol/rubber/holdout
 	agony = 25
