@@ -140,7 +140,7 @@
 
 /obj/item/clothing/accessory/badge/holo/ascent
 	name = "mark of the devoted"
-	desc = "A charm of mantid design, denoting it's holder as a Par. It glistens with a controlled, humming blue energy."
+	desc = "A charm of mantid design, denoting it's holder as an Aurum. It glistens with a controlled, humming blue energy."
 	color = null
 	badge_string = "Par"
 	badge_access = access_ascent

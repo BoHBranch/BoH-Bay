@@ -591,7 +591,7 @@
 		SPECIES_OLDUNATHI = 'icons/mob/species/unathi/generated/onmob_head_unathi.dmi'
 		)
 /obj/item/clothing/suit/space/rig/mantid/tiro
-	desc = "A Mantid exosuit designed for a Humanoid. Offers superb protection."
+	desc = "A Mantid exosuit designed for a Humanoid. Offers decent protection."
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 	allowed = list(
 		/obj/item/clustertool,
@@ -632,7 +632,7 @@
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_feet_unathi.dmi',
 		)
 /obj/item/clothing/gloves/rig/mantid/tiro
-	desc = "Highly advanced gloves that bind themselves around your fingers. Despite this, it feels as flexible as air."
+	desc = "Highly advanced gloves that bind themselves around your fingers."
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 	sprite_sheets = list(
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_hands_vox.dmi',
@@ -642,12 +642,12 @@
 		)
 
 /obj/item/weapon/rig/mantid/tiro/elite
-	name = "par exosuit"
-	desc = "The exosuit of a Gyne's Par, an esteemed Tiro who has earned their favor through efficiency and loyalty. An armor of this quality has few equals."
+	name = "aurum exosuit"
+	desc = "The exosuit of an aurum, an esteemed Tiro who has earned favor through efficiency and loyalty. Very protective."
 	icon_state = "par_voidsuit"
 	chest_type = /obj/item/clothing/suit/space/rig/mantid/tiro/elite
 	helm_type = /obj/item/clothing/head/helmet/space/rig/mantid/tiro/elite
-	suit_type = "elite guardian"
+	suit_type = "elite hominid"
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
@@ -676,7 +676,7 @@
 	)
 
 /obj/item/clothing/head/helmet/space/rig/mantid/tiro/elite
-	desc = "The helmet of the Gyne's Par. Comfortable as air."
+	desc = "The helmet of the aurum. Comfortable as air."
 
 /obj/item/clothing/suit/space/rig/mantid/tiro/elite
-	desc = "The exosuit of the Gyne's Par. Little else can compare to its protection and prestige, besides perhaps the hatred of Solarians towards them."
+	desc = "The exosuit of the aurum."
