@@ -151,11 +151,13 @@
 //Armor pen is to prevent them from being invalidated by ARMOR_BALLISTIC_MINOR, as has been the case.
 /obj/item/projectile/bullet/pistol/rubber
 	name = "rubber bullet"
+	fire_sound = 'sound/weapons/gunshot/fastspike.ogg'
 	damage_flags = 0
 	damage = 10
 	agony = 40
 	embed = 0
 	armor_penetration = 5
+	impact_sounds = list(BULLET_IMPACT_MEAT = 'sound/weapons/bonk.ogg', BULLET_IMPACT_METAL = 'sound/weapons/bonk.ogg')
 
 /obj/item/projectile/bullet/pistol/rubber/holdout
 	agony = 25
@@ -339,7 +341,7 @@ Thanks a bunch! :n
 	embed = 0
 	sharp = 0
 	nodamage = 1
-
+	fire_sound = 'sound/weapons/gunshot/fastspike.ogg'
 /obj/item/projectile/bullet/pistol/pepperball/on_hit(var/atom/target, var/blocked = 0, var/alien)
 	..()
 	var/eyes_covered = 0
