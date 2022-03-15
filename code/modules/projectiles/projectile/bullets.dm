@@ -342,6 +342,7 @@ Thanks a bunch! :n
 	sharp = 0
 	nodamage = 1
 	fire_sound = 'sound/weapons/gunshot/fastspike.ogg'
+
 /obj/item/projectile/bullet/pistol/pepperball/on_hit(var/atom/target, var/blocked = 0, var/alien)
 	..()
 	var/eyes_covered = 0
