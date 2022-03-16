@@ -74,7 +74,7 @@
 
 /obj/item/weapon/gun/energy/particle/small/par //MANKIND IS DEAD, BLOOD IS FUEL, HELL IS FULL.
 	name = "particle revolver"
-	desc = "The gun of the Ascent Par, a bewildering mish-mash of ultratechnological engineering and archaic Human design, lit up with Cherenkov radiation. Curiously smells like gunpowder."
+	desc = "The gun of the Ascent Aurum, a bewildering mish-mash of ultratechnological engineering and archaic Human design, lit up with Cherenkov radiation. Curiously smells like gunpowder."
 	icon_state = "parrevolver"
 	item_state = "darkcannon"
 	charge_state = "prr"
