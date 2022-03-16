@@ -43,6 +43,12 @@
 
 	dress_extra = list(/obj/item/clothing/head/beret/solgov)
 
+/decl/hierarchy/mil_uniform/marine_corps/noncom
+	name = "Marine Corps NCO"
+	min_rank = 6
+
+	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/marine)
+
 /decl/hierarchy/mil_uniform/marine_corps/com //Can only be officers
 	name = "Marine Corps command"
 	departments = COM
