@@ -8675,7 +8675,6 @@
 /area/merchant_station)
 "aNW" = (
 /obj/machinery/firealarm{
-	dir = 1;
 	pixel_y = 24
 	},
 /turf/simulated/floor/wood,
@@ -9433,7 +9432,6 @@
 /area/merchant_station)
 "aQH" = (
 /obj/structure/table/reinforced,
-/obj/random/loot,
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
 	},
@@ -11792,12 +11790,8 @@
 /turf/simulated/floor/tiled/white,
 /area/merchant_station)
 "eTv" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
-	},
-/obj/structure/bed/double/padded,
-/obj/item/weapon/bedsheet/rddouble{
-	dir = 4
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/simulated/floor/wood,
 /area/merchant_station)
@@ -11909,6 +11903,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
+"hbF" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/undies_wardrobe,
+/turf/simulated/floor/wood,
+/area/merchant_station)
 "hie" = (
 /obj/effect/floor_decal/corner/brown{
 	dir = 10
@@ -12011,14 +12011,7 @@
 "iAR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/door/airlock{
-	name = "Room A"
-	},
-/obj/machinery/door/blast/shutters{
-	id_tag = "merchantrooma";
-	name = "Privacy Shutters"
-	},
-/turf/simulated/floor/wood/yew,
+/turf/simulated/wall/prepainted,
 /area/merchant_station)
 "iBC" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -12090,17 +12083,14 @@
 	},
 /area/holodeck/source_volleyball)
 "jpO" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 4
+/obj/machinery/door/airlock{
+	name = "Room A"
 	},
-/obj/structure/table/woodentable,
-/obj/item/weapon/storage/box/donut,
-/obj/machinery/chemical_dispenser/tac_coffee/full/good{
-	pixel_x = -24
+/obj/machinery/door/blast/shutters{
+	id_tag = "merchantrooma";
+	name = "Privacy Shutters"
 	},
-/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup,
-/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup,
-/turf/simulated/floor/wood,
+/turf/simulated/floor/wood/yew,
 /area/merchant_station)
 "jtG" = (
 /turf/unsimulated/floor{
@@ -12380,11 +12370,12 @@
 	},
 /area/syndicate_elite_squad)
 "mCg" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
-	},
-/obj/machinery/light{
+/obj/structure/bed/double/padded{
 	dir = 4
+	},
+/obj/item/weapon/bedsheet/rddouble,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
 	},
 /turf/simulated/floor/wood,
 /area/merchant_station)
@@ -12748,8 +12739,15 @@
 /area/holodeck/source_temple)
 "qPJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
+/obj/structure/table/woodentable,
+/obj/item/weapon/storage/box/donut,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
+	},
+/obj/machinery/chemical_dispenser/tac_coffee/full/good{
+	pixel_x = 24
 	},
 /turf/simulated/floor/wood,
 /area/merchant_station)
@@ -13254,7 +13252,7 @@
 /area/merchant_station)
 "xle" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8
+	dir = 1
 	},
 /obj/structure/bed/double/padded{
 	dir = 4
@@ -23898,9 +23896,9 @@ aUx
 pEp
 aUA
 aNU
-aMf
-nvh
 jpO
+aNU
+aNU
 eTv
 aNU
 mvI
@@ -24101,7 +24099,7 @@ aMf
 aPY
 ipf
 iAR
-eaO
+hbF
 qPJ
 mCg
 aNU
