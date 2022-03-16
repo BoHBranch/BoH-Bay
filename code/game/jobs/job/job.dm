@@ -57,6 +57,7 @@
 	var/required_language
 	var/is_whitelisted = FALSE
 	var/max_pow_cat = 0 //If the rank pow_cat is great then this, set to this.  This is used for Galilei Convention IDs
+	var/max_cit_rank = 0 //If the rank cit_rank is great then this, set to this.
 
 /datum/job/New()
 
