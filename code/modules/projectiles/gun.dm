@@ -126,7 +126,6 @@
 	var/tmp/last_safety_check = -INFINITY
 	var/safety_state = 1
 	var/has_safety = TRUE // Does the gun have a safety?
-	var/safety_icon 	   //overlay to apply to gun based on safety state, if any
 	var/has_firing_pin = FALSE
 	var/obj/item/firing_pin/pin //firing pin
 	var/firing_pin_type //what type is our firing pin, if has_firing_pin is true.
@@ -164,7 +163,6 @@
 
 /obj/item/weapon/gun/on_update_icon()
 	var/mob/living/M = loc
-	overlays -= image('icons/obj/guns/gui.dmi',"safety[safety()]") // Used to cut all other overlays, just cuts Safety_Icons now.
 	if(istype(M))
 		if(wielded_item_state)
 			if(M.can_wield_item(src) && src.is_held_twohanded(M))
@@ -173,10 +171,6 @@
 			else
 				item_state_slots[slot_l_hand_str] = initial(item_state)
 				item_state_slots[slot_r_hand_str] = initial(item_state)
-		if(M.skill_check(SKILL_WEAPONS,SKILL_BASIC))
-			overlays += image('icons/obj/guns/gui.dmi',"safety[safety()]")
-	if(safety_icon)
-		overlays += image(icon,"[safety_icon][safety()]")
 
 //Checks whether a given mob can use the gun
 //Any checks that shouldn't result in handle_click_empty() being called if they fail should go here.
