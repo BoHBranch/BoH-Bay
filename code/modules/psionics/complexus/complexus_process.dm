@@ -31,7 +31,7 @@
 			sound_to(owner, 'sound/effects/psi/power_unlock.ogg')
 			rating = ceil(combined_rank/rank_count)
 			cost_modifier = 1
-			if(rating > 1) 
+			if(rating > 1)
 				cost_modifier -= min(1, max(0.1, (rating-1) / 10))
 			if(!ui)
 				ui = new(owner)
@@ -85,13 +85,14 @@
 		return
 
 	var/psi_leech = owner.do_psionics_check()
-	if(psi_leech)
-		if(stamina > 10)
-			stamina = max(0, stamina - rand(15,20))
-			to_chat(owner, SPAN_DANGER("You feel your psi-power leeched away by \the [psi_leech]..."))
-		else
-			stamina++
-		return
+	if(get_rank(PSI_REDACTION) >= PSI_RANK_OPERANT || get_rank(PSI_COERCION) >= PSI_RANK_OPERANT || get_rank(PSI_PSYCHOKINESIS) >= PSI_RANK_OPERANT || get_rank(PSI_ENERGISTICS) >= PSI_RANK_OPERANT)
+		if(psi_leech)
+			if(stamina > 10)
+				stamina = max(0, stamina - rand(15,20))
+				to_chat(owner, SPAN_DANGER("You feel your psi-power leeched away by \the [psi_leech]..."))
+			else
+				stamina++
+			return
 
 	else if(stamina < max_stamina)
 		if(owner.stat == CONSCIOUS)
