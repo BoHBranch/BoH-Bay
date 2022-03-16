@@ -7,8 +7,8 @@
 	suit_type = "combat hardsuit"
 	armor = list( //Same as the old infantry hardsuits
 		melee = ARMOR_MELEE_MAJOR,
-		bullet = ARMOR_BALLISTIC_RIFLE,
-		laser = ARMOR_LASER_HANDGUNS,
+		bullet = 1.077 * ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_MAJOR,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
