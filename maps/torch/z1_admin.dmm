@@ -2232,6 +2232,13 @@
 /obj/structure/grille,
 /turf/simulated/floor/plating,
 /area/centcom/evac)
+"akK" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/turf/simulated/floor/wood/yew,
+/area/merchant_station)
 "ala" = (
 /turf/simulated/mineral,
 /area/space)
@@ -6102,6 +6109,10 @@
 	icon_state = "steel"
 	},
 /area/centcom/holding)
+"aGp" = (
+/obj/machinery/vending/boozeomat,
+/turf/simulated/wall/prepainted,
+/area/merchant_station)
 "aGq" = (
 /obj/machinery/door/airlock/external{
 	frequency = 1380;
@@ -8330,14 +8341,23 @@
 /area/merchant_station)
 "aMJ" = (
 /obj/item/weapon/handcuffs/cable/tape,
-/turf/simulated/floor/asteroid,
+/turf/simulated/wall/r_wall/prepainted,
 /area/merchant_station)
 "aMK" = (
-/obj/effect/decal/cleanable/cobweb2{
-	icon_state = "spiderling";
-	name = "dead spider"
-	},
-/turf/simulated/floor/asteroid,
+/obj/structure/closet/crate,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/item/weapon/storage/pill_bottle/three_eye,
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "aMR" = (
 /obj/machinery/vending/cola{
@@ -8501,43 +8521,10 @@
 /turf/simulated/floor/tiled/white,
 /area/merchant_station)
 "aNq" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/machinery/computer/cryopod{
-	density = 0;
-	pixel_y = 32
-	},
-/obj/item/roller,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/white,
 /area/merchant_station)
 "aNr" = (
-/obj/item/device/radio/intercom{
-	dir = 2;
-	pixel_y = 22
-	},
-/obj/structure/table/reinforced,
-/obj/item/weapon/storage/firstaid/toxin,
-/obj/item/weapon/storage/firstaid/o2{
-	pixel_x = 4;
-	pixel_y = 6
-	},
-/obj/item/weapon/storage/firstaid/fire{
-	pixel_x = 2;
-	pixel_y = 3
-	},
-/obj/item/weapon/storage/firstaid/adv{
-	pixel_x = -2
-	},
-/obj/item/weapon/storage/firstaid/regular{
-	pixel_x = -2;
-	pixel_y = 4
-	},
-/obj/item/bodybag/cryobag{
-	pixel_x = 5
-	},
-/obj/effect/floor_decal/industrial/outline/blue,
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/white,
 /area/merchant_station)
@@ -8578,11 +8565,11 @@
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
 "aNA" = (
-/obj/machinery/door/airlock{
-	name = "Toilet"
+/obj/machinery/door/window/brigdoor/northright,
+/obj/structure/window/reinforced{
+	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/freezer,
+/turf/simulated/floor/carpet/magenta,
 /area/merchant_station)
 "aNB" = (
 /obj/machinery/light/small{
@@ -8592,7 +8579,6 @@
 /obj/structure/hygiene/toilet{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
 "aNC" = (
@@ -8664,10 +8650,6 @@
 /turf/simulated/floor/tiled/white,
 /area/merchant_station)
 "aNR" = (
-/obj/machinery/sleeper{
-	dir = 8
-	},
-/obj/effect/floor_decal/industrial/outline/blue,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
 	},
@@ -8727,9 +8709,6 @@
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
 "aOa" = (
-/mob/living/simple_animal/tindalos{
-	name = "Eddy"
-	},
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
 "aOb" = (
@@ -8759,21 +8738,20 @@
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "aOd" = (
-/obj/machinery/light/small{
-	dir = 1
+/obj/machinery/button/blast_door{
+	id_tag = "merchantroomb";
+	name = "Room B Shutters";
+	pixel_y = 10
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/wall/prepainted,
 /area/merchant_station)
 "aOe" = (
 /obj/structure/closet/crate/freezer,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/hardsuit,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "aOg" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/spiderling_remains,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
@@ -9437,6 +9415,7 @@
 	req_access = list("ACCESS_MERCHANT")
 	},
 /obj/machinery/light/small,
+/obj/machinery/fabricator/hacked,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "aQF" = (
@@ -9540,6 +9519,7 @@
 	name = "Storage"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "aRl" = (
@@ -9603,6 +9583,9 @@
 "aRt" = (
 /obj/structure/table/rack,
 /obj/random/loot,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aRu" = (
@@ -9613,6 +9596,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/random/loot,
 /obj/random/loot,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aRv" = (
@@ -9692,13 +9678,16 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aRH" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aRI" = (
 /obj/structure/table/steel,
+/obj/item/weapon/spacecash/bundle/c1000,
+/obj/item/weapon/spacecash/bundle/c1000,
+/obj/item/weapon/spacecash/bundle/c1000,
+/obj/item/weapon/spacecash/bundle/c1000,
+/obj/item/weapon/spacecash/bundle/c1000,
 /obj/item/weapon/spacecash/bundle/c1000,
 /obj/item/weapon/spacecash/bundle/c1000,
 /obj/item/weapon/spacecash/bundle/c1000,
@@ -9764,14 +9753,20 @@
 /turf/simulated/floor/plating,
 /area/shuttle/merchant/home)
 "aSl" = (
-/obj/structure/table/reinforced,
 /obj/structure/closet/hydrant{
 	pixel_y = 32
+	},
+/obj/structure/bed/chair/office/comfy/black{
+	icon_state = "comfyofficechair_preview";
+	tag = "icon-comfyofficechair_preview (EAST)"
 	},
 /turf/simulated/floor/tiled,
 /area/shuttle/merchant/home)
 "aSm" = (
-/obj/structure/flora/pottedplant/minitree,
+/obj/structure/bed/chair/office/comfy/black{
+	icon_state = "comfyofficechair_preview";
+	tag = "icon-comfyofficechair_preview (EAST)"
+	},
 /turf/simulated/floor/tiled,
 /area/shuttle/merchant/home)
 "aSo" = (
@@ -9785,6 +9780,9 @@
 	pixel_y = -9
 	},
 /obj/effect/floor_decal/industrial/warning/corner,
+/obj/machinery/vending/games{
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aSp" = (
@@ -9870,6 +9868,10 @@
 "aSG" = (
 /obj/effect/floor_decal/corner/green/three_quarters{
 	dir = 8
+	},
+/obj/machinery/door/window/brigdoor/northright{
+	req_access = list("ACCESS_MERCHANT");
+	autoset_access = 0
 	},
 /turf/simulated/floor/tiled,
 /area/shuttle/merchant/home)
@@ -9969,6 +9971,16 @@
 /area/merchant_station)
 "aSS" = (
 /obj/effect/floor_decal/industrial/warning,
+/obj/machinery/alarm{
+	dir = 8;
+	pixel_x = 25;
+	pixel_y = 0;
+	req_access = list("ACCESS_MERCHANT")
+	},
+/obj/machinery/fabricator/micro{
+	pixel_x = 4
+	},
+/obj/structure/table/steel,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aST" = (
@@ -10061,6 +10073,13 @@
 /obj/effect/floor_decal/corner/green{
 	dir = 10
 	},
+/obj/machinery/door/window/brigdoor/northright{
+	req_access = list("ACCESS_MERCHANT");
+	autoset_access = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
 /area/shuttle/merchant/home)
 "aTl" = (
@@ -10112,7 +10131,7 @@
 	dir = 8;
 	id = "merchantbelt1"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled,
 /area/merchant_station)
 "aTr" = (
 /obj/structure/disposalpipe/segment,
@@ -10120,14 +10139,14 @@
 	dir = 8;
 	id = "merchantbelt1"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled,
 /area/merchant_station)
 "aTs" = (
 /obj/machinery/conveyor{
 	dir = 8;
 	id = "merchantbelt2"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled,
 /area/merchant_station)
 "aTv" = (
 /obj/structure/table/reinforced,
@@ -10219,27 +10238,35 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/wall/prepainted,
 /area/merchant_station)
 "aTK" = (
-/obj/machinery/alarm{
-	dir = 8;
-	pixel_x = 25;
-	pixel_y = 0;
-	req_access = list("ACCESS_MERCHANT")
-	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
+	},
+/obj/machinery/door/airlock{
+	req_access = list("ACCESS_MERCHANT");
+	name = "employees only"
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aTL" = (
-/obj/effect/decal/cleanable/ash,
-/obj/machinery/conveyor{
-	dir = 1;
-	id = "merchantbelt1"
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
 	},
-/turf/simulated/floor/plating,
+/obj/structure/closet/crate,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "aTM" = (
 /obj/machinery/door/blast/shutters{
@@ -10293,87 +10320,78 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock{
+	req_access = list("ACCESS_MERCHANT");
+	name = "employees only"
+	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aUa" = (
-/obj/machinery/light/small{
-	dir = 4
-	},
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
+	},
+/obj/machinery/door/airlock{
+	req_access = list("ACCESS_MERCHANT");
+	name = "employees only"
 	},
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aUb" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled,
+/obj/machinery/smartfridge/drinks,
+/turf/simulated/wall/prepainted,
 /area/merchant_station)
 "aUc" = (
-/obj/structure/table/rack,
-/obj/item/stack/material/glass/reinforced{
-	amount = 50
+/obj/machinery/light,
+/obj/effect/floor_decal/corner/brown{
+	dir = 10
 	},
-/obj/item/stack/material/glass/reinforced{
-	amount = 50
-	},
-/obj/item/stack/material/glass/reinforced{
-	amount = 50
-	},
-/obj/item/stack/material/glass/reinforced{
-	amount = 50
+/obj/machinery/door/window/brigdoor/northleft{
+	req_access = list("ACCESS_MERCHANT");
+	autoset_access = 0
 	},
 /turf/simulated/floor/tiled,
-/area/merchant_station)
+/area/shuttle/merchant/home)
 "aUd" = (
-/obj/structure/table/rack,
-/obj/item/stack/material/plastic{
-	amount = 50
-	},
-/obj/item/stack/material/plastic{
-	amount = 50
-	},
-/obj/item/stack/material/plastic{
-	amount = 50
-	},
-/obj/item/stack/material/plastic{
-	amount = 50
-	},
-/turf/simulated/floor/tiled,
+/obj/structure/table/woodentable,
+/obj/machinery/chemical_dispenser/bar_alc/full,
+/turf/simulated/floor/wood/mahogany,
 /area/merchant_station)
 "aUe" = (
-/obj/structure/table/rack,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4;
-	icon_state = "warning"
-	},
-/obj/item/stack/material/steel{
-	amount = 50
-	},
-/obj/item/stack/material/steel{
-	amount = 50
-	},
-/obj/item/stack/material/steel{
-	amount = 50
-	},
-/obj/item/stack/material/steel{
-	amount = 50
-	},
-/turf/simulated/floor/tiled,
+/obj/structure/table/woodentable,
+/obj/machinery/chemical_dispenser/bar_soft/full,
+/turf/simulated/floor/wood/mahogany,
 /area/merchant_station)
 "aUf" = (
 /obj/machinery/light/small{
 	dir = 4;
 	pixel_y = 8
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/conveyor{
-	dir = 1;
-	id = "merchantbelt1"
+/obj/machinery/button/blast_door{
+	id_tag = "merchantroomb";
+	name = "Room B Shutters";
+	pixel_y = 31;
+	pixel_x = 7
 	},
-/turf/simulated/floor/plating,
+/obj/machinery/button/blast_door{
+	id_tag = "merchantrooma";
+	name = "Room A Shutters";
+	pixel_y = 31;
+	pixel_x = -7
+	},
+/obj/structure/table/woodentable,
+/obj/random/single/lighter,
+/obj/random/projectile,
+/obj/random/drinkbottle,
+/obj/random/drinkbottle,
+/obj/random/drinkbottle,
+/obj/random/drinkbottle,
+/obj/machinery/button/blast_door{
+	id_tag = "merchantbar";
+	name = "Bar Shutters";
+	pixel_y = 21
+	},
+/turf/simulated/floor/wood/mahogany,
 /area/merchant_station)
 "aUh" = (
 /obj/machinery/door/airlock/external{
@@ -10383,35 +10401,29 @@
 	locked = 1;
 	name = "Station Exterior"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUi" = (
 /obj/machinery/firealarm{
 	dir = 1;
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/wall/prepainted,
 /area/merchant_station)
 "aUj" = (
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled,
+/obj/machinery/media/jukebox,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUk" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4;
-	icon_state = "warning"
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
 	},
-/obj/machinery/conveyor_switch{
-	id = "merchantbelt1"
-	},
-/turf/simulated/floor/tiled,
+/obj/structure/table/woodentable,
+/obj/item/weapon/storage/box/donut,
+/turf/simulated/floor/wood/yew,
 /area/merchant_station)
 "aUl" = (
-/obj/machinery/conveyor{
-	dir = 1;
-	id = "merchantbelt1"
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/wood/mahogany,
 /area/merchant_station)
 "aUv" = (
 /obj/structure/shuttle/engine/propulsion/burst/left{
@@ -10443,16 +10455,15 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUx" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4;
+	dir = 1;
 	frequency = 1380;
 	id_tag = "merchant_station_vent"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUy" = (
 /obj/machinery/door/airlock/external{
@@ -10462,10 +10473,7 @@
 	locked = 1;
 	name = "Station Exterior"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUz" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -10474,11 +10482,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 10;
-	icon_state = "intact"
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -10487,7 +10491,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUB" = (
 /obj/structure/disposalpipe/segment{
@@ -10500,15 +10504,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/wall/prepainted,
 /area/merchant_station)
 "aUC" = (
-/obj/machinery/door/airlock/multi_tile/glass{
-	autoclose = 1;
-	dir = 2;
-	name = "Warehouse"
-	},
-/obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -10518,7 +10516,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
+/obj/machinery/vending/cigarette{
+	name = "hacked cigarette machine";
+	prices = list();
+	products = list(/obj/item/weapon/storage/fancy/cigarettes = 10, /obj/item/weapon/storage/box/matches = 10, /obj/item/weapon/flame/lighter/zippo/random = 4, /obj/item/clothing/mask/smokable/cigarette/cigar/havana = 2);
+	dir = 4
+	},
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUD" = (
 /obj/structure/disposalpipe/segment{
@@ -10531,20 +10535,26 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUE" = (
-/obj/effect/floor_decal/industrial/warning/corner{
+/obj/structure/table/woodentable,
+/obj/effect/floor_decal/carpet/red,
+/obj/effect/floor_decal/carpet/red,
+/obj/effect/floor_decal/carpet/red{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
-/area/merchant_station)
-"aUF" = (
-/obj/effect/decal/cleanable/generic,
-/obj/effect/floor_decal/industrial/warning{
+/obj/effect/floor_decal/carpet/red{
 	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/carpet/orange,
+/area/merchant_station)
+"aUF" = (
+/obj/machinery/door/window/brigdoor/northleft{
+	req_access = list("ACCESS_MERCHANT");
+	autoset_access = 0
+	},
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUO" = (
 /obj/structure/lattice,
@@ -10597,14 +10607,13 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUU" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUV" = (
 /obj/machinery/alarm{
@@ -10617,33 +10626,17 @@
 	dir = 1
 	},
 /obj/machinery/disposal,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUX" = (
-/obj/structure/closet,
-/obj/item/clothing/shoes/sandal,
-/obj/item/clothing/shoes/sandal,
-/obj/item/clothing/under/rank/psych/turtleneck{
-	desc = "A turqouise turtleneck and a pair of dark blue slacks.";
-	name = "turtleneck"
+/obj/structure/bed/chair/comfy/black{
+	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aUY" = (
-/obj/structure/table/rack,
-/obj/item/stack/material/plasteel{
-	amount = 10
-	},
-/obj/item/stack/material/plasteel{
-	amount = 10
-	},
-/obj/item/stack/material/plasteel{
-	amount = 10
-	},
-/obj/item/stack/material/plasteel{
-	amount = 10
-	},
-/turf/simulated/floor/tiled,
+/obj/structure/bed/chair/comfy/red,
+/turf/simulated/floor/carpet/red,
 /area/merchant_station)
 "aVk" = (
 /obj/structure/cable{
@@ -10701,53 +10694,58 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/maintenance{
-	name = "Maintenance"
+	name = "Maintenance";
+	req_access = list("ACCESS_MERCHANT")
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aVq" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aVr" = (
-/obj/machinery/light/small,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aVs" = (
-/obj/structure/reagent_dispensers/watertank,
-/turf/simulated/floor/tiled,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aVt" = (
-/obj/structure/table/rack,
-/obj/item/stack/material/wood/fifty,
-/obj/item/stack/material/wood/fifty,
-/obj/item/stack/material/wood/fifty,
-/obj/item/stack/material/wood/fifty,
-/turf/simulated/floor/tiled,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/table/woodentable,
+/obj/effect/floor_decal/carpet/red,
+/obj/effect/floor_decal/carpet/red{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/orange,
 /area/merchant_station)
 "aVu" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aVw" = (
 /turf/simulated/floor/plating,
 /area/merchant_station)
 "aVx" = (
-/obj/structure/table/steel,
-/obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 8
-	},
-/turf/simulated/floor/plating,
+/obj/structure/bed/chair/office/comfy/black,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aVF" = (
 /obj/structure/cable{
@@ -10841,31 +10839,20 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aVO" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/machinery/portable_atmospherics/canister/air/airlock,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/atmospherics/portables_connector{
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aVQ" = (
-/obj/structure/table/rack,
-/obj/item/stack/material/glass{
-	amount = 50
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
 	},
-/obj/item/stack/material/glass{
-	amount = 50
+/obj/structure/table/woodentable,
+/obj/effect/floor_decal/carpet/red,
+/obj/effect/floor_decal/carpet/red{
+	dir = 1
 	},
-/obj/item/stack/material/glass{
-	amount = 50
-	},
-/obj/item/stack/material/glass{
-	amount = 50
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/carpet/orange,
 /area/merchant_station)
 "aWf" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
@@ -10924,23 +10911,16 @@
 /turf/simulated/floor/plating,
 /area/merchant_station)
 "aWm" = (
-/obj/structure/closet/crate/freezer,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled,
+/obj/structure/flora/pottedplant/flower,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aWn" = (
-/obj/machinery/light/small,
-/obj/structure/table/rack,
-/obj/item/stack/material/aluminium,
-/obj/item/stack/material/aluminium,
-/obj/item/stack/material/aluminium,
-/obj/item/stack/material/aluminium,
-/turf/simulated/floor/plating,
+/obj/item/weapon/reagent_containers/food/snacks/grown/mushroom/libertycap,
+/turf/simulated/wall/r_wall/prepainted,
 /area/merchant_station)
 "aWp" = (
-/obj/structure/table/rack,
-/obj/random/medical,
-/turf/simulated/floor/tiled,
+/obj/structure/table/gamblingtable,
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "aWy" = (
 /obj/structure/cable{
@@ -11217,6 +11197,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/watertank,
 /turf/simulated/floor/plating,
 /area/merchant_station)
 "aXJ" = (
@@ -11372,6 +11353,7 @@
 /obj/random/action_figure,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/item/clothing/accessory/storage/holster,
+/obj/machinery/light/small,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "btb" = (
@@ -11493,6 +11475,17 @@
 /obj/item/device/megaphone,
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/holodeck/source_boxingcourt)
+"bHg" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/wood,
+/area/merchant_station)
+"bJk" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/merchant_station)
 "bKU" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/holofloor/grass,
@@ -11525,7 +11518,6 @@
 	pixel_y = 32
 	},
 /obj/structure/disposalpipe/segment,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/freezer,
 /area/merchant_station)
 "bRY" = (
@@ -11540,23 +11532,13 @@
 /turf/simulated/floor/wood,
 /area/merchant_station)
 "bXW" = (
-/obj/structure/table/rack,
-/obj/item/stack/material/rods{
-	amount = 50
+/obj/structure/bed/chair/office/comfy/black{
+	dir = 4;
+	icon_state = "comfyofficechair_preview";
+	tag = "icon-comfyofficechair_preview (EAST)"
 	},
-/obj/item/stack/material/rods{
-	amount = 50
-	},
-/obj/item/stack/material/rods{
-	amount = 50
-	},
-/obj/item/stack/material/rods{
-	amount = 50
-	},
-/obj/random/plushie,
-/obj/random/plushie,
-/turf/simulated/floor/plating,
-/area/merchant_station)
+/turf/simulated/floor/tiled,
+/area/shuttle/merchant/home)
 "cay" = (
 /obj/structure/bed/chair/wood{
 	dir = 8;
@@ -11573,6 +11555,16 @@
 	icon_state = "dark"
 	},
 /area/syndicate_elite_squad)
+"cmb" = (
+/obj/structure/table/rack,
+/obj/item/stack/material/wood/fifty,
+/obj/item/stack/material/wood/fifty,
+/obj/item/stack/material/wood/fifty,
+/obj/item/stack/material/wood/fifty,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/medical,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "cqu" = (
 /obj/structure/holostool,
 /obj/effect/floor_decal/beach{
@@ -11597,6 +11589,17 @@
 	name = "plating"
 	},
 /area/syndicate_elite_squad)
+"cHm" = (
+/obj/item/device/radio/intercom{
+	dir = 2;
+	pixel_y = 22
+	},
+/obj/machinery/reagent_temperature{
+	pixel_y = 4
+	},
+/obj/structure/table/reinforced,
+/turf/simulated/floor/tiled/white,
+/area/merchant_station)
 "cMe" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1;
@@ -11622,6 +11625,29 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"cVx" = (
+/obj/structure/hygiene/shower{
+	dir = 8
+	},
+/obj/random/soap,
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled,
+/area/merchant_station)
+"cZI" = (
+/obj/machinery/light/small,
+/obj/structure/table/woodentable,
+/obj/random/snack,
+/obj/random/snack,
+/turf/simulated/floor/carpet/red,
+/area/merchant_station)
+"dah" = (
+/obj/structure/table/rack,
+/obj/item/stack/material/plastic/fifty,
+/obj/item/stack/material/plastic/fifty,
+/obj/item/stack/material/plastic/fifty,
+/obj/item/stack/material/plastic/fifty,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "djm" = (
 /obj/item/weapon/beach_ball/holovolleyball,
 /turf/simulated/floor/holofloor/beach/sand,
@@ -11655,20 +11681,7 @@
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
 "dCF" = (
-/obj/structure/closet/crate,
-/obj/effect/decal/cleanable/dirt,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/junk,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/white,
 /area/merchant_station)
 "dIU" = (
 /turf/simulated/floor/holofloor/tiled/stone,
@@ -11709,9 +11722,21 @@
 	},
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"eaO" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/wood/yew,
+/area/merchant_station)
 "efq" = (
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_cafe)
+"ekR" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/bed/chair/comfy/black{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/merchant_station)
 "etB" = (
 /obj/machinery/button/blast_door{
 	id_tag = "syndicate_elite_mech_room";
@@ -11733,12 +11758,35 @@
 	},
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
+"eGE" = (
+/obj/machinery/chemical_dispenser,
+/turf/simulated/floor/tiled/white,
+/area/merchant_station)
 "eRk" = (
 /obj/structure/table/rack/holorack,
 /turf/simulated/floor/holofloor/wood{
 	icon_state = "wood_broken1"
 	},
 /area/holodeck/source_temple)
+"eRy" = (
+/obj/structure/table/reinforced,
+/obj/machinery/reagent_temperature/cooler{
+	pixel_y = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/merchant_station)
+"eTv" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/obj/structure/bed/double/padded{
+	dir = 4
+	},
+/obj/item/weapon/bedsheet/rddouble{
+	dir = 4
+	},
+/turf/simulated/floor/wood/yew,
+/area/merchant_station)
 "fcv" = (
 /obj/structure/holostool,
 /obj/effect/floor_decal/beach{
@@ -11765,13 +11813,19 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"fBD" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "fJf" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
-"fQw" = (
+"fKd" = (
 /obj/structure/table/rack,
 /obj/random/firstaid,
 /obj/random/firstaid,
@@ -11781,7 +11835,21 @@
 /obj/random/firstaid,
 /obj/random/firstaid,
 /obj/random/firstaid,
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
+"fQw" = (
+/obj/structure/table/woodentable,
+/obj/item/weapon/board,
+/obj/effect/floor_decal/carpet/red{
+	dir = 8
+	},
+/obj/effect/floor_decal/carpet/red{
+	dir = 1
+	},
+/obj/effect/floor_decal/carpet/red{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/orange,
 /area/merchant_station)
 "glo" = (
 /turf/simulated/floor/holofloor/concrete,
@@ -11805,30 +11873,65 @@
 	icon_state = "wood_broken4"
 	},
 /area/holodeck/source_temple)
-"hzB" = (
-/obj/structure/flora/ausbushes/lavendergrass,
-/obj/structure/flora/ausbushes/ywflowers,
-/obj/structure/flora/ausbushes/ppflowers,
-/obj/structure/flora/ausbushes/brflowers,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 6
+"gNr" = (
+/obj/structure/hygiene/shower{
+	dir = 4
 	},
-/turf/simulated/floor/holofloor/grass,
-/area/holodeck/source_plaza)
-"icO" = (
-/obj/structure/bed/chair/wood{
-	dir = 1;
-	holographic = 1
+/obj/random/soap,
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled,
+/area/merchant_station)
+"gNU" = (
+/obj/structure/bed/chair/comfy/purple{
+	dir = 8
 	},
-/obj/effect/floor_decal/spline/fancy/wood,
-/turf/simulated/floor/holofloor/concrete,
-/area/holodeck/source_plaza)
-"ikd" = (
-/obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/silver,
-/turf/simulated/floor/plating,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/magenta,
+/area/merchant_station)
+"gYc" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/alarm{
+	pixel_y = 0;
+	req_access = list("ACCESS_MERCHANT");
+	pixel_x = -21;
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/merchant_station)
+"hbF" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 8
+	},
+/turf/simulated/floor/wood,
+/area/merchant_station)
+"hie" = (
+/obj/effect/floor_decal/corner/brown{
+	dir = 10
+	},
+/obj/machinery/door/window/brigdoor/northleft{
+	req_access = list("ACCESS_MERCHANT");
+	autoset_access = 0
+	},
+/turf/simulated/floor/tiled,
 /area/shuttle/merchant/home)
-"iop" = (
+"hlW" = (
+/obj/structure/bed/chair/office/light,
+/turf/simulated/floor/tiled/white,
+/area/merchant_station)
+"hsK" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/red,
+/area/merchant_station)
+"hxj" = (
 /obj/structure/closet/crate,
 /obj/random/loot,
 /obj/random/loot,
@@ -11843,7 +11946,51 @@
 /obj/random/illegaltwo,
 /obj/random/junk,
 /obj/random/junk,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
+"hzB" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/ywflowers,
+/obj/structure/flora/ausbushes/ppflowers,
+/obj/structure/flora/ausbushes/brflowers,
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 6
+	},
+/turf/simulated/floor/holofloor/grass,
+/area/holodeck/source_plaza)
+"hJD" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/red,
+/area/merchant_station)
+"icO" = (
+/obj/structure/bed/chair/wood{
+	dir = 1;
+	holographic = 1
+	},
+/obj/effect/floor_decal/spline/fancy/wood,
+/turf/simulated/floor/holofloor/concrete,
+/area/holodeck/source_plaza)
+"ikd" = (
+/obj/effect/wallframe_spawn/reinforced/titanium,
+/obj/effect/paint/silver,
 /turf/simulated/floor/plating,
+/area/shuttle/merchant/home)
+"iop" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/magenta,
+/area/merchant_station)
+"ipf" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "iqj" = (
 /obj/machinery/door/airlock/external,
@@ -11851,16 +11998,42 @@
 	icon_state = "dark"
 	},
 /area/syndicate_elite_squad)
+"isL" = (
+/obj/structure/table/woodentable,
+/obj/effect/floor_decal/carpet/red,
+/obj/effect/floor_decal/carpet/red{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/orange,
+/area/merchant_station)
 "izl" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/r_titanium,
 /area/shuttle/administration/centcom)
+"iAR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/airlock{
+	name = "Room A"
+	},
+/obj/machinery/door/blast/shutters{
+	id_tag = "merchantrooma";
+	name = "Merchant Loading Shutters"
+	},
+/turf/simulated/floor/wood/yew,
+/area/merchant_station)
 "iBC" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"iEf" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/magenta,
+/area/merchant_station)
 "iIc" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -11872,6 +12045,11 @@
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_plaza)
+"iIl" = (
+/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/wood,
+/area/merchant_station)
 "iJF" = (
 /obj/structure/holostool,
 /turf/simulated/floor/holofloor/wood{
@@ -11918,6 +12096,14 @@
 	icon_state = "desert2"
 	},
 /area/holodeck/source_volleyball)
+"jpO" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/structure/table/woodentable,
+/obj/item/weapon/storage/box/donut,
+/turf/simulated/floor/wood/yew,
+/area/merchant_station)
 "jtG" = (
 /turf/unsimulated/floor{
 	icon_state = "plating";
@@ -11941,6 +12127,35 @@
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_plaza)
+"jCP" = (
+/obj/structure/table/rack,
+/obj/item/stack/material/glass/fifty,
+/obj/item/stack/material/glass/fifty,
+/obj/item/stack/material/glass/fifty,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/random/powercell,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
+"jDu" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/bed/chair/comfy/red{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/red,
+/area/merchant_station)
+"jGt" = (
+/obj/machinery/button/blast_door{
+	id_tag = "merchantrooma";
+	name = "Room A Shutters";
+	pixel_y = 10
+	},
+/turf/simulated/wall/prepainted,
+/area/merchant_station)
 "jHQ" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/effect/floor_decal/spline/plain/grey{
@@ -11950,9 +12165,8 @@
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_cafe)
 "jJV" = (
-/obj/structure/table/rack,
-/obj/random/hardsuit,
-/turf/simulated/floor/tiled,
+/obj/machinery/chem_master,
+/turf/simulated/floor/tiled/white,
 /area/merchant_station)
 "jSi" = (
 /obj/structure/table/holo_woodentable,
@@ -11989,6 +12203,19 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"kuw" = (
+/obj/machinery/computer/cryopod{
+	density = 0;
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/white,
+/area/merchant_station)
+"kuJ" = (
+/obj/structure/table/woodentable,
+/obj/random/snack,
+/obj/random/snack,
+/turf/simulated/floor/carpet/red,
+/area/merchant_station)
 "kBT" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 4;
@@ -12006,6 +12233,13 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_plaza)
+"lpm" = (
+/obj/machinery/smartfridge/foods{
+	dir = 4;
+	pixel_x = -3
+	},
+/turf/simulated/wall/prepainted,
+/area/merchant_station)
 "lwD" = (
 /obj/structure/bed/chair/wood{
 	dir = 1;
@@ -12032,6 +12266,15 @@
 /obj/random/junk,
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
+"lBI" = (
+/obj/structure/table/rack,
+/obj/item/weapon/rig/unathi,
+/obj/random/hardsuit,
+/obj/random/hardsuit,
+/obj/random/hardsuit,
+/obj/random/hardsuit,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "lIX" = (
 /obj/structure/curtain{
 	color = "#cd6889"
@@ -12048,19 +12291,14 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/structure/closet/crate,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/loot,
-/obj/random/junk,
-/turf/simulated/floor/tiled,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/merchant_station)
+"lOh" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "lRq" = (
 /obj/structure/bed/chair/wood{
@@ -12085,6 +12323,18 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"mbV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/airlock{
+	name = "Room B"
+	},
+/obj/machinery/door/blast/shutters{
+	id_tag = "merchantroomb";
+	name = "Merchant Loading Shutters"
+	},
+/turf/simulated/floor/wood/yew,
+/area/merchant_station)
 "mjR" = (
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
@@ -12116,6 +12366,10 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"mvI" = (
+/obj/structure/curtain/open/shower,
+/turf/simulated/floor/tiled,
+/area/merchant_station)
 "myy" = (
 /obj/item/device/radio/intercom/syndicate{
 	dir = 2;
@@ -12125,19 +12379,36 @@
 	icon_state = "dark"
 	},
 /area/syndicate_elite_squad)
+"mCg" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/wood/yew,
+/area/merchant_station)
 "mRm" = (
 /turf/simulated/floor/holofloor/beach/sand{
 	icon_state = "desert1"
 	},
 /area/holodeck/source_volleyball)
-"mSU" = (
+"mRD" = (
 /obj/structure/table/rack,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/obj/random/powercell,
-/turf/simulated/floor/tiled/airless,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/item/stack/material/glass/reinforced/fifty,
+/obj/item/stack/material/glass/reinforced/fifty,
+/obj/item/stack/material/glass/reinforced/fifty,
+/obj/item/stack/material/glass/reinforced/fifty,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
+"mSU" = (
+/obj/structure/bed/chair/office/comfy/black{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
 /area/merchant_station)
 "mSZ" = (
 /obj/structure/bed/chair/wood{
@@ -12167,6 +12438,27 @@
 	icon_state = "lino"
 	},
 /area/tdome/tdomeadmin)
+"mXL" = (
+/obj/structure/closet/secure_closet{
+	name = "merchant's locker";
+	req_access = list("ACCESS_MERCHANT")
+	},
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "niJ" = (
 /obj/structure/bed/chair/wood{
 	dir = 4
@@ -12176,6 +12468,24 @@
 	},
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"nrH" = (
+/obj/structure/table/rack,
+/obj/item/stack/material/rods{
+	amount = 50
+	},
+/obj/item/stack/material/rods{
+	amount = 50
+	},
+/obj/item/stack/material/rods{
+	amount = 50
+	},
+/obj/item/stack/material/rods{
+	amount = 50
+	},
+/obj/random/plushie,
+/obj/random/plushie,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "ntZ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -12183,6 +12493,10 @@
 /obj/structure/table/holo_woodentable,
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"nvh" = (
+/obj/structure/undies_wardrobe,
+/turf/simulated/floor/wood/yew,
+/area/merchant_station)
 "nJl" = (
 /obj/structure/bed/chair/wood{
 	dir = 8;
@@ -12206,6 +12520,41 @@
 	icon_state = "dark"
 	},
 /area/syndicate_elite_squad)
+"nZj" = (
+/obj/structure/table/rack,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/item/stack/material/plasteel/fifty,
+/obj/item/stack/material/plasteel/fifty,
+/obj/item/stack/material/plasteel/fifty,
+/obj/item/device/boombox,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
+"obZ" = (
+/obj/structure/closet/crate/freezer,
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "occ" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 6;
@@ -12224,12 +12573,18 @@
 /turf/simulated/floor/plating,
 /area/shuttle/merchant/home)
 "oiM" = (
-/obj/structure/closet,
-/obj/item/clothing/shoes/laceup,
-/obj/item/clothing/under/vox/vox_casual,
-/obj/random/junk,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/wood/yew,
 /area/merchant_station)
+"okb" = (
+/obj/effect/floor_decal/corner/green{
+	dir = 5
+	},
+/obj/machinery/door/window/brigdoor/northright{
+	req_access = list("ACCESS_MERCHANT");
+	autoset_access = 0
+	},
+/turf/simulated/floor/tiled,
+/area/shuttle/merchant/home)
 "olJ" = (
 /obj/effect/floor_decal/beach{
 	dir = 4;
@@ -12287,6 +12642,13 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/merchant_station)
+"oSY" = (
+/obj/machinery/light/small,
+/obj/structure/table/woodentable,
+/obj/random/snack,
+/obj/random/snack,
+/turf/simulated/floor/carpet/magenta,
+/area/merchant_station)
 "pgJ" = (
 /obj/structure/holostool,
 /turf/simulated/floor/holofloor/tiled/stone,
@@ -12312,6 +12674,12 @@
 /obj/machinery/door/firedoor,
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
+/area/merchant_station)
+"pHX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9
+	},
+/turf/simulated/floor/tiled,
 /area/merchant_station)
 "pTy" = (
 /turf/simulated/shuttle/wall{
@@ -12340,6 +12708,23 @@
 	},
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"qsv" = (
+/obj/structure/closet/crate,
+/obj/effect/decal/cleanable/dirt,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/junk,
+/obj/effect/floor_decal/industrial/outline/grey,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "quq" = (
 /obj/structure/table/holo_woodentable,
 /obj/item/weapon/reagent_containers/food/drinks/teapot{
@@ -12358,6 +12743,13 @@
 	},
 /turf/simulated/floor/holofloor/beach/water,
 /area/holodeck/source_temple)
+"qPJ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor/wood/yew,
+/area/merchant_station)
 "qRm" = (
 /turf/simulated/floor/holofloor/beach/sand{
 	icon_state = "desert3"
@@ -12384,6 +12776,10 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"rks" = (
+/obj/structure/bed/chair/comfy/purple,
+/turf/simulated/floor/carpet/magenta,
+/area/merchant_station)
 "rms" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 9;
@@ -12397,12 +12793,40 @@
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
+"rrc" = (
+/obj/machinery/door/window/brigdoor/northleft,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/red,
+/area/merchant_station)
+"rvg" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/simulated/floor/carpet/red,
+/area/merchant_station)
+"rvn" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/storage/box/pillbottles,
+/obj/item/weapon/storage/box/pillbottles,
+/turf/simulated/floor/tiled/white,
+/area/merchant_station)
 "rxE" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/supply/dock)
+"rEQ" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/shutters{
+	dir = 8;
+	id_tag = "merchantbar";
+	name = "Merchant Bar Shutters"
+	},
+/turf/simulated/floor/wood,
+/area/merchant_station)
 "rIb" = (
 /obj/structure/table/rack/holorack,
 /turf/simulated/floor/holofloor/wood{
@@ -12434,6 +12858,23 @@
 	icon_state = "desert2"
 	},
 /area/holodeck/source_temple)
+"rNG" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/corner/green{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 10
+	},
+/obj/machinery/door/window/brigdoor/northright{
+	req_access = list("ACCESS_MERCHANT");
+	autoset_access = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/shuttle/merchant/home)
 "skD" = (
 /obj/effect/floor_decal/beach{
 	dir = 8;
@@ -12457,6 +12898,26 @@
 	icon_state = "wood_broken3"
 	},
 /area/holodeck/source_temple)
+"sOr" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/corner/green{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 10
+	},
+/obj/machinery/door/window/brigdoor/northright{
+	req_access = list("ACCESS_MERCHANT");
+	autoset_access = 0
+	},
+/turf/simulated/floor/tiled,
+/area/shuttle/merchant/home)
+"sSG" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "sWJ" = (
 /obj/effect/floor_decal/beach{
 	dir = 8;
@@ -12481,6 +12942,35 @@
 	},
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_cafe)
+"tkQ" = (
+/obj/structure/closet/crate,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/junk,
+/obj/effect/floor_decal/industrial/outline/grey,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
+"tqM" = (
+/obj/machinery/smartfridge/chemistry,
+/turf/simulated/floor/tiled/white,
+/area/merchant_station)
+"tsq" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/wood/yew,
+/area/merchant_station)
 "tsJ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 5;
@@ -12525,6 +13015,32 @@
 	},
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/holodeck/source_meetinghall)
+"tKd" = (
+/obj/structure/closet/crate/freezer,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/obj/random/loot,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
+"tPw" = (
+/obj/machinery/sleeper{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/merchant_station)
 "tQu" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/floor_decal/spline/plain/grey{
@@ -12549,6 +13065,18 @@
 /obj/structure/table/holo_woodentable,
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
+"ukz" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4;
+	icon_state = "warning"
+	},
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/steel/fifty,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "uly" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/holofloor/wood,
@@ -12604,6 +13132,43 @@
 	icon_state = "wood_broken2"
 	},
 /area/holodeck/source_temple)
+"vuZ" = (
+/obj/structure/table/woodentable,
+/obj/random/snack,
+/obj/random/snack,
+/turf/simulated/floor/carpet/magenta,
+/area/merchant_station)
+"vAB" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/merchant_station)
+"vNz" = (
+/obj/structure/table/reinforced,
+/obj/item/weapon/storage/firstaid/toxin,
+/obj/item/weapon/storage/firstaid/o2{
+	pixel_x = 4;
+	pixel_y = 6
+	},
+/obj/item/weapon/storage/firstaid/fire{
+	pixel_x = 2;
+	pixel_y = 3
+	},
+/obj/item/weapon/storage/firstaid/adv{
+	pixel_x = -2
+	},
+/obj/item/weapon/storage/firstaid/regular{
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/item/bodybag/cryobag{
+	pixel_x = 5
+	},
+/obj/effect/floor_decal/industrial/outline/blue,
+/obj/item/roller,
+/turf/simulated/floor/tiled/white,
+/area/merchant_station)
 "vOe" = (
 /obj/effect/floor_decal/stoneborder/corner{
 	dir = 1;
@@ -12615,6 +13180,12 @@
 /obj/effect/overlay/palmtree_r,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_temple)
+"vTC" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "wda" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/brflowers,
@@ -12665,6 +13236,20 @@
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
 /area/merchant_station)
+"xkG" = (
+/obj/machinery/chemical_dispenser/tac_coffee/full{
+	pixel_x = -9
+	},
+/turf/simulated/wall/prepainted,
+/area/merchant_station)
+"xle" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/structure/bed/double/padded,
+/obj/item/weapon/bedsheet/captaindouble,
+/turf/simulated/floor/wood/yew,
+/area/merchant_station)
 "xqW" = (
 /obj/structure/bed/chair/wood{
 	holographic = 1
@@ -12675,6 +13260,12 @@
 	},
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
+"xzk" = (
+/obj/structure/bed/chair/office/comfy/black{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/merchant_station)
 "xHn" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 8;
@@ -12683,6 +13274,30 @@
 /obj/structure/holonet/end,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"xIu" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/multi_tile/glass{
+	autoclose = 1;
+	dir = 2;
+	name = "Warehouse"
+	},
+/obj/machinery/door/blast/shutters{
+	dir = 8;
+	id_tag = "merchantbar";
+	name = "Merchant Bar Shutters"
+	},
+/turf/simulated/floor/wood,
+/area/merchant_station)
+"xSj" = (
+/obj/machinery/light/small,
+/obj/structure/table/rack,
+/obj/item/stack/material/aluminium/fifty,
+/obj/item/stack/material/aluminium/fifty,
+/obj/item/stack/material/aluminium/fifty,
+/obj/item/stack/material/aluminium/fifty,
+/obj/item/stack/material/aluminium/fifty,
+/turf/simulated/floor/tiled/dark,
+/area/merchant_station)
 "xTc" = (
 /obj/structure/table/holo_woodentable,
 /obj/item/weapon/tray{
@@ -12703,6 +13318,17 @@
 /obj/effect/floor_decal/spline/plain,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"yjn" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/portable_atmospherics/canister/air/airlock,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
+/turf/simulated/floor/wood,
+/area/merchant_station)
 
 (1,1,1) = {"
 ala
@@ -18591,12 +19217,12 @@ aab
 aab
 aab
 aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
+aMf
+aMf
+aMf
+aMf
+aMf
+aMf
 aLW
 avD
 avD
@@ -18793,12 +19419,12 @@ adJ
 aab
 aab
 aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
+aMf
+aNp
+aNp
+vNz
+tPw
+aMf
 avD
 aab
 aab
@@ -18995,11 +19621,11 @@ ajK
 aab
 aab
 aLW
-aLW
-aLW
-aLW
-aLW
-aLW
+aMf
+kuw
+dCF
+dCF
+dCF
 aMf
 aOw
 aOw
@@ -19197,11 +19823,11 @@ ajL
 aab
 aab
 aLW
-aLW
-aLW
-aLW
 aMf
-aMf
+vAB
+dCF
+dCF
+dCF
 aMf
 aOx
 aPb
@@ -19399,12 +20025,12 @@ ajL
 aab
 aab
 aLW
-aLW
-aLW
-aLW
 aMf
-aNp
-aNp
+eGE
+jJV
+rvn
+dCF
+tqM
 aOy
 aPc
 aPU
@@ -19601,10 +20227,10 @@ ajL
 aab
 aab
 aLW
-aLW
-aLW
-aLW
 aMf
+hlW
+dCF
+dCF
 aNq
 aNQ
 aOz
@@ -19803,10 +20429,10 @@ ajM
 aab
 aab
 aLW
-aLW
-aLW
-aLW
 aMf
+cHm
+eRy
+bJk
 aNr
 aNR
 aOA
@@ -20005,8 +20631,8 @@ adM
 aab
 aab
 aLW
-aLW
-aLW
+aMf
+aMf
 aMf
 aMf
 aMf
@@ -21231,7 +21857,7 @@ aab
 aab
 aRU
 aSj
-aSH
+okb
 aTj
 aTE
 aaj
@@ -21433,9 +22059,9 @@ aRm
 aab
 aRA
 aSj
-aSH
+okb
 aTk
-aTF
+aUc
 aSk
 aRA
 aab
@@ -21635,9 +22261,9 @@ aab
 aab
 aRA
 aSj
-aSH
-aTk
-aTE
+okb
+sOr
+hie
 aai
 aRA
 avD
@@ -21838,8 +22464,8 @@ aab
 aRA
 aSk
 aSI
-aTk
-aTE
+rNG
+hie
 aaj
 aRA
 aRn
@@ -22040,7 +22666,7 @@ aab
 aRA
 aSl
 aSH
-aTj
+bXW
 aTF
 aSk
 aRA
@@ -22862,7 +23488,7 @@ aXe
 aXe
 aMf
 aMf
-aLW
+aMf
 aLG
 aLG
 aab
@@ -23055,16 +23681,16 @@ aTH
 aTY
 aUh
 aUw
-pEp
-aQK
+iIl
+aPY
 aMf
 aMf
 aMf
 aMf
 aMf
+mvI
+gNr
 aMf
-aLW
-aLW
 aLG
 aLG
 aab
@@ -23255,18 +23881,18 @@ wsO
 ocj
 wsO
 aRA
-aMf
+yjn
 aUx
-pEp
+iIl
 aUA
+aNU
 aMf
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
+nvh
+jpO
+eTv
+oiM
+mvI
+aMf
 aLG
 aLG
 aab
@@ -23456,19 +24082,19 @@ aRn
 wKN
 oOo
 aMf
-aRn
+aMf
 aMf
 aUy
 aMf
-aQK
-aMf
-aMf
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
+aPY
+ipf
+iAR
+eaO
+qPJ
+mCg
+oiM
+oiM
+jGt
 aLG
 aLG
 aab
@@ -23645,7 +24271,7 @@ aLW
 aMg
 aMI
 aMf
-aNA
+aOI
 aMf
 aOI
 aMf
@@ -23657,20 +24283,20 @@ aPd
 aPd
 aPd
 tUB
-aPd
+gYc
 aTZ
-aPd
+bHg
 aUz
 aUT
 aVq
 aVO
 aMf
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
+aMf
+aMf
+aMf
+aMf
+aMf
+aMf
 aLG
 aLG
 aab
@@ -23861,18 +24487,18 @@ aSO
 aSO
 aSO
 aUa
-aPc
+aVu
 aUA
 aUU
 aVr
-aMf
-aMf
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
+aVs
+mbV
+eaO
+akK
+tsq
+oiM
+oiM
+aOd
 aLG
 aLG
 aab
@@ -24046,9 +24672,9 @@ aab
 aab
 aLW
 aLW
-aMg
+aNC
 aMJ
-aMf
+aNC
 aNC
 aNC
 aNC
@@ -24066,15 +24692,15 @@ aMf
 aUi
 aUB
 aUV
-aVs
+aNU
+aNU
 aMf
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
+nvh
+aUk
+xle
+oiM
+mvI
+aMf
 aLG
 aLG
 aab
@@ -24248,11 +24874,11 @@ aab
 aab
 aLW
 aMg
-aMg
-aMK
-aMg
 aNC
-aOc
+aMK
+obZ
+qsv
+mXL
 aOc
 aOc
 aNC
@@ -24268,15 +24894,15 @@ aMf
 aUj
 aUC
 aMf
+rEQ
+xIu
 aMf
 aMf
 aMf
 aMf
-aLW
-aLW
-aLW
-aLW
-aLW
+mvI
+cVx
+aMf
 aLG
 aLG
 aab
@@ -24450,11 +25076,11 @@ aab
 aab
 aLW
 aMh
-aMg
-aMg
-aMg
 aNC
-aOd
+sSG
+aPq
+aPq
+aOK
 aOK
 aPq
 bsb
@@ -24467,18 +25093,18 @@ aSR
 aTr
 aTJ
 aUb
-aRY
+ekR
 aUD
 lNq
-aVt
-dCF
+aNU
+aNU
 aWm
+iop
+rks
+vuZ
 aMf
-aLW
-aLW
-aLW
-aLW
-aLW
+aMf
+aMf
 aLG
 aLG
 aab
@@ -24652,10 +25278,10 @@ aab
 aab
 aLW
 aLW
-aMh
-aMg
-aLW
-aNC
+aWn
+fKd
+tkQ
+cmb
 aOe
 aOL
 aPq
@@ -24668,17 +25294,17 @@ aPc
 aSS
 aTq
 aTK
-aPc
-aPc
-aRH
-aPc
-aVu
-aVu
-aPc
+aUl
+fQw
+aVt
+aUX
+aNU
+aNU
+aNU
+iop
+rks
+oSY
 aMf
-aLW
-aLW
-aLW
 aLW
 aLW
 aLG
@@ -24854,13 +25480,13 @@ aab
 aab
 aLW
 aLW
-aLW
-aLW
-aLW
 aNC
+jCP
+tKd
+aTL
 oLN
 tvY
-aPq
+vTC
 aQp
 aNC
 aRu
@@ -24869,18 +25495,18 @@ aPc
 aSq
 aMf
 aTq
-aMf
-aUc
-aPc
-aQN
-aUX
-fQw
+aGp
+aUl
+aUl
 aVQ
-aWn
+aUX
+aNU
+aNU
+aNU
+aNA
+iEf
+gNU
 aMf
-aLW
-aLW
-aLW
 aLW
 aLW
 aLG
@@ -25056,16 +25682,16 @@ aab
 aab
 aLW
 aLW
-aLW
-aLW
-aLW
 aNC
+sSG
+aPq
+aPq
 aOg
 aOM
-aPq
-aPq
+fBD
+lOh
 aQP
-aPc
+pHX
 aPc
 aPc
 aPc
@@ -25073,16 +25699,16 @@ aST
 aTs
 aMf
 aUd
-aPc
-aPc
-aUY
-jJV
-bXW
-iop
+aUl
+isL
+aUX
+aNU
+aNU
+aNU
+rrc
+hJD
+jDu
 aMf
-aLW
-aLW
-aLW
 aLW
 aLW
 aLG
@@ -25258,10 +25884,10 @@ aab
 aab
 aLW
 aLW
-aLW
-aLW
-aLW
 aNC
+aPq
+lBI
+xSj
 rJX
 lyo
 lyo
@@ -25275,16 +25901,16 @@ aSU
 aTs
 aMf
 aUe
-aUk
+aUl
 aUE
-aPc
-aVw
-aVw
-aWi
+aUX
+aNU
+xzk
+xzk
+rvg
+aUY
+cZI
 aMf
-aLW
-aLW
-aLW
 aLW
 aLW
 aLG
@@ -25460,13 +26086,13 @@ aab
 aab
 aLW
 aLW
-aLW
-aLW
-aLW
 aNC
-aNC
-aNC
-aNC
+sSG
+aPq
+aPq
+aPq
+aPq
+aPq
 aNC
 aMf
 aRv
@@ -25475,18 +26101,18 @@ aRZ
 aSr
 aMf
 aTq
-aTL
+aMf
 aUf
 aUl
 aUF
-mSU
+aNU
 aVx
-oiM
 aWp
+aWp
+hsK
+aUY
+kuJ
 aMf
-aLW
-aLW
-aLW
 aLW
 aLW
 aLG
@@ -25662,14 +26288,14 @@ aab
 aab
 aLW
 aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
+aNC
+ukz
+dah
+mRD
+nrH
+hxj
+nZj
+aNC
 aMf
 aMf
 aMf
@@ -25678,17 +26304,17 @@ aMf
 aMf
 aMf
 aMf
+xkG
+lpm
+aMf
+aMf
+hbF
+mSU
+mSU
+aNU
 aMf
 aMf
 aMf
-aMf
-aMf
-aMf
-aMf
-aMf
-aLW
-aLW
-aLW
 aLW
 aLW
 aLG
@@ -25864,6 +26490,14 @@ aab
 aab
 aLW
 aLW
+aNC
+aNC
+aNC
+aNC
+aNC
+aNC
+aNC
+aNC
 aLW
 aLW
 aLW
@@ -25876,18 +26510,10 @@ aLW
 aLW
 aLW
 aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
-aLW
+aMf
+aMf
+aMf
+aMf
 aLW
 aLW
 aLW

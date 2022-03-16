@@ -51,14 +51,14 @@
 	possible_trading_items = list(/obj/item/weapon/reagent_containers/food/snacks     = TRADER_SUBTYPES_ONLY,
 							/obj/item/weapon/reagent_containers/food/snacks/boiledslimecore            = TRADER_BLACKLIST,
 							/obj/item/weapon/reagent_containers/food/snacks/checker                    = TRADER_BLACKLIST_ALL,
-							/obj/item/weapon/reagent_containers/food/snacks/canned					   = TRADER_SUBTYPES_ONLY,
+							/obj/item/weapon/reagent_containers/food/snacks/canned                     = TRADER_SUBTYPES_ONLY,
 							/obj/item/weapon/reagent_containers/food/snacks/fruit_slice                = TRADER_BLACKLIST,
 							/obj/item/weapon/reagent_containers/food/snacks/slice                      = TRADER_BLACKLIST_ALL,
 							/obj/item/weapon/reagent_containers/food/snacks/grown                      = TRADER_BLACKLIST_ALL,
 							/obj/item/weapon/reagent_containers/food/snacks/human                      = TRADER_BLACKLIST_ALL,
 							/obj/item/weapon/reagent_containers/food/snacks/sliceable/braincake        = TRADER_BLACKLIST,
 							/obj/item/weapon/reagent_containers/food/snacks/meat/human                 = TRADER_BLACKLIST,
-							/obj/item/weapon/reagent_containers/cooking_container					   = TRADER_SUBTYPES_ONLY,
+							/obj/item/weapon/reagent_containers/cooking_container                      = TRADER_SUBTYPES_ONLY,
 							/obj/item/weapon/reagent_containers/food/snacks/variable                   = TRADER_BLACKLIST_ALL
 								)
 
