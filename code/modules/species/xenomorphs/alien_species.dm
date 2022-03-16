@@ -3,7 +3,11 @@
 	name = SPECIES_XENO
 	name_plural = "Xenophages"
 
-	unarmed_types = list(/datum/unarmed_attack/claws/strong, /datum/unarmed_attack/bite/strong)
+	unarmed_types = list(
+		/datum/unarmed_attack/stomp/armalis,
+		/datum/unarmed_attack/claws/armalis//both of these are stand in for now.
+	)
+
 	hud_type = /datum/hud_data/alien
 	rarity_value = 3
 	health_hud_intensity = 1
@@ -121,12 +125,21 @@
 	H.visible_message("<span class='notice'>[H] caresses [target] with countless prickling, needle-like legs.</span>", \
 					"<span class='notice'>You caress [target] with countless prickling, needle-like legs.</span>")
 
+/datum/species/xenos/proc/handle_x_vision(var/mob/living/carbon/human/H)
+	H.sight = SEE_TURFS|SEE_MOBS|SEE_OBJS|SEE_SELF
+	H.update_sight()
+	if(!H.client)//no client, no screen to update
+		return 1
+	return 1
+
 /datum/species/xenos/handle_post_spawn(var/mob/living/carbon/human/H)
 
 	if(H.mind)
 		H.mind.reset()
 		H.mind.assigned_role = "Alien"
 		H.mind.special_role = "Alien"
+
+	handle_x_vision()
 
 	var/decl/cultural_info/culture/hidden/xenophage/culture = SSculture.get_culture(force_cultural_info[TAG_CULTURE])
 	if(istype(culture))
