@@ -1,14 +1,16 @@
 /obj/item/weapon/gun/projectile/pistol/sec/MK
+	name = "Used NT Mk58"
 	desc = "Similar in both appearance and use of the NT Mk58, the MK pistol is an cheap knock off that preys on the unsuspecting firearm buyers."
 	jam_chance = 35
 
 /obj/item/weapon/gun/projectile/heavysniper/ant
-	name = "anti-material rifle"
+	name = "anti-material pistol rifle"
 	desc = "A portable anti-armour rifle fitted with a scope, the HI PTR-7 Rifle was originally designed to used against armoured exosuits. It is capable of punching through windows and non-reinforced walls with ease. Fires armor piercing 14.5mm shells. This replica however fires pistol rounds."
 	ammo_type = /obj/item/ammo_magazine/pistol/small
 	caliber = CALIBER_PISTOL_SMALL
 
 /obj/item/weapon/gun/energy/laser/dogan
+	name = "Dogans homemade carbine"
 	desc = "This carbine works just as well as a normal carbine. Most of the time." //removed reference to Dogan, since only the merchant is likely to know who that is.
 
 /obj/item/weapon/gun/energy/laser/dogan/consume_next_projectile()
@@ -16,5 +18,6 @@
 	return ..()
 
 /obj/item/weapon/gun/projectile/automatic/machine_pistol/usi
+	name = "Dogans homemade Vesper"
 	desc = "An uncommon machine pistol, sometimes refered to as an 'uzi' by the backwater spacers it is often associated with. This one looks especially run-down. Uses pistol rounds."
 	jam_chance = 20

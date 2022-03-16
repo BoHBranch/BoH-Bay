@@ -119,15 +119,9 @@
 								/obj/item/clothing/under/chameleon        = TRADER_BLACKLIST,
 								/obj/item/clothing/under/cloud            = TRADER_BLACKLIST,
 								/obj/item/clothing/under/color            = TRADER_BLACKLIST,
-								/obj/item/clothing/under/dress            = TRADER_BLACKLIST,
 								/obj/item/clothing/under/ert              = TRADER_BLACKLIST,
 								/obj/item/clothing/under/gimmick          = TRADER_BLACKLIST_ALL,
-								/obj/item/clothing/under/lawyer           = TRADER_BLACKLIST,
-								/obj/item/clothing/under/pj               = TRADER_BLACKLIST,
 								/obj/item/clothing/under/rank             = TRADER_BLACKLIST,
-								/obj/item/clothing/under/shorts           = TRADER_BLACKLIST,
-								/obj/item/clothing/under/stripper         = TRADER_BLACKLIST_ALL,
-								/obj/item/clothing/under/swimsuit         = TRADER_BLACKLIST,
 								/obj/item/clothing/under/syndicate        = TRADER_BLACKLIST_ALL,
 								/obj/item/clothing/under/tactical         = TRADER_BLACKLIST,
 								/obj/item/clothing/under/vox              = TRADER_BLACKLIST_ALL,
@@ -167,13 +161,11 @@
 								/obj/item/clothing/head/caphat            = TRADER_BLACKLIST_ALL,
 								/obj/item/clothing/head/centhat           = TRADER_BLACKLIST,
 								/obj/item/clothing/head/chameleon         = TRADER_BLACKLIST,
-								/obj/item/clothing/head/collectable       = TRADER_BLACKLIST,
 								/obj/item/clothing/head/culthood          = TRADER_BLACKLIST_ALL,
 								/obj/item/clothing/head/helmet            = TRADER_BLACKLIST_ALL,
 								/obj/item/clothing/head/lightrig          = TRADER_BLACKLIST_ALL,
 								/obj/item/clothing/head/radiation         = TRADER_BLACKLIST,
-								/obj/item/clothing/head/warden            = TRADER_BLACKLIST,
-								/obj/item/clothing/head/welding           = TRADER_BLACKLIST)
+								/obj/item/clothing/head/warden            = TRADER_BLACKLIST)
 
 
 
