@@ -100,9 +100,9 @@
 /////////
 /obj/item/weapon/gun/projectile/pistol/military/sec
 	name = "Hephaestus P10"
-	desc = "The Hephaestus Industries P10 - a mass produced kinetic sidearm in widespread service with the SCGDF. While it has a quick rate of fire, the P10's slide can fail to properly eject casings if not maintained properly.\
-	Unfortunately this gives it a slight chance of jamming in untrained hands."
-	jam_chance = 5
+	desc = "The Hephaestus Industries P10 - a mass produced kinetic sidearm in widespread service with the SCGDF. A slide restrictor is integrated into the handgun to prevent\
+	quick-draw type shooting. A reliable sidearm in the hands of even the most novice of soldiers."
+	fire_delay = 5
 
 /////////
 // LMG
