@@ -39,13 +39,13 @@
 	ammo_indicator = TRUE
 
 /obj/item/weapon/gun/projectile/pistol/military/alt
+	name = "HelTek Optimus"
 	desc = "The HelTek Optimus, best known as the standard-issue sidearm for the ICCG Navy."
 	icon = 'icons/obj/guns/military_pistol2.dmi'
 	icon_state = "military-alt"
 	safety_icon = "safety"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
 	fire_delay = 8
-	jam_chance = 0
 
 /obj/item/weapon/gun/projectile/pistol/sec
 	name = "MA-Mk58"

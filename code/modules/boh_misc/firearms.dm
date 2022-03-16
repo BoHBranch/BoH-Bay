@@ -4,7 +4,7 @@
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar
 	name = "Mk59"
-	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps. It is a rugged firearm that can be fired reliably by even the most novice of soldiers."
+	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps. It's known for severe issues with reliability when not maintained well or used by inexperienced shooters."
 	magazine_type = /obj/item/ammo_magazine/pistol/double/pepperball
 	fire_sound = 'sound/weapons/gunshot/pistol_mk59.ogg'
 	jam_chance = 5 //Cheap firearm. Chance of jamming
