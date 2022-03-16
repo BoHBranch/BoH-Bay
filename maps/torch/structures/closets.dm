@@ -159,6 +159,8 @@
 		/obj/item/weapon/storage/firstaid/combat,
 		/obj/item/device/flashlight/maglight,
 		/obj/item/weapon/material/knife/combat,
+		/obj/item/rig_module/vision/medhud,
+		/obj/item/rig_module/chem_dispenser/injector,
 		/obj/item/bodybag/rescue,
 		/obj/item/bodybag/rescue,
 		/obj/item/clothing/glasses/tacgoggles,
