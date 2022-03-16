@@ -13,6 +13,11 @@
 /obj/item/projectile/bullet/pellet/fragment/strong
 	damage = 50
 
+/obj/item/projectile/bullet/pellet/fragment/glass
+	name = "glass fragment"
+	damage = 15
+	embed = 1
+
 /obj/item/weapon/grenade/frag
 	name = "fragmentation grenade"
 	desc = "A military fragmentation grenade, designed to explode in a deadly shower of fragments, while avoiding massive structural damage."
@@ -89,6 +94,22 @@
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment=1,/obj/item/projectile/bullet/pellet/fragment/strong=4)
 	num_fragments = 264  //total number of fragments produced by the grenade
 	explosion_size = 4
+
+//Currently unobtainable as Bay crafting is fucked and I can't find a good recipe that doesn't seem either stupid or too difficult. So for now, these just... exist.
+/obj/item/weapon/grenade/frag/glassbomb
+	name = "glass bomb"
+	desc = "A crude explosive device made from shards of glass and explosives. Produces a blizzard of sharp fragments."
+	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/glass=1)
+	explosion_size = 0
+	num_fragments = 72
+
+/obj/item/weapon/grenade/frag/pipebomb
+	name = "pipe bomb"
+	desc = "An insidious, crude explosive device made from a pipe and some explosive material. Commonly utilized by eco-terrorists."
+	num_fragments = 190
+	explosion_size = 5
+	throw_speed = 3
+	throw_range = 5
 
 /obj/item/weapon/grenade/frag/high_yield/on_explosion(var/turf/O)
 	if(explosion_size)

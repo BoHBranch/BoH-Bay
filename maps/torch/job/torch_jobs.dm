@@ -3,8 +3,8 @@
 		/datum/species/nabber = list(/datum/job/ai, /datum/job/cyborg, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/chemist,
 									 /datum/job/roboticist, /datum/job/cargo_tech, /datum/job/chef, /datum/job/engineer, /datum/job/doctor, /datum/job/bartender, /datum/job/assistant),
 		/datum/species/vox/ = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant),
-		/datum/species/vox/armalis = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant),
-		/datum/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant)
+	 	/datum/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant),
+		/datum/species/vox/armalis = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant)
 	)
 
 	species_to_job_blacklist = list(
@@ -57,7 +57,7 @@
 /decl/cultural_info/culture/nabber/New()
 	LAZYADD(valid_jobs, /datum/job/scientist_assistant)
 	..()
-	
+
 /decl/cultural_info/culture/nabber/New()
 	LAZYADD(valid_jobs, /datum/job/assistant)
 	..()
@@ -87,6 +87,8 @@
 	   A contractor having a higher Galilei/Geneva Convention Article 3 equivelent rank then then an enlisted person for similar work is expected behavior.
 	   Source material is DOD Instruction 1000.01 */
 	max_pow_cat = 5
+	/* cit_rank is rank equivalent based, max_cit_rank is for wackos.*/
+	max_cit_rank = 5
 
 
 

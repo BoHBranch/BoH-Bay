@@ -674,10 +674,11 @@ BLIND     // can't see anything
 	if (I.w_class > hidden_item_max_w_class)
 		to_chat(user, SPAN_WARNING("\The [I] is too large to fit in the [src]."))
 		return
-	if (do_after(user, 1 SECONDS))
+	if (do_after(user, 2 SECONDS))
 		if(!user.unEquip(I, src))
 			return
 		user.visible_message(SPAN_ITALIC("\The [user] shoves \the [I] into \the [src]."), range = 1)
+		playsound(get_turf(src), 'sound/effects/holster/sheathin.ogg', 25)
 		verbs |= /obj/item/clothing/shoes/proc/remove_hidden
 		hidden_item = I
 
@@ -696,12 +697,12 @@ BLIND     // can't see anything
 		return FALSE
 	if (loc != user)
 		return FALSE
-	if (do_after(user, 2 SECONDS))
+	if (do_after(user, 0.4 SECONDS))
 		if (!user.put_in_hands(hidden_item))
 			to_chat(usr, SPAN_WARNING("You need an empty, unbroken hand to pull the [hidden_item] from the [src]."))
 			return TRUE
 		user.visible_message(SPAN_ITALIC("\The [user] pulls \the [hidden_item] from \the [src]."), range = 1)
-		playsound(get_turf(src), 'sound/effects/holster/tactiholsterout.ogg', 25)
+		playsound(get_turf(src), 'sound/effects/holster/sheathout.ogg', 25)
 		verbs -= /obj/item/clothing/shoes/proc/remove_hidden
 		hidden_item = null
 	return TRUE

@@ -60,8 +60,6 @@
 		/area/vacant/cargo = NO_SCRUBBER|NO_VENT,
 		/area/vacant/mess = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/vacant/armory = NO_APC,
-		/area/command/gunnery = NO_SCRUBBER|NO_VENT,
-		/area/command/gunnery/ob/airlock = NO_SCRUBBER,
 		/area/command/gunnery/mim = 0,
 		/area/command/gunnery/mim/door = NO_SCRUBBER|NO_VENT,
 		/area/crew_quarters_boh/cabin_main/janitorial = NO_SCRUBBER|NO_VENT,

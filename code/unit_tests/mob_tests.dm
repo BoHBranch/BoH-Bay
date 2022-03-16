@@ -357,7 +357,6 @@ datum/unit_test/mob_damage/halloss
 /datum/unit_test/mob_damage/vox/clone
 	name = "MOB: Vox Clone Damage Check"
 	damagetype = CLONE
-	expected_vulnerability = IMMUNE
 
 
 /datum/unit_test/mob_damage/vox/halloss
@@ -618,7 +617,7 @@ datum/unit_test/mob_damage/halloss
 
 	for(var/mobtype in subtypesof(/mob/living))
 
-		// Humans use species for their products and are 
+		// Humans use species for their products and are
 		// difficult to properly unit test because of this.
 		if(ispath(mobtype, /mob/living/carbon/human))
 			continue

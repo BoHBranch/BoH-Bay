@@ -30,14 +30,16 @@
 	magazine_type = /obj/item/ammo_magazine/pistol/double
 	allowed_magazines = /obj/item/ammo_magazine/pistol/double
 	icon = 'icons/obj/guns/military_pistol.dmi'
+	fire_sound = 'sound/weapons/gunshot/pistol_p20.ogg'
 	icon_state = "military"
 	item_state = "secgundark"
 	safety_icon = "safety"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
-	fire_delay = 6
+	fire_delay = 2.5
 	ammo_indicator = TRUE
 
 /obj/item/weapon/gun/projectile/pistol/military/alt
+	name = "HelTek Optimus"
 	desc = "The HelTek Optimus, best known as the standard-issue sidearm for the ICCG Navy."
 	icon = 'icons/obj/guns/military_pistol2.dmi'
 	icon_state = "military-alt"

@@ -187,6 +187,8 @@ var/const/NO_EMAG_ACT = -50
 	var/datum/mil_rank/military_rank = null
 	var/pow_cat = 0
 	var/max_pow_cat = 0
+	var/cit_rank = 0
+	var/max_cit_rank = 0
 
 	var/formal_name_prefix
 	var/formal_name_suffix
@@ -201,6 +203,7 @@ var/const/NO_EMAG_ACT = -50
 		if(j)
 			rank = j.title
 			max_pow_cat = j.max_pow_cat
+			max_cit_rank = j.max_cit_rank
 			assignment = rank
 			access |= j.get_access()
 			if(!detail_color)
@@ -294,8 +297,11 @@ var/const/NO_EMAG_ACT = -50
 	if(GLOB.using_map.flags & MAP_HAS_RANK)
 		id_card.military_rank = char_rank
 		id_card.pow_cat = char_rank.pow_cat
+		id_card.cit_rank = char_rank.cit_rank
 		if(id_card.pow_cat > id_card.max_pow_cat)
 			id_card.pow_cat = id_card.max_pow_cat
+		if(id_card.cit_rank > id_card.max_cit_rank)
+			id_card.cit_rank = id_card.max_cit_rank
 
 /obj/item/weapon/card/id/proc/dat()
 	var/list/dat = list("<table><tr><td>")
@@ -326,6 +332,20 @@ var/const/NO_EMAG_ACT = -50
 			if(5)
 				pow_roman = "V"
 		dat += text("Galilei Convention: Cat []<BR>\n", pow_roman)
+	if(cit_rank && GLOB.using_map.flags & MAP_HAS_RANK)
+		var/cit_ranking = ""
+		switch(cit_rank)
+			if(1)
+				cit_ranking = "Integrated Sentient"
+			if(2)
+				cit_ranking = "Second Civilian"
+			if(3)
+				cit_ranking = "First Civilian"
+			if(4)
+				cit_ranking = "Second Citizen"
+			if(5)
+				cit_ranking = "First Citizen"
+		dat += text("Citizenship Ranking: T-[]<BR>\n", cit_ranking)
 	dat += text("<BR>\n")
 	if(front && side)
 		dat +="<td align = center valign = top>Photo:<br><img src=front.png height=80 width=80 border=4><img src=side.png height=80 width=80 border=4></td>"

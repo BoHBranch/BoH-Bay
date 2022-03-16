@@ -13,6 +13,7 @@ This is for standard issue sidearms.
 	..()
 	var/guns = list()
 	guns["Jhen Bothus Mk59"] = /obj/item/weapon/gun/projectile/pistol/military/alt/solar/loadout
+	guns["Hephaestus P10"] = /obj/item/weapon/gun/projectile/pistol/military/sec
 	guns["Lumoco Mk12"] = /obj/item/weapon/gun/projectile/revolver/medium/sec
 	gear_tweaks += new/datum/gear_tweak/path(guns)
 

@@ -97,3 +97,12 @@
 	pockets.make_exact_fit()
 	allowed |= /obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent
 	pockets.can_hold |= /obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent
+
+/decl/hierarchy/outfit/job/tiro
+	name = "Ascent - Tiro"
+	uniform = /obj/item/clothing/under/tiro
+	l_ear = null
+	r_ear = null
+	shoes = /obj/item/clothing/shoes/black
+	pda_type = null
+	id_type =  /obj/item/weapon/card/id/ascenttiro

@@ -5,7 +5,7 @@
 	ask_verb = "snarls"
 	exclaim_verb = "barks"
 	colour = "changeling"
-	key = "z"
+	key = "m"
 	flags = WHITELISTED
 	space_chance = 40
 	syllables = list("grr", "gah", "woof", "arf", "arra", "rah", "wor", "sarg")

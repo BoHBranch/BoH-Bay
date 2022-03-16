@@ -13,8 +13,8 @@ Small, little HP, poisonous.
 	response_disarm = "gently pushes aside"
 	response_harm   = "stamps on"
 	destroy_surroundings = 0
-	health = 15
-	maxHealth = 15
+	health = 40
+	maxHealth = 40
 	speed = 0
 	move_to_delay = 0
 	density = 1
@@ -22,8 +22,8 @@ Small, little HP, poisonous.
 	mob_size = MOB_MINISCULE
 	can_escape = TRUE
 	pass_flags = PASS_FLAG_TABLE
-	melee_damage_lower = 5
-	melee_damage_upper = 10
+	melee_damage_lower = 10
+	melee_damage_upper = 20
 	melee_damage_flags = DAM_SHARP
 	holder_type = /obj/item/weapon/holder/voxslug
 	faction = SPECIES_VOX
@@ -33,7 +33,7 @@ Small, little HP, poisonous.
 	for(var/a in hearers(src, dist))
 		if(istype(a,/mob/living/carbon/human))
 			var/mob/living/carbon/human/H = a
-			if(H.species.get_bodytype() == SPECIES_VOX)
+			if(H.species.get_bodytype() == SPECIES_VOX || SPECIES_VOX_ARMALIS)
 				continue
 		if(isliving(a))
 			var/mob/living/M = a
@@ -44,7 +44,7 @@ Small, little HP, poisonous.
 	return L
 
 /mob/living/simple_animal/hostile/voxslug/get_scooped(var/mob/living/carbon/grabber)
-	if(grabber.species.get_bodytype() != SPECIES_VOX)
+	if(grabber.species.get_bodytype() != SPECIES_VOX || SPECIES_VOX_ARMALIS)
 		to_chat(grabber, "<span class='warning'>\The [src] wriggles out of your hands before you can pick it up!</span>")
 		return
 	else return ..()

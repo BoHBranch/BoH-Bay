@@ -36,7 +36,6 @@
 	var/last_burn = 0                   //worldtime when ship last acceleated
 	var/burn_delay = 1 SECOND           //how often ship can do burns
 	var/list/last_movement = list(0,0)  //worldtime when ship last moved in x,y direction
-	var/fore_dir = NORTH                //what dir ship flies towards for purpose of moving stars effect procs
 
 	var/list/engines = list()
 	var/engines_state = 0 //global on/off toggle for all engines
@@ -44,6 +43,14 @@
 	var/halted = 0        //admin halt or other stop.
 	var/skill_needed = SKILL_ADEPT  //piloting skill needed to steer it without going in random dir
 	var/operator_skill
+	
+	var/ship_target = null
+	var/planet_target = null
+	var/missile_target
+	var/planet_x = 1
+	var/planet_y = 1
+	var/coord_target_x = 10
+	var/coord_target_y = 10
 
 /obj/effect/overmap/visitable/ship/Initialize()
 	. = ..()
@@ -273,6 +280,62 @@
 	var/new_sensor_vis = (base_sensor_visibility + get_engine_sensor_increase())
 
 	return min(new_sensor_vis, 100)
+	
+	
+/obj/effect/overmap/visitable/ship/proc/check_target(obj/effect/overmap/target) 
+	if(target in view(7, src))
+		return TRUE
+	return FALSE
+
+/obj/effect/overmap/visitable/ship/proc/get_target(var/target_type)
+	if(target_type == TARGET_SHIP)
+		if(ship_target && check_target(ship_target))
+			return ship_target			
+			
+	if(target_type == TARGET_MISSILE)
+		if(missile_target && check_target(missile_target))
+			return missile_target
+			
+	if(target_type == TARGET_POINT)
+		return list(coord_target_x, coord_target_y)
+		
+	if(target_type == TARGET_PLANET)
+		if(planet_target && check_target(planet_target))
+			return list(planet_target, planet_x, planet_y)
+		else
+			return list(null, planet_x, planet_y)
+			
+	if(target_type == TARGET_PLANETCOORD)
+		return list(planet_x, planet_y)
+	
+	return null
+
+/obj/effect/overmap/visitable/ship/proc/set_target(var/target_type, var/obj/effect/overmap/target, var/target_x, var/target_y)
+	if(target_type == TARGET_SHIP)
+		if(target && check_target(target))
+			ship_target = target
+			return TRUE
+			
+	if(target_type == TARGET_MISSILE)
+		if(target && check_target(target))
+			missile_target = target	
+			return TRUE
+			
+	if(target_type == TARGET_POINT)
+		coord_target_x = target_x
+		coord_target_y = target_y
+		
+	if(target_type == TARGET_PLANET)
+		if(target && check_target(target))
+			planet_target = target
+			planet_x = target_x
+			planet_y = target_y
+			return TRUE
+		else
+			planet_x = target_x
+			planet_y = target_y
+			
+	return FALSE
 
 #undef MOVING
 #undef SANITIZE_SPEED

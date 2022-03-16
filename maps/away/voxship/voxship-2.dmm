@@ -197,6 +197,8 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
+/obj/item/clothing/glasses/hud/health/visor,
+/obj/item/clothing/glasses/eyepatch/hud/medical,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -384,6 +386,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/random/drinkbottle,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "gf" = (
@@ -683,6 +686,11 @@
 /obj/item/weapon/bedsheet/brown,
 /obj/effect/submap_landmark/spawnpoint/voxship_crew/quill,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/button/windowtint{
+	id_tag = "quil_room";
+	pixel_x = -25;
+	range = 14
+	},
 /turf/simulated/floor/wood/mahogany{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -751,10 +759,6 @@
 	icon_state = "tube1"
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/machinery/button/windowtint{
-	id_tag = "quil_room";
-	pixel_y = 25
-	},
 /turf/simulated/floor/wood/mahogany{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -910,6 +914,20 @@
 /obj/machinery/optable,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/med)
+"nw" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/structure/table/standard,
+/obj/item/weapon/spacecash/bundle/c10,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
 "nG" = (
 /obj/machinery/porta_turret/vox,
 /turf/simulated/floor/reinforced/airless,
@@ -1149,8 +1167,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
+"qJ" = (
+/obj/structure/table/standard,
+/obj/item/weapon/book/manual/nuclear,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
 "qV" = (
-/obj/structure/morgue,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
@@ -1343,12 +1365,9 @@
 /area/voxship/dorms)
 "tJ" = (
 /obj/structure/table/standard,
-/obj/item/weapon/cautery,
-/obj/item/weapon/retractor,
 /obj/item/weapon/reagent_containers/glass/bottle/stoxin,
 /obj/item/weapon/reagent_containers/syringe,
 /obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin,
-/obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
@@ -1684,6 +1703,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/table/standard,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
 "yA" = (
@@ -1841,6 +1861,11 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/space)
+"AQ" = (
+/obj/structure/table/standard,
+/obj/random/drinkbottle,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
 "AW" = (
 /obj/machinery/computer/ship/helm{
 	dir = 4;
@@ -1865,11 +1890,6 @@
 /area/voxship/ship_mid)
 "Bi" = (
 /obj/structure/table/standard,
-/obj/item/weapon/circular_saw{
-	pixel_y = 8
-	},
-/obj/item/weapon/hemostat,
-/obj/item/weapon/scalpel,
 /obj/item/stack/medical/advanced/bruise_pack,
 /obj/item/weapon/storage/firstaid/surgery,
 /obj/item/weapon/scalpel/manager,
@@ -1905,7 +1925,6 @@
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "BM" = (
-/obj/structure/reagent_dispensers/watertank,
 /obj/machinery/power/apc{
 	dir = 8;
 	icon_state = "apc0";
@@ -1916,11 +1935,19 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
+/mob/living/bot/farmbot/premade{
+	name = "Old Jameski";
+	req_access = list(list("ACCESS_VOXSHIP"))
+	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/hydro)
 "BN" = (
 /obj/structure/morgue,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/med)
+"BT" = (
+/obj/structure/kitchenspike,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/med)
 "Cm" = (
@@ -2127,6 +2154,21 @@
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/ship_mid)
+"Fo" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/item/weapon/stool/padded,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
 "Fu" = (
 /obj/structure/bed/padded,
 /obj/structure/curtain/open/bed,
@@ -2249,11 +2291,6 @@
 /area/voxship/quills)
 "Go" = (
 /obj/structure/table/standard,
-/obj/item/weapon/circular_saw{
-	pixel_y = 8
-	},
-/obj/item/weapon/hemostat,
-/obj/item/weapon/scalpel,
 /obj/item/stack/medical/advanced/bruise_pack,
 /obj/item/weapon/storage/firstaid/surgery,
 /obj/item/weapon/scalpel/manager,
@@ -2279,6 +2316,8 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
 	},
+/obj/structure/table/standard,
+/obj/item/weapon/book/manual/barman_recipes,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
 "Gx" = (
@@ -2293,6 +2332,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/table/standard,
+/obj/item/weapon/spacecash/bundle/c50,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/ship_mid)
 "Gy" = (
@@ -2610,7 +2651,6 @@
 	},
 /area/voxship/ship_mid)
 "Lk" = (
-/obj/machinery/sleeper,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
@@ -2626,17 +2666,18 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
+/obj/machinery/sleeper/vox,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
 /area/voxship/med)
 "Lo" = (
-/obj/machinery/sleeper,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/sleeper/vox,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -2704,8 +2745,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/item/weapon/spacecash/bundle/c500,
-/obj/item/weapon/spacecash/bundle/c500,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 4;
@@ -2945,6 +2984,17 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/med)
+"OG" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/item/weapon/stool/padded,
+/turf/simulated/floor/tiled/techmaint/vox,
+/area/voxship/ship_mid)
 "OI" = (
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/cbridge)
@@ -3013,6 +3063,12 @@
 /obj/structure/table/rack{
 	dir = 8
 	},
+/obj/item/weapon/reagent_containers/chem_disp_cartridge/carbon,
+/obj/item/weapon/reagent_containers/chem_disp_cartridge/acetone,
+/obj/item/auto_cpr,
+/obj/item/auto_cpr,
+/obj/item/bodybag/cryobag,
+/obj/item/bodybag/cryobag,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/med)
 "Pp" = (
@@ -3253,7 +3309,6 @@
 	},
 /area/voxship/ship_mid)
 "St" = (
-/obj/structure/safe,
 /obj/item/weapon/spacecash/bundle/c1000,
 /obj/item/weapon/spacecash/bundle/c1000,
 /obj/item/weapon/spacecash/bundle/c1000,
@@ -3272,6 +3327,14 @@
 /obj/item/weapon/stock_parts/circuitboard/protolathe,
 /obj/item/weapon/stock_parts/circuitboard/circuit_imprinter,
 /obj/machinery/atmospherics/pipe/cap/visible,
+/obj/structure/closet/secure_closet/guncabinet{
+	name = "Quills Project Locker";
+	req_access = list("ACCESS_VOXSHIP_CAPTAIN")
+	},
+/obj/random/energy,
+/obj/random/energy,
+/obj/random/projectile,
+/obj/item/weapon/gun/projectile/dartgun/vox/raider,
 /turf/simulated/floor/wood/mahogany{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -3536,6 +3599,9 @@
 /area/voxship/ship_mid)
 "VO" = (
 /obj/structure/table/gamblingtable,
+/obj/item/weapon/spacecash/bundle/c500,
+/obj/item/weapon/spacecash/bundle/c500,
+/obj/random/drinkbottle,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
 "VY" = (
@@ -3551,7 +3617,6 @@
 /obj/item/weapon/FixOVein,
 /obj/item/weapon/reagent_containers/syringe/antiviral,
 /obj/item/weapon/reagent_containers/syringe/antiviral,
-/obj/effect/decal/cleanable/dirt,
 /obj/item/device/scanner/health,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
@@ -3631,6 +3696,11 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
+/mob/living/bot/medbot{
+	botcard_access = list("ACCESS_VOXSHIP");
+	name = "Vox Healer bot";
+	req_access = list(list("ACCESS_VOXSHIP"))
+	},
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -3650,12 +3720,9 @@
 /area/voxship/dorms)
 "WV" = (
 /obj/structure/table/standard,
-/obj/item/weapon/cautery,
-/obj/item/weapon/retractor,
 /obj/item/weapon/reagent_containers/glass/bottle/stoxin,
 /obj/item/weapon/reagent_containers/syringe,
 /obj/item/weapon/reagent_containers/glass/beaker/vial/random/toxin,
-/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -3756,6 +3823,15 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
+"Yr" = (
+/obj/structure/table/standard,
+/obj/item/weapon/reagent_containers/syringe/antiviral,
+/obj/item/weapon/reagent_containers/syringe/antiviral,
+/obj/item/device/scanner/health,
+/turf/simulated/floor/tiled/white/usedup{
+	initial_gas = list("nitrogen" = 101.23)
+	},
+/area/voxship/med)
 "YA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -15478,9 +15554,9 @@ iI
 lj
 nY
 sM
-kj
-uB
-XQ
+OG
+aN
+Fo
 Kh
 Lh
 Vj
@@ -15630,8 +15706,8 @@ eg
 yW
 UF
 Pk
-NF
-uB
+nw
+AQ
 Gv
 tV
 Lh
@@ -15782,9 +15858,9 @@ fM
 yW
 UF
 ao
-XQ
-uB
-XQ
+Fo
+aN
+Fo
 Kd
 Lh
 Vs
@@ -16390,9 +16466,9 @@ gl
 yW
 UF
 uB
-XQ
-uB
-XQ
+Fo
+aN
+Fo
 uB
 QV
 LK
@@ -16543,7 +16619,7 @@ yW
 UF
 dZ
 yv
-uB
+qJ
 Gx
 KB
 Zb
@@ -16694,9 +16770,9 @@ gF
 qE
 qE
 ao
-XQ
-uB
-XQ
+Fo
+aN
+Fo
 Kd
 aj
 aj
@@ -17613,7 +17689,7 @@ LR
 iC
 Wt
 RJ
-Wc
+Yr
 WV
 aj
 Sh
@@ -19889,8 +19965,8 @@ YA
 YA
 EA
 aj
-XL
-XL
+BT
+tq
 XL
 eh
 Jz
