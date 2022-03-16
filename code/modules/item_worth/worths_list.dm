@@ -56,7 +56,7 @@ var/list/worths = list(
 //AUTOMATICS,
 					/obj/item/weapon/gun/projectile/automatic/merc_smg = 3250,
 					/obj/item/weapon/gun/projectile/automatic/sec_smg = 2500,
-					/obj/item/weapon/gun/projectile/automatic/machine_pistol, 2300,
+					/obj/item/weapon/gun/projectile/automatic/machine_pistol = 2300,
 					/obj/item/weapon/gun/projectile/automatic/assault_rifle = 3800,
 					/obj/item/weapon/gun/projectile/automatic/bullpup_rifle = 3100,
 					/obj/item/weapon/gun/projectile/automatic/l6_saw = 13400,
