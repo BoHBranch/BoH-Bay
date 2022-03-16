@@ -5,6 +5,7 @@
 #define  ARMOR_BALLISTIC_SMALL		25
 #define  ARMOR_BALLISTIC_PISTOL		50	//Blocks holdout and normal pistol ammo
 #define  ARMOR_BALLISTIC_RESISTANT	65
+#define  ARMOR_BALLISTIC_GREAT		70
 #define  ARMOR_BALLISTIC_RIFLE		80	//Blocks rifle rounds
 #define  ARMOR_BALLISTIC_AP			95
 #define  ARMOR_BALLISTIC_HEAVY		110
