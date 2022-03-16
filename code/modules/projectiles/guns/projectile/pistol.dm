@@ -45,6 +45,7 @@
 	safety_icon = "safety"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
 	fire_delay = 8
+	jam_chance = 0
 
 /obj/item/weapon/gun/projectile/pistol/sec
 	name = "MA-Mk58"
