@@ -1,0 +1,60 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/obj/structure/catwalk,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/airless,/area/template_noop)
+"c" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/airless,/area/template_noop)
+"d" = (/obj/structure/catwalk,/obj/item/frame/apc,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/airless,/area/template_noop)
+"e" = (/obj/machinery/atmospherics/unary/tank/air{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/airless,/area/template_noop)
+"g" = (/obj/effect/paint/red,/turf/simulated/wall/titanium,/area/template_noop)
+"h" = (/obj/item/clothing/accessory/badge/solgov/tags/fleet{desc = "Scorched dog tags. You can make out it was a Solarian Government pilot."},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/airless,/area/template_noop)
+"i" = (/obj/machinery/computer/dummy,/obj/machinery/light/small{dir = 4; pixel_y = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/airless,/area/template_noop)
+"j" = (/obj/item/stack/material/rods,/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+"k" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/landmark/clear,/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+"l" = (/obj/effect/wallframe_spawn/reinforced/titanium,/turf/template_noop,/area/template_noop)
+"m" = (/obj/effect/landmark/scorcher,/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+"n" = (/obj/item/stack/material/rods,/obj/effect/landmark/clear,/turf/template_noop,/area/template_noop)
+"o" = (/obj/structure/catwalk,/obj/machinery/light/small{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/airless,/area/template_noop)
+"q" = (/obj/effect/landmark/clear,/turf/template_noop,/area/template_noop)
+"r" = (/obj/structure/fuel_port,/obj/effect/paint/hull,/turf/simulated/wall/titanium,/area/template_noop)
+"s" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/airless,/area/template_noop)
+"t" = (/obj/effect/landmark/clear,/obj/effect/landmark/scorcher,/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+"u" = (/obj/effect/paint/hull,/obj/effect/paint/hull,/turf/simulated/wall/titanium,/area/template_noop)
+"v" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/airless,/area/template_noop)
+"w" = (/obj/structure/bed/chair/shuttle/blue{dir = 8; icon_state = "shuttle_chair_preview"},/obj/item/remains/human,/obj/item/clothing/head/helmet/solgov/pilot,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/airless,/area/template_noop)
+"x" = (/obj/machinery/light/small{dir = 4; pixel_y = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/airless,/area/template_noop)
+"y" = (/obj/structure/grille/broken,/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+"z" = (/obj/effect/decal/cleanable/dirt,/obj/item/pipe,/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+"A" = (/obj/effect/decal/cleanable/dirt,/obj/effect/landmark/clear,/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+"B" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/landmark/clear,/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+"C" = (/obj/effect/landmark/clear,/obj/effect/landmark/clear,/turf/template_noop,/area/template_noop)
+"D" = (/obj/machinery/power/smes/buildable{charge = 0; RCon_tag = "Solar - Port"},/turf/simulated/floor/airless,/area/template_noop)
+"E" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/airless,/area/template_noop)
+"F" = (/obj/effect/decal/cleanable/dirt,/obj/item/pipe,/obj/effect/landmark/clear,/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+"G" = (/obj/machinery/door/airlock/external,/turf/simulated/floor/airless,/area/template_noop)
+"H" = (/obj/effect/decal/cleanable/dirt,/obj/effect/landmark/clear,/turf/template_noop,/area/template_noop)
+"I" = (/obj/effect/paint/hull,/turf/simulated/wall/titanium,/area/template_noop)
+"K" = (/obj/machinery/door/blast/shutters,/turf/simulated/floor/airless,/area/template_noop)
+"L" = (/obj/effect/landmark/clear,/obj/effect/landmark/clear,/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+"N" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/catwalk,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/airless,/area/template_noop)
+"O" = (/obj/machinery/mass_driver{dir = 8; icon_state = "mass_driver"},/obj/structure/missile/antispace,/turf/simulated/floor/airless,/area/template_noop)
+"P" = (/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/airless,/area/template_noop)
+"Q" = (/obj/machinery/porta_turret/exterior,/obj/structure/cable/cyan{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/airless,/area/template_noop)
+"R" = (/obj/structure/catwalk,/obj/effect/decal/cleanable/dirt,/obj/machinery/atmospherics/pipe/simple/hidden{dir = 5; icon_state = "intact"},/turf/simulated/floor/airless,/area/template_noop)
+"S" = (/obj/machinery/atmospherics/unary/engine{dir = 8},/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+"T" = (/obj/effect/landmark/clear,/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+"U" = (/obj/machinery/atmospherics/unary/tank/carbon_dioxide,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/airless,/area/template_noop)
+"V" = (/obj/machinery/atmospherics/unary/engine{dir = 8},/turf/simulated/floor/airless,/area/template_noop)
+"W" = (/obj/effect/decal/cleanable/dirt,/obj/structure/catwalk,/turf/simulated/floor/airless,/area/template_noop)
+"X" = (/turf/simulated/floor/airless,/area/template_noop)
+"Z" = (/obj/effect/landmark/scorcher,/turf/template_noop,/area/template_noop)
+
+(1,1,1) = {"
+aaaaaaZTTTmmaqqTTqggqqaaa
+aqqqqqTIIIuTTqTqqTgzSTaaa
+aqqqnTjKOXIgAAHTTTAATTTaa
+aqqqqLyIIIIgbABALCFSTTTaa
+aqqqnyciIDobbBkLLAATTTqaa
+aqqqTycwscEdggTqTTTLTTqaa
+aqqnTlhxIeUWNVTqqqqCqqaaa
+aqqqTIlGIIrgRVTTTTqCqTaaa
+aqqqTtTTQvPgggTTTTttttZZa
+aaaaaaaTTTTtTTtqqqqqaaaaa
+"}
