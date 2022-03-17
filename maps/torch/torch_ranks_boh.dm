@@ -77,15 +77,7 @@
 	species_to_branch_blacklist = list(
 		/datum/species/human   = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
 		/datum/species/machine = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
-		/datum/species/vox     = list(
-			/datum/mil_branch/expeditionary_corps,
-			/datum/mil_branch/fleet,
-			/datum/mil_branch/marine_corps,
-			/datum/mil_branch/civilian,
-			/datum/mil_branch/private_security,
-			/datum/mil_branch/solgov,
-			/datum/mil_branch/skrell_fleet
-		)
+		/datum/species/vox     = list(/datum/mil_branch/solgov, /datum/mil_branch/fleet, /datum/mil_branch/marine_corps, /datum/mil_branch/skrell_fleet)
 	)
 
 	species_to_branch_whitelist = list(
@@ -100,8 +92,9 @@
 		/datum/species/tajaran		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
  		/datum/species/shapeshifter/promethean	= list(UNRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/private_security),
 		/datum/species/plasmasans	= list(/datum/mil_branch/civilian, /datum/mil_branch/solgov),
-		/datum/species/vox			= list(/datum/mil_branch/alien),
-		/datum/species/vox/armalis	= list(/datum/mil_branch/alien)
+		/datum/species/vox			= list(/datum/mil_branch/alien, /datum/mil_branch/civilian, /datum/mil_branch/private_security),
+		/datum/species/vox/armalis	= list(/datum/mil_branch/alien),
+		/datum/species/vox/pariah	= list(/datum/mil_branch/civilian, /datum/mil_branch/private_security),
 	)
 
 	species_to_rank_whitelist = list(
