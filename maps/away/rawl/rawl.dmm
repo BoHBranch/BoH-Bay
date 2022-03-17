@@ -106,12 +106,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/computer/mining{
-	density = 0;
-	pixel_y = 30
-	},
 /obj/machinery/mineral/unloading_machine{
-	output_turf = 0
+	output_turf = 0;
+	input_turf = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/rawl/cargo)
@@ -420,6 +417,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/machinery/computer/mining{
+	density = 0;
+	pixel_y = 30;
+	pixel_x = -28
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/rawl/cargo)
