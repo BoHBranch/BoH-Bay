@@ -134,3 +134,9 @@
 
 /matrix/proc/get_angle()
 	return Atan2(b,a)
+
+/proc/FloorToY(x, y)
+	return (round((x) / (y)) * (y))
+
+/proc/ModulusXY(x, y)
+	return ((x) - (y) * round((x) / (y)))
