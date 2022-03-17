@@ -354,6 +354,9 @@ obj/item/organ/external/take_general_damage(var/amount, var/silent = FALSE)
 //   and the brute damage dealt exceeds the tearoff threshold, the organ is torn off.
 /obj/item/organ/external/proc/attempt_dismemberment(brute, burn, sharp, edge, used_weapon, spillover, force_droplimb)
 	//Check edge eligibility
+	if(src.organ_tag == BP_HEAD)
+		return FALSE
+
 	var/edge_eligible = 0
 	if(edge)
 		if(istype(used_weapon,/obj/item))
