@@ -48,7 +48,7 @@
 
 /obj/item/weapon/rig/vox/quill
 	name = "Quill's hardsuit control module"
-	desc = "The quill's hardsuit suit. It looks exactly like the standard hardsuit suit, but fancier. Parts of it writhe and squirm as if alive. The visor looks more like a thick membrane."
+	desc = "The quill's hardsuit. It looks exactly like the standard one, but fancier. Parts of it writhe and squirm as if alive. The visor looks more like a thick membrane."
 	cell_type =  /obj/item/weapon/cell/hyper
 
 	initial_modules = list(
