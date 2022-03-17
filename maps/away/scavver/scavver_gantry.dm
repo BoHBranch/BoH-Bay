@@ -13,7 +13,7 @@
 		/datum/shuttle/autodock/overmap/scavver_gantry/two,
 		/datum/shuttle/autodock/ferry/gantry
 	)
-    area_usage_test_exempted_root_areas = list(/area/scavver)
+   area_usage_test_exempted_root_areas = list(/area/scavver)
 
 /obj/effect/submap_landmark/joinable_submap/scavver_gantry
 	name = "Salvage Gantry"
