@@ -102,7 +102,16 @@
 	name = "Hephaestus P10"
 	desc = "The Hephaestus Industries P10 - a mass produced kinetic sidearm in widespread service with the SCGDF. A slide restrictor is integrated into the handgun to prevent\
 	quick-draw type shooting. A reliable sidearm in the hands of even the most novice of soldiers."
+	magazine_type = /obj/item/ammo_magazine/pistol/double
+	allowed_magazines = /obj/item/ammo_magazine/pistol/double
+	icon = 'icons/obj/guns/military_pistol.dmi'
+	fire_sound = 'sound/weapons/gunshot/pistol_p20.ogg'
+	icon_state = "military"
+	item_state = "secgundark"
+	safety_icon = "safety"
+	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
 	fire_delay = 5
+	ammo_indicator = TRUE
 
 /////////
 // LMG
