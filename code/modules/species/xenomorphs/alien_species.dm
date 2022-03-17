@@ -4,7 +4,6 @@
 	name_plural = "Xenophages"
 
 	unarmed_types = list(/datum/unarmed_attack/claws/strong, /datum/unarmed_attack/bite/strong)
-
 	hud_type = /datum/hud_data/alien
 	rarity_value = 3
 	health_hud_intensity = 1
