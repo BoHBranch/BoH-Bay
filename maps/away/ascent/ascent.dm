@@ -16,7 +16,7 @@
 		/datum/shuttle/autodock/overmap/ascent/two
 	)
 	area_coherency_test_subarea_count = list(
-		/area/ship/ascent/bridge = 16
+		/area/ship/ascent/bridge = 14
 	)
 
 // Overmap objects.
