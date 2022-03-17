@@ -54,10 +54,10 @@ Civilian
 	title = "Merchant"
 	department = "Civilian"
 	department_flag = CIV
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	availablity_chance = 100
-	supervisors = "the invisible hand of the market"
+	supervisors = "The Merchant company supervisor, and the contract you have made to supply the Dagon"
 	minimal_player_age = 0
 	create_record = 0
 	outfit_type = /decl/hierarchy/outfit/job/torch/merchant
@@ -76,4 +76,9 @@ Civilian
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 	skill_points = 24
 	required_language = null
+	alt_titles = list(
+		"Merchant Security",
+		"Merchant Property Caretaker",
+		"Merchant Entertainer",
+		"Merchant Off-Duty")
 	give_psionic_implant_on_join = FALSE

@@ -304,8 +304,6 @@ Sells devices, odds and ends, and medical stuff
 	name = "Medical Supplier"
 	origin = "Infirmary of CSV Iniquity"
 	trade_flags = TRADER_GOODS|TRADER_MONEY|TRADER_WANTED_ONLY
-	want_multiplier = 1.2
-	margin = 2
 	possible_origins = list("Dr.Krieger's Practice", "Legit Medical Supplies (No Refund)", "Mom's & Pop's Addictive Opoids", "Legitimate Pharmaceutical Firm", "Designer Drugs by Lil Xanny")
 	speech = list("hail_generic"    = "Huh? How'd you get this number?! Oh well, if you wanna talk biz, I'm listening.",
 				"hail_deny"         = "This is an automated message. Feel free to fuck the right off after the buzzer. *buzz*",
@@ -336,6 +334,7 @@ Sells devices, odds and ends, and medical stuff
 								  /obj/item/weapon/storage/firstaid = TRADER_SUBTYPES_ONLY,
 								  /obj/item/weapon/storage/box/bloodpacks  = TRADER_THIS_TYPE,
 								  /obj/item/weapon/storage/firstaid/surgery = TRADER_THIS_TYPE,
+								  /obj/item/weapon/scalpel/manager = TRADER_THIS_TYPE,
 								  /obj/item/weapon/reagent_containers/ivbag  = TRADER_SUBTYPES_ONLY,
 								  /obj/item/weapon/reagent_containers/glass/bottle/inaprovaline = TRADER_THIS_TYPE,
 								  /obj/item/weapon/reagent_containers/glass/bottle/stoxin = TRADER_THIS_TYPE,
