@@ -5,9 +5,9 @@
 	req_access = list(access_infantry)
 	icon_state = "infantry_rig"
 	suit_type = "combat hardsuit"
-	armor = list( //Same as the old infantry hardsuits
+	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
-		bullet = ARMOR_BALLISTIC_GREAT,
+		bullet = (ARMOR_BALLISTIC_RESISTANT + 5),
 		laser = ARMOR_LASER_MAJOR,
 		energy = ARMOR_ENERGY_SMALL,
 		bomb = ARMOR_BOMB_RESISTANT,
