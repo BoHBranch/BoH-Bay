@@ -5,6 +5,13 @@
 	whitelisted = list(SPECIES_IPC)
 	cost = 0
 
+/datum/gear/skrell_bodysuit
+	display_name = "skrell jumpsuit"
+	path = /obj/item/clothing/under/skrelljumpsuit/onship
+	sort_category = "Xenowear"
+	whitelisted = list(SPECIES_SKRELL)
+	cost = 1
+
 /datum/gear/head/plasmasans
 	display_name = "Phoron Restructurant Helmet"
 	path = /obj/item/clothing/head/helmet/space/plasmasans
