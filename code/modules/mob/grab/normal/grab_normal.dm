@@ -274,14 +274,15 @@
 		affecting.losebreath += 25
 		affecting.adjustOxyLoss(25)
 		total_damage += damage
-	if(E.brute_dam >= 100)
-		E.droplimb(1,DROPLIMB_EDGE)
-
 	if(total_damage)
 		user.visible_message("<span class='danger'>\The [user] slit [affecting]'s throat open with \the [W]!</span>")
 
 		if(W.hitsound)
 			playsound(affecting.loc, W.hitsound, 50, 1, -1)
+
+		if(E.brute_dam >= 100)
+			E.droplimb(1,DROPLIMB_EDGE)
+			user.visible_message("<span class='danger'>\The [user] has torn [affecting]'s head off with \the [W]!</span>")
 
 	G.last_action = world.time
 
