@@ -93,8 +93,7 @@
  		/datum/species/shapeshifter/promethean	= list(UNRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/private_security),
 		/datum/species/plasmasans	= list(/datum/mil_branch/civilian, /datum/mil_branch/solgov),
 		/datum/species/vox			= list(/datum/mil_branch/alien, /datum/mil_branch/civilian, /datum/mil_branch/private_security),
-		/datum/species/vox/armalis	= list(/datum/mil_branch/alien),
-		/datum/species/vox/pariah	= list(/datum/mil_branch/civilian, /datum/mil_branch/private_security),
+		/datum/species/vox/armalis	= list(/datum/mil_branch/alien)
 	)
 
 	species_to_rank_whitelist = list(
