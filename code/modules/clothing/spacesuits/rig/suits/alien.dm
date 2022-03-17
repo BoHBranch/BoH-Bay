@@ -1,6 +1,6 @@
 /obj/item/weapon/rig/unathi
 	name = "\improper makeshift breacher chassis control module"
-	desc = "A makeshift Unathi battle-rig. Looks like a fish, moves like a fish, steers like a cow."
+	desc = "A makeshift Unathi hardsuit. Looks like a fish, moves like a fish, steers like a cow."
 	suit_type = "\improper makeshift breacher rig"
 	icon_state = "breacher_rig_cheap"
 	armor = 0

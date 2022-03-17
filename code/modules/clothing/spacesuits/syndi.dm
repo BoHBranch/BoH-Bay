@@ -1,6 +1,6 @@
 //Regular syndicate space suit
 /obj/item/clothing/head/helmet/space/syndicate
-	name = "red space helmet"
+	name = "blood-red space helmet"
 	icon_state = "syndicate"
 	item_state = "syndicate"
 	desc = "A crimson helmet sporting clean lines and durable plating. Engineered to look menacing."
@@ -16,7 +16,7 @@
 	siemens_coefficient = 0.3
 
 /obj/item/clothing/suit/space/syndicate
-	name = "red space suit"
+	name = "blood-red space suit"
 	icon_state = "syndicate"
 	item_state_slots = list(
 		slot_l_hand_str = "space_suit_syndicate",
