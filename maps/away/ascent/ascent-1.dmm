@@ -3213,6 +3213,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
+/obj/machinery/alarm/ascent{
+	dir = 4;
+	pixel_x = -24
+	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_hospital)
 "Ed" = (
@@ -3339,6 +3343,9 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/machinery/alarm/ascent{
+	pixel_y = 24
+	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "Oj" = (
@@ -3368,6 +3375,10 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_hospital)
+"Qm" = (
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/bridge)
 "QB" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on/ascent,
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship/tiro,
@@ -6288,6 +6299,7 @@ aa
 aa
 aa
 aa
+Qm
 aa
 aa
 aa
@@ -6299,8 +6311,7 @@ aa
 aa
 aa
 aa
-aa
-aa
+Qm
 aa
 aa
 aa
@@ -9086,7 +9097,7 @@ aa
 aa
 aa
 aa
-aa
+Qm
 aa
 aa
 aR
@@ -9235,7 +9246,7 @@ af
 aa
 aa
 aa
-aa
+Qm
 aa
 aa
 aa

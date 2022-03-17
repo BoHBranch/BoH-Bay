@@ -252,3 +252,14 @@
 	check_records = 0
 
 	req_access = list("ACCESS_VOXSHIP")
+
+
+/obj/machinery/turretid/ascent
+
+	enabled = 1
+	lethal = 1
+
+	check_arrest = 0
+	check_records = 0
+
+	req_access = list("ACCESS_ASCENT")
