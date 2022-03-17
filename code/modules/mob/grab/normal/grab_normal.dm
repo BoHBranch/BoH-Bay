@@ -274,7 +274,8 @@
 		affecting.losebreath += 25
 		affecting.adjustOxyLoss(25)
 		total_damage += damage
-
+	if(E.brute_dam >= 100)
+		E.droplimb(1,DROPLIMB_EDGE)
 
 	if(total_damage)
 		user.visible_message("<span class='danger'>\The [user] slit [affecting]'s throat open with \the [W]!</span>")
