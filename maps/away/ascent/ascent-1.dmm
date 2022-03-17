@@ -2866,12 +2866,9 @@
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "kF" = (
-/obj/machinery/vending/fitness{
-	desc = "A SweatMAX vending machine stolen from some far off location. Still stocked.";
-	name = "stolen vending machine"
-	},
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/mantid_dispenser,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
 "lx" = (

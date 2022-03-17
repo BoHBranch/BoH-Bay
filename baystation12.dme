@@ -1482,6 +1482,7 @@
 #include "code\modules\boh\ascent2\firearms.dm"
 #include "code\modules\boh\ascent2\items.dm"
 #include "code\modules\boh\ascent2\machines.dm"
+#include "code\modules\boh\ascent2\mantid_food.dm"
 #include "code\modules\boh\ascent2\projectiles.dm"
 #include "code\modules\boh\ascent2\structures.dm"
 #include "code\modules\boh\ascent2\turf.dm"
