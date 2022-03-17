@@ -23,9 +23,9 @@ SUBSYSTEM_DEF(barsys)
 	 * Do note that recipes using a randomizer exclusively during consumption do not count as dynamic.
 	 */
 	/// Holds a master list of all static recipes.
-	var/list/static_drink_recipes
+	var/list/static_drink_recipes = list()
 	/// Holds a master list of all dynamic recipes.
-	var/list/dynamic_drink_recipes
+	var/list/dynamic_drink_recipes = list()
 
 	/*
 	 * These attributes correspond to the handling of mixing.
@@ -42,6 +42,8 @@ SUBSYSTEM_DEF(barsys)
 	var/debug = FALSE
 
 /datum/controller/subsystem/barsys/Initialize(timeofday)
+	var/random_seed = world.realtime // Pseudorandom but don't pay attention
+
 	for (var/path in subtypesof(/datum/drink_recipe))
 		var/datum/drink_recipe/D = new path()
 
@@ -50,6 +52,8 @@ SUBSYSTEM_DEF(barsys)
 
 	for (var/datum/drink_recipe/D in static_drink_recipes)
 		D.StaticInit()
+	for (var/datum/drink_recipe/D in dynamic_drink_recipes)
+		D.DynamicInit(random_seed)
 
 	. = ..(timeofday)
 
