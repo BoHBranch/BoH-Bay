@@ -7,8 +7,8 @@
 	cost = 0
 
 /datum/gear/skrell_bodysuit
-	display_name = "skrell bodysuit"
-	path = /obj/item/clothing/under/skrelljumpsuit
+	display_name = "skrell jumpsuit"
+	path = /obj/item/clothing/under/skrelljumpsuit/onship
 	sort_category = "Xenowear"
 	whitelisted = list(SPECIES_SKRELL)
 	cost = 1
