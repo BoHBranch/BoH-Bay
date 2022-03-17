@@ -5,3 +5,10 @@
 	sort_category = "Xenowear"
 	whitelisted = list(SPECIES_IPC)
 	cost = 0
+
+/datum/gear/skrell_bodysuit
+	display_name = "skrell bodysuit"
+	path = /obj/item/clothing/under/skrelljumpsuit
+	sort_category = "Xenowear"
+	whitelisted = list(SPECIES_SKRELL)
+	cost = 1
