@@ -163,7 +163,6 @@
 	allowed_roles = ARMORED_ROLES
 
 /datum/gear/clothing/hawaii
-	allowed_roles = SEMIFORMAL_ROLES
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/clothing/scarf
