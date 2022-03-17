@@ -47,9 +47,7 @@
 		/datum/species/custom      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/humanathi      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
 		/datum/species/tajaran      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps),
-		/datum/species/customhuman      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/solgov),
-		/datum/species/vox        = list(/datum/mil_branch/alien),
-		/datum/species/vox/armalis        = list(/datum/mil_branch/alien)
+		/datum/species/customhuman      = list(/datum/mil_branch/civilian, /datum/mil_branch/expeditionary_corps, /datum/mil_branch/solgov)
 	)
 /*
 	species_to_rank_whitelist = list(
