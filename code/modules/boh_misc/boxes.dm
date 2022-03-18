@@ -67,6 +67,7 @@
 //	options["Energy - Smartgun"] = list(/obj/item/weapon/gun/energy/gun/secure)
 //	options["Energy - Stun Revolver"] = list(/obj/item/weapon/gun/energy/stunrevolver/secure)
 	options["Stun - Non-Lethal Taser"] = list(/obj/item/weapon/gun/energy/taser)
+	options["Small Energy - Compact Smartgun"] = list(/obj/item/weapon/gun/energy/gun/small/secure/sec)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
@@ -88,7 +89,6 @@
 	options["Ballistic - SMG"] = list(/obj/item/weapon/gun/projectile/automatic/sec_smg/less_lethal,/obj/item/weapon/storage/box/ammo/smg_frang)
 	options["Ballistic - Beanbag Shotgun"] = list(/obj/item/weapon/gun/projectile/shotgun/pump/beanbag,/obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full)
 	options["Stun - Stun Rifle"] = list(/obj/item/weapon/gun/energy/stunrevolver/rifle)
-	options["Small Energy - Compact Smartgun"] = list(/obj/item/weapon/gun/energy/gun/small/secure/sec)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
