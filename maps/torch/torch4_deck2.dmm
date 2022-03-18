@@ -18860,6 +18860,7 @@
 	icon_state = "warning"
 	},
 /obj/structure/reagent_dispensers/acid{
+	density = 0;
 	pixel_x = -32
 	},
 /turf/simulated/floor/tiled/dark,
