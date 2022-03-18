@@ -8,12 +8,12 @@
 	suffixes = list("scavver/scavver_gantry-1.dmm","scavver/scavver_gantry-2.dmm")
 	cost = 1
 	accessibility_weight = 10
+	area_usage_test_exempted_root_areas = list(/area/scavver)
 	shuttles_to_initialise = list(
 		/datum/shuttle/autodock/overmap/scavver_gantry,
 		/datum/shuttle/autodock/overmap/scavver_gantry/two,
 		/datum/shuttle/autodock/ferry/gantry
 	)
-   area_usage_test_exempted_root_areas = list(/area/scavver)
 
 /obj/effect/submap_landmark/joinable_submap/scavver_gantry
 	name = "Salvage Gantry"
