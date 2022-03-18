@@ -101,12 +101,6 @@
 	icon = 'icons/boh/obj/clothing/obj_modular_armor.dmi'
 	accessory_icons = list(slot_tie_str = 'icons/boh/mob/onmob/onmob_modular_armor.dmi', slot_head_str = 'icons/boh/mob/onmob/onmob_modular_armor.dmi')
 	icon_state = "helmcover_grey"
-
-/obj/item/clothing/accessory/armor/helmcover/grey/skrell
-	name = "skrell grey helmet cover"
-	desc = "A fabric cover for armored helmets in grey. This one seems to be made for skrellian helmets."
-	icon_state = "helmcover_grey_skrell"
-
 // Ah shit, here we break G-Convention again.
 /obj/item/clothing/accessory/armor/tag/civ
 	name = "\improper CIVILIAN tag"

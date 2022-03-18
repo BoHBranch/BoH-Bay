@@ -28,8 +28,8 @@
 	var/allow_hair_covering = 1
 
 	//Species-specific stuff.
-	sprite_sheets = list(SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_skrell.dmi',)
-	sprite_sheets_obj = list(SPECIES_SKRELL = 'icons/obj/clothing/species/skrell/obj_head_skrell.dmi',)
+	sprite_sheets = list(SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_skrell.dmi')
+	sprite_sheets_obj = list(SPECIES_SKRELL = 'icons/obj/clothing/species/skrell/obj_head_skrell.dmi')
 // Snowflakes gotta snowflake.
 /obj/item/clothing/head/helmet/verb/toggle_block_hair()
 	set name = "Toggle Helmet Hair Coverage"
