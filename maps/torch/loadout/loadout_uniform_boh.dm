@@ -26,3 +26,21 @@
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_roles = COMMANDANDOFFICER_ROLES
 
+/datum/gear/uniform/fleet/polopants
+	display_name = "fleet polo and pants uniform selection"
+	description = "An alternative utility uniform of the Solar Fleet."
+	path = /obj/item/clothing/under/solgov/utility/fleet/polopants
+	cost = 0
+	allowed_branches = list(/datum/mil_branch/fleet)
+
+/datum/gear/uniform/fleet/polopants/New()
+	..()
+	var/polouniform = list()
+	polouniform["Command fleet polo and pants"] = /obj/item/clothing/under/solgov/utility/fleet/polopants/command
+	polouniform["Engineering fleet polo and pants"] = /obj/item/clothing/under/solgov/utility/fleet/polopants
+	polouniform["Security fleet polo and pants"] = /obj/item/clothing/under/solgov/utility/fleet/polopants/security
+	polouniform["Medical fleet polo and pants"] = /obj/item/clothing/under/solgov/utility/fleet/polopants/medical
+	polouniform["Supply fleet polo and pants"] = /obj/item/clothing/under/solgov/utility/fleet/polopants/supply
+	polouniform["Service fleet polo and pants"] = /obj/item/clothing/under/solgov/utility/fleet/polopants/service
+	polouniform["Exploration fleet polo and pants"] = /obj/item/clothing/under/solgov/utility/fleet/polopants/exploration
+	gear_tweaks += new /datum/gear_tweak/path(polouniform)
