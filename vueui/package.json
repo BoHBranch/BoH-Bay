@@ -14,10 +14,10 @@
     "core-js-compat": "3.6.3",
     "fuse.js": "3.4.6",
     "vue": "2.6.11",
-    "webpack": "^4.41.5"
+    "webpack": "4.41.5"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.8.0",
+    "@babel/preset-env": "7.8.0",
     "@vue/cli-plugin-babel": "3.12.1",
     "@vue/cli-plugin-eslint": "3.12.1",
     "@vue/cli-service": "3.12.1",
