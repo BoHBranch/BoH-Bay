@@ -432,12 +432,27 @@
 	desc = "A fabric cover for armored helmets. This one has corporate colors."
 	icon_state = "helmcover_nt"
 
+/obj/item/clothing/accessory/armor/helmcover/nt/skrell
+	name = "skrell corporate helmet cover"
+	desc = "A fabric cover for armored helmets in corporate colors. This one seems to be made for skrellian helmets."
+	icon_state = "helmcover_nt_skrell"
+
 /obj/item/clothing/accessory/armor/helmcover/pcrc
 	name = "\improper PCRC helmet cover"
 	desc = "A fabric cover for armored helmets. This one is colored navy blue and has a tag in the back with the words PROXIMA CENTAURI RISK CONTROL printed in cyan lettering on it."
 	icon_state = "helmcover_pcrc"
 
+/obj/item/clothing/accessory/armor/helmcover/pcrc/skrell
+	name = "skrell PCRC helmet cover"
+	desc = "A fabric cover for armored helmets is colored navy blue and has a tag in the back with the words PROXIMA CENTAURI RISK CONTROL printed in cyan lettering on it. This one seems to be made for skrellian helmets."
+	icon_state = "helmcover_pcrc_skrell"
+
 /obj/item/clothing/accessory/armor/helmcover/saare
 	name = "\improper SAARE helmet cover"
 	desc = "A fabric cover for armored helmets. This one has SAARE's colors."
 	icon_state = "helmcover_saare"
+
+/obj/item/clothing/accessory/armor/helmcover/saare/skrell
+	name = "skrell SAARE helmet cover"
+	desc = "A fabric cover for armored helmets in SAARE' colors. This one seems to be made for skrellian helmets."
+	icon_state = "helmcover_saare_skrell"
