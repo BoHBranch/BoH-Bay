@@ -128,6 +128,9 @@
 		H.mind.assigned_role = "Alien"
 		H.mind.special_role = "Alien"
 
+	H.see_invisible = SEE_INVISIBLE_NOLIGHTING
+	H.see_in_dark = 100
+
 	var/decl/cultural_info/culture/hidden/xenophage/culture = SSculture.get_culture(force_cultural_info[TAG_CULTURE])
 	if(istype(culture))
 		culture.caste_number++
