@@ -31,19 +31,19 @@
 
 /obj/item/weapon/storage/box/ammo/shotgunammo/full
 	name = "heavy box of shotgun slugs"
-	startswith = list(/obj/item/ammo_magazine/shotholder = 7)
+	startswith = list(/obj/item/ammo_box/shotgun/slug = 7)
 
 /obj/item/weapon/storage/box/ammo/shotgunammo/buckshot/full
 	name = "heavy box of shotgun shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/shell = 7)
+	startswith = list(/obj/item/ammo_box/shotgun = 7)
 
 /obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full
 	name = "heavy box of birdshot"
-	startswith = list(/obj/item/ammo_magazine/shotholder/birdshot = 7)
+	startswith = list(/obj/item/ammo_box/shotgun/birdshot = 7)
 
 /obj/item/weapon/storage/box/ammo/sabotbox
 	name = "box of sabot shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/sabot = 7)
+	startswith = list(/obj/item/ammo_box/shotgun/sabot = 7)
 
 /obj/item/weapon/storage/box/ammo/machine_pistol
 	name = "box of magazines"
