@@ -9,6 +9,7 @@
 	force = 30
 	throwforce = 10
 	base_parry_chance = 40
+	parrysound = 'sound/weapons/parry/parry_metallarge.ogg'
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 
