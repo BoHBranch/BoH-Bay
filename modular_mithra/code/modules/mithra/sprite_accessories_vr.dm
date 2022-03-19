@@ -936,7 +936,7 @@
 	ani_state = "otie_w"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
+/*
 /datum/sprite_accessory/tail/newtailmaw
 	name = "new tailmaw (vwag)"
 	desc = ""
@@ -944,7 +944,7 @@
 	ani_state = "newtailmaw_w"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
+*/
 /datum/sprite_accessory/tail/ztail
 	name = "jagged flufftail"
 	desc = ""
