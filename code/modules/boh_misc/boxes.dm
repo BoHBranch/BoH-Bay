@@ -4,15 +4,15 @@
 
 /obj/item/weapon/storage/box/ammo/beanbags/full
 	name = "heavy box of beanbag shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 6)
+	startswith = list(/obj/item/ammo_box/shotgun/beanbag = 6)
 
 /obj/item/weapon/storage/box/ammo/beanbags/half
 	name = "box of beanbag shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 3)
+	startswith = list(/obj/item/ammo_box/shotgun/beanbag = 3)
 
 /obj/item/weapon/storage/box/ammo/beanbags/eight
 	name = "box of beanbag shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 2)
+	startswith = list(/obj/item/ammo_box/shotgun/beanbag = 2)
 
 /obj/item/weapon/storage/box/ammo/solar
 	name = "box of handgun magazines"
@@ -43,7 +43,7 @@
 
 /obj/item/weapon/storage/box/ammo/sabotbox
 	name = "box of sabot shells"
-	startswith = list(/obj/item/ammo_box/shotgun/sabot = 7)
+	startswith = list(/obj/item/ammo_magazine/shotholder/sabot = 7)
 
 /obj/item/weapon/storage/box/ammo/machine_pistol
 	name = "box of magazines"
