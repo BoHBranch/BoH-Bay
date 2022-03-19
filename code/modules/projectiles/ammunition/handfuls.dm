@@ -105,8 +105,9 @@
 
 /obj/item/ammo_box/shotgun
 	name = "\improper 12g shells box"
-	icon_state = "shotgun_box"
+	icon_state = "shotgun_ammo"
 	desc = "A box holidng a neat pile of 12 gauge shells. You get them out of here."
+	max_stacks = 2
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful
 
 /obj/item/ammo_box/shotgun/slug
@@ -162,7 +163,7 @@
 
 /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/sabot
 	icon_state = "slshell_handful"
-	ammo_type = /obj/item/ammo_casing/shotgun/birdshot
+	ammo_type = /obj/item/ammo_casing/sabot
 
 /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/sabot/two
 	initial_ammo = 2
