@@ -58,7 +58,7 @@
 	icon_state = "slug_s"
 	suit_sprites = 'icons/mob/taurmob/taursuits_slug.dmi'
 	icon_sprite_tag = "slug"
-
+/*
 /datum/sprite_accessory/tail/taur/alraune_2c
 	name = "Alraune (dual color)"
 	icon_state = "alraunecolor_s"
@@ -68,7 +68,7 @@
 	extra_overlay_w = "alraunecolor_closed_markings"
 	clip_mask_state = "taur_clip_mask_alraune"
 	icon_sprite_tag = "alraune"
-
+*/
 /datum/sprite_accessory/tail/taur/wasp
 	name = "Wasp (dual color)"
 	icon_state = "wasp_s"
