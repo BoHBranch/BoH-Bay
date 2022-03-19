@@ -2870,9 +2870,6 @@
 	name = "munitions belt"
 	},
 /obj/machinery/shield_diffuser,
-/obj/machinery/light/navigation{
-	layer = 2.22
-	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "gk" = (
