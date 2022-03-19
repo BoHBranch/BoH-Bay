@@ -10,7 +10,7 @@
 	accessibility_weight = 10
 	area_usage_test_exempted_root_areas = list(/area/scavver)
 	apc_test_exempt_areas = list(
-        /area/scavver = NO_SCRUBBER|NO_VENT|NO_APC
+		/area/scavver = NO_SCRUBBER|NO_VENT|NO_APC
     )
 	shuttles_to_initialise = list(
 		/datum/shuttle/autodock/overmap/scavver_gantry,
@@ -53,8 +53,8 @@
 	)
 
 /obj/item/mech_component/sensors/light/salvage/prebuild()
-  ..()
-  software.installed_software = list(MECH_SOFTWARE_UTILITY, MECH_SOFTWARE_ENGINEERING)
+	..()
+	software.installed_software = list(MECH_SOFTWARE_UTILITY, MECH_SOFTWARE_ENGINEERING)
 
 /mob/living/exosuit/premade/salvage_gantry
 	name = "\improper Carrion Crawler"
