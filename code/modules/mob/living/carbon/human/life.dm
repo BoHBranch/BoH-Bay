@@ -81,6 +81,8 @@
 
 		handle_medical_side_effects()
 
+		process_weaver_silk()
+
 		if(!client && !mind)
 			species.handle_npc(src)
 
@@ -1147,3 +1149,11 @@
 	..()
 	if((CE_THIRDEYE in chem_effects) || (MUTATION_XRAY in mutations))
 		set_sight(sight|SEE_TURFS|SEE_MOBS|SEE_OBJS)
+
+/mob/living/carbon/human/proc/process_weaver_silk()
+	if(!species || !(species.is_weaver))
+		return
+
+	if(species.silk_reserve < species.silk_max_reserve && species.silk_production == TRUE && nutrition > 100)
+		species.silk_reserve = min(species.silk_reserve + 2, species.silk_max_reserve)
+		adjust_nutrition(-0.4)

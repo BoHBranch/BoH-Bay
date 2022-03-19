@@ -65,6 +65,12 @@
 	var/min_age = 18
 	var/max_age = 70
 
+	var/is_weaver = FALSE
+	var/silk_production = FALSE
+	var/silk_reserve = 100
+	var/silk_max_reserve = 500
+	var/silk_color = "#FFFFFF"
+
 	// Speech vars.
 	var/assisted_langs = list()               // The languages the species can't speak without an assisted organ.
 	var/list/speech_sounds                    // A list of sounds to potentially play when speaking.
