@@ -29,7 +29,7 @@
 
 /obj/item/organ/internal/stack/examine(var/mob/user)
 	. = ..(user)
-	if(istype(backup) && !is_broken()) // Do we have a backup and is the lace functioning?
+	if(istype(backup)) // Do we have a backup?
 		if(user.skill_check(SKILL_DEVICES, SKILL_EXPERT)) // Can we even tell what the blinking means?
 			if(find_dead_player(ownerckey, 1)) // Is the player still around and dead?
 				to_chat(user, "<span class='notice'>The light on [src] is blinking rapidly. Someone might have a second chance.</span>")
@@ -54,8 +54,13 @@
 		if(owner.ckey)
 			ownerckey = owner.ckey
 
-/obj/item/organ/internal/stack/Destroy()
+/obj/item/organ/internal/stack/New()
 	..()
+	do_backup()
+	robotize()
+
+/obj/item/organ/internal/stack/Destroy()
+	. = ..()
 	var/obj/gore
 	playsound(src, "shatter", 70, 1)
 	gore = new /obj/item/weapon/material/shard(get_turf(owner), MATERIAL_GLASS)
@@ -63,22 +68,6 @@
 	gore = new /obj/effect/decal/cleanable/blood/gibs(get_turf(owner))
 	gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
 	owner.visible_message(SPAN_WARNING("[owner]'s neck explodes in a shower of strange blue liquid and metallic fragments!"))
-	owner.death()
-	return
-
-/obj/item/organ/internal/stack/Process()
-	..()
-
-	if(!owner || removed())
-		return
-	if(is_broken())
-		Destroy()
-
-/obj/item/organ/internal/stack/New()
-	..()
-	do_backup()
-	robotize()
-	Process()
 
 /obj/item/organ/internal/stack/proc/backup_inviable()
 	return 	(!istype(backup) || backup == owner.mind || (backup.current && backup.current.stat != DEAD))
@@ -101,7 +90,6 @@
 	relacetime = world.time
 	if(world.time >= relacetime + 30 MINUTES)
 		to_chat(owner, SPAN_NOTICE("You feel like you have recovered slightly from your ordeal, still wouldn't make a habit of dying."))
-	Process()
 	return 1
 
 /obj/item/organ/internal/stack/removed()
