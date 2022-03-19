@@ -18,7 +18,7 @@
 /turf/simulated/floor/ascent{
 	initial_gas = newlist()
 	},
-/area/ship/ascent/subdeck_gyne_quarters)
+/area/ship/ascent/subdeck_center)
 "ae" = (
 /turf/simulated/wall/r_wall/ascent,
 /area/ship/ascent/subdeck_south_spike)
@@ -2860,16 +2860,21 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "gj" = (
-/obj/structure/plasticflaps/airtight{
-	color = "#a33fbf"
-	},
 /obj/machinery/conveyor{
 	color = "#a33fbf";
 	dir = 4;
 	id = "ascent_torp_belt";
 	name = "munitions belt"
 	},
-/obj/machinery/shield_diffuser,
+/obj/machinery/door/blast/regular{
+	color = "#a33fbf";
+	dir = 4;
+	id_tag = "torp_shield";
+	name = "Torpedo Security Door"
+	},
+/obj/structure/plasticflaps/airtight{
+	color = "#a33fbf"
+	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "gk" = (
@@ -2880,6 +2885,14 @@
 	dir = 10
 	},
 /obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_gyne_quarters)
+"gl" = (
+/obj/machinery/mass_driver{
+	color = "#a33fbf";
+	dir = 4;
+	id_tag = "ascent_torp_launcher"
+	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "gm" = (
@@ -2980,28 +2993,9 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
 "gz" = (
-/obj/machinery/mass_driver{
-	color = "#a33fbf";
-	dir = 4;
-	id_tag = "ascent_torp_launcher"
-	},
+/obj/machinery/shield_diffuser,
 /turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_gyne_quarters)
-"gA" = (
-/obj/machinery/conveyor{
-	color = "#a33fbf";
-	dir = 4;
-	id = "ascent_torp_belt";
-	name = "munitions belt"
-	},
-/obj/machinery/door/blast/regular{
-	color = "#a33fbf";
-	dir = 4;
-	id_tag = "torp_shield";
-	name = "Torpedo Security Door"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_gyne_quarters)
+/area/ship/ascent/subdeck_center)
 "gC" = (
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
@@ -14195,9 +14189,9 @@ ai
 ai
 gs
 gt
-aQ
-gA
-aQ
+ai
+gj
+ai
 gs
 gt
 ai
@@ -14315,13 +14309,13 @@ ai
 ai
 ai
 ai
-aQ
-aQ
-aQ
-gj
-aQ
-aQ
-aQ
+ai
+ai
+ai
+gl
+ai
+ai
+ai
 ai
 ai
 ai
@@ -14439,9 +14433,9 @@ ai
 ai
 ad
 ad
-aQ
+ai
 gz
-aQ
+ai
 ad
 ad
 ai
