@@ -8,6 +8,7 @@
 	suffixes = list("scavver/scavver_gantry-1.dmm","scavver/scavver_gantry-2.dmm")
 	cost = 1
 	accessibility_weight = 10
+	area_usage_test_exempted_root_areas = list(/area/scavver)
 	apc_test_exempt_areas = list(
         /area/scavver = NO_SCRUBBER|NO_VENT|NO_APC
     )
