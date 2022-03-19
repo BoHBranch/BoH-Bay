@@ -9,6 +9,6 @@
 		var/obj/effect/shield/S = triggerer
 		S.take_damage(10000)
 	else
-		explosion(get_turf(src), 4, 7, 9, 5)
-	
+		explosion(get_turf(src), 4, 8, 12, 16)
+
 	..()
