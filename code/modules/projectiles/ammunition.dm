@@ -158,8 +158,29 @@
 		if(!user.unEquip(C, src))
 			return
 		stored_ammo.Add(C)
+		playsound(src, 'sound/weapons/guns/bulletin_mag.ogg', 50, 1)
 		update_icon()
 	else ..()
+
+	if(istype(W, /obj/item/ammo_magazine/handful))
+		var/obj/item/ammo_magazine/handful/A = W
+		if(caliber == A.caliber)
+			if(!A.stored_ammo.len)
+				to_chat(user, "<span class='notice'>[A] is empty!</span>")
+			else if(stored_ammo.len >= max_ammo)
+				to_chat(user, "<span class='warning'>[src] is full!</span>")
+				return
+			else
+				var/obj/item/ammo_casing/C = A.stored_ammo[A.stored_ammo.len]
+				A.stored_ammo-=C
+				C.forceMove(src)
+				stored_ammo.Add(C)
+				update_icon()
+				playsound(src, 'sound/weapons/guns/bulletin_mag.ogg', 50, 1)
+				A.update_icon()
+				user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) // Set a click delay cooldown.
+
+
 
 /obj/item/ammo_magazine/attack_self(mob/user)
 	if(!stored_ammo.len)

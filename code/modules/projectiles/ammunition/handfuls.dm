@@ -108,23 +108,6 @@
 	icon_state = "shotgun_box"
 	desc = "A box holidng a neat pile of 12 gauge shells. You get them out of here."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful
-	max_stacks = 2
-
-/obj/item/ammo_box/shotgun/slug
-	name = "\improper slugs box"
-	desc = "A box holidng a neat pile of 12 gauge slugs. You get them out of here."
-	handful_type = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/slug
-
-/obj/item/ammo_box/shotgun/birdshot
-	name = "\improper birdshot box"
-	desc = "A box holidng a neat pile of 12 gauge birdshot. You get them out of here."
-	handful_type = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/birdshot
-
-/obj/item/ammo_box/shotgun/sabot
-	name = "\improper sabots box"
-	desc = "A box holidng a neat pile of 12 gauge sabot. You get them out of here."
-	handful_type = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/sabot
-
 
 // Shotguns, why do we even use gauges anymore?
 
@@ -159,12 +142,6 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/birdshot
 
 /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/birdshot/two
-	initial_ammo = 2
-
-/obj/item/ammo_magazine/handful/shotgun/shotgun_handful/sabot
-	ammo_type = /obj/item/ammo_casing/sabot
-
-/obj/item/ammo_magazine/handful/shotgun/shotgun_handful/sabot/two
 	initial_ammo = 2
 
 

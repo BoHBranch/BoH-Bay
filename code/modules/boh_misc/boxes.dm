@@ -67,6 +67,7 @@
 //	options["Energy - Smartgun"] = list(/obj/item/weapon/gun/energy/gun/secure)
 //	options["Energy - Stun Revolver"] = list(/obj/item/weapon/gun/energy/stunrevolver/secure)
 	options["Stun - Non-Lethal Taser"] = list(/obj/item/weapon/gun/energy/taser)
+	options["Small Energy - Compact Smartgun"] = list(/obj/item/weapon/gun/energy/gun/small/secure/sec)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]

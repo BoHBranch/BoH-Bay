@@ -66,6 +66,12 @@
 	icon_state = "ascent"
 	worn_state = "ascent"
 	color = COLOR_DARK_GUNMETAL
+	sprite_sheets = list(
+		SPECIES_MANTID_GYNE =  'icons/mob/species/mantid/onmob_under_gyne.dmi',
+		SPECIES_MANTID_ALATE = 'icons/mob/species/mantid/onmob_under_alate.dmi',
+		SPECIES_MONARCH_QUEEN = 'icons/mob/species/nabber/msq/onmob_under_msq.dmi',
+		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_under_gas.dmi'
+		)
 
 /obj/item/clothing/suit/storage/ascent
 	name = "mantid gear harness"
@@ -81,6 +87,12 @@
 		/obj/item/weapon/inflatable_dispenser,
 		/obj/item/weapon/rcd
 	)
+	sprite_sheets = list(
+		SPECIES_MANTID_GYNE =  'icons/mob/species/mantid/onmob_suit_gyne.dmi',
+		SPECIES_MANTID_ALATE = 'icons/mob/species/mantid/onmob_suit_alate.dmi',
+		SPECIES_MONARCH_QUEEN = 'icons/mob/species/nabber/msq/onmob_suit_msq.dmi',
+		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_suit_gas.dmi'
+		)
 
 /obj/item/clothing/suit/storage/ascent/Initialize()
 	. = ..()

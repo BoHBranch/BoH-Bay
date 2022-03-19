@@ -11,6 +11,8 @@
 	sharp = 0
 	edge = 0
 	armor_penetration = 50
+	hitsound = 'sound/weapons/blade1.ogg'
+	parrysound = 'sound/weapons/parry/parry_energy.ogg'
 	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_NO_BLOOD
 
 /obj/item/weapon/melee/energy/can_embed()
