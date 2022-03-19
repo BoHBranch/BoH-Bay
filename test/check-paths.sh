@@ -34,7 +34,7 @@ exactly 43 "world.log<< uses" 'world.log<<|world.log[[:space:]]<<'
 exactly 478 "<< uses" '(?<!<)<<(?!<)' -P
 exactly 0 "incorrect indentations" '^( {4,})' -P
 exactly 28 "text2path uses" 'text2path'
-exactly 3 "update_icon() override" '/update_icon\((.*)\)'  -P
+exactly 4 "update_icon() override" '/update_icon\((.*)\)'  -P
 exactly 1 "goto uses" 'goto '
 exactly 494 "spawn uses" 'spawn\s*\(\s*(-\s*)?\d*\s*\)' -P
 # With the potential exception of << if you increase any of these numbers you're probably doing it wrong
@@ -67,8 +67,8 @@ if (( broken_files > 0 )); then
 fi
 
 num=`find ./html/changelogs -not -name "*.yml" | wc -l`
-echo "$num non-yml files (expecting exactly 3)"
-[ $num -eq 3 ] || FAILED=1
+echo "$num non-yml files (expecting exactly 4)"
+[ $num -eq 4 ] || FAILED=1
 
 num=`find . -perm /111 -name "*.dm*" | wc -l`
 echo "$num executable *.dm? files (expecting exactly 0)"
