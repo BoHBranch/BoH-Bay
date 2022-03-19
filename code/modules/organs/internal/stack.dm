@@ -12,7 +12,7 @@
 	status = ORGAN_ROBOTIC
 	vital = 1
 	origin_tech = list(TECH_BIO = 4, TECH_MATERIAL = 4, TECH_MAGNET = 2, TECH_DATA = 3)
-	relative_size = 25
+	relative_size = 95 //The relative chance your lace is hit //TEST VALUE, DON'T YELL AT ME -PurplePineapple
 	max_damage = 30
 
 	var/ownerckey
