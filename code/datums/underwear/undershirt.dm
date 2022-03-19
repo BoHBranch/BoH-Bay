@@ -211,3 +211,11 @@
 /datum/category_item/underwear/undershirt/polo_dais
 	name = "Polo, Deimos Advanced Information Systems"
 	icon_state = "dais_polo"
+
+/datum/category_item/underwear/undershirt/polo_fleet
+	name = "Polo, Solar Fleet"
+	icon_state = "fleet_polo"
+
+/datum/category_item/underwear/undershirt/polo_fleet/alt
+	name = "Polo, Solar Fleet, alt"
+	icon_state = "fleet_polo_alt"
