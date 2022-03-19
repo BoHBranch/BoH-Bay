@@ -67,8 +67,8 @@ if (( broken_files > 0 )); then
 fi
 
 num=`find ./html/changelogs -not -name "*.yml" | wc -l`
-echo "$num non-yml files (expecting exactly 4)"
-[ $num -eq 4 ] || FAILED=1
+echo "$num non-yml files (expecting exactly 3)"
+[ $num -eq 3 ] || FAILED=1
 
 num=`find . -perm /111 -name "*.dm*" | wc -l`
 echo "$num executable *.dm? files (expecting exactly 0)"
