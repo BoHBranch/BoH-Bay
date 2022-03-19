@@ -7,7 +7,7 @@ This is for standard issue sidearms.
 	cost = 0
 	sort_category = "Standard Issue Equipment"
 	path = /obj/item/weapon/gun/projectile/
-	allowed_branches = MILITARY_BRANCHES
+	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/sikits/guns/New()
 	..()
@@ -23,7 +23,7 @@ This is for standard issue sidearms.
 	cost = 0
 	sort_category = "Standard Issue Equipment"
 	path = /obj/item/clothing/accessory/storage/holster/
-	allowed_branches = MILITARY_BRANCHES
+	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/sikits/holsters/New()
 	..()
