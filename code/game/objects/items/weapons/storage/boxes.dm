@@ -180,15 +180,15 @@
 
 /obj/item/weapon/storage/box/ammo/beanbags
 	name = "box of beanbag shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 2)
+	startswith = list(/obj/item/ammo_box/shotgun/beanbag = 2)
 
 /obj/item/weapon/storage/box/ammo/shotgunammo
 	name = "box of shotgun slugs"
-	startswith = list(/obj/item/ammo_magazine/shotholder = 2)
+	startswith = list(/obj/item/ammo_box/shotgun/slug = 2)
 
 /obj/item/weapon/storage/box/ammo/shotgunshells
 	name = "box of shotgun shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/shell = 2)
+	startswith = list(/obj/item/ammo_box/shotgun = 2)
 
 /obj/item/weapon/storage/box/ammo/flashshells
 	name = "box of illumination shells"

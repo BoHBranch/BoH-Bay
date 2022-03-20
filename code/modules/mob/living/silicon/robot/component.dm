@@ -79,14 +79,14 @@
 /datum/robot_component/armour
 	name = "armour plating"
 	external_type = /obj/item/robot_parts/robot_component/armour
-	max_damage = 150
+	max_damage = 400
 
 // LIGHT ARMOUR
 // Same as armour, but for flying borgs - Less protection.
 /datum/robot_component/armour/light
 	name = "light armour plating"
 	external_type = /obj/item/robot_parts/robot_component/armour/light
-	max_damage = 75
+	max_damage = 150
 
 /datum/robot_component/armour/accepts_component(var/obj/item/thing)
 	. = (!istype(thing, /obj/item/robot_parts/robot_component/armour/exosuit) && ..())

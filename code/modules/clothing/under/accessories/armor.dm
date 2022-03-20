@@ -387,6 +387,9 @@
 	icon_state = "null"
 	slot = ACCESSORY_SLOT_HELM_C
 
+	sprite_sheets = list(SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_modular_armor_skrell.dmi')
+	sprite_sheets_obj = list(SPECIES_SKRELL = 'icons/obj/clothing/species/skrell/obj_modular_armor_skrell.dmi')
+
 /obj/item/clothing/accessory/armor/helmcover/blue
 	name = "blue helmet cover"
 	desc = "A fabric cover for armored helmets in a bright blue color."
