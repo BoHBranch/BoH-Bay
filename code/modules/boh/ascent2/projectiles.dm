@@ -5,9 +5,16 @@
 	name = "particle beam"
 	icon_state = "particle"
 	damage = 5
-	agony = 90
+	agony = 85
 	eyeblur = 1
 	damage_type = ELECTROCUTE//Can be stopped entirely by certain armors.
+
+/obj/item/projectile/beam/particle/defence/on_hit(atom/target, blocked, def_zone)
+	. = ..()
+	if(isliving(target))
+		var/mob/living/L = target
+		to_chat(target, SPAN_WARNING("You feel incredible pain, as if something is invading your mind!"))
+		L.Paralyse(2 SECONDS)
 
 /////////
 //lethals
