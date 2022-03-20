@@ -10,7 +10,7 @@
 /decl/hierarchy/outfit/job/torch/crew
 	name = OUTFIT_JOB_NAME("Torch Crew Outfit")
 	hierarchy_type = /decl/hierarchy/outfit/job/torch/crew
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary
+	uniform = /obj/item/clothing/under/solgov/utility/fleet
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /decl/hierarchy/outfit/job/torch/crew/fleet

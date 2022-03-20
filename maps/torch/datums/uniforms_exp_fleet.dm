@@ -1,5 +1,6 @@
 // For alternative fleet uniform
-
+// edited out in removal of NTEF
+/*
 /decl/hierarchy/mil_uniform
 	var/pt_under_alt = null
 	var/pt_shoes_alt = null
@@ -901,3 +902,4 @@
 						 /obj/item/clothing/suit/storage/hooded/wintercoat/solgov,
 						 /obj/item/clothing/suit/storage/toggle/labcoat/science/ec,
 						 /obj/item/clothing/suit/storage/toggle/labcoat/rd/ec)
+/*

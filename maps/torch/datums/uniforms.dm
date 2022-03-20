@@ -57,7 +57,7 @@
 
 	dress_extra = list(/obj/item/clothing/accessory/solgov/ec_scarf)
 
-// Commented out because it overrides modular's uniform system in some places.
+//commented out for stability
 /*
 /decl/hierarchy/mil_uniform/fleet
 	name = "Master fleet outfit"
