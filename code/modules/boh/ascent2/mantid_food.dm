@@ -8,8 +8,7 @@
 	icon_state = "nutrient_cube"
 	reagents_to_add = list(
 		/datum/reagent/nutriment = 5,
-		/datum/reagent/nutriment/protein = 5,
-		/datum/reagent/creth = 0.1
+		/datum/reagent/nutriment/protein = 5
 	)
 	bitesize = 10
 
