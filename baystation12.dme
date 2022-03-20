@@ -3372,6 +3372,7 @@
 #include "maps\bearcat\bearcat_define.dm"
 #include "maps\example\example_define.dm"
 #include "maps\random_ruins\exoplanet_ruins\exoplanet_ruins.dm"
+#include "maps\random_ruins\exoplanet_ruins\blue_puddle\blue_puddle.dm"
 #include "maps\random_ruins\exoplanet_ruins\c_fighter\c_fighter.dm"
 #include "maps\random_ruins\exoplanet_ruins\crashed_pod\crashed_pod.dm"
 #include "maps\random_ruins\exoplanet_ruins\datacapsule\datacapsule.dm"
