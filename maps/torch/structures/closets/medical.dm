@@ -75,7 +75,7 @@
 		/obj/item/device/radio/headset/headset_med,
 		/obj/item/device/radio/headset/headset_med/alt,
 		/obj/item/taperoll/medical,
-		/obj/item/weapon/storage/belt/medical,
+		/obj/item/weapon/storage/belt/medical/full,
 		/obj/item/clothing/mask/surgical,
 		/obj/item/device/scanner/health,
 		/obj/item/clothing/accessory/stethoscope,
@@ -104,7 +104,7 @@
 		/obj/item/device/radio/headset/headset_med,
 		/obj/item/device/radio/headset/headset_corpsman/alt,
 		/obj/item/taperoll/medical,
-		/obj/item/weapon/storage/belt/medical/emt,
+		/obj/item/weapon/storage/belt/medical/emt/full,
 		/obj/item/clothing/mask/gas/half,
 		/obj/item/weapon/tank/emergency/oxygen/engi,
 		/obj/item/weapon/storage/box/autoinjectors,
@@ -114,6 +114,7 @@
 		/obj/item/clothing/suit/storage/medical_chest_rig,
 		/obj/item/clothing/head/hardhat/EMS,
 		/obj/item/weapon/material/knife/folding/swiss,
+		/obj/item/roller,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/medic, /obj/item/weapon/storage/backpack/satchel/med)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/med, /obj/item/weapon/storage/backpack/messenger/med))
 	)

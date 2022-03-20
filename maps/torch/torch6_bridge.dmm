@@ -12357,10 +12357,10 @@
 /obj/structure/table/rack,
 /obj/structure/window/reinforced,
 /obj/machinery/door/window/brigdoor/westright{
+	autoset_access = 0;
 	dir = 8;
 	name = "CE's Equipment Storage";
-	req_access = list("ACCESS_CHIEF_ENGINEER");
-	autoset_access = 0
+	req_access = list("ACCESS_CHIEF_ENGINEER")
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced{
@@ -19191,6 +19191,10 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/turretid/tur_ID/dagon{
+	pixel_x = -32;
+	pixel_y = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
