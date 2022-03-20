@@ -1,0 +1,22 @@
+"a" = (/turf/unsimulated/floor/bluespace,/area/template_noop)
+"t" = (/obj/machinery/artifact,/turf/simulated/floor/fixed/alium/ruin,/area/template_noop)
+"x" = (/turf/simulated/floor/fixed/alium/ruin,/area/template_noop)
+"y" = (/obj/item/remains/xeno/charred,/turf/template_noop,/area/template_noop)
+"A" = (/obj/effect/landmark/clear,/turf/template_noop,/area/template_noop)
+"D" = (/turf/template_noop,/area/template_noop)
+"U" = (/obj/effect/landmark/clear,/obj/effect/landmark/clear,/turf/template_noop,/area/template_noop)
+
+(1,1,1) = {"
+aaAADaaAAADD
+aaaAAaaAaaaD
+AaaaAaAAaaaA
+AAaaAAAaaaAA
+AaaaAAaaaAAA
+AaaaAxyaaAAa
+AaaDxtxDaAaa
+AAAADxDAAAaa
+AaaaAAaaaAUa
+AaaaAAaaaaAA
+AaaAAAAaaaaA
+AaADaaADDaaD
+"}
