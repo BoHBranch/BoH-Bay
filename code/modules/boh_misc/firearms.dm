@@ -10,6 +10,7 @@
 	jam_chance = 5 //Cheap firearm. Chance of jamming
 	fire_delay = 2 // Fires faster than usual
 	damage_mult = 0.9 // Damages a bit less than peers.
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_ESOTERIC = -1) //bandaid fix to prevent r&d from getting free esoterics
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar/cabinet
 	starts_loaded = 0
@@ -334,3 +335,13 @@
 		list(mode_name="3-round bursts",  automatic = FALSE, burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=4, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
 		list(mode_name="automatic",  automatic = TRUE, burst=1, fire_delay = 2, move_delay=4,    one_hand_penalty=5, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
 		)
+
+/////////
+// Energy "Primary"
+/////////
+
+/obj/item/weapon/gun/energy/gun/small/secure/sec
+	name = "Beagle Mk-4"
+	desc = "Inspired by the SCG's desire to save money, This modified Lawson arms Design gives forces the benefits of weak lasers and command overreach, without expensive ideas such as automatic recharge."
+	max_shots = 5
+	self_recharge = 0

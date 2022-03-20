@@ -117,6 +117,7 @@ meteor_act
 	var/obj/item/projectile/P = damage_source
 	if(istype(P) && !P.disrupts_psionics() && psi && P.starting && prob(psi.get_armour(get_armor_key(P.damage_type, P.damage_flags())) * 0.5) && psi.spend_power(round(damage/10)))
 		visible_message("<span class='danger'>\The [src] deflects [attack_text]!</span>")
+		playsound(src.loc, 'sound/weapons/parry/parry_psi.ogg', 50, 1)
 		P.redirect(P.starting.x + rand(-2,2), P.starting.y + rand(-2,2), get_turf(src), src)
 		return PROJECTILE_FORCE_MISS
 
@@ -294,6 +295,7 @@ meteor_act
 				if(isturf(O.loc))
 					put_in_active_hand(O)
 					visible_message("<span class='warning'>[src] catches [O]!</span>")
+					playsound(src.loc, 'sound/weapons/parry/parry_gen.ogg', 50, 1)
 					throw_mode_off()
 					return
 

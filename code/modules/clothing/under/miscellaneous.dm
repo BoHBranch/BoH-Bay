@@ -767,3 +767,10 @@
 		rad = ARMOR_RAD_SMALL
 		)
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE //I still want some heat protection but this should be better balanced(?)
+
+/obj/item/clothing/under/skrelljumpsuit/onship
+	name = "skrellian jumpsuit"
+	desc = "A sleek, skin-tight bodysuit designed to not wick moisture away from the body. The inner stitching appears to contain something written in Skrellian."
+	icon_state = "skrell_suit"
+	item_state = "skrell_suit"
+	worn_state = "skrell_suit"

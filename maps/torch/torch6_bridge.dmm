@@ -6352,9 +6352,10 @@
 	pixel_x = 26
 	},
 /obj/effect/floor_decal/industrial/outline/orange,
-/obj/machinery/atmospherics/unary/tank/carbon_dioxide{
+/obj/machinery/atmospherics/portables_connector{
 	dir = 8
 	},
+/obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup,
 /turf/simulated/floor/tiled/techfloor,
 /area/aquila/medical)
 "kC" = (
@@ -11679,9 +11680,8 @@
 "tc" = (
 /obj/structure/catwalk,
 /obj/machinery/meter,
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	dir = 6;
-	icon_state = "intact"
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
+	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/aquila/maintenance)
@@ -18732,6 +18732,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
+/obj/structure/handrai,
 /turf/simulated/floor/tiled/techfloor,
 /area/aquila/maintenance)
 "Vc" = (
@@ -19123,7 +19124,6 @@
 	dir = 1;
 	icon_state = "warningcorner"
 	},
-/obj/structure/handrai,
 /obj/machinery/firealarm{
 	dir = 2;
 	pixel_y = 24
@@ -19131,6 +19131,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/atmospherics/unary/tank/carbon_dioxide,
 /turf/simulated/floor/tiled/techfloor,
 /area/aquila/maintenance)
 "Xe" = (

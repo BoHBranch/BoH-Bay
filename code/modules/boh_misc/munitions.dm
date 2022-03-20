@@ -10,6 +10,7 @@
 	icon_state = "bdshell"
 	spent_icon = "bdshell-spent"
 	projectile_type = /obj/item/projectile/bullet/pellet/birdshot
+	ammo_stack = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/birdshot/two
 	matter = list(MATERIAL_STEEL = 80)
 
 //projectile
@@ -162,6 +163,7 @@
 	spent_icon = "sabshell-spent"
 	caliber = CALIBER_SABOT
 	projectile_type = /obj/item/projectile/bullet/sabot
+	ammo_stack = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/sabot/two
 	matter = list(MATERIAL_STEEL = 420)
 
 //projectile

@@ -46,6 +46,7 @@
 		/datum/mil_rank/fleet/e4
 	)
 	max_pow_cat = 1
+	max_cit_rank = 1
 	min_skill = list(   SKILL_HAULING = SKILL_BASIC)
 
 	access = list(access_maint_tunnels, access_emergency_storage, access_janitor, access_solgov_crew, access_hangar)

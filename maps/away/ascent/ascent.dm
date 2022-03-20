@@ -15,6 +15,9 @@
 		/datum/shuttle/autodock/overmap/ascent,
 		/datum/shuttle/autodock/overmap/ascent/two
 	)
+	area_coherency_test_subarea_count = list(
+		/area/ship/ascent/bridge = 14
+	)
 
 // Overmap objects.
 /obj/effect/overmap/visitable/ship/ascent_seedship

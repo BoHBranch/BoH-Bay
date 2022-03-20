@@ -85,7 +85,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor/autoset,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/cargo)
 "ak" = (
 /obj/effect/floor_decal/corner/white/border{
@@ -106,12 +106,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/computer/mining{
-	density = 0;
-	pixel_y = 30
-	},
 /obj/machinery/mineral/unloading_machine{
-	output_turf = 0
+	output_turf = 0;
+	input_turf = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/rawl/cargo)
@@ -133,7 +130,7 @@
 	dir = 4;
 	pixel_z = 0
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "an" = (
 /obj/machinery/atmospherics/unary/engine{
@@ -188,12 +185,12 @@
 /turf/simulated/floor/airless,
 /area/ship/rawl/crew)
 "as" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	dir = 4
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "at" = (
 /obj/machinery/computer/cryopod{
@@ -209,25 +206,24 @@
 	dir = 4
 	},
 /obj/machinery/portable_atmospherics/powered/pump/filled,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "av" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
-	dir = 1;
-	icon_state = "map"
-	},
 /obj/structure/fuel_port{
 	pixel_x = 0;
 	pixel_y = 32
 	},
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/pipe/manifold/visible/fuel{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "aw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
 /obj/machinery/portable_atmospherics/canister/hydrogen,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "ax" = (
 /obj/structure/cable{
@@ -243,7 +239,8 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "ay" = (
 /obj/structure/table/rack,
@@ -261,9 +258,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/rawl/fore)
 "az" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
-	dir = 4
-	},
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	frequency = 1331;
 	id_tag = "rawl_ship_dock";
@@ -274,7 +268,10 @@
 	dir = 8;
 	icon_state = "handrail"
 	},
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/pipe/manifold/visible/fuel{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "aA" = (
 /obj/machinery/power/smes/buildable/preset/rawl/smes{
@@ -284,16 +281,17 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "aB" = (
 /obj/machinery/atmospherics/binary/pump{
-	dir = 4
+	dir = 4;
+	name = "Fuel Input"
 	},
 /obj/structure/closet/hydrant{
 	pixel_y = 32
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "aC" = (
 /obj/structure/table/standard,
@@ -337,7 +335,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "aG" = (
 /obj/machinery/atmospherics/unary/tank/carbon_dioxide{
@@ -420,6 +418,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/computer/mining{
+	density = 0;
+	pixel_y = 30;
+	pixel_x = -28
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/rawl/cargo)
 "aN" = (
@@ -434,18 +437,17 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "aO" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 1;
-	icon_state = "map"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
 	pixel_y = 0
 	},
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "aP" = (
 /obj/structure/curtain/open/privacy,
@@ -467,7 +469,7 @@
 	in_use = 0;
 	name = "Air to Main Airlock"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "aR" = (
 /obj/structure/cable{
@@ -486,9 +488,10 @@
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4;
-	icon_state = "map_connector"
+	icon_state = "map_connector";
+	name = "Waste Port"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "aS" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -503,15 +506,15 @@
 /turf/simulated/floor/tiled,
 /area/ship/rawl/crew)
 "aT" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 4
-	},
 /obj/machinery/alarm/rawl{
 	dir = 8;
 	pixel_x = 24;
 	pixel_y = 0
 	},
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "aU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -628,8 +631,9 @@
 	locked = 1;
 	name = "Rawl Docking Port"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 4;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/plating,
 /area/ship/rawl/pipeworks)
@@ -643,7 +647,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "bf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
@@ -652,7 +656,7 @@
 	dir = 8;
 	name = "Docking Port Air Cutoff"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "bg" = (
 /obj/effect/paint/brown,
@@ -670,7 +674,7 @@
 /obj/machinery/portable_atmospherics/canister/air/airlock{
 	start_pressure = 607.95
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "bi" = (
 /obj/machinery/atmospherics/unary/tank/air{
@@ -701,7 +705,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "bm" = (
 /obj/structure/table/rack,
@@ -902,7 +906,7 @@
 /obj/machinery/portable_atmospherics/canister/air/airlock{
 	start_pressure = 1900
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "bL" = (
 /obj/structure/cable{
@@ -920,8 +924,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/atmospherics/portables_connector,
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/portables_connector{
+	name = "Air"
+	},
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "bN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -936,6 +942,9 @@
 	dir = 8
 	},
 /obj/effect/submap_landmark/joinable_submap/rawl,
+/obj/effect/floor_decal/industrial/loading{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/rawl/cargo)
 "bP" = (
@@ -966,7 +975,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "bT" = (
 /obj/item/weapon/stool/padded,
@@ -1082,7 +1091,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "ch" = (
 /obj/machinery/computer/ship/sensors{
@@ -1217,8 +1226,8 @@
 /turf/simulated/floor/airless,
 /area/ship/rawl/fore)
 "cx" = (
-/obj/machinery/atmospherics/pipe/manifold4w/hidden,
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/pipe/manifold4w/visible,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "cy" = (
 /obj/machinery/atmospherics/binary/pump{
@@ -1232,7 +1241,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "cz" = (
 /obj/structure/cable{
@@ -1242,7 +1251,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/techmaint,
 /area/ship/rawl/pipeworks)
 "cA" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{

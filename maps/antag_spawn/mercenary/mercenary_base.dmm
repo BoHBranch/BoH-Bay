@@ -2092,6 +2092,12 @@
 	icon_state = "railing0-1";
 	dir = 1
 	},
+/obj/item/clothing/glasses/sunglasses/prescription,
+/obj/item/clothing/glasses/sunglasses/prescription,
+/obj/item/clothing/glasses/sunglasses/prescription,
+/obj/item/clothing/glasses/sunglasses/prescription,
+/obj/item/clothing/glasses/sunglasses/prescription,
+/obj/item/clothing/glasses/sunglasses/prescription,
 /turf/simulated/floor/plating,
 /area/map_template/merc_spawn)
 "dP" = (

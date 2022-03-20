@@ -6,10 +6,10 @@
  * BASE TYPE
  */
 /obj/item/weapon/rig/command
-	name = "command HCM"
+	name = "command hardsuit control module"
 	suit_type = "command hardsuit"
 	icon = 'maps/torch/icons/obj/uniques.dmi'
-	desc = "A specialized hardsuit rig control module issued to command staff of the SolGov Fleet and their peers."
+	desc = "A specialized hardsuit control module issued to command staff of the SolGov Fleet and their peers."
 	icon_state = "command_rig"
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
@@ -73,10 +73,10 @@
 * SEA
 */
 /obj/item/weapon/rig/command/sea
-	name = "Senior NCO HCM"
+	name = "Senior NCO hardsuit control module"
 	suit_type = "command hardsuit"
 	icon = 'maps/torch/icons/obj/uniques.dmi'
-	desc = "A specialized hardsuit rig control module issued to senior NCOs of the SolGov Fleet and their peers."
+	desc = "A specialized hardsuit control module issued to senior NCOs of the SolGov Fleet and their peers."
 	icon_state = "sea_rig"
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
@@ -140,9 +140,9 @@
  * EXECUTIVE OFFICER
  */
 /obj/item/weapon/rig/command/xo
-	name = "officer's command HCM"
+	name = "officer's command hardsuit control module"
 	suit_type = "advanced command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to high ranking officers of the SolGov Fleet and their peers."
+	desc = "A specialized hardsuit control module issued to high ranking officers of the SolGov Fleet and their peers."
 	icon_state = "command_XO_rig"
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
@@ -180,9 +180,9 @@
  * COMMANDING OFFICER
  */
 /obj/item/weapon/rig/command/co
-	name = "commanding officer's command HCM"
+	name = "commanding officer's command hardsuit control module"
 	suit_type = "advanced command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to commanding officers of the SolGov Fleet."
+	desc = "A specialized hardsuit control module issued to commanding officers of the SolGov Fleet."
 	icon_state = "command_CO_rig"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
@@ -221,9 +221,9 @@
  * CHIEF MEDICAL OFFICER
  */
 /obj/item/weapon/rig/command/medical
-	name = "medical command HCM"
+	name = "medical command hardsuit control module"
 	suit_type = "medical command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to ranking medical officers of the SolGov Fleet and their peers."
+	desc = "A specialized hardsuit control module issued to ranking medical officers of the SolGov Fleet and their peers."
 	icon_state = "command_med_rig"
 
 	chest_type = /obj/item/clothing/suit/space/rig/command/medical
@@ -264,9 +264,9 @@
 * CHIEF OF SECURITY
 */
 /obj/item/weapon/rig/command/security
-	name = "security command HCM"
+	name = "security command hardsuit control module"
 	suit_type = "security command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to ranking security officers of the SolGov Fleet or Marines and their peers."
+	desc = "A specialized hardsuit control module issued to ranking security officers of the SolGov Fleet or Marines and their peers."
 	icon_state = "command_sec_rig"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
@@ -311,9 +311,9 @@
 * CHIEF SCIENCE OFFICER
 */
 /obj/item/weapon/rig/command/science
-	name = "research command HCM"
+	name = "research command hardsuit control module"
 	suit_type = "research command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to ranking research officers of the SolGov Fleet."
+	desc = "A specialized hardsuit control module issued to ranking research officers of the SolGov Fleet."
 	icon_state = "command_sci_rig"
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
@@ -372,7 +372,7 @@
 * EXPLORATION
 */
 /obj/item/weapon/rig/exploration
-	name = "heavy exploration HCM"
+	name = "heavy exploration hardsuit control module"
 	suit_type = "heavy exploration hardsuit"
 	icon = 'maps/torch/icons/obj/uniques.dmi'
 	desc = "Odyssey' Exoplanet Exploration Armored Unit, A-Unit for short. Built for more hostile (and hungry) environments, it features additional armor and powered exoskeleton."

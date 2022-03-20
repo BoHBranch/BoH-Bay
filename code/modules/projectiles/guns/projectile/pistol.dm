@@ -39,6 +39,7 @@
 	ammo_indicator = TRUE
 
 /obj/item/weapon/gun/projectile/pistol/military/alt
+	name = "HelTek Optimus"
 	desc = "The HelTek Optimus, best known as the standard-issue sidearm for the ICCG Navy."
 	icon = 'icons/obj/guns/military_pistol2.dmi'
 	icon_state = "military-alt"

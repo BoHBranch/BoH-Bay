@@ -470,7 +470,7 @@
 
 /obj/item/weapon/storage/belt/holster/security/tactical/Initialize()
 	.=..()
-	slowdown_per_slot[slot_belt] = 1
+	slowdown_per_slot[slot_belt] = 0.2
 
 /obj/item/weapon/storage/belt/waistpack
 	name = "waist pack"

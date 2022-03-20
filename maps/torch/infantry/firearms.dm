@@ -99,14 +99,19 @@
 // Pistol
 /////////
 /obj/item/weapon/gun/projectile/pistol/military/sec
-	name = "P10"
-	desc = "The Hephaestus Industries P10 - a mass produced kinetic sidearm in widespread service with the SCGDF. It has a slide restrictor, preventing quick-draw type shooting."
-	fire_delay = 12
-//	req_access = list(access_hop)
-//	authorized_modes = list(UNAUTHORIZED)
-	firemodes = list(
-		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
-		)
+	name = "Hephaestus P10"
+	desc = "The Hephaestus Industries P10 - a mass produced kinetic sidearm in widespread service with the SCGDF. A slide restrictor is integrated into the handgun to prevent\
+	quick-draw type shooting. A reliable sidearm in the hands of even the most novice of soldiers."
+	magazine_type = /obj/item/ammo_magazine/pistol/double
+	allowed_magazines = /obj/item/ammo_magazine/pistol/double
+	icon = 'icons/obj/guns/military_pistol.dmi'
+	fire_sound = 'sound/weapons/gunshot/pistol_p20.ogg'
+	icon_state = "military"
+	item_state = "secgundark"
+	safety_icon = "safety"
+	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
+	fire_delay = 5
+	ammo_indicator = TRUE
 
 /////////
 // LMG

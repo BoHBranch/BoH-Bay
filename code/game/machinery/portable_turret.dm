@@ -106,7 +106,7 @@
 	hitchance_mod = 100 //this and dispersion likely isn't needed, but, whatever
 	distance_falloff = 0.25
 	dispersion = 0
-	
+
 /obj/machinery/porta_turret/mantid
 	name = "Anti-personnel battery"
 	desc = "A sleek, menacing turret of Ascent origin."
@@ -134,7 +134,7 @@
 
 /obj/item/projectile/beam/pulse/skrell/heavy/turret
 	hitchance_mod = 100 //this and dispersion likely isn't needed, but, whatever
-	distance_falloff = 0.25
+	distance_falloff = 0
 	dispersion = 0
 
 /obj/machinery/porta_turret/ssv/vox

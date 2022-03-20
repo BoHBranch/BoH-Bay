@@ -684,6 +684,15 @@
 	icon_state = "spiderling";
 	name = "dead spider"
 	},
+/obj/structure/table/rack/shelf,
+/obj/item/clothing/glasses/prescription,
+/obj/item/clothing/glasses/prescription,
+/obj/item/clothing/glasses/prescription,
+/obj/item/clothing/glasses/sunglasses/prescription,
+/obj/item/clothing/glasses/sunglasses/prescription,
+/obj/item/clothing/glasses/sunglasses/prescription,
+/obj/item/clothing/glasses/prescription/hipster,
+/obj/item/clothing/glasses/prescription/hipster,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},

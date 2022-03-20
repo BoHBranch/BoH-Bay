@@ -4352,8 +4352,9 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
 "mg" = (
-/turf/space,
-/area/ship/ascent/fore_starboard_jut)
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/bridge)
 "mn" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -4454,6 +4455,9 @@
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
+"pw" = (
+/turf/simulated/floor/reinforced/airless,
+/area/space)
 "py" = (
 /obj/machinery/door/airlock/ascent,
 /obj/effect/catwalk_plated/ascent,
@@ -4475,8 +4479,11 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_port)
 "qc" = (
-/turf/space,
-/area/ship/ascent/aft_starboard_jut)
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent{
+	initial_gas = newlist()
+	},
+/area/ship/ascent/shuttle_port)
 "qG" = (
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
@@ -4696,6 +4703,10 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
+"AJ" = (
+/obj/machinery/turretid/ascent,
+/turf/simulated/wall/ascent,
+/area/ship/ascent/bridge)
 "BX" = (
 /turf/simulated/wall/r_wall/ascent,
 /area/ship/ascent/engineering)
@@ -4785,6 +4796,7 @@
 /obj/structure/window/phoronreinforced{
 	dir = 4
 	},
+/obj/machinery/porta_turret/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
 "Gl" = (
@@ -4816,6 +4828,7 @@
 	dir = 8
 	},
 /obj/structure/window/phoronreinforced,
+/obj/machinery/porta_turret/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
 "If" = (
@@ -7998,6 +8011,7 @@ aa
 aa
 aa
 aa
+mg
 aa
 aa
 aa
@@ -8009,8 +8023,7 @@ aa
 aa
 aa
 aa
-aa
-aa
+mg
 aa
 aa
 aa
@@ -9834,7 +9847,7 @@ jT
 jT
 jT
 aa
-aa
+mg
 aa
 jT
 jT
@@ -10699,7 +10712,7 @@ cv
 hK
 cy
 cy
-aa
+mg
 aa
 aa
 aa
@@ -10798,7 +10811,7 @@ aa
 aa
 aa
 aa
-mg
+aa
 ac
 ac
 ah
@@ -11064,7 +11077,7 @@ cv
 hc
 hY
 dT
-aa
+pw
 cN
 cN
 cN
@@ -11186,7 +11199,7 @@ cv
 hc
 hZ
 dT
-aa
+pw
 ik
 WI
 cN
@@ -11281,7 +11294,7 @@ aa
 aa
 aa
 aa
-aa
+mg
 ac
 ac
 ac
@@ -11308,7 +11321,7 @@ cv
 hc
 ic
 dT
-aa
+pw
 ik
 WI
 VB
@@ -11430,7 +11443,7 @@ cv
 hK
 cy
 cy
-aa
+pw
 cN
 WI
 cQ
@@ -11552,7 +11565,7 @@ cv
 hc
 ic
 dT
-aa
+pw
 cN
 je
 cQ
@@ -11674,7 +11687,7 @@ cv
 hc
 hY
 dT
-aa
+pw
 cN
 WI
 Xp
@@ -11796,7 +11809,7 @@ cv
 hc
 hZ
 dT
-aa
+pw
 ik
 eT
 fq
@@ -11889,9 +11902,9 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
+pw
+pw
+pw
 qG
 qG
 qG
@@ -11918,7 +11931,7 @@ cv
 hK
 cy
 cy
-aa
+mg
 ik
 WI
 fr
@@ -12040,7 +12053,7 @@ cv
 hc
 gW
 dT
-aa
+pw
 ik
 iM
 fs
@@ -12049,7 +12062,7 @@ iS
 gT
 cN
 cN
-XM
+qc
 aa
 aa
 aa
@@ -12264,7 +12277,7 @@ MY
 ab
 ab
 Qz
-qG
+mg
 ah
 as
 as
@@ -12416,7 +12429,7 @@ bs
 cQ
 zf
 cN
-XM
+qc
 iX
 cN
 aa
@@ -13026,7 +13039,7 @@ cQ
 cQ
 zf
 cN
-XM
+qc
 XM
 cN
 aa
@@ -13240,7 +13253,7 @@ Nv
 ab
 ab
 Qz
-na
+mg
 ag
 an
 fW
@@ -13382,7 +13395,7 @@ aN
 dU
 ak
 eG
-aa
+pw
 ik
 iP
 gu
@@ -13391,7 +13404,7 @@ jc
 jl
 cN
 cN
-XM
+qc
 aa
 aa
 aa
@@ -13504,7 +13517,7 @@ bA
 dW
 ca
 eG
-aa
+pw
 ik
 Qm
 iw
@@ -13597,9 +13610,9 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
+pw
+pw
+pw
 na
 na
 na
@@ -13626,7 +13639,7 @@ bA
 bI
 ak
 eG
-aa
+pw
 ik
 oU
 gw
@@ -13748,7 +13761,7 @@ bA
 cj
 ag
 ag
-aa
+mg
 cN
 ja
 gD
@@ -13870,7 +13883,7 @@ ek
 bI
 da
 ag
-aa
+pw
 cN
 jb
 cQ
@@ -13992,7 +14005,7 @@ en
 bI
 dd
 ag
-aa
+pw
 cN
 Qy
 cQ
@@ -14102,7 +14115,7 @@ bS
 hO
 jA
 bA
-bA
+AJ
 cU
 cU
 cU
@@ -14114,7 +14127,7 @@ ch
 bI
 eL
 eG
-aa
+pw
 ik
 WI
 cQ
@@ -14209,7 +14222,7 @@ aa
 aa
 aa
 aa
-aa
+mg
 aj
 aj
 aj
@@ -14236,7 +14249,7 @@ dO
 bI
 eK
 eG
-aa
+pw
 ik
 WI
 cN
@@ -14333,7 +14346,7 @@ aa
 aa
 aa
 aa
-qc
+aa
 XG
 FO
 tr
@@ -14358,7 +14371,7 @@ dQ
 dR
 ee
 ag
-aa
+pw
 cN
 cN
 cN
