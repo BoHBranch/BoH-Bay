@@ -72,6 +72,9 @@
 /obj/item/weapon/reagent_containers/food/drinks/glass2/coffeecup/tall{
 	desc = "How the Pathfinder keeps up with the Marine bullshit."
 	},
+/obj/item/device/scanner/xenobio,
+/obj/item/device/scanner/plant,
+/obj/item/device/scanner/mining,
 /turf/simulated/floor/tiled/monotile,
 /area/command/pathfinder)
 "aq" = (
@@ -6299,6 +6302,9 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/command/pathfinder)
 "lW" = (
@@ -6308,7 +6314,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/item/weapon/book/manual/military_law,
+/obj/item/weapon/stamp/path,
 /turf/simulated/floor/tiled,
 /area/command/pathfinder)
 "lX" = (
