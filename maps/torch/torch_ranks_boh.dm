@@ -91,7 +91,7 @@
 		/datum/species/humanathi	= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
 		/datum/species/tajaran		= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/solgov),
  		/datum/species/shapeshifter/promethean	= list(UNRESTRICTED, /datum/mil_branch/solgov, /datum/mil_branch/private_security),
-		/datum/species/plasmasans	= list(/datum/mil_branch/civilian, /datum/mil_branch/solgov),
+		/datum/species/plasmasans	= list(UNRESTRICTED, SEMIRESTRICTED, /datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/private_security),
 		/datum/species/vox			= list(/datum/mil_branch/alien, /datum/mil_branch/civilian, /datum/mil_branch/private_security),
 		/datum/species/vox/armalis	= list(/datum/mil_branch/alien)
 	)
