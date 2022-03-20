@@ -1121,7 +1121,7 @@
 	req_access = list(access_surgery)
 
 /area/medical/virology
-	name = "\improper Virology (decomissioned)"
+	name = "\improper Virology"
 
 /area/crew_quarters/safe_room/medical
 	name = "\improper Medical Safe Room"

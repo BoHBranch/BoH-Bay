@@ -89,7 +89,7 @@
 	if(blood_type)
 		name = "blood pack [blood_type]"
 		reagents_to_add = list(/datum/reagent/blood = volume)
-		reagent_data = list(/datum/reagent/blood = list("donor" = null, "blood_DNA" = null, "blood_type" = blood_type, "trace_chem" = null))
+		reagent_data = list(/datum/reagent/blood = list("donor" = null, "blood_DNA" = null, "blood_type" = blood_type, "trace_chem" = null, "virus2" = list(), "antibodies" = list()))
 	. = ..()
 
 /obj/item/weapon/reagent_containers/ivbag/blood/APlus

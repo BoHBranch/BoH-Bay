@@ -5,6 +5,7 @@
 	icon = 'icons/mob/screen1.dmi'
 	icon_state = "x3"
 	var/sparks = 0 //whether sparks spread on Gib()
+	var/virusProb = 20 //the chance for viruses to spread on the gibs
 	var/list/gibtypes = list()
 	var/list/gibamounts = list()
 	var/list/gibdirections = list() //of lists
