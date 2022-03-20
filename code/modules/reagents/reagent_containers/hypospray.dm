@@ -15,13 +15,25 @@
 	possible_transfer_amounts = null
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER
 	slot_flags = SLOT_BELT
+	var/htime = 1
 
-/obj/item/weapon/reagent_containers/hypospray/attack(mob/living/M, mob/user)
+/obj/item/weapon/reagent_containers/hypospray/attack(var/mob/living/M, var/mob/user, var/atom/trackM)
 	if(!reagents.total_volume)
 		to_chat(user, "<span class='warning'>[src] is empty.</span>")
 		return
 	if (!istype(M))
 		return
+	
+	if(M != user)
+		var/injtime = htime //Injecting through a hardsuit takes longer due to needing to find a port.
+		var/allow = M.can_inject(user, check_zone(user.zone_sel.selecting))
+		if(!allow)
+			return
+		if(allow == INJECTION_PORT)
+			injtime *= 2
+			user.visible_message("<span class='warning'>\The [user] begins hunting for an injection port on [M]'s suit!</span>")
+		else
+			user.visible_message("<span class='warning'>\The [user] is trying to inject [M] with [src]!</span>")
 
 	var/mob/living/carbon/human/H = M
 	if(istype(H))
@@ -47,7 +59,6 @@
 		to_chat(user, "<span class='notice'>[trans] units injected. [reagents.total_volume] units remaining in \the [src].</span>")
 
 	return
-
 /obj/item/weapon/reagent_containers/hypospray/vial
 	name = "hypospray"
 	item_state = "autoinjector"
@@ -109,10 +120,10 @@
 		return
 	..()
 
-/obj/item/weapon/reagent_containers/hypospray/vial/afterattack(obj/target, mob/user, proximity) // hyposprays can be dumped into, why not out? uses standard_pour_into helper checks.
+/obj/item/weapon/reagent_containers/hypospray/vial/afterattack(obj/M, mob/user, proximity) // hyposprays can be dumped into, why not out? uses standard_pour_into helper checks.
 	if(!proximity)
 		return
-	standard_pour_into(user, target)
+	standard_pour_into(user, M)
 
 /obj/item/weapon/reagent_containers/hypospray/autoinjector
 	name = "autoinjector"
