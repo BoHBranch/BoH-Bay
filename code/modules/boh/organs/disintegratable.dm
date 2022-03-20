@@ -7,7 +7,6 @@
  * 	can_disintegrate is defined in this file returns 1 by default
  *
  * 	Currently used mainly to nerf disintegration of certain essential player organs like;
- *		* Neural lace					(modules/organs/internal/stack.dm)
  *		* MMI holders for FBPs			(modules/organs/internal/species/fbp.dm)
  *		* Synthetic brains for IPCs		(modules/organs/internal/species/ipc.dm)
  *
@@ -53,9 +52,6 @@
 	return ESSENTIAL_ORGAN_DISINTEGRATABLE
 
 /obj/item/organ/internal/mmi_holder/can_disintegrate()
-	return ESSENTIAL_ORGAN_DISINTEGRATABLE
-
-/obj/item/organ/internal/stack/can_disintegrate()
 	return ESSENTIAL_ORGAN_DISINTEGRATABLE
 
 #undef ESSENTIAL_ORGAN_DISINTEGRATABLE
