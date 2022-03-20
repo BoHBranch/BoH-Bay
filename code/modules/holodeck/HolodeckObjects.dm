@@ -230,6 +230,7 @@
 	w_class = ITEM_SIZE_SMALL
 	atom_flags = ATOM_FLAG_NO_TEMP_CHANGE | ATOM_FLAG_NO_BLOOD
 	base_parry_chance = 40
+	parrysound = 'sound/weapons/parry/parry_energy.ogg'
 	var/active = 0
 	var/item_color
 

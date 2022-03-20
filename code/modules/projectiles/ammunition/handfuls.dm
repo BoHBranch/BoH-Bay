@@ -137,6 +137,14 @@
 /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/beanbag/two
 	initial_ammo = 2
 
+/obj/item/ammo_magazine/handful/shotgun/shotgun_handful/birdshot
+	icon_state = "bdshell_handful"
+	ammo_type = /obj/item/ammo_casing/shotgun/birdshot
+
+/obj/item/ammo_magazine/handful/shotgun/shotgun_handful/birdshot/two
+	initial_ammo = 2
+
+
 // Handguns, low caliber.. Sticks?
 
 // 10mm.

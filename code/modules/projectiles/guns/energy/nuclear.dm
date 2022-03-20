@@ -30,6 +30,7 @@
 	one_hand_penalty = 1
 	self_recharge = 1
 	base_parry_chance = 20
+	parrysound = 'sound/weapons/parry/parry_wood.ogg'
 
 	projectile_type = /obj/item/projectile/beam/stun
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)

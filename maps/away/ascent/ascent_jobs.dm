@@ -16,7 +16,7 @@
 		//datum/job/submap/ascent/control_mind,
 		/datum/job/submap/ascent/msq,
 		/datum/job/submap/ascent/msw,
-		/datum/job/submap/tiro
+		/datum/job/submap/ascent/tiro
 	)
 	call_webhook = WEBHOOK_SUBMAP_LOADED_ASCENT
 
@@ -240,14 +240,16 @@
 	info = "You are a Monarch Serpentid Queen living on an independant Ascent vessel. Assist the Gyne in her duties and tend to your Workers."
 	set_species_on_join = SPECIES_MONARCH_QUEEN
 	outfit_type = /decl/hierarchy/outfit/job/monarch
-	min_skill = list(SKILL_EVA = SKILL_ADEPT,
-					SKILL_HAULING = SKILL_ADEPT,
-					SKILL_COMBAT = SKILL_ADEPT,
-					SKILL_WEAPONS = SKILL_ADEPT,
-					SKILL_MEDICAL = SKILL_BASIC)
+	skill_points = 26
+	min_skill = list(SKILL_EVA = SKILL_EXPERT,
+					SKILL_HAULING = SKILL_BASIC,
+					SKILL_MEDICAL = SKILL_EXPERT,
+					SKILL_ANATOMY = SKILL_EXPERT,
+					SKILL_CHEMISTRY = SKILL_ADEPT,
+					SKILL_WEAPONS = SKILL_ADEPT)
 	requires_supervisor = "Ascent Gyne"
 
-/datum/job/submap/tiro //We do this snowflake style because otherwise the species throws a fit. DO NOT SUBTYPE THIS TO ASCENT!!!!
+/datum/job/submap/ascent/tiro //We do this snowflake style because otherwise the species throws a fit. DO NOT SUBTYPE THIS TO ASCENT!!!!
 	title = "Ascent Tiro"
 	supervisors = "the Khaarmani."
 	total_positions = 2
@@ -255,25 +257,20 @@
 	As this is a roleplaying role, you will be expected to uphold a certain bare-minimum standard when playing. If you have devoted yourself to the role of Tiro enough to be considered a <b>Par</b> by the Ascent (and have accepted the equipment), \
 	please note that you will <u>be held to a higher standard</u> in regards to roleplay as them!"
 	outfit_type = /decl/hierarchy/outfit/job/tiro
-	blacklisted_species = list(SPECIES_VOXPARIAH, SPECIES_VOX, SPECIES_VOX_ARMALIS, SPECIES_ADHERENT)
+	blacklisted_species = list(SPECIES_VOXPARIAH, SPECIES_VOX, SPECIES_VOX_ARMALIS, SPECIES_ADHERENT, SPECIES_MULE)
 	whitelisted_species = null
 	loadout_allowed = TRUE
-	skill_points = 50 //Just *about* the # for a Roboticst at default, counting their preset skills. We have no min-skill level for this role since anyone could be deemed "interesting".
-	min_skill = list()
-	var/requires_supervisor = "Ascent Gyne"
+	skill_points = 34
+	min_skill = list(SKILL_EVA = SKILL_ADEPT,
+					SKILL_HAULING = SKILL_ADEPT,
+					SKILL_COMBAT = SKILL_BASIC,
+					SKILL_WEAPONS = SKILL_BASIC,
+					SKILL_MEDICAL = SKILL_BASIC,
+					SKILL_DEVICES = SKILL_BASIC)
+	requires_supervisor = "Ascent Gyne"
+	set_species_on_join = null
 
-/datum/job/submap/tiro/is_position_available()
-	..()
-	if(. && requires_supervisor)
-		for(var/mob/M in GLOB.player_list)
-			if(!M.client || !M.mind || !M.mind.assigned_job || M.mind.assigned_job.title != requires_supervisor)
-				continue
-			var/datum/job/submap/ascent/ascent_job = M.mind.assigned_job
-			if(istype(ascent_job) && ascent_job.owner == owner)
-				return TRUE
-		return FALSE
-
-/datum/job/submap/tiro/equip(var/mob/living/carbon/human/H) //You have no FFFFUCKING idea how happy I am that this works now FUCK
+/datum/job/submap/ascent/tiro/equip(var/mob/living/carbon/human/H) //You have no FFFFUCKING idea how happy I am that this works now FUCK
 	..()
 	qdel(H.internal_organs_by_name[BP_LUNGS]) //Delete the old lungs
 	H.internal_organs_by_name[BP_LUNGS] = new /obj/item/organ/internal/lungs/tirolungs //Install new ones

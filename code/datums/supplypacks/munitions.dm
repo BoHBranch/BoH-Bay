@@ -46,3 +46,54 @@
 	name = "OFD-Launched Drop Pod"
 	contains = list(/obj/structure/closet/odst)
 	cost = 30
+
+/decl/hierarchy/supply_pack/munition/missilecasing
+	name = "Missile Casing - Empty"
+	contains = list(/obj/structure/missile)
+	cost = 75
+
+/decl/hierarchy/supply_pack/munition/missilethruster
+	name = "Missile Thrusters - Standard"
+	contains = list(/obj/item/missile_equipment/thruster = 5)
+	cost = 40
+
+/decl/hierarchy/supply_pack/munition/missilethrusterpoint
+	name = "Missile Thrusters - Point"
+	contains = list(/obj/item/missile_equipment/thruster/point = 5)
+	cost = 35
+
+/decl/hierarchy/supply_pack/munition/missilethrusterplanet
+	name = "Missile Thrusters - Planet"
+	contains = list(/obj/item/missile_equipment/thruster/planet = 5)
+	cost = 40
+
+/decl/hierarchy/supply_pack/munition/missilethrusterhunter
+	name = "Missile Thrusters - Hunter"
+	contains = list(/obj/item/missile_equipment/thruster/hunter = 5)
+	cost = 45
+
+/decl/hierarchy/supply_pack/munition/missilepayloadexplosive
+	name = "Missile Payload - Explosive"
+	contains = list(/obj/item/missile_equipment/payload/explosive = 5)
+	cost = 45
+
+/decl/hierarchy/supply_pack/munition/missilepayloaddiffuser
+	name = "Missile Payload - Shield Diffuser"
+	contains = list(/obj/item/missile_equipment/payload/diffuser = 5)
+	cost = 40
+
+/decl/hierarchy/supply_pack/munition/missilepayloademp
+	name = "Missile Payload - EMP"
+	contains = list(/obj/item/missile_equipment/payload/emp = 5)
+	cost = 35
+
+/decl/hierarchy/supply_pack/munition/missilepayloadantimissile
+	name = "Missile Payload - Antimissile"
+	contains = list(/obj/item/missile_equipment/payload/antimissile = 5)
+	cost = 40
+
+/decl/hierarchy/supply_pack/munition/missileequipmentautoarm
+	name = "Missile Activator - Automatic"
+	contains = list(/obj/item/missile_equipment/autoarm = 5)
+	cost = 40
+

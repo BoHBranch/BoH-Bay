@@ -10,6 +10,7 @@
 	icon_state = "bdshell"
 	spent_icon = "bdshell-spent"
 	projectile_type = /obj/item/projectile/bullet/pellet/birdshot
+	ammo_stack = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/birdshot/two
 	matter = list(MATERIAL_STEEL = 80)
 
 //projectile

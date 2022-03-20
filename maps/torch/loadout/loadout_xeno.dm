@@ -39,4 +39,3 @@
 	whitelisted = list(SPECIES_NABBER)
 	allowed_roles = ENGINEERING_ROLES
 	sort_category = "Xenowear"
-

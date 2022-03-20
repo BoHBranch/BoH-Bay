@@ -34,6 +34,7 @@
 	landmark_tag = "nav_hangar_ascent_one"
 	docking_controller = "ascent_port_dock"
 	base_area = /area/ship/ascent/wing_port
+	base_turf = /turf/simulated/floor/reinforced/airless
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/shuttle_landmark/ascent_seedship/start/two

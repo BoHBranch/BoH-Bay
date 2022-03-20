@@ -1,7 +1,7 @@
 // Rigs and gear themselves.
 /obj/item/weapon/rig/mantid
 	name = "alate combat exosuit"
-	desc = "A powerful combat exosuit with integrated power supply, weapon and atmosphere. It's closer to a mech than a rig."
+	desc = "A powerful combat exosuit with integrated power supply, weapon and atmosphere. It's closer to a mech than a hardsuit."
 	icon_state = "kexosuit"
 	item_state = null
 	suit_type = "support exosuit"
@@ -83,6 +83,16 @@
 	icon = 'icons/obj/ascent.dmi'
 	icon_state = "rifle"
 	gun = /obj/item/weapon/gun/energy/particle
+
+/obj/item/rig_module/mounted/particle_projector
+	name = "particle projector"
+	desc = "A mounted particle projector of Ascent design."
+	interface_name = "particle projector"
+	interface_desc = "A mounted particle projector of Ascent design."
+	icon = 'icons/obj/ascent.dmi'
+	icon_state = "rifle"
+	gun = /obj/item/weapon/gun/energy/particle/small
+
 
 /obj/item/rig_module/device/multitool
 	name = "mantid integrated multitool"
@@ -347,8 +357,7 @@
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/chem_dispenser/nabber,
 		/obj/item/rig_module/device/nanoblade,
-		/obj/item/rig_module/mounted/flechette_rifle,
-		/obj/item/rig_module/mounted/particle_rifle,
+		/obj/item/rig_module/mounted/particle_projector,
 		/obj/item/rig_module/device/multitool,
 		/obj/item/rig_module/device/cable_coil,
 		/obj/item/rig_module/device/welder,
@@ -433,7 +442,7 @@
 // Rigs and gear themselves.
 /obj/item/weapon/rig/mantid/seed
 	name = "alate support exosuit"
-	desc = "A powerful support exosuit with integrated power supply, weapon and atmosphere. It's closer to a mech than a rig."
+	desc = "A powerful support exosuit with integrated power supply, weapon and atmosphere. It's closer to a mech than a hardsuit."
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_PISTOL,
@@ -488,7 +497,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = 1.2 * ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_MAJOR,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -514,7 +523,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = 1.2 * ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_MAJOR,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -575,11 +584,15 @@
 
 /obj/item/clothing/head/helmet/space/rig/mantid/tiro
 	desc = "A sleek, insect-esque helmet designed for a Humanoid."
-	species_restricted = list(SPECIES_HUMAN)
-
+	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
+	sprite_sheets = list(
+		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_skrell.dmi',
+		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_head_unathi.dmi',
+		SPECIES_OLDUNATHI = 'icons/mob/species/unathi/generated/onmob_head_unathi.dmi'
+		)
 /obj/item/clothing/suit/space/rig/mantid/tiro
-	desc = "A Mantid exosuit designed for a Humanoid. Offers superb protection."
-	species_restricted = list(SPECIES_HUMAN)
+	desc = "A Mantid exosuit designed for a Humanoid. Offers decent protection."
+	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 	allowed = list(
 		/obj/item/clustertool,
 		/obj/item/weapon/gun/energy/particle/small,
@@ -609,22 +622,32 @@
 		/obj/item/device/suit_cooling_unit,
 		/obj/item/weapon/storage
 	)
-
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_suit_unathi.dmi'
+		)
 /obj/item/clothing/shoes/magboots/rig/mantid/tiro
 	desc = "Feels like you're stepping on a cloud."
-	species_restricted = list(SPECIES_HUMAN)
-
+	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_feet_unathi.dmi',
+		)
 /obj/item/clothing/gloves/rig/mantid/tiro
-	desc = "Highly advanced gloves that bind themselves around your fingers. Despite this, it feels as flexible as air."
-	species_restricted = list(SPECIES_HUMAN)
+	desc = "Highly advanced gloves that bind themselves around your fingers."
+	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
+	sprite_sheets = list(
+		SPECIES_VOX = 'icons/mob/species/vox/onmob_hands_vox.dmi',
+		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_hands_vox_armalis.dmi',
+		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_hands_gas.dmi',
+		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_hands_unathi.dmi',
+		)
 
 /obj/item/weapon/rig/mantid/tiro/elite
-	name = "par exosuit"
-	desc = "The exosuit of a Gyne's Par, an esteemed Tiro who has earned their favor through efficiency and loyalty. An armor of this quality has few equals."
+	name = "aurum exosuit"
+	desc = "The exosuit of an aurum, an esteemed Tiro who has earned favor through efficiency and loyalty. Very protective."
 	icon_state = "par_voidsuit"
 	chest_type = /obj/item/clothing/suit/space/rig/mantid/tiro/elite
 	helm_type = /obj/item/clothing/head/helmet/space/rig/mantid/tiro/elite
-	suit_type = "elite guardian"
+	suit_type = "elite hominid"
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
@@ -641,8 +664,7 @@
 		/obj/item/rig_module/chem_dispenser/combat,
 		/obj/item/rig_module/chem_dispenser/nabber/tiro,
 		/obj/item/rig_module/device/nanoblade/par,
-		/obj/item/rig_module/mounted/flechette_rifle,
-		/obj/item/rig_module/mounted/particle_rifle,
+		/obj/item/rig_module/mounted/particle_projector,
 		/obj/item/rig_module/device/multitool,
 		/obj/item/rig_module/device/cable_coil,
 		/obj/item/rig_module/device/welder,
@@ -654,7 +676,7 @@
 	)
 
 /obj/item/clothing/head/helmet/space/rig/mantid/tiro/elite
-	desc = "The helmet of the Gyne's Par. Comfortable as air."
+	desc = "The helmet of the aurum. Comfortable as air."
 
 /obj/item/clothing/suit/space/rig/mantid/tiro/elite
-	desc = "The exosuit of the Gyne's Par. Little else can compare to its protection and prestige, besides perhaps the hatred of Solarians towards them."
+	desc = "The exosuit of the aurum."

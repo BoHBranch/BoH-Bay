@@ -6,6 +6,7 @@
 	icon_state = "knife"
 	item_state = "knife"
 	max_force = 15
+	parrysound = 'sound/weapons/parry/parry_metalsmall.ogg'
 	force_divisor = 0.3
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	matter = list(MATERIAL_STEEL = 12000)

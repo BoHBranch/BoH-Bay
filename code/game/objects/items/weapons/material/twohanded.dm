@@ -28,6 +28,7 @@
 	var/base_name
 	var/unwielded_force_divisor = 0.25
 	var/wielded_parry_bonus = 5
+	parrysound = 'sound/weapons/parry/parry_metallarge.ogg'
 
 /obj/item/weapon/material/twohanded/update_twohanding()
 	var/mob/living/M = loc
