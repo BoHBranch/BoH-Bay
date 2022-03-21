@@ -23,4 +23,4 @@
 	uniform = /obj/item/clothing/under/solgov/utility/army/medical
 	id_type = /obj/item/weapon/card/id/torch/crew/infantry/infmed
 	pda_type = /obj/item/modular_computer/pda/medical
-	l_ear = /obj/item/device/radio/headset/infantry
+	l_ear = /obj/item/device/radio/headset/infmed

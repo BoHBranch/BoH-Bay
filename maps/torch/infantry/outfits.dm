@@ -13,6 +13,12 @@
 	icon_state = "cap_cypherkey"
 	channels = list("Infantry" = 1, "Engineering" = 1, "Supply" = 1, "Exploration" = 1)
 
+/obj/item/device/encryptionkey/infantry/med
+	name = "infantry medic encryption key"
+	desc = "An Encryption key."
+	icon_state = "cap_cypherkey"
+	channels = list("Infantry" = 1, "Medical" = 1, "Exploration" = 1)
+
 /obj/item/device/encryptionkey/infantry
 	name = "infantry technician encryption key"
 	desc = "An Encryption key."
@@ -31,6 +37,13 @@
 	name = "infantry leader bowman headset"
 	icon_state = "exp_headset_alt"
 	item_state = "exp_headset_alt"
+
+/obj/item/device/radio/headset/infmed
+	name = "infantry medic headset"
+	desc = "A headset with an inbuilt subspace antenna for better reception."
+	icon_state = "exp_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/infantry/med
 
 /obj/item/device/radio/headset/inftech
 	name = "infantry technician headset"
