@@ -3,7 +3,7 @@
 	icon = 'icons/mob/human_races/species/unathi/hair.dmi'
 	icon_state = "demon_horn"
 	blend = ICON_MULTIPLY
-	species_allowed = list(SPECIES_UNATHI)
+	species_allowed = list(SPECIES_UNATHI,SPECIES_CUSTOM)
 
 /datum/sprite_accessory/hair/una/spines_long
 	name = "Long Unathi Spines"
