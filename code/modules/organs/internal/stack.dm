@@ -12,8 +12,8 @@
 	status = ORGAN_ROBOTIC
 	vital = 1
 	origin_tech = list(TECH_BIO = 4, TECH_MATERIAL = 4, TECH_MAGNET = 2, TECH_DATA = 3)
-	relative_size = 95 //The relative chance your lace is hit //TEST VALUE, DON'T YELL AT ME -PurplePineapple
-	max_damage = 30
+	relative_size = 30
+	max_damage = 50
 
 	var/ownerckey
 	var/invasive
@@ -63,12 +63,15 @@
 /obj/item/organ/internal/stack/Destroy()
 	var/obj/gore
 	playsound(src, "shatter", 70, 1)
+	playsound(src,'sound/effects/lace_destroyed.ogg', 70, 0)
 	gore = new /obj/item/weapon/material/shard(get_turf(owner), MATERIAL_GLASS)
 	gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
 	gore = new /obj/effect/decal/cleanable/blood/gibs(get_turf(owner))
 	gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
 	owner.visible_message(SPAN_WARNING("[owner]'s neck explodes in a shower of strange blue liquid and metallic fragments!"))
-	owner.death()
+	owner.emote("scream")
+	owner.seizure() //Would also include owner.Paralyze but seizure does that anyway.
+	owner.adjustBrainLoss(10)
 	..()
 
 /obj/item/organ/internal/stack/proc/backup_inviable()
