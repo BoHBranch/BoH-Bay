@@ -21,6 +21,7 @@
 		/area/scavver/lifepod = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/scavver/hab = NO_SCRUBBER|NO_VENT|NO_APC
 	)
+
 	shuttles_to_initialise = list(
 		/datum/shuttle/autodock/overmap/scavver_gantry,
 		/datum/shuttle/autodock/overmap/scavver_gantry/two,
