@@ -55,6 +55,7 @@
 	desc = "The Hephaestus Industries MP6 Vesper, A fairly common machine pistol. It is respected for it's ability to repaired with little more than a hammer, screwdriver and a hard table!"
 	icon = 'icons/obj/guns/machine_pistol.dmi'
 	icon_state = "mpistolen"
+	safety_icon = "safety"
 	item_state = "mpistolen"
 	caliber = CALIBER_PISTOL
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ESOTERIC = 3)
@@ -91,6 +92,7 @@
 	icon = 'icons/obj/guns/merc_smg.dmi'
 	icon_state = "c20r"
 	item_state = "c20r"
+	safety_icon = "safety"
 	w_class = ITEM_SIZE_LARGE
 	force = 10
 	caliber = CALIBER_PISTOL
@@ -172,6 +174,7 @@
 	icon = 'icons/obj/guns/sec_smg.dmi'
 	icon_state = "smg"
 	item_state = "wt550"
+	safety_icon = "safety"
 	w_class = ITEM_SIZE_NORMAL
 	caliber = CALIBER_PISTOL_SMALL
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
@@ -366,6 +369,7 @@
 	icon = 'icons/boh/obj/guns/skrell_shotgun.dmi'
 	icon_state = "skrellshotgun"  //not really a shotgun in spite of the naming
 	item_state = "skrellshotgun"
+	safety_icon = "safety"
 	item_icons = list(
 		slot_l_hand_str = 'icons/boh/mob/items/lefthand_guns.dmi',
 		slot_r_hand_str = 'icons/boh/mob/items/righthand_guns.dmi',

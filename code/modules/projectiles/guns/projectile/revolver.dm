@@ -78,6 +78,7 @@
 /obj/item/weapon/gun/projectile/revolver/medium
 	name = "MA-Blacklist"
 	icon_state = "medium"
+	safety_icon = "medium_safety"
 	caliber = CALIBER_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol
 	desc = "One of the few quality firearms from Martian Armoury, the Blacklist is a durable and robust firearm commonly associated with Space-Ranchers!"

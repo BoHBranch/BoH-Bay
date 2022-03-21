@@ -50,6 +50,7 @@
 /obj/item/weapon/gun/projectile/revolver/medium/sec
 	name = "Lumoco Mk12"
 	icon_state = "medium"
+	safety_icon = "medium_safety"
 	caliber = CALIBER_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol
 	fire_sound = 'sound/weapons/gunshot/revolver_small.ogg'
@@ -240,6 +241,7 @@
 	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are. This one appears to be ID locked."
 	icon = 'icons/obj/guns/pistol.dmi'
 	icon_state = "secguncomp"
+	safety_icon = "safety"
 	magazine_type = /obj/item/ammo_magazine/pistol/rubber
 	fire_delay = 6
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)

@@ -33,6 +33,7 @@
 	fire_sound = 'sound/weapons/gunshot/pistol_p20.ogg'
 	icon_state = "military"
 	item_state = "secgundark"
+	safety_icon = "safety"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
 	fire_delay = 2.5
 	ammo_indicator = TRUE
@@ -42,6 +43,7 @@
 	desc = "The HelTek Optimus, best known as the standard-issue sidearm for the ICCG Navy."
 	icon = 'icons/obj/guns/military_pistol2.dmi'
 	icon_state = "military-alt"
+	safety_icon = "safety"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_ESOTERIC = 8)
 	fire_delay = 8
 
@@ -50,6 +52,7 @@
 	desc = "Incredibly cheap knockoff of Nanotrasens Mk58 model pistol. This weapon has earned it's reputation as a 'Saturday Night Special'!"
 	icon = 'icons/obj/guns/pistol.dmi'
 	icon_state = "secguncomp"
+	safety_icon = "safety"
 	magazine_type = /obj/item/ammo_magazine/pistol/rubber
 	fire_delay = 3
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
@@ -63,6 +66,7 @@
 	icon = 'icons/obj/guns/magnum_pistol.dmi'
 	icon_state = "magnum"
 	item_state = "magnum"
+	safety_icon = "safety"
 	force = 9
 	caliber = CALIBER_PISTOL_MAGNUM
 	fire_delay = 12
