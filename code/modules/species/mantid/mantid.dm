@@ -177,6 +177,8 @@
 		/mob/living/carbon/human/proc/weave_structure,
 		/mob/living/carbon/human/proc/weave_item
 		)
+	
+	silk_color = "#99FFFF"
 
 /datum/species/mantid/gyne/attempt_grab(var/mob/living/carbon/human/grabber, var/mob/living/target)
 	if(grabber != target)
