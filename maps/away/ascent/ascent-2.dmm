@@ -4247,6 +4247,24 @@
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_starboard_prow)
+"mT" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/door/airlock/ascent{
+	name = "Fabrication Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_starboard_prow)
 "mV" = (
 /obj/machinery/atmospherics/unary/vent_pump/on/ascent,
 /turf/simulated/floor/tiled/ascent,
@@ -4266,6 +4284,27 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
+"np" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Command Chamber"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/bridge)
 "nz" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -4312,27 +4351,6 @@
 /obj/machinery/seed_extractor,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/hydroponics_starboard)
-"pn" = (
-/obj/machinery/door/airlock/ascent{
-	name = "Command Chamber"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/bridge)
 "pr" = (
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
 /turf/simulated/floor/ascent,
@@ -4352,6 +4370,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/wing_starboard)
+"pC" = (
+/obj/structure/hygiene/sink/ascent{
+	pixel_y = -24
+	},
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_starboard_jut)
 "pE" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/door/airlock/external/bolted/ascent{
@@ -4393,6 +4418,21 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on/ascent,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_starboard_jut)
+"sp" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/door/airlock/ascent{
+	name = "Maintenance Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/wing_starboard)
 "sF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5
@@ -4401,6 +4441,20 @@
 /area/ship/ascent/shuttle_starboard)
 "sM" = (
 /obj/structure/railing/mapped,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_starboard_prow)
+"sY" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Holding Cells"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
 "tr" = (
@@ -4416,6 +4470,20 @@
 "tz" = (
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
+"vk" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Fabrication Chamber"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_starboard_prow)
 "vx" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/reagent_temperature/cooler{
@@ -4463,20 +4531,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
-"wG" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/door/airlock/ascent{
-	name = "Feeding Chamber"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_port_prow)
 "wM" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -4517,21 +4571,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
-"ys" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/door/airlock/ascent{
-	name = "Maintenance Chamber"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/wing_starboard)
 "yx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -4560,6 +4599,27 @@
 /obj/machinery/light/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_port)
+"zn" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/machinery/door/airlock/ascent{
+	name = "Command Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/bridge)
 "zt" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/portable_atmospherics/canister/methyl_bromide,
@@ -4618,31 +4678,6 @@
 /obj/machinery/turretid/ascent,
 /turf/simulated/wall/ascent,
 /area/ship/ascent/bridge)
-"Ba" = (
-/obj/machinery/mantid_dispenser,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
-"Bj" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/obj/machinery/door/airlock/ascent{
-	name = "Maintenance Chamber"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/wing_starboard)
 "BX" = (
 /turf/simulated/wall/r_wall/ascent,
 /area/ship/ascent/engineering)
@@ -4663,26 +4698,7 @@
 /obj/machinery/portable_atmospherics/canister/methyl_bromide,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
-"DK" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/door/airlock/ascent{
-	name = "Fabrication Chamber"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_starboard_prow)
-"Ek" = (
-/obj/machinery/atmospherics/portables_connector,
-/obj/machinery/portable_atmospherics/canister/methyl_bromide,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/shuttle_starboard)
-"En" = (
+"DF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -4699,10 +4715,15 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/ascent{
-	name = "Command Chamber"
+	name = "Maintenance Chamber"
 	},
 /turf/simulated/floor/ascent,
-/area/ship/ascent/bridge)
+/area/ship/ascent/wing_starboard)
+"Ek" = (
+/obj/machinery/atmospherics/portables_connector,
+/obj/machinery/portable_atmospherics/canister/methyl_bromide,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/shuttle_starboard)
 "Es" = (
 /obj/structure/ore_box{
 	color = "PURPLE";
@@ -4744,20 +4765,6 @@
 /obj/item/weapon/pickaxe/diamonddrill/ascent,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_starboard_prow)
-"EZ" = (
-/obj/machinery/door/airlock/ascent{
-	name = "Holding Cells"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_starboard_prow)
 "Fd" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on/ascent,
 /turf/simulated/floor/tiled/ascent,
@@ -4770,6 +4777,24 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
+"Fh" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Feeding Chamber"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_port_prow)
 "FO" = (
 /obj/structure/bed/chair/padded/purple/ascent{
 	dir = 1
@@ -4808,10 +4833,7 @@
 /obj/item/clustertool,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/aft_starboard_jut)
-"HV" = (
-/obj/machinery/door/airlock/ascent{
-	name = "Fabrication Chamber"
-	},
+"Hf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/cyan{
@@ -4820,8 +4842,36 @@
 	icon_state = "1-2"
 	},
 /obj/effect/catwalk_plated/ascent,
+/obj/machinery/door/airlock/ascent{
+	name = "Feeding Chamber"
+	},
 /turf/simulated/floor/ascent,
-/area/ship/ascent/fore_starboard_prow)
+/area/ship/ascent/fore_port_prow)
+"Hm" = (
+/obj/machinery/mantid_dispenser,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_port_prow)
+"Hs" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Maintenance Chamber"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/wing_starboard)
 "HZ" = (
 /obj/structure/window/phoronreinforced{
 	dir = 8
@@ -4837,6 +4887,20 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
+"Iz" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/door/airlock/ascent{
+	name = "Fabrication Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_starboard_prow)
 "IQ" = (
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
 /obj/machinery/atmospherics/pipe/simple/visible/red{
@@ -4868,27 +4932,6 @@
 /obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
-"Kl" = (
-/obj/machinery/door/airlock/ascent{
-	name = "Maintenance Chamber"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/wing_starboard)
 "KO" = (
 /obj/machinery/ion_engine{
 	dir = 8
@@ -5079,6 +5122,27 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/shuttle_starboard)
+"SD" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Habitation Chamber"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/habitation)
 "TL" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -5128,6 +5192,21 @@
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
+"UM" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/door/airlock/ascent{
+	name = "Command Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/bridge)
 "UQ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4;
@@ -5178,49 +5257,6 @@
 /obj/machinery/door/airlock/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
-"VX" = (
-/obj/machinery/door/airlock/ascent{
-	name = "Feeding Chamber"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_port_prow)
-"WE" = (
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/door/airlock/ascent{
-	name = "Fabrication Chamber"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_starboard_prow)
-"WG" = (
-/obj/structure/hygiene/sink/ascent{
-	pixel_y = -24
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_starboard_jut)
 "WI" = (
 /obj/structure/window/phoronreinforced{
 	dir = 1
@@ -5271,21 +5307,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
-"YG" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/door/airlock/ascent{
-	name = "Command Chamber"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/bridge)
 "Zn" = (
 /obj/machinery/power/apc/hyper/ascent/north,
 /obj/structure/cable/cyan{
@@ -5323,27 +5344,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
-"ZV" = (
-/obj/machinery/door/airlock/ascent{
-	name = "Habitation Chamber"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/habitation)
 
 (1,1,1) = {"
 aa
@@ -10041,7 +10041,7 @@ aa
 ah
 ah
 ah
-WE
+mT
 ah
 ah
 jT
@@ -10053,7 +10053,7 @@ jT
 jT
 cy
 cy
-VX
+Fh
 cy
 cy
 cy
@@ -10899,11 +10899,11 @@ as
 as
 as
 dG
-HV
+vk
 bp
 ez
 bp
-wG
+Hf
 eA
 cv
 cv
@@ -11264,13 +11264,13 @@ EB
 ZK
 bi
 hj
-DK
+Iz
 bp
 bp
 cf
 bp
 bp
-wG
+Hf
 cS
 fT
 cv
@@ -11511,7 +11511,7 @@ ER
 cH
 cZ
 cZ
-ZV
+SD
 cZ
 cZ
 dl
@@ -11623,7 +11623,7 @@ qG
 re
 Ex
 tw
-WG
+pC
 ah
 lk
 lk
@@ -11760,7 +11760,7 @@ eS
 eW
 eZ
 cZ
-Ba
+Hm
 cv
 hc
 hY
@@ -11868,7 +11868,7 @@ ac
 eR
 gS
 TL
-EZ
+sY
 lb
 lb
 mn
@@ -12004,7 +12004,7 @@ fJ
 eX
 fN
 cZ
-Ba
+Hm
 cv
 hK
 cy
@@ -12730,9 +12730,9 @@ bb
 bb
 bA
 bA
-En
+zn
 bA
-pn
+np
 bA
 bA
 bb
@@ -13457,7 +13457,7 @@ na
 ag
 cG
 gG
-YG
+UM
 bc
 bc
 bc
@@ -13469,7 +13469,7 @@ bc
 bc
 bc
 fD
-YG
+UM
 dU
 ak
 eG
@@ -13822,7 +13822,7 @@ JC
 CW
 ag
 ag
-Kl
+Hs
 bA
 bA
 bm
@@ -13836,7 +13836,7 @@ fK
 fI
 bA
 bA
-Bj
+DF
 ag
 ag
 mg
@@ -14437,11 +14437,11 @@ cr
 cI
 cI
 cI
-ys
+sp
 cI
 bf
 cI
-ys
+sp
 cI
 cI
 cI
