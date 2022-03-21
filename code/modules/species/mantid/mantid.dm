@@ -144,6 +144,7 @@
 	max_age =               500
 	blood_volume =         1200
 	spawns_with_stack =       0
+	is_weaver = 1
 
 	pixel_offset_x =        -4
 	antaghud_offset_y =      18
@@ -169,6 +170,13 @@
 		TAG_FACTION =   FACTION_ASCENT_GYNE,
 		TAG_RELIGION =  RELIGION_KHARMAANI
 	)
+
+	inherent_verbs = list(
+		/mob/living/carbon/human/proc/check_silk_amount,
+		/mob/living/carbon/human/proc/toggle_silk_production,
+		/mob/living/carbon/human/proc/weave_structure,
+		/mob/living/carbon/human/proc/weave_item
+		)
 
 /datum/species/mantid/gyne/attempt_grab(var/mob/living/carbon/human/grabber, var/mob/living/target)
 	if(grabber != target)
