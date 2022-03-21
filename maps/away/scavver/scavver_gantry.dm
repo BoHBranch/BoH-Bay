@@ -10,18 +10,17 @@
 	accessibility_weight = 10
 	area_usage_test_exempted_root_areas = list(/area/scavver)
 	apc_test_exempt_areas = list(
-		/area/scavver/yachtdown = NO_APC
-		/area/scavver/gantry/down1 = NO_APC
-		/area/scavver/gantry/down2 = NO_APC
-		/area/scavver/calypso = NO_VENT|NO_APC
-		/area/scavver/gantry/up1 = NO_APC
-		/area/scavver/escapepod = NO_APC
-		/area/scavver/yachtup = NO_APC
-		/area/scavver/gantry/up2 = NO_APC
-		/area/scavver/lifepod = NO_SCRUBBER|NO_VENT|NO_APC
+		/area/scavver/yachtdown = NO_APC,
+		/area/scavver/gantry/down1 = NO_APC,
+		/area/scavver/gantry/down2 = NO_APC,
+		/area/scavver/calypso = NO_VENT|NO_APC,
+		/area/scavver/gantry/up1 = NO_APC,
+		/area/scavver/escapepod = NO_APC,
+		/area/scavver/yachtup = NO_APC,
+		/area/scavver/gantry/up2 = NO_APC,
+		/area/scavver/lifepod = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/scavver/hab = NO_SCRUBBER|NO_VENT|NO_APC
-
-    )
+	)
 	shuttles_to_initialise = list(
 		/datum/shuttle/autodock/overmap/scavver_gantry,
 		/datum/shuttle/autodock/overmap/scavver_gantry/two,
