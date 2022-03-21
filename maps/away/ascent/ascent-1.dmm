@@ -346,6 +346,14 @@
 	},
 /turf/simulated/floor/reinforced/bromide,
 /area/ship/ascent/subdeck_atmos)
+"bb" = (
+/obj/structure/table/steel_reinforced,
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
+/obj/item/weapon/storage/firstaid/toxin,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/subdeck_hospital)
 "bc" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/light/ascent{
@@ -1486,6 +1494,20 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_south)
+"dw" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/alarm/ascent{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_hospital)
 "dx" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -1592,6 +1614,12 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
+"dK" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/weapon/storage/firstaid/surgery,
+/obj/machinery/light/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_hospital)
 "dL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -2851,6 +2879,49 @@
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
+"gN" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/airlock/ascent{
+	id_tag = "tirobathroom";
+	name = "Tiro Hygiene Chamber"
+	},
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/tiroarea)
+"hi" = (
+/obj/machinery/alarm/ascent{
+	pixel_y = 24
+	},
+/obj/machinery/light/ascent{
+	dir = 1
+	},
+/obj/structure/bed/alien,
+/obj/item/weapon/bedsheet/purple,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/tiroarea)
+"hL" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/door/airlock/ascent{
+	name = "Throne Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_armory)
 "ic" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 8
@@ -2860,87 +2931,7 @@
 "ie" = (
 /turf/simulated/floor/tiled/freezer,
 /area/ship/ascent/tiroarea)
-"js" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/weapon/storage/firstaid/surgery,
-/obj/machinery/light/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_hospital)
-"jY" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/door/airlock/ascent{
-	name = "Seeker Chamber"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_gyne_quarters)
-"lx" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/weapon/reagent_containers/dropper{
-	pixel_x = 12;
-	pixel_y = 3
-	},
-/obj/random/advdevice{
-	pixel_x = -2
-	},
-/obj/machinery/light/ascent{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_hospital)
-"lV" = (
-/obj/structure/table/steel_reinforced,
-/obj/structure/window/phoronreinforced{
-	dir = 4
-	},
-/obj/item/weapon/storage/firstaid/toxin,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_hospital)
-"me" = (
-/obj/structure/hygiene/shower/ascent{
-	dir = 8;
-	icon_state = "shower"
-	},
-/obj/effect/decal/cleanable/dirt{
-	desc = "A thin layer of soap scum left behind by one too many washes and one too few days of cleaning.";
-	name = "soap scum"
-	},
-/turf/simulated/floor/tiled/freezer,
-/area/ship/ascent/tiroarea)
-"mh" = (
-/obj/machinery/door/airlock/ascent{
-	name = "Atmosphere Control Chamber"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_north)
-"mo" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/door/airlock/ascent{
-	name = "Tiro Quarters"
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/tiroarea)
-"mL" = (
+"jk" = (
 /obj/machinery/door/airlock/ascent{
 	name = "Throne Chamber"
 	},
@@ -2958,6 +2949,58 @@
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_armory)
+"ki" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Port Chamber"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_center)
+"kx" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/door/airlock/ascent{
+	name = "Gear Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_armory)
+"me" = (
+/obj/structure/hygiene/shower/ascent{
+	dir = 8;
+	icon_state = "shower"
+	},
+/obj/effect/decal/cleanable/dirt{
+	desc = "A thin layer of soap scum left behind by one too many washes and one too few days of cleaning.";
+	name = "soap scum"
+	},
+/turf/simulated/floor/tiled/freezer,
+/area/ship/ascent/tiroarea)
+"mm" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/clothing/gloves/latex/nitrile,
+/obj/item/weapon/reagent_containers/spray/cleaner/drone{
+	pixel_x = 6;
+	pixel_y = 13
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_hospital)
 "mR" = (
 /obj/machinery/door/window{
 	dir = 8
@@ -2989,63 +3032,24 @@
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
-"ne" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/door/airlock/ascent{
-	name = "Port Chamber"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_south)
+"no" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/weapon/storage/box/water/ascent,
+/obj/machinery/light/ascent,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/tiroarea)
 "oe" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
-"oJ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
-/obj/machinery/alarm/ascent{
-	dir = 4;
-	pixel_x = -24
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_hospital)
-"oP" = (
+"om" = (
 /obj/machinery/door/airlock/ascent{
 	name = "Carbon Treatment Chamber"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_center)
-"pj" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/door/airlock/ascent{
-	name = "Starboard Chamber"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_north)
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/subdeck_hospital)
 "pV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -3091,18 +3095,42 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/tiroarea)
-"qC" = (
-/obj/structure/hygiene/sink/ascent{
-	pixel_y = -13
+"qt" = (
+/obj/machinery/computer/operating{
+	dir = 1
 	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_hospital)
-"sv" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/weapon/defibrillator/loaded,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
-"tN" = (
+"rz" = (
+/obj/item/weapon/mop/advanced/ascent{
+	pixel_x = 8
+	},
+/obj/item/weapon/reagent_containers/glass/bucket/ascent{
+	pixel_x = -6;
+	pixel_y = -8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/ascent,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/tiroarea)
+"rB" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Atmosphere Control Chamber"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_north)
+"sR" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Gear Chamber"
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -3115,9 +3143,6 @@
 	icon_state = "4-8"
 	},
 /obj/effect/catwalk_plated/ascent,
-/obj/machinery/door/airlock/ascent{
-	name = "Gear Chamber"
-	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_armory)
 "tT" = (
@@ -3137,55 +3162,84 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
-"ug" = (
+"up" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/effect/catwalk_plated/ascent,
 /obj/machinery/door/airlock/ascent{
-	name = "Port Chamber"
+	name = "Seeker Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_gyne_quarters)
+"vt" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Carbon Treatment Chamber"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
-"vE" = (
-/obj/effect/catwalk_plated/ascent,
+"vM" = (
+/obj/machinery/atmospherics/unary/vent_pump/on/ascent{
+	dir = 8
+	},
+/obj/machinery/light/ascent,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/tiroarea)
+"vQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/door/airlock/ascent{
-	name = "Particle Lance"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_center)
-"xh" = (
-/obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/bed/alien,
-/obj/item/weapon/bedsheet/purple,
-/turf/simulated/floor/tiled/ascent,
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
 /area/ship/ascent/tiroarea)
-"yd" = (
-/obj/machinery/atmospherics/portables_connector{
+"wo" = (
+/obj/structure/iv_drip,
+/obj/machinery/light/ascent{
 	dir = 1
 	},
-/obj/machinery/light/ascent,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/subdeck_hospital)
+"xK" = (
+/obj/machinery/sleeper,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/subdeck_hospital)
+"yg" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
-"yO" = (
-/obj/structure/closet/crate/freezer,
-/obj/item/weapon/reagent_containers/ivbag/nanoblood,
-/obj/item/weapon/reagent_containers/ivbag/nanoblood,
-/obj/item/weapon/reagent_containers/ivbag/nanoblood,
-/obj/item/weapon/reagent_containers/ivbag/nanoblood,
-/obj/item/weapon/reagent_containers/ivbag/nanoblood,
-/turf/simulated/floor/tiled/ascent,
+"yx" = (
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/door/airlock/ascent{
+	name = "Mantid Treatment Chamber"
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
 "zm" = (
 /obj/effect/catwalk_plated/ascent,
@@ -3198,12 +3252,40 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
-"zR" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+"zZ" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
+/area/ship/ascent/tiroarea)
+"Bf" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/weapon/storage/firstaid/adv{
+	pixel_y = 5
+	},
+/obj/item/weapon/storage/firstaid/adv,
+/turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_hospital)
+"Bv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/door/airlock/ascent{
+	name = "Port Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_south)
 "BA" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -3219,33 +3301,12 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
-"BD" = (
-/obj/machinery/door/airlock/ascent{
-	name = "Starboard Chamber"
+"Cx" = (
+/obj/structure/sign/warning/nosmoking_2{
+	desc = "A sign taken from some primitive settlement which precludes the action of exhaling toxins into the envrionment.";
+	pixel_x = -32
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_center)
-"BG" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/weapon/storage/firstaid/adv{
-	pixel_y = 5
-	},
-/obj/item/weapon/storage/firstaid/adv,
 /turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_hospital)
-"Cj" = (
-/obj/machinery/computer/operating{
-	dir = 1
-	},
-/turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
 "CB" = (
 /obj/structure/table/rack/dark,
@@ -3269,22 +3330,15 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/tiroarea)
-"CZ" = (
-/obj/structure/iv_drip,
-/obj/machinery/light/ascent{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_hospital)
-"El" = (
-/obj/machinery/door/airlock/ascent{
-	name = "Gear Chamber"
-	},
+"CM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
+	},
+/obj/machinery/door/airlock/ascent{
+	name = "Tiro Quarters"
 	},
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -3293,7 +3347,27 @@
 	},
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_armory)
+/area/ship/ascent/tiroarea)
+"Ef" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/tiroarea)
+"Ep" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/tiroarea)
 "EJ" = (
 /obj/structure/bed/chair/padded/purple/ascent,
 /turf/simulated/floor/tiled/ascent,
@@ -3309,50 +3383,34 @@
 /obj/item/weapon/rig/mantid/tiro,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
-"Fz" = (
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+"Fh" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/weapon/reagent_containers/ivbag/nanoblood,
+/obj/item/weapon/reagent_containers/ivbag/nanoblood,
+/obj/item/weapon/reagent_containers/ivbag/nanoblood,
+/obj/item/weapon/reagent_containers/ivbag/nanoblood,
+/obj/item/weapon/reagent_containers/ivbag/nanoblood,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/subdeck_hospital)
+"Fp" = (
+/obj/structure/hygiene/sink/ascent{
+	pixel_y = -13
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/door/airlock/ascent{
-	name = "Starboard Chamber"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_north)
-"FJ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/door/airlock/ascent{
-	id_tag = "tirobathroom";
-	name = "Tiro Hygiene Chamber"
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/tiroarea)
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/subdeck_hospital)
 "GO" = (
 /obj/structure/table/rack/dark,
 /obj/item/weapon/rig/mantid/tiro,
 /obj/item/weapon/rig/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_armory)
-"GV" = (
-/obj/machinery/light{
-	dir = 4
-	},
+"Hl" = (
+/obj/effect/decal/cleanable/generic,
 /turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_hospital)
+/area/ship/ascent/tiroarea)
+"Hr" = (
+/turf/simulated/wall/ascent,
+/area/ship/ascent/subdeck_atmos)
 "HC" = (
 /obj/structure/reagent_dispensers/water_cooler/ascent{
 	dir = 1
@@ -3360,42 +3418,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
-"HW" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/catwalk_plated/ascent,
+"HQ" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/weapon/defibrillator/loaded,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
-"HX" = (
-/obj/machinery/door/airlock/ascent{
-	name = "Sanitation Closet"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_center)
-"II" = (
-/obj/item/weapon/mop/advanced/ascent{
-	pixel_x = 8
-	},
-/obj/item/weapon/reagent_containers/glass/bucket/ascent{
-	pixel_x = -6;
-	pixel_y = -8
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/ascent,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/tiroarea)
 "IS" = (
 /obj/structure/cable/cyan{
 	d1 = 2;
@@ -3411,39 +3438,17 @@
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
-"Jh" = (
-/obj/machinery/alarm/ascent{
-	pixel_y = 24
-	},
-/obj/machinery/light/ascent{
-	dir = 1
-	},
+"Ji" = (
+/obj/effect/decal/cleanable/cobweb,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/alien,
 /obj/item/weapon/bedsheet/purple,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
-"JR" = (
+"KZ" = (
 /obj/machinery/optable,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
-"KE" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/door/airlock/ascent{
-	name = "Port Chamber"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_south)
 "Ls" = (
 /obj/machinery/cryopod{
 	dir = 2;
@@ -3472,47 +3477,7 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_armory)
-"NI" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/weapon/reagent_containers/spray/cleaner/drone{
-	pixel_x = 6;
-	pixel_y = 13
-	},
-/obj/item/device/scanner/health,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_hospital)
-"NZ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/obj/effect/decal/cleanable/generic,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 8;
-	icon_state = "1-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/tiroarea)
-"Oj" = (
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/tiroarea)
-"OC" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/tiroarea)
-"Pn" = (
-/obj/machinery/door/airlock/ascent{
-	name = "Central Chamber"
-	},
+"Nn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -3526,7 +3491,56 @@
 	},
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_center)
+/area/ship/ascent/tiroarea)
+"Oj" = (
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/tiroarea)
+"Oq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/door/airlock/ascent{
+	name = "Port Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_south)
+"OP" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/weapon/reagent_containers/dropper{
+	pixel_x = 12;
+	pixel_y = 3
+	},
+/obj/random/advdevice{
+	pixel_x = -2
+	},
+/obj/machinery/light/ascent{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/subdeck_hospital)
+"Pg" = (
+/obj/machinery/atmospherics/portables_connector{
+	dir = 1
+	},
+/obj/machinery/light/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_hospital)
+"Pv" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "tirobathroom";
+	pixel_x = -32
+	},
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/tiroarea)
 "Pz" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on/ascent{
 	dir = 1
@@ -3540,77 +3554,36 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_hospital)
-"Qi" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/weapon/storage/box/water/ascent,
-/obj/machinery/light/ascent,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/tiroarea)
 "Qm" = (
 /obj/machinery/porta_turret/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/bridge)
-"Qz" = (
+"QB" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on/ascent,
+/obj/effect/submap_landmark/spawnpoint/ascent_seedship/tiro,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/tiroarea)
+"QM" = (
 /obj/machinery/body_scanconsole{
 	dir = 4;
 	display_tags = list("med_or_display","rob_or_display1","rob_or_display2")
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_hospital)
-"QB" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on/ascent,
-/obj/effect/submap_landmark/spawnpoint/ascent_seedship/tiro,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/tiroarea)
-"QC" = (
-/obj/machinery/vending/wallmed1{
-	dir = 1;
-	name = "Emergency NanoMed";
-	pixel_y = -30
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_hospital)
-"Rc" = (
+"SG" = (
 /obj/machinery/door/airlock/ascent{
-	name = "Carbon Treatment Chamber"
+	name = "Starboard Chamber"
 	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_hospital)
-"RA" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/door/airlock/ascent{
-	name = "Seeker Chamber"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_gyne_quarters)
-"RG" = (
-/obj/machinery/atmospherics/unary/vent_pump/on/ascent{
-	dir = 8
-	},
-/obj/machinery/light/ascent,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/tiroarea)
-"RK" = (
-/obj/machinery/sleeper,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_hospital)
-"Tn" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
-/obj/machinery/button/alternate/door/bolts{
-	id_tag = "tirobathroom";
-	pixel_x = -32
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
-/area/ship/ascent/tiroarea)
+/area/ship/ascent/subdeck_center)
 "Tt" = (
 /obj/structure/closet/crate,
 /obj/item/clothing/under/tiro,
@@ -3628,66 +3601,37 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/tiroarea)
-"Tu" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
+"Ub" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/catwalk_plated/ascent,
+/obj/machinery/door/airlock/ascent{
+	name = "Seeker Chamber"
+	},
 /turf/simulated/floor/ascent,
-/area/ship/ascent/tiroarea)
-"TE" = (
-/turf/simulated/wall/ascent,
-/area/ship/ascent/subdeck_atmos)
-"TT" = (
+/area/ship/ascent/subdeck_gyne_quarters)
+"Uo" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
 	},
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/door/airlock/ascent{
-	name = "Throne Chamber"
+	name = "Starboard Chamber"
 	},
 /turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_armory)
-"TU" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
+/area/ship/ascent/subdeck_north)
+"Vd" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/tiroarea)
-"Ui" = (
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/door/airlock/ascent{
-	name = "Mantid Treatment Chamber"
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
 "Vv" = (
@@ -3705,6 +3649,35 @@
 	dir = 2
 	},
 /turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/tiroarea)
+"VQ" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Sanitation Closet"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_center)
+"VZ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/effect/decal/cleanable/generic,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
 /area/ship/ascent/tiroarea)
 "WG" = (
 /obj/structure/table/rack/dark,
@@ -3734,17 +3707,54 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_center)
-"XV" = (
+"XS" = (
+/obj/effect/catwalk_plated/ascent,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/airlock/ascent{
+	name = "Particle Lance"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_center)
+"Yd" = (
+/obj/machinery/vending/wallmed1{
+	dir = 1;
+	name = "Emergency NanoMed";
+	pixel_y = -30
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/subdeck_hospital)
+"Ye" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Central Chamber"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
-/area/ship/ascent/tiroarea)
+/area/ship/ascent/subdeck_center)
+"Yf" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/weapon/reagent_containers/spray/cleaner/drone{
+	pixel_x = 6;
+	pixel_y = 13
+	},
+/obj/item/device/scanner/health,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/subdeck_hospital)
 "Yn" = (
 /turf/simulated/wall/ascent,
 /area/ship/ascent/tiroarea)
@@ -3764,41 +3774,30 @@
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship/queen,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_gyne_quarters)
-"Yw" = (
-/obj/structure/sign/warning/nosmoking_2{
-	desc = "A sign taken from some primitive settlement which precludes the action of exhaling toxins into the envrionment.";
-	pixel_x = -32
+"YJ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/subdeck_hospital)
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/door/airlock/ascent{
+	name = "Starboard Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/subdeck_north)
 "YN" = (
 /obj/structure/curtain/open/privacy,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/subdeck_hospital)
-"ZC" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/clothing/gloves/latex/nitrile,
-/obj/item/weapon/reagent_containers/spray/cleaner/drone{
-	pixel_x = 6;
-	pixel_y = 13
+"Zg" = (
+/obj/machinery/light{
+	dir = 4
 	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/subdeck_hospital)
-"ZK" = (
-/obj/structure/bed/chair/padded/purple,
-/obj/effect/decal/cleanable/generic,
 /turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/tiroarea)
-"ZO" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/tiroarea)
+/area/ship/ascent/subdeck_hospital)
 
 (1,1,1) = {"
 aa
@@ -8496,7 +8495,7 @@ aa
 ax
 ax
 ax
-Fz
+Uo
 ax
 ax
 ax
@@ -8508,7 +8507,7 @@ ai
 bO
 bO
 bO
-KE
+Bv
 bO
 bO
 bO
@@ -8990,7 +8989,7 @@ cC
 cK
 al
 al
-vE
+XS
 al
 al
 bi
@@ -9354,11 +9353,11 @@ eY
 aF
 aF
 cM
-BD
+SG
 aH
 fy
 aH
-ug
+ki
 bN
 cS
 cS
@@ -9719,13 +9718,13 @@ aF
 cm
 cx
 cE
-pj
+YJ
 aH
 aH
 bp
 aH
 aH
-ne
+Oq
 ca
 cd
 bZ
@@ -9966,13 +9965,13 @@ bu
 bu
 al
 al
-Pn
+Ye
 al
 al
 bt
 aG
 aG
-Ui
+yx
 aG
 aG
 aG
@@ -10319,11 +10318,11 @@ aR
 aR
 aR
 aR
-TE
+Hr
 bq
 cQ
 cY
-mh
+rB
 cb
 dZ
 co
@@ -10441,8 +10440,8 @@ ai
 ai
 ai
 ai
-TE
-TE
+Hr
+Hr
 cT
 cZ
 bu
@@ -10564,9 +10563,9 @@ ai
 ai
 ai
 ai
-TE
-TE
-TE
+Hr
+Hr
+Hr
 bu
 ec
 aF
@@ -11071,7 +11070,7 @@ ak
 pW
 al
 al
-Rc
+om
 aG
 aG
 aG
@@ -11180,26 +11179,26 @@ Yn
 CB
 CI
 ql
-HX
+VQ
 aI
 fP
 by
 by
-tN
+kx
 by
-El
+sR
 by
 by
 qg
 oe
-oP
-zR
-oJ
-Yw
-qC
+vt
+Vd
+dw
+Cx
+Fp
 aG
-sv
-ZC
+HQ
+mm
 aG
 ai
 ai
@@ -11300,8 +11299,8 @@ ai
 ai
 Yn
 Tt
-Tu
-II
+Nn
+rz
 by
 by
 by
@@ -11315,13 +11314,13 @@ by
 by
 by
 by
-lx
-HW
+OP
+yg
 Pz
 ci
 YN
 EJ
-js
+dK
 aG
 ai
 ai
@@ -11422,7 +11421,7 @@ ai
 Yn
 Yn
 Yn
-mo
+CM
 Yn
 by
 by
@@ -11437,13 +11436,13 @@ cj
 bR
 by
 by
-lV
+bb
 gf
 Qc
 ci
 YN
 ci
-JR
+KZ
 aG
 ai
 ai
@@ -11542,9 +11541,9 @@ ai
 ai
 ai
 Yn
-xh
+Ji
 Lz
-NZ
+VZ
 HC
 by
 by
@@ -11559,13 +11558,13 @@ cj
 bS
 by
 by
-BG
+Bf
 ci
 ci
-GV
+Zg
 YN
 ci
-Cj
+qt
 aG
 ai
 ai
@@ -11664,10 +11663,10 @@ ai
 ai
 ai
 Yn
-Jh
-ZK
-XV
-Qi
+hi
+Hl
+vQ
+no
 by
 GO
 bT
@@ -11681,9 +11680,9 @@ cj
 bT
 bE
 by
-NI
+Yf
 ci
-QC
+Yd
 aG
 aG
 ci
@@ -11788,7 +11787,7 @@ ai
 Yn
 Ff
 QB
-TU
+zZ
 tT
 by
 bK
@@ -11803,9 +11802,9 @@ ch
 ch
 ft
 by
-yO
+Fh
 ci
-Qz
+QM
 aG
 ce
 fZ
@@ -11910,7 +11909,7 @@ ai
 Yn
 Vy
 Ls
-OC
+Ef
 WG
 by
 bQ
@@ -11925,13 +11924,13 @@ bQ
 bQ
 bQ
 by
-CZ
+wo
 ci
 Vv
 aG
 ci
 ga
-yd
+Pg
 aG
 ai
 ai
@@ -12032,7 +12031,7 @@ ai
 Yn
 Yn
 Yn
-FJ
+gN
 Yn
 by
 bK
@@ -12047,7 +12046,7 @@ ch
 ch
 fu
 by
-RK
+xK
 ci
 ci
 ci
@@ -12154,8 +12153,8 @@ ai
 ai
 Yn
 gg
-ZO
-Tn
+Ep
+Pv
 by
 GO
 bT
@@ -12277,7 +12276,7 @@ ai
 Yn
 gv
 Oj
-RG
+vM
 by
 by
 bS
@@ -12649,9 +12648,9 @@ bz
 bz
 aQ
 aQ
-TT
+hL
 aQ
-mL
+jk
 aQ
 aQ
 bz
@@ -12891,13 +12890,13 @@ ai
 ai
 ai
 fX
-jY
+Ub
 gm
 eP
 fq
 fH
 gm
-jY
+Ub
 gE
 ai
 ai
@@ -13744,7 +13743,7 @@ ai
 ai
 ai
 ai
-RA
+up
 aQ
 aQ
 aQ
@@ -13752,7 +13751,7 @@ aQ
 aQ
 aQ
 aQ
-RA
+up
 ai
 ai
 ai
