@@ -8,12 +8,25 @@
 	suffixes = list("scavver/scavver_gantry-1.dmm","scavver/scavver_gantry-2.dmm")
 	cost = 1
 	accessibility_weight = 10
+	area_usage_test_exempted_root_areas = list(/area/scavver)
+	apc_test_exempt_areas = list(
+		/area/scavver/yachtdown = NO_APC,
+		/area/scavver/gantry/down1 = NO_APC,
+		/area/scavver/gantry/down2 = NO_APC,
+		/area/scavver/calypso = NO_VENT|NO_APC,
+		/area/scavver/gantry/up1 = NO_APC,
+		/area/scavver/escapepod = NO_APC,
+		/area/scavver/yachtup = NO_APC,
+		/area/scavver/gantry/up2 = NO_APC,
+		/area/scavver/lifepod = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/scavver/hab = NO_SCRUBBER|NO_VENT|NO_APC
+	)
+
 	shuttles_to_initialise = list(
 		/datum/shuttle/autodock/overmap/scavver_gantry,
 		/datum/shuttle/autodock/overmap/scavver_gantry/two,
 		/datum/shuttle/autodock/ferry/gantry
-
-	area_usage_test_exempted_root_areas = list(/area/scavver)
+	)
 
 /obj/effect/submap_landmark/joinable_submap/scavver_gantry
 	name = "Salvage Gantry"
@@ -50,8 +63,8 @@
 	)
 
 /obj/item/mech_component/sensors/light/salvage/prebuild()
-  ..()
-  software.installed_software = list(MECH_SOFTWARE_UTILITY, MECH_SOFTWARE_ENGINEERING)
+	..()
+	software.installed_software = list(MECH_SOFTWARE_UTILITY, MECH_SOFTWARE_ENGINEERING)
 
 /mob/living/exosuit/premade/salvage_gantry
 	name = "\improper Carrion Crawler"
@@ -78,7 +91,7 @@
 	install_system(new /obj/item/mech_equipment/clamp(src), HARDPOINT_RIGHT_HAND)
 	install_system(new /obj/item/mech_equipment/mounted_system/taser/plasma(src), HARDPOINT_LEFT_HAND)
 
-/area/scavver
+/area/scavver/
 	icon = 'maps/away/scavver/scavver_gantry_sprites.dmi'
 
 /area/scavver/gantry/up1
@@ -110,10 +123,6 @@
 	name = "\improper Private Yacht Lower Deck"
 	icon_state = "gantry_yacht_down"
 
-/area/scavver/yachtdown/thrusters
-	name = "\improper Private Yacht Lower Deck Thrusters"
-	icon_state = "gantry_yacht_up"
-
 /area/scavver/hab
 	name = "\improper Habitation Module"
 	icon_state = "gantry_hab"
@@ -133,7 +142,6 @@
 	name = "\improper ITV Vulcan"
 	icon_state = "gantry_pod"
 	area_flags = AREA_FLAG_RAD_SHIELDED
-
 
 //smes
 /obj/machinery/power/smes/buildable/preset/scavver/smes
