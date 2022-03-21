@@ -229,6 +229,19 @@
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{
 	dir = 8
 	},
+/obj/machinery/atmospherics/unary/vent_pump/tank{
+	dir = 1;
+	external_pressure_bound = 0;
+	external_pressure_bound_default = 0;
+	icon_state = "map_vent_in";
+	id_tag = "scavver_teg_out";
+	initialize_directions = 1;
+	internal_pressure_bound = 4000;
+	internal_pressure_bound_default = 4000;
+	pressure_checks = 2;
+	pressure_checks_default = 2;
+	pump_direction = 0
+	},
 /turf/simulated/floor/reinforced,
 /area/scavver/yachtup)
 "cS" = (
@@ -322,6 +335,15 @@
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide/engine_setup,
 /turf/simulated/floor/airless,
 /area/scavver/gantry/up2)
+"dz" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	dir = 4;
+	id_tag = "dropodwest_pump_out_external";
+	power_rating = 25000
+	},
+/obj/structure/railing/mapped,
+/turf/simulated/floor/airless,
+/area/scavver/lifepod)
 "dD" = (
 /obj/structure/cable{
 	d2 = 2;
@@ -375,6 +397,10 @@
 	tag_exterior_door = "scav_hab_exterior_door";
 	tag_exterior_sensor = null;
 	tag_interior_door = "scav_hab_interior_door"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	id_tag = "scav_hab_pump";
+	power_rating = 25000
 	},
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/plating,
@@ -646,6 +672,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/scavver/lifepod)
 "gD" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	id_tag = "dropodeast_pump";
+	power_rating = 25000
+	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/reinforced/airless,
 /area/scavver/lifepod)
@@ -696,8 +726,7 @@
 /area/scavver/yachtup)
 "ht" = (
 /obj/structure/table/rack,
-/obj/item/weapon/gun/projectile/pistol/throwback,
-/obj/item/weapon/gun/projectile/pistol/improvised,
+/obj/item/weapon/gun/energy/plasmastun,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/scavver/hab)
 "hv" = (
@@ -803,6 +832,10 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	id_tag = "scav_pod_pump";
+	power_rating = 25000
 	},
 /turf/simulated/floor/reinforced,
 /area/scavver/escapepod)
@@ -1245,6 +1278,11 @@
 /turf/simulated/floor/tiled/freezer,
 /area/scavver/hab)
 "nw" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	dir = 4;
+	id_tag = "dropodwest_pump_out_internal";
+	power_rating = 25000
+	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
 	cycle_to_external_air = 1;
 	frequency = 1380;
@@ -2574,6 +2612,10 @@
 /turf/simulated/floor/tiled/freezer,
 /area/scavver/hab)
 "BR" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	id_tag = "dropodwest_pump";
+	power_rating = 25000
+	},
 /turf/simulated/floor/reinforced/airless,
 /area/scavver/lifepod)
 "BT" = (
@@ -2673,6 +2715,11 @@
 /turf/simulated/floor/airless,
 /area/scavver/yachtup)
 "Dj" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	dir = 8;
+	id_tag = "dropodeast_pump_out_internal";
+	power_rating = 25000
+	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
 	cycle_to_external_air = 1;
 	frequency = 1380;
@@ -2991,6 +3038,7 @@
 /obj/item/weapon/material/shard,
 /obj/item/weapon/material/shard,
 /obj/item/weapon/material/shard,
+/obj/item/weapon/material/shard,
 /obj/item/weapon/tank/oxygen,
 /obj/item/weapon/material/shard,
 /obj/item/weapon/material/shard,
@@ -3211,13 +3259,18 @@
 /area/space)
 "JK" = (
 /obj/structure/table/rack,
+/obj/item/stack/material/rods/ten,
 /obj/machinery/recharger/wallcharger{
 	dir = 8;
 	icon_state = "wrecharger0";
 	pixel_x = 23;
 	pixel_y = -3
 	},
-/obj/item/weapon/gun/projectile/automatic/assault_rifle/improvised,
+/obj/item/weapon/gun/magnetic,
+/obj/item/weapon/stock_parts/capacitor/adv,
+/obj/item/weapon/cell/high,
+/obj/item/weapon/cell/high,
+/obj/item/weapon/cell/high,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/scavver/hab)
 "JO" = (
@@ -4022,6 +4075,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/reinforced/airless,
 /area/scavver/lifepod)
+"TK" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	dir = 8;
+	id_tag = "dropodeast_pump_out_external";
+	power_rating = 25000
+	},
+/obj/structure/railing/mapped,
+/turf/simulated/floor/airless,
+/area/scavver/lifepod)
 "TR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/corner/lightgrey{
@@ -4106,6 +4168,10 @@
 	frequency = 1380;
 	id_tag = "scav_hab_sensor_chamber";
 	pixel_x = 22
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	id_tag = "scav_hab_pump";
+	power_rating = 25000
 	},
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/plating,
@@ -4270,6 +4336,10 @@
 	tag_chamber_sensor = "scav_pod_sensor_chamber";
 	tag_exterior_door = "scav_pod_exterior_door";
 	tag_interior_door = "scav_pod_interior_door"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
+	id_tag = "scav_pod_pump";
+	power_rating = 25000
 	},
 /turf/simulated/floor/reinforced,
 /area/scavver/escapepod)
@@ -18070,7 +18140,7 @@ KK
 Pq
 BE
 rp
-BJ
+dz
 eN
 eN
 eN
@@ -18374,7 +18444,7 @@ KK
 iZ
 LS
 rp
-BJ
+TK
 eN
 eN
 eN
