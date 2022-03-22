@@ -1792,6 +1792,14 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
+"dR" = (
+/obj/structure/table/rack/shelf,
+/obj/item/weapon/book{
+	desc = At one point, this was probably a manual for safe missile operation. You can't tell because all the pages have been torn out.;
+	name = "Missiles for Dummies!"
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "dT" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -2171,9 +2179,14 @@
 /turf/simulated/floor/plating,
 /area/maintenance/substation/thirddeck)
 "eL" = (
-/obj/machinery/light{
+/obj/machinery/light/small{
 	dir = 8
 	},
+/obj/structure/mech_wreckage{
+	desc = "What was once supply's treasured power loader. Poor thing.";
+	name = "Ol' Reliable's wreckage"
+	},
+/obj/effect/decal/cleanable/blood/oil,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "eM" = (
@@ -8271,6 +8284,13 @@
 /obj/random/illegal,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
+"qk" = (
+/obj/structure/fitness/weightlifter{
+	desc = "A machine used to lift weights. Or well it used to be used to lift weights. Or it used to lift weights. Perhaps even it used to be used to weights.";
+	name = "rusty weightlifting machine"
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "ql" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /obj/machinery/meter,
@@ -9852,7 +9872,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/munitions,
+/obj/machinery/door/airlock/hatch/maintenance,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/thirddeck/aft)
 "sJ" = (
@@ -15007,19 +15027,13 @@
 /turf/simulated/floor/tiled/monotile,
 /area/storage/tools)
 "CB" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 9;
-	icon_state = "techfloor_edges"
-	},
-/obj/structure/closet/crate/munitions/payload/emp,
-/obj/machinery/light,
 /obj/machinery/light/small{
 	dir = 8
 	},
 /obj/structure/lattice,
 /obj/random/maintenance,
 /turf/simulated/open,
-/area/space)
+/area/maintenance/thirddeck/starboard)
 "CD" = (
 /obj/random/trash,
 /turf/simulated/floor/plating,
@@ -15408,6 +15422,12 @@
 	},
 /turf/simulated/wall/prepainted,
 /area/command/disperser)
+"DH" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/turbolift/missiles_lift)
 "DJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -18962,10 +18982,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
 "MI" = (
-/obj/structure/railing/mapped{
-	dir = 4;
-	tag = "icon-railing0 (EAST)"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
@@ -19221,10 +19237,6 @@
 "Nx" = (
 /obj/effect/floor_decal/corner_techfloor_grid{
 	dir = 9
-	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
 	},
 /obj/machinery/camera/network/command{
 	c_tag = "Missile Magazine Upper Starboard"
@@ -20068,6 +20080,17 @@
 /obj/item/weapon/weldpack/bigwelder,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/engineering/hardstorage)
+"PR" = (
+/obj/machinery/conveyor/ammobelt{
+	dir = 8;
+	id = "ammobelt2"
+	},
+/obj/structure/missile{
+	desc = "Goldie, how many times have I told you guys that I don't want no horsing around on the airplane?";
+	name = "Slim Pickins"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/command/gunnery/missiles/inside)
 "PS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -20454,6 +20477,10 @@
 	},
 /turf/simulated/wall/ocp_wall,
 /area/thruster/d3port)
+"Rj" = (
+/obj/structure/closet/crate/trashcart,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "Rk" = (
 /obj/effect/floor_decal/industrial/loading{
 	dir = 4
@@ -20504,7 +20531,6 @@
 /obj/random/maintenance,
 /turf/simulated/floor/tiled/dark,
 /turf/simulated/floor/tiled/techfloor,
-/area/command/gunnery/missiles/storage,
 /area/maintenance/thirddeck/starboard)
 "Rq" = (
 /obj/machinery/status_display,
@@ -21898,6 +21924,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/aft)
 "VF" = (
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "VG" = (
@@ -22089,10 +22116,7 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/maintenance/thirddeck/starboard)
 "Wb" = (
-/obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/starboard,
 /area/maintenance/thirddeck/starboard)
 "Wd" = (
 /obj/structure/disposalpipe/segment{
@@ -22271,6 +22295,7 @@
 	external_pressure_bound = 101.325;
 	external_pressure_bound_default = 101.325
 	},
+/obj/effect/decal/cleanable/blood/oil/streak,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/starboard)
 "WC" = (
@@ -22760,6 +22785,11 @@
 "XR" = (
 /turf/simulated/floor/tiled,
 /area/crew_quarters/cryolocker)
+"XT" = (
+/obj/effect/decal/cleanable/blood/gibs/robot,
+/obj/effect/decal/cleanable/blood/oil,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "XU" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -43549,9 +43579,9 @@ ck
 VR
 Uv
 eF
-VF
+Wb
 aY
-Og
+DH
 Og
 Ap
 dD
@@ -43737,7 +43767,7 @@ BM
 al
 Fs
 aw
-VJ
+PR
 aJ
 XF
 ad
@@ -43757,12 +43787,12 @@ Rf
 Og
 UC
 WB
-VF
+XT
 CD
-VF
-VF
-VF
-VF
+qk
+Wb
+Wb
+Rj
 TD
 lc
 su
@@ -43959,10 +43989,10 @@ Nx
 Wa
 PG
 xF
-VF
-VF
+Wb
+Wb
 dD
-VF
+Wb
 TI
 dD
 TD
@@ -44156,9 +44186,9 @@ rs
 MI
 MB
 OV
-Wb
-Wb
-Wb
+VF
+VF
+VF
 QV
 Pa
 XK
@@ -44359,15 +44389,15 @@ IE
 HX
 fL
 TI
-VF
+Wb
 dD
 dD
-VF
+Wb
 dD
 Ro
 dD
 oC
-VF
+dR
 NB
 wl
 rh
@@ -44560,7 +44590,7 @@ de
 cT
 lO
 da
-VF
+Wb
 dD
 nA
 nA
@@ -44762,7 +44792,7 @@ cO
 ng
 lO
 da
-VF
+Wb
 bv
 nA
 bz

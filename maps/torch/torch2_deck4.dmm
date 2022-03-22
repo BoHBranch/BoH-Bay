@@ -7288,6 +7288,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/fore)
+"oL" = (
+/obj/random/trash,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/forestarboard)
 "oM" = (
 /obj/machinery/cryopod,
 /obj/machinery/computer/cryopod{
@@ -10043,6 +10047,8 @@
 "wt" = (
 /obj/structure/table/rack,
 /obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/trash,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/forestarboard)
 "ww" = (
@@ -10258,6 +10264,12 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/hangcheck)
+"wP" = (
+/obj/structure/table/rack,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/forestarboard)
 "wQ" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1;
@@ -11419,6 +11431,15 @@
 /obj/machinery/door/blast/regular/escape_pod,
 /turf/simulated/floor/reinforced,
 /area/maintenance/fourthdeck/port)
+"BC" = (
+/obj/structure/table/rack,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/trash,
+/obj/random/trash,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/forestarboard)
 "BD" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/foreport)
@@ -11523,6 +11544,15 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fourthdeck/fore)
+"BW" = (
+/obj/structure/largecrate,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/forestarboard)
 "Ca" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/ladder/up,
@@ -11666,6 +11696,14 @@
 /area/hallway/primary/fourthdeck/aft)
 "CN" = (
 /obj/structure/mattress/dirty,
+/obj/random/trash,
+/obj/effect/decal/cleanable/blood/oil,
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/obj/effect/decal/cleanable/blood,
+/mob/living/simple_animal/mouse/brown{
+	desc = "It's a small rodent. Smells faintly of cough syrup.";
+	name = "Tilt"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/forestarboard)
 "CO" = (
@@ -11760,6 +11798,7 @@
 /area/maintenance/fourthdeck/foreport)
 "Dg" = (
 /obj/machinery/power/smes/batteryrack,
+/obj/random/trash,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/forestarboard)
 "Dq" = (
@@ -12160,6 +12199,14 @@
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/office)
+"Fc" = (
+/obj/structure/table/rack,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/trash,
+/obj/random/trash,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/forestarboard)
 "Fd" = (
 /obj/effect/floor_decal/corner/brown/half{
 	dir = 4;
@@ -15194,6 +15241,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/commissary)
+"OR" = (
+/obj/effect/decal/cleanable/blood/oil/streak,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/forestarboard)
 "OS" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -18481,6 +18532,10 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/deckchief)
+"XO" = (
+/obj/effect/decal/cleanable/blood/oil,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/fourthdeck/forestarboard)
 "XP" = (
 /obj/effect/floor_decal/corner/brown/mono,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -18765,6 +18820,10 @@
 /area/hallway/primary/fourthdeck/aft)
 "YC" = (
 /obj/structure/largecrate,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/maintenance,
+/obj/random/maintenance,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "YD" = (
@@ -38827,7 +38886,7 @@ VW
 er
 Pt
 wt
-wt
+BC
 bo
 WI
 vH
@@ -39230,8 +39289,8 @@ NH
 Gr
 NM
 KI
-KI
-KI
+oL
+OR
 Sh
 WI
 vH
@@ -39633,7 +39692,7 @@ bN
 Ng
 ir
 er
-YC
+BW
 Ng
 KI
 bo
@@ -39836,8 +39895,8 @@ AP
 rV
 er
 CN
-KI
-bN
+XO
+Ng
 bo
 lr
 pd
@@ -40038,8 +40097,8 @@ Gz
 rV
 er
 wt
-wt
-wt
+wP
+Fc
 bo
 lr
 lr
