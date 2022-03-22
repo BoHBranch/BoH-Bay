@@ -1795,7 +1795,7 @@
 "dR" = (
 /obj/structure/table/rack/shelf,
 /obj/item/weapon/book{
-	desc = At one point, this was probably a manual for safe missile operation. You can't tell because all the pages have been torn out.;
+	desc = "At one point, this was probably a manual for safe missile operation. You can't tell because all the pages have been torn out.";
 	name = "Missiles for Dummies!"
 	},
 /turf/simulated/floor/plating,
