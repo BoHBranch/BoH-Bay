@@ -416,13 +416,6 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/storage/tools)
-"bh" = (
-/obj/machinery/door/airlock/munitions,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles)
 "bi" = (
 /obj/structure/table/steel,
 /obj/item/device/multitool,
@@ -645,15 +638,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
-"bF" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/munitions,
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles)
 "bG" = (
 /obj/effect/catwalk_plated,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -8189,19 +8173,6 @@
 /obj/effect/floor_decal/corner/grey/diagonal,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
-"qa" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/door/airlock/security{
-	name = "KOSMAG Exterior";
-	req_access = null
-	},
-/obj/machinery/door/firedoor/autoset,
-/turf/simulated/floor/plating,
-/area/command/gunnery/missiles)
 "qb" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -9889,19 +9860,6 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters_boh/cabin_main)
-"sI" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/munitions,
-/turf/simulated/floor/tiled/steel_ridged,
-/area/command/gunnery/missiles/storage)
 "sJ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -15211,6 +15169,21 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/chapel/main)
+"CR" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/munitions{
+	name = "Weaponry Mount Storage"
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/command/gunnery/missiles/storage)
 "CS" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -15434,6 +15407,14 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
+"Dz" = (
+/obj/machinery/door/airlock/munitions{
+	name = "Missile Pod"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/dark,
+/area/command/gunnery/missiles)
 "DD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -15969,6 +15950,17 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftstarboard)
+"EU" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 5;
+	icon_state = "warning"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/munitions{
+	name = "Weaponry Mount Storage"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/gunnery/missiles/storage)
 "EW" = (
 /obj/machinery/cryopod{
 	dir = 4
@@ -17297,13 +17289,6 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/command/gunnery/missiles)
-"II" = (
-/obj/machinery/door/airlock/munitions,
-/obj/machinery/door/firedoor{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/command/gunnery/missiles/storage)
 "IJ" = (
 /obj/random_multi/single_item/punitelly,
 /obj/structure/railing/mapped{
@@ -18987,12 +18972,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
-"MB" = (
-/obj/machinery/door/airlock/munitions,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles)
 "MD" = (
 /obj/structure/sign/directions/science{
 	dir = 1;
@@ -20908,6 +20887,15 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
+"Sq" = (
+/obj/machinery/door/firedoor{
+	dir = 4
+	},
+/obj/machinery/door/airlock/munitions{
+	name = "Weaponry Mount Storage"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/command/gunnery/missiles/storage)
 "Sr" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -20953,16 +20941,6 @@
 	},
 /turf/simulated/floor/reinforced/hydrogen,
 /area/thruster/d3port)
-"Sz" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/munitions,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles)
 "SC" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -21075,6 +21053,18 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/missiles/storage)
+"SV" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/munitions{
+	name = "Missile Pod"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/gunnery/missiles)
 "SW" = (
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 6;
@@ -22224,15 +22214,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/command/gunnery/missiles/storage)
-"Wb" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 5;
-	icon_state = "warning"
-	},
-/obj/machinery/door/airlock/munitions,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles/storage)
 "Wd" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -22740,6 +22721,15 @@
 /obj/machinery/floodlight,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftstarboard)
+"Xs" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/munitions{
+	name = "Missile Pod"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/gunnery/missiles)
 "Xt" = (
 /obj/machinery/meter,
 /obj/effect/floor_decal/industrial/warning{
@@ -23179,6 +23169,17 @@
 /obj/machinery/portable_atmospherics/hydroponics,
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
+"YO" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/munitions{
+	name = "Missile Pod"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/command/gunnery/missiles)
 "YP" = (
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -23545,6 +23546,18 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/mess)
+"ZM" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor/autoset,
+/obj/machinery/door/airlock/munitions{
+	name = "Missile Belt Access"
+	},
+/turf/simulated/floor/plating,
+/area/command/gunnery/missiles)
 "ZN" = (
 /turf/simulated/wall/r_wall/hull,
 /area/tcommsat/chamber)
@@ -44126,7 +44139,7 @@ Hk
 Hw
 Hw
 Hw
-II
+Sq
 Hw
 rf
 XP
@@ -44316,9 +44329,9 @@ mI
 ms
 rs
 MI
-MB
+Dz
 OV
-Wb
+EU
 Oo
 Oo
 QV
@@ -44329,7 +44342,7 @@ VJ
 pp
 VJ
 ZY
-sI
+CR
 Qs
 sw
 RC
@@ -44508,10 +44521,10 @@ oK
 aF
 ph
 ah
-bh
+Xs
 bG
 bG
-bh
+Xs
 lP
 mt
 ou
@@ -44710,10 +44723,10 @@ pt
 pu
 pv
 ai
-Sz
+SV
 bH
 dc
-bF
+YO
 lS
 mu
 pQ
@@ -45120,7 +45133,7 @@ ag
 ag
 ag
 ag
-qa
+ZM
 lO
 lO
 lO
