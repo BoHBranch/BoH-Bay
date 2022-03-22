@@ -3,7 +3,7 @@
 	department = "Medical"
 	department_flag = MED
 	minimal_player_age = 0
-	minimum_character_age = list(SPECIES_HUMAN = 25) //lowered to 25 because of Resident alt-title. if resident title is removed or someone changes age to somehow link to tile, raise back to 28
+	minimum_character_age = list(SPECIES_HUMAN = 25)
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "the Chief Medical Officer"
@@ -80,6 +80,44 @@
 
 	access = list(access_medical, access_morgue, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 			            access_eva, access_surgery, access_medical_equip, access_solgov_crew, access_hangar)
+	minimal_access = list()
+
+	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
+							 /datum/computer_file/program/camera_monitor)
+	skill_points = 22
+
+/datum/job/doctor/virologist
+	title = "Virologist" //Highly specialized role for handling viruses only. Not a physician. Not a medtech.
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Chief Medical Officer"
+	economic_power = 8
+	minimum_character_age = list(SPECIES_HUMAN = 25)
+	minimal_player_age = 0
+	alt_titles = list()
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/virologist
+	allowed_branches = list(
+		/datum/mil_branch/expeditionary_corps,
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/virologist/fleet,
+		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/virologist
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/ec/o1,
+		/datum/mil_rank/fleet/o1,
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/civ/contractor
+	)
+	min_skill = list(   SKILL_EVA      = SKILL_BASIC,
+	                    SKILL_MEDICAL  = SKILL_BASIC,
+	                    SKILL_ANATOMY  = SKILL_BASIC,
+						SKILL_VIROLOGY = HAS_PERK)
+
+	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
+	                    SKILL_CHEMISTRY   = SKILL_MAX)
+
+	access = list(access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
+			            access_crematorium, access_surgery,
+			            access_medical_equip, access_solgov_crew, access_hangar)
 	minimal_access = list()
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,

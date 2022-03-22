@@ -39,6 +39,8 @@
 		<option>---</option>
 		<option value='?_src_=vars;offerghosts=\ref[src]'>Offer to ghosts</option>
 		<option value='?_src_=vars;give_spell=\ref[src]'>Give Spell</option>
+		<option value='?_src_=vars;give_disease2=\ref[src]'>Give Disease</option>
+		<option value='?_src_=vars;give_disease=\ref[src]'>Give TG-style Disease</option>
 		<option value='?_src_=vars;godmode=\ref[src]'>Toggle Godmode</option>
 		<option value='?_src_=vars;build_mode=\ref[src]'>Toggle Build Mode</option>
 
@@ -154,7 +156,7 @@
 
 // The following vars require R_DEBUG to edit
 /datum/proc/VV_locked()
-	return list("vars", "cuffed")
+	return list("vars", "viruses", "cuffed")
 
 /client/VV_locked()
 	return list("vars", "mob")

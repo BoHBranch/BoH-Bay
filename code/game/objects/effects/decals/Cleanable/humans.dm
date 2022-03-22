@@ -21,7 +21,9 @@ var/global/list/image/splatter_cache=list()
 	scent_descriptor = SCENT_DESC_ODOR
 
 	var/base_icon = 'icons/effects/blood.dmi'
+	var/list/viruses = list()
 	var/basecolor=COLOR_BLOOD_HUMAN // Color when wet.
+	var/list/datum/disease2/disease/virus2 = list()
 	var/amount = 5
 	var/drytime
 	var/dryname = "dried blood"
@@ -271,6 +273,7 @@ var/global/list/image/splatter_cache=list()
 	icon_state = "mucus"
 	generic_filth = TRUE
 	persistent = TRUE
+	var/list/datum/disease2/disease/virus2 = list()
 	var/dry=0 // Keeps the lag down
 
 /obj/effect/decal/cleanable/mucus/New()

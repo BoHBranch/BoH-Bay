@@ -14,14 +14,29 @@
 	shoes = /obj/item/clothing/shoes/dutyboots
 	id_type = /obj/item/weapon/card/id/torch/crew/medical/senior
 
+/decl/hierarchy/outfit/job/torch/crew/medical/virologist
+	name = OUTFIT_JOB_NAME("Virologist - Dagon")
+	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/medical
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_type =/obj/item/weapon/card/id/torch/crew/medical/virology
+
 /decl/hierarchy/outfit/job/torch/crew/medical/senior/fleet
 	name = OUTFIT_JOB_NAME("Physician - Fleet")
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/medical
+	shoes = /obj/item/clothing/shoes/dutyboots
+
+/decl/hierarchy/outfit/job/torch/crew/medical/virologist/fleet
+	name = OUTFIT_JOB_NAME("Virologist - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/medical
 	shoes = /obj/item/clothing/shoes/dutyboots
 
 /decl/hierarchy/outfit/job/torch/crew/medical/contractor/senior
 	name = OUTFIT_JOB_NAME("Physician - Contractor")
 	id_type = /obj/item/weapon/card/id/torch/contractor/medical/senior
+
+/decl/hierarchy/outfit/job/torch/crew/medical/contractor/virologist
+	name = OUTFIT_JOB_NAME("Virologist - Contractor")
+	id_type =/obj/item/weapon/card/id/torch/crew/medical/virology
 
 /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	name = OUTFIT_JOB_NAME("Medical Technician")
