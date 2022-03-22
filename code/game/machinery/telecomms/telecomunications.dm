@@ -296,7 +296,7 @@ var/global/list/obj/machinery/telecomms/telecomms_list = list()
 /obj/machinery/telecomms/receiver/proc/check_receive_level(datum/signal/signal)
 
 	if(!(signal.data["level"] in listening_levels))
-			for(var/obj/machinery/telecomms/hub/H in links)
+		for(var/obj/machinery/telecomms/hub/H in links)
 			var/list/connected_levels = list()
 			for(var/obj/machinery/telecomms/relay/R in H.links)
 				if(R.can_receive(signal))
