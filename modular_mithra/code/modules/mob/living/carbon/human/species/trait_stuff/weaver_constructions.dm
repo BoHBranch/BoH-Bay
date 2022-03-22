@@ -26,14 +26,6 @@
 	title = "dress"
 	result_type = /obj/item/clothing/under/skirt_c/dress/long/gown/weaver
 
-/*/datum/weaver_recipe/item/shoes
-	title = "shoes"
-	result_type = /obj/item/clothing/shoes/weavershoes
-
-/datum/weaver_recipe/item/gloves
-	title = "gloves"
-	result_type = /obj/item/clothing/gloves/weavergloves*/
-
 /datum/weaver_recipe/item/bindings
 	title = "bindings"
 	result_type = /obj/item/weapon/handcuffs/cable/tape/weaver

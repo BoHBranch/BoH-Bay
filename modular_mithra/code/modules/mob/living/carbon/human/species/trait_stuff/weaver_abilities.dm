@@ -117,16 +117,6 @@
 			silkcost = 100
 			weavetime = 10
 			finalized = input(src, "Are you sure you want to weave a dress? It will cost you [silkcost] silk.","Confirmation") as anything in list("Yes","No")
-		/*if(choice == "Gloves")
-			desired_result = /datum/weaver_recipe/item/gloves
-			silkcost = 25
-			weavetime = 5
-			finalized = input(src, "Are you sure you want to weave a pair of gloves? It will cost you [silkcost] silk.","Confirmation") as anything in list("Yes","No")
-		if(choice == "Shoes")
-			desired_result = /datum/weaver_recipe/item/shoes
-			silkcost = 25
-			weavetime = 5
-			finalized = input(src, "Are you sure you want to weave a pair of shoes? It will cost you [silkcost] silk.","Confirmation") as anything in list("Yes","No")*/
 		if(choice == "Handcuffs")
 			desired_result = /obj/item/weapon/handcuffs/cable/tape/weaver
 			silkcost = 50
