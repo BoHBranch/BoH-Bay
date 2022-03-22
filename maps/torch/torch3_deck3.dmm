@@ -153,6 +153,7 @@
 /obj/structure/sign/warning/moving_parts{
 	pixel_y = 24
 	},
+/obj/structure/closet/crate/munitions/equipment/autoarm,
 /turf/simulated/floor/plating,
 /area/command/gunnery/missiles/inside)
 "aw" = (
@@ -171,6 +172,7 @@
 	dir = 6
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/closet/crate/munitions/equipment/autoarm,
 /turf/simulated/floor/tiled/steel_grid,
 /area/command/gunnery/missiles/inside)
 "aA" = (
@@ -180,6 +182,7 @@
 	icon_state = "2-4"
 	},
 /obj/effect/catwalk_plated,
+/obj/structure/closet/crate/munitions/thruster/hunter,
 /turf/simulated/floor/plating,
 /area/command/gunnery/missiles/inside)
 "aB" = (
@@ -368,7 +371,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/obj/structure/closet/firecloset,
+/obj/structure/closet/crate/munitions/payload/diffuser,
 /turf/simulated/floor/tiled/steel_grid,
 /area/command/gunnery/missiles/inside)
 "bb" = (
@@ -540,9 +543,7 @@
 /area/maintenance/thirddeck/forestarboard)
 "bv" = (
 /obj/machinery/alarm{
-	dir = 4;
-	pixel_x = -23;
-	pixel_y = 0
+	pixel_x = -23
 	},
 /obj/machinery/light/small,
 /obj/random/maintenance,
@@ -636,12 +637,15 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8;
 	icon_state = "warning"
+<<<<<<< Updated upstream
 	},
 /obj/machinery/alarm{
 	dir = 8;
 	pixel_x = 25;
 	pixel_y = 0;
 	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+=======
+>>>>>>> Stashed changes
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
@@ -2177,17 +2181,11 @@
 /turf/simulated/floor/plating,
 /area/maintenance/substation/thirddeck)
 "eL" = (
-/obj/machinery/camera/network/third_deck{
-	dir = 4
-	},
-/obj/effect/floor_decal/techfloor{
-	dir = 8
-	},
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/command/gunnery/missiles/storage)
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "eM" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable{
@@ -2758,26 +2756,18 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "fL" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/conveyor/ammobelt{
-	dir = 1;
-	id = "ammobelt0";
-	name = "Loading Belt 1"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "fM" = (
@@ -3720,12 +3710,21 @@
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/mess)
 "hx" = (
+<<<<<<< Updated upstream
 /obj/effect/floor_decal/corner/black{
 	dir = 6;
 	icon_state = "corner_white"
+=======
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+>>>>>>> Stashed changes
 	},
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles/storage)
+/obj/effect/catwalk_plated,
+/obj/structure/closet/crate/munitions/thruster/point,
+/turf/simulated/floor/plating,
+/area/command/gunnery/missiles/inside)
 "hy" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1;
@@ -4595,9 +4594,6 @@
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
-"jb" = (
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/command/gunnery/missiles/storage)
 "jc" = (
 /turf/simulated/floor/wood/maple,
 /area/crew_quarters/mess)
@@ -6577,23 +6573,6 @@
 /obj/effect/floor_decal/corner/green/mono,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/fore)
-"nb" = (
-/obj/machinery/power/apc{
-	dir = 4;
-	name = "east bump";
-	pixel_x = 24
-	},
-/obj/structure/cable/green{
-	d2 = 8;
-	icon_state = "0-8"
-	},
-/obj/machinery/conveyor/ammobelt{
-	dir = 1;
-	id = "ammobelt1";
-	name = "Loading Belt 2"
-	},
-/turf/simulated/floor/tiled/steel_ridged,
-/area/command/gunnery/missiles)
 "nc" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -6633,14 +6612,13 @@
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)
 "ng" = (
-/obj/machinery/camera/network/command{
-	c_tag = "Missile Pod - Exterior";
-	dir = 8
-	},
 /obj/machinery/conveyor/ammobelt{
 	dir = 1;
 	id = "ammobelt1";
 	name = "Loading Belt 2"
+	},
+/obj/structure/missile{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/command/gunnery/missiles)
@@ -6708,15 +6686,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/engineering/hardstorage)
 "np" = (
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8"
-	},
 /obj/machinery/conveyor/ammobelt{
 	dir = 1;
 	id = "ammobelt1";
 	name = "Loading Belt 2"
+	},
+/obj/structure/missile{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/command/gunnery/missiles/inside)
@@ -7163,6 +7139,19 @@
 /obj/machinery/chemical_dispenser/bar_soft/full,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
+"oj" = (
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1";
+	tag = "icon-railing0 (EAST)"
+	},
+/obj/structure/lattice,
+/turf/simulated/open,
+/area/maintenance/thirddeck/starboard)
 "ok" = (
 /obj/machinery/power/apc{
 	dir = 8;
@@ -7317,18 +7306,20 @@
 /turf/simulated/floor/reinforced,
 /area/thruster/d3starboard)
 "oC" = (
-/obj/machinery/light{
-	dir = 4
-	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
+<<<<<<< Updated upstream
 /obj/effect/floor_decal/corner/black{
 	dir = 6;
 	icon_state = "corner_white"
+=======
+/obj/machinery/light/small{
+	dir = 4
+>>>>>>> Stashed changes
 	},
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles/storage)
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/starboard)
 "oD" = (
 /obj/machinery/suit_cycler/mining,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -7681,9 +7672,9 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/obj/structure/closet/emcloset,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/closet/crate/munitions/payload/emp,
 /turf/simulated/floor/tiled/steel_grid,
 /area/command/gunnery/missiles/inside)
 "pi" = (
@@ -7768,25 +7759,17 @@
 	dir = 8;
 	id = "ammobelt3"
 	},
+/obj/structure/missile,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/command/gunnery/missiles/inside)
 "pp" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/alarm{
-	dir = 4;
-	pixel_x = -23;
-	pixel_y = 0
-	},
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles/storage)
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "pq" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -7853,6 +7836,7 @@
 	dir = 8;
 	id = "ammobelt2"
 	},
+/obj/structure/missile,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/command/gunnery/missiles/inside)
 "pv" = (
@@ -7877,7 +7861,7 @@
 	dir = 4;
 	tag = "icon-railing0 (EAST)"
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/crate/munitions/thruster/planet,
 /turf/simulated/floor/tiled/steel_grid,
 /area/command/gunnery/missiles/inside)
 "pw" = (
@@ -8190,17 +8174,10 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "qa" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/machinery/door/airlock/munitions{
+	name = "Missile Bay"
 	},
-/obj/machinery/door/airlock/security{
-	name = "KOSMAG Exterior";
-	req_access = null
-	},
-/obj/machinery/door/firedoor/autoset,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles)
 "qb" = (
 /obj/structure/disposalpipe/segment{
@@ -9698,11 +9675,14 @@
 /obj/structure/disposalpipe/junction{
 	dir = 4;
 	icon_state = "pipe-j2"
+<<<<<<< Updated upstream
 	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
+=======
+>>>>>>> Stashed changes
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -9891,17 +9871,12 @@
 /area/crew_quarters_boh/cabin_main)
 "sI" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/munitions,
 /turf/simulated/floor/tiled/steel_ridged,
-/area/command/gunnery/missiles/storage)
+/area/hallway/primary/thirddeck/aft)
 "sJ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -10492,6 +10467,7 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
+<<<<<<< Updated upstream
 "tT" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 9;
@@ -10504,6 +10480,8 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/missiles/storage)
+=======
+>>>>>>> Stashed changes
 "tU" = (
 /obj/machinery/atmospherics/valve/shutoff{
 	dir = 4
@@ -12572,16 +12550,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/effect/floor_decal/techfloor{
-	dir = 5
-	},
-/obj/structure/closet/crate/munitions/thruster/point,
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/command/gunnery/missiles/storage)
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/starboard)
 "xG" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 6
@@ -13979,7 +13949,7 @@
 	},
 /obj/structure/ladder,
 /turf/simulated/floor/tiled/steel_grid,
-/area/command/gunnery/missiles/storage)
+/area/maintenance/thirddeck/starboard)
 "Aq" = (
 /obj/machinery/firealarm{
 	dir = 4;
@@ -15074,16 +15044,26 @@
 /turf/simulated/floor/tiled/monotile,
 /area/storage/tools)
 "CB" = (
+<<<<<<< Updated upstream
 /obj/effect/floor_decal/techfloor{
 	dir = 9;
 	icon_state = "techfloor_edges"
 	},
 /obj/structure/closet/crate/munitions/payload/emp,
 /obj/machinery/light{
+=======
+/obj/machinery/light/small{
+>>>>>>> Stashed changes
 	dir = 8
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/command/gunnery/missiles/storage)
+/obj/structure/lattice,
+/obj/random/maintenance,
+/turf/simulated/open,
+/area/space)
+"CD" = (
+/obj/random/trash,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "CE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -15614,6 +15594,7 @@
 	dir = 8;
 	id = "ammobelt3"
 	},
+/obj/structure/missile,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/command/gunnery/missiles/inside)
 "Ea" = (
@@ -16111,15 +16092,13 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/holocontrol)
 "Fs" = (
-/obj/structure/cable/green{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
+/obj/machinery/conveyor/ammobelt{
+	dir = 8;
+	id = "ammobelt3"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles/storage)
+/obj/structure/missile,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/command/gunnery/missiles/inside)
 "Ft" = (
 /obj/structure/bed/chair/wheelchair,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -16233,8 +16212,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
 "FG" = (
-/turf/simulated/wall/prepainted,
-/area/command/gunnery/missiles/storage)
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1;
+	icon_state = "warning"
+	},
+/obj/structure/railing/mapped{
+	dir = 1
+	},
+/obj/structure/closet/crate/munitions/payload/explosive,
+/turf/simulated/floor/tiled/steel_grid,
+/area/command/gunnery/missiles/inside)
 "FH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -16421,6 +16408,7 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
+<<<<<<< Updated upstream
 "Gk" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 10;
@@ -16429,6 +16417,8 @@
 /obj/structure/closet/crate/munitions/payload/diffuser,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/missiles/storage)
+=======
+>>>>>>> Stashed changes
 "Go" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -16743,6 +16733,16 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
+"Hi" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "Hj" = (
 /obj/structure/table/marble,
 /obj/structure/hygiene/sink/kitchen{
@@ -16752,14 +16752,6 @@
 /obj/effect/floor_decal/corner/grey/diagonal,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
-"Hk" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 6;
-	icon_state = "techfloor_edges"
-	},
-/obj/structure/closet/crate/munitions/thruster,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/command/gunnery/missiles/storage)
 "Hl" = (
 /obj/machinery/portable_atmospherics/canister/empty/carbon_dioxide,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -16820,6 +16812,7 @@
 /obj/machinery/light/spot{
 	dir = 1
 	},
+/obj/structure/closet/crate/munitions/thruster/planet,
 /turf/simulated/floor/plating,
 /area/command/gunnery/missiles/inside)
 "Hr" = (
@@ -16849,9 +16842,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
 /area/storage/tools)
-"Hw" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/command/gunnery/missiles/storage)
 "Hx" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -17089,12 +17079,8 @@
 /turf/simulated/wall/prepainted,
 /area/command/disperser)
 "HX" = (
-/obj/structure/plasticflaps,
-/obj/machinery/conveyor/ammobelt{
-	dir = 1;
-	id = "ammobelt1";
-	name = "Loading Belt 2"
-	},
+/obj/structure/wall_frame/standard,
+/obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/command/gunnery/missiles)
 "HZ" = (
@@ -17295,15 +17281,9 @@
 	id = "ammobelt1";
 	name = "Loading Belt 2"
 	},
+/obj/structure/missile,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/command/gunnery/missiles)
-"II" = (
-/obj/machinery/door/airlock/munitions,
-/obj/machinery/door/firedoor{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/command/gunnery/missiles/storage)
 "IJ" = (
 /obj/random_multi/single_item/punitelly,
 /obj/structure/railing/mapped{
@@ -17552,10 +17532,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
-"Jg" = (
-/obj/effect/floor_decal/techfloor,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/command/gunnery/missiles/storage)
 "Jh" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 4
@@ -18988,7 +18964,9 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
 "MB" = (
-/obj/machinery/door/airlock/munitions,
+/obj/machinery/door/airlock/munitions{
+	name = "Missile Bay"
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
@@ -19065,6 +19043,7 @@
 	dir = 8;
 	id = "ammobelt2"
 	},
+/obj/structure/missile,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/command/gunnery/missiles/inside)
 "MM" = (
@@ -19208,6 +19187,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/hardstorage)
 "Nh" = (
+/obj/machinery/camera/network/command{
+	c_tag = "Missile Magazine Upper";
+	dir = 1
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/command/gunnery/missiles/inside)
 "Nj" = (
@@ -19275,6 +19258,10 @@
 /obj/effect/wallframe_spawn/reinforced_phoron,
 /turf/simulated/floor/reinforced,
 /area/thruster/d3port)
+"Nv" = (
+/obj/structure/lattice,
+/turf/simulated/open,
+/area/maintenance/thirddeck/starboard)
 "Nw" = (
 /obj/effect/wallframe_spawn/no_grille,
 /obj/machinery/door/firedoor,
@@ -19292,7 +19279,7 @@
 	c_tag = "Missile Magazine Upper Starboard"
 	},
 /turf/simulated/floor/tiled/steel_grid,
-/area/command/gunnery/missiles/storage)
+/area/maintenance/thirddeck/starboard)
 "Ny" = (
 /obj/machinery/power/apc{
 	dir = 8;
@@ -19335,10 +19322,13 @@
 	dir = 4;
 	pixel_x = 24
 	},
+<<<<<<< Updated upstream
 /obj/effect/floor_decal/corner/black{
 	dir = 4;
 	icon_state = "corner_white"
 	},
+=======
+>>>>>>> Stashed changes
 /obj/machinery/light_switch{
 	pixel_x = 6;
 	pixel_y = -24
@@ -19347,8 +19337,8 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles/storage)
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "NC" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -19390,6 +19380,22 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/starboard)
+"NI" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/conveyor/ammobelt{
+	dir = 4;
+	id = "ammobelt1";
+	name = "Loading Belt 2"
+	},
+/obj/structure/missile{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel_ridged,
+/area/command/gunnery/missiles/inside)
 "NJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -19414,17 +19420,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/vacant/mess)
-"NN" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/machinery/conveyor/ammobelt{
-	dir = 1;
-	id = "ammobelt0";
-	name = "Loading Belt 1"
-	},
-/turf/simulated/floor/tiled/steel_ridged,
-/area/command/gunnery/missiles/storage)
 "NO" = (
 /obj/random_multi/single_item/punitelly,
 /obj/effect/decal/cleanable/dirt,
@@ -19442,14 +19437,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
-"NQ" = (
-/obj/machinery/conveyor/ammobelt{
-	dir = 1;
-	id = "ammobelt0";
-	name = "Loading Belt 1"
-	},
-/turf/simulated/floor/tiled/steel_ridged,
-/area/command/gunnery/missiles/storage)
 "NW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/junk,
@@ -19498,13 +19485,6 @@
 /obj/effect/shuttle_landmark/torch/deck2/aquila,
 /turf/space,
 /area/space)
-"Oc" = (
-/obj/effect/floor_decal/techfloor/corner{
-	dir = 1;
-	icon_state = "techfloor_corners"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/command/gunnery/missiles/storage)
 "Od" = (
 /obj/effect/floor_decal/spline/fancy/wood,
 /turf/simulated/floor/wood/walnut,
@@ -19575,13 +19555,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/foreport)
-"Oo" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4;
-	icon_state = "warning"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles/storage)
 "Op" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -19687,7 +19660,7 @@
 "OE" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/wall/r_wall/prepainted,
-/area/command/gunnery/missiles/storage)
+/area/maintenance/thirddeck/starboard)
 "OG" = (
 /obj/structure/bed/chair/office/comfy,
 /obj/machinery/button/windowtint{
@@ -19805,7 +19778,8 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
-/turf/simulated/floor/tiled/techfloor,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "OX" = (
 /obj/structure/table/standard,
@@ -19858,11 +19832,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles/storage)
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "Pb" = (
 /obj/effect/shuttle_landmark/torch/deck2/exploration_shuttle,
 /turf/space,
@@ -20037,7 +20009,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel_grid,
-/area/command/gunnery/missiles/storage)
+/area/maintenance/thirddeck/starboard)
 "PH" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -20211,6 +20183,7 @@
 /obj/effect/shuttle_landmark/ninja/deck3,
 /turf/space,
 /area/space)
+<<<<<<< Updated upstream
 "Qd" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 10;
@@ -20219,6 +20192,8 @@
 /obj/structure/closet/crate/munitions/equipment/autoarm,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/missiles/storage)
+=======
+>>>>>>> Stashed changes
 "Qh" = (
 /obj/structure/sign/solgov{
 	pixel_x = 32;
@@ -20300,11 +20275,6 @@
 /area/thruster/d3starboard)
 "Qs" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/floor_decal/corner/black{
@@ -20342,6 +20312,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
+/obj/structure/closet/crate/munitions/thruster,
 /turf/simulated/floor/tiled/steel_grid,
 /area/command/gunnery/missiles/inside)
 "Qx" = (
@@ -20469,6 +20440,7 @@
 "QQ" = (
 /turf/simulated/floor/tiled/dark,
 /area/engineering/hardstorage)
+<<<<<<< Updated upstream
 "QR" = (
 /obj/structure/closet/crate/munitions/payload/antimissile,
 /obj/effect/floor_decal/techfloor{
@@ -20477,6 +20449,8 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/missiles/storage)
+=======
+>>>>>>> Stashed changes
 "QS" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -20494,12 +20468,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4;
-	icon_state = "warning"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles/storage)
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "QX" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/structure/cable/green{
@@ -20542,7 +20513,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/chapel/office)
 "Rf" = (
-/obj/machinery/computer/shuttle_control/lift/missile,
+/obj/machinery/computer/shuttle_control/lift/missile{
+	name = "utility lift controls"
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/turbolift/missiles_lift)
 "Rh" = (
@@ -20584,6 +20557,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/chapel/office)
 "Ro" = (
+<<<<<<< Updated upstream
 /obj/machinery/power/apc{
 	dir = 4;
 	name = "east bump";
@@ -20599,6 +20573,17 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles/storage)
+=======
+/obj/random/maintenance,
+/obj/structure/closet/crate/plastic,
+/obj/random/trash,
+/obj/random/trash,
+/obj/random/trash,
+/obj/random/trash,
+/obj/random/maintenance,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/starboard)
+>>>>>>> Stashed changes
 "Rq" = (
 /obj/machinery/status_display,
 /turf/simulated/wall/prepainted,
@@ -20711,16 +20696,6 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /turf/simulated/wall/r_wall/hull,
 /area/thruster/d3starboard)
-"RJ" = (
-/obj/structure/plasticflaps,
-/obj/machinery/door/firedoor,
-/obj/machinery/conveyor/ammobelt{
-	dir = 1;
-	id = "ammobelt0";
-	name = "Loading Belt 1"
-	},
-/turf/simulated/floor/plating,
-/area/command/gunnery/missiles/storage)
 "RM" = (
 /obj/machinery/atmospherics/valve/digital{
 	dir = 4;
@@ -20776,16 +20751,6 @@
 /obj/machinery/portable_atmospherics/powered/pump/filled,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/foreport)
-"RW" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 9
-	},
-/obj/structure/closet/crate/munitions/payload/explosive,
-/obj/machinery/camera/network/command{
-	c_tag = "Missile Magazine Upper"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/command/gunnery/missiles/storage)
 "RY" = (
 /obj/effect/floor_decal/corner/green/half{
 	dir = 1;
@@ -21046,6 +21011,7 @@
 	},
 /turf/simulated/floor/reinforced/oxygen,
 /area/thruster/d3starboard)
+<<<<<<< Updated upstream
 "SM" = (
 /obj/effect/floor_decal/corner/black,
 /obj/effect/floor_decal/industrial/warning{
@@ -21057,6 +21023,8 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles/storage)
+=======
+>>>>>>> Stashed changes
 "SP" = (
 /obj/machinery/vending/boozeomat,
 /obj/machinery/requests_console{
@@ -21069,12 +21037,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
-"SU" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 4
+"SQ" = (
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1";
+	tag = "icon-railing0 (EAST)"
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/command/gunnery/missiles/storage)
+/obj/structure/lattice,
+/turf/simulated/open,
+/area/maintenance/thirddeck/starboard)
 "SW" = (
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 6;
@@ -21090,13 +21061,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftstarboard)
-"Ta" = (
-/obj/effect/floor_decal/techfloor{
-	dir = 6;
-	icon_state = "techfloor_edges"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/command/gunnery/missiles/storage)
 "Tb" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -21271,6 +21235,7 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hydroponics)
+<<<<<<< Updated upstream
 "TA" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 4;
@@ -21278,6 +21243,8 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/gunnery/missiles/storage)
+=======
+>>>>>>> Stashed changes
 "TB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -21331,6 +21298,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
+"TI" = (
+/obj/random/trash,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/starboard)
 "TL" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 4
@@ -21649,7 +21620,7 @@
 	dir = 5
 	},
 /turf/simulated/floor/tiled/steel_grid,
-/area/command/gunnery/missiles/storage)
+/area/maintenance/thirddeck/starboard)
 "UE" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -22030,10 +22001,8 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/aft)
 "VF" = (
-/obj/effect/floor_decal/techfloor,
-/obj/structure/closet/crate/munitions/equipment/autoarm,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/command/gunnery/missiles/storage)
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "VG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -22060,15 +22029,13 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/habcheck)
 "VJ" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/machinery/conveyor/ammobelt{
+	dir = 8;
+	id = "ammobelt2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles/storage)
+/obj/structure/missile,
+/turf/simulated/floor/tiled/steel_ridged,
+/area/command/gunnery/missiles/inside)
 "VK" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /obj/item/weapon/reagent_containers/food/condiment/enzyme{
@@ -22223,8 +22190,9 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled/steel_grid,
-/area/command/gunnery/missiles/storage)
+/area/maintenance/thirddeck/starboard)
 "Wb" = (
+<<<<<<< Updated upstream
 /obj/effect/floor_decal/industrial/warning{
 	dir = 5;
 	icon_state = "warning"
@@ -22233,6 +22201,11 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles/storage)
+=======
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
+>>>>>>> Stashed changes
 "Wd" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -22410,17 +22383,8 @@
 	external_pressure_bound = 101.325;
 	external_pressure_bound_default = 101.325
 	},
-/obj/effect/floor_decal/techfloor{
-	dir = 1;
-	icon_state = "techfloor_edges"
-	},
-/obj/structure/closet/crate/munitions/thruster/planet,
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/command/gunnery/missiles/storage)
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/thirddeck/starboard)
 "WC" = (
 /turf/simulated/floor/reinforced/hydrogen,
 /area/thruster/d3starboard)
@@ -22863,8 +22827,9 @@
 "XK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles/storage)
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 "XN" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1;
@@ -22955,6 +22920,7 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main)
+<<<<<<< Updated upstream
 "XZ" = (
 /obj/effect/floor_decal/corner/black{
 	dir = 6;
@@ -22966,6 +22932,8 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/gunnery/missiles/storage)
+=======
+>>>>>>> Stashed changes
 "Yb" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/foreport)
@@ -23615,19 +23583,15 @@
 /turf/simulated/floor/wood/maple,
 /area/chapel/main)
 "ZY" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment{
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/dark,
-/area/command/gunnery/missiles/storage)
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/starboard)
 
 (1,1,1) = {"
 aa
@@ -43308,10 +43272,10 @@ Gz
 EF
 cl
 cl
-Hw
-Hw
+aY
+aY
 OE
-Hw
+aY
 yQ
 dI
 dI
@@ -43510,18 +43474,18 @@ VR
 oH
 ck
 fI
-Hw
+aY
 Og
 Tj
-Hw
-Hw
-Hw
-Hw
-Hw
-Hw
+aY
+aY
+aY
+aY
+aY
+aY
 CB
-Gk
-Hw
+Nv
+kK
 VC
 RQ
 dC
@@ -43712,18 +43676,18 @@ VR
 Uv
 eF
 fJ
-Hw
+aY
 Og
 Og
 Ap
-tT
+dD
 eL
-Qd
-Hw
-RW
-Oc
-Jg
-Hw
+oj
+SQ
+SQ
+SQ
+SQ
+TD
 sW
 sv
 re
@@ -43897,9 +43861,9 @@ aa
 ad
 BM
 al
-aq
+Fs
 aw
-aD
+VJ
 aJ
 XF
 ad
@@ -43914,18 +43878,18 @@ bE
 dQ
 dQ
 fK
-Hw
+aY
 Rf
 Og
 UC
 WB
-jb
 VF
-Hw
-QR
-TA
-Ta
-Hw
+CD
+VF
+VF
+VF
+VF
+TD
 cw
 su
 Ly
@@ -44116,18 +44080,18 @@ cl
 cl
 cl
 da
-Hw
+aY
 Nx
 Wa
 PG
 xF
-SU
-Hk
-Hw
-Hw
-Hw
-II
-Hw
+VF
+VF
+dD
+VF
+TI
+dD
+TD
 rf
 XP
 ov
@@ -44301,10 +44265,10 @@ aa
 ad
 at
 nO
-aq
+Fs
 aw
-aD
-ba
+VJ
+FG
 aK
 ag
 aZ
@@ -44319,15 +44283,15 @@ MI
 MB
 OV
 Wb
-Oo
-Oo
+Wb
+Wb
 QV
 Pa
 XK
-Fs
-VJ
+XK
+XK
 pp
-VJ
+XK
 ZY
 sI
 Qs
@@ -44520,18 +44484,18 @@ qX
 IE
 HX
 fL
-RJ
-NQ
-NQ
-NN
-SM
-hx
+TI
+VF
+dD
+dD
+VF
+dD
 Ro
-XZ
+dD
 oC
-hx
+VF
 NB
-FG
+wl
 rh
 sx
 tS
@@ -44722,8 +44686,8 @@ de
 cT
 lO
 da
-Hw
-Hw
+VF
+dD
 nA
 nA
 nA
@@ -44911,20 +44875,20 @@ aq
 aw
 aD
 of
-ay
+np
 MF
 lG
-nb
+ng
 MF
 cO
 ng
 CH
-lG
+ng
 cO
-cO
+ng
 lO
 da
-dD
+VF
 bv
 nA
 bz
@@ -45109,10 +45073,10 @@ aa
 ad
 Hq
 Cr
-aq
+Fs
 aw
-aD
-SE
+VJ
+NI
 Rk
 ag
 ag
@@ -45126,7 +45090,7 @@ lO
 lO
 lO
 fM
-sZ
+Hi
 sZ
 Lz
 xz
@@ -45309,7 +45273,7 @@ aa
 aa
 aa
 ad
-aS
+hx
 Cr
 aq
 aw
@@ -45514,7 +45478,7 @@ ad
 aS
 Cr
 aq
-ay
+np
 ay
 np
 oq
