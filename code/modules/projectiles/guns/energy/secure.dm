@@ -106,4 +106,3 @@
 	req_access = list(list(access_brig, access_bridge))
 	accuracy = 0
 	self_recharge = 0
-	authorized_modes = list(UNAUTHORIZED, UNAUTHORIZED)
