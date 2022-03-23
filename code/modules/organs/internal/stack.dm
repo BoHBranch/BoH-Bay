@@ -12,7 +12,8 @@
 	status = ORGAN_ROBOTIC
 	vital = 1
 	origin_tech = list(TECH_BIO = 4, TECH_MATERIAL = 4, TECH_MAGNET = 2, TECH_DATA = 3)
-	relative_size = 25
+	relative_size = 95 //The relative chance your lace is hit //TEST VALUE, DON'T YELL AT ME -PurplePineapple
+	max_damage = 30
 
 	var/ownerckey
 	var/invasive
@@ -60,7 +61,6 @@
 	robotize()
 
 /obj/item/organ/internal/stack/Destroy()
-	. = ..()
 	var/obj/gore
 	playsound(src, "shatter", 70, 1)
 	gore = new /obj/item/weapon/material/shard(get_turf(owner), MATERIAL_GLASS)
@@ -68,6 +68,8 @@
 	gore = new /obj/effect/decal/cleanable/blood/gibs(get_turf(owner))
 	gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
 	owner.visible_message(SPAN_WARNING("[owner]'s neck explodes in a shower of strange blue liquid and metallic fragments!"))
+	owner.death()
+	..()
 
 /obj/item/organ/internal/stack/proc/backup_inviable()
 	return 	(!istype(backup) || backup == owner.mind || (backup.current && backup.current.stat != DEAD))
@@ -114,3 +116,10 @@
 	if(default_language) owner.default_language = default_language
 	owner.languages = languages.Copy()
 	to_chat(owner, "<span class='notice'>Consciousness slowly creeps over you as your new body awakens.</span>")
+
+/obj/item/organ/internal/stack/Process()
+	..()
+	if(!owner)
+		return
+	if(damage == max_damage)
+		Destroy()

@@ -900,11 +900,10 @@ Note that amputating the affected organ does in fact remove the infection from t
 		if(DROPLIMB_BURN)
 			new /obj/effect/decal/cleanable/ash(get_turf(victim))
 			for(var/obj/item/I in src)
-				if(I.w_class > ITEM_SIZE_SMALL && !istype(I,/obj/item/organ))
+				if(I.w_class > ITEM_SIZE_SMALL)
 					I.dropInto(loc)
 			for(var/obj/item/organ/O in internal_organs)
-				if(!O.can_disintegrate())
-					O.drop_organ(victim, src)
+				O.drop_organ(victim, src)
 			qdel(src)
 		if(DROPLIMB_BLUNT)
 			var/obj/gore
@@ -923,9 +922,7 @@ Note that amputating the affected organ does in fact remove the infection from t
 			gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
 
 			for(var/obj/item/organ/I in internal_organs)
-				I.removed()
-				if(!QDELETED(I) && isturf(loc))
-					I.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
+				I.drop_organ(victim, src)
 
 			for(var/obj/item/I in src)
 				I.dropInto(loc)

@@ -1,9 +1,9 @@
 /obj/item/robot_parts/robot_component/armour/exosuit
 	name = "exosuit armour plating"
 	armor = list(
-		melee = ARMOR_MELEE_SHIELDED,
-		bullet = ARMOR_BALLISTIC_RIFLE,
-		laser = ARMOR_LASER_MAJOR,
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED
@@ -14,9 +14,9 @@
 	name = "radiation-proof armour plating"
 	desc = "A fully enclosed radiation hardened shell designed to protect the pilot from radiation"
 	armor = list(
-		melee = ARMOR_MELEE_SHIELDED,
+		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -30,7 +30,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_SHIELDED,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_HANDGUNS,
 		energy = ARMOR_ENERGY_SHIELDED,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -43,9 +43,9 @@
 	desc = "Plating designed to deflect incoming attacks and explosions"
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
-		bullet = ARMOR_BALLISTIC_HEAVY,
-		laser = ARMOR_LASER_HEAVY,
-		energy = ARMOR_ENERGY_STRONG,
+		bullet = ARMOR_BALLISTIC_AP,
+		laser = ARMOR_LASER_RIFLES,
+		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_SHIELDED,
 		bio = ARMOR_BIO_SHIELDED
 		)
