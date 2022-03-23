@@ -545,21 +545,21 @@
 
 //mech projectile weps
 
-/datum/design/item/mechfab/exosuit/smg
+/datum/design/item/exosuit/smg
 	name = "mounted submachine gun"
 	id = "mech_smg"
 	req_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	build_path = /obj/item/mech_equipment/mounted_system/projectile
 	materials = list(DEFAULT_WALL_MATERIAL = 15000, "glass" = 5000)
 
-/datum/design/item/mechfab/exosuit/assaultrifle
+/datum/design/item/exosuit/assaultrifle
 	name = "mounted assault rifle"
 	id = "mech_assaultrifle"
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 4)
 	build_path = /obj/item/mech_equipment/mounted_system/projectile/assault_rifle
 	materials = list(DEFAULT_WALL_MATERIAL = 30000, "glass" = 5000, "silver" = 1000)
 
-/datum/design/item/mechfab/exosuit/assault
+/datum/design/item/exosuit/assault
 	name = "mounted heavy assault rifle"
 	id = "mech_heavy_ar"
 	req_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 6)
