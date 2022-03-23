@@ -163,9 +163,11 @@
 	O.set_dna(H.dna)
 
 /obj/aura/regenerating/human/unathi/yeosa
-	brute_mult = 1.5
-	organ_mult = 3
+	nutrition_damage_mult = 1.75
+	brute_mult = 1.25
+	organ_mult = 2.5
 	tox_mult = 2
+	fire_mult = 0.75
 
 /obj/aura/regenerating/human/diona
 	brute_mult = 4
