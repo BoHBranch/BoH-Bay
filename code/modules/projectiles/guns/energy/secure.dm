@@ -102,7 +102,8 @@
 
 /obj/item/weapon/gun/energy/plasmarifle/secure
 	name = "Hephaestus ITER-Mars"
-	desc = "A Hephaestus Industries replica of NT ITER using terran modification to the same rifle. It has less powerful lens than the original making it extremely inaccurate."
+	desc = "A Hephaestus Industries replica of NT ITER using terran modification to the same rifle. It has less powerful lens than the original making it less accurate."
 	req_access = list(list(access_brig, access_bridge))
 	accuracy = 0
+	self_recharge = 0
 	authorized_modes = list(UNAUTHORIZED, UNAUTHORIZED)

@@ -214,6 +214,8 @@
 	slot_flags = SLOT_BACK
 	fire_delay = 20
 	max_shots = 16
+	self_recharge = 1
+	recharge_time = 8
 	accuracy = 3
 	projectile_type = /obj/item/projectile/energy/plasmarifle
 	firemodes = list(
