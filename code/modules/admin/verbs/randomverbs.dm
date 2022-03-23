@@ -894,3 +894,35 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		to_chat(usr, "Random events disabled")
 		message_admins("Admin [key_name_admin(usr)] has disabled random events.", 1)
 	SSstatistics.add_field_details("admin_verb","TRE") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+/client/proc/reveal_sensor_map()
+	set category = "Fun"
+	set name = "Reveal Sensor Map"
+	set desc = "Reveals all Sensor Map contacts as if you were a sensor operator"
+
+	if (!check_rights(R_FUN)) return
+
+	for (var/square in block(locate(1,1,GLOB.using_map.overmap_z), locate(GLOB.using_map.overmap_size,GLOB.using_map.overmap_size,GLOB.using_map.overmap_z)))
+		var/turf/T = square
+		for (var/obj/effect/overmap/effect in T.contents)
+			var/image/marker = image(loc = effect, icon = 'icons/obj/overmap.dmi', icon_state = effect.overmap_effect_state)
+			if (effect.color)
+				marker.color = effect.color
+				marker.filters = filter(type="drop_shadow", color = marker.color + "F0", size = 2, offset = 1,x = 0, y = 0)
+
+			usr.client.images |= marker
+
+	to_chat(usr, "You now see any map effects")
+
+/client/proc/hide_sensor_map()
+	set category = "Fun"
+	set name = "Hide Sensor Map"
+	set desc = "Hides all Sensor Map contacts as if you weren't a sensor operator"
+
+	if (!check_rights(R_FUN)) return
+
+	for (var/image/i in usr.client.images)
+		if ("[i.icon]" == "icons/obj/overmap.dmi")
+			usr.client.images -= i
+
+	to_chat(usr, "You no longer see any map effects")
