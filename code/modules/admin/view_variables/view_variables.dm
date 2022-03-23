@@ -62,6 +62,7 @@
 									<option />
 									<option value='?_src_=vars;mark_object=\ref[D]'>Mark Object</option>
 									<option value='?_src_=vars;call_proc=\ref[D]'>Call Proc</option>
+									<option value='?_src_=vars;transformicon=\ref[D]'>Transform</option>
 									[D.get_view_variables_options()]
 								</select>
 							</form>
