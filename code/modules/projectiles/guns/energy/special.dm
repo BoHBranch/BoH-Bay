@@ -205,7 +205,7 @@
 /obj/item/weapon/gun/energy/plasmarifle
 	name = "Nanotrasen ITER"
 	desc = "A rare nanotrasen branded plasma rifle marketed as a weapon to change the war forever. However due to it's volatility and high maintenence costs it is uncommon outside of Sol-controlled space.\
-	Unlike it's older laser cousin it's projectiles deliver a meatier punch at higher firerate with the cost of it's precision and utlity. It is powered by miniature fusion reactor which unfortunetly needs an impulse to start going again."
+	Unlike it's older laser cousin it's projectiles deliver a meatier punch at higher firerate with the cost of it's precision and utlity. It is powered by miniature fusion reactor making it slowly recharge it's plasma reserves."
 	icon = 'icons/obj/guns/plasma_rifle.dmi'
 	icon_state = "plasma_rifle"
 	item_state = "plasma_rifle"
