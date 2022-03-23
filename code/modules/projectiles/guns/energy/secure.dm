@@ -99,4 +99,10 @@
 	name = "Hephaestus G40E-UP"
 	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts. Fitted with an NT1019 chip to make sure killcount is tracked appropriately."
 	icon_state = "lasersec"
+
+/obj/item/weapon/gun/energy/plasmarifle/secure
+	name = "Hephaestus ITER-Mars"
+	desc = "A Hephaestus Industries replica of NT ITER using terran modification to the same rifle. It has less powerful lens than the original making it extremely inaccurate."
 	req_access = list(list(access_brig, access_bridge))
+	accuracy = 0
+	authorized_modes = list(UNAUTHORIZED, UNAUTHORIZED)
