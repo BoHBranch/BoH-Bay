@@ -50,7 +50,7 @@
 	desc = "A solitary sensor moves inside a recessed slit in the armour plates."
 	icon_state = "heavy_head"
 	max_damage = 500
-	power_use = 0
+	power_use = 100
 
 /obj/item/mech_component/sensors/heavy/prebuild()
 	..()
@@ -65,7 +65,7 @@
 	exosuit_desc_string = "a heavily armoured chassis"
 	icon_state = "heavy_body"
 	max_damage = 500
-	mech_health = 1200
+	mech_health = 700
 	power_use = 50
 	has_hardpoints = list(HARDPOINT_BACK)
 
