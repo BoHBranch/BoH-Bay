@@ -123,9 +123,9 @@
 	to_chat(owner, "<span class = 'notice' font size='10'><B>Is this the void...?</B></span>")
 	sleep(1 SECONDS)
 	playsound(owner, 'sound/effects/lacefail_survival.ogg', 70, 0)
-	to_chat(owner, "<font color = red><font size = 4><b>You feel an indescribable, otherworldly agony strike your mind like a searing hot iron. Fragmented memories, \
+	to_chat(owner, "<font size = 4><span class = 'danger'><b>You feel an indescribable, otherworldly agony strike your mind like a searing hot iron. Fragmented memories, \
 	sensations and feelings flood you like tidal waves of damned, tormented cries from a mind not your own. Nightmare. Nightmare. Nightmare. \
-	A broken consciousness fires itself into your brain, before all goes silent. You feel dazed, and in pain.</font></b>")
+	A broken consciousness fires itself into your brain, before all goes silent. You feel dazed, and in pain.</font></span></b>")
 	alert(owner, "You have lost your lace. By way of violent neuron rearrangement, your mind has been preserved - but in a fragmented state. \
 	Your memories and thoughts feel disorganized and wispy. It may be a long time before you're able to regain what was lost. \
 	Much of your previous skillset has been forgotten, for the time.", "Lace Critical Failure")
