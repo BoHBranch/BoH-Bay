@@ -13763,6 +13763,9 @@
 	dir = 4;
 	icon_state = "doublebed"
 	},
+/obj/effect/landmark/start{
+	name = "Psionic Advisor"
+	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/psiadvisor)
 "wI" = (
