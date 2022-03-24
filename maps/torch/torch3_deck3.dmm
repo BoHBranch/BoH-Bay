@@ -10712,10 +10712,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser/odst)
 "tR" = (
-/obj/machinery/computer/modular/preset/civilian{
-	dir = 1
-	},
 /obj/machinery/light,
+/obj/structure/table/woodentable/ebony,
 /turf/simulated/floor/tiled/techfloor,
 /area/radio_host/backroom)
 "tS" = (
