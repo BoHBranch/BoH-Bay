@@ -263,11 +263,19 @@
 	name = "Phoron Restructurant security suit"
 	icon_state = "phorosianSecurity_suit"
 	item_state = "phorosianSecurity_suit"
+	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_ARMOR_C, ACCESSORY_SLOT_ARMOR_A, ACCESSORY_SLOT_ARMOR_L, ACCESSORY_SLOT_ARMOR_S, ACCESSORY_SLOT_ARMOR_M)
 
 /obj/item/clothing/head/helmet/space/plasmasans/security
 	name = "Phoron Restructurant security helmet"
 	icon_state = "phorosianSecurity_helmet0"
 	item_state = "phorosianSecurity_helmet0"
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_SMALL,
+		bomb = ARMOR_BOMB_PADDED
+		)
 
 /obj/item/clothing/suit/space/plasmasans/security/hos
 	name = "Phoron Restructurant head of security suit"
