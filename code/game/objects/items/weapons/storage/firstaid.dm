@@ -89,6 +89,7 @@
 	desc = "Contains advanced medical treatments."
 	icon_state = "purplefirstaid"
 	item_state = "firstaid-advanced"
+	max_storage_space = DEFAULT_LARGEBOX_STORAGE
 
 	startswith = list(
 		/obj/item/weapon/storage/pill_bottle/assorted,
@@ -103,6 +104,7 @@
 	desc = "Contains advanced medical treatments."
 	icon_state = "bezerk"
 	item_state = "bezerk"
+	max_storage_space = DEFAULT_LARGEBOX_STORAGE
 
 	startswith = list(
 		/obj/item/weapon/storage/pill_bottle/bicaridine,
