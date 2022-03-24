@@ -28,7 +28,7 @@
 	name = "EM-shielded armour plating"
 	desc = "A shielded plating that sorrounds the eletronics and protects them from electromagnetic radiation"
 	armor = list(
-		melee = ARMOR_MELEE_SHIELDED,
+		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_SMALL,
 		laser = ARMOR_LASER_SMALL,
 		energy = ARMOR_ENERGY_SHIELDED,
