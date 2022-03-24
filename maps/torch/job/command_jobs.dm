@@ -412,7 +412,7 @@
 	return "You are the Sol Gov Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and governmental interests on board. Send faxes back to Sol on mission progress and important events."
 
 /datum/job/solrep/post_equip_rank(var/mob/person, var/alt_title)
-	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Sol Federal Agent")]"]"
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Sol Agent")]"]"
 	for(var/mob/M in GLOB.player_list)
 		if(M.client && M.mind)
 			if(M.mind.assigned_role == "Sol Federal Agent")
@@ -420,7 +420,7 @@
 	..()
 
 /datum/job/solguard
-	title = "Sol Federal Agent"
+	title = "Sol Agent"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1

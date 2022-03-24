@@ -164,3 +164,14 @@
 	item_cost = 4
 	path = /obj/item/clothing/gloves/nabber
 
+/datum/uplink_item/item/tools/landmine
+	name = "High Explosive Landmine"
+	desc = "A landmine with an explosive payload. Fairly obvious if not well hidden. Can't be disarmed once placed."
+	item_cost = 12// Very, VERY obvious.
+	path = /obj/item/weapon/mine
+
+/datum/uplink_item/item/tools/landmine_phoron
+	name = "Chemical Landmine"
+	desc = "Contains a chemical that's prone to bursting into a violent fireball. Releases the aforementioned chemical once stepped upon. Very dangerous. Unable to disarm once planted."
+	item_cost = 48//Very, VERY DANGEROUS.
+	path = /obj/item/weapon/mine/phoron

@@ -250,3 +250,6 @@
 /obj/item/weapon/card/id/torch/contractor/service/lawyer
 	job_access_type = /datum/job/lawyer
 	detail_color = COLOR_NAVY_BLUE
+
+/obj/item/weapon/card/id/torch/crew/radio_host
+	job_access_type = /datum/job/radio_host

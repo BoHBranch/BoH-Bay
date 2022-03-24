@@ -1534,3 +1534,19 @@ Unlike what normally spawns, this material will be dangerous, or just outright b
 				/obj/random/hostile/maint = 35,
 				/obj/item/weapon/gun/projectile/pirate/unloaded = 4,
 				/obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn/empty = 2)
+
+/////////
+// stuff for Away sites - BoH
+/////////
+/obj/random/mines
+	name = "Random Mine"
+	desc = "This is a random mine spawn."
+	icon = 'icons/obj/weapons.dmi'
+	icon_state = "uglymine"
+	spawn_nothing_percentage = 25
+
+/obj/random/mines/spawn_choices()
+	return list(/obj/effect/mine/dnascramble = 2,
+				/obj/effect/mine/n2o = 1,
+				/obj/effect/mine/phoron = 1,
+				/obj/effect/mine/stun = 3)

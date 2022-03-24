@@ -1116,6 +1116,11 @@
 	icon_state = "medbay"
 	req_access = list(access_medical)
 
+/area/medical/exam
+	name = "\improper Examination"
+	icon_state = "medbay"
+	req_access = list(access_medical)
+
 /area/medical/reslab
 	name = "\improper Resuscitation Lab"
 	req_access = list(access_surgery)
@@ -1810,3 +1815,20 @@
 	name = "\improper Biological LTS"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "triage"
+
+/////////
+// Radio Host Studio
+/////////
+/area/radio_host
+	name = "\improper Studio Lobby"
+	icon_state = "chapel"
+
+/area/radio_host/interior
+	name = "\improper Studio"
+	icon_state = "heads"
+	req_access = list(access_radio_host)
+
+/area/radio_host/backroom
+	name = "\improper Studio Backroom"
+	icon_state = "Sleep"
+	req_access = list(access_radio_host)

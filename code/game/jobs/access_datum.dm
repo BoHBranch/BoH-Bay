@@ -389,6 +389,12 @@
 	region = ACCESS_REGION_COMMAND
 	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, CO cannot enter.
 
+/var/const/access_radio_host = "ACCESS_RADIO_HOST"
+/datum/access/radio_host
+	id = access_radio_host
+	desc = "Radio Host"
+	region = ACCESS_REGION_GENERAL
+
 /******************
 * Central Command *
 ******************/

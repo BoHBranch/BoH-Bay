@@ -363,3 +363,34 @@
 
 /datum/job/lawyer/get_description_blurb()
 	return "You are a lawyer. Your job is to prosecute or defend your client depending on the circumstances."
+
+/datum/job/radio_host
+	title = "Radio Host"
+	department = "Service"
+	department_flag = SRV
+	total_positions = 1
+	spawn_positions = 1
+	minimal_player_age = 2
+	supervisors = "your journalistic morals"
+	selection_color = "#61a82f"
+	minimum_character_age = list(SPECIES_HUMAN = 18)
+	outfit_type = /decl/hierarchy/outfit/job/torch/radio_host
+	software_on_spawn = list(/datum/computer_file/program/records)
+	allowed_branches = list(
+		/datum/mil_branch/civilian,
+		/datum/mil_branch/marine_corps,
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/marine_corps/e2,
+		/datum/mil_rank/marine_corps/e3
+	)
+	access = list(access_radio_host, access_maint_tunnels, access_external_airlocks,
+				access_eva, access_RC_announce, access_solgov_crew, access_hangar)
+	minimal_access = list()
+	alt_titles = list(
+		"Spokesman",
+		"Artist")
+
+/datum/job/radio_host/get_description_blurb()
+	return "Practically the guy known as something 'Jones', but in space. Do attempt to keep the peace, if at all possible, within your studio...."
