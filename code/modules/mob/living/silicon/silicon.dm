@@ -2,6 +2,7 @@
 	gender = NEUTER
 	voice_name = "synthesized voice"
 	skillset = /datum/skillset/silicon
+	can_have_vision_cone = FALSE
 
 	meat_type = null
 	meat_amount = 0

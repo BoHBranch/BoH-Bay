@@ -540,6 +540,11 @@ default behaviour is:
 		for(var/mob/living/carbon/slime/M in view(1,src))
 			M.UpdateFeed()
 
+	for(var/mob/M in oview(src))
+		M.update_vision_cone()
+
+	update_vision_cone()
+
 /mob/living/proc/can_pull()
 	if(!moving)
 		return FALSE
