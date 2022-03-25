@@ -47,6 +47,7 @@
 	breath_type = null
 	poison_types = null
 	vision_flags = SEE_SELF|SEE_MOBS
+
 	has_organ = list(
 		BP_EYES =     /obj/item/organ/internal/eyes/xeno,
 		BP_HEART =    /obj/item/organ/internal/heart/open,
@@ -55,6 +56,7 @@
 		BP_PLASMA =   /obj/item/organ/internal/xeno/plasmavessel,
 		BP_HIVE =     /obj/item/organ/internal/xeno/hivenode,
 		)
+
 	var/list/started_healing = list()
 	var/accelerated_healing_threshold = 10 SECONDS
 	has_limbs = list(
@@ -70,9 +72,11 @@
 		"l_foot" = list("path" = /obj/item/organ/external/foot/unbreakable/xeno),
 		"r_foot" = list("path" = /obj/item/organ/external/foot/right/unbreakable/xeno)
 		)
+
 	bump_flag = ALIEN
 	swap_flags = ~HEAVY
 	push_flags = (~HEAVY) ^ ROBOT
+
 	var/weeds_heal_rate = 5     // Health regen on weeds.
 	var/weeds_plasma_rate = 5   // Plasma regen on weeds.
 	genders = list(NEUTER)
@@ -82,15 +86,18 @@
 		TAG_FACTION =   FACTION_XENOPHAGE,
 		TAG_RELIGION =  RELIGION_OTHER
 	)
+
 /datum/species/xenos/get_bodytype(var/mob/living/carbon/H)
 	return "Xenophage"
 /datum/species/xenos/can_understand(var/mob/other)
 	if(istype(other,/mob/living/carbon/alien/larva))
 		return 1
 	return 0
+
 /datum/species/xenos/hug(var/mob/living/carbon/human/H,var/mob/living/target)
 	H.visible_message("<span class='notice'>[H] caresses [target] with countless prickling, needle-like legs.</span>", \
 					"<span class='notice'>You caress [target] with countless prickling, needle-like legs.</span>")
+
 /datum/species/xenos/handle_post_spawn(var/mob/living/carbon/human/H)
 	if(H.mind)
 		H.mind.reset()
@@ -104,6 +111,7 @@
 		H.real_name = culture.get_random_name(H)
 		H.SetName(H.real_name)
 	..()
+
 /datum/species/xenos/handle_environment_special(var/mob/living/carbon/human/H)
 	var/turf/T = H.loc
 	if(!T) return
@@ -118,6 +126,7 @@
 	else
 		started_healing["\ref[H]"] = null
 	..()
+
 /datum/species/xenos/proc/regenerate(var/mob/living/carbon/human/H)
 	var/heal_rate = weeds_heal_rate
 	var/mend_prob = 10
@@ -163,6 +172,7 @@
 		H.regenerate_blood(rand(heal_rate))
 		return TRUE
 	return FALSE
+
 /datum/species/xenos/drone
 	name = SPECIES_XENO_DRONE
 	weeds_plasma_rate = 15
@@ -191,11 +201,13 @@
 		/mob/living/carbon/human/proc/resin,
 		/mob/living/carbon/human/proc/corrosive_acid
 		)
+
 /datum/species/xenos/drone/handle_post_spawn(var/mob/living/carbon/human/H)
 	var/mob/living/carbon/human/A = H
 	if(!istype(A))
 		return ..()
 	..()
+
 /datum/species/xenos/hunter
 	name = SPECIES_XENO_HUNTER
 	weeds_plasma_rate = 5
@@ -227,6 +239,7 @@
 		TAG_FACTION =   FACTION_XENOPHAGE,
 		TAG_RELIGION =  RELIGION_OTHER
 	)
+
 /datum/species/xenos/sentinel
 	name = SPECIES_XENO_SENTINEL
 	weeds_plasma_rate = 10
@@ -258,6 +271,7 @@
 		TAG_FACTION =   FACTION_XENOPHAGE,
 		TAG_RELIGION =  RELIGION_OTHER
 	)
+
 /datum/species/xenos/queen
 	name = SPECIES_XENO_QUEEN
 	total_health = 500
@@ -298,6 +312,7 @@
 		TAG_FACTION =   FACTION_XENOPHAGE,
 		TAG_RELIGION =  RELIGION_OTHER
 	)
+
 /datum/hud_data/alien
 	icon = 'icons/mob/screen1_alien.dmi'
 	has_a_intent =  1
