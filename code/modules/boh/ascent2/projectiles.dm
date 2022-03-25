@@ -13,8 +13,8 @@
 	. = ..()
 	if(isliving(target))
 		var/mob/living/L = target
-		to_chat(target, SPAN_WARNING("You feel incredible pain, as if something is invading your mind!"))
-		L.Paralyse(2 SECONDS)
+		to_chat(target, SPAN_WARNING("You feel your muscles locking up, preventing you from moving!"))
+		L.Paralyse(2 SECONDS) //It's actually 20 ticks (around half a minute) but baycode funny
 
 /////////
 //lethals
