@@ -5365,11 +5365,6 @@
 /area/command/pathfinder)
 "kj" = (
 /obj/machinery/door/firedoor,
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/airlock/medical{
@@ -8307,6 +8302,16 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/mopbucket,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 10;
+	icon_state = "intact"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "sg" = (
@@ -11813,6 +11818,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters/commissary)
 "Dc" = (
@@ -12026,27 +12034,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
-"Eo" = (
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
-	},
-/obj/effect/floor_decal/corner/red{
-	dir = 4;
-	icon_state = "corner_white"
-	},
-/obj/effect/floor_decal/corner/white{
-	dir = 1;
-	icon_state = "corner_white"
-	},
-/turf/simulated/floor/tiled,
-/area/hallway/primary/fourthdeck/fore)
 "Eq" = (
 /obj/effect/floor_decal/corner/brown{
 	dir = 6
@@ -17077,13 +17064,10 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "TN" = (
@@ -32671,7 +32655,7 @@ hg
 bL
 bL
 kj
-Eo
+SU
 TA
 Yx
 OG
