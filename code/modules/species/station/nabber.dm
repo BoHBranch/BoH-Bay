@@ -9,6 +9,7 @@
 	new environment."
 	hidden_from_codex = FALSE
 	silent_steps = TRUE
+	have_vision_cone = FALSE
 
 	antaghud_offset_y = 8
 

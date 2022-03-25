@@ -3245,6 +3245,7 @@
 #include "code\modules\virus2\helpers.dm"
 #include "code\modules\virus2\isolator.dm"
 #include "code\modules\virus2\items_devices.dm"
+#include "code\modules\vision_cone\vision_come.dm"
 #include "code\modules\Vox2\vox_machines.dm"
 #include "code\modules\vueui\external.dm"
 #include "code\modules\vueui\ui.dm"
