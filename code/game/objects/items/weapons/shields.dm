@@ -100,9 +100,9 @@
 	throw_range = 3
 	w_class = ITEM_SIZE_HUGE
 	matter = list(MATERIAL_PLASTEEL = 8500)
-	max_block = 50
+	max_block = 55
 	can_block_lasers = TRUE
-	slowdown_general = 1
+	slowdown_general = 1.5
 
 /obj/item/weapon/shield/buckler
 	name = "buckler"
