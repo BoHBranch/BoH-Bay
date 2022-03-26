@@ -20,7 +20,7 @@
 	desc = "The HelTek Magnus, a robust Terran handgun that uses high-caliber ammo."
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar/loadout
-	magazine_type = /obj/item/ammo_magazine/pistol/double
+	magazine_type = /obj/item/ammo_magazine/pistol/double/rubber
 
 /obj/item/weapon/gun/projectile/pistol/magnum_pistol/solar/loaded
 	name = "high-powered handgun"
@@ -52,7 +52,7 @@
 	icon_state = "medium"
 	safety_icon = "medium_safety"
 	caliber = CALIBER_PISTOL
-	ammo_type = /obj/item/ammo_casing/pistol
+	ammo_type = /obj/item/ammo_casing/pistol/rubber/pepperball
 	fire_sound = 'sound/weapons/gunshot/revolver_small.ogg'
 	desc = "The Lumoco Arms' Mk12 is a rugged revolver for people who don't keep their guns well-maintained. Unlike its cousin, the Mk59 'Jhen Bothus', it has no issues with reliability."
 	accuracy = 2
