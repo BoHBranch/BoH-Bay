@@ -56,12 +56,12 @@
 	..()
 	icon_state = pick(possible_icon_states)
 
-/obj/effect/weaversilk/wall/CanPass(atom/movable/mover, turf/target)
+/*/obj/effect/weaversilk/wall/CanPass(atom/movable/mover, turf/target)
 	if(istype(mover, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = mover
 		if(H.species.is_weaver)
 			return TRUE
-	..()
+	..()*/
 
 /obj/structure/bed/double/weaversilk_nest
 	name = "weaversilk nest"
@@ -87,4 +87,42 @@
 
 // Items
 
-// None are here yet. However, I'm keeping the section here for the sake of organization and future additions.
+/obj/item/clothing/under/weaverskinsuit
+	name = "weaved bodysuit"
+	desc = "A comfortable silk bodysuit hand-weaved with what appears to be spider silk of some variety. Slightly sticky."
+	icon_state = "weaversuit"
+	item_state = "weaversuit"
+	worn_state = "weaversuit"
+	has_sensor = SUIT_NO_SENSORS
+
+/obj/item/clothing/under/skirt_c/dress/long/gown/weaver
+	name = "weaved gown"
+	desc = "A comfortable dress hand-weaved with what appears to be spider silk of some variety. Slightly sticky."
+	has_sensor = SUIT_NO_SENSORS
+
+/*/obj/item/clothing/shoes/weavershoes //For some reason, color on these runtime. What the fuck, Bay?
+	name = "weaved shoes"
+	desc = "A pair of silk slippers. Soft, warm, and extremely comfortable."
+	icon_state = "flatswhite"
+	item_state = "weavershoes"
+
+/obj/item/clothing/gloves/weavergloves
+	name = "weaved gloves"
+	desc = "A pair of silken gloves, seemingly hand-weaved. They're cozy and warm."
+	icon_state = "white"
+	item_state = "weavergloves"*/
+
+/obj/item/weapon/handcuffs/cable/tape/weaver
+	name = "silk bindings"
+	desc = "A pair of tight silken bindings. Though functional, they seem very easy to break."
+	icon = 'icons/weaver_icons_vr.dmi'
+	icon_state = "weavercuffs"
+
+/obj/item/stack/medical/bruise_pack/weaver
+	name = "weaved bandages"
+	singular_name = "weaved bandage"
+	desc = "Silken bandages. Far from effective, but better than nothing. Uncomfortably sticky."
+	animal_heal = 2
+	amount = 5
+	icon = 'icons/weaver_icons_vr.dmi'
+	icon_state = "weaverbandages"

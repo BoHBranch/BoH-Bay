@@ -126,7 +126,9 @@ var/list/admin_verbs_fun = list(
 	/datum/admins/proc/call_supply_drop,
 	/datum/admins/proc/call_drop_pod,
 	/client/proc/create_dungeon,
-	/datum/admins/proc/ai_hologram_set
+	/datum/admins/proc/ai_hologram_set,
+	/client/proc/reveal_sensor_map,
+	/client/proc/hide_sensor_map
 	)
 
 var/list/admin_verbs_spawn = list(
@@ -388,7 +390,9 @@ var/list/admin_verbs_hideable = list(
 	/datum/admins/proc/addbunkerbypass,
 	/client/proc/reload_webhooks,
 	/client/proc/ping_webhook,
-	/datum/admins/proc/revokebunkerbypass
+	/datum/admins/proc/revokebunkerbypass,
+	/client/proc/reveal_sensor_map,
+	/client/proc/hide_sensor_map
 	)
 var/list/admin_verbs_mod = list(
 	/client/proc/cmd_admin_pm_context,	// right-click adminPM interface,

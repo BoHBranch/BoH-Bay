@@ -60,13 +60,13 @@
 
 #define UNIFORMED_BRANCHES list(/datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/marine_corps)
 
-#define CASUAL_BRANCHES list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/private_security)
+#define CASUAL_BRANCHES list(/datum/mil_branch/civilian, /datum/mil_branch/solgov, /datum/mil_branch/private_security, /datum/mil_branch/spacefbi)
 
 #define CIVILIAN_BRANCHES list(/datum/mil_branch/civilian, /datum/mil_branch/solgov)
 
-#define SOLGOV_BRANCHES list(/datum/mil_branch/solgov, /datum/mil_branch/fleet, /datum/mil_branch/marine_corps)
+#define SOLGOV_BRANCHES list(/datum/mil_branch/solgov, /datum/mil_branch/fleet, /datum/mil_branch/marine_corps, /datum/mil_branch/spacefbi)
 
-#define TACTICOOL_BRANCHES list(/datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/solgov, /datum/mil_branch/private_security, /datum/mil_branch/marine_corps)
+#define TACTICOOL_BRANCHES list(/datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/private_security, /datum/mil_branch/marine_corps, /datum/mil_branch/spacefbi)
 
 #define NT_BRANCHES list(/datum/mil_branch/expeditionary_corps)
 

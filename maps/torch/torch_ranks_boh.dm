@@ -1,6 +1,6 @@
 // Branch-specific defines
 #define UNRESTRICTED /datum/mil_branch/civilian, /datum/mil_branch/fleet
-#define SEMIRESTRICTED /datum/mil_branch/marine_corps, /datum/mil_branch/private_security
+#define SEMIRESTRICTED /datum/mil_branch/marine_corps, /datum/mil_branch/private_security, /datum/mil_branch/spacefbi
 
 // Rank-specific defines
 #define SMC_TROOPERS_ONLY /datum/mil_branch/marine_corps = list(\
@@ -51,6 +51,8 @@
 	/datum/mil_rank/sol/scientist, \
 	)
 
+#define SOLGOV_SFP /datum/mil_branch/spacefbi = list(/datum/mil_rank/sol/agent)
+
 /datum/map/torch
 	branch_types = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -58,6 +60,7 @@
 		/datum/mil_branch/marine_corps,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
+		/datum/mil_branch/spacefbi,
 		/datum/mil_branch/private_security,
 		/datum/mil_branch/army,
 		/datum/mil_branch/alien,
@@ -69,6 +72,7 @@
 		/datum/mil_branch/marine_corps,
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/solgov,
+		/datum/mil_branch/spacefbi,
 		/datum/mil_branch/private_security,
 		/datum/mil_branch/alien,
 		/datum/mil_branch/skrell_fleet
@@ -779,6 +783,23 @@
 
 /*****/
 
+/datum/mil_branch/spacefbi
+	name = "Solarian Federal Police"
+	name_short = "SFP"
+	email_domain = "dagon.sec"
+
+	rank_types = list(/datum/mil_rank/sol/agent)
+
+	spawn_rank_types = list(/datum/mil_rank/sol/agent)
+
+/datum/mil_rank/sol/agent
+	name = "SFP Agent"
+	name_short = "AGT"
+	accessory = list(/obj/item/clothing/accessory/badge/agent)
+	pow_cat = 3
+	cit_rank = 5
+
+/*****/
 // Ends of defines
 #undef UNRESTRICTED
 #undef SEMIRESTRICTED
@@ -786,3 +807,4 @@
 #undef SMC_LIMITED_RANKS
 #undef NTEF_ENLISTED_ONLY
 #undef SOLGOV_NO_SFP
+#undef SOLGOV_SFP

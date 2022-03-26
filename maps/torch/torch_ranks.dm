@@ -244,13 +244,11 @@
 
 	rank_types = list(
 		/datum/mil_rank/sol/gov,
-		/datum/mil_rank/sol/agent,
 		/datum/mil_rank/sol/scientist
 	)
 
 	spawn_rank_types = list(
 		/datum/mil_rank/sol/gov,
-		/datum/mil_rank/sol/agent,
 		/datum/mil_rank/sol/scientist
 	)
 
@@ -761,13 +759,6 @@
 	name_short = "SGR"
 	accessory = list(/obj/item/clothing/accessory/badge/solgov/representative)
 	pow_cat = 5
-	cit_rank = 5
-
-/datum/mil_rank/sol/agent
-	name = "SFP Agent"
-	name_short = "AGT"
-	accessory = list(/obj/item/clothing/accessory/badge/agent)
-	pow_cat = 3
 	cit_rank = 5
 
 /datum/mil_rank/sol/scientist
