@@ -6,6 +6,7 @@
 /obj/item/ammo_casing/pistol/rubber/pepperball
 	name = "pepperball casing"
 	projectile_type = /obj/item/projectile/bullet/pistol/pepperball
+	ammo_stack = /obj/item/ammo_magazine/handful/pistol_handful/pepperball/two
 
 //magazine
 /obj/item/ammo_magazine/pistol/double/pepperball
