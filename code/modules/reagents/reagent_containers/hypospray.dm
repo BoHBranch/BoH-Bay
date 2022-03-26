@@ -34,6 +34,7 @@
 			user.visible_message("<span class='warning'>\The [user] begins hunting for an injection port on [M]'s suit!</span>")
 		else
 			user.visible_message("<span class='warning'>\The [user] is trying to inject [M] with [src]!</span>")
+// bruh
 
 	var/mob/living/carbon/human/H = M
 	if(istype(H))
