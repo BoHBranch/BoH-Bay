@@ -201,3 +201,24 @@
 	projectile_type = /obj/item/projectile/beam/incendiary_laser
 	max_shots = 5
 	self_recharge = 1
+
+/obj/item/weapon/gun/energy/plasmarifle
+	name = "Nanotrasen ITER"
+	desc = "A rare nanotrasen branded plasma rifle marketed as a weapon to change the war forever. However due to it's volatility and high maintenence costs it is uncommon outside of Sol-controlled space.\
+	Unlike it's older laser cousin it's projectiles deliver a meatier punch at higher firerate with the cost of it's precision and utlity. It is powered by miniature fusion reactor making it slowly recharge it's plasma reserves."
+	icon = 'icons/obj/guns/plasma_rifle.dmi'
+	icon_state = "plasma_rifle"
+	item_state = "plasma_rifle"
+	wielded_item_state = "plasma_rifle-wielded"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_POWER = 3)
+	slot_flags = SLOT_BACK
+	fire_delay = 20
+	max_shots = 16
+	self_recharge = 1
+	recharge_time = 8
+	accuracy = 3
+	projectile_type = /obj/item/projectile/energy/plasmarifle
+	firemodes = list(
+		list(mode_name="single-fire", burst=1, move_delay=1),
+		list(mode_name="burst", burst=2, move_delay=2)
+		)

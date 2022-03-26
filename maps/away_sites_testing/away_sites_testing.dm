@@ -21,6 +21,7 @@
 	#include "../away/unishi/unishi.dm"
 	#include "../away/ascent/ascent.dm"
 	#include "../away/rawl/rawl.dm"
+	#include "../away/scavver/scavver_gantry.dm"
 
 	#include "../away/voxship/voxship.dm"
 

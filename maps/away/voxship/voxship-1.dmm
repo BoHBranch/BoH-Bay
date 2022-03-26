@@ -3976,11 +3976,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
-"EA" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/engineering)
 "EB" = (
 /obj/structure/window/phoronreinforced{
 	dir = 8
@@ -4982,16 +4977,6 @@
 	},
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/engineering)
-"Mz" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/reinforced/vox,
-/area/voxship/armory)
 "MD" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/yellow{
 	dir = 4
@@ -5733,10 +5718,6 @@
 	},
 /turf/simulated/floor/reinforced/vox,
 /area/voxship/misslie)
-"Ty" = (
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/reinforced/vox,
-/area/voxship/ofd)
 "TE" = (
 /obj/machinery/atmospherics/binary/pump,
 /turf/simulated/floor/tiled/techmaint/vox,
@@ -14360,7 +14341,7 @@ uh
 Bt
 KF
 oI
-Ty
+oI
 iS
 qI
 Bt
@@ -16637,7 +16618,7 @@ Wb
 eQ
 YO
 GK
-Mz
+HM
 YO
 YO
 eQ
@@ -23784,7 +23765,7 @@ hb
 Vd
 jW
 CV
-EA
+Sl
 Sl
 Jr
 al

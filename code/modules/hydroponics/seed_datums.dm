@@ -1301,7 +1301,7 @@
 	set_trait(TRAIT_POTENCY,10)
 	set_trait(TRAIT_MATURATION,10)
 	set_trait(TRAIT_PRODUCTION,10)
-	set_trait(TRAIT_YIELD,1)
+	set_trait(TRAIT_YIELD,5)
 	set_trait(TRAIT_PRODUCT_ICON,"flower3")
 	set_trait(TRAIT_PRODUCT_COLOUR,"#446c2f")
 	set_trait(TRAIT_PLANT_ICON,"flower3")

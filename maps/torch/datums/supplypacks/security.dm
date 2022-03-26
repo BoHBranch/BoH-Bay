@@ -81,6 +81,15 @@
 	access = access_emergency_armory
 	security_level = SUPPLY_SECURITY_ELEVATED
 
+/decl/hierarchy/supply_pack/security/plasma
+	name = "Weapons - Plasma Rifles"
+	contains = list(/obj/item/weapon/gun/energy/plasmarifle/secure = 2)
+	cost = 105
+	containertype = /obj/structure/closet/crate/secure/weapon
+	containername = "plasma rifles crate"
+	access = access_emergency_armory
+	security_level = SUPPLY_SECURITY_ELEVATED
+
 /decl/hierarchy/supply_pack/security/advancedlaser
 	name = "Weapons - Advanced Laser Weapons"
 	contains = list(/obj/item/weapon/gun/energy/xray = 2,

@@ -23,6 +23,7 @@
 	breath_pressure = 18
 	slowdown = 0.5
 	brute_mod = 0.8
+	radiation_mod = 0.75
 	flash_mod = 1.2
 	blood_volume = 800
 
