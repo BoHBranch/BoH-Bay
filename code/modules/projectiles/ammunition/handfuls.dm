@@ -193,7 +193,7 @@
 
 /obj/item/ammo_magazine/handful/pistol_handful/pepperball
 	name = "\improper handful of pepperball handgun rounds"
-	ammo_type = /obj/item/ammo_casing/pistol/pepperball
+	ammo_type = /obj/item/ammo_casing/pistol/rubber/pepperball
 
 /obj/item/ammo_magazine/handful/pistol_handful/pepperball/two
 	initial_ammo = 2
