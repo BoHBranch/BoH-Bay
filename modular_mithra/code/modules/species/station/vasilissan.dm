@@ -24,7 +24,8 @@
 	inherent_verbs = list(
 		/mob/living/carbon/human/proc/check_silk_amount,
 		/mob/living/carbon/human/proc/toggle_silk_production,
-		/mob/living/carbon/human/proc/weave_structure
+		/mob/living/carbon/human/proc/weave_structure,
+		/mob/living/carbon/human/proc/weave_item
 		)
 
 	available_cultural_info = list( //I can do ANYTHING! Placeholder until the loreboys come and figure out what Vasilissans do | did it -bear
