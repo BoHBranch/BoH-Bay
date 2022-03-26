@@ -31,7 +31,7 @@
 
 /obj/item/weapon/shield
 	name = "shield"
-	var/base_block_chance = 60
+	var/base_block_chance = 70
 
 /obj/item/weapon/shield/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(user.incapacitated())
@@ -100,9 +100,9 @@
 	throw_range = 3
 	w_class = ITEM_SIZE_HUGE
 	matter = list(MATERIAL_PLASTEEL = 8500)
-	max_block = 50
+	max_block = 55
 	can_block_lasers = TRUE
-	slowdown_general = 1.5
+	slowdown_general = 1
 
 /obj/item/weapon/shield/buckler
 	name = "buckler"
