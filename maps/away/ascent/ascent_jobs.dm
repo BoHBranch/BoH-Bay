@@ -89,10 +89,7 @@
 		var/datum/submap/ascent/cutter = ascent_job.owner
 		if(istype(cutter))
 
-			var/new_number = input("What is your position in your lineage?", "Name Monarch-Lineage") as num|null
-			if(!new_number)
-				return
-			new_number = Clamp(new_number, 1, 999)
+
 			var/new_name = sanitize(input("What is the true name of your nest-lineage?", "Name Monarch-Lineage") as text|null, MAX_NAME_LEN)
 			if(!new_name)
 				return
@@ -101,7 +98,7 @@
 				return
 
 			// Rename ourselves.
-			fully_replace_character_name("[new_number] [new_name]")
+			fully_replace_character_name("Queen [new_name]")
 
 			// Rename our workers
 			cutter.monarch_name = new_name
