@@ -396,8 +396,10 @@
 	tag_interior_door = "scav_hab_interior_door"
 	},
 /obj/effect/floor_decal/industrial/warning,
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	id_tag = "scav_hab"
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 2;
+	frequency = 1380;
+	id_tag = "scav_hab_pump"
 	},
 /turf/simulated/floor/plating,
 /area/scavver/hab)
@@ -827,7 +829,8 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	id_tag = "scav_pod"
+	id_tag = "scav_pod_pump";
+	frequency = 1380
 	},
 /turf/simulated/floor/reinforced,
 /area/scavver/escapepod)
@@ -1288,7 +1291,8 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
-	id_tag = "dropodwest"
+	id_tag = "dropodwest_pump";
+	frequency = 1380
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/scavver/lifepod)
@@ -2604,7 +2608,8 @@
 /area/scavver/hab)
 "BR" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	id_tag = "dropodwest"
+	id_tag = "dropodwest_pump";
+	frequency = 1380
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/scavver/lifepod)
@@ -2723,7 +2728,8 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
-	id_tag = "dropodeast"
+	id_tag = "dropodeast_pump";
+	frequency = 1380
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/scavver/lifepod)
@@ -4151,8 +4157,10 @@
 	pixel_x = 22
 	},
 /obj/effect/floor_decal/industrial/warning,
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	id_tag = "scav_hab"
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 2;
+	frequency = 1380;
+	id_tag = "scav_hab_pump"
 	},
 /turf/simulated/floor/plating,
 /area/scavver/hab)
@@ -4318,7 +4326,8 @@
 	tag_interior_door = "scav_pod_interior_door"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	id_tag = "scav_pod"
+	id_tag = "scav_pod_pump";
+	frequency = 1380
 	},
 /turf/simulated/floor/reinforced,
 /area/scavver/escapepod)
