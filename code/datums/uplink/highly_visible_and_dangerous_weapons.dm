@@ -74,6 +74,12 @@
 	item_cost = 48
 	path = /obj/item/weapon/gun/projectile/automatic/merc_smg
 
+/datum/uplink_item/item/visible_weapons/lasercarbine
+	name = "Laser Carbine"
+	desc = "A common laser carbine with only a lethal mode, and nothing else. Comes charged."
+	item_cost = 68
+	path = /obj/item/weapon/gun/energy/laser
+
 /datum/uplink_item/item/visible_weapons/assaultrifle
 	name = "Assault Rifle"
 	desc = "A common rifle with three togglable fire modes."
@@ -207,6 +213,12 @@
 	desc = "A shield capable of stopping most projectile and melee attacks. It can be retracted, expanded, and stored anywhere."
 	item_cost = 28
 	path = /obj/item/weapon/shield/energy
+
+/datum/uplink_item/item/visible_weapons/combat_knife
+	name = "Combat knife"
+	desc = "A knife, for stabbing people."
+	item_cost = 5
+	path = /obj/item/weapon/material/knife/combat
 
 /datum/uplink_item/item/visible_weapons/
 	name = "Switchblade"
