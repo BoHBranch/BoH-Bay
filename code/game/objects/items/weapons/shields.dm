@@ -100,7 +100,7 @@
 	throw_range = 3
 	w_class = ITEM_SIZE_HUGE
 	matter = list(MATERIAL_PLASTEEL = 8500)
-	max_block = 55
+	max_block = 50
 	can_block_lasers = TRUE
 	slowdown_general = 1.5
 
