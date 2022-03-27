@@ -33,7 +33,7 @@
 	var/datum/design/D = queue[1]
 	if(canBuild(D))
 		busy = 1
-		progress += speed
+		progress += speed * 2
 		if(progress >= D.time)
 			build(D)
 			progress = 0
