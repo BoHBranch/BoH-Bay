@@ -81,8 +81,6 @@
 		/area/shuttle/syndicate_elite/station,
 		/area/shuttle/escape/centcom,
 		/area/rnd/xenobiology/xenoflora_storage,
-		/area/medical/virology,
-		/area/medical/virologyaccess,
 		/area/turbolift,
 		/area/turbolift/start,
 		/area/turbolift/bridge,

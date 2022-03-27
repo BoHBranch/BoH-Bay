@@ -184,11 +184,35 @@
 		/obj/item/clothing/gloves
 		)
 
+/obj/item/weapon/storage/belt/medical/full
+
+/obj/item/weapon/storage/belt/medical/full/New()
+	..()
+	new /obj/item/weapon/reagent_containers/glass/bottle/dexalinp(src)
+	new /obj/item/weapon/reagent_containers/glass/bottle/kelotane(src)
+	new /obj/item/weapon/reagent_containers/glass/bottle/tramadol(src)
+	new /obj/item/weapon/reagent_containers/glass/bottle/bicaridine(src)
+	new /obj/item/weapon/reagent_containers/glass/bottle/antitoxin(src)
+	new /obj/item/weapon/reagent_containers/glass/bottle/inaprovaline(src)
+	update_icon()
+
 /obj/item/weapon/storage/belt/medical/emt
 	name = "EMT belt"
 	desc = "A sturdy black webbing belt with attached pouches."
 	icon_state = "emsbelt"
 	item_state = "emsbelt"
+
+/obj/item/weapon/storage/belt/medical/emt/full
+
+/obj/item/weapon/storage/belt/medical/emt/full/New()
+	..()
+	new /obj/item/weapon/reagent_containers/glass/bottle/dexalinp(src)
+	new /obj/item/weapon/reagent_containers/glass/bottle/kelotane(src)
+	new /obj/item/weapon/reagent_containers/glass/bottle/tramadol(src)
+	new /obj/item/weapon/reagent_containers/glass/bottle/bicaridine(src)
+	new /obj/item/weapon/reagent_containers/glass/bottle/antitoxin(src)
+	new /obj/item/weapon/reagent_containers/glass/bottle/inaprovaline(src)
+	update_icon()
 
 /obj/item/weapon/storage/belt/holster/security
 	name = "security holster belt"

@@ -117,8 +117,8 @@
 /turf/space/transit/north,
 /area/space)
 "o" = (
-/obj/effect/shuttle_landmark/escape_pod/transit/pod9,
-/turf/space/transit/north,
+/obj/effect/shuttle_landmark/transit/scavver_gantry,
+/turf/space,
 /area/space)
 "p" = (
 /obj/effect/shuttle_landmark/transit/torch/exploration_shuttle,
@@ -253,7 +253,7 @@
 /turf/space,
 /area/space)
 "O" = (
-/obj/effect/shuttle_landmark/escape_pod/out/pod9,
+/obj/effect/shuttle_landmark/transit/scavver_gantry/two,
 /turf/space,
 /area/space)
 "P" = (
@@ -4183,7 +4183,7 @@ v
 v
 v
 h
-o
+v
 v
 v
 v
@@ -8204,7 +8204,7 @@ S
 S
 S
 S
-O
+S
 S
 S
 S
@@ -31131,7 +31131,7 @@ S
 S
 S
 S
-S
+o
 S
 S
 S
@@ -34735,7 +34735,7 @@ S
 S
 S
 S
-S
+O
 S
 S
 S

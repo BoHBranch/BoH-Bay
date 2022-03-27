@@ -102,7 +102,7 @@
 /datum/gear/accessory/armband_corpsman
 	display_name = "medical armband"
 	path = /obj/item/clothing/accessory/armband/medblue
-	allowed_roles = list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/doctor, /datum/job/medical_trainee)
+	allowed_roles = list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/doctor/virologist, /datum/job/doctor, /datum/job/medical_trainee)
 
 /datum/gear/accessory/armband_engineering
 	allowed_roles = ENGINEERING_ROLES

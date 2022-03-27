@@ -13,8 +13,8 @@
 	. = ..()
 	if(isliving(target))
 		var/mob/living/L = target
-		to_chat(target, SPAN_WARNING("You feel incredible pain, as if something is invading your mind!"))
-		L.seizure()//Which is why, if it does work, it'll drop a target in one hit for cuffing.
+		to_chat(target, SPAN_WARNING("You feel your muscles locking up, preventing you from moving!"))
+		L.Paralyse(2 SECONDS) //It's actually 20 ticks (around half a minute) but baycode funny
 
 /////////
 //lethals

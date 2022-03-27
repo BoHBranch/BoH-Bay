@@ -80,6 +80,12 @@
 	item_cost = 72
 	path = /obj/item/weapon/gun/projectile/automatic/assault_rifle
 
+/datum/uplink_item/item/visible_weapons/plasma_rifle
+	name = "Plasma Rifle"
+	desc = "A energy rifle that fires projectiles instead of beams. Comes with burst."
+	item_cost = 54
+	path = /obj/item/weapon/gun/energy/plasmarifle
+
 /datum/uplink_item/item/visible_weapons/advanced_energy_gun
 	name = "Advanced Energy Gun"
 	desc = "A highly experimental heavy energy weapon, with three different lethality settings."
