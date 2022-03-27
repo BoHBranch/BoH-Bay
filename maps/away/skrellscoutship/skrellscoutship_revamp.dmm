@@ -711,6 +711,13 @@
 /obj/structure/cable,
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellskoutship/observatory)
+"hA" = (
+/obj/effect/paint/black,
+/obj/machinery/atmospherics/unary/tank/air{
+	dir = 1
+	},
+/turf/simulated/wall/r_titanium,
+/area/ship/skrellscoutship/command/bridge)
 "hG" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -1926,6 +1933,7 @@
 /area/ship/skrellscoutship/maintenance/atmos)
 "uL" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/portable_atmospherics/canister/air/airlock,
 /turf/simulated/floor/tiled/skrell/red,
 /area/ship/skrellscoutship/command/brig)
 "uW" = (
@@ -2056,6 +2064,9 @@
 	dir = 8
 	},
 /obj/structure/window/phoronreinforced,
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
 /turf/simulated/floor/airless,
 /area/ship/skrellscoutship/command/brig)
 "vX" = (
@@ -2063,8 +2074,18 @@
 /turf/simulated/floor/carpet/purple,
 /area/ship/skrellscoutship/crew/rec)
 "wd" = (
-/turf/space,
-/area/ship/skrellscoutship/maintenance/atmos)
+/obj/structure/window/phoronreinforced{
+	dir = 8
+	},
+/obj/machinery/porta_turret/ssv,
+/obj/structure/window/phoronreinforced{
+	dir = 1
+	},
+/obj/structure/window/phoronreinforced{
+	dir = 4
+	},
+/turf/simulated/floor/airless,
+/area/ship/skrellscoutship/command/brig)
 "we" = (
 /obj/machinery/chem_master,
 /obj/machinery/light/skrell,
@@ -2911,44 +2932,15 @@
 /obj/item/weapon/cell/skrell,
 /obj/item/weapon/cell/skrell,
 /obj/item/weapon/cell/skrell,
+/obj/item/weapon/cell/skrell,
 /obj/machinery/light/skrell{
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/clustertool,
-/obj/item/clustertool,
-/obj/item/clustertool,
-/obj/item/weapon/weldingtool/electric/mantid{
-	name = "alien welding tool"
-	},
-/obj/item/weapon/weldingtool/electric/mantid{
-	name = "alien welding tool"
-	},
-/obj/item/weapon/weldingtool/electric/mantid{
-	name = "alien welding tool"
-	},
-/obj/item/stack/cable_coil/fabricator{
-	icon = 'icons/obj/ascent.dmi';
-	icon_state = "cablecoil";
-	color = "#FFFFFF";
-	name = "alien cable extruder"
-	},
-/obj/item/stack/cable_coil/fabricator{
-	icon = 'icons/obj/ascent.dmi';
-	icon_state = "cablecoil";
-	color = "#FFFFFF";
-	name = "alien cable extruder"
-	},
-/obj/item/stack/cable_coil/fabricator{
-	icon = 'icons/obj/ascent.dmi';
-	icon_state = "cablecoil";
-	color = "#FFFFFF";
-	name = "alien cable extruder"
-	},
-/obj/item/weapon/storage/belt/utility,
-/obj/item/weapon/storage/belt/utility,
-/obj/item/weapon/storage/belt/utility,
-/obj/item/weapon/storage/belt/utility,
+/obj/item/weapon/storage/belt/utility/full,
+/obj/item/weapon/storage/belt/utility/full,
+/obj/item/weapon/storage/belt/utility/full,
+/obj/item/weapon/storage/belt/utility/full,
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/command/armory)
 "Du" = (
@@ -2961,7 +2953,7 @@
 /obj/machinery/door/airlock/highsecurity{
 	name = "Munitions"
 	},
-/turf/simulated/wall/r_titanium,
+/turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellskoutship/observatory)
 "DQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -2985,9 +2977,9 @@
 	},
 /obj/machinery/door/window/brigdoor{
 	autoset_access = 0;
+	dir = 4;
 	name = "Weaponry";
-	req_access = list("ACCESS_SKRELLSCOUT");
-	dir = 4
+	req_access = list("ACCESS_SKRELLSCOUT")
 	},
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/command/armory)
@@ -4201,8 +4193,8 @@
 	},
 /obj/structure/hygiene/sink{
 	dir = 4;
-	pixel_x = 13;
 	pass_flags = 1;
+	pixel_x = 13;
 	throwpass = 1
 	},
 /turf/simulated/floor/tiled/skrell/white,
@@ -5456,6 +5448,55 @@
 	name = "Mess Hall Blast Doors";
 	pixel_y = -26
 	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/item/weapon/reagent_containers/food/snacks/burrito_vegan{
+	desc = "A tasty, white mushroom wrapped in a brown-ish algae. Delicious!";
+	name = "Ka'li'xuq"
+	},
+/obj/structure/closet/crate/freezer,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/rec)
 "Zk" = (
@@ -8825,7 +8866,7 @@ bS
 bS
 bS
 Tb
-Tb
+wd
 oZ
 oZ
 oZ
@@ -8833,7 +8874,7 @@ Ps
 oZ
 oZ
 oZ
-Tb
+vV
 Tb
 bS
 bS
@@ -9336,7 +9377,7 @@ Tb
 Aj
 oZ
 oZ
-oZ
+hA
 oZ
 oZ
 QJ
@@ -12205,7 +12246,7 @@ wA
 NW
 qV
 bH
-wd
+Tb
 Tb
 Tb
 bS
@@ -12307,7 +12348,7 @@ YH
 NW
 qV
 JU
-wd
+Tb
 Tb
 Tb
 bS
@@ -12409,7 +12450,7 @@ YH
 NW
 qV
 JU
-wd
+Tb
 Tb
 Tb
 bS
