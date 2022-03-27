@@ -396,7 +396,9 @@
 	tag_interior_door = "scav_hab_interior_door"
 	},
 /obj/effect/floor_decal/industrial/warning,
-/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	id_tag = "scav_hab"
+	},
 /turf/simulated/floor/plating,
 /area/scavver/hab)
 "dX" = (
@@ -824,7 +826,9 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume,
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	id_tag = "scav_pod"
+	},
 /turf/simulated/floor/reinforced,
 /area/scavver/escapepod)
 "iV" = (
@@ -1283,7 +1287,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 4
+	dir = 4;
+	id_tag = "dropodwest"
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/scavver/lifepod)
@@ -2598,7 +2603,9 @@
 /turf/simulated/floor/tiled/freezer,
 /area/scavver/hab)
 "BR" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume,
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	id_tag = "dropodwest"
+	},
 /turf/simulated/floor/reinforced/airless,
 /area/scavver/lifepod)
 "BT" = (
@@ -2715,7 +2722,8 @@
 	pixel_x = -22
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 8
+	dir = 8;
+	id_tag = "dropodeast"
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/scavver/lifepod)
@@ -4143,7 +4151,9 @@
 	pixel_x = 22
 	},
 /obj/effect/floor_decal/industrial/warning,
-/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	id_tag = "scav_hab"
+	},
 /turf/simulated/floor/plating,
 /area/scavver/hab)
 "Vv" = (
@@ -4307,7 +4317,9 @@
 	tag_exterior_door = "scav_pod_exterior_door";
 	tag_interior_door = "scav_pod_interior_door"
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume,
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	id_tag = "scav_pod"
+	},
 /turf/simulated/floor/reinforced,
 /area/scavver/escapepod)
 "XA" = (
