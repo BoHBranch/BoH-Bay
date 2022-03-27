@@ -200,7 +200,7 @@
 	if(doing_something == FALSE)
 		doing_something = TRUE
 		if(affected.status & ORGAN_ARTERY_CUT)//Fix arteries first,
-			user.visible_message("<span class='notice'>[user] begins to suture [H]'s arteries.")
+			user.visible_message(SPAN_NOTICE("[user] begins to suture [H]'s arteries."))
 			playsound(src, 'sound/weapons/suture.ogg', 50, FALSE)
 			if(user.do_skilled(5 SECONDS, SKILL_MEDICAL, H))
 				if((H == user && prob(75)) || prob(user.skill_fail_chance(SKILL_MEDICAL,50, SKILL_ADEPT)))
@@ -214,7 +214,7 @@
 		else//Then fix wounds if they do it again.
 			for(var/datum/wound/W in affected.wounds)
 				if(W.damage) // Are they even damaged?
-					user.visible_message("<span class='notice'>[user] begins to suture up [H]'s wounds.")
+					user.visible_message(SPAN_NOTICE("[user] begins to suture up [H]'s wounds."))
 					playsound(src, 'sound/weapons/suture.ogg', 65, FALSE)
 					H.custom_pain("The pain in your [affected.name] is unbearable!",rand(50, 65),affecting = affected)
 					if(user.do_skilled(5 SECONDS, SKILL_MEDICAL, H))
