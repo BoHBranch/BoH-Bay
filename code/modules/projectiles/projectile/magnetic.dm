@@ -14,8 +14,8 @@
 	name = "slug"
 	icon_state = "gauss_silenced"
 	stun = 1
-	damage = 75
-	armor_penetration = 90
+	damage = 50
+	armor_penetration = 75
 
 /obj/item/projectile/bullet/magnetic/flechette
 	name = "flechette"

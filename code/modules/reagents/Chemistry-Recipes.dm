@@ -70,7 +70,7 @@
 /datum/chemical_reaction/proc/post_reaction(var/datum/reagents/holder)
 	var/atom/container = holder.my_atom
 	if(mix_message && container && !ismob(container))
-		container.visible_message("<span class='notice'>\icon[container] [mix_message]</span>")
+		container.visible_message("<span class='notice'>[icon2html(src, viewers(src))] [mix_message]</span>")
 		playsound(container, reaction_sound, 80, 1)
 
 //obtains any special data that will be provided to the reaction products
@@ -137,6 +137,12 @@
 	minimum_temperature = 50 CELSIUS
 	maximum_temperature = (50 CELSIUS) + 100
 
+/datum/chemical_reaction/creth
+	name = "Creth"
+	result = /datum/reagent/creth
+	required_reagents = list(/datum/reagent/adrenaline = 1, /datum/reagent/sugar = 1, /datum/reagent/hyperzine = 1)
+	result_amount = 3
+
 /datum/chemical_reaction/lube
 	name = "Space Lube"
 	result = /datum/reagent/lube
@@ -189,6 +195,13 @@
 	required_reagents = list(/datum/reagent/bicaridine = 2, /datum/reagent/clonexadone = 2)
 	catalysts = list(/datum/reagent/toxin/phoron = 5)
 	result_amount = 2
+
+/datum/chemical_reaction/virus_food
+	name = "Virus Food"
+	result = /datum/reagent/nutriment/virus_food
+	required_reagents = list(/datum/reagent/water = 1, /datum/reagent/drink/milk = 1)
+	result_amount = 5
+	mix_message = "The water dilutes the milk into a thin white solution."
 
 /datum/chemical_reaction/leporazine
 	name = "Leporazine"
@@ -958,7 +971,7 @@
 	var/obj/item/slime_extract/T = holder.my_atom
 	T.Uses--
 	if(T.Uses <= 0)
-		T.visible_message("\icon[T]<span class='notice'>\The [T]'s power is consumed in the reaction.</span>")
+		T.visible_message("[icon2html(src, viewers(src))]<span class='notice'>\The [T]'s power is consumed in the reaction.</span>")
 		T.SetName("used slime extract")
 		T.desc = "This extract has been used up."
 
@@ -2842,3 +2855,9 @@
 	required_reagents = list(/datum/reagent/blackspice = 1, /datum/reagent/nutriment = 1)
 	result_amount = 1
 	mix_message = "The mixture bubbles and froths into a ribbony black liquid!"
+
+/datum/chemical_reaction/tilt
+	name = "Tilt"
+	result = /datum/reagent/tilt
+	required_reagents = list(/datum/reagent/antidexafen = 2, /datum/reagent/drink/space_up = 1)
+	result_amount = 3

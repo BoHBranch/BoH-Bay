@@ -40,8 +40,8 @@
 /area/ship/ascent/wing_starboard)
 "al" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
-	icon_state = "intact";
-	dir = 4
+	dir = 4;
+	icon_state = "intact"
 	},
 /turf/simulated/wall/r_wall/ascent,
 /area/ship/ascent/shuttle_starboard)
@@ -52,7 +52,7 @@
 	},
 /obj/machinery/door/airlock/external/bolted/ascent{
 	airlock_type = "Internal";
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_inner"
 	},
 /turf/simulated/floor/ascent,
@@ -282,19 +282,6 @@
 	},
 /turf/simulated/open/mantid,
 /area/ship/ascent/habitation)
-"aN" = (
-/obj/machinery/door/airlock/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/bridge)
 "aO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -369,18 +356,6 @@
 /obj/machinery/light/ascent,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_starboard_prow)
-"aY" = (
-/obj/machinery/door/airlock/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_port_prow)
 "aZ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on/ascent{
 	dir = 1;
@@ -475,6 +450,7 @@
 "bl" = (
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship/alate,
 /obj/structure/ascent_spawn,
+/obj/effect/submap_landmark/spawnpoint/ascent_seedship/adjunct,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/habitation)
 "bm" = (
@@ -511,7 +487,7 @@
 "bq" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
 	airlock_type = "Internal";
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_dock_starboard_internal"
 	},
 /obj/structure/cable/cyan{
@@ -760,25 +736,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/habitation)
-"bO" = (
-/obj/machinery/door/airlock/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/bridge)
 "bP" = (
 /obj/structure/cable/cyan{
 	d1 = 2;
@@ -804,7 +761,7 @@
 	dir = 1
 	},
 /obj/machinery/airlock_sensor{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_sensor";
 	pixel_x = -8;
 	pixel_y = 24
@@ -882,7 +839,7 @@
 /area/ship/ascent/fore_starboard_prow)
 "bW" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_inner"
 	},
 /obj/structure/cable/cyan{
@@ -947,7 +904,7 @@
 "ce" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_inner"
 	},
 /turf/simulated/floor/ascent,
@@ -1006,25 +963,6 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/wing_starboard)
-"cj" = (
-/obj/machinery/door/airlock/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/wing_starboard)
 "ck" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/ascent,
@@ -1044,6 +982,7 @@
 "cm" = (
 /obj/structure/ascent_spawn,
 /obj/effect/submap_landmark/spawnpoint/ascent_seedship/alate,
+/obj/effect/submap_landmark/spawnpoint/ascent_seedship/adjunct,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/habitation)
 "cn" = (
@@ -1219,22 +1158,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/hydroponics_port)
-"cE" = (
-/obj/machinery/door/airlock/ascent,
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_starboard_prow)
 "cF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -1282,19 +1205,6 @@
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_hallway)
-"cK" = (
-/obj/machinery/door/airlock/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/wing_starboard)
 "cL" = (
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
 /turf/simulated/floor/ascent,
@@ -1323,25 +1233,6 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_starboard_prow)
-"cP" = (
-/obj/machinery/door/airlock/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/habitation)
 "cQ" = (
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/shuttle_port)
@@ -1845,7 +1736,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_pump"
 	},
 /turf/simulated/floor/ascent,
@@ -1870,7 +1761,7 @@
 /obj/machinery/light/ascent,
 /obj/machinery/access_button{
 	command = "cycle_interior";
-	frequency = 1333;
+	frequency = 1380;
 	master_tag = "ascent_starboard";
 	pixel_y = -24
 	},
@@ -2015,12 +1906,12 @@
 "eo" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump_out_internal"
 	},
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	cycle_to_external_air = 1;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard";
 	pixel_x = -24;
 	pixel_y = 0;
@@ -2137,7 +2028,7 @@
 "ey" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_pump"
 	},
 /turf/simulated/floor/ascent,
@@ -2259,7 +2150,7 @@
 /area/ship/ascent/engineering)
 "eF" = (
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock";
 	pixel_x = -24;
 	pixel_y = 0;
@@ -2320,7 +2211,7 @@
 "eO" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
 	airlock_type = "Internal";
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_inner"
 	},
 /obj/effect/catwalk_plated/ascent,
@@ -2339,7 +2230,7 @@
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /obj/machinery/door/airlock/external/bolted/ascent{
 	airlock_type = "Internal";
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_inner"
 	},
 /turf/simulated/floor/ascent,
@@ -2457,14 +2348,14 @@
 /area/ship/ascent/habitation)
 "fa" = (
 /obj/machinery/airlock_sensor{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_sensor";
 	pixel_x = -24;
 	pixel_y = 0
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump"
 	},
 /turf/simulated/floor/ascent,
@@ -2472,7 +2363,7 @@
 "fb" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump"
 	},
 /obj/structure/cable/cyan{
@@ -2490,7 +2381,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump_out_internal"
 	},
 /turf/simulated/floor/ascent,
@@ -2515,7 +2406,7 @@
 /area/ship/ascent/habitation)
 "fe" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_outer"
 	},
 /obj/structure/cable/cyan{
@@ -2539,7 +2430,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_shuttle_starboard_vent_inner"
 	},
 /turf/simulated/floor/ascent,
@@ -2550,20 +2441,20 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/effect/shuttle_landmark/ascent_seedship/start,
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_outer"
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/wing_starboard)
 "fi" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_dock_outer"
 	},
 /obj/effect/catwalk_plated/ascent,
+/obj/effect/shuttle_landmark/ascent_seedship/start,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/wing_starboard)
 "fj" = (
@@ -2602,8 +2493,8 @@
 	dir = 9
 	},
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
-	frequency = 1332;
-	id_tag = "ascent_port_shuttle_dock";
+	frequency = 1380;
+	id_tag = "ascent_port";
 	pixel_x = 24;
 	tag_airpump = "ascent_port_pump";
 	tag_chamber_sensor = "ascent_port_sensor";
@@ -2611,7 +2502,7 @@
 	tag_interior_door = "ascent_port_inner"
 	},
 /obj/machinery/airlock_sensor{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_sensor";
 	pixel_x = 24;
 	pixel_y = -12
@@ -2688,7 +2579,7 @@
 /area/ship/ascent/shuttle_starboard)
 "fv" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_shuttle_starboard_vent_inner"
 	},
 /turf/simulated/floor/ascent,
@@ -2712,7 +2603,7 @@
 	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_pump"
 	},
 /turf/simulated/floor/ascent,
@@ -3112,7 +3003,7 @@
 /area/ship/ascent/fore_hallway)
 "gs" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_inner"
 	},
 /obj/effect/catwalk_plated/ascent,
@@ -3144,7 +3035,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_pump"
 	},
 /turf/simulated/floor/ascent,
@@ -3181,8 +3072,8 @@
 	pixel_y = 32
 	},
 /obj/structure/railing/mapped{
-	icon_state = "railing0-1";
-	dir = 4
+	dir = 4;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_starboard_prow)
@@ -3331,6 +3222,10 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/engineering)
+"gO" = (
+/obj/machinery/pipedispenser,
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/wing_starboard)
 "gP" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4
@@ -3563,22 +3458,6 @@
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_port_spike)
-"hG" = (
-/obj/machinery/door/airlock/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/cyan{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_port_prow)
 "hH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -3675,18 +3554,6 @@
 /obj/item/weapon/reagent_containers/food/snacks/meat/beef,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_port_prow)
-"ia" = (
-/obj/machinery/door/airlock/ascent,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/catwalk_plated/ascent,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_starboard_prow)
 "ib" = (
 /obj/machinery/atmospherics/unary/vent_pump/on/ascent{
 	dir = 1;
@@ -3710,14 +3577,14 @@
 /area/ship/ascent/shuttle_starboard)
 "ie" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_outer"
 	},
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/atmospherics/pipe/manifold/hidden/black,
 /obj/machinery/access_button{
 	command = "cycle_exterior";
-	frequency = 1333;
+	frequency = 1380;
 	master_tag = "ascent_starboard";
 	pixel_x = -24;
 	pixel_y = 0
@@ -3822,7 +3689,7 @@
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/atmospherics/pipe/manifold/hidden/black,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_outer"
 	},
 /turf/simulated/floor/ascent,
@@ -3838,8 +3705,8 @@
 	dir = 4
 	},
 /obj/machinery/access_button/airlock_interior{
-	frequency = 1332;
-	master_tag = "ascent_port_shuttle_dock";
+	frequency = 1380;
+	master_tag = "ascent_port";
 	pixel_x = 4;
 	pixel_y = 24
 	},
@@ -3892,7 +3759,7 @@
 /area/ship/ascent/shuttle_port)
 "iE" = (
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_dock_starboard_external"
 	},
 /obj/effect/catwalk_plated/ascent,
@@ -3907,7 +3774,7 @@
 /obj/effect/catwalk_plated/ascent,
 /obj/effect/shuttle_landmark/ascent_seedship/start/two,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_dock_starboard_external"
 	},
 /turf/simulated/floor/ascent,
@@ -3925,7 +3792,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 1;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump"
 	},
 /turf/simulated/floor/ascent,
@@ -3976,7 +3843,7 @@
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/door/airlock/external/bolted/ascent{
 	airlock_type = "Internal";
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_dock_starboard_internal"
 	},
 /turf/simulated/floor/ascent,
@@ -4167,7 +4034,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden,
 /obj/machinery/airlock_sensor{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_shuttle_starboard_interior_sensor";
 	pixel_x = -8;
 	pixel_y = -24
@@ -4254,7 +4121,7 @@
 	},
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_outer"
 	},
 /turf/simulated/floor/ascent,
@@ -4292,11 +4159,11 @@
 "kH" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 8;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump_out_external"
 	},
 /obj/machinery/airlock_sensor{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_sensor_external";
 	pixel_x = -24;
 	pixel_y = 0
@@ -4346,8 +4213,9 @@
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
 "mg" = (
-/turf/space,
-/area/ship/ascent/fore_starboard_jut)
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/bridge)
 "mn" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -4409,9 +4277,23 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
+"nU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/door/airlock/ascent{
+	name = "Feeding Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_port_prow)
 "nV" = (
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_dock";
 	pixel_x = -24;
 	pixel_y = 0;
@@ -4448,6 +4330,9 @@
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
+"pw" = (
+/turf/simulated/floor/reinforced/airless,
+/area/space)
 "py" = (
 /obj/machinery/door/airlock/ascent,
 /obj/effect/catwalk_plated/ascent,
@@ -4463,14 +4348,17 @@
 "pE" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1332;
+	frequency = 1380;
 	id_tag = "ascent_port_inner"
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_port)
 "qc" = (
-/turf/space,
-/area/ship/ascent/aft_starboard_jut)
+/obj/machinery/porta_turret/mantid,
+/turf/simulated/floor/ascent{
+	initial_gas = newlist()
+	},
+/area/ship/ascent/shuttle_port)
 "qG" = (
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
@@ -4491,6 +4379,21 @@
 /obj/item/weapon/reagent_containers/dropper,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
+"qU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/door/airlock/ascent{
+	name = "Maintenance Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/wing_starboard)
 "rb" = (
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
@@ -4521,6 +4424,20 @@
 "tz" = (
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
+"uO" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/door/airlock/ascent{
+	name = "Fabrication Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_starboard_prow)
 "vx" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/reagent_temperature/cooler{
@@ -4543,8 +4460,8 @@
 /area/ship/ascent/shuttle_starboard)
 "vY" = (
 /obj/structure/railing/mapped{
-	icon_state = "railing0-1";
-	dir = 4
+	dir = 4;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
@@ -4580,7 +4497,7 @@
 "wO" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump_out_internal"
 	},
 /turf/simulated/floor/ascent,
@@ -4608,6 +4525,31 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
+"xn" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/door/airlock/ascent{
+	name = "Fabrication Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_starboard_prow)
+"yh" = (
+/obj/structure/hygiene/sink/ascent{
+	pixel_y = -24
+	},
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_starboard_jut)
 "yx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -4690,6 +4632,10 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
+"AJ" = (
+/obj/machinery/turretid/ascent,
+/turf/simulated/wall/ascent,
+/area/ship/ascent/bridge)
 "BX" = (
 /turf/simulated/wall/r_wall/ascent,
 /area/ship/ascent/engineering)
@@ -4721,8 +4667,8 @@
 	name = "heavy duty box"
 	},
 /obj/structure/railing/mapped{
-	icon_state = "railing0-1";
-	dir = 8
+	dir = 8;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
@@ -4763,7 +4709,7 @@
 "Fg" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 4;
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_pump_out_external"
 	},
 /turf/simulated/floor/ascent,
@@ -4779,6 +4725,7 @@
 /obj/structure/window/phoronreinforced{
 	dir = 4
 	},
+/obj/machinery/porta_turret/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
 "Gl" = (
@@ -4810,6 +4757,7 @@
 	dir = 8
 	},
 /obj/structure/window/phoronreinforced,
+/obj/machinery/porta_turret/mantid,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
 "If" = (
@@ -4822,8 +4770,8 @@
 "IQ" = (
 /obj/effect/wallframe_spawn/reinforced_phoron/hull,
 /obj/machinery/atmospherics/pipe/simple/visible/red{
-	icon_state = "intact";
-	dir = 4
+	dir = 4;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
@@ -4833,12 +4781,20 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/shuttle_starboard)
-"Jp" = (
-/obj/structure/hygiene/sink/ascent{
-	pixel_y = -24
+"Ja" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Fabrication Chamber"
 	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_starboard_jut)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_starboard_prow)
 "Js" = (
 /obj/machinery/botany/extractor,
 /turf/simulated/floor/tiled/ascent,
@@ -4856,18 +4812,6 @@
 /obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
-"Kh" = (
-/obj/machinery/door/airlock/ascent,
-/obj/effect/catwalk_plated/ascent,
-/obj/structure/cable/cyan{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_starboard_prow)
 "KO" = (
 /obj/machinery/ion_engine{
 	dir = 8
@@ -4881,6 +4825,20 @@
 /obj/structure/hygiene/shower/ascent,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_hallway)
+"Mw" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Holding Cells"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_starboard_prow)
 "MY" = (
 /obj/structure/ore_box{
 	color = "PURPLE";
@@ -4986,6 +4944,27 @@
 /obj/structure/railing/mapped,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
+"PK" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Command Chamber"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/bridge)
 "Qm" = (
 /obj/structure/window/phoronreinforced{
 	dir = 1
@@ -5027,8 +5006,8 @@
 /area/ship/ascent/fore_starboard_jut)
 "QT" = (
 /obj/structure/hygiene/shower/ascent{
-	icon_state = "shower";
-	dir = 1
+	dir = 1;
+	icon_state = "shower"
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_hallway)
@@ -5052,12 +5031,54 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
+"Sj" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/machinery/door/airlock/ascent{
+	name = "Command Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/bridge)
 "Sp" = (
 /obj/structure/bed/chair/padded/purple/ascent/gyne{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/shuttle_starboard)
+"SV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/machinery/door/airlock/ascent{
+	name = "Maintenance Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/wing_starboard)
 "TL" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -5080,8 +5101,8 @@
 /area/ship/ascent/shuttle_starboard)
 "TO" = (
 /obj/structure/hygiene/shower/ascent{
-	icon_state = "shower";
-	dir = 8
+	dir = 8;
+	icon_state = "shower"
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_hallway)
@@ -5092,6 +5113,24 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
+"Up" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Feeding Chamber"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_port_prow)
 "Uy" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -5120,6 +5159,27 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
+"Va" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Habitation Chamber"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/habitation)
 "Vf" = (
 /obj/structure/window/phoronreinforced{
 	dir = 4
@@ -5131,11 +5191,26 @@
 /area/ship/ascent/shuttle_starboard)
 "Vx" = (
 /obj/structure/railing/mapped{
-	icon_state = "railing0-1";
-	dir = 4
+	dir = 4;
+	icon_state = "railing0-1"
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_starboard_prow)
+"Vy" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/door/airlock/ascent{
+	name = "Command Chamber"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/bridge)
 "Vz" = (
 /obj/machinery/optable/ascent,
 /obj/effect/catwalk_plated/ascent,
@@ -5167,7 +5242,7 @@
 /obj/effect/catwalk_plated/ascent,
 /obj/machinery/atmospherics/pipe/manifold/hidden/black,
 /obj/machinery/door/airlock/external/bolted/ascent{
-	frequency = 1333;
+	frequency = 1380;
 	id_tag = "ascent_starboard_outer"
 	},
 /turf/simulated/floor/ascent,
@@ -5207,9 +5282,10 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
-"Zh" = (
+"Yn" = (
+/obj/machinery/mantid_dispenser,
 /turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_starboard_jut)
+/area/ship/ascent/fore_port_prow)
 "Zn" = (
 /obj/machinery/power/apc/hyper/ascent/north,
 /obj/structure/cable/cyan{
@@ -5247,6 +5323,27 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
+"ZT" = (
+/obj/machinery/door/airlock/ascent{
+	name = "Maintenance Chamber"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/wing_starboard)
 
 (1,1,1) = {"
 aa
@@ -7992,6 +8089,7 @@ aa
 aa
 aa
 aa
+mg
 aa
 aa
 aa
@@ -8003,8 +8101,7 @@ aa
 aa
 aa
 aa
-aa
-aa
+mg
 aa
 aa
 aa
@@ -9458,6 +9555,7 @@ av
 aA
 aA
 av
+fM
 aa
 aa
 aa
@@ -9465,8 +9563,7 @@ aa
 aa
 aa
 aa
-aa
-aa
+fM
 bz
 fR
 gM
@@ -9580,6 +9677,7 @@ av
 aA
 cu
 av
+mg
 aa
 aa
 aa
@@ -9587,8 +9685,7 @@ aa
 aa
 aa
 aa
-aa
-aa
+mg
 bz
 hr
 kv
@@ -9702,15 +9799,15 @@ av
 bh
 cw
 av
-aa
+fM
 jT
+fM
 aa
 aa
 aa
-aa
-aa
+fM
 jT
-aa
+fM
 bz
 hB
 hX
@@ -9827,9 +9924,9 @@ av
 jT
 jT
 jT
-aa
-aa
-aa
+fM
+fM
+fM
 jT
 jT
 jT
@@ -9944,7 +10041,7 @@ aa
 ah
 ah
 ah
-cE
+xn
 ah
 ah
 jT
@@ -9956,7 +10053,7 @@ jT
 jT
 cy
 cy
-hG
+Up
 cy
 cy
 cy
@@ -10693,7 +10790,7 @@ cv
 hK
 cy
 cy
-aa
+mg
 aa
 aa
 aa
@@ -10792,7 +10889,7 @@ aa
 aa
 aa
 aa
-mg
+aa
 ac
 ac
 ah
@@ -10802,11 +10899,11 @@ as
 as
 as
 dG
-ia
+Ja
 bp
 ez
 bp
-aY
+nU
 eA
 cv
 cv
@@ -11058,7 +11155,7 @@ cv
 hc
 hY
 dT
-aa
+pw
 cN
 cN
 cN
@@ -11167,20 +11264,20 @@ EB
 ZK
 bi
 hj
-ia
+uO
 bp
 bp
 cf
 bp
 bp
-aY
+nU
 cS
 fT
 cv
 hc
 hZ
 dT
-aa
+pw
 ik
 WI
 cN
@@ -11275,7 +11372,7 @@ aa
 aa
 aa
 aa
-aa
+mg
 ac
 ac
 ac
@@ -11302,7 +11399,7 @@ cv
 hc
 ic
 dT
-aa
+pw
 ik
 WI
 VB
@@ -11401,10 +11498,10 @@ aa
 pr
 gK
 qG
-Zh
-Zh
-Zh
-Zh
+qG
+qG
+qG
+qG
 ah
 OZ
 Es
@@ -11414,7 +11511,7 @@ ER
 cH
 cZ
 cZ
-cP
+Va
 cZ
 cZ
 dl
@@ -11424,7 +11521,7 @@ cv
 hK
 cy
 cy
-aa
+pw
 cN
 WI
 cQ
@@ -11526,7 +11623,7 @@ qG
 re
 Ex
 tw
-Jp
+yh
 ah
 lk
 lk
@@ -11541,12 +11638,12 @@ bk
 gF
 dl
 dl
-cv
+dl
 cv
 hc
 ic
 dT
-aa
+pw
 cN
 je
 cQ
@@ -11663,12 +11760,12 @@ eS
 eW
 eZ
 cZ
-cv
+Yn
 cv
 hc
 hY
 dT
-aa
+pw
 cN
 WI
 Xp
@@ -11771,7 +11868,7 @@ ac
 eR
 gS
 TL
-Kh
+Mw
 lb
 lb
 mn
@@ -11785,12 +11882,12 @@ bb
 eQ
 dN
 hm
-cv
+hi
 cv
 hc
 hZ
 dT
-aa
+pw
 ik
 eT
 fq
@@ -11883,12 +11980,12 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+pw
+pw
+pw
+qG
+qG
+qG
 ac
 ac
 Ou
@@ -11907,12 +12004,12 @@ fJ
 eX
 fN
 cZ
-cv
+Yn
 cv
 hK
 cy
 cy
-aa
+mg
 ik
 WI
 fr
@@ -12009,9 +12106,9 @@ ab
 ab
 ab
 UQ
-aa
-aa
-aa
+qG
+qG
+qG
 ac
 ac
 ac
@@ -12034,7 +12131,7 @@ cv
 hc
 gW
 dT
-aa
+pw
 ik
 iM
 fs
@@ -12043,7 +12140,7 @@ iS
 gT
 cN
 cN
-XM
+qc
 aa
 aa
 aa
@@ -12135,8 +12232,8 @@ ad
 ad
 ab
 Qz
-aa
-aa
+qG
+qG
 ah
 as
 as
@@ -12258,7 +12355,7 @@ MY
 ab
 ab
 Qz
-aa
+mg
 ah
 as
 as
@@ -12410,7 +12507,7 @@ bs
 cQ
 zf
 cN
-XM
+qc
 iX
 cN
 aa
@@ -12633,9 +12730,9 @@ bb
 bb
 bA
 bA
-bO
+Sj
 bA
-bO
+PK
 bA
 bA
 bb
@@ -13020,7 +13117,7 @@ cQ
 cQ
 zf
 cN
-XM
+qc
 XM
 cN
 aa
@@ -13234,7 +13331,7 @@ Nv
 ab
 ab
 Qz
-aa
+mg
 ag
 an
 fW
@@ -13355,12 +13452,12 @@ ad
 ad
 ab
 Qz
-aa
-aa
+na
+na
 ag
 cG
 gG
-aN
+Vy
 bc
 bc
 bc
@@ -13372,11 +13469,11 @@ bc
 bc
 bc
 fD
-aN
+Vy
 dU
 ak
 eG
-aa
+pw
 ik
 iP
 gu
@@ -13385,7 +13482,7 @@ jc
 jl
 cN
 cN
-XM
+qc
 aa
 aa
 aa
@@ -13472,10 +13569,10 @@ ab
 ab
 ab
 ab
-aa
-aa
-aa
-aa
+na
+na
+na
+na
 aj
 aj
 aj
@@ -13498,7 +13595,7 @@ bA
 dW
 ca
 eG
-aa
+pw
 ik
 Qm
 iw
@@ -13591,12 +13688,12 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
+pw
+pw
+pw
+na
+na
+na
 aj
 aj
 JC
@@ -13620,7 +13717,7 @@ bA
 bI
 ak
 eG
-aa
+pw
 ik
 oU
 gw
@@ -13725,7 +13822,7 @@ JC
 CW
 ag
 ag
-cj
+ZT
 bA
 bA
 bm
@@ -13739,10 +13836,10 @@ fK
 fI
 bA
 bA
-cj
+SV
 ag
 ag
-aa
+mg
 cN
 ja
 gD
@@ -13864,7 +13961,7 @@ ek
 bI
 da
 ag
-aa
+pw
 cN
 jb
 cQ
@@ -13986,7 +14083,7 @@ en
 bI
 dd
 ag
-aa
+pw
 cN
 Qy
 cQ
@@ -14096,7 +14193,7 @@ bS
 hO
 jA
 bA
-bA
+AJ
 cU
 cU
 cU
@@ -14108,7 +14205,7 @@ ch
 bI
 eL
 eG
-aa
+pw
 ik
 WI
 cQ
@@ -14203,7 +14300,7 @@ aa
 aa
 aa
 aa
-aa
+mg
 aj
 aj
 aj
@@ -14230,7 +14327,7 @@ dO
 bI
 eK
 eG
-aa
+pw
 ik
 WI
 cN
@@ -14327,7 +14424,7 @@ aa
 aa
 aa
 aa
-qc
+aa
 XG
 FO
 tr
@@ -14340,11 +14437,11 @@ cr
 cI
 cI
 cI
-cK
+qU
 cI
 bf
 cI
-cK
+qU
 cI
 cI
 cI
@@ -14352,7 +14449,7 @@ dQ
 dR
 ee
 ag
-aa
+pw
 cN
 cN
 cN
@@ -14581,7 +14678,7 @@ ag
 ag
 dr
 ax
-ak
+gO
 jy
 az
 az

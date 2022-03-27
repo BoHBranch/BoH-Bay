@@ -152,8 +152,8 @@
 	name = "\improper Laundry Room"
 	icon_state = "Sleep"
 
-/area/crew_quarters/garden
-	name = "\improper Ship Garden"
+/area/crew_quarters/recreation
+	name = "\improper Recreation"
 
 //Second Deck (Z-3)
 /area/maintenance/seconddeck
@@ -329,10 +329,6 @@
 
 /area/shuttle/escape_pod8/station
 	name = "Escape Pod Eight"
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
-
-/area/shuttle/escape_pod9/station
-	name = "Escape Pod Nine"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
 /area/shuttle/escape_pod10/station
@@ -544,6 +540,11 @@
 	icon_state = "shuttle3"
 	base_turf = /turf/simulated/open
 
+/area/turbolift/missiles_lift
+	name = "\improper Missiles Lift"
+	icon_state = "shuttle3"
+	base_turf = /turf/simulated/open
+
 //Merchant
 
 /area/shuttle/merchant/home
@@ -631,6 +632,11 @@
 	icon_state = "disperser"
 	req_access = list(access_bridge)
 
+/area/command/disperser/odst
+	name = "\improper Drop-Pod Bays"
+	icon_state = "disperser"
+	req_access = list(access_infantry)
+
 /area/crew_quarters/heads
 	icon_state = "heads"
 	req_access = list(access_heads)
@@ -677,14 +683,15 @@
 	name = "\improper Command - CL's Office"
 	req_access = list(access_liaison)
 
-/area/crew_quarters/heads/office/cl/backroom
-	icon_state = "heads_cl"
-	name = "\improper Command - CL's Backroom"
-	req_access = list(access_liaison)
+/area/crew_quarters/heads/office/solrep
+	icon_state = "heads_sol"
+	name = "\improper Command - Rep's Office"
+	req_access = list(access_representative)
 
-/area/crew_quarters/heads/office/vip
-	icon_state = "heads_sr"
-	name = "\improper Command - VIP Quarters"
+/area/crew_quarters/heads/office/solrep/backroom
+	icon_state = "heads_sol"
+	name = "\improper Command - Rep's Backroom"
+	req_access = list(access_representative)
 
 /area/crew_quarters/heads/office/sea
 	icon_state = "heads_sea"
@@ -793,7 +800,7 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list(list(access_mining, access_xenoarch))
 
-/area/storage/medical
+/area/medical/storage
 	name = "Medical Storage"
 	icon_state = "medbay4"
 	sound_env = SMALL_ENCLOSED
@@ -926,10 +933,6 @@
 /area/crew_quarters/head/sauna
 	name = "\improper Sauna"
 	icon_state = "sauna"
-
-/area/crew_quarters/gym
-	name = "\improper Gym"
-	icon_state = "fitness"
 
 /area/crew_quarters/mess
 	name = "\improper Mess Hall"
@@ -1089,10 +1092,6 @@
 	icon_state = "locker"
 	req_access = list(access_medical_equip)
 
-/area/medical/subacute
-	name = "\improper Sub-Acute Ward"
-	icon_state = "patients"
-
 /area/medical/counselor
 	name = "\improper Counselor's Office"
 	icon_state = "medbay3"
@@ -1112,17 +1111,20 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_crematorium)
 
-/area/medical/lounge
-	name = "\improper Staff Lounge"
-	icon_state = "locker"
-	req_access = list(access_medical_equip)
+/area/medical/triage
+	name = "\improper Triage"
+	icon_state = "medbay"
+	req_access = list(access_medical)
 
 /area/medical/reslab
 	name = "\improper Resuscitation Lab"
 	req_access = list(access_surgery)
 
 /area/medical/virology
-	name = "\improper Virology (decomissioned)"
+	name = "\improper Virology"
+
+/area/crew_quarters/safe_room/medical
+	name = "\improper Medical Safe Room"
 
 // Shield Rooms
 /area/shield
@@ -1680,32 +1682,28 @@
 	name = "\improper Thunderdome (Observer.)"
 	icon_state = "purple"
 
-/area/defturrets
-	name = "\improper Anti-Boarding Control"
-	icon_state = "security_sub"
-	base_turf = /turf/simulated/floor/reinforced/airless
-	requires_power = 1
-	dynamic_lighting = 1
-	req_access = list(access_brig)
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-
 /area/command/gunnery
 	name = "\improper Weapon Mounts"
 	icon = 'icons/boh/area.dmi'
 	icon_state = "guntemp"
 	req_access = list(access_gunnery)
 
-/area/command/gunnery/ob
-	name = "\improper KOSMAG Exterior"
+/area/command/gunnery/missiles
+	name = "\improper Missile Pod Exterior"
 	icon_state = "kosmag1"
 
-/area/command/gunnery/ob/inside
-	name = "\improper KOSMAG Interior"
+/area/command/gunnery/missiles/inside
+	name = "\improper Missile Pod Interior"
 	icon_state = "kosmag2"
 
-/area/command/gunnery/ob/airlock
-	name = "\improper KOSMAG Airlock"
-	icon_state = "kosmagairlock"
+/area/command/gunnery/missiles/storage
+	name = "\improper Weapon Mounts"
+	icon = 'icons/boh/area.dmi'
+	icon_state = "guntemp"
+
+/area/command/gunnery/missiles/storage/lower
+	name = "\improper Weapon Mounts"
+	icon = 'icons/boh/area.dmi'
 
 /area/command/gunnery/mim
 	name = "\improper Tactical Operations Center"
@@ -1731,10 +1729,6 @@
 
 /area/crew_quarters_boh/cabin_main/c2
 	name = "\improper Cabin Two"
-	icon_state = "Sleep"
-
-/area/crew_quarters_boh/cabin_main/c3
-	name = "\improper Cabin Three"
 	icon_state = "Sleep"
 
 /area/crew_quarters_boh/cabin_main/janitorial
@@ -1798,12 +1792,6 @@
 	name = "\improper Infantry Barracks Exterior"
 	icon_state = "Sleep"
 	req_access = list(access_infantry)
-
-/area/security/infantry/aux_bunk
-	name = "\improper Auxiliary Infantry Barracks"
-	icon_state = "Sleep"
-	req_access = list(access_infantry)
-
 
 /////////
 // Anom

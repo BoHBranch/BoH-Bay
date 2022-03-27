@@ -59,6 +59,7 @@
 	var/zoom = 0 //1 if item is actively being used to zoom. For scoped guns and binoculars.
 
 	var/base_parry_chance	// Will allow weapon to parry melee attacks if non-zero
+	var/parrysound = 'sound/weapons/parry/parry_gen.ogg'
 	var/icon_override = null  //Used to override hardcoded clothing dmis in human clothing proc.
 
 	var/use_alt_layer = FALSE // Use the slot's alternative layer when rendering on a mob
@@ -502,7 +503,7 @@ var/list/global/slot_flags_enumeration = list(
 	if(parry_chance)
 		if(default_parry_check(user, attacker, damage_source) && prob(parry_chance))
 			user.visible_message("<span class='danger'>\The [user] parries [attack_text] with \the [src]!</span>")
-			playsound(user.loc, 'sound/weapons/punchmiss.ogg', 50, 1)
+			playsound(user.loc, parrysound, 50, 1)
 			on_parry(damage_source)
 			return 1
 	return 0
@@ -520,6 +521,7 @@ var/list/global/slot_flags_enumeration = list(
 		return 0
 	attacker.apply_damage(force, damtype, attacker.hand ? BP_L_HAND : BP_R_HAND, used_weapon = src)
 	attacker.visible_message("<span class='danger'>[attacker] hurts \his hand on [src]!</span>")
+	playsound(target, parrysound, 50, 1, -1)
 	playsound(target, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 	playsound(target, hitsound, 50, 1, -1)
 	return 1
@@ -799,9 +801,9 @@ modules/mob/living/carbon/human/life.dm if you die, you will be zoomed out.
 
 /obj/item/proc/get_examine_line()
 	if(blood_color)
-		. = SPAN_WARNING("\icon[src] [gender==PLURAL?"some":"a"] <font color='[blood_color]'>stained</font> [src]")
+		. = SPAN_WARNING("[icon2html(src, viewers(get_turf(src)))] [gender==PLURAL?"some":"a"] <font color='[blood_color]'>stained</font> [src]")
 	else
-		. = "\icon[src] \a [src]"
+		. = "[icon2html(src, viewers(get_turf(src)))] \a [src]"
 	var/ID = GetIdCard()
 	if(ID)
 		. += "  <a href='?src=\ref[ID];look_at_id=1'>\[Look at ID\]</a>"

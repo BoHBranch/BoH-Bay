@@ -126,7 +126,7 @@
 #define CULTURE_VOX_ACOLYTE    "Resolute Acolyte"
 #define CULTURE_VOX_TRUTH      "Artificer of Truth"
 #define CULTURE_VOX_TECHNICIAN "Sacred Technician"
-#define CULTURE_VOX_LIGHT      "Warrior of Light"
+#define CULTURE_VOX_LIGHT      "Voidborne Vigilant"
 #define CULTURE_VOX_MERCHANT   "Sworn Merchant"
 
 #define HOME_SYSTEM_VOX_CAPITAL    "Ark of the Starlight Herald"
@@ -161,21 +161,35 @@
 #define HOME_SYSTEM_SERPENTIDS "Tau-Wilo"
 
 // Unathi cultures.
-#define CULTURE_UNATHI              "Moghes Hegemony"
+#define CULTURE_UNATHI_YEOSA_ABYSS    "Abyssal Yeosa Clans"
+#define CULTURE_UNATHI_YEOSA_LITTORAL "Littoral Yeosa Clans"
+#define CULTURE_UNATHI_DIAMOND_PEAKS  "Diamond Peak Clans"
+#define CULTURE_UNATHI_POLAR          "Polar Clans"
+#define CULTURE_UNATHI_DESERT         "Desert Clans"
+#define CULTURE_UNATHI_SAVANNAH       "Savannah Clans"
+#define CULTURE_UNATHI_SALT_SWAMP     "Salt Swamp Clans"
+#define CULTURE_UNATHI_SPACE          "Space-Faring Clans"
+#define CULTURE_UNATHI_TERSTEN        "Tersten Clans"
+#define CULTURE_UNATHI_ADOPTED        "Adopted Veteris'Unathi"
 
 #define HOME_SYSTEM_MOGHES          "Moghes"
+#define HOME_SYSTEM_OUERE           "Ouere"
+#define HOME_SYSTEM_UNATHI_TERSTEN  "Tersten - Unathi Clans"
+#define HOME_SYSTEM_OFFWORLD        "Off-world"
 
-#define FACTION_UNATHI_POLAR        "Polar Clans"
-#define FACTION_UNATHI_DESERT       "Desert Clans"
-#define FACTION_UNATHI_SAVANNAH     "Savannah Clans"
-#define FACTION_UNATHI_DIAMOND_PEAK "Diamond Peak Clans"
-#define FACTION_UNATHI_SALT_SWAMP   "Salt Swamp Clans"
-#define FACTION_UNATHI_YEOSA		"Yeosa Clans"
+#define FACTION_UNATHI_CLAN          "Clan Focused"
+#define FACTION_UNATHI_KRUKZUZ       "Krukzuz"
+#define FACTION_UNATHI_SOL           "Solarian Government"
+#define FACTION_UNATHI_INDEPENDENT   "Independent Faction"
 
+#define RELIGION_UNATHI_ANCESTORS	 "Ancestor Worship"
 #define RELIGION_UNATHI_STRATAGEM    "Grand Stratagem"
 #define RELIGION_UNATHI_PRECURSOR    "Precursor"
 #define RELIGION_UNATHI_VINE         "Hand of the Vine"
 #define RELIGION_UNATHI_LIGHTS       "The Fruitful Lights"
+#define RELIGION_UNATHI_OTHER        "Other"
+#define RELIGION_UNATHI_MARKESHELI   "Markesheli Cult"
+#define RELIGION_UNATHI_AGA_EAKHE    "Aga-Eakhe"
 
 // Nabber grades.
 #define CULTURE_NABBER_CMINUS "Grade C-"
@@ -204,3 +218,16 @@
 #define FACTION_SERGAL_REONO "Reono lands"
 #define RELIGION_SERGAL_ANIMISM "northern religions"
 #define RELIGION_SERGAL_GOLD_RING "religion of Gold ring"
+
+// Tajaran cultures.
+#define CULTURE_TAJARAN      "The Tajara"
+#define HOME_SYSTEM_TAJARAN  "Rarkajar"
+#define FACTION_TAJARAN      "Tajaran Government"
+
+//Xenophage cultures
+
+#define CULTURE_XENOPHAGE_D    "Xenophage Drone"
+#define CULTURE_XENOPHAGE_H    "Xenophage Hunter"
+#define CULTURE_XENOPHAGE_S    "Xenophage Sentinel"
+#define CULTURE_XENOPHAGE_Q    "Xenophage Queen"
+#define FACTION_XENOPHAGE      "Xenophage Hive"

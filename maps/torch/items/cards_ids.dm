@@ -41,6 +41,9 @@
 	job_access_type = /datum/job/doctor
 	detail_color = COLOR_PALE_BLUE_GRAY
 
+/obj/item/weapon/card/id/torch/crew/medical/virology
+	job_access_type = /datum/job/doctor/virologist
+
 /obj/item/weapon/card/id/torch/crew/medical/senior
 	job_access_type = /datum/job/senior_doctor
 
@@ -128,8 +131,13 @@
 	job_access_type = /datum/job/bartender
 
 
-/obj/item/weapon/card/id/torch/crew/adjudicator
-	job_access_type = /datum/job/adjudicator
+/obj/item/weapon/card/id/torch/crew/representative
+	job_access_type = /datum/job/solrep
+	detail_color = COLOR_COMMAND_BLUE
+	extra_details = list("goldstripe")
+
+/obj/item/weapon/card/id/torch/crew/solguard
+	job_access_type = /datum/job/solguard
 	detail_color = COLOR_COMMAND_BLUE
 
 /obj/item/weapon/card/id/torch/crew/sea

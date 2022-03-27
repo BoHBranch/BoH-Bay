@@ -3,6 +3,7 @@
 	total_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/captain
 	is_semi_antagonist = TRUE
+	required_language = LANGUAGE_SPACER
 	supervisors = "your bottom line"
 	info = "Your ship has suffered a freak ion storm blowout, leaving it dark and crippled in the depths of \
 	unexplored space. Most of the crew jumped ship at the first sight of the storm. What good judgement you have for hiring, eh? \
@@ -14,6 +15,7 @@
 	total_positions = 6
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/crew
 	is_semi_antagonist = TRUE
+	required_language = LANGUAGE_SPACER
 	info = "Your ship has suffered a freak ion storm blowout, leaving it dark and crippled in the depths of \
 	unexplored space. Most of the crew jumped ship at the first sight of the storm. \
 	Work together with the Captain and what's left of the crew."

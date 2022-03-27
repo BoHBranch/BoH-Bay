@@ -376,6 +376,11 @@
 	mode = SYRINGE_INJECT
 	. = ..()
 
+/obj/item/weapon/reagent_containers/syringe/creth
+	name = "Syringe (creth)"
+	desc = "Contains drugs for SPEED."
+	reagents_to_add = list(/datum/reagent/creth = 15)
+
 // TG ports
 
 /obj/item/weapon/reagent_containers/syringe/bluespace

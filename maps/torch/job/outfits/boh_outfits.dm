@@ -39,7 +39,7 @@
 	pda_type = /obj/item/modular_computer/pda/heads
 
 /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/polopants/command
 
 /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/marine
 	name = OUTFIT_JOB_NAME("Bridge Officer - Marine Corps")
@@ -70,6 +70,11 @@
 // Medical
 /decl/hierarchy/outfit/job/torch/crew/medical/senior/marine
 	name = OUTFIT_JOB_NAME("Physician - Marine Corps")
+	uniform = /obj/item/clothing/under/solgov/utility/army/medical
+	shoes = /obj/item/clothing/shoes/dutyboots
+
+/decl/hierarchy/outfit/job/torch/crew/medical/virologist/marine
+	name = OUTFIT_JOB_NAME("Virologist - Marine Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/army/medical
 	shoes = /obj/item/clothing/shoes/dutyboots
 
@@ -191,7 +196,7 @@
 	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
 	suit = /obj/item/clothing/suit/storage/toggle/suit/black
 	shoes = /obj/item/clothing/shoes/laceup
-	id_type = /obj/item/weapon/card/id/torch/crew/adjudicator
+	id_type = /obj/item/weapon/card/id/torch/crew/representative
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
 
 //Bailiff

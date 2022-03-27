@@ -289,6 +289,7 @@ datum/preferences
 	character.flavor_texts["hands"] = flavor_texts["hands"]
 	character.flavor_texts["legs"] = flavor_texts["legs"]
 	character.flavor_texts["feet"] = flavor_texts["feet"]
+	character.flavor_texts["NSFW/OOC"] = flavor_texts["NSFW/OOC"]
 
 	character.public_record = public_record
 	character.med_record = med_record

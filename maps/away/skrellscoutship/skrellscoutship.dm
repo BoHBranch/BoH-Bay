@@ -12,6 +12,9 @@
 	cost = 0.5
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/skrellscoutship)
 	apc_test_exempt_areas = list()
+	area_coherency_test_subarea_count = list(
+		/area/ship/skrellscoutship/command/brig = 10
+	)
 
 /obj/effect/overmap/visitable/sector/skrellscoutspace
 	name = "Empty Sector"
@@ -72,7 +75,7 @@
 					SKILL_HAULING = SKILL_ADEPT,
 					SKILL_COMBAT = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT,
-					SKILL_MEDICAL = SKILL_BASIC)
+					SKILL_MEDICAL = SKILL_ADEPT)
 
 /datum/job/submap/skrellscoutship_crew
 	title = "Qrri-Zuumqix"
@@ -91,7 +94,7 @@
 					SKILL_HAULING = SKILL_ADEPT,
 					SKILL_COMBAT = SKILL_ADEPT,
 					SKILL_WEAPONS = SKILL_ADEPT,
-					SKILL_MEDICAL = SKILL_BASIC)
+					SKILL_MEDICAL = SKILL_ADEPT)
 
 /datum/job/submap/skrellscoutship_crew/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch, var/datum/mil_rank/grade)
 	. = ..(H, alt_title, branch, grade)	//passing through arguments

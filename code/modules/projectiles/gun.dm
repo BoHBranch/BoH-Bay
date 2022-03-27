@@ -50,34 +50,62 @@
 	zoomdevicename = "scope"
 	waterproof = FALSE
 
+	// The amount a burst fires.
 	var/burst = 1
 	var/can_autofire = FALSE
-	var/fire_delay = 6 	//delay after shooting before the gun can be used again. Cannot be less than [burst_delay+1]
-	var/burst_delay = 2	//delay between shots, if firing in bursts
+	// Delay after shooting before the gun can be used again. Seperate from burst delay.
+	var/fire_delay = 6
+	// The delay between the time bullets come out in a burst.
+	var/burst_delay = 2
+	// The delay added to the move before it can move after shooting, will usually stop the mob from moving entirely.
 	var/move_delay = 1
+	// The Sound shooting Plays.
 	var/fire_sound = 'sound/weapons/gunshot/gunshot.ogg'
 	var/fire_sound_text = "gunshot"
 	var/fire_anim = null
-	var/screen_shake = 0 //shouldn't be greater than 2 unless zoomed
+	// Shouldn't be greater than 2 unless zoomed. Untrained people have more screenshake.
+	var/screen_shake = 0
 	var/silenced = 0
-	var/accuracy = 0   //accuracy is measured in tiles. +1 accuracy means that everything is effectively one tile closer for the purpose of miss chance, -1 means the opposite. launchers are not supported, at the moment.
-	var/accuracy_power = 5  //increase of to-hit chance per 1 point of accuracy
-	var/bulk = 0			//how unwieldy this weapon for its size, affects accuracy when fired without aiming
-	var/last_handled		//time when hand gun's in became active, for purposes of aiming bonuses
-	var/scoped_accuracy = null  //accuracy used when zoomed in a scope
+	// Accuracy is measured in tiles. +1 accuracy means that everything is effectively one tile closer for the purpose of miss chance, -1 means the opposite. launchers are not supported, at the moment.
+	var/accuracy = 0
+	// Increase of to-hit chance per 1 point of accuracy
+	var/accuracy_power = 5
+	// How unwieldy this weapon for its size, affects accuracy when fired without standing still. Masters are nearly uneffected by this.
+	// By the way, negative Bulk makes you more accurate.
+	var/bulk = 0
+	// Time when hand gun's in became active, for purposes of aiming bonuses
+	var/last_handled
+	// Accuracy used when zoomed in a scope
+	var/scoped_accuracy = null
 	var/scope_zoom = 0
-	var/list/burst_accuracy = list(0) //allows for different accuracies for each shot in a burst. Applied on top of accuracy
+	// Allows for different accuracies for each shot in a burst. Applied on top of accuracy.
+	var/list/burst_accuracy = list(0)
+	// How much do our bullets disperse when firing?
 	var/list/dispersion = list(0)
+	// The penalty that a firearm has when you fire if you have another item in your hand, if any.
 	var/one_hand_penalty
+	// The two handed sprite, if any.
 	var/wielded_item_state
-	var/combustion	//whether it creates hotspot when fired
-	var/automatic = FALSE // Does this fire at full auto? Burst should be set to one, and this should be one aswell. Effectively an autoclicker. Set to true if yes.
-
+	//whether it creates hotspot when fired
+	var/combustion
+	//damage multiplier. Multiplies damage. 0 does nothing, by the way. Higher means more damage, lower less.
+	var/damage_mult = 1
+	// Pen multiplier. adds/subtracts pen. 0 means no pen, higher means more pen, lower less.
+	var/penetration_mod = 0
+	// Falloff modifier. less means less distance falloff, more means more.
+	var/falloff_mod = 0
+	// Does this firemode at full auto? Effectively an autoclicker. Set to true if yes. The gun will keep firing until empty when the mouse is held down.
+	var/automatic = FALSE
+	// Our base Acc_Mod. Higher levels means the gun has a higher accuracy modifier in the acc_mod calcs.
+	var/acc_mod_base = 1
 	var/next_fire_time = 0
 
 	var/sel_mode = 1 //index of the currently selected mode
-	var/list/firemodes = list()
+	var/list/firemodes = list() // Your lists of firemodes.
 	var/selector_sound = 'sound/weapons/guns/selector.ogg'
+
+	var/slowdown_held = 0 //How much slowdown when held
+	var/slowdown_worn = 0 //How much slowdown when worn
 
 	//aiming system stuff
 	var/keep_aim = 1 	//1 for keep shooting until aim is lowered
@@ -89,7 +117,7 @@
 	var/tmp/lock_time = -100
 	var/tmp/last_safety_check = -INFINITY
 	var/safety_state = 1
-	var/has_safety = TRUE
+	var/has_safety = TRUE // Does the gun have a safety?
 	var/safety_icon 	   //overlay to apply to gun based on safety state, if any
 	var/has_firing_pin = FALSE
 	var/obj/item/firing_pin/pin //firing pin
@@ -110,6 +138,11 @@
 		pin = new firing_pin_type(src)
 		pin.installed_in = src
 
+	slowdown_per_slot[slot_l_hand] =  slowdown_held
+	slowdown_per_slot[slot_r_hand] =  slowdown_held
+	slowdown_per_slot[slot_back] =    slowdown_worn
+	slowdown_per_slot[slot_belt] =    slowdown_worn
+	slowdown_per_slot[slot_s_store] = slowdown_worn
 
 /obj/item/weapon/gun/update_twohanding()
 	if(one_hand_penalty)
@@ -262,7 +295,7 @@
 			pointblank = 0
 
 	//update timing
-	var/delay = max(burst_delay+1, fire_delay)
+	var/delay = max(fire_delay)
 	user.setClickCooldown(min(delay, DEFAULT_QUICK_COOLDOWN))
 	user.SetMoveCooldown(move_delay)
 	next_fire_time = world.time + delay
@@ -328,7 +361,10 @@
 
 	if(screen_shake)
 		spawn()
-			shake_camera(user, screen_shake+1, screen_shake)
+			if(user.skill_check(SKILL_WEAPONS,SKILL_BASIC)) // Do you have basically ANY firearms training?
+				shake_camera(user, screen_shake-2, screen_shake) // No screenshake with most weaponry.
+			else
+				shake_camera(user, screen_shake, screen_shake) // Untrained people will screenshake with most guns.
 
 	if(combustion)
 		var/turf/curloc = get_turf(src)
@@ -367,21 +403,23 @@
 	if(!istype(P))
 		return //default behaviour only applies to true projectiles
 
-	var/acc_mod = burst_accuracy[min(burst, burst_accuracy.len)]
+	var/acc_mod = acc_mod_base
 	var/disp_mod = dispersion[min(burst, dispersion.len)]
 	var/stood_still = last_handled
-	//Not keeping gun active will throw off aim (for non-Masters)
+	//Not keeping gun active will throw off our standing still bonus, unless we are a master. If a gun has bulk, it also rolls off of this system
 	if(user.skill_check(SKILL_WEAPONS, SKILL_PROF))
 		stood_still = min(user.l_move_time, last_handled)
 	else
 		stood_still = max(user.l_move_time, last_handled)
 
 	stood_still = max(0,round((world.time - stood_still)/10) - 1)
-	if(stood_still)
-		acc_mod += min(max(3, accuracy), stood_still)
+	if(stood_still) // Are we standing still?
+		acc_mod += 1 // Plus to our acc_mod.
 	else
-		acc_mod -= w_class - ITEM_SIZE_NORMAL
-		acc_mod -= bulk
+		acc_mod -= bulk // Our gun is bulky, we get minus to hitting if we are not still.
+		if(bulk > 0) // Is our bulk even existant?
+			to_chat(user, SPAN_WARNING("This weapon is difficult to fire on the move!")) // If so apply it!
+
 
 	if(one_hand_penalty >= 4 && !held_twohanded)
 		acc_mod -= one_hand_penalty/2
@@ -400,12 +438,16 @@
 
 	acc_mod += user.ranged_accuracy_mods()
 	acc_mod += accuracy
+//	to_chat(user, SPAN_WARNING("Your results with firing are..", acc_mod)) if you're testing acc mod results, uncomment this.
 	P.hitchance_mod = accuracy_power*acc_mod
 	P.dispersion = disp_mod
 
 //does the actual launching of the projectile
 /obj/item/weapon/gun/proc/process_projectile(obj/projectile, mob/user, atom/target, var/target_zone, var/params=null)
 	var/obj/item/projectile/P = projectile
+	P.damage *= damage_mult // Multiplies our projectiles damage.
+	P.armor_penetration += penetration_mod // adds/subtracts from penetration of our projectile.
+	P.distance_falloff += falloff_mod // Adds/subtracts distance falloff of our projectile.
 	if(!istype(P))
 		return 0 //default behaviour only applies to true projectiles
 

@@ -2,6 +2,7 @@
 #define CALIBER_PISTOL_SMALL 	"7mm"
 #define CALIBER_PISTOL_MAGNUM 	"15mm"
 #define CALIBER_PISTOL_FLECHETTE "4mm"
+#define CALIBER_PISTOL_FRANGIBLE "7mmF"
 #define CALIBER_PISTOL_ANTIQUE	"~10mm"
 #define CALIBER_PISTOL_MAGNUM_LARGE ".454mm"
 
@@ -16,6 +17,9 @@
 #define CALIBER_DART			"darts"
 #define CALIBER_SABOT			"sabot"
 #define CALIBER_SKRELL_SHOTGUN	"flechette"
+#define CALIBER_NAILS "nails"
+
+#define CALIBER_ROCKET	"rocket"
 
 #define HOLD_CASINGS	0 //do not do anything after firing. Manual action, like pump shotguns, or guns that want to define custom behaviour
 #define CLEAR_CASINGS	1 //clear chambered so that the next round will be automatically loaded and fired, but don't drop anything on the floor
@@ -26,6 +30,7 @@
 #define SINGLE_CASING 	1	//The gun only accepts ammo_casings. ammo_magazines should never have this as their mag_type.
 #define SPEEDLOADER 	2	//Transfers casings from the mag to the gun when used.
 #define MAGAZINE 		4	//The magazine item itself goes inside the gun
+#define SINGLE_LOAD		5	//You have to load it one casing at a time from a stack.
 
 
 #define GUN_BULK_RIFLE  5

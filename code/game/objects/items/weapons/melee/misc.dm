@@ -40,28 +40,3 @@
 	attack_verb = list("flogged", "whipped", "lashed", "disciplined")
 	icon_state = "chain"
 	item_state = "whip"
-
-/obj/item/weapon/material/sword/officersword
-	name = "fleet officer's sword"
-	desc = "A polished sword issued to officers of the fleet."
-	icon_state = "officersword"
-	item_state = "officersword"
-	slot_flags = SLOT_BELT
-	applies_material_colour = FALSE
-
-/obj/item/weapon/material/sword/officersword/army
-	name = "army NCO's sword"
-	desc = "A polished sword issued to SCG Army NCOs."
-	icon_state = "armysword"
-
-/obj/item/weapon/material/sword/officersword/armyofficer
-	name = "army officer's sword"
-	desc = "A curved sword issued to SCG Army officers."
-	icon_state = "armyofficersword"
-	item_state = "armyofficersword"
-
-/obj/item/weapon/material/sword/officersword/pettyofficer
-	name = "chief petty officer's cutlass"
-	desc = "A polished cutlass issued to chief petty officers of the fleet."
-	icon_state = "pettyofficersword"
-	item_state = "pettyofficersword"

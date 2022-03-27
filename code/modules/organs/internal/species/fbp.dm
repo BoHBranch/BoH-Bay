@@ -9,10 +9,10 @@
 	var/open
 	var/obj/item/weapon/cell/cell = /obj/item/weapon/cell/hyper
 	//at 0.8 completely depleted after 60ish minutes of constant walking or 130 minutes of standing still
-	var/servo_cost = 0.8
+	var/servo_cost = 1.2 //Buffed up. At 1.2 it's ~30 minutes without a charger.
 
-	min_broken_damage = 45//up from 5
-	max_damage = 125//up from 45. Easily destroyed still.
+	min_broken_damage = 35//up from 15. Buffed because for some reason the damage used isn't consistent?
+	max_damage = 45//Simply 45 now.
 
 	relative_size = 70
 
@@ -54,9 +54,9 @@
 		return
 	if(owner.stat == DEAD)	//not a drain anymore
 		return
-	var/cost = get_power_drain()
+	var/cost = (get_power_drain() + (damage / 10))
 	if(world.time - owner.l_move_time < 15)
-		cost *= 2
+		cost *= (2 + (damage / 10))
 	if(!checked_use(cost) && owner.isSynthetic())
 		if(!owner.lying && !owner.buckled)
 			to_chat(owner, "<span class='warning'>You don't have enough energy to function!</span>")

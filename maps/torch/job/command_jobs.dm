@@ -158,7 +158,8 @@
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
 	                    SKILL_CHEMISTRY   = SKILL_BASIC,
-						SKILL_DEVICES     = SKILL_ADEPT)
+						SKILL_DEVICES     = SKILL_ADEPT,
+						SKILL_VIROLOGY    = HAS_PERK)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
 	                    SKILL_ANATOMY     = SKILL_MAX,
@@ -369,3 +370,104 @@
 /datum/job/bridgeofficer/get_description_blurb()
 	return "You are a Bridge Officer. You are a very junior officer. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the CO and XO. You take the Dagon's helm and pilot the Byakhee if needed. You monitor bridge computer programs and communications and report relevant information to command."
 
+/datum/job/solrep
+	title = "Sol Gov Representative"
+	department = "Support"
+	department_flag = SPT
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "Central Command and Sol Law"
+	selection_color = "#2f2f7f"
+	minimal_player_age = 14
+	economic_power = 16
+	minimum_character_age = list(SPECIES_HUMAN = 23, SPECIES_CUSTOM = 23)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/solrep
+	alt_titles = list(
+		"Sol Gov Diplomat",
+		"Sol Gov Negotiator",
+		"Sol Gov Political Officer")
+	allowed_branches = list(
+		/datum/mil_branch/solgov
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/sol/gov
+	)
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
+	                    SKILL_SCIENCE     = SKILL_BASIC,
+	                    SKILL_FINANCE     = SKILL_BASIC)
+
+	max_skill = list(   SKILL_BUREAUCRACY       = SKILL_MAX,
+	                    SKILL_FINANCE     = SKILL_MAX)
+	skill_points = 20
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/card_mod,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/reports)
+
+	access = list(access_representative, access_maint_tunnels, access_bridge, access_solgov_crew)
+
+
+/datum/job/solrep/get_description_blurb()
+	return "You are the Sol Gov Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and governmental interests on board. Send faxes back to Sol on mission progress and important events."
+
+/datum/job/solrep/post_equip_rank(var/mob/person, var/alt_title)
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Sol Federal Agent")]"]"
+	for(var/mob/M in GLOB.player_list)
+		if(M.client && M.mind)
+			if(M.mind.assigned_role == "Sol Federal Agent")
+				to_chat(M, SPAN_NOTICE("<b>Your supervisor, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
+	..()
+
+/datum/job/solguard
+	title = "Sol Federal Agent"
+	department = "Support"
+	department_flag = SPT
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Sol Gov Representative"
+	selection_color = "#3d3d7f"
+	economic_power = 12
+	minimal_player_age = 2
+	minimum_character_age = list(SPECIES_HUMAN = 21, SPECIES_CUSTOM = 23)
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sol_bodyguard
+	allowed_branches = list(/datum/mil_branch/spacefbi, /datum/mil_branch/marine_corps)
+	allowed_ranks = list(/datum/mil_rank/sol/agent, /datum/mil_rank/marine_corps/e6,
+		/datum/mil_rank/marine_corps/e7,
+		/datum/mil_rank/marine_corps/w1,
+		/datum/mil_rank/marine_corps/w2,
+		/datum/mil_rank/marine_corps/w3)
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	                    SKILL_EVA         = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_BASIC,
+	                    SKILL_WEAPONS     = SKILL_ADEPT,
+	                    SKILL_FORENSICS   = SKILL_BASIC)
+	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
+	                    SKILL_WEAPONS     = SKILL_MAX,
+	                    SKILL_FORENSICS   = SKILL_MAX,
+	                    SKILL_BUREAUCRACY = SKILL_MAX)
+	alt_titles = list(
+		"Sol Federal Assistant",
+		"Sol Federal Chaperone",
+		"Marine Embassy Guard")
+	skill_points = 24
+	access = list(access_representative, access_maint_tunnels, access_bridge, access_solgov_crew, access_sec_guard)
+	defer_roundstart_spawn = TRUE
+
+/datum/job/solguard/is_position_available()
+	if(..())
+		for(var/mob/M in GLOB.player_list)
+			if(M.client && M.mind && M.mind.assigned_role == "Sol Gov Representative")
+				return TRUE
+	return FALSE
+
+/datum/job/solguard/get_description_blurb()
+	return "You are the Sol Federal Agent. You are an employee of the Sol Federal Police, with your primary objective of keeping the Sol Gov Representative alive and operating efficiently. You also make sure the Representative, and by extension, the Solarian Central Government's will is complete. Good luck, Agent. NOTE: YOU ARE NOT A SECURITY OFFICER."
+
+/datum/job/solguard/post_equip_rank(var/mob/person, var/alt_title)
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Sol Federal Agent")]"]"
+	for(var/mob/M in GLOB.player_list)
+		if(M.client && M.mind)
+			if(M.mind.assigned_role == "Sol Gov Representative")
+				to_chat(M, SPAN_NOTICE("<b>Your Agent, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
+	..()

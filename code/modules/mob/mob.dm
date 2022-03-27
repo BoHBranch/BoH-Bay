@@ -396,7 +396,9 @@
 /mob/proc/print_flavor_text()
 	if (flavor_text && flavor_text != "")
 		var/msg = replacetext(flavor_text, "\n", " ")
-		if(length(msg) <= 64)
+		if(NSFW)
+			return "<span><a href='byond://?src=\ref[src];flavor_more=1'>Read Description (NSFW)...</a></span>"
+		else if(length(msg) <= 64)
 			return "<span class='notice'>[msg]</span>"
 		else
 			var/find_tag = "<br>"
@@ -1006,6 +1008,42 @@
 /mob/verb/westfaceperm()
 	set hidden = 1
 	set_face_dir(client.client_dir(WEST))
+
+/mob/proc/can_shift()
+	return !(incapacitated() || buckled || grabbed_by.len)
+
+/mob/verb/shiftnorth()
+	set hidden = TRUE
+	if(!canface() || !can_shift())
+		return FALSE
+	if(pixel_y <= 16)
+		pixel_y++
+		is_shifted = TRUE
+
+/mob/verb/shiftsouth()
+	set hidden = TRUE
+	if(!canface() || !can_shift())
+		return FALSE
+	if(pixel_y >= -8)
+		pixel_y--
+		is_shifted = TRUE
+
+/mob/verb/shiftwest()
+	set hidden = TRUE
+	if(!canface() || !can_shift())
+		return FALSE
+	if(pixel_x >= -8)
+		pixel_x--
+		is_shifted = TRUE
+
+/mob/verb/shifteast()
+	set hidden = TRUE
+	if(!canface() || !can_shift())
+		return FALSE
+	if(pixel_x <= 8)
+		pixel_x++
+		is_shifted = TRUE
+
 
 /mob/proc/adjustEarDamage()
 	return

@@ -753,3 +753,24 @@
 	icon_state = "kimono"
 	worn_state = "kimono"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+/obj/item/clothing/under/tiro
+	icon = 'icons/obj/clothing/obj_under.dmi' //I don't know why but the icon breaks unless this is copied over. Don't remove this.
+	name = "tiro fatigues"
+	desc = "A simple suit made from some unknown fabric. Surprisingly comfortable."
+	icon_state = "tiro_jumpsuit"
+	item_state = "tiro_jumpsuit"
+	worn_state = "tiro_jumpsuit"
+	siemens_coefficient = 0.7
+	armor = list(
+		energy = ARMOR_ENERGY_SMALL, 
+		rad = ARMOR_RAD_SMALL
+		)
+	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE //I still want some heat protection but this should be better balanced(?)
+
+/obj/item/clothing/under/skrelljumpsuit/onship
+	name = "skrellian jumpsuit"
+	desc = "A sleek, skin-tight bodysuit designed to not wick moisture away from the body. The inner stitching appears to contain something written in Skrellian."
+	icon_state = "skrell_suit"
+	item_state = "skrell_suit"
+	worn_state = "skrell_suit"

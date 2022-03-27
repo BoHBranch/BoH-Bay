@@ -37,6 +37,8 @@ var/list/department_radio_keys = list(
 	  ":P" = "AI Private",	".P" = "AI Private",
 	  ":Z" = "Entertainment",".Z" = "Entertainment",
 	  ":Y" = "Exploration",		".Y" = "Exploration",
+	  ":K" = "Recon",		".K" = "Recon",
+	  ":A" = "Infantry",	".A" = "Infantry",
 
 	  //kinda localization -- rastaf0
 	  //same keys as above, but on russian keyboard layout. This file uses cp1251 as encoding.
@@ -181,6 +183,14 @@ proc/get_radio_key_from_channel(var/channel)
 	if(prefix == get_prefix_key(/decl/prefix/visible_emote))
 		return custom_emote(1, copytext(message,2))
 
+	//parse the language code and consume it
+	if(!speaking)
+		speaking = parse_language(message)
+		if(speaking)
+			message = copytext(message,2+length(speaking.key))
+		else
+			speaking = get_default_language()
+
 	//parse the radio code and consume it
 	var/message_mode = parse_message_mode(message, "headset")
 	if (message_mode)
@@ -190,14 +200,6 @@ proc/get_radio_key_from_channel(var/channel)
 			message = copytext(message,3)
 
 	message = trim_left(message)
-
-	//parse the language code and consume it
-	if(!speaking)
-		speaking = parse_language(message)
-		if(speaking)
-			message = copytext(message,2+length(speaking.key))
-		else
-			speaking = get_default_language()
 
 	// This is broadcast to all mobs with the language,
 	// irrespective of distance or anything else.

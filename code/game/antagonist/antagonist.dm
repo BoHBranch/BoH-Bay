@@ -113,19 +113,21 @@
 
 	// Prune restricted status. Broke it up for readability.
 	// Note that this is done before jobs are handed out.
-	for(var/datum/mind/player in mode.get_players_for_role(id))
-		if(ghosts_only && !(isghostmind(player) || isnewplayer(player.current)))
+	for (var/datum/mind/player in mode.get_players_for_role(id))
+		if (ghosts_only && !(isghostmind(player) || isnewplayer(player.current)))
 			log_debug("[key_name(player)] is not eligible to become a [role_text]: Only ghosts may join as this role!")
-		else if(config.use_age_restriction_for_antags && player.current.client.player_age < minimum_player_age)
+		else if (config.use_age_restriction_for_antags && player.current.client.player_age < minimum_player_age)
 			log_debug("[key_name(player)] is not eligible to become a [role_text]: Is only [player.current.client.player_age] day\s old, has to be [minimum_player_age] day\s!")
-		else if(player.special_role)
+		else if (player.special_role)
 			log_debug("[key_name(player)] is not eligible to become a [role_text]: They already have a special role ([player.special_role])!")
 		else if (player in pending_antagonists)
 			log_debug("[key_name(player)] is not eligible to become a [role_text]: They have already been selected for this role!")
-		else if(!can_become_antag(player))
+		else if (!can_become_antag(player))
 			log_debug("[key_name(player)] is not eligible to become a [role_text]: They are blacklisted for this role!")
-		else if(player_is_antag(player))
+		else if (player_is_antag(player))
 			log_debug("[key_name(player)] is not eligible to become a [role_text]: They are already an antagonist!")
+		else if (mode != MODE_CHANGELING && player.current && player.current.get_species() == SPECIES_NABBER)
+			log_debug("[key_name(player)] is not eligible to become a [role_text]: They are a GAS!")
 		else
 			candidates |= player
 

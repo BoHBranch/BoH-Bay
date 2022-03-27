@@ -34,6 +34,7 @@
 	landmark_tag = "nav_hangar_ascent_one"
 	docking_controller = "ascent_port_dock"
 	base_area = /area/ship/ascent/wing_port
+	base_turf = /turf/simulated/floor/reinforced/airless
 	movable_flags = MOVABLE_FLAG_EFFECTMOVE
 
 /obj/effect/shuttle_landmark/ascent_seedship/start/two
@@ -42,12 +43,27 @@
 	docking_controller = "ascent_starboard_dock"
 	base_area = /area/ship/ascent/wing_starboard
 
+/obj/effect/shuttle_landmark/ascent_seedship/dock
+	name = "Invalid Aft Docking Port"
+	landmark_tag = "nav_ascentshipone_dock"
+	docking_controller = "rescue_shuttle_dock_airlock"
+
+/obj/effect/shuttle_landmark/ascent_seedship/dock/two
+	name = "Valid Fore Docking Port"
+	landmark_tag = "nav_ascentshipone_altdock"
+	docking_controller = "skipjack_shuttle_dock_airlock"
+
+/obj/effect/shuttle_landmark/ascent_seedship/dock/three
+	name = "Valid Aft Docking Port"
+	landmark_tag = "nav_ascentshiptwo_dock"
+	docking_controller = "admin_shuttle_dock_airlock"
+
 /datum/shuttle/autodock/overmap/ascent
 	name = "Trichoptera"
 	warmup_time = 5
 	current_location = "nav_hangar_ascent_one"
 	range = 2
-	dock_target = "ascent_port_shuttle_dock"
+	dock_target = "ascent_port"
 	shuttle_area = /area/ship/ascent/shuttle_port
 	defer_initialisation = TRUE
 	flags = SHUTTLE_FLAGS_PROCESS

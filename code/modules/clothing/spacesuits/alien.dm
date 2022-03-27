@@ -2,17 +2,17 @@
 // Can't be equipped by any other species due to bone structure and vox cybernetics.
 /obj/item/clothing/suit/space/vox
 	w_class = ITEM_SIZE_NORMAL
-	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/handcuffs,/obj/item/weapon/tank)
+	allowed = list(/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/handcuffs,/obj/item/weapon/tank,/obj/item/weapon/storage/,/obj/item/weapon/tank/jetpack/nitrogen)
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
-		energy = ARMOR_ENERGY_MINOR,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_MAJOR,
+		energy = ARMOR_ENERGY_STRONG,
 		bomb = ARMOR_BOMB_PADDED,
-		bio = ARMOR_BIO_SMALL,
-		rad = ARMOR_RAD_MINOR
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
 		)
-	siemens_coefficient = 0.6
+	siemens_coefficient = 0.2
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	species_restricted = list(SPECIES_VOX,SPECIES_VOX_ARMALIS)
@@ -24,17 +24,21 @@
 /obj/item/clothing/head/helmet/space/vox
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
-		energy = ARMOR_ENERGY_MINOR,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_MAJOR,
+		energy = ARMOR_ENERGY_STRONG,
 		bomb = ARMOR_BOMB_PADDED,
-		bio = ARMOR_BIO_SMALL,
-		rad = ARMOR_RAD_MINOR
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
 		)
-	siemens_coefficient = 0.6
+	siemens_coefficient = 0.2
 	item_flags = 0
 	flags_inv = 0
 	species_restricted = list(SPECIES_VOX,SPECIES_VOX_ARMALIS)
+	sprite_sheets = list (
+		SPECIES_VOX = 'icons/mob/species/vox/onmob_head_vox.dmi',
+		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_head_vox_armalis.dmi',
+	)
 
 /obj/item/clothing/head/helmet/space/vox/pressure
 	name = "alien helmet"

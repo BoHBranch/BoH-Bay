@@ -67,6 +67,7 @@ GLOBAL_DATUM_INIT(raiders, /datum/antagonist/raider, new)
 	var/list/raider_guns = list(
 		/obj/item/weapon/gun/energy/laser,
 		/obj/item/weapon/gun/energy/retro,
+		/obj/item/weapon/gun/energy/plasmarifle,
 		/obj/item/weapon/gun/energy/xray,
 		/obj/item/weapon/gun/energy/xray/pistol,
 		/obj/item/weapon/gun/energy/mindflayer,

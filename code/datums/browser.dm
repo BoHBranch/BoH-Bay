@@ -194,3 +194,86 @@
 
 		src.mob.unset_machine()
 	return
+
+/datum/browser/modal
+	var/opentime = 0
+	var/timeout
+	var/selectedbutton = 0
+	var/stealfocus
+
+/datum/browser/modal/New(nuser, nwindow_id, ntitle = 0, nwidth = 0, nheight = 0, atom/nref = null, StealFocus = 1, Timeout = 6000)
+	..()
+	stealfocus = StealFocus
+	if (!StealFocus)
+		window_options += "focus=false;"
+	timeout = Timeout
+
+/datum/browser/modal/close()
+	.=..()
+	opentime = 0
+
+/datum/browser/modal/open(use_onclose)
+	set waitfor = 0
+	opentime = world.time
+
+	if (stealfocus)
+		. = ..(use_onclose = 1)
+	else
+		var/focusedwindow = winget(user, null, "focus")
+		. = ..(use_onclose = 1)
+
+		//waits for the window to show up client side before attempting to un-focus it
+		//winexists sleeps until it gets a reply from the client, so we don't need to bother sleeping
+		for (var/i in 1 to 10)
+			if (user && winexists(user, window_id))
+				if (focusedwindow)
+					winset(user, focusedwindow, "focus=true")
+				else
+					winset(user, "mapwindow", "focus=true")
+				break
+	if (timeout)
+		addtimer(CALLBACK(src, .proc/close), timeout)
+
+/datum/browser/modal/proc/wait()
+	while (opentime && selectedbutton <= 0 && (!timeout || opentime+timeout > world.time))
+		stoplag(1)
+
+/datum/browser/modal/alert/New(User,Message,Title,Button1="Ok",Button2,StealFocus = 1,Timeout=6000)
+	if (!User)
+		return
+
+	var/output =  {"<center><b>[Message]</b></center><br />
+		<div style="text-align:center">
+		<a style="font-size:large;float:[( Button2 ? "left" : "right" )]" href="?src=[SOFTREF(src)];button=1">[Button1]</a>"}
+
+	if (Button2)
+		output += {"<a style="font-size:large" href="?src=[SOFTREF(src)];button=2">[Button2]</a>"}
+
+	output += {"</div>"}
+
+	..(User, ckey("[User]-[Message]-[Title]-[world.time]-[rand(1,10000)]"), Title, 350, 150, src, StealFocus, Timeout)
+	set_content(output)
+
+/datum/browser/modal/alert/Topic(href,href_list)
+	if (href_list["close"] || !user || !user.client)
+		opentime = 0
+		return
+	if (href_list["button"])
+		var/button = text2num(href_list["button"])
+		if (button <= 3 && button >= 1)
+			selectedbutton = button
+	opentime = 0
+	close()
+
+/proc/askuser(var/mob/User,Message, Title, Button1="Ok", Button2, StealFocus = 1, Timeout = 6000)
+	if (!istype(User))
+		if (istype(User, /client/))
+			var/client/C = User
+			User = C.mob
+		else
+			return
+	var/datum/browser/modal/alert/A = new(User, Message, Title, Button1, Button2, StealFocus, Timeout)
+	A.open()
+	A.wait()
+	if (A.selectedbutton)
+		return A.selectedbutton

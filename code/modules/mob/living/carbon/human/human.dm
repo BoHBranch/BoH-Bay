@@ -102,6 +102,9 @@
 				stat("Tank Pressure", internal.air_contents.return_pressure())
 				stat("Distribution Pressure", internal.distribute_pressure)
 
+		var/obj/item/organ/internal/xeno/plasmavessel/P = internal_organs_by_name[BP_PLASMA]
+		if(P)
+			stat(null, "Phoron Stored: [P.stored_plasma]/[P.max_plasma]")
 		var/obj/item/organ/internal/cell/potato = internal_organs_by_name[BP_CELL]
 		if(potato && potato.cell)
 			stat("Battery charge:", "[potato.get_charge()]/[potato.cell.maxcharge]")
@@ -551,6 +554,10 @@
 			return
 		if("general")
 			msg = sanitize(input(src,"Update the general description of your character. This will be shown regardless of clothing. Do not include OOC information here.","Flavor Text",html_decode(flavor_texts[key])) as message, extra = 0)
+		if("NSFW/OOC")
+			msg = sanitize(input(src,"Update your NSFW/OOC description.", "Flavor Text",html_decode(flavor_texts[key])) as message, extra = 0)
+		if("naked")
+			msg = sanitize(input(src,"Update your naked description. This text is NSFW, and will be shown when naked.", "Flavor Text",html_decode(flavor_texts[key])) as message, extra = 0)
 		else
 			if(!(key in flavor_texts))
 				return
@@ -915,6 +922,10 @@
 					if(H.brainmob.mind)
 						H.brainmob.mind.transfer_to(src)
 						qdel(H)
+
+	for (var/ID in virus2)
+		var/datum/disease2/disease/V = virus2[ID]
+		V.cure(src)
 
 	losebreath = 0
 
@@ -1333,12 +1344,14 @@
 			covered["eyes"] = TRUE
 		if(C.body_parts_covered & UPPER_TORSO)
 			covered["torso"] = TRUE
+			covered["naked"] = TRUE
 		if(C.body_parts_covered & ARMS)
 			covered["arms"] = TRUE
 		if(C.body_parts_covered & HANDS)
 			covered["hands"] = TRUE
 		if(C.body_parts_covered & LEGS)
 			covered["legs"] = TRUE
+			covered["naked"] = TRUE
 		if(C.body_parts_covered & FEET)
 			covered["feet"] = TRUE
 
@@ -1349,7 +1362,11 @@
 			continue
 		if(covered[T])
 			continue
-
+		if(T == "naked")
+			flavor_text += "(NSFW): "
+			NSFW = TRUE
+		if(T == "NSFW/OOC")
+			flavor_text += "(OOC): "
 		flavor_text += "[flavor_texts[T]]<br>"
 
 	if(shrink)
@@ -1694,12 +1711,14 @@
 		. -= 1
 	if(shock_stage > 30)
 		. -= 1
+	if(skill_check(SKILL_WEAPONS, SKILL_BASIC)) // Every rank below this inherits the rank above it. So every rank gets a .5 bonus.
+		. += 1
 	if(skill_check(SKILL_WEAPONS, SKILL_ADEPT))
 		. += 1
 	if(skill_check(SKILL_WEAPONS, SKILL_EXPERT))
-		. += 1
+		. += 0.5
 	if(skill_check(SKILL_WEAPONS, SKILL_PROF))
-		. += 2
+		. += 0.5
 
 /mob/living/carbon/human/can_drown()
 	if(!internal && (!istype(wear_mask) || !wear_mask.filters_water()))

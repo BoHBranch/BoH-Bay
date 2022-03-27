@@ -1,3 +1,10 @@
+// fun if you want to typecast humans/monkeys/etc without writing long path-filled lines.
+/proc/isxenomorph(A)
+	if(istype(A, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = A
+		return istype(H.species, /datum/species/xenos)
+	return 0
+
 /proc/issmall(A)
 	if(A && istype(A, /mob/living))
 		var/mob/living/L = A
@@ -325,7 +332,7 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 
 		var/atom/oldeye=M.client.eye
 		var/aiEyeFlag = 0
-		if(istype(oldeye, /mob/observer/eye/aiEye))
+		if(istype(oldeye, /mob/observer/eye/freelook/freelook/aiEye))
 			aiEyeFlag = 1
 
 		var/x
@@ -424,7 +431,8 @@ proc/is_blind(A)
 	var/turf/sourceturf = get_turf(broadcast_source)
 	for(var/mob/M in targets)
 		if(!sourceturf || (get_z(M) in GetConnectedZlevels(sourceturf.z)))
-			M.show_message("<span class='info'>\icon[icon] [message]</span>", 1)
+			M.show_message("<span class='info'>[icon2html(icon, M)] [message]</span>", 1)
+
 
 /proc/mobs_in_area(var/area/A)
 	var/list/mobs = new
@@ -723,3 +731,29 @@ proc/is_blind(A)
 	result[2] = ainvis
 
 	return result
+
+/proc/offer_control(mob/M)
+	to_chat(M, "Control of this mob has been offered to dead players.")
+	if (usr)
+		log_admin("[key_name(usr)] has offered control of ([M.name]) to ghosts.")
+		message_admins("[key_name_admin(usr)] has offered control of ([M.name]) to ghosts.")
+	var/poll_message = "Do you want to play as [M.real_name]?"
+	if (M.mind && M.mind.assigned_role)
+		poll_message = "[poll_message] Job:[M.mind.assigned_job]."
+	if (M.mind && M.mind.special_role)
+		poll_message = "[poll_message] Status:[M.mind.special_role]."
+	// NOT IMPLEMENTED YET: ANTAG CHECKING TODO: ADD ANTAG HANDLING
+
+	var/list/mob/observer/ghost/candidates = pollCandidatesForMob(poll_message, 100, M)
+
+	if (LAZYLEN(candidates))
+		var/mob/observer/ghost/C = pick(candidates)
+		to_chat(M, "This mob has been taken over by a ghost!")
+		message_admins("[key_name_admin(C)] has taken control of ([M.name])")
+		M.ghostize(0)
+		M.key = C.key
+		return TRUE
+	else
+		to_chat(M, "There were no ghosts willing to take control.")
+		message_admins("No ghosts were willing to take control of ([M.name])")
+		return FALSE

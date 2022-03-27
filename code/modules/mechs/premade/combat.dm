@@ -5,16 +5,16 @@
 /mob/living/exosuit/premade/combat/Initialize()
 	if(!arms)
 		arms = new /obj/item/mech_component/manipulators/combat(src)
-		arms.color = COLOR_DARK_GUNMETAL
+		arms.color = COLOR_GUNMETAL
 	if(!legs)
 		legs = new /obj/item/mech_component/propulsion/combat(src)
-		legs.color = COLOR_DARK_GUNMETAL
+		legs.color = COLOR_GUNMETAL
 	if(!head)
 		head = new /obj/item/mech_component/sensors/combat(src)
-		head.color = COLOR_DARK_GUNMETAL
+		head.color = COLOR_GUNMETAL
 	if(!body)
 		body = new /obj/item/mech_component/chassis/combat(src)
-		body.color = COLOR_DARK_GUNMETAL
+		body.color = COLOR_GUNMETAL
 
 	. = ..()
 
@@ -27,9 +27,10 @@
 	name = "combat arms"
 	exosuit_desc_string = "flexible, advanced manipulators"
 	icon_state = "combat_arms"
-	melee_damage = 5
+	melee_damage = 25
 	action_delay = 10
 	power_use = 50
+	max_damage = 300
 
 /obj/item/mech_component/propulsion/combat
 	name = "combat legs"
@@ -38,7 +39,7 @@
 	move_delay = 3
 	turn_delay = 3
 	power_use = 20
-
+	max_damage = 300
 /obj/item/mech_component/sensors/combat
 	name = "combat sensors"
 	gender = PLURAL
@@ -47,6 +48,7 @@
 	vision_flags = SEE_MOBS
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	power_use = 200
+	max_damage = 300
 
 /obj/item/mech_component/sensors/combat/prebuild()
 	..()
@@ -57,10 +59,11 @@
 	name = "sealed exosuit chassis"
 	hatch_descriptor = "canopy"
 	pilot_coverage = 100
-	transparent_cabin =  TRUE
 	exosuit_desc_string = "an armoured chassis"
 	icon_state = "combat_body"
 	power_use = 40
+	max_damage = 300
+	mech_health = 500
 
 /obj/item/mech_component/chassis/combat/prebuild()
 	. = ..()
@@ -75,5 +78,5 @@
 			"[WEST]"  = list("x" = 12, "y" = 8)
 		)
 	)
-	
+
 	. = ..()

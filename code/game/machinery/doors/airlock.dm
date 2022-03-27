@@ -127,6 +127,10 @@ var/list/airlock_overlays = list()
 	door_color = COLOR_WHITE
 	stripe_color = COLOR_NT_RED
 
+/obj/machinery/door/airlock/munitions
+	door_color = COLOR_RED
+	stripe_color = COLOR_AMBER
+
 /obj/machinery/door/airlock/engineering
 	name = "Maintenance Hatch"
 	door_color = COLOR_AMBER
@@ -973,6 +977,10 @@ About the new airlock wires panel:
 		cut_verb = "slicing"
 		cut_sound = "sparks"
 		cut_delay *= 0.66
+	else if(istype(item,/obj/item/weapon/melee/energy/pick))
+		cut_verb = "hewing"
+		cut_sound = "sparks"
+		cut_delay *= 0.75
 	else if(istype(item,/obj/item/weapon/circular_saw))
 		cut_verb = "sawing"
 		cut_sound = 'sound/weapons/circsawhit.ogg'
@@ -1204,6 +1212,7 @@ About the new airlock wires panel:
 		if (secured_wires)
 			lock()
 		visible_message("\The [src]'s control panel bursts open, sparks spewing out!")
+		playsound(src.loc, 'sound/machines/airlock_break.ogg', 100, 1)
 		var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread
 		s.set_up(5, 1, src)
 		s.start()

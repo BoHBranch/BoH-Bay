@@ -11,7 +11,7 @@
 
 	var/caliber = CALIBER_PISTOL		//determines which casings will fit
 	var/handle_casings = EJECT_CASINGS	//determines how spent casings should be handled
-	var/load_method = SINGLE_CASING|SPEEDLOADER //1 = Single shells, 2 = box or quick loader, 3 = magazine
+	var/load_method = SINGLE_CASING|SPEEDLOADER|SINGLE_LOAD //1 = Single shells, 2 = box or quick loader, 3 = magazine
 	var/obj/item/ammo_casing/chambered = null
 
 	//For SINGLE_CASING or SPEEDLOADER guns
@@ -30,11 +30,14 @@
 	var/mag_insert_sound = 'sound/weapons/guns/interaction/pistol_magin.ogg'
 	var/mag_remove_sound = 'sound/weapons/guns/interaction/pistol_magout.ogg'
 
+	// You can't unload this firearm!
+	var/ununloadable = FALSE
+
 	var/is_jammed = 0           //Whether this gun is jammed
 	var/jam_chance = 0          //Chance it jams on fire
 	//TODO generalize ammo icon states for guns
 	//var/magazine_states = 0
-	//var/list/icon_keys = list()		//keys
+	//var/list/empty_keys = list()		//keys
 	//var/list/ammo_states = list()	//values
 
 /obj/item/weapon/gun/projectile/Initialize()
@@ -58,7 +61,7 @@
 			else
 				to_chat(user, "<span class='notice'>You reflexively clear the jam on \the [src].</span>")
 				is_jammed = 0
-				playsound(src.loc, 'sound/weapons/flipblade.ogg', 50, 1)
+				playsound(src.loc, 'sound/weapons/unjam.ogg', 50, 1)
 	if(is_jammed)
 		return null
 	//get the next casing
@@ -139,6 +142,19 @@
 				ammo_magazine = AM
 				user.visible_message("[user] inserts [AM] into [src].", "<span class='notice'>You insert [AM] into [src].</span>")
 				playsound(loc, mag_insert_sound, 50, 1)
+
+			if(SINGLE_LOAD)
+				if(loaded.len >= max_shells)
+					to_chat(user, "<span class='warning'>[src] is full!</span>")
+					return
+				var/obj/item/ammo_casing/C = AM.stored_ammo[1]
+				if(C)
+					C.loc = src
+					loaded.Insert(1, C) //add to the head of the list
+					AM.stored_ammo.Cut(1, 2)
+					playsound(loc, mag_insert_sound, 50, 1)
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)//So we can't speed click these.
+
 			if(SPEEDLOADER)
 				if(loaded.len >= max_shells)
 					to_chat(user, "<span class='warning'>[src] is full!</span>")
@@ -174,12 +190,15 @@
 
 //attempts to unload src. If allow_dump is set to 0, the speedloader unloading method will be disabled
 /obj/item/weapon/gun/projectile/proc/unload_ammo(mob/user, var/allow_dump=1)
+	if(ununloadable)
+		to_chat(user, "<span class='warning'>You can't unload this!</span>")
+		return
 	if(is_jammed)
 		user.visible_message("\The [user] begins to unjam [src].", "You clear the jam and unload [src]")
 		if(!do_after(user, 4, src))
 			return
 		is_jammed = 0
-		playsound(src.loc, 'sound/weapons/flipblade.ogg', 50, 1)
+		playsound(src.loc, 'sound/weapons/unjam.ogg', 50, 1)
 	if(ammo_magazine)
 		user.put_in_hands(ammo_magazine)
 		user.visible_message("[user] removes [ammo_magazine] from [src].", "<span class='notice'>You remove [ammo_magazine] from [src].</span>")

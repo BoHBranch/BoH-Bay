@@ -88,6 +88,7 @@
 	var/confused = 0		//Carbon
 	var/sleeping = 0		//Carbon
 	var/resting = 0			//Carbon
+	var/is_shifted = FALSE //Handles pixelshifting
 	var/lying = 0
 	var/lying_prev = 0
 
@@ -120,7 +121,7 @@
 
 	var/decl/move_intent/default_walk_intent
 	var/decl/move_intent/default_run_intent
-
+	var/NSFW = 0 //for NSFW descriptions
 	var/obj/buckled = null//Living
 	var/obj/item/l_hand = null//Living
 	var/obj/item/r_hand = null//Living

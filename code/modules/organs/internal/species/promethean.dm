@@ -7,5 +7,8 @@
 	parent_organ = BP_CHEST
 	vital = 1
 
+	max_damage = 15
+	relative_size = 95//:)
+
 /obj/item/organ/internal/brain/slime/can_recover()
 	return 0

@@ -98,6 +98,13 @@
 		/datum/mil_rank/marine_corps/o1,
 		/datum/mil_rank/marine_corps/o2
 	)
+/datum/job/solrep
+	allowed_branches = list(
+		/datum/mil_branch/solgov
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/sol/gov
+	)
 /***/
 
 // Engineering
@@ -143,6 +150,9 @@
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/fleet/e6,
+		/datum/mil_rank/fleet/w1,
+		/datum/mil_rank/fleet/w2,
+		/datum/mil_rank/fleet/w3,
 		/datum/mil_rank/marine_corps/e5,
 		/datum/mil_rank/marine_corps/e6,
 		/datum/mil_rank/civ/contractor
@@ -155,7 +165,6 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3
@@ -166,9 +175,10 @@
 /datum/job/pathfinder
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e7_exp,
+		/datum/mil_rank/fleet/e7,
 		/datum/mil_rank/fleet/o1,
-		/datum/mil_rank/fleet/o2
+		/datum/mil_rank/fleet/o2,
+		/datum/mil_rank/fleet/o3
 	)
 
 /datum/job/nt_pilot
@@ -178,8 +188,8 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
-		/datum/mil_rank/fleet/e5_exp,
-		/datum/mil_rank/fleet/e7_exp,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/fleet/w1,
 		/datum/mil_rank/fleet/w2
 	)
@@ -188,9 +198,11 @@
 	allowed_branches = list(/datum/mil_branch/fleet)
 
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e2_exp,
-		/datum/mil_rank/fleet/e3_exp,
-		/datum/mil_rank/fleet/e5_exp
+		/datum/mil_rank/fleet/e2,
+		/datum/mil_rank/fleet/e3,
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6
 	)
 	min_skill = list(SKILL_EVA = SKILL_BASIC, SKILL_SCIENCE = SKILL_BASIC) // To make up SGF not having sci skill by default.
 /***/
@@ -228,6 +240,20 @@
 		/datum/mil_rank/civ/contractor
 	)
 
+/datum/job/doctor/virologist
+	allowed_branches = list(
+		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/medical/virologist/fleet,
+		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/virologist,
+		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/medical/virologist/marine
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/fleet/o3,
+		/datum/mil_rank/fleet/o4,
+		/datum/mil_rank/marine_corps/o3,
+		/datum/mil_rank/marine_corps/o4,
+		/datum/mil_rank/civ/contractor
+	)
+
 /datum/job/medical_trainee
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -236,7 +262,6 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3
@@ -273,7 +298,6 @@
 		/datum/mil_branch/solgov
 	)
 	allowed_ranks = list(,
-		/datum/mil_rank/fleet/e7_exp,
 		/datum/mil_rank/fleet/o1,
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/scientist,
@@ -287,9 +311,9 @@
 		/datum/mil_branch/solgov
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e2_exp,
-		/datum/mil_rank/fleet/e3_exp,
-		/datum/mil_rank/fleet/e5_exp,
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/fleet/e6,
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/assist,
 		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/assist/solgov
 	)
@@ -320,20 +344,10 @@
 
 /datum/job/detective
 	allowed_branches = list(
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/contractor,
-		/datum/mil_branch/private_security,
-		/datum/mil_branch/fleet,
-		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/marine,
-		/datum/mil_branch/solgov = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/agent
+		/datum/mil_branch/spacefbi = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/agent
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/civ/contractor,
-		/datum/mil_rank/private_security/pcrc_agt = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/pcrc_agent,
-		/datum/mil_rank/sol/agent,
-		/datum/mil_rank/marine_corps/e4,
-		/datum/mil_rank/marine_corps/e5
+		/datum/mil_rank/sol/agent
 	)
 
 /datum/job/officer
@@ -384,7 +398,6 @@
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,
@@ -437,10 +450,16 @@
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer/marine
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/fleet/e7,
+		/datum/mil_rank/fleet/e8,
+		/datum/mil_rank/fleet/e9,
 		/datum/mil_rank/fleet/w2,
 		/datum/mil_rank/fleet/w3,
 		/datum/mil_rank/fleet/o2,
 		/datum/mil_rank/fleet/o3,
+		/datum/mil_rank/marine_corps/e7,
+		/datum/mil_rank/marine_corps/e8,
+		/datum/mil_rank/marine_corps/e9,
 		/datum/mil_rank/marine_corps/w2,
 		/datum/mil_rank/marine_corps/w3,
 		/datum/mil_rank/marine_corps/o2,
@@ -455,7 +474,6 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
 		/datum/mil_rank/fleet/e5,

@@ -31,14 +31,15 @@ var/datum/species/shapeshifter/promethean/prometheans
 	poison_types = null
 
 	gluttonous =          GLUT_TINY | GLUT_SMALLER | GLUT_ITEM_ANYTHING | GLUT_PROJECTILE_VOMIT
+	virus_immune =        1
 	blood_volume =        600
 	min_age =             18
 	max_age =             125
-	brute_mod =           0.8
-	burn_mod =            1.2
+	brute_mod =           1.25
+	burn_mod =            2
 	toxins_mod =          0.1
 	oxy_mod =             0
-	total_health =        400
+	radiation_mod =       0
 	siemens_coefficient = -1
 	rarity_value =        5
 	slowdown = 0.5

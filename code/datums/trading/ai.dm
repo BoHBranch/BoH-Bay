@@ -44,6 +44,7 @@ They sell generic supplies and ask for generic supplies.
 								/obj/item/weapon/storage/backpack/satchel/syndie_kit = TRADER_BLACKLIST_ALL,
 								/obj/item/weapon/storage/backpack/chameleon          = TRADER_BLACKLIST,
 								/obj/item/weapon/storage/backpack/ert                = TRADER_BLACKLIST_ALL,
+								/obj/item/device/personal_shield					 = TRADER_THIS_TYPE,
 								/obj/item/weapon/storage/backpack/dufflebag/syndie   = TRADER_BLACKLIST_SUB,
 								/obj/item/weapon/storage/belt/champion               = TRADER_THIS_TYPE,
 								/obj/item/weapon/storage/briefcase                   = TRADER_THIS_TYPE,
@@ -89,6 +90,11 @@ They sell generic supplies and ask for generic supplies.
 								/obj/item/stack/material/osmium           = TRADER_THIS_TYPE,
 								/obj/item/stack/material/steel            = TRADER_THIS_TYPE,
 								/obj/item/stack/material/plasteel         = TRADER_THIS_TYPE,
+								/obj/item/stack/material/deuterium        = TRADER_THIS_TYPE,
+								/obj/item/stack/material/aliumium         = TRADER_THIS_TYPE,
+								/obj/item/weapon/tank/anesthetic          = TRADER_THIS_TYPE,
+								/obj/item/weapon/tank/nitrogen            = TRADER_THIS_TYPE,
+								/obj/item/weapon/tank/phoron              = TRADER_THIS_TYPE,
 								/obj/machinery/mining                     = TRADER_SUBTYPES_ONLY
 								)
 
@@ -111,6 +117,7 @@ They sell generic supplies and ask for generic supplies.
 								/obj/structure/dispenser            = TRADER_SUBTYPES_ONLY,
 								/obj/structure/filingcabinet        = TRADER_THIS_TYPE,
 								/obj/structure/safe                 = TRADER_THIS_TYPE,
+								/obj/structure/kitchenspike         = TRADER_THIS_TYPE,
 								/obj/structure/plushie              = TRADER_SUBTYPES_ONLY,
 								/obj/structure/sign                 = TRADER_SUBTYPES_ONLY,
 								/obj/structure/sign/double          = TRADER_BLACKLIST_ALL,

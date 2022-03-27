@@ -14,6 +14,7 @@
 	name = "Bald"
 	icon_state = "bald"
 	flags = VERY_SHORT | HAIR_BALD
+	species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI,SPECIES_OLDUNATHI,SPECIES_VOX,SPECIES_AKULA,SPECIES_VULP,SPECIES_VASS,SPECIES_TAJ,SPECIES_IPC,SPECIES_CUSTOM,SPECIES_HUMAN2,SPECIES_PROMETHEAN)
 
 /datum/sprite_accessory/hair/short
 	name = "Short Hair"	  // try to capatilize the names please~
@@ -697,4 +698,92 @@
 /datum/sprite_accessory/hair/ziegler
 	name = "Zieglertail"
 	icon_state = "hair_ziegler"
+	flags = HAIR_TIEABLE
+
+//New additions here for HESTIA.
+/datum/sprite_accessory/hair/business1
+	name = "Business Suave"
+	icon_state = "hair_business"
+
+/datum/sprite_accessory/hair/business2
+	name = "Business Debonair"
+	icon_state = "hair_business2"
+
+/datum/sprite_accessory/hair/business3
+	name = "Business Slick"
+	icon_state = "hair_business3"
+
+//Ported from Sojourn Station
+
+/datum/sprite_accessory/hair/elize
+	name = "Elize"
+	icon_state = "hair_elize"
+
+/datum/sprite_accessory/hair/femc
+	name = "Femc"
+	icon_state = "hair_femc"
+
+/datum/sprite_accessory/hair/messybun
+	name = "Messy Bun"
+	icon_state = "hair_messybun"
+
+/datum/sprite_accessory/hair/mia
+	name = "Mia"
+	icon_state = "hair_mia"
+
+/datum/sprite_accessory/hair/ramona
+	name = "Ramona"
+	icon_state = "hair_ramona"
+
+/datum/sprite_accessory/hair/smessy
+	name = "Smessy"
+	icon_state = "hair_smessy"
+
+/datum/sprite_accessory/hair/stylo
+	name = "Stylo"
+	icon_state = "hair_stylo"
+
+/datum/sprite_accessory/hair/spikeyponytail
+	name = "Spikey Pony Tail"
+	icon_state = "hair_spikeyponytail"
+
+/datum/sprite_accessory/hair/lem
+	name = "Lem"
+	icon_state = "hair_lem"
+
+/datum/sprite_accessory/hair/asymmbob
+	name = "Asymmetrical Bob"
+	icon_state = "hair_asymmbob"
+
+/datum/sprite_accessory/hair/boyish1
+	name = "Boyish 1"
+	icon_state = "hair_boyish1"
+
+/datum/sprite_accessory/hair/boyish2
+	name = "Boyish 2"
+	icon_state = "hair_boyish2"
+
+/datum/sprite_accessory/hair/boyish3
+	name = "Boyish 3"
+	icon_state = "hair_boyish3"
+
+/datum/sprite_accessory/hair/boyish4
+	name = "Boyish 4"
+	icon_state = "hair_boyish4"
+
+/datum/sprite_accessory/hair/boyish5
+	name = "Boyish 5"
+	icon_state = "hair_boyish5"
+
+/datum/sprite_accessory/hair/boyish5b
+	name = "Boyish 5b"
+	icon_state = "hair_boyish5b"
+
+/datum/sprite_accessory/hair/wheeler
+	name = "Wheeler"
+	icon_state = "hair_wheeler"
+
+/datum/sprite_accessory/hair/tressshoulder
+	name = "Tress Shoulder"
+	icon_state = "hair_tressshoulder"
 	flags = HAIR_TIEABLE

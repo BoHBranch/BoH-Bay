@@ -13,8 +13,8 @@
 	. = ..()
 	if(isliving(target))
 		var/mob/living/L = target
-		to_chat(target, SPAN_WARNING("You feel incredible pain, as if something is invading your mind!"))
-		L.seizure()//Which is why, if it does work, it'll drop a target in one hit for cuffing.
+		to_chat(target, SPAN_WARNING("You feel your muscles locking up, preventing you from moving!"))
+		L.Paralyse(2 SECONDS) //It's actually 20 ticks (around half a minute) but baycode funny
 
 /////////
 //lethals
@@ -23,7 +23,7 @@
 	name = "particle charge"
 	icon_state = "particle"
 	fire_sound = 'sound/weapons/gauss.ogg'
-	damage = 65
+	damage = 60
 	armor_penetration = 85
 	muzzle_type = /obj/effect/projectile/laser_particle/muzzle
 	tracer_type = /obj/effect/projectile/laser_particle/tracer
@@ -33,7 +33,7 @@
 
 /obj/item/projectile/beam/particleadv/small
 	name = "particle charge"
-	damage = 55
-	armor_penetration = 65
+	damage = 30
+	armor_penetration = 40
 	shrapnel_chance_multiplier = 0.3
 	arterial_bleed_chance_multiplier = 0.3

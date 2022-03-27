@@ -6,7 +6,7 @@ SUBSYSTEM_DEF(trade)
 
 	var/list/traders = list()
 	var/tmp/list/current_traders
-	var/max_traders = 10
+	var/max_traders = 15
 
 /datum/controller/subsystem/trade/Initialize()
 	. = ..()

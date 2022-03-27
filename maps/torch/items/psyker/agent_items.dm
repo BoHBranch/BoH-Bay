@@ -13,7 +13,7 @@ This file will primarily contain material relating to either Foundation Agents o
 	name = "\improper Nanotrasen briefcase"
 	desc = "A handsome black leather briefcase. 'NTPC' appears to be stamped on the handle in an obnoxious blue."
 
-/obj/item/weapon/storage/briefcase/foundation/nt/revolver	
+/obj/item/weapon/storage/briefcase/foundation/nt/revolver
 	startswith = list(
 	/obj/item/weapon/gun/projectile/revolver/foundation/agent,
 	/obj/item/ammo_magazine/speedloader/magnum/nullglass=3)
@@ -39,7 +39,7 @@ This file will primarily contain material relating to either Foundation Agents o
 /////////
 /obj/item/clothing/ring/material/nullglass/New(var/newloc)
 	..(newloc, MATERIAL_NULLGLASS)
-	
+
 /////////
 // Equipment Kit
 /////////

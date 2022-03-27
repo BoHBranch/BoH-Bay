@@ -32,7 +32,7 @@
 				points_left -= traits_costs[T]
 
 		//Went into negatives
-		if(points_left < 0 || traits_left < 0)
+		if(points_left <= 0 || traits_left <= 0)
 			pass = FALSE
 			to_chat(src,"<span class='warning'>Your custom species is not playable. Reconfigure your traits under the genemod tab.</span>")
 
@@ -76,6 +76,8 @@
 		return 0
 	if(job.is_restricted(client,client.prefs, src))
 		return 0
+	if(jobban_isbanned(client, client.prefs.species))
+		return
 	if(!attempt_vr(src,"spawn_checks",list())) //Really the only thing changed here
 		return 0									// Ditto
 

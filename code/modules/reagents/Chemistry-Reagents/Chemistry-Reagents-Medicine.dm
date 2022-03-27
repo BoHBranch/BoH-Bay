@@ -138,7 +138,7 @@
 
 /datum/reagent/dexalinp
 	name = "Dexalin Plus"
-	description = "Dexalin Plus is used in the treatment of oxygen deprivation. It is highly effective."
+	description = "Dexalin Plus is used in the treatment of extreme oxygen deprivation."
 	taste_description = "bitterness"
 	reagent_state = LIQUID
 	color = "#0040ff"
@@ -1249,3 +1249,75 @@
 	if(alien == IS_DIONA)
 		return
 	M.add_chemical_effect(CE_PAINKILLER, 30) // Light painkiller.
+
+/datum/reagent/creth
+	name = "Creth"
+	description = "Creth is a highly illegal chemical with massive boosts and terrible side effects."
+	taste_description = "acid"
+	reagent_state = LIQUID
+	color = "#FFFFFF"
+	metabolism = REM * 0.1
+	overdose = 15
+	value = 15
+
+/datum/reagent/creth/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+	if(prob(5))
+		M.emote(pick("twitch", "blink_r", "shiver"))
+	M.add_chemical_effect(CE_SPEEDBOOST, 1)
+	M.add_chemical_effect(CE_PULSE, 3)
+	M.druggy = max(M.druggy, 10)
+	M.adjust_stamina(20)
+	var/obj/item/organ/internal/heart = M.internal_organs_by_name[BP_HEART]
+	heart.take_internal_damage(0.05) // Yeah this is low, any higher and you die insanely fast.
+
+
+/datum/reagent/creth/overdose(var/mob/living/carbon/M, var/alien, var/removed)
+	..()
+	M.add_chemical_effect(CE_TOXIN, 3)
+	M.add_chemical_effect(CE_PAINKILLER, 80)
+	M.add_chemical_effect(CE_SPEEDBOOST, 5)
+	M.add_chemical_effect(CE_PULSE, 2)
+
+//Lean
+
+/datum/reagent/tilt
+	name = "Tilt"
+	description = "A potent downer made from mixing cough medicine and Space-Up."
+	taste_description = "purple sweetness"
+	reagent_state = LIQUID
+	color = "#800080"
+	metabolism = REM * 0.5
+	overdose = REAGENTS_OVERDOSE
+	value = 1.5
+
+	glass_name = "tilt"
+	glass_desc = "The best way there is to get tilted."
+
+/datum/reagent/tilt/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+
+	var/drug_strength = 10
+	if(alien == IS_SKRELL)
+		drug_strength = drug_strength * 0.8
+
+	M.add_chemical_effect(M.add_chemical_effect(CE_SLOWDOWN, 1))
+	M.slurring = max(M.slurring, 10)
+
+	if(prob(90))
+		M.drowsyness = max(M.drowsyness, 3)
+	if(prob(70))
+		M.confused = max(M.confused, 10)
+	if(prob(10))
+		M.emote("drool")
+		M.apply_effect(STUTTER, 3)
+
+/datum/reagent/tilt/overdose(var/mob/living/carbon/M, var/alien)
+	M.add_chemical_effect(CE_TOXIN, 1)
+	if(prob(70))
+		M.add_chemical_effect(CE_BREATHLOSS, 5)
+	if(prob(10))
+		M.Paralyse(20)
+		M.Sleeping(30)

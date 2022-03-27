@@ -11,7 +11,7 @@
 	icon_state = "blackservice"
 	body_parts_covered = UPPER_TORSO|ARMS
 	siemens_coefficient = 0.9
-	allowed = list(/obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll)
+	allowed = list(/obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll, /obj/item/weapon/gun)
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND,ACCESSORY_SLOT_MEDAL,ACCESSORY_SLOT_INSIGNIA,ACCESSORY_SLOT_RANK,ACCESSORY_SLOT_DEPT)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
@@ -164,6 +164,7 @@
 	icon_state = "ecdress_xpl"
 	body_parts_covered = UPPER_TORSO|ARMS
 	siemens_coefficient = 0.9
+	allowed = list(/obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll, /obj/item/weapon/gun)
 	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL,ACCESSORY_SLOT_RANK, ACCESSORY_SLOT_INSIGNIA)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
@@ -210,21 +211,25 @@
 	name = "fleet dress SNCO jacket"
 	desc = "A navy blue SolGov Fleet dress jacket with silver cuffs. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_snco"
+	item_state = "whitedress_snco"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	name = "fleet officer's dress jacket"
 	desc = "A navy blue SolGov Fleet dress jacket with silver accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_off"
+	item_state = "whitedress_off"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 	name = "fleet senior officer's dress jacket"
 	desc = "A navy blue SolGov Fleet dress jacket with gold accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_comm"
+	item_state = "whitedress_comm"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 	name = "fleet flag officer's dress jacket"
 	desc = "A navy blue SolGov Fleet dress jacket with red accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_flag"
+	item_state = "whitedress_flag"
 
 /obj/item/clothing/suit/dress/solgov
 	name = "dress jacket"
@@ -304,7 +309,7 @@
 		rad = ARMOR_RAD_MINOR
 		)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA,ACCESSORY_SLOT_RANK)
-	allowed = list (/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/device/scanner/gas, /obj/item/device/flashlight, /obj/item/device/multitool, /obj/item/device/pipe_painter, /obj/item/device/radio, /obj/item/device/t_scanner, \
+	allowed = list (/obj/item/weapon/gun, /obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/device/scanner/gas, /obj/item/device/flashlight, /obj/item/device/multitool, /obj/item/device/pipe_painter, /obj/item/device/radio, /obj/item/device/t_scanner, \
 	/obj/item/weapon/crowbar, /obj/item/weapon/screwdriver, /obj/item/weapon/weldingtool, /obj/item/weapon/wirecutters, /obj/item/weapon/wrench, /obj/item/weapon/tank/emergency, \
 	/obj/item/clothing/mask/gas, /obj/item/taperoll/engineering,/obj/item/clothing/head/hardhat)
 
@@ -312,7 +317,7 @@
 	name = "fleet jacket"
 	desc = "A jacket commonly issued by the fleet to its medical staff. It sports some discrete blue markings, and has thin elbow pads."
 	icon_state = "navymedjacket"
-	allowed = list (/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/stack/medical, /obj/item/weapon/reagent_containers/dropper, /obj/item/weapon/reagent_containers/hypospray, /obj/item/weapon/reagent_containers/syringe, \
+	allowed = list (/obj/item/weapon/gun, /obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/stack/medical, /obj/item/weapon/reagent_containers/dropper, /obj/item/weapon/reagent_containers/hypospray, /obj/item/weapon/reagent_containers/syringe, \
 	/obj/item/device/scanner/health, /obj/item/device/flashlight, /obj/item/device/radio, /obj/item/clothing/head/hardhat, /obj/item/weapon/tank/emergency, /obj/item/weapon/reagent_containers/ivbag
 	)
 
@@ -320,35 +325,35 @@
 	name = "fleet jacket"
 	desc = "A jacket commonly issued by the fleet to its security staff. It sports some discrete red markings, and has elbow pads."
 	icon_state = "navysecjacket"
-	allowed = list (/obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic,/obj/item/clothing/head/helmet
+	allowed = list (/obj/item/weapon/gun, /obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/weapon/gun/energy,/obj/item/device/radio,/obj/item/weapon/reagent_containers/spray/pepper,/obj/item/weapon/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/handcuffs,/obj/item/weapon/gun/magnetic,/obj/item/clothing/head/helmet
 	)
 
 /obj/item/clothing/suit/storage/jacket/solgov/fleet/service
 	name = "fleet jacket"
 	desc = "A jacket commonly issued by the fleet to its service staff. It sports some discrete green markings."
 	icon_state = "navysrvjacket"
-	allowed = list (/obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll
+	allowed = list (/obj/item/weapon/gun, /obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll
 	)
 
 /obj/item/clothing/suit/storage/jacket/solgov/fleet/supply
 	name = "fleet jacket"
 	desc = "A jacket commonly issued by the fleet to its deck staff. It sports some discrete brown markings, and has elbow pads."
 	icon_state = "navysupjacket"
-	allowed = list (/obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll
+	allowed = list (/obj/item/weapon/gun, /obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll
 	)
 
 /obj/item/clothing/suit/storage/jacket/solgov/fleet/command
 	name = "fleet jacket"
 	desc = "A jacket commonly issued by the fleet to its command staff. It sports some gold markings."
 	icon_state = "navycomjacket"
-	allowed = list (/obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll
+	allowed = list (/obj/item/weapon/gun, /obj/item/weapon/tank/emergency,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll
 	)
 
 /obj/item/clothing/suit/storage/jacket/solgov/fleet/exploration
 	name = "fleet jacket"
 	desc = "A jacket commonly issued by the fleet to its command staff. It sports some gold markings."
 	icon_state = "navyxpljacket"
-	allowed = list (/obj/item/weapon/tank,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/device/scanner
+	allowed = list (/obj/item/weapon/gun, /obj/item/weapon/tank,/obj/item/device/flashlight,/obj/item/weapon/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/weapon/storage/fancy/cigarettes,/obj/item/weapon/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/device/scanner
 	)
 
 //SolGov Hardsuits

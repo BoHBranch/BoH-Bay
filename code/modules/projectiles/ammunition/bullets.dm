@@ -3,6 +3,7 @@
 	desc = "A pistol bullet casing."
 	caliber = CALIBER_PISTOL
 	projectile_type = /obj/item/projectile/bullet/pistol
+	ammo_stack = /obj/item/ammo_magazine/handful/pistol_handful/two
 	icon_state = "pistolcasing"
 	spent_icon = "pistolcasing-spent"
 
@@ -13,17 +14,20 @@
 /obj/item/ammo_casing/pistol/rubber
 	desc = "A rubber pistol bullet casing."
 	projectile_type = /obj/item/projectile/bullet/pistol/rubber
+	ammo_stack = /obj/item/ammo_magazine/handful/pistol_handful/rubber/two
 	icon_state = "pistolcasing_r"
 
 /obj/item/ammo_casing/pistol/practice
 	desc = "A practice pistol bullet casing."
 	projectile_type = /obj/item/projectile/bullet/pistol/practice
+	ammo_stack = null
 	icon_state = "pistolcasing_p"
 
 /obj/item/ammo_casing/pistol/small
 	desc = "A small pistol bullet casing."
 	caliber = CALIBER_PISTOL_SMALL
 	projectile_type = /obj/item/projectile/bullet/pistol/holdout
+	ammo_stack = null
 	icon_state = "smallcasing"
 	spent_icon = "smallcasing-spent"
 
@@ -41,11 +45,13 @@
 	desc = "A high-power pistol bullet casing."
 	caliber = CALIBER_PISTOL_MAGNUM
 	projectile_type = /obj/item/projectile/bullet/pistol/strong
+	ammo_stack = /obj/item/ammo_magazine/handful/magnum_handful/small/two
 	icon_state = "magnumcasing"
 	spent_icon = "magnumcasing-spent"
 
 /obj/item/ammo_casing/pistol/throwback
 	desc = "An antique pistol bullet casing. Somewhere between 9 and 11 mm in caliber."
+	ammo_stack = null
 	caliber = CALIBER_PISTOL_ANTIQUE
 
 /obj/item/ammo_casing/gyrojet
@@ -69,6 +75,7 @@
 	spent_icon = "slshell-spent"
 	caliber = CALIBER_SHOTGUN
 	projectile_type = /obj/item/projectile/bullet/shotgun
+	ammo_stack = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/slug/two
 	matter = list(MATERIAL_STEEL = 360)
 	fall_sounds = list('sound/weapons/guns/shotgun_fall.ogg')
 
@@ -77,6 +84,7 @@
 	desc = "A shotshell."
 	icon_state = "gshell"
 	spent_icon = "gshell-spent"
+	ammo_stack = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/two
 	projectile_type = /obj/item/projectile/bullet/pellet/shotgun
 	matter = list(MATERIAL_STEEL = 360)
 
@@ -85,6 +93,7 @@
 	desc = "A blank shell."
 	icon_state = "blshell"
 	spent_icon = "blshell-spent"
+	ammo_stack = null // No Ammo stack for this one.
 	projectile_type = /obj/item/projectile/bullet/blank
 	matter = list(MATERIAL_STEEL = 90)
 
@@ -93,6 +102,7 @@
 	desc = "A practice shell."
 	icon_state = "pshell"
 	spent_icon = "pshell-spent"
+	ammo_stack = null // No Ammo stack for this one.
 	projectile_type = /obj/item/projectile/bullet/shotgun/practice
 	matter = list(MATERIAL_STEEL = 90)
 
@@ -101,6 +111,7 @@
 	desc = "A beanbag shell."
 	icon_state = "bshell"
 	spent_icon = "bshell-spent"
+	ammo_stack = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/beanbag/two
 	projectile_type = /obj/item/projectile/bullet/shotgun/beanbag
 	matter = list(MATERIAL_STEEL = 180)
 
@@ -114,6 +125,13 @@
 	projectile_type = /obj/item/projectile/energy/electrode/stunshot
 	leaves_residue = 0
 	matter = list(MATERIAL_STEEL = 360, MATERIAL_GLASS = 720)
+
+/obj/item/ammo_casing/shotgun/net
+	name = "net shell"
+	desc = "A net shell."
+	icon_state = "netshell"
+	projectile_type = /obj/item/projectile/bullet/shotgun/beanbag/net
+	matter = list(MATERIAL_STEEL = 180)
 
 /obj/item/ammo_casing/shotgun/stunshell/emp_act(severity)
 	if(prob(100/severity)) BB = null
@@ -169,19 +187,21 @@
 	projectile_type = /obj/item/projectile/bullet/rifle/military/practice
 	icon_state = "rifle_mil_p"
 
-/obj/item/ammo_casing/rocket
-	name = "rocket shell"
-	desc = "A high explosive designed to be fired from a launcher."
-	icon_state = "rocketshell"
-	projectile_type = /obj/item/missile
-	caliber = "rocket"
-
 /obj/item/ammo_casing/cap
 	name = "cap"
 	desc = "A cap for children toys."
 	caliber = CALIBER_CAPS
 	color = "#ff0000"
 	projectile_type = /obj/item/projectile/bullet/pistol/cap
+
+/obj/item/ammo_casing/nails
+	name = "nail"
+	desc = "A single forged nail. Pointy."
+	icon_state = "nail"
+	matter = list(MATERIAL_STEEL = 5)
+	leaves_residue = 0
+	caliber = CALIBER_NAILS
+	projectile_type	= /obj/item/projectile/bullet/nail
 
 // EMP ammo.
 /obj/item/ammo_casing/pistol/emp
@@ -204,3 +224,20 @@
 	spent_icon = "empshell-spent"
 	projectile_type  = /obj/item/projectile/ion
 	matter = list(MATERIAL_STEEL = 260, MATERIAL_URANIUM = 200)
+
+// Rockets //
+
+/obj/item/ammo_casing/rocket
+	name = "rocket shell"
+	desc = "A high explosive designed to be fired from a launcher."
+	icon_state = "rocketshell"
+	projectile_type = /obj/item/projectile/missile
+	caliber = CALIBER_ROCKET
+
+// Yes, this a copy paste of above, but these shouldn't be under the normal rocket subcategory so you can't reload one use launchers without admins.
+/obj/item/ammo_casing/oneuse_rocket
+	name = "rocket shell"
+	desc = "A high explosive designed to be fired from a launcher."
+	icon_state = "rocketshell"
+	projectile_type = /obj/item/projectile/missile
+	caliber = CALIBER_ROCKET

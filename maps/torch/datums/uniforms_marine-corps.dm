@@ -43,6 +43,12 @@
 
 	dress_extra = list(/obj/item/clothing/head/beret/solgov)
 
+/decl/hierarchy/mil_uniform/marine_corps/noncom
+	name = "Marine Corps NCO"
+	min_rank = 6
+
+	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/marine)
+
 /decl/hierarchy/mil_uniform/marine_corps/com //Can only be officers
 	name = "Marine Corps command"
 	departments = COM
@@ -69,7 +75,7 @@
 
 /decl/hierarchy/mil_uniform/marine_corps/com/seniorofficer
 	name = "Marine Corps senior command"
-	min_rank = 15
+	min_rank = 21
 
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
@@ -99,7 +105,7 @@
 	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army
-	dress_extra = list(/obj/item/weapon/material/sword/officersword/army)
+	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/eng/officer
 	name = "Marine Corps engineering CO"
@@ -121,15 +127,17 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/material/sword/officersword/armyofficer)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/eng/officer/com //Can only be officers
 	name = "Marine Corps engineering command"
 	departments = ENG|COM
+	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
+	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 
 /decl/hierarchy/mil_uniform/marine_corps/eng/officer/com/seniorofficer
 	name = "Marine Corps engineering senior command"
-	min_rank = 15
+	min_rank = 21
 
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
@@ -159,7 +167,7 @@
 	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison, /obj/item/clothing/head/solgov/service/army/campaign)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army
-	dress_extra = list(/obj/item/weapon/material/sword/officersword/army)
+	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/sec/officer
 	name = "Marine Corps security CO"
@@ -181,15 +189,17 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/material/sword/officersword/armyofficer)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/sec/officer/com //Can only be officers
 	name = "Marine Corps security command"
 	departments = SEC|COM
+	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
+	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 
 /decl/hierarchy/mil_uniform/marine_corps/sec/officer/com/seniorofficer
 	name = "Marine Corps security senior command"
-	min_rank = 15
+	min_rank = 21
 
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
@@ -218,11 +228,11 @@
 	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army
-	dress_extra = list(/obj/item/weapon/material/sword/officersword/army)
+	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/med/officer
 	name = "Marine Corps medical CO"
-	min_rank = 11
+	min_rank = 16
 
 	utility_extra = list(
 		/obj/item/clothing/under/solgov/utility/army/command,
@@ -240,7 +250,7 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/material/sword/officersword/armyofficer)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/med/officer/com //Can only be officers
 	name = "Marine Corps medical command"
@@ -248,7 +258,7 @@
 
 /decl/hierarchy/mil_uniform/marine_corps/med/officer/com/seniorofficer
 	name = "Marine Corps medical senior command"
-	min_rank = 15
+	min_rank = 21
 
 	service_over = /obj/item/clothing/suit/storage/solgov/service/army/command
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
@@ -277,11 +287,11 @@
 	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army
-	dress_extra = list(/obj/item/weapon/material/sword/officersword/army)
+	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/sup/officer
 	name = "Marine Corps supply CO"
-	min_rank = 11
+	min_rank = 16
 
 	utility_extra = list(
 		/obj/item/clothing/under/solgov/utility/army/command,
@@ -299,11 +309,11 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/material/sword/officersword/armyofficer)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/sup/seniorofficer
 	name = "Marine Corps supply senior command"
-	min_rank = 15
+	min_rank = 21
 
 	utility_extra = list(
 		/obj/item/clothing/under/solgov/utility/army/command,
@@ -322,7 +332,7 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/material/sword/officersword/armyofficer)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/srv
 	name = "Marine Corps service"
@@ -348,7 +358,7 @@
 	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army
-	dress_extra = list(/obj/item/weapon/material/sword/officersword/army)
+	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/srv/officer
 	name = "Marine Corps service CO"
@@ -370,7 +380,7 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/material/sword/officersword/armyofficer)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/exp
 	name = "Marine Corps exploration"
@@ -396,11 +406,11 @@
 	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army
-	dress_extra = list(/obj/item/weapon/material/sword/officersword/army)
+	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/exp/officer
 	name = "Marine Corps exploration CO"
-	min_rank = 11
+	min_rank = 16
 
 	utility_extra = list(
 		/obj/item/clothing/under/solgov/utility/army/command,
@@ -418,7 +428,7 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/material/sword/officersword/armyofficer)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/spt
 	name = "Marine Corps command support"
@@ -437,11 +447,11 @@
 	service_extra = list(/obj/item/clothing/head/solgov/service/army/garrison, /obj/item/clothing/head/solgov/service/army/campaign)
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army
-	dress_extra = list(/obj/item/weapon/material/sword/officersword/army)
+	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/spt/officer
 	name = "Marine Corps command support CO"
-	min_rank = 11
+	min_rank = 16
 
 	utility_extra = list(
 		/obj/item/clothing/under/solgov/utility/army/command,
@@ -463,11 +473,11 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/material/sword/officersword/armyofficer)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
 
 /decl/hierarchy/mil_uniform/marine_corps/spt/seniorofficer
 	name = "Marine Corps senior command support"
-	min_rank = 15
+	min_rank = 21
 
 	utility_extra = list(
 		/obj/item/clothing/under/solgov/utility/army/command,
@@ -488,4 +498,4 @@
 
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
-	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/material/sword/officersword/armyofficer)
+	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)

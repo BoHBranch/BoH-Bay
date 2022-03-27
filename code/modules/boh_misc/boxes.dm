@@ -4,15 +4,15 @@
 
 /obj/item/weapon/storage/box/ammo/beanbags/full
 	name = "heavy box of beanbag shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 6)
+	startswith = list(/obj/item/ammo_box/shotgun/beanbag = 6)
 
 /obj/item/weapon/storage/box/ammo/beanbags/half
 	name = "box of beanbag shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 3)
+	startswith = list(/obj/item/ammo_box/shotgun/beanbag = 3)
 
 /obj/item/weapon/storage/box/ammo/beanbags/eight
 	name = "box of beanbag shells"
-	startswith = list(/obj/item/ammo_magazine/shotholder/beanbag = 2)
+	startswith = list(/obj/item/ammo_box/shotgun/beanbag = 2)
 
 /obj/item/weapon/storage/box/ammo/solar
 	name = "box of handgun magazines"
@@ -31,11 +31,15 @@
 
 /obj/item/weapon/storage/box/ammo/shotgunammo/full
 	name = "heavy box of shotgun slugs"
-	startswith = list(/obj/item/ammo_magazine/shotholder = 7)
+	startswith = list(/obj/item/ammo_box/shotgun/slug = 7)
+
+/obj/item/weapon/storage/box/ammo/shotgunammo/buckshot/full
+	name = "heavy box of shotgun shells"
+	startswith = list(/obj/item/ammo_box/shotgun = 7)
 
 /obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full
 	name = "heavy box of birdshot"
-	startswith = list(/obj/item/ammo_magazine/shotholder/birdshot = 7)
+	startswith = list(/obj/item/ammo_box/shotgun/birdshot = 7)
 
 /obj/item/weapon/storage/box/ammo/sabotbox
 	name = "box of sabot shells"
@@ -44,6 +48,10 @@
 /obj/item/weapon/storage/box/ammo/machine_pistol
 	name = "box of magazines"
 	startswith = list(/obj/item/ammo_magazine/machine_pistol = 7)
+
+/obj/item/weapon/storage/box/ammo/smg_frang
+	name = "box of magazines"
+	startswith = list(/obj/item/ammo_magazine/smg_top/frangible = 7)
 
 
 /obj/item/gunbox
@@ -58,6 +66,8 @@
 	options["Ballistic - Military Revolver"] = list(/obj/item/weapon/gun/projectile/revolver/medium/sec/pepper,/obj/item/ammo_magazine/speedloader/rubber)
 //	options["Energy - Smartgun"] = list(/obj/item/weapon/gun/energy/gun/secure)
 //	options["Energy - Stun Revolver"] = list(/obj/item/weapon/gun/energy/stunrevolver/secure)
+	options["Stun - Non-Lethal Taser"] = list(/obj/item/weapon/gun/energy/taser)
+	options["Small Energy - Compact Smartgun"] = list(/obj/item/weapon/gun/energy/gun/small/secure/sec)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
@@ -65,6 +75,27 @@
 			var/atom/movable/AM = new new_type(get_turf(src))
 			if(istype(AM, /obj/item/weapon/gun/))
 				to_chat(user, "You have chosen \the [AM]. This is probably worth more than what your paycheck can be used for.")
+		qdel(src)
+
+/////////
+// Primary Gunbox for Sec
+/////////
+
+/obj/item/gunbox/primary
+	desc = "A secure box containing a primary."
+
+/obj/item/gunbox/primary/attack_self(mob/living/user)
+	var/list/options = list()
+	options["Ballistic - SMG"] = list(/obj/item/weapon/gun/projectile/automatic/sec_smg/less_lethal,/obj/item/weapon/storage/box/ammo/smg_frang)
+	options["Ballistic - Beanbag Shotgun"] = list(/obj/item/weapon/gun/projectile/shotgun/pump/beanbag,/obj/item/weapon/storage/box/ammo/shotgunammo/birdshot/full)
+	options["Stun - Stun Rifle"] = list(/obj/item/weapon/gun/energy/stunrevolver/rifle)
+	var/choice = input(user,"What type of equipment?") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn)
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/weapon/gun/))
+				to_chat(user, "You have chosen \the [AM].")
 		qdel(src)
 
 /////////

@@ -5,8 +5,8 @@
 	completion_trigger_type = /obj/item/stack/material/rods
 	stack_consume_amount = 1
 	next_stages = list(
-		/decl/crafting_stage/spear_blade_shard, 
-		/decl/crafting_stage/spear_blade_blade, 
+		/decl/crafting_stage/spear_blade_shard,
+		/decl/crafting_stage/spear_blade_blade,
 		/decl/crafting_stage/stunprod_wirecutters
 	)
 
@@ -32,3 +32,23 @@
 	completion_trigger_type = /obj/item/weapon/wirecutters
 	progress_message = "You fasten the wirecutters to the top of the rod with the cable, prongs outward."
 	product = /obj/item/weapon/melee/baton/cattleprod
+	
+//Wrenchsword
+/decl/crafting_stage/wrenchswordbegin
+	begins_with_object_type = /obj/item/weapon/material/hatchet/machete
+	completion_trigger_type = /obj/item/weapon/material/hatchet/machete
+	item_icon_state = "wrenchsword_unfinished"
+	progress_message = "You align the two machete blades together."
+	next_stages = list(
+		/decl/crafting_stage/welding/wrenchswordweld)
+
+/decl/crafting_stage/welding/wrenchswordweld
+	progress_message = "You weld the blades together into a single, larger blade."
+	item_icon_state = "wrenchsword_unfinished"
+	next_stages = list(
+		/decl/crafting_stage/wrenchswordfinish)
+
+decl/crafting_stage/wrenchswordfinish
+	completion_trigger_type = /obj/item/weapon/wrench
+	progress_message = "You attach the wrench into the hilt, securing it."
+	product = /obj/item/weapon/material/sword/improvised

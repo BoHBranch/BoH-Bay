@@ -13,6 +13,11 @@
 /obj/item/projectile/bullet/pellet/fragment/strong
 	damage = 50
 
+/obj/item/projectile/bullet/pellet/fragment/glass
+	name = "glass fragment"
+	damage = 15
+	embed = 1
+
 /obj/item/weapon/grenade/frag
 	name = "fragmentation grenade"
 	desc = "A military fragmentation grenade, designed to explode in a deadly shower of fragments, while avoiding massive structural damage."
@@ -90,18 +95,82 @@
 	num_fragments = 264  //total number of fragments produced by the grenade
 	explosion_size = 4
 
+//Currently unobtainable as Bay crafting is fucked and I can't find a good recipe that doesn't seem either stupid or too difficult. So for now, these just... exist.
+/obj/item/weapon/grenade/frag/glassbomb
+	name = "glass bomb"
+	desc = "A crude explosive device made from shards of glass and explosives. Produces a blizzard of sharp fragments."
+	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/glass=1)
+	explosion_size = 0
+	num_fragments = 72
+
+/obj/item/weapon/grenade/frag/pipebomb
+	name = "pipe bomb"
+	desc = "An insidious, crude explosive device made from a pipe and some explosive material. Commonly utilized by eco-terrorists."
+	num_fragments = 190
+	explosion_size = 5
+	throw_speed = 3
+	throw_range = 5
+
 /obj/item/weapon/grenade/frag/high_yield/on_explosion(var/turf/O)
 	if(explosion_size)
 		explosion(O, -1, round(explosion_size/2), explosion_size, round(explosion_size/2), 0) //has a chance to blow a hole in the floor
 
 /obj/item/weapon/grenade/frag/rubber
 	name = "stinger grenade"
-	desc = "A Stinger grenade, a grenade releasing a huge amount of tiny rubber balls made to cause extreme pain and trauma to anyone it hits to nonleathally disable them, but may still cause severe injuries."
+	desc = "A grenade designed to release hundreds of rubber balls. While less-than-lethal, it is still capable of injuring or horribly disfiguring a suspect."
 	icon_state = "concussion"
 	fragment_types = list(/obj/item/projectile/bullet/pellet/rubber=1)
-	num_fragments = 69
+	num_fragments = 224
 	explosion_size = 0 // Rubber grenade, doesn't have explosives.
 
 /obj/item/projectile/bullet/pellet/rubber // Rubber balls, deal agony and a tiny bit of damage.
+	name = "rubber ball"
 	damage = 5
 	agony = 25
+	embed = 1
+	sharp = 0
+
+/obj/item/projectile/bullet/pellet/rubber/on_hit(var/atom/target, var/blocked = 0, var/alien)
+	..()
+	var/eyes_covered = 0
+
+	var/effective_strength = 5
+
+	var/obj/item/safe_thing = null
+
+	if(!istype(target, /mob/living/carbon/human))
+		return
+	if(alien == IS_SKRELL)	//Larger eyes means bigger targets.
+		effective_strength = 8
+
+	if(alien == IS_DIONA)
+		effective_strength = 1
+
+	var/mob/living/carbon/human/M = target
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/H = M
+		if(!H.can_feel_pain())
+			return
+		if(H.head)
+			if(H.head.body_parts_covered & EYES)
+				eyes_covered = 1
+				safe_thing = H.head
+		if(H.wear_mask)
+			if(!eyes_covered && H.wear_mask.body_parts_covered & EYES)
+				eyes_covered = 1
+				safe_thing = H.wear_mask
+		if(H.glasses && H.glasses.body_parts_covered & EYES)
+			if(!eyes_covered)
+				eyes_covered = 1
+				if(!safe_thing)
+					safe_thing = H.glasses
+	if(eyes_covered)
+		to_chat(M, "<span class='warning'>Your [safe_thing] protects you from the rubber ball!</span>")
+	else
+		if(prob(20) && EYES)
+//			M.apply_damage(EYES,15,BRUTE) //I was tired. Someone else fix this or something if you want it.
+			to_chat(M, "<span class='warning'>A rubber ball lodges itself into your eye!</span>")
+			to_chat(M, "<span class='warning'>Oh god, the pain!</span>")
+			M.eye_blurry = max(M.eye_blurry, effective_strength * 5)
+			M.eye_blind = max(M.eye_blind, effective_strength)
+			M.apply_effect(6 * effective_strength, PAIN, 0)

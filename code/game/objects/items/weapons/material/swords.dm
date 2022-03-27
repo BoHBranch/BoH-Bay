@@ -13,8 +13,18 @@
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	base_parry_chance = 40
+	parrysound = 'sound/weapons/parry/parry_metallarge.ogg'
 	melee_accuracy_bonus = 10
 	worth_multiplier = 30
+
+/obj/item/weapon/material/sword/improvised
+	name = "wrenchblade"
+	desc = "A large blade welded onto a wrench-based hilt. Functions as a sword, you suppose."
+	icon_state = "wrenchsword"
+	item_state = "wrenchsword"
+	max_force = 20
+	armor_penetration = 5
+	worth_multiplier = 10
 
 /obj/item/weapon/material/sword/replica
 	max_force = 10

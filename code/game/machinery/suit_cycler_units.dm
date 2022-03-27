@@ -50,6 +50,7 @@
 /obj/machinery/suit_cycler/pilot
 	name = "Pilot suit cycler"
 	model_text = "Pilot"
+	req_access = list(access_eva)
 	available_modifications = list(/decl/item_modifier/space_suit/pilot)
 
 /obj/machinery/suit_cycler/command
@@ -57,4 +58,3 @@
 	model_text = "Command"
 	req_access = list(access_bridge)
 	available_modifications = list(/decl/item_modifier/space_suit/command)
-	species = list(SPECIES_HUMAN,SPECIES_SKRELL)

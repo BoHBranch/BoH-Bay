@@ -305,3 +305,7 @@
 
 // NULL_OR_EQUAL define, ported from Aurora
 #define NULL_OR_EQUAL(self,other) (!(self) || (self) == (other))
+
+
+#define FOURSPACES "&nbsp;&nbsp;&nbsp;&nbsp;"
+#define CLIENT_FROM_VAR(I) (ismob(I) ? I:client : (isclient(I) ? I : (istype(I, /datum/mind) ? I:current?:client : null)))

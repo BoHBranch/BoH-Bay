@@ -37,17 +37,14 @@
 							 /datum/computer_file/program/camera_monitor)
 
 /datum/job/detective
-	title = "Forensic Technician"
+	title = "Federal Agent"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief of Security"
+	supervisors = "the SolGov Registry"
 	economic_power = 5
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 21)
 	skill_points = 18
-	alt_titles = list(
-		"Criminal Investigator"
-	)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -56,12 +53,6 @@
 		/datum/mil_branch/solgov = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/agent
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/civ/contractor,
 		/datum/mil_rank/sol/agent
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,

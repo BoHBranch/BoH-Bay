@@ -33,7 +33,7 @@
 /obj/item/weapon/rig/industrial
 	name = "industrial suit control module"
 	suit_type = "industrial hardsuit"
-	desc = "A heavy, powerful rig used by construction crews and mining corporations."
+	desc = "A heavy, powerful hardsuit used by construction crews and mining corporations."
 	icon_state = "engineering_rig"
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
@@ -88,7 +88,7 @@
 /obj/item/weapon/rig/eva
 	name = "EVA hardsuit control module"
 	suit_type = "EVA hardsuit"
-	desc = "A light rig for repairs and maintenance to the outside of habitats and vessels."
+	desc = "A light hardsuit for repairs and maintenance to the outside of habitats and vessels."
 	icon_state = "eva_rig"
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,

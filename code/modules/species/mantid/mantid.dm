@@ -18,6 +18,7 @@
 	flesh_color =             "#009999"
 	hud_type =                /datum/hud_data/mantid
 	move_trail =              /obj/effect/decal/cleanable/blood/tracks/snake
+	virus_immune = TRUE
 
 	speech_chance = 100
 	speech_sounds = list(
@@ -144,6 +145,7 @@
 	max_age =               500
 	blood_volume =         1200
 	spawns_with_stack =       0
+	is_weaver = 1
 
 	pixel_offset_x =        -4
 	antaghud_offset_y =      18
@@ -169,6 +171,15 @@
 		TAG_FACTION =   FACTION_ASCENT_GYNE,
 		TAG_RELIGION =  RELIGION_KHARMAANI
 	)
+
+	inherent_verbs = list(
+		/mob/living/carbon/human/proc/check_silk_amount,
+		/mob/living/carbon/human/proc/toggle_silk_production,
+		/mob/living/carbon/human/proc/weave_structure,
+		/mob/living/carbon/human/proc/weave_item
+		)
+	
+	silk_color = "#99FFFF"
 
 /datum/species/mantid/gyne/attempt_grab(var/mob/living/carbon/human/grabber, var/mob/living/target)
 	if(grabber != target)
@@ -211,6 +222,7 @@
 /datum/species/nabber/monarch
 	name = SPECIES_MONARCH_WORKER
 	name_plural = "Monarch Serpentid Workers"
+	virus_immune = TRUE
 	spawn_flags = SPECIES_IS_RESTRICTED | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN
 	has_organ = list(
 		BP_BRAIN =             /obj/item/organ/internal/brain/insectoid/nabber,

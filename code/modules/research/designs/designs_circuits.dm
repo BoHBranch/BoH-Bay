@@ -81,6 +81,20 @@
 	build_path = /obj/item/weapon/stock_parts/circuitboard/cryo_cell
 	sort_string = "FACAF"
 
+/datum/design/circuit/centrifuge
+	name = "isolation centrifuge console"
+	id = "iso_centrifuge"
+	req_tech = list(TECH_DATA = 2, TECH_BIO = 3)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/centrifuge
+	sort_string = "FACAG"
+
+/datum/design/circuit/splicer
+	name = "disease splicer"
+	id = "isplicer"
+	req_tech = list(TECH_DATA = 5, TECH_BIO = 5)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/splicer
+	sort_string = "FACAH"
+
 /datum/design/circuit/clonecomputer
 	name = "cloning control computer"
 	id = "clooner"
@@ -583,6 +597,13 @@
 	build_path = /obj/item/weapon/stock_parts/circuitboard/shuttle_console/explore
 	sort_string = "JFAAH"
 
+/datum/design/circuit/weapons
+	name = "ship target control console"
+	id = "shipweapons"
+	req_tech = list(TECH_DATA = 4)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/missiles
+	sort_string = "JFAAI"
+
 /datum/design/circuit/biogenerator
 	name = "biogenerator"
 	id = "biogenerator"
@@ -677,6 +698,13 @@
 	id = "tcom-hub"
 	build_path = /obj/item/weapon/stock_parts/circuitboard/telecomms/hub
 	sort_string = "PAAAD"
+	
+/datum/design/circuit/tcom/relay
+	name = "relay mainframe"
+	id = "tcom-relay"
+	req_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 4, TECH_BLUESPACE = 3)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/telecomms/relay
+	sort_string = "PAAAE"
 
 /datum/design/circuit/tcom/broadcaster
 	name = "subspace broadcaster"
@@ -851,3 +879,26 @@
 	req_tech = list(TECH_POWER = 1, TECH_ENGINEERING = 1)
 	build_path = /obj/item/weapon/stock_parts/circuitboard/modular_computer
 	sort_string = "XAAAE"
+
+/datum/design/circuit/holopad
+	name = "holopad"
+	id = "holopad"
+	req_tech = list(TECH_DATA = 2, TECH_MAGNET = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/holopad
+	sort_string = "XAAAF"
+
+/datum/design/circuit/holopad_longrange
+	name = "long range holopad"
+	id = "holopad_longrange"
+	req_tech = list(TECH_DATA = 2, TECH_MAGNET = 2, TECH_BLUESPACE = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/holopad/longrange
+	sort_string = "XAAAG"
+
+/datum/design/circuit/holopad_longrange_remoteship
+	name = "encrypted long range holopad"
+	id = "holopad_longrange_remote"
+	req_tech = list(TECH_DATA = 2, TECH_MAGNET = 2, TECH_BLUESPACE = 2, TECH_ESOTERIC = 2)
+	build_path = /obj/item/weapon/stock_parts/circuitboard/holopad/longrange/remoteship
+	sort_string = "XAAAH"
+
+

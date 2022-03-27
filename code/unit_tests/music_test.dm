@@ -13,18 +13,6 @@
 		if(!music_track.title)
 			log_bad("[music_track_type] - Missing title")
 			bad_tracks |= music_track
-		if(istype(music_track.license, /decl/license))
-			if(music_track.license.attribution_mandatory)
-				if(!music_track.artist || cmptext(music_track.artist, "unknown"))
-					log_bad("[music_track_type] - Invalid artist")
-					bad_tracks |= music_track
-				if(!music_track.url || cmptext(music_track.url, "unknown"))
-					log_bad("[music_track_type] - Invalid url")
-					bad_tracks |= music_track
-		else
-			log_bad("[music_track_type] - Invalid license")
-			bad_tracks |= music_track
-
 	if(bad_tracks.len)
 		fail("Found [bad_tracks.len] incorrectly setup music track\s.")
 	else

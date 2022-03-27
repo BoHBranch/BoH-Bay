@@ -36,7 +36,7 @@
 	name = "trauma first-aid kit"
 	desc = "It's an emergency medical kit for when people brought ballistic weapons to a laser fight."
 	icon_state = "radfirstaid"
-	item_state = "firstaid-ointment"
+	item_state = "radfirstaid"
 
 	startswith = list(
 		/obj/item/weapon/storage/med_pouch/trauma = 4
@@ -101,7 +101,7 @@
 	name = "combat medical kit"
 	desc = "Contains advanced medical treatments."
 	icon_state = "bezerk"
-	item_state = "firstaid-advanced"
+	item_state = "bezerk"
 
 	startswith = list(
 		/obj/item/weapon/storage/pill_bottle/bicaridine,
@@ -117,7 +117,7 @@
 	name = "stabilisation first aid"
 	desc = "Stocked with medical pouches."
 	icon_state = "stabfirstaid"
-	item_state = "firstaid-advanced"
+	item_state = "stabfirstaid"
 
 	startswith = list(
 		/obj/item/weapon/storage/med_pouch/trauma,
@@ -195,12 +195,29 @@
 	if(zone == BP_MOUTH && target.can_eat())
 		user.visible_message("<span class='notice'>[user] pops a pill from \the [src].</span>")
 		playsound(get_turf(src), 'sound/effects/peelz.ogg', 50)
-		var/list/peelz = filter_list(contents,/obj/item/weapon/reagent_containers/pill/)
+		var/list/peelz = filter_list(contents,/obj/item/weapon/reagent_containers/pill)
 		if(peelz.len)
 			var/obj/item/weapon/reagent_containers/pill/P = pick(peelz)
 			remove_from_storage(P)
 			P.attack(target,user)
 			return 1
+
+
+/obj/item/weapon/storage/pill_bottle/afterattack(obj/target, mob/living/user, proximity)
+	if(!proximity)
+		return
+	if(target.is_open_container() && target.reagents)
+		if(!target.reagents.total_volume)
+			to_chat(user, SPAN_NOTICE("[target] is empty. Can't dissolve a pill."))
+			return
+
+		var/list/peelz = filter_list(contents,/obj/item/weapon/reagent_containers/pill)
+		if(peelz.len)
+			var/obj/item/weapon/reagent_containers/pill/P = pick(peelz)
+			remove_from_storage(P)
+			P.afterattack(target, user, proximity)
+	return
+
 
 /obj/item/weapon/storage/pill_bottle/attack_self(mob/living/user)
 	if(user.get_inactive_hand())

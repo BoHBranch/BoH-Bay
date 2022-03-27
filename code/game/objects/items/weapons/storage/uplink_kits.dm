@@ -234,8 +234,10 @@
 	make_exact_fit()
 
 /obj/item/weapon/storage/secure/briefcase/money
-
 	startswith = list(/obj/item/weapon/spacecash/bundle/c1000 = 10)
+
+/obj/item/weapon/storage/secure/briefcase/fakemoney
+	startswith = list(/obj/item/weapon/spacecash_fake = 10)
 
 /obj/item/weapon/storage/backpack/satchel/syndie_kit/armor
 	startswith = list(

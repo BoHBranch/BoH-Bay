@@ -30,6 +30,7 @@
 	one_hand_penalty = 1
 	self_recharge = 1
 	base_parry_chance = 20
+	parrysound = 'sound/weapons/parry/parry_wood.ogg'
 
 	projectile_type = /obj/item/projectile/beam/stun
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)
@@ -38,7 +39,7 @@
 	firemodes = list(
 		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, modifystate="skrell_pistol_stun"),
 		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, modifystate="skrell_pistol_shock"),
-		list(mode_name="kill", projectile_type=/obj/item/projectile/beam/smalllaser, modifystate="skrell_pistol_kill"),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam/pulse/skrell, modifystate="skrell_pistol_kill"),
 		)
 
 /obj/item/weapon/gun/energy/gun/small

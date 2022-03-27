@@ -5,8 +5,6 @@
 	name = "map object"
 	scannable = TRUE
 
-	var/list/map_z = list()
-
 	var/list/initial_generic_waypoints //store landmark_tag of landmarks that should be added to the actual lists below on init.
 	var/list/initial_restricted_waypoints //For use with non-automatic landmarks (automatic ones add themselves).
 
@@ -14,14 +12,11 @@
 	var/list/restricted_waypoints = list() //waypoints for specific shuttles
 	var/docking_codes
 
-	var/start_x			//Coordinates for self placing
-	var/start_y			//will use random values if unset
-
-	var/sector_flags = OVERMAP_SECTOR_KNOWN|OVERMAP_SECTOR_IN_SPACE
-
 	var/hide_from_reports = FALSE
 
 	var/has_distress_beacon
+	var/free_landing = FALSE
+	var/fore_dir = NORTH                //what dir is considered north for the actual map
 
 /obj/effect/overmap/visitable/Initialize()
 	. = ..()

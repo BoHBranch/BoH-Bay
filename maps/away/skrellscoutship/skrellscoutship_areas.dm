@@ -15,7 +15,7 @@
 	icon_state = "green"
 
 /area/ship/skrellscoutship/crew/fit
-	name = "\improper Exercise Area"
+	name = "\improper Chemistry"
 	icon_state = "green"
 
 /area/ship/skrellscoutship/crew/toilets
@@ -62,12 +62,5 @@
 
 // Observatory Areas
 
-/area/observatory
-	name = "\improper Skrellian Observatory"
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-	base_turf = /turf/space
-	req_access = list(access_skrellscoutship)
-
-/area/observatory/dock
-	name = "\improper Docking Port"
-	icon_state = "entry_1"
+/area/ship/skrellskoutship/observatory
+	name = "\improper Observatory"

@@ -19,8 +19,8 @@
 	var/initial_cell_type = /obj/item/weapon/cell/hyper
 	var/initial_capacitor_type = /obj/item/weapon/stock_parts/capacitor/adv // 6-8 shots
 	gun_unreliable = 0
-	var/slowdown_held = 3
-	var/slowdown_worn = 2
+	slowdown_held = 3
+	slowdown_worn = 2
 
 /obj/item/weapon/gun/magnetic/railgun/Initialize()
 
@@ -30,11 +30,6 @@
 	cell = new initial_cell_type(src)
 	if (ispath(loaded))
 		loaded = new loaded (src, load_sheet_max)
-	slowdown_per_slot[slot_l_hand] =  slowdown_held
-	slowdown_per_slot[slot_r_hand] =  slowdown_held
-	slowdown_per_slot[slot_back] =    slowdown_worn
-	slowdown_per_slot[slot_belt] =    slowdown_worn
-	slowdown_per_slot[slot_s_store] = slowdown_worn
 
 	. = ..()
 
@@ -181,6 +176,9 @@
 	fire_delay = 10
 	slowdown_held = 1
 	slowdown_worn = 1
+	screen_shake = 0 //screenshake breaks the scope.
+	scoped_accuracy = 4
+	scope_zoom = 1
 	removable_components = FALSE
 	initial_cell_type = /obj/item/weapon/cell/hyper
 	initial_capacitor_type = /obj/item/weapon/stock_parts/capacitor/adv

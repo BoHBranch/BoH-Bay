@@ -17,31 +17,6 @@
 	wielded_item_state = "ionrifle-wielded"
 	combustion = 0
 
-//SSV Ions
-/obj/item/weapon/gun/energy/ionrifle/skrell
-	name = "WK-53 Ionic Repeater"
-	desc = "The Wuu'tap Kal'xuum 53 or WK-53 is a man portable anti-armor weapon designed to disable mechanical threats, popular among SDTF squadrons."
-	icon = 'icons/boh/obj/guns/ion.dmi'
-	icon_state = "ionskrifle"
-	item_state = "ionskrifle"
-	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
-	w_class = ITEM_SIZE_HUGE
-	force = 10
-	obj_flags =  OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BACK
-	one_hand_penalty = 4
-	charge_cost = 50
-	max_shots = 4
-	fire_delay = 30
-	projectile_type = /obj/item/projectile/ion/skrell
-	wielded_item_state = "ionskrifle_wielded"
-	combustion = 0
-	item_icons = list(
-		slot_l_hand_str = 'icons/boh/mob/items/lefthand_guns.dmi',
-		slot_r_hand_str = 'icons/boh/mob/items/righthand_guns.dmi',
-		slot_back_str = 'icons/boh/mob/items/onmob_back.dmi',
-	)
-
 /obj/item/weapon/gun/energy/ionrifle/emp_act(severity)
 	..(max(severity, 2)) //so it doesn't EMP itself, I guess
 
@@ -226,3 +201,25 @@
 	projectile_type = /obj/item/projectile/beam/incendiary_laser
 	max_shots = 5
 	self_recharge = 1
+
+/obj/item/weapon/gun/energy/plasmarifle
+	name = "Nanotrasen ITER"
+	desc = "A rare nanotrasen branded plasma rifle marketed as a weapon to change the war forever. However due to it's volatility and high maintenence costs it is uncommon outside of Sol-controlled space.\
+	Unlike it's older laser cousin it's projectiles deliver a meatier punch at higher firerate with the cost of it's precision and utlity. It is powered by miniature fusion reactor making it slowly recharge it's plasma reserves."
+	icon = 'icons/obj/guns/plasma_rifle.dmi'
+	icon_state = "plasma_rifle"
+	item_state = "plasma_rifle"
+	wielded_item_state = "plasma_rifle-wielded"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_POWER = 3)
+	w_class = ITEM_SIZE_HUGE
+	slot_flags = SLOT_BACK
+	fire_delay = 20
+	max_shots = 16
+	self_recharge = 1
+	recharge_time = 8
+	accuracy = 3
+	projectile_type = /obj/item/projectile/energy/plasmarifle
+	firemodes = list(
+		list(mode_name="single-fire", burst=1, move_delay=1),
+		list(mode_name="burst", burst=2, move_delay=2)
+		)

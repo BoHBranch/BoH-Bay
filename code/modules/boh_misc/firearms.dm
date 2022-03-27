@@ -6,7 +6,11 @@
 	name = "Mk59"
 	desc = "The Jhen Bothus, best known as the standard-issue sidearm for the Solar Marine Corps. It's known for severe issues with reliability when not maintained well or used by inexperienced shooters."
 	magazine_type = /obj/item/ammo_magazine/pistol/double/pepperball
-	jam_chance = 5 //Cheap firearm. Chance of jamming.
+	fire_sound = 'sound/weapons/gunshot/pistol_mk59.ogg'
+	jam_chance = 5 //Cheap firearm. Chance of jamming
+	fire_delay = 2 // Fires faster than usual
+	damage_mult = 0.9 // Damages a bit less than peers.
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2, TECH_ESOTERIC = -1) //bandaid fix to prevent r&d from getting free esoterics
 
 /obj/item/weapon/gun/projectile/pistol/military/alt/solar/cabinet
 	starts_loaded = 0
@@ -49,10 +53,13 @@
 	safety_icon = "medium_safety"
 	caliber = CALIBER_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol
+	fire_sound = 'sound/weapons/gunshot/revolver_small.ogg'
 	desc = "The Lumoco Arms' Mk12 is a rugged revolver for people who don't keep their guns well-maintained. Unlike its cousin, the Mk59 'Jhen Bothus', it has no issues with reliability."
-	accuracy = 1
+	accuracy = 2
 	bulk = 0
-	fire_delay = 9
+	fire_delay = 5.5
+	penetration_mod = 10
+	falloff_mod = -0.5
 
 /obj/item/weapon/gun/projectile/revolver/medium/sec/pepper
 	ammo_type = /obj/item/ammo_casing/pistol/rubber/pepperball
@@ -116,28 +123,28 @@
 /////////
 // Recoilless Rifle
 /////////
-/obj/item/weapon/gun/launcher/rocket/recoilless
+/obj/item/weapon/gun/projectile/rocket/recoilless
 	name = "recoilless rifle"
 	desc = "A TVP-2 anti-armor recoilless rifle. Truly an anachronism of another time. \
 	This specific model was designed to fire incendiary charges. Said charges have a minor explosive charge, with an incredibly powerful, though small, incendiary powder of sorts. \
 	Hopefully it's still working after all this time, because, by god, this looks like an old relic. \
 	What doesn't look like a relic, however, is the rather large optic mounted atop the rifle."
-	icon = 'icons/boh/items/launchers.dmi'
+	icon = 'icons/boh/obj/guns/launchers64.dmi'
 	icon_state = "recoilless"
 	item_state = "recoilless"
-	wielded_item_state = "gun_wielded"
+	wielded_item_state = "recoilless_wielded"
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5)
+	ammo_type = /obj/item/ammo_casing/rocket/rcr
 
-/obj/item/weapon/gun/launcher/rocket/recoilless/attackby(obj/item/I as obj, mob/user as mob)
-	if(istype(I, /obj/item/ammo_casing/rocket/rcr))
-		if(rockets.len < max_rockets)
-			if(!user.unEquip(I, src))
-				return
-			rockets += I
-			to_chat(user, "<span class='notice'>you carefully slide the shell into the [src].</span>")
-			to_chat(user, "<span class='notice'>[rockets.len] / [max_rockets] shells.</span>")
-		else
-			to_chat(usr, "<span class='warning'>\The [src] cannot hold more than one shell, for obvious reasons.</span>")
+/obj/item/weapon/gun/projectile/rocket/recoilless/on_update_icon()
+	..()
+	if(length(loaded))
+		icon_state = initial(icon_state)
+	else
+		icon_state = "[initial(icon_state)]-empty"
+		item_state = "[initial(icon_state)]-empty"
+
+
 
 /////////
 // 'Broken' Carbine
@@ -194,15 +201,6 @@
 	return ..()
 
 /////////
-// Extended Taser Carbine
-/////////
-/obj/item/weapon/gun/energy/taser/carbine/ext
-	name = "modified electrolaser carbine"
-	desc = "The NT Mk44 NL is a high capacity gun used for non-lethal takedowns. It can switch between high and low intensity stun shots. \
-	This one has a larger capacity."
-	max_shots = 24
-
-/////////
 // EPP
 /////////
 /obj/item/weapon/gun/energy/pulse_rifle/pistol/epp
@@ -245,7 +243,6 @@
 	icon_state = "secguncomp"
 	safety_icon = "safety"
 	magazine_type = /obj/item/ammo_magazine/pistol/rubber
-	accuracy = -1
 	fire_delay = 6
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	has_firing_pin = TRUE
@@ -257,6 +254,7 @@
 /////////
 // Exp Carbine
 /////////
+
 /obj/item/weapon/gun/energy/laser/exploration
 	name = "G40EP carbine"
 	desc = "A Hephaestus Industries G40EP carbine, designed to kill with concentrated energy blasts.\
@@ -268,3 +266,82 @@
 	max_shots = 20
 	req_access = list(access_hop)
 	authorized_modes = list(UNAUTHORIZED)
+
+/////////
+// Disposable RPG
+/////////
+
+/obj/item/weapon/gun/projectile/rocket/oneuse // One time use RPGs.
+	slot_flags = SLOT_BACK|SLOT_BELT
+	icon = 'icons/boh/obj/guns/launchers64.dmi' // RPG file for big boy RPGs.
+	icon_state = "disposable"
+	 // As a note, you can technically reload these, but you need an admin to spawn you the ammo, which is better than having them spawn you the rocket THEN delete the old one.
+	ammo_type = /obj/item/ammo_casing/oneuse_rocket
+	ununloadable = TRUE
+	var/folded = 1
+
+//Unfolds/folds the RPG.
+/obj/item/weapon/gun/projectile/rocket/oneuse/attack_self(mob/user)
+	if(folded)
+		playsound(src.loc,'sound/weapons/guns/interaction/rpgoneuse_deploying.ogg',80, 0)
+		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
+		if(do_after(usr, 30, src))
+			usr.visible_message("<span class='notice'>\The [usr] extends [src].</span>", "<span class='notice'>You deploy the [src]</span>")
+			folded = FALSE
+			icon_state = "[icon_state]_deployed"
+			item_state = "[item_state]_deployed"
+			slot_flags = null
+	else
+		playsound(src.loc,'sound/weapons/guns/interaction/rpgoneuse_deploying.ogg',80, 0)
+		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
+		if(do_after(usr, 30, src))
+			usr.visible_message("<span class='notice'>\The [usr] folds the [src].</span>", "<span class='notice'>You fold the [src]</span>")
+			folded = TRUE
+			icon_state = initial(icon_state)
+			item_state = initial(item_state)
+			slot_flags = SLOT_BACK|SLOT_BELT
+
+// Tells the player to deploy it, dummy.
+/obj/item/weapon/gun/projectile/rocket/oneuse/special_check(mob/user)
+	if(folded)
+		to_chat(user, "You can't fire this in this state! Deploy it!")
+		return 0
+	return ..()
+
+/obj/item/weapon/gun/projectile/rocket/oneuse/marine // Marine Disposable..
+	name = "L-19 disposable rocket launcher"
+	desc = "A disposable use rocket launcher, better known as an RPG well known around SolGov space, used by many people and many folk to blow things sky high. It cannot be unloaded or reloaded without specialized tools and is meant to be disposed once used. This is one is a licensed version, known as the Lance 19 for the SMC."
+	icon_state = "disposable_marine"
+	item_state = "disposable_marine"
+
+/////////
+// SMG Primary
+/////////
+
+/obj/item/weapon/gun/projectile/automatic/sec_smg/less_lethal
+	name = "MA-Pariah"
+	desc = "A modernised design based off of the older MA-Sword, featuring a pressure-based safety. \
+	This safety assures the weapon can only handle specialised low pressure cartridges being chambered, alongside a special magazine feed. \
+	The new magazine feed permits the weapon to chamber cartridges at an incredibly fast rate."
+	icon = 'icons/boh/items/smg.dmi'
+	icon_state = "smg"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	magazine_type = /obj/item/ammo_magazine/smg_top/frangible
+	allowed_magazines = /obj/item/ammo_magazine/smg_top/frangible
+	caliber = CALIBER_PISTOL_FRANGIBLE
+
+	firemodes = list(
+		list(mode_name="semi auto",  automatic = FALSE, burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=3, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts",  automatic = FALSE, burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=4, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="automatic",  automatic = TRUE, burst=1, fire_delay = 2, move_delay=4,    one_hand_penalty=5, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		)
+
+/////////
+// Energy "Primary"
+/////////
+
+/obj/item/weapon/gun/energy/gun/small/secure/sec
+	name = "Beagle Mk-4"
+	desc = "Inspired by the SCG's desire to save money, This modified Lawson arms Design gives forces the benefits of weak lasers and command overreach, without expensive ideas such as automatic recharge."
+	max_shots = 5
+	self_recharge = 0

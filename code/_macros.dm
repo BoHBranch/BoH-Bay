@@ -100,18 +100,25 @@
 #define sequential_id(key) uniqueness_repository.Generate(/datum/uniqueness_generator/id_sequential, key)
 
 #define random_id(key,min_id,max_id) uniqueness_repository.Generate(/datum/uniqueness_generator/id_random, key, min_id, max_id)
-
-#define to_chat(target, message)                            target << (message)
-#define to_world(message)                                   world << (message)
+#define regex_replace_char(RE, ARGS...) RE.Replace_char(ARGS)
+#define regex_replace(RE, ARGS...) RE.Replace(ARGS)
+#define regex_find_char(RE, ARGS...) RE.Find_char(ARGS)
+#define regex_find(RE, ARGS...) RE.Find(ARGS)
+#define legacy_chat(target, message)          to_target(target, message)
+#define to_world(message)                     to_chat(world, message)
 #define to_world_log(message)                               world.log << (message)
 #define sound_to(target, sound)                             target << (sound)
 #define to_file(file_entry, source_var)                     file_entry << (source_var)
 #define from_file(file_entry, target_var)                   file_entry >> (target_var)
+#define to_save(handle, value)                to_target(handle, value) //semantics
+#define from_save(handle, target_var)         from_target(handle, target_var)
 #define show_browser(target, browser_content, browser_name) target << browse(browser_content, browser_name)
 #define close_browser(target, browser_name)                 target << browse(null, browser_name)
 #define show_image(target, image)                           target << (image)
 #define send_rsc(target, rsc_content, rsc_name)             target << browse_rsc(rsc_content, rsc_name)
 #define open_link(target, url)             target << link(url)
+#define to_target(target, payload)            target << (payload)
+#define from_target(target, receiver)         target >> (receiver)
 
 #define MAP_IMAGE_PATH "nano/images/[GLOB.using_map.path]/"
 

@@ -204,6 +204,13 @@ ARMCHAIR(yellow)
 	time = 25
 	send_material_data = 0
 
+/datum/stack_recipe/furniture/floor_machine
+	title = "floor machine frame"
+	result_type = /obj/machinery/constructable_frame/machine_frame/floor
+	req_amount = 3
+	time = 30
+	send_material_data = 0
+
 /datum/stack_recipe/furniture/turret
 	title = "turret frame"
 	result_type = /obj/machinery/porta_turret_construct
@@ -291,7 +298,7 @@ ARMCHAIR(yellow)
 	if(.)
 		for(var/obj/structure/window/check_window in user.loc)
 			if(check_window.is_fulltile())
-				to_chat(user, "<span class='warning'>There is already a fll-tile window here!</span>")
+				to_chat(user, "<span class='warning'>There is already a full-tile window here!</span>")
 				return FALSE
 
 /datum/stack_recipe/furniture/fullwindow/spawn_result(mob/user, location, amount)

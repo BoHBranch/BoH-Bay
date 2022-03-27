@@ -534,26 +534,35 @@
 	id = "null _suit"
 	time = 120
 
+/datum/design/item/mechfab/rig/light
+	category = "Hardsuits"
+	name = "light suit control module"
+	build_path = /obj/item/weapon/rig/light
+	materials = list(MATERIAL_STEEL = 30000, MATERIAL_SILVER = 3000, MATERIAL_ALUMINIUM = 2000)
+	req_tech = list(TECH_MATERIAL = 5, TECH_COMBAT = 5, TECH_ENGINEERING = 5)
+	id = "light_suit"
+	time = 170
+
 //mech projectile weps
 
-/datum/design/item/mechfab/exosuit/smg
+/datum/design/item/exosuit/smg
 	name = "mounted submachine gun"
 	id = "mech_smg"
-	req_tech = list(TECH_COMBAT = 2, TECH_MATERIALS = 2)
+	req_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	build_path = /obj/item/mech_equipment/mounted_system/projectile
 	materials = list(DEFAULT_WALL_MATERIAL = 15000, "glass" = 5000)
 
-/datum/design/item/mechfab/exosuit/assaultrifle
+/datum/design/item/exosuit/assaultrifle
 	name = "mounted assault rifle"
 	id = "mech_assaultrifle"
-	req_tech = list(TECH_COMBAT = 4, TECH_MATERIALS = 4)
+	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 4)
 	build_path = /obj/item/mech_equipment/mounted_system/projectile/assault_rifle
 	materials = list(DEFAULT_WALL_MATERIAL = 30000, "glass" = 5000, "silver" = 1000)
 
-/datum/design/item/mechfab/exosuit/assault
+/datum/design/item/exosuit/assault
 	name = "mounted heavy assault rifle"
 	id = "mech_heavy_ar"
-	req_tech = list(TECH_COMBAT = 6, TECH_MATERIALS = 6)
+	req_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 6)
 	build_path = /obj/item/mech_equipment/mounted_system/projectile/bullpup
 	materials = list(DEFAULT_WALL_MATERIAL = 30000, "glass" = 10000, "silver" = 5000, "titanium" = 10000)
 
