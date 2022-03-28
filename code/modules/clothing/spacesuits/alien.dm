@@ -35,6 +35,10 @@
 	item_flags = 0
 	flags_inv = 0
 	species_restricted = list(SPECIES_VOX,SPECIES_VOX_ARMALIS)
+	sprite_sheets = list (
+		SPECIES_VOX = 'icons/mob/species/vox/onmob_head_vox.dmi',
+		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_head_vox_armalis.dmi',
+	)
 
 /obj/item/clothing/head/helmet/space/vox/pressure
 	name = "alien helmet"

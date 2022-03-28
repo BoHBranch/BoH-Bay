@@ -431,7 +431,7 @@
 	minimal_player_age = 2
 	minimum_character_age = list(SPECIES_HUMAN = 21, SPECIES_CUSTOM = 23)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sol_bodyguard
-	allowed_branches = list(/datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
+	allowed_branches = list(/datum/mil_branch/spacefbi, /datum/mil_branch/marine_corps)
 	allowed_ranks = list(/datum/mil_rank/sol/agent, /datum/mil_rank/marine_corps/e6,
 		/datum/mil_rank/marine_corps/e7,
 		/datum/mil_rank/marine_corps/w1,

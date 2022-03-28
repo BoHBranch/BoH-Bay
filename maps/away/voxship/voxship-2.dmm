@@ -389,13 +389,6 @@
 /obj/random/drinkbottle,
 /turf/simulated/floor/tiled/techmaint/vox,
 /area/voxship/dorms)
-"gf" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/techmaint/vox,
-/area/voxship/hydro)
 "gl" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -986,7 +979,6 @@
 "os" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/kafel_full{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -2341,7 +2333,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/hologram/holopad/longrange,
 /turf/simulated/floor/tiled/white/usedup{
 	initial_gas = list("nitrogen" = 101.23)
 	},
@@ -16006,7 +15997,7 @@ bC
 qE
 ah
 Xl
-gf
+fM
 yW
 UF
 uB

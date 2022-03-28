@@ -12,8 +12,9 @@
 	status = ORGAN_ROBOTIC
 	vital = 1
 	origin_tech = list(TECH_BIO = 4, TECH_MATERIAL = 4, TECH_MAGNET = 2, TECH_DATA = 3)
-	relative_size = 95 //The relative chance your lace is hit //TEST VALUE, DON'T YELL AT ME -PurplePineapple
-	max_damage = 30
+	relative_size = 35//Important with how it now functions.
+	max_damage = 25//As with above.
+	var/broken = 0
 
 	var/ownerckey
 	var/invasive
@@ -24,6 +25,12 @@
 	var/list/skilldecay = list(SKILL_WEAPONS = -3, SKILL_COMBAT = -3, SKILL_HAULING = -2) //Skills that will suffer from relacing (Combat relevant skills as of the implementation of this PR)
 	var/buff_type = /datum/skill_buff/lace
 	var/relacetime
+
+	var/list/skillloss = list(SKILL_BUREAUCRACY = -5, SKILL_FINANCE = -5, SKILL_EVA = -5,
+	SKILL_MECH = -1, SKILL_PILOT = -5, SKILL_HAULING = -5, SKILL_COMPUTER = -5, SKILL_BOTANY = -5,
+	SKILL_COMBAT = -5, SKILL_WEAPONS = -5, SKILL_FORENSICS = -5, SKILL_CONSTRUCTION = -5, SKILL_ELECTRICAL = -5,
+	SKILL_ATMOS = -5, SKILL_ENGINES = -5, SKILL_DEVICES = -5, SKILL_SCIENCE = -5, SKILL_MEDICAL = -5,
+	SKILL_ANATOMY = -5, SKILL_VIROLOGY = -1, SKILL_CHEMISTRY = -5)
 
 /datum/skill_buff/lace
 	limit = 1
@@ -106,16 +113,45 @@
 	owner.languages = languages.Copy()
 	to_chat(owner, "<span class='notice'>Consciousness slowly creeps over you as your new body awakens.</span>")
 
+/obj/item/organ/internal/stack/proc/smash()
+	to_chat(owner, "<span class = 'notice' font size='10'><B>What happened...?</B></span>")
+	sleep(5 SECONDS)
+	to_chat(owner, "<span class = 'notice' font size='10'><B>Am I awake...?</B></span>")
+	sleep(5 SECONDS)
+	to_chat(owner, "<span class = 'notice' font size='10'><B>Who am I...?</B></span>")
+	sleep(5 SECONDS)
+	to_chat(owner, "<span class = 'notice' font size='10'><B>Is this the void...?</B></span>")
+	sleep(1 SECONDS)
+	alert(owner, "You have lost your lace. By way of violent neuron rearrangement, you're practically a husk. \
+	You're not aware of who you are, where you are or what you were, not to mention the world appears entirely foreign. \
+	This extends to any previous skills, which have been lost. \
+	With the destruction of your lace, so too did your previous self depart.", "Loss of Reality")
+
 /obj/item/organ/internal/stack/Process()
 	..()
 	if(!owner)
 		return
 	if(damage == max_damage)
-		var/obj/gore
-		playsound(src, "shatter", 70, 1)
-		gore = new /obj/item/weapon/material/shard(get_turf(owner), MATERIAL_GLASS)
-		gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
-		new /obj/effect/decal/cleanable/blood/gibs(src.loc)
-		owner.visible_message(SPAN_WARNING("[owner]'s neck explodes in a shower of strange blue liquid and metallic fragments!"))
-		owner.death()
-		Destroy()
+		if(broken == 0)
+
+			src.broken = 1//Prevents this from being processed again, so you can't stack infinite brainloss with specific exploits.
+
+			playsound(src, "shatter", 70, 1)
+			playsound(src,'sound/effects/lace_destroyed.ogg', 70, 0)
+
+			var/obj/gore
+			gore = new /obj/item/weapon/material/shard(get_turf(owner), MATERIAL_GLASS)
+			gore.throw_at(get_edge_target_turf(src,pick(GLOB.alldirs)),rand(1,3),30)
+			new /obj/effect/decal/cleanable/blood/gibs(src.loc)
+
+			owner.visible_message(SPAN_WARNING("[owner]'s neck explodes in a shower of strange blue liquid and metallic fragments!"))
+			owner.emote("scream")
+			owner.seizure()
+			owner.hallucination(500, 500)//Very much intended like this.
+			owner.adjustBrainLoss(35)//Enough to white screen. Not enough to kill. Leaves lingering damage.
+			owner.buff_skill(skillloss, buff_type)//Removal of skills. In theory.
+
+			smash()//Display the messages.
+			Destroy()//'Kill' the organ.
+
+		else return ..()//why are you like this

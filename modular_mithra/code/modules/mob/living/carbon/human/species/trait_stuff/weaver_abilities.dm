@@ -49,7 +49,7 @@
 			weavetime = 5
 			finalized = input(src, "Are you sure you want to weave a Nest? It will cost you [silkcost] silk.","Confirmation") as anything in list("Yes","No")
 		if(!desired_result || !choice)
-			return	
+			return
 
 	if(!desired_result || !choice)
 		return
@@ -92,7 +92,7 @@
 		weavetime = 0
 
 
-/*/mob/living/carbon/human/proc/weave_item() //COMMENTED OUT due to no use. Uncomment if items added to weaver recipes.
+/mob/living/carbon/human/proc/weave_item()
 	set name = "Weave Item"
 	set category = "Abilities"
 
@@ -101,25 +101,43 @@
 
 	var/choice
 	var/datum/weaver_recipe/item/desired_result
+	var/silkcost = 0
+	var/weavetime = 0
 	var/finalized = "No"
 
 	while(finalized == "No" && src.client)
-		choice = tgui_input_list(src,"What would you like to weave?", "Weave Choice", weavable_items)
-		desired_result  = weavable_items[choice]
-		if(!desired_result || !istype(desired_result))
+		choice = input(src,"What would you like to weave?", "Weave Choice") as null|anything in list("Skinsuit","Dress","Handcuffs","Bandages")
+		if(choice == "Skinsuit")
+			desired_result = /obj/item/clothing/under/weaverskinsuit
+			silkcost = 100
+			weavetime = 10
+			finalized = input(src, "Are you sure you want to weave a skinsuit? It will cost you [silkcost] silk.","Confirmation") as anything in list("Yes","No")
+		if(choice == "Dress")
+			desired_result = /obj/item/clothing/under/skirt_c/dress/long/gown/weaver
+			silkcost = 100
+			weavetime = 10
+			finalized = input(src, "Are you sure you want to weave a dress? It will cost you [silkcost] silk.","Confirmation") as anything in list("Yes","No")
+		if(choice == "Handcuffs")
+			desired_result = /obj/item/weapon/handcuffs/cable/tape/weaver
+			silkcost = 50
+			weavetime = 5
+			finalized = input(src, "Are you sure you want to weave handcuffs? It will cost you [silkcost] silk.","Confirmation") as anything in list("Yes","No")
+		if(choice == "Bandages")
+			desired_result = /obj/item/stack/medical/bruise_pack/weaver
+			silkcost = 50
+			weavetime = 5
+			finalized = input(src, "Are you sure you want to weave bandages? It will cost you [silkcost] silk.","Confirmation") as anything in list("Yes","No")
+		if(!desired_result || !choice)
 			return
 
-		if(choice)
-			finalized = tgui_alert(src, "Are you sure you want to weave [desired_result.title]? It will cost you [desired_result.cost] silk.","Confirmation",list("Yes","No"))
-
-	if(!desired_result || !istype(desired_result))
+	if(!desired_result || !choice)
 		return
 
 	if(!(species.is_weaver))
 		to_chat(src, "<span class='warning'>You are not a weaver! How are you doing this? Tell a developer!</span>")
 		return
 
-	if(desired_result.cost > species.silk_reserve)
+	if(silkcost > species.silk_reserve)
 		to_chat(src, "<span class='warning'>You don't have enough silk to weave that!</span>")
 		return
 
@@ -131,8 +149,8 @@
 		to_chat(src, "<span class='warning'>You can't weave here!</span>")
 		return
 
-	if(do_after(src, desired_result.time))
-		if(desired_result.cost > species.silk_reserve)
+	if(do_after(src, weavetime))
+		if(silkcost > species.silk_reserve)
 			to_chat(src, "<span class='warning'>You don't have enough silk to weave that!</span>")
 			return
 
@@ -140,11 +158,11 @@
 			to_chat(src, "<span class='warning'>You can't weave here!</span>")
 			return
 
-		species.silk_reserve = max(species.silk_reserve - desired_result.cost, 0)
+		species.silk_reserve = max(species.silk_reserve - silkcost, 0)
 
 		//new desired_result.result_type(src.loc)
-		var/atom/O = new desired_result.result_type(src.loc)
-		O.color = species.silk_color*/
+		var/atom/O = new desired_result(src.loc)
+		O.color = species.silk_color
 
 /mob/living/carbon/human/proc/set_silk_color()
 	set name = "Set Silk Color"
