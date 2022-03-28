@@ -48,7 +48,6 @@
 	origin_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2)
 	slot_flags = SLOT_BELT
 	force = 8
-	w_class = ITEMSIZE_SMALL
 	throwforce = 8
 	throw_speed = 2
 	throw_range = 3//it's heavier than a screw driver/wrench, so it does more damage, but can't be thrown as far
