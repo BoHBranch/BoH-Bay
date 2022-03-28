@@ -625,6 +625,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on/ascent,
 /obj/structure/table/steel_reinforced,
 /obj/item/device/scanner/health,
+/obj/item/device/scanner/health,
 /obj/item/weapon/paper{
 	icon_state = "paper_words";
 	info = "Reminder: The Tiros cannot be mended with our usual instruments. Their physiology requires the use of the organic instruments found in the Tiro Medical Wing.";
@@ -1390,6 +1391,7 @@
 /obj/item/stack/medical/splint,
 /obj/item/stack/medical/splint,
 /obj/item/stack/medical/splint,
+/obj/item/weapon/storage/firstaid/adv,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
 "dj" = (
@@ -1400,6 +1402,7 @@
 	desc = "Sterile... gloves?";
 	name = "mantis surgical gloves"
 	},
+/obj/item/weapon/scalpel/manager,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
 "dk" = (
@@ -1618,6 +1621,7 @@
 /obj/structure/table/steel_reinforced,
 /obj/item/weapon/storage/firstaid/surgery,
 /obj/machinery/light/ascent,
+/obj/item/stack/nanopaste,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/subdeck_hospital)
 "dL" = (
