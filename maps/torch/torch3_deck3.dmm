@@ -3204,10 +3204,10 @@
 /area/maintenance/thirddeck/aftport)
 "gy" = (
 /turf/simulated/wall/prepainted,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "gz" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "gA" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -3588,14 +3588,14 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "ho" = (
 /obj/structure/bed/chair/office,
 /obj/structure/filingcabinet/wallcabinet{
 	pixel_y = 26
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "hp" = (
 /obj/structure/hygiene/sink{
 	dir = 4;
@@ -3631,8 +3631,9 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 24
 	},
+/obj/structure/bed/chair/office,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "hs" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -3675,7 +3676,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "hv" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -3998,7 +3999,7 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "ie" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -4100,7 +4101,7 @@
 "in" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/civilian{
-	name = "Vacant Cryo Office"
+	name = "Public Office"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -4114,7 +4115,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "io" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -4537,7 +4538,7 @@
 	pixel_x = -24
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "iZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -4634,7 +4635,7 @@
 "jj" = (
 /obj/structure/table/glass,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "jk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -5058,7 +5059,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "jX" = (
 /obj/structure/table/standard,
 /obj/structure/window/reinforced{
@@ -5072,7 +5073,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "jZ" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/thirddeck/aftport)
@@ -5156,10 +5157,11 @@
 "ki" = (
 /obj/structure/table/glass,
 /obj/machinery/photocopier/faxmachine{
-	department = "Vacant Cryo Office"
+	department = "Vacant Cryo Office";
+	send_access = list(list("ACCESS_TORCH_CREW"))
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "kj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -5429,7 +5431,7 @@
 	},
 /obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "kP" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -5587,7 +5589,7 @@
 	level = 2
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "lf" = (
 /obj/structure/railing/mapped,
 /obj/random/junk,
@@ -5658,7 +5660,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "lo" = (
 /obj/structure/filingcabinet,
 /obj/machinery/light{
@@ -5746,7 +5748,7 @@
 	id = "lawyer_window"
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "ly" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -6227,14 +6229,14 @@
 "mp" = (
 /obj/machinery/papershredder,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "mq" = (
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "mr" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -6324,7 +6326,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "mD" = (
 /obj/structure/table/standard,
 /obj/item/device/paicard,
@@ -6345,7 +6347,7 @@
 	id = "lawyer_backroom"
 	},
 /turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "mG" = (
 /obj/structure/railing/mapped,
 /turf/simulated/open,
@@ -6650,8 +6652,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/lawyer_office)
+/turf/simulated/floor/tiled/dark/monotile,
+/area/crew_quarters/public_office)
 "nk" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -6806,7 +6808,7 @@
 /area/maintenance/thirddeck/aftstarboard)
 "nH" = (
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "nI" = (
 /obj/structure/table/steel,
 /obj/structure/flora/pottedplant/small{
@@ -7552,7 +7554,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "pb" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -8380,7 +8382,7 @@
 "qu" = (
 /obj/machinery/photocopier,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "qv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -8412,7 +8414,7 @@
 	pixel_y = 6
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "qx" = (
 /turf/simulated/wall/r_wall/hull,
 /area/ai_monitored/storage/eva)
@@ -8685,7 +8687,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "qW" = (
 /obj/machinery/atmospherics/valve/digital{
 	dir = 4;
@@ -8780,7 +8782,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "rh" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/machinery/atm{
@@ -8820,7 +8822,7 @@
 	},
 /obj/item/weapon/book/manual/military_law,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "rk" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 5;
@@ -8873,7 +8875,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "rp" = (
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -8884,7 +8886,7 @@
 /obj/machinery/door/airlock/maintenance,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/crew_quarters/heads/office/lawyer_office)
+/area/crew_quarters/public_office)
 "rr" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -38695,7 +38697,7 @@ gy
 hr
 jW
 le
-nH
+mC
 nH
 mF
 nH
