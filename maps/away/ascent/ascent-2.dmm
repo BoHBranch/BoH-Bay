@@ -19,6 +19,18 @@
 /obj/machinery/light/ascent{
 	dir = 8
 	},
+/obj/structure/table/steel_reinforced,
+/obj/machinery/reagent_temperature/cooler{
+	color = "PURPLE";
+	name = "reactant cooler";
+	pixel_x = -8
+	},
+/obj/machinery/reagent_temperature{
+	color = "PURPLE";
+	name = "reactant boiler";
+	pixel_x = 8
+	},
+/obj/item/weapon/reagent_containers/spray/cleaner,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_port_prow)
 "ag" = (
@@ -1223,7 +1235,8 @@
 	icon_state = "2-4"
 	},
 /obj/structure/closet/secure_closet/freezer/kitchen{
-	color = "PURPLE"
+	color = "PURPLE";
+	req_access = list("ACCESS_ASCENT")
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_port_prow)
@@ -4335,14 +4348,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
-"oA" = (
-/mob/living/bot/farmbot/premade{
-	req_access = list(list("ACCESS_ASCENT"));
-	desc = "The tiro's best friend.";
-	color = "PURPLE"
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/hydroponics_port)
 "oL" = (
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/hydroponics_starboard)
@@ -4391,6 +4396,15 @@
 	initial_gas = newlist()
 	},
 /area/ship/ascent/shuttle_port)
+"qy" = (
+/mob/living/bot/farmbot/premade{
+	req_access = list(list("ACCESS_ASCENT"));
+	desc = "The tiro's best friend.";
+	color = "PURPLE";
+	name = "Old Wizard"
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/hydroponics_port)
 "qG" = (
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
@@ -4557,22 +4571,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
-"xl" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/weapon/reagent_containers/food/condiment/small/peppermill{
-	pixel_w = 5;
-	pixel_x = 3;
-	pixel_z = 11;
-	color = "#800080"
-	},
-/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker{
-	pixel_w = 11;
-	pixel_x = -3;
-	pixel_y = 0;
-	color = "#800080"
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
 "xn" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -4591,14 +4589,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
-"xy" = (
-/obj/machinery/light/ascent,
-/obj/machinery/smartfridge/foods{
-	dir = 4;
-	color = "PURPLE"
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
 "yh" = (
 /obj/structure/hygiene/sink/ascent{
 	pixel_y = -24
@@ -4712,7 +4702,7 @@
 /obj/machinery/portable_atmospherics/canister/methyl_bromide,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
-"Dp" = (
+"DT" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 1
 	},
@@ -4762,20 +4752,6 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_starboard_prow)
-"EQ" = (
-/obj/structure/table/steel_reinforced,
-/obj/machinery/reagent_temperature/cooler{
-	color = "PURPLE";
-	name = "reactant cooler";
-	pixel_x = -8
-	},
-/obj/machinery/reagent_temperature{
-	color = "PURPLE";
-	name = "reactant boiler";
-	pixel_x = 8
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
 "ER" = (
 /obj/structure/table/rack/dark,
 /obj/item/weapon/pickaxe/diamonddrill/ascent,
@@ -4834,6 +4810,24 @@
 /obj/item/clustertool,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/aft_starboard_jut)
+"HX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/vending/dinnerware{
+	color = "PURPLE"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_port_prow)
 "HZ" = (
 /obj/structure/window/phoronreinforced{
 	dir = 8
@@ -4857,18 +4851,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/shuttle_starboard)
-"IW" = (
-/obj/machinery/reagentgrinder/juicer{
-	pixel_z = 8;
-	color = "PURPLE"
-	},
-/obj/structure/table/steel_reinforced,
-/obj/item/weapon/reagent_containers/glass/beaker{
-	pixel_x = 5;
-	pixel_z = 5
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
 "IZ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on/ascent{
 	dir = 4
@@ -4915,21 +4897,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
-"Lr" = (
-/obj/structure/table/steel_reinforced,
-/obj/machinery/microwave{
-	pixel_x = 0;
-	pixel_y = 6;
-	color = "PURPLE"
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
-"LG" = (
-/obj/machinery/appliance/cooker/fryer{
-	color = "PURPLE"
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
 "LN" = (
 /obj/structure/hygiene/shower/ascent,
 /turf/simulated/floor/tiled/ascent,
@@ -4975,6 +4942,12 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/shuttle_starboard)
+"Nx" = (
+/obj/machinery/appliance/cooker/fryer{
+	color = "PURPLE"
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_port_prow)
 "NJ" = (
 /obj/machinery/light/ascent{
 	dir = 4
@@ -5043,11 +5016,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
-"Po" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/weapon/reagent_containers/spray/cleaner,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
 "Pv" = (
 /obj/machinery/mineral/processing_unit{
 	color = "PURPLE";
@@ -5058,6 +5026,12 @@
 /obj/structure/railing/mapped,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
+"PG" = (
+/obj/machinery/appliance/cooker/stove{
+	color = "PURPLE"
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_port_prow)
 "PK" = (
 /obj/machinery/door/airlock/ascent{
 	name = "Command Chamber"
@@ -5172,6 +5146,27 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/shuttle_starboard)
+"Sw" = (
+/obj/machinery/reagentgrinder/juicer{
+	pixel_z = 8;
+	color = "PURPLE"
+	},
+/obj/structure/table/steel_reinforced,
+/obj/item/weapon/reagent_containers/glass/beaker{
+	pixel_x = 5;
+	pixel_z = 5
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_port_prow)
+"SK" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/microwave{
+	pixel_x = 0;
+	pixel_y = 6;
+	color = "PURPLE"
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_port_prow)
 "SV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -5193,12 +5188,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/wing_starboard)
-"TH" = (
-/obj/machinery/appliance/cooker/stove{
-	color = "PURPLE"
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
 "TL" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -5250,6 +5239,22 @@
 	},
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
+/area/ship/ascent/fore_port_prow)
+"Ux" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/weapon/reagent_containers/food/condiment/small/peppermill{
+	pixel_w = 5;
+	pixel_x = 3;
+	pixel_z = 11;
+	color = "#800080"
+	},
+/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker{
+	pixel_w = 11;
+	pixel_x = -3;
+	pixel_y = 0;
+	color = "#800080"
+	},
+/turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_port_prow)
 "Uy" = (
 /obj/structure/cable/cyan{
@@ -5406,6 +5411,13 @@
 /obj/machinery/mantid_dispenser,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_port_prow)
+"Zk" = (
+/obj/machinery/smartfridge/foods{
+	dir = 4;
+	color = "PURPLE"
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_port_prow)
 "Zn" = (
 /obj/machinery/power/apc/hyper/ascent/north,
 /obj/structure/cable/cyan{
@@ -5464,24 +5476,6 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/wing_starboard)
-"ZY" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/vending/dinnerware{
-	color = "PURPLE"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_port_prow)
 
 (1,1,1) = {"
 aa
@@ -10312,10 +10306,10 @@ gr
 jT
 gI
 cy
-ZY
+HX
 hb
 af
-IW
+Sw
 cy
 cy
 aa
@@ -10557,10 +10551,10 @@ cy
 bC
 fO
 hb
-EQ
+hi
 jv
 cv
-TH
+PG
 dT
 aa
 aa
@@ -10679,10 +10673,10 @@ dl
 cM
 hb
 jE
-xl
+Ux
+jv
 cv
-cv
-LG
+Nx
 dT
 aa
 aa
@@ -10801,10 +10795,10 @@ dl
 eh
 cv
 cv
-Po
+hi
 jv
 cv
-Lr
+SK
 dT
 aa
 aa
@@ -10925,7 +10919,7 @@ cv
 cv
 cv
 cv
-xy
+hK
 cy
 cy
 mg
@@ -11047,7 +11041,7 @@ cv
 cv
 cv
 cv
-cv
+Zk
 cy
 aa
 aa
@@ -15316,7 +15310,7 @@ gX
 cV
 ga
 dh
-oA
+qy
 Qs
 Aj
 aa
@@ -15804,7 +15798,7 @@ jz
 BX
 gm
 go
-Dp
+DT
 gZ
 Aj
 aa
