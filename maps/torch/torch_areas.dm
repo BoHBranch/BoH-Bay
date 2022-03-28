@@ -148,6 +148,10 @@
 /area/crew_quarters/safe_room/thirddeck
 	name = "\improper Third Deck Safe Room"
 
+/area/crew_quarters/public_office
+	name = "public_office"
+	icon_state = "crew_quarters"
+
 /area/crew_quarters/laundry
 	name = "\improper Laundry Room"
 	icon_state = "Sleep"
