@@ -55,6 +55,24 @@
 	build_path = /obj/item/device/scanner/price
 	sort_string = "VAGAF"
 
+/datum/design/item/tool/handdrill
+	name = "hand drill"
+	desc = "A hand drill with screw and bolt driving heads."
+	id = "hand_drill"
+	req_tech = list(TECH_ENGINEERING = 4, TECH_MATERIAL = 4)
+	materials = list(MATERIAL_STEEL = 500, MATERIAL_ALUMINIUM = 500, MATERIAL_PLASTIC = 500)
+	build_path = /obj/item/weapon/screwdriver/power
+	sort_string = "VAGAG"
+
+/datum/design/item/tool/jawsoflife
+	name = "jaws of life"
+	desc = "A set of jaws of life, compressed down to a very small size. With the prying head, can pry open airlocks, remove braces from airlocks. Can cut through wires with the cutting head attached."
+	id = "jaws"
+	req_tech = list(TECH_ENGINEERING = 4, TECH_MATERIAL = 4)
+	materials = list(MATERIAL_STEEL = 2000, MATERIAL_ALUMINIUM = 2000, MATERIAL_PLASTIC = 100)
+	build_path = /obj/item/weapon/crowbar/brace_jack/jaws
+	sort_string = "VAGAH"
+
 /datum/design/item/tool/experimental_welder
 	name = "experimental welding tool"
 	desc = "This welding tool feels heavier in your possession than is normal. There appears to be no external fuel port."
@@ -62,7 +80,7 @@
 	req_tech = list(TECH_ENGINEERING = 5, TECH_PHORON = 4)
 	materials = list(MATERIAL_STEEL = 120, MATERIAL_GLASS = 50)
 	build_path = /obj/item/weapon/weldingtool/experimental
-	sort_string = "VAGAG"
+	sort_string = "VAGAI"
 
 /datum/design/item/tool/shield_diffuser
 	name = "portable shield diffuser"
@@ -71,7 +89,7 @@
 	req_tech = list(TECH_MAGNET = 5, TECH_POWER = 5, TECH_ESOTERIC = 2)
 	materials = list(MATERIAL_STEEL = 5000, MATERIAL_GLASS = 5000, MATERIAL_GOLD = 2000, MATERIAL_SILVER = 2000)
 	build_path = /obj/item/weapon/shield_diffuser
-	sort_string = "VAGAH"
+	sort_string = "VAGAJ"
 
 /datum/design/item/tool/rpd
 	name = "rapid piping device"
@@ -80,7 +98,7 @@
 	req_tech = list(TECH_ENGINEERING = 6, TECH_MATERIAL = 6)
 	materials = list(MATERIAL_STEEL = 15000, MATERIAL_GLASS = 10000, MATERIAL_SILVER = 2000)
 	build_path = /obj/item/weapon/rpd
-	sort_string = "VAGAI"
+	sort_string = "VAGAK"
 
 /datum/design/item/tool/oxycandle
 	name = "oxycandle"
@@ -90,4 +108,4 @@
 	materials = list(MATERIAL_STEEL = 3000)
 	chemicals = list(/datum/reagent/sodiumchloride = 20, /datum/reagent/acetone = 20)
 	build_path = /obj/item/device/oxycandle
-	sort_string = "VAGAJ"
+	sort_string = "VAGAL"

@@ -105,7 +105,7 @@
 	item_state = "utility"
 	overlay_flags = BELT_OVERLAY_ITEMS
 	can_hold = list(
-		///obj/item/weapon/combitool,
+		/obj/item/weapon/combitool,
 		/obj/item/weapon/crowbar,
 		/obj/item/weapon/screwdriver,
 		/obj/item/weapon/weldingtool,
@@ -149,6 +149,24 @@
 	new /obj/item/weapon/crowbar(src)
 	new /obj/item/weapon/wirecutters(src)
 	new /obj/item/device/t_scanner(src)
+	update_icon()
+
+
+/obj/item/weapon/storage/belt/utility/chief
+	name = "chief engineer's tool belt"
+	desc = "A belt of durable leather, festooned with hooks, slots, and pouches. This one has additional pouches."
+	storage_slots = 9
+
+/obj/item/weapon/storage/belt/utility/chief/New()
+	..()
+	new /obj/item/weapon/screwdriver/power(src)
+	new /obj/item/weapon/crowbar/brace_jack/jaws(src)
+	new /obj/item/weapon/weldingtool/experimental(src)
+	new /obj/item/device/multitool(src)
+	new /obj/item/weapon/extinguisher/mini(src)
+	new /obj/item/device/scanner/gas(src)
+	new /obj/item/device/t_scanner(src)
+	new /obj/item/stack/cable_coil/random(src, 30)
 	update_icon()
 
 

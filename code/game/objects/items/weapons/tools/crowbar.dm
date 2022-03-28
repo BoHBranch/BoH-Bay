@@ -70,3 +70,37 @@
 			return FALSE
 
 	return TRUE
+
+
+/obj/item/weapon/crowbar/brace_jack/jaws
+	name = "jaws of life"
+	desc = "A set of jaws of life, compressed through the magic of science. It's fitted with a prying head."
+	icon_state = "jaws_pry"
+	item_state = "jawsoflife"
+	w_class = ITEM_SIZE_NORMAL
+	matter = list(MATERIAL_STEEL = 2000, MATERIAL_ALUMINIUM = 2000, MATERIAL_PLASTIC = 1000)
+	origin_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2)
+	usesound = 'sound/items/jaws_pry.ogg'
+	attack_cooldown = 1.5 * DEFAULT_WEAPON_COOLDOWN
+	melee_accuracy_bonus = 0
+	var/obj/item/weapon/wirecutters/power/counterpart = null
+
+/obj/item/weapon/crowbar/brace_jack/jaws/Initialize(mapload, no_counterpart = TRUE)
+	. = ..()
+	if(!counterpart && no_counterpart)
+		counterpart = new(src, FALSE)
+		counterpart.counterpart = src
+
+/obj/item/weapon/crowbar/brace_jack/jaws/Destroy()
+	if(counterpart)
+		counterpart.counterpart = null // So it can qdel cleanly.
+		QDEL_NULL(counterpart)
+	return ..()
+
+/obj/item/weapon/crowbar/brace_jack/jaws/attack_self(mob/user)
+	playsound(get_turf(user), 'sound/items/change_jaws.ogg', 50, 1)
+	user.drop_item(src)
+	counterpart.forceMove(get_turf(src))
+	src.forceMove(counterpart)
+	user.put_in_active_hand(counterpart)
+	to_chat(user, "<span class='notice'>You attach the cutting jaws to [src].</span>")

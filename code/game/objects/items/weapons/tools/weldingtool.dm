@@ -381,12 +381,12 @@
 /obj/item/weapon/welder_tank/experimental
 	name = "experimental welding fuel tank"
 	icon_state = "tank_experimental"
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_SMALL
 	max_fuel = 40
 	can_refuel = 0
 	force = 8
 	throwforce = 8
-	size_in_use = ITEM_SIZE_LARGE
+	size_in_use = ITEM_SIZE_NORMAL
 	unlit_force = 9
 	lit_force = 15
 	var/last_gen = 0

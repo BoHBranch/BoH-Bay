@@ -41,3 +41,40 @@
 		return
 	else
 		..()
+
+
+/obj/item/weapon/wirecutters/power
+	name = "jaws of life"
+	desc = "A set of jaws of life, compressed through the magic of science. It's fitted with a cutting head."
+	icon_state = "jaws_cutter"
+	item_state = "jawsoflife"
+	origin_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2)
+	matter = list(MATERIAL_STEEL = 2000, MATERIAL_ALUMINIUM = 2000, MATERIAL_PLASTIC = 1000)
+	usesound = 'sound/items/jaws_cut.ogg'
+	force = 24
+	attack_verb = list("sliced", "cut", "powercut")
+	w_class = ITEM_SIZE_NORMAL
+	attack_cooldown = 1.5 * DEFAULT_WEAPON_COOLDOWN
+	melee_accuracy_bonus = 0
+	build_from_parts = FALSE
+	var/obj/item/weapon/crowbar/brace_jack/jaws/counterpart = null
+
+/obj/item/weapon/wirecutters/power/Initialize(mapload, no_counterpart = TRUE)
+	. = ..()
+	if(!counterpart && no_counterpart)
+		counterpart = new(src, FALSE)
+		counterpart.counterpart = src
+
+/obj/item/weapon/wirecutters/power/Destroy()
+	if(counterpart)
+		counterpart.counterpart = null // So it can qdel cleanly.
+		QDEL_NULL(counterpart)
+	return ..()
+
+/obj/item/weapon/wirecutters/power/attack_self(mob/user)
+	playsound(get_turf(user), 'sound/items/change_jaws.ogg', 50, 1)
+	user.drop_item(src)
+	counterpart.forceMove(get_turf(src))
+	src.forceMove(counterpart)
+	user.put_in_active_hand(counterpart)
+	to_chat(user, "<span class='notice'>You attach the pry jaws to [src].</span>")

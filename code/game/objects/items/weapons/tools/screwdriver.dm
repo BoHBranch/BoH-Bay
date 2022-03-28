@@ -37,3 +37,43 @@
 	if((MUTATION_CLUMSY in user.mutations) && prob(50))
 		M = user
 	return eyestab(M,user)
+
+
+/obj/item/weapon/screwdriver/power
+	name = "hand drill"
+	desc = "A simple powered hand drill. It's fitted with a screw bit."
+	icon_state = "drill_screw"
+	item_state = "drill"
+	matter = list(MATERIAL_STEEL = 500, MATERIAL_ALUMINIUM = 500, MATERIAL_PLASTIC = 500)
+	origin_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2)
+	slot_flags = SLOT_BELT
+	force = 8
+	w_class = ITEMSIZE_SMALL
+	throwforce = 8
+	throw_speed = 2
+	throw_range = 3//it's heavier than a screw driver/wrench, so it does more damage, but can't be thrown as far
+	attack_verb = list("drilled", "screwed", "jabbed", "whacked")
+	hitsound = 'sound/items/drill_hit.ogg'
+	usesound = 'sound/items/drill_use.ogg'
+	build_from_parts = FALSE
+	var/obj/item/weapon/wrench/power/counterpart = null
+
+/obj/item/weapon/screwdriver/power/Initialize(mapload, no_counterpart = TRUE)
+	. = ..()
+	if(!counterpart && no_counterpart)
+		counterpart = new(src, FALSE)
+		counterpart.counterpart = src
+
+/obj/item/weapon/screwdriver/power/Destroy()
+	if(counterpart)
+		counterpart.counterpart = null // So it can qdel cleanly.
+		QDEL_NULL(counterpart)
+	return ..()
+
+/obj/item/weapon/screwdriver/power/attack_self(mob/user)
+	playsound(get_turf(user),'sound/items/change_drill.ogg',50,1)
+	user.drop_item(src)
+	counterpart.forceMove(get_turf(src))
+	src.forceMove(counterpart)
+	user.put_in_active_hand(counterpart)
+	to_chat(user, "<span class='notice'>You attach the bolt driver bit to [src].</span>")
