@@ -546,7 +546,7 @@
 		var/mob/living/carbon/human/H = M
 		for(var/obj/item/organ/external/O in H.bad_external_organs)
 			for(var/datum/wound/W in O.wounds)
-				if(W.bleeding() && (damage_type == CUT || PIERCE)
+				if(W.bleeding())
 					W.bleed_timer = max(W.bleed_timer - wound_heal*5, 0)
 					W.heal_damage(wound_heal)
 
