@@ -1077,6 +1077,17 @@
 	result_amount = 10
 	required = /obj/item/slime_extract/blue
 
+/datum/chemical_reaction/slime/stabilizer
+	name = "Slime tabilizer"
+	result = null
+	required_reagents = list(/datum/reagent/water = 1)
+	result_amount = 1
+	required = /obj/item/slime_extract/blue
+
+/datum/chemical_reaction/slime/stabilizer/on_reaction(var/datum/reagents/holder)
+	..()
+	new /obj/item/weapon/slimestabilizer(get_turf(holder.my_atom))
+
 //Dark Blue
 /datum/chemical_reaction/slime/freeze
 	name = "Slime Freeze"
@@ -1190,6 +1201,18 @@
 	P.amount = 10
 
 //Red
+
+/datum/chemical_reaction/slime/mutator
+	name = "Slime mutator"
+	result = null
+	required_reagents = list(/datum/reagent/water = 1)
+	result_amount = 1
+	required = /obj/item/slime_extract/red
+
+/datum/chemical_reaction/slime/mutator/on_reaction(var/datum/reagents/holder)
+	..()
+	new /obj/item/weapon/slimemutator(get_turf(holder.my_atom))
+
 /datum/chemical_reaction/slime/glycerol
 	name = "Slime Glycerol"
 	result = /datum/reagent/glycerol
@@ -1211,16 +1234,26 @@
 		slime.visible_message("<span class='warning'>The [slime] is driven into a frenzy!</span>")
 
 //Pink
-/datum/chemical_reaction/slime/ppotion
-	name = "Slime Potion"
-	result = null
+/datum/chemical_reaction/slime/agentb
+	name = "Slime Agent B"
+	result = /datum/reagent/hypeross/slime
 	required_reagents = list(/datum/reagent/toxin/phoron = 1)
-	result_amount = 1
+	result_amount = 5
 	required = /obj/item/slime_extract/pink
 
-/datum/chemical_reaction/slime/ppotion/on_reaction(var/datum/reagents/holder)
-	..()
-	new /obj/item/weapon/slimepotion(get_turf(holder.my_atom))
+/datum/chemical_reaction/slime/agenti
+	name = "Slime Agent I"
+	result = /datum/reagent/myelamine/slime
+	required_reagents = list(/datum/reagent/blood = 1)
+	result_amount = 10
+	required = /obj/item/slime_extract/pink
+
+/datum/chemical_reaction/slime/agento
+	name = "Slime Agent O"
+	result = /datum/reagent/kompoton/slime
+	required_reagents = list(/datum/reagent/water = 1)
+	result_amount = 10
+	required = /obj/item/slime_extract/pink
 
 //Black
 /datum/chemical_reaction/slime/mutate2

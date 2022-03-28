@@ -505,6 +505,61 @@
 					if(E.status & ORGAN_ARTERY_CUT)
 						E.status &= ~ORGAN_ARTERY_CUT
 
+/datum/reagent/kompoton/slime
+	name = "Agent O"
+	description = "A xenobiological compound that can be used to regenerate internal organs and lightly-bruised brain tissue. May cause pain shock."
+	overdose = REAGENTS_OVERDOSE/3
+	agony_amount = 5
+
+/datum/reagent/kompoton/slime/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		for(var/obj/item/organ/internal/I in H.internal_organs)
+			if(!BP_IS_ROBOTIC(I))
+				if(I.organ_tag == BP_BRAIN)
+					if(I.damage >= I.min_bruised_damage)
+						continue
+					H.confused++
+					H.drowsyness++
+				I.heal_damage(removed*7)
+				M.apply_effect(agony_amount, PAIN, 0)
+				if(prob(5))
+					M.custom_emote(2, "[pick("dry heaves!","twists and spasms erratically!","wails in agony!")]")
+					to_chat(M, "<span class='danger'>You feel like your insides are disintegrating!</span>")
+
+/datum/reagent/myelamine
+	name = "Myelamine"
+	id = "myelamine"
+	description = "Used to rapidly clot internal hemorrhages by increasing the effectiveness of platelets."
+	reagent_state = LIQUID
+	color = "#4246C7"
+	metabolism = REM * 0.5
+	overdose = REAGENTS_OVERDOSE * 0.5
+	var/repair_strength = 1
+
+/datum/reagent/myelamine/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+	var/wound_heal = removed * repair_strength
+	M.eye_blurry += min(M.eye_blurry + (wound_heal), 25)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		for(var/obj/item/organ/external/O in H.bad_external_organs)
+			for(var/datum/wound/W in O.wounds)
+				if(W.bleeding() && (damage_type == CUT || PIERCE)
+					W.bleed_timer = max(W.bleed_timer - wound_heal*5, 0)
+					W.heal_damage(wound_heal)
+
+		for(var/obj/item/organ/external/E in H.organs)
+			if(E.status & ORGAN_ARTERY_CUT)
+				E.status &= ~ORGAN_ARTERY_CUT
+
+/datum/reagent/myelamine/slime
+	name = "Agent I"
+	description = "A xenobiological compound that can be used to rapidly stop bleeding and repair torn arteries."
+	overdose = REAGENTS_OVERDOSE/3
+
+
 /datum/reagent/ryetalyn
 	name = "Ryetalyn"
 	description = "Ryetalyn can cure all genetic abnomalities via a catalytic process."
@@ -1119,6 +1174,39 @@
 					var/BS = new /obj/item/weapon/material/shard/shrapnel(material_key = MATERIAL_BONE_GENERIC)
 					E.embed(BS, silent = 1)
 					to_chat(H, "<span class='warning'>You feel something break loose inside your [E.name].</span>")
+
+//slime hypeross, faster fixing, less reagents required to work, much harder to get, lower OD
+/datum/reagent/hypeross/slime
+	name = "Agent B"
+	description = "A xenobiological compound that stimulates rapid bone growth."
+	overdose = REAGENTS_OVERDOSE/10
+
+
+/datum/reagent/hypeross/slime/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+	if(ishuman(M))
+		M.add_chemical_effect(CE_SLOWDOWN, 2)
+		M.make_dizzy(10)
+		M.heal_organ_damage(1 * removed, 0)
+		M.add_chemical_effect(CE_PAINKILLER, 20)
+		var/mob/living/carbon/human/H = M
+		var/in_progress = 0
+		var/fix_delay = 100
+		for(var/obj/item/organ/external/E in H.organs)
+			if((E.status & ORGAN_BROKEN || E.is_stump()) && in_progress == 0 && !(BP_IS_ROBOTIC(E)))
+				in_progress = 1
+				to_chat(H, "<span class='notice'>You feel the jarring sensation of invisible hands forcing your [E.name] back together.</span>")
+				H.make_dizzy(10)
+				sleep(fix_delay)
+				if(E.status || E.is_stump())
+					to_chat(H, "<span class='notice'><font size = [rand(1,3)]>POP!</font></span>")
+					playsound(H.loc, "fracture", 30, 1, -2)
+					if(E.is_stump() && (E.limb_flags & ORGAN_FLAG_CAN_AMPUTATE))
+						E.droplimb(1,DROPLIMB_EDGE)
+					else
+						E.status &= ~ORGAN_BROKEN
+				in_progress = 0
 
 // Alcoholism's Drug Rework Below!
 
