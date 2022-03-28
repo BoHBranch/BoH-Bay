@@ -1745,12 +1745,6 @@
 	icon_state = "heads"
 	req_access = list(access_psiadvisor)
 
-//Lawyer Office
-/area/crew_quarters/heads/office/lawyer_office
-//	name = "\improper Lawyer Office"// Not for the moment, sorry. :(
-	name = "\improper Vacant Cryo Office"
-	icon_state = "heads"
-//	req_access = list(access_lawyer)
 /*
 /area/crew_quarters/courtroom
 	name = "\improper Courtroom"
