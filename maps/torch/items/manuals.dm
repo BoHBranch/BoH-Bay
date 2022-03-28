@@ -6,7 +6,6 @@
 	title = "Sol Central Government Law"
 
 /obj/item/weapon/book/manual/solgov_law/Initialize()
-	. = ..()
 	dat = {"
 
 		<html><head>

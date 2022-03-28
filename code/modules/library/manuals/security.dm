@@ -5,7 +5,6 @@
 	author = "The Sol Central Government"
 	title = "The Sol Code of Military Justice"
 
-	. = ..()
 	dat = {"
 
 		<html><head>
