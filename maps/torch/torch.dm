@@ -194,6 +194,7 @@
 	#include "../away/voxship/voxship.dm"
 	#include "../away/skrellscoutship/skrellscoutship.dm"
 	#include "../away/rawl/rawl.dm"
+	#include "../away/scavver/scavver_gantry.dm"
 
 	#include "../../code/datums/music_tracks/chasing_time.dm"
 

@@ -2649,6 +2649,7 @@
 #include "code\modules\organs\internal\species\unathi.dm"
 #include "code\modules\organs\internal\species\vox.dm"
 #include "code\modules\organs\internal\species\xenophage.dm"
+#include "code\modules\organs\internal\species\yeosa.dm"
 #include "code\modules\overmap\_defines.dm"
 #include "code\modules\overmap\overmap_object.dm"
 #include "code\modules\overmap\overmap_shuttle.dm"

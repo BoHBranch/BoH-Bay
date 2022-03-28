@@ -78,8 +78,9 @@
 		overlays += image(icon, "ammo_ok")
 
 /obj/item/weapon/gun/projectile/automatic/merc_smg
-	name = "MA-C20v"
-	desc = "A licenced copy of Nanotrasens C20r. The C20v is made with cheaper materials and fires the anemic 7mm cartridge."
+	name = "NanoTrasen C-20r"
+	desc = "The NanoTrasen C-20r is a lightweight and rapid firing SMG. It has a bullpup design and fires 10mm pistol cartridges. This model features an auto-eject and premium \
+	materials used in its construction. A must have for any team of ragtag mercenaries."
 	icon = 'icons/obj/guns/merc_smg.dmi'
 	icon_state = "c20r"
 	item_state = "c20r"

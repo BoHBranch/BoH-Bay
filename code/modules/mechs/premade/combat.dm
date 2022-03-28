@@ -63,7 +63,7 @@
 	icon_state = "combat_body"
 	power_use = 40
 	max_damage = 300
-	mech_health = 600
+	mech_health = 500
 
 /obj/item/mech_component/chassis/combat/prebuild()
 	. = ..()

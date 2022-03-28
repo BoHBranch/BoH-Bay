@@ -188,6 +188,7 @@
 		dir = get_heading()
 	else
 		contact_icon_state = initial(icon_state)
+	..()
 
 /obj/effect/overmap/visitable/ship/proc/burn()
 	for(var/datum/ship_engine/E in engines)

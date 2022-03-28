@@ -429,6 +429,7 @@
 /obj/item/clothing/gloves/rig/mantid
 	desc = "They look like a cross between a can opener and a Swiss army knife the size of a shoebox."
 	siemens_coefficient = 0
+	germ_level = 0
 	species_restricted = list(SPECIES_MANTID_GYNE, SPECIES_MANTID_ALATE, SPECIES_NABBER, SPECIES_MONARCH_QUEEN)
 	sprite_sheets = list(
 		SPECIES_MANTID_GYNE =            'icons/mob/species/mantid/onmob_gloves_gyne.dmi',

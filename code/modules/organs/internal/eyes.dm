@@ -37,11 +37,18 @@
 	var/icon/I = get_onhead_icon()
 	if(I)
 		var/cache_key = "[last_eye_cache_key]-glow"
-		if(!human_icon_cache[cache_key])
-			var/image/eye_glow = image(I)
+		var/blockages = 0
+		var/image/eye_glow = image(I)
+		for(var/obj/item/protection in list(owner.head, owner.wear_mask, owner.glasses))
+			if(protection && (protection.body_parts_covered & EYES))
+				blockages = 1
+		if(blockages == 0)
 			eye_glow.layer = EYE_GLOW_LAYER
 			eye_glow.plane = EFFECTS_ABOVE_LIGHTING_PLANE
-			human_icon_cache[cache_key] = eye_glow
+			eye_glow.alpha = 255
+		else
+			eye_glow.alpha = 0
+		human_icon_cache[cache_key] = eye_glow
 		return human_icon_cache[cache_key]
 
 /obj/item/organ/internal/eyes/proc/change_eye_color()

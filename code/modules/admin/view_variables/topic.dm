@@ -97,6 +97,31 @@
 		src.holder.show_player_panel(M)
 		href_list["datumrefresh"] = href_list["mob_player_panel"]
 
+	else if(href_list["transformicon"])
+		if(!check_rights(R_FUN|R_BUILDMODE))	return
+
+		var/result = input(usr, "Choose the transformation to apply", "Transform Mob") as null|anything in list("Scale", "Translate", "Rotate")
+		var/atom/a = locate(href_list["transformicon"])
+		var/matrix/M = a.transform
+
+		switch(result)
+			if("Scale")
+				var/x = input(usr, "Choose x mod","Transform Mod") as null|num
+				var/y = input(usr, "Choose y mod","Transform Mod") as null|num
+				if(!isnull(x) && !isnull(y))
+					a.transform = M.Scale(x,y)
+			if("Translate")
+				var/x = input(usr, "Choose x mod","Transform Mod") as null|num
+				var/y = input(usr, "Choose y mod","Transform Mod") as null|num
+				if(!isnull(x) && !isnull(y))
+					a.transform = M.Translate(x,y)
+			if("Rotate")
+				var/angle = input(usr, "Choose angle to rotate","Transform Mod") as null|num
+				if(!isnull(angle))
+					a.transform = M.Turn(angle)
+
+		href_list["datumrefresh"] = href_list["transformicon"]
+
 	else if(href_list["offerghosts"])
 		if(!check_rights(R_ADMIN|R_FUN))	return
 

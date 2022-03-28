@@ -39,7 +39,7 @@
 	pda_type = /obj/item/modular_computer/pda/heads
 
 /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/polopants/command
 
 /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/marine
 	name = OUTFIT_JOB_NAME("Bridge Officer - Marine Corps")
