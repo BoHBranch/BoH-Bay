@@ -1170,6 +1170,13 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/hydroponics_port)
+"cE" = (
+/obj/machinery/smartfridge/foods{
+	dir = 4;
+	color = "PURPLE"
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_port_prow)
 "cF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -4000,6 +4007,9 @@
 	pixel_y = 24
 	},
 /obj/structure/table/steel_reinforced,
+/obj/structure/closet/crate/hydroponics/prespawned{
+	color = "PURPLE"
+	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/hydroponics_port)
 "jj" = (
@@ -4396,15 +4406,6 @@
 	initial_gas = newlist()
 	},
 /area/ship/ascent/shuttle_port)
-"qy" = (
-/mob/living/bot/farmbot/premade{
-	req_access = list(list("ACCESS_ASCENT"));
-	desc = "The tiro's best friend.";
-	color = "PURPLE";
-	name = "Old Wizard"
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/hydroponics_port)
 "qG" = (
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
@@ -4518,6 +4519,15 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
+"wq" = (
+/mob/living/bot/farmbot/premade{
+	req_access = list(list("ACCESS_ASCENT"));
+	desc = "The tiro's best friend.";
+	color = "PURPLE";
+	name = "Old Wizard"
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/hydroponics_port)
 "wu" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/machinery/atmospherics/portables_connector,
@@ -4596,6 +4606,12 @@
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
+"yj" = (
+/obj/machinery/appliance/cooker/fryer{
+	color = "PURPLE"
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_port_prow)
 "yx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -4642,12 +4658,48 @@
 /obj/structure/window/phoronreinforced,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_jut)
+"zR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/effect/catwalk_plated/ascent,
+/obj/machinery/vending/dinnerware{
+	color = "PURPLE"
+	},
+/turf/simulated/floor/ascent,
+/area/ship/ascent/fore_port_prow)
 "zV" = (
 /obj/machinery/light/ascent{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/aft_starboard_jut)
+"zX" = (
+/obj/machinery/appliance/cooker/stove{
+	color = "PURPLE"
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_port_prow)
+"Ab" = (
+/obj/machinery/reagentgrinder/juicer{
+	pixel_z = 8;
+	color = "PURPLE"
+	},
+/obj/structure/table/steel_reinforced,
+/obj/item/weapon/reagent_containers/glass/beaker{
+	pixel_x = 5;
+	pixel_z = 5
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_port_prow)
 "Aj" = (
 /turf/simulated/wall/r_wall/ascent,
 /area/ship/ascent/hydroponics_port)
@@ -4702,18 +4754,6 @@
 /obj/machinery/portable_atmospherics/canister/methyl_bromide,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/aft_starboard_jut)
-"DT" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 1
-	},
-/obj/effect/catwalk_plated/ascent,
-/mob/living/bot/farmbot/premade{
-	req_access = list(list("ACCESS_ASCENT"));
-	desc = "The tiro's best friend.";
-	color = "#800080"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/hydroponics_port)
 "Ek" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/methyl_bromide,
@@ -4810,24 +4850,6 @@
 /obj/item/clustertool,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/aft_starboard_jut)
-"HX" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
-/obj/structure/cable/cyan{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
-/obj/effect/catwalk_plated/ascent,
-/obj/machinery/vending/dinnerware{
-	color = "PURPLE"
-	},
-/turf/simulated/floor/ascent,
-/area/ship/ascent/fore_port_prow)
 "HZ" = (
 /obj/structure/window/phoronreinforced{
 	dir = 8
@@ -4901,6 +4923,15 @@
 /obj/structure/hygiene/shower/ascent,
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_hallway)
+"Mv" = (
+/obj/structure/table/steel_reinforced,
+/obj/machinery/microwave{
+	pixel_x = 0;
+	pixel_y = 6;
+	color = "PURPLE"
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_port_prow)
 "Mw" = (
 /obj/machinery/door/airlock/ascent{
 	name = "Holding Cells"
@@ -4942,12 +4973,6 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/shuttle_starboard)
-"Nx" = (
-/obj/machinery/appliance/cooker/fryer{
-	color = "PURPLE"
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
 "NJ" = (
 /obj/machinery/light/ascent{
 	dir = 4
@@ -5026,12 +5051,6 @@
 /obj/structure/railing/mapped,
 /turf/simulated/floor/ascent,
 /area/ship/ascent/fore_starboard_prow)
-"PG" = (
-/obj/machinery/appliance/cooker/stove{
-	color = "PURPLE"
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
 "PK" = (
 /obj/machinery/door/airlock/ascent{
 	name = "Command Chamber"
@@ -5146,27 +5165,6 @@
 	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/shuttle_starboard)
-"Sw" = (
-/obj/machinery/reagentgrinder/juicer{
-	pixel_z = 8;
-	color = "PURPLE"
-	},
-/obj/structure/table/steel_reinforced,
-/obj/item/weapon/reagent_containers/glass/beaker{
-	pixel_x = 5;
-	pixel_z = 5
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
-"SK" = (
-/obj/structure/table/steel_reinforced,
-/obj/machinery/microwave{
-	pixel_x = 0;
-	pixel_y = 6;
-	color = "PURPLE"
-	},
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
 "SV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -5188,6 +5186,22 @@
 	},
 /turf/simulated/floor/ascent,
 /area/ship/ascent/wing_starboard)
+"Tf" = (
+/obj/structure/table/steel_reinforced,
+/obj/item/weapon/reagent_containers/food/condiment/small/peppermill{
+	pixel_w = 5;
+	pixel_x = 3;
+	pixel_z = 11;
+	color = "#800080"
+	},
+/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker{
+	pixel_w = 11;
+	pixel_x = -3;
+	pixel_y = 0;
+	color = "#800080"
+	},
+/turf/simulated/floor/tiled/ascent,
+/area/ship/ascent/fore_port_prow)
 "TL" = (
 /obj/effect/catwalk_plated/ascent,
 /obj/structure/cable/cyan{
@@ -5239,22 +5253,6 @@
 	},
 /obj/effect/catwalk_plated/ascent,
 /turf/simulated/floor/ascent,
-/area/ship/ascent/fore_port_prow)
-"Ux" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/weapon/reagent_containers/food/condiment/small/peppermill{
-	pixel_w = 5;
-	pixel_x = 3;
-	pixel_z = 11;
-	color = "#800080"
-	},
-/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker{
-	pixel_w = 11;
-	pixel_x = -3;
-	pixel_y = 0;
-	color = "#800080"
-	},
-/turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_port_prow)
 "Uy" = (
 /obj/structure/cable/cyan{
@@ -5409,13 +5407,6 @@
 /area/ship/ascent/shuttle_starboard)
 "Yn" = (
 /obj/machinery/mantid_dispenser,
-/turf/simulated/floor/tiled/ascent,
-/area/ship/ascent/fore_port_prow)
-"Zk" = (
-/obj/machinery/smartfridge/foods{
-	dir = 4;
-	color = "PURPLE"
-	},
 /turf/simulated/floor/tiled/ascent,
 /area/ship/ascent/fore_port_prow)
 "Zn" = (
@@ -10306,10 +10297,10 @@ gr
 jT
 gI
 cy
-HX
+zR
 hb
 af
-Sw
+Ab
 cy
 cy
 aa
@@ -10554,7 +10545,7 @@ hb
 hi
 jv
 cv
-PG
+zX
 dT
 aa
 aa
@@ -10673,10 +10664,10 @@ dl
 cM
 hb
 jE
-Ux
+Tf
 jv
 cv
-Nx
+yj
 dT
 aa
 aa
@@ -10798,7 +10789,7 @@ cv
 hi
 jv
 cv
-SK
+Mv
 dT
 aa
 aa
@@ -11041,7 +11032,7 @@ cv
 cv
 cv
 cv
-Zk
+cE
 cy
 aa
 aa
@@ -15310,7 +15301,7 @@ gX
 cV
 ga
 dh
-qy
+wq
 Qs
 Aj
 aa
@@ -15798,7 +15789,7 @@ jz
 BX
 gm
 go
-DT
+hf
 gZ
 Aj
 aa
