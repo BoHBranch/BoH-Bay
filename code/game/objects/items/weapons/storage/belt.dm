@@ -105,7 +105,6 @@
 	item_state = "utility"
 	overlay_flags = BELT_OVERLAY_ITEMS
 	can_hold = list(
-		/obj/item/weapon/combitool,
 		/obj/item/weapon/crowbar,
 		/obj/item/weapon/screwdriver,
 		/obj/item/weapon/weldingtool,
