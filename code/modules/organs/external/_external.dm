@@ -750,7 +750,7 @@ Note that amputating the affected organ does in fact remove the infection from t
 			brute_dam += W.damage
 
 		if(bleeds && W.bleeding() && (H && H.should_have_organ(BP_HEART)))
-			W.bleed_timer--
+			W.bleed_timer = max(W.bleed_timer--, 0)
 			status |= ORGAN_BLEEDING
 
 		clamped |= W.clamped

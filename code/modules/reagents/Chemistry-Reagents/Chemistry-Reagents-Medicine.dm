@@ -535,7 +535,7 @@
 	color = "#4246C7"
 	metabolism = REM * 0.5
 	overdose = REAGENTS_OVERDOSE * 0.5
-	var/repair_strength = 1
+	var/repair_strength = 5
 
 /datum/reagent/myelamine/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien == IS_DIONA)
@@ -547,8 +547,9 @@
 		for(var/obj/item/organ/external/O in H.bad_external_organs)
 			for(var/datum/wound/W in O.wounds)
 				if(W.bleeding())
-					W.bleed_timer = max(W.bleed_timer - wound_heal*5, 0)
+					W.bleed_timer = max(W.bleed_timer - wound_heal, 0)
 					W.heal_damage(wound_heal)
+					W.clotted = TRUE
 
 		for(var/obj/item/organ/external/E in H.organs)
 			if(E.status & ORGAN_ARTERY_CUT)
