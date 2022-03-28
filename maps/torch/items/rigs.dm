@@ -44,22 +44,22 @@
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	camera = /obj/machinery/camera/network/command
-	species_restricted = list(SPECIES_HUMAN,SPECIES_IPC) //no available icons for aliens
+	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_IPC) //no available icons for aliens
 
 /obj/item/clothing/suit/space/rig/command
 	icon = 'maps/torch/icons/obj/obj_suit_solgov.dmi'
 	item_icons = list(slot_wear_suit_str = 'maps/torch/icons/mob/onmob_suit_solgov.dmi')
-	species_restricted = list(SPECIES_HUMAN,SPECIES_IPC)
+	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_IPC)
 
 /obj/item/clothing/shoes/magboots/rig/command
 	icon = 'maps/torch/icons/obj/obj_feet_solgov.dmi'
 	item_icons = list(slot_shoes_str = 'maps/torch/icons/mob/onmob_feet_solgov.dmi')
-	species_restricted = list(SPECIES_HUMAN,SPECIES_IPC)
+	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_IPC)
 
 /obj/item/clothing/gloves/rig/command
 	icon = 'maps/torch/icons/obj/obj_hands_solgov.dmi'
 	item_icons = list(slot_gloves_str = 'maps/torch/icons/mob/onmob_hands_solgov.dmi')
-	species_restricted = list(SPECIES_HUMAN,SPECIES_IPC)
+	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_IPC)
 
 
 /obj/item/weapon/rig/command/equipped
@@ -111,22 +111,22 @@
 	icon = 'icons/obj/clothing/obj_head.dmi'
 	item_icons = list(slot_head_str = 'icons/mob/onmob/onmob_head.dmi')
 	camera = /obj/machinery/camera/network/command
-	species_restricted = list(SPECIES_HUMAN,SPECIES_IPC) //no available icons for aliens
+	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_IPC) //no available icons for aliens
 
 /obj/item/clothing/suit/space/rig/command/sea
 	icon = 'icons/obj/clothing/obj_suit.dmi'
 	item_icons = list(slot_wear_suit_str = 'icons/mob/onmob/onmob_suit.dmi')
-	species_restricted = list(SPECIES_HUMAN,SPECIES_IPC)
+	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_IPC)
 
 /obj/item/clothing/shoes/magboots/rig/command/sea
 	icon = 'icons/obj/clothing/obj_feet.dmi'
 	item_icons = list(slot_shoes_str = 'icons/mob/onmob/onmob_feet.dmi')
-	species_restricted = list(SPECIES_HUMAN,SPECIES_IPC)
+	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_IPC)
 
 /obj/item/clothing/gloves/rig/command/sea
 	icon = 'icons/obj/clothing/obj_hands.dmi'
 	item_icons = list(slot_gloves_str = 'icons/mob/onmob/onmob_hands.dmi')
-	species_restricted = list(SPECIES_HUMAN,SPECIES_IPC)
+	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_IPC)
 
 
 /obj/item/weapon/rig/command/sea/equipped

@@ -95,7 +95,7 @@
 
 /obj/item/clothing/head/helmet/space/rig/military
 	light_overlay = "helmet_light_dual_green"
-	species_restricted = list(SPECIES_HUMAN)
+	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS)
 
 /obj/item/clothing/suit/space/rig/military
 	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
