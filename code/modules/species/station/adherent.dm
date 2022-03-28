@@ -115,6 +115,7 @@
 		"[slot_back_str]" =   list("[NORTH]" = list("x" = 0, "y" = 14), "[EAST]" = list("x" = 0, "y" = 14), "[SOUTH]" = list("x" = 0, "y" = 14), "[WEST]" = list("x" = 0,  "y" = 14)),
 		"[slot_belt_str]" =   list("[NORTH]" = list("x" = 0, "y" = 14), "[EAST]" = list("x" = 0, "y" = 14), "[SOUTH]" = list("x" = 0, "y" = 14), "[WEST]" = list("x" = 0,  "y" = 14)),
 		"[slot_head_str]" =   list("[NORTH]" = list("x" = 0, "y" = 14), "[EAST]" = list("x" = 3, "y" = 14), "[SOUTH]" = list("x" = 0, "y" = 14), "[WEST]" = list("x" = -3, "y" = 14)),
+		"[slot_glasses_str]" =   list("[NORTH]" = list("x" = 0, "y" = 14),"[EAST]"  = list("x" = 3, "y" = 14),"[SOUTH]" = list("x" = 0, "y" = 14),"[WEST]"  = list("x" = -3, "y" = 14)),
 		"[slot_l_ear_str]" =  list("[NORTH]" = list("x" = 0, "y" = 14), "[EAST]" = list("x" = 0, "y" = 14), "[SOUTH]" = list("x" = 0, "y" = 14), "[WEST]" = list("x" = 0,  "y" = 14)),
 		"[slot_r_ear_str]" =  list("[NORTH]" = list("x" = 0, "y" = 14), "[EAST]" = list("x" = 0, "y" = 14), "[SOUTH]" = list("x" = 0, "y" = 14), "[WEST]" = list("x" = 0,  "y" = 14))
 	)
@@ -158,8 +159,9 @@
 /datum/hud_data/adherent
 	has_internals = FALSE
 	gear = list(
-		"l_ear" = list("loc" = ui_iclothing, "name" = "Aux Port", "slot" = slot_l_ear,   "state" = "ears", "toggle" = 1),
-		"head" =  list("loc" = ui_glasses,   "name" = "Hat",      "slot" = slot_head,    "state" = "hair", "toggle" = 1),
+		"l_ear" = list("loc" = ui_shoes, "name" = "Aux Port", "slot" = slot_l_ear_str,   "state" = "ears", "toggle" = 1),
+		"head" =  list("loc" = ui_mask,   "name" = "Hat",      "slot" = slot_head_str,    "state" = "hair", "toggle" = 1),
+		"eyes" =  list("loc" = ui_oclothing,   "name" = "Visual Augment",      "slot" = slot_glasses_str,    "state" = "glasses", "toggle" = 1),
 		"back" =  list("loc" = ui_back,      "name" = "Back",     "slot" = slot_back,    "state" = "back"),
 		"id" =    list("loc" = ui_id,        "name" = "ID",       "slot" = slot_wear_id, "state" = "id"),
 		"belt" =  list("loc" = ui_belt,      "name" = "Belt",     "slot" = slot_belt,    "state" = "belt")
