@@ -1426,9 +1426,6 @@
 /turf/simulated/floor/airless,
 /area/scavver/yachtup)
 "pc" = (
-/obj/structure/table/rack,
-/obj/item/weapon/book/manual/engineering_construction,
-/obj/item/clothing/glasses/meson,
 /obj/machinery/alarm{
 	dir = 4;
 	locked = 0;
@@ -1437,8 +1434,9 @@
 	req_access = list()
 	},
 /obj/effect/floor_decal/corner/lightgrey/mono,
-/obj/item/clothing/glasses/meson,
-/obj/item/clothing/glasses/meson,
+/obj/machinery/suit_storage_unit/engineering/salvage/bearcat{
+	req_access = list()
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/scavver/hab)
 "pd" = (
@@ -2278,6 +2276,7 @@
 	dir = 4
 	},
 /obj/effect/catwalk_plated/dark,
+/obj/effect/submap_landmark/spawnpoint/scavver_engineer,
 /turf/simulated/floor/plating,
 /area/scavver/hab)
 "yz" = (
@@ -2887,8 +2886,8 @@
 /turf/simulated/wall/ocp_wall,
 /area/scavver/yachtup)
 "FA" = (
-/obj/machinery/vending/tool,
 /obj/effect/floor_decal/corner/lightgrey/mono,
+/obj/machinery/suit_cycler/crashed,
 /turf/simulated/floor/tiled/monotile,
 /area/scavver/hab)
 "FB" = (
@@ -3269,7 +3268,9 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/scavver/hab)
 "JO" = (
-/obj/structure/largecrate/animal/goose,
+/obj/machinery/vending/tool/bearcat{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/scavver/hab)
 "JS" = (
