@@ -41,7 +41,7 @@
 		</html>
 
 		"}
-*/
+
 
 /obj/item/weapon/book/manual/sol_sop
 	name = "Standard Operating Procedure"
