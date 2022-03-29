@@ -166,7 +166,6 @@
 	icon = 'icons/obj/overmap.dmi'
 	icon_state = "blank"
 	opacity = 1
-	color = "#880000"
 	var/list/events
 	var/list/event_icon_states
 	var/difficulty = EVENT_LEVEL_MODERATE
@@ -206,7 +205,7 @@
 	event_icon_states = list("meteor1", "meteor2", "meteor3", "meteor4")
 	difficulty = EVENT_LEVEL_MAJOR
 	weaknesses = OVERMAP_WEAKNESS_MINING | OVERMAP_WEAKNESS_EXPLOSIVE
-	color = "#a08444"
+	colors = list("#fc1100", "#b5251b", "#8a1007")
 
 /obj/effect/overmap/event/electric
 	name = "electrical storm"
@@ -215,14 +214,14 @@
 	event_icon_states = list("electrical1", "electrical2", "electrical3", "electrical4")
 	difficulty = EVENT_LEVEL_MAJOR
 	weaknesses = OVERMAP_WEAKNESS_EMP
-	color = "#e8e85c"
+	colors = list("#f5ed0c", "#d9d323", "#faf450")
 
 /obj/effect/overmap/event/dust
 	name = "dust cloud"
 	events = list(/datum/event/dust)
 	event_icon_states = list("dust1", "dust2", "dust3", "dust4")
 	weaknesses = OVERMAP_WEAKNESS_MINING | OVERMAP_WEAKNESS_EXPLOSIVE | OVERMAP_WEAKNESS_FIRE
-	color = "#6c6c6c"
+	colors = list("#facd50", "#cc9d1d", "#cca027")
 
 /obj/effect/overmap/event/ion
 	name = "ion cloud"
@@ -231,7 +230,7 @@
 	event_icon_states = list("ion1", "ion2", "ion3", "ion4")
 	difficulty = EVENT_LEVEL_MAJOR
 	weaknesses = OVERMAP_WEAKNESS_EMP
-	color = "#7cb4d4"
+	colors = list("#02faee", "#34d1c9", "#0b807a")
 
 /obj/effect/overmap/event/carp
 	name = "carp shoal"
@@ -240,7 +239,7 @@
 	difficulty = EVENT_LEVEL_MODERATE
 	event_icon_states = list("carp1", "carp2")
 	weaknesses = OVERMAP_WEAKNESS_EXPLOSIVE | OVERMAP_WEAKNESS_FIRE
-	color = "#783ca4"
+	colors = list("#c25bc7", "#ea50f2", "#f67efc")
 
 /obj/effect/overmap/event/carp/major
 	name = "carp school"
