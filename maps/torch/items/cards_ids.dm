@@ -127,10 +127,6 @@
 	job_access_type = /datum/job/assistant
 	detail_color = COLOR_CIVIE_GREEN
 
-/obj/item/weapon/card/id/torch/contractor/service/bartender
-	job_access_type = /datum/job/bartender
-
-
 /obj/item/weapon/card/id/torch/crew/representative
 	job_access_type = /datum/job/solrep
 	detail_color = COLOR_COMMAND_BLUE

@@ -322,7 +322,7 @@
 	var/chosensuit
 
 /obj/item/device/plasmasanssuit_changer/attack_self(mob/living/user)
-	var/list/suits= list("Scientist" , "Research Director", "Engineer", "Chief Engineer", "Atmospheric Technician", "Security Officer", "Warden", "Captain", "Head of Personnel", "Medical Doctor", "Paramedic", "Chemist", "Chief Medical Officer", "Chef", "Cargo Technician", "Shaft Miner", "Shaft Miner (alt)", "Gardener", "Chaplain", "Janitor", "Civilian")
+	var/list/suits= list("Scientist" , "Research Director", "Engineer", "Chief Engineer", "Atmospheric Technician", "Security Officer", "Warden", "Captain", "Head of Personnel", "Medical Doctor", "Paramedic", "Chemist", "Chief Medical Officer", "Steward", "Cargo Technician", "Shaft Miner", "Shaft Miner (alt)", "Gardener", "Chaplain", "Janitor", "Civilian")
 	chosensuit = input(user, "Pick the type of suit you would like to wear.") as null|anything in suits
 
 #define USED_ADAPT_HELM 1
@@ -374,7 +374,7 @@
 		if("Chief Medical Officer")
 			suit=/obj/item/clothing/suit/space/plasmasans/medical/cmo
 			helm=/obj/item/clothing/head/helmet/space/plasmasans/medical/cmo
-		if("Chef")
+		if("Steward")
 			suit=/obj/item/clothing/suit/space/plasmasans/service
 			helm=/obj/item/clothing/head/helmet/space/plasmasans/service
 		if("Cargo Technician")

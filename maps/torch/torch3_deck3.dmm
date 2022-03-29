@@ -3229,7 +3229,7 @@
 /obj/machinery/door/window/brigdoor/eastleft{
 	autoset_access = 0;
 	name = "Bar";
-	req_access = list("ACCESS_BAR")
+	req_access = list("ACCESS_KITCHEN")
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/bar)

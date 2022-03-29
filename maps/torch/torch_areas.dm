@@ -915,12 +915,12 @@
 	name = "\improper Bar"
 	icon_state = "bar"
 	sound_env = LARGE_SOFTFLOOR
-	req_access = list(access_bar)
+	req_access = list(access_kitchen)
 
 // Crew areas
 /area/crew_quarters/bar/storage
 	name = "\improper Service Storage"
-	req_access = list(access_bar, access_kitchen)
+	req_access = list(access_kitchen)
 
 /area/crew_quarters/cryolocker
 	name = "\improper Cryogenic Storage Wardrobe"

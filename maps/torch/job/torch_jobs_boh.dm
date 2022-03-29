@@ -409,6 +409,12 @@
 	)
 
 /datum/job/chef
+	alt_titles = list(
+		"Mess Sergeant",
+		"Bartender",
+		"Cook",
+		"Chef"
+	)
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/service/cook/ec,
@@ -419,11 +425,9 @@
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3,
-		/datum/mil_rank/marine_corps/e4,
-		/datum/mil_rank/marine_corps/e5
+		/datum/mil_rank/marine_corps/e4
 	)
 
 /datum/job/crew
