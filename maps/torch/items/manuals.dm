@@ -21,7 +21,7 @@
 
 
 /obj/item/weapon/book/manual/military_law
-	name = "The Sol Code of Uniform Justice"
+	name = "The Sol Code of Uniform Justice
 	desc = "A brief overview of military law and procedures."
 	icon_state = "bookSolGovLaw"
 	author = "The Sol Central Government"
