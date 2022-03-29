@@ -1234,6 +1234,17 @@
 		slime.visible_message("<span class='warning'>The [slime] is driven into a frenzy!</span>")
 
 //Pink
+/datum/chemical_reaction/slime/weakdocile
+	name = "Slime Weakdocile"
+	result = null
+	required_reagents = list(/datum/reagent/sugar = 1)
+	result_amount = 1
+	required = /obj/item/slime_extract/pink
+	
+/datum/chemical_reaction/slime/weakdocile/on_reaction(var/datum/reagents/holder)
+	..()
+	new /obj/item/weapon/slimepotion(get_turf(holder.my_atom))
+
 /datum/chemical_reaction/slime/agentb
 	name = "Slime Agent B"
 	result = /datum/reagent/hypeross/slime
