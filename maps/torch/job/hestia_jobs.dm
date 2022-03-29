@@ -151,11 +151,17 @@
 					SKILL_WEAPONS      = SKILL_MAX,
 					SKILL_CHEMISTRY    = SKILL_MAX)
 
-	allowed_branches = list(/datum/mil_branch/fleet)
+	allowed_branches = list(
+		/datum/mil_branch/fleet,
+		/datum/mil_branch/marine_corps
+	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/marine_corps/e3,
+		/datum/mil_rank/marine_corps/e4,
+		/datum/mil_rank/marine_corps/e5
 		)
 	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_aquila, access_eva, access_infmed)
