@@ -202,6 +202,8 @@
 		if(affected.status & ORGAN_ARTERY_CUT)//Fix arteries first,
 			user.visible_message(SPAN_NOTICE("[user] begins to suture [H]'s arteries."))
 			playsound(src, 'sound/weapons/suture.ogg', 50, FALSE)
+			H.adjustHalLoss(35) //Unreduced by painkillers, basically. What actually knocks you out on its own.
+			H.custom_pain("The pain in your [affected.name] is unbearable!",rand(100, 120),affecting = affected)
 			if(user.do_skilled(5 SECONDS, SKILL_MEDICAL, H))
 				if((H == user && prob(75)) || prob(user.skill_fail_chance(SKILL_MEDICAL,50, SKILL_ADEPT)))
 					user.visible_message(SPAN_DANGER("\The [user] fumbles [src]."), SPAN_DANGER("You fumble [src]."), SPAN_DANGER("You hear something being knit."))
@@ -216,7 +218,8 @@
 				if(W.damage) // Are they even damaged?
 					user.visible_message(SPAN_NOTICE("[user] begins to suture up [H]'s wounds."))
 					playsound(src, 'sound/weapons/suture.ogg', 65, FALSE)
-					H.custom_pain("The pain in your [affected.name] is unbearable!",rand(50, 65),affecting = affected)
+					H.adjustHalLoss(35)
+					H.custom_pain("The pain in your [affected.name] is unbearable!",rand(100, 120),affecting = affected)
 					if(user.do_skilled(5 SECONDS, SKILL_MEDICAL, H))
 						if((H == user && prob(75)) || prob(user.skill_fail_chance(SKILL_MEDICAL,50, SKILL_ADEPT)))
 							user.visible_message(SPAN_DANGER("\The [user] fumbles [src]."), SPAN_DANGER("You fumble [src]."), SPAN_DANGER("You hear something being knit."))
