@@ -67,6 +67,7 @@
 		/obj/item/weapon/material/knife/folding/swiss,
 		/obj/item/clothing/head/hardhat/damage_control/White,
 		/obj/item/weapon/sd_key,
+		/obj/item/weapon/storage/belt/utility/chief,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/industrial, /obj/item/weapon/storage/backpack/satchel/eng)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/eng, /obj/item/weapon/storage/backpack/messenger/engi))
 	)

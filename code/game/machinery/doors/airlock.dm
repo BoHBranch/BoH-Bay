@@ -1162,7 +1162,7 @@ About the new airlock wires panel:
 			user.visible_message(SPAN_WARNING("[user.name] wedges the [C] into [src] and starts forcing it open!"), SPAN_WARNING("You wedge the [C] into [src] and start forcing it open!"))
 			if(!do_after(user, 7.5 SECONDS))
 				return
-			if(density)
+			if(state == AIRLOCK_CLOSING || state == AIRLOCK_CLOSED || state == AIRLOCK_DENY)
 				open(1)
 			else
 				close(1)
