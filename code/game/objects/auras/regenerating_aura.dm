@@ -170,9 +170,9 @@
 	fire_mult = 0.75
 
 /obj/aura/regenerating/human/unathi/veteris
-	nutrition_damage_mult = 1.25
-	brute_mult = 1.25
-	organ_mult = 2.5
+	nutrition_damage_mult = 1.5
+	brute_mult = 1.5
+	organ_mult = 3
 	fire_mult = 1.25
 
 /obj/aura/regenerating/human/diona
