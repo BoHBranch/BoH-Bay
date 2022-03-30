@@ -196,6 +196,16 @@ obj/structure/closet/secure_closet/solguard
 			/obj/item/weapon/gun/projectile/pistol/military/alt/solar/cabinet = 3,
 	)
 
+/obj/structure/closet/secure_closet/guncabinet/sidearm/bridge
+	name = "personal sidearm cabinet"
+
+/obj/structure/closet/secure_closet/guncabinet/sidearm/bridge/WillContain()
+	return list(
+			/obj/item/clothing/accessory/storage/holster/thigh = 3,
+			/obj/item/weapon/storage/box/ammo/solar/full = 1,
+			/obj/item/weapon/gun/energy/gun/small/secure/sec = 3,
+	)
+
 /obj/structure/closet/secure_closet/guncabinet/sidearm/combined
 	name = "combined sidearm cabinet"
 

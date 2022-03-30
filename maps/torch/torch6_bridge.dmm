@@ -1813,8 +1813,8 @@
 	},
 /obj/structure/cable/green,
 /obj/machinery/computer/ship/missiles{
-	icon_state = "computer";
-	dir = 1
+	dir = 1;
+	icon_state = "computer"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
@@ -13084,16 +13084,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/structure/closet/secure_closet/guncabinet{
-	name = "personal sidearm cabinet"
-	},
-/obj/item/weapon/gun/energy/gun/small/secure/sec,
-/obj/item/weapon/gun/energy/gun/small/secure/sec,
-/obj/item/weapon/gun/energy/gun/small/secure/sec,
-/obj/item/clothing/accessory/storage/holster/thigh,
-/obj/item/clothing/accessory/storage/holster/thigh,
-/obj/item/clothing/accessory/storage/holster/thigh,
-/obj/item/weapon/storage/box/ammo/solar/full,
+/obj/structure/closet/secure_closet/guncabinet/sidearm/bridge,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "vC" = (
