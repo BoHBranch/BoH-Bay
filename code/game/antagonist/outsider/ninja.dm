@@ -20,6 +20,16 @@ GLOBAL_DATUM_INIT(ninjas, /datum/antagonist/ninja, new)
 	faction = "ninja"
 	base_to_load = /datum/map_template/ruin/antag_spawn/ninja
 
+/datum/antagonist/ninja/get_extra_panel_options(var/datum/mind/player)
+	return "<a href='?src=\ref[player];common=crystals'>\[set crystals\]</a><a href='?src=\ref[src];spawn_uplink=\ref[player.current]'>\[spawn uplink\]</a>"
+
+/datum/antagonist/ninja/Topic(href, href_list)
+	if (..())
+		return 1
+	if(href_list["spawn_uplink"])
+		spawn_uplink(locate(href_list["spawn_uplink"]))
+		return 1
+
 /datum/antagonist/ninja/attempt_random_spawn()
 	if(config.ninjas_allowed) ..()
 
@@ -92,10 +102,11 @@ GLOBAL_DATUM_INIT(ninjas, /datum/antagonist/ninja, new)
 		player.equip_to_slot_or_del(new /obj/item/device/flashlight(player), slot_belt)
 		create_id("Infiltrator", player)
 		equip_rig(/obj/item/weapon/rig/light/ninja, player)
-		var/obj/item/modular_computer/pda/syndicate/U = new
-		player.put_in_hands(U)
-		var/decl/uplink_source/pda/uplink_source = new
-		uplink_source.setup_uplink_source(player, 0)
+
+		spawn_uplink(player)
+
+/datum/antagonist/ninja/proc/spawn_uplink(var/mob/living/carbon/human/player)
+	setup_uplink_source(player, DEFAULT_TELECRYSTAL_AMOUNT)
 
 /datum/antagonist/ninja/proc/generate_ninja_directive(side)
 	var/directive = "[side=="face"?"[GLOB.using_map.company_name]":"A criminal syndicate"] is your employer. "//Let them know which side they're on.
