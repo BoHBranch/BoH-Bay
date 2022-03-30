@@ -299,6 +299,17 @@
 	icon_state = "phorosianCaptain_helmet0"
 	item_state = "phorosianCaptain_helmet0"
 
+/obj/item/clothing/suit/space/plasmasans/security/alt
+	name = "Phoron Restructurant Commando Suit"
+	icon_state = "phorosianSecurity_suit_alt"
+	item_state = "phorosianSecurity_suit_alt"
+
+/obj/item/clothing/head/helmet/space/plasmasans/security/alt
+	name = "Phoron Restructurant Commando Helmet"
+	icon_state = "phorosianSecurity_helmet_alt0"
+	item_state = "phorosianSecurity_helmet_alt0"
+//The code is so fucking stupid...
+
 //NUKEOPS
 
 /obj/item/clothing/suit/space/plasmasans/nuclear
@@ -322,7 +333,7 @@
 	var/chosensuit
 
 /obj/item/device/plasmasanssuit_changer/attack_self(mob/living/user)
-	var/list/suits= list("Scientist" , "Research Director", "Engineer", "Chief Engineer", "Atmospheric Technician", "Security Officer", "Warden", "Captain", "Head of Personnel", "Medical Doctor", "Paramedic", "Chemist", "Chief Medical Officer", "Chef", "Cargo Technician", "Shaft Miner", "Shaft Miner (alt)", "Gardener", "Chaplain", "Janitor", "Civilian")
+	var/list/suits= list("Scientist" , "Research Director", "Engineer", "Chief Engineer", "Atmospheric Technician", "Security Officer", "Security Officer (alt)", "Warden", "Captain", "Head of Personnel", "Medical Doctor", "Paramedic", "Chemist", "Chief Medical Officer", "Chef", "Cargo Technician", "Shaft Miner", "Shaft Miner (alt)", "Gardener", "Chaplain", "Janitor", "Civilian")
 	chosensuit = input(user, "Pick the type of suit you would like to wear.") as null|anything in suits
 
 #define USED_ADAPT_HELM 1
@@ -350,6 +361,9 @@
 		if("Atmospheric Technician")
 			suit=/obj/item/clothing/suit/space/plasmasans/atmostech
 			helm=/obj/item/clothing/head/helmet/space/plasmasans/atmostech
+		if("Security Officer (alt)")
+			suit=/obj/item/clothing/suit/space/plasmasans/security/alt
+			helm=/obj/item/clothing/head/helmet/space/plasmasans/security/alt
 		if("Security Officer")
 			suit=/obj/item/clothing/suit/space/plasmasans/security/
 			helm=/obj/item/clothing/head/helmet/space/plasmasans/security/
