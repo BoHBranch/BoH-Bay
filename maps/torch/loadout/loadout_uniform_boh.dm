@@ -27,49 +27,49 @@
 	allowed_roles = COMMANDANDOFFICER_ROLES
 
 /datum/gear/uniform/fleet/polopants/command
-	display_name = "command polo uniform"
+	display_name = "fleet polo uniform, command"
 	path = /obj/item/clothing/under/solgov/utility/fleet/polopants/command
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_roles = COMMANDANDOFFICER_ROLES
 
 /datum/gear/uniform/fleet/polopants/engineering
-	display_name = "engineering polo uniform"
+	display_name = "fleet polo uniform, engineering"
 	path = /obj/item/clothing/under/solgov/utility/fleet/polopants
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_roles = ENGINEERING_ROLES
 
 /datum/gear/uniform/fleet/polopants/security
-	display_name = "security polo uniform"
+	display_name = "fleet polo uniform, security"
 	path = /obj/item/clothing/under/solgov/utility/fleet/polopants/security
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_roles = SECURITY_ROLES
 
 /datum/gear/uniform/fleet/polopants/medical
-	display_name = "medical polo uniform"
+	display_name = "fleet polo uniform, medical"
 	path = /obj/item/clothing/under/solgov/utility/fleet/polopants/medical
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_roles = MEDICAL_ROLES
 
 /datum/gear/uniform/fleet/polopants/supply
-	display_name = "supply polo uniform"
+	display_name = "fleet polo uniform, supply"
 	path = /obj/item/clothing/under/solgov/utility/fleet/polopants/supply
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_roles = SUPPLY_ROLES
 
 /datum/gear/uniform/fleet/polopants/service
-	display_name = "service polo uniform"
+	display_name = "fleet polo uniform, service"
 	path = /obj/item/clothing/under/solgov/utility/fleet/polopants/service
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_roles = SERVICE_ROLES
 
 /datum/gear/uniform/fleet/polopants/exploration
-	display_name = "exploration polo uniform"
+	display_name = "fleet polo uniform, exploration"
 	path = /obj/item/clothing/under/solgov/utility/fleet/polopants/exploration
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/fleet)
