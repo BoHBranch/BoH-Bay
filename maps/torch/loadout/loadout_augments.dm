@@ -1,5 +1,6 @@
 //combat
 //utility
+/*
 /datum/gear/augmentation/implanted_surgical
 	display_name = "surgical polytool - left arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/polytool/surgical/left
@@ -27,3 +28,5 @@
 /datum/gear/augmentation/implanted_circuitkit/right
 	display_name = "circuit augment - right arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/simple/circuit/right
+
+*/

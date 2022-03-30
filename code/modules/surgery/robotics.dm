@@ -471,7 +471,7 @@ decl/surgery_step/robotics/get_skill_reqs(mob/living/user, mob/living/carbon/hum
 	var/obj/item/organ/organ_to_replace = show_radial_menu(user, target, attachable_organs)
 	if(istype(organ_to_replace, /obj/item/organ/internal/augment))
 		var/obj/item/organ/internal/augment/A = organ_to_replace
-		if(!(A.augment_flags & AUGMENTATION_MECHANIC))
+		if(!(A.augment_flags & AUGMENT_MECHANICAL))
 			to_chat(user, SPAN_WARNING("\The [A] cannot function within a robotic limb!"))
 			return FALSE
 	return organ_to_replace

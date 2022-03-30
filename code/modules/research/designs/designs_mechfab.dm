@@ -466,14 +466,14 @@
 
 /datum/design/item/mechfab/augment/armblade
 	name = "Armblade"
-	build_path = /obj/item/organ/internal/augment/active/simple/armblade
+	build_path = /obj/item/organ/internal/augment/active/item/armblade
 	materials = list(DEFAULT_WALL_MATERIAL = 4000, "glass" = 750)
 	req_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 2, TECH_MATERIAL = 4, TECH_BIO = 3)
 	id = "augment_blade"
 
 /datum/design/item/mechfab/augment/armblade/wolverine
 	name = "Cyberclaws"
-	build_path = /obj/item/organ/internal/augment/active/simple/wolverine
+	build_path = /obj/item/material/armblade/claws
 	materials = list(DEFAULT_WALL_MATERIAL = 6000, "diamond" = 250)
 	req_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 4, TECH_MATERIAL = 4, TECH_BIO = 3)
 	id = "augment_wolverine"
@@ -522,7 +522,7 @@
 
 /datum/design/item/mechfab/augment/circuit
 	name = "Integrated circuit frame"
-	build_path = /obj/item/organ/internal/augment/active/simple/circuit
+	build_path = /obj/item/organ/internal/augment/active/item/circuit
 	materials = list(DEFAULT_WALL_MATERIAL = 3000)
 	id = "augment_circuitry"
 

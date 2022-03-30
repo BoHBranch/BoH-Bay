@@ -404,9 +404,9 @@ var/list/gear_datums = list()
 	var/obj/item/item = spawn_item(H, metadata)
 	item.add_fingerprint(H)
 
-	if(implanted)
-		implant_into_mob(H, item)
-		return //avoids weird stuff.
+//	if(implanted)
+//		implant_into_mob(H, item)
+//		return //avoids weird stuff.
 	var/atom/placed_in = H.equip_to_storage(item)
 	if(placed_in)
 		to_chat(H, "<span class='notice'>Placing \the [item] in your [placed_in.name]!</span>")
@@ -417,7 +417,7 @@ var/list/gear_datums = list()
 	else
 		to_chat(H, "<span class='danger'>Dropping \the [item] on the ground!</span>")
 
-/datum/gear/proc/implant_into_mob(var/mob/living/carbon/human/H, obj/item/I)
+/*/datum/gear/proc/implant_into_mob(var/mob/living/carbon/human/H, obj/item/I)
 	var/obj/item/organ/external/organ_to_implant_into = H.get_organ(BP_CHEST)
 
 	if(istype(I, /obj/item/organ/internal/augment)) //We are an augment, figure out the parent organ we go into.
@@ -438,3 +438,4 @@ var/list/gear_datums = list()
 		IM.forceMove(organ_to_implant_into)
 		IM.implanted(H) //just in case
 		to_chat(H, SPAN_NOTICE("Implanting you with [IM] in your [organ_to_implant_into.name]!"))
+*/

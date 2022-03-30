@@ -12,9 +12,3 @@
 		/obj/item/weapon/scalpel,
 		/obj/item/weapon/surgicaldrill
 	)
-
-/obj/item/organ/internal/augment/active/polytool/surgical/left
-	allowed_organs = list(BP_AUGMENT_L_ARM)
-
-/obj/item/organ/internal/augment/active/polytool/surgical/right
-	allowed_organs = list(BP_AUGMENT_R_ARM)
