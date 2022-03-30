@@ -345,3 +345,14 @@
 	desc = "Inspired by the SCG's desire to save money, This modified Lawson arms Design gives forces the benefits of weak lasers and command overreach, without expensive ideas such as automatic recharge."
 	max_shots = 5
 	self_recharge = 0
+
+/////////
+// Commissar's Dartgun
+/////////
+
+/obj/item/weapon/gun/projectile/dartgun/pol
+	name = "Z-H Ghoul"
+	desc = "A dartgun in service during the Corporate Wars, utilised against Solarian forces. \
+	Known as the 'ghoul' for the darts it came preloaded with, and their effects. \
+	The mix is something unique and unable to be replicated outside of Zeng-Hu Pharmaceutical's labs."
+	starting_chems = list(/datum/reagent/enfluroprobine)

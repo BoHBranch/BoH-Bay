@@ -1,5 +1,5 @@
 /obj/item/weapon/gun/energy/pulse_rifle
-	name = "Nanotrasen Pulse Rifle"
+	name = "NT PR12A Rifle"
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Because of its complexity and cost, it is rarely seen in use except by specialists."
 	icon = 'icons/obj/guns/pulse_rifle.dmi'
 	icon_state = "pulse"
@@ -18,7 +18,7 @@
 	bulk = GUN_BULK_RIFLE
 
 /obj/item/weapon/gun/energy/pulse_rifle/carbine
-	name = "Nanotrasen Pulse Carbine"
+	name = "NT PR12C Carbine"
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Less bulky than the full-sized rifle."
 	icon = 'icons/obj/guns/pulse_carbine.dmi'
 	icon_state = "pulse_carbine"
@@ -33,7 +33,7 @@
 	bulk = GUN_BULK_RIFLE - 3
 
 /obj/item/weapon/gun/energy/pulse_rifle/pistol
-	name = "nanotrasen Pulse Pistol"
+	name = "NT PP2A Sidearm"
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Even smaller than the carbine."
 	icon = 'icons/obj/guns/pulse_pistol.dmi'
 	icon_state = "pulse_pistol"
@@ -54,7 +54,7 @@
 	has_safety = FALSE
 
 /obj/item/weapon/gun/energy/pulse_rifle/destroyer
-	name = "Nanotrasen Pulse Destroyer"
+	name = "NT PR12B Destroyer"
 	desc = "A heavy-duty, pulse-based energy weapon. Capable of turning pretty much anyone on the recieving end into a past-tense!"
 	cell_type = /obj/item/weapon/cell/super
 	fire_delay = 25
@@ -62,7 +62,7 @@
 	charge_cost= 40
 
 /obj/item/weapon/gun/energy/pulse_rifle/destroyer/attack_self(mob/living/user as mob)
-	to_chat(user, "<span class='warning'>[src.name] doesn't need a selector switch. Hell, it's safety just has  'PUSSYMODE' scratched into it!</span>")
+	to_chat(user, "<span class='warning'>[src.name] doesn't need a selector switch. Hell, its safety just has  'PUSSYMODE' scratched into it!</span>")
 
 /obj/item/weapon/gun/energy/pulse_rifle/skrell
 	name = "VT-3 carbine"

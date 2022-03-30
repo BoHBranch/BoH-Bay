@@ -186,6 +186,41 @@
 		)
 
 /////////
+// Armistice
+/////////
+/obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn/armistice
+	name = "Armistice"
+	desc = "A small sidearm, likely one of a kind. It is fitted with two barrels. Wonder what it loads?"
+	icon = 'icons/boh/items/shotguns.dmi'
+	icon_state = "armis"//yes, this is just a sawnoff sprite but even more cut off. Temp.
+	item_state = "armis"
+	wielded_item_state = null//override
+	slot_flags = SLOT_HOLSTER
+	ammo_type = /obj/item/ammo_casing/shotgun/pellet
+	w_class = ITEM_SIZE_SMALL
+	force = 5
+	one_hand_penalty = 0//override
+	bulk = 0//override
+
+/////////
+// Ceremonial Carbine
+/////////
+/obj/item/weapon/gun/energy/laser/secure/ceremonial
+	name = "Hephaestus G40A"
+	desc = "A Hephaestus Industries G40A carbine. \
+	This model hasn't been in service for a number of years, only functioning now as a ceremonial weapon and used in training excercises."
+	max_shots = 6
+	icon_state = "laser"
+
+/////////
+// Old Pulse Carbine
+/////////
+/obj/item/weapon/gun/energy/pulse_rifle/carbine/old
+	name = "NT PR12A Carbine"
+	desc = "An older carbine model, having not been in production for many years at this point. What's this doing here?"
+	max_shots = 12
+
+/////////
 // rifle 3
 /////////
 /*
