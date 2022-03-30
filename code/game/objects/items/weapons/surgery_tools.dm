@@ -202,7 +202,7 @@
 		if(affected.status & ORGAN_ARTERY_CUT)//Fix arteries first,
 			user.visible_message(SPAN_NOTICE("[user] begins to suture [H]'s arteries."))
 			playsound(src, 'sound/weapons/suture.ogg', 50, FALSE)
-			H.adjustHalLoss(35) //Unreduced by painkillers, basically. What actually knocks you out on its own.
+			H.adjustHalLoss(50-(H.chem_effects[CE_PAINKILLER]/5)) // The Halloss is here because pain on its own doesn't knock you out at first, since the pain itself is a slow burn, our halloss is reduced by our painkiller rating divided by 5.
 			H.custom_pain("The pain in your [affected.name] is unbearable!",rand(100, 120),affecting = affected)
 			if(user.do_skilled(5 SECONDS, SKILL_MEDICAL, H))
 				if((H == user && prob(75)) || prob(user.skill_fail_chance(SKILL_MEDICAL,50, SKILL_ADEPT)))
@@ -218,7 +218,7 @@
 				if(W.damage) // Are they even damaged?
 					user.visible_message(SPAN_NOTICE("[user] begins to suture up [H]'s wounds."))
 					playsound(src, 'sound/weapons/suture.ogg', 65, FALSE)
-					H.adjustHalLoss(35)
+					H.adjustHalLoss(50-(H.chem_effects[CE_PAINKILLER]/5))
 					H.custom_pain("The pain in your [affected.name] is unbearable!",rand(100, 120),affecting = affected)
 					if(user.do_skilled(5 SECONDS, SKILL_MEDICAL, H))
 						if((H == user && prob(75)) || prob(user.skill_fail_chance(SKILL_MEDICAL,50, SKILL_ADEPT)))
