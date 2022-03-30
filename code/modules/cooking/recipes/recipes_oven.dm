@@ -17,7 +17,7 @@
 /datum/recipe/dionaroast
 	appliance = OVEN
 	fruit = list("apple" = 1)
-	reagents = list(/datum/reagent/acid/polyacid = 5) //It dissolves the carapace. Still poisonous, though.
+	reagents = list(/datum/reagent/hydrazine = 5) //It dissolves the carapace. Still poisonous, though. Would be polyacid but that melts oven trays.
 	items = list(/obj/item/weapon/holder/diona)
 	result = /obj/item/weapon/reagent_containers/food/snacks/dionaroast
 

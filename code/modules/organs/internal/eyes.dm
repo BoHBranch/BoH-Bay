@@ -45,6 +45,9 @@
 		if(blockages == 0)
 			eye_glow.layer = EYE_GLOW_LAYER
 			eye_glow.plane = EFFECTS_ABOVE_LIGHTING_PLANE
+			eye_glow.alpha = 255
+		else
+			eye_glow.alpha = 0
 		human_icon_cache[cache_key] = eye_glow
 		return human_icon_cache[cache_key]
 

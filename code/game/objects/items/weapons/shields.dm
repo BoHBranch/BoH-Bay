@@ -31,7 +31,7 @@
 
 /obj/item/weapon/shield
 	name = "shield"
-	var/base_block_chance = 60
+	var/base_block_chance = 70
 
 /obj/item/weapon/shield/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(user.incapacitated())
