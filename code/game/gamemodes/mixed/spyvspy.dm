@@ -4,9 +4,9 @@
 	extended_round_description = "Traitors and renegades both spawn during this mode."
 	config_tag = "spyvspy"
 	required_players = 4
-	required_enemies = 4
+	required_enemies = 3
 	end_on_antag_death = FALSE
 	antag_tags = list(MODE_TRAITOR, MODE_RENEGADE)
 	require_all_templates = TRUE
-	antag_scaling_coeff = 5
+	antag_scaling_coeff = 4
 	latejoin_antag_tags = list(MODE_TRAITOR, MODE_RENEGADE)
