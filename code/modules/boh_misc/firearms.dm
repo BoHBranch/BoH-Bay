@@ -79,6 +79,17 @@
 	jam_chance = 0
 	damage_mult = 1.05 //+5% damage.
 
+/obj/item/weapon/gun/projectile/pistol/luger/on_update_icon()
+	..()
+	if(ammo_magazine)
+		if(ammo_magazine.stored_ammo.len)
+			icon_state = "officer_pistol"
+		else
+			icon_state = "officer_pistol-empty"
+	else
+		icon_state = "officer_pistol-e"
+
+
 /obj/item/ammo_magazine/pistol/luger
 	name = "pistol magazine"
 	desc = "A pistol magazine, clearly singlestack, at the bottom of the magazine you see a symbol saying 'SCA'."
