@@ -1,6 +1,8 @@
 /datum/job/captain
 	title = "Commanding Officer"
 	supervisors = "Central Command and the Sol Code of Military Justice"
+	total_positions = 3
+	spawn_positions = 3
 	minimal_player_age = 14
 	economic_power = 15
 	minimum_character_age = list(SPECIES_HUMAN = 40,SPECIES_UNATHI = 40,SPECIES_SERGAL = 40, SPECIES_SKRELL = 40, SPECIES_PROMETHEAN = 40, SPECIES_YEOSA = 40, SPECIES_VULP = 40, SPECIES_VASS = 40, SPECIES_TAJ = 40, SPECIES_CUSTOM = 40, SPECIES_AKULA = 40)
@@ -38,6 +40,8 @@
 	supervisors = "the Commanding Officer"
 	department = "Command"
 	department_flag = COM
+	total_positions = 3
+	spawn_positions = 3
 	minimal_player_age = 8
 	economic_power = 12
 	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_NORTHERN = 35, SPECIES_EASTERN = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
@@ -95,6 +99,8 @@
 /datum/job/rd
 	title = "Chief Science Officer"
 	supervisors = "the Commanding Officer"
+	total_positions = 2
+	spawn_positions = 2
 	economic_power = 20
 	minimal_player_age = 6
 	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
@@ -141,6 +147,8 @@
 /datum/job/cmo
 	title = "Chief Medical Officer"
 	supervisors = "the Commanding Officer and the Executive Officer"
+	total_positions = 2
+	spawn_positions = 2
 	economic_power = 10
 	minimal_player_age = 6
 	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
@@ -184,6 +192,8 @@
 /datum/job/chief_engineer
 	title = "Chief Engineer"
 	supervisors = "the Commanding Officer and the Executive Officer"
+	total_positions = 2
+	spawn_positions = 2
 	economic_power = 9
 	minimum_character_age = list(SPECIES_HUMAN = 27,SPECIES_UNATHI = 27,SPECIES_SERGAL = 27, SPECIES_SKRELL = 27, SPECIES_PROMETHEAN = 27, SPECIES_YEOSA = 27, SPECIES_VASS = 27, SPECIES_TAJ = 27, SPECIES_CUSTOM = 27, SPECIES_AKULA = 27)
 	minimal_player_age = 6
@@ -239,6 +249,8 @@
 /datum/job/hos
 	title = "Chief of Security"
 	supervisors = "the Commanding Officer and the Executive Officer"
+	total_positions = 3
+	spawn_positions = 3
 	economic_power = 8
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 25,SPECIES_UNATHI = 25,SPECIES_SERGAL = 25, SPECIES_SKRELL = 25, SPECIES_PROMETHEAN = 25, SPECIES_YEOSA = 25, SPECIES_VASS = 25, SPECIES_TAJ = 25, SPECIES_CUSTOM = 25, SPECIES_AKULA = 25)
@@ -282,8 +294,8 @@
 	title = "Senior Enlisted Advisor"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Commanding Officer and the Executive Officer"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 6
@@ -374,8 +386,8 @@
 	title = "Sol Gov Representative"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "Central Command and Sol Law"
 	selection_color = "#2f2f7f"
 	minimal_player_age = 14
@@ -423,8 +435,8 @@
 	title = "Sol Federal Agent"
 	department = "Support"
 	department_flag = SPT
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Sol Gov Representative"
 	selection_color = "#3d3d7f"
 	economic_power = 12
