@@ -82,8 +82,35 @@
 	taste_description = "rage"
 	reagent_state = LIQUID
 	color = "#a62c2b"
-	metabolism = REM * 1
+	metabolism = REM * 0.2
 	value = 2
+
+/datum/reagent/enfluroprobine/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+
+	var/strength = 5
+	var/threshold = 5//Very short period to build up.
+
+	if(M.chem_doses[type] >= metabolism * threshold * 0.5)
+		M.confused = max(M.confused, 2)
+		M.add_chemical_effect(CE_VOICELOSS, 1)
+	if(M.chem_doses[type] > threshold * 0.5)
+		M.make_dizzy(3)
+		M.Weaken(2)
+	if(M.chem_doses[type] == round(threshold * 0.5, metabolism))
+		to_chat(M, SPAN_WARNING("Your muscles slacken and cease to obey you."))
+	if(M.chem_doses[type] >= threshold)
+		M.add_chemical_effect(CE_SEDATE, 1)
+		M.eye_blurry = max(M.eye_blurry, 10)
+
+	M.druggy = max(M.druggy, strength)
+	M.add_chemical_effect(CE_MIND, -2)
+	if(prob(15))
+		if (M.reagents.get_reagent_amount(/datum/reagent/hyperzine) < 10)
+			M.reagents.add_reagent(/datum/reagent/hyperzine, 4)
+	if(prob(5))
+		M.hallucination(50, 50)
 
 //vial
 /obj/item/weapon/reagent_containers/glass/beaker/vial/enfluroprobine

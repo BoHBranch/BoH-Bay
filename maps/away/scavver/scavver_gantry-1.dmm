@@ -260,7 +260,9 @@
 /area/scavver/calypso)
 "fF" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 1
+	dir = 1;
+	id_tag = "scav_calypso_pump";
+	frequency = 1380
 	},
 /turf/simulated/floor/plating,
 /area/scavver/calypso)
@@ -341,6 +343,18 @@
 	},
 /turf/simulated/floor/airless,
 /area/scavver/yachtdown)
+"hh" = (
+/obj/effect/floor_decal/corner/blue/mono,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/obj/machinery/cryopod,
+/obj/machinery/computer/cryopod{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/scavver/calypso)
 "hr" = (
 /obj/machinery/atmospherics/unary/tank/carbon_dioxide{
 	dir = 8
@@ -730,10 +744,6 @@
 	name = "Point Defense Controller"
 	},
 /obj/effect/floor_decal/corner/blue/mono,
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
-	},
 /obj/machinery/computer/ship/navigation/telescreen{
 	pixel_x = 32
 	},
@@ -934,7 +944,10 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume,
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	id_tag = "scav_calypso_pump";
+	frequency = 1380
+	},
 /turf/simulated/floor/plating,
 /area/scavver/calypso)
 "to" = (
@@ -1217,11 +1230,6 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/scavver/calypso)
 "AK" = (
-/obj/machinery/access_button/airlock_interior{
-	frequency = 1380;
-	master_tag = "scav_calypso";
-	pixel_y = -22
-	},
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/machinery/atmospherics/portables_connector{
 	dir = 1
@@ -1295,7 +1303,7 @@
 "BJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/blue,
 /obj/machinery/door/airlock/external/bolted,
-/turf/simulated/floor/tiled/steel_ridged,
+/turf/simulated/floor/airless,
 /area/scavver/calypso)
 "BM" = (
 /obj/structure/lattice,
@@ -1582,6 +1590,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/recharge_station,
 /turf/simulated/floor/airless,
 /area/scavver/calypso)
 "Gz" = (
@@ -1607,6 +1616,15 @@
 	},
 /turf/simulated/floor/airless,
 /area/scavver/gantry/down1)
+"Ha" = (
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/structure/fireaxecabinet{
+	pixel_y = -35
+	},
+/turf/simulated/floor/tiled,
+/area/scavver/calypso)
 "Hb" = (
 /obj/random/trash,
 /turf/simulated/floor/airless,
@@ -2011,6 +2029,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/blue{
 	dir = 6
 	},
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/meson,
+/obj/item/clothing/glasses/meson,
+/obj/item/weapon/book/manual/engineering_construction,
 /turf/simulated/floor/tiled/monotile,
 /area/scavver/calypso)
 "Sj" = (
@@ -2101,7 +2123,10 @@
 	id_tag = "scav_calypso_sensor_chamber";
 	pixel_x = -22
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume,
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	id_tag = "scav_calypso_pump";
+	frequency = 1380
+	},
 /turf/simulated/floor/airless,
 /area/scavver/calypso)
 "TV" = (
@@ -2153,11 +2178,16 @@
 /turf/simulated/floor/airless,
 /area/scavver/yachtdown)
 "UV" = (
-/obj/machinery/recharge_station,
-/obj/structure/fireaxecabinet{
-	pixel_y = 32
+/obj/effect/floor_decal/corner/blue/mono,
+/obj/machinery/access_button/airlock_interior{
+	frequency = 1380;
+	master_tag = "scav_calypso";
+	pixel_y = -22
 	},
-/turf/simulated/floor/airless,
+/obj/machinery/cryopod{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/monotile,
 /area/scavver/calypso)
 "Va" = (
 /obj/structure/cable{
@@ -16020,8 +16050,8 @@ RT
 RC
 St
 AK
+UV
 ry
-PY
 PY
 PY
 uY
@@ -16172,8 +16202,8 @@ lV
 Cz
 hC
 Cz
+Cz
 BJ
-hu
 hu
 jR
 PY
@@ -16324,8 +16354,8 @@ vf
 vf
 Yc
 vf
+Ha
 ry
-UV
 Gu
 PN
 ry
@@ -16476,7 +16506,7 @@ pM
 xL
 xL
 oH
-ry
+hh
 ry
 ry
 rr

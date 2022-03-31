@@ -13,7 +13,7 @@
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/skrellscoutship)
 	apc_test_exempt_areas = list()
 	area_coherency_test_subarea_count = list(
-		/area/ship/skrellscoutship/command/brig = 10
+		/area/ship/skrellscoutship/command/brig = 12
 	)
 
 /obj/effect/overmap/visitable/sector/skrellscoutspace

@@ -126,10 +126,10 @@
 
 /obj/item/weapon/tank/emergency/phoron
 	name = "emergency phoron tank"
-	desc = "An emergency air tank hastily painted orange and issued to plasma-afflicted crewmembers."
+	desc = "An emergency air tank hastily painted orange and issued to PRS-afflicted crewmembers."
 	icon_state = "emergency_phoron"
 	gauge_icon = "indicator_emergency"
-	starting_pressure = list(GAS_PLASMA = 10*ONE_ATMOSPHERE)
+	starting_pressure = list(GAS_PHORON = 10*ONE_ATMOSPHERE)
 	distribute_pressure = 12
 
 /obj/item/weapon/tank/emergency/nitrogen/double
