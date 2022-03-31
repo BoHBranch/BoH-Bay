@@ -57,7 +57,7 @@
 	..()
 	qdel(H.internal_organs_by_name[BP_LUNGS]) //Delete the old lungs
 	H.internal_organs_by_name[BP_LUNGS] = new /obj/item/organ/internal/lungs/tirolungs //Install new ones
-	to_chat(H, SPAN_DANGER("The FUCKING HUMANS!!!!@!@!@!@ have altered you to breathe THEIR STINKY FARTDS :DDDDD"))
+	to_chat(H, SPAN_DANGER("The FUCKING HUMANS!!!!@!@!@!@ have altered you to breathe both oxygen and their own alien atmosphere. The air feels strange."))
 	
 	
 /datum/job/chef

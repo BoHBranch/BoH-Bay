@@ -8,7 +8,6 @@
 	name = "spiracle junction"
 	icon_state = "trach"
 	gender = NEUTER
-	breath_type = list(GAS_METHYL_BROMIDE,GAS_OXYGEN) // too lazy to make this work otherwise lmao :D
 
 /obj/item/organ/internal/liver/insectoid
 	name = "primary filters"
