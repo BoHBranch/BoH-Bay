@@ -548,6 +548,10 @@
 	opacity = 0
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/plating,
 /area/security/brig/perma)
 "abo" = (
@@ -3778,6 +3782,11 @@
 /area/security/wing)
 "ahj" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
 "ahk" = (
@@ -3989,6 +3998,11 @@
 "ahH" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -4790,6 +4804,11 @@
 /obj/structure/cable/green{
 	d2 = 2;
 	icon_state = "0-2"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig/perma)
@@ -15323,6 +15342,14 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/command/armoury)
+"aRn" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "aRB" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 1
@@ -19866,6 +19893,18 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
+"dKR" = (
+/obj/machinery/flasher{
+	id_tag = "permflash";
+	pixel_x = 0
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "dMe" = (
 /obj/structure/sign/bluecross_2{
 	pixel_y = 32
@@ -21450,6 +21489,30 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/locker)
+"gJI" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id_tag = "Secure Gate";
+	name = "Security Blast Door";
+	opacity = 0
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/plating,
+/area/security/brig/perma)
 "gMb" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -24994,6 +25057,22 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/locker)
+"lCJ" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id_tag = "Secure Gate";
+	name = "Security Blast Door";
+	opacity = 0
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/plating,
+/area/security/brig/perma)
 "lCN" = (
 /obj/structure/table/standard,
 /obj/item/device/tape/random,
@@ -25812,6 +25891,14 @@
 /obj/random_multi/single_item/poppy,
 /turf/simulated/floor/blackgrid,
 /area/security/nuke_storage)
+"mNR" = (
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "mOb" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 9
@@ -31212,6 +31299,15 @@
 "tAS" = (
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/firstdeck/foreport)
+"tCe" = (
+/obj/machinery/portable_atmospherics/hydroponics,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "tCu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -31424,6 +31520,19 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
+"umq" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "umI" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -32237,6 +32346,30 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
+"wlm" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id_tag = "Secure Gate";
+	name = "Security Blast Door";
+	opacity = 0
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/plating,
+/area/security/brig/perma)
 "wna" = (
 /obj/structure/hygiene/sink{
 	dir = 8;
@@ -32300,6 +32433,18 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
+"wwd" = (
+/obj/machinery/flasher{
+	id_tag = "permflash";
+	pixel_x = 0
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig/perma)
 "wyb" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -44187,7 +44332,7 @@ hyj
 aFX
 aoi
 abg
-ahg
+wwd
 aiT
 amd
 ahf
@@ -44589,9 +44734,9 @@ aDN
 axR
 obZ
 aFV
-abn
-ahf
-ahf
+gJI
+aRn
+umq
 ahf
 ala
 ajZ
@@ -44791,9 +44936,9 @@ axR
 axR
 obZ
 aFV
-abn
+lCJ
 ahu
-ahf
+mNR
 ajZ
 alc
 amk
@@ -44995,7 +45140,7 @@ nYb
 aGb
 aoi
 abA
-ahg
+dKR
 ajZ
 alw
 aml
@@ -45197,7 +45342,7 @@ nZb
 uPc
 aoi
 abD
-ahf
+mNR
 ajZ
 alM
 amo
@@ -45399,7 +45544,7 @@ aEU
 aFV
 abn
 adB
-ahf
+mNR
 ahf
 ala
 ajZ
@@ -45599,8 +45744,8 @@ mlw
 iui
 wkS
 aFV
-abn
-adB
+wlm
+tCe
 ahH
 ahf
 ahz
@@ -45801,7 +45946,7 @@ aKK
 qHx
 aEW
 aGe
-abn
+lCJ
 adB
 ahv
 akq

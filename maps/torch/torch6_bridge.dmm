@@ -4488,7 +4488,7 @@
 	dir = 8;
 	tag = "icon-railing0 (EAST)"
 	},
-/turf/simulated/open,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/foreport)
 "hw" = (
 /obj/structure/lattice,
@@ -7618,7 +7618,7 @@
 	dir = 8;
 	tag = "icon-railing0 (EAST)"
 	},
-/turf/simulated/open,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/foreport)
 "ms" = (
 /turf/simulated/floor/carpet/blue,
@@ -7631,7 +7631,7 @@
 /area/crew_quarters_boh/cabin_main/officerbunk)
 "mu" = (
 /obj/structure/railing/mapped,
-/turf/simulated/open,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/foreport)
 "mv" = (
 /obj/structure/railing/mapped{
@@ -7640,7 +7640,7 @@
 	tag = "icon-railing0 (EAST)"
 	},
 /obj/structure/railing/mapped,
-/turf/simulated/open,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/foreport)
 "mw" = (
 /obj/machinery/light/small{
@@ -7716,7 +7716,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/foreport)
 "mC" = (
 /turf/simulated/wall/r_wall/prepainted,
@@ -7798,7 +7798,7 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/turf/simulated/open,
+/turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/foreport)
 "mL" = (
 /obj/machinery/disposal,
@@ -15665,6 +15665,14 @@
 "Fp" = (
 /turf/simulated/wall/r_wall/hull,
 /area/bridge/storage)
+"Ft" = (
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1";
+	tag = "icon-railing0 (EAST)"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/foreport)
 "Fy" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -16544,6 +16552,12 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/psiadvisor)
+"Jr" = (
+/obj/structure/railing/mapped{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/bridge/foreport)
 "JA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -31305,10 +31319,10 @@ Rf
 vX
 tt
 sJ
-gs
+oB
 mu
 rT
-mF
+Jr
 tg
 tg
 tg
@@ -31507,7 +31521,7 @@ Sf
 nq
 wE
 sJ
-gs
+oB
 mu
 rT
 mK
@@ -31709,10 +31723,10 @@ vu
 nq
 Zf
 sJ
-gs
+oB
 mu
 rT
-mF
+Jr
 tg
 tg
 tg
@@ -31911,10 +31925,10 @@ gv
 uz
 QS
 sJ
-gs
+oB
 mu
 rT
-mF
+Jr
 tg
 tg
 tg
@@ -32113,10 +32127,10 @@ mC
 mC
 mC
 mC
-lS
+Ft
 mv
 rT
-mF
+Jr
 tg
 tg
 tg
