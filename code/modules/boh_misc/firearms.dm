@@ -64,6 +64,26 @@
 /obj/item/weapon/gun/projectile/revolver/medium/sec/pepper
 	ammo_type = /obj/item/ammo_casing/pistol/rubber/pepperball
 
+// Ruger
+
+/obj/item/weapon/gun/projectile/pistol/luger //typepath?
+	name = "SCA-Ruger"
+	desc = "The San Cris Armory Ruger - a high-quality remake of a well known classic. Known to be prized by officers and gun aficionados in Sol space. Low capacity, but realiable firepower."
+	magazine_type = /obj/item/ammo_magazine/pistol/luger
+	allowed_magazines = /obj/item/ammo_magazine/pistol/luger
+	icon = 'icons/obj/guns/officer_pistol.dmi'
+	fire_sound = 'sound/weapons/gunshot/pistol_p20.ogg'
+	icon_state = "officer_pistol"
+	item_state = "officer_pistol"
+	fire_delay = 4.5 //.45 firedelay
+	jam_chance = 0
+	damage_mult = 1.05 //+5% damage.
+
+/obj/item/ammo_magazine/pistol/luger
+	name = "pistol magazine"
+	desc = "A pistol magazine, clearly singlestack, at the bottom of the magazine you see a symbol saying 'SCA'."
+	icon_state = "officer_pistol"
+	max_ammo = 9
 
 /////////
 // display
