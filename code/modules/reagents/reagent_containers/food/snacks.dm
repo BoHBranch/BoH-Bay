@@ -880,7 +880,7 @@
 
 /obj/item/weapon/reagent_containers/food/snacks/bananapie
 	name = "banana cream pie"
-	desc = "Just like back home, on clown planet! HONK!"
+	desc = "A crumbly pie crust stuffed with sliced banana and whipped cream. Only tenuously related to clowns."
 	icon_state = "pie"
 	trash = /obj/item/trash/plate
 	filling_color = "#fbffb8"
