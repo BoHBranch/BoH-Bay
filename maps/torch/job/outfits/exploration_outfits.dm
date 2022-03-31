@@ -8,6 +8,8 @@
 	name = OUTFIT_JOB_NAME("Pathfinder")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/exploration
 	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/crew/pathfinder
 	pda_type = /obj/item/modular_computer/pda/explorer
 	l_ear = /obj/item/device/radio/headset/pathfinder
@@ -16,6 +18,8 @@
 	name = OUTFIT_JOB_NAME("Explorer")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/exploration
 	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/crew/explorer
 	pda_type = /obj/item/modular_computer/pda/explorer
 	l_ear = /obj/item/device/radio/headset/exploration
@@ -24,6 +28,8 @@
 	name = OUTFIT_JOB_NAME("Shuttle Pilot")
 	uniform = /obj/item/clothing/under/color/black
 	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	l_ear = /obj/item/device/radio/headset/headset_pilot
 	id_type = /obj/item/weapon/card/id/torch/passenger/research/nt_pilot
 	head = /obj/item/clothing/head/helmet/solgov/pilot
@@ -32,6 +38,8 @@
 	name = OUTFIT_JOB_NAME("Shuttle Pilot - Expeditionary Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/exploration
 	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/crew/pilot
 	pda_type = /obj/item/modular_computer/pda/explorer
 	l_ear = /obj/item/device/radio/headset/headset_pilot

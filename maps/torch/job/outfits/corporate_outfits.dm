@@ -7,6 +7,8 @@
 	uniform = /obj/item/clothing/under/rank/ntpilot
 	suit = /obj/item/clothing/suit/storage/toggle/brown_jacket/nanotrasen
 	shoes = /obj/item/clothing/shoes/workboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	l_ear = /obj/item/device/radio/headset/headset_pilot
 	id_type = /obj/item/weapon/card/id/torch/passenger/research/nt_pilot
 
@@ -14,6 +16,8 @@
 	name = OUTFIT_JOB_NAME("Scientist - Torch")
 	uniform = /obj/item/clothing/under/rank/scientist
 	shoes = /obj/item/clothing/shoes/white
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	pda_type = /obj/item/modular_computer/pda/science
 	id_type = /obj/item/weapon/card/id/torch/passenger/research/scientist
 
@@ -25,6 +29,8 @@
 	name = OUTFIT_JOB_NAME("Research Assistant - Torch")
 	uniform = /obj/item/clothing/under/rank/scientist
 	shoes = /obj/item/clothing/shoes/white
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	pda_type = /obj/item/modular_computer/pda/science
 	id_type = /obj/item/weapon/card/id/torch/passenger/research
 

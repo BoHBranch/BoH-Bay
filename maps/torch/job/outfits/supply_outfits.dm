@@ -11,6 +11,8 @@
 	l_ear = /obj/item/device/radio/headset/headset_deckofficer
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/supply
 	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/crew/supply/deckofficer
 	pda_type = /obj/item/modular_computer/pda/cargo
 
@@ -23,6 +25,8 @@
 	name = OUTFIT_JOB_NAME("Deck Technician")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/supply
 	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/crew/supply
 	pda_type = /obj/item/modular_computer/pda/cargo
 
@@ -35,6 +39,8 @@
 	name = OUTFIT_JOB_NAME("Supply Assistant")
 	uniform = /obj/item/clothing/under/rank/cargotech
 	shoes = /obj/item/clothing/shoes/brown
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/contractor/supply
 	pda_type = /obj/item/modular_computer/pda/cargo
 
@@ -42,6 +48,8 @@
 	name = OUTFIT_JOB_NAME("Prospector")
 	uniform = /obj/item/clothing/under/rank/ntwork
 	shoes = /obj/item/clothing/shoes/workboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/passenger/research/mining
 	pda_type = /obj/item/modular_computer/pda/mining
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL

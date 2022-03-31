@@ -42,6 +42,8 @@
 	name = OUTFIT_JOB_NAME("Medical Technician")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/medical
 	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/crew/medical
 	l_ear = /obj/item/device/radio/headset/headset_corpsman
 
@@ -49,12 +51,16 @@
 	name = OUTFIT_JOB_NAME("Medical Technician - Fleet")
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/medical
 	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	l_ear = /obj/item/device/radio/headset/headset_corpsman
 
 /decl/hierarchy/outfit/job/torch/crew/medical/contractor
 	name = OUTFIT_JOB_NAME("Medical Technician - Contractor")
 	uniform = /obj/item/clothing/under/rank/medical
 	shoes = /obj/item/clothing/shoes/white
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/contractor/medical
 
 /decl/hierarchy/outfit/job/torch/crew/medical/contractor/mortus
@@ -66,6 +72,8 @@
 	uniform = /obj/item/clothing/under/rank/medical/paramedic
 	suit = /obj/item/clothing/suit/storage/toggle/fr_jacket
 	shoes = /obj/item/clothing/shoes/jackboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	belt = /obj/item/weapon/storage/belt/medical/emt
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
@@ -73,6 +81,8 @@
 	name = OUTFIT_JOB_NAME("Chemist - Torch")
 	uniform = /obj/item/clothing/under/rank/medical
 	shoes = /obj/item/clothing/shoes/white
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	pda_type = /obj/item/modular_computer/pda/medical
 	id_type = /obj/item/weapon/card/id/torch/contractor/chemist
 
@@ -80,6 +90,8 @@
 	name = OUTFIT_JOB_NAME("Counselor")
 	uniform = /obj/item/clothing/under/rank/psych/turtleneck
 	shoes = /obj/item/clothing/shoes/white
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/contractor/medical/counselor
 
 /decl/hierarchy/outfit/job/torch/crew/medical/counselor/equip_id(var/mob/living/carbon/human/H, var/rank, var/assignment, var/equip_adjustments)

@@ -6,6 +6,8 @@
 	name = OUTFIT_JOB_NAME("Sanitation Technician - Torch")
 	uniform = /obj/item/clothing/under/rank/janitor
 	shoes = /obj/item/clothing/shoes/black
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/crew/service/janitor
 	pda_type = /obj/item/modular_computer/pda
 
@@ -13,6 +15,8 @@
 	name = OUTFIT_JOB_NAME("Sanitation Technician - Expeditionary Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/service
 	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/crew/service/janitor
 	pda_type = /obj/item/modular_computer/pda
 
@@ -25,6 +29,8 @@
 	name = OUTFIT_JOB_NAME("Cook - Torch")
 	uniform = /obj/item/clothing/under/rank/chef
 	shoes = /obj/item/clothing/shoes/black
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/crew/service/chef
 	pda_type = /obj/item/modular_computer/pda
 
@@ -32,6 +38,8 @@
 	name = OUTFIT_JOB_NAME("Cook - Expeditionary Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/service
 	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/crew/service/chef
 	pda_type = /obj/item/modular_computer/pda
 
@@ -44,6 +52,8 @@
 	name = OUTFIT_JOB_NAME("Bartender - Torch")
 	uniform = /obj/item/clothing/under/rank/bartender
 	shoes = /obj/item/clothing/shoes/laceup
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/contractor/service/bartender
 	pda_type = /obj/item/modular_computer/pda
 
@@ -51,6 +61,8 @@
 	name = OUTFIT_JOB_NAME("Crewman")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary
 	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/crew
 	pda_type = /obj/item/modular_computer/pda
 

@@ -2,6 +2,8 @@
 	name = OUTFIT_JOB_NAME("Research Assistant - Expeditionary Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/research
 	shoes = /obj/item/clothing/shoes/dutyboots
+	head = /obj/item/clothing/head/infilhat/fem
+	suit = /obj/item/clothing/suit/infilsuit/fem
 	id_type = /obj/item/weapon/card/id/torch/crew/research
 	pda_type = /obj/item/modular_computer/pda/science
 	l_ear = /obj/item/device/radio/headset/torchnanotrasen
