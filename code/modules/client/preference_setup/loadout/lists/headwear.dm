@@ -4,6 +4,10 @@
 	category = /datum/gear/head
 	banned_species = list(SPECIES_PLASMASANS)
 
+/obj/gear/suit/maidhat
+	display_name = "maid's headband"
+	path = /obj/item/clothing/head/infilhat/fem
+
 /datum/gear/head/beret
 	display_name = "beret, colour select"
 	path = /obj/item/clothing/head/beret/plaincolor
