@@ -456,6 +456,9 @@
 /obj/random/powercell,
 /obj/random/powercell,
 /obj/random/illegal,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/fourthdeck)
 "bh" = (
@@ -646,9 +649,8 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/maintenance/aux_med)
 "bC" = (
-/obj/machinery/atmospherics/binary/pump/on{
-	dir = 1;
-	target_pressure = 200
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/fourthdeck)
@@ -936,7 +938,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
 "ch" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /obj/item/device/radio/intercom{
 	dir = 4;
 	pixel_x = -21
@@ -969,12 +970,6 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/fourthdeck)
@@ -1242,7 +1237,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
 "cP" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/techfloor{
 	icon_state = "techfloor_edges";
 	dir = 9
@@ -1255,7 +1249,6 @@
 	dir = 1;
 	icon_state = "techfloor_edges"
 	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/fourthdeck)
 "cR" = (
@@ -1559,9 +1552,6 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
 /obj/effect/floor_decal/techfloor{
 	dir = 8
 	},
@@ -1572,12 +1562,6 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
 	},
 /obj/machinery/hologram/holopad,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -1597,12 +1581,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/fourthdeck)
 "dz" = (
@@ -1610,12 +1588,6 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/starboard)
@@ -1634,14 +1606,10 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
 "dB" = (
@@ -3744,6 +3712,12 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod1/station)
+"ht" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/wall/r_wall/prepainted,
+/area/crew_quarters/safe_room/fourthdeck)
 "hu" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -6635,6 +6609,9 @@
 /turf/simulated/open,
 /area/quartermaster/hangar/top)
 "mH" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/fourthdeck)
 "mM" = (
@@ -7258,7 +7235,10 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/teleporter/fourthdeck)
 "oD" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/cyan,
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 9;
+	icon_state = "intact"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/fourthdeck)
 "oE" = (
@@ -10254,6 +10234,9 @@
 /obj/machinery/light/small{
 	dir = 4;
 	icon_state = "bulb1"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/fourthdeck)
@@ -13991,7 +13974,8 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/fore)
 "Lg" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/structure/hygiene/shower,
+/obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/fourthdeck)
 "Lh" = (
@@ -15236,6 +15220,11 @@
 "OX" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/security/hangcheck)
+"OY" = (
+/obj/machinery/atmospherics/portables_connector,
+/obj/machinery/portable_atmospherics/canister/empty,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/crew_quarters/safe_room/fourthdeck)
 "OZ" = (
 /obj/structure/table/marble,
 /obj/structure/flora/pottedplant/deskferntrim{
@@ -17190,13 +17179,14 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/storage/upper)
 "Ui" = (
-/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
-	dir = 8
-	},
 /obj/machinery/alarm{
 	dir = 4;
 	pixel_x = -25;
 	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 6;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/fourthdeck)
@@ -18895,10 +18885,7 @@
 	pixel_x = 32;
 	pixel_y = 0
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 9;
-	icon_state = "intact"
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/fourthdeck)
 "YQ" = (
@@ -40884,7 +40871,7 @@ qo
 qo
 az
 bc
-az
+ht
 az
 cR
 dy
@@ -41286,7 +41273,7 @@ aa
 Jh
 qo
 qo
-aE
+OY
 YN
 wL
 az
