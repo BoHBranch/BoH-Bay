@@ -3,10 +3,10 @@
 	desc = "Whoever owns this hat means business. Hopefully, it's just good business."
 	icon_state = "infhat"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR, 
-		bullet = ARMOR_BALLISTIC_MINOR, 
-		laser = ARMOR_LASER_MINOR,
-		energy = ARMOR_ENERGY_MINOR
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_SMALL
 		)
 	species_restricted = list(SPECIES_HUMAN)
 
@@ -15,10 +15,10 @@
 	desc = "The clothes of an impeccable diplomat. Or perhaps a businessman. Let's not consider the horrors that might arise if it belongs to a lawyer."
 	icon_state = "infsuit"
 	armor = list(
-		melee = ARMOR_MELEE_MINOR, 
-		bullet = ARMOR_BALLISTIC_PISTOL, 
-		laser = ARMOR_LASER_MINOR,
-		energy = ARMOR_ENERGY_MINOR
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_SMALL
 		)
 
 /obj/item/clothing/under/lawyer/infil
