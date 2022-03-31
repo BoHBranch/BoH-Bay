@@ -4,7 +4,7 @@
 	category = /datum/gear/suit
 	banned_species = list(SPECIES_PLASMASANS)
 
-/obj/gear/suit/maidoutfit
+/datum/gear/suit/maidoutfit
 	display_name = "maid's outfit"
 	path = /obj/item/clothing/suit/infilsuit/fem
 
