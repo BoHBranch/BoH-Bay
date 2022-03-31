@@ -175,7 +175,7 @@
 	var/list/options = list()
 	options["Ballistic - Armistice"] = list(/obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn/armistice,/obj/item/clothing/accessory/storage/holster/thigh)
 	options["Ballistic - Lumoco Mk12"] = list(/obj/item/weapon/gun/projectile/revolver/medium/sec,/obj/item/clothing/accessory/storage/holster/thigh)
-	options["Ballistic - SNC-Ruger"] = list(/obj/item/weapon/gun/projectile/pistol/luger,/obj/item/clothing/accessory/storage/holster/thigh)
+	options["Ballistic - SCA-Ruger"] = list(/obj/item/weapon/gun/projectile/pistol/luger,/obj/item/clothing/accessory/storage/holster/thigh)
 	var/choice = input(user,"What type of equipment?") as null|anything in options
 	if(src && choice)
 		var/list/things_to_spawn = options[choice]
