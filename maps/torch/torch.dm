@@ -89,6 +89,7 @@
 	#include "items/clothing/boh_under.dm"
 	#include "items/clothing/boh_accessory.dm"
 	#include "items/clothing/boh_clothing.dm"
+	#include "items/clothing/boh_head.dm"
 
 	#include "items/psyker/agent_items.dm"
 
