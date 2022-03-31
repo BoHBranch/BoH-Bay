@@ -2803,16 +2803,8 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
 "afF" = (
-/obj/machinery/door/airlock/vault/bolted{
-	id_tag = "medicalsafedoor1";
-	name = "Medical Safe Room"
-	},
-/obj/machinery/door/firedoor,
-/obj/item/weapon/airlock_brace{
-	req_access = list("ACCESS_MEDICAL")
-	},
 /turf/simulated/floor/tiled/techfloor,
-/area/crew_quarters/safe_room/medical)
+/area/crew_quarters/safe_room/firstdeck)
 "afG" = (
 /obj/structure/curtain/open/bed,
 /turf/simulated/floor/tiled/techfloor,
@@ -3383,13 +3375,15 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
 "agA" = (
+/obj/machinery/alarm{
+	pixel_y = 23;
+	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	},
 /obj/effect/floor_decal/techfloor{
-	dir = 5
+	dir = 9
 	},
-/obj/machinery/portable_atmospherics/canister/empty,
-/obj/machinery/atmospherics/portables_connector{
-	dir = 8
-	},
+/obj/structure/hygiene/shower,
+/obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/medical)
 "agB" = (
@@ -3983,15 +3977,11 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
 "ahF" = (
-/obj/structure/fireaxecabinet{
-	pixel_y = 32
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
-/obj/effect/floor_decal/techfloor{
-	dir = 1
-	},
-/obj/structure/bed/chair,
-/turf/simulated/floor/tiled/techfloor,
-/area/crew_quarters/safe_room/medical)
+/turf/simulated/wall/r_wall/prepainted,
+/area/crew_quarters/safe_room/firstdeck)
 "ahG" = (
 /obj/machinery/camera/network/first_deck{
 	c_tag = "First Deck - Safe Room";
@@ -16866,8 +16856,16 @@
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology)
 "aXh" = (
+/obj/machinery/door/airlock/vault/bolted{
+	id_tag = "medicalsafedoor1";
+	name = "Medical Safe Room"
+	},
+/obj/machinery/door/firedoor,
+/obj/item/weapon/airlock_brace{
+	req_access = list("ACCESS_MEDICAL")
+	},
 /turf/simulated/floor/tiled/techfloor,
-/area/crew_quarters/safe_room/firstdeck)
+/area/crew_quarters/safe_room/medical)
 "aXm" = (
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/structure/table/rack,
@@ -17179,8 +17177,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
 "blH" = (
-/obj/machinery/atmospherics/pipe/manifold/visible,
 /obj/item/usedcryobag,
+/obj/machinery/atmospherics/pipe/manifold/hidden/cyan,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/medical)
 "bmb" = (
@@ -18701,11 +18699,15 @@
 /turf/simulated/floor/tiled/white,
 /area/medical/infirmreception)
 "cDb" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+/obj/effect/floor_decal/techfloor{
+	dir = 5
 	},
-/turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/safe_room/firstdeck)
+/obj/machinery/portable_atmospherics/canister/empty,
+/obj/machinery/atmospherics/portables_connector{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/crew_quarters/safe_room/medical)
 "cDm" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -21595,21 +21597,13 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/aft)
 "hhB" = (
-/obj/machinery/button/alternate/door/bolts{
-	id_tag = "medicalsafedoor1";
-	name = "safe room door-control";
-	pixel_x = 23;
-	pixel_y = 25
-	},
-/obj/machinery/firealarm{
-	pixel_y = 22
+/obj/structure/fireaxecabinet{
+	pixel_y = 32
 	},
 /obj/effect/floor_decal/techfloor{
 	dir = 1
 	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 4
-	},
+/obj/structure/bed/chair,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/medical)
 "hib" = (
@@ -29913,15 +29907,21 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/entry)
 "sfx" = (
-/obj/machinery/alarm{
-	pixel_y = 23;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+/obj/machinery/button/alternate/door/bolts{
+	id_tag = "medicalsafedoor1";
+	name = "safe room door-control";
+	pixel_x = 23;
+	pixel_y = 25
+	},
+/obj/machinery/firealarm{
+	pixel_y = 22
 	},
 /obj/effect/floor_decal/techfloor{
-	dir = 9
+	dir = 1
 	},
-/obj/structure/hygiene/shower,
-/obj/structure/curtain/open/shower,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/medical)
 "sgb" = (
@@ -40869,7 +40869,7 @@ aaa
 hBr
 hBr
 adK
-cDb
+ahF
 abY
 adK
 aco
@@ -41477,8 +41477,8 @@ hBr
 adK
 lAC
 afE
-aXh
-aXh
+afF
+afF
 aiM
 adK
 qWE
@@ -41678,8 +41678,8 @@ hBr
 hBr
 adK
 emQ
-aXh
-aXh
+afF
+afF
 ahD
 aiN
 adK
@@ -54200,7 +54200,7 @@ mpy
 mpy
 adt
 ebt
-sfx
+agA
 atj
 awA
 cwb
@@ -54402,7 +54402,7 @@ mpy
 aev
 adt
 ebt
-ahF
+hhB
 alx
 aMb
 eXM
@@ -54603,7 +54603,7 @@ aaa
 mpy
 aeC
 adt
-afF
+aXh
 ati
 alx
 bdn
@@ -54806,7 +54806,7 @@ mpy
 aeW
 adt
 ebt
-hhB
+sfx
 alA
 blH
 ctb
@@ -55008,7 +55008,7 @@ mpy
 afe
 adv
 ebt
-agA
+cDb
 cxb
 cHB
 dEb
