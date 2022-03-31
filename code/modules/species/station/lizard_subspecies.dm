@@ -7,10 +7,10 @@
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/tail, /datum/unarmed_attack/claws, /datum/unarmed_attack/punch, /datum/unarmed_attack/punch/venom, /datum/unarmed_attack/bite/sharp, /datum/unarmed_attack/bite/venom)
 	darksight_range = 5
 	darksight_tint = DARKTINT_GOOD
-	breath_pressure = 16
+	breath_pressure = 14
 	slowdown = 0.5
 	brute_mod = 0.9
-	oxy_mod = 0.9
+	oxy_mod = 0.8
 	flash_mod = 1.4
 	metabolism_mod = 0.75
 	blood_volume = 700

@@ -97,7 +97,7 @@
 
 /obj/item/weapon/gun/energy/laser/secure
 	name = "Hephaestus G40E-UP"
-	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts. Fitted with an NT1019 chip to make sure killcount is tracked appropriately."
+	desc = "A Hephaestus Industries G40E carbine, designed to kill with concentrated energy blasts."
 	icon_state = "lasersec"
 
 /obj/item/weapon/gun/energy/plasmarifle/secure

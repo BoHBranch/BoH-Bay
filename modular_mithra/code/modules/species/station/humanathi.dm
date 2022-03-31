@@ -21,13 +21,14 @@
 	darksight_tint = DARKTINT_MODERATE
 	gluttonous = GLUT_TINY | GLUT_ITEM_TINY | GLUT_PROJECTILE_VOMIT //Used to eating ash.
 	strength = STR_HIGH
-	breath_pressure = 12 //Their lungs are strong.
+	breath_pressure = 16 //Smaller, needs less air.
 	slowdown = 0.5
-	brute_mod = 0.8
-	flash_mod = 1.4 //More sensitive to light
-	metabolism_mod = 0.5 //Lower metabolism.
+	brute_mod = 0.9
+	burn_mod = 0.8
+	flash_mod = 1.2
+	radiation_mod = 0.75
+	metabolism_mod = 0.8 //Lower metabolism.
 	blood_volume = SPECIES_BLOOD_DEFAULT // Lower blood than unathi.
-	stomach_capacity = 4 //1 less than humans.
 
 	health_hud_intensity = 2
 	hunger_factor = DEFAULT_HUNGER_FACTOR //Less hungry than Unathi
@@ -54,7 +55,7 @@
 	heat_level_2 = 480 //Default 400
 	heat_level_3 = 1100 //Default 1000
 
-	spawn_flags = SPECIES_CAN_JOIN
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_NO_FBP_CONSTRUCTION | SPECIES_NO_FBP_CHARGEN | SPECIES_NO_ROBOTIC_INTERNAL_ORGANS
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	flesh_color = "#34af10"
@@ -82,7 +83,7 @@
 	breathing_sound = 'sound/voice/lizard.ogg'
 
 	base_auras = list(
-		/obj/aura/regenerating/human/unathi
+		/obj/aura/regenerating/human/unathi/veteris
 		)
 
 	inherent_verbs = list(

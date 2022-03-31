@@ -365,3 +365,41 @@
 	desc = "Inspired by the SCG's desire to save money, This modified Lawson arms Design gives forces the benefits of weak lasers and command overreach, without expensive ideas such as automatic recharge."
 	max_shots = 5
 	self_recharge = 0
+
+/////////
+// Commissar's Dartgun
+/////////
+
+/obj/item/weapon/gun/projectile/dartgun/pol
+	name = "Z-H Ghoul"
+	desc = "A dartgun in service during the Corporate Wars, utilised against Solarian forces. \
+	Known as the 'ghoul' for the darts it came preloaded with, and their effects. \
+	The mix is something unique and unable to be replicated outside of Zeng-Hu Pharmaceutical's labs."
+	starting_chems = list(/datum/reagent/enfluroprobine)
+
+/////////
+// Armistice
+/////////
+
+/obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn/armistice
+	name = "Armistice"
+	desc = "A small sidearm, likely one of a kind. It is fitted with two barrels. Wonder what it loads?"
+	icon = 'icons/boh/items/shotguns.dmi'
+	icon_state = "armis"//yes, this is just a sawnoff sprite but even more cut off. Temp.
+	item_state = "armis"
+	wielded_item_state = null//override
+	slot_flags = SLOT_HOLSTER
+	ammo_type = /obj/item/ammo_casing/shotgun/pellet
+	w_class = ITEM_SIZE_SMALL
+	force = 5
+	one_hand_penalty = 0//override
+	bulk = 0//override
+
+/////////
+// Old Pulse Carbine
+/////////
+
+/obj/item/weapon/gun/energy/pulse_rifle/carbine/old
+	name = "NT PR12A Carbine"
+	desc = "An older carbine model, having not been in production for many years at this point. What's this doing here?"
+	max_shots = 12
