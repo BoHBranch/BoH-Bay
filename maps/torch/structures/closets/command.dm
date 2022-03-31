@@ -125,6 +125,8 @@
 		/obj/item/device/radio/headset/bridgeofficer/alt,
 		/obj/item/weapon/storage/belt/general,
 		/obj/item/weapon/material/knife/folding/swiss,
+		/obj/item/weapon/gun/projectile/pistol/luger,
+		/obj/item/ammo_magazine/pistol/luger,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel/grey)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag, /obj/item/weapon/storage/backpack/messenger)),
 		new /datum/atom_creator/weighted(list(/obj/item/device/flashlight, /obj/item/device/flashlight/flare, /obj/item/device/flashlight/flare/glowstick/random))
