@@ -341,10 +341,11 @@
 /////////
 
 /obj/item/weapon/gun/energy/gun/small/secure/sec
-	name = "Beagle Mk-4"
-	desc = "Inspired by the SCG's desire to save money, This modified Lawson arms Design gives forces the benefits of weak lasers and command overreach, without expensive ideas such as automatic recharge."
+	name = "Beagle MK-5"
+	desc = "The newest iteration of the SCG's secure Beagle pistol series. This model reintroduces the self-charging mechanism to its compact line. Due to its cost effective nature, however, the MK-5 takes twice the time to charge as its full-sized counterpart."
 	max_shots = 5
-	self_recharge = 0
+	self_recharge = 1
+	recharge_time = 8
 
 /////////
 // Commissar's Dartgun
