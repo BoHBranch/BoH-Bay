@@ -184,7 +184,7 @@
 	initial_capacitor_type = /obj/item/weapon/stock_parts/capacitor/adv
 	load_type = /obj/item/weapon/magnetic_ammo/skrell
 	loaded = /obj/item/weapon/magnetic_ammo/skrell/slug
-	projectile_type = /obj/item/projectile/bullet/magnetic/slug
+	projectile_type = /obj/item/projectile/bullet/magnetic/slug/skrell
 	slot_flags = SLOT_BACK
 	power_cost = 100
 	wielded_item_state = "skrell_rifle-wielded"

@@ -17,6 +17,9 @@
 	damage = 50
 	armor_penetration = 75
 
+/obj/item/projectile/bullet/magnetic/slug/skrell
+	stun = 0
+
 /obj/item/projectile/bullet/magnetic/flechette
 	name = "flechette"
 	icon_state = "flechette"
