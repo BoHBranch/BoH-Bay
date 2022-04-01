@@ -34,19 +34,20 @@
 	service_under = list(/obj/item/clothing/under/solgov/service/fleet/officer, /obj/item/clothing/under/solgov/service/fleet)
 	service_skirt = list(/obj/item/clothing/under/solgov/service/fleet/skirt/officer, /obj/item/clothing/under/solgov/service/fleet/skirt)
 
+
 	dress_under = list(/obj/item/clothing/under/solgov/service/fleet/officer, /obj/item/clothing/under/solgov/service/fleet)
 	dress_skirt = list(/obj/item/clothing/under/solgov/service/fleet/skirt/officer, /obj/item/clothing/under/solgov/service/fleet/skirt)
-	
+
 /decl/hierarchy/mil_uniform/fleet //Can only be officers
 	name = "Fleet Senior Commissioned Officer"
 	min_rank = 15
 
-	service_under = list(/obj/item/clothing/under/solgov/service/fleet/command, /obj/item/clothing/under/solgov/service/fleet)
-	service_skirt = list(/obj/item/clothing/under/solgov/service/fleet/skirt/command, /obj/item/clothing/under/solgov/service/fleet/skirt)
+	service_under = /obj/item/clothing/under/solgov/service/fleet
+	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt
 
 	dress_under = list(/obj/item/clothing/under/solgov/service/fleet/command, /obj/item/clothing/under/solgov/service/fleet)
 	dress_skirt = list(/obj/item/clothing/under/solgov/service/fleet/skirt/command, /obj/item/clothing/under/solgov/service/fleet/skirt)
-	
+
 /decl/hierarchy/mil_uniform/fleet //Can only be officers
 	name = "Fleet Flag Officer"
 	min_rank = 17
@@ -56,7 +57,7 @@
 
 	dress_under = list(/obj/item/clothing/under/solgov/service/fleet/flag, /obj/item/clothing/under/solgov/service/fleet)
 	dress_skirt = list(/obj/item/clothing/under/solgov/service/fleet/skirt/flag, /obj/item/clothing/under/solgov/service/fleet/skirt)
-	
+
 /decl/hierarchy/mil_uniform/fleet/com //Can only be officers
 	name = "Fleet command"
 	departments = COM
@@ -539,7 +540,7 @@
 	dress_over = /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 	dress_hat = /obj/item/clothing/head/solgov/dress/fleet/command
 	dress_extra = list(/obj/item/weapon/storage/belt/holster/sheath/fleet, ,/obj/item/clothing/head/beret/solgov/fleet/dress/command)
-	
+
 // have to resprite science, so that'll have to wait
 /decl/hierarchy/mil_uniform/fleet/sci
 	name = "Fleet science"
