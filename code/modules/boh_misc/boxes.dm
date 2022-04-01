@@ -145,6 +145,46 @@
 		qdel(src)
 
 /////////
+// Corp Rep Firearm Kit
+/////////
+
+/obj/item/gunbox/corpo
+	desc = "A secure box containing a sidearm."
+
+/obj/item/gunbox/corpo/attack_self(mob/living/user)
+	var/list/options = list()
+	options["Ballistic - ZH Ghoul"] = list(/obj/item/weapon/gun/projectile/dartgun/pol,/obj/item/clothing/accessory/storage/holster/thigh)
+	options["Ballistic - Lumoco Mk12"] = list(/obj/item/weapon/gun/projectile/revolver/medium/sec,/obj/item/clothing/accessory/storage/holster/thigh)
+	var/choice = input(user,"What type of equipment?") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn)
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/weapon/gun/))
+				to_chat(user, "You have chosen \the [AM].")
+		qdel(src)
+
+/////////
+// SCG Rep Firearm Kit
+/////////
+
+/obj/item/gunbox/pol
+	desc = "A secure box containing a sidearm."
+
+/obj/item/gunbox/pol/attack_self(mob/living/user)
+	var/list/options = list()
+	options["Ballistic - Armistice"] = list(/obj/item/weapon/gun/projectile/shotgun/doublebarrel/sawn/armistice,/obj/item/clothing/accessory/storage/holster/thigh)
+	options["Ballistic - Lumoco Mk12"] = list(/obj/item/weapon/gun/projectile/revolver/medium/sec,/obj/item/clothing/accessory/storage/holster/thigh)
+	var/choice = input(user,"What type of equipment?") as null|anything in options
+	if(src && choice)
+		var/list/things_to_spawn = options[choice]
+		for(var/new_type in things_to_spawn)
+			var/atom/movable/AM = new new_type(get_turf(src))
+			if(istype(AM, /obj/item/weapon/gun/))
+				to_chat(user, "You have chosen \the [AM].")
+		qdel(src)
+
+/////////
 // Illum Box
 /////////
 

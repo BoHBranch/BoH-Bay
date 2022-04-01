@@ -9,7 +9,7 @@
 	origin_tech = list(TECH_BLUESPACE = 5, TECH_MAGNET = 4, TECH_ENGINEERING = 5)
 	arm_sound = 'sound/effects/scanbeep.ogg'
 	var/explode_at
-	var/radiation = 64//with how this is set up, and how rads caps-out anyway, 500 is what it'll jump to with how I have this.
+	var/radiation_dam = 64
 
 /obj/item/weapon/grenade/neutron/Destroy()
 	if(explode_at)
@@ -31,10 +31,11 @@
 /obj/item/weapon/grenade/neutron/Process()
 	var/turf/T = get_turf(src)
 	playsound(T, 'sound/effects/phasein.ogg', 100, 1)
+	SSradiation.radiate(src, 65)//Irradiates nearby flooring, taking into account walls and other such things.
 	for(var/mob/living/carbon/human/M in viewers(T, null))//Everyone who can see it. Only way to balance this. Had it 12 tile range prior, which as you can imagine, wasn't too fun.
 		if(M.eyecheck() < FLASH_PROTECTION_MODERATE)
 			M.flash_eyes()//double flash?
-		M.apply_damage((radiation*24),IRRADIATE, damage_flags = DAM_DISPERSED)
+		M.apply_damage((radiation_dam),IRRADIATE, damage_flags = DAM_DISPERSED)
 		M.updatehealth()
 	if(world.time > explode_at)
 		playsound(src, 'sound/effects/EMPulse.ogg', 100)

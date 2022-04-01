@@ -164,3 +164,9 @@
 	item_cost = 4
 	path = /obj/item/clothing/gloves/nabber
 
+/datum/uplink_item/item/tools/inducer
+	name = "Inducer"
+	desc = "Use this on powered equipment to put power back into it, be it a laser gun or some APC on the road."
+	item_cost = 20
+	path = /obj/item/inducer
+
