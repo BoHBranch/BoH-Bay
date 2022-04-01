@@ -5694,13 +5694,10 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/security/infantry/gear)
 "kU" = (
-/obj/item/clothing/mask/gas/clown_hat,
-/obj/item/weapon/storage/backpack/clown,
-/obj/item/weapon/stamp/clown,
-/obj/item/weapon/bedsheet/clown,
-/obj/item/clothing/shoes/clown_shoes,
-/obj/item/clothing/under/rank/clown,
-/obj/item/clothing/under/sexyclown,
+/obj/item/clothing/head/bio_hood/security{
+	desc = "WHEN THE CARL IS SUS???????";
+	name = "SUS??????"
+	},
 /turf/simulated/floor/plating,
 /area/security/infantry/bunk)
 "kV" = (
@@ -10713,6 +10710,12 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aftstarboard)
+"ym" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/turf/simulated/wall/r_wall/prepainted,
+/area/crew_quarters/safe_room/fourthdeck)
 "yp" = (
 /turf/simulated/floor/tiled/techmaint,
 /area/quartermaster/hangar/top)
@@ -12726,12 +12729,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
-"Ha" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/safe_room/fourthdeck)
 "He" = (
 /obj/effect/floor_decal/techfloor,
 /obj/structure/table/rack,
@@ -13302,11 +13299,6 @@
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
-"IW" = (
-/obj/machinery/atmospherics/portables_connector,
-/obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/crew_quarters/safe_room/fourthdeck)
 "IX" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/table/standard{
@@ -13710,6 +13702,11 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fourthdeck/aft)
+"Kk" = (
+/obj/machinery/atmospherics/portables_connector,
+/obj/machinery/portable_atmospherics/canister/empty,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/crew_quarters/safe_room/fourthdeck)
 "Kl" = (
 /obj/structure/sign/warning/docking_area,
 /turf/simulated/wall/r_wall/hull,
@@ -40874,7 +40871,7 @@ qo
 qo
 az
 bc
-Ha
+ym
 az
 cR
 dy
@@ -41276,7 +41273,7 @@ aa
 Jh
 qo
 qo
-IW
+Kk
 YN
 wL
 az
