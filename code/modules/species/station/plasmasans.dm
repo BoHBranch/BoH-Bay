@@ -227,7 +227,6 @@
 					"<span class='warning'>Your body reacts with the atmosphere and starts to sizzle and burn!</span>"
 				)
 				H.IgniteMob()
-			H.burn_skin(H.get_pressure_weakness())
 			H.updatehealth()
 
 /datum/hud_data/phorosian
