@@ -6,7 +6,7 @@
 /obj/effect/ghostspawpoint
 	name = "invisible ghost spawner - single"
 	desc = "A Invisible ghost spawner"
-	icon = 'icons/mob/screen/generic.dmi'
+	icon = 'icons/effects/landmarks.dmi'
 	icon_state = "x2"
 
 	anchored = 1
@@ -48,13 +48,13 @@
 		update_icon()
 
 /obj/effect/ghostspawpoint/attack_ghost(mob/user)
-	if(!ROUND_IS_STARTED)
+	if(!GAME_STATE == RUNLEVEL_GAME)
 		to_chat(usr, "<span class='danger'>The round hasn't started yet!</span>")
 		return
 	SSghostroles.vui_interact(user,identifier)
 
 /obj/effect/ghostspawpoint/attack_hand(mob/user)
-	if(!ROUND_IS_STARTED)
+	if(!GAME_STATE == RUNLEVEL_GAME)
 		to_chat(usr, "<span class='danger'>The round hasn't started yet!</span>")
 		return
 	SSghostroles.vui_interact(user,identifier)
@@ -94,7 +94,7 @@
 /obj/effect/ghostspawpoint/repeat
 	name = "invisible ghost spawner - repeat"
 	desc = "A Invisible ghost spawner"
-	icon = 'icons/mob/screen/generic.dmi'
+	icon = 'icons/effects/landmarks.dmi'
 	icon_state = "x3"
 
 	icon_unavailable = "x3" //Icon to use when unavailable

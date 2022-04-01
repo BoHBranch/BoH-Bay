@@ -55,7 +55,7 @@
 
 	spawnpoints[P.identifier].Add(P)
 	//Only update the status if the round is started. During initialization that´s taken care of at the end of init.
-	if(ROUND_IS_STARTED)
+	if(GAME_STATE == RUNLEVEL_GAME)
 		update_spawnpoint_status(P)
 
 /datum/controller/subsystem/ghostroles/proc/update_spawnpoint_status(var/obj/effect/ghostspawpoint/P)
@@ -105,7 +105,7 @@
 /datum/controller/subsystem/ghostroles/proc/vui_interact(mob/user,var/spawnpoint=null)
 	var/datum/vueui/ui = SSvueui.get_open_ui(user,src)
 	if(!ui)
-		ui = new(user,src,"misc-ghostspawner",950,700,"Ghost Role Spawner", state = interactive_state)
+		ui = new(user,src,"misc-ghostspawner",950,700,"Ghost Role Spawner", state = STATUS_INTERACTIVE)
 		ui.data = vueui_data_change(list("spawnpoint"=spawnpoint,"current_tag"="All"),user,ui)
 	ui.open()
 

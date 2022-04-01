@@ -80,8 +80,7 @@
 	return FALSE
 
 //Return a error message if the user CANT spawn. Otherwise FALSE
-/datum/ghostspawner/proc/cant_spawn(mob/user) //If the user can spawn using the spawner
-	if(!ROUND_IS_STARTED)
+	if(!GAME_STATE == RUNLEVEL_GAME)
 		return "The round is not started yet."
 	var/cant_see = cant_see(user)
 	if(cant_see) //If we cant see it, we cant spawn it

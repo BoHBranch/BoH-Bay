@@ -600,3 +600,7 @@ its easier to just keep the beam vertical.
 
 /atom/proc/get_cell()
 	return
+
+//Sgtmind: When I am able to figure out a better way of doing this then just pasting this, please nudge me to change this.
+/atom/proc/assign_player(var/mob/user)
+	return
