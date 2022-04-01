@@ -1,8 +1,8 @@
-/*
+
 //baton
 /obj/item/weapon/melee/darkrp_baton
 	name = "magical stunbaton"
-	desc = "An extremely strange stun baton that appears to be coated with red shiny paint. The following text is scribbled on the bottom: <i>Created by DarkRP Arrest Systems.</i>"
+	desc = "Citizens aren't supposed to have guns."
 	icon_state = "stunbaton"
 	item_state = "baton"
 	color = COLOR_RED
@@ -39,4 +39,4 @@
 		to_world("<span><font face='Arial Black, Arial, sans-serif'>\The [target.name] has been arrested for 120 seconds!</font></span>")
 		return TRUE
 
-	return FALSE*/
+	return FALSE
