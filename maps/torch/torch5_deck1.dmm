@@ -4714,9 +4714,6 @@
 /obj/effect/floor_decal/techfloor,
 /obj/structure/table/standard,
 /obj/item/modular_computer/laptop/preset/custom_loadout/cheap,
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/red{
 	dir = 4;
 	icon_state = "intact"
