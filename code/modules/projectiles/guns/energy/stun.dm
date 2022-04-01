@@ -5,7 +5,7 @@
 	icon_state = "taserstun"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	modifystate = "taserstun"
-	max_shots = 9
+	max_shots = 10
 	projectile_type = /obj/item/projectile/beam/stun
 	combustion = 0
 
