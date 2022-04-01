@@ -2782,10 +2782,10 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 10
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/red,
+/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
 "afD" = (
@@ -3370,10 +3370,10 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1starboard)
 "agz" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 9
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
 	},
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/safe_room/firstdeck)
 "agA" = (
 /obj/machinery/alarm{
@@ -3966,7 +3966,9 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1starboard)
 "ahC" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
 "ahD" = (
@@ -4692,9 +4694,6 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 5
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/red{
 	dir = 5;
 	icon_state = "intact"
@@ -4705,9 +4704,6 @@
 /obj/effect/floor_decal/techfloor,
 /obj/structure/table/standard,
 /obj/machinery/recharger,
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/red{
 	dir = 4;
 	icon_state = "intact"
@@ -4730,9 +4726,6 @@
 "aiN" = (
 /obj/effect/floor_decal/techfloor,
 /obj/structure/table/standard,
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 4
-	},
 /obj/item/device/geiger,
 /obj/machinery/atmospherics/pipe/simple/hidden/red{
 	dir = 4;
@@ -4747,9 +4740,6 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 9
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 10
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/red{
 	dir = 10;
 	icon_state = "intact"
@@ -4760,7 +4750,6 @@
 /obj/item/device/radio/intercom/entertainment{
 	pixel_y = 24
 	},
-/obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/effect/floor_decal/techfloor{
 	dir = 1
 	},
@@ -5173,9 +5162,6 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/virology)
 "ajO" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 4
-	},
 /obj/machinery/door/airlock/civilian{
 	name = "Living Area"
 	},
@@ -5190,9 +5176,6 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
 "ajP" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 9
-	},
 /obj/effect/floor_decal/techfloor,
 /obj/structure/table/standard,
 /obj/random/soap,
@@ -21423,7 +21406,6 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan,
 /obj/machinery/atmospherics/pipe/simple/hidden/red,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
@@ -24163,9 +24145,6 @@
 /area/command/armoury)
 "kzy" = (
 /obj/effect/floor_decal/techfloor,
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/red,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/firstdeck)
@@ -27374,9 +27353,6 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/cyan{
-	dir = 8
-	},
 /obj/machinery/light{
 	dir = 8
 	},
@@ -28501,9 +28477,6 @@
 /obj/effect/floor_decal/techfloor,
 /obj/effect/floor_decal/corner_techfloor_grid{
 	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/cyan{
-	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/red{
 	dir = 5;
@@ -40681,7 +40654,7 @@ hBr
 adK
 aeA
 tzv
-adK
+agz
 oBZ
 yfH
 adK
@@ -41287,7 +41260,7 @@ hBr
 adK
 tcA
 ahC
-agz
+afF
 ahD
 aiL
 adK
