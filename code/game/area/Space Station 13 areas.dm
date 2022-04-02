@@ -165,10 +165,6 @@ area/space/atmosalert()
 	name = "\improper Xenoflora Storage"
 	icon_state = "xeno_f_store"
 
-/area/medical/genetics
-	name = "\improper Genetics Lab"
-	icon_state = "genetics"
-
 /area/shuttle/escape/centcom
 	name = "\improper Emergency Shuttle Centcom"
 	icon_state = "shuttle"
