@@ -315,12 +315,8 @@
 			GLOB.global_announcer.autosay("WARNING: SUPERMATTER CRYSTAL DELAMINATION IMMINENT! SAFEROOMS UNBOLTED.", "Supermatter Monitor")
 			public_alert = 1
 
-			// sets to code orange if possible (broken, don't know how to fixl so commented out)
-			/*
-			var/decl/security_state/security_state = decls_repository.get_decl(GLOB.using_map.security_state)
-			var/decl/security_level/new_security_level = security_state.all
-			security_state.set_security_level(new_security_level, FALSE)
-			*/
+			// sets to code orange if possible
+			security_state.set_security_level(code_orange, FALSE)
 
 			//unbolts saferooms
 			GLOB.using_map.unbolt_saferooms() // torch
