@@ -1813,8 +1813,8 @@
 	},
 /obj/structure/cable/green,
 /obj/machinery/computer/ship/missiles{
-	icon_state = "computer";
-	dir = 1
+	dir = 1;
+	icon_state = "computer"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
@@ -13081,12 +13081,12 @@
 	icon_state = "nosmoking";
 	pixel_x = -37
 	},
-/obj/structure/closet/secure_closet/guncabinet/sidearm/small,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/closet/secure_closet/guncabinet/sidearm/bridge,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "vC" = (
