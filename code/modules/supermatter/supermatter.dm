@@ -309,18 +309,25 @@
 		alert_msg = null
 
 	if(alert_msg)
-		GLOB.global_announcer.autosay(alert_msg, "Supermatter Monitor", "Common") // Codingale was just "Engineering"
+		GLOB.global_announcer.autosay(alert_msg, "Supermatter Monitor", "Common")
 		//Public alerts
 		if((damage > emergency_point) && !public_alert)
 			GLOB.global_announcer.autosay("WARNING: SUPERMATTER CRYSTAL DELAMINATION IMMINENT! SAFEROOMS UNBOLTED.", "Supermatter Monitor")
 			public_alert = 1
+
+			// sets to code orange if possible
+			var/decl/security_state/security_state = decls_repository.get_decl(GLOB.using_map.security_state)
+			var/decl/security_level/new_security_level = /decl/security_level/default/torchdept/code_orange
+			security_state.set_security_level(new_security_level, FALSE)
+
+			//unbolts saferooms
 			GLOB.using_map.unbolt_saferooms() // torch
+
+			// plays sound every time announcement is made
 			for(var/mob/M in GLOB.player_list)
 				var/turf/T = get_turf(M)
 				if(T && (T.z in GLOB.using_map.station_levels) && !istype(M,/mob/new_player) && !isdeaf(M))
 					sound_to(M, 'sound/ambience/matteralarm.ogg')
-			var/decl/security_state/security_state = decls_repository.get_decl(GLOB.using_map.security_state)
-			security_state.set_security_level(/decl/security_level/default/torchdept/code_orange, TRUE)
 		else if(safe_warned && public_alert)
 			GLOB.global_announcer.autosay(alert_msg, "Supermatter Monitor")
 			public_alert = 0
@@ -356,6 +363,14 @@
 		shift_light(4,initial(light_color))
 	if(grav_pulling)
 		supermatter_pull(src)
+
+	//Send state changed events
+	if (damage > warning_point)
+		if (damage > damage_archived && damage_archived < warning_point)
+			GLOB.supermatter_status.raise_event(src, TRUE)
+	if (damage < warning_point)
+		if (damage < damage_archived && damage_archived > warning_point)
+			GLOB.supermatter_status.raise_event(src, FALSE)
 
 	//Ok, get the air from the turf
 	var/datum/gas_mixture/removed = null
