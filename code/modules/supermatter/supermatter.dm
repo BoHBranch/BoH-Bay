@@ -60,6 +60,7 @@
 	var/public_alert = 0 //Stick to Engineering frequency except for big warnings when integrity bad
 	var/warning_point = 100
 	var/warning_alert = "Danger! Crystal hyperstructure instability!"
+	var/danger_point = 500
 	var/emergency_point = 700
 	var/emergency_alert = "CRYSTAL DELAMINATION IMMINENT."
 	var/explosion_point = 1000
@@ -281,10 +282,17 @@
 	integrity = integrity < 0 ? 0 : integrity
 	return integrity
 
-
 /obj/machinery/power/supermatter/proc/announce_warning()
 	var/integrity = get_integrity()
 	var/alert_msg = " Integrity at [integrity]%"
+	for(var/mob/M in GLOB.player_list)
+		var/turf/T = get_turf(M)
+		if(T && (T.z in GLOB.using_map.station_levels) && !istype(M,/mob/new_player) && !isdeaf(M))
+			sound_to(M, 'sound/misc/alert24.mp3')
+
+		if(damage > danger_point)
+			if(T && (T.z in GLOB.using_map.station_levels) && !istype(M,/mob/new_player) && !isdeaf(M))
+				sound_to(M, 'sound/effects/siren.ogg')
 
 	if(damage > emergency_point)
 		alert_msg = emergency_alert + alert_msg
@@ -299,8 +307,9 @@
 		lastwarning = world.timeofday
 	else
 		alert_msg = null
+
 	if(alert_msg)
-		GLOB.global_announcer.autosay(alert_msg, "Supermatter Monitor", "Engineering")
+		GLOB.global_announcer.autosay(alert_msg, "Supermatter Monitor", "Common") // Codingale was just "Engineering"
 		//Public alerts
 		if((damage > emergency_point) && !public_alert)
 			GLOB.global_announcer.autosay("WARNING: SUPERMATTER CRYSTAL DELAMINATION IMMINENT! SAFEROOMS UNBOLTED.", "Supermatter Monitor")
@@ -310,6 +319,8 @@
 				var/turf/T = get_turf(M)
 				if(T && (T.z in GLOB.using_map.station_levels) && !istype(M,/mob/new_player) && !isdeaf(M))
 					sound_to(M, 'sound/ambience/matteralarm.ogg')
+			var/decl/security_state/security_state = decls_repository.get_decl(GLOB.using_map.security_state)
+			security_state.set_security_level(/decl/security_level/default/torchdept/code_orange, TRUE)
 		else if(safe_warned && public_alert)
 			GLOB.global_announcer.autosay(alert_msg, "Supermatter Monitor")
 			public_alert = 0
@@ -328,6 +339,7 @@
 		soundloop.volume = min(100, (round(power/7)+1))
 	else
 		soundloop.volume = 0
+
 
 	if(damage > explosion_point)
 		if(!exploded)
@@ -580,3 +592,111 @@
 #undef DETONATION_SHUTDOWN_RNG_FACTOR
 #undef DETONATION_SOLAR_BREAK_CHANCE
 #undef WARNING_DELAY
+
+//Warning lights
+/obj/effect/spinning_light
+	var/spin_rate = 1 SECOND
+	var/_size = 48
+	var/_factor = 0.5
+	var/_density = 4
+	var/_offset = 30
+	plane = EFFECTS_ABOVE_LIGHTING_PLANE
+	layer = EYE_GLOW_LAYER
+	mouse_opacity = 0
+
+/obj/effect/spinning_light/Initialize()
+	. = ..()
+	filters = filter(type= "rays", size = _size, color = COLOR_ORANGE, factor = _factor, density = _density, offset = _offset)
+
+	alpha = 200
+
+	//Rays start rotated which made synchronizing the scaling a bit difficult, so let's move it 45 degrees
+	var matrix/m = new
+	var/matrix/test = new
+	test.Turn(-45)
+	var/matrix/squished = new
+	squished.Scale(1, 0.5)
+	animate(src, transform = (test * m.Turn(90)), spin_rate / 4, loop = -1,)
+	animate(transform =      test * m.Turn(90), spin_rate / 4, loop = -1, )
+	animate(transform =      (test * m.Turn(90)), spin_rate / 4, loop = -1, )
+	animate(transform =      test * matrix(),   spin_rate / 4, loop = -1, )
+
+/obj/machinery/rotating_alarm
+	name = "Industrial alarm"
+	desc = "An industrial rotating alarm light."
+	icon = 'icons/obj/engine.dmi'
+	icon_state = "alarm"
+	idle_power_usage = 0
+	active_power_usage = 0
+
+	var/on = 0					// 1 if on, 0 if off
+	var/construct_type = /obj/machinery/light_construct
+
+	var/static/obj/effect/spinning_light/spin_effect = null
+
+	var/alarm_light_color = COLOR_ORANGE
+	var/angle = 0 //This is an angle to rotate the colour of alarm and its light. Default is orange, so, a 45 degree angle clockwise will make it green
+
+/obj/machinery/rotating_alarm/Initialize()
+	. = ..()
+
+	if(!spin_effect)
+		spin_effect = new(null)
+
+	//Setup colour
+	var/list/color_matrix = color_rotation(angle)
+
+	color = color_matrix
+
+	var/HSV = RGBtoHSV(alarm_light_color)
+	var/RGB = HSVtoRGB(RotateHue(HSV, angle))
+
+	alarm_light_color = RGB
+
+	set_dir(dir) //Set dir again so offsets update correctly
+
+/obj/machinery/rotating_alarm/set_dir(ndir) //Due to effect, offsets cannot be part of sprite, so need to set it for each dir
+	. = ..()
+	if(dir == NORTH)
+		pixel_y = -13
+	if(dir == SOUTH)
+		pixel_y = 28
+	if(dir == WEST)
+		pixel_x = 20
+	if(dir == EAST)
+		pixel_x = -20
+
+/obj/machinery/rotating_alarm/proc/set_on()
+	vis_contents += spin_effect
+	set_light(1, 0.5, 2, 0.3, alarm_light_color)
+	on = TRUE
+
+/obj/machinery/rotating_alarm/proc/set_off()
+	vis_contents -= spin_effect
+	set_light(0)
+	on = FALSE
+
+/obj/machinery/rotating_alarm/supermatter
+	name = "Supermatter alarm"
+	desc = "An industrial rotating alarm light. This one is used to monitor supermatter engines."
+
+	frame_type = /obj/item/frame/supermatter_alarm
+	construct_state = /decl/machine_construction/default/item_chassis
+	base_type = /obj/machinery/rotating_alarm/supermatter
+	anchored = 1
+
+/obj/machinery/rotating_alarm/supermatter/Initialize()
+	. = ..()
+	GLOB.supermatter_status.register_global(src, .proc/check_supermatter)
+
+/obj/machinery/rotating_alarm/supermatter/Destroy()
+	GLOB.supermatter_status.unregister_global(src, .proc/check_supermatter)
+	. = ..()
+
+/obj/machinery/rotating_alarm/supermatter/proc/check_supermatter(obj/machinery/power/supermatter/SM, danger)
+	if (SM)
+		if (SM.z in GetConnectedZlevels(src.z))
+			if (danger && !on)
+				set_on()
+			else if (!danger && on)
+				set_off()
