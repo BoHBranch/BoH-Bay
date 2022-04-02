@@ -288,7 +288,7 @@
 	for(var/mob/M in GLOB.player_list)
 		var/turf/T = get_turf(M)
 		if(T && (T.z in GLOB.using_map.station_levels) && !istype(M,/mob/new_player) && !isdeaf(M))
-			sound_to(M, 'sound/misc/alert24.mp3')
+			sound_to(M, 'sound/misc/alert24.ogg')
 
 		if(damage > danger_point)
 			if(T && (T.z in GLOB.using_map.station_levels) && !istype(M,/mob/new_player) && !isdeaf(M))
