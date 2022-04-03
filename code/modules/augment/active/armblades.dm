@@ -1,10 +1,10 @@
-/obj/item/weapon/material/armblade
+/obj/item/weapon/material/armblade //Tested in game, force = 30 with steel which is what it's usually made of. Variations can exist.
 	icon_state = "armblade"
 	item_state = null
 	name = "armblade"
 	icon = 'icons/obj/augment.dmi'
 	desc = "A handy utility blade for the discerning augmentee. Warranty void if used for cutting."
-	base_parry_chance = 30
+	base_parry_chance = 30 //Difference between armblades is how well it parries and the blade size, which controls what it can dismember
 	unacidable = TRUE
 	sharp = TRUE
 	edge = TRUE
