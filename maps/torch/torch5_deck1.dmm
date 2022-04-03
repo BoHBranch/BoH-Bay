@@ -1465,14 +1465,8 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/ammo_magazine/pistol/double,
-/obj/item/ammo_magazine/pistol/double,
-/obj/item/ammo_magazine/pistol/double,
-/obj/item/ammo_magazine/pistol/double,
-/obj/item/ammo_magazine/pistol/double,
-/obj/item/ammo_magazine/pistol/double,
-/obj/item/ammo_magazine/pistol/double,
-/obj/item/ammo_magazine/pistol/double,
+/obj/item/weapon/storage/box/ammo/solar/full,
+/obj/item/weapon/storage/box/ammo/solar/full,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "adi" = (
@@ -1503,14 +1497,10 @@
 	dir = 8;
 	health = 1e+006
 	},
-/obj/item/ammo_magazine/pistol/double/pepperball,
-/obj/item/ammo_magazine/pistol/double/pepperball,
-/obj/item/ammo_magazine/pistol/double/pepperball,
-/obj/item/ammo_magazine/pistol/double/pepperball,
-/obj/item/ammo_magazine/pistol/double/rubber,
-/obj/item/ammo_magazine/pistol/double/rubber,
-/obj/item/ammo_magazine/pistol/double/rubber,
-/obj/item/ammo_magazine/pistol/double/rubber,
+/obj/item/ammo_magazine/smg_top/rubber,
+/obj/item/ammo_magazine/smg_top/rubber,
+/obj/item/ammo_magazine/smg_top/rubber,
+/obj/item/ammo_magazine/smg_top/rubber,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "adk" = (
@@ -2099,10 +2089,7 @@
 	dir = 4
 	},
 /obj/structure/table/rack,
-/obj/item/weapon/gun/energy/gun/secure,
-/obj/item/weapon/gun/energy/gun/secure,
-/obj/item/weapon/gun/energy/gun/secure/corporate,
-/obj/item/weapon/gun/energy/gun/secure/corporate,
+/obj/item/weapon/gun/energy/plasmastun,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "aen" = (
@@ -2679,7 +2666,6 @@
 "afo" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/secure_closet/forensics,
-/obj/item/weapon/gun/energy/gun/small/secure,
 /turf/simulated/floor/tiled/monotile,
 /area/security/detectives_office)
 "afp" = (
@@ -7181,10 +7167,8 @@
 	health = 1e+006
 	},
 /obj/structure/table/rack,
-/obj/item/weapon/gun/energy/taser/carbine,
-/obj/item/weapon/gun/energy/taser/carbine,
-/obj/item/weapon/gun/energy/taser/carbine,
-/obj/item/weapon/gun/energy/taser/carbine,
+/obj/item/weapon/gun/projectile/automatic/sec_smg,
+/obj/item/weapon/gun/projectile/automatic/sec_smg,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "any" = (
@@ -8944,10 +8928,8 @@
 /obj/machinery/light,
 /obj/structure/window/reinforced,
 /obj/structure/table/rack,
-/obj/item/weapon/gun/energy/gun/secure,
-/obj/item/weapon/gun/energy/gun/secure,
-/obj/item/weapon/gun/energy/gun/secure,
-/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/taser/carbine,
+/obj/item/weapon/gun/energy/taser/carbine,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "aqJ" = (
