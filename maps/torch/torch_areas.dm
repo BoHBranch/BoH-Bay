@@ -148,6 +148,10 @@
 /area/crew_quarters/safe_room/thirddeck
 	name = "\improper Third Deck Safe Room"
 
+/area/crew_quarters/public_office
+	name = "public_office"
+	icon_state = "crew_quarters"
+
 /area/crew_quarters/laundry
 	name = "\improper Laundry Room"
 	icon_state = "Sleep"
@@ -1741,12 +1745,6 @@
 	icon_state = "heads"
 	req_access = list(access_psiadvisor)
 
-//Lawyer Office
-/area/crew_quarters/heads/office/lawyer_office
-//	name = "\improper Lawyer Office"// Not for the moment, sorry. :(
-	name = "\improper Vacant Cryo Office"
-	icon_state = "heads"
-//	req_access = list(access_lawyer)
 /*
 /area/crew_quarters/courtroom
 	name = "\improper Courtroom"

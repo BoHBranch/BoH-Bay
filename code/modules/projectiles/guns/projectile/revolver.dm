@@ -65,7 +65,9 @@
 
 /obj/item/weapon/gun/projectile/revolver/unload_ammo(mob/user, var/allow_dump=1)
 	if(!broke_open)
-		to_chat(user, SPAN_WARNING("You can't unload a closed revolver!"))
+		broke_open = !broke_open // open the revolver and don't eject casings, basically.
+		update_open_icon()
+		to_chat(user, SPAN_WARNING("You open the cylinder of the revolver."))
 		return
 	..()
 

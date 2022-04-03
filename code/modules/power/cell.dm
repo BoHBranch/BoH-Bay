@@ -244,8 +244,21 @@
 	origin_tech = list(TECH_POWER = 2, TECH_BIO = 4)
 	icon = 'icons/mob/simple_animal/slimes.dmi' //'icons/obj/harvest.dmi'
 	icon_state = "yellow slime extract" //"potato_battery"
-	maxcharge = 200
+	maxcharge = 1000
 	matter = null
+	var/recharge_amount = 10
+
+/obj/item/weapon/cell/slime/Initialize()
+	START_PROCESSING(SSobj, src)
+	. = ..()
+
+/obj/item/weapon/cell/slime/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	. = ..()
+
+/obj/item/weapon/cell/slime/Process()
+	if(charge < maxcharge)
+		give(recharge_amount)
 
 // Self-charging power cell.
 /obj/item/weapon/cell/mantid

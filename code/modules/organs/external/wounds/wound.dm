@@ -11,6 +11,7 @@
 	var/min_damage = 0         // amount of damage the current wound type requires(less means we need to apply the next healing stage)
 	var/bandaged = 0           // is the wound bandaged?
 	var/clamped = 0            // Similar to bandaged, but works differently
+	var/clotted = 0 //bandaged, but for bleeding only
 	var/salved = 0             // is the wound salved?
 	var/disinfected = 0        // is the wound disinfected?
 	var/created = 0
@@ -93,6 +94,7 @@
 	if (other.is_surgical() != src.is_surgical()) return 0
 	if (!(other.bandaged) != !(src.bandaged)) return 0
 	if (!(other.clamped) != !(src.clamped)) return 0
+	if (!(other.clotted) != !(src.clotted)) return 0
 	if (!(other.salved) != !(src.salved)) return 0
 	if (!(other.disinfected) != !(src.disinfected)) return 0
 	if (other.parent_organ != parent_organ) return 0
@@ -197,7 +199,7 @@
 	for(var/obj/item/thing in embedded_objects)
 		if(thing.w_class > ITEM_SIZE_SMALL)
 			return FALSE
-	if(bandaged || clamped)
+	if(bandaged || clamped || clotted)
 		return FALSE
 	return ((bleed_timer > 0 || wound_damage() > bleed_threshold) && current_stage <= max_bleeding_stage)
 

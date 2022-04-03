@@ -15,6 +15,23 @@
 	firemodes = list(
 		list(mode_name="primary",   projectile_type = /obj/item/projectile/beam/particle/defence),
 		)
+	var/windup = 5
+
+/obj/item/weapon/gun/energy/particle/support/handle_post_fire(mob/user, atom/target)
+	..()
+
+/obj/item/weapon/gun/energy/particle/support/afterattack(atom/A, mob/living/user, adjacent, params)
+	if(adjacent) return
+
+	if(!user.aiming)
+		user.aiming = new(user)
+
+	if(windup > 0)
+		if(do_after(user, windup)) // Do the windup.
+			Fire(A,user,params) //Otherwise, fire normally.
+	else
+		Fire(A,user,params) //Otherwise, fire normally.
+
 
 /obj/item/weapon/gun/energy/drone_particle//near identical to standard one, just without the limit as it's not a subpath
 	name = "particle lance"

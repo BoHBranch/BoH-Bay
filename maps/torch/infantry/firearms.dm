@@ -186,6 +186,16 @@
 		)
 
 /////////
+// Ceremonial Carbine
+/////////
+/obj/item/weapon/gun/energy/laser/secure/ceremonial
+	name = "Hephaestus G40A"
+	desc = "A Hephaestus Industries G40A carbine. \
+	This model hasn't been in service for a number of years, only functioning now as a ceremonial weapon and used in training excercises."
+	max_shots = 6
+	icon_state = "laser"
+
+/////////
 // rifle 3
 /////////
 /*

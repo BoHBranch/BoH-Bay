@@ -211,6 +211,7 @@
 	item_state = "plasma_rifle"
 	wielded_item_state = "plasma_rifle-wielded"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_POWER = 3)
+	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
 	fire_delay = 20
 	max_shots = 16

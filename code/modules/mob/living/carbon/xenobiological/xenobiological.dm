@@ -57,6 +57,7 @@
 
 	var/colour = "grey"
 
+	holder_type = /obj/item/weapon/holder/slime
 	var/core_removal_stage = 0 //For removing cores.
 	var/datum/reagents/metabolism/ingested
 

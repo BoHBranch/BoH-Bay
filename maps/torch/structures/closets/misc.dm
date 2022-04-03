@@ -45,6 +45,7 @@
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel)),
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger, 50),
 		/obj/item/weapon/storage/fakebook,
+		/obj/item/gunbox/corpo,
 		/obj/item/device/radio/headset/heads/torchntcommand,
 		/obj/item/device/radio/headset/heads/torchntcommand/alt
 	)
@@ -66,6 +67,7 @@
 		/obj/item/device/flash,
 		/obj/item/clothing/accessory/storage/holster/armpit,
 		/obj/item/gunbox/bodyguard,
+		/obj/item/weapon/gun/energy/pulse_rifle/carbine/old,
 		/obj/item/weapon/storage/secure/briefcase,
 		/obj/item/clothing/shoes/laceup,
 		/obj/item/clothing/under/rank/internalaffairs/plain/nt,
@@ -102,6 +104,9 @@
 		/obj/item/clothing/suit/storage/toggle/suit/black,
 		/obj/item/clothing/glasses/sunglasses,
 		/obj/item/clothing/glasses/sunglasses/big,
+		/obj/item/clothing/under/solgov/pol,
+		/obj/item/clothing/head/soft/solgov/pol,
+		/obj/item/gunbox/pol,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack, /obj/item/weapon/storage/backpack/satchel)),
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger, 50)
 	)
@@ -118,6 +123,7 @@ obj/structure/closet/secure_closet/solguard
 		/obj/item/weapon/gun/projectile/pistol/military,
 		/obj/item/ammo_magazine/pistol/double = 2,
 		/obj/item/ammo_magazine/pistol/double/rubber = 2,
+		/obj/item/weapon/gun/energy/laser/secure/ceremonial,
 		/obj/item/weapon/storage/secure/briefcase,
 		/obj/item/clothing/shoes/laceup,
 		/obj/item/clothing/under/rank/internalaffairs/plain,
@@ -194,6 +200,16 @@ obj/structure/closet/secure_closet/solguard
 			/obj/item/clothing/accessory/storage/holster/thigh = 3,
 			/obj/item/weapon/storage/box/ammo/solar/full = 1,
 			/obj/item/weapon/gun/projectile/pistol/military/alt/solar/cabinet = 3,
+	)
+
+/obj/structure/closet/secure_closet/guncabinet/sidearm/bridge
+	name = "personal sidearm cabinet"
+
+/obj/structure/closet/secure_closet/guncabinet/sidearm/bridge/WillContain()
+	return list(
+			/obj/item/clothing/accessory/storage/holster/thigh = 3,
+			/obj/item/weapon/storage/box/ammo/solar/full = 1,
+			/obj/item/weapon/gun/energy/gun/small/secure/sec = 3,
 	)
 
 /obj/structure/closet/secure_closet/guncabinet/sidearm/combined

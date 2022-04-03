@@ -128,6 +128,25 @@ var/list/holder_mob_icon_cache = list()
 	for(var/mob/M in src.contents)
 		M.attackby(W,user)
 
+/obj/item/weapon/holder/slime
+	origin_tech = list(TECH_BIO = 6)
+
+/obj/item/weapon/holder/slime/sync(var/mob/living/M)
+	dir = 2
+	overlays.Cut()
+	icon = M.icon
+	icon_state = M.icon_state
+	item_state = "slime"
+	color = M.color
+	name = M.name
+	desc = M.desc
+	overlays |= M.overlays
+	var/mob/living/carbon/human/H = loc
+	last_holder = H
+	register_all_movement(H, M)
+
+	update_held_icon()
+
 //Mob procs and vars for scooping up
 /mob/living/var/holder_type
 
