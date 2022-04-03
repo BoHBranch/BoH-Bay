@@ -40,8 +40,8 @@
 	var/obj/effect/overmap/visitable/ship/ship = waypoint_sector(turf_location)
 	target = ship.get_target(TARGET_SHIP)
 
-	
-	
+
+
 // Anti-missile missile booster with more fuel and more thrust per unit of fuel
 // Intended for use with the anti-missile equipment
 /obj/item/missile_equipment/thruster/hunter
@@ -58,19 +58,19 @@
 	var/turf/turf_location = get_turf(src)
 	var/obj/effect/overmap/visitable/ship/ship = waypoint_sector(turf_location)
 	target = ship.get_target(TARGET_MISSILE)
-	
+
 
 // Takes in coordinates and flies to said coordinates (although very slowly, so the range isn't great)
 /obj/item/missile_equipment/thruster/point
 	name = "pointman missile booster"
 	desc = "A missile booster designed to travel to and rest at a given point. Steers away from structures."
 	icon_state = "dumbfire"
-	
+
 /obj/item/missile_equipment/thruster/point/on_touch_map_edge(var/obj/effect/overmap/projectile/P)
 	var/turf/turf_location = get_turf(src)
 	var/obj/effect/overmap/visitable/ship/ship = waypoint_sector(turf_location)
 	target = locate(ship.get_target(TARGET_POINT)[1], ship.get_target(TARGET_POINT)[2], GLOB.using_map.overmap_z)
-	
+
 /obj/item/missile_equipment/thruster/planet
 	name = "planetary missile booster"
 	desc = "The standard fare missile booster, but with planetary flight capabilities."
@@ -104,7 +104,7 @@
 
 	var/turf/turf_location = get_turf(src)
 	var/obj/effect/overmap/visitable/ship/ship = waypoint_sector(turf_location)
-	
+
 	var/target_x = ship.get_target(TARGET_PLANET)[2]
 	var/target_y = ship.get_target(TARGET_PLANET)[3]
 	target = ship.get_target(TARGET_PLANET)[1]
@@ -113,5 +113,4 @@
 	var/turf/tgt = locate(target_x, target_y, planet.map_z[planet.map_z.len])
 	planetary_target = tgt
 
-	return 
-	
+	return
