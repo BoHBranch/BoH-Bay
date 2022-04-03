@@ -199,13 +199,14 @@
 	//Ok all the checks are over let's do the quick fix.
 	if(doing_something == FALSE)
 		doing_something = TRUE
-		if(affected.status & ORGAN_ARTERY_CUT)//Fix arteries first,
+		if(affected.status & ORGAN_ARTERY_CUT && user.get_skill_value(SKILL_MEDICAL) == SKILL_ADEPT)//Fix arteries if they are trained in medical.
 			user.visible_message(SPAN_NOTICE("[user] begins to suture [H]'s arteries."))
 			playsound(src, 'sound/weapons/suture.ogg', 50, FALSE)
 			H.adjustHalLoss(50-(H.chem_effects[CE_PAINKILLER]/5)) // The Halloss is here because pain on its own doesn't knock you out at first, since the pain itself is a slow burn, our halloss is reduced by our painkiller rating divided by 5.
 			H.custom_pain("The pain in your [affected.name] is unbearable!",rand(100, 120),affecting = affected)
-			if(user.do_skilled(5 SECONDS, SKILL_MEDICAL, H))
-				if((H == user && prob(75)) || prob(user.skill_fail_chance(SKILL_MEDICAL,50, SKILL_ADEPT)))
+			var/delay = 30 * user.skill_delay_mult(SKILL_MEDICAL) //Double the delay of CPR based on skill
+			if(do_after(user, delay, src)
+				if((H == user && prob(75)) || prob(user.skill_fail_chance(SKILL_MEDICAL,50, SKILL_EXPERT)))
 					user.visible_message(SPAN_DANGER("\The [user] fumbles [src]."), SPAN_DANGER("You fumble [src]."), SPAN_DANGER("You hear something being knit."))
 					doing_something = FALSE
 					return
