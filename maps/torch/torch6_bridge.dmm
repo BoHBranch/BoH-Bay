@@ -15572,8 +15572,8 @@
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/closet/secure_closet/CMO_torch,
 /obj/item/weapon/storage/belt/medical,
-/obj/item/weapon/book/manual/sol_sop,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/book/manual/sol_sop,
 /obj/item/weapon/gun/energy/gun/small/secure/sec,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
