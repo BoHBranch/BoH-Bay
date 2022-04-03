@@ -878,7 +878,7 @@
 	reagents_to_add = list(/datum/reagent/nutriment = 6)
 	bitesize = 2
 
-/obj/item/weapon/reagent_containers/food/snacks/bananapie
+/obj/item/weapon/reagent_containers/food/snacks/pie
 	name = "banana cream pie"
 	desc = "A crumbly pie crust stuffed with sliced banana and whipped cream. Only tenuously related to clowns."
 	icon_state = "pie"
