@@ -1,4 +1,4 @@
-/obj/item/material/armblade
+/obj/item/weapon/material/armblade
 	icon_state = "armblade"
 	item_state = null
 	name = "armblade"
@@ -21,7 +21,7 @@
 	augment_flags = AUGMENT_MECHANICAL | AUGMENT_SCANNABLE
 
 
-/obj/item/material/armblade/claws
+/obj/item/weapon/material/armblade/claws
 	icon_state = "wolverine"
 	name = "combat claws"
 	desc = "These do not grow back."
@@ -52,7 +52,7 @@
 	augment_flags = AUGMENT_MECHANICAL | AUGMENT_BIOLOGICAL
 
 
-/obj/item/material/armblade/wrist
+/obj/item/weapon/material/armblade/wrist
 	name = "wrist blade"
 	desc = "A thin and very sharp folding blade specially made for combat, made from a specialized alloy that prevents all that nasty blood and viscera from sticking to it. Its light weight allows for rapid slashing attacks."
 	icon_state = "wristblade"
