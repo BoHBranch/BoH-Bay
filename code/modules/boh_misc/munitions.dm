@@ -10,6 +10,7 @@
 	icon_state = "bdshell"
 	spent_icon = "bdshell-spent"
 	projectile_type = /obj/item/projectile/bullet/pellet/birdshot
+	ammo_stack = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/birdshot/two
 	matter = list(MATERIAL_STEEL = 80)
 
 //projectile
@@ -21,6 +22,7 @@
 	range_step = 2
 	spread_step = 10
 	agony = 15//up from 8.5
+	shrapnel_chance_multiplier = 99 //Guarantees shrapnel. Needed for the gimmick.
 	embed = 1//shouldn't HAVE to be noted, but, y'know, seems like it's a problem.
 
 //holder
@@ -161,6 +163,7 @@
 	spent_icon = "sabshell-spent"
 	caliber = CALIBER_SABOT
 	projectile_type = /obj/item/projectile/bullet/sabot
+	ammo_stack = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful/sabot/two
 	matter = list(MATERIAL_STEEL = 420)
 
 //projectile
@@ -183,7 +186,9 @@
 	matter = list(MATERIAL_STEEL = 1240)
 	marking_color = COLOR_GUNMETAL
 
+/////////
 //Skrell QX2
+/////////
 
 //magazine
 /obj/item/ammo_magazine/skrell_shotgun
@@ -216,3 +221,29 @@
 	spent_icon = "skrellflechette-spent"
 	caliber = CALIBER_SKRELL_SHOTGUN
 	projectile_type = /obj/item/projectile/bullet/magnetic/skrell_flechette
+
+/////////
+// smg frangibles
+/////////
+
+//casing
+/obj/item/ammo_casing/pistol/small/frangible
+	desc = "A small pistol bullet casing."
+	projectile_type = /obj/item/projectile/bullet/pistol/frangible
+	caliber = CALIBER_PISTOL_FRANGIBLE
+	icon_state = "smallcasing"
+	spent_icon = "smallcasing-spent"
+
+//projectile
+/obj/item/projectile/bullet/pistol/frangible
+	name = "frangible bullet"
+	damage = 15
+	armor_penetration = 35 //Lets try this. Up from 5.
+	shrapnel_chance_multiplier = 2 //Smaller, tumbling projectile.
+	arterial_bleed_chance_multiplier = 1.2 //Less post-pen compared to rifles.
+
+//Magazine
+/obj/item/ammo_magazine/smg_top/frangible
+	labels = list("frangible")
+	caliber = CALIBER_PISTOL_FRANGIBLE
+	ammo_type = /obj/item/ammo_casing/pistol/small/frangible

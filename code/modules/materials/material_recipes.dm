@@ -78,6 +78,7 @@
 	. += new/datum/stack_recipe/furniture/computerframe(src)
 	. += new/datum/stack_recipe/furniture/girder(src)
 	. += new/datum/stack_recipe/furniture/machine(src)
+	. += new/datum/stack_recipe/furniture/floor_machine(src)
 	. += new/datum/stack_recipe/furniture/turret(src)
 	. += new/datum/stack_recipe_list("airlock assemblies", create_recipe_list(/datum/stack_recipe/furniture/door_assembly))
 	. += new/datum/stack_recipe/grenade(src)
@@ -98,6 +99,7 @@
 	. += new/datum/stack_recipe/ai_core(src)
 	. += new/datum/stack_recipe/furniture/crate(src)
 	. += new/datum/stack_recipe/grip(src)
+	. += new/datum/stack_recipe/missile_casing(src)
 
 /material/stone/generate_recipes(var/reinforce_material)
 	. = ..()

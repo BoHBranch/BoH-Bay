@@ -138,6 +138,15 @@
 		return
 	..()
 
+/obj/item/clothing/accessory/badge/holo/ascent
+	name = "mark of the devoted"
+	desc = "A charm of mantid design, denoting it's holder as an Aurum. It glistens with a controlled, humming blue energy."
+	color = null
+	badge_string = "Par"
+	badge_access = access_ascent
+	icon_state = "ascentmark"
+	item_state = "collar_holo_overlay"
+
 /obj/item/weapon/storage/box/holobadge
 	name = "holobadge box"
 	desc = "A box containing security holobadges."

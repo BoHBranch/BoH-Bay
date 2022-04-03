@@ -73,6 +73,20 @@
 	build_path = /obj/machinery/computer/operating
 	origin_tech = list(TECH_DATA = 2, TECH_BIO = 2)
 
+/obj/item/weapon/stock_parts/circuitboard/curefab
+	name = T_BOARD("cure fabricator")
+	build_path = /obj/machinery/computer/curer
+
+/obj/item/weapon/stock_parts/circuitboard/splicer
+	name = T_BOARD("disease splicer")
+	build_path = /obj/machinery/computer/diseasesplicer
+	origin_tech = list(TECH_DATA = 5, TECH_BIO = 5)
+
+/obj/item/weapon/stock_parts/circuitboard/centrifuge
+	name = T_BOARD("isolation centrifuge")
+	build_path = /obj/machinery/computer/centrifuge
+	origin_tech = list(TECH_DATA = 2, TECH_BIO = 3)
+
 /obj/item/weapon/stock_parts/circuitboard/helm
 	name = T_BOARD("helm control console")
 	build_path = /obj/machinery/computer/ship/helm
@@ -80,6 +94,10 @@
 /obj/item/weapon/stock_parts/circuitboard/engine
 	name = T_BOARD("engine control console")
 	build_path = /obj/machinery/computer/ship/engines
+
+/obj/item/weapon/stock_parts/circuitboard/missiles
+	name = T_BOARD("target control console")
+	build_path = /obj/machinery/computer/ship/missiles
 
 /obj/item/weapon/stock_parts/circuitboard/nav
 	name = T_BOARD("navigation console")

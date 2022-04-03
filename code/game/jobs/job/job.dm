@@ -51,12 +51,13 @@
 	var/list/species_branch_rank_cache_ = list()
 	var/list/psi_faculties                // Starting psi faculties, if any.
 	var/can_be_psionic = TRUE             // If true, joining in has a chance to give you latent psionics. Chance set in psi_latency_chance.
-	var/psi_latency_chance = 10            // Chance of an additional psi latency, if any.
+	var/psi_latency_chance = 25            // Chance of an additional psi latency, if any.
 	var/give_psionic_implant_on_join = FALSE // If psionic, will be implanted for control when set to TRUE.
 
 	var/required_language
 	var/is_whitelisted = FALSE
 	var/max_pow_cat = 0 //If the rank pow_cat is great then this, set to this.  This is used for Galilei Convention IDs
+	var/max_cit_rank = 0 //If the rank cit_rank is great then this, set to this.
 
 /datum/job/New()
 

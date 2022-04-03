@@ -102,6 +102,9 @@
 				stat("Tank Pressure", internal.air_contents.return_pressure())
 				stat("Distribution Pressure", internal.distribute_pressure)
 
+		var/obj/item/organ/internal/xeno/plasmavessel/P = internal_organs_by_name[BP_PLASMA]
+		if(P)
+			stat(null, "Phoron Stored: [P.stored_plasma]/[P.max_plasma]")
 		var/obj/item/organ/internal/cell/potato = internal_organs_by_name[BP_CELL]
 		if(potato && potato.cell)
 			stat("Battery charge:", "[potato.get_charge()]/[potato.cell.maxcharge]")
@@ -919,6 +922,10 @@
 					if(H.brainmob.mind)
 						H.brainmob.mind.transfer_to(src)
 						qdel(H)
+
+	for (var/ID in virus2)
+		var/datum/disease2/disease/V = virus2[ID]
+		V.cure(src)
 
 	losebreath = 0
 

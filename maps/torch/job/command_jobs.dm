@@ -158,7 +158,8 @@
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
 	                    SKILL_CHEMISTRY   = SKILL_BASIC,
-						SKILL_DEVICES     = SKILL_ADEPT)
+						SKILL_DEVICES     = SKILL_ADEPT,
+						SKILL_VIROLOGY    = HAS_PERK)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
 	                    SKILL_ANATOMY     = SKILL_MAX,
@@ -383,7 +384,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/solrep
 	alt_titles = list(
 		"Sol Gov Diplomat",
-		"Sol Gov Negotiator", 
+		"Sol Gov Negotiator",
 		"Sol Gov Political Officer")
 	allowed_branches = list(
 		/datum/mil_branch/solgov
@@ -404,9 +405,7 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-	access = list(access_representative, access_security, access_medical, 
-					access_maint_tunnels, access_bridge, access_janitor, 
-					access_cargo, access_hangar, access_solgov_crew)
+	access = list(access_representative, access_maint_tunnels, access_bridge, access_solgov_crew)
 
 
 /datum/job/solrep/get_description_blurb()
@@ -432,8 +431,12 @@
 	minimal_player_age = 2
 	minimum_character_age = list(SPECIES_HUMAN = 21, SPECIES_CUSTOM = 23)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sol_bodyguard
-	allowed_branches = list(/datum/mil_branch/solgov)
-	allowed_ranks = list(/datum/mil_rank/sol/agent)
+	allowed_branches = list(/datum/mil_branch/spacefbi, /datum/mil_branch/marine_corps)
+	allowed_ranks = list(/datum/mil_rank/sol/agent, /datum/mil_rank/marine_corps/e6,
+		/datum/mil_rank/marine_corps/e7,
+		/datum/mil_rank/marine_corps/w1,
+		/datum/mil_rank/marine_corps/w2,
+		/datum/mil_rank/marine_corps/w3)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
@@ -445,11 +448,10 @@
 	                    SKILL_BUREAUCRACY = SKILL_MAX)
 	alt_titles = list(
 		"Sol Federal Assistant",
-		"Sol Federal Chaperone"	)
-	skill_points = 20
-	access = list(access_representative, access_security, access_medical,
-					access_bridge, access_janitor, access_cargo, 
-					access_hangar, access_solgov_crew, access_sec_guard)
+		"Sol Federal Chaperone",
+		"Marine Embassy Guard")
+	skill_points = 24
+	access = list(access_representative, access_maint_tunnels, access_bridge, access_solgov_crew, access_sec_guard)
 	defer_roundstart_spawn = TRUE
 
 /datum/job/solguard/is_position_available()

@@ -355,6 +355,20 @@ proc/isInSight(var/atom/A, var/atom/B)
 		i++
 	return candidates
 
+// Same as above but for alien candidates.
+
+/proc/get_alien_candidates()
+	var/list/candidates = list() //List of candidate KEYS to assume control of the new larva ~Carn
+	var/i = 0
+	while(candidates.len <= 0 && i < 5)
+		for(var/mob/observer/ghost/G in GLOB.player_list)
+			if(MODE_XENOMORPH in G.client.prefs.be_special_role)
+				if(((G.client.inactivity/10)/60) <= ALIEN_SELECT_AFK_BUFFER + i) // the most active players are more likely to become an alien
+					if(!(G.mind && G.mind.current && G.mind.current.stat != DEAD))
+						candidates += G.key
+		i++
+	return candidates
+
 /proc/ScreenText(obj/O, maptext="", screen_loc="CENTER-7,CENTER-7", maptext_height=480, maptext_width=480)
 	if(!isobj(O))	O = new /obj/screen/text()
 	O.maptext = maptext
@@ -564,3 +578,67 @@ datum/projectile_data
 		viewX = text2num(viewrangelist[1])
 		viewY = text2num(viewrangelist[2])
 	return list(viewX, viewY)
+
+/proc/window_flash(client/C)
+	if (ismob(C))
+		var/mob/M = C
+		if (M.client)
+			C = M.client
+	if (!C)
+		return
+	winset(C, "mainwindow", "flash=5")
+
+/proc/showCandidatePollWindow(mob/M, poll_time, Question, list/candidates, time_passed, flashwindow = TRUE)
+	set waitfor = 0
+
+	sound_to(M, 'sound/misc/notice2.ogg')
+	if (flashwindow)
+		window_flash(M.client)
+	switch (askuser(M, Question, "Please answer in [DisplayTimeText(poll_time)]!", "Yes", "No", StealFocus = 0, Timeout = poll_time))
+		if (1)
+			to_chat(M, SPAN_NOTICE("Choice registered: Yes."))
+			if (time_passed + poll_time <= world.time)
+				to_chat(M, SPAN_DANGER("Sorry, you answered too late to be considered!"))
+				candidates -= M
+			else
+				candidates += M
+		if (2)
+			to_chat(M, SPAN_DANGER("Choice registered: No."))
+			candidates -= M
+		else
+			candidates -= M
+
+/proc/pollCandidates(Question, poll_time = 300, flashwindow = TRUE, list/group = null)
+	var/time_passed = world.time
+	if (!Question)
+		Question = "Would you like to be a special role?"
+	var/list/result = list()
+	for (var/m in group)
+		var/mob/M = m
+		if (!M.key || !M.client)
+			continue
+
+		showCandidatePollWindow(M, poll_time, Question, result, time_passed, flashwindow)
+	sleep(poll_time)
+
+	for (var/mob/M in result)
+		if (!M.key || !M.client)
+			result -= M
+
+	listclearnulls(result)
+
+	return result
+
+/proc/pollGhostCandidates(Question, poll_time = 300, flashwindow = TRUE)
+	var/list/candidates = list()
+
+	for (var/mob/observer/ghost/G in GLOB.player_list)
+		candidates += G
+
+	return pollCandidates(Question, poll_time, flashwindow, candidates)
+
+/proc/pollCandidatesForMob(Question, poll_time = 300, mob/M)
+	var/list/L = pollGhostCandidates(Question, poll_time)
+	if (!M || QDELETED(M) || !M.loc)
+		return list()
+	return L

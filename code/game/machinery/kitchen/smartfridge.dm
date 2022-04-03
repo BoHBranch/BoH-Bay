@@ -93,6 +93,8 @@
 /obj/machinery/smartfridge/secure/virology/accept_check(var/obj/item/O as obj)
 	if(istype(O,/obj/item/weapon/reagent_containers/glass/beaker/vial/))
 		return 1
+	if(istype(O,/obj/item/weapon/virusdish/))
+		return 1
 	return 0
 
 /obj/machinery/smartfridge/chemistry
@@ -177,7 +179,7 @@
 			var/remove_thing = FALSE
 			if(istype(thing, /obj/item/weapon/reagent_containers/food/snacks))
 				var/obj/item/weapon/reagent_containers/food/snacks/S = thing
-				if(S.dry || !I.get_specific_product(get_turf(src), S)) 
+				if(S.dry || !I.get_specific_product(get_turf(src), S))
 					continue
 				if(S.dried_type == S.type)
 					S.dry = 1
@@ -200,7 +202,7 @@
 				var/material/leather_mat = SSmaterials.get_material_by_name(skin_mat.tans_to)
 				stock_item(new leather_mat.stack_type(get_turf(src), skin.amount, skin_mat.tans_to))
 				remove_thing = TRUE
-			
+
 			if(remove_thing)
 				I.instances -= thing
 				I.amount--

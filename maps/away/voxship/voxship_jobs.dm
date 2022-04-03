@@ -1,6 +1,6 @@
 /datum/job/submap/voxship_vox
 	title = "Shard Acolyte"
-	total_positions = 6
+	total_positions = 5
 	outfit_type = /decl/hierarchy/outfit/job/voxship/crew
 	supervisors = "Quill, The Apex and the arkship"
 	info = "By the will of the dead creators, you must reclaim the lost territory of their fallen empire, and re-establish the domain of the Auralis no matter the cost. \
@@ -33,7 +33,7 @@
 
 /datum/job/submap/voxship_vox/doc
 	title = "Shard Biotechnician"
-	total_positions = 1
+	total_positions = 2
 	info = "Your sacred duty is to preserve the lives of your ship-band; \
 	save their stacks, stabilize wounded crew, replace missing components and ensure nobody messes with your patients or your workspace."
 	whitelisted_species = list(SPECIES_VOX)
@@ -208,10 +208,10 @@
 	recharge_time = 20
 
 /obj/item/weapon/gun/energy/sniperrifle/vox
-	desc = "This is a modified Hephaestus Industries Baleful, the cell have been replaced by a vox variant, making it able to self charge. It's a designated marksman rifle capable of shooting powerful ionized beams, this is a weapon to kill from a distance."
+	desc = "This is a modified Hephaestus Industries Baleful. The cell has been replaced by a vox variant, allowing it to self-charge. Sadly, this makes it lose its function to knock people out. It's a designated marksman rifle capable of shooting powerful ionized beams."
 	self_recharge = 1
-	recharge_time = 60
-	max_shots = 3
+	recharge_time = 80
+	projectile_type = /obj/item/projectile/beam/snipervox
 
 /obj/effect/submap_landmark/spawnpoint/voxship_crew
 	name = "Shard Acolyte"

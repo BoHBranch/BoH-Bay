@@ -17,6 +17,27 @@
 	ruling_body = "Krukzuz"
 	distance = "20 light-years"
 
+/decl/cultural_info/location/tersten_unathi
+	name = HOME_SYSTEM_UNATHI_TERSTEN
+	description = "Tersten opened it's arms to Unathi in the wake of the golden age. Though the clans still enjoy a great deal \
+	of autonomy on the human centric planet, the two people's share a great deal of cooperation with one another. The Tersten \
+	way of life meshed well with the Unathi culture and traditions, and as such the races enjoy a good relationship with one \
+	another." //yes I know "one another" twice sounds a bit ploopy
+	ruling_body = "Clan Hegemony"
+	distance = "50 light years"
+	secondary_langs = list(
+		LANGUAGE_UNATHI_SINTA,
+		LANGUAGE_UNATHI_YEOSA,
+		LANGUAGE_SIGN,
+		LANGUAGE_HUMAN_EURO,
+		LANGUAGE_HUMAN_CHINESE,
+		LANGUAGE_HUMAN_ARABIC,
+		LANGUAGE_HUMAN_INDIAN,
+		LANGUAGE_HUMAN_IBERIAN,
+		LANGUAGE_HUMAN_RUSSIAN,
+		LANGUAGE_SPACER
+	)
+
 /decl/cultural_info/location/offworld
 	name = HOME_SYSTEM_OFFWORLD
 	description = "Whether through unfortunate circumstances or your own volition, you've left Moghes behind in search of your \

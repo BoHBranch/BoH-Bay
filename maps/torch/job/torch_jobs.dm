@@ -2,15 +2,14 @@
 	species_to_job_whitelist = list(
 		/datum/species/nabber = list(/datum/job/ai, /datum/job/cyborg, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/chemist,
 									 /datum/job/roboticist, /datum/job/cargo_tech, /datum/job/chef, /datum/job/engineer, /datum/job/doctor, /datum/job/bartender, /datum/job/assistant),
-		/datum/species/vox/ = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant),
-		/datum/species/vox/armalis = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant),
-		/datum/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant)
+	 	/datum/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant),
 	)
 
 	species_to_job_blacklist = list(
 		/datum/species/adherent = list(/datum/job/psiadvisor, /datum/job/liaison, /datum/job/bodyguard, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/detective),
 		/datum/species/machine = list(/datum/job/psiadvisor),
 		/datum/species/diona   = list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/officer, /datum/job/warden, /datum/job/seccadet, /datum/job/sea, /datum/job/bodyguard, /datum/job/adjudicator, /datum/job/bailiff, /datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/combat_medic)
+		/*/datum/species/custom/aberration  = list(/datum/job/captain, /datum/job/hop)*/
 	)
 
 	allowed_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos,
@@ -19,7 +18,7 @@
 						/datum/job/senior_engineer, /datum/job/engineer, /datum/job/roboticist, /datum/job/engineer_trainee,
 						/datum/job/officer, /datum/job/warden, /datum/job/detective, /datum/job/seccadet,
 						/datum/job/squad_lead, /datum/job/combat_tech, /datum/job/grunt, /datum/job/combat_medic,
-						/datum/job/senior_doctor, /datum/job/doctor, /datum/job/chemist, /datum/job/medical_trainee,
+						/datum/job/senior_doctor, /datum/job/doctor/virologist, /datum/job/doctor, /datum/job/chemist, /datum/job/medical_trainee,
 						/datum/job/psychiatrist, /datum/job/chaplain,
 						/datum/job/qm, /datum/job/cargo_tech, /datum/job/mining,
 						/datum/job/janitor, /datum/job/chef, /datum/job/bartender,
@@ -57,7 +56,7 @@
 /decl/cultural_info/culture/nabber/New()
 	LAZYADD(valid_jobs, /datum/job/scientist_assistant)
 	..()
-	
+
 /decl/cultural_info/culture/nabber/New()
 	LAZYADD(valid_jobs, /datum/job/assistant)
 	..()
@@ -87,6 +86,8 @@
 	   A contractor having a higher Galilei/Geneva Convention Article 3 equivelent rank then then an enlisted person for similar work is expected behavior.
 	   Source material is DOD Instruction 1000.01 */
 	max_pow_cat = 5
+	/* cit_rank is rank equivalent based, max_cit_rank is for wackos.*/
+	max_cit_rank = 5
 
 
 

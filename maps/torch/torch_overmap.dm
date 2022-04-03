@@ -11,7 +11,14 @@
 	initial_restricted_waypoints = list(
 		"SGEV Gaunt" = list("nav_hangar_calypso"), 	//can't have random shuttles popping inside the ship
 		"SGRP Garuda" = list("nav_hangar_guppy"),
-		"SGGS Byakhee" = list("nav_hangar_aquila")
+		"SGGS Byakhee" = list("nav_hangar_aquila"),
+
+		"Skrellian Scout" = list("nav_skrellscoutsh_dock", "nav_skrellscoutsh_altdock"),
+		"Rescue" = list("nav_ert_dock"),
+		"IPV Rawl" = list("nav_hangar_rawlship_torch","nav_hangar_rawlship_torchdock"),
+		"Trichoptera" = list("nav_ascentshipone_dock", "nav_ascentshipone_altdock"),
+		"Lepidoptera" = list("nav_ascentshiptwo_dock"),
+		"Vox Shuttle" = list("nav_vox_shuttle_dock")
 	)
 
 	initial_generic_waypoints = list(
@@ -64,11 +71,7 @@
 		"nav_merc_hanger",
 		"nav_ninja_hanger",
 		"nav_skipjack_hanger",
-		"nav_ert_hanger",
-
-		"nav_skrellscoutsh_altdock",
-		"nav_skrellscout_dock",
-		"nav_ert_dock"
+		"nav_ert_hanger"
 	)
 
 /decl/ship_contact_class/dagon

@@ -34,6 +34,7 @@
 	icon = 'icons/boh/obj/obj_hands_skrell_rig.dmi'
 	desc = "A powerful recon hardsuit with integrated power supply and atmosphere. It's impressive design perfectly tailors to the user's body."
 	siemens_coefficient = 0
+	germ_level = 0
 	species_restricted = list(SPECIES_SKRELL)
 	sprite_sheets = list(
 		SPECIES_SKRELL = 'icons/boh/mob/species/skrell/onmob_hands_rig_skrell.dmi'
@@ -78,7 +79,7 @@
 		SPECIES_SKRELL = 'icons/boh/mob/species/skrell/onmob_back_rig_skrell.dmi'
 	)
 	initial_modules = list(
-		/obj/item/rig_module/vision,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/chem_dispenser/skrell,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/clustertool/skrell,
@@ -101,7 +102,7 @@
 		rad = ARMOR_RAD_SHIELDED
 	)
 	initial_modules = list(
-		/obj/item/rig_module/vision,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/chem_dispenser/skrell/combat,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/clustertool/skrell,
@@ -118,7 +119,7 @@
 	desc = "A highly sophisticated, cutting-edge medical hardsuit with an integrated power supply and atmosphere. It's impressive design is resistant yet extremely lightweight, perfectly tailoring itself to the user's body"
 	icon_state = "skrell_med_rig"
 	initial_modules = list(
-		/obj/item/rig_module/vision,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/chem_dispenser/injector/skrell,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/clustertool/skrell,
@@ -142,7 +143,7 @@
 		rad = ARMOR_RAD_SHIELDED
 	)
 	initial_modules = list(
-		/obj/item/rig_module/vision,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/clustertool/skrell,
 		/obj/item/rig_module/chem_dispenser/skrell/combat,
@@ -165,7 +166,7 @@
 		rad = ARMOR_RAD_SHIELDED
 	)
 	initial_modules = list(
-		/obj/item/rig_module/vision,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/chem_dispenser/injector/skrell,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/clustertool/skrell,

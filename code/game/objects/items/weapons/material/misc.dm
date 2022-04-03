@@ -51,6 +51,7 @@
 	icon_state = "hatchet"
 	max_force = 15
 	base_parry_chance = 15
+	parrysound = 'sound/weapons/parry/parry_metalsmall.ogg'
 	force_divisor = 0.2 // 12 with hardness 60 (steel)
 	thrown_force_divisor = 0.75 // 15 with weight 20 (steel)
 	w_class = ITEM_SIZE_SMALL
@@ -72,9 +73,10 @@
 	slot_flags = SLOT_BELT
 	default_material = MATERIAL_TITANIUM
 	attack_cooldown_modifier = 1
-	max_force = 20
+	max_force = 25
+	parrysound = 'sound/weapons/parry/parry_metallarge.ogg'
 	base_parry_chance = 40
-	force_divisor = 0.20 //20 with hardness 80 (titanium) or 15 with hardness 60 (steel)
+	force_divisor = 0.25 //20 with hardness 80 (titanium) or 15 with hardness 60 (steel)
 
 /obj/item/weapon/material/hatchet/machete/unbreakable
 	unbreakable = TRUE
@@ -149,3 +151,45 @@
 
 /obj/item/weapon/material/cross/gold
 	default_material = MATERIAL_GOLD
+
+// Officer swords are spilt into two now, Marine and Fleet.
+
+/obj/item/weapon/material/sword/officersword
+	name = "fleet pattern sword"
+	desc = "A polished sword issued to Fleet officers and NCOs alike. Surprisngly robust and deadly. Considering its former roots as a ship to ship weapon, before the rise of Frangible ammuniton and Laser weaponry."
+	icon_state = "fleet_sword"
+	item_state = "officersword"
+	force_divisor = 0.35 // 21 damage considering they're all made out of steel.
+	w_class = ITEM_SIZE_HUGE
+	applies_material_colour = FALSE
+
+/obj/item/weapon/material/sword/officersword/marine
+	name = "marine pattern sword"
+	desc = "A polished sword issued to Marine NCOs and Officers alike. Surprisingly robust. Considering it used to be used on ship to ship combat, before the rise of Frangible ammunition and Laser weaponry."
+	icon_state = "marine_sword"
+
+// And their sheath.
+
+/obj/item/weapon/storage/belt/holster/sheath
+	name = "sword sheath"
+	desc = "A sword sheath, it can hold pattern swords."
+	icon_state = "sword_sheath"
+	item_state = "sword_sheath"
+	storage_slots = 1
+	w_class = 6
+	max_w_class = 6
+	max_storage_space = 16 // Swords are bulky, needs this to not erorr.
+	slot_flags = SLOT_BELT|SLOT_BACK
+	sound_in = 'sound/effects/holster/sheathin.ogg'
+	sound_out = 'sound/effects/holster/blade_unsheath.ogg'
+	can_holster = list(/obj/item/weapon/material/sword/officersword)
+
+/obj/item/weapon/storage/belt/holster/sheath/fleet/New()
+	..()
+	new /obj/item/weapon/material/sword/officersword(src)
+	update_icon()
+
+/obj/item/weapon/storage/belt/holster/sheath/marine/New()
+	..()
+	new /obj/item/weapon/material/sword/officersword/marine(src)
+	update_icon()

@@ -6,6 +6,16 @@
 	desc = "A slender, complex chip of alien circuitry."
 	access = list(access_ascent)
 
+/obj/item/weapon/card/id/ascent/gyne
+	access = list(access_ascent, access_ascentpar)
+
+/obj/item/weapon/card/id/ascenttiro
+	name = "tiro chip"
+	icon = 'icons/obj/ascent.dmi'
+	icon_state = "tiro_card"
+	desc = "A slender, complex chip of alien circuitry. This one has been designed for use by humanoids."
+	access = list(access_ascent)
+
 /obj/item/weapon/card/id/ascent/GetAccess()
 	var/mob/living/carbon/human/H = loc
 	if(istype(H) && !(H.species.name in ALL_ASCENT_SPECIES))
@@ -63,3 +73,9 @@
 /obj/item/organ/internal/controller/GetAccess()
 	if(id_card && damage < min_broken_damage)
 		return id_card.GetAccess()
+
+/obj/item/organ/internal/controller/tiro
+	name = "tiro identification stack"
+	desc = "A complex lump of circuitry which connects a Humanoid with the Ascent's neural network. Feels faintly warm."
+	icon_state = "tiroplant"
+	id_card = /obj/item/weapon/card/id/ascenttiro

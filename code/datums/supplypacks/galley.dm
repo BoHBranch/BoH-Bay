@@ -91,6 +91,28 @@
 	containername = "emergency rations"
 	supply_method = /decl/supply_method/randomized
 
+/decl/hierarchy/supply_pack/galley/rations/vegan
+	name = "Emergency - Vegetarian MREs"
+	contains = list(/obj/item/weapon/storage/mre/menu9 = 6)
+	cost = 30
+	containertype = /obj/structure/closet/crate/freezer
+	containername = "emergency rations"
+
+/decl/hierarchy/supply_pack/galley/rations/protein
+	name = "Emergency - Protein MREs"
+	contains = list(/obj/item/weapon/storage/mre/menu10 = 6)
+	cost = 30
+	containertype = /obj/structure/closet/crate/freezer
+	containername = "emergency rations"
+
+/decl/hierarchy/supply_pack/galley/rations/crayon
+	name = "Emergency - Marine MREs"
+	contains = list(/obj/item/weapon/storage/mre/menu11 = 6)
+	cost = 30
+	containertype = /obj/structure/closet/crate/freezer
+	containername = "emergency rations"
+	contraband = 1
+
 /decl/hierarchy/supply_pack/galley/party
 	name = "Bar - Party equipment"
 	contains = list(

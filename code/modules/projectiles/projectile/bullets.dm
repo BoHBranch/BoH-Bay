@@ -151,11 +151,13 @@
 //Armor pen is to prevent them from being invalidated by ARMOR_BALLISTIC_MINOR, as has been the case.
 /obj/item/projectile/bullet/pistol/rubber
 	name = "rubber bullet"
+	fire_sound = 'sound/weapons/gunshot/fastspike.ogg'
 	damage_flags = 0
 	damage = 10
 	agony = 40
 	embed = 0
 	armor_penetration = 5
+	impact_sounds = list(BULLET_IMPACT_MEAT = 'sound/weapons/rubberthunk_flesjh.ogg', BULLET_IMPACT_METAL = 'sound/weapons/rubberthunk_metal.ogg')
 
 /obj/item/projectile/bullet/pistol/rubber/holdout
 	agony = 25
@@ -186,6 +188,16 @@
 	agony = 65
 	armor_penetration = 10
 	embed = 0
+
+/obj/item/projectile/bullet/shotgun/beanbag/net
+	name = "netshell"
+	damage = 5
+	agony = 10
+
+/obj/item/projectile/bullet/shotgun/beanbag/net/on_hit(var/atom/target, var/blocked = 0, var/def_zone = null)
+	var/obj/item/weapon/energy_net/safari/net = new(loc)
+	net.throw_impact(target)
+	return TRUE
 
 //Spreads damage across more body parts than slugs, but is more effective up close and against unarmored opponents
 //High number of pellets with low velocity lends itself to more embeds
@@ -219,11 +231,11 @@
 /obj/item/projectile/bullet/rifle/military/large
 	fire_sound = 'sound/weapons/gunshot/hornet.ogg'
 	damage = 45
-	armor_penetration = 30
-	penetrating = 0
+	armor_penetration = 45
+	penetrating = 2
 	distance_falloff = 0.50
-	shrapnel_chance_multiplier = 1
-	arterial_bleed_chance_multiplier = 1
+	shrapnel_chance_multiplier = 1.1
+	arterial_bleed_chance_multiplier = 1.3
 
 /obj/item/projectile/bullet/rifle/shell
 	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
@@ -260,6 +272,19 @@
 	invisibility = 101
 	damage = 1
 	embed = 0
+
+/obj/item/projectile/bullet/nail
+	name = "nail"
+	icon_state = "nail"
+	fire_sound = 'sound/weapons/genhit.ogg'
+	damage = 0.5
+	damage_type = BRUTE
+	damage_flags = DAM_BULLET | DAM_SHARP
+	nodamage = 0
+	embed = 1
+	shrapnel_chance_multiplier = 0.1
+	arterial_bleed_chance_multiplier = 0.1
+	muzzle_type = null
 
 /* Practice */
 
@@ -316,6 +341,7 @@ Thanks a bunch! :n
 	embed = 0
 	sharp = 0
 	nodamage = 1
+	fire_sound = 'sound/weapons/gunshot/fastspike.ogg'
 
 /obj/item/projectile/bullet/pistol/pepperball/on_hit(var/atom/target, var/blocked = 0, var/alien)
 	..()

@@ -2,6 +2,7 @@
 #define CALIBER_PISTOL_SMALL 	"7mm"
 #define CALIBER_PISTOL_MAGNUM 	"15mm"
 #define CALIBER_PISTOL_FLECHETTE "4mm"
+#define CALIBER_PISTOL_FRANGIBLE "7mmF"
 #define CALIBER_PISTOL_ANTIQUE	"~10mm"
 #define CALIBER_PISTOL_MAGNUM_LARGE ".454mm"
 
@@ -16,6 +17,7 @@
 #define CALIBER_DART			"darts"
 #define CALIBER_SABOT			"sabot"
 #define CALIBER_SKRELL_SHOTGUN	"flechette"
+#define CALIBER_NAILS "nails"
 
 #define CALIBER_ROCKET	"rocket"
 

@@ -77,7 +77,7 @@
 	sort_string = "TADAC"
 
 /datum/design/item/weapon/wt550
-	name = "9mm submachine gun"
+	name = "7mm submachine gun"
 	id = "wt550"
 	req_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	materials = list(MATERIAL_STEEL = 8000, MATERIAL_SILVER = 3000, MATERIAL_DIAMOND = 1500)

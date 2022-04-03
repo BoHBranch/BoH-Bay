@@ -64,9 +64,8 @@
 
 /obj/item/gunbox/inftech/attack_self(mob/living/user)
 	var/list/options = list()
-	options["Explosive - L-19 Disposable Launcher"] = list(/obj/item/weapon/gun/projectile/rocket/oneuse/marine,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
+	options["Ballistic|Explosive - Z-6 Automatic Rifle|L-19 Disposable Launcher"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg, /obj/item/weapon/gun/projectile/rocket/oneuse/marine,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
 	options["Explosive - TVP-3, Recoilless Rifle"] = list(/obj/item/weapon/gun/projectile/rocket/recoilless/sec,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
-	options["Ballistic - Z6, Light Machinegun"] = list(/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
 	options["Ballistic - Z2, Light Machinegun"] = list(/obj/item/weapon/gun/projectile/automatic/l6_saw/sec,/obj/item/ammo_magazine/box/machinegun,/obj/item/ammo_magazine/box/machinegun)
 	options["Energy - G40B"] = list(/obj/item/weapon/gun/energy/laser/infantry,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/smokebomb,/obj/item/weapon/grenade/frag)
 	var/choice = input(user,"What type of equipment?") as null|anything in options

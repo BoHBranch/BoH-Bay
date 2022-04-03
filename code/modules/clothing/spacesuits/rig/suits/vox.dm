@@ -1,6 +1,6 @@
 /obj/item/weapon/rig/vox
-	name = "alien rig control module"
-	desc = "A strange rig. Parts of it writhe and squirm as if alive. The visor looks more like a thick membrane."
+	name = "alien hardsuit control module"
+	desc = "A strange hardsuit. Parts of it writhe and squirm as if alive. The visor looks more like a thick membrane."
 	suit_type = "alien rig"
 	icon_state = "vox_rig"
 	armor = list(
@@ -47,12 +47,12 @@
 	siemens_coefficient = 0
 
 /obj/item/weapon/rig/vox/quill
-	name = "Quill's rig control module"
-	desc = "The quill's rig suit. It looks exactly like the standard rig suit, but fancier. Parts of it writhe and squirm as if alive. The visor looks more like a thick membrane."
+	name = "Quill's hardsuit control module"
+	desc = "The quill's hardsuit. It looks exactly like the standard one, but fancier. Parts of it writhe and squirm as if alive. The visor looks more like a thick membrane."
 	cell_type =  /obj/item/weapon/cell/hyper
 
 	initial_modules = list(
-		/obj/item/rig_module/vision,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/mounted/plasmacutter,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/power_sink,

@@ -54,6 +54,7 @@
 	#include "infantry/outfits.dm"
 	#include "infantry/storage.dm"
 	#include "infantry/vending.dm"
+	#include "infantry/hardsuit.dm"
 
 	#include "items/cards_ids.dm"
 	#include "items/encryption_keys.dm"
@@ -88,6 +89,7 @@
 	#include "items/clothing/boh_under.dm"
 	#include "items/clothing/boh_accessory.dm"
 	#include "items/clothing/boh_clothing.dm"
+	#include "items/clothing/boh_head.dm"
 
 	#include "items/psyker/agent_items.dm"
 
@@ -192,6 +194,8 @@
 	#include "../away/unishi/unishi.dm"
 	#include "../away/voxship/voxship.dm"
 	#include "../away/skrellscoutship/skrellscoutship.dm"
+	#include "../away/rawl/rawl.dm"
+	#include "../away/scavver/scavver_gantry.dm"
 
 	#include "../../code/datums/music_tracks/chasing_time.dm"
 

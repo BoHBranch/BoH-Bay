@@ -205,6 +205,14 @@
 	name = "dark matter pellet"
 	icon_state = "dark_pellet"
 	fire_sound = 'sound/weapons/eLuger.ogg'
-	damage = 35
-	armor_penetration = 35
+	damage = 25
+	armor_penetration = 15
 	damage_flags = DAM_DISPERSED
+
+/obj/item/projectile/energy/plasmarifle
+	name = "plasma rifle bolt"
+	icon_state = "plasma_bolt"
+	fire_sound = 'sound/weapons/multiplas_rifle.ogg'
+	damage = 35
+	armor_penetration = 30
+	damage_flags = DAM_LASER

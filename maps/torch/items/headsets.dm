@@ -159,7 +159,7 @@
 
 /obj/item/device/radio/headset/federal
 	name = "federal headset"
-	desc = "A headset with access to the command, engineering and security channels."
+	desc = "A headset with access to the command channel."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks1type = /obj/item/device/encryptionkey/federal

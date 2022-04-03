@@ -15,7 +15,7 @@
 	allowed_roles = list(/datum/job/merchant, /datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/officer, /datum/job/seccadet)
 
 /datum/gear/suit/medical_poncho
-	allowed_roles = list(/datum/job/senior_doctor, /datum/job/doctor, /datum/job/psychiatrist, /datum/job/merchant, /datum/job/chemist)
+	allowed_roles = list(/datum/job/senior_doctor, /datum/job/doctor/virologist, /datum/job/doctor, /datum/job/psychiatrist, /datum/job/merchant, /datum/job/chemist)
 
 /datum/gear/suit/engineering_poncho
 	allowed_roles = list(/datum/job/engineer, /datum/job/roboticist, /datum/job/merchant)

@@ -99,14 +99,19 @@
 // Pistol
 /////////
 /obj/item/weapon/gun/projectile/pistol/military/sec
-	name = "P10"
-	desc = "The Hephaestus Industries P10 - a mass produced kinetic sidearm in widespread service with the SCGDF. It has a slide restrictor, preventing quick-draw type shooting."
-	fire_delay = 12
-//	req_access = list(access_hop)
-//	authorized_modes = list(UNAUTHORIZED)
-	firemodes = list(
-		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null),
-		)
+	name = "Hephaestus P10"
+	desc = "The Hephaestus Industries P10 - a mass produced kinetic sidearm in widespread service with the SCGDF. A slide restrictor is integrated into the handgun to prevent\
+	quick-draw type shooting. A reliable sidearm in the hands of even the most novice of soldiers."
+	magazine_type = /obj/item/ammo_magazine/pistol/double
+	allowed_magazines = /obj/item/ammo_magazine/pistol/double
+	icon = 'icons/obj/guns/military_pistol.dmi'
+	fire_sound = 'sound/weapons/gunshot/pistol_p20.ogg'
+	icon_state = "military"
+	item_state = "secgundark"
+	safety_icon = "safety"
+	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
+	fire_delay = 5
+	ammo_indicator = TRUE
 
 /////////
 // LMG
@@ -127,14 +132,15 @@
 /obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg
 	name = "Z6 Komodo"
 	desc = "The Hephaestus Industries Z6 Komodo is an old bullpup carbine conversion. \
-	It adds the possibility of automatic fire, though at the cost of likely jams."
+	It is equiped with a heavy barrel for combat, ensuring better accuracy and velocity for penetration at the cost of firerate and magazine size."
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	auto_eject = 1
 	one_hand_penalty = 8
-	jam_chance = 15 //frangible rounds might shatter if they're chambered improperly. Especially so with such a high firerate.
+	acc_mod_base = 3
+	penetration_mod = 3.5
 	firemodes = list(
-		list(mode_name="semi auto", burst=1, fire_delay=null, move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
-		list(mode_name="burst fire",  burst=5, fire_delay=null, move_delay=2, one_hand_penalty=10, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="semi auto", burst=1, fire_delay=null, move_delay=null, use_launcher=null, one_hand_penalty=8, burst_accuracy=null, dispersion=list(0.5, 1)),
+		list(mode_name="automatic",  automatic = TRUE, fire_delay = 2.5, burst = 1, burst_delay = 0, move_delay=2, dispersion=list(0.5, 1, 1.5, 2)),
 		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=10, burst_accuracy=null, dispersion=null)
 		)
 
@@ -178,6 +184,16 @@
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=8, burst_accuracy=null, dispersion=null),
 		)
+
+/////////
+// Ceremonial Carbine
+/////////
+/obj/item/weapon/gun/energy/laser/secure/ceremonial
+	name = "Hephaestus G40A"
+	desc = "A Hephaestus Industries G40A carbine. \
+	This model hasn't been in service for a number of years, only functioning now as a ceremonial weapon and used in training excercises."
+	max_shots = 6
+	icon_state = "laser"
 
 /////////
 // rifle 3

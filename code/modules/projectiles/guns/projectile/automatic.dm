@@ -78,8 +78,9 @@
 		overlays += image(icon, "ammo_ok")
 
 /obj/item/weapon/gun/projectile/automatic/merc_smg
-	name = "MA-C20v"
-	desc = "A licenced copy of Nanotrasens C20r. The C20v is made with cheaper materials and fires the anemic 7mm cartridge."
+	name = "NanoTrasen C-20r"
+	desc = "The NanoTrasen C-20r is a lightweight and rapid firing SMG. It has a bullpup design and fires 10mm pistol cartridges. This model features an auto-eject and premium \
+	materials used in its construction. A must have for any team of ragtag mercenaries."
 	icon = 'icons/obj/guns/merc_smg.dmi'
 	icon_state = "c20r"
 	item_state = "c20r"
@@ -160,7 +161,8 @@
 
 /obj/item/weapon/gun/projectile/automatic/sec_smg
 	name = "MA-Sword"
-	desc = "An incredibly cheap weapon design originally based off the WT-550. This weapons only saving grace is the price-tag."
+	desc = "A modernised design based off of the older NanoTrasen made WT-550. This incorporates proper automatic fire, alongside better handling. \
+	Unlike the Pariah, its newer cousin, this does not have nearly the same rate of fire."
 	icon = 'icons/obj/guns/sec_smg.dmi'
 	icon_state = "smg"
 	item_state = "wt550"
@@ -178,9 +180,9 @@
 
 	//machine pistol, like SMG but easier to one-hand with
 	firemodes = list(
-		list(mode_name="semi auto",       burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=3, burst_accuracy=null, dispersion=null),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=4, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
-		list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=5, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		list(mode_name="semi auto",  automatic = FALSE, burst=1, fire_delay=null,    move_delay=null, one_hand_penalty=3, burst_accuracy=null, dispersion=null),
+		list(mode_name="3-round bursts",  automatic = FALSE, burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=4, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0)),
+		list(mode_name="automatic",  automatic = TRUE, burst=1, fire_delay = 4, move_delay=4,    one_hand_penalty=5, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
 		)
 
 /obj/item/weapon/gun/projectile/automatic/sec_smg/on_update_icon()
@@ -371,7 +373,7 @@
 	wielded_item_state = "skrellshotgun-wielded"
 	w_class = ITEM_SIZE_HUGE
 	force = 10
-	slot_flags = SLOT_BACK
+	slot_flags = SLOT_BACK|SLOT_BELT
 	load_method = MAGAZINE
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	caliber = CALIBER_SKRELL_SHOTGUN

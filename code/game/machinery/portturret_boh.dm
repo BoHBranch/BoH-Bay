@@ -22,6 +22,22 @@
 	ailock = 1
 	lethal = 1
 
+/obj/machinery/porta_turret/vox
+
+	name = "Anti-personnel battery"
+	desc = "A sleek, menacing turret of unkown origin."
+	installation = /obj/item/weapon/gun/energy/laser
+	color = COLOR_SILVER
+	req_access = list("ACCESS_VOXSHIP")
+	health = 150
+	maxhealth = 150
+	check_synth	 = 0
+	check_access = 1
+	check_arrest = 0
+	check_records = 0
+	check_weapons = 0
+	check_anomalies = 1
+
 /////////
 // Firearms
 /////////

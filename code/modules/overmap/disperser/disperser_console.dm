@@ -14,7 +14,7 @@
 	var/obj/machinery/disperser/front/front
 	var/obj/machinery/disperser/middle/middle
 	var/obj/machinery/disperser/back/back
-	var/const/link_range = 10 //How far can the above stuff be maximum before we start complaining
+	var/const/link_range = 7 //How far can the above stuff be maximum before we start complaining
 
 	var/overmapdir = 0
 
@@ -110,7 +110,7 @@ obj/machinery/computer/ship/disperser/proc/is_valid_setup()
 	var/obj/structure/ship_munition/disperser_charge/B = locate() in get_turf(back)
 	if(B)
 		return B.chargetype
-	
+
 	var/obj/structure/closet/odst/D = locate() in get_turf(back)
 	if(D)
 		return OVERMAP_WEAKNESS_ODST

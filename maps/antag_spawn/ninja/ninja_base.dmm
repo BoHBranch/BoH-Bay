@@ -1101,6 +1101,7 @@
 /obj/item/weapon/storage/belt/utility/full,
 /obj/item/device/multitool,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/effect/floor_decal/industrial/outline/grey,
 /turf/unsimulated/floor{
 	dir = 2;
 	icon_state = "dark"
@@ -1108,8 +1109,15 @@
 /area/map_template/ninja_dojo/dojo)
 "cs" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/device/multitool/hacktool,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/clothing/glasses/prescription,
+/obj/item/clothing/glasses/prescription,
+/obj/item/clothing/glasses/prescription,
+/obj/item/clothing/glasses/prescription,
+/obj/item/clothing/glasses/sunglasses/prescription,
+/obj/item/clothing/glasses/sunglasses/prescription,
+/obj/item/clothing/glasses/sunglasses/prescription,
+/obj/item/clothing/glasses/sunglasses/prescription,
 /turf/unsimulated/floor{
 	dir = 2;
 	icon_state = "dark"

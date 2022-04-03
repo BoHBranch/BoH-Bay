@@ -23,6 +23,7 @@
 	breath_pressure = 18
 	slowdown = 0.5
 	brute_mod = 0.8
+	radiation_mod = 0.75
 	flash_mod = 1.2
 	blood_volume = 800
 
@@ -42,7 +43,8 @@
 	their traditionalism, violence, and even sexism in certain clans, but most Unathi are proud of their honour and their meager planet. <br/><br/> Unathi \
 	find traditional human temperatures absolutely frigid, and being cold-blooded means coats are no help, but they are capable of \
 	regenerating from certain kinds of severe wounds at the cost of their hunger, so long as they don't starve enough that \
-	their stomach eats itself."
+	their stomach eats itself. \
+	<br/><br/>Naming format: Personalname Clanname"
 
 	cold_level_1 = 280 //Default 260 - Lower is better
 	cold_level_2 = 220 //Default 200
@@ -112,11 +114,13 @@
 			CULTURE_UNATHI_SALT_SWAMP,
 			CULTURE_UNATHI_DESERT,
 			CULTURE_UNATHI_SAVANNAH,
+			CULTURE_UNATHI_TERSTEN,
 			CULTURE_UNATHI_SPACE
 		),
 		TAG_HOMEWORLD = list(
 			HOME_SYSTEM_MOGHES,
 			HOME_SYSTEM_OUERE,
+			HOME_SYSTEM_UNATHI_TERSTEN,
 			HOME_SYSTEM_OFFWORLD
 		),
 		TAG_FACTION = list(

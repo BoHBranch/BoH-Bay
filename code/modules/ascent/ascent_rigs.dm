@@ -1,14 +1,14 @@
 // Rigs and gear themselves.
 /obj/item/weapon/rig/mantid
 	name = "alate combat exosuit"
-	desc = "A powerful combat exosuit with integrated power supply, weapon and atmosphere. It's closer to a mech than a rig."
+	desc = "A powerful combat exosuit with integrated power supply, weapon and atmosphere. It's closer to a mech than a hardsuit."
 	icon_state = "kexosuit"
 	item_state = null
 	suit_type = "support exosuit"
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
-		bullet = 1.1 * ARMOR_BALLISTIC_RESISTANT,
-		laser = 1.1 * ARMOR_LASER_RIFLES,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_RIFLES,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -34,7 +34,7 @@
 		SPECIES_MONARCH_QUEEN =  'icons/mob/species/nabber/msq/onmob_back_msq.dmi'
 		)
 	initial_modules = list(
-		/obj/item/rig_module/vision/thermal,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/chem_dispenser/mantid,
@@ -50,24 +50,29 @@
 	var/mantid_caste = SPECIES_MANTID_ALATE
 
 // Renamed blade.
-/obj/item/rig_module/mounted/energy_blade/mantid
+/obj/item/rig_module/device/nanoblade //New! Re-added this from an old PR that actually fixed it. Why it wasn't fixed anymore is known only to God.
 	name = "nanoblade projector"
 	desc = "A fusion-powered blade nanofabricator of Ascent design."
 	interface_name = "nanoblade projector"
 	interface_desc = "A fusion-powered blade nanofabricator of Ascent design."
 	icon = 'icons/obj/ascent.dmi'
 	icon_state = "blade"
-	interface_name = "nanoblade"
-	usable = FALSE
-	gun = null
+	engage_string = "Toggle Nanoblade"
+	device = /obj/item/weapon/melee/energy/sword/ascent
+	usable = TRUE
+	selectable = TRUE
 
-/obj/item/rig_module/mounted/flechette_rifle
+/obj/item/rig_module/device/nanoblade/par //The same but with fancy sprites. Also a balancing measure since it would be kind of shit if you got fucked over by a sword you couldn't even see.
+	suit_overlay_active = "parblade"
+	suit_overlay_inactive = "parblade_inactive"
+
+/obj/item/rig_module/mounted/flechette_rifle //I should consider adding proper rig overlays for most of this equipment, but not today.
 	name = "flechette rifle"
 	desc = "A flechette nanofabricator and launch system of Ascent design."
 	interface_name = "flechette rifle"
 	interface_desc = "A flechette nanofabricator and launch system of Ascent design."
 	icon = 'icons/obj/ascent.dmi'
-	icon_state = "rifle"
+	icon_state = "riflef"
 	gun = /obj/item/weapon/gun/energy/particle/flechette
 
 /obj/item/rig_module/mounted/particle_rifle
@@ -78,6 +83,16 @@
 	icon = 'icons/obj/ascent.dmi'
 	icon_state = "rifle"
 	gun = /obj/item/weapon/gun/energy/particle
+
+/obj/item/rig_module/mounted/particle_projector
+	name = "particle projector"
+	desc = "A mounted particle projector of Ascent design."
+	interface_name = "particle projector"
+	interface_desc = "A mounted particle projector of Ascent design."
+	icon = 'icons/obj/ascent.dmi'
+	icon_state = "rifle"
+	gun = /obj/item/weapon/gun/energy/particle/small
+
 
 /obj/item/rig_module/device/multitool
 	name = "mantid integrated multitool"
@@ -140,6 +155,17 @@
 /obj/item/rig_module/device/clustertool/iscrowbar()
 	return device && device.iscrowbar()
 
+/obj/item/rig_module/device/crystalvoice
+	name = "voice of crystal"
+	desc = "An integrated voice modularity system which allows one to transfer their words into a booming, regal tone."
+	icon_state = "voiceofcrystal"
+	interface_name = "voice of crystal"
+	interface_desc = "An integrated voice modularity system which allows one to transfer their words into a booming, regal tone."
+	usable = 1
+	selectable = 1
+
+	device = /obj/item/device/megaphone/ascent
+
 // Atmosphere/jetpack filler.
 /obj/item/weapon/tank/mantid
 	name = "mantid gas tank"
@@ -167,6 +193,17 @@
 	var/refill_gas_type = GAS_METHYL_BROMIDE
 	var/gas_regen_amount = 0.03
 	var/gas_regen_cap = 30
+
+/obj/item/weapon/tank/jetpack/ascent/tiro
+	name = "tiro glider"
+	desc = "A highly advanced system of wing-like protrusions, made entirely from contained plasma. How it works is completely lost on you."
+	refill_gas_type = GAS_OXYGEN
+
+/obj/item/weapon/tank/jetpack/ascent/tiro/elite
+	name = "tiro wings"
+	desc = "An incredibly advanced projector capable of sustaining large wing-like appendages made from pure energy."
+	gas_regen_amount = 0.5
+	gas_regen_cap = 40
 
 /obj/item/weapon/tank/jetpack/ascent/Initialize()
 	starting_pressure = list("[refill_gas_type]" = 6 * ONE_ATMOSPHERE)
@@ -230,6 +267,9 @@
 		list("glucose",             "glucose",             /datum/reagent/nutriment/glucose,  20)
 	)
 
+/obj/item/rig_module/chem_dispenser/nabber/tiro
+	name = "tiro chemical injector"
+
 // Rig definitions.
 /obj/item/weapon/rig/mantid/gyne
 	name = "gyne combat exosuit"
@@ -248,16 +288,17 @@
 		/obj/item/weapon/weldingtool/electric/mantid,
 		/obj/item/device/multitool/mantid,
 		/obj/item/stack/medical/resin,
-		/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent
+		/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent,
+		/obj/item/weapon/gun/energy/particle/support
 	)
 	icon_override = 'icons/mob/species/mantid/onmob_back_gyne.dmi'
 	mantid_caste = SPECIES_MANTID_GYNE
 	initial_modules = list(
-		/obj/item/rig_module/vision/thermal,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/chem_dispenser/mantid,
-		/obj/item/rig_module/mounted/energy_blade/mantid,
+		/obj/item/rig_module/device/nanoblade,
 		/obj/item/rig_module/mounted/flechette_rifle,
 		/obj/item/rig_module/mounted/particle_rifle,
 		/obj/item/rig_module/device/multitool,
@@ -266,7 +307,8 @@
 		/obj/item/rig_module/device/clustertool,
 		/obj/item/rig_module/mounted/plasmacutter,
 		/obj/item/rig_module/maneuvering_jets,
-		/obj/item/rig_module/cooling_unit
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/device/crystalvoice
 	)
 
 /obj/item/weapon/rig/mantid/nabber
@@ -277,11 +319,11 @@
 	chest_type = /obj/item/clothing/suit/space/rig/mantid/serpentid
 	boot_type =  null
 	initial_modules = list(
-		/obj/item/rig_module/vision/thermal,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/chem_dispenser/nabber,
-		/obj/item/rig_module/mounted/energy_blade/mantid,
+		/obj/item/rig_module/device/nanoblade,
 		/obj/item/rig_module/device/multitool,
 		/obj/item/rig_module/device/cable_coil,
 		/obj/item/rig_module/device/welder,
@@ -293,10 +335,12 @@
 	allowed = list(
 		/obj/item/clustertool,
 		/obj/item/weapon/gun/energy/particle/small,
+		/obj/item/weapon/gun/energy/particle/support,
 		/obj/item/weapon/weldingtool/electric/mantid,
 		/obj/item/device/multitool/mantid,
 		/obj/item/stack/medical/resin,
-		/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent
+		/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent,
+		/obj/item/weapon/gun/energy/particle/support
 	)
 
 /obj/item/clothing/suit/space/rig/mantid/serpentid
@@ -308,35 +352,39 @@
 	icon_override = 'icons/mob/species/nabber/msq/onmob_back_msq.dmi'
 	mantid_caste = SPECIES_MONARCH_QUEEN
 	initial_modules = list(
-		/obj/item/rig_module/vision/thermal,
+		/obj/item/rig_module/vision/nvg,
 		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/chem_dispenser/nabber,
-		/obj/item/rig_module/mounted/energy_blade/mantid,
-		/obj/item/rig_module/mounted/flechette_rifle,
-		/obj/item/rig_module/mounted/particle_rifle,
+		/obj/item/rig_module/device/nanoblade,
+		/obj/item/rig_module/mounted/particle_projector,
 		/obj/item/rig_module/device/multitool,
 		/obj/item/rig_module/device/cable_coil,
 		/obj/item/rig_module/device/welder,
 		/obj/item/rig_module/device/clustertool,
 		/obj/item/rig_module/mounted/plasmacutter,
 		/obj/item/rig_module/maneuvering_jets,
-		/obj/item/rig_module/cooling_unit
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/device/crystalvoice
 	)
 	allowed = list(
 		/obj/item/clustertool,
 		/obj/item/weapon/gun/energy/particle/small,
+		/obj/item/weapon/gun/energy/particle/support,
 		/obj/item/weapon/weldingtool/electric/mantid,
 		/obj/item/device/multitool/mantid,
 		/obj/item/stack/medical/resin,
-		/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent
+		/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent,
+		/obj/item/weapon/gun/energy/particle/support
 	)
 
 /obj/item/weapon/rig/mantid/mob_can_equip(var/mob/M, var/slot)
 	. = ..()
 	if(. && slot == slot_back)
 		var/mob/living/carbon/human/H = M
-		if(!istype(H) || H.species.get_bodytype(H) != mantid_caste)
+		if(mantid_caste == 0) //For mantid suits designed for non-mantid races, we have no mantid caste selected. This should usually prevent it from locking people out.
+			return
+		else if(!istype(H) || H.species.get_bodytype(H) != mantid_caste)
 			to_chat(H, "<span class='danger'>Your species cannot wear \the [src].</span>")
 			. = 0
 
@@ -363,6 +411,7 @@
 	allowed = list(
 		/obj/item/clustertool,
 		/obj/item/weapon/gun/energy/particle/small,
+		/obj/item/weapon/gun/energy/particle/support,
 		/obj/item/weapon/weldingtool/electric/mantid,
 		/obj/item/device/multitool/mantid,
 		/obj/item/stack/medical/resin,
@@ -380,6 +429,7 @@
 /obj/item/clothing/gloves/rig/mantid
 	desc = "They look like a cross between a can opener and a Swiss army knife the size of a shoebox."
 	siemens_coefficient = 0
+	germ_level = 0
 	species_restricted = list(SPECIES_MANTID_GYNE, SPECIES_MANTID_ALATE, SPECIES_NABBER, SPECIES_MONARCH_QUEEN)
 	sprite_sheets = list(
 		SPECIES_MANTID_GYNE =            'icons/mob/species/mantid/onmob_gloves_gyne.dmi',
@@ -393,7 +443,7 @@
 // Rigs and gear themselves.
 /obj/item/weapon/rig/mantid/seed
 	name = "alate support exosuit"
-	desc = "A powerful support exosuit with integrated power supply, weapon and atmosphere. It's closer to a mech than a rig."
+	desc = "A powerful support exosuit with integrated power supply, weapon and atmosphere. It's closer to a mech than a hardsuit."
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_PISTOL,
@@ -438,7 +488,8 @@
 		/obj/item/rig_module/device/clustertool,
 		/obj/item/rig_module/mounted/plasmacutter,
 		/obj/item/rig_module/maneuvering_jets,
-		/obj/item/rig_module/cooling_unit
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/device/crystalvoice
 	)
 
 /obj/item/weapon/rig/mantid/nabber/queen/seed
@@ -447,7 +498,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = 1.2 * ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_MAJOR,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -463,7 +514,8 @@
 		/obj/item/rig_module/device/clustertool,
 		/obj/item/rig_module/mounted/plasmacutter,
 		/obj/item/rig_module/maneuvering_jets,
-		/obj/item/rig_module/cooling_unit
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/device/crystalvoice
 	)
 
 /obj/item/weapon/rig/mantid/nabber/seed
@@ -472,7 +524,7 @@
 	armor = list(
 		melee = ARMOR_MELEE_MAJOR,
 		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = 1.2 * ARMOR_LASER_MAJOR,
+		laser = ARMOR_LASER_MAJOR,
 		energy = ARMOR_ENERGY_RESISTANT,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
@@ -490,3 +542,142 @@
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/cooling_unit
 		)
+
+///Begin Ascent Tiro --------------------------------------------------------------------------------------------------
+/obj/item/weapon/rig/mantid/tiro
+	name = "tiro exosuit"
+	desc = "A reverse-engineered Mantid exosuit designed to be worn by a Humanoid. Often utilized by Ascent Tiros."
+	icon_state = "tiro_voidsuit"
+	item_state = null
+	suit_type = "tiro exosuit"
+	equipment_overlay_icon = 'icons/mob/onmob/onmob_rig_modules.dmi'
+	air_type =   /obj/item/weapon/tank/mantid/reactor/oxygen
+	cell_type =  /obj/item/weapon/cell/mantid
+	chest_type = /obj/item/clothing/suit/space/rig/mantid/tiro
+	helm_type =  /obj/item/clothing/head/helmet/space/rig/mantid/tiro
+	boot_type =  /obj/item/clothing/shoes/magboots/rig/mantid/tiro
+	glove_type = /obj/item/clothing/gloves/rig/mantid/tiro
+	armor = list(
+		melee = ARMOR_MELEE_RESISTANT,
+		bullet = ARMOR_BALLISTIC_PISTOL,
+		laser = ARMOR_LASER_HANDGUNS,
+		energy = ARMOR_ENERGY_RESISTANT,
+		bomb = ARMOR_BOMB_PADDED,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+	)
+	update_visible_name = TRUE
+	initial_modules = list(
+		/obj/item/rig_module/vision/nvg,
+		/obj/item/rig_module/ai_container,
+		/obj/item/rig_module/electrowarfare_suite,
+		/obj/item/rig_module/chem_dispenser/nabber/tiro,
+		/obj/item/rig_module/device/multitool,
+		/obj/item/rig_module/device/cable_coil,
+		/obj/item/rig_module/device/welder,
+		/obj/item/rig_module/device/clustertool,
+		/obj/item/rig_module/mounted/plasmacutter,
+		/obj/item/rig_module/maneuvering_jets/tirowings,
+		/obj/item/rig_module/cooling_unit
+		)
+	req_access = list(access_ascent)
+	mantid_caste = 0 //I THINK this will allow any species to wear the suit, but I'm uncertain. Will need to test further.
+
+/obj/item/clothing/head/helmet/space/rig/mantid/tiro
+	desc = "A sleek, insect-esque helmet designed for a Humanoid."
+	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
+	sprite_sheets = list(
+		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_skrell.dmi',
+		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_head_unathi.dmi',
+		SPECIES_OLDUNATHI = 'icons/mob/species/unathi/generated/onmob_head_unathi.dmi'
+		)
+/obj/item/clothing/suit/space/rig/mantid/tiro
+	desc = "A Mantid exosuit designed for a Humanoid. Offers decent protection."
+	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
+	allowed = list(
+		/obj/item/clustertool,
+		/obj/item/weapon/gun/energy/particle/small,
+		/obj/item/stack/medical/resin,
+		/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent,
+		/obj/item/device/flashlight,
+		/obj/item/weapon/tank,
+		/obj/item/ammo_magazine,
+		/obj/item/ammo_casing,
+		/obj/item/weapon/handcuffs,
+		/obj/item/device/t_scanner,
+		/obj/item/weapon/rcd,
+		/obj/item/weapon/crowbar,
+		/obj/item/weapon/screwdriver,
+		/obj/item/weapon/weldingtool,
+		/obj/item/weapon/wirecutters,
+		/obj/item/weapon/wrench,
+		/obj/item/device/multitool,
+		/obj/item/device/radio,
+		/obj/item/device/scanner/gas,
+		/obj/item/weapon/storage/briefcase/inflatable,
+		/obj/item/weapon/melee/baton,
+		/obj/item/weapon/gun,
+		/obj/item/weapon/storage/firstaid,
+		/obj/item/weapon/reagent_containers/hypospray,
+		/obj/item/roller,
+		/obj/item/device/suit_cooling_unit,
+		/obj/item/weapon/storage
+	)
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_suit_unathi.dmi'
+		)
+/obj/item/clothing/shoes/magboots/rig/mantid/tiro
+	desc = "Feels like you're stepping on a cloud."
+	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
+	sprite_sheets = list(
+		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_feet_unathi.dmi',
+		)
+/obj/item/clothing/gloves/rig/mantid/tiro
+	desc = "Highly advanced gloves that bind themselves around your fingers."
+	species_restricted = list(SPECIES_HUMAN,SPECIES_PLASMASANS,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
+	sprite_sheets = list(
+		SPECIES_VOX = 'icons/mob/species/vox/onmob_hands_vox.dmi',
+		SPECIES_VOX_ARMALIS = 'icons/mob/species/vox/onmob_hands_vox_armalis.dmi',
+		SPECIES_NABBER = 'icons/mob/species/nabber/onmob_hands_gas.dmi',
+		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_hands_unathi.dmi',
+		)
+
+/obj/item/weapon/rig/mantid/tiro/elite
+	name = "aurum exosuit"
+	desc = "The exosuit of an aurum, an esteemed Tiro who has earned favor through efficiency and loyalty. Very protective."
+	icon_state = "par_voidsuit"
+	chest_type = /obj/item/clothing/suit/space/rig/mantid/tiro/elite
+	helm_type = /obj/item/clothing/head/helmet/space/rig/mantid/tiro/elite
+	suit_type = "elite hominid"
+	armor = list(
+		melee = ARMOR_MELEE_MAJOR,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_RIFLES,
+		energy = ARMOR_ENERGY_RESISTANT,
+		bomb = ARMOR_BOMB_RESISTANT,
+		bio = ARMOR_BIO_SHIELDED,
+		rad = ARMOR_RAD_SHIELDED
+	)
+	initial_modules = list(
+		/obj/item/rig_module/vision/nvg,
+		/obj/item/rig_module/ai_container,
+		/obj/item/rig_module/electrowarfare_suite,
+		/obj/item/rig_module/chem_dispenser/combat,
+		/obj/item/rig_module/chem_dispenser/nabber/tiro,
+		/obj/item/rig_module/device/nanoblade/par,
+		/obj/item/rig_module/mounted/particle_projector,
+		/obj/item/rig_module/device/multitool,
+		/obj/item/rig_module/device/cable_coil,
+		/obj/item/rig_module/device/welder,
+		/obj/item/rig_module/device/clustertool,
+		/obj/item/rig_module/mounted/plasmacutter,
+		/obj/item/rig_module/maneuvering_jets/tirowings/elite,
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/device/crystalvoice
+	)
+
+/obj/item/clothing/head/helmet/space/rig/mantid/tiro/elite
+	desc = "The helmet of the aurum. Comfortable as air."
+
+/obj/item/clothing/suit/space/rig/mantid/tiro/elite
+	desc = "The exosuit of the aurum."

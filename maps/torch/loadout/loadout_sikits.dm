@@ -7,12 +7,13 @@ This is for standard issue sidearms.
 	cost = 0
 	sort_category = "Standard Issue Equipment"
 	path = /obj/item/weapon/gun/projectile/
-	allowed_branches = MILITARY_BRANCHES
+	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/sikits/guns/New()
 	..()
 	var/guns = list()
 	guns["Jhen Bothus Mk59"] = /obj/item/weapon/gun/projectile/pistol/military/alt/solar/loadout
+	guns["Hephaestus P10"] = /obj/item/weapon/gun/projectile/pistol/military/sec
 	guns["Lumoco Mk12"] = /obj/item/weapon/gun/projectile/revolver/medium/sec
 	gear_tweaks += new/datum/gear_tweak/path(guns)
 
@@ -22,7 +23,7 @@ This is for standard issue sidearms.
 	cost = 0
 	sort_category = "Standard Issue Equipment"
 	path = /obj/item/clothing/accessory/storage/holster/
-	allowed_branches = MILITARY_BRANCHES
+	allowed_branches = TACTICOOL_BRANCHES
 
 /datum/gear/sikits/holsters/New()
 	..()

@@ -60,6 +60,33 @@
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/med, /obj/item/weapon/storage/backpack/messenger/med)),
 		RANDOM_SCRUBS
 	)
+/obj/structure/closet/secure_closet/medical_viro
+	name = "virologist's locker"
+	req_access = list(access_virology)
+	closet_appearance = /decl/closet_appearance/secure_closet/torch/medical/physician
+
+/obj/structure/closet/secure_closet/medical_viro/WillContain()
+	return list(
+		/obj/item/clothing/under/sterile,
+		/obj/item/clothing/suit/storage/toggle/labcoat/virologist,
+		/obj/item/clothing/shoes/white,
+		/obj/item/device/radio/headset/headset_med,
+		/obj/item/device/radio/headset/headset_med/alt,
+		/obj/item/taperoll/medical,
+		/obj/item/weapon/storage/belt/medical/full,
+		/obj/item/clothing/mask/surgical,
+		/obj/item/device/scanner/health,
+		/obj/item/clothing/accessory/stethoscope,
+		/obj/item/device/flashlight/pen,
+		/obj/item/clothing/glasses/hud/health,
+		/obj/item/device/flash,
+		/obj/item/device/megaphone,
+		/obj/item/weapon/storage/firstaid/adv,
+		/obj/item/weapon/material/knife/folding/swiss,
+		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/medic, /obj/item/weapon/storage/backpack/satchel/med)),
+		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/med, /obj/item/weapon/storage/backpack/messenger/med)),
+		RANDOM_SCRUBS = 2
+	)
 
 /obj/structure/closet/secure_closet/medical_torchsenior
 	name = "physician's locker"
@@ -75,7 +102,7 @@
 		/obj/item/device/radio/headset/headset_med,
 		/obj/item/device/radio/headset/headset_med/alt,
 		/obj/item/taperoll/medical,
-		/obj/item/weapon/storage/belt/medical,
+		/obj/item/weapon/storage/belt/medical/full,
 		/obj/item/clothing/mask/surgical,
 		/obj/item/device/scanner/health,
 		/obj/item/clothing/accessory/stethoscope,
@@ -104,7 +131,7 @@
 		/obj/item/device/radio/headset/headset_med,
 		/obj/item/device/radio/headset/headset_corpsman/alt,
 		/obj/item/taperoll/medical,
-		/obj/item/weapon/storage/belt/medical/emt,
+		/obj/item/weapon/storage/belt/medical/emt/full,
 		/obj/item/clothing/mask/gas/half,
 		/obj/item/weapon/tank/emergency/oxygen/engi,
 		/obj/item/weapon/storage/box/autoinjectors,
@@ -114,6 +141,7 @@
 		/obj/item/clothing/suit/storage/medical_chest_rig,
 		/obj/item/clothing/head/hardhat/EMS,
 		/obj/item/weapon/material/knife/folding/swiss,
+		/obj/item/roller,
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/medic, /obj/item/weapon/storage/backpack/satchel/med)),
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/med, /obj/item/weapon/storage/backpack/messenger/med))
 	)
