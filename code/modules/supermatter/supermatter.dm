@@ -316,7 +316,7 @@
 			public_alert = 1
 
 			// sets to code orange if possible
-			security_state.set_security_level(code_orange, FALSE)
+			security_state.set_security_level(security_state_torch.code_orange, FALSE)
 
 			//unbolts saferooms
 			GLOB.using_map.unbolt_saferooms() // torch
