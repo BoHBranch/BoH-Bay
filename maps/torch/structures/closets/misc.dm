@@ -181,8 +181,8 @@ obj/structure/closet/secure_closet/solguard
 
 /obj/structure/closet/secure_closet/guncabinet/sidearm/WillContain()
 	return list(
-			/obj/item/clothing/accessory/storage/holster/thigh = 6,
-			/obj/item/weapon/gun/energy/gun/secure = 4,
+		/obj/item/clothing/accessory/storage/holster/thigh = 6,
+		/obj/item/weapon/gun/energy/gun/secure = 4,
 	)
 
 /obj/structure/closet/secure_closet/guncabinet/sidearm/small
@@ -190,8 +190,8 @@ obj/structure/closet/secure_closet/solguard
 
 /obj/structure/closet/secure_closet/guncabinet/sidearm/small/WillContain()
 	return list(
-			/obj/item/clothing/accessory/storage/holster/thigh = 3,
-			/obj/item/weapon/gun/energy/gun/small/secure/sec = 4,
+		/obj/item/clothing/accessory/storage/holster/thigh = 3,
+		/obj/item/weapon/gun/energy/gun/small/secure/sec = 4,
 	)
 
 /obj/structure/closet/secure_closet/guncabinet/sidearm/combined
@@ -201,7 +201,7 @@ obj/structure/closet/secure_closet/solguard
 	return list(
 		/obj/item/weapon/storage/belt/holster/general = 3,
 		/obj/item/weapon/gun/energy/gun/secure = 2,
-		obj/item/weapon/gun/energy/gun/small/secure/sec = 2,
+		/obj/item/weapon/gun/energy/gun/small/secure/sec = 2,
 	)
 
 /obj/structure/closet/secure_closet/guncabinet/PPE
