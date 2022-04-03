@@ -54,8 +54,6 @@
 	GLOB.item_unequipped_event.unregister(item, src)
 	if (item.loc != src) // It fell off!
 		item.canremove = TRUE
-		item = null
-
 
 /obj/item/organ/internal/augment/active/item/proc/deploy(as_owner = TRUE)
 	if (!slot)
