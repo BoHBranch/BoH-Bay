@@ -17,7 +17,7 @@
 	action_button_name = "Deploy blade"
 	icon_state = "armblade"
 	augment_slots = AUGMENT_ARM
-	item = /obj/item/material/armblade
+	item = /obj/item/weapon/material/armblade
 	augment_flags = AUGMENT_MECHANICAL | AUGMENT_SCANNABLE
 
 
@@ -34,7 +34,7 @@
 	action_button_name = "Deploy claws"
 	icon_state = "wolverine"
 	augment_slots = AUGMENT_HAND
-	item = /obj/item/material/armblade/claws
+	item = /obj/item/weapon/material/armblade/claws
 	augment_flags = AUGMENT_MECHANICAL | AUGMENT_SCANNABLE
 
 
@@ -45,7 +45,7 @@
 	action_button_name = "Deploy blade"
 	icon_state = "armblade"
 	augment_slots = AUGMENT_ARM
-	item = /obj/item/material/armblade/wrist
+	item = /obj/item/weapon/material/armblade/wrist
 	origin_tech = list(TECH_COMBAT = 3, TECH_ESOTERIC = 4)
 	deploy_sound = 'sound/effects/holster/sheathout.ogg'
 	retract_sound = 'sound/effects/holster/sheathin.ogg'
@@ -63,5 +63,5 @@
 	w_class = ITEM_SIZE_SMALL
 
 
-/obj/item/material/armblade/wrist/add_blood(mob/living/carbon/human/M)
+/obj/item/weapon/material/armblade/wrist/add_blood(mob/living/carbon/human/M)
 	return FALSE

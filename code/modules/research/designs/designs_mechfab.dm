@@ -473,7 +473,7 @@
 
 /datum/design/item/mechfab/augment/armblade/wolverine
 	name = "Cyberclaws"
-	build_path = /obj/item/material/armblade/claws
+	build_path = /obj/item/organ/internal/augment/active/item/wolverine
 	materials = list(DEFAULT_WALL_MATERIAL = 6000, "diamond" = 250)
 	req_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 4, TECH_MATERIAL = 4, TECH_BIO = 3)
 	id = "augment_wolverine"
