@@ -309,6 +309,8 @@
 	},
 /obj/item/weapon/storage/box/ammo/pepperball/full,
 /obj/item/weapon/storage/box/ammo/solar/rubber,
+/obj/item/weapon/storage/box/ammo/pepperball,
+/obj/item/weapon/storage/box/ammo/solar/rubber,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
 "aaV" = (
@@ -1465,8 +1467,10 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/weapon/storage/box/ammo/solar/full,
-/obj/item/weapon/storage/box/ammo/solar/full,
+/obj/item/weapon/storage/box/ammo/pepperball/full,
+/obj/item/weapon/storage/box/ammo/pepperball/full,
+/obj/item/weapon/storage/box/ammo/solar/rubber,
+/obj/item/weapon/storage/box/ammo/solar/rubber,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "adi" = (
@@ -1497,10 +1501,10 @@
 	dir = 8;
 	health = 1e+006
 	},
-/obj/item/ammo_magazine/smg_top/rubber,
-/obj/item/ammo_magazine/smg_top/rubber,
-/obj/item/ammo_magazine/smg_top/rubber,
-/obj/item/ammo_magazine/smg_top/rubber,
+/obj/item/weapon/storage/box/ammo/solar/full,
+/obj/item/weapon/storage/box/ammo/solar/full,
+/obj/item/weapon/storage/box/ammo/solar/full,
+/obj/item/weapon/storage/box/ammo/solar/full,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "adk" = (
@@ -2089,7 +2093,10 @@
 	dir = 4
 	},
 /obj/structure/table/rack,
-/obj/item/weapon/gun/energy/plasmastun,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "aen" = (
@@ -7167,8 +7174,10 @@
 	health = 1e+006
 	},
 /obj/structure/table/rack,
-/obj/item/weapon/gun/projectile/automatic/sec_smg,
-/obj/item/weapon/gun/projectile/automatic/sec_smg,
+/obj/item/weapon/gun/energy/taser/carbine,
+/obj/item/weapon/gun/energy/taser/carbine,
+/obj/item/weapon/gun/energy/taser/carbine,
+/obj/item/weapon/gun/energy/taser/carbine,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "any" = (
@@ -8928,8 +8937,10 @@
 /obj/machinery/light,
 /obj/structure/window/reinforced,
 /obj/structure/table/rack,
-/obj/item/weapon/gun/energy/taser/carbine,
-/obj/item/weapon/gun/energy/taser/carbine,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "aqJ" = (

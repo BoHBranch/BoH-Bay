@@ -2277,6 +2277,7 @@
 "dL" = (
 /obj/structure/closet/secure_closet/engineering_chief_torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/gun/energy/gun/small/secure/sec,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/ce)
 "dM" = (
@@ -2483,7 +2484,6 @@
 /obj/item/device/flash,
 /obj/item/weapon/storage/secure/briefcase,
 /obj/item/weapon/storage/secure/briefcase,
-/obj/item/device/paicard,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "ef" = (
@@ -2851,19 +2851,10 @@
 "eM" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/secure_closet/guncabinet/PPE,
-/obj/item/ammo_magazine/smg_top,
-/obj/item/ammo_magazine/smg_top,
-/obj/item/ammo_magazine/smg_top,
-/obj/item/ammo_magazine/smg_top,
-/obj/item/weapon/gun/projectile/shotgun/pump,
-/obj/item/weapon/storage/box/ammo/beanbags/half,
-/obj/item/weapon/storage/box/ammo/shotgunshells,
-/obj/item/weapon/gun/projectile/automatic/sec_smg{
-	starts_loaded = 0
-	},
-/obj/item/weapon/gun/projectile/automatic/sec_smg{
-	starts_loaded = 0
-	},
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
+/obj/item/weapon/gun/energy/gun/secure,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "eN" = (
@@ -3492,11 +3483,6 @@
 	dir = 5
 	},
 /obj/machinery/light,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "fO" = (
@@ -4425,6 +4411,7 @@
 /obj/item/ammo_magazine/magnum/rubber,
 /obj/item/ammo_magazine/magnum/rubber,
 /obj/structure/closet/secure_closet/cos,
+/obj/item/weapon/gun/energy/gun/small/secure/sec,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "hp" = (
@@ -6939,6 +6926,7 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/effect/floor_decal/corner/research/mono,
 /obj/structure/closet/secure_closet/RD_torch,
+/obj/item/weapon/gun/energy/gun/small/secure/sec,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
 "lw" = (
@@ -15586,6 +15574,7 @@
 /obj/item/weapon/storage/belt/medical,
 /obj/item/weapon/book/manual/sol_sop,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/weapon/gun/energy/gun/small/secure/sec,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
 "EV" = (
@@ -19024,7 +19013,6 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/item/weapon/crowbar/brace_jack,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/storage)
 "Ww" = (
@@ -26440,7 +26428,7 @@ hw
 hw
 hw
 gK
-hw
+ae
 hB
 hw
 gK
