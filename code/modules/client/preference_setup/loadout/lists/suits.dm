@@ -4,6 +4,11 @@
 	category = /datum/gear/suit
 	banned_species = list(SPECIES_PLASMASANS)
 
+/datum/gear/suit/maidoutfit
+	display_name = "maid's outfit"
+	path = /obj/item/clothing/suit/infilsuit/fem
+	allowed_roles = list(/datum/job/janitor,/datum/job/bartender,/datum/job/chef,/datum/job/assistant)
+
 /datum/gear/suit/poncho
 	display_name = "poncho selection"
 	path = /obj/item/clothing/suit/poncho/colored
