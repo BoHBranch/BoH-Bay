@@ -89,12 +89,14 @@
 	desc = "Contains advanced medical treatments."
 	icon_state = "purplefirstaid"
 	item_state = "firstaid-advanced"
+	max_storage_space = DEFAULT_LARGEBOX_STORAGE
 
 	startswith = list(
 		/obj/item/weapon/storage/pill_bottle/assorted,
 		/obj/item/stack/medical/advanced/bruise_pack = 3,
 		/obj/item/stack/medical/advanced/ointment = 2,
-		/obj/item/stack/medical/splint
+		/obj/item/stack/medical/splint,
+		/obj/item/weapon/suture
 		)
 
 /obj/item/weapon/storage/firstaid/combat
@@ -102,6 +104,7 @@
 	desc = "Contains advanced medical treatments."
 	icon_state = "bezerk"
 	item_state = "bezerk"
+	max_storage_space = DEFAULT_LARGEBOX_STORAGE
 
 	startswith = list(
 		/obj/item/weapon/storage/pill_bottle/bicaridine,
@@ -111,6 +114,7 @@
 		/obj/item/weapon/storage/pill_bottle/tramadol,
 		/obj/item/weapon/storage/pill_bottle/spaceacillin,
 		/obj/item/stack/medical/splint,
+		/obj/item/weapon/suture
 		)
 
 /obj/item/weapon/storage/firstaid/stab
@@ -149,7 +153,8 @@
 		/obj/item/weapon/bonegel,
 		/obj/item/weapon/FixOVein,
 		/obj/item/stack/medical/advanced/bruise_pack,
-		/obj/item/stack/nanopaste
+		/obj/item/stack/nanopaste,
+		/obj/item/weapon/suture
 		)
 
 	startswith = list(
@@ -163,6 +168,7 @@
 		/obj/item/weapon/bonegel,
 		/obj/item/weapon/FixOVein,
 		/obj/item/stack/medical/advanced/bruise_pack,
+		/obj/item/weapon/suture
 		)
 
 /*
