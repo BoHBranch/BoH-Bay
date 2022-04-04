@@ -23,8 +23,10 @@
 	cost = 3
 
 /datum/gear/tactical/sheath
-	display_name = "machete sheath"
+	display_name = "machete sheath selection"
+	description = "A leg strapped machete sheath."
 	path = /obj/item/clothing/accessory/storage/holster/machete
+	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/tactical/knife_sheath
 	display_name = "knife sheath selection"
