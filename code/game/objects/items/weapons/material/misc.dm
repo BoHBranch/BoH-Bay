@@ -77,6 +77,7 @@
 	parrysound = 'sound/weapons/parry/parry_metallarge.ogg'
 	base_parry_chance = 40
 	force_divisor = 0.25 //20 with hardness 80 (titanium) or 15 with hardness 60 (steel)
+	hitsound = 'sound/weapons/bladeslice.ogg'
 
 /obj/item/weapon/material/hatchet/machete/unbreakable
 	unbreakable = TRUE
