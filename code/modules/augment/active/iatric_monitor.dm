@@ -11,14 +11,14 @@
 	. = ..()
 	if (severity)
 		var/scan_results = medical_scan_results(owner, TRUE, SKILL_NONE)
-		owner.playsound_simple(null, 'sound/effects/fastbeep.ogg', 20, is_global = TRUE)
+		owner.playsound_simple(null, 'sound/effects/fastbeep.ogg', 20)
 		to_chat(owner, "<br>[scan_results]<br>")
 		to_chat(owner, SPAN_WARNING("Your [name] cheerily outputs a bogus report as it malfunctions."))
 
 
 /obj/item/organ/internal/augment/active/iatric_monitor/activate()
 	var/scan_results = medical_scan_results(owner, TRUE, SKILL_PROF)
-	owner.playsound_simple(null, 'sound/effects/fastbeep.ogg', 20, is_global = TRUE)
+	owner.playsound_simple(null, 'sound/effects/fastbeep.ogg', 20)
 	to_chat(owner, "<br>[scan_results]<br>")
 
 

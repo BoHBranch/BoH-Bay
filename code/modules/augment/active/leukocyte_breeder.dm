@@ -42,7 +42,7 @@
 		if (alert(owner, "Deactivate \the [src]?", name, "Yes", "No") != "Yes" || !can_activate())
 			return
 	active = !active
-	owner.playsound_simple(null, 'sound/effects/fastbeep.ogg', 20, is_global = TRUE)
+	owner.playsound_simple(null, 'sound/effects/fastbeep.ogg', 20)
 	if (active)
 		to_chat(owner, SPAN_NOTICE("Leukocyte breeder engaged and improving immune response."))
 	else
