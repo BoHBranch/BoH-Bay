@@ -205,7 +205,7 @@
 			H.adjustHalLoss(50-(H.chem_effects[CE_PAINKILLER]/5)) // The Halloss is here because pain on its own doesn't knock you out at first, since the pain itself is a slow burn, our halloss is reduced by our painkiller rating divided by 5.
 			H.custom_pain("The pain in your [affected.name] is unbearable!",rand(100, 120),affecting = affected)
 			var/delay = 30 * user.skill_delay_mult(SKILL_MEDICAL) //Double the delay of CPR based on skill
-			if(do_after(user, delay, src)
+			if(do_after(user, delay, src))
 				if((H == user && prob(75)) || prob(user.skill_fail_chance(SKILL_MEDICAL,50, SKILL_EXPERT)))
 					user.visible_message(SPAN_DANGER("\The [user] fumbles [src]."), SPAN_DANGER("You fumble [src]."), SPAN_DANGER("You hear something being knit."))
 					doing_something = FALSE
