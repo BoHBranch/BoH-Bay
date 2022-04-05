@@ -1,5 +1,5 @@
 /datum/outfit/admin/ert/solgov
-	name = "Nanotrasen ERT Responder"
+	name = "SolGov Responder"
 
 	uniform = /obj/item/clothing/under/ert
 	suit = null
@@ -23,7 +23,7 @@
 /datum/outfit/admin/ert/nanotrasen/get_id_access()
 	return get_all_station_access() | get_centcom_access("Emergency Response Team")
 
-/datum/outfit/admin/ert/nanotrasen/specialist
+/datum/outfit/admin/ert/solgov/specialist
 	name = "Nanotrasen ERT Engineer Specialist"
 
 	belt = /obj/item/storage/belt/utility/full

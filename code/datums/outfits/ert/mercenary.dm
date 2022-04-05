@@ -2,8 +2,8 @@
 	name = "Mercenary Freelancer"
 
 	uniform = /obj/item/clothing/under/syndicate
-	shoes = /obj/item/clothing/shoes/swat/ert
-	gloves = /obj/item/clothing/gloves/swat/ert
+	shoes = /obj/item/clothing/shoes/swat
+	gloves = /obj/item/clothing/gloves/thick/swat
 	belt = /obj/item/storage/belt/military
 	back = /obj/item/storage/backpack/satchel_norm
 	l_hand = /obj/item/clothing/suit/space/void/freelancer
@@ -64,7 +64,7 @@
 		/obj/item/reagent_containers/glass/bottle/dermaline = 1,
 		/obj/item/reagent_containers/glass/bottle/perconol = 1,
 		/obj/item/reagent_containers/glass/bottle/thetamycin = 1,
-		/obj/item/material/knife/trench = 1	
+		/obj/item/material/knife/trench = 1
 	)
 
 /datum/outfit/admin/ert/mercenary/engineer
