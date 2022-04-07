@@ -168,6 +168,7 @@ var/list/Tier2Runes = list(
 var/list/Tier3Runes = list(
 	/mob/proc/armor_rune,
 	/mob/proc/weapon_rune,
+	/mob/proc/gun_rune
 	/mob/proc/shell_rune,
 	/mob/proc/confuse_rune,
 	/mob/proc/revive_rune,
@@ -175,6 +176,7 @@ var/list/Tier3Runes = list(
 )
 
 var/list/Tier4Runes = list(
+	/mob/proc/mech_rune,
 	/mob/proc/tearreality_rune
 	)
 
@@ -243,6 +245,18 @@ var/list/Tier4Runes = list(
 	set name = "Rune: Summon Armor"
 
 	make_rune(/obj/effect/rune/equip/space, tome_required = 1)
+
+/mob/proc/gun_rune()
+	set category = "Cult Magic"
+	set name = "Rune: Summon Bloodpike"
+
+	make_rune(/obj/effect/rune/gun, tome_required = 1)
+
+/mob/proc/mech_rune()
+	set category = "Cult Magic"
+	set name = "Rune: Forge Exosuit"
+
+	make_rune(/obj/effect/rune/mech, cost = 10, tome_required = 1)
 
 /mob/proc/offering_rune()
 	set category = "Cult Magic"
