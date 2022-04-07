@@ -444,3 +444,19 @@ Thanks a bunch! :n
 			if(prob(33))
 				to_chat(M, "<span class='warning'>The exposed flesh on your feet burns!</span>")
 			M.apply_effect(effective_strength / 2, PAIN, 0)
+
+//
+/obj/item/projectile/bullet/shard
+	name = "shard"
+	icon_state = "shard"
+	damage = 35
+	armor_penetration = 35
+	shrapnel_chance_multiplier = 1
+	arterial_bleed_chance_multiplier = 1
+	muzzle_type = /obj/effect/projectile/muzzle/bolt
+
+/obj/item/projectile/bullet/shard/heavy
+	damage = 55
+	armor_penetration = 45
+	shrapnel_chance_multiplier = 1
+	arterial_bleed_chance_multiplier = 1
