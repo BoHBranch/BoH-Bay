@@ -961,3 +961,38 @@
 		icon_state = "unathidoublehorns"
 		color_blend_mode = ICON_MULTIPLY
 		body_parts = list(BP_HEAD)
+
+	optics_morpheus_inner //i would merge these two into one, but then the colors don't turn out the way they're supposed to
+		name = "Morpheus Prime/Blitz Optics - Inner (colorable)"
+		icon_state = "optics_morpheus_inner"
+		body_parts = list(BP_HEAD)
+
+	optics_morpheus_outer
+		name = "Morpheus Prime/Blitz Optics - Outer (colorable)"
+		icon_state = "optics_morpheus_outer"
+		body_parts = list(BP_HEAD)
+
+	optics_blitz_extra //accounts for the extra pixel on the Morpheus Blitz head optics
+		name = "Morpheus Blitz Optics - Extra (colorable)"
+		icon_state = "optics_blitz"
+		body_parts = list(BP_HEAD)
+
+	optics_blitz_antennae
+		name = "Morpheus Blitz Antennae (colorable)"
+		icon_state = "optics_blitz_antennae"
+		body_parts = list(BP_HEAD)
+
+	optics_airborne_main
+		name = "Morpheus Airborne Screen - Main (colorable)"
+		icon_state = "optics_airborne_main"
+		body_parts = list(BP_HEAD)
+
+	optics_airborne_outer
+		name = "Morpheus Airborne Screen - Edges (colorable)"
+		icon_state = "optics_airborne_outer"
+		body_parts = list(BP_HEAD)
+
+	optics_airborne_gloss
+		name = "Morpheus Airborne Screen - Gloss (colorable)"
+		icon_state = "optics_airborne_gloss"
+		body_parts = list(BP_HEAD)
