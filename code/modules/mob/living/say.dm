@@ -342,6 +342,13 @@ proc/get_radio_key_from_channel(var/channel)
 		log_whisper("[name]/[key] : [message]")
 	else
 		log_say("[name]/[key] : [message]")
+
+//Rune stuff.
+
+	var/new_message = message//Need a copy of the original message here
+
+	INVOKE_ASYNC(src, /atom/movable/proc/animate_chat, new_message, speaking, italics, speech_bubble_recipients, 40)
+
 	return 1
 
 /mob/living/proc/say_signlang(var/message, var/verb="gestures", var/datum/language/language)
