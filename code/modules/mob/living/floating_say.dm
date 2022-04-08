@@ -1,4 +1,4 @@
-// Code by Chinsky. I've just changed some stuff around to fix some runtimes. Made by Matt.
+// Code by Chinsky. I've just changed some stuff around to fix some runtimes. Further edits made by Matt.
 var/list/floating_chat_colors = list()
 
 /atom/movable
