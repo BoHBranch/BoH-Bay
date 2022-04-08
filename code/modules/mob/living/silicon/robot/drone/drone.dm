@@ -147,6 +147,22 @@ var/list/mob_hat_cache = list()
 	flavor_text = "It's a tiny little repair drone. The casing is stamped with an corporate logo and the subscript: '[GLOB.using_map.company_name] Recursive Repair Systems: Fixing Tomorrow's Problem, Today!'"
 	playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 0)
 
+/mob/living/silicon/robot/drone/test
+	name = "test drone"
+	icon_state = "constructiondrone"
+	laws = /datum/ai_laws/construction_drone
+	module_type = /obj/item/weapon/robot_module/engineering
+	hat_x_offset = 1
+	hat_y_offset = -12
+	can_pull_size = ITEM_SIZE_NO_CONTAINER
+	can_pull_mobs = MOB_PULL_SAME
+
+/mob/living/silicon/robot/drone/init()
+	additional_law_channels["Drone"] = ":d"
+	if(!module) module = new module_type(src)
+
+	flavor_text = "It's a tiny little repair drone. The casing is stamped with an corporate logo and the subscript: '[GLOB.using_map.company_name] Recursive Repair Systems: Fixing Tomorrow's Problem, Today!'"
+	playsound(src.loc, 'sound/machines/twobeep.ogg', 50, 0)
 //Redefining some robot procs...
 /mob/living/silicon/robot/drone/fully_replace_character_name(pickedName as text)
 	// Would prefer to call the grandparent proc but this isn't possible, so..
