@@ -263,6 +263,16 @@ macro "borghotkeymode"
 	elem 
 		name = "."
 		command = "move-down"
+	elem ".winset :map.right-click=false"
+		name = "SHIFT+Shift"
+	elem "Shift"
+		name = "SHIFT"
+		command = ".winset :map.right-click=false"
+	elem "ShiftUp"
+		name = "SHIFT+UP"
+		command = ".winset :map.right-click=true"
+
+
 
 macro "macro"
 	elem 
@@ -451,6 +461,16 @@ macro "macro"
 	elem 
 		name = "CTRL+Subtract"
 		command = "move-down"
+	elem ".winset :map.right-click=false"
+		name = "SHIFT+Shift"
+	elem "Shift"
+		name = "SHIFT"
+		command = ".winset :map.right-click=false"
+	elem "ShiftUp"
+		name = "SHIFT+UP"
+		command = ".winset :map.right-click=true"
+
+
 
 macro "hotkeymode"
 	elem 
@@ -549,7 +569,7 @@ macro "hotkeymode"
 	elem 
 		name = "Delete"
 		command = "delete-key-pressed"
-	elem 
+	elem
 		name = "1"
 		command = "a-intent help"
 	elem 
@@ -735,6 +755,16 @@ macro "hotkeymode"
 	elem 
 		name = "SHIFT+UP"
 		command = "setmovingslowly"
+	elem ".winset :map.right-click=false"
+		name = "SHIFT+Shift"
+	elem "Shift"
+		name = "SHIFT"
+		command = ".winset :map.right-click=false"
+	elem "ShiftUp"
+		name = "SHIFT+UP"
+		command = ".winset :map.right-click=true"
+
+
 
 macro "borgmacro"
 	elem 
@@ -911,6 +941,16 @@ macro "borgmacro"
 	elem 
 		name = "CTRL+Subtract"
 		command = "move-down"
+	elem ".winset :map.right-click=false"
+		name = "SHIFT+Shift"
+	elem "Shift"
+		name = "SHIFT"
+		command = ".winset :map.right-click=false"
+	elem "ShiftUp"
+		name = "SHIFT+UP"
+		command = ".winset :map.right-click=true"
+
+
 
 
 menu "menu"
@@ -1077,6 +1117,7 @@ window "mapwindow"
 		saved-params = "pos;size;is-minimized;is-maximized"
 		titlebar = false
 		statusbar = false
+		right-click = true
 		can-close = false
 		can-minimize = false
 		can-resize = false
