@@ -46,6 +46,10 @@
 	var/related_accounts_ip = "Requires database"	//So admins know why it isn't working - Used to determine what other accounts previously logged in from this ip
 	var/related_accounts_cid = "Requires database"	//So admins know why it isn't working - Used to determine what other accounts previously logged in from this computer id
 
+	///remembers what our context menu setting is currently set to
+	var/shift_to_open_context_menu = TRUE
+
+
 	/*
 	As of byond 512, due to how broken preloading is, preload_rsc MUST be set to 1 at compile time if resource URLs are *not* in use,
 	BUT you still want resource preloading enabled (from the server itself). If using resource URLs, it should be set to 0 and

@@ -312,6 +312,33 @@
 	return
 
 /*
+	Rclick.
+*/
+
+/mob/proc/RightClickOn(atom/A)
+	A.RightClick(src)
+
+///Called when a owner mob Shift + Rightmouseclicks an atom
+/mob/proc/ShiftRightClickOn(atom/A)
+	A.ShiftRightClick(src)
+
+///Called when a owner mob Alt + Rightmouseclicks an atom, given that Altclick does not return TRUE
+/mob/proc/AltRightClickOn(atom/A)
+	A.AltRightClick(src)
+
+///Called when a mob Rightmouseclicks this atom
+/atom/proc/RightClick(mob/user)
+	return
+
+///Called when a mob Shift + Rightmouseclicks this atom
+/atom/proc/ShiftRightClick(mob/user)
+	return
+
+///Called when a mob Alt + Rightmouseclicks this atom, given that mobs Altclick() does not return TRUE
+/atom/proc/AltRightClick(mob/user)
+	return
+
+/*
 	Misc helpers
 
 	Laser Eyes: as the name implies, handles this since nothing else does currently

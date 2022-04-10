@@ -663,7 +663,7 @@
 		if(pin)
 			to_chat(user, SPAN_WARNING("There's already a pin installed."))
 
-/obj/item/weapon/gun/AltClick(var/mob/user)
+/obj/item/weapon/gun/RightClick(var/mob/user)
 	if(!pin)
 		to_chat(user, SPAN_WARNING("There's no firing pin installed in this weapon."))
 		return

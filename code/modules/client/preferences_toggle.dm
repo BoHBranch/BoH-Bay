@@ -62,3 +62,21 @@ var/list/client_preference_stats_
 
 /stat_client_preference/proc/update_name(var/mob/user)
 	name = user.get_preference_value(client_preference)
+
+///Toggles whether or not you need to hold shift to access the right click menu
+/client/verb/toggle_right_click()
+	set name = "Toggle Right Click"
+	set category = "Preferences"
+
+	if(shift_to_open_context_menu)
+		winset(src, "mapwindow.map", "right-click=false")
+		winset(src, "default.Shift", "is-disabled=true")
+		winset(src, "default.ShiftUp", "is-disabled=true")
+		shift_to_open_context_menu = FALSE
+		to_chat(usr, "<span class='notice'>You will no longer need to hold the Shift key to access the right click menu</span>")
+	else
+		winset(src, "mapwindow.map", "right-click=true")
+		winset(src, "ShiftUp", "is-disabled=false")
+		winset(src, "Shift", "is-disabled=false")
+		shift_to_open_context_menu = TRUE
+		to_chat(usr, "<span class='notice'>You will now need to hold the Shift key to access the right click menu</span>")
