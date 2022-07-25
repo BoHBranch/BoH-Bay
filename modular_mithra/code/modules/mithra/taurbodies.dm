@@ -24,7 +24,7 @@
 	hide_body_parts	= list(BP_L_LEG, BP_L_FOOT, BP_R_LEG, BP_R_FOOT) //Exclude pelvis just in case.
 	clip_mask_icon = 'icons/mob/human_races/sprite_accessories/taurs.dmi'
 	clip_mask_state = "taur_clip_mask_def" //Used to clip off the lower part of suits & uniforms.
-	//species_allowed = list(SPECIES_ECUSTOM)
+	species_allowed = list(SPECIES_ECUSTOM) //HESTIA MODIFICATION - By order of Carl, only a special class of Genemodder can use these.
 
 // Species-unique long tails/taurhalves
 
