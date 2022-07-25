@@ -1377,7 +1377,3 @@ obj/item/organ/external/proc/remove_clamps()
 		. += max_delay * 3/8
 	else if(BP_IS_ROBOTIC(src))
 		. += max_delay * CLAMP01(damage/max_damage)
-
-/obj/item/organ/external/proc/is_hidden_by_tail()
-	if(owner && owner.tail_style && owner.tail_style.hide_body_parts && (organ_tag in owner.tail_style.hide_body_parts))
-		return 1

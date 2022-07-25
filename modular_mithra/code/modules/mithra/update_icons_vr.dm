@@ -26,7 +26,7 @@ var/global/list/wing_icon_cache = list()
 			return image(tail_s)
 
 	//If you have a custom tail selected
-	if(tail_style && !(wear_suit && wear_suit.flags_inv & HIDETAIL && !istaurtail(tail_style)))
+	if(tail_style && !(wear_suit && wear_suit.flags_inv & HIDETAIL))
 		var/icon/tail_s = new/icon("icon" = tail_style.icon, "icon_state" = tail_style.ani_state ? tail_style.ani_state : tail_style.icon_state)
 		if(tail_style.do_colouration)
 			tail_s.Blend(rgb(src.r_tail, src.g_tail, src.b_tail), tail_style.color_blend_mode)
@@ -54,13 +54,7 @@ var/global/list/wing_icon_cache = list()
 				tail_s.Blend(overlay, ICON_OVERLAY)
 				qdel(overlay)
 
-		var/image/working = image(tail_s)
-
-		if(istaurtail(tail_style))
-			//var/datum/sprite_accessory/tail/taur/taurtype = tail_style
-			working.pixel_x = -16
-
-		return working
+		return image(tail_s)
 	return null
 
 /mob/living/carbon/human/

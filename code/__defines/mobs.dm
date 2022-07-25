@@ -326,7 +326,10 @@
 
 #define SPECIES_AKULA         "Akula"
 #define SPECIES_CUSTOM        "Genemodder"
+<<<<<<< HEAD
 /*#define SPECIES_ECUSTOM       "Aberration"*/
+=======
+>>>>>>> parent of 60d8bbf672 (Merge pull request #1594 from ShadeAware/spooder)
 #define SPECIES_VULP          "Vulpkanin"
 #define SPECIES_VASS          "Vasilissan"
 #define SPECIES_TAJ           "Tajaran"

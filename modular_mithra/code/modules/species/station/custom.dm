@@ -17,7 +17,6 @@
 	base_species = SPECIES_HUMAN
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
-	is_weaver = 1 //Gotta do this incase it fucks itself
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
 

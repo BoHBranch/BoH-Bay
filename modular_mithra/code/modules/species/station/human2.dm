@@ -8,7 +8,10 @@
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
 	hidden_from_codex = TRUE
+<<<<<<< HEAD
 	is_weaver = TRUE
+=======
+>>>>>>> parent of 60d8bbf672 (Merge pull request #1594 from ShadeAware/spooder)
 
 	spawn_flags = SPECIES_IS_RESTRICTED | SPECIES_IS_ICONBASE //Used only for custom species. Should not be selectable as a race by itself
 
