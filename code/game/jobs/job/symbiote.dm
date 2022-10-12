@@ -8,6 +8,11 @@ GLOBAL_LIST_INIT(symbiote_starting_points, new)
 	and are rendered docile by sugar. Unlike feral cortical borers, they cannot take control of your body or cause brain damage."
 	economic_power = 0.8
 	var/matches_to_role = /datum/job/symbiote
+	secondary_langs = list(
+		LANGUAGE_SPACER,
+		LANGUAGE_GUTTER,
+		LANGUAGE_SIGN
+	)
 
 /datum/job/symbiote
 	title = "Symbiote"
