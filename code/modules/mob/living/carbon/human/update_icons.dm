@@ -233,7 +233,7 @@ var/global/list/damage_icon_parts = list()
 
 	// blend the individual damage states with our icons
 	for(var/obj/item/organ/external/O in organs)
-		if(isnull(O) || O.is_stump() || O.is_hidden_by_tail())
+		if(isnull(O) || O.is_stump())
 			continue
 
 		O.update_damstate()
@@ -309,7 +309,7 @@ var/global/list/damage_icon_parts = list()
 
 	for(var/organ_tag in species.has_limbs)
 		var/obj/item/organ/external/part = organs_by_name[organ_tag]
-		if(O.is_stump())
+		if(isnull(part) || part.is_stump())
 			icon_key += "0"
 			continue
 		for(var/M in part.markings)
