@@ -309,7 +309,7 @@ var/global/list/damage_icon_parts = list()
 
 	for(var/organ_tag in species.has_limbs)
 		var/obj/item/organ/external/part = organs_by_name[organ_tag]
-		if(isnull(part) || part.is_stump() || part.is_hidden_by_tail()) //Edit allowing tails to prevent bodyparts rendering, granting more spriter freedom for taur/digitigrade stuff.
+		if(O.is_stump())
 			icon_key += "0"
 			continue
 		for(var/M in part.markings)
@@ -328,9 +328,6 @@ var/global/list/damage_icon_parts = list()
 				icon_key += "#000000"
 			for(var/M in part.markings)
 				icon_key += "[M][part.markings[M]["color"]]"
-			if(istype(tail_style, /datum/sprite_accessory/tail/taur))
-				if(tail_style.clip_mask) //VOREStation Edit.
-					icon_key += tail_style.clip_mask_state
 		if(BP_IS_ROBOTIC(part))
 			icon_key += "2[part.model ? "-[part.model]": ""]"
 		else if(part.status & ORGAN_DEAD)
@@ -349,55 +346,12 @@ var/global/list/damage_icon_parts = list()
 		var/obj/item/organ/external/chest = get_organ(BP_CHEST)
 		base_icon = chest.get_icon()
 
-		var/icon/Cutter = null
-
-		if(istype(tail_style, /datum/sprite_accessory/tail/taur))	// Tail icon 'cookie cutters' are filled in where icons are preserved. We need to invert that.
-			if(tail_style.clip_mask) //VOREStation Edit.
-				Cutter = new(icon = tail_style.icon, icon_state = tail_style.clip_mask_state)
-
-				Cutter.Blend("#000000", ICON_MULTIPLY)	// Make it all black.
-
-				Cutter.SwapColor("#00000000", "#FFFFFFFF")	// Everywhere empty, make white.
-				Cutter.SwapColor("#000000FF", "#00000000")	// Everywhere black, make empty.
-
-				Cutter.Blend("#000000", ICON_MULTIPLY)	// Black again.
-
-
 		for(var/obj/item/organ/external/part in (organs-chest))
 			var/icon/temp = part.get_icon()
 			//That part makes left and right legs drawn topmost and lowermost when human looks WEST or EAST
 			//And no change in rendering for other parts (they icon_position is 0, so goes to 'else' part)
 			if(part.icon_position & (LEFT | RIGHT))
 				var/icon/temp2 = new('icons/mob/human.dmi',"blank")
-				temp2.Insert(new/icon(temp,dir=NORTH),dir=NORTH)
-				temp2.Insert(new/icon(temp,dir=SOUTH),dir=SOUTH)
-				if(!(part.icon_position & LEFT))
-					temp2.Insert(new/icon(temp,dir=EAST),dir=EAST)
-				if(!(part.icon_position & RIGHT))
-					temp2.Insert(new/icon(temp,dir=WEST),dir=WEST)
-				base_icon.Blend(temp2, ICON_OVERLAY)
-				if(part.icon_position & LEFT)
-					temp2.Insert(new/icon(temp,dir=EAST),dir=EAST)
-				if(part.icon_position & RIGHT)
-					temp2.Insert(new/icon(temp,dir=WEST),dir=WEST)
-				base_icon.Blend(temp2, ICON_UNDERLAY)
-			else if(part.icon_position & UNDER)
-				base_icon.Blend(temp, ICON_UNDERLAY)
-			else
-				base_icon.Blend(temp, ICON_OVERLAY)
-
-		for(var/obj/item/organ/external/part in organs)
-			if(isnull(part) || part.is_stump() || part.is_hidden_by_tail()) //VOREStation Edit allowing tails to prevent bodyparts rendering, granting more spriter freedom for taur/digitigrade stuff.
-				continue
-			var/icon/temp = part.get_icon(skeleton)
-
-			if((part.organ_tag in list(BP_L_LEG, BP_R_LEG, BP_L_FOOT, BP_R_FOOT)) && Cutter)
-				temp.Blend(Cutter, ICON_AND, x = -16)
-
-			//That part makes left and right legs drawn topmost and lowermost when human looks WEST or EAST
-			//And no change in rendering for other parts (they icon_position is 0, so goes to 'else' part)
-			if(part.icon_position & (LEFT | RIGHT))
-				var/icon/temp2 = new(species.icon_template ? species.icon_template : 'icons/mob/human.dmi', icon_state = "blank")
 				temp2.Insert(new/icon(temp,dir=NORTH),dir=NORTH)
 				temp2.Insert(new/icon(temp,dir=SOUTH),dir=SOUTH)
 				if(!(part.icon_position & LEFT))
