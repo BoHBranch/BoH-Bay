@@ -43,6 +43,10 @@
 	usr.client.perspective = EYE_PERSPECTIVE
 	usr.client.eye = src
 
+/obj/machinery/bodyscanner/RightClick(mob/user)
+	if(CanPhysicallyInteract(user))
+		eject()
+
 /obj/machinery/bodyscanner/proc/drop_contents()
 	for(var/obj/O in (contents - component_parts))
 		O.dropInto(loc)
