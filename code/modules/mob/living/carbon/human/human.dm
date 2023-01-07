@@ -4,6 +4,7 @@
 	voice_name = "unknown"
 	icon = 'icons/mob/human.dmi'
 	icon_state = "body_m_s"
+	can_have_vision_cone = FALSE
 
 	var/list/hud_list[10]
 	var/embedded_flag	  //To check if we've need to roll for damage on movement while an item is imbedded in us.
@@ -26,6 +27,9 @@
 			set_species(new_species,1)
 		else
 			set_species()
+
+	if(species.have_vision_cone)
+		can_have_vision_cone = TRUE
 
 	var/decl/cultural_info/culture = SSculture.get_culture(cultural_info[TAG_CULTURE])
 	if(culture)

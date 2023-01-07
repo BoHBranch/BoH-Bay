@@ -233,6 +233,7 @@
 	health_hud_intensity = 2
 	hunger_factor = 3
 	thirst_factor = 0.01
+	have_vision_cone = FALSE
 
 	min_age = 18
 	max_age = 300

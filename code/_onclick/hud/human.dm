@@ -23,6 +23,11 @@
 	stamina_bar = new
 	adding += stamina_bar
 
+	if(target.can_have_vision_cone)
+		var/mob/living/carbon/human/H = mymob
+		H.vision_cone_overlay = new /obj/screen/fov()
+		hud_elements |= H.vision_cone_overlay
+
 	// Draw the various inventory equipment slots.
 	var/has_hidden_gear
 	for(var/gear_slot in hud_data.gear)
@@ -187,7 +192,7 @@
 		mymob.healths.SetName("health")
 		mymob.healths.screen_loc = ui_health
 		hud_elements |= mymob.healths
-		
+
 		mymob.oxygen = new /obj/screen/oxygen()
 		mymob.oxygen.icon = 'icons/mob/status_indicators.dmi'
 		mymob.oxygen.icon_state = "oxy0"
@@ -308,7 +313,7 @@
 		client.screen -= hud_used.hotkeybuttons
 		hud_used.hotkey_ui_hidden = 1
 
-// Yes, these use icon state. Yes, these are terrible. The alternative is duplicating 
+// Yes, these use icon state. Yes, these are terrible. The alternative is duplicating
 // a bunch of fairly blobby logic for every click override on these objects.
 
 /obj/screen/food/Click(var/location, var/control, var/params)
