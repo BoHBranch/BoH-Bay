@@ -234,7 +234,8 @@
 
 /obj/item/projectile/beam/stun/shock/heavy
 	name = "heavy shock beam"
-	damage = 40
+	damage = 20
+	agony = 30
 
 /obj/item/projectile/beam/plasmacutter
 	name = "plasma arc"

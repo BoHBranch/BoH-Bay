@@ -5,7 +5,7 @@
 	icon_state = "taserstun"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	modifystate = "taserstun"
-	max_shots = 9
+	max_shots = 10
 	projectile_type = /obj/item/projectile/beam/stun
 	combustion = 0
 
@@ -70,7 +70,7 @@
 	one_hand_penalty = 6
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
 	force = 10
-	max_shots = 5
+	max_shots = 10
 	accuracy = 2
 	projectile_type = /obj/item/projectile/energy/electrode/stunshot
 	wielded_item_state = "stunrifle-wielded"
