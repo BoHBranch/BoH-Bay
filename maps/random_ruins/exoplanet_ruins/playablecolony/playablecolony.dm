@@ -101,7 +101,7 @@
 
 /area/map_template/colony/radar
 	name = "\improper Colony Radar Array"
-	icon_state = "airlock"
+	icon_state = "E"
 
 /area/map_template/colony/sam
 	name = "\improper Colony SAM Platform"
