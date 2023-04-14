@@ -6300,6 +6300,12 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony)
+"kU" = (
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 9
+	},
+/turf/simulated/floor/exoplanet/concrete/reinforced/damaged,
+/area/map_template/colony/radar)
 "kV" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -6394,6 +6400,9 @@
 	},
 /turf/simulated/floor/reinforced/nitrogen,
 /area/map_template/colony/atmospherics)
+"ld" = (
+/turf/simulated/floor/exoplanet/concrete/reinforced/damaged,
+/area/map_template/colony/radar)
 "le" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -6662,6 +6671,23 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/exoplanet/concrete,
 /area/map_template/colony/mineralprocessing)
+"lE" = (
+/obj/structure/grille,
+/obj/structure/cable{
+	icon_state = "0-4";
+	d2 = 4
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/colony/mineralprocessing)
+"lF" = (
+/obj/structure/colony/pulse,
+/turf/simulated/floor/reinforced,
+/area/map_template/colony/radar)
 "lG" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -7820,13 +7846,15 @@
 /turf/simulated/wall/r_wall,
 /area/map_template/colony/jail)
 "ny" = (
-/obj/structure/grille,
+/obj/structure/catwalk,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/exoplanet/concrete,
-/area/map_template/colony/mineralprocessing)
+/area/template_noop)
 "nz" = (
 /obj/structure/grille,
 /obj/structure/cable{
@@ -8310,6 +8338,16 @@
 /obj/item/stack/flag/yellow,
 /turf/simulated/floor/exoplanet/concrete,
 /area/map_template/colony/mineralprocessing)
+"oj" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/obj/machinery/missile_platform,
+/turf/simulated/floor/reinforced,
+/area/map_template/colony/radar)
 "ok" = (
 /obj/structure/railing/mapped,
 /obj/effect/floor_decal/industrial/warning/dust,
@@ -8548,6 +8586,10 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/exoplanet/concrete,
 /area/map_template/colony/mineralprocessing)
+"oB" = (
+/obj/effect/wallframe_spawn/reinforced_phoron/titanium,
+/turf/simulated/floor/reinforced,
+/area/map_template/colony/radar)
 "oC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -8640,6 +8682,154 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/map_template/colony)
+"oK" = (
+/obj/machinery/shipsensors/colony,
+/turf/simulated/floor/reinforced/airless,
+/area/map_template/colony/radar)
+"oL" = (
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 10
+	},
+/turf/simulated/floor/exoplanet/concrete/reinforced/damaged,
+/area/map_template/colony/radar)
+"oM" = (
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 6
+	},
+/turf/simulated/floor/exoplanet/concrete/reinforced/damaged,
+/area/map_template/colony/radar)
+"oN" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/template_noop,
+/area/template_noop)
+"oO" = (
+/obj/structure/catwalk,
+/obj/structure/railing/mapped,
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"oP" = (
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 5
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/exoplanet/concrete/reinforced/damaged,
+/area/map_template/colony/radar)
+"oQ" = (
+/obj/structure/cable{
+	d2 = 4;
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc{
+	dir = 2;
+	locked = 0;
+	name = "south bump";
+	operating = 1;
+	pixel_y = -28
+	},
+/obj/machinery/light,
+/turf/simulated/floor/exoplanet/concrete/reinforced/damaged,
+/area/map_template/colony/radar)
+"oR" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/turf/simulated/floor/exoplanet/concrete/reinforced/damaged,
+/area/map_template/colony/radar)
+"oS" = (
+/obj/machinery/missile_platform,
+/turf/simulated/floor/reinforced,
+/area/map_template/colony/radar)
+"oT" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/exoplanet/concrete/reinforced/damaged,
+/area/map_template/colony/radar)
+"oU" = (
+/turf/simulated/wall/r_titanium,
+/area/map_template/colony/radar)
+"oV" = (
+/obj/structure/catwalk,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/railing/mapped,
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"oW" = (
+/obj/structure/catwalk,
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1";
+	tag = "icon-railing0 (EAST)"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"oX" = (
+/obj/structure/catwalk,
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1";
+	tag = "icon-railing0 (EAST)"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"oY" = (
+/obj/structure/catwalk,
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/template_noop)
+"oZ" = (
+/obj/structure/missile/sam{
+	dir = 1
+	},
+/turf/simulated/floor/exoplanet/concrete/reinforced/damaged,
+/area/map_template/colony/radar)
+"pa" = (
+/obj/structure/missile/sam,
+/turf/simulated/floor/exoplanet/concrete/reinforced/damaged,
+/area/map_template/colony/radar)
+"pb" = (
+/turf/simulated/wall/r_wall,
+/area/map_template/colony/radar)
+"pc" = (
+/obj/machinery/computer/ship/missiles,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/colony/radar)
+"pd" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/item/weapon/stool/padded,
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/colony/radar)
+"pf" = (
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/colony/radar)
+"ph" = (
+/obj/machinery/computer/ship/sensors{
+	dir = 1
+	},
+/turf/simulated/floor/exoplanet/concrete,
+/area/map_template/colony/radar)
 "tz" = (
 /obj/machinery/portable_atmospherics/hydroponics,
 /obj/effect/floor_decal/techfloor{
@@ -8977,6 +9167,19 @@ vk
 aO
 aO
 aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (2,1,1) = {"
 af
@@ -9017,6 +9220,19 @@ mp
 mt
 aO
 aO
+aa
+aa
+aa
+aa
+aj
+oW
+oW
+oW
+oW
+oW
+oW
+oW
+aj
 aa
 "}
 (3,1,1) = {"
@@ -9059,6 +9275,19 @@ nF
 nK
 aO
 aa
+aa
+aa
+aa
+oO
+kU
+ld
+ld
+ld
+ld
+ld
+oL
+oY
+aa
 "}
 (4,1,1) = {"
 af
@@ -9099,6 +9328,19 @@ bF
 nG
 nL
 aO
+aa
+aa
+aa
+aa
+oO
+ld
+lF
+ld
+ld
+oZ
+oS
+ld
+oY
 aa
 "}
 (5,1,1) = {"
@@ -9141,6 +9383,19 @@ nH
 nM
 aO
 aa
+aa
+aa
+aa
+oO
+ld
+ld
+oB
+oB
+oB
+ld
+ld
+oY
+aa
 "}
 (6,1,1) = {"
 af
@@ -9181,6 +9436,19 @@ nD
 nI
 nN
 aO
+aa
+aa
+aa
+aa
+eL
+ld
+oQ
+oU
+oK
+oB
+pa
+ld
+oY
 aa
 "}
 (7,1,1) = {"
@@ -9223,6 +9491,19 @@ mt
 aO
 aO
 aa
+aa
+aa
+aa
+oO
+ld
+oR
+oB
+oB
+oB
+ld
+ld
+oY
+aa
 "}
 (8,1,1) = {"
 af
@@ -9264,6 +9545,19 @@ mn
 aO
 aO
 nZ
+aa
+aa
+aa
+oO
+ld
+oj
+ld
+oZ
+ld
+oS
+ld
+oY
+aa
 "}
 (9,1,1) = {"
 af
@@ -9303,8 +9597,21 @@ ko
 jC
 nX
 od
+lE
 ny
-fc
+oN
+oN
+oN
+oV
+oP
+oT
+ld
+ld
+ld
+ld
+oM
+oY
+aa
 "}
 (10,1,1) = {"
 af
@@ -9346,6 +9653,19 @@ mQ
 oe
 nz
 fc
+aa
+aa
+aa
+aj
+oX
+oX
+ab
+pf
+ab
+oX
+oX
+aj
+aa
 "}
 (11,1,1) = {"
 af
@@ -9387,6 +9707,19 @@ kL
 oe
 nz
 fc
+aa
+aa
+aa
+aa
+aa
+pb
+pb
+pf
+pb
+pb
+aa
+aa
+aa
 "}
 (12,1,1) = {"
 af
@@ -9428,6 +9761,19 @@ la
 of
 nz
 fc
+aa
+aa
+aa
+aa
+aa
+oB
+pc
+pd
+ph
+oB
+aa
+aa
+aa
 "}
 (13,1,1) = {"
 af
@@ -9469,6 +9815,19 @@ la
 og
 ol
 fc
+aa
+aa
+aa
+aa
+aa
+pb
+oB
+pb
+oB
+pb
+aa
+aa
+aa
 "}
 (14,1,1) = {"
 af
@@ -9510,6 +9869,19 @@ la
 oh
 om
 fc
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (15,1,1) = {"
 af
@@ -9551,6 +9923,19 @@ la
 og
 on
 fc
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (16,1,1) = {"
 af
@@ -9592,6 +9977,19 @@ la
 oi
 nA
 fc
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (17,1,1) = {"
 af
@@ -9633,6 +10031,19 @@ gS
 jb
 nP
 fc
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (18,1,1) = {"
 af
@@ -9674,6 +10085,19 @@ oC
 mv
 nR
 op
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (19,1,1) = {"
 af
@@ -9715,6 +10139,19 @@ ov
 ok
 oo
 oq
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (20,1,1) = {"
 aj
@@ -9756,6 +10193,19 @@ ow
 bh
 bh
 or
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (21,1,1) = {"
 aa
@@ -9797,6 +10247,19 @@ ox
 mw
 mZ
 os
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (22,1,1) = {"
 ad
@@ -9838,6 +10301,19 @@ nS
 bh
 nm
 os
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (23,1,1) = {"
 ad
@@ -9879,6 +10355,19 @@ nU
 mw
 nq
 os
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (24,1,1) = {"
 ad
@@ -9920,6 +10409,19 @@ mu
 bh
 bh
 os
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (25,1,1) = {"
 ad
@@ -9961,6 +10463,19 @@ nW
 nY
 bh
 os
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (26,1,1) = {"
 ad
@@ -10002,6 +10517,19 @@ oa
 mD
 bh
 os
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (27,1,1) = {"
 ad
@@ -10043,6 +10571,19 @@ ob
 nh
 bh
 os
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (28,1,1) = {"
 ad
@@ -10084,6 +10625,19 @@ oc
 nw
 bh
 os
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (29,1,1) = {"
 ac
@@ -10125,6 +10679,19 @@ ba
 ba
 ab
 os
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (30,1,1) = {"
 aa
@@ -10166,6 +10733,19 @@ nl
 ba
 fc
 os
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (31,1,1) = {"
 ae
@@ -10207,6 +10787,19 @@ kj
 ba
 Kz
 mc
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (32,1,1) = {"
 ae
@@ -10248,6 +10841,19 @@ nB
 lB
 fc
 mc
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (33,1,1) = {"
 ae
@@ -10289,6 +10895,19 @@ ns
 lB
 fc
 mc
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (34,1,1) = {"
 ae
@@ -10330,6 +10949,19 @@ nJ
 ba
 fc
 mc
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (35,1,1) = {"
 ae
@@ -10371,6 +11003,19 @@ tI
 ba
 fc
 mc
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (36,1,1) = {"
 aa
@@ -10412,6 +11057,19 @@ Hy
 ba
 fc
 mc
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (37,1,1) = {"
 aa
@@ -10453,6 +11111,19 @@ ba
 ba
 aj
 mc
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (38,1,1) = {"
 aa
@@ -10494,6 +11165,19 @@ eZ
 ot
 aj
 mc
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (39,1,1) = {"
 aa
@@ -10535,6 +11219,19 @@ aa
 aa
 aa
 mc
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}
 (40,1,1) = {"
 aa
@@ -10576,4 +11273,665 @@ cs
 cs
 cs
 md
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(41,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(42,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(43,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(44,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(45,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(46,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(47,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(48,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(49,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(50,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(51,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(52,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 "}

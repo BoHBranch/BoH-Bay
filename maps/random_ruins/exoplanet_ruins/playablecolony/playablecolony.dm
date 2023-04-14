@@ -98,3 +98,26 @@
 /area/map_template/colony/dorms
 	name = "\improper Colony Dormitories"
 	icon_state = "C"
+
+/area/map_template/colony/radar
+	name = "\improper Colony Radar Array"
+	icon_state = "E"
+
+/area/map_template/colony/sam
+	name = "\improper Colony SAM Platform"
+	icon_state = "x"
+
+//'controller'
+/obj/structure/colony/pulse
+	name = "pulse-doppler radar controller"
+	desc = "An incredibly odd looking set of containers. Every so often it causes the surroundings to vibrate, as if the entire platform adjusts to its whim."
+	icon = 'colony.dmi'
+	icon_state = "pulse"
+	anchored = 1
+
+//actual 'radar'
+/obj/machinery/shipsensors/colony
+	name = "pulse-doppler radar array"
+	heat_reduction = 50//:)
+	idle_power_usage = 0
+	desc = "An incredibly powerful system, generally mistaken for something far older. With this, you can see to the edges of the system. In theory."
