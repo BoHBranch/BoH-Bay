@@ -23,22 +23,22 @@
 	return mobs
 
 /proc/random_hair_style(gender, species = SPECIES_HUMAN)
-	var/h_style = "Bald"
+	var/head_hair_style = "Bald"
 
 	var/datum/species/mob_species = all_species[species]
 	var/list/valid_hairstyles = mob_species.get_hair_styles()
 	if(length(valid_hairstyles))
-		h_style = pick(valid_hairstyles)
+		head_hair_style = pick(valid_hairstyles)
 
-	return h_style
+	return head_hair_style
 
 /proc/random_facial_hair_style(gender, species = SPECIES_HUMAN)
-	var/f_style = "Shaved"
+	var/facial_hair_style = "Shaved"
 	var/datum/species/mob_species = all_species[species]
 	var/list/valid_facialhairstyles = mob_species.get_facial_hair_styles(gender)
 	if(length(valid_facialhairstyles))
-		f_style = pick(valid_facialhairstyles)
-		return f_style
+		facial_hair_style = pick(valid_facialhairstyles)
+		return facial_hair_style
 
 /proc/random_name(gender, species = SPECIES_HUMAN)
 	var/datum/species/current_species = all_species[species]

@@ -357,21 +357,21 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 
 	else if(href_list["hair_style"])
 		var/list/valid_hairstyles = mob_species.get_hair_styles()
-		var/new_h_style
+		var/new_head_hair_style
 		var/hair_index = valid_hairstyles.Find(pref.head_hair_style)
 
 		if (href_list["inc"])
 			if (hair_index < length(valid_hairstyles) && valid_hairstyles[hair_index + 1])
-				new_h_style = valid_hairstyles[hair_index + 1]
+				new_head_hair_style = valid_hairstyles[hair_index + 1]
 		else if (href_list["dec"])
 			if (hair_index > 1 && valid_hairstyles[hair_index - 1])
-				new_h_style = valid_hairstyles[hair_index - 1]
+				new_head_hair_style = valid_hairstyles[hair_index - 1]
 		else
-			new_h_style = input(user, "Choose your character's hair style:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.head_hair_style)  as null|anything in valid_hairstyles
+			new_head_hair_style = input(user, "Choose your character's hair style:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.head_hair_style)  as null|anything in valid_hairstyles
 
 		mob_species = all_species[pref.species]
-		if(new_h_style && CanUseTopic(user) && (new_h_style in mob_species.get_hair_styles()))
-			pref.head_hair_style = new_h_style
+		if(new_head_hair_style && CanUseTopic(user) && (new_head_hair_style in mob_species.get_hair_styles()))
+			pref.head_hair_style = new_head_hair_style
 			return TOPIC_REFRESH_UPDATE_PREVIEW
 
 	else if(href_list["facial_color"])
@@ -417,21 +417,21 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 
 	else if(href_list["facial_style"])
 		var/list/valid_facialhairstyles = mob_species.get_facial_hair_styles(pref.gender)
-		var/new_f_style
+		var/new_facial_hair_style
 		var/hair_index = valid_facialhairstyles.Find(pref.facial_hair_style)
 
 		if (href_list["inc"])
 			if (hair_index < length(valid_facialhairstyles) && valid_facialhairstyles[hair_index + 1])
-				new_f_style = valid_facialhairstyles[hair_index + 1]
+				new_facial_hair_style = valid_facialhairstyles[hair_index + 1]
 		else if (href_list["dec"])
 			if (hair_index > 1 && valid_facialhairstyles[hair_index - 1])
-				new_f_style = valid_facialhairstyles[hair_index - 1]
+				new_facial_hair_style = valid_facialhairstyles[hair_index - 1]
 		else
-			new_f_style = input(user, "Choose your character's facial-hair style:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.facial_hair_style)  as null|anything in valid_facialhairstyles
+			new_facial_hair_style = input(user, "Choose your character's facial-hair style:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.facial_hair_style)  as null|anything in valid_facialhairstyles
 
 		mob_species = all_species[pref.species]
-		if(new_f_style && CanUseTopic(user) && (new_f_style in mob_species.get_facial_hair_styles(pref.gender)))
-			pref.facial_hair_style = new_f_style
+		if(new_facial_hair_style && CanUseTopic(user) && (new_facial_hair_style in mob_species.get_facial_hair_styles(pref.gender)))
+			pref.facial_hair_style = new_facial_hair_style
 			return TOPIC_REFRESH_UPDATE_PREVIEW
 
 	else if(href_list["marking_style"])

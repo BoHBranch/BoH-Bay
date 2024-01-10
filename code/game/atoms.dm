@@ -253,7 +253,6 @@
  * - `severity` Integer. The strength of the EMP, ranging from 1 to 3. NOTE: Lower numbers are stronger.
  */
 /atom/proc/emp_act(severity)
-	SHOULD_CALL_PARENT(TRUE)
 	if (get_max_health())
 		// No hitsound here - Doesn't make sense for EMPs.
 		// Generalized - 75-125 damage at max, 38-63 at medium, 25-42 at minimum severities.

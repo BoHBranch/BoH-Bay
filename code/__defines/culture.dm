@@ -17,6 +17,7 @@
 #define FACTION_FREETRADE      "Free Trade Union"
 #define FACTION_HEPHAESTUS     "Hephaestus Industries"
 #define FACTION_XYNERGY        "Xynergy"
+#define FACTION_SMC            "SCG Marine Corps"
 #define FACTION_FLEET          "SCG Fleet"
 #define FACTION_EXPEDITIONARY  "Expeditionary Corps"
 #define FACTION_PCRC           "Proxima Centauri Risk Control"
@@ -199,3 +200,46 @@
 #define CULTURE_NABBER_AMINUS "Grade A-"
 #define CULTURE_NABBER_A      "Grade A"
 #define CULTURE_NABBER_APLUS  "Grade A+"
+
+//r4iser found out the hard way that cultures don't work well when overwritten. Everything below here is needed for Mirtha to function.
+#define CULTURE_SYMBIOTIC		"Symbiote Host"
+#define CULTURE_UNATHI			"Moghes Hegemony"
+#define CULTURE_SERGAL			"The Sergals"
+
+// Ascent culture.
+#define CULTURE_ASCENT           "The Ascent"
+#define HOME_SYSTEM_KHARMAANI    "Core"
+#define FACTION_ASCENT_GYNE      "Ascent Gyne"
+#define FACTION_ASCENT_ALATE     "Ascent Alate"
+#define FACTION_ASCENT_SERPENTID "Ascent Serpentid"
+#define RELIGION_KHARMAANI       "Nest-Lineage Veneration"
+
+// Tajaran cultures.
+#define CULTURE_TAJARAN      "The Tajara"
+#define HOME_SYSTEM_TAJARAN  "Rarkajar"
+#define FACTION_TAJARAN      "Tajaran Government"
+
+//Xenophage cultures (lol)
+#define CULTURE_XENOPHAGE_D    "Xenophage Drone"
+#define CULTURE_XENOPHAGE_H    "Xenophage Hunter"
+#define CULTURE_XENOPHAGE_S    "Xenophage Sentinel"
+#define CULTURE_XENOPHAGE_Q    "Xenophage Queen"
+#define FACTION_XENOPHAGE      "Xenophage Hive"
+
+//Unathi cultures
+#define FACTION_UNATHI_POLAR        "Polar Clans"
+#define FACTION_UNATHI_DESERT       "Desert Clans"
+#define FACTION_UNATHI_SAVANNAH     "Savannah Clans"
+#define FACTION_UNATHI_DIAMOND_PEAK "Diamond Peak Clans"
+#define FACTION_UNATHI_SALT_SWAMP   "Salt Swamp Clans"
+#define FACTION_UNATHI_YEOSA		"Yeosa Clans"
+
+//Sergal cultures
+#define FACTION_SERGAL_SHIGU "Shigu Dukedom"
+#define FACTION_SERGAL_GOLD_RING "Gold ring megalopolis"
+#define FACTION_SERGAL_REONO "Reono lands"
+
+#define RELIGION_SERGAL_ANIMISM "Northern Religions"
+#define RELIGION_SERGAL_GOLD_RING "religion of Gold ring"
+
+#define HOME_SYSTEM_SERGALTAL "Tal"

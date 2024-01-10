@@ -401,6 +401,10 @@
 	/// Interval for spam prevention.
 	var/static/act_interval = 0.1 SECONDS
 
+	var/static/revival_cloning = 1
+
+	var/static/use_cortical_stacks = 1
+
 	var/static/max_explosion_range = 14
 
 	var/static/hub_visible = FALSE
@@ -849,6 +853,8 @@
 				deletion_starts_paused = TRUE
 			if ("enable_cold_mist")
 				enable_cold_mist = TRUE
+			if("use_cortical_stacks")
+				config.use_cortical_stacks = TRUE
 			else
 				log_misc("Unknown setting in config/config.txt: '[name]'")
 
@@ -865,6 +871,8 @@
 				health_threshold_dead = value
 			if ("revival_brain_life")
 				revival_brain_life = value
+			if("revival_cloning")
+				revival_cloning = value
 			if ("organ_health_multiplier")
 				organ_health_multiplier = value / 100
 			if ("organ_regeneration_multiplier")

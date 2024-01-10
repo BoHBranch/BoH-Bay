@@ -20,6 +20,7 @@
 #define SPECIES_NO_FBP_CHARGEN                FLAG(4)  // FBP of this species can't be selected at chargen.
 #define SPECIES_NO_ROBOTIC_INTERNAL_ORGANS    FLAG(5)  // Species cannot start with robotic organs or have them attached.
 
+#define SPECIES_NO_LACE						 0x20   // This species can't have a neural lace.
 
 // Species appearance flags
 #define SPECIES_APPEARANCE_HAS_SKIN_TONE_NORMAL     FLAG(0)  // Skin tone selectable in chargen for baseline humans (0-220)

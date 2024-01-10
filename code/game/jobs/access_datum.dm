@@ -474,3 +474,16 @@ var/global/const/access_merchant = "ACCESS_MERCHANT" //301
 	id = access_merchant
 	desc = "Merchant"
 	access_type = ACCESS_TYPE_NONE
+
+// Ascent access.
+/var/const/access_ascent = "ACCESS_ASCENT"
+/datum/access/ascent
+	id = access_ascent
+	desc = "Ascent Materiel"
+	access_type = ACCESS_TYPE_NONE
+
+/var/const/access_ascentpar = "ACCESS_ASCENTPAR"
+/datum/access/ascentpar
+	id = access_ascentpar
+	desc = "Ascent Par"
+	access_type = ACCESS_TYPE_NONE

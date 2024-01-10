@@ -17,6 +17,10 @@
 
 #define CHEM_SYNTH_ENERGY 500 // How much energy does it take to synthesize 1 unit of chemical, in Joules.
 
+//These are similar to the above, used to make genemodders work with carnivore/herbivore traits.
+#define IS_CARNIVORE 1
+#define IS_HERBIVORE 2
+
 #define CE_STABLE        "stable"       // Inaprovaline
 #define CE_ANTIBIOTIC    "antibiotic"   // Spaceacilin
 #define CE_BLOODRESTORE  "bloodrestore" // Iron/nutriment

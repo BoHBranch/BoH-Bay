@@ -15,6 +15,8 @@
 #define MUTATION_SKELETON        10
 #define MUTATION_FERAL           11 // Smash objects instead of using them, and unable to use items
 
+#define MUTATION_NOCLONE        12
+
 // Other Mutations:
 #define mNobreath      100 // No need to breathe.
 #define mRemote        101 // Remote viewing.

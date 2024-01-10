@@ -346,6 +346,7 @@
 #define SPECIES_HUMAN       "Human"
 #define SPECIES_DIONA       "Diona"
 #define SPECIES_VOX         "Vox"
+#define SPECIES_VOX_ARMALIS "Vox Armalis"
 #define SPECIES_IPC         "Machine"
 #define SPECIES_UNATHI      "Unathi"
 #define SPECIES_SKRELL      "Skrell"
@@ -360,10 +361,12 @@
 #define SPECIES_GRAVWORLDER "Grav-Adapted Human"
 #define SPECIES_MULE        "Mule"
 #define SPECIES_MONKEY      "Monkey"
-#define SPECIES_NABBER         "giant armoured serpentid"
+#define SPECIES_NABBER      "giant armoured serpentid"
+#define SPECIES_MANTID_ALATE   "Kharmaan Alate"
+#define SPECIES_MANTID_GYNE    "Kharmaan Gyne"
 
 #define UNRESTRICTED_SPECIES list(SPECIES_HUMAN, SPECIES_DIONA, SPECIES_IPC, SPECIES_UNATHI, SPECIES_YEOSA, SPECIES_SKRELL, SPECIES_TRITONIAN, SPECIES_SPACER, SPECIES_VATGROWN, SPECIES_GRAVWORLDER, SPECIES_MULE)
-#define RESTRICTED_SPECIES   list(SPECIES_VOX, SPECIES_ALIEN, SPECIES_GOLEM)
+#define RESTRICTED_SPECIES   list(SPECIES_VOX, SPECIES_ALIEN, SPECIES_GOLEM,SPECIES_MANTID_GYNE,SPECIES_MANTID_ALATE,SPECIES_VOX_ARMALIS)
 #define HUMAN_SPECIES        list(SPECIES_HUMAN, SPECIES_VATGROWN, SPECIES_SPACER, SPECIES_GRAVWORLDER, SPECIES_MULE)
 
 #define SURGERY_CLOSED 0
@@ -477,6 +480,18 @@
 #define DO_MISSING_USER      (-1)
 #define DO_MISSING_TARGET    (-2)
 #define DO_INCAPACITATED     (-3)
+
+//HESTIA SPECIES START
+#define SPECIES_SHELL		"Shell IPC"
+#define SPECIES_AKULA       "Akula"
+#define SPECIES_CUSTOM      "Genemodder"
+#define SPECIES_VULP        "Vulpkanin"
+#define SPECIES_VASS        "Vasilissan"
+#define SPECIES_TAJ         "Tajaran"
+#define SPECIES_OLDUNATHI   "Veteris'Unathi"
+#define SPECIES_HUMAN2      "Custom Human"
+#define SPECIES_SERGAL      "Sergal"
+//HESTIA SPECIES END
 
 #define FAKE_INVIS_ALPHA_THRESHOLD 127 // If something's alpha var is at or below this number, certain things will pretend it is invisible.
 
