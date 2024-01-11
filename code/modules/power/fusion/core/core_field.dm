@@ -79,6 +79,8 @@
 		catcher.SetSize((iter*2)+1)
 		particle_catchers.Add(catcher)
 
+	cache_reactions()
+
 	START_PROCESSING(SSobj, src)
 
 /obj/effect/fusion_em_field/Process()
@@ -102,7 +104,7 @@
 			uptake_gas.update_values()
 
 	//let the particles inside the field react
-	React()
+	ReactNew()
 
 	// Dump power to our powernet.
 	owned_core.add_avail(FUSION_ENERGY_PER_K * plasma_temperature)
@@ -144,7 +146,12 @@
 	check_instability()
 	Radiate()
 	if(radiation)
-		SSradiation.radiate(src, round(radiation*0.001))
+		SSradiation.radiate(src, round(radiation/1000))
+		if (locate(src.x, src.y, src.z-1))
+			SSradiation.radiate(locate(src.x, src.y, src.z-1), round(radiation/100000))
+		if (locate(src.x, src.y, src.z+1))
+			SSradiation.radiate(locate(src.x, src.y, src.z+1), round(radiation/100000))
+		radiation -= radiation * 0.1
 	return 1
 
 /obj/effect/fusion_em_field/proc/check_instability()
@@ -212,7 +219,8 @@
 	empulse(get_turf(src), ceil(plasma_temperature/1000), ceil(plasma_temperature/300))
 	sleep(5)
 	RadiateAll()
-	explosion(get_turf(owned_core),-1,-1,8,10) // Blow out all the windows.
+	explosion(get_turf(owned_core), min(plasma_temperature/1000, 10), min(plasma_temperature/1000, 7), min(plasma_temperature/1000, 10), min(plasma_temperature/300, 30), 1, DOWN)
+	//explosion(get_turf(owned_core),-1,-1,8,10) // Blow out all the windows.
 	return
 
 /obj/effect/fusion_em_field/proc/ChangeFieldStrength(var/new_strength)
@@ -248,7 +256,7 @@
 /obj/effect/fusion_em_field/proc/AddParticles(var/name, var/quantity = 1)
 	if(name in reactants)
 		reactants[name] += quantity
-	else if(name != "proton" && name != "electron" && name != "neutron")
+	else
 		reactants.Add(name)
 		reactants[name] = quantity
 
@@ -306,7 +314,7 @@
 		var/datum/gas_mixture/environment = owned_core.loc.return_air()
 		if(environment && environment.temperature < (T0C+1000)) // Putting an upper bound on it to stop it being used in a TEG.
 			environment.add_thermal_energy(plasma_temperature*20000)
-	radiation = 0
+	//radiation = 0
 
 /obj/effect/fusion_em_field/proc/change_size(var/newsize = 1)
 	var/changed = 0
@@ -333,120 +341,110 @@
 		catcher.UpdateSize()
 	return changed
 
-//the !!fun!! part
-/obj/effect/fusion_em_field/proc/React()
-	//loop through the reactants in random order
-	var/list/react_pool = reactants.Copy()
 
-	//cant have any reactions if there aren't any reactants present
-	if(react_pool.len)
-		//determine a random amount to actually react this cycle, and remove it from the standard pool
-		//this is a hack, and quite nonrealistic :(
-		for(var/reactant in react_pool)
-			react_pool[reactant] = rand(Floor(react_pool[reactant]/2),react_pool[reactant])
-			reactants[reactant] -= react_pool[reactant]
-			if(!react_pool[reactant])
-				react_pool -= reactant
+// ------
+// IN-DEV
+// ------
 
-		//loop through all the reacting reagents, picking out random reactions for them
-		var/list/produced_reactants = new/list
-		var/list/p_react_pool = react_pool.Copy()
-		while(p_react_pool.len)
-			//pick one of the unprocessed reacting reagents randomly
-			var/cur_p_react = pick(p_react_pool)
-			p_react_pool.Remove(cur_p_react)
+// VVVVV REMOVE BEFORE MERGING
+/obj/effect/fusion_em_field/proc/addstuff()
+	reactants += list("debug" = 100, "debugtwo" = 150)
+// ^^^^^ REMOVE BEFORE MERGING
 
-			//grab all the possible reactants to have a reaction with
-			var/list/possible_s_reacts = react_pool.Copy()
-			//if there is only one of a particular reactant, then it can not react with itself so remove it
-			possible_s_reacts[cur_p_react] -= 1
-			if(possible_s_reacts[cur_p_react] < 1)
-				possible_s_reacts.Remove(cur_p_react)
+// New React proc, does the fun
+/obj/effect/fusion_em_field/proc/ReactNew()
+	// Get us a copy of the reactants to allow us to work on a cached version
+	var/list/reactants_copy = reactants.Copy()
+	// Prepare a list for all possible reactions
+	var/list/possible_reactions = new/list
 
-			//loop through and work out all the possible reactions
-			var/list/possible_reactions
-			for(var/cur_s_react in possible_s_reacts)
-				if(possible_s_reacts[cur_s_react] < 1)
+	// Check that we have reactants at all
+	if (reactants_copy.len)
+		var/sum = 0
+
+		for (var/reactant in reactants_copy)
+			sum += reactants_copy[reactant] // Sum all reactants conveniently in the loop for later use
+			for (var/decl/fusion_reaction/reaction in all_reactions)
+				/*
+				 * Begin looping the reactions and checking their requirements.
+				 * The order of this might change for optimisation purposes.continue
+				 * Currently, check for temperature, energy and then for present reactants.
+				 */
+				if (reaction.minimum_reaction_temperature > plasma_temperature)
 					continue
-				var/decl/fusion_reaction/cur_reaction = get_fusion_reaction(cur_p_react, cur_s_react)
-				if(cur_reaction && plasma_temperature >= cur_reaction.minimum_energy_level)
-					LAZYDISTINCTADD(possible_reactions, cur_reaction)
-
-			//if there are no possible reactions here, abandon this primary reactant and move on
-			if(!LAZYLEN(possible_reactions))
-				continue
-
-			/// Sort based on reaction priority to avoid deut-deut eating all the deut before deut-trit can run etc.
-			sortTim(possible_reactions, /proc/cmp_fusion_reaction_des)
-
-			//split up the reacting atoms between the possible reactions
-			while(possible_reactions.len)
-				var/decl/fusion_reaction/cur_reaction = possible_reactions[1]
-				possible_reactions.Remove(cur_reaction)
-
-				//set the randmax to be the lower of the two involved reactants
-				var/max_num_reactants = react_pool[cur_reaction.p_react] > react_pool[cur_reaction.s_react] ? \
-				react_pool[cur_reaction.s_react] : react_pool[cur_reaction.p_react]
-				if(max_num_reactants < 1)
+				if (reaction.maximum_reaction_temperature != 0 && reaction.maximum_reaction_temperature < plasma_temperature)
 					continue
-
-				//make sure we have enough energy
-				if(plasma_temperature < cur_reaction.minimum_reaction_temperature)
+				if (reaction.minimum_energy_level > energy)
 					continue
+				if (reaction.maximum_reaction_temperature != 0 && reaction.maximum_energy_level < energy)
+					continue
+				var/i = list_find(reaction.l_reactants, reactant)
+				if (i == 0) // Since Find returns 0 if not found, we break if we cannot find the reactant in the list of reactants
+					continue
+				var/possible = TRUE // Per default we assume the reaction to be possible
+				for (var/reaction_reactant in reaction.l_reactants) // Check if all needed reactants are present
+					var/j = list_find(reactants_copy, reaction_reactant)
+					if (j == 0)
+						possible = FALSE
+						break // Goto next reaction
+				if (!possible)
+					break // Goto next reaction
+				reaction.reaction_chance += reactants_copy[reactant] // We calculate the reaction chance later, for now we want the sum of present reaction reactants
+				if (list_find(possible_reactions, reaction) == 0)
+					possible_reactions.Add(reaction) // Add the found reaction
 
-				if(plasma_temperature < max_num_reactants * cur_reaction.energy_consumption)
-					max_num_reactants = round(plasma_temperature / cur_reaction.energy_consumption)
-					if(max_num_reactants < 1)
-						continue
+		if (possible_reactions.len == 0)
+			return
 
-				//randomly determined amount to react
-				var/amount_reacting = rand(1, max_num_reactants)
+		for (var/decl/fusion_reaction/reaction in possible_reactions)
+			if (reaction.reaction_chance != 0) // If this is somehow 0, we can skip this calculation because it's not going to be executed anyway. This is a div-by-zero prevention.
+				/*
+				 * Get the percentage this reaction will take place based on: present reaction reactants / sum of all present reactants
+				 * This currently does not take into account other reactions we will iterate and may result in calculation misssteps.
+				 */
+				reaction.reaction_chance = reaction.reaction_chance / sum
 
-				//removing the reacting substances from the list of substances that are primed to react this cycle
-				//if there aren't enough of that substance (there should be) then modify the reactant amounts accordingly
-				if( react_pool[cur_reaction.p_react] - amount_reacting >= 0 )
-					react_pool[cur_reaction.p_react] -= amount_reacting
-				else
-					amount_reacting = react_pool[cur_reaction.p_react]
-					react_pool[cur_reaction.p_react] = 0
-				//same again for secondary reactant
-				if(react_pool[cur_reaction.s_react] - amount_reacting >= 0 )
-					react_pool[cur_reaction.s_react] -= amount_reacting
-				else
-					react_pool[cur_reaction.p_react] += amount_reacting - react_pool[cur_reaction.p_react]
-					amount_reacting = react_pool[cur_reaction.s_react]
-					react_pool[cur_reaction.s_react] = 0
+				// TODO: Fit this onto a beta distribution
 
-				plasma_temperature -= max_num_reactants * cur_reaction.energy_consumption  // Remove the consumed energy.
-				plasma_temperature += max_num_reactants * cur_reaction.energy_production   // Add any produced energy.
-				radiation +=   max_num_reactants * cur_reaction.radiation           // Add any produced radiation.
-				tick_instability += max_num_reactants * cur_reaction.instability
+		sortTim(possible_reactions, /proc/cmp_fusion_reaction_c_des) // proc compares A.priority and B.priority
 
-				// Create the reaction products.
-				for(var/reactant in cur_reaction.products)
-					var/success = 0
-					for(var/check_reactant in produced_reactants)
-						if(check_reactant == reactant)
-							produced_reactants[reactant] += cur_reaction.products[reactant] * amount_reacting
-							success = 1
-							break
-					if(!success)
-						produced_reactants[reactant] = cur_reaction.products[reactant] * amount_reacting
+		for (var/decl/fusion_reaction/reaction in possible_reactions)
+			// We begin looking at each reaction we cached earlier
+			var/list/reaction_reactant_pool = reactants_copy & reaction.l_reactants // Cache the reactants we need based on the list_reactants of the reaction
+			var/list/hackystuff = new/list // This might not be necessary anymore, prevents wrong caluclation of the max_possible
+			for (var/reactant in reaction_reactant_pool)
+				hackystuff.Add(reaction_reactant_pool[reactant])
+			var/max_possible = min(hackystuff) // Calculate the maximum possible amount of reaction that can take place based on lowest reactant amount
+			var/reaction_amount = max_possible * reaction.reaction_chance // The chance is used as a stand-in for random particle movement
 
-				// Handle anything special. If this proc returns true, abort the current reaction.
-				if(cur_reaction.handle_reaction_special(src))
-					return
+			for (var/reactant in reaction_reactant_pool)
+				if (reaction_reactant_pool[reactant] < reaction_amount)
+					continue
+				// Remove reactants from the pool
+				reactants_copy[reactant] -= reaction_amount
 
-				// This reaction is done, and can't be repeated this sub-cycle.
-				possible_reactions.Remove(cur_reaction.s_react)
+			// Do stat processing
+			plasma_temperature -= reaction_amount * reaction.energy_consumption
+			plasma_temperature += reaction_amount * reaction.energy_production
+			radiation += reaction_amount * reaction.radiation
+			tick_instability += reaction_amount * reaction.instability
 
-		// Loop through the newly produced reactants and add them to the pool.
-		for(var/reactant in produced_reactants)
-			AddParticles(reactant, produced_reactants[reactant])
+			for (var/reactant in reaction.products)
+				// Add results back. It's a multiplication because products can be larger than 1 and there may also be multiple results
+				reactants_copy[reactant] += (reaction.products[reactant] * reaction_amount)
 
-		// Check whether there are reactants left, and add them back to the pool.
-		for(var/reactant in react_pool)
-			AddParticles(reactant, react_pool[reactant])
+			if (reaction.is_special)
+				// Handle anything special this reaction does, like explode
+				reaction.handle_reaction_special(src)
+
+		/*
+		 * One issue that might be present is the fact that reactions, in order of priority,
+		 * may remove reactant a later reaction needs.
+		 * Sanity checks for this are planned and will arrive soon:tm:
+		 */
+
+		// Apply new reactants list
+		reactants = reactants_copy
 
 /obj/effect/fusion_em_field/Destroy()
 	set_light(0)

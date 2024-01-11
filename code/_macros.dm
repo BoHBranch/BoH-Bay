@@ -12,6 +12,8 @@
 
 #endif
 
+#define list_find(L, needle, LIMITS...) L.Find(needle, LIMITS)
+
 #define PUBLIC_GAME_MODE SSticker.master_mode
 
 #define Clamp(value, low, high) (value <= low ? low : (value >= high ? high : value))
