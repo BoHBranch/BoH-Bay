@@ -854,7 +854,7 @@
 			if ("enable_cold_mist")
 				enable_cold_mist = TRUE
 			if("use_cortical_stacks")
-				config.use_cortical_stacks = TRUE
+				use_cortical_stacks = TRUE
 			else
 				log_misc("Unknown setting in config/config.txt: '[name]'")
 

@@ -147,7 +147,11 @@ Please contact me on #coderbus IRC. ~Carn x
 #define HO_L_HAND_LAYER     25
 #define HO_R_HAND_LAYER     26
 #define HO_FIRE_LAYER       27 //If you're on fire
-#define TOTAL_LAYERS        28
+
+#define WING_LAYER			26		//Bastion edits. Simply move this up a number if things are added.
+#define TAIL_LAYER_ALT		29
+
+#define TOTAL_LAYERS        29
 //////////////////////////////////
 
 /mob/living/carbon/human
@@ -365,6 +369,8 @@ var/global/list/damage_icon_parts = list()
 			overlays_standing[HO_BODY_LAYER] = new_limbs
 
 	update_tail_showing(0)
+
+	update_wing_showing(0)
 
 	if(update_icons)
 		queue_icon_update()
@@ -590,9 +596,11 @@ var/global/list/damage_icon_parts = list()
 	if(wear_suit)
 		overlays_standing[HO_SUIT_LAYER]	= wear_suit.get_mob_overlay(src,slot_wear_suit_str)
 		update_tail_showing(0)
+		update_wing_showing(0)
 	else
 		overlays_standing[HO_SUIT_LAYER]	= null
 		update_tail_showing(0)
+		update_wing_showing(0)
 		update_inv_w_uniform(0)
 		update_inv_shoes(0)
 		update_inv_gloves(0)
@@ -669,7 +677,8 @@ var/global/list/damage_icon_parts = list()
 /mob/living/carbon/human/proc/update_tail_showing(update_icons=1)
 	overlays_standing[HO_TAIL_LAYER] = null
 
-	var/species_tail = species.get_tail(src)
+	/*var/species_tail = species.get_tail(src)
+
 
 	if(species_tail && !(wear_suit && wear_suit.flags_inv & HIDETAIL))
 		var/icon/tail_s = get_tail_icon()
@@ -677,7 +686,26 @@ var/global/list/damage_icon_parts = list()
 		animate_tail_reset(0)
 
 	if(update_icons)
-		queue_icon_update()
+		queue_icon_update()*/
+
+	var/used_tail_layer = tail_alt ? TAIL_LAYER_ALT : HO_TAIL_LAYER
+	var/species_tail = species.get_tail(src)
+	var/image/vr_tail_image = get_tail_image()
+
+	if(vr_tail_image)
+		vr_tail_image.layer = used_tail_layer
+		overlays_standing[HO_TAIL_LAYER] = vr_tail_image
+		animate_tail_reset(0)
+		if(update_icons)
+			queue_icon_update()
+
+	else if(species_tail && !(wear_suit && wear_suit.flags_inv & HIDETAIL))
+		var/icon/tail_s = get_tail_icon()
+		overlays_standing[HO_TAIL_LAYER] = image(tail_s, icon_state = "[species_tail]_s")
+		animate_tail_reset(0)
+		if(update_icons)
+			queue_icon_update()
+
 
 /mob/living/carbon/human/proc/get_tail_icon()
 	var/icon_key = "[species.get_race_key(src)][skin_color][head_hair_color]"
@@ -685,6 +713,10 @@ var/global/list/damage_icon_parts = list()
 	if(!tail_icon)
 		//generate a new one
 		var/species_tail_anim = species.get_tail_animation(src)
+		if(species.modular_tail)
+			species_tail_anim = species.modular_tail
+		else if(!species_tail_anim)
+			species_tail_anim = 'icons/effects/species.dmi'
 		if(!species_tail_anim) species_tail_anim = 'icons/effects/species.dmi'
 		tail_icon = new/icon(species_tail_anim)
 		tail_icon.Blend(skin_color, species.tail_blend)
@@ -753,6 +785,14 @@ var/global/list/damage_icon_parts = list()
 	if(update_icons)
 		queue_icon_update()
 
+/mob/living/carbon/human/proc/update_wing_showing()
+	if(QDESTROYING(src))
+		return
+
+	var/image/vr_wing_image = get_wing_image()
+	if(vr_wing_image)
+		vr_wing_image.layer = WING_LAYER
+		overlays_standing[WING_LAYER] = vr_wing_image
 
 //Adds a collar overlay above the helmet layer if the suit has one
 //	Suit needs an identically named sprite in icons/mob/collar.dmi

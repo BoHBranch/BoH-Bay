@@ -181,7 +181,7 @@ var/global/list/limb_icon_cache = list()
 			if (M.use_organ_tag)
 				state = "[state]-[organ_tag]"
 			var/icon/I = icon(M.icon, state)
-			I.Blend(color, M.blend)
+			I.Blend(color, M.color_blend_mode)
 			ADD_SORTED(sorted, list(list(M.draw_order, I, M)), /proc/cmp_marking_order)
 
 	for (var/entry in sorted) //Revisit this with blendmodes
@@ -298,7 +298,7 @@ var/global/list/robot_hud_colours = list("#ffffff","#cccccc","#aaaaaa","#888888"
 
 	if(skin_tone)
 		if(skin_tone >= 0)
-			applying.Blend(rgb(skin_tone, skin_tone, skin_tone), ICON_ADD)
+			applying.Blend(rgb(skin_tone, skin_tone, skin_tone), ICON_MULTIPLY)
 		else
 			applying.Blend(rgb(-skin_tone,  -skin_tone,  -skin_tone), ICON_SUBTRACT)
 	if(species.appearance_flags & SPECIES_APPEARANCE_HAS_SKIN_COLOR)

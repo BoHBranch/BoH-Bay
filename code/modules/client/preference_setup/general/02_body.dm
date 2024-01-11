@@ -15,6 +15,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	var/base_skin = ""
 	var/list/body_markings = list()
 	var/list/body_descriptors = list()
+	var/has_cortical_stack = FALSE
 
 	// maps each organ to either null(intact), "cyborg" or "amputated"
 	// will probably not be able to do this for head and torso ;)
@@ -66,6 +67,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	pref.body_markings = R.read("body_markings")
 	pref.body_descriptors = R.read("body_descriptors")
 
+	pref.has_cortical_stack = R.read("has_cortical_stack")
 
 /datum/category_item/player_setup_item/physical/body/save_character(datum/pref_record_writer/W)
 	W.write("species", pref.species)
@@ -87,6 +89,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	W.write("body_markings", pref.body_markings)
 	W.write("body_descriptors", pref.body_descriptors)
 
+	W.write("has_cortical_stack", pref.has_cortical_stack)
 
 /datum/category_item/player_setup_item/physical/body/sanitize_character()
 	pref.head_hair_color = sanitize_hexcolor(pref.head_hair_color)
@@ -97,9 +100,14 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	pref.facial_hair_style		= sanitize_inlist(pref.facial_hair_style, GLOB.facial_hair_styles_list, initial(pref.facial_hair_style))
 	pref.b_type			= sanitize_text(pref.b_type, initial(pref.b_type))
 
+	pref.has_cortical_stack = sanitize_bool(pref.has_cortical_stack, initial(pref.has_cortical_stack))
+
 	if(!pref.species || !(pref.species in playable_species))
 		pref.species = SPECIES_HUMAN
 	var/datum/species/mob_species = all_species[pref.species]
+
+	if(mob_species && mob_species.spawn_flags & SPECIES_NO_LACE)
+		pref.has_cortical_stack = FALSE
 
 	pref.gender = sanitize_inlist(pref.gender, mob_species.genders, pick(mob_species.genders))
 	pref.pronouns = sanitize_inlist(pref.pronouns, mob_species.pronouns, pick(mob_species.pronouns))
@@ -146,6 +154,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	. += "<br />[TBTN("pronouns", pref.pronouns, "Pronouns")]"
 	. += "<br />[TBTN("age", pref.age, "Age")]"
 	. += "<br />[TBTN("blood_type", pref.b_type, "Blood Type")]"
+	. += "<br />[TBTN("has_cortical_stack", pref.has_cortical_stack ? "Present" : "Not Present", "Neural Lace")]"
 	. += "<br />[VTBTN("disabilities", NEARSIGHTED, pref.disabilities & NEARSIGHTED ? "Yes" : "No", "Glasses")]"
 
 	if (length(pref.body_descriptors))
@@ -637,8 +646,11 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 		pref.disabilities ^= disability_flag
 		return TOPIC_REFRESH_UPDATE_PREVIEW
 
-	return ..()
+	else if(href_list["has_cortical_stack"])
+		pref.has_cortical_stack = !pref.has_cortical_stack
+		return TOPIC_REFRESH_UPDATE_PREVIEW
 
+	return ..()
 
 /datum/category_item/player_setup_item/physical/body/proc/reset_limbs()
 	pref.organ_data.Cut()

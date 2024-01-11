@@ -76,7 +76,12 @@
 	if(!R.dna.real_name)	//to prevent null names
 		R.dna.real_name = "clone ([rand(0,999)])"
 	H.real_name = R.dna.real_name
-	H.gender = R.gender
+	if(R.dna.GetUIState(DNA_UI_GENDER) == 0)
+		H.gender = MALE
+	else if (R.dna.GetUIState(DNA_UI_GENDER) == 1)
+		H.gender = FEMALE
+	else
+		H.gender = PLURAL
 	H.descriptors = R.body_descriptors
 
 	//Get the clone body ready

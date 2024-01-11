@@ -168,6 +168,18 @@
 			//TODO : Add emissive blocker here if hair should block it. Else, leave as is
 			res.AddOverlays(HI)
 
+	if(owner.ear_style)
+		if(owner.ear_style && !(owner.head && (owner.head.flags_inv & BLOCKHEADHAIR)))
+			var/icon/ears_s = new/icon("icon" = owner.ear_style.icon, "icon_state" = owner.ear_style.icon_state)
+			if(owner.ear_style.do_coloration)
+				ears_s.Blend(rgb(owner.r_ears, owner.g_ears, owner.b_ears), owner.ear_style.color_blend_mode)
+			if(owner.ear_style.extra_overlay)
+				var/icon/overlay = new/icon("icon" = owner.ear_style.icon, "icon_state" = owner.ear_style.extra_overlay)
+				overlay.Blend(rgb(owner.r_ears2, owner.g_ears2, owner.b_ears2), owner.ear_style.color_blend_mode)
+				ears_s.Blend(overlay, ICON_OVERLAY)
+				qdel(overlay)
+			res.overlays |= ears_s
+
 	var/list/sorted_head_markings = list()
 	for (var/E in markings)
 		var/datum/sprite_accessory/marking/M = E
