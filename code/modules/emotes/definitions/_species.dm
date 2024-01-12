@@ -57,3 +57,13 @@
 	/singleton/emote/audible/chirp,
 	/singleton/emote/audible/multichirp
 )
+
+/datum/species/vox/armalis/default_emotes = list(
+	/decl/emote/audible/vox_shriek,
+	/decl/emote/audible/armalis_shriek
+)
+
+
+/mob/living/carbon/human/set_species(var/new_species, var/default_colour = 1)
+	UNLINT(. = ..())
+	update_emotes()
