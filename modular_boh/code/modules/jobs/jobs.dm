@@ -6,16 +6,16 @@ var/const/INF               =(1<<11)
 	goals = list(/datum/goal/department/planet_claim)
 	max_goals = 1
 
-/decl/hierarchy/outfit/job/security/infantry
+/singleton/hierarchy/outfit/job/security/infantry
 	name = "Infantry Outfit"
 
-/decl/hierarchy/outfit/job/security/infantry/squadlead
+/singleton/hierarchy/outfit/job/security/infantry/squadlead
 	name = OUTFIT_JOB_NAME("Squad Lead")
 
-/decl/hierarchy/outfit/job/security/infantry/tech
+/singleton/hierarchy/outfit/job/security/infantry/tech
 	name = OUTFIT_JOB_NAME("Combat Tech")
 
-/decl/hierarchy/outfit/job/security/infantry/grunt
+/singleton/hierarchy/outfit/job/security/infantry/grunt
 	name = OUTFIT_JOB_NAME("Rifleman")
 
 //Infantry Jobs
@@ -26,24 +26,23 @@ var/const/INF               =(1<<11)
 	head_position = 1
 	total_positions = 1
 	spawn_positions = 1
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/squad_lead
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/infantry/squad_lead
 	supervisors = "the highest ranking Marine and SolGov Command"
 	selection_color = "#557e38"
 	minimal_player_age = 12
 	economic_power = 7
 	skill_points = 26
-	is_whitelisted = TRUE
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-						SKILL_EVA         = SKILL_ADEPT,
+						SKILL_EVA         = SKILL_TRAINED,
 						SKILL_PILOT       = SKILL_BASIC,
-						SKILL_COMBAT      = SKILL_ADEPT,
-						SKILL_WEAPONS     = SKILL_ADEPT)
+						SKILL_COMBAT      = SKILL_TRAINED,
+						SKILL_WEAPONS     = SKILL_TRAINED)
 
-	max_skill = list(	SKILL_COMBAT      = SKILL_PROF,
-						SKILL_WEAPONS     = SKILL_PROF,
-						SKILL_EVA		  = SKILL_EXPERT,
-						SKILL_HAULING     = SKILL_PROF)
+	max_skill = list(	SKILL_COMBAT      = SKILL_MASTER,
+						SKILL_WEAPONS     = SKILL_MASTER,
+						SKILL_EVA		  = SKILL_EXPERIENCED,
+						SKILL_HAULING     = SKILL_MASTER)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
@@ -51,7 +50,7 @@ var/const/INF               =(1<<11)
 	allowed_ranks = list(
 		/datum/mil_rank/marine_corps/e6
 	)
-	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
+	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_control,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_infcom, access_inftech, access_aquila, access_eva, access_bridge)
 
@@ -69,19 +68,19 @@ var/const/INF               =(1<<11)
 	economic_power = 4
 	minimal_player_age = 8
 	skill_points = 22
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry/combat_tech
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	minimum_character_age = list(SPECIES_HUMAN = 20)
-	min_skill = list(	SKILL_CONSTRUCTION = SKILL_ADEPT,
-						SKILL_ELECTRICAL   = SKILL_ADEPT,
+	min_skill = list(	SKILL_CONSTRUCTION = SKILL_TRAINED,
+						SKILL_ELECTRICAL   = SKILL_TRAINED,
 						SKILL_MEDICAL      = SKILL_BASIC,
-						SKILL_COMBAT       = SKILL_ADEPT,
-						SKILL_WEAPONS      = SKILL_ADEPT)
+						SKILL_COMBAT       = SKILL_TRAINED,
+						SKILL_WEAPONS      = SKILL_TRAINED)
 
-	max_skill = list(	SKILL_COMBAT       = SKILL_EXPERT,
-						SKILL_WEAPONS      = SKILL_PROF,
-						SKILL_EVA		   = SKILL_EXPERT,
-						SKILL_CONSTRUCTION = SKILL_EXPERT,
-						SKILL_ELECTRICAL   = SKILL_EXPERT)
+	max_skill = list(	SKILL_COMBAT       = SKILL_EXPERIENCED,
+						SKILL_WEAPONS      = SKILL_MASTER,
+						SKILL_EVA		   = SKILL_EXPERIENCED,
+						SKILL_CONSTRUCTION = SKILL_EXPERIENCED,
+						SKILL_ELECTRICAL   = SKILL_EXPERIENCED)
 
 	alt_titles = list(
 		"Combat Engineer",
@@ -93,7 +92,7 @@ var/const/INF               =(1<<11)
 		/datum/mil_rank/marine_corps/e4,
 		/datum/mil_rank/marine_corps/e5
 		)
-	access = list(access_maint_tunnels, access_petrov, access_petrov_security,
+	access = list(access_maint_tunnels, access_petrov, access_petrov_control,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_inftech, access_aquila, access_eva)
 
@@ -115,17 +114,17 @@ var/const/INF               =(1<<11)
 	spawn_positions = 3
 	minimal_player_age = 6
 	supervisors = "the Combat Technician and Squad Leader"
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/infantry
 	selection_color = "#557e38"
 	skill_points = 18
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	min_skill = list(	SKILL_COMBAT       = SKILL_ADEPT,
-						SKILL_WEAPONS      = SKILL_ADEPT,
+	min_skill = list(	SKILL_COMBAT       = SKILL_TRAINED,
+						SKILL_WEAPONS      = SKILL_TRAINED,
 						SKILL_EVA          = SKILL_BASIC)
 
-	max_skill = list(	SKILL_COMBAT      = SKILL_EXPERT,
-						SKILL_WEAPONS     = SKILL_EXPERT,
-						SKILL_EVA		  = SKILL_EXPERT)
+	max_skill = list(	SKILL_COMBAT      = SKILL_EXPERIENCED,
+						SKILL_WEAPONS     = SKILL_EXPERIENCED,
+						SKILL_EVA		  = SKILL_EXPERIENCED)
 
 	alt_titles = list(
 		"Grunt",
@@ -139,7 +138,7 @@ var/const/INF               =(1<<11)
 		/datum/mil_rank/marine_corps/e3,
 		/datum/mil_rank/marine_corps/e4
 	)
-	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_security,
+	access = list(access_maint_tunnels, access_solgov_crew, access_petrov, access_petrov_control,
 			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_aquila, access_eva)
 
@@ -166,32 +165,31 @@ var/const/INF               =(1<<11)
 	minimum_character_age = list(SPECIES_HUMAN = 25,SPECIES_UNATHI = 25,SPECIES_SERGAL = 25, SPECIES_SKRELL = 25, SPECIES_PROMETHEAN = 25, SPECIES_YEOSA = 25, SPECIES_VASS = 25, SPECIES_TAJ = 25, SPECIES_CUSTOM = 25, SPECIES_AKULA = 25)
 	//minimal_player_age = 7	//DEACTIVATED FOR DEBUG PURPOSES
 	supervisors = "NTPC or the Foundation, neither secondary to the Commanding Officer"
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/psiadvisor
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/foundationadvisor)
 	min_skill = list(
-		SKILL_BUREAUCRACY = SKILL_EXPERT,
-		SKILL_FINANCE = SKILL_ADEPT,
+		SKILL_BUREAUCRACY = SKILL_EXPERIENCED,
+		SKILL_FINANCE = SKILL_TRAINED,
 		SKILL_MEDICAL = SKILL_BASIC
 	)
 	max_skill = list(
-		SKILL_COMBAT     = SKILL_EXPERT,
-		SKILL_WEAPONS     = SKILL_EXPERT
+		SKILL_COMBAT     = SKILL_EXPERIENCED,
+		SKILL_WEAPONS     = SKILL_EXPERIENCED
 	)
 	skill_points = 24
 	access = list(access_psiadvisor, access_security, access_medical, access_engine, access_maint_tunnels, access_external_airlocks,
 				access_eva, access_bridge, access_cargo, access_RC_announce, access_solgov_crew, access_hangar)
-	minimal_access = list()
 	software_on_spawn = list(
 		/datum/computer_file/program/comm,
 		/datum/computer_file/program/records
 	)
 
 	alt_titles = list(
-		"Nanotrasen Psionic Operative" = /decl/hierarchy/outfit/job/torch/crew/command/psiadvisor/nt,
+		"Nanotrasen Psionic Operative" = /singleton/hierarchy/outfit/job/torch/crew/command/psiadvisor/nt,
 		"Foundation Agent")
 
-/datum/job/psiadvisor/equip(var/mob/living/carbon/human/H)
+/datum/job/psiadvisor/equip(mob/living/carbon/human/H)
 	psi_faculties = list("[PSI_REDACTION]" = PSI_RANK_OPERANT, "[PSI_COERCION]" = PSI_RANK_OPERANT, "[PSI_PSYCHOKINESIS]" = PSI_RANK_OPERANT, "[PSI_ENERGISTICS]" = PSI_RANK_OPERANT)
 	return ..()
 
@@ -215,15 +213,15 @@ var/const/INF               =(1<<11)
 	alt_titles = list(
 		"Forensics Trainee"
 		)
-	min_skill = list(   SKILL_EVA         = SKILL_ADEPT,
+	min_skill = list(   SKILL_EVA         = SKILL_TRAINED,
 	                    SKILL_COMBAT      = SKILL_BASIC)
-	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERT,
-	                    SKILL_WEAPONS     = SKILL_EXPERT,
-	                    SKILL_FORENSICS   = SKILL_EXPERT)
+	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERIENCED,
+	                    SKILL_WEAPONS     = SKILL_EXPERIENCED,
+	                    SKILL_FORENSICS   = SKILL_EXPERIENCED)
 	skill_points = 16
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/security/maa
 	allowed_branches = list(
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/security/maa/fleet,
+		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/security/maa/fleet,
 		/datum/mil_branch/marine_corps
 	)
 	allowed_ranks = list(
@@ -235,7 +233,6 @@ var/const/INF               =(1<<11)
 	access = list(access_security, access_brig, access_maint_tunnels,
 						access_external_airlocks, access_emergency_storage,
 			            access_eva, access_sec_doors, access_solgov_crew)
-	minimal_access = list()
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant)
 
 /datum/job/seccadet/get_description_blurb()
@@ -254,9 +251,9 @@ var/const/INF               =(1<<11)
 	minimal_player_age = 6
 	economic_power = 8
 	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	allowed_branches = list(
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
+		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e8,
@@ -266,15 +263,15 @@ var/const/INF               =(1<<11)
 
 	min_skill = list(   SKILL_EVA        = SKILL_BASIC,
 	                    SKILL_COMBAT     = SKILL_BASIC,
-	                    SKILL_WEAPONS    = SKILL_ADEPT)
+	                    SKILL_WEAPONS    = SKILL_TRAINED)
 
-	max_skill = list(   SKILL_COMBAT       = SKILL_EXPERT,
-	                    SKILL_WEAPONS      = SKILL_EXPERT,
-	                    SKILL_PILOT        = SKILL_EXPERT,
-	                    SKILL_CONSTRUCTION = SKILL_EXPERT,
-	                    SKILL_ELECTRICAL   = SKILL_EXPERT,
-	                    SKILL_ENGINES      = SKILL_EXPERT,
-	                    SKILL_ATMOS        = SKILL_EXPERT)
+	max_skill = list(   SKILL_COMBAT       = SKILL_EXPERIENCED,
+	                    SKILL_WEAPONS      = SKILL_EXPERIENCED,
+	                    SKILL_PILOT        = SKILL_EXPERIENCED,
+	                    SKILL_CONSTRUCTION = SKILL_EXPERIENCED,
+	                    SKILL_ELECTRICAL   = SKILL_EXPERIENCED,
+	                    SKILL_ENGINES      = SKILL_EXPERIENCED,
+	                    SKILL_ATMOS        = SKILL_EXPERIENCED)
 	skill_points = 24
 
 
@@ -293,7 +290,7 @@ var/const/INF               =(1<<11)
 	title = "SMC Senior Enlisted Advisor"
 	department = "Support"
 	department_flag = SPT
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/marine
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/sea/marine
 	minimum_character_age = list(SPECIES_HUMAN = 35,SPECIES_UNATHI = 35,SPECIES_SERGAL = 35, SPECIES_SKRELL = 35, SPECIES_PROMETHEAN = 35, SPECIES_YEOSA = 35, SPECIES_VASS = 35, SPECIES_TAJ = 35, SPECIES_CUSTOM = 35, SPECIES_AKULA = 35)
 	allowed_branches = list(
 		/datum/mil_branch/marine_corps
@@ -304,27 +301,25 @@ var/const/INF               =(1<<11)
 		/datum/mil_rank/marine_corps/e9_alt
 	)
 
-//## RESEARCH ROBOTICIST
-
 /datum/job/roboticist
 	title = "Roboticist"
 	department = "Science"
-	department_flag = SCI
+	department_flag = ENG
 
 	total_positions = 2
 	spawn_positions = 2
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
-	supervisors = "the Chief Science Officer."
+	supervisors = "the Chief Engineer."
 	selection_color = "#633d63"
 	economic_power = 6
 	alt_titles = list(
 		"Mechsuit Technician",
 		"Biomechanical Technician"
 		)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/roboticist
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/roboticist
 	allowed_branches = list(
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/research/roboticist/fleet,
+		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/research/roboticist/fleet,
 		/datum/mil_branch/civilian)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e5,
@@ -334,23 +329,22 @@ var/const/INF               =(1<<11)
 		/datum/mil_rank/fleet/w2,
 		/datum/mil_rank/civ/contractor
 		)
-	min_skill = list(   SKILL_COMPUTER		= SKILL_ADEPT,
-	                    SKILL_DEVICES		= SKILL_ADEPT,
-	                    SKILL_EVA           = SKILL_ADEPT,
-	                    SKILL_ANATOMY       = SKILL_ADEPT,
+	min_skill = list(   SKILL_COMPUTER		= SKILL_TRAINED,
+	                    SKILL_DEVICES		= SKILL_TRAINED,
+	                    SKILL_EVA           = SKILL_TRAINED,
+	                    SKILL_ANATOMY       = SKILL_TRAINED,
 	                    SKILL_MECH          = HAS_PERK)
 
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
-	                    SKILL_ATMOS        = SKILL_EXPERT,
-	                    SKILL_ENGINES      = SKILL_EXPERT,
+	                    SKILL_ATMOS        = SKILL_EXPERIENCED,
+	                    SKILL_ENGINES      = SKILL_EXPERIENCED,
 	                    SKILL_DEVICES      = SKILL_MAX,
-	                    SKILL_MEDICAL      = SKILL_EXPERT,
-	                    SKILL_ANATOMY      = SKILL_EXPERT)
+	                    SKILL_MEDICAL      = SKILL_EXPERIENCED,
+	                    SKILL_ANATOMY      = SKILL_EXPERIENCED)
 	skill_points = 22
 
 	access = list(access_maint_tunnels, access_research, access_robotics, access_nanotrasen, access_solgov_crew, access_surgery, access_medical)
-	minimal_access = list()
 
 /datum/job/roboticist/get_description_blurb()
 	return "You are the Roboticist. You are responsible for repairing, upgrading and handling ship synthetics (like robots). You are also responsible for the production of exosuits(mechs) and bots for various departments. You answer to the Chief Science Officer."
@@ -368,17 +362,17 @@ var/const/INF               =(1<<11)
 	economic_power = 12
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25, SPECIES_CUSTOM = 25)
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/sfp_agent
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/sfp_agent
 	allowed_branches = list(/datum/mil_branch/solgov)
 	allowed_ranks = list(/datum/mil_rank/sol/agent)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_TRAINED,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
 	                    SKILL_WEAPONS     = SKILL_BASIC,
 	                    SKILL_FORENSICS   = SKILL_BASIC)
-	max_skill = list(   SKILL_COMBAT      = SKILL_PROF,
-	                    SKILL_WEAPONS     = SKILL_PROF,
-	                    SKILL_FORENSICS   = SKILL_EXPERT)
+	max_skill = list(   SKILL_COMBAT      = SKILL_MASTER,
+	                    SKILL_WEAPONS     = SKILL_MASTER,
+	                    SKILL_FORENSICS   = SKILL_EXPERIENCED)
 	skill_points = 20
 
 	access = list( //Same access as the SolGov Representative + Private access to their equipment locker
@@ -400,7 +394,7 @@ var/const/INF               =(1<<11)
 	return "You are the Federal Protection Agent. You are an agent of one of the many branches of the Sol Federal Police. \
 	Your job is to assist the Representative in their affairs. You are also expected to protect the Representative's life; even if it costs your own."
 
-/datum/job/sfpagent/post_equip_rank(var/mob/person)
+/datum/job/sfpagent/post_equip_rank(mob/person)
 	for(var/mob/M in GLOB.player_list)
 		if(M.client && M.mind)
 			if(M.mind.assigned_role == "SolGov Representative")
@@ -430,7 +424,7 @@ var/const/INF               =(1<<11)
 		access_sec_doors, access_security, access_medical, access_research, access_cargo, access_engine, access_hangar, access_infantry
 	)
 
-datum/job/sea
+/datum/job/sea
 	access = list(
 		access_sec_doors, access_security, access_medical, access_engine, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 		access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_janitor,

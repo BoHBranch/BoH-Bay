@@ -1,23 +1,4 @@
-//#VESTA.BAY# CUSTOM PLATE CARRIES
-
-/obj/item/clothing/suit/armor/pcarrier/light
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate)
-
-/obj/item/clothing/suit/armor/pcarrier/light/nt
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate, /obj/item/clothing/accessory/armor/tag/nt)
-
-/obj/item/clothing/suit/armor/pcarrier/light/press
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate, /obj/item/clothing/accessory/armor/tag/press)
-
-/obj/item/clothing/suit/armor/pcarrier/medium
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/medium, /obj/item/clothing/accessory/storage/pouches)
-
-/obj/item/clothing/suit/armor/pcarrier/medium/nt
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/medium, /obj/item/clothing/accessory/storage/pouches, /obj/item/clothing/accessory/armor/tag/nt)
-
-// Cadet Vest
-/obj/item/clothing/suit/armor/pcarrier/light/security
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate, /obj/item/clothing/accessory/storage/pouches)
+//#BOH-BAY# CUSTOM PLATE CARRIES
 
 /obj/item/clothing/suit/armor/pcarrier/grey
 	name = "grey plate carrier"
@@ -27,13 +8,13 @@
 	icon_state = "pcarrier_grey"
 
 /obj/item/clothing/suit/armor/pcarrier/grey/light
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate)
+	accessories = list(/obj/item/clothing/accessory/armor_plate)
 
 /obj/item/clothing/suit/armor/pcarrier/grey/light/civ
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate, /obj/item/clothing/accessory/armor/tag/civ)
+	accessories = list(/obj/item/clothing/accessory/armor_plate, /obj/item/clothing/accessory/armor_tag/civ)
 
 /obj/item/clothing/suit/armor/pcarrier/grey/light/med
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate, /obj/item/clothing/accessory/armor/tag/civ/med)
+	accessories = list(/obj/item/clothing/accessory/armor_plate, /obj/item/clothing/accessory/armor_tag/civ/med)
 
 /obj/item/clothing/suit/armor/pcarrier/ipc
 	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
@@ -94,21 +75,21 @@
 	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
 	name = "tactical plate carrier"
 	icon_state = "pcarrier_tan_tac"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/tactical, /obj/item/clothing/accessory/storage/pouches/large/tan, /obj/item/clothing/accessory/armguards/tan/tactical, /obj/item/clothing/accessory/legguards/tan/tactical)
+	accessories = list(/obj/item/clothing/accessory/armor_plate/tactical, /obj/item/clothing/accessory/storage/pouches/large/tan, /obj/item/clothing/accessory/arm_guards/tan/tactical, /obj/item/clothing/accessory/leg_guards/tan/tactical)
 
 /obj/item/clothing/suit/armor/pcarrier/tactical
 	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
 	name = "black tactical plate carrier"
 	icon_state = "pcarrier_tac"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/tactical, /obj/item/clothing/accessory/storage/pouches/large, /obj/item/clothing/accessory/armguards/tactical, /obj/item/clothing/accessory/legguards/tactical)
+	accessories = list(/obj/item/clothing/accessory/armor_plate/tactical, /obj/item/clothing/accessory/storage/pouches/large, /obj/item/clothing/accessory/arm_guards/tactical, /obj/item/clothing/accessory/leg_guards/tactical)
 
 /obj/item/clothing/suit/armor/pcarrier/merc
 	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
 	name = "combat plate carrier"
 	icon_state = "pcarrier_merc"
-	starting_accessories = list(/obj/item/clothing/accessory/armorplate/merc, /obj/item/clothing/accessory/armguards/merc, /obj/item/clothing/accessory/legguards/merc, /obj/item/clothing/accessory/storage/pouches/large)
+	accessories = list(/obj/item/clothing/accessory/armor_plate/merc, /obj/item/clothing/accessory/arm_guards/merc, /obj/item/clothing/accessory/leg_guards/merc, /obj/item/clothing/accessory/storage/pouches/large)
 
-//#VESTA.BAY # CUSTOM KEVLARS
+//#BOH-BAY # CUSTOM KEVLARS
 
 /obj/item/clothing/suit/armor/pcarrier/kevlar/tan
 	name = "tan kevlar"
@@ -134,15 +115,15 @@
 	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
 	icon_state = "kevlar_green"
 
-//#VESTA.BAY $ CUSTOM ARMGUARDS
+//#BOH-BAY $ CUSTOM arm_guards
 
-/obj/item/clothing/accessory/armguards
+/obj/item/clothing/accessory/arm_guards
 	name = "black arm guards"
 	desc = "A pair of black arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_override = 'icons/mob/onmob/onmob_modular_armor.dmi'
 	icon = 'icons/obj/clothing/obj_suit_modular_armor.dmi'
 	accessory_icons = list(slot_tie_str = 'icons/mob/onmob/onmob_modular_armor.dmi', slot_wear_suit_str = 'icons/mob/onmob/onmob_modular_armor.dmi')
-	icon_state = "armguards"
+	icon_state = "arm_guards"
 	gender = PLURAL
 	body_parts_covered = ARMS
 	armor = list(
@@ -154,23 +135,23 @@
 		)
 	slot = ACCESSORY_SLOT_ARMOR_A
 
-/obj/item/clothing/accessory/armguards/tan/tactical
+/obj/item/clothing/accessory/arm_guards/tan/tactical
 	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
 	name = "tan arm guards"
 	desc = "A pair of tan arm pads reinforced with armor plating. Attaches to a plate carrier."
-	icon_state = "armguards_tan_tac"
+	icon_state = "arm_guards_tan_tac"
 
-/obj/item/clothing/accessory/armguards/tactical
+/obj/item/clothing/accessory/arm_guards/tactical
 	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
 	name = "arm guards"
 	desc = "A pair of arm pads reinforced with armor plating. Attaches to a plate carrier."
-	icon_state = "armguards_tan_tac"
+	icon_state = "arm_guards_tan_tac"
 
-/obj/item/clothing/accessory/armguards/merc
+/obj/item/clothing/accessory/arm_guards/merc
 	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
 	name = "heavy arm guards"
 	desc = "A pair of red-trimmed black arm pads reinforced with heavy armor plating. Attaches to a plate carrier."
-	icon_state = "armguards_merc"
+	icon_state = "arm_guards_merc"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_PISTOL,
@@ -180,17 +161,17 @@
 		)
 	siemens_coefficient = 0.3
 
-//#VESTA.BAY # CUSTOM ARMGUARDS
+//#BOH-BAY # CUSTOM arm_guards
 
-//#VESTA.BAY # CUSTOM LEGGUARDS
+//#BOH-BAY # CUSTOM leg_guards
 
-/obj/item/clothing/accessory/legguards
+/obj/item/clothing/accessory/leg_guards
 	name = "black leg guards"
 	desc = "A pair of armored leg pads in black. Attaches to a plate carrier."
 	icon_override = 'icons/mob/onmob/onmob_modular_armor.dmi'
 	icon = 'icons/obj/clothing/obj_suit_modular_armor.dmi'
 	accessory_icons = list(slot_tie_str = 'icons/mob/onmob/onmob_modular_armor.dmi', slot_wear_suit_str = 'icons/mob/onmob/onmob_modular_armor.dmi')
-	icon_state = "legguards"
+	icon_state = "leg_guards"
 	gender = PLURAL
 	body_parts_covered = LEGS
 	armor = list(
@@ -203,23 +184,23 @@
 	slot = ACCESSORY_SLOT_ARMOR_L
 
 
-/obj/item/clothing/accessory/legguards/tan/tactical
+/obj/item/clothing/accessory/leg_guards/tan/tactical
 	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
 	name = "tactical tan leg guards"
 	desc = "A pair of armored leg pads in tan. Attaches to a plate carrier."
-	icon_state = "legguards_tan_tac"
+	icon_state = "leg_guards_tan_tac"
 
-/obj/item/clothing/accessory/legguards/tactical
+/obj/item/clothing/accessory/leg_guards/tactical
 	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
 	name = "tactical leg guards"
 	desc = "A pair of armored leg pads. Attaches to a plate carrier."
-	icon_state = "legguards_tac"
+	icon_state = "leg_guards_tac"
 
-/obj/item/clothing/accessory/legguards/merc
+/obj/item/clothing/accessory/leg_guards/merc
 	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
 	name = "heavy leg guards"
 	desc = "A pair of heavily armored leg pads in red-trimmed black. Attaches to a plate carrier."
-	icon_state = "legguards_merc"
+	icon_state = "leg_guards_merc"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_PISTOL,
@@ -229,10 +210,10 @@
 		)
 	siemens_coefficient = 0.3
 
-//#VESTA.BAY # CUSTOM LIGHT-PLATED ARMGUARDS AND LEGGUARDS ##########
+//#BOH-BAY # CUSTOM LIGHT-PLATED arm_guards AND leg_guards ##########
 
 // Light-plated
-/obj/item/clothing/accessory/armguards/light
+/obj/item/clothing/accessory/arm_guards/light
 	name = "arm pads"
 	desc = "A pair of arm pads. Attaches to a plate carrier."
 	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
@@ -244,7 +225,7 @@
 		bomb = ARMOR_BOMB_MINOR
 	)
 
-/obj/item/clothing/accessory/legguards/light
+/obj/item/clothing/accessory/leg_guards/light
 	name = "leg pads"
 	desc = "A pair of leg pads. Attaches to a plate carrier."
 	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
@@ -257,55 +238,55 @@
 	)
 
 // Modular sprites.
-/obj/item/clothing/accessory/armguards/light/grey
+/obj/item/clothing/accessory/arm_guards/light/grey
 	desc = "A pair of arm pads in grey. Attaches to a plate carrier."
 	icon_override = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi'
 	accessory_icons = list(slot_tie_str = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi', slot_wear_suit_str = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi')
-	icon_state = "armguards_grey"
+	icon_state = "arm_guards_grey"
 
-/obj/item/clothing/accessory/legguards/light/grey
+/obj/item/clothing/accessory/leg_guards/light/grey
 	desc = "A pair of leg pads in grey. Attaches to a plate carrier."
 	icon_override = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi'
 	accessory_icons = list(slot_tie_str = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi', slot_wear_suit_str = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi')
-	icon_state = "legguards_grey"
+	icon_state = "leg_guards_grey"
 
 // Colored light arm guards
-/obj/item/clothing/accessory/armguards/light/blue
+/obj/item/clothing/accessory/arm_guards/light/blue
 	desc = "A pair of arm pads in blue. Attaches to a plate carrier."
-	icon_state = "armguards_blue"
+	icon_state = "arm_guards_blue"
 
-/obj/item/clothing/accessory/armguards/light/navy
+/obj/item/clothing/accessory/arm_guards/light/navy
 	desc = "A pair of arm pads in navy blue. Attaches to a plate carrier."
-	icon_state = "armguards_navy"
+	icon_state = "arm_guards_navy"
 
-/obj/item/clothing/accessory/armguards/light/green
+/obj/item/clothing/accessory/arm_guards/light/green
 	desc = "A pair of arm pads in green. Attaches to a plate carrier."
-	icon_state = "armguards_green"
+	icon_state = "arm_guards_green"
 
-/obj/item/clothing/accessory/armguards/light/tan
+/obj/item/clothing/accessory/arm_guards/light/tan
 	desc = "A pair of arm pads in tan. Attaches to a plate carrier."
-	icon_state = "armguards_tan"
+	icon_state = "arm_guards_tan"
 
 // Colored light leg guards
-/obj/item/clothing/accessory/legguards/light/blue
+/obj/item/clothing/accessory/leg_guards/light/blue
 	desc = "A pair of leg pads in blue. Attaches to a plate carrier."
-	icon_state = "legguards_blue"
+	icon_state = "leg_guards_blue"
 
-/obj/item/clothing/accessory/legguards/light/navy
+/obj/item/clothing/accessory/leg_guards/light/navy
 	desc = "A pair of leg pads in navy blue. Attaches to a plate carrier."
-	icon_state = "legguards_navy"
+	icon_state = "leg_guards_navy"
 
-/obj/item/clothing/accessory/legguards/light/green
+/obj/item/clothing/accessory/leg_guards/light/green
 	desc = "A pair of leg pads in green. Attaches to a plate carrier."
-	icon_state = "legguards_green"
+	icon_state = "leg_guards_green"
 
-/obj/item/clothing/accessory/legguards/light/tan
+/obj/item/clothing/accessory/leg_guards/light/tan
 	desc = "A pair of leg pads in tan. Attaches to a plate carrier."
-	icon_state = "legguards_tan"
+	icon_state = "leg_guards_tan"
 
-//#VESTA.BAY # CUSTOM ARMOR TAGS
+//#BOH-BAY # CUSTOM ARMOR TAGS
 
-/obj/item/clothing/accessory/armor/tag/civ
+/obj/item/clothing/accessory/armor_tag/civ
 	name = "\improper CIVILIAN tag"
 	desc = "A tag with the word CIVILIAN printed in green lettering on it."
 	icon_state = "civtag"
@@ -314,7 +295,7 @@
 	accessory_icons = list(slot_tie_str = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi', slot_wear_suit_str = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi')
 	slot_flags = SLOT_BELT
 
-/obj/item/clothing/accessory/armor/tag/civ/med
+/obj/item/clothing/accessory/armor_tag/civ/med
 	name = "\improper medical tag"
 	desc = "A tag with green cross printed on it."
 	icon_state = "medtag"

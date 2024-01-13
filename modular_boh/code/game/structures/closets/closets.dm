@@ -14,14 +14,14 @@
 			return 0
 	return 1
 
-//## VESTA.BAY # INFANTRY LOCKERS #############
-/decl/closet_appearance/secure_closet/torch/security/infantry
+//# BOH-BAY # INFANTRY LOCKERS #
+/singleton/closet_appearance/secure_closet/torch/security/infantry
 	extra_decals = list(
 		"stripe_vertical_mid_full" = "#429661",
 		"infantry" = "#429661"
 	)
 
-/decl/closet_appearance/secure_closet/security/infantry/squad_lead
+/singleton/closet_appearance/secure_closet/security/infantry/squad_lead
 	extra_decals = list(
 		"stripe_vertical_left_full" =  "#429661",
 		"stripe_vertical_right_full" = "#429661",
@@ -32,7 +32,7 @@
 /obj/structure/closet/secure_closet/infantry
 	name = "infantry locker"
 	req_access = list(access_infantry)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/infantry
+	closet_appearance = /singleton/closet_appearance/secure_closet/torch/security/infantry
 
 /obj/structure/closet/secure_closet/infantry/WillContain()
 	return list(
@@ -48,7 +48,7 @@
 /obj/structure/closet/secure_closet/inftech
 	name = "technician's locker"
 	req_access = list(access_inftech)
-	closet_appearance = /decl/closet_appearance/secure_closet/engineering
+	closet_appearance = /singleton/closet_appearance/secure_closet/engineering
 
 /obj/structure/closet/secure_closet/inftech/WillContain()
 	return list(
@@ -64,7 +64,7 @@
 /obj/structure/closet/secure_closet/inftech/ammo
 	name = "technician's support locker"
 	req_access = list(access_inftech)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/security/infantry
+	closet_appearance = /singleton/closet_appearance/secure_closet/torch/security/infantry
 
 /obj/structure/closet/secure_closet/inftech/ammo/WillContain()
 	return list(
@@ -76,7 +76,7 @@
 /obj/structure/closet/secure_closet/squad_lead
 	name = "squad leader's locker"
 	req_access = list(access_infcom)
-	closet_appearance = /decl/closet_appearance/secure_closet/security/infantry/squad_lead
+	closet_appearance = /singleton/closet_appearance/secure_closet/security/infantry/squad_lead
 
 /obj/structure/closet/secure_closet/squad_lead/WillContain()
 	return list(
@@ -91,14 +91,14 @@
 		/obj/item/storage/box/ammo/explo_shells,
 		)
 
-//## VESTA.BAY # INFANTRY LOCKERS #############
+//## BOH-BAY # INFANTRY LOCKERS #
 
-//## VESTA.BAY # PDAV LOCKER ##################
+//## BOH-BAY # PDAV LOCKER #
 
 /obj/structure/closet/secure_closet/psiadvisor
 	name = "psionic advisor's locker"
 	req_access = list(access_psiadvisor)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/command
+	closet_appearance = /singleton/closet_appearance/secure_closet/torch/command
 
 /obj/structure/closet/secure_closet/psiadvisor/WillContain()
 	return list(
@@ -127,7 +127,7 @@
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/dufflebag, /obj/item/storage/backpack/messenger))
 	)
 
-//## VESTA.BAY # SECURITY CADET #############
+//## BOH-BAY # SECURITY CADET #
 
 /obj/structure/closet/secure_closet/security_torch/cadet
 	name = "cadet locker"
@@ -141,7 +141,7 @@
 		/obj/item/device/flash,
 		/obj/item/reagent_containers/spray/pepper,
 		/obj/item/melee/baton/loaded,
-		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
+		/obj/item/clothing/glasses/hud/security/prot,
 		/obj/item/taperoll/police,
 		/obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/clothing/gloves/thick,
@@ -149,12 +149,12 @@
 		/obj/item/device/flashlight/maglight,
 		/obj/item/storage/belt/security)
 
-//## VESTA.BAY # SEA MARINE ###################
+//## BOH-BAY # SEA MARINE #
 
 /obj/structure/closet/secure_closet/smcattache
 	name = "marine attache's locker"
 	req_access = list(access_senadv)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/command
+	closet_appearance = /singleton/closet_appearance/secure_closet/torch/command
 
 /obj/structure/closet/secure_closet/smcattache/WillContain()
 	return list(
@@ -179,27 +179,27 @@
 /obj/structure/closet/secure_closet/guncabinet/antiboarding
 	name = "gun cabinet"
 	req_access = list(access_armory)
-	icon = 'icons/obj/guncabinet.dmi'
+	icon = 'icons/obj/structures/guncabinet.dmi'
 	closet_appearance = null
 
 /obj/structure/closet/secure_closet/guncabinet/antiboarding/mask
 	name = "mask cabinet"
 	req_access = list(access_armory)
-	icon = 'icons/obj/guncabinet.dmi'
+	icon = 'icons/obj/structures/guncabinet.dmi'
 	closet_appearance = null
 
 /obj/structure/closet/secure_closet/guncabinet/antiboarding/grenades
 	name = "grenade cabinet"
 	req_access = list(access_armory)
-	icon = 'icons/obj/guncabinet.dmi'
+	icon = 'icons/obj/structures/guncabinet.dmi'
 	closet_appearance = null
 
 //Federal Protection Agent closet
 
 /obj/structure/closet/secure_closet/sfpagent
-	name = "\improper federal protecion agent's locker"
+	name = "\improper federal protection agent's locker"
 	req_access = list(access_representative_guard)
-	closet_appearance = /decl/closet_appearance/secure_closet/torch/sol/rep
+	closet_appearance = /singleton/closet_appearance/secure_closet/torch/sol/rep
 
 /obj/structure/closet/secure_closet/sfpagent/WillContain()
 	return list(

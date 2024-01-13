@@ -1,4 +1,4 @@
-/obj/item/gun/energy/gun/skrell/vesta
+/obj/item/gun/energy/gun/skrell/hestia
 	name = "XV-5 handgun"
 	desc = "A common Skrellian side-arm, the Xuxquu*'Voom-5, or XV-5, is a more traditional energy weapon, tuned to dispense beams in three different wavelengths."
 	w_class = ITEM_SIZE_NORMAL

@@ -71,7 +71,7 @@
 	if(!job || !job.is_available(client))
 		alert("[job.title] is not available. Please try another.")
 		return 0
-	if(job.is_restricted(client.prefs, src))	//Updated to current Bay proc call #VESTA.BAY
+	if(job.is_restricted(client.prefs, src))	//Updated to current Bay proc call #BOH-BAY
 		return 0
 	if(!attempt_vr(src,"spawn_checks",list())) //Really the only thing changed here
 		return 0									// Ditto
@@ -128,7 +128,7 @@
 			AnnounceArrival(character, job, spawnpoint.msg)
 		else
 			AnnounceCyborg(character, job, spawnpoint.msg)
-		//matchmaker.do_matchmaking() //VESTA.BAY Matchmaker call not avaliable. Cant see to find one to call here. @r4iser
+		//matchmaker.do_matchmaking() //BOH-BAY Matchmaker call not avaliable. Cant see to find one to call here. @r4iser
 	log_and_message_admins("has joined the round as [character.mind.assigned_role].", character)
 
 	if(character.cannot_stand())

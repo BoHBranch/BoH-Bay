@@ -23,7 +23,7 @@
 	icon_state = "fleetpatch6"
 
 // Modular version for NT Patch
-/obj/item/clothing/accessory/armor/tag/nt/dagon
+/obj/item/clothing/accessory/armor_tag/nt/dagon
 	name = "\improper NANOTRASEN patch"
 	desc = "An armor tag with the words NANOTRASEN printed in bottle green lettering on it."
 

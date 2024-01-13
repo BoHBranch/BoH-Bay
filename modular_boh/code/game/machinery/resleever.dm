@@ -38,7 +38,7 @@
 		eject_lace()
 	return ..()
 
-/obj/machinery/resleever/proc/bad_go_out(mob/living/carbon/human/occupant) //#VESTA.BAY Lets give some consequences for it
+/obj/machinery/resleever/proc/bad_go_out(mob/living/carbon/human/occupant) //#BOH-BAY Lets give some consequences for it
 	if(occupant)
 		if(resleeving)
 			set waitfor = FALSE
@@ -59,7 +59,7 @@
 
 /obj/machinery/resleever/Process()
 	if(occupant)
-		if(resleeving)							//Not always, that makes no sense. Only if its being relaced. #VESTA.BAY
+		if(resleeving)							//Not always, that makes no sense. Only if its being relaced. #BOH-BAY
 			occupant.Paralyse(4) // We need to always keep the occupant sleeping if they're in here.
 	if(stat & (MACHINE_STAT_NOPOWER|MACHINE_BROKEN_HEALTH))
 		update_use_power(POWER_USE_OFF)
@@ -158,7 +158,7 @@
 	if(istype(W, /obj/item/organ/internal/stack))
 		var/obj/item/organ/internal/stack/S = W
 		if(isnull(lace))
-			if(S.backup)	//VESTA.BAY makes sure that the lace holds data
+			if(S.backup)	//BOH-BAY makes sure that the lace holds data
 				lace = W
 				user.unEquip(W, src)
 				lace_name = lace.backup.name
@@ -183,10 +183,10 @@
 		var/mob/M = grab.affecting
 
 
-		if(istype(M, /mob/living/carbon/human))	//Failsafe mob check #VESTA.BAY
+		if(istype(M, /mob/living/carbon/human))	//Failsafe mob check #BOH-BAY
 			var/mob/living/carbon/human/H = M
 			var/datum/species/SP = H.species
-			if(!H.has_brain())	//Nope, you're not resleeving brainless people #VESTA.BAY
+			if(!H.has_brain())	//Nope, you're not resleeving brainless people #BOH-BAY
 				to_chat(usr, "[grab.affecting:name] is brainless. You cannot resleeve him.")
 				return
 			else if(SP.spawn_flags & SPECIES_NO_LACE)

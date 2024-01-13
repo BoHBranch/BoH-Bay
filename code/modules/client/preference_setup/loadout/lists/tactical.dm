@@ -3,7 +3,7 @@
 	category = /datum/gear/tactical
 	slot = slot_tie
 
-/datum/gear/tactical/helm_covers
+/datum/gear/tactical/helmet_covers
 	display_name = "helmet covers"
 	path = /obj/item/clothing/accessory/helmet_cover
 	flags = GEAR_HAS_SUBTYPE_SELECTION | GEAR_HAS_NO_CUSTOMIZATION

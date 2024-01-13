@@ -1,6 +1,3 @@
-/datum/configuration //Modular call to set max_gear_cost
-	max_gear_cost = 25 // Used in chargen for accessory loadout limit. 0 disables loadout, negative allows infinite points.
-
 /datum/gear
 	var/implanted = FALSE //is this item implanted? Used for augments / Implants.
 
@@ -9,19 +6,19 @@
 //The following is a list of defs to be used for the Torch loadout.
 
 //For jobs that allow for decorative or ceremonial clothing
-#define FORMAL_ROLES list(/datum/job/liaison, /datum/job/bodyguard, /datum/job/sfpagent, /datum/job/rd, /datum/job/senior_scientist, /datum/job/scientist, /datum/job/scientist_assistant, /datum/job/psychiatrist, /datum/job/representative, /datum/job/assistant, /datum/job/bartender, /datum/job/merchant, /datum/job/detective, /datum/job/chaplain, /datum/job/psiadvisor, /datum/job/submap/bearcat_captain, /datum/job/submap/bearcat_crewman, /datum/job/submap/colonist, /datum/job/submap/pod, , /datum/job/submap/CTI_pilot, /datum/job/submap/CTI_engineer, /datum/job/submap/CTI_Undergraduate_Xenoscience_Researcher, /datum/job/submap/colonist, /datum/job/submap/pod, /datum/job/chef, /datum/job/submap/scavver_pilot, /datum/job/submap/scavver_doctor, /datum/job/submap/scavver_engineer)
+#define FORMAL_ROLES list(/datum/job/liaison, /datum/job/bodyguard, /datum/job/sfpagent, /datum/job/rd, /datum/job/senior_scientist, /datum/job/scientist, /datum/job/scientist_assistant, /datum/job/psychiatrist, /datum/job/representative, /datum/job/assistant, /datum/job/merchant, /datum/job/detective, /datum/job/chaplain, /datum/job/psiadvisor, /datum/job/submap/bearcat_captain, /datum/job/submap/bearcat_crewman, /datum/job/submap/colonist, /datum/job/submap/pod, /datum/job/submap/colonist, /datum/job/submap/pod, /datum/job/chef, /datum/job/submap/scavver_pilot, /datum/job/submap/scavver_doctor, /datum/job/submap/scavver_engineer)
 
 //For civilian jobs that may have a uniform, but not a strict one
-#define SEMIFORMAL_ROLES list(/datum/job/assistant, /datum/job/mining, /datum/job/scientist_assistant, /datum/job/psychiatrist, /datum/job/bartender, /datum/job/merchant, /datum/job/nt_pilot, /datum/job/scientist, /datum/job/senior_scientist, /datum/job/detective, /datum/job/chaplain, /datum/job/roboticist, /datum/job/psiadvisor, /datum/job/submap/bearcat_captain, /datum/job/submap/bearcat_crewman, /datum/job/submap/colonist, /datum/job/submap/pod, /datum/job/chef, /datum/job/submap/scavver_pilot, /datum/job/submap/scavver_doctor, /datum/job/submap/scavver_engineer, /datum/job/senior_doctor, /datum/job/junior_doctor, /datum/job/doctor, /datum/job/submap/CTI_pilot, /datum/job/submap/CTI_engineer, /datum/job/submap/CTI_Undergraduate_Xenoscience_Researcher)
+#define SEMIFORMAL_ROLES list(/datum/job/assistant, /datum/job/mining, /datum/job/scientist_assistant, /datum/job/psychiatrist, /datum/job/merchant, /datum/job/nt_pilot, /datum/job/scientist, /datum/job/senior_scientist, /datum/job/detective, /datum/job/chaplain, /datum/job/roboticist, /datum/job/psiadvisor, /datum/job/submap/bearcat_captain, /datum/job/submap/bearcat_crewman, /datum/job/submap/colonist, /datum/job/submap/pod, /datum/job/chef, /datum/job/submap/scavver_pilot, /datum/job/submap/scavver_doctor, /datum/job/submap/scavver_engineer, /datum/job/senior_doctor, /datum/job/junior_doctor, /datum/job/doctor)
 
 //For civilian jobs that may have a strict uniform.
-#define SEMIANDFORMAL_ROLES list(/datum/job/assistant, /datum/job/mining, /datum/job/scientist_assistant, /datum/job/psychiatrist, /datum/job/bartender, /datum/job/merchant, /datum/job/nt_pilot, /datum/job/liaison, /datum/job/bodyguard, /datum/job/sfpagent, /datum/job/rd, /datum/job/senior_scientist, /datum/job/scientist, /datum/job/representative, /datum/job/detective, /datum/job/chaplain, /datum/job/psiadvisor, /datum/job/submap/bearcat_captain, /datum/job/submap/bearcat_crewman, /datum/job/submap/colonist, /datum/job/submap/pod, /datum/job/chef, /datum/job/submap/scavver_pilot, /datum/job/submap/scavver_doctor, /datum/job/submap/scavver_engineer, /datum/job/senior_doctor, /datum/job/junior_doctor, /datum/job/doctor, /datum/job/submap/CTI_pilot, /datum/job/submap/CTI_engineer, /datum/job/submap/CTI_Undergraduate_Xenoscience_Researcher)
+#define SEMIANDFORMAL_ROLES list(/datum/job/assistant, /datum/job/mining, /datum/job/scientist_assistant, /datum/job/psychiatrist, /datum/job/merchant, /datum/job/nt_pilot, /datum/job/liaison, /datum/job/bodyguard, /datum/job/sfpagent, /datum/job/rd, /datum/job/senior_scientist, /datum/job/scientist, /datum/job/representative, /datum/job/detective, /datum/job/chaplain, /datum/job/psiadvisor, /datum/job/submap/bearcat_captain, /datum/job/submap/bearcat_crewman, /datum/job/submap/colonist, /datum/job/submap/pod, /datum/job/chef, /datum/job/submap/scavver_pilot, /datum/job/submap/scavver_doctor, /datum/job/submap/scavver_engineer, /datum/job/senior_doctor, /datum/job/junior_doctor, /datum/job/doctor)
 
 //For civilian jobs with no uniform or formal clothing requirements.
-#define CASUAL_ROLES list(/datum/job/assistant, /datum/job/janitor, /datum/job/chef, /datum/job/bartender, /datum/job/cargo_tech, /datum/job/roboticist, /datum/job/mining, /datum/job/chaplain, /datum/job/merchant, /datum/job/psiadvisor, /datum/job/submap/bearcat_captain, /datum/job/submap/bearcat_crewman, /datum/job/submap/colonist, /datum/job/submap/pod, /datum/job/submap/scavver_pilot, /datum/job/submap/scavver_doctor, /datum/job/submap/scavver_engineer, /datum/job/senior_doctor, /datum/job/junior_doctor, /datum/job/doctor, /datum/job/scientist, /datum/job/senior_scientist, /datum/job/scientist_assistant, /datum/job/submap/CTI_pilot, /datum/job/submap/CTI_engineer, /datum/job/submap/CTI_Undergraduate_Xenoscience_Researcher)
+#define CASUAL_ROLES list(/datum/job/assistant, /datum/job/janitor, /datum/job/chef, /datum/job/cargo_tech, /datum/job/roboticist, /datum/job/mining, /datum/job/chaplain, /datum/job/merchant, /datum/job/psiadvisor, /datum/job/submap/bearcat_captain, /datum/job/submap/bearcat_crewman, /datum/job/submap/colonist, /datum/job/submap/pod, /datum/job/submap/scavver_pilot, /datum/job/submap/scavver_doctor, /datum/job/submap/scavver_engineer, /datum/job/senior_doctor, /datum/job/junior_doctor, /datum/job/doctor, /datum/job/scientist, /datum/job/senior_scientist, /datum/job/scientist_assistant)
 
 //For roles that would have a higher level of education, typically doctors and other scientists
-#define DOCTOR_ROLES list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/chemist, /datum/job/psychiatrist, /datum/job/roboticist, /datum/job/rd, /datum/job/senior_scientist, /datum/job/scientist, /datum/job/junior_doctor, /datum/job/submap/CTI_Undergraduate_Xenoscience_Researcher)
+#define DOCTOR_ROLES list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/chemist, /datum/job/psychiatrist, /datum/job/roboticist, /datum/job/rd, /datum/job/senior_scientist, /datum/job/scientist, /datum/job/junior_doctor)
 
 //For members of the medical department
 #define MEDICAL_ROLES list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/doctor, /datum/job/psychiatrist, /datum/job/chemist, /datum/job/medical_trainee, /datum/job/junior_doctor)
@@ -42,7 +39,7 @@
 #define SUPPLY_ROLES list(/datum/job/qm, /datum/job/cargo_tech)
 
 //For members of the service department
-#define SERVICE_ROLES list(/datum/job/janitor, /datum/job/chef, /datum/job/crew, /datum/job/bartender, /datum/job/chaplain)
+#define SERVICE_ROLES list(/datum/job/janitor, /datum/job/chef, /datum/job/crew, /datum/job/chaplain)
 
 //For members of the exploration department
 #define EXPLORATION_ROLES list(/datum/job/pathfinder, /datum/job/nt_pilot, /datum/job/explorer, /datum/job/grunt, /datum/job/combat_tech, /datum/job/squad_lead)
@@ -51,7 +48,7 @@
 #define RESEARCH_ROLES list(/datum/job/rd, /datum/job/scientist, /datum/job/roboticist, /datum/job/mining, /datum/job/scientist_assistant, /datum/job/assistant, /datum/job/nt_pilot, /datum/job/senior_scientist, /datum/job/roboticist, /datum/job/psiadvisor)
 
 //For jobs that spawn with weapons in their lockers
-#define ARMED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/sea, /datum/job/sea/marine, /datum/job/officer, /datum/job/warden, /datum/job/detective, /datum/job/merchant, /datum/job/bodyguard, /datum/job/sfpagent, /datum/job/grunt, /datum/job/combat_tech, /datum/job/squad_lead, /datum/job/seccadet, /datum/job/submap/CTI_pilot, /datum/job/submap/CTI_engineer, /datum/job/submap/scavver_pilot, /datum/job/submap/scavver_doctor, /datum/job/submap/scavver_engineer, /datum/job/psiadvisor)
+#define ARMED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/hos, /datum/job/sea, /datum/job/sea/marine, /datum/job/officer, /datum/job/warden, /datum/job/detective, /datum/job/merchant, /datum/job/bodyguard, /datum/job/sfpagent, /datum/job/grunt, /datum/job/combat_tech, /datum/job/squad_lead, /datum/job/seccadet, /datum/job/submap/scavver_pilot, /datum/job/submap/scavver_doctor, /datum/job/submap/scavver_engineer, /datum/job/psiadvisor)
 
 //For jobs that spawn with armor in their lockers
 #define ARMORED_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/qm, /datum/job/sea, /datum/job/sea/marine, /datum/job/bridgeofficer, /datum/job/officer, /datum/job/warden, /datum/job/detective, /datum/job/merchant, /datum/job/bodyguard, /datum/job/sfpagent, /datum/job/submap/skrellscoutship_crew, /datum/job/submap/skrellscoutship_crew/leader, /datum/job/grunt, /datum/job/combat_tech, /datum/job/squad_lead, /datum/job/seccadet, /datum/job/submap/scavver_pilot, /datum/job/submap/scavver_doctor, /datum/job/submap/scavver_engineer)
@@ -93,7 +90,7 @@
 	display_name = "Crowbar"
 	path = /obj/item/crowbar
 
-datum/gear/utility/crayonmre
+/datum/gear/utility/crayonmre
 	display_name = "Crayon MRE"
 	cost = 31
 	path = /obj/item/storage/mre/menu11
@@ -206,11 +203,6 @@ datum/gear/utility/crayonmre
 	path = /obj/item/clothing/accessory/armband/solgov/mp
 	allowed_roles = SECURITY_ROLES
 
-/datum/gear/accessory/armband_bluesec
-	display_name = "Security Armband"
-	path = /obj/item/clothing/accessory/armband/bluesec
-	allowed_roles = SECURITY_ROLES
-
 /datum/gear/accessory/smc_patch
 	display_name = "Marine Corps patch"
 	path = /obj/item/clothing/accessory/solgov/smc_patch
@@ -226,17 +218,13 @@ datum/gear/utility/crayonmre
 
 /datum/gear/tactical/civ_tag
 	display_name = "Civilian tag"
-	path = /obj/item/clothing/accessory/armor/tag/civ
+	path = /obj/item/clothing/accessory/armor_tag/civ
 	allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/tactical/med_tag
 	display_name = "Medical tag"
-	path = /obj/item/clothing/accessory/armor/tag/solgov/medic
+	path = /obj/item/clothing/accessory/armor_tag/solgov/medic
 	allowed_skills = list(SKILL_MEDICAL = SKILL_BASIC)
-
-/datum/gear/tactical/med_tag/alt
-	display_name = "Medical tag, alt"
-	path = /obj/item/clothing/accessory/armor/tag/civ/med
 
 /datum/gear/accessory/tags/marine
 	display_name = "Dog tags, solar marine corps"
@@ -256,31 +244,31 @@ datum/gear/utility/crayonmre
 /datum/gear/tactical/blood_patch
 	display_name = "Blood patch selection"
 	description = "A selection of blood type patches. Attaches to plate carrier."
-	path = /obj/item/clothing/accessory/armor/tag/
+	path = /obj/item/clothing/accessory/armor_tag/
 	cost = 0 // Life-saving.
 
 /datum/gear/tactical/blood_patch/New()
 	..()
 	var/blood_type = list()
-	blood_type["A+"] = /obj/item/clothing/accessory/armor/tag/apos
-	blood_type["A-"] = /obj/item/clothing/accessory/armor/tag/aneg
-	blood_type["B+"] = /obj/item/clothing/accessory/armor/tag/bpos
-	blood_type["B-"] = /obj/item/clothing/accessory/armor/tag/bneg
-	blood_type["AB+"] = /obj/item/clothing/accessory/armor/tag/abpos
-	blood_type["AB-"] = /obj/item/clothing/accessory/armor/tag/abneg
-	blood_type["O+"] = /obj/item/clothing/accessory/armor/tag/opos
-	blood_type["O-"] = /obj/item/clothing/accessory/armor/tag/oneg
+	blood_type["A+"] = /obj/item/clothing/accessory/armor_tag/apos
+	blood_type["A-"] = /obj/item/clothing/accessory/armor_tag/aneg
+	blood_type["B+"] = /obj/item/clothing/accessory/armor_tag/bpos
+	blood_type["B-"] = /obj/item/clothing/accessory/armor_tag/bneg
+	blood_type["AB+"] = /obj/item/clothing/accessory/armor_tag/abpos
+	blood_type["AB-"] = /obj/item/clothing/accessory/armor_tag/abneg
+	blood_type["O+"] = /obj/item/clothing/accessory/armor_tag/opos
+	blood_type["O-"] = /obj/item/clothing/accessory/armor_tag/oneg
 	gear_tweaks += new/datum/gear_tweak/path(blood_type)
 
 /datum/gear/tactical/solgov
 	display_name = "SCG Flag tag"
-	path = /obj/item/clothing/accessory/armor/tag/solgov
+	path = /obj/item/clothing/accessory/armor_tag/solgov
 	allowed_branches = SOLGOV_BRANCHES
 	cost = 0 // Uniformed branches would require one.
 
 /datum/gear/tactical/nt
 	display_name = "NanoTrasen tag"
-	path = /obj/item/clothing/accessory/armor/tag/nt/dagon
+	path = /obj/item/clothing/accessory/armor_tag/nt
 	allowed_branches = NT_BRANCHES
 	cost = 0 // Ditto.
 
@@ -332,7 +320,7 @@ datum/gear/utility/crayonmre
 	path = /obj/item/clothing/head/beret/solgov/expedition
 	allowed_branches = NT_BRANCHES
 
-datum/gear/head/ECdepartment/New()
+/datum/gear/head/ECdepartment/New()
 	..()
 	var/berets = list()
 	berets["NTEF service beret"] = /obj/item/clothing/head/beret/solgov/expedition/service
@@ -513,12 +501,6 @@ datum/gear/head/ECdepartment/New()
 	cover += /obj/item/clothing/head/solgov/utility/army/tan
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(cover)
 
-/datum/gear/head/self_protection_helmet
-	display_name = "Civilian self-protection helmet"
-	path = /obj/item/clothing/head/hardhat/self_protection
-	cost = 2
-	allowed_branches = CIVILIAN_BRANCHES
-
 /datum/gear/head/fleetcap
 	display_name = "Fleet cap"
 	path = /obj/item/clothing/head/soft/solgov/fleet
@@ -538,53 +520,39 @@ datum/gear/head/ECdepartment/New()
 	beret += /obj/item/clothing/head/beret/saare
 	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(beret)
 
-/datum/gear/tactical/helm_covers
-	display_name = "helmet covers"
-	path = /obj/item/clothing/accessory/armor/helmcover
-
-/datum/gear/tactical/helm_covers/New()
-	..()
-	var/helm = list()
-	helm += /obj/item/clothing/accessory/armor/helmcover/blue
-	helm += /obj/item/clothing/accessory/armor/helmcover/navy
-	helm += /obj/item/clothing/accessory/armor/helmcover/saare
-	helm += /obj/item/clothing/accessory/armor/helmcover/pcrc
-	helm += /obj/item/clothing/accessory/armor/helmcover/nt
-	gear_tweaks += new/datum/gear_tweak/path/specified_types_list(helm)
-
 //################# AUGMENTS ###############################
 
-/datum/gear/augmentation/
+/datum/gear/augment/
 	sort_category = "Augmentations"
-	category = /datum/gear/augmentation/
+	category = /datum/gear/augment/
 	//slot = slot_tie /// not used, doesn't matter here ...?
 	implanted = TRUE
 
-/datum/gear/augmentation/implanted_surgical
+/datum/gear/augment/implanted_surgical
 	display_name = "surgical polytool - left arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/polytool/surgical/left
 	cost = 4
 	allowed_roles = STERILE_ROLES
 
-/datum/gear/augmentation/implanted_surgical/right
+/datum/gear/augment/implanted_surgical/right
 	display_name = "surgical polytool - right arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/polytool/surgical/right
 
-/datum/gear/augmentation/implanted_toolkit
+/datum/gear/augment/implanted_toolkit
 	display_name = "mechanical polytool - left arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/polytool/engineer/left
 	cost = 4
 
-/datum/gear/augmentation/implanted_toolkit/right
+/datum/gear/augment/implanted_toolkit/right
 	display_name = "mechanical polytool - right arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/polytool/engineer/right
 
-/datum/gear/augmentation/implanted_circuitkit
+/datum/gear/augment/implanted_circuitkit
 	display_name = "circuit augment - left arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/simple/circuit/left
 	cost = 4
 
-/datum/gear/augmentation/implanted_circuitkit/right
+/datum/gear/augment/implanted_circuitkit/right
 	display_name = "circuit augment - right arm (ROBOTIC)"
 	path = /obj/item/organ/internal/augment/active/simple/circuit/right
 
@@ -595,8 +563,3 @@ datum/gear/head/ECdepartment/New()
 	whitelisted = list(SPECIES_SKRELL)
 	sort_category = "Xenowear"
 
-/datum/gear/mask/breath/gill
-	display_name = "Skrellian gill cover"
-	path = /obj/item/clothing/mask/breath/gill
-	whitelisted = list(SPECIES_SKRELL)
-	sort_category = "Xenowear"

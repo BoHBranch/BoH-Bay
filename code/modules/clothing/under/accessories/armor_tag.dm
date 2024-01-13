@@ -40,6 +40,11 @@
 	icon_state = "presstag"
 	slot_flags = SLOT_BELT
 
+/obj/item/clothing/accessory/armor_tag/civ
+	name = "\improper CIVILIAN tag"
+	desc = "A tag with the word CIVILIAN printed in white lettering on it."
+	icon_state = "presstag"
+	slot_flags = SLOT_BELT
 
 /obj/item/clothing/accessory/armor_tag/opos
 	name = "\improper O+ blood patch"

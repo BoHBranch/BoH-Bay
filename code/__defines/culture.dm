@@ -17,7 +17,7 @@
 #define FACTION_FREETRADE      "Free Trade Union"
 #define FACTION_HEPHAESTUS     "Hephaestus Industries"
 #define FACTION_XYNERGY        "Xynergy"
-#define FACTION_SMC            "SCG Marine Corps"
+#define FACTION_MARINES            "SCG Marine Corps"
 #define FACTION_FLEET          "SCG Fleet"
 #define FACTION_EXPEDITIONARY  "Expeditionary Corps"
 #define FACTION_PCRC           "Proxima Centauri Risk Control"
@@ -225,6 +225,10 @@
 #define CULTURE_XENOPHAGE_S    "Xenophage Sentinel"
 #define CULTURE_XENOPHAGE_Q    "Xenophage Queen"
 #define FACTION_XENOPHAGE      "Xenophage Hive"
+
+//Hestia IPC Culture
+#define CULTURE_POSITRONICS    "Positronic Union"
+#define CULTURE_POSITRONICS_GENERIC    "Integrated Positronic Chassis"
 
 //Unathi cultures
 #define FACTION_UNATHI_POLAR        "Polar Clans"

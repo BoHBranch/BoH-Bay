@@ -1,4 +1,4 @@
-/obj/item/gun/energy/pulse_rifle/skrell/vesta
+/obj/item/gun/energy/pulse_rifle/skrell/hestia
 	name = "VT-3 carbine"
 	desc = "The Vuu'Xqu*ix T-3, known as 'VT-3' by SolGov. Rarely seen out in the wild by anyone outside of a Skrellian SDTF."
 	icon = 'icons/obj/guns/skrell_carbine.dmi'

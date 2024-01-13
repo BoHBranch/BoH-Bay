@@ -1,4 +1,4 @@
-/obj/item/gun/magnetic/railgun/flechette/skrell/vesta
+/obj/item/gun/magnetic/railgun/flechette/skrell/hestia
 	name = "ZT-8 rifle"
 	desc = "The Zquiv*Tzuuli-8, or ZT-8, is a railgun rarely seen by anyone other than those within Skrellian SDTF ranks. The rotary magazine houses a cylinder with individual chambers, that press against the barrel when loaded."
 	icon = 'icons/obj/guns/skrell_rifle.dmi'

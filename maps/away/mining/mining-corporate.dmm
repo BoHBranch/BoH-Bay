@@ -3720,7 +3720,7 @@
 	},
 /obj/structure/closet/walllocker/emerglocker/west{
 	amount = 3;
-	spawnitems = list(/obj/item/tank/emergency/oxygen,/obj/item/clothing/mask/breath,/obj/item/inflatable/door,/obj/item/inflatable/wall,/obj/item/inflatable/door,/obj/item/inflatable/wall)
+	spawnitems = list(/obj/item/tank/oxygen_emergency/oxygen,/obj/item/clothing/mask/breath,/obj/item/inflatable/door,/obj/item/inflatable/wall,/obj/item/inflatable/door,/obj/item/inflatable/wall)
 	},
 /turf/simulated/floor/greengrid,
 /area/shuttle/abadoned_data_capsule)

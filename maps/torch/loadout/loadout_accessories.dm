@@ -204,7 +204,7 @@
 	)
 	flags = GEAR_HAS_NO_CUSTOMIZATION
 
-/datum/gear/tactical/helm_covers
+/datum/gear/tactical/helmet_covers
 	allowed_roles = ARMORED_ROLES
 
 /datum/gear/clothing/hawaii

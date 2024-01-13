@@ -330,53 +330,6 @@ specialty pins
 	desc = "An iron pin denoting the qualification to fly SCG spacecraft."
 	icon_state = "pin_pilot"
 
-/*****
-badges
-*****/
-/obj/item/clothing/accessory/badge/solgov
-	name = "master solgov badge"
-	icon = 'maps/torch/icons/obj/obj_accessories_solgov.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi', slot_wear_suit_str = 'maps/torch/icons/mob/onmob_accessories_solgov.dmi')
-
-/obj/item/clothing/accessory/badge/solgov/security
-	name = "security forces badge"
-	desc = "A silver law enforcement badge. Stamped with the words 'Master at Arms'."
-	icon_state = "silverbadge"
-	slot_flags = SLOT_TIE
-	badge_string = "Sol Central Government"
-
-/obj/item/clothing/accessory/badge/solgov/tags
-	name = "dog tags"
-	desc = "Plain identification tags made from a durable metal. They are stamped with a variety of informational details."
-	gender = PLURAL
-	icon_state = "tags"
-	badge_string = "Sol Central Government"
-	slot_flags = SLOT_MASK | SLOT_TIE
-	var/owner_rank
-	var/owner_name
-	var/owner_branch
-
-/obj/item/clothing/accessory/badge/solgov/tags/proc/loadout_setup(mob/M)
-	set_name(M.real_name)
-	set_desc(M)
-
-/obj/item/clothing/accessory/badge/solgov/tags/set_desc(mob/living/carbon/human/H)
-	if(!istype(H))
-		return
-	owner_rank = H.char_rank && H.char_rank.name
-	owner_name = H.real_name
-	owner_branch = H.char_branch && H.char_branch.name
-	var/singleton/cultural_info/culture = H.get_cultural_value(TAG_RELIGION)
-	var/religion = culture ? culture.name : "Unset"
-	desc = "[initial(desc)]\nName: [H.real_name] ([H.get_species()])[H.char_branch ? "\nBranch: [H.char_branch.name]" : ""]\nReligion: [religion]\nBlood type: [H.b_type]"
-
-/obj/item/clothing/accessory/badge/solgov/representative
-	name = "representative's badge"
-	desc = "A leather-backed plastic badge with a variety of information printed on it. Belongs to a representative of the Sol Central Government."
-	icon_state = "solbadge"
-	slot_flags = SLOT_TIE
-	badge_string = "Sol Central Government"
-
 /*******
 armbands
 *******/

@@ -1,7 +1,7 @@
-// A modular rewrite to allow "alternative" uniform. Done for NTEF to allow both NTSC and NTF uniforms, and to allow marines for camo selection.
+// A modular rewrite to allow "alternative" uniform. Done for NTEF to allow both NTSC and NTF uniforms, and to allow marines for camo selection. Very painful.
 // Some of those (shoes, gloves) are not really needed but hey - safe check.
 
-/obj/machinery/uniform_vendor/populate_uniforms(decl/hierarchy/mil_uniform/user_outfit)
+/obj/machinery/uniform_vendor/populate_uniforms(singleton/hierarchy/mil_uniform/user_outfit)
 	var/list/res = list()
 	res["PT"] = list(
 		user_outfit.pt_under,

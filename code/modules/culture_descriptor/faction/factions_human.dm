@@ -26,11 +26,6 @@
 	Recently Sol-made IPCs were also permitted to enlist, provided they agree to install a law shackle."
 
 
-/singleton/cultural_info/faction/scg/marine
-	name = FACTION_SMC
-	description = "OORAH."
-
-
 /singleton/cultural_info/faction/torchco
 	name = FACTION_CORPORATE
 	description = "The Expeditionary Corps Organisation is a government-owned, publically traded limited liability company assembled from the corporate \

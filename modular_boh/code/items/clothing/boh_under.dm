@@ -1,53 +1,54 @@
 
+// Reuses Fleet markings because effectively they're the same thing.
 // Urban accessories
 /obj/item/clothing/under/solgov/utility/army/urban/command
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/command/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/command/fleet)
 
 /obj/item/clothing/under/solgov/utility/army/urban/engineering
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/engineering/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/engineering/fleet)
 
 /obj/item/clothing/under/solgov/utility/army/urban/security
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/security/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/security/fleet)
 
 /obj/item/clothing/under/solgov/utility/army/urban/medical
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/medical/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/medical/fleet)
 
 /obj/item/clothing/under/solgov/utility/army/urban/medical/banded
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/medical/army, /obj/item/clothing/accessory/armband/medblue)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/medical/fleet, /obj/item/clothing/accessory/armband/medblue)
 
 /obj/item/clothing/under/solgov/utility/army/urban/supply
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/supply/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/supply/fleet)
 
 /obj/item/clothing/under/solgov/utility/army/urban/service
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/service/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/service/fleet)
 
 /obj/item/clothing/under/solgov/utility/army/urban/exploration
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/exploration/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/exploration/fleet)
 
 // Tan accessories
 /obj/item/clothing/under/solgov/utility/army/tan/command
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/command/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/command/fleet)
 
 /obj/item/clothing/under/solgov/utility/army/tan/engineering
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/engineering/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/engineering/fleet)
 
 /obj/item/clothing/under/solgov/utility/army/tan/security
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/security/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/security/fleet)
 
 /obj/item/clothing/under/solgov/utility/army/tan/medical
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/medical/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/medical/fleet)
 
 /obj/item/clothing/under/solgov/utility/army/tan/medical/banded
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/medical/army, /obj/item/clothing/accessory/armband/medblue)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/medical/fleet, /obj/item/clothing/accessory/armband/medblue)
 
 /obj/item/clothing/under/solgov/utility/army/tan/supply
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/supply/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/supply/fleet)
 
 /obj/item/clothing/under/solgov/utility/army/tan/service
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/service/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/service/fleet)
 
 /obj/item/clothing/under/solgov/utility/army/tan/exploration
-	starting_accessories = list(/obj/item/clothing/accessory/solgov/department/exploration/army)
+	accessories = list(/obj/item/clothing/accessory/solgov/department/exploration/fleet)
 
 // Modular: PCRC Agent Unathi-wise sprite
 /obj/item/clothing/under/pcrcsuit

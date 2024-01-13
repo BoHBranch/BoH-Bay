@@ -322,6 +322,11 @@
 	accessories = list(/obj/item/clothing/accessory/armor_plate, /obj/item/clothing/accessory/armor_tag/press)
 	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
+// Cadet Vest
+/obj/item/clothing/suit/armor/pcarrier/light/security
+	accessories = list(/obj/item/clothing/accessory/armor_plate, /obj/item/clothing/accessory/storage/pouches)
+	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_INVALID_FOR_CHAMELEON
+
 /obj/item/clothing/suit/armor/pcarrier/medium
 	accessories = list(/obj/item/clothing/accessory/armor_plate/medium, /obj/item/clothing/accessory/storage/pouches)
 	item_flags = ITEM_FLAG_THICKMATERIAL | ITEM_FLAG_INVALID_FOR_CHAMELEON

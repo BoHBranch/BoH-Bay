@@ -7,7 +7,7 @@
 		slot_tie_str = 'icons/mob/onmob/onmob_modular_armor.dmi',
 		slot_wear_suit_str = 'icons/mob/onmob/onmob_modular_armor.dmi'
 	)
-	icon_state = "armguards"
+	icon_state = "arm_guards"
 	gender = PLURAL
 	body_parts_covered = ARMS
 	armor = list(
@@ -28,28 +28,28 @@
 
 /obj/item/clothing/accessory/arm_guards/blue
 	desc = "A pair of blue arm pads reinforced with armor plating. Attaches to a plate carrier."
-	icon_state = "armguards_blue"
+	icon_state = "arm_guards_blue"
 
 
 /obj/item/clothing/accessory/arm_guards/navy
 	desc = "A pair of navy blue arm pads reinforced with armor plating. Attaches to a plate carrier."
-	icon_state = "armguards_navy"
+	icon_state = "arm_guards_navy"
 
 
 /obj/item/clothing/accessory/arm_guards/green
 	desc = "A pair of green arm pads reinforced with armor plating. Attaches to a plate carrier."
-	icon_state = "armguards_green"
+	icon_state = "arm_guards_green"
 
 
 /obj/item/clothing/accessory/arm_guards/tan
 	desc = "A pair of tan arm pads reinforced with armor plating. Attaches to a plate carrier."
-	icon_state = "armguards_tan"
+	icon_state = "arm_guards_tan"
 
 
 /obj/item/clothing/accessory/arm_guards/merc
 	name = "heavy arm guards"
 	desc = "A pair of red-trimmed black arm pads reinforced with heavy armor plating. Attaches to a plate carrier."
-	icon_state = "armguards_merc"
+	icon_state = "arm_guards_merc"
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT,
 		bullet = ARMOR_BALLISTIC_PISTOL,
@@ -62,7 +62,7 @@
 /obj/item/clothing/accessory/arm_guards/riot
 	name = "riot arm guards"
 	desc = "A pair of armored arm pads with heavy padding to protect against melee attacks."
-	icon_state = "armguards_riot"
+	icon_state = "arm_guards_riot"
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
 		bullet = ARMOR_BALLISTIC_SMALL,
@@ -76,7 +76,7 @@
 /obj/item/clothing/accessory/arm_guards/ballistic
 	name = "ballistic arm guards"
 	desc = "A pair of armored arm pads with heavy plates to protect against ballistic projectiles."
-	icon_state = "armguards_ballistic"
+	icon_state = "arm_guards_ballistic"
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_RIFLE,
@@ -90,7 +90,7 @@
 /obj/item/clothing/accessory/arm_guards/ablative
 	name = "ablative arm guards"
 	desc = "A pair of armored arm pads with advanced shielding to protect against energy weapons."
-	icon_state = "armguards_ablative"
+	icon_state = "arm_guards_ablative"
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_SMALL,
