@@ -71,9 +71,8 @@
 	name = "\improper Pool"
 	icon_state = "fitness"
 
-//SMC attache
 /area/command/msea
-	name = "\improper Solarian Marine Corps Attache Office"
+	name = "\improper Marine Senior Enlisted Advisor"
 	icon_state = "heads_sea"
 	req_access = list(access_senadv)
 

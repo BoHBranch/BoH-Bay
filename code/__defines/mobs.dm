@@ -256,13 +256,6 @@
 /// The augment can be installed in the head separately to AUGMENT_HEAD
 #define AUGMENT_FLUFF FLAG(8)
 
-/// HESTIA SPECIFIC LOADOUT FLAGS
-/// The augment can be installed in the head separately to AUGMENT_HEAD
-#define AUGMENT_ARM_L FLAG(9)
-
-/// The augment can be installed in the head separately to AUGMENT_HEAD
-#define AUGMENT_ARM_R FLAG(10)
-
 /**
 * Augment Flags
 * Flags used by /obj/item/organ/internal/augment/var/augment_flags

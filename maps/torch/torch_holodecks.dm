@@ -49,7 +49,7 @@
 
 	holodeck_supported_programs = list(
 
-		"TorchMainPrograms" = list(
+		"DagonMainPrograms" = list(
 			"Basketball Court"  = "basketball",
 			"Beach"             = "beach",
 			"Boxing Ring"       = "boxingcourt",
@@ -72,7 +72,7 @@
 
 	holodeck_restricted_programs = list(
 
-		"TorchMainPrograms" = list(
+		"DagonMainPrograms" = list(
 			"Wildlife Simulation" = "wildlifecarp"
 		)
 

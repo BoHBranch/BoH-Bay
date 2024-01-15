@@ -2,7 +2,7 @@
 
 /obj/item/card/id/torch
 	name = "identification card"
-	desc = "An identification card issued to personnel aboard the SEV Torch."
+	desc = "An identification card issued to personnel aboard the SGV Dagon."
 	job_access_type = DEFAULT_JOB_TYPE
 
 /obj/item/card/id/torch/silver
@@ -21,14 +21,14 @@
 
 // SolGov Crew and Contractors
 /obj/item/card/id/torch/crew
-	desc = "An identification card issued to SolGov crewmembers aboard the SEV Torch."
+	desc = "An identification card issued to SolGov crewmembers aboard the SGV Dagon."
 	color = "#d3e3e1"
 	job_access_type = /datum/job/crew
 	color = "#ccecff"
 
 
 /obj/item/card/id/torch/contractor
-	desc = "An identification card issued to private contractors aboard the SEV Torch."
+	desc = "An identification card issued to private contractors aboard the SGV Dagon."
 	job_access_type = DEFAULT_JOB_TYPE
 	color = COLOR_GRAY80
 
@@ -165,7 +165,7 @@
 	color = COLOR_WHITE
 
 /obj/item/card/id/torch/crew/research
-	desc = "A card issued to science personnel aboard the SEV Torch."
+	desc = "A card issued to science personnel aboard the SGV Dagon."
 	job_access_type = /datum/job/scientist_assistant
 	detail_color = COLOR_RESEARCH
 
@@ -179,12 +179,12 @@
 //NanoTrasen and Passengers
 
 /obj/item/card/id/torch/passenger
-	desc = "A card issued to passengers aboard the SEV Torch."
+	desc = "A card issued to passengers aboard the SGV Dagon."
 	job_access_type = DEFAULT_JOB_TYPE
 	detail_color = COLOR_PAKISTAN_GREEN
 
 /obj/item/card/id/torch/passenger/research
-	desc = "A card issued to corporate personnel aboard the SEV Torch."
+	desc = "A card issued to corporate personnel aboard the SGV Dagon."
 	job_access_type = /datum/job/scientist_assistant
 	detail_color = COLOR_BOTTLE_GREEN
 

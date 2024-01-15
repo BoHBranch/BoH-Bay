@@ -68,43 +68,43 @@
 
 /obj/item/clothing/suit/storage/solgov/service/fleet
 	name = "fleet service jacket"
-	desc = "A black Nanotrasen Expeditionary Fleet service jacket."
+	desc = "A black Nanotrasen SolGov Fleet service jacket."
 	icon_state = "blueservice"
 	item_state = "blueservice"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/snco
 	name = "fleet SNCO service jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet service jacket with silver cuffs."
+	desc = "A black NanoTrasen SolGov Fleet service jacket with silver cuffs."
 	icon_state = "blueservice_snco"
 	item_state = "blueservice_snco"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/warrant
 	name = "fleet warrant officer's service jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet service jacket with cobalt accents."
-	icon_state = "blueservice_wo"
-	item_state = "blueservice_wo"
+	desc = "A black NanoTrasen SolGov Fleet service jacket with silver cuffs."
+	icon_state = "blueservice_snco"
+	item_state = "blueservice_snco"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/officer
 	name = "fleet officer's service jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with silver accents."
+	desc = "A black NanoTrasen SolGov Fleet dress jacket with silver accents."
 	icon_state = "blueservice_off"
 	item_state = "blueservice_off"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/command
 	name = "fleet senior officer's service jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with gold accents."
+	desc = "A black NanoTrasen SolGov Fleet dress jacket with gold accents."
 	icon_state = "blueservice_comm"
 	item_state = "blueservice_comm"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/captain
 	name = "fleet senior officer's service jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with heavy gold accents."
+	desc = "A black NanoTrasen SolGov Fleet dress jacket with heavy gold accents."
 	icon_state = "blueservice_cap"
 	item_state = "blueservice_cap"
 
 /obj/item/clothing/suit/storage/solgov/service/fleet/flag
 	name = "fleet flag officer's service jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with blood-red accents."
+	desc = "A black NanoTrasen SolGov Fleet dress jacket with blood-red accents."
 	icon_state = "blueservice_flag"
 	item_state = "blueservice_flag"
 
@@ -186,7 +186,7 @@
 
 /obj/item/clothing/suit/storage/solgov/dress/expedition
 	name = "expeditionary dress coat"
-	desc = "A silver and black dress peacoat belonging to the NanoTrasen Surveyor Corps. Fashionable, for the 25th century at least."
+	desc = "A silver and black dress peacoat belonging to the Solar Fleet. Fashionable, for the 25th century at least."
 	icon_state = "ecdress_xpl"
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_suit_unathi.dmi'
@@ -202,7 +202,7 @@
 
 /obj/item/clothing/suit/storage/solgov/dress/expedition/command
 	name = "expeditionary officer's dress coat"
-	desc = "A gold and black dress peacoat belonging to the NanoTrasen Surveyor Corps. The height of fashion."
+	desc = "A gold and black dress peacoat belonging to the Solar Fleet. The height of fashion."
 	icon_state = "ecdress_ofcr"
 
 /obj/item/clothing/suit/storage/solgov/dress/expedition/command/cdr
@@ -219,43 +219,43 @@
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet
 	name = "fleet dress jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet dress jacket. Don't get near pasta sauce or vox."
+	desc = "A black NanoTrasen SolGov Fleet dress jacket. Don't get near pasta sauce or vox."
 	icon_state = "whitedress"
 	item_state = "whitedress"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/snco
 	name = "fleet dress SNCO jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with silver cuffs. Don't get near pasta sauce or vox."
+	desc = "A black NanoTrasen SolGov Fleet dress jacket with silver cuffs. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_snco"
 	item_state = "whitedress_snco"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/warrant
 	name = "fleet dress warrant officer's jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with cobalt accents. Don't get near pasta sauce or vox."
-	icon_state = "whitedress_wo"
-	item_state = "whitedress_wo"
+	desc = "A black NanoTrasen SolGov Fleet dress jacket with silver accents. Don't get near pasta sauce or vox."
+	icon_state = "whitedress_snco"
+	item_state = "whitedress_snco"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/officer
 	name = "fleet officer's dress jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with silver accents. Don't get near pasta sauce or vox."
+	desc = "A black NanoTrasen SolGov Fleet dress jacket with silver accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_off"
 	item_state = "whitedress_off"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/command
 	name = "fleet senior officer's dress jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with gold accents. Don't get near pasta sauce or vox."
+	desc = "A black NanoTrasen SolGov Fleet dress jacket with gold accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_comm"
 	item_state = "whitedress_comm"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/captain
 	name = "fleet captain's dress jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with heavy gold accents, denoting it as a captain's. Shiny."
+	desc = "A black NanoTrasen SolGov Fleet dress jacket with heavy gold accents, denoting it as a captain's. Shiny."
 	icon_state = "whitedress_cap"
 	item_state = "whitedress_cap"
 
 /obj/item/clothing/suit/storage/solgov/dress/fleet/flag
 	name = "fleet flag officer's dress jacket"
-	desc = "A black NanoTrasen Expeditionary Fleet dress jacket with blood-red accents. Don't get near pasta sauce or vox."
+	desc = "A black NanoTrasen SolGov Fleet dress jacket with blood-red accents. Don't get near pasta sauce or vox."
 	icon_state = "whitedress_flag"
 	item_state = "whitedress_flag"
 
@@ -272,7 +272,7 @@
 
 /obj/item/clothing/suit/dress/solgov/fleet/sailor
 	name = "fleet dress overwear"
-	desc = "A black NanoTrasen Expeditionary Fleet dress suit. Almost looks like a school-girl outfit."
+	desc = "A black NanoTrasen SolGov Fleet dress suit. Almost looks like a school-girl outfit."
 	icon_state = "sailordress"
 
 /obj/item/clothing/suit/dress/solgov/army
@@ -311,10 +311,11 @@
 		bomb = ARMOR_BOMB_MINOR
 		)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA,ACCESSORY_SLOT_RANK)
+	desc = "A green marine winter coat. Warm!"
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet
 	name = "fleet winter coat"
-	icon_state = "coatec"
+	icon_state = "coatfl"
 	armor = list(
 		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_MINOR,
@@ -322,14 +323,9 @@
 		bomb = ARMOR_BOMB_MINOR
 		)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
-	desc = "A black NTEF winter coat. Warm!"
+	desc = "A navy fleet winter coat. Warm!"
 
 /obj/item/clothing/suit/storage/jacket/solgov/fleet
-	name = "fleet engineering jacket"
-	desc = "A jacket commonly issued by the fleet to its engineers. It sports some yellow reflective stripes, and has elbow pads."
-	icon_state = "navyengjacket"
-	icon = 'maps/torch/icons/obj/obj_suit_solgov.dmi'
-	item_icons = list(slot_wear_suit_str = 'maps/torch/icons/mob/onmob_suit_solgov.dmi')
 	armor = list(
 		melee = ARMOR_MELEE_SMALL,
 		bullet = ARMOR_BALLISTIC_MINOR,
@@ -337,53 +333,6 @@
 		bomb = ARMOR_BOMB_MINOR,
 		rad = ARMOR_RAD_MINOR
 		)
-	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA,ACCESSORY_SLOT_RANK)
-	allowed = list (/obj/item/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/storage/fancy/smokable,/obj/item/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/device/scanner/gas, /obj/item/device/flashlight, /obj/item/device/multitool, /obj/item/device/radio, /obj/item/device/t_scanner, \
-	/obj/item/crowbar, /obj/item/screwdriver, /obj/item/weldingtool, /obj/item/wirecutters, /obj/item/wrench, /obj/item/tank/oxygen_emergency, \
-	/obj/item/clothing/mask/gas, /obj/item/taperoll/engineering,/obj/item/clothing/head/hardhat)
-
-/obj/item/clothing/suit/storage/jacket/solgov/fleet/medical
-	name = "fleet jacket"
-	desc = "A jacket commonly issued by the fleet to its medical staff. It sports some discrete blue markings, and has thin elbow pads."
-	icon_state = "navymedjacket"
-	allowed = list (/obj/item/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/storage/fancy/smokable,/obj/item/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/stack/medical, /obj/item/reagent_containers/dropper, /obj/item/reagent_containers/hypospray, /obj/item/reagent_containers/syringe, \
-	/obj/item/device/scanner/health, /obj/item/device/flashlight, /obj/item/device/radio, /obj/item/clothing/head/hardhat, /obj/item/tank/oxygen_emergency, /obj/item/reagent_containers/ivbag
-	)
-
-/obj/item/clothing/suit/storage/jacket/solgov/fleet/security
-	name = "fleet jacket"
-	desc = "A jacket commonly issued by the fleet to its security staff. It sports some discrete red markings, and has elbow pads."
-	icon_state = "navysecjacket"
-	allowed = list (/obj/item/tank/oxygen_emergency,/obj/item/device/flashlight,/obj/item/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/storage/fancy/smokable,/obj/item/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/gun/energy,/obj/item/device/radio,/obj/item/reagent_containers/spray/pepper,/obj/item/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/handcuffs,/obj/item/gun/magnetic,/obj/item/clothing/head/helmet
-	)
-
-/obj/item/clothing/suit/storage/jacket/solgov/fleet/service
-	name = "fleet jacket"
-	desc = "A jacket commonly issued by the fleet to its service staff. It sports some discrete green markings."
-	icon_state = "navysrvjacket"
-	allowed = list (/obj/item/tank/oxygen_emergency,/obj/item/device/flashlight,/obj/item/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/storage/fancy/smokable,/obj/item/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll
-	)
-
-/obj/item/clothing/suit/storage/jacket/solgov/fleet/supply
-	name = "fleet jacket"
-	desc = "A jacket commonly issued by the fleet to its deck staff. It sports some discrete brown markings, and has elbow pads."
-	icon_state = "navysupjacket"
-	allowed = list (/obj/item/tank/oxygen_emergency,/obj/item/device/flashlight,/obj/item/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/storage/fancy/smokable,/obj/item/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll
-	)
-
-/obj/item/clothing/suit/storage/jacket/solgov/fleet/command
-	name = "fleet jacket"
-	desc = "A jacket commonly issued by the fleet to its command staff. It sports some gold markings."
-	icon_state = "navycomjacket"
-	allowed = list (/obj/item/tank/oxygen_emergency,/obj/item/device/flashlight,/obj/item/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/storage/fancy/smokable,/obj/item/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll
-	)
-
-/obj/item/clothing/suit/storage/jacket/solgov/fleet/exploration
-	name = "fleet jacket"
-	desc = "A jacket commonly issued by the fleet to its command staff. It sports some discrete purple markings."
-	icon_state = "navyxpljacket"
-	allowed = list (/obj/item/tank,/obj/item/device/flashlight,/obj/item/pen,/obj/item/clothing/head/soft,/obj/item/clothing/head/beret,/obj/item/storage/fancy/smokable,/obj/item/flame/lighter,/obj/item/device/taperecorder,/obj/item/device/scanner/gas,/obj/item/device/radio,/obj/item/taperoll,/obj/item/device/scanner
-	)
 
 //SolGov Hardsuits
 
@@ -465,7 +414,7 @@
 	item_icons = list(slot_wear_suit_str = 'maps/torch/icons/mob/onmob_suit_solgov.dmi')
 	icon_state = "void_command"
 	name = "command voidsuit"
-	desc = "A light, radiation resistant voidsuit commonly used among SCG uniformed services. This one has an NT seal on its chest plate and command department markings."
+	desc = "A light, radiation resistant voidsuit commonly used among SCG uniformed services. This one has an Solar Fleet seal on its chest plate and command department markings."
 	allowed = list(/obj/item/device/flashlight,/obj/item/tank,/obj/item/device/suit_cooling_unit,/obj/item/storage/briefcase/inflatable)
 
 /obj/item/clothing/suit/space/void/command/New()
@@ -479,7 +428,7 @@
 //Exploration
 /obj/item/clothing/head/helmet/space/void/exploration
 	name = "exploration voidsuit helmet"
-	desc = "A helmet of Exoplanet Exploration Unit, standard issue for Surveyor Corps away missions. It has an armored glass dome for superiour visibility and extra anti-radiation lining."
+	desc = "A helmet of Exoplanet Exploration Unit, standard issue for Solar Fleet away missions. It has an armored glass dome for superiour visibility and extra anti-radiation lining."
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	item_icons = list(slot_head_str = 'maps/torch/icons/mob/onmob_head_solgov.dmi')
 	icon_state = "helm_explorer"
@@ -503,7 +452,7 @@
 	name = "exploration voidsuit"
 	icon = 'maps/torch/icons/obj/obj_suit_solgov.dmi'
 	item_icons = list(slot_wear_suit_str = 'maps/torch/icons/mob/onmob_suit_solgov.dmi')
-	desc = "The bulky Exoplanet Exploration Unit is a standard voidsuit for Surveyor Corps field operations. It features extra padding and respectable radiation-resistant lining."
+	desc = "The bulky Exoplanet Exploration Unit is a standard voidsuit for Solar Fleet field operations. It features extra padding and respectable radiation-resistant lining."
 	icon_state = "void_explorer"
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'maps/torch/icons/mob/unathi/onmob_suit_solgov_unathi.dmi'

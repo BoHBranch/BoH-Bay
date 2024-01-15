@@ -56,7 +56,7 @@
 //For members of the command and command support department. Why wasn't this here before?
 #define COMMAND_ROLES list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/sea, /datum/job/sea/marine, /datum/job/bridgeofficer, /datum/job/liaison, /datum/job/bodyguard, /datum/job/sfpagent, /datum/job/psiadvisor, /datum/job/representative)
 
-//For jobs that have at least O-1 in either NTEF or SMC, but aren't considered Command or Command Support.
+//For jobs that have at least O-1 in either Fleet or SMC, but aren't considered Command or Command Support.
 #define OFFICER_ROLES list(/datum/job/scientist, /datum/job/qm, /datum/job/roboticist, /datum/job/chaplain, /datum/job/psychiatrist, /datum/job/senior_doctor, /datum/job/pathfinder)
 
 //For members of Command, Command Support and all other officer roles. Basically COMMAND_ROLES and OFFICER_ROLES merged together as a last resort.
@@ -68,11 +68,11 @@
 
 #define CIVILIAN_BRANCHES list(/datum/mil_branch/civilian, /datum/mil_branch/solgov)
 
-#define SOLGOV_BRANCHES list(/datum/mil_branch/solgov, /datum/mil_branch/marine_corps)
+#define SOLGOV_BRANCHES list(/datum/mil_branch/solgov, /datum/mil_branch/marine_corps, /datum/mil_branch/fleet)
 
 #define TACTICOOL_BRANCHES list(/datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet, /datum/mil_branch/solgov, /datum/mil_branch/private_security, /datum/mil_branch/marine_corps)
 
-#define NT_BRANCHES list(/datum/mil_branch/expeditionary_corps, /datum/mil_branch/fleet)
+#define FLEET_ONLY list(/datum/mil_branch/fleet)
 
 #define MILITARY_BRANCHES list(/datum/mil_branch/fleet, /datum/mil_branch/marine_corps)
 
@@ -234,10 +234,10 @@
 	cost = 0
 
 /datum/gear/accessory/tags/fleet
-	display_name = "Dog tags, expeditionary fleet"
+	display_name = "Dog tags, solar fleet"
 	description = "Plain identification tags made from a durable metal. This one is issued to fleet."
 	path = /obj/item/clothing/accessory/badge/solgov/tags/fleet
-	allowed_branches = NT_BRANCHES
+	allowed_branches = FLEET_ONLY
 	cost = 0
 
 // Separating main's certain armor customization items.
@@ -269,7 +269,6 @@
 /datum/gear/tactical/nt
 	display_name = "NanoTrasen tag"
 	path = /obj/item/clothing/accessory/armor_tag/nt
-	allowed_branches = NT_BRANCHES
 	cost = 0 // Ditto.
 
 /datum/gear/tactical/combatknife
@@ -283,7 +282,7 @@
 /datum/gear/accessory/nt_blaze
 	display_name = "Blaze, janitor"
 	path = /obj/item/clothing/accessory/solgov/specialty/janitor
-	allowed_branches = NT_BRANCHES
+	allowed_branches = FLEET_ONLY
 	allowed_roles = list(/datum/job/janitor)
 	cost = 0
 
@@ -311,27 +310,6 @@
 	display_name = "Blaze, counselor"
 	path = /obj/item/clothing/accessory/solgov/specialty/counselor
 	allowed_roles = list(/datum/job/psychiatrist)
-
-//################# HEAD EC OVERRIDE ####################
-
-/datum/gear/head/ECdepartment
-	display_name = "NTEF department beret selection"
-	description = "A beret sporting departmental colours for NTEF personnel."
-	path = /obj/item/clothing/head/beret/solgov/expedition
-	allowed_branches = NT_BRANCHES
-
-/datum/gear/head/ECdepartment/New()
-	..()
-	var/berets = list()
-	berets["NTEF service beret"] = /obj/item/clothing/head/beret/solgov/expedition/service
-	berets["NTEF security beret"] = /obj/item/clothing/head/beret/solgov/expedition/security
-	berets["NTEF command beret"] = /obj/item/clothing/head/beret/solgov/expedition/command
-	berets["NTEF engineering beret"] = /obj/item/clothing/head/beret/solgov/expedition/engineering
-	berets["NTEF medical beret"] = /obj/item/clothing/head/beret/solgov/expedition/medical
-	berets["NTEF beret"] = /obj/item/clothing/head/beret/solgov/expedition
-	berets["NTEF supply beret"] = /obj/item/clothing/head/beret/solgov/expedition/supply
-	berets["NTEF exploration beret"] = /obj/item/clothing/head/beret/solgov/expedition/exploration
-	gear_tweaks += new/datum/gear_tweak/path(berets)
 
 //################# CUSTOM_ARMOR ########################
 
@@ -455,21 +433,21 @@
 	display_name = "Fleet fatigues"
 	path = /obj/item/clothing/under/solgov/utility/fleet
 	cost = 0
-	allowed_branches = NT_BRANCHES
+	allowed_branches = FLEET_ONLY
 
 /datum/gear/uniform/fleet/officer
 	display_name = "Fleet officer fatigues"
 	path = /obj/item/clothing/under/solgov/utility/fleet/officer
 	cost = 0
-	allowed_branches = NT_BRANCHES
+	allowed_branches = FLEET_ONLY
 	allowed_roles = COMMANDANDOFFICER_ROLES
 
 /datum/gear/uniform/fleet/polopants
 	display_name = "fleet polo and pants uniform selection"
-	description = "An alternative utility uniform of NT's Expeditionary Fleet."
+	description = "An alternative utility uniform of the Solar Fleet."
 	path = /obj/item/clothing/under/solgov/utility/fleet/polopants
 	cost = 0
-	allowed_branches = NT_BRANCHES
+	allowed_branches = FLEET_ONLY
 
 /datum/gear/uniform/fleet/polopants/New()
 	..()
@@ -505,7 +483,7 @@
 	display_name = "Fleet cap"
 	path = /obj/item/clothing/head/soft/solgov/fleet
 	cost = 0
-	allowed_branches = NT_BRANCHES
+	allowed_branches = FLEET_ONLY
 
 /datum/gear/head/corpsecberet
 	display_name = "Corporate security beret selection"
@@ -522,39 +500,21 @@
 
 //################# AUGMENTS ###############################
 
-/datum/gear/augment/
+/datum/gear/augment
 	sort_category = "Augmentations"
 	category = /datum/gear/augment/
-	//slot = slot_tie /// not used, doesn't matter here ...?
 	implanted = TRUE
 
 /datum/gear/augment/implanted_surgical
-	display_name = "surgical polytool - left arm (ROBOTIC)"
-	path = /obj/item/organ/internal/augment/active/polytool/surgical/left
+	display_name = "surgical polytool"
+	path = /obj/item/organ/internal/augment/active/polytool/surgical
 	cost = 4
 	allowed_roles = STERILE_ROLES
 
-/datum/gear/augment/implanted_surgical/right
-	display_name = "surgical polytool - right arm (ROBOTIC)"
-	path = /obj/item/organ/internal/augment/active/polytool/surgical/right
-
 /datum/gear/augment/implanted_toolkit
-	display_name = "mechanical polytool - left arm (ROBOTIC)"
-	path = /obj/item/organ/internal/augment/active/polytool/engineer/left
+	display_name = "mechanical polytool"
+	path = /obj/item/organ/internal/augment/active/polytool/engineer
 	cost = 4
-
-/datum/gear/augment/implanted_toolkit/right
-	display_name = "mechanical polytool - right arm (ROBOTIC)"
-	path = /obj/item/organ/internal/augment/active/polytool/engineer/right
-
-/datum/gear/augment/implanted_circuitkit
-	display_name = "circuit augment - left arm (ROBOTIC)"
-	path = /obj/item/organ/internal/augment/active/simple/circuit/left
-	cost = 4
-
-/datum/gear/augment/implanted_circuitkit/right
-	display_name = "circuit augment - right arm (ROBOTIC)"
-	path = /obj/item/organ/internal/augment/active/simple/circuit/right
 
 ///###################### XENOWEAR #########################
 /datum/gear/clothing/skrell_uniform
@@ -562,4 +522,3 @@
 	path = /obj/item/clothing/under/skrelljumpsuit
 	whitelisted = list(SPECIES_SKRELL)
 	sort_category = "Xenowear"
-

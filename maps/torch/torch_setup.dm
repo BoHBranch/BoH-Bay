@@ -13,7 +13,7 @@
 /datum/map/torch/send_welcome()
 	var/obj/overmap/visitable/ship/torch = SSshuttle.ship_by_type(/obj/overmap/visitable/ship/torch)
 
-	var/welcome_text = "<center><img src = sollogo.png /><br />[FONT_LARGE("<b>SEV Torch</b> Sensor Readings:")]<br>"
+	var/welcome_text = "<center><img src = sollogo.png /><br />[FONT_LARGE("<b>SGV Dagon</b> Sensor Readings:")]<br>"
 	welcome_text += "Report generated on [stationdate2text()] at [stationtime2text()]</center><br /><br />"
 	welcome_text += "<hr>Current system:<br /><b>[torch ? system_name : "Unknown"]</b><br /><br>"
 
@@ -44,5 +44,5 @@
 
 		welcome_text += "<hr>"
 
-	post_comm_message("SEV Torch Sensor Readings", welcome_text)
+	post_comm_message("SGV Dagon Sensor Readings", welcome_text)
 	minor_announcement.Announce(message = "New [GLOB.using_map.company_name] Update available at all communication consoles.")

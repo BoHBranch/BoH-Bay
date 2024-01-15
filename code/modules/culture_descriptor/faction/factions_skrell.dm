@@ -23,9 +23,9 @@
 /singleton/cultural_info/faction/skrell/krrigli
 	name = FACTION_SKRELL_KRRIGLI
 	description = "Krri'gli is a Skrell aerospace manufacturing and research corporation from the city-state of Tibrivuu in the Go'kal system,\
-	and one of the more well known Skrell corporations in human space as a result of its contribution to the SEV Torch Project.\
+	and one of the more well known Skrell corporations in human space as a result of its contribution to the SGV Dagon Project.\
 	Krri'gli is mostly concerned with the design and construction of bluespace drives, and is one of the largest providers in the human side \
-	of Skrell space. Their participation in the Torch project is their first human venture, and has resulted in their sending science staff \
+	of Skrell space. Their participation in the Dagon project is their first human venture, and has resulted in their sending science staff \
 	as a part of the Expeditionary Corps Organization to provide expertise and gather mission data firsthand."
 	additional_langs = list(LANGUAGE_HUMAN_EURO)
 	economic_power = 1.5

@@ -12,10 +12,10 @@
 
 /singleton/cultural_info/faction/scg/fleet
 	name = FACTION_FLEET
-	description = "NanoTrasen Expeditionary Fleet also known as NTEF,\
+	description = "NanoTrasen SolGov Fleet also known as Fleet,\
 	remains one of the largest exploration, research and surveying fleets in all of Sol-Gov space.\
 	Their rise to prominence after the last near 20 years started with the sale of outdated SCG corvettes to NanoTrasen to be refitted into scientific exploration vessels.\
-	In recent years NTEF has varied in its application; while officially a research and exploration branch of NT\
+	In recent years Fleet has varied in its application; while officially a research and exploration branch of NT\
 	its operations appear to vary between that as described while doubling as a near paramilitary force for the corporation."
 	economic_power = 1.1
 

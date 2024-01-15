@@ -76,7 +76,7 @@ medals
 
 /obj/item/clothing/accessory/solgov/torch_patch
 	name = "\improper Dagon mission patch"
-	desc = "A fire resistant shoulder patch, worn by personnel aboard the NTSS Dagon."
+	desc = "A fire resistant shoulder patch, worn by personnel aboard the SGV Dagon."
 	icon_state = "torchpatch"
 	slot = ACCESSORY_SLOT_INSIGNIA
 	sprite_sheets = list(
@@ -88,14 +88,14 @@ patches
 *****/
 /obj/item/clothing/accessory/solgov/ec_patch
 	name = "\improper Observatory patch"
-	desc = "A laminated shoulder patch, carrying the symbol of the NanoTrasen Surveyor Corps, or NTSC for short, the eyes and ears of the Expeditionary Fleet's missions."
+	desc = "A laminated shoulder patch, carrying the symbol of the NanoTrasen Surveyor Corps, or NTSC for short, the eyes and ears of expeditionary missions."
 	icon_state = "ecpatch1"
 	slot = ACCESSORY_SLOT_INSIGNIA
 	check_codex_val = FACTION_FLEET
 
 /obj/item/clothing/accessory/solgov/ec_patch/fieldops
 	name = "\improper Field Operations patch"
-	desc = "A radiation-shielded shoulder patch, carrying the symbol of the NanoTrasen Surveyor Corps Field Operations, or NTSCFO for short, the hands-on workers of every Expeditionary Fleet mission."
+	desc = "A radiation-shielded shoulder patch, carrying the symbol of the NanoTrasen Surveyor Corps Field Operations, or NTSCFO for short, the hands-on workers of expeditionary missions."
 	icon_state = "ecpatch2"
 
 /obj/item/clothing/accessory/solgov/cultex_patch
@@ -106,37 +106,37 @@ patches
 	check_codex_val = FACTION_FLEET
 
 /obj/item/clothing/accessory/solgov/fleet_patch
-	name = "\improper First Fleet patch"
-	desc = "A fancy shoulder patch carrying insignia of NTEF's First Fleet."
+	name = "\improper Fleet patch"
+	desc = "A fancy shoulder patch carrying insignia of Solar Fleet."
 	icon_state = "fleetpatch1"
 	slot = ACCESSORY_SLOT_INSIGNIA
 
 /obj/item/clothing/accessory/solgov/fleet_patch/second
-	name = "\improper Second Fleet patch"
-	desc = "A well-worn shoulder patch carrying insignia of NTEF's Second Fleet."
+	name = "\improper Fleet Sol Defense patch"
+	desc = "A well-worn shoulder patch carrying insignia of Fleet's Sol Defense group."
 	icon_state = "fleetpatch2"
 
 /obj/item/clothing/accessory/solgov/fleet_patch/third
-	name = "\improper Third Fleet patch"
-	desc = "A scuffed shoulder patch carrying insignia of NTEF's Third Fleet."
+	name = "\improper Fleet Border Patrol patch"
+	desc = "A scuffed shoulder patch carrying insignia of Fleet's Border Patrol group."
 	icon_state = "fleetpatch3"
 
 /obj/item/clothing/accessory/solgov/fleet_patch/fourth
-	name = "\improper Fourth Fleet patch"
-	desc = "A pristine shoulder patch carrying insignia of NTEF's Fourth Fleet."
+	name = "\improper Fleet Naval Group 40 patch"
+	desc = "A pristine shoulder patch carrying insignia of Fleet's Naval Group 40."
 	icon_state = "fleetpatch4"
 
 /obj/item/clothing/accessory/solgov/fleet_patch/fifth
-	name = "\improper Fifth Fleet patch"
-	desc = "A tactical shoulder patch carrying insignia of NTEF's Fifth Fleet."
+	name = "\improper Fleet Special Operations Group patch"
+	desc = "A tactical shoulder patch carrying insignia of Fleet's Special Operations group."
 	icon_state = "fleetpatch5"
 
 /*****
 scarves
 *****/
 /obj/item/clothing/accessory/solgov/ec_scarf
-	name = "expeditionary scarf"
-	desc = "An SCG blue silk scarf, meant to be worn with Surveyor Corps uniforms."
+	name = "fleet scarf"
+	desc = "An SCG blue silk scarf, meant to be worn with Fleet uniforms."
 	icon = 'icons/obj/clothing/obj_accessories.dmi'
 	accessory_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_accessories.dmi', slot_wear_suit_str = 'icons/mob/onmob/onmob_accessories.dmi')
 	icon_state = "whitescarf"
@@ -145,12 +145,12 @@ scarves
 
 /obj/item/clothing/accessory/solgov/ec_scarf/observatory
 	name = "\improper Observatory scarf"
-	desc = "A silk scarf in Expeditionary Corps Observatory section colors, meant to be worn with Expeditionary Fleet uniforms."
+	desc = "A silk scarf in Surveyor Corps Observatory section colors."
 	color = "#58bb59"
 
 /obj/item/clothing/accessory/solgov/ec_scarf/fieldops
 	name = "\improper Field Operations scarf"
-	desc = "A silk scarf in Expeditionary Corps Field Operations section colors, meant to be worn with Expeditionary Fleet uniforms."
+	desc = "A silk scarf in Surveyor Corps Field Operations section colors."
 	color = "#9f84b3"
 
 /******
@@ -330,7 +330,7 @@ armour attachments
 
 /obj/item/clothing/accessory/armor_tag/solgov/ec
 	name = "\improper Expeditionary Corps crest"
-	desc = "An emblem depicting the crest of the NanoTrasen Expeditionary Fleet."
+	desc = "An emblem depicting the crest of the NanoTrasen SolGov Fleet."
 	icon_state = "ecflag"
 
 /obj/item/clothing/accessory/armor_tag/solgov/sec
@@ -389,10 +389,6 @@ department tags
 	icon_state = "dept_fleet"
 	desc = "Insignia denoting assignment to the command department. These fit Fleet uniforms."
 
-/obj/item/clothing/accessory/solgov/department/command/army
-	icon_state = "dept_army"
-	desc = "Insignia denoting assignment to the command department. These fit Marine uniforms."
-
 /obj/item/clothing/accessory/solgov/department/engineering
 	name = "engineering insignia"
 	desc = "Insignia denoting assignment to the engineering department. These fit Surveyor Corps uniforms."
@@ -415,14 +411,13 @@ department tags
 /obj/item/clothing/accessory/solgov/department/security
 	name = "security insignia"
 	desc = "Insignia denoting assignment to the security department. These fit Surveyor Corps uniforms."
-	color = "#0c6bb0"
+	color = "#bf0000"
 
 /obj/item/clothing/accessory/solgov/department/security/service
 	icon_state = "dept_exped_service"
 
 /obj/item/clothing/accessory/solgov/department/security/jumper
 	icon_state = "dept_exped_jumper"
-	color = "#721b1b"
 
 /obj/item/clothing/accessory/solgov/department/security/fleet
 	icon_state = "dept_fleet"

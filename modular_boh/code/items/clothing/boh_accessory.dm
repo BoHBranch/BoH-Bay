@@ -15,9 +15,10 @@
 	icon_state = "smcpatch13"
 
 // Sixth Fleet Patch, as for bonus
+// WE DON'T HAVE LORE FOR THIS, WHY ARE YOU DOING THIS TO ME -PurplePineapple
 /obj/item/clothing/accessory/solgov/fleet_patch/sixth
 	name = "\improper Sixth Fleet patch"
-	desc = "A robust shoulder patch carrying insignia of Sixth Fleet."
+	desc = "A robust shoulder patch carrying insignia of the Sixth Fleet."
 	icon = 'modular_boh/icon/obj/obj_accessories_boh.dmi'
 	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icon/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'modular_boh/icon/mob/onmob_cloak.dmi')
 	icon_state = "fleetpatch6"
@@ -27,12 +28,12 @@
 	name = "\improper NANOTRASEN patch"
 	desc = "An armor tag with the words NANOTRASEN printed in bottle green lettering on it."
 
-// Dog Tags badge string rename, plus added for SMC and NTEF.
+// Dog Tags badge string rename, plus added for SMC and Fleet.
 /obj/item/clothing/accessory/badge/solgov/tags
-	badge_string = "NTSS Dagon"
+	badge_string = "SGV Dagon"
 
 /obj/item/clothing/accessory/badge/solgov/tags/fleet
-	badge_string = "NTEF"
+	badge_string = "SGF"
 
 /obj/item/clothing/accessory/badge/solgov/tags/marine
 	badge_string = "SMC"
@@ -50,6 +51,11 @@
 /obj/item/clothing/accessory/solgov/specialty/enlisted/explorer
 	name = "explorer qualification pin"
 
+// icon path for hestia stuff
+/obj/item/clothing/accessory/solgov/rank
+	icon = 'modular_boh/icon/obj/obj_accessories_boh.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icon/mob/onmob_accessories_solgov.dmi', slot_wear_suit_str = 'modular_boh/icon/mob/onmob_accessories_solgov.dmi')
+
 /obj/item/clothing/accessory/solgov/rank/ec/enlisted
 	name = "ranks (E-1 recruit explorer)"
 	desc = "Insignia denoting the rank of Recruit Explorer."
@@ -58,11 +64,9 @@
 	name = "ranks (E-2 junior explorer)"
 	desc = "Insignia denoting the rank of Junior Explorer."
 
-// NTEF ranks. Icon overrides for now (useless on-mob, but good for in-hand/dropped or on examine).
+// Fleet ranks. Icon overrides for now (useless on-mob, but good for in-hand/dropped or on examine).
 /obj/item/clothing/accessory/solgov/rank/fleet
 	icon_state = "FE0"
-	overlay_state = "fleetrank_enlisted"
-	icon = 'modular_boh/icon/obj/obj_accessories_boh.dmi'
 
 /obj/item/clothing/accessory/solgov/rank/fleet/enlisted
 	icon_state = "FE1"
@@ -91,7 +95,6 @@
 /obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9
 	icon_state = "FE9"
 
-// Damn it, Bay. Why you put alts not as object subpath for easier icon handling?
 /obj/item/clothing/accessory/solgov/rank/fleet/enlisted/e9_alt1
 	icon_state = "FE9"
 
@@ -105,10 +108,6 @@
 	icon_state = "FE9"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer
-	icon_state = "FW0"
-	overlay_state = "fleetrank_warrant_gold"
-
-/obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w1
 	icon_state = "FW1"
 	name = "ranks (W-1 junior warrant officer"
 	desc = "Insignia denoting the rank of Junior Warrant Officer"
@@ -120,25 +119,21 @@
 
 /obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w3
 	icon_state = "FW3"
-	overlay_state = "fleetrank_warrant_silver"
 	name = "ranks (W-3 senior chief warrant officer"
 	desc = "Insignia denoting the rank of Senior Chief Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w4
 	icon_state = "FW4"
-	overlay_state = "fleetrank_warrant_silver"
 	name = "ranks (W-4 master chief warrant officer"
 	desc = "Insignia denoting the rank of Master Chief Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w5
 	icon_state = "FW5"
-	overlay_state = "fleetrank_warrant_stripe"
 	name = "ranks (W-5 command master chief warrant officer"
 	desc = "Insignia denoting the rank of Command Master Chief Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/officer
 	icon_state = "FO1"
-	overlay_state = "fleetrank_officer"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/officer/wo1_monkey
 	icon_state = "MO1"
@@ -161,11 +156,9 @@
 
 /obj/item/clothing/accessory/solgov/rank/fleet/officer/o6
 	icon_state = "FO6"
-	overlay_state = "fleetrank_command"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/flag/o7
 	icon_state = "FO7"
-	overlay_state = "fleetrank_command"
 
 /obj/item/clothing/accessory/solgov/rank/fleet/flag/o8
 	icon_state = "FO8"
@@ -184,7 +177,6 @@
 	icon_state = "ME0"
 	name = "marine ranks"
 	desc = "Insignia denoting marine rank of some kind. These appear blank."
-	overlay_state = "armyrank_enlisted"
 	icon = 'modular_boh/icon/obj/obj_accessories_boh.dmi'
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted
@@ -248,10 +240,6 @@
 	desc = "Insignia denoting the rank of Sergeant Major of the Marine Corps."
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer
-	icon_state = "MW0"
-	overlay_state = "armyrank_warrant_gold"
-
-/obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w1
 	icon_state = "MW1"
 	name = "ranks (W-1 second warrant officer)"
 	desc = "Insignia denoting the rank of Second Warrant Officer"
@@ -263,25 +251,21 @@
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w3
 	icon_state = "MW3"
-	overlay_state = "armyrank_warrant_silver"
 	name = "ranks (W-3 master warrant officer)"
 	desc = "Insignia denoting the rank of Master Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w4
 	icon_state = "MW4"
 	name = "ranks (W-4 major warrant officer)"
-	overlay_state = "armyrank_warrant_silver"
 	desc = "Insignia denoting the rank of Major Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w5
 	icon_state = "MW5"
-	overlay_state = "armyrank_warrant_stripe"
 	name = "ranks (W-5 general warrant officer)"
 	desc = "Insignia denoting the rank of General Warrant Officer"
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/officer
-	icon_state = "MO1A"
-	overlay_state = "armyrank_officer"
+	icon_state = "MO1A" //Punitelli is the true MO1
 	name = "ranks (O-1 second lieutenant)"
 	desc = "Insignia denoting the rank of Second Lieutenant."
 
@@ -322,10 +306,8 @@
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/flag
 	icon_state = "MO7"
-	overlay_state = "armyrank_command"
 	name = "ranks (O-7 brigadier general)"
 	desc = "Insignia denoting the rank of Brigadier General."
-	icon_state = "armyrank_command"
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/flag/o8
 	icon_state = "MO8"

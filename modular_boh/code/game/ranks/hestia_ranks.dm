@@ -30,7 +30,7 @@
 	/datum/mil_rank/marine_corps/o2,\
 	/datum/mil_rank/marine_corps/o3,\
 	)
-#define NTEF_ENLISTED_ONLY /datum/mil_branch/fleet = list(\
+#define FLEET_ENLISTED_ONLY /datum/mil_branch/fleet = list(\
 	/datum/mil_rank/fleet/e1, \
 	/datum/mil_rank/fleet/e2, \
 	/datum/mil_rank/fleet/e3, \
@@ -129,9 +129,9 @@
 	)
 
 /datum/mil_branch/fleet
-	name = "Expeditionary Fleet"
-	name_short = "NTEF"
-	email_domain = "dagon.ef.nt"
+	name = "Solar Fleet"
+	name_short = "SGF"
+	email_domain = "dagon.sgf.mil"
 
 	rank_types = list(
 		/datum/mil_rank/fleet/e1,
@@ -195,7 +195,7 @@
 /datum/mil_branch/marine_corps
 	name = "Solar Marine Corps"
 	name_short = "SMC"
-	email_domain = "dagon.smc.mil"
+	email_domain = "dagon..mil"
 
 // Uses SCG Army's uniforms, at least for now.
 	rank_types = list(
@@ -259,7 +259,7 @@
 						SKILL_COMBAT  = SKILL_BASIC)
 
 /*
- *  Fleet (NTEF Override)
+ *  Fleet
  *  =====
  */
 /datum/mil_rank/fleet/e1
@@ -356,7 +356,7 @@
 /datum/mil_rank/fleet/w1
 	name = "Junior Warrant Officer"
 	name_short = "JWO"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer/w1)
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/warrant_officer)
 	sort_order = 11
 
 /datum/mil_rank/fleet/w2
@@ -552,7 +552,7 @@
 /datum/mil_rank/marine_corps/w1
 	name = "Second Warrant Officer"
 	name_short = "2ndWO"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer/w1)
+	accessory = list(/obj/item/clothing/accessory/solgov/rank/marine_corps/warrant_officer)
 	sort_order = 11
 
 /datum/mil_rank/marine_corps/w2
@@ -714,5 +714,5 @@
 #undef SEMIRESTRICTED
 #undef SMC_TROOPERS_ONLY
 #undef SMC_LIMITED_RANKS
-#undef NTEF_ENLISTED_ONLY
+#undef FLEET_ENLISTED_ONLY
 #undef SOLGOV_NO_SFP

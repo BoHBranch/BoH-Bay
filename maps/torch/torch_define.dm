@@ -1,6 +1,6 @@
 /datum/map/torch
-	name = "\improper Torch"
-	full_name = "\improper SEV Torch"
+	name = "\improper Dagon"
+	full_name = "\improper SGV Dagon"
 	path = "torch"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 	config_path = "config/torch_config.txt"
@@ -11,28 +11,28 @@
 	accessible_z_levels = list("1"=1,"2"=3,"3"=1,"4"=1,"5"=1,"6"=1,"9"=30)
 	overmap_size = 35
 	overmap_event_areas = 34
-	usable_email_tlds = list("torch.ec.scg", "torch.fleet.mil", "freemail.net", "torch.scg")
+	usable_email_tlds = list("dagon.nt.exp", "dagon.sec", "freemail.net", "dagon.exp")
 
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
 
-	station_name  = "\improper SEV Torch"
-	station_short = "\improper Torch"
+	station_name  = "\improper SGV Dagon"
+	station_short = "\improper Dagon"
 	dock_name     = "TBD"
-	boss_name     = "Expeditionary Command"
-	boss_short    = "Command"
-	company_name  = "Sol Central Government"
-	company_short = "SolGov"
+	boss_name     = "Strategic Command"
+	boss_short    = "STRATCOM"
+	company_name  = "SolGov"
+	company_short = "SG"
 
 	map_admin_faxes = list(
-		"Expeditionary Corps Command",
-		"Expeditionary Corps Logistics",
-		"EXO Head Office",
-		"EXO Internal Affairs",
+		"Office of Military Operations",
+		"Solar Fleet Mars Command",
+		"Solar Marine Corps Mars Command",
+		"NanoTrasen Head Office",
+		"Office of Corporate Contractors",
 		"SFP Territory Support",
 		"SFP Special Investigations",
 		"SFP Fugitive Recovery",
-		"Sol Fleet Mars Command",
 		"Bureau of Diplomatic Affairs",
 		"Emergency Management Bureau",
 		"Secure Routing Service"

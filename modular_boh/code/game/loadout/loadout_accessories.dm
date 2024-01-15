@@ -28,7 +28,7 @@
 /datum/gear/accessory/solawardminor/New()
 	..()
 	var/solminors = list()
-	solminors["surveyor Corps medal"] = /obj/item/clothing/accessory/medal/solgov/iron/sol
+	solminors["iron star medal"] = /obj/item/clothing/accessory/medal/solgov/iron/sol
 	solminors["operations medal"] = /obj/item/clothing/accessory/medal/solgov/bronze/sol
 	solminors["frontier ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/frontier
 	solminors["instructor ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/instructor
@@ -40,23 +40,23 @@
 	custom_setup_proc = /obj/item/clothing/accessory/badge/solgov/tags/proc/loadout_setup
 
 /datum/gear/accessory/ec_scarf
-	display_name = "surveyor Corps scarf"
+	display_name = "surveyor corps scarf"
 	path = /obj/item/clothing/accessory/solgov/ec_scarf
 	description = "A section-specific scarf for Surveryor Corps uniforms."
 	flags = GEAR_HAS_TYPE_SELECTION
-	allowed_branches = NT_BRANCHES
+	allowed_branches = FLEET_ONLY
 
 /datum/gear/accessory/ec_patch
-	display_name = "surveyor Corps patch"
+	display_name = "surveyor corps patch"
 	path = /obj/item/clothing/accessory/solgov/ec_patch
 	description = "A shoulder patch representing the Surveyor Corps."
 	flags = GEAR_HAS_TYPE_SELECTION
-	allowed_branches = NT_BRANCHES
+	allowed_branches = FLEET_ONLY
 
 /datum/gear/accessory/torch_patch
 	display_name = "dagon mission patch"
 	path = /obj/item/clothing/accessory/solgov/torch_patch
-	description = "A shoulder patch representing the NTSS Dagon and its mission. Given to all the oddjobs pulled from various branches to work on the Dagon."
+	description = "A shoulder patch representing the SGV Dagon and its mission. Given to all the oddjobs pulled from various branches to work on the Dagon."
 
 /datum/gear/accessory/pilot_pin
 	display_name = "pilot's qualification pin"
@@ -68,7 +68,7 @@
 	display_name = "fleet patch"
 	path = /obj/item/clothing/accessory/solgov/fleet_patch
 	flags = GEAR_HAS_TYPE_SELECTION
-	allowed_branches = NT_BRANCHES
+	allowed_branches = FLEET_ONLY
 
 /datum/gear/accessory/armband_ma
 	display_name = "master at arms brassard"

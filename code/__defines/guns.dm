@@ -15,6 +15,7 @@
 #define CALIBER_CAPS			"caps"
 #define CALIBER_DART			"darts"
 #define CALIBER_SABOT			"10g sabot"
+#define CALIBER_ROCKET			"missile"
 #define CALIBER_SKRELL_SHOTGUN	"skrell-gauge"
 
 #define HOLD_CASINGS	0 //do not do anything after firing. Manual action, like pump shotguns, or guns that want to define custom behaviour

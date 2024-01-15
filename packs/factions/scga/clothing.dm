@@ -279,8 +279,8 @@
 
 
 /obj/item/clothing/shoes/scga/utility
-	name = "duty boots, SCGA"
-	desc = "Hardy, strong soled boots in jungle-beige camouflage configuration. Part of the solar army uniform."
+	name = "jungle boots"
+	desc = "Hardy, strong soled boots in jungle-beige camouflage configuration."
 	icon_state = "boots_utility"
 	item_state_slots = list(
 		slot_l_hand_str = "boots_utility_held_l",
@@ -299,8 +299,8 @@
 
 
 /obj/item/clothing/shoes/scga/utility/tan
-	name = "tan duty boots, SCGA"
-	desc = "Hardy, strong soled boots in dusty-tan camouflage configuration. Part of the solar army uniform."
+	name = "desert boots"
+	desc = "Hardy, strong soled boots in dusty-tan camouflage configuration."
 	icon_state = "boots_utility_tan"
 	item_state_slots = list(
 		slot_l_hand_str = "boots_utility_tan_held_l",

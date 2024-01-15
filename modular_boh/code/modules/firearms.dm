@@ -329,42 +329,93 @@
 /////////
 // Recoilless Rifle
 /////////
-/obj/item/gun/launcher/rocket/recoilless
-	name = "TVP-2"
+/obj/item/gun/projectile/rocket/recoilless
+	name = "recoilless rifle"
 	desc = "A TVP-2 anti-armor recoilless rifle. Truly an anachronism of another time. \
 	This specific model was designed to fire incendiary charges. Said charges have a minor explosive charge, with an incredibly powerful, though small, incendiary powder of sorts. \
 	Hopefully it's still working after all this time, because, by god, this looks like an old relic. \
 	What doesn't look like a relic, however, is the rather large optic mounted atop the rifle."
-	icon = 'modular_boh/icon/boh/items/launchers.dmi'
+	icon = 'modular_boh/icon/obj/guns/launchers64.dmi'
 	icon_state = "recoilless"
 	item_state = "recoilless"
-	wielded_item_state = "gun_wielded"
+	wielded_item_state = "recoilless_wielded"
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5)
-	base_parry_chance = 10
+	ammo_type = /obj/item/ammo_casing/rocket/rcr
+
+/obj/item/gun/projectile/rocket/recoilless/on_update_icon()
+	..()
+	if(length(loaded))
+		icon_state = initial(icon_state)
+	else
+		icon_state = "[initial(icon_state)]-empty"
+		item_state = "[initial(icon_state)]-empty"
+
+/obj/item/gun/projectile/rocket/recoilless/sec
+	name = "TVP-3"
+	desc = "An odd version of what the original was, this is slightly different from what the TVP-2 stood for. This incorporates a hefty locking system, increasing the weight, though ensuring safety aboard a vessel."
 	req_access = list(access_infantry)
 	authorized_modes = list(UNAUTHORIZED) //can't be registered, but that doesn't matter as this prevents firing regardless
-
 	firemodes = list(
 		list(mode_name="fire", burst=1, fire_delay=null, move_delay=null, one_hand_penalty=12, burst_accuracy=null, dispersion=null),
 		)
 
-/obj/item/gun/launcher/rocket/recoilless/attackby(obj/item/I as obj, mob/user as mob)
-	if(istype(I, /obj/item/ammo_casing/rocket/rcr))
-		if(rockets.len < max_rockets)
-			if(!user.unEquip(I, src))
-				return
-			rockets += I
-			to_chat(user, "<span class='notice'>you carefully slide the shell into the [src].</span>")
-			to_chat(user, "<span class='notice'>[rockets.len] / [max_rockets] shells.</span>")
-		else
-			to_chat(usr, "<span class='warning'>\The [src] cannot hold more than one shell, for obvious reasons.</span>")
-
+/obj/item/gun/projectile/rocket/recoilless/sec/free_fire()
+	var/my_z = get_z(src)
+	if(!GLOB.using_map.station_levels.Find(my_z))
+		return TRUE
+	return ..()
 
 /obj/item/gun/launcher/rocket/recoilless/free_fire()
 	var/my_z = get_z(src)
 	if(!GLOB.using_map.station_levels.Find(my_z))
 		return TRUE
 	return ..()
+
+/////////
+// Disposable RPG
+/////////
+
+/obj/item/gun/projectile/rocket/oneuse // One time use RPGs.
+	slot_flags = SLOT_BACK|SLOT_BELT
+	icon = 'modular_boh/icon/obj/guns/launchers64.dmi' // RPG file for big boy RPGs.
+	icon_state = "disposable_marine"
+	item_state = "disposable_marine"
+	 // As a note, you can technically reload these, but you need an admin to spawn you the ammo, which is better than having them spawn you the rocket THEN delete the old one.
+	ammo_type = /obj/item/ammo_casing/oneuse_rocket
+	ununloadable = TRUE
+	var/folded = 1
+
+//Unfolds/folds the RPG.
+/obj/item/gun/projectile/rocket/oneuse/attack_self(mob/user)
+	if(folded)
+		playsound(src.loc,'modular_boh/sounds/weapons/rpgoneuse_deploying.ogg',80, 0)
+		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
+		if(do_after(usr, 30, src))
+			usr.visible_message("<span class='notice'>\The [usr] extends [src].</span>", "<span class='notice'>You deploy the [src]</span>")
+			folded = FALSE
+			icon_state = "[icon_state]_deployed"
+			item_state = "[item_state]_deployed"
+			slot_flags = null
+	else
+		playsound(src.loc,'modular_boh/sounds/weapons/rpgoneuse_deploying.ogg',80, 0)
+		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
+		if(do_after(usr, 30, src))
+			usr.visible_message("<span class='notice'>\The [usr] folds the [src].</span>", "<span class='notice'>You fold the [src]</span>")
+			folded = TRUE
+			icon_state = initial(icon_state)
+			item_state = initial(item_state)
+			slot_flags = SLOT_BACK|SLOT_BELT
+
+// Tells the player to deploy it, dummy.
+/obj/item/gun/projectile/rocket/oneuse/special_check(mob/user)
+	if(folded)
+		to_chat(user, "You can't fire this in this state! Deploy it!")
+		return 0
+	return ..()
+
+/obj/item/gun/projectile/rocket/oneuse/marine // Not to be confused with a disposable marine
+	name = "L-19 disposable rocket launcher"
+	desc = "A disposable use rocket launcher, better known as an RPG well known around SolGov space, used by many people and many folk to blow things sky high. It cannot be unloaded or reloaded without specialized tools and is meant to be disposed once used. This is one is a licensed version, known as the Lance 19 for the SMC."
 
 /////////
 // SL Shotgun
@@ -394,19 +445,19 @@
 
 /obj/item/gun/projectile/revolver/medium/captain/large
 	name = "Ultimate Argument"
-	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Up-chambered for a .454 calibre round. This one has 'To the Captain of the NTSS Dagon' engraved on the grip."
+	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Up-chambered for a .454 calibre round. This one has 'To the Captain of the SGV Dagon' engraved on the grip."
 	ammo_type = /obj/item/ammo_casing/pistol/magnum/large
 	caliber = CALIBER_PISTOL_MAGNUM_LARGE
 
 /obj/item/gun/projectile/revolver/medium/captain/large/xo
 	name = "Final Argument"
-	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Executive of the NTSS Dagon' engraved on the grip."
+	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Executive of the SGV Dagon' engraved on the grip."
 	ammo_type = /obj/item/ammo_casing/pistol/magnum
 	caliber = CALIBER_PISTOL_MAGNUM
 
 /obj/item/gun/projectile/pistol/magnum_pistol/solar
 	name = "Eagle"
-	desc = "The HI Eagle, a reverse engineered HT Magnus. This one has 'To the Chief of Security aboard the NTSS Dagon' engraved"
+	desc = "The HI Eagle, a reverse engineered HT Magnus. This one has 'To the Chief of Security aboard the SGV Dagon' engraved"
 	magazine_type = /obj/item/ammo_magazine/magnum/rubber
 	starts_loaded = 1
 

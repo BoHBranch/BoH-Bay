@@ -49,16 +49,6 @@
 		style = ORGAN_STYLE
 		if (ORGAN_STYLE_OK)
 			return organ
-	if (augment_slots & AUGMENT_ARM_L)
-		if (!organs["[BP_L_ARM]_aug"] && (organ = organs[BP_L_ARM]))
-			style = ORGAN_STYLE
-		if (ORGAN_STYLE_OK)
-			return organ
-	if (augment_slots & AUGMENT_ARM_R)
-		if (!organs["[BP_R_ARM]_aug"] && (organ = organs[BP_R_ARM]))
-			style = ORGAN_STYLE
-		if (ORGAN_STYLE_OK)
-			return organ
 	if (augment_slots & AUGMENT_ARM)
 		if (!organs["[BP_L_ARM]_aug"] && (organ = organs[BP_L_ARM]))
 			style = ORGAN_STYLE

@@ -11,12 +11,13 @@
 	job_access_type = /datum/job/combat_tech
 	detail_color = COLOR_SUN
 
+/obj/item/card/id/torch/crew/infantry/infmed
+	job_access_type = /datum/job/combat_medic
+	detail_color = COLOR_NAVY_BLUE
+
 /obj/item/card/id/torch/crew/psiadvisor
 	job_access_type = /datum/job/psiadvisor
 	detail_color = COLOR_COMMAND_BLUE
-
-/obj/item/card/id/torch/crew/research/roboticist
-	job_access_type = /datum/job/roboticist
 
 /obj/item/card/id/torch/crew/representative_guard
 	job_access_type = /datum/job/sfpagent

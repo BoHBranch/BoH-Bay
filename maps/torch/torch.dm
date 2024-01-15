@@ -210,7 +210,6 @@
 	#include "../../modular_boh/code/items/clothing/solgov-under.dm"
 	#include "../../modular_boh/maps/boh_areas.dm"
 	#include "../../modular_boh/loadouts/custom_loadouts.dm"
-	#include "../../modular_boh/loadouts/custom_loadouts_helpers.dm"
 	#include "../../modular_boh/code/modules/culture_descriptor/culture/cultures_human.dm"
 	#include "../../modular_boh/code/modules/culture_descriptor/faction/factions_human.dm"
 	#include "../../modular_boh/code/modules/culture_descriptor/location/locations_human.dm"

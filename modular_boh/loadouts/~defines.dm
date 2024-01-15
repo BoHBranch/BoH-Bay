@@ -42,7 +42,7 @@
 
 #undef TACTICOOL_BRANCHES
 
-#undef NT_BRANCHES
+#undef FLEET_ONLY
 
 #undef MILITARY_BRANCHES
 

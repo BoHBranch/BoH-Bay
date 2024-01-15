@@ -1,5 +1,5 @@
 /************
-* SEV Torch *
+* SGV Dagon *
 ************/
 var/global/const/access_hangar = "ACCESS_TORCH_HANGAR" //73
 /datum/access/hangar

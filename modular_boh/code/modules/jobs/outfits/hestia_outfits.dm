@@ -30,9 +30,6 @@
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/security
 	shoes = /obj/item/clothing/shoes/dutyboots
 
-/singleton/hierarchy/outfit/job/torch/crew/command/sea/fleet
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/command
-
 /singleton/hierarchy/outfit/job/torch/crew/command/bridgeofficer/marine
 	name = OUTFIT_JOB_NAME("Bridge Officer - Marine Corps")
 	uniform = /obj/item/clothing/under/solgov/utility/army/command
@@ -335,10 +332,24 @@
 
 /singleton/hierarchy/outfit/job/torch/crew/infantry/combat_tech
 	name = OUTFIT_JOB_NAME("Combat Technician")
-	uniform = /obj/item/clothing/under/solgov/utility/army/exploration
+	uniform = /obj/item/clothing/under/solgov/utility/army/engineering
 	id_types = list(/obj/item/card/id/torch/crew/infantry/inftech)
 	pda_type = /obj/item/modular_computer/pda/engineering
 	l_ear = /obj/item/device/radio/headset/inftech
+
+/singleton/hierarchy/outfit/job/torch/crew/infantry/combat_medic
+	name = OUTFIT_JOB_NAME("Combat Medic")
+	uniform = /obj/item/clothing/under/solgov/utility/army/medical
+	id_types = /obj/item/card/id/torch/crew/infantry/infmed
+	pda_type = /obj/item/modular_computer/pda/medical
+	l_ear = /obj/item/device/radio/headset/infantry
+
+/singleton/hierarchy/outfit/job/torch/crew/infantry/combat_medic/fleet
+	name = OUTFIT_JOB_NAME("Combat Medic - Fleet")
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/combat/medical
+	id_types = /obj/item/card/id/torch/crew/infantry/infmed
+	pda_type = /obj/item/modular_computer/pda/medical
+	l_ear = /obj/item/device/radio/headset/infantry
 
 //### SEA
 
@@ -360,17 +371,26 @@
 
 //## RESEARCH ROBOTICIST
 
-/singleton/hierarchy/outfit/job/torch/crew/research/roboticist
+/singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	name = OUTFIT_JOB_NAME("Roboticist - Torch")
 	uniform = /obj/item/clothing/under/rank/roboticist
 	shoes = /obj/item/clothing/shoes/black
-	id_types = list(/obj/item/card/id/torch/crew/research/roboticist)
+	id_types = list(/obj/item/card/id/torch/contractor/engineering/roboticist)
 	pda_type = /obj/item/modular_computer/pda/roboticist
 
-/singleton/hierarchy/outfit/job/torch/crew/research/roboticist/fleet
-	name = OUTFIT_JOB_NAME("Roboticist - NTEF")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/exploration
+/singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist/fleet
+	name = OUTFIT_JOB_NAME("Roboticist - Fleet")
+	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
 	shoes = /obj/item/clothing/shoes/dutyboots
+	id_types = list(/obj/item/card/id/torch/contractor/engineering/roboticist)
+	pda_type = /obj/item/modular_computer/pda/roboticist
+
+/singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist/marine
+	name = OUTFIT_JOB_NAME("Roboticist - Marine")
+	uniform = /obj/item/clothing/under/solgov/utility/army/engineering
+	shoes = /obj/item/clothing/shoes/dutyboots
+	id_types = list(/obj/item/card/id/torch/contractor/engineering/roboticist)
+	pda_type = /obj/item/modular_computer/pda/roboticist
 
 //Federal Protection Agent
 
@@ -382,3 +402,30 @@
 	shoes = /obj/item/clothing/shoes/dress
 	id_types = list(/obj/item/card/id/torch/crew/representative_guard)
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
+
+//Asset Protection Agent (for CL)
+
+/singleton/hierarchy/outfit/job/torch/passenger/corporate_bodyguard
+	name = OUTFIT_JOB_NAME("Asset Protection Agent")
+	l_ear =    /obj/item/device/radio/headset/heads/torchcorp
+	uniform =  /obj/item/clothing/under/suit_jacket/corp
+	shoes =    /obj/item/clothing/shoes/laceup
+	id_types = list( /obj/item/card/id/torch/passenger/corporate)
+	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
+
+/singleton/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc
+	name = OUTFIT_JOB_NAME("Asset Protection Agent - PCRC Contractor")
+	uniform = /obj/item/clothing/under/pcrc
+	shoes = /obj/item/clothing/shoes/dutyboots
+	backpack_contents = list(/obj/item/clothing/accessory/armor_tag/pcrc = 1, /obj/item/clothing/accessory/helmet_cover/pcrc = 1)
+
+/singleton/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc/agent
+	name = OUTFIT_JOB_NAME("Asset Protection Agent - PCRC Agent")
+	uniform = /obj/item/clothing/under/pcrcsuit
+	shoes = /obj/item/clothing/shoes/laceup
+
+/singleton/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/saare
+	name = OUTFIT_JOB_NAME("Asset Protection Agent - SAARE")
+	uniform = /obj/item/clothing/under/saare
+	shoes = /obj/item/clothing/shoes/dutyboots
+	backpack_contents = list(/obj/item/clothing/accessory/armor_tag/saare = 1, /obj/item/clothing/accessory/helmet_cover/saare = 1)

@@ -1,5 +1,5 @@
 /datum/game_mode/traitor
-	extended_round_description = "The successes of the SEV Torch's past missions have marked the ship as \
+	extended_round_description = "The successes of the SGV Dagon's past missions have marked the ship as \
 	a highly valuable target for many organizations and individuals. The varied pasts \
 	and experiences of the crew have left them susceptible to the vices and temptations of humanity. \
 	Are you in the safe self-contained workplace you once thought it was, or has it become a playground \

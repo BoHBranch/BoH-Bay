@@ -51,7 +51,7 @@ body:
         Client Version: 514
         Server Revision: 34bf3ff6a39a09848d5552e0486c0f0fedb58fc9 - dev - 2022-08-06
         Game ID: cji-cImG
-        Current map: SEV Torch
+        Current map: SGV Dagon
     validations:
       required: true
   - type: checkboxes

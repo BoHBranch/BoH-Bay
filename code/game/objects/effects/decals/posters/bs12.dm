@@ -292,7 +292,7 @@
 /singleton/poster/fleet
 	icon_state="poster_fleet"
 	name = "SCGF recruitment poster"
-	desc = "A poster produced by the SCGF. It depicts a tactical-looking Fourth Fleet petty officer, standing in front of the SCG flag proudly."
+	desc = "A poster produced by the SCGF. It depicts a tactical-looking Naval Group 40 petty officer, standing in front of the SCG flag proudly."
 
 /singleton/poster/annoyed_gas
 	icon_state = "annoyed_gas"

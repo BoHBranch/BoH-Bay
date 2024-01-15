@@ -33,16 +33,16 @@ var/const/INF               =(1<<11)
 	economic_power = 7
 	skill_points = 26
 	minimum_character_age = list(SPECIES_HUMAN = 25)
-	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_TRAINED,
 						SKILL_EVA         = SKILL_TRAINED,
 						SKILL_PILOT       = SKILL_BASIC,
 						SKILL_COMBAT      = SKILL_TRAINED,
 						SKILL_WEAPONS     = SKILL_TRAINED)
 
-	max_skill = list(	SKILL_COMBAT      = SKILL_MASTER,
-						SKILL_WEAPONS     = SKILL_MASTER,
-						SKILL_EVA		  = SKILL_EXPERIENCED,
-						SKILL_HAULING     = SKILL_MASTER)
+	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
+						SKILL_WEAPONS     = SKILL_MAX,
+						SKILL_EVA		  = SKILL_MAX,
+						SKILL_HAULING     = SKILL_MAX)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
@@ -72,19 +72,16 @@ var/const/INF               =(1<<11)
 	minimum_character_age = list(SPECIES_HUMAN = 20)
 	min_skill = list(	SKILL_CONSTRUCTION = SKILL_TRAINED,
 						SKILL_ELECTRICAL   = SKILL_TRAINED,
-						SKILL_MEDICAL      = SKILL_BASIC,
 						SKILL_COMBAT       = SKILL_TRAINED,
 						SKILL_WEAPONS      = SKILL_TRAINED)
 
-	max_skill = list(	SKILL_COMBAT       = SKILL_EXPERIENCED,
-						SKILL_WEAPONS      = SKILL_MASTER,
-						SKILL_EVA		   = SKILL_EXPERIENCED,
-						SKILL_CONSTRUCTION = SKILL_EXPERIENCED,
-						SKILL_ELECTRICAL   = SKILL_EXPERIENCED)
+	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
+						SKILL_WEAPONS     = SKILL_MAX,
+						SKILL_EVA		  = SKILL_MAX,
+						SKILL_HAULING     = SKILL_MAX)
 
 	alt_titles = list(
-		"Combat Engineer",
-		"Combat Medic")
+		"Combat Engineer",)
 
 	allowed_branches = list(/datum/mil_branch/marine_corps)
 	allowed_ranks = list(
@@ -106,6 +103,57 @@ var/const/INF               =(1<<11)
 /datum/job/combat_tech/get_description_blurb()
 	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if no Squad Leader is present."
 
+/datum/job/combat_medic
+	title = "Combat Medic"
+	supervisors = "the Squad Leader"
+	department = "Infantry"
+	department_flag = INF
+	total_positions = 1
+	spawn_positions = 1
+	selection_color = "#557e38"
+	economic_power = 4
+	minimal_player_age = 8
+	skill_points = 24
+	minimum_character_age = list(SPECIES_HUMAN = 20)
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/infantry/combat_medic
+	min_skill = list(SKILL_EVA    = SKILL_BASIC,
+					SKILL_MEDICAL = SKILL_BASIC,
+					SKILL_COMBAT  = SKILL_TRAINED,
+					SKILL_WEAPONS = SKILL_TRAINED,
+					SKILL_ANATOMY = SKILL_BASIC)
+
+	max_skill = list(SKILL_MEDICAL     = SKILL_MAX,
+					SKILL_COMBAT       = SKILL_MAX,
+					SKILL_WEAPONS      = SKILL_MAX,
+					SKILL_CHEMISTRY    = SKILL_MAX)
+
+	allowed_branches = list(
+		/datum/mil_branch/fleet,
+		/datum/mil_branch/marine_corps
+	)
+	allowed_ranks = list(
+		/datum/mil_rank/fleet/e3,
+		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
+		/datum/mil_rank/marine_corps/e3,
+		/datum/mil_rank/marine_corps/e4,
+		/datum/mil_rank/marine_corps/e5
+		)
+	access = list(access_maint_tunnels, access_petrov, access_petrov_control,
+			            access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
+			            access_inftech, access_aquila, access_eva)
+
+/datum/job/combat_medic/is_position_available()
+	if(..())
+		for(var/mob/M in GLOB.player_list)
+			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
+				return TRUE
+	return FALSE
+
+/datum/job/combat_medic/get_description_blurb()
+	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Medic in the squad. Your duty is to provide medical assistance as required. You may assume Command if no Squad Leader is present."
+
+
 /datum/job/grunt
 	title = "Rifleman"
 	department = "Infantry"
@@ -122,9 +170,9 @@ var/const/INF               =(1<<11)
 						SKILL_WEAPONS      = SKILL_TRAINED,
 						SKILL_EVA          = SKILL_BASIC)
 
-	max_skill = list(	SKILL_COMBAT      = SKILL_EXPERIENCED,
-						SKILL_WEAPONS     = SKILL_EXPERIENCED,
-						SKILL_EVA		  = SKILL_EXPERIENCED)
+	max_skill = list(	SKILL_COMBAT      = SKILL_MAX,
+						SKILL_WEAPONS     = SKILL_MAX,
+						SKILL_EVA		  = SKILL_MAX)
 
 	alt_titles = list(
 		"Grunt",
@@ -194,7 +242,7 @@ var/const/INF               =(1<<11)
 	return ..()
 
 /datum/job/psiadvisor/get_description_blurb()
-	return "You are the Psionic Advisor, an agent of either the Foundation or Nanotrasen Psionic Corps. Alongside the Counselor, you're the only other individual with known and authorized Psionic abilities aboard the NTSS Dagon. Your main responsibility is advising the Commanding Officer on psionic matters. \
+	return "You are the Psionic Advisor, an agent of either the Foundation or Nanotrasen Psionic Corps. Alongside the Counselor, you're the only other individual with known and authorized Psionic abilities aboard the SGV Dagon. Your main responsibility is advising the Commanding Officer on psionic matters. \
 	Secondly, you're to assist the crew or Research on psionic matters, or guide any newly emergent crew that awaken with psionic abilities."
 
 //##### SEC CADET
@@ -241,7 +289,7 @@ var/const/INF               =(1<<11)
 //## SEA
 
 /datum/job/sea	//Overrides it to make it like ours @r4iser
-	title = "NTEF Senior Enlisted Advisor"
+	title = "Fleet Senior Enlisted Advisor"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 1
@@ -287,7 +335,7 @@ var/const/INF               =(1<<11)
 	return "You are the Senior Enlisted Advisor. You are the highest enlisted person on the ship. You are directly subordinate to the CO. You advise them on enlisted concerns and provide expertise and advice to officers. You are responsible for ensuring discipline and good conduct among enlisted, as well as notifying officers of any issues and \"advising\" them on mistakes they make. You also handle various duties on behalf of the CO and XO. You are an experienced enlisted person, very likely equal only in experience to the CO and XO. You know the regulations better than anyone."
 
 /datum/job/sea/marine
-	title = "SMC Senior Enlisted Advisor"
+	title = "Marine Senior Enlisted Advisor"
 	department = "Support"
 	department_flag = SPT
 	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/command/sea/marine
@@ -303,7 +351,7 @@ var/const/INF               =(1<<11)
 
 /datum/job/roboticist
 	title = "Roboticist"
-	department = "Science"
+	department = "Engineering"
 	department_flag = ENG
 
 	total_positions = 2
@@ -311,15 +359,16 @@ var/const/INF               =(1<<11)
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	supervisors = "the Chief Engineer."
-	selection_color = "#633d63"
+	selection_color = "#5b4d20"
 	economic_power = 6
 	alt_titles = list(
 		"Mechsuit Technician",
 		"Biomechanical Technician"
 		)
-	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/research/roboticist
+	outfit_type = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	allowed_branches = list(
-		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/research/roboticist/fleet,
+		/datum/mil_branch/fleet = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist/fleet,
+		/datum/mil_branch/marine_corps = /singleton/hierarchy/outfit/job/torch/crew/engineering/roboticist/marine,
 		/datum/mil_branch/civilian)
 	allowed_ranks = list(
 		/datum/mil_rank/fleet/e5,
@@ -327,6 +376,11 @@ var/const/INF               =(1<<11)
 		/datum/mil_rank/fleet/e7,
 		/datum/mil_rank/fleet/w1,
 		/datum/mil_rank/fleet/w2,
+		/datum/mil_rank/marine_corps/e5,
+		/datum/mil_rank/marine_corps/e6,
+		/datum/mil_rank/marine_corps/e7,
+		/datum/mil_rank/marine_corps/w1,
+		/datum/mil_rank/marine_corps/w2,
 		/datum/mil_rank/civ/contractor
 		)
 	min_skill = list(   SKILL_COMPUTER		= SKILL_TRAINED,
@@ -347,7 +401,7 @@ var/const/INF               =(1<<11)
 	access = list(access_maint_tunnels, access_research, access_robotics, access_nanotrasen, access_solgov_crew, access_surgery, access_medical)
 
 /datum/job/roboticist/get_description_blurb()
-	return "You are the Roboticist. You are responsible for repairing, upgrading and handling ship synthetics (like robots). You are also responsible for the production of exosuits(mechs) and bots for various departments. You answer to the Chief Science Officer."
+	return "You are the Roboticist. You are responsible for repairing, upgrading and handling ship synthetics (like robots). You are also responsible for the production of exosuits(mechs) and bots for various departments. You answer to the Chief Engineer."
 
 //Federal Protection Agent (SolRep APA)
 
@@ -399,6 +453,73 @@ var/const/INF               =(1<<11)
 		if(M.client && M.mind)
 			if(M.mind.assigned_role == "SolGov Representative")
 				to_chat(M, SPAN_NOTICE("<b>Your bodyguard, Agent [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
+	..()
+
+/datum/job/liaison/post_equip_rank(mob/person, alt_title)
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Executive Assistant")]"]"
+	for(var/mob/M in GLOB.player_list)
+		if(M.client && M.mind)
+			if(M.mind.assigned_role == "Executive Assistant")
+				to_chat(M, SPAN_NOTICE("<b>One of your employers, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
+	..()
+
+/datum/job/bodyguard
+	title = "Asset Protection Agent"
+	department = "Support"
+	department_flag = SPT
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Workplace Liaison"
+	selection_color = "#3d3d7f"
+	economic_power = 12
+	minimal_player_age = 7
+	minimum_character_age = list(SPECIES_HUMAN = 19)
+	outfit_type = /singleton/hierarchy/outfit/job/torch/passenger/corporate_bodyguard
+	allowed_branches = list(
+		/datum/mil_rank/private_security/pcrc = /singleton/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc,
+		/datum/mil_rank/private_security/pcrc_agt = /singleton/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/pcrc/agent,
+		/datum/mil_rank/private_security/saare = /singleton/hierarchy/outfit/job/torch/passenger/corporate_bodyguard/saare,
+		/datum/mil_branch/civilian)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	                    SKILL_EVA         = SKILL_BASIC,
+	                    SKILL_COMBAT      = SKILL_BASIC,
+	                    SKILL_WEAPONS     = SKILL_BASIC,
+	                    SKILL_FORENSICS   = SKILL_BASIC)
+	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERIENCED,
+	                    SKILL_WEAPONS     = SKILL_EXPERIENCED,
+	                    SKILL_FORENSICS   = SKILL_EXPERIENCED)
+	alt_titles = list(
+		"Union Enforcer",
+		"Loss Prevention Associate",
+		"Executive Assistant"
+	)
+	skill_points = 20
+
+	access = list(
+		access_liaison, access_bridge, access_solgov_crew,
+		access_nanotrasen, access_commissary,
+		access_sec_guard, access_torch_fax, access_radio_serv
+	)
+
+	defer_roundstart_spawn = TRUE
+
+/datum/job/bodyguard/is_position_available()
+	if(..())
+		for(var/mob/M in GLOB.player_list)
+			if(M.client && M.mind && M.mind.assigned_role == "Workplace Liaison")
+				return TRUE
+	return FALSE
+
+/datum/job/bodyguard/get_description_blurb()
+	return "You are the Executive Assistant. You are an employee of one of the corporations that make up the Expeditionary Corps Organisation, and your job is to assist the Liason in corporate affairs. You are also expected to protect the Liason's life, though not in any way that breaks the law."
+
+/datum/job/bodyguard/post_equip_rank(mob/person, alt_title)
+	var/my_title = "\a ["\improper [(person.mind ? (person.mind.role_alt_title ? person.mind.role_alt_title : person.mind.assigned_role) : "Executive Assistant")]"]"
+	for(var/mob/M in GLOB.player_list)
+		if(M.client && M.mind)
+			if(M.mind.assigned_role == "Workplace Liaison")
+				to_chat(M, SPAN_NOTICE("<b>Your bodyguard, [my_title] named [person.real_name], is present on [GLOB.using_map.full_name].</b>"))
 	..()
 
 /datum/job/liaison

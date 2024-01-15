@@ -1,4 +1,4 @@
-// A modular rewrite to allow "alternative" uniform. Done for NTEF to allow both NTSC and NTF uniforms, and to allow marines for camo selection. Very painful.
+// A modular rewrite to allow "alternative" uniform. Done for Fleet to allow both NTSC and NTF uniforms, and to allow marines for camo selection. Very painful.
 // Some of those (shoes, gloves) are not really needed but hey - safe check.
 
 /obj/machinery/uniform_vendor/populate_uniforms(singleton/hierarchy/mil_uniform/user_outfit)

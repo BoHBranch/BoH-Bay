@@ -85,8 +85,8 @@ medals
 patches
 *****/
 /obj/item/clothing/accessory/solgov/torch_patch
-	name = "\improper Torch mission patch"
-	desc = "A fire resistant shoulder patch, worn by the personnel involved in the Torch Project."
+	name = "\improper Dagon mission patch"
+	desc = "A fire resistant shoulder patch, worn by the personnel involved in the Dagon Project."
 	icon_state = "torchpatch"
 	on_rolled_down = ACCESSORY_ROLLED_NONE
 	slot = ACCESSORY_SLOT_INSIGNIA
