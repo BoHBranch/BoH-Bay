@@ -57,3 +57,8 @@
 	/singleton/emote/audible/chirp,
 	/singleton/emote/audible/multichirp
 )
+
+/datum/species/vox/armalis/default_emotes = list(
+	/singleton/emote/audible/vox_shriek,
+	/singleton/emote/audible/armalis_shriek
+)

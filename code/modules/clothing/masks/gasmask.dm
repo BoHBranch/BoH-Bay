@@ -201,7 +201,7 @@
 	item_state = "respirator"
 	flags_inv = 0
 	body_parts_covered = 0
-	species_restricted = list(SPECIES_VOX)
+	species_restricted = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
 	filtered_gases = list(GAS_OXYGEN)
 	item_flags = ITEM_FLAG_BLOCK_GAS_SMOKE_EFFECT | ITEM_FLAG_AIRTIGHT | ITEM_FLAG_INVALID_FOR_CHAMELEON
 
@@ -211,7 +211,7 @@
 	icon_state = "voxswat"
 	item_state = "voxswat"
 	body_parts_covered = EYES
-	species_restricted = list(SPECIES_VOX)
+	species_restricted = list(SPECIES_VOX, SPECIES_VOX_ARMALIS)
 	filtered_gases = list(
 		GAS_OXYGEN,
 		GAS_PHORON,
