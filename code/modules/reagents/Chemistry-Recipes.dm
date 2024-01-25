@@ -1600,6 +1600,13 @@
 	result_amount = 10
 	mix_message = "The solution thickens into a glossy batter."
 
+/datum/chemical_reaction/beerbatter
+	name = "Beer Batter"
+	result = /datum/reagent/nutriment/coating/beerbatter
+	required_reagents = list(/datum/reagent/nutriment/protein/egg = 3, /datum/reagent/nutriment/flour = 10, /datum/reagent/ethanol/beer = 5, /datum/reagent/sodiumchloride = 2)
+	result_amount = 10
+	mix_message = "The solution thickens into a glossy batter."
+
 /datum/chemical_reaction/cakebatter
 	name = "Cake Batter"
 	result = /datum/reagent/nutriment/batter/cakebatter
@@ -1611,6 +1618,13 @@
 	name = "Vegan Batter"
 	result = /datum/reagent/nutriment/batter
 	required_reagents = list(/datum/reagent/nutriment/softtofu = 3, /datum/reagent/nutriment/flour = 5, /datum/reagent/drink/milk = 5)
+	result_amount = 10
+	mix_message = "The solution thickens into a glossy batter."
+
+/datum/chemical_reaction/soybeerbatter
+	name = "Vegan Beer Batter"
+	result = /datum/reagent/nutriment/coating/beerbatter
+	required_reagents = list(/datum/reagent/nutriment/softtofu = 3, /datum/reagent/nutriment/flour = 10, /datum/reagent/ethanol/beer = 5, /datum/reagent/sodiumchloride = 2)
 	result_amount = 10
 	mix_message = "The solution thickens into a glossy batter."
 

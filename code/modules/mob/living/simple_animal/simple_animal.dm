@@ -137,6 +137,7 @@
 	var/thick_armor = FALSE // Stops injections and "injections".
 	var/purge = 0					// Cult stuff.
 	var/supernatural = FALSE		// Ditto.
+	var/kitchen_tag        //To dump animals in deep friers
 
 	var/bleed_ticks = 0
 	var/bleed_colour = COLOR_BLOOD_HUMAN

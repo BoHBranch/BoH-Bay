@@ -25,11 +25,11 @@
 /turf/simulated/floor/wood/yew,
 /area/map_template/deepmaint)
 "bz" = (
-/obj/machinery/cooker/grill,
+obj/machinery/appliance/grill,
 /turf/simulated/floor/tiled/white/monotile,
 /area/map_template/deepmaint)
 "bD" = (
-/obj/machinery/cooker/fryer,
+/obj/machinery/appliance/cooker/fryer,
 /obj/machinery/light/small{
 	dir = 1
 	},

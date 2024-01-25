@@ -1,4 +1,3 @@
-
 /obj/machinery/gibber
 	name = "meat grinder"
 	desc = "The name isn't descriptive enough?"

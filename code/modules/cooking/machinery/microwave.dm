@@ -1,4 +1,3 @@
-
 /obj/machinery/microwave
 	name = "microwave"
 	desc = "A possibly occult device capable of perfectly preparing many types of food."
@@ -16,7 +15,7 @@
 	stat_immune = 0
 
 	machine_name = "microwave"
-	machine_desc = "Required for preparing any dish more complicated than a slice of bread. In the future, <i>everything</i> is microwaved."
+	machine_desc = "Used for preparing dishes. In the future, <i>everything</i> is microwaved."
 
 	var/operating = FALSE // Is it on?
 	var/dirtiness = 0 // Ranges from 0 to 100, increasing a little with failed recipes and emptying reagents
@@ -28,8 +27,8 @@
 
 	var/list/ingredients = list()
 
-
-// see code/modules/food/recipes_microwave.dm for recipes
+// see modules/cooking/recipes/recipes_microwave.dm for recipes
+// This is old code that should be converted to machinery/appliance/cooker eventually. Too bad!
 
 /*********************************
 *   Initialization, part logic

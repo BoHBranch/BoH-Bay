@@ -177,7 +177,7 @@
 	return attack_self(user)
 
 
-/obj/item/storage/secure/AltClick(/mob/user)
+/obj/item/storage/secure/AltClick(mob/user)
 	if (locked)
 		return FALSE
 	return ..()

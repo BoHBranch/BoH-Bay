@@ -29,7 +29,7 @@
 
 /obj/item/stock_parts/circuitboard/cooker
 	name = "circuit board (candy machine)"
-	build_path = /obj/machinery/cooker/candy
+	build_path = /obj/machinery/appliance/mixer/candy
 	board_type = "machine"
 	origin_tech = list(TECH_BIO = 1, TECH_MATERIAL = 1)
 	buildtype_select = TRUE
@@ -44,7 +44,7 @@
 	)
 
 /obj/item/stock_parts/circuitboard/cooker/get_buildable_types()
-	return subtypesof(/obj/machinery/cooker)
+	return subtypesof(/obj/machinery/appliance)
 
 /obj/item/stock_parts/circuitboard/honey
 	name = "circuit board (honey extractor)"

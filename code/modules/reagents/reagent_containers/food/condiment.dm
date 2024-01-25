@@ -121,6 +121,12 @@
 	icon_state = "oliveoil"
 	starting_reagents = list(/datum/reagent/nutriment/cornoil = 50)
 
+/obj/item/reagent_containers/food/condiment/spacespice
+	name = "space spice"
+	desc = "Spice, spice, baby."
+	icon_state = "spacespicebottle"
+	starting_reagents = list(/datum/reagent/spacespice = 50)
+
 /obj/item/reagent_containers/food/condiment/vinegar
 	name = "vinegar"
 	icon_state = "vinegar"

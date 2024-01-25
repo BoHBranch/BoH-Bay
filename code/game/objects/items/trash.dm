@@ -225,3 +225,15 @@
 /obj/item/trash/usedplatter
 	name = "dirty platter"
 	icon_state = "usedplatter"
+
+/obj/item/trash/brownies
+	name = "square tray"
+	icon_state = "brownies"
+
+/obj/item/trash/dipbowl
+	name = "dip bowl"
+	icon_state = "dipbowl"
+
+/obj/item/trash/chipbasket
+	name = "empty basket"
+	icon_state = "chipbasket_empty"

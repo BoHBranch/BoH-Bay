@@ -82,7 +82,7 @@
 /area/medical/surgery)
 "jo" = (
 /obj/floor_decal/corner/blue/diagonal,
-/obj/machinery/cooker/fryer,
+/obj/machinery/appliance/cooker/fryer,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "jM" = (
@@ -204,7 +204,7 @@
 /area/space)
 "qA" = (
 /obj/floor_decal/corner/blue/diagonal,
-/obj/machinery/cooker/grill,
+obj/machinery/appliance/grill,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "qQ" = (
@@ -245,7 +245,7 @@
 /area/medical/surgery)
 "vD" = (
 /obj/floor_decal/corner/blue/diagonal,
-/obj/machinery/cooker/cereal,
+/obj/machinery/appliance/mixer/cereal,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "vL" = (
@@ -268,7 +268,7 @@
 /area/medical/surgery)
 "xe" = (
 /obj/floor_decal/corner/blue/diagonal,
-/obj/machinery/cooker/oven,
+/obj/machinery/appliance/cooker/oven,
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
 "xu" = (

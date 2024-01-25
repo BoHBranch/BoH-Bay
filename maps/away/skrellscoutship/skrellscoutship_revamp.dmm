@@ -2340,7 +2340,7 @@
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/crew/rec)
 "ho" = (
-/obj/machinery/cooker/oven,
+/obj/machinery/appliance/cooker/oven,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/rec)
 "hp" = (
@@ -5810,7 +5810,7 @@
 /turf/simulated/wall/r_wall,
 /area/ship/skrellscoutshuttle)
 "TZ" = (
-/obj/machinery/cooker/grill,
+obj/machinery/appliance/grill,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/rec)
 "Uf" = (
