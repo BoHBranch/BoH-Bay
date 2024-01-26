@@ -1,8 +1,8 @@
 /obj/item/clothing/head/hardhat/self_protection
 	name = "\improper Self-Protection helmet"
 	desc = "An EMB helmet repurposed to be part of self-protection kit. It has green \"CIV\" imprinted on its front."
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_head.dmi'
-	icon_override = 'modular_boh/icon/boh/mob/onmob/onmob_head.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_head.dmi'
+	icon_override = 'modular_boh/icons/mob/onmob/onmob_head.dmi'
 	icon_state = "self-protection_helmet"
 	light_overlay = "DC_light"
 	flags_inv = HIDEEARS|BLOCKHAIR

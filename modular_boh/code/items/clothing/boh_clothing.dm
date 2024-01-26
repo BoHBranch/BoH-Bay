@@ -1,10 +1,10 @@
 /obj/item/clothing/accessory/cloak
 	name = "cloak"
 	desc = "A simple, bland cloak."
-	icon = 'modular_boh/icon/obj/obj_cloak.dmi'
+	icon = 'modular_boh/icons/obj/obj_cloak.dmi'
 	icon_state = "cloak"
-	icon_override = 'modular_boh/icon/mob/onmob_cloak.dmi'
-	accessory_icons = list(slot_tie_str = 'modular_boh/icon/mob/onmob_cloak.dmi', slot_w_uniform_str = 'modular_boh/icon/mob/onmob_cloak.dmi', slot_wear_suit_str = 'modular_boh/icon/mob/onmob_cloak.dmi')
+	icon_override = 'modular_boh/icons/mob/onmob_cloak.dmi'
+	accessory_icons = list(slot_tie_str = 'modular_boh/icons/mob/onmob_cloak.dmi', slot_w_uniform_str = 'modular_boh/icons/mob/onmob_cloak.dmi', slot_wear_suit_str = 'modular_boh/icons/mob/onmob_cloak.dmi')
 	var/fire_resist = T0C+100
 	allowed = list()
 	slot_flags = SLOT_OCLOTHING | SLOT_TIE
@@ -17,8 +17,8 @@
 	name = "greatcloak"
 	desc = "A simple, yet fancy cloak."
 	icon_state = "cloak_alt"
-	icon_override = 'modular_boh/icon/mob/onmob_cloak.dmi'
-	accessory_icons = list(slot_tie_str = 'modular_boh/icon/mob/onmob_cloak.dmi', slot_w_uniform_str = 'modular_boh/icon/mob/onmob_cloak.dmi', slot_wear_suit_str = 'modular_boh/icon/mob/onmob_cloak.dmi')
+	icon_override = 'modular_boh/icons/mob/onmob_cloak.dmi'
+	accessory_icons = list(slot_tie_str = 'modular_boh/icons/mob/onmob_cloak.dmi', slot_w_uniform_str = 'modular_boh/icons/mob/onmob_cloak.dmi', slot_wear_suit_str = 'modular_boh/icons/mob/onmob_cloak.dmi')
 
 /obj/item/clothing/accessory/cloak/boh/dress
 	name = "boatcloak"
@@ -100,39 +100,39 @@
 //####### LONG LABCOATS
 
 /obj/item/clothing/suit/storage/toggle/labcoat/lclabcoat
-	icon = 'modular_boh/icon/boh/obj/clothing/longlabcoats.dmi'
+	icon = 'modular_boh/icons/obj/clothing/longlabcoats.dmi'
 	name = "long labcoat"
 	desc = "A suit that protects against minor chemical spills. For the stylish megalomaniac."
 	icon_state = "labcoat_long"
 	color = "#feffff"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/rd
-	icon = 'modular_boh/icon/boh/obj/clothing/longlabcoats.dmi'
+	icon = 'modular_boh/icons/obj/clothing/longlabcoats.dmi'
 	name = "research director's labcoat"
 	desc = "A full-body labcoat covered in green and black designs, denoting it as an Expeditionary Corps Organisation management coat. Judging by the amount of designs on it, it is only to be worn by the most enthusiastic of employees."
 	icon_state = "labcoat_rd"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 
 /obj/item/clothing/suit/storage/toggle/labcoat/roles/science/nanotrasen
-	icon = 'modular_boh/icon/boh/obj/clothing/longlabcoats.dmi'
+	icon = 'modular_boh/icons/obj/clothing/longlabcoats.dmi'
 	name = "\improper NT long labcoat"
 	desc = "A full-body labcoat covered in red and black designs, denoting it as a NanoTrasen management coat. Judging by the amount of designs on it, it is only to be worn by the most enthusiastic of employees."
 	icon_state = "labcoat_rd_nt"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/roles/science/heph
-	icon = 'modular_boh/icon/boh/obj/clothing/longlabcoats.dmi'
+	icon = 'modular_boh/icons/obj/clothing/longlabcoats.dmi'
 	name = "\improper HI long labcoat"
 	desc = "A full-body labcoat covered in cyan and black designs, denoting it as a Hephaestus Industries management coat. Judging by the amount of designs on it, it is only to be worn by the most enthusiastic of employees."
 	icon_state = "labcoat_rd_heph"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/roles/science/zeng
-	icon = 'modular_boh/icon/boh/obj/clothing/longlabcoats.dmi'
+	icon = 'modular_boh/icons/obj/clothing/longlabcoats.dmi'
 	name = "\improper Z-H long labcoat"
 	desc = "A full-body labcoat covered in cyan and black designs, denoting it as a Zeng-Hu Pharmaceuticals management coat. Judging by the amount of designs on it, it is only to be worn by the most enthusiastic of employees."
 	icon_state = "labcoat_rd_zeng"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/rd/ec
-	icon = 'modular_boh/icon/boh/obj/clothing/longlabcoats.dmi'
+	icon = 'modular_boh/icons/obj/clothing/longlabcoats.dmi'
 	name = "chief science officer's labcoat"
 	desc = "A coat that protects against minor chemical spills. It has purple stripes on the shoulders denoting it as an Expeditionary Corps labcoat, and purple trim to indicate a Chief Science Officer."
 	icon_state = "labcoat_cso"

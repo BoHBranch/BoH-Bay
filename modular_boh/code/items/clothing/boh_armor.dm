@@ -3,8 +3,8 @@
 /obj/item/clothing/suit/armor/pcarrier/grey
 	name = "grey plate carrier"
 	desc = "A lightweight grey plate carrier vest. It can be equipped with armor plates, but provides no protection of its own."
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
-	item_icons = list(slot_wear_suit_str = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi')
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
+	item_icons = list(slot_wear_suit_str = 'modular_boh/icons/mob/onmob/onmob_modular_armor.dmi')
 	icon_state = "pcarrier_grey"
 
 /obj/item/clothing/suit/armor/pcarrier/grey/light
@@ -17,7 +17,7 @@
 	accessories = list(/obj/item/clothing/accessory/armor_plate, /obj/item/clothing/accessory/armor_tag/civ/med)
 
 /obj/item/clothing/suit/armor/pcarrier/ipc
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "refitted plate carrier"
 	desc = "A modular, compact black plate carrier vest made to securely fit an IPC chassis. It doesn't look like it would fit an organic. It can be equipped with armor plates, but provides no protection of its own."
 	icon_state = "pcarrier_ipc"
@@ -34,7 +34,7 @@
 	icon_state = "pcarrier_green"
 
 /obj/item/clothing/suit/armor/pcarrier/green/ipc
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "compact green plate carrier"
 	desc = "A modular, compact green plate carrier vest made to securely fit an IPC chassis. It doesn't look like it would fit an organic. It can be equipped with armor plates, but provides no protection of its own."
 	icon_state = "pcarrier_green_ipc"
@@ -46,14 +46,14 @@
 	icon_state = "pcarrier_navy"
 
 /obj/item/clothing/suit/armor/pcarrier/navy/ipc
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "compact navy plate carrier"
 	desc = "A modular, compact navy plate carrier vest made to securely fit an IPC chassis. It doesn't look like it would fit an organic. It can be equipped with armor plates, but provides no protection of its own."
 	icon_state = "pcarrier_navy_ipc"
 	species_restricted = list(SPECIES_IPC)
 
 /obj/item/clothing/suit/armor/pcarrier/blue/ipc
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "compact blue plate carrier"
 	desc = "A modular, compact blue plate carrier vest made to securely fit an IPC chassis. It doesn't look like it would fit an organic. It can be equipped with armor plates, but provides no protection of its own."
 	icon_state = "pcarrier_blue_ipc"
@@ -65,26 +65,26 @@
 	icon_state = "pcarrier_tan"
 
 /obj/item/clothing/suit/armor/pcarrier/tan/ipc
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "compact tan plate carrier"
 	desc = "A modular, compact tan plate carrier vest made to securely fit an IPC chassis. It doesn't look like it would fit an organic. It can be equipped with armor plates, but provides no protection of its own."
 	icon_state = "pcarrier_tan_ipc"
 	species_restricted = list(SPECIES_IPC)
 
 /obj/item/clothing/suit/armor/pcarrier/tan/tactical
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "tactical plate carrier"
 	icon_state = "pcarrier_tan_tac"
 	accessories = list(/obj/item/clothing/accessory/armor_plate/tactical, /obj/item/clothing/accessory/storage/pouches/large/tan, /obj/item/clothing/accessory/arm_guards/tan/tactical, /obj/item/clothing/accessory/leg_guards/tan/tactical)
 
 /obj/item/clothing/suit/armor/pcarrier/tactical
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "black tactical plate carrier"
 	icon_state = "pcarrier_tac"
 	accessories = list(/obj/item/clothing/accessory/armor_plate/tactical, /obj/item/clothing/accessory/storage/pouches/large, /obj/item/clothing/accessory/arm_guards/tactical, /obj/item/clothing/accessory/leg_guards/tactical)
 
 /obj/item/clothing/suit/armor/pcarrier/merc
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "combat plate carrier"
 	icon_state = "pcarrier_merc"
 	accessories = list(/obj/item/clothing/accessory/armor_plate/merc, /obj/item/clothing/accessory/arm_guards/merc, /obj/item/clothing/accessory/leg_guards/merc, /obj/item/clothing/accessory/storage/pouches/large)
@@ -94,25 +94,25 @@
 /obj/item/clothing/suit/armor/pcarrier/kevlar/tan
 	name = "tan kevlar"
 	desc = "A lightweight tan kevlar vest. It can be equipped with armor plates, but provides no protection of its own."
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	icon_state = "kevlar_tan"
 
 /obj/item/clothing/suit/armor/pcarrier/kevlar/navy
 	name = "tan kevlar"
 	desc = "A lightweight tan kevlar vest. It can be equipped with armor plates, but provides no protection of its own."
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	icon_state = "kevlar_navy"
 
 /obj/item/clothing/suit/armor/pcarrier/kevlar/blue
 	name = "tan kevlar"
 	desc = "A lightweight tan kevlar vest. It can be equipped with armor plates, but provides no protection of its own."
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	icon_state = "kevlar_blue"
 
 /obj/item/clothing/suit/armor/pcarrier/kevlar/green
 	name = "tan kevlar"
 	desc = "A lightweight tan kevlar vest. It can be equipped with armor plates, but provides no protection of its own."
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	icon_state = "kevlar_green"
 
 //#BOH-BAY $ CUSTOM arm_guards
@@ -136,19 +136,19 @@
 	slot = ACCESSORY_SLOT_ARMOR_A
 
 /obj/item/clothing/accessory/arm_guards/tan/tactical
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "tan arm guards"
 	desc = "A pair of tan arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_state = "arm_guards_tan_tac"
 
 /obj/item/clothing/accessory/arm_guards/tactical
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "arm guards"
 	desc = "A pair of arm pads reinforced with armor plating. Attaches to a plate carrier."
 	icon_state = "arm_guards_tan_tac"
 
 /obj/item/clothing/accessory/arm_guards/merc
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "heavy arm guards"
 	desc = "A pair of red-trimmed black arm pads reinforced with heavy armor plating. Attaches to a plate carrier."
 	icon_state = "arm_guards_merc"
@@ -185,19 +185,19 @@
 
 
 /obj/item/clothing/accessory/leg_guards/tan/tactical
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "tactical tan leg guards"
 	desc = "A pair of armored leg pads in tan. Attaches to a plate carrier."
 	icon_state = "leg_guards_tan_tac"
 
 /obj/item/clothing/accessory/leg_guards/tactical
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "tactical leg guards"
 	desc = "A pair of armored leg pads. Attaches to a plate carrier."
 	icon_state = "leg_guards_tac"
 
 /obj/item/clothing/accessory/leg_guards/merc
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	name = "heavy leg guards"
 	desc = "A pair of heavily armored leg pads in red-trimmed black. Attaches to a plate carrier."
 	icon_state = "leg_guards_merc"
@@ -216,7 +216,7 @@
 /obj/item/clothing/accessory/arm_guards/light
 	name = "arm pads"
 	desc = "A pair of arm pads. Attaches to a plate carrier."
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_SMALL,
@@ -228,7 +228,7 @@
 /obj/item/clothing/accessory/leg_guards/light
 	name = "leg pads"
 	desc = "A pair of leg pads. Attaches to a plate carrier."
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
 		bullet = ARMOR_BALLISTIC_SMALL,
@@ -240,14 +240,14 @@
 // Modular sprites.
 /obj/item/clothing/accessory/arm_guards/light/grey
 	desc = "A pair of arm pads in grey. Attaches to a plate carrier."
-	icon_override = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi'
-	accessory_icons = list(slot_tie_str = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi', slot_wear_suit_str = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi')
+	icon_override = 'modular_boh/icons/mob/onmob/onmob_modular_armor.dmi'
+	accessory_icons = list(slot_tie_str = 'modular_boh/icons/mob/onmob/onmob_modular_armor.dmi', slot_wear_suit_str = 'modular_boh/icons/mob/onmob/onmob_modular_armor.dmi')
 	icon_state = "arm_guards_grey"
 
 /obj/item/clothing/accessory/leg_guards/light/grey
 	desc = "A pair of leg pads in grey. Attaches to a plate carrier."
-	icon_override = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi'
-	accessory_icons = list(slot_tie_str = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi', slot_wear_suit_str = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi')
+	icon_override = 'modular_boh/icons/mob/onmob/onmob_modular_armor.dmi'
+	accessory_icons = list(slot_tie_str = 'modular_boh/icons/mob/onmob/onmob_modular_armor.dmi', slot_wear_suit_str = 'modular_boh/icons/mob/onmob/onmob_modular_armor.dmi')
 	icon_state = "leg_guards_grey"
 
 // Colored light arm guards
@@ -290,9 +290,9 @@
 	name = "\improper CIVILIAN tag"
 	desc = "A tag with the word CIVILIAN printed in green lettering on it."
 	icon_state = "civtag"
-	icon_override = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi'
-	icon = 'modular_boh/icon/boh/obj/clothing/obj_modular_armor.dmi'
-	accessory_icons = list(slot_tie_str = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi', slot_wear_suit_str = 'modular_boh/icon/boh/mob/onmob/onmob_modular_armor.dmi')
+	icon_override = 'modular_boh/icons/mob/onmob/onmob_modular_armor.dmi'
+	icon = 'modular_boh/icons/obj/clothing/obj_modular_armor.dmi'
+	accessory_icons = list(slot_tie_str = 'modular_boh/icons/mob/onmob/onmob_modular_armor.dmi', slot_wear_suit_str = 'modular_boh/icons/mob/onmob/onmob_modular_armor.dmi')
 	slot_flags = SLOT_BELT
 
 /obj/item/clothing/accessory/armor_tag/civ/med

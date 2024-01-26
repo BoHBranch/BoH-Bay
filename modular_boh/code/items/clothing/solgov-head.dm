@@ -1,7 +1,7 @@
 /obj/item/clothing/head/solgov
 	name = "master solgov hat"
-	icon = 'modular_boh/icon/obj/obj_head_solgov.dmi'
-	item_icons = list(slot_head_str = 'modular_boh/icon/mob/onmob_head_solgov.dmi')
+	icon = 'modular_boh/icons/obj/obj_head_solgov.dmi'
+	item_icons = list(slot_head_str = 'modular_boh/icons/mob/onmob_head_solgov.dmi')
 	siemens_coefficient = 0.9
 
 //Utility

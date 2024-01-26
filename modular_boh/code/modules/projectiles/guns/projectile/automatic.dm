@@ -3,13 +3,13 @@
 /obj/item/gun/projectile/automatic/skrell
 	name = "QX-2 Miniaturized Railgun"
 	desc = "Modeled after VT-3, the Qerr Xira-2 or, as refered in Sol, QX-2, is a miniaturized railgun popular with SDTF squadrons. An internal microfusion cell and a sizeable ammo capacity both guarantee reliability even on prolonged engagements."
-	icon = 'modular_boh/icon/obj/guns/skrell_shotgun.dmi'
+	icon = 'modular_boh/icons/obj/guns/skrell_shotgun.dmi'
 	icon_state = "skrellshotgun"
 	item_state = "skrellshotgun"
 	safety_icon = "safety"
 	item_icons = list(
-		slot_l_hand_str = 'modular_boh/icon/mob/items/lefthand_guns.dmi',
-		slot_r_hand_str = 'modular_boh/icon/mob/items/righthand_guns.dmi',
+		slot_l_hand_str = 'modular_boh/icons/mob/items/lefthand_guns.dmi',
+		slot_r_hand_str = 'modular_boh/icons/mob/items/righthand_guns.dmi',
 	)
 	move_delay = 2
 	one_hand_penalty = 5

@@ -102,34 +102,6 @@
 	req_access = list(access_infantry)
 	available_modifications = list(/singleton/item_modifier/space_suit/security/alt, /singleton/item_modifier/space_suit/security)
 
-
-/obj/item/rig/military/infantry
-	name = "heavy suit control module"
-	desc = "A heavy, incredibly sleek suit of military grade armor. \
-	The minor ablative coating and composite armor makes it seem incredibly sturdy."
-	req_access = list(access_infantry)
-	suit_type = "military hardsuit"
-	icon_state = "military_rig"
-	armor = list(
-		melee = ARMOR_MELEE_RESISTANT,
-		bullet = ARMOR_BALLISTIC_RIFLE,
-		laser = ARMOR_LASER_SMALL,
-		energy = ARMOR_ENERGY_SMALL,
-		bomb = ARMOR_BOMB_RESISTANT,
-		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_SHIELDED
-		)
-
-	allowed = list(/obj/item/device/flashlight, /obj/item/tank,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/handcuffs,/obj/item/device/t_scanner, /obj/item/rcd, /obj/item/crowbar, \
-	/obj/item/screwdriver, /obj/item/weldingtool, /obj/item/wirecutters, /obj/item/wrench, /obj/item/device/multitool, \
-	/obj/item/device/radio, /obj/item/device/scanner/gas,/obj/item/storage/briefcase/inflatable, /obj/item/melee/baton, /obj/item/gun, \
-	/obj/item/storage/firstaid, /obj/item/reagent_containers/hypospray, /obj/item/roller_bed, /obj/item/device/suit_cooling_unit, /obj/item/storage/)
-
-	initial_modules = list(
-		/obj/item/rig_module/cooling_unit,
-		/obj/item/rig_module/maneuvering_jets
-	)
-
 //Vending
 /obj/machinery/vending/security/infantry
 	name = "InfTech"
@@ -163,10 +135,10 @@
 	name = "Z9 Pitbull"
 	desc = "The Hephaestus Industries Z9 Pitbull is a newer generation bullpup carbine. It appears to be heavily modified: forcing the feed of one round type, a permanent semi-auto setting and the removal of the auto-eject function. Lame. \
 	Still has the kickass grenade launcher, though! The aforementioned forced munition is a highly specialized frangible bullet. Designed to minimize crossfire damage, alongside civilian casualties."
-	icon = 'modular_boh/icon/boh/items/z9.dmi'
+	icon = 'modular_boh/icons/obj/guns/z9.dmi'
 	icon_state = "carbine"
-	item_state = "z9carbine"
-	wielded_item_state = "z9carbine-wielded"
+	item_state = "z8carbine"
+	wielded_item_state = "z8carbine-wielded"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	ammo_type = /obj/item/ammo_casing/rifle/military/low
 	magazine_type = /obj/item/ammo_magazine/mil_rifle/sec
@@ -188,7 +160,7 @@
 	name = "Z9B Pitbull"
 	desc = "The Hephaestus Industries Z9B Pitbull is an experimental design of the standard Z9. Having an enforced fire-rate for use aboard civilian heavy areas, it does away with some of the use. \
 	Because of the limited fire-rate, and how the mechanism functions, it has a much higher jam rate."
-	icon = 'modular_boh/icon/boh/items/z9b.dmi'
+	icon = 'modular_boh/icons/obj/guns/z9b.dmi'
 	icon_state = "carbine"
 	item_state = "z9carbine"
 	wielded_item_state = "z9bcarbine-wielded"
@@ -204,10 +176,10 @@
 	name = "Z6 Komodo"
 	desc = "The Hephaestus Industries Z6 Komodo is an old bullpup carbine conversion. \
 	It adds the possibility of automatic fire, though at the cost of likely jams."
-	icon = 'modular_boh/icon/boh/items/z6.dmi'
+	icon = 'modular_boh/icons/obj/guns/z6.dmi'
 	icon_state = "carbine"
-	item_state = "z6carbine"
-	wielded_item_state = "z6carbine-wielded"
+	item_state = "z8carbine"
+	wielded_item_state = "z8carbine-wielded"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	auto_eject = 1
 	one_hand_penalty = 8
@@ -230,7 +202,7 @@
 	name = "KS-40b"
 	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders. \
 	This one appears to be modified to fire nothing but beanbags, and has an orange paintjob on the slide. Trying to fire lethals doesn't seem like a good idea."
-	icon = 'modular_boh/icon/boh/items/shotguns.dmi'
+	icon = 'modular_boh/icons/obj/guns/shotguns.dmi'
 	icon_state = "bshotgun"
 	item_state = "bshotgun"
 	wielded_item_state = "cshotgun-wielded"
@@ -272,7 +244,7 @@
 /obj/item/gun/projectile/hornetsniper
 	name = "Z2 Hornet"
 	desc = "The Z2 Hornet, is an older cousin of the Z9 Pitbull Carbine. This however, is a DMR up-chambered in to 12mm-Sparrow. Accuracy is improved by a side mounted ballistic computer."
-	icon = 'modular_boh/icon/boh/items/hornet.dmi'
+	icon = 'modular_boh/icons/obj/guns/hornet.dmi'
 	icon_state = "z2"
 	item_state = "z2hornet"
 	w_class = ITEM_SIZE_HUGE
@@ -335,7 +307,7 @@
 	This specific model was designed to fire incendiary charges. Said charges have a minor explosive charge, with an incredibly powerful, though small, incendiary powder of sorts. \
 	Hopefully it's still working after all this time, because, by god, this looks like an old relic. \
 	What doesn't look like a relic, however, is the rather large optic mounted atop the rifle."
-	icon = 'modular_boh/icon/obj/guns/launchers64.dmi'
+	icon = 'modular_boh/icons/obj/guns/launchers64.dmi'
 	icon_state = "recoilless"
 	item_state = "recoilless"
 	wielded_item_state = "recoilless_wielded"
@@ -377,7 +349,7 @@
 
 /obj/item/gun/projectile/rocket/oneuse // One time use RPGs.
 	slot_flags = SLOT_BACK|SLOT_BELT
-	icon = 'modular_boh/icon/obj/guns/launchers64.dmi' // RPG file for big boy RPGs.
+	icon = 'modular_boh/icons/obj/guns/launchers64.dmi' // RPG file for big boy RPGs.
 	icon_state = "disposable_marine"
 	item_state = "disposable_marine"
 	 // As a note, you can technically reload these, but you need an admin to spawn you the ammo, which is better than having them spawn you the rocket THEN delete the old one.
@@ -424,7 +396,7 @@
 	name = "GS-95 Tectonic"
 	desc = "Built for light anti-materiel use, the Hephaestus Industries GS-95 Teutonic is for frontline support infantry. \
 	It features a built in magazine, and must be loaded by hand."
-	icon = 'modular_boh/icon/boh/items/shotguns.dmi'
+	icon = 'modular_boh/icons/obj/guns/shotguns.dmi'
 	icon_state = "sexyshotgun"
 	item_state = "sexyshotgun"
 	wielded_item_state = "sexyshotgun-wielded"

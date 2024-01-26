@@ -194,7 +194,7 @@
 /obj/item/clothing/head/helmet/space/void/medical/alt/sol/Initialize()
 	. = ..()
 	sprite_sheets |= list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_head_solgov_unathi.dmi', //Replaces a missing sprite. - HTG
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_head_solgov_unathi.dmi', //Replaces a missing sprite. - HTG
 		SPECIES_SKRELL = 'maps/torch/icons/mob/skrell/onmob_head_solgov_skrell.dmi',
 		//Baystation code above ^^^ - HTG
 		SPECIES_AKULA = 'icons/mob/onmob/onmob_head.dmi',

@@ -1,11 +1,11 @@
 /obj/item/shield/energy/skrell
 	name = "skrellian combat shield"
 	desc = "An alien shield capable of stopping most projectile and melee attacks. It can be retracted, expanded, and stored anywhere."
-	icon = 'modular_boh/icon/obj/weapons/skrellshield.dmi'
+	icon = 'modular_boh/icons/obj/weapons/skrellshield.dmi'
 	icon_state = "skrellshield0" // skrellshield1 for expanded
 	item_icons = list(
-		slot_l_hand_str = 'modular_boh/icon/mob/items/lefthand.dmi',
-		slot_r_hand_str = 'modular_boh/icon/mob/items/righthand.dmi',
+		slot_l_hand_str = 'modular_boh/icons/mob/items/lefthand.dmi',
+		slot_r_hand_str = 'modular_boh/icons/mob/items/righthand.dmi',
 		)
 
 /obj/item/shield/energy/skrell/handle_shield(mob/user)

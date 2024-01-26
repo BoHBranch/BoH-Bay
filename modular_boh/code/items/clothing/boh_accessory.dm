@@ -3,15 +3,15 @@
 /obj/item/clothing/accessory/solgov/smc_patch
 	name = "\improper Marine Corps Patch"
 	desc = "A robust shoulder patch, carrying the symbol of the Solar Marine Corps, or SMC for short."
-	icon = 'modular_boh/icon/obj/obj_accessories_boh.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icon/mob/onmob_accessories_boh.dmi')
+	icon = 'modular_boh/icons/obj/obj_accessories_boh.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icons/mob/onmob_accessories_boh.dmi')
 	icon_state = "smcpatch"
 
 /obj/item/clothing/accessory/solgov/smc_patch/xeno
 	name = "\improper Xenoic Division of the Marine Corps patch"
 	desc = "A robust shoulder patch, carrying the symbol-mascot of Xenoic division, yellow-eyed devil dog."
-	icon = 'modular_boh/icon/obj/obj_accessories_boh.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icon/mob/onmob_accessories_boh.dmi')
+	icon = 'modular_boh/icons/obj/obj_accessories_boh.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icons/mob/onmob_accessories_boh.dmi')
 	icon_state = "smcpatch13"
 
 // Sixth Fleet Patch, as for bonus
@@ -19,8 +19,8 @@
 /obj/item/clothing/accessory/solgov/fleet_patch/sixth
 	name = "\improper Sixth Fleet patch"
 	desc = "A robust shoulder patch carrying insignia of the Sixth Fleet."
-	icon = 'modular_boh/icon/obj/obj_accessories_boh.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icon/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'modular_boh/icon/mob/onmob_cloak.dmi')
+	icon = 'modular_boh/icons/obj/obj_accessories_boh.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icons/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'modular_boh/icons/mob/onmob_cloak.dmi')
 	icon_state = "fleetpatch6"
 
 // Modular version for NT Patch
@@ -41,8 +41,8 @@
 // custom ribbon for loadout
 /obj/item/clothing/accessory/ribbon/solgov/custom
 	icon_state = "ribbon_custom"
-	icon = 'modular_boh/icon/obj/obj_accessories_boh.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icon/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'modular_boh/icon/mob/onmob_cloak.dmi')
+	icon = 'modular_boh/icons/obj/obj_accessories_boh.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icons/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'modular_boh/icons/mob/onmob_cloak.dmi')
 
 /obj/item/clothing/accessory/ribbon/solgov/custom/color
 	icon_state = "ribbon_custom_color"
@@ -53,8 +53,8 @@
 
 // icon path for hestia stuff
 /obj/item/clothing/accessory/solgov/rank
-	icon = 'modular_boh/icon/obj/obj_accessories_boh.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icon/mob/onmob_accessories_solgov.dmi', slot_wear_suit_str = 'modular_boh/icon/mob/onmob_accessories_solgov.dmi')
+	icon = 'modular_boh/icons/obj/obj_accessories_boh.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icons/mob/onmob_accessories_solgov.dmi', slot_wear_suit_str = 'modular_boh/icons/mob/onmob_accessories_solgov.dmi')
 
 /obj/item/clothing/accessory/solgov/rank/ec/enlisted
 	name = "ranks (E-1 recruit explorer)"
@@ -177,7 +177,7 @@
 	icon_state = "ME0"
 	name = "marine ranks"
 	desc = "Insignia denoting marine rank of some kind. These appear blank."
-	icon = 'modular_boh/icon/obj/obj_accessories_boh.dmi'
+	icon = 'modular_boh/icons/obj/obj_accessories_boh.dmi'
 
 /obj/item/clothing/accessory/solgov/rank/marine_corps/enlisted
 	icon_state = "ME1"
@@ -329,8 +329,8 @@
 /obj/item/clothing/accessory/skrellian/rank/SDTF
 	name = "Skrellian Ranks"
 	desc = "Insigna denothing some sort of position in the SDTF. This one is blank."
-	icon = 'modular_boh/icon/obj/obj_skrell_accessories.dmi'
-	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icon/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'modular_boh/icon/mob/onmob_accessories_boh.dmi')
+	icon = 'modular_boh/icons/obj/obj_skrell_accessories.dmi'
+	accessory_icons = list(slot_w_uniform_str = 'modular_boh/icons/mob/onmob_accessories_boh.dmi', slot_wear_suit_str = 'modular_boh/icons/mob/onmob_accessories_boh.dmi')
 	icon_state = "skrell_blank"
 	slot = ACCESSORY_SLOT_RANK
 	gender = PLURAL

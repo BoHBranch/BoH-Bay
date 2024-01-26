@@ -1,7 +1,7 @@
 /obj/item/clothing/suit/storage/solgov/
 	name = "master solgov jacket"
-	icon = 'modular_boh/icon/obj/obj_suit_solgov.dmi'
-	item_icons = list(slot_wear_suit_str = 'modular_boh/icon/mob/onmob_suit_solgov.dmi')
+	icon = 'modular_boh/icons/obj/obj_suit_solgov.dmi'
+	item_icons = list(slot_wear_suit_str = 'modular_boh/icons/mob/onmob_suit_solgov.dmi')
 
 //Service
 

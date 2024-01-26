@@ -1,8 +1,8 @@
 /obj/item/clothing/gloves/thick/duty/solgov
 	name = "solgov duty gloves parent object"
 	desc = "You should never see this."
-	item_icons = list(slot_gloves_str = 'modular_boh/icon/mob/onmob_hands_solgov.dmi')
-	icon = 'modular_boh/icon/obj/obj_hands_solgov.dmi'
+	item_icons = list(slot_gloves_str = 'modular_boh/icons/mob/onmob_hands_solgov.dmi')
+	icon = 'modular_boh/icons/obj/obj_hands_solgov.dmi'
 
 /obj/item/clothing/gloves/thick/duty/solgov/fingerless
 	name = "fingerless gloves parent object"

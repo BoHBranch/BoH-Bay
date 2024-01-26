@@ -1,8 +1,8 @@
 /obj/item/clothing/under/solgov
 	name = "master solgov uniform"
 	desc = "You shouldn't be seeing this."
-	icon = 'modular_boh/icon/obj/obj_under_solgov.dmi'
-	item_icons = list(slot_w_uniform_str = 'modular_boh/icon/mob/onmob_under_solgov.dmi')
+	icon = 'modular_boh/icons/obj/obj_under_solgov.dmi'
+	item_icons = list(slot_w_uniform_str = 'modular_boh/icons/mob/onmob_under_solgov.dmi')
 	siemens_coefficient = 0.8
 	gender_icons = 1
 
@@ -20,7 +20,7 @@
 	icon_state = "expeditionpt"
 	worn_state = "expeditionpt"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/pt/fleet
@@ -35,7 +35,7 @@
 	icon_state = "armypt"
 	worn_state = "armypt"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
 
 
@@ -48,7 +48,7 @@
 	item_state = "bl_suit"
 	worn_state = "blackutility"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 	armor = list(
 		melee = ARMOR_MELEE_MINOR,
@@ -61,7 +61,7 @@
 	icon_state = "blackutility_crew"
 	worn_state = "blackutility_crew"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/utility/expeditionary_skirt
@@ -70,7 +70,7 @@
 	icon_state = "blackservicefem"
 	worn_state = "blackservicefem"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/utility/expeditionary_skirt/officer
@@ -140,7 +140,7 @@
 	item_state = "jensensuit"
 	worn_state = "navyutility"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/utility/fleet/command
@@ -209,7 +209,7 @@
 	icon_state = "navycombat"
 	worn_state = "navycombat"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/utility/fleet/combat/security
@@ -279,7 +279,7 @@
 	item_state = "jensensuit"
 	worn_state = "greenutility"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/utility/army/command
@@ -335,7 +335,7 @@
 	icon_state = "greydress"
 	worn_state = "greydress"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/service/expeditionary/command
@@ -460,7 +460,7 @@
 	worn_state = "whiteservice"
 	accessories = list(/obj/item/clothing/accessory/navy)
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/service/fleet/skirt
@@ -524,7 +524,7 @@
 	worn_state = "greenservice"
 	accessories = list(/obj/item/clothing/accessory/brown)
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/service/army/skirt
@@ -533,7 +533,7 @@
 	icon_state = "greenservicefem"
 	worn_state = "greenservicefem"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/service/army/command
@@ -564,7 +564,7 @@
 	icon_state = "blackdress"
 	worn_state = "blackdress"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/mildress/army/skirt
@@ -573,7 +573,7 @@
 	icon_state = "blackdressfem"
 	worn_state = "blackdressfem"
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
 
 /obj/item/clothing/under/solgov/mildress/army/command

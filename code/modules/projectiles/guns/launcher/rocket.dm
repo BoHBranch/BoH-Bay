@@ -3,7 +3,7 @@
 	desc = "Lumoco's Faithbreaker is a aptly named rocket-launcher commonly seen amongst poorer fighters and terrorists due to it's cheap and reusable nature."
 	icon_state = "rocket"
 	item_state = "rocket"
-	icon = 'modular_boh/icon/boh/items/launchers.dmi'
+	icon = 'modular_boh/icons/obj/guns/launchers.dmi'
 	w_class = ITEM_SIZE_HUGE
 	throw_speed = 2
 	throw_range = 10

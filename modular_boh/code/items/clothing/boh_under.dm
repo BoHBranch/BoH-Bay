@@ -53,5 +53,5 @@
 // Modular: PCRC Agent Unathi-wise sprite
 /obj/item/clothing/under/pcrcsuit
 	sprite_sheets = list(
-		SPECIES_UNATHI = 'modular_boh/icon/mob/species/unathi/onmob_under_solgov_unathi.dmi'
+		SPECIES_UNATHI = 'modular_boh/icons/mob/species/unathi/onmob_under_solgov_unathi.dmi'
 		)
